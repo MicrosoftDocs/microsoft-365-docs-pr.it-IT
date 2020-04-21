@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili in Office 365 e EOP per bloccare i messaggi in ingresso.
-ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033423"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608120"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Creare elenchi di mittenti bloccati in Office 365
 
@@ -52,7 +52,7 @@ Quando i messaggi vengono bloccati correttamente a causa dell'elenco dei mittent
 
 Quando più utenti sono coinvolti, l'ambito è più ampio, quindi l'opzione migliore successiva è l'elenco dei mittenti bloccati o degli elenchi di dominio bloccati nei criteri di protezione da posta indesiderata. I messaggi provenienti da mittenti negli elenchi sono contrassegnati come **posta indesiderata**e l'azione configurata per il verdetto del filtro di **posta indesiderata** viene eseguita sul messaggio. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
-Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci; anche se, sarà possibile immettere 30 voci nel portale. È necessario utilizzare PowerShell per aggiungere più di 30 voci.
+Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci.
 
 ## <a name="use-mail-flow-rules"></a>Utilizzare le regole del flusso di posta
 

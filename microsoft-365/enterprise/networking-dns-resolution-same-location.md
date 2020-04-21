@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare la risoluzione DNS per migliorare le prestazioni.
-ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bc1460ec40cda26d4784c7af5e909e4dca3c1f24
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066663"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583438"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>Passaggio 2: configurare le connessioni Internet locali per ogni sede
 
@@ -56,6 +56,8 @@ Per indirizzare una richiesta client al frontdoor più vicino a livello geografi
 - Ogni connessione Internet locale deve usare un server DNS locale per il traffico Internet in uscita da tale posizione.
 
 Per ulteriori informazioni, vedere [Uscire dalle connessione di rete a livello locale](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally). 
+
+Per testare la vicinanza a un punto di ingresso per la rete globale di Microsoft e quanto si è vicini al punto in cui la rete aziendale si collega all'ISP, usare lo [strumento di onboarding della rete di Office 365](https://connectivity.office.com/).
 
 Come checkpoint provvisorio, è possibile vedere i [criteri uscita](networking-exit-criteria.md#crit-networking-step2) per questo passaggio.
 

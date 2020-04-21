@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Informazioni su come eliminare un account utente. Decidere cosa fare con l'indirizzo di posta elettronica dell'utente, il contenuto di OneDrive e se mantenere la licenza del prodotto o smettere di pagarla.
-ms.openlocfilehash: 2c87f04675ec92e964acb6fc9aef7171b6d7d510
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353137"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608127"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Eliminare un utente dall'organizzazione
   
@@ -99,7 +99,8 @@ Poiché l'esperienza guidata illustra i passaggi necessari per eliminare un uten
 ## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>Amministratore Gestione utenti: eliminare uno o più utenti da Office 365
 
 
- **IMPORTANTE**: Non eliminare l'account di un utente se è stato [convertito in una cassetta postale condivisa](../email/convert-user-mailbox-to-shared-mailbox.md) o se è stato configurato l'inoltro della posta elettronica. Per queste funzioni è necessario mantenere l'account. Se è stato convertito in una cassetta postale condivisa, è possibile [Interrompere il pagamento per la licenza](#stop-paying-for-the-license) dall'account in modo da interrompere il pagamento. Se si imposta l'inoltro della posta elettronica, non è possibile rimuovere la licenza. La rimozione, infatti, interrompe l'inoltro della posta elettronica e disattiva la cassetta postale. 
+> [!IMPORTANT]
+> Non eliminare l'account di un utente se è stato [convertito in una cassetta postale condivisa](../email/convert-user-mailbox-to-shared-mailbox.md) o se è stata configurata l'inoltro della posta elettronica nell'account. Tali funzioni richiedono ancora l'account. Una cassetta postale condivisa non richiede una licenza. Se l'account è stato convertito in una cassetta postale condivisa, è possibile [interrompere il pagamento per la licenza](#stop-paying-for-the-license). Se è stata configurata l'inoltro della posta elettronica nell'account, non è possibile rimuovere la licenza. In questo modo si interrompe l'inoltro della posta elettronica e si disattiva la cassetta postale.
   
 ::: moniker range="o365-worldwide"
 
@@ -147,7 +148,7 @@ La riduzione del numero di licenze è un passaggio separato che può essere eseg
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione. Se non si vede questa opzione, non si è un amministratore globale o un amministratore di fatturazione e non è possibile eseguire questo passaggio.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>. Se non si vede questa opzione, non si è un amministratore globale o un amministratore di fatturazione e non è possibile eseguire questo passaggio.
 
 2. Selezionare l'abbonamento (se si dispone di più di un utente) e quindi selezionare **Aggiungi/Rimuovi licenze** per eliminare la licenza in modo da non pagarla fino a quando non si assume un'altra persona.  
 
@@ -157,7 +158,7 @@ La riduzione del numero di licenze è un passaggio separato che può essere eseg
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione. Se non si vede questa opzione, non si è un amministratore globale o un amministratore di fatturazione e non è possibile eseguire questo passaggio.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>. Se non si vede questa opzione, non si è un amministratore globale o un amministratore di fatturazione e non è possibile eseguire questo passaggio.
 
 2. Selezionare l'abbonamento (se si dispone di più di un utente) e quindi selezionare **Aggiungi/Rimuovi licenze** per eliminare la licenza in modo da non pagarla fino a quando non si assume un'altra persona.  
 

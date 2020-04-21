@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e rimuovere fenomeni di "hairpinning" di rete per prestazioni migliori.
-ms.openlocfilehash: f9499fdb8e8c3f7b77e3349d6cc99f6dbf465870
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1d5e10bdd8b79f5c7ccd646ac08f83bb2c48b6ee
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066713"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583426"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>Passaggio 3: evitare fenomeni di "hairpinning" di rete
 
@@ -47,6 +47,8 @@ Se si utilizza una rete basata sul cloud o servizi di sicurezza per il traffico 
 Ove possibile, configurare i router periferici in modo da inviare direttamente il traffico di Microsoft 365 attendibile, anziché inoltrarlo tramite proxy o tunneling attraverso un fornitore di sicurezza di rete basato sul cloud o un cloud di terze parti che elabora il traffico di Internet. 
 
 ![Esempio di bypass dell'"hairpinning" di rete](../media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+
+Per testare la vicinanza a un punto di ingresso per la rete globale di Microsoft e quanto si è vicini al punto in cui la rete aziendale si collega all'ISP, usare lo [strumento di onboarding della rete di Office 365](https://connectivity.office.com/).
 
 Come checkpoint provvisorio, è possibile vedere i [criteri uscita](networking-exit-criteria.md#crit-networking-step3) per questo passaggio.
 

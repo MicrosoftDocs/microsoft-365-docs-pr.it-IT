@@ -16,12 +16,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Il filtro di protezione da posta indesiderata in uscita è sempre abilitato se si utilizza il servizio per l'invio di messaggi di posta elettronica in uscita, proteggendo così l'organizzazione utilizzando il servizio e i destinatari previsti.
-ms.openlocfilehash: 3ac85776db5d990d46b858294acf8ef66c7f26bc
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 699de94a300ac8625e92d2c467edd461d72c7d2f
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231005"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608175"
 ---
 # <a name="configure-outbound-spam-filtering-in-office-365"></a>Configurare il filtro per la posta indesiderata in uscita in Office 365
 
@@ -71,7 +71,7 @@ Ogni organizzazione dispone di un criterio di posta indesiderata in uscita incor
 
 Per aumentare l'efficacia del filtro per la posta indesiderata in uscita, è possibile creare criteri di posta indesiderata in uscita personalizzati con impostazioni più rigorose applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
@@ -140,7 +140,11 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
 
      Per disabilitare questa impostazione, deselezionare la casella di controllo.
 
-5. Optional Espandere la sezione **limiti dei destinatari** per configurare i limiti e le azioni per i messaggi di posta elettronica in uscita sospetti:]
+5. Optional Espandere la sezione **limiti dei destinatari** per configurare i limiti e le azioni per i messaggi di posta elettronica in uscita sospetti:
+
+   > [!NOTE]
+   > Queste impostazioni sono valide solo per le cassette postali basate sul cloud.
+     
    - **Numero massimo di destinatari per utente**
 
      Un valore valido è compreso tra 0 e 10000. Il valore predefinito è 0, il che significa che vengono utilizzati i valori predefiniti del servizio. Per ulteriori informazioni, vedere [invio di limiti tra le opzioni di Office 365](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).

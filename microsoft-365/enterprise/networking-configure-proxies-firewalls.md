@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare Web browser e dispositivi periferici per il bypass di traffico a posizioni di Office 365 attendibili.
-ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 68e8f7868e0b0f7b3da80bd5f19b18f261b1b05c
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504080"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583394"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Passaggio 4: configurare il bypass di traffico
 
@@ -61,6 +61,8 @@ Le connessioni VPN (Virtual Private Network) sono utilizzate comunemente dai lav
 Lo split tunneling è la capacità di una connessione VPN di instradare il traffico specificato attraverso Internet anziché trasmetterlo attraverso la connessione VPN all'Intranet. Affinché i lavoratori remoti possano usufruire di prestazioni ottimali dei servizi di Microsoft 365 come Teams, SharePoint Online ed Exchange Online, è necessario configurare lo split tunneling delle connessioni VPN per inviare il traffico per ottimizzare gli endpoint di Office 365 direttamente attraverso Internet. 
 
 Per informazioni dettagliate, consultare [Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling per VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+
+Per testare la vicinanza a un punto di ingresso per la rete globale di Microsoft e quanto si è vicini al punto in cui la rete aziendale si collega all'ISP, usare lo [strumento di onboarding della rete di Office 365](https://connectivity.office.com/).
 
 Come checkpoint provvisorio, è possibile vedere i [criteri uscita](networking-exit-criteria.md#crit-networking-step4) per questo passaggio.
 
