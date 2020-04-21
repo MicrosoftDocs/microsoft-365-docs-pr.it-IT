@@ -2,7 +2,7 @@
   href: index.yml
 - name: Per iniziare
   items:
-    - name: Novità del centro conformità
+    - name: Novità del Centro conformità
       href: whats-new.md
     - name: Aggiornamenti recenti dei contenuti relativi alla conformità
       href: recently-updated-topics-mcc.md
@@ -80,7 +80,7 @@
       items:
         - name: Informazioni sulle etichette di riservatezza
           href: sensitivity-labels.md
-        - name: Introduzione alle etichette di riservatezza
+        - name: Iniziare a usare le etichette di riservatezza
           href: get-started-with-sensitivity-labels.md
         - name: Creare e pubblicare etichette di riservatezza
           href: create-sensitivity-labels.md
@@ -137,9 +137,9 @@
           href: customize-a-built-in-sensitive-information-type.md
         - name: Tipi di informazioni sensibili personalizzati
           href: custom-sensitive-info-types.md
-        - name: Creare tipi di informazioni sensibili personalizzati con una classificazione basata sulla corrispondenza esatta dei dati
+        - name: Creare tipi di informazioni riservate personalizzati con classificazione esatta basata su exact data match
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità
+        - name: Creare un tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità
           href: create-a-custom-sensitive-information-type.md
         - name: Creare tipi di informazioni sensibili personalizzati usando PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
@@ -345,6 +345,8 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: Gestione di eDiscovery
   items:
+    - name: eDiscovery in Microsoft 365
+      href: ediscovery.md
     - name: Ricerca contenuto
       items:
         - name: Panoramica della ricerca contenuto
@@ -362,7 +364,7 @@
               href: export-a-content-search-report.md
             - name: Usare Microsoft Edge per scaricare i risultati della ricerca
               href: configure-edge-to-export-search-results.md
-            - name: Cercare ed eliminare le e-mail
+            - name: Cercare ed eliminare messaggi di posta elettronica
               href: search-for-and-delete-messages-in-your-organization.md
             - name: Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali
               href: search-cloud-based-mailboxes-for-on-premises-users.md
@@ -392,7 +394,7 @@
               href: disable-reports-when-you-export-content-search-results.md
         - name: Informazioni sulla ricerca contenuto
           items:
-            - name: Limiti di ricerca contenuto
+            - name: Limiti di Ricerca contenuto
               href: limits-for-content-search.md
             - name: Elementi parzialmente indicizzati
               href: partially-indexed-items-in-content-search.md
@@ -414,8 +416,16 @@
               href: clone-a-content-search.md
     - name: Core eDiscovery
       items:
-        - name: Gestire i casi di eDiscovery
-          href: ediscovery-cases.md
+        - name: Introduzione a Core eDiscovery
+          href: get-started-core-ediscovery.md
+        - name: Creare blocchi di eDiscovery
+          href: create-ediscovery-holds.md
+        - name: Cercare il contenuto in un caso
+          href: search-for-content-in-core-ediscovery.md
+        - name: Esportare il contenuto da un caso
+          href: export-content-in-core-ediscovery.md
+        - name: 'Chiudere, riaprire ed eliminare un caso'
+          href: close-reopen-delete-core-ediscovery-cases.md
         - name: Informazioni di riferimento su Core eDiscovery
           items:
             - name: Assegnare autorizzazioni di eDiscovery
@@ -430,6 +440,12 @@
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
             - name: Creare un report sui blocchi di eDiscovery
               href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: Esportare un report sulle ricerche
+              href: export-a-content-search-report.md
+            - name: Visualizzare le statistiche delle parole chiave per i risultati della ricerca
+              href: view-keyword-statistics-for-content-search.md
+            - name: Preparare i risultati di ricerca per Advanced eDiscovery (classico)
+              href: prepare-search-results-for-advanced-ediscovery.md
             - name: Cercare ed eliminare fughe di dati
               href: data-spillage-scenariosearch-and-purge.md
             - name: Conservare i destinatari in Ccn per la ricerca
@@ -648,7 +664,7 @@
   items:
     - name: Panoramica delle indagini sui dati
       href: overview-data-investigations.md
-    - name: Gestire un evento imprevisto relativo a una fuga di dati
+    - name: Gestire un'incidente relativo a una fuga di dati
       href: manage-data-spillage-incidents.md
     - name: Assegnare autorizzazioni per le indagini sui dati
       href: data-investigations-permissions.md
@@ -857,9 +873,9 @@
               href: gdpr-arc-office365.md
         - name: Protezione delle informazioni
           href: gdpr-information-protection.md
-        - name: Richieste degli interessati
+        - name: Richieste del soggetto dei dati
           items:
-            - name: Richieste degli interessati
+            - name: Richieste del soggetto dei dati
               href: gdpr-data-subject-requests.md
             - name: Azure
               href: gdpr-dsr-azure.md
@@ -938,7 +954,7 @@
           href: offering-soc.md
         - name: WCAG
           href: offering-wcag-2-1.md
-    - name: US Government (Governo degli Stati Uniti)
+    - name: Governo degli Stati Uniti
       items:
         - name: CJIS
           href: offering-cjis.md
@@ -976,7 +992,7 @@
           items:
             - name: NERC
               href: offering-nerc-cip.md
-        - name: Finanziari
+        - name: Finanze
           items:
             - name: 23 NYCRR parte 500
               href: offering-23-nycrr-part-500.md
@@ -1040,7 +1056,7 @@
               href: offering-nhs-ig-toolkit-uk.md
         - name: Produzione
           items:
-            - name: FDA CFR titolo 21 parte 11
+            - name: FDA CFR Titolo 21 parte 11
               href: offering-fda-cfr-title-21-part-11.md
             - name: GxP
               href: offering-gxp.md
@@ -1196,7 +1212,7 @@
               href: offering-ccpa.md
             - name: Normativa sulla privacy in Canada
               href: offering-canadian-privacy-laws.md
-        - name: America del Sud
+        - name: Sud America
           items:
             - name: PDPA (Argentina)
               href: offering-pdpa-argentina.md
