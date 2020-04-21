@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica del Punteggio di produttività Microsoft.
-ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516866"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627753"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Punteggio di produttività Microsoft (anteprima)
 
@@ -64,7 +64,7 @@ Il Punteggio viene aggiornato giornalmente e riflette le azioni degli utenti com
 
 ## <a name="access-and-required-permissions"></a>Accesso e autorizzazioni necessarie 
 
-Per l'esperienza dipendente, è necessario disporre di un abbonamento a un piano di Office 365 per le aziende o a un piano aziendale di Microsoft 365 con più utenti. 
+Per l'esperienza dipendente, è necessario disporre di un abbonamento a un piano Microsoft 365 for business con più utenti. 
 
 Per avere l'autorizzazione per l'accesso al Punteggio di produttività Microsoft, è necessario disporre dei ruoli seguenti: 
 
@@ -136,7 +136,7 @@ I tipi di file considerati per la collaborazione sono Word/Excel/PowerPoint/OneN
 
 ![Pagina Work Anywhere.](../../media/psflexibility.png)
 
-La pagina Working Anywhere quantifica gli utenti (come percentuale e valore assoluto) che hanno utilizzato almeno un'app per la produttività in due o più piattaforme, ovvero desktop, mobili e Web. Gli utenti ottengono un punteggio maggiore per l'utilizzo di più app e piattaforme. Le app considerate sono Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. La base dell'Insight sono gli utenti abilitati per Office 365 ProPlus, Exchange, Yammer, Skype o teams.
+La pagina Working Anywhere quantifica gli utenti (come percentuale e valore assoluto) che hanno utilizzato almeno un'app per la produttività in due o più piattaforme, ovvero desktop, mobili e Web. Gli utenti ottengono un punteggio maggiore per l'utilizzo di più app e piattaforme. Le app considerate sono Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. La base dell'Insight sono gli utenti abilitati per le app Microsoft 365 per Enterprise, Exchange, Yammer, Skype o teams.
 
 1. Il motivo per cui **è importante** fornisce un riepilogo dalla ricerca che collega l'utilizzo di più piattaforme a una maggiore produttività. **Leggere la ricerca di Forrester** va a un articolo di ricerca che fornisce più contesto sul modo in cui l'utilizzo è favorevole all'aumento della produttività.
 1. Il supporto di Insight sul **messaggio di posta elettronica Anywhere** quantifica il numero di utenti nell'organizzazione che utilizzano Outlook su più piattaforme all'interno della base di utenti attivi su Outlook.

@@ -16,16 +16,16 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: In questo argomento viene illustrata la differenza tra posta indesiderata (posta indesiderata) e posta elettronica in blocco e i relativi controlli in Office 365.
-ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 15ca00b007ef0b8470e1b30608a695a90bd638b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230957"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630834"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Differenza tra posta elettronica indesiderata e posta elettronica inviata in blocco
 
-I clienti di Office 365 con cassette postali in Exchange Online o autonomo Exchange Online Protection (EOP) i clienti che non dispongono di cassette postali di Exchange Online chiedono: "Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco In questo argomento viene illustrata la differenza e vengono descritti i controlli disponibili in EOP.
+Microsoft 365 i clienti con cassette postali in Exchange Online o autonomo Exchange Online Protection (EOP) i clienti senza cassette postali di Exchange Online, a volte, chiedono: "Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco In questo argomento viene illustrata la differenza e vengono descritti i controlli disponibili in EOP.
 
 - La **posta** indesiderata è posta indesiderata, ovvero messaggi non richiesti e universalmente non necessari (se identificati correttamente). Per impostazione predefinita, il EOP respinge la posta indesiderata in base alla reputazione del server di posta elettronica di origine. Se un messaggio passa il controllo IP di origine, viene inviato al filtro per la posta indesiderata. Se il messaggio viene classificato come posta indesiderata dal filtro posta indesiderata, il messaggio viene (per impostazione predefinita) recapitato ai destinatari previsti e spostato nella cartella posta indesiderata.
 
@@ -41,7 +41,7 @@ I clienti di Office 365 con cassette postali in Exchange Online o autonomo Excha
 
 A causa della reazione mista al messaggio di posta elettronica in blocco, non vi sono indicazioni universali valide per ogni organizzazione.
 
-I criteri di protezione da posta indesiderata hanno una soglia BCL predefinita utilizzata per identificare la posta elettronica in blocco come posta indesiderata. Gli amministratori possono aumentare o diminuire la soglia. Per ulteriori informazioni, vedere i seguenti argomenti:
+I criteri di protezione dalla posta indesiderata hanno una soglia BCL predefinita utilizzata per identificare la posta elettronica in blocco come posta indesiderata. Gli amministratori possono aumentare o diminuire la soglia. Per ulteriori informazioni, vedere i seguenti argomenti:
 
 - [Configurazione dei criteri di protezione da posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 

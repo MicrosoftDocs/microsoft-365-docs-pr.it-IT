@@ -1,5 +1,5 @@
 ---
-title: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore in Office 365
+title: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione. Se si desidera reimpostare la propria password di amministratore, sono necessarie queste informazioni.
-ms.openlocfilehash: 255c1d72ae032b0ebaf0606e0731e9bbe8a1b40d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4a60e344f94ede3e455f8940189f5019a52e834b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361671"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628005"
 ---
-# <a name="update-your-admin-phone-number-and-email-address-in-office-365"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore in Office 365
+# <a name="update-your-admin-phone-number-and-email-address"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 
-Questo articolo illustra in che modo l'amministratore può cambiare il proprio numero di telefono e l'indirizzo di posta elettronica in Office 365.
+In questo articolo viene illustrato come l'amministratore può modificare il telefono aziendale e l'indirizzo di posta elettronica in Microsoft 365.
   
 Per sapere come cambiare le informazioni del profilo dell'organizzazione, ad esempio il nome, l'indirizzo e il numero di telefono della società e i dati del contatto tecnico, vedere [Cambiare l'indirizzo dell'organizzazione, l'indirizzo di posta elettronica del contatto tecnico e altre informazioni](change-address-contact-and-more.md).
   
@@ -40,7 +40,7 @@ Usare la pagina **Informazioni personali** per cambiare il proprio nome, numero 
 
 2. Nell'intestazione, seleziona \> l'icona del profilo **personale informazioni personali**dell' **account** \> .
 
-3. Nella sezione **Dettagli contatto** selezionare modifica. Aggiornare il cellulare, il telefono e l'indirizzo di posta elettronica alternativo. Assicurarsi che l'indirizzo di posta elettronica alternativo sia diverso da quello di Office 365.
+3. Nella sezione **Dettagli contatto** selezionare modifica. Aggiornare il cellulare, il telefono e l'indirizzo di posta elettronica alternativo. Assicurarsi di usare qualcosa di diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.
 
     > [!IMPORTANT]
     > L'indirizzo di posta elettronica alternativo e il numero di cellulare sono necessari per reimpostare la password di amministratore (non la password di amministratore del computer).
@@ -49,6 +49,6 @@ Usare la pagina **Informazioni personali** per cambiare il proprio nome, numero 
   
 In caso di domande sulla fatturazione, vedere:
   
-- [Cambiare gli indirizzi di fatturazione per Office 365 per le aziende](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [Modificare gli indirizzi di fatturazione per Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario in Office 365 per le aziende](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario in Microsoft 365 for business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

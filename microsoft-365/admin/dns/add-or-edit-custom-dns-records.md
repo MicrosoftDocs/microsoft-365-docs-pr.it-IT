@@ -1,5 +1,5 @@
 ---
-title: Aggiungere o modificare record DNS personalizzati in Office 365
+title: Aggiungere o modificare record DNS personalizzati in Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
-description: 'Informazioni su come modificare o aggiungere un record DNS personalizzato in Office 365. '
-ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 'Informazioni su come modificare o aggiungere un record DNS personalizzato in Microsoft. '
+ms.openlocfilehash: d7084913e2439b126232735fe2e6abe853c03ddf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212522"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630020"
 ---
-# <a name="add-or-edit-custom-dns-records-in-office-365"></a>Aggiungere o modificare record DNS personalizzati in Office 365
+# <a name="add-or-edit-custom-dns-records-in-microsoft"></a>Aggiungere o modificare record DNS personalizzati in Microsoft
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
 
-1. Accedere all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.   
+1. Accedere all'interfaccia di amministrazione di Microsoft all' <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>indirizzo.   
 
-2. Passare alla pagina **Impostazioni** \> **domini** .
+2. Passare alla pagina **Impostazioni**  > **domini** .
 
 3. Nella pagina **Domini** selezionare un dominio. 
     
@@ -46,10 +46,10 @@ ms.locfileid: "43212522"
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Raccogliere le informazioni necessarie per creare record DNS di Office 365](../get-help-with-domains/information-for-dns-records.md)
+[Raccogliere le informazioni necessarie per creare record DNS Microsoft](../get-help-with-domains/information-for-dns-records.md)
 
 [Concetti fondamentali relativi a DNS](../get-help-with-domains/dns-basics.md)
 
-[Ottenere assistenza per i domini di Office 365](../get-help-with-domains/get-help-with-domains.md)
+[Ottenere assistenza per i domini](../get-help-with-domains/get-help-with-domains.md)
 
 

@@ -2,8 +2,8 @@
 title: Accedere ai dati di un ex utente ed eseguirne il backup
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Informazioni su come conservare i file e i messaggi di posta elettronica di un dipendente quando la persona lascia l'organizzazione.
-ms.openlocfilehash: 11c946e5c242b05fea3a15b9427f36029c61082f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 9f665b68f50fd9b7f41ac0a6ef4b9e29ef289d7c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142564"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617225"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Accedere ai dati di un ex utente ed eseguirne il backup
 
@@ -166,7 +166,7 @@ Per salvare i messaggi di posta elettronica, il calendario, le attività e i con
   
     ![Finestra di dialogo Esporta file di dati di Outlook con la cartella principale e l'opzione Includi sottocartelle selezionate](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. Scegliere **Avanti**.
+7. Selezionare **Avanti**.
     
 8. Selezionare **Sfoglia** per selezionare il percorso in cui salvare il file di dati di Outlook (con estensione pst). Digitare un *nome di file*e quindi fare clic su **OK** per continuare. 
     
@@ -211,7 +211,7 @@ Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle at
     
 5. In **Opzioni** scegliere come si vuole gestire i duplicati.
     
-6. Scegliere **Avanti**.
+6. Selezionare **Avanti**.
     
 7. Se al file di dati di Outlook (con estensione pst) è stata assegnata una password, immettere la password e quindi fare clic su **OK**.
     

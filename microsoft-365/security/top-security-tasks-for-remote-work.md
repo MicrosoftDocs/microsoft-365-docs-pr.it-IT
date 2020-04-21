@@ -13,19 +13,19 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 'Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: d42760f0dbf38b72fe530a5670f3515bf3ba2f94
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225954"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630798"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Top 12 attività per i team di sicurezza per il supporto di lavoro da casa
 
 Se si è come [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) e improvvisamente si trova a supportare una forza lavoro principalmente basata sulla casa, si vuole garantire che l'organizzazione funzioni nel modo più sicuro possibile. In questo articolo viene attribuita la priorità alle attività che consentono ai team di sicurezza di implementare le funzionalità di sicurezza più importanti il più velocemente possibile. 
 
 Se si è un'organizzazione di piccole o medie dimensioni che utilizza uno dei piani aziendali di Microsoft, vedere le risorse seguenti:
-- [I 10 principali modi per proteggere i piani di Office 365 e Microsoft 365 Business](../admin/security-and-compliance/secure-your-business-data.md) 
+- [Top 10 modi per proteggere i piani di Office 365 e Microsoft 365 for business](../admin/security-and-compliance/secure-your-business-data.md) 
 - [Microsoft 365 per le campagne](https://docs.microsoft.com/microsoft-365/campaigns/?view=o365-worldwide) (include una configurazione di sicurezza consigliata per Microsoft 365 business)
 
   
@@ -36,7 +36,7 @@ Per i clienti che utilizzano i piani aziendali, Microsoft consiglia di completar
 ||**Attività**| Tutti i piani di Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1       |[Abilitare l'autenticazione a più fattori di Azure (AMF)](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|2      | [Protezione dalle minacce in Office 365](#2-protect-against-threats-in-office-365) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|2      | [Protezione contro le minacce](#2-protect-against-threats) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3       |  [Configurare Office 365 Advanced Threat Protection](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [Configurazione di Azure Advanced Threat Protection (ATP)](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5      |   [Abilitare Microsoft Advanced Threat Protection](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
@@ -45,7 +45,7 @@ Per i clienti che utilizzano i piani aziendali, Microsoft consiglia di completar
 |8       |  [Registrare i PC nella gestione dei dispositivi e richiedere PC conformi](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Ottimizzare la rete per la connettività cloud](#9-optimize-your-network-for-cloud-connectivity)  |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [Formazione degli utenti](#10-train-users) |    ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11  |[Introduzione a Microsoft cloud app Security](#11-get-started-with-microsoft-cloud-app-security) |   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11  |[Introduzione a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[Monitorare le minacce e agire](#12-monitor-for-threats-and-take-action) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -65,16 +65,16 @@ L'applicazione di questi criteri richiederà solo pochi minuti, ma sarà pronta 
 
 |Piano  |Consiglio  |
 |---------|---------|
-|Piani di Office 365 (senza Azure AD P1 o P2)     |[Abilitare le impostazioni predefinite per la sicurezza in Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite per la sicurezza di Azure AD includono l'AMF per gli utenti e gli amministratori.   |
+|Piani di Microsoft 365 (senza Azure AD P1 o P2)     |[Abilitare le impostazioni predefinite per la sicurezza in Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite per la sicurezza di Azure AD includono l'AMF per gli utenti e gli amministratori.   |
 |Microsoft 365 E3 (con Azure AD P1)     | Utilizzare [criteri di accesso condizionale comuni](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br>- [Richiedere l'autenticazione a master per gli amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Richiedi l'AMF per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blocca l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (con Azure AD P2)     | Approfittando di Azure AD Identity Protection, iniziare a implementare il [set consigliato di Microsoft per l'accesso condizionale e i criteri correlati](../enterprise/identity-access-policies.md) creando questi due criteri:<br> - [Richiedere l'AMF quando il rischio di accesso è medio o elevato](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloccare i client che non supportano l'autenticazione moderna](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Gli utenti ad alto rischio devono modificare la password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
   
-## <a name="2-protect-against-threats-in-office-365"></a>2: protezione dalle minacce in Office 365
+## <a name="2-protect-against-threats"></a>2: protezione dalle minacce
 
-Tutti i piani di Office 365 includono una vasta gamma di funzionalità di protezione dalle minacce. La protezione per queste funzionalità richiede solo alcuni minuti.
+Tutti i piani di Microsoft 365 includono una serie di funzionalità di protezione dalle minacce. La protezione per queste funzionalità richiede solo alcuni minuti.
 - Protezione anti-malware
 - Protezione da file e URL dannosi
 - Protezione anti-phishing
@@ -181,11 +181,11 @@ Alcune delle protezioni che sono state tradizionalmente fornite dal routing del 
 
 
 Per ulteriori informazioni, vedere queste risorse su documenti:
-- [Panoramica: ottimizzare la connettività di Office 365 per gli utenti remoti tramite il tunneling Split VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [Panoramica: ottimizzare la connettività per gli utenti remoti tramite il tunneling Split VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 - [Implementazione di split tunneling per VPN per Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Articoli di Blog recenti su questo argomento:
-- [Come ottimizzare rapidamente il traffico di Office 365 per i dipendenti remoti & ridurre il carico nell'infrastruttura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
+- [Come ottimizzare rapidamente il traffico per il personale remoto & ridurre il carico nell'infrastruttura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
 - [Modalità alternative per i professionisti della sicurezza e per ottenere moderni controlli di sicurezza negli scenari di lavoro remoto unici di oggi](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 
@@ -200,7 +200,7 @@ Microsoft 365 fornisce le risorse seguenti per informare gli utenti nell'organiz
 |Concetto  |Risorse  |
 |---------|---------|
 |Microsoft 365     |[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/) <p>Tali risorse consentono di creare una formazione per gli utenti finali nell'organizzazione        |
-|Centro sicurezza Microsoft 365 |[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza. |
+|Sicurezza di Microsoft 365 |[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza. |
 |Autenticazione a più fattori     | [Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Questo articolo aiuta gli utenti finali a capire cosa sia l'autenticazione a più fattori e il motivo per cui viene utilizzato all'interno dell'organizzazione.    |
 | | |
 

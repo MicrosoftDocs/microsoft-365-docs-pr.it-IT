@@ -18,18 +18,18 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Informazioni su come ottenere un rapporto di attivazione di Office per conoscere gli utenti che hanno attivato la sottoscrizione di Office e identificare gli utenti che potrebbero richiedere ulteriore assistenza.
-ms.openlocfilehash: 7a26928b654c222a2eef05371ff9b220cf59cfe4
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046976"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621223"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-attivazioni di Microsoft Office
 
 Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tra i prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento di panoramica sui report](activity-reports.md).
   
-Il report Attivazioni di Office consente di visualizzare quali utenti hanno attivato la sottoscrizione di Office in almeno un dispositivo. Fornisce un'analisi delle attivazioni delle sottoscrizioni di Office 365 ProPlus, Project e Visio Pro per Office 365 e delle attivazioni nei desktop e nei dispositivi. Questo report può essere utile per identificare gli utenti che potrebbero richiedere ulteriore assistenza e supporto per attivare la sottoscrizione di Office.
+Il report Attivazioni di Office consente di visualizzare quali utenti hanno attivato la sottoscrizione di Office in almeno un dispositivo. Fornisce una ripartizione delle attivazioni delle sottoscrizioni di Microsoft 365 Apps for Enterprise, Project e Visio Pro per Office 365, nonché la ripartizione delle attivazioni tra desktop e dispositivi. Questo report può essere utile per identificare gli utenti che potrebbero richiedere ulteriore assistenza e supporto per attivare la sottoscrizione di Office.
   
 > [!NOTE]
 > È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.  

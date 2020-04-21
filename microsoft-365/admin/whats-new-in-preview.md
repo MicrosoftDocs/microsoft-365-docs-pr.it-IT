@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle caratteristiche che sono state aggiunte in questo mese.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 06cc7519cae2b71581f0f50e9e8eec15fe77e568
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43171013"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627523"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -36,59 +36,10 @@ Si aggiungono continuamente nuove funzionalità all'interfaccia di [amministrazi
 > **"Classic" prepensionamento del centro di amministrazione a partire da marzo**<br><br>
 Quando si esegue l'accesso a admin.microsoft.com, si passa alla nuova interfaccia di amministrazione ogni volta. E in marzo, si inizierà la disabilitazione della possibilità di tornare all'interfaccia di amministrazione classica. Per il momento, è ancora possibile tornare indietro, ma siccome il nuovo interfaccia di amministrazione arriva alla parità (e lo supera), si disattiverà l'opzione per tutte le organizzazioni. <br><br> *Ultimo aggiornamento: 2 marzo 2020*
 
-Se si è interessati alle novità in altri servizi cloud Microsoft:
+Se si è interessati alle novità in altri centri di amministrazione:
 
-- [Novità di Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Novità di Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Novità nel centro conformità di Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Aggiornamenti di Office](https://docs.microsoft.com/OfficeUpdates/)
-
-## <a name="march-2020"></a>Marzo 2020
-
-### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Correzione dei commenti e suggerimenti consigliati: migliorare l'affidabilità dell'"aggiunta dell'utente" per le licenze
-
-Sono stati ricevuti numerosi commenti e suggerimenti da parte degli amministratori sulla modalità di assegnazione delle licenze quando si aggiungono gli utenti. È stato eseguito il primo aggiornamento a questa correzione ed è stata eseguita la migrazione a un servizio più affidabile dietro le quinte per elaborare tali richieste. Se qualcosa dovesse andare storto, verrà visualizzato un messaggio di errore che consente di riprovare.
-
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Aggiungere la pagina di conferma dell'utente con l'errore.":::
-
-### <a name="microsoft-teams-home-page-card"></a>Scheda della Home page di Microsoft Teams
-
-Con l'utilizzo dell'aumento di numero di Team, alcuni org otterrà una scheda del dashboard bloccata che rende più individuabili i team di Turning. La scheda contiene inoltre collegamenti a corsi di formazione e documenti per facilitare la transizione dell'organizzazione all'attività remota. Basta andare alla **Home** page per visualizzare la nuova scheda.
-
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Scheda della Home page di Microsoft Teams":::
-
-### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personalizzare il tema dell'app per dispositivi mobili di SharePoint dell'organizzazione
-
-Utilizzando l'interfaccia di amministrazione di Microsoft 365, è ora possibile personalizzare il tema dell'organizzazione nell'app per dispositivi mobili SharePoint per iOS e nell'app per dispositivi mobili di SharePoint per Android. Questa funzionalità fornisce un'esperienza di app per Intranet mobile che può corrispondere a SharePoint Online per i dipendenti in viaggio. La personalizzazione del tema include l'immagine del logo, il colore della barra di spostamento, i colori del testo e delle icone e i colori degli accenti, rendendo facile il riconoscimento.
-
-:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramma che mappa le impostazioni dell'interfaccia di amministrazione all'app per dispositivi mobili.":::
-
-:::image-end:::
-
-### <a name="improvements-to-the-add-a-group-wizard"></a>Miglioramenti apportati alla procedura guidata "Aggiungi un gruppo"
-
-Quando gli amministratori hanno creato un nuovo gruppo e ne hanno fatto una squadra nello stesso momento, possono assegnare proprietari che non dispongono di una licenza che include team. E questo ha creato alcuni mal di testa. È stato aggiornato il flusso della procedura guidata per verificare che i proprietari dispongano di una licenza per i team e che se non è possibile disattivare il gruppo in un team è disabilitato.
-
-### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Offerte di Microsoft 365 per le aziende di piccole e medie dimensioni
-
-Sappiamo che questo è un annuncio per il mese prossimo, ma vogliamo assicurarci che tu sia preparato.
-
-A partire dal 21 aprile, vengono apportate modifiche relative agli abbonamenti di Office 365 per le piccole e medie imprese e a Office 365 ProPlus. Questi prodotti utilizzeranno ora il marchio Microsoft 365.
-
-I nuovi nomi dei prodotti entrano in vigore il 21 aprile 2020. Si tratta di una modifica del solo nome di prodotto e non vi sono modifiche dei prezzi o delle funzionalità in questo momento.
-
-|Nome corrente |Nuovo nome  |
-|---------|---------|
-|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 business standard     |
-|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for business       | 
-|Office 365 ProPlus    |   Microsoft 365 Apps for Enterprise      |
-
-### <a name="videos-training-and-docs"></a>Video, formazione e documenti
-
-[What ' s New in microsoft 365 Web Series](https://go.microsoft.com/fwlink/p/?linkid=2118096): nell'episodio di questo mese, viene evidenziato l'anniversario di tre anni di Microsoft teams e vengono riportate le nuove funzionalità, tra cui la qualità audio migliorata nelle riunioni online, le comunicazioni mirate per i manager di FIRSTLINE con l'app turns, i team e l'interoperabilità dei consumer Skype
 
 ## <a name="february-2020"></a>Febbraio 2020
 
@@ -111,7 +62,7 @@ Questo è letteralmente!!!
 Un paio di modifiche nell'area gruppi di questo mese:
 
 - **Ordina in base al nome del gruppo**: è possibile ordinare l'elenco dei gruppi in ordine alfabetico selezionando la colonna **nome gruppo** .
-- **Ripristinare i gruppi di office 365 eliminati**: non è più necessario accedere all'interfaccia di amministrazione di Exchange per ripristinare i gruppi di Office 365 eliminati. Vai a **Microsoft 365** \> **Groups** \> interfaccia di amministrazione gruppi **eliminati gruppi** \> (seleziona un gruppo dall'elenco) \> **Ripristina gruppo**. Ripristinerà nuovamente il gruppo nell'elenco **gruppi** e ripristinerà la posta elettronica, le conversazioni, il blocco appunti, i file e il calendario del gruppo.
+- **Ripristinare i gruppi microsoft 365 eliminati**: non è più necessario accedere all'interfaccia di amministrazione di Exchange per ripristinare i gruppi di Microsoft 365 eliminati. Vai a **Microsoft 365** \> **Groups** \> interfaccia di amministrazione gruppi **eliminati gruppi** \> (seleziona un gruppo dall'elenco) \> **Ripristina gruppo**. Ripristinerà nuovamente il gruppo nell'elenco **gruppi** e ripristinerà la posta elettronica, le conversazioni, il blocco appunti, i file e il calendario del gruppo.
 
 ### <a name="videos-training-and-docs"></a>Video, formazione e documenti
 
@@ -160,7 +111,7 @@ Consultare la formazione di amministratore di Small Business che è stata rilasc
 - [Ottenere assistenza o supporto tecnico](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [Eliminare un utente](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [Scegliere un abbonamento Microsoft](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Panoramica della sicurezza aziendale di Microsoft 365](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Panoramica della sicurezza di Microsoft 365 per le aziende](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## <a name="november-and-december-2019"></a>Novembre e dicembre 2019
 
@@ -199,16 +150,16 @@ A novembre sono stati rilasciati alcuni percorsi di apprendimento per il sito We
 
 - [Nozioni fondamentali su Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/)
 - [Estendere i fondamenti di Office](https://docs.microsoft.com/learn/paths/extend-office-fundamentals/)
-- [Microsoft 365-modernizzare la distribuzione aziendale con Windows 10 e Office 365 ProPlus](https://docs.microsoft.com/learn/paths/m365-getmodern/)
+- [Microsoft 365-modernizzare la distribuzione dell'organizzazione con Windows 10 e Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Gestire la distribuzione aziendale con Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
-- [Aggiornare Microsoft Office per la scalabilità](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
+- [Aggiornare Microsoft Office per l'IT su larga scala](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Fornire desktop e app Remote da Azure con desktop virtuale di Windows](https://docs.microsoft.com/learn/paths/m365-wvd/)
 - [Modernizzare il proprio ambiente di lavoro con Microsoft 365 e Surface for business](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
-- [Proteggere l'identità e l'accesso con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
+- [Proteggere le identità e l'accesso con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Proteggere le informazioni aziendali con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
 - [Gestire la sicurezza con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-security-management/)
-- [Difendersi dalle minacce con Microsoft 365 e Microsoft Threat Protection](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
-- [Gestire la collaborazione del team con Microsoft Teams](https://docs.microsoft.com/learn/paths/m365-manage-team-collaboration/)
+- [Protezione dalle minacce con Microsoft 365 e Microsoft Threat Protection](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
+- [Gestione della collaborazione in team con Microsoft Teams](https://docs.microsoft.com/learn/paths/m365-manage-team-collaboration/)
 - [Collaborare con SharePoint in Microsoft 365](https://docs.microsoft.com/learn/paths/m365-teams-sharepoint/)
 
 ## <a name="october-2019---ignite-edition"></a>Ottobre 2019-Ignite Edition
@@ -218,7 +169,7 @@ Welcome to the Ignite Edition del What ' s New in Microsoft 365 Admin Center! Na
 - [Amministratori: sicurezza, produttività e miglioramenti della rete per Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/ADMIN-Security-Productivity-and-Network-Enhancements-for/ba-p/964019).
 - [Novità di Microsoft teams-ignite 2020](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/What-s-New-in-Microsoft-Teams-Ignite-2019/ba-p/937025).
 
-### <a name="role-based-access-control"></a>Controllo degli accessi in base al ruolo
+### <a name="role-based-access-control"></a>Controllo dell'accesso basato sui ruoli
 
 Sono state apportate numerose modifiche ai ruoli nell'interfaccia di amministrazione da quando è stata avviata la distribuzione in giugno:
 
@@ -320,7 +271,7 @@ Il centro messaggi è stato aggiornato al nuovo progetto e ha un aspetto sorpren
 
 Sono state apportate modifiche entusiasmanti che consentono di configurare l'organizzazione. Prima di tutto, discutiamo la differenza tra l' **installazione** e la **pagina di installazione**. Il **programma di installazione** si riferisce all'installazione guidata iniziale utilizzata per l'onboarding ai servizi online di Microsoft. Che in genere include tre passaggi specifici: **connettere un dominio**, **aggiungere utenti**e **scaricare le app di Office**. La **pagina di installazione** è la pagina nell'interfaccia di amministrazione che ha raccomandato di configurare le attività per essere certi di ottenere il massimo dai propri abbonamenti, come l'attivazione delle caratteristiche per le quali sono state acquistate le licenze.
 
-- **Setup** : l'installazione guidata iniziale è stata aggiornata per gli abbonamenti di **Office 365 for business** . Questo nuovo progetto aiuterà le nuove organizzazioni a superare la procedura guidata più velocemente e con maggiore successo.
+- **Setup** : l'installazione guidata iniziale è stata aggiornata per gli abbonamenti a **Microsoft 365 per le aziende** . Questo nuovo progetto aiuterà le nuove organizzazioni a superare la procedura guidata più velocemente e con maggiore successo.
 - **Pagina di installazione** : la pagina di **installazione** consente di terminare la configurazione e la protezione dei servizi disponibili con gli abbonamenti. È inoltre possibile visualizzare eventuali suggerimenti disattivati nella pagina di **installazione** . Per vedere se è ancora disponibile per gli abbonamenti, passare alla > **configurazione**dell'interfaccia di **amministrazione di Microsoft 365**.
 
 ### <a name="billing--subscriptions"></a>Abbonamenti & di fatturazione
@@ -414,7 +365,7 @@ Sono state apportate alcune altre modifiche alla **gestione degli utenti**, ecco
 
 - Nella **Home** page è presente un nuovo banner di installazione che vedrà se non sono stati completati i passaggi di configurazione, ad esempio l'aggiunta di un dominio, l'aggiunta di utenti e il download delle app di Office.
 - Il riquadro elenco e dettagli **gruppo** è stato aggiornato al nuovo stile. Andare ai **Groups** > **gruppi** di gruppi per visualizzare le modifiche.
-  - A proposito di gruppi, è stata aggiunta una scheda **Microsoft teams** per il riquadro dei dettagli dei gruppi, in cui è possibile trasformare qualsiasi gruppo di Office 365 in un team. Per "teamify" un gruppo seleziona un gruppo di Office 365 dall'elenco, seleziona la scheda **Microsoft teams** e quindi **Crea team**. Se il gruppo è già un team, si otterrà un collegamento per gestirlo dall'interfaccia di **amministrazione dei team**.
+  - A proposito di gruppi, è stata aggiunta una scheda **Microsoft teams** per il riquadro dei dettagli dei gruppi, in cui è possibile trasformare qualsiasi gruppo di Microsoft 365 in un team. Per "teamify" un gruppo seleziona un gruppo di Microsoft 365 dall'elenco, seleziona la scheda **Microsoft teams** e quindi **Crea team**. Se il gruppo è già un team, si otterrà un collegamento per gestirlo dall'interfaccia di **amministrazione dei team**.
   - Infine, è possibile aggiungere lo **stato dei team** all'elenco **gruppi** . Nell'intestazione di colonna selezionare **Scegli colonne** > **stato** > Team**Save**.
 - **Nuovi ruoli di amministratore limitati** -sono stati rilasciati alcuni nuovi ruoli di amministratore in modo da consentire agli utenti solo l'accesso di cui hanno bisogno.
   - **Amministratore di Kaizala**: gli utenti di questo ruolo dispongono dell'autorizzazione per eseguire tutte le attività di gestione in Microsoft Kaizala, tra cui la creazione e la gestione degli utenti nella directory di Kaizala, la gestione dei gruppi di Kaizala, la gestione di schede e connettori e la creazione di richieste di servizio.

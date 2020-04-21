@@ -17,21 +17,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
-description: Informazioni su come Microsoft 365 business può essere di aiuto per il processo di regolamento generale sulla protezione dei dati (GDPR).
-ms.openlocfilehash: 1a2df3fb52536cd2caca247332bc1c54fbdbe668
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Informazioni su come Microsoft 365 for business può essere di aiuto per il processo di regolamento generale sulla protezione dei dati (GDPR).
+ms.openlocfilehash: a77de1b835e4cf6e312b8976a972ac10eb60e3b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556964"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627717"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR semplificato: una guida per le piccole imprese
 
- *Utilizzo di Microsoft 365 business per attenuare e gestire la conformità di GDPR* 
+ *Utilizzo di Microsoft 365 for business per attenuare e gestire la conformità di GDPR* 
   
 Il regolamento generale sulla protezione dei dati (GDPR) è una regola dell'Unione europea (UE) che impone come un'organizzazione debba gestire i dati personali. Il GDPR è dovuto all'entrata in vigore il 25 maggio 2018. Se la propria azienda vende, fornisce servizi o impiega cittadini dell'Unione europea, l' [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) influirà sull'utente. 
   
-In questo articolo vengono fornite informazioni utili per comprendere il GDPR, il motivo per cui è nato e in che modo Microsoft 365 business può aiutare l'organizzazione a rispettare la GDPR.
+In questo articolo vengono fornite informazioni utili per comprendere il GDPR, il motivo per cui è nato e in che modo Microsoft 365 for business può aiutare l'organizzazione a rispettare la GDPR.
   
 ## <a name="a-quick-overview-of-the-gdpr"></a>Una breve panoramica di GDPR
 
@@ -53,7 +53,7 @@ In GDPR verranno visualizzati alcuni termini riferiti frequentemente. È importa
   
 Gli Stati GDPR: "il trattamento dei dati personali deve essere studiato per servire l'umanità". Il GDPR spera di raggiungere questo obiettivo usando il consenso per l'elaborazione dei dati personali. Questo potrebbe essere il semplice gesto di chiedere ai clienti se desiderano ricevere messaggi di posta elettronica dalla propria azienda. Significa anche che non vi sono più caselle di controllo per l'opt-out nel sito Web quando si desidera utilizzare i dati per il marketing. È necessario prendere esplicitamente il consenso usando un "chiaro atto positivo". Inoltre, è necessario tenere traccia anche del momento in cui viene effettuato o revocato un consenso.
   
- **Diritti del soggetto dei dati**
+ **Diritti del soggetto interessato**
   
 Il GDPR stabilisce diritti dei soggetti dei dati, il che significa che, in relazione ai dati personali, clienti, dipendenti, partner commerciali, clienti, appaltatori, studenti, fornitori e così via hanno il diritto di:
   
@@ -87,7 +87,7 @@ Ad esempio, l'elaborazione di dati non personali verrebbe esente o avrà bisogno
 
 La prima domanda da porsi è: raccogliere i dati personali in un punto qualsiasi del sito? Ad esempio, è possibile disporre di un modulo di contatto che richiede un nome e un indirizzo di posta elettronica. Se si desidera inviare messaggi di posta elettronica di marketing, è necessario aggiungere una casella di controllo ' opt-in ' che spiega esattamente a cosa verranno utilizzati i dati. Solo se il destinatario verifica che la casella è in grado di utilizzare i dati personali per scopi di marketing.
   
-Verificare inoltre che il database in cui sono archiviati i dati sia protetto. La società di hosting Web o il fornitore di archiviazione cloud sarà in grado di consigliarlo. Se si utilizza Microsoft 365 business, l'archiviazione dei dati è conforme a GDPR. 
+Verificare inoltre che il database in cui sono archiviati i dati sia protetto. La società di hosting Web o il fornitore di archiviazione cloud sarà in grado di consigliarlo. Se si utilizza Microsoft 365 for business, l'archiviazione dei dati è conforme a GDPR. 
   
 ### <a name="my-company-is-outside-europe-does-the-gdpr-really-affect-us"></a>La mia azienda è al di fuori dell'Europa. Il GDPR interessa davvero noi?
 
@@ -101,7 +101,7 @@ Si considerino gli esempi seguenti:
     
 - Una carità internazionale raccoglie i dati relativi ai donatori e li utilizza per inviare aggiornamenti e richieste di donazioni. Gli Stati GDPR:'... il trattamento dei dati personali per scopi di marketing diretto può essere considerato come eseguito per un interesse legittimo ". Tuttavia, la responsabilità dell'organizzazione è quella di dimostrare che i propri interessi sostituiscono quelli dell'interessato. La società (o, in questo caso, l'organizzazione caritatevole) deve sempre essere informata, esplicita, consenso opt-in.
     
-Il GDPR si applica anche se i dati dei clienti si spostano tra le frontiere. Se si utilizza il cloud computing per l'archiviazione dei dati, sarà necessario verificare che il servizio sia completamente conforme a GDPR. Si può ottenere complicata se l'archiviazione dei dati si trova in posizioni che dispongono di un record scarso di protezione dei dati. Se si utilizza Microsoft 365 business, è possibile utilizzare la documentazione legale corretta per coprire i requisiti di GDPR.
+Il GDPR si applica anche se i dati dei clienti si spostano tra le frontiere. Se si utilizza il cloud computing per l'archiviazione dei dati, sarà necessario verificare che il servizio sia completamente conforme a GDPR. Si può ottenere complicata se l'archiviazione dei dati si trova in posizioni che dispongono di un record scarso di protezione dei dati. Se si utilizza Microsoft 365 for business, è possibile utilizzare la documentazione legale corretta per coprire i requisiti di GDPR.
   
 ### <a name="sure-i-collect-data-but-some-other-company-stores-it-does-that-get-me-off-the-hook"></a>Certo, raccolgo dati, ma altri lo archivia. Questo mi toglie il gancio?
 
@@ -109,9 +109,9 @@ In GDPR, se si raccolgono dati in una certa misura. Il GDPR ha il concetto di un
   
 - **Titolare del trattamento dei dati:** Un individuo o un'organizzazione (è possibile disporre di controller congiunti) che decide come, cosa e perché i dati vengono raccolti. È possibile archiviarlo utilizzando i server cloud di un'altra società. Ad esempio, un sito Web che raccoglie i dati dei clienti è un controller. 
     
-- Responsabile del trattamento **dei dati:** Persona o organizzazione che memorizza i dati per conto dei controller e elabora tali dati su richiesta. Ad esempio, Office 365 Business Data Storage funge da processore ed è completamente compatibile con GDPR. 
+- Responsabile del trattamento **dei dati:** Persona o organizzazione che memorizza i dati per conto dei controller e elabora tali dati su richiesta. Ad esempio, Microsoft 365 Apps for Business Data Storage funge da processore ed è completamente compatibile con GDPR. 
     
-    Un'organizzazione o un sistema può agire sia come controller che come processore. Microsoft 365 business può agire come sia e conforme al GDPR.
+    Un'organizzazione o un sistema può agire sia come controller che come processore. Microsoft 365 for business può agire come sia e conforme al GDPR.
     
 ### <a name="can-i-still-send-out-marketing-emails-to-my-old-customers"></a>È comunque possibile inviare messaggi di posta elettronica di marketing ai clienti precedenti?
 
@@ -123,25 +123,25 @@ Il GDPR non incide solo sui dati dei clienti; si estende anche ai dati dei dipen
   
 Come per i dipendenti esistenti e i nuovi contratti con i dipendenti, una firma al termine di un contratto non presuppone necessariamente il consenso, soprattutto quando una clausola non affermativa viene utilizzata in un contratto. In questo caso, è necessario acquisire il consenso in maniera esplicita associata alla clausola. Questo significa che dipende dal contratto dei dipendenti, ma in alcuni casi è possibile utilizzare un "interesse legittimo" e aggiungere un avviso per l'elaborazione dei dati per verificare che i dipendenti siano a conoscenza di cosa si intende fare con i propri dati.
   
-## <a name="satisfy-privacy-concerns-using-microsoft-365-business"></a>Soddisfare i problemi relativi alla privacy tramite Microsoft 365 business
+## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>Soddisfare i problemi relativi alla privacy tramite Microsoft 365 for business
 
 Diventare conformi all'GDPR è garantire la protezione dei dati personali. Il GDPR ha un concetto noto come privacy per progettazione e impostazione predefinita. Questo significa che la protezione dei dati deve essere "infornata" a un sistema e a un prodotto, in modo che la soddisfazione delle preoccupazioni per la privacy sia una seconda natura. 
   
-Come le loro controparti più grandi, una piccola azienda ha bisogno di convenienza senza sacrificare la sicurezza. Microsoft 365 business è stato ideato per aziende con meno di 300 dipendenti. Le aziende di piccole dimensioni possono utilizzare gli strumenti basati sul cloud Microsoft per migliorare la produttività aziendale. Con Microsoft 365 business, una piccola azienda può gestire messaggi di posta elettronica, documentazione e persino riunioni ed eventi. Ha anche misure di sicurezza integrate e la gestione dei dispositivi, che sono di vitale importanza per la conformità di GDPR.
+Come le loro controparti più grandi, una piccola azienda ha bisogno di convenienza senza sacrificare la sicurezza. Microsoft 365 for business è stato creato per aziende con meno di 300 dipendenti. Le aziende di piccole dimensioni possono utilizzare gli strumenti basati sul cloud Microsoft per migliorare la produttività aziendale. Con Microsoft 365 for business, una piccola azienda può gestire messaggi di posta elettronica, documentazione e persino riunioni ed eventi. Ha anche misure di sicurezza integrate e la gestione dei dispositivi, che sono di vitale importanza per la conformità di GDPR.
   
-Microsoft 365 business può essere di aiuto per il processo di GDPR nei modi seguenti:
+Microsoft 365 for business può essere di aiuto per il processo di GDPR nei modi seguenti:
   
 - **Scopri:** Un passaggio importante per la conformità di GDPR è sapere quali dati sono stati rilevati. 
     
-- **Gestione:** Controllare l'accesso ai dati e gestirne l'utilizzo è parte integrante di GDPR. Microsoft 365 Business protegge i dati business in base ai criteri che si desidera applicare ai dispositivi. La gestione dei dispositivi è di importanza vitale in un'epoca in cui i dipendenti lavorano in remoto. Microsoft 365 business include funzionalità di gestione dei dispositivi che consente di proteggere i dati su tutti i dispositivi. Ad esempio, è possibile specificare che tutti i dispositivi Windows 10 nell'azienda siano protetti tramite Windows Defender. 
+- **Gestione:** Controllare l'accesso ai dati e gestirne l'utilizzo è parte integrante di GDPR. Microsoft 365 for Business protegge i dati business in base ai criteri che si desidera applicare ai dispositivi. La gestione dei dispositivi è di importanza vitale in un'epoca in cui i dipendenti lavorano in remoto. Microsoft 365 for business include funzionalità di gestione dei dispositivi che assicurano che i dati siano protetti su tutti i dispositivi. Ad esempio, è possibile specificare che tutti i dispositivi Windows 10 nell'azienda siano protetti tramite Windows Defender. 
     
-- **Proteggi:** Microsoft 365 business è stato creato per la sicurezza. I controlli relativi alla gestione dei dispositivi e ai dati di protezione funzionano all'interno della rete aziendale, inclusi i dispositivi remoti, per proteggere i dati. Microsoft 365 business offre controlli quali le impostazioni di privacy nelle applicazioni di Office e la crittografia dei documenti. Con Microsoft 365 business, è possibile eseguire il monitoraggio della conformità di GDPR per assicurarsi di avere il livello di protezione appropriato. 
+- **Proteggi:** Microsoft 365 for business è stato creato per la sicurezza. I controlli relativi alla gestione dei dispositivi e ai dati di protezione funzionano all'interno della rete aziendale, inclusi i dispositivi remoti, per proteggere i dati. Microsoft 365 for business offre controlli quali le impostazioni di privacy nelle applicazioni di Office e la crittografia dei documenti. Con Microsoft 365 for business, è possibile eseguire il monitoraggio della conformità di GDPR per assicurarsi di avere il livello di protezione appropriato. 
     
-- **Relazione:** Il GDPR pone molta enfasi sulla creazione di report. Anche un'azienda con un solo dipendente, se tale azienda elabora grandi quantità di dati, è tenuta a documentare e segnalare le procedure. Microsoft 365 business prende il mal di testa dei requisiti di segnalazione per le organizzazioni più piccole. 
+- **Relazione:** Il GDPR pone molta enfasi sulla creazione di report. Anche un'azienda con un solo dipendente, se tale azienda elabora grandi quantità di dati, è tenuta a documentare e segnalare le procedure. Microsoft 365 for business toglie il mal di testa ai requisiti di Reporting per organizzazioni di piccole dimensioni. 
     
     Strumenti quali i registri di controllo consentono di monitorare e segnalare lo spostamento dei dati. I report includono la classificazione dei dati raccolti e archiviati, le operazioni eseguite con i dati e i trasferimenti di dati. 
     
-Clienti, dipendenti e client stanno diventando sempre più informati sull'importanza della privacy dei dati e ora si aspettano che un'azienda o un'organizzazione rispettino la privacy. Microsoft 365 business fornisce gli strumenti per ottenere e mantenere la conformità di GDPR senza un massiccio sconvolgimento per la propria azienda.
+Clienti, dipendenti e client stanno diventando sempre più informati sull'importanza della privacy dei dati e ora si aspettano che un'azienda o un'organizzazione rispettino la privacy. Microsoft 365 for business fornisce gli strumenti per ottenere e mantenere la conformità di GDPR senza un massiccio sconvolgimento per la propria azienda.
   
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -149,13 +149,13 @@ Per prepararsi per l'GDPR, ecco alcuni suggerimenti per i passaggi successivi da
   
 - Valutare il programma di GDPR con gli [elenchi di controllo di preparazione della conformità alle responsabilità](https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc).
     
-- Esaminare [Microsoft 365 business](https://www.microsoft.com/microsoft-365/business) come soluzione per il raggiungimento e la gestione della conformità con GDPR. 
+- Esaminare [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) come soluzione per il raggiungimento e la gestione della conformità con GDPR. 
    
 
 > [!IMPORTANT]
 > Ottenere consulenza legale appropriata per la propria azienda o organizzazione.
   
-## <a name="additional-resources"></a>Altre risorse
+## <a name="additional-resources"></a>Risorse aggiuntive
 
 [Panoramica del Centro protezione Microsoft di GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 )

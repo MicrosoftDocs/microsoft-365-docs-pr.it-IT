@@ -1,5 +1,5 @@
 ---
-title: Rimuovere un dominio da Office 365
+title: Rimuovere un dominio
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Informazioni su come rimuovere un vecchio dominio da Office 365 e spostare gli utenti e i gruppi in un altro dominio.
-ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare gli utenti e i gruppi in un altro dominio.
+ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210369"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628435"
 ---
-# <a name="remove-a-domain-from-office-365"></a>Rimuovere un dominio da Office 365
+# <a name="remove-a-domain"></a>Rimuovere un dominio
 
 Collaboratori: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **Se non si trovano le informazioni desiderate, vedere le [domande frequenti sui domini](../setup/domains-faq.md)**. 
   
-Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonamento a Office 365 diverso o se si vuole annullare semplicemente l'abbonamento, è possibile [cambiare piano o abbonamento](../../commerce/subscriptions/switch-to-a-different-plan.md) oppure [annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).
+Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sottoscrizione di Microsoft 365 diverso? Oppure si desidera semplicemente annullare l'abbonamento? È possibile [modificare il piano o la sottoscrizione](../../commerce/subscriptions/switch-to-a-different-plan.md) oppure [annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### <a name="step-1-move-users-to-another-domain"></a>Passaggio 1: spostare gli utenti in un altro dominio
 
@@ -210,7 +210,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Quanto ci vuole per rimuovere un dominio?
 
-La rimozione di un dominio in molti luoghi, ad esempio 365 i gruppi di sicurezza, le liste di distribuzione, gli utenti e i gruppi di Office 365, può richiedere meno di 5 minuti. Se sono presenti molti riferimenti che usano il dominio, la rimozione può richiedere diverse ore (un giorno).
+La rimozione di un dominio in molti luoghi come gruppi di sicurezza, liste di distribuzione, utenti e gruppi di Microsoft 365 può richiedere meno di 5 minuti a Microsoft 365. Se sono presenti molti riferimenti che usano il dominio, la rimozione può richiedere diverse ore (un giorno).
   
 Se ci sono centinaia o migliaia di utenti, usare PowerShell per eseguire query per tutti gli utenti e spostarli in un altro dominio. In caso contrario, alcuni utenti potrebbero risultare mancanti nell'interfaccia utente e quindi, quando si rimuove il dominio, non sarà possibile spostarli e non si riuscirà a individuare la causa del problema. Per altre informazioni, vedere [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -231,6 +231,6 @@ Il problema persiste? Potrebbe essere necessario rimuovere manualmente il domini
 
 [Ottenere assistenza per i domini di Office 365](get-help-with-domains.md)
 
-[Passare a un piano di Office 365 per le aziende diverso](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Passare a un piano Microsoft 365 for business diverso](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [Annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md)

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nelle zone DNS di Azure per Office 365.
-ms.openlocfilehash: 1c9ac04f74b205fa4a099fca634a41207e8083ba
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nelle aree DNS di Azure per Microsoft.
+ms.openlocfilehash: 7104fb18a6581b7ebc853f938b85171ae1886cfd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211051"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629144"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Creare record DNS per le aree DNS di Azure
 
@@ -39,15 +39,15 @@ Ecco i principali record da aggiungere.
     
 - [Aggiungere un record TXT a scopo di verifica](#add-a-txt-record-for-verification)
 
-- [Aggiungere un record MX in modo che la posta elettronica per il dominio venga recapitata in Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [Aggiungere un record MX in modo che la posta elettronica per il dominio venga a Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Aggiungere i quattro record CNAME necessari per Office 365](#add-the-four-cname-records-that-are-required-for-office-365)
+- [Aggiungere i quattro record CNAME necessari per Microsoft](#add-the-four-cname-records-that-are-required-for-microsoft)
     
 - [Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Aggiungere i due record SRV necessari per Office 365](#add-the-two-srv-records-that-are-required-for-office-365)
+- [Aggiungere i due record SRV necessari per Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Dopo aver aggiunto questi record in Azure, il dominio sarà configurato per l'uso con i servizi di Office 365.
+Dopo aver aggiunto questi record in Azure, il dominio sarà configurato per l'uso con i servizi Microsoft.
   
 > [!NOTE]
 > In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -60,7 +60,7 @@ Dopo aver aggiunto questi record in Azure, il dominio sarà configurato per l'us
   
 Quando è stato eseguito l'accesso a Azure, è stato creato un gruppo di risorse all'interno di un'area DNS e quindi è stato assegnato il nome di dominio a tale gruppo di risorse. Tale nome di dominio è registrato in un registro di dominio esterno. Azure non offre servizi di registrazione dei domini.
   
-Per verificare e creare record DNS per il proprio dominio in Office 365, è innanzitutto necessario modificare i server dei nomi presso il registrar in modo che utilizzino i server dei nomi di Azure assegnati al gruppo di risorse.
+Per verificare e creare record DNS per il proprio dominio in Microsoft, è innanzitutto necessario cambiare i server dei nomi presso il registrar in modo che utilizzino i server dei nomi di Azure assegnati al gruppo di risorse.
   
 Per modificare i server dei nomi del dominio presso il registrar, seguire questa procedura:
   
@@ -81,12 +81,12 @@ Per modificare i server dei nomi del dominio presso il registrar, seguire questa
 3. Salvare le modifiche apportate.
     
 > [!NOTE]
-> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio. 
+> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. L'indirizzo di posta elettronica e gli altri servizi di Microsoft saranno tutti impostati per l'utilizzo con il dominio. 
   
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 <a name="BKMK_verify"> </a>
 
-Prima di usare il proprio dominio con Office 365, è necessario dimostrare di esserne proprietari. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Office 365 che si è proprietari del dominio.
+Prima di utilizzare il dominio con Microsoft, è necessario assicurarsi di possederlo. La possibilità di eseguire l'accesso al proprio account presso il registrar e di creare il record DNS dimostra a Microsoft che si è proprietari del dominio.
   
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
@@ -109,7 +109,7 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     
     |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Valore**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1   <br/> |Ore  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1   <br/> |Ore  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Utilizzare il valore **di indirizzo di destinazione o puntamento** specifico qui, dalla tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
@@ -117,9 +117,9 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
   
 6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
+Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e richiedere il record.
   
-Quando Office 365 trova il record TXT corretto, il dominio è verificato.
+Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
@@ -138,7 +138,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga recapitata in Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga a Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.
@@ -159,7 +159,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Preference**|**Exchange Mail**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> |Ore  <br/> |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dall'account di Office 365.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |1   <br/> |Ore  <br/> |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-Configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
@@ -185,7 +185,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     
     ![Azure-BP-Configure-2-6](../../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
   
-## <a name="add-the-four-cname-records-that-are-required-for-office-365"></a>Aggiungere i quattro record CNAME necessari per Office 365
+## <a name="add-the-four-cname-records-that-are-required-for-microsoft"></a>Aggiungere i quattro record CNAME necessari per Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.
@@ -228,7 +228,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
 7.  Optional Aggiungere 2 record CNAME per MDM.
 
 > [!IMPORTANT]
-> Se si dispone di Gestione di dispositivi mobili per Office 365, è necessario creare due record CNAME aggiuntivi. Seguire la procedura usata per gli altri quattro record CNAME, specificando però i valori della tabella seguente. Se non si dispone di MDM, è possibile ignorare questo passaggio. 
+> Se si dispone di gestione dei dispositivi mobili (MDM) per Microsoft, è necessario creare due record CNAME aggiuntivi. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. Se non si dispone di MDM, è possibile ignorare questo passaggio. 
   
 |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -239,7 +239,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori. 
   
 1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.
     
@@ -267,7 +267,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     
     ![Azure-BP-Configure-4-3](../../media/d7421c7f-ea63-4e11-8595-a482b8c165e0.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Aggiungere i due record SRV necessari per Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Aggiungere i due record SRV necessari per Microsoft
 <a name="BKMK_add_SRV"> </a>
 
 1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.

@@ -18,24 +18,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: Determinare se il tenant e gli utenti di Office 365 soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: a3005d02522d0a2b22b1ca337d8f49ce7fa20fb3
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
+ms.openlocfilehash: 10dd97adf67cf3aeb91337fb251e7cebffdce56c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209749"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628233"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
-La distribuzione centralizzata è il metodo consigliato e più ricco di funzionalità per la maggior parte dei clienti per distribuire i componenti aggiuntivi per Office agli utenti e ai gruppi all'interno dell'organizzazione di Office 365. Se si è un amministratore, utilizzare queste linee guida per determinare se il tenant e gli utenti soddisfano i requisiti affinché sia possibile utilizzare la distribuzione centralizzata.
+La distribuzione centralizzata è il metodo consigliato e più ricco di funzionalità per la maggior parte dei clienti per distribuire i componenti aggiuntivi di Office agli utenti e ai gruppi all'interno dell'organizzazione. Se si è un amministratore, utilizzare queste linee guida per determinare se il tenant e gli utenti soddisfano i requisiti affinché sia possibile utilizzare la distribuzione centralizzata.
 La distribuzione centralizzata supporta le app di Office, Windows, Mac, iOS, Android e online.
-È possibile richiedere fino a 24 ore affinché un componente aggiuntivo venga visualizzato per il client per tutti gli utenti.
+È possibile richiedere fino a 12 ore affinché un componente aggiuntivo venga visualizzato per il client per tutti gli utenti.
   
 ## <a name="requirements"></a>Requisiti
 
-La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Office 365 ProPlus (e siano firmati in Office utilizzando l'ID dell'organizzazione) e dispongano di cassette postali di Exchange Online e Active Exchange Online. È necessario che la directory di sottoscrizione sia in o federata in Azure Active Directory.
-È possibile visualizzare i requisiti specifici per Office ed Exchange di seguito oppure utilizzare la [Verifica compatibilità della distribuzione centralizzata di office 365](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
+La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Microsoft 365 Apps for Enterprise (e che siano firmati in Office utilizzando l'ID dell'organizzazione) e dispongano di cassette postali di Exchange Online e Active Exchange Online. È necessario che la directory di sottoscrizione sia in o federata in Azure Active Directory.
+È possibile visualizzare i requisiti specifici per Office ed Exchange di seguito oppure utilizzare la [Verifica compatibilità della distribuzione centralizzata](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
 
 La distribuzione centralizzata non supporta quanto segue:
   
@@ -49,16 +49,16 @@ La distribuzione centralizzata non supporta quanto segue:
    
 - Distribuzione dei componenti aggiuntivi Component Object Model (COM) o Visual Studio Tools per Office (VSTO)
     
-- Distribuzioni di Office 365 che non includono Exchange, come Office 365 Business
+- Distribuzioni di Microsoft 365 che non includono Exchange, ad esempio Microsoft 365 Apps for business
 
 ### <a name="office-requirements"></a>Requisiti di Office
 
 - Per i componenti aggiuntivi di Word, Excel e PowerPoint, è necessario che gli utenti utilizzino uno dei seguenti elementi:
-  - In un dispositivo Windows, versione 1704 o successiva di Office 365 ProPlus.
+  - Su un dispositivo Windows, versione 1704 o successiva di Microsoft 365 Apps for Enterprise.
   - Su un Mac, versione 15,34 o successiva.
 
 - Per Outlook, è necessario che gli utenti utilizzino una delle opzioni seguenti: 
-  - Versione 1701 o successiva di Office 365 ProPlus.
+  - Versione 1701 o successiva di Microsoft 365 Apps for Enterprise.
   - Versione 1808 o successiva di Office Professional Plus 2019 o Office standard 2019.
   - Version 16.0.4494.1000 o versione successiva di Office Professional Plus 2016 (MSI) o Office standard 2016 (MSI)\*
   - Version 15.0.4937.1000 o versione successiva di Office Professional Plus 2013 (MSI) o Office Standard 2013 (MSI)\*
@@ -69,17 +69,17 @@ La distribuzione centralizzata non supporta quanto segue:
     * Le versioni MSI di Outlook visualizzano i componenti aggiuntivi installati dall'amministratore nella barra multifunzione di Outlook appropriata e non nella sezione "componenti aggiuntivi".
     
 
-#### <a name="find-out-if-office-365-proplus-is-installed"></a>Scoprire se Office 365 ProPlus è installato
+#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>Scoprire se Microsoft 365 Apps for Enterprise è installato
 
-Per utilizzare Office 365 ProPlus, un utente deve disporre di un account di Office 365 e deve disporre di una licenza. Per altre informazioni, vedere [Panoramica di Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846328).
+Per utilizzare Microsoft 365 Apps for Enterprise, un utente deve disporre di un account Microsoft 365 e deve disporre di una licenza. Per ulteriori informazioni, vedere [Overview of Microsoft 365 Apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846328).
 
-Il modo più semplice per rilevare se un utente dispone di Office 365 ProPlus installato e lo ha utilizzato di recente consiste nell'utilizzare il rapporto attivazioni di Microsoft Office, disponibile nell'interfaccia di amministrazione di Microsoft 365. Il report fornisce un elenco di tutti gli utenti che hanno attivato Office 365 ProPlus negli ultimi 7, 30, 90 o 180 giorni. Ai fini della distribuzione centralizzata, le attivazioni desktop per Windows o Mac rappresentano le colonne più importanti del report. È possibile esportare il report in Excel. Per altre informazioni sul report, vedere [Report di Office 365 nell'interfaccia di amministrazione - Attivazioni di Microsoft Office](../activity-reports/microsoft-office-activations.md).
+Il modo più semplice per rilevare se un utente ha installato Microsoft 365 ProPlus e lo ha utilizzato di recente consiste nell'utilizzare il rapporto attivazioni di Microsoft Office, disponibile nell'interfaccia di amministrazione di Microsoft 365. Il rapporto fornisce un elenco di tutti gli utenti che hanno attivato Microsoft 365 Apps for Enterprise negli ultimi 7 giorni, 30 giorni, 90 o 180 giorni. Ai fini della distribuzione centralizzata, le attivazioni desktop per Windows o Mac rappresentano le colonne più importanti del report. È possibile esportare il report in Excel. Per ulteriori informazioni sul report, vedere [rapporti microsoft 365 nell'interfaccia di amministrazione-attivazioni di Microsoft Office](../activity-reports/microsoft-office-activations.md).
   
-Se non si desidera utilizzare il rapporto attivazioni, è possibile chiedere a un utente di aprire un'applicazione di Office come Word nel computer in uso e quindi scegliere **File** \> **account**file. In **informazioni sui prodotti** dovrebbe essere visualizzato **Prodotto a sottoscrizione** e **Microsoft Office 365 ProPlus**, come mostrato nell'immagine seguente.
+Se non si desidera utilizzare il rapporto attivazioni, è possibile chiedere a un utente di aprire un'applicazione di Office come Word nel computer in uso e quindi scegliere **File** \> **account**file. In **informazioni sui prodotti**, dovrebbe essere visualizzato il **prodotto di sottoscrizione** e le **app Microsoft Microsoft 365 per Enterprise**, come illustrato nell'immagine seguente.
 
 ![Informazioni sul prodotto in un'applicazione di Office](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
-Per assistenza con Office 365 ProPlus, vedere [Suggerimenti per la risoluzione dei problemi per Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846339).
+Per informazioni su Microsoft 365 Apps for Enterprise, vedere [Troubleshooting Tips for microsoft 365 Apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
 
 ### <a name="exchange-online-requirements"></a>Requisiti di Exchange Online
@@ -89,9 +89,9 @@ Microsoft Exchange archivia i manifesti del componente aggiuntivo all'interno de
 Contattare l'amministratore di Exchange dell'organizzazione per sapere quale configurazione è in uso. La connettività OAuth per ogni utente può essere verificata usando il cmdlet di PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
 
 
-### <a name="office-365-centralized-deployment-compatibility-checker"></a>Verifica compatibilità della distribuzione centralizzata di Office 365
+### <a name="centralized-deployment-compatibility-checker"></a>Verifica compatibilità della distribuzione centralizzata
 
-Con Verifica compatibilità della distribuzione centralizzata di Office 365, è possibile verificare se gli utenti del tenant sono configurati per l'uso della distribuzione centralizzata per Word, Excel e PowerPoint. Verifica compatibilità non è necessario per il supporto di Outlook. Scaricare Verifica compatibilità [qui](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Tramite Verifica compatibilità della distribuzione centralizzata, è possibile verificare se gli utenti del tenant sono configurati per l'utilizzo della distribuzione centralizzata per Word, Excel e PowerPoint. Verifica compatibilità non è necessario per il supporto di Outlook. Scaricare Verifica compatibilità [qui](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
   
 #### <a name="run-the-compatibility-checker"></a>Esecuzione di verifica compatibilità
   
@@ -131,7 +131,7 @@ Al termine dell'esecuzione dello strumento, viene generato un file di output in 
   
 ## <a name="user-and-group-assignments"></a>Assegnazioni di utenti e gruppi
 
-La funzionalità Distribuzione centralizzata attualmente supporta la maggior parte dei gruppi supportati da Azure Active Directory, tra cui Gruppi di Office 365, le liste di distribuzione e i gruppi di sicurezza.
+La funzionalità di distribuzione centralizzata supporta attualmente la maggior parte dei gruppi supportati da Azure Active Directory, inclusi i gruppi di Microsoft 365, le liste di distribuzione e i gruppi di sicurezza.
   
 > [!NOTE]
 > I gruppi di sicurezza non abilitati alla posta elettronica non sono attualmente supportati. 
@@ -157,11 +157,11 @@ In alternativa, è possibile usare l'API di Azure Active Directory Graph per ese
   
 ### <a name="contacting-microsoft-for-support"></a>Contattare Microsoft per assistenza
 
-Se l'utente o gli utenti riscontrano problemi durante il caricamento del componente aggiuntivo utilizzando le app di Office per il Web (Word, Excel e così via), che sono state distribuite in modo centralizzato, potrebbe essere necessario contattare il supporto tecnico Microsoft ([informazioni su come](../contact-support-for-business-products.md)). Specificare le informazioni seguenti sull'ambiente di Office 365 nel ticket di supporto.
+Se l'utente o gli utenti riscontrano problemi durante il caricamento del componente aggiuntivo utilizzando le app di Office per il Web (Word, Excel e così via), che sono state distribuite in modo centralizzato, potrebbe essere necessario contattare il supporto tecnico Microsoft ([informazioni su come](../contact-support-for-business-products.md)). Fornire le seguenti informazioni sull'ambiente Microsoft 365 nel ticket di supporto.
   
 |**Piattaforma**|**Informazioni di debug**|
 |:-----|:-----|
-|Office  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b.aspx))  <br/>  CorrelationId. Visualizzare l'origine di una delle pagine di Office e cercare il valore dell'ID correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Ufficio  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b.aspx))  <br/>  CorrelationId. Visualizzare l'origine di una delle pagine di Office e cercare il valore dell'ID correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich client (Windows, Mac)  <br/> | Log di Charles/Fiddler  <br/>  Creare numeri dell'app client (preferibilmente come schermata da **file/account**)  <br/> |
    
 

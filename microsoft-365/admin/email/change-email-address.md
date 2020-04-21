@@ -23,21 +23,21 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: "Modificare l'indirizzo di posta elettronica iniziale in un indirizzo di posta elettronica semplice come tom@fourthcoffee.com. A tale scopo, è necessario acquistare un nome di dominio e aggiungerlo a Office 365. "
-ms.openlocfilehash: dc0ab64003b48eec50bf34e60d8a6df463b4fe89
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: "Modificare l'indirizzo di posta elettronica iniziale in un indirizzo di posta elettronica semplice come tom@fourthcoffee.com. A tale scopo, è necessario acquistare un nome di dominio e aggiungerlo a Microsoft 365. "
+ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212034"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629060"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Cambiare l'indirizzo di posta elettronica per usare il dominio personalizzato
 
- **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
 ::: moniker range="o365-worldwide"
 
-L'indirizzo di posta elettronica iniziale in Office 365 include .onmicrosoft.com, ad esempio roby@fourthcoffee.onmicrosoft.com. È possibile modificarlo per ottenere un indirizzo più semplice come roby@fourthcoffee.com. Prima di tutto è necessario un nome di dominio personalizzato, ad esempio fourthcoffee.com. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
+L'indirizzo di posta elettronica iniziale in Microsoft 365 include. onmicrosoft.com, ad esempio tom@fourthcoffee.onmicrosoft.com. È possibile modificarlo per ottenere un indirizzo più semplice come roby@fourthcoffee.com. Prima di tutto è necessario un nome di dominio personalizzato, ad esempio fourthcoffee.com. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ L'indirizzo di posta elettronica iniziale in Office 365 gestito da 21Vianet incl
 
 ::: moniker-end
 
-Quando si cambia la posta elettronica del dominio in modo che venga recapitata in Office 365, aggiornando il record MX del dominio durante la configurazione, TUTTI i messaggi inviati al dominio inizieranno a essere recapitati in Office 365. Assicurarsi di aver aggiunto utenti e creato cassette postali in Office 365 per tutte le persone che hanno la posta elettronica nel dominio PRIMA di cambiare il record MD. Non si vuole spostare la posta di tutti gli utenti del dominio in Office 365? È possibile [eseguire una distribuzione pilota di Office 365 con solo alcuni indirizzi di posta elettronica](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx).
+Quando si modifica il messaggio di posta elettronica del dominio in modo che venga a Microsoft 365, aggiornando il record MX del dominio durante l'installazione, tutti i messaggi di posta elettronica inviati a tale dominio inizieranno a essere Microsoft 365. Assicurarsi di aver aggiunto utenti e le cassette postali create in Microsoft 365 per tutti coloro che hanno un messaggio di posta elettronica nel dominio prima di modificare il record MX. Non si desidera spostare la posta elettronica per tutti gli utenti del dominio in Microsoft 365? È possibile eseguire la procedura per [pilotare Microsoft 365 con solo alcuni indirizzi di posta elettronica](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx).
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Modificare l'indirizzo di posta elettronica per usare il dominio personalizzato utilizzando l'interfaccia di amministrazione di Microsoft 365
 
@@ -83,12 +83,12 @@ Per eseguire questa procedura è necessario disporre di un account di amministra
     
 4. Seguire i vari passaggi per confermare di essere proprietari del dominio e modificare l'indirizzo di posta elettronica.
     
-Sarà possibile eseguire in modo guidato tutte le operazioni necessarie per la corretta configurazione del dominio personale in Office 365.
+Verrà visualizzata una guida per ottenere tutto configurato correttamente con il dominio in Microsoft 365.
 
 > [!NOTE]
-> Se non si utilizza una licenza di Exchange, non è possibile utilizzare il dominio per inviare o ricevere messaggi di posta elettronica dal tenant di Office 365.
+> Se non si utilizza una licenza di Exchange, non è possibile utilizzare il dominio per inviare o ricevere messaggi di posta elettronica dal tenant di Microsoft 365.
   
 ## <a name="related-articles"></a>Articoli correlati
 
-[Acquistare un dominio personalizzato usando Office 365](../get-help-with-domains/buy-a-domain-name.md)
+[Acquistare un dominio personalizzato tramite Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
  

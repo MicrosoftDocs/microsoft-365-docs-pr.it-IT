@@ -1,5 +1,5 @@
 ---
-title: Configurare il dominio (istruzioni specifiche per l’host)
+title: Configurare il dominio (istruzioni specifiche per l'ost)
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,20 +19,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
-description: Informazioni su come gestire i propri record DNS o su come gestire i record DNS da parte di Office 365.
+description: Informazioni su come gestire i propri record DNS o consentire a Microsoft di gestire i record DNS per l'utente.
 ms.custom: okr_smb
-ms.openlocfilehash: 7a5bcf6bb39497a37cbec4e2cd9b7efad0fc6724
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: ea3a62c048706f36cd7b1590851d8b372e0a1677
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210357"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628423"
 ---
-# <a name="set-up-your-domain-host-specific-instructions"></a>Configurare il dominio (istruzioni specifiche per l’host)
+# <a name="set-up-your-domain-host-specific-instructions"></a>Configurare il dominio (istruzioni specifiche per l'ost)
 
 Per iniziare a utilizzare un dominio personalizzato (contoso.com) con Office 365, è necessario verificare il dominio e configurare i record DNS del dominio. 
   
-È possibile aggiungere e gestire i record DNS utilizzando gli strumenti di amministrazione nell'host di dominio oppure assegnare a Office 365 il controllo dei record di dominio e verranno configurati per l'utente.
+È possibile aggiungere e gestire i record DNS utilizzando gli strumenti di amministrazione nell'host di dominio oppure fornire il controllo Microsoft dei record di dominio e verranno configurati per l'utente.
   
 Selezionare l'host di dominio seguente per i passaggi esatti. Se non si è sicuri di chi sia l'host, vedere [Find Your Domain Registrar](find-your-domain-registrar.md).
   

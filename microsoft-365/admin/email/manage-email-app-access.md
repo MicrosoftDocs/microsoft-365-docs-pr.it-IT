@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come scegliere quali app per dispositivi mobili possono essere utilizzate per accedere alla posta elettronica, al calendario e ai contatti.
-ms.openlocfilehash: dcfd356ecdbc7448036507abe8d8f09546b05255
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8627a31f7ec5e3c14b853618bb0383ecc58597cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253015"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628808"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Gestire l'accesso alle app di posta elettronica nell'interfaccia di amministrazione di Microsoft 365
 
@@ -43,7 +43,7 @@ Utilizzare le impostazioni di accesso alla posta elettronica per dispositivi mob
 
 2. Nella pagina **Opzioni di accesso alla posta elettronica mobile** selezionare la casella di controllo e quindi scegliere in che modo gli utenti dell'organizzazione utilizzano le app di posta elettronica nei propri dispositivi:
   
-Scegliere l'opzione per impostare il modo in cui gli utenti dell'organizzazione accedono al proprio account aziendale o dell'Istituto di istruzione di Office 365 dai propri dispositivi mobili
+Scegliere l'opzione per impostare il modo in cui gli utenti dell'organizzazione accedono al proprio account aziendale o dell'Istituto di istruzione dai propri dispositivi mobili
   
 - **Solo Outlook** -gli utenti dell'organizzazione saranno tenuti a utilizzare l'app Outlook per Android o Outlook per iOS sul dispositivo mobile. 
     

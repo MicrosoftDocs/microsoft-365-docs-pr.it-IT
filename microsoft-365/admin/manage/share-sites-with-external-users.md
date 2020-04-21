@@ -1,5 +1,5 @@
 ---
-title: Condividere siti e file con l'esterno
+title: Condividere esternamente siti e file
 f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
@@ -20,14 +20,14 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: "Informazioni su come condividere siti e file con utenti esterni all'organizzazione. "
-ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610573"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628029"
 ---
-# <a name="share-sites-and-files-externally"></a>Condividere siti e file con l'esterno
+# <a name="share-sites-and-files-externally"></a>Condividere esternamente siti e file
 
 Per collaborare con persone esterne all'organizzazione, è possibile condividere interi siti o file specifici esternamente. Se si vuole passare direttamente alla configurazione della condivisione, scegliere lo scenario che si desidera attivare:
 
@@ -54,7 +54,7 @@ Rispondendo a queste domande sarà più semplice pianificare la strategia per la
 |Condividere un documento, ma non richiedere l'autenticazione.  <br/> |Condividere un collegamento a un documento non riservato o non confidenziale con utenti esterni all'organizzazione in modo che possano visualizzarlo o aggiornarlo con commenti e suggerimenti. Queste persone non richiedono l'accesso al contenuto del sito.  <br/> |
    
 > [!IMPORTANT]
-> Quando si disattiva la condivisione esterna, gli utenti esterni all'organizzazione che attualmente dispongono dell'accesso non avranno più accesso. Se in seguito si riattiva la condivisione esterna, verrà ripristinato l'accesso per queste persone. Per impedire a un utente di accedere a un contenuto condiviso, [rimuoverli dal gruppo Office 365](/office365/admin/create-groups/add-or-remove-members-from-groups), rimuovere le autorizzazioni dal sito oppure [interrompere la condivisione del file o della cartella con tali](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)utenti. 
+> Quando si disattiva la condivisione esterna, gli utenti esterni all'organizzazione che attualmente dispongono dell'accesso non avranno più accesso. Se in seguito si riattiva la condivisione esterna, verrà ripristinato l'accesso per queste persone. Per impedire a un utente di accedere a un contenuto condiviso, [rimuoverli dal gruppo Microsoft 365](/office365/admin/create-groups/add-or-remove-members-from-groups), rimuovere le autorizzazioni dal sito oppure [interrompere la condivisione del file o della cartella con tali](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)utenti. 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>Abilitare la condivisione esterna a livello di organizzazione
 

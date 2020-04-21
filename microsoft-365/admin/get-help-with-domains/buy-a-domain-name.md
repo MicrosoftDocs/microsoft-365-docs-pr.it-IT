@@ -1,5 +1,5 @@
 ---
-title: Acquistare un nome di dominio in Office 365
+title: Acquistare un nome di dominio
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Informazioni su come acquistare un nome di dominio in Office 365.
+description: Informazioni su come acquistare un nome di dominio in Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 89bc24683cd98d2c9f420d1470a864eef857c9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 3df4ec9014e2e65288cb30fd9203db4a11708369
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211147"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628591"
 ---
-# <a name="buy-a-domain-name-in-office-365"></a>Acquistare un nome di dominio in Office 365
+# <a name="buy-a-domain-name"></a>Acquistare un nome di dominio
 
  *Per aggiungere, modificare o rimuovere i domini, è **necessario** essere un **amministratore globale** di un [piano aziendale o aziendale](https://products.office.com/business/office). Queste modifiche hanno effetto sull'intero tenant, gli *amministratori personalizzati* o *gli utenti normali* non saranno in grado di apportare queste modifiche.*  
 
@@ -93,17 +93,17 @@ Se il proprio dominio è gestito da un provider che non supporta tutti i record 
 
 Se non si ha ancora un dominio personale, è possibile acquistarne uno online presso un registrar, un rivenditore di domini o persino presso il proprio provider Internet. Quando ci si iscrive a Office 365 gestito da 21Vianet si ottiene un nome di dominio, ad esempio contoso.partner.onmschina.cn, ma è possibile scegliere di usare un nome di dominio personalizzato, come fourthcoffee.com.
   
-Per configurare un dominio in Office 365 occorre essere proprietari del dominio e modificare alcuni dei record DNS per il dominio.
+Per configurare un dominio in Microsoft 365, è necessario disporre di un dominio e modificare alcuni dei record DNS per il dominio.
   
 > [!CAUTION]
-> Alcuni registrar o provider di hosting DNS non consentono di creare tutti i record DNS richiesti da Office 365. I provider di hosting elencati in questo articolo supportano tutti i record necessari. Se si prevede di usare un provider di hosting diverso, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Alcuni registrar o provider di hosting DNS non consentono di creare tutti i record DNS richiesti da Microsoft 365. I provider di hosting elencati in questo articolo supportano tutti i record necessari. Se si prevede di usare un provider di hosting diverso, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-Dopo aver registrato il dominio presso un registrar, accedere a Office 365 come amministratore e configurare il dominio per usarlo con il proprio indirizzo di posta elettronica e altri servizi.
+Dopo aver registrato il dominio (presso un registrar), accedere a Microsoft 365 come amministratore e configurare il dominio in modo che sia possibile utilizzarlo con il proprio indirizzo di posta elettronica e altri servizi.
   
 > [!NOTE]
-> The SharePoint Online Public Website information in this article only applies if your organization purchased Office 365 prior to March 9, 2015. 
+> Le informazioni sul sito Web pubblico di SharePoint online in questo articolo si applicano solo se l'organizzazione ha acquistato Microsoft 365 prima del 9 marzo 2015. 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-office-365"></a>Registrar che supportano tutti i record DNS necessari per Office 365
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Registrar che supportano tutti i record DNS necessari per Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -117,10 +117,10 @@ Dopo aver registrato il dominio presso un registrar, accedere a Office 365 come 
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Aggiungere un dominio a Office 365](../setup/add-domain.md)
+[Aggiungere un dominio a Microsoft 365](../setup/add-domain.md)
 
 [Domande frequenti sui domini](../setup/domains-faq.md)
 
-[Ottenere assistenza per i domini di Office 365](get-help-with-domains.md)
+[Ottenere assistenza per i domini](get-help-with-domains.md)
 
-[Aggiornare i record DNS per mantenere il proprio sito Web con il provider di hosting corrente](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider) 
+[Aggiornare i record DNS per mantenere il proprio sito Web con il provider di hosting corrente](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

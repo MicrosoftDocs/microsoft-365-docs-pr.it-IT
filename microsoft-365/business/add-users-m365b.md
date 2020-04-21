@@ -1,5 +1,5 @@
 ---
-title: Aggiungere altri utenti a Microsoft 365 business
+title: Aggiungere altri utenti
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,15 +25,15 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
-description: Informazioni sui passaggi per aggiungere facilmente nuovi utenti, proteggere i propri dispositivi e assegnare ruoli in Microsoft 365 business.
-ms.openlocfilehash: 8181254aa56345e99e648c59474f4d7f8fa94990
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Informazioni sui passaggi per aggiungere facilmente nuovi utenti, proteggere i propri dispositivi e assegnare ruoli in Microsoft 365 Business Premium.
+ms.openlocfilehash: d57f7470d53a6c80e04872726c634f67f091fb0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561561"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627475"
 ---
-# <a name="add-more-users-to-microsoft-365-business"></a>Aggiungere altri utenti a Microsoft 365 business
+# <a name="add-more-users"></a>Aggiungere altri utenti
 
 ## <a name="add-new-users"></a>Aggiungere nuovi utenti
 
@@ -41,11 +41,11 @@ Guardare un breve video sull'aggiunta di un utente. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
 
-Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Per aggiungere un utente:
 
-1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
 2. Nel riquadro di spostamento a sinistra, **scegliere** \> utenti **attivi**.
 3. Nella pagina **utenti attivi** scegliere **Aggiungi utente**.
 4. Nel **nuovo pannello utente** , digitare le informazioni necessarie. 
@@ -54,7 +54,7 @@ Per aggiungere un utente:
       
     ![Enter user information in the New user card](../media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
-    Nella sezione licenze di prodotto impostare l'impostazione licenza di prodotto **Microsoft 365 business** **su**attivato.
+    Nella sezione licenze di prodotto impostare l'impostazione della licenza del prodotto **Microsoft 365 Business Premium** **su**attivato.
       
     ![Set the license setting to On position](../media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   

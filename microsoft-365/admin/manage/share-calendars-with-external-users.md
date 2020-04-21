@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Informazioni su come consentire agli utenti di condividere i propri calendari con utenti esterni per riunioni e appuntamenti. '
-ms.openlocfilehash: 42bce53c3963c41684644d02dab18210f9ed828a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bd297fc2d684357d0500495e5a8263e5279efa39
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252727"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628041"
 ---
 # <a name="share-calendars-with-external-users"></a>Condividere calendari con utenti esterni
 
-Spesso capita di dover pianificare riunioni con utenti esterni alla propria organizzazione. Per semplificare l'individuazione di orari per le riunioni che vadano bene per tutti i partecipanti, Office 365 consente di rendere i calendari accessibili agli "utenti esterni", ovvero quelli che devono poter vedere i periodi di disponibilità ma non hanno un account utente per l'ambiente di Office 365.
+Spesso capita di dover pianificare riunioni con utenti esterni alla propria organizzazione. Per semplificare il processo di individuazione degli orari di riunione reciprocamente gradevoli, Microsoft 365 consente di rendere disponibili i calendari a "utenti esterni", a coloro che hanno necessità di visualizzare i tempi di disponibilità, ma non hanno account utente per l'ambiente Microsoft 365.
   
 La condivisione del calendario è un'impostazione globale, ovvero l'amministratore può abilitarla per tutti gli utenti del tenant. Una volta abilitata la condivisione, gli utenti possono utilizzare Outlook Web App per condividere i propri calendari con chiunque sia all'interno che all'esterno dell'organizzazione. Gli utenti all'interno dell'organizzazione possono visualizzare il calendario condiviso affiancato con il proprio. Agli utenti esterni all'organizzazione verrà inviato un URL che può essere utilizzato per visualizzare il calendario. Gli utenti decidono quando condividere, quanto condividere e quando mantenere privati i propri calendari.
   
@@ -44,7 +44,7 @@ La condivisione del calendario è un'impostazione globale, ovvero l'amministrato
   
 2. Nella pagina **componenti &amp; aggiuntivi servizi** Selezionare **Calendario**.
   
-3. Nella pagina **Calendario** che si apre, scegliere se si desidera consentire agli utenti di condividere i propri calendari con persone esterne all'organizzazione che dispongono di Office 365 o Exchange.
+3. Nella pagina **Calendario** che si apre, scegliere se si desidera consentire agli utenti di condividere i propri calendari con persone esterne all'organizzazione che dispongono di Microsoft 365 o Exchange.
     
 4. Scegliere se si desidera consentire agli utenti anonimi (utenti senza credenziali di accesso) di accedere ai calendari tramite un invito di posta elettronica.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: È possibile creare e utilizzare un modello per risparmiare tempo e standardizzare le impostazioni quando si aggiungono più utenti.
-ms.openlocfilehash: 340d0ae3329b441c2b9773ba06e4f9e69be88526
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a45107f520ee34437989bcd000096945514384ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353247"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617273"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Creare e usare un modello per aggiungere utenti
 
@@ -88,7 +88,7 @@ Per utilizzare un modello esistente per aggiungere un utente:
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Aggiungere gli utenti singolarmente o in blocco a Office 365](add-users.md)
+[Aggiungere gli utenti singolarmente o in blocco a Microsoft 365](add-users.md)
 
-[Rimuovere un ex dipendente da Office 365](remove-former-employee.md)
+[Rimuovere un ex dipendente da Microsoft 365](remove-former-employee.md)
   

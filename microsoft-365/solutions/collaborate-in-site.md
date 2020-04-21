@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come collaborare con gli utenti in un sito di SharePoint.
-ms.openlocfilehash: 3a7c14cc4cd31961b0d4c1054f88b5ed276b3b1a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604755"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630738"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
-Se è necessario collaborare con gli utenti tra documenti, dati ed elenchi, è possibile utilizzare un sito di SharePoint. I siti di SharePoint moderni sono connessi a gruppi di Office 365 che possono gestire l'appartenenza al sito e fornire strumenti di collaborazione aggiuntivi quali una cassetta postale condivisa e un calendario.
+Se è necessario collaborare con gli utenti tra documenti, dati ed elenchi, è possibile utilizzare un sito di SharePoint. I siti di SharePoint moderni sono connessi ai gruppi di Microsoft 365 e possono gestire l'appartenenza al sito e fornire strumenti di collaborazione aggiuntivi quali una cassetta postale condivisa e un calendario.
 
 In questo articolo verranno illustrati i passaggi di configurazione di Microsoft 365 necessari per configurare un sito di SharePoint per la collaborazione con gli utenti.
 
@@ -48,17 +48,17 @@ Per impostare le impostazioni delle relazioni organizzative
 
 Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . Verificare che i domini degli utenti con cui si desidera collaborare non siano bloccati.
 
-## <a name="office-365-groups-guest-settings"></a>Office 365 gruppi Guest Settings
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 groups Guest Settings
 
-I siti di SharePoint moderni utilizzano i gruppi di Office 365 per controllare l'accesso al sito. Le impostazioni di Office 365 groups Guest devono essere attivate affinché l'accesso guest in siti di SharePoint funzioni.
+I siti di SharePoint moderni utilizzano i gruppi di Microsoft 365 per controllare l'accesso al sito. È necessario che le impostazioni Guest dei gruppi Microsoft 365 siano attivate affinché l'accesso guest in siti di SharePoint funzioni.
 
-![Screenshot delle impostazioni guest di Gruppi di Office 365 nell'interfaccia di amministrazione di Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Schermata di Microsoft 365 gruppi Guest Settings in Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
 
-Per impostare le impostazioni di Office 365 groups Guest
+Per impostare Microsoft 365 groups Guest Settings
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, espandere **Impostazioni**.
 2. Fare clic su **servizi & componenti**aggiuntivi.
-3. Nell'elenco, fare clic su **gruppi di Office 365**.
+3. Nell'elenco, fare clic su **gruppi Microsoft 365**.
 4. Verificare che i membri del gruppo Consenti al di **fuori dell'organizzazione accedano al contenuto del gruppo** e che i proprietari del **gruppo aggiungano persone all'esterno dell'organizzazione ai gruppi di caselle di** controllo siano entrambe controllate.
 5. Se sono state apportate modifiche, fare clic su **Salva modifiche**.
 
@@ -111,9 +111,9 @@ Per impostare le impostazioni di condivisione a livello di sito
 4. Verificare che la condivisione sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
 5. Se si apportano modifiche, fare clic su **Salva**.
 
-## <a name="invite-users"></a>Invitare gli utenti
+## <a name="invite-users"></a>Invitare utenti
 
-Le impostazioni di condivisione Guest sono ora configurate, quindi è possibile iniziare ad aggiungere utenti interni e ospiti al sito. L'accesso al sito è controllato tramite il gruppo Office 365 associato, quindi verranno aggiunti gli utenti.
+Le impostazioni di condivisione Guest sono ora configurate, quindi è possibile iniziare ad aggiungere utenti interni e ospiti al sito. L'accesso al sito è controllato tramite il gruppo Microsoft 365 associato, quindi verranno aggiunti gli utenti.
 
 Per invitare gli utenti interni a un gruppo
 1. Passare al sito in cui si desidera aggiungere gli utenti.

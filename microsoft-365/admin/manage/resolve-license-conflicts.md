@@ -1,5 +1,5 @@
 ---
-title: Risolvere i conflitti di licenza in Office 365 per le aziende
+title: Risoluzione dei conflitti di licenze
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: Informazioni su come risolvere i conflitti di licenza con l'abbonamento a Office 365 for business.
-ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Informazioni su come risolvere i conflitti di licenza con l'abbonamento a Microsoft 365 for business.
+ms.openlocfilehash: 51f87c055402d9e6e3bd732a99abf2c155887290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540916"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628089"
 ---
-# <a name="resolve-license-conflicts-in-office-365-for-business"></a>Risolvere i conflitti di licenza in Office 365 per le aziende
+# <a name="resolve-license-conflicts"></a>Risoluzione dei conflitti di licenze
 
 È consigliabile acquistare le licenze necessarie per l'abbonamento prima di creare nuovi utenti. In questo modo, quando si creano gli account utente sarà possibile assegnare una licenza ai nuovi utenti. Se tutte le licenze disponibili sono già state assegnate agli utenti, ma alcune di esse sono scadute, oppure se si prova a rimuovere una licenza già assegnata a un utente, si verificheranno conflitti di licenza. Per ulteriori informazioni, vedere [rimuovere licenze dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).
   

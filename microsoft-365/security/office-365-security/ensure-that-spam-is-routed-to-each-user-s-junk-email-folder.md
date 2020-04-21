@@ -16,21 +16,21 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare l'ambiente di Exchange locale per instradare la posta indesiderata alle cartelle di posta indesiderata degli utenti locali, se si utilizza Exchange Online Protection (EOP) autonomo in ambienti ibridi.
-ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893719"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621283"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurare EOP autonomo per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi
 
 > [!IMPORTANT]
-> Questo argomento è solo per i clienti di EOP autonomi in ambienti ibridi. Questo argomento non si applica ai clienti di Office 365 con cassette postali di Exchange Online.
+> Questo argomento è solo per i clienti di EOP autonomi in ambienti ibridi. Questo argomento non si applica ai clienti Microsoft 365 con cassette postali di Exchange Online.
 
-Se si è un cliente autonomo di Exchange Online Protection (EOP) in un ambiente ibrido, è necessario configurare l'organizzazione di Exchange locale per riconoscere e tradurre i verdetti del filtro della posta indesiderata di EOP, in modo che la regola di posta indesiderata nella cassetta postale locale è possibile spostare i messaggi nella cartella posta indesiderata.
+Se si è un cliente autonomo di Exchange Online Protection (EOP) in un ambiente ibrido, è necessario configurare l'organizzazione di Exchange locale per riconoscere e tradurre i verdetti del filtro della posta indesiderata di EOP, in modo che la regola di posta indesiderata nella cassetta postale locale possa spostare i messaggi nella cartella posta indesiderata.
 
-In particolare, è necessario creare regole del flusso di posta (note anche come regole di trasporto) nell'organizzazione di Exchange locale con condizioni che consentono di trovare i messaggi con uno dei seguenti valori e intestazioni di protezione da posta indesiderata di EOP e le azioni che impostano il livello di probabilità di posta indesiderata ( SCL) di tali messaggi su 6:
+In particolare, è necessario creare regole del flusso di posta (note anche come regole di trasporto) nell'organizzazione di Exchange locale con condizioni che consentono di trovare messaggi con uno dei seguenti valori e intestazioni di protezione da posta indesiderata di EOP e le azioni che configurano il livello di probabilità di posta indesiderata (SCL) di tali messaggi su 6:
 
 - `X-Forefront-Antispam-Report: SFV:SPM`(messaggio contrassegnato come posta indesiderata dal filtro posta indesiderata)
 
@@ -139,7 +139,7 @@ Per verificare la corretta configurazione di EOP autonomo per recapitare la post
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- In un sistema di posta elettronica esterno **che non esegue l'analisi dei messaggi in uscita per la posta indesiderata**, inviare un test generico per il messaggio di posta elettronica indesiderata (GTUBE) a un destinatario coinvolto e verificare che sia recapitato nella cartella posta indesiderata. Un messaggio di GTUBE è simile al file di testo EICAR (European Institute for computer Antivirus Research) per testare le impostazioni di malware.
+- In un sistema di posta elettronica esterno **che non esegue l'analisi dei messaggi in uscita per la posta indesiderata**, inviare un test generico per il messaggio di posta elettronica indesiderata (GTUBE) a un destinatario coinvolto e verificare che sia recapitato nella cartella posta indesiderata. Un messaggio GTUBE è simile al file di testo EICAR (European Institute for Computer Antivirus Research) per la verifica delle impostazioni antimalware.
 
   Per inviare un messaggio di GTUBE, includere il testo seguente nel corpo di un messaggio di posta elettronica su una singola riga, senza spazi o interruzioni di riga:
 

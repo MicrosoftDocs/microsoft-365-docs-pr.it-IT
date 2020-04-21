@@ -18,35 +18,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Vengono fornite informazioni sulle app integrate e su come attivarle per consentire alle app di terze parti di accedere ai dati di Office 365 degli utenti.
-ms.openlocfilehash: 3c7c92e16b375fc374563e87ea2f6166c7384a29
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Vengono fornite informazioni sulle app integrate e su come attivarle per consentire alle app di terze parti di accedere all'informazione di Microsoft 365 degli utenti.
+ms.openlocfilehash: 7e758facda49bb63e09c9ec667522c2b20fa75bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361387"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627849"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Attivazione o disattivazione di App integrate
 
-Se l'opzione App integrate è attivata, gli utenti dell'organizzazione possono consentire l'accesso di app di terze parti alle loro informazioni di Office 365. Un'eventuale app di terze parti usata da qualcuno potrebbe ad esempio chiedere l'autorizzazione per accedere al calendario e per modificare i file contenuti in una cartella di OneDrive di questa persona.
+Quando le app integrate sono attivate, gli utenti dell'organizzazione possono consentire alle app di terze parti di accedere alle informazioni di Microsoft 365. Un'eventuale app di terze parti usata da qualcuno potrebbe ad esempio chiedere l'autorizzazione per accedere al calendario e per modificare i file contenuti in una cartella di OneDrive di questa persona.
 
 ## <a name="turning-integrated-apps-on-or-off"></a>Attivazione o disattivazione di App integrate
 <a name="__toc379982114"> </a>
 
 Ecco come attivare o disattivare App integrate.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina dei [componenti &amp; aggiuntivi dei servizi](https://go.microsoft.com/fwlink/p/?linkid=2053743) di **Impostazioni** \> e quindi selezionare **app integrate**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina dei [componenti &amp; aggiuntivi dei servizi](https://go.microsoft.com/fwlink/p/?linkid=2053743) di **Impostazioni** \> e quindi selezionare **app integrate**.
 
 2. Nella pagina **app integrate** , selezionare l'opzione per abilitare o disabilitare le app integrate.
 
 ## <a name="more-info-on-integrated-apps"></a>Altre informazioni sulle app integrate
 <a name="__toc379982114"> </a>
 
-Le app integrate possono essere create nell'organizzazione oppure provenire da un'altra organizzazione di Office 365 o da una terza parte.
+Un'app integrata può essere creata dall'interno dell'organizzazione oppure può provenire da un'altra organizzazione o da terze parti.
 
-Se l'opzione App integrate è attivata, le eventuali app che vengono usate chiedono l'autorizzazione per impostare il livello di accesso necessario per accedere alle informazioni dell'utente. Ogni utente può concedere l'accesso solo alle app di cui è proprietario e che accedono alle proprie informazioni di Office 365. Non può invece concedere l'accesso alle informazioni degli altri utenti.
+Se l'opzione App integrate è attivata, le eventuali app che vengono usate chiedono l'autorizzazione per impostare il livello di accesso necessario per accedere alle informazioni dell'utente. Un utente può concedere l'accesso solo alle app che possiedono per accedere alle informazioni di Microsoft 365. Non può invece concedere l'accesso alle informazioni degli altri utenti.
 
-Con App integrate di Office 365 vengono usati due tipi di autorizzazione, ossia le autorizzazioni utente e le autorizzazioni di amministratore. Se ad esempio le app integrate sono abilitate per l'organizzazione e un utente usa un'app di terze parti, quest'ultima può chiedere l'autorizzazione dell'utente per leggere i dettagli del suo profilo, modificare o eliminare file, leggere gli elementi contenuti nelle raccolte siti e inviare messaggi di posta elettronica a nome dell'utente.
+Esistono due tipi di autorizzazioni che vengono utilizzate quando si utilizzano app integrate in Microsoft 365: autorizzazioni utente e autorizzazioni di amministratore. Se ad esempio le app integrate sono abilitate per l'organizzazione e un utente usa un'app di terze parti, quest'ultima può chiedere l'autorizzazione dell'utente per leggere i dettagli del suo profilo, modificare o eliminare file, leggere gli elementi contenuti nelle raccolte siti e inviare messaggi di posta elettronica a nome dell'utente.
 
 ![Autorizzazioni utente per App integrate](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
 

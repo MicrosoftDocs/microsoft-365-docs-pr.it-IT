@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Informazioni su come usare Windows Autopilot per configurare nuovi dispositivi Windows 10 per la propria azienda in modo che siano pronti per l'utilizzo dei dipendenti.
-ms.openlocfilehash: 3b1cf297914862aaa74fdf9a8bb7290d00f73b1d
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 98a2bfc721ce86c81ebd89e8f41603e619b31546
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561581"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627495"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usare la guida dettagliata per aggiungere profili e dispositivi Autopilot
 
@@ -49,7 +49,7 @@ I dispositivi devono soddisfare i requisiti seguenti:
 
 Se non è ancora stato creato un gruppo di dispositivi o profili, il modo migliore per iniziare è quello di utilizzare la guida dettagliata. È inoltre possibile [aggiungere i dispositivi](create-and-edit-autopilot-devices.md) e [assegnargli i profili](create-and-edit-autopilot-profiles.md) senza utilizzare la guida. 
   
-1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
 2. Nel riquadro di spostamento a sinistra, scegliere **dispositivi** \> **Autopilot**.
 
@@ -81,7 +81,7 @@ Se non è ancora stato creato un gruppo di dispositivi o profili, il modo miglio
     
     - È necessario creare un'esperienza di accesso con il marchio della società.
     
-    - Connettere i dispositivi agli account di Azure Active Directory e registrarli automaticamente per essere gestiti da Microsoft 365 business.
+    - Connettere i dispositivi agli account di Azure Active Directory e registrarli automaticamente per essere gestiti da Microsoft 365 Business Premium.
     
     Per ulteriori informazioni, vedere [informazioni sulle impostazioni del profilo Autopilot](autopilot-profile-settings.md). 
     

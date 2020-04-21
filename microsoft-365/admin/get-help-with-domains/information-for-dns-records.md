@@ -1,5 +1,5 @@
 ---
-title: Raccogliere le informazioni necessarie per creare record DNS di Office 365
+title: Raccogliere le informazioni necessarie per creare record DNS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Per ulteriori informazioni, vedere i valori o i dati necessari per la creazione di record DNS per Office 365. '
+description: 'Per ulteriori informazioni, vedere i valori o i dati necessari per la creazione di record DNS per Microsoft 365. '
 ms.custom: okr_smb
-ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 9cfefa2620b6a46b7488a29c22a58d70f53c6ad2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540880"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628447"
 ---
-# <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Raccogliere le informazioni necessarie per creare record DNS di Office 365
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>Raccogliere le informazioni necessarie per creare record DNS
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
@@ -61,9 +61,9 @@ ms.locfileid: "43540880"
     
 5. Passare a [creare record DNS presso un provider di hosting DNS](create-dns-records-at-any-dns-hosting-provider.md)e selezionare l'host DNS dall'elenco dei registrar per visualizzare le istruzioni dettagliate.
     
-6. Seguire la procedura per creare il record TXT (o il record MX) presso l'host DNS, quindi verificare nuovamente il dominio in Office 365.
+6. Seguire la procedura per creare il record TXT (o il record MX) nell'host DNS, quindi verificare il dominio di nuovo in Microsoft 365.
 
-7. Rimuovere il record TXT (o il record MX) dall'host DNS dopo la verifica del dominio in Office 365.
+7. Rimuovere il record TXT (o il record MX) dall'host DNS dopo che il dominio è stato verificato in Microsoft 365.
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Passaggio 2: trovare il valore del record MX per la posta elettronica e altro ancora
 

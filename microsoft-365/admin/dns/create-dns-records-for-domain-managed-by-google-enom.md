@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: Informazioni su come accedere a eNom e creare DNS tramite la pagina domini di Google.
-ms.openlocfilehash: 8fc13ea2ccc7dfee510ef7abb72f88030d048943
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 7d79350f163d1b120d3dd45bc7bbb3e57583bf05
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210659"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629132"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Creare record DNS quando il dominio è gestito da Google (eNom)
 
- **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
-Per eseguire la migrazione degli account di posta elettronica a Office 365, è necessario creare un record DNS presso il proprio registrar.
+Per eseguire la migrazione degli account di posta elettronica a Microsoft, è necessario creare un record DNS presso il registrar.
   
 Se il dominio è stato acquistato tramite Google durante l'iscrizione per l'account di **Google Apps for Work** , i record DNS vengono gestiti da Google ma registrati con eNom. 
   
@@ -89,7 +89,7 @@ Se il dominio è stato acquistato tramite Google durante l'iscrizione per l'acco
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > This is an example. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365. 
+    > This is an example. Utilizzare il valore **di indirizzo di destinazione o puntamento** specifico qui, dalla tabella. 
   
     [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)
   

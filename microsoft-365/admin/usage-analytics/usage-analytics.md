@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Ottenere una panoramica del modo in cui l'organizzazione adotta i servizi Microsoft 365 per comunicare e collaborare.
-ms.openlocfilehash: c9e2b9e6b814ac9245222f5da670862e308d1ab4
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 783b2c599a5f3a31446855450029859e6dfd9f65
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170919"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626935"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analisi di utilizzo di Microsoft 365
-
-Microsoft 365 Usage Analytics non è attualmente disponibile per i clienti governativi Power BI.
+---
+Microsoft 365 Usage Analytics non è ancora disponibile per la community di Microsoft 365 US Government.
  
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Panoramica dell'analisi dell'utilizzo di Microsoft 365
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Ottenere l'app di amministrazione di Microsoft 365 e imparare a gestire l'organizzazione online dal telefono o dal tablet.
-ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aead9f30f2d75e3eab5099596ff80a575e571306
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353037"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623989"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'app Microsoft 365 admin per dispositivi mobili
 
@@ -40,9 +40,9 @@ L'app di amministrazione è un'app ricca di funzionalità con oltre 80 funzional
 - Ottenere l'integrità del servizio e le notifiche di modifica
 - Creare una richiesta di servizio
 - Reimpostare la password di un utente
-- Assegnare licenze
+- Assegnazione delle licenze
 - Aggiungere o rimuovere le appartenenze ai gruppi
-- Aggiungere utenti 
+- Aggiungere gli utenti 
 
 Se si è responsabili di più organizzazioni online, è possibile accedere a più org e passare rapidamente da un utente all'altro. 
   
@@ -66,11 +66,11 @@ Ecco le risposte ad alcune domande frequenti sull'app.
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>Che cosa serve per usare l'app?
 
-Per accedere e usare l'app, è necessario disporre di un abbonamento a Office 365 for business o di Microsoft 365 business valido con privilegi di amministratore. L'app di amministrazione per dispositivi mobili non è un client di posta elettronica. Si tratta di un'applicazione amministrativa ricca con oltre 80 funzionalità che consente di supportare la propria organizzazione mentre è in viaggio.
+È necessario disporre di un abbonamento valido Microsoft 365 Apps for business o Microsoft 365 Business Premium con privilegi di amministratore per accedere e usare l'app. L'app di amministrazione per dispositivi mobili non è un client di posta elettronica. Si tratta di un'applicazione amministrativa ricca con oltre 80 funzionalità che consente di supportare la propria organizzazione mentre è in viaggio.
   
-### <a name="can-i-use-the-app-with-my-office-365-for-home-subscription"></a>È possibile utilizzare l'app con il mio Office 365 per l'abbonamento a domicilio?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>È possibile utilizzare l'app con l'abbonamento alla famiglia Microsoft 365?
 
-No, l'app funziona solo con le sottoscrizioni di Office 365 for business e Microsoft 365 business. 
+No, l'app funziona solo con gli abbonamenti Microsoft 365 Apps for business e Microsoft 365 Business Premium. 
   
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>L'app funziona se nell'organizzazione è abilitata la sincronizzazione della directory?
 
@@ -104,4 +104,4 @@ Provare alcune procedure comuni per la risoluzione dei problemi delle app per di
   
 ## <a name="see-also"></a>Vedere anche
 
-[Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

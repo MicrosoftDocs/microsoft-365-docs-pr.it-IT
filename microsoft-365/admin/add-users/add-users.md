@@ -1,5 +1,5 @@
 ---
-title: Aggiungere gli utenti singolarmente o in blocco a Office 365
+title: Aggiungere utenti singolarmente o in blocco
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,17 +23,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
-description: Informazioni su come aggiungere utenti a Office 365, uno alla volta o più utenti contemporaneamente da un file CSV.
-ms.openlocfilehash: 708bce2cb5a2c1b6a621bffc3ce56a2744bb518d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Informazioni su come aggiungere utenti a Microsoft 365, uno alla volta o più utenti contemporaneamente da un file CSV.
+ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241687"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618861"
 ---
-# <a name="add-users-individually-or-in-bulk-to-office-365"></a>Aggiungere gli utenti singolarmente o in blocco a Office 365
+# <a name="add-users-individually-or-in-bulk"></a>Aggiungere utenti singolarmente o in blocco
 
-Per poter accedere a [Office 365 per le aziende](https://go.microsoft.com/fwlink/?LinkID=519395), è necessario che ogni persona del team abbia un account utente. Il modo più semplice per aggiungere account utente consiste nell'aggiungerli uno alla volta nell'interfaccia di amministrazione di Microsoft 365. Dopo aver eseguito questo passaggio, gli utenti avranno licenze di Office 365, credenziali di accesso e cassette postali di Office 365.
+Gli utenti del team hanno a disposizione un account utente prima di poter accedere e accede a [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). Il modo più semplice per aggiungere account utente consiste nell'aggiungerli uno alla volta nell'interfaccia di amministrazione di Microsoft 365. Dopo aver eseguito questo passaggio, gli utenti avranno licenze Microsoft 365, credenziali di accesso e cassette postali di Microsoft 365.
 
 ::: moniker range="o365-worldwide"
 
@@ -42,13 +42,13 @@ Per poter accedere a [Office 365 per le aziende](https://go.microsoft.com/fwlink
 
 1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Passare a **** > utenti **attivi**e selezionare **Aggiungi un utente**.
+2. Passare a **Users** > utenti **attivi**e selezionare **Aggiungi un utente**.
    
 3. Nel riquadro **Configura le nozioni di base** , immettere le informazioni seguenti e quindi fare clic su **Avanti**. 
   
 - **Nome** Compilare primo, ultimo, nome visualizzato e nome utente. 
     
-- **Dominio** Se ad esempio il nome utente è Pio e il suo dominio è contoso.com, questo utente eseguirà l'accesso a Office 365 digitando pio@contoso.com. 
+- **Dominio** Ad esempio, se il nome utente è Jakob e il suo dominio è contoso.com, accederà digitando jakob@contoso.com. 
     
 - **Impostazioni della password** Scegliere di utilizzare la password generata automaticamente o creare una password complessa per l'utente. 
     
@@ -56,7 +56,7 @@ Per poter accedere a [Office 365 per le aziende](https://go.microsoft.com/fwlink
     
     - Scegliere se si desidera inviare la password tramite posta elettronica quando l'utente è stato aggiunto. 
     
-4. Nel riquadro **assegna licenze di prodotto** selezionare il percorso e la licenza appropriata per l'utente. Se non ci sono licenze disponibili, è sempre possibile aggiungere un utente e acquistare licenze aggiuntive.  Select **Next**. 
+4. Nel riquadro **assegna licenze di prodotto** selezionare il percorso e la licenza appropriata per l'utente. Se non ci sono licenze disponibili, è sempre possibile aggiungere un utente e acquistare licenze aggiuntive. Selezionare **Avanti**.
 
 5. Nella pagina **impostazioni facoltative** espandere **ruoli** se si desidera che l'utente sia un amministratore e quindi espandere informazioni sul **profilo** se si desidera aggiungere ulteriori informazioni sull'utente. 
 
@@ -67,16 +67,16 @@ Per poter accedere a [Office 365 per le aziende](https://go.microsoft.com/fwlink
 
 ::: moniker range="o365-germany"
 
-1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
-2. Passare a **** > utenti **attivi**e selezionare **Aggiungi un utente**.
+2. Passare a **Users** > utenti **attivi**e selezionare **Aggiungi un utente**.
    
   
    Nel riquadro **nuovo utente** , immettere le informazioni seguenti. Selezionare **Aggiungi** al termine. 
   
 - **Nome** Inserire il nome, il cognome, il nome visualizzato e il nome utente. 
     
-- **Dominio** Se ad esempio il nome utente è Pio e il suo dominio è contoso.com, questo utente eseguirà l'accesso a Office 365 digitando pio@contoso.com. 
+- **Dominio** Ad esempio, se il nome utente è Jakob e il suo dominio è contoso.com, accederà digitando jakob@contoso.com. 
     
 - **Informazioni di contatto** Espandere per inserire il numero di telefono cellulare, l'indirizzo e così via. 
     
@@ -92,16 +92,16 @@ Per poter accedere a [Office 365 per le aziende](https://go.microsoft.com/fwlink
 
 ::: moniker range="o365-21vianet"
 
-1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
-2. Passare a **** > utenti **attivi**e selezionare **Aggiungi un utente**.
+2. Passare a **Users** > utenti **attivi**e selezionare **Aggiungi un utente**.
    
   
    Nel riquadro **nuovo utente** , immettere le informazioni seguenti. Selezionare **Aggiungi** al termine. 
   
 - **Nome** Inserire il nome, il cognome, il nome visualizzato e il nome utente. 
     
-- **Dominio** Se ad esempio il nome utente è Pio e il suo dominio è contoso.com, questo utente eseguirà l'accesso a Office 365 digitando pio@contoso.com. 
+- **Dominio** Ad esempio, se il nome utente è Jakob e il suo dominio è contoso.com, accederà digitando jakob@contoso.com. 
     
 - **Informazioni di contatto** Espandere per inserire il numero di telefono cellulare, l'indirizzo e così via. 
     
@@ -115,10 +115,10 @@ Per poter accedere a [Office 365 per le aziende](https://go.microsoft.com/fwlink
 
 ::: moniker-end 
   
-Dopo aver aggiunto un utente, si otterrà una notifica tramite posta elettronica dal team dei Microsoft Online Services. Il messaggio di posta elettronica conterrà l'ID utente e la password di Office 365 in modo che possano accedere a Office 365. È necessario informare il nuovo utente sulle proprie informazioni di accesso a Office 365. Usare il consueto processo per la comunicazione di nuove password.
+Dopo aver aggiunto un utente, si otterrà una notifica tramite posta elettronica dal team dei Microsoft Online Services. Il messaggio di posta elettronica conterrà l'ID utente e la password della persona in modo che possano accedere a Microsoft 365. È necessario informare il nuovo utente sulle informazioni di accesso di Microsoft 365. Usare il consueto processo per la comunicazione di nuove password.
 
 > [!NOTE]
->Se si creano utenti eseguendo la migrazione di cassette postali, sarà necessario attivare gli account utente di Office 365 assegnando le licenze. Se non si assegna una licenza a un utente, la propria cassetta postale verrà disabilitata dopo un periodo di prova di 30 giorni. Vedere come [assegnare le licenze agli utenti](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) utilizzando l'interfaccia di amministrazione di Microsoft 365.
+>Se si creano utenti eseguendo la migrazione di cassette postali, sarà necessario attivare gli account utente assegnando le licenze. Se non si assegna una licenza a un utente, la propria cassetta postale verrà disabilitata dopo un periodo di prova di 30 giorni. Vedere come [assegnare le licenze agli utenti](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) utilizzando l'interfaccia di amministrazione di Microsoft 365.
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>Video: aggiungere e gestire gli utenti nell'interfaccia di amministrazione
 
@@ -130,7 +130,7 @@ Condividere la [guida introduttiva per i dipendenti](https://support.office.com/
   
 ## <a name="need-help"></a>Serve assistenza?
 
-[Contattare il supporto di Office 365 for business](../contact-support-for-business-products.md).  
+[Contattare il supporto tecnico Microsoft 365 for business](../contact-support-for-business-products.md).  
 
 ## <a name="have-hundreds-or-thousands-of-users-to-add"></a>Se è necessario aggiungere centinaia o migliaia di utenti contemporaneamente,
 
@@ -143,16 +143,15 @@ vedere le istruzioni seguenti:
     
 - **Utilizzo di ActiveDirectory** [Configurare la sincronizzazione della directory per Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization). Usare Azure AD Connect per replicare gli account utente di Active Directory (e altri oggetti Active Directory) in Office 365. Con la sincronizzazione vengono aggiunti solo gli account utente. Sarà necessario assegnare le licenze agli utenti sincronizzati perché possano usare la posta elettronica e altre app di Office.
     
-- **Migrazione da Exchange** [Modalità di migrazione di più account di posta elettronica a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Quando si esegue la migrazione di più cassette postali a Office 365 usando il metodo di migrazione completa, a fasi o ibrida di Exchange, gli utenti vengono aggiunti automaticamente nell'ambito della migrazione. Con la migrazione vengono aggiunti solo gli account utente. Sarà necessario assegnare le licenze agli utenti perché possano usare la posta elettronica e altre app di Office.
+- **Migrazione da Exchange** [Modalità di migrazione di più account di posta elettronica a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Quando si esegue la migrazione di più cassette postali a Microsoft 365 utilizzando completa, a fasi o un metodo di Exchange ibrido, gli utenti verranno aggiunti automaticamente come parte della migrazione. Con la migrazione vengono aggiunti solo gli account utente. Sarà necessario assegnare le licenze agli utenti perché possano usare la posta elettronica e altre app di Office.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Aggiungere un nuovo dipendente a Office 365](add-new-employee.md)
+[Aggiungere un nuovo dipendente a Microsoft 365](add-new-employee.md)
 
 [Eliminare un utente dall'organizzazione](delete-a-user.md)
 
-[Ripristinare un utente in Office 365](restore-user.md)
+[Ripristinare un utente in Microsoft 365](restore-user.md)
 
-[Aggiungere più utenti contemporaneamente a Office 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time)
-
+[Aggiungere più utenti contemporaneamente a Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time)
 

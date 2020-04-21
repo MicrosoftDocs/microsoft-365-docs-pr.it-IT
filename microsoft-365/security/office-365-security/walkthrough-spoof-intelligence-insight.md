@@ -17,18 +17,18 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Vedere come funziona lo spoofing Intelligence Insight in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 92e922bf3045e98de16b07a47113effd9dc6ccdd
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537486"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630930"
 ---
-# <a name="walkthrough---atp-spoof-intelligence-insight-in-office-365"></a>Procedura dettagliata-ATP spoof Insight Intelligence in Office 365
+# <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procedura dettagliata: analisi di intelligence su spoofing di ATP in Microsoft 365
 
-Nelle organizzazioni di Office 365 con Advanced Threat Protection (ATP), è possibile utilizzare l'Insight di intelligence di spoofing per determinare rapidamente quali mittenti stanno inviando legalmente messaggi di posta elettronica non autenticati. Consentendo loro di inviare messaggi falsificati, è possibile ridurre il rischio di eventuali falsi positivi per gli utenti. È inoltre possibile utilizzare lo spoofing Intelligence Insight per monitorare e gestire le coppie di domini consentite per fornire un ulteriore livello di sicurezza e impedire l'arrivo di messaggi non sicuri nell'organizzazione.
+In Microsoft 365 organizzazioni con Advanced Threat Protection (ATP), è possibile utilizzare lo spoofing Intelligence Insight per determinare rapidamente quali mittenti stanno inviando legalmente messaggi di posta elettronica non autenticati. Consentendo loro di inviare messaggi falsificati, è possibile ridurre il rischio di eventuali falsi positivi per gli utenti. È inoltre possibile utilizzare lo spoofing Intelligence Insight per monitorare e gestire le coppie di domini consentite per fornire un ulteriore livello di sicurezza e impedire l'arrivo di messaggi non sicuri nell'organizzazione.
 
-Se si è nuovi per [i report e le informazioni dettagliate nel centro sicurezza & conformità di Office 365](reports-and-insights-in-security-and-compliance.md), potrebbe essere utile vedere come è possibile spostarsi facilmente da un dashboard a un'intuizione e alle azioni consigliate.
+Se si è nuovi per [i report e le informazioni dettagliate nel centro sicurezza & Compliance](reports-and-insights-in-security-and-compliance.md), potrebbe essere utile vedere come è possibile spostarsi facilmente da un dashboard a un'intuizione e alle azioni consigliate.
 
 Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Compliance. Per informazioni sull'esplorazione di report e approfondimenti, vedere le procedure dettagliate nella sezione Argomenti correlati.
 
@@ -38,11 +38,11 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
   È possibile visualizzare l'Insight di intelligence di spoofing da più di un dashboard nel centro sicurezza & Compliance. Indipendentemente dal dashboard che si sta esaminando, l'Insight fornisce gli stessi dettagli e consente di eseguire rapidamente le stesse attività.
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per utilizzare lo spoofing Intelligence Insight, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione**, **amministratore sicurezza**o **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità di Office 365](permissions-in-the-security-and-compliance-center.md).
+- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per utilizzare lo spoofing Intelligence Insight, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione**, **amministratore sicurezza**o **lettore di sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- È possibile abilitare e disabilitare l'intelligence spoof nei criteri di anti-phishing ATP. Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md).
+- È possibile abilitare e disabilitare l'intelligence spoof nei criteri di anti-phishing ATP. Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
-- In Office 365 organizzazioni con cassette postali di Exchange Online e in standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online, è possibile utilizzare l'intelligence spoof per monitorare e gestire i mittenti che si stanno inviando messaggi non autenticati. Per ulteriori informazioni, vedere [Configure Spoofing Intelligence in Office 365](learn-about-spoof-intelligence.md).
+- In Microsoft 365 organizzazioni con cassette postali di Exchange Online e in standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online, è possibile utilizzare l'intelligence spoof per monitorare e gestire i mittenti che si stanno inviando messaggi non autenticati. Per ulteriori informazioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Aprire lo spoofing Intelligence Insight nel centro sicurezza & Compliance
 
@@ -74,11 +74,11 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
    Le **coppie di domini sospetti** includono:
 
-   - **Spoof ad alta confidenza**: Office 365 ha ricevuto segnali forti che questi domini sono sospetti, in base agli schemi di invio cronologici e al Punteggio di reputazione dei domini. Office 365 è estremamente sicuro che i domini siano spoofing e che i messaggi inviati da questi domini siano meno probabili.
+   - **Spoof ad alta confidenza**: Microsoft 365 ha ricevuto segnali forti che questi domini sono sospetti, in base agli schemi di invio cronologici e al Punteggio di reputazione dei domini. Microsoft 365 è estremamente sicuro che i domini siano spoofing e che i messaggi inviati da questi domini siano meno probabili.
 
-   - **Falsificazione della confidenza moderata**: Office 365 ha ricevuto segnali moderati che questi domini sono sospetti, basati su modelli di invio cronologici e sul punteggio di reputazione dei domini. Office 365 è moderatamente sicuro che i domini siano spoofing e che i messaggi inviati da questi domini siano legittimi. Questo bucket ha maggiori probabilità di contenere falsi positivi (FPs) rispetto al bucket spoof con confidenza elevata.
+   - **Falsificazione della confidenza moderata**: Microsoft 365 ha ricevuto segnali moderati che questi domini sono sospetti, basati su modelli di invio cronologici e sul punteggio di reputazione dei domini. Office 365 è moderatamente sicuro che i domini siano spoofing e che i messaggi inviati da questi domini siano legittimi. Questo bucket ha maggiori probabilità di contenere falsi positivi (FPs) rispetto al bucket spoof con confidenza elevata.
 
-   - **Coppie di domini non sospetti** (include **Rescued spoof**): lo spoofing salvato è un dominio che non ha superato i controlli di autenticazione espliciti [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) ma ha superato i controlli di autenticazione implicita della posta elettronica ([autenticazione composita](email-validation-and-authentication.md#composite-authentication)). Di conseguenza, Office 365 ha salvato la posta per conto dell'utente e non è stata eseguita alcuna azione antispoofing sul messaggio.
+   - **Coppie di domini non sospetti** (include **Rescued spoof**): lo spoofing salvato è un dominio che non ha superato i controlli di autenticazione espliciti [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) ma ha superato i controlli di autenticazione implicita della posta elettronica ([autenticazione composita](email-validation-and-authentication.md#composite-authentication)). Di conseguenza, Microsoft 365 ha salvato la posta per conto dell'utente e non è stata eseguita alcuna azione antispoofing sul messaggio.
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>Visualizzare informazioni dettagliate sulle coppie di domini sospetti da spoofing Intelligence Insight
 
@@ -100,7 +100,7 @@ Ad esempio, se si aggiunge la seguente coppia di dominio all'elenco dei mittenti
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Protezione anti-spoofing in Office 365](anti-spoofing-protection.md)
+[Protezione anti-spoofing in Microsoft 365](anti-spoofing-protection.md)
 
 [Procedura: da una dashboard alle informazioni dettagliate](from-a-dashboard-to-an-insight.md)
 

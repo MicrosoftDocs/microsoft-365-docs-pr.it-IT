@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: "Informazioni su come è possibile disporre di più indirizzi di posta elettronica, denominati alias di posta elettronica, associati all'account di Office 365 for business. "
-ms.openlocfilehash: 10f219f380d30a5ee8e9822e7a35ee533d165c33
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: "Informazioni su come è possibile disporre di più indirizzi di posta elettronica, denominati alias di posta elettronica, associati all'account Microsoft 365 for business. "
+ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253099"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629084"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Aggiungere un altro alias di posta elettronica per un utente
   
-Questo articolo è per gli amministratori di Office 365 che dispongono di sottoscrizioni di business. Non è destinato agli utenti privati.
+Questo articolo è per gli amministratori di Microsoft 365 che dispongono di sottoscrizioni aziendali. Non è destinato agli utenti privati.
   
-Un indirizzo di posta elettronica principale in Office 365 è in genere l'indirizzo di posta elettronica a cui è stato assegnato un utente quando è stato creato l'account. Quando si invia un messaggio di posta elettronica a un altro utente, l'indirizzo di posta elettronica principale corrisponde in genere al contenuto del campo  *Da*  nelle app di posta elettronica. Si possono associare più indirizzi di posta elettronica al proprio account di Office 365 per le aziende. Questi indirizzi aggiuntivi sono detti alias. 
+Un indirizzo di posta elettronica principale in Microsoft 365 è in genere l'indirizzo di posta elettronica a cui è stato assegnato un utente quando è stato creato l'account. Quando si invia un messaggio di posta elettronica a un altro utente, l'indirizzo di posta elettronica principale corrisponde in genere al contenuto del campo  *Da*  nelle app di posta elettronica. Possono anche avere più di un indirizzo di posta elettronica associato al proprio account Microsoft 365 for business. Questi indirizzi aggiuntivi sono detti alias. 
   
 Ad esempio, si supponga che Jenna abbia l'indirizzo di posta elettronica jenna@contosoco.com, ma desidera anche ricevere messaggi di posta elettronica in jen@contosoco.com perché alcune persone si riferiscono a lei con quel nome. È possibile creare alias per lei in modo che entrambi gli indirizzi di posta elettronica vadano alla posta in arrivo di Jenna.
 <br><br>  
@@ -94,7 +94,7 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
     > [!Important] 
     > Se viene visualizzato il messaggio di errore "**non è possibile trovare un parametro che corrisponda al nome del parametro" EmailAddresses**", significa che richiede un po' di tempo per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto di recente uno. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
 
-4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se si è aggiunto il proprio dominio a Office 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa. Quindi selezionare **Aggiungi**.
+4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se si è aggiunto il proprio dominio a Office 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa. Selezionare **Aggiungi**.
 
     > [!IMPORTANT]
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
@@ -125,7 +125,7 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
     > [!Important] 
     > Se viene visualizzato il messaggio di errore "**non è possibile trovare un parametro che corrisponda al nome del parametro" EmailAddresses**", significa che richiede un po' di tempo per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto di recente uno. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
 
-4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se si è aggiunto il proprio dominio a Office 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa. Quindi selezionare **Aggiungi**.
+4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se si è aggiunto il proprio dominio a Office 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa. Selezionare **Aggiungi**.
 
     > [!IMPORTANT]
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 

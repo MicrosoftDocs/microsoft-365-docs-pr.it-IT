@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Informazioni su come personalizzare, organizzare e gestire il sito del team.
-ms.openlocfilehash: b35064209f26ad8b312bdf486c1f9b9bcb1b3e58
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e3f2773e72a1b86cc3bae53ee6bbdbcb33d465b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212210"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627619"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizzare il sito del team per l'archiviazione e la condivisione dei file
 
-Se si dispone di una piccola azienda con alcuni dipendenti, uno dei modi migliori per configurare e facilitare la condivisione dei file e la collaborazione online consiste nell'utilizzare OneDrive e un sito del team di SharePoint insieme. È consigliabile creare un sito del team connesso a un gruppo di Office 365. Se si desidera utilizzare la chat, è possibile creare questo sito creando un team in Microsoft teams. Per altre informazioni sui team, vedere [video: che cos'è Microsoft teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). Se non si desidera utilizzare i team, è possibile creare un sito del team dalla pagina iniziale di SharePoint. 
+Se si dispone di una piccola azienda con alcuni dipendenti, uno dei modi migliori per configurare e facilitare la condivisione dei file e la collaborazione online consiste nell'utilizzare OneDrive e un sito del team di SharePoint insieme. È consigliabile creare un sito del team connesso a un gruppo di Microsoft 365. Se si desidera utilizzare la chat, è possibile creare questo sito creando un team in Microsoft teams. Per altre informazioni sui team, vedere [video: che cos'è Microsoft teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). Se non si desidera utilizzare i team, è possibile creare un sito del team dalla pagina iniziale di SharePoint. 
   
 [Che cos'è un sito del team di SharePoint?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
   
@@ -76,7 +76,7 @@ Per informazioni sull'espansione degli elenchi con più colonne, vedere [creare 
   
 Se si stanno archiviando un numero elevato di dati in un elenco, vedere [gestire elenchi e raccolte di grandi dimensioni in SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-Visualizzare un video sull'aggiunta di calendari al sito, vedere [creare un calendario condiviso in Office 365](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+Visualizzare un video sull'aggiunta di calendari al sito, vedere [creare un calendario condiviso](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
 
 ## <a name="organize-sites-into-hubs"></a>Organizzare i siti in hub
 
@@ -92,7 +92,7 @@ Per informazioni su come aggiungere siti a un sito hub, vedere [associare un sit
 
 Anche se l'archiviazione e l'organizzazione sono all'inizio, è importante condividere la condivisione con il team e i client esterni. Di seguito sono riportati alcuni collegamenti ad argomenti che consentiranno di gestire gli utenti e condividere i dati. 
   
-Per la condivisione di file con il team, vedere [condividere file o cartelle di SharePoint in Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
+Per la condivisione di file con il team, vedere [condividere file o cartelle di SharePoint in Microsoft 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
   
 Per comprendere la condivisione all'esterno del team, vedere [Panoramica della condivisione esterna](/sharepoint/external-sharing-overview).
   
@@ -102,7 +102,7 @@ Durante la gestione del sito del team, potrebbe essere necessario aggiungere o r
   
 Visualizzare un video sui gruppi con i [gruppi understand and Manage](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx). 
   
-Per aggiungere utenti a un gruppo di Office 365, vedere [aggiungere utenti singolarmente o in blocco a office 365-Guida](../add-users/add-users.md)per gli amministratori.
+Per aggiungere utenti a un gruppo di Microsoft 365, vedere [aggiungere utenti singolarmente o in blocco a microsoft 365-Guida](../add-users/add-users.md)per gli amministratori.
   
 Informazioni su come gestire le richieste di accesso con la [configurazione e la gestione delle richieste di accesso](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx).
   
@@ -110,11 +110,11 @@ Informazioni su come gestire le richieste di accesso con la [configurazione e la
 
 - **Configurare le app di Office su tablet e telefoni**. Questa operazione è necessaria per poter modificare i file archiviati nel sito del team dal tablet o dal telefono. Se non si installano le app di Office per tablet o telefono, sarà possibile visualizzare i file sul sito del team ma non modificarli. 
     
-  - [Installare e configurare Office in un dispositivo Android con Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Installare e configurare Office in un dispositivo Android con Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
     
-  - [Installare e configurare Office in un iPhone o un iPad con Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Installare e configurare Office in un iPhone o iPad con Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Configurare Office in Windows Phone con Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Configurare Office in Windows Phone con Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
     
 - [Altre informazioni sull'uso di OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     

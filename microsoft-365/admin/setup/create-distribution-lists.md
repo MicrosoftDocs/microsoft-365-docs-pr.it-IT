@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: Inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario creando la distribuzione (elenco).
-ms.openlocfilehash: 668c61637c42a1be4aabe60b36e4e26db9873b7b
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a845055acbc5428e0e261997f946f75dc4701d57
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243962"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627643"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Creare gruppi di distribuzione nell'interfaccia di amministrazione di Microsoft 365
   
-Utilizzato quando si desidera inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione sono organizzati da un particolare argomento di discussione (ad esempio "marketing") o da utenti che condividono lavori comuni che richiedono la comunicazione domande. Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.
+Utilizzato quando si desidera inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione sono organizzati da un particolare argomento di discussione (ad esempio "marketing") o da utenti che condividono lavori comuni che richiedono la comunicazione frequente. Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.
   
 I gruppi di distribuzione sono talvolta denominati liste di distribuzione.
   
@@ -38,25 +38,25 @@ I gruppi di distribuzione sono talvolta denominati liste di distribuzione.
 
 ::: moniker range="o365-worldwide"
 
-Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.
+Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.
 
 ::: moniker-end
 
 1. Selezionare l'icona di avvio delle app  e scegliere **Amministratore**.
     
-    Se non si trova l'app che si sta cercando, nell'icona di avvio delle app selezionare **Tutte le app** per visualizzare un elenco in ordine alfabetico delle app di Office 365 disponibili. Da qui è possibile cercare un'app specifica. 
+    Non è possibile trovare l'app che si sta cercando? Dall'icona di avvio delle app, seleziona **tutte le app** per visualizzare un elenco alfabetico delle app disponibili. Da qui, è possibile cercare un'app specifica. 
     
 2. \> Selezionare **gruppi gruppi nel** riquadro di spostamento sinistro e quindi fare **clic su** **Aggiungi gruppo**. 
       
@@ -66,7 +66,7 @@ Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.co
     
 5. Premere **Aggiungi** per creare un gruppo e quindi esaminare il gruppo e scegliere **Chiudi**. 
     
-6. Per aggiungere utenti al gruppo di distribuzione, vedere [aggiungere un utente o un contatto a un gruppo di distribuzione di Office 365](../email/add-user-or-contact-to-distribution-list.md).
+6. Per aggiungere utenti al gruppo di distribuzione, vedere [aggiungere un utente o un contatto a un gruppo di distribuzione](../email/add-user-or-contact-to-distribution-list.md).
     
 Per informazioni su come utilizzare gruppo in Outlook 2016 e Outlook sul Web, vedere l'argomento [utilizzo dei gruppi di contatti (in precedenza liste di distribuzione) in Outlook](https://support.office.com/article/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39.aspx) . 
   

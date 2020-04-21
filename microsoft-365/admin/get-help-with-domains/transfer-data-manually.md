@@ -1,5 +1,5 @@
 ---
-title: Trasferire manualmente i dati tra due account di Office 365
+title: Trasferire manualmente i dati tra due account
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: Informazioni su come trasferire manualmente i dati tra due account di Office 365 quando è stato modificato il piano o il nome della società oppure sono stati combinati più abbonamenti in uno.
-ms.openlocfilehash: 91f9d7b17a0296931393a89ff95d70628400c61a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Informazioni su come trasferire manualmente i dati tra due account di Microsoft 365 quando è stato modificato il piano o il nome della società oppure sono stati combinati più abbonamenti in uno.
+ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362151"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628376"
 ---
-# <a name="transfer-data-manually-between-two-office-365-accounts"></a>Trasferire manualmente i dati tra due account di Office 365
+# <a name="transfer-data-manually-between-two-accounts"></a>Trasferire manualmente i dati tra due account
 
-Il trasferimento di dati tra due account di Office 365 è un processo manuale lungo e complesso, da pianificare in anticipo. Non si tratta di un processo automatizzato o supportato. Questo articolo illustra la procedura.
+Prepararsi a rimboccarsi le maniche e bloccare un pezzo di tempo nel calendario: il trasferimento di dati tra due account di Microsoft 365 è un processo manuale, complicato e che richiede molto tempo. Non si tratta di un processo automatizzato o supportato. Questo articolo illustra la procedura.
   
 > [!CAUTION]
-> Durante il processo verrà utilizzato il tempo di inattività in cui la posta elettronica, Skype for business e un sito Web pubblico ospitato in Office 365 non funzionerà. Gli utenti riceveranno nuovi nomi utente e nuove password e dovranno reimpostare Outlook.
+> Durante il processo verrà utilizzato il tempo di inattività in cui la posta elettronica, Skype for business e un sito Web pubblico ospitato su Microsoft 365 non funzioneranno. Gli utenti riceveranno nuovi nomi utente e nuove password e dovranno reimpostare Outlook.
 
 **Trasferire i dati manualmente seguendo le istruzioni riportate in questo argomento solo nei casi seguenti:**
   
@@ -45,28 +45,28 @@ Il trasferimento di dati tra due account di Office 365 è un processo manuale lu
 
 |**Attività**|**Passaggi**|
 |:-----|:-----|
-|Acquistare il piano a cui si vuole passare.  <br/> |Al momento dell'iscrizione si specifica il nome azienda da usare nei nomi di dominio iniziali:  *nomeazienda*  .onmicrosoft.com,  *nomeazienda*  -public.sharepoint.com e  *nomeazienda*  .sharepoint.com. È necessario specificare un  *nomeazienda*  diverso da quello usato per gli abbonamenti esistenti.  <br/> > [!NOTE]>  In genere per il rilascio da parte dei sistemi Microsoft dei nomi di dominio iniziali che usano  *nomeazienda*  dopo l'annullamento di un abbonamento occorre un minimo di diversi mesi. Anche se si prevede di salvare tutti i dati del vecchio abbonamento a Office 365 e annullare l'abbonamento, il vecchio valore  *nomeazienda*  non sarà immediatamente disponibile per l'uso in un nuovo abbonamento.           |
-|Rimuovere il dominio personalizzato dal vecchio abbonamento a Office 365.  <br/> | Completare i [passaggi necessari prima della rimozione di un dominio](remove-a-domain.md) per rimuovere il nome di dominio dagli indirizzi di posta elettronica degli utenti e rimuovere i record DNS per la posta elettronica e Lync per il dominio personalizzato. Se il sito Web pubblico è ospitato in Office 365, sarà necessario anche eliminare il record CNAME che vi fa riferimento.  <br/> > [!IMPORTANT]>  Dopo aver rimosso il record MX che instrada la posta elettronica verso il dominio personalizzato, la posta elettronica smetterà di funzionare finché non si aggiunge il dominio al nuovo account, si configura il nuovo record MX e si configurano gli utenti. Quando si rimuovono i record DNS per Lync, Lync smetterà di funzionare. Inoltre, dopo aver rimosso il record CNAME che punta al sito Web pubblico, questo non sarà disponibile.           [Rimuovere il dominio](remove-a-domain.md) .  <br/> |
+|Acquistare il piano a cui si vuole passare.  <br/> |Al momento dell'iscrizione si specifica il nome azienda da usare nei nomi di dominio iniziali:  *nomeazienda*  .onmicrosoft.com,  *nomeazienda*  -public.sharepoint.com e  *nomeazienda*  .sharepoint.com. È necessario specificare un  *nomeazienda*  diverso da quello usato per gli abbonamenti esistenti.  <br/> > [!NOTE]>  In genere per il rilascio da parte dei sistemi Microsoft dei nomi di dominio iniziali che usano  *nomeazienda*  dopo l'annullamento di un abbonamento occorre un minimo di diversi mesi. Anche se si prevede di salvare tutti i dati dal vecchio abbonamento a Microsoft 365 e annullare tale sottoscrizione, il vecchio valore di *yourcompany* non è immediatamente disponibile per l'utilizzo in un nuovo abbonamento.           |
+|Rimuovere il dominio personalizzato dalla vecchia sottoscrizione Microsoft 365.  <br/> | Completare i [passaggi necessari prima della rimozione di un dominio](remove-a-domain.md) per rimuovere il nome di dominio dagli indirizzi di posta elettronica degli utenti e rimuovere i record DNS per la posta elettronica e Lync per il dominio personalizzato. Se si ospita il sito Web pubblico in Microsoft 365, è necessario rimuovere anche il record CNAME che punta a esso.  <br/> > [!IMPORTANT]>  Dopo aver rimosso il record MX che instrada la posta elettronica verso il dominio personalizzato, la posta elettronica smetterà di funzionare finché non si aggiunge il dominio al nuovo account, si configura il nuovo record MX e si configurano gli utenti. Quando si rimuovono i record DNS per Lync, Lync smetterà di funzionare. Inoltre, dopo aver rimosso il record CNAME che punta al sito Web pubblico, questo non sarà disponibile.           [Rimuovere il dominio](remove-a-domain.md) .  <br/> |
 |Configurare il dominio personalizzato per il nuovo abbonamento e configurare gli utenti.  <br/> | Configurare il nuovo abbonamento, inclusa la creazione dei record DNS necessari per il dominio personalizzato.  <br/>  Creare gli utenti e i relativi indirizzi di posta elettronica nel dominio personalizzato  <br/> |
 |Trasferire dati dal vecchio al nuovo abbonamento.  <br/> | Accedere a entrambi gli account in finestre del browser separate:  <br/>  Fare clic con il pulsante destro del mouse sull'icona di Internet Explorer e aprire due finestre del browser InPrivate. È possibile usare credenziali diverse nelle due finestre per accedere a entrambi gli account.  <br/> [Trasferire le impostazioni amministrative tra gli abbonamenti](#email) <br/> [Trasferire i dati e la struttura del sito del team](#transfer-team-site-structure-and-data) <br/> [Trasferire un sito Web pubblico tra abbonamenti](#transfer-a-public-website-between-subscriptions) <br/> [Trasferire le impostazioni amministrative tra gli abbonamenti](#email) <br/> |
-|Annullare l'abbonamento al piano che si vuole chiudere chiamando il Supporto Microsoft per Office 365.  <br/> | Verificare che il nuovo abbonamento funzioni e che tutti i dati siano stati trasferiti.  <br/>  [Contattare il supporto](../contact-support-for-business-products.md) tecnico per annullare il vecchio abbonamento.  <br/> |
+|Annullare l'abbonamento per il piano con cui si esegue la chiamata del supporto tecnico Microsoft per Microsoft 365.  <br/> | Verificare che il nuovo abbonamento funzioni e che tutti i dati siano stati trasferiti.  <br/>  [Contattare il supporto](../contact-support-for-business-products.md) tecnico per annullare il vecchio abbonamento.  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>Trasferire le impostazioni amministrative tra gli abbonamenti
 
 Passare alle pagine seguenti in ogni account e configurare il nuovo account in base alle impostazioni dell'account precedente.
   
-Se si stanno trasferendo i dati da Office 365 a Office 365 Midsize Business o Office 365 Enterprise, le pagine di amministrazione sono strutturate in modo diverso. Guardare [Video: Introduzione a 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx) e passare alle posizioni seguenti per esaminare le impostazioni di amministrazione.
+Se si trasferiscono dati da Microsoft 365 a Microsoft 365 medie imprese o Microsoft 365 Enterprise, le pagine di amministrazione sono strutturate in modo diverso. Guardare un [video: Introduzione a Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)e accedere alle seguenti posizioni per esaminare le impostazioni di amministratore.
   
-Per Office 365 Enterprise e Office 365 Midsize Business:
+Per Microsoft 365 Enterprise e Microsoft 365 medie imprese:
   
 |**Posizione**|**Scopo**|
 |:-----|:-----|
-|**Amministratore** \> **Office 365** \> **Impostazioni dei servizi** <br/> |Selezionare ogni scheda per le impostazioni per la posta, i siti, Lync, il software utente, le password, la community, la gestione dei diritti e la telefonia mobile.  <br/> |
+|**Impostazioni del servizio** **Microsoft 365** \> per l' **amministratore** \> <br/> |Selezionare ogni scheda per le impostazioni per la posta, i siti, Lync, il software utente, le password, la community, la gestione dei diritti e la telefonia mobile.  <br/> |
 |**Amministratore** \> **Exchange** <br/> | Impostazioni di Exchange Online  <br/> |
 |**Amministratore** \> **SharePoint** <br/> | Impostazioni di SharePoint Online  <br/> |
 |**Amministratore** \> **di Skype for business** <br/> |Altre impostazioni di Skype for business  <br/> |
 
-Per Office 365 Small Business
+Per Microsoft 365 Small Business
   
 |**Posizione**|**Scopo**|
 |:-----|:-----|
@@ -74,7 +74,7 @@ Per Office 365 Small Business
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>Trasferire un sito Web pubblico tra abbonamenti
 
-Se si ha un sito pubblico Web ospitato in Office 365, è necessario salvarlo e ricrearlo nel nuovo abbonamento.
+Se si dispone di un sito Web pubblico ospitato in Microsoft 365, è necessario salvarlo e ricrearlo nel nuovo abbonamento.
   
 > [!NOTE]
 > Se il sito Web pubblico è ospitato presso un provider di hosting DNS, non sono necessarie modifiche. Non sarà interessato dalla transizione.

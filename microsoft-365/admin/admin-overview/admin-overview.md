@@ -1,5 +1,5 @@
 ---
-title: Panoramica dell'interfaccia di amministrazione di Office 365
+title: Panoramica dell'interfaccia di amministrazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,17 +19,17 @@ search.appverid:
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: "Informazioni sull'interfaccia di amministrazione di Microsoft 365: come accedere, chi è l'amministratore e guardare un'introduzione video su di esso."
-ms.openlocfilehash: 5f2727b582fcae2b4e001be1ec355747c96e9084
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633464"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623965"
 ---
-# <a name="office-365-admin-overview"></a>Panoramica dell'interfaccia di amministrazione di Office 365 
+# <a name="admin-center-overview"></a>Panoramica dell'interfaccia di amministrazione 
 
   
-Quando si acquista un [piano aziendale di Office 365](https://go.microsoft.com/fwlink/?linkid=856886) o un [piano Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business), viene assegnato un account speciale con autorizzazioni di amministratore. Questo account è detto account amministratore.
+Quando si acquista un [piano microsoft 365 Apps for business](https://go.microsoft.com/fwlink/?linkid=856886) o un [piano Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business), viene assegnato un account speciale con autorizzazioni di amministratore. Questo account è detto account amministratore.
   
 Con questo account è possibile accedere all'interfaccia di amministrazione di Microsoft 365 per gestire la propria azienda: aggiungere utenti, gestire l'abbonamento, reimpostare le password e altro ancora. Perché non provarlo?
   
@@ -66,6 +66,6 @@ Ecco come cercare l'amministratore da contattare per reimpostare la password, el
     
 - **Imprese di piccole dimensioni**: contattare il proprietario o il comproprietario della società. Spesso le autorizzazioni di amministratore vengono concesse al consulente IT che si occupa di tutte le attività di manutenzione dei computer dell'azienda. 
     
-Per impostazione predefinita, la persona che esegue l'iscrizione e acquista un abbonamento a Office 365 per le aziende ottiene le autorizzazioni di amministratore. Questa persona può assegnare le autorizzazioni di amministratore ad altri utenti per facilitare la gestione di Office 365 nell'organizzazione.
+Per impostazione predefinita, la persona che si iscrive e acquista un abbonamento a Microsoft 365 for business ottiene le autorizzazioni di amministratore. Tale persona può assegnare le autorizzazioni di amministratore ad altre persone per aiutarle a gestire Microsoft 365 per la propria organizzazione.
   
 Se non hai idea di chi contattare al lavoro o all'Istituto di istruzione, prova a chiedere alla persona che ti ha dato l'account utente e la password.

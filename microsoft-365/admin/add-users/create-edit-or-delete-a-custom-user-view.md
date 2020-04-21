@@ -1,5 +1,5 @@
 ---
-title: Creare, modificare o eliminare una visualizzazione utente personalizzata in Office 365
+title: Creazione, modifica o eliminazione di una visualizzazione utente personalizzata
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: Informazioni su come utilizzare i filtri per creare, modificare o eliminare una visualizzazione utente personalizzata in Office 365.
-ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Informazioni su come utilizzare i filtri per creare, modificare o eliminare una visualizzazione utente personalizzata in Microsoft 365.
+ms.openlocfilehash: 94a9ad7de8bc8e0692d97fda56200cf668b1e5f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047060"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617261"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Creare, modificare o eliminare una visualizzazione utente personalizzata in Office 365
 
@@ -63,7 +63,7 @@ Quando si crea, modifica o Elimina una visualizzazione utente personalizzata, le
 Alcune informazioni sulle visualizzazioni standard da tenere presente: 
 
 - Alcune visualizzazioni standard mostrano un elenco non ordinato se questo contiene più di 2000 utenti. Per individuare utenti specifici nell'elenco, usare la casella di ricerca. 
-- Se Office 365 non è stato acquistato da Microsoft, **Amministratori fatturazione** non comparirà nell'elenco delle visualizzazioni standard. Per altre informazioni, vedere [Assegnazione di ruoli di amministratore](assign-admin-roles.md). 
+- Se non è stato acquistato Microsoft 365 da Microsoft, gli **amministratori di fatturazione** non vengono visualizzati nell'elenco delle visualizzazioni standard. Per ulteriori informazioni, vedere [Assegnazione di ruoli di amministratore](assign-admin-roles.md). 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>Scegliere i filtri per la visualizzazione utente personalizzata
 
@@ -88,12 +88,12 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
     
 - **Utenti senza licenza:** selezionare questa casella per trovare tutti gli utenti a cui non è stata assegnata una licenza. I risultati di questa visualizzazione possono anche includere utenti che hanno una cassetta postale di Exchange ma non una licenza. Per individuare tali utenti, usare il filtro **Utenti senza licenza con cassette postali o archivi di Exchange**. I risultati di questa visualizzazione possono includere anche utenti che hanno un archivio di Exchange, ma non una licenza.
     
-- **Utenti senza licenza con cassette postali o archivi di Exchange:** selezionare questa casella per visualizzare gli account utente creati in Exchange Online che hanno una cassetta postale di Exchange, ma non una licenza per Office 365. I risultati di questo filtro includono gli utenti a cui è stato assegnato o che hanno un archivio di Exchange. 
+- **Utenti senza licenza con archivi o cassette postali di Exchange** Selezionare questa casella per visualizzare gli account utente creati in Exchange Online e avere una cassetta postale di Exchange, ma non è stata assegnata una licenza Microsoft 365. I risultati di questo filtro includono gli utenti a cui è stato assegnato o che dispongono di un Exchange archivio. 
 
 > [!NOTE]
 > Il filtro **utenti senza licenza con cassette postali di Exchange** funziona quando:
 1. La cassetta postale è stata recentemente convertita da **Shared** a **User** e non ha alcuna licenza.
-2. La cassetta postale è stata migrata di recente a Office 365 ma non è stata assegnata una licenza.
+2. La cassetta postale è stata di recente migrata a Microsoft 365 ma non è stata assegnata una licenza.
 3. La cassetta postale è stata creata utilizzando PowerShell e non è stata assegnata una licenza.
 4. Viene effettuato il provisioning di una nuova cassetta postale creata in locale con un cmdlet New-RemoteMailbox per l'utente.
     

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,16 +18,16 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361601"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627981"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365
 
-Il nuovo interfaccia di amministrazione di Microsoft 365 è stato creato per i team IT come modo semplificato per gestire i servizi Microsoft 365 e Office 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
+Il nuovo interfaccia di amministrazione di Microsoft 365 è stato creato per i team IT come modo semplificato per gestire i servizi di Microsoft 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
   
 L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)può essere eseguito all'indirizzo. Le aree di lavoro specialistiche, come la sicurezza o la gestione dei dispositivi, consentono un controllo più granulare. Per ulteriori informazioni sul funzionamento dei centri di amministrazione, vedere informazioni [sui tipi specifici di ruoli IT e altre aree di lavoro, ad esempio la sicurezza, la gestione dei dispositivi o Exchange](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) , più avanti in questo articolo. 
   
@@ -75,7 +75,7 @@ Sì. Il nuovo interfaccia di amministrazione è completamente funzionante e disp
 
 Microsoft 365 è una soluzione completa e intelligente che include Office 365, Windows 10 ed Enterprise Mobility + Security, che consente a tutti di essere creativi e di collaborare in modo sicuro. Gli abbonamenti di Microsoft 365 seguenti sono disponibili nell'interfaccia di amministrazione per provare o acquistare subito:
   
-- Microsoft 365 Business
+- Microsoft 365 for business
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     

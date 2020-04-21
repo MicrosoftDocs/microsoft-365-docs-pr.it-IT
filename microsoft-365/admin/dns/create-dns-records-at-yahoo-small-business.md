@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS in Yahoo! Small Business per Office 365
+title: Creare record DNS in Yahoo! Small Business per Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su Yahoo! Small Business per Office 365.
-ms.openlocfilehash: 7b0d0b25a2895101e2f9a259a82fb18e9447441f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su Yahoo! Small Business per Microsoft.
+ms.openlocfilehash: 12efa8f7056f0d06cbf78b2486ea67dc85d2e705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211039"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629156"
 ---
-# <a name="create-dns-records-at-yahoo-small-business-for-office-365"></a>Creare record DNS in Yahoo! Small Business per Office 365
+# <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Creare record DNS in Yahoo! Small Business per Microsoft
 
  **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
@@ -89,5 +89,5 @@ Seguire i passaggi in questo articolo per creare un account su Aabaco, in cui è
     
     ![The sign-in page for Aabaco Small Business](../../media/4ef3cfc3-26da-4e03-932b-9346ef217848.png)
   
-Dopo aver creato un account Aabaco, è possibile [Creare record DNS in Aabaco Small Business per Office 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Dopo aver creato l'account Aabaco, è possibile [creare record DNS in Aabaco Small Business per Microsoft](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
   

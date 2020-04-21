@@ -20,18 +20,18 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Informazioni su come apportare modifiche al profilo dell'organizzazione, ad esempio il nome dell'organizzazione, l'indirizzo, il telefono, il contatto tecnico e la posta elettronica.
-ms.openlocfilehash: 7c3e28cc112358fa5ecc9aacaec7e30aaaeec6fe
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 59c429a8460d16f2c636beeaf571689d33b400d5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362021"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628221"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modificare l'indirizzo dell'organizzazione, il contatto tecnico e altre informazioni
   
 È possibile apportare modifiche al profilo dell'organizzazione, ad esempio il nome dell'organizzazione, l'indirizzo, il telefono e il contatto tecnico. **È necessario essere un amministratore globale per aggiornare queste informazioni.**
   
-Per modificare l'indirizzo associato alla fattura o alla sottoscrizione, vedere [modificare gli indirizzi di fatturazione per Office 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+Per modificare l'indirizzo associato alla fattura o alla sottoscrizione, vedere [Change Your billing address for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md).
 
 ## <a name="edit-organization-information"></a>Modificare le informazioni sull'organizzazione
 
@@ -52,11 +52,11 @@ Per modificare altre informazioni nella pagina del profilo della società:
 
 |**Campo**  |**Descrizione**  |
 |---------|---------|
-|Name  <br/>   | Il nome immesso qui è quello che gli utenti vedranno nelle pagine seguenti:  <br/>  Pagina di accesso: se gli utenti hanno configurato altri account Microsoft con l'indirizzo di posta elettronica aziendale o dell'istituto di istruzione, potrebbero vedere il nome dell'organizzazione nella pagina di accesso. In questo modo possono distinguere tra l'account aziendale o dell'istituto di istruzione e gli altri account e identificare quello da usare per l'accesso.  <br/>  Collegamento e pagina del profilo dell'organizzazione: il collegamento al profilo dell'organizzazione mostra il nome dell'organizzazione.  <br/>  Struttura di spostamento di Yammer: in Yammer, lo spostamento sinistro utilizza il nome dell'organizzazione come nome della rete di Yammer domestica.  <br/> Client di sincronizzazione di OneDrive: il nome dell'organizzazione è visualizzato in Esplora file in Windows e nel Finder su Mac, nei percorsi dei file, nel centro attività di OneDrive, nella descrizione comando dell'icona del cloud di OneDrive e nella finestra delle impostazioni di OneDrive. Attualmente, l'aggiornamento del nome dell'organizzazione non viene aggiornato per i client configurati. <br/>        |
-|Indirizzo, Città, Provincia, Codice postale  <br/>     | L'indirizzo immesso qui è quello che vedrai sulla bolletta, in venduto a: l'indirizzo venduto per la bolletta è uguale all'indirizzo dell'organizzazione nella pagina del profilo (vedere [understand your fattura for Office 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
+|Nome  <br/>   | Il nome immesso qui è quello che gli utenti vedranno nelle pagine seguenti:  <br/>  Pagina di accesso: se gli utenti hanno configurato altri account Microsoft con l'indirizzo di posta elettronica aziendale o dell'istituto di istruzione, potrebbero vedere il nome dell'organizzazione nella pagina di accesso. In questo modo possono distinguere tra l'account aziendale o dell'istituto di istruzione e gli altri account e identificare quello da usare per l'accesso.  <br/>  Collegamento e pagina del profilo dell'organizzazione: il collegamento al profilo dell'organizzazione mostra il nome dell'organizzazione.  <br/>  Struttura di spostamento di Yammer: in Yammer, lo spostamento sinistro utilizza il nome dell'organizzazione come nome della rete di Yammer domestica.  <br/> Client di sincronizzazione di OneDrive: il nome dell'organizzazione è visualizzato in Esplora file in Windows e nel Finder su Mac, nei percorsi dei file, nel centro attività di OneDrive, nella descrizione comando dell'icona del cloud di OneDrive e nella finestra delle impostazioni di OneDrive. Attualmente, l'aggiornamento del nome dell'organizzazione non viene aggiornato per i client configurati. <br/>        |
+|Indirizzo, Città, Provincia, Codice postale  <br/>     | L'indirizzo immesso qui è quello che vedrai sulla bolletta, in venduto a: l'indirizzo venduto per la bolletta è uguale all'indirizzo dell'organizzazione nella pagina del profilo (vedere [understand your fattura for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
 |Paese o area geografica  <br/>    | Questo è il paese o l'area geografica in cui risiede la società. Il paese o l'area geografica che si seleziona determina quali servizi sono disponibili, le imposte e la valuta della fatturazione per il paese o l'area geografica e la posizione del data center più vicino. Vedere [Informazioni sulle restrizioni di licenza](https://office.microsoft.com/redir/FX103037529).  <br/>Nota: una volta selezionata, il paese o l'area geografica non può essere modificata. Se si vuole cambiare la selezione, è necessario annullare l'abbonamento e ripetere l'iscrizione. Per informazioni su questo processo, [contattare il supporto](../contact-support-for-business-products.md).        |
 |Telefono  <br/>     | Numero principale per l'organizzazione. Si tratta in genere del numero della sede centrale.  <br/>        |
-|Contatto tecnico  <br/> |Indirizzo di posta elettronica del contatto tecnico principale che amministra l'abbonamento a Office 365. Questa persona riceverà comunicazioni sullo stato dei servizi di Office 365.  <br/> |
+|Contatto tecnico  <br/> |Questo è l'indirizzo di posta elettronica per il responsabile tecnico principale che amministra la sottoscrizione Microsoft 365. Si tratta della persona che riceverà comunicazioni relative allo stato del servizio Microsoft 365.  <br/> |
 |Lingua preferita  <br/> |La lingua preferita determina la lingua di tutte le comunicazioni inviate da Microsoft all'organizzazione. Quando si effettua l'accesso, l'impostazione determina la lingua usata da SharePoint Online, ovvero la lingua visualizzata dagli utenti del sito del team. Se si modifica l'impostazione sulla preferenza della lingua dopo l'accesso, tutte le comunicazioni future saranno inviate nella lingua più recente selezionata.    <br/> Nota: non è possibile modificare la lingua utilizzata da SharePoint Online.           |
 
 ## <a name="change-your-alternate-email-address"></a>Modificare l'indirizzo di posta elettronica alternativo

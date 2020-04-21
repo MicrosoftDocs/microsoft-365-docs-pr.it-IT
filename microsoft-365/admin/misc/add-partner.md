@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Informazioni su come aggiungere un partner Advisor di sottoscrizione come partner di record al momento dell'acquisto di Office 365, cambiare il partner o eliminare un partner da un abbonamento.
-ms.openlocfilehash: 2afe5adebe1c0a47cae896d19219b97b70e453a4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Informazioni su come aggiungere un partner Advisor di sottoscrizione come partner di record al momento dell'acquisto di Microsoft 365, cambiare il partner o eliminare un partner da un abbonamento.
+ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361581"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627969"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Aggiungere, modificare o rimuovere un partner con il ruolo di consulente dell'abbonamento
 
@@ -37,13 +37,13 @@ ms.locfileid: "42361581"
 
 ::: moniker range="o365-worldwide"
 
-Un partner Microsoft autorizzato che opera come consulente dell'abbonamento mette a disposizione la sua esperienza in materia di vendite, supporto e assistenza tecnica per aiutare a configurare e gestire l'abbonamento. È possibile aggiungere un partner con il ruolo di consulente dell'abbonamento come Partner of Record quando si acquista Office 365 o in un secondo momento. Se attualmente non si lavora con un partner, è anche possibile trovarne uno nel sito Web [Microsoft Pinpoint](https://pinpoint.microsoft.com) . 
+Un partner Microsoft autorizzato che opera come consulente dell'abbonamento mette a disposizione la sua esperienza in materia di vendite, supporto e assistenza tecnica per aiutare a configurare e gestire l'abbonamento. È possibile aggiungere un partner Advisor di sottoscrizione come partner di record quando si acquista Microsoft 365 o in un altro momento. Se attualmente non si lavora con un partner, è anche possibile trovarne uno nel sito Web [Microsoft Pinpoint](https://pinpoint.microsoft.com) . 
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-Il partner scelto dipende dai servizi di Office 365 usati e dal paese o dall'area geografica in cui questi saranno usati. Se si sta aggiungendo un partner o cambiando il partner dell'abbonamento, per prima cosa è necessario ottenere il suo ID partner Microsoft, chiedendo al partner stesso.
+Il partner scelto dipende dai servizi Microsoft utilizzati e dal paese o dall'area geografica in cui si utilizzeranno tali servizi. Se si sta aggiungendo un partner o cambiando il partner dell'abbonamento, per prima cosa è necessario ottenere il suo ID partner Microsoft, chiedendo al partner stesso.
 
 ::: moniker-end
 
@@ -72,7 +72,7 @@ Come amministratore per Office 365, è possibile creare o modificare gli utenti,
 > [!NOTE]
 > Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
     
 2. Selezionare il prodotto che si desidera acquistare, quindi selezionare **Acquista**.
   
@@ -126,7 +126,7 @@ Seguire i passaggi della pagina providers per la ricerca o per ottenere la corri
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
     
 2. Se si dispone di più di un abbonamento, selezionare l'abbonamento che si desidera modificare.
   
@@ -173,7 +173,7 @@ Per accettare questa offerta
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
   
 2. Se si hanno più abbonamenti, selezionare il nome dell'abbonamento da modificare.
     
@@ -185,7 +185,7 @@ Per accettare questa offerta
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
   
 2. Se si hanno più abbonamenti, selezionare il nome dell'abbonamento da modificare.
     
@@ -221,7 +221,7 @@ Per accettare questa offerta
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Se si hanno più abbonamenti, selezionare il nome dell'abbonamento da modificare.
     
@@ -233,7 +233,7 @@ Per accettare questa offerta
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Se si hanno più abbonamenti, selezionare il nome dell'abbonamento da modificare.
     
@@ -272,4 +272,4 @@ Se si sta rimuovendo una relazione di Reseller, l'opzione **Elimina** è disatti
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Trovare il partner o il rivenditore di Office 365](../manage/find-your-partner-or-reseller.md)
+[Trovare il partner o il rivenditore Microsoft 365](../manage/find-your-partner-or-reseller.md)

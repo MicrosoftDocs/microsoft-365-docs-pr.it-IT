@@ -1,5 +1,5 @@
 ---
-title: Personalizzare la pagina di accesso a Office 365 con il marchio aziendale
+title: Aggiungere il marchio dell'azienda alla pagina di accesso
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,25 +18,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Personalizzare la pagina di accesso di Office 365 utilizzando Azure Active Directory. È possibile aggiungere una figura, un logo e un testo alla pagina di accesso.
-ms.openlocfilehash: 97d1d1c7dcb5a31395c98295a250913bb8ab69f5
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Personalizzare la pagina di accesso di Microsoft 365 utilizzando Azure Active Directory. È possibile aggiungere una figura, un logo e un testo alla pagina di accesso.
+ms.openlocfilehash: daf5f9007a297615d04051d3364895053572343a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360647"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627631"
 ---
-# <a name="add-your-company-branding-to-office-365-sign-in-page"></a>Personalizzare la pagina di accesso a Office 365 con il marchio aziendale
+# <a name="add-your-company-branding-to-the-sign-in-page"></a>Aggiungere il marchio dell'azienda alla pagina di accesso
 
- È ora possibile usare l'abbonamento a Azure Active Directory incluso nell'abbonamento a Office 365 per personalizzare la pagina di accesso visualizzata dagli utenti. 
+ È ora possibile utilizzare la sottoscrizione di Azure Active Directory (AD) inclusa nell'abbonamento a Microsoft 365 per personalizzare la pagina di accesso visualizzata dagli utenti. 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>Aggiungere il marchio dell'azienda alla pagina di accesso e alle pagine del riquadro di accesso
 
-Se è stato sottoscritto un abbonamento a pagamento a Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite o altri servizi Microsoft, si riceve anche una sottoscrizione gratuita ad Azure Active Directory. È possibile usare Azure Active Directory per creare e gestire account utente e di gruppo e aggiungere il marchio dell'azienda alle pagine. Per attivare questa sottoscrizione e accedere al portale di gestione di Microsoft Azure, è necessario completare un processo di registrazione una tantum. In seguito, sarà possibile accedere a Azure Active Directory dal servizio Microsoft che lo usa. Per istruzioni su come registrare la sottoscrizione a Office 365, vedere [Registrare una sottoscrizione gratuita ad Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527966) e [Gestire la directory dell'abbonamento a Office 365 in Azure](https://go.microsoft.com/fwlink/p/?LinkId=620076) per istruzioni generali di gestione. 
+Se si dispone di un abbonamento a pagamento a Microsoft 365 for business, Microsoft Dynamics CRM Online, Enterprise Mobility Suite o altri servizi Microsoft, è disponibile una sottoscrizione gratuita ad Azure Active Directory. È possibile usare Azure Active Directory per creare e gestire account utente e di gruppo e aggiungere il marchio dell'azienda alle pagine. Per attivare questa sottoscrizione e accedere al portale di gestione di Microsoft Azure, è necessario completare un processo di registrazione una tantum. In seguito, sarà possibile accedere a Azure Active Directory dal servizio Microsoft che lo usa. Per istruzioni su come registrare la sottoscrizione Microsoft 365, vedere [registrare la sottoscrizione gratuita di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527966)e vedere [gestire la directory per la sottoscrizione Microsoft 365 in Azure](https://go.microsoft.com/fwlink/p/?LinkId=620076) per istruzioni generali sulla gestione. 
   
 La figura seguente illustra le parti della pagina di accesso che possono essere modificate in Azure.
   
-![Aree della pagina di accesso di Office 365 che è possibile personalizzare.](../../media/screenshotbranding.png)
+![Aree della pagina di accesso che è possibile personalizzare.](../../media/screenshotbranding.png)
   
 1. L'illustrazione di grandi dimensioni e/o il colore di sfondo
     

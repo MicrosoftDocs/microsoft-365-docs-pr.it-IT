@@ -1,5 +1,5 @@
 ---
-title: Gestire la distribuzione dei componenti aggiuntivi di Office 365 nell'interfaccia di amministrazione
+title: Gestire la distribuzione dei componenti aggiuntivi nell'interfaccia di amministrazione
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire i componenti aggiuntivi per gli utenti e i gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: d0818a0f318ea260d8e39b6e3d76c1cd4efd7a88
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212010"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628161"
 ---
-# <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Gestire la distribuzione dei componenti aggiuntivi di Office 365 nell'interfaccia di amministrazione di Microsoft 365
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Gestire la distribuzione dei componenti aggiuntivi nell'interfaccia di amministrazione di Microsoft 365
 
 I componenti aggiuntivi di Office consentono di personalizzare i documenti e semplificare la modalità di accesso alle informazioni sul Web (vedere [iniziare a utilizzare il componente aggiuntivo di Office](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Come amministratore, è possibile distribuire i componenti aggiuntivi di Office per gli utenti dell'organizzazione. È possibile eseguire questa operazione utilizzando la caratteristica di distribuzione centralizzata nell'interfaccia di amministrazione di Microsoft 365.
   
-La distribuzione centralizzata è il metodo consigliato e più ricco di funzionalità per la maggior parte degli amministratori per la distribuzione di componenti aggiuntivi per utenti e gruppi all'interno di un'organizzazione. Per altre informazioni su come determinare se l'organizzazione può supportare la distribuzione centralizzata, vedere [Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione di Office 365](centralized-deployment-of-add-ins.md).
+La distribuzione centralizzata è il metodo consigliato e più ricco di funzionalità per la maggior parte degli amministratori per la distribuzione di componenti aggiuntivi per utenti e gruppi all'interno di un'organizzazione. Per ulteriori informazioni su come determinare se l'organizzazione è in grado di supportare la distribuzione centralizzata, vedere [determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione](centralized-deployment-of-add-ins.md).
   
 La distribuzione centralizzata offre i vantaggi seguenti:
   
@@ -41,7 +41,7 @@ La distribuzione centralizzata offre i vantaggi seguenti:
 - I componenti aggiuntivi non verranno più visualizzati per gli utenti se l'amministratore disattiva o Elimina il componente aggiuntivo oppure se l'utente è stato rimosso da Azure Active Directory o da un gruppo a cui è assegnato il componente aggiuntivo.
     
 > [!NOTE]
->  Per Word, Excel e PowerPoint utilizzano un [Catalogo app di SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) per distribuire i componenti aggiuntivi per gli utenti in un ambiente locale senza alcuna connessione a Office 365 e/o il supporto per i componenti aggiuntivi di SharePoint necessari. >  Per Outlook, usare il Pannello di controllo di Exchange per la distribuzione in un ambiente locale senza connessione a Office 365. > 
+>  Per Word, Excel e PowerPoint utilizzano un [Catalogo app di SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) per distribuire i componenti aggiuntivi per gli utenti in un ambiente locale senza alcuna connessione a Microsoft 365 e/o il supporto per i componenti aggiuntivi di SharePoint necessari. > per Outlook utilizzare il pannello di controllo di Exchange per la distribuzione in un ambiente locale senza una connessione a Microsoft 365. > 
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approccio consigliato per la distribuzione dei componenti aggiuntivi per Office
 
@@ -57,10 +57,10 @@ A seconda delle dimensioni del gruppo di destinatari, si possono aggiungere o ri
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Distribuire un componente aggiuntivo di Office utilizzando l'interfaccia di amministrazione
 
-Prima di iniziare, vedere [Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione di Office 365](centralized-deployment-of-add-ins.md).
+Prima di iniziare, vedere [determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione](centralized-deployment-of-add-ins.md).
 
   
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Impostazioni** > **componenti** aggiuntivi.
+1. Nell'interfaccia di amministrazione, andare alla pagina dei **componenti** aggiuntivi di **Impostazioni** \> .
     
 2. Selezionare **Distribuisci componente aggiuntivo nella** parte superiore della pagina. Nella pagina Panoramica selezionare **Avanti**.
     
@@ -75,13 +75,13 @@ Prima di iniziare, vedere [Determinare se la distribuzione centralizzata dei com
 7. Quando il componente aggiuntivo è stato distribuito, verrà visualizzato un segno di spunta verde. È possibile seguire le istruzioni visualizzate nella pagina per verificare che il componente aggiuntivo sia stato distribuito correttamente.
 
 > [!NOTE]
-> Gli utenti potrebbero dover rilanciare Office per visualizzare l'icona del componente aggiuntivo sulla barra multifunzione di app. I componenti aggiuntivi di Outlook possono richiedere fino a 24 ore per essere visualizzati sui nastri degli utenti.
+> Gli utenti potrebbero dover rilanciare Office per visualizzare l'icona del componente aggiuntivo sulla barra multifunzione di app. I componenti aggiuntivi di Outlook possono richiedere fino a 12 ore per essere visualizzati sui nastri degli utenti.
     
 8. Al termine, selezionare **Avanti**. Se è stata distribuita solo da solo, è possibile selezionare **cambia chi ha accesso al componente aggiuntivo** per la distribuzione a più utenti.
 
 
 
-Se il componente aggiuntivo è stato distribuito ai membri dell'organizzazione diversi da te, seguire le istruzioni visualizzate per annunciare efficacemente la distribuzione del componente aggiuntivo. <br/>Il componente aggiuntivo verrà visualizzato insieme alle altre app in Office 365.
+Se il componente aggiuntivo è stato distribuito ai membri dell'organizzazione diversi da te, seguire le istruzioni visualizzate per annunciare efficacemente la distribuzione del componente aggiuntivo. <br/>È ora possibile visualizzare il componente aggiuntivo insieme ad altre app in Microsoft 365.
   
 È consigliabile informare gli utenti e i gruppi che è stato distribuito il componente aggiuntivo in modo che sappiano che è disponibile. È opportuno inviare un messaggio di posta elettronica che descrive quando e come usare il componente aggiuntivo e che spiega in che modo può aiutarli a svolgere il proprio lavoro. Includere o collegare al contenuto della Guida pertinente o alle domande frequenti che potrebbero essere utili se gli utenti hanno problemi con il componente aggiuntivo.
   
@@ -101,19 +101,12 @@ L'opzione adatta per l'organizzazione dipende dalla configurazione. Tuttavia, è
   
 ### <a name="add-in-states"></a>Stati dei componenti aggiuntivi
 
-Gli amministratori possono abilitare o disabilitare i componenti aggiuntivi che distribuiscono per tutti gli utenti dall'interfaccia di amministrazione di Microsoft 365.
-
-1.    Nell'interfaccia di amministrazione, andare alla pagina dei **componenti** aggiuntivi di **Impostazioni** >. 
-2.    Selezionare il componente aggiuntivo distribuito. 
-3.    Fare **clic sull'interruttore** di **stato** per attivare o **disattivare**il componente aggiuntivo. 
-4.    Salvare le modifiche.  
-
-È inoltre disponibile uno dei tre stati del componente aggiuntivo.
- 
+Un componente aggiuntivo può **essere nello stato attivato o** **disattivato** .
+  
 |**Stato**|**Quando si verifica lo stato**|**Impatto**|
 |:-----|:-----|:-----|
-|**Attivo**  <br/> |L'amministratore ha caricato il componente aggiuntivo e lo ha assegnato a utenti o gruppi.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo lo vedono nei client pertinenti.  <br/> |
-|**Disattivato**  <br/> |L'amministratore ha disattivato il componente aggiuntivo.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo non possono più accedervi.  <br/> Se lo stato del componente aggiuntivo è stato modificato in **attivo**, gli utenti e i gruppi potranno accedervi di nuovo.  <br/> |
+|**Attivazione**  <br/> |L'amministratore ha caricato il componente aggiuntivo e lo ha assegnato a utenti o gruppi.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo lo vedono nei client pertinenti.  <br/> |
+|**Disattivato**  <br/> |L'amministratore ha disattivato il componente aggiuntivo.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo non possono più accedervi.  <br/> Se lo stato del componente aggiuntivo viene modificato su Attivo, gli utenti e i gruppi potranno accedervi di nuovo.  <br/> |
 |**Eliminato**  <br/> |L'amministratore ha eliminato il componente aggiuntivo.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo non possono più accedervi.  <br/> |
    
 Se non è più in uso, è consigliabile eliminare un componente aggiuntivo. Disattivare un componente aggiuntivo può essere utile se viene usato solo in determinati periodi dell'anno.
@@ -177,14 +170,14 @@ In questo modo tutti gli utenti potranno acquistare i componenti aggiuntivi segu
     
   - Mac
     
-  - Office
+  - Ufficio
     
     
 - Acquisizioni che iniziano all'interno di **AppSource**
     
-- Componenti aggiuntivi all'interno di Office 365
+- Componenti aggiuntivi in Microsoft 365
     
-Un utente che tenta di accedere all'archivio visualizzerà il messaggio seguente: **spiacenti, Office 365 è stato configurato per impedire l'acquisizione individuale dei componenti aggiuntivi di Office Store.**
+Un utente che cerca di accedere all'archivio vedrà il messaggio seguente: **Microsoft 365 è stato configurato per impedire l'acquisizione individuale dei componenti aggiuntivi di Office Store.**
   
 Il supporto per la disattivazione di Office Store è disponibile nelle versioni seguenti:
   
@@ -241,7 +234,7 @@ Per essere conformi a GDPR per i minorenni, è necessario assicurarsi che una de
   
 Word, Excel e PowerPoint 2013 per Windows supportano gli stessi controlli secondari se è abilitata la libreria di autenticazione di Active Directory (ADAL). Sono disponibili due opzioni per la conformità, come illustrato di seguito.
   
-- **Abilitare adal**. In questo articolo viene illustrato come abilitare ADAL per Office 2013: [utilizzo dell'autenticazione moderna di office 365 con i client di Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>È inoltre necessario impostare le chiavi del registro di sistema per abilitare ADAL come spiegato in [Enable Modern Authentication for Office 2013 on Windows Devices](../security-and-compliance/enable-modern-authentication.md).<br/>Inoltre, è necessario installare gli aggiornamenti di aprile seguenti per Office 2013:
+- **Abilitare adal**. In questo articolo viene illustrato come abilitare ADAL per Office 2013: [utilizzo dell'autenticazione moderna di Microsoft 365 con i client di Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>È inoltre necessario impostare le chiavi del registro di sistema per abilitare ADAL come spiegato in [Enable Modern Authentication for Office 2013 on Windows Devices](../security-and-compliance/enable-modern-authentication.md).<br/>Inoltre, è necessario installare gli aggiornamenti di aprile seguenti per Office 2013:
     
   - [Descrizione dell'aggiornamento della sicurezza per Office 2013:10 aprile 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     

@@ -23,22 +23,22 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Informazioni su come eliminare un account utente. Decidere cosa fare con l'indirizzo di posta elettronica dell'utente, il contenuto di OneDrive e se mantenere la licenza del prodotto o smettere di pagarla.
-ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 1d529627841c648684c8a9fe217a761b29749150
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608127"
+ms.locfileid: "43617249"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Eliminare un utente dall'organizzazione
   
 ||
 |:-----|
-|**Per informazioni su come *eliminare l'account* utente di Office 365 utilizzato al lavoro o all'Istituto di istruzione? Rivolgersi al supporto tecnico del proprio lavoro o dell'Università per eseguire queste operazioni.**|
+|**Per informazioni su come *eliminare l'account* utente Microsoft 365 utilizzato al lavoro o all'Istituto di istruzione? Rivolgersi al supporto tecnico del proprio lavoro o dell'Università per eseguire queste operazioni.**|
    
 ## <a name="what-you-need-to-know-about-deleting-users"></a>Informazioni necessarie relative all'eliminazione degli utenti
 
-- Solo le persone con autorizzazioni di [amministratore globale di Office 365](about-admin-roles.md) o di gestione degli utenti per l'azienda o l'istituto di istruzione possono eliminare gli account utente. 
+- Solo gli utenti che dispongono di autorizzazioni di gestione globale o di [amministratore di Microsoft 365](about-admin-roles.md) per l'azienda o la scuola possono eliminare gli account utente. 
     
 - Si hanno a disposizione 30 giorni per [ripristinare](restore-user.md) l'account prima che i dati dell'utente vengano eliminati definitivamente. 
     
@@ -46,7 +46,7 @@ ms.locfileid: "43608127"
     
 - Se si vuole mantenere la posta elettronica dell'utente, **PRIMA** di eliminare l'account spostarla in una posizione diversa. Se l'account è già stato eliminato, è possibile ripristinarlo entro 30 giorni, spostare i dati della posta elettronica e quindi eliminare l'account. Vedere [Accedere ai dati di un ex utente ed eseguirne il backup](get-access-to-and-back-up-a-former-user-s-data.md).
     
-- Se si dispone di un abbonamento Enterprise come Office 365 Enterprise E3, è possibile conservare i dati delle cassette postali di un account utente di Office 365 eliminato trasformandola in una *cassetta postale inattiva*. Per saperne di più, vedere [Gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
+- Se si dispone di un abbonamento Enterprise come Office 365 Enterprise E3, è possibile conservare i dati delle cassette postali di un account utente eliminato trasformandola in una *cassetta postale inattiva*. Per saperne di più, vedere [Gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 
 ## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>Amministratore globale: eliminare un utente, smettere di pagare la propria licenza e scegliere cosa fare con i propri messaggi di posta elettronica e contenuti di OneDrive
@@ -176,13 +176,13 @@ Di seguito sono rilevati i problemi più comuni che si verificano durante l'elim
   
 - **Viene visualizzato un messaggio di errore lungo le righe di "l'utente non può essere eliminato. Provare di nuovo in un secondo momento.** Controllare se l'account è configurato per l'inoltro della posta elettronica o se è stato convertito in una cassetta postale condivisa. Entrambe queste cause causano tale errore. Non eliminare l'account se ha l'inoltro della posta elettronica o se è stato convertito in una cassetta postale condivisa.
 
-- **Non si hanno le autorizzazioni appropriate per eliminare un utente**. Solo gli amministratori [globali di Office 365 o gli amministratori di gestione utenti](about-admin-roles.md) possono eliminare gli utenti. Si tratta in genere del supporto tecnico dell'istituto di istruzione o dell'azienda.
+- **Non si hanno le autorizzazioni appropriate per eliminare un utente**. Solo le persone che sono [amministratori globali di Microsoft 365 o gli amministratori di gestione utenti](about-admin-roles.md) possono eliminare gli utenti. Si tratta in genere del supporto tecnico dell'istituto di istruzione o dell'azienda.
 
 - **L'utente viene eliminato, ma il nome continua a comparire nella Rubrica globale**. Questo accade quando un'azienda usa Active Directory. È necessario eliminare l'account utente da Active Directory. Per istruzioni, vedere l'articolo di TechNet: [Eliminare un account utente.](https://go.microsoft.com/fwlink/p/?linkid=841808)
 
 ||
 |:-----|
-|**Eliminare Office 365 dal computer? Passare a [Annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).**|
+|**Si desidera eliminare Microsoft 365 dal computer in uso? Andare a [annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).**|
    
 ## <a name="related-articles"></a>Articoli correlati
 

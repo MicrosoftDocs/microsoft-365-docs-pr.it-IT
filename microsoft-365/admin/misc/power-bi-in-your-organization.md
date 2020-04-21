@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Informazioni su Power BI e su come gli utenti dell'organizzazione possono utilizzare questo servizio di analisi aziendale.
-ms.openlocfilehash: 4d89594812486d06629d614ab0c59fba09dcdad8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3cf0c96534b6d8d02ef89f430ae246c6f32ac356
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361337"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627813"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI nell'organizzazione
 
@@ -47,30 +47,30 @@ Inoltre, i singoli utenti dell'organizzazione potrebbero essere in grado di iscr
 
 Esistono tre possibili scenari:
   
-### <a name="scenario-1-your-organization-already-has-an-existing-office-365-environment-and-the-user-signing-up-for-power-bi-already-has-an-office-365-account"></a>Scenario 1: l'organizzazione ha già un ambiente di Office 365 e l'utente che effettua l'iscrizione a Power BI ha già un account di Office 365.
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-an-microsoft-365-account"></a>Scenario 1: l'organizzazione dispone già di un ambiente Microsoft 365 esistente e l'utente che effettua l'iscrizione a Power BI dispone già di un account Microsoft 365.
 
 In questo scenario, se un utente ha già un account aziendale o dell'istituto di istruzione nel tenant (ad esempio contoso.com) ma non ha ancora Power BI, Microsoft attiverà semplicemente il piano per tale account e l'utente riceverà automaticamente una notifica relativa all'uso del servizio Power BI.
   
-### <a name="scenario-2-your-organization-has-an-existing-office-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-an-office-365-account"></a>Scenario 2: l'organizzazione ha un ambiente di Office 365 e l'utente che effettua l'iscrizione a Power BI non ha un account di Office 365.
+### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-an-microsoft-365-account"></a>Scenario 2: l'organizzazione dispone di un ambiente Microsoft 365 esistente e l'utente che effettua l'iscrizione a Power BI non dispone di un account Microsoft 365.
 
-In questo scenario, l'utente ha un indirizzo di posta elettronica nel dominio dell'organizzazione (ad esempio contoso.com) ma non ha ancora un account di Office 365. In questo caso, l'utente può iscriversi a Power BI per ricevere automaticamente un account. In questo modo l'utente potrà accedere al servizio Power BI. Se ad esempio una dipendente di nome Sara usa l'indirizzo di posta elettronica aziendale, Sara@contoso.com, per iscriversi, Microsoft la aggiungerà automaticamente come utente nell'ambiente Office 365 di Contoso e attiverà Power BI per tale account.
+In questo scenario, l'utente dispone di un indirizzo di posta elettronica nel dominio dell'organizzazione (ad esempio, contoso.com) ma non dispone ancora di un account Microsoft 365. In questo caso, l'utente può iscriversi a Power BI per ricevere automaticamente un account. In questo modo l'utente potrà accedere al servizio Power BI. Ad esempio, se un dipendente denominato Nancy utilizza l'indirizzo di posta elettronica del lavoro (ad esempio, Nancy@contoso.com) per iscriversi, Microsoft aggiungerà automaticamente Nancy come utente nell'ambiente Contoso Microsoft 365 e attiverà Power BI per tale account.
   
-### <a name="scenario-3-your-organization-does-not-have-an-office-365-environment-connected-to-your-email-domain"></a>Scenario 3: l'organizzazione non ha un ambiente di Office 365 connesso al proprio dominio di posta elettronica.
+### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>Scenario 3: l'organizzazione non dispone di un ambiente Microsoft 365 connesso al dominio di posta elettronica.
 
 L'organizzazione non deve intraprendere alcuna azione amministrativa per poter usufruire di Power BI.
   
 > [!IMPORTANT]
-> Se l'organizzazione dispone di più domini di posta elettronica e si preferisce che tutte le estensioni di indirizzi di posta elettronica siano nello stesso tenant, prima che gli utenti creino il tenant principale, aggiungere tutti i domini dell'indirizzo di posta elettronica al tenant prima che gli utenti creino il tenant principale. Non esiste un meccanismo automatico per spostare gli utenti tra i tenant dopo che sono stati creati. Per ulteriori informazioni su questo processo, vedere [se sono presenti più domini, è possibile controllare il tenant di Office 365 a cui vengono aggiunti gli utenti?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to) più avanti in questo articolo e [aggiungere un dominio a Office 365](../setup/add-domain.md) online. 
+> Se l'organizzazione dispone di più domini di posta elettronica e si preferisce che tutte le estensioni di indirizzi di posta elettronica siano nello stesso tenant, prima che gli utenti creino il tenant principale, aggiungere tutti i domini dell'indirizzo di posta elettronica al tenant prima che gli utenti creino il tenant principale. Non esiste un meccanismo automatico per spostare gli utenti tra i tenant dopo che sono stati creati. Per ulteriori informazioni su questo processo, vedere [se si dispone di più domini, è possibile controllare il tenant a cui vengono aggiunti gli utenti?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) più avanti in questo articolo e [aggiungere un dominio a Office 365](../setup/add-domain.md) online. 
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>Come cambierà la gestione delle identità per gli attuali utenti dell'organizzazione?
 
-Se l'organizzazione ha già un ambiente di Office 365 e tutti gli utenti dell'organizzazione hanno account di Office 365, il processo di gestione delle identità rimarrà invariato.
+Se nell'organizzazione è già presente un ambiente Microsoft 365 e tutti gli utenti dell'organizzazione dispongono di account Microsoft 365, la gestione delle identità non cambierà.
   
-Se l'organizzazione ha già un ambiente di Office 365 ma non tutti gli utenti dell'organizzazione hanno account di Office 365, Microsoft creerà un utente nel tenant e assegnerà le licenze in base all'indirizzo di posta elettronica aziendale o dell'istituto di istruzione dell'utente. Questo significa che il numero di utenti da gestire in un determinato momento aumenterà man mano che nuovi utenti nell'organizzazione si iscriveranno al servizio.
+Se nell'organizzazione è già presente un ambiente Microsoft 365 ma non tutti gli utenti dell'organizzazione dispongono di account Microsoft 365, verrà creato un utente nel tenant e verranno assegnate le licenze in base all'indirizzo di posta elettronica del lavoro o dell'Istituto di istruzione dell'utente. Questo significa che il numero di utenti da gestire in un determinato momento aumenterà man mano che nuovi utenti nell'organizzazione si iscriveranno al servizio.
   
 Se la directory viene gestita in locale e si usa Active Directory Federation Services (ADFS), Microsoft non aggiungerà utenti al tenant e tutti gli utenti che proveranno ad aggiungersi al tenant riceveranno un messaggio che li invita a contattare l'amministratore dell'organizzazione.
   
-Se l'organizzazione non ha un ambiente di Office 365 connesso al proprio dominio di posta elettronica, non ci saranno cambiamenti nella modalità di gestione delle identità. Gli utenti verranno aggiunti a una nuova directory di utenti basata sul cloud e si avrà la possibilità di scegliere se assumere il ruolo di amministratore del tenant per gestirli.
+Se l'organizzazione non dispone di un ambiente Microsoft 365 connesso al proprio dominio di posta elettronica, non verranno apportate modifiche alla modalità di gestione delle identità. Gli utenti verranno aggiunti a una nuova directory di utenti basata sul cloud e si avrà la possibilità di scegliere se assumere il ruolo di amministratore del tenant per gestirli.
   
 ## <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Qual è la procedura per gestire un tenant creato da Microsoft per gli utenti?
 
@@ -102,14 +102,14 @@ Se Microsoft ha creato un tenant, è possibile chiedere di gestirlo eseguendo la
     
 4. Selezionare l'icona di avvio delle app in alto a sinistra e scegliere **Amministratore**.
     
-    ![The Office 365 app launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![Icona di avvio delle app con l'applicazione di amministrazione evidenziata](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Leggere le istruzioni riportate nella pagina **diventa amministratore** e quindi selezionare **Sì, voglio essere l'amministratore**.
     
     > [!NOTE]
     >  Se questa opzione non viene visualizzata, esiste già un amministratore sul posto. 
   
-## <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Se si hanno più domini, è possibile controllare il tenant di Office 365 in cui vengono aggiunti gli utenti?
+## <a name="if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to"></a>Se si dispone di più domini, è possibile controllare il tenant a cui vengono aggiunti gli utenti?
 
 Se non si fa niente, verrà creato un tenant per ogni domino o sottodominio di posta elettronica degli utenti.
   
@@ -118,18 +118,18 @@ Se si vuole che gli utenti stiano nello stesso tenant indipendentemente dalle es
 - Creare in anticipo un tenant di destinazione oppure usare un tenant esistente e aggiungere tutti gli attuali domini e sottodomini da consolidare al suo interno. Quindi, tutti gli utenti con un indirizzo di posta elettronica che termina con questi domini e sottodomini verranno automaticamente aggiunti al tenant di destinazione quando si iscrivono.
     
 > [!IMPORTANT]
-> Non esiste un meccanismo automatizzato supportato per trasferire gli utenti da un tenant all'altro dopo la creazione. Per ulteriori informazioni sull'aggiunta di domini a un singolo tenant di Office 365, vedere [aggiungere un dominio a office 365](../setup/add-domain.md). 
+> Non esiste un meccanismo automatizzato supportato per trasferire gli utenti da un tenant all'altro dopo la creazione. Per ulteriori informazioni sull'aggiunta di domini a un singolo tenant di Microsoft 365, vedere [aggiungere un dominio a Office 365](../setup/add-domain.md). 
   
 > [!IMPORTANT]
 > Per ulteriori informazioni e indicazioni sulla gestione dei tenant, vedere [che cos'è Power bi Administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization). 
   
-## <a name="how-can-i-prevent-users-from-joining-my-existing-office-365-tenant"></a>Come si può impedire agli utenti di aggiungersi all'attuale tenant di Office 365?
+## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>In che modo è possibile impedire agli utenti di partecipare al tenant esistente?
 
-È possibile eseguire operazioni come amministratore per impedire agli utenti di partecipare al tenant di Office 365 esistente. Se si blocca questo, i tentativi degli utenti di accedere avranno esito negativo e verranno indirizzati a contattare l'amministratore dell'organizzazione. Non è necessario ripetere questa procedura se la distribuzione automatica delle licenze è già stata disabilitata prima (ad esempio, Office 365 Education per studenti, docenti e personale).
+È possibile eseguire operazioni come amministratore per impedire agli utenti di partecipare al tenant esistente. Se si blocca questo, i tentativi degli utenti di accedere avranno esito negativo e verranno indirizzati a contattare l'amministratore dell'organizzazione. Non è necessario ripetere questa procedura se la distribuzione automatica delle licenze è già stata disabilitata prima (ad esempio, Office 365 Education per studenti, docenti e personale).
   
 Questa procedura richiede l'uso di Windows PowerShell. Per informazioni su Windows PowerShell, vedere [Guida introduttiva di PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=286814).
   
-Per eseguire la procedura seguente, è necessario installare la versione a 64 bit più recente del [Modulo di Microsoft Azure Active Directory per Windows PowerShell](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5).
+Per eseguire la procedura seguente, è necessario installare la versione più recente di 64 bit del [modulo di PowerShell di Azure Active Directory V2](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5).
   
 Dopo aver selezionato il collegamento, selezionare **Esegui** per eseguire il pacchetto del programma di installazione. 
   
@@ -142,7 +142,7 @@ Per abilitare l'aggiunta automatica di nuovi utenti al tenant:  `Set-MsolCompany
 > [!NOTE]
 > Questo blocco impedisce ai nuovi utenti dell'organizzazione di iscriversi a Power BI. Gli utenti che si iscrivono a Power BI prima della disabilitazione delle nuove iscrizioni per l'organizzazione manterranno le proprie licenze. Vedere il [come si rimuove Power BI per gli utenti che hanno già effettuato l'iscrizione?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) per istruzioni su come è possibile rimuovere l'accesso a Power BI per gli utenti che in precedenza avevano effettuato l'iscrizione al servizio. 
   
-## <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Come si può consentire agli utenti di aggiungersi all'attuale tenant di Office 365?
+## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>Come si può consentire agli utenti di partecipare al tenant esistente?
 
 Per consentire agli utenti di aggiungersi al tenant, eseguire il comando opposto a quello descritto nella domanda precedente:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
@@ -226,7 +226,7 @@ Potrebbe verificarsi un aumento nella richiesta di reimpostazione delle password
   
 È possibile rimuovere un utente dal tenant tramite il processo standard nell'interfaccia di amministrazione. Se tuttavia l'utente ha ancora un indirizzo di posta elettronica attivo dell'organizzazione, potrà riaggiungersi a meno che non si impedisca a tutti di aggiungersi.
   
-## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-office-365-tenant"></a>Perché nel tenant di Office 365 è visualizzato 1 milione di licenze?
+## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-tenant"></a>Perché le licenze 1 milione per Microsoft Power BI sono state visualizzate nel tenant?
 
 Gli utenti di un'organizzazione idonea sono a loro volta idonei a usare il servizio Microsoft Power BI e queste licenze rappresentano la capacità disponibile per i nuovi utenti di Power BI nel tenant. Per queste licenze non vengono addebitati costi. Se si è scelto di consentire agli utenti di iscriversi a Power BI da soli, al termine del processo di iscrizione viene assegnata una delle licenze gratuite disponibili. È inoltre possibile scegliere di assegnare tali licenze agli utenti tramite l'interfaccia di amministrazione.
   

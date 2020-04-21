@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS in Hostgator per Office 365
+title: Creare record DNS in Hostgator per Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Hostgator per Office 365.
-ms.openlocfilehash: a5a41e5c1eba9d99d1927192472da7746277dd38
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Hostgator per Microsoft.
+ms.openlocfilehash: 9ac14d516dff6e84dd0fb06a6632376d475689fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211716"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629528"
 ---
-# <a name="create-dns-records-at-hostgator-for-office-365"></a>Creare record DNS in Hostgator per Office 365
+# <a name="create-dns-records-at-hostgator-for-microsoft"></a>Creare record DNS in Hostgator per Microsoft
 
  **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
@@ -36,12 +36,12 @@ Se il proprio provider di hosting DNS è Hostgator, seguire i passaggi di questo
 > [!IMPORTANT]
 > È necessario eseguire il primo procedurebelow, [puntare il dominio all'account di hosting](#point-your-domain-to-your-hosting-account), prima di aggiungere i record DNS utilizzando una delle altre procedure descritte in questo articolo. 
 
-Dopo aver apportato tutte le modifiche su Hostgator, il dominio sarà configurato per l'uso con i servizi di Office 365.
+Dopo aver apportato tutte queste modifiche in Hostgator, il dominio sarà configurato per l'uso con i servizi Microsoft.
   
-Per informazioni su hosting Web e DNS per i siti Web con Office 365, vedere [Usare un sito Web pubblico con Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+Per ulteriori informazioni su Webhosting e DNS per i siti Web con Microsoft, vedere [utilizzare un sito Web pubblico con Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS in Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. In caso di problemi con il flusso di posta o altri problemi dopo l'aggiunta di record DNS, vedere [individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="point-your-domain-to-your-hosting-account"></a>Associare il dominio all'account di hosting
 <a name="BKMK_PointDomain"> </a>
@@ -70,7 +70,7 @@ Seguire questa procedura per associare il dominio e gli account di hosting.
 > [!IMPORTANT]
 > Prima di eseguire questa procedura è necessario eseguire la procedura illustrata nella prima sezione di questo articolo, [Associare il dominio all'account di hosting](#point-your-domain-to-your-hosting-account). 
   
-Prima di usare il proprio dominio con Office 365, è necessario dimostrare di esserne proprietari. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Office 365 che si è proprietari del dominio.
+Prima di utilizzare il dominio con Microsoft, è necessario assicurarsi di possederlo. La possibilità di eseguire l'accesso al proprio account presso il registrar e di creare il record DNS dimostra a Microsoft che si è proprietari del dominio.
   
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
@@ -80,7 +80,7 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
     
     > [!IMPORTANT]
-    > Per disporre di un indirizzo a cPanel associato al dominio, è necessario un account di hosting con Hostgator. Per iniziare con Office 365, è possibile acquistare un account di hosting presso Hostgator o [riconfigurare la delega dei server dei nomi in modo che puntino a Office 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Nell'area **Domains** della pagina del **Pannello di controllo** selezionare **Advanced zone editor**.
     
@@ -91,15 +91,15 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Tipo** <br/> |**TXT Data** <br/> |
-    |Utilizzare il *Domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |Utilizzare il *Domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Utilizzare il valore **di indirizzo di destinazione o puntamento** specifico qui, dalla tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Selezionare **Aggiungi record**.
     
 5. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
+Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e richiedere il record.
   
-Quando Office 365 trova il record TXT corretto, il dominio è verificato.
+Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
@@ -110,9 +110,9 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
 > [!NOTE]
-> In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS in Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. In caso di problemi con il flusso di posta o altri problemi dopo l'aggiunta di record DNS, vedere [individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga recapitata in Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga a Microsoft
 <a name="BKMK_add_MX"> </a>
 
 > [!IMPORTANT]
@@ -123,7 +123,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     (Each hosted account at Hostgator is assigned a unique cPanel address. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
     
     > [!IMPORTANT]
-    > Per disporre di un indirizzo a cPanel associato al dominio, è necessario un account di hosting con Hostgator. Per iniziare con Office 365, è possibile acquistare un account di hosting presso Hostgator o [riconfigurare la delega dei server dei nomi in modo che puntino a Office 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Nella sezione **posta elettronica** della pagina del **Pannello di controllo** selezionare **voce MX**.
     
@@ -136,7 +136,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     
     |**Priority**|**Destination**|
     |:-----|:-----|
-    |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la \< propria *chiave* \> di dominio dall'account di Office 365.    [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la \< propria *chiave* \> di dominio dal proprio account Microsoft.    [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. Selezionare **Aggiungi nuovo record**.
    
@@ -144,7 +144,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
 7. Rimuovere eventuali altri record MX presenti nella sezione **MX Records**. 
 
     
-## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Aggiungere i sei record CNAME necessari per Office 365
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Aggiungere i sei record CNAME necessari per Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 > [!IMPORTANT]
@@ -155,7 +155,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     (Each hosted account at Hostgator is assigned a unique cPanel address. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
     
     > [!IMPORTANT]
-    > Per disporre di un indirizzo a cPanel associato al dominio, è necessario un account di hosting con Hostgator. Per iniziare con Office 365, è possibile acquistare un account di hosting presso Hostgator o [riconfigurare la delega dei server dei nomi in modo che puntino a Office 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Nell'area **Domains** della pagina del **Pannello di controllo** selezionare **Advanced zone editor**.
     
@@ -186,7 +186,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Instead, add the required Office 365 values to the current record so that you have a single SPF record that includes both sets of values. Servono esempi? Vedere queste [informazioni dettagliate e record SPF di esempio](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record SPF che includa entrambi i set di valori. Servono esempi? Estrarre questi [record di sistema per il nome di dominio esterno per Microsoft](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 > [!IMPORTANT]
 > Prima di eseguire questa procedura è necessario eseguire la procedura illustrata nella prima sezione di questo articolo, [Associare il dominio all'account di hosting](#point-your-domain-to-your-hosting-account). 
@@ -196,7 +196,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     (Each hosted account at Hostgator is assigned a unique cPanel address. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
     
     > [!IMPORTANT]
-    > Per disporre di un indirizzo a cPanel associato al dominio, è necessario un account di hosting con Hostgator. Per iniziare con Office 365, è possibile acquistare un account di hosting presso Hostgator o [riconfigurare la delega dei server dei nomi in modo che puntino a Office 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Nell'area **Domains** della pagina del **Pannello di controllo** selezionare **Advanced zone editor**.
     
@@ -210,7 +210,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
 4. Selezionare **Aggiungi record**.
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Aggiungere i due record SRV necessari per Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Aggiungere i due record SRV necessari per Microsoft
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
@@ -221,7 +221,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     (Each hosted account at Hostgator is assigned a unique cPanel address. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
     
     > [!IMPORTANT]
-    > Per disporre di un indirizzo a cPanel associato al dominio, è necessario un account di hosting con Hostgator. Per iniziare con Office 365, è possibile acquistare un account di hosting presso Hostgator o [riconfigurare la delega dei server dei nomi in modo che puntino a Office 365](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
   
 2. Nell'area **Domains** della pagina del **Pannello di controllo** selezionare **Advanced zone editor**.
 
@@ -246,4 +246,4 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     Nella sezione **Add a record** creare un record usando i valori della riga successiva della tabella e quindi scegliere di nuovo **Add record** per completare il record. 
     
 > [!NOTE]
-> In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS in Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. In caso di problemi con il flusso di posta o altri problemi dopo l'aggiunta di record DNS, vedere [individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 

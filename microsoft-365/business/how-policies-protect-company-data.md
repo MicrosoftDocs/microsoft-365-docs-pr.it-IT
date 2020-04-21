@@ -1,5 +1,7 @@
 ---
-title: In che modo i criteri in Microsoft 365 Business proteggono i dati aziendali
+title: In che modo i criteri di Microsoft 365 per le aziende proteggono i dati aziendali
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -24,14 +26,14 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: Per proteggere i dati aziendali nei dispositivi personali degli utenti, utilizzare i criteri per i dispositivi e i gruppi di sicurezza specifici.
-ms.openlocfilehash: 225dbadf599d5287a706ce50ec2b3cc9dd27c996
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: aa7447ae4547ba3180d5d5ebbe18e2840947a1d5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320129"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627147"
 ---
-# <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>In che modo i criteri in Microsoft 365 Business proteggono i dati aziendali
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>In che modo i criteri di Microsoft 365 per le aziende proteggono i dati aziendali
 
 I criteri creati sono specifici per il tipo di dispositivo e possono essere applicati a gruppi di utenti specifici. È quindi possibile creare un criterio applicabile ai dirigenti e un altro per tutti gli altri utenti.
   

@@ -1,5 +1,5 @@
 ---
-title: Eseguire l'acquisizione di un amministratore interno in Office 365
+title: Eseguire l'acquisizione di un amministratore interno
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -18,15 +18,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Informazioni su come verificare la posta elettronica e la proprietà del dominio in modo da assumere un tenant non gestito in Office 365
-ms.openlocfilehash: 3c732d55c533c72983aaa59e39e7bb8ff130f280
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Informazioni su come verificare la posta elettronica e la proprietà del dominio in modo da assumere un tenant non gestito in Microsoft 365
+ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212246"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627945"
 ---
-# <a name="perform-an-internal-admin-takeover-in-office-365"></a>Eseguire l'acquisizione di un amministratore interno in Office 365
+# <a name="perform-an-internal-admin-takeover"></a>Eseguire l'acquisizione di un amministratore interno
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
 
@@ -67,11 +67,11 @@ Se si è un amministratore e si vuole assumere un tenant non gestito creato da u
   
 ## <a name="related-articles"></a>Articoli correlati
 
-YouTube: [3 steps to do an IT Admin Takeover for Power BI and Office 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 passaggi per eseguire l'acquisizione di un amministratore IT per Power bi e Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Acquisizione dell'amministratore in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Ottenere assistenza per i domini di Office 365](../get-help-with-domains/get-help-with-domains.md)
+[Ottenere assistenza per i domini](../get-help-with-domains/get-help-with-domains.md)
 
 [Utilizzo dell'iscrizione in modalità self-service nell'organizzazione](self-service-sign-up.md)
   

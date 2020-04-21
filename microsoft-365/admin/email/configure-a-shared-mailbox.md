@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Dopo aver creato una cassetta postale condivisa, è necessario configurare alcune impostazioni per gli utenti, ad esempio l'inoltro della posta elettronica e le risposte automatiche. Successivamente, potrebbe essere necessario modificare altre impostazioni, ad esempio il nome della cassetta postale o i membri.
-ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212022"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629048"
 ---
 # <a name="configure-a-shared-mailbox"></a>Configurare una cassetta postale condivisa
 
@@ -122,7 +122,7 @@ Per impostazione predefinita, i messaggi inviati dalla cassetta postale condivis
 Se si desidera consentire a tutti di visualizzare il messaggio di posta elettronica inviato, nell'interfaccia di amministrazione modificare le impostazioni della cassetta postale condivisa e selezionare \> **modifica** **elementi inviati** .
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-office-365-email"></a>Scegliere le app che possono essere utilizzate da una cassetta postale condivisa per accedere alla posta elettronica di Office 365
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Scegliere le app che possono essere utilizzate da una cassetta postale condivisa per accedere a Microsoft e-mail
 
 ::: moniker range="o365-worldwide"
 

@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Informazioni su come configurare un account di posta elettronica in Outlook per Windows e Mac e sull'installazione delle app di Office e l'accesso ai messaggi online.
-ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361237"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627789"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurare Outlook per leggere la posta elettronica
 
-L'abbonamento di Office 365 include Outlook basato sul Web. Tuttavia, se l'abbonamento include le app client di Office, viene fornita anche una versione di Outlook da installare nel PC o nei dispositivi.
+La sottoscrizione Microsoft 365 viene fornita con Outlook basato sul Web, ma se l'abbonamento include app client di Office, è possibile installare Outlook anche nel computer o nei dispositivi personali.
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Configurare un account di posta elettronica in Outlook
 
@@ -62,15 +62,15 @@ Leggere l'[articolo completo](https://support.office.com/article/6e27792a-9267-4
   
 ## <a name="how-do-i-access-my-mail-online"></a>Come si accede alla posta online?
 
-Dopo aver eseguito l'accesso a Office 365, selezionare **Outlook**.
+Dopo aver eseguito l'accesso a Microsoft 365, selezionare **Outlook**.
   
-![La Home page di Office 365 con l'app Outlook evidenziata](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Home page di Microsoft 365 con l'app Outlook evidenziata](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-Se non si trova l'app che si sta cercando, nell'icona di avvio delle app selezionare **Tutte le app** per visualizzare un elenco in ordine alfabetico delle app di Office 365 disponibili. Da qui è possibile cercare un'app specifica. 
+Non è possibile trovare l'app che si sta cercando? Dall'icona di avvio delle app, seleziona **tutte le app** per visualizzare un elenco alfabetico delle app di Microsoft 365 disponibili. Da qui, è possibile cercare un'app specifica. 
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>Come si verifica se l'abbonamento include le app di Office?
 
-Office 365 Business Premium e Office 365 Business includono le app di Office. Per informazioni dettagliate, vedere [Piani Office 365 Business](https://go.microsoft.com/fwlink/p/?LinkId=723731) o [Piani Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=800029).
+Microsoft 365 business standard e Microsoft 365 Apps for business includono le app di Office. Per informazioni dettagliate, vedere [Microsoft 365 for business plans](https://go.microsoft.com/fwlink/p/?LinkId=723731)o [Office 365 Enterprise plans](https://go.microsoft.com/fwlink/p/?LinkId=800029).
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>Come si determina il tipo di abbonamento in uso?
 

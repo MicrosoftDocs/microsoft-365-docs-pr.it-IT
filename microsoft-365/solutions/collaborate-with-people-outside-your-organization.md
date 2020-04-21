@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come configurare Microsoft 365 per la collaborazione con utenti esterni all'organizzazione.
-ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894954"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630726"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborare con utenti esterni all'organizzazione
 
@@ -23,7 +23,7 @@ Le funzionalità di condivisione esterna di Microsoft 365 offrono agli utenti de
 
 Collaborare con persone esterne all'organizzazione è costituito da due componenti principali:
 
-- **Abilita condivisione** : configurare i controlli di condivisione in Azure Active Directory, teams, gruppi di Office 365 e SharePoint per consentire il livello di condivisione desiderato per l'organizzazione.
+- **Abilita condivisione** : configurare i controlli di condivisione in Azure Active Directory, teams, Microsoft 365 Groups e SharePoint per consentire il livello di condivisione desiderato per l'organizzazione.
 - **Abilitare la sicurezza aggiuntiva** -mentre le funzionalità di condivisione di base possono essere configurate in modo da richiedere agli utenti esterni all'organizzazione di eseguire l'autenticazione, Microsoft 365 fornisce numerose funzionalità aggiuntive di sicurezza e conformità che consentono di proteggere i dati e di gestire i criteri di governance durante la condivisione esterna.
 
 ## <a name="enable-sharing"></a>Abilita condivisione
@@ -46,7 +46,7 @@ Dopo aver abilitato lo scenario che si desidera utilizzare per la condivisione c
 
 ## <a name="collaborate-with-partner-companies"></a>Collaborare con le aziende partner
 
-Quando si lavora su un progetto di grandi dimensioni che coinvolge numerosi ospiti di un'altra organizzazione o se si dispone di una relazione del fornitore in corso in cui gli utenti cambiano spesso, è possibile utilizzare la gestione dei diritti in Azure Active Directory per semplificare la gestione degli utenti e consentire all'azienda partner di condividere questa responsabilità. Per ulteriori informazioni, vedere [Create a B2B Extranet with Managed guests](b2b-extranet.md) .
+Quando si lavora su un progetto di grandi dimensioni che coinvolge numerosi ospiti di un'altra organizzazione o se si dispone di una relazione del fornitore in corso in cui gli utenti cambiano spesso, è possibile utilizzare la gestione dei diritti in Azure Active Directory per semplificare la gestione degli ospiti e consentire all'azienda partner di condividere tale responsabilità. Per ulteriori informazioni, vedere [Create a B2B Extranet with Managed guests](b2b-extranet.md) .
 
 ## <a name="limit-sharing"></a>Limitare la condivisione
 

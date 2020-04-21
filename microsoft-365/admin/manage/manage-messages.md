@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Informazioni su come gestire i messaggi del centro messaggi per facilitare la gestione delle modifiche.
-ms.openlocfilehash: 5b1772eb86acb937d532990830f9220f197c1c00
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361931"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628149"
 ---
 # <a name="manage-messages-in-message-center"></a>Gestire i messaggi nel Centro messaggi
 
@@ -87,13 +87,13 @@ Se è presente un messaggio su cui deve agire un altro utente. è possibile cond
   
 1. Selezionare il messaggio per aprirlo, quindi selezionare **Condividi**.
   
-2. Per condividere il messaggio, immettere fino a due indirizzi di posta elettronica separati da un punto e virgola. È possibile inviare a singoli e raggruppare gli indirizzi di posta elettronica. Facoltativamente, è possibile scegliere di ricevere una copia del messaggio nella posta elettronica (il messaggio passerà all'indirizzo di posta elettronica principale in Office 365) oppure aggiungere un messaggio personale per fornire ai destinatari un contesto maggiore.
+2. Per condividere il messaggio, immettere fino a due indirizzi di posta elettronica separati da un punto e virgola. È possibile inviare a singoli e raggruppare gli indirizzi di posta elettronica. Facoltativamente, è possibile scegliere di ricevere una copia del messaggio nella posta elettronica (il messaggio passerà all'indirizzo di posta elettronica principale) oppure aggiungere un messaggio personale per fornire ai destinatari un contesto maggiore.
   
 3. Selezionare **Condividi** per inviare il messaggio di posta elettronica.
     
 ## <a name="get-a-link"></a>URL di collegamento
 
-Se è necessario contattare un altro amministratore per verificare che sia informato della modifica e agisca di conseguenza, è possibile generare un collegamento da condividere ad esempio tramite posta elettronica o messaggistica istantanea, che consentirà all'utente di connettersi direttamente al messaggio. La persona con cui si condivide il collegamento deve essere un amministratore in Office 365 per l'organizzazione o non avrà accesso al messaggio collegato.
+È necessario eseguire il follow-up con un altro amministratore per assicurarsi che siano a conoscenza di una modifica e dell'esecuzione di un'azione? È possibile generare un collegamento da condividere tramite posta elettronica o messaggistica istantanea, ad esempio, che collegherà l'utente direttamente al messaggio. La persona con cui si condivide il collegamento deve essere un amministratore in Microsoft 365 per l'organizzazione o non avrà accesso al messaggio collegato.
 
 ::: moniker range="o365-worldwide"
 
@@ -213,5 +213,5 @@ Se viene visualizzato un messaggio che non è di propria competenza o su cui si 
 
 ::: moniker-end
 
-Per una panoramica del Centro messaggi, vedere [Centro messaggi in Office 365](message-center.md). In alternativa, per informazioni su come impostare le preferenze della lingua per abilitare la traduzione automatica per i post del centro messaggi, vedere [Language Translation per i post del centro messaggi](language-translation-for-message-center-posts.md). Se si cerca un modo alternativo per ottenere informazioni in tempo reale sull'integrità dei servizi e comunicazioni del Centro messaggi, fare riferimento [Panoramica sull'API per le comunicazioni di servizio di Office 365](https://go.microsoft.com/fwlink/p/?linkid=848507).
+Per una panoramica del centro messaggi, vedere [Message Center in Microsoft 365](message-center.md). In alternativa, per informazioni su come impostare le preferenze della lingua per abilitare la traduzione automatica per i post del centro messaggi, vedere [Language Translation per i post del centro messaggi](language-translation-for-message-center-posts.md). Se si desidera programmare un modo alternativo per ottenere informazioni sull'integrità del servizio in tempo reale e comunicazioni del centro messaggi, fare riferimento a [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

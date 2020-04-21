@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio apre ticket di supporto presso Microsoft.
-ms.openlocfilehash: 749e0532cf379d1fcff0580c9d5ede7910cfa38b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 85952f1f64db0e1ae94d9c5f69e5c95f7f9c2dab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353267"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618873"
 ---
 # <a name="get-started-with-the-roles-page"></a>Iniziare a utilizzare la pagina ruoli
 
@@ -55,7 +55,7 @@ Non si tratta di un elenco esaustivo di tutte le autorizzazioni di cui dispongon
 
 ### <a name="exchange-admin"></a>Amministratore di Exchange
 
-Assegnare il ruolo di amministratore di Exchange agli utenti che hanno la necessità di visualizzare e gestire le cassette postali di posta elettronica dell'utente, i gruppi di Office 365 e Exchange Online. È inoltre possibile aprire e gestire le richieste di servizio al supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
+Assegnare il ruolo di amministratore di Exchange agli utenti che hanno la necessità di visualizzare e gestire le cassette postali di posta elettronica dell'utente, i gruppi di Microsoft 365 e Exchange Online. È inoltre possibile aprire e gestire le richieste di servizio al supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>Amministratore globale
 
@@ -75,15 +75,15 @@ Assegnare il ruolo di amministratore del servizio agli utenti che hanno la neces
 
 ### <a name="sharepoint-admin"></a>Amministratore di SharePoint
 
-Quando si acquista un abbonamento a Microsoft 365 o Office 365, viene creato automaticamente un sito del team e l'amministratore globale è impostato come principale responsabile della raccolta siti. Assegnare al ruolo di amministratore di SharePoint gli utenti a cui si desidera accedere all'interfaccia di amministrazione di SharePoint. Gli utenti con il ruolo di amministratore di SharePoint possono creare e gestire raccolte siti, designare gli amministratori delle raccolte siti e gestire i profili utente. Gli utenti con il ruolo di amministratore di SharePoint possono anche gestire i gruppi di Office 365 e aprire le richieste di servizio tramite il supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+Quando si acquista un abbonamento a Microsoft 365, viene creato automaticamente un sito del team e l'amministratore globale è impostato come principale responsabile della raccolta siti. Assegnare al ruolo di amministratore di SharePoint gli utenti a cui si desidera accedere all'interfaccia di amministrazione di SharePoint. Gli utenti con il ruolo di amministratore di SharePoint possono creare e gestire raccolte siti, designare gli amministratori delle raccolte siti e gestire i profili utente. Gli utenti con il ruolo di amministratore di SharePoint possono anche gestire i gruppi Microsoft 365 e aprire le richieste di servizio tramite il supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Amministratore del servizio Teams
 
-Assegnare al ruolo di amministratore dei team gli utenti a cui si desidera accedere e gestire i team & interfaccia di amministrazione di Skype. Gli utenti che dispongono del ruolo di amministratore teams possono gestire anche i gruppi di Office 365 e aprire le richieste di servizio tramite il supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
+Assegnare al ruolo di amministratore dei team gli utenti a cui si desidera accedere e gestire i team & interfaccia di amministrazione di Skype. Gli utenti che dispongono del ruolo di amministratore teams possono gestire anche i gruppi Microsoft 365 e aprire le richieste di servizio tramite il supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Amministratore utenti
 
-Assegnare al ruolo di amministratore utente gli utenti a cui si desidera accedere e gestire la reimpostazione delle password utente e gestire gli utenti e i gruppi di Office 365. È inoltre possibile aprire e gestire le richieste di servizio al supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assegnare al ruolo di amministratore utente gli utenti a cui si desidera accedere e gestire la reimpostazione delle password utente e la gestione di utenti e gruppi. È inoltre possibile aprire e gestire le richieste di servizio al supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ::: moniker range="o365-worldwide"
 

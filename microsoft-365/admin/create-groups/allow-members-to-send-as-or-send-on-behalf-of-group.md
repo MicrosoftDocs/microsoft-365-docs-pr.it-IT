@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: Informazioni su come consentire ai membri di inviare messaggi di posta elettronica come gruppo di Office 365 o di inviare messaggi di posta elettronica per conto di un gruppo di Office 365.
-ms.openlocfilehash: b85b0318587058f1c3eb4d681086ccfcad7f1d8d
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Informazioni su come consentire ai membri di inviare messaggi di posta elettronica come gruppo di Microsoft 365 o di inviare messaggi di posta elettronica per conto di un gruppo di Microsoft 365.
+ms.openlocfilehash: 4492c929fbd30ad77d9ddb23c37299e8734162df
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212106"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630670"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Consenti ai membri di inviare messaggi o Invia per conto di un gruppo
 
-Un membro di un gruppo di Office 365 a cui sono state concesse le autorizzazioni **Invia come** o **Invia per conto** di può inviare messaggi di posta elettronica come gruppo o per conto del gruppo. In questo argomento viene illustrato in che modo un amministratore può impostare queste autorizzazioni.
+Un membro di un gruppo di Microsoft 365 a cui sono state concesse le autorizzazioni **Invia come** o **Invia per conto** di può inviare messaggi di posta elettronica come gruppo o per conto del gruppo. In questo argomento viene illustrato in che modo un amministratore può impostare queste autorizzazioni.
   
-Ad esempio, se Megan Bowen fa parte del gruppo **Training** Office 365 e ha l'autorizzazione **Invia come** per il gruppo, se invia un messaggio di posta elettronica come gruppo, avrà l'aspetto del gruppo di **formazione** inviato al messaggio di posta elettronica. 
+Ad esempio, se Megan Bowen fa parte del gruppo **Training** Microsoft 365 e ha l'autorizzazione **Invia come** per il gruppo, se invia un messaggio di posta elettronica come gruppo, avrà l'aspetto del gruppo di **formazione** inviato al messaggio di posta elettronica. 
   
-L'autorizzazione **Invia per conto** di consente a un utente di inviare messaggi di posta elettronica per conto di un gruppo di Office 365. Ad esempio, se Alex Wilber è parte del gruppo **Marketing** Office 365 e ha l'autorizzazione **Invia per conto** di e invia un messaggio di posta elettronica come gruppo, il messaggio di posta elettronica è simile a quello inviato da **Alex Wilber per conto del marketing**.
+L'autorizzazione **Invia per conto** di consente a un utente di inviare messaggi di posta elettronica per conto di un gruppo di Microsoft 365. Ad esempio, se Alex Wilber è parte del gruppo **Marketing** Microsoft 365 e ha l'autorizzazione **Invia per conto** di e invia un messaggio di posta elettronica come gruppo, il messaggio di posta elettronica è simile a quello inviato da **Alex Wilber per conto del marketing**.
 
 > [!IMPORTANT]
 > È possibile configurare **Invia come** o **Invia per conto** di un utente specificato, ma non di entrambi. Se si configurano entrambi, il valore predefinito sarà **Send As**.
 
 > [!TIP]
-> Vedere [inviare messaggi di posta elettronica da o per conto di un gruppo di Office 365](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) per informazioni su come utilizzare Outlook e Outlook sul Web per inviare messaggi di posta elettronica da un gruppo.
+> Vedere [inviare messaggi di posta elettronica da o per conto di un gruppo di Microsoft 365](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) per informazioni su come utilizzare Outlook e Outlook sul Web per inviare messaggi di posta elettronica da un gruppo.
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Consenti ai membri di inviare messaggi di posta elettronica come gruppo
 
@@ -52,7 +52,7 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
     
 4. Nella sezione **Invia come** selezionare il **+** segno per aggiungere gli utenti che si desidera inviare come gruppo. 
     
-    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo di Office 365](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo Microsoft 365](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Digitare per cercare o selezionare un utente dall'elenco. Fare clic su **OK** e su **Salva**.
     
@@ -70,7 +70,7 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
     
 4. Nella sezione Invia per conto di selezionare il **+** segno per aggiungere gli utenti che si desidera inviare come gruppo. 
     
-    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo di Office 365](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo Microsoft 365](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Digitare per cercare o selezionare un utente dall'elenco. Fare clic su **OK** e su **Salva**.
     
@@ -78,7 +78,7 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Ulteriori informazioni sui gruppi di Office 365](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+[Altre informazioni sui gruppi di Microsoft 365](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
 [Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

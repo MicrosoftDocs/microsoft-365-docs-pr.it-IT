@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Informazioni sui vari Stati del dispositivo nell'elenco delle azioni dei dispositivi in admin Home in Microsoft 365 business.
-ms.openlocfilehash: bed1610814ca0d60adb4b4b3d0018e3e7e6d763f
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Informazioni sui vari Stati del dispositivo nell'elenco delle azioni dei dispositivi in admin Home in Microsoft 365 for business.
+ms.openlocfilehash: 1a66e76dd3a74428923292427b01551db2449e48
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560821"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627247"
 ---
 # <a name="device-states"></a>Stati dei dispositivi
 
@@ -40,9 +40,9 @@ Ai dispositivi inclusi nell'elenco **Azioni dispositivo** (home page di amminist
   
 |**Stato**|**Descrizione**|
 |:-----|:-----|
-|Gestito da Intune  <br/> |Gestito da Microsoft 365 Business.  <br/> |
-|Disattivazione in sospeso  <br/> |Microsoft 365 Business sta predisponendo la rimozione dei dati aziendali dal dispositivo.  <br/> |
-|Disattivazione in corso  <br/> |Microsoft 365 Business sta attualmente rimuovendo i dati aziendali dal dispositivo.  <br/> |
+|Gestito da Intune  <br/> |Gestito da Microsoft 365 Business Premium.  <br/> |
+|Disattivazione in sospeso  <br/> |Microsoft 365 Business Premium si prepara a rimuovere i dati aziendali dal dispositivo.  <br/> |
+|Disattivazione in corso  <br/> |Microsoft 365 Business Premium è attualmente in fase di rimozione dei dati aziendali dal dispositivo.  <br/> |
 |Disattivazione non riuscita  <br/> | L'azione di rimozione dei dati aziendali non è riuscita.  <br/> |
 |Ritiro annullato  <br/> |L'azione ritirata è stata annullata.  <br/> |
 |Cancellazione dei dati in sospeso  <br/> |In attesa dell'avvio del ripristino delle impostazioni predefinite.  <br/> |
@@ -51,5 +51,5 @@ Ai dispositivi inclusi nell'elenco **Azioni dispositivo** (home page di amminist
 |Cancellazione annullata  <br/> |Il wipe di fabbrica è stato annullato.  <br/> |
 |Non integro  <br/> |Un'azione è in sospeso (o in corso), ma il dispositivo non è stato archiviato per 30 + giorni.  <br/> |
 |Eliminazione in sospeso  <br/> |L'azione di eliminazione è in sospeso.  <br/> |
-|Rilevato  <br/> |Microsoft 365 Business ha rilevato il dispositivo.  <br/> |
+|Rilevato  <br/> |Microsoft 365 Business Premium ha rilevato il dispositivo.  <br/> |
    

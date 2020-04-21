@@ -1,5 +1,5 @@
 ---
-title: Determinare l'abbonamento a Office 365 per le aziende in uso
+title: Qual è l'abbonamento corrente?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Informazioni su come verificare gli abbonamenti che l'organizzazione deve passare alla pagina abbonamenti.
 ms.custom: okr_SMB
-ms.openlocfilehash: dad08784a775e590972d1f5dd554aeb2d147c28b
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409501"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621431"
 ---
-# <a name="what-subscription-do-i-have"></a>Qual è l’abbonamento corrente?
+# <a name="what-subscription-do-i-have"></a>Qual è l'abbonamento corrente?
 
 Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organizzazione accedendo all'interfaccia di amministrazione.
   
- **Se non si è un amministratore** Vedere [Qual è il prodotto commerciale o la licenza di Office 365?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **Se non si è un amministratore** Per informazioni sul [prodotto o sulla licenza di Microsoft 365 for business?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
 
 ::: moniker range="o365-worldwide"
 
@@ -48,9 +48,9 @@ Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organ
   
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.  
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.  
 
-2. Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato. Lo screenshot seguente mostra un abbonamento a Office 365 Business.
+2. Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato. Nello screenshot seguente, è possibile vedere che ho un abbonamento a Microsoft 365 Apps for business.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
@@ -67,9 +67,9 @@ Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organ
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.  
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.  
 
-2. Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato. Lo screenshot seguente mostra un abbonamento a Office 365 Business.
+2. Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato. Nello screenshot seguente, è possibile vedere che ho un abbonamento a Microsoft 365 Apps for business.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   

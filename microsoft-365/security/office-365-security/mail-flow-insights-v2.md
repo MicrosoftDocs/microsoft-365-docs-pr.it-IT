@@ -11,16 +11,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sul dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 64bf1f2af967f841cd4c21be19fce914df136815
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081437"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630468"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 
-Gli amministratori possono utilizzare il dashboard del flusso di posta elettronica nel centro sicurezza & Compliance per individuare le tendenze, le intuizioni e intraprendere azioni che consentono di risolvere i problemi relativi al flusso di posta nella propria organizzazione di Office 365.
+Gli amministratori possono utilizzare il dashboard del flusso di posta elettronica nel centro sicurezza & Compliance per individuare le tendenze, le intuizioni e intraprendere azioni che consentono di risolvere i problemi relativi al flusso di posta nella propria organizzazione.
 
 Gli Insight, i report e i widget disponibili nel dashboard del flusso di posta sono i seguenti:
 
@@ -50,9 +50,9 @@ Gli Insight, i report e i widget disponibili nel dashboard del flusso di posta s
 
 Il dashboard del flusso di posta è disponibile per:
 
-- Membri del ruolo di **amministratore globale di Office 365** .
+- Membri del ruolo di **amministratore globale** .
 
-- Membri del ruolo di **amministratore di Exchange di Office 365** .
+- Membri del ruolo di **amministratore di Exchange** .
 
 - Membri del **ruolo di amministratore del flusso di posta** nel centro sicurezza & Compliance. Se questo ruolo viene assegnato in modo esplicito a un utente che non è un membro dell'amministratore globale o dei ruoli di amministratore di Exchange:
 
@@ -60,11 +60,11 @@ Il dashboard del flusso di posta è disponibile per:
 
   - L'utente avrà solo l'autorizzazione di sola lettura per il dashboard del flusso di posta.
 
-  - L'utente non potrà accedere al portale di amministrazione di Office 365.
+  - L'utente non avrà accesso all'interfaccia di amministrazione di Microsoft 365.
 
-Per ulteriori informazioni sul ruolo amministratore globale di Office 365, vedere [informazioni sui ruoli di amministratore di office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Per ulteriori informazioni sul ruolo amministratore globale, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Per informazioni sull'assegnazione di ruoli Centro sicurezza & conformità agli utenti, vedere [Give users access to the Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+Per informazioni sull'assegnazione di ruoli Centro sicurezza & conformità agli utenti, vedere [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dove trovare il dashboard del flusso di posta
 
@@ -72,4 +72,4 @@ Per informazioni sull'assegnazione di ruoli Centro sicurezza & conformità agli 
 
 2. Espande il **flusso di posta** e quindi seleziona **Dashboard**.
 
-   ![Dashboard del flusso di posta elettronica nel centro sicurezza & conformità di Office 365](../../media/mail-flow-dashboard-v2.png)
+   ![Dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/mail-flow-dashboard-v2.png)

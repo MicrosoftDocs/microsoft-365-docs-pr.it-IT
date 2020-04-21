@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Informazioni su come rimuovere le licenze dagli account utente.
-ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400933"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628101"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 
@@ -122,7 +122,7 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 4. Nel riquadro **Sostituisci prodotti esistenti** selezionare **Sostituisci assegnazioni licenze di prodotto esistenti** \> **Avanti**.
 
-5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **** \> Chiudi **Chiudi**.
+5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **Close** \> Chiudi **Chiudi**.
 
 ::: moniker-end
 
@@ -136,13 +136,13 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 4. Nel riquadro **Sostituisci prodotti esistenti** selezionare **Sostituisci assegnazioni licenze di prodotto esistenti** \> **Avanti**.
 
-5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **** \> Chiudi **Chiudi**.
+5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **Close** \> Chiudi **Chiudi**.
 
 ::: moniker-end
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>Cosa è necessario sapere sull'annullamento dell'assegnazione delle licenze per gli utenti
 
-- È necessario essere un amministratore globale, un amministratore di fatturazione, un amministratore delle licenze o un amministratore di gestione degli utenti. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Office 365](../add-users/about-admin-roles.md).
+- È necessario essere un amministratore globale, un amministratore di fatturazione, un amministratore della licenza o un amministratore di gestione utenti. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](../add-users/about-admin-roles.md).
 
 - È possibile [rimuovere licenze da account utente con PowerShell di Office 365](https://go.microsoft.com/fwlink/p/?linkid=848428).
 
@@ -152,17 +152,17 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 - Si noti che i file salvati in OneDrive for business non vengono eliminati, a meno che l'utente non venga eliminato dall'interfaccia di amministrazione di Microsoft 365 o venga rimosso tramite la sincronizzazione di Active Directory. Per ulteriori informazioni, vedere [OneDrive retention and Deletion](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- Inoltre, la cassetta postale dell'utente non è più disponibile per la ricerca tramite uno strumento di eDiscovery, ad esempio la ricerca di contenuto o la eDiscovery avanzata quando la licenza è stata rimossa. Per ulteriori informazioni, vedere la sezione relativa alla ricerca di cassette postali disconnesse o deautorizzate in [Ricerca contenuto in Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Inoltre, la cassetta postale dell'utente non è più disponibile per la ricerca tramite uno strumento di eDiscovery, ad esempio la ricerca di contenuto o la eDiscovery avanzata quando la licenza è stata rimossa. Per ulteriori informazioni, vedere la sezione relativa alla ricerca di cassette postali disconnesse o deautorizzate in [Ricerca contenuto in Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
 - Se si dispone di un abbonamento Enterprise, ad esempio Office 365 Enterprise E3, Exchange Online consente di mantenere i dati della cassetta postale di un account utente eliminato utilizzando le [cassette postali inattive](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). Per ulteriori informazioni, vedere [creare e gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
 
-- Per informazioni su come bloccare l'accesso di un utente ai dati di Office 365 dopo che la licenza è stata rimossa e come ottenere l'accesso ai dati successivamente, vedere [Remove a Former Employee](../add-users/remove-former-employee.md).
+- Per informazioni su come bloccare l'accesso di un utente ai dati di Microsoft 365 dopo che la licenza è stata rimossa e come ottenere l'accesso ai dati successivamente, vedere [Remove a Former Employee](../add-users/remove-former-employee.md).
 
 - Se si rimuove la licenza di un utente ed è ancora installato Office, vengono visualizzate le [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) quando utilizzano Office.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Informazioni su abbonamenti e licenze di Office 365 per le aziende](../../commerce/licenses/subscriptions-and-licenses.md)
+[Informazioni su abbonamenti e licenze in Microsoft 365 for business](../../commerce/licenses/subscriptions-and-licenses.md)
 
 [Rimuovere licenze dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md)
 

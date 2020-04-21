@@ -1,5 +1,5 @@
 ---
-title: Scegliere il dominio da usare durante la creazione di Gruppi di Office 365
+title: Scegliere il dominio da utilizzare per la creazione dei gruppi di Microsoft 365
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: 'Informazioni su come scegliere il dominio da utilizzare per la creazione di gruppi di Office 365 mediante la configurazione dei criteri degli indirizzi di posta elettronica tramite PowerShell. '
-ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 'Informazioni su come scegliere il dominio da utilizzare per la creazione di gruppi di Microsoft 365 configurando i criteri degli indirizzi di posta elettronica tramite PowerShell. '
+ms.openlocfilehash: 1bc8a160ffc368bc4c66a5ac17ffcb203dc678f5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894646"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630624"
 ---
-# <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>Scegliere il dominio da usare durante la creazione di Gruppi di Office 365
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Scegliere il dominio da utilizzare per la creazione dei gruppi di Microsoft 365
 
- Alcune organizzazioni usano domini di posta elettronica separati per segmentare le diverse parti dell'azienda. È possibile specificare il dominio da usare quando gli utenti creano i gruppi di Office 365.
+ Alcune organizzazioni usano domini di posta elettronica separati per segmentare le diverse parti dell'azienda. È possibile specificare il dominio da usare quando gli utenti creano gruppi di Microsoft 365.
   
 Se l'organizzazione richiede agli utenti di creare i propri gruppi in domini diversi dal dominio accettato predefinito per la propria azienda, è possibile configurarli tramite la configurazione dei criteri degli indirizzi di posta elettronica (criteri EAP) tramite PowerShell.
   
-Prima di poter eseguire i cmdlet di PowerShell, scaricare e installare un modulo che consentirà di parlare con l'organizzazione di Office 365. Vedere [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
+Prima di poter eseguire i cmdlet di PowerShell, scaricare e installare un modulo che consentirà di parlare con l'organizzazione. Vedere [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
   
 ## <a name="example-scenarios"></a>Scenari di esempio
 
@@ -51,7 +51,7 @@ I due scenari seguenti illustrano come eseguire questa operazione.
   
 ### <a name="scenario-1"></a>Scenario 1
 
-L'esempio seguente illustra come effettuare il provisioning di tutti i gruppi di Office 365 nell'organizzazione nel dominio groups.contoso.com.
+Nell'esempio seguente viene illustrato come eseguire il provisioning di tutti i gruppi di Microsoft 365 nell'organizzazione nel dominio groups.contoso.com.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -59,7 +59,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Scenario 2
 
-Si supponga di voler controllare quali domini secondari vengono creati in gruppi di Office 365. Si vuole che:
+Si supponga di voler controllare quali gruppi di sottodomini vengono creati in Microsoft 365. Si vuole che:
   
 - Gruppi creati dagli studenti (gli utenti che hanno un **reparto** impostato su **studenti**) nel dominio students.groups.contoso.com. Utilizzare questo comando:
     
@@ -102,7 +102,7 @@ La modifica di un criterio EAP non influisce sui gruppi di cui è già stato ese
   
 ## <a name="hybrid-requirements"></a>Requisiti ibridi
 
-Se l'organizzazione è configurata in uno scenario ibrido, vedere [Configurare i gruppi di Office 365 con una distribuzione ibrida di Exchange locale](https://go.microsoft.com/fwlink/p/?LinkId=785430) per assicurarsi che l'organizzazione soddisfi i requisiti per la creazione di gruppi di Office 365. 
+Se l'organizzazione è configurata in uno scenario ibrido, vedere [Configure microsoft 365 groups with on-premises Exchange Hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) per assicurarsi che l'organizzazione soddisfi i requisiti per la creazione di gruppi di Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Ulteriori informazioni sull'utilizzo dei gruppi di criteri degli indirizzi di posta elettronica:
 
@@ -122,4 +122,4 @@ Sono disponibili alcune altre informazioni:
     
 ## <a name="related-articles"></a>Articoli correlati
 
-[Creare un gruppo di Office 365 nell'interfaccia di amministrazione](create-groups.md)
+[Creare un gruppo di Microsoft 365 nell'interfaccia di amministrazione](create-groups.md)

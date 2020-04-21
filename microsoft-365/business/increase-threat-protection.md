@@ -1,5 +1,5 @@
 ---
-title: Aumentare la protezione dalle minacce per Microsoft 365 business
+title: Aumentare la protezione dalle minacce per Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,18 +21,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili da tentativi di phishing, malware e altre minacce.
-ms.openlocfilehash: 17425de3f6e0022945899a559cf88575b6315a56
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 2dd75b20bf203b9b8f0cdefb2459c45d1d0ccec1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561611"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627127"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
 In questo articolo vengono fornite informazioni utili per aumentare la protezione dell'abbonamento a Microsoft 365 per proteggersi da tentativi di phishing, malware e altre minacce. Tali raccomandazioni sono appropriate per le organizzazioni con un maggiore bisogno di sicurezza, come gli uffici legali e le cliniche sanitarie.
 
-Prima di iniziare, controllare il Punteggio di Office 365 Secure score. Office 365 Secure Score analizza la sicurezza dell'organizzazione di Office 365 in base alle normali attività e alle impostazioni di sicurezza e assegna un punteggio. Iniziare prendendo nota del punteggio corrente. Per aumentare il punteggio, completare le azioni consigliate in questo articolo. L'obiettivo non è quello di raggiungere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente che non influiscono negativamente sulla produttività per gli utenti. 
+Prima di iniziare, controllare il Punteggio di Office 365 Secure score. Office 365 Secure Score analizza la sicurezza dell'organizzazione in base alle normali attività e alle impostazioni di sicurezza e assegna un punteggio. Iniziare prendendo nota del punteggio corrente. Per aumentare il punteggio, completare le azioni consigliate in questo articolo. L'obiettivo non è quello di raggiungere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente che non influiscono negativamente sulla produttività per gli utenti. 
 
 Per ulteriori informazioni, vedere [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -42,13 +42,13 @@ L'ambiente Office 365 o Microsoft 365 include la protezione da malware. È possi
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali dell'account di amministratore. 
     
-2. Nel centro &amp; sicurezza e conformità di Office 365, nel riquadro di spostamento a sinistra, in **gestione delle minacce**, scegliere **** \> **anti-malware**.
+2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri** \> **antimalware**in **gestione minacce**.
     
 3. Fare doppio clic sul criterio predefinito per modificare il criterio a livello di società.
     
 4. Selezionare **Impostazioni**.
     
-5. In **filtro tipi di allegati comuni**selezionare **** attivato. I tipi di file bloccati sono elencati nella finestra direttamente sotto questo controllo. Assicurarsi di aggiungere questi tipi di file:
+5. In **filtro tipi di allegati comuni**selezionare **On**attivato. I tipi di file bloccati sono elencati nella finestra direttamente sotto questo controllo. Assicurarsi di aggiungere questi tipi di file:
    - Ade, ADP, Ani, Bas, bat, chm, cmd, com, cpl, CRT, HLP, HT, HTA, inf, ins, ISP, job, js, JSE, lnk, MDA, mdb, MDE, MDZ, MSC, MSI, msp, MST (PCD), reg, SCR, SCT, SHS, URL, VB, VBE, vbs, WSC, wsf, WSH, exe, PIF  <br/> 
    
    Se necessario, è possibile aggiungere o eliminare i tipi di file in un secondo momento.
@@ -57,7 +57,7 @@ L'ambiente Office 365 o Microsoft 365 include la protezione da malware. È possi
     
 Per ulteriori informazioni, vedere [anti-malware Protection](https://go.microsoft.com/fwlink/?linkid=2015692&amp;clcid=0x409).
   
-## <a name="protect-against-ransomware"></a>Protezione da ransomware
+## <a name="protect-against-ransomware"></a>Proteggere l'ambiente da ransomware
 
 Ransomware limita l'accesso ai dati crittografando i file o bloccando gli schermi del computer. Tenta quindi di estorcere denaro dalle vittime chiedendo "riscatto", di solito in forma di cryptocurrencies come Bitcoin, in Exchange per l'accesso ai dati. 
   
@@ -130,7 +130,7 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
   
 1. Passare a [https://protection.office.com](https://protection.office.com). 
     
-2. Nel riquadro di spostamento a &amp; sinistra del Centro sicurezza e conformità di Office 365 fare clic su **criteri**in **gestione minacce**.
+2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri**in **gestione minacce**.
     
 3. Nella pagina **criterio** scegliere **ATP anti-phishing**.
     
@@ -145,12 +145,12 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
 |:-----|:-----|
 |Nome  <br/> |Domain e la maggior parte del personale prezioso della campagna  <br/> |
 |Descrizione  <br/> |Garantire che la maggior parte del personale importante e del nostro dominio non siano rappresentati.  <br/> |
-|Aggiungere gli utenti a Protect  <br/> |Seleziona **+ Aggiungi una condizione, il destinatario è**. Digitare i nomi utente oppure immettere l'indirizzo di posta elettronica del candidato, del responsabile della campagna e di altri membri del personale importanti. È possibile aggiungere fino a 20 indirizzi interni ed esterni che si desidera proteggere dalla rappresentazione.  <br/> |
-|Aggiungere domini da proteggere  <br/> |Selezionare **+ Aggiungi una condizione, il dominio del destinatario è**. Se ne è stata definita una, immettere il dominio personalizzato associato all'abbonamento a Microsoft 365. È possibile immettere più di un dominio.  <br/> |
-|Scegliere azioni  <br/> |Se la posta elettronica viene inviata da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica**e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza. ad esempio, *Alice<span><span>@contoso. com*. Se il messaggio di posta elettronica viene inviato da un dominio rappresentato: scegliere **Quarantine Message**.  <br/> |
-|Intelligence delle cassette postali  <br/> |Per impostazione predefinita, la funzionalità di intelligence delle cassette postali viene selezionata quando si crea un nuovo criterio anti-phishing. Lasciare **questa impostazione per** ottenere risultati ottimali.  <br/> |
+|Aggiungere gli utenti da proteggere  <br/> |Seleziona **+ Aggiungi una condizione, il destinatario è**. Digitare i nomi utente oppure immettere l'indirizzo di posta elettronica del candidato, del responsabile della campagna e di altri membri del personale importanti. È possibile aggiungere fino a 20 indirizzi interni ed esterni che si desidera proteggere dalla rappresentazione.  <br/> |
+|Aggiungere i domini da proteggere  <br/> |Selezionare **+ Aggiungi una condizione, il dominio del destinatario è**. Se ne è stata definita una, immettere il dominio personalizzato associato all'abbonamento a Microsoft 365. È possibile immettere più di un dominio.  <br/> |
+|Scegli azioni  <br/> |Se la posta elettronica viene inviata da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica**e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza. ad esempio, *Alice<span><span>@contoso. com*. Se i messaggi di posta elettronica vengono inviati da un dominio imitato: scegliere di mettere il **messaggio in quarantena**.  <br/> |
+|Intelligence della cassetta postale  <br/> |Per impostazione predefinita, la funzione di intelligence della cassetta postale è selezionata quando si creano nuovi criteri anti-phishing. Per ottenere risultati ottimali, lasciare l’opzione **attiva**.  <br/> |
 |Aggiungere mittenti e domini attendibili  <br/> |Qui è possibile aggiungere il proprio dominio o altri domini attendibili.  <br/> |
-|Applicato a  <br/> |Selezionare **il dominio del destinatario**. In **uno di questi**, seleziona **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso.<span> com <span>*, nell'elenco, quindi selezionare **Aggiungi**. Scegliere **Fine**.  <br/> |
+|Applicato a  <br/> |Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso.<span> com <span>*, nell'elenco, quindi selezionare **Aggiungi**. Scegliere **Fine**.  <br/> |
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Protezione da allegati e file dannosi con gli allegati sicuri di ATP
 
@@ -160,7 +160,7 @@ Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve vide
   
 1. Passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account di amministratore. 
     
-2. Nel riquadro di spostamento a &amp; sinistra del Centro sicurezza e conformità di Office 365 fare clic su **criteri**in **gestione minacce**.
+2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri**in **gestione minacce**.
     
 3. Nella pagina criterio, scegliere **allegati sicuri ATP**.
     
@@ -183,8 +183,6 @@ Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve vide
    
 Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
-
-
 ## <a name="protect-against-phishing-attacks-with-atp-safe-links"></a>Protezione da attacchi di phishing con collegamenti sicuri di ATP
 
 A volte gli hacker nascondono siti Web dannosi nei collegamenti nei messaggi di posta elettronica o in altri file. Office 365 ATP Safe Links (ATP Safe Links), parte di Office 365 Advanced Threat Protection, può aiutare a proteggere l'organizzazione fornendo la verifica del tempo di clic degli indirizzi Web (URL) nei messaggi di posta elettronica e nei documenti di Office. La protezione è definita tramite i criteri collegamenti sicuri di ATP.
@@ -199,7 +197,7 @@ Per configurare i collegamenti sicuri di ATP, guardare [questo breve video di fo
   
 1. Passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account di amministratore. 
     
-2. Nel riquadro di spostamento a &amp; sinistra del Centro sicurezza e conformità di Office 365 fare clic su **criteri**in **gestione minacce**.
+2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri**in **gestione minacce**.
     
 3. Nella pagina criterio, scegliere **collegamenti sicuri ATP**.
     
@@ -207,7 +205,7 @@ Per modificare il criterio predefinito:
   
 1. Nella pagina collegamenti sicuri, in **criteri che si applicano all'intera organizzazione**, selezionare il criterio **predefinito** . 
     
-2. In **impostazioni che si applicano al contenuto tranne che alla posta elettronica**, selezionare **Office 365 ProPlus, Office per iOS e Android**.
+2. In **impostazioni che si applicano al contenuto tranne che alla posta elettronica**, selezionare **Microsoft 365 Apps for Enterprise, Office per iOS e Android**.
     
 3. Selezionare **Salva**. 
     

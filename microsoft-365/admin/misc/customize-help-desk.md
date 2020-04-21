@@ -1,5 +1,5 @@
 ---
-title: Aggiungere informazioni di help desk personalizzate al riquadro della Guida di Office 365
+title: Aggiungere informazioni di help desk personalizzate al riquadro della Guida
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -20,27 +20,27 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: Creare una scheda dell'help desk personalizzata nell'interfaccia di amministrazione e aggiungere informazioni di contatto del supporto personalizzate al riquadro della guida.
-ms.openlocfilehash: af1000be1f8b26e79097f8b686aafc37da6e9366
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244106"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627897"
 ---
-# <a name="add-customized-help-desk-info-to-the-office-365-help-pane"></a>Aggiungere informazioni di help desk personalizzate al riquadro della Guida di Office 365
+# <a name="add-customized-help-desk-info-to-the-help-pane"></a>Aggiungere informazioni di help desk personalizzate al riquadro della Guida
 
 In qualità di amministratore, è possibile semplificare il supporto utente aggiungendo informazioni di contatto personalizzate al riquadro della guida. Gli utenti che hanno bisogno di assistenza saranno in grado di accedere alle informazioni di contatto del supporto personalizzato dell'organizzazione con l'icona della guida.
   
-Per creare una scheda dell'help desk personalizzata, è necessario essere un amministratore globale di Office 365 e avere una licenza per Exchange Online. Informazioni su come [assegnare licenze in Office 365 per le aziende](../manage/assign-licenses-to-users.md).
+Per creare una scheda dell'help desk personalizzata, è necessario essere un amministratore globale per Microsoft 365 e avere una licenza per Exchange Online. Informazioni su come [assegnare le licenze in Microsoft 365 for business](../manage/assign-licenses-to-users.md).
 
 > [!NOTE]
-> Se si è un amministratore che cerca supporto tecnico o di fatturazione da Microsoft, vedere [contattare il supporto di Office 365 for business](../contact-support-for-business-products.md). 
+> Se si è un amministratore che cerca supporto tecnico o di fatturazione da Microsoft, vedere [contattare il supporto di microsoft 365 for business](../contact-support-for-business-products.md). 
 
   
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>Creare una scheda dell'help desk personalizzata nell'interfaccia di amministrazione
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. Nell'interfaccia di amministrazione, accedere **alle impostazioni e scegliere la** > **** scheda **informazioni di help desk** .
+1. Nell'interfaccia di amministrazione, accedere **alle impostazioni e scegliere la** > **Settings** scheda **informazioni di help desk** .
     
 2. Nella scheda **profilo organizzazione** , scegliere **tessere di avvio delle app personalizzate**.
   

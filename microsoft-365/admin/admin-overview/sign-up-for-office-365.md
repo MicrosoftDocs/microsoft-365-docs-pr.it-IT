@@ -1,5 +1,5 @@
 ---
-title: Come iscriversi a Office 365 - Guida dell'amministratore
+title: Come iscriversi-Guida per gli amministratori
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,20 +26,20 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Informazioni su ciò che è necessario conoscere prima di passare attraverso il processo di iscrizione per Office 365. '
-ms.openlocfilehash: bd827a4cc57386127083111b0df556786d01f2cc
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 45f7603df814e2088506929d309266ef19ffc7ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352957"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623895"
 ---
-# <a name="how-to-sign-up-for-office-365---admin-help"></a>Come iscriversi a Office 365 - Guida dell'amministratore
+# <a name="how-to-sign-up---admin-help"></a>Come iscriversi-Guida per gli amministratori
 
 ::: moniker range="o365-worldwide"
 
-Iscriversi a Office 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office nella propria azienda.
+Iscriversi a Microsoft 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office nella propria azienda.
   
-Guardare una breve panoramica dei tre piani di Office 365 per le aziende oppure scorrere verso il basso per altre info.
+Guardare una breve panoramica dei tre piani di Microsoft 365 for business o scorrere verso il basso per altre info.
 <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
@@ -48,7 +48,7 @@ Guardare una breve panoramica dei tre piani di Office 365 per le aziende oppure 
 
 ::: moniker range="o365-germany"
 
-Iscriversi a Office 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office nella propria azienda.
+Iscriversi a Microsoft 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office nella propria azienda.
   
 Guarda una breve panoramica dei tre piani migliori per la tua azienda. o scorri verso il basso per altre info.
 <br><br>
@@ -59,7 +59,7 @@ Guarda una breve panoramica dei tre piani migliori per la tua azienda. o scorri 
 
 ::: moniker range="o365-21vianet"
 
-Office 365 gestito da 21Vianet è stato ideato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina. Il servizio è dotato di una tecnologia che Microsoft ha concesso in licenza a 21Vianet. Microsoft non utilizza il servizio stesso. 21Vianet opera, fornisce e gestisce il recapito del servizio. 21Vianet è il principale provider di servizi Internet Data Center neutro per i vettori in Cina, che fornisce hosting, servizi di rete gestiti e servizi di infrastruttura cloud computing. Tramite la gestione delle licenze Microsoft Technologies, 21Vianet gestisce i datacenter di Office 365 locali per offrire la possibilità di usare i servizi di Office 365 mantenendo i dati in Cina. 21Vianet fornisce anche i servizi di sottoscrizione e fatturazione, nonché il supporto.
+Office 365 gestito da 21Vianet è stato ideato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina. Il servizio è dotato di una tecnologia che Microsoft ha concesso in licenza a 21Vianet. Microsoft non utilizza il servizio stesso. 21Vianet opera, fornisce e gestisce il recapito del servizio. 21Vianet è il principale provider di servizi Internet Data Center neutro per i vettori in Cina, che fornisce hosting, servizi di rete gestiti e servizi di infrastruttura cloud computing. Tramite la gestione delle licenze Microsoft Technologies, 21Vianet gestisce i datacenter Microsoft locali per offrire la possibilità di utilizzare i servizi Microsoft mantenendo i dati in Cina. 21Vianet fornisce anche i servizi di sottoscrizione e fatturazione, nonché il supporto.
   
 > [!NOTE]
 > Questi servizi sono soggetti alle leggi vigenti in Cina.
@@ -75,7 +75,7 @@ Pronto per l'iscrizione? [Selezionare un piano](https://products.office.com/zh-c
 
 Prima di acquistare, inserire alcuni pensieri nel piano di iscrizione. Si eviteranno problemi in futuro.
 
-Guarda un breve video sulla scelta di un piano aziendale di Office 365.<br><br>
+Guarda un breve video sulla scelta di un piano Microsoft 365 for business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -129,9 +129,9 @@ Non è necessario annullare la versione di valutazione. Se non si acquista la so
   - **Indirizzo di posta elettronica** e **numero di telefono** per poter essere contattati in merito all'abbonamento, se necessario. Se ad esempio si dimentica la password, Microsoft può usare queste informazioni per inviarne una temporanea. Inoltre, le informazioni sulla fatturazione vengono inviate all'indirizzo specificato.
 
     > [!NOTE]
-    > L'indirizzo di posta elettronica immesso qui è diverso da quello di Office 365 (il nome di accesso, di seguito). Poiché a questo indirizzo vengono inviate anche le informazioni sulla fatturazione, è consigliabile usare un indirizzo appropriato per la ricezione di posta elettronica aziendale.
+    > L'indirizzo di posta elettronica immesso qui è diverso dall'indirizzo di posta elettronica Microsoft 365 (il nome di accesso, in basso). Poiché a questo indirizzo vengono inviate anche le informazioni sulla fatturazione, è consigliabile usare un indirizzo appropriato per la ricezione di posta elettronica aziendale.
   
-- **Un nome di accesso (ID utente):** Questo diventa l'indirizzo di posta elettronica di Office 365 iniziale, solo per iniziare rapidamente.
+- **Un nome di accesso (ID utente):** Questo diventa l'indirizzo di posta elettronica Microsoft 365 iniziale, solo per iniziare rapidamente.
 
     Questo è l'indirizzo di posta elettronica utilizzato per l'accesso. Ad esempio, se il nome dell'azienda è Fourth Coffee, è possibile scegliere roberto@fourthcoffee.onmicrosoft.com come ID utente.
 
@@ -146,4 +146,4 @@ Non è necessario annullare la versione di valutazione. Se non si acquista la so
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

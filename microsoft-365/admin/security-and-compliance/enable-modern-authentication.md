@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Informazioni su come impostare le chiavi del registro di sistema per abilitare l'autenticazione moderna per i dispositivi che dispongono di Microsoft Office 2013 installato.
-ms.openlocfilehash: f1264affa5be93b19e564a0edea00bfb78f452f1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8dec8174d5f39d8fecd6b2a7340d69dbcd421357
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244046"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627729"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Abilitare l'autenticazione moderna per Office 2013 nei dispositivi Windows
 
@@ -39,10 +39,10 @@ Per abilitare l'autenticazione moderna per tutti i dispositivi che eseguono Wind
   
 |**Chiave del Registro di sistema**|**Tipo**|**Valore** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
    
-Dopo aver impostato le chiavi del Registro di sistema, è possibile impostare le app per i dispositivi di Office 2013 in modo da usare l'[autenticazione a più fattori](set-up-multi-factor-authentication.md) con Office 365 
+Dopo aver impostato le chiavi del registro di sistema, è possibile impostare le app per i dispositivi di Office 2013 per l'utilizzo dell'autenticazione a più [fattori (AMF)](set-up-multi-factor-authentication.md) con Microsoft 365. 
   
 Se si è attualmente connessi con una delle app client, è necessario disconnettersi e accedere di nuovo per rendere effettive le modifiche. In caso contrario, le impostazioni MRU e di roaming non saranno disponibili finché non viene stabilita l'identità ADAL.
   

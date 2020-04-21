@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8b5cb7d8d8b16fea1c1bef44e477dfd43a79a3d8
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: a91488b9bfa126b1419af7697c0ae8510ddbc149
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081324"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625267"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -67,9 +67,9 @@ Nel diagramma seguente viene fornito un esempio di assegnazione degli utenti ed 
 
 Nella figura "il team del progetto Top Secret X" viene assegnato un criterio di accesso condizionale che richiede *sempre*l'autenticazione master. Essere giudiziosi quando si applicano livelli di protezione superiori agli utenti. I membri del team di progetto saranno tenuti a fornire due forme di autenticazione ogni volta che accedono, anche se non visualizzano contenuto fortemente regolamentato.  
 
-Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati come gruppi di Office 365. Questa impostazione è particolarmente importante per la distribuzione di Azure Information Protection (AIP) quando si proteggono i documenti in SharePoint Online.
+Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati come gruppi di Microsoft 365. Questa impostazione è particolarmente importante per la distribuzione di Azure Information Protection (AIP) quando si proteggono i documenti in SharePoint Online.
 
-![Acquisizione dello schermo per la creazione di gruppi di Office 365](../media/identity-device-AAD-groups.png)
+![Acquisizione dello schermo per la creazione di gruppi di Microsoft 365](../media/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Richiedere l'autenticazione a più fattori basata sul rischio di accesso
@@ -95,7 +95,7 @@ Per creare nuovi criteri di accesso condizionale:
 |:---|:---------|:-----|:----|
 |Utenti e gruppi|Includi|Seleziona utenti e gruppi - Selezionare il gruppo di sicurezza specifico in cui sono contenuti gli utenti di destinazione|Iniziare con il gruppo di sicurezza che include utenti pilota|
 ||Exclude|Exception security group; service accounts (app identities) (Gruppo di sicurezza eccezione account del servizio (identità applicazione)|Appartenenza modificata su base temporanea necessaria|
-|App cloud|Includi|Selezionare le app a cui si desidera applicare la regola. Ad esempio, selezionare Office 365 Exchange Online||
+|App cloud|Includi|Selezionare le app a cui si desidera applicare la regola. Ad esempio, selezionare Exchange Online||
 |Condizioni|Configurata|Sì|Configurare in base all'ambiente e alle necessità specifici|
 |Rischio di accesso|Livello di rischio||Vedere le istruzioni riportate nella tabella seguente|
 
@@ -113,10 +113,10 @@ Applicare le impostazioni in base al livello di protezione che si desidera asseg
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Concessione|Concedi accesso|True|Opzione selezionata|
+|Concessione|Concedi accesso|Vero|Opzione selezionata|
 ||Richiedi MFA|True|Check|
-||Richiede che il dispositivo venga contrassegnato come conforme|False||
-||Richiedere un dispositivo ibrido di Azure AD-join|False||
+||Richiede che il dispositivo venga contrassegnato come conforme|Falso||
+||Richiedere un dispositivo ibrido di Azure AD-join|Falso||
 ||Richiedi app client approvata|False||
 ||Richiedi tutti i controlli selezionati|True|Opzione selezionata|
 
@@ -142,7 +142,7 @@ Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso 
 |:---|:---------|:-----|:----|
 |Utenti e gruppi|Includi|Seleziona utenti e gruppi - Selezionare il gruppo di sicurezza specifico in cui sono contenuti gli utenti di destinazione|Iniziare con il gruppo di sicurezza che include utenti pilota|
 ||Exclude|Exception security group; service accounts (app identities) (Gruppo di sicurezza eccezione account del servizio (identità applicazione)|Appartenenza modificata su base temporanea a seconda delle necessità|
-|App cloud|Includi|Selezionare le app a cui si desidera applicare la regola. Ad esempio, selezionare Office 365 Exchange Online||
+|App cloud|Includi|Selezionare le app a cui si desidera applicare la regola. Ad esempio, selezionare Exchange Online||
 |Condizioni|Configurata|Sì|Configurare le app client|
 |App client|Configurata|Sì|App per dispositivi mobili e client desktop, altri client (seleziona entrambi)|
 
@@ -150,10 +150,10 @@ Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso 
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Concessione|Blocca accesso|True|Opzione selezionata|
-||Richiedi MFA|False||
-||Richiede che il dispositivo venga contrassegnato come conforme|False||
-||Richiedere un dispositivo ibrido di Azure AD-join|False||
+|Concessione|Blocca accesso|Vero|Opzione selezionata|
+||Richiedi MFA|Falso||
+||Richiede che il dispositivo venga contrassegnato come conforme|Falso||
+||Richiedere un dispositivo ibrido di Azure AD-join|Falso||
 ||Richiedi app client approvata|False||
 ||Richiedi tutti i controlli selezionati|True|Opzione selezionata|
 
@@ -179,7 +179,7 @@ Accedere al [portale di Microsoft Azure (https://portal.azure.com)](https://port
 
 | Tipo | Proprietà | Valori                  | Note |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | Consenti l'accesso            | True  |
+|      | Access     | Consenti l'accesso            | Vero  |
 |      | Accesso     | Richiedi modifica password | True  |
 
 **Revisione:** non applicabile
@@ -215,7 +215,7 @@ Per applicare i criteri di protezione delle APP applicati in Intune, è necessar
 
 L'applicazione dei criteri di protezione delle APP richiede un insieme di criteri descritti in in [Richiedi criteri di protezione delle app per l'accesso alle app cloud con accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access). Questi criteri sono inclusi in questo set consigliato di criteri di configurazione di identità e accesso.
 
-Per creare la regola di accesso condizionale che richiede applicazioni approvate e protezione delle APP, seguire "passaggio 1: configurare un criterio di accesso condizionale di Azure AD per Office 365" in [scenario 1: le app di office 365 richiedono applicazioni approvate con i criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), che consentono a Outlook per iOS e Android, ma blocca i client Exchange ActiveSync in grado di connettersi a
+Per creare la regola di accesso condizionale che richiede applicazioni approvate e protezione delle APP, seguire "passaggio 1: configurare un criterio di accesso condizionale di Azure AD per Microsoft 365" nello [scenario 1: le app microsoft 365 richiedono app approvate con i criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), che consentono a Outlook per iOS e Android, ma blocca i client Exchange ActiveSync in grado di connettersi a Exchange
 
    > [!NOTE]
    > Questo criterio garantisce agli utenti mobili la possibilità di accedere a tutti gli endpoint di Office utilizzando le app applicabili.
@@ -229,7 +229,7 @@ Infine, il blocco dell'autenticazione legacy per altre app client su dispositivi
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
@@ -302,7 +302,7 @@ Le impostazioni seguenti sono consigliate per Windows 10.
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Regole di protezione avanzata dalle minacce di Microsoft Defender|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Media||
+|Regole di protezione avanzata dalle minacce di Microsoft Defender|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Medio||
 
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Richiedere PC conformi (ma non conformi a telefoni e Tablet)
@@ -322,7 +322,7 @@ Per richiedere PC conformi:
 
 6. Scegliere **App cloud**.
 
-7. Scegliere **Seleziona app**, selezionare le app desiderate nell'elenco delle **app Cloud** . Ad esempio, selezionare Office 365 Exchange Online. Scegliere **Seleziona** e **Chiudi**.
+7. Scegliere **Seleziona app**, selezionare le app desiderate nell'elenco delle **app Cloud** . Ad esempio, selezionare Exchange Online. Scegliere **Seleziona** e **Chiudi**.
 
 8. Per richiedere PC conformi, ma non conformi a telefoni e tablet, scegliere **condizioni** e **piattaforme dispositivo**. Scegliere **Seleziona piattaforme dispositivo** e selezionare **Windows** e **MacOS**.
 
@@ -350,7 +350,7 @@ Per richiedere la conformità per tutti i dispositivi:
 
 6. Scegliere **App cloud**.
 
-7. Scegliere **Seleziona app**, selezionare le app desiderate nell'elenco delle **app Cloud** . Ad esempio, selezionare Office 365 Exchange Online. Scegliere **Seleziona** e **Chiudi**.
+7. Scegliere **Seleziona app**, selezionare le app desiderate nell'elenco delle **app Cloud** . Ad esempio, selezionare Exchange Online. Scegliere **Seleziona** e **Chiudi**.
 
 8. Scegliere **Concedi** nella sezione **Controlli di accesso**.
 

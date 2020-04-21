@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Informazioni su come creare contatti nell'interfaccia di amministrazione e gestire l'elenco indirizzi globale.
-ms.openlocfilehash: 44bd7319a369da84b8855c5d640b2797a173689e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: fe402fd5d90147caa7c6ee2f3632749255c672b3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857392"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627921"
 ---
 # <a name="quick-help-contacts"></a>Guida rapida: Contatti
 
@@ -45,7 +45,7 @@ I contatti personali sono i contatti creati per se stessi e gli utenti creano pe
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>Cosa devono fare gli utenti per accedere ai contatti creati nell'interfaccia di amministrazione?
 
- Possono accedere a **utenti** di Office 365, espandere **directory** e selezionare **tutti i contatti**. Qui possono visualizzare ogni contatto e le relative informazioni.
+ Possono accedere alle **persone** in Microsoft 365, espandere **directory** e selezionare **tutti i contatti**. Qui possono visualizzare ogni contatto e le relative informazioni.
   
 ## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a>Questi contatti dell'organizzazione possono essere creati e modificati da tutti?
 
@@ -53,7 +53,7 @@ No. Solo gli amministratori **globali** e di **Exchange** possono creare, modifi
   
 ## <a name="can-i-use-this-to-manage-my-business-clients"></a>È possibile usare questi contatti per gestire i clienti aziendali?
 
-Tuttavia, è possibile utilizzare i contatti di Office 365 come indicato, ma esistono limitazioni. Informazioni su altri[Modi per gestire i contatti](ways-to-manage-contacts.md).
+È possibile utilizzare i contatti di Microsoft 365 come si preferisce, ma esistono limitazioni. Informazioni su altri[Modi per gestire i contatti](ways-to-manage-contacts.md).
   
 ## <a name="how-do-i-bulk-import-organizational-contacts"></a>Come si importano in blocco i contatti dell'organizzazione?
 
@@ -61,4 +61,4 @@ Usare Windows PowerShell e un file CSV (con valori delimitati da virgole) per im
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>Cosa si può fare se non è stata trovata risposta alle proprie domande?
 
-Visitare il resto della [Guida per amministratori](../admin-home.yml) o immettere il proprio feedback di seguito.
+Visitare il resto della [Guida per amministratori](../admin-home.md) o immettere il proprio feedback di seguito.

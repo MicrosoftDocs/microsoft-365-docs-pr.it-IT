@@ -1,5 +1,5 @@
 ---
-title: Configurare l'intelligence spoof
+title: Configurare spoof intelligence
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,16 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare i mittenti falsificati per consentire o meno l'autorizzazione e altre impostazioni di intelligence spoof in Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 96a1442c893444108aaf6814484bc4e4d55aa731
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 958f27d190748ee12976a6b47794a23e025172cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528738"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630492"
 ---
-# <a name="configure-spoof-intelligence-in-office-365"></a>Configurare l'intelligence di spoofing in Office 365
+# <a name="configure-spoof-intelligence-in-microsoft-365"></a>Configurare l'intelligence spoof in Microsoft 365
 
-Se si è un cliente di Office 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, i messaggi di posta elettronica in ingresso vengono automaticamente protetti dallo spoofing da EOP a ottobre 2018. EOP utilizza l'intelligence spoof come parte della difesa complessiva dell'organizzazione dal phishing. Per ulteriori informazioni, vedere [protezione anti-spoofing in Office 365](anti-spoofing-protection.md).
+Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, i messaggi di posta elettronica in ingresso vengono automaticamente protetti da spoofing da EOP a ottobre 2018. EOP utilizza l'intelligence spoof come parte della difesa complessiva dell'organizzazione dal phishing. Per ulteriori informazioni, vedere [protezione anti-spoofing in Microsoft 365](anti-spoofing-protection.md).
 
 Quando un mittente falsifica un indirizzo di posta elettronica, sembra essere un utente in uno dei domini dell'organizzazione o un utente in un dominio esterno che invia messaggi di posta elettronica all'organizzazione. I pirati informatici che falsificano i mittenti per inviare posta indesiderata o phishing devono essere bloccati. Tuttavia, esistono scenari in cui i mittenti legittimi eseguono lo spoofing. Ad esempio:
 
@@ -46,9 +46,9 @@ Quando un mittente falsifica un indirizzo di posta elettronica, sembra essere un
 
   - Una società esterna invia messaggi di posta elettronica per conto di un'altra società (ad esempio, un report automatizzato o un'azienda software-as-a-Service).
 
-L'intelligenza contraffatta e, in particolare, il criterio di intelligence spoof predefinito (e solo), aiuta a garantire che la posta elettronica contraffatta inviata da mittenti legittimi non venga interferita nei filtri di posta indesiderata nei sistemi di posta elettronica di Office 365 o esterni, proteggendo gli utenti da attacchi di posta indesiderata o di phishing
+L'intelligenza contraffatta e, in particolare, il criterio di intelligence spoof predefinito (e solo), aiuta a garantire che la posta elettronica contraffatta inviata da mittenti legittimi non venga interferita nei filtri di posta indesiderata in Microsoft 365 o sistemi di posta elettronica esterni, proteggendo gli utenti da attacchi di posta indesiderata o di phishing.
 
-È possibile gestire l'intelligence spoof nel centro sicurezza & conformità di Office 365 o in PowerShell (Exchange Online PowerShell per i clienti di Office 365; PowerShell di Exchange Online Protection per clienti EOP autonomi.
+È possibile gestire l'intelligence spoof nel centro sicurezza & conformità di Microsoft 365 o in PowerShell (Exchange Online PowerShell per i clienti di Microsoft 365; PowerShell di Exchange Online Protection per clienti EOP autonomi.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -170,9 +170,9 @@ Le opzioni disponibili dipendono dall'abbonamento:
 
 - Le organizzazioni di EOP autonome senza cassette postali di Exchange Online non possono configurare le impostazioni di intelligence spoof
 
-- Le organizzazioni di Office 365 con cassette postali di Exchange Online sono in grado di configurare le impostazioni di intelligence spoof nei criteri di anti-phishing predefiniti. Per istruzioni, vedere [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md).
+- Microsoft 365 organizzazioni con cassette postali di Exchange Online è in grado di configurare le impostazioni di intelligence spoof nei criteri di anti-phishing predefiniti. Per istruzioni, vedere [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md).
 
-- Le organizzazioni di Office 365 con ATP possono configurare le impostazioni di intelligence spoof nei criteri di anti-phishing predefiniti e anche nei criteri di anti-phishing personalizzati. Per istruzioni, vedere [configurare i criteri di anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md).
+- Microsoft 365 organizzazioni con ATP è in grado di configurare le impostazioni di intelligence spoof nei criteri di anti-phishing predefiniti e anche nei criteri di anti-phishing personalizzati. Per istruzioni, vedere [configurare i criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
@@ -195,7 +195,7 @@ Per verificare di aver configurato l'intelligence spoof con i mittenti autorizza
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- Nelle organizzazioni di Office 365 con le cassette postali di Exchange Online, eseguire una delle operazioni seguenti:
+- In Microsoft 365 organizzazioni con cassette postali di Exchange Online, eseguire una delle operazioni seguenti:
 
   - Nel centro sicurezza & conformità, accedere **a criterio di** \> **gestione** \> delle minacce **anti-phishing** \> fare clic su **criteri predefiniti** e visualizzare i dettagli nel riquadro a comparsa.
 
@@ -205,7 +205,7 @@ Per verificare di aver configurato l'intelligence spoof con i mittenti autorizza
     Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
     ```
 
-- Nelle organizzazioni ATP di Office 365 eseguire una delle operazioni seguenti:
+- Nelle organizzazioni ATP Microsoft 365 eseguire una delle operazioni seguenti:
 
   - Nel centro sicurezza & conformità, accedere a **criteri** \> di **gestione** \> delle minacce **ATP anti-phishing** ed eseguire una delle operazioni seguenti:
 
@@ -224,7 +224,7 @@ Essere diligenti sullo spoofing e la protezione da phishing. Di seguito sono rip
 
 - Controllare il **report di posta contraffatta**. È possibile utilizzare questo rapporto spesso per visualizzare e facilitare la gestione dei mittenti falsificati. Per informazioni, vedere [spoofing detections report](view-email-security-reports.md#spoof-detections-report).
 
-- Esaminare la configurazione di Sender Policy Framework (SPF). Per una rapida introduzione a SPF e per le istruzioni di configurazione, vedere [Configurare SPF in Office 365 per prevenire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Per informazioni più dettagliate su come Office 365 utilizza SPF oppure per risolvere i problemi o per eseguire distribuzioni non standard (ad esempio, le distribuzioni ibride), iniziare da [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
+- Esaminare la configurazione di Sender Policy Framework (SPF). Per una breve introduzione a SPF e per configurarla rapidamente, vedere [set up SPF in Microsoft 365 per prevenire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Per informazioni più dettagliate su come Office 365 utilizza SPF oppure per risolvere i problemi o per eseguire distribuzioni non standard (ad esempio, le distribuzioni ibride), iniziare da [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
 - Esaminare la configurazione della posta DomainKeys (DKIM) identificata. È consigliabile utilizzare DKIM oltre a SPF e DMARC per impedire agli aggressori di inviare messaggi che sembrano provenienti dal proprio dominio. DKIM consente di aggiungere una firma digitale ai messaggi di posta elettronica nell'intestazione del messaggio. Per ulteriori informazioni, vedere [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md).
 

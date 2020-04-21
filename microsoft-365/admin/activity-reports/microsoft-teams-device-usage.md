@@ -1,5 +1,5 @@
 ---
-title: Report di Office 365 nell'interfaccia di amministrazione-utilizzo del dispositivo Microsoft Teams
+title: Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo del dispositivo Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
-description: Ottenere informazioni sulle app di Microsoft teams utilizzate nell'organizzazione ottenendo il report sull'utilizzo delle app di Microsoft teams dai report di Office 365.
-ms.openlocfilehash: b0937e4366f1b10b0908ee8764986f2ded2999ec
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Ottenere informazioni sulle app di Microsoft teams utilizzate nell'organizzazione ottenendo il report sull'utilizzo delle app di Microsoft teams dai report di Microsoft 365.
+ms.openlocfilehash: 9c79f83d90905470c56fd62489f1439b3383841f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046964"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621211"
 ---
-# <a name="office-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Report di Office 365 nell'interfaccia di amministrazione-utilizzo del dispositivo Microsoft Teams
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo del dispositivo Microsoft Teams
 
-Il dashboard **report** di Office 365 Visualizza la panoramica delle attività nei prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento introduttivo sui report](activity-reports.md). Nel report Utilizzo app Microsoft Teams è possibile ottenere informazioni approfondite sulle app di Microsoft Teams usate nell'organizzazione.
+Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tra i prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento introduttivo sui report](activity-reports.md). Nel report Utilizzo app Microsoft Teams è possibile ottenere informazioni approfondite sulle app di Microsoft Teams usate nell'organizzazione.
   
 > [!NOTE]
 > È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.  
@@ -45,7 +45,7 @@ Il dashboard **report** di Office 365 Visualizza la panoramica delle attività n
 
 Per avere un quadro d'insieme dell'utilizzo delle app di Microsoft Teams, è possibile esaminare i grafici **Utenti** e **Distribuzione**. 
   
-![Office 365 reports - Microsoft Teams app usage](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
+![Report di Microsoft 365-utilizzo delle app di Microsoft Teams](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
 |||
 |:-----|:-----|

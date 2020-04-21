@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
 description: Comprendere cosa è un dominio e come è possibile acquistare un dominio o utilizzare il dominio predefinito dell'azienda.
 ms.custom: okr_smb
-ms.openlocfilehash: 65eae949ccc29e92821afc75e90781f7827442dd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 1e92247deaabf292fa82024d6654aefda7a73f6e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209725"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628257"
 ---
 # <a name="what-is-a-domain"></a>Cos'è un dominio?
 
@@ -33,17 +33,17 @@ ms.locfileid: "43209725"
   
 Un dominio è un nome univoco che segue il segno **@** negli indirizzi di posta elettronica e **www.** negli indirizzi Web. In genere assume la forma del nome dell'organizzazione e di un suffisso Internet standard, ad esempio *yourbusiness<span> . com* o *stateuniversity.<span> edu*. 
   
-Utilizzo di un dominio personalizzato come *Rob@contoso<span> . com* con Office 365 può contribuire a creare credibilità e riconoscimento per il proprio brand. 
+Utilizzo di un dominio personalizzato come *Rob@contoso<span> . com* con Microsoft 365 può contribuire a creare credibilità e riconoscimento per la propria marca. 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>Scegliere l'esperienza più adatta alle proprie esigenze
 
  **Acquistare un nuovo dominio:**
   
-Utilizzare Office 365 per acquistare un nuovo dominio: verrà impostato tutto. [Ulteriori informazioni.](buy-a-domain-name.md)
+Utilizzare Microsoft 365 per acquistare un nuovo dominio: verrà impostato tutto. [Ulteriori informazioni.](buy-a-domain-name.md)
   
  **Usare un dominio che si possiede già:**
   
-Se si è già proprietari di un dominio come *You@yourcompany.<span> com* è possibile aggiungerlo e iniziare a usare OneDrive e le app di Office subito. La configurazione della posta elettronica e di Skype for Business richiederà qualche minuto. 
+Se si è già proprietari di un dominio come *You@yourcompany.<span> com* è possibile aggiungerlo e iniziare a usare OneDrive e Microsoft Apps subito. La configurazione della posta elettronica e di Skype for Business richiederà qualche minuto. 
   
 > [!TIP]
 > Verificare dove è registrato il dominio: [Trovare il registrar](find-your-domain-registrar.md)
@@ -54,6 +54,6 @@ Se si è già proprietari di un dominio come *You@yourcompany.<span> com* è pos
   
 ## <a name="feeling-stuck"></a>Serve aiuto?
 
-Chiamare il supporto di Office 365: [Ottenere assistenza nella configurazione di un dominio con Office 365](../contact-support-for-business-products.md)
+Chiamare il supporto tecnico Microsoft- [ottenere informazioni sulla configurazione di un dominio](../contact-support-for-business-products.md)
   
 

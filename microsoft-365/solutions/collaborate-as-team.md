@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come collaborare con gli utenti in teams.
-ms.openlocfilehash: 54bf52eebc77e1cce8e1c05a708572d7d1e7fdae
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604739"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630750"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -68,17 +68,17 @@ Per impostare le impostazioni di accesso guest di Teams
 > [!NOTE]
 > Dopo l'attivazione, potrebbero essere necessarie fino a ventiquattro ore affinché l'impostazione Guest teams diventi attiva.
 
-## <a name="office-365-groups-guest-settings"></a>Office 365 gruppi Guest Settings
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 groups Guest Settings
 
-Teams utilizza i gruppi di Office 365 per l'appartenenza al team. È necessario che le impostazioni Guest dei gruppi di Office 365 siano attivate affinché l'accesso guest nei team funzioni.
+Teams utilizza i gruppi di Microsoft 365 per l'appartenenza al team. È necessario che le impostazioni Guest dei gruppi Microsoft 365 siano attivate in modo che l'accesso guest nei team funzioni.
 
-![Screenshot delle impostazioni guest di Gruppi di Office 365 nell'interfaccia di amministrazione di Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Schermata di Microsoft 365 gruppi Guest Settings in Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
 
-Per impostare le impostazioni di Office 365 groups Guest
+Per impostare Microsoft 365 groups Guest Settings
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, espandere **Impostazioni**.
 2. Fare clic su **servizi & componenti**aggiuntivi.
-3. Nell'elenco, fare clic su **gruppi di Office 365**.
+3. Nell'elenco, fare clic su **gruppi Microsoft 365**.
 4. Verificare che i membri del gruppo Consenti al di **fuori dell'organizzazione accedano al contenuto del gruppo** e che i proprietari del **gruppo aggiungano persone all'esterno dell'organizzazione ai gruppi di caselle di** controllo siano entrambe controllate.
 5. Se sono state apportate modifiche, fare clic su **Salva modifiche**.
 
@@ -151,7 +151,7 @@ Per impostare le impostazioni di condivisione a livello di sito
 4. Verificare che la condivisione sia impostata su **tutti gli utenti** o **gli ospiti nuovi e esistenti**.
 5. Se si apportano modifiche, fare clic su **Salva**.
 
-## <a name="invite-users"></a>Invitare gli utenti
+## <a name="invite-users"></a>Invitare utenti
 
 Le impostazioni di condivisione Guest sono ora configurate, quindi è possibile iniziare ad aggiungere utenti interni e ospiti al team. 
 

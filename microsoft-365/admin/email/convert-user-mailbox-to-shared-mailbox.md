@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Informazioni su come convertire una cassetta postale privata in una cassetta postale condivisa a cui è possibile accedere da più utenti. '
-ms.openlocfilehash: 481707b9d60d37b1d80d822467d17f66750f4f13
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7e652dc77218be44caa56515e4b21efb692cbaa3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253052"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628892"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertire una cassetta postale utente in una cassetta postale condivisa
 
@@ -48,7 +48,7 @@ Quando si converte la cassetta postale di un utente in cassetta condivisa, vengo
 
 3. Selezionare la cassetta postale utente. In **Converti in cassetta postale condivisa**, selezionare **Converti**.
 
-4. Se la cassetta postale è più piccola di 50 GB, è possibile rimuovere la [licenza dall'utente](../manage/remove-licenses-from-users.md) e smettere di pagarne i costi associati. Non eliminare la vecchia cassetta postale dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Per ulteriori informazioni, vedere [rimuovere un ex dipendente da Office 365](../add-users/remove-former-employee.md).
+4. Se la cassetta postale è più piccola di 50 GB, è possibile rimuovere la [licenza dall'utente](../manage/remove-licenses-from-users.md) e smettere di pagarne i costi associati. Non eliminare la vecchia cassetta postale dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Per ulteriori informazioni, vedere [rimuovere un ex dipendente da Microsoft 365](../add-users/remove-former-employee.md).
     
 5. Per tutti gli altri elementi necessari per conoscere le cassette postali condivise, vedere [informazioni sulle cassette postali condivise](about-shared-mailboxes.md) e [creare una cassetta postale condivisa](create-a-shared-mailbox.md).
 
@@ -90,7 +90,7 @@ Quando si converte la cassetta postale di un utente in cassetta condivisa, vengo
 ::: moniker-end
 
 
-Se la cassetta postale è più piccola di 50 GB, è possibile [rimuovere la licenza dall'utente](../manage/remove-licenses-from-users.md)e smettere di pagarla. Non eliminare la vecchia cassetta postale dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Vedere [rimuovere un ex dipendente da Office 365](../add-users/remove-former-employee.md).
+Se la cassetta postale è più piccola di 50 GB, è possibile [rimuovere la licenza dall'utente](../manage/remove-licenses-from-users.md)e smettere di pagarla. Non eliminare la vecchia cassetta postale dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Vedere [rimuovere un ex dipendente da Microsoft 365](../add-users/remove-former-employee.md).
     
 Per tutti gli altri elementi necessari per conoscere le cassette postali condivise, vedere [informazioni sulle cassette postali condivise](about-shared-mailboxes.md) e [creare una cassetta postale condivisa](create-a-shared-mailbox.md).
 
@@ -101,7 +101,7 @@ Si supponga di aver eliminato un account utente e di volerne convertire la vecch
 
 1. [Ripristinare l'account dell'utente](../add-users/restore-user.md).
 
-2. Assicurarsi che all'account sia assegnata una licenza di Office 365.
+2. Assicurarsi che sia assegnata una licenza di Microsoft 365.
 
 3. Reimpostare la password dell'utente.
     

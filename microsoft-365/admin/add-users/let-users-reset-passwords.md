@@ -1,5 +1,5 @@
 ---
-title: Consentire agli utenti di reimpostare le loro password in Office 365
+title: Consentire agli utenti di reimpostare le loro password
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come è possibile reimpostare le password utilizzando lo strumento di reimpostazione della password self-service.
-ms.openlocfilehash: 666d3843f7917cf9bd5718c0ce29f87f93d6effe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211896"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617147"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
@@ -36,7 +36,7 @@ Cosa fare per non ricevere più richieste di modifica delle password degli utent
   
 Ecco alcune informazioni utili:
   
-- Con tutti i piani a pagamento di Office 365 Business, Education o Nonprofit, agli utenti viene fornita **gratuitamente** l'opzione di reimpostazione della password in modalità self-service. Questa opzione non funziona con la versione di valutazione di Office 365. 
+- Si ottiene la reimpostazione della password in modalità self-service per gli utenti Cloud **gratis** con qualsiasi piano di Microsoft 365 business, Education o no profit paid. Non funziona con Microsoft 365 Trial. 
     
 - Si basa su Azure. Questa funzionalità verrà scaricata automaticamente e **gratuitamente** in Azure quando si esegue questa procedura. L'attivazione della reimpostazione della password in modalità self-service non costa nulla se non si usano altre funzionalità di Azure. 
     
@@ -46,7 +46,7 @@ Guardare un breve video su come consentire agli utenti di reimpostare le proprie
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S] 
 
-Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="let-people-reset-their-own-passwords"></a>Consentire alle persone di reimpostare le proprie password 
 

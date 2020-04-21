@@ -26,14 +26,14 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Informazioni su come assegnare ruoli di amministratore a un utente o a più utenti dell'azienda in modo che possano eseguire attività specifiche nell'interfaccia di amministrazione.
-ms.openlocfilehash: 3f22ef22571dd04dd3364a95ed860f53b8ff207b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 7842714d7a57c7db9c3f0afe7e4b2e353137b66f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211920"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618789"
 ---
-# <a name="assign-admin-roles"></a>Assegnare ruoli di amministratore
+# <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore
 
 Se si è la persona che ha acquistato l'abbonamento a Microsoft Business, si è l'amministratore globale. Questo significa che si ha un controllo illimitato sui prodotti degli abbonamenti ed è possibile accedere alla maggior parte dei dati.
 
@@ -45,7 +45,7 @@ Guardare un breve video sull'aggiunta di un amministratore.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ::: moniker range="o365-worldwide"
 
@@ -54,7 +54,7 @@ Se il video è stato utile, vedere la [serie di corsi di formazione completa per
 
 ::: moniker-end
 
-## <a name="assign-admin-roles"></a>Assegnare ruoli di amministratore 
+## <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore 
 
 ::: moniker range="o365-worldwide"
 
@@ -126,7 +126,7 @@ Potrebbe non essere necessario disporre delle autorizzazioni corrette e quindi n
 
 [Assegnare ruoli agli account utente con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
-[Autorizzare o rimuovere relazioni con i partner](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)
+[Autorizzare o rimuovere relazioni con i partner](../misc/add-partner.md)
 
 [Aggiungere un indirizzo di posta elettronica alternativo utilizzando l'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
 

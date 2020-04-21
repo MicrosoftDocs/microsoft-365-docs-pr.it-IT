@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come accedere alla posta elettronica dal dispositivo mobile.
-ms.openlocfilehash: 880044ddd13226c819167fb200f9f61550559944
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362391"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629096"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Opzioni per l'accesso alla posta elettronica dal dispositivo mobile
 
@@ -41,6 +41,6 @@ Per altre funzionalità di Outlook, vedere [ottimizzare l'app per dispositivi mo
   
  **Tutte le app di posta elettronica**
   
-L'organizzazione consiglia di usare l'app Outlook per Android o iOS per accedere all'account aziendale o dell'Istituto di istruzione di Office 365 per la posta elettronica, il calendario e i contatti. Se non si intraprende alcuna azione nelle prossime ore, il messaggio di posta elettronica inizierà automaticamente la sincronizzazione. Se si sceglie di usare l'app Outlook per Android o iOS per dispositivi mobili, i dati verranno sincronizzati con l'app per dispositivi mobili Outlook per Android o Outlook per iOS. Se si sceglie di continuare a utilizzare l'app di terze parti, i dati inizieranno a essere sincronizzati istantaneamente.
+L'organizzazione consiglia di usare l'app Outlook per Android o iOS per accedere all'account aziendale o dell'Istituto di istruzione per la posta elettronica, il calendario e i contatti. Se non si intraprende alcuna azione nelle prossime ore, il messaggio di posta elettronica inizierà automaticamente la sincronizzazione. Se si sceglie di usare l'app Outlook per Android o iOS per dispositivi mobili, i dati verranno sincronizzati con l'app per dispositivi mobili Outlook per Android o Outlook per iOS. Se si sceglie di continuare a utilizzare l'app di terze parti, i dati inizieranno a essere sincronizzati istantaneamente.
   
 

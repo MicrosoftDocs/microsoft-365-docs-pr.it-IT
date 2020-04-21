@@ -20,14 +20,14 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: Per ulteriori informazioni sui domini in Office 365, trovare le risposte alle domande più frequenti.
+description: Per ulteriori informazioni sui domini, è possibile trovare le risposte alle domande più frequenti.
 ms.custom: okr_smb
-ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540868"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627595"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
@@ -51,7 +51,7 @@ La posta viene recapitata al server Mail Exchange con il numero di preferenza pi
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>Come si fa a convalidare i record SPF per un dominio?
 
-È importante avere o creare **un solo record TXT per SPF**. Se si ha già un record SPF, è necessario aggiungervi i nuovi valori di Office 365, invece di crearne uno nuovo. Dopo aver aggiunto o aggiornato il record SPF per la posta elettronica di Office 365, è necessario assicurarsi che la sintassi sia corretta usando uno di questi strumenti: 
+È importante avere o creare **un solo record TXT per SPF**. Se si ha già un record SPF, è necessario aggiungervi i nuovi valori di Office 365, invece di crearne uno nuovo. Dopo aver aggiunto o aggiornato il record SPF per il messaggio di posta elettronica Microsoft, è necessario verificare che la sintassi sia corretta con uno di questi strumenti: 
   
 - [Strumenti di test del record SPF](http://www.kitterman.com/spf/validate.html)
     
@@ -63,9 +63,9 @@ La posta viene recapitata al server Mail Exchange con il numero di preferenza pi
 
 Sono disponibili due opzioni per la gestione DNS con Office 365:
   
-1. Modificare i record dei server dei nomi (NS) per affidare a Office 365 la gestione di tutti i record specifici del servizio, ad esempio la configurazione del record MX per la posta elettronica **(scelta consigliata)**.
+1. È possibile modificare i record del server dei nomi (NS) e quindi Microsoft si occupa di tutti i record specifici del servizio, ad esempio la configurazione del record MX per la posta elettronica. **Consigliato**
     
-2. Aggiungere personalmente i record DNS per la posta elettronica e altri servizi di Office 365 presso l'host DNS **(solo per utenti esperti)**.
+2. È possibile aggiungere i record DNS per la posta elettronica e altri servizi di Office 365 all'host DNS. **(Solo esperti)**
     
 ### <a name="office-365-creates-and-hosts-the-dns-records"></a>Office 365 crea e ospita i record DNS 
 **Vantaggi** 
@@ -87,7 +87,7 @@ Sono disponibili due opzioni per la gestione DNS con Office 365:
  
 #### <a name="disadvantages"></a>Svantaggi
 È necessario configurare i record DNS per i servizi di Office 365 manualmente, a meno che non si abbia un dominio GoDaddy. 
--  Se l'host DNS corrente non supporta tutti i tipi di record necessari per Office 365, alcune caratteristiche di Office 365 non saranno disponibili e potrebbe essere necessario cambiare host DNS. 
+-  Se l'host DNS corrente non supporta tutti i tipi di record necessari per Microsoft 365, alcune funzionalità non saranno disponibili e potrebbe essere necessario passare a un host DNS diverso. 
 - Quando Office 365 cambia i requisiti per i record DNS o aggiunge nuovi servizi, è necessario effettuare gli aggiornamenti manualmente nell'host DNS. 
    
 ## <a name="what-is-a-domain-name"></a>Cos'è un nome di dominio?
@@ -333,9 +333,9 @@ Quando si aggiungono più domini a Office 365 è possibile ospitare uno qualsias
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Perché è presente un dominio "onmicrosoft.com"?
 
-Office 365 crea un dominio per l'utente, come _contoso.onmicrosoft.com_, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, come _alan\@contoso.onmicrosoft.com_. 
+Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.com*, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio *Alan@contoso.onmicrosoft.com*. 
   
- __Se si desidera che la posta elettronica sia simile _a\@Alan contoso.com_:__ [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già. 
+ **Se si desidera che la posta elettronica sia simile *a\@Alan contoso.com*:** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già. 
   
 - **Dopo l'iscrizione, non è possibile rinominare il dominio onmicrosoft**. Se ad esempio il dominio iniziale scelto è fourthcoffee.onmicrosoft.com, non lo si può cambiare in fabrikam.onmicrosoft.com. Per usare un dominio onmicrosoft.com diverso, si dovrà iniziare un nuovo abbonamento a Office 365. 
     
@@ -348,12 +348,11 @@ Si può continuare a usare il dominio iniziale onmicrosoft.com anche dopo l'aggi
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Perché è presente un dominio "onmicrosoft.de"?
 
-Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.de*, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio "alan@contoso.onmicrosoft.de". 
+Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.de*, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio *Alan@contoso.onmicrosoft.de*. 
   
-Se si desidera che la posta elettronica sia simile a "alan@contoso.de": [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già 
+ **Se si desidera che la posta elettronica sia simile a *Alan@contoso.de*:** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già. 
   
 - **Dopo l'iscrizione, non è possibile rinominare il dominio onmicrosoft**. Ad esempio, se il dominio iniziale scelto era fourthcoffee.onmicrosoft.de, non è possibile modificarlo in modo che sia fabrikam.onmicrosoft.de. Per utilizzare un dominio onmicrosoft.de diverso, è necessario avviare un nuovo abbonamento con Office 365. 
     
@@ -489,11 +488,11 @@ Vuoi saperne di più su come diventare l'amministratore per la tua scuola? Infor
         
     2. Eseguire i test seguenti:
         
-    3. Verificare l'indirizzo di posta elettronica locale di Office 365. Ad esempio, inviare un messaggio di posta elettronica all'utente B. Questo messaggio di posta elettronica deve essere recapitato immediatamente. In questo scenario, il messaggio non verrà instradato alla cassetta postale dell'utente B sul server originale perché Office 365 Visualizza la cassetta postale come locale.
+    3. Testare il messaggio di posta elettronica Microsoft locale. Ad esempio, inviare un messaggio di posta elettronica all'utente B. Questo messaggio di posta elettronica deve essere recapitato immediatamente. In questo scenario, il messaggio non verrà instradato alla cassetta postale dell'utente B sul server originale perché Office 365 Visualizza la cassetta postale come locale.
         
     4. Provare la posta elettronica a un utente che si trova nell'altro sistema di posta elettronica. Ad esempio, inviare un messaggio di posta elettronica all'utente C. Questo messaggio di posta elettronica deve essere recapitato alla cassetta postale dell'utente C sul server di posta originale.
         
-    5. Da un account esterno o da un account di posta elettronica di un dipendente nell'altro sistema di posta elettronica, verificare che l'inoltro sia configurato correttamente nell'altro sistema di posta elettronica. Ad esempio, dall'account del server originale o da un account Hotmail dell'utente C, inviare un messaggio di posta elettronica A un utente e verificare che arrivi nella cassetta postale di Office 365 dell'utente.
+    5. Da un account esterno o da un account di posta elettronica di un dipendente nell'altro sistema di posta elettronica, verificare che l'inoltro sia configurato correttamente nell'altro sistema di posta elettronica. Ad esempio, dall'account del server origninal dell'utente o da un account Hotmail, inviare un messaggio di posta elettronica A un utente e verificare che arrivi nella cassetta postale dell'utente A Office 365.
         
 9. Spostamento del contenuto della cassetta postale
     
