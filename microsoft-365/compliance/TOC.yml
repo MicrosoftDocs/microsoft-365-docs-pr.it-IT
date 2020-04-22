@@ -149,10 +149,6 @@
           href: document-fingerprinting.md
         - name: Funzioni DLP per le informazioni sensibili
           href: what-the-dlp-functions-look-for.md
-    - name: Crittografia in M365
-      href: encryption.md
-    - name: Servizio di crittografia di Office 365
-      href: office-365-service-encryption.md
     - name: Customer Key
       items:
         - name: Crittografia del servizio con Customer Key in Office 365
@@ -163,7 +159,7 @@
           href: customer-key-manage.md
         - name: Implementare o distribuire una Customer Key o una chiave di disponibilità
           href: customer-key-availability-key-roll.md
-        - name: Informazioni sulle chiavi di disponibilità per Customer Key in Office 365
+        - name: Informazioni sulle chiavi di disponibilità per Customer Key
           href: customer-key-availability-key-understand.md
     - name: Crittografia della posta elettronica
       href: email-encryption.md
@@ -204,8 +200,6 @@
               href: legacy-information-for-message-encryption.md
             - name: Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365
               href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: Configurare IRM nell'interfaccia di amministrazione di SharePoint
-      href: set-up-irm-in-sp-admin-center.md
     - name: Informazioni sulla classificazione dei dati (anteprima)
       href: data-classification-overview.md
       items:
@@ -800,7 +794,7 @@
         - name: Compliance Manager (anteprima)
           href: compliance-manager-overview.md
           items:
-            - name: Note sulla versione di Compliance Manager (anteprima)
+            - name: Novità di Compliance Manager (anteprima)
               href: compliance-manager-release-notes.md
             - name: Uso di Compliance Manager (anteprima)
               href: working-with-compliance-manager.md
@@ -1218,7 +1212,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: Office 365 Business
+- name: App Microsoft 365 per le aziende
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
-- name: Centro sicurezza Microsoft 365
+- name: Sicurezza di Microsoft 365
   href: 'https://docs.microsoft.com/microsoft-365/security/'
