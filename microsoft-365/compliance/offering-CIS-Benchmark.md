@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfb71a88f836fc68967398e3f27bebd11854c1de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a83c744bc9f1335e0ce2993801475fdf16164766
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602633"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627068"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Benchmark del Center for Internet Security (CIS)
 
@@ -48,7 +48,7 @@ Come tutti i benchmark CIS , i benchmark Microsoft sono stati creati tramite un 
   
 Oltre ai benchmark per prodotti e servizi Microsoft, il CIS ha anche pubblicato [CIS Hardened Images for use on Azure virtual machines](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/) (Immagini con protezione avanzata del CIS per l'uso su macchine virtuali di Azure) configurate per soddisfare i benchmark CIS. Questi includono l'immagine con protezione avanzata del CIS per Microsoft Windows Server 2016 certificata per l'esecuzione su Azure. CIS afferma che "tutte le immagini con protezione avanzata del CIS disponibili su [Azure Marketplace ](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) sono certificate per l'esecuzione su Azure. Sono state precedentemente testate per l'idoneità e la compatibilità con il cloud pubblico di Azure, la piattaforma cloud Microsoft ospitata dai provider di servizi attraverso la rete del sistema operativo cloud e le distribuzioni in locale di Hyper-V di Windows Server del cloud privato interno gestite dai clienti".
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - [Office e Microsoft 365](https://aka.ms/o365-compliance-framework)
@@ -68,7 +68,7 @@ Ottenere un [elenco completo dei benchmark CIS](https://www.cisecurity.org/cis-b
 ## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Benchmark CIS per Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf): ottenere una guida prescrittiva per stabilire una configurazione di base sicura per Azure.  
-- [Roadmap della sicurezza per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): seguire questa roadmap per ridurre al minimo il rischio di violazione dei dati o compromissione di account.
+- [Roadmap della sicurezza per Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): seguire questa roadmap per ridurre al minimo il rischio di violazione dei dati o compromissione di account.
 - [Linee di base di sicurezza di Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines): seguire queste linee guida per un uso efficace delle linee guida di sicurezza nell'organizzazione.
 - [CIS Controls Cloud Companion Guide](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/) (Guida complementare al cloud dei controlli CIS): ottenere indicazioni sull'applicazione delle migliori procedure consigliate di sicurezza nei controlli CIS versione 7 agli ambienti cloud.
 

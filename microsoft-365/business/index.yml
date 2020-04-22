@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Risorse di Microsoft 365 Business Premium
-summary: Microsoft 365 Business Premium (in precedenza Microsoft 365 business) è un servizio di sottoscrizione completo per aziende con meno di 300 dipendenti. Integra le app e i servizi e la collaborazione per la produttività di Office preferiti, come Microsoft teams con funzionalità avanzate di sicurezza e gestione dei dispositivi.
+summary: Microsoft 365 Business Premium (in precedenza Microsoft 365 Business) è un servizio in abbonamento completo per le aziende con meno di 300 dipendenti. Integra le app e i servizi e la collaborazione per la produttività di Office preferiti, come Microsoft teams con funzionalità avanzate di sicurezza e gestione dei dispositivi.
 brand: m365
 metadata:
   title: Risorse di Microsoft 365 Business Premium
@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 59478fceee0017321c59607f589fe464ac95077d
-  ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+  ms.openlocfilehash: 4dff1d10b8a4574ea8350aa194d7f6a2c8eb2605
+  ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
   ms.translationtype: MT
   ms.contentlocale: it-IT
   ms.lasthandoff: 04/22/2020
-  ms.locfileid: "43665621"
+  ms.locfileid: "43781477"
 productDirectory:
   title: Sicurezza del lavoro remoto con Microsoft 365 Business Premium
   items:
@@ -30,7 +30,7 @@ productDirectory:
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: Lettura
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Modalità consigliate per abilitare il lavoro remoto sicuro con Microsoft 365 for business.
+    summary: Modalità consigliate per abilitare il lavoro remoto sicuro con Microsoft 365 Business Premium.
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:

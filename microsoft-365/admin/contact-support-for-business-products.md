@@ -1,5 +1,5 @@
 ---
-title: Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore
+title: Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,19 +22,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: Ottenere supporto tecnico e per la fatturazione tramite i numeri di telefono indicati per la propria area geografica o località, inviando una richiesta di assistenza online o visitando Microsoft Store.
+description: Ottenere supporto tecnico e per la fatturazione tramite i numeri di telefono indicati per il proprio paese o area geografica, inviando una richiesta di assistenza online o visitando Microsoft Store.
 feedback_system: None
-ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1698de8c9b1d80763c983fbc9adf3778be45645
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627079"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707548"
 ---
-# <a name="contact-support-for-business-products---admin-help"></a>Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore
+# <a name="contact-support-for-business-products---admin-help"></a>Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="online-support"></a>[Supporto online](#tab/online)
 
@@ -52,7 +51,9 @@ Per risparmiare tempo, avviare la richiesta di assistenza online. Aiuteremo l’
 
 ## <a name="phone-support"></a>[Assistenza telefonica ](#tab/phone)
 
-Il supporto per la fatturazione è disponibile solo in inglese dal lunedì al venerdì dalle 9:00 alle 17:00 (dalle 9:00 alle 18:00 in Australia).  <br/>Il supporto tecnico viene fornito in inglese 24 ore al giorno, 7 giorni alla settimana. <br/> Gli amministratori possono chiamare il supporto, assicurandosi di avere a portata di mano i dettagli del loro account.<br/>
+Il supporto per la fatturazione è disponibile solo in inglese dal lunedì al venerdì dalle 9:00 alle 17:00 (dalle 9:00 alle 18:00 in Australia).
+Il supporto tecnico viene fornito in inglese 24 ore al giorno, 7 giorni alla settimana.
+Gli amministratori possono chiamare il supporto, assicurandosi di avere a portata di mano i dettagli del loro account.\
 
 - **Negli Stati Uniti, chiamare il numero 1 800 865 9408.**
 
@@ -122,7 +123,7 @@ Il supporto tecnico per le sottoscrizioni Office 365 gestito mediante 21Vianet f
 
 | Categoria di supporto | Esempi |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installazione e configurazione | Exchange Online  <ul><li>Migrazione delle cassette postali di Office 365</li><li>Configurazione del destinatario (autorizzazioni cassetta postale, configurazione inoltro posta, configurare cassetta postale condivisa)</li><li>Configurazione del servizio di individuazione automatica</li></ul> SharePoint Online <ul><li>Autorizzazioni e gruppi di utenti</li><li>Configurazione di utenti esterni</li></ul> Skype for Business Online  <ul><li>Installazione e creazione di contatti</li></ul> App Microsoft 365 per grandi imprese  <ul><li>Installazione e configurazione</li></ul> |
+| Installazione e configurazione | Exchange Online  <ul><li>Migrazione delle cassette postali di Office 365</li><li>Configurazione del destinatario (autorizzazioni cassetta postale, configurazione inoltro posta, configurare cassetta postale condivisa)</li><li>Configurazione del servizio di individuazione automatica</li></ul> SharePoint Online <ul><li>Autorizzazioni e gruppi di utenti</li><li>Configurazione di utenti esterni</li></ul> Skype for Business Online  <ul><li>Installazione e creazione di contatti</li></ul> Microsoft 365 Apps for enterprise  <ul><li>Installazione e configurazione</li></ul> |
 | Configurazione | Problemi di configurazione del servizio  <ul><li>Single Sign-On</li><li>Sincronizzazione con Active Directory</li></ul> |
 
 > [!NOTE]

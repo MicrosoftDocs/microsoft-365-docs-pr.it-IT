@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a2ef9ff0521755bbb3000dd42b417ff57e398bbb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7b8e7e7f15ac4a0f257e9c4c86bd14659cc609b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602133"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632931"
 ---
 # <a name="my-number-act-japan"></a>My Number Act (Giappone)
 
@@ -58,7 +58,7 @@ I servizi cloud Microsoft per le aziende soddisfano gli obblighi del My Number A
 
 - [Privacy in Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=a1b48a5b-bcb1-4c19-9277-952c0df87113&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers): come Microsoft sviluppa misure di protezione della privacy efficaci in Office 365.
 
-- [Accesso degli amministratori in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/office-365-administrative-access-controls-overview): come Microsoft gestisce l'accesso degli amministratori ai dati dei clienti in Office 365.
+- [Accesso degli amministratori in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/office-365-administrative-access-controls-overview): come Microsoft gestisce l'accesso degli amministratori ai dati dei clienti.
 
 - [Controlli e report in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/office-365-auditing-and-reporting-overview): quali funzionalità possono usare i clienti per tenere traccia delle attività degli utenti e degli amministratori all'interno del loro tenant.
 
