@@ -15,23 +15,23 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono scoprire come creare, modificare ed eliminare i criteri di protezione dalla posta indesiderata in Exchange Online e in Exchange Online Protection (EOP).
-ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+description: Le impostazioni di base del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata.
+ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231017"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637713"
 ---
-# <a name="configure-anti-spam-policies-in-office-365"></a>Configurare criteri di protezione dalla posta indesiderata in Office 365
+# <a name="configure-anti-spam-policies"></a>Configurare i criteri di protezione dalla posta indesiderata
 
-Per i clienti di Office 365 con cassette postali in Exchange Online o Exchange Online Protection (EOP) autonomi senza cassette postali di Exchange Online, i messaggi di posta elettronica in ingresso vengono protetti automaticamente dalla posta indesiderata da EOP. Come parte del sistema di difesa dell'organizzazione, EOP utilizza criteri di protezione dalla posta indesiderata, noti anche come criteri di filtro della posta indesiderata o criteri di filtro di contenuti. Per altre informazioni, vedere [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md).
+Per i clienti di Microsoft 365 con cassette postali in Exchange Online o di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online i messaggi di posta elettronica in ingresso vengono protetti automaticamente dalla posta indesiderata da EOP. Come parte del sistema di difesa dell'organizzazione, EOP utilizza criteri di protezione dalla posta indesiderata, noti anche come criteri di filtro della posta indesiderata o criteri di filtro di contenuti. Per altre informazioni, vedere [Protezione dalla posta indesiderata](anti-spam-protection.md).
 
 Gli amministratori possono visualizzare, modificare e configurare, ma non eliminare, il criterio di protezione dalla posta indesiderata predefinito. Per una maggiore granularità, è anche possibile creare criteri di protezione dalla posta indesiderata personalizzati applicabili a utenti, gruppi o domini specifici nell'organizzazione. I criteri personalizzati hanno sempre la precedenza sul criterio predefinito, ma non è possibile modificarne la priorità (in funzione).
 
-È possibile configurare criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità di Office 365 o in PowerShell (PowerShell per Exchange Online per clienti di Office 365; PowerShell per Exchange Online Protection per clienti autonomi di EOP).
+È possibile configurare criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità o in PowerShell (PowerShell di Exchange Online per clienti di Microsoft 365; PowerShell di Exchange Online Protection per clienti di EOP autonomo).
 
-## <a name="anti-spam-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità di Office 365 e PowerShell per Exchange Online o PowerShell per Exchange Online Protection
+## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Differenza tra i criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità e in PowerShell di Exchange Online o PowerShell di Exchange Online Protection
 
 Gli elementi di base del criterio di protezione dalla posta indesiderata in EOP sono:
 
@@ -73,9 +73,9 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell per Exchange Online Protection autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare criteri di protezione dalla posta indesiderata, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore della sicurezza**. Per l'accesso in sola lettura ai criteri di protezione dalla posta indesiderata, è necessario essere un membro del gruppo di ruoli **Ruolo con autorizzazioni di lettura per la sicurezza**. Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità di Office 365](permissions-in-the-security-and-compliance-center.md).
+- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare criteri di protezione dalla posta indesiderata, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore della sicurezza**. Per l'accesso in sola lettura ai criteri di protezione dalla posta indesiderata, è necessario essere un membro del gruppo di ruoli **Ruolo con autorizzazioni di lettura per la sicurezza**. Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-- Per le impostazioni consigliate per i criteri contro la posta indesiderata, vedere [Impostazioni dei criteri di protezione dalla posta indesiderata di EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+- Per le impostazioni consigliate per i criteri antimalware, vedere [Impostazioni dei criteri contro la posta indesiderata di EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>Utilizzare il Centro sicurezza e conformità per creare criteri di protezione dalla posta indesiderata
 
@@ -280,7 +280,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
 3. Fare clic su **Modifica criterio**.
 
-Le impostazioni disponibili nel riquadro a comparsa sono identiche a quelle disponibili nella sezione [Utilizzare il Centro sicurezza e conformità per creare criteri di protezione dalla posta indesiderata](#use-the-security--compliance-center-to-create-anti-spam-policies).
+Per i criteri di protezione dalla posta indesiderata personalizzati, le impostazioni disponibili nel riquadro a comparsa sono identiche a quelle descritte nella sezione [Utilizzare il Centro sicurezza e conformità per creare criteri di protezione dalla posta indesiderata](#use-the-security--compliance-center-to-create-anti-spam-policies).
 
 Per il criterio di protezione dalla posta indesiderata predefinito denominato **Criteri predefiniti di filtro della posta indesiderata**, la sezione **Si applica a** non è disponibile (il criterio si applica a tutti gli utenti) e non è possibile rinominare il criterio.
 
@@ -341,6 +341,11 @@ Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, �
    - **Abilitare le notifiche di posta indesiderata per l'utente finale**: selezionare la casella di controllo per abilitare le notifiche. Per disattivare le notifiche, deselezionare la casella di controllo.
 
    - **Invia notifiche di posta indesiderata per l'utente finale ogni (giorni):**: selezionare la frequenza di invio delle notifiche. Il valore predefinito è 3 giorni. È possibile immettere da 1 a 15 giorni.
+   
+     In un periodo di 24 esistono tre cicli di notifica della posta indesiderata, che partono agli orari seguenti: 01:00 UTC, 08:00 UTC e 16:00 UTC. 
+    
+     > [!NOTE]
+     > Se abbiamo mancato una notifica durante il ciclo precedente, ne verrà eseguito il push in un ciclo successivo. Questo può dare l'impressione di ricevere più notifiche nello stesso giorno.
 
    - **Lingua delle notifiche**: fare clic sul menu a discesa e selezionare una lingua disponibile dall'elenco. Il valore predefinito è **Default**, il che indica che le notifiche di quarantena per gli utenti finali usano la lingua predefinita dell'organizzazione di EOP.
 
@@ -460,7 +465,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentF
 Per visualizzare le regole di filtro della posta indesiderata esistenti, usare la sintassi seguente:
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
 ```
 
 Per visualizzare un elenco riepilogativo di tutte le regole di filtro della posta indesiderata, eseguire questo comando:

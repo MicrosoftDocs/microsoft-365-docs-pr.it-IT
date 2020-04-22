@@ -1,5 +1,5 @@
 ---
-title: Configurazione rapida di Office 365 Advanced eDiscovery
+title: Configurazione rapida di Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
-description: 'Informazioni su come accedere a Office 365 Advanced eDiscovery dal Centro sicurezza e conformità di Office 365 e sul flusso di lavoro tipico per usare Advanced eDiscovery.  '
-ms.openlocfilehash: 1f434fe87fd93ebee03c4300c67214011f646134
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Informazioni su come accedere ad Advanced eDiscovery dal Centro sicurezza e conformità di &amp; e sul flusso di lavoro tipico per usare Advanced eDiscovery.  '
+ms.openlocfilehash: 62c2ef316daafebeba6f91483277ea344039a271
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557846"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632171"
 ---
 # <a name="quick-setup-advanced-ediscovery-classic"></a>Configurazione rapida di Advanced eDiscovery (classico)
 
 > [!IMPORTANT]
-> Microsoft continua a investire in nuove versioni di Advanced eDiscovery e annuncia il ritiro di Office 365 Advanced eDiscovery, noto anche come *Advanced eDiscovery (classico)* o *Advanced eDiscovery v1.0*. Se si usa ancora Advanced eDiscovery v 1.0, passare al più presto ad [Advanced eDiscovery v2.0](overview-ediscovery-20.md), noto anche come *soluzione Advanced eDiscovery in Microsoft 365*. Advanced eDiscovery 2.0 contiene funzionalità simili a quelle disponibili in Advanced eDiscovery v1.0, ma offre anche numerose nuove caratteristiche, come gestione dei responsabili, gestione delle comunicazioni e insiemi da rivedere. Per altre informazioni sul ritiro di Advanced eDiscovery v 1.0, vedere [Ritiro degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> Microsoft continua a investire in nuove versioni di Advanced eDiscovery e annuncia il ritiro di Advanced eDiscovery, noto anche come *Advanced eDiscovery (classico)* o *Advanced eDiscovery v1.0*. Se si usa ancora Advanced eDiscovery v 1.0, passare al più presto ad [Advanced eDiscovery v2.0](overview-ediscovery-20.md), noto anche come *soluzione Advanced eDiscovery in Microsoft 365*. Advanced eDiscovery 2.0 contiene funzionalità simili a quelle disponibili in Advanced eDiscovery v1.0, ma offre anche numerose nuove caratteristiche, come gestione dei responsabili, gestione delle comunicazioni e insiemi da rivedere. Per altre informazioni sul ritiro di Advanced eDiscovery v 1.0, vedere [Ritiro degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
 
 Questa sezione sulla configurazione mostra a un responsabile di eDiscovery del Centro sicurezza e conformità di Microsoft 365 come iniziare a usare Advanced eDiscovery. Si presuppone una conoscenza di entrambi.
   
@@ -37,7 +37,7 @@ Si accede ad Advanced eDiscovery dal Centro sicurezza e conformità. È necessar
   
 Per accedere a un caso in Advanced eDiscovery: 
   
-1. [Accedere al Centro sicurezza e conformità di Office 365](go-to-the-securitycompliance-center.md). 
+1. [Passare al Centro sicurezza &amp; conformità](go-to-the-securitycompliance-center.md) . 
     
 2. Nel Centro sicurezza e conformità, fare clic su **Ricerca e analisi** \> **eDiscovery** per visualizzare l'elenco di casi nell'organizzazione. 
     
@@ -51,7 +51,7 @@ Per accedere a un caso in Advanced eDiscovery:
 
 Il seguente diagramma illustra il flusso di lavoro comune per gestire e usare i casi di eDiscovery nel Centro sicurezza e conformità e in Advanced eDiscovery. 
   
-![Il diagramma mostra il flusso di lavoro di Office 365 Advanced eDiscovery di quattro fasi: installazione, inclusa l'impostazione di utenti e casi, identificazione di dati sui casi, esportazione ed elaborazione. Mostra quindi le fasi di analisi ed esportazione in un computer locale.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
+![Il diagramma mostra il flusso di lavoro di Advanced eDiscovery di quattro fasi: installazione, inclusa l'impostazione di utenti &amp; casi, identificazione di dati sui casi, esportazione ed elaborazione. Mostra quindi le fasi di analisi ed esportazione in un computer locale.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
 La sezione sulla configurazione descrive i primi quattro passaggi del flusso di lavoro. Per una descrizione degli altri passaggi, vedere quanto segue.
   

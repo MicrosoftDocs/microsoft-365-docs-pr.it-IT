@@ -15,25 +15,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Questo scenario di soluzione mostra come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione di Office 365. Questa operazione viene eseguita usando i metadati del documento per classificarne il contenuto, nello specifico applicando automaticamente le etichette di conservazione di Office 365 e configurando la conservazione basata su eventi.
-ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: Questo scenario di soluzione mostra come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione. Questa operazione viene eseguita usando i metadati del documento per classificarne il contenuto, nello specifico applicando automaticamente le etichette di conservazione e configurando la conservazione basata su eventi.
+ms.openlocfilehash: 214384fcdf5099f71c36425102bb62866859f910
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106038"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636394"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gestire il ciclo di vita dei documenti di SharePoint con le etichette di conservazione
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Questo articolo descrive come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione di Office 365, nello specifico tramite l'applicazione automatica e configurando la conservazione basata su eventi. La funzionalità di applicazione automatica sfrutta la classificazione dei documenti mediante l'uso dei metadati di SharePoint. Lo scenario esposto in questo articolo si basa sui documenti relativi al prodotto, ma gli stessi concetti risultano validi anche per altri scenari. Per esempio, nel settore petrolifero e del gas naturale, è possibile gestire il ciclo di vita dei documenti relativi alle risorse fisiche come le piattaforme petrolifere e le registrazioni di log geofisici oppure le licenze di produzione. Nel settore dei servizi finanziari, con questo sistema è possibile gestire i documenti relativi a conti bancari, mutui o contratti di assicurazione. Nel settore pubblico, permette gestire i documenti relativi ai permessi di costruzione o ai moduli fiscali.
+Questo articolo descrive come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione, nello specifico tramite l'applicazione automatica e configurando la conservazione basata su eventi. La funzionalità di applicazione automatica sfrutta la classificazione dei documenti mediante l'uso dei metadati di SharePoint. Lo scenario esposto in questo articolo si basa sui documenti relativi al prodotto, ma gli stessi concetti risultano validi anche per altri scenari. Per esempio, nel settore petrolifero e del gas naturale, è possibile gestire il ciclo di vita dei documenti relativi alle risorse fisiche come le piattaforme petrolifere e le registrazioni di log geofisici oppure le licenze di produzione. Nel settore dei servizi finanziari, con questo sistema è possibile gestire i documenti relativi a conti bancari, mutui o contratti di assicurazione. Nel settore pubblico, permette gestire i documenti relativi ai permessi di costruzione o ai moduli fiscali.
 
 Si passerà ora allo scenario oggetto di questo articolo. L'analisi partirà dall'architettura delle informazioni e dalla definizione delle etichette di conservazione. Dopodiché, si esaminerà la classificazione dei documenti attraverso l'applicazione automatica delle etichette e, infine, la generazione degli eventi che fanno scattare l'inizio del periodo di conservazione.
 
 ## <a name="information-architecture"></a>Architettura delle informazioni
 
-In questo articolo, viene descritto lo scenario di un'azienda manifatturiera che usa SharePoint Online in Office 365 per archiviare tutti i documenti relativi ai prodotti che sviluppa. Tali documenti includono specifiche di prodotto, contratti con fornitori e manuali utenti. Quando un documento viene archiviato in SharePoint come indicato dai criteri di gestione dei contenuti aziendali, si definiscono e utilizzano i metadati specifici del documento per classificarlo. In termini di metadati, ogni documento ha le seguenti proprietà:
+In questo articolo, viene descritto lo scenario di un'azienda manifatturiera che usa SharePoint Online per archiviare tutti i documenti relativi ai prodotti che sviluppa. Tali documenti includono specifiche di prodotto, contratti con fornitori e manuali utenti. Quando un documento viene archiviato in SharePoint come indicato dai criteri di gestione dei contenuti aziendali, si definiscono e utilizzano i metadati specifici del documento per classificarlo. In termini di metadati, ogni documento ha le seguenti proprietà:
 
 - **Tipo di documento** (come specifica di prodotto, contratto e manuale utente)
 
@@ -146,7 +146,7 @@ Ora che l'etichetta di conservazione è stata creata, si passerà all'analisi de
 
 Ora si procederà con l'[applicazione automatica](labels.md#applying-a-retention-label-automatically-based-on-conditions) delle etichette di conservazione create per questo scenario, usando Keyword Query Language (KQL). KQL è il linguaggio utilizzato per la creazione di query di ricerca. Con KQL è possibile compiere ricerche in base a parole chiave o proprietà gestite. Per ulteriori informazioni su KQL, consultare <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
-A un livello elevato, si vuole dire a Office 365 che applichi l'etichetta di conservazione **Specifica di prodotto** a tutti i documenti che hanno **Finale** come **Stato** e **Specifica di prodotto** come **Tipo di documento**. Si ricordi che **Stato** e **Tipo di documento** sono le colonne del sito precedentemente definite per il tipo di contenuto Documentazione di prodotto nella sezione [Architettura delle informazioni](#information-architecture). Per compiere questa operazione, è necessario configurare lo schema di ricerca.
+A livello generale, si vuole dire a Microsoft 365 che applichi l'etichetta di conservazione **Specifica di prodotto** a tutti i documenti che hanno **Finale** come **Stato** e **Specifica di prodotto** come **Tipo di documento**. Si ricordi che **Stato** e **Tipo di documento** sono le colonne del sito precedentemente definite per il tipo di contenuto Documentazione di prodotto nella sezione [Architettura delle informazioni](#information-architecture). Per compiere questa operazione, è necessario configurare lo schema di ricerca.
 
 Quando SharePoint indicizza i contenuti, per ogni colonna del sito genera automaticamente delle proprietà sottoposte a ricerca per indicizzazione. In questo scenario, l'interesse si concentra sulle proprietà **Tipo di documento** e **Stato**. Affinché la ricerca crei delle proprietà sottoposte a ricerca per indicizzazione, all'interno della raccolta risulterà necessaria la presenza di documenti che usano il tipo di contenuto corretto e che le colonne del sito siano compilate.
 
@@ -237,7 +237,7 @@ Dopo aver verificato il corretto funzionamento della query KQL, si potranno crea
 
 6. Inserire un nome per il criterio di etichetta, ad esempio, **Applicare automaticamente l'etichetta Specifica di prodotto**, e una descrizione facoltativa, poi selezionare **Avanti**. 
 
-7. Nella pagina della procedura guidata **Scegli posizioni**, selezionare le posizioni dei contenuti a cui si desidera applicare il criterio. Per questo scenario, il criterio verrà applicato solo alle posizioni di SharePoint, poiché tutti i documenti di produzione sono archiviati solamente nelle raccolte documenti di SharePoint. Selezionare **Consenti la scelta di posizioni specifiche**, disattivare l'interruttore di stato per la posta elettronica di Exchange, gli account di OneDrive e i gruppi di Office 365, verificando che lo stato per i siti di SharePoint sia attivato. 
+7. Nella pagina della procedura guidata **Scegli posizioni**, selezionare le posizioni dei contenuti a cui si desidera applicare il criterio. Per questo scenario, il criterio verrà applicato solo alle posizioni di SharePoint, poiché tutti i documenti di produzione sono archiviati solamente nelle raccolte documenti di SharePoint. Selezionare **Consenti la scelta di posizioni specifiche**, disattivare l'interruttore di stato per la posta elettronica di Exchange, gli account di OneDrive e i gruppi di Microsoft 365, verificando che lo stato per i siti di SharePoint sia attivato. 
 
     ![Scegliere siti specifici per l'applicazione automatica delle etichette](../media/SPRetentionSPlocations.png)
 
@@ -270,7 +270,7 @@ Ora che le etichette di conservazione sono state applicate automaticamente con s
 
 È possibile creare manualmente l'evento all'interno del Centro sicurezza e conformità andando su **Gestione record** > **Eventi** e scegliendo il tipo di evento e impostando gli ID risorsa corretti e una data per l'evento. Per altre informazioni, vedere [Panoramica della conservazione basata su eventi](event-driven-retention.md).
 
-Per questo scenario, l'evento verrà creato automaticamente, generandolo da un sistema di produzione esterno. In questo caso, il sistema che genera l'evento si compone di un semplice elenco di SharePoint che indica se un prodotto è in produzione e di un [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) associato a tale elenco, che attiverà l'evento. In uno scenario reale, un qualsiasi sistema potrebbe generare l'evento, ad esempio un sistema HR o CRM. Microsoft Flow include numerose interazioni pronte all'uso e blocchi predefiniti per i carichi di lavoro di Office 365, ad esempio Exchange, SharePoint, Teams e Dynamics 365, e app di terze parti, come Twitter, Box, Salesforce e Workdays. Questo facilita l'integrazione di Flow con tali sistemi. Per ulteriori informazioni, vedere [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md).
+Per questo scenario, l'evento verrà creato automaticamente, generandolo da un sistema di produzione esterno. In questo caso, il sistema che genera l'evento si compone di un semplice elenco di SharePoint che indica se un prodotto è in produzione e di un [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) associato a tale elenco, che attiverà l'evento. In uno scenario reale, un qualsiasi sistema potrebbe generare l'evento, ad esempio un sistema HR o CRM. Microsoft Flow include numerose interazioni pronte all'uso e blocchi predefiniti per i carichi di lavoro di Microsoft 365, ad esempio Exchange, SharePoint, Teams e Dynamics 365, e app di terze parti, come Twitter, Box, Salesforce e Workdays. Questo facilita l'integrazione di Flow con tali sistemi. Per ulteriori informazioni, vedere [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md).
 
 La schermata seguente mostra l'elenco di SharePoint che verrà utilizzato per attivare l'evento: 
 

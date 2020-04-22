@@ -1,5 +1,5 @@
 ---
-title: 'Passaggio 8: comunicazioni e formazione utente'
+title: Passaggio 8 - Comunicazioni e formazione utente
 f1.keywords:
 - NOCSH
 ms.author: jogruszc
@@ -14,13 +14,13 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informazioni su come preparare gli utenti finali al passaggio a Windows 10 e Office 365 ProPlus tramite comunicazioni e formazione.
-ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su come preparare gli utenti finali al passaggio a Windows 10 e Microsoft 365 Apps for enterprise tramite comunicazioni e formazione.
+ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085125"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636748"
 ---
 # <a name="step-8-user-communications-and-training"></a>Passaggio 8: comunicazioni e formazione utente
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085125"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Passaggio 8: comunicazioni e formazione utente</strong></p>
-<p>Verificare che gli utenti siano informati sulle nuove esperienze e sulle nuove modalità di lavoro quando si passa a Windows 10 e Office 365 ProPlus. Ottenere informazioni su come sfruttare l’assistenza per l’adozione da parte degli utenti con Microsoft FastTrack, sui materiali di formazione e sui modelli di comunicazione, oltre che sui nuovi modi per monitorare l'utilizzo e l’accettazione da parte degli utenti.</p></td>
+<p>Verificare che gli utenti siano informati sulle nuove esperienze e sulle nuove modalità di lavoro quando si passa a Windows 10 e Microsoft 365 Apps for enterprise. Ottenere informazioni su come sfruttare l'assistenza per l'adozione da parte degli utenti con Microsoft FastTrack, sui materiali di formazione e sui modelli di comunicazione, oltre che sui nuovi modi per monitorare l'utilizzo e l’accettazione da parte degli utenti.</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -45,7 +45,7 @@ Se si sta effettuando il passaggio da Windows 7 e Office 2010 o Office 2013, gli
 
 ## <a name="getting-ready-for-new-experiences"></a>Prepararsi a nuove esperienze
 
-A partire da Office, se si sta distribuendo Office 365 ProPlus per la prima volta, si possono comunicare i vantaggi di poter accedere alle app di Office e di salvare i file nei percorsi OneDrive o SharePoint per consentire una condivisione più semplice, ridurre la diramazione dei file e abilitare la creazione condivisa in tempo reale.
+A partire da Office, se si sta distribuendo Microsoft 365 Apps for enterprise per la prima volta, si possono comunicare i vantaggi di poter accedere alle app di Office e di salvare i file nei percorsi OneDrive o SharePoint per consentire una condivisione più semplice, ridurre la diramazione dei file e abilitare la creazione condivisa in tempo reale.
 
 Sono disponibili modelli dettagliati di comunicazione e formazione per queste e altre app locali o basate su browser, come Teams e Planner.
 
@@ -61,7 +61,7 @@ Sono inoltre presenti controlli di sicurezza e conformità visibili cui gli uten
 
 Ad esempio, se è stata attivata l'autenticazione a più fattori, questa utilizza Azure AD e protegge l'accesso dell'utente alle risorse sfruttando l'app o il PIN di un telefono per accedere in modo sicuro ai servizi. Inoltre, Azure Information Protection facilita la classificazione e l'etichettatura dei documenti da parte degli utenti.
 
-[Configurare l'autenticazione a più fattori per utenti di Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Configurare l'autenticazione a più fattori per gli utenti](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 Queste sono solo alcune delle nuove funzionalità che saranno sperimentate dagli utenti e alcune potrebbero coglierli di sorpresa, in modo positivo o meno. Tali sorprese, specialmente se alterano il normale flusso di lavoro, possono comportare più chiamate e ticket per l'helpdesk.
 
@@ -77,7 +77,7 @@ Per ridurre i rischi associati alla modifica dell'esperienza utente, è consigli
 
 La distribuzione a fasi utilizzando gli anelli di distribuzione consiste nell'iniziare la distribuzione a piccoli gruppi, per ampliarla in modo misurato nel tempo. Normalmente, quando viene redatto un piano di comunicazione e formazione, è necessario formare i membri all'interno di questi anelli. In questo modo, si riducono rischi potenziali ed è possibile valutare il proprio approccio, poiché l'operazione di distribuzione viene eseguita più volte, oppure sospendere le attività quando necessario, ad esempio, se l'helpdesk riceve più chiamate del previsto.
 
-Gli anelli di distribuzione sono creati al meglio se effettuati in collaborazione con le unità aziendali e i loro dirigenti. Si consiglia di individuare le date e le ore critiche da evitare per la distribuzione o l'esecuzione di modifiche. Senza un'attenta pianificazione e l'approvazione delle parti interessate, sarà difficile convincere gli utenti ad adottare con serenità gli eventuali cambiamenti in arrivo.
+Il modo migliore per creare gli anelli di distribuzione è in collaborazione con le business unit e i loro dirigenti. Si consiglia di individuare le date e le ore critiche da evitare per la distribuzione o l'esecuzione di modifiche. Senza un'attenta pianificazione e l'approvazione delle parti interessate, sarà difficile convincere gli utenti ad adottare con serenità gli eventuali cambiamenti in arrivo.
 
 ![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
@@ -107,11 +107,11 @@ Per mettere insieme i contenuti della formazione, è possibile accedere a brevi 
 
 Sono disponibili centinaia di argomenti, in base agli argomenti rilevanti per l'organizzazione, tra cui: creazione di contenuti di maggiore impatto, condivisione di siti e contenuti, trasformazione del lavoro di gruppo e sblocco della produttività con dispositivi moderni.
 
-Inoltre, se l'utente utilizza Microsoft 365 o Office 365, è probabile che abbia diritto a ricevere assistenza nel guidare l'adozione da parte degli utenti tramite il servizio Microsoft FastTrack. Una guida illustra le migliori pratiche da adottare durante il processo di implementazione di Microsoft 365 - Windows, Office ed EMS.
+Inoltre, se si usano Microsoft 365 o Office 365, probabilmente si è idonei a ricevere assistenza per promuovere l'adozione da parte degli utenti tramite il servizio Microsoft FastTrack. Il team illustrerà le procedure consigliate per promuovere l'adozione durante il processo di implementazione di Microsoft 365 - Windows, Office e EMS.
 
 #### <a name="microsoft-it-showcase"></a>Microsoft IT Showcase 
 
-La serie Microsoft IT Showcase è un'altra grande risorsa per i contenuti relativi alla distribuzione di Windows 10. Include scadenze e orari, modelli di promozione digitale, modelli di e-mail e contenuti Intranet. Si basano su materiali utilizzati per la distribuzione di Windows 10 di Microsoft e possono essere utilizzati da parte di qualsiasi organizzazione.
+La serie Microsoft IT Showcase è un'altra grande risorsa per i contenuti relativi alla distribuzione di Windows 10. Include scadenze e orari, modelli di promozione digitale, modelli di e-mail e contenuti Intranet, basati su materiale usato per la distribuzione di Windows 10 in Microsoft e modificati per l'uso da parte di qualsiasi organizzazione.
 
 [Preparazione dell'organizzazione per una distribuzione semplice di Windows 10](https://www.microsoft.com/itshowcase/windows10deployment)
 
@@ -123,14 +123,14 @@ Man mano che il progetto pilota si espande, sarà necessario documentare e pubbl
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>Fase 3 e successive: distribuzione generale della produzione 
 
-Nel momento in cui verranno raggiunte ampie fasi di implementazione, i processi, la comunicazione, la formazione e gli strumenti cui accedere autonomamente saranno stati perfezionati. A quel punto sarà possibile usare i dati di diagnostica raccolti per l'assegnazione a un numero sempre maggiore di PC.
+Nel momento in cui verranno raggiunte fasi di implementazione su larga scala, i processi, la comunicazione, la formazione e gli strumenti self-service saranno stati perfezionati. A quel punto sarà possibile usare i dati di diagnostica raccolti per l'assegnazione a un numero sempre maggiore di PC.
 
 Eseguire la distribuzione a una velocità gestibile dal reparto IT, dall'helpdesk, dagli utenti e dalla capacità della rete. È sempre possibile tornare al passaggio 2 del diagramma circolare del processo di distribuzione per ottimizzare ulteriormente la rete utilizzando la cache peer-to-peer, la tecnologia LEDBAT e altre tecniche per facilitare il trasferimento più rapido dei dati relativi all'implementazione.
 
 Oltre ai dati di diagnostica monitorati tramite gli strumenti di analisi, è anche possibile monitorare in modo granulare l'utilizzo dei servizi di Office 365 e Microsoft 365 con report dettagliati sull'utilizzo in base al carico di lavoro nel centro di amministrazione e usando i dashboard di amministrazione tramite Power BI. Si tratta di strumenti validissimi per impostare e tenere traccia degli obiettivi quando vengono implementati nuovi strumenti di collaborazione, come Microsoft Teams, o nuovi modi per condividere file, come OneDrive.
 
-L'accettazione e l'adozione di nuove tecnologie continueranno molto dopo che ogni PC dell'organizzazione avrà installato Windows 10 e Office 365 ProPlus. Inoltre, gli utenti non cambieranno necessariamente il loro modo di lavorare, a meno che non si spenda il giusto tempo per informarli e formarli sulle nuove funzionalità. Infine, con i nuovi modelli di servizio che forniscono nuove funzionalità su base semestrale per Windows e facoltativamente su base mensile per Office, la comunicazione sarà continua.
+L'accettazione e l'adozione delle nuove tecnologie continueranno a lungo dopo l'installazione di Windows 10 e Microsoft 365 Apps for enterprise in ogni PC dell'organizzazione. Inoltre, gli utenti non cambieranno necessariamente il loro modo di lavorare, a meno che non si spenda il giusto tempo per informarli e formarli sulle nuove funzionalità. Infine, con i nuovi modelli di servizio che forniscono nuove funzionalità su base semestrale per Windows e facoltativamente su base mensile per Office, la comunicazione sarà continua.
 
 ## <a name="previous-step"></a>Passaggio precedente 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Passaggio 7: manutenzione di Windows e Office](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[Passaggio 7: manutenzione di Windows e Office](https://aka.ms/mdd7)
