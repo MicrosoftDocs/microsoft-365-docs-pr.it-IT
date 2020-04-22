@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Ottenere supporto tecnico e per la fatturazione tramite i numeri di telefono indicati per la propria area geografica o località, inviando una richiesta di assistenza online o visitando Microsoft Store.
 feedback_system: None
-ms.openlocfilehash: 8f108f4348a7cecd62eba869962d9ee5b179b5b0
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212118"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627079"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore
 
@@ -62,7 +62,7 @@ Il supporto per la fatturazione è disponibile solo in inglese dal lunedì al ve
 
 - **Nel Regno Unito, chiamare il numero 0800 032 6417.**
 
-Se il numero di telefono del supporto di Office 365 o Microsoft 365 Business non è elencato qui sopra, usare il menu a discesa di seguito per scegliere il paese o l'area geografica.
+Se il numero di telefono del supporto di Microsoft 365 per le aziende non è elencato qui sopra, usare il menu a discesa di seguito per scegliere il paese o l'area geografica.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
@@ -70,13 +70,15 @@ Per informazioni su come aprire una richiesta di assistenza, selezionare la sche
 
 ## <a name="in-store-support"></a>[Supporto tecnico in negozio](#tab/instore)
 
-È possibile prendere un appuntamento con un tecnico di Answer Desk presso il Microsoft Store locale per risolvere il problema di Office 365 o di Microsoft 365.
+È possibile prendere un appuntamento con un tecnico di Answer Desk presso il Microsoft Store locale per risolvere il problema di Microsoft 365.
 
 1. Passare alla pagina [Pianificazione Microsoft Store](https://go.microsoft.com/fwlink/?LinkID=2041482) e scegliere **Pianificare un appuntamento**.
 
 2. Immettere la località e ricercare per trovare un Microsoft Store in zona.
 
 3. Scegliere lo store, quindi **Programma appuntamento di servizio ora**.
+
+---
 
 ::: moniker-end
 
@@ -86,7 +88,7 @@ Ogni sottoscrizione di Office 365 eseguita da 21Vianet, il supporto di 21Vianet 
 
 Gli amministratori autorizzati possono utilizzare Office 365 gestito mediante il portale 21Vianet per inviare richieste di assistenza online e accedere ai numero di telefono dell'assistenza. Per istruzioni, vedere [Contattare l'assistenza](#contact-support).
 
-Il team del supporto tecnico Office 365 di 21Vianet provvede alla risoluzione dei problemi correlati solo a Office 365 gestito mediante 21Vianet. I problemi che hanno origine nelle reti dei clienti vanno oltre i limiti del supporto di Office 365 e, in questi casi, i clienti devono collaborare con il proprio team di rete per ricevere assistenza.
+Il team del supporto tecnico di Office 365 gestito da 21Vianet provvede alla risoluzione dei problemi correlati solo a Office 365 gestito da 21Vianet. I problemi che hanno origine nelle reti dei clienti non rientrano nelle competenze del supporto di Office 365 e, in questi casi, i clienti devono collaborare con il proprio team di rete per ricevere assistenza.
 
 ### <a name="community-and-self-service-support-options"></a>Community e opzioni di supporto self-service
 
@@ -120,7 +122,7 @@ Il supporto tecnico per le sottoscrizioni Office 365 gestito mediante 21Vianet f
 
 | Categoria di supporto | Esempi |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installazione e configurazione | Exchange Online  <ul><li>Migrazione delle cassette postali di Office 365</li><li>Configurazione del destinatario (autorizzazioni cassetta postale, configurazione inoltro posta, configurare cassetta postale condivisa)</li><li>Configurazione del servizio di individuazione automatica</li></ul> SharePoint Online <ul><li>Autorizzazioni e gruppi di utenti</li><li>Configurazione di utenti esterni</li></ul> Skype for Business Online  <ul><li>Installazione e creazione di contatti</li></ul> Office 365 ProPlus  <ul><li>Installazione e configurazione</li></ul> |
+| Installazione e configurazione | Exchange Online  <ul><li>Migrazione delle cassette postali di Office 365</li><li>Configurazione del destinatario (autorizzazioni cassetta postale, configurazione inoltro posta, configurare cassetta postale condivisa)</li><li>Configurazione del servizio di individuazione automatica</li></ul> SharePoint Online <ul><li>Autorizzazioni e gruppi di utenti</li><li>Configurazione di utenti esterni</li></ul> Skype for Business Online  <ul><li>Installazione e creazione di contatti</li></ul> App Microsoft 365 per grandi imprese  <ul><li>Installazione e configurazione</li></ul> |
 | Configurazione | Problemi di configurazione del servizio  <ul><li>Single Sign-On</li><li>Sincronizzazione con Active Directory</li></ul> |
 
 > [!NOTE]
@@ -177,7 +179,7 @@ Chiamare il supporto. Se si verificano problemi con la richiesta online, il supp
 
 Gli utenti con ruolo di amministratore sono gli unici nell'organizzazione del cliente autorizzati ad accedere alla sezione Admin del portale Office 365 gestito mediante il portale 21Vianeto e a comunicare direttamente con 21Vianet relativamente alle richieste di assistenza per Office 365.
 
-Con Office 365, è possibile scegliere più tipi di amministratori che si occupano di diverse funzioni. Questa descrizione del servizio utilizza genericamente il termine amministratore per indicare tutte le categorie di amministratori. Per ulteriori informazioni sui tipi di ruoli di amministratore, vedere [Assegnare ruoli di amministratore in Office 365 per aziende](add-users/assign-admin-roles.md).
+Con Office 365, è possibile scegliere più tipi di amministratori che svolgono diverse funzioni. Questa descrizione del servizio utilizza genericamente il termine amministratore per indicare tutte le categorie di amministratori. Per ulteriori informazioni sui tipi di ruoli di amministratore, vedere [Assegnare ruoli di amministratore in Microsoft 365 per le aziende](add-users/assign-admin-roles.md).
 
 L'amministratore è:
 
@@ -236,7 +238,7 @@ Questo articolo si applica ai clienti di Office 365 della Germania, con domini c
 Gli amministratori di Office 365 Germania ottengono accesso gratuito agli operatori del supporto qualificati per ricevere supporto pre-vendita, sugli account e per la fatturazione, oltre che per la risoluzione di problemi tecnici. Possono anche contattare il supporto per conto degli utenti di Office 365 Germania dell'organizzazione.
 
 > [!NOTE]
-> Tutte le opzioni di supporto seguenti sono riferite a Microsoft Cloud Germania. Per ulteriori informazioni su come Microsoft usa i dati forniti quando si contatta il supporto di Microsoft Office 365, vedere l'[informativa sulla privacy](https://go.microsoft.com/fwlink/p/?LinkId=512132).
+> Tutte le opzioni di supporto seguenti sono riferite a Microsoft Cloud Germania. Per ulteriori informazioni su come Microsoft usa i dati forniti quando si contatta il supporto di Microsoft, vedere l'[informativa sulla privacy](https://go.microsoft.com/fwlink/p/?LinkId=512132).
 
 ### <a name="get-assisted-support"></a>Ottenere supporto assistito
 
@@ -253,6 +255,6 @@ Le opzioni di supporto assistito sono riservate agli amministratori delle organi
 
 ### <a name="let-our-community-help"></a>Chiedere aiuto alla community
 
-È anche possibile [effettuare la ricerca di Office 365 sui forum delle community](https://go.microsoft.com/fwlink/p/?LinkId=518605) per trovare problemi noti e argomenti di tendenza oppure per inviare una nuova domanda. I forum della community sono monitorati da agenti del supporto Microsoft qualificati che possono aiutare a risolvere il problema.
+Inoltre, è possibile [effettuare ricerche nei forum della community di Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=518605) per trovare problemi noti e argomenti di tendenza oppure pubblicare nuove domande. I forum della community sono monitorati da agenti del supporto Microsoft qualificati che possono aiutare a risolvere i problemi.
 
 ::: moniker-end

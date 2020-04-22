@@ -1,5 +1,5 @@
 ---
-title: Suggerimenti sui criteri relativi alle password per Office 365
+title: Suggerimenti sui criteri delle password
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Informazioni su come rendere più sicura l'organizzazione da attacchi alle password e perché è necessario bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: 74f78b6abcc3e3aa7eb3c18c858afcd8e916d432
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: eff22b5591893ea10f8e04e8e7f470e8a0bf9079
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516924"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627825"
 ---
-# <a name="password-policy-recommendations-for-office-365"></a>Suggerimenti sui criteri relativi alle password per Office 365
+# <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
  
-L'amministratore di un'organizzazione di Office 365 ha la responsabilità di impostare i criteri per le password degli utenti. Questo articolo fornisce indicazioni su come eseguire questa operazione, che può essere complicata, e suggerimenti per rafforzare la protezione dell'organizzazione dagli attacchi contro le password.
+L'amministratore di un'organizzazione ha la responsabilità di impostare i criteri delle password per gli utenti. Questo articolo fornisce indicazioni su come eseguire questa procedura, che può essere complicata, e suggerimenti per rafforzare la protezione dell'organizzazione dagli attacchi contro le password.
   
-Per determinare la frequenza di scadenza delle password di Office 365 nella propria organizzazione, vedere [Impostare i criteri di scadenza delle password per Office 365](../manage/set-password-expiration-policy.md).
+Per determinare la frequenza di scadenza delle password di Microsoft 365 nella propria organizzazione, vedere [Impostare i criteri di scadenza delle password per Microsoft 365](../manage/set-password-expiration-policy.md).
   
 ## <a name="understanding-password-recommendations"></a>Informazioni sui suggerimenti per la scelta della password
 

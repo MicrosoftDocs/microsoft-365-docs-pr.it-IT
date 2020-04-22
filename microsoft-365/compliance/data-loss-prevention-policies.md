@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
-ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189071"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630603"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -77,9 +77,9 @@ In un criterio DLP sono disponibili alcuni elementi di base:
   
 ![Diagramma che mostra criterio di prevenzione della perita dei dati contenente posizioni e regole](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>Posizioni
+### <a name="locations"></a>Sedi
 
-I criteri di prevenzione della perdita dei dati consentono di trovare e proteggere le informazioni riservate in tutto Office 365, indipendentemente dal fatto che si trovino in un sito di Exchange Online, SharePoint Online, OneDrive for Business o Microsoft Teams. È possibile scegliere di proteggere il contenuto in un messaggio di posta elettronica di Exchange, nei messaggi delle chat e dei canali di Microsoft Teams e in tutte le raccolte di SharePoint o OneDrive o di selezionare percorsi specifici per i criteri.
+I criteri di prevenzione della perdita dei dati consentono di trovare e proteggere le informazioni riservate in tutto Microsoft 365, indipendentemente dal fatto che si trovino in un sito di Exchange Online, SharePoint Online, OneDrive for Business o Microsoft Teams. È possibile scegliere di proteggere il contenuto in un messaggio di posta elettronica di Exchange, nei messaggi delle chat e dei canali di Microsoft Teams e in tutte le raccolte di SharePoint o OneDrive o di selezionare percorsi specifici per i criteri.
   
 ![Opzioni per le posizioni in cui è possibile applicare i criteri di prevenzione della perdita dei dati](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
@@ -121,7 +121,7 @@ Le condizioni disponibili a questo punto consentono di determinare se:
     
 #### <a name="types-of-sensitive-information"></a>Tipi di informazioni riservate
 
-I criteri di prevenzione della perdita dei dati aiutano a proteggere le informazioni riservate definite come **tipo di informazioni riservate**. Office 365 include le definizioni pronte per l'uso di molti tipi comuni di informazioni riservate in diverse aree geografiche, ad esempio numeri di carta di credito, di conto corrente bancario, di carta di identità e di passaporto. 
+I criteri di prevenzione della perdita dei dati aiutano a proteggere le informazioni riservate definite come **tipo di informazioni riservate**. Microsoft 365 include le definizioni pronte per l'uso di molti tipi comuni di informazioni riservate in diverse aree geografiche, ad esempio numeri di carta di credito, di conto corrente bancario, di carta di identità e di passaporto. 
   
 ![Elenco dei tipi di informazioni riservate disponibili](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
@@ -397,7 +397,7 @@ Per passare rapidamente a una sezione, fare clic su un elemento nella barra di s
 
 Il primo passaggio per la creazione dei criteri di prevenzione della perdita dei dati consiste nello scegliere le informazioni da proteggere. Iniziando con un modello di prevenzione della perdita dei dati, si evita lo sforzo di costruire un nuovo gruppo di regole da zero e di capire quali tipi di informazioni dovrebbero essere incluse per impostazione predefinita. È possibile aggiungere o modificare questi requisiti per ottimizzare la regola e rispondere ai requisiti specifici dell'organizzazione.
   
-Un modello di criterio di prevenzione della perdita dei dati preconfigurato consente di rilevare tipi specifici di informazioni riservate, ad esempio i dati HIPAA, PCI-DSS, quelli della norma Gramm-Leach-Biley Act o specifiche informazioni personali locali. Per semplificare la ricerca e la protezione dei tipi comuni di informazioni riservate, i modelli di criteri inclusi in Office 365 includono già i tipi più comuni necessari per iniziare.
+Un modello di criterio di prevenzione della perdita dei dati preconfigurato consente di rilevare tipi specifici di informazioni riservate, ad esempio i dati HIPAA, PCI-DSS, quelli della norma Gramm-Leach-Biley Act o specifiche informazioni personali locali. Per semplificare la ricerca e la protezione dei tipi comuni di informazioni riservate, i modelli di criteri inclusi in Microsoft 365 includono già i tipi più comuni necessari per iniziare.
   
 ![Elenco dei modelli di criteri di prevenzione della perdita dei dati con lo stato attivo sul modello degli Stati Uniti Patriot Act](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -501,11 +501,11 @@ Quando si creano criteri di prevenzione della perdita dei dati che includono Mic
 
 I membri del team conformità addetti alla creazione dei criteri di prevenzione della perdita dei dati necessitano delle autorizzazioni per accedere al Centro sicurezza e conformità. Per impostazione predefinita, l'amministratore del tenant avrà accesso a questa posizione e potrà fornire ai responsabili della conformità e ad altre persone l'accesso al Centro sicurezza e conformità, senza concedere tutte le autorizzazioni di un amministratore del tenant. Per farlo, è consigliabile:
   
-1. Creare un gruppo in Office 365 e aggiungervi i responsabili della conformità.
+1. Creare un gruppo in Microsoft 365 e aggiungervi i responsabili della conformità.
     
 2. Creare un gruppo di ruoli nella pagina **Autorizzazioni** del Centro sicurezza e conformità. 
     
-3. Aggiungere il gruppo di Office 365 al gruppo di ruoli.
+3. Aggiungere il gruppo di Microsoft 365 al gruppo di ruoli.
     
 Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
@@ -519,7 +519,7 @@ Per usare la maggior parte dei cmdlet per il Centro sicurezza e conformità, è 
     
 2. Usare uno di questi [cmdlet policy-and-compliance-dlp](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-I report dei criteri di prevenzione della perdita dei dati devono tuttavia estrarre i dati da Office 365, incluso Exchange Online. Per questo motivo, **i cmdlet per questi report sono disponibili in PowerShell per Exchange Online e non in PowerShell per Centro sicurezza e conformità**. Per usare i cmdlet per i report dei criteri di prevenzione della perdita dei dati, è quindi necessario:
+I report dei criteri di prevenzione della perdita dei dati devono tuttavia estrarre i dati da Microsoft 365, incluso Exchange Online. Per questo motivo, **i cmdlet per questi report sono disponibili in PowerShell per Exchange Online e non in PowerShell per Centro sicurezza e conformità**. Per usare i cmdlet per i report dei criteri di prevenzione della perdita dei dati, è quindi necessario:
   
 1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
@@ -544,4 +544,3 @@ I report dei criteri di prevenzione della perdita dei dati devono tuttavia estra
 - [Cosa individuano le funzioni di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
     
 - [Creare una tipologia personalizzata di informazioni riservate](create-a-custom-sensitive-information-type.md)
-    

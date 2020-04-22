@@ -1,5 +1,5 @@
 ---
-title: Assegnare le autorizzazioni per la cassetta postale a un altro utente in Office 365 - Guida per l'amministratore
+title: Assegnare le autorizzazioni della cassetta postale a un altro utente - Guida per l'amministratore
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Informazioni su come assegnare a un utente il diritto di accedere alla cassetta postale di un altro utente. In questo modo l'utente potrà leggere i messaggi di posta elettronica e inviare messaggi dalla cassetta postale dell'altro utente. "
-ms.openlocfilehash: 695068d2002b20637b6df6a2514b74828f273965
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 5a0677844e8503253561c57f926c9c4fadadd76d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151348"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617171"
 ---
-# <a name="give-mailbox-permissions-to-another-user-in-office-365---admin-help"></a>Assegnare le autorizzazioni per la cassetta postale a un altro utente in Office 365 - Guida per l'amministratore
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Assegnare le autorizzazioni della cassetta postale a un altro utente - Guida per l'amministratore
 
 ::: moniker range="o365-worldwide"
 
@@ -49,11 +49,11 @@ Le autorizzazioni per le cassette postali consentono di concedere a un altro ute
   
 Il primo passaggio del processo di configurazione delle autorizzazioni consiste nel decidere quali azioni potranno essere eseguite dall'altro utente nella cassetta postale specifica. È possibile consentire a un utente di leggere i messaggi di posta elettronica contenuti nella cassetta postale, inviare messaggi per conto di un altro utente oppure inviarli con la cassetta postale come mittente. Per informazioni su come configurare ogni tipo di autorizzazione, vedere gli articoli seguenti:
   
-- [Leggere messaggi di posta elettronica dalla cassetta postale di un altro utente](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
+- [Leggere messaggi di posta elettronica dalla cassetta postale di un altro utente](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
-- [Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
-    
-- [Inviare messaggi di posta elettronica per conto di un utente](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
+- [Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [Inviare e-mail per conto di un altro utente](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **Propagazione delle modifiche:**
   

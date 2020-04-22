@@ -1,5 +1,5 @@
 ---
-title: Confrontare gruppi in Office 365
+title: Confrontare i gruppi
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -18,33 +18,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: Informazioni sui tipi di gruppi che è possibile usare in Office 365.
-ms.openlocfilehash: 7d0a18606918884381b0bf7863cfac6cafb29c29
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Informazioni sui tipi di gruppi che è possibile usare.
+ms.openlocfilehash: 6f44214441c67e14d2cbc7ac12c0e2f3036acb2b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894600"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630714"
 ---
-# <a name="compare-groups"></a>Confrontare gruppi
+# <a name="compare-groups"></a>Confrontare i gruppi
 
 Nella sezione **Gruppi** dell'interfaccia di amministrazione di Microsoft 365 è possibile gestire questi tipi di gruppi: 
 
-- **I gruppi di Office 365** vengono usati per la collaborazione tra gli utenti, sia all'interno che all'esterno dell'azienda.
+- **I gruppi di Microsoft 365** vengono usati per la collaborazione tra gli utenti, sia all'interno che all'esterno dell'azienda.
 - **I gruppi di distribuzione** vengono usati per inviare notifiche a un gruppo di persone.
 - **I gruppi di sicurezza** vengono usati per concedere l'accesso a risorse come i siti di SharePoint.
 - **I gruppi di sicurezza abilitati alla posta elettronica** vengono usati per concedere l'accesso a risorse come SharePoint e per inviare notifiche a tali utenti tramite posta elettronica.
 - **Le cassette postali condivise** vengono usate quando più persone devono accedere alla stessa cassetta postale, ad esempio un'informazione aziendale o un indirizzo di posta elettronica di supporto.
 
-## <a name="office-365-groups"></a>Gruppi di Office 365
+## <a name="microsoft-365-groups"></a>Gruppi di Microsoft 365
 
-I gruppi di Office 365 vengono usati per la collaborazione tra gli utenti, sia all'interno che all'esterno dell'azienda. Con ogni gruppo di Office 365, i membri ottengono un messaggio di posta elettronica di gruppo e un'area di lavoro condivisa per conversazioni, file e eventi del calendario e un planner.
+I gruppi di Microsoft 365 vengono usati per la collaborazione tra gli utenti, sia all'interno che all'esterno dell'azienda. Con ciascun gruppo di Microsoft 365, i membri ottengono un indirizzo e-mail di gruppo e un'area di lavoro condivisa per conversazioni, file e eventi del calendario, oltre a Planner.
 
 È possibile aggiungere persone esterne alla propria organizzazione a un gruppo, purché questo sia stato [abilitato dall'amministratore](manage-guest-access-in-groups.md). È inoltre possibile consentire ai mittenti esterni di inviare messaggi di posta elettronica all'indirizzo di posta elettronica del gruppo.
 
-I gruppi di Office 365 possono essere [configurati per l'appartenenza dinamica in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), consentendo l'aggiunta o la rimozione dei membri del gruppo in base agli attributi degli utenti, ad esempio reparto, posizione, titolo e così via.
+I gruppi di Microsoft 365 possono essere [configurati per l'appartenenza dinamica in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), consentendo l'aggiunta o la rimozione dei membri del gruppo in base agli attributi degli utenti, ad esempio reparto, posizione, titolo e così via.
 
-È possibile accedere ai gruppi di Office 365 tramite app per dispositivi mobili come Outlook per iOS e Outlook per Android.
+È possibile accedere ai gruppi di Microsoft 365 tramite le app per dispositivi mobili come Outlook per iOS e Outlook per Android.
 
 I membri del gruppo possono inviare o inviare per conto dell'indirizzo di posta elettronica del gruppo se l'opzione è stata [abilitata dall'amministratore](allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
@@ -56,7 +56,7 @@ I gruppi di distribuzione sono ideali per quelle situazioni in cui è necessario
 
 ## <a name="security-groups"></a>Gruppi di sicurezza
 
-[I gruppi di sicurezza](../email/create-edit-or-delete-a-security-group.md) vengono usati per concedere l'accesso alle risorse di Office 365, ad esempio SharePoint. Consentono di semplificare l'amministrazione perché è necessario gestire solo il gruppo anziché aggiungere utenti a ogni risorsa singolarmente.
+[I gruppi di sicurezza](../email/create-edit-or-delete-a-security-group.md) vengono usati per concedere l'accesso alle risorse di Microsoft 365, ad esempio SharePoint. Consentono di semplificare l'amministrazione perché è necessario gestire solo il gruppo anziché aggiungere utenti a ogni risorsa singolarmente.
 
 I gruppi di sicurezza possono contenere utenti o dispositivi. La creazione di un gruppo di sicurezza per i dispositivi può essere usata con i servizi di gestione dei dispositivi mobili, ad esempio Intune.
 
@@ -76,8 +76,8 @@ Le cassette postali condivise possono ricevere messaggi esterni se abilitati dal
 
 Gli utenti che dispongono delle autorizzazioni per la cassetta postale del gruppo possono inviare o inviare per conto dell'indirizzo di posta elettronica della cassetta postale, se l'amministratore ha concesso tali autorizzazioni. Questa funzione è particolarmente utile per le cassette postali dell'assistenza e del supporto, perché gli utenti possono inviare messaggi di posta elettronica dal "supporto tecnico Contoso" o dalla "reception dell'edificio A".
 
-Attualmente non è possibile eseguire la migrazione di una cassetta postale condivisa a un gruppo di Office 365. L'argomento trattato è interessante? Grazie per la segnalazione. **[Votare qui](https://go.microsoft.com/fwlink/?linkid=871518)**
+Attualmente non è possibile eseguire la migrazione di una cassetta postale condivisa a un gruppo di Microsoft 365. L'argomento trattato è interessante? Grazie per la segnalazione. **[Votare qui](https://go.microsoft.com/fwlink/?linkid=871518)**
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Informazioni su Gruppi di Office 365](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Informazioni sui gruppi di Microsoft 365](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

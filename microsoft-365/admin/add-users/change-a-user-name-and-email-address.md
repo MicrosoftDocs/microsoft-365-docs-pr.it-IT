@@ -1,5 +1,5 @@
 ---
-title: Cambiare un nome utente e un indirizzo di posta elettronica in Office 365
+title: Cambiare un nome utente e un indirizzo e-mail
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,17 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: "Informazioni su come un amministratore globale può modificare il nome visualizzato e l'indirizzo di posta elettronica di Office 365 di un utente. "
-ms.openlocfilehash: 16dab0f0ac65bccea0e2273e396315a32dd33439
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: "Informazioni su come un amministratore globale può modificare il nome visualizzato e l'indirizzo e-mail di un utente. "
+ms.openlocfilehash: 726d1f01203bbaefc529039d3816fb09c892cd90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241657"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618741"
 ---
-# <a name="change-a-user-name-and-email-address-in-office-365"></a>Cambiare un nome utente e un indirizzo di posta elettronica in Office 365
+# <a name="change-a-user-name-and-email-address"></a>Cambiare un nome utente e un indirizzo e-mail
 
-Può ad esempio rendersi necessario cambiare l'indirizzo di posta elettronica di Office 365 e il nome visualizzato di una persona che si è sposata e ha cambiato il cognome.
+Potrebbe essere necessario modificare l'indirizzo e-mail e il nome visualizzato di una persona che, ad esempio, si è sposata e ha cambiato cognome.
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 ## <a name="change-a-users-email-address"></a>Cambiare l'indirizzo di posta elettronica di un utente
 
-Per eseguire questi passaggi, è necessario essere un [amministratore globale di Office 365](about-admin-roles.md). 
+Per eseguire questi passaggi, è necessario essere un [amministratore globale](about-admin-roles.md). 
 
 ::: moniker range="o365-worldwide"
  
@@ -101,7 +101,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale di
     
     **IMPORTANTE**: l'opzione Imposta come principale non è visualizzata se Office 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
     
-    Inoltre, questa opzione viene visualizzata solo se si è amministratori globali di Office 365. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo di posta elettronica principale di un utente.
+    Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
   
 4. Viene visualizzato un grande simbolo di avvertenza giallo che segnala che si stanno per modificare le informazioni di accesso dell'utente. Selezionare **Salva**, quindi **Chiudi**.
     
@@ -129,7 +129,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale di
     
     **IMPORTANTE**: l'opzione Imposta come principale non è visualizzata se Office 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
     
-    Inoltre, questa opzione viene visualizzata solo se si è amministratori globali di Office 365. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo di posta elettronica principale di un utente.
+    Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
   
 4. Viene visualizzato un grande simbolo di avvertenza giallo che segnala che si stanno per modificare le informazioni di accesso dell'utente. Selezionare **Salva**, quindi **Chiudi**.
     
@@ -157,7 +157,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale di
     
     **IMPORTANTE**: l'opzione Imposta come principale non è visualizzata se Office 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
     
-    Inoltre, questa opzione viene visualizzata solo se si è amministratori globali di Office 365. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo di posta elettronica principale di un utente.
+    Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
   
 4. Viene visualizzato un grande simbolo di avvertenza giallo che segnala che si stanno per modificare le informazioni di accesso dell'utente. Selezionare **Salva**, quindi **Chiudi**.
     
@@ -223,22 +223,22 @@ Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effetti
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Non è possibile trovare un parametro corrispondente al nome 'EmailAddresses'"
 
-Se viene visualizzato il messaggio di errore " **Impossibile trovare un parametro corrispondente al nome 'IndirizziPostaElettronica**", significa che Office 365 sta impiegando più tempo del previsto per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
+Se viene visualizzato il messaggio di errore **Non è possibile trovare un parametro corrispondente al nome "EmailAddresses"**, significa che l'operazione sta impiegando più tempo del previsto per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare"
 
-Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**", significa che non si è amministratori globali di Office 365 e non si hanno le autorizzazioni per modificare il nome dell'utente. Chiedere all'amministratore globale dell'organizzazione di apportare la modifica.
+Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**", significa che non si è un amministratori globali e non si hanno le autorizzazioni per modificare il nome dell'utente. Chiedere all'amministratore globale dell'organizzazione di apportare la modifica.
 
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Cosa fare con gli indirizzi di posta elettronica precedenti
 
 L'indirizzo di posta elettronica principale precedente dell'utente viene mantenuto come indirizzo di posta elettronica aggiuntivo. **È consigliabile non rimuovere l'indirizzo di posta elettronica precedente.**
   
-Alcune persone continueranno probabilmente a inviare posta elettronica al vecchio indirizzo e, se viene eliminato, potrebbero verificarsi errori di mancato recapito. Office 365 instraderà automaticamente i messaggi al nuovo indirizzo. Inoltre, non riutilizzare vecchi gli indirizzi di posta elettronica SMTP per applicarli a nuovi account. Anche questo può causare errori di mancato recapito o la consegna a una cassetta postale sbagliata.
+Alcune persone continueranno probabilmente a inviare e-mail al vecchio indirizzo e, se viene eliminato, potrebbero verificarsi errori di mancato recapito. Microsoft instraderà automaticamente i messaggi al nuovo indirizzo. Inoltre, non riutilizzare vecchi gli indirizzi di e-mail SMTP per applicarli a nuovi account. Anche questo può causare errori di mancato recapito o la consegna a una cassetta postale sbagliata.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>Che succede se la rubrica offline dell'utente non si sincronizza con l'elenco indirizzi globale?
 
-Se l'utente usa Exchange Online oppure se il suo account di Office 365 è collegato all'ambiente di Exchange locale dell'organizzazione, potrebbe essere visualizzato questo messaggio di errore se si prova a cambiare un nome utente e un indirizzo di posta elettronica: "L'utente è sincronizzato con il servizio Active Directory locale. Alcuni dettagli possono essere modificati solo attraverso il servizio Active Directory locale".
+Se l'utente usa Exchange Online o il proprio account è collegato all'ambiente di Exchange locale dell'organizzazione, potrebbe venire visualizzato questo messaggio di errore se si prova a cambiare un nome utente e un indirizzo e-mail: "L'utente è sincronizzato con il servizio Active Directory locale. Alcuni dettagli possono essere modificati solo attraverso il servizio Active Directory locale".
   
 La causa è da attribuire al MOERA (Microsoft Online Email Routing Address). Il MOERA viene creato dall'attributo  _userPrincipalName_ dell'utente in Active Directory e viene automaticamente assegnato all'account del cloud durante la sincronizzazione iniziale. Una volta creato, non può essere modificato o rimosso in Office 365. È possibile in seguito cambiare il nome utente in Active Directory, ma la modifica non verrà applicata al MOERA e si potrebbero verificare errori durante la visualizzazione del nome appena cambiato nell'elenco indirizzi globale. 
   

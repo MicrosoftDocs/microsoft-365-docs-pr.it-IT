@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo Microsoft 365 Enterprise ha soddisfatto le sue esigenze di business.
-ms.openlocfilehash: 3cee0f3e6cd20b0d93038595cdab9270c8eb30aa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068388"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625291"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastruttura IT ed esigenze di business di Contoso
 
@@ -126,7 +126,7 @@ Il reparto IT di Contoso ha associato le esigenze di business alle funzionalità
 | Sicurezza |  |  |
 |  | Gestione di identità e accesso | Account di amministratore globali dedicati con Azure Multi-Factor Authentication (MFA) e Azure AD Privileged Identity Management (PIM) <BR> MFA per tutti gli account utente <BR> Accesso condizionale <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Protezione dalle minacce | Advanced Threat Analytics <BR> Windows Defender <BR> Protezione avanzata dalle minacce <BR> Office 365 Advanced Threat Protection <BR> Analisi delle minacce e risposta alle minacce in Office 365 <BR> |
-|  | Protezione delle informazioni | Azure Information Protection <BR> Prevenzione perdita di dati (DLP) di Office 365 <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | Protezione delle informazioni | Azure Information Protection <BR> Prevenzione della perdita dei dati (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Gestione della sicurezza | Centro sicurezza di Azure  <BR> Windows Defender Security Center |
 | Accesso remoto e mobile e partner commerciali |  |  |
 |  | Migliorare la sicurezza per lavoratori remoti e mobili | Microsoft Intune |
@@ -135,7 +135,7 @@ Il reparto IT di Contoso ha associato le esigenze di business alle funzionalità
 | Conformità |  |  |
 |  | Rispettare i requisiti normativi applicabili | Funzionalità per il GDPR in Office 365 |
 | Gestione |  |  |
-|  | Ridurre la spesa IT per installare gli aggiornamenti del client | Anelli di distribuzione <BR> Aggiornamenti di Windows 10 Enterprise <BR> Aggiornamenti di Office 365 ProPlus |
+|  | Ridurre la spesa IT per installare gli aggiornamenti del client | Anelli di distribuzione <BR> Aggiornamenti di Windows 10 Enterprise <BR> Aggiornamenti di App Microsoft 365 per grandi imprese |
 ||||
 
 ## <a name="next-step"></a>Passaggio successivo

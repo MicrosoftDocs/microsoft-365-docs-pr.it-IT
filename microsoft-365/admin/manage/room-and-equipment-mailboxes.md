@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Creare una cassetta postale sala o attrezzatura in modo che tutti gli utenti dell'organizzazione potranno prenotarla per riunioni o eventi usando Outlook. "
-ms.openlocfilehash: 1690eba40b71972c18f28e02baf0a39d6557651a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 80562901ecc7382ce6e4ff3375b98efd89a991f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361861"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628077"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Cassette postali della sala e attrezzatura
 
-Se si hanno risorse a disposizione di tutti, ad esempio sale riunioni, auto aziendali o attrezzature, occorre un modo per permettere a tutti di prenotarle. Il modo migliore per farlo consiste nel creare una cassetta postale sala o attrezzatura in Office 365 per ogni risorsa. Se ne può creare una per la sala riunioni al primo piano, per le attrezzature multimediali oppure per un camion.
+Se si hanno risorse a disposizione di tutti, ad esempio sale riunioni, auto aziendali o attrezzature, occorre un modo per permettere ad ognuno di prenotarle. Il modo migliore per farlo consiste nel creare una cassetta postale attrezzatura o della sala in Microsoft 365 per ogni risorsa. È consigliabile crearne una per la sala riunioni al primo piano, le attrezzature multimediali o i camion.
   
 Dopo aver creato una cassetta postale sala o attrezzatura, tutti gli utenti aziendali potranno prenotarla per riunioni o eventi usando Outlook. Le prossime due schede ne spiegano l'**uso** e la **configurazione**. Ecco alcune altre domande frequenti sulle cassette postali sala e attrezzatura. 
   
@@ -66,7 +66,7 @@ Per configurare una cassetta postale sala o attrezzatura, passare all'interfacci
   
 2. Seleziona **Aggiungi**.
     
-3. Compilare i campi della sala o attrezzatura:<br/>![Aggiungere una cassetta postale della sala in Office 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Compilare i campi della sala o attrezzatura:<br/>![Aggiungere una cassetta postale della sala in Microsoft 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Sala** o **Attrezzatura**: tipo di cassetta postale che si vuole creare.
     
@@ -105,7 +105,7 @@ Aprire la riunione pianificata in Outlook e quindi rimuovere la sala o l'attrezz
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>Per una cassetta postale della sala o una cassetta postale attrezzatura è necessaria una licenza del prodotto?
 
-No. Anche se per la maggior parte degli utenti dell'organizzazione è necessaria una licenza per usare Office 365, non è necessario assegnare una licenza a una cassetta postale della sala o a una cassetta postale attrezzatura.
+No. Anche se per la maggior parte delle persone dell'organizzazione è necessaria una licenza per usare Microsoft 365, non è necessario assegnare una licenza a una cassetta postale attrezzatura o della sala.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>È necessario definire un proprietario incaricato di prenotare sale e attrezzatura?
 

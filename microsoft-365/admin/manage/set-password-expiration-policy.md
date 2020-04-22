@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: "Informazioni su come impostare i criteri di scadenza delle password per l'organizzazione nell'interfaccia di amministrazione di Microsoft 365. "
-ms.openlocfilehash: 88953317bea2b96c04c291dd028a4e9131b9a83e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bcea72dadb6f10ac4ef80677f3def57eca2724cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361661"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628053"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Impostare i criteri di scadenza delle password per l'organizzazione
 
@@ -40,12 +40,12 @@ Gli amministratori possono fare in modo che la password di un utente scada dopo 
 
 Seguire la procedura seguente se si vogliono impostare le password degli utenti in modo che scadano dopo un determinato periodo di tempo.
 > [!IMPORTANT]
-> Solo gli [amministratori globali di Office 365](../add-users/about-admin-roles.md) possono eseguire questa procedura.
+> Solo gli [amministratori globali](../add-users/about-admin-roles.md) possono eseguire questa procedura.
   
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> **Impostazioni**.
 
 2. Passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sicurezza e privacy</a>.
- Gli utenti che non sono amministratori globali di Office 365 non visualizzeranno l'opzione Sicurezza e privacy.
+ Gli utenti che non sono amministratori globali non visualizzeranno l'opzione Sicurezza e privacy.
   
 3. Selezionare **Criterio di scadenza delle password**.
   
@@ -61,7 +61,7 @@ Seguire la procedura seguente se si vogliono impostare le password degli utenti 
 
 Ecco alcune informazioni utili sul funzionamento di questa funzionalità a partire da gennaio 2018:
   
-- Chi usa solo l'app Outlook non sarà obbligato a reimpostare la password di Office 365 fino alla relativa scadenza nella cache. Questo può avvenire diversi giorni dopo la data di scadenza effettiva. Non ci sono soluzioni alternative a livello di amministratore.
+- Chi usa solo l'app Outlook non sarà obbligato a reimpostare la password di Microsoft 365 fino alla relativa scadenza nella cache. Questo può avvenire diversi giorni dopo la data di scadenza effettiva. Non ci sono soluzioni alternative a livello di amministratore.
     
 - Gli utenti non ricevono una notifica tramite posta elettronica relativa alla scadenza della password dopo un determinato numero di giorni. Questa funzionalità è utile? **[Votare qui.](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
     
@@ -69,10 +69,10 @@ Ecco alcune informazioni utili sul funzionamento di questa funzionalità a parti
 
 In Azure Active Directory è possibile impedire agli utenti di riciclare le vecchie password. Vedere [Impostare i criteri di scadenza delle password per l'organizzazione](https://docs.microsoft.com/office365/admin/manage/set-password-expiration-policy?view=o365-worldwide).
 
-Inoltre, se un dipendente ha usato un dispositivo mobile per accedere a Office 365 è possibile cancellare i dati del dispositivo per assicurarsi che la password non venga più archiviata e riciclata da esso. Informazioni vedere [Cancellare i dati e bloccare il dispositivo mobile di un ex dipendente](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
+Inoltre, se un dipendente ha usato un dispositivo mobile per accedere a Microsoft 365, è possibile cancellare i dati del dispositivo per assicurarsi che la password non venga più memorizzata e riutilizzata nel dispositivo. Informazioni vedere [Cancellare i dati e bloccare il dispositivo mobile di un ex dipendente](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
 
 
-## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-office-365"></a>Sincronizzare gli hash delle password degli utenti da un server di Active Directory locale ad Azure Active Directory (Office 365)
+## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Sincronizzare gli hash delle password degli utenti da un server di Active Directory locale ad Azure Active Directory (Microsoft 365)
 
 Questo articolo spiega come configurare i criteri di scadenza per gli utenti basati solo su cloud (Azure Active Directory). Non si applica agli utenti di identità ibride che usano la sincronizzazione degli hash delle password, l'autenticazione pass-through o la federazione locale, ad esempio ADFS.
   

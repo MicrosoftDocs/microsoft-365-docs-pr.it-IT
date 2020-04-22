@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: 4469197628feb96980ec2d8b560048acba704c54
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 35711e1a17a244a9f68ac88daf665f0328b293b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212306"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628904"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
 > [!NOTE]
 > Se l'organizzazione utilizza un ambiente Exchange ibrido, è necessario ricorrere all'interfaccia di amministrazione di Exchange per creare e gestire cassette postali condivise. Vedere [Creare cassette postali condivise nell'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
-> Se non si sa se creare una cassetta postale condivisa o un gruppo di Office 365 per Outlook, vedere [Confrontare gruppi](../create-groups/compare-groups.md) per indicazioni. Attualmente non è possibile eseguire la migrazione di una cassetta postale condivisa a un gruppo di Office 365. Se si vuole ottenere questa possibilità, inviare commenti e suggerimenti [votando qui](https://go.microsoft.com/fwlink/?linkid=871518).
+> Se non si è sicuri di dover creare una cassetta postale condivisa o un gruppo di Microsoft 365 per Outlook, vedere [Confrontare i gruppi](../create-groups/compare-groups.md) per indicazioni. Notare che al momento non è possibile eseguire la migrazione di una cassetta postale condivisa a un gruppo di Microsoft 365. Se si vuole ottenere questa possibilità, inviare commenti e suggerimenti [votando qui](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Le cassette postali condivise consentono a un gruppo di persone di monitorare e inviare posta elettronica da un indirizzo di posta elettronica comune, come info@contoso.com. Quando un utente del gruppo risponde a un messaggio inviato alla cassetta postale condivisa, il messaggio di risposta sembrerà inviato dalla cassetta postale condivisa, non dal singolo utente.
 
@@ -42,7 +42,7 @@ Prima di creare una cassetta postale condivisa, leggere [Informazioni sulle cass
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Creare una cassetta postale condivisa e aggiungervi membri
   
-1. Effettuare l’accesso con un account amministratore globale di Office 365 o con un account amministratore di Exchange. Se viene visualizzato il messaggio "**Non si dispone dell'autorizzazione necessaria per accedere a questa pagina o eseguire questa azione**", non si è amministratori. 
+1. Effettuare l'accesso con un account amministratore globale o con un account amministratore di Exchange. Se viene visualizzato il messaggio "**Non si dispone dell'autorizzazione necessaria per accedere a questa pagina o eseguire questa azione**", non si è amministratori. 
 
 ::: moniker range="o365-worldwide"
 
@@ -158,7 +158,7 @@ Per ulteriori informazioni sulle cassette postali condivise in Outlook, vedere:
     
     Per le istruzioni, vedere <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Aggiungere una cassetta postale condivisa in Outlook per dispositivi mobili</a>.
 
-- Aprire il browser, accedere a Office 365 e quindi passare a Outlook sul Web. Da Outlook sul web sarà possibile accedere alla cassetta postale condivisa.
+- Aprire il browser, effettuare l'accesso e quindi passare a Outlook sul web. Da Outlook sul web sarà possibile accedere alla cassetta postale condivisa.
 
     Per le istruzioni, vedere <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Aggiungere una cassetta postale condivisa in Outlook sul web</a>.
 

@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Ottenere un report periodico sul modo in cui gli utenti dell'organizzazione usano i servizi di Office 365. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+description: Ottenere un report periodico sulle modalità di utilizzo dei servizi di Microsoft 365 da parte degli utenti dell'organizzazione. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
+ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204057"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621271"
 ---
-# <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Report sulle attività nell'interfaccia di amministrazione di Microsoft 365
+# <a name="microsoft-365-reports-in-the-admin-center"></a>Report di Microsoft 365 nell'interfaccia di amministrazione
 
-È possibile vedere facilmente come vengono usati i servizi di Office 365 dalle persone nell'azienda. Ad esempio, è possibile identificare chi usa molto un servizio e raggiunge le quote o chi potrebbe non avere necessità di una licenza di Office 365.
+È possibile vedere facilmente come vengono usati i servizi di Microsoft 365 dalle persone nell'azienda. Ad esempio, è possibile identificare chi usa molto un servizio e raggiunge le quote o chi potrebbe non avere necessità di una licenza di Microsoft 365.
   
 I report sono disponibili per gli ultimi 7, 30, 90 e 180 giorni. I dati per tutti i periodi di riferimento non saranno subito disponibili. I report diventeranno disponibili entro 48 ore.
   
@@ -58,7 +58,7 @@ Guardare questo video per una panoramica sull'uso dei report:
 ::: moniker-end
 
    
-2. Scegliere **Seleziona un report** nella parte superiore del dashboard per selezionare un report nell'elenco dei report disponibili. In alternativa, selezionare un widget immediato sulle attività per un servizio, ad esempio posta elettronica, OneDrive e così via, per visualizzare altre informazioni. <br/>![Dashboard utilizzo di Office 365](../../media/usage-report-dashboard.png)
+2. Scegliere **Seleziona un report** nella parte superiore del dashboard per selezionare un report nell'elenco dei report disponibili. In alternativa, selezionare un widget immediato sulle attività per un servizio, ad esempio posta elettronica, OneDrive e così via, per visualizzare altre informazioni. <br/>![La dashboard di utilizzo](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Chi può vedere i report
 
@@ -87,7 +87,6 @@ Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../add
 In base all'abbonamento, questi sono i report disponibili.
   
 - [Attività di posta elettronica](email-activity.md)
-- [Attività di Forms](forms-activity.md)
     
 - [Utilizzo delle cassette postali](mailbox-usage.md)
     
@@ -96,12 +95,15 @@ In base all'abbonamento, questi sono i report disponibili.
 - [Utenti attivi](active-users.md)
   
 - [Utilizzo delle applicazioni di posta elettronica](email-apps-usage.md)
+
+- [Attività di Forms](forms-activity.md)
   
-- [Gruppi di Office 365](office-365-groups.md)
+- [Gruppi di Microsoft 365](office-365-groups.md)
   
 - [Attività degli utenti di OneDrive for Business](onedrive-for-business-activity.md)
   
 - [Utilizzo di OneDrive for Business](onedrive-for-business-usage.md)
+
 - [Utilizzo di ProPlus](microsoft365-apps-usage.md)
   
 - [Utilizzo dei sito di SharePoint](sharepoint-site-usage.md)
@@ -170,7 +172,7 @@ Se si vogliono nascondere le informazioni a livello di utente quando si generano
   
 L'elenco di utenti avrà questo aspetto:
   
-![Report di Office 365 - elenco utenti anonimi](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Report - Elenco utenti anonimi](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Perché le modifiche abbiano effetto sui report nella dashboard dei report occorrerà qualche minuto. Questa impostazione si applica anche all'API dei report.
   
@@ -184,4 +186,3 @@ Tuttavia, quando si seleziona un giorno specifico (vedere numero 3), fino a 28 g
 
 [Report nel Centro sicurezza &amp; conformità](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
-

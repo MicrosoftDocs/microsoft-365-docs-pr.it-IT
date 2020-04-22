@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio apre ticket di supporto presso Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: ec601e5860460ab77760a5e18c834b987c6b3d07
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151396"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618921"
 ---
 # <a name="about-admin-roles"></a>Informazioni sui ruoli di amministratore
 
@@ -73,10 +73,10 @@ Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazio
 
 |Ruolo di amministratore     |A chi è opportuno assegnare questo ruolo?  |
 |---------|---------|
-|Amministratore di Exchange     |   Assegnare il ruolo di amministratore di Exchange agli utenti che hanno la necessità di visualizzare e gestire le cassette postali di posta elettronica dell'utente, i gruppi di Office 365 e Exchange Online. <br><br> Gli amministratori di Exchange possono anche:<br> - Recuperare gli elementi eliminati nella cassetta postale di un utente <br> - Configurare i delegati "Invia come"e "Invia per conto di" <br>  |
+|Amministratore di Exchange     |   Assegnare il ruolo di amministratore di Exchange agli utenti che hanno la necessità di visualizzare e gestire le cassette postali di posta elettronica degli utenti, i gruppi di Microsoft 365 ed Exchange Online. <br><br> Gli amministratori di Exchange possono anche:<br> - Recuperare gli elementi eliminati nella cassetta postale di un utente <br> - Configurare i delegati "Invia come"e "Invia per conto di" <br>  |
 |Amministratore globale     |   Assegnare il ruolo di amministratore globale agli utenti che hanno bisogno dell'accesso globale alla maggior parte delle funzionalità di gestione e dei dati in Microsoft Online Services. <br><br> Concedere l'accesso globale a troppi utenti costituisce un rischio per la sicurezza; si consiglia di configurare tra 2 e 4 amministratori globali. <br><br> Solo gli amministratori globali possono:<br> - Reimpostare le password per tutti gli utenti <br> - Aggiungere e gestire domini <br> <br> **Nota:** la persona che ha effettuato l'iscrizione ai Microsoft Online Services diventa automaticamente un amministratore globale. |
 |Ruolo con autorizzazioni di lettura globali    |   Assegnare il ruolo con autorizzazioni di lettura globali agli utenti che hanno l'esigenza di visualizzare funzionalità e impostazioni di amministrazione nelle interfacce di amministrazione che l'amministratore globale può visualizzare. L'amministratore con il ruolo con autorizzazioni di lettura globali non può modificare impostazioni.   |
-|Amministratore gruppi     |   Assegna il ruolo di amministratore dei gruppi agli utenti che devono gestire tutte le impostazioni dei gruppi nelle interfacce di amministrazione, compresi l'interfaccia di amministrazione di Microsoft 365 e il portale di Azure Active Directory. <br><br> Gli amministratori dei gruppi possono:<br> - Creare, modificare, eliminare e ripristinare gruppi di Office 365 <br> - Creare e aggiornare criteri per la creazione, la scadenza e la denominazione dei gruppi <br> - Creare, modificare, eliminare e ripristinare gruppi di sicurezza di Azure Active Directory| 
+|Amministratore gruppi     |   Assegna il ruolo di amministratore dei gruppi agli utenti che devono gestire tutte le impostazioni dei gruppi nelle interfacce di amministrazione, compresi l'interfaccia di amministrazione di Microsoft 365 e il portale di Azure Active Directory. <br><br> Gli amministratori dei gruppi possono:<br> - Creare, modificare, eliminare e ripristinare gruppi di Microsoft 365 <br> - Creare e aggiornare criteri per la creazione, la scadenza e la denominazione dei gruppi <br> - Creare, modificare, eliminare e ripristinare gruppi di sicurezza di Azure Active Directory| 
 |Amministratore di supporto tecnico     |   Assegnare il ruolo di amministratore di supporto tecnico agli utenti che devono eseguire le azioni seguenti:<br> - Reimpostare password <br> - Forzare gli utenti a disconnettersi <br> - Gestire le richieste di servizio <br> - Monitorare l'integrità dei servizi <br> <br> **Nota**: l'amministratore di supporto tecnico può solo assistere gli utenti che non sono amministratori e gli utenti a cui sono assegnati i ruoli seguenti: ruolo con autorizzazioni di lettura nella directory, mittente dell'invito guest, amministratore di supporto tecnico, ruolo con autorizzazioni di lettura per il Centro messaggi e ruolo con autorizzazioni di lettura per i report.      |
 |Amministratore delle app di Office    |   Assegnare il ruolo di amministratore delle app di Office agli utenti che devono eseguire le operazioni seguenti: <br> - Usare il servizio di criteri cloud di Office per creare e gestire i criteri basati su cloud per Office <br> - Creare e gestire richieste di servizio <br> - Gestire i contenuti "Novità" che gli utenti vedono nelle app di Office   <br> - Monitorare l'integrità dei servizi  |
 |Amministratore del servizio    |   Assegnare il ruolo di amministratore del servizio come ruolo aggiuntivo agli amministratori o agli utenti che devono eseguire le operazioni seguenti, anche se non sono incluse nel loro ruolo: <br> - Aprire e gestire le richieste di servizio <br> - Visualizzare e condividere i post del Centro messaggi   |
@@ -127,9 +127,9 @@ Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazio
 |Operatore della sicurezza     |    Esamina e risponde agli avvisi di sicurezza, gestisce le funzionalità del Centro protezione identità, monitora l'integrità dei servizi.     |
 |Ruolo con autorizzazioni di lettura per la sicurezza     |    Dispone dell'accesso in sola lettura alle funzionalità di sicurezza, ai report di accesso e ai log di controllo.     |
 |Amministratore del supporto dei servizi     |    Crea richieste di servizio per i servizi Azure, Microsoft 365 e Office 365 e monitora l'integrità dei servizi.     |
-|Amministratore di SharePoint     |    Ha accesso completo a SharePoint Online, gestisce i gruppi di Office 365, gestisce le richieste di servizio e monitora l'integrità dei servizi.     |
+|Amministratore di SharePoint     |    Ha accesso completo a SharePoint Online, gestisce i gruppi di Microsoft 365, gestisce le richieste di servizio e monitora l'integrità dei servizi.     |
 |Amministratore di Skype for Business     | Ha accesso completo a tutte le funzionalità di Teams e Skype e agli attributi degli utenti di Skype, gestisce le richieste di servizio e monitora l'integrità dei servizi.      |
-|Amministratore di Teams     |    Ha accesso completo all'interfaccia di amministrazione di Teams e Skype, gestisce richieste di servizio e gruppi di Office 365 e monitora l'integrità dei servizi.     |
+|Amministratore di Teams     |    Ha accesso completo all'interfaccia di amministrazione di Teams e Skype, gestisce richieste di servizio e gruppi di Microsoft 365 e monitora l'integrità dei servizi.     |
 |Amministratore della comunicazione di Teams     |    Assegna i numeri di telefono, crea e gestisce i criteri vocali e delle riunioni e legge l'analisi delle chiamate.     |
 |Tecnico del supporto delle comunicazioni di Teams     |    Legge i dettagli del registro chiamate per tutti i partecipanti per risolvere i problemi di comunicazione.     |
 |Specialista del supporto delle comunicazioni di Teams     |    Legge i dettagli delle chiamate degli utenti solo per un utente specifico per risolvere i problemi di comunicazione.|

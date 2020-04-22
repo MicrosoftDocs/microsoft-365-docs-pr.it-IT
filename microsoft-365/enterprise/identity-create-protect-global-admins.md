@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gli account di amministratore globale devono avere un trattamento speciale per proteggerli dal compromesso delle credenziali.
-ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c23a5730bc4c6af1f7fd829a40b63cc7ccc89184
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633574"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621307"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Passaggio 1: creare e proteggere gli account di amministratore globale
 
@@ -41,7 +41,7 @@ Per gli account di amministratore globale dedicati, è necessario inoltre:
 1. Testare l'account di ogni utente o le impostazioni dell'autenticazione a più fattori di Azure basata sull'accesso condizionale in un account utente di prova per assicurarsi che l'autenticazione a più fattori funzioni correttamente e come previsto. L'autenticazione a più fattori richiede una seconda forma di autenticazione, come il codice di verifica inviato a uno smartphone.
 2. Creare e attivare un criterio di Accesso Condizionale per gli account di amministratore globale che richiedono l’autenticazione a due fattori e usare la forma più complessa di autenticazione secondaria disponibile nell'organizzazione. Per altre informazioni, vedere [Autenticazione a più fattori di Azure](identity-access-prerequisites.md#protecting-administrator-accounts).
 
-Per ulteriori protezioni, vedere [Proteggere gli account di amministratore globale di Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
+Per protezioni aggiuntive, vedere [Proteggere gli account di amministratore globale](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
 
 > [!Note]
 > Gli account di emergenza per scenari break-glass in situazioni di emergenza come cyberattacco devono essere solo account cloud. Potrebbero essere presenti anche degli account di amministratore globale (idonei o permanenti) che non sono solo cloud. Per altre informazioni, vedere [Gestire gli account amministrativi di accesso di emergenza in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access).
@@ -86,9 +86,9 @@ Come checkpoint provvisorio, è possibile vedere i [criteri uscita](identity-exi
 <a name="identity-pam"></a>
 ## <a name="privileged-access-management"></a>Gestione accessi con privilegi
 
-La gestione degli accessi con privilegi è abilitata mediante la configurazione di criteri che specificano l'accesso just-in-time per le operazioni basate sulle attività nel tenant di Office 365. Può aumentare il livello di protezione dell'organizzazione da violazioni che possono usare account di amministratore privilegiato esistenti con accesso permanente a dati riservati o con accesso a impostazioni di configurazione cruciali. Ad esempio, è possibile configurare un criterio di gestione degli accessi con privilegi che richiede l'approvazione esplicita per accedere e modificare le impostazioni delle cassette postali dell'organizzazione nel tenant di Office 365.
+La gestione degli accessi con privilegi è abilitata mediante la configurazione di criteri che specificano l'accesso just-in-time per le operazioni basate sulle attività nel tenant. Può aumentare il livello di protezione dell'organizzazione da violazioni che possono usare gli account amministratore con privilegi esistenti con accesso permanente a dati sensibili o con accesso a impostazioni di configurazione cruciali. Ad esempio, è possibile configurare un criterio di gestione degli accessi con privilegi che richiede l'approvazione esplicita per accedere e modificare le impostazioni delle cassette postali dell'organizzazione nel tenant.
 
-In questo passaggio verrà abilitata la gestione degli accessi con privilegi nel tenant di Office 365 e verranno configurati i criteri di accesso con privilegi che garantiscono una maggiore protezione per gli accessi basati sulle attività a impostazioni dati e configurazione di Office 365 dell’organizzazione. Esistono tre passaggi di base per iniziare a usare gli accessi con privilegi nell'organizzazione di Office 365:
+In questo passaggio verrà abilitata la gestione degli accessi con privilegi nel tenant e verranno configurati i criteri di accesso con privilegi che garantiscono una maggiore protezione per gli accessi basati sulle attività a impostazioni dati e configurazione dell'organizzazione. Esistono tre passaggi di base per iniziare a usare gli accessi con privilegi nell'organizzazione:
 
 - Creazione di un gruppo responsabile dell'approvazione
 - Abilitazione dell’accesso con privilegi
@@ -96,9 +96,9 @@ In questo passaggio verrà abilitata la gestione degli accessi con privilegi nel
 
 Una volta configurata, la gestione degli accessi con privilegi consentirà all'organizzazione di operare con privilegi permanenti uguali a zero e di fornire un livello di protezione contro vulnerabilità che si verificano a causa di questo tipo di accesso amministrativo permanente. L’accesso con privilegi richiede l'approvazione per l'esecuzione di tutte le attività associate a un criterio di approvazione definito. Gli utenti che necessitano di eseguire attività incluse nei criteri di approvazione devono richiedere e ottenere l'approvazione di accesso per disporre delle autorizzazioni necessarie a eseguire le attività definite nel criterio.
 
-Per abilitare la gestione degli accessi con privilegi di Office 365, vedere l’argomento [Configurare la gestione degli accessi con privilegi in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
+Per abilitare la gestione degli accessi con privilegi, consultare l'argomento [Configurare la gestione degli accessi con privilegi](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
 
-Per ulteriori informazioni, vedere l’argomento [Gestione degli accessi con privilegi in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+Per ulteriori informazioni, consultare l'argomento [Gestione degli accessi con privilegi](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
 
 |||

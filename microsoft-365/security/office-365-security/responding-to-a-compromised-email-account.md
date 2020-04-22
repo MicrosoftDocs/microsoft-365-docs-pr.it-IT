@@ -1,5 +1,5 @@
 ---
-title: Rispondere a un account di posta elettronica compromesso in Office 365
+title: Rispondere a un account di posta elettronica compromesso
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,26 +15,26 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365
-ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Microsoft 365
+ms.openlocfilehash: 65e3827b578eec2f851c45d9acc69fb7132d01b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372484"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634341"
 ---
-# <a name="responding-to-a-compromised-email-account-in-office-365"></a>Rispondere a un account di posta elettronica compromesso in Office 365
+# <a name="responding-to-a-compromised-email-account"></a>Rispondere a un account di posta elettronica compromesso
 
-**Riepilogo** Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365.
+**Riepilogo** Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Microsoft 365.
 
-## <a name="what-is-a-compromised-email-account-in-office-365"></a>Che cos'è un account di posta elettronica compromesso in Office 365?
+## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a>Che cos'è un account di posta elettronica compromesso in Microsoft 365?
 
-L’accesso alle cassette postali, dati e altri servizi di Office 365 viene controllato tramite l’uso di credenziali, ad esempio un nome utente e la password o PIN. Quando un utente diverso da quello previsto sottrae queste credenziali, queste sono considerate compromesse. Con queste l'utente malintenzionato può accedere come utente originale ed effettuare operazioni illegali.
-Usando le credenziali rubate, l'autore dell'attacco può accedere alla cassetta postale di Office 365, alle cartelle di SharePoint o ai file in OneDrive dell'utente. Un’operazione vista comunemente è l’invio da parte del pirata informatico di messaggi di posta elettronica a destinatari sia interni che esterni all'organizzazione dell'utente originale. Quando un utente malintenzionato invia dei dati tramite messaggi di posta elettronica a destinatari esterni, si chiama esfiltrazione di dati.
+L’accesso alle cassette postali, dati e altri servizi di Microsoft 365 viene controllato tramite l’uso di credenziali, ad esempio un nome utente e la password o il PIN. Quando un utente diverso da quello previsto sottrae queste credenziali, queste sono considerate compromesse. Con queste l'utente malintenzionato può accedere come utente originale ed effettuare operazioni illegali.
+Usando le credenziali rubate, l'autore dell'attacco può accedere alla cassetta postale di Microsoft 365, alle cartelle di SharePoint o ai file in OneDrive dell'utente. Un’operazione vista comunemente è l’invio da parte del pirata informatico di messaggi di posta elettronica a destinatari sia interni che esterni all'organizzazione dell'utente originale. Quando un utente malintenzionato invia dei dati tramite messaggi di posta elettronica a destinatari esterni, si chiama esfiltrazione di dati.
 
-## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Sintomi di un account di posta elettronica compromesso di Office 365
+## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>Sintomi di un account di posta elettronica Microsoft compromesso
 
-Gli utenti potrebbero notare e segnalare attività insolite nelle proprie cassette postali di Office 365. Ecco i sintomi più comuni:
+Gli utenti potrebbero notare e segnalare attività insolite nelle proprie cassette postali di Microsoft 365. Ecco i sintomi più comuni:
 
 - Attività sospette, ad esempio messaggi di posta elettronica mancanti o eliminati.
 
@@ -58,9 +58,9 @@ Gli utenti potrebbero notare e segnalare attività insolite nelle proprie casset
 
 Se un utente segnala qualsiasi dei sintomi precedenti, è necessario eseguire ulteriori analisi. Il Centro sicurezza e conformità di Microsoft 365 e il portale di Azure offfrono strumenti che consentono di analizzare le attività di un account utente che si sospetta potrebbe essere compromesso.
 
-- **Log di controllo unificati di Office 365 nel Centro sicurezza e conformità**: esaminare tutte le attività nell'account sospetto filtrando i risultati per l'intervallo di date che si estendono da immediatamente prima delle attività sospette alla data attuale. Non filtrare le attività durante la ricerca.
+- **Log di controllo unificati nel Centro sicurezza e conformità**: esaminare tutte le attività nell'account sospetto filtrando i risultati per l'intervallo di date che si estendono da immediatamente prima delle attività sospette alla data attuale. Non filtrare le attività durante la ricerca.
 
-- **Log di controllo dell'amministratore di Office 365 nell'interfaccia di amministrazione di Exchange**: in Exchange Online è possibile usare l'interfaccia di amministrazione di Exchange per cercare e visualizzare voci nel log di controllo dell'amministratore. Il log di controllo dell'amministratore registra operazioni specifiche, basate su cmdlet di PowerShell per Exchange Online, eseguite dagli amministratori e dagli utenti che dispongono di privilegi amministrativi. Le voci nel registro di controllo dell'amministratore forniscono informazioni sul cmdlet eseguito, sui parametri utilizzati, sull'utente che ha eseguito il cmdlet e sugli oggetti coinvolti.
+- **Log di controllo dell'amministratore nell'interfaccia di amministrazione di Exchange**: in Exchange Online è possibile usare l'interfaccia di amministrazione di Exchange per cercare e visualizzare voci nel log di controllo dell'amministratore. Il log di controllo dell'amministratore registra operazioni specifiche, basate su cmdlet di PowerShell per Exchange Online, eseguite dagli amministratori e dagli utenti che dispongono di privilegi amministrativi. Le voci nel registro di controllo dell'amministratore forniscono informazioni sul cmdlet eseguito, sui parametri utilizzati, sull'utente che ha eseguito il cmdlet e sugli oggetti coinvolti.
 
 - **Log di accesso di Azure AD e altri report sui rischi disponibili nel portale di Azure AD**: esaminare i valori nelle colonne seguenti:
 
@@ -72,7 +72,7 @@ Se un utente segnala qualsiasi dei sintomi precedenti, è necessario eseguire ul
 
   - Esito dell’accesso
 
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>Come proteggere e ripristinare la funzione di posta elettronica in un potenziale account e cassetta postale di Office 365 compromessi.
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>Come proteggere e ripristinare la funzione di posta elettronica in un potenziale account e cassetta postale di Microsoft 365 compromessi.
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
@@ -85,7 +85,7 @@ Anche l’accesso all’account è stato riacquisito rapidamente, un utente mali
 > [!WARNING]
 > Non inviare la nuova password per l'utente desiderato tramite posta elettronica, poiché l’utente malintenzionato potrebbe ancora avere accesso alla cassetta postale.
 
-1. Seguire i passaggi descritti in Reimpostare la password di un altro utente in Office 365 Business per altri utenti in[Reimpostare le password aziendali di Office 365](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Seguire i passaggi descritti in Reimpostare la password di App Microsoft 365 for business per altri utenti in[Reimpostare le password per App Microsoft 365 for business](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
 
 **Note**:
 
@@ -93,7 +93,7 @@ Anche l’accesso all’account è stato riacquisito rapidamente, un utente mali
 
 - Non riutilizzare le cinque password più recenti. Anche se il requisito di cronologia delle password consente di riutilizzare una password più recente, è necessario sceglierla in modo che un utente malintenzionato non possa indovinarla.
 
-- Se l'identità dell'utente locale è federata con Office 365, è necessario cambiare la password locale e quindi informare l'amministratore della violazione.
+- Se l'identità dell'utente locale è federata con Microsoft 365, è necessario cambiare la password locale e quindi informare l'amministratore della violazione.
 
 > [!TIP]
 > È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi.  Altre informazioni su MFA sono disponibili [qui](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -178,13 +178,13 @@ Per sbloccare l’invio di posta elettronica da una cassetta postale, seguire le
 
 1. Assicurarsi di verificare i messaggi inviati. Potrebbe essere necessario informare gli utenti nell'elenco dei contatti che l'account è stato compromesso. Un utente malintenzionato potrebbe aver richiesto loro del denaro, fingendo (spoofing) che l’utente originale si trovasse bloccato in un paese/area geografica diversa e avesse necessità di denaro, oppure il malintenzionato potrebbe anche inviare dei virus per assumere il controllo dei loro computer. 
 
-2. Qualsiasi altro servizio utilizzato con l'account di Exchange e il suo account di posta elettronica alternativo potrebbe essere compromesso. Prima di tutto, eseguire questi passaggi per l'abbonamento a Office 365 e seguire la stessa procedura per gli altri account.
+2. Qualsiasi altro servizio utilizzato con l'account di Exchange e il suo account di posta elettronica alternativo potrebbe essere compromesso. Prima di tutto, eseguire questi passaggi per l'abbonamento a Microsoft 365 poi seguire la stessa procedura per gli altri account.
 
 3. Assicurarsi che le informazioni di contatto, ad esempio numeri di telefono e indirizzi, siano corrette.
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteggere Microsoft 365 come un professionista della sicurezza informatica
 
-L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.
+L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Usare la [Roadmap della sicurezza di Microsoft 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Microsoft 365.
 
 - Attività da eseguire i primi 30 giorni.  Queste hanno effetto immediato e sono a basso impatto per gli utenti.
 
@@ -194,7 +194,7 @@ L'abbonamento a Office 365 include un potente set di funzionalità di protezione
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Internet Crime Complaint Center](https://www.ic3.gov/preventiontips.aspx)
 

@@ -1,5 +1,5 @@
 ---
-title: Cercare i messaggi di posta elettronica ed eliminarli dall'organizzazione di Office 365
+title: Cercare ed eliminare messaggi di posta elettronica nell'organizzazione
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità di Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: c05b6addf2fe50a5e6130e3c53fa1df02e50de30
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
+ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516831"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626442"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Cercare ed eliminare messaggi di posta elettronica
 
 **Questo articolo è rivolto agli amministratori. Per cercare gli elementi nella propria cassetta postale per eliminarli, vedere [Trovare un messaggio o un elemento con Ricerca immediata](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
    
-È possibile utilizzare la funzionalità Ricerca contenuto in Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali nell'organizzazione. Ciò è utile per trovare e rimuovere messaggi potenzialmente dannosi o ad alto rischio, ad esempio:
+È possibile utilizzare la funzionalità Ricerca contenuto per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali nell'organizzazione. Ciò è utile per trovare e rimuovere messaggi potenzialmente dannosi o ad alto rischio, ad esempio:
   
 - Messaggi contenenti virus o allegati pericolosi
 
@@ -105,7 +105,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 Il passaggio successivo consiste nel connettersi a PowerShell in Centro sicurezza e conformità per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-Se l'account di Office 365 usa l'autenticazione a più fattori o l'autenticazione federata, non è possibile usare le istruzioni riportate nell'argomento precedente per la connessione a PowerShell in Centro sicurezza e conformità. Per farlo, vedere le istruzioni nell’argomento [Connettersi a PowerShell in Centro sicurezza e conformità mediante l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+Se l'account di Microsoft 365 usa l'autenticazione a più fattori o l'autenticazione federata, non è possibile usare le istruzioni riportate nell'argomento precedente per la connessione a PowerShell in Centro sicurezza e conformità. Per farlo, vedere le istruzioni nell’argomento [Connettersi a PowerShell in Centro sicurezza e conformità mediante l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
 
 Dopo essersi connessi a PowerShell per il Centro sicurezza e conformità, eseguire i cmdlet **New-ComplianceSearch** e **Start-ComplianceSearch** che preparati nel passaggio precedente.
   
@@ -137,9 +137,9 @@ Per altre informazioni, vedere [New-ComplianceSearchAction](https://docs.microso
     
 - **Cosa succede dopo l'eliminazione di un messaggio?**
 
-   Un messaggio eliminato con il comando `New-ComplianceSearchAction -Purge -PurgeType HardDelete` viene spostato nella cartella Ripuliture e non è accessibile all'utente. Una volta spostato nella cartella Ripuliture, il messaggio viene conservato per la durata del periodo di conservazione degli elementi eliminati se il ripristino di un singolo elemento è abilitato per la cassetta postale. In Office 365, il ripristino di un singolo elemento è abilitato per impostazione predefinita quando viene creata una nuova cassetta postale. Dopo la scadenza del periodo di conservazione degli elementi eliminati, il messaggio viene contrassegnato per l'eliminazione permanente e verrà eliminato da Office 365 alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite. 
+   Un messaggio eliminato con il comando `New-ComplianceSearchAction -Purge -PurgeType HardDelete` viene spostato nella cartella Ripuliture e non è accessibile all'utente. Una volta spostato nella cartella Ripuliture, il messaggio viene conservato per la durata del periodo di conservazione degli elementi eliminati se il ripristino di un singolo elemento è abilitato per la cassetta postale. In Microsoft 365, il ripristino di un singolo elemento è abilitato per impostazione predefinita quando viene creata una nuova cassetta postale. Dopo la scadenza del periodo di conservazione degli elementi eliminati, il messaggio viene contrassegnato per l'eliminazione permanente e verrà eliminato da Microsoft 365 alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite. 
 
-   Usando il comando `New-ComplianceSearchAction -Purge -PurgeType SoftDelete`, i messaggi vengono spostati nella cartella Eliminazioni nella cartella Elementi ripristinabili dell'utente. Non viene rimosso immediatamente da Office 365. L'utente può recuperare i messaggi nella cartella Elementi eliminati per la durata del periodo di conservazione degli elementi eliminati configurato per la cassetta postale. Dopo la scadenza di questo periodo di conservazione (o se l'utente elimina il messaggio prima della scadenza), il messaggio viene spostato nella cartella di eliminazione e non è più accessibile da parte dell'utente. Una volta spostato nella cartella Ripuliture, il messaggio viene mantenuto per la durata del periodo di conservazione degli elementi eliminati configurato per la cassetta postale, se il ripristino di un singolo elemento è abilitato. In Office 365, il ripristino di un singolo elemento è abilitato per impostazione predefinita quando viene creata una nuova cassetta postale. Dopo la scadenza del periodo di conservazione degli elementi eliminati, il messaggio viene contrassegnato per l'eliminazione permanente e verrà eliminato da Office 365 alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite. 
+   Usando il comando `New-ComplianceSearchAction -Purge -PurgeType SoftDelete`, i messaggi vengono spostati nella cartella Eliminazioni nella cartella Elementi ripristinabili dell'utente. Non viene rimosso immediatamente da Microsoft 365. L'utente può recuperare i messaggi nella cartella Elementi eliminati per la durata del periodo di conservazione degli elementi eliminati configurato per la cassetta postale. Dopo la scadenza di questo periodo di conservazione (o se l'utente elimina il messaggio prima della scadenza), il messaggio viene spostato nella cartella di eliminazione e non è più accessibile da parte dell'utente. Una volta spostato nella cartella Ripuliture, il messaggio viene mantenuto per la durata del periodo di conservazione degli elementi eliminati configurato per la cassetta postale, se il ripristino di un singolo elemento è abilitato. In Microsoft 365, il ripristino di un singolo elemento è abilitato per impostazione predefinita quando si crea una nuova cassetta postale. Dopo la scadenza del periodo di conservazione degli elementi eliminati, il messaggio viene contrassegnato per l'eliminazione permanente e verrà eliminato da Microsoft 365 alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite. 
     
 - **Come si fa a eliminare un messaggio da più di 50.000 cassette postali?**
 
@@ -149,7 +149,7 @@ Per altre informazioni, vedere [New-ComplianceSearchAction](https://docs.microso
 
     No, il comando “New-ComplianceSearchAction -Purge” non elimina gli elementi non indicizzati. 
     
-- **Cosa succede se un messaggio viene eliminato da una cassetta postale soggetta a blocco sul posto o a blocco per controversia legale o se viene assegnato a un criterio di conservazione di Office 365?**
+- **Cosa succede se un messaggio viene eliminato da una cassetta postale soggetta a blocco sul posto o a blocco per controversia legale o se viene assegnato a un criterio di conservazione di Microsoft 365?**
 
     Dopo che il messaggio è stato eliminato e spostato nella cartella Ripuliture, il messaggio viene conservato fino alla scadenza del periodo di conservazione. Se la durata di conservazione è illimitata, gli elementi vengono mantenuti fino a quando non viene rimosso il blocco o viene modificata la durata di conservazione.
     
