@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modificare manualmente le sottoscrizioni acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636584"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707632"
 ---
 # <a name="change-plans-manually"></a>Modificare i piani manualmente
 
@@ -43,7 +43,7 @@ Il modo migliore per modificare tutti gli utenti da un piano all'altro consiste 
 Per continuare con una modifica manuale, leggere [passaggio 2: acquistare un nuovo abbonamento](#step-2-buy-a-new-subscription) in questo argomento.
 
 > [!IMPORTANT]
-> Se si passa a un piano con meno servizi correlati ai dati rispetto al piano corrente (downgrade), è necessario eseguire manualmente il backup di tutti i dati che si desidera mantenere. Per ulteriori informazioni, vedere [eseguire il backup dei dati prima di cambiare i piani di O365 for business](back-up-data-before-switching-plans.md).
+> Se si passa a un piano con meno servizi correlati ai dati rispetto al piano corrente (downgrade), è necessario eseguire manualmente il backup di tutti i dati che si desidera mantenere. Per ulteriori informazioni, vedere [eseguire il backup dei dati prima di modificare i piani](back-up-data-before-switching-plans.md).
 
 ## <a name="step-2-buy-a-new-subscription"></a>Passaggio 2: acquistare un nuovo abbonamento
 
@@ -62,7 +62,7 @@ Includere una licenza per ogni utente da spostare.
 
 2. **Verificare che entrambe le sottoscrizioni siano elencate e attive** La sottoscrizione da cui si sta spostando gli utenti e l'abbonamento a cui si sta spostando gli utenti devono essere elencati insieme. Se il nuovo abbonamento non compare ancora al primo controllo, controllare di nuovo più tardi. Verificare che entrambe le sottoscrizioni siano attive. [Il nuovo abbonamento non è elencato o non è attivo](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. **Verificare di disporre di licenze sufficienti per ogni utente** Ogni utente ha bisogno di una licenza che corrisponda alla propria sottoscrizione. Se quindi si vogliono spostare dieci utenti in Office 365 Enterprise E5, occorre verificare che siano disponibili dieci licenze.
+3. **Verificare di disporre di licenze sufficienti per ogni utente** Ogni utente ha bisogno di una licenza che corrisponda alla propria sottoscrizione. Pertanto, se si desidera spostare dieci utenti in Microsoft 365 Business Premium, è necessario assicurarsi che siano disponibili dieci licenze.
 
 4. **Servono altre licenze per il nuovo abbonamento?**
    Passare alla pagina **prodotti & Servizi** e [acquistare altre licenze](../licenses/buy-licenses.md).

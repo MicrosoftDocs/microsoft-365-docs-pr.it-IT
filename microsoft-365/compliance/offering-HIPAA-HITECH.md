@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 52752c31ae52fa75a3a50dbd6a4aa27605f6d921
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 182e3489824c7842f5e9cf6a410d49d574b7462c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228512"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638000"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Portabilità e responsabilità dell'assicurazione malattia (HIPAA) & atti HITECH
 
@@ -43,7 +43,7 @@ La regola finale di notifica di violazione di HITECH, che richiede l'avviso agli
 
 ## <a name="microsoft-and-hipaa-and-the-hitech-act"></a>Microsoft e HIPAA e HITECH Act
 
-Le normative HIPAA richiedono che le entità coordinate e i loro associati aziendali, in questo caso Microsoft quando fornisce servizi, compresi i servizi cloud, alle entità interessate, entrino in contratti per garantire che tali soci siano adeguatamente Proteggi PHI. Questi contratti, o BAAs, chiariscono e limitano in che modo l'associato può gestire PHI e impostare la conformità di ogni parte alle disposizioni relative alla sicurezza e alla privacy descritte in HIPAA e HITECH Act. Una volta che una BAA è sul posto, i clienti Microsoft, ovvero le entità garantite, possono utilizzare i propri servizi per elaborare e archiviare PHI.
+Le normative HIPAA richiedono che le entità coordinate e i loro associati aziendali, in questo caso Microsoft quando fornisce servizi, compresi i servizi cloud, alle entità interessate, entrino in contratti per garantire che tali soci siano adeguatamente tutelati da PHI. Questi contratti, o BAAs, chiariscono e limitano in che modo l'associato può gestire PHI e impostare la conformità di ogni parte alle disposizioni relative alla sicurezza e alla privacy descritte in HIPAA e HITECH Act. Una volta che una BAA è sul posto, i clienti Microsoft, ovvero le entità garantite, possono utilizzare i propri servizi per elaborare e archiviare PHI.
 
 Attualmente non sono disponibili certificazioni ufficiali per la conformità HIPAA o HITECH Act. Tuttavia, i servizi Microsoft descritti nell'ambito della BAA sono stati sottoposti a audit effettuati da revisori indipendenti accreditati per la certificazione Microsoft ISO/IEC 27001.
 
@@ -51,13 +51,13 @@ I servizi cloud di Microsoft Enterprise sono coperti anche da valutazioni FedRAM
 
 Per informazioni su come il cloud Microsoft aiuta i clienti a supportare HIPAA e i requisiti di HITECH, visitare le storie dei clienti [Microsoft](https://customers.microsoft.com).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Servizio Microsoft Health bot
 - Microsoft Stream
-- Microsoft Professional Services: premier e locale per Azure, Dynamics 365, Intune e per le medie e grandi imprese clienti di Office 365
+- Servizi professionali Microsoft: Premier e locali per i clienti di Azure, Dynamics 365, Intune e medie imprese e aziende di Microsoft 365 per le aziende
 - [Dynamics 365 e Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Intune
@@ -114,7 +114,7 @@ Per assistere i clienti con questa attività, Microsoft ha pubblicato queste gui
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 maggio 2016)
 - [Guida all'implementazione di Azure HIPAA](https://aka.ms/azure-hipaa-guide)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 

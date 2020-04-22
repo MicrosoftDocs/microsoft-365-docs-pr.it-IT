@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro &amp; sicurezza e conformità.
-ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631062"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708500"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 
@@ -60,9 +60,11 @@ I filtri e i guasti delle informazioni consentono la categorizzazione più granu
 
 ![Elenco a discesa rapporto sullo stato di protezione dalle minacce che mostra ' scomposizione per '.](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-Queste visualizzazioni offrono la possibilità di esportare, tramite un clic su un pulsante (in > di posta elettronica phishing, posta elettronica > malware e contenuto > visualizzazioni malware). I dati aggregati esportati nel computer possono essere aperti in Excel.
+Queste visualizzazioni offrono l'opzione per l'esportazione, tramite un clic sul pulsante (in **phishing**di **posta elettronica** \> , **malware**per **posta** \> elettronica e visualizzazioni **malware** **contenuto** \> ). I dati aggregati esportati nel computer possono essere aperti in Excel.
 
 ![In questo elemento grafico viene illustrato come scegliere Esporta come opzione dal menu della visualizzazione malware, a destra tra la pianificazione e il rapporto di richiesta.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**Nota**: il numero massimo di voci che possono essere esportate per **phishing** e **malware** è inferiore a 10000. Se si esporta una visualizzazione, vengono esportate solo le voci 10000 più recenti.
 
 Le visualizzazioni panoramica e messaggi di posta elettronica visualizzano le informazioni entro le ore successive all'elaborazione anziché entro 24 ore (demand re. velocità maggiore qui è stato un segnale chiaro)!
 

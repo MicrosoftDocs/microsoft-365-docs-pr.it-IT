@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179187"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637474"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestione dei rischi insider in Microsoft 365
 
@@ -41,7 +41,7 @@ La gestione e la riduzione dei rischi all'interno dell'organizzazione iniziano c
 
 Gli impiegati del posto di lavoro moderno hanno accesso alla creazione, gestione e condivisione dei dati in un ampio spettro di piattaforme e servizi. Nella maggior parte dei casi, le organizzazioni dispongono di risorse e strumenti limitati per identificare e mitigare i rischi a livello di organizzazione, ma anche per soddisfare gli standard sulla privacy dei dipendenti.
 
-La gestione dei rischi insider in Microsoft 365 utilizza l'intera gamma di indicatori di servizio e di terze parti che consentono di identificare rapidamente, valutare e intraprendere azioni sull'attività di rischio. Utilizzando i log di Office 365 e Microsoft Graph, Insider Risk Management consente di definire criteri specifici per identificare gli indicatori di rischio. Questi criteri consentono di identificare le attività rischiose e di intervenire per attenuare tali rischi.
+La gestione dei rischi insider in Microsoft 365 utilizza l'intera gamma di indicatori di servizio e di terze parti che consentono di identificare rapidamente, valutare e intraprendere azioni sull'attività di rischio. Utilizzando i registri di Microsoft 365 e Microsoft Graph, Insider Risk Management consente di definire criteri specifici per identificare gli indicatori di rischio. Questi criteri consentono di identificare le attività rischiose e di intervenire per attenuare tali rischi.
 
 La gestione dei rischi Insider è incentrata sui seguenti principi:
 

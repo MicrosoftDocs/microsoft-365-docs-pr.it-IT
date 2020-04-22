@@ -13,13 +13,13 @@ search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Per i report di conformità alle normative di Office 365, Azure e Dynamics 365 online, per visualizzare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e come è possibile essere conformi alle norme ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando si utilizzano questi servizi online.
-ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Per i report di conformità alle normative Microsoft 365, Azure e Dynamics 365 online, per visualizzare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e come è possibile essere conformi alle norme ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando si utilizzano questi servizi online.
+ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073155"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632447"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
@@ -27,11 +27,11 @@ Microsoft Service Trust Portal offre una vasta gamma di contenuti, strumenti e a
   
 ## <a name="accessing-the-service-trust-portal"></a>Accesso al Service Trust Portal
 
-Il Service Trust Portal contiene informazioni dettagliate sull'implementazione di controlli e processi di Microsoft che proteggono i servizi cloud e i dati dei clienti in esso contenuti. Per accedere ad alcune delle risorse nel Service Trust Portal, è necessario eseguire l'accesso come utente autenticato con l'account di Microsoft Cloud Services (un account dell'organizzazione di Azure Active Directory o un account Microsoft) ed esaminare e accettare Microsoft Contratto di non divulgazione per i materiali di conformità.
+Il Service Trust Portal contiene informazioni dettagliate sull'implementazione di controlli e processi di Microsoft che proteggono i servizi cloud e i dati dei clienti in esso contenuti. Per accedere ad alcune delle risorse nel Service Trust Portal, è necessario eseguire l'accesso come utente autenticato con l'account Microsoft Cloud Services (un account dell'organizzazione di Azure Active Directory o un account Microsoft) ed esaminare e accettare il contratto di non divulgazione Microsoft per i materiali di conformità.
   
 I **clienti esistenti possono accedere al Service Trust Portal** [https://aka.ms/STP](https://aka.ms/STP) con una delle sottoscrizioni online seguenti (Trial or paid): 
   
-- Office 365
+- Microsoft 365
 
 - Dynamics 365
 
@@ -44,7 +44,7 @@ I **clienti esistenti possono accedere al Service Trust Portal** [https://aka.ms
   
 Per creare un nuovo account o creare un account di valutazione, utilizzare uno dei seguenti moduli di iscrizione (utilizzati anche per gli account di valutazione) per accedere all'STP.
   
-- Iscriversi a un nuovo [account di valutazione aziendale di office 365](https://go.microsoft.com/fwlink/p/?LinkID=507653) o a un nuovo [account di valutazione di Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- Iscriversi a un nuovo [account di valutazione di Microsoft 365 Apps for business](https://go.microsoft.com/fwlink/p/?LinkID=507653) o a un nuovo [account di valutazione di Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - Iscriversi a un nuovo [account di valutazione di Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
@@ -66,7 +66,7 @@ Il collegamento **Service Trust Portal** Visualizza la Home page. Fornisce un mo
 
 ### <a name="compliance-manager"></a>Compliance Manager
 
-Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro che consente di monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione relative ai servizi cloud Microsoft, ad esempio Office 365, Dynamics 365 e Azure. Utilizzare Compliance Manager per gestire la conformità normativa all'interno del modello di responsabilità condivisa del cloud. A seconda della versione di Compliance Manager che si desidera utilizzare, vedere gli articoli seguenti per ulteriori informazioni:
+Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro che consente di monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione relative ai servizi cloud Microsoft, ad esempio Microsoft 365, Dynamics 365 e Azure. Utilizzare Compliance Manager per gestire la conformità normativa all'interno del modello di responsabilità condivisa del cloud. A seconda della versione di Compliance Manager che si desidera utilizzare, vedere gli articoli seguenti per ulteriori informazioni:
 
 - [Microsoft Compliance Manager (classico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
@@ -102,7 +102,7 @@ Fornisce informazioni di conformità specifiche per l'industria e le aree geogra
   
 ### <a name="trust-center"></a>Centro protezione
 
-Collegamenti al [Centro protezione Microsoft](https://www.microsoft.com/trust-center), in cui sono disponibili ulteriori informazioni sulla sicurezza, la conformità e la privacy nel cloud Microsoft. Sono incluse informazioni sulle funzionalità dei servizi cloud di Microsoft che è possibile utilizzare per soddisfare i requisiti specifici di GDPR, la documentazione utile per la propria responsabilità GDPR e la comprensione delle misure tecniche e organizzative. Microsoft ha acquisito il supporto di GDPR.
+Collegamenti al [Centro protezione Microsoft](https://www.microsoft.com/trust-center), in cui sono disponibili ulteriori informazioni sulla sicurezza, la conformità e la privacy nel cloud Microsoft. Sono incluse informazioni sulle funzionalità dei servizi cloud di Microsoft che è possibile utilizzare per soddisfare i requisiti specifici di GDPR, la documentazione utile per la propria responsabilità GDPR e la comprensione delle misure tecniche e organizzative che Microsoft ha utilizzato per supportare la GDPR.
   
 ### <a name="my-library"></a>Raccolta personale
 

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: "Scoprire quante tasse verranno addebitate per l'abbonamento a Microsoft 365 for business in diverse aree geografiche. "
 ms.custom: okr_SMB
-ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635005"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708132"
 ---
 # <a name="tax-information"></a>Informazioni fiscali
 
@@ -94,7 +94,7 @@ Fare clic sui collegamenti seguenti per vedere quale imposta viene applicata nel
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Medio Oriente e Africa (EMEA)
 
-Quando si acquistano servizi di Office 365 nell'Unione Europea, la transazione è soggetta a IVA.
+Quando si acquistano servizi Microsoft 365 nell'Unione europea, questo acquisto è soggetto all'imposta sul valore aggiunto (IVA).
   
 - Se si risiede in uno stato membro dell'Unione Europea e non si fornisce un numero di partita IVA locale valido, Microsoft Ireland Operations Ltd. applicherà l'aliquota IVA locale corrente in base al paese di fatturazione indicato per l'account.
 
@@ -154,7 +154,7 @@ Se si ricevono le fatture da un'altra sede, viene applicata l'imposta locale cor
 
 Negli Stati Uniti e in Canada vengono applicate diverse aliquote a seconda della sede del cliente. In Portorico, viene applicata l'aliquota IVA locale.
   
-Se la fatturazione viene eseguita da Microsoft Corporation ([vedere la fattura](view-your-bill-or-invoice.md)) e l'iscrizione a Office 365 è stata effettuata da un paese diverso da Stati Uniti, Canada e Portorico, generalmente non viene addebitata alcuna imposta.
+Se la fatturazione viene fatta da Microsoft Corporation ([vedere la fattura](view-your-bill-or-invoice.md)) e l'utente ha effettuato l'iscrizione a Microsoft 365 al di fuori degli Stati Uniti, Canada e Portorico, la tassa generalmente non viene addebitata.
 
 ## <a name="how-taxes-are-calculated"></a>Modalità di calcolo delle imposte
 

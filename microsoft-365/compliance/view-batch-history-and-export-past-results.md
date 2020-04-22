@@ -1,5 +1,5 @@
 ---
-title: Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Office 365 Advanced eDiscovery
+title: Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
-description: "Scopri come visualizzare informazioni dettagliate per le sessioni batch di esportazione selezionate e come annullare l'ultima sessione di esportazione in Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: de7366e1eb43c276899ecf35339c0443fad4879d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: "Scopri come visualizzare informazioni dettagliate per le sessioni batch di esportazione selezionate e come annullare l'ultima sessione di esportazione in Advanced eDiscovery.  "
+ms.openlocfilehash: 356b0b61288b466da38bc640f9aad636ee654da2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557614"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626352"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Advanced eDiscovery (Classic)
 
@@ -48,7 +48,7 @@ La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sull
     
 4. Se si desidera scaricare i dati in qualsiasi momento da una sessione di esportazione batch eseguita in precedenza, fare clic ![sull'](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) **icona Download cronologia** di esportazione batch per il download accanto al batch di esportazione desiderato da esportare. 
     
-5. Quando viene visualizzata la finestra di dialogo **firma di accesso condiviso** , fare clic su **copia negli Appunti** per copiare i dati della sessione di esportazione nel computer locale e quindi fare clic su **Chiudi**. Viene visualizzata la finestra &amp; di dialogo **strumento di esportazione di eDiscovery** di Office 365 Security Compliance Center. 
+5. Quando viene visualizzata la finestra di dialogo **firma di accesso condiviso** , fare clic su **copia negli Appunti** per copiare i dati della sessione di esportazione nel computer locale e quindi fare clic su **Chiudi**. Viene visualizzata &amp; la finestra di dialogo **strumento di esportazione di eDiscovery** per il Centro sicurezza. 
     
     ![Finestra di dialogo Esporta eDiscovery](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -62,7 +62,7 @@ La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sull
     
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Esportazione dei risultati](export-results-in-advanced-ediscovery.md)
 

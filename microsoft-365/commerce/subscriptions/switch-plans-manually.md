@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Passare manualmente gli abbonamenti di Microsoft 365 per le aziende acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636535"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707512"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Cambiare manualmente i piani di Microsoft 365 for business
 
@@ -84,13 +84,9 @@ Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si 
 
     L'abbonamento da cui si stanno spostando gli utenti e quello in cui li si stanno spostando devono essere elencati insieme. Se il nuovo abbonamento non compare ancora al primo controllo, controllare di nuovo più tardi. Verificare che entrambi gli abbonamenti siano elencati in **ATTIVI**. [Il nuovo abbonamento non è elencato o non è attivo](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **Nuovo abbonamento a Microsoft 365 for business con licenze disponibili**
-
-    ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
-  
 3. **Verificare di avere licenze sufficienti per ogni utente**
 
-    Ogni utente deve avere una licenza corrispondente al proprio abbonamento. Se quindi si vogliono spostare dieci utenti in Office 365 Enterprise E5, occorre verificare che siano disponibili dieci licenze. Nell'immagine seguente sono state acquistate dieci licenze per Office 365 Enterprise E5 e tutte e dieci sono disponibili per essere assegnate.
+    Ogni utente deve avere una licenza corrispondente al proprio abbonamento. Pertanto, se si desidera spostare dieci utenti in Microsoft 365 Business Premium, è necessario assicurarsi che siano disponibili dieci licenze. 
 
 4. **Servono altre licenze per il nuovo abbonamento?** Passare alla pagina **abbonamenti** e [acquistare le licenze per l'abbonamento a Microsoft 365 for business](../licenses/buy-licenses.md).
   
@@ -139,8 +135,6 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
     > [!TIP]
     > Per limitare i servizi disponibili per l'utente, impostare sulla posizione **Disattivato** l'interruttore relativo ai servizi da rimuovere per l'utente. Ad esempio, se si vuole che l'utente abbia accesso a tutti i servizi disponibili tranne Skype for Business online, è possibile impostare l'interruttore relativo al servizio Skype for Business online sulla posizione **Disattivato**.
   
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
 5. Impostare l'interruttore sulla posizione **disattivata** per le licenze di cui l'utente non ha più bisogno.
 
 6. Nella parte inferiore del riquadro **licenze di prodotto** , selezionare **assegna** \> **Close** \> **Close**chiudere Chiudi.
@@ -149,19 +143,19 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">utenti attivi</a> **o selezionare** \> utenti **attivi**.
+1. Nell'interfaccia di amministrazione, andare alla \> pagina **utenti** <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">attivi</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, **andare alla** > pagina utenti <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">attivi</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
 
 ::: moniker-end
 
@@ -176,8 +170,6 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
     > [!TIP]
     > - Per limitare i servizi disponibili per l'utente, impostare sulla posizione **Disattivato** l'interruttore relativo ai servizi da rimuovere per l'utente. Ad esempio, se si vuole che l'utente abbia accesso a tutti i servizi disponibili tranne Skype for Business online, è possibile impostare l'interruttore relativo al servizio Skype for Business online sulla posizione **Disattivato**.
     > - Le eventuali licenze precedentemente assegnate agli utenti selezionati verranno rimosse.
-  
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare **Sostituisci** \> **Chiudi**.
 

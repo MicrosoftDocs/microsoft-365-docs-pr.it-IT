@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb667cdf13ed8ed6777f454b8fa3e21342f90272
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: d5a6ee0b5ca5c9ba1fbf83f1076940a10134a9f6
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222088"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583593"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programma per la gestione delle autorizzazioni e dei rischi federali (FedRAMP)
 
 ## <a name="fedramp-overview"></a>Panoramica di FedRAMP
 
-Il programma di gestione dei rischi e delle autorizzazioni degli Stati Uniti (FedRAMP) è stato stabilito per fornire un approccio standardizzato per valutare, monitorare e autorizzare i prodotti e servizi cloud computing nell'ambito del Federal Information Security Management Act ( FISMA) e per accelerare l'adozione di soluzioni cloud sicure da parte di agenzie federali.
+Il programma per la gestione delle autorizzazioni e dei rischi degli Stati Uniti (FedRAMP) è stato stabilito per fornire un approccio standardizzato per valutare, monitorare e autorizzare i prodotti e servizi cloud computing nell'ambito del Federal Information Security Management Act (FISMA) e per accelerare l'adozione di soluzioni cloud sicure da parte di agenzie federali.
 
 L'Office of Management and budget Now richiede a tutte le agenzie federali esecutive di utilizzare FedRAMP per convalidare la sicurezza dei servizi cloud. (Anche altre agenzie l'hanno adottata, quindi è utile in altre aree del settore pubblico). Il National Institute of Standards and Technology (NIST) 800-53 stabilisce lo standard e FedRAMP è il programma che certifica che un provider di servizi cloud soddisfa lo standard.
 
@@ -35,9 +35,9 @@ Le autorizzazioni di FedRAMP sono concesse a tre livelli di impatto in base alle
 
 ## <a name="microsoft-and-fedramp"></a>Microsoft e FedRAMP
 
-I servizi cloud governativi di Microsoft, tra cui il governo di Azure, il governo degli Stati Uniti di Office 365 e il governo Dynamics 365 soddisfano i requisiti esigenti del programma di gestione delle autorizzazioni e dei rischi federali degli Stati Uniti (FedRAMP). per usufruire dei risparmi sui costi e della sicurezza rigorosa del cloud Microsoft.
+I servizi cloud governativi di Microsoft, tra cui il governo di Azure, il governo degli Stati Uniti di Office 365 e il governo Dynamics 365 soddisfano i requisiti esigenti del programma per la gestione delle autorizzazioni e dei rischi federali degli Stati Uniti (FedRAMP), consentendo alle agenzie federali degli Stati Uniti di usufruire dei risparmi sui costi e sulla sicurezza del cloud Microsoft
 
-I servizi cloud di Microsoft Government offrono ai clienti del settore pubblico una vasta gamma di servizi conformi a FedRAMP e strumenti di guida e implementazione robusti, tra cui il modello di sicurezza e conformità di Azure per FedRAMP, che consente di automatizzare la distribuzione e la configurazione delle risorse di Azure in un ambiente FedRAMP.
+I servizi cloud di Microsoft Government offrono ai clienti del settore pubblico una vasta gamma di servizi conformi a FedRAMP e strumenti di guida e implementazione affidabili, tra cui il modello di sicurezza e conformità di Azure per FedRAMP, che consente di automatizzare la distribuzione e la configurazione delle risorse di Azure in un ambiente FedRAMP.
 
 Informazioni sui vantaggi di FEDRAMP nel cloud Microsoft: [scaricare il background di conformità di FEDRAMP](https://aka.ms/fedramp-backgrounder)
 
@@ -65,7 +65,7 @@ Dopo aver concesso un P-ATO, un CSP richiede ancora un'autorizzazione, ovvero un
 - Office 365 (Enterprise and business plans) e Office 365 US Government dispongono di un'agenzia FedRAMP ATO a livello di impatto moderato dall'ufficio del dipartimento per la salute e i servizi umani (DHHS) dell'ispettore generale. Office 365 US Government è stato il primo servizio di collaborazione e di posta elettronica basato sul cloud per ottenere questa autorizzazione.
 - Tutti i clienti che desiderano consumare la difesa del governo degli Stati Uniti O365 possono utilizzare la DISA P-ATO per generare un ATO dell'Agenzia per documentare la loro accettazione di O365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -119,8 +119,4 @@ Sì. È possibile utilizzare le certificazioni dei servizi cloud Microsoft come 
 - [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Framework di valutazione della sicurezza di FedRAMP](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf).
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

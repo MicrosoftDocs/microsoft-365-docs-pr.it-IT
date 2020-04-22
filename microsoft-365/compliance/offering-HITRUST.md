@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 734621d9017c21822043ff8c1beb82044ec8c860
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: f04c6bf41e9c09455773c419efec0b7b4e8ca5ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628102"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637990"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Framework di sicurezza comune (QCS, Health Information Trust Alliance) (HITRUST)
 
@@ -39,7 +39,7 @@ Informazioni su come accelerare la distribuzione di HITRUST con il modello di si
 
 [Scaricare Microsoft Azure HITRUST customer responsibility Matrix (CRM) Blueprint v 9.0 d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Intune
@@ -49,7 +49,7 @@ Informazioni su come accelerare la distribuzione di HITRUST con il modello di si
 
 La certificazione HITRUST CSF di Azure e Office 365 è valida per due anni.
 
-- [Lettera di certificazione di HITRUST di Azure](https://aka.ms/AzureHiTrustLetterofCertification)
+- [Lettera di certificazione di HITRUST di Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 - [Office 365 HITRUST lettera di certificazione](https://aka.ms/O365HITRUSTcertification)
 
 ## <a name="accelerate-your-deployment-of-hipaahitrust-solutions-on-azure"></a>Velocizzare la distribuzione delle soluzioni HIPAA/HITRUST in Azure
@@ -66,7 +66,7 @@ Utilizzare Office 365 per gestire le informazioni sull'integrità in modo sicuro
 
 ## <a name="collaborate-with-microsoft-in-the-hitrust-shared-responsibility-program"></a>Collaborare con Microsoft nel programma di responsabilità condivisa di HITRUST
 
-Accelerare la conformità di HITRUST per la soluzione ospitata in Microsoft Azure precompilando la valutazione con i controlli di responsabilità completamente ereditati o condivisi per Azure nello strumento MyCSF di HITRUST e collaborando con Microsoft sul proprio valutazione.
+Accelerare la conformità di HITRUST per la soluzione ospitata in Microsoft Azure precompilando la valutazione con i controlli di responsabilità completamente ereditati o condivisi per Azure nello strumento MyCSF di HITRUST e collaborando con Microsoft per la valutazione.
 
 [Altre informazioni](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 
@@ -78,14 +78,14 @@ Sì. Se l'azienda richiede una certificazione di HITRUST per le implementazioni 
 
 **Come è possibile ottenere una copia della certificazione di HITRUST?**
 
-È possibile scaricare una copia della lettera di certificazione per [Azure](https://aka.ms/AzureHiTrustLetterofCertification) e [Office 365](https://aka.ms/O365HITRUSTcertification).
+È possibile scaricare una copia della lettera di certificazione per [Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports) e [Office 365](https://aka.ms/O365HITRUSTcertification).
 
 **Che cosa sono i servizi nell'ambito di Office 365?**
 
-I servizi nell'ambito della certificazione HITRUST CSF sono Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for business, interfaccia di amministrazione, SharePoint Online, Project online, OneDrive for business, Office Online, Analytics, Microsoft Teams, Office ProPlus in Office 365 multi-tenant cloud e Office 365 GCC.
+I servizi nell'ambito della certificazione HITRUST CSF sono Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for business, interfaccia di amministrazione, SharePoint Online, Project online, OneDrive for business, Office Online, Analytics, Microsoft teams, Office ProPlus in Office 365 multi-tenant cloud e Office 365 GCC.
 
 > [!NOTE]
-> Office 365 ProPlus consente di accedere a vari servizi cloud, ad esempio le impostazioni di roaming, le licenze e l'archiviazione cloud dei consumer di OneDrive, e può consentire l'accesso a servizi cloud aggiuntivi in futuro. Le impostazioni di roaming e la gestione delle licenze supportano gli standard per HITRUST. L'archiviazione cloud del consumer di OneDrive non è disponibile e altri servizi cloud accessibili tramite Office 365 ProPlus e che Microsoft potrebbe offrire anche in futuro potrebbero non essere in grado di supportare tali standard. *
+> Microsoft 365 Apps for Enterprise consente l'accesso a vari servizi cloud, ad esempio le impostazioni di roaming, le licenze e l'archiviazione cloud dei consumer di OneDrive e può consentire l'accesso a servizi cloud aggiuntivi in futuro. Le impostazioni di roaming e la gestione delle licenze supportano gli standard per HITRUST. L'archiviazione cloud del consumer di OneDrive non è diversa e altri servizi cloud accessibili tramite le app Microsoft 365 per l'organizzazione e che Microsoft potrebbe offrire anche in futuro potrebbero non essere in grado di supportare tali standard. *
 
 **Perché alcuni servizi di Office 365 non rientrano nell'ambito di questa certificazione?**
 
@@ -106,11 +106,11 @@ Accedere allo strumento di® di HITRUST MyCSF e prepopolare la valutazione per l
 ## <a name="resources"></a>Risorse
 
 - [Alleanza HITRUST](https://hitrustalliance.net/)
-- [HITRUST CSF 8,1](https://hitrustalliance.net/csf-license-agreement/)
+- [HITRUST CSF 9,3](https://hitrustalliance.net/csf-license-agreement/)
 - [Comprensione e sfruttamento del QCS](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Per saperne di più sul programma di responsabilità condivisa di HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
 Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).

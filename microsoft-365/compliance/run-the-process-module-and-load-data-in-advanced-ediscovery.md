@@ -1,5 +1,5 @@
 ---
-title: Eseguire il modulo di processo e caricare i dati in Office 365 Advanced eDiscovery
+title: Eseguire il modulo di processo e caricare i dati in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Informazioni su come utilizzare il Centro sicurezza &amp; e conformità di Office 365 per accedere a Office 365 Advanced eDiscovery ed eseguire il modulo di processo per un caso.  '
-ms.openlocfilehash: 60da3fd66ce33443e991ece2dc756c7d1ab0d14a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Informazioni su come utilizzare il centro &amp; sicurezza e conformità per accedere a Advanced eDiscovery ed eseguire il modulo di processo per un caso.  '
+ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557826"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626472"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Eseguire il modulo di processo e caricare i dati in Advanced eDiscovery (Classic)
 
@@ -41,7 +41,7 @@ Advanced eDiscovery fornisce i valori dei metadati di sistema, ad esempio raggru
   
 Eseguire la procedura seguente per eseguire il processo.
   
-1. [Aprire il Centro sicurezza &amp; e conformità di Office 365](go-to-the-securitycompliance-center.md) . 
+1. [Aprire il centro &amp; sicurezza e conformità](go-to-the-securitycompliance-center.md) . 
     
 2. Andare a **Search &amp; Investigation** \> **eDiscovery** e quindi fare clic su **go to Advanced eDiscovery**.
     
@@ -83,7 +83,7 @@ Se si aggiunge il caso, è possibile procedere di nuovo.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Visualizzazione dei risultati del modulo di elaborazione](view-process-module-results-in-advanced-ediscovery.md)
 

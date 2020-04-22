@@ -1,5 +1,5 @@
 ---
-title: Preparare un file CSV per una ricerca di contenuto nell'elenco di ID in Office 365
+title: Preparare un file CSV per un elenco ID di Ricerca contenuto
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Utilizzare il file results. csv o unindexed Items. csv da una ricerca di contenuto esistente per creare una ricerca nell'elenco di ID che restituisca messaggi di posta elettronica specifici. Le ricerche degli elenchi di ID vengono in genere utilizzate per restituire gli elementi della cassetta postale parzialmente indicizzati.
-ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f37715858e6785e75343f5b11f73332de08b5d3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077021"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630703"
 ---
-# <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparare un file CSV per una ricerca di contenuto nell'elenco di ID in Office 365
+# <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Preparare un file CSV per un elenco ID di Ricerca contenuto
 
 È possibile cercare specifici messaggi di posta elettronica della cassetta postale e altri elementi della cassetta postale utilizzando un elenco di ID di Exchange. Per creare una ricerca nell'elenco di ID (denominato formalmente ricerca mirata), è necessario inviare un file CSV (comma separated value) che identifica gli elementi specifici della cassetta postale da cercare. Per questo file CSV è possibile utilizzare il file **results. csv** o il file **unindexed Items. csv** incluso quando si esportano i risultati della ricerca di contenuto o si esporta un rapporto di ricerca contenuto e la ricerca di contenuto esistente. Successivamente, modificare uno di questi file per indicare gli elementi specifici da cercare e quindi creare un nuovo elenco di ID ricerca e inviare il file CSV.
 
@@ -76,7 +76,7 @@ Il passaggio successivo consiste nel creare una nuova ricerca del contenuto dell
 > [!IMPORTANT]
 > È consigliabile creare un elenco di ID che non superi i 2 giorni dopo l'esportazione dei risultati o del report da una ricerca di contenuto. Se i risultati della ricerca o il report in cui è stata esportata più di 2 giorni fa, è necessario riesportare i risultati della ricerca o il report per generare i file CSV aggiornati. È quindi possibile preparare uno dei file CSV aggiornati e utilizzarlo per creare una ricerca nell'elenco di ID.
 
-1. Nel centro sicurezza & conformità, andare a ricerca **** \> **contenuto**ricerca.
+1. Nel centro sicurezza & conformità, andare a ricerca **Search** \> **contenuto**ricerca.
 
 2. Nella pagina **ricerca** fare clic sulla freccia accanto a Aggiungi ![](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuova ricerca**icona, quindi fare clic su **Cerca in base all'elenco di ID**.
 
@@ -84,7 +84,7 @@ Il passaggio successivo consiste nel creare una nuova ricerca del contenuto dell
 
 3. Nel riquadro a comparsa **ricerca in base all'elenco di ID** , denominare la ricerca e, facoltativamente, descriverla, quindi fare clic su **Sfoglia** e selezionare il file CSV preparato nel passaggio precedente.
 
-    Office 365 tenta di convalidare il file CSV. Se la convalida non ha avuto esito positivo, verrà visualizzato un messaggio di errore che potrebbe facilitare la risoluzione dei problemi relativi agli errori di convalida. Il file CSV deve essere convalidato correttamente per creare una ricerca nell'elenco di ID.
+    Microsoft 365 tenta di convalidare il file CSV. Se la convalida non ha avuto esito positivo, verrà visualizzato un messaggio di errore che potrebbe facilitare la risoluzione dei problemi relativi agli errori di convalida. Il file CSV deve essere convalidato correttamente per creare una ricerca nell'elenco di ID.
 
 4. Dopo aver convalidato il file CSV, fare clic su **Cerca** per creare la ricerca nell'elenco di ID.
 
@@ -97,4 +97,4 @@ Il passaggio successivo consiste nel creare una nuova ricerca del contenuto dell
 5. Visualizzare in anteprima o esportare gli elementi restituiti dalla ricerca dell'elenco di ID.
 
 > [!NOTE]
-> Se si sposta una cassetta postale dopo aver creato una ricerca nell'elenco di ID, la query per la ricerca non restituirà gli elementi specificati. Ciò è dovuto al fatto che la proprietà **DocumentID** per gli elementi della cassetta postale viene modificata quando una cassetta postale viene spostata. Nell'istanza rara quando una cassetta postale viene spostata dopo aver creato una ricerca nell'elenco di ID, è necessario creare una nuova ricerca contenuto (o aggiornare i risultati della ricerca per la ricerca di contenuto esistente) e quindi esportare i risultati della ricerca o il report per generare i file CSV aggiornati che possono essere utilizzati  per creare una nuova ricerca nell'elenco di ID.
+> Se si sposta una cassetta postale dopo aver creato una ricerca nell'elenco di ID, la query per la ricerca non restituirà gli elementi specificati. Ciò è dovuto al fatto che la proprietà **DocumentID** per gli elementi della cassetta postale viene modificata quando una cassetta postale viene spostata. Nell'istanza rara quando una cassetta postale viene spostata dopo aver creato una ricerca nell'elenco di ID, è necessario creare una nuova ricerca contenuto (o aggiornare i risultati della ricerca per la ricerca di contenuto esistente) e quindi esportare i risultati della ricerca o il report per generare i file CSV aggiornati che possono essere utilizzati per creare una nuova ricerca nell'elenco di ID.

@@ -20,29 +20,28 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 for business o Microsoft 365.
-ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 per le aziende.
+ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636596"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708084"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
-*Eleggibilità:* Se si hanno meno di 25 licenze assegnate agli utenti, è possibile annullare la versione di valutazione di Microsoft 365 per le aziende o la sottoscrizione a pagamento online nell'interfaccia di amministrazione in qualsiasi momento. Se si dispone di più di 25 licenze assegnate agli utenti, [contattare il supporto per annullare l'abbonamento](../../admin/contact-support-for-business-products.md).
+*Eleggibilità:* Se si hanno meno di 25 licenze assegnate agli utenti, è possibile annullare la versione di valutazione di Microsoft 365 per le aziende o la sottoscrizione a pagamento online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se si dispone di più di 25 licenze assegnate agli utenti, [contattare il supporto per annullare l'abbonamento](../../admin/contact-support-for-business-products.md).
 
 *Rimborso:* Qualsiasi credito prorated verrà restituito all'utente entro il prossimo ciclo di fatturazione.
 
 > [!NOTE]
-> Se si dispone di più abbonamenti allo stesso prodotto, ad esempio Office 365 Enterprise E3, l'annullamento di uno di essi non inciderà sulle licenze o sui servizi acquistati all'interno degli altri abbonamenti.
+> Se si dispone di più abbonamenti allo stesso prodotto, ad esempio Microsoft 365 Business Premium, l'annullamento di uno di essi non influirà sulle licenze o sui servizi acquistati all'interno degli altri abbonamenti.
 
 ## <a name="steps-to-cancel-your-subscription"></a>Procedura per annullare l'abbonamento
 
-Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento, è necessario rimuovere il dominio prima di annullare l'abbonamento. Per altre informazioni, vedere [Rimuovere un dominio da Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
+Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento, è necessario rimuovere il dominio prima di annullare l'abbonamento. Per ulteriori informazioni, vedere [Remove a Domain](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
-
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
@@ -109,11 +108,11 @@ Se si utilizza un dominio personalizzato con l'abbonamento, è necessario esegui
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>Modificare i record dei server dei nomi di dominio (se necessario)
 
-Se si configura un dominio personalizzato, sono stati aggiunti i record DNS in modo che il dominio funzioni con i servizi di Office 365. Prima di rimuovere il dominio, accertarsi di aggiornare i record DNS, ad esempio il record MX di dominio, nell'host DNS.
+Se si configura un dominio personalizzato, sono stati aggiunti i record DNS in modo che il dominio funzioni con i servizi Microsoft 365. Prima di rimuovere il dominio, accertarsi di aggiornare i record DNS, ad esempio il record MX di dominio, nell'host DNS.
 
 Ad esempio, modificare il record MX nell'host DNS. La posta elettronica inviata al dominio smette di venire all'indirizzo Microsoft e viene invece indirizzata al nuovo provider di posta elettronica. Un record MX determina infatti la destinazione della posta elettronica per il dominio.
 
-- Se i record del server dei nomi (NS) [puntano ai server dei nomi di Office 365](../../admin/setup/add-domain.md), le modifiche apportate al record MX non sono effettive finché non si modificano i record NS in modo che puntino al nuovo host DNS (vedere il passaggio 2).
+- Se i record del server dei nomi (NS) [puntano ai server dei nomi Microsoft 365](../../admin/setup/add-domain.md), le modifiche apportate al record MX non sono effettive finché non si modificano i record NS in modo che puntino al nuovo host DNS (vedere il passaggio 2).
 
 - Prima di aggiornare il record MX, lasciare che gli utenti conoscano la data in cui si intende cambiare la posta elettronica e il nuovo provider di posta elettronica che si intende utilizzare. Inoltre, se gli utenti desiderano spostare il proprio indirizzo di posta elettronica Microsoft esistente nel nuovo provider, devono eseguire passaggi aggiuntivi.
 
@@ -121,11 +120,11 @@ Ad esempio, modificare il record MX nell'host DNS. La posta elettronica inviata 
 
 #### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>Aggiornare il dominio MX e altri record DNS (se si utilizza un dominio personalizzato)
 
-Se i record del server dei nomi (NS) sono stati scambiati con Office 365 quando si configura il dominio, è necessario impostare o aggiornare il record MX e altri record DNS nell'host DNS che si intende utilizzare e quindi modificare il record NS in quell'host DNS.
+Se i record del server dei nomi (NS) sono stati scambiati su Microsoft 365 quando si configura il dominio, è necessario impostare o aggiornare il record MX e altri record DNS nell'host DNS che si intende utilizzare e quindi modificare il record NS in quell'host DNS.
 
 Se non sono stati modificati i record NS quando si configura il dominio, quando si modifica il record MX, la posta inizia a passare immediatamente al nuovo indirizzo.
 
-Per ulteriori informazioni, vedere in [che modo Office 365 gestisce i record DNS?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). Per modificare i record NS, vedere [rimuovere un dominio da Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
+Per ulteriori informazioni, vedere in [che modo Microsoft 365 gestisce i record DNS?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). Per modificare i record NS, vedere [Remove a Domain](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### <a name="save-your-data"></a>Salvare i dati
 
@@ -137,7 +136,7 @@ Quando l'annullamento diventa efficace, gli utenti perdono l'accesso ai dati. Pr
 
 ### <a name="uninstall-office-optional"></a>Disinstallare Office (facoltativo)
 
-Se l'abbonamento è stato annullato e gli utenti non sono stati spostati in un altro abbonamento che include Office, Office 365 viene eseguito in modalità di funzionalità ridotte. In questo caso, gli utenti possono leggere e stampare solo i documenti e le applicazioni di Office 365 visualizzano le [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Per evitare confusione, chiedere agli utenti di [disinstallare Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) dai propri computer.
+Se l'abbonamento è stato annullato e gli utenti non sono stati spostati in un altro abbonamento che include Microsoft 365, Microsoft 365 viene eseguito in modalità di funzionalità ridotte. In questo caso, gli utenti possono leggere e stampare solo i documenti e le applicazioni di Microsoft 365 visualizzano le [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Per evitare confusione, chiedere agli utenti di [disinstallare Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) dai propri computer.
 
 ## <a name="related-articles"></a>Articoli correlati
 

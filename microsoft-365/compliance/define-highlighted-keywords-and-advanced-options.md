@@ -1,5 +1,5 @@
 ---
-title: Definire le parole chiave evidenziate e le opzioni avanzate in Office 365 Advanced eDiscovery
+title: Definire le parole chiave evidenziate e le opzioni avanzate in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: "Informazioni su come aggiungere parole chiave definite dall'utente alla pertinenza per identificare i file rilevanti durante il tagging in Office 365 Advanced eDiscovery e per specificare i parametri di costo.  "
-ms.openlocfilehash: bec34867e7dfdb86848fd1fd2126d5cf96129802
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: "Informazioni su come aggiungere parole chiave definite dall'utente alla pertinenza per identificare i file rilevanti durante il tagging in Advanced eDiscovery e per specificare i parametri di costo.  "
+ms.openlocfilehash: b36032c148e5819440bc31cbf4692db51abf1add
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42556764"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630553"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>Definire le parole chiave evidenziate e le opzioni avanzate in Advanced eDiscovery (Classic)
 

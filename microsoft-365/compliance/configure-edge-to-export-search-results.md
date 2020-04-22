@@ -1,5 +1,5 @@
 ---
-title: Utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge
+title: Utilizzare lo strumento di esportazione di eDiscovery in Microsoft Edge
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: È necessario abilitare il supporto ClickOnce per utilizzare la versione più recente di Microsoft Edge per scaricare i risultati della ricerca dalla ricerca di contenuto e eDiscovery nel centro sicurezza e conformità.
-ms.openlocfilehash: 80924b124521b24ffabf1e0273802265cd715500
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: c48e3fb04747306693364a2cdbc6f18047a0fd9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710345"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632381"
 ---
-# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Utilizzare lo strumento di esportazione di eDiscovery in Microsoft Edge
 
-A seguito delle recenti modifiche apportate alla versione più recente di Microsoft Edge, il supporto ClickOnce non è più abilitato per impostazione predefinita. Per continuare a utilizzare lo strumento di esportazione di Microsoft Office 365 eDiscovery per scaricare i risultati della ricerca contenuto o eDiscovery, è necessario utilizzare [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o abilitare il supporto ClickOnce nella versione più recente di Microsoft Edge.
+A seguito delle recenti modifiche apportate alla versione più recente di Microsoft Edge, il supporto ClickOnce non è più abilitato per impostazione predefinita. Per continuare a utilizzare lo strumento di esportazione di eDiscovery per scaricare i risultati della ricerca di contenuto o di eDiscovery, è necessario utilizzare [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o abilitare il supporto di ClickOnce nella versione più recente di Microsoft Edge.
 
 ## <a name="enable-clickonce-support-in-microsoft-edge"></a>Abilitare il supporto ClickOnce in Microsoft Edge
 
@@ -49,7 +49,7 @@ A seguito delle recenti modifiche apportate alla versione più recente di Micros
 
    ![Fare clic su Apri per avviare lo strumento di esportazione di eDiscovery](../media/ClickOnceimage4.png)
 
-   Se lo strumento di esportazione di Microsoft Office 365 eDiscovery non è installato, verrà visualizzato un avviso di sicurezza, 
+   Se lo strumento di esportazione di eDiscovery non è installato, verrà visualizzato un avviso di sicurezza, 
 
    ![Fare clic su Installa per installare lo strumento di esportazione di eDiscovery](../media/ClickOnceimage5.png)
 

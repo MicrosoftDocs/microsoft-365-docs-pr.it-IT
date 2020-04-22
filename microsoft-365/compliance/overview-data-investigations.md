@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
-ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 89bd9e637a74ac1b972b00f794eca408828c076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328078"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626772"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Panoramica delle indagini sui dati (anteprima) in Microsoft 365
 
@@ -41,7 +41,7 @@ Nelle sezioni seguenti viene descritto ogni passaggio del flusso di lavoro incor
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Ricerca di dati sensibili, dannosi o fuori luogo
 
-Utilizzare la scheda **ricerche** per creare ricerche per trovare la pagina di Office 365 per i dati che si desidera correggere. È possibile creare ed eseguire ricerche basate su query per identificare un set di messaggi di posta elettronica e documenti che potrebbero contenere dati rovesciati e quindi raccoglierli come prova per esaminare e analizzare. Inoltre, è possibile utilizzare lo strumento di ricerca per visualizzare in anteprima i documenti di esempio e visualizzare le statistiche di ricerca che consentono di affinare e migliorare i risultati della ricerca. Dopo aver verificato che i risultati della ricerca contengono tutti i dati rilevanti per l'indagine, è necessario aggiungere i risultati della ricerca al set di evidenze per ulteriori riesami, valutazioni dell'impatto ed eseguire azioni correttive in base alle esigenze. Per ulteriori informazioni, vedere [Search for data in an Investigation](search-for-data.md).
+Utilizzare la scheda **ricerche** per creare ricerche per individuare Microsoft 365 per i dati che si desidera correggere. È possibile creare ed eseguire ricerche basate su query per identificare un set di messaggi di posta elettronica e documenti che potrebbero contenere dati rovesciati e quindi raccoglierli come prova per esaminare e analizzare. Inoltre, è possibile utilizzare lo strumento di ricerca per visualizzare in anteprima i documenti di esempio e visualizzare le statistiche di ricerca che consentono di affinare e migliorare i risultati della ricerca. Dopo aver verificato che i risultati della ricerca contengono tutti i dati rilevanti per l'indagine, è necessario aggiungere i risultati della ricerca al set di evidenze per ulteriori riesami, valutazioni dell'impatto ed eseguire azioni correttive in base alle esigenze. Per ulteriori informazioni, vedere [Search for data in an Investigation](search-for-data.md).
 
 ## <a name="review-and-investigate-evidence"></a>Esaminare ed esaminare gli elementi probatori
 

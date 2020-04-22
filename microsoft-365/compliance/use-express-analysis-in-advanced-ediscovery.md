@@ -1,5 +1,5 @@
 ---
-title: Utilizzare l'analisi rapida in Office 365 Advanced eDiscovery
+title: Utilizzare l'analisi Express in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: Informazioni su come eseguire la modalità di analisi Express di Office 365 Advanced eDiscovery
-ms.openlocfilehash: d4b8e1fa5e8251f5ede2d9a3003c756decac3b45
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Informazioni su come eseguire la modalità di analisi Express di Advanced eDiscovery
+ms.openlocfilehash: 32e1087d33b9e9a6c0e4935bd3488a6b464d06a2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557644"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626412"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Utilizzare l'analisi Express in Advanced eDiscovery (Classic) 
 
@@ -104,7 +104,7 @@ Facoltativamente, è possibile impostare **Impostazioni avanzate** per modificar
     
   - Per esportare i risultati per i nuovi file aggiunti a un caso esistente, continuare con il batch corrente. Per creare una sessione nel batch, selezionare lo stesso numero di batch e fare clic su **Crea sessione di esportazione** è possibile utilizzare questa opzione per esportare gli stessi parametri del batch precedente, in modo incrementale. 
     
-  - Per esportare in un nuovo batch, fare **** ![clic su Aggiungi](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
+  - Per esportare in un nuovo batch, fare **Add** ![clic su Aggiungi](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
     
   - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic su **modifica** ![icona modifica e quindi modificare i campi.
     
@@ -132,5 +132,5 @@ Scegliere **OK**per salvare le impostazioni avanzate, **ripristinare** i valori 
 ## <a name="see-also"></a>Vedere anche
 <a name="BK_AdvancedSettings"> </a>
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
 

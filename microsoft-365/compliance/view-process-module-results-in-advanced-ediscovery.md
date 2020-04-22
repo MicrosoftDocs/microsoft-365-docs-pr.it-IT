@@ -1,5 +1,5 @@
 ---
-title: Visualizza i risultati del modulo di processo in Office 365 Advanced eDiscovery
+title: Visualizza i risultati del modulo di processo in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'Informazioni su come trovare i risultati di un modulo di processo eseguito in Office 365 Advanced eDiscovery, incluso lo stato delle attività e il riepilogo dei processi.  '
-ms.openlocfilehash: 76619d5899171e8ec105c359cefdb4b8689a8d8a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Informazioni su come trovare i risultati di un modulo di processo eseguito in Advanced eDiscovery, incluso lo stato delle attività e il riepilogo dei processi.  '
+ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557604"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626312"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Visualizza i risultati del modulo di processo in Advanced eDiscovery (Classic)
 
@@ -110,7 +110,7 @@ Nei risultati \> \> del \> processo di preparazione, vengono visualizzati i dett
   
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Esecuzione del modulo di elaborazione e caricamento dei dati](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

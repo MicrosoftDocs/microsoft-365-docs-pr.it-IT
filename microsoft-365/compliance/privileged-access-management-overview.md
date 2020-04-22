@@ -1,5 +1,5 @@
 ---
-title: Gestione degli accessi con privilegi in Office 365
+title: Gestione accessi con privilegi
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -16,45 +16,45 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
-description: Utilizzare questo argomento per ulteriori informazioni sulla gestione degli accessi con privilegi in Office 365
-ms.openlocfilehash: 547f3f3179252c767d56b45d4ad64d67b3c82b7d
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+description: Utilizzare questo argomento per ulteriori informazioni sulla gestione degli accessi con privilegi
+ms.openlocfilehash: 932e4d5574ac14c7dd76f8df70b61ed274acebbf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43116026"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626502"
 ---
-# <a name="privileged-access-management-in-office-365"></a>Gestione degli accessi con privilegi in Office 365
+# <a name="privileged-access-management"></a>Gestione accessi con privilegi
 
-La gestione degli accessi con privilegi consente il controllo di accesso granulare sulle attività amministrative privilegiate in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che utilizzano account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche. La gestione degli accessi con privilegi richiede agli utenti di richiedere l'accesso just-in-time per completare le attività elevate e privilegiate tramite un flusso di lavoro di approvazione estremamente ambito e con limiti temporali. Questa configurazione consente agli utenti di accedere in modo sufficiente per eseguire l'attività a portata di mano, senza rischiare l'esposizione di dati sensibili o di impostazioni di configurazione critiche. L'abilitazione della gestione degli accessi con privilegi in Office 365 consente all'organizzazione di operare con privilegi zero e di fornire un livello di difesa contro le vulnerabilità di accesso amministrativo permanenti.
+La gestione degli accessi con privilegi consente il controllo di accesso granulare sulle attività amministrative privilegiate in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che utilizzano account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche. La gestione degli accessi con privilegi richiede agli utenti di richiedere l'accesso just-in-time per completare le attività elevate e privilegiate tramite un flusso di lavoro di approvazione estremamente ambito e con limiti temporali. Questa configurazione consente agli utenti di accedere in modo sufficiente per eseguire l'attività a portata di mano, senza rischiare l'esposizione di dati sensibili o di impostazioni di configurazione critiche. L'abilitazione della gestione degli accessi con privilegi in Microsoft 365 consente all'organizzazione di operare con privilegi zero e di fornire un livello di difesa contro le vulnerabilità di accesso amministrativo permanenti.
 
-Per una breve panoramica sull'archivio protetto dei clienti integrato e sul flusso di lavoro per la gestione degli accessi con privilegi, vedere questa [cassetta del cliente e gestione degli accessi con privilegi in Office 365](https://go.microsoft.com/fwlink/?linkid=2066800).
+Per una breve panoramica sull'archivio protetto dei clienti integrato e sul flusso di lavoro per la gestione degli accessi con privilegi, vedere questo [archivio clienti e gestione accesso privilegiato](https://go.microsoft.com/fwlink/?linkid=2066800).
 
 ## <a name="layers-of-protection"></a>Livelli di protezione
 
-La gestione degli accessi con privilegi integra altre protezioni di funzionalità di accesso e di dati all'interno dell'architettura di sicurezza di Office 365. La gestione degli accessi con privilegi come parte di un approccio integrato e a livello di sicurezza fornisce un modello di sicurezza che massimizza la protezione delle informazioni riservate e le impostazioni di configurazione di Office 365. Come illustrato nel diagramma, la gestione degli accessi con privilegi si basa sulla protezione fornita con la crittografia nativa dei dati di Office 365 e sul modello di sicurezza per il controllo di accesso basato sui ruoli dei servizi di Office 365. Quando viene utilizzato con [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), queste due funzionalità forniscono il controllo di accesso con accesso just-in-time a diversi ambiti.
+La gestione degli accessi con privilegi integra altre protezioni di funzionalità di accesso e di dati all'interno dell'architettura di sicurezza di Microsoft 365. La gestione degli accessi con privilegi come parte di un approccio integrato e a livello di sicurezza fornisce un modello di sicurezza che massimizza la protezione delle informazioni riservate e le impostazioni di configurazione di Microsoft 365. Come illustrato nel diagramma, la gestione degli accessi con privilegi si basa sulla protezione fornita con la crittografia nativa dei dati di Microsoft 365 e sul modello di sicurezza per il controllo di accesso basato sui ruoli dei servizi di Microsoft 365. Quando viene utilizzato con [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), queste due funzionalità forniscono il controllo di accesso con accesso just-in-time a diversi ambiti.
 
-![Protezione a più livelli in Office 365](../media/pam-layered-protection.png)
+![Protezione a più livelli in Microsoft 365](../media/pam-layered-protection.png)
 
-La gestione degli accessi con privilegi in Office 365 è definita e portata a livello di **attività** , mentre Azure ad Privileged Identity Management applica la protezione a livello di **ruolo** con la possibilità di eseguire più attività. Azure AD Privileged Identity Management consente principalmente la gestione degli accessi per i ruoli di Active Directory e i gruppi di ruoli, mentre la gestione degli accessi con privilegi in Office 365 si applica solo a livello di attività.
+La gestione degli accessi con privilegi è definita e portata a livello di **attività** , mentre Azure ad Privileged Identity Management applica la protezione a livello di **ruolo** con la possibilità di eseguire più attività. Azure AD Privileged Identity Management consente principalmente la gestione degli accessi per i ruoli di Active Directory e i gruppi di ruoli, mentre la gestione degli accessi con privilegi in Microsoft 365 si applica solo a livello di attività.
 
-- **Abilitazione della gestione degli accessi con privilegi in Office 365 mentre è già in uso Azure ad Privileged Identity Management:** L'aggiunta di gestione degli accessi con privilegi in Office 365 fornisce un altro livello granulare di funzionalità di protezione e controllo per l'accesso privilegiato ai dati di Office 365.
+- **Abilitazione della gestione degli accessi con privilegi durante la gestione di Azure ad Privileged Identity Management:** L'aggiunta di gestione accessi con privilegi fornisce un altro livello granulare di funzionalità di protezione e controllo per l'accesso privilegiato ai dati di Microsoft 365.
 
-- **Abilitazione di Azure ad Privileged Identity Management già utilizzando la gestione degli accessi con privilegi in Office 365:**  L'aggiunta di Azure AD Privileged Identity Management alla gestione degli accessi con privilegi in Office 365 può estendere l'accesso privilegiato ai dati esterni a Office 365 che sono definiti principalmente dai ruoli o dall'identità dell'utente.  
+- **Abilitazione di Azure ad Privileged Identity Management già utilizzando la gestione degli accessi con privilegi in Office 365:**  L'aggiunta di Azure AD Privileged Identity Management alla gestione degli accessi con privilegi può estendere l'accesso privilegiato ai dati esterni a Microsoft 365 che sono definiti principalmente da ruoli utente o identità.  
 
 ## <a name="privileged-access-management-architecture-and-process-flow"></a>Architettura e flusso di processo di gestione degli accessi con privilegi
 
-Ognuno dei seguenti flussi di processo descrive l'architettura dell'accesso con privilegi e la modalità di interazione con il substrato di Office 365, il controllo di Office 365 e l'Exchange Management Runspace.
+Ognuno dei seguenti flussi di processo descrive l'architettura dell'accesso con privilegi e la modalità di interazione con il substrato di Microsoft 365, il controllo e l'Exchange Management Runspace.
 
 ### <a name="step-1-configure-a-privileged-access-policy"></a>Passaggio 1: configurare un criterio di accesso privilegiato
 
-Quando si configura un criterio di accesso privilegiato con l'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) o Exchange Management PowerShell, vengono definiti i criteri e i processi delle funzionalità di accesso privilegiato e gli attributi dei criteri nel supporto di Office 365. Le attività vengono registrate nel centro sicurezza e conformità di Office 365. Il criterio è ora abilitato e pronto per gestire le richieste in arrivo per le approvazioni.
+Quando si configura un criterio di accesso privilegiato con l'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com) o Exchange Management PowerShell, è possibile definire i criteri e i processi delle funzionalità di accesso privilegiato e gli attributi dei criteri nel supporto di stampa di Microsoft 365. Le attività vengono registrate nel centro sicurezza &amp; e conformità. Il criterio è ora abilitato e pronto per gestire le richieste in arrivo per le approvazioni.
 
 ![Passaggio 1: creazione di criteri](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Passaggio 2: richiesta di accesso
 
-Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) o con Exchange Management PowerShell, gli utenti possono richiedere l'accesso a attività con privilegi elevati o di privilegio. La funzionalità accesso privilegiato Invia la richiesta al substrato Office 365 per l'elaborazione in base ai criteri di accesso ai privilegi configurati e registra l'attività nei registri del Centro sicurezza e conformità di Office 365.
+Nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) o con Exchange Management PowerShell, gli utenti possono richiedere l'accesso a attività con privilegi elevati o di privilegio. La funzionalità accesso privilegiato Invia la richiesta al substrato Microsoft 365 per l'elaborazione in base ai criteri di accesso ai privilegi configurati &amp; e registra l'attività nei registri del Centro sicurezza e conformità.
 
 ![Passaggio 2: richiesta di accesso](../media/pam-step2-access-request.jpg)
 
@@ -66,7 +66,7 @@ Viene generata una richiesta di approvazione e la notifica della richiesta in so
 
 ### <a name="step-4-access-processing"></a>Passaggio 4: accedere all'elaborazione
 
-Per una richiesta approvata, l'attività viene elaborata da Exchange Management Runspace. L'approvazione viene controllata rispetto al criterio di accesso privilegiato ed elaborata dal supporto di stampa di Office 365. Tutte le attività per l'attività vengono registrate nel centro sicurezza e conformità di Office 365.
+Per una richiesta approvata, l'attività viene elaborata da Exchange Management Runspace. L'approvazione viene controllata rispetto al criterio di accesso privilegiato ed elaborata dal supporto tecnico Microsoft 365. Tutte le attività per l'attività vengono registrate nel centro &amp; sicurezza e conformità.
 
 ![Passaggio 4: accedere all'elaborazione](../media/pam-step4-access-processing.jpg)
 
@@ -82,15 +82,15 @@ La gestione degli accessi con privilegi sarà disponibile in altri carichi di la
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-policies-will-this-limit-be-increased"></a>L'organizzazione ha bisogno di più di 30 criteri di accesso privilegiato, questo limite verrà aumentato?
 
-Sì, l'innalzamento del limite corrente di 30 criteri di accesso privilegiato per l'organizzazione di Office 365 è nella roadmap delle caratteristiche.
+Sì, l'innalzamento del limite corrente di 30 criteri di accesso privilegiato per organizzazione è nella roadmap delle caratteristiche.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>È necessario essere un amministratore globale per gestire l'accesso con privilegi in Office 365?
 
 No, è necessario il ruolo di gestione dei ruoli di Exchange assegnato agli account che gestiscono l'accesso con privilegi in Office 365. Se non si desidera configurare il ruolo di gestione ruolo come autorizzazione Account autonomo, il ruolo amministratore globale include questo ruolo per impostazione predefinita e può gestire l'accesso con privilegi. Gli utenti inclusi nel gruppo dei responsabili approvazione non devono essere un amministratore globale o hanno il ruolo di gestione dei ruoli assegnato per esaminare e approvare le richieste con PowerShell.
 
-### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>In che modo la gestione degli accessi con privilegi in Office 365 è relativa all'archivio protetto dei clienti?
+### <a name="how-is-privileged-access-management-related-to-customer-lockbox"></a>Come è la gestione degli accessi con privilegi correlati all'archivio protetto dei clienti?
 
-L' [archivio protetto dei clienti](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) consente un livello di controllo di accesso per le organizzazioni quando Microsoft accede ai dati. La gestione degli accessi con privilegi in Office 365 consente il controllo di accesso granulare all'interno di un'organizzazione per tutte le attività di Office 365.
+L' [archivio protetto dei clienti](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) consente un livello di controllo di accesso per le organizzazioni quando Microsoft accede ai dati. La gestione degli accessi con privilegi consente il controllo di accesso granulare all'interno di un'organizzazione per tutte le attività con privilegi 365 Microsoft
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 

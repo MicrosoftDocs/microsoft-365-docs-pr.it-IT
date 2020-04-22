@@ -1,5 +1,5 @@
 ---
-title: Definire i problemi e assegnare gli utenti in Office 365 Advanced eDiscovery
+title: Definire i problemi e assegnare gli utenti in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
-description: Informazioni su come aggiungere o modificare un problema, incluso l'assegnazione degli utenti, o eliminare un problema relativo a un caso di eDiscovery in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 5c7c15b765a0c129e8a58533951b6569b8766b45
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Informazioni su come aggiungere o modificare un problema, ad esempio per l'assegnazione di utenti o per eliminare un problema per un caso di eDiscovery in Advanced eDiscovery.
+ms.openlocfilehash: 3e1366962393b6e1bb3605472b4f635fbcf6e4bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556974"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630659"
 ---
 # <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Definire i problemi e assegnare gli utenti in Advanced eDiscovery (Classic)
 
@@ -76,7 +76,7 @@ In Advanced eDiscovery, è possibile definire uno o più problemi all'interno di
     
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Configurare carichi per aggiungere file importati](set-up-loads-to-add-imported-files.md)
   

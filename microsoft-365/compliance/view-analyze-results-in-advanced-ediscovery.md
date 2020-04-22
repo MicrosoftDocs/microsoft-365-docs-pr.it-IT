@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i risultati dell'analisi in Office 365 Advanced eDiscovery
+title: Visualizzare i risultati dell'analisi in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Informazioni su come visualizzare i risultati del processo di analisi in Office 365 Advanced eDiscovery, incluse le definizioni delle opzioni di attività visualizzate.  '
-ms.openlocfilehash: adee00d2b7826827cc14f4ca945952f4892511a1
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Informazioni sul percorso in cui visualizzare i risultati del processo di analisi in Advanced eDiscovery, incluse le definizioni delle opzioni di attività visualizzate.  '
+ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557624"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626362"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Visualizzazione analisi dei risultati in Advanced eDiscovery (Classic)
 
@@ -77,7 +77,7 @@ I risultati degli **allegati** visualizzano il numero di allegati, in base al ti
   
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla somiglianza del documento](understand-document-similarity-in-advanced-ediscovery.md)
   

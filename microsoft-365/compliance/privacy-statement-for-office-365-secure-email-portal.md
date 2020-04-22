@@ -1,5 +1,5 @@
 ---
-title: Informativa sulla privacy per Office 365 Secure E-mail Portal
+title: Informativa sulla privacy per il portale di posta elettronica sicuro
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 'Ultimo aggiornamento: 2017 maggio'
-ms.openlocfilehash: 23707d22e52935b372a90a42ec323d8f64262894
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 069b47305557ef8a6a4e0a732288977842b52a5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597722"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626630"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Informativa sulla privacy per Office 365 Secure E-mail Portal
+# <a name="privacy-statement-for-secure-email-portal"></a>Informativa sulla privacy per il portale di posta elettronica sicuro
 
 Ultimo aggiornamento: 2017 maggio
   
@@ -37,9 +37,9 @@ Le informazioni sulle credenziali dell'account Microsoft, dell'account aziendale
   
 Durante il processo di decrittografia, i messaggi crittografati ricevuti non verranno archiviati dal nuovo portale delle funzionalità OME. non verrà trasmesso al di fuori del nuovo portale delle funzionalità OME in qualsiasi momento.
   
-Il nuovo portale delle funzionalità OME può, in alcuni casi, raccogliere punti dati sull'uso e sulle prestazioni delle nuove funzionalità OME (ad esempio, la frequenza con cui vengono visualizzati i messaggi crittografati, il browser o l'app utilizzata e gli eventuali errori riscontrati), che possono essere analizzati in aggregazione allo scopo di migliorare la qualità, la sicurezza e l'integrità di questo e di altre app, prodotti o servizi Microsoft. Queste informazioni non vengono utilizzate per identificare, contattare o indirizzare la pubblicità all'utente.
+Il nuovo portale delle funzionalità OME può, in alcuni casi, raccogliere punti dati sull'uso e sulle prestazioni delle nuove funzionalità OME (ad esempio, la frequenza con cui vengono visualizzati i messaggi crittografati, il browser o l'app utilizzata e gli eventuali errori riscontrati), che possono essere analizzati in modo aggregato per migliorare la qualità, la sicurezza e l'integrità di questo e di altre app Microsoft o servizi. Queste informazioni non vengono utilizzate per identificare, contattare o indirizzare la pubblicità all'utente.
   
-## <a name="for-more-information"></a>Ulteriori informazioni
+## <a name="for-more-information"></a>Per ulteriori informazioni
 
 Consultare le richieste di informazioni relative alla privacy dirette a Microsoft tramite [omepriv@microsoft.com](mailto:omepriv@microsoft.com)o tramite posta elettronica al seguente indirizzo:
   

@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 97f769b763b5698dd664dee4ae8659999a62b078
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ef19b106d5b00bb8b436b56b6da8bb653873f3a
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602613"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583323"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Criteri di sicurezza per i servizi di CJIS (Criminal Justice Information Services)
 
 ## <a name="cjis-overview"></a>Panoramica di CJIS
 
-La divisione Criminal Justice Information Services (CJIS) del Bureau federale degli Stati Uniti d'America (FBI) fornisce alle autorità giudiziarie, locali e federali l'accesso alle informazioni relative alla giustizia penale (CJI), ad esempio le impronte digitali record e storie criminali. Le forze dell'ordine e gli altri enti governativi degli Stati Uniti devono garantire che il loro utilizzo dei servizi cloud per la trasmissione, l'archiviazione o l'elaborazione di CJI sia conforme ai [criteri di sicurezza di CJIS](https://aka.ms/cjis-security-policy), che stabilisce requisiti minimi di sicurezza e controlli per la salvaguardia di CJI.
+La divisione Criminal Justice Information Services (CJIS) del Federal Bureau of Investigation (FBI) fornisce informazioni sullo stato, l'applicazione della legge locale e federale e le agenzie di giustizia penale e l'accesso a Criminal Justice Information (CJI), ad esempio i record di impronte digitali e le storie criminali. Le forze dell'ordine e gli altri enti governativi degli Stati Uniti devono garantire che il loro utilizzo dei servizi cloud per la trasmissione, l'archiviazione o l'elaborazione di CJI sia conforme ai [criteri di sicurezza di CJIS](https://aka.ms/cjis-security-policy), che stabilisce requisiti minimi di sicurezza e controlli per la salvaguardia di CJI.
 
 La politica di sicurezza di CJIS integra le direttive presidenziali e dell'FBI, le leggi federali e la politica consultiva del Consiglio direttivo della comunità di giustizia penale, insieme alle indicazioni dell'Istituto nazionale di Standards and Technology (NIST). Il criterio viene aggiornato periodicamente per riflettere i requisiti di sicurezza in evoluzione.
 
@@ -35,15 +35,15 @@ Inoltre, tutti gli appaltatori privati che elaborano CJI devono firmare l'addend
 
 ## <a name="microsoft-and-cjis-security-policy"></a>Criteri di sicurezza di Microsoft e CJIS
 
-Microsoft firma l'addendum alla sicurezza di CJIS in States con CJIS Information agreements. Queste informazioni dichiarano le autorità di applicazione della legge responsabili della conformità ai criteri di sicurezza di CJIS in che modo i controlli di sicurezza cloud di Microsoft consentono di proteggere il ciclo di vita completo dei dati e di verificare l'adeguato controllo del personale operativo con accesso a CJI. Microsoft continua a collaborare con i governi di stato per accedere a CJIS Information agreements.
+Microsoft firma l'addendum alla sicurezza di CJIS in States con CJIS Information agreements. Tali autorità sono incaricate di applicare la conformità ai criteri di sicurezza di CJIS in che modo i controlli di sicurezza cloud di Microsoft consentono di proteggere l'intero ciclo di vita dei dati e di controllare in background il personale operativo con accesso a CJI. Microsoft continua a collaborare con i governi di stato per accedere a CJIS Information agreements.
 
-Microsoft ha valutato i criteri operativi e le procedure di Microsoft Azure Government, Microsoft Office 365 US Government e Microsoft Dynamics 365 US Government e attestano la loro capacità nei contratti di servizi applicabili di rispondere alle esigenze dell'FBI requisiti per l'utilizzo di servizi nell'ambito.
+Microsoft ha valutato i criteri operativi e le procedure di Microsoft Azure Government, Microsoft Office 365 US Government e Microsoft Dynamics 365 US Government e attestano la loro capacità nei contratti di servizi applicabili di soddisfare i requisiti dell'FBI per l'utilizzo di servizi nell'ambito.
 
 Informazioni sui vantaggi dei criteri di sicurezza di CJIS nel cloud Microsoft: informazioni su [come Genetec ha cancellato le indagini penali](https://customers.microsoft.com/story/genetec)
 
 Informazioni su come accelerare i criteri di sicurezza di CJIS con il modello di sicurezza e conformità di Azure: [scaricare le linee guida per l'implementazione di CJIS per i servizi cloud di Microsoft Government](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -86,8 +86,4 @@ I [criteri di sicurezza di CJIS](https://aka.ms/cjis-security-policy) riguardano
 - [Linee guida per l'implementazione di CJIS per Azure Government](https://aka.ms/cjisimplementationguidelines)
 - [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/?linkid=2087246)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf).
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
