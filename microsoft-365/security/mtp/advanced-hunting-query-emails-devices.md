@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: ec7f9083401fdf7a2114d99ddd2dcc009411e34b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928985"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633508"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Ricerca delle minacce su dispositivi ed e-mail
 
@@ -31,7 +31,7 @@ ms.locfileid: "42928985"
 
 
 
-[Ricerca avanzata](advanced-hunting-overview.md) in Microsoft Threat Protection consente di cercare in modo proattivo le minacce in tutti i dispositivi Windows e nei messaggi di posta elettronica di Office 365. Di seguito sono illustrati alcuni scenari di ricerca e query di esempio che consentono di capire come creare query che includano sia dispositivi che messaggi di posta elettronica.
+La [ricerca avanzata](advanced-hunting-overview.md) in Microsoft Threat Protection consente di cercare in modo proattivo le minacce nei dispositivi Windows e nei messaggi di posta elettronica Microsoft. Di seguito sono illustrati alcuni scenari di ricerca e query di esempio che consentono di capire come creare query che includano sia dispositivi che messaggi di posta elettronica.
 
 ## <a name="obtain-user-accounts-from-email-addresses"></a>Ottenere account utente da indirizzi di posta elettronica
 Durante la creazione di query su [tabelle che includono sia dispositivi che messaggi di posta elettronica](advanced-hunting-schema-tables.md), è probabile che sia necessario ottenere i nomi degli account utente dagli indirizzi di posta elettronica del mittente o del destinatario. Per farlo, usare l'*host locale* dall'indirizzo e-mail:

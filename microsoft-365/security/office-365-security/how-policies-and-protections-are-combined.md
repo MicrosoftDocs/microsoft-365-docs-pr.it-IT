@@ -1,5 +1,5 @@
 ---
-title: Ordine e precedenza della protezione della posta elettronica in Office 365
+title: Ordine e precedenza della protezione della posta elettronica
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
@@ -14,16 +14,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Descrive l'ordine di applicazione di Office 365 Protections e come il valore di priorità nei criteri di protezione determina il criterio applicato.
-ms.openlocfilehash: 6a95c59a5cd629b704753c6c05c9b8069d9240b1
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537414"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633967"
 ---
-# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Ordine e precedenza della protezione della posta elettronica in Office 365
+# <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
-In Office 365, la posta elettronica in ingresso viene valutata e pertanto potrebbe essere contrassegnata da più forme di protezione (malware, posta indesiderata, phishing e così via). A causa di tutte queste attività, può essere difficile determinare quali criteri sono stati applicati e in quale ordine.
+Come utente di Microsoft 365, la posta elettronica in ingresso può essere contrassegnata da più forme di protezione. Ad esempio, i criteri di anti-phishing EOP incorporati disponibili per tutti i clienti di Microsoft 365 e i più robusti criteri di anti-phishing ATP disponibili anche per i clienti di Office 365 Advanced Threat Protection. I messaggi passano anche attraverso analisi di rilevamento multiple per malware, posta indesiderata, phishing e così via. Date tutte queste attività, è possibile che si verifichi una certa confusione sui criteri applicati.
 
 In generale, un criterio applicato a un messaggio viene identificato nell'intestazione **X-Forefront-antispam-report** nella proprietà **Cat (categoria)** . Per ulteriori informazioni, vedere [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md).
 

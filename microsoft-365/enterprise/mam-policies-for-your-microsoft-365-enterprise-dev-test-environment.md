@@ -14,18 +14,18 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per aggiungere criteri di conformità dei dispositivi di Intune all'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: b0b8bd2d76a3959bbcca749545d9a16e50491d20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066913"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631586"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Criteri di conformità dei dispositivi per l'ambiente di testing di Microsoft 365 Enterprise
 
 *Questa guida al lab di test può essere usata solo per ambienti di testing di Microsoft 365 Enterprise.*
 
-Con le istruzioni riportate in questo articolo, è possibile aggiungere un criterio di conformità del dispositivo Intune per i dispositivi Windows 10 e Office 365 ProPlus all'ambiente di testing di Microsoft 365 Enterprise.
+Con le istruzioni riportate in questo articolo, è possibile aggiungere un criterio di conformità del dispositivo Intune per i dispositivi Windows 10 e le app Microsoft 365 per Enterprise all'ambiente di testing di Microsoft 365 Enterprise.
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -80,7 +80,7 @@ In questa fase, è possibile creare un criterio di conformità del dispositivo p
 
 17. Nel riquadro **Aggiungi app** , seleziona **informazioni sulla famiglia di applicazioni**.
  
-18. Nel riquadro **delle informazioni della famiglia di applicazioni** , digitare **Office 365 ProPlus** sia in **nome famiglia** che in **Descrizione famiglia**.
+18. Nel riquadro **delle informazioni della famiglia** di applicazioni, digitare **Microsoft 365 Apps for Enterprise** sia nella **Descrizione**del **nome** della famiglia che della famiglia di prodotti.
 Fare clic su OK.
 
 19. Nel riquadro **Aggiungi app** , selezionare **Configure app Suite**, quindi fare clic su **OK**.

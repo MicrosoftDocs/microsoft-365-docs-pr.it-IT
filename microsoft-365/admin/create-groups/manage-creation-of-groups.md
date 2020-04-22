@@ -1,5 +1,5 @@
 ---
-title: Gestire chi può creare gruppi di Office 365
+title: Gestire gli utenti autorizzati a creare gruppi
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: Informazioni su come controllare gli utenti che possono creare gruppi di Office 365.
-ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: Informazioni su come controllare quali utenti possono creare gruppi di Microsoft 365.
+ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547587"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630406"
 ---
-# <a name="manage-who-can-create-office-365-groups"></a>Gestire chi può creare gruppi di Office 365
+# <a name="manage-who-can-create-groups"></a>Gestire gli utenti autorizzati a creare gruppi
 
   
-Gli utenti possono creare gruppi di Office 365 con molta facilità, quindi gli amministratori non vengono inondati di richieste di crearli per conto di altre persone. Tuttavia, a seconda dei requisiti aziendali, può essere opportuno controllare chi è autorizzato a creare gruppi.
+Poiché è così semplice per gli utenti creare gruppi di Microsoft 365, non si è sommersi dalle richieste di crearle per conto di altre persone. Tuttavia, a seconda dei requisiti aziendali, può essere opportuno controllare chi è autorizzato a creare gruppi.
   
-In questo articolo viene illustrato come disabilitare la possibilità di creare gruppi in tutti i servizi di Office 365 che utilizzano i gruppi, tra cui:
+In questo articolo viene illustrato come disabilitare la possibilità di creare gruppi in tutti i servizi di Microsoft 365 che utilizzano i gruppi, tra cui:
   
 - Outlook
     
@@ -53,9 +53,9 @@ In questo articolo viene illustrato come disabilitare la possibilità di creare 
 
 - Roadmap
     
-È possibile limitare la creazione dei gruppi di Office 365 ai membri di un determinato gruppo di sicurezza. Per configurarlo, è necessario utilizzare Windows PowerShell. In questo articolo vengono illustrati i passaggi necessari.
+È possibile limitare la creazione di un gruppo di Microsoft 365 ai membri di un gruppo di sicurezza specifico. Per configurarlo, è necessario utilizzare Windows PowerShell. In questo articolo vengono illustrati i passaggi necessari.
   
-La procedura descritta in questo articolo non impedirà ai membri di determinati ruoli di creare gruppi. Gli amministratori globali di Office 365 possono creare gruppi tramite qualsiasi mezzo, ad esempio Microsoft 365 Admin Center, planner, teams, Exchange e SharePoint Online. Altri ruoli possono creare gruppi tramite mezzi limitati, elencati di seguito.
+La procedura descritta in questo articolo non impedirà ai membri di determinati ruoli di creare gruppi. Gli amministratori globali possono creare gruppi tramite qualsiasi mezzo, ad esempio Microsoft 365 Admin Center, planner, teams, Exchange e SharePoint Online. Altri ruoli possono creare gruppi tramite mezzi limitati, elencati di seguito.
         
   - Amministratore di Exchange: interfaccia di amministrazione di Exchange, Azure AD
     
@@ -71,7 +71,7 @@ La procedura descritta in questo articolo non impedirà ai membri di determinati
   
   - Amministratore Gestione utenti: interfaccia di amministrazione di Microsoft 365, Yammer, Azure AD
      
-I membri di ognuno di questi ruoli possono creare Gruppi di Office 365 per utenti con restrizioni e quindi assegnare l'utente come proprietario del gruppo. Gli utenti che dispongono di questo ruolo sono in grado di creare gruppi connessi in Yammer, indipendentemente dalle impostazioni di PowerShell che potrebbero impedire la creazione.
+Se si è membri di uno di questi ruoli, è possibile creare gruppi Microsoft 365 per gli utenti con restrizioni e quindi assegnare l'utente come proprietario del gruppo. Gli utenti che dispongono di questo ruolo sono in grado di creare gruppi connessi in Yammer, indipendentemente dalle impostazioni di PowerShell che potrebbero impedire la creazione.
 
 ## <a name="licensing-requirements"></a>Requisiti per la licenza
 
@@ -85,16 +85,16 @@ Per gestire gli utenti che creano gruppi, le seguenti persone devono avere licen
 
 Gli utenti seguenti non hanno la necessità di assegnare loro le licenze Azure ad Premium o Azure AD Basic EDU:
 
-- Utenti che sono membri di gruppi di Office 365 e che non hanno la possibilità di creare altri gruppi.
+- Utenti che sono membri di gruppi di Microsoft 365 e che non hanno la possibilità di creare altri gruppi.
 
-## <a name="step-1-create-a-security-group-for-users-who-need-to-create-office-365-groups"></a>Passaggio 1: Creare un gruppo di sicurezza per gli utenti che devono creare Gruppi di Office 365
+## <a name="step-1-create-a-security-group-for-users-who-need-to-create-microsoft-365-groups"></a>Passaggio 1: creare un gruppo di sicurezza per gli utenti che hanno la necessità di creare gruppi di Microsoft 365
 
 È possibile utilizzare un solo gruppo di sicurezza nell'organizzazione per controllare chi è in grado di creare gruppi. Tuttavia, è possibile annidare altri gruppi di sicurezza come membri del gruppo. Ad esempio, il gruppo denominato Consenti creazione gruppi è il gruppo di sicurezza designato e i gruppi Utenti di Microsoft Planner e Utenti di Exchange Online sono membri di questo gruppo.
 
 Gli amministratori nei ruoli sopra elencati non devono necessariamente essere membri di questo gruppo: mantengono la possibilità di creare gruppi.
 
 > [!IMPORTANT]
-> Assicurarsi di utilizzare un **gruppo di sicurezza** per limitare gli utenti autorizzati a creare gruppi. Se si tenta di utilizzare un gruppo di Office 365, i membri non saranno in grado di creare un gruppo da SharePoint perché verifica la ricerca di un gruppo di sicurezza. 
+> Assicurarsi di utilizzare un **gruppo di sicurezza** per limitare gli utenti autorizzati a creare gruppi. Se si tenta di utilizzare un gruppo di Microsoft 365, i membri non saranno in grado di creare un gruppo da SharePoint perché verifica la ricerca di un gruppo di sicurezza. 
     
 1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> \> pagina **gruppi.**
 
@@ -174,7 +174,7 @@ Se si desidera disattivare la restrizione per la creazione di un gruppo e consen
     
 ## <a name="step-4-verify-that-it-works"></a>Passaggio 4: verificare che funzioni
 
-1. Accedere a Office 365 con un account utente che non disponga della possibilità di creare gruppi. Ovvero, non sono membri del gruppo di sicurezza creato o di un amministratore.
+1. Accedere con un account utente di utenti che non devono avere la possibilità di creare gruppi. Ovvero, non sono membri del gruppo di sicurezza creato o di un amministratore.
     
 2. Selezionare il riquadro **pianificatore** . 
     

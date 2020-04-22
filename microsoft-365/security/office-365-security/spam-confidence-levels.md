@@ -16,16 +16,16 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come il livello di probabilità di posta indesiderata (SCL) determina quanto probabile o improbabile sia la posta indesiderata e le azioni predefinite che il filtro posta indesiderata assume sui messaggi in base all'SCL.
-ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893695"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638285"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Livello di probabilità di posta indesiderata (SCL) in Office 365
 
-Quando Office 365 (Exchange Online o standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online) riceve un messaggio di posta elettronica in ingresso, il messaggio passa attraverso il filtro della posta indesiderata e viene assegnato un punteggio di posta indesiderata. Tale punteggio viene mappato a un singolo livello di probabilità di posta indesiderata (SCL) aggiunto al messaggio in un X-header. Un livello SCL superiore indica che un messaggio è più probabile che sia posta indesiderata. Il servizio esegue un'azione sul messaggio in base al livello SCL.
+Quando Microsoft 365 (Exchange Online o standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online) riceve un messaggio di posta elettronica in ingresso, il messaggio passa attraverso il filtro della posta indesiderata e viene assegnato un punteggio di posta indesiderata. Tale punteggio viene mappato a un singolo livello di probabilità di posta indesiderata (SCL) aggiunto al messaggio in un X-header. Un livello SCL superiore indica che un messaggio è più probabile che sia posta indesiderata. Il servizio esegue un'azione sul messaggio in base al livello SCL.
 
 La modalità SCL e le azioni predefinite eseguite nei messaggi sono descritte nella tabella seguente. Per ulteriori informazioni sulle azioni che è possibile eseguire sui messaggi in base al verdetto del filtro della posta indesiderata, vedere [Configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
@@ -46,4 +46,4 @@ Analogamente a SCL, il livello di reclamo in blocco (BCL) identifica la posta el
 
 ||
 |:-----|
-|![Piccola icona per LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuovo utente di Office 365?**         Sono disponibili esercitazioni video gratuite per **Office 365 admins and IT pros** grazie a LinkedIn Learning.|
+|![Piccola icona per LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuovo utente di Office 365?**         Scopri i corsi video gratuiti per **Microsoft 365 Admins e professionisti it**, offerti da LinkedIn Learning.|

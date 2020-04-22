@@ -1,5 +1,5 @@
 ---
-title: Configurare i dispositivi mobili per utenti di Microsoft 365 Business
+title: Configurare i dispositivi mobili per gli utenti di Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,25 +23,25 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: Installare Office su un iPhone o su un telefono Android e i file di lavoro nelle app di Office saranno protetti da Microsoft 365 business.
-ms.openlocfilehash: 36cc3cb9b35cb5746a4147509f17e4f4d7909617
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Installare Office su un iPhone o su un telefono Android e i file di lavoro nelle app di Office saranno protetti da Microsoft 365 for business.
+ms.openlocfilehash: 1263a922ba41083511fec8030634ed6cfaf70f00
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42089372"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632568"
 ---
-# <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>Configurare i dispositivi mobili per utenti di Microsoft 365 Business
+# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurare i dispositivi mobili per gli utenti di Microsoft 365 per le aziende
 
-Seguire le istruzioni nelle schede per installare Office su un iPhone o un telefono Android. Una volta completate queste procedure, i file di lavoro creati nelle app di Office saranno protetti tramite Microsoft 365 Business.
+Seguire le istruzioni nelle schede per installare Office su un iPhone o un telefono Android. Dopo aver seguito questa procedura, i file di lavoro creati nelle app di Office saranno protetti da Microsoft 365 for business.
 
 L'esempio riguarda Outlook, ma si applica anche ad altre app di Office da installare.
   
 ## <a name="set-up-mobile-devices"></a>Configurare i dispositivi mobili
 
-## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
+## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
-Guarda un breve video su come configurare le app di Office nei dispositivi iOS con Microsoft 365 business.<br><br>
+Guarda un breve video su come configurare le app di Office sui dispositivi iOS con Microsoft 365 for business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -59,7 +59,7 @@ Al termine dell'installazione, toccare il pulsante **Apri** per aprire Outlook e
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Immettere l'indirizzo di posta elettronica aziendale nella schermata **Aggiungi account email** \> **Aggiungi account**, quindi immettere le credenziali di Microsoft 365 Business \> **Accedi**.
+Immettere l'indirizzo di posta elettronica di lavoro **nell'account Aggiungi**account \> di **posta elettronica** \> e quindi immettere l' **accesso**alle credenziali di Microsoft 365 per le aziende.
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -71,7 +71,7 @@ Trovare Outlook sull'iPhone e riavviarlo. Quando richiesto, immettere un PIN e v
   
 ![Set a PIN to access your organization's data](../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
-## <a name="androidtabandroid"></a>[Android](#tab/Android)
+## <a name="android"></a>[Android](#tab/Android)
   
 Guardare un video sull'installazione di Outlook e Office su dispositivi Android.<br><br>
 
@@ -87,7 +87,7 @@ Immettere Microsoft Outlook nella casella di ricerca di Google Play e toccare **
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Nell'app Outlook **, toccare inizia**, quindi aggiungere il proprio account \> di posta elettronica Microsoft 365 business **continue**e accedere con le credenziali dell'organizzazione.
+Nell'app Outlook **, toccare inizia**, quindi aggiungere l'account \> di posta elettronica Microsoft 365 for business **continua**e accedere con le credenziali dell'organizzazione.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -105,6 +105,6 @@ Aprire nuovamente Outlook, immettere il PIN e confermarlo. L'app Outlook è ora 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

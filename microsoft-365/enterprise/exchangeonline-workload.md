@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Eseguire il processo di pianificazione, implementazione e guida del valore di Exchange online in Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: 30ba71fbf2af684afbbffe0a2e2b1720a8eeec2c
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9214796c37e9cb5ca9fcb07ced5db7efd8e0f7d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453862"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634147"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Distribuire Exchange Online per Microsoft 365 Enterprise
 
@@ -28,7 +28,7 @@ Exchange Online include anche funzionalità avanzate di sicurezza, tra cui il fi
 
 Se non si ha familiarità con Exchange Online, vedere [Microsoft Exchange Online](https://products.office.com/exchange/exchange-online).
 
-Nelle fasi e nei passaggi seguenti viene illustrato il processo di definizione del ruolo di Exchange Online nell'organizzazione, l'onboarding dell'organizzazione a Exchange Online tramite una serie di graduali progressivi e l'utilizzo della Guida di Exchange Online e del relativo valore per gli utenti finali.
+Nelle fasi e nei passaggi seguenti viene descritta la procedura per l'elaborazione del ruolo di Exchange Online nell'organizzazione, l'onboarding dell'organizzazione a Exchange Online tramite una serie di graduali progressivi e l'utilizzo della Guida di Exchange Online e del relativo valore per gli utenti finali.
 
 >[!Note]
 >Queste istruzioni per la distribuzione devono essere seguite solo dopo aver completato [la fase 2-Identity dell'infrastruttura di Microsoft 365 Enterprise Foundation](identity-infrastructure.md).
@@ -75,7 +75,7 @@ Utilizzare queste risorse per preparare gli aspetti tecnici di un'implementazion
 
 - [Modalità di migrazione della posta elettronica a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Eseguire la migrazione delle cartelle pubbliche di Exchange Server a Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2019)
-- [Eseguire la migrazione delle cartelle pubbliche di Exchange Server ai gruppi di Office 365](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
+- [Eseguire la migrazione delle cartelle pubbliche di Exchange Server ai gruppi di Microsoft 365](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
 - [Collaborazione in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
 - [Destinatari in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
 - [Outlook per iOS e Android](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)
@@ -155,8 +155,8 @@ Dopo aver eseguito l'implementazione di Exchange Online all'intera organizzazion
 
 Ecco alcune attività suggerite:
 
-- Vedere [Fattori di successo per Office 365](https://aka.ms/successfactors) per informazioni sulle procedure consigliate generali relative all'adozione di servizi cloud. 
-- Vedere i [report attività di Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) per comprendere l'utilizzo del servizio di Office 365 nell'organizzazione. Se non si è un amministratore globale di Office 365 per l'organizzazione, chiedere a qualcun altro le autorizzazioni Lettore report per poter accedere ai report attività.
+- Per ulteriori informazioni sulle procedure consigliate generali per l'adozione del servizio cloud, vedere [fattori di successo per Microsoft 365](https://aka.ms/successfactors) . 
+- Vedere [i report di Microsoft 365 nell'](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) interfaccia di amministrazione per comprendere l'utilizzo del servizio all'interno dell'organizzazione. Se non si è un amministratore globale per l'organizzazione, chiedere a un amministratore globale di concedere le autorizzazioni di lettura dei report all'account utente in modo che sia possibile accedere ai report attività.
 - Monitorare la sede dei commenti e suggerimenti (un canale pubblico di un team o un Yammer di team centrale) per problemi e commenti e suggerimenti da parte di utenti in merito alle proprie esperienze con Exchange Online. Rispondere alle domande e ai problemi nel più breve tempo possibile per evitare che gli utenti siano frustrati e dimostrare il supporto per l'implementazione.
 - Identificare e alimentare i campioni di ogni gruppo aziendale ed evidenziare le procedure consigliate tramite Outlook. Far conoscere i loro risultati all'interno dell'organizzazione per dimostrare il successo del progetto e l'adozione. L'approvazione da parte dei responsabili tecnici all'interno di un gruppo aziendale può esercitare un'influenza potente su leader e coetanei.
 
@@ -178,4 +178,4 @@ Vedere queste risorse per la manutenzione in esecuzione di Exchange Online:
 
 - [Interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center) 
 - [Monitoraggio, creazione di rapporti e traccia dei messaggi in Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
-- [Back up della posta elettronica in Exchange Online](https://docs.microsoft.com/exchange/back-up-email) 
+- [Backup della posta elettronica in Exchange Online](https://docs.microsoft.com/exchange/back-up-email) 

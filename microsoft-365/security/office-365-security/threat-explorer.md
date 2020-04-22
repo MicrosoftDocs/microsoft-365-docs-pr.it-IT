@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui rilevamenti di Esplora risorse e in tempo reale &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537510"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631170"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -39,7 +39,7 @@ Con Esplora risorse (o rilevamenti in tempo reale), si dispone di un report pote
 
 Con questo rapporto, è possibile:
 
-- [Vedere malware rilevato dalle funzionalità di sicurezza di Office 365](#see-malware-detected-in-email-by-technology)
+- [Vedere malware detected by Microsoft 365 Security features](#see-malware-detected-in-email-by-technology)
 - [Visualizzare i dati relativi agli URL di phishing e fare clic su verdetto](#view-data-about-phishing-urls-and-click-verdict)
 - [Avviare un processo di analisi e risposta automatizzato da una visualizzazione in Explorer](#start-automated-investigation-and-response) (solo ATP piano 2)
 - ... [Esaminare messaggi di posta elettronica dannosi e altro ancora](#more-ways-to-use-explorer-or-real-time-detections)!
@@ -56,7 +56,7 @@ Queste nuove funzionalità sono descritte di seguito.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Anteprima della posta elettronica e scaricare il corpo della posta elettronica
 
-La possibilità di visualizzare in anteprima l'intestazione di un messaggio di posta elettronica e di scaricare il corpo della posta elettronica sono nuove funzionalità disponibili in Esplora minacce. Gli amministratori saranno in grado di analizzare le intestazioni o i messaggi di posta elettronica scaricati per individuare eventuali minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo di accesso basato sui ruoli (RBAC). Un nuovo ruolo, l' *Anteprima*, deve essere aggiunto a un altro gruppo di ruoli di Office 365 (ad esempio, operazioni di sicurezza o amministratore della sicurezza) per concedere la possibilità di scaricare i messaggi di posta elettronica e le intestazioni di anteprima in tutte le visualizzazioni.
+La possibilità di visualizzare in anteprima l'intestazione di un messaggio di posta elettronica e di scaricare il corpo della posta elettronica sono nuove funzionalità disponibili in Esplora minacce. Gli amministratori saranno in grado di analizzare le intestazioni o i messaggi di posta elettronica scaricati per individuare eventuali minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo di accesso basato sui ruoli (RBAC). Un nuovo ruolo, l' *Anteprima*, deve essere aggiunto a un altro gruppo di ruoli, ad esempio operazioni di sicurezza o amministratore della sicurezza, per garantire la possibilità di scaricare i messaggi di posta elettronica e visualizzare le intestazioni di anteprima in tutte le visualizzazioni.
 
 Ma Explorer (e rilevamenti in tempo reale) aggiunge anche nuovi campi creati per fornire un'immagine più completa della posizione in cui i messaggi di posta elettronica atterrano. Parte dell'obiettivo di questa modifica è facilitare la ricerca per gli addetti alle operazioni di sicurezza, ma il risultato della rete è la conoscenza del percorso dei messaggi di posta elettronica problematici.
 
@@ -117,7 +117,7 @@ Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante E
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Vedere malware rilevato in posta elettronica dalla tecnologia
 
-Si supponga di voler vedere il malware rilevato nella posta elettronica, tramite la tecnologia Office 365. A tale scopo, utilizzare la visualizzazione [posta elettronica > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
+Si supponga di voler vedere malware rilevato nella posta elettronica, tramite la tecnologia Microsoft 365. A tale scopo, utilizzare la visualizzazione [posta elettronica > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
 
 1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**Explorer** In questo esempio viene utilizzato Esplora.
 
@@ -176,7 +176,7 @@ Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti
 
 1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**Explorer** In questo esempio viene utilizzato Esplora.
 
-2. Scegliere **invii di posta elettronica** > **Submissions**dal menu **Visualizza** . (Questo in precedenza era denominato **riferito dall'utente**).
+2. Scegliere **invii di posta elettronica** > **Submissions**dal menu **Visualizza** .
 
    ![Menu Visualizza per Esplora risorse](../../media/explorer-view-menu-email-user-reported.png)
 
@@ -230,7 +230,7 @@ Per visualizzare e utilizzare esplorazioni o rilevamenti in tempo reale, è nece
 
 Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse seguenti:
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Autorizzazioni nel centro sicurezza &amp; e conformità](permissions-in-the-security-and-compliance-center.md)
 - [Autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Alcune differenze tra Esplora minacce e rilevamenti in tempo reale

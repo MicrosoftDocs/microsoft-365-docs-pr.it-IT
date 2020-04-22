@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: 1b7cef7f079023dd88fe3f04eb1b7d159c4157ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955616"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634135"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Esaminare e correggere i messaggi di posta elettronica dannosi recapitati in Office 365
 
@@ -34,24 +34,24 @@ Verificare che vengano soddisfatti i seguenti requisiti:
   
 - L'organizzazione dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) e le [licenze vengono assegnate agli utenti](../../admin/manage/assign-licenses-to-users.md).
     
-- La [registrazione di controllo di Office 365](../../compliance/turn-audit-log-search-on-or-off.md) è attivata per l'organizzazione. 
+- la [registrazione di controllo](../../compliance/turn-audit-log-search-on-or-off.md) è attivata per l'organizzazione. 
     
 - L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, anti-malware, anti-phishing e così via. Vedere [protezione dalle minacce in Office 365](protect-against-threats.md).
     
-- Si è un amministratore globale di Office 365 oppure è stato assegnato l'amministratore della sicurezza o il ruolo di ricerca ed eliminazione nel centro sicurezza &amp; e conformità. Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). Per alcune azioni, è necessario disporre anche di un nuovo ruolo di anteprima assegnato. 
+- Si è un amministratore globale oppure è stato assegnato il ruolo di amministratore della sicurezza o di ricerca ed eliminazione nel centro sicurezza &amp; e conformità. Vedere [Permissions in &amp; the Security Compliance Center](permissions-in-the-security-and-compliance-center.md). Per alcune azioni, è necessario disporre anche di un nuovo ruolo di anteprima assegnato. 
 
 #### <a name="preview-role-permissions"></a>Autorizzazioni per il ruolo di anteprima
 
-Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazioni dei messaggi o il download del contenuto del messaggio di posta elettronica, è necessario un nuovo ruolo denominato *Anteprima* aggiunto a un altro gruppo di ruoli Office 365 appropriato. La tabella seguente consente di chiarire i ruoli e le autorizzazioni necessari.
+Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazioni dei messaggi o il download del contenuto del messaggio di posta elettronica, è necessario un nuovo ruolo denominato *Anteprima* aggiunto a un altro gruppo di ruoli appropriato. La tabella seguente consente di chiarire i ruoli e le autorizzazioni necessari.
 
 |Attività  |Gruppo di ruolo |Ruolo di anteprima necessario?  |
 |---------|---------|---------|
-|Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce     |Amministratore globale di Office 365 <br> Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza     | No   |
-|Utilizzare Esplora minacce (e rilevamenti in tempo reale) per visualizzare le intestazioni dei messaggi di posta elettronica così come l'anteprima e il download dei messaggi di posta elettronica in quarantena    |Amministratore globale di Office 365 <br> Amministratore della sicurezza <br>Ruolo con autorizzazioni di lettura per la sicurezza   |       No  |
-|Utilizzare Esplora minacce per visualizzare le intestazioni e scaricare i messaggi di posta elettronica recapitati alle cassette postali     |Amministratore globale di Office 365 <br>Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza <br> Anteprima   |   Sì      |
+|Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce     |Amministratore globale <br> Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza     | No   |
+|Utilizzare Esplora minacce (e rilevamenti in tempo reale) per visualizzare le intestazioni dei messaggi di posta elettronica così come l'anteprima e il download dei messaggi di posta elettronica in quarantena    |Amministratore globale <br> Amministratore della sicurezza <br>Ruolo con autorizzazioni di lettura per la sicurezza   |       No  |
+|Utilizzare Esplora minacce per visualizzare le intestazioni e scaricare i messaggi di posta elettronica recapitati alle cassette postali     |Amministratore globale <br>Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza <br> Anteprima   |   Sì      |
 
 > [!NOTE]
-> L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Al ruolo di amministratore globale di Office 365 viene assegnato l'interfaccia di amministrazione[https://admin.microsoft.com](https://admin.microsoft.com)di Microsoft 365 () e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro[https://protection.office.com](https://protection.office.com)protezione & conformità di Office 365. Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Al ruolo di amministratore globale viene assegnato l'interfaccia di amministrazione di[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 () e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro sicurezza &[https://protection.office.com](https://protection.office.com)Compliance (). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Individuare ed eliminare messaggi di posta elettronica sospetti recapitati
 

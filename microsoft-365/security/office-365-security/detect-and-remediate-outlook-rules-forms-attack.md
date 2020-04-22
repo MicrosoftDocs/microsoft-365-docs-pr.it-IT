@@ -1,5 +1,5 @@
 ---
-title: Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
+title: Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
-ms.openlocfilehash: c15eeb057d14cbb252bda0767a15e7c4788ece9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599443"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637593"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati
 
 **Riepilogo** Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365.
 
@@ -164,7 +164,7 @@ Se si riscontrano prove di uno di questi attacchi, la correzione è semplice, è
 
 4. Installare le versioni più aggiornate di Outlook. Tenere presente che la versione corrente di Outlook blocca entrambi i tipi di questo attacco per impostazione predefinita.
 
-5. Dopo che tutte le copie offline della cassetta postale sono state rimosse, reimpostare la password dell'utente (utilizzare un valore di alta qualità) e seguire i passaggi descritti nell'installazione di autenticazione a più [fattori per gli utenti di Office 365 se l'](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) AMF non è già stata abilitata. In questo modo, le credenziali dell'utente non vengono esposte tramite altri strumenti (ad esempio, il riutilizzo di phishing o password).
+5. Dopo che tutte le copie offline della cassetta postale sono state rimosse, reimpostare la password dell'utente (utilizzare un valore di alta qualità) e seguire i passaggi illustrati nell'installazione di autenticazione a più [fattori per gli utenti se l'](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) AMF non è già stata abilitata. In questo modo, le credenziali dell'utente non vengono esposte tramite altri strumenti (ad esempio, il riutilizzo di phishing o password).
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
@@ -192,7 +192,7 @@ Sono disponibili due cmdlet di PowerShell remoti che è possibile utilizzare per
 
 Le regole e gli exploit dei moduli vengono utilizzati solo da un utente malintenzionato dopo che hanno rubato o violato uno degli account degli utenti. Pertanto, il primo passaggio per impedire l'utilizzo di tali exploit nei confronti dell'organizzazione consiste nel proteggere in modo aggressivo gli account utente. Alcuni dei modi più comuni in cui gli account vengono violati sono gli attacchi di phishing o di [spruzzatura delle password](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) .
 
-Il modo migliore per proteggere gli account utente e in particolare gli account di amministratore consiste nel [configurare l'autenticazione a più fattori per gli utenti di Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). È inoltre necessario:
+Il modo migliore per proteggere gli account utente e in particolare gli account di amministratore consiste nel [configurare l'autenticazione a più fattori per gli utenti](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). È inoltre necessario:
 
 - Monitorare la modalità [di accesso e utilizzo](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)degli account utente. Non è possibile impedire la violazione iniziale, ma è possibile ridurre la durata e l'impatto della violazione rilevando prima. È possibile utilizzare questi [criteri di sicurezza dell'app cloud di Office 365](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) per monitorare gli account e allertare attività inusuali:
 
@@ -234,9 +234,9 @@ Cercare la chiave EnableUnsafeClientMailRules. Se è presente ed è impostato su
 
 I clienti con installazioni di Exchange locali dovrebbero considerare di bloccare le versioni precedenti di Outlook che non dispongono di patch disponibili. Informazioni dettagliate su questo processo sono disponibili nell'articolo [configure Outlook client blocking](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Protezione di Microsoft 365 come un Cybersecurity Pro
 
-L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti. Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.
+La sottoscrizione Microsoft 365 include un potente set di funzionalità di sicurezza che è possibile utilizzare per proteggere i dati e gli utenti. Utilizzare la [Roadmap di sicurezza di microsoft 365-priorità principali per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate di Microsoft consigliati per la protezione del tenant Microsoft 365.
 
 - Attività da eseguire i primi 30 giorni. Queste hanno effetto immediato e sono a basso impatto per gli utenti.
 

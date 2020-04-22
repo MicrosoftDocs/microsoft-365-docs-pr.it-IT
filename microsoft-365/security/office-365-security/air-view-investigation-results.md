@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i risultati di un'indagine automatizzata in Office 365
+title: Visualizzare i risultati di un'indagine automatizzata in Microsoft 365
 keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione, minacce, avanzate, minacce, protezione
 f1.keywords:
 - NOCSH
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Durante e dopo un'indagine automatizzata in Office 365, è possibile visualizzare i risultati e i risultati principali.
-ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Durante e dopo un'analisi automatizzata in Microsoft 365, è possibile visualizzare i risultati e i risultati principali.
+ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225976"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634629"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Informazioni dettagliate e risultati di un'indagine automatizzata in Office 365
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 
 Quando si verifica un' [analisi automatizzata](office-365-air.md) in [Office 365 Advanced Threat Protection](office-365-atp.md), i dettagli relativi a tali indagini sono disponibili durante e dopo il processo di analisi automatizzato. Se di dispone delle autorizzazioni necessarie, è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
 
@@ -46,7 +46,7 @@ Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azion
 
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 
-1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere.
+1. Accedere al centro sicurezza & conformità ([https://protection.office.com](https://protection.office.com)) ed eseguire l'accesso.
 
 2. Eseguire una delle operazioni seguenti:
 
@@ -66,9 +66,9 @@ Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azion
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Visualizzare i dettagli relativi a un avviso relativo a un'indagine
 
-Alcuni tipi di avvisi attivano l'analisi automatizzata in Office 365. Per ulteriori informazioni, vedere [Alerts](automated-investigation-response-office.md#alerts). Utilizzare la procedura seguente per visualizzare i dettagli relativi a un avviso associato a un'indagine automatizzata.
+Alcuni tipi di avvisi attivano l'analisi automatizzata in Microsoft 365. Per ulteriori informazioni, vedere [Alerts](automated-investigation-response-office.md#alerts). Utilizzare la procedura seguente per visualizzare i dettagli relativi a un avviso associato a un'indagine automatizzata.
 
-1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere. 
+1. Accedere al centro sicurezza & conformità ([https://protection.office.com](https://protection.office.com)) ed eseguire l'accesso. 
 
 2. Andare a > **indagini**sulla **gestione delle minacce**.
 
@@ -215,7 +215,7 @@ Nella scheda **log** , è possibile visualizzare tutti i passaggi del PlayBook c
 
 |Dell'analizzatore dell' | Descrizione |
 |-----|-----|
-|Indagini sulle violazioni DLP |Esaminare eventuali violazioni rilevate da [Office 365 prevenzione della perdita di dati](../../compliance/data-loss-prevention-policies.md) (DLP) |
+|Indagini sulle violazioni DLP |Esaminare eventuali violazioni rilevate dalla [prevenzione della perdita di dati](../../compliance/data-loss-prevention-policies.md) (DLP) |
 |Estrazione degli indicatori di posta elettronica |Estrarre indicatori dall'intestazione, dal corpo e dal contenuto di un messaggio di posta elettronica per l'analisi |
 |Reputazione hash file |Rilevare anomalie in base agli hash dei file per gli utenti e i computer dell'organizzazione |
 |Identificazione del cluster di posta |Analisi del cluster di posta elettronica basata su intestazione, corpo, contenuto e URL |

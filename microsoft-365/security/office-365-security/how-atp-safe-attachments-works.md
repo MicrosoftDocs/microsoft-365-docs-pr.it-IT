@@ -1,5 +1,5 @@
 ---
-title: Funzionamento degli allegati sicuri di Office 365 ATP
+title: Funzionamento di Allegati sicuri di ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La funzionalità allegati sicuri fornisce il tempo di fare clic sulla verifica degli allegati di posta elettronica. Utilizzo degli allegati sicuri per proteggere l'organizzazione da file dannosi che gli utenti inviano o ricevono tramite posta elettronica.
-ms.openlocfilehash: 951f9f0e50da6ef83135f1ca8f1ad109a8e66988
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e53d95a52c6990b5e0b4ff81f42414a34b1e606e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599223"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638023"
 ---
-# <a name="how-office-365-atp-safe-attachments-works"></a>Funzionamento degli allegati sicuri di Office 365 ATP
+# <a name="how-atp-safe-attachments-works"></a>Funzionamento di Allegati sicuri di ATP
 
 ## <a name="how-it-works"></a>Funzionamento
 
@@ -35,5 +35,5 @@ Di seguito sono riportati due esempi di allegati sicuri di ATP sul posto di lavo
 I criteri per gli allegati sicuri di ATP possono essere applicati a persone o gruppi specifici dell'organizzazione o all'intero dominio. Inoltre, è possibile configurare i criteri degli allegati sicuri di ATP per utilizzare gli allegati segnaposto mentre vengono analizzati gli allegati effettivi. Per ulteriori informazioni, vedere **[configurare i criteri per gli allegati sicuri di ATP in Office 365](set-up-atp-safe-attachments-policies.md)**.
 
 > [!NOTE]
-> L'analisi degli allegati sicuri ATP si verifica nella stessa area in cui si trovano i dati di Office 365. Per ulteriori informazioni sulla geografia del Data Center, vedere [dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All) 
+> L'analisi degli allegati sicuri ATP si verifica nella stessa area in cui si trovano i dati. Per ulteriori informazioni sulla geografia del Data Center, vedere [dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All) 
 

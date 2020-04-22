@@ -1,5 +1,5 @@
 ---
-title: Informazioni sulla fattura di Office 365 per le aziende
+title: Informazioni sulla fattura per Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla fattura di Office 365 per le aziende e su come modificare il numero dell'ordine di acquisto.
-ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla fattura di Microsoft 365 per le aziende e su come modificare il numero dell'ordine di acquisto.
+ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142300"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634969"
 ---
-# <a name="understand-your-invoice-for-office-365-for-business"></a>Informazioni sulla fattura di Office 365 per le aziende
+# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Informazioni sulla fattura per Microsoft 365 for business
 
 Ogni mese si riceverà un messaggio di posta elettronica che informa che la nuova dichiarazione di fatturazione è disponibile nell'interfaccia di amministrazione. [Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md).
   
@@ -138,6 +138,6 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Pagare l'abbonamento a Office 365 per le aziende](pay-for-your-subscription.md)
+[Pagare l'abbonamento a Microsoft 365 per le aziende](pay-for-your-subscription.md)
 
 [Minecraft: Opzioni di pagamento di Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761)

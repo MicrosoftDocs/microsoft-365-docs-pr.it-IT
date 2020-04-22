@@ -14,22 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 8fa959de5806eccf76b0e83103c0274d0eb86da0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 271cd4d3379239073a6f16c5253fc26da87d8605
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084780"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637093"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e creazione di report dei dati nel centro sicurezza Microsoft 365
 
-La categoria **dati** consente di monitorare le attività degli utenti che possono portare alla divulgazione di dati non autorizzati. Di seguito sono riportate le relazioni esistenti sui criteri DLP di Office 365 e un report di criteri DLP di terze parti.
+La categoria **Dati** consente di tenere traccia delle attività degli utenti che potrebbero portare alla divulgazione di dati non autorizzata. Si tratta della rielaborazione dei rapporti sui criteri DLP esistenti e di un report di criteri DLP di terze parti.
 
 È possibile visualizzare:
 
-* Utenti che condividono la maggior parte dei file dalle app Cloud
+* Utenti che condividono il maggior numero di file dalle app cloud
 * Quante corrispondenze di criteri DLP sono state eseguite
-* Numero di sostituzioni dei criteri DLP o falsi positivi riportati
+* Il numero di sostituzioni di criteri DLP o falsi positivi riportati
 * Quante corrispondenze di criteri DLP sono state verificate in servizi cloud di terze parti tramite Microsoft cloud app Security
 
 ![Categoria dati della pagina report](../../media/data.png)

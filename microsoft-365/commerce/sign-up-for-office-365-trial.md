@@ -1,5 +1,5 @@
 ---
-title: Registrare un abbonamento di valutazione di Office 365
+title: Iscriversi a una sottoscrizione di valutazione
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,32 +19,32 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Informazioni su come iscriversi a una sottoscrizione di valutazione di Office 365 per le aziende.
-ms.openlocfilehash: d9944d01676573e08d52279d47cc61527e7d4862
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+description: Informazioni su come iscriversi a una sottoscrizione di valutazione di Microsoft 365 per le aziende.
+ms.openlocfilehash: 61ba4baefc3b7af7609101f5471648dfb1fcbefa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549793"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636441"
 ---
-# <a name="sign-up-for-an-office-365-trial-subscription"></a>Registrare un abbonamento di valutazione di Office 365
+# <a name="sign-up-for-a-trial-subscription"></a>Iscriversi a una sottoscrizione di valutazione
 
-È possibile iscriversi a una sottoscrizione di prova di Office 365 business gratuitamente. È possibile provare per 30 giorni.
+È possibile iscriversi per un abbonamento di valutazione Microsoft 365 for business gratuitamente. È possibile provare per 30 giorni.
 
 > [!NOTE]
 > È necessaria una carta di credito quando ci si iscrive a una versione di valutazione se la propria azienda è attualmente ubicata negli Stati Uniti, in Giappone, in Canada e in Australia. Al termine del periodo di prova gratuito, la sottoscrizione di valutazione verrà convertita automaticamente in un abbonamento a pagamento. La carta di credito non verrà fatturata fino alla fine del periodo di prova.
 
-## <a name="sign-up-for-an-office-365-business-premium-trial-subscription"></a>Iscriversi a una sottoscrizione di valutazione di Office 365 Business Premium
+## <a name="sign-up-for-an-microsoft-365-business-standard-trial-subscription"></a>Iscriversi a una sottoscrizione di valutazione di Microsoft 365 business standard
 
-1. Per iscriversi a una sottoscrizione di valutazione di Office 365 business, visitare il [sito dei prodotti di Office](https://www.aka.ms/office365signup). 
+1. Per iscriversi a una sottoscrizione di valutazione di Microsoft 365 per le aziende, accedere al [sito dei prodotti di Office](https://www.aka.ms/office365signup). 
     
-2. Selezionare il piano di cui si desidera eseguire la registrazione, ad esempio **Office 365 Business Premium**, scorrere verso il basso nella pagina e selezionare **prova gratis per 1 mese**.
+2. Selezionare il piano di cui si desidera eseguire l'iscrizione, ad esempio **Microsoft 365 business standard**, scorrere verso il basso nella pagina e selezionare **prova gratis per 1 mese**.
     
 3. Nella pagina successiva, seguire la procedura per configurare l'account.
 
 4. Il processo di registrazione potrebbe richiedere alcuni minuti per il completamento. Dopo aver completato la procedura, è possibile ottenere ulteriori informazioni su come iniziare a utilizzare l'abbonamento.
 
-Per ulteriori informazioni sulla configurazione dell'account, vedere [set up Office 365 for business](../admin/setup/setup.md).
+Per ulteriori informazioni sulla configurazione dell'account, vedere [configurare Microsoft 365 for business](../admin/setup/setup.md).
 
 ## <a name="cancel-my-trial-subscription"></a>Annullare la sottoscrizione di valutazione
 
@@ -52,4 +52,4 @@ Se si decide di annullare la versione di valutazione prima della fine del period
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

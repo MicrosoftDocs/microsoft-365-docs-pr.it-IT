@@ -1,7 +1,7 @@
 ---
 title: Tabella EmailEvents nello schema per ricerca avanzata
-description: Informazioni sugli eventi associati ai messaggi di posta elettronica di Office 365 nella tabella EmailEvents dello schema per ricerca avanzata
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, EmailEvents, ID messaggio di rete, mittente, destinatario, ID allegato, nome allegato, verdetto di malware, verdetto di phishing, conteggio degli allegati, Conteggio collegamenti, conteggio URL
+description: Informazioni sugli eventi associati ai messaggi di posta elettronica Microsoft nella tabella EmailEvents dello schema di caccia avanzato
+keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, EmailEvents, ID messaggio di rete, mittente, destinatario, ID allegato, nome allegato, verdetto di malware, verdetto di phishing, conteggio degli allegati
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234785"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633532"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -39,7 +39,7 @@ Per informazioni su altre tabelle nello schema per ricerca avanzata, [vedere il 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora in cui è stato registrato l'evento |
 | `EmailId` | stringa | Indirizzo di posta elettronica e identificatore del destinatario univoci |
-| `NetworkMessageId` | stringa | Identificatore univoco per il messaggio di posta elettronica, generato da Office 365 |
+| `NetworkMessageId` | stringa | Identificatore univoco per il messaggio di posta elettronica, generato da Microsoft 365 |
 | `InternetMessageId` | stringa | Identificatore pubblico per il messaggio di posta elettronica impostato dal sistema di invio |
 | `SenderMailFromAddress` | stringa | Indirizzo di posta elettronica del mittente nell'intestazione MITTENTE, noto anche come mittente della busta o indirizzo di ritorno |
 | `SenderFromAddress` | stringa | Indirizzo di posta elettronica del mittente nell'intestazione DA, visibile ai destinatari nel proprio client di posta elettronica |

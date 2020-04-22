@@ -11,29 +11,29 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-description: In questo argomento vengono riportate le domande frequenti per i partner e rivenditori Microsoft che vogliono eseguire attività di amministrazione delegata in Office 365, quali la possibilità di gestire Exchange Online Protection (EOP) per altri tenant (aziende).
-ms.openlocfilehash: 2a237da685ae3c3d81c5a0912e15b5e7370e2118
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: In questo argomento sono riportate le domande frequenti e le risposte per i partner e i rivenditori Microsoft che desiderano eseguire attività amministrative Delegate, inclusa la possibilità di gestire Exchange Online Protection (EOP) per altri tenant (aziende).
+ms.openlocfilehash: b79c0aba026a8d59aac338ceac0f1c4a60d71c4d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599483"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637653"
 ---
 # <a name="delegated-administration-faq"></a>Domande frequenti sull'amministrazione delegata
 
-In questo argomento vengono riportate le domande frequenti per i partner e rivenditori Microsoft che vogliono eseguire attività di amministrazione delegata in Office 365, quali la possibilità di gestire Exchange Online Protection (EOP) per altri tenant (aziende).
+In questo argomento sono riportate le domande frequenti e le risposte per i partner e i rivenditori Microsoft che desiderano eseguire attività amministrative Delegate, inclusa la possibilità di gestire Exchange Online Protection (EOP) per altri tenant (aziende).
 
 **D. Sono un rivenditore e devo gestire i tenant del mio cliente. Come posso eseguire questa operazione?**
 
-R. Se si è un partner o rivenditore Microsoft e si è iscritti a Microsoft Advisor, è possibile richiedere l'autorizzazione per l'amministrazione del tenant all'interno dell'interfaccia di amministrazione. Questa operazione è nota come amministrazione delegata e consente di gestire il tenant di Office 365 (incluse le impostazioni di EOP) come se si trattasse di un amministratore all'interno della propria organizzazione. Di seguito sono riportati i passaggi per l'esecuzione di un'amministrazione delegata:
+R. Se si è un partner o rivenditore Microsoft e si è iscritti a Microsoft Advisor, è possibile richiedere l'autorizzazione per l'amministrazione del tenant all'interno dell'interfaccia di amministrazione. Questa operazione è nota come amministrazione delegata e consente di gestire il tenant Microsoft 365 (incluse le impostazioni di EOP) come se si trattasse di un amministratore all'interno della propria organizzazione. Di seguito sono riportati i passaggi per l'esecuzione di un'amministrazione delegata:
 
 1. Iscriviti e diventa un [consulente di Microsoft Office 365](https://aka.ms/cloudbenefits).
 
-2. Registrati per eseguire l'amministrazione delegata di Office 365. Prima di iniziare ad amministrare l'account di un cliente, il cliente stesso deve concedere al partner l'autorizzazione di amministratore delegato. Per ricevere la sua approvazione, devi innanzitutto [inviargli un'offerta per l'amministrazione delegata](https://support.office.com/article/26530dc0-ebba-415b-86b1-b55bc06b073e). (Puoi anche offrire l'amministrazione delegata al cliente in un momento successivo.)
+2. Iscriversi per l'amministrazione delegata. Prima di iniziare ad amministrare l'account di un cliente, il cliente stesso deve concedere al partner l'autorizzazione di amministratore delegato. Per ricevere la sua approvazione, devi innanzitutto [inviargli un'offerta per l'amministrazione delegata](https://support.office.com/article/26530dc0-ebba-415b-86b1-b55bc06b073e). (Puoi anche offrire l'amministrazione delegata al cliente in un momento successivo.)
 
 3. Creare l'account amministratore delegato utilizzando la procedura descritta in [aggiungere, modificare o eliminare un partner di consulenti di sottoscrizione](https://docs.microsoft.com/office365/admin/misc/add-partner).
 
-Visitare i [partner: creare la propria azienda e amministrare la sottoscrizione di partner di office 365](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319) per ulteriori informazioni su come configurare l'amministrazione delegata di Office 365.
+Visitare [i partner: creare la propria azienda e amministrare la sottoscrizione di partner](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319) per ulteriori informazioni su come configurare l'amministrazione delegata.
 
 **D. Sono un cliente, non un rivenditore, come posso configurare l'amministratore delegato del mio tenant secondario?**
 
@@ -41,7 +41,7 @@ R. Attualmente, l'amministrazione delegata è disponibile soltanto per rivendito
 
 **D. Posso impedire all'amministratore del tenant secondario di modificare i miei criteri?**
 
-R. Attualmente, questa funzionalità non è compresa in Office 365.
+R. Microsoft 365 attualmente non dispone di questa funzionalità.
 
 **D. Posso visualizzare report consolidati in tutti i miei tenant secondari?**
 

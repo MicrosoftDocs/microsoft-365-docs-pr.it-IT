@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608103"
+ms.locfileid: "43638345"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri per gli allegati sicuri ATP di Office 365
 
@@ -43,29 +43,28 @@ Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio
 
 - Assicurarsi che l'organizzazione disponga di [Office 365 Advanced Threat Protection](office-365-atp.md).
 
-- Verificare di disporre delle autorizzazioni necessarie. Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un ruolo di gestione dell'organizzazione di Exchange Online (per impostazione predefinita, l'amministratore globale di Office 365 è assegnato a questo ruolo) oppure entrambi i ruoli di Exchange Online igiene e amministratore della sicurezza. Per ulteriori informazioni, vedere la tabella seguente:
+- Verificare di disporre delle autorizzazioni necessarie. Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un ruolo di gestione dell'organizzazione di Exchange Online (l'amministratore globale è assegnato a questo ruolo per impostazione predefinita) o entrambi i ruoli di Exchange Online igiene e amministratore della sicurezza. Per ulteriori informazioni, vedere la tabella seguente:
 
-  |||
-  |---|---|
-  |**Ruolo**|**Dove/come assegnato**|
-  |Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .|
+  |Ruolo|Dove/come assegnato|
+  |---------|---------|
+  |amministratore globale |La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .|
   |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
   |Gestione dell'organizzazione di Exchange Online, gestione dell'igiene di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions &amp; in the Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Informazioni [sulle opzioni dei criteri per gli allegati sicuri di ATP](#step-3-learn-about-atp-safe-attachments-policy-options) (in questo articolo). Alcune opzioni, ad esempio le opzioni monitor o Sostituisci, possono causare un ritardo minore della posta elettronica durante l'analisi degli allegati. Per evitare ritardi nei messaggi, è consigliabile utilizzare il [recapito dinamico e l'anteprima](dynamic-delivery-and-previewing.md).
 
-- Consentono fino a 30 minuti affinché il criterio nuovo o aggiornato venga esteso a tutti i datacenter di Office 365.
+- Consentono fino a 30 minuti affinché il criterio nuovo o aggiornato venga esteso a tutti i datacenter di Microsoft 365.
 
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Passaggio 2: configurare (o modificare) un criterio per gli allegati sicuri ATP
 
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione.
 
-2. Nel centro &amp; sicurezza e conformità di Office 365, nel riquadro di spostamento a sinistra, in **gestione delle minacce**, scegliere **allegati sicuri**per i **criteri** \> .
+2. Nel riquadro di &amp; spostamento a sinistra del centro conformità di sicurezza, in **gestione minacce**, scegliere **Policy** \> **allegati sicuri**per i criteri.
 
-3. Se si visualizza **attiva ATP per SharePoint, OneDrive e Microsoft teams**, è consigliabile selezionare questa opzione. Ciò consentirà la [protezione avanzata dalle minacce di office 365 per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) per l'ambiente Office 365.
+3. Se si visualizza **attiva ATP per SharePoint, OneDrive e Microsoft teams**, è consigliabile selezionare questa opzione. Ciò consentirà la [protezione avanzata dalle minacce di Office 365 per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) per l'ambiente Microsoft 365.
 
 4. Scegliere **nuovo** (il pulsante nuovo assomiglia a un segno più ( **+**)) per iniziare a creare il criterio.
 
@@ -77,13 +76,13 @@ Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio
 
    - Nella sezione Response scegliere l'opzione per il **recapito dinamico** . [Ulteriori informazioni sul recapito dinamico e sulla visualizzazione in anteprima con gli allegati sicuri di ATP](dynamic-delivery-and-previewing.md).
 
-   - Nella sezione **allegato di reindirizzamento** selezionare l'opzione per abilitare il reindirizzamento e digitare l'indirizzo di posta elettronica dell'amministratore globale di Office 365, dell'amministratore della sicurezza o dell'analista della sicurezza che indagherà sugli allegati dannosi.
+   - Nella sezione **allegato di reindirizzamento** selezionare l'opzione per abilitare il reindirizzamento e digitare l'indirizzo di posta elettronica dell'amministratore globale, dell'amministratore della sicurezza o dell'analista della sicurezza che analizzerà gli allegati dannosi.
 
    - Nella sezione **applicato a** scegliere **il dominio del destinatario**e quindi selezionare il dominio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
 
 6. Fare clic su **Salva**.
 
-Valutare la possibilità di configurare più criteri per gli allegati sicuri ATP per l'organizzazione. Questi criteri verranno applicati nell'ordine in cui sono elencati nella pagina **allegati sicuri di ATP** . Dopo la definizione o la modifica di un criterio, consentire almeno 30 minuti affinché i criteri siano effettivi nei Data Center Microsoft.
+Valutare la possibilità di configurare più criteri per gli allegati sicuri ATP per l'organizzazione. Questi criteri verranno applicati nell'ordine in cui sono elencati nella pagina **allegati sicuri di ATP** . Dopo la definizione o la modifica di un criterio, consentire almeno 30 minuti affinché le polizie abbiano effetto nei datacenter Microsoft.
 
 ## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Passaggio 3: informazioni sulle opzioni dei criteri per gli allegati sicuri di ATP
 

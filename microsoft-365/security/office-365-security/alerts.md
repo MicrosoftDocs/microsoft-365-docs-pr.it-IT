@@ -1,5 +1,5 @@
 ---
-title: Alerts in the Office 365 Security &amp; Compliance Center
+title: Avvisi nel centro sicurezza &amp; e conformità
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,32 +17,32 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Informazioni sugli avvisi che è possibile impostare per facilitare la sicurezza in Office 365.
-ms.openlocfilehash: 57bb6659b374c1ac029b690e738620c2f2857eb9
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: b8fe746ef18ade5f8e35d5a51ab132377e813915
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030127"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634617"
 ---
-# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
+# <a name="alerts-in-the-security-amp-compliance-center"></a>Avvisi nel centro sicurezza &amp; e conformità
 
-Utilizzare le funzionalità avvisi nel centro sicurezza &amp; e conformità di Office 365 per visualizzare e gestire gli avvisi per l'organizzazione di Office 365, inclusa la gestione degli avvisi avanzati come parte di [Microsoft cloud app Security Overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
+Utilizzare le funzionalità avvisi nel centro sicurezza &amp; e conformità per visualizzare e gestire gli avvisi per l'organizzazione, tra cui la gestione di avvisi avanzati come parte di [Microsoft cloud app Security Overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
   
-## <a name="how-to-get-to-the-office-365-alerts-features"></a>Come accedere alle funzionalità di avvisi di Office 365
+## <a name="how-to-get-to-the-alerts-features"></a>Come accedere alle funzionalità di avvisi
 
-Gli avvisi in Office 365 sono nel centro &amp; sicurezza e conformità. Ecco come accedere alla pagina.
+Gli avvisi sono nel centro &amp; sicurezza e conformità. Ecco come accedere alla pagina.
   
  **Per accedere direttamente al centro sicurezza &amp; e conformità:**
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione. 
+2. Accedere con l'account aziendale o dell'Istituto di istruzione. 
     
 3. Nel riquadro sinistro fare clic su **avvisi** per visualizzare le funzionalità avvisi. 
     
- **Per accedere al centro sicurezza &amp; e conformità utilizzando l'icona di avvio delle app di Office 365:**
+ **Per accedere al centro sicurezza &amp; e conformità utilizzando l'icona di avvio delle app:**
   
-1. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione. 
+1. Accedere con l'account aziendale o dell'Istituto di istruzione. 
     
 2. Fare clic sull'icona di avvio delle app nell'angolo in alto a sinistra, quindi fare clic su **conformità sicurezza &amp; **.
     
@@ -56,7 +56,7 @@ Nella tabella seguente vengono descritti gli strumenti disponibili in **avvisi**
   
 |**Strumento**|**Descrizione**|
 |:-----|:-----|
-|[Gestione avvisi](../../compliance/create-activity-alerts.md) <br/> |Utilizzare gli avvisi di attività per inviare notifiche tramite posta elettronica a se stessi o ad altri amministratori quando gli utenti eseguono attività specifiche in Office 365. Gli avvisi di attività sono simili alla ricerca del registro di controllo di Office 365 per gli eventi, tranne per il fatto che verrà inviato un messaggio di posta elettronica quando viene creato un avviso per il verificarsi di un evento.  <br/> |
+|[Gestione avvisi](../../compliance/create-activity-alerts.md) <br/> |Utilizzare gli avvisi di attività per inviare notifiche tramite posta elettronica a se stessi o ad altri amministratori quando gli utenti eseguono attività specifiche in Office 365. Gli avvisi di attività sono simili alla ricerca del registro di controllo per eventi, tranne per il fatto che verrà inviato un messaggio di posta elettronica quando viene creato un avviso per il verificarsi di un evento.  <br/> |
 |[Gestire gli avvisi avanzati](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |Utilizzare la funzionalità **Gestisci avvisi avanzati** di Office 365 cloud app Security per impostare i criteri che possono avvisare l'utente di attività sospette e anomale in Office 365. Dopo aver eseguito l'avviso, è possibile esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza.  <br/> |
    
 

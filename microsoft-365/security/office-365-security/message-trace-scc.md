@@ -11,27 +11,27 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 463e4ee5b99b1aaf34c91fc9b8976547a6c2edbd
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 12600eeb5242f0de5fc187be81b9311d4f9cb645
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341271"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635317"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
 ## <a name="overview"></a>Panoramica
 
-La traccia dei messaggi nel centro sicurezza & conformità di Office 365 segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
+La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
 
 La traccia dei messaggi nel centro sicurezza & conformità migliora la traccia del messaggio originale disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni contenute nella traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti sull'accaduto ai messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
 
 > [!NOTE]
-> • Per eseguire una traccia dei messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione, gestione conformità o supporto tecnico. Per ulteriori informazioni, vedere [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Il numero massimo di messaggi visualizzati nei risultati dipende dal tipo di rapporto selezionato (vedere la sezione scegliere il tipo di [report](#choose-report-type) per informazioni dettagliate). Il cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in PowerShell di Exchange Online o Exchange Online Protection PowerShell restituisce tutti i messaggi nei risultati.
+> * Per eseguire una traccia dei messaggi, è necessario essere membri del gruppo di ruoli Gestione organizzazione, gestione conformità o supporto tecnico. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md). <br/><br/>* Il numero massimo di messaggi visualizzati nei risultati dipende dal tipo di rapporto selezionato (vedere la sezione scegliere il tipo di [report](#choose-report-type) per informazioni dettagliate). Il cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in PowerShell di Exchange Online o Exchange Online Protection PowerShell restituisce tutti i messaggi nei risultati.
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 
-1. Aprire il Centro sicurezza & conformità di Office 365 <https://protection.office.com>all'indirizzo.
+1. Aprire il Centro sicurezza & Compliance <https://protection.office.com>all'indirizzo.
 
 2. Espande il **flusso di posta**e quindi seleziona **traccia messaggi**.
 
@@ -106,7 +106,7 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
 Questo è l'ID del messaggio Internet (detto anche ID client) trovato nel campo di intestazione **Message-ID:** nell'intestazione del messaggio. Gli utenti possono fornire questo valore per esaminare i messaggi specifici.
 
-Questo valore rimane immutato per tutta la durata del messaggio. Per i messaggi creati in Office 365 o Exchange, il valore è nel formato `<GUID@ServerFQDN>`, incluse le parentesi angolari\< \>(). Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Altri sistemi di messaggistica possono utilizzare una sintassi o valori diversi. Questo valore deve essere univoco, ma non tutti i sistemi di posta elettronica seguono scrupolosamente questo requisito. Se il campo di intestazione **Message-ID:** non esiste o è vuoto per i messaggi in arrivo provenienti da origini esterne, viene assegnato un valore arbitrario.
+Questo valore rimane immutato per tutta la durata del messaggio. Per i messaggi creati in Microsoft 365 o Exchange, il valore è nel formato `<GUID@ServerFQDN>`, incluse le parentesi angolari\< \>(). Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Altri sistemi di messaggistica possono utilizzare una sintassi o valori diversi. Questo valore deve essere univoco, ma non tutti i sistemi di posta elettronica seguono scrupolosamente questo requisito. Se il campo di intestazione **Message-ID:** non esiste o è vuoto per i messaggi in arrivo provenienti da origini esterne, viene assegnato un valore arbitrario.
 
 Quando si utilizza l' **ID messaggio** per filtrare i risultati, assicurarsi di includere la stringa completa, incluse le parentesi angolari.
 
@@ -346,7 +346,7 @@ Un valore **custom_data** che inizia con `S:SFA` è dall'agente filtro posta ind
 |`DI=SO`|Il messaggio è instradato attraverso un pool di recapito ad alto rischio. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Indica una corrispondenza tra le regole relative alla posta indesiderata.|
 |`IPV=CAL`|Il messaggio è stato consentito tramite il filtro da posta indesiderata poiché l'indirizzo IP è stato specificato in un elenco di indirizzi IP bloccati nel filtro di connessione.|
-|`H=<EHLOstring>`|La stringa HELO o EHLO del server di posta elettronica di connessione.|
+|`H=<EHLOstring>`|Stringa HELO o EHLO del server della posta connesso.|
 |`PTR=<ReverseDNS>`|Il record PTR dell'indirizzo IP di invio, anche noto come indirizzo DNS inverso.|
 
 Un esempio **custom_data** valore per un messaggio filtrato per la posta indesiderata in questo modo:
@@ -385,7 +385,7 @@ Un valore **custom_data** che inizia con`S:TRA` è l'agente della regola di tras
 |`ETR|ruleId=<guid>`|L'ID regola corrispondente.|
 |`St=<datetime>`|Data e ora in formato UTC quando si è verificata la corrispondenza della regola.|
 |`Action=<ActionDefinition>`|L'azione che è stata applicata. Per un elenco delle azioni disponibili, vedere [Mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|La modalità della regola. I valori validi sono: <br/>• **Enforce**: tutte le azioni della regola verranno applicate. <br/>• **Test con suggerimenti per i criteri:**: tutte le azioni di suggerimento per i criteri verranno inviate, ma non verranno applicate altre azioni di applicazione. <br/>• **Test senza suggerimenti**per i criteri: le azioni verranno elencate in un file di registro, tuttavia i mittenti non riceveranno alcuna notifica e le azioni di applicazione non verranno applicate.|
+|`Mode=<Mode>`|La modalità della regola. I valori validi sono: <br/>* **Enforce**: tutte le azioni della regola verranno applicate. <br/>* **Test con suggerimenti per i criteri:**: tutte le azioni di suggerimento per i criteri verranno inviate, ma non verranno applicate altre azioni di applicazione. <br/>* **Test senza suggerimenti**per i criteri: le azioni verranno elencate in un file di registro, tuttavia i mittenti non riceveranno alcuna notifica e le azioni di applicazione non verranno applicate.|
 
 Un esempio di **custom_data** valore per i messaggi che soddisfano le condizioni di una regola del flusso di posta è simile al seguente:
 

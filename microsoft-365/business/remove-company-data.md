@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: Scopri come usare Microsoft 365 business per rimuovere i dati aziendali che gli utenti hanno sui propri dispositivi o PC Windows.
-ms.openlocfilehash: 1cfcf836f71cb81015d28a848611678252731b9c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Scopri come usare Microsoft 365 for business per rimuovere i dati aziendali che gli utenti hanno sui propri dispositivi o PC Windows.
+ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561321"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634849"
 ---
 # <a name="remove-company-data-from-devices"></a>Rimuovere i dati aziendali dai dispositivi
 
@@ -36,9 +36,9 @@ ms.locfileid: "42561321"
 
 ## <a name="remove-company-data"></a>Rimuovere i dati aziendali
 
-È possibile usare Microsoft 365 Business per rimuovere i dati aziendali che gli utenti hanno installato nei propri [dispositivi](app-protection-settings-for-android-and-ios.md) o [PC Windows](protection-settings-for-windows-10-devices.md) protetti da Microsoft 365. **Se si rimuovono i dati aziendali da un dispositivo, non è più possibile ripristinarli**. 
+È possibile utilizzare Microsoft 365 for business per rimuovere i dati aziendali che gli utenti hanno sui propri [dispositivi](app-protection-settings-for-android-and-ios.md) o [PC Windows](protection-settings-for-windows-10-devices.md) protetti da Microsoft 365. **Se si rimuovono i dati aziendali da un dispositivo, non è più possibile ripristinarli**. 
   
-1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
 2. Sulla barra di spostamento sinistra, scegliere **gestione** **dispositivi** \> .  
   

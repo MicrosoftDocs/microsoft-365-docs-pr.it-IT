@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definizione degli utenti di posta è una parte importante della gestione del servizio Exchange Online Protection (EOP).
-ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 56827e29872c6a6ffd14821af8e2d9ea005ff20c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633794"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635581"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestire utenti di posta in Exchange Online Protection
 
@@ -63,7 +63,7 @@ Nella presente sezione vengono fornite informazioni sulla gestione degli utenti 
 
   - **Blocking Edge basato su directory (DBEB)**: per ulteriori informazioni su DBEB, vedere [use directory based Edge Blocking to Reject messages sent to invalid recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-  - **Quarantena della posta indesiderata dell'utente finale**: per accedere alla quarantena della posta indesiderata dell'utente finale, gli utenti finali devono disporre di un ID utente e una password validi di Office 365. I clienti EOP che proteggono le cassette postali locali devono essere utenti di posta elettronica validi.
+  - **Quarantena della posta indesiderata dell'utente finale**: per accedere alla quarantena della posta indesiderata dell'utente finale, gli utenti finali devono disporre di un ID utente e una password validi. I clienti EOP che proteggono le cassette postali locali devono essere utenti di posta elettronica validi.
 
   - **Regole del flusso di posta**: quando si utilizza la sincronizzazione della directory, gli utenti e i gruppi di Active Directory esistenti vengono caricati automaticamente nel cloud ed è quindi possibile creare regole del flusso di posta (note anche come regole di trasporto) che devono essere indirizzate a utenti e/o gruppi specifici senza dover aggiungerle manualmente tramite l'EAC o Exchange Online Protection PowerShell. Si noti che non è possibile sincronizzare i [gruppi di distribuzione dinamici](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) tramite la sincronizzazione delle directory.
 
@@ -126,7 +126,7 @@ In questo esempio viene utilizzato il cmdlet [New-EOPMailUser](https://docs.micr
 
 - L'indirizzo di posta elettronica esterno è jzeng@tailspintoys.com.
 
-- La firma di Office 365 nel nome è jeffreyz@contoso.onmicrosoft.com.
+- Il nome di accesso di Microsoft 365 è jeffreyz@contoso.onmicrosoft.com.
 
 - La password è Pa$$word1.
 

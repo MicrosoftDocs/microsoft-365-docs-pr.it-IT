@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: aca3bb6413aaab7620b1e1277c821a79dba4bb2f
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302903"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636185"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Eccezioni al piano di servizio
 
@@ -27,7 +27,7 @@ Un'eccezione è una o più modifiche apportate alla configurazione di base di Mi
 |Agenti di sicurezza & VPN     |  Software utilizzato per proteggere, monitorare o modificare il comportamento del dispositivo o della rete       |
 |Monitoraggio dell'esperienza digitale     |  Software utilizzato per registrare i dati del dispositivo di un utente per segnalarli       |
 |Driver hardware o software     |   Driver di dispositivo, limitati dai [requisiti dell'applicazione](mmd-app-requirements.md)      |
-|Generali     | Impostazioni di Windows 10 o Office 365 ProPlus su un dispositivo gestito        |
+|Generali     | App di Windows 10 o Microsoft 365 per le impostazioni dell'organizzazione su un dispositivo gestito        |
 |Dispositivi     | Dispositivi che non sono presenti nell' [elenco](device-list.md) dispositivi di Microsoft Managed Desktop        |
 |Altro     |  Tutto ciò che non rientra nelle altre aree       |
  

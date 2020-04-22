@@ -1,5 +1,5 @@
 ---
-title: Criteri di denominazione dei gruppi di Office 365
+title: Criterio di denominazione dei gruppi
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Informazioni su come creare un criterio di denominazione per i gruppi di Office 365.
-ms.openlocfilehash: 4325a5e0a1de0c3a83be71220abd256c204ec07d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Informazioni su come creare un criterio di denominazione per i gruppi di Microsoft 365.
+ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894624"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630444"
 ---
-# <a name="office-365-groups-naming-policy"></a>Criteri di denominazione dei gruppi di Office 365
+# <a name="groups-naming-policy"></a>Criterio di denominazione dei gruppi
 
 Per applicare una strategia di denominazione coerente per i gruppi creati dagli utenti dell'organizzazione, è possibile utilizzare un criterio di denominazione del gruppo. I criteri di denominazione consentono all'utente e agli utenti di identificare la funzione del gruppo, dell'appartenenza, dell'area geografica o di chi ha creato il gruppo. Il criterio di denominazione può anche contribuire alla categorizzazione dei gruppi nella rubrica. È possibile utilizzare il criterio per bloccare le parole specifiche che vengono utilizzate nei nomi e negli alias di gruppo.
 
 I criteri di denominazione vengono applicati ai gruppi creati in tutti i carichi di lavoro dei gruppi (come Outlook, Microsoft teams, SharePoint, planner, Yammer e così via). Viene applicato sia al nome del gruppo sia all'alias di gruppo. Viene applicato quando un utente crea un gruppo e quando viene modificato il nome o l'alias del gruppo per un gruppo esistente.
 
 > [!TIP]
-> I criteri di denominazione del gruppo di Office 365 si applicano solo ai gruppi di Office 365. Non si applica ai gruppi di distribuzione creati in Exchange Online. Per creare un criterio di denominazione per i gruppi di distribuzione, vedere [Create a Distribution Group Naming Policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> I criteri di denominazione di un gruppo di Microsoft 365 si applicano solo ai gruppi di Microsoft 365. Non si applica ai gruppi di distribuzione creati in Exchange Online. Per creare un criterio di denominazione per i gruppi di distribuzione, vedere [Create a Distribution Group Naming Policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 I criteri di denominazione del gruppo sono composti dalle funzionalità seguenti:
 
@@ -44,7 +44,7 @@ I criteri di denominazione del gruppo sono composti dalle funzionalità seguenti
 
 ## <a name="licensing-requirements"></a>Requisiti per la licenza
 
-L'utilizzo dei criteri di denominazione di Azure AD per i gruppi di Office 365 richiede che siano in possesso, ma non necessariamente, di una licenza di Azure Active Directory Premium P1 o di una licenza di Azure AD Basic EDU per ogni utente univoco (compresi gli ospiti) che sia membro di uno o più gruppi di Office 365.
+L'utilizzo dei criteri di denominazione di Azure AD per i gruppi di Microsoft 365 richiede che siano in possesso, ma non necessariamente, di una licenza di Azure Active Directory Premium P1 o di una licenza di Azure AD Basic EDU per ogni utente univoco (compresi gli ospiti) che sia membro di uno o più gruppi di Microsoft 365.
 
 Questa operazione è necessaria anche per l'amministratore che crea i criteri di denominazione dei gruppi.
 
@@ -80,7 +80,7 @@ Gli attributi di Azure Active Directory (Azure AD) supportati sono [Department],
 
 - Prefissi e suffissi possono contenere caratteri speciali supportati nel nome e nell'alias del gruppo. Quando i prefissi e i suffissi contengono caratteri speciali non consentiti nell'alias di gruppo, vengono applicati solo al nome del gruppo. In questo caso, quindi, i prefissi e suffissi applicati al nome del gruppo sarebbero diversi da quelli applicati all'alias del gruppo.
 
-- Se si utilizzano i gruppi connessi di Yammer Office 365, evitare di usare i seguenti caratteri nei criteri di denominazione: \#@ \[, \], \<,, \>e. Se questi caratteri sono inclusi nei criteri di denominazione, gli utenti di Yammer regolari non potranno creare gruppi.
+- Se si utilizzano i gruppi connessi di Yammer Microsoft 365, evitare di usare i seguenti caratteri nei criteri di denominazione: \#@ \[, \], \<,, \>e. Se questi caratteri sono inclusi nei criteri di denominazione, gli utenti di Yammer regolari non potranno creare gruppi.
 
 ## <a name="custom-blocked-words"></a>Parole bloccate personalizzate
 
@@ -126,10 +126,10 @@ Per impostare i criteri di denominazione:
 ![Schermata delle impostazioni dei criteri di denominazione del gruppo in Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 > [!NOTE]
-> I team di StaffHub non seguono i criteri di denominazione, ma il gruppo di Office 365 sottostante. Al nome del team StaffHub non si applicano prefissi e suffissi e le parole bloccate personalizzate non vengono controllate. Tuttavia, StaffHub applica i prefissi e i suffissi e rimuove le parole bloccate dal gruppo di Office 365 sottostante.
+> I team di StaffHub non seguono i criteri di denominazione, ma il gruppo Microsoft 365 sottostante. Al nome del team StaffHub non si applicano prefissi e suffissi e le parole bloccate personalizzate non vengono controllate. Tuttavia, StaffHub applica i prefissi e i suffissi e rimuove le parole bloccate dal gruppo Microsoft 365 sottostante.
 
 ## <a name="more-articles-on-naming-policy"></a>Altri articoli sui criteri di denominazione
 
-[Applicazione di un criterio di denominazione per i gruppi di Office 365 in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+[Applicazione di un criterio di denominazione per i gruppi di Microsoft 365 in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [Cmdlet di Azure Active Directory per la configurazione delle impostazioni di gruppo](https://go.microsoft.com/fwlink/?linkid=868341)

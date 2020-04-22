@@ -1,5 +1,5 @@
 ---
-title: Intervento in caso di incidente di sicurezza di Office 365
+title: Risposta agli incidenti di sicurezza
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Questa soluzione indica quali sono gli attacchi di Cybersecurity più comuni che possono essere presenti in Office 365 e come rispondervi
-ms.openlocfilehash: 317e685dd9e2b2e0afbf25f0568b352c399e7b87
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Questa soluzione indica gli elementi più comuni che possono essere assomigliati agli attacchi di Cybersecurity in Microsoft 365 e su come rispondervi
+ms.openlocfilehash: 4c5713a0689dae07fe5300c04754d77912f53976
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598723"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634509"
 ---
-# <a name="office-365-security-incident-response"></a>Intervento in caso di incidente di sicurezza di Office 365
+# <a name="security-incident-response"></a>Risposta agli incidenti di sicurezza
 
  **Riepilogo:** Questa soluzione spiega quali sono gli indicatori per gli attacchi Cybersecurity più comuni in Office 365, come confermare positivamente qualsiasi attacco e come rispondervi.
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598723"
 
 Non tutti i attacchi cibernetici possono essere vanificati. Gli aggressori sono costantemente alla ricerca di nuove debolezze della strategia difensiva o che sfruttano quelle vecchie. La possibilità di riconoscere un attacco consente di rispondere in modo più rapido, riducendo la durata dell'incidente di sicurezza.
 
-Questa serie di articoli consente di comprendere il tipo di attacco potrebbe essere simile a quello di Office 365 e di fornire i passaggi che è possibile eseguire per rispondere. Sono i punti di ingresso rapido per comprendere:
+Questa serie di articoli consente di comprendere il tipo di attacco potrebbe essere simile a Microsoft 365 e di fornire i passaggi da eseguire per rispondere. Sono i punti di ingresso rapido per comprendere:
 
 - Che cos'è l'attacco e come funziona.
 
@@ -55,9 +55,9 @@ Controllare di nuovo qui mensilmente, in quanto verranno aggiunti altri articoli
 
 - [Rispondere a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Protezione di Microsoft 365 come un Cybersecurity Pro
 
-L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.
+La sottoscrizione Microsoft 365 include un potente set di funzionalità di sicurezza che è possibile utilizzare per proteggere i dati e gli utenti.  Utilizzare la [Roadmap di sicurezza di microsoft 365-priorità principali per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate di Microsoft consigliati per la protezione dell'organizzazione Microsoft 365.
 
 - Attività da eseguire i primi 30 giorni.  Queste hanno effetto immediato e sono a basso impatto per gli utenti.
 

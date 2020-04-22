@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
+title: ATP per SharePoint, OneDrive e Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Estendere Office 365 Advanced Threat Protection ai file in SharePoint Online, OneDrive for business e Microsoft teams per consentire una collaborazione più sicura per l'organizzazione.
-ms.openlocfilehash: 3105a9443ddab483bc5ac4037e5260b354d64de9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4c64a4934a472fa5c6ac0f1f718d63300560f6c8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086633"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636023"
 ---
-# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
+# <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP per SharePoint, OneDrive e Microsoft Teams
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Panoramica di Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -41,7 +41,7 @@ Anche se il file bloccato è ancora elencato nella raccolta documenti e nelle ap
 
 ![Eliminazione di un file bloccato da OneDrive for business dall'app per dispositivi mobili di OneDrive](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
-A seconda del modo in cui Office 365 è configurato, la gente potrebbe o meno avere la possibilità di scaricare un file bloccato. Di seguito è riportato l'aspetto del download di un file bloccato nel dispositivo mobile di un utente:
+A seconda del modo in cui Microsoft 365 è configurato, la gente potrebbe o meno avere la possibilità di scaricare un file bloccato. Di seguito è riportato l'aspetto del download di un file bloccato nel dispositivo mobile di un utente:
 
 ![Download di un file bloccato in OneDrive for business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
@@ -63,9 +63,9 @@ Per altre informazioni, vedere [Office 365 ATP per SharePoint, OneDrive e Micros
 
  A partire dalla fine di maggio 2018, le funzionalità di [quarantena](quarantine-email-messages.md) nel centro sicurezza &amp; e conformità vengono estese a ATP per SharePoint Online, OneDrive for business e Microsoft teams.
 
-Quando un file in SharePoint Online, OneDrive for business o Microsoft teams viene identificato come dannoso, oltre a ATP che blocca il file dall'apertura o dalla condivisione, tale file è incluso in un elenco di elementi in quarantena. (Nel centro sicurezza &amp; e conformità, passare alla **** \> **** \> **quarantena** e al filtro per la gestione delle minacce per il **contenuto**).
+Quando un file in SharePoint Online, OneDrive for business o Microsoft teams viene identificato come dannoso, oltre a ATP che blocca il file dall'apertura o dalla condivisione, tale file è incluso in un elenco di elementi in quarantena. (Nel centro sicurezza &amp; e conformità, passare alla **Threat management** \> **Review** \> **quarantena** e al filtro per la gestione delle minacce per il **contenuto**).
 
-Se si è parte del team di sicurezza di Office 365 dell'organizzazione e le autorizzazioni necessarie sono state [assegnate al centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md), è possibile scaricare, rilasciare, segnalare ed eliminare file che vengono rilevati come dannosi da ATP dalla quarantena.
+Se si è parte del team di sicurezza Microsoft 365 for business dell'organizzazione e le autorizzazioni necessarie sono state [assegnate al centro &amp; sicurezza e conformità](permissions-in-the-security-and-compliance-center.md), è possibile scaricare, rilasciare, segnalare ed eliminare file che vengono rilevati come dannosi da ATP dalla quarantena.
 
 - Il **rilascio e la segnalazione** di un file rimuove il blocco ATP nel file nel sito del team o nella raccolta documenti di SharePoint, OneDrive o Microsoft teams. Gli utenti sono quindi in grado di aprire, condividere e scaricare il file. Quando l'opzione **Invia rapporto a Microsoft** è selezionata, il file viene segnalato come falso positivo a Microsoft.
 

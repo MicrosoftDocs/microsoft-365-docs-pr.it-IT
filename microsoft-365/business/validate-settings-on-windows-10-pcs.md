@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Informazioni su come verificare che le impostazioni di protezione delle app di Microsoft 365 siano state applicate nei dispositivi Windows 10 degli utenti.
-ms.openlocfilehash: 47977f8d79eb6dbb2f4d087af8f8ad7da4313c61
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Informazioni su come verificare che le impostazioni di protezione delle app di Microsoft 365 for business siano state applicate nei dispositivi Windows 10 degli utenti.
+ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560681"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635705"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Verificare le impostazioni di protezione nei PC Windows 10
 
@@ -60,11 +60,11 @@ Dopo aver [configurato i criteri per i dispositivi](protection-settings-for-wind
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Documentazione e risorse su Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Documentazione e risorse su Microsoft 365 per le aziende](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Introduzione a Microsoft 365 Business](microsoft-365-business-overview.md)
+[Introduzione a Microsoft 365 for business](microsoft-365-business-overview.md)
   
-[Gestire Microsoft 365 Business](manage.md)
+[Gestire Microsoft 365 for business](manage.md)
   
 [Impostare le configurazioni dei dispositivi per PC Windows 10](protection-settings-for-windows-10-pcs.md)
   

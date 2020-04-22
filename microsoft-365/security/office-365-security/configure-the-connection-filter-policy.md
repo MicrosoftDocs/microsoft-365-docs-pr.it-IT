@@ -16,16 +16,16 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Per assicurarsi che la posta elettronica inviata da persone di cui si ha fiducia non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi IP consentiti attendibili. È inoltre possibile creare un elenco di indirizzi IP bloccati di mittenti bloccati.
-ms.openlocfilehash: bc0f99102daa422cefe5a7c9cb3e0e5476237f63
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 54e68c79f78bb1408684ac583edff137cb687b53
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893999"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637747"
 ---
-# <a name="configure-connection-filtering-in-office-365"></a>Configurare il filtro connessioni in Office 365
+# <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
-Se si è un cliente di Office 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, è possibile utilizzare il filtro connessioni in EOP (in particolare, il criterio del filtro di connessione predefinito) per identificare server di posta elettronica di origine buoni o difettosi tramite gli indirizzi IP. I componenti principali del criterio di filtro di connessione predefinito sono:
+Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, è possibile utilizzare il filtro connessioni in EOP (in particolare, il criterio del filtro di connessione predefinito) per identificare i server di posta elettronica di origine buoni o difettosi tramite gli indirizzi IP. I componenti principali del criterio di filtro di connessione predefinito sono:
 
 - **Elenco indirizzi IP consentiti**: ignorare i filtri per la posta indesiderata per tutti i messaggi in arrivo dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo. Per gli scenari in cui il filtro di posta indesiderata può ancora verificarsi nei messaggi provenienti da queste origini, vedere gli [scenari in cui i messaggi provenienti da origini nell'elenco indirizzi IP consentiti sono ancora filtrati](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) in questo argomento Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP consentiti dovrebbe adattarsi alla strategia globale dei mittenti attendibili, vedere [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md).
 
@@ -33,18 +33,18 @@ Se si è un cliente di Office 365 con cassette postali in Exchange Online o un c
 
 - **Elenco di indirizzi attendibili**: l' *elenco sicuro* è un elenco di indirizzi consentiti dinamici nel centro dati Microsoft che non richiede la configurazione dei clienti. Microsoft identifica queste origini di posta elettronica attendibili dagli abbonamenti a diversi elenchi di terze parti. È possibile abilitare o disabilitare l'utilizzo dell'elenco di indirizzi attendibili; non è possibile configurare i server di posta elettronica di origine nell'elenco delle cassette sicure. Il filtro posta indesiderata viene ignorato nei messaggi in arrivo dai server di posta elettronica nell'elenco indirizzi attendibili.
 
-In questo argomento viene descritto come configurare i criteri di filtro delle connessioni predefiniti nel centro sicurezza & conformità di Office 365 o in PowerShell (Exchange Online PowerShell per i clienti di Office 365; PowerShell di Exchange Online Protection per clienti EOP autonomi. Per ulteriori informazioni sul modo in cui EOP utilizza il filtro delle connessioni è parte integrante delle impostazioni di protezione da posta indesiderata dell'organizzazione, vedere la sezione relativa [all'Anti-Spam Protection in Office 365](anti-spam-protection.md).
+In questo argomento viene descritto come configurare i criteri di filtro delle connessioni predefiniti nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per i clienti di Microsoft 365; PowerShell di Exchange Online Protection per clienti EOP autonomi. Per ulteriori informazioni sul modo in cui EOP utilizza il filtro connessioni è parte integrante delle impostazioni di protezione da posta indesiderata dell'organizzazione, vedere See [Anti-Spam Protection](anti-spam-protection.md).
 
 > [!NOTE]
-> L'elenco indirizzi IP consentiti, l'elenco sicuro e l'elenco indirizzi IP bloccati sono una parte della strategia complessiva per consentire o bloccare la posta elettronica all'interno dell'organizzazione. Per ulteriori informazioni, vedere [creare elenchi di mittenti attendibili in office 365](create-safe-sender-lists-in-office-365.md) e [creare elenchi di mittenti bloccati in Office 365](create-block-sender-lists-in-office-365.md).
+> L'elenco indirizzi IP consentiti, l'elenco sicuro e l'elenco indirizzi IP bloccati sono una parte della strategia complessiva per consentire o bloccare la posta elettronica all'interno dell'organizzazione. Per ulteriori informazioni, vedere [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md) e [creare elenchi di mittenti bloccati](create-block-sender-lists-in-office-365.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- È possibile aprire il Centro sicurezza & compliance in <https://protection.office.com/>. Per passare direttamente alla pagina **delle impostazioni di protezione da posta indesiderata** , utilizzare <https://protection.office.com/antispam>.
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di Exchange Online Protection autonomo, vedere [connessione a Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell per Exchange Online Protection autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni assegnate. Per modificare i criteri di filtro delle connessioni predefiniti, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri di filtro delle connessioni predefiniti, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the Office 365 security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per modificare i criteri di filtro delle connessioni predefiniti, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri di filtro delle connessioni predefiniti, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Per trovare gli indirizzi IP di origine dei server di posta elettronica che si desidera consentire o bloccare, è possibile controllare il campo di intestazione IP di connessione (**CIP**) nell'intestazione del messaggio. Per visualizzare l'intestazione di un messaggio in vari client di posta elettronica, vedere [visualizzare le intestazioni dei messaggi Internet in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -176,9 +176,9 @@ Ad esempio, il server di posta elettronica di origine 192.168.1.25 Invia messagg
 
 I messaggi provenienti da un server di posta elettronica nell'elenco indirizzi IP consentiti sono ancora soggetti al filtro della posta indesiderata negli scenari seguenti:
 
-- Un indirizzo IP nell'elenco indirizzi IP consentiti è configurato anche in un connettore in ingresso basato su IP in locale in *qualsiasi* tenant di Office 365 (chiamiamo questo tenant a) **e** il tenant a e il server di EOP che prima incontra il messaggio in Office 365 entrambi si trovino nella *stessa* foresta di Active Directory nei datacenter Microsoft. In questo scenario, **IPV: Cal** *viene* aggiunto alle intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md) del messaggio (indicante il filtro per la posta indesiderata ignorata), ma il messaggio è ancora soggetto al filtro di posta indesiderata.
+- Un indirizzo IP nell'elenco indirizzi IP consentiti è configurato anche in un connettore in ingresso basato su IP in locale in *qualsiasi* tenant di Microsoft 365 (chiamiamo questo tenant a) **e** il tenant a e il server di EOP che prima incontrano il messaggio si trovino nella *stessa* foresta di Active Directory nei datacenter Microsoft. In questo scenario, **IPV: Cal** *viene* aggiunto alle intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md) del messaggio (indicante il filtro per la posta indesiderata ignorata), ma il messaggio è ancora soggetto al filtro di posta indesiderata.
 
-- Il tenant che contiene l'elenco indirizzi IP consentiti e il server di EOP che prima incontra il messaggio in Office 365 entrambi si trovano in foreste di Active Directory *diverse* nei datacenter Microsoft. In questo scenario, **IPV: Cal** *non viene* aggiunto alle intestazioni del messaggio, quindi il messaggio è ancora soggetto al filtro di posta indesiderata.
+- Il tenant che contiene l'elenco indirizzi IP consentiti e il server di EOP che prima rileva il messaggio si verificano entrambi nelle foreste di Active Directory *diverse* nei datacenter Microsoft. In questo scenario, **IPV: Cal** *non viene* aggiunto alle intestazioni del messaggio, quindi il messaggio è ancora soggetto al filtro di posta indesiderata.
 
 Se si verifica uno di questi scenari, è possibile creare una regola del flusso di posta con le seguenti impostazioni (almeno) per garantire che i messaggi provenienti da indirizzi IP problematici ignorino il filtro per la posta indesiderata:
 
@@ -190,4 +190,4 @@ Se si verifica uno di questi scenari, è possibile creare una regola del flusso 
 
 ||
 |:-----|
-|![Piccola icona per LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuovo utente di Office 365?** Sono disponibili esercitazioni video gratuite per **amministratori di Office 365 e tecnici IT** grazie a LinkedIn Learning.|
+|![L'icona breve per LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Scopri i corsi video gratuiti per **amministratori e professionisti it**, offerti da LinkedIn Learning.|

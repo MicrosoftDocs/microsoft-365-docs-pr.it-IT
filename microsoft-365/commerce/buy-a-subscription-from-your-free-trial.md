@@ -1,5 +1,5 @@
 ---
-title: Acquistare un abbonamento a Office 365 per le aziende dalla versione di valutazione gratuita
+title: Acquistare un abbonamento a Microsoft 365 for business dalla versione di valutazione gratuita
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
-description: Acquistare un abbonamento a Office 365 for business. È possibile acquistare lo stesso tipo di sottoscrizione provato o un altro piano.
-ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Acquistare un abbonamento a Microsoft 365 for business. È possibile acquistare lo stesso tipo di sottoscrizione provato o un altro piano.
+ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142288"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634945"
 ---
-# <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>Acquistare un abbonamento a Office 365 per le aziende dalla versione di valutazione gratuita
+# <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Acquistare un abbonamento a Microsoft 365 for business dalla versione di valutazione gratuita
 
-Dopo aver provato Office 365, si è pronti per l'acquisto. Sono disponibili due opzioni per l'acquisto di Office 365 dalla versione di valutazione:
+Si è tentato Microsoft 365 e ora si è pronti per l'acquisto. Sono disponibili due opzioni per l'acquisto di Microsoft 365 dalla versione di valutazione:
   
 - [Acquistare lo stesso piano della versione di valutazione](#buy-the-same-plan-as-your-trial)
 - [Acquistare un piano diverso rispetto alla versione di valutazione](#buy-a-different-plan-than-your-trial)
@@ -98,6 +98,7 @@ Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutaz
 
 ::: moniker range="o365-worldwide"
 
+
 1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 2. Nella pagina **acquisto servizi** selezionare l'abbonamento che si desidera acquistare, quindi selezionare **Acquista**.
@@ -136,6 +137,7 @@ Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutaz
 
 ::: moniker range="o365-21vianet"
 
+
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **sottoscrizione** , selezionare **Aggiungi abbonamenti**.
@@ -156,10 +158,11 @@ Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutaz
 
 ::: moniker-end
 
+
 ## <a name="related-articles"></a>Articoli correlati
 
 [Estendere il periodo di valutazione](extend-your-trial.md)
   
-[Iscriversi a Office 365](../admin/admin-overview/sign-up-for-office-365.md)
+[Iscriversi a Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
-[Modificare il piano o l'abbonamento di Office 365](subscriptions/switch-to-a-different-plan.md)
+[Passare a un altro piano o sottoscrizione di Microsoft 365](subscriptions/switch-to-a-different-plan.md)

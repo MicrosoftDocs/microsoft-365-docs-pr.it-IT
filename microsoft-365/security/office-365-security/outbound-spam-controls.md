@@ -1,5 +1,5 @@
 ---
-title: Protezione dalla posta indesiderata in uscita in Office 365
+title: Protezione della posta indesiderata in uscita
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,31 +16,31 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono sapere come Office 365 e Exchange Online Protection (EOP) proteggono i clienti dalla posta indesiderata in uscita e cosa fare se è necessario inviare messaggi di posta elettronica di massa.
-ms.openlocfilehash: 99e764944335be923ee1918851d4072ea98d3a32
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Gli amministratori possono scoprire come Microsoft 365 e Exchange Online Protection (EOP) proteggono i clienti dalla posta indesiderata in uscita e cosa fare se è necessario inviare messaggi di posta elettronica di massa.
+ms.openlocfilehash: 71fe5d5ba1ffbecc77b646a06c3da4d9681ee3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895324"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634497"
 ---
-# <a name="outbound-spam-protection-in-office-365"></a>Protezione dalla posta indesiderata in uscita in Office 365
+# <a name="outbound-spam-protection"></a>Protezione della posta indesiderata in uscita
 
-Si prende sul serio la gestione della posta indesiderata in uscita, perché Office 365 (Exchange Online o standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online) è un servizio online in cui molti clienti utilizzano un pool di risorse condiviso. Un utente di Office 365 che invia intenzionalmente o involontariamente posta indesiderata dalla propria organizzazione può peggiorare la reputazione di tutto il servizio e può influire sul recapito della posta elettronica per gli altri clienti.
+Si prende sul serio la gestione della posta indesiderata in uscita, perché Microsoft 365 (Exchange Online o standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online) è un servizio online in cui molti clienti utilizzano un pool di risorse condiviso. Un cliente Microsoft 365 che invia intenzionalmente o involontariamente posta indesiderata dalla propria organizzazione può peggiorare la reputazione di tutto il servizio e può influire sul recapito della posta elettronica per gli altri clienti.
 
 In questo argomento vengono descritti i controlli e le notifiche che sono stati creati per impedire la posta indesiderata in uscita e cosa è possibile fare se è necessario inviare messaggi di posta elettronica di massa.
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Operazioni che possono essere eseguite dagli amministratori per controllare la posta indesiderata in uscita
 
-- **Utilizzo delle notifiche**predefinite: quando un utente supera i limiti di invio del [servizio](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) o dei criteri di [posta indesiderata in uscita](configure-the-outbound-spam-policy.md) ed è limitato dall'invio di messaggi di posta elettronica, il criterio di avviso predefinito denominato utente con **limitazioni dall'invio di posta** elettronica Invia notifiche tramite posta elettronica ai membri del gruppo **TenantAdmins** (**Global Admins**). Per configurare l'utente che riceve queste notifiche, vedere [Verify the Alert Settings for Restricted Users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Inoltre, i criteri di avviso predefiniti denominati **limite di invio del messaggio di posta elettronica superato** e i modelli di invio di posta elettronica **sospetti rilevato** inviano notifiche tramite posta elettronica ai membri del gruppo **TenantAdmins** (**Global Admins**). Per ulteriori informazioni sui criteri di avviso, vedere [criteri di avviso nel centro sicurezza e conformità](../../compliance/alert-policies.md).
+- **Utilizzo delle notifiche**predefinite: quando un utente supera i limiti di invio del [servizio](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) o dei criteri di [posta indesiderata in uscita](configure-the-outbound-spam-policy.md) ed è limitato dall'invio di messaggi di posta elettronica, il criterio di avviso predefinito denominato utente con **limitazioni dall'invio di posta** elettronica Invia notifiche tramite posta elettronica ai membri del gruppo **TenantAdmins** (**Global Admins**). Per configurare l'utente che riceve queste notifiche, vedere [Verify the Alert Settings for Restricted Users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Inoltre, i criteri di avviso predefiniti denominati **limite di invio del messaggio di posta elettronica superato** e i modelli di invio di posta elettronica **sospetti rilevato** inviano notifiche tramite posta elettronica ai membri del gruppo **TenantAdmins** (**Global Admins**). Per ulteriori informazioni sui criteri di avviso, vedere [Criteri di avviso nel Centro sicurezza e conformità](../../compliance/alert-policies.md).
 
-- **Esaminare i problemi di posta indesiderata dai provider di posta elettronica di terze parti**: molti servizi di posta elettronica come Outlook.com, Yahoo e AOL forniscono un ciclo di commenti e suggerimenti in cui se un utente del servizio contrassegna una posta elettronica da Office 365 come posta indesiderata, il messaggio viene inserito e inviato a noi per la revisione. Per ulteriori informazioni sul supporto dei mittenti per Outlook.com, accedere <https://sendersupport.olc.protection.outlook.com/pm/services.aspx>a.
+- Esaminare i problemi di posta **indesiderata da provider di posta elettronica di terze parti**: molti servizi di posta elettronica come Outlook.com, Yahoo e AOL forniscono un ciclo di commenti e suggerimenti in cui se un utente del servizio contrassegna una posta elettronica da Microsoft 365 come posta indesiderata, il messaggio viene inserito e inviato a noi per la revisione. Per ulteriori informazioni sul supporto dei mittenti per Outlook.com, accedere <https://sendersupport.olc.protection.outlook.com/pm/services.aspx>a.
 
 ## <a name="how-eop-controls-outbound-spam"></a>Come EOP controlla la posta indesiderata in uscita
 
 - **Segregazione del traffico di posta elettronica in uscita**: tutti i messaggi in uscita inviati tramite il servizio vengono analizzati per la posta indesiderata. Se il messaggio è determinato come posta indesiderata, viene recapitato da un pool di indirizzi IP secondario e meno attendibile denominato _pool di recapito ad alto rischio_. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita in Office 365](high-risk-delivery-pool-for-outbound-messages.md).
 
-- **Monitoraggio della reputazione dell'indirizzo IP di origine**: Office 365 esegue una query su diversi elenchi di indirizzi IP bloccati di terze parti. Viene generato un avviso se uno degli indirizzi IP utilizzati per la posta elettronica in uscita viene visualizzato negli elenchi. In questo modo è possibile reagire rapidamente quando la posta indesiderata ha provocato un peggioramento della reputazione. Quando viene generato un avviso, è presente una documentazione interna che descrive come ottenere gli indirizzi IP rimossi dagli elenchi bloccati.
+- **Monitoraggio della reputazione dell'indirizzo IP di origine**: Microsoft 365 esegue una query su diversi elenchi di indirizzi IP bloccati di terze parti. Viene generato un avviso se uno degli indirizzi IP utilizzati per la posta elettronica in uscita viene visualizzato negli elenchi. In questo modo è possibile reagire rapidamente quando la posta indesiderata ha provocato un peggioramento della reputazione. Quando viene generato un avviso, è presente una documentazione interna che descrive come ottenere gli indirizzi IP rimossi dagli elenchi bloccati.
 
 - **Disabilitare gli account che inviano troppa posta indesiderata**<sup>\*</sup>: anche se noi segregiamo la posta indesiderata in uscita nel pool di recapito ad alto rischio, non è possibile consentire a un account (spesso un account compromesso) di inviare messaggi di posta indesiderati. Monitoriamo gli account che inviano messaggi di posta indesiderata e quando superano un limite nascosto, l'account è bloccato dall'invio di posta elettronica. Sono disponibili diverse soglie per singoli utenti e per l'intero tenant.
 
@@ -50,7 +50,7 @@ In questo argomento vengono descritti i controlli e le notifiche che sono stati 
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Consigli per i clienti che desiderano inviare invii di massa tramite EOP
 
-È difficile trovare un equilibrio tra i clienti che desiderano inviare un volume elevato di posta elettronica rispetto alla protezione del servizio da account compromessi e mittenti di posta elettronica in blocco con procedure di acquisizione dei destinatari insufficienti. Il costo di un atterraggio di origine di posta elettronica di Office 365 su un elenco di indirizzi IP bloccati di terze parti è maggiore del blocco di un utente che invia troppa posta elettronica.
+È difficile trovare un equilibrio tra i clienti che desiderano inviare un volume elevato di posta elettronica rispetto alla protezione del servizio da account compromessi e mittenti di posta elettronica in blocco con procedure di acquisizione dei destinatari insufficienti. Il costo di un atterraggio di posta elettronica di Microsoft 365 su un elenco di indirizzi IP bloccati di terze parti è maggiore del blocco di un utente che invia troppa posta elettronica.
 
 Come descritto nella [Descrizione del servizio Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits), l'utilizzo di EOP per inviare messaggi di posta elettronica in blocco non è un utilizzo supportato del servizio e può essere consentito solo in base a "Best-Effort". Per i clienti che desiderano inviare messaggi di posta elettronica in blocco, è consigliabile utilizzare le soluzioni seguenti:
 

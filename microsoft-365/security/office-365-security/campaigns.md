@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione campagne in Office 365 ATP
+title: Visualizzazioni delle campagne in ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Visualizzazione campagne in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637329"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637819"
 ---
-# <a name="campaign-views-in-office-365-atp"></a>Visualizzazione campagne in Office 365 ATP
+# <a name="campaign-views-in-atp"></a>Visualizzazioni della campagna in ATP
 
-Visualizzazione campagne è una funzionalità di Advanced Threat Protection (ATP) nel Centro sicurezza e conformità di Office 365 che identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
+La visualizzazione della campagna è una funzionalità di Advanced Threat Protection (ATP) nel centro sicurezza & Compliance che identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
 
 - Analizzare e rispondere in modo efficiente agli attacchi di phishing.
 
@@ -40,7 +40,7 @@ Visualizzazione campagne fornisce una visione d'insieme di un attacco in maniera
 
 Una campagna è un attacco coordinato perpetrato tramite posta elettronica contro una o più organizzazioni. Gli attacchi tramite posta elettronica che rubano le credenziali e i dati aziendali rappresentano un settore importante e redditizio. Man mano che le tecnologie aumentano nel tentativo di arrestare gli attacchi, gli aggressori modificano i propri metodi nel tentativo di garantire il successo continuativo.
 
-Microsoft utilizza la vasta gamma di dati anti-phishing, antispam e antimalware in tutto il servizio Office 365 per facilitare l'identificazione delle campagne. Vengono analizzate e classificate le informazioni sull'attacco in base a diversi fattori. Ad esempio:
+Microsoft sfrutta la vasta quantità di dati antiphishing, di protezione dalla posta indesiderata e antimalware in tutto il servizio per facilitare l'identificazione delle campagne. Vengono analizzate e classificate le informazioni sull'attacco in base a diversi fattori. Ad esempio:
 
 - **Origine dell'attacco**: indirizzi IP origine e domini di posta elettronica del mittente.
 
@@ -52,7 +52,7 @@ Microsoft utilizza la vasta gamma di dati anti-phishing, antispam e antimalware 
 
 Una campagna potrebbe essere di breve durata, o potrebbe interferire tra diversi giorni, settimane o mesi con periodi attivi e inattivi. Una campagna potrebbe essere avviata con l'organizzazione specifica oppure l'organizzazione potrebbe far parte di una campagna più estesa tra più società.
 
-## <a name="campaign-views-the-office-365-security--compliance-center"></a>Visualizzazione campagne del Centro sicurezza e conformità di Office 365
+## <a name="campaign-views-the-security--compliance-center"></a>Visualizzazione della campagna il Centro sicurezza & Compliance
 
 Le visualizzazioni campagna sono disponibili nel [Centro sicurezza & conformità](https://protection.office.com) nelle **Threat management** \> **campagne**di gestione delle minacce.
 

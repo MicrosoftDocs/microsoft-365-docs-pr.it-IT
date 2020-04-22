@@ -15,16 +15,16 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Domande frequenti e risposte per gli amministratori sulla protezione da posta indesiderata in Exchange Online e standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528314"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636059"
 ---
-# <a name="anti-spam-protection-faq-in-office-365"></a>Domande frequenti sulla protezione da posta indesiderata in Office 365
+# <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
-In questo argomento sono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata per i clienti di Office 365 con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online.
+In questo argomento sono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata per i clienti di Microsoft 365 con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online.
 
 Per domande e risposte sulla quarantena, vedere [Domande frequenti sulla quarantena](quarantine-faq.md).
 
@@ -34,12 +34,12 @@ Per domande e risposte sulla protezione anti-spoofing, vedere domande [frequenti
 
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>D. Per impostazione predefinita, cosa accade a un messaggio identificato come posta indesiderata?
 
-R. **Per i messaggi in ingresso**: la maggior parte della posta indesiderata viene eliminata tramite il filtro connessioni, che si basa sull'indirizzo IP del server di posta elettronica di origine. I criteri di protezione da posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri di filtro dei contenuti) ispezionano e classificano i messaggi come posta indesiderata Per impostazione predefinita, i messaggi classificati come posta indesiderata o in blocco vengono recapitati alla cartella posta indesiderata del destinatario, mentre i messaggi classificati come phishing vengono messi in quarantena È possibile modificare i criteri di protezione da posta indesiderata predefiniti (si applica a tutti i destinatari) oppure è possibile creare criteri di protezione dalla posta indesiderata personalizzati con impostazioni più rigorose per gruppi di utenti specifici (ad esempio, è possibile mettere in quarantena la posta indesiderata inviata ai dirigenti). Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md) e le impostazioni dei criteri di protezione da [posta indesiderata](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+R. **Per i messaggi in ingresso:** La maggior parte della posta indesiderata viene eliminata tramite il filtro connessioni, che si basa sull'indirizzo IP del server di posta elettronica di origine. I criteri di protezione da posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri di filtro dei contenuti) ispezionano e classificano i messaggi come posta indesiderata Per impostazione predefinita, i messaggi classificati come posta indesiderata o in blocco vengono recapitati alla cartella posta indesiderata del destinatario, mentre i messaggi classificati come phishing vengono messi in quarantena È possibile modificare i criteri di protezione da posta indesiderata predefiniti (si applica a tutti i destinatari) oppure è possibile creare criteri di protezione dalla posta indesiderata personalizzati con impostazioni più rigorose per gruppi di utenti specifici (ad esempio, è possibile mettere in quarantena la posta indesiderata inviata ai dirigenti). Per ulteriori informazioni, vedere Configurare i criteri di protezione dalla [posta indesiderata](configure-your-spam-filter-policies.md) e le impostazioni dei criteri di protezione da [posta indesiderata](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
 
 > [!IMPORTANT]
 > Nelle distribuzioni ibride in cui EOP protegge le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) nell'organizzazione di Exchange locale per rilevare le intestazioni del filtro di posta indesiderata di EOP che vengono aggiunte ai messaggi. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
- **Per i messaggi in uscita**: il messaggio viene instradato attraverso il [pool di recapito ad alto rischio](high-risk-delivery-pool-for-outbound-messages.md) o viene restituito al mittente in un rapporto di mancato recapito (noto anche come NDR o messaggio di rientro). Per ulteriori informazioni sulla protezione da posta indesiderata in uscita, vedere [controlli di posta indesiderata in uscita in Office 365](outbound-spam-controls.md).
+ **Per i messaggi in uscita:** Il messaggio viene instradato attraverso il [pool di recapito ad alto rischio](high-risk-delivery-pool-for-outbound-messages.md) o viene restituito al mittente in un rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo). Per ulteriori informazioni sulla protezione da posta indesiderata in uscita, vedere [controlli di posta indesiderata in uscita](outbound-spam-controls.md).
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>D. Che cos'è una variante di posta indesiderata di zero-day e come viene gestita dal servizio?
 
@@ -75,7 +75,7 @@ R. Sì, il servizio dispone di un filtro URL che consente di controllare gli URL
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>D. In che modo gli utenti che utilizzano il servizio inviano falsi negativi (posta indesiderata) e falsi positivi (posta non indesiderata) a Microsoft?
 
-R. I messaggi di posta indesiderata e non possono essere inviati a Microsoft per l'analisi in diversi modi. Per ulteriori informazioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
+R. I messaggi di posta indesiderata e non possono essere inviati a Microsoft per l'analisi in diversi modi. Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-can-i-get-spam-reports"></a>D. È possibile ricevere rapporti sulla posta indesiderata?
 
@@ -97,11 +97,11 @@ R. Se più della metà della posta inviata da un utente tramite il servizio entr
 
 ## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>D. È possibile utilizzare un provider antimalware e di protezione dalla posta indesiderata di terze parti insieme a Exchange Online?
 
-R. Sì. Anche se è consigliabile puntare il record MX a Office 365, ci si accorge che vi sono motivi aziendali legittimi per instradare la posta elettronica a un altro posto che non sia Office 365 prima.
+R. Sì. Anche se è consigliabile puntare il record MX a Microsoft, ci si rende conto che esistono motivi aziendali legittimi per instradare la posta elettronica in un punto diverso da Microsoft First.
 
 - In **ingresso**: modificare i record MX in modo che puntino al provider di terze parti e quindi reindirizzare i messaggi a EOP per ulteriori elaborazioni. Per ulteriori informazioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- In **uscita**: configurare il routing di smart host da Office 365 al provider di terze parti di destinazione.
+- In **uscita**: configurare il routing di smart host da Microsoft 365 al provider di terze parti di destinazione.
 
 ## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>D. Microsoft dispone di documentazione su come è possibile proteggersi da tentativi di phishing?
 
@@ -133,7 +133,7 @@ R. Le linee guida presentate di seguito rappresentano le procedure ottimali per 
 
   I record SPF consentono di verificare che la posta inviata da un dominio giunga veramente da tale dominio e non sia soggetta a spoofing. Per ulteriori informazioni sui record SPF, vedere i seguenti collegamenti:
 
-  [Configurazione di SPF in Office 365 per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [Configurare SPF per impedire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [Domande frequenti sui domini](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 

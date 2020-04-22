@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: c90f16bfbdf41f859e13a23fbdaeb0c3480bd191
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153893"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631526"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: gestione dei dispositivi mobili per Microsoft 365 Enterprise
 
@@ -34,7 +34,7 @@ In questa fase, è necessario registrare i dispositivi in Intune e creare e appl
 
 ## <a name="step-1-plan-for-your-scenario"></a>Passaggio 1: pianificare lo scenario
 
-Uno dei motivi principali per la gestione dei dispositivi mobili è la sicurezza e la protezione delle risorse dell'organizzazione. [Metodi comuni per l'utilizzo di Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) elenca alcuni esempi reali, tra cui la protezione dei dati e della posta elettronica di Office 365.
+Uno dei motivi principali per la gestione dei dispositivi mobili è la sicurezza e la protezione delle risorse dell'organizzazione. [Metodi comuni per l'utilizzo di Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) elenca alcuni esempi reali, tra cui la protezione dei dati e della posta elettronica Microsoft.
 
 Intune offre opzioni per la gestione dell'accesso all'organizzazione tramite la gestione dei dispositivi mobili (MDM) o la gestione delle applicazioni mobili (MAM). MDM è il momento in cui gli utenti "iscrivono" i propri dispositivi in Intune. Una volta registrati, sono dispositivi gestiti e possono ricevere tutti i criteri, le regole e le impostazioni utilizzate dall'organizzazione. Ad esempio, è possibile installare app specifiche, creare un criterio password, installare una connessione VPN e altro ancora.
 
@@ -47,7 +47,7 @@ Gli utenti che dispongono di dispositivi personali potrebbero non voler registra
 Successivamente, ottenere i prerequisiti in base alle proprie esigenze e agli scenari creati nel passaggio precedente. [Implementare il piano](https://docs.microsoft.com/intune/planning-guide-onboarding) elenca tutti i requisiti. Di seguito sono riprodotti gli elementi significativi necessari per Intune con Microsoft 365:
 
 - **Sottoscrizione a Intune**: inclusa in Microsoft 365 e fornisce l'accesso a Microsoft Intune nel [portale di Azure](https://portal.azure.com)
-- **Abbonamento a office 365**: incluso in Microsoft 365 e utilizzato per le app di Office, inclusi i messaggi di posta elettronica
+- **Sottoscrizione microsoft 365**: incluso in Microsoft 365 ed è utilizzato per le app di Office, incluso il messaggio di posta elettronica
 - **Azure Active Directory (Azure ad) Premium**: incluso in Microsoft 365 e viene utilizzato per creare gruppi di utenti o di sicurezza. Questi gruppi ricevono i criteri di Intune creati, ad esempio forzando la lunghezza della password per sbloccare un dispositivo. I gruppi creati nella [fase 2:](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) è possibile utilizzare l'identità.
 
 Potrebbe essere necessario disporre di alcuni requisiti aggiuntivi, a seconda delle esigenze dell'organizzazione. Ad esempio, se si intende gestire i dispositivi iOS, è necessario un certificato push di Apple MDM. Se si utilizza Exchange locale, è necessario disporre del connettore di Exchange locale. Questi requisiti aggiuntivi vengono delineati quando si arriva a tali passaggi.
@@ -121,7 +121,7 @@ Vedere [Introduzione ai criteri di conformità dei dispositivi](https://docs.mic
 
 Queste caratteristiche e impostazioni sono spesso considerate la parte "cool" di Intune e sono molto potenti. Dopo aver applicato correttamente alcuni criteri di conformità utilizzando l'accesso condizionale, è possibile creare **profili dispositivo**.
 
-Intune nel [portale di Azure](https://portal.azure.com) consente di creare profili diversi in base alla piattaforma del dispositivo: iOS, MacOS, Android e Windows. Ad esempio, è possibile compiere queste operazioni:
+Intune nel [portale di Azure](https://portal.azure.com) consente di creare profili diversi in base alla piattaforma del dispositivo: iOS, MacOS, Android e Windows. Ad esempio, è possibile:
 
 - Utilizzare Endpoint Protection nei dispositivi Windows 10 per abilitare diverse opzioni di BitLocker, inclusa la crittografia.
 - Utilizzare la caratteristica delle app limitate nei dispositivi iOS per creare un elenco di applicazioni approvate che possono essere installate. In alternativa, creare un elenco di app vietate.

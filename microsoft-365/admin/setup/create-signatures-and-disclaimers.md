@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Informazioni su come aggiungere la firma di posta elettronica, la dichiarazione di non responsabilità legale o la divulgazione a tutti i messaggi di posta elettronica che entrano o lasciano l'organizzazione.
-ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360667"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631978"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Creare firme e dichiarazioni di non responsabilità a livello di organizzazione
 
@@ -62,9 +62,9 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
 
 ::: moniker-end
 
-1. Seleziona l'icona di ![avvio delle app in Office 365](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)e quindi seleziona **amministratore**.
+1. Seleziona l'icona](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)di ![avvio delle app e quindi seleziona **amministratore**.
    
-    Se non si trova l'app che si sta cercando, nell'icona di avvio delle app selezionare **Tutte le app** per visualizzare un elenco in ordine alfabetico delle app di Office 365 disponibili. Da qui è possibile cercare un'app specifica. 
+    Non è possibile trovare l'app che si sta cercando? Dall'icona di avvio delle app, seleziona **tutte le app** per visualizzare un elenco alfabetico delle app disponibili. Da qui, è possibile cercare un'app specifica. 
     
 2. Selezionare interfaccia di **Amministrazione**, quindi fare clic su **Exchange**.
     
@@ -77,14 +77,14 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
 6. In **applica questa regola**selezionare **[applica a tutti i messaggi]**.
     
     > [!TIP]
-    > [Altre informazioni](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) su come applicare condizioni se non si vuole che la dichiarazione di non responsabilità venga applicata a tutti i messaggi. (Questo articolo di ambito è per Exchange Server, ma si applica anche a Office 365). 
+    > [Altre informazioni](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) su come applicare condizioni se non si vuole che la dichiarazione di non responsabilità venga applicata a tutti i messaggi. (Questo articolo di ambito è per Exchange Server, ma si applica anche a Microsoft 365). 
   
 7. In Effettua le operazioni seguenti lasciare selezionata l'opzione **Aggiungi una dichiarazione di non responsabilità**. 
     
 8.  Selezionare **Immetti testo** e digitare la dichiarazione di non responsabilità. 
     
     > [!TIP]
-    > [Altre informazioni](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sulla formattazione di dichiarazioni di non responsabilità. (Questo articolo di formattazione è per Exchange Server, ma si applica anche a Office 365). 
+    > [Altre informazioni](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sulla formattazione di dichiarazioni di non responsabilità. (Questo articolo di formattazione è per Exchange Server, ma si applica anche a Microsoft 365). 
 
 9. Selezionare **selezionarne una** e scegliere **Wrap** come opzione di fallback. Quindi scegliere **OK**. Con questa opzione, se la dichiarazione di non responsabilità non può essere aggiunta a causa di un'impostazione della posta, come la crittografia, verrà incorporata nella busta del messaggio.
     
@@ -96,9 +96,9 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
     
 13. Al termine scegliere **Salva**. 
     
-## <a name="limitations-of-office-365-organization-wide-signatures"></a>Limitazioni dell'organizzazione di Office 365 firme estese
+## <a name="limitations-of-organization-wide-signatures"></a>Limitazioni delle firme estese dell'organizzazione
 
-Non è possibile eseguire le operazioni seguenti con le firme di Office 365:
+Non è possibile effettuare le seguenti operazioni con le firme di Microsoft 365:
   
 - Inserire la firma direttamente sotto la risposta di posta elettronica più recente o inoltrare
     
@@ -112,6 +112,6 @@ Per ottenere queste e altre funzionalità, utilizzare uno strumento di terze par
   
 ## <a name="more-resources"></a>Altre risorse
 
-- Per informazioni sull'utilizzo di PowerShell, vedere dichiarazioni, piè di pagina [o intestazioni dei messaggi a livello di organizzazione in Office 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) . 
+- Per informazioni sull'utilizzo di PowerShell, vedere dichiarazioni, piè di pagina [o intestazioni dei messaggi a livello di organizzazione in Microsoft 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) . 
     
 

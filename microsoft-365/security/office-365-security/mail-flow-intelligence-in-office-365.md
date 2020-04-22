@@ -1,5 +1,5 @@
 ---
-title: Business intelligence di flusso di posta elettronica in Office 365
+title: Intelligence del flusso di posta
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,29 +12,29 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
-description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori di Office 365 (noto anche come Intelligence del flusso di posta).
-ms.openlocfilehash: 849493cefecb3344eaf7b6db73be3930138c236c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori (noti anche come Intelligence del flusso di posta).
+ms.openlocfilehash: aa156299dcc835369b7eb69bb5719b27078d8404
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088655"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635637"
 ---
-# <a name="mail-flow-intelligence-in-office-365"></a>Intelligence del flusso di posta in Office 365
+# <a name="mail-flow-intelligence"></a>Intelligence del flusso di posta
 
-In genere, si utilizza un connettore per instradare i messaggi di posta elettronica dall'organizzazione di Office 365 all'ambiente di posta elettronica locale. È anche possibile usare un connettore per instradare i messaggi da Office 365 a un'organizzazione partner. Quando Office 365 non è in grado di recapitare tali messaggi attraverso il connettore, questi ultimi vengono messi in coda in Office 365. Office 365 continuerà a riprovare il recapito per ogni messaggio per 24 ore. Dopo 24 ore, il messaggio in coda scadrà e il messaggio verrà restituito al mittente originale in un rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo).
+In genere, si utilizza un connettore per instradare i messaggi di posta elettronica dall'organizzazione all'ambiente di posta elettronica locale. È inoltre possibile utilizzare un connettore per instradare i messaggi da Microsoft 365 a un'organizzazione partner. Quando Microsoft 365 non è in grado di recapitare questi messaggi tramite il connettore, vengono accodati in Microsoft 365. Microsoft 365 continuerà a riprovare il recapito per ogni messaggio per 24 ore. Dopo 24 ore, il messaggio in coda scadrà e il messaggio verrà restituito al mittente originale in un rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo).
 
-Office 365 genera un errore quando un messaggio non può essere recapitato utilizzando un connettore. In questo argomento sono descritti gli errori più comuni e le relative soluzioni. Gli errori di Accodamento e di notifica per i messaggi non recapitabili inviati tramite connettori sono noti come _Intelligence del flusso di posta_.
+Microsoft 365 genera un errore quando un messaggio non può essere recapitato utilizzando un connettore. In questo argomento sono descritti gli errori più comuni e le relative soluzioni. Gli errori di Accodamento e di notifica per i messaggi non recapitabili inviati tramite connettori sono noti come _Intelligence del flusso di posta_.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Codice errore: 450 4.4.312 Query DNS non riuscita
 
-In genere, questo errore indica che Office 365 ha tentato di connettersi allo smart host specificato nel connettore, ma la query DNS per individuare gli indirizzi IP dello smart host ha avuto esito negativo. Alcune possibili cause di questo errore:
+In genere, questo errore indica che Microsoft 365 ha tentato di connettersi allo smart host specificato nel connettore, ma la query DNS per individuare gli indirizzi IP dello smart host ha avuto esito negativo. Alcune possibili cause di questo errore:
 
 - Si è verificato un errore relativo al servizio di hosting DNS del proprio dominio (la terza parte che gestisce i server dei nomi autorevoli per il dominio).
 
 - Di recente, il dominio è scaduto e di conseguenza il record MX non può essere recuperato.
 
-- Il record MX del dominio è stato recentemente modificato e i server DNS di Office 365 hanno ancora le informazioni DNS memorizzate in precedenza per il dominio.
+- Il record MX del dominio è stato recentemente modificato e i server DNS hanno ancora le informazioni DNS precedentemente memorizzate nella cache per il dominio.
 
 ### <a name="how-do-i-fix-error-code-450-44312"></a>Come risolvere il codice di errore 450 4.4.312?
 
@@ -44,39 +44,39 @@ In genere, questo errore indica che Office 365 ha tentato di connettersi allo sm
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>Codice errore: 450 4.4.315 Timeout della connessione
 
-In genere, questo significa che Office 365 non è in grado di connettersi al server di posta elettronica di destinazione. Nei dettagli dell'errore è riportata una spiegazione del problema. Ad esempio:
+In genere, questo significa che Microsoft 365 non è in grado di connettersi al server di posta elettronica di destinazione. Nei dettagli dell'errore è riportata una spiegazione del problema. Ad esempio:
 
 - Il server di posta elettronica locale è inattiva.
 
-- Si è verificato un errore relativo alle impostazione dello smart host del connettore, quindi Office 365 prova a connettersi all'indirizzo IP sbagliato.
+- Si è verificato un errore nelle impostazioni dello smart host del connettore, quindi Microsoft 365 sta tentando di connettersi all'indirizzo IP errato.
 
 ### <a name="how-do-i-fix-error-code-450-44315"></a>Come risolvere il codice di errore 450 4.4.315?
 
-- Trovare informazioni sulla situazione adatta al proprio caso e apportare le dovute correzioni. Ad esempio, se il flusso di posta funziona correttamente e non sono state modificate le impostazioni del connettore, è necessario controllare l'ambiente di posta elettronica locale per verificare se il server è inattivo o se sono state apportate modifiche all'infrastruttura di rete (ad esempio, sono stati modificati i provider di servizi Internet, quindi sono presenti diversi indirizzi IP.
+- Trovare informazioni sulla situazione adatta al proprio caso e apportare le dovute correzioni. Ad esempio, se il flusso di posta funziona correttamente e non sono state modificate le impostazioni del connettore, è necessario controllare l'ambiente di posta elettronica locale per verificare se il server è inattivo o se sono state apportate modifiche all'infrastruttura di rete (ad esempio, i provider di servizi Internet sono stati modificati).
 
 - Se l'errore è dell'organizzazione partner (ad esempio, un provider di servizi cloud di terze parti), contattare il partner per risolvere il problema.
 
 ## <a name="error-code-450-44316-connection-refused"></a>Codice errore: 450 4.4.316 Connessione rifiutata
 
-In genere, questo errore indica che Office 365 ha riscontrato un errore di connessione quando ha tentato di connettersi al server di posta elettronica di destinazione. Una delle probabili cause di questo errore è la presenza di un firewall che blocca le connessioni dagli indirizzi IP di Office 365. In alternativa, questo errore potrebbe essere dovuto alla progettazione se la migrazione del sistema di posta elettronica locale è stata completata in Office 365 e arrestare l'ambiente di posta elettronica locale.
+In genere, questo errore indica che Microsoft 365 ha riscontrato un errore di connessione quando ha tentato di connettersi al server di posta elettronica di destinazione. Una probabile causa di questo errore è che il firewall sta bloccando le connessioni dagli indirizzi IP di Microsoft 365. In alternativa, questo errore potrebbe essere dovuto alla progettazione se la migrazione del sistema di posta elettronica locale è stata completata in Microsoft 365 e arrestare l'ambiente di posta elettronica locale.
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Come risolvere il codice di errore 450 4.4.316?
 
-- Se si dispone di cassette postali nell'ambiente locale, è necessario modificare le impostazioni del firewall per consentire le connessioni dagli indirizzi IP di Office 365 sulla porta TCP 25 ai server di posta elettronica locali. Per visualizzare un elenco degli indirizzi IP di Office 365, vedere [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- Se si dispone di cassette postali nell'ambiente locale, è necessario modificare le impostazioni del firewall per consentire le connessioni dagli indirizzi IP di Microsoft 365 sulla porta TCP 25 ai server di posta elettronica locali. Per un elenco degli indirizzi IP di Microsoft 365, vedere [URL e intervalli di indirizzi IP di microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
-- Se non devono essere recapitati più messaggi nell'ambiente locale, fare clic su **Correggi ora** nell'avviso affinché Office 365 possa rifiutare immediatamente i messaggi con destinatari non validi. Questo consente di ridurre il rischio di superare la quota dell'organizzazione per i destinatari non validi, che possono compromettere il recapito dei messaggi normali. In alternativa, è possibile utilizzare le istruzioni seguenti per risolvere manualmente il problema:
+- Se non è necessario recapitare altri messaggi all'ambiente locale, fare clic su **Correggi ora** nell'avviso in modo che Microsoft 365 possa rifiutare immediatamente i messaggi con destinatari non validi. Questo consente di ridurre il rischio di superare la quota dell'organizzazione per i destinatari non validi, che possono compromettere il recapito dei messaggi normali. In alternativa, è possibile utilizzare le istruzioni seguenti per risolvere manualmente il problema:
 
-  - Nell'interfaccia di [amministrazione di Exchange (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center) in Office 365, disabilitare o eliminare il connettore che invia messaggi di posta elettronica da Office 365 all'ambiente di posta elettronica locale:
+  - Nell'interfaccia di [amministrazione di Exchange (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center), disabilitare o eliminare il connettore che invia messaggi di posta elettronica da Microsoft 365 all'ambiente di posta elettronica locale:
 
     1. Nell'interfaccia di amministrazione di Exchange, andare a **connettori**del **flusso** \> di posta.
 
-    2. Selezionare il connettore con il **** valore da **Office 365** e il valore **per** il **server di posta elettronica dell'organizzazione** ed eseguire una delle operazioni seguenti:
+    2. Selezionare il connettore con il **From** valore da **Office 365** e il valore **per** il **server di posta elettronica dell'organizzazione** ed eseguire una delle operazioni seguenti:
 
        - Eliminare il connettore facendo clic su **Elimina** ![icona Rimuovi](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
        - Disabilitare il connettore facendo clic su **modifica** ![icona](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifica e deselezionando **attiva**.
 
-  - Modificare il dominio accettato in Office 365 associato all'ambiente di posta elettronica locale dall' **inoltro interno** a **autorevole**. Per istruzioni, vedere [Manage Accepted Domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+  - Modificare il dominio accettato in Microsoft 365 associato all'ambiente di posta elettronica locale dall' **inoltro interno** a **autorevole**. Per istruzioni, vedere [Manage Accepted Domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
   **Nota**: in genere, queste modifiche impiegano tra 30 minuti e un'ora per rendere effettive le operazioni. Dopo un'ora, verificare che l'errore non sia più stato ricevuto.
 
@@ -84,7 +84,7 @@ In genere, questo errore indica che Office 365 ha riscontrato un errore di conne
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Codice errore: 450 4.4.317 Impossibile connettersi al server remoto.
 
-In genere, questo errore indica che Office 365 è connesso al server di posta elettronica di destinazione, ma il server ha risposto con un errore immediato o non soddisfa i requisiti di connessione. Nei dettagli dell'errore è riportata una spiegazione del problema. Ad esempio:
+In genere, questo errore indica che Microsoft 365 è connesso al server di posta elettronica di destinazione, ma il server ha risposto con un errore immediato o non soddisfa i requisiti di connessione. Nei dettagli dell'errore è riportata una spiegazione del problema. Ad esempio:
 
 - Il server di posta elettronica di destinazione ha risposto con un messaggio di errore "servizio non disponibile", che indica che il server non è in grado di mantenere la comunicazione con Office 365.
 
@@ -98,7 +98,7 @@ In genere, questo errore indica che Office 365 è connesso al server di posta el
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Codice errore: 450 4.4.318 Connessione interrotta improvvisamente
 
-In genere, questo errore indica che Office 365 ha difficoltà a comunicare con l'ambiente di posta elettronica locale, in modo che la connessione sia stata eliminata. Alcune possibili cause di questo errore:
+In genere, questo errore indica che Microsoft 365 ha difficoltà a comunicare con l'ambiente di posta elettronica locale, in modo che la connessione sia stata eliminata. Alcune possibili cause di questo errore:
 
 - Il firewall utilizza le regole di verifica del pacchetto SMTP e tali regole non funzionano correttamente.
 
@@ -116,7 +116,7 @@ In genere, questo errore indica che Office 365 ha difficoltà a comunicare con l
 
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Codice errore: 450 4.7.320 Convalida del certificato non riuscita
 
-In genere, questo errore indica che Office 365 ha riscontrato un errore durante il tentativo di convalidare il certificato del server di posta elettronica di destinazione. Nei dettagli dell'errore è riportata una sua spiegazione. Ad esempio:
+In genere, questo errore indica che Microsoft 365 ha riscontrato un errore durante il tentativo di convalidare il certificato del server di posta elettronica di destinazione. Nei dettagli dell'errore è riportata una sua spiegazione. Ad esempio:
 
 - Certificato scaduto
 
@@ -126,12 +126,12 @@ In genere, questo errore indica che Office 365 ha riscontrato un errore durante 
 
 ### <a name="how-do-i-fix-error-code-450-47320"></a>Come risolvere il codice di errore 450 4.7.320?
 
-- Consente di risolvere il certificato o le impostazioni sul connettore in modo che i messaggi in coda in Office 365 possano essere recapitati.
+- Consente di risolvere il certificato o le impostazioni sul connettore in modo che i messaggi in coda in Microsoft 365 possano essere recapitati.
 
 - Se l'errore è generato nell'organizzazione del partner (ad esempio, il provider di servizi cloud di terze parti), è necessario contattarlo e chiedere la risoluzione del problema.
 
 ## <a name="other-error-codes"></a>Altri codici errore
 
-Office 365 ha difficoltà a recapitare i messaggi al server di posta elettronica locale o partner. Utilizzare le informazioni **Server di destinazione** nell'errore per esaminare l'errore nel proprio ambiente o per modificare il connettore in presenza di un errore di configurazione.
+Microsoft 365 ha difficoltà a recapitare i messaggi al server di posta elettronica locale o partner. Utilizzare le informazioni **Server di destinazione** nell'errore per esaminare l'errore nel proprio ambiente o per modificare il connettore in presenza di un errore di configurazione.
 
 Se l'errore è generato nell'organizzazione del partner (ad esempio, il provider di servizi cloud di terze parti), è necessario contattarlo e chiedere la risoluzione del problema.

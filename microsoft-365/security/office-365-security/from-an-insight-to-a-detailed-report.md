@@ -17,16 +17,16 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Per un esempio di prevenzione della perdita di dati, è possibile passare da una &amp; panoramica a una relazione dettagliata nel centro sicurezza e conformità.
-ms.openlocfilehash: f5b64cedba72592307d9c806484640f75be02f8e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52c0f944e5319325f2ae478bd7fda34fa08319b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083055"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638071"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Procedura: dalle informazioni dettagliate a un report dettagliato
 
-Se si è nuovi per [i report e le informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md), potrebbe essere utile scoprire come è possibile spostarsi facilmente da una panoramica a una relazione dettagliata. 
+Se si è nuovi per [i report e le informazioni dettagliate nel centro &amp; sicurezza e conformità](reports-and-insights-in-security-and-compliance.md), potrebbe essere utile vedere come è possibile spostarsi facilmente da una panoramica a una relazione dettagliata. 
   
 Questa è una delle numerose procedure dettagliate per il [centro &amp; sicurezza e conformità](https://protection.office.com). Per visualizzare ulteriori procedure dettagliate, vedere la sezione [argomenti correlati](#related-topics) . 
   
@@ -34,7 +34,7 @@ Questa è una delle numerose procedure dettagliate per il [centro &amp; sicurezz
 
 Let ' s walk through the flow from the Dashboard to a Insight to a report dettagliato per l'esplorazione dei dati. (Si tratta di un breve esempio di [prevenzione della perdita di dati](../../compliance/data-loss-prevention-policies.md) ). 
   
-1. Iniziare con un dashboard nel [Centro sicurezza &amp; e conformità](https://protection.office.com). (Andare al **** \> **Dashboard**di report).<br/>![Nel centro sicurezza &amp; e conformità, fare clic \> su dashboard report](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. Iniziare con un dashboard nel [Centro sicurezza &amp; e conformità](https://protection.office.com). (Andare al **Reports** \> **Dashboard**di report).<br/>![Nel centro sicurezza &amp; e conformità, fare clic \> su dashboard report](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 2. Nell'angolo in alto a sinistra del dashboard, accanto a ** &amp; suggerimenti principali**, è presente un collegamento. (Fare clic su **Visualizza tutto**).<br/>![Nel centro sicurezza &amp; e conformità, scegliere Dashboard \> report per visualizzare le informazioni principali](../../media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Questo porta a un elenco di approfondimenti per la nostra organizzazione.<br/>![Nel centro sicurezza &amp; e conformità, è possibile visualizzare tutte le informazioni dettagliate in un elenco](../../media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   

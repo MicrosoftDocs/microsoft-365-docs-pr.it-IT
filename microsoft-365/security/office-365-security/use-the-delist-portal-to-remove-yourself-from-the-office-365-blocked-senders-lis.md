@@ -1,5 +1,5 @@
 ---
-title: Accedere al portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365
+title: Utilizzare il portale di esclusione per rimuovere se stessi dall'elenco dei mittenti bloccati
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: Viene visualizzato un messaggio di errore quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica si trova in Office 365? Se si ritiene di non dover ricevere tale messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365.
-ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica è in Microsoft 365, viene visualizzato un errore. Se si ritiene che non sia necessario ricevere il messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati.
+ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895084"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636405"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco mittenti bloccati di Office 365
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utilizzare il portale di esclusione per rimuovere se stessi dall'elenco dei mittenti bloccati
 
-Viene visualizzato un messaggio di errore quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica si trova in Office 365? Se si ritiene di non dover ricevere tale messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365.
+Quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica è in Microsoft 365, viene visualizzato un errore. Se si ritiene che non sia necessario ricevere il messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati.
 
-## <a name="what-is-the-office-365-blocked-senders-list"></a>Che cos'è l'elenco dei mittenti bloccati di Office 365?
+## <a name="what-is-the-blocked-senders-list"></a>Che cos'è l'elenco Mittenti bloccati?
 
-Microsoft utilizza l'elenco dei mittenti bloccati per proteggere i propri clienti da posta indesiderata, spoofing e attacchi di phishing. L'indirizzo IP del server di posta degli utenti, ovvero l'indirizzo utilizzato dal proprio server di posta per l'identificazione su Internet, è stato contrassegnato come potenziale minaccia in Office 365 per qualche motivo particolare. Quando l'indirizzo IP viene aggiunto all'elenco, Office 365 impedisce tutte le ulteriori comunicazioni tra tale indirizzo e un cliente qualsiasi tramite i datacenter.
+Microsoft utilizza l'elenco dei mittenti bloccati per proteggere i propri clienti da posta indesiderata, spoofing e attacchi di phishing. L'indirizzo IP del server di posta, ovvero l'indirizzo utilizzato dal server di posta elettronica per identificarsi su Internet, è stato contrassegnato come potenziale pericolo per Microsoft 365 per una serie di motivi. Quando Microsoft 365 aggiunge l'indirizzo IP all'elenco, impedisce tutte le comunicazioni successive tra l'indirizzo IP e uno qualsiasi dei clienti tramite i datacenter.
 
 Gli utenti scoprono di essere stati aggiunti all'elenco quando ricevono una risposta a un messaggio di posta elettronica che include un errore simile a quanto segue:
 
@@ -37,7 +37,7 @@ Gli utenti scoprono di essere stati aggiunti all'elenco quando ricevono una risp
 
 _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di posta.
 
-### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Per accedere al portale di esclusione di Office 365 e rimuoversi dall'elenco dei mittenti bloccati
+### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Per utilizzare il portale di delist per rimuovere se stessi dall'elenco dei mittenti bloccati
 
 1. In un browser Web, andare a [https://sender.office.com](https://sender.office.com).
 
@@ -53,7 +53,7 @@ _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di
 
 5. Nel portale di esclusione, fare clic su **Escludi indirizzo IP dall'elenco**.
 
-    Dopo la rimozione dell'indirizzo IP dall'elenco dei mittenti bloccati, i messaggi di posta elettronica dall'indirizzo IP verranno recapitati ai destinatari che utilizzano Office 365. Pertanto, assicurarsi che la posta elettronica inviata da tale indirizzo IP non sia offensiva o dannosa; in caso contrario, l'indirizzo IP verrà bloccato di nuovo.
+    Dopo che l'indirizzo IP è stato rimosso dall'elenco dei mittenti bloccati, i messaggi di posta elettronica provenienti da tale indirizzo IP verranno recapitati ai destinatari che utilizzano Microsoft 365. Pertanto, assicurarsi che la posta elettronica inviata da tale indirizzo IP non sia offensiva o dannosa; in caso contrario, l'indirizzo IP verrà bloccato di nuovo.
 
     > [!NOTE]
     > Potrebbe richiedere fino a 24 ore o i risultati possono variare notevolmente prima che vengano rimosse le restrizioni.

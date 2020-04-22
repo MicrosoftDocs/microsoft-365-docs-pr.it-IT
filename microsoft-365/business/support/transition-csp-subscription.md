@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, abbonamento CSP transizione
 ms.date: 11/01/2017
-ms.openlocfilehash: 0a30d80ad5217868fec81866ab1dc41013917e99
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: da56ce5bc70dfed5a3e86c739ef3c940b4ac1511
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504108"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635065"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transizione di un abbonamento Microsoft 365 Business CSP
 
@@ -91,7 +91,7 @@ Nella tabella seguente viene riepilogato l'impatto dei criteri di gestione delle
 | **Reimpostare il PIN in caso di errore di accesso** | Accesso limitato alle app | Nessuna restrizione di accesso a livello di app |
 | **Richiedere agli utenti di accedere nuovamente dopo un periodo di inattività delle app di Office** | Accesso richiesto | Nessuna richiesta di accesso |
 | **Negare l'accesso ai file in dispositivi jailbroken o rooted di lavoro** | Non è possibile accedere ai file di lavoro nei dispositivi jailbroken/rooted | L'accesso ai file di lavoro è consentito solo da dispositivi jailbroken/rooted |
-| **Consentire agli utenti di copiare il contenuto da app di Office in App personali** | Copia/Incolla limitato alle app disponibili come parte della sottoscrizione Microsoft 365 Business | Copia/Incolla disponibile per tutte le app |
+| **Consentire agli utenti di copiare il contenuto da app di Office in App personali** | Copia/incolla limitato alle app disponibili come parte dell'abbonamento a Microsoft 365 | Copia/Incolla disponibile per tutte le app |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>Impatto dei PC Windows 10 dopo la scadenza della sottoscrizione
 

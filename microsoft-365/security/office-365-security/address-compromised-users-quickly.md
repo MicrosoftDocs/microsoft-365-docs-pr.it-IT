@@ -1,5 +1,5 @@
 ---
-title: Indirizzare gli account utente compromessi con l'analisi e la risposta automatizzate in Office 365 Advanced Threat Protection
+title: Indirizzare gli account utente compromessi con indagini e risposte automatiche
 keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione, minacce, avanzato, minaccia, protezione, compromesso
 ms.author: deniseb
 author: denisebmsft
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Informazioni su come velocizzare il processo di rilevamento e indirizzamento degli account utente compromessi con le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: e5444b0b628be9acba029829b6fbb275b9c2f554
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280214"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635773"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Indirizzare gli account utente compromessi con indagini e risposte automatiche
 
@@ -60,11 +60,11 @@ Quando un account utente viene compromesso, vengono attivati gli avvisi. In alcu
 
 ### <a name="view-and-investigate-restricted-users"></a>Visualizzazione e analisi degli utenti con restrizioni
 
-Sono disponibili alcune opzioni per l'esplorazione di un elenco di utenti con restrizioni. Ad esempio, nel centro conformità & sicurezza di Office 365, è possibile accedere a**utenti con restrizioni**per la**Revisione** > delle **minacce** > . Nella procedura seguente viene descritta la struttura di spostamento tramite il dashboard **avvisi** , che consente di visualizzare diversi tipi di avvisi che potrebbero essere stati attivati.
+Sono disponibili alcune opzioni per l'esplorazione di un elenco di utenti con restrizioni. Ad esempio, nel centro sicurezza & conformità, è possibile accedere a**utenti con restrizioni**di**Verifica** > di **gestione** > delle minacce. Nella procedura seguente viene descritta la struttura di spostamento tramite il dashboard **avvisi** , che consente di visualizzare diversi tipi di avvisi che potrebbero essere stati attivati.
 
 1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso.
 
-2. Nel riquadro di spostamento, scegliere **** > **Dashboard**avvisi.
+2. Nel riquadro di spostamento, scegliere **Alerts** > **Dashboard**avvisi.
 
 3. Nell' **altro widget avvisi** scegliere utenti con **restrizioni**.<br/>
    ![Altri widget avvisi](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
@@ -74,7 +74,7 @@ Sono disponibili alcune opzioni per l'esplorazione di un elenco di utenti con re
 
 ### <a name="view-details-about-automated-investigations"></a>Visualizzare i dettagli sulle indagini automatizzate
 
-Al termine di un'indagine automatizzata, è possibile visualizzarne i dettagli e i risultati nel centro sicurezza & conformità di Office 365. Andare a > **indagini**sulla **gestione delle minacce**e quindi selezionare un'analisi per visualizzarne i dettagli.
+Dopo aver avviato un'indagine automatizzata, è possibile visualizzare i dettagli e i risultati nel centro sicurezza & conformità. Andare a > **indagini**sulla **gestione delle minacce**e quindi selezionare un'analisi per visualizzarne i dettagli.
 
 Per ulteriori informazioni, vedere [visualizzare i dettagli di un'indagine](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 

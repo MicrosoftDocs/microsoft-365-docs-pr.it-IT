@@ -15,19 +15,19 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: "Riepilogo: configurare un sito del team di SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: "Riepilogo: configurare un sito del team di SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo e di testing di Microsoft 365."
+ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083005"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634123"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test
 
- **Riepilogo:** Configurare un sito del team di SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo/test di Office 365.
+ **Riepilogo:** Configurare un sito del team di SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo e di testing di Microsoft 365.
 
-I siti del team di SharePoint online in Office 365 sono percorsi per la collaborazione utilizzando una raccolta documenti comune, un blocco appunti di OneNote e altri servizi. In molti casi, è necessario un accesso esteso e una collaborazione tra dipartimenti o organizzazioni. Tuttavia, in alcuni casi, si desidera controllare in modo rigoroso l'accesso e le autorizzazioni per la collaborazione tra un piccolo gruppo di persone.
+I siti del team di SharePoint online in Microsoft 365 sono percorsi per la collaborazione utilizzando una raccolta documenti comune, un blocco appunti di OneNote e altri servizi. In molti casi, è necessario un accesso esteso e una collaborazione tra dipartimenti o organizzazioni. Tuttavia, in alcuni casi, si desidera controllare in modo rigoroso l'accesso e le autorizzazioni per la collaborazione tra un piccolo gruppo di persone.
 
 L'accesso ai siti del team di SharePoint Online e gli elementi che gli utenti possono eseguire sono controllati da gruppi e livelli di autorizzazione di SharePoint. Per impostazione predefinita, i siti di SharePoint Online hanno tre livelli di accesso:
 
@@ -43,9 +43,9 @@ In questo articolo viene illustrata la configurazione di un sito del team di Sha
 
 - Solo il creatore del sito e i membri di un gruppo Admins per il sito possono eseguire l'amministrazione del sito, che include la modifica delle autorizzazioni a livello di sito.
 
-Sono disponibili tre fasi per la configurazione di un sito del team di SharePoint Online isolato nell'ambiente di sviluppo/test di Office 365:
+Sono disponibili tre fasi per la configurazione di un sito del team di SharePoint Online isolato nell'ambiente di sviluppo/test di Microsoft 365:
 
-1. Creare l'ambiente di sviluppo/testing di Office 365
+1. Creare l'ambiente di sviluppo e di testing di Microsoft 365.
 
 2. Creare gli utenti e i gruppi per ProjectX.
 
@@ -54,22 +54,22 @@ Sono disponibili tre fasi per la configurazione di un sito del team di SharePoin
 > [!TIP]
 > Fare clic [qui](https://aka.ms/catlgstack) per consultare una mappa di tutti gli articoli relativi alla guida del laboratorio di testing cloud di One Microsoft.
 
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Office 365 aziendale leggero o simulato
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>Fase 1: creare l'ambiente di sviluppo/test di Microsoft 365 per l'organizzazione leggera o simulata
 
-Se si desidera creare un sito del team di SharePoint Online isolato in modo semplice con i requisiti minimi, seguire le istruzioni riportate nelle fasi 2 e 3 dell' [ambiente di sviluppo/test di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Se si desidera creare un sito del team di SharePoint Online isolato in modo semplice con i requisiti minimi, seguire le istruzioni riportate nelle fasi 2 e 3 dell' [ambiente di sviluppo/test di Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
 
-Se si desidera creare un sito del team di SharePoint Online isolato in una configurazione aziendale simulata, seguire le istruzioni in [dirsync per l'ambiente di sviluppo/test di Office 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+Se si desidera creare un sito del team di SharePoint Online isolato in una configurazione aziendale simulata, seguire le istruzioni in [dirsync per l'ambiente di sviluppo/test di Microsoft 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
 
 > [!NOTE]
 > La creazione di un sito di SharePoint Online isolato non richiede l'ambiente di sviluppo e di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Viene fornito come opzione in modo che sia possibile testare un sito di SharePoint Online isolato e sperimentarlo in un ambiente che rappresenta un'organizzazione tipica.
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Fase 2: creare account utente e gruppi di accesso
 
-Utilizzare le istruzioni riportate in [Connect to office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) to Connect to your Office 365 Trail Subscription with your Global Administrator account from:
+Utilizzare le istruzioni riportate in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) per connettersi alla sottoscrizione di valutazione con l'account di amministratore globale da:
 
-- Dal computer (per l'ambiente di sviluppo/test di Office 365 leggero).
+- Il computer (per l'ambiente di sviluppo/test di Microsoft 365 Lightweight).
 
-- Dalla macchina virtuale CLIENT1 (per l'ambiente di sviluppo/test di Office 365 aziendale simulato).
+- La macchina virtuale CLIENT1 (per l'ambiente di sviluppo/test di Microsoft 365 Enterprise simulato).
 
 Per creare i nuovi gruppi di accesso per il sito del team di SharePoint Online di ProjectX, eseguire i comandi seguenti dal prompt del modulo di Windows Azure Active Directory per Windows PowerShell:
 
@@ -142,13 +142,13 @@ Nella figura 1 vengono visualizzati i gruppi di accesso e la relativa appartenen
 
 **Figura 1**
 
-![I gruppi di Office 365 e la loro appartenenza a un sito di gruppo di SharePoint Online isolato](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![Gruppi di Microsoft 365 e loro appartenenza a un sito di gruppo di SharePoint Online isolato](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Fase 3: creare un nuovo sito del team di SharePoint Online ProjectX e isolarlo
 
 Per creare un sito del team di SharePoint Online per ProjectX, eseguire le operazioni seguenti:
 
-1. Utilizzando un browser sul computer locale (configurazione lightweight) o su CLIENT1 (configurazione Enterprise simulata), accedere al portale di Office 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) utilizzando l'account di amministratore globale.
+1. Utilizzando un browser sul computer locale (configurazione lightweight) o su CLIENT1 (configurazione Enterprise simulata), accedere all'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) utilizzando l'account di amministratore globale.
 
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
 
@@ -216,7 +216,7 @@ Ora dimostreremo l'accesso utilizzando l'account utente lead designer:
 
 2. Fare clic sul nome dell'amministratore globale, quindi fare clic su **Esci.**
 
-3. Accedere al portale di Office 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) utilizzando il nome dell'account del progettista principale e la relativa password.
+3. Accedere all'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) utilizzando il nome dell'account del progettista principale e la relativa password.
 
 4. Nell'elenco dei riquadri fare clic su **SharePoint**.
 
@@ -246,7 +246,7 @@ Ora dimostreremo l'accesso utilizzando l'account utente lead designer:
 
 Ora dimostreremo l'accesso utilizzando l'account utente Development VP:
 
-1. Accedere al portale di Office 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) utilizzando il nome dell'account Development VP e la relativa password.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) utilizzando il nome dell'account Development VP e la relativa password.
 
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
 
@@ -262,7 +262,7 @@ Ora dimostreremo l'accesso utilizzando l'account utente Development VP:
 
 Ora dimostreremo l'accesso con un account utente che non dispone di autorizzazioni:
 
-1. Accedere al portale di Office 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) utilizzando il nome dell'account utente 3 e la relativa password.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) utilizzando il nome dell'account utente 3 e la relativa password.
 
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
 
@@ -290,7 +290,7 @@ Quando si è pronti a distribuire un sito del team di SharePoint Online isolato 
 
 [Ambiente di sviluppo/test della configurazione di base](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
 
-[Ambiente di sviluppo/test di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[Ambiente di sviluppo/test di Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
 
 [Adozione del cloud e soluzioni ibride](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: In questo argomento viene illustrato come configurare Microsoft Exchange Online Protection (EOP). Se si è arrivati qui dalla configurazione guidata dei domini di Office 365, tornare alla configurazione guidata dei domini di Office 365 se non si desidera utilizzare Exchange Online Protection. Per ulteriori informazioni su come configurare i connettori, vedere Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 6686e95f343a116a53991957e7746ef841e858ba
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 9a2c876ac7696adfcabf87d4ad13e29374509f1b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081233"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638309"
 ---
 # <a name="set-up-your-eop-service"></a>Configurare il servizio Exchange Online Protection
 
@@ -30,7 +30,7 @@ In questo argomento viene illustrato come configurare Microsoft Exchange Online 
 
 - Tempo stimato per il completamento di questa attività: 1 ora
 
-- Per configurare i connettori, l'account deve essere un amministratore globale di Office 365 o un amministratore aziendale di Exchange (gruppo dei ruoli di gestione dell'organizzazione). Per informazioni, vedere [Feature Permissions in EOP](feature-permissions-in-eop.md).
+- Per configurare i connettori, è necessario che l'account sia un amministratore globale o che sia membro di Exchange Company Administrator (gruppo di ruoli di gestione dell'organizzazione). Per informazioni, vedere [Feature Permissions in EOP](feature-permissions-in-eop.md).
 
 - Se non si è iscritti a EOP, visitare [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) e scegliere di acquistare o provare il servizio.
 
@@ -54,11 +54,11 @@ Prima di configurare il flusso di posta da e verso il servizio EOP, si consiglia
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Passaggio 3: Configurazione del flusso di posta tramite EAC
 
-Creare i connettori nell'Interfaccia di amministrazione di Exchange (EAC) per abilitare il flusso di posta tra EOP e i server di posta locali. Per istruzioni dettagliate, vedere [Set up connectors to route mail between Office 365 and your own email servers](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
+Creare i connettori nell'Interfaccia di amministrazione di Exchange (EAC) per abilitare il flusso di posta tra EOP e i server di posta locali. Per istruzioni dettagliate, vedere [configurare i connettori per instradare la posta tra microsoft 365 e i propri server di posta elettronica](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
-Controllare il flusso di posta tra il servizio e l'ambiente. Per ulteriori informazioni, vedere [verificare il flusso di posta convalidando i connettori di Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
+Controllare il flusso di posta tra il servizio e l'ambiente. Per ulteriori informazioni, vedere [verificare il flusso di posta convalidando i connettori Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Passaggio 4: Consentire alla porta in ingresso 25 accesso SMTP
 
@@ -75,13 +75,13 @@ Se non si intende spostare i messaggi nella cartella posta indesiderata di ciasc
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Passaggio 6: utilizzare l'interfaccia di amministrazione di Microsoft 365 per puntare il record MX a EOP
 
-Seguire i passaggi di configurazione del dominio di Office 365 per aggiornare il record MX relativo al proprio dominio. In questo modo, la posta elettronica in ingresso attraversa EOP. Assicurarsi di puntare il record MX direttamente verso EOP, invece di consentire a un servizio di filtro di terze parti di inoltrare la posta elettronica in EOP. Per ulteriori informazioni, fare di nuovo riferimento a [Creare record DNS per Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Seguire la procedura di configurazione del dominio per aggiornare il record MX per il dominio, in modo che il flusso di posta elettronica in ingresso attraversi EOP. Fare in modo che il record MX punti direttamente a EOP anziché disporre di un messaggio di posta elettronica di inoltro di terze parti a EOP. Per ulteriori informazioni, è possibile fare riferimento a [create DNS Records for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
 A questo punto, l'erogazione del servizio è stata verificata per un connettore locale in uscita adeguatamente configurato ed è stato appurato che il record MX punta a EOP. Ora è possibile scegliere di eseguire ulteriori test per verificare che un messaggio di posta elettronica sia recapitato correttamente dal servizio all'ambiente locale:
 
-- Controllare il flusso di posta tra il servizio e l'ambiente. Per ulteriori informazioni, vedere [verificare il flusso di posta convalidando i connettori di Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
+- Controllare il flusso di posta tra il servizio e l'ambiente. Per ulteriori informazioni, vedere [verificare il flusso di posta convalidando i connettori Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).
 
 - Inviare un messaggio di posta elettronica da un account di posta elettronica basato su Web a un destinatario di posta dell'organizzazione il cui dominio corrisponde al dominio aggiunto al servizio. Verificare il recapito del messaggio alla cassetta postale locale utilizzando Microsoft Outlook o un altro client di posta elettronica,
 

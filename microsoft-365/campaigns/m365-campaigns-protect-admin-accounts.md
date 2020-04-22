@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come configurare e proteggere gli account di amministratore.
-ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633754"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633654"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteggere gli account di amministratore
 
@@ -35,12 +35,12 @@ Poiché gli account di amministrazione sono dotati di privilegi elevati, sono ob
 - Informazioni su come configurare un account di amministratore aggiuntivo per le emergenze.
 - Come proteggere tali account.
  
-Quando ti iscrivi a Microsoft 365 business e immetti le tue informazioni, diventi automaticamente l'amministratore globale. Un amministratore globale ha il controllo definitivo degli account utente e di tutte le altre impostazioni nell'interfaccia di amministrazione di Microsoft, ma esistono diversi tipi di account di amministrazione con vari gradi di accesso. Vedere [About admin Roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per informazioni sui diversi livelli di accesso per ogni tipo di ruolo di amministratore.
+Quando ti iscrivi a Microsoft 365 e immetti le tue informazioni, diventi automaticamente l'amministratore globale. Un amministratore globale ha il controllo definitivo degli account utente e di tutte le altre impostazioni nell'interfaccia di amministrazione di Microsoft, ma esistono diversi tipi di account di amministrazione con vari gradi di accesso. Vedere [About admin Roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per informazioni sui diversi livelli di accesso per ogni tipo di ruolo di amministratore.
 
 
 ## <a name="create-additional-admin-accounts"></a>Creare account di amministratore aggiuntivi
 
-Utilizzare gli account di amministrazione solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per l'utilizzo regolare delle app di Office e utilizzare il proprio account amministrativo solo quando necessario per gestire gli account e i dispositivi e durante la lavorazione di altre funzioni di amministratore. È inoltre consigliabile rimuovere la licenza di Microsoft 365 business dagli account di amministrazione in modo che non sia necessario pagarli.
+Utilizzare gli account di amministrazione solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per l'utilizzo regolare delle app di Office e utilizzare il proprio account amministrativo solo quando necessario per gestire gli account e i dispositivi e durante la lavorazione di altre funzioni di amministratore. È inoltre consigliabile rimuovere la licenza Microsoft 365 dagli account di amministrazione in modo che non sia necessario pagarli.
 
 Sarà necessario configurare almeno un account di amministratore globale aggiuntivo per concedere l'accesso all'amministratore a un altro dipendente attendibile. È inoltre possibile creare account amministratore distinti per la gestione degli utenti (questo ruolo è denominato **amministratore Gestione utenti**). Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 

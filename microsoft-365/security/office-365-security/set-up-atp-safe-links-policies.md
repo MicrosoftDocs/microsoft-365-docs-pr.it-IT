@@ -17,19 +17,19 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: a1a78afe7480ed9f68f8cd893c00876872317785
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 31401e8f890f329f5724347deec2d85b6e473552
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230981"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638333"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-I [collegamenti sicuri di ATP](atp-safe-links.md), una funzionalità di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), consentono di proteggere l'organizzazione da collegamenti dannosi utilizzati per il phishing e altri attacchi. Se si dispone delle [autorizzazioni necessarie per il Centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md), è possibile configurare i criteri dei collegamenti sicuri di ATP per garantire che, quando gli utenti fanno clic su indirizzi Web (URL), l'organizzazione sia protetta. I criteri dei collegamenti sicuri di ATP possono essere configurati per analizzare gli URL nella posta elettronica e negli URL nei documenti di Office.
+I [collegamenti sicuri di ATP](atp-safe-links.md), una funzionalità di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), consentono di proteggere l'organizzazione da collegamenti dannosi utilizzati per il phishing e altri attacchi. Se si dispone delle [autorizzazioni necessarie per il centro &amp; sicurezza e conformità](permissions-in-the-security-and-compliance-center.md), è possibile configurare i criteri dei collegamenti sicuri di ATP per garantire che, quando gli utenti fanno clic su indirizzi Web (URL), l'organizzazione sia protetta. I criteri dei collegamenti sicuri di ATP possono essere configurati per analizzare gli URL nella posta elettronica e negli URL nei documenti di Office.
 
 Con i collegamenti sicuri di ATP abilitati, se un utente fa clic su un collegamento in un messaggio di posta elettronica e l'URL è stato bloccato dall'elenco URL bloccato personalizzato dell'organizzazione o se l'URL è determinato come dannoso, verrà aperta una pagina di avviso.
   
@@ -53,17 +53,17 @@ Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosin
 
     |Ruolo  |Dove/come assegnato  |
     |---------|---------|
-    |Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .         |
+    |amministratore globale |La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .         |
     |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
     |Gestione organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
-    Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions &amp; in the Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Verificare che i client di Office siano configurati per l'utilizzo dell' [autenticazione moderna](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (per la protezione dei collegamenti sicuri di ATP nei documenti di Office).
     
 - Informazioni [sulle opzioni dei criteri collegamenti sicuri di ATP](#step-4-learn-about-atp-safe-links-policy-options) (in questo articolo). 
 
-- Consentono fino a 30 minuti affinché il criterio nuovo o aggiornato venga esteso a tutti i datacenter di Office 365.
+- Consentono fino a 30 minuti affinché il criterio nuovo o aggiornato venga esteso a tutti i datacenter di Microsoft 365.
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Passaggio 2: definire (o rivedere) il criterio dei collegamenti sicuri ATP che si applica a tutti
 
@@ -99,9 +99,7 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
 
     - Nella casella **Descrizione** Digitare una descrizione analoga, consente di impedire agli utenti di alcuni gruppi di fare clic su un sito Web senza verifica dei collegamenti sicuri di ATP.
 
-    - **In selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi** **, scegliere attivato**.
-
-    - Se si vede **selezionare l'azione per gli URL sconosciuti o potenzialmente dannosi all'interno di Microsoft teams** **, scegliere attivato**. <br/>
+    - Nella sezione **selezionare l'azione** scegliere **attivato.**
 
     - Selezionare **applica analisi degli URL in tempo reale per collegamenti sospetti e collegamenti che puntano a file** se si desidera abilitare la detonazione degli URL per gli URL sospetti e che puntano al file (scelta consigliata). E selezionare **Attendi il completamento dell'analisi degli URL prima di recapitare il messaggio** se si desidera che gli utenti ricevano solo messaggi dopo che gli URL sono stati completamente analizzati.
 
@@ -116,7 +114,7 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
 6. Fare clic su **Salva**.
 
 > [!NOTE]
-> I criteri per i collegamenti sicuri ATP con priorità maggiore avranno la precedenza. Se un utente è soggetto a due o più criteri, solo il criterio di priorità più alta avrà effetto.
+> I criteri per i collegamenti sicuri ATP con priorità maggiore avranno la precedenza. Se un utente è soggetto a due o più poliziotti, solo il criterio di priorità più alta avrà effetto.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Passaggio 4: informazioni sulle opzioni dei criteri collegamenti sicuri di ATP
 
@@ -131,7 +129,7 @@ Le opzioni dei criteri predefinite si applicano a tutti gli utenti dell'organizz
 |Questa opzione  |Produce questo risultato  |
 |---------|---------|
 | **Blocca gli URL seguenti** <br/>    | Consente all'organizzazione di disporre di un elenco personalizzato di URL che vengono bloccati automaticamente. Quando gli utenti fanno clic su un URL in questo elenco, verranno indirizzati a una [pagina di avviso](atp-safe-links-warning-pages.md) che spiega perché l'URL è bloccato. Per ulteriori informazioni, vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di Office 365 ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
-| **Office 365 ProPlus, Office per iOS e Android** <br/>    | Quando questa opzione è selezionata, la protezione dei collegamenti sicuri ATP viene applicata agli URL nei file di Word, Excel e PowerPoint su Windows o Mac OS, messaggi di posta elettronica in Outlook, documenti di Office su dispositivi iOS o Android, file di Visio 2016 su Windows e file aperti nelle versioni Web delle app di Office (Word, PowerPoint, Excel, Outlook e OneNote), purché l'utente abbia eseguito l'accesso a Office 365. |
+| **Microsoft 365 Apps for Enterprise, Office per iOS e Android** <br/>    | Quando questa opzione è selezionata, la protezione dei collegamenti sicuri ATP viene applicata agli URL nei file di Word, Excel e PowerPoint su Windows o Mac OS, messaggi di posta elettronica in Outlook, documenti di Office su dispositivi iOS o Android, file di Visio 2016 su Windows e file aperti nelle versioni Web delle app di Office (Word, PowerPoint, Excel, Outlook e OneNote), purché l'utente abbia eseguito l'accesso a Office 365. |
 | **Non monitorare quando gli utenti fanno clic su collegamenti sicuri di ATP** <br/>  | Quando questa opzione è selezionata, fare clic su dati per gli URL in Word, Excel, PowerPoint, documenti di Visio e messaggi di posta elettronica di Outlook non archiviati.  <br/> |
 |**Non consentire agli utenti di fare clic su collegamenti sicuri ATP all'URL originale** <br/> |Quando questa opzione è selezionata, gli utenti non possono continuare a passare una [pagina di avviso](atp-safe-links-warning-pages.md) a un URL determinato come dannoso.  <br/> |
 
@@ -141,10 +139,9 @@ Le opzioni dei criteri predefinite si applicano a tutti gli utenti dell'organizz
 |---------|---------|
 |**Off** <br/> |Non analizza gli URL nei messaggi di posta elettronica.  <br/> Consente di definire una regola di eccezione, ad esempio una regola che non analizza gli URL nei messaggi di posta elettronica per uno specifico gruppo di destinatari.  <br/> |
 |**Attivato** <br/> |Riscrive gli URL in modo che gli utenti vengano instradati tramite la protezione dei collegamenti sicuri ATP quando gli utenti fanno clic su URL nei messaggi di posta elettronica e attivano i collegamenti sicuri ATP all'interno di Outlook (C2R)  <br/> Verifica un URL quando si fa clic su un elenco di URL bloccati o dannosi e attiva una detonazione dell'URL in background in modo asincrono se l'URL non ha una reputazione valida.  <br/> |
-|**URL sconosciuti o potenzialmente dannosi all'interno di Microsoft Teams** |Quando questa opzione è disponibile e selezionata, attiva i collegamenti sicuri di ATP nelle chat e nei canali di Microsoft teams. Quando un utente fa clic su un URL in una chat o un canale di Microsoft teams, il collegamento viene controllato. L'URL viene controllato in base a un elenco di URL bloccati o dannosi e attiva una detonazione dell'URL in background in modo asincrono se l'URL non ha una reputazione valida. |
 |**Applicazione dell'analisi degli URL in tempo reale per collegamenti e collegamenti sospetti che puntano a file** <br/> |Quando questa opzione è selezionata, vengono analizzati gli URL e i collegamenti sospetti che puntano al contenuto scaricabile.  <br/> |
 |**Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio** <br/> |Quando si seleziona questa opzione, i messaggi che contengono gli URL da analizzare verranno mantenuti fino a quando gli URL avranno terminato l'analisi e verranno confermati come sicuri prima che i messaggi vengano recapitati.  <br/> |
-|**Applicazione di collegamenti sicuri ai messaggi inviati all'interno dell'organizzazione** <br/> | Quando questa opzione è selezionata, la protezione dei collegamenti sicuri di ATP viene applicata ai messaggi di posta elettronica inviati tra gli utenti dell'organizzazione, purché gli account di posta elettronica siano ospitati in Office 365.  <br/> |
+|**Applicazione di collegamenti sicuri ai messaggi inviati all'interno dell'organizzazione** <br/> | Quando questa opzione è disponibile e selezionata, la protezione dei collegamenti sicuri di ATP viene applicata ai messaggi di posta elettronica inviati tra gli utenti dell'organizzazione, purché gli account di posta elettronica siano ospitati in Office 365.  <br/> |
 |**Non monitorare i clic dell'utente** <br/> |Quando questa opzione è selezionata, fare clic su dati per gli URL in messaggi di posta elettronica da mittenti esterni non archiviati. URL fare clic su rilevamento per i collegamenti all'interno dei messaggi di posta elettronica inviati all'interno dell'organizzazione non è attualmente supportato.  <br/> |
 |**Non consentire agli utenti di fare clic sull'URL originale** <br/> |Quando questa opzione è selezionata, gli utenti non possono continuare a passare una [pagina di avviso](atp-safe-links-warning-pages.md) a un URL determinato come dannoso.  <br/> |
 |**Non riscrivere gli URL seguenti** <br/> |Lascia gli URL così come sono. Mantiene un elenco personalizzato di URL sicuri che non devono essere analizzati per uno specifico gruppo di destinatari di posta elettronica nell'organizzazione.  Per ulteriori informazioni, vedere [configurare un elenco di URL "non riscrivere" personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , incluse le modifiche recenti al supporto per gli\*asterischi con caratteri jolly ().  <br/> |

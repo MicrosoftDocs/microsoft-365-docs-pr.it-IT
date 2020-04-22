@@ -1,5 +1,5 @@
 ---
-title: Acquistare o modificare un componente aggiuntivo per Office 365 per le aziende
+title: Acquistare o modificare un componente aggiuntivo
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,19 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
-description: Informazioni su come acquistare un componente aggiuntivo per aggiungere ulteriori funzionalità all'abbonamento a Office 365 for business. È inoltre possibile aggiornare e rimuovere un componente aggiuntivo.
+description: Informazioni su come acquistare un componente aggiuntivo per aggiungere ulteriori funzionalità all'abbonamento a Microsoft 365 for business. È inoltre possibile aggiornare e rimuovere un componente aggiuntivo.
 ms.custom: okr_SMB
-ms.openlocfilehash: 3bd7648d2db9af262df6540c8133871d3736790e
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 011ed188f741f2f026b452a2ecfd8b8c1b01c66e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142276"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634921"
 ---
-# <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Acquistare o modificare un componente aggiuntivo per Office 365 per le aziende
+# <a name="buy-or-edit-an-add-on"></a>Acquistare o modificare un componente aggiuntivo
 
-Per diversi piani di Office 365 per le aziende sono disponibili componenti aggiuntivi che è possibile acquistare per l'abbonamento. I componenti aggiuntivi offrono altre funzionalità nell'abbonamento per cui vengono acquistati.
+Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiuntivi che è possibile acquistare per l'abbonamento. I componenti aggiuntivi offrono altre funzionalità nell'abbonamento per cui vengono acquistati.
+
 
 ## <a name="buy-an-add-on"></a>Acquistare un componente aggiuntivo
 
@@ -97,13 +98,14 @@ Per diversi piani di Office 365 per le aziende sono disponibili componenti aggiu
 
 ::: moniker-end
 
+
 ## <a name="update-an-add-on"></a>Aggiornare un componente aggiuntivo
 
-I passaggi da eseguire per aggiornare un componente aggiuntivo dipendono dal fatto che il componente aggiuntivo sia un componente aggiuntivo tradizionale o un componente aggiuntivo autonomo.
+I passaggi da eseguire per aggiornare un componente aggiuntivo dipendono dal fatto che il componente aggiuntivo sia un componente aggiuntivo tradizionale o un componente aggiuntivo autonomo. 
 
 I *componenti aggiuntivi tradizionali* sono collegati a una sottoscrizione specifica. Se si annulla l'abbonamento, viene annullato anche il componente aggiuntivo associato.
   
-I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione specifica. I componenti aggiuntivi autonomi vengono visualizzati come sottoscrizione distinta nella pagina **prodotti & Services** e hanno la data di scadenza. È possibile gestire un componente aggiuntivo autonomo allo stesso modo in cui si gestisce qualsiasi altra sottoscrizione.
+I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione specifica. I componenti aggiuntivi autonomi vengono visualizzati come sottoscrizione distinta nella pagina **abbonamenti** (o nella pagina **prodotti & Servizi** del nuovo interfaccia di amministrazione) e hanno la data di scadenza. È possibile gestire un componente aggiuntivo autonomo allo stesso modo in cui si gestisce qualsiasi altra sottoscrizione.
   
 ### <a name="update-a-traditional-add-on"></a>Aggiornare un componente aggiuntivo tradizionale
 
@@ -120,6 +122,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 5. Immettere la modifica della quantità desiderata per l'abbonamento, quindi selezionare **Invia modifica**.
 
 ::: moniker-end
+
 
 ::: moniker range="o365-germany"
 
@@ -164,6 +167,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
     > È anche possibile usare le frecce in su e in giù per cambiare la quantità delle licenze utente oppure immettere semplicemente il numero nella casella.
   
     ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+
 
 ::: moniker-end
 
@@ -209,29 +213,32 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker-end
 
+
 ## <a name="remove-an-add-on"></a>Rimuovere un componente aggiuntivo
 
 È possibile annullare un componente aggiuntivo autonomo allo stesso modo in cui si [Annulla un abbonamento](subscriptions/cancel-your-subscription.md). In alternativa, è possibile impostare la **fatturazione ricorrente** su disattivata per un componente aggiuntivo autonomo utilizzando la procedura precedente. Tuttavia, non è possibile rimuovere un componente aggiuntivo tradizionale dopo che è stato acquistato. Se è necessario rimuovere un componente aggiuntivo tradizionale, [contattare il supporto tecnico](../admin/contact-support-for-business-products.md).
   
 ## <a name="available-add-ons"></a>Componenti aggiuntivi disponibili
 
-Nella tabella seguente sono elencati i componenti aggiuntivi disponibili per le varie edizioni di Office 365 for business.
+Nella tabella seguente sono elencati i componenti aggiuntivi disponibili per le diverse edizioni di Microsoft 365 for business.
   
 Per informazioni sui componenti aggiuntivi di Skype for Business, vedere [Licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
   
+****
+
 |**Componente aggiuntivo**|**Disponibile in questi abbonamenti**|
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |[Protezione avanzata dalle minacce di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Office 365 Business Essentials  <br/>  Office 365 Business Premium  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
+|[Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 business standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|Spazio di archiviazione file aggiuntivo per Office 365  <br/> | Office 365 Business  <br/>  Office 365 Business Essentials  <br/>  Office 365 Business Premium  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office per il Web con SharePoint piano 1  <br/>  Office per il Web con SharePoint piano 2  <br/>  SharePoint Online Piano 1  <br/>  SharePoint Online Piano 2  <br/> |
-|Sistema telefonico in Office 365  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
-|Audioconferenza in Office 365  <br/> |  Office 365 Business Essentials <br/> Office 365 Business Premium <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 senza Audioconferenza <br/> Microsoft 365 Business <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
-|Crediti per la comunicazioni in Office 365  <br/> | Office 365 Enterprise E5  <br/> |
-|Piano per chiamate nazionali in Office 365  <br/> | Office 365 Enterprise E5  <br/> |
-|Piano per chiamate internazionali in Office 365  <br/> | Office 365 Enterprise E5  <br/> |
+|Spazio di archiviazione file aggiuntivo per Office 365  <br/> | Microsoft 365 Apps for business  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 business standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office per il Web con SharePoint piano 1  <br/>  Office per il Web con SharePoint piano 2  <br/>  SharePoint Online Piano 1  <br/>  SharePoint Online Piano 2  <br/> |
+|Sistema telefonico  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
+|Audioconferenza  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 business standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 senza Audioconferenza <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Credito per la comunicazione  <br/> | Office 365 Enterprise E5  <br/> |
+|Piano per le chiamate nazionali <br/> | Office 365 Enterprise E5  <br/> |
+|Piani per le chiamate internazionali  <br/> | Office 365 Enterprise E5  <br/> |
   
 ## <a name="related-articles"></a>Articoli correlati
 

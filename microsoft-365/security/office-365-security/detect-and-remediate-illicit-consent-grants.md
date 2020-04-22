@@ -1,5 +1,5 @@
 ---
-title: Rilevare e rimediare a concessioni di consenso illecite in Office 365
+title: Rilevare e correggere le concessioni di consenso illecite
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710525"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637605"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
+# <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecite
 
 **Riepilogo**  Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
 
@@ -38,11 +38,11 @@ Questi attacchi sfruttano un modello di interazione che presuppone che l'entità
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Che cosa comporta un attacco di consenso illecito per l'assenso in Office 365?
 
-È necessario eseguire una ricerca nel **Registro di controllo** di Office 365 per individuare i segni, denominati anche indicatori di compromesso (IOC) di questo attacco. Per le organizzazioni con molte applicazioni registrate in Azure e una base di utenti di grandi dimensioni, la procedura consigliata consiste nell'esaminare le concessioni di consenso delle organizzazioni su base settimanale.
+È necessario eseguire una ricerca nel **Registro di controllo** per individuare i segni, denominati anche indicatori di compromesso (IOC) di questo attacco. Per le organizzazioni con molte applicazioni registrate in Azure e una base di utenti di grandi dimensioni, la procedura consigliata consiste nell'esaminare le concessioni di consenso delle organizzazioni su base settimanale.
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Passaggi per individuare i segni di questo attacco
 
-1. Aprire il **Centro sicurezza e conformità** nel tenant di Office 365.
+1. Aprire il **Centro sicurezza & conformità** nel tenant.
 
 2. Passare a **ricerca** e selezionare **Ricerca log di controllo**.
 
@@ -53,7 +53,7 @@ Questi attacchi sfruttano un modello di interazione che presuppone che l'entità
 5. Fare clic sul risultato per visualizzare i dettagli dell'attività. Fare clic su **altre informazioni** per ottenere informazioni dettagliate sull'attività. Controllare se IsAdminContent è impostato su true.
 
 > [!NOTE]
-> * La voce del registro di controllo corrispondente viene visualizzata nei risultati della ricerca dopo un evento di 30 minuti fino a 24 ore. <br/><br/> Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Office 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * La voce del registro di controllo corrispondente viene visualizzata nei risultati della ricerca dopo un evento di 30 minuti fino a 24 ore. <br/><br/> Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Microsoft 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 Se questo valore è impostato su true, indica che un utente con accesso amministratore globale può aver concesso l'accesso esteso ai dati. Se questa operazione non è prevista, eseguire le operazioni necessarie per [confermare un attacco](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Come confermare un attacco
@@ -121,7 +121,7 @@ Il modo più semplice per verificare l'attacco di concessione di consenso illeci
 
 Lo script produce un file denominato Permissions. csv. Eseguire la procedura seguente per cercare le autorizzazioni di autorizzazione per l'applicazione illecite:
 
-1. Nella colonna ConsentType (colonna G) cercare il valore "AllPrinciples". L'autorizzazione AllPrincipals consente all'applicazione client di accedere al contenuto di tutti nel contratto di locazione. Le applicazioni di Office 365 native richiedono questa autorizzazione per funzionare correttamente. Tutte le applicazioni non Microsoft con questa autorizzazione devono essere esaminate con attenzione.
+1. Nella colonna ConsentType (colonna G) cercare il valore "AllPrinciples". L'autorizzazione AllPrincipals consente all'applicazione client di accedere al contenuto di tutti nel contratto di locazione. Le applicazioni native di Microsoft 365 hanno bisogno di questa autorizzazione per funzionare correttamente. Tutte le applicazioni non Microsoft con questa autorizzazione devono essere esaminate con attenzione.
 
 2. Nella colonna autorizzazione (colonna F) esaminare le autorizzazioni che ogni applicazione delegata deve soddisfare. Cercare l'autorizzazione "lettura" e "scrittura" o "*. All "autorizzazione e verificarne con attenzione perché potrebbero non essere appropriate.
 
@@ -131,7 +131,7 @@ Lo script produce un file denominato Permissions. csv. Eseguire la procedura seg
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinare l'ambito dell'attacco
 
-Dopo aver completato l'inventario dell'applicazione, esaminare il **Registro di controllo** di Office 365 per determinare l'ambito completo della violazione. Cercare negli utenti coinvolti, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni dell'app. È possibile eseguire una ricerca nel **Registro di controllo** nel [Centro sicurezza e conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+Dopo aver completato l'inventario dell'applicazione, esaminare il **Registro di controllo** per determinare l'ambito completo della violazione. Cercare negli utenti coinvolti, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni dell'app. È possibile eseguire una ricerca nel **Registro di controllo** nel [Centro sicurezza e conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 > [!IMPORTANT]
 > Il controllo [delle cassette postali](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) e il [controllo delle attività per gli amministratori e gli utenti](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) devono essere stati abilitati prima dell'attacco per ottenere queste informazioni.
@@ -158,9 +158,9 @@ Dopo aver identificato un'applicazione con autorizzazioni illecite, sono disponi
 
 - È possibile disattivare le applicazioni integrate per il tuo contratto di locazione. Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant. Ciò impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa. Questo non è fortemente consigliato perché compromette gravemente la capacità degli utenti di essere produttivi con le applicazioni di terze parti. È possibile eseguire questa operazione attenendosi alla procedura descritta in [attivazione o disattivazione delle app integrate](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Protezione di Microsoft 365 come un Cybersecurity Pro
 
-L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti. Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.
+La sottoscrizione Microsoft 365 include un potente set di funzionalità di sicurezza che è possibile utilizzare per proteggere i dati e gli utenti. Utilizzare la [Roadmap di sicurezza di microsoft 365-priorità principali per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate di Microsoft consigliati per la protezione del tenant Microsoft 365.
 
 - Attività da eseguire i primi 30 giorni. Queste hanno effetto immediato e sono a basso impatto per gli utenti.
 

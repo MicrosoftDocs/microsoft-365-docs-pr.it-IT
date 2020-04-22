@@ -14,16 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Gli utenti possono imparare a gestire i propri acquisti in modalità self-service.
-ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142140"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636640"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gestire acquisti in modalità self-service (utenti)
 
 Come utente, è possibile acquistare abbonamenti a determinati prodotti e assegnare licenze per gli abbonamenti alle persone del team. L'utente è responsabile del pagamento di eventuali acquisti in modalità self-service. È possibile gestire gli abbonamenti nell'interfaccia di amministrazione di Microsoft 365 all' <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.Microsoft.com</a>.
+
 
 L'amministratore ha una visualizzazione di sola lettura in tutti gli abbonamenti acquistati. Sono in grado di visualizzare il prodotto, il nome dell'acquirente, gli abbonamenti acquistati, la data di scadenza, il prezzo di acquisto e gli utenti assegnati per ogni sottoscrizione acquistata.
 
@@ -94,7 +95,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 4. Nel riquadro a destra, immettere i dettagli della scheda, quindi fare clic su **Salva**.
 
-### <a name="update-an-existing-payment-method"></a>Aggiornare un metodo di pagamento esistente
+### <a name="update-an-existing-payment-method"></a>Aggiornare una modalità di pagamento esistente
 
 1. Nell'interfaccia di amministrazione, **andare alla** > pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">fatture & pagamenti</a> .
 

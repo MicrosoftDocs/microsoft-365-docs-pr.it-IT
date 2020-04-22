@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c38ba2e915cd439c8d7629bc7f9cd56ebc8647
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085540"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636676"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
@@ -32,7 +32,7 @@ Microsoft 365 Enterprise include Windows 10 Enterprise, che offre gli strumenti 
 È necessario comprendere i diversi modi in cui è possibile distribuire il sistema operativo Windows 10 e scegliere quello giusto per la propria organizzazione. A seconda dell'abbonamento a Microsoft 365 Enterprise, esistono anche servizi e funzionalità di sicurezza di Windows 10 che è necessario configurare per ottenere il massimo da Windows 10.
 
 >[!Note]
->Per distribuire insieme Windows 10 Enterprise e Office 365 ProPlus e passare a un [desktop moderno](https://www.microsoft.com/microsoft-365/modern-desktop), vedere il [Centro di distribuzione desktop moderno](https://aka.ms/howtoshift).
+>Per distribuire insieme le app di Windows 10 Enterprise e Microsoft 365 per l'organizzazione e passare a un [desktop moderno](https://www.microsoft.com/microsoft-365/modern-desktop), vedere il [centro di distribuzione desktop moderno](https://aka.ms/howtoshift).
 >
 
 ## <a name="windows-10-deployment"></a>Distribuzione di Windows 10

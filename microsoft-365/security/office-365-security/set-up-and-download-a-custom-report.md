@@ -16,12 +16,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare e scaricare un report con un intervallo di date personalizzato e filtri nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 170360a796d94501b6c13a6ffd4b062401296462
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8807928141704339913e3a30c7804aad5e018d4a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087997"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638369"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurare e scaricare un report personalizzato nel centro sicurezza &amp; e conformità
 
@@ -30,9 +30,9 @@ Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)sono di
 ## <a name="download-a-custom-report"></a>Scaricare un report personalizzato
 
 > [!IMPORTANT]
-> Verificare di disporre delle [autorizzazioni necessarie per il Centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità. 
+> Verificare di disporre delle [autorizzazioni necessarie per il &amp; Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali, gli amministratori della sicurezza e i lettori di sicurezza possono accedere &amp; ai report nel centro sicurezza e conformità. 
   
-1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), accedere a **** \> **Dashboard**dei report.
+1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), accedere a **Reports** \> **Dashboard**dei report.
     
 2. Scegliere un report. (In questo esempio, verrà utilizzato il rapporto disposizione messaggio).<br/>![Scegliere il rapporto richieste per il download di un report](../../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
@@ -46,7 +46,7 @@ Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)sono di
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md)
+[Report e informazioni dettagliate nel centro sicurezza &amp; e conformità](reports-and-insights-in-security-and-compliance.md)
   
 [Creare una pianificazione per un report nel centro sicurezza &amp; e conformità](create-a-schedule-for-a-report.md)
   

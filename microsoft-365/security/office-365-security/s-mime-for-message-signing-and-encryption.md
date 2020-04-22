@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Gli amministratori possono acquisire informazioni sull'utilizzo di S/MIME in Exchange Online.
-ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 294fd22ff81e9ddaabf0664afb34a37c008a6d09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170496"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634329"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME per la firma e la crittografia dei messaggi in Exchange Online
 
@@ -68,7 +68,7 @@ Poiché la sicurezza dei messaggi diventa più importante, gli amministratori de
 
 - **Transport Layer Security (TLS)** crittografa il tunnel o la route tra i server di posta elettronica al fine di prevenire lo snooping e le intercettazioni.
 
-- **Secure Sockets Layer (SSL)** crittografa la connessione tra i client di posta elettronica e i server di Office 365.
+- **Secure Sockets Layer (SSL)** crittografa la connessione tra i client di posta elettronica e i server Microsoft 365.
 
 - **BitLocker** crittografa i dati su un disco rigido in un datacenter in modo che se qualcuno ottiene accesso non autorizzato, non riesce a leggerlo.
 
@@ -76,7 +76,7 @@ Poiché la sicurezza dei messaggi diventa più importante, gli amministratori de
 
 S/MIME richiede un certificato e un'infrastruttura di pubblicazione spesso utilizzata nelle situazioni interaziendali o tra azienda e consumatori. L'utente controlla le chiavi crittografiche in S/MIME e può scegliere se utilizzarle per ogni messaggio inviato. I programmi di posta elettronica come Outlook cercano la posizione di un'autorità di certificazione radice attendibile per eseguire la firma digitale e la verifica della firma. La crittografia dei messaggi di Office 365 è un servizio di crittografia basato su criteri che può essere configurato da un amministratore e non da un singolo utente, per crittografare la posta inviata a chiunque sia all'interno che all'esterno dell'organizzazione. Si tratta di un servizio online basato su Azure Rights Management (RMS) e non si basa su un'infrastruttura a chiave pubblica. La crittografia dei messaggi di Office 365 fornisce anche funzionalità aggiuntive, ad esempio la possibilità di personalizzare la posta con il marchio dell'organizzazione. Per ulteriori informazioni sulla crittografia dei messaggi di Office 365, vedere [crittografia in office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 [Outlook sul web](https://docs.microsoft.com/exchange/exchange-admin-center)
 

@@ -13,19 +13,19 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Utilizzare questa guida del laboratorio di testing per creare e utilizzare le etichette di conservazione di Office 365 nei documenti nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 6534eff67e9c91423eb6f81415cb3ef2e965dcc1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilizzare questa guida del laboratorio di testing per creare e utilizzare etichette di conservazione nei documenti dell'ambiente di testing di Microsoft 365 Enterprise.
+ms.openlocfilehash: 41873eba8f2d6168d68d771c6feb17a44c775f6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067993"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636093"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Classificazione dei dati per l'ambiente di testing Microsoft 365 Enterprise
 
-*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che di Office 365 Enterprise.*
+*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
 
-Con le istruzioni riportate in questo articolo, è possibile configurare la classificazione dei dati utilizzando le etichette di conservazione di Office 365 nell'ambiente di testing di Microsoft 365 Enterprise.
+Con le istruzioni riportate in questo articolo, è possibile configurare la classificazione dei dati utilizzando le etichette di conservazione nell'ambiente di testing Microsoft 365 Enterprise.
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -34,14 +34,14 @@ Con le istruzioni riportate in questo articolo, è possibile configurare la clas
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
 
-Se si desidera solo configurare le etichette di conservazione di Office 365 in modo semplice con i requisiti minimi, seguire le istruzioni contenute in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+Se si desidera solo configurare le etichette di conservazione in modo semplice con i requisiti minimi, seguire le istruzioni in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Se si desidera configurare le etichette di conservazione di Office 365 in un'azienda simulata, seguire le istruzioni riportate nell' [autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
+Se si desidera configurare le etichette di conservazione in un'azienda simulata, seguire le istruzioni riportate nell' [autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing Office 365 le etichette di conservazione non richiedono l'ambiente di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Viene fornito come opzione in modo che sia possibile testare la licenza automatizzata e l'appartenenza ai gruppi e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
+> La verifica delle etichette di conservazione non richiede l'ambiente di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Viene fornito come opzione in modo che sia possibile testare la licenza automatizzata e l'appartenenza ai gruppi e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
 
-## <a name="phase-2-create-office-365-retention-labels"></a>Fase 2: creare etichette di conservazione di Office 365
+## <a name="phase-2-create-retention-labels"></a>Fase 2: creare etichette di conservazione
 
 In questa fase, vengono create le etichette di conservazione per i diversi livelli di conservazione per le cartelle di documenti di SharePoint Online.
 
@@ -85,7 +85,7 @@ In questa fase, vengono create le etichette di conservazione per i diversi livel
  
 Tenere presente che potrebbero essere necessari alcuni minuti per la pubblicazione delle etichette di conservazione.
 
-## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>Fase 3: applicare le etichette di conservazione di Office 365 ai documenti
+## <a name="phase-3-apply-retention-labels-to-documents"></a>Fase 3: applicare le etichette di conservazione ai documenti
 
 In questa fase, viene individuato il comportamento predefinito dell'etichetta di conservazione per i file nella cartella documenti di un sito di SharePoint Online e viene modificata manualmente l'etichetta di conservazione di un documento.
 
@@ -133,7 +133,7 @@ Successivamente, creare un nuovo documento nel sito di SensitiveFiles e modifica
     
 7. Nel riquadro **Document. docx** , in **Apply Retention label**, selezionare l'etichetta **estremamente riservata** , quindi fare clic su **Salva**.
 
-Per informazioni e collegamenti su come distribuire le etichette di conservazione di Office 365 in produzione, vedere la pagina [Configura classificazione per il](infoprotect-configure-classification.md) passaggio dell'ambiente nella fase di **protezione delle informazioni** .
+Per informazioni e collegamenti su come distribuire le etichette di conservazione in produzione, vedere la pagina [Configura classificazione per il](infoprotect-configure-classification.md) passaggio dell'ambiente nella fase di **protezione delle informazioni** .
 
 ## <a name="next-step"></a>Passaggio successivo
 

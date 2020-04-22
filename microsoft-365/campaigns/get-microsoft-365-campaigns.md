@@ -23,25 +23,25 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere Microsoft 365 per le campagne in modo da poter proteggere la propria campagna dalle minacce di Cybersecurity a posta elettronica, dati e comunicazioni.
-ms.openlocfilehash: 2576bc3e62fd9c51dfec16f977e8339fc09e29f6
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5c528ab0ee856062a8e012d9fb699da92d7afb78
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633764"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635625"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Ottenere Microsoft 365 per le campagne
 
-Chiunque disponga di Microsoft 365 business può utilizzare queste linee guida per configurare la sicurezza aggiuntiva per la posta elettronica e la collaborazione. Tuttavia, le campagne e i partiti politici negli Stati Uniti sono idonei per i prezzi speciali per Microsoft 365. Attualmente questo prezzo speciale è disponibile per:
+Chiunque disponga di Microsoft 365 Business Premium può utilizzare queste linee guida per configurare la sicurezza aggiuntiva per la posta elettronica e la collaborazione. Tuttavia, le campagne e i partiti politici negli Stati Uniti sono idonei per i prezzi speciali per Microsoft 365. Attualmente questo prezzo speciale è disponibile per:
 - Campagne politiche federali degli Stati Uniti (ad esempio, campagne in cerca di Office per la casa degli Stati Uniti, Senato degli Stati Uniti o Presidente)
 - Partiti politici a livello nazionale negli Stati Uniti.
 
 Se la campagna o il partito politico si qualifica, Microsoft 365 per le campagne è il piano meno costoso disponibile tramite Microsoft.  
 
-Se non si è idonei per i prezzi speciali, Microsoft 365 business è ancora il modo più conveniente per ottenere una sicurezza completa per un ambiente di collaborazione. Vedere [iscriversi a Microsoft 365 per le campagne](m365-campaigns-sign-up.md). Utilizzare quindi questa raccolta per configurare una maggiore sicurezza e consentire al team di collaborare in modo sicuro. 
+Se non si è idoneo per i prezzi speciali, Microsoft 365 Business Premium è ancora il modo più conveniente per ottenere una sicurezza completa per un ambiente di collaborazione. Vedere [iscriversi a Microsoft 365 per le campagne](m365-campaigns-sign-up.md). Utilizzare quindi questa raccolta per configurare una maggiore sicurezza e consentire al team di collaborare in modo sicuro. 
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Che cosa include Microsoft 365 per le campagne?
-Questa configurazione di Microsoft 365 business include controlli semplici che consentono all'utente e al personale di collaborare in modo sicuro: 
+Questa configurazione di Microsoft 365 Business Premium include controlli semplici che consentono all'utente e al personale di collaborare in modo sicuro: 
 - **Proteggere l'identità dell'utente**: assicurarsi che gli utenti siano quelli che dicono di essere quando accedono per inviare messaggi di posta elettronica o per accedere ai file (autenticazione a più fattori).
 - **Proteggere le informazioni riservate**: proteggere le informazioni riservate per monitorare le informazioni che vengono condivise all'esterno dell'organizzazione (prevenzione della perdita di dati).
 - **Proteggi i dispositivi mobili**: Proteggi i dati nei dispositivi mobili (criteri di protezione delle app per dispositivi mobili).

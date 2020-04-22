@@ -1,5 +1,5 @@
 ---
-title: Cambiare piano di Office 365 per le aziende manualmente
+title: Cambiare manualmente i piani di Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,21 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: Passare manualmente gli abbonamenti di Office 365 per le aziende acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Passare manualmente gli abbonamenti di Microsoft 365 per le aziende acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
+ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540844"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636535"
 ---
-# <a name="switch-office-365-for-business-plans-manually"></a>Cambiare piano di Office 365 per le aziende manualmente
+# <a name="switch-microsoft-365-for-business-plans-manually"></a>Cambiare manualmente i piani di Microsoft 365 for business
 
 ::: moniker range="o365-worldwide"
-
 > [!NOTE]
-> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo relativo al nuovo interfaccia di amministrazione, vedere [modificare i piani manualmente](change-plans-manually.md). La nuova interfaccia di amministrazione è disponibile per tutti gli amministratori di Microsoft 365. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
-
+> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo relativo al nuovo interfaccia di amministrazione, vedere [modificare i piani manualmente](change-plans-manually.md). Il nuovo interfaccia di amministrazione è disponibile per tutti gli amministratori di Microsoft 365 ed è possibile optare selezionando il nuovo Toggle dell'interfaccia di **Amministrazione** che si trova nella parte superiore della Home page. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Passaggio 1: decidere come cambiare piano
@@ -56,11 +54,11 @@ Per continuare con l'opzione manuale, leggere [passaggio 2: acquistare un nuovo 
   
 - OPPURE -
   
- **Acquistare un nuovo abbonamento e le relative licenze:** seguire la procedura descritta in [Acquistare un altro abbonamento a Office 365 per le aziende](../buy-another-subscription.md) per acquistare un nuovo abbonamento.
+ **Acquistare un nuovo abbonamento e licenze:** Per acquistare un nuovo abbonamento, seguire la procedura illustrata in [acquistare un altro abbonamento a Microsoft 365 for business](../buy-another-subscription.md) .
   
 Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si trovano gli utenti. Ad esempio, controllare gli indirizzi di posta elettronica per gli utenti che si desidera spostare. Se includono @contoso.com, occorre acquistare un nuovo abbonamento per contoso.com. Includere una licenza per ogni utente da spostare.
   
- **Se serve aiuto per la scelta di un piano**, vedere la pagina [Confronta i piani di Office 365 Business](https://go.microsoft.com/fwlink/p/?linkid=842056) o [chiamare il supporto](../../admin/contact-support-for-business-products.md).
+ **Se si ha bisogno di assistenza nella scelta di un piano**, vedere la pagina [di confronto dei prodotti Microsoft 365 per le aziende](https://go.microsoft.com/fwlink/p/?linkid=842056) o [contattare il supporto tecnico](../../admin/contact-support-for-business-products.md).
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Passaggio 3: controllare il nuovo abbonamento e le licenze
 
@@ -86,7 +84,7 @@ Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si 
 
     L'abbonamento da cui si stanno spostando gli utenti e quello in cui li si stanno spostando devono essere elencati insieme. Se il nuovo abbonamento non compare ancora al primo controllo, controllare di nuovo più tardi. Verificare che entrambi gli abbonamenti siano elencati in **ATTIVI**. [Il nuovo abbonamento non è elencato o non è attivo](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **Nuovo abbonamento a Office 365 per le aziende con le licenze disponibili**
+   **Nuovo abbonamento a Microsoft 365 for business con licenze disponibili**
 
     ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
@@ -94,7 +92,7 @@ Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si 
 
     Ogni utente deve avere una licenza corrispondente al proprio abbonamento. Se quindi si vogliono spostare dieci utenti in Office 365 Enterprise E5, occorre verificare che siano disponibili dieci licenze. Nell'immagine seguente sono state acquistate dieci licenze per Office 365 Enterprise E5 e tutte e dieci sono disponibili per essere assegnate.
 
-4. **Servono altre licenze per il nuovo abbonamento?** Passare alla pagina **abbonamenti** e [acquistare le licenze per l'abbonamento a Office 365 for business](../licenses/buy-licenses.md).
+4. **Servono altre licenze per il nuovo abbonamento?** Passare alla pagina **abbonamenti** e [acquistare le licenze per l'abbonamento a Microsoft 365 for business](../licenses/buy-licenses.md).
   
     [Cosa accade alle vecchie licenze](#what-about-the-old-licenses)
 

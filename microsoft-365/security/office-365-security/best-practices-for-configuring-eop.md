@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per la configurazione di EOP e Office 365 ATP
+title: Procedure consigliate per la configurazione di EOP e ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per Exchange Online Protection (EOP) per eseguire una configurazione corretta ed evitare che si verifichino errori comuni.
-ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 69d069377a061c440c22b7a00dd43795597c50e9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528618"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638537"
 ---
-# <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Procedure consigliate per la configurazione di EOP e Office 365 ATP
+# <a name="best-practices-for-configuring-eop-and-atp"></a>Procedure consigliate per la configurazione di EOP e ATP
 
 Seguire queste procedure consigliate per Exchange Online Protection (EOP) per eseguire una configurazione corretta ed evitare che si verifichino errori comuni. In questo argomento si presuppone che il processo di installazione sia già stato completato. Se l'installazione di EOP non è stata completata, vedere [Installazione del servizio EOP](set-up-your-eop-service.md).
 
@@ -41,7 +41,7 @@ Queste impostazioni riguardano una serie di funzionalità esterne ai criteri di 
 
 |Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
-|[Configurazione di SPF in Office 365 per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sì|Sì||
+|[Configurare SPF per impedire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sì|Sì||
 |[Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md)|Sì|Sì||
 |[Utilizzare DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md)|Sì|Sì|Utilizzare Action = Quarantine per standard e Action = Reject per strict.|
 |Distribuire il componente aggiuntivo dei messaggi di report per migliorare la segnalazione degli utenti finali di messaggi di posta elettronica sospetti|Sì|Sì||
@@ -63,7 +63,7 @@ Risoluzione dei problemi generali e delle tendenze utilizzando i report nell'int
 
 ## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>Segnalare falsi positivi e falsi negativi a Microsoft
 
-Per migliorare il filtraggio della posta indesiderata nel servizio per tutti, è necessario segnalare falsi positivi (buona posta elettronica contrassegnata come difettosa) e falsi negativi (messaggi di posta elettronica non consentiti) a Microsoft per l'analisi. Per ulteriori informazioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
+Per migliorare il filtraggio della posta indesiderata nel servizio per tutti, è necessario segnalare falsi positivi (buona posta elettronica contrassegnata come difettosa) e falsi negativi (messaggi di posta elettronica non consentiti) a Microsoft per l'analisi. Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="create-mail-flow-rules"></a>Creazione di regole del flusso di posta
 

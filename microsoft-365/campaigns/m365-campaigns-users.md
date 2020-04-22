@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come Microsoft 365 per le campagne influisce sugli utenti.
-ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 12d14ceb6a11c246bf8f456b9f8e3bacde2e076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080508"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632768"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>In che modo Microsoft 365 per le campagne influisce sugli utenti
 
@@ -70,7 +70,7 @@ Per i [dispositivi Windows 10 e Mac non gestiti](m365-campaigns-protect-pcs-macs
 
 Per ulteriori informazioni su questi suggerimenti, vedere [Protect your account and devices from hacker and malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Collaborare con Microsoft teams, OneDrive, SharePoint Online e altri strumenti di Office 365
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Collaborare con Microsoft teams, OneDrive, SharePoint Online e altri strumenti
 Gli utenti potrebbero essere tentati di condividere e archiviare i file dell'organizzazione in luoghi diversi da Microsoft 365. Microsoft 365 rende più semplice possibile collaborare e condividere in modo sicuro. È possibile [condividere file e video](share-files-and-videos.md) direttamente da Microsoft teams, OneDrive, Stream e persino dall'interno di un file. La condivisione all'interno di questi strumenti consente di evitare la perdita di dati. È possibile aggiungere ulteriore protezione ai dati riservati per impedire la condivisione all'esterno dell'organizzazione. 
 
 

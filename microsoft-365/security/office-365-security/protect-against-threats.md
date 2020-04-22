@@ -1,5 +1,5 @@
 ---
-title: Protezione dalle minacce in Office 365
+title: Protezione dalle minacce
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,16 +17,16 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Utilizzare questo articolo come guida per configurare ora le funzionalità di protezione dalle minacce.
-ms.openlocfilehash: 34a89f9db0ca7424d90909f09f7a2bfb4fcf3b6a
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0adf7bbb2637cc8a8d2918d951c1ccef51060b31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528558"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634461"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Protezione dalle minacce in Office 365
+# <a name="protect-against-threats"></a>Protezione dalle minacce
 
-Office 365 include una vasta gamma di funzionalità di protezione dalle minacce. Di seguito è illustrata una guida introduttiva che è possibile utilizzare come elenco di controllo per verificare che le funzionalità di protezione delle minacce siano configurate per l'organizzazione. Se si è nuovi per le funzionalità di protezione dalle minacce in Office 365 o si è sicuri di dove iniziare, utilizzare le linee guida seguenti come punto di partenza.
+Microsoft 365 include una vasta gamma di funzionalità di protezione dalle minacce. Di seguito è illustrata una guida introduttiva che è possibile utilizzare come elenco di controllo per verificare che le funzionalità di protezione delle minacce siano configurate per l'organizzazione. Se si è nuovi per le funzionalità di protezione dalle minacce in Office 365 o si è sicuri di dove iniziare, utilizzare le linee guida seguenti come punto di partenza.
 
 > [!IMPORTANT]
 > **Per ogni tipo di criterio sono incluse le impostazioni consigliate iniziali, tuttavia sono disponibili molte opzioni ed è possibile modificare le impostazioni in base alle esigenze specifiche dell'organizzazione**. Consenti circa 30 minuti affinché i criteri o le modifiche vengano elaborati tramite il Data Center.
@@ -35,7 +35,7 @@ Office 365 include una vasta gamma di funzionalità di protezione dalle minacce.
 
 ### <a name="subscriptions"></a>Sottoscrizioni
 
-Le funzionalità di protezione dalle minacce sono incluse in tutte le sottoscrizioni di Office 365; Tuttavia, alcuni abbonamenti includono funzionalità più avanzate. Nella tabella seguente sono elencate le funzionalità di protezione incluse in questo articolo, insieme ai requisiti minimi di sottoscrizione.
+Le funzionalità di protezione dalle minacce sono incluse in tutte le sottoscrizioni di Microsoft 365; Tuttavia, alcuni abbonamenti includono funzionalità più avanzate. Nella tabella seguente sono elencate le funzionalità di protezione incluse in questo articolo, insieme ai requisiti minimi di sottoscrizione.<br/>
 
 |||
 |---|---|
@@ -53,15 +53,14 @@ Le funzionalità di protezione dalle minacce sono incluse in tutte le sottoscriz
 
 È necessario essere assegnati a un ruolo appropriato per configurare i criteri nel [Centro sicurezza & conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). La tabella seguente include alcuni esempi:
 
-|||
-|---|---|
-|**Ruolo o gruppo di ruoli**|**Altre informazioni**|
-|Amministratore globale di Office 365|[Informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Ruolo o gruppo di ruoli|Altre informazioni|
+|---------|---------|
+|amministratore globale|[Informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Amministratore della sicurezza|[Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Gestione organizzazione di Exchange Online|[Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>e<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |
 
-Per ulteriori informazioni, vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Per ulteriori informazioni, vedere [Permissions in &amp; the Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="part-1---anti-malware-protection"></a>Parte 1-protezione antimalware
 
@@ -107,7 +106,7 @@ Per configurare gli [allegati sicuri di ATP](atp-safe-attachments.md), è necess
 
 5. Fare clic su **Salva**.
 
-6. (**Passaggio aggiuntivo consigliato**) Come amministratore globale o amministratore di SharePoint Online, eseguire il cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con il parametro **DisallowInfectedFileDownload** impostato su *true* per l'ambiente Office 365. In questo modo si impedisce l'apertura, lo spostamento, la copia o la condivisione di file che vengono rilevati come dannosi.
+6. (**Passaggio aggiuntivo consigliato**) Come amministratore globale o amministratore di SharePoint Online, eseguire il cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con il parametro **DisallowInfectedFileDownload** impostato su *true* per l'ambiente Microsoft 365. In questo modo si impedisce l'apertura, lo spostamento, la copia o la condivisione di file che vengono rilevati come dannosi.
 
 Per ulteriori informazioni, vedere [configurare i criteri per gli allegati sicuri ATP di office 365](set-up-atp-safe-attachments-policies.md) e [abilitare Office 365 ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -119,7 +118,7 @@ Per configurare i [collegamenti sicuri di ATP](atp-safe-links.md), esaminare e m
 
 2. Fare doppio clic sul criterio **predefinito** .
 
-3. Nella sezione **use Safe Links in** selezionare l'opzione **Office 365 ProPlus, Office per iOS e Android**e quindi fare clic su **Salva**.
+3. Nella sezione **use Safe Links in** selezionare l'opzione **Microsoft 365 Apps for Enterprise, Office per iOS e Android**e quindi fare clic su **Salva**.
 
 4. Nella sezione **criteri che si applicano a destinatari specifici** fare clic sul segno più**+**().
 
@@ -215,7 +214,7 @@ Per ulteriori informazioni, vedere [zero-hour auto Purge-protezione da posta ind
 
 ### <a name="audit-logging-for-reporting-and-investigation"></a>Registrazione di controllo per i report e le indagini
 
-La registrazione di controllo è disponibile in abbonamenti che includono [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description). Per visualizzare i dati nei rapporti di protezione dalle minacce, ad esempio il [dashboard di sicurezza](security-dashboard.md), i report sulla sicurezza della [posta elettronica](view-email-security-reports.md)e l' [esploratore](threat-explorer.md), la registrazione di controllo deve essere attivata per l'organizzazione. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca del registro di controllo di Office 365](../../compliance/turn-audit-log-search-on-or-off.md).
+La registrazione di controllo è disponibile in abbonamenti che includono [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description). Per visualizzare i dati nei rapporti di protezione dalle minacce, ad esempio il [dashboard di sicurezza](security-dashboard.md), i report sulla sicurezza della [posta elettronica](view-email-security-reports.md)e l' [esploratore](threat-explorer.md), la registrazione di controllo deve essere attivata per l'organizzazione. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca dei log di controllo](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="post-setup-tasks"></a>Attività successive all'installazione
 
@@ -225,6 +224,6 @@ Dopo aver configurato le funzionalità di protezione dalle minacce, verificare l
 |---|---|
 |**Procedura**|**Risorse per approfondire**|
 |Vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report|[Dashboard di sicurezza](security-dashboard.md)<br/>[Rapporti di sicurezza della posta elettronica](view-email-security-reports.md)<br/>[Report per Office 365 ATP](view-reports-for-atp.md)<br/>[Esplora minacce](threat-explorer.md)|
-|Rivedere e rivedere periodicamente i criteri di protezione dalle minacce in base alle esigenze|[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smart report e informazioni dettagliate](reports-and-insights-in-security-and-compliance.md)<br/>[Funzionalità di analisi e risposta alle minacce di Office 365](keep-users-safe-with-office-365-ti.md)|
+|Rivedere e rivedere periodicamente i criteri di protezione dalle minacce in base alle esigenze|[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smart report e informazioni dettagliate](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 analisi delle minacce e funzionalità di risposta](keep-users-safe-with-office-365-ti.md)|
 |Controllare le nuove funzionalità e gli aggiornamenti dei servizi|[Opzioni standard e di rilascio mirato](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Centro messaggi](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descrizioni dei servizi](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |

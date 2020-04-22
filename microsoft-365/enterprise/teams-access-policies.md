@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035100"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636724"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Suggerimenti sui criteri per la protezione di chat, gruppi e file di Team
 
@@ -33,9 +33,9 @@ Ulteriori suggerimenti specifici per la distribuzione dei team sono inclusi in q
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>Guida introduttiva ai team prima di altri servizi dipendenti
 
-Non è necessario abilitare i servizi dipendenti per iniziare a utilizzare Microsoft teams. Questi saranno tutti ' solo lavoro '. Tuttavia, è necessario essere pronti a gestire quanto segue:
+Non è necessario abilitare i servizi dipendenti per iniziare a utilizzare Microsoft teams. Questi saranno tutti "solo lavoro". Tuttavia, è necessario essere pronti a gestire quanto segue:
 
-- Gruppi di Office 365
+- Microsoft 365 gruppi
 - Siti del team di SharePoint
 - OneDrive for Business
 - Cassette postali
@@ -84,7 +84,7 @@ In Azure AD, gli utenti guest e External sono gli stessi. Il tipo di utente per 
 
 ### <a name="guest-access-in-teams"></a>Accesso guest in teams
 
-Oltre ai criteri per gli utenti interni all'azienda o all'organizzazione, gli amministratori possono abilitare l'accesso guest per consentire, a livello di utente, le persone esterne alla propria azienda o all'organizzazione per accedere alle risorse dei team e interagire con utenti interni per operazioni quali conversazioni di gruppo, chat e riunioni. Per ulteriori informazioni sull'accesso guest, vedere il seguente collegamento: [Teams Guest Access](https://docs.microsoft.com/microsoftteams/guest-access)
+Oltre ai criteri per gli utenti interni all'azienda o all'organizzazione, gli amministratori possono abilitare l'accesso guest per consentire, a livello di utente, le persone esterne alla propria azienda o all'organizzazione per accedere alle risorse dei team e interagire con gli utenti interni per operazioni quali conversazioni di gruppo, chat e riunioni. Per ulteriori informazioni sull'accesso guest, vedere il seguente collegamento: [Teams Guest Access](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>Accesso esterno in teams
 

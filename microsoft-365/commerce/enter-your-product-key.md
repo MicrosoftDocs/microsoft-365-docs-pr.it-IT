@@ -1,5 +1,5 @@
 ---
-title: Immettere il codice "Product Key" per Office 365 Business Premium
+title: Immettere il codice "Product Key" per Microsoft 365 business standard
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,22 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
-description: Informazioni su come riscattare un codice Product Key di Office 365 Business Premium acquistato presso un punto vendita.
+description: Informazioni su come riscattare un codice Product Key Microsoft 365 business standard acquistato in un negozio al dettaglio.
 ms.custom: okr_SMB
-ms.openlocfilehash: 6ae3a490d4ee7bc311421bf69e7437c1c345c1d4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9cabc3d3f132ef2e3e56c1209b632f1e10a8637e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242351"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634909"
 ---
-# <a name="enter-your-product-key-for-office-365-business-premium"></a>Immettere il codice "Product Key" per Office 365 Business Premium
+# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Immettere il codice "Product Key" per Microsoft 365 business standard
 
-Se Office 365 Business Premium è stato acquistato da un punto vendita, questo articolo consente di attivare l'abbonamento. 
+Se è stato acquistato Microsoft 365 business standard da un punto vendita, questo articolo consente di attivare l'abbonamento. 
   
  **Serve altro?**
- **Per assistenza con office 365 Home o Personal**, vedere [utilizzo dei codici Product Key con Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
- **Si ha un contratto multilicenza?** Se si è acquistato Office 365 for business tramite un [programma Microsoft Open License](https://go.microsoft.com/fwlink/p/?LinkID=613298), vedere l'articolo [immettere il codice Product Key acquistato da Microsoft Open](purchases-from-microsoft-open.md).
+ **Per informazioni sulla famiglia microsoft 365 o su microsoft 365 Personal**, vedere [utilizzo dei codici Product Key con Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Si ha un contratto multilicenza?** Se Microsoft 365 for business è stato acquistato tramite un [programma Microsoft Open License](https://go.microsoft.com/fwlink/p/?LinkID=613298), vedere l'articolo [immettere il codice Product Key acquistato da Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Attivare un nuovo abbonamento
 
@@ -57,14 +57,14 @@ Se Office 365 Business Premium è stato acquistato da un punto vendita, questo a
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Estendere la data di scadenza o aggiungere una licenza a un abbonamento esistente
 
-Per utilizzare un codice Product Key per estendere la data di scadenza o per aggiungere una licenza alla sottoscrizione Office 365 Business Premium esistente, è necessaria una chiave nuova e inutilizzata per lo stesso piano di Office 365. Il codice Product Key di Office 365 originale non è valido in quanto non è possibile usare di nuovo un codice che è già stato riscattato. Vedere [aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key](licenses/add-licenses-using-product-key.md).
+Per utilizzare un codice "Product Key" per estendere la data di scadenza o aggiungere una licenza alla sottoscrizione Microsoft 365 business standard esistente, è necessaria una chiave nuova e inutilizzata per lo stesso piano di Microsoft 365. L'immissione del codice Product Key originale di Microsoft 365 non funzionerà perché non è possibile utilizzare di nuovo un tasto che è già stato riscattato. Vedere [aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key](licenses/add-licenses-using-product-key.md).
 
 ## <a name="whats-next"></a>Operazioni successive
 
-I nuovi utenti di Office 365 per le aziende troveranno utili queste informazioni sulla [configurazione di Office 365](../admin/setup/setup.md).
+Se si è nuovi a Microsoft 365 for business, è necessario imparare a [configurare microsoft 365](../admin/setup/setup.md).
   
 ## <a name="still-having-trouble-with-product-keys"></a>Si verificano ancora problemi con i codici Product Key?
 
-Vedere questo elenco di errori comuni con le relative soluzioni: [Problemi con il codice Product Key di Office 365 per le aziende?](product-key-errors-and-solutions.md)
+Vedere questo elenco di errori e soluzioni comuni: [problemi con il codice Product Key di Microsoft 365 for business?](product-key-errors-and-solutions.md)
   
 In alternativa, [contattare il supporto tecnico Microsoft](../admin/contact-support-for-business-products.md).

@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: Informazioni su come aggiungere e rimuovere licenze per l'abbonamento a Office 365 for business.
-ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: Informazioni su come aggiungere e rimuovere licenze per l'abbonamento a Microsoft 365 for business.
+ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240287"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632530"
 ---
 # <a name="manage-subscription-licenses"></a>Gestire le licenze di sottoscrizione
 
@@ -84,7 +84,7 @@ Dopo aver acquistato nuove licenze, assicurarsi di [assegnare le licenze agli ut
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>Cosa fare se il collegamento Aggiungi/rimuovi licenze non è presente?
 
-In questa tabella vengono illustrati i motivi per cui il collegamento **Aggiungi/Rimuovi licenze** potrebbe non essere disponibile e cosa è possibile fare.
+In questa tabella vengono illustrati i motivi per cui il collegamento **Aggiungi/Rimuovi licenze** potrebbe non essere disponibile e cosa è possibile fare. 
 
 |Motivo  |Descrizione  |Soluzione  |
 |---------|---------|---------|
@@ -92,14 +92,14 @@ In questa tabella vengono illustrati i motivi per cui il collegamento **Aggiungi
 |La sottoscrizione è stata attivata utilizzando un codice "Product Key".| Se l'abbonamento è stato acquistato e attivato usando un codice Product Key di 25 caratteri, verrà visualizzato il messaggio "Prepagato".  |Vedere [aggiungere licenze a un abbonamento pagato per l'utilizzo di un codice Product Key](add-licenses-using-product-key.md). |
 |L'abbonamento è stato acquistato tramite un partner. | Se l'abbonamento è stato acquistato tramite un partner, verrà visualizzato il collegamento Volume Licensing Service Center (VLSC). | Vedere [aggiungere licenze a un abbonamento acquistato tramite il centro servizi per contratti multilicenza](add-licenses-bought-through-vlsc.md). |
 |L'abbonamento è stato acquistato tramite un rivenditore.|| Se l'abbonamento è stato acquistato tramite un partner Cloud Solution Provider (CSP), per acquistare altre licenze è necessario rivolgersi al partner CSP.        |
-|Si dispone di un abbonamento di valutazione. |Una versione di valutazione di Office 365 è identificata dal testo "Versione di valutazione". | È necessario prima acquistare la sottoscrizione di valutazione, quindi è possibile aggiungere altre licenze. Vedere [acquistare un abbonamento a Office 365 for business dalla versione di valutazione gratuita](../buy-a-subscription-from-your-free-trial.md).|
+|Si dispone di un abbonamento di valutazione. |Una versione di valutazione di Microsoft 365 visualizzerà il testo "Trial". | È necessario prima acquistare la sottoscrizione di valutazione, quindi è possibile aggiungere altre licenze. Vedere [acquistare un abbonamento a Microsoft 365 for business dalla versione di valutazione gratuita](../buy-a-subscription-from-your-free-trial.md).|
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Cosa è necessario sapere sull'acquisto di licenze per l'abbonamento aziendale
 
 ### <a name="buying-licenses"></a>Acquisto di licenze
 
 - È necessario essere un amministratore globale o un amministratore di fatturazione per acquistare le licenze. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
-- Per acquistare una licenza per un nuovo utente e aggiungerlo all'abbonamento, vedere [Aggiungere utenti singolarmente o in blocco a Office 365 - Guida per l'amministratore](../../admin/add-users/add-users.md).
+- Per acquistare una licenza e aggiungere un nuovo utente all'abbonamento contemporaneamente, vedere [aggiungere utenti singolarmente o in blocco Microsoft 365-Guida per gli amministratori](../../admin/add-users/add-users.md).
 
 ### <a name="license-availability"></a>Disponibilità delle licenze
 

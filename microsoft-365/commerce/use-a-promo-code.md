@@ -1,5 +1,5 @@
 ---
-title: Usare il codice promozionale di Office 365 per usufruire di uno sconto
+title: Utilizzare il codice promozionale per ridurre i prezzi
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Informazioni su come applicare un codice promozionale all'abbonamento a Office 365 per ridurre i prezzi e sulla risoluzione dei problemi relativi al codice promozionale in caso di errore.
+description: Informazioni su come applicare un codice promozionale all'abbonamento a Microsoft 365 per ridurre i prezzi e sulla risoluzione dei problemi relativi al codice promozionale in caso di errore.
 ms.custom: okr_SMB
-ms.openlocfilehash: ebb2c06623dc295fdcbc3cac4f51894decc3a7b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 55ce4192a2b76fae841c7b5e2a5733c4d5c2769e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243092"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631858"
 ---
-# <a name="use-your-office-365-promo-code-to-reduce-price"></a>Usare il codice promozionale di Office 365 per usufruire di uno sconto
+# <a name="use-your-promo-code-to-reduce-price"></a>Utilizzare il codice promozionale per ridurre i prezzi
 
 Quando si acquista un abbonamento, è possibile usare un codice promozionale per ridurre il prezzo. Leggere questo articolo per informazioni su come applicare un codice promozionale all'abbonamento, per informazioni sui [termini del codice promozionale](#promo-code-terms)e per la [risoluzione dei problemi relativi ai codici promozionali](#troubleshooting-promo-codes).
   
@@ -47,7 +47,7 @@ In qualsiasi momento dopo il completamento dell'acquisto, lo sconto associato al
   
 ## <a name="promo-code-terms"></a>Condizioni per i codici promozionali
 
-Le linee guida seguenti si applicano ai codici promozionali per abbonamenti a Office 365 per le aziende.
+Le linee guida seguenti si applicano ai codici promozionali per gli abbonamenti a Microsoft 365 for business.
   
 - **Numero di codici promozionali per abbonamento** È possibile usare un codice promozionale per più abbonamenti nello stesso ordine, ma non si possono usare più codici promozionali per lo stesso abbonamento. 
     

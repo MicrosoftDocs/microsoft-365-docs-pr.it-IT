@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori di Office 365 possono ottenere informazioni su come eseguire il ripristino da un attacco ransomware.
-ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Gli amministratori di Microsoft 365 possono ottenere informazioni su come eseguire il ripristino da un attacco ransomware.
+ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032877"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634401"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Eseguire il ripristino da un attacco ransomware in Office 365
 
-Anche se si prevedono tutte le precauzioni per proteggere l'organizzazione di Office 365, è comunque possibile cadere vittima di un attacco [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Ransomware è un'azienda di grandi dimensioni e gli attacchi sono verificati in una ricerca avanzata.
+Anche se si precauzioni per proteggere l'organizzazione, è ancora possibile cadere vittima di un attacco [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Ransomware è un'azienda di grandi dimensioni e gli attacchi sono verificati in una ricerca avanzata.
 
-Le procedure descritte in questo argomento offrono le migliori possibilità di recuperare i dati crittografati dal ransomware e aiutano a fermare la diffusione dell'infezione nell'organizzazione di Office 365. Prima di iniziare, considera i seguenti elementi:
+La procedura descritta in questo argomento consentirà di recuperare i dati crittografati dal ransomware e di interrompere la diffusione dell'infezione nell'organizzazione. Prima di iniziare, considera i seguenti elementi:
 
 - Non vi è alcuna garanzia che il pagamento del riscatto restituirà l'accesso ai file. In effetti, pagare il riscatto può rendere un obiettivo per più ransomware. Se si è già pagati, ma si è riusciti a recuperare i file senza dover utilizzare la risoluzione dell'utente malintenzionato, è necessario chiamare la banca per vedere se è possibile bloccare la transazione. È inoltre consigliabile segnalare l'attacco ransomware alle forze dell'ordine, ai siti Web per la creazione di rapporti di truffa e Microsoft come descritto più avanti in questo argomento.
 
@@ -122,7 +122,7 @@ Se il paese non è elencato, chiedere alle agenzie di applicazione della legge f
 
 ### <a name="submit-email-messages-to-microsoft"></a>Inviare messaggi di posta elettronica a Microsoft
 
-È possibile segnalare un messaggio di phishing che contiene ransomware utilizzando uno dei diversi metodi. Per ulteriori informazioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
+È possibile segnalare un messaggio di phishing che contiene ransomware utilizzando uno dei diversi metodi. Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="see-also"></a>Vedere anche
 

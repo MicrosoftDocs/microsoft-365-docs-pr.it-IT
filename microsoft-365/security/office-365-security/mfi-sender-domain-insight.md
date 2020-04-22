@@ -11,26 +11,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sull'Insight del dominio del mittente Fix nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082570"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635173"
 ---
 # <a name="fix-sender-domain-insight"></a>Risolvere le informazioni dettagliate del dominio del mittente
 
-Office 365 richiede l'invio di messaggi da ambienti di posta elettronica locali interni a Office 365 per rispondere a determinati criteri di sicurezza:
+Microsoft 365 richiede l'invio di messaggi da ambienti di posta elettronica locali interni a Microsoft 365 per rispondere a determinati criteri di sicurezza:
 
-- È stato creato un connettore in ingresso in Office 365 per autenticare le connessioni SMTP dal server di posta elettronica locale utilizzando l'indirizzo IP di origine o un certificato.
+- È stato creato un connettore in ingresso in Microsoft 365 per autenticare le connessioni SMTP dal server di posta elettronica locale utilizzando l'indirizzo IP di origine o un certificato.
 
-- Il server di posta elettronica locale è stato configurato per inoltrare la posta elettronica tramite Office 365 al mondo esterno.
+- Il server di posta elettronica locale è stato configurato per inoltrare la posta elettronica tramite Microsoft 365 al mondo esterno.
 
 - Nella configurazione, una delle seguenti affermazioni è vera:
 
-  - Il dominio di posta elettronica del mittente è registrato nell'organizzazione di Office 365. Per ulteriori informazioni, vedere Add Domains in Office 365.
+  - Il dominio di posta elettronica del mittente è registrato nell'organizzazione. Per ulteriori informazioni, vedere Add Domains in Office 365.
 
-  - Il server di posta elettronica locale è configurato per l'utilizzo di un certificato per l'invio di posta elettronica a Office 365, il certificato contiene o corrisponde esattamente a un nome di dominio registrato in Office 365 ed è stato creato un connettore basato su certificato in Office 365 con tale dominio. 
+  - Il server di posta elettronica locale è configurato per l'utilizzo di un certificato per l'invio di posta elettronica a Microsoft 365, il certificato contiene o corrisponde esattamente a un nome di dominio registrato in Microsoft 365 ed è stato creato un connettore basato su certificato in Microsoft 365 con tale dominio. 
 
 I messaggi che non soddisfano i criteri non verranno attribuiti all'organizzazione e potrebbero essere rifiutati.
 

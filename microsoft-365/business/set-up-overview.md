@@ -25,21 +25,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Per ulteriori informazioni, vedere la procedura di installazione di Microsoft 365 business, dalla sottoscrizione all'aggiunta di un dominio e degli utenti, alla configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: 9bb536b52981966f6c4c487f8400577b896261e0
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Per ulteriori informazioni, vedere la procedura di installazione di Microsoft 365 Business Premium, dalla sottoscrizione all'aggiunta di un dominio e degli utenti, alla configurazione dei criteri di sicurezza e altro ancora.
+ms.openlocfilehash: 8b26d423d4f62ee8f9ea4a61eb8f7efa72ee26cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561202"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633356"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell'installazione
 
-Guardare un breve video sulla configurazione aziendale di Microsoft 365.<br><br>
+Guardare un breve video sulla configurazione di Microsoft 365 Business Premium.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 La maggior parte dei passaggi di installazione può essere effettuata nell'installazione guidata, ma anche le altre opzioni sono elencate.
 
@@ -66,18 +66,18 @@ La maggior parte dei passaggi di installazione può essere effettuata nell'insta
 
 Per iniziare, vedere [aumentare la protezione dalle minacce](increase-threat-protection.md) e configurare le funzionalità di [conformità](set-up-compliance.md).
 
-Vedere anche [i primi 10 modi per proteggere l'azienda Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una roadmap delle migliori procedure di sicurezza.
+Vedere anche [i primi 10 modi per proteggere il premio Microsoft 365 business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una roadmap delle migliori procedure di sicurezza.
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Passaggio 3: configurare e gestire i dispositivi Windows 10
 
 Dopo aver eseguito la configurazione guidata, è necessario proctect tutti i computer di Windwos 10 nell'organizzazione.
   
-- Windows 10 Pro è un [prerequisito](pre-requisites-for-data-protection.md) per Microsoft 365 business, ma se si dispone di Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, l'abbonamento dà diritto a un [aggiornamento a Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+- Windows 10 Pro è un [prerequisito](pre-requisites-for-data-protection.md) per Microsoft 365 Business Premium, ma se si dispone di Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, l'abbonamento dà diritto a un [aggiornamento a Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
 - Seguire la procedura descritta in [Secure Windows 10 PC](secure-win-10-pcs.md) per impostare i criteri per i dispositivi Windows 10.
 
-Quando si aggiunge un dispositivo Windows 10 ad Azure AD, i criteri impostati per i computer Windows 10 vengono applicati. Per ulteriori informazioni, vedere [configurare i dispositivi Windows per gli utenti aziendali di Microsoft 365](set-up-windows-devices.md).
+Quando si aggiunge un dispositivo Windows 10 ad Azure AD, i criteri impostati per i computer Windows 10 vengono applicati. Per ulteriori informazioni, vedere [configurare i dispositivi Windows per gli utenti di Microsoft 365](set-up-windows-devices.md).
 
-## <a name="step-4-install-office-365-business"></a>Passaggio 4: installare Office 365 business
+## <a name="step-4-install-microsoft-365-apps-for-business"></a>Passaggio 4: installazione di Microsoft 365 Apps for business
 - È possibile installare automaticamente Office nei dispositivi Windows utilizzando l' [installazione guidata](set-up.md#deploy-office-365-client-apps).
 - Consente agli utenti di [installare le app di Office](https://docs.microsoft.com/office365/admin/setup/install-applications) per Windows e i dispositivi.
      
@@ -88,10 +88,10 @@ Quando si aggiunge un dispositivo Windows 10 ad Azure AD, i criteri impostati pe
 
 - **Accedere alle risorse locali**
 
-     - Se l'organizzazione utilizza Windows Server Active Directory in locale, è possibile configurare Microsoft 365 business per proteggere i dispositivi Windows 10, mantenendo comunque l'accesso alle risorse locali che richiedono l'autenticazione locale. Seguire la procedura descritta in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 business](manage-windows-devices.md) to set this up. Questo è il metodo preferito e i dispositivi in questo stato sono denominati dispositivi ibridi di Azure AD Uniti.
+     - Se l'organizzazione utilizza Windows Server Active Directory in locale, è possibile configurare Microsoft 365 Business Premium per proteggere i dispositivi Windows 10, mantenendo comunque l'accesso alle risorse locali che richiedono l'autenticazione locale. Seguire la procedura descritta in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium](manage-windows-devices.md) per configurarlo. Questo è il metodo preferito e i dispositivi in questo stato sono denominati dispositivi ibridi di Azure AD Uniti.
 
-    - Se l'azienda dispone di un Active Directory locale che contiene alcune risorse locali, ad esempio condivisioni di file e stampanti, è possibile consentire ai dispositivi di Azure AD-join di accedere a tali risorse attenendosi alla procedura descritta di seguito: [accesso alle risorse locali da un dispositivo di Azure ad-join in Microsoft 365 business](access-resources.md).
+    - Se l'azienda dispone di un Active Directory locale che contiene alcune risorse locali (ad esempio condivisioni di file e stampanti), è possibile consentire ai dispositivi di Azure AD-join di accedere a tali risorse attenendosi alla procedura seguente: [accesso alle risorse locali da un dispositivo di Azure ad-join in Microsoft 365 Business Premium](access-resources.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

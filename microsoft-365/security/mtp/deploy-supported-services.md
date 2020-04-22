@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: c29027bb641530ba2d3c7a22c578770c098f53ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521481"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633472"
 ---
 # <a name="deploy-supported-services"></a>Distribuire i servizi supportati
 
@@ -62,7 +62,7 @@ La tabella seguente elenca la modalità in cui ogni servizio supportato fornisce
 | Servizio | Dati (segnali & informazioni correlate) | Ambito di correzione & risposta |
 | ------ | ------ | ------ |
 | Microsoft Defender ATP | -Stati endpoint e eventi RAW<br />-Rilevamento e avvisi degli endpoint, tra cui antivirus, EDR, riduzione della superficie di attacco<br />-Informazioni sui file e su altre entità osservate negli endpoint | Endpoint |
-| Office 365 ATP | -Stati di posta e cassette postali e eventi RAW<br />-Rilevamento di messaggi di posta elettronica, allegati e collegamenti | -Cassette postali<br />-Account di Office 365 |
+| Office 365 ATP | -Stati di posta e cassette postali e eventi RAW<br />-Rilevamento di messaggi di posta elettronica, allegati e collegamenti | -Cassette postali<br />-Account Microsoft 365 |
 | Azure ATP | -Segnali di Active Directory, inclusi gli eventi di autenticazione<br />-Rilevamento comportamentale relativo all'identità | Identità |
 | Microsoft Cloud App Security | -Rilevamento di applicazioni e servizi cloud non autorizzati (Shadow IT)<br />-Esposizione dei dati alle app del cloud<br />-Attività di minacce associate alle app Cloud | App cloud |
 

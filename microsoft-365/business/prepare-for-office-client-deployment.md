@@ -1,5 +1,5 @@
 ---
-title: Preparare la distribuzione client di Office per Microsoft 365 Business
+title: Preparare la distribuzione dei client di Office da Microsoft 365 for business
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Informazioni su come installare automaticamente le app di Office a 32 bit nei computer Windows 10 e mantenerle aggiornate.
-ms.openlocfilehash: 0f8cd7df49ad627b190fad6737ec95a6d64d99d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b5f01bc9bb10765929f3c6bdd5908e8b48a51a11
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065108"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633100"
 ---
-# <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Preparare la distribuzione client di Office per Microsoft 365 Business
+# <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Preparare la distribuzione dei client di Office da Microsoft 365 for business
 
 ## <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Preparare l'installazione automatica delle app di Office nei computer client
 
-È possibile utilizzare Microsoft 365 business per installare automaticamente le app di Office a 32 bit nei computer Windows 10 e mantenerle aggiornate con gli aggiornamenti.
+È possibile utilizzare Microsoft 365 for business per installare automaticamente le app di Office a 32 bit nei computer Windows 10 e mantenerle aggiornate con gli aggiornamenti.
   
 L'installazione automatica funziona meglio se il computer dell'utente finale è in Windows 10 business e:
   
@@ -50,15 +50,15 @@ Per determinare se si ha la versione A portata di clic di Office, in un'app di O
   
 L'utente finale il cui PC:
   
-- **Ha** una licenza utente di Windows 10 Business, una licenza attiva di Microsoft 365 Business, Windows 10 Creators Update e fa parte di un dominio Azure Active Directory. 
+- **Ha** una licenza per gli utenti di Windows 10 business, una licenza attiva di Microsoft 365 per le aziende, un aggiornamento di Windows 10 Creator ed è aggiunto ad Azure Active Directory. 
     
-- **Non dispone** di app di Office a 64 bit (ad esempio: Word, Excel, PowerPoint). Se sono necessarie le app di Office a 64 bit, questa funzionalità non è adatta perché non è disponibile alcun supporto per l'attivazione di una versione di Office a portata di clic a 64 bit a 2016 dalla console di amministrazione di Microsoft 365 business. 
+- **Non dispone** di app di Office a 64 bit (ad esempio: Word, Excel, PowerPoint). Se sono necessarie le app di Office a 64 bit, questa funzionalità non è adatta perché non è disponibile alcun supporto per l'attivazione di una versione di Office a portata di clic a 64 bit a 2016 dalla console di amministrazione di Microsoft 365 per le aziende. 
     
-- **Non ha** app autonome della versione 2016 installate tramite Windows Installer (MSI), ad esempio Visio o Project. Microsoft 365 business aggiorna Office alla versione a portata di clic di Office 2016 e non funziona con le app autonome MSI di Office 2016. 
+- **Non ha** app autonome della versione 2016 installate tramite Windows Installer (MSI), ad esempio Visio o Project. Microsoft 365 for business aggiorna Office alla versione a portata di clic di Office 2016 e non funziona con le app autonome MSI di Office 2016. 
     
-Nella tabella seguente vengono illustrate le azioni che potrebbero essere necessarie per gli utenti finali e gli amministratori, a seconda dello stato iniziale, per avere una versione a portata di clic di 32 bit con esito positivo della distribuzione di Office dalla console di amministrazione di Microsoft 365 business.
+Nella tabella seguente vengono illustrate le azioni che potrebbero essere necessarie per gli utenti finali e gli amministratori, a seconda dello stato iniziale, per avere una versione a portata di clic di 32 bit di distribuzione di Office dalla console di amministrazione di Microsoft 365 per le aziende.
   
-|**Stato di installazione iniziale di Office**|**Azione da eseguire prima di installare Office di Microsoft 365 Business**|**Stato finale**|
+|**Stato di installazione iniziale di Office**|**Azione da eseguire prima dell'installazione di Microsoft 365 per le aziende**|**Stato finale**|
 |:-----|:-----|:-----|
 |Nessuna famiglia di applicazioni Office installata  <br/> |Nessuno  <br/> |Office 2016 32 bit è installato tramite la funzione a portata di clic  <br/> |
 |Versione A portata di clic a 32 bit di Office esistente (2016 o precedente) e nessuna app autonoma  <br/> |Nessuno  <br/> |Aggiornamento all'ultima versione A portata di clic a 32 bit di Office 2016, in base alle necessità **\*** <br/> |

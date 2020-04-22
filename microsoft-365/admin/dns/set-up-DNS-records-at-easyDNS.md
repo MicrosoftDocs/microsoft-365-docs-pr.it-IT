@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS in easyDNS per Office 365
+title: Creare record DNS in easyDNS per Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in easyDNS per Office 365.
-ms.openlocfilehash: 9d48896de8f841863e25929a46b2f1d2e1b3ced2
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in easyDNS per Microsoft.
+ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210553"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631358"
 ---
-# <a name="create-dns-records-at-easydns-for-office-365"></a>Creare record DNS in easyDNS per Office 365
+# <a name="create-dns-records-at-easydns-for-microsoft"></a>Creare record DNS in easyDNS per Microsoft
 
 Se non si trovano le informazioni desiderate, vedere le [domande frequenti sui domini](../setup/domains-faq.md). 
   
-È necessario aggiungere tutti i seguenti record DNS al sito Web del registrar per instradare la posta a Office 365, utilizzare il dominio per i team e Skype for business e così via.
+È necessario aggiungere tutti i seguenti record DNS al sito Web del registrar per instradare la posta a Microsoft, utilizzare il dominio per i team e Skype for business e così via.
   
-Nota: i record SRV non sono attualmente disponibili in tutti i pacchetti di servizi di easyDNS. Potrebbe essere necessario eseguire l'aggiornamento a un livello di servizio superiore con easyDNS per aggiungere i record SRV necessari per Office 365 Skype for business.
+Nota: i record SRV non sono attualmente disponibili in tutti i pacchetti di servizi di easyDNS. Potrebbe essere necessario eseguire l'aggiornamento a un livello di servizio superiore con easyDNS per aggiungere i record SRV necessari per Skype for business.
   
 ## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>Verificare di essere proprietari del dominio con un record TXT
 
@@ -52,9 +52,9 @@ Nota: i record SRV non sono attualmente disponibili in tutti i pacchetti di serv
     
 6. Verificare che il record sia corretto e quindi selezionare **conferma**. 
     
-7. Attendere alcuni minuti prima di continuare, in modo che il record appena creato sia in grado di propagarsi su Internet e venga rilevato da Office 365.
+7. Attendere alcuni minuti prima di continuare, in modo che il record appena creato sia in grado di propagarsi su Internet e venga rilevato da Microsoft.
     
-8. Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
+8. Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e richiedere il record.
     
 9. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
@@ -64,7 +64,7 @@ Nota: i record SRV non sono attualmente disponibili in tutti i pacchetti di serv
     
 12. Nella pagina **Verifica dominio** selezionare **Verifica**. 
     
-## <a name="add-an-mx-record-to-route-email-to-office-365"></a>Aggiungere un record MX per instradare la posta elettronica a Office 365
+## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>Aggiungere un record MX per instradare la posta elettronica a Microsoft
 
 1. Passare a [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) e accedere con le credenziali. 
     
@@ -125,7 +125,7 @@ Nota: i record SRV non sono attualmente disponibili in tutti i pacchetti di serv
     
 6. Verificare che il record sia corretto e quindi selezionare **conferma**. 
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Aggiungere i due record SRV necessari per Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Aggiungere i due record SRV necessari per Microsoft
 
 Nota: i record SRV non sono attualmente disponibili in easyDNS ' Domain Plus Service Level. Potrebbe essere necessario eseguire l'aggiornamento a un livello di servizio superiore con easyDNS per aggiungere i record SRV 
   

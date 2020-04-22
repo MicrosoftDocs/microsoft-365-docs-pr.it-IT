@@ -1,5 +1,5 @@
 ---
-title: Recapito dinamico e anteprima con allegati sicuri ATP di Office 365
+title: Recapito dinamico e visualizzazione in anteprima con gli allegati sicuri di ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile scegliere recapito dinamico per evitare ritardi nei messaggi e consentire agli utenti di visualizzare in anteprima gli allegati analizzati.
-ms.openlocfilehash: 755a5a317710946a3a03004482a6b48c8947c1a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c8e0a60912244a636fbbe6ca62f7c1b9c260e0f6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599423"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637569"
 ---
-# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Recapito dinamico e anteprima con allegati sicuri ATP di Office 365
+# <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Recapito dinamico e visualizzazione in anteprima con gli allegati sicuri di ATP
 
 ## <a name="overview"></a>Panoramica
 
@@ -38,16 +38,16 @@ Il recapito dinamico elimina i ritardi della posta elettronica inviando il corpo
 
 - Poiché ogni allegato è deselezionato, è disponibile per l'apertura o il download.
 
-- Se un allegato è determinato come dannoso, viene inviato alla quarantena, in cui un utente del team di sicurezza dell'organizzazione (ad esempio un amministratore globale di Office 365 o un amministratore della sicurezza) può [gestire i messaggi in quarantena in office 365](manage-quarantined-messages-and-files.md).
+- Se un allegato è determinato come dannoso, viene inviato alla quarantena, in cui un utente del team di sicurezza dell'organizzazione (ad esempio un amministratore globale o un amministratore della sicurezza) può [gestire i messaggi in quarantena in Office 365](manage-quarantined-messages-and-files.md).
 
 La maggior parte dei file PDF e i documenti di Office possono essere visualizzati in anteprima in modalità provvisoria mentre è in corso l'analisi ATP. Se un allegato non è compatibile con l'anteprima di recapito dinamico, i destinatari di posta elettronica visualizzano un segnaposto allegato finché non è stato completato l'analisi degli allegati sicuri di ATP.
 
 > [!TIP]
-> Se si utilizza un dispositivo mobile e i file PDF non vengono visualizzati in anteprima per il recapito dinamico, provare a eseguire l'accesso a Office 365 utilizzando il browser per dispositivi mobili.
+> Se si utilizza un dispositivo mobile e i file PDF non vengono visualizzati in anteprima per il recapito dinamico, provare a eseguire l'accesso utilizzando il browser per dispositivi mobili.
 
 Con il recapito dinamico, gli utenti possono leggere e rispondere immediatamente ai propri messaggi di posta elettronica, mentre gli allegati vengono analizzati.
 
-L'analisi degli allegati sicuri ATP si verifica nella stessa area in cui si trovano i dati di Office 365. Per ulteriori informazioni sulla geografia del Data Center, vedere [dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All)
+L'analisi degli allegati sicuri ATP si verifica nella stessa area in cui si trovano i dati di Microsoft 365. Per ulteriori informazioni sulla geografia del Data Center, vedere [dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All)
 
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>Cosa succede quando qualcuno inoltra un messaggio di posta elettronica che contiene un allegato?
 

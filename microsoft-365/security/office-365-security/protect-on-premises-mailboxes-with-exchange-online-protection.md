@@ -18,20 +18,20 @@ search.appverid:
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
-description: Anche se si prevede di ospitare alcune o tutte le cassette postali locali, è comunque possibile proteggere le cassette postali con Exchange Online Protection (EOP). Per configurare i connettori, l'account deve essere un amministratore globale di Office 365 o un amministratore aziendale di Exchange (gruppo dei ruoli di gestione dell'organizzazione). Per informazioni su come le autorizzazioni di Office 365 riguardano le autorizzazioni di Exchange, vedere Assegnazione di ruoli di amministratore in Office 365 gestito da 21Vianet. Se tutte le cassette postali di Exchange sono in locale, attenersi alla procedura seguente per configurare il servizio EOP.
-ms.openlocfilehash: 8ff2e28100a748e34b8f079292d937cc9b3857e8
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Anche se si prevede di ospitare alcune o tutte le cassette postali locali, è comunque possibile proteggere le cassette postali con Exchange Online Protection (EOP). Per configurare i connettori, è necessario che l'account sia un amministratore globale o che sia membro di Exchange Company Administrator (gruppo di ruoli di gestione dell'organizzazione). Per informazioni su come le autorizzazioni di Office 365 riguardano le autorizzazioni di Exchange, vedere Assegnazione di ruoli di amministratore in Office 365 gestito da 21Vianet. Se tutte le cassette postali di Exchange sono in locale, attenersi alla procedura seguente per configurare il servizio EOP.
+ms.openlocfilehash: 5d60e762b46f6f6f9228fb21ea6450e015ed9d93
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895288"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634449"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Proteggere le cassette postali locali con Exchange Online Protection
 
 > [!NOTE]
 > Questo articolo si applica solo a Office 365 gestito da 21Vianet in Cina.
 
-Anche se si prevede di ospitare alcune o tutte le cassette postali locali, è comunque possibile proteggere le cassette postali con Exchange Online Protection (EOP). Per configurare i connettori, l'account deve essere un amministratore globale di Office 365 o un amministratore aziendale di Exchange (gruppo dei ruoli di gestione dell'organizzazione). Per informazioni su come le autorizzazioni di Office 365 riguardano le autorizzazioni di Exchange, vedere [assegnazione di ruoli di amministratore in Office 365 gestito da 21ViaNet](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet). Se tutte le cassette postali di Exchange sono in locale, attenersi alla procedura seguente per configurare il servizio EOP.
+Anche se si prevede di ospitare alcune o tutte le cassette postali locali, è comunque possibile proteggere le cassette postali con Exchange Online Protection (EOP). Per configurare i connettori, è necessario che l'account sia un amministratore globale o che sia membro di Exchange Company Administrator (gruppo di ruoli di gestione dell'organizzazione). Per informazioni su come le autorizzazioni di Office 365 riguardano le autorizzazioni di Exchange, vedere [assegnazione di ruoli di amministratore in Office 365 gestito da 21ViaNet](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet). Se tutte le cassette postali di Exchange sono in locale, attenersi alla procedura seguente per configurare il servizio EOP.
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Passaggio 1: utilizzare l'interfaccia di amministrazione di Microsoft 365 per aggiungere e verificare il dominio
 

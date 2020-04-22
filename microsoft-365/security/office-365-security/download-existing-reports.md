@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Informazioni su come scaricare uno o più report esistenti nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: ea5af9aad268b4a7d540e70cc8a1f64f303159cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 62f87c3a11e35bd6dae25c786ac2360e9937c84d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599433"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637581"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Scaricare i report esistenti nel centro &amp; sicurezza e conformità
 
@@ -29,7 +29,7 @@ Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)sono di
 ## <a name="download-existing-reports"></a>Scaricare i report esistenti
 
 > [!IMPORTANT]
-> Verificare di disporre delle [autorizzazioni necessarie assegnate al centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità. 
+> Verificare di disporre delle [autorizzazioni necessarie assegnate al &amp; Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali, gli amministratori della sicurezza e i lettori di sicurezza possono accedere &amp; ai report nel centro sicurezza e conformità. 
   
 1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), **accedere a** \> report report per il **download**.
     
@@ -39,7 +39,7 @@ Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)sono di
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365](reports-and-insights-in-security-and-compliance.md)
+[Report e informazioni dettagliate nel centro sicurezza &amp; e conformità](reports-and-insights-in-security-and-compliance.md)
   
 [Creare una pianificazione per un report nel centro sicurezza &amp; e conformità](create-a-schedule-for-a-report.md)
   

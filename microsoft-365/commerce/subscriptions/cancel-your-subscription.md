@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: Informazioni su come annullare la versione di valutazione o di sottoscrizione a pagamento di Office 365 for business o Microsoft 365.
-ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 for business o Microsoft 365.
+ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142164"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636596"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
-*Eleggibilità:* Se si hanno meno di 25 licenze assegnate agli utenti, è possibile annullare la versione di valutazione di Office 365 for business o la sottoscrizione a pagamento online nell'interfaccia di amministrazione in qualsiasi momento. Se si dispone di più di 25 licenze assegnate agli utenti, [contattare il supporto per annullare l'abbonamento](../../admin/contact-support-for-business-products.md).
+*Eleggibilità:* Se si hanno meno di 25 licenze assegnate agli utenti, è possibile annullare la versione di valutazione di Microsoft 365 per le aziende o la sottoscrizione a pagamento online nell'interfaccia di amministrazione in qualsiasi momento. Se si dispone di più di 25 licenze assegnate agli utenti, [contattare il supporto per annullare l'abbonamento](../../admin/contact-support-for-business-products.md).
 
 *Rimborso:* Qualsiasi credito prorated verrà restituito all'utente entro il prossimo ciclo di fatturazione.
 
@@ -43,13 +43,14 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 ::: moniker range="o365-worldwide"
 
+
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
 2. Individuare la sottoscrizione che si desidera annullare e in **impostazioni & azioni**selezionare **Annulla sottoscrizione**.
 
 3. Esaminare le date importanti, fornire commenti e suggerimenti sul perché si sta annullando, quindi selezionare **Annulla sottoscrizione**.
 
-    L'abbonamento viene visualizzato in uno stato **disabilitato** e la funzionalità è ridotta fino a quando non viene eliminata. Per ulteriori informazioni su ciò che è possibile prevedere quando un abbonamento a pagamento di Office 365 per le aziende viene annullato, vedere [che cosa accade ai miei dati e accesso quando l'abbonamento a office 365 for Business termina?](what-if-my-subscription-expires.md)
+    L'abbonamento viene visualizzato in uno stato **disabilitato** e la funzionalità è ridotta fino a quando non viene eliminata. Per ulteriori informazioni sulle operazioni che è possibile prevedere quando viene annullata una sottoscrizione a pagamento Microsoft 365 per le aziende, vedere [che cosa accade ai miei dati e accesso quando l'abbonamento a microsoft 365 for Business termina?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -65,7 +66,7 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 4. Esaminare le date importanti, fornire commenti e suggerimenti sul perché si sta annullando, quindi selezionare **Annulla sottoscrizione**.
 
-    L'abbonamento viene visualizzato in uno stato **disabilitato** e la funzionalità è ridotta fino a quando non viene eliminata. Per ulteriori informazioni su ciò che è possibile prevedere quando un abbonamento a pagamento di Office 365 per le aziende viene annullato, vedere [che cosa accade ai miei dati e accesso quando l'abbonamento a office 365 for Business termina?](what-if-my-subscription-expires.md)
+    L'abbonamento viene visualizzato in uno stato **disabilitato** e la funzionalità è ridotta fino a quando non viene eliminata. Per ulteriori informazioni sulle operazioni che è possibile prevedere quando viene annullata una sottoscrizione a pagamento Microsoft 365 per le aziende, vedere [che cosa accade ai miei dati e accesso quando l'abbonamento a microsoft 365 for Business termina?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 4. Esaminare le date importanti, fornire commenti e suggerimenti sul perché si sta annullando, quindi selezionare **Annulla sottoscrizione**.
 
-    L'abbonamento viene visualizzato in uno stato **disabilitato** e la funzionalità è ridotta fino a quando non viene eliminata. Per ulteriori informazioni su ciò che è possibile prevedere quando un abbonamento a pagamento di Office 365 per le aziende viene annullato, vedere [che cosa accade ai miei dati e accesso quando l'abbonamento a office 365 for Business termina?](what-if-my-subscription-expires.md)
+    L'abbonamento viene visualizzato in uno stato **disabilitato** e la funzionalità è ridotta fino a quando non viene eliminata. Per ulteriori informazioni sulle operazioni che è possibile prevedere quando viene annullata una sottoscrizione a pagamento Microsoft 365 per le aziende, vedere [che cosa accade ai miei dati e accesso quando l'abbonamento a microsoft 365 for Business termina?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -110,11 +111,11 @@ Se si utilizza un dominio personalizzato con l'abbonamento, è necessario esegui
 
 Se si configura un dominio personalizzato, sono stati aggiunti i record DNS in modo che il dominio funzioni con i servizi di Office 365. Prima di rimuovere il dominio, accertarsi di aggiornare i record DNS, ad esempio il record MX di dominio, nell'host DNS.
 
-Ad esempio, modificare il record MX nell'host DNS. La posta elettronica inviata al dominio smette di venire all'indirizzo di Office 365 e viene invece indirizzata al nuovo provider di posta elettronica. Un record MX determina infatti la destinazione della posta elettronica per il dominio.
+Ad esempio, modificare il record MX nell'host DNS. La posta elettronica inviata al dominio smette di venire all'indirizzo Microsoft e viene invece indirizzata al nuovo provider di posta elettronica. Un record MX determina infatti la destinazione della posta elettronica per il dominio.
 
 - Se i record del server dei nomi (NS) [puntano ai server dei nomi di Office 365](../../admin/setup/add-domain.md), le modifiche apportate al record MX non sono effettive finché non si modificano i record NS in modo che puntino al nuovo host DNS (vedere il passaggio 2).
 
-- Prima di aggiornare il record MX, lasciare che gli utenti conoscano la data in cui si intende cambiare la posta elettronica e il nuovo provider di posta elettronica che si intende utilizzare. Inoltre, se gli utenti desiderano spostare il proprio indirizzo di posta elettronica di Office 365 nel nuovo provider, devono eseguire passaggi aggiuntivi.
+- Prima di aggiornare il record MX, lasciare che gli utenti conoscano la data in cui si intende cambiare la posta elettronica e il nuovo provider di posta elettronica che si intende utilizzare. Inoltre, se gli utenti desiderano spostare il proprio indirizzo di posta elettronica Microsoft esistente nel nuovo provider, devono eseguire passaggi aggiuntivi.
 
 - Il giorno dell'aggiornamento del record MX eseguire i passaggi rimanenti descritti in questo articolo.
 

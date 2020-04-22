@@ -17,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integrazione di Office 365 Advanced Threat Protection con Microsoft Defender Advanced Threat Protection per visualizzare informazioni più dettagliate sulla gestione delle minacce.
-ms.openlocfilehash: a2634a70bdbdd21efe2c59721e5532500eb4e4cc
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: e416d70baf7498b0163d5bd8aa8e923585a5e5a4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284228"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633810"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Integrazione di Office 365 Advanced Threat Protection con Microsoft Defender Advanced Threat Protection
 
@@ -38,15 +38,15 @@ In questo esempio, è possibile vedere che i destinatari del messaggio di posta 
 
 - L'organizzazione deve disporre di Office 365 ATP piano 2 (o Office 365 E5) e Microsoft Defender ATP.
     
-- È necessario essere un amministratore globale di Office 365 o un ruolo di amministratore della sicurezza, ad esempio amministratore della sicurezza, assegnato nel [centro conformità sicurezza &amp; ](https://protection.office.com). (Vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- È necessario essere un amministratore globale o un ruolo di amministratore della sicurezza, ad esempio amministratore della sicurezza, assegnato [nel &amp; centro conformità sicurezza](https://protection.office.com). (Vedere [Permissions in &amp; the Security Compliance Center](permissions-in-the-security-and-compliance-center.md))
     
 - È necessario disporre dell'accesso sia all' [esploratore (o ai rilevamenti in tempo reale)](threat-explorer.md) nel centro sicurezza & compliance e al Centro protezione Microsoft Defender.
     
 ## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a>Per integrare Office 365 ATP con Microsoft Defender ATP
 
-L'integrazione di Office 365 ATP con Microsoft Defender ATP è configurata utilizzando il Centro sicurezza & conformità di Office 365 e il Centro protezione Microsoft Defender.
+L'integrazione di Office 365 ATP con Microsoft Defender ATP è configurata utilizzando il Centro sicurezza & compliance e il Centro protezione Microsoft Defender.
   
-1. Come un amministratore globale di Office 365 o un amministratore della sicurezza, [https://protection.office.com](https://protection.office.com) accedere a e accedere.
+1. Come amministratore globale o amministratore della sicurezza, accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione.
     
 2. Scegliere \> **Esplora** **gestione minacce** .<br>![Explorer nel menu Gestione minacce](../../media/ThreatMgmt-Explorer-nav.png)<br>
     

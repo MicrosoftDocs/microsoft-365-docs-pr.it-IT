@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: a24212cf69df50d00a32f17e8daf1939657dd602
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557574"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632852"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>App in Microsoft Managed Desktop
 
@@ -28,25 +28,25 @@ Microsoft include alcune app principali insieme alla licenza Microsoft 365 E3 o 
 
 ## <a name="apps-provided-by-microsoft"></a>App fornite da Microsoft
 
-In dotazione con la licenza Microsoft Managed Desktop sono disponibili versioni a 64 bit delle app nella famiglia di prodotti di Office 365 ProPlus standard (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for business e OneNote). Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma è possibile richiederne l'aggiunta. Per ulteriori informazioni su queste app, vedere [Install Microsoft Project o Microsoft Visio su Microsoft Managed Desktop Devices](../get-started/project-visio.md).
+In dotazione con la licenza Microsoft Managed Desktop sono disponibili versioni a 64 bit delle app di Microsoft 365 Apps for Enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for business e OneNote). Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma è possibile richiederne l'aggiunta. Per ulteriori informazioni su queste app, vedere [Install Microsoft Project o Microsoft Visio su Microsoft Managed Desktop Devices](../get-started/project-visio.md).
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Cosa fa Microsoft per supportare le app che forniamo
 
-Microsoft fornirà servizi completi per la distribuzione, l'aggiornamento e il supporto per le app di Office 365 ProPlus incluse. Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma Microsoft Managed Desktop fornirà ai gruppi di distribuzione che consentono all'amministratore IT di gestire le licenze e distribuirle in modo appropriato per la propria organizzazione. Microsoft sosterrà gli utenti finali di queste applicazioni tramite i canali di supporto di Microsoft Managed Desktop.
+Microsoft fornirà il servizio completo per la distribuzione, l'aggiornamento e il supporto per le app di Microsoft 365 incluse per Enterprise Apps. Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma Microsoft Managed Desktop fornirà ai gruppi di distribuzione che consentono all'amministratore IT di gestire le licenze e distribuirle in modo appropriato per la propria organizzazione. Microsoft sosterrà gli utenti finali di queste applicazioni tramite i canali di supporto di Microsoft Managed Desktop.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Cosa devi fare per supportare le app che fornisci
 
 Sono ancora necessarie alcune operazioni da eseguire con queste app:
 
-- **Assegnare le licenze** : si è responsabili dell'ottenimento e dell'assegnazione delle licenze appropriate per gli utenti finali di Office 365 ProPlus.
+- **Assegnare le licenze** : si è responsabili dell'ottenimento e dell'assegnazione delle licenze appropriate agli utenti finali per le app Microsoft 365 per Enterprise.
 - **Aggiungere utenti ai gruppi di sicurezza** : se si utilizza Microsoft Project o Visio, l'amministratore IT deve aggiungere tali utenti ai gruppi di distribuzione corretti. Gli amministratori IT sono anche responsabili del recupero delle licenze da tali utenti se lasciano la società.
-- **Distribuire office 365 addons** -se è necessario qualsiasi addons per le app di Office 365 ProPlus, distribuirle in modo centralizzato come qualsiasi altra applicazione Windows 32. 
+- **Distribuire i componenti aggiuntivi di microsoft 365** -se sono necessari componenti aggiuntivi per qualsiasi app di Microsoft 365 per le applicazioni Enterprise, distribuire le app in modo centralizzato come qualsiasi altra applicazione Windows 32. 
 
 ## <a name="apps-you-provide"></a>App fornite
 
 Naturalmente, è probabile che si disponga di una serie di altre app necessarie per le operazioni aziendali. Questi possono essere distribuiti solo ai dispositivi Microsoft Managed Desktop mediante la pipeline di distribuzione di Microsoft Intune. Se l'applicazione ne ha bisogno, è possibile farli impacchettare da un fornitore (che potrebbe essere un fornitore non Microsoft o Microsoft Consulting Services (MCS)) oppure se si dispone dei mezzi necessari, è possibile imballarli personalmente. Successivamente, aggiungere questi pacchetti al portale Microsoft Managed Desktop e assegnarli ai gruppi di Azure Active Directory per attivare la distribuzione. 
 
-Se le app vengono attualmente distribuite tramite Microsoft endpoint Configuration Manager, Microsoft Managed Desktop può fornire una query per valutare le app e individuare quelle pronte per la migrazione a Microsoft Intune e quali potrebbero richiedere alcuni regolazione.
+Se le app vengono attualmente distribuite tramite Microsoft endpoint Configuration Manager, Microsoft Managed Desktop può fornire una query per valutare le app e individuare quelle pronte per la migrazione a Microsoft Intune e quali potrebbero essere necessarie per la rettifica.
 
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Preparare le proprie app per l'inclusione in Microsoft Managed Desktop

@@ -1,5 +1,5 @@
 ---
-title: Suggerimenti per la sicurezza nei messaggi di posta elettronica in Office 365
+title: Suggerimenti per la sicurezza nei messaggi di posta elettronica
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,19 +16,19 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: Introduce suggerimenti di sicurezza per i messaggi di posta elettronica filtrati dal filtro di posta indesiderata EOP e Office 365.
-ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Introduce suggerimenti di sicurezza per i messaggi di posta elettronica filtrati da EOP e dal filtro di posta indesiderata.
+ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032817"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634305"
 ---
-# <a name="safety-tips-in-email-messages-in-office-365"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica in Office 365
+# <a name="safety-tips-in-email-messages"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica
 
-Exchange Online Protection (EOP) e Office 365 proteggono i messaggi di posta indesiderata, phishing e prevenzione antimalware. Oggi, alcuni di questi attacchi sono così ben congegnati che sembrano legittimi. L'invio di messaggi alla cartella posta indesiderata non è sempre sufficiente. A questo punto, quando si controlla la posta elettronica in Outlook o Outlook sul Web, EOP controlla automaticamente il mittente e aggiunge una punta di sicurezza all'inizio della posta elettronica.
+Exchange Online Protection (EOP) e Microsoft 365 proteggono i propri messaggi di posta indesiderata, phishing e prevenzione antimalware. Oggi, alcuni di questi attacchi sono così ben congegnati che sembrano legittimi. L'invio di messaggi alla cartella posta indesiderata non è sempre sufficiente. A questo punto, quando si controlla la posta elettronica in Outlook o Outlook sul Web, EOP controlla automaticamente il mittente e aggiunge una punta di sicurezza all'inizio della posta elettronica.
 
-Il suggerimento per la sicurezza, ovvero un messaggio con codice a colori, avviserà i messaggi potenzialmente dannosi. La maggior parte dei messaggi nella posta in arrivo non avrà un suggerimento per la sicurezza. Sarà possibile visualizzarli solo quando EOP e Office 365 dispongono di informazioni necessarie per impedire attacchi di posta indesiderata, phishing e malware. Se nella cartella posta in arrivo sono presenti suggerimenti per la sicurezza, è possibile utilizzare gli esempi seguenti per ulteriori informazioni su ogni tipo di suggerimento per la sicurezza.
+Il suggerimento per la sicurezza, ovvero un messaggio con codice a colori, avviserà i messaggi potenzialmente dannosi. La maggior parte dei messaggi nella posta in arrivo non avrà un suggerimento per la sicurezza. Saranno visibili solo quando EOP e Microsoft 365 dispongono di informazioni necessarie per impedire attacchi di posta indesiderata, phishing e malware. Se nella cartella posta in arrivo sono presenti suggerimenti per la sicurezza, è possibile utilizzare gli esempi seguenti per ulteriori informazioni su ogni tipo di suggerimento per la sicurezza.
 
 - Posta elettronica sospetta (punta di sicurezza rossa).
 
@@ -58,6 +58,6 @@ Il suggerimento per la sicurezza, ovvero un messaggio con codice a colori, avvis
 
 ## <a name="working-with-safety-tips"></a>Utilizzo dei suggerimenti per la sicurezza
 
-I suggerimenti per la sicurezza sono sempre abilitati per Outlook sul Web, anche se non tutti i messaggi ne ricevono uno. Gli amministratori di Office 365 possono disattivare i suggerimenti di sicurezza per altri client di posta elettronica, ad esempio Outlook. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+I suggerimenti per la sicurezza sono sempre abilitati per Outlook sul Web, anche se non tutti i messaggi ne ricevono uno. Gli amministratori possono disattivare i suggerimenti di sicurezza per altri client di posta elettronica, ad esempio Outlook. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
 Se non si è d'accordo con il modo in cui EOP ha categorizzato un messaggio (ovvero il messaggio non è posta indesiderata o dovrebbe essere stato contrassegnato come posta indesiderata), è possibile inviare i messaggi a Microsoft per l'analisi per migliorare l'esperienza. Per istruzioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md). È anche possibile fare clic sul collegamento commenti e suggerimenti sulla sicurezza per inviare commenti direttamente a Microsoft per aiutarci a migliorare.

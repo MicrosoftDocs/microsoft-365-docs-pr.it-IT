@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Informazioni su come modificare il metodo di pagamento per l'abbonamento aziendale.
-ms.openlocfilehash: 8b9ae2a8396ff984b8468cf364c1112cb2ef6b13
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 582286dec47b0835c90ff56a0d10d3c34d285e33
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142598"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632732"
 ---
 # <a name="change-your-payment-method"></a>Cambiare la modalità di pagamento
 
@@ -64,9 +64,9 @@ Quando si acquista Office 365 per le aziende, si sceglie se pagare tramite carta
 > [!NOTE]
 > Dopo il cambio di modalità, gli utenti continueranno ad avere le stesse licenze di prima.
   
- **Si vuole cambiare la frequenza di pagamento?** Se si desidera modificare la frequenza di pagamento per l'abbonamento, sia da annuale a mensile o mensile a annuale, è necessario [chiamare il supporto di Office 365](../../admin/contact-support-for-business-products.md) per la guida.
+ **Si vuole cambiare la frequenza di pagamento?** Se si desidera modificare la frequenza di pagamento per l'abbonamento, sia da annuale a mensile o mensile a annuale, è necessario [chiamare il supporto tecnico Microsoft](../../admin/contact-support-for-business-products.md) per assistenza.
   
- **Si vogliono modificare le informazioni sulla carta di credito o il conto corrente bancario?** Vedere [Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario in Office 365 per le aziende](add-update-or-remove-credit-card-or-bank-account.md).
+ **Si vogliono modificare le informazioni sulla carta di credito o il conto corrente bancario?** Vedere [aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario](add-update-or-remove-credit-card-or-bank-account.md).
   
  **Che cosa occorre fare in presenza di saldi insoluti?**
   
@@ -87,6 +87,7 @@ Se ci si sposta da una *carta di credito o da un conto corrente bancario a una f
   
 Quando si cambia il pagamento tramite fattura a pagamento con carta di credito o conto corrente bancario, viene creato automaticamente un nuovo abbonamento, si spostano gli utenti nel nuovo abbonamento e quindi si disattiva il vecchio abbonamento. Non si preoccupi, gli utenti non vedranno interruzioni del servizio e tutte le loro informazioni saranno disponibili tramite il nuovo abbonamento.
 
+
 1. Nell'interfaccia di amministrazione, accedere alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** \> .
 
 2. Se si è in visualizzazione **tabella** , selezionare **schede**.
@@ -100,6 +101,7 @@ Quando si cambia il pagamento tramite fattura a pagamento con carta di credito o
 6. Se si aggiunge un metodo di pagamento, immettere la scheda o i dettagli dell'account, quindi fare clic su **Salva**.
   
 7. Verificare che il metodo di pagamento selezionato sia corretto, quindi selezionare **Salva**.
+
 
 ::: moniker-end
 
@@ -140,6 +142,7 @@ Quando si torna nella pagina **Abbonamenti**, il vecchio abbonamento sarà contr
 
 Se la quantità dell'ordine è troppo elevata, potrebbe essere necessaria una verifica del credito. In caso affermativo, viene visualizzato il messaggio "non idoneo per passare alla fattura. L'ordine richiede una verifica del credito. " In questo caso, è necessario modificare manualmente il pagamento tramite fattura. Eseguire la procedura seguente per completare la modifica manuale.
 
+
 1. Accedere a <a href="https://Office365.com" target="_blank">Office365.com</a> e acquistare la stessa sottoscrizione di quella corrente. Al momento del check-out, scegliere l'opzione di pagamento tramite fattura.
 
 > [!IMPORTANT]
@@ -147,7 +150,7 @@ Se la quantità dell'ordine è troppo elevata, potrebbe essere necessaria una ve
 
 2. Dopo aver completato l'acquisto, annullare l'abbonamento originale. Gli utenti vengono spostati automaticamente nel nuovo abbonamento.
 
-Se non è necessaria alcuna verifica del credito, eseguire la procedura seguente per passare a pagamento tramite fattura.
+Se non è necessaria alcuna verifica del credito, eseguire la procedura seguente per passare a pagamento tramite fattura. 
 
 1. Nell'interfaccia di amministrazione, accedere alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** \> .
 
@@ -164,6 +167,7 @@ Se non è necessaria alcuna verifica del credito, eseguire la procedura seguente
 7. Al termine, fare clic su **Salva**.
 
 8. Verificare che il metodo di pagamento selezionato sia corretto, quindi selezionare **Salva**.
+
 
 ::: moniker-end
 
@@ -193,9 +197,16 @@ Se non è necessaria alcuna verifica del credito, eseguire la procedura seguente
 
 È possibile completare i passaggi seguenti in qualsiasi momento per verificare la modalità di pagamento configurata per un abbonamento.
 
+
 1. Nell'interfaccia di amministrazione, accedere alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** \> .
 
 2. Individuare la sottoscrizione che si desidera verificare. La modalità di pagamento configurata per la sottoscrizione viene visualizzata nella sezione **fatturazione** .
+
+### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>Utilizzare l'interfaccia di amministrazione precedente per verificare quale metodo di pagamento è configurato
+
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abbonamenti</a> di fatturazione.
+
+2. Individuare la sottoscrizione che si desidera verificare. Il metodo di pagamento configurato per la sottoscrizione viene visualizzato in **modalità di pagamento**.
 
 ::: moniker-end
 

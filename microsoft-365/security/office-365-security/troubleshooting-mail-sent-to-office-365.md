@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi della posta elettronica inviati a Office 365
+title: Risoluzione dei problemi di posta elettronica inviata a Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Office 365 e procedure consigliate per la posta in blocco ai clienti di Office 365
-ms.openlocfilehash: 7c5d355f1037df94d856ffff7080d4a12d22f709
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Microsoft 365 e le procedure consigliate per la posta in blocco ai clienti
+ms.openlocfilehash: 89fd6d11cca0d7689203948922b27e46ae2c602a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211908"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631146"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Risoluzione dei problemi della posta elettronica inviati a Office 365
 
-In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Office 365 e procedure consigliate per la posta in blocco ai clienti di Office 365
+In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Microsoft 365 e le procedure consigliate per la posta in blocco ai clienti
 
 ## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>Risoluzione dei problemi comuni relativi al recapito della posta elettronica a Office 365
 
@@ -47,7 +47,7 @@ Scegliere uno dei problemi comunemente riscontrati.
 
 ### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Si sta gestendo la reputazione di invio di IP e domini?
 
-Le tecnologie di filtro di EOP sono progettate per fornire protezione da posta indesiderata per Microsoft Office 365, nonché altri prodotti Microsoft come Exchange Server, Microsoft Office Outlook e Windows Live Mail. È inoltre possibile utilizzare SPF, DKIM e DMARC; tecnologie di autenticazione della posta elettronica che consentono di risolvere il problema dello spoofing e del phishing verificando che il dominio che invia il messaggio di posta elettronica sia autorizzato a farlo. Il filtro EOP è influenzato da una serie di fattori correlati all'IP di invio, al dominio, all'autenticazione, all'accuratezza degli elenchi, alle tariffe dei reclami, al contenuto e altro ancora. Tra questi, uno dei fattori principali per abbassare la reputazione del mittente e la possibilità di inviare messaggi di posta elettronica è la frequenza dei reclami per la posta indesiderata.
+Le tecnologie di filtro di EOP sono progettate per fornire protezione da posta indesiderata per Microsoft 365 e altri prodotti Microsoft come Exchange Server, Microsoft Office Outlook e Windows Live Mail. È inoltre possibile utilizzare SPF, DKIM e DMARC; tecnologie di autenticazione della posta elettronica che consentono di risolvere il problema dello spoofing e del phishing verificando che il dominio che invia il messaggio di posta elettronica sia autorizzato a farlo. Il filtro EOP è influenzato da una serie di fattori correlati all'IP di invio, al dominio, all'autenticazione, all'accuratezza degli elenchi, alle tariffe dei reclami, al contenuto e altro ancora. Tra questi, uno dei fattori principali per abbassare la reputazione del mittente e la possibilità di inviare messaggi di posta elettronica è la frequenza dei reclami per la posta indesiderata.
 
 ### <a name="are-you-sending-email-from-new-ip-addresses"></a>Si sta inviando messaggi di posta elettronica da nuovi indirizzi IP?
 
@@ -79,7 +79,7 @@ Per ulteriori informazioni sull'errore ricevuto, vedere l'elenco dei codici di e
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-Per richiedere la rimozione da questo elenco, è possibile [utilizzare il portale di delist per rimuovere se stessi dall'elenco Mittenti bloccati di Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Per richiedere la rimozione da questo elenco, è possibile [utilizzare il portale di delist per rimuovere se stessi dall'elenco dei mittenti bloccati](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>La posta elettronica è atterrata nella cartella di posta indesiderata del destinatario in EOP
 
@@ -112,9 +112,9 @@ Se si riceve un rapporto di mancato recapito da EOP che indica che l'indirizzo I
 
  Per ricevere i messaggi dagli utenti, verificare che la rete consenta le connessioni dagli indirizzi IP utilizzati da EOP nei data center. Per ulteriori informazioni, vedere [indirizzi IP di Exchange Online Protection](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
-## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Procedure consigliate per l'invio di posta elettronica in blocco agli utenti di Office 365
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedure consigliate per l'invio di messaggi di posta elettronica agli utenti di Microsoft 365
 
-Se si eseguono spesso campagne di posta elettronica in blocco per gli utenti di Office 365 e si vuole garantire la sicurezza e la tempestività dei messaggi, seguire le indicazioni riportate in questa sezione.
+Se si eseguono spesso campagne di posta elettronica in blocco per gli utenti di Microsoft 365 e si vuole garantire che i messaggi vengano verificati in modo sicuro e tempestivo, seguire i suggerimenti in questa sezione.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Verificare che il nome: rispecchi chi sta inviando il messaggio
 

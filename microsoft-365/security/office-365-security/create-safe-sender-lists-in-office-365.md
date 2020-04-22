@@ -1,5 +1,5 @@
 ---
-title: Creare elenchi di mittenti attendibili in Office 365
+title: Creare elenchi di mittenti attendibili
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili in Office 365 e EOP che consentono ai messaggi in ingresso di ignorare il filtro posta indesiderata.
-ms.openlocfilehash: 4b50a4b63377c0f3e7b12592c512449f1a3adc12
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili in Microsoft 365 e EOP che consentono ai messaggi in ingresso di ignorare il filtro posta indesiderata.
+ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528630"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637677"
 ---
-# <a name="create-safe-sender-lists-in-office-365"></a>Creare elenchi di mittenti attendibili in Office 365
+# <a name="create-safe-sender-lists"></a>Creare elenchi di mittenti attendibili
 
-Se si è un cliente di Office 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, EOP offre diversi modi per garantire che gli utenti ricevano messaggi di posta elettronica da mittenti attendibili. Queste opzioni includono le regole del flusso di posta di Exchange (note anche come regole di trasporto), i mittenti attendibili di Outlook, l'elenco indirizzi IP consentiti (filtro connessioni) e gli elenchi di mittenti consentiti o gli elenchi di domini consentiti nei criteri di protezione dalla posta In modo collettivo, è possibile considerare queste opzioni come _elenchi di mittenti attendibili_.
+Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, EOP offre diversi modi per garantire che gli utenti ricevano messaggi di posta elettronica da mittenti attendibili. Queste opzioni includono le regole del flusso di posta di Exchange (note anche come regole di trasporto), i mittenti attendibili di Outlook, l'elenco indirizzi IP consentiti (filtro connessioni) e gli elenchi di mittenti consentiti o gli elenchi di domini consentiti nei criteri di protezione dalla posta In modo collettivo, è possibile considerare queste opzioni come _elenchi di mittenti attendibili_.
 
 Gli elenchi di mittenti attendibili disponibili sono descritti nell'elenco seguente, in ordine da quelli consigliati come meno consigliati:
 

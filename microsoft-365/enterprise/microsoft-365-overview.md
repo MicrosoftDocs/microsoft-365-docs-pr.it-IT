@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/07/2020
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 per Enterprise.
-ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504092"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631562"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -32,7 +32,7 @@ Microsoft 365 per Enterprise è costituito da:
 
 |||
 |:-------|:-----|
-| Applicazioni locali e basate su cloud e servizi di produttività | Include sia Office 365 ProPlus, le app di Office più recenti per PC e Mac, come Word, Excel, PowerPoint, Outlook e altre, e una suite completa di servizi online per la posta elettronica, l'archiviazione dei file e la collaborazione, riunioni e altro ancora. |
+| Applicazioni locali e basate su cloud e servizi di produttività | Include sia le app Microsoft 365 per Enterprise, le app di Office più recenti per PC e Mac (come Word, Excel, PowerPoint, Outlook e altre), sia una serie completa di servizi online per la posta elettronica, l'archiviazione di file e la collaborazione, le riunioni e altro ancora. |
 | Windows 10 Enterprise | Risponde alle esigenze delle organizzazioni di grandi dimensioni e medie imprese, offrendo agli utenti la versione più produttiva e sicura dei professionisti IT e di Windows con la distribuzione, il dispositivo e la gestione delle app complete. |
 | Gestione dei dispositivi e servizi di sicurezza avanzati | Include Microsoft Intune, che è un servizio di gestione della mobilità Enterprise basato su cloud che consente di rendere produttivi i dipendenti mantenendo i dati aziendali protetti. |
 |||
@@ -45,7 +45,7 @@ Microsoft 365 per Enterprise è disponibile in tre piani.
 |:-------|:-----|
 | E3 | Accedere a prodotti e caratteristiche di base all'interno di Microsoft 365 per migliorare la produttività sul posto di lavoro e guidare l'innovazione in modo sicuro. |
 | E5 | Accedere ai prodotti e alle funzionalità più recenti all'interno di Microsoft 365, inclusi gli strumenti avanzati per la protezione delle minacce, la sicurezza e la collaborazione. Include tutte le funzionalità di E3's, oltre a strumenti avanzati per la sicurezza, la voce e l'analisi dei dati. |
-| F3 | Connettersi con i propri dipendenti di FIRSTLINE tramite strumenti e risorse appositamente creati che consentono loro di svolgere al meglio le proprie attività. |
+| F1 | Connettersi con i propri dipendenti di FIRSTLINE tramite strumenti e risorse appositamente creati che consentono loro di svolgere al meglio le proprie attività. |
 |||
 
 Se si dispone di Microsoft 365 E3, è anche possibile ottenere queste [offerte](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -55,7 +55,7 @@ Se si dispone di Microsoft 365 E3, è anche possibile ottenere queste [offerte](
 
 Queste offerte contengono funzionalità aggiuntive incluse in Microsoft 365 E5.
 
-Per ulteriori informazioni su ciò che è incluso in ogni piano, vedere [Transform Your Enterprise with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
+Per ulteriori informazioni, vedere [caratteristiche e funzionalità per ogni piano](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
 
 ## <a name="get-the-big-picture"></a>Ottenere l'immagine grande
 
@@ -101,7 +101,7 @@ Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi
 
 È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
-## <a name="deploy"></a>Distribuire
+## <a name="deploy"></a>Distribuzione
 
 Esistono tre modi per distribuire i prodotti, le caratteristiche e i componenti di Microsoft 365 per Enterprise:
 
@@ -125,7 +125,7 @@ Per ulteriori informazioni sulla distribuzione, vedere How:
 
 ## <a name="additional-microsoft-365-solutions"></a>Altre soluzioni Microsoft 365
 
-- [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
  
   È possibile unire le migliori funzionalità di produttività e collaborazione di Office 365 con soluzioni per la sicurezza e la gestione dei dispositivi per proteggere i dati aziendali di piccole e medie imprese (SMB).
 

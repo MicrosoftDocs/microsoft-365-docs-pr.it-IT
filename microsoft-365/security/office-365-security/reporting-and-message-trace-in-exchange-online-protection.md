@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft (EOP) Exchange Online Protection offre diversi rapporti che consentono di determinare lo stato generale e l'integrità dell'organizzazione. Sono inoltre disponibili strumenti per la risoluzione dei problemi relativi a eventi specifici, ad esempio il mancato recapito di un messaggio ai destinatari desiderati, e report di controllo per assicurare il rispetto dei requisiti di conformità. Nella tabella seguente vengono descritti i report e gli strumenti per la risoluzione dei problemi disponibili per gli amministratori di EOP.
-ms.openlocfilehash: 282fd032e73ccb8217801a575f6029dbd9fadc9c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e961c76daaad72fbd1ddede5651cb49fd66d48be
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598553"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634353"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Creazione di rapporti e traccia dei messaggi in Exchange Online Protection
 
@@ -25,7 +25,7 @@ Microsoft (EOP) Exchange Online Protection offre diversi rapporti che consentono
 
 ## <a name="usage-reports"></a>Report sull'uso
 
-**Attività gruppi di office 365**: consente di visualizzare informazioni sul numero di gruppi di Office 365 creati e utilizzati.
+**Attività gruppi microsoft 365**: consente di visualizzare informazioni sul numero di gruppi di Microsoft 365 creati e utilizzati.
 
 **Attività di posta elettronica**: consente di visualizzare informazioni sul numero di messaggi inviati, ricevuti e letti nell'intera organizzazione e per utenti specifici.
 
@@ -35,13 +35,13 @@ Microsoft (EOP) Exchange Online Protection offre diversi rapporti che consentono
 
 Per ulteriori informazioni, vedere le risorse seguenti:
 
-- [Rapporti di Office 365 nell'interfaccia di amministrazione-gruppi di Office 365](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione-gruppi Microsoft 365](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [Report di Office 365 nell'interfaccia di amministrazione - Attività di posta elettronica](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Rapporti Microsoft 365 nell'interfaccia di amministrazione-attività di posta elettronica](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [Report di Office 365 nell'interfaccia di amministrazione - Utilizzo delle applicazioni di posta elettronica](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle app di posta elettronica](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [Report di Office 365 nell'interfaccia di amministrazione - Utilizzo delle cassette postali](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle cassette postali](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Rapporti di conformità & di sicurezza nell'interfaccia di amministrazione di Microsoft 365
 

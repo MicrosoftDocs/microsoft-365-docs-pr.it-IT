@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Informazioni su come ottenere una versione di valutazione gratuita o su come acquistare un abbonamento a Microsoft 365.
-ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141624"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631906"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Provare o acquistare un abbonamento a Microsoft 365
 
 Microsoft 365 è una soluzione completa che unisce Office 365 e Windows 10 con sicurezza avanzata e gestione dei dispositivi. Se si dispone già di un abbonamento e si vuole provare o acquistare un abbonamento a Microsoft 365, il modo migliore per farlo è tramite l'interfaccia di amministrazione. Gli abbonamenti di Microsoft 365 seguenti sono disponibili nell'interfaccia di amministrazione per provare o acquistare subito:
   
-- Microsoft 365 Business
+- Microsoft 365 Business Premium
 
 - Microsoft 365 Enterprise E3
 
@@ -41,6 +41,7 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, 
 ## <a name="try-or-buy-a-microsoft-365-subscription"></a>Provare o acquistare un abbonamento a Microsoft 365
 
 ::: moniker range="o365-worldwide"
+
 
 1. Accedere all'interfaccia [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)di amministrazione e quindi accedere a servizi di **acquisto** **fatturazione** \> .
 
@@ -67,13 +68,13 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, 
 
 11. Nella pagina **ricevuta ordine** selezionare **continua**.
 
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 1. Accedere all'interfaccia [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)di amministrazione e quindi accedere a servizi di **acquisto** **fatturazione** \> .
 
-2. Nella pagina **acquisto servizi** sono elencate le sottoscrizioni disponibili per l'organizzazione.
+2. Nella pagina **acquisto servizi** sono elencate le sottoscrizioni disponibili per l'organizzazione. 
 
 3. Selezionare i puntini di ricerca in base al piano Microsoft 365 che si desidera provare o acquistare, quindi selezionare **Avvia versione di valutazione gratuita**, che offre 25 licenze utente per un termine di un mese oppure è possibile selezionare **Acquista ora**.
 
@@ -99,7 +100,6 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
 1. Accedere all'interfaccia [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)di amministrazione e quindi accedere a servizi di **acquisto** **fatturazione** \> .
 
 2. Nella pagina **acquisto servizi** sono elencate le sottoscrizioni disponibili per l'organizzazione. 
@@ -127,14 +127,16 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, 
 
 ::: moniker-end
 
+
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver ottenuto il nuovo abbonamento, è necessario assegnare una licenza agli utenti che utilizzeranno quell'abbonamento. Per informazioni, vedere [assegnare licenze agli utenti](../admin/manage/assign-licenses-to-users.md).
+Dopo aver ottenuto il nuovo abbonamento, è necessario assegnare una licenza agli utenti che utilizzeranno quell'abbonamento. Per informazioni, vedere [assegnare licenze agli utenti](../admin/manage/assign-licenses-to-users.md) .
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Acquistare un altro abbonamento a Office 365 per le aziende](buy-another-subscription.md)
+[Acquistare un altro abbonamento a Microsoft 365 for business](buy-another-subscription.md)
 
-[Acquistare o rimuovere un componente aggiuntivo per Office 365 per le aziende](buy-or-edit-an-add-on.md)
+[Acquistare o modificare un componente aggiuntivo per Microsoft 365 for business](buy-or-edit-an-add-on.md)
 
 [Aggiungere spazio di archiviazione per l'abbonamento](add-storage-space.md)
+

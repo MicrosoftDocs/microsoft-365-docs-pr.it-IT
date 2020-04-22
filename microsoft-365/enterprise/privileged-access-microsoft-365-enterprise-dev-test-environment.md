@@ -15,16 +15,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilizzare questa guida del laboratorio di testing per abilitare la gestione degli accessi con privilegi nell'ambiente di testing Microsoft 365 Enterprise.
-ms.openlocfilehash: ce637b94333f088d25e479e61ad2a98176a2f7c6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085375"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632864"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 Enterprise
 
-*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che di Office 365 Enterprise.*
+*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
 
 Con le istruzioni riportate in questo articolo, è possibile configurare la gestione degli accessi con privilegi per aumentare la sicurezza nell'ambiente di testing Microsoft 365 Enterprise.
 
@@ -46,7 +46,7 @@ Se si desidera configurare la gestione degli accessi con privilegi in un'azienda
 
 In questa fase, è possibile configurare un gruppo responsabili approvazione e abilitare la gestione degli accessi con privilegi per l'ambiente di testing Microsoft 365 Enterprise. Per ulteriori informazioni e una panoramica della gestione degli accessi con privilegi, vedere [gestione degli accessi con privilegi in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-Seguire questa procedura per configurare e usare l'accesso privilegiato nell'organizzazione di Office 365:
+Eseguire la procedura seguente per configurare e usare l'accesso privilegiato nell'organizzazione:
 
 - [Passaggio 1: creare un gruppo del responsabile approvazione](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
@@ -54,7 +54,7 @@ Seguire questa procedura per configurare e usare l'accesso privilegiato nell'org
 
 - [Passaggio 2: abilitare l'accesso con privilegi](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
-    L'accesso privilegiato deve essere attivato in modo esplicito in Office 365 con il gruppo di approvazione predefinito e includendo un set di account di sistema che si desidera escludere dal controllo di accesso a gestione accesso privilegiato. Assicurarsi di abilitare l'accesso con privilegi nell'organizzazione di Office 365 prima di iniziare la fase 3 di questa guida.
+    L'accesso privilegiato deve essere attivato in modo esplicito in Office 365 con il gruppo di approvazione predefinito e includendo un set di account di sistema che si desidera escludere dal controllo di accesso a gestione accesso privilegiato. Assicurarsi di abilitare l'accesso privilegiato nell'organizzazione prima di iniziare la fase 3 di questa guida.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fase 3: verificare che l'approvazione sia necessaria per le attività con privilegi elevati e
 

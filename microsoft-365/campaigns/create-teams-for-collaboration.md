@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Creare uno spazio di collaborazione per il team con Microsoft teams.
-ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a89d7a87a18431dfef72c6f7ca4d6c7fbce21f7c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056352"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635649"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Creare team per la collaborazione in Microsoft Teams
 
@@ -48,7 +48,7 @@ Ad esempio, le campagne possono creare i seguenti team per comunicare e collabor
 
 Quando si crea un team, ecco cos'altro viene creato:
 
-- Un nuovo [gruppo di Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- Un nuovo [gruppo di Microsoft 365](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 - Un sito e una raccolta documenti di [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) per archiviare i file del team
 - Una cassetta postale condivisa e un calendario di [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)
 - Un blocco appunti di OneNote

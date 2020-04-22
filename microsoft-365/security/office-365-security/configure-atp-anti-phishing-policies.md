@@ -1,5 +1,5 @@
 ---
-title: Configurare i criteri di anti-phishing ATP
+title: Configurare i criteri anti-phishing ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,20 +14,20 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing avanzati disponibili nelle organizzazioni con Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: b0316133c90837bedc657bde355f31d50ffe76ea
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 358abc2835e8d1fba39d72021f03b75775528bcf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537462"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638462"
 ---
-# <a name="configure-atp-anti-phishing-policies-in-office-365"></a>Configurazione dei criteri di anti-phishing ATP in Office 365
+# <a name="configure-atp-anti-phishing-policies"></a>Configurare i criteri anti-phishing ATP
 
-I criteri di anti-phishing ATP fanno parte di [Office 365 Advanced Threat Protection](office-365-atp.md). I criteri di anti-phishing ATP consentono di proteggere l'organizzazione da attacchi di phishing basati sulla rappresentazione malevola e altri tipi di attacchi di phishing. Per ulteriori informazioni sulle differenze tra i criteri di anti-phishing in Exchange Online Protection (EOP) e i criteri di anti-phishing ATP, vedere [protezione anti-phishing in Office 365](anti-phishing-protection.md).
+I criteri di anti-phishing ATP fanno parte di [Office 365 Advanced Threat Protection](office-365-atp.md). I criteri di anti-phishing ATP consentono di proteggere l'organizzazione da attacchi di phishing basati sulla rappresentazione malevola e altri tipi di attacchi di phishing. Per ulteriori informazioni sulle differenze tra i criteri di anti-phishing in Exchange Online Protection (EOP) e i criteri di anti-phishing ATP, vedere [protezione anti-phishing](anti-phishing-protection.md).
 
 Gli amministratori possono visualizzare, modificare e configurare (ma non eliminare) il criterio anti-phishing predefinito del trifosfato di adenosina. Per una maggiore granularità, è anche possibile creare criteri di anti-phishing ATP personalizzati che si applicano a utenti, gruppi o domini specifici nell'organizzazione. I criteri personalizzati hanno sempre la precedenza sul criterio predefinito, ma non è possibile modificarne la priorità (in funzione).
 
-È possibile configurare i criteri di anti-phishing ATP nel centro sicurezza & conformità di Office 365 o in PowerShell di Exchange Online.
+È possibile configurare i criteri di anti-phishing ATP nel centro sicurezza & Compliance o in PowerShell di Exchange Online.
 
 Per informazioni sulla configurazione dei criteri di anti-phishing incorporati più limitati disponibili nelle organizzazioni di protezione di Exchange Online (ovvero le organizzazioni di Office 365 senza ATP), vedere [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md).
 
@@ -73,7 +73,7 @@ Per aumentare l'efficacia della protezione anti-phishing, è possibile creare cr
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare i criteri di anti-phishing, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri anti-phishing, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità di Office 365](permissions-in-the-security-and-compliance-center.md).
+- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare i criteri di anti-phishing, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri anti-phishing, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Per le impostazioni consigliate per i criteri di anti-phishing ATP, vedere [Office ATP anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
 
@@ -246,7 +246,7 @@ Utilizzare le procedure seguenti per modificare i criteri di anti-phishing ATP: 
 
    Si noti che queste impostazioni sono identiche alle impostazioni disponibili nei criteri anti-phishing predefiniti in EOP.
 
-   - **Impostazioni del filtro di spoofing**: il valore predefinito **è attivato**e si consiglia di lasciarlo acceso. Per disattivarla, fare scorrere l'interruttore su **disattivata**. Per ulteriori informazioni, vedere [Configure Spoofing Intelligence in Office 365](learn-about-spoof-intelligence.md).
+   - **Impostazioni del filtro di spoofing**: il valore predefinito **è attivato**e si consiglia di lasciarlo acceso. Per disattivarla, fare scorrere l'interruttore su **disattivata**. Per altre informazioni, vedere [Configurare spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
      > Non è necessario disabilitare la protezione anti-spoofing se il record MX non punta a Office 365; è invece possibile abilitare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).

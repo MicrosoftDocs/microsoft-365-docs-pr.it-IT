@@ -22,21 +22,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Informazioni su come usare Microsoft 365 business to Factory Reset Windows 10 dispositivi gestiti, ripristinando le impostazioni originali all'acquisto.
-ms.openlocfilehash: 3705448602cdc22e9fb5843c46d5bdc1c4dbdb2e
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Informazioni su come utilizzare Microsoft 365 for business per ripristinare i dispositivi Windows 10 gestiti da Factory, ripristinando le impostazioni originali all'acquisto.
+ms.openlocfilehash: 7cf5619cb1b6f5f847690d723381614d4b7afc3c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561301"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634793"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Ripristinare le impostazioni del produttore per i dispositivi Windows 10
 
 [![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Il ripristino delle impostazioni predefinite ripristina le impostazioni originali di un dispositivo, ossia quelle disponibili al momento dell'acquisto. Tutte le app e i dati aggiunti nel dispositivo dopo l'acquisto vengono rimossi. È possibile usare Microsoft 365 Business per eseguire un ripristino delle impostazioni predefinite dei dispositivi Windows 10 gestiti.
+Il ripristino delle impostazioni predefinite ripristina le impostazioni originali di un dispositivo, ossia quelle disponibili al momento dell'acquisto. Tutte le app e i dati aggiunti nel dispositivo dopo l'acquisto vengono rimossi. È possibile utilizzare Microsoft 365 for business per ripristinare i dispositivi Windows 10 gestiti da Factory.
   
-1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
 2. Nella barra di spostamento a sinistra, scegliere **gestione** **dispositivi** \> .
 

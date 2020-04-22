@@ -11,22 +11,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sul rapporto della mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 11d605047b66751636ffce69ffff5c198f039fc7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088525"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635293"
 ---
 # <a name="mail-flow-map-report"></a>Report Mappa flusso di posta
 
-Questo rapporto fornisce informazioni su come scorre la posta attraverso l'organizzazione di Office 365. È possibile utilizzare queste informazioni per apprendere modelli, identificare anomalie e correggere i problemi man mano che si verificano.
+Questo rapporto fornisce informazioni dettagliate sul modo in cui la posta scorre nell'organizzazione. È possibile utilizzare queste informazioni per apprendere modelli, identificare anomalie e correggere i problemi man mano che si verificano.
 
 ![Il rapporto Mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>Widget mappa del flusso di posta
 
-Per impostazione predefinita, la mappa del flusso di posta Visualizza il modello di flusso di posta di alto livello del giorno precedente. È possibile utilizzare le frecce sinistra e destra per giorni diversi. Se si passa il puntatore del mouse su ogni area del report, viene visualizzato il volume di posta da e verso l'organizzazione di Office 365, come illustrato nel diagramma seguente:
+Per impostazione predefinita, la mappa del flusso di posta Visualizza il modello di flusso di posta di alto livello del giorno precedente. È possibile utilizzare le frecce sinistra e destra per giorni diversi. Se si passa il puntatore del mouse su ogni area del report, viene visualizzato il volume di posta da e verso l'organizzazione, come illustrato nel diagramma seguente:
 
 ![Frecce a destra e a sinistra nel widget mappa del flusso di posta](../../media/mail-flow-map-widget.png)
 

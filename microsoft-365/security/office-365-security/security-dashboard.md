@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537402"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632518"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -33,12 +33,12 @@ Guarda il video per ottenere una panoramica e quindi leggi questo articolo per u
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-A seconda di come è inclusa la sottoscrizione di Office 365 dell'organizzazione, il dashboard di sicurezza include diversi widget, come riepilogo della gestione delle minacce, stato di protezione delle minacce, rilevamenti di minacce globali settimanali, malware e altro ancora, come descritto nelle sezioni seguenti.
+A seconda di cosa include la sottoscrizione dell'organizzazione, il dashboard di sicurezza include diversi widget, come riepilogo della gestione delle minacce, stato di protezione delle minacce, rilevamenti di minacce settimanali globali, malware e altro ancora, come descritto nelle sezioni seguenti.
 
-Per visualizzare il dashboard di sicurezza, nel [Centro sicurezza & conformità di Office 365](../../compliance/go-to-the-securitycompliance-center.md)accedere a **Threat Management** \> **Dashboard**.
+Per visualizzare il dashboard di sicurezza, nel [Centro sicurezza & conformità](../../compliance/go-to-the-securitycompliance-center.md), accedere a **Threat Management** \> **Dashboard**.
 
 > [!NOTE]
-> Per visualizzare il dashboard di sicurezza, è necessario essere un amministratore globale di Office 365, un amministratore della sicurezza o un lettore di sicurezza. Alcuni widget richiedono ulteriori autorizzazioni per la visualizzazione. Per ulteriori informazioni, vedere [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Per visualizzare il dashboard di sicurezza, è necessario essere un amministratore globale, un amministratore della sicurezza o un lettore di sicurezza. Alcuni widget richiedono ulteriori autorizzazioni per la visualizzazione. Per ulteriori informazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="threat-management-summary"></a>Riepilogo di gestione delle minacce
 
@@ -61,7 +61,7 @@ Il widget dello stato di protezione delle minacce Mostra l'efficacia della prote
 
 ![Widget sullo stato della protezione dalle minacce](../../media/tpswidget.png)
 
-I dettagli dipendono dal fatto che la sottoscrizione di Office 365 includa [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) con o senza [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
+I dettagli dipendono dal fatto che la sottoscrizione Microsoft 365 includa [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) con o senza [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
 |||
 |---|---|
@@ -101,7 +101,7 @@ Insights non solo i problemi principali che è necessario esaminare, ma anche su
 
 ![Intuizioni intelligenti](../../media/smartinsights.png)
 
-Ad esempio, si potrebbe vedere che i messaggi di posta elettronica di phishing vengono recapitati perché alcuni utenti hanno disabilitato le opzioni di posta indesiderata. Per ulteriori informazioni sul funzionamento delle intuizioni, vedere [Reports and Insights in the Office 365 Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
+Ad esempio, si potrebbe vedere che i messaggi di posta elettronica di phishing vengono recapitati perché alcuni utenti hanno disabilitato le opzioni di posta indesiderata. Per ulteriori informazioni sul funzionamento delle intuizioni, vedere [Reports and Insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
 
 ## <a name="threat-investigation-and-response"></a>Analisi e risposta alle minacce
 
@@ -115,7 +115,7 @@ Nella parte inferiore del dashboard di sicurezza è presente una sezione **Trend
 
 ![La sezione Trends riepiloga le tendenze del flusso di posta elettronica per l'organizzazione](../../media/trends.png)
 
-Inoltre, se la sottoscrizione di Office 365 dell'organizzazione include [office 365 Advanced Threat Protection Plan 2](office-365-ti.md), è disponibile un rapporto di **avvisi di gestione delle minacce recente** in questa sezione che consente al team di sicurezza di visualizzare e intervenire su avvisi di sicurezza ad alta priorità.
+Inoltre, se la sottoscrizione dell'organizzazione include [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), in questa sezione è disponibile anche un rapporto di **avvisi sulla gestione delle minacce** che consente al team di sicurezza di visualizzare e intervenire su avvisi di sicurezza ad alta priorità.
 
 Per visualizzare o accedere al widget messaggi di posta elettronica inviati e ricevuti, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 

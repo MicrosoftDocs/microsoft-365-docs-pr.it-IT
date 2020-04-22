@@ -1,5 +1,5 @@
 ---
-title: Gestire l'accesso guest nei gruppi di Office 365
+title: Gestire l'accesso guest nei gruppi di Microsoft 365
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: Informazioni su come aggiungere gli ospiti a un gruppo di Office 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Informazioni su come aggiungere gli ospiti a un gruppo di Microsoft 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
+ms.openlocfilehash: cca1d3dff4d95f5b15b9f18d5eeebcf054e52fe3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894504"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630068"
 ---
-# <a name="manage-guest-access-in-office-365-groups"></a>Gestire l'accesso guest nei gruppi di Office 365
+# <a name="manage-guest-access-in-microsoft-365-groups"></a>Gestire l'accesso guest nei gruppi di Microsoft 365
 
-Per impostazione predefinita, l'accesso guest per i gruppi di Office 365 è attivato per l'organizzazione. Gli amministratori possono controllare se consentire l'accesso Guest ai gruppi per l'intera organizzazione o per i singoli gruppi.
+Per impostazione predefinita, l'accesso guest per i gruppi di Microsoft 365 è attivato per l'organizzazione. Gli amministratori possono controllare se consentire l'accesso Guest ai gruppi per l'intera organizzazione o per i singoli gruppi.
 
-Quando è attivata, i membri del gruppo possono invitare gli utenti Guest a un gruppo di Office 365 tramite Outlook sul Web. Gli inviti vengono inviati al proprietario del gruppo per l'approvazione.
+Quando è attivata, i membri del gruppo possono invitare gli utenti Guest a un gruppo di Microsoft 365 tramite Outlook sul Web. Gli inviti vengono inviati al proprietario del gruppo per l'approvazione.
 
 > [!Note]
 > Le reti aziendali di Yammer che si trovano in modalità nativa o l' [eu Geo](https://go.microsoft.com/fwlink/?linkid=2107357) non supportano gli utenti della rete.
-> I gruppi di Yammer connessi a Office 365 non supportano attualmente l'accesso guest, ma è possibile creare gruppi esterni non connessi nella rete Yammer. Per istruzioni, vedere [creare e gestire gruppi esterni in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx) .
+> I gruppi di Yammer connessi a Microsoft 365 non supportano attualmente l'accesso guest, ma è possibile creare gruppi esterni non connessi nella rete Yammer. Per istruzioni, vedere [creare e gestire gruppi esterni in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx) .
 
 ### <a name="edit-guest-information"></a>Modificare le informazioni Guest
 
@@ -48,11 +48,11 @@ L'accesso guest nei gruppi è spesso utilizzato come parte di uno scenario più 
 
 Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile farlo nell'interfaccia di amministrazione di Microsoft 365.
 
-1. Nell'interfaccia di amministrazione, passare alle impostazioni delle **Impostazioni** \> **e selezionare** i gruppi di **Office 365**.
+1. Nell'interfaccia di amministrazione, passare **Settings** \> alla pagina **Impostazioni e** selezionare **Microsoft 365 gruppi**.
   
-2. Nella pagina **gruppi di Office 365** , scegliere se si desidera consentire agli utenti esterni all'organizzazione di accedere alle risorse del gruppo o lasciare che i proprietari del gruppo aggiungano persone esterne all'organizzazione ai gruppi.
+2. Nella pagina **Microsoft 365 groups** , scegliere se si desidera consentire agli utenti esterni all'organizzazione di accedere alle risorse del gruppo o consentire ai proprietari di gruppi di aggiungere persone esterne all'organizzazione.
 
-## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>Aggiungere gli utenti a un gruppo di Office 365 dall'interfaccia di amministrazione
+## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Aggiungere gli utenti a un gruppo di Microsoft 365 dall'interfaccia di amministrazione
 
 Se l'ospite è già presente nella directory, è possibile aggiungerli ai gruppi dall'interfaccia di amministrazione di Microsoft 365.
   

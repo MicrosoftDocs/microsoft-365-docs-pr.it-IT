@@ -1,5 +1,5 @@
 ---
-title: Differenza tra l'installazione guidata di Office 365 e la pagina di installazione
+title: Differenza tra l'installazione guidata e la pagina di installazione
 f1.keywords:
 - NOCSH
 ms.author: v-sharos
@@ -18,46 +18,46 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Informazioni sulla differenza tra l'installazione guidata di Office 365 e la pagina di installazione.
-ms.openlocfilehash: fb4cf29b2cab493e0240cf9cfef4cbabeb45087c
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Scopri la differenza tra l'installazione guidata e la pagina di installazione.
+ms.openlocfilehash: 41a87690282cdf2ff3d1514f9303776c0d2d33bf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209701"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631804"
 ---
-# <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Differenza tra l'installazione guidata di Office 365 e la pagina di installazione
+# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Differenza tra l'installazione guidata e la pagina di installazione
 
-Office 365 offre due esperienze di installazione: 
+Microsoft 365 offre due esperienze di installazione: 
 
 - Configurazione iniziale tramite l'installazione guidata
 - Configurazione continua e avanzata tramite la pagina di **installazione**
 
-L'installazione guidata fornisce una procedura guidata per l'impostazione della configurazione di base di Office 365. Dopo aver completato la configurazione iniziale, è possibile passare alla pagina di **installazione** per completare l'installazione e la configurazione dei servizi disponibili con gli abbonamenti.
+L'installazione guidata fornisce una procedura guidata per l'impostazione della configurazione di base di Microsoft 365. Dopo aver completato la configurazione iniziale, è possibile passare alla pagina di **installazione** per completare l'installazione e la configurazione dei servizi disponibili con gli abbonamenti.
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Utilizzo dell'installazione guidata per completare le attività di configurazione iniziali
 
 Per configurare l'account, accedere all'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339), selezionare **Setup** nel riquadro di spostamento sinistro e quindi selezionare **installazione guidata** nella pagina **configurazione** .
 
-![Avviare la configurazione guidata di Office 365 business](../../media/o365b-guided-setup.png)
+![Avviare l'installazione guidata di Microsoft 365 Apps for business](../../media/o365b-guided-setup.png)
 
 La procedura guidata di installazione illustra i passaggi seguenti:
 
-1. Installare le app di Office 365 nel computer in uso.
+1. Installare le app di Microsoft 365 nel computer in uso.
 
 2. Scegliere e verificare il dominio, ad esempio contoso.com.
 
-3. Aggiungere nuovi utenti e assegnare loro le licenze in modo che possano scaricare e installare le app di Office 365.
+3. Aggiungere nuovi utenti e assegnare loro le licenze in modo che possano scaricare e installare le app di Microsoft 365.
 
-4. Dominio Connect'your.
+4. Connettere il dominio.
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Utilizzare la pagina di installazione per completare e gestire la configurazione
 
-Per accedere alla pagina di **installazione** nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339), selezionare **installazione** nel riquadro di spostamento. In base ai prodotti acquistati, sono state riportate le funzionalità configurate e il ruolo di amministratore, le attività e le informazioni correlate provenienti da tutte le parti di Office 365.
+Per accedere alla pagina di **installazione** nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339), selezionare **installazione** nel riquadro di spostamento. In base ai prodotti acquistati, sono emerse le funzionalità configurate e il ruolo di amministratore, le attività e le informazioni correlate provenienti da Microsoft 365.
 
 Verrà visualizzato l'elenco completo delle attività di installazione disposte in categorie logiche, incluse quelle completate nell'installazione guidata.
 
-![Pagina di installazione di Office 365 per le aziende](../../media/o365b-setup-page.png)
+![Pagina di installazione di Microsoft 365 per le aziende](../../media/o365b-setup-page.png)
 
 Scegliere **View** per qualsiasi attività per ottenere informazioni a colpo d'occhio, quali la descrizione dell'attività, l'impatto dell'utente, i prerequisiti, l'implementazione e le statistiche relative alla sicurezza e all'adozione che consentono di comprendere le conseguenze e l'impatto prima di procedere.
 

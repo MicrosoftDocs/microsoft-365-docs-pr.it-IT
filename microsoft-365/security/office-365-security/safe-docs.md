@@ -1,5 +1,5 @@
 ---
-title: Documenti attendibili in Office 365 ATP
+title: Sicurezza documenti di Office 365 ATP
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui documenti attendibili in Office 365 ATP.
-ms.openlocfilehash: 3980746eb2f48e77c22f5139827bead5640dad61
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: b70c7013ce038a3934b7ea5e62d1d0530f12e4e6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170476"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634317"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Documenti attendibili in Office 365 Advanced Threat Protection
 
@@ -36,11 +36,11 @@ Documenti attendibili è una funzionalità di Office 365 Advanced Threat Protect
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di Exchange Online Protection, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo argomento, è necessario disporre delle autorizzazioni assegnate. Per abilitare e configurare documenti attendibili, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the Office 365 security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Prima di poter eseguire le procedure descritte in questo argomento, è necessario disporre delle autorizzazioni assegnate. Per abilitare e configurare documenti attendibili, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="use-the-office-365-security--compliance-center-to-configure-safe-documents"></a>Utilizzare il Centro sicurezza & conformità di Office 365 per configurare i documenti attendibili
+## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Utilizzare il Centro sicurezza & conformità per configurare i documenti attendibili
 
-1. Aprire il Centro sicurezza & conformità di Office 365 <https://protection.office.com>all'indirizzo.
+1. Aprire il Centro sicurezza & Compliance <https://protection.office.com>all'indirizzo.
 
 2. Accedere a **criteri** \> di **gestione delle** \> minacce per gli **allegati sicuri ATP**.
 

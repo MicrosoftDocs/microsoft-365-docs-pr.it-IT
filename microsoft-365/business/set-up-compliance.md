@@ -1,5 +1,5 @@
 ---
-title: Aumentare la protezione dalle minacce per Microsoft 365 business
+title: Aumentare la protezione dalle minacce per Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare le funzionalità di conformità per evitare la perdita di dati e proteggere le informazioni riservate dei clienti.
-ms.openlocfilehash: 6f4520b052c2e7acb8748d3c9d6e26777cb56d4b
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561241"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635125"
 ---
 # <a name="set-up-compliance-features"></a>Funzionalità di conformità della configurazione
 
-Microsoft 365 business è dotato di funzionalità per proteggere i dati e i dispositivi, nonché per garantire la sicurezza delle informazioni riservate e dei clienti.
+Microsoft 365 Business Premium è dotato di funzionalità per proteggere i dati e i dispositivi, nonché per garantire la sicurezza delle informazioni riservate e dei clienti.
 
 ## <a name="set-up-dlp-features"></a>Configurare le funzionalità DLP
 

@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Informazioni su come leggere e comprendere la fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409711"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634981"
 ---
 # <a name="understand-your-invoice"></a>Informazioni sulla fattura
 
 La fattura fornisce un riepilogo degli addebiti e delle istruzioni per il pagamento. È possibile [visualizzare la fattura online](#view-your-online-invoice) nell'interfaccia di amministrazione di Microsoft 365. È anche possibile scaricarlo nel formato di documento portatile (. pdf) per inviare tramite posta elettronica.
 
-Se si dispone di un abbonamento a Office 365, vedere [visualizzare la fattura per office 365 for business](view-your-bill-or-invoice.md).
+Se si dispone di un abbonamento a Microsoft 365, vedere [visualizzare la fattura per microsoft 365 for business](view-your-bill-or-invoice.md).
 
 ## <a name="understand-the-invoice-header"></a>Informazioni sull'intestazione della fattura
 
@@ -102,7 +102,7 @@ Le fatture sono disponibili online. Un collegamento alla fattura online è dispo
 
 ### <a name="to-view-your-online-invoice"></a>Per visualizzare la fattura online
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
 
 2. Per scaricare la versione. pdf della fattura, scegliere **Scarica fattura PDF** nella riga per la fattura che si desidera visualizzare.
 

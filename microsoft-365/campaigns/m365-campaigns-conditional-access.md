@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come richiedere l'utilizzo dell'AMF e configurare i criteri di accesso condizionale per Microsoft 365 business.
-ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su come richiedere il master e configurare i criteri di accesso condizionale per Microsoft 365 for business.
+ms.openlocfilehash: 3caca685d9a96434a0daa2736c322ac1a68b7feb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056415"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635613"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Richiedere l'autenticazione a più fattori e configurare i criteri di accesso condizionale
 
@@ -49,7 +49,7 @@ Microsoft consiglia di abilitare tutti questi criteri di base. Dopo aver abilita
 Per ulteriori informazioni su questi criteri, vedere [What are Baseline Policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
 
 
-## <a name="require-mfa"></a>Richiedi MFA
+## <a name="require-mfa"></a>Richiedere la MFA
 
 Per richiedere che tutti gli utenti eseguano l'accesso con una seconda forma di ID:
 

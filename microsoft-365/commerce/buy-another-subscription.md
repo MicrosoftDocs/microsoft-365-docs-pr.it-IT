@@ -1,5 +1,5 @@
 ---
-title: Acquistare un altro abbonamento a Office 365 per le aziende
+title: Acquistare un altro abbonamento a Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,26 +20,27 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
-description: "Informazioni su come acquistare un altro abbonamento a Office 365 for business per l'organizzazione quando si dispone già di un abbonamento. "
+description: "Informazioni su come acquistare un altro abbonamento a Microsoft 365 for business per l'organizzazione quando si dispone già di un abbonamento. "
 ms.custom: okr_SMB
-ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142264"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634933"
 ---
-# <a name="buy-another-office-365-for-business-subscription"></a>Acquistare un altro abbonamento a Office 365 per le aziende
+# <a name="buy-another-microsoft-365-for-business-subscription"></a>Acquistare un altro abbonamento a Microsoft 365 for business
 
-Se si dispone già di un abbonamento a Office 365 per le aziende e si vuole acquistare un altro abbonamento per la propria organizzazione, il modo migliore è farlo è tramite l'interfaccia di amministrazione. Se non è stato ancora acquistato il primo abbonamento a Office 365 for business per la propria organizzazione, andare [qui](https://products.office.com/business/compare-office-365-for-business-plans) per scegliere un piano.
+Se si dispone già di un abbonamento a Microsoft 365 per le aziende e si vuole acquistare un altro abbonamento per la propria organizzazione, il modo migliore è farlo è attraverso l'interfaccia di amministrazione. Se non è stato ancora acquistato il primo abbonamento Microsoft 365 for business per l'organizzazione, andare [qui](https://products.office.com/business/compare-office-365-for-business-plans) per scegliere un piano.
   
 Quando si acquista un altro abbonamento tramite l'interfaccia di amministrazione, si è certi che il nuovo abbonamento verrà associato alla stessa organizzazione (Domain Name Space) dell'abbonamento esistente. In questo modo è più facile spostare gli utenti all'interno dell'organizzazione tra gli abbonamenti o assegnare loro una licenza utente per l'ulteriore sottoscrizione di cui hanno bisogno.
   
-Dopo l'acquisto di un nuovo abbonamento, è necessario assegnare agli utenti che desiderano utilizzare tale sottoscrizione una licenza per l'utente. Per informazioni, vedere [assegnare licenze agli utenti in Office 365 for business](../admin/manage/assign-licenses-to-users.md).
+Dopo l'acquisto di un nuovo abbonamento, è necessario assegnare agli utenti che desiderano utilizzare tale sottoscrizione una licenza per l'utente. Per informazioni, vedere [assegnare licenze agli utenti in Microsoft 365 for business](../admin/manage/assign-licenses-to-users.md).
   
 ## <a name="buy-another-subscription"></a>Acquistare un altro abbonamento
 
 ::: moniker range="o365-worldwide"
+
 
 1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 

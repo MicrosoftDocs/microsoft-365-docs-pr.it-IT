@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Le autorizzazioni necessarie per eseguire le attività di gestione di Microsoft Exchange Online Protection (EOP) variano a seconda della funzionalità che si sta gestendo.
-ms.openlocfilehash: 2129df7faaa977d59f8af8082291520d33bc9cc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 146bf34f157eb30e680ad9e0c3e53501d6e7b425
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599313"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638119"
 ---
 # <a name="feature-permissions-in-eop"></a>Autorizzazioni per le funzionalità in Exchange Online Protection
 
 Le autorizzazioni necessarie per eseguire le attività di gestione di Exchange Online Protection (EOP) variano a seconda della funzionalità che si sta gestendo.
 
-Per impostare EOP, è necessario essere un amministratore globale di Office 365 o un amministratore di Exchange (il gruppo di ruolo di gestione dell'organizzazione).
+Per impostare EOP, è necessario essere un amministratore globale o un responsabile di Exchange Company (gruppo di ruoli Gestione organizzazione).
 
 ## <a name="exchange-online-protection-permissions"></a>Autorizzazioni Exchange Online Protection
 
@@ -36,7 +36,7 @@ Per individuare le autorizzazioni necessarie per gestire le caratteristiche di E
 |Regole del flusso di posta|Gestione organizzazione <br/><br/> Gestione record|
 |Domini|Gestione organizzazione <br/><br/> Gestione organizzazione sola visualizzazione|
 |Advanced Threat Protection (ATP)|Gestione organizzazione <br/><br/> Gestione igiene|
-|Office 365 connettori|Gestione organizzazione|
+|Connettori Microsoft 365|Gestione organizzazione|
 |Traccia dei messaggi|Gestione organizzazione <br/><br/> Gestione organizzazione sola visualizzazione|
 |Configurazione organizzazione|Gestione organizzazione|
 |Quarantena|Gestione organizzazione <br/><br/> Gestione organizzazione sola visualizzazione <br/><br/> Gestione igiene|

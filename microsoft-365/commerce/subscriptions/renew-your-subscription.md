@@ -1,5 +1,5 @@
 ---
-title: Rinnovare Office 365 per le aziende
+title: Rinnovare Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,19 +23,19 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: "Informazioni su come rinnovare l'abbonamento a Office 365 for business utilizzando un codice \"Product Key\" e accendere o spegnere la fatturazione ricorrente. "
-ms.openlocfilehash: a382a2c4767f9dac4ee276c050d077d854b99084
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: "Informazioni su come rinnovare l'abbonamento a Microsoft 365 for business utilizzando un codice \"Product Key\" e accendere o spegnere la fatturazione ricorrente. "
+ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175203"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636560"
 ---
-# <a name="renew-office-365-for-business"></a>Rinnovare Office 365 per le aziende
+# <a name="renew-microsoft-365-for-business"></a>Rinnovare Microsoft 365 for business
 
-Questo articolo si applica alla maggior parte degli abbonamenti a pagamento a Office 365 per le aziende.
+Questo articolo si applica alla maggior parte degli abbonamenti a pagamento Microsoft 365 for business.
   
-Per rinnovare l'utilizzo di un codice Product Key acquistato da un rivenditore o da un partner di Office 365, vedere [trovare e immettere il codice "Product Key](../enter-your-product-key.md)".
+Per rinnovare l'utilizzo di un codice Product Key acquistato da un rivenditore o da un partner Microsoft, vedere [trovare e immettere il codice "Product Key](../enter-your-product-key.md)".
 
 > [!NOTE]
 > Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
@@ -47,6 +47,7 @@ Se si paga con carta di credito o conto corrente bancario, la **fatturazione ric
 Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà alla fine del periodo di validità. È possibile abilitare la **fatturazione ricorrente** e fornire le informazioni sulla carta di credito o sul conto corrente bancario in modo che la sottoscrizione continuerà a essere addebitata ogni anno nel giorno in cui è stato sottoscritto. Si ha anche la possibilità di pagare ogni mese o di pagare per tutto l'anno in anticipo. L'addebito sulla carta di credito o sul conto corrente bancario non verrà effettuato prima della scadenza del periodo di abbonamento iniziale.
 
 ::: moniker range="o365-worldwide"
+
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
@@ -67,7 +68,11 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 ::: moniker range="o365-germany"
   
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abbonamenti</a>.
+
+    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
+
+    Se si usa Office 365 gestito da 21Vianet, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
  
@@ -86,7 +91,11 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 ::: moniker range="o365-21vianet"
   
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abbonamenti</a>.
+
+    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
+
+    Se si usa Office 365 gestito da 21Vianet, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
  
@@ -106,7 +115,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 ## <a name="related-articles"></a>Articoli correlati
 
 [Riattivare l'abbonamento](reactivate-your-subscription.md)
-
+  
 [Che cosa succede ai dati personali al termine dell'abbonamento?](what-if-my-subscription-expires.md)
 
 [Aggiungere, aggiornare o rimuoverei metodi di pagamento](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
@@ -115,4 +124,4 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
   
 [Immettere il codice "Product Key"](../enter-your-product-key.md)
   
-[Acquistare la versione di valutazione di Office 365 per le aziende](../buy-a-subscription-from-your-free-trial.md)
+[Acquistare la versione di valutazione di Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md)

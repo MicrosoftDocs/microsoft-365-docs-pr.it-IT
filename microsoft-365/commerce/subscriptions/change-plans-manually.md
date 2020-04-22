@@ -1,5 +1,5 @@
 ---
-title: Modificare manualmente i piani di Office 365 per le aziende
+title: Modificare manualmente i piani di Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modificare manualmente le sottoscrizioni acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142152"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636584"
 ---
 # <a name="change-plans-manually"></a>Modificare i piani manualmente
 
@@ -51,9 +51,9 @@ Per continuare con una modifica manuale, leggere [passaggio 2: acquistare un nuo
 
 OPPURE
 
-**Acquistare un nuovo abbonamento e le relative licenze:** seguire la procedura descritta in [Acquistare un altro abbonamento a Office 365 per le aziende](../buy-another-subscription.md) per acquistare un nuovo abbonamento.
+**Acquistare un nuovo abbonamento e licenze:** Per acquistare un nuovo abbonamento, seguire la procedura illustrata in [acquistare un altro abbonamento a Microsoft 365 for business](../buy-another-subscription.md) .
 
-Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si trovano gli utenti. Ad esempio, controllare gli indirizzi di posta elettronica degli utenti di Office 365 da spostare. Se gli indirizzi di posta \@elettronica includono contoso.com, è necessario acquistare un nuovo abbonamento per contoso.com.
+Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si trovano gli utenti. Ad esempio, controllare gli indirizzi di posta elettronica per gli utenti che si desidera spostare. Se gli indirizzi di posta \@elettronica includono contoso.com, è necessario acquistare un nuovo abbonamento per contoso.com.
 Includere una licenza per ogni utente da spostare.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Passaggio 3: controllare il nuovo abbonamento e le licenze
@@ -114,5 +114,4 @@ Se tutti gli utenti sono stati spostati su un altro abbonamento e l'abbonamento 
 Se sono stati spostati solo alcuni utenti, [rimuovere le licenze](../licenses/remove-licenses-from-subscription.md) non più necessarie.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Supporto per la chiamata per la modifica di piani
-
 [Chiamare il supporto tecnico Microsoft](../../admin/contact-support-for-business-products.md)

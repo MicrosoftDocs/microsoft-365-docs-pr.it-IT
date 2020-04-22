@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Sintesi: gestire il sito del team di SharePoint Online isolato con queste procedure.'
-ms.openlocfilehash: 59c86c869ed38c3e64ff19974660cf96ec4c715e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5fe92f2653774b40eb227c9f8cbb57443fd51e2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599003"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635389"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Gestire un sito del team di SharePoint Online isolato
 
@@ -37,9 +37,9 @@ Quando un nuovo utente accede al sito, è necessario decidere il livello di part
     
 - Visualizzazione: aggiungere l'account utente al gruppo di accesso dei visualizzatori del sito
     
-Se si gestiscono account utente e gruppi tramite servizi di dominio Active Directory, aggiungere gli utenti adatti ai gruppi di accesso appropriato utilizzando le normali procedure di gestione di utenti e gruppi di AD DS e attendere la sincronizzazione con Office 365 abbonamento.
+Se si gestiscono gli account utente e i gruppi tramite servizi di dominio Active Directory, aggiungere gli utenti idonei ai gruppi di accesso appropriato utilizzando le normali procedure di gestione di utenti e gruppi di AD DS e attendere la sincronizzazione con l'abbonamento.
   
-Se si gestiscono gli account utente e i gruppi tramite Office 365, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o Microsoft PowerShell:
+Se si gestiscono gli account utente e i gruppi tramite Microsoft 365, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o Microsoft PowerShell:
   
 - Per l'interfaccia di amministrazione di Microsoft 365, accedere con un account utente a cui è stato assegnato l'amministratore dell'account utente o il ruolo di amministratore dell'azienda e utilizzare i gruppi per aggiungere gli utenti adatti ai gruppi di accesso appropriato.
     
@@ -69,7 +69,7 @@ Per aggiungere l'accesso per un intero gruppo, è necessario decidere il livello
     
 - Visualizzazione: aggiungere il gruppo al gruppo di accesso dei visualizzatori del sito
     
-Se si gestiscono account utente e gruppi tramite servizi di dominio Active Directory, aggiungere i gruppi adatti ai gruppi corretti utilizzando le normali procedure di gestione di utenti e gruppi di servizi di dominio Active Directory e attendere la sincronizzazione con l'abbonamento a Office 365.
+Se si gestiscono account utente e gruppi tramite servizi di dominio Active Directory, aggiungere i gruppi adatti ai gruppi corretti utilizzando le normali procedure di gestione di utenti e gruppi di servizi di dominio Active Directory e attendere la sincronizzazione con l'abbonamento.
   
 Se si gestiscono gli account utente e i gruppi tramite Office 365, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o PowerShell:
   
@@ -94,7 +94,7 @@ Quando è necessario rimuovere l'accesso di un utente dal sito, si rimuove tale 
     
 - Visualizzazione: rimuovere l'account utente dal gruppo di accesso dei visualizzatori del sito
     
-Se si gestiscono account utente e gruppi tramite servizi di dominio Active Directory, rimuovere gli utenti idonei dai gruppi di accesso appropriato utilizzando le normali procedure di gestione di utenti e gruppi di servizi di dominio Active Directory e attendere la sincronizzazione con l'abbonamento a Office 365.
+Se si gestiscono account utente e gruppi tramite servizi di dominio Active Directory, rimuovere gli utenti idonei dai gruppi di accesso appropriato utilizzando le normali procedure di gestione di utenti e gruppi di servizi di dominio Active Directory e attendere la sincronizzazione con l'abbonamento.
   
 Se si gestiscono gli account utente e i gruppi tramite Office 365, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o PowerShell:
   
@@ -127,7 +127,7 @@ Per rimuovere l'accesso per un intero gruppo, si rimuove tale gruppo dal gruppo 
     
 - Visualizzazione: rimuovere il gruppo dal gruppo di acceso dei visualizzatori del sito
     
-Se si gestiscono gli account utente e i gruppi tramite Windows Server Active Directory, rimuovere i gruppi corretti dai gruppi di accesso appropriato utilizzando le normali procedure di gestione di utenti e gruppi di servizi di dominio Active Directory e attendere la sincronizzazione con Office 365 abbonamento.
+Se si gestiscono gli account utente e i gruppi tramite Windows Server Active Directory, rimuovere i gruppi corretti dai gruppi di accesso appropriato utilizzando le normali procedure di gestione di utenti e gruppi di servizi di dominio Active Directory e attendere la sincronizzazione con l'abbonamento.
   
 Se si gestiscono gli account utente e i gruppi tramite Office 365, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o PowerShell:
   
@@ -148,7 +148,7 @@ In alcuni casi, un sottoinsieme di utenti che lavorano all'interno del sito isol
   
 Per creare una sottocartella di documenti con autorizzazioni personalizzate, eseguire le operazioni seguenti:
   
-1. Accedere a Office 365 con un account che è membro del gruppo di accesso degli amministratori del sito. Per informazioni, vedere [Dove accedere a Office 365 per le aziende](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere a un account membro del gruppo di accesso Admins per il sito. Per ulteriori informazioni, vedere [where to Sign in to Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Accedere al sito del team isolato e fare clic su **Documenti**.
     

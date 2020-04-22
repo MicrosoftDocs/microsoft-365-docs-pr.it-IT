@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: "Scoprire quante tasse verranno addebitate per l'abbonamento a Office 365 for business in diverse aree geografiche. "
+description: "Scoprire quante tasse verranno addebitate per l'abbonamento a Microsoft 365 for business in diverse aree geografiche. "
 ms.custom: okr_SMB
-ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826314"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635005"
 ---
 # <a name="tax-information"></a>Informazioni fiscali
 
-Le imposte per gli acquisti dell'interfaccia di amministrazione di Microsoft 365 che sono state apportate tramite Microsoft sono determinate dall'indirizzo aziendale oppure, se è diverso, dall'indirizzo di spedizione. Se ci si trova negli Stati Uniti, è necessario fornire un numero di identificazione del datore di lavoro federale (FEIN).
+Le imposte per gli acquisti nell'interfaccia di amministrazione di Microsoft 365 effettuate tramite Microsoft vengono determinate in base all'indirizzo aziendale o, se diverso, all'indirizzo di spedizione. Se ci si trova negli Stati Uniti, è necessario fornire un numero di identificazione del datore di lavoro federale (FEIN).
 
 Le aziende di questi paesi possono fornire il proprio numero di partita IVA:
 

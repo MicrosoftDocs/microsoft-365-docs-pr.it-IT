@@ -16,23 +16,23 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 0d5d626da8f8bdcdc234f578145db0dfde2c06a5
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.openlocfilehash: 9755fccb482dc294da7a0747310776314c739139
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547609"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634413"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
-**Exchange Online Protection (EOP)** è il fulcro della sicurezza per le sottoscrizioni di Office 365 e consente ai messaggi di posta elettronica dannosi di raggiungere le cassette postali dei dipendenti. Tuttavia, con attacchi nuovi e sofisticati che emergono ogni giorno, sono spesso necessarie protezioni migliorate. **Office 365 Advanced Threat Protection (ATP)** ATP piano 1 o ATP piano 2 contengono funzionalità aggiuntive che forniscono agli amministratori più livelli di sicurezza, controllo ed indagini.
+**Exchange Online Protection (EOP)** è il fulcro della sicurezza per le sottoscrizioni di Microsoft 365 e consente di evitare che i messaggi di posta elettronica dannosi raggiungano la posta in arrivo del dipendente. Tuttavia, con attacchi nuovi e sofisticati che emergono ogni giorno, sono spesso necessarie protezioni migliorate. **Office 365 Advanced Threat Protection (ATP)** ATP piano 1 o ATP piano 2 contengono funzionalità aggiuntive che forniscono agli amministratori più livelli di sicurezza, controllo ed indagini.
 
 Anche se si autorizza gli amministratori della sicurezza a personalizzare le impostazioni di sicurezza, esistono due livelli di sicurezza in EOP e Office 365 ATP che è consigliabile: **standard** e **strict**. L'ambiente e i bisogni di ogni cliente sono diversi, ma riteniamo che questi livelli di configurazioni del filtro della posta consentano di evitare che la posta indesiderata raggiunga la posta in arrivo dei dipendenti nella maggior parte delle situazioni.
 
 > [!IMPORTANT]
 > La regola di posta indesiderata deve essere abilitata su una cassetta postale per consentire il corretto funzionamento del filtro. È abilitata per impostazione predefinita, ma è consigliabile verificarla se il filtro non sembra funzionare. Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-In questo argomento vengono descritte le impostazioni consigliate da Microsoft per proteggere gli utenti di Office 365.
+In questo argomento vengono descritte le impostazioni consigliate da Microsoft per aiutare a proteggere gli utenti.
 
 > [!TIP]
 > È disponibile un nuovo modulo di PowerShell che può essere scaricato dall'analizzatore di configurazione di Office 365 Advanced Threat Protection recommended Configuration Analyzer (ORCA) che consente di determinare alcune di queste impostazioni. Quando viene eseguito come amministratore nel tenant, Get-ORCAReport contribuirà a generare una valutazione delle impostazioni di protezione da posta indesiderata, anti-phishing e altre informazioni di igiene dei messaggi. È possibile scaricare questo modulo all' https://www.powershellgallery.com/packages/ORCA/indirizzo.
@@ -117,7 +117,7 @@ Per creare e configurare criteri anti-malware, vedere [Configure anti-malware Po
 | Nome della funzionalità di sicurezza | Standard | Rigorosa | Comment |
 |---|---|---|---|
 |**Abilitare la protezione anti-spoofing** <br/><br/> _EnableAntispoofEnforcement_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
-|**Abilitazione del mittente non autenticato** <br/><br/> _EnableUnauthenticatedSender_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Abilitazione del mittente non autenticato** <br/><br/> _EnableUnauthenticatedSender_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md).|
 |**Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio** <br/><br/> _AuthenticationFailAction_|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <br/><br/> `MoveToJmf`|**Mettere in quarantena il messaggio** <br/><br/> `Quarantine`|Questo vale per i mittenti bloccati in [Intelligence spoof](learn-about-spoof-intelligence.md).|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Protezione avanzata dalle minacce di Office 365
@@ -181,7 +181,7 @@ Si noti che si tratta delle stesse impostazioni disponibili nelle impostazioni d
 | Nome della funzionalità di sicurezza | Standard | Rigorosa | Comment |
 |---|---|---|---|
 |**Abilitare la protezione anti-spoofing** <br/><br/> _EnableAntispoofEnforcement_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
-|**Abilitazione del mittente non autenticato** <br/><br/> _EnableUnauthenticatedSender_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Abilitazione del mittente non autenticato** <br/><br/> _EnableUnauthenticatedSender_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md).|
 |**Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio** <br/><br/> _AuthenticationFailAction_|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <br/><br/> `MoveToJmf`|**Mettere in quarantena il messaggio** <br/><br/> `Quarantine`|Questo vale per i mittenti bloccati in [Intelligence spoof](learn-about-spoof-intelligence.md).|
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Impostazioni avanzate nei criteri di anti-phishing ATP
@@ -215,7 +215,7 @@ Non monitorare quando gli utenti fanno clic su collegamenti sicuri|Disattivato|D
 
 - Per informazioni sulle procedure consigliate, vedere **Exchange Mail Flow/Exchange Transport Rules**? Per informazioni dettagliate, vedere [questo articolo](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) .
 
-- Gli amministratori e gli utenti possono inviare falsi positivi (buon messaggio di posta elettronica contrassegnato come cattivo) e falsi negativi (messaggi di posta elettronica non consentiti) a Microsoft per l'analisi. Per ulteriori informazioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
+- Gli amministratori e gli utenti possono inviare falsi positivi (buon messaggio di posta elettronica contrassegnato come cattivo) e falsi negativi (messaggi di posta elettronica non consentiti) a Microsoft per l'analisi. Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Utilizzare questi collegamenti per informazioni su come **configurare** il [servizio EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)e **configurare** [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). (Non dimenticare di vedere le indicazioni utili in '[protezione contro le minacce in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)').
 

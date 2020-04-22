@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: informazioni sul modo in cui Contoso ha implementato un sito di SharePoint per dati altamente regolamentati per semplificare la collaborazione tra i team di ricerca.'
-ms.openlocfilehash: a1ffb336e85eb6eb850b53ed14adf947b56642cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0a4bc2f685cf015611da62ebbed000218f37f31e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068274"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634253"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sito di SharePoint per le risorse digitali estremamente riservate di Contoso Corporation
 
@@ -48,22 +48,22 @@ Successivamente, sono state configurate le impostazioni di autorizzazione aggiun
 
 ## <a name="step-2-configured-the-site-for-a-restrictive-dlp-policy"></a>Passaggio 2: configurazione del sito per un criterio DLP restrittivo
 
-Per prima cosa, gli amministratori di Contoso hanno applicato l'etichetta di conservazione di Office 365 **altamente riservata** esistente alla cartella documenti del sito di **ricerca** .
+Per prima cosa, gli amministratori di Contoso hanno applicato l'etichetta di conservazione **estremamente riservata** esistente alla cartella documenti del sito di **ricerca** .
 
-Successivamente, è stato creato un nuovo criterio DLP di Office 365 denominato **Research** :
+Successivamente, è stato creato un nuovo criterio DLP denominato **Research** :
 
-- Utilizza l'etichetta di conservazione di Office 365 **estremamente riservata** . 
+- Utilizza l'etichetta di conservazione **estremamente riservata** . 
 - Blocca gli utenti quando tentano di condividere un asset digitale nel sito di **ricerca** esterno a contoso.
 
 Per informazioni dettagliate sulla configurazione, vedere [proteggere i file di SharePoint con etichette di conservazione e DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
-## <a name="step-3-created-an-office-365-sensitivity-sublabel-for-the-site"></a>Passaggio 3: creazione di una sottoetichetta di riservatezza di Office 365 per il sito
+## <a name="step-3-created-a-sensitivity-sublabel-for-the-site"></a>Passaggio 3: creazione di una sottoetichetta di riservatezza per il sito
 
-Gli amministratori di Contoso hanno creato una nuova sottoetichetta di sensitivity di Office 365 denominata **Research Teams** dell'etichetta **altamente riservata** che:
+Gli amministratori di Contoso hanno creato una nuova sottoetichetta di sensitivity denominata **Research Teams** dell'etichetta **highly Confidential** che:
 
 - Richiede la crittografia.
-- Consente le autorizzazioni di creazione condivisa per il gruppo **Research** Office 365
-- Si applica al gruppo **Research** Office 365
+- Consente le autorizzazioni di creazione condivisa per il gruppo **Research** Microsoft 365
+- Si applica al gruppo **Research** Microsoft 365
 
 Ecco la configurazione risultante del sito del team di **ricerca** per le risorse estremamente riservate.
 
@@ -71,7 +71,7 @@ Ecco la configurazione risultante del sito del team di **ricerca** per le risors
 
 I file nelle cartelle del sito di **ricerca** sono protetti da:
 
-- Le autorizzazioni per il sito, che consentono l'accesso solo ai membri del gruppo **Research** Office 365.
+- Le autorizzazioni per il sito, che consentono l'accesso solo ai membri del gruppo **Research** Microsoft 365.
 - Il criterio DLP di **ricerca** , che utilizza l'etichetta di conservazione e le impostazioni **estremamente riservate** che impediscono la condivisione dei file con gli utenti esterni.
 - La sottoetichetta di sensitivity dei **team di ricerca** , con la crittografia e le autorizzazioni che viaggiano con il file se sono state spostate o copiate dal sito di **ricerca** .
 
@@ -86,7 +86,7 @@ Gli amministratori di Contoso hanno spostato tutti i file di ricerca locali nel 
 
 ## <a name="step-5-trained-their-researchers"></a>Passaggio 5: formazione dei ricercatori
 
-Il personale di sicurezza di Contoso ha formato i membri del gruppo **Research** Office 365 in un corso obbligatorio che ha eseguito i seguenti controlli:
+Il personale di sicurezza di Contoso ha formato i membri del gruppo **Research** Microsoft 365 in un corso obbligatorio che ha eseguito i seguenti controlli:
 
 - Informazioni su come accedere al nuovo sito di **ricerca** e ai file esistenti.
 - Come creare nuovi file sul sito e caricare nuovi file memorizzati localmente.
@@ -96,7 +96,7 @@ Il personale di sicurezza di Contoso ha formato i membri del gruppo **Research**
 
 Il risultato finale è un ambiente sicuro in cui i ricercatori possono collaborare tra Contoso in un ambiente sicuro su file contenenti informazioni sulla ricerca. 
 
-Se un documento di ricerca con la sottoetichetta del **team di ricerca** lascia il sito di **ricerca** , è crittografato e accessibile solo ai membri del gruppo **Research** Office 365 con credenziali dell'account utente valide.
+Se un documento di ricerca con la sottoetichetta del **team di ricerca** lascia il sito di **ricerca** , è crittografato e accessibile solo ai membri del gruppo **Research** Microsoft 365 con credenziali dell'account utente valide.
 
 ## <a name="next-step"></a>Passaggio successivo
 

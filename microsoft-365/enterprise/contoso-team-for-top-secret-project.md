@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: in che modo Contoso ha utilizzato un team per i dati altamente regolamentati per un progetto Top-Secret per sviluppare una nuova famiglia di prodotti e servizi.'
-ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 310ef33d4add7d71616aee8808515ca90536d8c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068028"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636499"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team per un progetto interno di Contoso Corporation
 
@@ -50,21 +50,21 @@ Per informazioni dettagliate sulla configurazione, vedere [impostazioni di Share
 
 ## <a name="step-2-configured-a-dlp-policy-and-the-underlying-site-for-a-retention-label"></a>Passaggio 2: configurazione di un criterio DLP e del sito sottostante per un'etichetta di conservazione 
 
-Per prima cosa, gli amministratori di Contoso hanno applicato l'etichetta di conservazione di Office 365 **molto riservata** esistente alla sezione **Documents** del sito di SharePoint sottostante del team di Project 2x.
+Per prima cosa, gli amministratori di Contoso hanno applicato l'etichetta di conservazione **estremamente riservata** esistente alla sezione **Documents** del sito di SharePoint sottostante del team di Project 2x.
 
-Successivamente, è stato creato un nuovo criterio DLP di Office 365 denominato **Project 2x** che:
+Successivamente, è stato creato un nuovo criterio DLP denominato **Project 2x** che:
 
-- Utilizza l'etichetta di conservazione di Office 365 estremamente riservata.
+- Utilizza l'etichetta di conservazione estremamente riservata.
 - Blocca gli utenti quando tentano di condividere un file nel team di Project 2X all'esterno di contoso.
 
 Per informazioni dettagliate sulla configurazione, vedere [Protect Files in teams with retention labels and DLP](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp).
 
-## <a name="step-3-created-an-office-365-sensitivity-label-for-the-project-2x-team"></a>Passaggio 3: creazione di un'etichetta di riservatezza di Office 365 per il team di Project 2X
+## <a name="step-3-created-a-sensitivity-label-for-the-project-2x-team"></a>Passaggio 3: creazione di un'etichetta di riservatezza per il team di Project 2X
 
-Gli amministratori di Contoso hanno creato una nuova etichetta di riservatezza di Office 365 denominata **Project 2x** che:
+Gli amministratori di Contoso hanno creato una nuova etichetta di riservatezza denominata **Project 2x** che:
 
 - Richiede la crittografia.
-- Consente le autorizzazioni di creazione condivisa per il gruppo Project 2X Office 365.
+- Consente le autorizzazioni di creazione condivisa per il gruppo Project 2X Microsoft 365.
 
 Ecco la configurazione risultante del team di Project 2X.
 
@@ -72,7 +72,7 @@ Ecco la configurazione risultante del team di Project 2X.
  
 I file nella sezione Documents del progetto sottostante 2X sito di SharePoint sono stati protetti da:
 
-- Le autorizzazioni per il sito, che consentono l'accesso solo ai membri del gruppo Project 2X Office 365.
+- Le autorizzazioni per il sito, che consentono l'accesso solo ai membri del gruppo Project 2X Microsoft 365.
 - L'etichetta di conservazione estremamente riservata, che viene assegnata automaticamente ai nuovi file.
 - Un criterio DLP che utilizza l'etichetta di conservazione e le impostazioni estremamente riservate che impediscono la condivisione dei file con gli utenti esterni.
 - L'etichetta di riservatezza del progetto 2X, con la crittografia e le autorizzazioni che viaggiano con il file se sono state spostate o copiate dal sito.

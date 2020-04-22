@@ -16,16 +16,16 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a impostare il SCL dei messaggi in Exchange Online Protection.
-ms.openlocfilehash: b7ea9a0f046e5a48f0de8d4ac9ae6d53821f03c0
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: cc75130d1e30b4cd64c32b1729c8145ad3088742
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895096"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636429"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usare le regole del flusso di posta per impostare il livello di confidenza di posta indesiderata nei messaggi
 
-Se si è un cliente di Office 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, EOP utilizza criteri di protezione dalla posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri di filtro del contenuto) messaggi in ingresso per la posta indesiderata. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, EOP utilizza criteri di protezione dalla posta indesiderata (noti anche come criteri di filtro per la posta indesiderata o criteri di filtro del contenuto) per analizzare i messaggi in ingresso Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
 Se si desidera contrassegnare messaggi specifici come posta indesiderata prima che vengano persino analizzati tramite il filtro posta indesiderata oppure contrassegnare i messaggi in modo che ignorino il filtro posta indesiderata, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per identificare i messaggi e impostare il livello di probabilità di posta indesiderata. Per ulteriori informazioni sul livello SCL, vedere [Spam Confidence Level (SCL) in Office 365](spam-confidence-levels.md).
 

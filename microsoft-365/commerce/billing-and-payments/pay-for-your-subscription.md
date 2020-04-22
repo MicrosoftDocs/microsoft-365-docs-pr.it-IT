@@ -1,5 +1,5 @@
 ---
-title: Pagare l'abbonamento a Office 365 per le aziende
+title: Pagare l'abbonamento
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Informazioni sulle opzioni di pagamento disponibili per l'abbonamento a Office 365 for Business.
+description: Per ulteriori informazioni, vedere quali opzioni di pagamento sono disponibili per l'abbonamento a Microsoft 365 for business.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540904"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635017"
 ---
-# <a name="pay-for-your-office-365-for-business-subscription"></a>Pagare l'abbonamento a Office 365 per le aziende
+# <a name="pay-for-your-subscription"></a>Pagare l'abbonamento
 
 Quando si configura l'abbonamento, è possibile pagare con addebito sulla carta di credito o sul conto bancario o tramite fattura usando un assegno o un bonifico bancario. La modalità di pagamento continuerà a essere usata per i periodi di fatturazione successivi, a meno che non si decida di [cambiare modalità di pagamento](change-payment-method.md).
 
@@ -93,7 +93,7 @@ Se il costo dell'abbonamento è superiore a un determinato importo, che varia in
 Se si paga l'abbonamento tramite fattura, si riceverà un messaggio di posta elettronica che indica che l'estratto conto è pronto per essere visualizzato. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è anche possibile scegliere di [Ricevere una copia dell'estratto conto tramite posta elettronica](#receive-a-copy-of-your-billing-statement-in-email). L'estratto conto include i dettagli sulle opzioni di pagamento. Se si immette un numero di ordine d'acquisto quando si acquista un abbonamento, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
 
 > [!NOTE]
-> Per impostazione predefinita, le notifiche per le fatture dell'organizzazione vengono inviate all'indirizzo di posta elettronica di Office 365 e all'indirizzo alternativo di ogni amministratore globale e di fatturazione dell'organizzazione. Per cambiare l'indirizzo di posta elettronica alternativo, vedere [Cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).
+> Per impostazione predefinita, le notifiche di fatturazione dell'organizzazione vengono inviate all'indirizzo di posta elettronica Microsoft e all'indirizzo di posta elettronica alternativo di ogni amministratore globale e di fatturazione dell'organizzazione. Per cambiare l'indirizzo di posta elettronica alternativo, vedere [Cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).
 
 ### <a name="can-i-pay-my-bill-online"></a>È possibile pagare la fattura online?
 

@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Visualizzare i criteri e le azioni del dispositivo accedendo a Microsoft 365 business con le credenziali di amministratore globale.
-ms.openlocfilehash: ac8ea8a5b484fe6401e72fd0eaab4d79515f3aac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Visualizzare i criteri e le azioni del dispositivo accedendo a Microsoft 365 for business con le credenziali di amministratore globale.
+ms.openlocfilehash: e514b48c17de492bd1eaa75b48418ce0f2ff493e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056582"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635685"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Visualizzazione e gestione di criteri e dispositivi
 
@@ -35,8 +35,8 @@ ms.locfileid: "42056582"
 
 ## <a name="view-and-edit-device-policies"></a>Visualizzare e modificare i criteri per i dispositivi
 
-1.  Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-2. Sul NAV sinistro, scegliere criteri **dispositivi** \> ****.
+1.  Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+2. Sul NAV sinistro, scegliere criteri **dispositivi** \> **Policies**.
 
     In questa pagina è possibile creare, modificare, cambiare gruppo di destinazione o eliminare un criterio.
 

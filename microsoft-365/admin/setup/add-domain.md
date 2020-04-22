@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Office 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: 746163b83190a73326ad589b8e3bc9377ddaa9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209641"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631816"
 ---
 # <a name="add-a-domain-to-office-365"></a>Aggiungere un dominio a Office 365
 
@@ -75,7 +75,7 @@ ms.locfileid: "43209641"
     
 5. Scegliere in che modo si desidera verificare che si è proprietari del dominio.
     
-    1. Se il dominio è registrato su GoDaddy o 1&amp;1, selezionare **Accedi** > **Avanti** e Office 365 [consentirà la configurazione automatica dei record](../get-help-with-domains/domain-connect.md).
+    1. Se il dominio è registrato su GoDaddy o 1&amp;1, selezionare **Accedi** > **successivamente** e Microsoft[consentirà la configurazione automatica dei record](../get-help-with-domains/domain-connect.md).
     
     2. È possibile specificare l'invio di un messaggio di posta elettronica contenente un codice di verifica al contatto registrato per il dominio. Se non si riconosce o si ha accesso al messaggio di posta elettronica su record, è possibile utilizzare la terza opzione.
     
@@ -112,4 +112,4 @@ ms.locfileid: "43209641"
 
 [Configurare il dominio (istruzioni specifiche per l’host)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Ottenere assistenza per i domini di Office 365](../get-help-with-domains/get-help-with-domains.md)
+[Ottenere assistenza per i domini](../get-help-with-domains/get-help-with-domains.md)

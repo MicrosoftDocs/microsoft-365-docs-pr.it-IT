@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per abilitare altre impostazioni di sicurezza di Microsoft 365 nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: 53205f0626ce55c5a9627339f3631964e3374a19
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058882"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631670"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Maggiore sicurezza di Microsoft 365 per l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -43,7 +43,7 @@ Se si desidera configurare un aumento della sicurezza di Microsoft 365 in un'azi
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>Fase 2: configurare un aumento della sicurezza di Microsoft 365
 
-In questa fase, viene abilitata la sicurezza aumentata di Microsoft 365 per l'ambiente di testing di Microsoft 365 Enterprise. Per ulteriori informazioni e impostazioni, vedere [configurare il tenant di Office 365 per una maggiore sicurezza](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+In questa fase, viene abilitata la sicurezza aumentata di Microsoft 365 per l'ambiente di testing di Microsoft 365 Enterprise. Per ulteriori informazioni e impostazioni, vedere [configurare il tenant per una maggiore sicurezza](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurare SharePoint Online per bloccare le app che non supportano l'autenticazione moderna
 
@@ -64,7 +64,7 @@ Per le app che non supportano l'autenticazione moderna non è possibile applicar
 
 Office 365 Advanced Threat Protection (ATP) per SharePoint, OneDrive e Microsoft teams protegge l'organizzazione dall'involontaria condivisione di file dannosi.
 
-1. Accedere al [centro conformità & sicurezza di Office 365](https://protection.office.com) e accedere con l'account di amministratore globale.
+1. Accedere al [Centro sicurezza & Compliance](https://protection.office.com) e accedere con l'account di amministratore globale.
 
 2. Nel riquadro di spostamento a sinistra, in **gestione minacce**, fare clic su **criteri**, quindi fare clic su **allegati sicuri di ATP**. 
 
@@ -94,7 +94,7 @@ La gestione delle minacce di Office 365 può essere utile per controllare e gest
 
 Per visualizzare il dashboard di sicurezza:
 
-1. Se necessario, passare al [Centro sicurezza & conformità di Office 365](https://protection.office.com) e accedere con l'account di amministratore globale.
+1. Se necessario, passare al [Centro sicurezza & Compliance](https://protection.office.com) e accedere con l'account di amministratore globale.
 
 2. Nel riquadro di spostamento a sinistra, in **gestione minacce**, fare clic su **Dashboard**.
 

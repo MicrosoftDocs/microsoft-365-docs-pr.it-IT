@@ -1,5 +1,5 @@
 ---
-title: Criteri di anti-phishing
+title: Criteri anti-phishing
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,14 +14,14 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui criteri anti-phishing di base in Exchange Online Protection (EOP) e sui criteri avanzati di anti-phishing ATP in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: f96b490d2c031fb509c39b2efdbc725cec2709a5
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537474"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638357"
 ---
-# <a name="anti-phishing-policies-in-office-365"></a>Criteri di anti-phishing in Office 365
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
 I criteri per configurare le impostazioni di protezione anti-phishing sono disponibili nelle organizzazioni di Office 365 con le cassette postali di Exchange Online, le organizzazioni autonome di Exchange Online Protection (EOP) senza le cassette postali di Exchange Online e le organizzazioni di Office 365 Advanced Threat Protection (ATP).
 
@@ -34,13 +34,13 @@ I criteri di anti-phishing ATP sono disponibili solo nelle organizzazioni con Of
 
 I criteri di anti-phishing ATP includono un criterio anti-phishing predefinito incorporato ed è possibile creare ulteriori criteri di anti-phishing ATP.
 
-Altre organizzazioni di Office 365 con cassette postali di Exchange Online o organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online dispongono di un criterio anti-phishing predefinito incorporato, ma non è possibile creare criteri aggiuntivi. Solo le organizzazioni con cassette postali di Exchange Online possono modificare i criteri anti-phishing predefiniti.
+Altre organizzazioni Microsoft 365 con le cassette postali di Exchange Online o le organizzazioni standalone di Exchange Online Protection (EOP) senza le cassette postali di Exchange Online dispongono di un criterio anti-phishing predefinito incorporato, ma non è possibile creare criteri aggiuntivi. Solo le organizzazioni con cassette postali di Exchange Online possono modificare i criteri anti-phishing predefiniti.
 
 Nella tabella seguente sono descritte le differenze di alto livello tra i criteri di anti-phishing e i criteri di anti-phishing ATP:
 
 ||||
 |---|:---:|:---:|
-|**Caratteristica**|**Criteri di anti-phishing**|**Criteri di anti-phishing ATP**|
+|**Caratteristica**|**Criteri anti-phishing**|**Criteri di anti-phishing ATP**|
 |Criterio predefinito creato automaticamente|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Creare criteri personalizzati||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Impostazioni di criteri<sup>\*</sup>||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -55,30 +55,30 @@ Per configurare i criteri di anti-phishing, vedere i seguenti argomenti:
 
 - [Configurazione dei criteri di anti-phishing in EOP](configure-anti-phishing-policies-eop.md)
 
-- [Configurazione dei criteri di anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md)
+- [Configurazione dei criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
 Nella parte restante di questo argomento vengono descritte le impostazioni disponibili nei criteri di anti-phishing di EOP e ATP.
 
 ## <a name="spoof-settings"></a>Impostazioni di spoofing
 
-Lo spoofing è quando l'indirizzo from in un messaggio di posta elettronica (l'indirizzo del mittente visualizzato nei client di posta elettronica) non corrisponde al dominio dell'origine della posta elettronica. Per ulteriori informazioni sullo spoofing, vedere [protezione anti-spoofing in Office 365](anti-spoofing-protection.md).
+Lo spoofing è quando l'indirizzo from in un messaggio di posta elettronica (l'indirizzo del mittente visualizzato nei client di posta elettronica) non corrisponde al dominio dell'origine della posta elettronica. Per ulteriori informazioni sullo spoofing, vedere [protezione anti-spoofing in Microsoft 365](anti-spoofing-protection.md).
 
 Le seguenti impostazioni di spoofing sono disponibili nei criteri anti-phishing e nei criteri di anti-phishing ATP:
 
-- **Protezione anti-spoofing**: consente di abilitare o disabilitare la protezione anti-spoofing. Si consiglia di lasciarla abilitata. È possibile utilizzare il **criterio di intelligence di spoofing** per consentire o bloccare specifici mittenti interni ed esterni falsificati. Per ulteriori informazioni, vedere [Configure Spoofing Intelligence in Office 365](learn-about-spoof-intelligence.md).
+- **Protezione anti-spoofing**: consente di abilitare o disabilitare la protezione anti-spoofing. Si consiglia di lasciarla abilitata. È possibile utilizzare il **criterio di intelligence di spoofing** per consentire o bloccare specifici mittenti interni ed esterni falsificati. Per ulteriori informazioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Le impostazioni di spoofing sono abilitate per impostazione predefinita nei criteri anti-phishing predefiniti in EOP, i criteri di anti-phishing predefiniti e in nuovi criteri di anti-phishing ATP personalizzati creati. <br/><br/> Non è necessario disabilitare la protezione anti-spoofing se il record MX non punta a Office 365; è invece possibile abilitare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Le impostazioni di spoofing sono abilitate per impostazione predefinita nei criteri anti-phishing predefiniti in EOP, i criteri di anti-phishing predefiniti e in nuovi criteri di anti-phishing ATP personalizzati creati. <br/><br/> Non è necessario disabilitare la protezione anti-spoofing se il record MX non punta a Microsoft 365; è invece possibile abilitare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Per i messaggi provenienti da mittenti bloccati, è inoltre possibile specificare l'azione da eseguire sui messaggi:
 
-  - **Sposta messaggio nella cartella posta indesiderata**: questo è il valore predefinito. Il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Sposta messaggio nella cartella posta indesiderata**: questo è il valore predefinito. Il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - Mettere in **quarantena il messaggio**: Invia il messaggio in quarantena invece dei destinatari previsti. Per ulteriori informazioni sulla quarantena, vedere i seguenti argomenti:
 
-    - [Quarantena in Office 365](quarantine-email-messages.md)
-    - [Gestire i messaggi e i file messi in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md)
-    - [Trovare e rilasciare i messaggi messi in quarantena come utente di Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Quarantena in Microsoft 365](quarantine-email-messages.md)
+    - [Gestire i messaggi e i file in quarantena come amministratore in Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
 - **Mittente non autenticato**: consente di abilitare o disabilitare l'identificazione non identificata del mittente in Outlook. In particolare:
 
@@ -88,7 +88,7 @@ Le seguenti impostazioni di spoofing sono disponibili nei criteri anti-phishing 
 
   Per evitare che gli identificatori vengano aggiunti ai messaggi provenienti da mittenti specifici, sono disponibili le opzioni seguenti:
 
-  - Consentire al mittente di eseguire la falsificazione dei criteri di intelligence spoof. Per istruzioni, vedere [Configure Spoofing Intelligence in Office 365](learn-about-spoof-intelligence.md).
+  - Consentire al mittente di eseguire la falsificazione dei criteri di intelligence spoof. Per istruzioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   - [Configurare l'autenticazione della posta elettronica](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) per il dominio del mittente.
   
@@ -118,7 +118,7 @@ Le impostazioni dei criteri seguenti sono disponibili solo nei criteri di anti-p
 
   - Il **destinatario è**: una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
   - Il **destinatario è un membro di**: uno o più gruppi nell'organizzazione.
-  - **Il dominio del destinatario è**: uno o più domini accettati configurati in Office 365.
+  - **Il dominio del destinatario è**: uno o più domini accettati configurati in Microsoft 365.
 
   - **Eccetto quando**: eccezioni per la regola. Le impostazioni e il comportamento sono esattamente come le condizioni seguenti:
 
@@ -152,13 +152,13 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri d
 
   - **Reindirizza il messaggio ad altri indirizzi di posta elettronica**: Invia il messaggio ai destinatari specificati anziché ai destinatari previsti.
 
-  - **Sposta messaggio nella cartella posta indesiderata**: il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Sposta messaggio nella cartella posta indesiderata**: il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
     - Mettere in **quarantena il messaggio**: Invia il messaggio in quarantena invece dei destinatari previsti. Per ulteriori informazioni sulla quarantena, vedere i seguenti argomenti:
 
-    - [Quarantena in Office 365](quarantine-email-messages.md)
-    - [Gestire i messaggi e i file messi in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md)
-    - [Trovare e rilasciare i messaggi messi in quarantena come utente di Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Quarantena in Microsoft 365](quarantine-email-messages.md)
+    - [Gestire i messaggi e i file in quarantena come amministratore in Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
   - **Recapitare il messaggio e aggiungere altri indirizzi alla riga Ccn**: recapitare il messaggio ai destinatari desiderati e recapitare il messaggio ai destinatari specificati.
 
@@ -172,7 +172,7 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri d
 
 - **Intelligence delle cassette postali**: consente di abilitare o disabilitare l'intelligenza artificiale (ai) che determina i modelli di posta elettronica degli utenti con i contatti frequenti. Questa impostazione consente all'AI di distinguere tra la posta elettronica legittima e contraffatta da tali contatti. L'intelligence della cassetta postale è disponibile solo per le cassette postali di Exchange Online.
 
-- **Protezione della rappresentazione basata sull'Intelligence delle cassette postali**: consente di abilitare o disabilitare i risultati della rappresentazione migliorati in base alla mappa del mittente individuale di ogni utente. Questa funzionalità di Intelligence consente a Office 365 di personalizzare il rilevamento delle rappresentazioni degli utenti e gestire in modo migliore i falsi positivi. Quando viene rilevata la rappresentazione utente, è possibile definire un'azione specifica da intraprendere sul messaggio:
+- **Protezione della rappresentazione basata sull'Intelligence delle cassette postali**: consente di abilitare o disabilitare i risultati della rappresentazione migliorati in base alla mappa del mittente individuale di ogni utente. Questa funzionalità di Intelligence consente a Microsoft 365 di personalizzare il rilevamento delle rappresentazioni degli utenti e gestire in modo migliore i falsi positivi. Quando viene rilevata la rappresentazione utente, è possibile definire un'azione specifica da intraprendere sul messaggio:
 
   - **Non applicare alcuna azione**
   - **Reindirizza il messaggio ad altri indirizzi di posta elettronica**

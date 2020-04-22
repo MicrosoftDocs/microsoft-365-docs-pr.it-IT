@@ -1,5 +1,5 @@
 ---
-title: Cambiare gli indirizzi di fatturazione per Office 365 per le aziende
+title: Cambiare gli indirizzi di fatturazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: Informazioni su come aggiornare gli indirizzi di fatturazione per Office 365 for business. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
+description: Informazioni su come aggiornare gli indirizzi di fatturazione per Microsoft 365 for business. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
 ms.custom: okr_SMB
-ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142312"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632720"
 ---
-# <a name="change-your-billing-addresses-for-office-365-for-business"></a>Cambiare gli indirizzi di fatturazione per Office 365 per le aziende
+# <a name="change-your-billing-addresses"></a>Cambiare gli indirizzi di fatturazione
 
 La fattura o la fattura contiene tre indirizzi:
   
@@ -60,9 +60,6 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
-::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>Cambiare l'indirizzo Venduto a
 
@@ -158,9 +155,9 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Cambiare l'indirizzo di posta elettronica alternativo a cui ricevere le notifiche sulla fatturazione
 
-Per impostazione predefinita, le notifiche sulla fatturazione vengono inviate all'indirizzo di posta elettronica di Office 365 e all'indirizzo alternativo di ogni amministratore globale e di fatturazione dell'organizzazione. Ogni amministratore può cambiare l'indirizzo alternativo aggiornando le informazioni del suo profilo.
+Per impostazione predefinita, le notifiche di fatturazione dell'organizzazione vengono inviate all'indirizzo di posta elettronica Microsoft e all'indirizzo di posta elettronica alternativo di ogni amministratore globale e di fatturazione dell'organizzazione. Ogni amministratore può cambiare l'indirizzo alternativo aggiornando le informazioni del suo profilo.
   
-1. Accedere a Office 365 come amministratore globale con il proprio account aziendale o dell'istituto di istruzione. [Come eseguire l'accesso](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere a Microsoft 365 con l'account aziendale o dell'Istituto di istruzione come amministratore globale. [Informazioni su come effettuare l'accesso](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Selezionare l' **icona dell'utente**e quindi selezionare l' **account personale**.
   
@@ -173,9 +170,7 @@ Per impostazione predefinita, le notifiche sulla fatturazione vengono inviate al
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Cambiare l'indirizzo di posta elettronica alternativo di un altro amministratore
 
 È anche possibile cambiare l'indirizzo di posta elettronica alternativo di altri amministratori globali e di fatturazione dell'organizzazione.
-
-::: moniker range="o365-worldwide"
-
+  
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifiche sulla fatturazione</a>.
 
 ::: moniker-end
@@ -203,3 +198,5 @@ Per impostazione predefinita, le notifiche sulla fatturazione vengono inviate al
 [Comprendere la fattura](understand-your-invoice2.md)
 
 [Pagare l’abbonamento](pay-for-your-subscription.md)
+
+[Abbonamenti e fatturazione-Guida per gli amministratori](../index.yml)

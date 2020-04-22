@@ -16,24 +16,24 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Risposte alle domande frequenti sulla quarantena in Office 365.
-ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 3947fbed2a17380a18320a8bffd08a8178ad2b3f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856906"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634425"
 ---
-# <a name="quarantine-faq-in-office-365"></a>Domande frequenti sulla quarantena in Office 365
+# <a name="quarantine-faq"></a>Domande frequenti sulla quarantena
 
-In questo argomento sono riportate le domande frequenti e le risposte sulla quarantena per i clienti di Office 365 con cassette postali in Exchange Online o autonomo Exchange Online Protection (EOP) clienti senza cassette postali di Exchange Online.
+In questo argomento sono riportate le domande frequenti e le risposte sulla quarantena per i clienti di Microsoft 365 con cassette postali in Exchange Online o autonomo Exchange Online Protection (EOP) clienti senza cassette postali di Exchange Online.
 
 ## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>D: come si gestiscono i messaggi che sono stati messi in quarantena per malware?
 
-Solo gli amministratori possono gestire i messaggi che sono stati messi in quarantena per malware. Per ulteriori informazioni, vedere [gestire i messaggi e i file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md).
+Solo gli amministratori possono gestire i messaggi che sono stati messi in quarantena per malware. Per altre informazioni, vedere [Gestione dei messaggi e dei file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md).
 
 ## <a name="q-how-do-i-quarantine-spam"></a>D: come si esegue la quarantena della posta indesiderata?
 
-R. Per impostazione predefinita, i messaggi che vengono classificati come posta indesiderata o in blocco tramite filtro posta indesiderata vengono recapitati alla cassetta postale dell'utente e vengono spostati nella cartella posta indesiderata. Tuttavia, è possibile creare e configurare criteri di protezione dalla posta indesiderata per la quarantena di posta indesiderata o messaggi di posta elettronica. Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+R. Per impostazione predefinita, i messaggi che vengono classificati come posta indesiderata o in blocco tramite filtro posta indesiderata vengono recapitati alla cassetta postale dell'utente e vengono spostati nella cartella posta indesiderata. Tuttavia, è possibile creare e configurare criteri di protezione dalla posta indesiderata per la quarantena di posta indesiderata o messaggi di posta elettronica. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>D: in che modo è possibile concedere agli utenti l'accesso alla quarantena?
 
@@ -70,7 +70,7 @@ $CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contos
 Successivamente, eseguire il seguente comando per rilasciare tali messaggi a tutti i destinatari originali:
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
+$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
 ```
 
 Dopo aver rilasciato un messaggio, non è possibile rilasciarlo.

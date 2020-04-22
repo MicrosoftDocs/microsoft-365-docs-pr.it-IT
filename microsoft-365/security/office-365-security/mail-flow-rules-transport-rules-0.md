@@ -11,23 +11,23 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: È possibile utilizzare le regole del flusso di posta (regole di trasporto) per identificare ed eseguire azioni sui messaggi che passano attraverso l'organizzazione di Office 365.
-ms.openlocfilehash: 4332399ce7b3724a7bd23c761eec4328afe5e2a9
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: È possibile utilizzare le regole del flusso di posta (regole di trasporto) per identificare ed eseguire azioni sui messaggi che transitano nell'organizzazione.
+ms.openlocfilehash: 0a182b9d4a63a824a3955e8296160779c826960d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081425"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635413"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regole del flusso di posta (regole di trasporto in Exchange Online Protection
 
-È possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per identificare ed eseguire azioni sui messaggi che passano attraverso l'organizzazione di Office 365. Le regole del flusso di posta sono simili alle regole della posta in arrivo che sono disponibili in Outlook e Outlook sul Web. La differenza principale è che le regole del flusso di posta eseguono azioni sui messaggi quando sono in transito e non dopo che il messaggio viene recapitato alla cassetta postale. Le regole del flusso di posta includono un insieme più ricco di condizioni, eccezioni e azioni, che forniscono la flessibilità necessaria per implementare molti tipi di criteri di messaggistica.
+È possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per identificare ed eseguire azioni sui messaggi che transitano nell'organizzazione. Le regole del flusso di posta sono simili alle regole della posta in arrivo che sono disponibili in Outlook e Outlook sul Web. La differenza principale è che le regole del flusso di posta eseguono azioni sui messaggi quando sono in transito e non dopo che il messaggio viene recapitato alla cassetta postale. Le regole del flusso di posta includono un insieme più ricco di condizioni, eccezioni e azioni, che forniscono la flessibilità necessaria per implementare molti tipi di criteri di messaggistica.
 
 In questo articolo sono illustrati i componenti delle regole del flusso di posta e il loro funzionamento.
 
 Per i passaggi per creare, copiare e gestire le regole del flusso di posta, vedere [gestire le regole del flusso di posta in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Per ciascuna regola è possibile applicare, verificare o testare e inviare una notifica al mittente. Per ulteriori informazioni sulle opzioni di testing, vedere [test Mail Flow Rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [policy Tips in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
-Per i report di riepilogo e dettagli sui messaggi che corrispondono alle regole del flusso di posta, vedere [Use Mail Protection Reports in Office 365 to view data about malware, spam, and Rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
+Per i report di riepilogo e dettagli sui messaggi che corrispondono alle regole del flusso di posta, vedere [Use Mail Protection reports to view data about malware, spam, and Rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
 
 Per implementare determinati criteri di messaggistica usando le regole del flusso di posta, vedere gli argomenti seguenti:
 
