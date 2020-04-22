@@ -23,12 +23,12 @@ ms.assetid: 88d337ab-e7b1-43eb-a25e-7d6204e91099
 ROBOTS: NOINDEX
 description: 'Informazioni su come risolvere i problemi affrontati quando si immette il codice "Product Key" per Microsoft 365 for business. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 5ab085a743bfabbb840816879914fd58adccf613
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a9a72921ea18cdaa2603e300cf3c18a52e3116ab
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632696"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708120"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>Problemi con il codice Product Key di Microsoft 365 for business?
 
@@ -42,7 +42,7 @@ Se è presente un messaggio di errore quando si tenta di riscattare un codice Pr
 
 | Messaggio di errore quando si immette il codice "Product Key"... | Provare a eseguire questa operazione... |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Spiacente, questo è un codice Product Key non valido. Provare a immettere di nuovo. Se il codice Product Key è per la famiglia Microsoft 365 Personal o Microsoft 365, riscattarlo in office.com/setup ". <br/><br/>Se si usa Office 365 solo in Giappone: "Spiacente, questo è un codice Product Key non valido. Provare a immettere di nuovo. Se il codice Product Key è per Microsoft 365 Personal, riscattarlo in office.com/setup ". | Se si sta configurando [Microsoft 365 Family o Personal](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx), è necessario riscattare il codice Product [https://www.office.com/setup](https://www.office.com/setup)Key all'indirizzo. In caso contrario, per i clienti aziendali, controllare attentamente i numeri e i caratteri che si stanno immettendo. |
+| "Spiacente, questo è un codice Product Key non valido. Provare a immettere di nuovo. Se il codice Product Key è per la famiglia Microsoft 365 Personal o Microsoft 365, riscattarlo in office.com/setup ". <br/><br/>Se si usa Office 365 solo in Giappone: "Spiacente, questo è un codice Product Key non valido. Provare a immettere di nuovo. Se il codice Product Key è per Office 365 solo, riscattarlo in office.com/setup ". | Se si sta configurando [Microsoft 365 Family o Personal](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx), è necessario riscattare il codice Product [https://www.office.com/setup](https://www.office.com/setup)Key all'indirizzo. In caso contrario, per i clienti aziendali, controllare attentamente i numeri e i caratteri che si stanno immettendo. |
 | "Il codice Product Key immesso non è valido. Provare a immettere di nuovo. Oppure "questo codice Product Key non è valido. Immettere un codice "Product Key" diverso. | Controllare con attenzione i numeri e i caratteri immessi. È facile commettere errori digitando 0 invece di o, 5 invece di S, l invece di I e così via. Se il problema persiste, contattare il rivenditore da cui è stato acquistato il codice Product Key. |
 | "È già stato immesso questo codice" Product Key ". Immettere una chiave diversa. " | Controllare i codici Product Key già immessi per verificare se il codice è già stato aggiunto. Se si sta rinnovando un abbonamento con un codice Product Key, è necessario usare un codice nuovo e mai usato prima.  <br/><br/>Per acquistare un nuovo codice Product Key, visitare [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) o rivolgersi a un rivenditore di terze parti oppure, se si lavora con un partner, contattare il partner.<br/><br/>Se il problema persiste, contattare il [supporto tecnico](../admin/contact-support-for-business-products.md). Se si lavora con un partner, contattare il proprio partner per il supporto del codice "Product Key". |
 | "Il codice Product Key immesso è scaduto. Immettere una chiave diversa. " | È necessario usare un codice Product Key nuovo e mai usato prima per rinnovare un abbonamento attivo o attivare un nuovo abbonamento.<br/><br/>È necessario acquistare una nuova chiave? Visitare [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) o un rivenditore di terze parti oppure, se si lavora con un partner, contattare il partner. |

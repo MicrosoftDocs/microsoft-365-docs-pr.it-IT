@@ -1,5 +1,5 @@
 ---
-title: Crittografia di Office 365 in Azure
+title: Crittografia in Azure
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Sintesi: una spiegazione della crittografia in Azure.'
-ms.openlocfilehash: 9828da8b2d39a3b80784d57ed71a335857cfaea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602113"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637434"
 ---
-# <a name="office-365-encryption-in-azure"></a>Crittografia di Office 365 in Azure
+# <a name="encryption-in-azure"></a>Crittografia in Azure
 
 ## <a name="introduction"></a>Introduzione
 
@@ -47,7 +47,7 @@ Per ulteriori informazioni, vedere [Suggerimenti per la sicurezza per le macchin
 
 Con la [crittografia del servizio di archiviazione di Azure](https://docs.microsoft.com/azure/storage/storage-service-encryption), lo spazio di archiviazione di Azure esegue automaticamente la crittografia dei dati prima di mantenerlo in archiviazione e di decrittografare i dati prima del recupero. I processi di crittografia, decrittografia e gestione delle chiavi sono totalmente trasparenti per gli utenti. La crittografia del servizio di archiviazione di Azure può essere utilizzata per l' [archiviazione BLOB di Azure](https://azure.microsoft.com/services/storage/blobs/) e [i file Azure](https://azure.microsoft.com/services/storage/files/). È inoltre possibile utilizzare le chiavi di crittografia gestite da Microsoft con la crittografia del servizio di archiviazione di Azure oppure è possibile utilizzare le proprie chiavi di crittografia. Per informazioni sull'utilizzo di chiavi proprie, vedere [crittografia del servizio di archiviazione utilizzando le chiavi gestite del cliente in Azure Key Vault](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys). Per informazioni sull'utilizzo delle chiavi gestite da Microsoft, vedere [Storage Service Encryption for data at rest](https://docs.microsoft.com/azure/storage/storage-service-encryption). È inoltre possibile automatizzare l'utilizzo della crittografia. Ad esempio, è possibile abilitare o disabilitare a livello di programmazione la crittografia del servizio di archiviazione su un account di archiviazione utilizzando l' [API REST di Azure Storage Resource Provider](https://msdn.microsoft.com/library/azure/mt163683.aspx), la [libreria client del provider di risorse di archiviazione per .NET](https://msdn.microsoft.com/library/azure/mt131037.aspx), [Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs)o la [CLI di Azure](https://docs.microsoft.com/azure/storage/storage-azure-cli).
 
-Alcuni servizi di Office 365 utilizzano Azure per l'archiviazione dei dati. Ad esempio, i dati di SharePoint Online e OneDrive for business nell'archiviazione BLOB di Azure e Microsoft teams memorizza i dati per il servizio chat nelle tabelle, nei BLOB e nelle code. Inoltre, la feature Score Compliance nel centro conformità di Microsoft 365 archivia i dati immessi dall'utente archiviati in formato crittografato in [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest), un database multi-modello di piattaforma come servizio (PaaS), distribuito a livello globale. Crittografia del servizio di archiviazione di Azure consente di crittografare i dati archiviati nell'archiviazione BLOB di Azure e nelle tabelle e la crittografia su disco di Azure crittografa i dati nelle code, nonché i dischi delle macchine virtuali di Windows e IaaS per fornire la crittografia del volume per il sistema operativo e per il disco di dati. La soluzione garantisce che tutti i dati sui dischi della macchina virtuale siano crittografati a riposo nello spazio di archiviazione di Azure. [La crittografia a Rest in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest) viene implementata utilizzando diverse tecnologie di sicurezza, tra cui sistemi di archiviazione delle chiavi sicure, reti crittografate e API di crittografia.
+Alcuni servizi Microsoft 365 utilizzano Azure per l'archiviazione dei dati. Ad esempio, i dati di SharePoint Online e OneDrive for business nell'archiviazione BLOB di Azure e Microsoft teams memorizza i dati per il servizio chat nelle tabelle, nei BLOB e nelle code. Inoltre, la feature Score Compliance nel centro conformità di Microsoft 365 archivia i dati immessi dall'utente archiviati in formato crittografato in [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest), un database multi-modello di piattaforma come servizio (PaaS), distribuito a livello globale. Crittografia del servizio di archiviazione di Azure consente di crittografare i dati archiviati nell'archiviazione BLOB di Azure e nelle tabelle e la crittografia su disco di Azure crittografa i dati nelle code, nonché i dischi delle macchine virtuali di Windows e IaaS per fornire la crittografia del volume per il sistema operativo e per il disco di dati. La soluzione garantisce che tutti i dati sui dischi della macchina virtuale siano crittografati a riposo nello spazio di archiviazione di Azure. [La crittografia a Rest in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest) viene implementata utilizzando diverse tecnologie di sicurezza, tra cui sistemi di archiviazione delle chiavi sicure, reti crittografate e API di crittografia.
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 

@@ -1,5 +1,5 @@
 ---
-title: Utilizzare la ricerca contenuto per eseguire la ricerca di dati di terze parti importati in Office 365
+title: Utilizzare la ricerca contenuto per cercare i dati importati di terze parti
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,19 +13,19 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Utilizzare lo strumento eDiscovery ricerca contenuto per cercare gli elementi importati nelle cassette postali di Office 365 da un'origine dati di terze parti. È possibile creare una query per cercare tutti gli elementi importati o creare una query per la ricerca di tipi di dati specifici di terze parti. In questo articolo vengono elencati i valori che è possibile utilizzare in una query di parole chiave per eseguire la ricerca nei tipi di dati di terze parti che è possibile importare in Office 365.
-ms.openlocfilehash: 005290dc2dae203c4fddc1c78d3007306c613483
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Utilizzare lo strumento eDiscovery ricerca contenuto per cercare gli elementi importati nelle cassette postali in Microsoft 365 da un'origine dati di terze parti. È possibile creare una query per cercare tutti gli elementi importati o creare una query per la ricerca di tipi di dati specifici di terze parti. In questo articolo vengono elencati i valori che è possibile utilizzare in una query di parole chiave per eseguire la ricerca nei tipi di dati di terze parti che è possibile importare in Microsoft 365.
+ms.openlocfilehash: 07a489d7c18cc305b7ffc745f7fc7870d8f72a2f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601323"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633371"
 ---
-# <a name="use-content-search-to-search-third-party-data-imported-to-office-365"></a>Utilizzare la ricerca contenuto per eseguire la ricerca di dati di terze parti importati in Office 365
+# <a name="use-content-search-to-search-third-party-imported-data"></a>Utilizzare la ricerca contenuto per cercare i dati importati di terze parti
 
-È possibile utilizzare lo [strumento eDiscovery ricerca contenuto](content-search.md) nel centro sicurezza & conformità per cercare gli elementi importati nelle cassette postali di Office 365 da un'origine dati di terze parti. È possibile creare una query per eseguire una ricerca in tutti gli elementi di dati di terze parti importati oppure creare una query per la ricerca di elementi di dati di terze parti specifici. Inoltre, è anche possibile creare un criterio di conservazione di Office 365 basato su query o un blocco di eDiscovery basato su query per conservare i dati di terze parti in Office 365. 
+È possibile utilizzare lo [strumento eDiscovery ricerca contenuto](content-search.md) nel centro sicurezza & Compliance per cercare gli elementi importati nelle cassette postali in Microsoft 365 da un'origine dati di terze parti. È possibile creare una query per eseguire una ricerca in tutti gli elementi di dati di terze parti importati oppure creare una query per la ricerca di elementi di dati di terze parti specifici. Inoltre, è anche possibile creare un criterio di conservazione basato su query o un blocco di eDiscovery basato su query per conservare i dati di terze parti. 
   
-Per ulteriori informazioni sull'importazione di dati di terze parti e un elenco dei tipi di dati di terze parti che è possibile importare in Office 365, vedere [collaborare con un partner per archiviare i dati di terze parti in office 365](work-with-partner-to-archive-third-party-data.md). 
+Per ulteriori informazioni sull'importazione di dati di terze parti e un elenco dei tipi di dati di terze parti che è possibile importare in Microsoft 365, vedere [collaborare con un partner per archiviare i dati di terze parti in Office 365](work-with-partner-to-archive-third-party-data.md). 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Creazione di una query per la ricerca di tutti i dati di terze parti
 

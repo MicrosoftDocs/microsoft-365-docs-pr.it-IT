@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aggiungere i risultati di una ricerca associata a un caso di eDiscovery avanzato. Gli elementi vengono copiati dal percorso originale e copiati in una posizione di archiviazione di Azure fornita da Microsoft. Gli elementi vengono anche reindicizzati e Advanced eDiscovery eseguirà il riconoscimento ottico dei caratteri (OCR) sui file di immagine e caricherà il testo dell'immagine per la revisione e l'analisi.
-ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b3710a91585d801f55b36622d6048a2c4bc58a7d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634564"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632301"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un insieme da rivedere
 
-Quando si è soddisfatti dei risultati di una ricerca e si è pronti per esaminare e analizzare i risultati della ricerca, è possibile aggiungerli a un set di revisione nel caso. La copia dei dati originali nel set di revisione facilita anche la revisione e il processo di analisi fornendovi strumenti di analisi avanzati, come il rilevamento di temi, il rilevamento quasi duplicati e l'identificazione dei thread di posta elettronica. È inoltre possibile aggiungere dati provenienti da origini dati non di Office 365 a un set di revisione, in modo da poter esaminare tali dati oltre ai dati raccolti da Office 365. 
+Quando si è soddisfatti dei risultati di una ricerca e si è pronti per esaminare e analizzare i risultati della ricerca, è possibile aggiungerli a un set di revisione nel caso. La copia dei dati originali nel set di revisione facilita anche la revisione e il processo di analisi fornendovi strumenti di analisi avanzati, come il rilevamento di temi, il rilevamento quasi duplicati e l'identificazione dei thread di posta elettronica. È inoltre possibile aggiungere dati provenienti da origini dati non Microsoft 365 a un set di revisione in modo da poter esaminare tali dati oltre ai dati raccolti da Microsoft 365. 
 
 Quando si aggiungono i risultati di una ricerca a un set di revisione (i set di revisione in un caso sono elencati nella scheda dei **set di revisione** ), si verificano le operazioni seguenti:
 
 - La ricerca viene eseguita di nuovo. Questo significa che i risultati della ricerca copiati nel set di revisione possono essere diversi dai risultati stimati restituiti al momento dell'ultima esecuzione della ricerca.
 
-- Tutti gli elementi nei risultati della ricerca vengono copiati dall'origine dati originale nei servizi Live di Office 365 e copiati in una posizione di archiviazione sicura di Azure nel cloud Microsoft.
+- Tutti gli elementi nei risultati della ricerca vengono copiati dall'origine dati originale nei servizi Live e copiati in una posizione di archiviazione sicura di Azure nel cloud Microsoft.
 
 - Tutti gli elementi (inclusi il contenuto e i metadati) vengono reindicizzati in modo che tutti i dati del set di revisione siano completamente ricercabili durante la revisione dei dati del caso. Reindicizzare i risultati dei dati in ricerche accurate e veloci quando si esegue una ricerca nei dati del set di verifica durante l'analisi del caso.
 
@@ -43,7 +43,7 @@ Per aggiungere dati a un set di revisione, fare clic su una ricerca nella scheda
 
 ![Selezionare un set di Revisione](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
-L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi dalle origini dati originali in Office 365 (ad esempio, da cassette postali e siti), la loro copia nel percorso di archiviazione di Azure (questo processo di copia è denominato anche *ingestione*) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di riesame per avviare il processo di filtro, revisione, tagging ed esportazione dei dati nel set di revisione.
+L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi provenienti dalle origini dati originali in Microsoft 365 (ad esempio, da cassette postali e siti), copiarli nel percorso di archiviazione di Azure (questo processo di copia viene chiamato anche *ingestione*) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di riesame per avviare il processo di filtro, revisione, tagging ed esportazione dei dati nel set di revisione.
 
 ## <a name="add-a-sample-to-a-review-set"></a>Aggiungere un esempio a un set di Revisione
 

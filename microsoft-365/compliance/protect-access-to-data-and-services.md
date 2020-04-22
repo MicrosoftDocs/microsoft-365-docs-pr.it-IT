@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: pagina di destinazione per la protezione dell'accesso ai dati e ai servizi di O365
-ms.openlocfilehash: eec1963f73b4b1e014f3605ae8fc5afee4ae039b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: pagina di destinazione per proteggere l'accesso ai dati e ai servizi di Microsoft 365
+ms.openlocfilehash: 4d09ee0aa0ef36222ae0d238b0e7a44ee23994d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601703"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632211"
 ---
 # <a name="protect-user-and-device-access"></a>Proteggere l'accesso di utenti e dispositivi
 
-La protezione dell'accesso ai dati e ai servizi di Office 365 è cruciale per la difesa da attacchi cibernetici e per la protezione dalla perdita di dati. Le stesse protezioni possono essere applicate ad altre applicazioni SaaS nell'ambiente e persino alle applicazioni locali pubblicate con il proxy di applicazione di Azure Active Directory.
+La protezione dell'accesso ai dati e ai servizi di Microsoft 365 è cruciale per la difesa da attacchi cibernetici e la protezione contro la perdita di dati. Le stesse protezioni possono essere applicate ad altre applicazioni SaaS nell'ambiente e persino alle applicazioni locali pubblicate con il proxy di applicazione di Azure Active Directory.
   
 ## <a name="step-1-review-recommendations"></a>Passaggio 1: esaminare i suggerimenti
 
@@ -33,7 +33,7 @@ Funzionalità consigliate per proteggere le identità e i dispositivi che accedo
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>Passaggio 2: proteggere gli account di amministratore e l'accesso
-Gli account amministrativi utilizzati per amministrare l'ambiente di Office 365 includono privilegi elevati. Questi sono obiettivi validi per hacker e cyberattackers. 
+Gli account amministrativi utilizzati per amministrare l'ambiente Microsoft 365 includono privilegi elevati. Questi sono obiettivi validi per hacker e cyberattackers. 
 
 Iniziare utilizzando solo gli account amministratore per l'amministrazione. Gli amministratori devono disporre di un account utente distinto per l'utilizzo regolare e non amministrativo e utilizzare il proprio account amministrativo solo quando necessario per completare un'attività associata alla loro funzione processi.
 
@@ -55,7 +55,7 @@ L'autenticazione a più fattori e i criteri di accesso condizionale sono strumen
 - Autenticazione a più fattori
 - Accesso condizionale
 - Protezione delle app di Intune (app e protezione dei dati per i dispositivi)
-- Conformità del dispositivo Intune
+- Conformità dei dispositivi Intune
 - Azure AD Identity Protection
 
 L'implementazione della conformità del dispositivo Intune richiede la registrazione del dispositivo. La gestione dei dispositivi consente di assicurarsi che siano integre e conformi prima di consentire loro di accedere alle risorse nell'ambiente in uso. Vedere [registrazione dei dispositivi per la gestione in Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)

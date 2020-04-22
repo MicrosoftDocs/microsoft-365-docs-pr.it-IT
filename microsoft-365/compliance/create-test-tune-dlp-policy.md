@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 819320b8170c652a6cdb32e191ebca5174eb0329
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604183"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635966"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
-La prevenzione della perdita di dati è una funzionalità di conformità di Office 365 progettata per aiutare l'organizzazione a impedire l'esposizione intenzionale o accidentale di informazioni riservate a parti indesiderate. DLP ha le sue radici in Exchange Server ed Exchange Online ed è applicabile anche in SharePoint Online e OneDrive for business.
+La prevenzione della perdita di dati (DLP) è una funzionalità di conformità progettata per aiutare l'organizzazione a impedire l'esposizione intenzionale o accidentale di informazioni riservate a parti indesiderate. DLP ha le sue radici in Exchange Server ed Exchange Online ed è applicabile anche in SharePoint Online e OneDrive for business.
 
 DLP utilizza un motore di analisi del contenuto per esaminare il contenuto dei messaggi di posta elettronica e i file, in cerca di informazioni riservate, come i numeri di carta di credito e le informazioni di identificazione personale (PII). Le informazioni riservate in genere non devono essere inviate tramite posta elettronica o incluse nei documenti, senza eseguire passaggi aggiuntivi quali la crittografia del messaggio di posta elettronica o dei file. Usando DLP è possibile rilevare informazioni riservate e intraprendere azioni quali:
 
@@ -57,7 +57,7 @@ Quando i rischi di perdita di dati non sono del tutto evidenti, è difficile cap
 
 I criteri DLP per Exchange Online possono essere gestiti tramite l'interfaccia di amministrazione di Exchange. Tuttavia, è possibile configurare i criteri DLP per tutti i carichi di lavoro tramite il Centro sicurezza & Compliance, quindi questo è ciò che verrà utilizzato per le dimostrazioni in questo articolo. Nel centro sicurezza & conformità sono disponibili i criteri DLP in**criteri**di **prevenzione** > della perdita di dati. Fare clic su **Crea un criterio** per iniziare.
 
-Office 365 fornisce una serie di [modelli di criteri DLP](what-the-dlp-policy-templates-include.md) che è possibile utilizzare per creare i criteri DLP. Si supponga che si tratta di un'azienda australiana. È possibile filtrare i modelli di criteri per visualizzare solo quelli rilevanti per l'Australia, che rientrano nelle categorie generali finanziarie, mediche e sanitarie e di privacy.
+Microsoft 365 fornisce una serie di [modelli di criteri DLP](what-the-dlp-policy-templates-include.md) che è possibile utilizzare per creare i criteri DLP. Si supponga che si tratta di un'azienda australiana. È possibile filtrare i modelli di criteri per visualizzare solo quelli rilevanti per l'Australia, che rientrano nelle categorie generali finanziarie, mediche e sanitarie e di privacy.
 
 ![Opzione per scegliere il paese o l'area geografica](../media/DLP-create-test-tune-choose-country.png)
 
@@ -214,4 +214,4 @@ I criteri che limitano il contenuto presenteranno l'avviso all'utente come parte
 
 ## <a name="summary"></a>Riepilogo
 
-I criteri di prevenzione della perdita di dati sono utili per organizzazioni di tutti i tipi. Test di alcuni criteri DLP è un esercizio a basso rischio a causa del controllo che si ha su cose quali suggerimenti per i criteri, sostituzioni degli utenti finali e report sugli incidenti. È possibile testare tranquillamente alcuni criteri DLP per vedere quali tipi di violazioni sono già presenti nell'organizzazione e quindi creare criteri di creazione con basso tasso di falsi positivi, educare gli utenti a ciò che è consentito e non consentito e quindi distribuire i criteri DLP alla organizzazione.
+I criteri di prevenzione della perdita di dati sono utili per organizzazioni di tutti i tipi. Test di alcuni criteri DLP è un esercizio a basso rischio a causa del controllo che si ha su cose quali suggerimenti per i criteri, sostituzioni degli utenti finali e report sugli incidenti. È possibile testare tranquillamente alcuni criteri DLP per vedere quali tipi di violazioni sono già presenti nell'organizzazione e quindi creare criteri di Craft con basse percentuali di falsi positivi, educare gli utenti a ciò che è consentito e non consentito e quindi distribuire i criteri DLP all'organizzazione.

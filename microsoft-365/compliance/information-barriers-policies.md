@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
-ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: c7bc7a1f90962910a0626967e4f6dee005695e30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029882"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621372"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
@@ -37,7 +37,7 @@ Quando si definiscono i criteri per gli ostacoli alle informazioni, è possibile
 
 - Gli attributi degli account utente sono definiti in Azure Active Directory (o Exchange Online). Questi attributi possono includere reparto, titolo del processo, posizione, nome del team e altre informazioni sul profilo dei processi. 
 
-- I segmenti sono insiemi di utenti definiti nel centro sicurezza & conformità di Office 365 utilizzando un **attributo account utente**selezionato. (Vedere l' [elenco degli attributi supportati](information-barriers-attributes.md)). 
+- I segmenti sono insiemi di utenti definiti nel centro sicurezza & conformità utilizzando un **attributo account utente**selezionato. (Vedere l' [elenco degli attributi supportati](information-barriers-attributes.md)). 
 
 - I criteri barriera di informazioni determinano limiti di comunicazione o restrizioni. Quando si definiscono i criteri di barriera delle informazioni, è possibile scegliere tra due tipi di criteri:
     - I criteri "blocca" impediscono a un segmento di comunicare con un altro segmento.
@@ -47,7 +47,7 @@ Quando si definiscono i criteri per gli ostacoli alle informazioni, è possibile
 
 ## <a name="the-work-flow-at-a-glance"></a>Flusso di lavoro in breve
 
-|Fase    |Elementi coinvolti  |
+|Fase    |Cosa è coinvolto  |
 |---------|---------|
 |[Verificare che i prerequisiti siano soddisfatti](#prerequisites)     |-Verificare di disporre delle [licenze e delle autorizzazioni necessarie](information-barriers.md#required-licenses-and-permissions)<br/>-Verificare che la directory includa dati per segmentare gli utenti<br/>-Abilitare la ricerca di directory con ambito per Microsoft Teams<br/>-Verificare che la registrazione di controllo sia attivata<br/>-Verificare che non siano presenti criteri Rubrica di Exchange<br/>-Utilizzare PowerShell (vengono forniti esempi)<br/>-Fornire il consenso dell'amministratore per Microsoft Teams (sono inclusi i passaggi)          |
 |[Parte 1: segmentare gli utenti nell'organizzazione](#part-1-segment-users)     |-Determinare quali criteri sono necessari<br/>-Creare un elenco di segmenti da definire<br/>-Identificare gli attributi da utilizzare<br/>-Definire i segmenti in termini di filtri per i criteri        |
@@ -67,12 +67,12 @@ Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#requ
 
 - Ricerca nell'ambito della directory-prima di definire il primo criterio barriera informativo dell'organizzazione, è necessario [abilitare la ricerca nell'ambito della directory in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Attendere almeno 24 ore dopo aver abilitato la ricerca nell'ambito della directory prima di impostare o definire i criteri di barriera delle informazioni.
 
-- Registrazione di controllo: per cercare lo stato di un'applicazione di criteri, è necessario che la registrazione di controllo sia attivata. Si consiglia di eseguire questa operazione prima di iniziare a definire segmenti o criteri. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca del registro di controllo di Office 365](turn-audit-log-search-on-or-off.md).
+- Registrazione di controllo: per cercare lo stato di un'applicazione di criteri, è necessario che la registrazione di controllo sia attivata. Si consiglia di eseguire questa operazione prima di iniziare a definire segmenti o criteri. Per ulteriori informazioni, vedere [abilitare o disabilitare la ricerca del registro di controllo](turn-audit-log-search-on-or-off.md).
 
 - Nessun criterio rubrica-prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che non siano presenti criteri Rubrica di Exchange. Le barriere informative si basano sui criteri della Rubrica, ma i due tipi di criteri non sono compatibili. Se si dispone di tali criteri, assicurarsi che [i criteri della Rubrica siano rimossi](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) per primi. Dopo aver abilitato i criteri barriera informativi e aver abilitato la rubrica gerarchica, tutti gli utenti ***che non sono inclusi*** in un segmento barriera informazioni vedranno la [rubrica gerarchica](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online.
 
 - PowerShell-attualmente, i criteri di barriera delle informazioni vengono definiti e gestiti nel centro sicurezza & conformità di Office 365 tramite i cmdlet di PowerShell. Anche se alcuni esempi sono disponibili in questo articolo, è necessario avere familiarità con i cmdlet e i parametri di PowerShell. Sarà inoltre necessario il modulo AzureRM.
-    - [Connettersi a PowerShell per Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Installare il modulo di Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Consenso dell'amministratore per le barriere informative in Microsoft teams-quando i criteri sono sul posto, gli ostacoli alle informazioni possono rimuovere persone dalle sessioni di chat di cui non si suppone che si trovino. Questo contribuisce a garantire che l'organizzazione rimanga conforme ai criteri e alle normative. Utilizzare la procedura seguente per consentire ai criteri di barriera delle informazioni di funzionare come previsto in Microsoft teams. 
@@ -243,7 +243,7 @@ I criteri di barriera delle informazioni non sono attivi finché non vengono imp
 
     Ripetere questo passaggio come appropriato per ogni criterio.
 
-3. Dopo aver impostato lo stato attivo per i criteri barriera informativi, utilizzare il cmdlet **Start-InformationBarrierPoliciesApplication** nel centro sicurezza & conformità di Office 365.
+3. Al termine dell'impostazione dei criteri di barriera delle informazioni sullo stato attivo, utilizzare il cmdlet **Start-InformationBarrierPoliciesApplication** nel centro sicurezza & Compliance.
 
     Sintassi`Start-InformationBarrierPoliciesApplication`
 

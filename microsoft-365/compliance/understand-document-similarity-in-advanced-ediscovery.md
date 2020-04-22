@@ -1,5 +1,5 @@
 ---
-title: Comprendere la somiglianza del documento in Office 365 Advanced eDiscovery
+title: Comprendere la somiglianza del documento in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: 'Esaminare in che modo il valore di somiglianza del documento, il livello minimo di somiglianza per due file da considerare quasi duplicati, è compatibile con Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: e15eb119a569c7cd296f9d3546969848808652da
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Esaminare in che modo il valore di somiglianza del documento, il livello minimo di somiglianza per due file da considerare quasi duplicati, è compatibile con Advanced eDiscovery. '
+ms.openlocfilehash: bfce2e3018c690fc0a25bcda8e2c03690a334dc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557666"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633411"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Comprendere la somiglianza del documento in Advanced eDiscovery (Classic)
 
@@ -57,7 +57,7 @@ Dopo la fusione dei set, il documento pivot può variare quando vengono aggiunti
   
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Impostazione delle opzioni di analisi](set-analyze-options-in-advanced-ediscovery.md)
   

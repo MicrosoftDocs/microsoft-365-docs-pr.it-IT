@@ -1,5 +1,5 @@
 ---
-title: Utilizzare le utilità avanzate di eDiscovery di Office 365
+title: Usare le utilità di Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: 'Informazioni sulle utilità in Office 365 Advanced eDiscovery, tra cui log di caso, dati di cancellazione, errori di processo, modifica della pertinenza e analisi della trasparenza.  '
-ms.openlocfilehash: ce8eb00382bd6ff0514dfef99d18a8e4b2679cec
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Informazioni sulle utilità in Advanced eDiscovery, tra cui log del caso, dati di cancellazione, errori di processo, modifica della pertinenza e analisi della trasparenza.  '
+ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557656"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633391"
 ---
-# <a name="use-advanced-ediscovery-classic-utilities"></a>Utilizzare le utilità avanzate di eDiscovery (classica)
+# <a name="use-advanced-ediscovery-classic-utilities"></a>Usare le utilità di Advanced eDiscovery (classico)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -109,7 +109,7 @@ In uno scenario con più problemi, è possibile generare un report di analisi de
     
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Definizione delle impostazioni del case e del tenant](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 

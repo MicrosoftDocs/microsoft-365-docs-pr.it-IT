@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 06dc88e395ea31d40a4163565d7894a2720cb469
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 56ed13ad02c176465f983ffc99af93330f19d00c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634254"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632941"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gestire i set di revisione in Advanced eDiscovery
 
@@ -53,6 +53,6 @@ Esistono tre modi diversi per aggiungere dati a un set di revisione in un caso d
 
 1. [Aggiungere i risultati della ricerca a un insieme da rivedere](add-data-to-review-set.md)
 
-2. [Caricare dati non Office 365 in un insieme da rivedere](load-non-office365-data.md)
+2. [Caricare dati non Microsoft 365 in un set di Revisione](load-non-office365-data.md)
 
 3. [Aggiungere dati a un set di revisione da un altro set di Revisione](add-data-to-review-set-from-another-review-set.md)

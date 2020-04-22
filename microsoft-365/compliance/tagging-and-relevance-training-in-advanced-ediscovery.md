@@ -1,5 +1,5 @@
 ---
-title: Formazione di tagging e pertinenza in Office 365 Advanced eDiscovery
+title: Formazione di tagging e pertinenza in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Informazioni sui passaggi da contrassegnare e quindi utilizzare un campione di formazione di 40 file durante la fase di formazione per pertinenza di Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 6362aef6f4e0e17b39429dfeebca796d58d2d13e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Informazioni sui passaggi da contrassegnare e quindi utilizzare un campione di formazione di 40 file durante la fase di formazione per la pertinenza di Advanced eDiscovery.  '
+ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557716"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636264"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Formazione di tagging e pertinenza in Advanced eDiscovery (Classic)
 
@@ -100,7 +100,7 @@ L'elenco file di esempio consente di visualizzare un elenco dei file in un campi
     
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   

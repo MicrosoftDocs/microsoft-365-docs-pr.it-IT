@@ -1,5 +1,5 @@
 ---
-title: Gestire la chiave del cliente per Office 365
+title: Gestione della chiave del cliente
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Una volta configurata la chiave del cliente, informazioni su come gestirla ripristinando le chiavi di AKV e gestendo le autorizzazioni e i criteri di crittografia dei dati.
-ms.openlocfilehash: 112bdee7658334c251418903761866841625ff17
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804814"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635602"
 ---
-# <a name="manage-customer-key-for-office-365"></a>Gestire la chiave del cliente per Office 365
+# <a name="manage-customer-key"></a>Gestione della chiave del cliente
 
 Dopo aver configurato Customer Key per Office 365, è possibile gestire le chiavi come descritto in questo articolo. Per ulteriori informazioni, vedere Key Customer negli argomenti correlati.
 
@@ -70,7 +70,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 ## <a name="manage-data-encryption-policies-deps-with-customer-key"></a>Gestire i criteri di crittografia dei dati con la chiave del cliente
 
-La chiave Customer gestisce DEPs in modo diverso tra i diversi servizi di Office 365. Ad esempio, è possibile creare un numero diverso di DEPs per i diversi servizi.
+La chiave Customer gestisce il DEPs in modo diverso tra i diversi servizi. Ad esempio, è possibile creare un numero diverso di DEPs per i diversi servizi.
 
 **Exchange Online e Skype for business:** È possibile creare fino a 50 DEPs. Per istruzioni, vedere [creare un criterio di crittografia dei dati per l'utilizzo con Exchange Online e Skype for business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
 
@@ -80,7 +80,7 @@ La chiave Customer gestisce DEPs in modo diverso tra i diversi servizi di Office
 
 Per visualizzare un elenco di tutti i DEPs creati per Exchange Online e Skype for business utilizzando il cmdlet Get-DataEncryptionPolicy di PowerShell, eseguire la procedura seguente.
 
-1. Se si utilizza un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Se si utilizza un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. Per restituire tutti i DEPs nell'organizzazione, eseguire il cmdlet Get-DataEncryptionPolicy senza parametri.
 
@@ -92,11 +92,11 @@ Per visualizzare un elenco di tutti i DEPs creati per Exchange Online e Skype fo
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Assegnare una DEP prima di eseguire la migrazione di una cassetta postale nel cloud
 
-Quando si assegna la funzionalità DEP, Office 365 crittografa il contenuto della cassetta postale utilizzando la funzionalità DEP assegnata durante la migrazione. Questo processo è più efficiente della migrazione della cassetta postale, assegnando la funzionalità DEP e quindi in attesa che venga eseguita la crittografia, che può richiedere ore o eventualmente giorni.
+Quando si assegna la funzionalità DEP, Microsoft 365 crittografa il contenuto della cassetta postale utilizzando la funzionalità DEP assegnata durante la migrazione. Questo processo è più efficiente della migrazione della cassetta postale, assegnando la funzionalità DEP e quindi in attesa che venga eseguita la crittografia, che può richiedere ore o eventualmente giorni.
 
 Per assegnare una DEP a una cassetta postale prima di eseguirne la migrazione a Office 365, eseguire il cmdlet Set-MailUser in PowerShell di Exchange Online:
 
-1. Se si utilizza un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Se si utilizza un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. Eseguire il cmdlet Set-MailUser.
 
@@ -110,7 +110,7 @@ Per assegnare una DEP a una cassetta postale prima di eseguirne la migrazione a 
 
 Per determinare la funzionalità DEP assegnata a una cassetta postale, utilizzare il cmdlet Get-MailboxStatistics. Il cmdlet restituisce un identificatore univoco (GUID).
   
-1. Se si utilizza un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Se si utilizza un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
@@ -178,13 +178,13 @@ L'output di questo cmdlet include:
 
 È possibile controllare la revoca di tutte le chiavi radice incluso il tasto disponibilità. La chiave del cliente fornisce il controllo dell'aspetto di pianificazione dell'uscita dei requisiti normativi. Se si decide di revocare le chiavi per eliminare i dati e uscire dal servizio, il servizio eliminerà la chiave di disponibilità dopo il completamento del processo di eliminazione dei dati.
 
-Office 365 verifica e convalida il percorso di eliminazione dei dati. Per ulteriori informazioni, vedere il report SSAE 18 SOC 2 disponibile nel [Service Trust Portal](https://servicetrust.microsoft.com/). Microsoft consiglia inoltre i seguenti documenti:
+Microsoft 365 verifica e convalida il percorso di eliminazione dei dati. Per ulteriori informazioni, vedere il report SSAE 18 SOC 2 disponibile nel [Service Trust Portal](https://servicetrust.microsoft.com/). Microsoft consiglia inoltre i seguenti documenti:
 
 - [Guida alla valutazione dei rischi e alla conformità per gli istituti finanziari nel cloud Microsoft](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 - [Considerazioni sulla pianificazione dell'uscita di O365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Il percorso di eliminazione dei dati differisce leggermente tra i diversi servizi di Office 365.
+Il percorso di eliminazione dei dati differisce leggermente tra i diversi servizi.
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Revocare le chiavi dei clienti e la chiave di disponibilità per Exchange Online e Skype for business
 
@@ -199,7 +199,7 @@ Per avviare il percorso di eliminazione dei dati, eseguire la procedura seguente
 
 1. Rimuovere le autorizzazioni wrap e unwrap per "O365 Exchange Online" dai Vault delle chiavi di Azure.
 
-2. Se si utilizza un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale nell'organizzazione di Office 365, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+2. Se si utilizza un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale nell'organizzazione, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 3. Per ogni DEP che contiene le cassette postali che si desidera eliminare, eseguire il cmdlet [set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy) come indicato di seguito.
 
@@ -235,14 +235,14 @@ Per avviare il percorso di eliminazione dei dati per i file di SharePoint Online
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Crittografia del servizio con la chiave del cliente per Office 365](customer-key-overview.md)
+- [Crittografia del servizio con la chiave del cliente](customer-key-overview.md)
 
 - [Informazioni sulla chiave di disponibilità](customer-key-availability-key-understand.md)
 
-- [Configurare la chiave cliente per Office 365](customer-key-set-up.md)
+- [Configurare la chiave del cliente](customer-key-set-up.md)
 
-- [Eseguire il rollforward o la rotazione di una chiave del cliente o di una chiave di disponibilità](customer-key-availability-key-roll.md)
+- [Implementare o distribuire una Customer Key o una chiave di disponibilità](customer-key-availability-key-roll.md)
 
-- [Archivio protetto dei clienti in Office 365](customer-lockbox-requests.md)
+- [Customer Lockbox](customer-lockbox-requests.md)
 
-- [Servizio di crittografia di Office 365](office-365-service-encryption.md)
+- [Crittografia del servizio](office-365-service-encryption.md)

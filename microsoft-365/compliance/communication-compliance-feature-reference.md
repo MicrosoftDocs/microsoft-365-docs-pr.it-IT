@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 40e8be29c585c0490b93e81c27728085d59c5146
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 25f69491156d7862d9dc145123ec158a3ff40556
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193452"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634188"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -32,10 +32,10 @@ ms.locfileid: "43193452"
 >[!Important]
 >L'utilizzo di PowerShell per la creazione e la gestione di criteri di conformità della comunicazione non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella [soluzione Microsoft 365 Communication Compliance](https://compliance.microsoft.com/supervisoryreview).
 
-È possibile creare criteri di conformità della comunicazione per le organizzazioni Microsoft 365 nel centro conformità di Microsoft 365. Se si dispone di un'organizzazione di Office 365, verranno [configurati i criteri di supervisione](configure-supervision-policies.md) nel centro sicurezza & conformità di Office 365. I criteri di conformità della comunicazione definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specificano chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli **amministratore revisione di supervisione** possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche apportate a un criterio a un file con estensione CSV che include anche lo stato degli avvisi in sospeso, degli elementi escalation e degli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
+È possibile creare criteri di conformità della comunicazione per le organizzazioni Microsoft 365 nel centro conformità di Microsoft 365. Se si dispone di un'organizzazione Microsoft 365, verranno [configurati i criteri di supervisione](configure-supervision-policies.md) nel centro sicurezza & conformità. I criteri di conformità della comunicazione definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specificano chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli **amministratore revisione di supervisione** possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche apportate a un criterio a un file con estensione CSV che include anche lo stato degli avvisi in sospeso, degli elementi escalation e degli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
 
 >[!NOTE]
->I criteri di supervisione creati nel centro sicurezza e conformità di Office 365 per le sottoscrizioni di Office 365 non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da un abbonamento a Office 365 a un abbonamento a Microsoft 365, sarà necessario creare nuovi criteri di conformità per la comunicazione per sostituire il criterio di supervisione esistente.
+>I criteri di supervisione creati nel centro sicurezza & Compliance per le sottoscrizioni di Office 365 non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da un abbonamento a Office 365 a un abbonamento a Microsoft 365, sarà necessario creare nuovi criteri di conformità per la comunicazione per sostituire il criterio di supervisione esistente.
 
 ## <a name="policy-templates"></a>Modelli dei criteri
 
@@ -43,13 +43,13 @@ I modelli di criteri sono impostazioni predefinite che è possibile utilizzare p
 
 |**Area**|**Modello di criteri**|**Dettagli**|
 |:-----|:-----|:-----|
-| **Lingua offensiva e anti-molestia** | Monitorare le comunicazioni per la lingua offensiva | -Locations: Exchange, teams, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 100% <br> -Condizioni: minaccia, profanità e classificazione del linguaggio per molestie |
+| **Lingua offensiva e anti-molestia** | Monitorare le comunicazioni per la lingua offensiva | -Locations: Exchange, teams, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 100% <br> -Conditions: classificatore di lingua offensivo |
 | **Informazioni riservate** | Monitorare le comunicazioni per informazioni riservate | -Locations: Exchange, teams, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 10% <br> -Conditions: informazioni riservate, modelli e tipi di contenuto esterno alla casella, opzione dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
 | **Conformità alle normative** | Monitorare le comunicazioni per informazioni relative alla conformità alle normative finanziarie | -Locations: Exchange, teams, Skype for business <br> -Direction: in ingresso, in uscita <br> -Percentuale di verifica: 10% <br> -Conditions: opzione dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
 
 ## <a name="supervised-users"></a>Utenti controllati
 
-Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario determinare chi ha bisogno delle proprie comunicazioni. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da sorvegliare. Alcuni esempi di questi gruppi sono i gruppi di Office 365, le liste di distribuzione basate su Exchange e i canali Microsoft teams. È inoltre possibile escludere utenti o gruppi specifici dall'analisi con un gruppo di esclusione specifico o un elenco di gruppi.
+Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario determinare chi ha bisogno delle proprie comunicazioni. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da sorvegliare. Alcuni esempi di questi gruppi sono i gruppi di Microsoft 365, le liste di distribuzione basate su Exchange e i canali Microsoft teams. È inoltre possibile escludere utenti o gruppi specifici dall'analisi con un gruppo di esclusione specifico o un elenco di gruppi.
 
 >[!IMPORTANT]
 >Gli utenti interessati dai criteri di conformità della comunicazione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato oppure essere inclusi in un abbonamento a Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si vuole provare la conformità alla comunicazione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -62,7 +62,7 @@ Quando si crea un criterio di conformità della comunicazione, è necessario det
 
 Per semplificare l'installazione, creare gruppi per gli utenti che hanno bisogno di una revisione delle comunicazioni e di gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, se si desidera eseguire l'analisi delle comunicazioni tra due gruppi distinti di persone oppure se si desidera specificare un gruppo non supervisionato.
 
-Quando si seleziona un gruppo di Office 365 per gli utenti controllati, il criterio analizza il contenuto della cassetta postale di Office 365 condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio analizza le singole cassette postali degli utenti.
+Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il criterio analizza il contenuto della cassetta postale condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio analizza le singole cassette postali degli utenti.
 
 ## <a name="supported-communication-types"></a>Tipi di comunicazione supportati
 
@@ -71,7 +71,7 @@ Con i criteri di conformità della comunicazione, è possibile scegliere di anal
 - **Microsoft teams**: è possibile analizzare le comunicazioni chat e gli allegati associati in entrambi i canali di Microsoft teams pubblici e privati e nelle chat individuali. Chat e allegati dei team corrispondenti le condizioni dei criteri di conformità della comunicazione possono richiedere fino a 24 ore. Utilizzare le seguenti configurazioni di gestione dei gruppi per controllare le chat utente e le comunicazioni dei canali nei team:
 
     - **Per le comunicazioni di chat dei team:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di conformità della comunicazione. Questa impostazione è per le relazioni tra utenti/chat uno-a-uno o uno-a-molti.
-    - **Per le comunicazioni di canale dei team:** Assegnare a tutti i gruppi di Microsoft Team Channel o Office 365 che si desidera analizzare che contengano un utente specifico per i criteri di conformità della comunicazione. Se si aggiunge lo stesso utente ad altri canali Microsoft teams o gruppi di Office 365, accertarsi di aggiungere questi nuovi canali e gruppi ai criteri di conformità della comunicazione.
+    - **Per le comunicazioni di canale dei team:** Assegnare a tutti i gruppi di Microsoft Team Channel o Microsoft 365 che si desidera analizzare che contengano un utente specifico per i criteri di conformità della comunicazione. Se si aggiunge lo stesso utente ad altri canali Microsoft teams o gruppi Microsoft 365, accertarsi di aggiungere questi nuovi canali e gruppi ai criteri di conformità della comunicazione.
 
 - **Posta elettronica di Exchange**: le cassette postali ospitate in Exchange Online come parte dell'abbonamento a Microsoft 365 o Office 365 sono tutte idonee per l'analisi dei messaggi. Messaggi di posta elettronica di Exchange e allegati che corrispondono alle condizioni dei criteri di conformità della comunicazione possono richiedere fino a 24 ore. I tipi di allegati supportati per la conformità alla comunicazione sono gli stessi dei [tipi di file supportati per le ispezioni del contenuto delle regole del flusso di posta di Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
@@ -116,7 +116,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 
 ### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
 
-È possibile includere i tipi di informazioni riservate nell'ambito del criterio di conformità della comunicazione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Nell'ambito del servizio di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md)di Office 365, la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
+È possibile includere i tipi di informazioni riservate nell'ambito del criterio di conformità della comunicazione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Come parte di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md), la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 
 - Finanze
 - Medicale e sanitarie
@@ -133,7 +133,7 @@ Configure custom keyword Dictionary (o lessici) per fornire una gestione semplic
 
 I classificatori incorporati analizzano i messaggi inviati o ricevuti su tutti i canali di comunicazione nell'organizzazione per diversi tipi di problemi di conformità. I classificatori utilizzano una combinazione di intelligenza artificiale e parole chiave per identificare la lingua nei messaggi suscettibili di violare i criteri di anti-molestia. I classificatori incorporati supportano attualmente solo le parole chiave in inglese nei messaggi.
 
-La conformità alla comunicazione utilizza i classificatori incorporati per analizzare le comunicazioni per i termini e i sentimenti per i seguenti tipi di lingua:
+Conformità della comunicazione i classificatori incorporati analizzano le comunicazioni per i termini e i sentimenti per i seguenti tipi di lingua:
 
 - **Pericolo**: consente di analizzare le minacce per commettere violenze o danni fisici a una persona o a una proprietà.
 - **Molestie**: analisi per comportamenti offensivi che mirano alle persone in relazione a razza, colore, religione, origine nazionale.
@@ -244,7 +244,7 @@ I filtri di conformità di comunicazione consentono di filtrare e ordinare i mes
 
 ## <a name="alert-policies"></a>Criteri di avviso
 
-Dopo aver configurato un criterio, viene creato automaticamente un criterio di avviso corrispondente e vengono generati avvisi per i messaggi che soddisfano le condizioni definite nel criterio. Per impostazione predefinita, tutti i criteri corrispondenti ai trigger di avviso sono assegnati a un livello di gravità medio nel criterio di avviso associato. Gli avvisi vengono generati per un criterio di conformità della comunicazione dopo che il livello di soglia dei trigger di aggregazione viene soddisfatto nel criterio di avviso di Office 365 associato.
+Dopo aver configurato un criterio, viene creato automaticamente un criterio di avviso corrispondente e vengono generati avvisi per i messaggi che soddisfano le condizioni definite nel criterio. Per impostazione predefinita, tutti i criteri corrispondenti ai trigger di avviso sono assegnati a un livello di gravità medio nel criterio di avviso associato. Gli avvisi vengono generati per un criterio di conformità della comunicazione dopo che il livello di soglia dei trigger di aggregazione viene soddisfatto nel criterio di avviso associato.
 
 Per i criteri di conformità della comunicazione, i valori dei criteri di avviso seguenti sono configurati per impostazione predefinita:
 
@@ -257,7 +257,7 @@ Per i criteri di conformità della comunicazione, i valori dei criteri di avviso
 >[!Note]
 >Le impostazioni dei trigger di soglia dei criteri di avviso per le attività supportano un valore minimo di 3 o superiore per i criteri di conformità della comunicazione.
 
-È possibile modificare le impostazioni predefinite per i trigger per il numero di attività, il periodo per le attività e per gli utenti specifici nei criteri di avviso nella pagina **criteri di avviso** nel centro sicurezza & conformità di Office 365.
+È possibile modificare le impostazioni predefinite per i trigger per il numero di attività, il periodo per le attività e per gli utenti specifici nei criteri di avviso nella pagina **criteri di avviso** nel centro sicurezza & conformità.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Modificare il livello di gravità per un criterio di avviso
 
@@ -282,7 +282,7 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Tali informazioni possono essere un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui si modifica un criterio di conformità della comunicazione. I criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una preparazione completa per i controlli interni o esterni. Le cronologie di controllo dettagliate di ogni azione di creazione, modifica ed eliminazione vengono acquisite dai criteri di comunicazione per fornire la prova delle procedure di supervisione.
 
 >[!Important]
->È necessario che il controllo sia abilitato per l'organizzazione prima che vengano registrati gli eventi di conformità della comunicazione. Per abilitare il controllo, vedere [Enable the Office 365 audit log](communication-compliance-configure.md#step-2-required-enable-the-office-365-audit-log).
+>È necessario che il controllo sia abilitato per l'organizzazione prima che vengano registrati gli eventi di conformità della comunicazione. Per abilitare il controllo, vedere [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
 
 Per visualizzare le attività relative ai criteri di conformità della comunicazione, selezionare il controllo **Esporta attività di revisione** nella pagina principale per tutti i criteri. Questa azione genera un file di controllo nel formato. csv che contiene le informazioni seguenti:
 

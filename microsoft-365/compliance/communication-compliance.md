@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 13b19079e52a390e8be3372939619541aa3b7294
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193472"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634178"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
 
@@ -121,10 +121,10 @@ In questo passaggio del flusso di lavoro vengono identificati i requisiti di con
 
 È possibile scegliere tra i seguenti modelli di criteri nel centro conformità di Microsoft 365:
 
-- **Linguaggio offensivo e antimolestia**: utilizzare questo modello per creare rapidamente un criterio che utilizza i classificatori di minacce, parolacce e molestie incorporati per rilevare automaticamente i contenuti che potrebbero essere considerati abusivi o offensivi.
+- **Linguaggio offensivo e antimolestia**: utilizzare questo modello per creare rapidamente un criterio che utilizza il classificatore incorporato per rilevare automaticamente il contenuto che può essere considerato abusivo o offensivo.
 - **Informazioni riservate**: utilizzare questo modello per creare un criterio per l'analisi delle comunicazioni contenenti tipi di informazioni riservate definite o parole chiave per garantire che i dati importanti non siano condivisi con utenti che non devono avere accesso.
 - **Conformità alle normative**: utilizzare questo modello per creare un criterio per l'analisi delle comunicazioni per i riferimenti ai termini finanziari standard associati agli standard normativi.
-- **Criteri personalizzati**: utilizzare questo modello per configurare canali di comunicazione specifici, classificatori, condizioni di rilevamento individuali e la quantità di contenuto da esaminare per la supervisione nell'organizzazione.
+- **Criteri personalizzati**: utilizzare questo modello per configurare i canali di comunicazione specifici, le condizioni di rilevamento individuali e la quantità di contenuto da esaminare per la supervisione nell'organizzazione.
 
 ### <a name="investigate"></a>Analizzare
 
@@ -151,7 +151,7 @@ Il passaggio successivo consiste nel correggere i problemi di conformità della 
 
 Tenere tenere conto e gestire i problemi di conformità identificati dai criteri di conformità della comunicazione si estende sull'intero processo del flusso di lavoro. Quando vengono generati avvisi e vengono implementate azioni di analisi e correzione, i criteri esistenti potrebbero richiedere revisione e aggiornamenti e potrebbe essere necessario creare nuovi criteri.
 
-- **Monitor and report**: utilizzare dashboard di conformità della comunicazione, report, registri di esportazione ed eventi registrati nei registri di controllo di Office 365 per valutare e migliorare continuamente la postura di conformità.
+- **Monitor and report**: utilizzare dashboard di conformità della comunicazione, report, registri di esportazione ed eventi registrati nei registri di controllo unificato per valutare e migliorare continuamente la postura di conformità.
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 

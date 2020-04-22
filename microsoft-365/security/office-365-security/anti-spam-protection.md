@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di prevenire la posta indesiderata in Exchange Online e Microsoft 365. Ottenere troppi messaggi di posta indesiderata in Microsoft 365? È possibile personalizzare i filtri posta indesiderata e le impostazioni di protezione da posta indesiderata
-ms.openlocfilehash: d7c7a0166fbcbf3334325aeef153f2d82f27aac3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636047"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708572"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Protezione dalla posta indesiderata in Microsoft 365
 
@@ -83,7 +83,7 @@ Di seguito sono riportate alcune procedure consigliate che si applicano a uno sc
 
 - **Verificare le impostazioni dell'organizzazione**: guardare fuori per le impostazioni che consentono ai messaggi di ignorare il filtro posta indesiderata (ad esempio, se si aggiunge un dominio all'elenco dei domini consentiti nei criteri di protezione da posta indesiderata). Per le impostazioni consigliate, vedere [impostazioni consigliate per EOP e Microsoft 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) e [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md).
 
-- **Verificare che la regola di posta indesiderata sia abilitata nella cassetta postale dell'utente**: è abilitata per impostazione predefinita, ma se si tratta di messaggi non contrassegnati come posta indesiderata non possono essere spostati nella cartella posta indesiderata. Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Verificare che la regola di posta indesiderata sia abilitata nella cassetta postale dell'utente**: è abilitata per impostazione predefinita, ma se è disabilitata, i messaggi contrassegnati come posta indesiderata non possono essere spostati nella cartella posta indesiderata. Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Utilizzare gli elenchi di mittenti bloccati disponibili**: per informazioni, vedere [creare elenchi di mittenti bloccati](create-block-sender-lists-in-office-365.md).
 

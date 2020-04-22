@@ -1,5 +1,5 @@
 ---
-title: Pensionamento degli strumenti di eDiscovery legacy
+title: Ritiro degli strumenti legacy di eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,22 +10,22 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
-ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
-ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
+description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Advanced eDiscovery v 1.0 vengono anche ritirati nello stesso periodo di tempo.
+ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43158437"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635570"
 ---
-# <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
+# <a name="retirement-of-legacy-ediscovery-tools"></a>Ritiro degli strumenti legacy di eDiscovery
 
 > [!IMPORTANT]
 > Microsoft ha valutato la situazione dell'integrità pubblica e comprende l'impatto che questo comporta sui clienti. Vogliamo essere partner forti e responsabili dei cittadini globali. Per semplificare uno dei numerosi oneri di cui si ha a che fare, si intende posticipare il pensionamento programmato per gli strumenti di eDiscovery legacy descritti in questo articolo per tre mesi. **Le date di pensionamento aggiornate sono riportate di seguito.**
 
-Nel corso degli anni, Microsoft ha fornito gli strumenti di eDiscovery che consentono di cercare, visualizzare in anteprima ed esportare il contenuto della posta elettronica da Exchange Online. Tuttavia, questi strumenti non offrono più una soluzione efficace per la ricerca di contenuto non Exchange in altri servizi di Office 365, ad esempio i gruppi di SharePoint Online e di Office 365. Per risolvere questo, Microsoft offre altri strumenti di eDiscovery che consentono di cercare una vasta gamma di contenuti di Office 365. E abbiamo lavorato duramente per incorporare la più recente e potente funzionalità di eDiscovery nel [centro conformità di Microsoft 365](https://compliance.microsoft.com). In questo modo le organizzazioni devono rispondere a richieste di documenti legali, interne e di altro tipo per i contenuti di numerosi servizi di Office 365, tra cui Exchange Online.
+Nel corso degli anni, Microsoft ha fornito gli strumenti di eDiscovery che consentono di cercare, visualizzare in anteprima ed esportare il contenuto della posta elettronica da Exchange Online. Tuttavia, questi strumenti non offrono più una soluzione efficace per la ricerca di contenuto non Exchange in altri servizi Microsoft 365, ad esempio i gruppi di SharePoint Online e Microsoft 365. Per risolvere questo, Microsoft offre altri strumenti di eDiscovery che consentono di cercare una vasta gamma di contenuto Microsoft 365. E abbiamo lavorato duramente per incorporare la più recente e potente funzionalità di eDiscovery nel [centro conformità di Microsoft 365](https://compliance.microsoft.com). In questo modo le organizzazioni devono rispondere a richieste di documenti legali, interne e di altro tipo per i contenuti di numerosi servizi Microsoft 365, tra cui Exchange Online.
 
-Come risultato di questa nuova e migliorata funzionalità di eDiscovery nel centro conformità di Microsoft 365, vengono ritirate le seguenti funzionalità e caratteristiche correlate a eDiscovery correlate alla ricerca di contenuto di posta elettronica in Exchange Online e Office 365:
+Come risultato di questa nuova e migliorata funzionalità di eDiscovery nel centro conformità di Microsoft 365, vengono ritirate le seguenti funzionalità e caratteristiche correlate a eDiscovery correlate alla ricerca di contenuto di posta elettronica in Exchange Online e Microsoft 365:
 
 - [EDiscovery sul posto](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) e [archiviazioni sul posto](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) nell'interfaccia di amministrazione di Exchange.
 
@@ -108,7 +108,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <p>Maggiore affidabilità per la ricerca, l'esportazione e l'inserimento di contenuto in attesa</p>
 </li>
 <li>
-<p>Ricerca di contenuto per Exchange Online, SharePoint Online, OneDrive for business, Skype for business, Microsoft teams, gruppi di Yammer, gruppi di Office 365 e altro contenuto archiviato nelle applicazioni di Office 365</p></li></ul>
+<p>Ricerca di contenuto per Exchange Online, SharePoint Online, OneDrive for business, Skype for business, Microsoft teams, Yammer groups, Microsoft 365 Groups e altri contenuti archiviati nelle applicazioni di Office 365</p></li></ul>
 <p>Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations">Manage Legal Investigations in Office 365</a>.</td>
 </tr>
 <tr class="even">
@@ -204,7 +204,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
-<p> </p></td>
+<p> </p></td>
 <td><p>I cmdlet ComplianceSearch e ComplianceSearchAction interagiscono per facilitare la ricerca e l'esportazione di contenuto. È possibile creare una nuova ricerca e visualizzare la stima della ricerca utilizzando i cmdlet <strong>New-</strong>, <strong>Get-</strong>e <strong>Start-ComplianceSearch</strong> . Successivamente, è possibile utilizzare il cmdlet <strong>New-ComplianceSearchAction</strong> per esportare i risultati della ricerca. È comunque necessario utilizzare lo strumento eDiscovery di base nel centro conformità di Microsoft 365 per scaricare i risultati della ricerca nel computer locale.</p>
 <p>
 <p><strong>Nota:</strong> Se si utilizzano questi cmdlet per creare ricerche che non sono associate a un caso di eDiscovery di base, tali ricerche saranno disponibili nella pagina <strong>Ricerca contenuto</strong> del centro conformità di Microsoft 365.</p></td>
@@ -214,7 +214,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
-<p> </p></td>
+<p> </p></td>
 <td><p>Le conservazioni nel centro conformità di Microsoft 365 devono essere associate a un ComplianceCase. In primo luogo, creare il caso di conformità e quindi creare un CaseHoldPolicy e un CaseHoldRule.</p>
 <p><strong>Nota:</strong> La creazione di un CaseHoldPolicy senza creare CaseHoldRule renderà l'archiviazione inutilizzabile fino a quando non viene creata la CaseHoldRule e associata a CaseHoldPolicy. Per ulteriori informazioni, vedere la documentazione relativa al cmdlet.</p></td>
 </tr>
@@ -303,7 +303,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 </tr>
 <tr class="even">
 <td>Copiare i risultati della ricerca in una cassetta postale di individuazione</td>
-<td> </td>
+<td> </td>
 <td>Non è disponibile una sostituzione diretta per questa funzionalità poiché non fornisce l'accesso a tutti i servizi di Microsoft 365. Vedere le domande frequenti nella sezione <strong>cmdlet *-MailboxSearch</strong> per soluzioni alternative. </td>
 </tr>
 </tbody>

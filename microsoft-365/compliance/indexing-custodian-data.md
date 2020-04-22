@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Quando un custode viene aggiunto a un caso di eDiscovery avanzato, tutti i contenuti di Office 365 ritenuti parzialmente indicizzati vengono rielaborati in modo da renderli completamente ricercabili.
-ms.openlocfilehash: 3c1bead5f853a39410a6a018f170ee637dfcf84e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Quando un custode viene aggiunto a un caso di eDiscovery avanzato, tutti i contenuti considerati come parzialmente indicizzati vengono rielaborati in modo da renderli completamente ricercabili.
+ms.openlocfilehash: 0618af5bcc18622ee8091782f55648f455230b6b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072893"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637898"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indicizzazione avanzata dei dati dei responsabili
 
-Quando un custode viene aggiunto a un caso di eDiscovery avanzato, tutti i contenuti di Office 365 ritenuti parzialmente indicizzati vengono rielaborati in modo da renderli completamente ricercabili.  Questo processo è denominato *Advanced indicizzazione*. Il contenuto può essere parzialmente indicizzato per una serie di motivi, tra cui l'esistenza di immagini, i tipi di file non supportati o l'indicizzazione dei limiti delle dimensioni dei file.
+Quando un custode viene aggiunto a un caso di eDiscovery avanzato, tutti i contenuti considerati come parzialmente indicizzati vengono rielaborati in modo da renderli completamente ricercabili.  Questo processo è denominato *Advanced indicizzazione*. Il contenuto può essere parzialmente indicizzato per una serie di motivi, tra cui l'esistenza di immagini, i tipi di file non supportati o l'indicizzazione dei limiti delle dimensioni dei file.
 
-Per ulteriori informazioni sull'elaborazione del supporto in Office 365 e sugli elementi parzialmente indicizzati, vedere:
+Per ulteriori informazioni sul supporto di elaborazione e sugli elementi parzialmente indicizzati, vedere:
 
 - [Tipi di file supportati in Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Configurare la conformità di comunicazione
+title: Introduzione alla conformità delle comunicazioni
 description: Impostare i criteri di conformità della comunicazione per configurare le comunicazioni dei dipendenti per la revisione.
 f1.keywords:
 - NOCSH
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 928401f0c4b0fe479d993eba958ca1e109d4c05f
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193514"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708395"
 ---
-# <a name="configure-communication-compliance-in-microsoft-365"></a>Configurare la conformità delle comunicazioni in Microsoft 365
+# <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
 >[!IMPORTANT]
->Questo argomento si applica alla configurazione della conformità di comunicazione in un abbonamento a Microsoft 365. Se si desidera configurare i criteri di supervisione per una sottoscrizione a Office 365, vedere [Configure supervisioning for office 365](supervision-policies.md).
+>Questo argomento si applica alla configurazione della conformità di comunicazione in un abbonamento a Microsoft 365. Se si desidera configurare i criteri di supervisione per un abbonamento a Microsoft 365, vedere [Configure supervisioning for microsoft 365](supervision-policies.md).
 
 Utilizzare i criteri di conformità della comunicazione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di conformità della comunicazione consentono di monitorare le comunicazioni nell'organizzazione, vedere [Communication Compliance Policies in Microsoft 365](communication-compliance.md). Se si desidera esaminare in che modo Contoso ha configurato rapidamente un criterio di conformità della comunicazione per il monitoraggio per la lingua offensiva in Microsoft teams e le comunicazioni di Exchange Online, vedere questo [caso di studio](communication-compliance-case-study.md).
 
@@ -48,12 +48,12 @@ Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario 
 - Abbonamento a Office 365 Enterprise E5 (a pagamento o versione di valutazione)
 - Abbonamento a Office 365 Enterprise E3 + il componente aggiuntivo Office 365 Advanced Compliance (non più disponibile per le nuove sottoscrizioni, vedere note)
 
-Agli utenti inclusi nei criteri di conformità della comunicazione deve essere assegnata una delle licenze sopra riportate.
+Gli utenti inclusi nei criteri di conformità della comunicazione devono essere assegnati a una delle licenze sopra riportate.
 
 >[!IMPORTANT]
 >La conformità avanzata di Office 365 non viene più venduta come sottoscrizione autonoma. Quando le sottoscrizioni correnti scadono, i clienti devono passare a una delle sottoscrizioni precedenti, che contengono le stesse funzionalità di conformità o aggiuntive.
 
-Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera tentare la gestione dei rischi Insider, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) all'abbonamento a Office 365 esistente oppure [iscriversi a una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 Enterprise E5.
+Se non si dispone di un piano di Office 365 Enterprise E5 esistente e si desidera tentare la gestione dei rischi Insider, è possibile [aggiungere Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) alla sottoscrizione esistente oppure [iscriversi a una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Office 365 Enterprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Passaggio 1 (obbligatorio): abilitare le autorizzazioni per la conformità della comunicazione
 
@@ -66,27 +66,27 @@ Per rendere la **conformità di comunicazione** disponibile come opzione di menu
 
 1. Accedere [https://protection.office.com/permissions](https://protection.office.com/permissions) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
 
-2. Nel centro sicurezza e conformità di Microsoft Office 365 accedere a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
+2. Nel centro sicurezza &amp; e conformità, accedere a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
 
 3. Selezionare **Crea**.
 
-4. Nel campo **nome** assegnare un nome descrittivo al nuovo gruppo di ruoli. Scegliere **Avanti**.
+4. Nel campo **nome** assegnare un nome descrittivo al nuovo gruppo di ruoli. Selezionare **Avanti**.
 
-5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare la casella di controllo per l' **amministratore della revisione di supervisione**, la **gestione dei casi**, l' **amministratore della conformità**e la **Revisione**, quindi selezionare **Aggiungi** e **Chiudi**. Scegliere **Avanti**.
+5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare la casella di controllo per l' **amministratore della revisione di supervisione**, la **gestione dei casi**, l' **amministratore della conformità**e la **Revisione**, quindi selezionare **Aggiungi** e **Chiudi**. Selezionare **Avanti**.
 
     ![Gruppi di ruoli necessari per la conformità della comunicazione](../media/communication-compliance-role-groups-1.png)
 
-6. Selezionare **Scegli membri** e quindi **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera creare criteri e gestire i messaggi con le corrispondenze di criteri, quindi fare clic su **Aggiungi** e **Chiudi**. Scegliere **Avanti**.
+6. Selezionare **Scegli membri** e quindi **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera creare criteri e gestire i messaggi con le corrispondenze di criteri, quindi fare clic su **Aggiungi** e **Chiudi**. Selezionare **Avanti**.
 
 7. Selezionare **Crea gruppo di ruoli** per terminare.
 
 Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>Passaggio 2 (obbligatorio): abilitare il log di controllo di Office 365
+## <a name="step-2-required-enable-the-audit-log"></a>Passaggio 2 (obbligatorio): abilitare il log di controllo
 
 La conformità alla comunicazione richiede i registri di controllo per visualizzare gli avvisi e tenere presenti le azioni di correzione eseguite dai revisori. I registri di controllo sono un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento di un criterio di conformità comunicazione modifiche.
 
-Per istruzioni dettagliate su come abilitare il controllo, vedere [attivazione o disattivazione della ricerca del registro di controllo di Office 365](turn-audit-log-search-on-or-off.md). Dopo aver attivato il controllo, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È sufficiente eseguire questa operazione una sola volta. Per ulteriori informazioni sull'utilizzo del log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+Per istruzioni dettagliate su come abilitare il controllo, vedere [attivazione o disattivazione della ricerca del registro di controllo](turn-audit-log-search-on-or-off.md). Dopo aver attivato il controllo, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È sufficiente eseguire questa operazione una sola volta. Per ulteriori informazioni sull'utilizzo del log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Passaggio 3 (facoltativo): configurare i gruppi per la conformità della comunicazione
 
@@ -96,15 +96,15 @@ Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'
 
 | **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
 |:-----|:-----|:-----|
-|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Office 365 | Gruppi di distribuzione dinamici |
+|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Microsoft 365 gruppi | Gruppi di distribuzione dinamici |
 | Revisori | Nessuno | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici <br> Gruppi di sicurezza abilitati alla posta elettronica |
   
-Quando si seleziona un gruppo di Office 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale di Office 365 condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.
+Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.
 
 Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 - [Creazione e gestione dei gruppi di distribuzione](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Panoramica dei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Panoramica dei gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-4-required-create-a-communication-compliance-policy"></a>Passaggio 4 (obbligatorio): creare un criterio di conformità della comunicazione
   
@@ -119,7 +119,7 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 4. Selezionare **create Policy** per creare e configurare un nuovo criterio da un modello o per creare e configurare un criterio personalizzato.
 
-    Se si sceglie un modello di criteri incorporato per creare un criterio, sarà necessario:
+    Se si sceglie un modello di criteri per creare un criterio, sarà necessario:
 
     - Confermare o aggiornare il nome del criterio. Non è possibile modificare i nomi dei criteri dopo la creazione del criterio.
     - Scegliere gli utenti o i gruppi da controllare, inclusa la scelta degli utenti o dei gruppi che si desidera escludere.
@@ -139,7 +139,7 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
     >[!CAUTION]
     >Il classificatore incorporato del **linguaggio offensivo** è obsoleto perché produce un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece i classificatori incorporati per la **minaccia**, la **profanità**e la **molestia** .
-
+    
     - Definire la percentuale di comunicazioni da esaminare.
     - Esaminare le selezioni dei criteri e creare il criterio.
 

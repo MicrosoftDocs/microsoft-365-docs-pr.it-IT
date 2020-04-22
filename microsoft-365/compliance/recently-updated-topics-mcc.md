@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Analogamente alle funzionalità del centro conformità di Microsoft 365, il contenuto della guida è sempre in evoluzione. Stiamo creando continuamente nuovi articoli, aggiornando quelli esistenti ed eseguendo modifiche in base ai commenti e suggerimenti. Scopri cosa c'è di nuovo e aggiornato in questo mese.
-ms.openlocfilehash: 1f52139df6585cc0e8de240544befa3dd2175f67
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 4a07327f9ea830483aa3abbaa1b6bd52ca825230
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929350"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632161"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aggiornamenti recenti a Microsoft 365 content Compliance
 
@@ -35,7 +35,7 @@ Analogamente alle funzionalità del centro conformità di Microsoft 365, il cont
 
 ### <a name="auditing"></a>Controllo
 
-[Controllo avanzato in Microsoft 365](advanced-audit.md) (nuovo)<br>Disponibile per le organizzazioni con una sottoscrizione di Office 365 E5 o Microsoft 365 Enterprise E5, Advanced audit estende le funzionalità di controllo esistenti introducendo funzionalità quali periodi di conservazione lunghi per i registri di controllo, nuovi criteri di conservazione dei log di controllo e una nuova azione di controllo delle cassette postali che tiene traccia della posta.
+[Controllo avanzato in Microsoft 365](advanced-audit.md) (nuovo)<br>Disponibile per le organizzazioni con una sottoscrizione di Office 365 E5 o Microsoft 365 Enterprise E5, Advanced audit estende le funzionalità di controllo esistenti introducendo funzionalità quali periodi di conservazione lunghi per i registri di controllo, nuovi criteri di conservazione dei log di controllo e una nuova azione di controllo delle cassette postali che consente di tenere traccia della lettura della posta.
 
 [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md) (New)<br>Informazioni dettagliate sulla gestione dei criteri di conservazione dei log di controllo, la nuova funzionalità di controllo avanzata che consente di salvare i record di controllo da diversi servizi per un massimo di un anno.
 
@@ -53,15 +53,15 @@ Analogamente alle funzionalità del centro conformità di Microsoft 365, il cont
 
 ### <a name="customer-key"></a>Customer Key
 
-[Crittografia del servizio con la chiave del cliente in Office 365](customer-key-overview.md) (nuovo)<br>Nuovo articolo che introduce la chiave del cliente, i concetti correlati come BitLocker e la crittografia del servizio e il modo in cui interagiscono.
+[Crittografia del servizio con la chiave Customer](customer-key-overview.md) (nuova)<br>Nuovo articolo che introduce la chiave del cliente, i concetti correlati come BitLocker e la crittografia del servizio e il modo in cui interagiscono.
 
-[Gestire la chiave del cliente per Office 365](customer-key-manage.md) (nuovo)<br>Istruzioni successive all'installazione per la gestione del codice "Customer Key", inclusi i passaggi per la gestione delle autorizzazioni di DEPs e Key Vault esistenti, i tempi stimati per il completamento delle operazioni, la verifica del funzionamento della crittografia e la modalità di uscita dal servizio Office 365.
+[Gestione chiave cliente](customer-key-manage.md) (nuovo)<br>Istruzioni successive all'installazione per la gestione del codice "Customer Key", inclusi i passaggi per la gestione delle autorizzazioni di DEPs e Key Vault esistenti, i tempi stimati per il completamento delle operazioni, la verifica del funzionamento della crittografia e la modalità di uscita dal servizio.
 
 Eseguire [il rollforward o la rotazione di una chiave del cliente o di una chiave di disponibilità](customer-key-availability-key-roll.md) (nuova)<br>Descrive come eseguire il rollback delle chiavi gestite dal cliente per la chiave del cliente.
 
-Informazioni [sulla chiave di disponibilità per Office 365 Customer Key](customer-key-availability-key-understand.md) (New)<br>Copertura dettagliata del codice di disponibilità: quando e come viene utilizzato per il ripristino dalla perdita di chiave, in cui esiste nella gerarchia di chiavi del cliente e altro ancora.
+Informazioni [sulla chiave di disponibilità per il codice "Customer Key](customer-key-availability-key-understand.md) " (nuovo)<br>Copertura dettagliata del codice di disponibilità: quando e come viene utilizzato per il ripristino dalla perdita di chiave, in cui esiste nella gerarchia di chiavi del cliente e altro ancora.
 
-[Configurare la chiave del cliente per Office 365](customer-key-set-up.md) (aggiornato)<br>Precedentemente intitolato "controllare i dati in Office 365 utilizzando la chiave del cliente", questo articolo si concentra esclusivamente su come impostare la chiave del cliente per Office 365, incluse le istruzioni aggiornate.
+[Configurare la chiave del cliente per Microsoft 365](customer-key-set-up.md) (aggiornato)<br>Precedentemente intitolato "Controlling your data in Microsoft 365 using Customer Key", questo articolo si concentra esclusivamente su come configurare Customer Key per Office 365, incluse le istruzioni aggiornate.
 
 ### <a name="data-classification"></a>Classificazione dei dati
 
@@ -83,12 +83,12 @@ Sono stati aggiunti i riferimenti di Compliance Manager e i collegamenti aggiorn
 
 Sono stati aggiornati gli articoli seguenti per supportare la versione ufficiale di insider Risk Management.<br>
 [Informazioni sulla gestione dei rischi insider in Microsoft 365](insider-risk-management.md)<br>
-[Informazioni introduttive sulla gestione dei rischi Insider](insider-risk-management-configure.md)<br>
-[Creare e gestire i criteri di rischio Insider](insider-risk-management-policies.md)<br>
-[Esaminare gli avvisi sui rischi Insider](insider-risk-management-alerts.md)<br>
-[Intervenire sui casi di rischio Insider](insider-risk-management-cases.md)<br>
-[Esaminare i dati con l'esploratore contenuto a rischio Insider](insider-risk-management-content-explorer.md)<br>
-[Aggiungere gli utenti ai criteri di rischio Insider](insider-risk-management-users.md)<br>
+[Introduzione alla gestione dei rischi Insider](insider-risk-management-configure.md)<br>
+[Creare e gestire i criteri dei rischi Insider](insider-risk-management-policies.md)<br>
+[Esaminare gli avvisi relativi ai rischi Insider](insider-risk-management-alerts.md)<br>
+[Intervenire riguardo ai casi di rischio Insider](insider-risk-management-cases.md)<br>
+[Esaminare i dati con l'explorer del contenuto di gestione dei rischi Insider](insider-risk-management-content-explorer.md)<br>
+[Aggiungere utenti a criteri dei rischi Insider](insider-risk-management-users.md)<br>
 [Creare avvisi di rischio Insider](insider-risk-management-notices.md)<br>
 
 ### <a name="records-management"></a>Gestione dei record
@@ -97,7 +97,7 @@ Sono stati aggiornati gli articoli seguenti per supportare la versione ufficiale
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
-Iniziare [a utilizzare le etichette di riservatezza](get-started-with-sensitivity-labels.md) (nuove)<br>Include indicazioni per i clienti di Azure Information Protection, panoramica generale del processo e passaggi per la distribuzione di etichette di riservatezza, le autorizzazioni per la creazione e la gestione delle etichette, un elenco di scenari comuni che supportano le etichette e un elenco di utenti finali disponibili documentazione.
+Iniziare [a utilizzare le etichette di riservatezza](get-started-with-sensitivity-labels.md) (nuove)<br>Include indicazioni per i clienti di Azure Information Protection, panoramica generale del processo e passaggi per la distribuzione di etichette di riservatezza, le autorizzazioni per la creazione e la gestione delle etichette, un elenco di scenari comuni che supportano le etichette e un elenco di documentazione disponibile per gli utenti finali.
 
 Informazioni [sulle etichette di riservatezza](sensitivity-labels.md) (aggiornate)<br>Rinominati da "Panoramica delle etichette di riservatezza" e sono state spostate le informazioni dalla sezione "Introduzione" al nuovo articolo [Introduzione alle etichette di riservatezza](get-started-with-sensitivity-labels.md).
 
@@ -107,7 +107,7 @@ Informazioni [sulle etichette di riservatezza](sensitivity-labels.md) (aggiornat
 
 [Applicazione automatica di un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (aggiornato)<br>La sezione per la configurazione dell'etichetta automatica per le app di Office include ora la nuova opzione per l'utilizzo dei classificatori addestrabili.
 
-[Utilizzare le etichette di riservatezza per proteggere il contenuto in Microsoft teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md) (aggiornato)<br>Revisioni in tutto per una migliore esperienza di lettura e chiarimenti tecnici. Inoltre, in base al feedback dei clienti, sono stati aggiunti collegamenti all' [articolo di Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) per consentire l'anteprima e l'applicazione di etichette di riservatezza ai gruppi di Office 365 nel portale di Azure. Infine, è stata aggiunta una nuova sezione per il controllo delle attività relative alle etichette di riservatezza.
+[Utilizzare le etichette di riservatezza per proteggere il contenuto in Microsoft teams, gruppi microsoft 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md) (aggiornato)<br>Revisioni in tutto per una migliore esperienza di lettura e chiarimenti tecnici. Inoltre, per i commenti e suggerimenti dei clienti, sono stati aggiunti collegamenti all' [articolo di Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) per abilitare l'anteprima e applicare etichette di riservatezza ai gruppi di Microsoft 365 nel portale di Azure. Infine, è stata aggiunta una nuova sezione per il controllo delle attività relative alle etichette di riservatezza.
 
 [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (Public Preview)](sensitivity-labels-sharepoint-onedrive-files.md) (aggiornato)<br>Tra i vari aggiornamenti sono disponibili chiarimenti per i commenti e suggerimenti del cliente per il funzionamento di questa funzionalità, sottolineando che le nuove funzionalità sono valide solo per i file nuovi e modificati e per una nuova limitazione che è possibile visualizzare solo durante una fase di testing se si eliminano le etichette.
 

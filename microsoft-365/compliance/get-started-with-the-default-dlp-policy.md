@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Prima di creare anche il primo criterio di prevenzione della perdita di dati (DLP), DLP contribuisce a proteggere le informazioni riservate con un criterio predefinito. Questo criterio predefinito e il relativo suggerimento (illustrato di seguito) consentono di mantenere la sicurezza del contenuto riservato notificando quando la posta elettronica o i documenti contenenti un numero di carta di credito sono stati condivisi con un utente esterno all'organizzazione.
-ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d24848e5956a6e8927307d3102f4ce31f1187bfd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073120"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637830"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
 
@@ -62,11 +62,11 @@ Se si desidera modificare queste opzioni in un secondo momento, è possibile mod
   
 ## <a name="edit-the-default-dlp-policy"></a>Modificare il criterio DLP predefinito
 
-Questo criterio è denominato **criteri DLP predefinito di Office 365** e viene visualizzato in **prevenzione della perdita di dati** nella pagina **criteri** del Centro sicurezza &amp; e conformità. 
+Questo criterio è denominato **criterio DLP predefinito** e viene visualizzato in **prevenzione della perdita di dati** nella pagina **criteri** del &amp; Centro sicurezza e conformità. 
   
 Questo criterio è completamente personalizzabile, lo stesso di qualsiasi criterio DLP creato da zero. È anche possibile disattivare o eliminare il criterio, in modo che gli utenti non ricevano più suggerimenti per i criteri o notifiche tramite posta elettronica.
   
-![Criterio DLP denominato criteri DLP predefiniti di Office 365](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![Criterio DLP denominato criterio DLP predefinito](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Quando il widget fa e non viene visualizzato
 

@@ -16,24 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3153fc92cfae6e2feba122cc895e787c9b573ef7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f8b72112feea4af0a33ef3a0cc12005c8deea195
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080899"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637516"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Risoluzione dei problemi relativi a AzCopy in Advanced eDiscovery
 
-Quando si caricano dati o documenti non di Office 365 per la correzione degli errori in Advanced eDiscovery, l'interfaccia utente fornisce un comando AzCopy di Azure che contiene parametri con il percorso in cui vengono archiviati i file che si desidera caricare e lo spazio di archiviazione di Azure percorso in cui verranno caricati i file. Per caricare i documenti, è possibile copiare questo comando e quindi eseguirlo in un prompt dei comandi nel computer locale.  Nello screenshot seguente è riportato un esempio di un comando AzCopy:
+Quando si caricano dati o documenti non Microsoft 365 per la correzione degli errori in Advanced eDiscovery, l'interfaccia utente fornisce un comando AzCopy di Azure che contiene parametri con il percorso in cui vengono archiviati i file che si desidera caricare e il percorso di archiviazione di Azure in cui verranno caricati i file. Per caricare i documenti, è possibile copiare questo comando e quindi eseguirlo in un prompt dei comandi nel computer locale.  Nello screenshot seguente è riportato un esempio di un comando AzCopy:
 
-![Caricare i file non di Office 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Caricare file non Microsoft 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 In genere, il comando fornito funziona quando lo si esegue. Tuttavia, è possibile che i casi in cui il comando visualizzato non venga eseguito correttamente. Ecco alcuni possibili motivi.
 
 ## <a name="the-supported-version-of-azcopy-isnt-installed-on-the-local-computer"></a>La versione supportata di AzCopy non è installata nel computer locale
 
-A questo punto, è necessario utilizzare AzCopy v 8.1 per caricare i dati non di Office 365 in Advanced eDiscovery. Il comando AzCopy visualizzato nella pagina **Carica file** visualizzata nella schermata precedente restituisce un errore se non si utilizza AzCopy v 8.1. Per installare questa versione, vedere [trasferire dati con AzCopy v 8.1 in Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy).
+A questo punto, è necessario utilizzare AzCopy v 8.1 per caricare i dati non Microsoft 365 in Advanced eDiscovery. Il comando AzCopy visualizzato nella pagina **Carica file** visualizzata nella schermata precedente restituisce un errore se non si utilizza AzCopy v 8.1. Per installare questa versione, vedere [trasferire dati con AzCopy v 8.1 in Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy).
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>AzCopy non è installato nel computer locale o non è installato nel percorso predefinito
 

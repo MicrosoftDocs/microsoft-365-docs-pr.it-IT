@@ -1,5 +1,5 @@
 ---
-title: Impostare i carichi per aggiungere i file importati in Office 365 Advanced eDiscovery
+title: Impostare i carichi per aggiungere i file importati in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: "Esaminare i passaggi per aggiungere i file importati all'ultimo carico definito, o batch, di file prima di eseguire la formazione di pertinenza in Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: 3dd302e107b10726dd0110dfcb19bf59a3703add
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: "Esaminare i passaggi per aggiungere i file importati all'ultimo carico definito, o batch, di file prima di eseguire la formazione di pertinenza in Advanced eDiscovery.  "
+ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557766"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636294"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Impostare i carichi per aggiungere i file importati in Advanced eDiscovery (Classic)
 
@@ -138,7 +138,7 @@ I carichi di rotolamento e la funzionalità di catch-up variano come indicato di
     
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Definire i problemi e assegnare gli utenti](define-issues-and-assign-users.md)
   

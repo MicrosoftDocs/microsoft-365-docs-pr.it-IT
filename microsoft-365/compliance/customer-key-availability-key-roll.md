@@ -1,5 +1,5 @@
 ---
-title: Eseguire il rollforward o la rotazione di una chiave del cliente o di una chiave di disponibilità
+title: Implementare o distribuire una Customer Key o una chiave di disponibilità
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,22 +12,22 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come eseguire il rollback delle chiavi principali del cliente archiviate in Azure Key Vault che vengono utilizzate con la chiave del cliente di Office 365. I servizi includono Exchange Online, Skype for business, SharePoint Online, OneDrive for business e i file dei team.
-ms.openlocfilehash: 9699960666eaa9aa62bb027d3a4549cb50cd52e3
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+description: Informazioni su come eseguire il rollback delle chiavi principali del cliente archiviate in Azure Key Vault che vengono utilizzate con il codice "Customer Key". I servizi includono Exchange Online, Skype for business, SharePoint Online, OneDrive for business e i file dei team.
+ms.openlocfilehash: 29a36636253f5f01181f231941d0c3a9e26abacc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804812"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633643"
 ---
-# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Eseguire il rollforward o la rotazione di una chiave del cliente o di una chiave di disponibilità
+# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Implementare o distribuire una Customer Key o una chiave di disponibilità
 
 > [!CAUTION]
 > Eseguire il rollforward di una chiave di crittografia da utilizzare con il codice "Customer Key" quando i requisiti di sicurezza o conformità prevedono che è necessario ripristinare la chiave. Inoltre, non eliminare le chiavi che sono o sono state associate ai criteri. Quando si esegue il rollback delle chiavi, verranno crittografati i contenuti con le chiavi precedenti. Ad esempio, mentre le cassette postali attive verranno crittografate di frequente, le cassette postali inattive, disconnesse e disabilitate potrebbero essere ancora crittografate con le chiavi precedenti. SharePoint Online esegue il backup del contenuto per scopi di ripristino e ripristino, per cui è possibile che il contenuto archiviato sia ancora utilizzato con i tasti precedenti.
 
 ## <a name="about-rolling-the-availability-key"></a>Informazioni su Rolling The availability Key
 
-Microsoft non espone il controllo diretto della chiave di disponibilità ai clienti. Ad esempio, è possibile eseguire il rollback solo delle chiavi di cui si dispone in Azure Key Vault. Office 365 esegue il rollback delle chiavi di disponibilità in base a una pianificazione definita internamente. Non è previsto alcun contratto di servizio per questi rotoli di chiavi. Office 365 ruota la chiave di disponibilità utilizzando il codice del servizio di Office 365 in un processo automatizzato e non manuale. Gli amministratori di Microsoft possono avviare il processo di rollforward. La chiave viene rotolata utilizzando meccanismi automatici senza accesso diretto all'archivio delle chiavi. L'accesso all'archivio segreto della chiave di disponibilità non viene eseguito a Microsoft Administrators. Chiave di disponibilità la rotazione utilizza lo stesso meccanismo utilizzato per generare inizialmente la chiave. Per ulteriori informazioni sulla chiave di disponibilità, vedere [understand the availability Key](customer-key-availability-key-understand.md).
+Microsoft non espone il controllo diretto della chiave di disponibilità ai clienti. Ad esempio, è possibile eseguire il rollback solo delle chiavi di cui si dispone in Azure Key Vault. Microsoft 365 esegue il rollback delle chiavi di disponibilità in base a una pianificazione definita internamente. Non è previsto alcun contratto di servizio per questi rotoli di chiavi. Microsoft 365 ruota la chiave di disponibilità utilizzando il codice del servizio Microsoft 365 in un processo automatizzato e non manuale. Gli amministratori di Microsoft possono avviare il processo di rollforward. La chiave viene rotolata utilizzando meccanismi automatici senza accesso diretto all'archivio delle chiavi. L'accesso all'archivio segreto della chiave di disponibilità non viene eseguito a Microsoft Administrators. Chiave di disponibilità la rotazione utilizza lo stesso meccanismo utilizzato per generare inizialmente la chiave. Per ulteriori informazioni sulla chiave di disponibilità, vedere [understand the availability Key](customer-key-availability-key-understand.md).
 
 > [!IMPORTANT]
 > Le chiavi di disponibilità di Exchange Online e Skype for business possono essere effettivamente arrotolate dai clienti che creano una nuova funzionalità di protezione esecuzione programmi, poiché viene generata una chiave di disponibilità univoca per ogni DEP creato. Le chiavi di disponibilità per SharePoint Online, OneDrive for business e i file di teams esistono a livello di foresta e sono condivise tra DEPs e Customers, il che significa che il rollforward si verifica solo in base a una pianificazione definita internamente da Microsoft. Per ridurre il rischio di non rotolare la chiave di disponibilità ogni volta che viene creata una nuova protezione esecuzione programmi, SharePoint, OneDrive e teams eseguono il rollforward del tasto di intermediazione del tenant, la chiave racchiusa tra le chiavi principali del cliente e la chiave di disponibilità, ogni volta che viene creata una nuova protezione esecuzione programmi.
@@ -52,7 +52,7 @@ Ad esempio:
 
 Quando si esegue il rollback delle chiavi del Vault Key di Azure associate a una DEP utilizzata con Exchange Online e Skype for business, è necessario aggiornare la funzionalità DEP in modo che punti alla nuova chiave. La chiave di disponibilità non viene ruotata.
 
-Per indicare alla chiave del cliente di utilizzare la nuova chiave per crittografare le cassette postali in Office 365, eseguire il cmdlet Set-DataEncryptionPolicy come indicato di seguito:
+Per indicare a Customer Key di utilizzare la nuova chiave per crittografare le cassette postali, eseguire il cmdlet Set-DataEncryptionPolicy come indicato di seguito:
 
 1. Eseguire il cmdlet Set-DataEncryptionPolicy in Azure PowerShell:
   
@@ -86,8 +86,8 @@ SharePoint Online consente solo di eseguire il rollforward di una chiave alla vo
 
 - [Crittografia del servizio con la chiave del cliente per Office 365](customer-key-overview.md)
 
-- [Configurare la chiave cliente per Office 365](customer-key-set-up.md)
+- [Configurare Customer Key per Office 365](customer-key-set-up.md)
 
-- [Gestire la chiave del cliente per Office 365](customer-key-manage.md)
+- [Gestire Customer Key per Office 365](customer-key-manage.md)
 
 - [Informazioni sulla chiave di disponibilità](customer-key-availability-key-understand.md)

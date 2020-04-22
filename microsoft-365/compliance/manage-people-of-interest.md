@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 44ee6715c8bbe1254cead6b11930ca41be8864a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f5028e82e8c54972dd188215eac0518775ec275c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634714"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635840"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Gestire gli utenti che interessano le indagini sui dati (anteprima)
 
@@ -50,18 +50,18 @@ Per aggiungere persone di interesse a un'indagine:
 
 8. Optional Nel riquadro a comparsa:
    
-    -  **Cassette postali di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . Per aggiungere altre cassette postali, utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione. È inoltre possibile aggiungere cassette postali utilizzate per l'archiviazione di un gruppo di Office 365 o di una Microsoft Team Information. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
+    -  **Cassette postali di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . Per aggiungere altre cassette postali, utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione. È inoltre possibile aggiungere cassette postali utilizzate per archiviare un gruppo di Microsoft 365 o un Microsoft Team Information. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
 
         > [!NOTE]
         > Quando si fa clic su Scegli utenti, gruppi o team per specificare le cassette postali, lo strumento di selezione delle cassette postali visualizzato è vuoto. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca.
      
-     - **Siti di SharePoint** -fare clic su **Choose sites** , quindi fare clic su **Choose sites** again per specificare altri siti di SharePoint e OneDrive for business che è possibile aggiungere a una persona. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Office 365 o un team di Microsoft. Digitare l'URL per ogni sito che si desidera assegnare. Fare clic su **Scegli**e quindi su **fine**.
+     - **Siti di SharePoint** -fare clic su **Choose sites** , quindi fare clic su **Choose sites** again per specificare altri siti di SharePoint e OneDrive for business che è possibile aggiungere a una persona. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Microsoft 365 o un team di Microsoft. Digitare l'URL per ogni sito che si desidera assegnare. Fare clic su **Scegli**e quindi su **fine**.
      - **Microsoft teams** -fare clic su **Scegli team** e quindi fare di nuovo clic su **Scegli squadre** per visualizzare un elenco di gruppi di team Microsoft che la persona è un membro di oggi. Selezionare i team che si desidera aggiungere alla persona. Una volta selezionata, il sistema identificherà automaticamente & selezionare il sito di SharePoint associato e la cassetta postale del gruppo associata a quel team Microsoft. Fare clic su **Scegli**e quindi su **fine**.
         
       > [!NOTE]
       > Per aggiungere ulteriori Microsoft teams, sarà necessario aggiungere separatamente la cassetta postale e il sito di SharePoint come illustrato in alto.
 
-Dopo aver completato la mappatura delle origini dati alle persone di interesse, è possibile visualizzare il riepilogo di tutte le cassette postali, i siti e i team appena aggiunti. [! Nota] Se si mappano altre origini dati a persone di interesse e l'ambito della ricerca da parte di persone di interesse, la mappatura del documento a persone di interesse persiste durante l'indagine, facilitando l'organizzazione di prove o la generazione di report da parte di persone di interesse . 
+Dopo aver completato la mappatura delle origini dati alle persone di interesse, è possibile visualizzare il riepilogo di tutte le cassette postali, i siti e i team appena aggiunti. Se si mappano altre origini dati a persone di interesse e l'ambito della ricerca da parte di persone di interesse, la mappatura del documento a persone di interesse persiste durante l'indagine, facilitando l'organizzazione di prove o la generazione di report da parte di persone di interesse. 
 
 ## <a name="view-additional-people-of-interest-information"></a>Visualizzazione di altre persone di informazioni sugli interessi
 

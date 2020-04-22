@@ -1,5 +1,5 @@
 ---
-title: Monitorare l'analisi della pertinenza in Office 365 Advanced eDiscovery
+title: Monitorare l'analisi della pertinenza in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Informazioni su come visualizzare e interpretare lo stato e i risultati della formazione sulla pertinenza per i problemi di caso in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 9c15bd285848d1906243137bfba451b19900b28e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Informazioni su come visualizzare e interpretare lo stato e i risultati della formazione sulla pertinenza per i problemi di caso in Advanced eDiscovery.  '
+ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557676"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636619"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Monitorare l'analisi della pertinenza in Advanced eDiscovery (Classic)
 
@@ -84,7 +84,7 @@ Se si desidera importare nuovi file dopo il calcolo del batch, l'amministratore 
 Se sono presenti incoerenze nel tagging dei file, può influire sull'analisi. Il processo di coerenza tagging avanzato di eDiscovery può essere utilizzato quando i risultati non sono ottimali o la coerenza è in dubbio. Viene restituito un elenco dei possibili file contrassegnati con incoerenza, che possono essere esaminati e contrassegnati nuovamente, se necessario.
   
 > [!NOTE]
-> Dopo sette o più turni di allenamento dopo la valutazione, la coerenza di tagging può essere visualizzata in caso di **rilevanza** \> **** \> **** \> **dei risultati** \> dettagliati **avanzamento della formazione**. Questa revisione viene fatta per un problema alla volta. 
+> Dopo sette o più turni di allenamento dopo la valutazione, la coerenza di tagging può essere visualizzata in caso di **rilevanza** \> **Track** \> **Issue** \> **dei risultati** \> dettagliati **avanzamento della formazione**. Questa revisione viene fatta per un problema alla volta. 
   
 1. Nella ** \> colonna pertinenza**espandere la riga di un problema.
     
@@ -172,7 +172,7 @@ Questa visualizzazione Mostra gli elementi seguenti:
     
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   

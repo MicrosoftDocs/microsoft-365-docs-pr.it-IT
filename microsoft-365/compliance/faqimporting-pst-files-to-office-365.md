@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti sull'importazione di file PST in Office 365
+title: Domande frequenti sull'importazione di file PST
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,19 +15,19 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: "Domande frequenti per gli amministratori sull'utilizzo del servizio di importazione di Office 365 per importare i file PST dell'organizzazione nelle cassette postali di Office 365. "
-ms.openlocfilehash: 439a321c3890d85f7ca0f7da0074af80f6b7fed5
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+description: "Domande frequenti per gli amministratori sull'utilizzo del servizio di importazione di Office 365 per importare i file PST dell'organizzazione nelle cassette postali di Microsoft 365. "
+ms.openlocfilehash: c2eb673ea8be2b628496df0e7b0412cbf3312ba9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058917"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615950"
 ---
-# <a name="faq-about-importing-pst-files-to-office-365"></a>Domande frequenti sull'importazione di file PST in Office 365
+# <a name="faq-about-importing-pst-files"></a>Domande frequenti sull'importazione di file PST
 
 **Questo articolo è per gli amministratori. Si desidera importare i file PST nella propria cassetta postale? Vedere [importare messaggi di posta elettronica, contatti e calendario da un file PST di Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**|
    
-Di seguito sono riportate alcune domande frequenti sull'utilizzo del servizio di importazione di Office 365 per importare in blocco i file PST nelle cassette postali di Office 365. Per ulteriori informazioni su come importare i file PST, vedere [Overview of import PST files to Office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84).
+Di seguito sono riportate alcune domande frequenti sull'utilizzo del servizio di importazione di Office 365 per importare in blocco i file PST nelle cassette postali di Microsoft 365. Per ulteriori informazioni su come importare i file PST, vedere [Overview of import PST files to Office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84).
   
 ## <a name="using-network-upload-to-import-pst-files"></a>Uso del caricamento tramite rete per l'importazione di file PST
 
@@ -35,7 +35,7 @@ Per istruzioni dettagliate, vedere [usare il caricamento di rete per importare i
   
  **Quali autorizzazioni sono necessarie per creare processi di importazione nel servizio di importazione di Office 365?**
   
-All'utente deve essere assegnato il ruolo di importazione/esportazione di cassette postali in Exchange Online per importare i file PST nelle cassette postali di Office 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione/importazione cassette postali al gruppo di ruoli Gestione organizzazione. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di importazione/esportazione di cassette postali e quindi aggiungere se stessi o altri utenti come membri. Per altre informazioni, vedere le sezioni "Aggiungere un ruolo a un gruppo di ruoli" o "Creare un gruppo di ruoli" in [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688).
+È necessario essere assegnati al ruolo di esportazione delle cassette postali in Exchange Online per importare i file PST nelle cassette postali di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione/importazione cassette postali al gruppo di ruoli Gestione organizzazione. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di importazione/esportazione di cassette postali e quindi aggiungere se stessi o altri utenti come membri. Per altre informazioni, vedere le sezioni "Aggiungere un ruolo a un gruppo di ruoli" o "Creare un gruppo di ruoli" in [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688).
   
 Inoltre, per creare processi di importazione nel Centro sicurezza e conformità, una delle seguenti condizioni deve essere vera:
   
@@ -43,7 +43,7 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
     
     Oppure
     
-- L'utente deve essere un amministratore globale nell'organizzazione di Office 365.
+- È necessario essere un amministratore globale dell'organizzazione.
     
 > [!TIP]
 > Prendere in considerazione la creazione di un nuovo gruppo di ruoli in Exchange Online appositamente creato per l'importazione dei file PST in Office 365. Per il livello minimo di privilegi necessari per importare i file PST, assegnare i ruoli di importazione/esportazione di cassette postali e Destinatari di posta al nuovo gruppo di ruoli, quindi aggiungere i membri. 
@@ -75,19 +75,19 @@ Significa anche che, dopo essere stati eliminati dall'area di archiviazione di A
   
  **Quanto tempo è necessario per importare un file PST in una cassetta postale?**
   
-Dipende dalla capacità della rete, ma in genere sono necessarie diverse ore per ogni terabyte (TB) di dati da caricare nell'area di archiviazione di Azure per l'organizzazione. Una volta copiati i file PST nell'area di archiviazione di Azure, un file PST viene importato in una cassetta postale di Office 365 a una velocità di almeno 24 GB al giorno. Se questa velocità non soddisfa le proprie esigenze, è consigliabile ricorrere ad altri metodi per la migrazione dei dati di posta elettronica a Office 365. Per altre informazioni, vedere [Modalità di migrazione di più account di posta elettronica a Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
+Dipende dalla capacità della rete, ma in genere sono necessarie diverse ore per ogni terabyte (TB) di dati da caricare nell'area di archiviazione di Azure per l'organizzazione. Dopo aver copiato i file PST nell'area di archiviazione di Azure, un file PST viene importato in una cassetta postale di Microsoft 365 a una velocità di almeno 24 GB al giorno. Se questa velocità non soddisfa le proprie esigenze, è consigliabile ricorrere ad altri metodi per la migrazione dei dati di posta elettronica a Office 365. Per altre informazioni, vedere [Modalità di migrazione di più account di posta elettronica a Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
   
 Se si importano file PST diversi in cassette postali di destinazione diverse, il processo di importazione verrà eseguito in parallelo, ovvero ogni coppia di file PST e cassetta postale verrà importata contemporaneamente. Analogamente, se si importano più file PST nella stessa cassetta postale, questi vengono importati contemporaneamente.
   
  **In che modo il processo di importazione PST gestisce gli elementi di posta elettronica duplicati?**
 
-Il processo di importazione PST controlla gli elementi duplicati e non copia gli elementi da un file PST nella cassetta postale o nell'archivio se esiste un elemento corrispondente nella cartella di destinazione nella cassetta postale di destinazione o nell'archivio di destinazione. Se si importa di nuovo lo stesso file PST e si specifica una cartella di destinazione diversa (utilizzando la proprietà TargetRootFolder nel file di mapping di importazione PST) rispetto a quella specificata in un processo di importazione precedente, tutti gli elementi del file PST verranno reimportati.
+Durante il processo di importazione PST viene controllata la presenza di elementi duplicati; gli elementi dei file PST non vengono copiati nella cassetta postale o nell'archivio di destinazione se è già presente un elemento corrispondente nella cartella di destinazione. Se si reimporta lo stesso file PST e si specifica una cartella di destinazione diversa rispetto a quella specificata in un processo di importazione precedente, usando la proprietà TargetRootFolder nel file di mapping dell'importazione PST, verranno reimportati tutti gli elementi nel file PST.
 
  **È previsto un limite alle dimensioni del messaggio durante l'importazione dei file PST?**
   
 Sì. Se un file PST contiene un elemento della cassetta postale con dimensioni maggiori di 150 MB, questo elemento viene ignorato durante il processo di importazione.
   
- **Le proprietà del messaggio, ad esempio la data/ora di invio o ricezione del messaggio, l'elenco dei destinatari e altre proprietà, vengono mantenute quando i file PST vengono importati in una cassetta postale di Office365?**
+ **Sono proprietà del messaggio, ad esempio quando il messaggio è stato inviato o ricevuto, l'elenco di destinatari e altre proprietà, conservate quando i file PST vengono importati in una cassetta postale di Microsoft 365?**
   
 Sì. I metadati del messaggio originale non vengono modificati durante il processo di importazione.
   
@@ -113,7 +113,7 @@ Per istruzioni dettagliate, vedere [Use Drive Shipping to Import PST files to Of
   
  **Quali autorizzazioni sono necessarie per creare processi di importazione nel servizio di importazione di Office 365?**
   
-Per importare i file PST nelle cassette postali di Office 365, all'utente deve essere assegnato il ruolo Importazione/Esportazione cassette postali. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione/importazione cassette postali al gruppo di ruoli Gestione organizzazione. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di importazione/esportazione di cassette postali e quindi aggiungere se stessi o altri utenti come membri. Per altre informazioni, vedere le sezioni "Aggiungere un ruolo a un gruppo di ruoli" o "Creare un gruppo di ruoli" in [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688).
+È necessario essere assegnati al ruolo di esportazione delle cassette postali per importare i file PST nelle cassette postali di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione/importazione cassette postali al gruppo di ruoli Gestione organizzazione. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di importazione/esportazione di cassette postali e quindi aggiungere se stessi o altri utenti come membri. Per altre informazioni, vedere le sezioni "Aggiungere un ruolo a un gruppo di ruoli" o "Creare un gruppo di ruoli" in [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688).
   
 Inoltre, per creare processi di importazione nel Centro sicurezza e conformità, una delle seguenti condizioni deve essere vera:
   
@@ -121,7 +121,7 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
     
     Oppure
     
-- L'utente deve essere un amministratore globale nell'organizzazione di Office 365.
+- È necessario essere un amministratore globale dell'organizzazione.
     
 > [!TIP]
 > Prendere in considerazione la creazione di un nuovo gruppo di ruoli in Exchange Online appositamente creato per l'importazione dei file PST in Office 365. Per il livello minimo di privilegi necessari per importare i file PST, assegnare i ruoli di importazione/esportazione di cassette postali e Destinatari di posta al nuovo gruppo di ruoli, quindi aggiungere i membri. 
@@ -135,11 +135,11 @@ La spedizione unità è attualmente disponibile negli Stati Uniti, nonché in Ca
   
  **Quali contratti di licenza commerciali supportano la spedizione unità?**
   
-La spedizione unità per importare i file PST in Office 365 è disponibile con un contratto Microsoft Enterprise Agreement (EA). La spedizione unità non è disponibile con un contratto Microsoft Products and Services Agreement (MPSA).
+L'unità di trasporto per importare i file PST in Microsoft 365 è disponibile tramite un contratto Microsoft Enterprise (EA). La spedizione unità non è disponibile con un contratto Microsoft Products and Services Agreement (MPSA).
   
- **Quanto costa usare la spedizione unità per importare file PST in Office 365?**
+ **Qual è il prezzo per l'utilizzo della spedizione unità per importare i file PST in Microsoft 365?**
   
-Il costo della spedizione unità per importare file PST in cassette postali di Office 365 è pari a 2 dollari USA per GB di dati. Se ad esempio si spedisce un'unità disco rigido contenente 1000 GB (1 TB) di file PST, il costo sarà 2000 dollari USA. È possibile collaborare con un partner per il pagamento delle spese di importazione. Per informazioni su come trovare un partner, vedere [Trovare il partner o il rivenditore di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=785197).
+Il costo per l'utilizzo della spedizione delle unità per importare i file PST nelle cassette postali di Microsoft 365 è $2 USD per GB di dati. Se ad esempio si spedisce un'unità disco rigido contenente 1000 GB (1 TB) di file PST, il costo sarà 2000 dollari USA. È possibile collaborare con un partner per il pagamento delle spese di importazione. Per informazioni su come trovare un partner, vedere [Find Your Microsoft partner or Reseller](https://go.microsoft.com/fwlink/p/?LinkId=785197).
   
  **Quali tipi di dischi rigidi sono supportati per la spedizione unità?**
   
@@ -162,7 +162,7 @@ Dopo aver ricevuto il disco rigido in Microsoft Data Center, saranno necessari t
   
  **Quanto tempo è necessario per importare un file PST in una cassetta postale?**
   
-Dopo aver caricato i file PST nell'area di archiviazione di Azure, Office 365 analizza i dati nei file PST in modo sicuro per identificare l'età degli elementi e i diversi tipi di messaggio inclusi nei file PST. Una volta completata questa analisi, si potranno importare tutti i dati nei file PST o impostare filtri per controllare quali dati vengono importati. Dopo aver avviato il processo di importazione, un file PST viene importato in una cassetta postale di Office 365 a una velocità di almeno 24 GB al giorno. Se questa velocità non soddisfa le proprie esigenze, è consigliabile ricorrere ad altri metodi per l'importazione dei dati di posta elettronica in Office 365. Per altre informazioni, vedere [Modalità di migrazione di più account di posta elettronica a Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
+Dopo aver caricato i file PST nell'area di archiviazione di Azure, Microsoft 365 analizza i dati nei file PST (in modo sicuro e sicuro) per identificare l'età degli elementi e i diversi tipi di messaggi inclusi nei file PST. Una volta completata questa analisi, si potranno importare tutti i dati nei file PST o impostare filtri per controllare quali dati vengono importati. Dopo aver avviato il processo di importazione, un file PST viene importato in una cassetta postale di Microsoft 365 a una velocità di almeno 24 GB al giorno. Se questa velocità non soddisfa le proprie esigenze, è consigliabile ricorrere ad altri metodi per l'importazione dei dati di posta elettronica in Office 365. Per altre informazioni, vedere [Modalità di migrazione di più account di posta elettronica a Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
   
 Se si importano file PST diversi in cassette postali di destinazione diverse, il processo di importazione verrà eseguito in parallelo, ovvero ogni coppia di file PST e cassetta postale verrà importata contemporaneamente. Analogamente, se si importano più file PST nella stessa cassetta postale, questi vengono importati contemporaneamente.
   
@@ -172,9 +172,9 @@ Tutti i file PST nel percorso di archiviazione di Azure per l'organizzazione (ne
   
 Significa anche che, dopo essere stati eliminati dall'area di archiviazione di Azure, i file PST non vengono più visualizzati nell'elenco dei file per un processo di importazione completato nel Centro sicurezza e conformità. Anche se un processo di importazione potrebbe essere ancora presente nella pagina **Importa file PST** del Centro sicurezza e conformità, l'elenco dei file PST potrebbe essere vuoto quando si visualizzano i dettagli dei processi di importazione precedenti. 
   
- **Quale versione del formato di file PST è supportata per l'importazione in Office 365?**
+ **Quale versione del formato di file PST è supportata per l'importazione in Microsoft 365?**
   
-Sono disponibili due versioni del formato di file PST: ANSI e Unicode. Si consiglia di importare i file che usano il formato di file PST Unicode. Tuttavia, i file che usano il formato di file PST ANSI, ad esempio quelli per le lingue che usano un set di caratteri a due byte (DBCS), possono anche essere importati in Office 365. Per ulteriori informazioni sull'importazione di file PST ANSI, vedere il passaggio 3 in [Use Drive Shipping to Import PST files to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).
+Sono disponibili due versioni del formato di file PST: ANSI e Unicode. Si consiglia di importare i file che usano il formato di file PST Unicode. Tuttavia, i file che utilizzano il formato di file PST ANSI, ad esempio quelli relativi alle lingue che utilizzano un set di caratteri a doppio byte (DBCS), possono essere importati anche in Microsoft 365. Per ulteriori informazioni sull'importazione di file PST ANSI, vedere il passaggio 3 in [Use Drive Shipping to Import PST files to Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).
   
 È anche possibile importare i file PST di Outlook 2007 e versioni successive in Office 365.
   
@@ -184,9 +184,9 @@ Sì. Se un file PST contiene un elemento della cassetta postale con dimensioni m
   
   **In che modo il processo di importazione PST gestisce gli elementi di posta elettronica duplicati?**
 
-Il processo di importazione PST controlla gli elementi duplicati e non copia gli elementi da un file PST nella cassetta postale o nell'archivio se esiste un elemento corrispondente nella cartella di destinazione nella cassetta postale di destinazione o nell'archivio di destinazione. Se si importa di nuovo lo stesso file PST e si specifica una cartella di destinazione diversa (utilizzando la proprietà TargetRootFolder nel file di mapping di importazione PST) rispetto a quella specificata in un processo di importazione precedente, tutti gli elementi del file PST verranno reimportati.
+Durante il processo di importazione PST viene controllata la presenza di elementi duplicati; gli elementi dei file PST non vengono copiati nella cassetta postale o nell'archivio di destinazione se è già presente un elemento corrispondente nella cartella di destinazione. Se si reimporta lo stesso file PST e si specifica una cartella di destinazione diversa rispetto a quella specificata in un processo di importazione precedente, usando la proprietà TargetRootFolder nel file di mapping dell'importazione PST, verranno reimportati tutti gli elementi nel file PST.
  
- **Le proprietà del messaggio, ad esempio la data/ora di invio o ricezione del messaggio, l'elenco dei destinatari e altre proprietà, vengono mantenute quando i file PST vengono importati in una cassetta postale di Office365?**
+ **Sono proprietà del messaggio, ad esempio quando il messaggio è stato inviato o ricevuto, l'elenco di destinatari e altre proprietà, conservate quando i file PST vengono importati in una cassetta postale di Microsoft 365?**
   
 Sì. I metadati del messaggio originale non vengono modificati durante il processo di importazione
   
@@ -194,7 +194,7 @@ Sì. I metadati del messaggio originale non vengono modificati durante il proces
   
 Sì. Non è possibile importare un file PST che contiene più di 300 livelli di cartelle annidate.
   
- **È possibile usare la spedizione unità per importare file PST in una cassetta postale inattiva in Office 365?**
+ **È possibile utilizzare la distribuzione delle unità per importare i file PST in una cassetta postale inattiva in Microsoft 365?**
   
 Sì, questa funzionalità è ora disponibile.
   

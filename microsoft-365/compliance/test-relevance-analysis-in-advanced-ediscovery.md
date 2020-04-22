@@ -1,5 +1,5 @@
 ---
-title: Verifica dell'analisi della pertinenza in Office 365 Advanced eDiscovery
+title: Analisi della pertinenza del test in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: "Informazioni su come utilizzare la scheda test dopo il calcolo batch in Office 365 Advanced eDiscovery per testare, confrontare e convalidare la qualità complessiva dell'elaborazione.  "
-ms.openlocfilehash: c65c10878bdc057a1c53c4370f6a6750e1fe8e9d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: "Informazioni su come utilizzare la scheda test dopo il calcolo batch in Advanced eDiscovery per testare, confrontare e convalidare la qualità complessiva dell'elaborazione.  "
+ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557686"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637200"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Analisi della pertinenza del test in Advanced eDiscovery (Classic)
 
@@ -112,7 +112,7 @@ Il test "test Slice" esegue test analogo al test "test the rest", ma a un segmen
     
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   

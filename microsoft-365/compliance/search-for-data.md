@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1ccd922c0829155110e633fa45253c56b9006111
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bff750f5600fc1daa9c6d87a4b42f0c9b1caa252
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069883"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632911"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Cercare i dati in un'indagine
 
-Nella scheda **ricerca** in un'analisi dei dati è possibile cercare i dati riservati, confidenziali o sensibili nei percorsi di contenuto di Office 365 utilizzando parole chiave e condizioni. 
+Nella scheda **ricerca** in un'analisi dei dati è possibile cercare i dati riservati, confidenziali o sensibili nei percorsi di contenuto utilizzando parole chiave e condizioni. 
 
 Dopo aver eseguito una ricerca, è possibile visualizzare le statistiche sugli elementi restituiti dalla ricerca, ad esempio i percorsi di contenuto con la maggior parte degli elementi corrispondenti alla query di ricerca. È inoltre possibile visualizzare in anteprima un sottoinsieme dei risultati. Dopo aver identificato il set di documenti per approfondire ulteriormente, è possibile aggiungere i risultati della ricerca a un set di prove per elaborarli e analizzarli ulteriormente.
 
@@ -41,7 +41,7 @@ Dopo aver eseguito una ricerca, è possibile visualizzare le statistiche sugli e
 
 4. Scegliere i percorsi di contenuto (origini dati) da cercare. È possibile ambire la ricerca selezionando i percorsi di contenuto di persone specifiche di interesse (se è stato aggiunto un oggetto all'inchiesta). Se sono state aggiunte persone di interesse per l'indagine, è possibile aggiungerle seguendo la procedura descritta in [Manage people of interest](manage-people-of-interest.md#add-people-of-interest).
  
-   A volte potrebbe essere necessario eseguire una ricerca in tutti i percorsi di contenuto dell'organizzazione. In alternativa, potrebbe essere necessario cercare percorsi che non sono di proprietà di una persona specifica. In questo scenario, è possibile scegliere di eseguire una ricerca nell'intera organizzazione o in tutte le posizioni per uno specifico servizio di Office 365, ad esempio Exchange, SharePoint, OneDrive of business o teams.
+   A volte potrebbe essere necessario eseguire una ricerca in tutti i percorsi di contenuto dell'organizzazione. In alternativa, potrebbe essere necessario cercare percorsi che non sono di proprietà di una persona specifica. In questo scenario, è possibile scegliere di eseguire una ricerca nell'intera organizzazione o in tutte le posizioni per uno specifico servizio (ad esempio, Exchange, SharePoint, OneDrive of business o Teams).
 
 5. Salvare ed eseguire la ricerca.
 
@@ -76,14 +76,14 @@ Quando si è soddisfatti dei risultati di una ricerca e si è pronti per analizz
 
 - Tutti gli elementi, inclusi il contenuto e i metadati, vengono reindicizzati in modo che tutti i dati del set di evidenze siano completamente ricercabili durante l'indagine. Reindicizzare i risultati dei dati in ricerche accurate e veloci quando si esegue una ricerca nei dati del set di evidenze durante l'indagine.
 
-Un vantaggio della copia dei dati attivi in un set di evidenze in Azure è che per gli incidenti critici o sensibili al tempo, è possibile contenere rapidamente i danni eliminando immediatamente il contenuto sospetto nell'origine dati originale nel servizio Live e quindi esaminando l'incidente analizzando la prova che è stata copiata nell'ambiente in quarantena del percorso di archiviazione di Azure. 
+Uno dei vantaggi della copia dei dati attivi in un set di evidenze in Azure è che per gli incidenti critici o sensibili al tempo, è possibile contenere rapidamente i danni eliminando immediatamente il contenuto sospetto nell'origine dati originale nel servizio Live e analizzando la prova che è stata copiata nell'ambiente in quarantena del percorso di archiviazione di Azure. 
 
 La copia dei dati originali nel set di evidenze facilita anche l'indagine fornendovi strumenti di analisi avanzati, come il rilevamento di temi, il rilevamento quasi duplicati e l'identificazione dei thread di posta elettronica.
 
-Se necessario, è anche possibile aggiungere dati provenienti da origini dati non di Office 365 a un set di evidenze in modo che venga memorizzato insieme ai dati raccolti da Office 365.
+Se necessario, è anche possibile aggiungere dati da origini dati non Microcsoft 365 a un set di evidenze in modo che venga memorizzato insieme ai dati raccolti da Microsoft 365.
 
 Per aggiungere dati a un set di evidenze, selezionare una ricerca nella scheda **ricerche** e quindi fare clic su **Aggiungi risultati alla prova** nella pagina a comparsa. È possibile aggiungere dati a un set di evidenze esistente o creare un nuovo set di prove al volo.
 
 ### <a name="tracking-the-progress-of-adding-search-results-to-evidence"></a>Verifica dello stato di avanzamento dell'aggiunta dei risultati della ricerca all'evidenza
 
-L'aggiunta di dati a un set di evidenze è un processo a esecuzione prolungata. Il processo include la raccolta degli elementi provenienti dall'origine dati originale da Office 365 (ad esempio, da cassette postali e siti), copiarli nel percorso di archiviazione di Azure (questo processo di copia è denominato anche *ingestione*) e quindi reindicizzare gli elementi. È possibile tracciare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** della colonna **Aggiunta dati in evidenza** . Dopo aver completato l'elaborazione delle evidenze, è possibile passare alla scheda **Evidence** , fare clic sul set di prove, quindi avviare l'analisi ricercando, rivedendo, contrassegnando ed esportando i dati rilevanti in base alle esigenze.
+L'aggiunta di dati a un set di evidenze è un processo a esecuzione prolungata. Il processo include la raccolta degli elementi provenienti dall'origine dati originale da Microsoft 365 (ad esempio, da cassette postali e siti), copiarli nel percorso di archiviazione di Azure (questo processo di copia è denominato anche *ingestione*) e quindi reindicizzare gli elementi. È possibile tracciare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** della colonna **Aggiunta dati in evidenza** . Dopo aver completato l'elaborazione delle evidenze, è possibile passare alla scheda **Evidence** , fare clic sul set di prove, quindi avviare l'analisi ricercando, rivedendo, contrassegnando ed esportando i dati rilevanti in base alle esigenze.

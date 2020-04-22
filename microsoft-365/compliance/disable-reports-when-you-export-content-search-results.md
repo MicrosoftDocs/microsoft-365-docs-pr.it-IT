@@ -13,22 +13,22 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Modificare il registro di sistema di Windows nel computer locale per disabilitare i report quando si esportano i risultati di una ricerca di contenuto dal centro sicurezza & conformità in Office 365. La disattivazione di questi rapporti consente di velocizzare il tempo di download e di risparmiare spazio su disco.
-ms.openlocfilehash: 99f8079bdbb0a3a43d0306dcf6b6ca8ab2c4fbef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bd5fadda750c709c463fbc4d84668b43e0d3a10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595241"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633451"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Disabilitare i rapporti quando si esportano i risultati di Ricerca contenuto
 
-Quando si utilizza lo strumento di esportazione di eDiscovery di Office 365 per esportare i risultati di una ricerca di contenuto nel centro sicurezza & conformità, lo strumento crea e Esporta automaticamente due rapporti che contengono informazioni aggiuntive sul contenuto esportato. Questi rapporti sono il file results. csv e il file manifest. XML (vedere la sezione [domande frequenti su disabilitazione dei rapporti di esportazione](#frequently-asked-questions-about-disabling-export-reports) in questo argomento per una descrizione dettagliata di questi report). Poiché questi file possono essere di dimensioni molto grandi, è possibile velocizzare il tempo di download e salvare lo spazio su disco impedendo l'esportazione di tali file. A tale scopo, è possibile modificare il registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Se si desidera includere i rapporti in un secondo momento, è possibile modificare l'impostazione del registro di sistema. 
+Quando si utilizza lo strumento di esportazione di eDiscovery per esportare i risultati di una ricerca di contenuto nel centro sicurezza & conformità, lo strumento crea e Esporta automaticamente due rapporti che contengono informazioni aggiuntive sul contenuto esportato. Questi rapporti sono il file results. csv e il file manifest. XML (vedere la sezione [domande frequenti su disabilitazione dei rapporti di esportazione](#frequently-asked-questions-about-disabling-export-reports) in questo argomento per una descrizione dettagliata di questi report). Poiché questi file possono essere di dimensioni molto grandi, è possibile velocizzare il tempo di download e salvare lo spazio su disco impedendo l'esportazione di tali file. A tale scopo, è possibile modificare il registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Se si desidera includere i rapporti in un secondo momento, è possibile modificare l'impostazione del registro di sistema. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Creare le impostazioni del registro di sistema per disabilitare i report di esportazione
 
 Eseguire la procedura seguente nel computer che verrà utilizzato per esportare i risultati di una ricerca di contenuto.
   
-1. Chiudere lo strumento di esportazione di Office 365 eDiscovery se è aperto.
+1. Chiudere lo strumento di esportazione di eDiscovery se è aperto.
     
 2. Eseguire una o entrambe le operazioni seguenti, a seconda del rapporto di esportazione che si desidera disabilitare.
     
@@ -62,7 +62,7 @@ Eseguire la procedura seguente nel computer che verrà utilizzato per esportare 
 
 Se i rapporti results. csv e manifest. XML sono stati disabilitati creando i file con estensione reg nella procedura precedente, è possibile modificare tali file per riabilitare un report in modo che venga esportato con i risultati della ricerca. Eseguire di nuovo la procedura seguente nel computer che verrà utilizzato per esportare i risultati di una ricerca di contenuto.
   
-1. Chiudere lo strumento di esportazione di Office 365 eDiscovery se è aperto.
+1. Chiudere lo strumento di esportazione di eDiscovery se è aperto.
     
 2. Modificare uno o entrambi i file. reg Edit creati nella procedura precedente.
     
@@ -128,11 +128,11 @@ Dipende dalle esigenze specifiche. Molte organizzazioni non richiedono ulteriori
   
  **Per quale computer è necessario eseguire questa operazione?**
   
- È necessario modificare l'impostazione del registro di sistema in un computer locale in cui viene eseguito lo strumento di esportazione di eDiscovery di Office 365. 
+ È necessario modificare l'impostazione del registro di sistema in un computer locale in cui viene eseguito lo strumento di esportazione di eDiscovery. 
   
  **Dopo aver modificato questa impostazione, è necessario riavviare il computer?**
   
-No, non è necessario riavviare il computer. Tuttavia, se è in esecuzione lo strumento di esportazione di Office 365 eDiscovery, è necessario chiuderlo e riavviarlo dopo aver modificato l'impostazione del registro di sistema.
+No, non è necessario riavviare il computer. Tuttavia, se lo strumento di esportazione di eDiscovery è in esecuzione, è necessario chiuderlo e riavviarlo dopo aver modificato l'impostazione del registro di sistema.
   
  **Una chiave del registro di sistema esistente viene modificata o viene creata una nuova chiave?**
   

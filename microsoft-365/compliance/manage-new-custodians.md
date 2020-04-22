@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Gestire i depositari in un caso di eDiscovery avanzato.
-ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634704"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635896"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestire i depositari in un caso avanzato di eDiscovery
 
@@ -132,7 +132,7 @@ Per rilasciare un custode:
 
 4. Nella pagina riquadro a comparsa fare clic su **rilascia custode**.
 
-   Viene visualizzata una pagina di avviso in cui viene spiegato che se un blocco è posizionato su un'origine dati associata al custode, il blocco verrà rimosso e qualsiasi altro blocco associato a un caso di eDiscovery avanzato verrà applicato. Che include altri tipi di funzionalità di conservazione e conservazione in Office 365, ad esempio i criteri di conservazione di Office 365.
+   Viene visualizzata una pagina di avviso in cui viene spiegato che se un blocco è posizionato su un'origine dati associata al custode, il blocco verrà rimosso e qualsiasi altro blocco associato a un caso di eDiscovery avanzato verrà applicato. Che include altri tipi di funzionalità di conservazione e conservazione (ad esempio, un criterio di conservazione Microsoft 365).
 
 5. Fare clic su **Sì** per confermare che si desidera rilasciare il custode. 
 

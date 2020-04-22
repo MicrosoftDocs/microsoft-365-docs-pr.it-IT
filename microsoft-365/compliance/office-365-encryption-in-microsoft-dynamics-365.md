@@ -1,5 +1,5 @@
 ---
-title: Crittografia di Office 365 in Microsoft Dynamics 365
+title: Crittografia in Microsoft Dynamics 365
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla crittografia in Microsoft Dynamics 365.'
-ms.openlocfilehash: 288f739182f8419cf7fbbfb6dfd7ad0a2c7838a5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d5116d957f8d9e51309a9605bb82c4ffd76386e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597853"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637240"
 ---
-# <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Crittografia di Office 365 in Microsoft Dynamics 365
+# <a name="encryption-in-microsoft-dynamics-365"></a>Crittografia in Microsoft Dynamics 365
 
 Microsoft utilizza la tecnologia di crittografia per proteggere i dati dei clienti in Dynamics 365 mentre è in fase di riposo in un database Microsoft e durante il transito tra i dispositivi utente e i datacenter. Le connessioni stabilite tra i clienti e i centri dati Microsoft vengono crittografate e tutti gli endpoint pubblici sono protetti con TLS standard del settore. TLS stabilisce efficacemente una connessione da browser a server con protezione avanzata per garantire la riservatezza e l'integrità dei dati tra desktop e Datacenter. Dopo che la crittografia dei dati è attivata, non può essere disattivata. Per ulteriori informazioni, vedere [crittografia dei dati a livello di campo](https://msdn.microsoft.com/library/dn481562.aspx).
 

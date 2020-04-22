@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo argomento illustra come configurare i flussi di processo aziendale in modo da automatizzare la conservazione attraverso gli eventi usando l'API REST di Microsoft 365.
-ms.openlocfilehash: 9bcf5be559df815f50eb5243903a81ff52288f6b
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 1e7255fe8f21328b93ac95c0377ccd9017195caa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516935"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636364"
 ---
 # <a name="automate-event-based-retention"></a>Automatizzare la conservazione basata su eventi
 

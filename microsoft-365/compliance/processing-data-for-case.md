@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: L'elaborazione in Advanced eDiscovery include la reindicizzazione dei dati del custode, l'espansione dei documenti e degli allegati incorporati e l'OCR. L'elaborazione include anche la correzione degli errori di indicizzazione.
-ms.openlocfilehash: 62626c7866d7465d708b910d2e9f3776a9ce97f9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ab0b9d3a92590812531be04f193ef51afa70a1cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070933"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632221"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Utilizzare gli errori di elaborazione in Advanced eDiscovery
 
 L' *elaborazione* è il processo di identificazione dei file, l'espansione dei documenti e degli allegati incorporati, l'estrazione del testo e il riconoscimento OCR (Optical Character Recognition) dei file di immagine e la successiva indicizzazione di tale contenuto.  
 
-Quando si aggiunge un custode a un caso nella scheda **depositari** , tutti gli elementi parzialmente indicizzati provenienti da Office 365 vengono elaborati in modo da renderli completamente ricercabili. Analogamente, quando il contenuto viene aggiunto a un set di revisione da origini dati di Office 365 e non Office 365, anche questo contenuto viene elaborato.
+Quando si aggiunge un custode a un caso nella scheda **depositari** , tutti gli elementi parzialmente indicizzati di Microsoft 365 vengono elaborati in modo da renderli completamente ricercabili. Analogamente, quando il contenuto viene aggiunto a un set di revisione da origini dati Microsoft 365 e non Microsoft 365, anche questo contenuto viene elaborato.
 
 La scheda **elaborazione** in Advanced eDiscovery fornisce informazioni sullo stato dell'indicizzazione avanzata per diversi scenari di elaborazione.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 387709ebdd84968d2b93992f6b92ef1548117569
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 75e376288a85ca6def5cf3c3037f2faee57de63b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528359"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632271"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>Report avanzati di eDiscovery (anteprima)
 
@@ -35,7 +35,7 @@ I report avanzati di eDiscovery consentono di aggregare i dati dei casi nell'org
 
 - Quanti casi attivi e chiusi sono presenti nell'organizzazione?
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per accedere ai report avanzati di eDiscovery, è necessario essere membri del gruppo di ruoli amministratore di eDiscovery. Essere membri di questo gruppo di ruolo fornisce le autorizzazioni necessarie per visualizzare, filtrare ed esportare i dati nei rapporti. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
 
@@ -45,7 +45,7 @@ Per accedere ai report avanzati di eDiscovery:
 
 1. Passare a https://protection.office.com.
   
-2. Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione.
+2. Accedere con l'account aziendale o dell'Istituto di istruzione.
   
 3. Nel centro sicurezza & conformità, fare clic su **eDiscovery > Advanced eDiscovery**.
   

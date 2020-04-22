@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Estendere Office 365 Advanced Threat Protection ai file in SharePoint Online, OneDrive for business e Microsoft teams per consentire una collaborazione più sicura per l'organizzazione.
-ms.openlocfilehash: 4c64a4934a472fa5c6ac0f1f718d63300560f6c8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 71e404a402db8c0c0ad01bf1daa415788dfa717b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636023"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708384"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -63,7 +63,7 @@ Per altre informazioni, vedere [Office 365 ATP per SharePoint, OneDrive e Micros
 
  A partire dalla fine di maggio 2018, le funzionalità di [quarantena](quarantine-email-messages.md) nel centro sicurezza &amp; e conformità vengono estese a ATP per SharePoint Online, OneDrive for business e Microsoft teams.
 
-Quando un file in SharePoint Online, OneDrive for business o Microsoft teams viene identificato come dannoso, oltre a ATP che blocca il file dall'apertura o dalla condivisione, tale file è incluso in un elenco di elementi in quarantena. (Nel centro sicurezza &amp; e conformità, passare alla **Threat management** \> **Review** \> **quarantena** e al filtro per la gestione delle minacce per il **contenuto**).
+Quando un file in SharePoint Online, OneDrive for business o Microsoft teams viene identificato come dannoso, oltre a ATP che blocca il file dall'apertura o dalla condivisione, tale file è incluso in un elenco di elementi in quarantena. Nel &amp; Centro sicurezza e conformità, passare alla **quarantena** e al filtro per la **gestione** \> **Review** \> delle minacce per **i file**.
 
 Se si è parte del team di sicurezza Microsoft 365 for business dell'organizzazione e le autorizzazioni necessarie sono state [assegnate al centro &amp; sicurezza e conformità](permissions-in-the-security-and-compliance-center.md), è possibile scaricare, rilasciare, segnalare ed eliminare file che vengono rilevati come dannosi da ATP dalla quarantena.
 
@@ -75,7 +75,7 @@ Se si è parte del team di sicurezza Microsoft 365 for business dell'organizzazi
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-1. [Attivazione di Office 365 ATP per SharePoint, OneDrive e Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
+ - [Attivazione di Office 365 ATP per SharePoint, OneDrive e Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
 
-2. [Visualizzare informazioni sui file dannosi rilevati in SharePoint, OneDrive o Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+ - [Visualizzare informazioni sui file dannosi rilevati in SharePoint, OneDrive o Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 

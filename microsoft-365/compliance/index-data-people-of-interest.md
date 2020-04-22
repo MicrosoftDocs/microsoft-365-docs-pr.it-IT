@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 77a4b3e1826889e996b875c9427013c7b08dfaaf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 278985aa93f8802f78bd632a5fc90dd6be846b21
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600643"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637908"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>Indicizzazione avanzata dei dati per un'indagine
 
-Il contenuto del sistema attivo può essere parzialmente indicizzato per una serie di motivi, tra cui l'esistenza di immagini, tipi di file non supportati o durante l'indicizzazione dei limiti delle dimensioni dei file. Quando si ha a che fare con la fuoriuscita di dati ad alto rischio, è necessario assicurarsi che la ricerca abbia acquisito tutti i dati che si desidera esaminare. Quando una persona di interesse viene aggiunta a un'analisi dei dati, qualsiasi contenuto di Office 365 ritenuto rielaborato parzialmente indicizzato viene rielaborato per renderlo completamente ricercabile. Questo processo è denominato *Advanced indicizzazione*. 
+Il contenuto del sistema attivo può essere parzialmente indicizzato per una serie di motivi, tra cui l'esistenza di immagini, tipi di file non supportati o durante l'indicizzazione dei limiti delle dimensioni dei file. Quando si ha a che fare con la fuoriuscita di dati ad alto rischio, è necessario assicurarsi che la ricerca abbia acquisito tutti i dati che si desidera esaminare. Quando una persona di interesse viene aggiunta a un'analisi dei dati, il contenuto ritenuto come parzialmente indicizzato viene rielaborato per renderlo completamente ricercabile. Questo processo è denominato *Advanced indicizzazione*. 
 
-Per ulteriori informazioni sull'elaborazione del supporto in Office 365 e sugli elementi parzialmente indicizzati, vedere:
+Per ulteriori informazioni sul supporto di elaborazione e sugli elementi parzialmente indicizzati, vedere:
 
 - [Tipi di file supportati nelle indagini sui dati](supported-filetypes-datainvestigations.md)
 

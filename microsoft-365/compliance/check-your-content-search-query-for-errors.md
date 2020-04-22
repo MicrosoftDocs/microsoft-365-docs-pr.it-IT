@@ -13,16 +13,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Prima di eseguire la ricerca, controllare la query di parole chiave per la ricerca di contenuto per errori e refusi, ad esempio caratteri non supportati e operatori booleani minuscoli. Se viene visualizzato un errore, verrà suggerita una query riveduta.
-ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17d9c7a2480b80fa45fd4bb296308a4d4be79377
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078914"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636314"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Verificare la presenza di errori nella query di Ricerca contenuto
 
-Quando si crea o si modifica una ricerca di contenuto, è possibile che Office 365 verifichi la query per i caratteri non supportati e gli operatori booleani minuscoli. Come? Basta fare clic su **Controlla query per errori di battitura** nella pagina query di una ricerca contenuto. 
+Quando si crea o si modifica una ricerca di contenuto, è possibile che Microsoft 365 verifichi la query per i caratteri non supportati e gli operatori booleani minuscoli. Come? Basta fare clic su **Controlla query per errori di battitura** nella pagina query di una ricerca contenuto. 
   
 ![Fare clic su "controlla query per errori di battitura" per controllare la query di ricerca per i caratteri non supportati](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & conformità a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3b9997b11763d91357e53d12ef70ffb025a04d74
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634934"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615990"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -56,7 +56,7 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
   > [!NOTE]
   > <sup>1</sup> Microsoft non produce estensioni o componenti aggiuntivi di terze parti per le applicazioni ClickOnce. L'esportazione dei risultati di ricerca utilizzando un browser non supportato con le estensioni di terze parti o i componenti aggiuntivi non è supportata.<br/>
-  > <sup>2</sup> come risultato delle recenti modifiche apportate a Microsoft Edge, il supporto ClickOnce non è più abilitato per impostazione predefinita. Per istruzioni sull'abilitazione del supporto ClickOnce in Edge, vedere [utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>2</sup> come risultato delle recenti modifiche apportate a Microsoft Edge, il supporto ClickOnce non è più abilitato per impostazione predefinita. Per istruzioni sull'abilitazione del supporto ClickOnce in Edge, vedere [utilizzare lo strumento di esportazione di eDiscovery in Microsoft Edge](configure-edge-to-export-search-results.md).
     
 - Quando si scaricano i risultati della ricerca (descritti nel passaggio 2), è possibile aumentare la velocità di download configurando un'impostazione del registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Per ulteriori informazioni, vedere [aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
@@ -87,7 +87,7 @@ Il primo passaggio consiste nel preparare i risultati della ricerca per l'esport
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
+2. Accedere con l'account aziendale o dell'Istituto di istruzione.
     
 3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su ricerca **Search** \> **contenuto**ricerca.
     
@@ -160,7 +160,7 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
   
 3. Fai clic su **Scarica risultati**.
     
-4. Se viene richiesto di installare lo **strumento di esportazione di MicrosoftOffice 365 eDiscovery**, fare clic su **Installa**.
+4. Se viene richiesto di installare lo **strumento di esportazione di eDiscovery**, fare clic su **Installa**.
     
 5. Nello **Strumento di esportazione eDiscovery**, incollare la chiave di esportazione copiata nel passaggio 2 nella casella appropriata.
     
@@ -175,7 +175,7 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
     
 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Di seguito sono riportate altre informazioni sull'esportazione dei risultati della ricerca.
   
@@ -212,7 +212,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
 - La dimensione massima di un file PST che può essere esportato è di 10 GB per impostazione predefinita. Questo significa che se i risultati della ricerca della cassetta postale di un utente sono superiori a 10 GB, i risultati della ricerca della cassetta postale verranno esportati in due (o più) file PST separati. Se si sceglie di esportare tutti i risultati della ricerca in un singolo file PST, il file PST verrà suddiviso in file PST aggiuntivi se la dimensione complessiva dei risultati della ricerca è superiore a 10 GB. Se si desidera modificare queste dimensioni predefinite, è possibile modificare il registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Vedere [modificare le dimensioni dei file PST quando si esportano i risultati della ricerca di eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     
-    Inoltre, i risultati della ricerca di una cassetta postale specifica non verranno divisi tra più file PST, a meno che il contenuto di una singola cassetta postale sia superiore a 10 GB. Se si è scelto di esportare i risultati della ricerca in un file PST per che contiene tutti i messaggi in una singola cartella e i risultati della ricerca sono superiori a 10 GB, gli elementi sono ancora organizzati in ordine cronologico, in modo che vengano suddivisi in file PST aggiuntivi in base all'invio Data.
+    Inoltre, i risultati della ricerca di una cassetta postale specifica non verranno divisi tra più file PST, a meno che il contenuto di una singola cassetta postale sia superiore a 10 GB. Se si è scelto di esportare i risultati della ricerca in un file PST per che contiene tutti i messaggi in una singola cartella e i risultati della ricerca sono superiori a 10 GB, gli elementi sono ancora organizzati in ordine cronologico, in modo che vengano suddivisi in file PST aggiuntivi in base alla data di invio.
      
  ### <a name="export-reports"></a>Esporta rapporti
   

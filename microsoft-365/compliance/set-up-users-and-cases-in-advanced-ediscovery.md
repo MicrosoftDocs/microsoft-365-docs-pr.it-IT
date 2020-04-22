@@ -1,5 +1,5 @@
 ---
-title: Configurare gli utenti e i casi in Office 365 Advanced eDiscovery
+title: Configurare gli utenti e i casi in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: 'Informazioni su come configurare i ruoli utente, creare casi e assegnare gli utenti ai casi in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 76d5e6ab503cc053e31811cc06ac12545a9eeb7e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Informazioni su come configurare i ruoli utente, creare casi e assegnare gli utenti ai casi in Advanced eDiscovery.  '
+ms.openlocfilehash: 5c82ad8b630974d3afeb1928f8dd229ffb0dc36a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557750"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636070"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>Configurare gli utenti e i casi in Advanced eDiscovery (Classic)
 
 In questo argomento viene descritto come configurare gli utenti e i casi per Advanced eDiscovery (Classic).
   
 > [!IMPORTANT]
-> Continuando ad investire nelle versioni più recenti di Advanced eDiscovery, si annuncia il pensionamento di Office 365 Advanced eDiscovery, noto anche come *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Se si usa ancora Advanced eDiscovery v 1.0, passare al più presto ad [Advanced eDiscovery v2.0](overview-ediscovery-20.md), noto anche come *soluzione Advanced eDiscovery in Microsoft 365*. Advanced eDiscovery 2.0 contiene funzionalità simili a quelle disponibili in Advanced eDiscovery v1.0, ma offre anche numerose nuove caratteristiche, come gestione dei responsabili, gestione delle comunicazioni e insiemi da rivedere. Per altre informazioni sul ritiro di Advanced eDiscovery v 1.0, vedere [Ritiro degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> Continuando ad investire nelle versioni più recenti di Advanced eDiscovery, si annuncia il pensionamento di Advanced eDiscovery, noto anche come *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Se si usa ancora Advanced eDiscovery v 1.0, passare al più presto ad [Advanced eDiscovery v2.0](overview-ediscovery-20.md), noto anche come *soluzione Advanced eDiscovery in Microsoft 365*. Advanced eDiscovery 2.0 contiene funzionalità simili a quelle disponibili in Advanced eDiscovery v1.0, ma offre anche numerose nuove caratteristiche, come gestione dei responsabili, gestione delle comunicazioni e insiemi da rivedere. Per altre informazioni sul ritiro di Advanced eDiscovery v 1.0, vedere [Ritiro degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -35,7 +35,7 @@ Prima di configurare i casi e gli utenti in Advanced eDiscovery, è necessario q
   
 - Per analizzare i dati di un utente tramite Advanced eDiscovery, all'utente (custode dei dati) deve essere assegnata una licenza di Office 365 E5. In alternativa, agli utenti con una licenza di Office 365 E1 o E3 può essere assegnata una licenza di eDiscovery autonoma avanzata. Gli amministratori e i responsabili della conformità assegnati ai casi e utilizzano Advanced eDiscovery per analizzare i dati non hanno bisogno di una licenza E5. 
     
-- È necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza &amp; e conformità di Office 365 per creare un caso di eDiscovery e aggiungere membri. Per aggiungersi al gruppo di ruoli eDiscovery Manager nel centro &amp; sicurezza e conformità, è necessario essere un amministratore globale dell'organizzazione di Office 365. Se non si è un amministratore globale, è necessario chiedere a un amministratore globale di aggiungerlo al gruppo di ruoli eDiscovery Manager. Per altre informazioni, vedere:
+- È necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza &amp; e conformità per creare un caso di eDiscovery e aggiungere membri. Per aggiungersi al gruppo di ruoli eDiscovery Manager nel centro &amp; sicurezza e conformità, è necessario essere un amministratore globale dell'organizzazione. Se non si è un amministratore globale, è necessario chiedere a un amministratore globale di aggiungerlo al gruppo di ruoli eDiscovery Manager. Per altre informazioni, vedere:
     
   - [Autorizzazioni nel centro sicurezza &amp; e conformità di Microsoft 365](~/security/office-365-security/protect-against-threats.md)
     
@@ -61,7 +61,7 @@ Dopo aver creato un caso di eDiscovery e aver aggiunto membri, l'utente (o quals
   
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Preparazione dei dati](prepare-data-for-advanced-ediscovery.md)
  

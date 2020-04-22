@@ -1,5 +1,5 @@
 ---
-title: Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365
+title: Configurare Azure Rights Management per la versione precedente della crittografia dei messaggi
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versione precedente della crittografia dei messaggi di Office 365 dipende da Microsoft Azure Rights Management (precedentemente noto come Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: be0fad248465927ee7cc59b31a36e65ce5c053db
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3d98fff1987548292699972cedb4e3aa34d20b13
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601483"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635478"
 ---
-# <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365
+# <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configurare Azure Rights Management per la versione precedente della crittografia dei messaggi
 
 In questo argomento vengono descritti i passaggi da seguire per poter attivare e configurare Azure Rights Management (RMS), parte di Azure Information Protection, per l'utilizzo con la versione precedente di Office 365 Message Encryption (OME).
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Questo articolo si applica solo alla versione precedente di OME
-Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzionalità OME, ma è già stata distribuita OME, le informazioni contenute in questo articolo si applicano all'organizzazione. Microsoft consiglia di effettuare un piano per passare alle nuove funzionalità OME non appena è ragionevole per la propria organizzazione. Per istruzioni, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md). Per ulteriori informazioni sul funzionamento delle nuove funzionalità, vedere [crittografia dei messaggi di Office 365](ome.md). Il resto di questo articolo si riferisce al comportamento OME prima del rilascio delle nuove funzionalità OME.
+Se l'organizzazione non è stata ancora spostata nelle nuove funzionalità OME, ma è già stata distribuita OME, le informazioni contenute in questo articolo si applicano all'organizzazione. Microsoft consiglia di effettuare un piano per passare alle nuove funzionalità OME non appena è ragionevole per la propria organizzazione. Per istruzioni, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md). Per ulteriori informazioni sul funzionamento delle nuove funzionalità, vedere [crittografia dei messaggi di Office 365](ome.md). Il resto di questo articolo si riferisce al comportamento OME prima del rilascio delle nuove funzionalità OME.
 
 ## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>Prerequisiti per l'utilizzo della versione precedente della crittografia dei messaggi di Office 365
 <a name="warmprereqs"> </a>
 
-La crittografia dei messaggi di Office 365 (OME), tra cui IRM, dipende da Azure Rights Management (Azure RMS). Azure RMS è la tecnologia di protezione utilizzata da Azure Information Protection. Per utilizzare OME, l'organizzazione di Office 365 deve includere un abbonamento a Exchange Online o Exchange Online Protection che, a sua disposizione, include una sottoscrizione di Azure Rights Management.
+La crittografia dei messaggi di Office 365 (OME), tra cui IRM, dipende da Azure Rights Management (Azure RMS). Azure RMS è la tecnologia di protezione utilizzata da Azure Information Protection. Per utilizzare OME, è necessario che l'organizzazione includa un abbonamento a Exchange Online o Exchange Online Protection che, a sua sua disposizione, includa una sottoscrizione di Azure Rights Management.
   
 - Se non si è sicuri di cosa include la sottoscrizione, vedere le descrizioni del servizio Exchange Online per i [criteri dei messaggi, il ripristino e la conformità](https://technet.microsoft.com/library/exchange-online-message-policy-recovery-and-compliance.aspx).
 
@@ -50,16 +50,16 @@ La crittografia dei messaggi di Office 365 (OME), tra cui IRM, dipende da Azure 
   
 ## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>Impostare la versione precedente di OME per l'utilizzo di Azure RMS importando domini di pubblicazione trusted (pubblicazione trusted)
 
-Un dominio di pubblicazione trusted è un file XML che contiene informazioni sulle impostazioni di gestione dei diritti dell'organizzazione. Ad esempio, il dominio di pubblicazione trusted contiene informazioni sul certificato concessore di licenze server (SLC) utilizzato per la firma e la crittografia dei certificati e della licenza, gli URL utilizzati per la gestione delle licenze e la pubblicazione e così via. Si importa il dominio di pubblicazione trusted nell'organizzazione di Office 365 utilizzando Windows PowerShell.
+Un dominio di pubblicazione trusted è un file XML che contiene informazioni sulle impostazioni di gestione dei diritti dell'organizzazione. Ad esempio, il dominio di pubblicazione trusted contiene informazioni sul certificato concessore di licenze server (SLC) utilizzato per la firma e la crittografia dei certificati e della licenza, gli URL utilizzati per la gestione delle licenze e la pubblicazione e così via. Si importa il dominio di pubblicazione trusted nell'organizzazione tramite Windows PowerShell.
   
 > [!IMPORTANT]
-> In precedenza, è possibile scegliere di importare pubblicazione trusted dal servizio Active Directory Rights Management (AD RMS) nell'organizzazione di Office 365. Tuttavia, in questo modo si eviterà di utilizzare le nuove funzionalità OME e non è consigliabile. Se l'organizzazione di Office 365 è attualmente configurata in questo modo, Microsoft consiglia di creare un piano per eseguire la migrazione dal server RMS di Active Directory locale alla protezione delle informazioni di Azure basata su cloud. Per ulteriori informazioni, vedere [migrazione da ad RMS a Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). Non sarà possibile utilizzare le nuove funzionalità OME fino a quando non è stata completata la migrazione a Azure Information Protection.
+> In precedenza, è possibile scegliere di importare pubblicazione trusted da Active Directory Rights Management Service (AD RMS) nell'organizzazione. Tuttavia, in questo modo si eviterà di utilizzare le nuove funzionalità OME e non è consigliabile. Se l'organizzazione è attualmente configurata in questo modo, Microsoft consiglia di creare un piano per la migrazione dall'RMS di Active Directory locale a cloud-based Azure Information Protection. Per ulteriori informazioni, vedere [migrazione da ad RMS a Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms). Non sarà possibile utilizzare le nuove funzionalità OME fino a quando non è stata completata la migrazione a Azure Information Protection.
   
  **Per importare pubblicazione trusted da Azure RMS**
   
 1. [Connettersi a Exchange Online tramite Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
 
-2. Scegliere l'URL di condivisione delle chiavi corrispondente alla posizione geografica dell'organizzazione di Office 365:
+2. Scegliere l'URL di condivisione delle chiavi corrispondente alla posizione geografica dell'organizzazione:
 
 |**Posizione**|**URL del percorso di condivisione della chiave**|
 |:-----|:-----|
@@ -89,7 +89,7 @@ Un dominio di pubblicazione trusted è un file XML che contiene informazioni sul
 
     Dove *TPDName* è il nome che si desidera utilizzare per il dominio di pubblicazione trusted. Ad esempio, "contoso North American di pubblicazione trusted". 
 
-5. Per verificare che l'organizzazione di Office 365 sia stata configurata correttamente per l'utilizzo del servizio Azure Rights Management, eseguire il cmdlet [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) con l'opzione-RMSOnline, come indicato di seguito: 
+5. Per verificare che l'organizzazione sia stata configurata correttamente per l'utilizzo del servizio Azure Rights Management, eseguire il cmdlet [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) con l'opzione-RMSOnline, come indicato di seguito: 
 
   ```powershell
   Test-IRMConfiguration -RMSOnline

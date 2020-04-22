@@ -1,6 +1,6 @@
 ---
 title: Criteri di supervisione
-description: Informazioni sui criteri di supervisione in Office 365
+description: Informazioni sui criteri di supervisione
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 33cd1e9956410c66c21c6b4279416df5358f4adf
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+titleSuffix: Microsoft 365 Compliance
+ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604083"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626970"
 ---
-# <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
+# <a name="supervision-policies"></a>Criteri di supervisione
 
-I criteri di supervisione in Office 365 consentono di acquisire le comunicazioni dei dipendenti per l'esame da revisori designati. È possibile definire criteri specifici che consentono di acquisire messaggi di posta elettronica interni ed esterni, Microsoft teams o comunicazioni di terze parti nell'organizzazione. I revisori possono quindi esaminare i messaggi per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione e risolverli con il tipo di classificazione.
+I criteri di supervisione in Microsoft 365 consentono di acquisire le comunicazioni dei dipendenti per l'esame da revisori designati. È possibile definire criteri specifici che consentono di acquisire messaggi di posta elettronica interni ed esterni, Microsoft teams o comunicazioni di terze parti nell'organizzazione. I revisori possono quindi esaminare i messaggi per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione e risolverli con il tipo di classificazione.
 
 Questi criteri possono anche aiutare a superare molte sfide di conformità moderne, tra cui:
 
@@ -36,7 +36,7 @@ Questi criteri possono anche aiutare a superare molte sfide di conformità moder
 - Volume crescente di dati dei messaggi
 - Applicazione di regolamentazione & il rischio di multe
 
-In alcune organizzazioni può verificarsi una separazione dei compiti tra il supporto IT e il gruppo di gestione della conformità. Office 365 supporta la separazione tra la configurazione delle funzionalità del criterio di supervisione e la configurazione dei criteri per le comunicazioni acquisite. Ad esempio, il gruppo IT di un'organizzazione potrebbe essere responsabile dell'impostazione delle autorizzazioni e dei gruppi di ruoli per supportare i criteri di supervisione configurati e gestiti dal team di conformità dell'organizzazione.
+In alcune organizzazioni può verificarsi una separazione dei compiti tra il supporto IT e il gruppo di gestione della conformità. Microsoft 365 supporta la separazione tra la configurazione delle funzionalità del criterio di supervisione e la configurazione dei criteri per le comunicazioni acquisite. Ad esempio, il gruppo IT di un'organizzazione potrebbe essere responsabile dell'impostazione delle autorizzazioni e dei gruppi di ruoli per supportare i criteri di supervisione configurati e gestiti dal team di conformità dell'organizzazione.
 
 Per una breve panoramica dei criteri di supervisione, vedere il [video sui criteri di supervisione](https://youtu.be/C3Y8WZ7o_dI) sul [canale Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
@@ -44,13 +44,13 @@ Per ulteriori informazioni sui miglioramenti e la disponibilità delle funzional
 
 Si desidera provare la nuova esperienza di conformità della comunicazione in Microsoft 365? Consultare le funzionalità nuove e migliorate disponibili in [Compliance Communication in Microsoft 365](communication-compliance.md).
 
-## <a name="transitioning-from-supervision-in-office-365"></a>Transizione dalla vigilanza in Office 365
+## <a name="transitioning-from-supervision"></a>Transizione dalla vigilanza
 
-Le organizzazioni che utilizzano i criteri di supervisione in Office 365 e la pianificazione della transizione ai [criteri di conformità della comunicazione in Microsoft 365](communication-compliance.md) devono comprendere questi importanti punti:
+Le organizzazioni che utilizzano i criteri di supervisione e la pianificazione della transizione ai [criteri di conformità della comunicazione in Microsoft 365](communication-compliance.md) devono comprendere questi importanti punti:
 
-- La soluzione di supervisione in Office 365 sarà completamente sostituita dalla soluzione di conformità della comunicazione in Microsoft 365. Per le organizzazioni che si conformano alla conformità alla comunicazione dai criteri di supervisione, si consiglia di creare nuovi criteri di conformità alla comunicazione con le stesse *condizioni* dei criteri di supervisione esistenti per consentire nuovi miglioramenti di analisi e correzione. Quando si esegue la transizione alla conformità alla comunicazione in Microsoft 365, è consigliabile pianificare l'esportazione dei dati di Reporting dalla supervisione in Office 365 se sono presenti requisiti per i criteri di conservazione della conformità interni.
+- La soluzione di supervisione in Microsoft 365 sarà completamente sostituita dalla soluzione di conformità della comunicazione in Microsoft 365. Per le organizzazioni che si conformano alla conformità alla comunicazione dai criteri di supervisione, si consiglia di creare nuovi criteri di conformità alla comunicazione con le stesse *condizioni* dei criteri di supervisione esistenti per consentire nuovi miglioramenti di analisi e correzione. Quando si esegue la transizione alla conformità alla comunicazione in Microsoft 365, è consigliabile pianificare l'esportazione dei dati di Reporting dalla vigilanza se sono presenti requisiti per i criteri di conservazione della conformità interni.
 - Nel frattempo, le organizzazioni possono utilizzare entrambe le soluzioni affiancate fino alla migrazione completa, ma i criteri utilizzati in ogni soluzione devono avere *nomi di criteri univoci*. I gruppi e i dizionari di parole chiave personalizzati possono essere condivisi tra le soluzioni durante il periodo di transizione.
-- I messaggi salvati in supervisione nelle corrispondenze di criteri di Office 365 non possono essere spostati o condivisi nella conformità della comunicazione in Microsoft 365.
+- I messaggi salvati in supervisione nelle corrispondenze di criteri di Microsoft 365 non possono essere spostati o condivisi nella conformità della comunicazione in Microsoft 365.
 
 Per informazioni sulla pensione per la vigilanza in Office 365, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per informazioni dettagliate.
 
@@ -78,7 +78,7 @@ I criteri di supervisione possono assistere il monitoraggio delle comunicazioni 
 
 ### <a name="supervised-users"></a>Utenti controllati
 
-Prima di iniziare a usare la supervisione, è necessario determinare chi ha bisogno delle proprie comunicazioni. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da sorvegliare. Alcuni esempi di questi gruppi sono i gruppi di Office 365, le liste di distribuzione basate su Exchange e i canali Microsoft teams. È inoltre possibile escludere utenti o gruppi specifici dalla supervisione con un gruppo controllato o un elenco di gruppi.
+Prima di iniziare a usare la supervisione, è necessario determinare chi ha bisogno delle proprie comunicazioni. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da sorvegliare. Alcuni esempi di questi gruppi sono i gruppi di Microsoft 365, le liste di distribuzione basate su Exchange e i canali Microsoft teams. È inoltre possibile escludere utenti o gruppi specifici dalla supervisione con un gruppo controllato o un elenco di gruppi.
 
 >[!IMPORTANT]
 >Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato oppure essere inclusi in un abbonamento a Office 365 Enterprise E5 o essere inclusi in un abbonamento a Microsoft 365 E5. Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -91,24 +91,24 @@ Quando si crea un criterio di supervisione, è necessario determinare chi esegui
 
 Per semplificare l'installazione, creare gruppi per gli utenti che hanno bisogno di una revisione delle comunicazioni e di gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, se si desidera monitorare le comunicazioni tra due gruppi distinti di persone o se si desidera specificare un gruppo che non è supervisionato.
 
-Quando si seleziona un gruppo di Office 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale di Office 365 condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.
+Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.
 
 ### <a name="supported-communication-types"></a>Tipi di comunicazione supportati
 
 Con i criteri di supervisione, è possibile scegliere di monitorare i messaggi in una o più delle piattaforme di comunicazione seguenti:
 
-- **Posta elettronica di Exchange:** Le cassette postali ospitate in Exchange Online come parte dell'abbonamento a Office 365 sono tutte idonee per la supervisione dei messaggi. I messaggi di posta elettronica e gli allegati che corrispondono alle condizioni dei criteri di supervisione sono immediatamente disponibili per il monitoraggio e i report I tipi di allegati supportati per la supervisione sono gli stessi dei [tipi di file supportati per le ispezioni del contenuto delle regole del flusso di posta di Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+- **Posta elettronica di Exchange:** Le cassette postali ospitate in Exchange Online come parte dell'abbonamento a Microsoft 365 sono tutte idonee per la supervisione dei messaggi. I messaggi di posta elettronica e gli allegati che corrispondono alle condizioni dei criteri di supervisione sono immediatamente disponibili per il monitoraggio e i report I tipi di allegati supportati per la supervisione sono gli stessi dei [tipi di file supportati per le ispezioni del contenuto delle regole del flusso di posta di Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 - **Microsoft teams:** È possibile controllare le comunicazioni chat e gli allegati associati sia nei canali di Microsoft Public che in quelli privati e nelle chat individuali. Chat teams le condizioni dei criteri di supervisione vengono elaborate una volta ogni 24 ore e quindi sono disponibili per il monitoraggio e per i report di supervisione. Utilizzare le seguenti configurazioni di gestione dei gruppi per controllare le chat utente e le comunicazioni dei canali nei team:
 
     - **Per la supervisione di teams chat:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di supervisione. Questo è per le relazioni utente/chat da 1 a 1 o 1-a-molti.
-    - **Per le comunicazioni di canale dei team:** Assegnare a tutti i gruppi di Microsoft Team Channel o Office 365 che si desidera monitorare che contengano un utente specifico per i criteri di supervisione. Se si aggiunge lo stesso utente ad altri canali Microsoft teams o gruppi di Office 365, accertarsi di aggiungere questi nuovi canali e gruppi ai criteri di supervisione.
+    - **Per le comunicazioni di canale dei team:** Assegnare a tutti i gruppi di Microsoft Team Channel o Microsoft 365 che si desidera monitorare che contengano un utente specifico per i criteri di supervisione. Se si aggiunge lo stesso utente ad altri canali Microsoft teams o gruppi Microsoft 365, accertarsi di aggiungere questi nuovi canali e gruppi ai criteri di supervisione.
 
 - **Skype for business online:** È possibile controllare le comunicazioni chat e gli allegati associati in Skype for business online. Le chat di Skype for business online che corrispondono alle condizioni dei criteri di supervisione vengono elaborate una volta ogni 24 ore e quindi sono disponibili per il monitoraggio e nei report di supervisione. Le conversazioni di chat sorvegliate vengono provenienti da [precedenti conversazioni salvate in Skype for business online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilizzare la configurazione di gestione dei gruppi seguente per supervisionare le comunicazioni della chat utente in Skype for business online:
 
     - **Per la supervisione della chat in Skype for business online:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di supervisione. Questo è per le relazioni utente/chat da 1 a 1 o 1-a-molti.
 
-- **Origini di terze parti:** È possibile controllare le comunicazioni provenienti da origini di terze parti (come da Facebook o DropBox) per i dati importati nelle cassette postali di Office 365 nell'organizzazione. [Informazioni su come importare i dati di terze parti in Office 365](archiving-third-party-data.md).
+- **Origini di terze parti:** È possibile controllare le comunicazioni provenienti da origini di terze parti (come da Facebook o DropBox) per i dati importati nelle cassette postali dell'organizzazione. [Informazioni su come importare i dati di](archiving-third-party-data.md)terze parti.
 
 Le comunicazioni acquisite su queste piattaforme vengono conservate per sette anni per ogni criterio per impostazione predefinita, anche se gli utenti lasciano l'organizzazione e la loro cassetta postale viene eliminata.
 
@@ -124,7 +124,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 
 #### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
 
-È possibile includere i tipi di informazioni riservate nell'ambito del criterio di supervisione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Come parte del servizio di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md)di Office 365, la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
+È possibile includere i tipi di informazioni riservate nell'ambito del criterio di supervisione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Come parte di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md), la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 
 - Finanze
 - Medicale e sanitarie
@@ -183,7 +183,7 @@ Per analizzare i messaggi di posta elettronica e gli allegati per le stesse paro
   
 ##### <a name="enter-multiple-conditions"></a>Immettere più condizioni
 
-Se si immettono più condizioni, Office 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che vengano soddisfatte tutte le condizioni per applicare il criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario un criterio che si applica se un messaggio contiene la parola "Trade" ed è maggiore di 2 MB. Tuttavia, se il messaggio contiene anche le parole "approvate da Contoso Financial", il criterio non dovrebbe essere applicato. Pertanto, in questo caso, le tre condizioni sarebbero le seguenti:
+Se si immettono più condizioni, Microsoft 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che vengano soddisfatte tutte le condizioni per applicare il criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario un criterio che si applica se un messaggio contiene la parola "Trade" ed è maggiore di 2 MB. Tuttavia, se il messaggio contiene anche le parole "approvate da Contoso Financial", il criterio non dovrebbe essere applicato. Pertanto, in questo caso, le tre condizioni sarebbero le seguenti:
   
 - Il **messaggio contiene una di queste parole**, con le parole chiave "Trade"
 
@@ -263,7 +263,7 @@ Di seguito viene indicata una scomposizione dei valori visualizzati nella colonn
   
 |**Tipo di tag**|**Cosa significa**|
 |:-----|:-----|
-| **Non Recensito** | Il numero di messaggi di posta elettronica non ancora recensiti. Questi messaggi di posta elettronica attendono la revisione nel dashboard di supervisione di Office 365.
+| **Non Recensito** | Il numero di messaggi di posta elettronica non ancora recensiti. Questi messaggi di posta elettronica attendono la revisione nel dashboard di supervisione di Microsoft 365.
 | **Conformi** | Il numero di messaggi di posta elettronica esaminati e contrassegnati come conformi. Questi messaggi richiedono ancora una soluzione. |
 | **Ambigui** | Il numero di messaggi di posta elettronica esaminati e contrassegnati come discutibili. Funge da contrassegno per gli altri revisori per controllare se un messaggio di posta elettronica deve essere esaminato per la conformità. Questi messaggi richiedono ancora una soluzione. |
 | **Non conforme (attivo)** | Il numero di messaggi di posta elettronica non conformi che i revisori stanno attualmente esaminando. |
@@ -279,7 +279,7 @@ Di seguito viene indicata una scomposizione dei valori visualizzati nella colonn
 
 In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Può trattarsi di un riepilogo di tutte le attività di supervisione associate a un criterio definito o in qualsiasi momento in cui vengono modificati i criteri di supervisione. I criteri di supervisione sono basati su percorsi di controllo integrati per una completa preparazione per i controlli interni o esterni. La cronologia di controllo dettagliata di tutte le azioni monitorate dai criteri di supervisione fornisce la prova delle procedure di supervisione.
 
-Le attività dei criteri di supervisione seguenti sono controllate e rese disponibili nei registri di controllo di Office 365:
+Le attività dei criteri di supervisione seguenti sono controllate e disponibili nei registri di controllo unificato:
 
 |**Attività**|**Comandi associati**|
 |:-----|:-----|

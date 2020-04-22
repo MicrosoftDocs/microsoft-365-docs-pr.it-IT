@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: È possibile monitorare lo stato dei processi con esecuzione prolungata che risultano quando si eseguono attività nello strumento indagini dati nel centro sicurezza & conformità.
-ms.openlocfilehash: 6c7b247eb4a8ef9797a8a5993195bb21d7bf30bf
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: ef2fe364a20bd0edc48761162f519135b750d9ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "41582925"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635916"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Gestire i processi in indagini sui dati (anteprima)
 
@@ -31,7 +31,7 @@ Di seguito viene indicato un elenco dei processi (che in genere sono elaborati i
 | :----------------- | :----------     |
 |Aggiunta di dati a un set di prove | Un utente aggiunge i risultati di una ricerca a un set di evidenze.  Per ulteriori informazioni, vedere [Search for data in an Investigation](search-for-data.md). |
 |Aggiunta di dati a un altro set di prove | Un utente aggiunge i documenti da un set di prove a un set di prove diverso nello stesso caso.|
-|Aggiunta di dati non di Office 365 a un set di prove | Un utente carica i dati non di Office 365 in un set di prove. I dati vengono indicizzati anche durante questo processo. Ad esempio, i file provenienti da un server di file locale o da un computer client vengono caricati in un set di prove. Per ulteriori informazioni, vedere [caricare i dati non di Office 365 in evidence](load-non-office365-data.md).| 
+|Aggiunta di dati non Microsoft 365 a un set di prove | Un utente carica i dati non Microsoft 365 in un set di prove. I dati vengono indicizzati anche durante questo processo. Ad esempio, i file provenienti da un server di file locale o da un computer client vengono caricati in un set di prove. Per ulteriori informazioni, vedere [Load non-Microsoft 365 data into Evidence](load-non-office365-data.md).| 
 |Aggiunta di dati rimediati a un set di prove | I dati con errori di elaborazione vengono corretti e caricati di nuovo in un set di prove. Per ulteriori informazioni, vedere [correzione degli errori durante l'elaborazione dei dati per un'indagine](error-remediation.md). | 
 |Confronto tra set di carico | Un utente esamina le differenze tra set di carico diversi in un set di evidenze. Un set di carichi è un'istanza di aggiunta di dati a un set di evidenze. Ad esempio, se si aggiungono i risultati di due ricerche diverse allo stesso set di prove, ognuna rappresenta un set di carico. Per ulteriori informazioni, vedere [gestire i set di carico](manage-load-sets.md). |
 |Conversione di documenti redatti in formato PDF|Dopo che un utente ha annotato un documento in un set di evidenze e redacts una parte di esso, può scegliere di convertire il documento redatto in un file PDF. Questo garantisce che la parte redatta non sarà visibile quando il documento viene esportato per la presentazione. Per ulteriori informazioni, vedere [Review data in evidence](review-data-in-evidence.md). |
@@ -56,5 +56,5 @@ Nella tabella seguente vengono descritti i diversi Stati di stato per i processi
 | In corso | Il processo è in corso. È possibile monitorare lo stato del processo nella scheda **processi** . |
 | Corretta | Il processo è stato completato correttamente. La data e l'ora in cui il processo è stato completato viene visualizzato nella colonna **completato** nella scheda **processi** . |
 | Parzialmente completata | Il processo ha avuto esito positivo. |
-| Esito negativo | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |
+| Failed | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |
 |||

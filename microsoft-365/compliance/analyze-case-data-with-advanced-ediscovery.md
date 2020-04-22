@@ -1,5 +1,5 @@
 ---
-title: Analizzare i dati del caso con Office 365 Advanced eDiscovery
+title: Analizzare i dati dei casi con Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: 'Ottenere una panoramica del processo di analisi, che consente di impostare parametri, eseguire opzioni e visualizzare i risultati, in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 31745651ddbebbfc5e9670a5a906d82cf493aea4
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: 'Ottenere una panoramica del processo di analisi, che consente di impostare parametri, eseguire opzioni e visualizzare i risultati in Advanced eDiscovery. '
+ms.openlocfilehash: 5acd9071477856aa81774efe48d3290c92eb4599
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42556804"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637060"
 ---
 # <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>Analizzare i dati dei casi con Advanced eDiscovery (Classic)
 

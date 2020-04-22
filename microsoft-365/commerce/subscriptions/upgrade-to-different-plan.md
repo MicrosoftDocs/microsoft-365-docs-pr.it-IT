@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Informazioni su come eseguire l'aggiornamento a un nuovo abbonamento.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636511"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707524"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso 
 
@@ -63,7 +63,7 @@ Al termine del checkout, potrebbe essere necessario qualche minuto per completar
 
 ## <a name="the-upgrade-tab-is-empty"></a>La scheda aggiornamento è vuota
 
-Se la scheda **aggiornamento** è vuota, verrà visualizzata una spiegazione del motivo per cui non è possibile eseguire l'aggiornamento in questo momento. È possibile provare a [modificare i piani manualmente](change-plans-manually.md) o [chiamare il supporto](../../admin/contact-support-for-business-products.md). Per ulteriori informazioni, vedere [perché non è possibile aggiornare I piani?](#why-cant-i-upgrade-plans)).
+Se la scheda **aggiornamento** è vuota, verrà visualizzata una spiegazione del motivo per cui non è possibile eseguire l'aggiornamento in questo momento. È possibile provare a [modificare i piani manualmente](change-plans-manually.md) o [chiamare il supporto](../../admin/contact-support-for-business-products.md). Per ulteriori informazioni, vedere [perché non è possibile aggiornare I piani?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>Il piano desiderato non è visualizzato
 
@@ -153,7 +153,7 @@ Quando si esegue l'aggiornamento automatico dei piani tramite il pulsante **Camb
 
 Gli utenti dell'abbonamento precedente verranno spostati automaticamente nel nuovo abbonamento.
   
-Se l'abbonamento precedente include più servizi e, se è stato modificato il tipo di servizi a cui gli utenti sono assegnati, potrebbe essere opportuno prendere nota di questo articolo prima di aggiornare i piani in modo da poter ricreare queste modifiche successivamente. A tutti gli utenti verrà fornito l'accesso a tutti i servizi del nuovo abbonamento. Ad esempio, se in precedenza è stato acquistato Office 365 Enterprise E3 per tutti i 100 degli utenti, ma non è stato assegnato il servizio SharePoint Online da 50, questa modifica non verrà mantenuta dopo l'aggiornamento dei piani.
+Se l'abbonamento precedente include più servizi e, se è stato modificato il tipo di servizi a cui gli utenti sono assegnati, potrebbe essere opportuno prendere nota di questo articolo prima di aggiornare i piani in modo da poter ricreare queste modifiche successivamente. A tutti gli utenti verrà fornito l'accesso a tutti i servizi del nuovo abbonamento. Ad esempio, se in precedenza è stato acquistato Microsoft 365 Business Premium per tutti i 100 degli utenti, ma non è stato assegnato il servizio SharePoint Online da 50, questa modifica non verrà mantenuta dopo l'aggiornamento dei piani.
   
 Se si dispone di più di un abbonamento prima di eseguire l'aggiornamento dei piani e gli utenti hanno assegnato licenze a più di un abbonamento, il modello di assegnazione verrà mantenuto il più possibile nel nuovo abbonamento.
   
@@ -164,9 +164,9 @@ Tutti i dati degli utenti verranno mantenuti durante l'aggiornamento, incluse le
 Il giorno in cui è stato completato l'aggiornamento del piano, la fatturazione del vecchio abbonamento verrà disattivata e verrà attivata la fatturazione del nuovo abbonamento. Per eventuali servizi non utilizzati del vecchio abbonamento, si otterrà un credito ripartito proporzionalmente. Verrà visualizzata una nuova fattura che include il credito per il vecchio abbonamento entro 30 giorni dall'aggiornamento al nuovo abbonamento.
   
 > [!NOTE]
-> Il tempo effettivamente necessario per l'accredito sul conto di pagamento dipende dal metodo di pagamento usato per l'abbonamento. 
+> Il tempo effettivamente necessario per l'accredito sul conto di pagamento dipende dal metodo di pagamento usato per l'abbonamento.
   
- **Aggiornamento da un abbonamento prepagato prima della scadenza?** Se il costo totale del nuovo abbonamento è maggiore o uguale al valore rimanente dell'abbonamento prepagato, il tempo prepagato non andrà perso. Nella pagina del completamento della transazione verrà visualizzato il credito per il tempo inutilizzato. Se invece il costo totale del nuovo abbonamento è inferiore al valore rimanente dell'attuale abbonamento prepagato, parte del tempo inutilizzato andrà perso. L'utente riceverà una notifica prima del checkout ed è possibile attendere l'aggiornamento fino alla data di scadenza della sottoscrizione prepagata.
+**Aggiornamento da un abbonamento prepagato prima della scadenza?** Se il costo totale del nuovo abbonamento è maggiore o uguale al valore rimanente dell'abbonamento prepagato, il tempo prepagato non andrà perso. Nella pagina del completamento della transazione verrà visualizzato il credito per il tempo inutilizzato. Se invece il costo totale del nuovo abbonamento è inferiore al valore rimanente dell'attuale abbonamento prepagato, parte del tempo inutilizzato andrà perso. L'utente riceverà una notifica prima del checkout ed è possibile attendere l'aggiornamento fino alla data di scadenza della sottoscrizione prepagata.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Supporto per le chiamate per l'aggiornamento di piani
 

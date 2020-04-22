@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141613"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632991"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager (anteprima)
 
@@ -43,7 +43,7 @@ Con Compliance Manager, l'organizzazione può:
 - Produrre rapporti di Microsoft Excel riccamente dettagliati che documentano le attività di conformità eseguite da Microsoft e dalla propria organizzazione per i revisori, i regolatori e altri revisori di conformità.
 
 > [!NOTE]
-> Le azioni dei clienti fornite in Compliance Manager sono raccomandazioni. spetta alla propria organizzazione valutare l'efficacia di tali raccomandazioni nei rispettivi ambienti normativi prima dell'implementazione. Le indicazioni rilevate in Compliance Manager non devono essere interpretate come garanzia di conformità.
+> Le azioni dei clienti fornite in Compliance Manager sono raccomandazioni. spetta alla propria organizzazione valutare l'efficacia di tali raccomandazioni nei rispettivi ambienti normativi prima dell'implementazione. I consigli di Compliance Manager non devono essere interpretati come una garanzia di conformità.
 
 ## <a name="relationship-to-compliance-score"></a>Relazione con punteggio di conformità
 
@@ -52,7 +52,7 @@ Con Compliance Manager, l'organizzazione può:
 Compliance Manager condivide lo stesso backend con punteggio di conformità. Durante la fase di anteprima pubblica per entrambi gli strumenti, Compliance Manager è la posizione in cui verranno gestite le valutazioni e le implementazioni dei controlli personalizzati. Per ulteriori informazioni [, vedere relazione tra conformità score e Compliance Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
   
 > [!IMPORTANT]
-> Il Punteggio di conformità non esprime una misura assoluta di conformità organizzativa rispetto a una norma o a un regolamento particolari. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Nessun servizio può garantire che l'utente sia conforme a una norma o a una regolamentazione e che il Punteggio di conformità non debba essere interpretato come garanzia in alcun modo.
+> Il punteggio di conformità non esprime una misura assoluta della conformità dell'organizzazione a una particolare normativa o standard. Rappresenta il livello di adozione di controlli che possono ridurre i rischi per la privacy e i dati personali. Nessun servizio può garantire che l'utente sia conforme a una norma o a una regolamentazione e che il Punteggio di conformità non debba essere interpretato come garanzia in alcun modo.
 
 ## <a name="compliance-manager-components"></a>Componenti di Compliance Manager
 

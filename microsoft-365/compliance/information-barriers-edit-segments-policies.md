@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come modificare o rimuovere i criteri per le barriere informative.
-ms.openlocfilehash: ef534f49c92abf1500b72b0d490ab9f22a48a680
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5690a1d7a131c006bbff3b087b1ee2983198c068
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634844"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637888"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>Modificare (o rimuovere) i criteri di barriera delle informazioni
 
@@ -38,7 +38,7 @@ Dopo aver [definito i criteri di barriera delle informazioni](information-barrie
 |[Risoluzione dei problemi relativi alle barriere informative](information-barriers-troubleshooting.md)     |Fare riferimento a questo articolo quando si verificano problemi imprevisti con barriere informative.         |
 
 > [!IMPORTANT]
-> Per eseguire le attività descritte in questo articolo, è necessario essere assegnati a un ruolo appropriato, ad esempio uno dei seguenti:<br/>-Microsoft 365 Enterprise Global Administrator<br/>-Amministratore globale di Office 365<br/>-Compliance Administrator<br/>-IB Compliance Management (questo è un nuovo ruolo)<p>Per ulteriori informazioni sui prerequisiti per le barriere informative, vedere [prerequisiti (per i criteri barriera informativi)](information-barriers-policies.md#prerequisites).<p>Assicurarsi di eseguire la [connessione a PowerShell di Office 365 Security & Compliance Center](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+> Per eseguire le attività descritte in questo articolo, è necessario essere assegnati a un ruolo appropriato, ad esempio uno dei seguenti:<br/>-Microsoft 365 Enterprise Global Administrator<br/>-Amministratore globale<br/>-Compliance Administrator<br/>-IB Compliance Management (questo è un nuovo ruolo)<p>Per ulteriori informazioni sui prerequisiti per le barriere informative, vedere [prerequisiti (per i criteri barriera informativi)](information-barriers-policies.md#prerequisites).<p>Assicurarsi di eseguire [la connessione al centro sicurezza & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ## <a name="edit-user-account-attributes"></a>Modificare gli attributi degli account utente
 

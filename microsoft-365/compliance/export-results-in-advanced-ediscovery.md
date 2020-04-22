@@ -1,5 +1,5 @@
 ---
-title: Esportare i risultati in Office 365 Advanced eDiscovery
+title: Esportare i risultati in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
-description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Office 365 Advanced eDiscovery, inclusa la procedura per specificare i parametri per un batch di esportazione. "
-ms.openlocfilehash: e439753b427a4e4a90e219912f8d3c1fcf4cfff3
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Advanced eDiscovery, inclusa la procedura per specificare i parametri per un batch di esportazione. "
+ms.openlocfilehash: 4d94b7d1f1d475916e7b0b44a98dd878a1bd5fde
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558197"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43616000"
 ---
 # <a name="export-results-in-advanced-ediscovery-classic"></a>Esportare i risultati in Advanced eDiscovery (Classic)
 
@@ -68,7 +68,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
     - Per esportare i risultati per i nuovi file aggiunti a un caso esistente, continuare con il batch corrente. Per creare una sessione nel batch, selezionare lo stesso numero di batch e fare clic su **Crea sessione di esportazione** è possibile utilizzare questa opzione per esportare gli stessi parametri del batch precedente, in modo incrementale. 
     
-    - Per esportare in un nuovo batch, fare **** ![clic su Aggiungi](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
+    - Per esportare in un nuovo batch, fare **Add** ![clic su Aggiungi](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
     
     - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic su **modifica** ![icona modifica e quindi modificare i campi.
     
@@ -194,11 +194,11 @@ Nella tabella seguente sono elencati i file di output generati quando si esegue 
    
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Visualizzazione della cronologia batch ed esportazione dei risultati precedenti](view-batch-history-and-export-past-results.md)
   
-[Configurazione rapida di Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
+[Configurazione rapida per Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Esportare i campi del report](export-report-fields-in-advanced-ediscovery.md)
   

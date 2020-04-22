@@ -1,5 +1,5 @@
 ---
-title: Impostare Analyze Advanced Settings in Office 365 Advanced eDiscovery
+title: Impostare Analyze Advanced Settings in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: 'Informazioni su come configurare le impostazioni avanzate, tra cui quasi duplicati, thread di posta elettronica e temi, per il processo di analisi in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: effb573165abea0d4f9939fbf7c367cbdf333f57
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Informazioni su come configurare le impostazioni avanzate, tra cui quasi duplicati, thread di posta elettronica e temi, per il processo di analisi in Advanced eDiscovery. '
+ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557796"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631273"
 ---
-# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Impostare Analyze Advanced Settings in Office 365 Advanced eDiscovery
+# <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Impostare Analyze Advanced Settings in Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -48,7 +48,7 @@ Advanced eDiscovery fornisce parametri avanzati predefiniti per l'analisi delle 
     
 ## <a name="see-also"></a>Vedere anche
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla somiglianza del documento](understand-document-similarity-in-advanced-ediscovery.md)
   

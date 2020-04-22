@@ -1,5 +1,5 @@
 ---
-title: Accedere al Centro sicurezza e conformità di Office 365
+title: Passare al Centro sicurezza e conformità
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,19 +15,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
-description: Per poter utilizzare il Centro sicurezza & conformità, è necessario disporre delle autorizzazioni appropriate. L'account aziendale o dell'Istituto di istruzione deve essere assegnato al ruolo di amministratore globale di Office 365 o essere stato assegnato a uno o più gruppi di ruoli Centro sicurezza & conformità da un amministratore globale.
-ms.openlocfilehash: c141f7f9de5a47412dc009ae6c077404cd3f795d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Per poter utilizzare il Centro sicurezza & conformità, è necessario disporre delle autorizzazioni appropriate. L'account aziendale o dell'Istituto di istruzione deve essere assegnato al ruolo di amministratore globale o essere stato assegnato a uno o più gruppi di ruoli Centro sicurezza & conformità da parte di un amministratore globale.
+ms.openlocfilehash: 8925f7b6b6af7f35ccd68e7b6522cc5f8e44440b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073089"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634264"
 ---
-# <a name="go-to-the-office-365-security--compliance-center"></a>Accedere al Centro sicurezza e conformità di Office 365
+# <a name="go-to-the-security--compliance-center"></a>Passare al Centro sicurezza e conformità
 
-Per poter utilizzare il Centro sicurezza & conformità, è necessario disporre delle autorizzazioni appropriate. L'account aziendale o dell'Istituto di istruzione deve essere assegnato al ruolo di amministratore globale di Office 365 o essere stato assegnato a uno o più gruppi di ruoli del centro di sicurezza & conformità da un amministratore globale:
+Per poter utilizzare il Centro sicurezza & conformità, è necessario disporre delle autorizzazioni appropriate. L'account aziendale o dell'Istituto di istruzione deve essere assegnato al ruolo di amministratore globale o essere stato assegnato a uno o più gruppi di ruoli Centro sicurezza & conformità da parte di un amministratore globale:
   
-- Per ulteriori informazioni sul ruolo amministratore globale di Office 365, vedere [informazioni sui ruoli di amministratore di office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+- Per ulteriori informazioni sul ruolo amministratore globale, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
 
 - Per informazioni sull'assegnazione di ruoli Centro sicurezza & conformità ad altri utenti, vedere [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
@@ -38,6 +38,6 @@ Di seguito sono riportate le modalità più dirette per accedere al centro sicur
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
 
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
+2. Accedere con l'account aziendale o dell'Istituto di istruzione.
 
-![Home page del Centro sicurezza & conformità di Office 365](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
+![Home page del Centro sicurezza & Compliance](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

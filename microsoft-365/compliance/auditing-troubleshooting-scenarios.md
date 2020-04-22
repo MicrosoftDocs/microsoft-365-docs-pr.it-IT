@@ -1,5 +1,5 @@
 ---
-title: Eseguire una ricerca nel registro di controllo di Office 365 per la risoluzione dei problemi comuni
+title: Eseguire una ricerca nel registro di controllo per risolvere gli scenari comuni
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: È possibile utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso, la ricerca di chi ha configurato l'inoltro della posta elettronica per una cassetta postale o il motivo per cui un utente esterno ha eseguito correttamente l'accesso all'organizzazione.
-ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: È possibile utilizzare lo strumento di ricerca del registro di controllo per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso, la possibilità di individuare gli utenti che configurano l'inoltro della posta elettronica per una cassetta postale o determinare il motivo per cui un utente esterno ha eseguito correttamente l'accesso all'organizzazione.
+ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634484"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636384"
 ---
-# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Eseguire una ricerca nel registro di controllo di Office 365 per esaminare i problemi di supporto comuni
+# <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Eseguire una ricerca nel registro di controllo per esaminare i problemi di supporto comuni
 
-In questo articolo viene descritto come utilizzare lo strumento di ricerca del registro di controllo di Office 365 per esaminare i problemi di supporto comuni. Ciò include l'utilizzo del log di controllo per:
+In questo articolo viene descritto come utilizzare lo strumento di ricerca del registro di controllo per individuare i problemi di supporto comuni. Ciò include l'utilizzo del log di controllo per:
 
 - Individuare l'indirizzo IP del computer utilizzato per accedere a un account compromesso
 - Determinare gli utenti che configurano l'inoltro della posta elettronica per una cassetta postale
@@ -33,13 +33,13 @@ In questo articolo viene descritto come utilizzare lo strumento di ricerca del r
 - Determinare se un utente ha creato una regola di posta in arrivo
 - Esaminare il motivo per cui è stato eseguito un account di accesso corretto da un utente esterno all'organizzazione
 
-## <a name="using-the-office-365-audit-log-search-tool"></a>Utilizzo dello strumento di ricerca del registro di controllo di Office 365
+## <a name="using-the-audit-log-search-tool"></a>Utilizzo dello strumento di ricerca del registro di controllo
 
-Tutti gli scenari di risoluzione dei problemi descritti in questo articolo si basano sull'utilizzo dello strumento di ricerca del registro di controllo nel centro sicurezza e conformità di Office 365. In questa sezione sono elencate le autorizzazioni necessarie per eseguire una ricerca nel registro di controllo e vengono descritti i passaggi per accedere alle ricerche del registro di controllo e eseguirle. In ogni sezione dello scenario viene illustrato come configurare una query di ricerca del registro di controllo e cosa cercare nelle informazioni dettagliate nei record di controllo corrispondenti ai criteri di ricerca.
+Tutti gli scenari di risoluzione dei problemi descritti in questo articolo si basano sull'utilizzo dello strumento di ricerca del registro di controllo nel centro sicurezza & Compliance. In questa sezione sono elencate le autorizzazioni necessarie per eseguire una ricerca nel registro di controllo e vengono descritti i passaggi per accedere alle ricerche del registro di controllo e eseguirle. In ogni sezione dello scenario viene illustrato come configurare una query di ricerca del registro di controllo e cosa cercare nelle informazioni dettagliate nei record di controllo corrispondenti ai criteri di ricerca.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorizzazioni necessarie per l'utilizzo dello strumento di ricerca del registro di controllo
 
-È necessario essere assegnati ai registri di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+Per eseguire una ricerca nel registro di controllo, è necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Esecuzione delle ricerche nei registri di controllo
 
@@ -80,7 +80,7 @@ Ecco come configurare una query di ricerca del registro di controllo per questo 
 **Attività:** Se pertinente per il caso, selezionare un'attività specifica da cercare. Per la risoluzione dei problemi relativi agli account compromessi, è consigliabile selezionare l' **utente connesso all'attività della cassetta postale** in **attività Cassetta postale di Exchange**. In questo modo vengono restituiti i record di controllo che mostrano l'indirizzo IP utilizzato per l'accesso alla cassetta postale. In caso contrario, lasciare vuoto questo campo per restituire i record di controllo per tutte le attività. 
 
 > [!TIP]
-> Se si lascia questo campo vuoto, verranno restituite le attività di **UserLoggedIn** , che è un'attività di Azure Active Directory che indica che un utente ha eseguito l'accesso a un account di Office 365. Utilizzare il filtro nei risultati della ricerca per visualizzare i record di controllo di **UserLoggedIn** .
+> Se si lascia questo campo vuoto, verranno restituite le attività di **UserLoggedIn** , che è un'attività di Azure Active Directory che indica che un utente ha eseguito l'accesso a un account. Utilizzare il filtro nei risultati della ricerca per visualizzare i record di controllo di **UserLoggedIn** .
 
 Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applicabile all'inchiesta.
 
@@ -198,9 +198,9 @@ d. Il campo **userid** indica l'utente che ha creato la regola di posta in arriv
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Esaminare il motivo per cui è stato eseguito un account di accesso corretto da un utente esterno all'organizzazione
 
-Quando si esaminano i record di controllo nel registro di controllo di Office 365, è possibile che vengano visualizzati record che indicano che un utente esterno è stato autenticato da Azure Active Directory e che è stato eseguito l'accesso all'organizzazione. Ad esempio, un amministratore in contoso.onmicrosoft.com può visualizzare un record di controllo che indica che un utente proveniente da un'organizzazione di Office 365 diversa (ad esempio fabrikam.onmicrosoft.com) ha eseguito correttamente l'accesso a contoso.onmicrosoft.com. Analogamente, è possibile che vengano visualizzati i record di controllo che indicano che gli utenti con un account Microsoft (MSA), ad esempio Outlook.com o Live.com, hanno effettuato correttamente l'accesso all'organizzazione. In questi casi, l'attività controllata è l' **utente**che ha effettuato l'accesso. 
+Quando si esaminano i record di controllo nel log di controllo, è possibile che vengano visualizzati record che indicano che un utente esterno è stato autenticato da Azure Active Directory e che ha eseguito correttamente l'accesso all'organizzazione. Ad esempio, un amministratore in contoso.onmicrosoft.com può visualizzare un record di controllo che indica che un utente di un'organizzazione diversa (ad esempio fabrikam.onmicrosoft.com) ha eseguito correttamente l'accesso a contoso.onmicrosoft.com. Analogamente, è possibile che vengano visualizzati i record di controllo che indicano che gli utenti con un account Microsoft (MSA), ad esempio Outlook.com o Live.com, hanno effettuato correttamente l'accesso all'organizzazione. In questi casi, l'attività controllata è l' **utente**che ha effettuato l'accesso. 
 
-Tale comportamento è preimpostato. Azure Active Directory (Azure AD), il servizio directory di Office 365, consente di fare qualcosa chiamato *autenticazione pass-through* quando un utente esterno tenta di accedere a un sito di SharePoint o a una posizione di OneDrive nell'organizzazione. Quando l'utente esterno tenta di eseguire questa operazione, viene richiesto di immettere le credenziali di Office 365. Azure Active Directory utilizza le credenziali per autenticare l'utente, in modo che solo Azure AD verifichi che l'utente sia quello che dicono di essere. L'indicazione dell'account di accesso con esito positivo nel record di controllo è il risultato di Azure AD Authenticating the user. L'account di accesso con esito positivo non significa che l'utente sia stato in grado di accedere alle risorse o di eseguire altre azioni nell'organizzazione. Indica solo che l'utente è stato autenticato da Azure AD. Per consentire a un utente pass-through di accedere alle risorse di SharePoint o OneDrive, un utente dell'organizzazione deve condividere in modo esplicito una risorsa con l'utente esterno inviando un collegamento di condivisione di un invito o di condivisione anonima. 
+Tale comportamento è preimpostato. Azure Active Directory (Azure AD), il servizio directory, consente di fare qualcosa chiamato *autenticazione pass-through* quando un utente esterno tenta di accedere a un sito di SharePoint o a una posizione di OneDrive nell'organizzazione. Quando l'utente esterno tenta di eseguire questa operazione, viene richiesto di immettere le proprie credenziali. Azure Active Directory utilizza le credenziali per autenticare l'utente, in modo che solo Azure AD verifichi che l'utente sia quello che dicono di essere. L'indicazione dell'account di accesso con esito positivo nel record di controllo è il risultato di Azure AD Authenticating the user. L'account di accesso con esito positivo non significa che l'utente sia stato in grado di accedere alle risorse o di eseguire altre azioni nell'organizzazione. Indica solo che l'utente è stato autenticato da Azure AD. Per consentire a un utente pass-through di accedere alle risorse di SharePoint o OneDrive, un utente dell'organizzazione deve condividere in modo esplicito una risorsa con l'utente esterno inviando un collegamento di condivisione di un invito o di condivisione anonima. 
 
 > [!NOTE]
 > Azure AD consente l'autenticazione pass-through solo per *le applicazioni di terze parti*, ad esempio SharePoint Online e OneDrive for business. Non è consentito per altre applicazioni di terze parti.
@@ -225,7 +225,7 @@ Di seguito sono riportati due esempi di scenari che comportano l'accesso di un *
 
   - Un utente con un account Microsoft (ad esempio SaraD@outlook.com) ha tentato di accedere a un documento in un account OneDrive for business in fourthcoffee.onmicrosoft.com e non è presente un account utente Guest corrispondente per SaraD@outlook.com in fourthcoffee.onmicrosoft.com.
 
-  - Un utente con un account aziendale o dell'Istituto di istruzione in un'organizzazione di Office 365 (ad esempio pilarp@fabrikam.onmicrosoft.com) ha tentato di accedere a un sito di SharePoint in contoso.onmicrosoft.com e non è presente un account utente Guest corrispondente per pilarp@fabrikam.com in contoso.onmicrosoft.com.
+  - Un utente con un account aziendale o dell'Istituto di istruzione in un'organizzazione (ad esempio pilarp@fabrikam.onmicrosoft.com) ha tentato di accedere a un sito di SharePoint in contoso.onmicrosoft.com e non è presente un account utente Guest corrispondente per pilarp@fabrikam.com in contoso.onmicrosoft.com.
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Suggerimenti per l'analisi degli account di accesso riusciti risultanti dall'autenticazione pass-through
@@ -236,6 +236,6 @@ Di seguito sono riportati due esempi di scenari che comportano l'accesso di un *
 
     Oltre all'utente che ha **effettuato l'accesso** , è possibile che vengano restituiti altri record di controllo, ad esempio per indicare a un utente dell'organizzazione risorse condivise con l'utente esterno e se l'utente esterno ha eseguito l'accesso, la modifica o il download di un documento condiviso con essi.
 
-- Cercare le attività di condivisione di SharePoint che indichino che un file è stato condiviso con l'utente esterno identificato da un utente che ha **eseguito l'accesso al** record di controllo. Per altre informazioni, vedere [Usare il controllo della condivisione nel log di controllo di Office 365](use-sharing-auditing.md).
+- Cercare le attività di condivisione di SharePoint che indichino che un file è stato condiviso con l'utente esterno identificato da un utente che ha **eseguito l'accesso al** record di controllo. Per ulteriori informazioni, vedere [use sharing audit in the audit log](use-sharing-auditing.md).
 
 - Esportare i risultati della ricerca del registro di controllo che contengono record rilevanti per l'analisi in modo che sia possibile utilizzare Excel per cercare altre attività correlate all'utente esterno. Per ulteriori informazioni, vedere [esportare, configurare e visualizzare i record del registro di controllo](export-view-audit-log-records.md).

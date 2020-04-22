@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & conformità per gestire un problema di fuoriuscita dei dati.
-ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634294"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635936"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gestire un problema di fuoriuscita dei dati in Microsoft 365
 
@@ -29,14 +29,14 @@ La fuoriuscita dei dati avviene quando un documento contenente informazioni rise
 
 ## <a name="scope-of-this-article"></a>Ambito di questo articolo
 
-In questo articolo viene fornito un elenco di istruzioni su come eliminare definitivamente gli elementi dalle cassette postali di Office 365, in modo che non siano più accessibili o ripristinabili da parte di utenti o amministratori. 
+In questo articolo viene fornito un elenco di istruzioni su come eliminare definitivamente gli elementi dalle cassette postali di Microsoft 365 in modo che non siano più accessibili o recuperabili dagli utenti o dagli amministratori. 
 
 > [!NOTE]
 > Quando si eliminano gli elementi che si trovano in un sito di SharePoint o OneDrive for business, vengono conservati per 93 giorni dal momento in cui vengono eliminati dal percorso originale.
 
 ## <a name="scenario"></a>Scenario
 
-Si è informati di un problema di fuoriuscita dei dati in cui un dipendente ha condiviso inconsapevolmente un documento estremamente riservato con più persone tramite posta elettronica. Si desidera valutare rapidamente chi ha ricevuto il documento, sia all'interno che all'esterno dell'organizzazione. Dopo aver indagato sull'incidente, si prevede di condividere i risultati con altri ricercatori per esaminare e quindi rimuovere definitivamente i dati versati dall'organizzazione di Office 365. Al termine dell'analisi, si desidera rimuovere tutte le prove. 
+Si è informati di un problema di fuoriuscita dei dati in cui un dipendente ha condiviso inconsapevolmente un documento estremamente riservato con più persone tramite posta elettronica. Si desidera valutare rapidamente chi ha ricevuto il documento, sia all'interno che all'esterno dell'organizzazione. Dopo aver esaminato l'evento Incident, si prevede di condividere i risultati con altri ricercatori per esaminare e quindi rimuovere definitivamente i dati versati dall'organizzazione. Al termine dell'analisi, si desidera rimuovere tutte le prove. 
 
 > [!IMPORTANT]
 > Anche se è possibile rimuovere definitivamente i dati versati all'interno dell'organizzazione, i dati riversati all'esterno dell'organizzazione non possono essere rimossi con queste funzionalità.
@@ -68,7 +68,7 @@ Per creare un'indagine nello strumento indagini dati (Preview):
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 utilizzando un account membro del gruppo di ruolo ricercatore di dati.
+2. Accedere utilizzando un account membro del gruppo di ruolo ricercatore di dati.
     
 3. Nel centro sicurezza e conformità fare clic su **indagini sui dati**.
  

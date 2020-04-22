@@ -1,5 +1,5 @@
 ---
-title: Office 365 Advanced Message Encryption
+title: Crittografia avanzata dei messaggi
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,19 +15,19 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: La crittografia avanzata dei messaggi in Office 365 consente alle organizzazioni di soddisfare i propri obblighi di conformità consentendo agli amministratori di fare ancora di più con i messaggi protetti.
-ms.openlocfilehash: 3b7f4d595b8c3592530b107dd7f71aeb8d0dc57e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: La crittografia avanzata dei messaggi consente alle organizzazioni di soddisfare i propri obblighi di conformità consentendo agli amministratori di fare ancora di più con i messaggi protetti.
+ms.openlocfilehash: 0e28bd283b6a7d1666d5db9b71040d2f377adffe
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106174"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626894"
 ---
-# <a name="office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption
+# <a name="advanced-message-encryption"></a>Crittografia avanzata dei messaggi
 
 La crittografia avanzata dei messaggi di Office 365 è inclusa in [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (nonprofit staff pricing), Office 365 Enterprise E5 (nonprofit staff pricing) e Office 365 Education a5. Se l'organizzazione dispone di un abbonamento che non include la crittografia dei messaggi avanzata di Office 365, è possibile acquistarla con il componente aggiuntivo SKU Microsoft 365 E5 Compliance per Microsoft 365 E3. Microsoft 365 E3 (pricing staff no profit) o il componente aggiuntivo SKU di Office 365 Advanced Compliance per Microsoft 365 E3, Microsoft 365 E3 (pricing staff no profit), SKU di Office 365 o il componente aggiuntivo Microsoft 365 E5/A5 Information Protection and Governance SKU per Microsoft 365 A3/E3.
 
-La crittografia avanzata dei messaggi in Office 365 consente ai clienti di soddisfare gli obblighi di conformità che richiedono controlli più flessibili su destinatari esterni e l'accesso ai messaggi di posta elettronica crittografati. Con la crittografia avanzata dei messaggi in Office 365, è possibile controllare i messaggi di posta elettronica riservati condivisi all'esterno dell'organizzazione con criteri automatici. Questi criteri possono essere configurati per identificare tipi di informazioni riservate, ad esempio i dati personali, finanziari o di integrità, oppure è possibile utilizzare parole chiave per migliorare la protezione. Dopo aver configurato i criteri, è necessario associare i criteri ai modelli di posta elettronica personalizzati e quindi aggiungere una data di scadenza per il controllo supplementare dei messaggi di posta elettronica che soddisfano i criteri. Gli amministratori possono inoltre controllare ulteriori messaggi di posta elettronica crittografati accessibili esternamente tramite un portale web sicuro, revocando l'accesso alla posta in qualsiasi momento.
+Crittografia avanzata dei messaggi consente ai clienti di soddisfare gli obblighi di conformità che richiedono controlli più flessibili su destinatari esterni e l'accesso ai messaggi di posta elettronica crittografati. Con la crittografia avanzata dei messaggi in Office 365, è possibile controllare i messaggi di posta elettronica riservati condivisi all'esterno dell'organizzazione con criteri automatici. Questi criteri possono essere configurati per identificare tipi di informazioni riservate, ad esempio i dati personali, finanziari o di integrità, oppure è possibile utilizzare parole chiave per migliorare la protezione. Dopo aver configurato i criteri, è necessario associare i criteri ai modelli di posta elettronica personalizzati e quindi aggiungere una data di scadenza per il controllo supplementare dei messaggi di posta elettronica che soddisfano i criteri. Gli amministratori possono inoltre controllare ulteriori messaggi di posta elettronica crittografati accessibili esternamente tramite un portale web sicuro, revocando l'accesso alla posta in qualsiasi momento.
 
 È possibile revocare e impostare solo una data di scadenza per i messaggi di posta elettronica inviati a destinatari esterni.
 
@@ -45,4 +45,4 @@ Con la crittografia avanzata dei messaggi non si è limitati a un singolo modell
 
 [Revocare la posta elettronica crittografata tramite la crittografia avanzata dei messaggi di Office 365](revoke-ome-encrypted-mail.md). Controllare i messaggi di posta elettronica sensibili condivisi all'esterno dell'organizzazione e migliorare la protezione revocando l'accesso tramite un portale web sicuro ai messaggi di posta elettronica crittografati.  
 
-Con la crittografia avanzata dei messaggi di Office 365, ogni volta che si applica un modello di personalizzazione personalizzato, Office 365 applica un wrapper alla posta elettronica adatta alla regola del flusso di posta a cui viene applicato il modello. È possibile revocare solo i messaggi e applicare le date di scadenza ai messaggi che gli utenti ricevono tramite il portale. In altre parole, il messaggio di posta elettronica con un modello di personalizzazione personalizzato è stato applicato. Per ulteriori informazioni e un esempio, vedere le linee guida per [assicurarsi che tutti i destinatari esterni utilizzino il portale ome per leggere la posta crittografata](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail).
+Con la crittografia avanzata dei messaggi di Office 365, ogni volta che si applica un modello di personalizzazione personalizzato, Microsoft applica un wrapper alla posta elettronica adatta alla regola del flusso di posta a cui viene applicato il modello. È possibile revocare solo i messaggi e applicare le date di scadenza ai messaggi che gli utenti ricevono tramite il portale. In altre parole, il messaggio di posta elettronica con un modello di personalizzazione personalizzato è stato applicato. Per ulteriori informazioni e un esempio, vedere le linee guida per [assicurarsi che tutti i destinatari esterni utilizzino il portale ome per leggere la posta crittografata](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail).

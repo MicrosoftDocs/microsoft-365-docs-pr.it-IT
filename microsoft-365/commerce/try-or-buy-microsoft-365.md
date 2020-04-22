@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Informazioni su come ottenere una versione di valutazione gratuita o su come acquistare un abbonamento a Microsoft 365.
-ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631906"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707536"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Provare o acquistare un abbonamento a Microsoft 365
 
@@ -32,9 +32,9 @@ Microsoft 365 è una soluzione completa che unisce Office 365 e Windows 10 con s
   
 - Microsoft 365 Business Premium
 
-- Microsoft 365 Enterprise E3
+- Office 365 Enterprise E3
 
-- Microsoft 365 Enterprise E5
+- Office 365 Enterprise E5
 
 Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, la nuova sottoscrizione è associata alla stessa organizzazione (spazio dei nomi di dominio) della sottoscrizione esistente. In questo modo è più facile spostare gli utenti nell'organizzazione tra gli abbonamenti o assegnare loro una licenza per l'abbonamento aggiuntivo di cui hanno bisogno.
   

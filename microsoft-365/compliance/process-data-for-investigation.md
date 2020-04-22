@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cdde5b4a569c1653c3ed48453f30c26081980307
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f5ef193a895bce51b733eaa98817d7c119217d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601723"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632231"
 ---
 # <a name="process-data-for-an-investigation"></a>Elaborare i dati per un'indagine
 
 L'elaborazione è il processo di identificazione dei file, l'espansione dei documenti e degli allegati incorporati, l'estrazione del testo, l'OCR (riconoscimento ottico dei caratteri) di file di immagine e l'indicizzazione di tale contenuto.  
 
-Quando una persona viene aggiunta nella scheda **persone di interesse** , tutti gli elementi parzialmente indicizzati provenienti da Office 365 vengono elaborati in modo da renderli completamente ricercabili.  Analogamente, quando i dati vengono aggiunti alla scheda **Evidence** dalle origini dati di Office 365 o non Office 365, viene elaborato anche il contenuto.
+Quando una persona viene aggiunta nella scheda **persone di interesse** , tutti gli elementi parzialmente indicizzati di Microsoft 365 vengono elaborati per renderli completamente ricercabili.  Analogamente, quando i dati vengono aggiunti alla scheda **Evidence** da origini dati Microsoft 365 o non Microsoft 365, viene elaborato anche il contenuto.
 
 La scheda **elaborazione** in indagini sui dati (Preview) fornisce trasparenza nello stato dell' *indicizzazione avanzata* per tutti questi scenari.
 

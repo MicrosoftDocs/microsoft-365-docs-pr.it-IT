@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come configurare le autorizzazioni necessarie per l'utilizzo dello strumento indagini dati in Microsoft 365.
-ms.openlocfilehash: 855d288c373bd2525afa3b8b7a3bbd894c4683a2
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 47a7923d38cfa0ea3bad6c4c266f580f8104c429
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328141"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637758"
 ---
 # <a name="assign-permissions-for-data-investigations-preview"></a>Assegnare le autorizzazioni per le indagini sui dati (anteprima)
 
@@ -40,4 +40,4 @@ Per assegnare le autorizzazioni per le indagini sui dati:
 5. Dopo aver aggiunto tutti gli utenti, fare clic su **fine** e quindi su **Salva** per salvare le modifiche apportate al gruppo di ruoli.
 
 > [!NOTE]
-> Il ruolo di gestione analisi dati assegnato al gruppo di ruolo ricercatore di dati fornisce le autorizzazioni necessarie per accedere allo strumento indagini dati nel centro conformità di Office 365 o Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato al gruppo di ruoli Gestione organizzazione, il che significa che gli amministratori globali dell'organizzazione potrebbero non essere in grado di accedere allo strumento indagini dati per impostazione predefinita. Per risolvere il caso, è possibile aggiungere gli amministratori globali al gruppo di ruolo ricercatore di dati o aggiungere il ruolo di gestione analisi dati al gruppo di ruoli Gestione organizzazione. Una terza opzione consiste nella creazione di un gruppo di ruoli personalizzato e nell'assegnazione del ruolo di gestione dell'analisi dei dati (e di altri ruoli) e quindi dell'aggiunta di membri idonei. Per ulteriori informazioni sui ruoli e sui gruppi di ruolo, vedere [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+> Il ruolo di gestione analisi dati assegnato al gruppo di ruolo ricercatore di dati fornisce le autorizzazioni necessarie per accedere allo strumento indagini dati nel centro conformità di Office 365 o Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato al gruppo di ruoli Gestione organizzazione, il che significa che gli amministratori globali dell'organizzazione potrebbero non essere in grado di accedere allo strumento indagini dati per impostazione predefinita. Per risolvere il caso, è possibile aggiungere gli amministratori globali al gruppo di ruolo ricercatore di dati o aggiungere il ruolo di gestione analisi dati al gruppo di ruoli Gestione organizzazione. Una terza opzione consiste nella creazione di un gruppo di ruoli personalizzato e nell'assegnazione del ruolo di gestione dell'analisi dei dati (e di altri ruoli) e quindi dell'aggiunta di membri idonei. Per ulteriori informazioni sui ruoli e sui gruppi di ruolo, vedere [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Informazioni sugli elementi di base della crittografia per la sicurezza dati in OneDrive for Business e SharePoint Online.
-ms.openlocfilehash: c21ec4ef6b81bcf89565fd005b9a1d2068244b20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e882bf3bf633c821fe50246316b5b1065cfa4693
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076353"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633341"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Crittografia dei dati in OneDrive for Business e SharePoint Online
 
@@ -31,9 +31,9 @@ Informazioni sugli elementi di base della crittografia per la sicurezza dati in 
   
 ## <a name="overview"></a>Panoramica
 
-Office 365 è un ambiente con protezione avanzata che offre una protezione estesa in più livelli: sicurezza data center fisico, sicurezza di rete, sicurezza accessi, sicurezza applicazioni e sicurezza dati. In questo articolo viene illustrato il lato della crittografia in transito e inattiva della sicurezza dati di OneDrive for Business e SharePoint Online.
+Microsoft 365 è un ambiente altamente sicuro che offre una protezione estesa in più livelli: protezione dei data center fisici, sicurezza della rete, sicurezza dell'accesso, sicurezza delle applicazioni e sicurezza dei dati. In questo articolo viene illustrato il lato della crittografia in transito e inattiva della sicurezza dati di OneDrive for Business e SharePoint Online.
   
-Per una descrizione dell'intera sicurezza di Office 365, vedere [white paper sulla sicurezza in office 365](https://go.microsoft.com/fwlink/p/?LinkId=270895).
+Per una descrizione della sicurezza di Microsoft 365 nel suo complesso, vedere [white paper sulla sicurezza](https://go.microsoft.com/fwlink/p/?LinkId=270895).
   
 Nel seguente video è possibile vedere in che modo funziona la crittografia dei dati.
   
@@ -51,7 +51,7 @@ In OneDrive for Business e SharePoint Online, esistono due scenari in cui i dati
 
 La crittografia inattiva include due componenti: Crittografia a livello di disco BitLocker e crittografia per file del contenuto cliente.
   
-BitLocker viene distribuito per OneDrive for Business e SharePoint Online attraverso il servizio. La crittografia per file è anche in OneDrive for business e SharePoint online in Office 365 multi-tenant e nuovi ambienti dedicati che sono basati su una tecnologia multi-tenant.
+BitLocker viene distribuito per OneDrive for Business e SharePoint Online attraverso il servizio. La crittografia per file è anche in OneDrive for business e SharePoint online in Microsoft 365 multi-tenant e nuovi ambienti dedicati che sono basati su una tecnologia multi-tenant.
   
 Mentre BitLocker esegue la crittografia di tutti i dati su un disco, la crittografia per file è ancora più approfondita includendo un'unica chiave di crittografia per ogni file. Inoltre, ogni aggiornamento di ogni file viene crittografata mediante la relativa chiave di crittografia. Prima di essere archiviate, le chiavi del contenuto crittografato vengono archiviate in una posizione fisica separata dal contenuto. Ogni passaggio di questo tipo di crittografia utilizza Advanced Encryption Standard (AES) con chiavi a 256 bit ed è conforme ai criteri FIPS (Federal Information Processing Standard) 140-2. Il contenuto crittografato viene distribuito in una serie di contenitori in tutto il data center ed ogni contenitore ha credenziali univoche. Queste credenziali vengono archiviate in una posizione fisica separata dal contenuto o dalle chiavi del contenuto.
   

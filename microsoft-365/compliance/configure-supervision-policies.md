@@ -19,25 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: e2880679c8520480aeffd640a26730defc298490
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604193"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632371"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurare i criteri di supervisione in Office 365
 
 >[!IMPORTANT]
->Questo argomento si applica alla configurazione di criteri di supervisione in una sottoscrizione di Office 365. Se si desidera configurare la conformità delle comunicazioni per una sottoscrizione di Microsoft 365, vedere [Configure Communications compliance in microsoft 365](communication-compliance-configure.md).
+>Questo argomento si applica alla configurazione di criteri di supervisione in una sottoscrizione di Microsoft 365. Se si desidera configurare la conformità delle comunicazioni per una sottoscrizione di Microsoft 365, vedere [Configure Communications compliance in microsoft 365](communication-compliance-configure.md).
 
 Utilizzare i criteri di supervisione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di supervisione consentono di monitorare le comunicazioni nell'organizzazione, vedere [criteri di supervisione in Office 365](supervision-policies.md).
 
 >[!NOTE]
->Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato oppure essere inclusi in un abbonamento a Office 365 Enterprise E5 o essere inclusi in un Microsoft 365 E5 abbonamento.
+>Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato oppure essere inclusi in un abbonamento a Office 365 Enterprise E5 o essere inclusi in un abbonamento a Microsoft 365 E5.
 >Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
-Seguire questa procedura per configurare e usare la supervisione nell'organizzazione di Office 365:
+Attenersi alla procedura seguente per configurare e usare la supervisione nell'organizzazione:
   
 - **Passaggio 1 (facoltativo)**: [configurare i gruppi per la supervisione](#step-1-set-up-groups-for-supervision-optional)
 
@@ -45,7 +45,7 @@ Seguire questa procedura per configurare e usare la supervisione nell'organizzaz
 
 - **Passaggio 2 (obbligatorio)**: [rendere disponibile la supervisione nell'organizzazione](#step-2-make-supervision-available-in-your-organization-required)
 
-    Aggiungersi al gruppo di ruolo revisione di supervisione per impostare i criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina di **supervisione** nel centro sicurezza e conformità di Office 365. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Aggiungersi al gruppo di ruolo revisione di supervisione per impostare i criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina di **supervisione** nel centro sicurezza & Compliance. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Passaggio 3 (facoltativo)**: [creare tipi di informazioni riservate personalizzate e dizionari per parole chiave personalizzate](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -53,7 +53,7 @@ Seguire questa procedura per configurare e usare la supervisione nell'organizzaz
 
 - **Passaggio 4 (obbligatorio)**: [impostare un criterio di supervisione](#step-4-set-up-a-supervision-policy-required)
 
-    È possibile creare criteri di supervisione nel centro sicurezza e conformità di Office 365. Questi criteri definiscono le comunicazioni soggette a revisione nell'organizzazione e specifica chi esegue le revisioni. Le comunicazioni includono la posta elettronica e le comunicazioni di Microsoft teams e le comunicazioni della piattaforma di terze parti (come Facebook, Twitter e così via). I criteri di supervisione creati nelle organizzazioni di Office 365 non sono supportati per la supervisione delle comunicazioni negli abbonamenti a Microsoft 365.
+    È possibile creare criteri di supervisione nel centro sicurezza & Compliance. Questi criteri definiscono le comunicazioni soggette a revisione nell'organizzazione e specifica chi esegue le revisioni. Le comunicazioni includono la posta elettronica e le comunicazioni di Microsoft teams e le comunicazioni della piattaforma di terze parti (come Facebook, Twitter e così via). I criteri di supervisione creati nelle organizzazioni non sono supportati per la supervisione delle comunicazioni negli abbonamenti Microsoft 365.
 
 - **Passaggio 5 (facoltativo)**: [testare i criteri di supervisione della comunicazione](#step-5-test-your-supervision-policy-optional)
 
@@ -67,10 +67,10 @@ Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'
 
 | **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
 |:-----|:-----|:-----|
-|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Office 365 | Gruppi di distribuzione dinamici |
+|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Microsoft 365 gruppi | Gruppi di distribuzione dinamici |
 | Revisori | Gruppi di sicurezza abilitati alla posta elettronica  | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici |
   
-Quando si seleziona un gruppo di Office 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale di Office 365 condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.
+Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.
 
 Per gestire gli utenti controllati nelle organizzazioni aziendali di grandi dimensioni, potrebbe essere necessario monitorare tutti gli utenti in gruppi di grandi dimensioni. È possibile utilizzare PowerShell per configurare un gruppo di distribuzione per un criterio di supervisione globale per il gruppo assegnato. In questo modo è possibile monitorare migliaia di utenti con un singolo criterio e mantenere il criterio di supervisione aggiornato man mano che i nuovi dipendenti fanno parte dell'organizzazione.
 
@@ -105,19 +105,19 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 - [Creazione e gestione dei gruppi di distribuzione](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Gestire i gruppi di protezione abilitati alla posta elettronica](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
-- [Panoramica dei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Panoramica dei gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-2-make-supervision-available-in-your-organization-required"></a>Passaggio 2: rendere disponibile la supervisione nell'organizzazione (obbligatorio)
 
-Per rendere disponibile la **supervisione** come opzione di menu nel centro sicurezza e conformità di Office 365, è necessario disporre del ruolo di amministratore revisione di supervisione.
+Per rendere disponibile la **supervisione** come opzione di menu in sicurezza & Compliance Center, è necessario essere assegnati al ruolo di amministratore revisione di vigilanza.
   
 A tale scopo, è possibile aggiungere se stessi come membro del gruppo di ruolo revisione di supervisione oppure creare un gruppo di ruoli.
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>Aggiungere membri al gruppo di ruoli revisione di supervisione
 
-1. Accedere [https://protection.office.com](https://protection.office.com) con le credenziali per un account di amministratore nell'organizzazione di Office 365.
+1. Accedere all' [https://protection.office.com](https://protection.office.com) utilizzo delle credenziali per un account di amministratore nell'organizzazione.
 
-2. Nel centro sicurezza e conformità di Office 365 accedere a **autorizzazioni**.
+2. Nel centro sicurezza & conformità, accedere a **autorizzazioni**.
 
 3. Selezionare il gruppo di ruoli **revisione di supervisione** e quindi fare clic sull'icona modifica.
 
@@ -125,9 +125,9 @@ A tale scopo, è possibile aggiungere se stessi come membro del gruppo di ruolo 
 
 ### <a name="create-a-new-role-group"></a>Creare un nuovo gruppo di ruoli
 
-1. Accedere [https://protection.office.com/permissions](https://protection.office.com/permissions) con le credenziali per un account di amministratore nell'organizzazione di Office 365.
+1. Accedere all' [https://protection.office.com/permissions](https://protection.office.com/permissions) utilizzo delle credenziali per un account di amministratore nell'organizzazione.
 
-2. Nel centro sicurezza e conformità di Office 365 accedere a **autorizzazioni** e quindi fare clic su Aggiungi**+**().
+2. Nel centro sicurezza & conformità, accedere a **autorizzazioni** e quindi fare clic su Aggiungi**+**().
 
 3. Nella sezione **ruoli** fare clic su Aggiungi (**+**) e scorrere verso il basso fino a **amministratore revisione di supervisione**. Aggiungere questo ruolo al gruppo di ruoli.
 
@@ -149,7 +149,7 @@ Utilizzare un editor di testo, ad esempio il blocco note, per creare un file che
 
 ### <a name="create-custom-sensitive-information-types"></a>Creare tipi di informazioni riservate personalizzate
 
-1. Creare un nuovo tipo di informazioni riservate e aggiungere il dizionario personalizzato nel centro sicurezza & conformità di Office 365. Passare a **classificazione** \> **tipi di informazioni riservate** e seguire i passaggi descritti nella **procedura guidata nuovo tipo di informazioni riservate**. Di seguito viene indicato:
+1. Creare un nuovo tipo di informazioni riservate e aggiungere il dizionario personalizzato nel centro sicurezza & Compliance. Passare a **classificazione** \> **tipi di informazioni riservate** e seguire i passaggi descritti nella **procedura guidata nuovo tipo di informazioni riservate**. Di seguito viene indicato:
 
     - Definire un nome e una descrizione per il tipo di informazioni riservate
     - Definire gli elementi di prossimità, livello di confidenza e motivo primario
@@ -162,9 +162,9 @@ Utilizzare un editor di testo, ad esempio il blocco note, per creare un file che
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>Passaggio 4: configurare un criterio di supervisione (obbligatorio)
   
-1. Accedere [https://protection.office.com](https://protection.office.com) con le credenziali per un account di amministratore nell'organizzazione di Office 365.
+1. Accedere all' [https://protection.office.com](https://protection.office.com) utilizzo delle credenziali per un account di amministratore nell'organizzazione.
 
-2. Nel centro sicurezza e conformità di Office 365 selezionare **supervisione**.
+2. Nel centro sicurezza & conformità, selezionare **supervisione**.
   
 3. Selezionare **Crea** e seguire la procedura guidata per configurare la configurazione dei criteri. Se si utilizza la procedura guidata, sarà necessario:
 
@@ -187,5 +187,5 @@ Dopo aver creato un criterio di supervisione della comunicazione, è consigliabi
     >[!NOTE]
     >I messaggi di posta elettronica soggetti a criteri definiti vengono elaborati in tempo quasi reale e possono essere testati immediatamente dopo la configurazione del criterio. Le chat in Microsoft teams possono richiedere fino a 24 ore per il processo completo in un criterio. 
 
-3. Accedere al tenant di Office 365 come un revisore designato nei criteri di supervisione della comunicazione. Passare alla **supervisione** > del*criterio* > personalizzato**aperto** per visualizzare il report per il criterio.
+3. Accedere a Microsoft 365 come un revisore designato nei criteri di supervisione della comunicazione. Passare alla **supervisione** > del*criterio* > personalizzato**aperto** per visualizzare il report per il criterio.
 

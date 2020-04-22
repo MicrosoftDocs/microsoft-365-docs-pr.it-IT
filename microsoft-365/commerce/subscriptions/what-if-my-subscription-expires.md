@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Informazioni su cosa succede ai dati quando la sottoscrizione Microsoft 365 for business scade, è disabilitata o se si Annulla.
-ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634875"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707608"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Cosa succede ai dati e all'accesso quando termina l'abbonamento a Microsoft 365 for business?
 
@@ -220,7 +220,7 @@ Ecco cosa aspettarsi se si annulla un abbonamento.
 Per informazioni su come annullare, vedere [annullare l'abbonamento](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> Se si desidera che i dati di sottoscrizione vengano eliminati prima della scadenza del periodo di disabilitazione normale, è possibile richiedere il deprovisioning rapido. Con il deprovisioning rapido, i dati dell'abbonamento vengono eliminati entro 3 giorni dall'annullamento. Per utilizzare il deprovisioning rapido, [chiamare il supporto](../../admin/contact-support-for-business-products.md).
+> Se si desidera che i dati di sottoscrizione vengano eliminati prima della fine del periodo di disabilitazione normale, è possibile [chiudere l'account](../close-your-account.md).
 
 > [!NOTE]
 > Le informazioni riportate in questa pagina sono soggette alla [dichiarazione di non responsabilità e agli avvisi di modifica dei criteri Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613651). Tornare a questo sito periodicamente per esaminare le modifiche apportate.

@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Alle organizzazioni viene spesso richiesto di conservare i documenti per un determinato periodo di tempo a causa di norme legate alla conformità, legali o di altro tipo. Tuttavia, conservare i documenti per un periodo superiore a quello richiesto può esporre l'organizzazione a un rischio legale.
-ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5550f65e5b2ecb5dca775e1d851548913b8e8517
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077926"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632261"
 ---
 # <a name="create-a-document-deletion-policy"></a>Creare un criterio di eliminazione dei documenti
 
 > [!IMPORTANT]
-> Se si avanza, è consigliabile utilizzare un criterio di conservazione o le etichette di conservazione create nel centro conformità Microsoft 365, Microsoft 365 Security Center o Office 365 Security &amp; Compliance Center anziché un criterio di eliminazione dei documenti. I criteri di eliminazione dei documenti continueranno a funzionare fianco a fianco con i criteri di conservazione, ma se è necessario mantenere o eliminare il contenuto in un punto qualsiasi di Office 365, è consigliabile utilizzare un criterio di conservazione. Per ulteriori informazioni, vedere [use a Retention Policy anziché these features](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
+> Se si avanza, è consigliabile utilizzare un criterio di conservazione o le etichette di conservazione create nel centro conformità Microsoft 365, Microsoft 365 Security Center o nel &amp; Centro sicurezza e conformità anziché in un criterio di eliminazione dei documenti. I criteri di eliminazione dei documenti continueranno a funzionare fianco a fianco con i criteri di conservazione, ma se è necessario mantenere o eliminare il contenuto in un punto qualsiasi di Office 365, è consigliabile utilizzare un criterio di conservazione. Per ulteriori informazioni, vedere [use a Retention Policy anziché these features](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
   
 Alle organizzazioni viene spesso richiesto di conservare i documenti per un determinato periodo di tempo a causa di norme legate alla conformità, legali o di altro tipo. Tuttavia, conservare i documenti per un periodo superiore a quello richiesto può esporre l'organizzazione a un rischio legale.
   
@@ -244,7 +244,7 @@ Non è possibile eliminare un criterio in uso. Prima di poter eliminare un crite
   
 3. Seleziona il criterio.
     
-4. Nella scheda \> **** \> elementi della barra multifunzione **rimuovere i criteri**.
+4. Nella scheda \> **Items** \> elementi della barra multifunzione **rimuovere i criteri**.
     
     ![Pulsante Rimuovi criterio sulla barra multifunzione](../media/IP-Remove-Policy-button-on-Ribbon.png)
   

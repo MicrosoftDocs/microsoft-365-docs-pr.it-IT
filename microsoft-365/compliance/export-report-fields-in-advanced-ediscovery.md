@@ -1,5 +1,5 @@
 ---
-title: Esportare i campi di report in Office 365 Advanced eDiscovery
+title: Esportare i campi di report in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Vengono descritti tutti i campi inclusi nei report di esportazione per Advanced eDiscovery.
-ms.openlocfilehash: 8c932dac9218e2020bfcd57d21483728325e488f
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: a7ee8e3971ab2fc921085ca63f7a8451a1597be2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558207"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637808"
 ---
 # <a name="export-report-fields-in-advanced-ediscovery-classic"></a>Esportare i campi di report in Advanced eDiscovery (Classic)
 
@@ -137,7 +137,7 @@ Nella tabella seguente sono elencati i campi per ogni modello di esportazione.
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Esportazione di dati di case con Advanced eDiscovery](export-case-data-in-advanced-ediscovery.md)
   

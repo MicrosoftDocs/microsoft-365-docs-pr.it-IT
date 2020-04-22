@@ -1,5 +1,5 @@
 ---
-title: Impostare i limiti di conformità per le indagini eDiscovery in Office 365
+title: Configurare i limiti di conformità per le indagini di eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,25 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
-ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
+ms.openlocfilehash: 80b64a32ea7bbd45aec726a1e8f41ad48ef77714
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634144"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636164"
 ---
-# <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
+# <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurare i limiti di conformità per le indagini di eDiscovery
 
 Le indicazioni contenute in questo articolo possono essere applicate quando si utilizza eDiscovery core o Advanced eDiscovery per gestire le indagini.
 
-I limiti di conformità creano confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi dei contenuti degli utenti, ad esempio le cassette postali, i siti di SharePoint e gli account di OneDrive, che i responsabili di eDiscovery Inoltre, i limiti di conformità controllano chi può accedere ai casi di eDiscovery utilizzati per gestire le indagini legali, umane o di altro tipo all'interno dell'organizzazione. La necessità di limiti di conformità è spesso necessaria per le multinazionali che devono rispettare confini geografici e regolamenti e per i governi, che spesso sono divisi in diverse agenzie. In Office 365, i limiti di conformità consentono di soddisfare questi requisiti quando eseguono ricerche di contenuto e gestiscono indagini con i casi di eDiscovery.
+I limiti di conformità creano confini logici all'interno di un'organizzazione che controllano i percorsi dei contenuti degli utenti, ad esempio le cassette postali, i siti di SharePoint e gli account di OneDrive, che i responsabili di eDiscovery Inoltre, i limiti di conformità controllano chi può accedere ai casi di eDiscovery utilizzati per gestire le indagini legali, umane o di altro tipo all'interno dell'organizzazione. La necessità di limiti di conformità è spesso necessaria per le multinazionali che devono rispettare confini geografici e regolamenti e per i governi, che spesso sono divisi in diverse agenzie. In Office 365, i limiti di conformità consentono di soddisfare questi requisiti quando eseguono ricerche di contenuto e gestiscono indagini con i casi di eDiscovery.
   
 Nell'esempio riportato di seguito viene illustrato il funzionamento dei limiti di conformità.
   
 ![I limiti di conformità consistono nei filtri delle autorizzazioni di ricerca che controllano l'accesso alle agenzie e ai gruppi di ruoli amministrativi che controllano l'accesso a eDiscovery](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
-In questo esempio, contoso LTD è un'organizzazione di Office 365 costituita da due consociate, Fourth Coffee e Coho Winery. L'azienda richiede che i gestori e gli investigatori di eDiscovery possano cercare solo le cassette postali di Exchange, gli account di OneDrive e i siti di SharePoint nell'agenzia. Inoltre, i responsabili e gli investigatori di eDiscovery possono vedere solo i casi di eDiscovery nell'agenzia e possono accedere solo ai casi in cui sono membri. Ecco come i limiti di conformità soddisfano questi requisiti.
+In questo esempio, contoso LTD è un'organizzazione costituita da due consociate, Fourth Coffee e Coho Winery. L'azienda richiede che i gestori e gli investigatori di eDiscovery possano cercare solo le cassette postali di Exchange, gli account di OneDrive e i siti di SharePoint nell'agenzia. Inoltre, i responsabili e gli investigatori di eDiscovery possono vedere solo i casi di eDiscovery nell'agenzia e possono accedere solo ai casi in cui sono membri. Ecco come i limiti di conformità soddisfano questi requisiti.
   
 - La funzionalità di filtro delle autorizzazioni di ricerca nella ricerca contenuto controlla i percorsi di contenuto in cui i responsabili e gli investigatori di eDiscovery possono eseguire ricerche. Questo significa che i responsabili e gli investigatori di eDiscovery della Fourth Coffee Agency possono solo ricercare i percorsi dei contenuti nell'affiliata di Fourth Coffee. La stessa restrizione si applica alla filiale di Coho Winery.
     
@@ -79,11 +79,11 @@ Il passaggio successivo consiste nel presentare una richiesta con il supporto te
   
 Includere le informazioni seguenti quando si invia la richiesta al supporto tecnico Microsoft:
   
-- Il nome di dominio predefinito dell'organizzazione di Office 365
+- Il nome di dominio predefinito dell'organizzazione
     
 - Nome dell'attributo di Azure Active Directory (del passaggio 1)
     
-- Il titolo seguente o la descrizione dello scopo della richiesta di supporto: "abilitare la sincronizzazione di OneDrive for business con Azure Active Directory per i filtri di sicurezza di conformità". Ciò consente di instradare la richiesta al team di ingegneri di eDiscovery di Office 365 che implementa la richiesta.
+- Il titolo seguente o la descrizione dello scopo della richiesta di supporto: "abilitare la sincronizzazione di OneDrive for business con Azure Active Directory per i filtri di sicurezza di conformità". Ciò consente di instradare la richiesta al team di progettazione di eDiscovery che implementa la richiesta.
     
 Dopo aver apportato la modifica dell'ingegneria e l'attributo è sincronizzato con OneDrive, il supporto tecnico Microsoft invierà il numero di build in cui è stata apportata la modifica e la data di distribuzione stimata. Il processo di distribuzione richiede solitamente 4 – 6 settimane dopo aver inviato la richiesta di supporto.
   
@@ -237,11 +237,11 @@ Quando si esegue la ricerca e l'esportazione di contenuto in ambienti multi-Geo,
   
 - Il parametro **Area** non controlla le ricerche nelle cassette postali di Exchange. Quando si esegue la ricerca delle cassette postali, vengono ricercati tutti i Data Center. Per limitare l'ambito di ricerca delle cassette postali di Exchange, utilizzare il parametro **Filters** durante la creazione o la modifica di un filtro delle autorizzazioni di ricerca. 
     
-- Se è necessario che un Manager di eDiscovery sia in grado di eseguire la ricerca in più aree di SharePoint, è necessario creare un account utente diverso per il responsabile di eDiscovery da utilizzare nel filtro delle autorizzazioni di ricerca per specificare l'area in cui si trovano i siti di SharePoint o OneDrive gli account sono ubicati. Per ulteriori informazioni sull'impostazione di questo articolo, vedere la sezione "ricerca di contenuto in un ambiente multi-geo di SharePoint" in [Ricerca contenuto in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
+- Se è necessario che un Manager di eDiscovery sia in grado di eseguire ricerche in più aree di SharePoint, è necessario creare un account utente diverso per il responsabile di eDiscovery da utilizzare nel filtro delle autorizzazioni di ricerca per specificare l'area in cui si trovano i siti di SharePoint o gli account di OneDrive. Per ulteriori informazioni sull'impostazione di questo articolo, vedere la sezione "ricerca di contenuto in un ambiente multi-geo di SharePoint" in [Ricerca contenuto in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
 - Quando si esegue la ricerca di contenuto in SharePoint e OneDrive, il parametro **Region** indirizza le ricerche verso la posizione principale o via satellite in cui il responsabile di eDiscovery conterrà le indagini di eDiscovery. Se un Manager di eDiscovery cerca i siti di SharePoint e OneDrive all'esterno dell'area specificata nel filtro delle autorizzazioni di ricerca, non vengono restituiti i risultati della ricerca. 
     
-- Quando si esportano i risultati della ricerca, il contenuto proveniente da tutti i percorsi di contenuto (compresi Exchange, Skype for business, SharePoint, OneDrive e altri servizi di Office 365 che è possibile cercare tramite lo strumento di ricerca del contenuto) viene caricato nel percorso di archiviazione di Azure nel datacenter specificato dal parametro **Region** . Questo consente alle organizzazioni di rimanere all'interno della conformità, non consentendo l'esportazione di contenuto nei confini controllati. Se nel filtro delle autorizzazioni di ricerca non è specificata alcuna area, il contenuto viene caricato nell'area predefinita dell'organizzazione. 
+- Quando si esportano i risultati della ricerca, il contenuto proveniente da tutti i percorsi di contenuto (compresi Exchange, Skype for business, SharePoint, OneDrive e altri servizi che è possibile cercare tramite lo strumento di ricerca del contenuto) viene caricato nel percorso di archiviazione di Azure nel datacenter specificato dal parametro **Region** . Questo consente alle organizzazioni di rimanere all'interno della conformità, non consentendo l'esportazione di contenuto nei confini controllati. Se nel filtro delle autorizzazioni di ricerca non è specificata alcuna area, il contenuto viene caricato nell'area predefinita dell'organizzazione. 
     
 - È possibile modificare un filtro delle autorizzazioni di ricerca esistente per aggiungere o modificare l'area eseguendo il comando riportato di seguito:
 
@@ -267,7 +267,7 @@ Il filtro delle autorizzazioni di ricerca impiega fino a tre giorni per applicar
   
 Sì. A tale scopo, è possibile aggiungere l'utente ai gruppi di ruoli che dispongono di visibilità per entrambe le agenzie.
   
- **I filtri per le autorizzazioni di ricerca funzionano per eDiscovery case, criteri di conservazione di Office 365 o DLP?**
+ **I filtri per le autorizzazioni di ricerca funzionano per il caso eDiscovery, criteri di conservazione Microsoft 365 o DLP?**
   
 No, non in questo momento.
   

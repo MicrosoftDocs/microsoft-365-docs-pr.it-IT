@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di conservazione che conserva il contenuto in Microsoft 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 8559c5abc2faf032b1e197cd337779b3171d0c7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105663"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633065"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 
->*[Linee guida per la gestione delle licenze di Microsoft 365 per la sicurezza & conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Quando il contenuto raggiunge la fine del periodo di conservazione, è possibile che si desideri rivedere il contenuto per decidere se può essere eliminato in modo sicuro ("Disposed"). Ad esempio, potrebbe essere necessario:
   
@@ -37,7 +37,7 @@ Quando il contenuto raggiunge la fine del periodo di conservazione, è possibile
     
 - Restituire il contenuto ai client o trasferirlo in un'altra organizzazione.
     
-Quando si crea un'etichetta di conservazione in Microsoft 365 Compliance Center, Microsoft 365 Security Center o Office 365 Security & Compliance Center, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione. In una recensione di disposizione:
+Quando si crea un'etichetta di conservazione in Microsoft 365 Compliance Center, Microsoft 365 Security Center o il Centro sicurezza & Compliance, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione. In una recensione di disposizione:
   
 - Gli utenti che scelgono ricevono una notifica tramite posta elettronica che dispongono di contenuto da esaminare. Si noti che le notifiche vengono inviate su base settimanale.
     
@@ -53,7 +53,7 @@ Quando si crea un'etichetta di conservazione in Microsoft 365 Compliance Center,
     
 - I revisori possono visualizzare le disposizioni in sospeso o completate ed esportare tale elenco come file. csv.
 
-Una recensione di disposizione può includere il contenuto nelle cassette postali di Exchange, siti di SharePoint, account di OneDrive e gruppi di Office 365. Il contenuto in attesa di una revisione della disposizione in tali posizioni viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto.
+Una recensione di disposizione può includere il contenuto nelle cassette postali di Exchange, siti di SharePoint, account di OneDrive e gruppi Microsoft 365. Il contenuto in attesa di una revisione della disposizione in tali posizioni viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto.
   
 ![Pagina disposizioni nel centro sicurezza e conformità](../media/Retention-Dispositions-v2-page.png)
 
@@ -71,7 +71,7 @@ Per ulteriori informazioni sulle etichette di conservazione, vedere [Overview of
 ![Impostazioni di conservazione per un'etichetta](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> Quando si specifica l'opzione **notifica a queste persone quando sono disponibili elementi pronti per la revisione**, specificare un utente. I gruppi di Office 365 non sono supportati per questa opzione.
+> Quando si specifica l'opzione **notifica a queste persone quando sono disponibili elementi pronti per la revisione**, specificare un utente. I gruppi di Microsoft 365 non sono supportati per questa opzione.
 
 ## <a name="disposing-content"></a>Eliminazione del contenuto
 
@@ -95,7 +95,7 @@ Un revisore può anche utilizzare il collegamento per visualizzare il documento 
   
 Si noti che le notifiche di posta elettronica vengono inviate automaticamente ai revisori su base settimanale. Pertanto, quando il contenuto raggiunge la fine del periodo di conservazione, potrebbero essere necessari fino a sette giorni affinché i revisori ricevano la notifica di posta elettronica che il contenuto è in attesa di disposizione.
   
-Si noti inoltre che tutte le azioni di disposizione vengono controllate. Per garantire questo, è necessario abilitare il controllo almeno un giorno prima della prima azione di disposizione-per ulteriori informazioni, vedere [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
+Si noti inoltre che tutte le azioni di disposizione vengono controllate. Per garantire questo, è necessario abilitare il controllo almeno un giorno prima della prima azione di disposizione-per ulteriori informazioni, vedere [Search the audit log in the Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
   
 ## <a name="permissions-for-disposition"></a>Autorizzazioni per la disposizione
 
@@ -105,7 +105,7 @@ Specifica del ruolo di **controllo di sola visualizzazione** :
 
 - Poiché il cmdlet sottostante utilizzato per eseguire la ricerca nel log di controllo è un cmdlet di Exchange Online, è necessario assegnare agli utenti questo ruolo utilizzando l'interfaccia di [amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), anziché utilizzando la pagina **autorizzazioni** nel centro sicurezza & conformità. Per istruzioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- I gruppi di Office 365 non sono supportati per questo ruolo. Assegnare invece le cassette postali utente o gli utenti di posta.
+- I gruppi di Microsoft 365 non sono supportati per questo ruolo. Assegnare invece le cassette postali utente o gli utenti di posta.
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Durata dell'eliminazione definitiva del contenuto eliminato
 

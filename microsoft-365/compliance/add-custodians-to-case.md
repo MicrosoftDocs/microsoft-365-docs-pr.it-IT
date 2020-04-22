@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 11115db9e9a29f9abe83b3c26322f7586806d4dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634604"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632311"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Aggiungere i depositari a un caso avanzato di eDiscovery
 
@@ -68,7 +68,7 @@ Per identificare le origini dati del custode:
 
 ## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>Passaggio 3: associare altre origini dati a un custode
 
-A seconda del caso in cui si sta indagando, potrebbe essere necessario anche cercare (e conservare il contenuto) le cassette postali a cui è stato effettuato l'accesso a un determinato custode, i gruppi di Office 365 ai quali un custode è attualmente membro o i siti a cui è stato effettuato l'accesso a un custode. Pertanto, oltre alle origini dati del custode principale specificate nel passaggio precedente, è anche possibile associare altre origini dati di Office 365 a un custode nel caso. 
+A seconda del caso in cui si sta indagando, potrebbe essere necessario eseguire la ricerca e la conservazione dei contenuti delle cassette postali a cui è stato effettuato l'accesso a un determinato custode, Microsoft 365 gruppi a cui è attualmente associato un custode o i siti a cui è stato effettuato l'accesso a un custode. Pertanto, oltre alle origini dati del custode principale specificate nel passaggio precedente, è anche possibile associare altre origini dati Microsoft a un custode nel caso. 
 
 Per eseguire il mapping di cassette postali, siti o team a un determinato custode:
 
@@ -76,14 +76,14 @@ Per eseguire il mapping di cassette postali, siti o team a un determinato custod
   
    ![Mapping di origini dati aggiuntive](../media/AddCustodianStep3.PNG)
 
-2. Nella pagina a comparsa è possibile specificare un'origine dati da uno dei seguenti servizi di Office 365:
+2. Nella pagina a comparsa è possibile specificare un'origine dati da uno dei servizi seguenti:
   
-   -  **Posta elettronica di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . Utilizzare la casella di ricerca per trovare le cassette postali da associare al custode. Per specificare le cassette postali da assegnare al custode selezionato, utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione. È inoltre possibile assegnare la cassetta postale associata a un gruppo di Office 365 o a un team Microsoft. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
+   -  **Posta elettronica di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . Utilizzare la casella di ricerca per trovare le cassette postali da associare al custode. Per specificare le cassette postali da assegnare al custode selezionato, utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione. È inoltre possibile assegnare la cassetta postale associata a un gruppo di Microsoft 365 o a un team Microsoft. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
 
         > [!NOTE]
         > Quando si fa clic su Scegli utenti, gruppi o team per specificare le cassette postali, lo strumento di selezione delle cassette postali visualizzato è vuoto. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere una cassetta postale a questo elenco, digitare un nome o un alias (almeno 3 caratteri) nella casella di ricerca.
      
-     - **Siti di SharePoint** -fare clic su **Scegli siti** , quindi fare di nuovo clic su **Choose sites** per visualizzare un elenco di siti di SharePoint nell'organizzazione. Per associare un sito al custode, è possibile selezionare un sito nell'elenco oppure digitare l'URL di un sito diverso o di un sito associato a un gruppo di Office 365, a un team di Microsoft o a un account di OneDrive.
+     - **Siti di SharePoint** -fare clic su **Scegli siti** , quindi fare di nuovo clic su **Choose sites** per visualizzare un elenco di siti di SharePoint nell'organizzazione. Per associare un sito al custode, è possibile selezionare un sito nell'elenco oppure digitare l'URL di un altro sito o di un sito associato a un gruppo di Microsoft 365, Microsoft Team o a un account di OneDrive.
      
      - **Teams** -fare clic su **Scegli team** e quindi fare di nuovo clic su **Scegli squadre** per visualizzare un elenco di Microsoft teams di cui è attualmente membro il custode. Selezionare i team che si desidera aggiungere al custode. Una volta selezionata, il sistema identificherà automaticamente & selezionare il sito di SharePoint associato e la cassetta postale del gruppo associata a quel team Microsoft. Fare clic su **Scegli**e quindi su **fine**.
 

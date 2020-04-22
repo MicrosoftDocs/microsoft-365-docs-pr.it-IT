@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come iniziare a utilizzare Advanced eDiscovery in Microsoft 365. Dopo aver completato alcuni passaggi rapidi, lo strumento Advanced eDiscovery è pronto per l'uso. Il primo passaggio consiste nel creare un caso e quindi iniziare a utilizzare le funzionalità e le caratteristiche avanzate di eDiscovery.
-ms.openlocfilehash: 4aae93e250365fc7225fe2f21fe25cd01e5f8cc0
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 669ca954401242f7ac8da9a752a99b1b32c1041c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551127"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632477"
 ---
-# <a name="get-started-with-advanced-ediscovery"></a>Introduzione a Advanced eDiscovery
+# <a name="get-started-with-advanced-ediscovery"></a>Introduzione ad Advanced eDiscovery
 
 Advanced eDiscovery in Microsoft 365 offre un flusso di lavoro end-to-end per conservare, raccogliere, esaminare, analizzare ed esportare i dati che rispondono alle indagini interne ed esterne dell'organizzazione. Non è necessario eseguire alcuna operazione per la distribuzione di Advanced eDiscovery, ma sono necessarie alcune attività prerequisite che devono essere completate da un amministratore IT e da un responsabile di eDiscovery prima che l'organizzazione possa iniziare a creare e utilizzare i casi avanzati di eDiscovery per gestire le indagini.
 
@@ -33,7 +33,7 @@ In questo articolo vengono illustrati i passaggi necessari per configurare Advan
 
 La gestione delle licenze per Advanced eDiscovery richiede la sottoscrizione dell'organizzazione appropriata e la gestione delle licenze per utente.
 
-- **Sottoscrizione organizzazione:** Per accedere alle funzionalità avanzate di eDiscovery nel centro conformità di Microsoft 365 o nel centro conformità & sicurezza di Office 365, è necessario che l'organizzazione disponga di uno dei seguenti elementi:
+- **Sottoscrizione organizzazione:** Per accedere alle funzionalità avanzate di eDiscovery nel centro conformità di Microsoft 365 o nel centro sicurezza & conformità, è necessario che l'organizzazione disponga di uno dei seguenti elementi:
 
   - Abbonamento a Microsoft 365 E5 o a Office 365 E5
   
@@ -41,7 +41,7 @@ La gestione delle licenze per Advanced eDiscovery richiede la sottoscrizione del
 
   - Sottoscrizione Microsoft 365 E3 con E5 eDiscovery e componente aggiuntivo di controllo
 
-  Se non si dispone di un piano Microsoft 365 E5 esistente e si desidera provare Advanced eDiscovery, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) all'abbonamento a Office 365 esistente oppure [iscriversi a una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 E5.
+  Se non si dispone di un piano Microsoft 365 E5 esistente e si desidera provare Advanced eDiscovery, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) alla sottoscrizione esistente oppure [iscriversi per una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 E5.
 
 - **Licenze per utente:** Per aggiungere un utente come custode in un caso di eDiscovery Advance, all'utente deve essere assegnata una delle licenze seguenti, a seconda dell'abbonamento dell'organizzazione:
 
@@ -56,7 +56,7 @@ La gestione delle licenze per Advanced eDiscovery richiede la sottoscrizione del
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Passaggio 2: assegnare autorizzazioni di eDiscovery
 
-Per accedere a Advanced eDiscovery o essere aggiunto come membro di un caso avanzato di eDiscovery, a un utente devono essere assegnate le autorizzazioni appropriate. In particolare, un utente deve essere aggiunto come membro del gruppo di ruoli di gestione di eDiscovery nel centro sicurezza & conformità di Office 365. I membri di questo gruppo di ruoli possono creare e gestire i casi di eDiscovery avanzati. Sono in grado di aggiungere e rimuovere membri, inserire depositari e posizioni di contenuto in attesa, gestire le notifiche per la conservazione legale, creare e modificare le ricerche associate a un caso, aggiungere i risultati di ricerca a un set di revisione, analizzare i dati in un set di revisione ed esportare e scaricare da un caso avanzato di eDiscovery.
+Per accedere a Advanced eDiscovery o aggiunto come membro di un caso avanzato di eDiscovery, a un utente devono essere assegnate le autorizzazioni appropriate. In particolare, un utente deve essere aggiunto come membro del gruppo di ruoli di gestione di eDiscovery nel centro sicurezza & conformità. I membri di questo gruppo di ruoli possono creare e gestire i casi di eDiscovery avanzati. Sono in grado di aggiungere e rimuovere membri, inserire depositari e posizioni di contenuto in attesa, gestire le notifiche per la conservazione legale, creare e modificare le ricerche associate a un caso, aggiungere i risultati di ricerca a un set di revisione, analizzare i dati in un set di revisione ed esportare e scaricare da un caso avanzato di eDiscovery.
 
 Completare la procedura seguente per aggiungere gli utenti al gruppo di ruoli eDiscovery Manager:
 
@@ -145,7 +145,7 @@ Per iniziare a utilizzare Advanced eDiscovery, ecco un semplice flusso di lavoro
   
    - È possibile applicare un'esenzione ai dati del custode. Questo consente di conservare i dati che potrebbero essere rilevanti per il caso durante l'inchiesta.
   
-   - È possibile associare altre origini dati a un custode (ad esempio, è possibile associare un sito di SharePoint o un gruppo di Office 365 a un custode) in modo che i dati possano essere reindicizzati, rilasciati e ricercati, come i dati della cassetta postale o dell'account di OneDrive del custode.
+   - È possibile associare altre origini dati a un custode (ad esempio, è possibile associare un sito di SharePoint o un gruppo di Microsoft 365 a un custode) in modo che i dati possano essere reindicizzati, rilasciati e ricercati, come i dati della cassetta postale o dell'account di OneDrive della banca depositaria.
 
    - È possibile utilizzare il [flusso di lavoro comunicazioni](managing-custodian-communications.md) in Advanced eDiscovery per inviare una notifica di conservazione legale ai depositari.
 

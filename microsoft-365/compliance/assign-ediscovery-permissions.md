@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Assegnare le autorizzazioni necessarie per eseguire le attività relative a eDiscovery utilizzando il Centro sicurezza & Compliance.
-ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: dc7eb61a006b41e519c76e70c768b551ff5126b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097209"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631847"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance
 
@@ -55,7 +55,7 @@ Il gruppo di ruoli principale di eDiscovery nel centro sicurezza & conformità �
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
+2. Accedere con l'account aziendale o dell'Istituto di istruzione.
     
 3. Nel riquadro sinistro del Centro sicurezza e conformità, selezionare **autorizzazioni**, quindi selezionare la casella di controllo accanto a **eDiscovery Manager**.
     
@@ -81,7 +81,7 @@ Nella tabella seguente sono elencati i ruoli RBAC relativi a eDiscovery nel cent
 |Esportazione <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Anteprima <br/>  | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Revisione <br/>  | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |Decrittografia RMS <br/>  ||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |Ricerca ed eliminazione <br/> | <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -94,7 +94,7 @@ Questo ruolo consente agli utenti di creare, modificare, eliminare e controllare
 
 ### <a name="compliance-search"></a>Ricerca di conformità
 
-Questo ruolo consente agli utenti di eseguire lo strumento di ricerca contenuto nel centro sicurezza & Compliance per cercare le cassette postali e le cartelle pubbliche, i siti di SharePoint Online, i siti di OneDrive for business, le conversazioni di Skype for business, i gruppi di Office 365 e Microsoft teams e i gruppi di Yammer. Questo ruolo consente a un utente di ottenere una stima dei risultati della ricerca e creare rapporti di esportazione, ma sono necessari ulteriori ruoli per avviare azioni di ricerca del contenuto, ad esempio la visualizzazione in anteprima, l'esportazione o l'eliminazione dei risultati di ricerca.
+Questo ruolo consente agli utenti di eseguire lo strumento di ricerca contenuto nel centro sicurezza & conformità per cercare le cassette postali e le cartelle pubbliche, i siti di SharePoint Online, i siti di OneDrive for business, le conversazioni di Skype for business, i gruppi Microsoft 365 e Microsoft teams e i gruppi Yammer. Questo ruolo consente a un utente di ottenere una stima dei risultati della ricerca e creare rapporti di esportazione, ma sono necessari ulteriori ruoli per avviare azioni di ricerca del contenuto, ad esempio la visualizzazione in anteprima, l'esportazione o l'eliminazione dei risultati di ricerca.
 
 Gli utenti a cui è assegnato il ruolo di ricerca di conformità ma che non dispongono del ruolo anteprima possono visualizzare in anteprima i risultati di una ricerca in cui l'azione di anteprima è stata avviata da un utente a cui è stato assegnato il ruolo di anteprima. Se l'utente non ha il ruolo di anteprima, è possibile visualizzare in anteprima i risultati per un massimo di due settimane dopo la creazione dell'azione iniziale.
 
@@ -110,7 +110,7 @@ Per ulteriori informazioni sull'esportazione dei risultati della ricerca, vedere
 
 ### <a name="hold"></a>Hold
 
-Questo ruolo consente agli utenti di inserire il contenuto nelle cassette postali, nelle cartelle pubbliche, nei siti, nelle conversazioni di Skype for business e nei gruppi di Office 365. Quando il contenuto è in attesa, i proprietari di contenuto possono comunque modificare o eliminare il contenuto originale, ma il contenuto viene mantenuto finché il blocco non viene rimosso o fino alla scadenza della durata del blocco. 
+Questo ruolo consente agli utenti di inserire il contenuto nelle cassette postali, nelle cartelle pubbliche, nei siti, nelle conversazioni di Skype for business e nei gruppi Microsoft 365. Quando il contenuto è in attesa, i proprietari di contenuto possono comunque modificare o eliminare il contenuto originale, ma il contenuto viene mantenuto finché il blocco non viene rimosso o fino alla scadenza della durata del blocco. 
 
 Per ulteriori informazioni sulle esenzioni, vedere:
 
@@ -122,7 +122,7 @@ Per ulteriori informazioni sulle esenzioni, vedere:
 
 Questo ruolo consente agli utenti di visualizzare un elenco di elementi restituiti da una ricerca di contenuto. È inoltre possibile aprire e visualizzare ogni elemento dall'elenco per visualizzarne il contenuto.
 
-### <a name="review"></a>Review
+### <a name="review"></a>Revisione
 
 Questo ruolo consente agli utenti di accedere ai dati del caso in [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md) (noto anche come *Advanced eDiscovery V1*). Lo scopo principale di questo ruolo è offrire agli utenti l'accesso a Advanced eDiscovery (Classic). Gli utenti a cui è assegnato questo ruolo possono visualizzare e aprire l'elenco dei casi nella pagina **eDiscovery** nel centro sicurezza & Compliance di cui sono membri. Dopo che l'utente ha eseguito l'accesso a un caso nel centro sicurezza & Compliance, è possibile selezionare **passa a Advanced eDiscovery** per accedere ai dati del caso in Advanced eDiscovery (Classic) e analizzarli. Questo ruolo non consente all'utente di visualizzare in anteprima i risultati di una ricerca di contenuto associata al caso o di eseguire altre attività di ricerca contenuto o di gestione dei casi.
 
@@ -135,7 +135,7 @@ Questo ruolo consente agli utenti di decrittografare i messaggi di posta elettro
 
 ### <a name="search-and-purge"></a>Ricerca ed eliminazione
 
-Questo ruolo consente agli utenti di eseguire la rimozione di massa dei dati che corrispondono ai criteri di una ricerca di contenuto. Per ulteriori informazioni, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione di Office 365](search-for-and-delete-messages-in-your-organization.md). 
+Questo ruolo consente agli utenti di eseguire la rimozione di massa dei dati che corrispondono ai criteri di una ricerca di contenuto. Per ulteriori informazioni, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione](search-for-and-delete-messages-in-your-organization.md). 
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
@@ -151,7 +151,7 @@ Questo ruolo consente agli utenti di eseguire la rimozione di massa dei dati che
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    I gruppi di distribuzione di Exchange e i gruppi di Office 365 non sono supportati. È necessario utilizzare un gruppo di sicurezza abilitato alla posta elettronica, che è possibile creare in PowerShell di Exchange Online `New-DistributionGroup -Type Security` utilizzando il comando. È inoltre possibile creare un gruppo di sicurezza abilitato alla posta elettronica (e aggiungere membri) nell'interfaccia di amministrazione di Exchange o nell'interfaccia di amministrazione di Microsoft 365. La creazione di una nuova sicurezza abilitata alla posta elettronica potrebbe richiedere fino a 60 minuti per essere disponibile per l'aggiunta al gruppo di ruoli eDiscovery managers. 
+    I gruppi di distribuzione di Exchange e i gruppi Microsoft 365 non sono supportati. È necessario utilizzare un gruppo di sicurezza abilitato alla posta elettronica, che è possibile creare in PowerShell di Exchange Online `New-DistributionGroup -Type Security` utilizzando il comando. È inoltre possibile creare un gruppo di sicurezza abilitato alla posta elettronica (e aggiungere membri) nell'interfaccia di amministrazione di Exchange o nell'interfaccia di amministrazione di Microsoft 365. La creazione di una nuova sicurezza abilitata alla posta elettronica potrebbe richiedere fino a 60 minuti per essere disponibile per l'aggiunta al gruppo di ruoli eDiscovery managers. 
     
     Anche come indicato in precedenza, non è possibile creare un gruppo di sicurezza abilitato alla posta elettronica con un amministratore di eDiscovery utilizzando il cmdlet **Add-eDiscoveryCaseAdmin** nel centro sicurezza & Compliance Center PowerShell. È possibile aggiungere solo singoli utenti come amministratori di eDiscovery. 
     

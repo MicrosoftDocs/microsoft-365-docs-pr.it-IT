@@ -17,18 +17,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: c8c979e5d091204f8071c51a0662808652f59355
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 956359695978953445237afaa21af028ae8b4c6c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077801"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631335"
 ---
-# <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
+# <a name="create-a-dlp-policy-from-a-template"></a>Creare criteri di prevenzione della perdita dei dati da un modello
 
 Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. È possibile utilizzare uno di questi modelli come è o personalizzare le regole per soddisfare i requisiti di conformità specifici dell'organizzazione.
   
-In Office 365 sono disponibili più di 40 modelli pronti all'uso che consentono di soddisfare una vasta gamma di comuni necessità normative e aziendali. Ad esempio, esistono modelli di criteri DLP per:
+Microsoft 365 include oltre 40 modelli pronti all'uso che consentono di soddisfare una vasta gamma di requisiti normativi e di criteri aziendali comuni. Ad esempio, esistono modelli di criteri DLP per:
   
 - Gramm-Leach-Bliley Act (GLBA)
     
@@ -54,11 +54,11 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 - Si consentirà agli utenti di eseguire l'override delle azioni fornendo una motivazione aziendale o segnalando un falso positivo. In questo modo, i criteri DLP non impediscono agli utenti dell'organizzazione di svolgere il proprio lavoro, purché dispongano di un motivo aziendale valido per la condivisione delle informazioni riservate.
     
-### <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
+### <a name="create-a-dlp-policy-from-a-template"></a>Creare criteri di prevenzione della perdita dei dati da un modello
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione. Si è ora nel centro sicurezza &amp; e conformità di Office 365.
+2. Accedere con l'account aziendale o dell'Istituto di istruzione. Si è ora nel centro sicurezza &amp; e conformità.
     
 3. Nel &amp; centro \> sicurezza e conformità left navigation \> **policy** \> di prevenzione \> della **perdita dei dati** **+ creare un criterio**.
     
@@ -106,11 +106,11 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
     ![Pulsante Elimina regola](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
   
-9. Ora, in questo esempio, è necessario aggiungere due tipi di informazioni riservate (numeri di conto corrente bancario statunitense e numeri di licenza degli Stati Uniti), consentire agli utenti di ignorare una regola e modificare il conteggio in qualsiasi occorrenza. È possibile eseguire tutte queste modifiche modificando una regola, quindi selezionare un \> **volume elevato di contenuto rilevato dalla regola di modifica delle informazioni personali degli Stati Uniti** . ****
+9. Ora, in questo esempio, è necessario aggiungere due tipi di informazioni riservate (numeri di conto corrente bancario statunitense e numeri di licenza degli Stati Uniti), consentire agli utenti di ignorare una regola e modificare il conteggio in qualsiasi occorrenza. È possibile eseguire tutte queste modifiche modificando una regola, quindi selezionare un \> **volume elevato di contenuto rilevato dalla regola di modifica delle informazioni personali degli Stati Uniti** . **Edit rule**
     
     ![Pulsante Modifica regola](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
-10. Per aggiungere un tipo di informazioni riservate, **** nella sezione \> condizioni **aggiungere o modificare i tipi**. Quindi, in **Aggiungi o modifica tipi** \> scegliere **Aggiungi** \> selezionare **il numero di conto corrente bancario statunitense** e **il numero** \> della patente di guida statunitense **Aggiungi** \> **completato**.
+10. Per aggiungere un tipo di informazioni riservate, **Conditions** nella sezione \> condizioni **aggiungere o modificare i tipi**. Quindi, in **Aggiungi o modifica tipi** \> scegliere **Aggiungi** \> selezionare **il numero di conto corrente bancario statunitense** e **il numero** \> della patente di guida statunitense **Aggiungi** \> **completato**.
     
     ![Opzione per aggiungere o modificare i tipi](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
@@ -176,7 +176,7 @@ Di seguito sono riportati i diversi stati e il loro significato.
 
 È possibile modificare o disattivare un criterio DLP in qualsiasi momento. La disattivazione di un criterio Disattiva tutte le regole del criterio.
   
-Per modificare o disabilitare un criterio DLP, nella pagina \> **criterio** selezionare il criterio di modifica dei criteri. **** \>
+Per modificare o disabilitare un criterio DLP, nella pagina \> **criterio** selezionare il criterio di modifica dei criteri. **Edit policy** \>
   
 ![Pulsante Modifica criterio](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
   

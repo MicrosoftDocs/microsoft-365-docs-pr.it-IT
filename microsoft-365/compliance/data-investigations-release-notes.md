@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
-ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 813877151f538bc07a0460fdd702ab37ebcc5a1a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595413"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637736"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Note sulla versione per le indagini sui dati (Preview) in Microsoft 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "41595413"
 
 - **Indagini** : è possibile raggruppare le ricerche e gli eventi imprevisti creando un'indagine. Gestire gli utenti che possono accedere all'indagine aggiungendo o rimuovendo membri.  È inoltre possibile selezionare e contrassegnare le indagini preferite. Tenere conto e monitorare le attività all'interno e nelle indagini con i nuovi dashboard. Dopo aver completato le indagini, è possibile chiuderlo o eliminarlo.
 
-- **Persone di interesse** : quando si aggiungono gli utenti alle indagini come persone di interesse, è possibile visualizzare i siti di cassette postali, OneDrive for business e Microsoft teams. È possibile utilizzarli per l'ambito delle ricerche di contenuto investigativo. Per indagare ulteriormente su una persona interessata, è anche possibile visualizzare i record di controllo relativi alle attività in Office 365 e in altri servizi Microsoft.
+- **Persone di interesse** : quando si aggiungono gli utenti alle indagini come persone di interesse, è possibile visualizzare i siti di cassette postali, OneDrive for business e Microsoft teams. È possibile utilizzarli per l'ambito delle ricerche di contenuto investigativo. Per indagare ulteriormente su una persona interessata, è anche possibile visualizzare i record di controllo relativi alle attività in Microsoft 365 e in altri servizi Microsoft.
 
 - **Ricerche** – creare una ricerca a livello di organizzazione utilizzando varie condizioni di ricerca. Se si conoscono gli utenti o i siti che si desidera cercare, è possibile farlo aggiungendoli come persone di interesse o specificando le posizioni del sito nella procedura guidata per la creazione della ricerca. 
 

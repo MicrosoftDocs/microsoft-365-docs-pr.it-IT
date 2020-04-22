@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Alla tua organizzazione potrebbe essere richiesto di conservare i documenti per un periodo di tempo a causa di requisiti di conformità, legali o di altro tipo. Tuttavia, se l'organizzazione conserva i documenti più del necessario, si crea un rischio legale non necessario. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo i rischi eliminando i documenti in un sito dopo un determinato periodo di tempo, ad esempio, è possibile eliminare i documenti nei siti di OneDrive for business degli utenti cinque anni dopo la creazione dei documenti.
-ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 55d4616b4185ebdbbf0f132803d1b7414eaabac8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075213"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633045"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Panoramica dei criteri di eliminazione dei documenti
 
 > [!IMPORTANT]
-> Se si procede in avanti, si consiglia di utilizzare un criterio di conservazione o etichette create nel centro conformità Microsoft 365, Microsoft 365 Security Center o Office 365 &amp; Security Compliance Center anziché un criterio di eliminazione dei documenti. I criteri di eliminazione dei documenti continueranno a funzionare fianco a fianco con i criteri di conservazione, ma se è necessario mantenere o eliminare il contenuto in un punto qualsiasi di Office 365, è consigliabile utilizzare un criterio di conservazione. Per ulteriori informazioni, vedere [use a Retention Policy anziché these features](retention-policies.md#use-a-retention-policy-instead-of-these-features).
+> Se si avanza, è consigliabile utilizzare un criterio di conservazione o etichette create nel centro conformità Microsoft 365, Microsoft 365 Security Center o Centro sicurezza &amp; e conformità anziché un criterio di eliminazione dei documenti. I criteri di eliminazione dei documenti continueranno a funzionare fianco a fianco con i criteri di conservazione, ma se è necessario mantenere o eliminare il contenuto in un punto qualsiasi di Office 365, è consigliabile utilizzare un criterio di conservazione. Per ulteriori informazioni, vedere [use a Retention Policy anziché these features](retention-policies.md#use-a-retention-policy-instead-of-these-features).
   
 Alla tua organizzazione potrebbe essere richiesto di conservare i documenti per un periodo di tempo a causa di requisiti di conformità, legali o di altro tipo. Tuttavia, se l'organizzazione conserva i documenti più del necessario, si crea un rischio legale non necessario. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo i rischi eliminando i documenti in un sito dopo un determinato periodo di tempo, ad esempio, è possibile eliminare i documenti nei siti di OneDrive for business degli utenti cinque anni dopo la creazione dei documenti.
   
@@ -44,7 +44,7 @@ I criteri di eliminazione dei documenti sono potenti ma flessibili, ad esempio, 
   
 ## <a name="when-to-use-document-deletion-policies"></a>Quando utilizzare i criteri di eliminazione dei documenti
 
-Oltre ai criteri di eliminazione dei documenti, Office 365 fornisce questi criteri di conservazione per il contenuto del sito:
+Oltre ai criteri di eliminazione dei documenti, Microsoft fornisce i criteri di conservazione per il contenuto del sito:
   
 - [Gestione record](https://go.microsoft.com/fwlink/p/?LinkID=404250)
     
@@ -114,7 +114,7 @@ Come le autorizzazioni, la navigazione e altre funzionalità del sito, i criteri
   
 ## <a name="assigning-document-deletion-policies-for-the-first-time"></a>Assegnare per la prima volta criteri di eliminazione dei documenti
 
-È importante comprendere che il periodo di tempo specificato per un criterio di eliminazione dei documenti significa che il tempo dopo la creazione o la modifica del documento non è il momento in cui è stato assegnato il criterio. È possibile, ad esempio, creare un criterio di eliminazione dei documenti che elimini definitivamente il documento due anni dopo la creazione e quindi assegnare tale criterio a un modello di raccolta siti da cui sono state create diverse raccolte siti quattro o cinque anni fa. In questo caso, è probabile che le raccolte siti esistenti contengano molti documenti che sono già precedenti ai due anni specificati dai criteri di eliminazione, il che significa che molti contenuti verranno eliminati subito dopo aver assegnato il criterio di eliminazione dei documenti per il primo tempo.
+È importante comprendere che il periodo di tempo specificato per un criterio di eliminazione dei documenti significa che il tempo dopo la creazione o la modifica del documento non è il momento in cui è stato assegnato il criterio. È possibile, ad esempio, creare un criterio di eliminazione dei documenti che elimini definitivamente il documento due anni dopo la creazione e quindi assegnare tale criterio a un modello di raccolta siti da cui sono state create diverse raccolte siti quattro o cinque anni fa. In questo caso, è probabile che le raccolte siti esistenti contengano molti documenti che sono già precedenti ai due anni specificati dai criteri di eliminazione, il che significa che molti contenuti verranno eliminati subito dopo aver assegnato il criterio di eliminazione dei documenti per la prima volta.
   
 Quando assegni il criterio per la prima volta, tutti i documenti nel sito vengono valutati e, se soddisfano il criterio, verranno eliminati. Questo vale per tutti i documenti esistenti, non solo per quelli creati dal momento dell'assegnazione del criterio. Ricorda inoltre che il periodo di tempo fa riferimento all'età di ogni documento, non al periodo dalla prima assegnazione del criterio.
   

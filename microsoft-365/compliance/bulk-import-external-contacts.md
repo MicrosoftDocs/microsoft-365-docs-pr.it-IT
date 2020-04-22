@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Informazioni su come gli amministratori possono utilizzare PowerShell di Exchange Online e un file CSV per importare in blocco i contatti esterni nell'elenco indirizzi globale.
-ms.openlocfilehash: c74e8932f7ed2feeca472848c88bdddbc740fe28
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4d0b1a826583a032fd27c216367e99a6b7f8b371
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078953"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636344"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importare in blocco i contatti esterni in Exchange Online
 
@@ -71,7 +71,7 @@ Il primo passaggio consiste nel creare un file CSV che contiene informazioni su 
 
 Il passaggio successivo consiste nell'utilizzare il file CSV creato nel passaggio 1 e PowerShell per importare in blocco i contatti esterni elencati nel file CSV in Exchange Online. 
   
-1.  Connettere PowerShell all'organizzazione di Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Assicurarsi di utilizzare il nome utente e la password per l'account di amministratore globale di Office 365 quando ci si connette a PowerShell di Exchange Online. 
+1.  Connettere PowerShell all'organizzazione di Exchange Online. Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Assicurarsi di utilizzare il nome utente e la password per l'account di amministratore globale quando si esegue la connessione a PowerShell di Exchange Online. 
     
 2. Dopo aver connesso PowerShell a Exchange Online, passare alla cartella desktop in cui è stato salvato il file CSV nel passaggio 1. ad esempio `C:\Users\Administrator\desktop`.
     
@@ -123,7 +123,7 @@ Dopo aver eseguito il comando nel passaggio 2, vengono creati i contatti esterni
     
 1. Nell'interfaccia di amministrazione di Exchange accedere a **Destinatari** \> **Contatti**.
     
-2. Fare clic su un contatto e **** ![quindi fare clic](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) su Modifica icona modifica per visualizzare le proprietà del contatto. 
+2. Fare clic su un contatto e **Edit** ![quindi fare clic](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) su Modifica icona modifica per visualizzare le proprietà del contatto. 
     
 È tutto. Gli utenti possono visualizzare i contatti e le informazioni aggiuntive nella Rubrica Outlook e Outlook sul Web.
   

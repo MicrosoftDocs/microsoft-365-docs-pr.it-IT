@@ -16,22 +16,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Per identificare le informazioni riservate a volte è necessario cercare delle parole chiave, in particolare quando si identifica un contenuto generico, ad esempio comunicazioni relative al settore sanitario, o contenuti con linguaggio inappropriato o esplicito. Anche se è possibile creare elenchi di parole chiave nei tipi di informazioni riservate, questi elenchi hanno dimensioni limitate e richiedono la modifica di file XML per crearli o modificarli. I dizionari di parole chiave offrono una gestione semplificata delle parole chiave e, su scala molto più ampia, supportano fino a 100.000 termini per dizionario.
-ms.openlocfilehash: 2ae63a9bf10ee43b3f761d8c60652c7c2a5e8b5f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 67263c854f764be42d97061632567ec1b25214b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141511"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636464"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
-La prevenzione della perdita di dati (DLP) in Office 365 è in grado di identificare, monitorare e proteggere le informazioni riservate. L'identificazione di informazioni riservate a volte richiede la ricerca di parole chiave, in particolare quando si identifica il contenuto generico (ad esempio la comunicazione correlata all'assistenza sanitaria) o la lingua inappropriata o esplicita. Anche se è possibile creare elenchi di parole chiave in tipi di informazioni riservate, gli elenchi di parole chiave sono di dimensioni limitate e richiedono la modifica di XML per crearli o modificarli. I dizionari keyword offrono una gestione più semplice delle parole chiave e su una scala molto più grande, supportando fino a 100KB di termini per dizionario.
+La prevenzione della perdita di dati (DLP) è in grado di identificare, monitorare e proteggere le informazioni riservate. L'identificazione di informazioni riservate a volte richiede la ricerca di parole chiave, in particolare quando si identifica il contenuto generico (ad esempio la comunicazione correlata all'assistenza sanitaria) o la lingua inappropriata o esplicita. Anche se è possibile creare elenchi di parole chiave in tipi di informazioni riservate, gli elenchi di parole chiave sono di dimensioni limitate e richiedono la modifica di XML per crearli o modificarli. I dizionari keyword offrono una gestione più semplice delle parole chiave e su una scala molto più grande, supportando fino a 100.000 termini per dizionario.
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Procedura di base per la creazione di un dizionario di parole chiave
 
 Le parole chiave per il dizionario possono provenire da diverse origini, in genere da un file (ad esempio, un elenco con estensione csv o txt) importato nel servizio o tramite il cmdlet di PowerShell, da un elenco che viene immesso direttamente nel cmdlet di PowerShell o da un dizionario esistente. Quando si crea un dizionario di parole chiave, seguire gli stessi passaggi di base:
   
-1. Utilizzare il **Centro sicurezza & conformità** ([https://protection.office.com](https://protection.office.com)) oppure connettersi a **PowerShell per centro &amp; sicurezza e conformità di Office 365**.
+1. Utilizzare il **Centro sicurezza & Compliance** ([https://protection.office.com](https://protection.office.com)) o connettersi a **PowerShell per Centro sicurezza &amp; e conformità**.
     
 2. **Definire o caricare le parole chiave dall'origine desiderata**. La procedura guidata e il cmdlet accettano entrambi un elenco delimitato da virgole di parole chiave per creare un dizionario parola chiave personalizzato, in modo che questo passaggio vari leggermente a seconda di dove provengono le parole chiave. Una volta caricate, le parole chiave vengono codificate e convertite in una matrice di byte prima di essere importate.
     
@@ -67,7 +67,7 @@ Seguire la procedura seguente per creare e importare parole chiave per un dizion
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Creare un dizionario di parole chiave da un file con PowerShell
 
-Spesso, quando è necessario creare un dizionario di grandi dimensioni, è possibile utilizzare parole chiave da un file o da un elenco esportato da un'altra origine. In questo caso, è possibile creare un dizionario di parole chiave contenente un elenco di lingue inappropriate da schermare in posta elettronica esterna. Per prima cosa, è necessario [connettersi a &amp; PowerShell per Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Spesso, quando è necessario creare un dizionario di grandi dimensioni, è possibile utilizzare parole chiave da un file o da un elenco esportato da un'altra origine. In questo caso, è possibile creare un dizionario di parole chiave contenente un elenco di lingue inappropriate da schermare in posta elettronica esterna. È necessario innanzitutto [connettersi a PowerShell &amp; per Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Copiare le parole chiave in un file di testo e verificare che ogni parola chiave sia su una riga separata.
     
