@@ -1,5 +1,5 @@
 ---
-title: Gestire Microsoft 365 Business
+title: Gestire Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,82 +20,82 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Informazioni su come gestire le attività di amministrazione di Microsoft 365 business correlate, i dispositivi mobili, i PC Windows 10 e molte di queste attività.
-ms.openlocfilehash: 41b627b0bb7cbb009832d3e7c45e44ceb8a8fdcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Informazioni su come gestire le attività di amministrazione di Microsoft 365 per le aziende, i dispositivi mobili, i PC Windows 10 e molte di queste attività.
+ms.openlocfilehash: 5e6d4633410d4aa38ad1eebcab3405f57f5b2446
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593782"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633264"
 ---
-# <a name="manage-microsoft-365-business"></a><span data-ttu-id="fc1de-103">Gestire Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="fc1de-103">Manage Microsoft 365 Business</span></span>
+# <a name="manage-microsoft-365-for-business"></a><span data-ttu-id="5c501-103">Gestire Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="5c501-103">Manage Microsoft 365 for business</span></span>
 
-## <a name="general-microsoft-365-business-admin-tasks"></a><span data-ttu-id="fc1de-104">Attività di amministrazione generali di Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="fc1de-104">General Microsoft 365 Business admin tasks</span></span>
+## <a name="general-microsoft-365-for-business-admin-tasks"></a><span data-ttu-id="5c501-104">Attività amministrative generali di Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="5c501-104">General Microsoft 365 for business admin tasks</span></span>
 
-<span data-ttu-id="fc1de-105">La maggior parte dei [contenuti amministrativi](https://docs.microsoft.com/office365/admin/admin-home) per Office 365 for business si applica anche a Microsoft 365 business.</span><span class="sxs-lookup"><span data-stu-id="fc1de-105">Most of the [admin content](https://docs.microsoft.com/office365/admin/admin-home) for Office 365 for business also applies to Microsoft 365 Business.</span></span>
+<span data-ttu-id="5c501-105">La maggior parte dei [contenuti amministrativi](https://docs.microsoft.com/office365/admin/admin-home) per Office 365 si applica anche a Microsoft 365 for business.</span><span class="sxs-lookup"><span data-stu-id="5c501-105">Most of the [admin content](https://docs.microsoft.com/office365/admin/admin-home) for Office 365 also applies to Microsoft 365 for business.</span></span>
 
-- [<span data-ttu-id="fc1de-106">Aggiungere altri utenti a Microsoft 365 business</span><span class="sxs-lookup"><span data-stu-id="fc1de-106">Add more users to Microsoft 365 Business</span></span>](add-users-m365b.md)
+- [<span data-ttu-id="5c501-106">Aggiungere altri utenti a Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="5c501-106">Add more users to Microsoft 365 for business</span></span>](add-users-m365b.md)
     
-- [<span data-ttu-id="fc1de-107">Visualizzare criteri e dispositivi</span><span class="sxs-lookup"><span data-stu-id="fc1de-107">View policies and devices</span></span>](view-policies-and-devices.md)
+- [<span data-ttu-id="5c501-107">Visualizzare criteri e dispositivi</span><span class="sxs-lookup"><span data-stu-id="5c501-107">View policies and devices</span></span>](view-policies-and-devices.md)
     
-- [<span data-ttu-id="fc1de-108">Funzionalità di sicurezza aziendale di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="fc1de-108">Microsoft 365 Business security features</span></span>](security-features.md)
+- [<span data-ttu-id="5c501-108">Funzionalità di sicurezza di Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="5c501-108">Microsoft 365 for business security features</span></span>](security-features.md)
     
-- [<span data-ttu-id="fc1de-109">Corrispondenza tra le caratteristiche di protezione in Microsoft 365 Business e le impostazioni di Intune</span><span class="sxs-lookup"><span data-stu-id="fc1de-109">How do protection features in Microsoft 365 Business map to Intune settings</span></span>](map-protection-features-to-intune-settings.md)
+- [<span data-ttu-id="5c501-109">Come le caratteristiche di protezione in Microsoft 365 for business eseguono il mapping alle impostazioni di Intune</span><span class="sxs-lookup"><span data-stu-id="5c501-109">How do protection features in Microsoft 365 for business map to Intune settings</span></span>](map-protection-features-to-intune-settings.md)
     
-<span data-ttu-id="fc1de-110">Vedere le sezioni seguenti su come usare Microsoft 365 business per proteggere i dati dell'organizzazione su PC e dispositivi mobili.</span><span class="sxs-lookup"><span data-stu-id="fc1de-110">See the following sections on how to use Microsoft 365 Business to protect your organization's data on PCs and mobile devices.</span></span>
+<span data-ttu-id="5c501-110">Vedere le sezioni seguenti su come usare Microsoft 365 for business per proteggere i dati dell'organizzazione su PC e dispositivi mobili.</span><span class="sxs-lookup"><span data-stu-id="5c501-110">See the following sections on how to use Microsoft 365 for business to protect your organization's data on PCs and mobile devices.</span></span>
   
-## <a name="manage-mobile-devices"></a><span data-ttu-id="fc1de-111">Gestire i dispositivi mobili</span><span class="sxs-lookup"><span data-stu-id="fc1de-111">Manage mobile devices</span></span>
+## <a name="manage-mobile-devices"></a><span data-ttu-id="5c501-111">Gestire i dispositivi mobili</span><span class="sxs-lookup"><span data-stu-id="5c501-111">Manage mobile devices</span></span>
 
-- [<span data-ttu-id="fc1de-112">Configurare i dispositivi mobili per utenti di Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="fc1de-112">Set up mobile devices for Microsoft 365 Business users</span></span>](set-up-mobile-devices.md)
+- [<span data-ttu-id="5c501-112">Configurare i dispositivi mobili per gli utenti di Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="5c501-112">Set up mobile devices for Microsoft 365 for business users</span></span>](set-up-mobile-devices.md)
     
-- [<span data-ttu-id="fc1de-113">Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS</span><span class="sxs-lookup"><span data-stu-id="fc1de-113">Set app protection settings for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
+- [<span data-ttu-id="5c501-113">Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS</span><span class="sxs-lookup"><span data-stu-id="5c501-113">Set app protection settings for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
     
-    <span data-ttu-id="fc1de-114">Per verificare che l'operazione sia stata eseguita, vedere [convalidare le impostazioni di protezione delle app in un dispositivo Android o iOS](validate-settings-on-android-or-ios.md).</span><span class="sxs-lookup"><span data-stu-id="fc1de-114">To make sure this worked, see [Validate app protection settings on an Android or iOS device](validate-settings-on-android-or-ios.md).</span></span> 
+    <span data-ttu-id="5c501-114">Per verificare che l'operazione sia stata eseguita, vedere [convalidare le impostazioni di protezione delle app in un dispositivo Android o iOS](validate-settings-on-android-or-ios.md).</span><span class="sxs-lookup"><span data-stu-id="5c501-114">To make sure this worked, see [Validate app protection settings on an Android or iOS device](validate-settings-on-android-or-ios.md).</span></span> 
     
-- [<span data-ttu-id="fc1de-115">Rimuovere i dati aziendali dai dispositivi</span><span class="sxs-lookup"><span data-stu-id="fc1de-115">Remove company data from devices</span></span>](remove-company-data.md)
+- [<span data-ttu-id="5c501-115">Rimuovere i dati aziendali dai dispositivi</span><span class="sxs-lookup"><span data-stu-id="5c501-115">Remove company data from devices</span></span>](remove-company-data.md)
     
-## <a name="manage-windows-10-pcs"></a><span data-ttu-id="fc1de-116">Gestire i PC con Windows 10</span><span class="sxs-lookup"><span data-stu-id="fc1de-116">Manage Windows 10 PCs</span></span>
+## <a name="manage-windows-10-pcs"></a><span data-ttu-id="5c501-116">Gestire i PC con Windows 10</span><span class="sxs-lookup"><span data-stu-id="5c501-116">Manage Windows 10 PCs</span></span>
 
-- [<span data-ttu-id="fc1de-117">Configurare i dispositivi Windows per utenti di Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="fc1de-117">Set up Windows devices for Microsoft 365 Business users</span></span>](set-up-windows-devices.md)
+- [<span data-ttu-id="5c501-117">Configurare i dispositivi Windows per gli utenti di Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="5c501-117">Set up Windows devices for Microsoft 365 for business users</span></span>](set-up-windows-devices.md)
 
-    <span data-ttu-id="fc1de-118">Leggere [Preparare la distribuzione client di Office per Microsoft 365 Business](prepare-for-office-client-deployment.md) prima di installare automaticamente Office.</span><span class="sxs-lookup"><span data-stu-id="fc1de-118">Read [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md) before you auto-install Office.</span></span> 
+    <span data-ttu-id="5c501-118">Leggere [prepararsi per la distribuzione dei client di Office da Microsoft 365 for business](prepare-for-office-client-deployment.md) prima di installare automaticamente Office.</span><span class="sxs-lookup"><span data-stu-id="5c501-118">Read [Prepare for Office client deployment by Microsoft 365 for business](prepare-for-office-client-deployment.md) before you auto-install Office.</span></span> 
     
-- [<span data-ttu-id="fc1de-119">Configurare le impostazioni di protezione per i dispositivi Windows 10</span><span class="sxs-lookup"><span data-stu-id="fc1de-119">Set device protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-pcs.md)
+- [<span data-ttu-id="5c501-119">Configurare le impostazioni di protezione per i dispositivi Windows 10</span><span class="sxs-lookup"><span data-stu-id="5c501-119">Set device protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-pcs.md)
     
-    <span data-ttu-id="fc1de-120">Per verificare che l'operazione sia stata eseguita, vedere [convalidare le impostazioni di protezione del dispositivo nei dispositivi Windows 10](validate-settings-on-windows-10-pcs.md).</span><span class="sxs-lookup"><span data-stu-id="fc1de-120">To make sure this worked, see [Validate device protection settings on Windows 10 devices](validate-settings-on-windows-10-pcs.md).</span></span> 
+    <span data-ttu-id="5c501-120">Per verificare che l'operazione sia stata eseguita, vedere [convalidare le impostazioni di protezione del dispositivo nei dispositivi Windows 10](validate-settings-on-windows-10-pcs.md).</span><span class="sxs-lookup"><span data-stu-id="5c501-120">To make sure this worked, see [Validate device protection settings on Windows 10 devices](validate-settings-on-windows-10-pcs.md).</span></span> 
     
-- [<span data-ttu-id="fc1de-121">Configurare le impostazioni di protezione delle app per i dispositivi Windows 10</span><span class="sxs-lookup"><span data-stu-id="fc1de-121">Set application protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
+- [<span data-ttu-id="5c501-121">Configurare le impostazioni di protezione delle app per i dispositivi Windows 10</span><span class="sxs-lookup"><span data-stu-id="5c501-121">Set application protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
     
-    <span data-ttu-id="fc1de-122">Per assicurarsi che l'operazione sia stata eseguita, vedere [convalidare le impostazioni di protezione delle app nei PC Windows 10](validate-protection-settings-on-windows-10-pcs.md).</span><span class="sxs-lookup"><span data-stu-id="fc1de-122">To make sure this worked, see [Validate app protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md).</span></span> 
+    <span data-ttu-id="5c501-122">Per assicurarsi che l'operazione sia stata eseguita, vedere [convalidare le impostazioni di protezione delle app nei PC Windows 10](validate-protection-settings-on-windows-10-pcs.md).</span><span class="sxs-lookup"><span data-stu-id="5c501-122">To make sure this worked, see [Validate app protection settings on Windows 10 PCs](validate-protection-settings-on-windows-10-pcs.md).</span></span> 
     
-- [<span data-ttu-id="fc1de-123">Rimuovere i dati aziendali dai dispositivi</span><span class="sxs-lookup"><span data-stu-id="fc1de-123">Remove company data from devices</span></span>](remove-company-data.md)
+- [<span data-ttu-id="5c501-123">Rimuovere i dati aziendali dai dispositivi</span><span class="sxs-lookup"><span data-stu-id="5c501-123">Remove company data from devices</span></span>](remove-company-data.md)
     
-- [<span data-ttu-id="fc1de-124">Ripristinare le impostazioni del produttore per i dispositivi Windows 10</span><span class="sxs-lookup"><span data-stu-id="fc1de-124">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
+- [<span data-ttu-id="5c501-124">Ripristinare le impostazioni del produttore per i dispositivi Windows 10</span><span class="sxs-lookup"><span data-stu-id="5c501-124">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
     
-### <a name="use-autopilot-to-deploy-windows-10-devices"></a><span data-ttu-id="fc1de-125">Distribuire dispositivi Windows 10 con AutoPilot</span><span class="sxs-lookup"><span data-stu-id="fc1de-125">Use AutoPilot to deploy Windows 10 devices</span></span>
+### <a name="use-autopilot-to-deploy-windows-10-devices"></a><span data-ttu-id="5c501-125">Distribuire dispositivi Windows 10 con AutoPilot</span><span class="sxs-lookup"><span data-stu-id="5c501-125">Use AutoPilot to deploy Windows 10 devices</span></span>
 
-<span data-ttu-id="fc1de-126">Gli argomenti seguenti descrivono come usare Windows AutoPilot in Microsoft 365 Business per pre-configurare i dispositivi Windows 10.</span><span class="sxs-lookup"><span data-stu-id="fc1de-126">The following topics describe how you can use Windows AutoPilot in Microsoft 365 Business to pre-configure Windows 10 devices.</span></span>
+<span data-ttu-id="5c501-126">Negli argomenti seguenti viene descritto come usare Windows Autopilot in Microsoft 365 for business per preconfigurare i dispositivi Windows 10.</span><span class="sxs-lookup"><span data-stu-id="5c501-126">The following topics describe how you can use Windows AutoPilot in Microsoft 365 for business to pre-configure Windows 10 devices.</span></span>
   
-- [<span data-ttu-id="fc1de-127">Usare la guida dettagliata per aggiungere profili e dispositivi Autopilot</span><span class="sxs-lookup"><span data-stu-id="fc1de-127">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
+- [<span data-ttu-id="5c501-127">Usare la guida dettagliata per aggiungere profili e dispositivi Autopilot</span><span class="sxs-lookup"><span data-stu-id="5c501-127">Use the step-by-step guide to add Autopilot devices and profile</span></span>](add-autopilot-devices-and-profile.md)
     
-- [<span data-ttu-id="fc1de-128">Creare e modificare i profili di AutoPilot</span><span class="sxs-lookup"><span data-stu-id="fc1de-128">Create and edit AutoPilot profiles</span></span>](create-and-edit-autopilot-profiles.md)
+- [<span data-ttu-id="5c501-128">Creare e modificare i profili di AutoPilot</span><span class="sxs-lookup"><span data-stu-id="5c501-128">Create and edit AutoPilot profiles</span></span>](create-and-edit-autopilot-profiles.md)
     
-- [<span data-ttu-id="fc1de-129">Creare e modificare i dispositivi di AutoPilot</span><span class="sxs-lookup"><span data-stu-id="fc1de-129">Create and edit AutoPilot devices</span></span>](create-and-edit-autopilot-devices.md)
+- [<span data-ttu-id="5c501-129">Creare e modificare i dispositivi di AutoPilot</span><span class="sxs-lookup"><span data-stu-id="5c501-129">Create and edit AutoPilot devices</span></span>](create-and-edit-autopilot-devices.md)
     
-- [<span data-ttu-id="fc1de-130">Risolvere i problemi relativi ai dispositivi AutoPilot</span><span class="sxs-lookup"><span data-stu-id="fc1de-130">Troubleshoot AutoPilot device errors</span></span>](troubleshoot-autopilot-errors.md)
+- [<span data-ttu-id="5c501-130">Risolvere i problemi relativi ai dispositivi AutoPilot</span><span class="sxs-lookup"><span data-stu-id="5c501-130">Troubleshoot AutoPilot device errors</span></span>](troubleshoot-autopilot-errors.md)
     
-- [<span data-ttu-id="fc1de-131">Stati dei dispositivi</span><span class="sxs-lookup"><span data-stu-id="fc1de-131">Device states</span></span>](device-states.md)
+- [<span data-ttu-id="5c501-131">Stati dei dispositivi</span><span class="sxs-lookup"><span data-stu-id="5c501-131">Device states</span></span>](device-states.md)
     
-- [<span data-ttu-id="fc1de-132">Informazioni sulle impostazioni dei profili AutoPilot</span><span class="sxs-lookup"><span data-stu-id="fc1de-132">About AutoPilot Profile settings</span></span>](autopilot-profile-settings.md)
+- [<span data-ttu-id="5c501-132">Informazioni sulle impostazioni dei profili AutoPilot</span><span class="sxs-lookup"><span data-stu-id="5c501-132">About AutoPilot Profile settings</span></span>](autopilot-profile-settings.md)
     
-## <a name="set-up-and-prerequisite-information"></a><span data-ttu-id="fc1de-133">Configurare e informazioni sui prerequisiti</span><span class="sxs-lookup"><span data-stu-id="fc1de-133">Set up and prerequisite information</span></span>
+## <a name="set-up-and-prerequisite-information"></a><span data-ttu-id="5c501-133">Configurare e informazioni sui prerequisiti</span><span class="sxs-lookup"><span data-stu-id="5c501-133">Set up and prerequisite information</span></span>
 
-- [<span data-ttu-id="fc1de-134">Prerequisiti per la protezione dei dati nei dispositivi con Microsoft 365 business</span><span class="sxs-lookup"><span data-stu-id="fc1de-134">Prerequisites for protecting data on devices with Microsoft 365 Business</span></span>](pre-requisites-for-data-protection.md)
+- [<span data-ttu-id="5c501-134">Prerequisiti per la protezione dei dati nei dispositivi con Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="5c501-134">Prerequisites for protecting data on devices with Microsoft 365 for business</span></span>](pre-requisites-for-data-protection.md)
     
-- [<span data-ttu-id="fc1de-135">Configurare Microsoft 365 Business usando la configurazione guidata</span><span class="sxs-lookup"><span data-stu-id="fc1de-135">Set up Microsoft 365 Business by using the setup wizard</span></span>](set-up.md)
+- [<span data-ttu-id="5c501-135">Configurare Microsoft 365 per le aziende tramite l'installazione guidata</span><span class="sxs-lookup"><span data-stu-id="5c501-135">Set up Microsoft 365 for business by using the setup wizard</span></span>](set-up.md)
     
-- [<span data-ttu-id="fc1de-136">Eseguire la migrazione a Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="fc1de-136">Migrate to Microsoft 365 Business</span></span>](migrate-to-microsoft-365-business.md)
+- [<span data-ttu-id="5c501-136">Eseguire la migrazione a Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="5c501-136">Migrate to Microsoft 365 for business</span></span>](migrate-to-microsoft-365-business.md)
     
-- [<span data-ttu-id="fc1de-137">Abilitare i dispositivi Windows 10 associati a un dominio per essere gestiti da Microsoft 365 business</span><span class="sxs-lookup"><span data-stu-id="fc1de-137">Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business</span></span>](manage-windows-devices.md)
+- [<span data-ttu-id="5c501-137">Consenti la gestione di dispositivi Windows 10 con dominio per essere gestiti da Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="5c501-137">Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business</span></span>](manage-windows-devices.md)
     
-- [<span data-ttu-id="fc1de-138">Altre funzionalità di sicurezza</span><span class="sxs-lookup"><span data-stu-id="fc1de-138">Additional security features</span></span>](security-features.md#additional-security-features)
+- [<span data-ttu-id="5c501-138">Altre funzionalità di sicurezza</span><span class="sxs-lookup"><span data-stu-id="5c501-138">Additional security features</span></span>](security-features.md#additional-security-features)
