@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Informazioni sul diverso impatto dei servizi cloud inclusi nell'offerta IT sulla pianificazione e l'implementazione della continuità aziendale.
-ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030107"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633034"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Gestione della continuità aziendale della società con i servizi cloud
 

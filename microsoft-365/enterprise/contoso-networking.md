@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere l'infrastruttura di rete di Contoso e come utilizza la tecnologia SD-WAN per prestazioni di rete ottimali per i servizi cloud di Microsoft 365 Enterprise.
-ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068343"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625279"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Servizi di rete per Contoso Corporation
 
@@ -50,14 +50,14 @@ La figura 1 mostra l’infrastruttura di rete di Contoso e le relative connessio
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Uso di SD-WAN per la connettività di rete ottimale a Microsoft
 
-Contoso ha seguito i [principi della connettività di rete di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) per:
+Contoso ha seguito i [principi della connettività di rete di Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) per:
 
-1. Identificare e differenziare il traffico di rete di Office 365
+1. Identificare e differenziare il traffico di rete di Microsoft 365
 2. Uscire dalle connessione di rete a livello locale
 3. Evitare fenomeni di "hairpinning" di rete
 4. Bypassare i dispositivi di protezione di rete duplicati
 
-Esistono tre categorie di traffico di rete per Office 365: Optimize, Allow e Default. Il traffico della prima e della seconda categoria è un traffico di rete attendibile che viene crittografato e protetto a livello di endpoint ed è destinato alla rete Microsoft 365.
+Esistono tre categorie di traffico di rete per Microsoft 365: Optimize, Allow e Default. Il traffico della prima e della seconda categoria è un traffico di rete attendibile che viene crittografato e protetto a livello di endpoint ed è destinato alla rete Microsoft 365.
 
 Contoso ha deciso di:
 
@@ -93,7 +93,7 @@ La riuscita dell'adozione dei servizi di Microsoft 365 Enterprise da parte degli
 
 2. Creazione di un piano per la connettività di rete di Microsoft 365 Enterprise
 
-   Contoso ha usato i [principi di connettività di rete di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) e ha fornito le architetture di rete di riferimento per determinare la topologia SD-WAN come topologia preferita per la connettività di Office 365.
+   Contoso ha usato i [principi di connettività di rete di Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) e ha fornito le architetture di rete di riferimento per determinare la topologia SD-WAN come topologia preferita per la connettività di Microsoft 365.
 
 3. Analisi dell'utilizzo della connessione Internet e della larghezza di banda WAN MPLS in ogni ufficio e maggiore larghezza di banda in base alle esigenze
 
@@ -105,7 +105,7 @@ La riuscita dell'adozione dei servizi di Microsoft 365 Enterprise da parte degli
 
 5. Configurazione del DNS interno
 
-   Il DNS deve essere funzionale e ricercato localmente per il traffico di Office 365.
+   Il DNS deve essere funzionale e ricercato localmente per il traffico di Microsoft 365.
 
 6. Convalida della connettività degli endpoint di rete e delle porte
 

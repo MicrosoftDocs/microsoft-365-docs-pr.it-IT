@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: informazioni sulla configurazione e sul test di reimpostazione della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: c8d5ed0c7feac98afd3230a305f4ab1f850ca7f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 96a8b03ca978ac2b2174742c0208444d853ba7c9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633174"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632888"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Reimpostazione della password per l'ambiente di testing di Microsoft 365
 
@@ -33,9 +33,9 @@ La reimpostazione self-service (SSPR) di Azure Active Directory (AD Azure) conse
 
 Questo articolo descrive come configurare e testare la reimpostazione della password nel proprio ambiente di test di Microsoft 365 in tre fasi:
 
-1.  Creare l'ambiente di testing di Microsoft 365 Enterprise.
+1.    Creare l'ambiente di testing di Microsoft 365 Enterprise.
 2.  Attivare il writeback delle password.
-3.  Configurare e testare la reimpostazione della password per l'account utente 3.
+3.    Configurare e testare la reimpostazione della password per l'account utente 3.
     
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,7 @@ Questa configurazione è costituita da:
   
 - Abbonamenti di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
-- Azure AD Connect viene eseguito su APP1 per sincronizzare il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365 o a Office 365.
+- Azure AD Connect viene eseguito su APP1 per sincronizzare il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365.
 
 ## <a name="phase-2-enable-password-writeback"></a>Fase 2: Abilitare il writeback delle password
 

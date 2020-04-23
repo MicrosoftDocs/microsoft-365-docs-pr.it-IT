@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contenuto nuovo e modificato nella Guida alla distribuzione di Microsoft 365.
-ms.openlocfilehash: fb9768be38ef215b22c81bcf10b19b58e37fb124
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3374ee742982b1c7f451448674feed5f7d803031
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951811"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631574"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Modifiche al contenuto sulla distribuzione di Microsoft 365 per aziende
 
@@ -38,7 +38,7 @@ ms.locfileid: "42951811"
 
 ### <a name="new-content"></a>Nuovo contenuto 
 
-- [Eseguire la migrazione da Microsoft 365 Business a Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [Eseguire la migrazione da Microsoft 365 Business Premium a Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Team per un progetto interno di Contoso Corporation](contoso-team-for-top-secret-project.md)
 
@@ -86,7 +86,7 @@ ms.locfileid: "42951811"
 
 ### <a name="updates-and-enhancements"></a>Aggiornamenti e miglioramenti
 
-- Aggiornamento di [Fase 4: Office 365 ProPlus](office365proplus-infrastructure.md)
+- Aggiornamento della [Fase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)
 - Aggiornamento del [Case study di Contoso](contoso-case-study.md)
 - Aggiornamento dei carichi di lavoro di [Microsoft Teams](teams-workload.md), [Exchange Online](exchangeonline-workload.md) e [SharePoint Online](sharepoint-online-onedrive-workload.md).
 - Aggiornamento dello scenario [Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md)
@@ -170,7 +170,7 @@ ms.locfileid: "42951811"
 ### <a name="new-content"></a>Nuovo contenuto 
 
 - Guide dei laboratori di testing [Identità e accesso dei dispositivi](identity-device-access-m365-test-environment.md) prerequisito
-- Passaggi [Windows Information Protection](infoprotect-deploy-windows-information-protection.md) e [Prevenzione della perdita dei dati di Office 365](infoprotect-data-loss-prevention.md) per [Fase 6: protezione delle informazioni](infoprotect-infrastructure.md)
+- Passaggi [Windows Information Protection](infoprotect-deploy-windows-information-protection.md) e [Prevenzione della perdita dei dati](infoprotect-data-loss-prevention.md) per [Fase 6: protezione delle informazioni](infoprotect-infrastructure.md)
 
 
 ## <a name="see-also"></a>Vedere anche

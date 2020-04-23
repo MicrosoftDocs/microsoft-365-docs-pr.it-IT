@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Sintesi: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati nel proprio ambiente di sviluppo/testinging per la campagna politica.'
-ms.openlocfilehash: d36b2c74cc7accadf5bbbde1b52f94c5e998ea8a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 14ba5b00754a9e55c797edd0835658ac81b7e647
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599493"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637665"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Creare siti del team in un ambiente di sviluppo/testinging per la campagna politica
 
@@ -35,11 +35,11 @@ Attenersi alle istruzioni in questo articolo per creare un ambiente di sviluppo/
 
 Prima di tutto, seguire le istruzioni in [Configurazione di gruppi e utenti in un ambiente di sviluppo/testing per le campagne politiche](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) per creare le sottoscrizioni, gli utenti e i gruppi.
   
-## <a name="phase-2-create-office-365-labels"></a>Fase 2: creare etichette di Office 365
+## <a name="phase-2-create-labels"></a>Fase 2: creare etichette
 
 In questa fase, vengono create le etichette per i diversi livelli di sicurezza per cartelle di documenti dei siti del team di SharePoint Online.
   
-1. Se necessario, accedere all'interfaccia di amministrazione con le credenziali dell'account amministratore globale della sottoscrizione di valutazione. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, accedere all'interfaccia di amministrazione con le credenziali dell'account amministratore globale della sottoscrizione di valutazione. Per informazioni, vedere [Dove accedere a Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dalla scheda **Microsoft Office Home** fare clic sul riquadro **Amministratore**.
     

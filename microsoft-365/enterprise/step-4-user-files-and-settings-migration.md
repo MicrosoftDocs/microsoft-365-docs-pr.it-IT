@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come eseguire la migrazione di file e impostazioni degli utenti.
-ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 7904c9035ac87424f361e9ff4d6fb20596e335de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113542"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636785"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Passaggio 4: migrazione delle impostazioni e dei file utente
 
@@ -38,7 +38,7 @@ Spostare i file e le impostazioni degli utenti ai PC nuovi o aggiornati è un pr
 </table>
 
 >[!NOTE]
->Anche se è possibile continuare a utilizzare i processi di migrazione utilizzati in passato, con il passaggio a Office 365 ProPlus consigliamo di usare lo "Spostamento di cartelle note" di OneDrive (vedere di seguito). Per vedere l’intero processo di distribuzione, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
+>Anche se è possibile continuare a utilizzare i processi di migrazione utilizzati in passato, con il passaggio a Microsoft 365 Apps for enterprise consigliamo di usare lo "Spostamento di cartelle note" di OneDrive (vedere di seguito). Per vedere l’intero processo di distribuzione, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
 >
 
 Una delle attività più complesse e spesso più manuale di una distribuzione su vasta scala è quella del trasferimento dei file e delle impostazioni degli utenti. In questo articolo, illustreremo le opzioni disponibili per eseguire la migrazione degli utenti in PC nuovi, aggiornati o di cui è stata ricreata l'immagine.

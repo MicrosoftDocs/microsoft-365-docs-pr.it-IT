@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Sintesi: applicare etichette di riservatezza per proteggere i file in un team estremamente riservato.'
-ms.openlocfilehash: b263aeae335b83cadb45b16d70a2a45d56f1cbd3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c36daef7f28ad8bd3306fd7f3f7f1558a3594e68
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083370"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637617"
 ---
 # <a name="protect-files-in-teams-with-sensitivity-labels"></a>Proteggere i file nei team con etichette di riservatezza
 
@@ -44,7 +44,7 @@ Seguire [queste istruzioni ](https://docs.microsoft.com/microsoft-365/compliance
 
 - Il nome dell'etichetta o della sottoetichetta contiene il nome del team
 - La crittografia è abilitata
-- Il gruppo di Office 365 per il team ha autorizzazioni di creazione condivisa
+- Il gruppo di Microsoft 365 per il team ha autorizzazioni di creazione condivisa
 
 Una volta creata, pubblicare la nuova etichetta o sottoetichetta per gli utenti, che potranno quindi applicarla ai file in locale prima di caricarli nel team o dopo che il file sarà archiviato nel team.
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: È necessario rendere le password complesse e gestibili all'interno dell'organizzazione.
-ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633094"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637049"
 ---
 # <a name="step-2-secure-your-passwords"></a>Passaggio 2: proteggere le password
 
@@ -78,11 +78,11 @@ Vedere le [istruzioni per configurare l'accesso SSO facile ad Azure AD](https://
 |![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: accesso SSO facile di Azure AD](single-sign-on-m365-ent-test-environment.md) |
 |||
 
-Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-exit-criteria.md#crit-identity-sso) per questa sezione.
+Come checkpoint provvisorio, è possibile vedere i [criteri uscita](identity-exit-criteria.md#crit-identity-sso) per questa sezione.
 
 
 <a name="identity-custom-sign-in"></a>
-## <a name="customize-the-office-365-sign-in-page"></a>Personalizzare la pagina di accesso a Office 365
+## <a name="customize-the-sign-in-page"></a>Personalizzare una pagina di accesso
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
@@ -90,7 +90,7 @@ In questo passaggio si aggiunge il nome dell'azienda, il logo e altri elementi f
 
 Con Microsoft 365 Enterprise, è possibile personalizzare l'aspetto delle pagine di accesso e del Riquadro di accesso affinché includano il logo e colori dell'azienda e informazioni sull'utente personalizzate. 
 
-Per ulteriori informazioni, vedere [Aggiungere il marchio dell'organizzazione alla pagina di accesso di Office 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
+Per ulteriori informazioni, vedere [Aggiungere il marchio dell'organizzazione alla pagina di accesso di Microsoft 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 Per istruzioni sulla configurazione, vedere [Aggiungere il marchio dell'organizzazione alle pagine di accesso e Riquadro di accesso](https://aka.ms/aadpaddbranding).
 

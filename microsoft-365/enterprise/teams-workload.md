@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni dettagliate su come implementare Microsoft Teams nell'intera organizzazione.
-ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d34673a412539dfc73296f0139fa2eb555c17099
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801241"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636700"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Distribuire Microsoft Teams per Microsoft 365 Enterprise
 
@@ -34,7 +34,7 @@ Informazioni preliminari:
 
 - Assicurarsi di aver configurato le fasi corrette dell’[infrastruttura di base](deploy-foundation-infrastructure.md) cosicché i team abbiano gli account utente e le funzionalità di sicurezza necessari. Le fasi di protezione delle informazioni e dell’identità sono le più importanti per l'accesso e l'uso della protezione della posta elettronica e dei file con etichette di conservazione e riservatezza.
 - Informazioni sulla sicurezza e sulla conformità in Teams in [questo articolo](https://docs.microsoft.com/microsoftteams/security-compliance-overview).
-- Informazioni sulle licenze di Office 365 per Teams in [questo articolo](https://docs.microsoft.com/microsoftteams/office-365-licensing).
+- Informazioni sulle licenze per Teams in [questo articolo](https://docs.microsoft.com/microsoftteams/office-365-licensing).
 
 Per distribuire Teams nell'organizzazione, leggere [Come distribuire Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).
 

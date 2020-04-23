@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
-ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17884ff51a91ee0131f79fea05416ade59e4153e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071833"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634886"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance Manager (classico)
 
@@ -700,7 +700,7 @@ Compliance Manager è progettato per essere aggiornato regolarmente per stare al
     
 - Una modifica **secondaria** è una modifica irrilevante a un'azione del cliente, come la correzione di un errore di ortografia o di formattazione oppure l'aggiornamento o la correzione di collegamenti ipertestuali. Le modifiche secondarie in genere non richiedono la rivalutazione del controllo; tuttavia, si consiglia di rivedere l'azione del cliente aggiornata.
   
-### <a name="office-365-customer-managed-controls---change-log-for-july-2018"></a>Controlli gestiti dai clienti di Office 365 - Log delle modifiche di luglio 2018
+### <a name="customer-managed-controls---change-log-for-july-2018"></a>Controlli gestiti dai clienti - Log delle modifiche di luglio 2018
 
 |**ID di controllo**|**Valutazione**|**Tipo di modifica**|**Descrizione della modifica**|**Azioni consigliate per i clienti**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -710,7 +710,7 @@ Compliance Manager è progettato per essere aggiornato regolarmente per stare al
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365: HIPAA|Principale|Controllo HITECH aggiunto alla valutazione HIPAA per Office 365|Esaminare il controllo aggiunto e le azioni del cliente raccomandate<br/>|
 |
 
-### <a name="office-365-customer-managed-controls---change-log-for-april-2018"></a>Controlli gestiti dai clienti di Office 365 - Log delle modifiche di aprile 2018
+### <a name="customer-managed-controls---change-log-for-april-2018"></a>Controlli gestiti dai clienti - Log delle modifiche di aprile 2018
 
 |**GDPR**|**HIPAA**|**ISO 27001**|**ISO 27018**|**NIST 800-53**|**NIST 800-171**|**Tipo di modifica**|**Descrizione della modifica**|**Azioni consigliate per i clienti**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

@@ -25,16 +25,16 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
-ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 7d9ee9166de2a3807a8d10d061d3329c71180931
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540856"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634957"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visualizzare l'estratto conto o la fattura
 
-Questo articolo è destinato agli abbonati a Office 365 per le aziende. È necessario essere un amministratore globale o un amministratore fatturazione per eseguire le procedure descritte in questo articolo.
+Questo articolo è destinato agli abbonati a Microsoft 365 per le aziende. È necessario essere un amministratore globale o un amministratore fatturazione per eseguire le procedure descritte in questo articolo.
   
 Se serve aiuto per interpretare gli addebiti riportati nella fattura, vedere [Informazioni sulla fattura](understand-your-invoice2.md) per una descrizione dettagliata.
   

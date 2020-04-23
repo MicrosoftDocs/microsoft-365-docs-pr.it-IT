@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Per implementare una strategia di gestione dei record nella tua organizzazione Microsoft o Office 365, usare etichette di conservazione che dichiarino un contenuto come record. Quindi pubblicare o applicare automaticamente l'etichetta record di conservazione.
-ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153834"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632115"
 ---
 # <a name="overview-of-records"></a>Panoramica dei record
 
@@ -108,6 +108,9 @@ Il controllo delle versioni del record è automaticamente disponibile per qualsi
 
 ![Proprietà Stato del record nel documento taggato come record](../media/recordversioning8.png)
 
+> [!NOTE]
+> Il controllo delle versioni del record richiede una licenza di Office 365 Enterprise E5 per ogni utente che dispone delle autorizzazioni necessarie per modificare il contenuto dichiarato come record in un sito di SharePoint o un account di OneDrive. Gli utenti che hanno accesso in sola lettura non hanno bisogno di questa licenza.
+
 ### <a name="locking-and-unlocking-a-record"></a>Bloccare e sbloccare un record
 
 Una volta assegnata un'etichetta record di conservazione a un documento, qualsiasi utente con il livello di autorizzazione Collaborazione o inferiore può sbloccare un record o bloccare un record sbloccato.
@@ -153,7 +156,7 @@ La raccolta di archiviazione è visibile solo agli amministratori della raccolta
 
 ### <a name="searching-the-audit-log-for-record-versioning-events"></a>Cercare nel log di controllo gli eventi di controllo delle versioni del record
 
-Le azioni per bloccare e sbloccare i record vengono registrate nel log di controllo di Office 365. È possibile cercare le attività specifiche **Stato del record modificato in Bloccato** e **Stato del record modificato in Sbloccato**, che si trovano nella sezione **Attività su file e pagine** nell'elenco a discesa **Attività** nella pagina **Ricerca log di controllo** nel centro sicurezza e conformità.
+Le azioni per bloccare e sbloccare i record vengono registrate nel log di controllo. È possibile cercare le attività specifiche **Stato del record modificato in Bloccato** e **Stato del record modificato in Sbloccato**, che si trovano nella sezione **Attività su file e pagine** nell'elenco a discesa **Attività** nella pagina **Ricerca log di controllo** nel centro sicurezza e conformità.
 <br/><br/>
 
 ![Cercare nel log di controllo gli eventi di controllo delle versioni del record](../media/recordversioning13.png)

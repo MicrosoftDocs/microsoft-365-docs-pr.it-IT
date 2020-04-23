@@ -1,5 +1,5 @@
 ---
-title: 'Passaggio 5: Configurare i criteri di prevenzione della perdita dei dati di Office 365'
+title: 'Passaggio 5: configurare la prevenzione della perdita dei dati'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere e distribuire i criteri di prevenzione della perdita dei dati di Office 365 in Microsoft 365.
-ms.openlocfilehash: 896670e9ae83324a1220d64f49a8ea48aee85169
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Comprendere e distribuire i criteri di prevenzione della perdita dei dati in Microsoft 365.
+ms.openlocfilehash: e3d18bf54ecdfe11f8233163e7f200a70606d81d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067223"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636977"
 ---
-# <a name="step-5-configure-office-365-data-loss-prevention"></a>Passaggio 5: Configurare i criteri di prevenzione della perdita dei dati di Office 365
+# <a name="step-5-configure-data-loss-prevention"></a>Passaggio 5: configurare la prevenzione della perdita dei dati
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
 ![Fase 6: protezione delle informazioni](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-I criteri di prevenzione della perdita dei dati (DLP) del Centro sicurezza e conformità di Office 365 permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Microsoft 365. Con i criteri di prevenzione della perdita dei dati, è possibile:
+I criteri di prevenzione della perdita dei dati (DLP) del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Microsoft 365. Con i criteri di prevenzione della perdita dei dati, è possibile:
 
 - Identificare le informazioni riservate in numerose posizioni, ad esempio Exchange Online, SharePoint Online e OneDrive for Business e Microsoft Teams.
 - Impedire la condivisione accidentale di informazioni riservate bloccando l'accesso a un documento o alla posta elettronica che lo contiene.

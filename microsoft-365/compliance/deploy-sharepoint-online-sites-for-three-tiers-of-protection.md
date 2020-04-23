@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Sintesi: creare e configurare siti del team di SharePoint Online per diversi livelli di protezione delle informazioni.'
-ms.openlocfilehash: 1827c4a19cfd31a236dfbd58e454c610cae14477
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 44aa7c126e3ac4b077868c055f35c0b99d678b58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075526"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636134"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Distribuire siti di SharePoint Online per tre livelli di protezione
 
@@ -33,7 +33,7 @@ Usare i passaggi descritti in questo articolo per progettare e distribuire siti 
   
 ## <a name="baseline-sharepoint-online-team-sites"></a>Siti del team di SharePoint Online di base
 
-La protezione di siti di base include siti del team pubblici e privati. I siti del team pubblici possono essere individuati e usati da qualsiasi persona dell'organizzazione. I siti privati possono essere individuati e usati solo dai membri del gruppo di Office 365 associato al sito del team. Entrambi questi tipi di siti del team consentono ai membri di condividere il sito con altri utenti.
+La protezione di siti di base include siti del team pubblici e privati. I siti del team pubblici possono essere individuati e usati da qualsiasi persona dell'organizzazione. I siti privati possono essere individuati e usati solo dai membri del gruppo di Microsoft 365 associato al sito del team. Entrambi questi tipi di siti del team consentono ai membri di condividere il sito con altri utenti.
   
 ### <a name="public"></a>Pubblico
 
@@ -100,7 +100,7 @@ I membri del sito, attraverso l'appartenenza a uno dei gruppi di accesso, posson
   
 ## <a name="next-step"></a>Passaggio successivo
 
-[Proteggere i file di SharePoint Online con le etichette di Office 365 e la prevenzione della perdita dei dati](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+[Proteggere i file di SharePoint Online con le etichette e la prevenzione della perdita dei dati](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 
 ## <a name="see-also"></a>Vedere anche
 

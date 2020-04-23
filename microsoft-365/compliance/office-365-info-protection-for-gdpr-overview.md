@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Panoramica di Office 365 Information Protection per GDPR. Informazioni su come individuare, classificare, proteggere e monitorare i dati personali.
-ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071170"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637220"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Panoramica di Office 365 Information Protection per RGPD
 
@@ -117,4 +117,4 @@ Per ulteriori informazioni sull'applicazione della protezione, vedere [Applicare
 ### <a name="step-5--monitor-for-leaks-of-personal-data"></a>Fase 5 - Monitorare la perdita di dati personali
 
 
-I report sulla prevenzione della perdita dei dati di Office 365 forniscono il livello maggiore di dettaglio per il monitoraggio dei dati riservati. È possibile configurare avvisi automatici e analizzare violazioni utilizzando il log di controllo di Office 365. Cloud App Security estende la capacità di trovare e monitorare i dati riservati ad altri provider SaaS. Per ulteriori informazioni su questi strumenti, vedere [Monitorare le violazioni dei dati personali](/security/office-365-security/monitor-for-leaks-of-personal-data.md).
+I report sulla prevenzione della perdita dei dati di Office 365 forniscono il livello maggiore di dettaglio per il monitoraggio dei dati riservati. È possibile configurare avvisi automatici e analizzare violazioni utilizzando il log di controllo. Cloud App Security estende la capacità di trovare e monitorare i dati riservati ad altri provider SaaS. Per ulteriori informazioni su questi strumenti, vedere [Monitorare le violazioni dei dati personali](/security/office-365-security/monitor-for-leaks-of-personal-data.md).

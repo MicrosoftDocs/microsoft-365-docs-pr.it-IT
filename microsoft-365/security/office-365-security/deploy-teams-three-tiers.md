@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: Creare e configurare team con Microsoft Teams per diversi livelli di protezione delle informazioni per i file.
-ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d8912900a02149d198222a4402e101b0dce53310
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083339"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637641"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>Distribuire team per tre livelli di protezione dei file
 
@@ -32,7 +32,7 @@ Usare i passaggi descritti in questo articolo per progettare e implementare team
 
 ## <a name="baseline-teams"></a>Team di base
 
-La protezione di base include team pubblici e privati. I team pubblici possono essere individuati e usati da chiunque nell'organizzazione. I siti privati possono essere individuati e sono accessibili solo dai membri del gruppo Office 365 associato al team. Entrambi questi tipi di team consentono ai membri di condividere il sito con altri utenti.
+La protezione di base include team pubblici e privati. I team pubblici possono essere individuati e usati da chiunque nell'organizzazione. I siti privati possono essere individuati e sono accessibili solo dai membri del gruppo Microsoft 365 associato al team. Entrambi questi tipi di team consentono ai membri di condividere il sito con altri utenti.
 
 ### <a name="public"></a>Pubblico
 

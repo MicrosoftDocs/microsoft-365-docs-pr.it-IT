@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS presso un provider di hosting DNS per Office 365
+title: Creare record DNS presso un provider di hosting DNS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
-description: Informazioni su come verificare il dominio e creare record DNS presso un provider di hosting DNS per Office 365.
+description: Informazioni su come verificare il dominio e creare record DNS presso un provider di hosting DNS per Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 28df13d0ebe78d055df556d71c7a753d3434b030
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 85392bfbd19072d582e7c2db7ce3a8c7bf466176
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210481"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628495"
 ---
-# <a name="create-dns-records-at-any-dns-hosting-provider-for-office-365"></a>Creare record DNS presso un provider di hosting DNS per Office 365
+# <a name="create-dns-records-at-any-dns-hosting-provider"></a>Creare record DNS presso un provider di hosting DNS
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
@@ -41,7 +41,7 @@ Per identificare il provider di hosting DNS o il registrar per il dominio, veder
 Ecco i record da aggiungere per la configurazione manuale. Si noti che il record di verifica e il record MX sono specifici del dominio. Per configurarli, è necessario ottenere e usare un valore "token" specifico per il dominio. I passaggi seguenti spiegano come fare.
   
 > [!IMPORTANT]
-> Il nome esatto delle caselle o dei  *campi*  in cui si digitano o incollano le informazioni per creare i diversi tipi di record DNS varia a seconda dell'host DNS. Sul sito Web dell'host potrebbe essere disponibile una Guida per aiutare ad associare le istruzioni contenute qui ai campi del sito Web. È consigliabile controllare se sono disponibili istruzioni dettagliate per il proprio host DNS nell'articolo [Creare record DNS per Office 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). >  Alcuni host DNS non consentono di creare tutti i tipi di record necessari, con conseguenti [limitazioni del servizio](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) in Office 365. Se l'host del proprio dominio non supporta i record SRV, TXT o CNAME, ad esempio, è consigliabile [trasferire il dominio](../get-help-with-domains/buy-a-domain-name.md) in un host che supporta tutti i record necessari. Per una configurazione automatizzata delle procedure con Office 365, è consigliabile trasferire il dominio in GoDaddy. 
+> Il nome esatto delle caselle o dei  *campi*  in cui si digitano o incollano le informazioni per creare i diversi tipi di record DNS varia a seconda dell'host DNS. Sul sito Web dell'host potrebbe essere disponibile una Guida per aiutare ad associare le istruzioni contenute qui ai campi del sito Web. È consigliabile controllare se sono disponibili istruzioni dettagliate per il proprio host DNS nell'articolo [Creare record DNS per Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). >  Alcuni host DNS non consentono di creare tutti i tipi di record necessari, con conseguenti [limitazioni del servizio](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) in Microsoft 365. Se l'host del proprio dominio non supporta i record SRV, TXT o CNAME, ad esempio, è consigliabile [trasferire il dominio](../get-help-with-domains/buy-a-domain-name.md) in un host che supporta tutti i record necessari. Per una configurazione automatizzata delle procedure con Microsoft 365, è consigliabile trasferire il dominio in GoDaddy. 
   
 > [!NOTE]
 > In genere l'applicazione delle modifiche al DNS richiede pochi minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -52,7 +52,7 @@ Ecco i record da aggiungere per la configurazione manuale. Si noti che il record
 > [!NOTE]
 > È necessario creare solo uno di questi record. Il record TXT è solitamente il tipo preferito, ma non è supportato da alcuni provider di hosting DNS. In questi casi è possibile creare un record MX. 
   
-Prima di usare il proprio dominio con Office 365, è necessario dimostrare di esserne proprietari. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Office 365 che si è proprietari del dominio.
+Prima di usare il proprio dominio con Microsoft 365, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft 365 che si è il proprietario del dominio.
   
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
@@ -74,20 +74,20 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
 |||||
 |:-----|:-----|:-----|:-----|
 |**Tipo di record**|**Alias** o **nome host**|**Valore**|**TTL**|
-|TXT|Eseguire una delle operazioni seguenti: Digitare **@**, lasciare vuoto il campo o immettere il proprio nome di dominio.  <br/> **Nota:** i requisiti di questo campo variano a seconda dell'host DNS. |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.  <br/>        [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Impostare questo valore su **1 ora** o sull'equivalente in minuti ( **60** ), secondi ( **3600** ) e così via.  |
+|TXT|Eseguire una delle operazioni seguenti: Digitare **@**, lasciare vuoto il campo o immettere il proprio nome di dominio.  <br/> **Nota:** i requisiti di questo campo variano a seconda dell'host DNS. |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.  <br/>        [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Impostare questo valore su **1 ora** o sull'equivalente in minuti ( **60** ), secondi ( **3600** ) e così via.  |
    
   - **Se si crea un record MX, usare questi valori:**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Tipo di record**|**Alias** o **nome host**|**Valore**|**Priorità**|**TTL**|
-|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* <br/> **Nota:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.    <br/>       [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
+|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* <br/> **Nota:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.    <br/>       [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
    
 2. Salvare il record.
     
-Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Microsoft 365 e chiedere di cercarlo.
   
-Quando Office 365 trova il record TXT corretto, il dominio è verificato.
+Quando Microsoft 365 trova il record TXT corretto, il dominio è verificato.
   
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
@@ -103,7 +103,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
 ## <a name="add-mx-record-to-route-email"></a>Aggiungere un record MX per instradare la posta elettronica
 <a name="BKMK_add_MX"> </a>
 
-Aggiungere un record MX in modo che la posta elettronica per il dominio venga recapitata in Office 365.  *Quando si aggiorna il record MX del dominio, tutti i nuovi messaggi di posta elettronica indirizzati a chiunque usi il dominio verranno recapitati in Office 365*. I messaggi già disponibili rimarranno nell'attuale host di posta elettronica, a meno che non si decida di [eseguire la migrazione di posta elettronica e contatti](../setup/migrate-email-and-contacts-admin.md) a Office 365. 
+Aggiungere un record MX in modo che la posta elettronica del dominio venga recapitata in Microsoft 365.  *Quando si aggiorna il record MX del dominio, tutti i nuovi messaggi di posta elettronica indirizzati a chiunque usi il dominio verranno recapitati in Microsoft 365*. I messaggi già disponibili rimarranno nell'attuale host di posta elettronica, a meno che non si decida di [eseguire la migrazione di posta elettronica e contatti](../setup/migrate-email-and-contacts-admin.md) a Microsoft 365. 
   
   
  **Attività**
@@ -130,7 +130,7 @@ Il record MX aggiunto contiene il valore **Indirizzo di puntamento** che ha un a
 
 1. Nel sito Web dell'host DNS aggiungere un nuovo record MX.
     
-    A questo punto si [otterranno le informazioni per il record MX](../get-help-with-domains/information-for-dns-records.md) da Office 365. 
+    A questo punto si [otterranno le informazioni per il record MX](../get-help-with-domains/information-for-dns-records.md) da Microsoft 365. 
     
 2. Per il record MX (del passaggio precedente) copiare il valore di **Indirizzo di puntamento**. 
     
@@ -146,7 +146,7 @@ Il record MX aggiunto contiene il valore **Indirizzo di puntamento** che ha un a
     
   - **Nome host**: **@**
     
-  - **Indirizzo di puntamento**: incollare qui il valore di **Indirizzo di puntamento** copiato da Office 365. 
+  - **Indirizzo di puntamento**: incollare qui il valore di **Indirizzo di puntamento** copiato da Microsoft 365. 
     
   - **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. 
     
@@ -154,14 +154,14 @@ Il record MX aggiunto contiene il valore **Indirizzo di puntamento** che ha un a
     
 Rimuovere eventuali altri record MX.
   
-Se per il dominio sono presenti record MX che inviano la posta elettronica a una destinazione diversa da Office 365, eliminarli tutti.
+Se per il dominio sono presenti record MX che inviano la posta elettronica a una destinazione diversa da Microsoft 365, eliminarli tutti.
   
 ## <a name="add-three-cname-records"></a>Aggiungere tre record CNAME
 <a name="BKMK_add_MX"> </a>
 
 ::: moniker range="o365-worldwide"
 
-Procedere come segue per aggiungere i tre record CNAME necessari per Office 365. Se in Office 365 sono elencati altri record CNAME, aggiungerli eseguendo la stessa procedura illustrata qui.
+Procedere come segue per aggiungere i tre record CNAME necessari per Microsoft 365. Se in Microsoft 365 sono elencati altri record CNAME, aggiungerli eseguendo la stessa procedura illustrata qui.
   
 Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in genere uno alla volta.
   
@@ -182,7 +182,7 @@ Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in ge
 ::: moniker-end
 ::: moniker range="o365-germany"
 
-Procedere come segue per aggiungere i tre record CNAME necessari per Office 365. Se in Office 365 sono elencati altri record CNAME, aggiungerli eseguendo la stessa procedura illustrata qui.
+Procedere come segue per aggiungere i tre record CNAME necessari per Microsoft 365. Se in Microsoft 365 sono elencati altri record CNAME, aggiungerli eseguendo la stessa procedura illustrata qui.
   
 Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in genere uno alla volta.
   
@@ -204,7 +204,7 @@ Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in ge
 
 ::: moniker range="o365-21vianet"
 
-Procedere come segue per aggiungere i tre record CNAME necessari per Office 365. Se in Office 365 sono elencati altri record CNAME, aggiungerli eseguendo la stessa procedura illustrata qui.
+Procedere come segue per aggiungere i tre record CNAME necessari per Microsoft 365. Se in Microsoft 365 sono elencati altri record CNAME, aggiungerli eseguendo la stessa procedura illustrata qui.
   
 Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in genere uno alla volta.
   
@@ -224,13 +224,13 @@ Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in ge
     
 ::: moniker-end
 
-## <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Aggiungere due record CNAME per Gestione di dispositivi mobili (MDM) per Office 365
+## <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft-365"></a>Aggiungere due record CNAME per Gestione di dispositivi mobili (MDM) per Microsoft 365
 <a name="BKMK_add_MX"> </a>
 
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> Se si dispone di Gestione di dispositivi mobili per Office 365, è necessario creare due record CNAME aggiuntivi. Seguire la procedura usata per gli altri quattro record CNAME, specificando però i valori della tabella seguente. > Se MDM non è installato, è possibile saltare questo passaggio. 
+> Se si dispone di Gestione di dispositivi mobili per Microsoft 365, è necessario creare due record CNAME aggiuntivi. Seguire la procedura usata per gli altri quattro record CNAME, specificando però i valori della tabella seguente. > Se MDM non è installato, è possibile saltare questo passaggio. 
   
 |||||
 |:-----|:-----|:-----|:-----|
@@ -243,7 +243,7 @@ Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in ge
 ::: moniker range="o365-germany"
 
 > [!IMPORTANT]
-> Se si dispone di Gestione di dispositivi mobili per Office 365, è necessario creare due record CNAME aggiuntivi. Seguire la procedura usata per gli altri quattro record CNAME, specificando però i valori della tabella seguente. > Se MDM non è installato, è possibile saltare questo passaggio. 
+> Se si dispone di Gestione di dispositivi mobili per Microsoft 365, è necessario creare due record CNAME aggiuntivi. Seguire la procedura usata per gli altri quattro record CNAME, specificando però i valori della tabella seguente. > Se MDM non è installato, è possibile saltare questo passaggio. 
   
 |||||
 |:-----|:-----|:-----|:-----|
@@ -259,12 +259,12 @@ Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in ge
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori.
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft 365. Al contrario, aggiungere i valori di Microsoft 365 necessari al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori.
   
 Nel sito Web dell'host DNS modificare il record SPF esistente o creare un nuovo record TXT per SPF.
   
 > [!IMPORTANT]
-> SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Office 365. Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
+> SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Microsoft 365. Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
   
 1. Nelle caselle del nuovo record digitare oppure copiare e incollare il set di valori seguenti applicabile al proprio caso.
     
@@ -284,12 +284,12 @@ Nel sito Web dell'host DNS modificare il record SPF esistente o creare un nuovo 
 ::: moniker range="o365-germany"
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft 365. Al contrario, aggiungere i valori di Microsoft 365 necessari al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. 
   
 Nel sito Web dell'host DNS modificare il record SPF esistente o creare un nuovo record TXT per SPF.
   
 > [!IMPORTANT]
-> SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Office 365. Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
+> SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Microsoft 365. Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
   
 1. Nelle caselle del nuovo record digitare oppure copiare e incollare il set di valori seguenti applicabile al proprio caso.
     
@@ -309,12 +309,12 @@ Nel sito Web dell'host DNS modificare il record SPF esistente o creare un nuovo 
 ::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft 365. Al contrario, aggiungere i valori di Microsoft 365 necessari al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. 
   
 Nel sito Web dell'host DNS modificare il record SPF esistente o creare un nuovo record TXT per SPF.
   
 > [!IMPORTANT]
-> SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Office 365. Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
+> SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Microsoft 365. Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
   
 1. Nelle caselle del nuovo record digitare oppure copiare e incollare il set di valori seguenti applicabile al proprio caso.
     
@@ -429,10 +429,10 @@ Nel sito Web dell'host DNS sarà necessario creare due nuovi record SRV, in gene
 ## <a name="more-about-updating-dns-records"></a>Altre informazioni sull'aggiornamento dei record DNS
 <a name="BKMK_MoreAbout"> </a>
 
- **Se si sa come aggiornare i record DNS nell'host DNS del proprio dominio**, usare i valori DNS di Office 365 per modificare i record nell'host DNS del dominio, ad esempio per configurare un record MX o un record SPF. Per trovare i valori specifici da usare, [eseguire questa procedura](../get-help-with-domains/information-for-dns-records.md) oppure visualizzarli nei passaggi della configurazione guidata del dominio.
+ **Se si sa come aggiornare i record DNS nell'host DNS del proprio dominio**, usare i valori DNS di Microsoft 365 per modificare i record nell'host DNS del dominio, ad esempio per configurare un record MX o un record SPF. Per trovare i valori specifici da usare, [eseguire questa procedura](../get-help-with-domains/information-for-dns-records.md) oppure visualizzarli nei passaggi della configurazione guidata del dominio.
   
- **Se è necessaria assistenza per aggiungere i record DNS necessari**, vedere [Configurare il dominio (istruzioni specifiche per l'host)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide) e [raccogliere innanzitutto le informazioni necessarie per creare record DNS di Office 365](../get-help-with-domains/information-for-dns-records.md). Seguire quindi i passaggi generali descritti in questo argomento per configurare i record DNS del dominio in modo da poter usare il dominio con i servizi di Office 365, come la posta elettronica.
+ **Se è necessaria assistenza per aggiungere i record DNS necessari**, vedere [Configurare il dominio (istruzioni specifiche per l'host)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide) e [raccogliere innanzitutto le informazioni necessarie per creare record DNS di Microsoft 365](../get-help-with-domains/information-for-dns-records.md). Seguire quindi i passaggi generali descritti in questo argomento per configurare i record DNS del dominio in modo da poter usare il dominio con i servizi di Microsoft 365, come la posta elettronica.
   
- **Se non si ha un sito Web da usare con il dominio personalizzato**, è possibile affidare a Office 365 la configurazione e la gestione dei record DNS per il dominio invece di eseguire tutte le operazioni manualmente. Leggere informazioni sulle [due opzioni disponibili per configurare e gestire i record DNS per un dominio personalizzato](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) in Office 365. 
+ **Se non si ha un sito Web da usare con il dominio personalizzato**, è possibile affidare a Microsoft 365 la configurazione e la gestione dei record DNS per il dominio invece di eseguire tutte le operazioni manualmente. Leggere informazioni sulle [due opzioni disponibili per configurare e gestire i record DNS per un dominio personalizzato](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) in Microsoft 365. 
   
 

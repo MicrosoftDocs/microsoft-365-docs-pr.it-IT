@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Riepilogo: creare sottoscrizioni di valutazione di Office 365 ed Enterprise Mobility + Security (EMS) con utenti e gruppi per un ambiente di sviluppo/test di una campagna politica.'
-ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f07ccbb648ef20c6b7c6ef005afef59fd89d56aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083485"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638457"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
 
@@ -36,9 +36,9 @@ In questa fase si ottengono le sottoscrizioni di valutazione per Office 365 E5 e
 
 Per prima cosa, seguire le istruzioni della **fase 2** nell'articolo relativo all'[ambiente di sviluppo/test di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
 
-Iscriversi quindi per la sottoscrizione di valutazione di EMS E5 e aggiungerla alla stessa organizzazione della sottoscrizione di prova di Office 365.
+Iscriversi quindi per l’abbonamento di prova di EMS E5 e aggiungerlo alla stessa organizzazione come abbonamento di prova.
 
-1. Se necessario, accedere all'interfaccia di amministrazione con le credenziali dell'account amministratore globale dell'abbonamento di valutazione. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se necessario, accedere all'interfaccia di amministrazione con le credenziali dell'account amministratore globale della sottoscrizione di valutazione. Per informazioni, vedere [Dove accedere](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Scegliere il riquadro **Amministrazione**.
 
@@ -191,7 +191,7 @@ Registrare questi valori per utilizzarli con le sottoscrizioni di valutazione di
 
   Ad esempio, per il nome di dominio della sottoscrizione di valutazione di contoso.onmicrosoft.com, il nome dell'azienda è "contoso".
 
-- Amministratore globale di Office 365: ![Sottolineato](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- Nome amministratore globale: ![Sottolineato](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Registrare la password per l'account e la password iniziale comune per gli altri account utente in un luogo sicuro.
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: cdbd14ebd71964728282f5cff2e20f87f5a4a4a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225909"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633431"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -99,7 +99,7 @@ I servizi cloud Microsoft vengono controllati almeno una volta l'anno rispetto a
 - [Report Office 365 Core - SSAE 18 SOC 2](https://aka.ms/o365SOC-2)
 - [Report Office 365 Core - SSAE 18 SOC 3](https://aka.ms/o365SOC-3)
 - [Report Office 365 Microservices T1 - SSAE 18 SOC 2 Tipo I](https://aka.ms/o365-MS-SOC-2-type1)
-- [Report di controllo Office 365 Customer Lockbox SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
+- [Report di controllo Customer Lockbox SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Report di controllo Yammer SOC 2 AT 101 Tipo I](https://aka.ms/YammerSOC2Type1AuditReport).
 - [Report di Yammer SOC 2 Tipo II](https://aka.ms/yammerSOC-2)
 - [Visualizzare le lettere ponte e altri report di controllo](https://aka.ms/auditreports)
@@ -115,7 +115,7 @@ Con i report, il revisore può confrontare i risultati dei servizi cloud Microso
 
 **Con quale frequenza vengono emessi report SOC di Azure?**
 
-I report SOC per Azure, Cloud app Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi ogni sei mesi (i fine periodo sono il 31 marzo e il 30 settembre). Le lettere ponte sono emesse su base trimestrale, in genere la prima settimana di ogni mese dopo la fine del trimestre. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
+I report SOC per Azure, Cloud app Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi ogni sei mesi (i fine periodo sono il 31 marzo e il 30 settembre). Le lettere ponte vengono emesse a gennaio per coprire il periodo 01/10 - 31/12 e a luglio per coprire il periodo 01/04 - 30/06. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
 
 **Devo sottoporre a controlli i data center di Microsoft?**
 

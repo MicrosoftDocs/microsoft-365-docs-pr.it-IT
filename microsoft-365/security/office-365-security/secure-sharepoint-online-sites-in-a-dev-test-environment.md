@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Riepilogo: creare siti del team di SharePoint Online sensibili ed estremamente riservati in un ambiente di sviluppo/test.'
-ms.openlocfilehash: 6294daa943c3815b86a9e12154901ed0b58d5e8d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 016fd99423305e0d11272f3d25115dcffe29ecae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088111"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631990"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
 
@@ -66,7 +66,7 @@ Innanzitutto, creare due gruppi per un'organizzazione tipica con il portale di A
 
 6. Ripetere i passaggi 3-5 per un nuovo gruppo denominato **Marketing staff**.
 
-Successivamente, si configurano le licenze automatiche in modo che ai membri dei gruppi vengano automaticamente assegnate le licenze per le sottoscrizioni di Office 365 ed EMS.
+Successivamente, si configurano le licenze automatiche in modo che ai membri dei gruppi vengano automaticamente assegnate le licenze per gli abbonamenti di Microsoft 365 ed EMS.
 
 1. Nel portale di Azure fare clic su **Azure Active Directory > Licenze > Tutti i prodotti**.
 
@@ -125,7 +125,7 @@ Seguire questi passaggi per verificare che le licenze basate su gruppo funzionin
 
 4. Nel riquadro in cui sono elencate le proprietà dell'account utente **CEO** verificare che all'account sia stata assegnata la licenza **Microsoft 365 Enterprise E5** (in **Licenze dei prodotti**).
 
-## <a name="phase-3-create-office-365-retention-labels"></a>Fase 3: Creare le etichette di conservazione di Office 365
+## <a name="phase-3-create-retention-labels"></a>Fase 3: creare le etichette di conservazione.
 
 In questa fase, è possibile creare le etichette di conservazione per i documenti nei siti del team di SharePoint.
 

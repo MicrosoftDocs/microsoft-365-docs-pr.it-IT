@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Sintesi: creare team sensibili ed estremamente riservati in Microsoft Teams per i file in un ambiente di sviluppo/test.'
-ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5b3f5c74ac484eb00852d5756b3269fb7c8c6a5b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082263"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637969"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>Proteggere Teams per i file in un ambiente di sviluppo/test
 
@@ -64,9 +64,9 @@ Innanzitutto, creare due gruppi per un'organizzazione tipica con il portale di A
       
 5. Fare clic su **Crea** e quindi chiudere il pannello **Gruppo**.
     
-6.  Ripetere i passaggi 3-5 per un nuovo gruppo denominato **Marketing staff**.
+6.    Ripetere i passaggi 3-5 per un nuovo gruppo denominato **Marketing staff**.
     
-Successivamente, si configurano le licenze automatiche in modo che ai membri dei gruppi vengano automaticamente assegnate le licenze per le sottoscrizioni di Office 365 ed EMS.
+Successivamente, si configurano le licenze automatiche in modo che ai membri dei gruppi vengano automaticamente assegnate le licenze per gli abbonamenti di Microsoft 365 ed EMS.
   
 1. Nel portale di Azure fare clic su **Azure Active Directory > Licenze > Tutti i prodotti**.
     
@@ -125,7 +125,7 @@ Seguire questi passaggi per verificare che le licenze basate su gruppo funzionin
     
 4. Nel riquadro in cui sono elencate le proprietà dell'account utente **CEO** verificare che all'account sia stata assegnata la licenza **Microsoft 365 Enterprise E5** (in **Licenze dei prodotti**).
     
-## <a name="phase-3-create-office-365-retention-labels"></a>Fase 3: Creare le etichette di conservazione di Office 365
+## <a name="phase-3-create-retention-labels"></a>Fase 3: creare le etichette di conservazione.
 
 In questa fase vengono create le etichette di conservazione per i diversi livelli di sicurezza per cartelle di documenti dei siti di SharePoint sottostanti.
 
@@ -171,18 +171,18 @@ Per creare un team sensibile per consentire ai membri del gruppo che si occupa d
 
 1. [Creare un nuovo team privato](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) denominato **Campagne di marketing**.
 2. Aprire il team **Campagne di marketing**.
-3.  Nella barra degli strumenti per il team fare clic su **File**.
-4.  Fare clic sui puntini di sospensione, quindi selezionare **Apri in SharePoint**.
-5.  Nella barra degli strumenti del sito di SharePoint sottostante fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
-6.  Nel riquadro **Autorizzazioni sito** fare clic su **Modifica impostazioni di condivisione** in **Impostazioni di condivisione**.
-7.  In **Impostazioni di condivisione** scegliere **Solo i proprietari del sito possono condividere file, cartelle e il sito**, quindi fare clic su **Salva**.
+3.    Nella barra degli strumenti per il team fare clic su **File**.
+4.    Fare clic sui puntini di sospensione, quindi selezionare **Apri in SharePoint**.
+5.    Nella barra degli strumenti del sito di SharePoint sottostante fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
+6.    Nel riquadro **Autorizzazioni sito** fare clic su **Modifica impostazioni di condivisione** in **Impostazioni di condivisione**.
+7.    In **Impostazioni di condivisione** scegliere **Solo i proprietari del sito possono condividere file, cartelle e il sito**, quindi fare clic su **Salva**.
 
 Successivamente, configurare la cartella dei documenti del sito di SharePoint Campagne di marketing sottostante per l'etichetta Sensibile.
 
-1.  Nella scheda **Campagne di marketing - Home** del browser fare clic su **Documenti**.
-2.  Fare clic sull'icona delle impostazioni e selezionare **Impostazioni libreria**.
-3.  In **Autorizzazioni e gestione** fare clic su **Apply label to items in this library** (Applica etichetta agli elementi in questa libreria).
-4.  In **Impostazioni - Applica etichetta** selezionare **Riservato** e quindi fare clic su **Salva**. 
+1.    Nella scheda **Campagne di marketing - Home** del browser fare clic su **Documenti**.
+2.    Fare clic sull'icona delle impostazioni e selezionare **Impostazioni libreria**.
+3.    In **Autorizzazioni e gestione** fare clic su **Apply label to items in this library** (Applica etichetta agli elementi in questa libreria).
+4.    In **Impostazioni - Applica etichetta** selezionare **Riservato** e quindi fare clic su **Salva**. 
 
 Configurare quindi un criterio di prevenzione della perdita dei dati che informa gli utenti quando condividono un documento presente su un sito di SharePoint sottostante con etichetta Sensibile, che include il sito Campagne di marketing, all'esterno dell'organizzazione.
 
@@ -236,19 +236,19 @@ Per creare un team estremamente riservato per consentire ai membri del team diri
 
 1. [Creare un nuovo team privato](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) denominato **Strategia aziendale**.
 2. Aprire il team **Strategia aziendale**.
-3.  Nella barra degli strumenti per il team fare clic su **File**.
-4.  Fare clic sui puntini di sospensione, quindi selezionare **Apri in SharePoint**.
-5.  Nella barra degli strumenti del sito di SharePoint sottostante fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
-6.  Nel riquadro **Autorizzazioni sito** fare clic su **Modifica impostazioni di condivisione** in **Impostazioni di condivisione**.
-7.  In **Impostazioni di condivisione** scegliere **Solo i proprietari del sito possono condividere file, cartelle e il sito**.
-8.  Disattivare **Consenti richieste di accesso** e quindi fare clic su **Salva**.
+3.    Nella barra degli strumenti per il team fare clic su **File**.
+4.    Fare clic sui puntini di sospensione, quindi selezionare **Apri in SharePoint**.
+5.    Nella barra degli strumenti del sito di SharePoint sottostante fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
+6.    Nel riquadro **Autorizzazioni sito** fare clic su **Modifica impostazioni di condivisione** in **Impostazioni di condivisione**.
+7.    In **Impostazioni di condivisione** scegliere **Solo i proprietari del sito possono condividere file, cartelle e il sito**.
+8.    Disattivare **Consenti richieste di accesso** e quindi fare clic su **Salva**.
 
 Successivamente, configurare la cartella dei documenti del sito di SharePoint Strategia aziendale sottostante per l'etichetta Estremamente riservato.
 
-1.  Nella scheda **Strategia aziendale - Home** del browser fare clic su **Documenti**.
-2.  Fare clic sull'icona delle impostazioni e selezionare **Impostazioni libreria**.
-3.  In **Autorizzazioni e gestione** fare clic su **Apply label to items in this library** (Applica etichetta agli elementi in questa libreria).
-4.  In **Impostazioni - Applica etichetta**, selezionare **Estremamente riservato** e quindi fare clic su **Salva**. 
+1.    Nella scheda **Strategia aziendale - Home** del browser fare clic su **Documenti**.
+2.    Fare clic sull'icona delle impostazioni e selezionare **Impostazioni libreria**.
+3.    In **Autorizzazioni e gestione** fare clic su **Apply label to items in this library** (Applica etichetta agli elementi in questa libreria).
+4.    In **Impostazioni - Applica etichetta**, selezionare **Estremamente riservato** e quindi fare clic su **Salva**. 
 
 Configurare un criterio di prevenzione della perdita dei dati che blocchi gli utenti quando condividono un documento presente su un sito di SharePoint sottostante con etichetta Estremamente riservato, che include il sito Strategia aziendale, all'esterno dell'organizzazione.
   

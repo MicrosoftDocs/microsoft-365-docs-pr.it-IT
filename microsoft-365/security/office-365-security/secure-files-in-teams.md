@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Sintesi: suggerimenti di configurazione per proteggere i file in Microsoft Teams.'
-ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e177f290dff22943e282080652326dfb65cd07cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088130"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638477"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>Proteggere i file in Microsoft Teams
 
@@ -61,7 +61,7 @@ Come illustrato nell'esempio:
 
 - I criteri di [prevenzione della perdita dei dati](../../compliance/data-loss-prevention-policies.md) sono configurati in modo che le etichette di conservazione Sensibile ed Estremamente riservato avvisino o impediscano agli utenti di inviare questi tipi di file all'esterno dell'organizzazione.
 
-- Se necessario per lo scenario specifico, è possibile usare le [etichette di riservatezza](../../compliance/sensitivity-labels.md) per proteggere file estremamente riservati con la crittografia e le autorizzazioni. Per i clienti di Azure Information Protection, è possibile usare le etichette di Azure Information Protection nel Centro conformità Microsoft 365 e, qualora si scegliesse di eseguire operazioni di configurazione aggiuntive o avanzate, le etichette saranno sincronizzate con il portale di Azure. Le etichette di Azure Information Protection e le etichette di riservatezza di Office 365 sono completamente compatibili tra loro. Questo significa, ad esempio, che non è necessario riclassificare o etichettare nuovamente contenuti etichettati da Azure Information Protection. Non tutti i clienti necessitano di questo livello di protezione.
+- Se necessario per lo scenario specifico, è possibile usare le [etichette di riservatezza](../../compliance/sensitivity-labels.md) per proteggere file estremamente riservati con la crittografia e le autorizzazioni. Per i clienti di Azure Information Protection, è possibile usare le etichette di Azure Information Protection nel Centro conformità Microsoft 365 e, qualora si scegliesse di eseguire operazioni di configurazione aggiuntive o avanzate, le etichette saranno sincronizzate con il portale di Azure. Le etichette di Azure Information Protection e le etichette di riservatezza sono completamente compatibili tra loro. Questo significa, ad esempio, che non è necessario riclassificare o etichettare nuovamente contenuti etichettati da Azure Information Protection. Non tutti i clienti necessitano di questo livello di protezione.
 
 ## <a name="organization-wide-settings-for-sharepoint-and-onedrive"></a>Impostazioni a livello aziendale per SharePoint e OneDrive
 
@@ -125,7 +125,7 @@ Nella tabella seguente viene riepilogata la configurazione per ciascuno dei team
 
 Per la procedura di distribuzione dei quattro tipi diversi di team in questa soluzione, vedere [Distribuire team per tre livelli di protezione per i file](deploy-teams-three-tiers.md).
 
-## <a name="office-365-retention-labels"></a>Etichette di conservazione di Office 365
+## <a name="retention-labels"></a>Etichette di conservazione
 
 L'uso delle etichette di conservazione è consigliato per ambienti con dati sensibili. Dopo aver configurato e pubblicato le etichette di conservazione:
 
@@ -135,7 +135,7 @@ L'uso delle etichette di conservazione è consigliato per ambienti con dati sens
 
 - È possibile applicare criteri di prevenzione della perdita dei dati che si basano sulle etichette di conservazione.
 
-- Gli utenti dell'organizzazione possono applicare manualmente un'etichetta a contenuti in Outlook sul Web, Outlook 2010 e versioni successive, OneDrive, SharePoint e gruppi di Office 365. Gli utenti spesso conoscono meglio il tipo di contenuto su cui stanno lavorando, quindi possono classificarlo e applicare i criteri DLP appropriati.
+- Gli utenti dell'organizzazione possono applicare manualmente un'etichetta a contenuti in Outlook sul Web, Outlook 2010 e versioni successive, OneDrive, SharePoint e gruppi di Microsoft 365. Gli utenti spesso conoscono meglio il tipo di contenuto su cui stanno lavorando, quindi possono classificarlo e applicare i criteri DLP appropriati.
 
 Come indica l'illustrazione, questa soluzione include la creazione delle etichette di conservazione seguenti:
 

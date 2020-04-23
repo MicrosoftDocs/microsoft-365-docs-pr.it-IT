@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Usare il Centro sicurezza e conformità in Office 365 per abilitare le cassette postali di archiviazione per supportare la conservazione dei messaggi, eDiscovery e i requisiti dei blocchi dell'organizzazione.
-ms.openlocfilehash: 36a5f2003232d55fd82965773b38a26c4fa29b33
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6ff4e0eda616e9bdd5fe10832ae334c9337272f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074728"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631741"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Abilitare le cassette postali di archiviazione nel Centro sicurezza e conformità
   
@@ -41,7 +41,7 @@ Per abilitare o disabilitare le cassette postali di archiviazione, è necessario
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
+2. Accedere usando l'account di lavoro o della scuola.
     
 3. Nel riquadro sinistro del Centro sicurezza e conformità, fare clic su **Governance delle informazioni** \>**Archivio**.
     
@@ -72,7 +72,7 @@ Disabilitare una cassetta postale di archiviazione:
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
+2. Accedere usando l'account di lavoro o della scuola.
     
 3. Nel riquadro sinistro del Centro sicurezza e conformità, fare clic su **Governance delle informazioni** \>**Archivio**.
     
@@ -133,7 +133,7 @@ Eseguire il comando seguente per disabilitare la cassetta postale di archiviazio
 
    Per un elenco delle licenze di Outlook che supportano l'Archiviazione sul posto, vedere [Requisiti delle licenze di Outlook per le funzionalità di Exchange](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99).
 
-- Le cassette postali di archiviazione consentono di soddisfare i requisiti di conservazione, eDiscovery e mantenimento dei messaggi dell'organizzazione. Ad esempio, per spostare il contenuto delle cassette postali nelle cassette postali di archiviazione degli utenti, è possibile utilizzare i criteri di conservazione di Exchange dell'organizzazione. Se si usa lo strumento Ricerca contenuto nel Centro sicurezza e conformità per cercare contenuti specifici nella cassetta postale di un utente, verrà effettuata la ricerca anche della cassetta postale di archiviazione dello stesso utente. Inoltre, quando si applica un blocco per controversia legale o si applica un criterio di conservazione di Office 365 alla cassetta postale di un utente, vengono conservati anche gli elementi della cassetta postale di archiviazione.
+- Le cassette postali di archiviazione consentono di soddisfare i requisiti di conservazione, eDiscovery e mantenimento dei messaggi dell'organizzazione. Ad esempio, per spostare il contenuto delle cassette postali nelle cassette postali di archiviazione degli utenti, è possibile utilizzare i criteri di conservazione di Exchange dell'organizzazione. Se si usa lo strumento Ricerca contenuto nel Centro sicurezza e conformità per cercare contenuti specifici nella cassetta postale di un utente, verrà effettuata la ricerca anche della cassetta postale di archiviazione dello stesso utente. Inoltre, quando si applica un blocco per controversia legale o si applica un criterio di conservazione alla cassetta postale di un utente, vengono conservati anche gli elementi della cassetta postale di archiviazione.
   
 - Dopo aver attivato le cassette postali di archiviazione, l'organizzazione può sfruttare il criterio di conservazione predefinito di Exchange (noto anche come Gestione dei record dei messaggi o criteri MRM) che viene assegnato automaticamente a tutte le cassette postali. Quando una cassetta postale di archiviazione è abilitata, i criteri di conservazione predefiniti di Exchange eseguono automaticamente le operazioni seguenti: 
   
@@ -147,4 +147,4 @@ Eseguire il comando seguente per disabilitare la cassetta postale di archiviazio
     
   - [Criteri di conservazione predefiniti di Exchange Online](https://go.microsoft.com/fwlink/?linkid=839418)
     
-  - [Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione di Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+  - [Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

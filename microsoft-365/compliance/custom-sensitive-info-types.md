@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Panoramica dei tipi di informazioni sensibili per DLP.
-ms.openlocfilehash: b95501c08c2ac53eed6101abfa9f4b814c49f940
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2e56811cf8e837e698254c0205d5b831f7b1f3b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076983"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617090"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipi di informazioni sensibili personalizzati
 
 ## <a name="overview"></a>Panoramica
 
-Office 365 include molti tipi di informazioni sensibili predefinite pronte per l'uso nell'organizzazione, ad esempio per la [prevenzione della perdita dei dati](data-loss-prevention-policies.md) (DLP) o con [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security). I tipi di informazioni sensibili integrati consentono di identificare e proteggere i numeri di carata di credito, di conto corrente, di passaporto e altro, in base agli schemi che sono definiti da un'espressione regolare (regex) o da una funzione. Per altre informazioni, vedere [Elementi cercati dai tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md).
+Microsoft 365 include molti tipi di informazioni sensibili predefinite pronte per l'uso nell'organizzazione, ad esempio per la [prevenzione della perdita dei dati](data-loss-prevention-policies.md) (DLP) o con [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security). I tipi di informazioni sensibili integrati consentono di identificare e proteggere i numeri di carata di credito, di conto corrente, di passaporto e altro, in base agli schemi che sono definiti da un'espressione regolare (regex) o da una funzione. Per altre informazioni, vedere [Elementi cercati dai tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md).
 
 Tuttavia, cosa accade se è necessario identificare e proteggere un tipo diverso di informazioni sensibili, ad esempio gli ID dei dipendenti o i numeri di progetto che usano un formato specifico dell'organizzazione? Per farlo, è possibile creare un tipo di informazioni sensibili personalizzato.
 

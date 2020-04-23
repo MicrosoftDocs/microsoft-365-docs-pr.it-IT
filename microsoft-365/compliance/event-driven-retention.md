@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di conservazione, si può basare un periodo di conservazione sul momento in cui si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e a tutto il contenuto in cui è applicata un'etichetta per quel tipo di evento vengono applicate le azioni di conservazione dell'etichetta. La conservazione basata su eventi viene usata generalmente nell'ambito di un processo di gestione dei record.
-ms.openlocfilehash: 4389f3639de3e9e036491026455ce62a9e258432
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105623"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43616020"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 
@@ -84,7 +84,7 @@ Di seguito viene illustrato il flusso di lavoro principale per la conservazione 
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Passaggio 1: creare un'etichetta il cui periodo di conservazione sia basato su un evento
 
-Nel riquadro di spostamento sinistro del Centro conformità Microsoft 365, del Centro sicurezza Microsoft 365 o del Centro sicurezza e conformità di Office 365 scegliere **ClassificazioneEtichette di conservazione scheda Etichette> Crea un'etichetta.
+Nel riquadro di spostamento sinistro del Centro conformità Microsoft 365, del Centro sicurezza Microsoft 365 &amp; scegliere **Classificazione** > **Etichette di conservazione** >  scheda **Etichette** > **Crea un’etichetta**.
   
 Quando si crea l'etichetta, attivare la conservazione, quindi scegliere l'opzione mostrata di seguito per conservare o eliminare il contenuto in base a un evento. Ciò significa che le impostazioni di conservazione non avranno effetto fino al Passaggio 5, quando verrà creato un evento nella pagina **Eventi**. 
   
@@ -168,7 +168,7 @@ Per ulteriori informazioni, vedere [Query delle parole chiave e condizioni di ri
 
 Per accedere alla pagina **Eventi**, i revisori devono essere membri di un gruppo di ruoli con il ruolo **Gestione eliminazione** e **Solo visualizzazione log di controllo**. Si consiglia di creare un nuovo gruppo di ruoli denominato Revisori eliminazione, aggiungendo questi due ruoli, e quindi membri, a quel gruppo di ruoli. 
   
-Per ulteriori informazioni, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per altre informazioni, vedere l'articolo su come [consentire agli utenti di accedere&amp; al Centro sicurezza e conformità](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 ## <a name="automate-events-by-using-powershell"></a>Automatizzare gli eventi con PowerShell
 
