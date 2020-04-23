@@ -1,5 +1,5 @@
 ---
-title: Notifica di violazione di Office 365 secondo il GDPR
+title: Notifica di violazione secondo il GDPR
 description: Informazioni su come Microsoft protegge da una violazione dei dati personali e su come gestisce un'eventuale violazione e lo comunica agli utenti interessati.
 keywords: Office 365, Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
@@ -15,16 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 25888f0981cc4fe2b25e70282f5f6b49283cdcf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ae69a8330f5daec275247e718f7eb66a5f0f8bf9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073853"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633441"
 ---
-# <a name="office-365-breach-notification-under-the-gdpr"></a>Notifica di violazione di Office 365 secondo il GDPR
+# <a name="breach-notification-under-the-gdpr"></a>Notifica di violazione secondo il GDPR
 
-In quanto 	responsabile del trattamento dei dati, Office 365 consente ai clienti di soddisfare i requisiti relativi alla notifica di violazioni del GDPR come titolari del trattamento dei dati. A tale scopo, Microsoft si impegna a:
+In quanto responsabile del trattamento dei dati, Office 365 consente ai clienti di soddisfare i requisiti relativi alla notifica di violazioni del GDPR come titolari del trattamento dei dati. A tale scopo, Microsoft si impegna a:
 
 - Garantire ai clienti la possibilità di specificare un apposito contatto privacy al quale sarà notificata un'eventuale violazione. I clienti potranno specificare questo contatto in Azure Active Directory (AAD).
 - Informare i clienti riguardo alla violazione dei dati personali entro 72 ore dall'avvenuta violazione. Verrà inviata una notifica tramite posta elettronica al contatto specificato dal cliente.

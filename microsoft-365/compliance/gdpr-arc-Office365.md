@@ -1,5 +1,5 @@
 ---
-title: Elenco di controllo di preparazione della conformità di Office 365 all'RGPD
+title: Elenco di controllo per l'applicazione del GDPR all'uso
 description: Questo elenco di controllo fornisce le informazioni necessarie per l'applicazione del GDPR quando si usa Office 365.
 keywords: Preparazione della conformità al GDPR, elenco di controllo per l'applicazione del GDPR, Microsoft 365, Microsoft 365 Education, documentazione relativa al GDPR, GDPR
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 26c7e15eab3d66f3daee180f213bf5d66cad15ff
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: ee36f1fb1b44d2643aeb73f35ae9eb571dd0aa35
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558147"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633311"
 ---
-# <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>Elenco di controllo per l'applicazione del GDPR all'uso di Microsoft Office 365
+# <a name="accountability-readiness-checklist-for-microsoft-365"></a>Elenco di controllo per l'applicazione del GDPR all'uso di Microsoft 365
 
 ## <a name="1-introduction"></a>1. Introduzione
 
@@ -30,7 +30,7 @@ Questo elenco di controllo offre un modo pratico per accedere alle informazioni 
 
 È possibile gestire gli elementi di questo elenco di controllo con il [punteggio di conformità](compliance-score.md) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i *controlli gestiti dai clienti*.
 
-Inoltre, gli elementi dell'elenco di controllo in *5.* *Protezione e sicurezza dei dati* forniscono riferimenti ai controlli elencati sotto Controllo gestito da Microsoft nel riquadro del GDPR del [punteggio di conformità](compliance-score.md). In Dettagli di implementazione Microsoft per questi controlli è disponibile una spiegazione aggiuntiva dell'approccio di Microsoft per soddisfare le esigenze dei clienti nell'elenco di controllo.
+Inoltre, gli elementi dell'elenco di controllo in *5.**Protezione e sicurezza dei dati* forniscono riferimenti ai controlli elencati sotto Controllo gestito da Microsoft nel riquadro del GDPR del [punteggio di conformità](compliance-score.md). In Dettagli di implementazione Microsoft per questi controlli è disponibile una spiegazione aggiuntiva dell'approccio di Microsoft per soddisfare le esigenze dei clienti nell'elenco di controllo.
 
 L'elenco di controllo e il punteggio di conformità sono destinati ai responsabili del trattamento dei dati personali e comprendono i titoli e numeri di riferimento (indicati tra parentesi per ogni argomento) di alcuni controlli per la privacy e sicurezza tratti dagli standard:
 
@@ -118,7 +118,7 @@ Questa struttura viene usata anche per organizzare la presentazione dei controll
 |***Protezione delle informazioni di registro (6.9.4)***|Il cliente deve considerare i requisiti di protezione delle informazioni di registro che possono contenere dati personali o record correlati all'elaborazione dei dati personali. Se il sistema in uso include funzionalità di protezione dei registri, il cliente deve utilizzare queste funzionalità se necessario.|In che modo Microsoft protegge i registri contenenti i dati personali.<br>- Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365 [[16](gdpr-arc-Office365.md#16)]<br>- 6.9.4 Protezione delle informazioni di registro nel [punteggio di conformità](compliance-score.md)|(5)(1)(f)|
 |***Criteri e procedure di trasferimento delle informazioni (6.10.1)***|I clienti devono disporre delle procedure per i casi in cui è possibile trasferire dati personali su supporti fisici (ad esempio un'unità disco rigido che viene spostata tra server o strutture). Questi possono includere registri, autorizzazioni e rilevamento. Quando una terza parte o un altro responsabile effettuano il trasferimento dei supporti fisici, il cliente dovrà assicurarsi che l'organizzazione abbia implementato le procedure per garantire la protezione dei dati personali.|In che modo i servizi Microsoft trasferiscono i supporti fisici che possono contenere dati personali, incluse le circostanze in cui può avere luogo il trasferimento e le misure di protezione intraprese per proteggere i dati.<br>- FedRAMP medio, Piano di sicurezza del sistema FedRAMP (SSP) [[3](gdpr-arc-Office365.md#3)] vedere 13.10 protezione media (MP)<br>- 6.10.1 Criteri e procedure di trasferimento delle informazioni nel [punteggio di conformità](compliance-score.md)|(5)(1)(f)|
 |***Accordi di riservatezza o non divulgazione (6.10.2)***|Il cliente deve determinare la necessità di accordi di riservatezza o di misure equivalenti per gli utenti con accesso o responsabilità collegate ai dati personali.|In che modo i servizi Microsoft garantiscono che gli utenti singoli con accesso autorizzato ai dati personali si impegnano a mantenere la riservatezza.<br>- Report di controllo di tipo 2 SOC 2 [[11](gdpr-arc-Office365.md#11)] vedere CC1.4 pp33<br>- 6.10.2 Accordi di riservatezza o non divulgazione nel [punteggio di conformità](compliance-score.md)|(5)(1)(f), (28)(3)(b), (38)(5)|
-|***Proteggere i servizi applicativi sulle reti pubbliche (6.11.1)***|Il cliente deve conoscere i requisiti per la crittografia dei dati personali, soprattutto quando inviati tramite reti pubbliche. Se il sistema fornisce meccanismi per crittografare i dati, il cliente deve utilizzarli se necessario se necessario.|Descrizione delle misure adottate dai servizi Microsoft per proteggere i dati in transito (tra cui la crittografia dei dati) e del modo in cui i servizi Microsoft proteggono i dati che possono contenere dati personali quando passano attraverso le reti pubbliche, tra cui le misure di crittografia.<br>-Crittografia in Microsoft Cloud [[17](gdpr-arc-Office365.md#17)], vedere *Crittografia dei dati dei clienti di Office 365 in transito*<br>- 6.11.1 Protezione dei servizi per le applicazioni sulle reti pubbliche nel [punteggio di conformità](compliance-score.md)|(5)(1)(f), (32)(1)(a)|
+|***Proteggere i servizi applicativi sulle reti pubbliche (6.11.1)***|Il cliente deve conoscere i requisiti per la crittografia dei dati personali, soprattutto quando inviati tramite reti pubbliche. Se il sistema fornisce meccanismi per crittografare i dati, il cliente deve utilizzarli se necessario se necessario.|Descrizione delle misure adottate dai servizi Microsoft per proteggere i dati in transito (tra cui la crittografia dei dati) e del modo in cui i servizi Microsoft proteggono i dati che possono contenere dati personali quando passano attraverso le reti pubbliche, tra cui le misure di crittografia.<br>- Crittografia in Microsoft Cloud [[17](gdpr-arc-Office365.md#17)], vedere *Crittografia dei dati dei clienti in transito*<br>- 6.11.1 Protezione dei servizi per le applicazioni sulle reti pubbliche nel [punteggio di conformità](compliance-score.md)|(5)(1)(f), (32)(1)(a)|
 |***Principi di progettazione dei sistemi protetti (6.11.2)***|Il cliente deve comprendere in che modo vengono progettati e realizzati i sistemi per considerare la protezione dei dati personali. Se un cliente utilizza un sistema progettato da terze parti, ha la responsabilità di garantire che tali protezioni siano state considerate.|In che modo i servizi Microsoft includono i principi di protezione dei dati personali come parte obbligatoria dei principi di progettazione.<br>- Report di controllo di tipo 2 SOC 2 [[11](gdpr-arc-Office365.md#11)] vedere *Security Development Lifecycle* pp23, CC7.1 pp45 <br>- Principi di progettazione dei sistemi protetti nel [punteggio di conformità](compliance-score.md)|(25)(1)|
 |***Relazioni con i fornitori (6.12)***|Il cliente deve verificare che i requisiti di sicurezza delle informazioni e i requisiti di protezione dei dati personali che ricadono sotto la responsabilità di terze parti siano trattati in informazioni contrattuali o altri accordi. Gli accordi dovrebbero trattare anche le istruzioni per l'elaborazione.|In che modo i servizi Microsoft affrontano la sicurezza e la protezione dei dati negli accordi con i fornitori e in che modo si garantisce che tali accordi siano effettivamente implementati.<br>- Chi può accedere ai dati e secondo quali termini [[6](gdpr-arc-Office365.md#6)]<br>- Contratti per rappresentanti responsabili del trattamento per conto del cliente: sottoscrivere un contratto con Microsoft [[7](gdpr-arc-Office365.md#7)]<br>- 6.12 Relazioni con i fornitori nel [punteggio di conformità](compliance-score.md)|(5)(1)(f), (28)(1), (28)(3)(a), (28)(3)(b), (28)(3)(c), (28)(3)(d), (28)(3)(e), (28)(3)(f), (28)(3)(g), (28)(3)(h),(30)(2)(d), (32)(1)(b)|
 |***Gestione degli incidenti e dei miglioramenti di sicurezza delle informazioni (6.13.1)***|I clienti devono disporre delle procedure per poter determinare quando si è verificata una violazione di dati personali dell'utente.|In che modo i servizi Microsoft determinano se un incidente di sicurezza è una violazione dei dati personali e come viene comunicata tale violazione all'utente.<br>- Office 365 e notifica di violazione nell'ambito del GDPR [[9](gdpr-arc-Office365.md#9)]<br>- 6.13.1 Gestione degli incidenti e dei miglioramenti di sicurezza delle informazioni nel [punteggio di conformità](compliance-score.md)|(33)(2)|
@@ -152,7 +152,7 @@ Questa struttura viene usata anche per organizzare la presentazione dei controll
 | 17 <a name="17"> </a> | [Crittografia nel Microsoft Cloud](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=ec66d938-6eb4-4d7d-b8c3-2168573bb534&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 18 <a name="18"> </a> | [Responsabile della protezione dei dati di Microsoft](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) |
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 - [Centro protezione Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
