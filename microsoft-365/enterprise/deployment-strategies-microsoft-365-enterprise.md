@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su alcune modalità di distribuzione delle fasi dell'infrastruttura di base di Microsoft 365 per le aziende.
-ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5eb4851a4c967baae268e04113b4e44023164db4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067808"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638153"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Strategie di distribuzione dell'infrastruttura di base di Microsoft 365 per le aziende
 
@@ -90,7 +90,7 @@ Ecco un'esperienza utente pilota semplificata di esempio:
 
 - A dicembre si deve usare lo smartphone personale per la MFA. (Identity)
 - A marzo si installa Windows 10 Enterprise nel desktop Windows 8.1. (Windows 10 Enterprise)
-- A giugno si installa Office 365 ProPlus, in sostituzione di Office 2013. (Office 365 ProPlus)
+- A giugno si installa Microsoft 365 Apps for enterprise, che sostituisce Office 2013. (Microsoft 365 Apps for enterprise)
 - A settembre si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dei dispositivi mobili)
 - A dicembre si installa il client Azure Information Protection e si impara ad applicare etichette ai documenti. (Information Protection)
 
@@ -100,7 +100,7 @@ Ecco un'esperienza utente finale semplificata di esempio:
 
 - A gennaio si deve usare lo smartphone personale per la MFA. (Identity)
 - Ad aprile si installa Windows 10 Enterprise nel desktop Windows 8.1. (Windows 10 Enterprise)
-- A luglio si installa Office 365 ProPlus, in sostituzione di Office 2013. (Office 365 ProPlus)
+- A luglio si installa Microsoft 365 Apps for enterprise, che sostituisce Office 2013. (Microsoft 365 Apps for enterprise)
 - A ottobre si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dei dispositivi mobili)
 - A gennaio dell'anno successivo si installa il client Azure Information Protection e si impara ad applicare etichette ai documenti. (Information Protection)
 
@@ -120,7 +120,7 @@ Ecco un'esperienza utente pilota semplificata di esempio:
 
 - A dicembre si deve usare lo smartphone personale per la MFA. (Identity)
 - A febbraio si installa Windows 10 Enterprise nel desktop Windows 8.1. (Windows 10 Enterprise)
-- Ad aprile si installa Office 365 ProPlus, in sostituzione di Office 2013. (Office 365 ProPlus)
+- A giugno si installa Microsoft 365 Apps for enterprise, che sostituisce Office 2013. (Microsoft 365 Apps for enterprise)
 - A giugno si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dei dispositivi mobili)
 - Ad agosto si installa il client Azure Information Protection e si impara ad applicare etichette ai documenti. (Information Protection)
 
@@ -130,7 +130,7 @@ Ecco un'esperienza utente finale semplificata di esempio:
 
 - A gennaio si deve usare lo smartphone personale per la MFA. (Identity)
 - A marzo si installa Windows 10 Enterprise nel desktop Windows 8.1. (Windows 10 Enterprise)
-- A maggio si installa Office 365 ProPlus, in sostituzione di Office 2013. (Office 365 ProPlus)
+- A maggio si installa Microsoft 365 Apps for enterprise, che sostituisce Office 2013. (Microsoft 365 Apps for enterprise)
 - A luglio si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dei dispositivi mobili)
 - A settembre si installa il client Azure Information Protection e si impara ad applicare etichette ai documenti. (Information Protection)
 
@@ -158,7 +158,7 @@ Ecco un'esperienza utente pilota semplificata di esempio:
 
 - A dicembre si deve usare lo smartphone personale per la MFA. (Identity)
 - A gennaio si installa Windows 10 Enterprise nel desktop Windows 8.1. (Windows 10 Enterprise)
-- A febbraio si installa Office 365 ProPlus, in sostituzione di Office 2013. (Office 365 ProPlus)
+- A febbraio si installa Microsoft 365 Apps for enterprise, che sostituisce Office 2013. (Microsoft 365 Apps for enterprise)
 - A marzo si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dei dispositivi mobili)
 - Ad aprile si installa il client Azure Information Protection e si impara ad applicare etichette ai documenti. (Information Protection)
 
@@ -168,7 +168,7 @@ Ecco un'esperienza utente finale semplificata di esempio:
 
 - A gennaio si deve usare lo smartphone personale per la MFA. (Identity)
 - A febbraio si installa Windows 10 Enterprise nel desktop Windows 8.1. (Windows 10 Enterprise)
-- A marzo si installa Office 365 ProPlus, in sostituzione di Office 2013. (Office 365 ProPlus)
+- A marzo si installa Microsoft 365 Apps for enterprise, che sostituisce Office 2013. (Microsoft 365 Apps for enterprise)
 - Ad aprile si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dei dispositivi mobili)
 - A maggio si installa il client Azure Information Protection e si impara ad applicare etichette ai documenti. (Information Protection)
 
@@ -186,7 +186,7 @@ Il reparto IT configura l'infrastruttura per le fasi 2-6, quindi esegue l'implem
 
 - MFA e altre funzionalità per la gestione delle identità (Identity)
 - Windows 10 Enterprise in dispositivi Windows (Windows 10 Enterprise)
-- Office 365 ProPlus per la famiglia di prodotti Office (Office 365 ProPlus)
+- Microsoft 365 Apps for enterprise per le applicazioni Office (Microsoft 365 Apps for enterprise)
 - Criteri di dispositivi e app (Gestione dispositivi mobili)
 - Installazione del client Azure Information Protection e training su come applicare etichette ai documenti (Information Protection)
 

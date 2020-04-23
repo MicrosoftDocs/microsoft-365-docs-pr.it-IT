@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di dispositivi e app nell'ambiente.
-ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085485"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636857"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Passaggio 1: preparazione di dispositivi e app
 
@@ -36,10 +36,10 @@ ms.locfileid: "42085485"
 </table>
 
 >[!NOTE]
->La preparazione di dispositivi e app rappresenta il primo passaggio del processo di distribuzione consigliato e copre gli aspetti olistici della compatibilità di applicazioni e componenti hardware. Per vedere il processo di distribuzione desktop completo, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
+>La preparazione di dispositivi e app rappresenta il primo passaggio del processo di distribuzione consigliato e copre gli aspetti olistici della compatibilità di applicazioni e componenti hardware. Per vedere l’intero processo di distribuzione, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
 >
 
-In passato, l'ostacolo principale per l'aggiornamento dei computer desktop degli utenti era la compatibilità di hardware e applicazioni. Finalmente, passando a Windows 10 e Office 365 ProPlus, praticamente ogni applicazione creata negli ultimi 10 anni sarà compatibile con Windows 10 e qualsiasi componente aggiuntivo COM e macro VBA utilizzato dall'organizzazione nelle versioni precedenti di Office (fino a Office 2010) continuerà a essere compatibile nelle versioni più recenti di Office, senza nessuna modifica.
+In passato, l'ostacolo principale per l'aggiornamento dei computer desktop degli utenti era la compatibilità di hardware e applicazioni. Finalmente, passando a Windows 10 e Microsoft 365 Apps for enterprise, praticamente ogni applicazione creata negli ultimi 10 anni sarà compatibile con Windows 10 e qualsiasi componente aggiuntivo COM e macro VBA utilizzato dall'organizzazione nelle versioni precedenti di Office (fino a Office 2010) continuerà a essere compatibile nelle versioni più recenti di Office, senza nessuna modifica.
 
 Premesso ciò, a seconda delle dimensioni e della longevità dell'organizzazione, la verifica della compatibilità di hardware e applicazioni rimane comunque un passaggio iniziale fondamentale nel nostro processo di distribuzione a 8 fasi consigliato.
 
@@ -89,7 +89,7 @@ Si noterà che la maggior parte delle applicazioni, dei driver e dei componenti 
 
 È possibile usare Desktop Analytics anche per valutare i problemi di compatibilità basati su browser, identificando siti Web e app Web accessibili dagli utenti che usano ancora controlli ActiveX, oggetti browser helper, VBScript o altre tecnologie legacy non supportate dal browser Microsoft Edge. Gli utenti dovranno continuare a usare Internet Explorer 11 per questi siti ed è possibile aggiungerli all'[elenco siti modalità Enterprise](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)usando l’Enterprise Mode Site List Manager.
 
-Inoltre, per facilitare il passaggio a Office 365 ProPlus, è consigliabile usare [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) per testare la compatibilità dei componenti aggiuntivi e delle macro Microsoft Visual Basic for Applications (VBA).
+Inoltre, per facilitare il passaggio a Microsoft 365 Apps for enterprise, è consigliabile usare [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) per testare la compatibilità dei componenti aggiuntivi e delle macro Microsoft Visual Basic for Applications (VBA).
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -110,12 +110,12 @@ Per altre informazioni, vedere [Introduzione all'inventario software in Configur
 
 ## <a name="app-assure"></a>App Assure
 
-Un altro strumento utile per valutare la compatibilità delle app di Windows 10 e Office 365 ProPlus è il programma [App Assure](https://aka.ms/appassure), disponibile in FastTrack Center. In caso di problemi validi di compatibilità delle applicazioni sarà possibile collaborare gratuitamente con un tecnico Microsoft tramite App Assure per risolvere l'incompatibilità.
+Un altro strumento utile per valutare la compatibilità delle app di Windows 10 e Microsoft 365 Apps for enterprise è il programma [App Assure](https://aka.ms/appassure), disponibile in FastTrack Center. In caso di problemi validi di compatibilità delle applicazioni sarà possibile collaborare gratuitamente con un tecnico Microsoft tramite App Assure per risolvere l'incompatibilità.
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Uso continuativo di strumenti per i dati di diagnostica
 
-Desktop Analytics non è solo uno strumento che consente di passare a Windows 10 e Office 365 ProPlus. Dopo aver installato Windows 10 e Office 365 nel computer desktop, è possibile usarlo per gestire la distribuzione e gli aggiornamenti semestrali delle funzionalità per avere sempre le ultime versioni a disposizione.
+Desktop Analytics non è solo uno strumento che consente di passare a Windows 10 e Microsoft 365 Apps for enterprise. Dopo aver installato Windows 10 e Office 365 nel computer desktop, è possibile usarlo per gestire la distribuzione e gli aggiornamenti semestrali delle funzionalità per avere sempre le ultime versioni a disposizione.
 
 ## <a name="next-step"></a>Passaggio successivo 
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[Passaggio 2: conformità directory e rete](https://aka.ms/mdd2)
+## <a name="step-2-directory-and-network-readiness"></a>[Passaggio 2: conformità directory e rete](https://aka.ms/mdd2)

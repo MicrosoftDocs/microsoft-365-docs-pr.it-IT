@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Esaminare i criteri relativi ai servizi e all'infrastruttura basati sulla protezione delle informazioni per verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise.
-ms.openlocfilehash: 28eff02ea870dcfca7e2e32580ed6a3a9e8a9484
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633354"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631634"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Criteri uscita dell'infrastruttura di protezione delle informazioni
 
@@ -44,7 +44,7 @@ Se necessario, il [Passaggio 1](infoprotect-define-sec-infoprotect-levels.md) pu
 <a name="crit-infoprotect-step3"></a>
 ## <a name="required-increased-security-for-microsoft-365-is-configured"></a>Obbligatorio: è stato configurato un livello di sicurezza maggiore per Microsoft 365
 
-Sono state configurate le impostazioni seguenti per una [sicurezza maggiore di Office 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
+Sono state configurate le impostazioni seguenti per una [sicurezza maggiore di Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
 
 - Criteri di gestione delle minacce nel Centro sicurezza Microsoft 365
 - Impostazioni tenant aggiuntive di Exchange Online
@@ -82,11 +82,11 @@ I dispositivi Windows 10 Enterprise registrati hanno un criterio di Intune distr
 Se necessario, il [Passaggio 4](infoprotect-deploy-windows-information-protection.md) può aiutare a soddisfare questo requisito. 
 
 <a name="crit-infoprotect-step5"></a>
-## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>Facoltativo: Prevenzione perdita di dati (DLP) di Office 365
+## <a name="optional-data-loss-prevention-dlp-is-deployed"></a>Facoltativo: Prevenzione perdita di dati (DLP)
 
 Il set di criteri DLP è stato analizzato, testato e quindi distribuito - con le posizioni e le regole con condizioni e azioni- richieste dall'organizzazione per la protezione dei clienti e altri tipi di dati riservati e conformarsi alle normative e i requisiti locali e industriali.
 
-Il personale di sicurezza e conformità dati utilizza il dashboard di Sicurezza e conformità di Office 365 per monitorare gli eventi imprevisti del DLP.
+Il personale di sicurezza e conformità dati utilizza il dashboard di Sicurezza e conformità per monitorare gli eventi imprevisti del DLP.
 
 Se necessario, il [Passaggio 5](infoprotect-data-loss-prevention.md) può aiutare a soddisfare questo requisito. 
 

@@ -1,5 +1,5 @@
 ---
-title: Richieste degli interessati per Office 365 in base al GDPR e al CCPA
+title: Richieste degli interessati in base al GDPR e al CCPA
 description: Informazioni sui diritti dell'utente in base al GDPR e al CCPA e sul modo in cui Office 365 aiuta le aziende a trovare e a usare i dati in risposta alle richieste dell'interessato.
 keywords: Office 365, richiesta dell'interessato, Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR, CCPA
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7cd7490b941150bbc1a1f2a9a43aaaeeb6a72544
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 33723d5de94279e53a77434679c5406575dff3be
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409731"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632507"
 ---
-# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Office 365 nell'ambito del GDPR e del CCPA
+# <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati nell'ambito del GDPR e del CCPA
 
 ## <a name="introduction-to-dsrs"></a>Introduzione alle richieste DSR
 
@@ -47,7 +47,7 @@ Di seguito vengono fornite le definizioni dei termini del GDPR importanti per la
 - **Dati personali e interessato:** tutte le informazioni concernenti una persona fisica identificata o identificabile ("interessato"). Una persona fisica è identificabile se può essere identificata, direttamente o indirettamente, in particolare facendo riferimento a un identificatore (ad esempio un nome, un numero di identificazione, dati di posizione o un identificatore online) o a uno o più fattori relativi all'identità fisica, fisiologica, genetica, mentale, economica, culturale o sociale di tale persona fisica.
 - **Responsabile:** una persona fisica o giuridica, un'autorità pubblica o altro ente che si occupa del trattamento dei dati personali per conto del titolare.
 - **Dati del cliente:** tutti i dati, compresi file di testo, audio, video o immagini e software, forniti a Microsoft dal cliente o per suo conto attraverso i servizi aziendali. I dati dei clienti includono (1) informazioni che consentono l'identificazione personale degli utenti finali (ad esempio, nomi utente e informazioni di contatto in Azure Active Directory) e contenuti per i clienti che un cliente stesso carica o crea in servizi specifici (ad esempio, contenuti per i clienti in un documento di Word o Excel oppure nel testo di un messaggio di posta elettronica di Exchange Online; contenuti per i clienti aggiunti a un sito di SharePoint Online oppure salvati in un account di OneDrive for Business).
-- **Log generati dal sistema:** i log e i dati correlati generati da Microsoft che consentono a Microsoft di offrire servizi aziendali agli utenti. I log generati dal sistema contengono principalmente dati presentati con l'uso di pseudonimi come un identificatore univoco. In genere un numero generato dal sistema non può identificare individualmente una singola persona ma viene usato per fornire servizi aziendali agli utenti. I log generati dal sistema possono anche contenere informazioni identificabili riguardanti gli utenti finali, ad esempio un nome utente.
+- **Log generati dal sistema:** i log e i dati correlati generati da Microsoft che consentono a Microsoft di offrire servizi aziendali agli utenti. I log generati dal sistema contengono principalmente dati associati a pseudonimi come gli identificatori univoci, cioè numeri generati dal sistema. In genere un identificatore univoco non è sufficiente per identificare una persona ma viene usato per fornire servizi aziendali agli utenti. I log generati dal sistema possono anche contenere informazioni identificabili riguardanti gli utenti finali, ad esempio un nome utente.
 
 ### <a name="how-to-use-this-guide"></a>Come usare questa guida
 
@@ -67,7 +67,7 @@ I servizi di Microsoft Office 365 sono disponibili anche nei seguenti ambienti c
 
 ### <a name="hybrid-deployments"></a>Distribuzioni ibride
 
-L'organizzazione di Office 365 può comprendere offerte di Microsoft che sono una combinazione di servizi basati sul cloud e prodotti server in locale. In generale, una distribuzione ibrida è la condivisione di account utente (gestione delle identità) e risorse (come cassette postali, siti Web e dati) presenti nel cloud e in locale. Gli scenari ibridi comuni includono:
+L'organizzazione può comprendere offerte di Microsoft che sono una combinazione di servizi basati sul cloud e prodotti server in locale. In generale, una distribuzione ibrida è la condivisione di account utente (gestione delle identità) e risorse (come cassette postali, siti Web e dati) presenti nel cloud e in locale. Gli scenari ibridi comuni includono:
 
 - Distribuzioni ibride di Exchange, dove alcuni utenti hanno cassette postali in locale e altri utenti hanno cassette postali di Exchange Online.
 - Distribuzioni ibride di SharePoint, dove server del sito e file server sono in locale e gli account di OneDrive for Business sono in Office 365.
@@ -88,11 +88,11 @@ Le indicazioni per rispondere alle richieste DSR per i dati del cliente si divid
 
 Per determinare dove cercare i dati personali o cosa cercare, è utile identificare le applicazioni di Office 365 che gli utenti dell'organizzazione possono usare per creare e archiviare i dati in Office 365. Sapere questo circoscrive le applicazioni di Office 365 che rientrano nell'ambito di una DSR e aiuta a determinare come cercare e accedere ai dati personali correlati a una DSR. In particolare, questo significa che è possibile usare lo strumento Ricerca Contenuto o, se è necessario, la funzionalità integrata dell'applicazione in cui sono stati creati i dati.
 
-Un modo rapido per identificare le applicazioni di Office 365 usate nell'organizzazione per creare i dati dei clienti consiste nel determinare quali applicazioni sono incluse nell'abbonamento a Office 365 dell'organizzazione. È possibile a tal fine accedere agli account utente nel portale di amministrazione di Office 365 e cercare le informazioni sulla licenza del prodotto. Vedere [Assegnare licenze agli utenti](../admin/manage/assign-licenses-to-users.md).
+Un modo rapido per identificare le applicazioni di Office 365 usate nell'organizzazione per creare i dati dei clienti consiste nel determinare quali applicazioni sono incluse nell'abbonamento a Microsoft 365 per le aziende. È possibile a tal fine accedere agli account utente nel portale di amministrazione di Office 365 e cercare le informazioni sulla licenza del prodotto. Vedere [Assegnare licenze agli utenti](../admin/manage/assign-licenses-to-users.md).
 
 ## <a name="using-the-content-search-ediscovery-tool-to-respond-to-dsrs"></a>Utilizzo dello strumento Ricerca contenuto di eDiscovery per rispondere alle richieste DSR
 
-Quando si cercano dati personali in un grande set di dati creati e archiviati dall'organizzazione con Office 365, è opportuno prima di tutto considerare quali applicazioni potrebbero essere state usate con maggiore probabilità per creare i dati che si stanno cercando. Microsoft stima che oltre il 90% dei dati di un'organizzazione archiviati in Office 365 venga creato in Word, Excel, PowerPoint, OneNote e Outlook. I documenti creati in queste applicazioni di Office, anche se acquistate tramite Office 365 ProPlus o una licenza di SharePoint Online, vengono molto probabilmente archiviati in un sito di SharePoint Online, in un account utente di OneDrive for Business o nella cassetta postale di Exchange Online di un utente. Ciò significa che è possibile usare lo strumento Ricerca contenuto di eDiscovery per cercare (ed eseguire altre azioni correlate alle DSR) nei siti di SharePoint Online, negli account OneDrive for Business e nelle cassette postali di Exchange Online (inclusi i siti e le cassette postali associati a Gruppi di Office 365, Microsoft Teams ed EDU Assignments) per trovare documenti ed elementi della cassetta postale che potrebbero essere rilevanti per la DSR che si sta analizzando. È possibile usare lo strumento Ricerca contenuto anche per individuare dati di clienti creati in altre applicazioni di Office 365.
+Quando si cercano dati personali in un grande set di dati creati e archiviati dall'organizzazione con Office 365, è opportuno prima di tutto considerare quali applicazioni potrebbero essere state usate con maggiore probabilità per creare i dati che si stanno cercando. Microsoft stima che oltre il 90% dei dati di un'organizzazione archiviati in Office 365 venga creato in Word, Excel, PowerPoint, OneNote e Outlook. I documenti creati in queste applicazioni di Office, anche se acquistate tramite Microsoft 365 Apps for enterprise o una licenza perpetua di Office, vengono molto probabilmente archiviati in un sito di SharePoint Online, in un account utente di OneDrive for Business o nella cassetta postale di Exchange Online di un utente. Ciò significa che è possibile usare lo strumento Ricerca contenuto di eDiscovery per cercare (ed eseguire altre azioni correlate alle DSR) nei siti di SharePoint Online, negli account OneDrive for Business e nelle cassette postali di Exchange Online (inclusi i siti e le cassette postali associati a Gruppi di Microsoft 365, Microsoft Teams ed EDU Assignments) per trovare documenti ed elementi della cassetta postale che potrebbero essere rilevanti per la DSR che si sta analizzando. È possibile usare lo strumento Ricerca contenuto anche per individuare dati di clienti creati in altre applicazioni di Office 365.
 
 Nella tabella seguente sono elencate le applicazioni di Office 365 che gli utenti usano per creare contenuti creati dai clienti e che possono essere individuati con Ricerca Contenuto. In questa sezione della Guida DSR sono disponibili informazioni su come individuare, accedere, esportare ed eliminare i dati creati con le applicazioni di Office 365.
 
@@ -119,7 +119,7 @@ Il primo passaggio per rispondere a un DSR consiste nell'individuare i dati pers
 
 Come indicato in precedenza, Microsoft stima che oltre il 90% dei dati di un'organizzazione venga creato con applicazioni di Office, ad esempio Word ed Excel. Ciò significa che è possibile usare Ricerca contenuto nel Centro ricerca e conformità per cercare i dati più pertinenti alla richiesta DSR.
 
-Questa guida presuppone che l'amministratore o la persona che sta cercando i dati personali che potrebbero essere utili a una richiesta DSR abbia familiarità o esperienza con lo strumento Ricerca contenuto nel Centro sicurezza e conformità. Per indicazioni generali sull'uso di Ricerca contenuto, vedere [Ricerca contenuto in Office 365](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Assicurarsi che la persona che esegue le ricerche disponga delle autorizzazioni necessarie nel Centro sicurezza e conformità. Questa persona deve essere aggiunta come membro del gruppo di ruoli Manager di eDiscovery nel Centro sicurezza e conformità; vedere [Assegnare autorizzazioni nel Centro sicurezza e conformità di Office 365](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Prendere in considerazione l'idea di aggiungere altre persone nell'organizzazione che sono coinvolte nell'analisi delle richieste DSR al gruppo di ruoli Manager di eDiscovery, affinché possano eseguire le azioni necessarie nello strumento Ricerca contenuto, ad esempio visualizzare l'anteprima ed esportare i risultati della ricerca. A meno che non vengano configurati limiti di conformità (come descritto [qui](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)), tenere tuttavia presente che un Manager eDiscovery può eseguire ricerche in tutti i percorsi di contenuti nell'organizzazione, inclusi quelli che potrebbero non essere correlati all'analisi della richiesta DSR.
+Questa guida presuppone che l'amministratore o la persona che sta cercando i dati personali che potrebbero essere utili a una richiesta DSR abbia familiarità o esperienza con lo strumento Ricerca contenuto nel Centro sicurezza e conformità. Per indicazioni generali sull'uso di Ricerca contenuto, vedere [Ricerca contenuto in Office 365](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Assicurarsi che la persona che esegue le ricerche disponga delle autorizzazioni necessarie nel Centro sicurezza e conformità. Questa persona deve essere aggiunta come membro del gruppo di ruoli Manager di eDiscovery nel Centro sicurezza e conformità; vedere [Assegnare autorizzazioni nel Centro sicurezza e conformità](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Prendere in considerazione l'idea di aggiungere altre persone nell'organizzazione che sono coinvolte nell'analisi delle richieste DSR al gruppo di ruoli Manager di eDiscovery, affinché possano eseguire le azioni necessarie nello strumento Ricerca contenuto, ad esempio visualizzare l'anteprima ed esportare i risultati della ricerca. A meno che non vengano configurati limiti di conformità (come descritto [qui](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)), tenere tuttavia presente che un Manager eDiscovery può eseguire ricerche in tutti i percorsi di contenuti nell'organizzazione, inclusi quelli che potrebbero non essere correlati all'analisi della richiesta DSR.
 
 Dopo avere trovato i dati, è quindi possibile eseguire un'azione specifica per soddisfare la richiesta da parte dell'interessato.
 
@@ -130,9 +130,9 @@ Dopo avere trovato i dati, è quindi possibile eseguire un'azione specifica per 
 
 Con lo strumento Ricerca contenuto è possibile cercare i tipi seguenti di percorsi di contenuti.
 
-- Cassette postali di Exchange Online. Questo include le cassette postali associate a Gruppi di Office 365 e Microsoft Teams
+- Cassette postali di Exchange Online. Questo include le cassette postali associate a Gruppi di Microsoft 365 e Microsoft Teams
 - Cartelle pubbliche di Exchange Online
-- Siti SharePoint Online. Questo include i siti associati a Gruppi di Office 365 e Microsoft Teams
+- Siti SharePoint Online. Questo include i siti associati a Gruppi di Microsoft 365 e Microsoft Teams
 - Account OneDrive for Business
 
 >[!NOTE]
@@ -142,7 +142,7 @@ Con lo strumento Ricerca contenuto è possibile cercare i tipi seguenti di perco
 
 - Iniziare la ricerca di tutti i percorsi di contenuti nell'organizzazione (che è possibile cercare con una singola ricerca) per determinare rapidamente quali percorsi di contenuti contengono elementi corrispondenti alla query di ricerca. È quindi possibile eseguire di nuovo la ricerca e restringere l'ambito di ricerca alle posizioni specifiche che contengono elementi rilevanti.
 - Usare le statistiche della ricerca per identificare i percorsi principali che contengono gli elementi che corrispondono alla query di ricerca. Vedere [Visualizzare statistiche delle parole chiave per i risultati di Ricerca contenuto](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
-- Eseguire ricerche nel log di controllo di Office 365 sulle attività recenti in file e cartelle eseguite dall'utente oggetto del DSR. La ricerca nel log di controllo restituisce un elenco di record di controllo che contiene il nome e la posizione delle risorse con cui l'utente ha interagito di recente. Potrebbe essere possibile usare queste informazioni per creare una query di ricerca contenuto. Vedere [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
+- Eseguire ricerche nel log di controllo sulle attività recenti in file e cartelle eseguite dall'utente oggetto del DSR. La ricerca nel log di controllo restituisce un elenco di record di controllo che contiene il nome e la posizione delle risorse con cui l'utente ha interagito di recente. Potrebbe essere possibile usare queste informazioni per creare una query di ricerca contenuto. Vedere [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 #### <a name="building-search-queries-to-find-personal-data"></a>Creare query di ricerca per trovare dati personali
 
@@ -246,7 +246,7 @@ Gli elementi indicizzati parzialmente, detti anche *elementi non indicizzati*, s
 
 ##### <a name="export-all-partially-indexed-items"></a>Esportare tutti gli elementi parzialmente indicizzati
 
-Si esportano i risultati di una ricerca contenuto e degli elementi parzialmente indicizzati dal percorso di contenuto in cui sono state eseguite ricerche. È anche possibile esportare solo gli elementi indicizzati parzialmente. È quindi possibile aprirle nell'applicazione nativa ed esaminare il contenuto. È necessario usare questa opzione per esportare gli elementi di SharePoint Online e OneDrive for Business. Vedere [Esportare i risultati di Ricerca contenuto dal Centro sicurezza e conformità di Office 365](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278).
+Si esportano i risultati di una ricerca contenuto e degli elementi parzialmente indicizzati dal percorso di contenuto in cui sono state eseguite ricerche. È anche possibile esportare solo gli elementi indicizzati parzialmente. È quindi possibile aprirle nell'applicazione nativa ed esaminare il contenuto. È necessario usare questa opzione per esportare gli elementi di SharePoint Online e OneDrive for Business. Vedere [Esportare i risultati di Ricerca contenuto dal Centro sicurezza e conformità](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278).
 
 ##### <a name="export-a-specific-set-of-partially-indexed-items-from-mailboxes"></a>Esportare un set specifico di elementi parzialmente indicizzati dalle cassette postali
 
@@ -449,7 +449,7 @@ Per esportare e scaricare gli elementi:
 
 Al termine del processo di esportazione, è possibile accedere ai file nel percorso del computer locale in cui sono stati scaricati. I risultati di una ricerca di contenuto vengono scaricati in una cartella che ha lo stesso nome della Ricerca contenuto. I documenti di siti vengono copiati in una sottocartella denominata **SharePoint**. Gli elementi della cassetta postale vengono copiati in una sottocartella denominata **Exchange**.
 
-Per le istruzioni dettagliate, vedere [Esportare i risultati di Ricerca contenuto dal Centro sicurezza e conformità di Office 365](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278).
+Per le istruzioni dettagliate, vedere [Esportare i risultati di Ricerca contenuto dal Centro sicurezza e conformità](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278).
 
 ### <a name="downloading-documents-and-lists-from-sharepoint-online-and-onedrive-for-business"></a>Download di documenti ed elenchi da SharePoint Online e OneDrive for Business
 
@@ -556,7 +556,7 @@ Ecco una breve panoramica del processo:
 1. Creare ed eseguire una ricerca contenuto per trovare gli elementi che si vogliono eliminare dalla cassetta postale utente. Potrebbe essere necessario eseguire di nuovo la ricerca in modo da limitare i risultati della ricerca in modo che vengano restituiti solo gli elementi che si vogliono eliminare nei risultati della ricerca.
 2. Usare il comando **New-ComplianceSearchAction** **-Purge** in PowerShell di Office 365 per eliminare temporaneamente gli elementi restituiti dalla Ricerca contenuto creata nel passaggio precedente.
 
-Per istruzioni dettagliate, vedere [Cercare ed eliminare messaggi di posta elettronica nell'organizzazione di Office 365](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a).
+Per istruzioni dettagliate, vedere [Cercare ed eliminare messaggi di posta elettronica nell'organizzazione](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a).
 
 #### <a name="hard-delete-mailbox-items"></a>Eliminare definitivamente elementi della cassetta postale
 
@@ -575,15 +575,15 @@ L'organizzazione potrebbe determinare che l'eliminazione definitiva degli elemen
 
 ## <a name="deleting-a-user"></a>Eliminazione di un utente
 
-Oltre all'eliminazione dei dati personali in risposta a una richiesta di eliminazione DSR, è possibile soddisfare il " diritto all'oblio" dell'interessato eliminandone l'account utente di Office 365. Ecco alcuni motivi per cui si potrebbe voler eliminare un utente:
+Oltre all'eliminazione dei dati personali in risposta a una richiesta di eliminazione DSR, è possibile soddisfare il "diritto all'oblio" dell'interessato eliminandone l'account utente. Ecco alcuni motivi per cui si potrebbe voler eliminare un utente:
 
 - L'interessato ha lasciato o è in procinto di lasciare l'organizzazione.
 - L'interessato ha chiesto di eliminare i log generati dal sistema che sono stati raccolti sul suo conto. Esempi di dati raccolti nei log generati dal sistema includono i dati di utilizzo dei servizi e delle app di Office 365, le informazioni sulle ricerche eseguite dall'interessato e i dati generati per prodotto e servizi come prodotto della funzionalità di sistema e dell'interazione da parte di utenti o altri sistemi. Per altre informazioni, vedere [Parte 3. Risposta alle richieste DSR per log generati dal sistema](#part-3-responding-to-dsrs-for-system-generated-logs) in questa guida.
 - Impedire definitivamente all'interessato di accedere ai dati o di elaborarli in Office 365 (al contrario della limitazione di accesso temporanea con le modalità descritte nella sezione [Risposta alle richieste di restrizione DSR](#responding-to-dsr-restriction-requests)).
 
-Dopo avere eliminato un account utente di Office 365:
+Dopo avere eliminato un account utente:
 
-- L'utente non può più accedere a Office 365 o accedere a qualsiasi delle risorse di Office 365 dell'organizzazione, ad esempio l'account OneDrive for Business, i siti di SharePoint Online o la cassetta postale di Exchange Online.
+- L'utente non può più accedere a Office 365 o accedere a qualsiasi delle risorse di Microsoft dell'organizzazione, ad esempio l'account OneDrive for Business, i siti di SharePoint Online o la cassetta postale di Exchange Online.
 - I dati personali, ad esempio indirizzo e-mail, alias, numero di telefono e indirizzo postale, associati all'account utente vengono eliminati
 - Alcune app di Office 365 rimuovono le informazioni sull'utente. Ad esempio, in Microsoft Flow, l'utente eliminato viene rimosso dall'elenco dei proprietari per un passaggio condiviso.
 - I log generati dal sistema relativi all'interessato verranno eliminati 30 giorni dopo la data di eliminazione dell'account utente. Per ulteriori informazioni, vedere la sezione [Eliminazione di log generati dal sistema](#deleting-system-generated-logs).
@@ -592,14 +592,14 @@ Dopo avere eliminato un account utente di Office 365:
 >Dopo avere eliminato un account utente, l'utente perde la possibilità di accedere a Office 365 e la possibilità di accedere a tutti i prodotti o i servizi a cui prima si affidava per l'account di lavoro o di istruzione. Questo utente non è inoltre più in grado di avviare richieste DSR tramite Microsoft direttamente nei casi in cui Microsoft è il titolare del trattamento dei dati. Per altre informazioni, vedere la sezione [Prodotti e servizi autenticati con un ID di organizzazione per cui Microsoft è titolare del trattamento dei dati](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) nella parte 4 di questa guida.
 
 >[!NOTE]
->Se si è un cliente attualmente coinvolto in una migrazione di FastTrack, eliminando l'account utente di Office 365 non sarà eliminata la copia dei dati utilizzata dal team di Microsoft FastTrack, che viene conservata con il solo scopo di completare la migrazione. Se durante la migrazione si desidera che il team di Microsoft FastTrack elimini anche la copia dei dati, è possibile [inviare una richiesta](https://go.microsoft.com/fwlink/?linkid=874544). In condizioni normali di attività, Microsoft FastTrack eliminerà tutte le copie dei dati una volta completata la migrazione.
+>Se si è un cliente attualmente coinvolto in una migrazione di FastTrack, eliminando l'account utente non sarà eliminata la copia dei dati utilizzata dal team di Microsoft FastTrack, che viene conservata con il solo scopo di completare la migrazione. Se durante la migrazione si desidera che il team di Microsoft FastTrack elimini anche la copia dei dati, è possibile [inviare una richiesta](https://go.microsoft.com/fwlink/?linkid=874544). In condizioni normali di attività, Microsoft FastTrack eliminerà tutte le copie dei dati una volta completata la migrazione.
 
 Come con le eliminazioni temporanea e definitiva dei dati descritte nella sezione precedente relativa all'eliminazione dei dati personali, anche quando si elimina un account utente esiste uno stato di eliminazione temporanea e uno di eliminazione definitiva.
 
 - Quando si elimina inizialmente un account utente (eliminando l'utente nell'interfaccia di amministrazione o nel portale di Azure), questo viene eliminato temporaneamente e spostato nel Cestino in Azure per un tempo massimo di 30 giorni. A questo punto, è possibile ripristinare l'account utente.
 - Se si elimina definitivamente l'account utente, questo viene rimosso dal Cestino in Azure. L'account utente a questo punto non può più essere ripristinato e tutti i dati ad esso associati vengono rimossi definitivamente dal cloud Microsoft. I log generati dal sistema relativi all'interessato verranno eliminati dopo l'eliminazione definitiva dell'account utente.
 
-Ecco il processo ad alto livello per l'eliminazione di un utente dall'organizzazione Office 365.
+Ecco il processo ad alto livello per l'eliminazione di un utente dall'organizzazione.
 
 1. Accedere all'interfaccia di amministrazione o al portale di Azure e individuare l'utente.
 
@@ -617,7 +617,7 @@ Non è possibile eliminare definitivamente un utente tramite l'interfaccia di am
 Una cosa da capire quando si elimina un utente è quello che accade alla cassetta postale di Exchange Online dell'utente. Dopo l'eliminazione dell'account utente (al passaggio 3 nel processo precedente), la cassetta postale dell'utente eliminato non viene eliminata automaticamente da Office 365. Sono necessari fino a 60 giorni dopo l'eliminazione definitiva dell'account utente per rimuoverlo definitivamente da Office 365. Ecco il ciclo di vita della cassetta postale dopo che l'account utente viene eliminato e una descrizione dello stato dei dati della cassetta postale durante quel periodo:
 
 - **Dal giorno 1 al giorno 30**: la cassetta postale può essere ripristinata completamente ripristinando l'account utente eliminato temporaneamente.
-- **Dal giorno 31 al giorno 60**: per 30 giorni dopo la data di eliminazione definitiva dell'account utente, un amministratore dell'organizzazione può recuperare i dati della cassetta postale e importarli in un'altra cassetta postale. Le organizzazioni di Office 365 possono quindi recuperare i dati delle cassette postali, se necessario.
+- **Dal giorno 31 al giorno 60**: per 30 giorni dopo la data di eliminazione definitiva dell'account utente, un amministratore dell'organizzazione può recuperare i dati della cassetta postale e importarli in un'altra cassetta postale. Le organizzazioni possono quindi recuperare i dati delle cassette postali, se necessario.
 - **Dal giorno 61 al giorno 90**: un amministratore non può più recuperare i dati della cassetta postale. Tali dati verranno contrassegnati per la rimozione permanente e dovranno trascorrere fino a ulteriori 30 giorni perché i dati della cassetta postale vengano rimossi da Office 365.
 
 Se il ciclo di vita della cassetta postale non corrisponde ai requisiti dell'organizzazione per rispondere a una richiesta di eliminazione DSR, è possibile [contattare il Supporto tecnico Microsoft](https://support.microsoft.com/) *dopo* avere eliminato definitivamente l'account utente e richiedere a Microsoft di avviare manualmente la rimozione permanente dei dati della cassetta postale. Questo processo per rimuovere definitivamente i dati delle cassette postali inizia automaticamente dopo il giorno 61 nel ciclo di vita, pertanto non ci sarebbe alcun motivo di contattare Microsoft dopo questo periodo nel ciclo di vita.
@@ -733,7 +733,7 @@ Per esportare i dati corrispondenti al titolare dell'azienda, al personale e ai 
 
 Gli amministratori e i titolari dell'azienda possono anche eliminare i dati dei clienti tramite il portale sulla privacy Business Center. Vedere [Esportare o eliminare i dati degli utenti con il portale sulla privacy Business Center](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
 
-Inoltre, è possibile eliminare il titolare dell'azienda e i dati del personale, nonché il corrispondente account utente di Office 365. Vedere la sezione [Eliminazione di un utente](#deleting-a-user).
+Inoltre, è possibile eliminare il titolare dell'azienda e i dati del personale, nonché il corrispondente account utente. Vedere la sezione [Eliminazione di un utente](#deleting-a-user).
 
 #### <a name="listings"></a>Listings
 
@@ -853,7 +853,7 @@ Attività memorizza le informazioni generate dagli insegnanti e dagli studenti. 
 
 I file degli studenti associati a un invio per Attività vengono archiviati in una raccolta documenti (denominata **Lavoro degli studenti**) e i file associati ad Attività creati dagli insegnanti (e accessibili per gli studenti) vengono archiviati in un'altra raccolta documenti (denominata **File di classe**). Entrambe le raccolte documenti si trovano nel sito di SharePoint del team di classe corrispondente.
 
-Un amministratore può usare lo strumento ricerca contenuto nel Centro sicurezza & conformità di Office 365 per cercare i file degli studenti (nelle raccolte lavoro studente e file della classe) correlati agli invii di assegnazioni e file relativi alle assegnazioni. Ad esempio, un amministratore può eseguire ricerche in tutti i siti di SharePoint dell'organizzazione e usare il nome dello studente e il nome della classe o dell'attività nella query di ricerca per trovare i dati rilevanti per una richiesta dell'interessato.
+Un amministratore può usare lo strumento ricerca contenuto nel Centro sicurezza & conformità per cercare i file degli studenti (nelle raccolte lavoro studente e file della classe) correlati agli invii di assegnazioni e file relativi alle assegnazioni. Ad esempio, un amministratore può eseguire ricerche in tutti i siti di SharePoint dell'organizzazione e usare il nome dello studente e il nome della classe o dell'attività nella query di ricerca per trovare i dati rilevanti per una richiesta dell'interessato.
 
 Analogamente, un amministratore può cercare i file dei docenti correlati alle attività per i file che un docente ha distribuito agli studenti. Ad esempio, un amministratore può eseguire ricerche in tutti i siti di SharePoint dell'organizzazione e usare il nome del docente studente e il nome della classe o dell'attività nella query di ricerca per trovare i dati rilevanti per una richiesta dell'interessato.
 
@@ -914,7 +914,7 @@ La possibilità di un amministratore di aggiungersi come proprietario di un flus
 
 - Licenza per Flow/PowerApps piano 2 (a pagamento o versione di valutazione)
 
-- [Amministratore globale di Office 365\ ](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
+- [Amministratore globale\ ](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
 
     oppure
 
@@ -926,7 +926,7 @@ Per aggiungersi come proprietario di un flusso:
 
 1. Passare a <https://admin.flow.microsoft.com>.
 2. Accedere con le credenziali di Office 365.
-3. Nella pagina **Environments** fare clic sull'ambiente per i flussi a cui si vuole accedere. Le organizzazioni di Office 365 hanno un ambiente predefinito.
+3. Nella pagina **Environments** fare clic sull'ambiente per i flussi a cui si vuole accedere. Le organizzazioni hanno un ambiente predefinito.
 4. Nella pagina dell'ambiente selezionato fare clic su **Risorse** e quindi su **Flussi**. Viene visualizzato un elenco di tutti i flussi nell'ambiente.
 5. Fare clic su **Visualizza dettagli** per il flusso a cui ci si desidera aggiungere come membri.
 6. In **Proprietari** fare clic su **Gestisci condivisione**.
@@ -1037,7 +1037,7 @@ Le sezioni seguenti illustrano come usare la funzionalità in-app di Microsoft P
 
 #### <a name="discover"></a>Individuazione
 
-I piani di Planner sono associati a un gruppo di Office 365 e i file per i Gruppi di Office 365 sono archiviati in un sito di SharePoint Online associato per il gruppo. Ciò significa che è possibile usare Ricerca contenuto per trovare i file di Planner eseguendo una ricerca nel sito del gruppo di Office 365. A tale scopo, è necessario avere l'URL del gruppo di Office 365. Vedere [Eseguire una ricerca nei Gruppi di Office 365 e Microsoft Teams](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) nell'argomento della Guida "Ricerca di contenuto in Office 365" per suggerimenti su come ottenere informazioni sui gruppi di Office 365 per cercare file di Planner nel sito di SharePoint Online corrispondente.
+I piani di Planner sono associati a un gruppo di Microsoft 365 e i file per i Gruppi di Microsoft 365 sono archiviati in un sito di SharePoint Online associato per il gruppo. Ciò significa che è possibile usare Ricerca contenuto per trovare i file di Planner eseguendo una ricerca nel sito del gruppo di Microsoft 365. A tale scopo, è necessario avere l'URL del gruppo di Microsoft 365. Vedere [Ricerca di gruppi di Microsoft Teams e Microsoft 365](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) nella sezione di aiuto relativa a “Ricerca di contenuto in Office 356” per ottenere informazioni sui Gruppi di Microsoft 365 che consentono di cercare i file di Planner nella pagina di SharePoint corrispondente.
 
 #### <a name="access"></a>Access
 
@@ -1088,7 +1088,7 @@ PowerApps è un servizio per la creazione di app che può essere condiviso e usa
 Per semplificare una richiesta DSR correlata a PowerApps, è possibile usare le operazioni di amministrazione esposte nell'[Interfaccia di amministrazione di PowerApps](https://admin.powerapps.com/) e i [cmdlet di PowerShell per amministratori di PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).  Per accedere a questi strumenti, è necessario disporre di un account con le autorizzazioni seguenti:
 
 - Una licenza di Piano 2 di PowerApps a pagamento o una licenza di valutazione di Piano 2 d PowerApps. È possibile iscriversi [qui](https://web.powerapps.com/trial)per ottenere una licenza di valutazione di 30 giorni.
-- [Amministratore globale di Office 365](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) o
+- [Amministratore globale](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) o
 - [Amministratore globale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
 Per altre informazioni su come trovare i dati personali, vedere [Discover PowerApps personal data](https://go.microsoft.com/fwlink/?linkid=871880) (Individuare i dati personali in PowerApps).
@@ -1262,7 +1262,7 @@ Le sezioni seguenti illustrano come usare la funzionalità in-app di Microsoft Y
 
 #### <a name="discover"></a>Individuazione
 
-Dall'interfaccia di amministrazione di Yammer, un amministratore verificato, ossia un amministratore globale o un amministratore verificato di Office 365 configurato in Yammer, può esportare i dati relativi a un determinato utente. L'esportazione include i messaggi e i file pubblicati e modificati dall'utente e le informazioni sugli argomenti e i gruppi creati dall'utente. Quando si esegue un'esportazione di dati specifici dell'utente, l'amministratore riceve anche un messaggio di posta con i dati di attività account dell'utente che possono essere comunicati a quest'ultimo, se lo desidera. Per istruzioni dettagliate, vedere [Yammer Enterprise: privacy](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
+Dall'interfaccia di amministrazione di Yammer, un amministratore verificato, ossia un amministratore globale o un amministratore verificato configurato in Yammer, può esportare i dati relativi a un determinato utente. L'esportazione include i messaggi e i file pubblicati e modificati dall'utente e le informazioni sugli argomenti e i gruppi creati dall'utente. Quando si esegue un'esportazione di dati specifici dell'utente, l'amministratore riceve anche un messaggio di posta con i dati di attività account dell'utente che possono essere comunicati a quest'ultimo, se lo desidera. Per istruzioni dettagliate, vedere [Yammer Enterprise: privacy](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf).
 
 Le esportazioni specifiche dell'utente sono relative a una singola rete e di conseguenza, se l'utente appartiene a una rete esterna a Yammer, l'amministratore deve esportare i dati anche per la rete esterna, oltre che per quella interna.
 
@@ -1330,7 +1330,7 @@ Per assegnare le autorizzazioni di proprietario o di amministratore a un sito di
 
 #### <a name="onedrive-for-business"></a>OneDrive for Business
 
-Un amministratore globale di Office 365 può accedere a un account OneDrive for Business dell'utente nell'interfaccia di amministratore di Office 365.
+Un amministratore globale può accedere a un account OneDrive for Business dell'utente.
 
 1. Accedere a Office 365 con le credenziali di amministratore globale.
 2. Passare all’interfaccia di amministrazione.
@@ -1340,7 +1340,7 @@ Un amministratore globale di Office 365 può accedere a un account OneDrive for 
 
 ### <a name="gaining-access-to-an-exchange-online-mailbox-to-make-changes-to-data"></a>Ottenere l'accesso a una cassetta postale di Exchange Online per apportare modifiche ai dati
 
-Un amministratore globale di Office 365 può assegnare a se stesso le autorizzazioni necessarie per aprire e modificare (o eliminare) gli elementi nella cassetta postale di un altro utente, come se ne fosse proprietario. Un amministratore globale può anche assegnare le autorizzazioni a un altro utente. In particolare, l'amministratore globale deve aggiungere l'autorizzazione di **lettura e gestione**, che corrisponde all'accesso completo in Exchange Online. Per informazioni dettagliate, vedere:
+Un amministratore globale può assegnare a se stesso le autorizzazioni necessarie per aprire e modificare (o eliminare) gli elementi nella cassetta postale di un altro utente, come se ne fosse proprietario. Un amministratore globale può anche assegnare le autorizzazioni a un altro utente. In particolare, l'amministratore globale deve aggiungere l'autorizzazione di **lettura e gestione**, che corrisponde all'accesso completo in Exchange Online. Per informazioni dettagliate, vedere:
 
 - [Assegnare le autorizzazioni per la cassetta postale a un altro utente in Office 365](https://support.office.com/article/Give-mailbox-permissions-to-another-user-in-Office-365-Admin-Help-1DBCF12F-A9DE-4D1D-B0B3-A227F8A736D8)
 - [Accedere alla cassetta postale di un'altra persona](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081)
@@ -1411,7 +1411,7 @@ Se in un secondo momento l'organizzazione determina che una restrizione non è p
 
 ### <a name="removing-the-license-for-an-office-365-application"></a>Rimozione di una licenza per un'applicazione di Office 365
 
-Come descritto in precedenza, per impostazione predefinita le licenze per tutte le applicazioni di Office 365 incluse nell'abbonamento a Office 365 dell'organizzazione sono assegnate a tutti gli utenti. Se è necessario limitare l'accesso ai dati oggetto di una richiesta DSR, un amministratore IT può usare il portale di amministrazione di Office 365 per disabilitare temporaneamente una licenza utente per un'applicazione. Se un utente prova a usare l'applicazione, riceverà una notifica di prodotto senza licenza o un messaggio che informa che non ha più accesso. Per ulteriori dettagli vedere [Rimuovere licenze dagli utenti in Office 365 per le aziende](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
+Come descritto in precedenza, per impostazione predefinita le licenze per tutte le applicazioni di Office 365 incluse nell'abbonamento a Microsoft 365 per le aziende sono assegnate a tutti gli utenti. Se è necessario limitare l'accesso ai dati oggetto di una richiesta DSR, un amministratore IT può usare il portale di amministrazione di Office 365 per disabilitare temporaneamente una licenza utente per un'applicazione. Se un utente prova a usare l'applicazione, riceverà una notifica di prodotto senza licenza o un messaggio che informa che non ha più accesso. Per ulteriori dettagli vedere [Rimuovere licenze dagli utenti in Office 365 per le aziende](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1).
 
 **Note:**
 
@@ -1430,7 +1430,7 @@ Un altro modo per rispondere a una richiesta di DSR per limitare l'elaborazione 
 Il modo più vantaggioso per disabilitare un servizio consiste nell'usare PowerShell di Office 365 e nel rimuovere le licenze corrispondenti per tutti gli utenti dell'organizzazione. In questo modo si impedisce a chiunque di accedere ai dati presenti in tale servizio. Per istruzioni dettagliate, vedere [Disattivare l'accesso ai servizi con PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell) e seguire le procedure per disabilitare i servizi di Office 365 per gli utenti da un unico piano di gestione delle licenze.
 
 >[!NOTE]
->Per Yammer, oltre a rimuovere la licenza di Yammer dagli account utente, è necessario anche disabilitare la possibilità per gli utenti di accedere a Yammer con le credenziali relative (applicando l'uso delle credenziali di Office 365). Per istruzioni dettagliate, vedere [Disattivare l'accesso a Yammer per gli utenti di Office 365](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a).
+>Per Yammer, oltre a rimuovere la licenza di Yammer dagli account utente, è necessario anche disabilitare la possibilità per gli utenti di accedere a Yammer con le credenziali relative (applicando l'uso delle credenziali di Office 365). Per istruzioni dettagliate, vedere [Disattivare l'accesso a Yammer per gli utenti di Microsoft 365](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a).
 
 ### <a name="temporarily-removing-data-from-sharepoint-online-or-onedrive-for-business-sites"></a>Rimozione temporanea dei dati dai siti di SharePoint Online o di OneDrive for Business
 
@@ -1438,7 +1438,7 @@ Un altro modo di limitare l'elaborazione dei dati personali consiste nel rimuove
 
 Poiché la maggior parte dei documenti di Office si trova in un sito di SharePoint Online o di OneDrive for Business, di seguito viene descritto il processo di alto livello per la rimozione dei documenti e la successiva reimportazione.
 
-1. Ottenere una copia del documento oggetto della richiesta di restrizione. Può essere necessario richiedere l'accesso al sito o rivolgersi all'amministratore globale di Office 365 o all'amministratore della raccolta di siti di inviare una copia del documento.
+1. Ottenere una copia del documento oggetto della richiesta di restrizione. Può essere necessario richiedere l'accesso al sito o rivolgersi all'amministratore globale o all'amministratore della raccolta di siti di inviare una copia del documento.
 2. Archiviare il documento in un percorso locale (ad esempio un file server o una condivisione file) oppure in un percorso diverso dal tenant di Office 365 nel cloud Microsoft.
 3. Eliminare definitivamente il documento originale da Office 365. Questo è un processo costituito da tre passaggi:
 
@@ -1562,7 +1562,7 @@ Per limitare il trattamento per un utente specifico, è possibile rimuoverne la 
 
 Se un interessato desidera essere rimosso da un report o da un insieme di report di Workplace Analytics, è possibile eliminare il report stesso. L'amministratore è tenuto a eliminare gli utenti dai dati dell'organizzazione utilizzati per generare il report, e a ricaricare i dati. Tutti i dati relativi all'utente vengono rimossi quando un account utente viene eliminato definitivamente da Azure Active Directory. 
 
-Per rimuovere i dati personali di un interessato, un amministratore globale di Office 365 può eseguire le operazioni seguenti: 
+Per rimuovere i dati personali di un interessato, un amministratore globale può eseguire le operazioni seguenti: 
 
 1. Rimuovere la licenza di Workplace Analytics dall'interessato.
 2. Eliminare la voce Azure Active Directory (AAD) per l'interessato. Per ulteriori informazioni, vedere [Eliminare un utente](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).
@@ -1627,7 +1627,7 @@ I "dati relativi al supporto" sono i dati inviati a Microsoft quando l'organizza
 
 Le parti 1-3 di questa guida si occupano di prodotti e servizi per i quali Microsoft funge da responsabile del trattamento dei dati per l'organizzazione, pertanto la funzionalità DSR viene resa disponibile all'amministratore del tenant. Ci sono varie circostanze in cui gli utenti dell'organizzazione possono usare il proprio account aziendale o dell'Istituto di istruzione (noto anche come "ID di Azure Active Directory" o "AAD") per accedere ai prodotti e ai servizi Microsoft per cui Microsoft è un titolare del trattamento dei dati. Per tutti i prodotti e i servizi di questo tipo, è necessario che gli utenti inizino a indirizzare le proprie richieste DSR direttamente a Microsoft e Microsoft soddisferà tali richieste direttamente all'utente. La progettazione, i prodotti e i servizi che interessano lo spazio di archiviazione del contenuto creato dall'utente consentono agli utenti di accedere, esportare, rettificare ed eliminare il contenuto creato dall'utente nell'ambito delle funzionalità intrinseche dei prodotti. Scenari in cui è possibile applicare questa procedura:
 
-- **Servizi online connessi opzionali:** Office 365 ProPlus rende disponibili per l'utente alcuni servizi online connessi opzionali. L'elenco di servizi e controlli relativi all'utente è fornito [qui](https://support.office.com/article/microsoft-s-other-connected-services-92c234f1-dc91-4dc1-925d-6c90fc3816d8). È possibile decidere se si desidera consentire agli utenti finali di usare questi servizi. Per altre informazioni, vedere [In che modo gli amministratori possono gestire i servizi di trattamento dei dati in Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/manage-controller-services-office-365-proplus). Se tali servizi opzionali trattano i dati personali, Microsoft è il titolare del trattamento dei dati per questi servizi.
+- **Servizi online connessi opzionali:** Microsoft 365 Apps for enterprise rende disponibili per l'utente alcuni servizi online connessi opzionali. L'elenco di servizi e controlli relativi all'utente è fornito [qui](https://support.office.com/article/microsoft-s-other-connected-services-92c234f1-dc91-4dc1-925d-6c90fc3816d8). È possibile decidere se si desidera consentire agli utenti finali di usare questi servizi. Per altre informazioni, vedere [In che modo gli amministratori possono gestire i servizi di trattamento dei dati in Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/manage-controller-services-office-365-proplus). Se tali servizi opzionali trattano i dati personali, Microsoft è il titolare del trattamento dei dati per questi servizi.
 - **Commenti e suggerimenti degli utenti**: se gli utenti scelgono di inviare commenti e suggerimenti su prodotti e servizi Microsoft, Microsoft è titolare del trattamento dei dati per tali commenti nella misura in cui contengono dati personali dell'utente. Microsoft risponde a qualsiasi richiesta dell'interessato per i commenti e i suggerimenti raccolti da Microsoft (inclusi quelli gestiti da responsabili secondari Microsoft) ad eccezione dei casi in cui Microsoft abbia indicato esplicitamente agli utenti di non includere dati personali dell'utente durante il processo di raccolta dei commenti. Eccezioni: se Microsoft ha indicato esplicitamente agli utenti di non includere dati personali durante il processo di raccolta dei commenti, Microsoft si basa su tale istruzione e presuppone che non sia stato specificato alcun dato personale. Gli utenti che hanno creato un account diverso con il provider di servizi di commenti e suggerimenti di terze parti devono gestire la richiesta DSR direttamente con tali provider.
 - **Autenticazione di Windows con l'account aziendale o dell'istituto di istruzione:** se l'organizzazione ha acquistato licenze di Windows e gli utenti eseguono l'autenticazione all'organizzazione Windows con il proprio account aziendale o dell'istituto di istruzione, Microsoft si comporta come titolare del trattamento dei dati.
 - **Prodotti o servizi acquistati dall'utente:** se si consente agli utenti, che agiscono singolarmente, di acquistare prodotti o servizi che usano AAD per l'autenticazione (ad esempio componenti aggiuntivi di Office add-on o applicazioni disponibili in Microsoft Store), Microsoft può essere un titolare del trattamento dei dati. Per tali prodotti o servizi Microsoft, gli utenti devono contattare direttamente Microsoft per avviare una richiesta DSR.
@@ -1647,9 +1647,9 @@ Se l'organizzazione o gli utenti che agiscono singolarmente hanno acquistato pro
 
 Per preparare l'organizzazione a svolgere indagini DSR tramite servizi di Office 365, tenere presente quanto segue:
 
-- Usare lo strumento di gestione dei casi DSR eDiscovery nel Centro sicurezza e conformità di Office 365 per gestire indagini DSR
+- Usare lo strumento di gestione dei casi DSR eDiscovery nel Centro sicurezza e conformità per gestire indagini DSR
 - Configurare i limiti di conformità per limitare l'ambito delle ricerche contenuto
-- Usare lo strumento di ricerca log di controllo di Office 365 nelle indagini DSR
+- Usare lo strumento di ricerca log di controllo nelle indagini DSR
 
 ### <a name="use-the-dsr-case-tool-to-manage-dsr-investigations"></a>Usare lo strumento di gestione dei casi DSR per gestire le indagini DSR
 
@@ -1659,9 +1659,9 @@ Per gestire le indagini DSR, è consigliabile usare lo strumento di gestione dei
 
 - Usare il predefinito per cercare tutto il contenuto correlato a uno specifico oggetto dei dati. Quando si crea un caso e si avvia la ricerca, vengono cercate i percorsi di contenuto:
 
-   - Tutte le cassette postali nell'organizzazione (comprese quelle associate a Microsoft Teams e Gruppi di Office 365)
+   - Tutte le cassette postali nell'organizzazione (comprese quelle associate a Microsoft Teams e Gruppi di Microsoft 365)
    - Tutti i siti di SharePoint Online e gli account di OneDrive for Business nell'organizzazione
-   - Tutti i siti di Microsoft Teams e i siti dei gruppi di Office 365 nell'organizzazione
+   - Tutti i siti di Microsoft Teams e i siti dei gruppi di Microsoft 365 nell'organizzazione
    - Tutte le cartelle pubbliche in Exchange Online
 
 - Modificare la query di ricerca predefinita ed eseguire nuovamente la ricerca per restringere i risultati della ricerca.
@@ -1674,7 +1674,7 @@ Per gestire le indagini DSR, è consigliabile usare lo strumento di gestione dei
 
 - Eliminare i casi in cui il processo di indagine DSR è completato. Vengono rimosse tutte le ricerche di contenuto e i processi di esportazione associati al caso.
 
-Per iniziare a usare i casi DSR, vedere [Gestire richieste dell'interessato per il GDPR con lo strumento dei casi DSR nel Centro sicurezza e conformità di Office 365](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c).
+Per iniziare a usare i casi DSR, vedere [Gestire richieste dell'interessato per il GDPR con lo strumento dei casi DSR nel Centro sicurezza e conformità](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c).
 
 >[!IMPORTANT]
 >Un amministratore di eDiscovery può visualizzare e gestire tutti i casi DSR nell'organizzazione. Per ulteriori informazioni sui diversi ruoli correlati a eDiscovery, vedere [Assegnare autorizzazioni eDiscovery a potenziali membri del caso](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions).
@@ -1694,7 +1694,7 @@ Ecco una panoramica generale su come implementare i limiti di conformità (con c
 >[!NOTE]
 >Attualmente non è necessario eseguire un ulteriore passaggio per OneDrive for Business e inviare una richiesta al supporto tecnico Microsoft per sincronizzare l'attributo con gli account di OneDrive for Business.
 
-4. Creare un gruppo di ruoli di amministratore nel Centro sicurezza e conformità di Office 365 per ogni limite di conformità. È consigliabile creare questi gruppi di ruoli copiando il gruppo di ruoli di responsabili eDiscovery predefiniti e quindi rimuovendo i ruoli in base alle esigenze.
+4. Creare un gruppo di ruoli di amministratore nel Centro sicurezza e conformità per ogni limite di conformità. È consigliabile creare questi gruppi di ruoli copiando il gruppo di ruoli di responsabili eDiscovery predefiniti e quindi rimuovendo i ruoli in base alle esigenze.
 
 5. Aggiungere membri a ognuno dei gruppi di ruoli specifici come Manager di eDiscovery. I membri sono le persone responsabili per le indagini e le risposte alle richieste DSR, in genere amministratori IT, responsabili della privacy dei dati e della conformità e rappresentanti delle risorse umane.
 
@@ -1702,7 +1702,7 @@ Ecco una panoramica generale su come implementare i limiti di conformità (con c
 
 Per istruzioni dettagliate, vedere [Set up compliance boundaries for eDiscovery investigations in Office 365](https://support.office.com/article/1b45c82f-26c8-44fb-9f3b-b45436fe2271) (Impostare i limiti di conformità per indagini eDiscovery in Office 365).
 
-### <a name="use-the-office-365-audit-log-search-tool-in-dsr-investigations"></a>Usare lo strumento di ricerca log di controllo di Office 365 nelle indagini DSR
+### <a name="use-the-audit-log-search-tool-in-dsr-investigations"></a>Usare lo strumento di ricerca log di controllo nelle indagini DSR
 
 Gli amministratori IT possono usare lo strumento di ricerca nel log di controllo in Centro sicurezza e conformità per identificare documenti, file e altre risorse di Office 365 che gli utenti hanno creato, modificato o eliminato oppure a cui hanno eseguito l'accesso. La ricerca di questo tipo di attività può essere utile nelle indagini DSR. In SharePoint Online e OneDrive for Business, ad esempio, gli eventi di controllo vengono registrati quando gli utenti eseguono queste attività:
 
@@ -1711,7 +1711,7 @@ Gli amministratori IT possono usare lo strumento di ricerca nel log di controllo
 - Spostamento di un file
 - Upload o download di un file
 
-È possibile eseguire una ricerca nel log di controllo per attività specifiche, tipi di attività, attività eseguite da un utente specifico e altri criteri di ricerca. Oltre alle attività di SharePoint Online e OneDrive for Business, è anche possibile cercare le attività in flussi, Power BI e Microsoft Teams. I record di controllo vengono conservati per 90 giorni. Di conseguenza, non sarà possibile cercare le attività utente che si sono verificate più di 90 giorni fa. Per un elenco completo delle attività controllate e come eseguire una ricerca nel log di controllo, vedere [Eseguire ricerche nel log di controllo nel centro sicurezza & conformità di Office 365](search-the-audit-log-in-security-and-compliance.md).
+È possibile eseguire una ricerca nel log di controllo per attività specifiche, tipi di attività, attività eseguite da un utente specifico e altri criteri di ricerca. Oltre alle attività di SharePoint Online e OneDrive for Business, è anche possibile cercare le attività in flussi, Power BI e Microsoft Teams. I record di controllo vengono conservati per 90 giorni. Di conseguenza, non sarà possibile cercare le attività utente che si sono verificate più di 90 giorni fa. Per un elenco completo delle attività controllate e come eseguire una ricerca nel log di controllo, vedere [Eseguire ricerche nel log di controllo nel centro sicurezza & conformità](search-the-audit-log-in-security-and-compliance.md).
 
 >[!TIP]
 >Per aggirare il limite di 90 giorni descritto in precedenza e mantenere una cronologia di esecuzione dei record di controllo dell'organizzazione, è possibile esportare periodicamente tutte le attività (ad esempio ogni 30 giorni) per disporre costantemente dei record di controllo dell'organizzazione.
@@ -1727,7 +1727,7 @@ La tabella seguente elenca le modifiche alla Guida DSR di Office 365 dalla sua p
 |12/11/2018| Tutto| Correzione di segnalibri e collegamenti con errore ad argomenti esterni.|
 |1/9/2019| StaffHub |Nella sezione Eliminazione è stata aggiornata la descrizione di quello che succede quando un account utente viene eliminato definitivamente.|
 |08/05/2019| [Publisher](#publisher)|Sono stati aggiunti dei contenuti sulla risposta alle richieste dell'interessato per Publisher.|
-|11/7/2019| [MyAnalytics](#myanalytics)|La possibilità da parte di un amministratore di usare lo strumento di gestione dei casi DSR nel Centro sicurezza e conformità di Office 365 per esportare i dati di MyAnalytics è stata rimossa, perché ora tutti gli utenti possono visualizzare i dati nell'app MyAnalytics. |
+|11/7/2019| [MyAnalytics](#myanalytics)|La possibilità da parte di un amministratore di usare lo strumento di gestione dei casi DSR nel Centro sicurezza e conformità per esportare i dati di MyAnalytics è stata rimossa, perché ora tutti gli utenti possono visualizzare i dati nell'app MyAnalytics. |
 |6/11/2019|[Funzionalità didattiche](#education)|Sono stati aggiunti collegamenti a nuovi argomenti sull'uso di script di PowerShell per ottenere un elenco dei corsi per uno studente specifico e quindi esportare o eliminare i relativi dati.|
 |28/01/2020| Tutti | Rimozione di StaffHub dal documento perché è stato ritirato. |
 ||||

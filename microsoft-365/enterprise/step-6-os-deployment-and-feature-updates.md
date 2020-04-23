@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulle opzioni per la distribuzione del sistema operativo e gli aggiornamenti delle funzionalità.
-ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085225"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636760"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Passaggio 6: distribuzione del sistema operativo e aggiornamenti delle funzionalità
 
@@ -41,7 +41,7 @@ ms.locfileid: "42085225"
 
 Se è stato seguito il processo di distribuzione fino ad adesso, sono stati almeno completati parzialmente i passaggi per la preparazione di dispositivo e app, è stata preparata l'infrastruttura, sono stati configurati e raccolti i pacchetti app, è stato ideato un piano per la migrazione dei file utente e la configurazione delle impostazioni predefinite e si dispongono di piani per la conservazione dei controlli di sicurezza esistenti o magari per l'implementazione di nuovi.
 
-Ora è arrivato il momento di mettere tutti questi pezzi insieme per automatizzare il più possibile il processo per installare Windows 10 e Office 365 ProPlus, insieme a tutti i driver, app ed elementi necessari.
+Ora è arrivato il momento di mettere tutti questi pezzi insieme per automatizzare il più possibile il processo per installare Windows 10 e Microsoft 365 Apps for enterprise, insieme a tutti i driver, app ed elementi necessari.
 
 Infine, la miglior misura di successo di una distribuzione del sistema operativo è quella di soddisfare le aspettative degli utenti ed evitare interruzioni nel loro lavoro. In questo passaggio, si inizierà a testare e a distribuire agli utenti pilota nell'ambito della distribuzione in più fasi. Un piccolo suggerimento: prima di ampliare la distribuzione, sarà necessario passare al passaggio 8 del nostro processo di distribuzione [Comunicazioni e formazione degli utenti](https://aka.ms/mdd8) per assicurarsi che gli utenti siano informati e preparati alle modifiche in arrivo e di poter misurare la velocità di implementazione con la convalida continua attraverso la Distribuzione in più fasi.
 
@@ -131,8 +131,8 @@ Per informazioni più dettagliate su Windows Update per le aziende, vedere la do
 
 ## <a name="next-step"></a>Passaggio successivo 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Passaggio 7: manutenzione di Windows e Office](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[Passaggio 7: manutenzione di Windows e Office](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>Passaggio precedente
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[Passaggio 5: considerazioni sulla sicurezza e conformità](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[Passaggio 5: considerazioni sulla sicurezza e conformità](https://aka.ms/mdd5)

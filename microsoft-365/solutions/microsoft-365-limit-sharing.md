@@ -14,12 +14,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Altre informazioni sulle opzioni per limitare o disabilitare la condivisione in Microsoft 365.
-ms.openlocfilehash: e6cce1102af793d38606b929951d20221eba4b12
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: ebeeefa61d9f4fc9fd77b417ccadfaa4308acb38
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604659"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632596"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitare la condivisione in Microsoft 365
 
@@ -29,7 +29,7 @@ I metodi di condivisione dei file sono elencati nella tabella seguente. Per info
 
 |Metodo di condivisione|Descrizione|Opzioni di limitazione|
 |:-------------|:----------|:-------------|
-|[Team o gruppo di Office 365](#office-365-group-or-team)|Gli utenti che hanno accesso a un team di Microsoft Teams o a un gruppo di Office 365 hanno accesso in modifica ai file nel sito di SharePoint associato.|Se il gruppo o il team è privato, gli inviti di condivisione per partecipare al team devono essere approvati dal proprietario. Gli amministratori possono disabilitare l'accesso guest per impedire l'accesso da parte di utenti esterni all'organizzazione.|
+|[Gruppo o team di Microsoft 365](#microsoft-365-group-or-team)|Gli utenti che hanno accesso a un team di Microsoft Teams o a un gruppo di Microsoft 365 hanno accesso in modifica ai file nel sito di SharePoint associato.|Se il gruppo o il team è privato, gli inviti di condivisione per partecipare al team devono essere approvati dal proprietario. Gli amministratori possono disabilitare l'accesso guest per impedire l'accesso da parte di utenti esterni all'organizzazione.|
 |[Sito di SharePoint](#sharepoint-site)|Agli utenti può essere concesso l'accesso come proprietari, membri o visitatori di un sito di SharePoint e avranno quel livello di accesso ai file nel sito.|È possibile limitare le autorizzazioni per il sito in modo che solo i proprietari possano condividere il sito.|
 |[Condivisione con persone specifiche](#sharing-with-specific-people)|I membri del sito e le persone con autorizzazioni di modifica possono concedere autorizzazioni dirette ai file e alle cartelle o condividerli con collegamenti *Persone specifiche*.|È possibile limitare le autorizzazioni per il sito in modo che solo i proprietari possano condividere file e cartelle. In questo caso, l'accesso diretto e la condivisione di collegamenti *Persone specifiche* da parte dei membri del sito passano dal proprietario del sito per l'approvazione.|
 |[Condivisione guest di SharePoint](#sharepoint-guest-sharing)|I proprietari e i membri dei siti di SharePoint possono condividere file e cartelle con persone esterne all'organizzazione.|La condivisione guest può essere disabilitata per l'intera organizzazione o per singoli siti.|
@@ -41,9 +41,9 @@ Anche se è possibile usare i controlli amministrativi descritti in questo artic
 
 Per informazioni su come viene usata la condivisione all'interno dell'organizzazione, [eseguire un report sulla condivisione di file e cartelle](https://docs.microsoft.com/sharepoint/sharing-reports).
 
-## <a name="office-365-group-or-team"></a>Team o gruppo di Office 365
+## <a name="microsoft-365-group-or-team"></a>Gruppo o team di Microsoft 365
 
-Se si vuole limitare la condivisione in un gruppo di Office 365 o un team di Microsoft Teams, è importante rendere privato il gruppo o il team. Gli utenti all'interno dell'organizzazione possono entrare a far parte di un gruppo pubblico o di un team in qualsiasi momento. A meno che il gruppo o il team non sia privato, non è possibile limitare la condivisione del team o dei relativi file all'interno dell'organizzazione.
+Se si vuole limitare la condivisione in un gruppo di Microsoft 365 o un team di Microsoft Teams, è importante rendere privato il gruppo o il team. Gli utenti all'interno dell'organizzazione possono entrare a far parte di un gruppo pubblico o di un team in qualsiasi momento. A meno che il gruppo o il team non sia privato, non è possibile limitare la condivisione del team o dei relativi file all'interno dell'organizzazione.
 
 ### <a name="guest-sharing"></a>Condivisione con gli utenti guest
 
@@ -54,15 +54,15 @@ Per disattivare la condivisione guest per Teams
 2. Disattivare **Consenti accesso ospite in Teams**.
 3. Fare clic su **Salva**.
 
-Se si vuole impedire l'accesso guest nei gruppi di Office 365, è possibile disattivare le impostazioni di accesso guest dei gruppi nell'interfaccia di amministrazione di Microsoft 365.
+Se si vuole impedire l'accesso guest nei gruppi di Microsoft 365, è possibile disattivare le impostazioni di accesso guest dei gruppi nell'interfaccia di amministrazione di Microsoft 365.
 
-Per disattivare la condivisione guest nei gruppi di Office 365
+Per disattivare la condivisione guest nei gruppi di Microsoft 365
 1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Impostazioni** e quindi ancora su **Impostazioni**.
-2. Nella scheda **Servizi** fare clic su **Gruppi di Office 365**.
+2. Nella scheda **Servizi** fare clic su **Gruppi di Microsoft 365**.
 3. Deselezionare le caselle di controllo **Consenti ai membri del gruppo esterni all'organizzazione di accedere al contenuto del gruppo** e **Consenti ai proprietari del gruppo di aggiungere persone esterne all'organizzazione ai gruppi**.
 4. Fare clic su **Salva modifiche**.
 
-    ![Screenshot delle impostazioni di condivisione guest di Gruppi di Office 365 nell'interfaccia di amministrazione di Microsoft 365](../media/office-365-groups-guest-settings-off.png)
+    ![Screenshot delle impostazioni di condivisione guest di Gruppi di Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
 > Se si vuole impedire la condivisione guest per un particolare gruppo o team, è possibile usare Microsoft PowerShell. Per informazioni, vedere [Bloccare gli utenti guest da un gruppo specifico](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#block-guest-users-from-a-specific-group).
@@ -79,7 +79,7 @@ Per consentire la condivisione di inviti solo dai domini specificati
 
 ## <a name="sharepoint-site"></a>Sito di SharePoint
 
-È possibile limitare la condivisione dei siti di SharePoint ai soli proprietari dei siti. Questo impedisce ai membri del sito di condividerlo. Tenere presente che se il sito è connesso a un gruppo di Office 365, i membri del gruppo possono invitare altri utenti nel gruppo e questi utenti avranno accesso al sito.
+È possibile limitare la condivisione dei siti di SharePoint ai soli proprietari dei siti. Questo impedisce ai membri del sito di condividerlo. Tenere presente che se il sito è connesso a un gruppo di Microsoft 365, i membri del gruppo possono invitare altri utenti nel gruppo e questi utenti avranno accesso al sito.
 
 Per limitare la condivisione del sito ai proprietari
 1. Nel sito fare clic sull'icona a forma di ingranaggio e quindi su **Autorizzazioni sito**.
