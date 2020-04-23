@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Informazioni sulle operazioni necessarie per configurare Microsoft 365 for business.
-ms.openlocfilehash: 97463e624968c5b3edf563e916cbf4929ac581b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627571"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794040"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Pianificare la configurazione di Microsoft 365 per le aziende
 
@@ -93,7 +93,7 @@ Se si prevede di passare da un servizio di posta elettronica esistente a Microso
   
 Se si intende utilizzare Microsoft 365 per la posta elettronica:
   
-- Per spostare l'indirizzo di posta elettronica aziendale, ad esempio *Rob@contoso.com*, da un altro servizio di posta elettronica a Microsoft 365, è necessario indirizzare la posta elettronica alla nuova cassetta postale di Microsoft 365. A tale scopo, selezionare **Esegui la migrazione dei dati degli utenti** nella pagina di **installazione** , in cui vengono illustrati gli aggiornamenti che è necessario apportare all'host di dominio, passo dopo passo.
+- Per spostare l'indirizzo di posta elettronica aziendale, ad esempio *rob\@contoso.com*, da un altro servizio di posta elettronica a Microsoft 365, è necessario indirizzare la posta elettronica alla nuova cassetta postale di Microsoft 365. A tale scopo, selezionare **Esegui la migrazione dei dati degli utenti** nella pagina di **installazione** , in cui vengono illustrati gli aggiornamenti che è necessario apportare all'host di dominio, passo dopo passo.
 
 - Una volta aggiornato l'host del dominio, le modifiche diventano in genere effettive dopo una o due ore. Tuttavia, tenere presente che a volte può richiedere fino a 72 ore affinché le modifiche vengano aggiornate su Internet.
 
