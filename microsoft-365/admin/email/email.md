@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Priority
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
-description: Informazioni su come gestire la posta elettronica per le cassette postali di Office 365.
-ms.openlocfilehash: ca1fba8c89f7c647a0bb6d4f846ebb12f82a7abd
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: Informazioni su come gestire la posta elettronica per le cassette postali di Microsoft 365.
+ms.openlocfilehash: 25d34ed4f86a918daea5e04c89b9b79c91bebc08
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126012"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628856"
 ---
 # <a name="email"></a>Posta elettronica
 
-Informazioni su come gestire la posta elettronica per le cassette postali di Office 365.
+Informazioni su come gestire la posta elettronica per le cassette postali di Microsoft 365.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -146,7 +146,7 @@ Informazioni su come gestire la posta elettronica per le cassette postali di Off
                 <div class="card">
                     <div class="cardText">
                         <h3>Risolvere i problemi di connettività e recapito della posta elettronica</a></h3>
-                        <p><a href="https://diagnostics.outlook.com/#/">Risolvere i problemi di connessione di Outlook in Office 365 ed Exchange Online</a></p>
+                        <p><a href="https://diagnostics.outlook.com/#/">Risolvere i problemi di connessione di Outlook in Microsoft 365 ed Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox">Recuperare gli elementi eliminati nella cassetta postale di un utente</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues">Individuare e risolvere i problemi di recapito della posta elettronica</a></p>
                         <p><a href="../get-help-with-domains/find-and-fix-issues.md">Individuare e correggere i problemi (anche della posta elettronica) dopo l'aggiunta del dominio o dei record DNS</a></p>
@@ -162,8 +162,8 @@ Informazioni su come gestire la posta elettronica per le cassette postali di Off
             <div class="card">
                 <div class="cardText">
                         <h3>Risorse per le aziende</h3>
-                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Procedure consigliate sul flusso di posta per Exchange Online e Office 365</a></p>
-                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Modalità di migrazione della posta elettronica a Office 365</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices">Procedure consigliate sul flusso di posta per Exchange Online e Microsoft 365</a></p>
+                        <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Modalità di migrazione della posta elettronica a Microsoft 365</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-hybrid">Contenuti sulla distribuzione ibrida di Exchange</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</a></p>

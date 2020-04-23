@@ -2,9 +2,9 @@
   href: index.yml
 - name: Centro assistenza per Amministrazione di Microsoft 365
   href: ../admin/admin-home.md
-- name: Prova o acquista
+- name: Provare o acquistare
   items:
-    - name: Iscriversi alla versione di valutazione di Office 365
+    - name: Iscriversi alla versione di valutazione di Microsoft 365
       href: sign-up-for-office-365-trial.md
     - name: Provare o acquistare Microsoft 365
       href: try-or-buy-microsoft-365.md
@@ -64,8 +64,6 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Payment Services Directive 2 e Strong Customer Authentication
       href: billing-and-payments/psd2.md
-    - name: Informazioni fiscali
-      href: billing-and-payments/tax-information.md
 - name: Account di fatturazione
   items:
     - name: Gestire account di fatturazione

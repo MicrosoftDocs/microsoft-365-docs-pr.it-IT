@@ -87,7 +87,7 @@
       items:
         - name: Posta elettronica in Office 365
           href: email/email.md
-        - name: Impostazioni di posta elettronica dell'utente di Office 365
+        - name: Impostazioni posta elettronica utente
           href: email/office-365-user-email-settings.md
         - name: Aggiungere un altro alias di posta elettronica per un utente
           href: email/add-another-email-alias-for-a-user.md
@@ -189,6 +189,8 @@
           href: manage/remove-licenses-from-users.md
         - name: Risoluzione dei conflitti di licenze
           href: manage/resolve-license-conflicts.md
+        - name: Gestire i messaggi nel Centro messaggi
+          href: manage/manage-messages.md
         - name: Mostrare o nascondere le nuove funzionalità con Gestione novità
           href: manage/show-hide-new-features.md
     - name: Abbonamenti e fatturazione
@@ -235,11 +237,11 @@
           href: create-groups/office-365-groups.md
         - name: Confrontare i gruppi
           href: create-groups/compare-groups.md
-        - name: Creare un gruppo di Office 365
+        - name: Creare un gruppo di Microsoft 365
           href: create-groups/create-groups.md
-        - name: Gestire un gruppo di Office 365
+        - name: Gestire un gruppo di Microsoft 365
           href: create-groups/manage-groups.md
-        - name: Pianificare la governance in Gruppi di Office 365
+        - name: Pianificare la governance nei gruppi di Microsoft 365
           href: create-groups/plan-for-groups-governance.md
         - name: Gestire la creazione di gruppi
           href: create-groups/manage-creation-of-groups.md
@@ -251,7 +253,7 @@
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: Aggiungere o rimuovere membri dai gruppi
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Criteri di scadenza dei gruppi di Office 365
+        - name: Criteri di scadenza dei gruppi di Microsoft 365
           href: create-groups/office-365-groups-expiration-policy.md
         - name: Ripristinare un gruppo eliminato
           href: create-groups/restore-deleted-group.md

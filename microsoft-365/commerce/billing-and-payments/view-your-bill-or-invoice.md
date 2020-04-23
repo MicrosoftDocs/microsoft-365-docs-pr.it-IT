@@ -25,68 +25,68 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
-ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 7d9ee9166de2a3807a8d10d061d3329c71180931
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540856"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634957"
 ---
-# <a name="view-your-bill-or-invoice"></a><span data-ttu-id="7f7f3-104">Visualizzare l'estratto conto o la fattura</span><span class="sxs-lookup"><span data-stu-id="7f7f3-104">View your bill or invoice</span></span>
+# <a name="view-your-bill-or-invoice"></a><span data-ttu-id="da4a3-104">Visualizzare l'estratto conto o la fattura</span><span class="sxs-lookup"><span data-stu-id="da4a3-104">View your bill or invoice</span></span>
 
-<span data-ttu-id="7f7f3-p102">Questo articolo è destinato agli abbonati a Office 365 per le aziende. È necessario essere un amministratore globale o un amministratore fatturazione per eseguire le procedure descritte in questo articolo.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-p102">This article is for people who have an Office 365 for business subscription. You must be a Global Admin or Billing Admin to do the steps described in this article.</span></span>
+<span data-ttu-id="da4a3-p102">Questo articolo è destinato agli abbonati a Microsoft 365 per le aziende. È necessario essere un amministratore globale o un amministratore fatturazione per eseguire le procedure descritte in questo articolo.</span><span class="sxs-lookup"><span data-stu-id="da4a3-p102">This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.</span></span>
   
-<span data-ttu-id="7f7f3-107">Se serve aiuto per interpretare gli addebiti riportati nella fattura, vedere [Informazioni sulla fattura](understand-your-invoice2.md) per una descrizione dettagliata.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-107">If you need help interpreting the charges you see on your bill, see [Understand your invoice](understand-your-invoice2.md) for a detailed walkthrough.</span></span>
+<span data-ttu-id="da4a3-107">Se serve aiuto per interpretare gli addebiti riportati nella fattura, vedere [Informazioni sulla fattura](understand-your-invoice2.md) per una descrizione dettagliata.</span><span class="sxs-lookup"><span data-stu-id="da4a3-107">If you need help interpreting the charges you see on your bill, see [Understand your invoice](understand-your-invoice2.md) for a detailed walkthrough.</span></span>
   
- <span data-ttu-id="7f7f3-108">**Se non si è un amministratore**</span><span class="sxs-lookup"><span data-stu-id="7f7f3-108">**Not an admin?**</span></span> <span data-ttu-id="7f7f3-109">Contattare l'amministratore per assistenza.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-109">Contact your IT administrator for help.</span></span> 
+ <span data-ttu-id="da4a3-108">**Se non si è un amministratore**</span><span class="sxs-lookup"><span data-stu-id="da4a3-108">**Not an admin?**</span></span> <span data-ttu-id="da4a3-109">Contattare l'amministratore per assistenza.</span><span class="sxs-lookup"><span data-stu-id="da4a3-109">Contact your IT administrator for help.</span></span> 
   
- <span data-ttu-id="7f7f3-110">**Se si ha un problema con la fattura**</span><span class="sxs-lookup"><span data-stu-id="7f7f3-110">**Have a problem with your bill?**</span></span> <span data-ttu-id="7f7f3-111">[Contattare il supporto tecnico per i prodotti per le aziende](../../admin/contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="7f7f3-111">[Contact support for business products](../../admin/contact-support-for-business-products.md).</span></span>
+ <span data-ttu-id="da4a3-110">**Se si ha un problema con la fattura**</span><span class="sxs-lookup"><span data-stu-id="da4a3-110">**Have a problem with your bill?**</span></span> <span data-ttu-id="da4a3-111">[Contattare il supporto tecnico per i prodotti per le aziende](../../admin/contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="da4a3-111">[Contact support for business products](../../admin/contact-support-for-business-products.md).</span></span>
 
- <span data-ttu-id="7f7f3-112">Guardare un breve video sulla visualizzazione della fattura. Si noti che la fattura potrebbe essere diversa da quella del video.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-112">Watch a short video about viewing your bill or invoice (note that your invoice may appear different from the one in the video).</span></span> <br><br>
+ <span data-ttu-id="da4a3-112">Guardare un breve video sulla visualizzazione della fattura. Si noti che la fattura potrebbe essere diversa da quella del video.</span><span class="sxs-lookup"><span data-stu-id="da4a3-112">Watch a short video about viewing your bill or invoice (note that your invoice may appear different from the one in the video).</span></span> <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
 
-<span data-ttu-id="7f7f3-113">Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="7f7f3-113">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="da4a3-113">Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="da4a3-113">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
   
-## <a name="view-a-bill-or-invoice"></a><span data-ttu-id="7f7f3-114">Visualizzare un estratto conto o una fattura</span><span class="sxs-lookup"><span data-stu-id="7f7f3-114">View a bill or invoice</span></span>
+## <a name="view-a-bill-or-invoice"></a><span data-ttu-id="da4a3-114">Visualizzare un estratto conto o una fattura</span><span class="sxs-lookup"><span data-stu-id="da4a3-114">View a bill or invoice</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7f7f3-115">Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Fatture e pagamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-115">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.</span></span>
+1. <span data-ttu-id="da4a3-115">Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Fatture e pagamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="da4a3-115">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7f7f3-116">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** ><a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fatture e pagamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-116">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.</span></span>
+1. <span data-ttu-id="da4a3-116">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** ><a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fatture e pagamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="da4a3-116">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7f7f3-117">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fatture e pagamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-117">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.</span></span>
+1. <span data-ttu-id="da4a3-117">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fatture e pagamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="da4a3-117">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="7f7f3-118">Selezionare un intervallo di date nell'elenco a discesa e quindi scegliere l'ordine da visualizzare.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-118">Select a date range from the drop-down list, and then choose the order you want to view.</span></span>
+2. <span data-ttu-id="da4a3-118">Selezionare un intervallo di date nell'elenco a discesa e quindi scegliere l'ordine da visualizzare.</span><span class="sxs-lookup"><span data-stu-id="da4a3-118">Select a date range from the drop-down list, and then choose the order you want to view.</span></span>
 
-3. <span data-ttu-id="7f7f3-119">Nella pagina del riepilogo è possibile vedere:</span><span class="sxs-lookup"><span data-stu-id="7f7f3-119">On the summary page, you can see the following:</span></span>
+3. <span data-ttu-id="da4a3-119">Nella pagina del riepilogo è possibile vedere:</span><span class="sxs-lookup"><span data-stu-id="da4a3-119">On the summary page, you can see the following:</span></span>
 
-  - <span data-ttu-id="7f7f3-120">Il saldo totale, l'importo dovuto corrente, la scadenza del pagamento, l'importo dell'ultimo pagamento e la relativa data di ricezione.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-120">The total balance, the current amount due, the payment due date, the amount of the last payment, and the date it was received.</span></span>
+  - <span data-ttu-id="da4a3-120">Il saldo totale, l'importo dovuto corrente, la scadenza del pagamento, l'importo dell'ultimo pagamento e la relativa data di ricezione.</span><span class="sxs-lookup"><span data-stu-id="da4a3-120">The total balance, the current amount due, the payment due date, the amount of the last payment, and the date it was received.</span></span>
 
-  - <span data-ttu-id="7f7f3-121">Le istruzioni per il pagamento.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-121">Payment instructions.</span></span>
+  - <span data-ttu-id="da4a3-121">Le istruzioni per il pagamento.</span><span class="sxs-lookup"><span data-stu-id="da4a3-121">Payment instructions.</span></span>
 
-  - <span data-ttu-id="7f7f3-122">Le date dei pagamenti effettuati con gli importi pagati.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-122">A record of past payment dates, and the amounts paid.</span></span>
+  - <span data-ttu-id="da4a3-122">Le date dei pagamenti effettuati con gli importi pagati.</span><span class="sxs-lookup"><span data-stu-id="da4a3-122">A record of past payment dates, and the amounts paid.</span></span>
 
-  - <span data-ttu-id="7f7f3-123">La data di creazione dell'ordine e il numero d'ordine.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-123">The order creation date, and the order number.</span></span>
+  - <span data-ttu-id="da4a3-123">La data di creazione dell'ordine e il numero d'ordine.</span><span class="sxs-lookup"><span data-stu-id="da4a3-123">The order creation date, and the order number.</span></span>
 
-4. <span data-ttu-id="7f7f3-124">Per stampare o salvare una copia PDF della fattura, selezionare **Scarica PDF**.</span><span class="sxs-lookup"><span data-stu-id="7f7f3-124">To print or save a PDF copy of the invoice, select **Download PDF**.</span></span>
+4. <span data-ttu-id="da4a3-124">Per stampare o salvare una copia PDF della fattura, selezionare **Scarica PDF**.</span><span class="sxs-lookup"><span data-stu-id="da4a3-124">To print or save a PDF copy of the invoice, select **Download PDF**.</span></span>
 
   
-## <a name="related-articles"></a><span data-ttu-id="7f7f3-125">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="7f7f3-125">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="da4a3-125">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="da4a3-125">Related articles</span></span>
 
-[<span data-ttu-id="7f7f3-126">Pagare con fattura, carta di credito o conto corrente bancario</span><span class="sxs-lookup"><span data-stu-id="7f7f3-126">Pay by invoice, credit card, or bank account</span></span>](pay-for-your-subscription.md)
+[<span data-ttu-id="da4a3-126">Pagare con fattura, carta di credito o conto corrente bancario</span><span class="sxs-lookup"><span data-stu-id="da4a3-126">Pay by invoice, credit card, or bank account</span></span>](pay-for-your-subscription.md)
   
-[<span data-ttu-id="7f7f3-127">Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario</span><span class="sxs-lookup"><span data-stu-id="7f7f3-127">Add, update, or remove a credit card or bank account</span></span>](add-update-or-remove-credit-card-or-bank-account.md)
+[<span data-ttu-id="da4a3-127">Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario</span><span class="sxs-lookup"><span data-stu-id="da4a3-127">Add, update, or remove a credit card or bank account</span></span>](add-update-or-remove-credit-card-or-bank-account.md)
 
-[<span data-ttu-id="7f7f3-128">Minecraft: Opzioni di pagamento di Education Edition</span><span class="sxs-lookup"><span data-stu-id="7f7f3-128">Minecraft: Education Edition payment options</span></span>](https://go.microsoft.com/fwlink/p/?linkid=838761)
+[<span data-ttu-id="da4a3-128">Minecraft: Opzioni di pagamento di Education Edition</span><span class="sxs-lookup"><span data-stu-id="da4a3-128">Minecraft: Education Edition payment options</span></span>](https://go.microsoft.com/fwlink/p/?linkid=838761)
