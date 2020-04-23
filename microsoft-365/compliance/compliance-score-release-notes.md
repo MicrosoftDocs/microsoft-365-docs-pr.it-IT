@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Note sulla versione e i problemi noti di Microsoft Compliance Score (Preview), una funzionalità del centro conformità di M365 che consente di semplificare e automatizzare le valutazioni dei rischi.
-ms.openlocfilehash: dd7c99d2f0a86826be7803dc36e390250a4fc37b
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141551"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790591"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Note sulla versione di Microsoft Compliance Score (Preview)
 
@@ -62,7 +62,7 @@ Molte delle funzioni gestite in Compliance Manager possono ora essere eseguite n
    - Gli utenti devono accedere a Compliance Manager per creare nuovi modelli e modificare i [modelli](working-with-compliance-manager.md#templates)esistenti. 
    - Quando si crea un modello, è necessario includere le dimensioni per il **prodotto** e la **certificazione** per garantire che il modello venga visualizzato nel punteggio di conformità.
  - **Impostazione delle autorizzazioni**: Punteggio di conformità gli utenti che non dispongono già delle autorizzazioni in Compliance Manager devono disporre delle autorizzazioni impostate nel centro conformità di Microsoft 365 (ulteriori[informazioni](compliance-score-setup.md#set-user-permissions-and-assign-roles)).
-- **Trasferimento di dati**: le organizzazioni con data in Compliance Manager vedranno i dati nel punteggio di conformità e lo stesso vale per il contrario.
+- **Trasferimento di dati**: le organizzazioni che dispongono di dati in Compliance Manager vedranno che i dati vengono visualizzati come Punteggio di conformità e lo stesso vale anche per l'altro.
 - **Accesso a Compliance Manager dal punteggio di conformità**: se un utente ha eseguito l'accesso a Score compliance e seleziona un collegamento per accedere a Compliance Manager, l'utente non dovrà accedere di nuovo. Dopo aver fatto clic sul collegamento, una nuova scheda viene visualizzata nel browser con una finestra di dialogo. Nella sezione superiore con l'intestazione, "già un cliente dei servizi cloud Microsoft? Accedere al proprio account, "selezionare il pulsante di **accesso** per accedere automaticamente a Compliance Manager.
 
 ## <a name="known-issues-in-compliance-score-preview"></a>Problemi noti nel punteggio di conformità (anteprima)

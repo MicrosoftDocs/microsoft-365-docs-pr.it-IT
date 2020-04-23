@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 3e710f83bebd94719ef66cde7844f1301611adf4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 73fa3ac2ca15d922a74e1d3ceef6cc74a3bdedca
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637536"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790569"
 ---
 # <a name="microsoft-compliance-manager-preview-release-notes"></a>Note sulla versione di Microsoft Compliance Manager (anteprima)
 
@@ -62,6 +62,10 @@ Compliance Manager è ora disponibile nelle seguenti lingue oltre che in inglese
 ## <a name="known-issues-in-compliance-manager-preview"></a>Problemi noti in Compliance Manager (anteprima)
 
 Nella sezione seguente vengono illustrati i problemi noti della versione corrente di Compliance Manager.
+
+### <a name="dimension-values"></a>Valori delle dimensioni
+
+A causa della migrazione dei dati durante la versione di aprile 2020, alcune organizzazioni potrebbero visualizzare un valore di **prodotto** o di **certificazione** "personalizzato" nelle loro valutazioni e modelli. Questo valore è stato inserito automaticamente se i campi **prodotto** o **certificazione** sono vuoti e non vi sarà alcun effetto sui flussi di lavoro di dati.
 
 ### <a name="compliance-score"></a>Punteggio di conformità
 

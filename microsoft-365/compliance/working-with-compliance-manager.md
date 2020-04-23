@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito. Utilizzarlo per monitorare, assegnare e verificare le attività di conformità alle normative relative ai prodotti Microsoft.
-ms.openlocfilehash: 2a2c0b9311062da1269f7b56c926ced9e038627f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626232"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790663"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Utilizzo di Microsoft Compliance Manager (anteprima)
 
@@ -35,7 +35,7 @@ Compliance Manager è accessibile da Microsoft Service Trust Portal. Tutti gli u
 2. Accedere con l'account del servizio Microsoft, ovvero l'account utente di Office 365, Microsoft 365 o Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Nel Service Trust Portal selezionare **Compliance Manager**, ovvero la versione di anteprima con le funzionalità più recenti. Non selezionare **Compliance Manager (Classic)**, che contiene funzionalità legacy non incluse in questa documentazione.
+> Nel Service Trust Portal selezionare **Compliance Manager**, ovvero la versione di anteprima con le funzionalità più recenti. Non selezionare **Compliance Manager (Classic)**, che contiene le funzionalità di rilascio anticipato non descritte nella presente documentazione.
 
 ## <a name="administration"></a>Amministrazione
 

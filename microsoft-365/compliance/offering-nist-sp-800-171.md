@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e90d5e47c6aa5ac6c2813f150e8136b93214fa3d
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: e1bd69e7038ce3bf6372a3f53cd985ce54f350a8
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42221998"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781451"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -40,7 +40,7 @@ Le organizzazioni di valutazione di terze parti accreditate, Kratos secureinfo e
 
 I requisiti NIST SP 800 – 171 sono un sottoinsieme di NIST SP 800-53, lo standard utilizzato da FedRAMP. L'Appendice D del NIST SP 800 – 171 fornisce un mapping diretto dei relativi requisiti di sicurezza ai controlli di sicurezza rilevanti in NIST SP 800-53, per i quali i servizi cloud nell'ambito sono già stati valutati e autorizzati nell'ambito del programma FedRAMP.
 
-Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca, società di consulenza, appaltatori manifatturieri, deve soddisfare i severi requisiti del NIST SP 800 – 171. Questo attestato indica che i servizi cloud in ambito Microsoft possono ospitare i clienti che desiderano distribuire i carichi di lavoro cui con la certezza che Microsoft sia pienamente conforme. Ad esempio, tutti i contraenti DoD che elaborano, archiviano o trasmettono ' informazioni sulla difesa trattate ' utilizzando i servizi cloud Microsoft in ambito nei sistemi informativi soddisfano le clausole del dipartimento della difesa degli Stati Uniti DFARS che richiedono la conformità con la sicurezza requisiti di NIST SP 800 – 171.
+Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca, società di consulenza, appaltatori manifatturieri, deve soddisfare i severi requisiti del NIST SP 800 – 171. Questo attestato indica che i servizi cloud in ambito Microsoft possono ospitare i clienti che desiderano distribuire i carichi di lavoro cui con la certezza che Microsoft sia pienamente conforme. Ad esempio, tutti i contraenti DoD che elaborano, archiviano o trasmettono ' informazioni sulla difesa trattate ' utilizzando i servizi cloud Microsoft in ambito nei sistemi informativi, soddisfano le clausole del dipartimento della difesa DFARS che richiedono la conformità con i requisiti di sicurezza di NIST SP 800 – 171.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
@@ -55,7 +55,7 @@ Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca
 
 ## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
-- [Cianografia del NIST SP 800 – 171](https://aka.ms/NIST-800-171-Blueprint): ottenere supporto per l'implementazione di carichi di lavoro in Azure conformi al NIST SP 800 – 171.
+- [Esempi](https://docs.microsoft.com/azure/governance/blueprints/samples/)di modelli di Azure: ottenere supporto per l'implementazione di carichi di lavoro conformi ai controlli basati su NIST.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
