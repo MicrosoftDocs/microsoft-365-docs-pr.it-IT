@@ -6,26 +6,43 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b517ab49681b7e9251cd5b577c9522db32aea4cb
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 58d3355788d9af4297ba454c404b4b2b920c358e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37422533"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790694"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Aree geografiche e lingue supportate da Microsoft Managed Desktop
 
-In questo argomento vengono fornite informazioni dettagliate sulle aree e le lingue supportate da Microsoft Managed Desktop. 
+In questo articolo vengono fornite informazioni dettagliate sulle aree e le lingue supportate da Microsoft Managed Desktop e le aree geografiche in cui è possibile utilizzarlo.
 
-- **Aree geografiche:** Stati Uniti, Canada (escluso Québec), Regno Unito, Belgio, Lussemburgo, Paesi Bassi, Australia e Nuova Zelanda
-- **Lingue:** L'inglese è l'unica lingua supportata attualmente disponibile per gli utenti nei dispositivi gestiti. Questo è applicabile sia al [supporto dell'amministratore](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) sia alle opzioni di supporto per gli [utenti finali](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) . 
+## <a name="supported-languages"></a>Lingue supportate
 
-Tuttavia, i clienti possono comunque utilizzare dispositivi gestiti all'esterno delle aree elencate in alto senza interruzioni del servizio Microsoft Managed Desktop. Ad esempio, un dipendente basato nel Regno Unito può lavorare in modo sicuro e ricevere gli aggiornamenti sul dispositivo gestito durante il viaggio in Asia, Europa o Sud America.
+L'inglese è l'unica lingua disponibile per gli utenti di Microsoft Managed Desktop. Sono incluse tutte le interfacce utente sia per gli utenti finali che per gli amministratori e per tutte le interazioni sia con il supporto dell' [amministratore](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) sia con il [supporto degli utenti finali](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
+
+
+È comunque possibile utilizzare i dispositivi gestiti all'esterno delle aree di lingua inglese senza interruzioni del servizio Microsoft Managed Desktop. Ad esempio, un dipendente basato nel Regno Unito può lavorare in modo sicuro e ricevere gli aggiornamenti sul dispositivo gestito durante il viaggio in Asia, Europa o Sud America. 
 
 Per ulteriori informazioni sul supporto degli utenti con Microsoft Managed Desktop, vedere [supporto per Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).
 
-Se un utente preferisce lavorare in una lingua diversa dall'inglese, può richiedere all'amministratore IT locale di distribuire i Language Pack aggiuntivi nei dispositivi gestiti tramite l'app portale aziendale di Intune. A partire da Windows 10, versione 1803, i Language Pack vengono recapitati come pacchetti di appx da Microsoft Store. Per ulteriori informazioni, vedere [app di Microsoft Store for business](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps#msfb-apps).
+## <a name="availability-of-the-service"></a>Disponibilità del servizio
 
+Le organizzazioni nei seguenti paesi possono iscriversi a Microsoft Managed Desktop:
 
->[!NOTE]
->L'app GetHelp su un dispositivo Microsoft Managed Desktop supporta solo l'inglese. Per consentire agli utenti di ottenere assistenza con Microsoft Managed Desktop tramite l'app GetHelp, è necessario cambiare la lingua di visualizzazione in inglese.
+- Stati Uniti
+- Canada (escluso Québec)
+- Regno Unito
+- Irlanda
+- Belgio
+- Lussemburgo
+- Paesi Bassi
+- Svezia
+- Finlandia
+- Norvegia
+- Danimarca
+- Islanda
+- Australia
+- Nuova Zelanda
+
+Gli utenti finali e gli amministratori di queste aree devono utilizzare l'inglese per i propri dispositivi e gli strumenti di gestione. 
