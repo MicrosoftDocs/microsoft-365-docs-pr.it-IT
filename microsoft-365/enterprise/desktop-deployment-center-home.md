@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Panoramica del centro di distribuzione desktop.
-ms.openlocfilehash: 540f0d50ef8adc292fc1fbd4ef13bb12556d596c
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 36506864d932665a2da8fd2dfc94ab276e4fa2ec
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113530"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638141"
 ---
 # <a name="desktop-deployment-center"></a>Centro di distribuzione desktop
 
@@ -94,7 +94,7 @@ ms.locfileid: "43113530"
 <img align="middle" src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
 
-Seguire la procedura descritta di seguito per pianificare ed eseguire una distribuzione di Windows 10 e Office 365 ProPlus su vasta scala. Ogni passaggio fa parte del processo generale di pianificazione e distribuzione e i passaggi vanno in genere eseguiti in parallelo in una distribuzione in fasi. Scaricare la versione gratuita di [Distribuzione del desktop e Management Lab Kit](https://aka.ms/howtoshiftlabs) per un'esercitazione pratica con gli strumenti evidenziati nel processo di distribuzione. Per la distribuzione desktop è anche possibile [richiedere assistenza](https://aka.ms/mddhelp) a partner Microsoft e servizi FastTrack.
+Seguire la procedura descritta di seguito per pianificare ed eseguire una distribuzione di Windows 10 e Microsoft 365 Apps for enterprise su vasta scala. Ogni passaggio fa parte del processo generale di pianificazione e distribuzione e i passaggi vanno in genere eseguiti in parallelo in una distribuzione in fasi. Scaricare la versione gratuita di [Distribuzione del desktop e Management Lab Kit](https://aka.ms/howtoshiftlabs) per un'esercitazione pratica con gli strumenti evidenziati nel processo di distribuzione. Per la distribuzione desktop è anche possibile [richiedere assistenza](https://aka.ms/mddhelp) a partner Microsoft e servizi FastTrack.
 
 <br>
 
@@ -102,7 +102,7 @@ Seguire la procedura descritta di seguito per pianificare ed eseguire una distri
 <tr class="even">
 <td><a href="https://aka.ms/mdd0"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd0">Guida introduttiva: indicazioni su utenti, processi e tecnologia</a></strong></p>
-<p>Informazioni sui vantaggi correlato al passaggio a Windows 10 e Office 365 ProPlus e sulle principali modifiche, considerazioni rispetto alle distribuzioni precedenti e procedure consigliate per una transizione a Windows 10 e Office 365 ProPlus priva di problemi.</p></td>
+<p>Informazioni sui vantaggi correlati al passaggio a Windows 10 e Microsoft 365 Apps for enterprise e sulle principali modifiche, considerazioni rispetto alle distribuzioni precedenti e procedure consigliate per una transizione a Windows 10 e Microsoft 365 Apps for enterprise priva di problemi.</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
 </tr>
 <tbody>
@@ -115,13 +115,13 @@ Seguire la procedura descritta di seguito per pianificare ed eseguire una distri
 <tr class="even">
 <td><a href="https://aka.ms/mdd2"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd2">Passaggio 2: conformità della directory e della rete</a></strong></p>
-<p>I servizi connessi tramite cloud in Office 365 ProPlus e le nuove opzioni di distribuzione come Windows Autopilot richiedono Azure Active Directory. Anche la rete e la connettività sono aree importanti da pianificare quando si trasferiscono immagini, app, driver e file correlati nei PC. Ottenere informazioni su come i nuovi strumenti e opzioni di distribuzione riducono e ottimizzano il traffico di rete.</p></td>
+<p>I servizi connessi tramite cloud in Microsoft 365 Apps for enterprise e le nuove opzioni di distribuzione come Windows Autopilot richiedono Azure Active Directory. Anche la rete e la connettività sono aree importanti da pianificare quando si trasferiscono immagini, app, driver e file correlati nei PC. Ottenere informazioni su come i nuovi strumenti e opzioni di distribuzione riducono e ottimizzano il traffico di rete.</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://aka.ms/mdd3"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd3">Passaggio 3: distribuzione di Office e app line-of-business</a></strong></p>
-<p>Verificare che le app siano compresse e pronte per l'installazione automatica. In questo passaggio vengono fornite informazioni sulle nuove opzioni offerte dai pacchetti a portata di clic di Office 365 ProPlus per configurare, distribuire e mantenere aggiornate le app di Office.</p></td>
+<p>Verificare che le app siano compresse e pronte per l'installazione automatica. Informazioni sulle nuove opzioni offerte dai pacchetti a portata di clic di Microsoft 365 Apps for enterprise per configurare, distribuire e mantenere aggiornate le app di Office.</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
@@ -133,7 +133,7 @@ Seguire la procedura descritta di seguito per pianificare ed eseguire una distri
 <tr class="odd">
 <td><a href="https://aka.ms/mdd5"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd5">Passaggio 5: considerazioni sulla sicurezza e conformità</a></strong></p>
-<p>Windows 10 e Office 365 ProPlus forniscono nuovi modi per proteggere dati, dispositivi e utenti e per rilevare rapidamente e rispondere alle minacce. In questo passaggio vengono inoltre fornite informazioni su come gestire i problemi comuni relativi alla crittografia del disco, alle app antimalware e ai criteri quando si passa a Windows 10.</p></td>
+<p>Windows 10 e Microsoft 365 Apps for enterprise forniscono nuovi modi per proteggere dati, dispositivi e utenti e per rilevare rapidamente e rispondere alle minacce. In questo passaggio vengono inoltre fornite informazioni su come gestire i problemi comuni relativi alla crittografia del disco, alle app antimalware e ai criteri quando si passa a Windows 10.</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
@@ -145,13 +145,13 @@ Seguire la procedura descritta di seguito per pianificare ed eseguire una distri
 <tr class="odd">
 <td><a href="https://aka.ms/mdd7"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd7">Passaggio 7: manutenzione di Windows e Office</a></strong></p>
-<p>Windows 10 e Office 365 ProPlus aggiungono continuamente nuove funzionalità per continuare a offrire esperienze utente e protezione con le ultime novità. In questo passaggio vengono fornite informazioni su come restare al passo con gli aggiornamenti mensili e semestrali, su come funziona il nuovo modello di manutenzione e sugli strumenti e opzioni già disponibili.</p></td>
+<p>Windows 10 e Microsoft 365 Apps for enterprise aggiungono continuamente nuove funzionalità per continuare a offrire esperienze utente e protezione con le ultime novità. In questo passaggio vengono fornite informazioni su come restare al passo con gli aggiornamenti mensili e semestrali, su come funziona il nuovo modello di manutenzione e sugli strumenti e opzioni già disponibili.</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
 <td><a href="https://aka.ms/mdd8"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd8">Passaggio 8: formazione e comunicazione utente</a></strong></p>
-<p>Verificare che gli utenti siano informati sulle nuove esperienze e sulle nuove modalità di lavoro quando si passa a Windows 10 e Office 365 ProPlus. Ottenere informazioni su come sfruttare l’assistenza per l’adozione da parte degli utenti con Microsoft FastTrack, sui materiali di formazione e sui modelli di comunicazione, oltre che sui nuovi modi per monitorare l'utilizzo e l’accettazione da parte degli utenti.</p></td>
+<p>Verificare che gli utenti siano informati sulle nuove esperienze e sulle nuove modalità di lavoro quando si passa a Windows 10 e Microsoft 365 Apps for enterprise. Ottenere informazioni su come sfruttare l'assistenza per l'adozione da parte degli utenti con Microsoft FastTrack, sui materiali di formazione e sui modelli di comunicazione, oltre che sui nuovi modi per monitorare l'utilizzo e l’accettazione da parte degli utenti.</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </tr>
 </tbody>
