@@ -3,7 +3,7 @@ Vedere anche [Prerequisiti](https://docs.microsoft.com/microsoft-365/enterprise/
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>Obbligatorio: gli account di amministratore globale sono protetti 
 
-Gli [account di amministratore globale di Office 365 sono stati protetti](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) per contrastare la possibile compromissione delle credenziali da parte di malintenzionati, che potrebbe condurre a violazioni dell’abbonamento a Microsoft 365.
+Gli [account di amministratore globale sono stati protetti](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) per contrastare la possibile compromissione delle credenziali da parte di malintenzionati, che potrebbe condurre a violazioni dell’abbonamento a Microsoft 365.
 
 Se si ignora questo requisito, gli account di amministratore globale potrebbero essere soggetti ad attacchi e violazioni, consentendo a terzi l'acquisizione di dati e l'utilizzo di tali informazioni per scopi di raccolta, distruzione o ricatto.
 
@@ -17,7 +17,7 @@ Utilizzare questa procedura per verificare che gli account di amministratore glo
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Accedere a Office 365 usando ognuno degli account del passaggio 1. Ogni accesso dovrà richiedere Azure Multi-Factor Authentication e la forma più avanzata di autenticazione secondaria disponibile nell'organizzazione.
+2. Accedere usando ognuno degli account del passaggio 1. Ogni accesso dovrà richiedere Azure Multi-Factor Authentication e la forma più avanzata di autenticazione secondaria disponibile nell'organizzazione.
 
 > [!Note]
 > Vedere [Connettersi a PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) per le istruzioni sull'istallazione del modulo Azure Active Directory PowerShell for Graph e sull'accesso a Office 365.
@@ -66,11 +66,11 @@ Se si ignora questa opzione, gli utenti potrebbero dover immettere le credenzial
 Se necessario, il [Passaggio 2](../identity-secure-your-passwords.md#identity-sso) può aiutare con questa opzione.
 
 <a name="crit-identity-custom-sign-in"></a>
-### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Facoltativo: la schermata di accesso a Office 365 è personalizzata per l'organizzazione
+### <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>Facoltativo: la schermata di accesso è personalizzata per l'organizzazione
 
-È stata utilizzata la procedura descritta in [Aggiungere il marchio dell'azienda alla pagina di accesso e alle pagine del riquadro di accesso](https://aka.ms/aadpaddbranding) per aggiungere le informazioni personalizzate distintive dell'azienda nella pagina di accesso di Office 365.
+È stata utilizzata la procedura descritta in [Aggiungere il marchio dell'azienda alla pagina di accesso e alle pagine del riquadro di accesso](https://aka.ms/aadpaddbranding) per aggiungere le informazioni personalizzate distintive dell'azienda nella pagina di accesso.
 
-Se si ignora questa opzione, gli utenti visualizzeranno una schermata generica di accesso a Office 365 e non avranno la certezza di effettuare l'accesso al sito dell'organizzazione.
+Se si ignora questa opzione, gli utenti visualizzeranno una schermata generica di accesso e non avranno la certezza di effettuare l'accesso al sito dell'organizzazione.
 
 Se necessario, il [Passaggio 2](../identity-secure-your-passwords.md#identity-custom-sign-in) può aiutare con questa opzione.
 
@@ -183,7 +183,7 @@ Accedere al portale di Office 365 con il nome dell'account utente e Azure Multi-
 
 
 <a name="crit-identity-self-service-groups"></a>
-### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>Facoltativo: la gestione dei gruppi in modalità self-service è abilitata per specifici gruppi di sicurezza di Azure AD e Office 365
+### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>Facoltativo: la gestione dei gruppi in modalità self-service è abilitata per specifici gruppi di sicurezza di Azure AD e Microsoft 365
 
 È stato stabilito quali gruppi soddisfano i requisiti per la gestione in modalità self-service, i relativi proprietari sono stati istruiti sulle responsabilità e sul flusso di lavoro della gestione dei gruppi ed [è stata configurata la gestione in modalità self-service in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) per tali gruppi.
 

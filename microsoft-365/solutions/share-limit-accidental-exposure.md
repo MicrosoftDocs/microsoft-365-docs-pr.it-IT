@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni su come limitare l'esposizione accidentale di informazioni quando si condividono file con persone esterne all'organizzazione.
-ms.openlocfilehash: a84c5183ba3a816cf4d65f854f0143a48374f669
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604568"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632584"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitare l'esposizione accidentale ai file durante la condivisione con persone esterne all'organizzazione
 
@@ -79,7 +79,7 @@ Per limitare la condivisione esterna ai membri di un gruppo di sicurezza
 3. In **Chi può condividere all'esterno dell'organizzazione** selezionare una o entrambe le caselle di controllo: a. **Consenti solo agli utenti dei gruppi di sicurezza selezionati di condividere con utenti esterni autenticati** per specificare un gruppo di sicurezza che può condividere con utenti autenticati b. **Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati** per specificare un gruppo di sicurezza che può condividere con utenti autenticati e usando collegamenti di tipo Chiunque
 4. Fare clic su **OK**.
 
-Si noti che questo influisce su file, cartelle e siti, ma non sui gruppi di Office 365 o su Teams. Quando i membri invitano gli utenti guest a un gruppo di Office 365 privato o a un team privato in Microsoft Teams, l'invito viene inviato al proprietario del gruppo o del team per l'approvazione.
+Si noti che questo influisce su file, cartelle e siti, ma non sui gruppi di Microsoft 365 o su Teams. Quando i membri invitano gli utenti guest a un gruppo di Microsoft 365 privato o a un team privato in Microsoft Teams, l'invito viene inviato al proprietario del gruppo o del team per l'approvazione.
 
 ## <a name="see-also"></a>Vedere anche
 
