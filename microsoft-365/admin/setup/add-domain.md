@@ -25,20 +25,20 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Office 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a77526efc526073e17b535612213202ad22d5657
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631816"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800024"
 ---
-# <a name="add-a-domain-to-office-365"></a><span data-ttu-id="7cb17-104">Aggiungere un dominio a Office 365</span><span class="sxs-lookup"><span data-stu-id="7cb17-104">Add a domain to Office 365</span></span>
+# <a name="add-a-domain-to-office-365"></a><span data-ttu-id="c0245-104">Aggiungere un dominio a Office 365</span><span class="sxs-lookup"><span data-stu-id="c0245-104">Add a domain to Office 365</span></span>
 
- <span data-ttu-id="7cb17-105">Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](domains-faq.md)**.</span><span class="sxs-lookup"><span data-stu-id="7cb17-105">**[Check the Domains FAQ](domains-faq.md)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="c0245-105">Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](domains-faq.md)**.</span><span class="sxs-lookup"><span data-stu-id="c0245-105">**[Check the Domains FAQ](domains-faq.md)** if you don't find what you're looking for.</span></span> 
   
- <span data-ttu-id="7cb17-106">*Per aggiungere, modificare o rimuovere i domini, è **necessario** essere un **amministratore globale** di un [piano aziendale o aziendale](https://products.office.com/business/office). Queste modifiche hanno effetto sull'intero tenant, gli *amministratori personalizzati* o *gli utenti normali* non saranno in grado di apportare queste modifiche.*</span><span class="sxs-lookup"><span data-stu-id="7cb17-106">*To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*</span></span>  
+ <span data-ttu-id="c0245-106">*Per aggiungere, modificare o rimuovere i domini, è **necessario** essere un **amministratore globale** di un [piano aziendale o aziendale](https://products.office.com/business/office). Queste modifiche hanno effetto sull'intero tenant, gli *amministratori personalizzati* o *gli utenti normali* non saranno in grado di apportare queste modifiche.*</span><span class="sxs-lookup"><span data-stu-id="c0245-106">*To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*</span></span>  
 
- <span data-ttu-id="7cb17-107">Eseguire la procedura seguente per aggiungere, configurare o continuare a configurare un dominio.</span><span class="sxs-lookup"><span data-stu-id="7cb17-107">Follow these steps to add, set up, or continue setting up a domain.</span></span> 
+ <span data-ttu-id="c0245-107">Eseguire la procedura seguente per aggiungere, configurare o continuare a configurare un dominio.</span><span class="sxs-lookup"><span data-stu-id="c0245-107">Follow these steps to add, set up, or continue setting up a domain.</span></span> 
 
 ::: moniker range="o365-worldwide"
   
@@ -52,64 +52,107 @@ ms.locfileid: "43631816"
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="7cb17-108">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="7cb17-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
+1. <span data-ttu-id="c0245-108">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="c0245-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
 
 ::: moniker-end
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="7cb17-109">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span><span class="sxs-lookup"><span data-stu-id="7cb17-109">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span></span>
+1. <span data-ttu-id="c0245-109">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span><span class="sxs-lookup"><span data-stu-id="c0245-109">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="7cb17-110">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.</span><span class="sxs-lookup"><span data-stu-id="7cb17-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.</span></span>
+1. <span data-ttu-id="c0245-110">Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.</span><span class="sxs-lookup"><span data-stu-id="c0245-110">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.</span></span>
 
 ::: moniker-end
     
-2. <span data-ttu-id="7cb17-111">Passare alla pagina **configurazione** > **domini** .</span><span class="sxs-lookup"><span data-stu-id="7cb17-111">Go to the **Setup** > **Domains** page.</span></span> 
+2. <span data-ttu-id="c0245-111">Passare alla pagina **configurazione** > **domini** .</span><span class="sxs-lookup"><span data-stu-id="c0245-111">Go to the **Setup** > **Domains** page.</span></span> 
 
-3. <span data-ttu-id="7cb17-112">Selezionare **Aggiungi dominio**.</span><span class="sxs-lookup"><span data-stu-id="7cb17-112">Select **Add domain**.</span></span>
+3. <span data-ttu-id="c0245-112">Selezionare **Aggiungi dominio**.</span><span class="sxs-lookup"><span data-stu-id="c0245-112">Select **Add domain**.</span></span>
     
-4. <span data-ttu-id="7cb17-113">Immettere il nome del dominio che si desidera aggiungere, quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="7cb17-113">Enter the name of the domain you want to add, then select **Next**.</span></span>
+4. <span data-ttu-id="c0245-113">Immettere il nome del dominio che si desidera aggiungere, quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="c0245-113">Enter the name of the domain you want to add, then select **Next**.</span></span>
     
-5. <span data-ttu-id="7cb17-114">Scegliere in che modo si desidera verificare che si è proprietari del dominio.</span><span class="sxs-lookup"><span data-stu-id="7cb17-114">Choose how you want to verify that you own the domain.</span></span>
+5. <span data-ttu-id="c0245-114">Scegliere in che modo si desidera verificare che si è proprietari del dominio.</span><span class="sxs-lookup"><span data-stu-id="c0245-114">Choose how you want to verify that you own the domain.</span></span>
     
-    1. <span data-ttu-id="7cb17-115">Se il dominio è registrato su GoDaddy o 1&amp;1, selezionare **Accedi** > **successivamente** e Microsoft[consentirà la configurazione automatica dei record](../get-help-with-domains/domain-connect.md).</span><span class="sxs-lookup"><span data-stu-id="7cb17-115">If your domain is registered at GoDaddy or 1&amp;1, select **Sign in** > **Next** and Microsoft[will set up your records automatically](../get-help-with-domains/domain-connect.md).</span></span>
+    1. <span data-ttu-id="c0245-115">Se il dominio è registrato su GoDaddy o 1&amp;1, selezionare **Accedi** > **successivamente** e Microsoft[consentirà la configurazione automatica dei record](../get-help-with-domains/domain-connect.md).</span><span class="sxs-lookup"><span data-stu-id="c0245-115">If your domain is registered at GoDaddy or 1&amp;1, select **Sign in** > **Next** and Microsoft[will set up your records automatically](../get-help-with-domains/domain-connect.md).</span></span>
     
-    2. <span data-ttu-id="7cb17-116">È possibile specificare l'invio di un messaggio di posta elettronica contenente un codice di verifica al contatto registrato per il dominio.</span><span class="sxs-lookup"><span data-stu-id="7cb17-116">You can have an email sent to the registered contact for the domain with a verification code.</span></span> <span data-ttu-id="7cb17-117">Se non si riconosce o si ha accesso al messaggio di posta elettronica su record, è possibile utilizzare la terza opzione.</span><span class="sxs-lookup"><span data-stu-id="7cb17-117">If you don't recognize or have access to the email on record, you can use the third option.</span></span>
+    2. <span data-ttu-id="c0245-116">È possibile specificare l'invio di un messaggio di posta elettronica contenente un codice di verifica al contatto registrato per il dominio.</span><span class="sxs-lookup"><span data-stu-id="c0245-116">You can have an email sent to the registered contact for the domain with a verification code.</span></span> <span data-ttu-id="c0245-117">Se non si riconosce o si ha accesso al messaggio di posta elettronica su record, è possibile utilizzare la terza opzione.</span><span class="sxs-lookup"><span data-stu-id="c0245-117">If you don't recognize or have access to the email on record, you can use the third option.</span></span>
     
-    3. <span data-ttu-id="7cb17-118">È possibile usare un record TXT per verificare il dominio.</span><span class="sxs-lookup"><span data-stu-id="7cb17-118">You can use a TXT record to verify your domain.</span></span> <span data-ttu-id="7cb17-119">Selezionarlo e quindi fare clic su **Avanti** per visualizzare le istruzioni su come aggiungere il record DNS al sito Web del registrar.</span><span class="sxs-lookup"><span data-stu-id="7cb17-119">Select this and select **Next** to see instructions for how to add this DNS record to your registrar's website.</span></span> <span data-ttu-id="7cb17-120">Dopo aver aggiunto il record, possono essere necessari fino a 30 minuti.</span><span class="sxs-lookup"><span data-stu-id="7cb17-120">This can take up to 30 minutes to verify after you've added the record.</span></span> 
+    3. <span data-ttu-id="c0245-118">È possibile usare un record TXT per verificare il dominio.</span><span class="sxs-lookup"><span data-stu-id="c0245-118">You can use a TXT record to verify your domain.</span></span> <span data-ttu-id="c0245-119">Selezionarlo e quindi fare clic su **Avanti** per visualizzare le istruzioni su come aggiungere il record DNS al sito Web del registrar.</span><span class="sxs-lookup"><span data-stu-id="c0245-119">Select this and select **Next** to see instructions for how to add this DNS record to your registrar's website.</span></span> <span data-ttu-id="c0245-120">Dopo aver aggiunto il record, possono essere necessari fino a 30 minuti.</span><span class="sxs-lookup"><span data-stu-id="c0245-120">This can take up to 30 minutes to verify after you've added the record.</span></span> 
     
-6. <span data-ttu-id="7cb17-121">Scegliere in che modo si desidera rendere necessarie le modifiche del DNS per l'utilizzo del dominio da parte di Office.</span><span class="sxs-lookup"><span data-stu-id="7cb17-121">Choose how you want to make the DNS changes required for Office to use your domain.</span></span>
+6. <span data-ttu-id="c0245-121">Scegliere in che modo si desidera rendere necessarie le modifiche del DNS per l'utilizzo del dominio da parte di Office.</span><span class="sxs-lookup"><span data-stu-id="c0245-121">Choose how you want to make the DNS changes required for Office to use your domain.</span></span>
     
-    1. <span data-ttu-id="7cb17-122">Scegliere **Add the DNS Records for me** se si desidera che Office configuri automaticamente il DNS.</span><span class="sxs-lookup"><span data-stu-id="7cb17-122">Choose **Add the DNS records for me** if you want Office to configure your DNS automatically.</span></span> 
+    1. <span data-ttu-id="c0245-122">Scegliere **Add the DNS Records for me** se si desidera che Office configuri automaticamente il DNS.</span><span class="sxs-lookup"><span data-stu-id="c0245-122">Choose **Add the DNS records for me** if you want Office to configure your DNS automatically.</span></span> 
     
   
-    2. <span data-ttu-id="7cb17-123">Scegliere **i ' ll add the DNS Records me stesso** se si desidera collegare solo i servizi specifici di Office 365 al dominio o se si desidera ignorare questo per ora e farlo in un secondo momento.</span><span class="sxs-lookup"><span data-stu-id="7cb17-123">Choose **I'll add the DNS records myself** if you want to attach only specific Office 365 services to your domain or if you want to skip this for now and do this later.</span></span> <span data-ttu-id="7cb17-124">**Scegliere questa opzione solo se si è effettivamente in grado di eseguire l'operazione.**</span><span class="sxs-lookup"><span data-stu-id="7cb17-124">**Choose this option if you know exactly what you're doing.**</span></span>
+    2. <span data-ttu-id="c0245-123">Scegliere **i ' ll add the DNS Records me stesso** se si desidera collegare solo i servizi specifici di Office 365 al dominio o se si desidera ignorare questo per ora e farlo in un secondo momento.</span><span class="sxs-lookup"><span data-stu-id="c0245-123">Choose **I'll add the DNS records myself** if you want to attach only specific Office 365 services to your domain or if you want to skip this for now and do this later.</span></span> <span data-ttu-id="c0245-124">**Scegliere questa opzione solo se si è effettivamente in grado di eseguire l'operazione.**</span><span class="sxs-lookup"><span data-stu-id="c0245-124">**Choose this option if you know exactly what you're doing.**</span></span>
     
-7. <span data-ttu-id="7cb17-125">Se si è scelto di *aggiungere manualmente i record DNS* , selezionare **Avanti** e visualizzare una pagina contenente tutti i record che è necessario aggiungere al sito Web di registrazione per configurare il dominio.</span><span class="sxs-lookup"><span data-stu-id="7cb17-125">If you chose to  *add DNS records yourself*  , select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain.</span></span> 
+7. <span data-ttu-id="c0245-125">Se si è scelto di *aggiungere manualmente i record DNS* , selezionare **Avanti** e visualizzare una pagina contenente tutti i record che è necessario aggiungere al sito Web di registrazione per configurare il dominio.</span><span class="sxs-lookup"><span data-stu-id="c0245-125">If you chose to  *add DNS records yourself*  , select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain.</span></span> 
     
   
   
-    <span data-ttu-id="7cb17-126">Se il portale non riconosce il registrar, è possibile [seguire queste istruzioni generali.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)</span><span class="sxs-lookup"><span data-stu-id="7cb17-126">If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)</span></span>
+    <span data-ttu-id="c0245-126">Se il portale non riconosce il registrar, è possibile [seguire queste istruzioni generali.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)</span><span class="sxs-lookup"><span data-stu-id="c0245-126">If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)</span></span>
     
-    <span data-ttu-id="7cb17-127">Controllare l'elenco delle [istruzioni specifiche per l'host](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) per trovare l'host e seguire la procedura per aggiungere tutti i record necessari.</span><span class="sxs-lookup"><span data-stu-id="7cb17-127">Check our list of [host-specific instructions](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) to find your host and follow the steps to add all the records you need.</span></span> 
+    <span data-ttu-id="c0245-127">Controllare l'elenco delle [istruzioni specifiche per l'host](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) per trovare l'host e seguire la procedura per aggiungere tutti i record necessari.</span><span class="sxs-lookup"><span data-stu-id="c0245-127">Check our list of [host-specific instructions](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) to find your host and follow the steps to add all the records you need.</span></span> 
     
-    <span data-ttu-id="7cb17-128">Per identificare il provider di hosting DNS o il registrar per il dominio, vedere [Trovare il registrar o il provider di hosting DNS](../get-help-with-domains/find-your-domain-registrar.md).</span><span class="sxs-lookup"><span data-stu-id="7cb17-128">If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).</span></span>
+    <span data-ttu-id="c0245-128">Per identificare il provider di hosting DNS o il registrar per il dominio, vedere [Trovare il registrar o il provider di hosting DNS](../get-help-with-domains/find-your-domain-registrar.md).</span><span class="sxs-lookup"><span data-stu-id="c0245-128">If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).</span></span>
     
-    <span data-ttu-id="7cb17-129">Se si desidera attendere in un secondo momento, scorrere fino alla fine e selezionare **Ignora questo passaggio**.</span><span class="sxs-lookup"><span data-stu-id="7cb17-129">If you want to wait for later, scroll to the bottom and select **Skip this step**.</span></span>
+    <span data-ttu-id="c0245-129">Se si desidera attendere in un secondo momento, scorrere fino alla fine e selezionare **Ignora questo passaggio**.</span><span class="sxs-lookup"><span data-stu-id="c0245-129">If you want to wait for later, scroll to the bottom and select **Skip this step**.</span></span>
     
-8. <span data-ttu-id="7cb17-130">Seleziona **fine** -hai finito!</span><span class="sxs-lookup"><span data-stu-id="7cb17-130">Select **Finish** - you're done!</span></span> 
+8. <span data-ttu-id="c0245-130">Seleziona **fine** -hai finito!</span><span class="sxs-lookup"><span data-stu-id="c0245-130">Select **Finish** - you're done!</span></span> 
 
-## <a name="related-articles"></a><span data-ttu-id="7cb17-131">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="7cb17-131">Related articles</span></span>
+## <a name="add-or-edit-custom-dns-records"></a><span data-ttu-id="c0245-131">Aggiungere o modificare record DNS personalizzati</span><span class="sxs-lookup"><span data-stu-id="c0245-131">Add or edit custom DNS records</span></span>
 
-[<span data-ttu-id="7cb17-132">Domande frequenti sui domini</span><span class="sxs-lookup"><span data-stu-id="7cb17-132">Domains FAQ</span></span>](domains-faq.md)
+<span data-ttu-id="c0245-132">Attenersi alla procedura riportata di seguito per aggiungere un record personalizzato per un sito Web o un servizio di terze parti.</span><span class="sxs-lookup"><span data-stu-id="c0245-132">Follow the steps below to add a custom record for a website or 3rd party service.</span></span>
 
-[<span data-ttu-id="7cb17-133">Che cosa è un dominio?</span><span class="sxs-lookup"><span data-stu-id="7cb17-133">What is a domain?</span></span>](../get-help-with-domains/what-is-a-domain.md)
+1. <span data-ttu-id="c0245-133">Accedere all'interfaccia di amministrazione di Microsoft all' <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>indirizzo.</span><span class="sxs-lookup"><span data-stu-id="c0245-133">Sign in to the Microsoft admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>
 
-[<span data-ttu-id="7cb17-134">Acquistare un nome di dominio in Office 365</span><span class="sxs-lookup"><span data-stu-id="7cb17-134">Buy a domain name in Office 365</span></span>](../get-help-with-domains/buy-a-domain-name.md)
+2. <span data-ttu-id="c0245-134">Passare alla pagina **Impostazioni**  > **domini** .</span><span class="sxs-lookup"><span data-stu-id="c0245-134">Go to the **Settings**  > **Domains** page.</span></span>
 
-[<span data-ttu-id="7cb17-135">Configurare il dominio (istruzioni specifiche per l’host)</span><span class="sxs-lookup"><span data-stu-id="7cb17-135">Set up your domain (host-specific instructions)</span></span>](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+3. <span data-ttu-id="c0245-135">Nella pagina **Domini** selezionare un dominio.</span><span class="sxs-lookup"><span data-stu-id="c0245-135">On the **Domains** page, select a domain.</span></span> 
+    
+4. <span data-ttu-id="c0245-136">In **impostazioni DNS**selezionare **record personalizzati**; quindi selezionare **nuovo record personalizzato**.</span><span class="sxs-lookup"><span data-stu-id="c0245-136">Under **DNS settings**, select **Custom Records**; then select **New custom record**.</span></span>
 
-[<span data-ttu-id="7cb17-136">Ottenere assistenza per i domini</span><span class="sxs-lookup"><span data-stu-id="7cb17-136">Get help with domains</span></span>](../get-help-with-domains/get-help-with-domains.md)
+5. <span data-ttu-id="c0245-137">Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.</span><span class="sxs-lookup"><span data-stu-id="c0245-137">Select the type of DNS record you want to add and type the information for the new record.</span></span>
+    
+6. <span data-ttu-id="c0245-138">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="c0245-138">Select **Save**.</span></span>
+
+## <a name="registrars-with-domain-connect"></a><span data-ttu-id="c0245-139">Registrar con Domain Connect</span><span class="sxs-lookup"><span data-stu-id="c0245-139">Registrars with Domain Connect</span></span>
+
+<span data-ttu-id="c0245-140">I registrar abilitati alla [connessione di dominio](https://www.domainconnect.org/) consentono di aggiungere il dominio a Microsoft 365 in un processo in tre passaggi che richiede minuti.</span><span class="sxs-lookup"><span data-stu-id="c0245-140">[Domain Connect](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes.</span></span> 
+  
+<span data-ttu-id="c0245-141">Nella procedura guidata, è sufficiente confermare che si è proprietari del dominio e quindi configurare automaticamente i record del dominio, in modo che la posta elettronica venga a Microsoft 365 e ad altri servizi Microsoft 365, come i team, che collaborino con il proprio dominio.</span><span class="sxs-lookup"><span data-stu-id="c0245-141">In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="c0245-142">Disabilitare il blocco dei popup nel browser prima di iniziare la configurazione guidata.</span><span class="sxs-lookup"><span data-stu-id="c0245-142">Make sure you disable any popup blockers in your browser before you start the setup wizard.</span></span>
+  
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a><span data-ttu-id="c0245-143">Domain Connect registrar che si integrano con Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="c0245-143">Domain Connect registrars integrating with Microsoft 365</span></span>
+
+- [<span data-ttu-id="c0245-144">1&amp;1 IONOS</span><span class="sxs-lookup"><span data-stu-id="c0245-144">1&amp;1 IONOS</span></span>](https://www.1and1.com/)
+- [<span data-ttu-id="c0245-145">123Reg</span><span class="sxs-lookup"><span data-stu-id="c0245-145">123Reg</span></span>](https://www.123-reg.co.uk/)
+- [<span data-ttu-id="c0245-146">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="c0245-146">GoDaddy</span></span>](https://www.godaddy.com/)
+- [<span data-ttu-id="c0245-147">WordPress</span><span class="sxs-lookup"><span data-stu-id="c0245-147">WordPress</span></span>](https://wordpress.com/)
+- [<span data-ttu-id="c0245-148">Plesk</span><span class="sxs-lookup"><span data-stu-id="c0245-148">Plesk</span></span>](https://www.plesk.com/)
+- [<span data-ttu-id="c0245-149">MediaTemple</span><span class="sxs-lookup"><span data-stu-id="c0245-149">MediaTemple</span></span>](https://mediatemple.net/)
+- <span data-ttu-id="c0245-150">SecureServer o WildWestDomains (rivenditori GoDaddy con hosting DNS di SecureServer)</span><span class="sxs-lookup"><span data-stu-id="c0245-150">SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)</span></span>
+    - [<span data-ttu-id="c0245-151">Domini di MadDog</span><span class="sxs-lookup"><span data-stu-id="c0245-151">MadDog Domains</span></span>](https://www.maddogdomains.com/)
+    - [<span data-ttu-id="c0245-152">CheapNames</span><span class="sxs-lookup"><span data-stu-id="c0245-152">CheapNames</span></span>](https://www.cheapnames.com)
+
+### <a name="what-happens-to-my-email-and-website"></a><span data-ttu-id="c0245-153">Cosa succede alla posta elettronica e al sito Web?</span><span class="sxs-lookup"><span data-stu-id="c0245-153">What happens to my email and website?</span></span>
+
+<span data-ttu-id="c0245-154">Dopo aver completato l'installazione, il record MX per il dominio viene aggiornato in modo che punti a Microsoft 365 e tutti i messaggi di posta elettronica per il dominio inizieranno a essere inviati a Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="c0245-154">After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365.</span></span> <span data-ttu-id="c0245-155">Assicurarsi di aver aggiunto utenti e configurato le cassette postali in Office 365 per tutte le persone che ricevono posta nel dominio.</span><span class="sxs-lookup"><span data-stu-id="c0245-155">Make sure you've added users and set up mailboxes in Office 365 for everyone who gets email on your domain!</span></span>
+  
+<span data-ttu-id="c0245-156">Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare dove si trova.</span><span class="sxs-lookup"><span data-stu-id="c0245-156">If you have a website that you use with your business, it will keep working where it is.</span></span> <span data-ttu-id="c0245-157">I passaggi di installazione di Domain Connect non influiscono sul sito Web.</span><span class="sxs-lookup"><span data-stu-id="c0245-157">The Domain Connect setup steps don't affect your website.</span></span>
+
+## <a name="related-articles"></a><span data-ttu-id="c0245-158">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="c0245-158">Related articles</span></span>
+
+[<span data-ttu-id="c0245-159">Domande frequenti sui domini</span><span class="sxs-lookup"><span data-stu-id="c0245-159">Domains FAQ</span></span>](domains-faq.md)
+
+[<span data-ttu-id="c0245-160">Che cosa è un dominio?</span><span class="sxs-lookup"><span data-stu-id="c0245-160">What is a domain?</span></span>](../get-help-with-domains/what-is-a-domain.md)
+
+[<span data-ttu-id="c0245-161">Acquistare un nome di dominio in Office 365</span><span class="sxs-lookup"><span data-stu-id="c0245-161">Buy a domain name in Office 365</span></span>](../get-help-with-domains/buy-a-domain-name.md)
+
+[<span data-ttu-id="c0245-162">Configurare il dominio (istruzioni specifiche per l’host)</span><span class="sxs-lookup"><span data-stu-id="c0245-162">Set up your domain (host-specific instructions)</span></span>](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+
+[<span data-ttu-id="c0245-163">Ottenere assistenza per i domini</span><span class="sxs-lookup"><span data-stu-id="c0245-163">Get help with domains</span></span>](../get-help-with-domains/get-help-with-domains.md)
