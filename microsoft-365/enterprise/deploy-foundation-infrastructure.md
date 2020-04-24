@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le fasi principali della distribuzione dell'infrastruttura di base per Microsoft 365 per le aziende all'interno dell'organizzazione, nota anche come la distribuzione di base.
-ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 287afd5e5f75bb6547e1898877f3d1c65ebfb9a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153845"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638249"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infrastruttura di base di Microsoft 365 per le aziende
 
@@ -33,9 +33,9 @@ Per un percorso definito end-to-end per la distribuzione, è possibile utilizzar
 |![Fase 1: collegamento in rete](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[Fase 1: Funzionalità di rete](networking-infrastructure.md)| La rete è ottimizzata per l'accesso ai servizi basati sul cloud di Microsoft 365. |
 |![Fase 2: identità](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[Fase 2: identità](identity-infrastructure.md)| Gli account di amministratore sono protetti, gli utenti e gruppi sono sincronizzati e l'autenticazione degli utenti è sicura. |
 |![Fase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Fase 3: Windows 10 Enterprise](windows10-infrastructure.md)| I computer esistenti basati su Windows possono eseguire l'aggiornamento a Windows 10 Enterprise e vengono installati nuovi dispositivi con Windows 10 Enterprise. |
-|![Fase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Fase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Gli utenti di Microsoft Office esistenti possono eseguire l'aggiornamento a Office 365 ProPlus. |
+|![Fase 4: Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Fase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)| Gli utenti esistenti di Microsoft Office possono eseguire l'aggiornamento a Microsoft 365 Apps for enterprise. |
 |![Fase 5: gestione dei dispositivi mobili](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Fase 5: gestione dei dispositivi mobili](mobility-infrastructure.md)| I dispositivi possono essere registrati e gestiti. |
-|![Fase 6: protezione delle informazioni](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fase 6: protezione delle informazioni](infoprotect-infrastructure.md)| Le funzionalità di sicurezza di Office 365 sono abilitate e sono pronti etichette e criteri per proteggere i documenti e i messaggi di posta elettronica. |
+|![Fase 6: protezione delle informazioni](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fase 6: protezione delle informazioni](infoprotect-infrastructure.md)| Le funzionalità di sicurezza di Microsoft 365 sono abilitate e sono pronti criteri ed etichette per proteggere documenti ed e-mail. |
 
 Le fasi iniziano con le più fondamentali (rete e identità) e quindi creano livelli di impostazioni dell'infrastruttura e gruppi per:
 
@@ -90,9 +90,9 @@ Ad esempio, creare le impostazioni per:
 |:-------|:-----|
 | Identità | Sincronizzazione di account e gruppi per i criteri di accesso condizionale basato sull'identità. |
 | Windows 10 Enterprise | Gruppi per aggiornare automaticamente i computer che eseguono Windows 7 o Windows 8.1 a Windows 10 Enterprise. |
-| Office 365 ProPlus | Gruppi per distribuire automaticamente Office 365 ProPlus agli utenti con Office 2010, Office 2013 o Office 2016. |
+| Microsoft 365 Apps for enterprise | Gruppi per distribuire automaticamente Microsoft 365 Apps for enterprise agli utenti con Office 2010, Office 2013 o Office 2016. |
 | Gestione dei dispositivi mobili | Gruppi per la registrazione di dispositivi e per i criteri di accesso condizionale basati sul dispositivo. |
-| Protezione delle informazioni | Gruppi per le etichette di riservatezza di Office 365. |
+| Protezione delle informazioni | Gruppi per etichette di riservatezza. |
 
 Quando si è pronti a distribuire elementi di questa infrastruttura per gli utenti:
 
@@ -100,11 +100,11 @@ Quando si è pronti a distribuire elementi di questa infrastruttura per gli uten
 |:-------|:-----|
 | Identità | Aggiungere account utenti ai gruppi per i criteri di accesso condizionale basato sull'identità. |
 | Windows 10 Enterprise | Aggiungere account ai gruppi di distribuzione automaticamente di Windows 10 Enterprise utilizzata per gli utenti con Windows 7 o Windows 8.1. |
-| Office 365 ProPlus | Aggiungere account utenti ai gruppi per distribuire automaticamente Office 365 ProPlus agli utenti con Office 2010, Office 2013 o Office 2016. |
+| Microsoft 365 Apps for enterprise | Aggiungere gli account utente ai gruppi per distribuire automaticamente Microsoft 365 Apps for enterprise agli utenti con Office 2010, Office 2013 o Office 2016. |
 | Gestione dei dispositivi mobili | Aggiungere account ai gruppi per la registrazione di dispositivi e per i criteri di accesso condizionale basati sul dispositivo. |
 | Protezione delle informazioni | Aggiungere account utente ai gruppi per le etichette di riservatezza. |
 
-Dopo che le fasi o gli elementi dell'infrastruttura di base sono completati, testati e sperimentati, è possibile distribuire a tutti gli utenti il software installato, ad esempio Windows 10 Enterprise e Office 365 ProPlus, e i servizi e le protezioni basati su cloud, ad esempio la registrazione di dispositivi e i criteri di accesso condizionale, nel modo più idoneo rispetto alle risorse IT e agli obiettivi aziendali.
+Dopo che le fasi o gli elementi dell'infrastruttura di base sono stati completati, testati e sperimentati, è possibile distribuire a tutti gli utenti il software installato (ad esempio, Windows 10 Enterprise e Microsoft 365 Apps for enterprise) e i servizi e le protezioni basati sul cloud, come la registrazione di dispositivi e i criteri di accesso condizionale, nel modo più adatto alle risorse IT e agli obiettivi aziendali.
 
 ## <a name="deployment-and-project-management-strategies"></a>Strategie di distribuzione e di gestione progetti
 
@@ -112,7 +112,7 @@ Per farsi un'idea di come affrontare la gestione dei progetti delle diverse fasi
 
 ## <a name="deployment-for-non-enterprises"></a>Distribuzione per gli scenari non aziendali
 
-Se l'organizzazione è di piccole dimensioni e Microsoft 365 Business non è idoneo, vedere l'articolo sulla [distribuzione per organizzazioni non aziendali](deploy-foundation-infrastructure-non-enterprises.md) per un metodo di distribuzione semplificato.
+Se l'organizzazione è di piccole dimensioni e Microsoft 365 per le aziende non è idoneo, vedere l'articolo sulla [distribuzione per organizzazioni non aziendali](deploy-foundation-infrastructure-non-enterprises.md) per un metodo di distribuzione semplificato.
 
 
 ## <a name="next-step"></a>Passaggio successivo

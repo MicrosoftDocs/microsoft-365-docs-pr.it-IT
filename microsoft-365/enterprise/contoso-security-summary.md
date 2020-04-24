@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul modo in cui Contoso usa le funzionalità di sicurezza in Microsoft 365 Enterprise.
-ms.openlocfilehash: 036c812e645399e00af270e62d057637867595fe
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597093"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636487"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Riepilogo della sicurezza di Microsoft 365 Enterprise per Contoso Corporation
 
@@ -62,7 +62,7 @@ Conformemente alle procedure consigliate sulla sicurezza e ai requisiti di distr
 
   Gli amministratori della sicurezza di Contoso hanno assegnato meno ruoli di amministrazione agli account che fanno riferimento alla funzione e alla responsabilità professionale di un addetto IT.
 
-  Per ulteriori informazioni, vedere [Informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  Per ulteriori informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 - MFA per tutti gli account utente
 
@@ -73,7 +73,7 @@ Conformemente alle procedure consigliate sulla sicurezza e ai requisiti di distr
 
 - Accesso alle applicazioni e ai dispositivi più sicuro con i criteri di accesso condizionale
 
-  Contoso usa [criteri di accesso condizionale](microsoft-365-policies-configurations.md) per identità, dispositivi, Exchange Online e SharePoint. I criteri di accesso condizionale per le identità richiedono la modifica della password per utenti a rischio elevato e impediscono ai client di utilizzare le applicazioni che non supportano l'autenticazione moderna. I criteri per i dispositivi includono la definizione di applicazioni approvate e computer e dispositivi mobili conformi. I criteri di accesso condizionale di Exchange Online includono il blocco del client ActiveSync e la configurazione della crittografia dei messaggi di Office 365. I criteri di accesso condizionale di SharePoint includono ulteriori misure di protezione per i siti sensibili e altamente regolamentati.
+  Contoso usa i [criteri di accesso condizionale](microsoft-365-policies-configurations.md) per identità, dispositivi, Exchange Online e SharePoint. I criteri di accesso condizionale per le identità richiedono la modifica della password per utenti a rischio elevato e impediscono ai client di utilizzare le applicazioni che non supportano l'autenticazione moderna. I criteri per i dispositivi includono la definizione di applicazioni approvate, computer e dispositivi mobili conformi. I criteri di accesso condizionale di Exchange Online includono il blocco del client ActiveSync e la configurazione della crittografia dei messaggi di Office 365. I criteri di accesso condizionale di SharePoint includono misure di sicurezza aggiuntive per i siti sensibili e altamente regolamentati.
 
 - Windows Hello for Business
 
@@ -97,7 +97,7 @@ Conformemente alle procedure consigliate sulla sicurezza e ai requisiti di distr
 
 - Monitoraggio e prevenzione dagli attacchi con Office 365 Analisi e risposta alle minacce
 
-  Contoso usa [Office 365 Analisi e risposta alle minacce](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) per proteggere gli utenti di Office 365 agevolando l'identificazione e la gestione degli attacchi, e per impedire attacchi futuri.
+  Contoso usa la funzionalità di [analisi e risposta alle minacce di Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) per proteggere i propri utenti, agevolando l'identificazione e la gestione degli attacchi e per prevenire attacchi futuri.
 
 - Protezione da attacchi sofisticati con Advanced Threat Analytics
 
@@ -107,9 +107,9 @@ Conformemente alle procedure consigliate sulla sicurezza e ai requisiti di distr
 
 - Proteggere le risorse digitali sensibili e altamente regolamentate con le etichette di Azure Information Protection
 
-  Contoso ha determinato tre livelli di protezione dei dati e ha distribuito le [etichette di riservatezza di Office 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) che gli utenti applicano alle risorse digitali. Per i propri segreti commerciali e altre proprietà intellettuali, Contoso usa i dati altamente regolamentati delle etichette secondarie di riservatezza che consentono di crittografare i contenuti e limitare l'accesso ad account utente e gruppi di utenti specifici.
+  Contoso ha determinato tre livelli di protezione dei dati e ha distribuito le [etichette di riservatezza di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) che gli utenti possono applicare alle risorse digitali. Per i propri segreti commerciali e altre proprietà intellettuali, Contoso usa i dati altamente regolamentati delle etichette secondarie di riservatezza che consentono di crittografare i contenuti e limitare l'accesso ad account utente e gruppi di utenti specifici.
 
-- Prevenire perdite di dati Intranet con la prevenzione della perdita dei dati di Office 365
+- Prevenire perdite di dati Intranet con la prevenzione della perdita dei dati
 
   Contoso ha configurato i criteri di [prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) per Exchange Online, SharePoint e OneDrive for Business per impedire agli utenti di condividere dati sensibili in modo intenzionale o accidentale.
 

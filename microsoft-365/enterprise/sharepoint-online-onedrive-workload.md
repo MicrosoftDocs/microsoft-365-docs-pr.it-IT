@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Passaggi del processo di pianificazione, distribuzione e promozione del valore di SharePoint all'interno dell'organizzazione.
-ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "39886323"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636917"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Distribuire SharePoint e OneDrive per Microsoft 365 Enterprise
 
@@ -53,7 +53,7 @@ SharePoint può essere utilizzato per scopi diversi. Occorre associare i vari sc
 
 Vedere l'elenco degli scenari e delle funzionalità in [SharePoint](https://products.office.com/sharepoint/collaboration ).
 
-Di seguito sono indicati i pilastri che possono risolvere le esigenze dell'organizzazion:
+I pilastri aziendali seguenti possono soddisfare le esigenze dell'organizzazione:
 
 |||
 |:-----|:-----|
@@ -73,7 +73,7 @@ Un modo per scoprire i vantaggi di SharePoint consiste nell'esaminare come i sin
 I dati altamente regolamentati sono soggetti alle normative regionali o sono i dati più preziosi per l'organizzazione, ad esempio i segreti commerciali, le informazioni sulle risorse finanziarie o umane e la strategia dell'organizzazione. È possibile configurare un sito di SharePoint per l'accesso limitato, la classificazione dei dati, la prevenzione della perdita dei dati e la crittografia per i dati di questo tipo. Per informazioni dettagliate, vedere [Siti di Microsoft Teams e SharePoint Online per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### <a name="result"></a>Risultato
-Un elenco di scenari SharePoint che soddisfano le esigenze dell'organizzazione in termini di archiviazione e condivisione dei documenti, gestione dei contenuti, collaborazione e sicurezza.
+Un elenco di scenari di SharePoint che soddisfano le esigenze dell'organizzazione in termini di archiviazione e condivisione dei documenti, gestione dei contenuti, collaborazione e sicurezza.
 
 ## <a name="phase-2-onboard"></a>Fase 2: onboarding
 
@@ -93,8 +93,8 @@ Usare [Eseguire la migrazione a SharePoint](https://docs.microsoft.com/sharepoin
 
 Per una migliore comprensione della sicurezza in SharePoint, vedere le risorse seguenti:
 
--   [In che modo SharePoint e OneDrive proteggono i dati nel cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--   [Crittografia dei dati in OneDrive e SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+-     [In che modo SharePoint e OneDrive proteggono i dati nel cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+-     [Crittografia dei dati in OneDrive e SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>Risultato
 
@@ -155,8 +155,8 @@ Dopo la distribuzione all'intera organizzazione, è necessario continuare a util
 
 Ecco alcune attività suggerite:
 
-- Vedere [Fattori di successo per Office 365](https://aka.ms/successfactors) per informazioni sulle procedure consigliate generali relative all'adozione di servizi cloud. 
-- Vedere i [report attività di Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) per comprendere l'utilizzo del servizio di Office 365 nell'organizzazione. Se non si è un amministratore globale di Office 365 per l'organizzazione, chiedere a qualcun altro le autorizzazioni Lettore report per poter accedere ai report attività.
+- Vedere [Fattori di successo per Microsoft 365](https://aka.ms/successfactors) per informazioni sulle procedure generali consigliate relative all'adozione di servizi cloud. 
+- Vedere [Report di Microsoft 365 nell'interfaccia di amministrazione](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) per comprendere l'utilizzo del servizio nell'organizzazione. Se non si è un amministratore globale dell'organizzazione, chiedere a un utente con tale ruolo le autorizzazioni di lettura per i report in modo da poter accedere ai report attività.
 - Monitorare il punto di raccolta feedback (un canale pubblico in un team di Teams o Yammer) per rilevare i problemi riscontrati o il feedback fornito dagli utenti sulle loro esperienze con SharePoint. Rispondere alle domande e ai problemi nel più breve tempo possibile per evitare che gli utenti siano frustrati e dimostrare il supporto per l'implementazione.
 - Identificare e coltivare i campioni in ogni gruppo aziendale ed evidenziarne i risultati e le procedure consigliate per l'uso di SharePoint. Far conoscere i loro risultati all'interno dell'organizzazione per dimostrare il successo del progetto e l'adozione. L'appoggio dei leader tecnici all'interno di un gruppo aziendale può influenzare positivamente la leadership e i pari.
 

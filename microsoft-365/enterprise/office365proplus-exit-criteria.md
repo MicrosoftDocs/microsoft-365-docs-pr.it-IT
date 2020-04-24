@@ -1,5 +1,5 @@
 ---
-title: Criteri uscita della distribuzione di Office 365 ProPlus
+title: Criteri uscita della distribuzione di Microsoft 365 Apps for enterprise
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,43 +14,43 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per l'infrastruttura di Office 365 ProPlus.
-ms.openlocfilehash: 2f19de8c40c95f27e3b7578d384db39d5feb57e0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per l'infrastruttura di Microsoft 365 Apps for enterprise.
+ms.openlocfilehash: 4616c86f516dc5fb17fe43e98ca9b60028299e33
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066487"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631442"
 ---
-# <a name="office-365-proplus-deployment-exit-criteria"></a>Criteri uscita della distribuzione di Office 365 ProPlus
+# <a name="microsoft-365-apps-for-enterprise-deployment-exit-criteria"></a>Criteri uscita della distribuzione di Microsoft 365 Apps for enterprise
 
-![Fase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![Fase 4: Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *Questo passaggio si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise e Microsoft 365 Education*
 
-Verificare che la configurazione soddisfi i seguenti criteri necessari per l'infrastruttura di Office 365 ProPlus.
+Verificare che la configurazione soddisfi i seguenti criteri richiesti per l'infrastruttura di Microsoft 365 Apps for enterprise.
 
 - La valutazione dell'infrastruttura e dell'ambiente è stata completata, tra cui:
 
     - Dettagli dispositivo client
     - Strumenti di distribuzione
-    - Account e gestione delle licenze di Office 365
+    - Account e gestione delle licenze di Microsoft 365
     - Capacità di rete
     - Compatibilità delle applicazioni
 
 - Il piano di distribuzione è stato completato, tra cui:
 
-    - Come distribuire Office 365 ProPlus
-    - Come gestire gli aggiornamenti a Office 365 ProPlus
+    - Come distribuire Microsoft 365 Apps for enterprise
+    - Come gestire gli aggiornamenti a Microsoft 365 Apps for enterprise
     - Se si desidera distribuire e installare da un'origine locale sulla rete o dal cloud
     - Quali dispositivi client devono ottenere determinati canali di aggiornamento
     - Pacchetti di installazione definiti
     - Tutti i dispositivi client sono stati assegnati ai gruppi di distribuzione
     - Quali applicazioni, architetture e lingue Office si abbinano ai diversi dispositivi client
 
-- La distribuzione di Office 365 ProPlus è completa, tra cui:
+- La distribuzione di Microsoft 365 Apps for enterprise è completa e include:
 
-    - In tutti i dispositivi client è installato Office 365 ProPlus
+    - Tutti i dispositivi client hanno Microsoft 365 Apps for enterprise installato
     - Tutti i dispositivi client sono presenti nel canale di aggiornamento appropriato e ricevono gli aggiornamenti
     - In tutti i dispositivi client sono installate o sono disponibili le lingue appropriate
 
@@ -58,7 +58,7 @@ Verificare che la configurazione soddisfi i seguenti criteri necessari per l'inf
 
 ## <a name="results-and-next-steps"></a>Risultati e passaggi successivi
 
-I dispositivi client dispongono della versione più recente di Office 365 ProPlus installata e riceveranno aggiornamenti regolari.
+I dispositivi client dispongono della versione più recente di Microsoft 365 Apps for enterprise installata e riceveranno aggiornamenti regolari.
 
 |||
 |:-------|:-----|

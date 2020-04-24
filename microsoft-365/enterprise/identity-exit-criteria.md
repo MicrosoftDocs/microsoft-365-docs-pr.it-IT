@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per l'infrastruttura e i servizi basati sull'identità.
-ms.openlocfilehash: 433dec5e84c88dc6422619293f435f2d7199ea2e
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 3706cd84a722e68a8b75274544630719e510345a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637289"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632542"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Fase 2: criteri uscita dell'infrastruttura di rete
 
@@ -33,7 +33,7 @@ Vedere anche [Prerequisiti](https://docs.microsoft.com/microsoft-365/enterprise/
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>Obbligatorio: gli account di amministratore globale sono protetti 
 
-Gli [account di amministratore globale di Office 365 sono stati protetti](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) per contrastare la possibile compromissione delle credenziali da parte di malintenzionati, che potrebbe condurre a violazioni dell’abbonamento a Microsoft 365.
+Gli [account di amministratore globale sono stati protetti](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) per contrastare la possibile compromissione delle credenziali da parte di utenti malintenzionati, che potrebbe condurre a violazioni dell'abbonamento a Microsoft 365.
 
 Se si ignora questo requisito, gli account di amministratore globale potrebbero essere soggetti ad attacchi e violazioni, consentendo a terzi l'acquisizione di dati e l'utilizzo di tali informazioni per scopi di raccolta, distruzione o ricatto.
 
@@ -47,7 +47,7 @@ Utilizzare questa procedura per verificare che gli account di amministratore glo
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Accedere a Office 365 usando ognuno degli account del passaggio 1. Ogni accesso dovrà richiedere Azure Multi-Factor Authentication e la forma più avanzata di autenticazione secondaria disponibile nell'organizzazione.
+2. Accedere usando ognuno degli account del passaggio 1. Ogni accesso dovrà richiedere Azure Multi-Factor Authentication e la forma più avanzata di autenticazione secondaria disponibile nell'organizzazione.
 
 > [!Note]
 > Vedere [Connettersi a PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) per le istruzioni sull'istallazione del modulo Azure Active Directory PowerShell for Graph e sull'accesso a Office 365.
@@ -96,11 +96,11 @@ Se si ignora questa opzione, gli utenti potrebbero dover immettere le credenzial
 Se necessario, il [Passaggio 2](identity-secure-your-passwords.md#identity-sso) può aiutare con questa opzione.
 
 <a name="crit-identity-custom-sign-in"></a>
-## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Facoltativo: la schermata di accesso a Office 365 è personalizzata per l'organizzazione
+## <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>Facoltativo: la schermata di accesso è personalizzata per l'organizzazione
 
-È stata utilizzata la procedura descritta in [Aggiungere il marchio dell'azienda alla pagina di accesso e alle pagine del riquadro di accesso](https://aka.ms/aadpaddbranding) per aggiungere le informazioni personalizzate distintive dell'azienda nella pagina di accesso di Office 365.
+È stata utilizzata la procedura descritta in [Aggiungere il marchio dell'azienda alla pagina di accesso e alle pagine del riquadro di accesso](https://aka.ms/aadpaddbranding) per aggiungere le informazioni personalizzate distintive dell'azienda nella pagina di accesso.
 
-Se si ignora questa opzione, gli utenti visualizzeranno una schermata generica di accesso a Office 365 e non avranno la certezza di effettuare l'accesso al sito dell'organizzazione.
+Se si ignora questa opzione, gli utenti visualizzeranno una schermata generica di accesso e non avranno la certezza di effettuare l'accesso al sito dell'organizzazione.
 
 Se necessario, il [Passaggio 2](identity-secure-your-passwords.md#identity-custom-sign-in) può aiutare con questa opzione.
 
@@ -116,11 +116,11 @@ Se necessario, il [Passaggio 3](identity-secure-user-sign-ins.md#identity-mfa) p
 
 ### <a name="how-to-test"></a>Come eseguire il test
 
-1.  Creare un account utente di test e assegnargli una licenza. 
-2.  Configurare Azure Multi-Factor Authentication per l'account utente di test con il metodo di verifica aggiuntivo in uso per gli account utente effettivi, come per esempio l'invio di un SMS al telefono. 
-3.  Accedere al portale di Office 365 con l'account utente di test.
-4.  Verificare che l'autenticazione a più fattori richieda all'utente ulteriori informazioni di verifica e abbia esito positivo. 
-5.  Eliminare l'account utente di test.
+1.    Creare un account utente di test e assegnargli una licenza. 
+2.    Configurare Azure Multi-Factor Authentication per l'account utente di test con il metodo di verifica aggiuntivo in uso per gli account utente effettivi, come per esempio l'invio di un SMS al telefono. 
+3.    Accedere al portale di Office 365 con l'account utente di test.
+4.    Verificare che l'autenticazione a più fattori richieda all'utente ulteriori informazioni di verifica e abbia esito positivo. 
+5.    Eliminare l'account utente di test.
 
 <a name="crit-identity-ident-prot"></a>
 ## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>Facoltativo: Azure AD Identity Protection è abilitato per proteggere le credenziali da eventuali violazioni (solo Microsoft 365 E5)
@@ -148,7 +148,7 @@ Se necessario, il [Passaggio 3](identity-secure-user-sign-ins.md#identity-ident-
 
 Se si dispone di un'istanza locale di Active Directory Domain Services (AD DS), è stato usato Azure AD Connect per sincronizzare i gruppi e gli account utente dall'ambiente AD DS locale al tenant di Azure AD.
 
-Grazie alla sincronizzazione della directory, gli utenti possono accedere a Office 365 e agli altri servizi cloud Microsoft utilizzando le stesse credenziali che usano per l'accesso ai loro computer e alle risorse locali.
+Grazie alla sincronizzazione della directory, gli utenti possono accedere a Microsoft 365 e agli altri servizi cloud Microsoft con le stesse credenziali che utilizzano per l'accesso ai propri computer e alle risorse locali.
 
 Se necessario, il [Passaggio 4](identity-add-user-accounts.md#identity-sync) può aiutare a soddisfare questo requisito.
 
@@ -164,9 +164,9 @@ Per verificare il corretto funzionamento dell'autenticazione con le credenziali 
 
 Per verificare il corretto funzionamento della sincronizzazione della directory, eseguire le operazioni seguenti:
 
-1.  Creare un nuovo gruppo di test in AD DS.
-2.  Attendere la sincronizzazione.
-3.  Controllare il tenant di Azure AD per verificare che venga visualizzato il nome del nuovo gruppo di test.
+1.    Creare un nuovo gruppo di test in AD DS.
+2.    Attendere la sincronizzazione.
+3.    Controllare il tenant di Azure AD per verificare che venga visualizzato il nome del nuovo gruppo di test.
 
 <a name="crit-identity-sync-health"></a>
 ## <a name="optional-directory-synchronization-is-monitored"></a>Facoltativo: la sincronizzazione delle directory viene monitorata
@@ -189,7 +189,7 @@ Il portale di Azure AD Connect Health mostra lo stato attuale e corretto dei con
 
 Sono state utilizzate le istruzioni riportate in [Reimpostazione delle password in modalità self-service di Azure AD con writeback delle password](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) per abilitare il writeback delle password per il tenant di Azure AD per la sottoscrizione di Microsoft 365 Enterprise.
 
-Se si ignora questa opzione, gli utenti che non sono connessi con il server locale devono reimpostare o sbloccare le password dei AD DS tramite un amministratore IT.
+Se si ignora questa opzione, gli utenti che non sono connessi alla rete locale devono reimpostare o sbloccare le proprie password di AD DS tramite un amministratore IT.
 
 Se necessario, il [Passaggio 4](identity-add-user-accounts.md#identity-pw-writeback) può aiutare con questa opzione.
 
@@ -209,11 +209,11 @@ Per testare il writeback delle password, è necessario cambiare la password in O
 
 ### <a name="how-to-test"></a>Come eseguire il test
 
-Accedere al portale di Office 365 con il nome dell'account utente e Azure Multi-Factor Authentication. Nella pagina di accesso dovrebbero essere visualizzati gli elementi di personalizzazione.
+Accedere al portale con il nome dell'account utente e Azure Multi-Factor Authentication. Nella pagina di accesso dovrebbero essere visualizzati gli elementi di personalizzazione.
 
 
 <a name="crit-identity-self-service-groups"></a>
-## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>Facoltativo: la gestione dei gruppi in modalità self-service è abilitata per specifici gruppi di sicurezza di Azure AD e Office 365
+## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>Facoltativo: la gestione dei gruppi self-service è abilitata per funzionalità di sicurezza di Azure AD e gruppi di Microsoft 365 specifici
 
 È stato stabilito quali gruppi soddisfano i requisiti per la gestione in modalità self-service, i relativi proprietari sono stati istruiti sulle responsabilità e sul flusso di lavoro della gestione dei gruppi ed [è stata configurata la gestione in modalità self-service in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) per tali gruppi.
 
@@ -222,13 +222,13 @@ Se si ignora questa opzione, tutte le attività di gestione dei gruppi di Azure 
 Se necessario, il [Passaggio 5](identity-use-group-management.md#identity-self-service-groups) può aiutare con questa opzione.
 
 ### <a name="how-to-test"></a>Come eseguire il test
-1.  Creare un account utente di test in Azure AD con il portale di Azure.
-2.  Accedere con l'account utente di test e creare un gruppo di sicurezza di test di Azure AD.
-3.  Disconnettersi ed effettuare di nuovo l'accesso con l'account amministratore IT.
-4.  Configurare il gruppo di sicurezza di test per la gestione in modalità self-service dell'account utente di test.
-5.  Disconnettersi ed effettuare di nuovo l'accesso con l'account utente di test.
-6.  Utilizzare il portale di Azure per aggiungere membri al gruppo di sicurezza di test.
-7.  Eliminare il gruppo di sicurezza di test e l'account utente di test.
+1.    Creare un account utente di test in Azure AD con il portale di Azure.
+2.    Accedere con l'account utente di test e creare un gruppo di sicurezza di test di Azure AD.
+3.    Disconnettersi ed effettuare di nuovo l'accesso con l'account amministratore IT.
+4.    Configurare il gruppo di sicurezza di test per la gestione in modalità self-service dell'account utente di test.
+5.    Disconnettersi ed effettuare di nuovo l'accesso con l'account utente di test.
+6.    Utilizzare il portale di Azure per aggiungere membri al gruppo di sicurezza di test.
+7.    Eliminare il gruppo di sicurezza di test e l'account utente di test.
 
 <a name="crit-identity-dyn-groups"></a>
 ## <a name="optional-dynamic-group-membership-settings-automatically-add-user-accounts-to-groups-based-on-user-account-attributes"></a>Facoltativo: le impostazioni di appartenenza a gruppi dinamici aggiungono automaticamente gli account utente ai gruppi in base agli attributi degli account utente
@@ -247,7 +247,7 @@ Se necessario, il [Passaggio 5](identity-use-group-management.md#identity-dyn-gr
 
 ### <a name="how-to-test"></a>Come eseguire il test
 
-1. Creare un gruppo di test dinamico in Azure AD con il portale di Azure e configurare una regola il reparto uguale a "test1".
+1. Creare un gruppo dinamico di test in Azure AD con il portale di Azure e configurare una regola per il reparto uguale a "test1".
 2. Creare un account utente di test in Azure AD e impostare la proprietà del reparto su "test1".
 3. Esaminare le proprietà dell'account utente per verificare che sia un membro del gruppo dinamico di test.
 4. Cambiare il valore della proprietà del reparto per l'account utente di test impostandolo su "test2".

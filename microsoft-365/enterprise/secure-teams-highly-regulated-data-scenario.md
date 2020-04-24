@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un team sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: aeb3662d6c8a21cbd56d983515913750fd5259f1
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 95c0fc4177f2a16fc79dd0833809f4405e8cdda9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951971"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631394"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Team per dati altamente regolamentati
 
-Questo articolo contiene suggerimenti e procedure per la configurazione di un team privato in Microsoft Teams che limiti l'accesso alle funzionalità di Teams, ad esempio chat, riunioni e file, ai soli membri e ai proprietari del gruppo di Office 365 per il team. 
+Questo articolo contiene suggerimenti e procedure per la configurazione di un team privato in Microsoft Teams che limiti l'accesso alle funzionalità di Teams, ad esempio chat, riunioni e file, ai soli membri e ai proprietari del gruppo di Microsoft 365 per il team. 
 
-Oltre all'accesso privato basato sul gruppo Office 365, questo articolo descrive come configurare il sito del team di SharePoint privato sottostante, a cui è possibile accedere dalla sezione **File** di un canale del team, per implementare la sicurezza aggiuntiva necessaria per archiviare dati altamente regolamentati. In questo sito del team di SharePoint è possibile archiviare e collaborare su file, pagine, un calendario condiviso, attività, un blocco appunti ed elenchi.
+Oltre all'accesso privato basato sul gruppo di Microsoft 365, questo articolo descrive come configurare il sito del team di SharePoint privato sottostante, a cui è possibile accedere dalla sezione **File** di un canale del team, per implementare la sicurezza aggiuntiva necessaria ad archiviare dati altamente regolamentati. In questo sito del team di SharePoint è possibile archiviare e collaborare su file, pagine, un calendario condiviso, attività, un blocco appunti ed elenchi.
 
 >[!Note]
 > Uno scenario analogo con SharePoint è disponibile [qui](teams-sharepoint-online-sites-highly-regulated-data.md).
@@ -34,13 +34,13 @@ Oltre all'accesso privato basato sul gruppo Office 365, questo articolo descrive
 
 Gli elementi della configurazione di un team per dati altamente regolamentati sono:
 
-- Un team privato con un gruppo di Office 365 corrispondente che include gli account utente di proprietari e membri.
+- Un team privato con un gruppo di Microsoft 365 corrispondente che include gli account utente di proprietari e membri.
 - Sicurezza aggiuntiva nel sito di SharePoint sottostante per il team che:
   - Impedisce ai membri del sito di concedere accesso ad altri utenti.
   - Impedisce ai non-membri del sito di richiedere accesso al sito.
-- Un'etichetta di conservazione di Office 365 per il sito di SharePoint sottostante che viene applicata automaticamente ai nuovi file nel sito come strumento predefinito per definire i criteri di conservazione.
+- Un'etichetta di conservazione per il sito di SharePoint sottostante che viene applicata automaticamente ai nuovi file nel sito come metodo predefinito per definire i criteri di conservazione.
 - Criteri di prevenzione della perdita dei dati che usano l'etichetta di conservazione e impediscono agli utenti di condividere o inviare file all'esterno dell'organizzazione.
-- Un'etichetta di riservatezza di Office 365 o una sottoetichetta di un'etichetta per dati altamente regolamentati con crittografia abilitata e autorizzazioni di creazione condivisa per il gruppo di Office 365 del team. Gli utenti applicano l'etichetta o la sottoetichetta ai file archiviati nella sezione **File** del team dall'opzione della barra dei menu **Riservatezza** in Word, Excel e PowerPoint.
+- Un'etichetta di riservatezza o un'etichetta secondaria di un'etichetta per dati altamente regolamentati con crittografia abilitata e autorizzazioni di creazione condivisa per il gruppo di Microsoft 365 del team. Gli utenti applicano l'etichetta o la sottoetichetta ai file archiviati nella sezione **File** del team dall'opzione della barra dei menu **Riservatezza** in Word, Excel e PowerPoint.
 
 Ecco la configurazione risultante con un'etichetta di riservatezza.
 
@@ -76,7 +76,7 @@ Seguire [queste istruzioni](https://support.office.com/article/create-a-team-fro
 
 Quando si crea un team privato, le autorizzazioni predefinite sono le seguenti:
 
-- Il gruppo di Office 365 per il team (gruppo del team) ha proprietari del gruppo e membri del gruppo
+- Il gruppo di Microsoft 365 per il team (il gruppo del team) ha proprietari del gruppo e membri del gruppo
 - Per il sito di SharePoint sottostante per il team (sito del team):
   - Amministratori raccolta siti è configurato per Proprietari del gruppo del team
   - Per il sito del team: 

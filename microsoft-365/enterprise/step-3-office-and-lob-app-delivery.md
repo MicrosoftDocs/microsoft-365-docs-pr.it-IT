@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come distribuire Office e app line-of-business.
-ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085334"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636797"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Passaggio 3: distribuzione di Office e app line-of-business
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085334"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>Passaggio 3: distribuzione di Office e app line-of-business</strong></p>
-<p>Verificare che le app siano compresse e pronte per l'installazione automatica. Ottenere maggiori informazioni sulle nuove opzioni offerte dai pacchetti a portata di clic di Office 365 ProPlus per configurare, distribuire e mantenere aggiornate le app di Office.</p></td>
+<p>Verificare che le app siano compresse e pronte per l'installazione automatica. Ottenere maggiori informazioni sulle nuove opzioni offerte dai pacchetti A portata di clic di Microsoft 365 Apps for enterprise per configurare, distribuire e mantenere aggiornate le app di Office.</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,7 +39,7 @@ ms.locfileid: "42085334"
 >La distribuzione di Office e app line-of-business è il terzo passaggio del processo di distribuzione consigliato e illustra le opzioni di installazione e gestione di Office e app line-of-business. Per una distribuzione corretta, non saltare i primi due passaggi.  Per vedere il processo di distribuzione desktop completo, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
 >
 
-È ora il momento di distribuire Office e le app line-of-business. Esistono molti modi per farlo, tra cui alcune interessanti nuove opzioni. Anche se alcune applicazioni sono disponibili solo in versione compilata a 32 bit o 64 bit, altre, tra cui Office 365 ProPlus, sono disponibili come codice compilato nativo a 32 bit e 64 bit e una delle decisioni principali da prendere, sarà quella relativa alla versione da distribuire. Per sfruttare la potenza di elaborazione e la RAM aggiuntive dei nuovi dispositivi, Microsoft consiglia di usare la versione a 64 bit se non esistono dipendenze dalla versione a 32 bit. Per individuare eventuali problematiche correlate alla compatibilità con componenti aggiuntivi o file, è consigliabile tornare al Passaggio 1: preparazione di dispositivi e app.
+È ora il momento di distribuire Office e le app line-of-business. Esistono molti modi per farlo, tra cui alcune interessanti nuove opzioni. Anche se alcune applicazioni sono disponibili solo in versione compilata a 32 bit o 64 bit, altre, tra cui Microsoft 365 Apps for enterprise, sono disponibili come codice compilato nativo a 32 bit e 64 bit e una delle decisioni principali da prendere sarà quella relativa alla versione da distribuire. Per sfruttare la potenza di elaborazione e la RAM aggiuntive dei nuovi dispositivi, Microsoft consiglia di usare la versione a 64 bit se non esistono dipendenze dalla versione a 32 bit. Per individuare eventuali problematiche correlate alla compatibilità con componenti aggiuntivi o file, è consigliabile tornare al Passaggio 1: preparazione di dispositivi e app.
 
 Se non ci sono problemi, consigliamo di distribuire le versioni a 64 bit di tutte le app, incluso Microsoft Office. Le app compilate native a 64 bit offrono le migliori prestazioni e sono la scelta più lungimirante.
 
@@ -57,19 +57,19 @@ Gli strumenti di distribuzione software come Microsoft Endpoint Configuration Ma
 
 ## <a name="pc-imaging"></a>Imaging del PC
 
-Un altro metodo diffuso di distribuzione delle app è la creazione dell'immagine del PC. In questo caso, le applicazioni vengono installate attraverso una sequenza di attività o manualmente su un PC campione, quindi viene acquisita un'immagine del sistema con le applicazioni necessarie preinstallate. L'approccio della creazione dell'immagine può far risparmiare tempo quando si esegue il provisioning di nuovi PC, ma occorre tenere presente che i sistemi operativi e le app nell'immagine possono diventare rapidamente obsoleti. Il modello di aggiornamento cumulativo in Windows 10 e Office 365 ProPlus può aiutare a risolvere questo problema, ma non lo elimina del tutto. Ecco perché consigliamo un approccio che prevede l'uso di immagini ridotte, in cui le applicazioni vengono installate dall'esterno dell'immagine al momento della distribuzione.
+Un altro metodo diffuso di distribuzione delle app è la creazione dell'immagine del PC. In questo caso, le applicazioni vengono installate attraverso una sequenza di attività o manualmente su un PC campione, quindi viene acquisita un'immagine del sistema con le applicazioni necessarie preinstallate. L'approccio della creazione dell'immagine può far risparmiare tempo quando si esegue il provisioning di nuovi PC, ma occorre tenere presente che i sistemi operativi e le app nell'immagine possono diventare rapidamente obsoleti. Il modello di aggiornamento cumulativo in Windows 10 e Microsoft 365 Apps for enterprise può aiutare a risolvere questo problema, ma non lo elimina del tutto. Ecco perché consigliamo un approccio che prevede l'uso di immagini ridotte, in cui le applicazioni vengono installate dall'esterno dell'immagine al momento della distribuzione.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
-Se si vuole includere Office 365 ProPlus nell'immagine, tenere presente che usa un'attivazione basata sull'utente e non può essere pre-attivato dall'amministratore di sistema. Usare lo Strumento di distribuzione di Office per pre-installare Office nel dispositivo di cui si sta acquisendo l'immagine e ignorare l'accesso utente. Dopo la distribuzione dell'immagine, gli utenti finali possono accedere con le credenziali di Office 365 e attivare Office 365 ProPlus.
+Se si desidera includere Microsoft 365 Apps for enterprise nell'immagine, tenere presente che utilizza un'attivazione basata sull'utente e non può essere pre-attivato dall'amministratore di sistema. Usare lo Strumento di distribuzione di Office per pre-installare Office nel dispositivo di cui si sta acquisendo l'immagine e ignorare l'accesso utente. Dopo la distribuzione dell'immagine, gli utenti finali possono accedere con le credenziali e attivare Microsoft 365 Apps for enterprise.
 
 [Creare una sequenza di attività per installare un sistema operativo](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Distribuire Office 365 ProPlus come parte di un'immagine del sistema operativo](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Distribuire Microsoft 365 Apps for enterprise come parte di un'immagine del sistema operativo](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office A portata di clic 
 
-Office 365 ProPlus viene installato con la tecnologia A portata di clic, che sostituisce i pacchetti basati su MSI in ogni versione del prossimo rilascio di Office 2019 per Windows. Offre numerosi vantaggi, tra cui installazioni più rapide, aggiornamento più rapido ed efficiente e una disinstallazione più completa. 
+Microsoft 365 Apps for enterprise viene installato con la tecnologia A portata di clic, che sostituisce i pacchetti basati su MSI in ogni versione del prossimo rilascio di Office 2019 per Windows. Offre numerosi vantaggi, tra cui installazioni più rapide, aggiornamento più rapido ed efficiente e una disinstallazione più completa. 
 
 I programmi distribuiti con la tecnologia A portata di clic vengono eseguiti in un ambiente applicativo virtuale nel computer e quindi coesistono con altre applicazioni senza conflitti. Inoltre, occupano metà dello spazio su disco che occuperebbero come pacchetto basato su MSI. Le applicazioni di Office vengono distribuite e gestite tramite lo [Strumento di distribuzione di Office](https://www.microsoft.com/download/details.aspx?id=49117), il motore di installazione di Office necessario per scaricare, configurare e personalizzare le app di Office. Lo Strumento di distribuzione di Office legge un file XML di configurazione che fornisce metadati di istruzioni su come configurare e personalizzare l'installazione di Office.
 
@@ -77,15 +77,15 @@ Microsoft consiglia di usare lo [Strumento di personalizzazione di Office](https
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-Se si usa Configuration Manager, è possibile usarlo anche per una distribuzione ampia di Office 365 ProPlus. Configuration Manager (Current Branch) presenta supporto nativo per lo strumento di personalizzazione di Office aggiornato, la personalizzazione dei pacchetti per A portata di clic al momento dell'installazione e il supporto nativo della gestione degli aggiornamenti software dopo l'installazione.
+Se si utilizza Configuration Manager, è possibile usarlo anche per una distribuzione generale di Microsoft 365 Apps for enterprise. Configuration Manager (Current Branch) presenta supporto nativo per lo strumento di personalizzazione di Office aggiornato, la personalizzazione dei pacchetti per A portata di clic al momento dell'installazione e il supporto nativo della gestione degli aggiornamenti software dopo l'installazione.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Guida alla distribuzione di Office 365 ProPlus](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Guida alla distribuzione di Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Rimuovere le versioni MSI di Office esistenti quando si effettua l'aggiornamento a Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Rimuovere le versioni MSI di Office esistenti quando si effettua l'aggiornamento a Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version).
 
-[Gestire Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Gestire Microsoft 365 Apps for enterprise con Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Assegnare le app di Office 365 ai dispositivi Windows 10 con Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 
@@ -115,8 +115,8 @@ Ulteriori informazioni su MSIX tramite il [sito Community IT MSIX](https://techc
 
 ## <a name="next-step"></a>Passaggio successivo
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[Passaggio 4: impostazioni e file utente](https://aka.ms/mdd4)
+## <a name="step-4-user-files-and-settings"></a>[Passaggio 4: impostazioni e file utente](https://aka.ms/mdd4)
 
 ## <a name="previous-step"></a>Passaggio precedente
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[Passaggio 2: conformità directory e rete](https://aka.ms/mdd2) 
+## <a name="step-2-directory-and-network-readiness"></a>[Passaggio 2: conformità directory e rete](https://aka.ms/mdd2) 

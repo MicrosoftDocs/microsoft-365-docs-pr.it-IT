@@ -16,12 +16,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Creare un sito del team di SharePoint sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: bc1a84fa7437d9b2979e10b352f8a422c457e8a0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 97a01275d1d45cb02e66e88f82c95311bcb6fe70
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951983"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636712"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Siti di SharePoint per dati altamente regolamentati
 
@@ -40,10 +40,10 @@ Affinché una scenario Microsoft 365 Enterprise basata sul cloud soddisfi le esi
 
 - Archiviare i file (documenti, presentazioni, fogli di calcolo e così via) in un sito del team di SharePoint.
 - Bloccare il sito per impedire:
-  - L'accesso a utenti che non siano membri del gruppo di Office 365 per il sito.
+  - Accesso per gli utenti che non sono membri del gruppo di Microsoft 365 per il sito.
   - I membri del sito dalla concessione dell'accesso ad altri utenti.
   - I non-membri del sito dalla richiesta di accesso al sito.
-- Configurare un'etichetta di conservazione di Office 365 per i siti di SharePoint come modo predefinito per impedire agli utenti di inviare file all'esterno dell'organizzazione.
+- Configurare un'etichetta di conservazione per i siti di SharePoint come metodo predefinito per impedire agli utenti di inviare file all'esterno dell'organizzazione.
 - Crittografare i file più sensibili del sito con crittografia che segue il file.
 - Aggiungere autorizzazioni per i file più sensibili, in modo che, anche in caso di condivisione all'esterno del sito, all'apertura vengano richieste le credenziali valide di un account utente autorizzato.
 
@@ -53,11 +53,11 @@ La tabella seguente associa i requisiti di questo scenario a una funzionalità d
 |:-------|:-----|
 | **Requisito** | **Funzionalità di Microsoft 365 Enterprise** |
 | Archiviare file | Siti del team di SharePoint |
-| Bloccare il sito | Autorizzazioni per gruppi di Office 365 e sito del team di SharePoint |
-| Etichettare i file del sito | Etichette di conservazione di Office 365 |
-| Bloccare gli utenti quando inviano file all'esterno dell'organizzazione. | Criteri di prevenzione della perdita di dati (DLP) in Office 365 |
-| Crittografare tutti i file del sito | Etichette o sottoetichette di riservatezza di Office 365 |
-| Aggiungere autorizzazioni ai file del sito | Etichette o sottoetichette di riservatezza di Office 365 |
+| Bloccare il sito | Autorizzazioni per i gruppi di Microsoft 365 e il sito del team di SharePoint |
+| Etichettare i file del sito | Etichette di conservazione di Microsoft 365 |
+| Bloccare gli utenti quando inviano file all'esterno dell'organizzazione. | Criteri di prevenzione perdita dati (DLP) |
+| Crittografare tutti i file del sito | Etichette o etichette secondarie di riservatezza di Microsoft 365 |
+| Aggiungere autorizzazioni ai file del sito | Etichette o etichette secondarie di riservatezza di Microsoft 365 |
 |||
 
 Ecco una configurazione di esempio per un sito di SharePoint sicuro.
@@ -88,26 +88,26 @@ Per creare un sito di SharePoint per i dati altamente regolamentati, è necessar
 
 Questo scopo, ad esempio determinerà l'identificazione di elementi essenziali quali:
 
-- L'etichetta di conservazione di Office 365 da assegnare alla sezione Documenti del sito e i criteri DLP per l'etichetta
-- Le impostazioni di una sottoetichetta di riservatezza di Office 365 che gli utenti applicano ai file altamente sensibili archiviati nel sito
+- L'etichetta di conservazione da assegnare alla sezione Documenti del sito e i criteri DLP per l'etichetta
+- Le impostazioni di una etichetta secondaria di riservatezza che gli utenti applicano ai file altamente sensibili archiviati nel sito
 
 Una volta determinate queste impostazioni, usarle per configurare il sito nella Fase 2. 
 
-### <a name="step-1-office-365-retention-labels-and-dlp-policies"></a>Passaggio 1: Etichette di conservazione di Office 365 e criteri DLP
+### <a name="step-1-microsoft-365-retention-labels-and-dlp-policies"></a>Passaggio 1: criteri DLP ed etichette di conservazione di Microsoft 365
 
-Quando vengono applicate alla sezione Documenti di un sito del team di SharePoint, le etichette di conservazione di Office 365 forniscono un metodo predefinito per classificare tutti i file archiviati nel sito.
+Quando vengono applicate alla sezione Documenti di un sito del team di SharePoint, le etichette di conservazione forniscono un metodo predefinito per classificare tutti i file archiviati nel sito.
  
-Per i siti di SharePoint per dati altamente regolamentati, è necessario determinare quale etichetta di conservazione di Office 365 usare.
+Per i siti di SharePoint per dati altamente regolamentati, è necessario determinare quale etichetta di conservazione usare.
 
-Per considerazioni sulla progettazione delle etichette di Office 365, vedere [Classificazione ed etichette di Office 365](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
+Per considerazioni sulla progettazione delle etichette, vedere [Classificazione ed etichette di Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 Per proteggere le informazioni sensibili e prevenirne la divulgazione accidentale o intenzionale, si utilizzano criteri DLP. Per ulteriori informazioni, vedere [Panoramica](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
-Per i siti di SharePoint, è necessario configurare un criterio DLP per l'etichetta di conservazione di Office 365 assegnata al sito per bloccare gli utenti quando provano a condividere file con utenti esterni. 
+Per i siti di SharePoint, è necessario configurare un criterio DLP per l'etichetta di conservazione assegnata al sito in modo da bloccare gli utenti quando provano a condividere file con utenti esterni. 
 
-### <a name="step-2-your-office-365-sensitivity-sublabel"></a>Passaggio 2: Sottoetichetta di riservatezza di Office 365
+### <a name="step-2-your-microsoft-365-sensitivity-sublabel"></a>Passaggio 2: l'etichetta secondaria di riservatezza di Microsoft 365
 
-Per fornire la crittografia e un set di autorizzazioni per i file più sensibili, gli utenti devono applicare un'etichetta o una sottoetichetta di riservatezza di Office 365. Una sottoetichetta si trova sotto un'etichetta esistente. 
+Per fornire la crittografia e un set di autorizzazioni per i file più sensibili, gli utenti devono applicare un'etichetta o un'etichetta secondaria di riservatezza. Una sottoetichetta si trova sotto un'etichetta esistente. 
 
 Usare un'etichetta di riservatezza quando è necessario un numero limitato di etichette sia per l'uso globale che per i singoli team privati. Usare una sottoetichetta di riservatezza se si ha un numero elevato di etichette o se si vogliono organizzare le etichette per siti sicuri sotto l'etichetta per i dati altamente regolamentati. 
 
@@ -117,14 +117,14 @@ Le impostazioni dell'etichetta o della sottoetichetta applicata seguono il file.
 
 È stato determinato quanto segue:
 
-- L'etichetta di conservazione appropriata di Office 365 e il criterio DLP ad essa associato
-- Le impostazioni della sottoetichetta di riservatezza di Office 365 che includono crittografia e autorizzazioni
+- L'etichetta di conservazione appropriata e il criterio DLP associato
+- Le impostazioni delle etichette secondarie di riservatezza che includono crittografia e autorizzazioni
 
 ## <a name="phase-2-configure"></a>Fase 2: Configurazione
 
 In questa fase, le impostazioni determinate nella Fase 1 vengono implementate per creare un sito di SharePoint per dati altamente regolamentati.
 
-### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-office-365-group"></a>Passaggio 1: Creare un sito del team di SharePoint privato con proprietari e membri del gruppo di Office 365 corrispondente
+### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-microsoft-365-group"></a>Passaggio 1: creare un sito del team di SharePoint privato con proprietari e membri del gruppo di Microsoft 365 corrispondente
 
 Seguire [queste istruzioni]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8) per creare un sito del team di SharePoint privato.
 
@@ -139,15 +139,15 @@ Nel sito di SharePoint configurare queste impostazioni per le autorizzazioni.
 
 Con queste impostazioni, la possibilità per i membri del gruppo di siti di condividere il sito con altri membri o per i non membri di richiedere l'accesso al sito è disabilitata.
 
-### <a name="step-3-configure-the-site-for-an-office-365-retention-label"></a>Passaggio 3: Configurare il sito per un'etichetta di conservazione di Office 365
+### <a name="step-3-configure-the-site-for-a-retention-label"></a>Passaggio 3: configurare il sito per un'etichetta di conservazione
 
-Attenersi alle istruzioni riportate in [Proteggere i file di SharePoint con le etichette di Office 365 e la prevenzione della perdita dei dati](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) per:
+Attenersi alle istruzioni riportate in [Proteggere i file di SharePoint con le etichette e la prevenzione della perdita dei dati](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) per:
 
 1. Creare e pubblicare un'etichetta di conservazione per i dati altamente regolamentati, se necessario.
 2. Configurare il sito per l'etichetta di conservazione creata nel passaggio 1.
 3. Creare un criterio DLP per i dati altamente regolamentati che usi l'etichetta di conservazione creata nel passaggio 2 e impedisca agli utenti di inviare file all'esterno dell'organizzazione
 
-#### <a name="step-4-create-an-office-365-sensitivity-sublabel-for-the-site"></a>Passaggio 4: Creare una sottoetichetta di riservatezza di Office 365 per il sito
+#### <a name="step-4-create-a-sensitivity-sublabel-for-the-site"></a>Passaggio 4: creare un'etichetta secondaria di riservatezza per il sito
 
 Diversamente da un'etichetta di riservatezza per dati altamente regolamentati, che chiunque può applicare a qualsiasi file, un sito sicuro deve avere una propria sottoetichetta, in modo che i file a cui è assegnata la sottoetichetta:
 
@@ -167,9 +167,9 @@ Usare le istruzioni disponibili [qui](https://docs.microsoft.com/microsoft-365/c
 È stato configurato quanto segue:
 
 - Impostazioni di autorizzazione più restrittive nel sito di SharePoint
-- Un'etichetta di conservazione di Office 365 assegnata alla sezione Documenti del sito di SharePoint
-- Un criterio DLP per l'etichetta di conservazione di Office 365
-- Un'etichetta o una sottoetichetta di riservatezza di Office 365 che gli utenti possono applicare ai file più sensibili archiviati nel sito, che crittografa il file e consente solo l'accesso in modalità di creazione condivisa ai membri del gruppo del sito del team 
+- Un'etichetta di conservazione assegnata alla sezione Documenti del sito di SharePoint
+- Un criterio DLP per l'etichetta di conservazione
+- Un'etichetta o un'etichetta secondaria di riservatezza che gli utenti possono applicare ai file più sensibili archiviati nel sito, che crittografa il file e consente solo l'accesso in modalità di creazione condivisa ai membri del gruppo del sito del team 
 
 Ecco la configurazione risultante che usa una sottoetichetta dell'etichetta per dati altamente regolamentati.
 

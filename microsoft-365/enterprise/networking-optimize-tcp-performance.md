@@ -1,5 +1,5 @@
 ---
-title: 'Passaggio 5: ottimizzare client e prestazioni del servizio di Office 365'
+title: 'Passaggio 5: ottimizzare client e prestazioni dei servizi di Microsoft 365'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Configurare le impostazioni TCP e i servizi di Office 365 per ottenere prestazioni migliori.
-ms.openlocfilehash: e3aefb417330ab791a3dd217e2e34591eba3e1d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Configurare le impostazioni TCP e i servizi di Microsoft 365 per ottenere prestazioni migliori.
+ms.openlocfilehash: 2db35f67ff19998b8a70742ec8fa24cb8d517c5d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066542"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631466"
 ---
-# <a name="step-5-optimize-client-and-office-365-service-performance"></a>Passaggio 5: ottimizzare client e prestazioni del servizio di Office 365
+# <a name="step-5-optimize-client-and-microsoft-365-service-performance"></a>Passaggio 5: ottimizzare client e prestazioni dei servizi di Microsoft 365
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
 ![Fase 1 - Rete](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-È possibile migliorare le prestazioni ottimizzando il funzionamento del TCP (Transmission Control Protocol) tra dispositivi client e i servizi di Office 365.
+È possibile migliorare le prestazioni ottimizzando il funzionamento del TCP (Transmission Control Protocol) tra i dispositivi client e i servizi di Microsoft 365.
 
 È possibile modificare le seguenti impostazioni TCP sui dispositivi client per ottimizzare le performance TCP:
 
@@ -37,7 +37,7 @@ ms.locfileid: "42066542"
 - [Dimensione massima del segmento TCP](https://blogs.technet.microsoft.com/onthewire/2014/06/27/checking-your-tcp-packets-are-pulling-their-weight-tcp-max-segment-size-or-mss/), in questo modo il dispositivo client potrà inviare i blocchi di dati più grandi in un pacchetto
 - [Riconoscimenti selettivi TCP](https://blogs.technet.microsoft.com/onthewire/2014/06/27/ensuring-your-tcp-stack-isnt-throwing-data-away/), in questo modo il dispositivo client potrà riconoscere i dati ricevuti in maniera più efficiente
 
-Per i servizi di Office 365, vedere queste risorse aggiuntive per ottimizzare le prestazioni:
+Per i servizi di Microsoft 365, consultare queste risorse aggiuntive per ottimizzare le prestazioni:
 
 - [Exchange Online](https://docs.microsoft.com/office365/enterprise/tune-exchange-online-performance)
 - [Skype for Business Online](https://docs.microsoft.com/office365/enterprise/tune-skype-for-business-online-performance)

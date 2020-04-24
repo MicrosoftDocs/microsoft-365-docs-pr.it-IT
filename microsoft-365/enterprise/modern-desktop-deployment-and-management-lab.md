@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225932"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631514"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
-Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione di desktop che eseguono Windows 10 Enterprise e Office 365 ProPlus. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano Microsoft Endpoint Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
+Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for enterprise. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano Microsoft Endpoint Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 
-Questo corso di formazione è altamente consigliato per le organizzazioni che si stanno preparando per la fine del ciclo di vita di Windows 7 ed è utile anche se si usa attualmente Windows 10 e Office 365 Plus oppure Office 2019. In quanto ambiente isolato, inoltre, questo lab è ideale per esaminare gli aggiornamenti dello strumento di distribuzione e testare l'automazione correlata alla distribuzione.
+Questo corso di formazione è altamente consigliato per le organizzazioni che si stanno preparando per la fine del ciclo di vita di Windows 7 ed è utile anche se attualmente si utilizza Windows 10 e Office 365 Plus oppure Office 2019. In quanto ambiente isolato, inoltre, questo lab è ideale per esaminare gli aggiornamenti dello strumento di distribuzione e testare l'automazione correlata alla distribuzione.
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -69,7 +69,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 ### <a name="office-and-lob-app-delivery"></a>Distribuzione di app line-of-business e Office
 
-  - Distribuzione di Office 365 ProPlus 
+  - Microsoft 365 Apps for enterprise
   - Distribuzione gestita dall'organizzazione con Configuration Manager e Microsoft Intune
   - Distribuzione e gestione di applicazioni con Microsoft Intune
   - Distribuzione e installazione self-service di app con Microsoft Store per le aziende
@@ -113,7 +113,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Per scaricare questi contenuti, usare un'ampia larghezza di banda per un'esperienza di download ottimale e attendere 30-45 minuti per il provisioning automatico. L'ambiente di lab richiede minimo 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, si consiglia di avere 32 GB di memoria disponibili. Il lab scade il 5 luglio 2020; prima di tale data, ne verrà pubblicata una nuova versione.*
+*Per scaricare questi contenuti, usare un'ampia larghezza di banda per un'esperienza di download ottimale e attendere 30-45 minuti per il provisioning automatico. L'ambiente di lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 18 aprile 2020; prima di tale data, ne verrà pubblicata una nuova versione.*
 
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
 
@@ -125,7 +125,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
   - [<span class="underline">Pianificare la distribuzione di Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Guida alla distribuzione per Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Guida alla distribuzione di Microsoft 365 Apps for enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">Introduzione a Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
