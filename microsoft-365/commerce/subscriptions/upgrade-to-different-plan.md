@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Informazioni su come eseguire l'aggiornamento a un nuovo abbonamento.
 monikerRange: o365-worldwide
-ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
+ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707524"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43796513"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso 
 
@@ -63,7 +63,7 @@ Al termine del checkout, potrebbe essere necessario qualche minuto per completar
 
 ## <a name="the-upgrade-tab-is-empty"></a>La scheda aggiornamento è vuota
 
-Se la scheda **aggiornamento** è vuota, verrà visualizzata una spiegazione del motivo per cui non è possibile eseguire l'aggiornamento in questo momento. È possibile provare a [modificare i piani manualmente](change-plans-manually.md) o [chiamare il supporto](../../admin/contact-support-for-business-products.md). Per ulteriori informazioni, vedere [perché non è possibile aggiornare I piani?](#why-cant-i-upgrade-plans).
+Se la scheda **aggiornamento** è vuota, verrà visualizzata una spiegazione del motivo per cui non è possibile eseguire l'aggiornamento in questo momento. È possibile provare a [modificare i piani manualmente](change-plans-manually.md). Per ulteriori informazioni, vedere [perché non è possibile aggiornare I piani?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>Il piano desiderato non è visualizzato
 
