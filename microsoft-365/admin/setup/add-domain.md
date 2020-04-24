@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Office 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a77526efc526073e17b535612213202ad22d5657
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631816"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800024"
 ---
 # <a name="add-a-domain-to-office-365"></a>Aggiungere un dominio a Office 365
 
@@ -101,6 +101,49 @@ ms.locfileid: "43631816"
     Se si desidera attendere in un secondo momento, scorrere fino alla fine e selezionare **Ignora questo passaggio**.
     
 8. Seleziona **fine** -hai finito! 
+
+## <a name="add-or-edit-custom-dns-records"></a>Aggiungere o modificare record DNS personalizzati
+
+Attenersi alla procedura riportata di seguito per aggiungere un record personalizzato per un sito Web o un servizio di terze parti.
+
+1. Accedere all'interfaccia di amministrazione di Microsoft all' <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>indirizzo.
+
+2. Passare alla pagina **Impostazioni**  > **domini** .
+
+3. Nella pagina **Domini** selezionare un dominio. 
+    
+4. In **impostazioni DNS**selezionare **record personalizzati**; quindi selezionare **nuovo record personalizzato**.
+
+5. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
+    
+6. Selezionare **Salva**.
+
+## <a name="registrars-with-domain-connect"></a>Registrar con Domain Connect
+
+I registrar abilitati alla [connessione di dominio](https://www.domainconnect.org/) consentono di aggiungere il dominio a Microsoft 365 in un processo in tre passaggi che richiede minuti. 
+  
+Nella procedura guidata, è sufficiente confermare che si è proprietari del dominio e quindi configurare automaticamente i record del dominio, in modo che la posta elettronica venga a Microsoft 365 e ad altri servizi Microsoft 365, come i team, che collaborino con il proprio dominio.
+  
+> [!NOTE]
+> Disabilitare il blocco dei popup nel browser prima di iniziare la configurazione guidata.
+  
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domain Connect registrar che si integrano con Microsoft 365
+
+- [1&amp;1 IONOS](https://www.1and1.com/)
+- [123Reg](https://www.123-reg.co.uk/)
+- [GoDaddy](https://www.godaddy.com/)
+- [WordPress](https://wordpress.com/)
+- [Plesk](https://www.plesk.com/)
+- [MediaTemple](https://mediatemple.net/)
+- SecureServer o WildWestDomains (rivenditori GoDaddy con hosting DNS di SecureServer)
+    - [Domini di MadDog](https://www.maddogdomains.com/)
+    - [CheapNames](https://www.cheapnames.com)
+
+### <a name="what-happens-to-my-email-and-website"></a>Cosa succede alla posta elettronica e al sito Web?
+
+Dopo aver completato l'installazione, il record MX per il dominio viene aggiornato in modo che punti a Microsoft 365 e tutti i messaggi di posta elettronica per il dominio inizieranno a essere inviati a Microsoft 365. Assicurarsi di aver aggiunto utenti e configurato le cassette postali in Office 365 per tutte le persone che ricevono posta nel dominio.
+  
+Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare dove si trova. I passaggi di installazione di Domain Connect non influiscono sul sito Web.
 
 ## <a name="related-articles"></a>Articoli correlati
 

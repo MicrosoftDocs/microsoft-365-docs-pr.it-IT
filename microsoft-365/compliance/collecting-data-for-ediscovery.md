@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6b86d9f86edc427e10c02a99e3cda3e5e79db66
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 462c58f8531265026b34fe3d8484736aefa4c5fa
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595853"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799939"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Raccogliere i dati per un caso in Advanced eDiscovery
 
-Dopo aver identificato i depositari e le origini dati di interesse per il caso, è necessario identificare il set di documenti in cui eseguire l'approfondimento. È possibile utilizzare lo strumento di ricerca in Advanced eDiscovery per identificarli da posizioni detentive e non detentive in Office 365.
+Dopo aver identificato i depositari e le origini dati di interesse per il caso, è necessario identificare il set di documenti in cui eseguire l'approfondimento. È possibile utilizzare lo strumento di ricerca in Advanced eDiscovery per identificare i documenti rilevanti provenienti da posizioni detentive e non detentive in Microsoft 365.
 
 Dopo aver eseguito una ricerca, è possibile visualizzare le statistiche sugli elementi recuperati, ad esempio le posizioni con la maggior parte degli elementi corrispondenti alla query di ricerca. È inoltre possibile visualizzare in anteprima un sottoinsieme dei risultati. Dopo aver identificato il set di documenti che si desidera esaminare ulteriormente, è possibile aggiungere i risultati della ricerca a un set di revisione da raccogliere ed elaborare.
 
@@ -49,6 +49,10 @@ Per ulteriori informazioni sulle statistiche di ricerca, vedere [Search Statisti
 
 Dopo aver completato l'anteprima, il pulsante **Anteprima** sarà attivo. Selezionarla per visualizzare in anteprima un sottoinsieme di campionamento dei risultati.
 
-## <a name="adding-search-results-to-a-review-set"></a>Aggiunta dei risultati di ricerca a un set di Revisione
+## <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un insieme da rivedere
 
 Quando si è pronti per la raccolta e l'elaborazione di tutti i risultati di una ricerca, è possibile farlo aggiungendola a un set di revisione. Per ulteriori informazioni, vedere [Add Data to a Review set](add-data-to-review-set.md).
+
+## <a name="add-non-microsoft-365-data-to-a-review-set"></a>Aggiungere dati non Microsoft 365 a un set di Revisione
+
+Come parte del processo di raccolta per un caso, è anche possibile aggiungere dati non di Office 365 a un set di revisione ed esaminare e analizzare insieme ai dati di Office 365 raccolti tramite lo strumento di ricerca. Quando si aggiungono non Office 365, è necessario associarlo a un determinato custode nel caso. Per ulteriori informazioni, vedere [caricare i dati non Microsoft 365 in un set di revisione](load-non-Office-365-data-into-a-review-set.md).

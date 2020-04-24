@@ -1,5 +1,5 @@
 ---
-title: Configurare le impostazioni della posta indesiderata sulle cassette postali di Exchange online in Office 365
+title: Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
-ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638441"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800068"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>Configurare le impostazioni della posta indesiderata sulle cassette postali di Exchange online in Office 365
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 
 Le impostazioni di protezione dalla posta indesiderata dell'organizzazione in Exchange Online sono controllate da Exchange Online Protection (EOP). Per altre informazioni, vedere [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md).
 
@@ -48,6 +48,8 @@ Gli amministratori possono utilizzare PowerShell di Exchange Online per disabili
 - Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni assegnate. In particolare, è necessario il ruolo **destinatari di posta elettronica** (assegnato ai gruppi di ruoli Gestione **organizzazione**, **Gestione destinatari**e **destinatari di posta elettronica personalizzati** per impostazione predefinita) o il ruolo **Opzioni utente** (assegnato ai gruppi di ruoli **Gestione organizzazione** e **supporto tecnico** per impostazione predefinita). Per aggiungere utenti ai gruppi di ruoli in Exchange Online, vedere [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Si noti che un utente con autorizzazioni predefinite può eseguire le stesse procedure nella propria cassetta postale, purché dispongano dell' [accesso a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - Negli ambienti di EOP autonomi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare le regole del flusso di posta (anche note come regole di trasporto) in Exchange locale per tradurre il verdetto filtro posta indesiderata in modo che la regola della posta indesiderata possa spostare il messaggio nella cartella Posta indesiderata. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+
+- I mittenti attendibili per le cassette postali condivise non vengono sincronizzati con Azure AD e EOP in base alla progettazione.
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Utilizzo di PowerShell di Exchange Online per abilitare o disabilitare la regola di posta indesiderata in una cassetta postale
 
@@ -181,3 +183,38 @@ Quando il filtro posta indesiderata di Outlook è impostato su **basso** o **alt
 Pertanto, il filtro posta indesiderata di Outlook è in grado di utilizzare la raccolta degli elenchi indirizzi attendibili della cassetta postale e la sua classificazione di posta indesiderata per spostare i messaggi nella cartella posta indesiderata, anche se la regola di posta indesiderata è disabilitata nella cassetta postale
 
 Outlook e Outlook sul Web supportano entrambi la raccolta degli elenchi indirizzi attendibili. La raccolta degli elenchi indirizzi attendibili viene salvata nella cassetta postale di Exchange Online, quindi le modifiche apportate alla raccolta degli elenchi indirizzi attendibili in Outlook vengono visualizzate in Outlook sul Web e viceversa.
+
+## <a name="limits-for-junk-email-settings"></a>Limiti per le impostazioni della posta indesiderata
+
+La raccolta degli elenchi indirizzi attendibili (elenco Mittenti attendibili, elenco destinatari attendibili e elenco Mittenti bloccati) memorizzata nella cassetta postale dell'utente viene sincronizzata anche con EOP. Con la sincronizzazione della directory, la raccolta degli elenchi indirizzi attendibili viene sincronizzata con Azure AD.
+
+- La raccolta dell'elenco indirizzi attendibili nella cassetta postale dell'utente ha un limite di 510 KB, che include tutti gli elenchi, oltre alle impostazioni aggiuntive del filtro posta indesiderata. Se un utente supera questo limite, riceverà un errore di Outlook simile al seguente:
+
+  > Impossibile/non è possibile aggiungere gli elenchi di posta indesiderata del server. Le dimensioni sono consentite sul server. Il filtro di posta indesiderata sul server verrà disabilitato fino a quando gli elenchi di posta indesiderata non sono stati ridotti alle dimensioni consentite dal server.
+
+  Per ulteriori informazioni su questo limite e su come modificarlo, vedere [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+
+- La raccolta degli elenchi indirizzi attendibili sincronizzati in EOP presenta i seguenti limiti di sincronizzazione:
+
+  - 1024 totale voci nell'elenco Mittenti attendibili, nell'elenco destinatari attendibili e nei contatti esterni se la **posta elettronica attendibile dei contatti personali** è abilitata.
+  - 500 totale voci nell'elenco Mittenti bloccati e nei domini bloccati.
+
+  Quando viene raggiunto il limite di voce 1024, vengono eseguite le operazioni seguenti:
+  
+  - L'elenco interrompe l'accettazione delle voci in PowerShell e Outlook sul Web, ma non viene visualizzato alcun messaggio di errore.
+
+    Gli utenti di Outlook possono continuare ad aggiungere più di 1024 voci fino a raggiungere il limite di Outlook di 510 KB. Outlook è in grado di utilizzare queste voci aggiuntive, purché un filtro di EOP non blocchi il messaggio prima del recapito alla cassetta postale (regole del flusso di posta, anti-spoofing e così via).
+
+- Con la sincronizzazione della directory, le voci vengono sincronizzate con Azure AD nell'ordine seguente:
+
+  1. Contatti di posta elettronica se **la posta elettronica attendibile dei contatti** è abilitata.
+  2. L'elenco dei mittenti attendibili e l'elenco di destinatari attendibili sono combinati, deduplicati e ordinati in ordine alfabetico ogni volta che viene apportata una modifica per le prime voci di 1024.
+
+  Vengono utilizzate le prime voci di 1024 e le relative informazioni vengono contrassegnate nelle intestazioni del messaggio.
+  
+  Le voci superiori a 1024 che non sono state sincronizzate con Azure AD vengono elaborate da Outlook (non Outlook sul Web) e nessuna informazione viene contrassegnata nelle intestazioni del messaggio.
+
+Come si può notare, se si Abilita la **posta elettronica attendibile dall'impostazione contatti** è possibile ridurre il numero di mittenti attendibili e destinatari attendibili che possono essere sincronizzati. Se si tratta di un problema, è consigliabile utilizzare criteri di gruppo per disattivare questa funzionalità:
+
+- Nome file: outlk16. file OPAX
+- Impostazione dei criteri: **considerare attendibile la posta elettronica dai contatti**
