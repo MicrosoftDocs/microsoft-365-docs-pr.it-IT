@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637105"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804751"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -120,9 +120,7 @@ Quando si seleziona un'azione di miglioramento specifica, viene visualizzato un 
 
 3. Selezionare **Ignora** perché si è deciso di accettare il rischio e non di applicare l'azione di miglioramento. Una volta ignorata un'azione di miglioramento, il numero totale di punti di Punteggio sicuro che è possibile ottenere è ridotto. È possibile visualizzare questa azione nella cronologia o annullarla in qualsiasi momento.
 
-4. Selezionare **Verifica** perché l'azione di miglioramento richiede la revisione periodica di una parte dell'ambiente per ottenere e mantenere i punti. Ad esempio, le regole di inoltro delle cassette postali devono essere riviste settimanalmente per assicurarsi che i dati non vengano exfiltrated dalla rete. Non è necessario apportare alcuna modifica, ma sarà necessario eseguire un'azione. Se si esaminano regolarmente le regole, verranno ricevuti i punti. In caso contrario, il punteggio viene ridotto.
-
-![Esempio di azione di miglioramento sicuro del Punteggio](../../media/secure-score/secure-score1x450.png) ![Esempio di azione di miglioramento Secure Score Review](../../media/secure-score/secure-score2x450.png)
+![Esempio di azione di miglioramento sicuro del Punteggio](../../media/secure-score/secure-score1x450.png)
 
 *Figure 2 & 3: azione di miglioramento comparsa*
 
@@ -137,6 +135,15 @@ Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in ba
 ## <a name="whats-new"></a>Novità
 
 Per rendere Microsoft Secure Score un migliore rappresentante della posizione di sicurezza, sono state apportate alcune modifiche. Per informazioni sulle modifiche pianificate, vedere [What ' s Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+
+### <a name="april-21st-2020"></a>21 aprile 2020
+
+#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Rimozione di azioni di miglioramento che non soddisfano le aspettative per misure affidabili o che non forniscono una rappresentazione utile della posizione di sicurezza
+
+Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, vengono eliminate le azioni di miglioramento riportate di seguito.
+
+- Applicare la protezione IRM ai documenti
+- Applicare i criteri di prevenzione della perdita di dati
 
 ### <a name="january---march-2020"></a>Gennaio-marzo 2020
 

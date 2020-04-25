@@ -12,13 +12,13 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - remotework
-description: 'Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi.
+ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630798"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808837"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Top 12 attività per i team di sicurezza per il supporto di lavoro da casa
 
@@ -35,16 +35,16 @@ Per i clienti che utilizzano i piani aziendali, Microsoft consiglia di completar
   
 ||**Attività**| Tutti i piani di Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
-|1       |[Abilitare l'autenticazione a più fattori di Azure (AMF)](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|2      | [Protezione contro le minacce](#2-protect-against-threats) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
-|3       |  [Configurare Office 365 Advanced Threat Protection](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
+|1      |[Abilitare l'autenticazione a più fattori di Azure (AMF)](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|2     | [Protezione contro le minacce](#2-protect-against-threats) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|3      |  [Configurare Office 365 Advanced Threat Protection](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [Configurazione di Azure Advanced Threat Protection (ATP)](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5      |   [Abilitare Microsoft Advanced Threat Protection](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |6       | [Configurare la protezione delle app per dispositivi mobili di Intune per telefoni e Tablet](#6-configure-intune-mobile-app-protection-for-phones-and-tablets) |    |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |7      | [Configurare il master e l'accesso condizionale per gli utenti, inclusa la protezione delle app di Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)  |    |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |8       |  [Registrare i PC nella gestione dei dispositivi e richiedere PC conformi](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Ottimizzare la rete per la connettività cloud](#9-optimize-your-network-for-cloud-connectivity)  |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
-|10    | [Formazione degli utenti](#10-train-users) |    ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|10     | [Formazione degli utenti](#10-train-users) |    ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |11  |[Introduzione a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[Monitorare le minacce e agire](#12-monitor-for-threats-and-take-action) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
@@ -191,7 +191,7 @@ Articoli di Blog recenti su questo argomento:
 
 ## <a name="10-train-users"></a>10: addestra gli utenti
 
-Quando gli utenti non conoscono le funzionalità di protezione dalle minacce sul posto di lavoro nell'organizzazione, possono essere frustrate dalle funzionalità di protezione percepite come rallentamento o impedendo loro di svolgere il proprio lavoro. Inoltre, se sanno in anticipo cosa guardare per quanto riguarda i messaggi di posta elettronica sospetti o gli URL, è molto meno probabile che aprano artefatti discutibili. Formazione gli utenti possono salvare gli utenti e le operazioni di sicurezza del team un sacco di tempo e frustrazione.
+Formazione gli utenti possono salvare gli utenti e le operazioni di sicurezza del team un sacco di tempo e frustrazione. Gli utenti esperti hanno meno probabilità di aprire allegati o fare clic su collegamenti nei messaggi di posta elettronica discutibili e hanno maggiori probabilità di evitare siti Web sospetti. 
 
 Il [manuale della campagna](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) di Harvard Kennedy School Cybersecurity fornisce indicazioni eccellenti sulla creazione di una forte cultura della consapevolezza della sicurezza all'interno dell'organizzazione, tra cui la formazione degli utenti per identificare gli attacchi di phishing. 
 

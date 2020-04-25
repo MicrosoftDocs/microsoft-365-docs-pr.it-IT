@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle caratteristiche che sono state aggiunte in questo mese.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627523"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805183"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -36,10 +36,59 @@ Si aggiungono continuamente nuove funzionalità all'interfaccia di [amministrazi
 > **"Classic" prepensionamento del centro di amministrazione a partire da marzo**<br><br>
 Quando si esegue l'accesso a admin.microsoft.com, si passa alla nuova interfaccia di amministrazione ogni volta. E in marzo, si inizierà la disabilitazione della possibilità di tornare all'interfaccia di amministrazione classica. Per il momento, è ancora possibile tornare indietro, ma siccome il nuovo interfaccia di amministrazione arriva alla parità (e lo supera), si disattiverà l'opzione per tutte le organizzazioni. <br><br> *Ultimo aggiornamento: 2 marzo 2020*
 
-Se si è interessati alle novità in altri centri di amministrazione:
+Se si è interessati alle novità in altri servizi cloud Microsoft:
 
+- [Novità di Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Novità di Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Novità nel centro conformità di Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Aggiornamenti di Office](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="march-2020"></a>Marzo 2020
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Correzione dei commenti e suggerimenti consigliati: migliorare l'affidabilità dell'"aggiunta dell'utente" per le licenze
+
+Sono stati ricevuti numerosi commenti e suggerimenti da parte degli amministratori sulla modalità di assegnazione delle licenze quando si aggiungono gli utenti. È stato eseguito il primo aggiornamento a questa correzione ed è stata eseguita la migrazione a un servizio più affidabile dietro le quinte per elaborare tali richieste. Se qualcosa dovesse andare storto, verrà visualizzato un messaggio di errore che consente di riprovare.
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Aggiungere la pagina di conferma dell'utente con l'errore.":::
+
+### <a name="microsoft-teams-home-page-card"></a>Scheda della Home page di Microsoft Teams
+
+Con l'utilizzo dell'aumento di numero di Team, alcuni org otterrà una scheda del dashboard bloccata che rende più individuabili i team di Turning. La scheda contiene inoltre collegamenti a corsi di formazione e documenti per facilitare la transizione dell'organizzazione all'attività remota. Basta andare alla **Home** page per visualizzare la nuova scheda.
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Scheda della Home page di Microsoft Teams":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personalizzare il tema dell'app per dispositivi mobili di SharePoint dell'organizzazione
+
+Utilizzando l'interfaccia di amministrazione di Microsoft 365, è ora possibile personalizzare il tema dell'organizzazione nell'app per dispositivi mobili SharePoint per iOS e nell'app per dispositivi mobili di SharePoint per Android. Questa funzionalità fornisce un'esperienza di app per Intranet mobile che può corrispondere a SharePoint Online per i dipendenti in viaggio. La personalizzazione del tema include l'immagine del logo, il colore della barra di spostamento, i colori del testo e delle icone e i colori degli accenti, rendendo facile il riconoscimento.
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramma che mappa le impostazioni dell'interfaccia di amministrazione all'app per dispositivi mobili.":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>Miglioramenti apportati alla procedura guidata "Aggiungi un gruppo"
+
+Quando gli amministratori hanno creato un nuovo gruppo e ne hanno fatto una squadra nello stesso momento, possono assegnare proprietari che non dispongono di una licenza che include team. E questo ha creato alcuni mal di testa. È stato aggiornato il flusso della procedura guidata per verificare che i proprietari dispongano di una licenza per i team e che se non è possibile disattivare il gruppo in un team è disabilitato.
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Offerte di Microsoft 365 per le aziende di piccole e medie dimensioni
+
+Sappiamo che questo è un annuncio per il mese prossimo, ma vogliamo assicurarci che tu sia preparato.
+
+A partire dal 21 aprile, vengono apportate modifiche relative agli abbonamenti di Office 365 per le piccole e medie imprese e a Office 365 ProPlus. Questi prodotti utilizzeranno ora il marchio Microsoft 365.
+
+I nuovi nomi dei prodotti entrano in vigore il 21 aprile 2020. Si tratta di una modifica del solo nome di prodotto e non vi sono modifiche dei prezzi o delle funzionalità in questo momento.
+
+|Nome corrente |Nuovo nome  |
+|---------|---------|
+|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
+|Office 365 Business     |    App Microsoft 365 per le aziende       | 
+|Office 365 ProPlus    |   Microsoft 365 Apps for Enterprise      |
+
+### <a name="videos-training-and-docs"></a>Video, formazione e documenti
+
+[What ' s New in microsoft 365 Web Series](https://go.microsoft.com/fwlink/p/?linkid=2118096): nell'episodio di questo mese, viene evidenziato l'anniversario di tre anni di Microsoft teams e vengono riportate le nuove funzionalità, tra cui la qualità audio migliorata nelle riunioni online, le comunicazioni mirate per i manager di FIRSTLINE con l'app turns, i team e l'interoperabilità dei consumer Skype
 
 ## <a name="february-2020"></a>Febbraio 2020
 
@@ -154,7 +203,7 @@ A novembre sono stati rilasciati alcuni percorsi di apprendimento per il sito We
 - [Gestire la distribuzione aziendale con Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Aggiornare Microsoft Office per l'IT su larga scala](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Fornire desktop e app Remote da Azure con desktop virtuale di Windows](https://docs.microsoft.com/learn/paths/m365-wvd/)
-- [Modernizzare il proprio ambiente di lavoro con Microsoft 365 e Surface for business](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
+- [Modernizzare l'area di lavoro con Microsoft 365 e Surface for Business](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
 - [Proteggere le identità e l'accesso con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Proteggere le informazioni aziendali con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
 - [Gestire la sicurezza con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-security-management/)

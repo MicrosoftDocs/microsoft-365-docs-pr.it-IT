@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: af7ed71f2257578e4d4fb063b27cb81ed9802b1a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f8adb04e968f19c6b0577127e4f9c0ceb7d9e315
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087829"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804877"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e Reporting dei dispositivi nel centro sicurezza Microsoft 365
 
@@ -103,7 +103,7 @@ Nei rapporti seguenti sono contenuti dati provenienti da dispositivi registrati 
 
 I dati dei dispositivi registrati di Intune includono:
 
-* Conformità del dispositivo
+* Conformità dispositivo
 * Dispositivi con malware attivo
 * Tipi di malware nei dispositivi
 * Malware nei dispositivi
@@ -148,19 +148,19 @@ I **dispositivi con rilevamenti di malware** mostrano quali dispositivi presenta
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>Monitorare e gestire la distribuzione e i rilevamenti delle regole ASR
 
-[Le regole di riduzione dell'attacco superficiale (ASR, Attack Surface Reduction)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) consentono di prevenire azioni e app che in genere vengono utilizzate da malware in grado di sfruttare i dispositivi. Queste regole controllano il modo in cui è possibile eseguire i file eseguibili. Ad esempio, è possibile impedire a JavaScript o VBScript di avviare un file eseguibile scaricato, bloccare le chiamate API Win32 dalle macro di Office o bloccare i processi che vengono eseguiti da unità USB.
+[Le regole di riduzione dell'attacco superficiale (ASR, Attack Surface Reduction)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) consentono di prevenire azioni e app che in genere vengono utilizzate da malware in grado di sfruttare i dispositivi. Queste regole controllano il modo in cui possono essere eseguiti i file eseguibili. Ad esempio, è possibile impedire a JavaScript o VBScript di avviare un file eseguibile scaricato, bloccare le chiamate API Win32 dalle macro di Office o bloccare i processi eseguiti da unità USB.
 
 ![Scheda riduzioni superficie attacco](../../media/attack-surface-reduction-rules.png)
 
-La scheda **regole di riduzione della superficie di attacco** fornisce una panoramica della distribuzione delle regole tra i dispositivi.
+La scheda **Regole per la riduzione della superficie di attacco** fornisce una panoramica della distribuzione delle regole in tutti i dispositivi.
 
-Nella barra superiore della scheda viene visualizzato il numero totale di dispositivi presenti nelle modalità di distribuzione seguenti:
+La barra superiore della scheda mostra il numero totale di dispositivi che si trovano nelle modalità di distribuzione seguenti:
 
 * **Modalità di blocco**: dispositivi con almeno una regola configurata per bloccare l'attività rilevata
 * **Modalità di controllo**: i dispositivi con nessuna regola impostata per bloccare l'attività rilevata, ma hanno almeno un set di regole per il controllo dell'attività rilevata  
 * **Disattivato**: i dispositivi con tutte le regole di ASR sono disattivati
 
-Nella parte inferiore della scheda sono riportate le impostazioni per regola tra i dispositivi. Ogni barra indica il numero di dispositivi che sono impostati per bloccare o controllare il rilevamento oppure la regola è stata completamente disattivata.
+La parte inferiore della scheda mostra le impostazioni per ciascuna regola in tutti i dispositivi. Ogni barra indica il numero di dispositivi bloccati o da controllare oppure con la regola completamente disattivata.
 
 ### <a name="view-asr-detections"></a>Visualizzazione dei rilevamenti ASR
 
@@ -206,8 +206,8 @@ Registri per la regola di ASR **Block Credential Stealing from the Windows Local
 Per individuare l'app di origine, eseguire la [query di ricerca avanzata](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) seguente per questa regola specifica (identificata dalla regola ID 9e6c4e1f-7d60-472F-ba1a-a39ef669e4b2):
 
 ```kusto
-MiscEvents
-| where EventTime > ago(7d)
+DeviceEvents
+| where Timestamp > ago(7d)
 | where ActionType startswith "Asr"
 | where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
 | project InitiatingProcessFolderPath, InitiatingProcessFileName

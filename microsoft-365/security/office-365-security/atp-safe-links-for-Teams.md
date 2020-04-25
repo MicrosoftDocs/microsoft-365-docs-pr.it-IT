@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: I team avranno ora accesso ai collegamenti sicuri al momento del clic. Se si utilizzano chat 1-su-1 chat, tra gruppi o in canali e tabulazioni, se si dispone di un abbonamento a Office 365 ATP, si avrà la possibilità di abilitare e utilizzare questa funzionalità di sicurezza.
-ms.openlocfilehash: 88fe9756188eb16a2347d3c0cd4a98b4003ff457
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 07f20f0adf503e4592d2bd3f3bc9857d08a1e433
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635999"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808999"
 ---
 <!--06/21/2019-->
 
@@ -28,7 +28,7 @@ ms.locfileid: "43635999"
 > [!IMPORTANT]
 > Questa funzionalità è in **anteprima pubblica** per i clienti del Microsoft teams Technology Adoption Program (TAP) del 28 febbraio 2020. Questa nota verrà rimossa dall'articolo quando i collegamenti sicuri per i team sono più diffusi.
 
-Microsoft teams, un'applicazione basata sul cloud Microsoft per la gestione del lavoro, utilizza già gli allegati sicuri (per Office 365), ma ora avrà accesso ai collegamenti sicuri al momento del clic. Se si utilizzano chat 1-su-1 chat, tra gruppi o in canali e tabulazioni, se si dispone di un abbonamento a Office 365 ATP, si avrà la possibilità di abilitare e utilizzare questa misura di sicurezza.
+Microsoft teams, un'applicazione basata sul cloud Microsoft per la gestione del lavoro, utilizza già gli allegati sicuri (per Office 365), ma ora avrà accesso ai collegamenti sicuri al momento del clic. Se si utilizzano chat, chat di gruppo, canali o schede, se si dispone di un abbonamento a Office 365 ATP, si avrà la possibilità di abilitare e utilizzare questa misura di sicurezza. Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Tenere presente quanto segue: 
 
@@ -51,5 +51,4 @@ Se l'utente che ha inviato il collegamento non è protetto da Office 365 ATP, è
 Se si fa clic sul pulsante *Torna indietro* in questa pagina, il team verrà chiuso (o potrebbe risultare che gli utenti di una pagina vuota possano chiudere). Tuttavia, facendo clic nuovamente sul collegamento si otterrà una rivalutazione della reputazione del sito in modo che questa pagina ricompaia.
 
 > [!NOTE]
->Alcuni amministratori di Microsoft 365 consentiranno la **prosecuzione** del messaggio nella pagina di blocco. Tuttavia, se i collegamenti sicuri misurano la reputazione di un sito e lo trovano privo, non è necessario eseguire ulteriori clic. Non è consigliabile ignorare le misure di sicurezza. Si prega di pesare questo nelle considerazioni prima di continuare comunque. 
-
+> Alcuni amministratori di Microsoft 365 consentiranno la **prosecuzione** del messaggio nella pagina di blocco. Tuttavia, se i collegamenti sicuri misurano la reputazione di un sito e lo trovano privo, non è necessario eseguire ulteriori clic. Non è consigliabile ignorare le misure di sicurezza. Si prega di pesare questo nelle considerazioni prima di continuare comunque. 

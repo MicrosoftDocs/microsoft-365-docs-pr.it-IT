@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Le cassette postali condivise vengono utilizzate quando più persone devono accedere alla stessa cassetta postale. Informazioni su ciò che è necessario sapere prima di creare una cassetta postale condivisa.
-ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b6d1d7c8e0ae99047b854e91c1a97327a839f630
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629108"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808748"
 ---
 # <a name="about-shared-mailboxes"></a>Informazioni sulle cassette postali condivise
 
 Le cassette postali condivise vengono usate quando più persone devono accedere alla stessa cassetta postale, ad esempio un'informazione aziendale o un indirizzo di posta elettronica di supporto, una reception o un'altra funzione che potrebbe essere condivisa da più persone.
 
-Gli utenti che dispongono delle autorizzazioni per la cassetta postale del gruppo possono inviare o inviare per conto dell'indirizzo di posta elettronica della cassetta postale, se l'amministratore ha concesso tali autorizzazioni. Questo è particolarmente utile per la guida e il supporto delle cassette postali, perché gli utenti possono inviare messaggi di posta elettronica da "contoso support" o "Building A reception.
+Gli utenti che dispongono delle autorizzazioni per la cassetta postale del gruppo possono inviare o inviare per conto dell'indirizzo di posta elettronica della cassetta postale, se l'amministratore ha concesso tali autorizzazioni. Questa funzione è particolarmente utile per le cassette postali dell'assistenza e del supporto, perché gli utenti possono inviare messaggi di posta elettronica dal "supporto tecnico Contoso" o dalla "reception dell'edificio A".
 
-Prima [di creare una cassetta postale condivisa](create-a-shared-mailbox.md), ecco alcuni aspetti da sapere.
+Prima [di creare una cassetta postale condivisa](create-a-shared-mailbox.md), ecco alcuni aspetti da sapere:
 
 - **Licenze:** La cassetta postale condivisa può archiviare fino a 50 GB di dati senza che sia stata assegnata una licenza. Per volumi più elevati, è necessario assegnare una licenza alla cassetta postale per archiviare più dati. Per ulteriori informazioni sulla gestione delle licenze per le cassette postali condivise, vedere [limiti di Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits). Dopo che la cassetta postale condivisa raggiunge il limite di archiviazione, per un certo periodo sarà possibile ricevere messaggi di posta elettronica, ma non inviarli. Trascorso quel periodo anche la ricezione verrà disabilitata. I mittenti dei messaggi riceveranno un rapporto di mancato recapito.
 
@@ -55,7 +55,7 @@ Prima [di creare una cassetta postale condivisa](create-a-shared-mailbox.md), ec
 
 - **Troppi utenti:** Quando si verificano contemporaneamente troppi utenti designati che accedono a una cassetta postale condivisa, potrebbero non essere in grado di connettersi a questa cassetta postale. In questo caso, è possibile valutare la riduzione del numero di utenti o l'utilizzo di un carico di lavoro diverso, ad esempio un gruppo di Microsoft 365 o una cartella pubblica.
 
-- **Eliminazione dei messaggi:** Purtroppo, non è possibile impedire agli utenti di eliminare i messaggi in una cassetta postale condivisa. In questo modo, è possibile creare un gruppo di Microsoft 365 anziché una cassetta postale condivisa. Un gruppo in Outlook è simile a una cassetta postale condivisa. Per un confronto tra i due, vedere [confrontare i gruppi](../create-groups/compare-groups.md). Per ulteriori informazioni sui gruppi, vedere ulteriori [informazioni sui gruppi](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **Eliminazione dei messaggi:** Purtroppo, non è possibile impedire agli utenti di eliminare i messaggi in una cassetta postale condivisa. In questo modo, è possibile creare un gruppo di Microsoft 365 anziché una cassetta postale condivisa. Un gruppo in Outlook è simile a una cassetta postale condivisa. Per un confronto tra i due, vedere [confrontare i gruppi](../create-groups/compare-groups.md). Per ulteriori informazioni sui gruppi, vedere ulteriori informazioni [sui gruppi](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx).
 
 ## <a name="related-articles"></a>Articoli correlati
 

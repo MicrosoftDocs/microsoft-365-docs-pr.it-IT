@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179177"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804840"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi Insider
 
@@ -103,7 +103,7 @@ La scheda **attività utente** è uno degli strumenti più potenti per l'analisi
 
 ### <a name="content-explorer"></a>Esplora contenuto
 
-La scheda **Content Explorer** consente agli analisti e ai ricercatori dei rischi di esaminare le copie di tutti i singoli file e messaggi di posta elettronica associati agli avvisi di rischio. Ad esempio, se viene creato un avviso quando un dipendente Scarica centinaia di file da SharePoint Online a un dispositivo USB e l'attività attiva un avviso per i criteri, tutti i file scaricati per l'avviso vengono acquisiti e copiati nel caso di gestione dei rischi Insider da origini di archiviazione originali.
+La scheda **Content Explorer** consente agli analisti e ai ricercatori dei rischi di esaminare le copie di tutti i singoli file e messaggi di posta elettronica associati agli avvisi di rischio. Ad esempio, se viene creato un avviso quando un dipendente Scarica centinaia di file da SharePoint Online a un dispositivo USB e l'attività attiva un avviso per i criteri, tutti i file scaricati per l'avviso vengono acquisiti e copiati nel caso di gestione dei rischi Insider provenienti da origini di archiviazione originali.
 
 Content Explorer è uno strumento potente con funzionalità di ricerca e filtro di base e avanzate. Per ulteriori informazioni sull'utilizzo di Content Explorer, vedere [Insider Risk Management Content Explorer](insider-risk-management-content-explorer.md).
 
@@ -163,7 +163,7 @@ Per inviare un avviso al dipendente assegnato a un caso:
 
 ### <a name="escalate-for-investigation"></a>Escalation per l'analisi
 
-Escalation del caso di indagine dei dipendenti in situazioni in cui è necessaria una revisione legale supplementare per l'attività di rischio del dipendente. Questa escalation apre un nuovo caso di eDiscovery avanzato nell'organizzazione Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rispondenti alle indagini legali interne ed esterne dell'organizzazione. Consente inoltre al team legale di gestire l'intero flusso di lavoro di notifica per la conservazione legale per comunicare con i depositari coinvolti in un caso. L'assegnazione di un revisore come custode in un caso avanzato di eDiscovery creato da un caso di gestione dei rischi Insider aiuta il team legale a prendere le misure appropriate e gestire la conservazione dei contenuti. Per ulteriori informazioni sui casi di eDiscovery avanzati, vedere [Overview of Advanced eDsicovery in Microsoft 365](overview-ediscovery-20.md).
+Escalation del caso di indagine dei dipendenti in situazioni in cui è necessaria una revisione legale supplementare per l'attività di rischio del dipendente. Questa escalation apre un nuovo caso di eDiscovery avanzato nell'organizzazione Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rispondenti alle indagini legali interne ed esterne dell'organizzazione. Consente inoltre al team legale di gestire l'intero flusso di lavoro di notifica per la conservazione legale per comunicare con i depositari coinvolti in un caso. L'assegnazione di un revisore come custode in un caso avanzato di eDiscovery creato da un caso di gestione dei rischi Insider aiuta il team legale a prendere le misure appropriate e gestire la conservazione dei contenuti. Per ulteriori informazioni sui casi di eDiscovery avanzati, vedere [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 Per inoltrare un caso a un'indagine dipendente:
 

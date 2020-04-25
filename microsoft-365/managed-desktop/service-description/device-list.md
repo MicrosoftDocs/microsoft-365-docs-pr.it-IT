@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 354845e3bfebee5e6c67b53ba5ef6f55a9c419f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d481a53da541b28975071a9dff6b7cdcc671345b
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637877"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804801"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
@@ -50,7 +50,7 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV | 18 luglio 2020 | 18 luglio 2023 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV | 18 luglio 2020 | 18 luglio 2023 |
 | [HP EliteOne 800 G4 23,8 in AIO](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV | 18 luglio 2020 | 18 luglio 2023 |
-| **\*[HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html--1#!&tab=features)** | 256 GB/Intel i5/8 GB di RAM | SKU con 9MZ21AV | 31 dicembre 2020 | 31 dicembre 2023 |
+| **\*[HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html)** | 256 GB/Intel i5/8 GB di RAM | SKU con 9MZ21AV | 31 dicembre 2020 | 31 dicembre 2023 |
 | [HP ProBook X360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV, videocamera IR o lettore di impronte digitali necessario | Giugno 6, 2020 | Giugno 6, 2023 |
 | [Workstation HP Z2 Mini G4](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB di RAM | SKU con 8QR48AV| 31 gennaio 2021 | 31 gennaio 2024 |
 |[Workstation mobile HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS02AV, videocamera IR necessaria | Nov 30, 2020 | Nov 30, 2023 |

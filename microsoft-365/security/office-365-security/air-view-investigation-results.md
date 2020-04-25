@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Durante e dopo un'analisi automatizzata in Microsoft 365, è possibile visualizzare i risultati e i risultati principali.
-ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b109c3e8a8dc92f2aaf91e40e620da8f1574af6f
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634629"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804863"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 
@@ -40,7 +40,7 @@ Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azion
 |Azione in sospeso | L'inchiesta ha individuato una minaccia, ad esempio un messaggio di posta indesiderata, un URL dannoso o un'impostazione di cassetta postale rischiosa e un'azione per correggere tale minaccia è in attesa di [approvazione](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Lo stato dell'azione in sospeso viene attivato quando viene trovata una minaccia con un'azione corrispondente. Tuttavia, l'elenco delle azioni in sospeso può aumentare durante l'esecuzione di un'indagine. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) per verificare se altri elementi sono ancora in attesa di completamento. |
 |Corretti | L'inchiesta è stata completata e tutte le azioni sono state approvate (completamente rimediate).<br/><br/>**Nota**: le azioni di correzione approvate possono avere errori che impediscono l'esecuzione delle azioni. Indipendentemente dal fatto che le azioni di correzione siano state completate correttamente, lo stato dell'inchiesta non cambia. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati. |
 |Parzialmente rimediato | L'analisi ha portato a operazioni di correzione e alcune sono state approvate e completate. Altre azioni sono ancora [in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
-|Failed | Almeno un analizzatore dell'analisi ha riscontrato un problema in cui non è stato possibile completarlo correttamente. <br/><br/>**Nota**: se un'indagine ha esito negativo dopo che sono state approvate le azioni di correzione, le azioni di correzione potrebbero essere state eseguite correttamente. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati. |
+|Esito negativo | Almeno un analizzatore dell'analisi ha riscontrato un problema in cui non è stato possibile completarlo correttamente. <br/><br/>**Nota**: se un'indagine ha esito negativo dopo che sono state approvate le azioni di correzione, le azioni di correzione potrebbero essere state eseguite correttamente. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati. |
 |Accodamento tramite limitazione | Viene eseguita un'analisi in una coda. Quando vengono completate altre indagini, vengono avviate indagini accodate. La limitazione consente di evitare scarse prestazioni del servizio. <br/><br/>**Suggerimento**: le azioni in sospeso possono limitare il numero di nuove indagini che è possibile eseguire. Assicurarsi di [approvare (o rifiutare) le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
 |Terminata mediante limitazione | Se una ricerca viene mantenuta troppo a lungo in coda, si interrompe. <br/><br/>**Suggerimento**: è possibile [avviare un'indagine da Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
@@ -250,6 +250,6 @@ Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Esaminare e approvare le azioni in sospeso](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)
+- [Esaminare e approvare le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
 
 - [Informazioni sull'analisi e la risposta automatizzate in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

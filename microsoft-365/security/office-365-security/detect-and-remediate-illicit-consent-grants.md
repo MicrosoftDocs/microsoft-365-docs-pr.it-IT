@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49fbbc1ea687cb5c01b39045a7359ee131a6732a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637605"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808977"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecite
 
@@ -48,17 +48,18 @@ Questi attacchi sfruttano un modello di interazione che presuppone che l'entità
 
 3. Search (tutte le attività e tutti gli utenti) e immettere la data di inizio e la data di fine, se necessario, e quindi fare clic su **Cerca**. 
 
-4. Filtrare i risultati per il consenso all'applicazione e aggiungere OAuth2PermissionGrant.
+4. Fare clic su **Filtra risultati** e immettere consenso all'applicazione nel campo **attività** .
 
 5. Fare clic sul risultato per visualizzare i dettagli dell'attività. Fare clic su **altre informazioni** per ottenere informazioni dettagliate sull'attività. Controllare se IsAdminContent è impostato su true.
 
 > [!NOTE]
-> * La voce del registro di controllo corrispondente viene visualizzata nei risultati della ricerca dopo un evento di 30 minuti fino a 24 ore. <br/><br/> Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Microsoft 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-Se questo valore è impostato su true, indica che un utente con accesso amministratore globale può aver concesso l'accesso esteso ai dati. Se questa operazione non è prevista, eseguire le operazioni necessarie per [confermare un attacco](#how-to-confirm-an-attack).
+> La voce del registro di controllo corrispondente viene visualizzata nei risultati della ricerca dopo un evento di 30 minuti fino a 24 ore. <br/><br/> Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Microsoft 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> Se questo valore è impostato su true, indica che un utente con accesso amministratore globale può aver concesso l'accesso esteso ai dati. Se questa operazione non è prevista, eseguire le operazioni necessarie per [confermare un attacco](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Come confermare un attacco
 
-Se si dispone di una o più istanze di IOCs elencate in alto, è necessario eseguire ulteriori indagini per confermare positivamente che l'attacco si è verificato. Per confermare l'attacco, è possibile utilizzare uno di questi tre metodi.
+Se si dispone di una o più istanze di IOCs elencate in alto, è necessario eseguire ulteriori indagini per confermare positivamente che l'attacco si è verificato. Per confermare l'attacco, è possibile utilizzare uno dei tre metodi seguenti:
 
 - Applicazioni di inventario e relative autorizzazioni tramite il portale di Azure Active Directory. Questo metodo è accurato, ma è possibile controllare solo un utente alla volta che può richiedere molto tempo se si dispone di molti utenti da controllare.
 
@@ -94,7 +95,7 @@ Fare in modo che gli https://myapps.microsoft.com utenti accedano e rivedano l'a
 
 Il modo più semplice per verificare l'attacco di concessione di consenso illecito consiste nell'eseguire [Get-AzureADPSPermissions. ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), che consentirà di scaricare tutti i concessioni di autorizzazione OAuth e le app OAuth per tutti gli utenti nel proprio contratto di locazione in un unico file. csv.
 
-#### <a name="pre-requisites"></a>Requisiti preliminari
+#### <a name="pre-requisites"></a>Prerequisiti
 
 - Libreria di Azure AD PowerShell installata.
 
@@ -158,9 +159,9 @@ Dopo aver identificato un'applicazione con autorizzazioni illecite, sono disponi
 
 - È possibile disattivare le applicazioni integrate per il tuo contratto di locazione. Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant. Ciò impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa. Questo non è fortemente consigliato perché compromette gravemente la capacità degli utenti di essere produttivi con le applicazioni di terze parti. È possibile eseguire questa operazione attenendosi alla procedura descritta in [attivazione o disattivazione delle app integrate](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Protezione di Microsoft 365 come un Cybersecurity Pro
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteggere Microsoft 365 come un professionista della sicurezza informatica
 
-La sottoscrizione Microsoft 365 include un potente set di funzionalità di sicurezza che è possibile utilizzare per proteggere i dati e gli utenti. Utilizzare la [Roadmap di sicurezza di microsoft 365-priorità principali per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate di Microsoft consigliati per la protezione del tenant Microsoft 365.
+L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti. Usare la [Roadmap della sicurezza di Microsoft 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Microsoft 365.
 
 - Attività da eseguire i primi 30 giorni. Queste hanno effetto immediato e sono a basso impatto per gli utenti.
 

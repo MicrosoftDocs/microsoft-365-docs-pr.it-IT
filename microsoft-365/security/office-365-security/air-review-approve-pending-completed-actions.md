@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle azioni di correzione nelle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634641"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804831"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Visualizzare le azioni di correzione in sospeso o completate dopo un'analisi automatizzata in Office 365
 
-## <a name="approve-or-reject-pending-actions"></a>Approva (o rifiuta) azioni in sospeso
 
 ![Pagina azione indagini AEREe](../../media/air-investigationactionspage.png)
+
+## <a name="approve-or-reject-pending-actions"></a>Approva (o rifiuta) azioni in sospeso
 
 Durante la visualizzazione dei [Dettagli di un'indagine](air-view-investigation-results.md), è possibile approvare o rifiutare tutte le azioni di correzione in sospeso. Si consiglia di eseguire questa operazione non appena possibile in modo che le indagini automatizzate siano state completate.
 
@@ -44,8 +45,8 @@ Durante la visualizzazione dei [Dettagli di un'indagine](air-view-investigation-
 5. Selezionare un elemento nell'elenco. (Vengono attivati i pulsanti approva e rifiuta).
 
 6. Esaminare le informazioni disponibili per gli elementi selezionati e quindi approvare o rifiutare le azioni. 
- - **Approvazione** consente di iniziare la correzione.
- - **Rifiuto** non esegue altre azioni
+   - **Approvazione** consente di iniziare la correzione.
+   - **Rifiuto** non esegue altre azioni
 
 ## <a name="next-steps"></a>Passaggi successivi
 
