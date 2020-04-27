@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 8295ec4098e90cac963598ab2d53d47a266b23a7
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 8b6cf223eb9a7a806691a282944e77040de3f586
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551147"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790633"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -141,7 +141,7 @@ Per ulteriori informazioni su questi classificatori, vedere [Introduzione ai cla
 
 Durante il periodo di anteprima, le app seguenti supportano i classificatori per le etichette di riservatezza:
 
-- Le applicazioni desktop di Office 365 ProPlus per Windows, da [Office Insider](https://office.com/insider):
+- App desktop per Windows di Microsoft365 Apps for enterprise, da [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
@@ -152,7 +152,7 @@ Durante il periodo di anteprima, le app seguenti supportano i classificatori per
     - PowerPoint
     - Outlook
 
-### <a name="recommend-that-the-user-applies-a-sensitivity-label-in-office-apps"></a>Consigliare all'utente di applicare un'etichetta di riservatezza nelle app di Office
+### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Consigliare all'utente di applicare un'etichetta di riservatezza
 
 Se si preferisce, è possibile consigliare agli utenti di applicare l'etichetta. Con questa opzione, gli utenti possono accettare la classificazione e le eventuali protezioni associate o ignorare il suggerimento se l'etichetta non è adatta al relativo contenuto.
 
@@ -162,7 +162,7 @@ Ecco un esempio di un avviso del client di etichettatura unificata di Azure Info
 
 ![Richiesta di applicazione di un'etichetta consigliata](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-### <a name="when-automatic-or-recommended-labels-are-applied-in-office-apps"></a>Quando vengono applicate le etichette automatiche o consigliate nelle app di Office
+### <a name="when-automatic-or-recommended-labels-are-applied"></a>Quando vengono applicate le etichette automatiche o consigliate
 
 L'implementazione dell'etichettatura automatica e consigliata nelle app di Office varia a seconda se si utilizza l'etichettatura non integrata in Office o il client di etichettatura unificata di Azure Information Protection. Tuttavia, in entrambi i casi:
 
@@ -192,7 +192,7 @@ Caratteristiche specifiche del client di etichettatura unificata di Azure Inform
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Prerequisiti per i criteri di applicazione automatica di etichette
 
-- Per la modalità di simulazione, è necessario attivare il controllo per Office 365. Se è necessario attivare il controllo o per verificare se è già attivato, vedere [Abilitare o disabilitare la ricerca nei log di controllo di Office 365](turn-audit-log-search-on-or-off.md).
+- Per la modalità di simulazione, è necessario attivare il controllo per Microsoft 365. Se è necessario attivare il controllo o per verificare se è già attivato, vedere [Abilitare o disabilitare la ricerca nei log di controllo](turn-audit-log-search-on-or-off.md).
 
 - Per assegnare un'etichetta automatica ai file in SharePoint e OneDrive:
     - Sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -205,6 +205,7 @@ Caratteristiche specifiche del client di etichettatura unificata di Azure Inform
 - Una o più etichette di riservatezza [create e pubblicate](create-sensitivity-labels.md) (per almeno un utente) che è possibile selezionare per i criteri di applicazione automatica di etichette. Per queste etichette:
     - Non è rilevante se l'opzione di etichettatura automatica nelle app di Office sia attivata o disattivata perché, come spiegato nell'introduzione, quella impostazione delle etichette integra i criteri di applicazione automatica di etichette. 
     - Se le etichette che si vogliono usare per l'applicazione automatica di etichette sono configurate per l'uso di contrassegni visivi (intestazioni, piè di pagina e filigrane), tenere presente che non questi non vengono applicati ai documenti.
+    - Se le etichette applicano la crittografia, devono essere configurate per **Assegnare le autorizzazioni ora**.
 
 ### <a name="learn-about-simulation-mode"></a>Informazioni sulla modalità di simulazione
 
@@ -239,6 +240,8 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
 2. Selezionare la scheda** Etichettatura automatica (anteprima)**:
     
     ![Scheda Etichettatura automatica (anteprima)](../media/auto-labeling-tab.png)
+    
+    Questa nuova scheda è ancora in fase di distribuzione nei tenant. Se viene visualizzata, riprovare tra qualche giorno.
 
 3. Selezionare **+ Crea criterio**.
 
@@ -292,5 +295,4 @@ Per visualizzare i risultati del criterio di applicazione automatica di etichett
 
 > [!TIP]
 > È anche possibile usare Esplora contenuto per identificare le posizioni in cui sono presenti documenti senza etichetta che contengono informazioni sensibili. Usando queste informazioni, è possibile aggiungere queste posizioni ai criteri di applicazione automatica di etichette e includere come regole i tipi di informazioni sensibili identificati.
-
 

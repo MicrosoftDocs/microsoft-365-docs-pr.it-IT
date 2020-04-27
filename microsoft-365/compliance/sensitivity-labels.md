@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza del framework Microsoft Information Protection per classificare e proteggere i dati dell'organizzazione, garantendo al contempo che la produttività degli utenti e la loro capacità di collaborare non vengano ostacolate. Queste etichette possono applicare impostazioni di protezione che includono contrassegni visivi di crittografia come piè di pagina e filigrane.
-ms.openlocfilehash: 27accc57bce0b5597836e7683cf5b28d0fa9b942
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240311"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790653"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -80,7 +80,7 @@ A ogni elemento di contenuto può essere applicata una sola etichetta di riserva
 > Oltre che per l'applicazione di etichette ai messaggi di posta elettronica e ai documenti nelle app di Office, le etichette di riservatezza sono ora disponibili anche nelle versioni di anteprima pubbliche seguenti:
 > 
 > - [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [Usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md)
+> - [Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md)
 
 Quando si applica un'etichetta di riservatezza a un messaggio di posta elettronica o a un documento, vengono applicate ai contenuti le impostazioni di protezione configurare per quell'etichetta. Con un'etichetta di riservatezza, è possibile:
 
@@ -92,14 +92,14 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     
     ![Filigrana e intestazione applicate a un documento](../media/Sensitivity-label-watermark-header.png)
     
-    Se è necessario verificare se sono stati applicati contrassegni al contenuto, vedere [Quando Office 365 applica il contrassegno e la crittografia al contenuto](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
+    Se è necessario verificare se sono stati applicati contrassegni al contenuto, vedere [Quando Microsoft 365 applica il contrassegno e la crittografia](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
     
     Lunghezza stringa: le filigrane sono limitate a 255 caratteri. Le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne che in Excel. Excel ha un limite totale di 255 caratteri per le intestazioni e i piè di pagina, ma questo limite include i caratteri non visibili, come i codici di formattazione. Se viene raggiunto questo limite, la stringa immessa non viene visualizzata in Excel.
 
 
-- **Proteggere il contenuto in contenitori come siti e gruppi** quando si sceglie l'anteprima per [usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md).
+- **Proteggere il contenuto in contenitori come siti e gruppi** quando si sceglie l'anteprima per [usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md).
     
-    Le opzioni di configurazione per **Impostazioni sito e gruppo** non vengono visualizzate finché non si sceglie l'anteprima. Tenere presente che questa configurazione di etichetta non comporta l'etichettatura automatica dei documenti, ma le impostazioni di etichetta proteggono il contenuto controllando l'accesso al contenitore in cui sono archiviati i documenti. Queste impostazioni includono il livello di privacy, indipendentemente dal fatto che il proprietario di un gruppo di Office 365 possa aggiungere utenti Guest al gruppo, e il livello di accesso concesso a un dispositivo non gestito.
+    Le opzioni di configurazione per **Impostazioni sito e gruppo** non vengono visualizzate finché non si sceglie l'anteprima. Tenere presente che questa configurazione di etichetta non comporta l'etichettatura automatica dei documenti, ma le impostazioni di etichetta proteggono il contenuto controllando l'accesso al contenitore in cui sono archiviati i documenti. Queste impostazioni includono il livello di privacy, indipendentemente dal fatto che il proprietario di un gruppo di Microsoft 365 possa aggiungere utenti Guest al gruppo, e il livello di accesso concesso a un dispositivo non gestito.
 
 - **Applicare l'etichetta automaticamente nelle app di Office o consigliare un'etichetta.** È possibile scegliere i tipi di informazioni riservate che si desidera etichettare e l'etichetta può essere applicata automaticamente oppure richiedere agli utenti di applicare l'etichetta consigliata. Se si consiglia un'etichetta, viene visualizzato il messaggio che si sceglie. Ad esempio:
     
@@ -141,9 +141,9 @@ Dopo aver creato le etichette di riservatezza, è necessario pubblicarle per ren
 
 Con un criterio di etichetta, è possibile:
 
-- **Scegliere gli utenti e i gruppi che vedranno le etichette.** Le etichette possono essere pubblicate in qualsiasi gruppo di sicurezza abilitato alla posta elettronica, gruppo di Office 365 o gruppo di distribuzione dinamico.
+- **Scegliere gli utenti e i gruppi che vedranno le etichette.** Le etichette possono essere pubblicate in qualsiasi utente specifico, gruppo di sicurezza abilitato per la posta elettronica, gruppo di distribuzione o gruppo di Microsoft 365, che può avere [appartenenza dinamica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD.
 
-- **Applicare un'etichetta predefinita** a tutti i nuovi documenti e messaggi di posta elettronica creati dagli utenti e dai gruppi inclusi nel criterio di etichetta. Questa opzione si applica anche ai contenitori, se sono state [abilitate le etichette di riservatezza per Microsoft Teams, i gruppi di Office 365 e i siti di SharePoint](sensitivity-labels-teams-groups-sites.md). Gli utenti possono sempre modificare l'etichetta predefinita, se non è quella giusta per il documento o la posta elettronica. Considerare l'uso di un'etichetta predefinita per impostare un livello di impostazioni di sicurezza di base da applicare a tutto il contenuto. Tuttavia, in mancanza di formazione per gli utenti e di altri controlli, questa impostazione può anche risultare nell'applicazione di etichette non corrette. 
+- **Applicare un'etichetta predefinita** a tutti i nuovi documenti e messaggi di posta elettronica creati dagli utenti e dai gruppi inclusi nel criterio di etichetta. Questa opzione si applica anche ai contenitori, se sono state [abilitate le etichette di riservatezza per Microsoft Teams, i gruppi di Microsoft 365 e i siti di SharePoint](sensitivity-labels-teams-groups-sites.md). Gli utenti possono sempre modificare l'etichetta predefinita, se non è quella giusta per il documento o la posta elettronica. Considerare l'uso di un'etichetta predefinita per impostare un livello di impostazioni di sicurezza di base da applicare a tutto il contenuto. Tuttavia, in mancanza di formazione per gli utenti e di altri controlli, questa impostazione può anche risultare nell'applicazione di etichette non corrette. 
 
 - **Richiedere una motivazione per la modifica di un'etichetta.** Se un utente prova a rimuovere un'etichetta o a sostituirla con un'etichetta che ha un numero d'ordine inferiore, è possibile richiedere all'utente di fornire una motivazione per eseguire questa operazione. Ad esempio, un utente apre un documento con l'etichetta Riservato (numero d'ordine 3) e sostituisce tale etichetta con un'altra denominata Pubblico (numero d'ordine 1). Attualmente, la motivazione non viene inviata all'[analisi delle etichette](label-analytics.md) per la revisione da parte dell'amministratore. Tuttavia, il [client di etichettatura unificata di Azure Information Protection ](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) invia le informazioni all'[analisi di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
@@ -197,7 +197,7 @@ I metadati applicati da entrambi i set di etichette sono compatibili, quindi non
 
 ### <a name="azure-information-protection-clients"></a>Client di Azure Information Protection
 
-Se si usano le etichette di riservatezza nelle app di Office 365 ProPlus in computer Windows, è possibile scegliere di usare un client di Azure Information Protection o di usare l'etichettatura integrata in Office.
+Se si usano le etichette di riservatezza nelle app di Microsoft 365 Apps for enterprise in computer Windows, è possibile scegliere di usare un client di Azure Information Protection o di usare l'etichettatura integrata in Office.
 
 Per impostazione predefinita, l'etichettatura integrata è disattivata nelle app quando è installato il client di Azure Information Protection. Per altre informazioni, incluse indicazioni su come modificare questo comportamento predefinito, vedere [Client di etichettatura incorporato di Office e client Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
 
