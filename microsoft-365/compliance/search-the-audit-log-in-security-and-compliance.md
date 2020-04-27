@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: "Usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. "
+ms.openlocfilehash: f3cf16da0c7623c1cdd7f90272fa4b11126dcc25
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521492"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805188"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
 ## <a name="introduction"></a>Introduzione
 
-Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, si può usare il Centro sicurezza e conformità di Office 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione di Office 365. Perché usare un log di controllo unificato? Perché è possibile cercare i tipi seguenti di attività di utenti e amministratori in Office 365:
+Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, è possibile usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. Perché usare un log di controllo unificato? Perché è possibile cercare i tipi seguenti di attività di utenti e amministratori in Office 365:
 
 - Attività utente in SharePoint Online e OneDrive for Business
 
@@ -65,33 +65,33 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 - Attività utente e amministratore per le etichette di riservatezza per siti che usano SharePoint Online o Microsoft Teams
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del registro di controllo di Office 365.
+Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
-- È necessario che l'amministratore corrente o un altro amministratore attivi la registrazione di controllo prima di iniziare a eseguire ricerche nel log di controllo di Office 365. Per attivare la registrazione, fare clic su **Attiva il controllo** nella pagina **Ricerca log di controllo** del Centro sicurezza e conformità. Se questo collegamento non è visibile, il controllo è stato già attivato per la propria organizzazione. Dopo l'attivazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. Questa procedura deve essere eseguita una sola volta. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
+- È necessario che l'amministratore corrente (o un altro amministratore) attivi la registrazione di controllo prima di iniziare a eseguire ricerche nel log di controllo. Per attivare la registrazione, fare clic su **Attiva il controllo** nella pagina **Ricerca log di controllo** del Centro sicurezza e conformità. Se questo collegamento non è visibile, il controllo è stato già attivato per la propria organizzazione. Dopo l'attivazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. Questa procedura deve essere eseguita una sola volta. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
 
   > [!NOTE]
   > Microsoft sta per impostare come predefinita l'attivazione del controllo. Nel frattempo, è possibile attivarlo come descritto in precedenza.
 
-- È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per consentire a un utente di eseguire ricerche nel log di controllo di Office 365 con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+- È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per consentire a un utente di eseguire ricerche nel log di controllo con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
   > [!IMPORTANT]
-  > Se si assegna a un utente il ruolo relativo ai log di controllo di sola lettura o ai log di controllo nella pagina **Autorizzazioni** del Centro sicurezza e conformità, l'utente non potrà eseguire ricerche nel log di controllo di Office 365. È necessario assegnare le autorizzazioni in Exchange Online. Ciò avviene perché il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online.
+  > Se si assegna a un utente il ruolo relativo ai log di controllo di sola lettura o ai log di controllo nella pagina **Autorizzazioni** del Centro sicurezza e conformità, l'utente non potrà eseguire ricerche nel log di controllo. È necessario assegnare le autorizzazioni in Exchange Online. Ciò avviene perché il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online.
 
-- Quando un'attività di controllo viene eseguita da un utente o da un amministratore, viene generato un record di controllo che viene archiviato nel log di controllo di Office 365 per l'organizzazione. Il periodo di tempo per cui il record di controllo viene conservato (ed è disponibile per la ricerca nel log di controllo) varia in base all'abbonamento a Office 365 o Microsoft 365 Enterprise e, in particolare, al tipo di licenza assegnata a un utente specifico.
+- Quando un'attività di controllo viene eseguita da un utente o da un amministratore, viene generato un record di controllo che viene archiviato nel log di controllo per l'organizzazione. Il periodo di tempo per cui il record di controllo viene conservato (ed è disponibile per la ricerca nel log di controllo) varia in base all'abbonamento a Office 365 o Microsoft 365 Enterprise e, in particolare, al tipo di licenza assegnata a un utente specifico.
 
-  - **Office 365 E3 o Microsoft 365 E3:** i record di controllo vengono conservati per 90 giorni. Ciò significa che è possibile cercare nel log di controllo le attività eseguite negli ultimi 90 giorni.
-
-    > [!NOTE]
-    > Anche se il controllo delle cassette postali è attivato per impostazione predefinita, si potrebbe notare che gli eventi di controllo delle cassette postali per alcuni utenti non sono inclusi nelle ricerche nei log di controllo nel Centro sicurezza e conformità o nell'API Office 365 Management Activity. Vedere la sezione [Altre informazioni sulla registrazione di controllo delle cassette postali](enable-mailbox-auditing.md#more-information).
-
-  - **Office 365 E5 o Microsoft 365 E5 o utente con una licenza per componente aggiuntivo Microsoft 365 E5 Compliance:** i record di controllo per l'attività di Azure Active Directory, Exchange e SharePoint vengono conservati per un anno per impostazione predefinita. Le organizzazioni possono anche creare criteri di conservazione del log di controllo per conservare i record di controllo per le attività in altri servizi per un massimo di un anno. Per altre informazioni, vedere [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md).
+  - Per gli utenti con licenza Office 365 E5 o Microsoft 365 E5 o utenti con una licenza per componente aggiuntivo Microsoft 365 E5 Compliance o Microsoft 365 E5 eDiscovery e Audit, i record di controllo per l'attività di Azure Active Directory, Exchange e SharePoint vengono conservati per un anno per impostazione predefinita. Le organizzazioni possono anche creare criteri di conservazione del log di controllo per conservare i record di controllo per le attività in altri servizi per un massimo di un anno. Per altre informazioni, vedere [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md).
 
     > [!NOTE]
     > Se l'organizzazione ha partecipato al programma di anteprima privata per la conservazione dei record di controllo per un anno, la durata di conservazione per i record di controllo generati prima della data di implementazione della disponibilità generale non verrà reimpostata.
 
-- Se si desidera disattivare la ricerca nel log di controllo in Office 365 per la propria organizzazione, è possibile eseguire questo comando nell'istanza di PowerShell remota connessa all'organizzazione di Exchange Online:
+  - Per gli utenti con qualsiasi altra licenza Office 365 o Microsoft 365 (non E5), i record di controllo vengono conservati per 90 giorni. Per un elenco degli abbonamenti a Office 365 e Microsoft 365 che supportano la registrazione di controllo unificato, vedere [la descrizione del servizio del Centro sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+
+    > [!NOTE]
+    > Anche se il controllo delle cassette postali è attivato per impostazione predefinita, si potrebbe notare che gli eventi di controllo delle cassette postali per alcuni utenti non sono inclusi nelle ricerche nei log di controllo nel Centro sicurezza e conformità o nell'API Office 365 Management Activity. Vedere la sezione [Altre informazioni sulla registrazione di controllo delle cassette postali](enable-mailbox-auditing.md#more-information).
+
+- Se si desidera disattivare la ricerca nel log di controllo per la propria organizzazione, è possibile eseguire questo comando nell'istanza di PowerShell remota connessa all'organizzazione di Exchange Online:
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -103,17 +103,17 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
-  Per altre informazioni, vedere [Disattivare la ricerca nel log di controllo in Office 365](turn-audit-log-search-on-or-off.md).
+  Per altre informazioni, vedere [Disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
 
-- Come indicato in precedenza, il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Ciò significa che è possibile usare questo cmdlet anziché la pagina **Ricerca log di controllo** in Centro sicurezza e conformità per eseguire una ricerca nel log di controllo di Office 365. È necessario eseguire questo cmdlet in una sessione remota di PowerShell connessa all'organizzazione di Exchange Online. Per altre informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Come indicato in precedenza, il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Ciò significa che è possibile usare questo cmdlet anziché la pagina **Ricerca log di controllo** in Centro sicurezza e conformità per eseguire una ricerca nel log di controllo. È necessario eseguire questo cmdlet in una sessione remota di PowerShell connessa all'organizzazione di Exchange Online. Per altre informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
 
   Per informazioni sull'esportazione dei risultati della ricerca restituiti dal cmdlet **Search-UnifiedAuditLog** in un file CSV, vedere la sezione "Suggerimenti per l'esportazione e la visualizzazione del log di controllo in [Esportare, configurare e visualizzare i record del log di controllo ](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
-- Per scaricare i dati a livello di programmazione dal log di controllo di Office 365, è consigliabile usare l'API Office 365 Management Activity, invece di uno script di PowerShell. L'API Office 365 Management Activity è un servizio Web REST che è possibile utilizzare per sviluppare operazioni e soluzioni per la sicurezza e il monitoraggio della conformità per l'organizzazione. Per altre informazioni, vedere [Riferimento API Office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
+- Per scaricare i dati a livello di programmazione dal log di controllo, è consigliabile usare l'API Office 365 Management Activity, invece di uno script di PowerShell. L'API Office 365 Management Activity è un servizio Web REST che è possibile utilizzare per sviluppare operazioni e soluzioni per la sicurezza e il monitoraggio della conformità per l'organizzazione. Per altre informazioni, vedere [Riferimento API Office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
 - La restituzione del record del log di controllo nei risultati della ricerca dei log di controllo può richiedere fino a 30 minuti o a 24 ore dal momento in cui si verifica l'evento. La tabella seguente mostra il tempo necessario per i diversi servizi in Office 365.
 
-  |**Servizio Office 365**|**30 minuti**|**24 ore**|
+  |**Servizio o funzionalità Microsoft 365**|**30 minuti**|**24 ore**|
   |:-----|:-----:|:-----:|
   |Advanced Threat Protection e Threat Intelligence|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (eventi di accesso utente)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -129,6 +129,7 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
   |Power Apps||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Centro sicurezza e conformità|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Etichette di riservatezza||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online e OneDrive for Business|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -138,7 +139,7 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
 
 - Azure Active Directory (Azure AD) è il servizio directory per Office 365. Il log di controllo unificato contiene le attività di utenti, gruppi, applicazioni, domini e directory eseguite nell'interfaccia di amministrazione di Microsoft 365 o nel portale di gestione di Azure. Per un elenco completo degli eventi di Azure AD, vedere [Eventi del report di controllo di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
 
-- La registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per cercare le attività di Power BI nel log di controllo di Office 365, è necessario abilitare il controllo nel portale di amministrazione di Power BI. Per le istruzioni, vedere la sezione "Log di controllo" nel [portale di amministrazione di Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
+- La registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per cercare le attività di Power BI nel log di controllo, è necessario abilitare il controllo nel portale di amministrazione di Power BI. Per le istruzioni, vedere la sezione "Log di controllo" nel [portale di amministrazione di Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
 ## <a name="search-the-audit-log"></a>Eseguire ricerche nel log di controllo
 
@@ -159,7 +160,7 @@ Ecco il processo per la ricerca nel log di controllo in Office 365.
     > [!TIP]
     > Usare una sessione di esplorazione privata (invece di una normale) per accedere al Centro sicurezza e conformità, per impedire che le credenziali con cui si è attualmente connessi vengano utilizzate. Per aprire una finestra InPrivate Browsing in Internet Explorer o in Microsoft Edge, premere CTRL + MAIUSC + P. Per aprire una sessione di esplorazione privata in Google Chrome (denominata finestra di navigazione in incognito), premere CTRL + MAIUSC + N.
 
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
+2. Accedere usando l'account aziendale o dell'istituto di istruzione.
 
 3. Nel riquadro sinistro del Centro sicurezza e conformità, fare clic su **Cerca**, quindi su **Ricerca log di controllo**.
 
@@ -174,7 +175,7 @@ Ecco il processo per la ricerca nel log di controllo in Office 365.
 
     a. **Attività**: fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Le attività di utenti e amministratori sono organizzate in gruppi di attività correlate. È possibile selezionare attività specifiche oppure è possibile fare clic sul nome del gruppo di attività per selezionare tutte le attività del gruppo. È anche possibile fare clic su un'attività selezionata per annullare la selezione. Dopo aver eseguito la ricerca, vengono visualizzate solo le voci del log di controllo per le attività selezionate. Se si seleziona **Visualizza i risultati per tutte le attività**, vengono visualizzati i risultati per tutte le attività eseguite dall'utente o dal gruppo di utenti selezionato.
 
-    Nel log di controllo di Office 365 vengono registrate più di 100 attività di utenti e amministratori. Fare clic sulla scheda **Attività controllate** in questo articolo per visualizzare le descrizioni delle singole attività per i vari servizi di Office 365.
+    Nel log di controllo vengono registrate più di 100 attività di utenti e amministratori. Fare clic sulla scheda **Attività controllate** in questo articolo per visualizzare le descrizioni delle singole attività per i vari servizi.
 
     b. **Data inizio** e **Data fine**: per impostazione predefinita, sono selezionati gli ultimi sette giorni. Selezionare un intervallo di date e ore per visualizzare gli eventi che si sono verificati in quel periodo. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo massimo che è possibile specificare è 90 giorni. Se l'intervallo di date selezionato è maggiore di 90 giorni, verrà visualizzato un errore.
 
@@ -239,7 +240,7 @@ I risultati includono le informazioni seguenti relative a ogni evento restituito
 
 #### <a name="view-the-details-for-a-specific-event"></a>Visualizzare i dettagli di un evento specifico
 
-È possibile visualizzare altri dettagli di un evento facendo clic sul record dell'evento nell'elenco dei risultati della ricerca. Verrà visualizzata una pagina **Dettagli** contenente le proprietà dettagliate del record dell'evento. Le proprietà visualizzate dipendono dal servizio di Office 365 in cui si verifica l'evento. Per visualizzare questi dettagli, fare clic su **Altre informazioni**. Per le descrizioni, vedere [Proprietà dettagliate nel log di controllo di Office 365](detailed-properties-in-the-office-365-audit-log.md).
+È possibile visualizzare altri dettagli di un evento facendo clic sul record dell'evento nell'elenco dei risultati della ricerca. Verrà visualizzata una pagina **Dettagli** contenente le proprietà dettagliate del record dell'evento. Le proprietà visualizzate dipendono dal servizio in cui si verifica l'evento. Per visualizzare questi dettagli, fare clic su **Altre informazioni**. Per le descrizioni, vedere [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md).
 
 ![Fare clic su Altre informazioni per visualizzare le proprietà dettagliate del record dell'evento del log di controllo](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
@@ -274,7 +275,7 @@ Per filtrare i risultati:
 
    - **Salva i risultati caricati**: scegliere questa opzione per esportare solo le voci visualizzate in **Risultati** nella pagina **Ricerca log di controllo**. Il file CSV che viene scaricato contiene le stesse colonne (e gli stessi dati) presenti nella pagina (Data, Utente, Attività, Elemento e Dettagli). Il file CSV contiene una colonna aggiuntiva (denominata **Altro**) con altre informazioni sulla voce del log di controllo. Poiché si stanno esportando gli stessi risultati caricati (e visualizzabili) nella pagina **Ricerca log di controllo**, verranno esportate al massimo 5.000 voci.
 
-   - **Scarica tutti i risultati**: scegliere questa opzione per esportare tutte le voci del log di controllo di Office 365 che soddisfano i criteri di ricerca. Per un ampio set di risultati della ricerca, scegliere questa opzione per scaricare tutte le voci del log di controllo oltre ai 5.000 risultati che possono essere visualizzati nella pagina **Ricerca log di controllo**. Questa opzione consente di scaricare i dati non elaborati dal log di controllo in un file CSV e include informazioni aggiuntive sulle voci del log di controllo in una colonna denominata **AuditData**. Se si sceglie questa opzione di esportazione potrebbe essere necessario più tempo per scaricare il file, in quanto il file potrebbe essere molto più grande di quello scaricato scegliendo l'altra opzione.
+   - **Scarica tutti i risultati**: scegliere questa opzione per esportare tutte le voci del log di controllo che soddisfano i criteri di ricerca. Per un ampio set di risultati della ricerca, scegliere questa opzione per scaricare tutte le voci del log di controllo oltre ai 5.000 risultati che possono essere visualizzati nella pagina **Ricerca log di controllo**. Questa opzione consente di scaricare i dati non elaborati dal log di controllo in un file CSV e include informazioni aggiuntive sulle voci del log di controllo in una colonna denominata **AuditData**. Se si sceglie questa opzione di esportazione potrebbe essere necessario più tempo per scaricare il file, in quanto il file potrebbe essere molto più grande di quello scaricato scegliendo l'altra opzione.
 
      > [!IMPORTANT]
      > È possibile scaricare al massimo 50.000 voci in un file CSV da una singola ricerca nel log di controllo. Se vengono scaricate 50.000 voci nel file CSV, è probabile che ci siano più di 50.000 eventi che soddisfano i criteri di ricerca. Per eseguire l'esportazione oltre questo limite, provare a usare un intervallo di date per ridurre il numero di voci del log di controllo. Potrebbe essere necessario eseguire più ricerche con intervalli di date più piccoli per esportare più di 50.000 voci.
@@ -287,17 +288,17 @@ Per filtrare i risultati:
 
   Dopo avere diviso la colonna **AuditData**, è possibile filtrare in base alla colonna **Operazioni** per visualizzare le proprietà dettagliate per un tipo di attività specifico.
 
-- L'opzione **Scarica tutti i risultati** scarica i dati non elaborati dal log di controllo di Office 365 in un file CSV. Il file contiene nomi di colonna (CreationDate, UserIds, Operation, AuditData) diversi rispetto a quelli nel file scaricato selezionando l'opzione **Salva i risultati caricati**. Anche i valori per la stessa attività potrebbero essere diversi nei due diversi file CSV. Ad esempio, l'attività nella colonna **Azione** nel file CSV può avere un valore diverso rispetto alla versione descrittiva visualizzata nella colonna **Attività** nella pagina **Ricerca log di controllo**. I due valori potrebbero ad esempio essere MailboxLogin e Utente connesso a cassetta postale.
+- L'opzione **Scarica tutti i risultati** scarica i dati non elaborati dal log di controllo in un file CSV. Il file contiene nomi di colonna (CreationDate, UserIds, Operation, AuditData) diversi rispetto a quelli nel file scaricato selezionando l'opzione **Salva i risultati caricati**. Anche i valori per la stessa attività potrebbero essere diversi nei due diversi file CSV. Ad esempio, l'attività nella colonna **Azione** nel file CSV può avere un valore diverso rispetto alla versione descrittiva visualizzata nella colonna **Attività** nella pagina **Ricerca log di controllo**. I due valori potrebbero ad esempio essere MailboxLogin e Utente connesso a cassetta postale.
 
-- Quando si scaricano tutti i risultati di una query di ricerca che contiene eventi di diversi servizi di Office 365, la colonna **AuditData** nel file CSV contiene proprietà diverse a seconda del servizio in cui è stata eseguita l'azione. Le voci dei log di controllo di Exchange e Azure AD, ad esempio, contengono una proprietà denominata **ResultStatus** che indica se l'azione è riuscita o meno. Questa proprietà non è inclusa per gli eventi di SharePoint. Analogamente, gli eventi di SharePoint hanno una proprietà che identifica l'URL del sito per le attività correlate a file e cartelle. Per ovviare a questo comportamento, è consigliabile usare ricerche diverse per esportare i risultati per le attività da un unico servizio.
+- Quando si scaricano tutti i risultati di una query di ricerca che contiene eventi di diversi servizi, la colonna **AuditData** nel file CSV contiene proprietà diverse a seconda del servizio in cui è stata eseguita l'azione. Le voci dei log di controllo di Exchange e Azure AD, ad esempio, contengono una proprietà denominata **ResultStatus** che indica se l'azione è riuscita o meno. Questa proprietà non è inclusa per gli eventi di SharePoint. Analogamente, gli eventi di SharePoint hanno una proprietà che identifica l'URL del sito per le attività correlate a file e cartelle. Per ovviare a questo comportamento, è consigliabile usare ricerche diverse per esportare i risultati per le attività da un unico servizio.
 
-  Per una descrizione delle numerose proprietà elencate nella colonna **AuditData** del file CSV quando si scaricano tutti i risultati, con l'indicazione del servizio a cui si riferiscono, vedere [Proprietà dettagliate nel log di controllo di Office 365](detailed-properties-in-the-office-365-audit-log.md).
+  Per una descrizione delle numerose proprietà elencate nella colonna **AuditData** del file CSV quando si scaricano tutti i risultati, con l'indicazione del servizio a cui si riferiscono, vedere [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md).
 
 ## <a name="audited-activities"></a>Attività controllate
 
 Le tabelle in questa sezione descrivono le attività che vengono controllate in Office 365. È possibile cercare questi eventi eseguendo una ricerca nel log di controllo nel Centro sicurezza e conformità.
 
-Queste tabelle raggruppano le attività correlate o le attività di un determinato servizio di Office 365. Le tabelle includono il nome descrittivo visualizzato nell'elenco a discesa **Attività** e il nome dell'operazione corrispondente visualizzato nelle informazioni dettagliate di un record di controllo e nel file CSV quando si esportano i risultati della ricerca. Per le descrizioni delle informazioni dettagliate, vedere [Proprietà dettagliate nel log di controllo di Office 365](detailed-properties-in-the-office-365-audit-log.md).
+Queste tabelle raggruppano le attività correlate o le attività di un determinato servizio. Le tabelle includono il nome descrittivo visualizzato nell'elenco a discesa **Attività** e il nome dell'operazione corrispondente visualizzato nelle informazioni dettagliate di un record di controllo e nel file CSV quando si esportano i risultati della ricerca. Per le descrizioni delle informazioni dettagliate, vedere [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md).
 
 Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
 
@@ -362,9 +363,9 @@ Ad esempio, app@sharepoint spesso viene identificato come utente per gli eventi 
 
 Ecco alcuni altri scenari in cui è possibile identificare app@sharepoint in un record di controllo come utente che ha eseguito un'attività:
 
-- Gruppi di Office 365. Quando un utente o un amministratore crea un nuovo gruppo, vengono generati record di controllo per la creazione di una raccolta siti, l'aggiornamento di elenchi e l'aggiunta di membri a un gruppo di SharePoint. Queste attività vengono eseguite da un'applicazione per conto dell'utente che ha creato il gruppo.
+- Gruppi di Microsoft 365. Quando un utente o un amministratore crea un nuovo gruppo, vengono generati record di controllo per la creazione di una raccolta siti, l'aggiornamento di elenchi e l'aggiunta di membri a un gruppo di SharePoint. Queste attività vengono eseguite da un'applicazione per conto dell'utente che ha creato il gruppo.
 
-- Microsoft Teams. Analogamente a Gruppi di Office 365, vengono generati record di controllo per la creazione di una raccolta siti, l'aggiornamento di elenchi e l'aggiunta di membri a un gruppo di SharePoint quando si crea un team.
+- Microsoft Teams. Analogamente a Gruppi di Microsoft 365, vengono generati record di controllo per la creazione di una raccolta siti, l'aggiornamento di elenchi e l'aggiunta di membri a un gruppo di SharePoint quando si crea un team.
 
 - Funzionalità di conformità. Quando un amministratore implementa funzionalità di conformità, come i criteri di conservazione, i blocchi di eDiscovery e l'applicazione automatica delle etichette di sensitività.
 
@@ -418,7 +419,7 @@ La tabella seguente descrive le attività correlate al momento in cui gli utenti
 
 ### <a name="sharing-and-access-request-activities"></a>Attività di richiesta di accesso e condivisione
 
-La tabella seguente descrive le attività di richiesta di condivisione e accesso dell'utente in SharePoint Online e OneDrive for Business. Per gli eventi di condivisione, la colonna **Dettagli** in **Risultati** identifica il nome dell'utente o del gruppo con cui l'elemento è stato condiviso e indica se l'utente o il gruppo è un membro o un guest nell'organizzazione. Per altre informazioni, vedere [Usare il controllo della condivisione nel log di controllo di Office 365](use-sharing-auditing.md).
+La tabella seguente descrive le attività di richiesta di condivisione e accesso dell'utente in SharePoint Online e OneDrive for Business. Per gli eventi di condivisione, la colonna **Dettagli** in **Risultati** identifica il nome dell'utente o del gruppo con cui l'elemento è stato condiviso e indica se l'utente o il gruppo è un membro o un guest nell'organizzazione. Per altre informazioni, vedere [Usare il controllo della condivisione nel log di controllo](use-sharing-auditing.md).
 
 > [!NOTE]
 > Gli utenti possono essere *membri* o *guest* in base alla proprietà UserType dell'oggetto utente. Un membro è in genere un dipendente, mentre un guest è in genere un collaboratore esterno all'organizzazione. Quando un utente accetta un invito alla condivisione (e non fa già parte dell'organizzazione), viene creato un account guest per tale utente nella directory dell'organizzazione. Dopo che l'utente guest ha ottenuto un account nella directory, le risorse possono essere condivise direttamente con lui, senza che sia necessario un invito.
@@ -499,12 +500,12 @@ Nella tabella seguente sono elencati gli eventi derivanti da attività di ammini
 |Agente utente esente aggiunto|ExemptUserAgentSet|L'amministratore di SharePoint o l'amministratore globale aggiunge un agente utente all'elenco di agenti utente esenti nell'interfaccia di amministrazione di SharePoint.|
 |Amministratore dell'area geografica aggiunto|GeoAdminAdded|Un amministratore globale o di SharePoint ha aggiunto un utente come amministratore geografico di una posizione.|
 |Utente autorizzato a creare gruppi|AllowGroupCreationSet|Un proprietario o un amministratore del sito aggiunge un livello di autorizzazione a un sito che consente a un utente a cui viene assegnata tale autorizzazione di creare un gruppo per tale sito.|
-|È stato annullato lo spostamento geografico di un sito|SiteGeoMoveCancelled|Un amministratore globale o di SharePoint annulla correttamente uno spostamento geografico di un sito SharePoint o OneDrive. La funzionalità Multi-Geo consente a un'organizzazione di Office 365 di utilizzare più aree geografiche di centri dati Office 365, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive and SharePoint Online in OneDrive e SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
-|Criterio di condivisione cambiato|SharingPolicyChanged|Un amministratore globale o di SharePoint ha modificato i criteri di condivisione di SharePoint usando il portale di amministrazione di Office 365, il portale di amministrazione di SharePoint o SharePoint Online Management Shell. Qualsiasi modifica alle impostazioni dei criteri di condivisione dell'organizzazione verrà registrata. Il criterio modificato viene identificato nel campo **ModifiedProperties** nelle proprietà dettagliate del record dell'evento.|
-|I criteri di accesso per i dispositivi sono stati modificati|DeviceAccessPolicyChanged|Un amministratore di SharePoint o globale ha cambiato i criteri dei dispositivi non gestiti per l'organizzazione. Questo criterio controlla l'accesso a SharePoint, OneDrive e Office 365 da dispositivi che non fanno parte dell'organizzazione. La configurazione di questo criterio richiede un abbonamento Enterprise Mobility + Security. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).|
+|È stato annullato lo spostamento geografico di un sito|SiteGeoMoveCancelled|Un amministratore globale o di SharePoint annulla correttamente uno spostamento geografico di un sito SharePoint o OneDrive. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche di centri dati Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive e SharePoint Online](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Criterio di condivisione cambiato|SharingPolicyChanged|Un amministratore globale o di SharePoint ha modificato i criteri di condivisione di SharePoint usando il portale di amministrazione di Microsoft 365, il portale di amministrazione di SharePoint o SharePoint Online Management Shell. Qualsiasi modifica alle impostazioni dei criteri di condivisione dell'organizzazione verrà registrata. Il criterio modificato viene identificato nel campo **ModifiedProperties** nelle proprietà dettagliate del record dell'evento.|
+|I criteri di accesso per i dispositivi sono stati modificati|DeviceAccessPolicyChanged|Un amministratore di SharePoint o globale ha cambiato i criteri dei dispositivi non gestiti per l'organizzazione. Questo criterio controlla l'accesso a SharePoint, OneDrive e Microsoft 365 da dispositivi che non fanno parte dell'organizzazione. La configurazione di questo criterio richiede un abbonamento Enterprise Mobility + Security. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).|
 |Agenti utente esenti cambiati|CustomizeExemptUsers|L'amministratore globale o SharePoint ha personalizzato l'elenco di agenti utente esenti nell'interfaccia di amministrazione di SharePoint. È possibile specificare quali agenti utente esentare dalla ricezione di un'intera pagina Web da indicizzare. Ciò significa che quando un agente utente specificato come esente rileva un modulo di InfoPath, il modulo verrà restituito come file XML, invece che come pagina Web intera. In questo modo l'indicizzazione dei moduli di InfoPath risulta più veloce.|
 |Sono stati modificati i criteri di accesso alla rete|NetworkAccessPolicyChanged|Un amministratore di SharePoint o globale ha cambiato i criteri di accesso basati sulla posizione, denominati anche limite di rete attendibile, nell'interfaccia di amministrazione di SharePoint oppure usando PowerShell di SharePoint Online. Questi criteri controllano chi può accedere alle risorse di SharePoint e OneDrive nell'organizzazione in base a intervalli di indirizzi IP specificati dall'utente. Per altre informazioni, vedere [Controllare l'accesso ai dati di SharePoint Online e OneDrive in base a determinati percorsi di rete](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).|
-|Spostamento geografico di un sito completato|SiteGeoMoveCompleted|Uno spostamento geografico di un sito, pianificato da un amministratore globale dell'organizzazione, è stato completato correttamente. La funzionalità Multi-Geo consente a un'organizzazione di Office 365 di utilizzare più aree geografiche di centri dati Office 365, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive and SharePoint Online in OneDrive e SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Spostamento geografico di un sito completato|SiteGeoMoveCompleted|Uno spostamento geografico di un sito, pianificato da un amministratore globale dell'organizzazione, è stato completato correttamente. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche di centri dati Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive and SharePoint Online in OneDrive e SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Connessione Inviato a creata|SendToConnectionAdded|L'amministratore di SharePoint o globale crea una nuova connessione Invia a nella pagina Gestione record nell'interfaccia di amministrazione di SharePoint. Una connessione di invio specifica le impostazioni per un archivio documenti o un centro record. Quando si crea una connessione di invio, un Content Organizer può inviare documenti alla posizione specificata.|
 |Raccolta siti creata|SiteCollectionCreated|Un amministratore SharePoint o globale crea una raccolta siti nell'organizzazione di SharePoint Online o un utente esegue il provisioning del sito di OneDrive for Business.|
 |Sito hub orfano eliminato|HubSiteOrphanHubDeleted|Un amministratore SharePoint o globale ha eliminato un sito hub orfano, ossia un sito hub a cui non sono associati siti. È probabile che l'hub orfano sia causato dall'eliminazione del sito hub originale.|
@@ -512,7 +513,7 @@ Nella tabella seguente sono elencati gli eventi derivanti da attività di ammini
 |Sito eliminato|SiteDeleted|L'amministratore del sito elimina un sito.|
 |Anteprima documento abilitata|PreviewModeEnabledSet|Un amministratore del sito abilita l'anteprima dei documenti per un sito.|
 |Flusso di lavoro legacy abilitato|LegacyWorkflowEnabledSet|Un proprietario o un amministratore del sito aggiunge il tipo di contenuto Attività flusso di lavoro di SharePoint 2013 al sito. Gli amministratori globali possono anche abilitare i flussi di lavoro per l'intera organizzazione nell'interfaccia di amministrazione di SharePoint.|
-|Office su richiesta abilitato|OfficeOnDemandSet|Un amministratore del sito abilita Office su richiesta, che consente agli utenti di accedere alla versione più recente delle applicazioni desktop di Office. Office su richiesta viene abilitato nell'interfaccia di amministrazione di SharePoint e richiede un abbonamento a Office 365, che include le applicazioni Office complete installate.|
+|Office su richiesta abilitato|OfficeOnDemandSet|Un amministratore del sito abilita Office su richiesta, che consente agli utenti di accedere alla versione più recente delle applicazioni desktop di Office. Office su richiesta viene abilitato nell'interfaccia di amministrazione di SharePoint e richiede un abbonamento a Microsoft 365, che include le applicazioni Office complete installate.|
 |Origine dei risultati abilitata per ricerche in Persone|PeopleResultsScopeSet|Un amministratore del sito crea l'origine dei risultati per le ricerche in Persone per un sito.|
 |Feed RSS abilitati|NewsFeedEnabledSet|Un proprietario o un amministratore del sito abilita i feed RSS per un sito. Gli amministratori globali possono abilitare i feed RSS per l'intera organizzazione nell'interfaccia di amministrazione di SharePoint.|
 |Sito unito al sito hub|HubSiteJoined|Il proprietario di un sito associa il sito a un sito hub.|
@@ -520,7 +521,7 @@ Nella tabella seguente sono elencati gli eventi derivanti da attività di ammini
 |Rimossa la posizione dei dati consentita|AllowedDataLocationDeleted|Un amministratore SharePoint o globale ha rimosso una posizione di dati consentita in un ambiente multi-geografico.|
 |Amministratore dell'area geografica rimosso|GeoAdminDeleted|Un amministratore SharePoint o globale ha aggiunto un utente come amministratore geografico di una posizione.|
 |Sito rinominato|SiteRenamed|Un proprietario o un amministratore del sito rinomina un sito.|
-|Spostamento geografico di un sito pianificato|SiteGeoMoveScheduled|Un amministratore SharePoint o globale programma correttamente uno spostamento geografico di un sito SharePoint o OneDrive. La funzionalità Multi-Geo consente a un'organizzazione di Office 365 di utilizzare più aree geografiche di centri dati Office 365, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive and SharePoint Online in OneDrive e SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Spostamento geografico di un sito pianificato|SiteGeoMoveScheduled|Un amministratore SharePoint o globale programma correttamente uno spostamento geografico di un sito SharePoint o OneDrive. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche di centri dati Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive and SharePoint Online in OneDrive e SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Sito host impostato|HostSiteSet|Un amministratore di SharePoint o globale cambia il sito designato per ospitare siti di OneDrive for Business o personali.|
 |Impostare una quota di archiviazione per una posizione geografica|GeoQuotaAllocated|Un amministratore SharePoint o globale ha configurato una quota di archiviazione per una posizione geografica in un ambiente multi-geografico.|
 |Sito separato dal sito hub|HubSiteUnjoined|Il proprietario di un sito annulla l'associazione del sito a un sito hub.|
@@ -529,7 +530,7 @@ Nella tabella seguente sono elencati gli eventi derivanti da attività di ammini
 
 ### <a name="exchange-mailbox-activities"></a>Attività su cassette postali di Exchange
 
-La tabella seguente elenca le attività che possono essere registrate tramite la registrazione di controllo delle cassette postali. Le attività sulle cassette postali eseguite dal proprietario della cassetta postale, da un utente delegato o da un amministratore vengono registrate automaticamente nel log di controllo di Office 365 per un massimo di 90 giorni. L'amministratore può disattivare la registrazione di controllo delle cassette postali per tutti gli utenti dell'organizzazione. In questo caso non vengono registrate azioni di cassette postali per alcun utente. Per altre informazioni, vedere [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md).
+La tabella seguente elenca le attività che possono essere registrate tramite la registrazione di controllo delle cassette postali. Le attività sulle cassette postali eseguite dal proprietario della cassetta postale, da un utente delegato o da un amministratore vengono registrate automaticamente nel log di controllo per un massimo di 90 giorni. L'amministratore può disattivare la registrazione di controllo delle cassette postali per tutti gli utenti dell'organizzazione. In questo caso non vengono registrate azioni di cassette postali per alcun utente. Per altre informazioni, vedere [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md).
 
  È anche possibile cercare le attività delle cassette postali utilizzando il cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in PowerShell per Exchange Online.
 
@@ -560,7 +561,7 @@ La tabella seguente elenca le attività che possono essere registrate tramite la
 
 ### <a name="sway-activities"></a>Attività con Sway
 
-La tabella seguente elenca le attività utente e amministratore in Sway. Sway è un'app di Office 365 che consente di raccogliere, formattare e condividere idee, storie e presentazioni in un'area di disegno interattiva basata sul Web. Per altre informazioni, vedere [Domande frequenti su Sway - Guida per l'amministratore](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
+La tabella seguente elenca le attività utente e amministratore in Sway. Sway è un'app di Microsoft 365 che consente di raccogliere, formattare e condividere idee, storie e presentazioni in un'area di disegno interattiva basata sul Web. Per altre informazioni, vedere [Domande frequenti su Sway - Guida per l'amministratore](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -586,11 +587,11 @@ La tabella seguente elenca le attività di amministrazione utenti registrate qua
 
 |**Attività**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
-|Utente aggiunto|Aggiungi utente|È stato creato un account utente di Office 365.|
+|Utente aggiunto|Aggiungi utente|È stato creato un account utente.|
 |Licenza utente modificata|Modifica della licenza utente|La licenza assegnata a un utente è stata modificata. Per visualizzare le licenze modificate, vedere l'attività **Utente aggiornato** corrispondente.|
 |Password utente cambiata|Modifica della password utente|Un utente ha cambiato la password. La reimpostazione della password in modalità self-service deve essere abilitata nell'organizzazione, per tutti gli utenti o per utenti selezionati, per consentire agli utenti di reimpostare la password. Inoltre, è possibile tenere traccia delle attività di reimpostazione della password in modalità self-service in Azure Active Directory.
  Per altre informazioni, vedere [Opzioni relative alla creazione di report per la gestione delle password di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
-|Utente eliminato|Elimina utente|È stato eliminato un account utente di Office 365.|
+|Utente eliminato|Elimina utente|È stato eliminato un account utente.|
 |Reimpostazione della password utente|Reimpostazione della password utente|Un amministratore ha reimpostato la password per un utente.|
 |Impostata una proprietà che impone all'utente di cambiare la password|Impostazione forzatura per la modifica delle password utente|Un amministratore ha impostato la proprietà che forza l'utente a cambiare la password al successivo accesso a Office 365.|
 |Impostazione delle proprietà della licenza|Impostazione delle proprietà della licenza|Un amministratore modifica le proprietà di una licenza assegnata a un utente.|
@@ -599,7 +600,7 @@ La tabella seguente elenca le attività di amministrazione utenti registrate qua
 
 ### <a name="azure-ad-group-administration-activities"></a>Attività di amministrazione gruppi di Azure AD
 
-La tabella seguente elenca le attività di amministrazione gruppi registrate quando un amministratore o un utente crea o modifica un gruppo di Office 365 oppure quando un amministratore crea un gruppo di sicurezza usando l'interfaccia di amministrazione di Microsoft 365 o il portale di gestione di Azure. Per altre informazioni sui gruppi in Office 365, vedere [Visualizzare, creare ed eliminare gruppi nell'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
+La tabella seguente elenca le attività di amministrazione gruppi registrate quando un amministratore o un utente crea o modifica un gruppo di Microsoft 365 oppure quando un amministratore crea un gruppo di sicurezza usando l'interfaccia di amministrazione di Microsoft 365 o il portale di gestione di Azure. Per altre informazioni sui gruppi in Office 365, vedere [Visualizzare, creare ed eliminare gruppi nell'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -631,27 +632,27 @@ La tabella seguente elenca le attività di amministrazione ruoli di Azure AD reg
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
-|Membro aggiunto a ruolo|Aggiunta di un membro del ruolo al ruolo|È stato aggiunto un utente a un ruolo di amministratore in Office 365.|
-|Utente rimosso da un ruolo della directory|Rimozione di un membro del ruolo dal ruolo|È stato rimosso un utente da un ruolo di amministratore in Office 365.|
-|Impostazione delle informazioni di contatto aziendali|Impostazione delle informazioni di contatto aziendali|Sono state aggiornare le preferenze di contatto a livello aziendale per l'organizzazione di Office 365. Le informazioni includono indirizzi di posta elettronica per messaggi correlati all'abbonamento inviati da Office 365, nonché notifiche tecniche relative ai servizi di Office 365.|
+|Membro aggiunto a ruolo|Aggiunta di un membro del ruolo al ruolo|È stato aggiunto un utente a un ruolo di amministratore in Microsoft 365.|
+|Utente rimosso da un ruolo della directory|Rimozione di un membro del ruolo dal ruolo|È stato rimosso un utente da un ruolo di amministratore in Microsoft 365.|
+|Impostazione delle informazioni di contatto aziendali|Impostazione delle informazioni di contatto aziendali|Sono state aggiornare le preferenze di contatto a livello aziendale per l'organizzazione. Le informazioni includono indirizzi di posta elettronica per messaggi correlati all'abbonamento inviati da Microsoft 365, nonché notifiche tecniche relative ai servizi.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Attività di amministrazione directory
 
-La tabella seguente elenca le attività correlate a dominio e directory di Azure AD registrate quando un amministratore gestisce l'organizzazione di Office 365 nell'interfaccia di amministrazione di Microsoft 365 o nel portale di gestione di Azure.
+La tabella seguente elenca le attività correlate a dominio e directory di Azure AD registrate quando un amministratore gestisce l'organizzazione nell'interfaccia di amministrazione di Microsoft 365 o nel portale di gestione di Azure.
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
-|Dominio aggiunto a società|Aggiunta di un dominio alla società|Aggiunto un dominio all'organizzazione Office 365.|
-|Partner aggiunto alla directory|Aggiunta di un partner alla società|È stato aggiunto un partner (amministratore delegato) all'organizzazione di Office 365.|
-|Dominio rimosso da società|Rimozione di un dominio dalla società|È stato rimosso un dominio dall'organizzazione di Office 365.|
-|Partner rimosso dalla directory|Rimozione di un partner dalla società|È stato rimosso un partner (amministratore delegato) dall'organizzazione di Office 365.|
-|Informazioni sulla società impostate|Informazioni sulla società impostate|Sono state aggiornare le informazioni sulla società per l'organizzazione di Office 365. Le informazioni includono indirizzi di posta elettronica per messaggi correlati all'abbonamento inviati da Office 365, nonché notifiche tecniche relative ai servizi di Office 365.|
-|Impostazione dell'autenticazione del dominio|Impostazione dell'autenticazione del dominio|È stata modificata l'impostazione di autenticazione del dominio per l'organizzazione di Office 365.|
-|Impostazioni della federazione aggiornate per un dominio|Configurazione delle impostazioni di federazione nel dominio|Sono state modificate le impostazioni di federazione (condivisione esterna) per l'organizzazione di Office 365.|
-|Criteri password impostati|Criteri password impostati|Sono stati modificati i vincoli di lunghezza e caratteri per le password utente nell'organizzazione di Office 365.|
+|Dominio aggiunto a società|Aggiunta di un dominio alla società|È stato aggiunto un dominio all'organizzazione.|
+|Partner aggiunto alla directory|Aggiunta di un partner alla società|È stato aggiunto un partner (amministratore delegato) all'organizzazione.|
+|Dominio rimosso da società|Rimozione di un dominio dalla società|È stato rimosso un dominio dall'organizzazione.|
+|Partner rimosso dalla directory|Rimozione di un partner dalla società|È stato rimosso un partner (amministratore delegato) dall'organizzazione.|
+|Informazioni sulla società impostate|Informazioni sulla società impostate|Sono state aggiornate le informazioni sulla società per l'organizzazione. Le informazioni includono indirizzi di posta elettronica per messaggi correlati all'abbonamento inviati da Microsoft 365, nonché notifiche tecniche relative ai servizi di Microsoft 365.|
+|Impostazione dell'autenticazione del dominio|Impostazione dell'autenticazione del dominio|È stata modificata l'impostazione di autenticazione del dominio per l'organizzazione.|
+|Impostazioni della federazione aggiornate per un dominio|Configurazione delle impostazioni di federazione nel dominio|Sono state modificate le impostazioni di federazione (condivisione esterna) per l'organizzazione.|
+|Criteri password impostati|Criteri password impostati|Sono stati modificati i vincoli di lunghezza e caratteri per le password utente nell'organizzazione.|
 |Attivata la sincronizzazione di Azure AD|Impostazione del flag DirSyncEnabled per la società|È stata impostata la proprietà che abilita una directory per Azure AD Sync.|
-|Dominio aggiornato|Aggiornamento di un dominio|Sono state aggiornate le impostazioni di un dominio nell'organizzazione di Office 365.|
+|Dominio aggiornato|Aggiornamento di un dominio|Sono state aggiornate le impostazioni di un dominio nell'organizzazione.|
 |Dominio verificato|Verifica di un dominio|È stato verificato che l'organizzazione è il proprietario di un dominio.|
 |Posta elettronica verificata in dominio verificato|Verifica del dominio tramite la verifica di posta elettronica|È stata usata la verifica tramite posta elettronica per verificare che l'organizzazione sia il proprietario di un dominio.|
 ||||
@@ -670,7 +671,7 @@ Le attività correlate a Ricerca contenuto ed eDiscovery eseguite nel centro sic
 
 - Gestione del ruolo di amministratore di eDiscovery
 
-Per un elenco e una descrizione dettagliata delle attività di eDiscovery registrate, vedere [Cercare attività di eDiscovery nel log di controllo di Office 365](search-for-ediscovery-activities-in-the-audit-log.md).
+Per un elenco e una descrizione dettagliata delle attività di eDiscovery registrate, vedere [Cercare attività di eDiscovery nel log di controllo](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
 > Sono necessari fino a 30 minuti per visualizzare nei risultati della ricerca gli eventi collegati alle attività elencate in **Attività di eDiscovery** nell'elenco a discesa **Attività**. Invece, per visualizzare nei risultati della ricerca gli eventi corrispondenti provenienti dalle attività dei cmdlet di eDiscovery sono necessarie fino a 24 ore.
@@ -683,7 +684,7 @@ Nella tabella seguente sono elencate le attività dall'esecuzione di attività i
 |:-----|:-----|:-----|
 |Aggiungere dati a un altro insieme da rivedere|AddWorkingSetQueryToWorkingSet|L'utente ha aggiunto i documenti di un insieme da rivedere a un altro insieme da rivedere.|
 |Aggiunti dati a un insieme da rivedere|AddQueryToWorkingSet|L'utente ha aggiunto i risultati della ricerca da una ricerca di contenuto associata a un caso di Advanced eDiscovery a un insieme da rivedere.|
-|Aggiunti dati non-Office 365 a un insieme da rivedere|AddNonOffice365DataToWorkingSet|L'utente ha aggiunto dati non-Office 365 a un insieme da rivedere.|
+|Aggiunti dati non-Microsoft 365 a un insieme da rivedere|AddNonOffice365DataToWorkingSet|L'utente ha aggiunto dati non-Microsoft 365 a un insieme da rivedere.|
 |Aggiunta di documenti con correzione a un insieme da rivedere|AddRemediatedData|L'utente carica i documenti con errori di indicizzazione corretti in un insieme da rivedere.|
 |Dati analizzati nell'insieme da rivedere|RunAlgo|L'utente ha eseguito analisi sui documenti in un insieme da rivedere.|
 |Documento con annotazioni nell'insieme da rivedere|AnnotateDocument|L'utente ha annotato un documento in un insieme da rivedere. L'annotazione include la correzione del contenuto di un documento.|
@@ -710,11 +711,11 @@ Nella tabella seguente sono elencate le attività dall'esecuzione di attività i
 
 È possibile eseguire una ricerca nel log di controllo per le attività in Power BI. Per informazioni sulle attività di Power BI, vedere la sezione "Attività controllate da Power BI" in [Uso del controllo all'interno dell'organizzazione](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
 
-La registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per cercare le attività di Power BI nel log di controllo di Office 365, è necessario abilitare il controllo nel portale di amministrazione di Power BI. Per le istruzioni, vedere la sezione "Log di controllo" nel [portale di amministrazione di Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
+La registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per cercare le attività di Power BI nel log di controllo, è necessario abilitare il controllo nel portale di amministrazione di Power BI. Per le istruzioni, vedere la sezione "Log di controllo" nel [portale di amministrazione di Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Attività di Microsoft Workplace Analytics
 
-Workplace Analytics offre informazioni dettagliate sul modo in cui i gruppi collaborano nell'organizzazione di Office 365. La tabella seguente elenca le attività eseguite dagli utenti a cui è assegnato il ruolo di amministratore o i ruoli di analista in Workplace Analytics. Gli utenti a cui è stato assegnato il ruolo di analista hanno accesso completo a tutte le caratteristiche del servizio e usano il prodotto per eseguire l'analisi. Gli utenti a cui è stato assegnato il ruolo di amministratore possono configurare le impostazioni di privacy e le impostazioni predefinite del sistema e possono preparare, caricare e verificare i dati aziendali in Workplace Analytics. Per ulteriori informazioni, vedere [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
+Workplace Analytics offre informazioni dettagliate sul modo in cui i gruppi collaborano nell'organizzazione. La tabella seguente elenca le attività eseguite dagli utenti a cui è assegnato il ruolo di amministratore o i ruoli di analista in Workplace Analytics. Gli utenti a cui è stato assegnato il ruolo di analista hanno accesso completo a tutte le caratteristiche del servizio e usano il prodotto per eseguire l'analisi. Gli utenti a cui è stato assegnato il ruolo di amministratore possono configurare le impostazioni di privacy e le impostazioni predefinite del sistema e possono preparare, caricare e verificare i dati aziendali in Workplace Analytics. Per ulteriori informazioni, vedere [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -732,7 +733,7 @@ Workplace Analytics offre informazioni dettagliate sul modo in cui i gruppi coll
 
 ### <a name="microsoft-teams-activities"></a>Attività di Microsoft Teams
 
-La tabella seguente elenca le attività degli utenti e degli amministratori di Microsoft Teams registrate nel log di controllo di Office 365. Microsoft Teams è un'area di lavoro basata su chat di Office 365. Raggruppa conversazioni, riunioni, file e note in un'unica posizione. Per altre informazioni e collegamenti ad argomenti della Guida, vedere:
+La tabella seguente elenca le attività degli utenti e degli amministratori di Microsoft Teams registrate nel log di controllo. Microsoft Teams è un'area di lavoro basata su chat di Office 365. Raggruppa conversazioni, riunioni, file e note in un'unica posizione. Per altre informazioni e collegamenti ad argomenti della Guida, vedere:
 
 - [Domande frequenti su Microsoft Teams - Guida per gli amministratori](https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc)
 
@@ -771,7 +772,7 @@ Per una descrizione delle attività dell'app Pazienti, vedere [Log di controllo 
 
 ### <a name="yammer-activities"></a>Attività di Yammer
 
-La tabella seguente elenca le attività degli utenti e degli amministratori di Yammer registrate nel log di controllo di Office 365. Per restituire le attività correlate a Yammer dal log di controllo di Office 365, è necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività**. Usare le caselle dell'intervallo di date e l'elenco **Utenti** per limitare i risultati della ricerca.
+La tabella seguente elenca le attività degli utenti e degli amministratori di Yammer registrate nel log di controllo. Per restituire le attività correlate a Yammer dal log di controllo, è necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività**. Usare le caselle dell'intervallo di date e l'elenco **Utenti** per limitare i risultati della ricerca.
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -808,7 +809,7 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di Y
 
 ### <a name="content-explorer-activities"></a>Attività di Esplora contenuto
 
-La tabella seguente elenca le attività di Esplora contenuto registrate nel log di controllo di Office 365. Esplora contenuto, a cui è possibile accedere nello strumento per le classificazioni dei dati del Centro conformità Microsoft 365. Per altre informazioni, vedere [Utilizzo di Esplora contenuto di classificazione dei dati](data-classification-content-explorer.md).
+La tabella seguente elenca le attività di Esplora contenuto registrate nel log di controllo. Esplora contenuto, a cui è possibile accedere nello strumento per le classificazioni dei dati del Centro conformità Microsoft 365. Per altre informazioni, vedere [Utilizzo di Esplora contenuto di classificazione dei dati](data-classification-content-explorer.md).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -830,7 +831,7 @@ La tabella seguente elenca le attività in quarantena che è possibile cercare n
 
 ### <a name="microsoft-forms-activities"></a>Attività di Microsoft Forms
 
-La tabella seguente elenca le attività degli utenti e degli amministratori di Microsoft Forms registrate nel log di controllo di Office 365. Microsoft Forms è uno strumento per la creazione di moduli, test e sondaggi usato per raccogliere dati a scopo di analisi. 
+La tabella seguente elenca le attività degli utenti e degli amministratori di Microsoft Forms registrate nel log di controllo. Microsoft Forms è uno strumento per la creazione di moduli, test e sondaggi usato per raccogliere dati a scopo di analisi. 
 
 Dove indicato di seguito nelle descrizioni, alcune operazioni contengono parametri di attività aggiuntivi.
 
@@ -899,12 +900,12 @@ La tabella seguente elenca gli eventi risultanti dalle attività di etichettatur
 
 ### <a name="exchange-admin-audit-log"></a>Log di controllo dell'amministratore di Exchange
 
-La registrazione di controllo dell'amministratore di Exchange, abilitata per impostazione predefinita in Office 365, registra un evento nel log di controllo di Office 365 quando un amministratore (o un utente a cui sono state assegnate autorizzazioni amministrative) apporta una modifica nell'organizzazione di Exchange Online. Le modifiche apportate mediante l'interfaccia di amministrazione di Exchange o eseguendo un cmdlet in PowerShell per Exchange Online vengono registrate nel log di controllo di amministrazione di Exchange. I cmdlet che iniziano con **Get-**, **Search-** o **Test-** non vengono registrati nel log di controllo di Office 365. Per informazioni dettagliate sulla registrazione di controllo dell'amministratore in Exchange, vedere [Registrazione di controllo dell'amministratore](https://go.microsoft.com/fwlink/p/?LinkID=619225).
+La registrazione di controllo dell'amministratore di Exchange, abilitata per impostazione predefinita in Office 365, registra un evento nel log di controllo quando un amministratore (o un utente a cui sono state assegnate autorizzazioni amministrative) apporta una modifica nell'organizzazione di Exchange Online. Le modifiche apportate mediante l'interfaccia di amministrazione di Exchange o eseguendo un cmdlet in PowerShell per Exchange Online vengono registrate nel log di controllo di amministrazione di Exchange. I cmdlet che iniziano con **Get-**, **Search-** o **Test-** non vengono registrati nel log di controllo. Per informazioni dettagliate sulla registrazione di controllo dell'amministratore in Exchange, vedere [Registrazione di controllo dell'amministratore](https://go.microsoft.com/fwlink/p/?LinkID=619225).
 
 > [!IMPORTANT]
-> Alcuni cmdlet di Exchange Online che non sono stati registrati nel log di controllo di amministrazione di Exchange o nel log di controllo di Office 365. Molti di questi cmdlet sono correlati alla gestione del servizio Exchange Online e sono eseguiti dal personale del centro dati Microsoft o dagli account di servizio. Questi cmdlet non vengono registrati perché comportano un gran numero di eventi di controllo "fastidiosi". Se è presente un cmdlet di Exchange Online che non viene controllato, inviare un suggerimento al [Forum Office 365 Security & Compliance User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance) e chiedere che sia abilitato per il controllo. È anche possibile inviare una richiesta di modifica della progettazione al supporto tecnico Microsoft.
+> Alcuni cmdlet di Exchange Online che non sono stati registrati nel log di controllo di amministrazione di Exchange o nel log di controllo. Molti di questi cmdlet sono correlati alla gestione del servizio Exchange Online e sono eseguiti dal personale del centro dati Microsoft o dagli account di servizio. Questi cmdlet non vengono registrati perché comportano un gran numero di eventi di controllo "fastidiosi". Se è presente un cmdlet di Exchange Online che non viene controllato, inviare un suggerimento al [Forum UserVoice su sicurezza e conformità](https://office365.uservoice.com/forums/289138-office-365-security-compliance) e chiedere che sia abilitato per il controllo. È anche possibile inviare una richiesta di modifica della progettazione al supporto tecnico Microsoft.
 
-Di seguito sono forniti alcuni suggerimenti per la ricerca delle attività di amministrazione di Exchange durante la ricerca nel log di controllo di Office 365:
+Di seguito sono forniti alcuni suggerimenti per la ricerca delle attività di amministrazione di Exchange durante la ricerca nel log di controllo:
 
 - Per restituire le voci dal log di controllo dell'amministratore di Exchange, è necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività**. Usare le caselle relative all'intervallo di date e l'elenco **Utenti** per limitare i risultati della ricerca per i cmdlet eseguiti da uno specifico amministratore di Exchange in un determinato intervallo di date.
 
@@ -922,32 +923,26 @@ Di seguito sono forniti alcuni suggerimenti per la ricerca delle attività di am
 
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
-   Tenere presente che le stesse attività dell'amministratore di Exchange sono registrate sia nel log di controllo di amministrazione di Exchange che nel log di controllo di Office 365.
+   Tenere presente che le stesse attività dell'amministratore di Exchange sono registrate sia nel log di controllo di amministrazione di Exchange che nel log di controllo.
 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**Quali sono i diversi servizi di Office 365 attualmente controllati?**
+**Quali sono i diversi servizi di Microsoft 365 attualmente controllati?**
 
-Sono controllati i servizi di Office 365 più usati come Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection e Power BI. Vedere l' [inizio di questo articolo](search-the-audit-log-in-security-and-compliance.md) per un elenco dei servizi che vengono controllati.
+Sono controllati i servizi più usati come Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection e Power BI. Vedere l' [inizio di questo articolo](search-the-audit-log-in-security-and-compliance.md) per un elenco dei servizi che vengono controllati.
 
 **Quali attività sono controllate dal servizio di controllo in Office 365?**
 
-Per un elenco e una descrizione delle attività controllate in Office 365, vedere la sezione [Attività controllate](#audited-activities) in questo articolo.
+Per un elenco e una descrizione delle attività controllate, vedere la sezione [Attività controllate](#audited-activities) in questo articolo.
 
 **Quanto tempo è necessario affinché un record di controllo sia disponibile dopo il verificarsi di un evento?**
 
-La maggior parte dei dati di controllo è disponibile nel giro di 30 minuti ma la visualizzazione della voce del registro di controllo corrispondente nei risultati della ricerca può richiedere fino a 24 ore. Vedere la tabella nella sezione [Prima di iniziare](#before-you-begin) di questo articolo, che mostra il tempo necessario affinché gli eventi dei diversi servizi di Office 365 divengano disponibili.
+La maggior parte dei dati di controllo è disponibile nel giro di 30 minuti ma la visualizzazione della voce del registro di controllo corrispondente nei risultati della ricerca può richiedere fino a 24 ore. Vedere la tabella nella sezione [Prima di iniziare](#before-you-begin) di questo articolo, che mostra il tempo necessario affinché gli eventi dei diversi servizi divengano disponibili.
 
 **Per quanto tempo vengono conservati i record di controllo?**
 
-Come descritto in precedenza, il periodo di conservazione per i record di controllo varia in base all'abbonamento a Office 365 o Microsoft 365 Enterprise dell'organizzazione.
-
-  - **Office 365 E3 e Microsoft 365 E3:** i record di controllo vengono conservati per 90 giorni. Ciò significa che è possibile cercare nel log di controllo le attività eseguite negli ultimi 90 giorni.
-
-  - **Office 365 E5 e Microsoft 365 E5 o utente con una licenza per componente aggiuntivo Microsoft 365 E5 Compliance:** i record di controllo per l'attività di Azure Active Directory, Exchange e SharePoint vengono conservati per un anno per impostazione predefinita. Le organizzazioni possono anche creare criteri di conservazione del log di controllo per conservare i record di controllo per le attività in altri servizi per un massimo di un anno. Per altre informazioni, vedere [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md).
-
-Si noti inoltre che la durata del periodo di conservazione per i record di controllo si basa sulle licenze per utente. Ad esempio, se a un utente dell'organizzazione viene assegnata una licenza di Office 365 E3, i record di controllo per le attività eseguite dall'utente vengono conservati per 90 giorni.
+Come spiegato in precedenza, i record di controllo per le attività eseguite dagli utenti con una licenza Office 365 E5 o Microsoft E5 (o utenti con una licenza per il componente aggiuntivo Microsoft 365 E5) vengono conservati per un anno. Per tutti gli altri abbonamenti che supportano la registrazione di controllo unificata, i record di controllo vengono conservati per 90 giorni.
 
 **È possibile accedere ai dati di controllo a livello di programmazione?**
 
@@ -955,17 +950,17 @@ Sì. L'API Office 365 Management Activity consente di recuperare i log di contro
 
 **Esistono altri modi diversi dall'uso del Centro sicurezza e conformità o dall'API Office 365 Management Activity per ottenere log di controllo?**
 
-No. Questi sono gli unici due modi per ottenere dati dal servizio di controllo di Office 365.
+No. Questi sono gli unici due modi per ottenere dati dal servizio di controllo.
 
 **È necessario abilitare singolarmente il controllo in ogni servizio di cui si vogliono acquisire i log di controllo?**
 
-Nella maggior parte dei servizi di Office 365, il controllo è abilitato per impostazione predefinita dopo l'attivazione del controllo per l'organizzazione di Office 365 (come descritto nella sezione [Prima di iniziare](#before-you-begin) in questo articolo).
+Nella maggior parte dei servizi, il controllo è abilitato per impostazione predefinita dopo l'attivazione del controllo per l'organizzazione (come descritto nella sezione [Prima di iniziare](#before-you-begin) in questo articolo).
 
-**Il servizio di controllo di Office 365 supporta la deduplicazione dei record?**
+**Il servizio di controllo supporta la deduplicazione dei record?**
 
 No. La pipeline dei servizi di controllo è quasi in tempo reale, pertanto non supporta la deduplicazione.
 
-**I dati di controllo di Office 365 vengono trasportati nelle diverse aree geografiche?**
+**I dati di controllo vengono trasportati nelle diverse aree geografiche?**
 
 No. Attualmente sono presenti distribuzioni di pipeline di controllo nelle aree NA (Nord America), EMEA (Europa, Medio Oriente e Africa) ed APAC (Asia Pacifico). Tuttavia, i dati possono essere trasportati in queste aree geografiche per il bilanciamento del carico e solo durante i problemi del sito live. Durante l'esecuzione di queste attività, i dati in transito sono crittografati.
 

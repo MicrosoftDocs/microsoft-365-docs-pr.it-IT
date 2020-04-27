@@ -513,8 +513,6 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Aggiungere dati a un altro insieme da rivedere
               href: add-data-to-review-set-from-another-review-set.md
-            - name: Gestire i set caricati
-              href: manage-load-sets-in-advanced-ediscovery.md
         - name: Esaminare i dati del caso
           items:
             - name: Usare la dashboard dell'insieme da rivedere (anteprima)

@@ -14,17 +14,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: I report sulla governance dei dati nel Centro sicurezza e conformità di Office 365 consentono di visualizzare rapidamente se le etichette vengono applicate al contenuto nel modo previsto.
-ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: I report sulla governance dei dati nel Centro sicurezza e conformità consentono di visualizzare rapidamente se le etichette vengono applicate al contenuto nel modo previsto.
+ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068795"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626302"
 ---
 # <a name="view-the-data-governance-reports"></a>Visualizzare i report sulla governance dei dati
 
-Dopo aver creato le etichette, è consigliabile verificare che queste vengano applicate al contenuto nel modo previsto. I report sulla governance dei dati nel Centro sicurezza e conformità di Office 365 consentono di visualizzare rapidamente:
+Dopo aver creato le etichette, è consigliabile verificare che queste vengano applicate al contenuto nel modo previsto. I report sulla governance dei dati nel Centro sicurezza e conformità consentono di visualizzare rapidamente:
   
 - **Prime 5 etichette** Questo report mostra le principali 5 etichette applicate al contenuto. Fare clic sul report per visualizzare un elenco di tutte le etichette recentemente applicate al contenuto. È possibile visualizzare il numero di ogni etichetta, la posizione, la modalità di applicazione, le azioni di conservazione relative, se si tratta di un record e il tipo di disposizione. 
     
