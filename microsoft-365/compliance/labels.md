@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: 720a5b0b2fca16701dd4c2a752ac31b81e2233ab
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189067"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637444"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -38,11 +38,11 @@ All'interno dell'organizzazione sono probabilmente presenti tipi di contenuto di
     
 - Permessi di lavoro che devono essere **classificati come record** in modo che non sia possibile modificarli o eliminarli. 
     
-In tutti questi casi, le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione.
+In tutti questi casi, le etichette di conservazione aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione.
   
 Con le etichette di conservazione è possibile:
   
-- **Permettere agli utenti dell'organizzazione di applicare manualmente un’etichetta di conservazione** a contenuti in Outlook sul web, Outlook 2010 e versioni successive, OneDrive, SharePoint e gruppi di Office 365. Spesso gli utenti sono quelli che conoscono meglio il tipo di contenuto che stanno usando, per cui sono in grado di classificarlo e applicare i criteri appropriati. 
+- **Permettere agli utenti dell'organizzazione di applicare manualmente un’etichetta di conservazione** a contenuti in Outlook sul web, Outlook 2010 e versioni successive, OneDrive, SharePoint e gruppi di Microsoft 365. Spesso gli utenti sono quelli che conoscono meglio il tipo di contenuto che stanno usando, per cui sono in grado di classificarlo e applicare i criteri appropriati. 
     
 - **Applicare automaticamente etichette di conservazione al contenuto** se soddisfa specifiche condizioni, ad esempio se include: 
     
@@ -64,7 +64,7 @@ Con le etichette di conservazione è possibile:
 
 - **Applicare un'etichetta di conservazione predefinita a una raccolta documenti, cartella o set di documenti** in SharePoint, così che i documenti in quella posizione ereditino l’etichetta di conservazione predefinita.  
     
-Le etichette di conservazione vengono create nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità di Office 365.
+Le etichette di conservazione vengono create nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità.
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>Funzionamento delle etichette di conservazione con i criteri di etichetta di conservazione
 
@@ -151,9 +151,9 @@ Se le etichette non compaiono in Outlook sul web e si ritiene che invece debbano
   
 |**Se l'etichetta di conservazione è...**|**Il criterio di etichetta può essere applicato a…**|
 |:-----|:-----|
-|Pubblicata agli utenti finali  <br/> |Exchange, SharePoint, OneDrive, gruppi di Office 365  <br/> |
+|Pubblicata agli utenti finali  <br/> |Exchange, SharePoint, OneDrive, gruppi di Microsoft 365  <br/> |
 |Applicata automaticamente in base ai tipi di informazioni riservate  <br/> |Exchange (solo a tutte le cassette postali), SharePoint, OneDrive  <br/> |
-|Applicata automaticamente in base a una query  <br/> |Exchange, SharePoint, OneDrive, gruppi di Office 365  <br/> |
+|Applicata automaticamente in base a una query  <br/> |Exchange, SharePoint, OneDrive, gruppi di Microsoft 365  <br/> |
    
 Le etichette di conservazione applicate automaticamente in Exchange (sia per le query che per i tipi di informazioni riservate) vengono applicate solo ai messaggi appena inviati (dati in transito), non a tutti gli elementi attualmente nella cassetta postale (dati archiviati). Inoltre, le etichette di conservazione applicate automaticamente per i tipi di informazioni riservate possono essere applicate solo a tutte le cassette postali, non a cassette postali specifiche.
   
@@ -183,7 +183,7 @@ Se l'etichetta di conservazione verrà assegnata al contenuto dagli utenti final
     
 - SharePoint
     
-- Gruppi di Office 365 (sia nel sito del gruppo che nella cassetta postale del gruppo in Outlook sul web)
+- Gruppi di Microsoft 365 (sia nel sito del gruppo che nella cassetta postale del gruppo in Outlook sul web)
     
 Le sezioni seguenti descrivono il modo in cui le etichette vengono visualizzate dagli utenti dell'organizzazione in app diverse.
   
@@ -235,17 +235,17 @@ Dopo l'applicazione di un'etichetta di conservazione a un elemento, è possibile
   
 ![Colonna della raccolta per le etichette visibile nella visualizzazione personalizzata](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
-### <a name="office-365-groups"></a>Gruppi di Office 365
+### <a name="microsoft-365-groups"></a>Gruppi di Microsoft 365
 
-Quando si pubblicano etichette di conservazione in un gruppo di Office 365, le etichette di conservazione vengono visualizzate sia nel sito del gruppo che nella cassetta postale del gruppo in Outlook sul web. L'esperienza di applicazione di un'etichetta di conservazione al contenuto è identica a quella illustrata in precedenza per posta elettronica e documenti.
+Quando si pubblicano etichette di conservazione in un gruppo di Microsoft 365, le etichette di conservazione vengono visualizzate sia nel sito del gruppo che nella cassetta postale del gruppo in Outlook sul web. L'esperienza di applicazione di un'etichetta di conservazione al contenuto è identica a quella illustrata in precedenza per posta elettronica e documenti.
 
-Per conservare il contenuto di un gruppo di Office 365 è necessario usare la posizione dei gruppi di Office 365. Anche se un gruppo di Office 365 ha una cassetta postale di Exchange, un criterio di conservazione che include l'intero percorso di Exchange non includerà il contenuto nelle cassette postali del gruppo di Office 365.
+Per conservare il contenuto di un gruppo di Microsoft 365 è necessario usare la posizione dei gruppi di Microsoft 365. Anche se un gruppo di Microsoft 365 ha una cassetta postale di Exchange, un criterio di conservazione che include l'intero percorso di Exchange non includerà il contenuto nelle cassette postali del gruppo di Microsoft 365.
 
 Inoltre, non è possibile usare il percorso di Exchange per includere o escludere una specifica cassetta postale del gruppo. Anche se il percorso di Exchange consente inizialmente di selezionare una cassetta postale del gruppo, provando a salvare il criterio di conservazione si riceverà un messaggio di errore che segnala che "RemoteGroupMailbox" non è una selezione valida per il percorso di Exchange.
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Applicazione automatica di un'etichetta di conservazione in base alle condizioni
 
-Una delle funzionalità più efficaci delle etichette di conservazione è la possibilità di applicarle automaticamente al contenuto che soddisfa determinate condizioni. In questo caso, gli utenti dell'organizzazione non dovranno applicare le etichette di conservazione. Office 365 lo farà automaticamente.
+Una delle funzionalità più efficaci delle etichette di conservazione è la possibilità di applicarle automaticamente al contenuto che soddisfa determinate condizioni. In questo caso, gli utenti dell'organizzazione non dovranno applicare le etichette di conservazione. Microsoft 365 lo farà automaticamente.
   
 ![Diagramma di ruoli e attività per le etichette applicate automaticamente](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
@@ -373,7 +373,7 @@ Ad esempio, si può creare un'etichetta di conservazione denominata "Rivedere in
 
 Un'etichetta di conservazione può applicare azioni di conservazione sul contenuto. Inoltre, è possibile usare un'etichetta di conservazione come condizione in un criterio di prevenzione della perdita dei dati (DLP), e il criterio DLP può applicare altre azioni, come la limitazione dell'accesso, sui contenuti che includono un'etichetta di conservazione specifica. 
   
-Per altre informazioni, vedere [Uso di un'etichetta come condizione nei criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+Per altre informazioni, vedere [Uso di un'etichetta di conservazione come condizione nei criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
 ## <a name="monitor-retention-labels"></a>Monitorare le etichette di conservazione
 
@@ -433,7 +433,7 @@ Tutte le etichette di conservazione configurate per i classificatori sottoponibi
 
 ## <a name="use-retention-labels-instead-of-these-features"></a>Usare le etichette di conservazione anziché queste funzionalità
 
-Le etichette di conservazione possono facilmente essere rese disponibili per un'intera organizzazione e il relativo contenuto in Office 365, compresi Exchange, SharePoint, OneDrive e gruppi di Office 365. Se è necessario classificare il contenuto o gestire i record ovunque in Office 365, è consigliabile usare le etichette di conservazione.
+Le etichette di conservazione possono facilmente essere rese disponibili per un'intera organizzazione e il relativo contenuto in Office 365, compresi Exchange, SharePoint, OneDrive e gruppi di Microsoft 365. Se è necessario classificare il contenuto o gestire i record ovunque in Microsoft 365, è consigliabile usare le etichette di conservazione.
   
 Per classificare il contenuto o gestire i record in Office 365 esistono già altre funzionalità, elencate di seguito, che continueranno a funzionare insieme alle etichette di conservazione. Anche se ci sono istanze in cui l'implementazione delle etichette di conservazione è diversa rispetto alle funzionalità precedenti, l'evoluzione delle etichette di conservazione determinerà il futuro della gestione dei record in Office 365. In futuro, quindi, per la governance dei dati si consiglia di usare le etichette di conservazione invece di queste funzionalità.
   
@@ -453,16 +453,16 @@ Per classificare il contenuto o gestire i record in Office 365 esistono già alt
 
 Ai membri del team di conformità che creeranno etichette di conservazione è necessario assegnare autorizzazioni per il Centro sicurezza &amp; conformità. Per impostazione predefinita, l'amministratore del tenant ha accesso a questa posizione e può fornire ai responsabili della conformità e ad altre persone l'accesso al Centro sicurezza &amp; conformità, senza concedere tutte le autorizzazioni di un amministratore del tenant. A questo scopo, è consigliabile accedere alla pagina **Autorizzazioni** del Centro sicurezza &amp; conformità, modificare il gruppo di ruoli **Amministratore conformità** e aggiungere membri a tale gruppo di ruoli. 
   
-Per ulteriori informazioni, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per altre informazioni, vedere l'articolo su come [consentire agli utenti di accedere&amp; al Centro sicurezza e conformità](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Queste autorizzazioni sono necessarie solo per creare e applicare etichette di conservazione e criteri di etichetta. L'applicazione dei criteri non richiede l'accesso al contenuto.  
 ## <a name="find-the-powershell-cmdlets-for-labels"></a>Trovare i cmdlet di PowerShell per le etichette
 
 Per usare i cmdlet per le etichette è necessario:
   
-1. [Connettersi a PowerShell in Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
     
-2. Usare questi cmdlet del Centro sicurezza e conformità di Office 365:
+2. Usare i cmdlet del centro sicurezza e conformità:
 
   - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetag)
 

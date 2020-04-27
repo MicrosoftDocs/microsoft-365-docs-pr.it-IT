@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: ''
-ms.openlocfilehash: 3a306cb8bda0f5f07660f8a2af60e29a3c4d0776
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e66a0b7965212ef65663208efd73378d8c14a726
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636035"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805231"
 ---
 # <a name="anti-spoofing-protection"></a>Protezione anti-spoofing
 
@@ -92,11 +92,9 @@ Microsoft distingue tra due diversi tipi di spoofing dei messaggi:
 
   `Authentication-Results: ... compauth=fail reason=6xx`
 
-  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.11`
 
   - `reason=6xx` indica lo spoofing intra-organizzazione.
-
-  - CAT è la categoria del messaggio. In genere è SPM (posta indesiderata), ma occasionalmente può essere HSPM (posta indesiderata con alta confidenza) o PHISH (phishing) a seconda degli altri tipi di schema rilevati nel messaggio.
 
   - SFTY è il livello di sicurezza del messaggio. 9 indica il phishing, .11 indica lo spoofing intra-organizzazione.
 
@@ -109,7 +107,7 @@ Microsoft distingue tra due diversi tipi di spoofing dei messaggi:
 
   `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-  - Il valore `reason=000` indica che il messaggio non ha superato l'autenticazione e-mail esplicita. `reason=001` indica che il messaggio non ha superato l'autenticazione e-mail implicita.
+  - `reason=000` indica che il messaggio non ha superato l'autenticazione e-mail esplicita. `reason=001` indica che il messaggio non ha superato l'autenticazione e-mail implicita.
 
   - SFTY è il livello di sicurezza del messaggio. 9 indica il phishing, .22 indica lo spoofing tra domini.
 

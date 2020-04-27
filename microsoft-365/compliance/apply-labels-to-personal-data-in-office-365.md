@@ -1,5 +1,5 @@
 ---
-title: Applicare le etichette ai dati personali in Office 365
+title: Applicare le etichette ai dati personali
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -17,37 +17,37 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come utilizzare le etichette di Office per il piano di protezione RGPD.
-ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079801"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636284"
 ---
-# <a name="apply-labels-to-personal-data-in-office-365"></a>Applicare le etichette ai dati personali in Office 365
+# <a name="apply-labels-to-personal-data"></a>Applicare le etichette ai dati personali
 
  Consultare questo argomento se si usano etichette di classificazione per il piano di protezione GDPR. 
 
-Se si usano etichette per la protezione dei dati personali in Office 365, Microsoft consiglia di iniziare con le [etichette di conservazione](labels.md). Con le etichette di conservazione è possibile:
+Se si usano etichette per la protezione dei dati personali in Microsoft 365, Microsoft consiglia di iniziare con le [etichette di conservazione](labels.md). Con le etichette di conservazione è possibile:
 - Usare Advanced Data Governance per applicare automaticamente le etichette in base ai tipi di informazioni sensibili o ad altri criteri.
 - Usare le etichette di conservazione con la prevenzione della perdita dei dati per applicare la protezione. 
 - Usare le etichette con eDiscovery e Ricerca contenuto. 
 
-Cloud App Security attualmente non supporta le etichette di conservazione, ma è possibile usare i tipi di informazioni riservate di Office 365 con Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.
+Cloud App Security attualmente non supporta le etichette di conservazione, ma è possibile usare i tipi di informazioni sensibili di Microsoft 365 con Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.
 
-Le [etichette di riservatezza](sensitivity-labels.md) sono attualmente consigliate per l'applicazione di etichette a file locali e in altri provider e servizi cloud. Sono consigliate anche per file in Office 365 che richiedono la crittografia di Azure Information Protection per la protezione dei dati, ad esempio file contenenti segreti commerciali.
+Le [etichette di riservatezza](sensitivity-labels.md) sono attualmente consigliate per l'applicazione di etichette a file locali e in altri provider e servizi cloud. Sono consigliate anche per file in Microsoft 365 che richiedono la crittografia di Azure Information Protection per la protezione dei dati, ad esempio file contenenti segreti commerciali.
 
-Al momento, l'uso di Azure Information Protection per applicare la crittografia non è consigliabile per i file in Office 365 contenenti dati soggetti al GDPR. I servizi di Office 365 attualmente non possono leggere nei file con crittografia AIP. Di conseguenza, il servizio non trova i dati sensibili in questi file.
+Al momento, l'uso di Azure Information Protection per applicare la crittografia non è consigliabile per i file in Microsoft 365 contenenti dati soggetti al GDPR. I servizi di Microsoft 365 attualmente non possono leggere nei file con crittografia AIP. Di conseguenza, il servizio non trova i dati sensibili in questi file.
 
-Le etichette di conservazione possono essere applicate ai messaggi di posta elettronica in Exchange Online e queste etichette funzionano con la prevenzione della perdita dei dati di Office 365. 
+Le etichette di conservazione possono essere applicate ai messaggi di posta elettronica in Exchange Online e queste etichette funzionano con la prevenzione della perdita dei dati di Microsoft 365. 
 
-![Le etichette di Office 365 e di Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Le etichette di Microsoft 365 e di Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 Nella figura:
 
 -   Usare le etichette di conservazione per i dati personali per i file con segreti commerciali e soggetti a normative in SharePoint Online e OneDrive for Business.
--   È possibile usare i tipi di informazioni sensibili di Office 365 all'interno di Office 365 e Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.
+-   È possibile usare i tipi di informazioni sensibili di Microsoft 365 all'interno di Microsoft 365 e Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.
 -   Usare le etichette di riservatezza per i file con segreti commerciali e soggetti a normative, la posta elettronica di Exchange Online, file in altri servizi SaaS, file in datacenter locali e file in altri provider cloud.
 
 
@@ -82,7 +82,7 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 <p>Dati cliente
 </p></td>
 <td align="left"><p>Avvisa quando i file con questi attributi...</p>
-<p>Scegliere uno o più attributi: attributo PII predefinito, tipologia di informazioni riservate di Office 365, etichetta di riservatezza (AIP), espressione personalizzata</p>
+<p>Scegliere uno o più attributi: attributo PII predefinito, tipologia di informazioni riservate di Microsoft 365, etichetta di riservatezza (AIP), espressione personalizzata</p>
 <p>. . . in qualsiasi app SaaS approvata vengono condivisi all'esterno dell'organizzazione</p><p>Nota: le etichette di conservazione non sono attualmente supportate in Cloud App Security.</td>
 </tr>
 <tr class="even">
@@ -218,4 +218,4 @@ Nella figura:
 
 - I tipi di informazioni riservate desiderate per l'RGPD sono: codice fiscale belga, numero di carta di credito, numero identità Croazia, codice fiscale Finlandese.
 
-- La creazione di un criterio di applicazione automatica assegna l'etichetta "Dati del cliente" a qualsiasi file che include uno dei tipi di informazioni riservate aggiunto al criterio.
+- La creazione di un criterio di applicazione automatica assegna l'etichetta "Dati del cliente" a qualsiasi file che include uno dei tipi di informazioni sensibili aggiunto al criterio.

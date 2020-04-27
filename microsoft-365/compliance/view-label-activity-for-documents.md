@@ -16,17 +16,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Con Esplora attività con etichette nel Centro sicurezza e conformità di Office 365, è possibile cercare e visualizzare rapidamente le attività con etichette per tutto il contenuto di SharePoint e OneDrive for Business degli ultimi 30 giorni. Si tratta di dati in tempo reale che offrono un quadro chiaro di ciò che accade nel tenant.
-ms.openlocfilehash: f1bb6f7a79759a9b2d36b5af334ced89e5b2b28a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Con Esplora attività con etichette nel Centro sicurezza e conformità è possibile cercare e visualizzare rapidamente le attività con etichette per tutto il contenuto di SharePoint e OneDrive for Business degli ultimi 30 giorni. Si tratta di dati in tempo reale che offrono un quadro chiaro di ciò che accade nel tenant.
+ms.openlocfilehash: b0a799e192f6b6c3cb8087b38322094ca7423fea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068887"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626332"
 ---
 # <a name="view-label-activity-for-documents"></a>Visualizzare le attività delle etichette per i documenti
 
-Dopo aver creato le etichette, è consigliabile verificare che vengano applicate al contenuto come previsto. Con Esplora attività con etichette nel Centro sicurezza e conformità di Office 365, è possibile cercare e visualizzare rapidamente le attività con etichette per tutto il contenuto di SharePoint e OneDrive for Business degli ultimi 30 giorni. Si tratta di dati in tempo reale che offrono un quadro chiaro di ciò che accade nel tenant.
+Dopo aver creato le etichette, è consigliabile verificare che vengano applicate al contenuto come previsto. Con Esplora attività con etichette nel Centro sicurezza e conformità, è possibile cercare e visualizzare rapidamente le attività con etichette per tutto il contenuto di SharePoint e OneDrive for Business degli ultimi 30 giorni. Si tratta di dati in tempo reale che offrono un quadro chiaro di ciò che accade nel tenant.
   
 Ad esempio, con Esplora attività con etichette è possibile:
   

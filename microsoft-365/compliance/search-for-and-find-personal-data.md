@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come cercare e trovare i dati personali dell'utente in Office 365.
-ms.openlocfilehash: 31ff182c673b9a8d8f468b81c6cf5d30cf00733a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bcae58049cd844a64bfbff89f78a98df6e25dbc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597563"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638130"
 ---
 # <a name="search-for-and-find-personal-data"></a>Cercare e trovare i dati personali
 
@@ -32,10 +32,9 @@ L'RGPD definisce i dati personali in modo molto generico come qualsiasi dato rel
 
 Articolo 4 - Definizioni
 
-> Il termine "dati personali" si riferisce a qualsiasi informazione relativa a una persona fisica identificata o identificabile ("soggetto dei dati"); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente, tramite dati specifici come un nome, un numero di identificazione, dati sulla posizione, un identificatore online o uno o più fattori specifici per l'identità fisica, psicologica, genetica, mentale, economica, culturale o sociale della persona fisica;
+> Con "dati personali" si intende qualsiasi informazione relativa a una persona fisica identificata o identificabile ("interessato"); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente, in particolare in riferimento a un identificatore come un nome, un numero di identificazione, dati sulla posizione, un identificatore online o a uno o più fattori specifici per l'identità fisica, psicologica, genetica, mentale, economica, culturale o sociale della persona fisica;
 
-
-In questo articolo viene illustrato come trovare i dati personali archiviati in SharePoint Online e OneDrive for Business (che include i siti per tutti i gruppi di Office 365 e Microsoft Teams).
+In questo articolo viene illustrato come trovare i dati personali archiviati in SharePoint Online e OneDrive for Business (che include i siti per tutti i gruppi di Microsoft 365 e Microsoft Teams).
 
 La ricerca di dati personali soggetti al GDPR si basa sull'utilizzo di tipi di informazioni sensibili in Office 365. Questi definiscono il modo in cui il processo automatizzato riconosce tipi specifici di informazioni come codici di servizi sanitari e numeri di carte di credito. È possibile utilizzare i criteri di prevenzione della perdita di dati per trovare i dati personali nella posta durante il transito. È possibile utilizzare i tipi di informazioni sensibili curate per il GDPR per trovare e proteggere le informazioni personali inviate tramite posta elettronica. Vedere inoltre [Gestire richieste dell'interessato per il GDPR con lo strumento dei casi DSR nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
@@ -109,14 +108,13 @@ Attualmente le tipologie di informazioni sensibili non sono utilizzabili per tro
 <tbody>
 <tr class="odd"><td align="left"><p>Andare a Ricerca contenuto nel Centro sicurezza e conformità</p></td>
 <td align="left"><p>Nel riquadro a sinistra del Centro sicurezza e conformità, fare clic su **Ricerca e analisi** &gt; **Ricerca contenuto**.</p>
-<p>Vedere <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Eseguire Ricerca contenuto nel Centro sicurezza e conformità di Office 365</a>.</p></td>
+<p>Vedere <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Eseguire una ricerca contenuto nel Centro sicurezza e conformità</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Creare un nuovo elemento di ricerca per ogni tipo di informazioni riservate</p></td>
 <td align="left"><p>Utilizzare la sintassi seguente:</p>
 <blockquote>
-<p>SensitiveType:"&lt;tipologia&gt;"
-</p>
+<p>SensitiveType:"&lt;tipologia&gt;"</p>
 </blockquote>
 <p>Ad esempio:</p>
 <blockquote>
@@ -131,7 +129,7 @@ Attualmente le tipologie di informazioni sensibili non sono utilizzabili per tro
 <p><li>Molti falsi positivi</li></p>
 <p><li>Mancano istanze note dei dati
 </li></p>
-<p>Vedere <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Esportare i risultati di Ricerca contenuto dal Centro sicurezza e conformità di Office 365</a>.</p>
+<p>Vedere <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Esportare i risultati di Ricerca contenuto dal Centro sicurezza e conformità</a>.</p>
 <p>Nota: se si utilizza Mozilla Firefox o Chrome, è necessario prima scaricare i report utilizzando Internet Explorer o Edge per installare il componente aggiuntivo necessario.</p></td>
 </tr>
 </tbody>
@@ -216,21 +214,20 @@ Iniziare con queste tipologie di informazioni sensibili. Molte altre tipologie s
 
 È possibile aggiungere i parametri a una query di un tipo di informazioni riservate:
 
--   Numero istanze - Consente di definire il numero di occorrenze di informazioni riservato che un documento deve contenere prima di essere incluso nei risultati della query.
+-   Numero istanze - Consente di definire il numero di occorrenze di informazioni sensibili che un documento deve contenere prima di essere incluso nei risultati della query.
 
 -   Intervallo di confidenza - Indica il livello di confidenza secondo il quale la tipologia di informazione sensibile identificata rappresenta effettivamente una corrispondenza, ad esempio 85 (85%).
 
 
 Sintassi:
 
--   SensitiveType:”\<tipologia\>|\<numero istanze\>|\<intervallo confidenza\>”
-
+-   SensitiveType:"\<tipologia\>|\<numero istanze\>|\<intervallo confidenza\>"
 
 Esempi:
 
--   SensitiveType:“Credit Card Number|5” (restituisce soltanto i documenti che contengono esattamente cinque numeri di carta di credito)
+-   SensitiveType:"Credit Card Number|5" (restituisce soltanto i documenti che contengono esattamente cinque numeri di carta di credito)
 
--   SensitiveType:“Credit Card Number|\*|85..” (l'intervallo di confidenza è pari almeno all'85%)
+-   SensitiveType:"Credit Card Number|\*|85.." (l'intervallo di confidenza è pari almeno all'85%)
 
 Nota: "SensitiveType" distingue tra maiuscole e minuscole, il resto della query no.
 

@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: Informazioni su come modificare o creare nuovi tipi di informazioni riservate di Office 365 per RGPD.
-ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Informazioni su come modificare o creare nuovi tipi di informazioni riservate per il GDPR.
+ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595483"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637778"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizzare o creare un nuovo tipo di informazione riservata
 
-In questo vengono forniti tre esempi che dimostrano come modificare o creare nuovi tipi di informazioni riservate di Office 365 per RGPD.
+In questo vengono forniti tre esempi che dimostrano come modificare o creare nuovi tipi di informazioni riservate per il GDPR.
 
 - Modificare un tipo di informazione riservata esistente — Numero di carta di debito dell'Unione Europea
 
@@ -79,7 +79,7 @@ Per personalizzare un tipo di informazione riservata:
 
 Per migliorare l'accuratezza delle regole DLP in qualsiasi sistema è necessario il test con un set di dati campione; inoltre, potrebbe essere necessaria un'ulteriore ottimizzazione attraverso ripetute modifiche e prove. In questo esempio vengono mostrate le modifiche al tipo di informazione riservata "Numero di carta di debito dell'Unione Europea" per migliorarne l'accuratezza.
 
-Quando si cerca un numero di carta di debito dell'Unione Europea nell'esempio fornito, la definizione di tale numero è rigorosamente specificata tramite 16 cifre con uno schema complesso e soggette alla convalida di un checksum. Non è possibile alterare questo schema a causa della definizione della stringa di questo tipo di informazione riservata. Tuttavia, è possibile apportare le modifiche seguenti per migliorare l'accuratezza del modo in cui i criteri DLP di Office 365 rilevano questo tipo di informazione riservata in Office 365.
+Quando si cerca un numero di carta di debito dell'Unione Europea nell'esempio fornito, la definizione di tale numero è rigorosamente specificata tramite 16 cifre con uno schema complesso e soggette alla convalida di un checksum. Non è possibile alterare questo schema a causa della definizione della stringa di questo tipo di informazione riservata. Tuttavia, è possibile apportare le modifiche seguenti per migliorare l'accuratezza del modo in cui i criteri DLP rilevano questo tipo di informazione riservata in Office 365.
 
 ### <a name="proximity-modification"></a>Modifica di prossimità
 
@@ -139,7 +139,7 @@ Nota: molti nuovi tipi di informazioni riservate saranno presto disponibili per 
 
 ### <a name="step-1--use-kql-queries-and-key-words-to-find-additional-data-in-your-environment"></a>Passaggio 1: utilizzare query KQL e parole chiave per individuare dati aggiuntivi nel proprio ambiente
 
-Potrebbe essere necessario creare query aggiuntive per trovare dati personali soggetti a RGPD. Ricerca contenuto si avvale di Keyword Query Language (KQL) per individuare i dati. I dati più riservati non possono essere rilevati in modo accurato utilizzando solo KQL senza i tipi di informazioni riservate. Pertanto, l'obiettivo consiste nel testare e ottimizzare le stringhe KQL tramite Ricerca contenuto e quindi utilizzarle per creare e ottimizzare nuovi tipi di informazioni riservate in cui è possibile ottenere un'accuratezza maggiore.
+Potrebbe essere necessario creare query aggiuntive per trovare dati personali soggetti a GDPR. Ricerca contenuto si avvale di Keyword Query Language (KQL) per individuare i dati. I dati più riservati non possono essere rilevati in modo accurato utilizzando solo KQL senza i tipi di informazioni riservate. Pertanto, l'obiettivo consiste nel testare e ottimizzare le stringhe KQL tramite Ricerca contenuto e quindi utilizzarle per creare e ottimizzare nuovi tipi di informazioni riservate in cui è possibile ottenere un'accuratezza maggiore.
 
 Utilizzare queste risorse per formulare e ottimizzare query tramite KQL:
 
@@ -294,7 +294,7 @@ CCN di esempio:
 >
 > 17040O1118
 
-Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza interna/esterna, nei documenti e così via. Vuole creare un tipo di informazione riservata personalizzato che rilevi l'uso di CCN in Office 365 per poter applicare la protezione per l'utilizzo di questo modulo di dati personali.
+Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza interna/esterna, nei documenti e così via. Vuole creare un tipo di informazione riservata personalizzato che rilevi l'uso di CCN per poter applicare la protezione per l'utilizzo di questo modulo di dati personali.
 
 ### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>Creare un nuovo tipo di informazione riservata per il numero cliente Contoso
 
@@ -312,7 +312,7 @@ Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza
 <td align="left">Contoso si avvale di PowerShell e Ricerca contenuto per trovare documenti che corrispondono a un set di CCN di esempio.</td>
 <td align="left">
 
-<p>#Connessione al Centro sicurezza e conformità di Office 365</p>
+<p>#Connettersi al Centro sicurezza e conformità</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Creazione e avvio della ricerca per i dati campione</p>
@@ -363,7 +363,7 @@ Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza
 <tr class="even">
 <td align="left">8</td>
 <td align="left">Contoso crea il tipo di informazione riservata personalizzato con PowerShell.</td>
-<td align="left"><p>#Connessione al Centro sicurezza e conformità di Office 365</p>
+<td align="left"><p>#Connettersi al Centro sicurezza e conformità</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Creazione del nuovo tipo di informazione riservata</p>
