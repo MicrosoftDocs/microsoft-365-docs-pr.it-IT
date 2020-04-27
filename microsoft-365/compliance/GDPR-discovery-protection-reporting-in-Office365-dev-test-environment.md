@@ -1,6 +1,6 @@
 ---
-title: Individuazione, protezione e creazione di report secondo il GDPR nell'ambiente di sviluppo/test di Office 365
-description: Dimostrazione delle funzionalità correlate al GDPR in Office 365.
+title: Individuazione, protezione e creazione di report secondo il GDPR nell'ambiente di sviluppo/test
+description: Dimostrazione delle funzionalità correlate al GDPR in Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7bf98da5d358f9b76f38372353a1c2a9d0d45d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6a16f48948cd40ea39f8d066471e902d2b5a6bf0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594090"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632341"
 ---
-# <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Individuazione, protezione e creazione di report secondo il GDPR nell'ambiente di sviluppo/test di Office 365
+# <a name="gdpr-discovery-protection-and-reporting-in-the-devtest-environment"></a>Individuazione, protezione e creazione di report secondo il GDPR nell'ambiente di sviluppo/test
 
- **Riepilogo:** dimostrazione delle funzionalità correlate al GDPR in Office 365. 
+ **Riepilogo:** dimostrazione delle funzionalità correlate al GDPR in Microsoft 365. 
   
-In questo articolo viene descritto come configurare e dimostrare l'individuazione, la protezione e la creazione di report per le informazioni personali secondo il Regolamento generale sulla protezione dei dati (GDPR) in un ambiente di sviluppo/test di Office 365.
+In questo articolo viene descritto come configurare e dimostrare l'individuazione, la protezione e la creazione di report per le informazioni personali secondo il Regolamento generale sulla protezione dei dati (GDPR) in un ambiente di sviluppo/test di Microsoft 365.
   
-## <a name="phase-1-create-and-configure-your-trial-office-365-subscription"></a>Fase 1: creare e configurare la sottoscrizione di valutazione di Office 365
+## <a name="phase-1-create-and-configure-your-trial-microsoft-365-subscription"></a>Fase 1: creare e configurare la sottoscrizione di valutazione di Microsoft 365
 
-Per prima cosa, attenersi alla procedura descritta nella sezione [Fase 2: creare una sottoscrizione di valutazione di Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription) nell'articolo relativo all'ambiente di sviluppo/test di Office 365.
+Per prima cosa, attenersi alla procedura descritta nell'articolo [Fase 2 dell'ambiente di sviluppo/test di Microsoft 365](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription).
 
 Successivamente, seguire questa procedura per configurare il responsabile di eDiscovery:
 
-1. Accedere al tenant di valutazione di Office 365 con l'account di amministratore globale.
-2. Dalla home page di Office 365, fare clic su **Sicurezza e conformità**.
+1. Accedere al tenant di valutazione di Microsoft 365 con l'account di amministratore globale.
+2. Dalla home page di Microsoft 365, fare clic su **Sicurezza e conformità**.
 3. Nella nuova scheda Sicurezza e conformità, fare clic su **Autorizzazioni** > **Responsabile di eDiscovery**.
 4. Fare clic su **Modifica** per il responsabile di eDiscovery, quindi fare clic su **Scegli responsabile di eDiscovery**.
 5. Fare clic su **+ Aggiungi**, cercare il nome dell'account amministratore globale e aggiungere il proprio account amministratore globale come responsabile di eDiscovery.
@@ -46,12 +46,12 @@ Successivamente, seguire questa procedura per configurare il responsabile di eDi
   
 ## <a name="phase-2-add-personally-identifiable-information-to-your-tenant"></a>Fase 2: aggiungere informazioni personali al tenant
 
-In questa fase, viene creato un documento con le informazioni personali per una serie di IBAN di esempio; tale documento viene quindi archiviato su un sito di SharePoint Online nell'ambiente di sviluppo/test di Office 365.
+In questa fase, viene creato un documento con le informazioni personali per una serie di IBAN di esempio; tale documento viene quindi archiviato su un sito di SharePoint Online nell'ambiente di sviluppo/test di Microsoft 365.
 
 1. Nel computer locale, aprire Microsoft Word.
 2. Incollare la tabella seguente nel file Word e salvarlo come "IBAN.docx" nel computer locale.
     
-    Numero  |Paese  |Codice |IBAN  |
+    Numero   |Paese  |Codice |IBAN  |
     |---------|---------|---------|---------|
     |1     |  Austria SEPA      | AT            |AT611904300234573201       |
     |2     |  Bulgaria SEPA       |BG    |BG80BNBG96611020345678      |
@@ -99,7 +99,7 @@ In questa fase, viene creato un tipo di informazione riservata personalizzato pe
 - Un numero di serie di quattro cifre. 
     - I possibili valori per il numero di serie sono compresi tra 0000 e 9999.   
 
-Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza interna/esterna, nei documenti e in altri moduli. Contoso ha bisogno di un tipo di elemento riservato personalizzato che rilevi l'uso di CCN nei contenuti di Office 365 per poter applicare la protezione per l'utilizzo di questo modulo di informazioni personali.
+Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza interna/esterna, nei documenti e in altri moduli. Contoso ha bisogno di un tipo di elemento riservato personalizzato che rilevi l'uso di CCN nei contenuti di Microsoft 365 per poter applicare la protezione per l'utilizzo di questo modulo di informazioni personali.
 
 1. Seguire le istruzioni in [Connettersi a PowerShell in Centro sicurezza e conformità di Office 365 mediante l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) e connettersi al Centro sicurezza e conformità con l'UPN del proprio account amministratore globale.
 2. Eseguire i seguenti comandi PowerShell.
@@ -178,7 +178,7 @@ Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza
 
 ## <a name="phase-5-demonstrate-data-protection"></a>Fase 5: dimostrare la protezione dei dati
 
-La protezione delle informazioni personali di Office 365 include l’uso delle funzionalità di prevenzione della perdita dei dati (DPL).  Con i criteri DPL, è possibile proteggere automaticamente le informazioni riservate in Office 365.
+La protezione delle informazioni personali di Microsoft 365 include l'uso delle funzionalità di prevenzione della perdita dei dati (DPL).  Con i criteri DPL, è possibile proteggere automaticamente le informazioni riservate in Microsoft 365.
 
 Esistono molti modi per applicare la protezione. Investire nella formazione e nella sensibilizzazione in merito alla posizione in cui i dati degli utenti che risiedono nell'UE vengono memorizzati nell'ambiente e a come i dipendenti sono autorizzati a gestirli, rappresenta un livello di protezione delle informazioni tramite i criteri di prevenzione della perdita dei dati di Office 365.
 
@@ -189,7 +189,7 @@ In questa fase, viene creato un nuovo criterio DLP e viene dimostrato come appli
 3. Fare clic su **+ Crea un criterio**.
 4. In **Inizia da un modello o Crea criteri personalizzati** fare clic su **Personalizzato** > **Criteri personalizzati** > **Avanti**.
 5. In **Denomina il criterio** fornire i seguenti dettagli e quindi fare clic su **Avanti**:  a. Nome: **Criterio informazioni personali cittadino UE** b. Descrizione: **Proteggere le informazioni personali dei cittadini europei**
-6. In **Seleziona posizioni**, scegliere **Tutte le posizioni in Office 365**. Ciò include i contenuti nella posta di Exchange e nei documenti di OneDrive e SharePoint. Infine, fare clic su **Avanti**.
+6. In **Seleziona posizioni**, scegliere **Tutte le posizioni in Microsoft 365**. Ciò include i contenuti nella posta di Exchange e nei documenti di OneDrive e SharePoint. Infine, fare clic su **Avanti**.
 7. In **Personalizza il tipo di contenuti d proteggere** fare clic su **Trova contenuti che includono:** e quindi fare clic su **Modifica**.
 8. In **Scegli il tipo di contenuti da proteggere** fare clic su **Aggiungi** > **Tipi di informazioni riservate**.
 9. In **Tipi di informazioni riservate** fare clic su **+ Aggiungi**.
@@ -233,7 +233,7 @@ Nota:- questo esempio di set di dati deriva da informazioni pubblicamente dispon
 
 ## <a name="phase-6-demonstrate-reporting"></a>Fase 6: dimostrare la creazione di report
  
-In questa fase, viene dimostrata la creazione di report di Office 365 in base al criterio DLP configurato nella Fase 5.
+In questa fase, viene dimostrata la creazione di report di Microsoft 365 in base al criterio DLP configurato nella Fase 5.
 
    1. Dalla scheda Sicurezza e conformità del browser fare clic su **Home**.
    2. Fare clic su **Report** > **Dashboard** > **Risultati dei criteri di prevenzione della perdita dei dati**.

@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determinare se l'organizzazione implementerà etichette nell'ambito del piano RGPD.
-ms.openlocfilehash: fa10e3ccd320026f06db76feef8711f8483c2b70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db61c5c26ed8484e99aa8f06310bdd3385cf2dce
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596043"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637136"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Progettare uno schema di classificazione per i dati personali
 
@@ -32,11 +32,11 @@ Nota: definire uno schema di classificazione per un'organizzazione e configurare
 
 ## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>Decidere se utilizzare le etichette oltre ai tipi di dati riservati
 
-È possibile adottare uno dei due approcci di classificazione in Office 365 per le informazioni personali. Ciascuno di essi può essere utilizzato per la protezione RGPD. Se si decide di usare solo i tipi di informazioni riservate per la classificazione, è possibile ignorare il resto di questo argomento.
+È possibile adottare uno dei due approcci di classificazione in Microsoft 365 per le informazioni personali. Ciascuno di essi può essere utilizzato per la protezione GDPR. Se si decide di usare solo i tipi di informazioni riservate per la classificazione, è possibile ignorare il resto di questo argomento.
 
 Scegliere una delle seguenti opzioni:
 
-### <a name="option-1-use-only-office-365-sensitive-information-types"></a>Opzione 1: usare solo tipi di informazioni riservate di Office 365
+### <a name="option-1-use-only-microsoft-365-sensitive-information-types"></a>Opzione 1: usare solo tipi di informazioni riservate di Microsoft 365
 
 - I tipi di informazioni riservate sono utili per identificare e proteggere i dati personali soggetti a RGPD e altri tipi di normative.
 

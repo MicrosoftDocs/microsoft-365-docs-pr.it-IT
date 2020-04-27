@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634544"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632281"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
@@ -65,7 +65,7 @@ Per informazioni sui record di controllo per le attività di MailItemsAccessed, 
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>Ricerca dei record di controllo MailItemsAccessed
 
-Per cercare i record di controllo MailItemsAccessed, è possibile cercare l'attività **Elementi delle cassette postali accessibili** nell'elenco a discesa **Attività su cassette postali di Exchange** nello [strumento Ricerca log di audit](search-the-audit-log-in-security-and-compliance.md) nel Centro sicurezza e conformità di Office 365.
+Per cercare i record di controllo MailItemsAccessed, è possibile cercare l'attività **Elementi delle cassette postali accessibili** nell'elenco a discesa **Attività su cassette postali di Exchange** nello [strumento Ricerca log di audit](search-the-audit-log-in-security-and-compliance.md) nel Centro sicurezza e conformità.
 
 ![Ricerca di azioni MailItemsAccessed nello strumento Ricerca log di audit](../media/MailItemsAccessedSCC1.png)
 
@@ -85,7 +85,7 @@ Per altre informazioni, vedere la sezione dedicata alla limitazione dell'API nel
 
 **Dove è possibile accedere ad Audit avanzato?**
 
-Dopo aver distribuito Audit avanzato nell'organizzazione, è possibile creare criteri di conservazione dei log di controllo e cercare i record di controllo MailItemsAccessed tramite lo strumento Ricerca log di audit nel [Centro sicurezza e conformità di Office 365](https://protection.office.com). I lavori per implementare Audit avanzato nel [Centro conformità Microsoft 365](https://compliance.microsoft.com) nelle prossime settimane sono in corso.
+Dopo aver distribuito Audit avanzato nell'organizzazione, è possibile creare criteri di conservazione dei log di controllo e cercare i record di controllo MailItemsAccessed tramite lo strumento Ricerca log di audit nel [Centro sicurezza e conformità](https://protection.office.com). I lavori per implementare Audit avanzato nel [Centro conformità Microsoft 365](https://compliance.microsoft.com) nelle prossime settimane sono in corso.
 
 **Ogni utente deve avere una licenza E5 per usufruire di Audit avanzato?**
 

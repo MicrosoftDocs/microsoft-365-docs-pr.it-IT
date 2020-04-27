@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151461"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708441"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 
@@ -33,13 +33,13 @@ Per accedere a Gestione del piano di archiviazione nel Centro sicurezza e confor
 
 ![Pagina del piano file](../media/file-plan-page.png)
 
-## <a name="accessing-file-plan-manager"></a>Accesso alla gestione del piano di archiviazione
+## <a name="accessing-file-plan-manager"></a>Accesso alla gestione del piano file
 
-Per accedere alla gestione del piano di archiviazione, è necessario avere uno dei ruoli di amministratore seguenti:
+Per accedere alla gestione del piano di archiviazione, è necessario avere uno dei seguenti ruoli di amministratore:
     
-- Responsabile della conservazione
-
-- Responsabile della conservazione solo visualizzazione
+    - Responsabile della conservazione
+    
+    - Responsabile della conservazione solo visualizzazione
 
 ## <a name="default-retention-labels-and-label-policy"></a>Etichette di conservazione e criteri di etichetta predefiniti
 
@@ -131,7 +131,7 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
 
    ![Modello di piano di archiviazione vuoto aperto in Excel](../media/file-plan-blank-template.png)
 
-3. Compilare il modello. Di seguito sono descritte le proprietà e i valori validi per ogni proprietà nel modello del piano di archiviazione.<br/>
+3. Compilare il modello. Di seguito sono descritte le proprietà e i valori validi per ogni proprietà nel modello del piano di archiviazione. Per l'importazione, ogni valore può contenere 64 caratteri al massimo. <br/>
 
    |**Proprietà**|**Tipo**|**Valori validi**|
    |:-----|:-----|:-----|
@@ -152,7 +152,7 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
    |CitationUrl|Stringa|Questa proprietà specifica l'URL visualizzato nel descrittore **Clausola/citazione** del piano di archiviazione.|
    |CitationJurisdiction|Stringa|Questa proprietà specifica la giurisdizione o l'agenzia visualizzata nel descrittore **Clausola/citazione** del piano di archiviazione, ad esempio "U.S. Securities and Exchange Commission (SEC)".|
    |Regulatory|Stringa|Lasciare vuota. Questa proprietà non viene usata al momento.|
-   |EventType|Stringa|Questa proprietà specifica la regola di conservazione associata all'etichetta. È possibile utilizzare qualsiasi valore che identifichi la regola in modo univoco. Ad esempio:</br>**Nome**</br>**Nome distinto (DN)**</br>**GUID** </br>È possibile usare il cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) per visualizzare le regole di conservazione disponibili. Tenere presente che se si esportano etichette da un'organizzazione di Office 365, non è possibile usare i valori per la proprietà EventType di tale organizzazione durante l'importazione delle etichette in un'altra organizzazione di Office 365. Questa limitazione è dovuta al fatto che i valori di EventType sono specifici di un'organizzazione. |
+   |EventType|Stringa|Questa proprietà specifica la regola di conservazione associata all'etichetta. È possibile utilizzare qualsiasi valore che identifichi la regola in modo univoco. Ad esempio:</br>**Nome**</br>**Nome distinto (DN)**</br>**GUID** </br>È possibile usare il cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) per visualizzare le regole di conservazione disponibili. Tenere presente che se si esportano etichette da un'organizzazione, non è possibile usare i valori per la proprietà EventType di tale organizzazione durante l'importazione delle etichette in un'altra organizzazione. Questa limitazione è dovuta al fatto che i valori di EventType sono specifici di un'organizzazione. |
    |||
 
    Ecco un esempio di modello che contiene informazioni sulle etichette di conservazione.

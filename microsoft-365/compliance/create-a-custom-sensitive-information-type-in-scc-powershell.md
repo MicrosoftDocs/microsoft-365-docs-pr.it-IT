@@ -15,28 +15,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come creare e importare un tipo di informazioni riservate personalizzato per DLP nel Centro sicurezza e conformità.
-ms.openlocfilehash: 05f43149485bb368f1082180031913293be6d8e7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b937cfe1ce4de7b380ef47d14d5fe4c500e173d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078224"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632351"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità
 
-Prevenzione della perdita dei dati (DLP) in Office 365 include molti [tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md) integrati già pronti per l'uso nei criteri di protezione della perdita dei dati. Tali tipi integrati possono aiutare a identificare e proteggere i numeri di carte di credito, di conti bancari, di passaporto e molti altri. 
+Prevenzione della perdita dei dati (DLP) in Microsoft 365 include molti [tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md) integrati già pronti per l'uso nei criteri di protezione della perdita dei dati. Tali tipi integrati possono aiutare a identificare e proteggere i numeri di carte di credito, di conti bancari, di passaporto e molti altri. 
   
 E se fosse necessario identificare e proteggere un tipo diverso di informazioni sensibili (ad esempio il numero ID di un dipendente che usa un formato specifico dell'organizzazione)? Per farlo, è possibile creare un tipo di informazioni sensibili personalizzato che viene definito in un file XML denominato *pacchetto di regole*.
   
 Questo argomento mostra come creare un file XML che definisca il proprio tipo specifico di informazioni riservate. È necessario sapere come creare un'espressione regolare. Ad esempio, questo argomento crea un tipo di informazioni riservate personalizzate che identifica un ID dipendente. È possibile utilizzare questo XML di esempio come punto di partenza per il proprio file XML.
   
-Dopo aver creato un file XML ben formato, è possibile caricarlo in Office 365 con PowerShell di Office 365. A questo punto è possibile utilizzare il tipo di informazioni riservate personalizzato nei criteri DLP e verificare che stia rilevando le informazioni riservate come previsto.
+Dopo aver creato un file XML ben formato, è possibile caricarlo in Microsoft 365 con PowerShell di Microsoft 365. A questo punto è possibile utilizzare il tipo di informazioni riservate personalizzato nei criteri DLP e verificare che stia rilevando le informazioni riservate come previsto.
 
 > [!NOTE]
 > È anche possibile creare tipi di informazioni riservate personalizzati meno complessi nell'interfaccia utente del Centro sicurezza e conformità. Per ulteriori informazioni, vedere [Creare un tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type.md).
 
 ## <a name="important-disclaimer"></a>Dichiarazione di non responsabilità importante
-<!-- this is worded much better than the previous one is --> A causa degli scostamenti negli ambienti dei clienti e dei requisiti di corrispondenza del contenuto, il supporto tecnico Microsoft non può dare assistenza nella fornitura di definizioni di corrispondenza del contenuto personalizzate, ad esempio definizione di classificazioni personalizzate o modelli di espressioni regolari (noti anche come RegEx). Per lo sviluppo personalizzato di corrispondenza del contenuto, test e debug, i clienti di Office 365 dovranno fare affidamento su risorse IT interne o utilizzare una risorsa di consulenza esterna come Microsoft Consulting Services (MCS). I tecnici del supporto possono fornire supporto limitato per la funzionalità, ma non possono garantire che qualsiasi sviluppo personalizzato di corrispondenza del contenuto soddisfi i requisiti o gli obblighi del cliente. Come esempio del tipo di supporto che può essere fornito, è possibile fornire esempi di modelli di espressioni regolari a scopo di test. In alternativa, il supporto può aiutare nella risoluzione dei problemi di un pattern RegEx esistente che non si attiva come previsto con un singolo esempio di contenuto specifico.
+<!-- this is worded much better than the previous one is --> A causa degli scostamenti negli ambienti dei clienti e dei requisiti di corrispondenza del contenuto, il supporto tecnico Microsoft non può dare assistenza nella fornitura di definizioni di corrispondenza del contenuto personalizzate, ad esempio definizione di classificazioni personalizzate o modelli di espressioni regolari (noti anche come RegEx). Per lo sviluppo personalizzato di corrispondenza del contenuto, test e debug, i clienti di Microsoft 365 dovranno fare affidamento su risorse IT interne o utilizzare una risorsa di consulenza esterna come Microsoft Consulting Services (MCS). I tecnici del supporto possono fornire supporto limitato per la funzionalità, ma non possono garantire che qualsiasi sviluppo personalizzato di corrispondenza del contenuto soddisfi i requisiti o gli obblighi del cliente. Come esempio del tipo di supporto che può essere fornito, è possibile fornire esempi di modelli di espressioni regolari a scopo di test. In alternativa, il supporto può aiutare nella risoluzione dei problemi di un pattern RegEx esistente che non si attiva come previsto con un singolo esempio di contenuto specifico.
 
  Per ulteriori informazioni sul motore Boost.RegEx (in precedenza noto come RegEx++) utilizzato per l'elaborazione del testo, vedere [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
     
@@ -300,7 +300,7 @@ Oltre a confidenceLevel per ogni criterio, l'elemento Entity ha un attributo rec
   
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-security-amp-compliance-center-localizedstrings-element"></a>Si desidera supportare altre lingue dell'interfaccia utente Centro sicurezza &amp; e conformità? [elemento LocalizedStrings]
 
-Se il team di conformità usa Centro sicurezza e conformità di Office 365 per creare criteri in diverse impostazioni locali e in diverse lingue, è possibile fornire versioni localizzate del nome e descrizione del tipo di informazioni riservate personalizzato. Quando il team di conformità Usa Office 365 in una lingua supportata, nell'interfaccia utente verrà visualizzato il nome localizzato.
+Se il team di conformità usa Centro sicurezza &amp; conformità di Microsoft 365 per creare criteri in diverse impostazioni locali e in diverse lingue, è possibile fornire versioni localizzate del nome e descrizione del tipo di informazioni riservate personalizzato. Quando il team di conformità usa Microsoft 365 in una lingua supportata, nell'interfaccia utente verrà visualizzato il nome localizzato.
   
 ![Numero di istanze e opzioni di precisione di corrispondenza](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -316,7 +316,7 @@ Infine, l'inizio di ogni RulePackage contiene alcune informazioni generali che �
   
 Cosa ancora più importante, è necessario generare un GUID per RulePack. In precedenza, è stato generato un GUID per l'entità; si tratta di un secondo GUID per RulePack. Esistono diversi modi per generare i GUID, ma è possibile farlo facilmente in PowerShell digitando [guid]::NewGuid().
   
-Anche l'elemento Version è importante. Quando si carica il pacchetto di regole per la prima volta, Office 365 annota il numero di versione. In un secondo momento, se si aggiorna il pacchetto di regole e si carica una nuova versione, assicurarsi di aggiornare il numero di versione, altrimenti Office 365 non riuscirà a distribuire il pacchetto di regole.
+Anche l'elemento Version è importante. Quando si carica il pacchetto di regole per la prima volta, Microsoft 365 annota il numero di versione. In un secondo momento, se si aggiorna il pacchetto di regole e si carica una nuova versione, assicurarsi di aggiornare il numero di versione, altrimenti Microsoft 365 non riuscirà a distribuire il pacchetto di regole.
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
@@ -439,7 +439,7 @@ Se un tipo di informazioni riservate personalizzato contiene un problema che pu�
 
 DLP usa il crawler di ricerca per identificare e classificare le informazioni riservate nel contenuto del sito. Il contenuto nei siti SharePoint Online e OneDrive for Business viene sottoposto nuovamente alla ricerca per indicizzazione ogni volta che viene aggiornata. Ma per identificare il nuovo tipo personalizzato di informazioni riservate in tutto il contenuto esistente, è necessario che venga effettuata una nuova ricerca per indicizzazione.
   
-In Office 365 è possibile richiedere manualmente l'esecuzione di una nuova ricerca per indicizzazione di un intero tenant, ma tale operazione è possibile per una raccolta siti, un elenco o una raccolta. Vedere [Richiedere manualmente l'esecuzione di una nuova ricerca per indicizzazione e la reindicizzazione di un sito, una raccolta o un elenco](https://docs.microsoft.com/sharepoint/crawl-site-content).
+In Microsoft 365 è possibile richiedere manualmente l'esecuzione di una nuova ricerca per indicizzazione di un intero tenant, ma tale operazione è possibile per una raccolta siti, un elenco o una raccolta. Vedere [Richiedere manualmente l'esecuzione di una nuova ricerca per indicizzazione e la reindicizzazione di un sito, una raccolta o un elenco](https://docs.microsoft.com/sharepoint/crawl-site-content).
   
 ## <a name="remove-a-custom-sensitive-information-type"></a>Rimuovere un tipo di informazioni riservate personalizzato
 

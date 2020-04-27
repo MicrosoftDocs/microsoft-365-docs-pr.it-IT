@@ -1,5 +1,5 @@
 ---
-title: Ricerca contenuto in Office 365
+title: Ricerca contenuto
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Office 365, gruppi di Yammer e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: 0f37daee28afabb6a63be316bd830f9b3992a044
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Microsoft 365, gruppi di Yammer e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
+ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521502"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632361"
 ---
-# <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
+# <a name="content-search"></a>Ricerca contenuto
 
-È possibile usare lo strumento Ricerca contenuto di eDiscovery nel centro conformità di Office 365 o Microsoft 365 per cercare elementi sul posto, come messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea nell'organizzazione di Office 365. Usare questo strumento per cercare elementi in questi servizi di Office 365:
+È possibile usare lo strumento Ricerca contenuto di eDiscovery nel centro conformità di Office 365 o Microsoft 365 per cercare elementi sul posto, come messaggi di posta elettronica, documenti e conversazioni di messaggistica istantanea nell'organizzazione. Usare questo strumento per cercare elementi in questi servizi:
   
 - Cassette postali e cartelle pubbliche in Exchange Online
     
@@ -38,7 +38,7 @@ ms.locfileid: "43521502"
     
 - Microsoft Teams 
 
-- Gruppi di Office 365
+- Gruppi di Microsoft 365
 
 - Gruppi di Yammer 
     
@@ -48,7 +48,7 @@ Dopo aver eseguito una Ricerca contenuto, il numero di percorsi dei contenuti e 
 
 Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenuto e visualizzare l'anteprima dei risultati della ricerca, un amministratore, un responsabile della conformità o un responsabile di eDiscovery deve essere membro del gruppo di ruoli Responsabile di eDiscovery nel Centro sicurezza e conformità. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
   
-1. Passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'indirizzo di posta elettronica e la password di Office 365.
+1. Passare a [https://protection.office.com](https://protection.office.com) e accedere utilizzando l'indirizzo di posta elettronica e la password di Microsoft.
     
 2. Fare clic su **Ricerca**\>**Ricerca contenuto**.
     
@@ -85,7 +85,7 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
     
        - **Percorsi**: scegliere i percorsi di contenuti in cui eseguire la ricerca.
     
-      - **Tutti i percorsi**: selezionare questa opzione per cercare in tutti i percorsi di contenuto dell'organizzazione. Ciò include i messaggi di posta elettronica in tutte le cassette postali di Exchange, incluse tutte le cassette postali inattive, le cassette postali per tutti i gruppi di Yammer, i gruppi di Office 365 e Microsoft Teams, tutte le conversazioni Skype for Business, tutti i siti di SharePoint e OneDrive for Business, inclusi i siti per tutti i gruppi di Yammer, i gruppi di Office 365 e Microsoft Teams, e gli elementi in tutte le cartelle pubbliche di Exchange.
+      - **Tutti i percorsi**: selezionare questa opzione per cercare in tutti i percorsi di contenuto dell'organizzazione. Ciò include i messaggi di posta elettronica in tutte le cassette postali di Exchange, incluse tutte le cassette postali inattive, le cassette postali per tutti i gruppi di Yammer, i gruppi di Microsoft 365 e Microsoft Teams, tutte le conversazioni Skype for Business, tutti i siti di SharePoint e OneDrive for Business, inclusi i siti per tutti i gruppi di Yammer, i gruppi di Microsoft 365 e Microsoft Teams, e gli elementi in tutte le cartelle pubbliche di Exchange.
     
       - **Percorsi specifici**: usare questa opzione per eseguire ricerche in percorsi di contenuto specifici. È possibile eseguire una ricerca in tutti i percorsi di contenuto per un servizio Office 365 specifico, ad esempio in tutte le cassette postali di Exchange o in tutti i siti di SharePoint, oppure eseguire una ricerca dei contenuti in percorsi specifici inclusi nei servizi di Office 365 visualizzati. 
     
@@ -178,7 +178,7 @@ Per ulteriori informazioni sulle ricerche di contenuto, vedere le sezioni seguen
   
 [Eseguire una ricerca negli account di OneDrive](#searching-onedrive-accounts)
   
-[Eseguire una ricerca nei Gruppi di Office 365 e Microsoft Teams](#searching-microsoft-teams-and-office-365-groups)
+[Eseguire una ricerca nei Gruppi di Microsoft 365 e Microsoft Teams](#searching-microsoft-teams-and-microsoft-365-groups)
 
 [Eseguire una ricerca nei gruppi di Yammer](#searching-yammer-groups)
   
@@ -196,7 +196,7 @@ Per ulteriori informazioni sulle ricerche di contenuto, vedere le sezioni seguen
 
 - Per una descrizione dei limiti applicati alla funzionalità di Ricerca contenuto, vedere [Limiti per la Ricerca contenuto](limits-for-content-search.md).
     
-- Microsoft raccoglie informazioni sulle prestazioni per le ricerche contenuto eseguite da tutte le organizzazioni di Office 365. Sebbene la complessità della query di ricerca possa influire sui tempi di ricerca, il fattore principale che influisce sul tempo necessario per una ricerca è il numero di cassette postali in cui la ricerca viene eseguita. Sebbene Microsoft non fornisca un contratto di servizio per i tempi di ricerca, la tabella seguente elenca i tempi di ricerca medi per un'operazione di Ricerca contenuto in base al numero di cassette postali incluse nella ricerca.
+- Microsoft raccoglie informazioni sulle prestazioni per le ricerche contenuto eseguite da tutte le organizzazioni. Sebbene la complessità della query di ricerca possa influire sui tempi di ricerca, il fattore principale che influisce sul tempo necessario per una ricerca è il numero di cassette postali in cui la ricerca viene eseguita. Sebbene Microsoft non fornisca un contratto di servizio per i tempi di ricerca, la tabella seguente elenca i tempi di ricerca medi per un'operazione di Ricerca contenuto in base al numero di cassette postali incluse nella ricerca.
     
 |**Numero di cassette postali**|**Tempo medio di ricerca**|
 |:-----|:-----|
@@ -229,7 +229,7 @@ Tenere presente quanto segue quando si usa l'elenco di parole chiave per creare 
     
     ![Esempio della query creata quando si usa l'elenco di parole chiave e una condizione](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- Durante l'esecuzione di una ricerca di contenuto, Office 365 controlla automaticamente la query di ricerca per individuare caratteri non supportati e operatori booleani che potrebbero non essere scritti in maiuscolo. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o la restituzione di risultati indesiderati. Per altre informazioni sui caratteri non supportati controllati, vedere [Verificare la presenza di errori nella query Ricerca contenuto](check-your-content-search-query-for-errors.md).
+- Durante l'esecuzione di una ricerca di contenuto, Microsoft 365 controlla automaticamente la query di ricerca per individuare caratteri non supportati e operatori booleani che potrebbero non essere scritti in maiuscolo. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o la restituzione di risultati indesiderati. Per altre informazioni sui caratteri non supportati controllati, vedere [Verificare la presenza di errori nella query Ricerca contenuto](check-your-content-search-query-for-errors.md).
     
 - Se si dispone di una query di ricerca che contiene parole chiave per i caratteri non italiani (come i caratteri cinesi), è possibile fare clic su **Lingua - paese/area geografica della query**![Icona Lingua - paese/area geografica della query Ricerca contenuto](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) e selezionare un valore di codice per la lingua - paese per la ricerca. La lingua/area geografica predefinita è neutrale. Come è possibile stabilire se è necessario cambiare l'impostazione della lingua per una ricerca contenuto? Se si è certi che i percorsi di contenuto contengano i caratteri non italiani che si stanno cercando, ma la ricerca non restituisce risultati, l'impostazione della lingua potrebbe essere la causa. 
   
@@ -239,15 +239,15 @@ Tenere presente quanto segue quando si usa l'elenco di parole chiave per creare 
     
     Nei rari casi in cui il nome dell'entità utente (UPN) di una persona viene modificato, l'URL per il relativo percorso OneDrive viene modificato in modo da incorporare il nuovo UPN. Se ciò si verifica, è necessario modificare la ricerca contenuto aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente. Per altre informazioni, vedere [Come le modifiche UPN influiscono sull'URL di OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
   
-### <a name="searching-microsoft-teams-and-office-365-groups"></a>Eseguire una ricerca nei Gruppi di Office 365 e Microsoft Teams
+### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Eseguire una ricerca nei Gruppi di Microsoft 365 e Microsoft Teams
 
-È anche possibile eseguire una ricerca nella cassetta postale associata a un gruppo di Office 365 o a Microsoft Teams. Poiché Microsoft Teams è basato su Gruppi di Office 365, la ricerca è simile. In entrambi i casi, la ricerca viene eseguita solo nella cassetta postale del gruppo o del team. La ricerca non verrà eseguita nelle cassette postali dei membri del gruppo o del team. Per cercare in queste cassette postali, è necessario aggiungerle specificamente alla ricerca.
+È anche possibile eseguire una ricerca nella cassetta postale associata a un gruppo di Microsoft 365 o a Microsoft Teams. Poiché Microsoft Teams è basato su Gruppi di Microsoft 365, la ricerca è simile. In entrambi i casi, la ricerca viene eseguita solo nella cassetta postale del gruppo o del team. La ricerca non verrà eseguita nelle cassette postali dei membri del gruppo o del team. Per cercare in queste cassette postali, è necessario aggiungerle specificamente alla ricerca.
   
-Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei Gruppi di Office 365.
+Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei Gruppi di Microsoft 365.
   
-- Per cercare contenuti in Teams e nei Gruppi di Office 365, è necessario specificare la cassetta postale e il sito di SharePoint associati a un gruppo o a un team.
+- Per cercare contenuti in Teams e nei Gruppi di Microsoft 365, è necessario specificare la cassetta postale e il sito di SharePoint associati a un gruppo o a un team.
     
-- Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un team o di un gruppo di Office 365. È un buon modo per ottenere l'URL del sito associato a un gruppo o a un team. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Senior Leadership Team: 
+- Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un team o di un gruppo di Microsoft 365. È un buon modo per ottenere l'URL del sito associato a un gruppo o a un team. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Microsoft 365 denominato Senior Leadership Team: 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -260,9 +260,9 @@ Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei 
     > [!NOTE]
     > Per eseguire il cmdlet **Get-UnifiedGroup**, è necessario avere il ruolo Destinatari di sola lettura in Exchange Online o essere membri di un gruppo di ruoli assegnato al ruolo Destinatari di sola lettura. 
   
-- Quando viene eseguita la ricerca in una cassetta postale dell'utente, qualsiasi team o gruppo di Office 365 di cui fa parte l'utente viene escluso dalla ricerca. Analogamente, quando si esegue una ricerca in un team o in un gruppo di Office 365, la ricerca viene eseguita solo nella cassetta postale e nel sito del gruppo specificati. La ricerca non viene effettuata nelle cassette postali e negli account di OneDrive for Business dei membri del gruppo, a meno che non li si aggiunga esplicitamente alla ricerca.
+- Quando viene eseguita la ricerca in una cassetta postale dell'utente, qualsiasi team o gruppo di Microsoft 365 di cui fa parte l'utente viene escluso dalla ricerca. Analogamente, quando si esegue una ricerca in un team o in un gruppo di Microsoft 365, la ricerca viene eseguita solo nella cassetta postale e nel sito del gruppo specificati. La ricerca non viene effettuata nelle cassette postali e negli account di OneDrive for Business dei membri del gruppo, a meno che non li si aggiunga esplicitamente alla ricerca.
     
-- Per ottenere un elenco dei membri di un gruppo di Office 365 o di un team, è possibile visualizzare le proprietà nella pagina **Home \>Gruppi** nell’interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
+- Per ottenere un elenco dei membri di un gruppo di Microsoft 365 o di un team, è possibile visualizzare le proprietà nella pagina **Home \>Gruppi** nell'interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -358,7 +358,7 @@ Ecco alcuni aspetti da tenere presenti quando si eseguono ricerche nelle cassett
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Eseguire una ricerca in cassette postali disconnesse o con licenza rimossa
 
-Se la licenza di Exchange Online, o l'intera licenza di Office 365, viene rimossa da un account utente di Office 365 o di Azure Active Directory, la cassetta postale dell'utente diventa una *cassetta postale disconnessa*. Ciò significa che la cassetta postale non è più associata all'account utente. Ecco cosa succede quando si eseguono ricerche nelle cassette postali disconnesse:
+Se la licenza di Exchange Online, o l'intera licenza di Microsoft 365, viene rimossa da un account utente o in Azure Active Directory, la cassetta postale dell'utente diventa una *cassetta postale disconnessa*. Ciò significa che la cassetta postale non è più associata all'account utente. Ecco cosa succede quando si eseguono ricerche nelle cassette postali disconnesse:
 
 - Se la licenza viene rimossa da una cassetta postale, la cassetta postale non è più disponibile per la ricerca. 
 
