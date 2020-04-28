@@ -14,12 +14,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui vari tipi di visualizzazioni disponibili in Esplora minacce e sui rilevamenti in tempo reale.
-ms.openlocfilehash: 7b05ec1346df3bfa428c384a4236a8758e22da28
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ccee7905068619d959e0939aca8b31856dd114a1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955640"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907250"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
@@ -30,7 +30,15 @@ ms.locfileid: "42955640"
 - Se si dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) piano 2, è necessario disporre di Esplora risorse.
 - Se si dispone di Office 365 ATP piano 1, è possibile rilevare i rilevamenti in tempo reale.
 
-Quando si apre Explorer (o il rapporto rilevamenti in tempo reale), la visualizzazione predefinita Visualizza i rilevamenti di malware per la posta elettronica negli ultimi 7 giorni. Questo rapporto può anche mostrare rilevamenti di ATP, ad esempio URL dannosi rilevati da [collegamenti sicuri](atp-safe-links.md)e file dannosi rilevati da [allegati sicuri](atp-safe-attachments.md). Questo report può essere modificato in modo da visualizzare i dati negli ultimi 30 giorni, a meno che non si utilizzi una sottoscrizione di valutazione. Gli abbonamenti di valutazione includeranno i dati solo per i sette giorni scorsi.
+Quando si apre Explorer (o il rapporto rilevamenti in tempo reale), la visualizzazione predefinita Visualizza i rilevamenti di malware per la posta elettronica negli ultimi 7 giorni. Questo rapporto può anche mostrare rilevamenti di ATP, ad esempio URL dannosi rilevati da [collegamenti sicuri](atp-safe-links.md)e file dannosi rilevati da [allegati sicuri](atp-safe-attachments.md). Questo rapporto può essere modificato in modo da visualizzare i dati negli ultimi 30 giorni (con un abbonamento a pagamento ATP P2). Gli abbonamenti di valutazione includeranno i dati solo per i sette giorni scorsi.
+
+|Abbonamento  |Utilità  |Giorni di dati  |
+|---------|---------|---------|
+|Valutazione ATP P1     | Rilevamenti in tempo reale        |   7       |
+|ATP P1 a pagamento     |   Rilevamenti in tempo reale      |    30     |
+|ATP P1-test a pagamento ATP P2 Trial     | Esplora minacce   |   7    |
+|ATP P2 Trail     |  Esplora minacce       |     7     |
+|ATP P2 paid     |     Esplora minacce    |  30       |
 
 Utilizzare il menu **Visualizza** per modificare le informazioni visualizzate. Le descrizioni comandi consentono di determinare la visualizzazione da utilizzare.
   
@@ -99,7 +107,7 @@ Per visualizzare questo report, in Esplora, scegliere **Visualizza** > **posta e
 > [!NOTE]
 > Se viene visualizzato un messaggio di errore in cui vengono letti **troppi dati da visualizzare**, aggiungere un filtro e, se necessario, limitare l'intervallo di date che si sta visualizzando. 
 
-Per applicare un filtro, scegliere **mittente**, selezionare un elemento nell'elenco e quindi fare clic sul pulsante Aggiorna. In questo esempio, è stata utilizzata la **tecnologia di rilevamento** come filtro (sono disponibili diverse opzioni). Visualizzare le informazioni per mittente, dominio del mittente, destinatari, oggetto, nome file allegato, famiglia di malware, stato di protezione (azioni intraprese dalle caratteristiche e dai criteri di protezione dalle minacce in Office 365), tecnologia di rilevamento (come è stato rilevato il malware) e più. 
+Per applicare un filtro, scegliere **mittente**, selezionare un elemento nell'elenco e quindi fare clic sul pulsante Aggiorna. In questo esempio, è stata utilizzata la **tecnologia di rilevamento** come filtro (sono disponibili diverse opzioni). Visualizzare le informazioni per mittente, dominio del mittente, destinatari, oggetto, nome file allegato, famiglia di malware, stato di protezione (azioni intraprese dalle caratteristiche e dai criteri di protezione dalle minacce in Office 365), tecnologia di rilevamento (come è stato rilevato il malware) e altro ancora. 
 
 ![Visualizzare i dati relativi alla posta elettronica individuata mediante tecnologia di rilevamento](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 

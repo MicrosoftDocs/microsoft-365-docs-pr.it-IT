@@ -17,16 +17,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
-ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
+ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42836881"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901023"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gestire i ticket tramite ServiceNow
 
-Microsoft 365 Security Center è in fase di miglioramento grazie alla possibilità di creare e registrare in modo nativo i ticket in ServiceNow. Gli amministratori della sicurezza possono inviare un'azione di miglioramento di [Microsoft Secure Score](microsoft-secure-score.md) direttamente a ServiceNow e creare un ticket. È possibile creare sia la gestione degli incidenti che i ticket di gestione delle modifiche.
+ServiceNow è una popolare piattaforma di cloud computing che aiuta le aziende a gestire i flussi di lavoro digitali per le operazioni aziendali. La piattaforma Now include i flussi di lavoro IT, i flussi di lavoro dei dipendenti e i flussi di lavoro del cliente. Microsoft ha collaborato con ServiceNow per semplificare agli amministratori IT la gestione dei ticket e delle attività in entrambe le piattaforme. [Altre informazioni su ServiceNow](https://www.servicenow.com/)
+
+Microsoft 365 Security Center è ora migliorato grazie alla possibilità di creare e registrare in modo nativo i ticket in ServiceNow. Gli amministratori della sicurezza possono inviare un'azione di miglioramento di [Microsoft Secure Score](microsoft-secure-score.md) direttamente a ServiceNow e creare un ticket. È possibile creare sia la gestione degli incidenti che i ticket di gestione delle modifiche. Possono quindi essere registrate nella Home page del Centro protezione Microsoft e ServiceNow.
 
 ## <a name="prerequisites"></a>Prerequisiti
 

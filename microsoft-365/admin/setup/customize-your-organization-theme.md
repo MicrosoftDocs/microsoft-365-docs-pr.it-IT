@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Informazioni su come modificare il tema predefinito di Microsoft 365 e personalizzarlo in modo che corrisponda al logo o al colore dell'azienda. "
-ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 06b247da1a8ac1f330f2ad36c8b29897963819f3
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627607"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900775"
 ---
-# <a name="customize-the-theme-for-your-organization"></a>Personalizzare il tema per la propria organizzazione
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
 Informazioni su come personalizzare il tema nell'interfaccia di amministrazione di Microsoft 365. Come amministratore dell'abbonamento a Microsoft 365 for business, è possibile modificare il tema predefinito visualizzato nella barra di spostamento superiore per tutti gli utenti dell'organizzazione. È possibile aggiungere il logo dell'azienda e modificare i colori in modo che corrispondano al resto del brand. È anche possibile aggiungere un collegamento di destinazione per gli utenti a cui passare quando selezionano il logo. È possibile visualizzare qui il tema predefinito e il risultato del tema personalizzato in Microsoft 365.
   
@@ -64,7 +64,7 @@ Informazioni su come personalizzare il tema nell'interfaccia di amministrazione 
     
 4. Selezionare **Salva modifiche**.
     
-Vedrai subito il nuovo tema nell'interfaccia di amministrazione e dopo un breve periodo di tempo, lo vedrai in tutta la Microsoft 365, incluse le pagine in Outlook, SharePoint, l' [app per dispositivi mobili di SharePoint per iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)e l' [app per dispositivi mobili di SharePoint per Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Per un esempio del percorso in cui un tema personalizzato cambia dall'interfaccia di amministrazione, vedere l'immagine seguente.
+Vedrai subito il nuovo tema nell'interfaccia di amministrazione e dopo un breve periodo di tempo, lo vedrai in tutta la Microsoft 365, incluse le pagine in Outlook, SharePoint, l' [app per dispositivi mobili di SharePoint per iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)e l' [app per dispositivi mobili di SharePoint per Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Per un esempio di dove è possibile personalizzare le modifiche dei temi dall'interfaccia di amministrazione, vedere l'immagine seguente.
 
 ![M365-admin-tenant-Theme-Conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -72,7 +72,7 @@ Vedrai subito il nuovo tema nell'interfaccia di amministrazione e dopo un breve 
   
 ## <a name="best-practices"></a>Procedure consigliate
 
-Quando si sceglie un' **immagine del logo**, è consigliabile utilizzare un tipo di file SVG, laddove possibile, in modo che il logo abbia un aspetto ad alta risoluzione su tutti gli schermi e su tutti i livelli di zoom.
+Quando si sceglie un' **immagine del logo**, è consigliabile utilizzare un tipo di file SVG, in modo che il logo abbia un aspetto ad alta risoluzione su tutti gli schermi e a tutti i livelli di zoom.
 
 Quando si scelgono colori personalizzati, scegliere un **colore di sfondo della barra** di spostamento con un rapporto di contrasto elevato con l'immagine del **logo** selezionata. Scegliere anche un colore del **testo e delle icone** con un rapporto di contrasto elevato rispetto al **colore di sfondo della barra** di spostamento per garantire che tutto il testo e le icone siano facilmente visibili.
 
@@ -99,4 +99,3 @@ Di seguito è illustrato un semplice diagramma di flusso che consente di ottener
 [Aggiungere riquadri personalizzati alla pagina Mie app e all'icona di avvio delle app](../manage/customize-the-app-launcher.md)
   
   
-

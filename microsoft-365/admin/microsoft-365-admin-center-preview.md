@@ -18,19 +18,33 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4e6df3824e3f4ca33e947c438bb0be2f841e416
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627981"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907226"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365
 
+::: moniker range="o365-worldwide"
+
 Il nuovo interfaccia di amministrazione di Microsoft 365 è stato creato per i team IT come modo semplificato per gestire i servizi di Microsoft 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
-  
-L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)può essere eseguito all'indirizzo. Le aree di lavoro specialistiche, come la sicurezza o la gestione dei dispositivi, consentono un controllo più granulare. Per ulteriori informazioni sul funzionamento dei centri di amministrazione, vedere informazioni [sui tipi specifici di ruoli IT e altre aree di lavoro, ad esempio la sicurezza, la gestione dei dispositivi o Exchange](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) , più avanti in questo articolo. 
-  
+
+L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)può essere eseguito all'indirizzo. Le aree di lavoro specialistiche, come la sicurezza o la gestione dei dispositivi, consentono un controllo più granulare. Per ulteriori informazioni sul funzionamento dei centri di amministrazione, vedere informazioni [sui tipi specifici di ruoli IT e altre aree di lavoro, ad esempio la sicurezza, la gestione dei dispositivi o Exchange](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) , più avanti in questo articolo.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+Il nuovo interfaccia di amministrazione di Microsoft 365, che è attualmente in anteprima, è creato per i team IT come modo semplificato per gestire i servizi di Microsoft 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
+
+L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e può essere eseguito [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627)accedendo a. Inoltre, le aree di lavoro specialistiche, come Azure Active Directory ed Exchange, consentono un controllo più granulare. È possibile accedere alle aree di lavoro specialistiche dal riquadro di spostamento nell'interfaccia di amministrazione di Microsoft 365.
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
 Poiché le nuove funzionalità sono disponibili nell'interfaccia di amministrazione di Microsoft 365, è possibile accedere al nuovo interfaccia di amministrazione e condividere i propri commenti e suggerimenti con Microsoft in modo da poter continuare a migliorare l'esperienza di amministratore. Se si opta per l'accesso, non vi sarà alcun impatto sugli utenti e si potrà tornare all'interfaccia di amministrazione precedente in qualsiasi momento.
 Novità della [nuova interfaccia di amministrazione di Microsoft 365](whats-new-in-preview.md).
   
@@ -43,10 +57,12 @@ Ci piacerebbe poter partecipare alla nuova interfaccia di amministrazione di Mic
 ### <a name="turn-on-targeted-release"></a>Attivazione della versione di destinazione
 
 1. Accedere a [admin.Microsoft.com](https://admin.microsoft.com), passare al riquadro di spostamento e selezionare **Impostazioni** \> **profilo organizzazione**.
-    
+
+1. Accedere a [Portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813), passare al riquadro di spostamento e selezionare **Impostazioni** \> **profilo organizzazione**.
+
 2. Passare alla scheda **Preferenze di rilascio** e quindi selezionare **modifica**. 
     
-3.  Selezionare **rilasci mirati per tutti** o **rilascio di destinazione per gli utenti selezionati**. Se si sceglie la versione di destinazione per gli utenti selezionati, è necessario aggiungere l'account di amministratore (e tutti gli altri amministratori dell'organizzazione che desiderano partecipare) all'elenco di utenti selezionati.
+3. Selezionare **rilasci mirati per tutti** o **rilascio di destinazione per gli utenti selezionati**. Se si sceglie la versione di destinazione per gli utenti selezionati, è necessario aggiungere l'account di amministratore (e tutti gli altri amministratori dell'organizzazione che desiderano partecipare) all'elenco di utenti selezionati.
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>Passare alla nuova interfaccia di amministrazione e viceversa
 
@@ -61,11 +77,25 @@ Se si vuole essere un Early Adopter nella nuova interfaccia di amministrazione, 
 > [!NOTE]
 > L'accesso al nuovo interfaccia di amministrazione verrà implementato su tutti gli amministratori di Microsoft 365. Gli amministratori che si trovano nel gruppo di rilascio di destinazione nell'organizzazione avranno prima il nuovo interfaccia di amministrazione. Essere in versione mirata non garantisce che l'interruttore venga visualizzato immediatamente, ma lo si otterrà prima di quelli in versione standard. 
   
+::: moniker-end
 
-   
+::: moniker range="o365-21vianet"
+
+### <a name="switch-to-the-new-admin-center-and-back-again"></a>Passare alla nuova interfaccia di amministrazione e viceversa
+
+Mentre il nuovo interfaccia di amministrazione è in anteprima, è possibile passare tra il nuovo interfaccia di amministrazione e l'interfaccia di amministrazione precedente utilizzando l'interruttore posizionato nella parte superiore della Home page dell'interfaccia di amministrazione. Il nuovo interfaccia di amministrazione è completamente funzionante e dispone di tutte le funzionalità dell'interfaccia di amministrazione precedente.
+
+Per provare la nuova interfaccia di amministrazione, attiva l'interruttore per <b>provare l'anteprima</b>. L'interruttore mostrerà quindi l' <b>Anteprima</b>. La volta successiva che si accede all'interfaccia di amministrazione, si ricorderà la selezione e si accede al nuovo interfaccia di amministrazione.
+
+Per tornare a utilizzare l'interfaccia di amministrazione precedente, attivare la posizione di disattivazione dall' <b>Anteprima</b> . La volta successiva che si accede all'interfaccia di amministrazione, è possibile accedere all'interfaccia di amministrazione precedente.
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-Non vengono visualizzate le risposte alle domande qui? Vai a **queste informazioni sono state utili?** in fondo a questa pagina e fai una domanda. 
+Non vengono visualizzate le risposte alle domande qui? Andare alla sezione **commenti e suggerimenti** nella parte inferiore della pagina. 
   
 ## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>È possibile eseguire qualsiasi operazione nel nuovo interfaccia di amministrazione che è possibile eseguire nell'interfaccia di amministrazione precedente?
 
@@ -75,18 +105,18 @@ Sì. Il nuovo interfaccia di amministrazione è completamente funzionante e disp
 
 Microsoft 365 è una soluzione completa e intelligente che include Office 365, Windows 10 ed Enterprise Mobility + Security, che consente a tutti di essere creativi e di collaborare in modo sicuro. Gli abbonamenti di Microsoft 365 seguenti sono disponibili nell'interfaccia di amministrazione per provare o acquistare subito:
   
-- Microsoft 365 for business
+- Microsoft 365 per le aziende
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     
 Per ulteriori informazioni, vedere [provare o acquistare un abbonamento a Microsoft 365](../commerce/try-or-buy-microsoft-365.md).
-  
+
 ## <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>Ho trovato un bug o si desidera richiedere un miglioramento delle funzionalità. Come si fa a comunicare a Microsoft?
 
 Ci piace sentire da voi! La segnalazione di bug e la condivisione dei commenti ci aiuta a rendere migliore l'interfaccia di amministrazione di Microsoft 365. Per inviare commenti e suggerimenti, seleziona il pulsante **commenti e suggerimenti** nella parte inferiore della pagina e utilizza il modulo per inviarci i tuoi pensieri. Selezionare la casella di controllo e confermare l'indirizzo di posta elettronica se si desidera che un utente del team dell'interfaccia di amministrazione di Microsoft 365 segua i propri commenti. Non è possibile promettere di eseguire il follow-up su tutti i commenti e suggerimenti, ma ci proveremo. 
   
 È anche possibile fornire commenti e suggerimenti all'esterno dell'interfaccia di amministrazione del nostro forum di UserVoice. È possibile utilizzare questa pagina per creare suggerimenti di funzionalità che possono essere votati da altri utenti del forum: [UserVoice forum per il nuovo](https://go.microsoft.com/fwlink/?linkid=2024994)interfaccia di amministrazione.
-  
+
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Quali sono i tipi specifici di ruoli IT e altre aree di lavoro, ad esempio la sicurezza, la gestione dei dispositivi o Exchange?
 
 L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti i team e i ruoli che gestiscono Microsoft 365. L'esperienza, le informazioni e i controlli sono personalizzati e personalizzabili per ogni amministratore e ruolo. Inoltre, le aree di lavoro specialistiche consentono un controllo granulare approfondito. Queste aree di lavoro specialistiche includono SharePoint, &amp; teams Skype, Exchange, sicurezza, conformità, gestione dei dispositivi e Azure Active Directory. Le aree di lavoro specialistiche sono reperibili nel riquadro di spostamento dell'interfaccia di amministrazione di Microsoft [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)365 all'indirizzo.
@@ -100,5 +130,5 @@ L'aggiornamento di tutti i centri di amministrazione per un'esperienza coerente 
 - [Panoramica della gestione dei dispositivi Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2006262)
     
 - [Introduzione al centro sicurezza e conformità di Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2025413)
-    
 
+::: moniker-end

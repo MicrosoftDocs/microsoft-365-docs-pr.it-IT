@@ -12,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, PMI, FAQ, domande frequenti, risposte, business
 ms.date: 06/08/2018
-ms.openlocfilehash: e456719d393dc911a6f28455e530c90e8ab9ff5a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 2ace43e0a3bab466d102740434b2a126fb8e099d
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635085"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900691"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Domande frequenti su Microsoft 365 Business Premium
 
@@ -48,7 +48,7 @@ Microsoft 365 è una soluzione integrata che riunisce gli strumenti di produttiv
 * Distribuzione facilitata di PC con Windows AutoPilot.
 
 **Altri diritti** 
-- I clienti di Microsoft 365 Business Premium hanno accesso anche a Desktop virtuale Windows e alle funzionalità di attivazione di computer condivisi per Office. Per altre informazioni, leggere il [blog di Microsoft 365 Business Premium](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog). Vedere anche la [Descrizione del servizio Microsoft 365 Business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
+- I clienti di Microsoft 365 Business Premium hanno accesso anche a Desktop virtuale Windows e alle funzionalità di attivazione di computer condivisi per Office. Per altre informazioni, leggere il [blog di Microsoft 365 Business Premium](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog). Vedere anche la [Descrizione del servizio Microsoft 365 for business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
 ### <a name="who-should-consider-adopting-microsoft-365-business-premium"></a>Chi dovrebbe prendere in considerazione l'adozione di Microsoft 365 Business Premium? 
 Microsoft 365 Business Premium è una soluzione di sicurezza completa, basata sul cloud, che consente di:  
@@ -85,7 +85,7 @@ Si prevede anche una forte compatibilità in Windows 10 con le applicazioni desk
 ### <a name="what-is-windows-10-business"></a>Che cos'è Windows 10 Business? 
 Windows 10 Business è un set di servizi cloud e di funzionalità di gestione dei dispositivi che integrano Windows 10 Pro e abilitano la gestione centralizzata e i controlli di sicurezza di Microsoft 365 Business Premium.
 
-Windows 10 Business include anche alcune funzionalità premium di Microsoft Defender, come l'accesso controllato alle cartelle e la protezione di rete per i thread basati sul Web. Include anche Windows AutoPilot, un servizio che semplifica la distribuzione di nuovi PC Windows 10.
+Windows 10 business è dotato anche di alcune caratteristiche Premium di Microsoft Defender, come l'accesso alle cartelle controllate e la protezione della rete per le minacce basate sul Web. Include anche Windows AutoPilot, un servizio che semplifica la distribuzione di nuovi PC Windows 10.
 
 Se si hanno dispositivi con licenza per Windows 7, 8 e 8.1 Professional, Microsoft 365 Business Premium fornisce un aggiornamento a Windows 10 Pro che è il prerequisito per la distribuzione di Windows 10 Business.
 > [!IMPORTANT]

@@ -21,14 +21,21 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle caratteristiche che sono state aggiunte in questo mese.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+ms.openlocfilehash: 0b6d0741b5c59b1d720ca1ef73c0d45a674569b1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805183"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907238"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Alcune delle informazioni contenute in questo articolo potrebbero non essere valide per Office 365 gestito da 21Vianet.
+
+::: moniker-end
 
 Si aggiungono continuamente nuove funzionalità all'interfaccia di [amministrazione di Microsoft 365](microsoft-365-admin-center-preview.md), risolvendo i problemi che vengono apportati e modificando in base ai commenti e suggerimenti. Per sapere cosa è disponibile per l'utente, vedere di seguito. Alcune funzionalità vengono distribuite a velocità diverse per i clienti. Se non si vede ancora una funzionalità, [provare ad aggiungersi alla versione mirata](manage/release-options-in-office-365.md).
 
@@ -282,7 +289,7 @@ Si è verificato un aggiornamento a un'altra delle procedure guidate per l'insta
 Sono stati apportati alcuni aggiornamenti per la fatturazione e gli abbonamenti di questo mese:
 
 - Abbonamenti basati su dispositivo: è possibile assegnare o annullare **l'assegnazione delle licenze di Office 365 ProPlus for Education (Device)** ai dispositivi nell'interfaccia di amministrazione di Microsoft 365. **Office 365 ProPlus for Education (Device)** è una licenza per i componenti aggiuntivi che consente di assegnare una licenza a un dispositivo. Accedere a prodotti di **fatturazione** > **& Servizi** per trovare e acquistare la licenza.
-- Gestione delle licenze basata sull'utente: è stato aggiornato il **modo in** > cui si assegnano le licenze agli utenti**attivi** per il nuovo stile. Per altre informazioni, vedere:
+- Gestione delle licenze basata sull'utente: è stato aggiornato il **modo in** > cui si assegnano le licenze agli utenti**attivi** per il nuovo stile. Per ulteriori informazioni, vedere:
   - [Assegnare licenze agli utenti](manage/assign-licenses-to-users.md)
   - [Annullare l'assegnazione delle licenze agli utenti](manage/remove-licenses-from-users.md)
 
