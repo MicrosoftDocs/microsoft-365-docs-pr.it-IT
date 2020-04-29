@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Informazioni su tutti i modi in cui è possibile ottenere assistenza tramite l'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: f9d42057e1ad16108237b9f53eedf60736cd6bd5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 847281acc368f45ffaf466cc3877c042507a7f79
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894746"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930196"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -94,6 +94,7 @@ Se sei un amministratore, [admin.Microsoft.com](https://admin.microsoft.com) è 
     </li>
 </ul>
  
+
 ## <a name="integrated-help"></a>Guida integrata
 
 La guida è integrata in tutto l'interfaccia di amministrazione, quindi è proprio lì quando ne hai bisogno. Nella parte superiore di molte pagine, è possibile trovare il testo della Guida in linea che fornisce una panoramica delle informazioni sull'attività a portata di mano, oltre a collegamenti ad articoli che consentono di trovare rapidamente documentazione ufficiale per un apprendimento più approfondito.
@@ -102,9 +103,9 @@ La guida è integrata in tutto l'interfaccia di amministrazione, quindi è propr
 
 ## <a name="modern-self-help-powered-by-ai"></a>Moderni self-help Powered by AI
 
-Selezionando il pulsante "serve aiuto" nell'interfaccia di amministrazione di Microsoft 365, viene aperta la nostra moderna esperienza di self-help Powered by Artificial Intelligence. Ad esempio, se si cerca *verifica il mio dominio*, si otterranno i passaggi più alcuni articoli che si ritiene siano utili. L'apprendimento automatico viene utilizzato per la superficie della soluzione più vicina che è stata trovata come aiuto ad altri amministratori che hanno immesso query simili.
+Per aprire la nostra moderna esperienza di self-help che è alimentata dall'intelligenza artificiale, seleziona il pulsante **serve aiuto** nell'interfaccia di amministrazione di Microsoft 365. Ad esempio, se si cerca "verifica il mio dominio", verranno riportate le operazioni più alcuni articoli che riteniamo utili. L'apprendimento automatico viene utilizzato per visualizzare la soluzione più vicina che ha aiutato altri amministratori che hanno immesso query simili.
 
-In alternativa, se non si conosce bene come fare qualcosa nella propria situazione specifica, utilizzare l'Assistente di supporto. Questa esperienza è attualmente disponibile solo in inglese. È sufficiente utilizzare l'interruttore nella parte superiore del riquadro "serve aiuto" per attivarlo. L'assistente del supporto tecnico fornisce un'interfaccia di conversazione per ottenere assistenza. Immettere la query e il chatbot chiederà chiarimenti per ottenere la risposta corretta per la propria situazione specifica. È possibile considerarlo come helper virtuale per individuare soluzioni e completare le attività.
+In alternativa, se non si conosce bene come fare qualcosa nella propria situazione specifica, utilizzare l'Assistente di supporto. Attualmente, questa esperienza è disponibile solo in inglese. Per attivare assistente supporto tecnico, è sufficiente utilizzare l'interruttore nella parte superiore del riquadro della **Guida necessario** . L'assistente del supporto tecnico fornisce un'interfaccia di conversazione per aiutarti. Dopo aver immesso la query, il chatbot chiede chiarimenti per ottenere la risposta corretta per la situazione specifica. È possibile considerarlo come helper virtuale per individuare soluzioni e completare le attività.
 
 ![Auto-assistenza moderna](../../media/help-options.png)
 
