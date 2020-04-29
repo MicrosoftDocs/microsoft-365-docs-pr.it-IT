@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 8b6cf223eb9a7a806691a282944e77040de3f586
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790633"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799979"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -141,7 +141,7 @@ Per ulteriori informazioni su questi classificatori, vedere [Introduzione ai cla
 
 Durante il periodo di anteprima, le app seguenti supportano i classificatori per le etichette di riservatezza:
 
-- App desktop per Windows di Microsoft365 Apps for enterprise, da [Office Insider](https://office.com/insider):
+- Applicazioni desktop per Windows di Microsoft 365 Apps for enterprise, da [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
@@ -192,7 +192,7 @@ Caratteristiche specifiche del client di etichettatura unificata di Azure Inform
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Prerequisiti per i criteri di applicazione automatica di etichette
 
-- Per la modalità di simulazione, è necessario attivare il controllo per Microsoft 365. Se è necessario attivare il controllo o per verificare se è già attivato, vedere [Abilitare o disabilitare la ricerca nei log di controllo](turn-audit-log-search-on-or-off.md).
+- Per la modalità di simulazione, è necessario abilitare il controllo per Microsoft 365. Per abilitare il controllo o verificare se è già attivato, vedere [Abilitare o disabilitare la ricerca nel log di audit](turn-audit-log-search-on-or-off.md).
 
 - Per assegnare un'etichetta automatica ai file in SharePoint e OneDrive:
     - Sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -205,7 +205,7 @@ Caratteristiche specifiche del client di etichettatura unificata di Azure Inform
 - Una o più etichette di riservatezza [create e pubblicate](create-sensitivity-labels.md) (per almeno un utente) che è possibile selezionare per i criteri di applicazione automatica di etichette. Per queste etichette:
     - Non è rilevante se l'opzione di etichettatura automatica nelle app di Office sia attivata o disattivata perché, come spiegato nell'introduzione, quella impostazione delle etichette integra i criteri di applicazione automatica di etichette. 
     - Se le etichette che si vogliono usare per l'applicazione automatica di etichette sono configurate per l'uso di contrassegni visivi (intestazioni, piè di pagina e filigrane), tenere presente che non questi non vengono applicati ai documenti.
-    - Se le etichette applicano la crittografia, devono essere configurate per **Assegnare le autorizzazioni ora**.
+    - Se le etichette applicano la crittografia, devono essere configurate per l'impostazione **Assegnare le autorizzazioni ora**.
 
 ### <a name="learn-about-simulation-mode"></a>Informazioni sulla modalità di simulazione
 
@@ -241,7 +241,7 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     
     ![Scheda Etichettatura automatica (anteprima)](../media/auto-labeling-tab.png)
     
-    Questa nuova scheda è ancora in fase di distribuzione nei tenant. Se viene visualizzata, riprovare tra qualche giorno.
+    Questa nuova scheda è ancora in fase di distribuzione nei tenant. Se non è possibile visualizzarla, riprovare tra qualche giorno.
 
 3. Selezionare **+ Crea criterio**.
 
@@ -263,7 +263,6 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     - Il destinatario è
     - L'estensione del file allegato è
     - L'allegato è protetto da password
-    - La proprietà del documento è
     - Non è stato possibile analizzare il contenuto degli allegati di posta elettronica
     - L'analisi del contenuto degli allegati di posta elettronica non è stata completata
 
@@ -277,17 +276,23 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
 
 11. Per la pagina **Scegliere un'etichetta da applicare automaticamente**: selezionare **+ Scegli un'etichetta**, selezionare un'etichetta nel riquadro **Choose a sensitivity label**, quindi scegliere **Avanti**.
 
-12. Per la pagina **Scegliere una modalità per il criterio**: selezionare **Eseguire il test** se si vuole eseguire subito il criterio di applicazione automatica di etichette, in modalità di simulazione. Altrimenti, selezionare **Mantenerla disabilitata**. Selezionare **Avanti**. 
+12. Per la pagina **Decidere se si vuole eseguire la simulazione dei criteri ora o in un secondo momento**: selezionare **Esegui criteri in modalità di simulazione** se si è pronti per eseguire il criterio di applicazione automatica di etichette in modalità di simulazione. In caso contrario, selezionare **Mantieni il criterio disabilitato**. Selezionare **Avanti**. 
 
 13. Per la pagina **Riepilogo**: esaminare la configurazione del criterio di applicazione automatica di etichette e apportare le modifiche necessarie, quindi completare la procedura guidata.
     
     Diversamente dall'applicazione automatica di etichette per le app di Office, non è disponibile un'opzione di pubblicazione separata. Come per le pubblicazione di etichette, tuttavia, la replica del criterio di applicazione automatica di etichette all'interno dell'organizzazione può richiedere fino a 24 ore.
 
-A questo punto, nella scheda **Etichettatura automatica (anteprima)** della pagina **Protezione delle informazioni**, il criterio di applicazione automatica di etichette è visualizzato nella sezione **Test in corso**. Selezionare il criterio per visualizzare i dettagli della configurazione e dello stato, ad esempio ancora in fase di test o test completamento. Selezionare la scheda **Elementi corrispondenti** per vedere quali messaggi di posta elettronica o documenti corrispondono alle regole specificate.
+Andando alla pagina **Protezione delle informazioni**, nella scheda **Applicazione automatica di etichette (anteprima)**, ora è possibile visualizzare i criteri di applicazione automatica di etichette nella sezione **Simulazione** o **Disattivato**, a seconda che si sia scelto di eseguirlo in modalità di simulazione o meno. Selezionare il criterio per visualizzare i dettagli della configurazione e dello stato, ad esempio **Simulazione del criterio ancora in corso**. Per i criteri in modalità di simulazione, selezionare la scheda **Elementi corrispondenti** per vedere quali e-mail o documenti corrispondono alle regole specificate.
 
-È possibile modificare direttamente il criterio da questa interfaccia selezionando l'opzione **Modifica** nella parte superiore della pagina.
+È possibile modificare i criteri direttamente dall'interfaccia:
 
-Quando si è pronti per eseguire il criterio senza simulazione, selezionare l'opzione **Abilita**.
+- Per un criterio nella sezione **Disattivato**, selezionare il pulsante **Modifica criterio**.
+
+- Per i criteri nella sezione **Simulazione**, selezionare l'opzione **Modifica** nella parte superiore della pagina, da entrambe le schede:
+    
+    ![Modificare l'opzione del criterio di applicazione automatica di etichette](../media/auto-labeling-edit.png)
+    
+    Quando si è pronti per eseguire il criterio senza simulazione, selezionare l'opzione **Abilita criterio**.
 
 Per visualizzare i risultati del criterio di applicazione automatica di etichette è possibile anche usare [Esplora contenuto](data-classification-content-explorer.md) quando si hanno le [autorizzazioni](data-classification-content-explorer.md#permissions) appropriate:
 - **Visualizzatore elenco di Esplora contenuto** consente di vedere l'etichetta di un file ma non il contenuto del file.
