@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come è possibile reimpostare le password utilizzando lo strumento di reimpostazione della password self-service.
-ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617147"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919436"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
@@ -65,12 +65,12 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>passare alla pagina **Impostazioni** \> **privacy sicurezza &amp; ** .
+1. Nell'interfaccia <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">di amministrazione</a>passare alla **pagina impostazioni di** \> **sicurezza &amp; ** **per la** \>privacy delle impostazioni.
 
 ::: moniker-end
 
    
-2. In **Consenti alle persone di reimpostare**le proprie password, selezionare il collegamento per l'interfaccia di **amministrazione di Azure ad**. Azure verrà scaricato gratuitamente.
+2. Selezionare **reimpostazione della password in modalità self-service**, selezionare il collegamento per il **portale di go to the Azure per abilitare la reimpostazione della password in modalità self-service**. Azure verrà scaricato gratuitamente.
   
 3. Selezionare **gli utenti** nella barra di spostamento sinistra, quindi selezionare **Reimposta password**.
   

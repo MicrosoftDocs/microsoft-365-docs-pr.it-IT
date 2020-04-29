@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Per ulteriori informazioni sui domini, è possibile trovare le risposte alle domande più frequenti.
 ms.custom: okr_smb
-ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627595"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919482"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
@@ -492,7 +492,7 @@ Vuoi saperne di più su come diventare l'amministratore per la tua scuola? Infor
         
     4. Provare la posta elettronica a un utente che si trova nell'altro sistema di posta elettronica. Ad esempio, inviare un messaggio di posta elettronica all'utente C. Questo messaggio di posta elettronica deve essere recapitato alla cassetta postale dell'utente C sul server di posta originale.
         
-    5. Da un account esterno o da un account di posta elettronica di un dipendente nell'altro sistema di posta elettronica, verificare che l'inoltro sia configurato correttamente nell'altro sistema di posta elettronica. Ad esempio, dall'account del server origninal dell'utente o da un account Hotmail, inviare un messaggio di posta elettronica A un utente e verificare che arrivi nella cassetta postale dell'utente A Office 365.
+    5. Da un account esterno o da un account di posta elettronica di un dipendente nell'altro sistema di posta elettronica, verificare che l'inoltro sia configurato correttamente nell'altro sistema di posta elettronica. Ad esempio, dall'account del server originale o da un account Hotmail dell'utente C, inviare un messaggio di posta elettronica A un utente e verificare che arrivi nella cassetta postale di Office 365 dell'utente.
         
 9. Spostamento del contenuto della cassetta postale
     

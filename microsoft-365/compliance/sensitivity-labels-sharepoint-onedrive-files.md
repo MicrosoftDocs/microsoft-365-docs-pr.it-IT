@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 3127b4ac7b661cd5143052d298424e24d26071a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09b955a3cf5b987d2ca7dac37c4c604fb45a2e56
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635784"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930146"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)
 
@@ -104,7 +104,7 @@ Per questa anteprima, utilizzare la versione di OneDrive Sync App 19.002.0121.00
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>Preparare la shell di gestione di SharePoint Online per l'anteprima
 
-Prima di abilitare l'anteprima, verificare che sia in esecuzione SharePoint Online Management Shell versione 16.0.19418.12000 o versioni successive. Se si ha già la versione più recente, è possibile procedere e abilitare l'anteprima.
+Per abilitare l'anteprima tramite PowerShell, verificare che sia in esecuzione SharePoint Online Management Shell versione 16.0.19418.12000 o versioni successive. Se si ha già la versione più recente, è possibile procedere e abilitare l'anteprima.
 
 1. Se è stata installata una versione precedente di SharePoint Online Management Shell da PowerShell Gallery, è possibile aggiornare il modulo eseguendo il cmdlet seguente.
 
@@ -119,7 +119,6 @@ Prima di abilitare l'anteprima, verificare che sia in esecuzione SharePoint Onli
 4. Selezionare la lingua e fare clic su **Scarica**.
 
 5. Scegliere tra il file MSI x64 o x86. Scaricare il file x64 se si esegue la versione di Windows a 64 bit o il file x86 se si esegue la versione a 32 bit. Se non si conosce, vedere [la versione del sistema operativo Windows in esecuzione?](https://support.microsoft.com/help/13443/windows-which-operating-system)
-
 
 6. Dopo aver scaricato il file, eseguire il file e seguire i passaggi illustrati nell'installazione guidata.
 
@@ -137,6 +136,25 @@ Per abilitare l'anteprima, utilizzare il cmdlet Set-SPOTenant:
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
 3. Per Office 365 multi-geo: ripetere i passaggi 1 e 2 per ogni posizione geografica rimanente.
+
+## <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>Utilizzare il centro conformità per abilitare il supporto per le etichette di riservatezza
+
+Questa opzione è in fase di implementazione dei tenant come metodo alternativo per abilitare l'anteprima.
+
+L'amministratore globale dell'organizzazione dispone delle autorizzazioni complete per creare e gestire tutti gli aspetti delle etichette di riservatezza. Se non si esegue l'accesso come amministratore globale, vedere le [autorizzazioni necessarie per creare e gestire etichette di riservatezza](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
+
+1. Accedere al [centro conformità Microsoft 365](https://compliance.microsoft.com/)e passare a **soluzioni** > **Information Protection**
+    
+    Se questa opzione non è immediatamente visibile, selezionare prima **Mostra tutto**. 
+
+2. Nella scheda **etichette** , se viene visualizzato un messaggio per abilitare la funzionalità di elaborazione del contenuto nei file di Office Online, selezionare **attiva subito**:
+    
+    ![Pulsante Attiva ora per abilitare le etichette di riservatezza per Office Online](../media/sensitivity-labels-turn-on-banner.png)
+    
+    Il comando viene eseguito immediatamente e quando la pagina viene aggiornata successivamente, non viene più visualizzato il messaggio o il pulsante. 
+
+> [!NOTE]
+> Se si dispone di Office 365 multi-Geo, è necessario utilizzare PowerShell per abilitare queste funzionalità per tutte le geoposizioni geografiche. Per istruzioni, vedere le sezioni precedenti.
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Pianificare l'implementazione dopo la creazione o la modifica di un'etichetta di riservatezza
 

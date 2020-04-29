@@ -19,14 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: df24ee91482785c725acd5b531c6b138e5e165a7
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626970"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930173"
 ---
 # <a name="supervision-policies"></a>Criteri di supervisione
+
+>[!IMPORTANT]
+>Dopo il rilascio della conformità della comunicazione in Microsoft 365 Compliance nel febbraio 2020, la supervisione in Office 365 è in fase di ritirata. I criteri di supervisione non saranno più disponibili per la creazione e i criteri verranno rimossi, dopo un periodo di tempo prolungato di accesso in sola lettura.
+>
+>Se si utilizza la supervisione, tenere presente che:
+>
+>- All'inizio del 15 giugno 2020, i tenant non avranno la possibilità di creare nuovi criteri di supervisione.
+>- A partire dal 31 agosto 2020, i criteri esistenti impediscono l'acquisizione di nuovi messaggi.
+>- A partire dal 26 ottobre 2020, i criteri esistenti verranno eliminati.
+>
+>Incoraggiamo attivamente i clienti che stanno attualmente esplorando o utilizzando la supervisione in Office 365 per utilizzare la nuova soluzione di [conformità alla comunicazione](communication-compliance.md) per soddisfare i requisiti normativi o di monitoraggio delle comunicazioni con una serie di funzionalità intelligenti molto più ricche.
 
 I criteri di supervisione in Microsoft 365 consentono di acquisire le comunicazioni dei dipendenti per l'esame da revisori designati. È possibile definire criteri specifici che consentono di acquisire messaggi di posta elettronica interni ed esterni, Microsoft teams o comunicazioni di terze parti nell'organizzazione. I revisori possono quindi esaminare i messaggi per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione e risolverli con il tipo di classificazione.
 
@@ -39,10 +50,6 @@ Questi criteri possono anche aiutare a superare molte sfide di conformità moder
 In alcune organizzazioni può verificarsi una separazione dei compiti tra il supporto IT e il gruppo di gestione della conformità. Microsoft 365 supporta la separazione tra la configurazione delle funzionalità del criterio di supervisione e la configurazione dei criteri per le comunicazioni acquisite. Ad esempio, il gruppo IT di un'organizzazione potrebbe essere responsabile dell'impostazione delle autorizzazioni e dei gruppi di ruoli per supportare i criteri di supervisione configurati e gestiti dal team di conformità dell'organizzazione.
 
 Per una breve panoramica dei criteri di supervisione, vedere il [video sui criteri di supervisione](https://youtu.be/C3Y8WZ7o_dI) sul [canale Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
-
-Per ulteriori informazioni sui miglioramenti e la disponibilità delle funzionalità di supervisione imminenti, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
-
-Si desidera provare la nuova esperienza di conformità della comunicazione in Microsoft 365? Consultare le funzionalità nuove e migliorate disponibili in [Compliance Communication in Microsoft 365](communication-compliance.md).
 
 ## <a name="transitioning-from-supervision"></a>Transizione dalla vigilanza
 
@@ -60,7 +67,7 @@ I criteri di supervisione possono assistere il monitoraggio delle comunicazioni 
 
 - **Criteri aziendali**
 
-    I dipendenti devono essere conformi all'uso accettabile, agli standard etici e ad altri criteri aziendali in tutte le comunicazioni relative alle aziende. I criteri di supervisione sono in grado di rilevare violazioni dei criteri e di eseguire azioni correttive che consentono di attenuare questi tipi di incidenti. Ad esempio, è possibile monitorare la propria organizzazione per individuare potenziali violazioni delle risorse umane, quali molestie o utilizzo di linguaggio inappropriato o offensivo nelle comunicazioni dei dipendenti.
+    I dipendenti devono essere conformi all'uso accettabile, agli standard etici e ad altri criteri aziendali in tutte le comunicazioni relative alle aziende. I criteri di supervisione sono in grado di rilevare violazioni dei criteri e di eseguire azioni correttive che consentono di attenuare questi tipi di incidenti. Ad esempio, è possibile monitorare le potenziali violazioni delle risorse umane, quali molestie o l'utilizzo di linguaggio inappropriato o offensivo nelle comunicazioni dei dipendenti.
 
 - **Gestione dei rischi**
 
@@ -101,12 +108,12 @@ Con i criteri di supervisione, è possibile scegliere di monitorare i messaggi i
 
 - **Microsoft teams:** È possibile controllare le comunicazioni chat e gli allegati associati sia nei canali di Microsoft Public che in quelli privati e nelle chat individuali. Chat teams le condizioni dei criteri di supervisione vengono elaborate una volta ogni 24 ore e quindi sono disponibili per il monitoraggio e per i report di supervisione. Utilizzare le seguenti configurazioni di gestione dei gruppi per controllare le chat utente e le comunicazioni dei canali nei team:
 
-    - **Per la supervisione di teams chat:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di supervisione. Questo è per le relazioni utente/chat da 1 a 1 o 1-a-molti.
+    - **Per la supervisione di teams chat:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di supervisione. Questa configurazione è per le relazioni tra utenti/chat da 1 a 1 o da 1 a molti.
     - **Per le comunicazioni di canale dei team:** Assegnare a tutti i gruppi di Microsoft Team Channel o Microsoft 365 che si desidera monitorare che contengano un utente specifico per i criteri di supervisione. Se si aggiunge lo stesso utente ad altri canali Microsoft teams o gruppi Microsoft 365, accertarsi di aggiungere questi nuovi canali e gruppi ai criteri di supervisione.
 
 - **Skype for business online:** È possibile controllare le comunicazioni chat e gli allegati associati in Skype for business online. Le chat di Skype for business online che corrispondono alle condizioni dei criteri di supervisione vengono elaborate una volta ogni 24 ore e quindi sono disponibili per il monitoraggio e nei report di supervisione. Le conversazioni di chat sorvegliate vengono provenienti da [precedenti conversazioni salvate in Skype for business online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilizzare la configurazione di gestione dei gruppi seguente per supervisionare le comunicazioni della chat utente in Skype for business online:
 
-    - **Per la supervisione della chat in Skype for business online:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di supervisione. Questo è per le relazioni utente/chat da 1 a 1 o 1-a-molti.
+    - **Per la supervisione della chat in Skype for business online:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di supervisione. Questa configurazione è per le relazioni tra utenti/chat da 1 a 1 o da 1 a molti.
 
 - **Origini di terze parti:** È possibile controllare le comunicazioni provenienti da origini di terze parti (come da Facebook o DropBox) per i dati importati nelle cassette postali dell'organizzazione. [Informazioni su come importare i dati di](archiving-third-party-data.md)terze parti.
 
@@ -122,7 +129,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 - In **uscita**: è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone che si è scelto di controllare **per** gli utenti non inclusi nel criterio.
 - **Internal**: è possibile scegliere **Internal** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
 
-#### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
+#### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
 
 È possibile includere i tipi di informazioni riservate nell'ambito del criterio di supervisione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Come parte di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md), la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 
@@ -147,7 +154,7 @@ Monitorare i messaggi di posta elettronica inviati o ricevuti nell'organizzazion
 >- monitorare le comunicazioni di Microsoft teams nell'organizzazione per la lingua offensiva
 >- Impedisci o blocca la lingua offensiva nelle comunicazioni nell'organizzazione
 
-Tenere presente che il modello non fornisce un elenco esaustivo di lingua offensiva. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare il modello a sua discrezione. Anche se il modello può aiutare l'organizzazione a monitorare il linguaggio offensivo, il modello non è destinato a fornire il solo mezzo di monitoraggio o di indirizzamento di tale lingua da parte dell'organizzazione. La propria organizzazione, non Microsoft, resta responsabile di tutte le decisioni relative al monitoraggio e al blocco del linguaggio offensivo.
+Il modello non fornisce un elenco esaustivo di lingua offensiva. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare il modello a sua discrezione. Anche se il modello può aiutare l'organizzazione a monitorare il linguaggio offensivo, il modello non è destinato a fornire il solo mezzo di monitoraggio o di indirizzamento di tale lingua da parte dell'organizzazione. La propria organizzazione, non Microsoft, resta responsabile di tutte le decisioni relative al monitoraggio e al blocco del linguaggio offensivo.
 
 Il modello di lingua offensivo monitora la posta elettronica per i sentimenti associati ai tipi di lingua seguenti:
 
@@ -277,7 +284,7 @@ Di seguito viene indicata una scomposizione dei valori visualizzati nella colonn
 
 ## <a name="audit"></a>Audit
 
-In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Può trattarsi di un riepilogo di tutte le attività di supervisione associate a un criterio definito o in qualsiasi momento in cui vengono modificati i criteri di supervisione. I criteri di supervisione sono basati su percorsi di controllo integrati per una completa preparazione per i controlli interni o esterni. La cronologia di controllo dettagliata di tutte le azioni monitorate dai criteri di supervisione fornisce la prova delle procedure di supervisione.
+In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Tali informazioni possono essere un riepilogo di tutte le attività di supervisione associate a un criterio definito o in qualsiasi momento in cui vengono modificati i criteri di supervisione. I criteri di supervisione sono basati su percorsi di controllo integrati per una completa preparazione per i controlli interni o esterni. La cronologia di controllo dettagliata di tutte le azioni monitorate dai criteri di supervisione fornisce la prova delle procedure di supervisione.
 
 Le attività dei criteri di supervisione seguenti sono controllate e disponibili nei registri di controllo unificato:
 

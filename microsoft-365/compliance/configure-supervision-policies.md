@@ -19,17 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c13e481cfc55e56d8cc1c0a772f2f661992f5353
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632371"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921458"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurare i criteri di supervisione in Office 365
 
 >[!IMPORTANT]
->Questo argomento si applica alla configurazione di criteri di supervisione in una sottoscrizione di Microsoft 365. Se si desidera configurare la conformità delle comunicazioni per una sottoscrizione di Microsoft 365, vedere [Configure Communications compliance in microsoft 365](communication-compliance-configure.md).
+>Dopo il rilascio della conformità della comunicazione in Microsoft 365 Compliance nel febbraio 2020, la supervisione in Office 365 è in fase di ritirata. I criteri di supervisione non saranno più disponibili per la creazione e i criteri verranno rimossi, dopo un periodo di tempo prolungato di accesso in sola lettura.
+>
+>Se si utilizza la supervisione, tenere presente che:
+>
+>- All'inizio del 15 giugno 2020, i tenant non avranno la possibilità di creare nuovi criteri di supervisione.
+>- A partire dal 31 agosto 2020, i criteri esistenti impediscono l'acquisizione di nuovi messaggi.
+>- A partire dal 26 ottobre 2020, i criteri esistenti verranno eliminati.
+>
+>Incoraggiamo attivamente i clienti che stanno attualmente esplorando o utilizzando la supervisione in Office 365 per utilizzare la nuova soluzione di [conformità alla comunicazione](communication-compliance.md) per soddisfare i requisiti normativi o di monitoraggio delle comunicazioni con una serie di funzionalità intelligenti molto più ricche.
 
 Utilizzare i criteri di supervisione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di supervisione consentono di monitorare le comunicazioni nell'organizzazione, vedere [criteri di supervisione in Office 365](supervision-policies.md).
 
@@ -67,7 +75,7 @@ Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'
 
 | **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
 |:-----|:-----|:-----|
-|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Microsoft 365 gruppi | Gruppi di distribuzione dinamici |
+|Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Microsoft 365 | Gruppi di distribuzione dinamici |
 | Revisori | Gruppi di sicurezza abilitati alla posta elettronica  | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici |
   
 Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.

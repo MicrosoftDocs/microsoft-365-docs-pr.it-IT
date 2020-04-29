@@ -1,6 +1,6 @@
 ---
-title: Case Study-Contoso configura rapidamente un criterio di lingua offensivo per Microsoft teams e le comunicazioni di Exchange
-description: Un case study per Contoso e la modalità di configurazione rapida di un criterio di conformità della comunicazione da monitorare per la lingua offensiva in Microsoft teams ed Exchange Online Communications
+title: Case Study-Contoso configura rapidamente un criterio di lingua offensivo per le comunicazioni di Microsoft teams, Exchange e Yammer
+description: Un case study per Contoso e la modalità di configurazione rapida di un criterio di conformità della comunicazione da monitorare per la lingua offensiva in Microsoft teams, Exchange Online e Yammer Communications.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39815140d223d95275e03b0e85b931699bd69f7e
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637178"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919713"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Case Study-Contoso configura rapidamente un criterio di lingua offensivo per Microsoft teams e le comunicazioni di Exchange
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Case Study-Contoso configura rapidamente un criterio di lingua offensivo per le comunicazioni di Microsoft teams, Exchange e Yammer
 
-La conformità alla comunicazione in Microsoft 365 consente di ridurre al minimo i rischi di comunicazione contribuendo a rilevare, acquisire e intraprendere azioni correttive per i messaggi inopportuni nell'organizzazione. I criteri predefiniti e personalizzati consentono di analizzare le comunicazioni interne ed esterne per le corrispondenze dei criteri in modo che possano essere esaminate da revisori designati. I revisori possono esaminare la posta elettronica digitalizzata, Microsoft teams o le comunicazioni di terze parti nell'organizzazione e intraprendere le azioni correttive appropriate per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione.
+La conformità alla comunicazione in Microsoft 365 consente di ridurre al minimo i rischi di comunicazione contribuendo a rilevare, acquisire e intraprendere azioni correttive per i messaggi inopportuni nell'organizzazione. I criteri predefiniti e personalizzati consentono di analizzare le comunicazioni interne ed esterne per le corrispondenze dei criteri in modo che possano essere esaminate da revisori designati. I revisori possono esaminare la posta elettronica digitalizzata, Microsoft teams, Yammer o le comunicazioni di terze parti nell'organizzazione e intraprendere le azioni correttive appropriate per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione.
 
-Contoso Corporation è un'organizzazione fittizia che deve configurare rapidamente un criterio da monitorare per il linguaggio offensivo. Sono stati utilizzati Microsoft 365 principalmente per il supporto di posta elettronica e Microsoft teams per i dipendenti, ma hanno nuovi requisiti per applicare la politica aziendale in merito alle molestie sul posto di lavoro. Gli amministratori IT di Contoso e gli specialisti della conformità hanno una conoscenza di base dei concetti fondamentali relativi all'utilizzo di Microsoft 365 e sono alla ricerca di linee guida end-to-end su come iniziare rapidamente a utilizzare la conformità alla comunicazione.
+Contoso Corporation è un'organizzazione fittizia che deve configurare rapidamente un criterio da monitorare per il linguaggio offensivo. Sono stati utilizzati Microsoft 365 principalmente per la posta elettronica, Microsoft teams e il supporto di Yammer per i dipendenti, ma hanno nuovi requisiti per applicare la politica aziendale in merito alle molestie sul posto di lavoro. Gli amministratori IT di Contoso e gli specialisti della conformità hanno una conoscenza di base dei concetti fondamentali relativi all'utilizzo di Microsoft 365 e sono alla ricerca di linee guida end-to-end su come iniziare rapidamente a utilizzare la conformità alla comunicazione.
 
 Questo caso di studio riguarderà le nozioni di base per la configurazione rapida di un criterio di conformità comunicazione per monitorare le comunicazioni per il linguaggio offensivo. In questa guida sono incluse le seguenti:
 
@@ -41,7 +41,7 @@ Questo caso di studio riguarderà le nozioni di base per la configurazione rapid
 
 ## <a name="step-1---planning-for-communication-compliance"></a>Passaggio 1-pianificazione della conformità della comunicazione
 
-Gli amministratori IT di Contoso e gli specialisti della conformità hanno partecipato a webinar online sulle soluzioni di conformità in Microsoft 365 e hanno deciso che i criteri di conformità della comunicazione consentiranno di soddisfare i requisiti dei criteri aziendali aggiornati per la riduzione delle molestie sul posto Lavorando insieme, hanno sviluppato un piano per creare e abilitare un criterio di conformità della comunicazione che monitorerà la lingua offensiva per le chat inviate in Microsoft Teams nei messaggi di posta elettronica inviati in Exchange Online. Il piano include l'identificazione:
+Gli amministratori IT di Contoso e gli specialisti della conformità hanno partecipato a webinar online sulle soluzioni di conformità in Microsoft 365 e hanno deciso che i criteri di conformità della comunicazione consentiranno di soddisfare i requisiti dei criteri aziendali aggiornati per la riduzione delle molestie sul posto Lavorando insieme, sono stati sviluppati un piano per la creazione e l'abilitazione di un criterio di conformità di comunicazione che monitorerà la lingua offensiva per le chat inviate in Microsoft teams, i messaggi privati e le conversazioni della community in Yammer e nei messaggi di posta elettronica inviati in Exchange Online. Il piano include l'identificazione:
 
 - Gli amministratori IT che devono accedere alle funzionalità di conformità della comunicazione.
 - Gli specialisti della conformità che devono creare e gestire i criteri di comunicazione.
@@ -146,6 +146,12 @@ Per iniziare a utilizzare un criterio di conformità della comunicazione, sono d
 La conformità alla comunicazione richiede i registri di controllo per visualizzare gli avvisi e tenere presenti le azioni di correzione eseguite dai revisori. I registri di controllo sono un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento si verifica una modifica a un criterio di conformità della comunicazione.
 
 Gli amministratori IT di Contoso esaminano e completano le [istruzioni dettagliate](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) per l'attivazione del controllo. Dopo aver attivato il controllo, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. Gli amministratori IT di Contoso devono eseguire questa azione solo una volta.
+
+### <a name="configuring-yammer-tenant-for-native-mode"></a>Configurazione del tenant di Yammer per la modalità nativa
+
+La conformità alla comunicazione richiede che il tenant di Yammer per un'organizzazione sia in modalità nativa per monitorare la lingua offensiva nei messaggi privati e nelle conversazioni di community pubbliche.
+
+Gli amministratori IT di Contoso assicurano che vengano esaminate le informazioni contenute in [Overview of Yammer native mode in microsoft 365 topic](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) e seguire i passaggi per l'esecuzione dello strumento di migrazione nell'argomento [Configure your Yammer Network for native mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configurazione di un gruppo per gli utenti in ambito
 
