@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Microsoft 365, gruppi di Yammer e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632361"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900740"
 ---
 # <a name="content-search"></a>Ricerca contenuto
 
@@ -138,13 +138,13 @@ Per visualizzare le statistiche della ricerca:
     
 3. Nell'elenco a discesa **Singoli risultati** fare clic su **Statistiche ricerca**.
     
-4. Nell'elenco a discesa **Tipo** fare clic su una delle opzioni seguenti in base alle statistiche di ricerca che si vogliono visualizzare. 
+4. Nell'elenco a discesa **Tipo** fare clic su una delle opzioni seguenti in base alle statistiche di ricerca che si vogliono visualizzare:
     
-  - **Riepilogo**: visualizza le statistiche per ogni tipo di percorso di contenuto cercato. Include il numero di percorsi di contenuto che contengono elementi che corrispondono alla query di ricerca e il numero totale e le dimensioni degli elementi dei risultati della ricerca. Questa è l'impostazione predefinita.
-    
-  - **Query**: questa pagina visualizza le statistiche sulla query di ricerca. Include il tipo di percorso di contenuto a cui si applicano le statistiche di query, la parte della query di ricerca a cui si applicano le statistiche (tenere presente che **Principale** indica l'intera query di ricerca), il numero dei percorsi di contenuto che contengono elementi che corrispondono alla query di ricerca e il numero totale e le dimensioni e gli elementi trovati (nel percorso di contenuto specificato) che corrispondono alla query di ricerca. Vengono visualizzate anche le statistiche relative agli elementi non indicizzati, detti anche *elementi parzialmente indicizzati*. Tuttavia, nelle statistiche sono inclusi solo gli elementi parzialmente indicizzati provenienti dalle cassette postali. Gli elementi parzialmente indicizzati di SharePoint e OneDrive non vengono inclusi nelle statistiche.
-    
-  - **Percorsi principali**: questa pagina visualizza le statistiche relative al numero di elementi corrispondenti alla query di ricerca presenti in ogni percorso di contenuto. Vengono visualizzati i primi 1.000 percorsi.
+    - **Riepilogo**: visualizza le statistiche per ogni tipo di percorso di contenuto cercato. Include il numero di percorsi di contenuto che contengono elementi che corrispondono alla query di ricerca e il numero totale e le dimensioni degli elementi dei risultati della ricerca. Questa è l'impostazione predefinita.
+
+    - **Query**: questa pagina visualizza le statistiche sulla query di ricerca. Include il tipo di percorso di contenuto a cui si applicano le statistiche di query, la parte della query di ricerca a cui si applicano le statistiche (tenere presente che **Principale** indica l'intera query di ricerca), il numero dei percorsi di contenuto che contengono elementi che corrispondono alla query di ricerca e il numero totale e le dimensioni e gli elementi trovati (nel percorso di contenuto specificato) che corrispondono alla query di ricerca. Vengono visualizzate anche le statistiche relative agli elementi non indicizzati, detti anche *elementi parzialmente indicizzati*. Tuttavia, nelle statistiche sono inclusi solo gli elementi parzialmente indicizzati provenienti dalle cassette postali. Gli elementi parzialmente indicizzati di SharePoint e OneDrive non vengono inclusi nelle statistiche.
+
+    - **Percorsi principali**: questa pagina visualizza le statistiche relative al numero di elementi corrispondenti alla query di ricerca presenti in ogni percorso di contenuto. Vengono visualizzati i primi 1.000 percorsi.
     
 Per altre informazioni dettagliate sulle statistiche di ricerca, vedere [Visualizzare statistiche delle parole chiave per i risultati di Ricerca contenuto](view-keyword-statistics-for-content-search.md).
   
@@ -246,6 +246,8 @@ Tenere presente quanto segue quando si usa l'elenco di parole chiave per creare 
 Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei Gruppi di Microsoft 365.
   
 - Per cercare contenuti in Teams e nei Gruppi di Microsoft 365, è necessario specificare la cassetta postale e il sito di SharePoint associati a un gruppo o a un team.
+
+- Il contenuto dei canali privati è archiviato nella cassetta postale di ogni utente, non nella cassetta postale del team. Per cercare contenuto nei canali privati, vedere [eDiscovery di canali privati](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
 - Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un team o di un gruppo di Microsoft 365. È un buon modo per ottenere l'URL del sito associato a un gruppo o a un team. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Microsoft 365 denominato Senior Leadership Team: 
     

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 1ab56f6d4fadf87de49069e93de429b7eecba577
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 8889d2706b4467be33eef473845c79a0caac606f
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707477"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907203"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -60,12 +60,12 @@ I membri del team di conformità che creano un'etichetta di riservatezza necessi
 
 Per impostazione predefinita, gli amministratori globali del tenant hanno accesso a queste interfacce di amministrazione e possono fornire ai responsabili della conformità e ad altri utenti l'accesso, senza concedere tutte le autorizzazioni di un amministratore tenant. Per l'accesso di amministratore con delega, passare alla pagina **Autorizzazioni** di una delle interfacce di amministrazione e quindi aggiungere membri al gruppo di ruoli di **Amministratore dati di conformità**, **Amministratore di conformità** o **Amministratore della sicurezza**.
 
-In alternativa all'utilizzo dei ruoli, è possibile creare un nuovo gruppo di ruoli e aggiungere l’**amministratore dell'etichetta di riservatezza** o la **configurazione dell’organizzazione** al gruppo. Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+In alternativa all'utilizzo dei ruoli, è possibile creare un nuovo gruppo di ruoli e aggiungere l’**amministratore dell'etichetta di riservatezza** o la **configurazione dell’organizzazione** al gruppo. Per un ruolo di sola lettura, usare **Lettore di etichette di riservatezza**. Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Queste autorizzazioni sono necessarie solo per creare e configurare le etichette di riservatezza e i relativi criteri di etichetta. Non sono invece necessarie per applicare le etichette nelle app o nei servizi.
 
 > [!NOTE]
-> Il **Lettore di etichette di sensitività** è un nuovo ruolo attualmente in corso di distribuzione nei tenant e supportato inizialmente per i cmdlet di etichettatura di PowerShell e successivamente per i centri di etichettatura per amministratori.
+> **Lettore di etichette di riservatezza** è un nuovo ruolo che inizialmente supportava solo i cmdlet di etichettatura di PowerShell. Il supporto per i centri di etichettatura per amministratori ora è in corso di distribuzione nei tenant.
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scenari comuni per le etichette di riservatezza
 
