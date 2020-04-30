@@ -18,149 +18,122 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica del Punteggio di produttività Microsoft.
-ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ae2d6188af6a0964dc7670adf0777c0bb3d77a77
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627753"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942238"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Punteggio di produttività Microsoft (anteprima)
 
-Microsoft 365 offre soluzioni per la produttività che consentono all'organizzazione di raggiungere i propri obiettivi aziendali. Produttività Score fornisce informazioni utili per l'utilizzo di queste soluzioni che è possibile trasformare in modalità di funzionamento.Contiene: 
+Il Punteggio di produttività consente alle organizzazioni di trasformare il lavoro svolto con informazioni su come gli utenti utilizzano Microsoft 365 e le esperienze tecnologiche che le supportano. Lo Score riflette le prestazioni dell'organizzazione rispetto alle misure relative all'esperienza dipendente e alla tecnologia e confronta il punteggio con organizzazioni come la propria.
 
-- **Visibilità** aiutandoli a capire in che modo le persone lavorano sotto forma di punteggio corrente con ripartizione tra le categorie di esperienza dei dipendenti e la tecnologia Experience (prossimamente). 
-- **Intuizioni** per identificare le opportunità per consentire migliori esperienze. 
-- **Azioni** per l'aggiornamento di competenze e sistemi in modo che tutti possano svolgere il proprio lavoro. 
+La partitura include:
 
-Lo score e le intuizioni sono presenti in due categorie:  
+- **Metriche** che consentono di vedere in che modo le persone usano prodotti Microsoft 365 per collaborare, comunicare e lavorare su più piattaforme.
+- Informazioni dettagliate sui dati utili per identificare le opportunità di migliorare la produttività e la **soddisfazione dei dipendenti** .
+- Le **azioni consigliate** che è possibile eseguire per aiutare gli utenti dell'organizzazione a utilizzare i prodotti Microsoft 365 sono efficienti in modo che tutti possano svolgere il proprio lavoro.
 
-- **Esperienza dei dipendenti:** viene illustrato come Microsoft 365 contribuisce alla creazione di una forza lavoro produttiva e impegnata quantificando il modo in cui le persone collaborano al contenuto, lavorano ovunque, capendo gli stili di comunicazione (prossimamente) e sviluppando una cultura della riunione (prossimamente) 
+Vengono forniti dati, informazioni dettagliate e suggerimenti in due aree: 
 
-- **Tecnologia Experience** (prossimamente): consente di ottimizzare le esperienze del dispositivo, come la correzione proattiva dei problemi di supporto comuni e il miglioramento dei tempi di avvio del PC e della rete per garantire che le app funzionino correttamente.  
+- **Esperienza dipendente:** Misuriamo il modo in cui le persone collaborano al contenuto, il modo in cui utilizzano i prodotti Microsoft 365 per comunicare e se utilizzano Microsoft 365 su più piattaforme. 
 
-## <a name="how-it-works"></a>Funzionamento
+    Queste informazioni vengono fornite perché quando le persone collaborano online, risparmiano tempo. Quando hanno la libertà di lavorare su qualsiasi dispositivo, sono più produttivi e soddisfatti. Quando sono in grado di comunicare in modo flessibile, sono più efficienti, formano relazioni migliori e l'organizzazione è più unita. Per ulteriori informazioni, vedere [rapporto Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-### <a name="areas-of-scoring"></a>Aree di Punteggio 
+- **Tecnologia Experience:** La produttività dipende da una tecnologia affidabile e performante, oltre che da un utilizzo efficiente di Microsoft 365. 365 Microsoft fornisce analisi degli endpoint, in cui vengono fornite informazioni dettagliate e consigli sull'installazione e i tempi di avvio del dispositivo e vengono forniti suggerimenti per la connettività di rete per la propria organizzazione.
 
-All'interno di ogni categoria punteggio, il Punteggio di produttività fornisce informazioni sulla trasformazione del lavoro tra aree diverse. Le aree interessate all'interno dell'esperienza dei dipendenti sono:
+Per ulteriori informazioni sull'analisi dei punti finali, vedere [Panoramica della connettività di rete](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+  
 
-- Collaborare al contenuto  
-- Utilizzo in qualsiasi posizione 
-- Informazioni sugli stili di comunicazione (prossimamente) 
-- Sviluppo di una cultura della riunione (prossimamente) 
+## <a name="how-the-score-is-calculated"></a>Modalità di calcolo del Punteggio
 
-### <a name="scoring-user-actions"></a>Azioni degli utenti con Punteggio 
+Il Punteggio di produttività è basato sui punteggi combinati delle categorie di esperienza dipendente e tecnologia. Ogni categoria viene ponderata equamente, con un totale di 100 punti per categoria. Il numero totale di punti possibili per il Punteggio di produttività è 500.
 
-All'interno di ogni area, vengono misurate le azioni chiave basate sulla ricerca che rappresentano le modalità di utilizzo che consentono alle organizzazioni di trasformarsi in un'organizzazione estremamente produttiva. Per ogni area viene calcolata la percentuale di utenti che eseguono queste azioni negli ultimi 28 giorni. 
+### <a name="score-categories"></a>Categorie di Punteggio 
 
-Il Punteggio esperienza dipendente è curato come Punteggio medio in tutte le aree. Tenere presente che è possibile continuare ad aggiungere ulteriori aree all'esperienza dei dipendenti e alla tecnologia nel tempo. 
+- Collaborazione del contenuto (100 punti)
+- Comunicazione (100 punti)
+- Mobilità (100 punti)
+- Analisi degli endpoint (100 punti)
+- Connettività di rete (100 punti)
+- **Totale possibile = 500 punti**
+ 
+ In ogni categoria vengono identificati i modelli per le attività chiave che sono indicatori del modo in cui gli utenti utilizzano i prodotti Microsoft 365 per collaborare, comunicare e lavorare su più piattaforme. Vengono fornite le visualizzazioni di 28 giorni e 180 giorni delle attività principali. Sono inoltre disponibili metriche di supporto che non fanno parte del calcolo del punteggio, ma sono importanti per identificare i comportamenti e le impostazioni sottostanti che è possibile utilizzare per la modifica dell'unità.
 
-### <a name="products-included-in-the-productivity-score"></a>Prodotti inclusi nel punteggio di produttività 
+### <a name="products-included-in-productivity-score"></a>Prodotti inclusi nel punteggio di produttività 
 
-Il Punteggio di produttività attualmente include i segnali dei carichi di lavoro chiave di Microsoft 365 OneDrive, SharePoint, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, teams, Skype. 
+Il Punteggio di produttività include i dati di Exchange, SharePoint, OneDrive, teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer e Skype.
 
-Il Punteggio viene aggiornato giornalmente e riflette le azioni degli utenti completate negli ultimi 28 giorni (compreso il giorno corrente).
+Il Punteggio viene aggiornato giornalmente e riflette le azioni degli utenti completate negli ultimi 28-180 giorni (compreso il giorno corrente).
 
-## <a name="access-and-required-permissions"></a>Accesso e autorizzazioni necessarie 
 
-Per l'esperienza dipendente, è necessario disporre di un abbonamento a un piano Microsoft 365 for business con più utenti. 
+## <a name="pre-requisites"></a>Prerequisiti 
 
-Per avere l'autorizzazione per l'accesso al Punteggio di produttività Microsoft, è necessario disporre dei ruoli seguenti: 
+È necessario un abbonamento a Microsoft 365 for business o Office 365 for Enterprise per ottenere i dati relativi alle esperienze dei dipendenti ed è necessario utilizzare servizi cloud multi-tenant. Per ottenere i dati di analisi degli endpoint per il tenant, è necessario aggiungere Microsoft Intune all'abbonamento. Intune consente di proteggere i dati dell'organizzazione tramite la gestione di dispositivi e app.       Dopo aver installato Intune, è possibile abilitare l'analisi di endpoint all'interno dell'esperienza di Intune. Per ulteriori informazioni, vedere Microsoft Intune. 
+
+Per visualizzare il Punteggio di produttività per l'organizzazione, è necessario disporre di uno dei ruoli seguenti: 
 
 - Amministratore globale 
-- Amministratori di Exchange 
-- Amministratori di SharePoint 
-- Amministratori di Skype for Business 
+- Amministratori di Exchange
+- Amministratore di SharePoint 
+- Amministratore di Skype for Business 
 - Amministratore di Teams 
 - Ruolo con autorizzazioni di lettura globali 
 - Lettore report 
 
-È possibile accedere all'esperienza da Microsoft 365 admin Home scegliendo **report** > **Productivity Score** nella barra di spostamento a sinistra.
+È possibile accedere all'esperienza da Microsoft 365 admin Home in **report** > **Productivity Score**.
 
 ## <a name="interpreting-productivity-score"></a>Interpretazione del Punteggio di produttività 
 
-### <a name="learn-how-your-organization-works"></a>Informazioni su come funziona l'organizzazione 
-
-la Home page del Punteggio di produttività fornisce il punteggio e la cronologia correnti su una base percentuale, informazioni principali per le aree all'interno di ogni categoria di Punteggio completate da benchmark. 
+La Home page del Punteggio di produttività Visualizza il punteggio totale e la cronologia dei punteggi, nonché l'intuizione principale per ogni categoria
 
 ![Home page Punteggio di produttività](../../media/pslanding.png)
 
-1.**Il Punteggio di produttività** è elencato su una base percentuale così come nel <numerator> / <denominator> formato, in modo da poter vedere anche i punti assoluti (numeratore) e i punti massimi possibili  
-1. Questo pivot consente di selezionare la categoria di Punteggio su cui si desidera concentrarsi. Nell'anteprima, è possibile visualizzare solo i **dipendenti**, ma la selezione verrà presto espansa per includere l' **esperienza di tecnologia**. 
-1. **Benchmark peer** consente di confrontare il punteggio corrente con organizzazioni come l'utente. La misura di benchmark viene calcolata come media delle misure all'interno di un insieme di organizzazioni simili. Il set è costituito da organizzazioni che dispongono di un numero analogo di utenti abilitati, area geografica, tipi di licenze possedute, industria e possesso all'interno di Microsoft 365 o Office 365. 
-1. La sezione **Score Categories** fornisce una ripartizione del Punteggio di produttività con i benchmark per categoria.
-1. La **cronologia dei punteggi** Visualizza la modalità di spostamento del Punteggio di ogni categoria negli ultimi 6 mesi.
-1. L'intuizione principale per la **collaborazione nei contenuti** illustra le misure rilevanti con i benchmark di questa area che contribuiscono allo score. Selezionare **Visualizza dettagli** per visualizzare la pagina Dettagli area.
-1. L'intuizione principale di **working Anywhere** Visualizza le misure rilevanti con i benchmark di questo settore che contribuiscono allo score. Selezionare **Visualizza dettagli** per visualizzare la pagina Dettagli area.  
+**Il Punteggio** viene visualizzato come valore percentuale, nonché in punti, in modo da poter visualizzare i punti (numeratore) e i punti massimi possibili (denominatore).
 
-### <a name="insights-to-identify-opportunities-to-improve-experiences"></a>Intuizioni per identificare le opportunità di miglioramento delle esperienze 
+I **benchmark peer** consentono di confrontare il punteggio con organizzazioni come la propria. Per le categorie di esperienza dipendente, la misura di benchmark peer viene calcolata come media delle misure all'interno di un insieme di organizzazioni simili. Il set è costituito da organizzazioni nella propria area geografica con un numero analogo di utenti con licenza, tipi di licenze, industria e possesso con Microsoft 365. 
 
-Per ogni area, selezionare **Visualizza dettagli** nell'Insight principale per visualizzare la pagina Dettagli area in cui vengono visualizzate altre informazioni, ricerche e azioni correlate per migliorare il punteggio. .
+Il benchmark peer analisi endpoint include gli obiettivi per le prestazioni di avvio del dispositivo e la configurazione software consigliata in base ai valori mediani aggregati in tutti i tenant.
 
-Tutte le pagine dei dettagli dell'area seguono la seguente struttura: 
+Per la connettività di rete, il benchmark consigliato è 80 punti.
 
-- In alto a sinistra: Insight principale mantenuto dalla Home page.
-- In basso a sinistra: supporto di approfondimenti con azioni contestuali.  
-- A destra: ricerca accademica che dimostra la relazione tra l'area e la produttività.
+La sezione **Score Breakdown** fornisce una ripartizione del Punteggio di produttività con benchmark da parte dei dipendenti e delle aree di utilizzo della tecnologia.
 
-Inoltre, tutte le informazioni dettagliate contengono gli elementi seguenti: 
+La cronologia dei punteggi Visualizza la modalità di modifica del Punteggio di ogni categoria negli ultimi 6 mesi.
 
-- Intestazione: chiave da asporto o esito rilevato per ogni intuizione;
-- Riepilogo: ulteriori informazioni sul motivo per cui le misure nell'Insight sono importanti per la produttività dell'organizzazione. 
-- Visualizzazione dei dati: quantifica visivamente la posizione dell'organizzazione in relazione alle misure nell'Insight con i parametri di riferimento applicabili.
-- Azioni: azione contestuale che può contribuire a incrementare il risultato desiderato per l'Insight e quindi migliorare il punteggio.
+Le aree esperienza e **tecnologia** dei **dipendenti** contengono le informazioni principali per le categorie in queste aree. È possibile fare clic su ogni categoria per visualizzare le informazioni più approfondite.
 
-### <a name="area-detail-page--collaborating-on-content"></a>Pagina Dettagli area – collaborazione per il contenuto 
+## <a name="category-details-pages"></a>Pagine dei dettagli categoria
 
-![Collaborationg nella pagina contenuto.](../../media/pscollab.png)
+In ogni pagina dei dettagli della categoria vengono illustrate le metriche principale e di supporto, nonché le attività relative alla ricerca e alle azioni che è possibile eseguire per gestire le modifiche nell'organizzazione. La ricerca supporta l'importanza e la logica dietro le intuizioni principali di ogni categoria. Per ulteriori informazioni, [leggere il rapporto Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-La collaborazione nella pagina contenuto contiene l'intuizione principale della Home page del Punteggio di produttività. Sono disponibili i componenti seguenti:
+### <a name="content-collaboration-details"></a>Dettagli sulla collaborazione del contenuto
 
-1. Intestazione: quantifica la percentuale di utenti che collaborano sul contenuto (esito chiave).
-1. Corpo: maggiori dettagli su come una maggiore collaborazione comporta una maggiore produttività.
-1. Visualizzazione: questo quantifica visivamente ogni elemento che contribuisce allo score per questa area con parametri di riferimento:
+L'intuizione principale per la collaborazione tra i contenuti è il numero di persone che creano, leggono e collaborano (modifica e Condividi) online. Queste misure sono importanti perché la ricerca dimostra che quando la gente collabora con i file online, ogni persona salva una media di 100 minuti o quasi 2 ore alla settimana.
 
-    - **Reader**: quantifica gli utenti che accedono o scaricano file nel cloud (OneDrive e SharePoint) all'interno di una base di OneDrive e degli utenti abilitati per SharePoint.
-    - **Autori**: quantifica gli utenti che modificano, eseguono il caricamento, la sincronizzazione, il check-in, la copia o lo spostamento di file nel cloud (OneDrive e SharePoint) all'interno di una base di OneDrive e degli utenti abilitati per SharePoint.
-    - **Collaboratori**: quantifica gli utenti che collaborano ai file nel cloud (OneDrive e SharePoint) all'interno di una base di OneDrive e degli utenti abilitati per SharePoint. Due utenti sono collaboratori se uno di essi ha letto o modificato un documento di Word, Excel, PowerPoint, OneNote o PDF cloud dopo l'altro creato o modificato all'interno di una finestra di 28 giorni.
+Viene definita la collaborazione del contenuto come una persona che crea e condivide un file di Office e quindi almeno un'altra persona la modifica. 
 
-1. Il motivo per cui **è importante** fornisce un riepilogo della ricerca che collega la collaborazione ai file cloud con la produttività. **Leggere la ricerca di Forrester** va a un articolo di ricerca che fornisce più contesto su come la collaborazione è favorevole all'aumento della produttività.
-1. Il supporto di Insight sulla **collaborazione su più file** quantifica la modalità di collaborazione tra gli utenti dell'organizzazione e i diversi file. 
-1. Il supporto di Insight sulla **condivisione dei file del cloud** quantifica se gli utenti condividono contenuto sul cloud, mentre la distinzione tra condivisione interna ed esterna.
-1. Il supporto di Insight sui **file cloud di posta elettronica** quantifica se gli utenti che condividono file tramite posta elettronica utilizzano allegati e collegamenti ai file cloud.
+Lettori: utenti che accedono o scaricano file online in OneDrive o SharePoint.
 
-I tipi di file considerati per la collaborazione sono Word/Excel/PowerPoint/OneNote/PDF.
+**Creatori:** Utenti che creano, modificano, caricano, sincronizzano, eseguono l'archiviazione, la copia o lo spostamento di file di OneDrive o SharePoint Online.
 
-### <a name="area-detail-page--working-anywhere"></a>Pagina Dettagli area – utilizzo in qualsiasi posizione 
+Collaboratori: utenti che collaborano con i file online tramite OneDrive o SharePoint. Due persone sono collaboratori se uno di essi legge o modifica un documento cloud online di Word, Excel, PowerPoint, OneNote o PDF dopo che l'altra persona lo ha creato o modificato, all'interno di una finestra di 28 giorni.
 
-![Pagina Work Anywhere.](../../media/psflexibility.png)
+I tipi di file considerati per la collaborazione sono file Word, Excel, PowerPoint, OneNote e PDF.
 
-La pagina Working Anywhere quantifica gli utenti (come percentuale e valore assoluto) che hanno utilizzato almeno un'app per la produttività in due o più piattaforme, ovvero desktop, mobili e Web. Gli utenti ottengono un punteggio maggiore per l'utilizzo di più app e piattaforme. Le app considerate sono Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. La base dell'Insight sono gli utenti abilitati per le app Microsoft 365 per Enterprise, Exchange, Yammer, Skype o teams.
+Vengono fornite informazioni dettagliate sui tempi di avvio e sulla configurazione dei dispositivi nell'organizzazione, nonché informazioni sulla connettività di rete per la collaborazione dei contenuti, poiché la collaborazione dei file online richiede dispositivi affidabili che si avviano rapidamente e dispongono di software aggiornato, nonché di una buona connettività a Microsoft 365.
 
-1. Il motivo per cui **è importante** fornisce un riepilogo dalla ricerca che collega l'utilizzo di più piattaforme a una maggiore produttività. **Leggere la ricerca di Forrester** va a un articolo di ricerca che fornisce più contesto sul modo in cui l'utilizzo è favorevole all'aumento della produttività.
-1. Il supporto di Insight sul **messaggio di posta elettronica Anywhere** quantifica il numero di utenti nell'organizzazione che utilizzano Outlook su più piattaforme all'interno della base di utenti attivi su Outlook.
-1. Il supporto di Insight su **Chat Anywhere** quantifica la modalità con cui gli utenti dell'organizzazione utilizzano Team tra piattaforme all'interno della base di utenti attivi nei team.
-1. Il supporto di Insight sull' **accesso ai documenti di Office** consente di quantificare in che modo gli utenti dell'organizzazione utilizzano Word, Excel, PowerPoint e OneNote tra piattaforme all'interno della base di utenti attivi su Word, Excel, PowerPoint o OneNote.
+### <a name="communication-details"></a>Dettagli della comunicazione
 
-### <a name="actions-for-update-skills-and-systems"></a>Azioni per l'aggiornamento delle competenze e dei sistemi 
+L'intuizione principale per la comunicazione è la frequenza con cui gli utenti dell'organizzazione utilizzano messaggi di posta elettronica, chat e community per comunicare. Questa intuizione è importante perché quando gli utenti utilizzano una vasta gamma di strumenti di comunicazione in tempo reale, sono in grado di scegliere la modalità di comunicazione che li aiuta ad essere più efficienti e dispongono di strumenti come chat e community che consentono loro di sviluppare relazioni tra le diverse posizioni di Office.
 
-Per promuovere l'azione, ogni Insight di supporto viene fornito con azioni in linea che consentono di trasformare l'esperienza dei dipendenti, alcune delle quali possono essere modifiche alla configurazione o campagne di sensibilizzazione. Se si fa clic su queste chiamate all'azione, nelle opzioni del riquadro azioni consigliate è possibile prendere in considerazione. Attualmente, le azioni in **collaborazione sul contenuto** sono abilitate.
+### <a name="mobility-details"></a>Dettagli sulla mobilità
 
-![Collaborare alla pagina documenti di Office.](../../media/psactions1.png)
+L'intuizione principale per la mobilità è il numero di persone che accedono ai file e usano la posta elettronica e la chat su più piattaforme. La possibilità di lavorare da qualsiasi posizione su qualsiasi dispositivo scelga è importante per gli utenti con ruoli di vendita, Senior Manager, consulenti e altri utenti che devono svolgere un lavoro lontano dall'ufficio per essere produttivi. I miglioramenti apportati a questi operatori hanno un impatto notevole. 
 
-1. Le **azioni di visualizzazione** passano a un riquadro che elenca tutte le azioni relative alla collaborazione sul contenuto.
-1. **Incoraggiare gli utenti a collaborare** passa a un elenco di video didattici sulla collaborazione con argomenti quali la creazione condivisa e la @mentions. 
-1. Personalizzare le impostazioni di **condivisione esterna** passa a una pagina con una panoramica sulla condivisione esterna che descrive cosa succede quando gli utenti condividono, a seconda di cosa stanno condividendo e con chi.  
-1. **Sostituisci allegati con collegamenti condivisi** passa a una pagina in cui viene spiegato come condividere i collegamenti di OneDrive anziché gli allegati tramite posta elettronica per una migliore collaborazione.
+Misuriamo la percentuale e il numero assoluto di persone che hanno utilizzato almeno un'app per la produttività di Microsoft 365 in due o più piattaforme, tra cui desktop, mobili e Web. Le app per la produttività che misuriamo sono Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer e Skype. Gli utenti devono disporre delle licenze Microsoft 365 Apps for Enterprise, Exchange, Yammer, Skype o teams. 
 
-Selezionando uno qualsiasi dei pulsanti azione, verrà aperto il riquadro **azioni consigliate** a destra con un riepilogo di ogni azione e un collegamento alle pagine della documentazione.
+## <a name="we-want-to-hear-from-you"></a>si vuole sapere da voi
 
-![Riquadro azioni consigliate.](../../media/psacttions2.png)
-
-
-## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi 
-
-Si desidera utilizzare il programma di anteprima privata per raccogliere commenti e suggerimenti e utilizzare le informazioni per creare il prodotto in modo che sia possibile procedere in futuro. È possibile utilizzare le sezioni di **feedback** all'interno del prodotto e/o raggiungere il team del Punteggio di produttività in ProductivityScorePreview@service.microsoft.com.
-
-Per richiedere l'accesso all'anteprima privata, compilare il modulo all'indirizzo https://aka.ms/productivityscorepreview.  
+Si prega di condividere i propri pensieri sul punteggio di produttività e sulle idee su come migliorarlo. Utilizzare le sezioni di **feedback** all'interno del prodotto e/o raggiungere il team del Punteggio di produttività in ProductivityScorePreview@service.microsoft.com.

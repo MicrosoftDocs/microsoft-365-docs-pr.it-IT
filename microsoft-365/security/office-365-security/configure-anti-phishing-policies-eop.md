@@ -1,5 +1,5 @@
 ---
-title: Configurare il criterio anti-phishing predefinito in EOP
+title: Configurazione dei criteri di anti-phishing in EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,60 +13,165 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono ottenere informazioni su come modificare le impostazioni di anti-spoofing disponibili nei criteri anti-phishing predefiniti nelle organizzazioni di Office 365 con le cassette postali di Exchange Online.
-ms.openlocfilehash: 1a8527a55796910e79fbf70b824de828ca48591b
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing disponibili nelle organizzazioni di Exchange Online Protection (EOP) con o senza cassette postali di Exchange Online.
+ms.openlocfilehash: 770990cdd7927ebb8afa088f2d5be09c75824d59
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537534"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949272"
 ---
-# <a name="configure-the-default-anti-phishing-policy-in-eop"></a>Configurare il criterio anti-phishing predefinito in EOP
+# <a name="configure-anti-phishing-policies-in-eop"></a>Configurazione dei criteri di anti-phishing in EOP
 
 Le organizzazioni di Office 365 con le cassette postali di Exchange Online e le organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online dispongono di un criterio antiphishing predefinito. Questo criterio contiene un numero limitato di funzionalità di anti-spoofing che sono abilitate per impostazione predefinita. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-Le organizzazioni di Office 365 che dispongono di cassette postali di Exchange Online possono modificare il criterio anti-phishing predefinito nel centro sicurezza & conformità di Office 365 o in PowerShell di Exchange Online. Le organizzazioni di EOP autonome senza le cassette postali di Exchange Online non possono modificare i criteri anti-phishing predefiniti.
+Gli amministratori possono visualizzare, modificare e configurare (ma non eliminare) il criterio anti-phishing predefinito. Per una maggiore granularità, è anche possibile creare criteri di anti-phishing personalizzati che si applicano a utenti, gruppi o domini specifici nell'organizzazione. I criteri personalizzati hanno sempre la precedenza sul criterio predefinito, ma non è possibile modificarne la priorità (in funzione).
+
+Le organizzazioni con cassette postali di Exchange Online possono configurare criteri di anti-phishing nel centro sicurezza & conformità o in PowerShell di Exchange Online. Le organizzazioni di EOP autonome possono utilizzare solo il Centro sicurezza & Compliance.
 
 Per informazioni sulla creazione e la modifica dei criteri di anti-phishing ATP più avanzati disponibili in Office 365 Advanced Threat Protection, vedere [configurare i criteri di anti-phishing ATP in office 365](configure-atp-anti-phishing-policies.md).
 
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Criteri di anti-phishing nel centro sicurezza & Compliance vs Exchange Online PowerShell
+
+Gli elementi di base di un criterio anti-phishing sono:
+
+- **Il criterio anti-phishing**: specifica le protezioni di phishing da abilitare o disabilitare e le azioni da applicare.
+
+- **La regola phishing**: specifica la priorità e i filtri destinatario (a chi si applica il criterio) per un criterio anti-phishing.
+
+La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri di anti-phishing nel centro sicurezza & Compliance:
+
+- Quando si crea un criterio anti-phishing nel centro sicurezza & Compliance, si sta effettivamente creando una regola anti-phishing e i criteri anti-phishing associati contemporaneamente utilizzando lo stesso nome per entrambi.
+
+- Quando si modifica un criterio anti-phishing nel centro sicurezza & conformità, le impostazioni relative ai filtri nome, priorità, abilitato o disabilitato e destinatario modificano la regola phishing. Tutte le altre impostazioni modificano i criteri anti-phishing associati.
+
+- Quando si rimuove un criterio anti-phishing dal centro sicurezza & conformità, la regola anti-phishing e i criteri anti-phishing associati vengono rimossi.
+
+In Exchange Online PowerShell, la differenza tra i criteri anti-phishing e le regole anti-phishing è evidente. Per gestire i criteri anti-phishing è possibile utilizzare i ** \*cmdlet-AntiPhishPolicy** e gestire le regole di anti-phishing utilizzando i ** \*cmdlet-AntiPhishRule** .
+
+- In PowerShell, è necessario creare innanzitutto il criterio phishing, quindi creare la regola anti-phishing che identifica il criterio a cui si applica la regola.
+
+- In PowerShell, è possibile modificare le impostazioni nel criterio di phishing e la regola anti-phishing separatamente.
+
+### <a name="default-atp-anti-phishing-policy"></a>Criteri di anti-phishing predefiniti del trifosfato di adenosina
+
+Ogni organizzazione dispone di un criterio di anti-phishing incorporato denominato Office365 antiphishing default con queste proprietà:
+
+- Il criterio denominato Office365 antiphishing default viene applicato a tutti i destinatari dell'organizzazione, anche se non è presente alcuna regola anti-phishing (filtri destinatario) associata al criterio.
+
+- Il criterio denominato Office365 antiphishing default ha il valore di priorità personalizzato **più basso** che non è possibile modificare (il criterio viene sempre applicato per ultimo). Tutti i criteri personalizzati creati hanno sempre una priorità più alta rispetto al criterio denominato Office365 antiphishing default.
+
+- Il criterio denominato Office365 antiphishing default è il criterio predefinito (la **proprietà IsDefault** ha il valore `True`) e non è possibile eliminare il criterio predefinito.
+
+Per aumentare l'efficacia della protezione anti-phishing, è possibile creare criteri di anti-phishing personalizzati con impostazioni più rigorose applicate a utenti o gruppi di utenti specifici.
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **anti-phishing** , utilizzare <https://protection.office.com/antiphishing>.
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **anti-phishing** , utilizzare <https://protection.office.com/antiphishing>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
+  Non è possibile gestire i criteri di anti-phishing in standalone EOP PowerShell.
+
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare i criteri di anti-phishing, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri anti-phishing, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità di Office 365](permissions-in-the-security-and-compliance-center.md).
 
-- Per le impostazioni consigliate per il criterio anti-phishing predefinito, vedere [EOP default anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
+- Per poter creare e modificare i criteri di protezione dalla posta indesiderata in EOP autonomo, è necessario eseguire un'operazione che richiede l' _idratazione_ per il tenant. Ad esempio, nell'interfaccia di amministrazione di Exchange, è possibile accedere alla scheda **autorizzazioni** , selezionare un gruppo di ruoli esistente, fare](../../media/ITPro-EAC-EditIcon.png)clic su **modifica** ![icona modifica e rimuovere un ruolo (che verrà infine aggiunto di nuovo). Se il tenant non è mai stato idratato, viene visualizzata una finestra di dialogo denominata **Impostazioni organizzazione di aggiornamento** con una barra di avanzamento che deve essere completata correttamente. Per ulteriori informazioni sull'idratazione, vedere il cmdlet [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/organization/enable-organizationcustomization) (che non è disponibile in standalone EOP PowerShell o nel Security & Compliance Center).
+
+- Per le impostazioni consigliate per i criteri di anti-phishing, vedere [EOP default anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
 - Consentire l'applicazione dei criteri aggiornati fino a 30 minuti.
 
 - Per informazioni su dove vengono applicati i criteri di anti-phishing nella pipeline dei filtri, vedere [ordine e precedenza della protezione della posta elettronica in Office 365](how-policies-and-protections-are-combined.md).
 
-### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>Utilizzare il Centro sicurezza & conformità per modificare il criterio anti-phishing predefinito
+## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies"></a>Utilizzare il Centro sicurezza & conformità per creare criteri di anti-phishing
 
-Il criterio anti-phishing predefinito è denominato Office365 antiphishing default e non viene visualizzato nell'elenco dei criteri. Per modificare il criterio anti-phishing predefinito, eseguire le operazioni seguenti:
+La creazione di un criterio anti-phishing personalizzato nel centro sicurezza & conformità crea la regola anti-phishing e i criteri anti-phishing associati contemporaneamente utilizzando lo stesso nome per entrambi.
+
+Quando si crea un criterio anti-phishing, è possibile specificare solo il nome, la descrizione e il filtro destinatario che identifica gli utenti a cui si applica il criterio. Dopo aver creato il criterio, è possibile modificare il criterio per modificare o rivedere le impostazioni di anti-phishing predefinite.
 
 1. Nel centro sicurezza & conformità, accedere a **criterio** \> di **gestione** \> delle minacce **anti-phishing**.
 
-2. Nella pagina **anti-phishing** fare clic su **criteri predefiniti**.
+2. Nella pagina **anti-phishing** fare clic su **Crea**.
 
-3. Viene visualizzata la pagina **modifica il criterio Office365 antiphishing predefinita** . Nella sezione **spoofing** fare clic su **modifica**.
+3. Verrà visualizzata la procedura guidata **Crea un nuovo criterio anti-phishing** . Nella pagina **Name Your Policy** , configurare le seguenti impostazioni:
 
-   Si noti che queste impostazioni sono identiche alle impostazioni di spoofing disponibili nei criteri di anti-phishing ATP.
+   - **Nome**: immettere un nome univoco descrittivo per il criterio.
 
-   - **Impostazioni del filtro di spoofing**: il valore predefinito **è attivato**e si consiglia di lasciarlo acceso. Per disattivarla, fare scorrere l'interruttore su **disattivata**. Per ulteriori informazioni, vedere [Configure Spoofing Intelligence in Office 365](learn-about-spoof-intelligence.md).
+   - **Descrizione**: immettere una descrizione opzionale per il criterio.
+
+   Al termine dell'operazione, fare clic su **Avanti**.
+
+4. Nella pagina **applicata alla** pagina che viene visualizzata, identificare i destinatari interni ai quali si applica il criterio.
+
+   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
+
+   Fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se**:
+
+   - **Il destinatario è**: consente di specificare una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
+   - **Il destinatario è un membro di**: consente di specificare uno o più gruppi nell'organizzazione.
+   - **Il dominio del destinatario è**: specifica i destinatari in uno o più dei domini configurati accettati in Office 365.
+
+   Dopo aver selezionato la condizione, viene visualizzato un elenco a discesa corrispondente con una **qualsiasi di queste** caselle.
+
+   - Fare clic nella casella e scorrere l'elenco di valori da selezionare.
+   - Fare clic nella casella e iniziare a digitare per filtrare l'elenco e selezionare un valore.
+   - Per aggiungere ulteriori valori, fare clic in un'area vuota nella casella.
+   - Per rimuovere singole voci, fare **Remove** ![clic su Rimuovi](../../media/scc-remove-icon.png) icona Rimuovi sul valore.
+   - Per rimuovere l'intera condizione, fare **Remove** ![clic su Rimuovi](../../media/scc-remove-icon.png) icona Rimuovi sulla condizione.
+
+   Per aggiungere una condizione aggiuntiva, fare clic su **Aggiungi condizione** e selezionare un valore restante in **applicato se**.
+
+   Per aggiungere eccezioni, fare clic su **Aggiungi condizione** e selezionare un'eccezione in **except if**. Impostazioni e comportamento sono equivalenti alle condizioni.
+
+   Al termine dell'operazione, fare clic su **Avanti**.
+
+5. Nella pagina **Verifica le impostazioni** che viene visualizzata, esaminare le impostazioni. È possibile fare clic su **modifica** su ogni impostazione per modificarla.
+
+   Al termine, fare clic su **crea questo criterio**.
+
+6. Fare clic su **OK** nella finestra di dialogo di conferma che viene visualizzata.
+
+Dopo aver creato il criterio di anti-phishing con queste impostazioni di criteri generali, utilizzare le istruzioni nella sezione successiva per configurare le impostazioni di protezione nel criterio.
+
+## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies"></a>Utilizzare il Centro sicurezza & conformità per modificare i criteri di anti-phishing
+
+Per modificare i criteri di anti-phishing, utilizzare le procedure seguenti: un nuovo criterio creato o criteri esistenti già personalizzati.
+
+1. Se non si è ancora presenti, aprire il Centro sicurezza & compliance e passare a **Threat management** \> **criterio** \> di gestione delle minacce **anti-phishing**.
+
+2. Selezionare il criterio di anti-phishing personalizzato che si desidera modificare. Se è già selezionata, deselezionarla e selezionarla di nuovo.
+
+3. Verrà visualizzato il riquadro a comparsa **modifica il nome \<\> del criterio** . Fare clic su **modifica** in qualsiasi sezione consente di accedere alle impostazioni di tale sezione.
+
+   - I passaggi seguenti sono presentati nell'ordine in cui vengono visualizzate le sezioni, ma non sono sequenziali (è possibile selezionare e modificare le sezioni in qualsiasi ordine).
+
+   - Dopo aver fatto clic su **modifica** in una sezione, le impostazioni disponibili vengono presentate in un formato procedura guidata, ma è possibile passare all'interno delle pagine in qualsiasi ordine e fare clic su **Salva** in qualsiasi pagina oppure **Close** ![ **annullare** o chiudere](../../media/scc-remove-icon.png) l'icona Chiudi per tornare alla pagina **modifica\> il nome del criterio \<** (non è necessario visitare l'ultima pagina della procedura guidata per salvare o lasciare).
+
+4. **Impostazione dei criteri**: fare clic su **modifica** per modificare le stesse impostazioni disponibili quando è stato [creato il criterio](#use-the-security--compliance-center-to-create-anti-phishing-policies) nella sezione precedente:
+
+   - **Nome**
+   - **Descrizione**
+   - **Applicato a**
+   - **Esaminare le impostazioni**
+
+   Al termine, fare clic su **Salva** su qualsiasi pagina.
+
+5. **Spoof**: fare clic su **modifica** per abilitare o disabilitare l'intelligence di spoofing, abilitare l'identificazione dei mittenti non autenticati in Outlook attivato o disattivato e configurare l'azione da applicare ai messaggi provenienti da mittenti bloccati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).
+
+   Si noti che le stesse impostazioni sono disponibili anche nei criteri di anti-phishing ATP.
+
+   - **Impostazioni del filtro di spoofing**: il valore predefinito **è attivato**e si consiglia di lasciarlo acceso. Per disattivarla, fare scorrere l'interruttore su **disattivata**. Per altre informazioni, vedere [Configurare spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
      > Non è necessario disabilitare la protezione anti-spoofing se il record MX non punta a Office 365; è invece possibile abilitare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   - **Abilita funzionalità mittente non autenticato**: aggiunge un punto interrogativo alla foto del mittente se il messaggio non supera i controlli di autenticazione della posta elettronica. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings). Il valore predefinito è **Attivato**. Per disattivarla, fare scorrere l'interruttore su **disattivata**.
+   - **Abilita funzionalità mittente non autenticato** **: il valore predefinito è**attivato. Per disattivarla, fare scorrere l'interruttore su **disattivata**.
 
    - **Azioni**: specificare l'azione da intraprendere per i messaggi che non superano l'intelligence spoof:
 
      **Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio**:
 
-     - **Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** (questo è il valore predefinito).
+     - **Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari**
      - **Mettere in quarantena il messaggio**
 
    - **Esaminare le impostazioni**: invece di fare clic su ogni singolo passaggio, le impostazioni vengono visualizzate in un riepilogo.
@@ -79,50 +184,335 @@ Il criterio anti-phishing predefinito è denominato Office365 antiphishing defau
 
    Al termine, fare clic su **Salva** su qualsiasi pagina.
 
-4. Tornare alla pagina **Edit your Policy Office365 antiphishing default** , rivedere le impostazioni e fare clic su **Chiudi**.
+6. Tornare alla pagina **modifica il nome \<\> del criterio** , rivedere le impostazioni e quindi fare clic su **Chiudi**.
 
-## <a name="use-the-security--compliance-center-to-view-the-default-anti-phishing-policy"></a>Utilizzare il Centro sicurezza & conformità per visualizzare i criteri di anti-phishing predefiniti
+### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>Utilizzare il Centro sicurezza & conformità per modificare il criterio anti-phishing predefinito
 
-1. Nel centro sicurezza & conformità e passare a **criteri** \> di **gestione** \> delle minacce **ATP anti-phishing**.
+Il criterio anti-phishing predefinito è denominato Office365 antiphishing default e non viene visualizzato nell'elenco dei criteri. Per modificare il criterio anti-phishing predefinito, eseguire le operazioni seguenti:
 
-2. Fare clic su **criteri predefiniti** per visualizzare i criteri di anti-phishing predefiniti.
+1. Nel centro sicurezza & conformità, accedere a **criterio** \> di **gestione** \> delle minacce **anti-phishing**.
 
-## <a name="use-exchange-online-powershell-to-configure-the-default-anti-phishing-policy"></a>Utilizzo di PowerShell di Exchange Online per configurare i criteri di anti-phishing predefiniti
+2. Nella pagina **anti-phishing** fare clic su **criteri predefiniti**.
 
-### <a name="use-powershell-to-view-the-default-anti-phish-policy"></a>Utilizzo di PowerShell per visualizzare i criteri anti-phishing predefiniti
+3. Viene visualizzata la pagina **modifica il criterio Office365 antiphishing predefinita** . Sono disponibili le sezioni seguenti, che contengono impostazioni identiche per il momento in cui si [modifica un criterio personalizzato](#use-the-security--compliance-center-to-modify-anti-phishing-policies).
 
-Per visualizzare i criteri anti-phishing predefiniti, eseguire il comando seguente:
+   - **Rappresentazione**
+   - **Spoof**
+   - **Impostazioni avanzate**
+
+   Le impostazioni seguenti non sono disponibili quando si modifica il criterio predefinito:
+
+   - È possibile visualizzare la sezione e i valori dell' **impostazione dei criteri** , ma non esiste alcun collegamento di **modifica** , quindi non è possibile modificare le impostazioni (nome del criterio, descrizione e l'utente a cui si applica il criterio, applicabile a tutti i destinatari).
+   - Non è possibile eliminare il criterio predefinito.
+   - Non è possibile modificare la priorità del criterio predefinito (viene sempre applicato per ultimo).
+
+4. Nella pagina **modifica il criterio Office365 antiphishing predefinita** , esaminare le impostazioni e quindi fare clic su **Chiudi**.
+
+### <a name="enable-or-disable-custom-anti-phishing-policies"></a>Abilitazione o disabilitazione dei criteri di anti-phishing personalizzati
+
+1. Nel centro sicurezza & conformità, accedere a **criterio** \> di **gestione** \> delle minacce **anti-phishing**.
+
+2. Si noti il valore nella colonna **stato** :
+
+   - Fare scorrere l'interruttore su **disattivato** per disabilitare il criterio.
+
+   - Scorrere l'interruttore **su** attivato per abilitare il criterio.
+
+Non è possibile disabilitare il criterio anti-phishing predefinito.
+
+### <a name="set-the-priority-of-custom-anti-phishing-policies"></a>Impostare la priorità dei criteri di anti-phishing personalizzati
+
+Per impostazione predefinita, ai criteri di anti-phishing viene assegnata una priorità che si basa sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Due criteri non possono avere priorità uguale.
+
+I criteri di anti-phishing personalizzati vengono visualizzati nell'ordine in cui sono stati elaborati (il primo criterio ha il valore di **priorità** 0). Il criterio anti-phishing predefinito denominato Office365 antiphishing default ha il valore di priorità personalizzato **più basso**e non è possibile modificarlo.
+
+ **Nota**: nel centro sicurezza & conformità è possibile modificare solo la priorità dei criteri di anti-phishing dopo averlo creato. In PowerShell, è possibile ignorare la priorità predefinita quando si crea la regola anti-phishing (che può influire sulla priorità delle regole esistenti).
+
+Per modificare la priorità di un criterio, fare clic su **aumenta priorità** o su **Diminuisci priorità** nelle proprietà del criterio (non è possibile modificare direttamente il numero di **priorità** nel centro sicurezza & conformità). La modifica della priorità di un criterio ha senso solo se si dispone di più criteri.
+
+1. Nel centro sicurezza & conformità, accedere a **criteri** \> di **gestione** \> delle minacce **ATP anti-phishing**.
+
+2. Selezionare il criterio che si desidera modificare. Se è già selezionata, deselezionarla e selezionarla di nuovo.
+
+3. Verrà visualizzato il riquadro a comparsa **modifica il nome \<\> del criterio** .
+
+   - Il criterio di anti-phishing personalizzato con il valore di **priorità** **0** ha solo il pulsante di **riduzione della priorità** disponibile.
+
+   - Il criterio di anti-phishing personalizzato con il valore di **priorità** più basso (ad esempio, **3**) ha solo il pulsante **aumenta priorità** disponibile.
+
+   - Se si dispone di tre o più criteri di anti-phishing personalizzati, i criteri tra i valori di priorità più alti e quelli più bassi sono disponibili per i pulsanti **aumenta priorità** e **Riduci priorità** .
+
+4. Fare clic su **aumenta priorità** o su **Diminuisci priorità** per modificare il valore di **priorità** .
+
+5. Al termine, fare clic su **Chiudi**.
+
+## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies"></a>Utilizzare il Centro sicurezza & conformità per visualizzare i criteri di anti-phishing
+
+1. Nel centro sicurezza & compliance e passare al **criterio** \> di **gestione** \> delle minacce **anti-phishing**.
+
+2. Eseguire una delle operazioni seguenti:
+
+   - Selezionare un criterio di anti-phishing personalizzato che si desidera visualizzare. Se è già selezionata, deselezionarla e selezionarla di nuovo.
+
+   - Fare clic su **criteri predefiniti** per visualizzare i criteri di anti-phishing predefiniti.
+
+3. Verrà visualizzato il riquadro a comparsa **modifica il nome \<\> del criterio** , in cui è possibile visualizzare le impostazioni e i valori.
+
+## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>Utilizzare il Centro sicurezza & conformità per rimuovere i criteri di anti-phishing
+
+1. Nel centro sicurezza & conformità, accedere a **criterio** \> di **gestione** \> delle minacce **anti-phishing**.
+
+2. Selezionare il criterio che si desidera rimuovere. Se è già selezionata, deselezionarla e selezionarla di nuovo.
+
+3. Nel riquadro a comparsa **modifica \<il\> nome del criterio** visualizzato, fare clic su **Elimina criteri**, quindi fare clic su **Sì** nella finestra di dialogo di avviso visualizzata.
+
+Non è possibile rimuovere il criterio predefinito.
+
+## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Utilizzare PowerShell di Exchange Online per configurare i criteri di anti-phishing
+
+Le procedure seguenti non sono disponibili nelle organizzazioni di EOP autonome.
+
+### <a name="use-powershell-to-create-anti-phishing-policies"></a>Utilizzo di PowerShell per creare criteri di anti-phishing
+
+La creazione di un criterio anti-phishing in PowerShell è un processo in due passaggi:
+
+1. Creare il criterio anti-phishing.
+
+2. Creare la regola anti-phishing che specifica i criteri anti-phishing a cui si applica la regola.
+
+ **Note**:
+
+- È possibile creare una nuova regola anti-phishing e assegnargli un criterio anti-phishing esistente e non associato. Non è possibile associare una regola anti-phishing a più di un criterio anti-phishing.
+
+- È possibile configurare le impostazioni seguenti sui nuovi criteri di phishing in PowerShell che non sono disponibili nel centro sicurezza & conformità fino a dopo la creazione del criterio:
+
+  - Creare il nuovo criterio come disabilitato (_attivato_ `$false` nel cmdlet **New-AntiPhishRule** ).
+
+  - Impostare la priorità dei criteri durante la creazione (_Priority_ _ \<numero\>_ di priorità) nel cmdlet **New-AntiPhishRule** ).
+
+- Un nuovo criterio di phishing creato in PowerShell non è visibile nel centro sicurezza & conformità fino a quando non si assegna il criterio a una regola anti-phishing.
+
+#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a>Passaggio 1: utilizzare PowerShell per creare un criterio anti-phishing
+
+Per creare un criterio di phishing, utilizzare la sintassi seguente:
 
 ```PowerShell
-Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableAntiSpoofEnforcement <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
+```
+
+In questo esempio viene creato il criterio phishing denominato Research Quarantine con le seguenti impostazioni:
+
+- Il criterio è abilitato (non viene utilizzato il parametro _Enabled_ e il valore predefinito è `$true`).
+- La descrizione è: criteri del reparto ricerche.
+- Consente di modificare l'azione predefinita per lo spoofing in quarantena.
+
+```powershell
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
+```
+
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy).
+
+#### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>Passaggio 2: utilizzare PowerShell per creare una regola anti-phishing
+
+Per creare una regola anti-phishing, utilizzare la sintassi seguente:
+
+```PowerShell
+New-AntiPhishRule -Name "<RuleName>" -AntiPhishPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
+```
+
+In questo esempio viene creata una regola di phishing denominata Research Department con le condizioni seguenti:
+
+- La regola è associata ai criteri anti-phishing denominati Research Quarantine.
+- La regola viene applicata ai membri del gruppo denominato Research Department.
+- Poiché non si utilizza il parametro _Priority_ , viene utilizzata la priorità predefinita.
+
+```powershell
+New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
+```
+
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishRule).
+
+### <a name="use-powershell-to-view-anti-phish-policies"></a>Utilizzo di PowerShell per visualizzare i criteri anti-phishing
+
+Per visualizzare i criteri anti-phishing esistenti, utilizzare la sintassi seguente:
+
+```PowerShell
+Get-AntiPhishPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+In questo esempio viene restituito un elenco riepilogativo di tutti i criteri anti-phishing insieme alle proprietà specificate.
+
+```PowerShell
+Get-AntiPhishPolicy | Format-Table Name,IsDefault
+```
+
+In questo esempio vengono restituiti tutti i valori della proprietà per il criterio phishing denominato Executives.
+
+```PowerShell
+Get-AntiPhishPolicy -Identity "Executives"
 ```
 
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy).
 
-### <a name="use-powershell-to-modify-the-default-anti-phish-policy"></a>Utilizzo di PowerShell per modificare il criterio anti-phishing predefinito
+### <a name="use-powershell-to-view-anti-phish-rules"></a>Utilizzo di PowerShell per visualizzare le regole anti-phishing
 
-Per modificare i criteri anti-phishing predefiniti, utilizzare la sintassi seguente:
+Per visualizzare le regole anti-phishing esistenti, utilizzare la sintassi seguente:
 
-```powershell
-Set-AntiPhishPolicy -Identity "Office365 AntiPhish Default" [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableAntispoofEnforcement <$true | $false>] [-EnableUnauthenticatedSender <$true | $false>]
+```PowerShell
+Get-AntiPhishRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-In questo esempio viene modificata l'azione per i messaggi falsificati che non riescono a controllare l'autenticazione in quarantena.
+In questo esempio viene restituito un elenco riepilogativo di tutte le regole anti-phishing insieme alle proprietà specificate.
 
-```powershell
-Set-AntiPhishPolicy -Identity "Office365 AntiPhish Default" -AuthenticationFailAction Quarantine
+```PowerShell
+Get-AntiPhishRule | Format-Table Name,Priority,State
+```
+
+Per filtrare l'elenco in base alle regole abilitate o disabilitate, eseguire i comandi seguenti:
+
+```PowerShell
+Get-AntiPhishRule -State Disabled | Format-Table Name,Priority
+```
+
+```PowerShell
+Get-AntiPhishRule -State Enabled | Format-Table Name,Priority
+```
+
+In questo esempio vengono restituiti tutti i valori della proprietà per la regola phishing denominata Contoso Executives.
+
+```PowerShell
+Get-AntiPhishRule -Identity "Contoso Executives"
+```
+
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishrule).
+
+### <a name="use-powershell-to-modify-anti-phish-policies"></a>Utilizzo di PowerShell per la modifica dei criteri anti-phishing
+
+A parte gli elementi seguenti, le stesse impostazioni sono disponibili quando si modifica un criterio di phishing in PowerShell come quando si crea il criterio come descritto nel [passaggio 1: utilizzare PowerShell per creare una sezione dei criteri anti-phishing](#step-1-use-powershell-to-create-an-anti-phish-policy) più indietro in questo argomento.
+
+- L'opzione _MakeDefault_ che consente di trasformare il criterio specificato nel criterio predefinito (applicato a tutti, priorità sempre **più bassa** e non è possibile eliminarla) è disponibile solo quando si modifica un criterio di protezione da phishing in PowerShell.
+
+- Non è possibile rinominare un criterio anti-phishing (il cmdlet **set-AntiPhishPolicy** non ha un parametro _Name_ ). Quando si rinomina un criterio anti-phishing nel centro sicurezza & Compliance, viene rinominata solo la _regola_anti-phishing.
+
+Per modificare un criterio di phishing, utilizzare la sintassi seguente:
+
+```PowerShell
+Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy).
 
+### <a name="use-powershell-to-modify-anti-phish-rules"></a>Utilizzo di PowerShell per modificare le regole anti-phishing
+
+L'unica impostazione che non è disponibile quando si modifica una regola anti-phishing in PowerShell è il parametro _Enabled_ che consente di creare una regola disattivata. Per abilitare o disabilitare le regole anti-phishing esistenti, vedere la sezione successiva.
+
+In caso contrario, non sono disponibili ulteriori impostazioni quando si modifica una regola anti-phishing in PowerShell. Le stesse impostazioni sono disponibili quando si crea una regola come descritto nel [passaggio 2: utilizzo di PowerShell per creare una sezione di regola anti-phishing](#step-2-use-powershell-to-create-an-anti-phish-rule) più indietro in questo argomento.
+
+Per modificare una regola anti-phishing, utilizzare la sintassi seguente:
+
+```PowerShell
+Set-AntiPhishRule -Identity "<RuleName>" <Settings>
+```
+
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishrule).
+
+### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a>Utilizzo di PowerShell per abilitare o disabilitare le regole anti-phishing
+
+L'abilitazione o disabilitazione di una regola anti-phishing in PowerShell consente di abilitare o disabilitare l'intero criterio anti-phishing (la regola anti-phishing e i criteri di anti-phishing assegnati). Non è possibile abilitare o disabilitare il criterio anti-phishing predefinito (viene sempre applicato a tutti i destinatari).
+
+Per abilitare o disabilitare una regola anti-phishing in PowerShell, utilizzare la sintassi seguente:
+
+```PowerShell
+<Enable-AntiPhishRule | Disable-AntiPhishRule> -Identity "<RuleName>"
+```
+
+In questo esempio viene disabilitata la regola anti-phishing denominata Marketing Department.
+
+```PowerShell
+Disable-AntiPhishRule -Identity "Marketing Department"
+```
+
+In questo esempio viene abilitata la stessa regola.
+
+```PowerShell
+Enable-AntiPhishRule -Identity "Marketing Department"
+```
+
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/enable-AntiPhishrule) e [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/disable-AntiPhishrule).
+
+### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>Utilizzo di PowerShell per impostare la priorità delle regole anti-phishing
+
+Il valore di priorità più alto che è possibile impostare in una regola è 0. Il valore più basso che è possibile impostare dipende dal numero di regole. Se si dispone di cinque regole, ad esempio, è possibile utilizzare i valori di priorità da 0 a 4. Modificare la priorità di una regola esistente può avere un effetto a catena su altre regole. Ad esempio, se si dispone di cinque regole personalizzate (priorità da 0 a 4) e si modifica la priorità di una regola su 2, la regola esistente con priorità 2 viene modificata a livello di priorità 3 e la regola con priorità 3 viene modificata a livello di priorità 4.
+
+Per impostare la priorità di una regola anti-phishing in PowerShell, utilizzare la sintassi seguente:
+
+```PowerShell
+Set-AntiPhishRule -Identity "<RuleName>" -Priority <Number>
+```
+
+Nell'esempio seguente la priorità della regola denominata Marketing Department viene impostata su 2. Tutte le regole esistenti che hanno una priorità minore o uguale a 2 vengono abbassate di 1 valore (i numeri di priorità vengono aumentati di 1).
+
+```PowerShell
+Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
+```
+
+**Note**:
+
+- Per impostare la priorità di una nuova regola al momento della creazione, utilizzare il parametro _Priority_ nel cmdlet **New-AntiPhishRule** .
+
+- I criteri predefiniti di phishing non dispongono di una regola anti-phishing corrispondente e hanno sempre il valore di priorità immodificabile **più basso**.
+
+### <a name="use-powershell-to-remove-anti-phish-policies"></a>Utilizzo di PowerShell per rimuovere i criteri anti-phishing
+
+Quando si utilizza PowerShell per rimuovere un criterio phishing, la regola anti-phishing corrispondente non viene rimossa.
+
+Per rimuovere un criterio di phishing in PowerShell, utilizzare la sintassi seguente:
+
+```PowerShell
+Remove-AntiPhishPolicy -Identity "<PolicyName>"
+```
+
+In questo esempio viene rimosso il criterio anti-phishing denominato Marketing Department.
+
+```PowerShell
+Remove-AntiPhishPolicy -Identity "Marketing Department"
+```
+
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishPolicy).
+
+### <a name="use-powershell-to-remove-anti-phish-rules"></a>Utilizzo di PowerShell per rimuovere le regole anti-phishing
+
+Quando si utilizza PowerShell per rimuovere una regola anti-phishing, i criteri di anti-phishing corrispondenti non vengono rimossi.
+
+Per rimuovere una regola anti-phishing in PowerShell, utilizzare la sintassi seguente:
+
+```PowerShell
+Remove-AntiPhishRule -Identity "<PolicyName>"
+```
+
+In questo esempio viene rimossa la regola anti-phishing denominata Marketing Department.
+
+```PowerShell
+Remove-AntiPhishRule -Identity "Marketing Department"
+```
+
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishRule).
+
 ## <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
-Per verificare di aver configurato correttamente il criterio anti-phishing predefinito, eseguire una delle operazioni seguenti:
+Per verificare la corretta configurazione dei criteri di anti-phishing ATP, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità, accedere **a criterio di** \> **gestione** \> delle minacce **anti-phishing** \> fare clic su **criteri predefiniti** e visualizzare i dettagli nel riquadro a comparsa.
+- Nel centro sicurezza & conformità, accedere a **criterio** \> di **gestione** \> delle minacce **anti-phishing**. Verificare l'elenco dei criteri, i relativi valori di **stato** e i relativi valori di **priorità** . Per visualizzare ulteriori dettagli, eseguire una delle operazioni seguenti:
 
-- In PowerShell di Exchange Online, eseguire il comando riportato di seguito e verificare le impostazioni:
+  - Selezionare il criterio dall'elenco e visualizzare i dettagli nel riquadro a comparsa.
+  - Fare clic su **criteri predefiniti** e visualizzare i dettagli nel riquadro a comparsa.
+
+- In Exchange Online PowerShell, sostituire \<nome\> con il nome del criterio o della regola ed eseguire il comando seguente e verificare le impostazioni:
 
   ```PowerShell
-  Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
+  Get-AntiPhishPolicy -Identity "<Name>"
+  ```
+
+  ```PowerShell
+  Get-AntiPhishRule -Identity "<Name>"
   ```

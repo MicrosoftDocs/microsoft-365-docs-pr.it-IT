@@ -17,12 +17,12 @@ ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 offre una vasta gamma di protezione dagli attacchi di phishing per impostazione predefinita e anche tramite funzionalità aggiuntive in Office 365 Advanced Threat Protection (ATP). In questo argomento vengono illustrate le risorse online che è possibile utilizzare per conoscere e implementare le opzioni e le strategie di anti-phishing in Microsoft 365.
-ms.openlocfilehash: fd1aaee221254c3899c15d22850e95378436a392
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bdab6c05fb9be85c2ffb4914390ecc893fdd162b
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634581"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949370"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protezione anti-phishing in Microsoft 365
 
@@ -42,11 +42,11 @@ Con la crescente complessità degli attacchi, è persino difficile per gli utent
 
 EOP (ovvero le organizzazioni Microsoft 365 senza ATP) contiene funzionalità che consentono di proteggere l'organizzazione da minacce di phishing:
 
-- **Spoof Intelligence**: per esaminare i messaggi falsificati inviati da mittenti in domini interni ed esterni e consentire o bloccare tali mittenti. Per ulteriori informazioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Spoof Intelligence**: per esaminare i messaggi falsificati inviati da mittenti in domini interni ed esterni e consentire o bloccare tali mittenti. Per altre informazioni, vedere [Configurare spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Criteri anti-phishing predefiniti**: attivazione o disattivazione dell'intelligence di spoofing, attivazione o disabilitazione dell'identificazione dei mittenti non autenticati in Outlook e specificare l'azione per i mittenti bloccati falsificati (passare alla cartella posta indesiderata o alla quarantena). Per ulteriori informazioni, vedere [Configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md).
+- **Criteri di anti-phishing in EOP**: attivazione o disattivazione dell'intelligence di spoofing, attivazione o disabilitazione dell'identificazione dei mittenti non autenticati in Outlook e specifica dell'azione per i mittenti bloccati falsificati (passare alla cartella posta indesiderata o alla quarantena). Per ulteriori informazioni, vedere [Configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md).
 
-- **Autenticazione della posta elettronica implicita**: EOP migliora i controlli di autenticazione della posta elettronica standard per la posta elettronica in ingresso ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)e [DMARC](use-dmarc-to-validate-email.md)) con la reputazione mittente, la cronologia del mittente, la cronologia dei destinatari, l'analisi comportamentale e altre tecniche avanzate che consentono di identificare i mittenti contraffatti. Per ulteriori informazioni, vedere [autenticazione della posta elettronica in Microsoft 365](email-validation-and-authentication.md).
+- **Autenticazione della posta elettronica implicita**: EOP migliora i controlli di autenticazione della posta elettronica standard per la posta elettronica in ingresso ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)e [DMARC](use-dmarc-to-validate-email.md)) con la reputazione mittente, la cronologia del mittente, la cronologia dei destinatari, l'analisi comportamentale e altre tecniche avanzate che consentono di identificare i mittenti contraffatti. Per altre informazioni, vedere [Autenticazione di posta elettronica in Microsoft 365](email-validation-and-authentication.md).
 
 ## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Ulteriore protezione anti-phishing in Office 365 ATP
 

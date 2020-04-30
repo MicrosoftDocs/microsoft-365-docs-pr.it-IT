@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Utilizzare la nuova caratteristica Intelligent Import nel servizio di importazione di Office 365 per filtrare gli elementi che vengono effettivamente importati nelle cassette postali di destinazione. Intelligent Import consente di decidere in modo proattivo quali dati importare e cosa lasciarsi alle spalle. Intelligent Import fornisce anche informazioni dettagliate sui dati che si stanno importando in Office 365. '
-ms.openlocfilehash: cc34163c46639765331772aaa1f4a0ae956294e3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ab276af0ee0859657074657f7b21d202947b98a
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636232"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942209"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrare i dati durante l'importazione dei file PST
 
@@ -45,7 +47,7 @@ Nell'immagine seguente viene illustrato il processo di importazione intelligente
   
 ![Processo di importazione intelligente in Office 365](../media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Nella procedura descritta in questo argomento si presuppone che sia stato creato un processo di importazione PST nel servizio di importazione di Office 365 tramite caricamento di rete o unità di trasporto. Per istruzioni dettagliate, vedere uno degli argomenti seguenti:
     
@@ -61,7 +63,7 @@ Nell'immagine seguente viene illustrato il processo di importazione intelligente
 
 Dopo aver creato un processo di importazione PST, attenersi alla procedura seguente per filtrare i dati prima di importarli in Office 365.
   
-1. Passare a [https://protection.office.com/](https://protection.office.com/) e accedere con le credenziali di un account amministratore nell'organizzazione. 
+1. Passare a [https://protection.office.com/](https://protection.office.com/) e accedere con le credenziali di un account amministratore dell'organizzazione. 
     
 2. Fare clic su **informazioni sulla governance** \> **Import** \> **Import PST files**.
     

@@ -16,14 +16,15 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Eseguire uno script per aggiungere rapidamente le cassette postali e i siti di OneDrive for business a una nuova esenzione associata a un caso di eDiscovery nel centro sicurezza & conformità.
-ms.openlocfilehash: f61c56beb17e31cf839d102a681b685a1e7fb046
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 499a4ce3eb0f7be59f71565c0c841f323a364305
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597293"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942989"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Utilizzo di uno script per aggiungere gli utenti a un'esenzione in un caso di eDiscovery nel centro sicurezza & Compliance
 
@@ -39,7 +40,7 @@ Di seguito vengono illustrati i passaggi per eseguire questa operazione:
   
 [Passaggio 3: eseguire lo script per creare un blocco e aggiungere utenti](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - È necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & compliance e un amministratore globale di SharePoint Online per eseguire lo script nel passaggio 3. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza & conformità di Office 365](assign-ediscovery-permissions.md).
     

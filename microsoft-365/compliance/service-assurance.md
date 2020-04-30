@@ -13,14 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - BCS160
+- MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Scaricare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e sapere come è possibile conformarsi alle normative ISO, HIPAA, FINRA e FedRAMP quando si utilizza Office 365.
-ms.openlocfilehash: e5d33f063d9e375c12346d245067be2b2b41de77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9a9198d8206b2693f0634355c926856c1327d9d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631283"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943589"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garanzia del servizio nel centro sicurezza & conformità
 
@@ -38,7 +39,7 @@ Utilizzare la garanzia del servizio nel centro sicurezza & conformità per acced
     
 - Health Insurance Portability and Accountability Act del 1996 (HIPAA)
     
-- Programma per la gestione delle autorizzazioni e dei rischi federali (FedRAMP)
+- FedRAMP (Federal Risk and Authorization Management Program)
     
 ## <a name="who-can-access-office-365-service-assurance-and-how"></a>Chi può accedere a Office 365 Service Assurance e come?
 
@@ -57,7 +58,7 @@ Utilizzare la garanzia del servizio nel centro sicurezza & conformità per acced
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere con l'account aziendale o dell'Istituto di istruzione. 
+2. Accedere usando l'account di lavoro o della scuola. 
     
 3. Nel riquadro sinistro, selezionare **Service Assurance**. Successivamente, [scegliere il settore e le impostazioni internazionali](service-assurance.md#Chooseyourindustryregional) e [gli altri utenti o gruppi di Assurance di servizio](service-assurance.md#addother).
     
@@ -104,7 +105,7 @@ Selezionare il report che si desidera scaricare e quindi fare clic su **Salva** 
 |**Pagina garanzia del servizio**|**Contenuto disponibile**|**Descrizione**|
 |:-----|:-----|:-----|
 |Rapporti di conformità  <br/> | FedRamp  <br/>  Valutazione GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Utilizzare i rapporti di conformità del servizio per esaminare le valutazioni di controllo eseguite da revisori indipendenti di terze parti delle operazioni di recapito dei servizi di Office 365.  <br/> |
-|Documenti di attendibilità  <br/> | Domande frequenti e white paper  <br/>  Report sulla gestione dei rischi  <br/> |Utilizzare white paper, domande frequenti, report di fine anno e altre risorse riservate Microsoft che sono rese disponibili per l'utente con contratto di non divulgazione per la revisione/Valutazione dei rischi.  <br/> |
+|Documenti sull'affidabilità  <br/> | Domande frequenti e white paper  <br/>  Report sulla gestione dei rischi  <br/> |Utilizzare white paper, domande frequenti, report di fine anno e altre risorse riservate Microsoft che sono rese disponibili per l'utente con contratto di non divulgazione per la revisione/Valutazione dei rischi.  <br/> |
 |Controlli controllati  <br/> |Standard globali e normative che Office 365 ha implementato.  <br/> | Assistenza per la valutazione dei rischi durante la valutazione, l'onboarding o l'utilizzo di servizi di Office 365. Scoprire:  <br/> <br/>-In che modo i controlli di Office 365 soddisfano i requisiti di sicurezza, conformità e privacy.  <br/>-Informazioni sui test dei controlli in Office 365, risultati di questi test e al termine dell'operazione.  <br/> |
    
 A seconda della configurazione specifica, le opzioni incluse nella visualizzazione potrebbero avere alcune differenze.

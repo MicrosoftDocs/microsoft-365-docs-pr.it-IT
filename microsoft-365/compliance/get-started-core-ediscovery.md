@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come iniziare a utilizzare Core eDiscovery in Microsoft 365. Dopo aver assegnato le autorizzazioni di eDiscovery e aver creato un caso, è possibile aggiungere membri, creare eDiscovery e quindi cercare ed esportare i dati rilevanti per l'indagine.
-ms.openlocfilehash: 838870f60c55c82225c3809aa8f281beadd0dba1
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551431"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943385"
 ---
-# <a name="get-started-with-core-ediscovery"></a>Introduzione a core eDiscovery
+# <a name="get-started-with-core-ediscovery"></a>Introduzione a Core eDiscovery
 
 EDiscovery core in Microsoft 365 fornisce uno strumento di eDiscovery di base che le organizzazioni possono utilizzare per la ricerca e l'esportazione di contenuto in Microsoft 365 e Office 365. È inoltre possibile utilizzare eDiscovery di base per inserire un blocco eDiscovery nei percorsi di contenuto, ad esempio le cassette postali di Exchange, i siti di SharePoint, gli account di OneDrive e Microsoft teams. Non è necessario nulla per la distribuzione di eDiscovery di base, ma vi sono alcune attività prerequisite che devono essere completate da un amministratore IT e da un responsabile di eDiscovery prima che l'organizzazione possa iniziare a usare eDiscovery di base per cercare, esportare e preservare il contenuto.
 
@@ -36,15 +36,25 @@ Licensing for Core eDiscovery richiede la sottoscrizione dell'organizzazione app
 
 - **Sottoscrizione organizzazione:** Per accedere a eDiscovery di base nel centro conformità di Microsoft 365 o nel centro sicurezza & conformità di Office 365 e utilizzare le funzionalità di esenzione ed esportazione, è necessario che l'organizzazione disponga di un abbonamento a Microsoft 365 E3 o Office 365 E3 o superiore.
 
-- **Licenze per utente:** Per applicare un blocco eDiscovery alle cassette postali degli utenti, all'utente deve essere assegnata una delle licenze seguenti, a seconda dell'abbonamento dell'organizzazione:
+- **Licenze per utente:** Per applicare un blocco eDiscovery alle cassette postali e ai siti, a un utente deve essere assegnata una delle licenze seguenti, a seconda dell'abbonamento dell'organizzazione:
 
   - Una licenza di Microsoft 365 E3 o Office 365 E3 o superiore
 
+   OPPURE
+
   - Una licenza Microsoft 365 E1 o Office 365 E1 con una licenza per il componente aggiuntivo di archiviazione di Exchange Online piano 2 o Exchange Online
 
+  E
+
+  - Una licenza Microsoft 365 E1 o Office 365 E1 con una licenza per i componenti aggiuntivi di SharePoint Online piano 2 o OneDrive for business piano 2
+  
   Per informazioni su come assegnare le licenze, vedere [assegnare licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
-Per informazioni su Microsoft 365 e Office 365 Licensing, scaricare e vedere la soluzione "Discover & Rispondi" nel [confronto di microsoft 365 Compliance Licensing](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.pdf).
+Per informazioni sulle licenze:
+
+- Scaricare e vedere la soluzione "Discover & Rispondi" nel [confronto di Microsoft 365 Compliance Licensing](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx).
+
+- Vedere la [Descrizione del servizio Centro sicurezza & Compliance](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Passaggio 2: assegnare autorizzazioni di eDiscovery
 

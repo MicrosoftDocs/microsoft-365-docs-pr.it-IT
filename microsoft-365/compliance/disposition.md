@@ -1,0 +1,144 @@
+---
+title: Disposizione del contenuto
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
+manager: laurawi
+ms.date: ''
+audience: Admin
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection:
+- M365-security-compliance
+search.appverid:
+- MOE150
+- MET150
+description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
+ms.openlocfilehash: cb48d2eb6d2d06093ddea74f13269faeb4798b97
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43950107"
+---
+# <a name="disposition-of-content"></a>Disposizione del contenuto
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+
+Utilizzare la scheda **disposizione** dalla **gestione dei record** nel centro conformità di Microsoft 365 per gestire le revisioni di disposizione e visualizzare i [record](records.md) eliminati automaticamente alla fine del periodo di conservazione. 
+
+## <a name="prerequisites-for-viewing-content-dispositions"></a>Prerequisiti per la visualizzazione di disposizioni di contenuto
+
+Per gestire le recensioni sulla disposizione e verificare che i record siano stati eliminati, è necessario disporre di autorizzazioni e controllo sufficienti.
+
+### <a name="permissions-for-disposition"></a>Autorizzazioni per la disposizione
+
+Per accedere correttamente alla scheda **disposizione** nel centro conformità di Microsoft 365, è necessario essere membri del ruolo **gestione disposizione** e del ruolo di **controllo di sola visualizzazione** . È consigliabile creare un nuovo gruppo di ruoli denominato **reviewers Disposition**e aggiungere questi due ruoli a quel gruppo di ruoli. 
+
+Specifica del ruolo di **controllo di sola visualizzazione** :
+
+- Poiché il cmdlet sottostante utilizzato per eseguire la ricerca nel log di controllo è un cmdlet di Exchange Online, è necessario assegnare agli utenti questo ruolo utilizzando l'interfaccia di [amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), anziché utilizzando la pagina **autorizzazioni** nel centro sicurezza & conformità. Per istruzioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+
+- I gruppi Microsoft 365 (in[precedenza gruppi di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) non sono supportati per questo ruolo. Assegnare invece le cassette postali utente, gli utenti di posta elettronica o i gruppi di sicurezza abilitati alla posta elettronica.
+
+Per istruzioni su come concedere agli utenti il ruolo di **gestione della disposizione** e creare il nuovo ruolo **revisori disposizione** , vedere [fornire agli utenti l' &amp; accesso al centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+
+### <a name="enable-auditing"></a>Abilitazione del controllo
+
+Verificare che il controllo sia abilitato almeno un giorno prima della prima azione di eliminazione. Per ulteriori informazioni, vedere [eseguire la ricerca nel log di controllo nel centro &amp; sicurezza e conformità di Office 365](search-the-audit-log-in-security-and-compliance.md). 
+
+## <a name="disposition-reviews"></a>Revisioni per l'eliminazione
+
+Quando il contenuto raggiunge la fine del periodo di conservazione, è possibile che si desideri rivedere il contenuto per decidere se può essere eliminato in modo sicuro ("Disposed"). Ad esempio, potrebbe essere necessario:
+  
+- Sospendere l'eliminazione del contenuto pertinente in caso di controversia legale o di controllo.
+    
+- Rimuovere il contenuto dall'elenco di disposizione per archiviarlo in un archivio, se il contenuto ha una ricerca o un valore cronologico.
+    
+- Assegnare un periodo di conservazione diverso al contenuto, probabilmente perché le impostazioni di conservazione originali erano una soluzione temporanea o provvisoria.
+    
+- Restituire il contenuto ai client o trasferirlo in un'altra organizzazione.
+
+Quando viene attivata una revisione della disposizione alla fine del periodo di conservazione:
+  
+- Gli utenti che scelgono ricevono una notifica tramite posta elettronica che dispongono di contenuto da esaminare. Questi revisori possono essere singoli utenti, gruppi di distribuzione o di sicurezza o gruppi di Office 365. Si noti che le notifiche vengono inviate su base settimanale.
+    
+- I revisori passano alla scheda **disposizione** del centro conformità Microsoft 365 per esaminare il contenuto e decidere se eliminarlo definitivamente, estenderne il periodo di conservazione o applicare un'etichetta di conservazione diversa.
+
+Una recensione di disposizione può includere il contenuto nelle cassette postali di Exchange, siti di SharePoint, account di OneDrive e gruppi Microsoft 365. Il contenuto in attesa di una revisione della disposizione in tali posizioni viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto.
+
+È possibile visualizzare una panoramica di tutte le disposizioni in sospeso nella scheda **Panoramica** . Per esempio:
+
+![Disposizioni in sospeso nella panoramica della gestione dei record](../media/dispositions-overview.png)
+
+Quando si seleziona la **visualizzazione tutte le disposizioni in sospeso**, viene visualizzata la pagina **disposizione** . Ad esempio:
+
+![Pagina disposizioni in Microsoft 365 Compliance Center](../media/disposition-tab.png)
+
+
+### <a name="workflow-for-a-disposition-review"></a>Flusso di lavoro per una revisione della disposizione
+
+Si tratta del flusso di lavoro di base per una revisione di disposizione quando viene pubblicata un'etichetta di conservazione e quindi applicata manualmente da un utente. In alternativa, un'etichetta di conservazione configurata per una revisione di disposizione può essere applicata automaticamente al contenuto.
+  
+![Grafico che mostra il flusso di come funziona la disposizione](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+  
+L'attivazione di una revisione della disposizione alla fine del periodo di conservazione è un'opzione di configurazione disponibile solo con un' [etichetta di conservazione](labels.md). Questa opzione non è disponibile in un criterio di conservazione.
+  
+![Impostazioni di conservazione per un'etichetta](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+ 
+> [!NOTE]
+> Quando si seleziona l'opzione **notifica a queste persone quando sono disponibili elementi pronti per la revisione**, specificare un utente o un gruppo di sicurezza abilitato alla posta elettronica. I gruppi Microsoft 365 (in[precedenza gruppi di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) non sono supportati per questa opzione.
+
+### <a name="viewing-and-disposing-of-content"></a>Visualizzazione e eliminazione del contenuto
+
+Quando un revisore riceve una notifica tramite posta elettronica che il contenuto è pronto per la revisione, accede alla scheda **disposizione** dalla **gestione dei record** nel centro conformità di Microsoft 365. I revisori possono vedere quanti elementi per ogni etichetta di conservazione sono in attesa di disposizione, quindi selezionare un'etichetta di conservazione per visualizzare tutto il contenuto con quell'etichetta.
+
+Dopo aver selezionato un'etichetta di conservazione, vengono visualizzate tutte le disposizioni in sospeso per tale etichetta dalla scheda **disposizione in sospeso** . Selezionare uno o più elementi in cui è possibile scegliere un'azione e immettere un commento di giustificazione:
+
+![Opzioni di disposizione](../media/retention-disposition-options.png)
+
+Come si può vedere dall'immagine, le azioni supportate sono: 
+  
+- Elimina definitivamente l'elemento
+- Estendere il periodo di conservazione
+- Applicazione di un'etichetta di conservazione diversa
+
+Se si dispone delle autorizzazioni per la posizione e il contenuto, è possibile utilizzare il collegamento nella colonna **percorso** per visualizzare i documenti nel percorso originale. Durante una revisione della disposizione, il contenuto non si sposta mai dal percorso originale e non viene mai eliminato fino a quando il revisore non lo sceglie.
+  
+Le notifiche di posta elettronica vengono inviate automaticamente ai revisori su base settimanale. Questo processo pianificato indica che quando il contenuto raggiunge la fine del periodo di conservazione, potrebbero essere necessari fino a sette giorni affinché i revisori ricevano la notifica di posta elettronica che il contenuto è in attesa di disposizione.
+  
+È possibile controllare tutte le azioni di disposizione.
+  
+### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Durata dell'eliminazione definitiva del contenuto eliminato
+
+Il contenuto in attesa di una revisione della disposizione viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto. Quando il revisore sceglie questa opzione, il contenuto del sito di SharePoint o dell'account OneDrive diventa idoneo per il processo di pulizia standard descritto in [modalità di funzionamento di un criterio di conservazione con il contenuto sul posto](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+
+## <a name="disposition-of-records"></a>Disposizione dei record
+
+> [!NOTE]
+> La possibilità di visualizzare i record che sono stati eliminati automaticamente senza una revisione della disposizione è gradualmente distribuita ai tenant nel corso di aprile e maggio 2020, quindi potrebbe non essere possibile visualizzare immediatamente questa esperienza.
+
+Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record eliminati automaticamente. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . In confronto, i record eliminati che sono stati approvati da eliminare tramite una revisione di disposizione visualizzano una **disposizione in sospeso**. Ad esempio:
+
+![Elementi eliminati senza una revisione di disposizione](../media/records-disposed2.png)
+
+Gli elementi visualizzati nella scheda **elementi eliminati** per le etichette dei record vengono conservati per un massimo di 7 anni dopo l'eliminazione dell'elemento, con un limite di 1 milione elementi per ogni record per quel periodo. Se si Visualizza il numero di **conteggio** vicino a questo limite di 1 milione e si ha bisogno di una prova di disposizione per i record, contattare il [supporto tecnico Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+
+> [!NOTE]
+> Questa funzionalità si basa su informazioni provenienti dal [Registro di controllo unificato](search-the-audit-log-in-security-and-compliance.md) e pertanto richiede l' [Abilitazione e la ricerca](turn-audit-log-search-on-or-off.md) in modo che gli eventi corrispondenti vengano acquisiti.
+    
+## <a name="filter-and-export-the-views"></a>Filtrare ed esportare le visualizzazioni
+
+Quando si seleziona un'etichetta di conservazione dalla pagina **disposizione** , la scheda **disposizione in sospeso** (se applicabile) e la scheda **elementi eliminati** consentono di filtrare le visualizzazioni per facilitare la ricerca di elementi in modo più semplice. 
+
+Per le disposizioni in sospeso, l'intervallo di tempo si basa sulla data di scadenza. Per gli elementi eliminati, l'intervallo di tempo è basato sulla data di eliminazione.
+  
+È possibile esportare le informazioni sugli elementi in una visualizzazione come file. csv che è possibile ordinare e gestire utilizzando Excel:
+
+![Opzione di esportazione per la disposizione](../media/retention-export-option.png)
+  
+![Dati di disposizione esportati in Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+
+

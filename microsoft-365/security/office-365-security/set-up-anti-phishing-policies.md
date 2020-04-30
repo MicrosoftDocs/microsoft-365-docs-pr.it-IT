@@ -14,27 +14,25 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui criteri anti-phishing di base in Exchange Online Protection (EOP) e sui criteri avanzati di anti-phishing ATP in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 32214d24c7ed030b3bc7aad36bf3ac99f68a17fb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638357"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949382"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
-I criteri per configurare le impostazioni di protezione anti-phishing sono disponibili nelle organizzazioni di Office 365 con le cassette postali di Exchange Online, le organizzazioni autonome di Exchange Online Protection (EOP) senza le cassette postali di Exchange Online e le organizzazioni di Office 365 Advanced Threat Protection (ATP).
+I criteri per configurare le impostazioni di protezione anti-phishing sono disponibili nelle organizzazioni Microsoft 365 con le cassette postali di Exchange Online, le organizzazioni standalone di Exchange Online Protection (EOP) senza le cassette postali di Exchange Online e le organizzazioni di Office 365 Advanced Threat Protection (ATP).
 
 I criteri di anti-phishing ATP sono disponibili solo nelle organizzazioni con Office 365 ATP. Ad esempio:
 
-- Office 365 Enterprise E5, Office 365 Education a5 e così via.
+- Microsoft 365 Enterprise E5, Microsoft 365 Education a5 e così via.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Office 365 ATP come componente aggiuntivo](https://products.office.com/exchange/advance-threat-protection)
 
-I criteri di anti-phishing ATP includono un criterio anti-phishing predefinito incorporato ed è possibile creare ulteriori criteri di anti-phishing ATP.
-
-Altre organizzazioni Microsoft 365 con le cassette postali di Exchange Online o le organizzazioni standalone di Exchange Online Protection (EOP) senza le cassette postali di Exchange Online dispongono di un criterio anti-phishing predefinito incorporato, ma non è possibile creare criteri aggiuntivi. Solo le organizzazioni con cassette postali di Exchange Online possono modificare i criteri anti-phishing predefiniti.
+Tutte le altre organizzazioni dispongono di criteri di anti-phishing.
 
 Nella tabella seguente sono descritte le differenze di alto livello tra i criteri di anti-phishing e i criteri di anti-phishing ATP:
 
@@ -42,8 +40,8 @@ Nella tabella seguente sono descritte le differenze di alto livello tra i criter
 |---|:---:|:---:|
 |**Caratteristica**|**Criteri anti-phishing**|**Criteri di anti-phishing ATP**|
 |Criterio predefinito creato automaticamente|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Creare criteri personalizzati||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Impostazioni di criteri<sup>\*</sup>||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Creare criteri personalizzati|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Impostazioni di criteri<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Impostazioni di rappresentazione||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Impostazioni di spoofing|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Soglie di phishing avanzate||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -57,7 +55,7 @@ Per configurare i criteri di anti-phishing, vedere i seguenti argomenti:
 
 - [Configurazione dei criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-Nella parte restante di questo argomento vengono descritte le impostazioni disponibili nei criteri di anti-phishing di EOP e ATP.
+Nella parte restante di questo argomento vengono descritte le impostazioni disponibili nei criteri anti-phishing e nei criteri di anti-phishing ATP.
 
 ## <a name="spoof-settings"></a>Impostazioni di spoofing
 
@@ -65,10 +63,10 @@ Lo spoofing è quando l'indirizzo from in un messaggio di posta elettronica (l'i
 
 Le seguenti impostazioni di spoofing sono disponibili nei criteri anti-phishing e nei criteri di anti-phishing ATP:
 
-- **Protezione anti-spoofing**: consente di abilitare o disabilitare la protezione anti-spoofing. Si consiglia di lasciarla abilitata. È possibile utilizzare il **criterio di intelligence di spoofing** per consentire o bloccare specifici mittenti interni ed esterni falsificati. Per ulteriori informazioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Protezione anti-spoofing**: consente di abilitare o disabilitare la protezione anti-spoofing. Si consiglia di lasciarla abilitata. È possibile utilizzare il **criterio di intelligence di spoofing** per consentire o bloccare specifici mittenti interni ed esterni falsificati. Per altre informazioni, vedere [Configurare spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Le impostazioni di spoofing sono abilitate per impostazione predefinita nei criteri anti-phishing predefiniti in EOP, i criteri di anti-phishing predefiniti e in nuovi criteri di anti-phishing ATP personalizzati creati. <br/><br/> Non è necessario disabilitare la protezione anti-spoofing se il record MX non punta a Microsoft 365; è invece possibile abilitare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Le impostazioni di spoofing sono abilitate per impostazione predefinita nei criteri anti-phishing predefiniti in EOP, i criteri di anti-phishing predefiniti e nei nuovi criteri di anti-phishing personalizzati o i criteri di anti-phishing ATP creati. <br/><br/> Non è necessario disabilitare la protezione anti-spoofing se il record MX non punta a Microsoft 365; è invece possibile abilitare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Per i messaggi provenienti da mittenti bloccati, è inoltre possibile specificare l'azione da eseguire sui messaggi:
 

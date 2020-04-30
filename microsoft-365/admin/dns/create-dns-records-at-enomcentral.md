@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in eNomCentral per Microsoft.
-ms.openlocfilehash: 2a1d32f0152b0c8a38b1a9e1c3fc46237708480d
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: b43261c601b953eef7f98170f04b51d8dcf97d8d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919494"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939272"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Creare record DNS in eNomCentral per Microsoft
 
@@ -34,8 +34,7 @@ ms.locfileid: "43919494"
 Se il proprio provider di hosting DNS è eNomCentral, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
   
 Dopo aver aggiunto questi record in eNomCentral, il dominio sarà configurato per l'uso con i servizi Microsoft.
-  
-Per informazioni su hosting Web e DNS per i siti Web con Microsoft, vedere [Usare un sito Web pubblico con Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -64,7 +63,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:46)](
   
 4. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    \(Scegliere il valore del **tipo di record** nell'elenco a discesa.\) 
+    Scegliere il valore del **tipo di record** nell'elenco a discesa.
     
     ||||
     |:-----|:-----|:-----|
@@ -165,7 +164,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:24)](
   
 5. Nelle caselle dei nuovi sei record digitare oppure copiare e incollare i valori seguenti.
     
-        (Choose the **Record Type** value from the drop-down list.) 
+Scegliere il valore del **tipo di record** nell'elenco a discesa.
         
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|
@@ -175,7 +174,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:24)](
     |enterpriseregistration  <br/> |CNAME (alias)  <br/> |enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME (alias)  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
    
-    ![eNom-BP-configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
   
 6. Selezionare **Salva**.
     
@@ -203,7 +202,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](
   
 4. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    (Choose the **Record Type** value from the drop-down list.) 
+Scegliere il valore del **tipo di record** nell'elenco a discesa.
     
     |**Host Name**|**Record Type**|**Indirizzo**|
     |:-----|:-----|:-----|

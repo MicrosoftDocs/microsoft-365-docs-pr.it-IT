@@ -13,25 +13,27 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: È possibile eseguire la duplicazione dei risultati di ricerca di eDiscovery esportati in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio in cassette postali diverse.
-ms.openlocfilehash: f3a0291c2c611814e35528e87f5a3897c4e8ba59
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17bfb7581da1147c7de8cae0437fe91316a3fcb6
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076274"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943133"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>De-duplicazione nei risultati della ricerca di eDiscovery
 
 In questo articolo viene illustrato il funzionamento della deduplicazione dei risultati della ricerca di eDiscovery e vengono illustrate le limitazioni dell'algoritmo di deduplicazione.
   
-Quando si utilizzano gli strumenti di Office 365 eDiscovery per esportare i risultati di una ricerca di eDiscovery, è possibile scegliere di deduplicare i risultati esportati. Cosa significa questo messaggio? Quando si attiva la deduplicazione (per impostazione predefinita, la deduplicazione non è abilitata), viene esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio nelle cassette postali in cui è stata eseguita la ricerca. La deduplicazione consente di risparmiare tempo riducendo il numero di elementi che è necessario esaminare e analizzare dopo l'esportazione dei risultati della ricerca. Tuttavia, è importante comprendere il funzionamento della deduplicazione e tenere presente che sono presenti limitazioni all'algoritmo che potrebbero provocare la marcatura di un elemento univoco come duplicato durante il processo di esportazione.
+Quando si utilizzano gli strumenti di eDiscovery per esportare i risultati di una ricerca di eDiscovery, è possibile scegliere di deduplicare i risultati esportati. Cosa significa questo messaggio? Quando si attiva la deduplicazione (per impostazione predefinita, la deduplicazione non è abilitata), viene esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio nelle cassette postali in cui è stata eseguita la ricerca. La deduplicazione consente di risparmiare tempo riducendo il numero di elementi che è necessario esaminare e analizzare dopo l'esportazione dei risultati della ricerca. Tuttavia, è importante comprendere il funzionamento della deduplicazione e tenere presente che sono presenti limitazioni all'algoritmo che potrebbero provocare la marcatura di un elemento univoco come duplicato durante il processo di esportazione.
   
 ## <a name="how-duplicate-messages-are-identified"></a>Come vengono identificati i messaggi duplicati
 
-Gli strumenti di eDiscovery di Office 365 utilizzano una combinazione delle proprietà di posta elettronica seguenti per determinare se un messaggio è un duplicato:
+gli strumenti di eDiscovery utilizzano una combinazione delle seguenti proprietà di posta elettronica per determinare se un messaggio è un duplicato:
   
 - **InternetMessageId** -questa proprietà consente di specificare l'identificatore del messaggio Internet di un messaggio di posta elettronica, che è un identificatore univoco globale che fa riferimento a una versione specifica di un messaggio specifico. Questo ID è generato dal programma client di posta elettronica del mittente o dal sistema di posta elettronica host che invia il messaggio. Se un utente invia un messaggio a più di un destinatario, l'ID del messaggio Internet sarà lo stesso per ogni istanza del messaggio. Le revisioni successive al messaggio originale riceveranno un identificatore di messaggio diverso. 
 
@@ -64,7 +66,7 @@ I messaggi univoci possono essere contrassegnati anche come duplicati quando la 
 > [!IMPORTANT]
 > Se le limitazioni dell'algoritmo di deduplicazione possono influire sulla qualità dei risultati della ricerca, non è necessario abilitare la deduplicazione quando si esportano gli elementi. Se non è probabile che le situazioni descritte in questa sezione siano un fattore nei risultati di ricerca e si desidera ridurre il numero di elementi più probabili per essere duplicati, è consigliabile abilitare la deduplicazione. 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Le informazioni contenute in questo articolo sono applicabili quando si esportano i risultati della ricerca utilizzando uno dei seguenti strumenti di eDiscovery:
 

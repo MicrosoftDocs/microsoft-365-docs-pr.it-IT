@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Informazioni su come leggere e comprendere la fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b16af7c6ef39743aa8d0a4e927786f64f47c4cd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634981"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942878"
 ---
 # <a name="understand-your-invoice"></a>Informazioni sulla fattura
 
 La fattura fornisce un riepilogo degli addebiti e delle istruzioni per il pagamento. È possibile [visualizzare la fattura online](#view-your-online-invoice) nell'interfaccia di amministrazione di Microsoft 365. È anche possibile scaricarlo nel formato di documento portatile (. pdf) per inviare tramite posta elettronica.
 
-Se si dispone di un abbonamento a Microsoft 365, vedere [visualizzare la fattura per microsoft 365 for business](view-your-bill-or-invoice.md).
+Se si dispone di un solo abbonamento a Microsoft 365, vedere [understand your fattura for microsoft 365 for business](understand-your-invoice2.md).
 
 ## <a name="understand-the-invoice-header"></a>Informazioni sull'intestazione della fattura
 
@@ -78,7 +78,7 @@ L'importo totale dovuto per ogni famiglia di servizi viene calcolato sottraendo 
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-Se sulla fattura sono presenti costi di Azure che si desiderano maggiori dettagli, vedere [understand addebits on your Microsoft Customer Agreement fatture](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
+Se sulla fattura sono presenti costi di Azure che si desiderano ulteriori informazioni, vedere [rivedere la fattura del contratto di servizio Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Comprendere l'ultima pagina fattura
 

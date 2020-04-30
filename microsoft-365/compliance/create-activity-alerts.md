@@ -16,24 +16,25 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
+ROBOTS: NOINDEX, NOFOLLOW
 description: Aggiungere e gestire gli avvisi di attività nel centro sicurezza & conformità in modo che Microsoft 365 invierà notifiche di posta elettronica quando gli utenti eseguono attività specifiche.
-ms.openlocfilehash: c649424ac1c20ea92e9b4cc637bab3ee89ac9a64
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6800bf5b8bbc013586a4be248a4e9e71fc70507
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634230"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943165"
 ---
 # <a name="create-activity-alerts"></a>Creare avvisi attività
 
 È possibile creare un avviso di attività che invierà una notifica tramite posta elettronica quando gli utenti eseguono attività specifiche in Office 365. Gli avvisi attività sono simili alla ricerca di eventi nel registro di controllo, tranne per il fatto che verrà inviato un messaggio di posta elettronica quando si verifica un evento per un'attività a cui è stato creato un avviso. 
   
- **Perché utilizzare gli avvisi attività anziché cercare il log di controllo?** È possibile che alcuni tipi di attività o attività vengano eseguiti da utenti specifici che si desidera conoscere. Invece di dover ricordare di eseguire la ricerca nel registro di controllo per tali attività, è possibile utilizzare gli avvisi attività affinché Microsoft 365 invii un messaggio di posta elettronica quando gli utenti eseguono tali attività. Ad esempio, è possibile creare un avviso di attività per notificare quando un utente elimina i file in SharePoint oppure è possibile creare un avviso per segnalare quando un utente Elimina definitivamente i messaggi dalla propria cassetta postale. La notifica di posta elettronica inviata contiene informazioni su quali attività sono state eseguite e sull'utente che lo ha eseguito. 
+ **Perché utilizzare gli avvisi attività anziché cercare il log di controllo?** È possibile che alcuni tipi di attività o attività vengano eseguiti da utenti specifici che si desidera conoscere. Invece di dover ricordare di eseguire la ricerca nel registro di controllo per tali attività, è possibile utilizzare gli avvisi attività affinché Microsoft 365 invii un messaggio di posta elettronica quando gli utenti eseguono tali attività. Ad esempio, è possibile creare un avviso di attività per notificare quando un utente elimina i file in SharePoint oppure è possibile creare un avviso per segnalare quando un utente Elimina definitivamente i messaggi dalla propria cassetta postale. La notifica di posta elettronica inviata contiene informazioni su quali attività sono state eseguite e sull'utente che lo ha eseguito.
 
 > [!NOTE]
-> Si consiglia di iniziare a utilizzare i criteri di avviso nel centro sicurezza e conformità invece di creare nuovi avvisi attività. I criteri di avviso offrono funzionalità aggiuntive, come la possibilità di creare un criterio di avviso che attiva un avviso quando un utente esegue un'attività specificata e visualizza avvisi nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [criteri di avviso](alert-policies.md).
+> Gli avvisi di attività sono deprecati. Si consiglia di iniziare a utilizzare i criteri di avviso nel centro sicurezza e conformità invece di creare nuovi avvisi attività. I criteri di avviso offrono funzionalità aggiuntive, come la possibilità di creare un criterio di avviso che attiva un avviso quando un utente esegue un'attività specificata e visualizza avvisi nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [criteri di avviso](alert-policies.md).
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per gestire gli avvisi di attività, è necessario che il ruolo Configurazione organizzazione sia assegnato al centro sicurezza & conformità. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli amministratore conformità e gestione organizzazione. Per ulteriori informazioni sull'aggiunta di membri ai gruppi di ruoli, vedere [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
@@ -47,7 +48,7 @@ ms.locfileid: "43634230"
 
 1. Passare a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Accedere con l'account aziendale o dell'Istituto di istruzione.
+2. Accedere usando l'account di lavoro o della scuola.
     
 3. Nella pagina **avvisi attività** fare clic ![su Aggiungi icona](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuovo**.
 
@@ -86,7 +87,7 @@ ms.locfileid: "43634230"
   
 1. Vai a Vai a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Accedere con l'account aziendale o dell'Istituto di istruzione.
+2. Accedere usando l'account aziendale o dell'istituto di istruzione.
     
 3. Nell'elenco degli avvisi attività per l'organizzazione, fare clic sull'avviso che si desidera disattivare.
     
@@ -113,7 +114,7 @@ Per riattivare un avviso di attività, ripetere questi passaggi e fare clic sull
     |:-----|:-----|:-----|
     |Visualizza un documento in un sito.  <br/> |File aperto  <br/> |Attività di file e cartelle  <br/> |
     |Modifica o modifiche di un documento.  <br/> |File modificato  <br/> |Attività di file e cartelle  <br/> |
-    |Condivide un documento con un utente esterno all'organizzazione.  <br/> |Condivisione di file, cartelle o siti  <br/> E  <br/> Invito alla condivisione creato  <br/> Per ulteriori informazioni, vedere [use sharing audit in the audit log](use-sharing-auditing.md).  <br/> |Attività di richiesta di accesso e condivisione  <br/> |
+    |Condivide un documento con un utente esterno all'organizzazione.  <br/> |Condivisione di file, cartelle o siti  <br/> E  <br/> Invito alla condivisione creato  <br/> Per altre informazioni, vedere [Usare il controllo della condivisione nel log di controllo](use-sharing-auditing.md).  <br/> |Attività di richiesta di accesso e condivisione  <br/> |
     |Carica o Scarica un documento.  <br/> |File caricato  <br/> E/o  <br/> File scaricato  <br/> |Attività di file e cartelle  <br/> |
     |Modifica le autorizzazioni di accesso a un sito.  <br/> |Autorizzazioni sito modificate  <br/> |Attività di amministrazione siti  <br/> |
 

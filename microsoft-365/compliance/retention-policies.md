@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42e130bfb9f988f0b771c45cbe08663f17e7b595
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632437"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949405"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -58,7 +58,7 @@ I criteri di conservazione vengono creati e gestiti dal [Centro conformità Micr
 
 In alternativa, è possibile passare alla stessa posizione nel Centro conformità Microsoft 365 usando la scheda **Soluzioni** > **Governance delle informazioni** > **Conservazione**. 
 
-**Se si vuole avere la possibilità di esaminare il contenuto prima che venga eliminato definitivamente,** provare a usare le [etichette di conservazione](labels.md) anziché i criteri di conservazione. Quando si crea un'etichetta di conservazione, è possibile configurare una [revisione per l'eliminazione](disposition-reviews.md) per rivedere il contenuto al termine del periodo di conservazione.
+**Se si vuole avere la possibilità di esaminare il contenuto prima che venga eliminato definitivamente,** provare a usare [etichette di conservazione](labels.md) anziché i criteri di conservazione. Quando si crea un'etichetta di conservazione, è possibile configurare una [revisione per l'eliminazione](disposition.md#disposition-reviews) per rivedere il contenuto al termine del periodo di conservazione.
 
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funzionamento dei criteri di conservazione con il contenuto presente
 

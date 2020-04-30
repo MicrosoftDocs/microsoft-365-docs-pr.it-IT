@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versione precedente della crittografia dei messaggi di Office 365 dipende da Microsoft Azure Rights Management (precedentemente noto come Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 3d98fff1987548292699972cedb4e3aa34d20b13
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 234115a76116fe9033e8da7868f846658d0d3eee
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635478"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943265"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configurare Azure Rights Management per la versione precedente della crittografia dei messaggi
 
 In questo argomento vengono descritti i passaggi da seguire per poter attivare e configurare Azure Rights Management (RMS), parte di Azure Information Protection, per l'utilizzo con la versione precedente di Office 365 Message Encryption (OME).
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Questo articolo si applica solo alla versione precedente di OME
+
 Se l'organizzazione non è stata ancora spostata nelle nuove funzionalità OME, ma è già stata distribuita OME, le informazioni contenute in questo articolo si applicano all'organizzazione. Microsoft consiglia di effettuare un piano per passare alle nuove funzionalità OME non appena è ragionevole per la propria organizzazione. Per istruzioni, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md). Per ulteriori informazioni sul funzionamento delle nuove funzionalità, vedere [crittografia dei messaggi di Office 365](ome.md). Il resto di questo articolo si riferisce al comportamento OME prima del rilascio delle nuove funzionalità OME.
 
 ## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>Prerequisiti per l'utilizzo della versione precedente della crittografia dei messaggi di Office 365
@@ -35,10 +36,6 @@ Se l'organizzazione non è stata ancora spostata nelle nuove funzionalità OME, 
 La crittografia dei messaggi di Office 365 (OME), tra cui IRM, dipende da Azure Rights Management (Azure RMS). Azure RMS è la tecnologia di protezione utilizzata da Azure Information Protection. Per utilizzare OME, è necessario che l'organizzazione includa un abbonamento a Exchange Online o Exchange Online Protection che, a sua sua disposizione, includa una sottoscrizione di Azure Rights Management.
   
 - Se non si è sicuri di cosa include la sottoscrizione, vedere le descrizioni del servizio Exchange Online per i [criteri dei messaggi, il ripristino e la conformità](https://technet.microsoft.com/library/exchange-online-message-policy-recovery-and-compliance.aspx).
-
-- Se non si dispone di una sottoscrizione di Azure RMS per Exchange Online o Exchange Online Protection, è necessario acquistare un abbonamento e attivarlo per primo.
-
-    Per informazioni sull'acquisto di una sottoscrizione a Azure Rights Management, vedere [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). Nella sezione successiva vengono fornite informazioni sull'attivazione di Azure Rights Management.
 
 - Se si dispone di Azure Rights Management, ma non è configurato per Exchange Online o Exchange Online Protection, in questo articolo viene illustrato come attivare Azure Rights Management e quindi viene descritto il modo migliore per configurare OME per l'utilizzo con Azure Rights Management.
 
@@ -68,46 +65,46 @@ Un dominio di pubblicazione trusted è un file XML che contiene informazioni sul
 |Asia  <br/> |https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Sud America  <br/> |https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Office 365 per il governo (Government Community Cloud)  <br/> Questo percorso di condivisione della chiave di RMS è riservato ai clienti che hanno acquistato Office 365 per gli SKU governativi.  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
-   
+  
 3. Configurare il percorso di condivisione della chiave eseguendo il cmdlet [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.160%29.aspx) come indicato di seguito: 
-    
-  ```powershell
-  Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
-  ```
 
-    Ad esempio, per configurare il percorso di condivisione della chiave se l'organizzazione si trova in Nord America:
+   ```powershell
+   Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
+   ```
+  
+   Ad esempio, per configurare il percorso di condivisione della chiave se l'organizzazione si trova in Nord America:
 
-  ```powershell
-  Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
-  ```
+   ```powershell
+   Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
+   ```
 
 4. Eseguire il cmdlet [Import-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200724%28v=exchg.150%29.aspx) con l'opzione-RMSOnline per importare il dominio di pubblicazione trusted da Azure Rights Management: 
 
-  ```powershell
-  Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
-  ```
+   ```powershell
+   Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
+   ```
 
-    Dove *TPDName* è il nome che si desidera utilizzare per il dominio di pubblicazione trusted. Ad esempio, "contoso North American di pubblicazione trusted". 
+   Dove *TPDName* è il nome che si desidera utilizzare per il dominio di pubblicazione trusted. Ad esempio, "contoso North American di pubblicazione trusted". 
 
-5. Per verificare che l'organizzazione sia stata configurata correttamente per l'utilizzo del servizio Azure Rights Management, eseguire il cmdlet [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) con l'opzione-RMSOnline, come indicato di seguito: 
+5. Per verificare che l'organizzazione sia stata configurata correttamente per l'utilizzo del servizio Azure Rights Management, eseguire il cmdlet [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) con l'opzione-RMSOnline, come indicato di seguito:
 
-  ```powershell
-  Test-IRMConfiguration -RMSOnline
-  ```
+   ```powershell
+   Test-IRMConfiguration -RMSOnline
+   ```
 
-    Tra le altre cose, questo cmdlet consente di verificare la connettività con il servizio Azure Rights Management, di scaricare il dominio di pubblicazione trusted e di verificarne la validità.
+   Tra le altre cose, questo cmdlet consente di verificare la connettività con il servizio Azure Rights Management, di scaricare il dominio di pubblicazione trusted e di verificarne la validità.
 
 6. Eseguire il cmdlet [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) come segue per disabilitare i modelli di Azure Rights Management disponibili in Outlook sul Web e Outlook: 
 
-  ```powershell
-  Set-IRMConfiguration -ClientAccessServerEnabled $false
-  ```
+   ```powershell
+   Set-IRMConfiguration -ClientAccessServerEnabled $false
+   ```
 
-7. Eseguire il cmdlet [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) come segue per abilitare Azure Rights Management per l'organizzazione di posta elettronica basata sul cloud e configurarla per l'utilizzo di Azure Rights Management per la crittografia dei messaggi di Office 365: 
+7. Eseguire il cmdlet [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) come segue per abilitare Azure Rights Management per l'organizzazione di posta elettronica basata sul cloud e configurarla per l'utilizzo di Azure Rights Management per la crittografia dei messaggi di Office 365:
 
-  ```powershell
-  Set-IRMConfiguration -InternalLicensingEnabled $true
-  ```
+   ```powershell
+   Set-IRMConfiguration -InternalLicensingEnabled $true
+   ```
 
 8. Per verificare di aver importato correttamente il dominio di pubblicazione trusted e abilitato Azure Rights Management, utilizzare il cmdlet Test-IRMConfiguration per testare la funzionalità di Azure Rights Management. Per informazioni dettagliate, vedere "Esempio 1" in [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
 

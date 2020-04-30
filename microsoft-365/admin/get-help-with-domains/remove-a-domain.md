@@ -21,18 +21,16 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare gli utenti e i gruppi in un altro dominio.
-ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b072a8f30d6b6a655441dec49ff9af9b4d0fdbe4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628435"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938637"
 ---
 # <a name="remove-a-domain"></a>Rimuovere un dominio
-
-Collaboratori: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
- **Se non si trovano le informazioni desiderate, vedere le [domande frequenti sui domini](../setup/domains-faq.md)**. 
+ Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
 Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sottoscrizione di Microsoft 365 diverso? Oppure si desidera semplicemente annullare l'abbonamento? È possibile [modificare il piano o la sottoscrizione](../../commerce/subscriptions/switch-to-a-different-plan.md) oppure [annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).
   
@@ -231,6 +229,6 @@ Il problema persiste? Potrebbe essere necessario rimuovere manualmente il domini
 
 [Ottenere assistenza per i domini di Office 365](get-help-with-domains.md)
 
-[Passare a un piano Microsoft 365 for business diverso](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Passare a un piano di Microsoft 365 per le aziende diverso](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [Annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md)

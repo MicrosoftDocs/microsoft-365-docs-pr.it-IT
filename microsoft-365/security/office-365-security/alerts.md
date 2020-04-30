@@ -12,17 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
+- MET150
 - BCS160
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Informazioni sugli avvisi che è possibile impostare per facilitare la sicurezza in Office 365.
-ms.openlocfilehash: b8fe746ef18ade5f8e35d5a51ab132377e813915
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 24e36b6867600985a9ca0f9cb3cbafc5a8c6029e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634617"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943556"
 ---
 # <a name="alerts-in-the-security-amp-compliance-center"></a>Avvisi nel centro sicurezza &amp; e conformità
 
@@ -36,13 +37,13 @@ Gli avvisi sono nel centro &amp; sicurezza e conformità. Ecco come accedere all
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere con l'account aziendale o dell'Istituto di istruzione. 
+2. Accedere usando l'account di lavoro o della scuola. 
     
 3. Nel riquadro sinistro fare clic su **avvisi** per visualizzare le funzionalità avvisi. 
     
  **Per accedere al centro sicurezza &amp; e conformità utilizzando l'icona di avvio delle app:**
   
-1. Accedere con l'account aziendale o dell'Istituto di istruzione. 
+1. Accedere usando l'account aziendale o dell'istituto di istruzione. 
     
 2. Fare clic sull'icona di avvio delle app nell'angolo in alto a sinistra, quindi fare clic su **conformità sicurezza &amp; **.
     

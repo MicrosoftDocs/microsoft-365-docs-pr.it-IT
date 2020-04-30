@@ -1,5 +1,5 @@
 ---
-title: Chiudere l'account
+title: Chiudere il proprio account
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -15,16 +15,16 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Informazioni su come chiudere l'account con Microsoft.
-ms.openlocfilehash: 3a193aea92ff384d53ce320a98cd9043d990b678
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080383"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942854"
 ---
-# <a name="close-your-account"></a>Chiudere l'account
+# <a name="close-your-account"></a>Chiudere il proprio account
 
-Quando chiudi l'account con Microsoft, tutte le informazioni relative al tuo account vengono eliminate. Queste informazioni includono abbonamenti, licenze, metodi di pagamento, utenti e dati utente. Prima di iniziare questa procedura, verificare di eseguire il backup di tutti i dati che si desidera conservare.
+Quando si chiude l'account con Microsoft, verranno eliminate tutte le informazioni correlate all'account. Queste informazioni includono abbonamenti, licenze, modalità di pagamento, utenti e dati utente. Prima di iniziare questa procedura, verificare di eseguire il backup di tutti i dati che si desidera conservare.
 
 ## <a name="step-1-delete-users"></a>Passaggio 1: eliminare gli utenti
 
@@ -72,7 +72,7 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 3. Nella pagina autenticazione a più fattori disabilitare tutti gli account tranne l'account di amministratore globale attualmente in uso.
 
-È inoltre possibile <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#use-powershell">utilizzare PowerShell per disabilitare l'autenticazione a più fattori per più utenti</a>.
+È inoltre possibile <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">utilizzare PowerShell per disabilitare l'autenticazione a più fattori per più utenti</a>.
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Passaggio 5: eliminare la directory in Azure Active Directory
 

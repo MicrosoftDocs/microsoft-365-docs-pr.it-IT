@@ -11,15 +11,17 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utilizzare lo strumento eDiscovery ricerca contenuto per cercare gli elementi importati nelle cassette postali in Microsoft 365 da un'origine dati di terze parti. È possibile creare una query per cercare tutti gli elementi importati o creare una query per la ricerca di tipi di dati specifici di terze parti. In questo articolo vengono elencati i valori che è possibile utilizzare in una query di parole chiave per eseguire la ricerca nei tipi di dati di terze parti che è possibile importare in Microsoft 365.
-ms.openlocfilehash: 07a489d7c18cc305b7ffc745f7fc7870d8f72a2f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633371"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942969"
 ---
 # <a name="use-content-search-to-search-third-party-imported-data"></a>Utilizzare la ricerca contenuto per cercare i dati importati di terze parti
 

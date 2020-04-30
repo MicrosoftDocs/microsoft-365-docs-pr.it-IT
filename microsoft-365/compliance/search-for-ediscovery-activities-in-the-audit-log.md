@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Informazioni su come eseguire la ricerca nel registro di controllo per gli eventi registrati quando gli amministratori di conformità eseguono le attività di ricerca contenuto e di eDiscovery nel centro sicurezza & Compliance.
-ms.openlocfilehash: 96f6b121064e7540778a418baa96bae448e4eed3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f575953fb2d48ac996e443589ff312743d93d424
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631827"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943655"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Cercare le attività di eDiscovery nel log di controllo
 
@@ -46,7 +48,7 @@ Al momento, è necessario eseguire alcune operazioni specifiche per visualizzare
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere con l'account aziendale o dell'Istituto di istruzione.
+2. Accedere usando l'account di lavoro o della scuola.
     
 3. Nel riquadro sinistro fare clic su **Cerca**e quindi su **Ricerca log di controllo**.
     

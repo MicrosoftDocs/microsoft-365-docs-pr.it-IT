@@ -9,14 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Advanced eDiscovery v 1.0 vengono anche ritirati nello stesso periodo di tempo.
-ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48dbbd86071f8b07fa3dbf3a699f0d7e085fd50b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635570"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943345"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ritiro degli strumenti legacy di eDiscovery
 
@@ -180,7 +182,7 @@ Poiché queste funzionalità sono ora disponibili nel [<span class="underline">c
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Sequenza temporale
+### <a name="timeline"></a>Tempistica
 
 - 1 luglio 2020: non è possibile utilizzare **New-MailboxSearch** per creare nuove ricerche eDiscovery sul posto e archiviazioni sul posto, ma è comunque possibile utilizzare i cmdlet per l'esecuzione, la modifica e l'eliminazione di ricerche esistenti e conserva a proprio rischio. Il supporto tecnico Microsoft non fornirà più assistenza per questi tipi di ricerche e esenzioni.
 
@@ -261,7 +263,7 @@ Il cmdlet **Search-Mailbox** in Exchange Online PowerShell viene ritirato come a
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Sequenza temporale
+### <a name="timeline"></a>Tempistica
 
 -  1 luglio 2020: il cmdlet **Search-Mailbox** non sarà più disponibile e il supporto tecnico Microsoft non fornirà più assistenza.
 
@@ -323,7 +325,7 @@ Queste operazioni nell'API dei servizi Web di Exchange vengono utilizzate dalla 
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Sequenza temporale
+### <a name="timeline"></a>Tempistica
 
 - 1 luglio 2020: le operazioni GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes e GetHoldOnMailboxes non saranno più disponibili e il supporto tecnico Microsoft non fornirà più assistenza.
 
@@ -357,7 +359,7 @@ A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Sequenza temporale
+### <a name="timeline"></a>Tempistica
 
 - 1 ° luglio 2020: non è possibile creare nuovi casi avanzati di eDiscovery v 1.0.
 

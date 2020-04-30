@@ -23,18 +23,18 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprendere i motivi per cui a volte è necessario che i piani di commutazione vengano eseguiti manualmente o chiamando il supporto.
-ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631930"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943144"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Perché non è possibile cambiare I piani di Microsoft 365 for business?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo relativo all'interfaccia di amministrazione (anteprima), vedere [perché non è possibile aggiornare i piani?](why-cant-i-change-plans.md). L'anteprima è disponibile per tutti gli amministratori di Microsoft 365, è possibile optare selezionando **try the preview** Toggle che si trova nella parte superiore della Home page. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo relativo all'interfaccia di amministrazione (anteprima), vedere [perché non è possibile aggiornare i piani?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). L'anteprima è disponibile per tutti gli amministratori di Microsoft 365, è possibile optare selezionando **try the preview** Toggle che si trova nella parte superiore della Home page. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 Se il pulsante **Cambia** piano non è visualizzato, non è possibile commutarlo automaticamente. In alcuni casi è possibile risolvere il problema e usare il pulsante **Cambia piano**, in altri invece si può scegliere di [cambiare piano manualmente](switch-plans-manually.md). Posizionare il puntatore del mouse sull'icona delle informazioni per visualizzare un messaggio che spiega il motivo per cui il pulsante **Cambia piano** non è disponibile. Usare le informazioni in questo articolo per risolvere il problema.

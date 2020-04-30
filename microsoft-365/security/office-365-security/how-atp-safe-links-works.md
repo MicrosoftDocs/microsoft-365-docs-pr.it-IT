@@ -10,16 +10,18 @@ ms.date: ''
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La funzionalità collegamenti sicuri fornisce il tempo di fare clic sulla verifica dei link ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Leggere questo articolo per informazioni su come funzionano i collegamenti sicuri di ATP.
-ms.openlocfilehash: b77ab718afdc4f68d8120e11fa5d1a321b66f32e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7887c3c2920f472d4baa7ff899c3e3b4f704385d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638011"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943712"
 ---
 # <a name="how-atp-safe-links-works"></a>Funzionamento di Collegamenti sicuri ATP
 > [!IMPORTANT] 

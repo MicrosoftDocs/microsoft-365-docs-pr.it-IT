@@ -15,21 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 'Sintesi: una spiegazione della crittografia in Azure.'
-ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Una spiegazione della crittografia in Azure.
+ms.openlocfilehash: cac3a27a209b4c2da66dbf583d2be88cf06aca34
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637434"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943315"
 ---
 # <a name="encryption-in-azure"></a>Crittografia in Azure
 
+Le misure di salvaguardia tecnologiche in Azure, ad esempio le comunicazioni crittografate e i processi operativi, consentono di proteggere i dati. È inoltre possibile implementare ulteriori funzionalità di crittografia e gestire le proprie chiavi di crittografia. Indipendentemente dalla configurazione dei clienti, Microsoft applica la crittografia per proteggere i dati dei clienti in Azure. Microsoft consente inoltre di controllare i dati ospitati in Azure tramite una serie di tecnologie avanzate per crittografare, controllare e gestire le chiavi di crittografia, nonché controllare e verificare l'accesso ai dati. Nello spazio di archiviazione di Azure sono inoltre disponibili una serie completa di funzionalità di sicurezza che consentono agli sviluppatori di creare applicazioni sicure.
+
 ## <a name="introduction"></a>Introduzione
 
-Le misure di salvaguardia tecnologiche in Azure, ad esempio le comunicazioni crittografate e i processi operativi, consentono di proteggere i dati. È inoltre possibile implementare ulteriori funzionalità di crittografia e gestire le proprie chiavi di crittografia. Indipendentemente dalla configurazione dei clienti, Microsoft applica la crittografia per proteggere i dati dei clienti in Azure. Microsoft consente inoltre di controllare i dati ospitati in Azure tramite una serie di tecnologie avanzate per crittografare, controllare e gestire le chiavi di crittografia, controllare e verificare l'accesso ai dati. Nello spazio di archiviazione di Azure sono inoltre disponibili una serie completa di funzionalità di sicurezza che consentono agli sviluppatori di creare applicazioni sicure.
-
-Azure offre numerosi meccanismi per la protezione dei dati quando si sposta da una posizione a un'altra. Microsoft utilizza TLS per proteggere i dati durante il viaggio tra i servizi cloud e i clienti. I datacenter di Microsoft negoziano una connessione TLS con i sistemi client che si connettono ai servizi di Azure. La perfetta segretezza avanzata (PFS) protegge le connessioni tra i sistemi client dei clienti e i servizi cloud di Microsoft tramite chiavi univoche. Le connessioni utilizzano anche la lunghezza della chiave di crittografia a 2.048 bit basata su RSA. Questa combinazione rende difficile l'intercettazione e l'accesso ai dati in transito.
+Azure offre numerosi meccanismi per la protezione dei dati quando si sposta da una posizione a un'altra. Microsoft utilizza TLS per proteggere i dati durante il viaggio tra i servizi cloud e i clienti. I Data Center di Microsoft negoziano una connessione TLS con i sistemi client che si connettono ai servizi di Azure. La perfetta segretezza avanzata (PFS) protegge le connessioni tra i sistemi client dei clienti e i servizi cloud di Microsoft tramite chiavi univoche. Le connessioni utilizzano anche la lunghezza della chiave di crittografia a 2.048 bit basata su RSA. Questa combinazione rende difficile l'intercettazione e l'accesso ai dati in transito.
 
 È possibile proteggere i dati in transito tra un'applicazione e Azure utilizzando la [crittografia sul retro del client](https://docs.microsoft.com/azure/storage/storage-client-side-encryption), HTTPS o SMB 3,0. È possibile abilitare la crittografia per il traffico tra le macchine virtuali (VM) e gli utenti. Con le [reti virtuali di Azure](https://azure.microsoft.com/services/virtual-network/), è possibile utilizzare il protocollo IPSec standard del settore per crittografare il traffico tra il gateway VPN aziendale e Azure, nonché tra le macchine virtuali situate nella rete virtuale.
 
@@ -41,7 +41,7 @@ Per ulteriori informazioni sulla crittografia in Azure, vedere [Azure Encryption
 
 La crittografia del disco di Azure consente di crittografare i dischi VM di Windows e Linux come servizio (IaaS). La crittografia su disco di Azure utilizza la funzionalità BitLocker di Windows e la funzionalità DM-Crypt di Linux per fornire la crittografia a livello di volume per il sistema operativo e i dischi di dati. Inoltre, garantisce che tutti i dati sui dischi VM siano crittografati a riposo nello spazio di archiviazione di Azure. La crittografia del disco di Azure è integrata con il Vault Key di Azure per facilitare il controllo, la gestione e la verifica dell'utilizzo delle chiavi di crittografia e dei segreti.
 
-Per ulteriori informazioni, vedere [Suggerimenti per la sicurezza per le macchine virtuali Windows in Azure](https://docs.microsoft.com/azure/security/azure-security-disk-encryption).
+Per ulteriori informazioni, vedere [Suggerimenti per la sicurezza per le macchine virtuali Windows in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/security-recommendations).
 
 ## <a name="azure-storage-service-encryption"></a>Crittografia del servizio di archiviazione di Azure
 
