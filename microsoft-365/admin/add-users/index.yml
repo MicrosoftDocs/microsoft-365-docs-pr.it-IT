@@ -1,0 +1,80 @@
+### YamlMime:Landing
+title: Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365
+summary: Consultare queste risorse per aiutare gli amministratori a svolgere attività comuni oppure visualizzare il riquadro di spostamento a sinistra per un elenco completo.
+metadata:
+  title: Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365
+  description: Gestione delle password, aggiunta e rimozione di utenti, configurazione di gruppi e gestione delle licenze
+  ms.service: O365-administration
+  ms.subservice: subservice
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 01/27/2020
+  localization_priority: Priority
+  ms.openlocfilehash: fc4300d57f3a14a7f71b0ff61a3aedf4c54bbac6
+  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43955314"
+landingContent:
+- title: Gestire gli utenti
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Aggiungere un utente
+      url: add-users.md
+    - text: Modifica di un utente
+      url: add-users.md
+    - text: Aggiungere un altro indirizzo di posta elettronica
+      url: ../email/add-another-email-alias-for-a-user.md
+    - text: Creare una cassetta postale condivisa
+      url: ../email/create-a-shared-mailbox.md
+    - text: Assegnare licenze agli utenti
+      url: ../manage/assign-licenses-to-users.md
+    - text: Rimuovere licenze dagli utenti
+      url: ../manage/remove-licenses-from-users.md
+    - text: Utilizzo del dominio personalizzato
+      url: ../email/change-email-address.md
+- title: Gestire gruppi
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Creare i gruppi
+      url: ../create-groups/create-groups.md
+    - text: Aggiungere membri
+      url: ../create-groups/add-or-remove-members-from-groups.md
+    - text: Ripristinare o recuperare un gruppo eliminato
+      url: ../create-groups/restore-deleted-group.md
+    - text: Gestire l'accesso guest nei gruppi
+      url: ../create-groups/manage-guest-access-in-groups.md
+- title: Gestire le password
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Reimpostare la password di un utente
+      url: reset-passwords.md
+    - text: Impostare le password in modo che non scada mai
+      url: set-password-to-never-expire.md
+    - text: Consentire agli utenti di reimpostare le loro password
+      url: let-users-reset-passwords.md
+    - text: Impostare i criteri di scadenza delle password per l'organizzazione
+      url: ../manage/set-password-expiration-policy.md
+    - text: Reimpostare la password di amministratore
+      url: reset-passwords.md#reset-my-admin-password
+- title: Rimuovere un dipendente
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Eliminare un utente
+      url: delete-a-user.md
+    - text: Accedere ai dati di un ex utente ed eseguirne il backup
+      url: get-access-to-and-back-up-a-former-user-s-data.md
+    - text: Inoltrare la posta elettronica a un altro utente
+      url: ../email/configure-email-forwarding.md
+    - text: Rimuovere la licenza
+      url: ../manage/remove-licenses-from-users.md
+    - text: Ripristinare un utente eliminato
+      url: restore-user.md
+    - text: Rimuovere i dati aziendali dai dispositivi (Microsoft 365 Business Premium)
+      url: ../../business/remove-company-data.md

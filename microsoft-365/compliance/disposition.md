@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: cb48d2eb6d2d06093ddea74f13269faeb4798b97
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/30/2020
-ms.locfileid: "43950107"
+ms.locfileid: "43952619"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -120,7 +120,7 @@ Il contenuto in attesa di una revisione della disposizione viene eliminato solo 
 > [!NOTE]
 > La possibilità di visualizzare i record che sono stati eliminati automaticamente senza una revisione della disposizione è gradualmente distribuita ai tenant nel corso di aprile e maggio 2020, quindi potrebbe non essere possibile visualizzare immediatamente questa esperienza.
 
-Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record eliminati automaticamente. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . In confronto, i record eliminati che sono stati approvati da eliminare tramite una revisione di disposizione visualizzano una **disposizione in sospeso**. Ad esempio:
+Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record eliminati automaticamente. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . Ad esempio:
 
 ![Elementi eliminati senza una revisione di disposizione](../media/records-disposed2.png)
 

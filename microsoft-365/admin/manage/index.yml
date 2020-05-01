@@ -1,0 +1,83 @@
+### YamlMime:Landing
+title: Gestione dei dati e del servizio
+summary: Consultare queste risorse per aiutare gli amministratori a svolgere attività comuni oppure visualizzare il riquadro di spostamento a sinistra per un elenco completo.
+metadata:
+  title: Gestione dei dati e del servizio
+  description: Monitorare lo stato del servizio, eseguire il backup dei dati, installare i componenti aggiuntivi e aggiornare le app più recenti
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 7289f6a0b971db0f9b785f35c6bbae839ecae226
+  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43955326"
+landingContent:
+- title: Monitorare lo stato del servizio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Monitorare le attività degli utenti utilizzando i report
+      url: ../activity-reports/activity-reports.md
+    - text: Monitorare l'analisi di utilizzo
+      url: ../usage-analytics/usage-analytics.md
+    - text: Abilitare le analisi di utilizzo
+      url: ../usage-analytics/enable-usage-analytics.md
+    - text: Modificare le informazioni di contatto dell'organizzazione
+      url: change-address-contact-and-more.md
+    - text: Aggiornare le informazioni di contatto dell'amministratore
+      url: update-phone-number-and-email-address.md
+    - text: Configurare le opzioni di rilascio
+      url: release-options-in-office-365.md
+- title: Blocca l'accesso degli utenti e il backup dei dati
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Accedere ai dati di un ex utente ed eseguirne il backup
+      url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
+    - text: Configurare la conservazione della posta elettronica (Microsoft 365 Business Premium)
+      url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
+    - text: Rimuovere i dati aziendali dai dispositivi (Microsoft 365 Business Premium)
+      url: ../../business/remove-company-data.md
+- title: Gestire i componenti aggiuntivi e le app
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Aggiornare l'organizzazione alle app più recenti
+      url: ../setup/upgrade-users-to-latest-office-client.md
+    - text: Personalizzare l'icona di avvio delle app
+      url: customize-the-app-launcher.md
+    - text: Requisiti per la distribuzione centralizzata dei componenti aggiuntivi
+      url: centralized-deployment-of-add-ins.md
+    - text: Installare e gestire i componenti aggiuntivi tramite la distribuzione centralizzata
+      url: manage-deployment-of-add-ins.md
+- title: Microsoft Teams
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Documentazione relativa all'amministratore di Microsoft Teams
+      url: https://docs.microsoft.com/en-us/microsoftteams/
+    - text: Utilizzare Outlook e i team insieme
+      url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+  - linkListType: learn
+    links:
+    - text: Formazione su Microsoft Teams
+      url: https://support.office.com/article/4f108e54-240b-4351-8084-b1089f0d21d7
+- title: OneDrive e SharePoint
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Documentazione di SharePoint per i professionisti IT e gli amministratori
+      url: https://docs.microsoft.com/sharepoint/
+    - text: Documentazione di OneDrive per i professionisti IT e gli amministratori
+      url: https://docs.microsoft.com/onedrive/
+  - linkListType: how-to-guide
+    links:
+    - text: Gestire la condivisione in OneDrive e SharePoint
+      url: https://docs.microsoft.com/onedrive/manage-sharing
+    - text: Creare e gestire siti
+      url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center
