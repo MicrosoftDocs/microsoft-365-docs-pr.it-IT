@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come configurare Microsoft 365 per la collaborazione con utenti esterni all'organizzazione.
-ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 338b486725f727506d654a4507d8ea47c6fa2bab
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630726"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002253"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborare con utenti esterni all'organizzazione
 
@@ -42,7 +46,7 @@ Dopo aver abilitato lo scenario che si desidera utilizzare per la condivisione c
 
 - [Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md) : informazioni sulle procedure consigliate per la condivisione con utenti non autenticati.
 - [Limite di esposizione accidentale](share-limit-accidental-exposure.md) -informazioni su come ridurre le probabilità di condivisione accidentale di contenuti sensibili con utenti esterni all'organizzazione.
-- [Creare un ambiente di condivisione Guest sicuro](create-secure-guest-sharing-environment.md)) -Informazioni sugli strumenti forniti in Microsoft 365 per garantire che la condivisione con persone esterne all'organizzazione venga svolta in modo sicuro e conforme ai requisiti di governance.
+- [Creare un ambiente di condivisione Guest sicuro](create-secure-guest-sharing-environment.md) -informazioni sugli strumenti forniti in Microsoft 365 per garantire che la condivisione con persone esterne all'organizzazione venga svolta in modo sicuro e conforme ai requisiti di governance.
 
 ## <a name="collaborate-with-partner-companies"></a>Collaborare con le aziende partner
 
@@ -52,7 +56,7 @@ Quando si lavora su un progetto di grandi dimensioni che coinvolge numerosi ospi
 
 Se alcune delle funzionalità di condivisione in Microsoft 365 sono in conflitto con i criteri di governance, vedere [limitare la condivisione in microsoft 365](microsoft-365-limit-sharing.md) per informazioni sulle opzioni di limitazione della condivisione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Introduzione alla collaborazione di file in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

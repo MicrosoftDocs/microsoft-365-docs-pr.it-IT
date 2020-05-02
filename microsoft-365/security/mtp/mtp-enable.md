@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fa970b28939ad43bf6a2717e603013277bc9130f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
+ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633904"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997515"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Attivare Microsoft Threat Protection
 
@@ -36,7 +36,7 @@ Microsoft Threat Protection unifica il processo di risposta agli eventi imprevis
 Per ottenere la migliore protezione e ottimizzare Microsoft Threat Protection, è consigliabile distribuire tutti i servizi supportati in rete. Per ulteriori informazioni, [vedere informazioni sulla distribuzione di servizi supportati](deploy-supported-services.md).
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Verificare l'idoneità delle licenze e le autorizzazioni necessarie
-Una licenza Microsoft 365 E5, E5 Security o a5 o una combinazione valida di licenze fornisce l'accesso ai servizi supportati e autorizza l'utilizzo di Microsoft Threat Protection in Microsoft 365 Security Center.
+Una licenza di sicurezza Microsoft 365 E5, E5 Security, a5 o a5 o una combinazione valida di licenze fornisce l'accesso ai servizi supportati e autorizza l'utilizzo di Microsoft Threat Protection in Microsoft 365 Security Center.
 
 Per informazioni dettagliate sulla licenza, [leggere i requisiti di licenza](prerequisites.md#licensing-requirements).
 
@@ -51,7 +51,7 @@ Prima di abilitare il servizio, Microsoft 365 Security Center ([Security.Microso
 ![Immagine della pagina di benvenuto di Microsoft Threat Protection visualizzata se Microsoft Threat Protection non è stato attivato](../../media/mtp-welcome.png)
 *nella pagina di benvenuto Microsoft Threat Protection in Microsoft 365 Security Center*
 
-Per abilitare Microsoft Threat Protection, è sufficiente completare il processo dalla pagina di benvenuto. È inoltre possibile abilitare Microsoft Threat Protection accedendo alle **Impostazioni** ([Security.Microsoft.com/settings](https://security.microsoft.com/settings)) nel riquadro di spostamento e selezionando **Microsoft Threat Protection**.
+Per abilitare Microsoft Threat Protection, è sufficiente completare il processo dalla pagina di benvenuto. È inoltre possibile abilitare Microsoft Threat Protection accedendo alle **Impostazioni** ([Security.Microsoft.com/settings](https://security.microsoft.com/settings)) nel riquadro di spostamento e selezionando **Microsoft Threat Protection**. Fare clic su **Salva**.
 
 >[!NOTE]
 >Se non si visualizzano le **Impostazioni** nel riquadro di spostamento o non è stato possibile accedere alla pagina, controllare autorizzazioni e licenze.

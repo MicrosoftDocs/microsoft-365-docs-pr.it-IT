@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come collaborare con gli utenti in un sito di SharePoint.
-ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b5a50b4d0f7486b3c86546a672b01db3a5b000
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630738"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002278"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
@@ -52,7 +56,7 @@ Prendere nota delle impostazioni nella sezione **vincoli di collaborazione** . V
 
 I siti di SharePoint moderni utilizzano i gruppi di Microsoft 365 per controllare l'accesso al sito. È necessario che le impostazioni Guest dei gruppi Microsoft 365 siano attivate affinché l'accesso guest in siti di SharePoint funzioni.
 
-![Schermata di Microsoft 365 gruppi Guest Settings in Microsoft 365 Admin Center](../media/office-365-groups-guest-settings.png)
+![Screenshot delle impostazioni guest di Gruppi di Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365](../media/office-365-groups-guest-settings.png)
 
 Per impostare Microsoft 365 groups Guest Settings
 
@@ -129,7 +133,7 @@ Per invitare gli ospiti a un gruppo
 3. Digitare gli indirizzi di posta elettronica degli utenti che si desidera invitare e quindi fare clic su **Aggiungi**.
 4. Fare clic su **Chiudi**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md)
 

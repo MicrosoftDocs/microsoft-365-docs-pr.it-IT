@@ -5,23 +5,27 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come creare un sito Extranet o un team B2B con gli utenti Guest gestiti provenienti da un'organizzazione partner.
-ms.openlocfilehash: 24a2652d4d025f194d0754b90b6a21a054f4159a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3a1faab90907daf9c48ec02c51eb272187fb0fde
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604771"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44001704"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Creare una Extranet B2B con guest gestiti.
 
 È possibile utilizzare la [gestione dei diritti di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) per creare una rete Extranet B2B per collaborare con un'organizzazione partner che utilizza Azure Active Directory. Questo consente agli utenti di eseguire la registrazione automatica nel sito o nel team Extranet e di ricevere l'accesso tramite un flusso di lavoro di approvazione.
 
-Con questo metodo di condivisione delle risorse per la collaborazione, l'organizzazione partner può contribuire a mantenere e approvare gli utenti guest alla fine, riducendo l'onere per il reparto IT e consentendo ai più familiari del contratto di collaborazione di gestire l'utente. accesso.
+Con questo metodo di condivisione delle risorse per la collaborazione, l'organizzazione partner può contribuire a mantenere e approvare gli utenti guest alla fine, riducendo l'onere per il reparto IT e consentendo a coloro che hanno familiarità con il contratto di collaborazione di gestire l'accesso degli utenti.
 
 In questo articolo vengono illustrati i passaggi per creare un pacchetto di risorse (in questo caso, un sito o un team) che è possibile condividere con un'organizzazione partner tramite un modello di registrazione di accesso self-service. 
 

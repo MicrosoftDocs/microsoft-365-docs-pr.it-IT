@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 43793a1780542b1825c693030dd9d4dbff4ee3d7
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636664"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002344"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Passaggio 1: preparare l'organizzazione per Windows 10 Enterprise
 
@@ -50,13 +50,13 @@ Utilizzare il valore appropriato nella tabella seguente quando si configurano i 
 | Level | Dati raccolti | Valore |
 |:--- |:--- |:--- |
 | Sicurezza | Solo dati di sicurezza. | 0 |
-| Di base | Dati di sicurezza e dati di sistema e qualità di base. | 1  |
-| Avanzato | Dati di sicurezza, dati di sistema di base e di qualità, nonché informazioni avanzate e dati di affidabilità avanzati. | 2  |
-| Full | Dati di sicurezza, dati di sistema e qualità di base, approfondimenti e dati di affidabilità avanzati e dati di diagnostica completi. | 3  |
+| Di base | Dati di sicurezza e dati di sistema e qualità di base. | 1 |
+| Avanzato | Dati di sicurezza, dati di sistema di base e di qualità, nonché informazioni avanzate e dati di affidabilità avanzati. | 2 |
+| Full | Dati di sicurezza, dati di sistema e qualità di base, approfondimenti e dati di affidabilità avanzati e dati di diagnostica completi. | 3 |
 
 È possibile abilitare i dati di diagnostica tramite uno dei seguenti metodi:
 
-* **Microsoft Intune** -se si prevede di utilizzare Intune per gestire i dispositivi, è possibile creare un criterio di configurazione per abilitare i dati di diagnostica configurando i criteri di sistema di <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> . Per ulteriori informazioni su come configurare i criteri di configurazione, vedere [gestire le impostazioni e le funzionalità nei propri dispositivi con i criteri di Microsoft Intune](https://aka.ms/intuneconfigpolicies).
+* **Microsoft Intune** -se si prevede di utilizzare Intune per gestire i dispositivi, è possibile creare un criterio di configurazione per abilitare i dati di diagnostica configurando i criteri di sistema di <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> .
 * **Editor del registro** di sistema: è possibile utilizzare l'editor del registro di sistema per abilitare manualmente i dati di diagnostica su ogni dispositivo dell'organizzazione. In alternativa, è possibile scrivere uno script per modificare il registro di sistema. Se esiste già un criterio di gestione, ad esempio criteri di gruppo o MDM, questa impostazione del registro di sistema verrà ignorata.
 * **Criteri di gruppo** : se non si prevede di registrare i dispositivi in Intune, è possibile utilizzare un oggetto Criteri di gruppo per impostare il livello di dati diagnostici dell'organizzazione.
 * **Prompt dei comandi** : è possibile impostare i dati e il servizio di diagnostica di Windows 10 per iniziare automaticamente con il prompt dei comandi. Questo metodo è consigliabile se si sta testando il servizio solo in alcuni dispositivi. Se si Abilita l'avvio automatico del servizio con questo comando, non verrà configurato il livello di dati diagnostici. Se non è stato configurato un livello di dati di diagnostica tramite gli strumenti di gestione, il servizio opererà con il livello avanzato predefinito.

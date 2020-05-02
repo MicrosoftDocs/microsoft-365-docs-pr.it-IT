@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 per Enterprise.
-ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9148acadf5ec05562ac1a5cbbca9cbf7d0a1b65
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631562"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002292"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -45,7 +45,7 @@ Microsoft 365 per Enterprise è disponibile in tre piani.
 |:-------|:-----|
 | E3 | Accedere a prodotti e caratteristiche di base all'interno di Microsoft 365 per migliorare la produttività sul posto di lavoro e guidare l'innovazione in modo sicuro. |
 | E5 | Accedere ai prodotti e alle funzionalità più recenti all'interno di Microsoft 365, inclusi gli strumenti avanzati per la protezione delle minacce, la sicurezza e la collaborazione. Include tutte le funzionalità di E3's, oltre a strumenti avanzati per la sicurezza, la voce e l'analisi dei dati. |
-| F1 | Connettersi con i propri dipendenti di FIRSTLINE tramite strumenti e risorse appositamente creati che consentono loro di svolgere al meglio le proprie attività. |
+| F3 | Connettersi con i propri dipendenti di FIRSTLINE tramite strumenti e risorse appositamente creati che consentono loro di svolgere al meglio le proprie attività. |
 |||
 
 Se si dispone di Microsoft 365 E3, è anche possibile ottenere queste [offerte](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -101,7 +101,7 @@ Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi
 
 È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
-## <a name="deploy"></a>Distribuzione
+## <a name="deploy"></a>Distribuire
 
 Esistono tre modi per distribuire i prodotti, le caratteristiche e i componenti di Microsoft 365 per Enterprise:
 
