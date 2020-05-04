@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799979"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943245"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -131,7 +131,7 @@ Inoltre, è possibile scegliere se una condizione deve rilevare tutti i tipi di 
 
 ![Opzioni per il numero di istanze e l'accuratezza della corrispondenza](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifers-for-a-label"></a>Configurazione di classificatori per un'etichetta
+### <a name="configuring-classifiers-for-a-label"></a>Configurazione di classificatori per un'etichetta
 
 Selezionando l'opzione **Classificatori**, scegliere uno o più classificatori predefiniti:
 

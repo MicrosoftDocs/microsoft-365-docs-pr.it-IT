@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6496c5f82ee21e2085568f5e623fc6ee75145b8a
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637444"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949313"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -38,8 +38,9 @@ All'interno dell'organizzazione sono probabilmente presenti tipi di contenuto di
     
 - Permessi di lavoro che devono essere **classificati come record** in modo che non sia possibile modificarli o eliminarli. 
     
-In tutti questi casi, le etichette di conservazione aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione.
-  
+
+In tutti questi casi, le etichette di conservazione in Microsoft 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione.
+
 Con le etichette di conservazione è possibile:
   
 - **Permettere agli utenti dell'organizzazione di applicare manualmente un’etichetta di conservazione** a contenuti in Outlook sul web, Outlook 2010 e versioni successive, OneDrive, SharePoint e gruppi di Microsoft 365. Spesso gli utenti sono quelli che conoscono meglio il tipo di contenuto che stanno usando, per cui sono in grado di classificarlo e applicare i criteri appropriati. 
@@ -165,7 +166,7 @@ Le etichette di conservazione possono applicare esattamente le stesse azioni di 
   
 Inoltre, un'etichetta di conservazione ha due opzioni di conservazione che sono disponibili solo in un'etichetta di conservazione e non in un criterio di conservazione. Con un'etichetta di conservazione, è possibile:
   
-- Attivare una revisione per l'eliminazione alla fine del periodo di conservazione, in modo che venga impostata una revisione obbligatoria dei documenti di SharePoint e OneDrive prima che vengano eliminati. Per altre informazioni, vedere [Panoramica delle revisioni per l'eliminazione](disposition-reviews.md).
+- Attivare una revisione per l'eliminazione alla fine del periodo di conservazione, in modo che venga impostata una revisione obbligatoria dei documenti di SharePoint e OneDrive prima che vengano eliminati. Per ulteriori informazioni, vedere [Eliminazione dei contenuti](disposition.md).
     
 - Iniziare il periodo di conservazione dal momento in cui il contenuto è stato etichettato invece che in base all'età o alla data dell'ultima modifica. Questa opzione si applica solo al contenuto di siti di SharePoint e account di OneDrive. Per la posta elettronica di Exchange il periodo di conservazione è sempre basato sulla data di invio o ricezione del messaggio, indipendentemente dall'opzione scelta.
     
@@ -263,7 +264,7 @@ Le etichette di conservazione applicate automaticamente sono potenti perché:
     
 - [Parole chiave specifiche che corrispondono a una query creata.](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [Una corrispondenza per classificatori sottoponibili a training](#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [Una corrispondenza per classificatori sottoponibili a training](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
 ![Pagina per scegliere la condizione dell’etichetta applicata automaticamente](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
@@ -313,7 +314,7 @@ Esempi di query:
 ![Editor di query](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Etichette applicate automaticamente al contenuto con classificatori sottoponibili a training
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>Etichette applicate automaticamente al contenuto con classificatori sottoponibili a training
 
 Se si sceglie l'opzione del classificatore sottoponibile a training, è possibile selezionare un classificatore predefinito oppure personalizzato. I classificatori predefiniti includono il **linguaggio offensivo**, i **curriculum**, il **codice sorgente**, le **molestie mirate**, i **contenuti volgari** e le **minacce**:
 
@@ -324,6 +325,7 @@ Per applicare automaticamente un'etichetta utilizzando questa opzione, i siti e 
 Per altre informazioni sui classificatori sottoponibili a training, vedere [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md).
 
 Per avere un esempio di configurazione, vedere [Come preparare e usare un classificatore integrato](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier).
+
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint
 

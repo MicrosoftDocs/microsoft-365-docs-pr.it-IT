@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di conservazione, si può basare un periodo di conservazione sul momento in cui si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e a tutto il contenuto in cui è applicata un'etichetta per quel tipo di evento vengono applicate le azioni di conservazione dell'etichetta. La conservazione basata su eventi viene usata generalmente nell'ambito di un processo di gestione dei record.
-ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ad6d734da77b6e0a706c4ff0d71b82caf0166c8
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43616020"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949303"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 
@@ -43,7 +43,7 @@ La conservazione basata su eventi viene generalmente utilizzata come parte di un
     
 - Un documento che è stato dichiarato come record ma il cui trigger di evento non è ancora stato eseguito viene conservato a tempo indeterminato (i record non possono essere eliminati in modo permanente) finché un evento non attiva il periodo di conservazione di quel documento.
     
-- Le etichette basate su eventi di solito attivano una revisione per l'eliminazione alla fine del periodo di conservazione, in modo che un Record Manager possa esaminare e eliminare manualmente il contenuto. Per ulteriori informazioni, vedere [Panoramica delle revisioni per l'eliminazione](disposition-reviews.md).
+- Le etichette di conservazione basate su eventi di solito attivano una revisione per l'eliminazione alla fine del periodo di conservazione, in modo che un Record Manager possa esaminare e eliminare manualmente il contenuto. Per ulteriori informazioni, vedere [Eliminazione dei contenuti](disposition.md).
     
 Un'etichetta basata su un evento ha le stesse funzionalità di qualsiasi etichetta in Office 365. Per ulteriori informazioni, vedere [Panoramica delle etichette](labels.md).
 

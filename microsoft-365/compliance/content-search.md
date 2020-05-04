@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Microsoft 365, gruppi di Yammer e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: 61e8b15af29bf02849a83f6a68bdd1c0accd7e8d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900740"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943175"
 ---
 # <a name="content-search"></a>Ricerca contenuto
 
@@ -302,6 +302,8 @@ Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei 
   Nei risultati della ricerca, i riepiloghi delle riunioni vengono identificati come **Riunione** nel **campo Tipo** e i riepiloghi delle chiamate vengono identificati come **Chiamata**. Inoltre, le conversazioni che fanno parte di un canale di Teams e le chat di 1xN vengono identificate come **Messaggistica istantanea** nel campo **Tipo**.
   
   ![Le riunioni di Teams, le chiamate e le chat di 1xN sono identificate nel campo Tipo](../media/O365-ContentSearch-Teams-MessageKind.png)
+
+   Per altre informazioni, vedere [Microsoft Teams lancia eDiscovery per chiamate e riunioni](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
 - È possibile usare la proprietà di posta elettronica **Tipologia** o la condizione di ricerca **Tipo di messaggio** per la ricerca specifica di contenuto in Teams. 
   

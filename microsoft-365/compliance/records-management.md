@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la gestione dei record in Microsoft 365, è possibile applicare le pianificazioni di conservazione specifiche dell'organizzazione in un piano di archiviazione per gestire la conservazione, la dichiarazione dei record e l'eliminazione a supporto dell'intero ciclo di vita del contenuto.
-ms.openlocfilehash: e74c7d9e5f01b49805fccdfac2c719835354b97a
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106082"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949249"
 ---
 # <a name="records-management-in-microsoft-365"></a>Gestione dei record in Microsoft 365
 
@@ -30,17 +30,17 @@ Le organizzazioni di tutti i tipi richiedono una soluzione di gestione dei recor
 
 La soluzione di gestione dei record supporta i seguenti elementi:
 
-- **Etichettare il contenuto come record**. Pubblicare le [etichette di record](records.md) applicabili dagli utenti finali o le [etichette di record applicabili automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) agli elementi che contengono informazioni sensibili, parole chiave o tipi di contenuto specifici.
+- **Etichettare il contenuto come record**. Creare e pubblicare etichette di conservazione che dichiarano il contenuto come [record](records.md) che può essere applicato dagli utent finali o [applicato automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) identificando informazioni sensibili, parole chiave o tipi di contenuto.
 
 - **Eseguire la migrazione e gestire il piano di conservazione con il piano file** e usare [gestione del piano di archiviazione](file-plan-manager.md) da inserire nel piano di conservazione esistente oppure crearne di nuovi con descrittori di file e gerarchie in espansione.
 
-- **Stabilire criteri di conservazione e di eliminazione nell'etichetta di record**. Definire i periodi di [conservazione](retention-policies.md#retaining-content-for-a-specific-period-of-time) ed [eliminazione](retention-policies.md#deleting-content-thats-older-than-a-specific-age) in base a vari fattori, tra cui la data dell'ultima modifica o di creazione.
+- **Stabilire criteri di conservazione e di eliminazione**. Definire i periodi di [conservazione](retention-policies.md#retaining-content-for-a-specific-period-of-time) ed [eliminazione](retention-policies.md#deleting-content-thats-older-than-a-specific-age) in base a vari fattori, tra cui la data dell'ultima modifica o di creazione.
 
 - **Attivare la conservazione basata su eventi** con la [conservazione basata su eventi](event-driven-retention.md).
 
-- **Rivedere e convalidare l'eliminazione ** con la [revisione per l'eliminazione](disposition-reviews.md).
+- **Rivedere e convalidare l'eliminazione ** con la [revisione per l'eliminazione](disposition.md#disposition-reviews) e la prova dell'[eliminazione dei record](disposition.md#disposition-of-records).
 
-- **Esaminare gli elementi eliminati con la revisione per l'eliminazione** ed [esportare un report di eliminazione](disposition-reviews.md#export-the-disposition-items) per ulteriori convalide e report.
+- **Esportare le informazioni riguardanti tutti gli elementi eliminati** con l'[opzione di esportazione](disposition.md#filter-and-export-the-views).
 
 - **Impostare autorizzazioni specifiche** per le funzioni di gestione dei record nell'organizzazione per [avere l’accesso corretto](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Per implementare una strategia di gestione dei record nella tua organizzazione Microsoft o Office 365, usare etichette di conservazione che dichiarino un contenuto come record. Quindi pubblicare o applicare automaticamente l'etichetta record di conservazione.
-ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632115"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949283"
 ---
 # <a name="overview-of-records"></a>Panoramica dei record
 
@@ -38,7 +38,7 @@ A livelli elevati, dichiarare un contenuto come record significa che:
 
 - I record vengono eliminati al termine del loro periodo di conservazione.
 
-È possibile usare le [etichette di conservazione](labels.md) per classificare un contenuto come record. Dopo aver creato le etichette di conservazione che dichiarano i record, è possibile [pubblicare](labels.md#how-retention-labels-work-with-retention-label-policies) tali etichette, in modo che gli utenti possano usarle per classificare il contenuto come record, o [applicarle automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) al contenuto che si vuole classificare come record. È possibile usare le etichette di conservazione per dichiarare i record per implementare un'unica strategia di gestione dei record coerente in tutto Office 365. Altre funzionalità di gestione dei record, al contrario, ad esempio il Centro record, si applicano solo al contenuto di SharePoint Online.
+Usare le [etichette di conservazione](labels.md) per classificare un contenuto come record. Dopo aver creato le etichette di conservazione che dichiarano i record, è possibile [pubblicare](labels.md#how-retention-labels-work-with-retention-label-policies) tali etichette, in modo che gli utenti possano usarle per classificare il contenuto come record, o [applicarle automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) al contenuto che si vuole classificare come record. È possibile usare le etichette di conservazione per dichiarare i record per implementare un'unica strategia di gestione dei record coerente in tutto Office 365. Altre funzionalità di gestione dei record, al contrario, ad esempio il Centro record, si applicano solo al contenuto di SharePoint Online.
 
 Tenere presente quanto segue in relazione ai record:
 
@@ -74,10 +74,10 @@ Tenere presente quanto segue in relazione ai record:
 
 Quando si crea un'etichetta di conservazione, si può scegliere di usarla per classificare il contenuto come record. Per dichiarare il contenuto come record, eseguire le operazioni seguenti:
 
-1. Creare un’etichetta di conservazione. Nel Centro conformità Microsoft 365 passare a **Gestione record** \> **Piano di archiviazione**. Nella pagina **Piano di archiviazione** fare clic su **Crea un'etichetta**.
+1. Creare un’etichetta di conservazione. Nel Centro conformità Microsoft 365 passare a **Gestione record** \> **Piano di archiviazione**. Nella pagina **Piano di archiviazione**, selezionare **Crea un'etichetta**.
 
-2. Nella pagina **Impostazioni etichetta** della procedura guidata scegliere l'opzione di impostazione dell'etichetta di conservazione per dichiarare il contenuto come record.<br/>
-
+2. Nella pagina **Impostazioni etichetta** della procedura guidata scegliere l'opzione di impostazione dell'etichetta di conservazione per dichiarare il contenuto come record.
+    
    ![Fare clic sulla casella di controllo Utilizza l'etichetta per classificare il contenuto come Record](../media/recordversioning6.png)
 
 3. [Pubblicare](labels.md#how-retention-labels-work-with-retention-label-policies) o [Applicare automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) l'etichetta di conservazione ai siti di SharePoint e/o agli account di OneDrive.

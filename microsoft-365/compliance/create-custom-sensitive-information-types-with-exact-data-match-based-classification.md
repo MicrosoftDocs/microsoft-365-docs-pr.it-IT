@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match.
-ms.openlocfilehash: 94adbd4382c6e0a5a736feeb7de4bc32e213d25c
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: d234b4c9ba01b185c367074ee78b0f92be226c46
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919703"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938616"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match
 
@@ -72,7 +72,7 @@ L’impostazione e la configurazione della classificazione basata su EDM implica
       - Fino a 32 colonne (campi) per origine dati
       - Fino a 5 colonne (campi) contrassegnate come ricercabile
 
-2. Strutturare i dati sensibili nel file .csv in modo che la prima riga includa i nomi dei campi usati per la classificazione basata su EDM. Nel file .csv potrebbero essere presenti nomi di campo, come "ssn", "birthdate", "firstname", "lastname" e così via. Ad esempio, il file .csv è denominato  *PatientRecords.csv* e le relative colonne sono  *PatientID*,  *MRN*,  *LastName*,  *FirstName*,  *SSN*  e così via.
+2. Strutturare i dati sensibili nel file .csv in modo che la prima riga includa i nomi dei campi usati per la classificazione basata su EDM. Nel file .csv potrebbero essere presenti nomi di campo, come "ssn", "birthdate", "firstname", "lastname" e così via. Le intestazioni di colonna non possono includere spazi o caratteri di sottolineatura nei nomi. Ad esempio, il file .csv è denominato  *PatientRecords.csv* e le relative colonne sono  *PatientID*,  *MRN*,  *LastName*,  *FirstName*,  *SSN* e così via.
 
 3. Definire lo schema per il database delle informazioni sensibili nel formato .xml (come riportato nell'esempio seguente). Assegnare al file dello schema il nome  **edm.xml** e configurarlo in modo che per ogni colonna del database sia presente una riga che usi la sintassi: 
 
