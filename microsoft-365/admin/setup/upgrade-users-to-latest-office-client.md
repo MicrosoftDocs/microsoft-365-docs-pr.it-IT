@@ -19,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Informazioni su come aggiornare gli utenti all'ultimo client di Office.
-ms.openlocfilehash: 148069011784b822c5ce366190afd60bf278772f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627535"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011274"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aggiornare gli utenti di Microsoft 365 per le aziende all'ultimo client di Office
 
@@ -124,4 +124,4 @@ Se non è stato ancora fatto, assegnare licenze a qualsiasi utente dell'organizz
 Dopo aver verificato che gli utenti che si desidera aggiornare dispongono di licenze, il passaggio finale consiste nell'installare Office, vedere [scaricare e installare o reinstallare Office nel PC o nel Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
   
 > [!TIP]
-> Se non si desidera che gli utenti installino Office autonomamente, vedere [manage software Download Settings in office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). È possibile utilizzare lo [strumento di distribuzione di Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) per scaricare il software di Office nella rete locale e quindi distribuire Office utilizzando il metodo di distribuzione del software utilizzato in genere.
+> Se non si desidera che gli utenti installino Office autonomamente, vedere [manage software Download Settings in office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). È possibile utilizzare lo [strumento di distribuzione di Office](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) per scaricare il software di Office nella rete locale e quindi distribuire Office utilizzando il metodo di distribuzione del software utilizzato in genere.

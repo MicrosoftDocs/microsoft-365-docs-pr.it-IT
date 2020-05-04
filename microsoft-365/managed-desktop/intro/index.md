@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636221"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011912"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
@@ -53,7 +53,7 @@ Gli amministratori IT traggono vantaggio da queste caratteristiche:
 Microsoft Managed Desktop assume la responsabilità di gestire i dispositivi registrati e il software Microsoft che utilizzano.
 
 - **Hardware:** Invece del reparto IT che ha a disposizione per la ricerca e il testing dei dispositivi (e dei relativi driver), i dispositivi specifici vengono accuratamente testati da Microsoft Managed Desktop, ottenendo un [elenco curato di dispositivi](../service-description/device-list.md) che soddisfano i requisiti di prestazioni a livello aziendale e che sono garantiti per funzionare con il servizio. È possibile ottenere i dispositivi manualmente (o collaborare con un partner) o riutilizzare i dispositivi già presenti, purché siano presenti nell'elenco approvato. La registrazione dei dispositivi è semplice e semplice e, prima di essere distribuita, è anche possibile [personalizzare](../working-with-managed-desktop/config-setting-overview.md) alcuni aspetti dell'esperienza del dispositivo per gli utenti finali.
-- **Aggiornamenti:** Microsoft Managed Desktop consente di configurare e gestire tutti gli aspetti dei [gruppi di distribuzione](../service-description/updates.md) per la qualità di Windows 10 e gli aggiornamenti delle funzionalità, i driver, il firmware, le definizioni di antivirus e gli aggiornamenti di Office ProPlus. Questo include i test e la verifica estensivi di tutti gli aggiornamenti, garantendo che i dispositivi registrati siano sempre aggiornati e minimizzi le interruzioni, liberando il reparto IT da tale attività in continuazione.
+- **Aggiornamenti:** Microsoft Managed Desktop consente di configurare e gestire tutti gli aspetti dei [gruppi di distribuzione](../service-description/updates.md) per la qualità di Windows 10 e gli aggiornamenti delle funzionalità, i driver, il firmware, le definizioni di antivirus e le app Microsoft 365 per gli aggiornamenti dell'organizzazione. Questo include i test e la verifica estensivi di tutti gli aggiornamenti, garantendo che i dispositivi registrati siano sempre aggiornati e minimizzi le interruzioni, liberando il reparto IT da tale attività in continuazione.
 - **App:** Come parte di Microsoft 365 Enterprise, Microsoft fornisce (e gestisce) diverse applicazioni Microsoft principali. Tuttavia, è probabile che siano presenti anche altre app di cui hai bisogno per la tua azienda. Invece del reparto IT che deve testare, creare pacchetti e distribuire le app che Microsoft ti aiuta a distribuirle e che possono essere utili per l' [app desktop](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) , se necessario. Per ulteriori informazioni, vedere [app in Microsoft Managed Desktop](../get-ready/apps.md).
 
 

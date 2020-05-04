@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 763a9f3c7c517a5d093b9691310720468053bf24
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02e6eb5914af9ad72971029913d31b214ebbd190
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636475"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011936"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop
 
@@ -61,10 +61,10 @@ Funzionamento della distribuzione degli aggiornamenti:
 <tr><td>Aggiornamenti delle funzionalità per il sistema operativo</td><td>0 giorni</td><td>30 giorni</td><td>60 giorni</td><td>90 giorni</td></tr>
 <tr><td>Driver/firmware</td><td colspan="4">Segue la pianificazione per gli aggiornamenti della qualità</td></tr>
 <tr><td>Definizione di antivirus</td><td colspan="4">Aggiornato con ogni analisi</td></tr>
-<tr><td>Microsoft 365 Apps for Enterprise</td><td colspan="4">Segue il canale mensile di Office
+<tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Segue il canale mensile di Office
 </table>
 
-Per ulteriori informazioni sul canale mensile per le app Microsoft 365 per Enterprise, vedere [Overview of Update channels for microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).
+Per ulteriori informazioni sul canale mensile per Microsoft 365 Apps for Enterprise, vedere [Overview of Update channels for microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >Questi periodi di rinvio sono stati intenzionalmente studiati per garantire elevati standard di sicurezza e prestazioni per tutti gli utenti. Inoltre, in base ai dati raccolti su tutti i dispositivi desktop Microsoft gestiti e all'ambito e all'impatto variabile degli aggiornamenti, Microsoft Managed Desktop si riserva la possibilità di modificare la durata dei periodi di rinvio sopra indicati per tutti e tutti i gruppi di distribuzione su base ad hoc.

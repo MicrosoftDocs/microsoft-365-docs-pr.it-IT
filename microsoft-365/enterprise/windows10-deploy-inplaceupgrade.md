@@ -12,12 +12,12 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1c90640fa49aa102d2a4c8420feedf659b5682f2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085585"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011818"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Passaggio 2: distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto
 
@@ -47,7 +47,7 @@ Vedere [gestire gli aggiornamenti di Windows con la preparazione dell'aggiorname
 
 Successivamente, seguire la guida per l'utilizzo di Configuration Manager (Current Branch) per aggiornare il sistema operativo Windows 7 o versioni successive a Windows 10. Come per qualsiasi distribuzione ad alto rischio, è consigliabile eseguire il backup dei dati degli utenti prima di continuare. Lo spazio di archiviazione cloud di OneDrive è pronto per l'uso per gli utenti con licenza di Microsoft 365 e può essere utilizzato per archiviare in modo sicuro i propri file. Per altre informazioni, vedere [Guida](https://aka.ms/ODfBquickstartguide)introduttiva di OneDrive. Per accedere a questa pagina, è necessario eseguire l'accesso come amministratore del tenant o amministratore globale in un tenant di Office 365 o Microsoft 365.
 
-Per un elenco delle versioni di Configuration Manager e delle versioni client di Windows 10 corrispondenti supportate, vedere [supporto per Windows 10 per Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
+Per un elenco delle versioni di Configuration Manager e delle versioni client di Windows 10 corrispondenti supportate, vedere [supporto per Windows 10 per Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/support-for-windows-10).
 
 **Per verificare la disponibilità dell'aggiornamento di Windows**
 
@@ -96,7 +96,7 @@ Per creare una sequenza di attività di aggiornamento, eseguire le operazioni se
 Dopo aver creato la sequenza di attività di aggiornamento, sarà necessario creare una raccolta che contenga i dispositivi da aggiornare.
 
 > [!NOTE]
-> Utilizzare le impostazioni seguenti per testare la distribuzione su un singolo dispositivo. È possibile utilizzare regole di appartenenza diverse per includere gruppi di dispositivi quando si è pronti. Per altre informazioni, vedere [come creare raccolte in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections).
+> Utilizzare le impostazioni seguenti per testare la distribuzione su un singolo dispositivo. È possibile utilizzare regole di appartenenza diverse per includere gruppi di dispositivi quando si è pronti. Per altre informazioni, vedere [come creare raccolte in Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections).
 
 1. Nella console di Configuration Manager, nell'area di lavoro **asset e conformità** , fare clic con il pulsante destro del mouse su **Raccolte dispositivi**e quindi scegliere **Crea insieme di dispositivi**. 
 2. Nella pagina **generale** della creazione guidata raccolta dispositivi immettere le impostazioni seguenti e quindi fare clic su **Avanti**:
@@ -136,7 +136,7 @@ Eseguire la procedura seguente per avviare la sequenza di attività di aggiornam
  
 1. Accedere al computer Windows e avviare il **Centro software**.
 2. Selezionare la sequenza di attività creata in un passaggio precedente e quindi fare clic su **Installa**.
-3. Quando la sequenza di attività inizia, viene avviato automaticamente il processo di aggiornamento sul posto richiamando il programma di installazione di Windows (Setup. exe) con i parametri della riga di comando necessari per eseguire un aggiornamento automatico, che conserva tutti i dati, le impostazioni, le app e driver.
+3. Quando la sequenza di attività inizia, viene avviato automaticamente il processo di aggiornamento sul posto richiamando il programma di installazione di Windows (Setup. exe) con i parametri della riga di comando necessari per eseguire un aggiornamento automatico, che consente di conservare tutti i dati, le impostazioni, le app e i driver.
 4. Una volta completata la sequenza di attività, il computer verrà aggiornato completamente a Windows 10.
 
 Se si verificano problemi durante l'utilizzo di Windows 10 in un ambiente aziendale, è possibile consultare [le principali soluzioni di supporto tecnico Microsoft per i problemi più comuni](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Tali risorse includono articoli, aggiornamenti e articoli relativi alla raccolta di KB.

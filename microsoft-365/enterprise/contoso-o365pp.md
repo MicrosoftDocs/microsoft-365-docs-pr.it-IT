@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul modo in cui Contoso usa Microsoft Endpoint Configuration Manager per distribuire Microsoft 365 Apps for enterprise.
-ms.openlocfilehash: eca3978103ca1e590d747b3549a3c9e393f871ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625255"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011888"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Distribuzione di Microsoft 365 Apps for enterprise per Contoso
 
@@ -40,7 +40,7 @@ In base ai propri requisiti, Contoso ha scelto di distribuire Windows 10 Enterpr
 - Distribuzione Language Pack intelligente, che comprende la distribuzione automatica della stessa lingua del sistema operativo
 - Metodo di rimozione delle versioni esistenti di Office da un client durante la distribuzione facile e completamente supportato
 
-Oltre a Configuration Manager, Contoso ha usato [Readiness Toolkit](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro), uno strumento gratuito di Microsoft, per valutare i problemi relativi alla compatibilità con i propri componenti aggiuntivi e macro di Office.
+Oltre a Configuration Manager, Contoso ha usato [Readiness Toolkit](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), uno strumento gratuito di Microsoft, per valutare i problemi relativi alla compatibilità con i propri componenti aggiuntivi e macro di Office.
 
 ## <a name="managing-the-deployment-and-updates"></a>Gestione della distribuzione e degli aggiornamenti
 
@@ -51,7 +51,7 @@ Microsoft 365 Apps for enterprise ha un nuovo modello di rilascio: Office come s
 
 Anziché gestire gli aggiornamenti a Office con Configuration Manager, Contoso ha abilitato gli aggiornamenti automatici dal cloud. Gli aggiornamenti basati sul cloud hanno ridotto le attività amministrative facendo in modo che i dispositivi siano sempre aggiornati. 
 
-Contoso ha seguito lo stesso approccio di due fasi per gli aggiornamenti delle funzionalità usate per la distribuzione di Office: i dispositivi nel gruppo pilota hanno ricevuto aggiornamenti delle funzionalità quattro mesi prima dei dispositivi nel resto dell'organizzazione (il gruppo di grandi dimensioni). Per farlo per Office, Contoso ha usato due [canali di aggiornamento](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) consigliati: 
+Contoso ha seguito lo stesso approccio di due fasi per gli aggiornamenti delle funzionalità usate per la distribuzione di Office: i dispositivi nel gruppo pilota hanno ricevuto aggiornamenti delle funzionalità quattro mesi prima dei dispositivi nel resto dell'organizzazione (il gruppo di grandi dimensioni). Per farlo per Office, Contoso ha usato due [canali di aggiornamento](https://docs.microsoft.com/DeployOffice/overview-update-channels) consigliati: 
 
 - Canale semestrale (mirato) per gli aggiornamenti del gruppo pilota 
 - Canale semestrale per gli aggiornamenti del gruppo di grandi dimensioni 

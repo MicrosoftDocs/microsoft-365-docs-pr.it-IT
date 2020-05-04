@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti sulla distribuzione centralizzata
+title: Distribuzione centralizzata dei componenti aggiuntivi
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Esaminare le risposte alle domande frequenti sulla distribuzione centralizzata dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 39df2ec5a1671f800572bc845581bdbe2716d209
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209665"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011736"
 ---
-# <a name="centralized-deployment-faq"></a>Domande frequenti sulla distribuzione centralizzata
+# <a name="centralized-deployment-faq"></a>Distribuzione centralizzata dei componenti aggiuntivi
 
 La distribuzione centralizzata è il modo consigliato per un amministratore di Office 365 di distribuire i componenti aggiuntivi di Office (Word, Excel, PowerPoint e Outlook) a utenti e gruppi all'interno di un'organizzazione, purché l'organizzazione soddisfi tutti i requisiti per l'utilizzo della distribuzione centralizzata come illustrato in questo articolo.   
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>Come verificare se l'organizzazione è configurata per la distribuzione centralizzata.  
 
-La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Office 365 ProPlus (e siano firmati in Office utilizzando le proprie credenziali di accesso dell'organizzazione) e dispongano di cassette postali di Exchange Online. La directory di sottoscrizione deve trovarsi o federata in Azure Active Directory.  
+La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Microsoft 365 Apps for Enterprise (e che siano firmati in Office con le credenziali di accesso dell'organizzazione) e dispongano di cassette postali di Exchange Online. La directory di sottoscrizione deve trovarsi o federata in Azure Active Directory.  
  
 La distribuzione centralizzata è supportata solo per le cassette postali online. La distribuzione non è supportata per le cassette postali di Exchange locali.
  

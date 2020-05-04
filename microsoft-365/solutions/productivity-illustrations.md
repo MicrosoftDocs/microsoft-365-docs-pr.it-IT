@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 53b5bc1bad9a67543fccaa8dcb3223307d2634b9
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003139"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011852"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
@@ -124,12 +124,12 @@ Per altre informazioni, vedere l'articolo correlato a questo poster: [Soluzioni 
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Distribuire un desktop protetto e moderno con Microsoft
 
-Cosa devono sapere gli architetti IT della distribuzione e della gestione degli aggiornamenti per Office 365 ProPlus su Windows 10.
+Cosa devono sapere gli architetti IT sulla distribuzione e la gestione degli aggiornamenti per Microsoft 365 Apps for Enterprise (in precedenza denominato Office 365 ProPlus) in Windows 10.
   
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Miniatura per il modello Distribuire un desktop protetto e moderno con Microsoft](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Aggiornato il 2017 settembre | Questo modello contiene: <ul><li>  Distribuzione di Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Distribuzione di Windows 10 e Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus dal cloud Microsoft </li><li>  Gestione degli aggiornamenti per Windows 10 e Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Funzionalità di protezione predefinite e aggiuntive di Windows 10 </li></ul><br/> |
+|[![Miniatura per il modello Distribuire un desktop protetto e moderno con Microsoft](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Aggiornato il 2017 settembre | Questo modello contiene: <ul><li>  Distribuzione di Windows 10 e Microsoft 365 Apps for Enterprise dal cloud Microsoft </li><li>  Distribuzione di Windows 10 e Microsoft 365 Apps for Enterprise con Microsoft endpoint Configuration Manager </li><li>  Gestione degli aggiornamenti per le app di Windows 10 e Microsoft 365 per Enterprise dal cloud Microsoft </li><li>  Gestione degli aggiornamenti per le app di Windows 10 e Microsoft 365 per Enterprise con Microsoft endpoint Configuration Manager </li><li>  Funzionalità di protezione predefinite e aggiuntive di Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Vedere anche
 

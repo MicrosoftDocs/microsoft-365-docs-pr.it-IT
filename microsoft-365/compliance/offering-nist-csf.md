@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b380604e908d91feacefe6b54ed3d3f08dcea0fa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49eb9ae31ab913be30b2b96735f15ae57e85a10f
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637798"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011233"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 
@@ -40,7 +40,7 @@ Informazioni su come accelerare la distribuzione di Cybersecurity Framework di N
 - [Scaricare l'elenco di controllo di valutazione dei rischi per la sicurezza e la conformità di Azure-NIST CSF](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [Per ulteriori informazioni sulla valutazione di NIST CSF per Office 365, vedere Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 per il governo](https://aka.ms/d365-compliance-list)
@@ -88,7 +88,7 @@ Secondo il [Department of Homeland Security](https://www.dhs.gov/critical-infras
 
 **Che cosa sono i servizi nell'ambito di Office 365?**
 
-I servizi nell'ambito della certificazione del NIST CSF sono Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for business, interfaccia di amministrazione, SharePoint Online, Project online, OneDrive for business, Office Online, Analytics, Microsoft teams, Office ProPlus in Office 365 multi-tenant cloud e Office 365 GCC.
+I servizi nell'ambito della certificazione del NIST CSF sono Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for business, interfaccia di amministrazione, SharePoint Online, Project online, OneDrive for business, Office Online, Analytics, Microsoft teams, Microsoft 365 Apps for Enterprise in Office 365 multi-tenant cloud e Office 365 GCC.
 
 > [!NOTE]
 > Microsoft 365 Apps for Enterprise consente l'accesso a vari servizi cloud, ad esempio le impostazioni di roaming, le licenze e l'archiviazione cloud dei consumer di OneDrive e può consentire l'accesso a servizi cloud aggiuntivi in futuro. Le impostazioni di roaming e la gestione delle licenze supportano gli standard per HITRUST. L'archiviazione cloud del consumer di OneDrive non è diversa e altri servizi cloud accessibili tramite le app Microsoft 365 per l'organizzazione e che Microsoft potrebbe offrire anche in futuro potrebbero non essere in grado di supportare tali standard. *
@@ -109,7 +109,7 @@ Microsoft fornisce le offerte più complete rispetto ad altri provider di serviz
 - [Ordine esecutivo presidenziale per il potenziamento della CyberSecurity delle reti federali e delle infrastrutture critiche](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Condizioni dei Servizi online](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 

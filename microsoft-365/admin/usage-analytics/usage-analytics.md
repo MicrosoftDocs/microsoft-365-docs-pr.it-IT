@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Ottenere una panoramica del modo in cui l'organizzazione adotta i servizi Microsoft 365 per comunicare e collaborare.
-ms.openlocfilehash: 783b2c599a5f3a31446855450029859e6dfd9f65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626935"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011760"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analisi di utilizzo di Microsoft 365
 ---
@@ -71,7 +71,7 @@ Il report introduttivo di Microsoft 365 contiene i report seguenti. È possibile
 
 La pagina di attivazione e licenza offre rapporti sull'attivazione di Microsoft 365; in questo modo, il numero di utenti che hanno scaricato e attivato le app di Office e quante licenze sono state assegnate dall'organizzazione. Il valore del mese verso l'alto si riferisce al mese corrente e la metrica riflette i valori aggregati dall'inizio del mese alla data corrente.
 
-- Piano di **attivazione** &ndash; del servizio di gestione delle traiettorie (ad esempio, Microsoft 365 ProPlus, Project e Visio) nell'organizzazione. Ogni persona con una licenza di Office può installare prodotti in un totale di cinque dispositivi. È inoltre possibile utilizzare i report di questa sezione per visualizzare i dispositivi in cui sono installate le app di Office. Si noti che per attivare un piano, un utente deve installare l'app e accedere con il proprio account.
+- Piano di servizio Tracking di **attivazione** &ndash; , ad esempio le attivazioni di Microsoft 365 Apps for Enterprise, Project e Visio nell'organizzazione. Ogni persona con una licenza di Office può installare prodotti in un totale di cinque dispositivi. È inoltre possibile utilizzare i report di questa sezione per visualizzare i dispositivi in cui sono installate le app di Office. Si noti che per attivare un piano, un utente deve installare l'app e accedere con il proprio account.
 
 - **Licensing** &ndash; questo report contiene una panoramica dei tipi di licenza, il numero di utenti a cui sono stati assegnati ogni tipo di licenza e la distribuzione dell'assegnazione della licenza per ogni mese. Il valore del mese verso l'alto si riferisce al mese corrente e la metrica riflette i valori aggregati dall'inizio del mese alla data corrente.
 

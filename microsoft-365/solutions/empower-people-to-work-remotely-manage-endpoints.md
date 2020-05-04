@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Usare Microsoft Endpoint Manager per gestire dispositivi, PC e altri endpoint.
-ms.openlocfilehash: fdfe38a25947312b878b03734c320de004762506
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 76e18d65865f4ec2bbc8a8d1554bb4cad6fee553
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003062"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011604"
 ---
 # <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint
 
@@ -40,7 +40,7 @@ Per altre informazioni, vedere questa [panoramica di Microsoft Intune](https://d
 
 Configuration Manager è una soluzione di gestione locale per gestire desktop, server e computer portatili collegati nella rete aziendale o in Internet. È possibile abilitare la soluzione per il cloud e integrarla con Intune, Azure AD, Microsoft Defender ATP e altri servizi cloud. Usare Configuration Manager per distribuire app, aggiornamenti software e sistemi operativi. È anche possibile monitorare la conformità, eseguire query, intervenire sui client in tempo reale e molto altro ancora.
 
-Per altre informazioni, vedere questa [panoramica di Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction).
+Per altre informazioni, vedere questa [panoramica di Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
 
 ## <a name="co-management"></a>Co-gestione
 
@@ -48,13 +48,13 @@ La co-gestione integra l'investimento esistente in Configuration Manager locale 
 
 Nel contesto di Endpoint Manager la co-gestione usa funzionalità cloud, incluso l'accesso condizionale. Alcune attività restano in locale, mentre altre vengono eseguite nel cloud con Intune.
 
-Per altre informazioni, vedere questa [panoramica della co-gestione](https://docs.microsoft.com/configmgr/comanage/overview).
+Per altre informazioni, vedere questa [panoramica della co-gestione](https://docs.microsoft.com/mem/configmgr/comanage/overview).
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
 Desktop Analytics è un servizio basato sul cloud che si integra con Configuration Manager e fornisce dati analitici e intelligence utili per prendere decisioni informate sui client Windows. Combina i dati dell'organizzazione con i dati aggregati di milioni di dispositivi connessi ai servizi cloud Microsoft. Con Desktop Analytics è possibile creare un inventario delle app in esecuzione nell'organizzazione, valutare la compatibilità delle app con gli ultimi aggiornamenti delle funzionalità di Windows 10, identificare i problemi di compatibilità e ricevere suggerimenti sulla mitigazione in base alle informazioni dettagliate sui dati abilitati per il cloud, creare gruppi pilota che rappresentino lo stato complessivo dell'applicazione e dei driver in un set minimo di dispositivi e distribuire Windows 10 a dispositivi pilota e gestiti dalla produzione.
 
-Per altre informazioni, vedere questa [panoramica di Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview).
+Per altre informazioni, vedere questa [panoramica di Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview).
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

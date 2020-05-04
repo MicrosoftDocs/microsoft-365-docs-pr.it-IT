@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aggiornamenti automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
-ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113482"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011552"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Aggiornamenti sul posto automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
 
@@ -42,7 +42,7 @@ Gli aggiornamenti sul posto a Windows 10 rappresentano un approccio affidabile p
 
 Per impostazione predefinita, il processo di aggiornamento esegue il backup dell'installazione precedente di Windows come parte dell'aggiornamento, in modo che, in caso di errore di aggiornamento o se dopo l'aggiornamento un dispositivo o un'applicazione non funziona correttamente, sia possibile eseguire il rollback a Windows 7. Per impostazione predefinita, i PC aggiornati hanno 10 giorni, per cui è possibile avviare manualmente un rollback a Windows 7, se necessario.
 
-Gli aggiornamenti sul posto possono essere automatizzati con strumenti di distribuzione del sistema operativo come [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) o [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit). Questo articolo illustra gli approcci automatizzati e le ottimizzazioni insieme ai collegamenti alle risorse correlate per ottenere assistenza.
+Gli aggiornamenti sul posto possono essere automatizzati con strumenti di distribuzione del sistema operativo come [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) o [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit). Questo articolo illustra gli approcci automatizzati e le ottimizzazioni insieme ai collegamenti alle risorse correlate per ottenere assistenza.
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Aggiornamento di un numero ridotto di computer
 
@@ -80,13 +80,13 @@ Le cause più comuni del mancato completamento degli aggiornamenti o dell'imposs
 
   - Soluzioni di codice di ultimo livello, come antimalware, VPN o virtualizzazione
 
-I modelli di [sequenza di attività di aggiornamento](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sono integrati in Microsoft Endpoint Configuration Manager (Current Branch) e sono disponibili da diverse versioni. Nelle versioni recenti sono stati apportati miglioramenti tecnologici notevoli a Configuration Manager, che rendono persino più efficiente il processo per determinare la preparazione alla compatibilità dei dispositivi e di Office, ridurre il traffico di rete e configurare nuove opzioni come il backup di OneDrive. Guardare questo [programma Microsoft Mechanics](https://youtu.be/CYRnAmCD7ls) per altre informazioni sugli aggiornamenti recenti alla distribuzione del sistema operativo di Configuration Manager.
+I modelli di [sequenza di attività di aggiornamento](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sono integrati in Microsoft Endpoint Configuration Manager (Current Branch) e sono disponibili da diverse versioni. Nelle versioni recenti sono stati apportati miglioramenti tecnologici notevoli a Configuration Manager, che rendono persino più efficiente il processo per determinare la preparazione alla compatibilità dei dispositivi e di Office, ridurre il traffico di rete e configurare nuove opzioni come il backup di OneDrive. Guardare questo [programma Microsoft Mechanics](https://youtu.be/CYRnAmCD7ls) per altre informazioni sugli aggiornamenti recenti alla distribuzione del sistema operativo di Configuration Manager.
 
 Se non si usa Microsoft Endpoint Configuration Manager, è possibile usare Microsoft Deployment Toolkit per creare ed eseguire sequenze di attività di distribuzione degli aggiornamenti.
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>Aggiornamenti della sequenza di attività pre-cache
 
-L'[opzione pre-cache](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) per la sequenza delle attività di distribuzione di Configuration Manager consente ai client di scaricare il contenuto del pacchetto di aggiornamento del sistema operativo appropriato prima che la sequenza di attività aggiorni il sistema operativo. In precedenza, l'avvio della sequenza di attività avviava il download del contenuto del pacchetto. Il contenuto pre-cache offre anche l'opzione per consentire al client di scaricare solo il pacchetto di aggiornamento del sistema operativo applicabile, e tutti gli altri contenuti a cui viene fatto riferimento nel momento in cui riceve la distribuzione.
+L'[opzione pre-cache](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) per la sequenza delle attività di distribuzione di Configuration Manager consente ai client di scaricare il contenuto del pacchetto di aggiornamento del sistema operativo appropriato prima che la sequenza di attività aggiorni il sistema operativo. In precedenza, l'avvio della sequenza di attività avviava il download del contenuto del pacchetto. Il contenuto pre-cache offre anche l'opzione per consentire al client di scaricare solo il pacchetto di aggiornamento del sistema operativo applicabile, e tutti gli altri contenuti a cui viene fatto riferimento nel momento in cui riceve la distribuzione.
 
 Sequenze di attività pre-cache combinate ad analisi della compatibilità
 

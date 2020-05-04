@@ -20,12 +20,12 @@ search.appverid:
 description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle caratteristiche che sono state aggiunte in questo mese.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: bd701f8ea2a6187f73fff91ea1ca2ccf2641f6e3
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952652"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011328"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -289,7 +289,7 @@ Si è verificato un aggiornamento a un'altra delle procedure guidate per l'insta
 
 Sono stati apportati alcuni aggiornamenti per la fatturazione e gli abbonamenti di questo mese:
 
-- Abbonamenti basati su dispositivo: è possibile assegnare o annullare **l'assegnazione delle licenze di Office 365 ProPlus for Education (Device)** ai dispositivi nell'interfaccia di amministrazione di Microsoft 365. **Office 365 ProPlus for Education (Device)** è una licenza per i componenti aggiuntivi che consente di assegnare una licenza a un dispositivo. Accedere a prodotti di **fatturazione** > **& Servizi** per trovare e acquistare la licenza.
+- Abbonamenti basati su dispositivo: è possibile assegnare o annullare **l'assegnazione delle licenze di microsoft 365 Apps for Education (Device)** ai dispositivi nell'interfaccia di amministrazione di Microsoft 365. **Microsoft 365 Apps for Education (Device)** è una licenza per i componenti aggiuntivi che consente di assegnare una licenza a un dispositivo. Accedere a prodotti di **fatturazione** > **& Servizi** per trovare e acquistare la licenza.
 - Gestione delle licenze basata sull'utente: è stato aggiornato il **modo in** > cui si assegnano le licenze agli utenti**attivi** per il nuovo stile. Per ulteriori informazioni, vedere:
   - [Assegnare licenze agli utenti](manage/assign-licenses-to-users.md)
   - [Annullare l'assegnazione delle licenze agli utenti](manage/remove-licenses-from-users.md)

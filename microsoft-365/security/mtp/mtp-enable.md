@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
-ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
+ms.openlocfilehash: 0bb91f226a29fe6b175cf1ca4866316d1457291e
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997515"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011864"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Attivare Microsoft Threat Protection
 
@@ -36,7 +36,7 @@ Microsoft Threat Protection unifica il processo di risposta agli eventi imprevis
 Per ottenere la migliore protezione e ottimizzare Microsoft Threat Protection, è consigliabile distribuire tutti i servizi supportati in rete. Per ulteriori informazioni, [vedere informazioni sulla distribuzione di servizi supportati](deploy-supported-services.md).
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Verificare l'idoneità delle licenze e le autorizzazioni necessarie
-Una licenza di sicurezza Microsoft 365 E5, E5 Security, a5 o a5 o una combinazione valida di licenze fornisce l'accesso ai servizi supportati e autorizza l'utilizzo di Microsoft Threat Protection in Microsoft 365 Security Center.
+Una licenza di sicurezza Microsoft 365 E5, E5, a5 o a5 o una combinazione valida di licenze fornisce l'accesso ai servizi supportati e autorizza l'utilizzo di Microsoft Threat Protection in Microsoft 365 Security Center senza ulteriori costi di licenza.
 
 Per informazioni dettagliate sulla licenza, [leggere i requisiti di licenza](prerequisites.md#licensing-requirements).
 
@@ -44,22 +44,28 @@ Per informazioni dettagliate sulla licenza, [leggere i requisiti di licenza](pre
 Per abilitare Microsoft Threat Protection, è necessario essere un amministratore **globale** o un **amministratore della sicurezza** in Azure Active Directory. [Visualizzare i ruoli in Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="start-using-the-service"></a>Iniziare a usare il servizio
-Microsoft Threat Protection aggrega i dati provenienti dai vari servizi integrati. I dati verranno elaborati e archiviati in modo centralizzato per identificare nuove informazioni e rendere possibili flussi di lavoro di risposta centralizzati.
+
+>[!IMPORTANT]
+>A partire dal 3 maggio 2020, Microsoft eseguirà gradualmente nuove esperienze ottimizzate in merito [ai requisiti di licenza](prerequisites.md#licensing-requirements) e all'attivazione di Microsoft Threat Protection. Per alcune settimane durante questo periodo, alcuni clienti inizieranno a visualizzare le modifiche apportate alle esperienze del portale. Le informazioni sulle nuove esperienze sono state contrassegnate come **nuova esperienza** in questo articolo.
+
+Microsoft Threat Protection aggrega i dati provenienti dai vari servizi integrati. I dati verranno elaborati e archiviati in modo centralizzato per identificare nuove informazioni e rendere possibili flussi di lavoro di risposta centralizzati. In questo caso, senza influire sulle distribuzioni, le impostazioni o i dati esistenti associati ai servizi integrati.
 
 Prima di abilitare il servizio, Microsoft 365 Security Center ([Security.Microsoft.com](https://security.microsoft.com)) Visualizza la pagina di benvenuto di Microsoft Threat Protection quando si seleziona **incidenti**, **Centro azioni**o **ricerca** nel riquadro di spostamento. Queste opzioni di spostamento non vengono visualizzate se non si è idonei per l'utilizzo di Microsoft Threat Protection.
 
 ![Immagine della pagina di benvenuto di Microsoft Threat Protection visualizzata se Microsoft Threat Protection non è stato attivato](../../media/mtp-welcome.png)
 *nella pagina di benvenuto Microsoft Threat Protection in Microsoft 365 Security Center*
 
-Per abilitare Microsoft Threat Protection, è sufficiente completare il processo dalla pagina di benvenuto. È inoltre possibile abilitare Microsoft Threat Protection accedendo alle **Impostazioni** ([Security.Microsoft.com/settings](https://security.microsoft.com/settings)) nel riquadro di spostamento e selezionando **Microsoft Threat Protection**. Fare clic su **Salva**.
+Per abilitare Microsoft Threat Protection, è sufficiente completare il processo dalla pagina di benvenuto. È inoltre possibile abilitare Microsoft Threat Protection accedendo alle **Impostazioni** ([Security.Microsoft.com/settings](https://security.microsoft.com/settings)) nel riquadro di spostamento e selezionando **Microsoft Threat Protection**.
 
 >[!NOTE]
->Se non si visualizzano le **Impostazioni** nel riquadro di spostamento o non è stato possibile accedere alla pagina, controllare autorizzazioni e licenze.
+>Se non si visualizzano le **Impostazioni** nel riquadro di spostamento o non è stato possibile accedere alla pagina, controllare autorizzazioni e licenze.       
 
 ### <a name="select-data-center-location"></a>Selezionare percorso Data Center
 Se è stato eseguito il provisioning di Microsoft Defender ATP per l'organizzazione, i dati verranno archiviati ed elaborati nella stessa area data center selezionata per i [dati di Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Se non si dispone di Microsoft Defender ATP, verrà chiesto di scegliere una nuova area data center specifica per Microsoft Threat Protection. 
-
+ 
 È necessario fornire il consenso prima che i dati vengano condivisi tra i servizi e aggregati.
+
+**Nuova esperienza:** A partire dal 3 maggio 2020, i clienti riceveranno gradualmente le modifiche apportate a questa esperienza. Per gli utenti con la nuova esperienza, il servizio seleziona automaticamente la posizione ottimale del centro dati per i dati aggregati in base ai servizi di sicurezza esistenti di Microsoft 365. La posizione del Data Center selezionato viene visualizzata nella schermata.
 
 ### <a name="confirm-that-the-service-is-on"></a>Verificare che il servizio sia attivo
 Dopo aver eseguito il provisioning il servizio aggiunge:

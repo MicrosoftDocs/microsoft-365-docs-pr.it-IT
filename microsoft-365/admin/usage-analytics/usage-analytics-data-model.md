@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: "Informazioni su come l'analisi dell'utilizzo si connette a un'API e fornisce un andamento mensile dell'utilizzo di vari servizi di Microsoft 365.  "
-ms.openlocfilehash: 56ef0ffcedee71a4529ff31aecefed0d2645b89a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c39edd66bda19233a67c4623044ffc9e0e8046d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634241"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011772"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modello di dati nell'analisi dell'utilizzo di Microsoft 365
 
@@ -50,7 +50,7 @@ Questa API fornisce informazioni sull'andamento mensile dell'utilizzo dei vari s
 |Tenant SharePoint Online Usage  <br/> |Contiene i dati relativi ai siti di SharePoint, inclusi i siti del gruppo o del team, ad esempio il numero totale dei siti, il numero di documenti del sito, il numero di file per tipo di attività e lo spazio di archiviazione usato.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
 |Tenant OneDrive for Business Usage  <br/> |Contiene i dati relativi gli account di OneDrive, ad esempio il numero di account, il numero di documenti nelle varie istanze di OneDrive, lo spazio di archiviazione usato e il numero di file per tipo di attività.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
 |Utilizzo di gruppi di Microsoft 365 tenant  <br/> |Contiene i dati relativi all'utilizzo dei gruppi di Microsoft 365, tra cui Mailbox, SharePoint e Yammer.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
-|Tenant Office Activation  <br/> |Contiene i dati sul numero di attivazioni dell'abbonamento a Office, sul numero di attivazioni per ogni dispositivo (Android/iOS/Mac/PC), le attivazioni per piano di servizio, ad esempio Office Proplus, Visio, Project.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
+|Tenant Office Activation  <br/> |Contiene i dati sul numero di attivazioni di sottoscrizione di Office, il conteggio dell'attivazione per dispositivo (Android/iOS/Mac/PC), le attivazioni per piano di servizio, ad esempio Microsoft 365 Apps for Enterprise, Visio, Project.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
 |User State  <br/> |Contiene metadati sugli utenti, tra cui il nome visualizzato dell'utente, i prodotti assegnati, la posizione, il reparto, il titolo e la società. Questi dati sono relativi agli utenti a cui sono state assegnate licenze nel corso dell'ultimo mese completo. Ogni utente è rappresentato in modo univoco da un ID utente.  <br/> |Questi dati sono relativi agli utenti a cui è stata assegnata una licenza nel corso dell'ultimo mese completo.  <br/> |
 |User Activity  <br/> |Contiene informazioni sulle attività eseguite dagli utenti con licenza.  <br/> Vedere la [definizione di utente attivo](active-user-in-usage-reports.md) per informazioni sulle attività all'interno di un prodotto che vengono restituite in questa tabella dati.  <br/> |Questi dati sono relativi agli utenti che hanno eseguito un'attività in uno dei servizi nel corso dell'ultimo mese completo.  <br/> |
    
@@ -152,7 +152,7 @@ In questa tabella sono disponibili i dati relativi all'adozione mensile in termi
 |ActiveUsers  <br/> |Numero di utenti che hanno eseguito un'attività intenzionale nel prodotto per il valore dell'intervallo di tempo.  <br/> Un utente viene considerato attivo per un prodotto per un determinato mese se ha eseguito una delle attività principali nel prodotto. Le attività chiave sono disponibili nella tabella **Tenant Product Activity**.  <br/> |
 |CumulativeActiveUsers  <br/> |Numero di utenti che sono abilitati a usare un prodotto e lo hanno usato fino al mese dell'intervallo di tempo almeno una volta dopo l'inizio della raccolta dei dati nel nuovo sistema di gestione.  <br/> |
 |MoMReturningUsers  <br/> |Numero di utenti che sono attivi nel mese dell'intervallo di tempo e lo erano anche nel mese precedente.  <br/> |
-|FirstTimeUsers  <br/> |Numero di utenti che sono attivi nel mese dell'intervallo di tempo e che lo erano anche nel mese precedente.  <br/> Un utente viene considerato come nuovo utente in un determinato mese, se la sua attività viene rilevata per la prima volta dall'inizio della raccolta dei dati in questo nuovo sistema di registrazione. Un utente non verrà più considerato nuovo se è già stato incluso in questo gruppo, anche se è trascorso molto tempo tra le attività eseguite  <br/> |
+|FirstTimeUsers  <br/> |Numero di utenti che sono attivi nel mese dell'intervallo di tempo e che lo erano anche nel mese precedente.  <br/> Un utente viene considerato come nuovo utente in un determinato mese, se la sua attività viene rilevata per la prima volta dall'inizio della raccolta dei dati in questo nuovo sistema di registrazione. Una volta contato come utente per la prima volta, anche se l'utente ha un divario notevole nella loro attività, non verrà mai conteggiato di nuovo come utente per la prima volta.  <br/> |
 |Content Date  <br/> |Se l'intervallo di tempo mostra il mese corrente, questo valore rappresenterà l'ultima data del mese corrente per cui i dati sono disponibili.  <br/> Se l'intervallo di tempo mostra il mese precedente, questo valore rappresenterà l'ultima data del mese dell'intervallo di tempo.  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>Tabella di dati - Tenant Product Activity
@@ -277,7 +277,7 @@ In questa tabella sono disponibili i dati su come vengono utilizzati i gruppi Mi
    
 ### <a name="data-table---tenant-office-activation"></a>Tabella di dati - Tenant Office Activation
 
-La tabella fornisce i dati sul numero di attivazioni dell'abbonamento a Office in tutti i piani di servizio, ad esempio Office Proplus, Visio, Project. Fornisce anche i dati sul numero di attivazioni per ogni dispositivo (Android/iOS/Mac/PC).
+La tabella fornisce i dati relativi al numero di attivazioni di sottoscrizione di Office tra i piani di servizio, ad esempio Microsoft 365 Apps for Enterprises, Visio, Project. Fornisce anche i dati sul numero di attivazioni per ogni dispositivo (Android/iOS/Mac/PC).
   
 |**Nome colonna**|**Descrizione della colonna**|
 |:-----|:-----|

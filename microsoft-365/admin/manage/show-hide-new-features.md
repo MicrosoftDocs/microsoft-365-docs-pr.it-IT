@@ -1,5 +1,5 @@
 ---
-title: Mostrare o nascondere nuove funzionalità tramite la nuova gestione
+title: Mostrare o nascondere le nuove funzionalità con Gestione novità
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Decidere quali funzionalità e quali nuovi contenuti vengono visualizzati o nascosti dagli utenti finali in Office What ' s New Management for Office desktop apps.
-ms.openlocfilehash: de4191529c58dd471c6f24e86bdff2177a38b51d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 7399da493f8e6878a92dc13d92482d7ddece0ba3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131973"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011700"
 ---
-# <a name="show-or-hide-new-features-using-whats-new-management"></a>Mostrare o nascondere nuove funzionalità tramite la nuova gestione
+# <a name="show-or-hide-new-features-using-whats-new-management"></a>Mostrare o nascondere le nuove funzionalità con Gestione novità
 
 Office What ' s New Management for Win 32 consente all'organizzazione di decidere quali funzionalità vengono visualizzate o nascoste dagli utenti finali nell'app desktop di Office. Ogni versione di Office include funzionalità nuove e migliorate e l'anteprima del contenuto consente di visualizzare il nuovo contenuto per ogni release version e Channel e di scegliere se nascondere o mostrare il nuovo contenuto per ogni caratteristica agli utenti finali. 
 
@@ -62,7 +62,7 @@ Nuove funzionalità vengono visualizzate in Office What ' s New Management in ba
 |**Semestrale (mirato)** <br/> |Settembre 1 e marzo 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità
 |**Semestrale** <br/> |Gen 1 e luglio 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità<br/> |
 
-Per ulteriori informazioni sulle pianificazioni degli aggiornamenti dei canali, vedere [Update History for Office 365 ProPlus (data Listing by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+Per ulteriori informazioni sulle pianificazioni degli aggiornamenti dei canali, vedere [Update History for Microsoft 365 Apps (elencato in base alla data)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 
 ## <a name="related-articles"></a>Articoli correlati
 
