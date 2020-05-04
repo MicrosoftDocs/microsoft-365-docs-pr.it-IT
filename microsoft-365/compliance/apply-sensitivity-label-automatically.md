@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943245"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952629"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -188,7 +188,7 @@ Caratteristiche specifiche del client di etichettatura unificata di Azure Inform
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Come configurare i criteri di applicazione automatica di etichette per SharePoint, OneDrive e Exchange
 > [!NOTE]
-> I criteri di applicazione automatica di etichette vengono implementati gradualmente nei tenant in anteprima pubblica e sono soggetti a modifica.
+> I criteri di applicazione automatica di etichette sono in anteprima pubblica e sono soggetti a modifica.
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Prerequisiti per i criteri di applicazione automatica di etichette
 
@@ -241,7 +241,6 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     
     ![Scheda Etichettatura automatica (anteprima)](../media/auto-labeling-tab.png)
     
-    Questa nuova scheda è ancora in fase di distribuzione nei tenant. Se non è possibile visualizzarla, riprovare tra qualche giorno.
 
 3. Selezionare **+ Crea criterio**.
 

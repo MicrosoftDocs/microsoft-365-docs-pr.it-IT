@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora contenuto consente di visualizzare in modo nativo gli elementi con etichetta.
-ms.openlocfilehash: 91246a701e1c5a030f4c9c53e25e56c137e7569b
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3d1c938d3a9d7ff25bb66a5b344cfbb29eace84c
+ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929408"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43957266"
 ---
 # <a name="get-started-with-content-explorer-preview"></a>Introduzione a Esplora contenuto (anteprima)
 
@@ -48,7 +48,7 @@ I [criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.
 
 Un'[etichetta di sensibilità](sensitivity-labels.md) è semplicemente un contrassegno che indica il valore dell'elemento per l'organizzazione. Può essere applicata manualmente o automaticamente. Una volta applicata, viene incorporata nel documento e lo seguirà ovunque. Un'etichetta di riservatezza abilita varie misure protettive, ad esempio la filigrana obbligatoria o la crittografia. Con la protezione dell'endpoint abilitata, è anche possibile impedire a un elemento di eludere il controllo dell'organizzazione.
 
-Le etichetta di riservatezza devono essere abilitate per i file che si trovano in SharePoint e OneDrive affinché i dati corrispondenti vengano visualizzati nella pagina di classificazione dei dati. Per altre informazioni, vedere [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](sensitivity-labels-sharepoint-onedrive-files.md).
+Le etichetta di riservatezza devono essere abilitate per i file che si trovano in SharePoint e OneDrive affinché i dati corrispondenti vengano visualizzati nella pagina di classificazione dei dati. Per altre informazioni, vedere [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ### <a name="retention-labels"></a>Etichette di conservazione
 

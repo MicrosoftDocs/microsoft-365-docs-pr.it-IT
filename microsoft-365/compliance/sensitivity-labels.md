@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza del framework Microsoft Information Protection per classificare e proteggere i dati dell'organizzazione, garantendo al contempo che la produttività degli utenti e la loro capacità di collaborare non vengano ostacolate. Queste etichette possono applicare impostazioni di protezione che includono contrassegni visivi di crittografia come piè di pagina e filigrane.
-ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: d31faa5dde212060f5e7b3c075cf4bc6fb3bef5f
+ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790653"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43957306"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -77,10 +77,7 @@ A ogni elemento di contenuto può essere applicata una sola etichetta di riserva
 ## <a name="what-sensitivity-labels-can-do"></a>Operazioni eseguibili dalle etichette di riservatezza
 
 > [!NOTE]
-> Oltre che per l'applicazione di etichette ai messaggi di posta elettronica e ai documenti nelle app di Office, le etichette di riservatezza sono ora disponibili anche nelle versioni di anteprima pubbliche seguenti:
-> 
-> - [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md)
+> Oltre ad applicare etichette di riservatezza a messaggi di posta elettronica e documenti (attualmente in anteprima) è possibile anche [usare etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](sensitivity-labels-teams-groups-sites.md).
 
 Quando si applica un'etichetta di riservatezza a un messaggio di posta elettronica o a un documento, vengono applicate ai contenuti le impostazioni di protezione configurare per quell'etichetta. Con un'etichetta di riservatezza, è possibile:
 
