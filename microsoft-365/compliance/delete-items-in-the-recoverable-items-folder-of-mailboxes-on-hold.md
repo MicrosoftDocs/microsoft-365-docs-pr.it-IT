@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: "Per gli amministratori: eliminare gli elementi in un \n\ncartella elementi ripristinabili di er per una cassetta postale di Exchange Online, anche se la cassetta postale è abilitata alla conservazione legale. Si tratta di un modo efficace per eliminare i dati che sono stati inavvertitamente riversati in Microsoft 365."
-ms.openlocfilehash: 0e6782c96efa997773b06535d5a0364100bd5433
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Per gli amministratori: eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale. Si tratta di un modo efficace per eliminare i dati che sono stati inavvertitamente riversati in Microsoft 365.'
+ms.openlocfilehash: 4cf568c06fc3b6ee886ff1823d8771a64c0286d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630513"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022086"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
 
@@ -48,24 +48,24 @@ La cartella elementi ripristinabili per una cassetta postale di Exchange Online 
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per creare ed eseguire una ricerca di contenuto, è necessario essere un membro del gruppo di ruoli di gestione di eDiscovery o disporre del ruolo di gestione della ricerca di conformità. Per eliminare i messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
-    
+
 - La procedura descritta in questo articolo non è supportata per le cassette postali inattive. Ciò è dovuto al fatto che non è possibile riapplicare un blocco o un criterio di conservazione a una cassetta postale inattiva dopo averlo rimosso. Quando si rimuove un'esenzione da una cassetta postale inattiva, viene modificata in una normale cassetta postale eliminata temporaneamente e viene eliminata definitivamente dall'organizzazione dopo che è stata elaborata dall'Assistente cartelle gestite.
-    
+
 - Non è possibile eseguire questa procedura per una cassetta postale che è stata assegnata a un criterio di conservazione bloccato con un blocco di conservazione. Ciò è dovuto al fatto che un blocco di conservazione impedisce di rimuovere o escludere la cassetta postale dal criterio di conservazione e di disabilitare l'Assistente cartelle gestite nella cassetta postale. Per ulteriori informazioni sul blocco dei criteri di conservazione, vedere [Locking a Retention Policy](retention-policies.md#locking-a-retention-policy).
-    
+
 - Se non si dispone di una cassetta postale in attesa (o se non è stato abilitato il ripristino di un singolo elemento), è possibile eliminare gli elementi dalla cartella elementi ripristinabili. Per ulteriori informazioni su come eseguire questa operazione, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Passaggio 1: raccogliere informazioni sulla cassetta postale
 
 Questo primo passaggio consiste nel raccogliere le proprietà selezionate dalla cassetta postale di destinazione che influenzerà questa procedura. Assicurarsi di annotare queste impostazioni o salvarle in un file di testo, perché si modificheranno alcune di queste proprietà e quindi si tornerà ai valori originali del passaggio 6, dopo aver eliminato gli elementi dalla cartella elementi ripristinabili. Ecco un elenco delle proprietà della cassetta postale che è necessario raccogliere.
   
--  *SingleItemRecoveryEnabled* e *RetainDeletedItemsFor* ; Se necessario, è possibile disabilitare il ripristino singolo e aumentare il periodo di conservazione degli elementi eliminati nel passaggio 3. 
-    
--  *LitigationHoldEnabled* e *InPlaceHolds* ; è necessario identificare tutti gli appigli posizionati nella cassetta postale in modo da poterli rimuovere temporaneamente nel passaggio 3. Vedere la sezione [ulteriori informazioni](#more-information) per suggerimenti su come identificare il blocco dei tipi che potrebbe essere posizionato su una cassetta postale. 
-    
+- *SingleItemRecoveryEnabled* e *RetainDeletedItemsFor*. Se necessario, è possibile disabilitare il ripristino singolo e aumentare il periodo di conservazione degli elementi eliminati nel passaggio 3. 
+
+- *LitigationHoldEnabled* e *InPlaceHolds*. È necessario identificare tutti gli appigli posizionati nella cassetta postale in modo da poterli rimuovere temporaneamente nel passaggio 3. Vedere la sezione [ulteriori informazioni](#more-information) per suggerimenti su come identificare il blocco dei tipi che potrebbe essere posizionato su una cassetta postale. 
+
 Inoltre, è necessario ottenere le impostazioni di accesso client delle cassette postali in modo da poterle disabilitare temporaneamente in modo che il proprietario (o altri utenti) non riesca ad accedere alla cassetta postale durante questa procedura. Infine, è possibile ottenere la dimensione corrente e il numero di elementi nella cartella elementi ripristinabili. Dopo aver eliminato gli elementi nella cartella elementi ripristinabili nel passaggio 5, è possibile utilizzare queste informazioni per verificare che gli elementi siano stati rimossi.
   
-1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Assicurarsi di utilizzare un nome utente e una password per un account amministratore a cui sono stati assegnati i ruoli di gestione idonei in Exchange Online. 
+1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Assicurarsi di utilizzare un nome utente e una password per un account amministratore a cui sono stati assegnati i ruoli di gestione idonei in Exchange Online. 
     
 2. Eseguire il seguente comando per ottenere informazioni sul ripristino di un singolo elemento e sul periodo di conservazione degli elementi eliminati.
 
@@ -225,9 +225,9 @@ Dopo aver identificato che una cassetta postale è in attesa perché viene appli
 
 Per ulteriori informazioni sulle etichette, vedere [Panoramica delle etichette](labels.md).
 
- ### <a name="ediscovery-case-holds"></a>blocco del caso di eDiscovery
+ ### <a name="ediscovery-holds"></a>eDiscovery contiene
   
-Per identificare il blocco associato a un caso di eDiscovery applicato alla cassetta postale, eseguire i comandi seguenti in [PowerShell Centro sicurezza & Compliance](https://go.microsoft.com/fwlink/?linkid=627084) . Utilizzare il GUID (escluso il `UniH` prefisso) per il blocco eDiscovery identificato nel passaggio 1. Nel secondo comando viene visualizzato il nome del caso di eDiscovery a cui è associato il blocco. il terzo comando Visualizza il nome dell'esenzione. 
+Per identificare il blocco associato a un caso di eDiscovery (denominato *eDiscovery*holds) applicato alla cassetta postale, eseguire i comandi seguenti in [PowerShell Center Security & Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) . Utilizzare il GUID (escluso il `UniH` prefisso) per il blocco eDiscovery identificato nel passaggio 1. Nel secondo comando viene visualizzato il nome del caso di eDiscovery a cui è associato il blocco. il terzo comando Visualizza il nome dell'esenzione. 
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -241,7 +241,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-Dopo aver identificato il nome del caso di eDiscovery e il blocco, passare alla pagina **eDiscovery** \> **eDiscovery** nel centro conformità, aprire il caso e rimuovere la cassetta postale dall'esenzione. Per ulteriori informazioni, vedere [casi di eDiscovery](ediscovery-cases.md).
+Dopo aver identificato il nome del caso di eDiscovery e il blocco, passare alla pagina **eDiscovery** \> **eDiscovery** nel centro conformità, aprire il caso e rimuovere la cassetta postale dall'esenzione. Per ulteriori informazioni sull'identificazione di eDiscovery holds, vedere la sezione "eDiscovery holds" in [How to identificare il tipo di blocco posizionato su una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Passaggio 4: rimuovere la sospensione di ritardo dalla cassetta postale
 

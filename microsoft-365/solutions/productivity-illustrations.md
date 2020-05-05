@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 8482c6591958e36f2c764d61f3fa7116f348f8d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011852"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022133"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
@@ -54,7 +54,7 @@ A seconda dell'ambiente in uso, alcuni strumenti sono più adatti a determinate 
 
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine Thumb per la strategia di distribuzione del trifosfato di adenosina di Microsoft Defender](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Aggiornato il 2020 febbraio| Il materiale architettonico consente di pianificare la distribuzione per le seguenti architetture: <ul><li> Cloud-nativo </li><li> Co-gestione </li><li> Locale</li><li>Valutazione e onboarding locale</li>
+|[![Immagine Thumb per la strategia di distribuzione del trifosfato di adenosina di Microsoft Defender](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf) \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>Aggiornato il 2020 febbraio| Il materiale architettonico consente di pianificare la distribuzione per le seguenti architetture: <ul><li> Cloud-nativo </li><li> Co-gestione </li><li> Locale</li><li>Valutazione e onboarding locale</li>
 
 
 <a name="m365foundationinfra"></a>
@@ -121,16 +121,7 @@ Aggiornato il 2019 gennaio
 
 Per altre informazioni, vedere l'articolo correlato a questo poster: [Soluzioni di telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Distribuire un desktop protetto e moderno con Microsoft
-
-Cosa devono sapere gli architetti IT sulla distribuzione e la gestione degli aggiornamenti per Microsoft 365 Apps for Enterprise (in precedenza denominato Office 365 ProPlus) in Windows 10.
   
-
-|**Elemento**|**Descrizione**|
-|:-----|:-----|
-|[![Miniatura per il modello Distribuire un desktop protetto e moderno con Microsoft](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Aggiornato il 2017 settembre | Questo modello contiene: <ul><li>  Distribuzione di Windows 10 e Microsoft 365 Apps for Enterprise dal cloud Microsoft </li><li>  Distribuzione di Windows 10 e Microsoft 365 Apps for Enterprise con Microsoft endpoint Configuration Manager </li><li>  Gestione degli aggiornamenti per le app di Windows 10 e Microsoft 365 per Enterprise dal cloud Microsoft </li><li>  Gestione degli aggiornamenti per le app di Windows 10 e Microsoft 365 per Enterprise con Microsoft endpoint Configuration Manager </li><li>  Funzionalità di protezione predefinite e aggiuntive di Windows 10 </li></ul><br/> |
-   
 ## <a name="see-also"></a>Vedere anche
 
 [Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](https://docs.microsoft.com/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)

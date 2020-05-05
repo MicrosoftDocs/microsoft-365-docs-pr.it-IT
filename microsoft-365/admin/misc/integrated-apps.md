@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Vengono fornite informazioni sulle app integrate e su come attivarle per consentire alle app di terze parti di accedere all'informazione di Microsoft 365 degli utenti.
-ms.openlocfilehash: 7e758facda49bb63e09c9ec667522c2b20fa75bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e292afc4ab33eef1ace91808f93588b9cec4702
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627849"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022109"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Attivazione o disattivazione di App integrate
 
@@ -35,7 +35,7 @@ Quando le app integrate sono attivate, gli utenti dell'organizzazione possono co
 
 Ecco come attivare o disattivare App integrate.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina dei [componenti &amp; aggiuntivi dei servizi](https://go.microsoft.com/fwlink/p/?linkid=2053743) di **Impostazioni** \> e quindi selezionare **app integrate**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla \> pagina **Impostazioni** \> **Impostazioni,** alla scheda **Servizi** e quindi selezionare **app integrate**.
 
 2. Nella pagina **app integrate** , selezionare l'opzione per abilitare o disabilitare le app integrate.
 

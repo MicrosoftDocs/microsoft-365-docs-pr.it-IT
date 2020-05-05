@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0bb91f226a29fe6b175cf1ca4866316d1457291e
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 394fceffb96350b7702c5eef4a8138b3eb53f714
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011864"
+ms.locfileid: "44016075"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Attivare Microsoft Threat Protection
 
@@ -45,9 +45,6 @@ Per abilitare Microsoft Threat Protection, è necessario essere un amministrator
 
 ## <a name="start-using-the-service"></a>Iniziare a usare il servizio
 
->[!IMPORTANT]
->A partire dal 3 maggio 2020, Microsoft eseguirà gradualmente nuove esperienze ottimizzate in merito [ai requisiti di licenza](prerequisites.md#licensing-requirements) e all'attivazione di Microsoft Threat Protection. Per alcune settimane durante questo periodo, alcuni clienti inizieranno a visualizzare le modifiche apportate alle esperienze del portale. Le informazioni sulle nuove esperienze sono state contrassegnate come **nuova esperienza** in questo articolo.
-
 Microsoft Threat Protection aggrega i dati provenienti dai vari servizi integrati. I dati verranno elaborati e archiviati in modo centralizzato per identificare nuove informazioni e rendere possibili flussi di lavoro di risposta centralizzati. In questo caso, senza influire sulle distribuzioni, le impostazioni o i dati esistenti associati ai servizi integrati.
 
 Prima di abilitare il servizio, Microsoft 365 Security Center ([Security.Microsoft.com](https://security.microsoft.com)) Visualizza la pagina di benvenuto di Microsoft Threat Protection quando si seleziona **incidenti**, **Centro azioni**o **ricerca** nel riquadro di spostamento. Queste opzioni di spostamento non vengono visualizzate se non si è idonei per l'utilizzo di Microsoft Threat Protection.
@@ -64,8 +61,6 @@ Per abilitare Microsoft Threat Protection, è sufficiente completare il processo
 Se è stato eseguito il provisioning di Microsoft Defender ATP per l'organizzazione, i dati verranno archiviati ed elaborati nella stessa area data center selezionata per i [dati di Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Se non si dispone di Microsoft Defender ATP, verrà chiesto di scegliere una nuova area data center specifica per Microsoft Threat Protection. 
  
 È necessario fornire il consenso prima che i dati vengano condivisi tra i servizi e aggregati.
-
-**Nuova esperienza:** A partire dal 3 maggio 2020, i clienti riceveranno gradualmente le modifiche apportate a questa esperienza. Per gli utenti con la nuova esperienza, il servizio seleziona automaticamente la posizione ottimale del centro dati per i dati aggregati in base ai servizi di sicurezza esistenti di Microsoft 365. La posizione del Data Center selezionato viene visualizzata nella schermata.
 
 ### <a name="confirm-that-the-service-is-on"></a>Verificare che il servizio sia attivo
 Dopo aver eseguito il provisioning il servizio aggiunge:
