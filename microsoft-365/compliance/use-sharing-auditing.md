@@ -1,5 +1,5 @@
 ---
-title: Controllare la condivisione per identificare risorse condivise con utenti esterni
+title: Usare il controllo di condivisione nel log di controllo
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,17 +19,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: "La condivisione è un'attività chiave in SharePoint Online e OneDrive for business. Gli amministratori possono ora utilizzare il controllo di condivisione nel log di controllo di Office 365 per identificare le risorse condivise con gli utenti esterni all'organizzazione. "
-ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: "La condivisione è un'attività chiave in SharePoint Online e OneDrive for business. Gli amministratori possono ora utilizzare il controllo di condivisione nel log di controllo per identificare le risorse condivise con gli utenti all'esterno dell'organizzazione. "
+ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069239"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626382"
 ---
-# <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Controllare la condivisione per identificare risorse condivise con utenti esterni
+# <a name="use-sharing-auditing-in-the-audit-log"></a>Usare il controllo di condivisione nel log di controllo
 
-La condivisione è un'attività chiave in SharePoint Online e OneDrive for business ed è ampiamente utilizzata nelle organizzazioni di Office 365. Gli amministratori possono utilizzare il controllo di condivisione nel log di controllo di Office 365 per determinare in che modo viene utilizzata la condivisione nell'organizzazione. 
+La condivisione è un'attività chiave in SharePoint Online e OneDrive for business ed è ampiamente utilizzata nelle organizzazioni. Gli amministratori possono utilizzare il controllo di condivisione nel log di controllo per determinare in che modo viene utilizzata la condivisione nell'organizzazione. 
   
 ## <a name="the-sharepoint-sharing-schema"></a>Lo schema di condivisione di SharePoint
 
@@ -41,13 +41,13 @@ Nello schema di condivisione sono disponibili due campi aggiuntivi in un record 
 
 - **TargetUserOrGroupName:** Archivia l'UPN o il nome dell'utente o del gruppo di destinazione a cui è stata condivisa una risorsa (utente B nell'esempio precedente). 
 
-Questi due campi, oltre ad altre proprietà dallo schema del registro di controllo di Office 365, ad esempio l'utente, l'operazione e la data, possono raccontare la storia completa *dell'utente che* *ha condiviso la* risorsa con *chi* e *quando*. 
+Questi due campi, oltre ad altre proprietà dello schema del registro di controllo, ad esempio utente, operazione e data, possono raccontare la storia completa *dell'utente* che *ha condiviso la* risorsa con *cui* e *quando*. 
   
 È presente un'altra proprietà dello schema che è importante per la storia della condivisione. Quando si esportano i risultati della ricerca dei log di controllo, la colonna **AuditData** nel file CSV esportato Archivia le informazioni sugli eventi di condivisione. Ad esempio, quando un utente condivide un sito con un altro utente, questo viene ottenuto aggiungendo l'utente di destinazione a un gruppo di SharePoint. La colonna **AuditData** acquisisce queste informazioni per fornire il contesto per gli amministratori. Per istruzioni su come analizzare le informazioni nella colonna **AuditData** , vedere il [passaggio 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) .
 
 ## <a name="sharepoint-sharing-events"></a>Eventi di condivisione di SharePoint
 
-La condivisione è definita da quando un utente (l'utente che *agisce* ) desidera condividere una risorsa con un altro utente (l'utente di *destinazione* ). I record di controllo relativi alla condivisione di una risorsa con un utente esterno (un utente esterno all'organizzazione e non dispongono di un account Guest nell'Azure Active Directory dell'organizzazione) sono identificati dagli eventi seguenti, che vengono registrati in Office 365 Registro di controllo:
+La condivisione è definita da quando un utente (l'utente che *agisce* ) desidera condividere una risorsa con un altro utente (l'utente di *destinazione* ). I record di controllo relativi alla condivisione di una risorsa con un utente esterno (un utente esterno all'organizzazione e che non dispongono di un account Guest nell'Azure Active Directory dell'organizzazione) sono identificati dagli eventi seguenti, che vengono registrati nel log di controllo:
 
 - **SharingInvitationCreated:** Un utente dell'organizzazione ha provato a condividere una risorsa (probabilmente un sito) con un utente esterno. Questo comporta l'invio di un invito di condivisione esterna all'utente di destinazione. A questo punto non viene concesso l'accesso alla risorsa.
 
@@ -93,11 +93,11 @@ Un requisito comune per gli amministratori consiste nella creazione di un elenco
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Passaggio 1: cercare gli eventi di condivisione ed esportare i risultati in un file CSV
 
-Il primo passaggio consiste nell'eseguire una ricerca nel registro di controllo di Office 365 per la condivisione degli eventi. Per ulteriori informazioni (incluse le autorizzazioni necessarie) per la ricerca nel registro di controllo, vedere [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+Il primo passaggio consiste nell'eseguire una ricerca nel registro di controllo per la condivisione degli eventi. Per ulteriori informazioni (incluse le autorizzazioni necessarie) per la ricerca nel registro di controllo, vedere [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
+2. Accedere con l'account aziendale o dell'Istituto di istruzione.
     
 3. Nel riquadro sinistro del Centro sicurezza e conformità fare clic su **Cerca**  > **Ricerca log di controllo**.
     
