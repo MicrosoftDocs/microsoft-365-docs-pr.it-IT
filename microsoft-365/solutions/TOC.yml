@@ -18,7 +18,7 @@
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: Passaggio 2. Fornire accesso remoto
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 'Passaggio 3: Distribuire la gestione degli endpoint per i dispositivi, i PC e gli altri endpoint'
+        - name: 'Passaggio 3: Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint'
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: Passaggio 4. Distribuire le app e i servizi di produttività dei lavoratori remoti
           href: empower-people-to-work-remotely-teams-productivity-apps.md
@@ -39,7 +39,7 @@
               href: configure-teams-sensitive-protection.md
             - name: Configurare la protezione estremamente riservata
               href: configure-teams-highly-sensitive-protection.md
-            - name: Configurare un team con isolamento di sicurezza
+            - name: Configurare un team con l'isolamento di sicurezza
               href: secure-teams-security-isolation.md
         - name: Configurare la condivisione esterna
           items:
@@ -76,41 +76,41 @@
     - name: Lavoro di squadra e collaborazione
       items:
         - name: Manifesti dell'architettura di Teams
-          href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Soluzioni di telefonia
           items:
             - name: Scegliere la soluzione
-              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: Case Study per la società multi-nazionale
               href: null
         - name: Collaborazione ai file in SharePoint con Microsoft 365
-          href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Pianificare una rete Intranet di SharePoint intelligente
-          href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Guida di OneDrive per le aziende
-          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Sicurezza
       items:
         - name: Attività principali per i team di sicurezza che supportano l'utilizzo da casa
-          href: 'https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Microsoft 365 Security for Business Decision Makers (BDMs)
-          href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Distribuire Microsoft Defender Advanced Threat Protection
-          href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Conformità
       items:
         - name: Protezione delle informazioni per il GDPR
-          href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Piani di azione per la conformità alle normative
           items:
             - name: 'ISO: piano d''azione consigliato'
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/iso-action-plan?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/iso-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 'NIST: piano d''azione consigliato'
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 'CCPA: domande frequenti'
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: GDPR-piano d'azione consigliato
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Case Study di contoso
       items:
         - name: Soluzioni Microsoft 365 per Contoso Corporation
@@ -138,17 +138,17 @@
     - name: Assistenza sanitaria
       items:
         - name: Teams per il settore sanitario
-          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Istruzione
       items:
         - name: Teams per l'istruzione
-          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Enti pubblici
       items:
         - name: Teams per enti pubblici
-          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Supporto di operatori governativi remoti tramite Team
-          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
 - name: Principi di progettazione dell'architettura aziendale
   items:
     - name: Panoramica
