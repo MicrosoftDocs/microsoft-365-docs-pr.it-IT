@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631514"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011960"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -104,7 +104,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 ### <a name="windows-and-office-as-a-service"></a>Windows e Office come servizio
   - Gestire gli aggiornamenti di Windows con Criteri di gruppo
   - Manutenzione di Windows 10 con Configuration Manager e Intune
-  - Manutenzione di Office 365 ProPlus con Configuration Manager
+  - Installazione di Microsoft 365 Apps for enterprise con Configuration Manager
 
 ### <a name="new-windows-virtual-desktop"></a>NOVITÀ! Desktop virtuale Windows
   - Desktop virtuale Windows: preparazione, distribuzione, ottimizzazione 
@@ -121,11 +121,11 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
   - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Distribuzione del sistema operativo di Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Distribuzione del sistema operativo di Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Pianificare la distribuzione di Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Guida alla distribuzione di Microsoft 365 Apps for enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Guida alla distribuzione di Microsoft 365 Apps</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [<span class="underline">Introduzione a Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

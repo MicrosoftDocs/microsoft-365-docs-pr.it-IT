@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le risorse a disposizione per la distribuzione nell'organizzazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: 3f6ddb1caf270f2ba261bd7b9c8f8cd938187705
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638237"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002356"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuire Microsoft 365 per le aziende
 
@@ -117,7 +117,7 @@ La definizione di una cultura digitale rappresenta la maggiore priorità per ogn
 
 Nel contempo, le funzionalità di sicurezza e l'integrazione dei prodotti sono utili per semplificare le esigenze di gestione e ridurre al minimo il costo totale di proprietà nel ciclo di vita IT. 
 
-Informazioni come Core Services Engineering and Operations (in precedenza Microsoft IT) [hanno pianificato e distribuito una fondazione](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365) che supporta le applicazioni e i servizi che liberano la creatività e favoriscono il lavoro in un ambiente sicuro.
+Informazioni su come Core Services Engineering and Operations (precedentemente Microsoft IT) ha creato [ un ambiente di lavoro moderno con Microsoft 365 ](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
 
 > [!Note]
 > Questa pagina web è disponibile solo in inglese.
