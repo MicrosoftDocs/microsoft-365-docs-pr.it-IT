@@ -23,13 +23,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: "Informazioni su come rinnovare l'abbonamento a Microsoft 365 for business utilizzando un codice \"Product Key\" e accendere o spegnere la fatturazione ricorrente. "
-ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+description: "Informazioni su come rinnovare l'abbonamento a Microsoft 365 for business utilizzando un codice \"Product Key\" e disattivare o meno la fatturazione ricorrente. "
+ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707656"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046229"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Rinnovare Microsoft 365 for business
 
@@ -48,7 +48,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
 
@@ -60,7 +60,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
     > [!NOTE]
     > - È possibile modificare l'impostazione di **fatturazione ricorrente** solo per le sottoscrizioni attive. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di poter attivare o disattivare la **fatturazione ricorrente** .
-    > - Quando la **fatturazione ricorrente** è disattivata, l'abbonamento non viene annullato immediatamente. Rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella sezione **fatturazione** dei dettagli della sottoscrizione nella pagina **prodotti & Servizi** .
+    > - Quando la **fatturazione ricorrente** è disattivata, l'abbonamento non viene annullato immediatamente. Rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella sezione **fatturazione** dei dettagli della sottoscrizione nella pagina i **prodotti** .
     > - Per informazioni su come annullare l'abbonamento subito, vedere [annullare l'abbonamento](cancel-your-subscription.md).
 
 ::: moniker-end
@@ -70,7 +70,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
- 
+
 3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore **su**attivato.
 
     ![Primo piano di una scheda di sottoscrizione con fatturazione ricorrente attivata.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
@@ -109,10 +109,6 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
   
 [Che cosa succede ai dati personali al termine dell'abbonamento?](what-if-my-subscription-expires.md)
 
-[Aggiungere, aggiornare o rimuoverei metodi di pagamento](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-
-[Cambiare la modalità di pagamento](../billing-and-payments/change-payment-method.md)
-  
 [Immettere il codice "Product Key"](../enter-your-product-key.md)
   
 [Acquistare la versione di valutazione di Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md)

@@ -14,13 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-description: Prima di eseguire la ricerca, controllare la query di parole chiave per la ricerca di contenuto per errori e refusi, ad esempio caratteri non supportati e operatori booleani minuscoli. Se viene visualizzato un errore, verrà suggerita una query riveduta.
-ms.openlocfilehash: bd87faa774f8449833287ff0c583f9e15a4298ff
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come controllare la query di parole chiave per la ricerca di contenuto per errori e refusi, ad esempio i caratteri non supportati e gli operatori booleani minuscoli.
+ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942909"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035628"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Verificare la presenza di errori nella query di Ricerca contenuto
 

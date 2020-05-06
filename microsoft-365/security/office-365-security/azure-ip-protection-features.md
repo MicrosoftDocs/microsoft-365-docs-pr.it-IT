@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
 ms.collection:
 - M365-security-compliance
-description: Per facilitare il passaggio iniziale della protezione delle informazioni, a partire da luglio 2018 tutti i tenant idonei per la protezione delle informazioni di Azure disporranno delle funzionalità di protezione in Azure Information Protection attivate per impostazione predefinita. Le funzionalità di protezione di Azure Information Protection in precedenza erano note in Office 365 come Rights Management o Azure RMS. Se l'organizzazione dispone di un piano di servizio di Office E3 o di un piano di servizio superiore, è possibile iniziare a proteggere le informazioni tramite Azure Information Protection quando vengono implementate queste funzionalità.
-ms.openlocfilehash: 3efdeefd2008a5ff9f730b879190d1edc015803a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo vengono illustrate le modifiche apportate alle funzionalità di protezione di Azure Information Protection
+ms.openlocfilehash: 0f08163602ae34689c8e68bbc0c02e072ce89696
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638273"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035605"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Funzionalità di protezione in Azure Information Protection in uscita dai tenant esistenti
 

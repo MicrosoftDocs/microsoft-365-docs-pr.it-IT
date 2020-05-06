@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6c42f594ef10c868051d81b0a7ea4b7ff84e00
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni sul modo in cui il modulo pertinenza analizza i dati in evidenza con una descrizione del flusso di lavoro di pertinenza e dei passaggi di formazione in indagini sui dati (Preview).
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080613"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034488"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Utilizzare il modulo pertinenza per analizzare i dati in evidenza
 
@@ -121,14 +122,14 @@ Nella scheda ** \> Tracking pertinenza** , le indagini sui dati forniscono sugge
     
   - Implicazione: non è necessaria alcuna formazione di pertinenza a questo punto.
     
-Anche se le indagini sui dati guidano il processo, con i passaggi successivi consigliati nelle diverse fasi, consente anche di spostarsi tra le schede e le pagine e di fare scelte per risolvere le situazioni che potrebbero essere rilevanti per il singolo caso, il problema o processo di revisione del documento. 
+Anche se le indagini sui dati guidano il processo, con i passaggi successivi consigliati nelle diverse fasi, consente anche di spostarsi tra le schede e le pagine e di fare scelte per risolvere le situazioni che potrebbero essere rilevanti per il processo individuale, di problema o di revisione dei documenti. 
   
 È possibile accettare o sostituire le indagini sui dati nelle scelte successive all'elaborazione dei passaggi. Se si desidera eseguire una procedura diversa da quella consigliata, fare clic sul **passaggio successivo** elencato nella visualizzazione del problema espanso nella finestra di dialogo, fare clic sul pulsante **modifica** accanto al passaggio successivo e selezionare un'altra opzione per il passaggio successivo. 
   
 > [!NOTE]
 > Alcune opzioni potrebbero rimanere disabilitate dopo lo sblocco, in quanto non sono supportate per l'utilizzo in quel momento del processo. 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 [Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   

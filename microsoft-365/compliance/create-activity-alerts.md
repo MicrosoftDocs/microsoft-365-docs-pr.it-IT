@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Aggiungere e gestire gli avvisi di attività nel centro sicurezza & conformità in modo che Microsoft 365 invierà notifiche di posta elettronica quando gli utenti eseguono attività specifiche.
-ms.openlocfilehash: e6800bf5b8bbc013586a4be248a4e9e71fc70507
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: Aggiungere e gestire gli avvisi di attività nel centro sicurezza & conformità in modo che Microsoft 365 invierà notifiche di posta elettronica quando gli utenti eseguono attività specifiche
+ms.openlocfilehash: 16c40ebeb44ecb1c54a1715a936436b3427a7d54
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943165"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035808"
 ---
 # <a name="create-activity-alerts"></a>Creare avvisi attività
 
@@ -34,7 +34,7 @@ ms.locfileid: "43943165"
 > [!NOTE]
 > Gli avvisi di attività sono deprecati. Si consiglia di iniziare a utilizzare i criteri di avviso nel centro sicurezza e conformità invece di creare nuovi avvisi attività. I criteri di avviso offrono funzionalità aggiuntive, come la possibilità di creare un criterio di avviso che attiva un avviso quando un utente esegue un'attività specificata e visualizza avvisi nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [criteri di avviso](alert-policies.md).
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per gestire gli avvisi di attività, è necessario che il ruolo Configurazione organizzazione sia assegnato al centro sicurezza & conformità. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli amministratore conformità e gestione organizzazione. Per ulteriori informazioni sull'aggiunta di membri ai gruppi di ruoli, vedere [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     

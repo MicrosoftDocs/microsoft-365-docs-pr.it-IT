@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Freenom per Microsoft.
-ms.openlocfilehash: a7ad45d3d785478966df5120567836200de316da
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939228"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049036"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Creare record DNS in Freenom per Microsoft
 
@@ -139,7 +139,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Tipo**|**TTL**|**Destinazione**|**Priorità**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lasciare vuoto)  <br/> |MX (Mail Exchanger)  <br/> |3600 (secondi)  <br/> |\<Domain-Key\>. mail.Protection.Outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [What is MX priority?](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9). <br/> |
+    |(lasciare vuoto)  <br/> |MX (Mail Exchanger)  <br/> |3600 (secondi)  <br/> |\<Domain-Key\>. mail.Protection.Outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   

@@ -1,5 +1,5 @@
 ---
-title: Usare DKIM per la posta elettronica nel dominio personalizzato in Microsoft 365, 2048 bit, 1024 bit, passaggi, funzionamento, SPF, DMARC
+title: Come usare DKIM per la posta elettronica nel dominio personalizzato
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
-description: 'Riepilogo: in questo articolo viene illustrato come usare DomainKeys Identified Mail (DKIM) insieme a Microsoft 365 per garantire che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.'
-ms.openlocfilehash: 17cfbcbe4f7279e8142e5102fc2d1f61c53d8ddc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come usare DomainKeys Identified Mail (DKIM) insieme a Microsoft 365 per garantire che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.
+ms.openlocfilehash: 2db8af2c0651388998967db239ceed92a8be1018
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631110"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036609"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato
 

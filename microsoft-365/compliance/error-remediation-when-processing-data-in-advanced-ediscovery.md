@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5421ba811e401bdd191aee0ddbff21a1286dc9fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su come utilizzare la correzione degli errori per correggere i problemi relativi ai dati in Advanced eDiscovery che potrebbero impedire l'elaborazione corretta del contenuto.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8ada53dd6339541fc39b37903a0f58fd4ad84c8c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074573"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035910"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correzione degli errori durante l'elaborazione dei dati
 
@@ -104,7 +105,7 @@ Nei casi in cui il contenuto di un file contenitore (ad esempio un file con este
 
 ## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Correzione degli errori mediante il caricamento del testo Estratto
 
-A volte non è possibile correggere un file in un formato nativo che può essere interpretato da Advanced eDiscovery. Tuttavia, è possibile sostituire il file originale con un file di testo contenente il testo originale del file nativo (in un processo denominato *sovrapposizione di testo*). A tale scopo, seguire i passaggi descritti in questo articolo, ma anziché correggere il file originale nel formato nativo, è necessario creare un file di testo contenente il testo estratto dal file originale e quindi caricare il file di testo utilizzando il nome file originale. accodato con un suffisso. txt. Ad esempio, è possibile scaricare un file durante la correzione degli errori con il nome file 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. È possibile aprire il file nell'applicazione nativa, copiare il testo e incollarlo in un nuovo file denominato 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. txt. Quando si esegue questa operazione, assicurarsi di rimuovere il file originale nel formato nativo dal percorso dei file corretti nel computer locale prima di caricare il file di testo di cui è stata eseguita la correzione in Advanced eDiscovery.
+A volte non è possibile correggere un file in un formato nativo che può essere interpretato da Advanced eDiscovery. Tuttavia, è possibile sostituire il file originale con un file di testo contenente il testo originale del file nativo (in un processo denominato *sovrapposizione di testo*). A tale scopo, seguire i passaggi descritti in questo articolo, ma invece di correggere il file originale nel formato nativo, è necessario creare un file di testo contenente il testo estratto dal file originale e quindi caricare il file di testo utilizzando il nome originale, accodato con un suffisso. txt. Ad esempio, è possibile scaricare un file durante la correzione degli errori con il nome file 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. È possibile aprire il file nell'applicazione nativa, copiare il testo e incollarlo in un nuovo file denominato 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. txt. Quando si esegue questa operazione, assicurarsi di rimuovere il file originale nel formato nativo dal percorso dei file corretti nel computer locale prima di caricare il file di testo di cui è stata eseguita la correzione in Advanced eDiscovery.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Cosa accade quando i file vengono corretti
 

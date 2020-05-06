@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Informazioni su come verificare il dominio e creare record DNS presso un provider di hosting DNS per Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919506"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048784"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Creare record DNS presso un provider di hosting DNS
 
@@ -41,7 +41,7 @@ Per identificare il provider di hosting DNS o il registrar per il dominio, veder
 Ecco i record da aggiungere per la configurazione manuale. Si noti che il record di verifica e il record MX sono specifici del dominio. Per configurarli, è necessario ottenere e usare un valore "token" specifico per il dominio. I passaggi seguenti spiegano come fare.
   
 > [!IMPORTANT]
-> Il nome esatto delle caselle o dei  *campi*  in cui si digitano o incollano le informazioni per creare i diversi tipi di record DNS varia a seconda dell'host DNS. Sul sito Web dell'host potrebbe essere disponibile una Guida per aiutare ad associare le istruzioni contenute qui ai campi del sito Web. È consigliabile controllare se sono disponibili istruzioni dettagliate per il proprio host DNS nell'articolo [Creare record DNS per Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). >  Alcuni host DNS non consentono di creare tutti i tipi di record necessari, con conseguenti [limitazioni del servizio](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) in Microsoft 365. Se l'host del proprio dominio non supporta i record SRV, TXT o CNAME, ad esempio, è consigliabile [trasferire il dominio](../get-help-with-domains/buy-a-domain-name.md) in un host che supporta tutti i record necessari. Per una configurazione automatizzata delle procedure con Microsoft 365, è consigliabile trasferire il dominio in GoDaddy. 
+> Il nome esatto delle caselle o dei  *campi*  in cui si digitano o incollano le informazioni per creare i diversi tipi di record DNS varia a seconda dell'host DNS. Sul sito Web dell'host potrebbe essere disponibile una Guida per aiutare ad associare le istruzioni contenute qui ai campi del sito Web. È consigliabile controllare se sono disponibili istruzioni dettagliate per il proprio host DNS nell'articolo [Creare record DNS per Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). >  Alcuni host DNS non consentono di creare tutti i tipi di record necessari, con conseguenti [limitazioni del servizio](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. Se l'host del proprio dominio non supporta i record SRV, TXT o CNAME, ad esempio, è consigliabile [trasferire il dominio](../get-help-with-domains/buy-a-domain-name.md) in un host che supporta tutti i record necessari. Per una configurazione automatizzata delle procedure con Microsoft 365, è consigliabile trasferire il dominio in GoDaddy. 
   
 > [!NOTE]
 > In genere l'applicazione delle modifiche al DNS richiede pochi minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -81,7 +81,7 @@ Prima di usare il proprio dominio con Microsoft 365, è necessario dimostrare di
       ||||||
       |:-----|:-----|:-----|:-----|:-----|
       |**Tipo di record**|**Alias** o **nome host**|**Valore**|**Priorità**|**TTL**|
-      |MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.    <br/>       [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
+      |MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.    <br/>       [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
    
 2. Salvare il record.
     
@@ -141,7 +141,7 @@ Trovare la pagina in cui è possibile creare i record del proprio dominio.
     
    - **Priorità**: impostare la priorità del record MX sul valore più alto disponibile, in genere **0**.
     
-      Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx).
+      Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
     
    - **Nome host**: **@**
     

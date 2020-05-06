@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637474"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043307"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestione dei rischi insider in Microsoft 365
 
@@ -58,7 +58,7 @@ L'identificazione e la risoluzione delle attività a rischio interno e i problem
 
 ![Workflow di gestione dei rischi Insider](../media/insider-risk-workflow.png)
 
-### <a name="policies"></a>Generali
+### <a name="policies"></a>Criteri
 
 I criteri di gestione dei rischi Insider vengono creati utilizzando modelli predefiniti e condizioni di criteri che definiscono gli indicatori di rischio esaminati nelle aree di funzionalità di Microsoft 365. Queste condizioni includono la modalità di utilizzo degli indicatori per gli avvisi, gli utenti inclusi nel criterio, quali sono le priorità dei servizi e il periodo di tempo di monitoraggio.
 
@@ -132,4 +132,5 @@ Le comunicazioni da dipendente a dipendente sono spesso un'origine di violazioni
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 
-È possibile configurare la gestione dei rischi Insider per la propria organizzazione? Vedere [Introduzione alla gestione dei rischi Insider](insider-risk-management-configure.md) per configurare i prerequisiti, creare criteri e iniziare a ricevere avvisi.
+- Per informazioni su come prepararsi per abilitare i criteri di gestione dei rischi Insider nell'organizzazione, vedere [Plan for Insider Risk Management](insider-risk-management-plan.md) .
+- Vedere [Introduzione alla gestione dei rischi Insider](insider-risk-management-configure.md) per configurare i prerequisiti, creare criteri e iniziare a ricevere avvisi.

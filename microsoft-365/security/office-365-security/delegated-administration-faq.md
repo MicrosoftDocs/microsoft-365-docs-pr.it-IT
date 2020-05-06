@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-description: In questo argomento sono riportate le domande frequenti e le risposte per i partner e i rivenditori Microsoft che desiderano eseguire attività amministrative Delegate, inclusa la possibilità di gestire Exchange Online Protection (EOP) per altri tenant (aziende).
-ms.openlocfilehash: b79c0aba026a8d59aac338ceac0f1c4a60d71c4d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In questo argomento vengono fornite le domande frequenti e le risposte per i partner e i rivenditori Microsoft che desiderano eseguire le attività amministrative di Microsoft 365 Delegate.
+ms.openlocfilehash: d2411734e583cce2be817793e2b39abba2b186a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637653"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036464"
 ---
 # <a name="delegated-administration-faq"></a>Domande frequenti sull'amministrazione delegata
 

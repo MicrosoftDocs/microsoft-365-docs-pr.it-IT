@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
-description: La funzionalità allegati sicuri fornisce il tempo di fare clic sulla verifica degli allegati di posta elettronica. Utilizzo degli allegati sicuri per proteggere l'organizzazione da file dannosi che gli utenti inviano o ricevono tramite posta elettronica.
-ms.openlocfilehash: ca46a523ffd15177c44dcb81d2529b769cc2e79c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+- seo-marvel-apr2020
+description: In questo articolo vengono fornite informazioni sulla funzionalità degli allegati sicuri di ATP per Office 365 e su come ottenere la funzionalità per l'abbonamento.
+ms.openlocfilehash: e6cbd5cb494e765bdb849da93114ea4168ab3c93
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636011"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034853"
 ---
 # <a name="atp-safe-attachments"></a>Allegati sicuri di ATP
 

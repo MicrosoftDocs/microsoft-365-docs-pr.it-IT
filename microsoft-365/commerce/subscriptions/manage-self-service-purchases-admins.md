@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a gestire gli acquisti in modalità self-service effettuati dagli utenti dell'organizzazione.
-ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409631"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046181"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gestire acquisti in modalità self-service (amministratore)
 
@@ -29,7 +29,7 @@ Come amministratore, è possibile visualizzare gli acquisti in modalità self-se
 
 ## <a name="view-self-service-subscriptions"></a>Visualizzare le sottoscrizioni in modalità self-service
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** > .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Accanto a **risultati di affinamento**, dall'elenco a discesa **tipo di account** scegliere **self-service**.
 
@@ -37,7 +37,7 @@ Come amministratore, è possibile visualizzare gli acquisti in modalità self-se
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visualizzazione delle licenze per un abbonamento all'acquisto in modalità self-service
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
 
 2. Scegliere l'icona filtro e quindi fare clic su **self-service**.
 
@@ -56,7 +56,7 @@ Come amministratore, è possibile visualizzare gli acquisti in modalità self-se
 
 È possibile utilizzare il modulo di **MSCommerce** PowerShell per:
 
-- Visualizzare lo stato predefinito del valore **** &mdash; del parametro AllowSelfServicePurchase se è abilitato o disabilitato per prodotto
+- Visualizzare lo stato predefinito del valore **AllowSelfServicePurchase** &mdash; del parametro AllowSelfServicePurchase se è abilitato o disabilitato per prodotto
 - Visualizzare un elenco di prodotti applicabili e se l'acquisto in modalità self-service è abilitato o disabilitato
 - Visualizzare o modificare l'impostazione corrente per un prodotto specifico per abilitarlo o disabilitarlo
 
@@ -68,7 +68,7 @@ Per ulteriori informazioni, vedere [use AllowSelfServicePurchase for the MSComme
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a> con l'account di amministratore globale o amministratore di fatturazione.
 
-2. Passare alla pagina **** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+2. Passare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 3. Trovare e scegliere il prodotto che si desidera acquistare, quindi scegliere **buy**.
 

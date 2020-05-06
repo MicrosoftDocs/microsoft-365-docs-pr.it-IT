@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono ottenere informazioni su come configurare l'ambiente di Exchange locale per instradare la posta indesiderata alle cartelle di posta indesiderata degli utenti locali, se si utilizza Exchange Online Protection (EOP) autonomo in ambienti ibridi.
-ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Gli amministratori possono imparare a instradare la posta indesiderata alle cartelle posta indesiderata degli utenti in un ambiente ibrido di Exchange Online Protection.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621283"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036573"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurare EOP autonomo per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi
 

@@ -1,5 +1,5 @@
 ---
-title: Indagine automatizzata e risposta (aria)
+title: Panoramica dell'analisi e della risposta automatizzata (AIR)
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.custom: air
-ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638549"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035617"
 ---
-# <a name="automated-investigation-and-response-air"></a>Indagine automatizzata e risposta (aria)
+# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Panoramica dell'analisi automatizzata e della risposta (AIR) in Microsoft 365
 
 Quando vengono attivati gli avvisi di sicurezza, spetta al team delle operazioni di sicurezza esaminare gli avvisi e procedere per proteggere l'organizzazione. A volte, i team delle operazioni di sicurezza possono sentirsi sopraffatti dal volume degli avvisi attivati. Le funzionalità di analisi e risposta automatizzate possono essere utili. AIR consente al team di operazioni di sicurezza di operare in modo più efficiente ed efficace. Le funzionalità AEREe includono processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. Le azioni correttive appropriate attendono l'approvazione, consentendo al team di operazioni di sicurezza di rispondere alle minacce rilevate. 
 

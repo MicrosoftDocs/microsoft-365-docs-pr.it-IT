@@ -16,13 +16,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: Viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Microsoft 365. Le esigenze di sicurezza possono richiedere più o meno sicurezza. Utilizzare questi suggerimenti come punto di partenza.
-ms.openlocfilehash: 0d16011a7abfcaa20d2a053ee9c00b3719a2b3c6
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: In questo argomento viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Microsoft 365.
+ms.openlocfilehash: 25338e95a638173abeebd3477955ad16c9116712
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949394"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043358"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurare il tenant Microsoft 365 per una maggiore sicurezza
 
@@ -38,7 +40,7 @@ Il Centro sicurezza Microsoft 365 include funzionalità che proteggono l'ambient
 
 ||||
 |---|---|---|
-|**Area**|**Include un criterio predefinito**|**Requisito consigliato**|
+|**Area**|**Include un criterio predefinito**|**Consiglio**|
 |**Anti-phishing**|Sì|Se si dispone di un dominio personalizzato, configurare il criterio anti-phishing predefinito per proteggere gli account di posta elettronica degli utenti più importanti, ad esempio il CEO, e per proteggere il dominio. Esaminare i [criteri anti-phishing in office 365](set-up-anti-phishing-policies.md) e vedere [Configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md) o [Configure ATP anti-phishing policys in Office 365](configure-atp-anti-phishing-policies.md).|
 |**Motore antimalware**|Sì| Modificare il criterio predefinito: <br/> &ensp;&ensp;* Filtro tipi di allegati comuni: selezionare attivato <br/><br/> È inoltre possibile creare criteri di filtro antimalware personalizzati e applicarli a utenti, gruppi o domini specificati nell'organizzazione. <br/><br/> Ulteriori informazioni: <br/> &ensp;&ensp;* [Protezione antimalware](anti-malware-protection.md) <br/> &ensp;&ensp;* [Configurazione dei criteri anti-malware](configure-anti-malware-policies.md)|
 |**Allegati sicuri di ATP**|No| Nella pagina principale per gli allegati sicuri, proteggere i file in SharePoint, OneDrive e Microsoft teams selezionando questa casella: <br/> &ensp;&ensp;* Attiva ATP per SharePoint, OneDrive e Microsoft Teams <br/><br/> Aggiungere un nuovo criterio degli allegati sicuri con queste impostazioni: <br/> &ensp;&ensp;* Block-blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato (scegliere questa opzione) <br/> &ensp;&ensp;* Consenti reindirizzamento: (selezionare questa casella e immettere un indirizzo di posta elettronica, ad esempio un account di amministratore o di quarantena) <br/> &ensp;&ensp;* Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore (seleziona questa casella) <br/> &ensp;&ensp;* Applicato a: il dominio del destinatario è (Seleziona il dominio) <br/><br/>Ulteriori informazioni: [configurare i criteri per gli allegati sicuri ATP di Office 365](set-up-atp-safe-attachments-policies.md)|
@@ -70,7 +72,7 @@ Molti dei controlli per la sicurezza e la protezione nell'interfaccia di amminis
 
 ||||
 |---|---|---|
-|**Area**|**Include un criterio predefinito**|**Requisito consigliato**|
+|**Area**|**Include un criterio predefinito**|**Consiglio**|
 |**Flusso di posta** (regole del flusso di posta, note anche come regole di trasporto)|No|Aggiungere una regola del flusso di posta per garantire la protezione da ransomware bloccando i tipi di file eseguibili e i tipi di file di Office che contengono macro. Per ulteriori informazioni, vedere [Use Mail Flow Rules to inspect Message Attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Per ulteriori informazioni, vedere gli argomenti seguenti: <br/>* [Protezione da ransomware](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>* [Protezione da malware e ransomware in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Eseguire il ripristino da un attacco ransomware in Office 365](recover-from-ransomware.md) <br/><br/> Creare una regola del flusso di posta per impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni. Per ulteriori informazioni, vedere [attenuazione delle regole di inoltro esterno client con Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/). <br/><br/> Ulteriori informazioni: [regole del flusso di posta (regole di trasporto) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**Abilitare l'autenticazione moderna**|No|L'autenticazione moderna è un prerequisito per l'utilizzo dell'autenticazione a più fattori (AMF). L'AMF è consigliata per garantire l'accesso alle risorse cloud, incluso il messaggio di posta elettronica. <br/><br/> Vedere gli argomenti seguenti: <br/>* [Abilitare o disabilitare l'autenticazione moderna in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype for business online: abilitare il tenant per l'autenticazione moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint Online e OneDrive for business. <br/><br/> Ulteriori informazioni: funzionamento dell' [autenticazione moderna per le app client di office 2013 e office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
@@ -85,7 +87,7 @@ Per supportare gli obiettivi per la protezione di base, configurare i criteri di
 
 ||||
 |---|---|---|
-|**Area**|**Include un criterio predefinito**|**Requisito consigliato**|
+|**Area**|**Include un criterio predefinito**|**Consiglio**|
 |**Condivisione** (SharePoint Online e OneDrive for business)|Sì|La condivisione esterna è abilitata per impostazione predefinita. Queste impostazioni sono consigliate: <br/>* Consenti la condivisione per gli utenti esterni autenticati e l'utilizzo di collegamenti di accesso anonimo (impostazione predefinita). <br/> * I collegamenti di accesso anonimo scadono in questo numero di giorni. Immettere un numero, se lo si desidera, ad esempio 30 giorni. <br/>* Tipo di collegamento predefinito: selezionare interno (solo persone nell'organizzazione). Gli utenti che desiderano condividere l'utilizzo dei collegamenti anonimi devono scegliere questa opzione dal menu condivisione. <br/><br/> Ulteriori informazioni: [Panoramica della condivisione esterna](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
 |
 
@@ -109,7 +111,7 @@ Per gli ambienti sicuri, assicurarsi di disabilitare l'autenticazione per le app
 
 Nel frattempo, utilizzare uno dei metodi seguenti per eseguire questa operazione per SharePoint Online e OneDrive for business:
 
-- Utilizzare PowerShell, vedere [bloccare le app che non utilizzano l'autenticazione moderna](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication).
+- Utilizzare PowerShell, vedere [bloccare le app che non utilizzano l'autenticazione moderna (adal)](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block).
 
 - Configurarlo nell'interfaccia di amministrazione di SharePoint nella pagina "accesso ai dispositivi"-"controllare l'accesso da app che non utilizzano l'autenticazione moderna". Scegliere blocca.
 

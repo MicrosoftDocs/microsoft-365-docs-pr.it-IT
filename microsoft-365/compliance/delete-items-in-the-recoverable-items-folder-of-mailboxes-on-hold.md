@@ -1,5 +1,5 @@
 ---
-title: Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
+title: Eliminare gli elementi nella cassetta postale del cloud nella cartella elementi ripristinabili-Guida per gli amministratori
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Per gli amministratori: eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale. Si tratta di un modo efficace per eliminare i dati che sono stati inavvertitamente riversati in Microsoft 365.'
-ms.openlocfilehash: 4cf568c06fc3b6ee886ff1823d8771a64c0286d8
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0e42249fb2ba7143c4c833193b31c72f0fb73137
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022086"
+ms.locfileid: "44035890"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
 

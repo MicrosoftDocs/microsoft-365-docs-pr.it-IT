@@ -1,5 +1,5 @@
 ---
-title: Passaggio a EOP da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort
+title: Passare a EOP da un altro servizio di protezione
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
-description: Lo scopo di questo argomento è quello di aiutare l'utente a comprendere il processo per passare a Exchange Online Protection (EOP) da un'applicazione per l'igiene della posta elettronica locale o un servizio di protezione basato su cloud, nonché di fornire risorse per iniziare.
-ms.openlocfilehash: e6a25d6477741f5796dd08b5811d97e2d0c76b51
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo vengono fornite informazioni su come passare a Exchange Online Protection (EOP) da un dispositivo di igiene della posta elettronica locale o da un servizio di protezione basato sul cloud.
+ms.openlocfilehash: 4bbd0b60d42b52d5c9343126f12059fcf1fc3d62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631194"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035225"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Passaggio a Exchange Online Protection da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort
 

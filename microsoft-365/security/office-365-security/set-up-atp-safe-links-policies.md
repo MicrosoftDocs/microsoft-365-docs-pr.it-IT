@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 31401e8f890f329f5724347deec2d85b6e473552
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638333"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045237"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -39,7 +39,7 @@ Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosin
   
 1. Esaminare i prerequisiti.
     
-2. Rivedere e modificare il criterio dei collegamenti sicuri ATP predefinito che si applica a tutti gli utenti. Ad esempio, è possibile [configurare l'elenco degli URL bloccati personalizzati per i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+2. Rivedere e modificare il criterio dei collegamenti sicuri ATP predefinito che si applica a tutti gli utenti. Ad esempio, è possibile [configurare l'elenco degli URL bloccati personalizzati per i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-atp.md).
     
 3. Aggiungere o modificare i criteri per i destinatari di messaggi di posta elettronica specifici, inclusa [la configurazione dell'elenco di URL personalizzati "non riscrivere" per i collegamenti sicuri di ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
@@ -75,7 +75,7 @@ Quando si dispone di [Office 365 Advanced Threat Protection](office-365-atp.md),
     
 3. Nei **criteri che si applicano all'intera sezione organizzazione** selezionare **predefinita**e quindi fare clic su **modifica** (il pulsante modifica è simile a una matita).<br/>![Fare clic su modifica per modificare il criterio predefinito per la protezione dei collegamenti sicuri](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
-4. Nella sezione **blocca gli URL seguenti** specificare uno o più URL che si desidera impedire agli utenti dell'organizzazione di visitare. Per ulteriori informazioni, vedere [configurare un elenco di URL bloccati personalizzato utilizzando collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+4. Nella sezione **blocca gli URL seguenti** specificare uno o più URL che si desidera impedire agli utenti dell'organizzazione di visitare. Per ulteriori informazioni, vedere [configurare un elenco di URL bloccati personalizzato utilizzando collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-atp.md).
     
 5. Nelle **impostazioni che si applicano al contenuto, ad eccezione della sezione posta elettronica** , selezionare (o deselezionare) le opzioni che si desidera utilizzare. (Si consiglia di selezionare tutte le opzioni). 
     
@@ -128,7 +128,7 @@ Le opzioni dei criteri predefinite si applicano a tutti gli utenti dell'organizz
 
 |Questa opzione  |Produce questo risultato  |
 |---------|---------|
-| **Blocca gli URL seguenti** <br/>    | Consente all'organizzazione di disporre di un elenco personalizzato di URL che vengono bloccati automaticamente. Quando gli utenti fanno clic su un URL in questo elenco, verranno indirizzati a una [pagina di avviso](atp-safe-links-warning-pages.md) che spiega perché l'URL è bloccato. Per ulteriori informazioni, vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di Office 365 ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
+| **Blocca gli URL seguenti** <br/>    | Consente all'organizzazione di disporre di un elenco personalizzato di URL che vengono bloccati automaticamente. Quando gli utenti fanno clic su un URL in questo elenco, verranno indirizzati a una [pagina di avviso](atp-safe-links-warning-pages.md) che spiega perché l'URL è bloccato. Per ulteriori informazioni, vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di Office 365 ATP](set-up-a-custom-blocked-urls-list-atp.md). |
 | **Microsoft 365 Apps for Enterprise, Office per iOS e Android** <br/>    | Quando questa opzione è selezionata, la protezione dei collegamenti sicuri ATP viene applicata agli URL nei file di Word, Excel e PowerPoint su Windows o Mac OS, messaggi di posta elettronica in Outlook, documenti di Office su dispositivi iOS o Android, file di Visio 2016 su Windows e file aperti nelle versioni Web delle app di Office (Word, PowerPoint, Excel, Outlook e OneNote), purché l'utente abbia eseguito l'accesso a Office 365. |
 | **Non monitorare quando gli utenti fanno clic su collegamenti sicuri di ATP** <br/>  | Quando questa opzione è selezionata, fare clic su dati per gli URL in Word, Excel, PowerPoint, documenti di Visio e messaggi di posta elettronica di Outlook non archiviati.  <br/> |
 |**Non consentire agli utenti di fare clic su collegamenti sicuri ATP all'URL originale** <br/> |Quando questa opzione è selezionata, gli utenti non possono continuare a passare una [pagina di avviso](atp-safe-links-warning-pages.md) a un URL determinato come dannoso.  <br/> |

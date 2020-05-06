@@ -1,6 +1,6 @@
 ---
 title: Criteri di supervisione
-description: Informazioni sui criteri di supervisione
+description: Informazioni su come utilizzare i criteri di supervisione in Microsoft 365 per acquisire le comunicazioni dei dipendenti per l'esame da revisori designati.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,13 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
+ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: df24ee91482785c725acd5b531c6b138e5e165a7
-ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
+ms.openlocfilehash: b0778cd05565057fde8982e791a75801d097046c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43930173"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034560"
 ---
 # <a name="supervision-policies"></a>Criteri di supervisione
 
@@ -129,7 +130,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 - In **uscita**: è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone che si è scelto di controllare **per** gli utenti non inclusi nel criterio.
 - **Internal**: è possibile scegliere **Internal** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
 
-#### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
+#### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
 
 È possibile includere i tipi di informazioni riservate nell'ambito del criterio di supervisione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Come parte di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md), la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 

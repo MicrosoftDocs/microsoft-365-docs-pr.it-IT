@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 73fa3ac2ca15d922a74e1d3ceef6cc74a3bdedca
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom:
+- seo-marvel-mar2020
+description: Consente di visualizzare le note sulla versione contenenti informazioni sulle nuove caratteristiche e sui problemi noti (da risolvere nelle prossime versioni) in Microsoft Compliance Manager.
+ms.openlocfilehash: fb462939ef1b1bf0c6f7f4552359d50645b528f3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790569"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033706"
 ---
 # <a name="microsoft-compliance-manager-preview-release-notes"></a>Note sulla versione di Microsoft Compliance Manager (anteprima)
 
@@ -81,7 +83,7 @@ A causa della migrazione dei dati durante la versione di aprile 2020, alcune org
 - Quando vengono create nuove valutazioni, i punteggi includono automaticamente i punteggi dei controlli gestiti da Microsoft e l'integrazione del Punteggio sicuro.
 - Tutte le azioni che non sono supportate dall'integrazione del Punteggio sicuro possono essere implementate manualmente. Un'implementazione manuale consentirà di fattorizzare lo score del gruppo dell'azione.
 
-### <a name="export"></a>Esportazione
+### <a name="export"></a>Esporta
 
 - L'esportazione dei modelli in JSON ha esito negativo quando lo stato del modello è impostato su **importazione** o **in attesa di approvazione**.
 

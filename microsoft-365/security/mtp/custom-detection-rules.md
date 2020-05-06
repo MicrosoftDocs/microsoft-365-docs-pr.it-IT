@@ -1,7 +1,7 @@
 ---
 title: Creare e gestire le regole di rilevamento personalizzate in Microsoft Threat Protection
 description: Informazioni su come creare e gestire le regole per i rilevamenti personalizzati in base alle query di ricerca avanzate
-keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, regole, schema, kusto, Microsoft 365, Microsoft Threat Protection, RBAC, Permissions, Microsoft ATP difensore
+keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, rilevamenti personalizzati, regole, schema, kusto, Microsoft 365, Microsoft Threat Protection, RBAC, autorizzazioni, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: adb8c7dfa0050ef2eb0d59e1e55d07da7aaa3f39
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931741"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034865"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creare e gestire le regole per i rilevamenti personalizzati
 
@@ -114,7 +114,7 @@ Identificare le colonne nei risultati della query in cui si prevede di trovare l
 
 È possibile selezionare una sola colonna per ogni tipo di entità (cassetta postale, utente o dispositivo). Le colonne non restituite dalla query non possono essere selezionate.
 
-### <a name="3-specify-actions-on-files-or-machines"></a>3. specificare le azioni su file o computer.
+### <a name="4-specify-actions-on-files-or-machines"></a>4. specificare le azioni su file o computer.
 La regola di rilevamento personalizzata può eseguire automaticamente azioni su file o computer restituiti dalla query.
 
 #### <a name="actions-on-machines"></a>Azioni sui computer
@@ -130,7 +130,7 @@ Se si seleziona questa opzione, l'azione **file di quarantena** viene eseguita `
 > [!NOTE]
 > L'azione Consenti o blocca per le regole di rilevamento personalizzate non è attualmente supportata su Microsoft Threat Protection.
 
-### <a name="4-set-the-rule-scope"></a>4. impostare l'ambito della regola.
+### <a name="5-set-the-rule-scope"></a>5. impostare l'ambito della regola.
 Impostare l'ambito per specificare quali dispositivi sono coperti dalla regola. L'ambito influenza le regole che controllano i dispositivi e non influisce sulle regole che controllano solo le cassette postali e gli account utente o le identità.
 
 Quando si imposta l'ambito, è possibile selezionare:
@@ -140,7 +140,7 @@ Quando si imposta l'ambito, è possibile selezionare:
 
 Verrà eseguita una query solo sui dati dei dispositivi nell'ambito. Inoltre, le azioni verranno eseguite solo su tali dispositivi.
 
-### <a name="5-review-and-turn-on-the-rule"></a>5. rivedere e accendere la regola.
+### <a name="6-review-and-turn-on-the-rule"></a>6. rivedere e accendere la regola.
 Dopo aver esaminato la regola, fare clic su **Crea** per salvarla. Viene eseguita immediatamente la regola di rilevamento personalizzata. Viene eseguito di nuovo in base alla frequenza configurata per verificare la corrispondenza, generare avvisi e prendere le azioni di risposta.
 
 ## <a name="manage-existing-custom-detection-rules"></a>Gestire le regole di rilevamento personalizzate esistenti

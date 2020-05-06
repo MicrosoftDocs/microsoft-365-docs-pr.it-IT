@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Informazioni su come collaborare con gli utenti di un documento in SharePoint e OneDrive.
-ms.openlocfilehash: 33d9300343b23702d5024ac0b489930ac815be7e
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: In questo articolo vengono fornite informazioni su come collaborare con gli utenti di un documento in SharePoint e OneDrive.
+ms.openlocfilehash: 6fdf7d3ff90fb799b00da2c1ec84088b270ce009
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002266"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035984"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborare con gli utenti guest a un documento
 
@@ -108,7 +109,7 @@ Per impostare le impostazioni di condivisione a livello di sito
 
 Le impostazioni di condivisione Guest sono ora configurate, quindi gli utenti possono ora condividere file e cartelle con utenti esterni all'organizzazione. Per ulteriori informazioni, vedere [condivisione di file e cartelle di OneDrive](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) e [condivisione di file o cartelle di SharePoint](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md)
 

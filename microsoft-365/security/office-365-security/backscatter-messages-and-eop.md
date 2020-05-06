@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: Backscatter è un messaggio di rimbalzo automatico inviato agli indirizzi di posta elettronica contraffatti. Il DNSBL Backscatterer identifica i server che inviano messaggi di backscatter (che potrebbero includere molte fonti di posta elettronica legittime). Poiché non si tratta di un elenco di spammer, non si tenta di rimuovere noi stessi dal Backscatterer DNSBL.
-ms.openlocfilehash: 22eeec29722cf1742e096234aad95b9f6ee407e2
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo vengono fornite informazioni su backscatter e Microsoft Exchange Online Protection (EOP)
+ms.openlocfilehash: 14460b75920b053461722b5a129d785fb6952a5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895406"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035593"
 ---
 # <a name="backscatter-and-eop"></a>Backscatter e EOP
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: In questo articolo sono contenute le note sulla versione di Advanced eDiscovery.
-ms.openlocfilehash: e51647e56e7fb29d8f67d36941a2847278c1e1c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: In questo articolo sono incluse le note sulla versione per Advanced eDiscovery, inclusi i problemi noti, i problemi risolti e le nuove funzionalità.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 45a4647856fef0186840ec5465bb9250e5d78de4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601643"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034620"
 ---
 # <a name="release-notes-for-advanced-ediscovery"></a>Note sulla versione per Advanced eDiscovery
 

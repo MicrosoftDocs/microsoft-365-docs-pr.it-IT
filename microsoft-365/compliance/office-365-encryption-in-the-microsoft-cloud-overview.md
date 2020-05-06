@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Panoramica della crittografia nel cloud Microsoft.
-ms.openlocfilehash: 34ec910e60ceb718daa42dc31aa8a5a3440dbdd6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In questo articolo, leggere una panoramica delle varie forme di crittografia utilizzate per garantire la sicurezza dei dati dei clienti nel cloud Microsoft.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 62353725073f5010db1a8681bebad18bc671d81f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626924"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031386"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Crittografia nel Microsoft Cloud
 

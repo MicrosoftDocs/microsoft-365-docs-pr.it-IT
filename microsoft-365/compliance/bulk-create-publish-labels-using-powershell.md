@@ -15,13 +15,15 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: In Office 365 è possibile usare le etichette di conservazione per implementare una pianificazione di conservazione per l'organizzazione. Con lo script e i file CSV forniti, è possibile creare e pubblicare in blocco etichette di conservazione e criteri di etichetta di conservazione tramite PowerShell.
-ms.openlocfilehash: 055bc785c492e2fa37bc60ce4e383f79111c551a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come usare le etichette di conservazione di Office 365 per implementare una pianificazione di conservazione per l'organizzazione con PowerShell.
+ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636354"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035534"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
 

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: "Scoprire quante tasse verranno addebitate per l'abbonamento a Microsoft 365 for business in diverse aree geografiche. "
 ms.custom: okr_SMB
-ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708132"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045825"
 ---
 # <a name="tax-information"></a>Informazioni fiscali
 
@@ -114,7 +114,7 @@ Si potrebbe essere idonei per un'esenzione dell'IVA nei casi seguenti:
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Aggiungere la partita IVA (solo paesi dell'Unione Europea)
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Trovare la scheda di sottoscrizione per l'abbonamento che si desidera aggiornare.
 

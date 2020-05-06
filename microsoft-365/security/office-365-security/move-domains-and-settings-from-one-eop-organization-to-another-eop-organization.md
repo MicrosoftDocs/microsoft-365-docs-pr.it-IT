@@ -1,5 +1,5 @@
 ---
-title: Spostare i domini e le impostazioni da un'organizzazione di EOP a un'altra organizzazione di EOP
+title: Spostare i domini & le impostazioni da un'organizzazione di EOP a un'altra
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
-description: Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra.
-ms.openlocfilehash: c7d5c7ddc8391c70a555279c530cc2bf19e66ca2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo vengono fornite informazioni su come spostare i domini e le impostazioni da un'organizzazione di Microsoft Exchange Online Protection (EOP) a un'altra.
+ms.openlocfilehash: 86f268e6bfb5ed7229137df8b6bf017f15ab1f9c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088330"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033963"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra organizzazione di Exchange Online Protection
 

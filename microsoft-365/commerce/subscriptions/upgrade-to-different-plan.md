@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Informazioni su come eseguire l'aggiornamento a un nuovo abbonamento.
 monikerRange: o365-worldwide
-ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
-ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
+ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43796513"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046217"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso 
 
@@ -42,7 +42,7 @@ Quando la tua azienda cambia o hai bisogno di altre caratteristiche, puoi aggior
 
 Quando si utilizza la scheda **aggiornamento** , è possibile procedere con l'acquisto di un nuovo piano. A tutti gli utenti vengono assegnate automaticamente le licenze nel nuovo piano e il vecchio piano viene annullato per l'utente.
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** \> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Selezionare l'abbonamento che si desidera aggiornare.
 
@@ -59,7 +59,7 @@ Quando si utilizza la scheda **aggiornamento** , è possibile procedere con l'ac
 
 7. Al termine, selezionare **Ordina ordine**.
 
-Al termine del checkout, potrebbe essere necessario qualche minuto per completare l'aggiornamento. È possibile iniziare subito a usare il nuovo abbonamento. Selezionare **Controlla stato aggiornamento** per controllare lo stato dell'aggiornamento. Verrà visualizzato un avviso per il completamento dell'aggiornamento. La notifica viene visualizzata nella pagina **prodotti & Servizi** , accanto alla nuova sottoscrizione.
+Al termine del checkout, potrebbe essere necessario qualche minuto per completare l'aggiornamento. È possibile iniziare subito a usare il nuovo abbonamento. Selezionare **Controlla stato aggiornamento** per controllare lo stato dell'aggiornamento. Verrà visualizzato un avviso per il completamento dell'aggiornamento. La notifica viene visualizzata nella pagina dei **prodotti** , accanto alla nuova sottoscrizione.
 
 ## <a name="the-upgrade-tab-is-empty"></a>La scheda aggiornamento è vuota
 
@@ -137,7 +137,7 @@ Se si dispone di un componente aggiuntivo con l'abbonamento, potrebbe essere pos
 
 #### <a name="your-subscription-has-an-unpaid-balance"></a>La sottoscrizione ha un saldo non pagato
 
-Per risolvere questo punto, trova la sottoscrizione nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti & Servizi</a> e seleziona il collegamento **paga ora** nella sezione **fatturazione** . Dopo aver effettuato il pagamento, controllare di nuovo la scheda **upgrade** .
+Per risolvere questo punto, trova la sottoscrizione nella pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> e seleziona il collegamento **paga ora** nella sezione **fatturazione** . Dopo aver effettuato il pagamento, controllare di nuovo la scheda **upgrade** .
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>Che cos'è l'aggiornamento di un piano per il servizio e la fatturazione?
 

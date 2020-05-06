@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Informazioni su come aggiungere licenze all'abbonamento.
-ms.openlocfilehash: 694b8ac57e28bbe6b03e5f8aeef87bda1bcc73ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632426"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045405"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key
 
@@ -42,8 +42,7 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 
 ::: moniker range="o365-worldwide"
 
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Individuare la sottoscrizione a cui si desidera aggiungere le licenze. Nella sezione **licenze** selezionare **Aggiungi altre licenze**.
 
@@ -100,8 +99,7 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 
 ::: moniker range="o365-worldwide"
 
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Individuare l'abbonamento che si desidera estendere. Nella sezione **fatturazione** selezionare **Estendi data di fine**.
 

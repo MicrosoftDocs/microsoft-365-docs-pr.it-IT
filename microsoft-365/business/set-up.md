@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Individuare i passaggi di installazione per Microsoft 365 Business Premium, tra cui l'aggiunta di un dominio e degli utenti, la configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfc8523fe88ebca6b8c03db0ad0f6caeba662923
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635761"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048038"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurare Microsoft 365 Business Premium nell'installazione guidata
 
@@ -124,7 +124,7 @@ I criteri configurati nella procedura guidata vengono applicati automaticamente 
 
 ## <a name="secure-windows-10-pcs"></a>Proteggere i PC Windows 10
 
-Sulla barra di spostamento sinistra, selezionare **installazione** e quindi, in **sing-in e sicurezza**, scegliere **Proteggi i computer Windows 10**. Scegliere **View** per iniziare. Per istruzioni complete, vedere [proteggere i computer Windows 10](secure-win-10-pcs.md) .
+Sulla barra di spostamento sinistra, selezionare **installazione** e quindi, in **accesso e sicurezza**, scegliere **Proteggi i computer Windows 10**. Scegliere **View** per iniziare. Per istruzioni complete, vedere [proteggere i computer Windows 10](secure-win-10-pcs.md) .
 
 ## <a name="deploy-office-365-client-apps"></a>Distribuire le app client di Office 365
 
@@ -136,4 +136,4 @@ Per installare Office su dispositivi mobili iOS o Android, vedere [configurare i
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -5,17 +5,22 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-security-compliance
+ms.custom:
+- M365solutions
+- seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: Informazioni su come creare un ambiente di condivisione guest sicuro in Microsoft 365.
-ms.openlocfilehash: 63a636ccf65b5439d5e83cf5fbe64e5db2ce40b5
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+description: Questo articolo offre informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365.
+ms.openlocfilehash: 848bdef888ab6d6fb20db2a461912f180bfa212c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604664"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036125"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -239,10 +244,10 @@ Per pubblicare le etichette
 
 Dopo la pubblicazione, le etichette sono disponibili agli utenti delle app desktop di Office. Quando gli utenti applicano l'etichetta **Estremamente riservato**, al documento viene aggiunta automaticamente una filigrana.
 
-### <a name="more-information"></a>Altre informazioni
+### <a name="more-information"></a>Ulteriori informazioni
 [Panoramica delle etichette di riservatezza](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
 
-## <a name="create-a-sensitive-information-type-for-a-highly-confidential-project"></a>Creare un tipo di informazioni sensibili per un progetto estremamente riservato
+## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Creare un tipo di informazioni sensibili per un progetto estremamente riservato
 
 I tipi di informazioni sensibili sono stringhe predefinite che è possibile usare nei flussi di lavoro dei criteri per applicare i requisiti di conformità. Il Centro conformità di Microsoft 365 include oltre 100 tipi di informazioni sensibili, tra cui numeri di patente, numeri di carta di credito, numeri di conto corrente bancario e così via.
 
@@ -284,10 +289,10 @@ Per creare un criterio basato su un tipo di informazioni sensibili
 
 Una volta impostato il criterio, se un utente digita "Progetto Saturno" in un documento, Cloud App Security applicherà automaticamente l'etichetta *Estremamente riservato* quando analizza il file.
 
-### <a name="more-information"></a>Altre informazioni
+### <a name="more-information"></a>Ulteriori informazioni
 [Criteri file](https://docs.microsoft.com/cloud-app-security/data-protection-policies)
 
-## <a name="create-a-policy-to-remove-guest-access-to-highly-confidential-files"></a>Creare un criterio per rimuovere l'accesso guest ai file estremamente riservati
+## <a name="create-a-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Creare un criterio per rimuovere l'accesso guest ai file estremamente riservati
 
 Nell'esempio di questo articolo, i file con l'etichetta *Estremamente riservato* non devono essere condivisi con gli utenti guest. È possibile creare un criterio file in Cloud App Security che rimuove automaticamente l'accesso guest dai file con tale etichetta.
 

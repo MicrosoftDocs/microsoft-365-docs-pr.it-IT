@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5e81c9ff65db6ecd4a1ac1995c8a592f4377ae1c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e135ceec2ac4abcd0bfd5183fb19089a97dc4bb4
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634354"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043297"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -42,7 +42,7 @@ I modelli di gestione dei rischi Insider sono condizioni di criteri predefinite 
 
 ### <a name="departing-employee-data-theft"></a>Furto dei dati del dipendente in partenza
 
-Quando i dipendenti lasciano la propria organizzazione, esistono indicatori di rischio specifici tipicamente associati al furto dei dati da parte dei dipendenti. Questo modello di criteri consente di assegnare una priorità a questi indicatori e di individuare gli avvisi e i punti di interesse per questa area di rischio Il furto dei dati per i dipendenti in partenza può includere il download di file da SharePoint Online, la copia di file su dispositivi portatili come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali vicino alle dimissioni di lavoro e date di fine. Questo modello privilegia gli indicatori di rischio relativi a queste attività e la correlazione con lo stato occupazionale dei dipendenti.
+Quando i dipendenti lasciano la propria organizzazione, esistono indicatori di rischio specifici tipicamente associati al furto dei dati da parte dei dipendenti. Questo modello di criteri consente di assegnare una priorità a questi indicatori e di individuare gli avvisi e i punti di interesse per questa area di rischio Il furto dei dati per i dipendenti in partenza può includere il download di file da SharePoint Online, la copia di file su dispositivi portatili, come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali vicino alla data di scadenza e alle dimissioni di lavoro. Questo modello privilegia gli indicatori di rischio relativi a queste attività e la correlazione con lo stato occupazionale dei dipendenti.
 
 >[!IMPORTANT]
 >Quando si utilizza questo modello, è necessario configurare un connettore Microsoft 365 HR per importare periodicamente le informazioni sulle dimissioni e la data di fine per i dipendenti dell'organizzazione. Per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per l'organizzazione, vedere l'argomento [Import Data with the HR Connector](import-hr-data.md) .
@@ -60,13 +60,13 @@ Il rilevamento e l'esecuzione di operazioni per impedire comportamenti offensivi
 
 ## <a name="policy-settings"></a>Impostazioni dei criteri
 
-Le impostazioni dei rischi Insider si applicano a tutti i criteri di gestione dei rischi Insider, indipendentemente dal modello scelto quando si crea un criterio. Le impostazioni vengono configurate utilizzando il controllo **Insider Risk Settings* posizionato all'inizio di tutte le schede di gestione dei rischi Insider. Queste impostazioni controllano la privacy, gli indicatori, le finestre di monitoraggio e i rilevamenti intelligenti.
+Le impostazioni dei rischi Insider si applicano a tutti i criteri di gestione dei rischi Insider, indipendentemente dal modello scelto quando si crea un criterio. Le impostazioni vengono configurate utilizzando il controllo **impostazioni di rischio Insider** nella parte superiore di tutte le schede gestione rischi Insider. Queste impostazioni controllano la privacy, gli indicatori, le finestre di monitoraggio e i rilevamenti intelligenti.
 
 ### <a name="privacy"></a>Privacy
 
 La protezione della privacy degli utenti che dispongono di corrispondenze di criteri è importante e può contribuire a promuovere l'oggettività nelle analisi dei dati e nelle recensioni degli analizzatori dei rischi Insider Per gli utenti con corrispondenze di criteri di rischio Insider, è possibile scegliere una delle seguenti impostazioni:
 
-- **Mostrare le versioni di anonimi dei**nomi utente: i denominati degli utenti sono anonimi per impedire agli amministratori, ai ricercatori di dati e ai revisori di vedere gli utenti associati agli avvisi dei criteri. Ad esempio, un utente ' Grace Taylor ' verrebbe visualizzato con un psuedonym randomizzato come ' AnonIS8-988' in tutte le aree dell'esperienza di gestione dei rischi Insider. Se si sceglie questa impostazione, anonimizza tutti gli utenti con le corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni sui profili utente nell'avviso del rischio Insider e nei dettagli del caso non saranno disponibili quando si sceglie questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano gli utenti ai nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente verranno visualizzati per tutti gli utenti che hanno corrispondenze di criteri correnti o precedenti.
+- **Mostrare le versioni di anonimi dei**nomi utente: i denominati degli utenti sono anonimi per impedire agli amministratori, ai ricercatori di dati e ai revisori di vedere gli utenti associati agli avvisi dei criteri. Ad esempio, un utente ' Grace Taylor ' verrebbe visualizzato con uno pseudonimo randomizzato come ' AnonIS8-988' in tutte le aree dell'esperienza di gestione dei rischi Insider. Se si sceglie questa impostazione, anonimizza tutti gli utenti con le corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni sui profili utente nell'avviso del rischio Insider e nei dettagli del caso non saranno disponibili quando si sceglie questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano gli utenti ai nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente verranno visualizzati per tutti gli utenti che hanno corrispondenze di criteri correnti o precedenti.
 - Non vengono visualizzate le **versioni di anonimi dei nomi utente**: i nomi utente vengono visualizzati per tutte le corrispondenze di criteri correnti e precedenti per gli avvisi e i casi. Le informazioni sui profili utente, ovvero il nome, il titolo, l'alias e l'organizzazione o il reparto, vengono visualizzate per tutti gli avvisi e i casi di gestione dei rischi Insider.
 
 ### <a name="indicators"></a>Indicatori
@@ -87,14 +87,14 @@ Gli intervalli di tempo dei criteri consentono di definire i periodi di revision
 
 ### <a name="intelligent-detections"></a>Rilevamenti intelligenti
 
-Le impostazioni di rilevamento intelligente consentono di affinare la modalità di elaborazione del rilevamento delle attività rischiose per gli avvisi. In alcuni casi, potrebbe essere necessario definire i tipi di file da ignorare o si desidera applicare un livello di rilevamento per i file che consentono di definire una barra minima per gli avvisi. Quando si utilizzano criteri di linguaggio offensivi, potrebbe essere necessario aumentare o diminuire la sensibilità di rilevamento per controllare la quantità di corrispondenze di criteri segnalate. Utilizzare queste impostazioni per controllare le esclusioni di tipi di file, i limiti del volume dei file e la sensibilità di rilevamento di lingua offensiva.
+Le impostazioni di rilevamento intelligente consentono di affinare la modalità di elaborazione dei rilevamenti delle attività rischiose per gli avvisi. In alcuni casi, potrebbe essere necessario definire i tipi di file da ignorare o si desidera applicare un livello di rilevamento per i file che consentono di definire una barra minima per gli avvisi. Quando si utilizzano criteri di linguaggio offensivi, potrebbe essere necessario aumentare o diminuire la sensibilità di rilevamento per controllare la quantità di corrispondenze di criteri segnalate. Utilizzare queste impostazioni per controllare le esclusioni di tipi di file, i limiti del volume dei file e la sensibilità di rilevamento di lingua offensiva.
 
 #### <a name="anomaly-detections"></a>Rilevamenti di anomalia
 
 I rilevamenti anomali includono le impostazioni per le esclusioni dei tipi di file e i limiti del volume file.
 
 - **Esclusioni**dei tipi di file: per escludere tipi di file specifici da tutti i criteri di gestione dei rischi Insider, immettere le estensioni del tipo di file separate da virgole. Ad esempio, per escludere determinati tipi di file musicali dalle corrispondenze di criteri, è possibile immettere *AAC, MP3, WAV, WMA* nel campo **esclusioni tipo di file** . I file con queste estensioni verrebbero ignorati da tutti i criteri di gestione dei rischi Insider.
-- **Limite del volume dei file**: per definire un livello di file minimo prima che vengano segnalati avvisi di attività nei criteri di rischio Insider, immettere il numero di file. Ad esempio, è necessario immettere '10 ' se non si desidera generare avvisi di rischio Insider quando un utente Scarica 10 file o meno, anche se i criteri considerati sono un'anomalia.
+- **Limite del volume dei file**: per definire un livello di file minimo prima che vengano segnalati avvisi di attività nei criteri di rischio Insider, immettere il numero di file. Ad esempio, è necessario immettere '10 ' se non si desidera generare avvisi di rischio Insider quando un utente Scarica 10 file o meno, anche se i criteri considerano questa attività un'anomalia.
 
 #### <a name="offensive-language-detections"></a>Rilevamenti di lingua offensiva
 

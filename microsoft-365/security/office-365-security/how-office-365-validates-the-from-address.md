@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Lear sui requisiti degli indirizzi di posta elettronica per i messaggi in ingresso in Microsoft 365. A partire dal 2017 novembre, il servizio richiede ora gli indirizzi conformi a RFC per impedire lo spoofing.
-ms.openlocfilehash: 876ede087b37c381b9e9b557268057122e0987c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Per evitare il phishing, Microsoft 365 e Outlook.com ora richiedono la conformità RFC per gli indirizzi da:.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633979"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034083"
 ---
 # <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Come viene convalidato l'indirizzo da Microsoft 365 per impedire il phishing
 

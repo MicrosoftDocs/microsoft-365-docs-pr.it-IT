@@ -15,13 +15,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: Utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente nel centro conformità di Office 365 o Microsoft 365. Quando si clona una ricerca, viene creata una nuova ricerca (con un nuovo nome) che contiene le stesse proprietà della ricerca originale. È quindi possibile modificare la nuova ricerca modificando la query di parole chiave o l'intervallo di date e quindi eseguirlo.
-ms.openlocfilehash: bba683e7ffbad6177a6214ebb36e3aaece7aada7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente nel centro conformità di Office 365 o Microsoft 365.
+ms.openlocfilehash: 013a3cd04b665e1da800638a2335adb034878a4a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942939"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035648"
 ---
 # <a name="clone-a-content-search"></a>Clonare una ricerca contenuto
 
@@ -35,7 +37,7 @@ Perché clonare le ricerche di contenuto?
     
 - Per ridurre le dimensioni dei risultati della ricerca. Se ad esempio si dispone di una ricerca che restituisce troppi risultati da esportare, è possibile clonare la ricerca e quindi aggiungere una condizione di ricerca in base a un intervallo di date per ridurre il numero di risultati della ricerca.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per eseguire lo script descritto in questo argomento, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & Compliance.
     

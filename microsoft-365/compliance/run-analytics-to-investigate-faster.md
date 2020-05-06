@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: c71f3a31c49c92a24d449fae151b858645ad2df6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su come utilizzare gli strumenti analitici, come il rilevamento duplicato, il threading di posta elettronica e i temi per velocizzare le indagini.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: e7c5103adabadf88028351f0314bcdfaa2cd4d0f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081543"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035848"
 ---
 # <a name="run-analytics-to-investigate-faster"></a>Eseguire analisi per velocizzare le indagini
 

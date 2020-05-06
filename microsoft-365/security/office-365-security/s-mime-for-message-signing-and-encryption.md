@@ -1,5 +1,5 @@
 ---
-title: S/MIME per la firma e la crittografia dei messaggi in Exchange Online
+title: S/MIME per la crittografia in Exchange Online-Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,13 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
-description: Gli amministratori possono acquisire informazioni sull'utilizzo di S/MIME in Exchange Online.
-ms.openlocfilehash: 294fd22ff81e9ddaabf0664afb34a37c008a6d09
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Gli amministratori possono acquisire informazioni sull'utilizzo di S/MIME (Secure/Multipurpose Internet Mail Extensions) in Exchange Online per crittografare i messaggi di posta elettronica e firmarli digitalmente.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8c45df36535e7b5af2648b82f83159315b94bec8
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634329"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036621"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME per la firma e la crittografia dei messaggi in Exchange Online
 

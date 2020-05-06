@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Potrebbe essere necessario informare i depositari dell'obbligo di conservare le informazioni archiviate elettronicamente come parte di un'indagine legale. Advanced eDiscovery consente di gestire facilmente il processo di notifica di blocco.
-ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come utilizzare Advanced eDiscovery per inviare e seguire le notifiche di archiviazione legale tramite posta elettronica, oltre a monitorare lo stato degli obblighi.
+ms.openlocfilehash: 393d8884a4d4d39056267666fdce6a2754cb582b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080278"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034886"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confermare la ricezione di una notifica di blocco
 
