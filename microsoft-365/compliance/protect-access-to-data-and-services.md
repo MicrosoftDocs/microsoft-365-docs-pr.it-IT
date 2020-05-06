@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: pagina di destinazione per proteggere l'accesso ai dati e ai servizi di Microsoft 365
-ms.openlocfilehash: 4d09ee0aa0ef36222ae0d238b0e7a44ee23994d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come proteggere l'accesso di utenti e dispositivi ai dati e ai servizi di Microsoft 365 e difendersi dalla perdita di dati.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 90fd902f0ccd8589fa413a2b06b9d5ccf74ab1fd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632211"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036029"
 ---
 # <a name="protect-user-and-device-access"></a>Proteggere l'accesso di utenti e dispositivi
 

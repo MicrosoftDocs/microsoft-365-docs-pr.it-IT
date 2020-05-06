@@ -16,15 +16,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
-description: Creare criteri di avviso nei centri sicurezza e conformità per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni. È quindi possibile visualizzare e gestire gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
-ms.openlocfilehash: 7ccfe4dd85081a628094da4e9c31aa457e28fd0f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni.
+ms.openlocfilehash: 7505853a4a3bc263b4547d45838567a593f9759b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637070"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034434"
 ---
-# <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel centro sicurezza e conformità
+# <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
 È possibile utilizzare il nuovo criterio di avviso e gli strumenti del dashboard di avviso nei centri sicurezza e conformità per creare criteri di avviso e quindi visualizzare gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
 
@@ -182,7 +184,7 @@ Per visualizzare la categoria a cui è assegnato un criterio di avviso predefini
 |Gestione dei dispositivi|||||||
 |Gestione della disposizione|||||||
 |Gestione della conformità DLP||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Esportazione|||||||
+|Esporta|||||||
 |Hold|||||||
 |Gestione avvisi||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configurazione dell'organizzazione||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

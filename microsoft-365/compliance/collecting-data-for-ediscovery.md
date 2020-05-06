@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 462c58f8531265026b34fe3d8484736aefa4c5fa
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+description: Informazioni su come identificare un set di documenti per la revisione in un'indagine tramite lo strumento di ricerca in Advanced eDiscovery.
+ms.custom: seo-marvel-2020
+ms.openlocfilehash: 9d8a88ddfc6bcb30f8678f39ad2bc4fbaf717ecc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799939"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034350"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Raccogliere i dati per un caso in Advanced eDiscovery
 

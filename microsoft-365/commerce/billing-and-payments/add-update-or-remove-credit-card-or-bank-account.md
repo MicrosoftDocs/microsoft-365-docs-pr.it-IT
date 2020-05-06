@@ -24,17 +24,17 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Informazioni su come gestire i metodi di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b15381ee4eba7c1a91e108743fc326c890ab1820
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106049"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045929"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Aggiungere, aggiornare o rimuovere i metodi di pagamento
 
 ::: moniker range="o365-worldwide"
-È possibile acquistare prodotti e servizi da Microsoft con una carta di credito o di debito o un conto corrente bancario. È possibile immettere le informazioni di pagamento nella pagina **metodi di pagamento** o quando si effettua un acquisto.
+È possibile acquistare prodotti e servizi da Microsoft con una carta di credito o di debito o un conto corrente bancario. È possibile immettere le informazioni di pagamento nella pagina **Modalità di pagamento** o quando si effettua un acquisto.
 
 È possibile gestire solo i metodi di pagamento che sono stati aggiunti.
 
@@ -45,14 +45,14 @@ ms.locfileid: "43106049"
 
 **L'interfaccia visualizzata non corrisponde a quella descritta in questo articolo?** In caso affermativo, vedere [Manage Payment methods](manage-payment-methods.md).
 
-## <a name="add-a-payment-method"></a>Aggiungere un metodo di pagamento
+## <a name="add-a-payment-method"></a>Aggiungere una modalità di pagamento
 
 1. Nell'interfaccia di amministrazione, accedere alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">metodi di pagamento</a> per la **fatturazione** > **& pagamenti** > .
 2. Selezionare **Aggiungere una modalità di pagamento**.
 3. Nella pagina **Modalità di pagamento** scegliere una modalità di pagamento dal menu a discesa.
 4. Immettere le informazioni per la nuova scheda o il conto corrente bancario, quindi selezionare **Aggiungi**.
 
-## <a name="update-an-existing-payment-method"></a>Aggiornare un metodo di pagamento esistente
+## <a name="update-an-existing-payment-method"></a>Aggiornare una modalità di pagamento esistente
 
 Non è possibile modificare il numero su una carta o un conto corrente bancario esistente. Se la scheda o il numero di conto corrente bancario è stato modificato, aggiungerlo come nuovo metodo di pagamento. Successivamente, selezionarlo come opzione di pagamento per l'abbonamento, quindi rimuovere la carta o il conto corrente bancario esistente. È necessario utilizzare una scheda emessa dallo stesso paese del tenant.
 
@@ -60,13 +60,13 @@ Non è possibile modificare il numero su una carta o un conto corrente bancario 
 2. Nella pagina **metodi di pagamento** , scegliere la scheda o il conto corrente bancario da aggiornare, quindi selezionare **modifica**.
 3. Aggiornare le informazioni sul metodo di pagamento (nome sulla carta o sul conto corrente bancario, sull'indirizzo di fatturazione, sul numero di telefono o sulla data di scadenza), quindi selezionare **Salva**.
 
-## <a name="change-a-payment-method"></a>Modificare un metodo di pagamento
+## <a name="change-a-payment-method"></a>Modificare una modalità di pagamento
 
 È possibile modificare il metodo di pagamento utilizzato per pagare un singolo abbonamento. È inoltre possibile spostare tutte le sottoscrizioni da un metodo di pagamento a un altro.
 
 ### <a name="change-the-payment-method-used-for-a-single-subscription"></a>Modificare il metodo di pagamento utilizzato per un singolo abbonamento
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 2. Selezionare l'abbonamento che si desidera pagare con la nuova carta o il conto corrente bancario. In **fatturazione**, fare clic su **modifica**accanto al metodo di pagamento.
 3. Accanto al metodo di pagamento esistente, selezionare **Cambia**.
 4. Nel menu a discesa, selezionare un metodo di pagamento alternativo oppure scegliere di aggiungere un metodo di pagamento.
@@ -83,16 +83,16 @@ Non è possibile modificare il numero su una carta o un conto corrente bancario 
 > [!NOTE]
 > È possibile modificare solo i metodi di pagamento esistenti nel riquadro **Cambia metodo di pagamento** . Se si desidera modificare il pagamento tramite fattura, vedere [passare da carta di credito o conto corrente bancario a fattura](change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice).
 
-## <a name="remove-a-payment-method"></a>Rimuovere un metodo di pagamento
+## <a name="remove-a-payment-method"></a>Rimuovere una modalità di pagamento
 
 Se non è collegato a un abbonamento, è possibile rimuovere una carta di credito o di debito o un conto corrente bancario dall'elenco dei metodi di pagamento. Questo vale per tutte le sottoscrizioni, indipendentemente dallo stato. Aggiungere un metodo di pagamento per l'abbonamento, quindi rimuovere quello precedente da quell'abbonamento. Se il metodo di pagamento è associato a un profilo di fatturazione, modificare il metodo di pagamento utilizzato per il profilo di fatturazione, quindi rimuovere il metodo di pagamento.
 
 ### <a name="delete-a-payment-method"></a>Eliminare un metodo di pagamento
 
-Se il metodo di pagamento non è associato ad alcun abbonamento, è possibile eliminarlo immediatamente.
+Se la modalità di pagamento non è associata ad alcun abbonamento, è possibile eliminarla immediatamente.
 
 1. Nell'interfaccia di amministrazione, accedere alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">metodi di pagamento</a> per la **fatturazione** > **& pagamenti** > .
-2. Posizionare il puntatore del mouse sulla scheda o sul conto corrente bancario, quindi selezionare l'icona Elimina.
+2. Posizionare il puntatore del mouse sulla carta di credito o sul conto corrente bancario e quindi selezionare l'icona di eliminazione.
 3. Nella parte inferiore del riquadro del **metodo di pagamento eliminare** , selezionare **Elimina**.
 
 ### <a name="add-an-alternate-payment-method-used-to-pay-for-subscriptions"></a>Aggiungere un metodo di pagamento alternativo utilizzato per pagare gli abbonamenti
@@ -100,7 +100,7 @@ Se il metodo di pagamento non è associato ad alcun abbonamento, è possibile el
 Se il metodo di pagamento è associato a qualsiasi sottoscrizione e non si dispone di un metodo di pagamento alternativo su file, aggiungere innanzitutto un metodo di pagamento. Successivamente, modificare il metodo di pagamento utilizzato per pagare gli abbonamenti. È quindi possibile eliminare il metodo di pagamento.
 
 1. Nell'interfaccia di amministrazione, accedere alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">metodi di pagamento</a> per la **fatturazione** > **& pagamenti** > .
-2. Posizionare il puntatore del mouse sulla scheda o sul conto corrente bancario, quindi selezionare l'icona Elimina.
+2. Posizionare il puntatore del mouse sulla carta di credito o sul conto corrente bancario e quindi selezionare l'icona di eliminazione.
 3. Nel riquadro **Elimina metodo di pagamento** sono elencate le sottoscrizioni esistenti che utilizzano il metodo di pagamento.
 4. Selezionare **Aggiungere una modalità di pagamento**.
 5. Selezionare il tipo di metodo di pagamento che si desidera aggiungere, immettere le informazioni dell'account e quindi fare clic su **Aggiungi**.
@@ -114,7 +114,7 @@ Se il metodo di pagamento è associato a qualsiasi sottoscrizione e non si dispo
 Se il metodo di pagamento è associato a qualsiasi sottoscrizione e si dispone di almeno un metodo di pagamento alternativo su file, modificare prima il metodo di pagamento utilizzato per pagare gli abbonamenti. È quindi possibile eliminare il metodo di pagamento.
 
 1. Nell'interfaccia di amministrazione, accedere alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">metodi di pagamento</a> per la **fatturazione** > **& pagamenti** > .
-2. Posizionare il puntatore del mouse sulla scheda o sul conto corrente bancario, quindi selezionare l'icona Elimina.
+2. Posizionare il puntatore del mouse sulla carta di credito o sul conto corrente bancario e quindi selezionare l'icona di eliminazione.
 3. Nel riquadro **Elimina metodo di pagamento** sono elencate le sottoscrizioni esistenti che utilizzano il metodo di pagamento.
 4. Selezionare **Cambia metodo di pagamento**.
 5. Selezionare un metodo di pagamento alternativo dall'elenco a discesa, quindi selezionare **Cambia**.
@@ -141,7 +141,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 2. Se non si dispone di un metodo di pagamento alternativo, seguire la procedura descritta in [aggiungere un metodo di pagamento alternativo utilizzato per pagare gli abbonamenti](#add-an-alternate-payment-method-used-to-pay-for-subscriptions).
 3. Se sono già disponibili altri metodi di pagamento, seguire la procedura in [modificare un metodo di pagamento](#change-a-payment-method).
 
-## <a name="troubleshoot-payment-methods"></a>Risoluzione dei problemi relativi ai metodi di pagamento
+## <a name="troubleshoot-payment-methods"></a>Risoluzione dei problemi relativi alle modalità di pagamento
 
 |**Problema**|**Procedure per la risoluzione dei problemi**|
 |:-----|:-----|

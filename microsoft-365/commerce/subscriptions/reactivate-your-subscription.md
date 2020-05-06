@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Informazioni su come riattivare l'abbonamento alla scadenza o se Microsoft la disattiva o se viene annullata al centro.
-ms.openlocfilehash: 79a8b157743b96dd3227086d417e6903ec1762b0
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707668"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046241"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
@@ -40,10 +40,9 @@ Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato a
 
 ::: moniker range="o365-worldwide"
 
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
-
-2. Nella pagina **Prodotti e servizi** trovare l'abbonamento da riattivare. Nella sezione **fatturazione** selezionare **riattiva**.
+2. Nella pagina i **prodotti** individuare la sottoscrizione che si desidera riattivare. Nella sezione **fatturazione** selezionare **riattiva**.
   
     Se non si visualizza **riattivazione** come azione disponibile, [contattare il supporto](../../admin/contact-support-for-business-products.md) per riattivare l'abbonamento.
 
@@ -91,11 +90,11 @@ Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato a
 
 3. Immettere i dettagli sul pagamento. È possibile aggiornare le attuali informazioni sul pagamento.
 
-  - Se l'abbonamento è scaduto, dopo aver inviato i dettagli del pagamento, l'abbonamento torna allo stato attivo e la data di **fatturazione successiva** si estende di un mese o di un anno, a seconda dell'impegno corrente di sottoscrizione. Se si paga tramite carta di credito o conto corrente bancario, il costo dell'estensione verrà addebitato sulla carta o sul conto. Se si paga tramite fattura, l'estensione verrà riportata nella fattura successiva. Per assicurarsi che l'abbonamento non scada di nuovo, [attiva la fatturazione ricorrente](renew-your-subscription.md#turn-recurring-billing-off-or-on).
+    - Se l'abbonamento è scaduto, dopo aver inviato i dettagli del pagamento, l'abbonamento torna allo stato attivo e la data di **fatturazione successiva** si estende di un mese o di un anno, a seconda dell'impegno corrente di sottoscrizione. Se si paga tramite carta di credito o conto corrente bancario, il costo dell'estensione verrà addebitato sulla carta o sul conto. Se si paga tramite fattura, l'estensione verrà riportata nella fattura successiva. Per assicurarsi che l'abbonamento non scada di nuovo, [attiva la fatturazione ricorrente](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
     > [!NOTE]
     > La possibilità di pagare con il conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
   
-  - Se l'abbonamento è stato annullato oppure è stato disabilitato perché non è stato ricevuto un pagamento, viene restituito allo stato attivo e la data di **fatturazione successiva** rimane invariata.
+    - Se l'abbonamento è stato annullato oppure è stato disabilitato perché non è stato ricevuto un pagamento, viene restituito allo stato attivo e la data di **fatturazione successiva** rimane invariata.
 
 ::: moniker-end

@@ -1,5 +1,5 @@
 ---
-title: Inviare e ricevere messaggi di posta elettronica firmati e crittografati con S/MIME in Exchange Online
+title: Inviare & ricevere messaggi di posta elettronica crittografati con S/MIME-Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,12 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: La procedura di invio di un messaggio crittografato con S/MIME in Microsoft Outlook è molto simile a quella di invio di un messaggio non crittografato.
-ms.openlocfilehash: a7050ed2b2cd37b08bd2e95b90577f36086f0e85
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b573cb7a0a299b5b8c942b198e141b98b8301087
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598423"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035397"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>Inviare e ricevere messaggi di posta elettronica firmati e crittografati con S/MIME in Exchange Online
 

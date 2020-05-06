@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Trovare le risposte alle domande più frequenti sugli acquisti in modalità self-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 26b6e11a6c992f85b136d05269cefb80f233b11f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7f91b8067aac5baa3c792dac10c1fdadae55fa2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636548"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046157"
 ---
 # <a name="self-service-purchase-faq"></a>Domande frequenti sull'acquisto in modalità self-service
 
@@ -119,7 +119,7 @@ Gli amministratori possono assegnare licenze esistenti o acquistare ulteriori ab
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>Dove viene visualizzato l'amministratore per l'acquisto in modalità self-service?
 
-Gli amministratori globali e di fatturazione possono vedere gli abbonamenti acquistati tramite acquisto in modalità self-service nei prodotti di **fatturazione** > **& Servizi** nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a> insieme a tutti gli altri abbonamenti acquistati tramite l'acquisizione centrale. È possibile filtrare l'elenco solo con gli abbonamenti acquistati tramite gli appalti centrali oppure includere gli abbonamenti acquistati tramite l'acquisto in modalità self-service.
+Gli amministratori globali e di fatturazione possono visualizzare gli abbonamenti acquistati tramite acquisto in modalità self-service per la **fatturazione** > dei**prodotti** nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a> insieme a tutti gli altri abbonamenti acquistati tramite l'acquisizione centrale. È possibile filtrare l'elenco solo con gli abbonamenti acquistati tramite gli appalti centrali oppure includere gli abbonamenti acquistati tramite l'acquisto in modalità self-service.
 
 Gli amministratori possono visualizzare il prodotto, il nome dell'acquirente, la sottoscrizione acquistata, la data di scadenza, la cronologia degli ordini, il prezzo di acquisto e gli utenti assegnati.
 

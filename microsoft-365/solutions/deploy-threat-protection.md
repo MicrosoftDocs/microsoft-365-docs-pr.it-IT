@@ -1,6 +1,6 @@
 ---
 title: Distribuire le funzionalità di protezione dalle minacce in Microsoft 365
-description: Informazioni su come distribuire le funzionalità di protezione dalle minacce in Microsoft 365 E5.
+description: Informazioni su come distribuire i servizi e le funzionalità di protezione dalle minacce in Microsoft 365 E5.
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: ff6854636c13e6c1ea40cf4cc6fa39d7b2b340b4
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 81b069bb5c316bea211bee98c293f2d1fcdd2422
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016097"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046263"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Distribuire le funzionalità di protezione dalle minacce in Microsoft 365
 
@@ -48,7 +48,16 @@ Nella figura seguente viene illustrato un percorso consigliato per la distribuzi
 
 ![Segnali di protezione dalle minacce di M365](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-Le organizzazioni con più team di sicurezza possono implementare queste funzionalità in parallelo.
+|Soluzione/funzionalità  |Descrizione  |
+|---------|---------|
+|Autenticazione a più fattori e accesso condizionale     |Protezione da identità e dispositivi compromessi. Iniziare con questa protezione perché è fondamentale. La configurazione consigliata in queste linee guida include Azure AD Identity Protection come prerequisito.     |
+|Azure Advanced Threat Protection     |  Una soluzione di sicurezza basata sul cloud che sfrutta i segnali di Active Directory locali per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni Insider dannose indirizzate alla propria organizzazione. Si concentrerà su questo punto perché protegge l'infrastruttura di on-premi e la cloud, non ha dipendenze o prerequisiti e può fornire vantaggi immediati.       | 
+|Office 365 Advanced Threat Protection     | Salvaguarda la propria organizzazione dalle minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. Protezioni per malware, phishing, spoofing e altri tipi di attacco. Questa procedura è consigliata dopo, in quanto il controllo delle modifiche, la migrazione delle impostazioni del sistema incumbent e altre considerazioni possono richiedere più tempo per la distribuzione. <br><br>Nota: assicurarsi di configurare anche le funzionalità di protezione dalle minacce incluse in tutte le sottoscrizioni di Office 365 (Exchange Online Protection).       |
+|Microsoft Defender Advanced Threat Protection    | Piattaforma di protezione endpoint che consente di prevenire, rilevare, esaminare e rispondere alle minacce avanzate. Questa operazione richiede più tempo per la distribuzione, ma può essere eseguita in parallelo con le altre funzionalità, se sono responsabili altri amministratori.   |
+|Microsoft Cloud App Security     |   Un broker di sicurezza per l'accesso cloud per l'individuazione, l'analisi e la governance. È possibile abilitare questa operazione in anticipo per iniziare a raccogliere dati e intuizioni. L'implementazione di informazioni e di altre protezioni mirate nelle app SaaS implica la pianificazione e la possibilità di richiedere più tempo.       | 
+
+> [!TIP]
+> Le organizzazioni con più team di sicurezza possono implementare queste funzionalità in parallelo.
 
 ## <a name="deploy-your-threat-protection-solution"></a>Distribuire la soluzione di protezione dalle minacce
 

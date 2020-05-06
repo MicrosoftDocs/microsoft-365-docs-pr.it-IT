@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Informazioni su come collaborare con gli utenti in teams.
-ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione con gli utenti in teams.
+ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002193"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036008"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -60,17 +61,17 @@ Verificare che l'accesso Guest sia abilitato nei team e apportare eventuali adeg
 
 ![Screenshot dell'opzione di accesso guest in Teams](../media/teams-guest-access-toggle-on.png)
 
-Per impostare le impostazioni di accesso guest di Teams
+Per configurare le impostazioni di accesso guest di Teams
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 all' [https://admin.microsoft.com](https://admin.microsoft.com)indirizzo.
-2. Nella barra di spostamento a sinistra, fare clic su **Mostra tutto**.
-3. In interfaccia di **Amministrazione**fare clic su **Team**.
-4. Nell'interfaccia di amministrazione di teams, nella barra di spostamento a sinistra, espandere **impostazioni a livello di organizzazione** e fare clic su **accesso Guest**.
-5. Verificare che **Consenti accesso guest in teams** sia impostato **su**attivato.
-6. Apportare le modifiche desiderate alle impostazioni aggiuntive per gli ospiti e quindi fare clic su **Salva**.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 all'indirizzo [https://admin.microsoft.com](https://admin.microsoft.com).
+2. Nel riquadro di spostamento sinistro fare clic su **Mostra tutto**.
+3. In **Interfacce di amministrazione** fare clic su **Teams**.
+4. Nell'interfaccia di amministrazione di Teams espandere **Impostazioni a livello di organizzazione** nel riquadro di spostamento sinistro e fare clic su **Accesso guest**.
+5. Assicurarsi che l'opzione **Consenti accesso ospite in Teams** sia** **abilitata.
+6. Apportare le modifiche desiderate alle impostazioni guest aggiuntive e quindi fare clic su **Salva**.
 
 > [!NOTE]
-> Dopo l'attivazione, potrebbero essere necessarie fino a ventiquattro ore affinché l'impostazione Guest teams diventi attiva.
+> Dopo l'attivazione, potrebbero essere necessarie fino a 24 ore prima che le impostazioni guest di Teams diventino effettive.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 groups Guest Settings
 
@@ -171,7 +172,7 @@ Per invitare gli ospiti a un team
 4. Digitare il nome completo dell'ospite e fare clic sul segno di spunta.
 5. Fare clic su **Aggiungi**, quindi fare clic su **Chiudi**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati](best-practices-anonymous-sharing.md)
 

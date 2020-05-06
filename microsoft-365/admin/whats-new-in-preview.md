@@ -20,12 +20,12 @@ search.appverid:
 description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle caratteristiche che sono state aggiunte in questo mese.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: afb18a9e9a249459665781bb1105397684f04653
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011328"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045953"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -176,7 +176,7 @@ Combiniamo le notizie di novembre e dicembre perché dopo l'accensione sono stat
 
 ### <a name="change-from-credit-card-to-invoice-payment"></a>Passare dalla carta di credito al pagamento della fattura
 
-Si sta iniziando a implementare la possibilità di modificare il metodo di pagamento dalla carta di credito a una fattura. Andare a prodotti per la **fatturazione** \> **& Servizi**, selezionare un abbonamento, quindi selezionare il collegamento **modifica** accanto al pagamento con carta di credito.
+Si sta iniziando a implementare la possibilità di modificare il metodo di pagamento dalla carta di credito a una fattura. Andare a **fatturazione** \> dei **prodotti**, selezionare un abbonamento, quindi selezionare il collegamento **modifica** accanto al pagamento con carta di credito.
 
 ![Acquisizione schermo: sezione fatturazione della scheda di sottoscrizione con una carta di credito come metodo di pagamento.](../media/MAC-BillingEditCreditCard.png)
 
@@ -244,7 +244,7 @@ Lo stato del servizio è stato aggiornato al nuovo stile e, se si ha un impatto 
 
 ### <a name="viral-subscriptions"></a>Abbonamenti "virali"
 
-Come sapete, gli utenti possono abilitare abbonamenti gratuiti a una miriade di prodotti come Power BI e app Connect. È ora possibile visualizzare gli "abbonamenti virali" che gli utenti hanno provato. Accedere a prodotti di **fatturazione** > **& Servizi**. Selezionare il filtro **tipo di account** nella scheda abbonamenti per visualizzare le sottoscrizioni acquistate dall'utente. Se necessario, è ora possibile rimuovere tali abbonamenti dall'account.
+Come sapete, gli utenti possono abilitare abbonamenti gratuiti a una miriade di prodotti come Power BI e app Connect. È ora possibile visualizzare gli "abbonamenti virali" che gli utenti hanno provato. Andare a **fatturazione** > dei**prodotti**. Selezionare il filtro **tipo di account** nella scheda abbonamenti per visualizzare le sottoscrizioni acquistate dall'utente. Se necessario, è ora possibile rimuovere tali abbonamenti dall'account.
 
 ### <a name="user-templates"></a>Modelli utente
 
@@ -289,7 +289,7 @@ Si è verificato un aggiornamento a un'altra delle procedure guidate per l'insta
 
 Sono stati apportati alcuni aggiornamenti per la fatturazione e gli abbonamenti di questo mese:
 
-- Abbonamenti basati su dispositivo: è possibile assegnare o annullare **l'assegnazione delle licenze di microsoft 365 Apps for Education (Device)** ai dispositivi nell'interfaccia di amministrazione di Microsoft 365. **Microsoft 365 Apps for Education (Device)** è una licenza per i componenti aggiuntivi che consente di assegnare una licenza a un dispositivo. Accedere a prodotti di **fatturazione** > **& Servizi** per trovare e acquistare la licenza.
+- Abbonamenti basati su dispositivo: è possibile assegnare o annullare **l'assegnazione delle licenze di microsoft 365 Apps for Education (Device)** ai dispositivi nell'interfaccia di amministrazione di Microsoft 365. **Microsoft 365 Apps for Education (Device)** è una licenza per i componenti aggiuntivi che consente di assegnare una licenza a un dispositivo. Andare a **fatturazione** > dei**prodotti** per trovare e acquistare la licenza.
 - Gestione delle licenze basata sull'utente: è stato aggiornato il **modo in** > cui si assegnano le licenze agli utenti**attivi** per il nuovo stile. Per ulteriori informazioni, vedere:
   - [Assegnare licenze agli utenti](manage/assign-licenses-to-users.md)
   - [Annullare l'assegnazione delle licenze agli utenti](manage/remove-licenses-from-users.md)
@@ -333,7 +333,7 @@ Sono state apportate modifiche entusiasmanti che consentono di configurare l'org
 
 ### <a name="billing--subscriptions"></a>Abbonamenti & di fatturazione
 
-- Tipo di prodotto **software** -è ora possibile visualizzare i prodotti software acquistati tramite un provider di servizi cloud (CSP). Per visualizzare i download e le chiavi, accedere alla scheda**software** prodotti **fatturazione** > **& Servizi** > .
+- Tipo di prodotto **software** -è ora possibile visualizzare i prodotti software acquistati tramite un provider di servizi cloud (CSP). Per visualizzare i download e le chiavi, vai alla scheda **fatturazione** > **prodotti** > **software** .
 - È possibile visualizzare i prodotti e i servizi di Azure moderni dall'interfaccia di amministrazione di Microsoft 365, indipendentemente dal fatto che siano stati acquistati da Microsoft o da un provider di terze parti. Esempi di prodotti di Azure moderni inclusi:
   - Istanze virtuali riservate di Azure
   - Piani di supporto di Azure
@@ -431,7 +431,7 @@ Sono state apportate alcune altre modifiche alla **gestione degli utenti**, ecco
 - C'è un Bonanza delle modifiche alla **fatturazione** di questo mese...
   - È ora possibile aggiornare il CVV per le carte di credito esistenti senza dover eliminarlo e aggiungerlo di nuovo. È possibile aggiornare il CVV accedendo ai**metodi di pagamento**delle **fatture** > .
     - È stato più facile individuare le **fatture** e comprendere eventuali problemi di fatturazione che il tuo account potrebbe avere. E ora è possibile visualizzare le bollette nel Web browser invece di dover scaricare il file PDF. Vai a **fatture bollette** > **.**
-    - Nella pagina **prodotti & Servizi** , ora vengono aggregate le informazioni di sottoscrizione se sono presenti più abbonamenti dello stesso tipo.
+    - Nella pagina dei **prodotti** , è necessario aggregare le informazioni di sottoscrizione se sono presenti più abbonamenti dello stesso tipo.
 
 ## <a name="march-2019---weve-officially-released-the-admin-center"></a>2019 marzo-siamo stati ufficialmente rilasciati nell'interfaccia di amministrazione
 

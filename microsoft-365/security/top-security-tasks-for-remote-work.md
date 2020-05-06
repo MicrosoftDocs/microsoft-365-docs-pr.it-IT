@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi.
-ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943544"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046353"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Top 12 attività per i team di sicurezza per il supporto di lavoro da casa
 
@@ -67,9 +67,9 @@ L'applicazione di questi criteri richiederà solo pochi minuti, ma sarà pronta 
 
 |Piano  |Consiglio  |
 |---------|---------|
-|Piani di Microsoft 365 (senza Azure AD P1 o P2)     |[Abilitare le impostazioni predefinite per la sicurezza in Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite per la sicurezza di Azure AD includono l'AMF per gli utenti e gli amministratori.   |
-|Microsoft 365 E3 (con Azure AD P1)     | Utilizzare [criteri di accesso condizionale comuni](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br>- [Richiedere l'autenticazione a master per gli amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Richiedi l'AMF per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Blocca l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (con Azure AD P2)     | Approfittando di Azure AD Identity Protection, iniziare a implementare il [set consigliato di Microsoft per l'accesso condizionale e i criteri correlati](../enterprise/identity-access-policies.md) creando questi due criteri:<br> - [Richiedere l'AMF quando il rischio di accesso è medio o elevato](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloccare i client che non supportano l'autenticazione moderna](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Gli utenti ad alto rischio devono modificare la password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Piani di Microsoft 365 (senza Azure AD P1 o P2)     |[Abilitare le impostazioni predefinite di sicurezza in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite di sicurezza in Azure AD includono la MFA per utenti e amministratori.   |
+|Microsoft 365 E3 (con Azure AD P1)     | Usare i [criteri comuni di accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br>- [Richiedere la MFA per amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Richiedere la MFA per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloccare l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (con Azure AD P2)     | Sfruttando Azure AD Identity Protection, iniziare a implementare il [set raccomandato di accesso condizionale e criteri correlati](../enterprise/identity-access-policies.md) di Microsoft creando questi due criteri:<br> - [Richiedere la MFA quando il rischio di accesso è considerato *medio* o *elevato*](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloccare i client che non supportano l'autenticazione moderna](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Gli utenti a rischio elevato devono modificare la password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
@@ -100,7 +100,7 @@ L'amministratore globale può configurare queste protezioni:
 - [Configurare i collegamenti sicuri di ATP](office-365-security/set-up-atp-safe-links-policies.md)
 - [Configurare i criteri degli allegati sicuri di ATP](office-365-security/set-up-atp-safe-attachments-policies.md)
 - [Configurare un elenco personalizzato di URL da "non riscrivere"](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [Configurare un elenco personalizzato di URL bloccati](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [Configurare un elenco personalizzato di URL bloccati](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
 
 È necessario collaborare con l'amministratore di Exchange Online e l'amministratore di SharePoint Online per configurare ATP per i carichi di lavoro seguenti:
 - [Attivare ATP per SharePoint, OneDrive e Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -131,7 +131,7 @@ Dopo aver configurato uno o più servizi di protezione dalle minacce avanzate, a
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: configurare la protezione delle app per dispositivi mobili di Intune per telefoni e Tablet
 
 Microsoft Intune Mobile Application Management (MAM) consente di gestire e proteggere i dati dell'organizzazione su telefoni e tablet senza gestire questi dispositivi. Tenere presente quanto segue:
-- È possibile creare un criterio di protezione delle app che determina quali app in un dispositivo vengono gestite e quali comportamenti sono consentiti, ad esempio impedendo la copia dei dati di un'app gestita in un'app non gestita. È possibile creare un criterio per ogni platorm (iOS, Android).
+- È possibile creare un criterio di protezione delle app che determina quali app in un dispositivo vengono gestite e quali comportamenti sono consentiti, ad esempio impedendo la copia dei dati di un'app gestita in un'app non gestita. È possibile creare un criterio per ogni piattaforma (iOS, Android).
 - Dopo aver creato i criteri di protezione delle app, è necessario applicarli creando una regola di accesso condizionale in Azure AD per richiedere applicazioni approvate e protezione dei dati delle APP.
 
 I criteri di protezione delle APP includono molte impostazioni. Fortunatamente, non è necessario conoscere tutte le impostazioni e valutare le opzioni. Microsoft rende più facile applicare una configurazione delle impostazioni suggerendo punti di partenza. Il [Framework di protezione dei dati utilizzando i criteri di protezione delle app](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) include tre livelli tra cui è possibile scegliere. 
@@ -154,7 +154,8 @@ Utilizzare le linee guida per l' [aggiornamento dei criteri comuni per consentir
 
 I criteri di protezione delle app per dispositivi mobili di Intune creati insieme alla regola di accesso condizionale per richiedere app e protezione delle applicazioni approvate, si applicano agli account Guest e aiutano a proteggere i dati dell'organizzazione. 
 
-**Nota**: se i PC sono già stati registrati nella gestione dei dispositivi per richiedere PC conformi, è necessario escludere anche gli account Guest dalla regola di accesso condizionale che impone la conformità del dispositivo. 
+> [!NOTE]
+> Se i PC sono già stati registrati nella gestione dei dispositivi per richiedere i PC conformi, è necessario escludere anche gli account Guest dalla regola di accesso condizionale che impone la conformità del dispositivo. 
 
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8: registrare i PC nella gestione dei dispositivi e richiedere PC conformi
@@ -179,12 +180,12 @@ Se si sta rapidamente consentendo la maggior parte dei dipendenti di lavorare da
 
 Gli elementi di rete, ad esempio i concentratori VPN, le apparecchiature di rete centrale di uscita (come i proxy e i dispositivi di prevenzione della perdita di dati), la larghezza di banda Internet centrale, i circuiti MPLS di backhaul, la capacità NAT e così via, vengono improvvisamente sottoposti a un enorme sforzo a causa del carico dell'intera azienda. Il risultato finale è una scarsità di prestazioni e produttività accoppiata a un'esperienza utente scadente per gli utenti che si adattano a lavorare da casa.
 
-Alcune delle protezioni che sono state tradizionalmente fornite dal routing del traffico tramite una rete aziendale sono fornite dalle app cloud che gli utenti accedono. Se si è raggiunto questo passaggio in questo articolo, è stata implementata una serie di sofisticati controlli di sicurezza cloud per i servizi e i dati di Microsoft 365. Con questi controlli sul posto, potrebbe essere pronto a instradare il traffico degli utenti remoti direttamente a Office 365. Se è ancora necessario un collegamento VPN per l'accesso ad altre applicazioni, è possibile migliorare notevolmente le prestazioni e l'esperienza utente implementando il tunneling suddiviso. Una volta raggiunto un accordo in Oganization, è possibile eseguire questa operazione in un giorno da un team di rete ben coordinato.
+Alcune delle protezioni che sono state tradizionalmente fornite dal routing del traffico tramite una rete aziendale sono fornite dalle app cloud che gli utenti accedono. Se si è raggiunto questo passaggio in questo articolo, è stata implementata una serie di sofisticati controlli di sicurezza cloud per i servizi e i dati di Microsoft 365. Con questi controlli sul posto, potrebbe essere pronto a instradare il traffico degli utenti remoti direttamente a Office 365. Se è ancora necessario un collegamento VPN per l'accesso ad altre applicazioni, è possibile migliorare notevolmente le prestazioni e l'esperienza utente implementando il tunneling suddiviso. Una volta raggiunto un accordo nell'organizzazione, questa operazione può essere eseguita in un giorno da un team di rete ben coordinata.
 
 
 Per ulteriori informazioni, vedere queste risorse su documenti:
 - [Panoramica: ottimizzare la connettività per gli utenti remoti tramite il tunneling Split VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implementazione di split tunneling per VPN per Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Implementazione dello split tunneling per VPN per Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Articoli di Blog recenti su questo argomento:
 - [Come ottimizzare rapidamente il traffico per il personale remoto & ridurre il carico nell'infrastruttura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
@@ -202,7 +203,7 @@ Microsoft 365 fornisce le risorse seguenti per informare gli utenti nell'organiz
 |Concetto  |Risorse  |
 |---------|---------|
 |Microsoft 365     |[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/) <p>Tali risorse consentono di creare una formazione per gli utenti finali nell'organizzazione        |
-|Centro sicurezza Microsoft 365 |[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza. |
+|Sicurezza di Microsoft 365 |[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza. |
 |Autenticazione a più fattori     | [Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Questo articolo aiuta gli utenti finali a capire cosa sia l'autenticazione a più fattori e il motivo per cui viene utilizzato all'interno dell'organizzazione.    |
 | | |
 

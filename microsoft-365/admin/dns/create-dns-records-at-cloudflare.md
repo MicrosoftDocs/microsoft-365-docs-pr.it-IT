@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in CloudFlare per Microsoft.
-ms.openlocfilehash: 116132d096db61e7004315dcf159fc78dd790d43
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 36578d8eed2c5630a9ce5abfb355983a26028888
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939320"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049072"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Creare record DNS in CloudFlare per Microsoft
 
@@ -131,7 +131,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Tipo**|**Nome**|**Mail server**|**Priorità**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dall'account Microsoft 365.   [Come trovarla](../get-help-with-domains/information-for-dns-records.md) |1  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/>|30 minuti  <br/> |
+    |MX  <br/> |@  <br/> |*\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dall'account Microsoft 365.   [Come trovarla](../get-help-with-domains/information-for-dns-records.md) |1  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/>|30 minuti  <br/> |
    
 
   

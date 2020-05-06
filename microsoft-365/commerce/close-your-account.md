@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Informazioni su come chiudere l'account con Microsoft.
-ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942854"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045777"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 
@@ -40,7 +40,7 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Passaggio 2: annullare tutte le sottoscrizioni attive
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** > .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede**sulla destra.
 
@@ -52,7 +52,7 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Passaggio 3: eliminare tutte le sottoscrizioni disabilitate
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** > .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede**sulla destra.
 

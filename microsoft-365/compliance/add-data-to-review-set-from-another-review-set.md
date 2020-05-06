@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: a6bd4672c75e2e633ede2ad54effb4c6562b822c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su come selezionare i documenti da un set di revisione e utilizzarli singolarmente in un altro set in un caso di eDiscovery avanzato.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080184"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034680"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Aggiungere dati a un set di revisione da un altro set di Revisione
 
@@ -29,7 +30,7 @@ In alcuni casi, potrebbe essere necessario selezionare i documenti da un set di 
 
 Seguire il flusso di lavoro in questo articolo per aggiungere contenuto da un set di revisione a un altro.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di iniziare, è necessario creare un nuovo set di revisione a cui aggiungere i dati.  È possibile aggiungere un nuovo set di revisione nella scheda **revisione dei set** del caso. Per ulteriori informazioni, vedere [creare un set di revisione](managing-review-sets.md#create-a-review-set).
 

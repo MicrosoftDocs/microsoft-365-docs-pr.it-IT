@@ -17,16 +17,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Configurare le funzionalità di sicurezza e l'infrastruttura di servizio necessarie per consentire ai dipendenti di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: da83dc788f31edb56a155f29dd6f14529840f8d5
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: af5246971de87866c41eb90ec8524e567cfd48f1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003796"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049535"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
 In risposta alla crisi COVID-19, l'azienda potrebbe dover consentire ai dipendenti di avere accesso sicuro alle informazioni, agli strumenti e alle risorse locali e basate sul cloud dalle proprie case. 
+
+![Passaggi per aumentare la produttività dei lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
 
 Utilizzare i seguenti passaggi per proteggere e ottimizzare l'accesso ai server, ai dati e ai servizi cloud dell'organizzazione e consentire la massima produttività dei lavoratori.
 

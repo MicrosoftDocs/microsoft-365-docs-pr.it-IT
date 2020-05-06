@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Seguire questo elenco di controllo per rimuovere un dipendente da Microsoft 365 e proteggere i dati. '
-ms.openlocfilehash: 593460c2e49b7136972c084a9927544e6194cb90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 74da58878259275d9b39849bd917f7ef35dce82b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617123"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045297"
 ---
 # <a name="remove-a-former-employee"></a>Rimuovere un ex dipendente
   
@@ -318,7 +318,7 @@ Quando si rimuove la licenza, tutti i dati dell'utente vengono conservati per 30
 
 
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 
 ::: moniker-end

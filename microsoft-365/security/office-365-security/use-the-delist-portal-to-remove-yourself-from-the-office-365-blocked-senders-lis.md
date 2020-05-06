@@ -1,5 +1,5 @@
 ---
-title: Utilizzare il portale di esclusione per rimuovere se stessi dall'elenco dei mittenti bloccati
+title: Rimuovi dall'elenco Mittenti bloccati
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: Quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica è in Microsoft 365, viene visualizzato un errore. Se si ritiene che non sia necessario ricevere il messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati.
-ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo viene illustrato come utilizzare il portale di esclusione per rimuovere se stessi dall'elenco dei mittenti bloccati di Microsoft 365.
+ms.openlocfilehash: 700382a494865b80116cfd8419213ed43b35b8a1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636405"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034987"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utilizzare il portale di esclusione per rimuovere se stessi dall'elenco dei mittenti bloccati
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco mittenti bloccati
 
 Quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica è in Microsoft 365, viene visualizzato un errore. Se si ritiene che non sia necessario ricevere il messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati.
 

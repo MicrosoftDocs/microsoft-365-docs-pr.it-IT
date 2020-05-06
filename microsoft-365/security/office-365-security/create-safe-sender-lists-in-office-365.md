@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili in Microsoft 365 e EOP che consentono ai messaggi in ingresso di ignorare il filtro posta indesiderata.
-ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come gli amministratori possono creare un elenco di mittenti attendibili in Microsoft 365 e EOP che consente ai messaggi in ingresso di ignorare il filtro posta indesiderata.
+ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637677"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036344"
 ---
 # <a name="create-safe-sender-lists"></a>Creare elenchi di mittenti attendibili
 

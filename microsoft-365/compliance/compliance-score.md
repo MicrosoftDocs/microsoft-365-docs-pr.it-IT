@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il Punteggio di conformità di Microsoft aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce azioni consigliate per aiutare a gestire i rischi.
-ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141571"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046274"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Punteggio di conformità Microsoft (anteprima)
 
@@ -49,8 +49,8 @@ Il Punteggio di conformità consente di semplificare la gestione della conformit
 - **Azioni consigliate**: fornisce consigli e istruzioni dettagliate su come implementare i controlli per massimizzare il Punteggio
 -  **Mapping di controllo incorporato**: consente di rimanere aggiornati con il paesaggio di conformità in evoluzione fornendo un Framework di controllo comune incorporato.
 
-> [!IMPORTANT] 
-> Il Punteggio di conformità non esprime una misura assoluta di conformità organizzativa rispetto a una norma o a un regolamento particolari. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Le raccomandazioni del Punteggio di conformità e del Compliance Manager non devono essere interpretate come garanzia di conformità. Questo servizio è attualmente in anteprima ed è soggetto ai termini e alle condizioni nelle condizioni dei [servizi online](https://go.microsoft.com/fwlink/?linkid=2108910).
+> [!IMPORTANT]
+> I consigli di Compliance Manager e Punteggio di conformità non devono essere interpretati come una garanzia di conformità. Spetta a te valutare e convalidare l'efficacia dei controlli del cliente per il tuo ambiente normativo. Questi servizi sono attualmente in anteprima e sono soggetti ai termini e alle condizioni nelle condizioni dei [servizi online](https://go.microsoft.com/fwlink/?linkid=2108910). Vedere anche [linee guida per la gestione delle licenze di Microsoft 365 per sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="relationship-to-compliance-manager"></a>Relazione con Compliance Manager
 
@@ -64,7 +64,7 @@ Ulteriori informazioni sulla relazione tra Score compliance e Compliance Manager
 
 ## <a name="understanding-your-score"></a>Informazioni sul Punteggio
 
-Punteggio di conformità fornisce un punteggio iniziale basato sulla linea di base per la protezione dei dati di Microsoft 365. Questa linea di base è un insieme di controlli che include normative e standard industriali comuni. Anche se questo punteggio è un buon punto di partenza per valutare la postura di conformità, il Punteggio di conformità diventa più potente dopo aver aggiunto valutazioni più rilevanti per la propria organizzazione.
+Punteggio di conformità fornisce un punteggio iniziale basato sulla linea di base per la protezione dei dati di Microsoft 365. Questa baseline è un set di controlli che include norme e standard di settore comuni. Anche se questo punteggio è un buon punto di partenza per valutare la postura di conformità, il Punteggio di conformità diventa più potente dopo aver aggiunto valutazioni più rilevanti per la propria organizzazione.
 
 Ad esempio, se l'organizzazione appartiene al settore dei servizi finanziari, potrebbe essere necessario aggiungere la valutazione di FFIEC. Se l'organizzazione appartiene all'industria del settore sanitario, è possibile aggiungere la valutazione HIPAA/HITECH. Informazioni su come [aggiungere valutazioni in Compliance Manager](working-with-compliance-manager.md#assessments).
 

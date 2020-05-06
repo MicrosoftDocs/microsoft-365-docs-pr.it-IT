@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Informazioni su come aggiungere un partner Advisor di sottoscrizione come partner di record al momento dell'acquisto di Microsoft 365, cambiare il partner o eliminare un partner da un abbonamento.
-ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627969"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045285"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Aggiungere, modificare o rimuovere un partner con il ruolo di consulente dell'abbonamento
 
@@ -107,14 +107,14 @@ Seguire i passaggi della pagina providers per la ricerca o per ottenere la corri
 ::: moniker-end
 
 
-## <a name="add-a-partner-to-an-existing-subscription"></a>Aggiungere un partner a un abbonamento esistente
+## <a name="add-a-partner-to-an-existing-subscription"></a>Aggiunta di un partner a una sottoscrizione esistente
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
     
 2. Se si dispone di più di un abbonamento, selezionare l'abbonamento che si desidera modificare.
   
@@ -161,7 +161,7 @@ Per accettare questa offerta
 > [!NOTE]
 > Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
     
 2. Se si hanno più abbonamenti, selezionare il nome dell'abbonamento da modificare.
     
@@ -209,7 +209,7 @@ Per accettare questa offerta
 > [!NOTE]
 > Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
-1.  Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1.  Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
     
 2. Se si hanno più abbonamenti, selezionare il nome dell'abbonamento da modificare.
     
@@ -248,7 +248,7 @@ Per accettare questa offerta
 
 ::: moniker range="o365-worldwide"
 
-Non è possibile rimuovere personalmente una relazione di Reseller.
+Non è possibile rimuovere una relazione come rivenditore autonomamente.
   
 Se si sta rimuovendo una relazione di Reseller, l'opzione **Elimina** è disattivata e sarà necessario chiedere al proprio partner Reseller di seguire le istruzioni riportate di seguito: [rimuovere una relazione di Reseller con partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
 
@@ -256,7 +256,7 @@ Se si sta rimuovendo una relazione di Reseller, l'opzione **Elimina** è disatti
 
 ::: moniker range="o365-germany"
 
-Non è possibile rimuovere personalmente una relazione di Reseller.
+Non è possibile rimuovere una relazione come rivenditore autonomamente.
   
 Se si sta rimuovendo una relazione di Reseller, l'opzione **Elimina** è disattivata e sarà necessario chiedere al proprio partner Reseller di seguire le istruzioni riportate di seguito: [rimuovere una relazione di Reseller con partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   
@@ -264,7 +264,7 @@ Se si sta rimuovendo una relazione di Reseller, l'opzione **Elimina** è disatti
 
 ::: moniker range="o365-21vianet"
 
-Non è possibile rimuovere personalmente una relazione di Reseller.
+Non è possibile rimuovere una relazione come rivenditore autonomamente.
   
 Se si sta rimuovendo una relazione di Reseller, l'opzione **Elimina** è disattivata e sarà necessario chiedere al proprio partner Reseller di seguire le istruzioni riportate di seguito: [rimuovere una relazione di Reseller con partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   

@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Informazioni su come aggiungere un membro a un gruppo, rimuovere un membro da un gruppo e gestire lo stato del proprietario di un gruppo nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b4df54e3dc54baf2f9e770f42333b95af391e90
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631314"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049400"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Aggiungere o rimuovere membri dai gruppi di Microsoft 365 utilizzando l'interfaccia di amministrazione
 
@@ -276,16 +276,16 @@ Per impostazione predefinita, la persona che crea il gruppo ne è il proprietari
     
 - Per aggiungere centinaia o migliaia di utenti ai gruppi, utilizzare il [componente aggiuntivo UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
     
-- [Assegnare un nuovo proprietario a un gruppo orfano](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732.aspx)
+- [Assegnare un nuovo proprietario a un gruppo orfano](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
     
 ## <a name="articles-about-managing-groups"></a>Articoli sulla gestione dei gruppi
     
 - [Aggiornare le liste di distribuzione ai gruppi di Microsoft 365 in Outlook](../manage/upgrade-distribution-lists.md)
     
-- [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+- [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Gestire l'accesso guest nei gruppi di Microsoft 365](manage-guest-access-in-groups.md)    
     
-- [Gestire i gruppi Microsoft 365 con PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): questo articolo introduce i cmdlet chiave e fornisce esempi
+- [Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): questo articolo introduce i cmdlet chiave e fornisce esempi
     
 - [Criteri di denominazione dei gruppi Microsoft 365](groups-naming-policy.md)

@@ -12,13 +12,15 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 'Riepilogo: informazioni sulla resilienza dei dati in Microsoft 365.'
-ms.openlocfilehash: 365cde7137247e20bb4fd2b57039057398deafd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: In questo articolo vengono fornite informazioni sulle tecnologie di crittografia che è possibile gestire e configurare in Microsoft 365.
+ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637342"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033614"
 ---
 # <a name="customer-managed-encryption-features"></a>Funzionalità di crittografia gestite dal cliente
 
@@ -64,8 +66,8 @@ Se si desidera garantire la comunicazione sicura con un partner, è possibile ut
 
 Exchange Online Protection (EOP) ed Exchange Online supportano la convalida in ingresso di messaggi Domain Keys Identified Mail (DKIM). DKIM è un metodo per confermare che il messaggio è stato inviato dal dominio di origine dichiarato e che non è stato soggetto a spoofing da parte di altri. Collega un messaggio di posta elettronica all'organizzazione responsabile dell'invio e fa parte di un paradigma più esteso della crittografia della posta elettronica. Per ulteriori informazioni sulle tre parti di questo paradigma, vedere:
 
-- [Configurare SPF per impedire lo spoofing](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
+- [Configurazione di SPF per evitare lo spoofing](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
 
-- [Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
+- [Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
 
 - [Usare DMARC per convalidare la posta elettronica](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)

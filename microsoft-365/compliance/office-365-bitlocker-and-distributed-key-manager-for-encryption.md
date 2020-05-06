@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 'Riepilogo: informazioni su BitLocker per la crittografia nel cloud.'
-ms.openlocfilehash: 5596848e392736e20e8c796e6fd409b9c43235d4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come Office 365 utilizza la crittografia BitLocker, riducendo le potenzialità di furto dei dati a causa di computer e dischi persi o rubati.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cc329a053544ba6cf1753ae07caac642546cad11
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637352"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033624"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker e Distributed Key Manager (DKM) per la crittografia
 

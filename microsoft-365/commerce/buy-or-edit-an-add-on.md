@@ -22,17 +22,16 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Informazioni su come acquistare un componente aggiuntivo per aggiungere ulteriori funzionalità all'abbonamento a Microsoft 365 for business. È inoltre possibile aggiornare e rimuovere un componente aggiuntivo.
 ms.custom: okr_SMB
-ms.openlocfilehash: 011ed188f741f2f026b452a2ecfd8b8c1b01c66e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 801da522c9fea9efcc4d3d4a0285a6ffcb5adc0b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634921"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045789"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Acquistare o modificare un componente aggiuntivo
 
 Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiuntivi che è possibile acquistare per l'abbonamento. I componenti aggiuntivi offrono altre funzionalità nell'abbonamento per cui vengono acquistati.
-
 
 ## <a name="buy-an-add-on"></a>Acquistare un componente aggiuntivo
 
@@ -98,22 +97,21 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 ::: moniker-end
 
-
 ## <a name="update-an-add-on"></a>Aggiornare un componente aggiuntivo
 
-I passaggi da eseguire per aggiornare un componente aggiuntivo dipendono dal fatto che il componente aggiuntivo sia un componente aggiuntivo tradizionale o un componente aggiuntivo autonomo. 
+I passaggi da eseguire per aggiornare un componente aggiuntivo dipendono dal fatto che il componente aggiuntivo sia un componente aggiuntivo tradizionale o un componente aggiuntivo autonomo.
 
 I *componenti aggiuntivi tradizionali* sono collegati a una sottoscrizione specifica. Se si annulla l'abbonamento, viene annullato anche il componente aggiuntivo associato.
   
-I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione specifica. I componenti aggiuntivi autonomi vengono visualizzati come sottoscrizione distinta nella pagina **abbonamenti** (o nella pagina **prodotti & Servizi** del nuovo interfaccia di amministrazione) e hanno la data di scadenza. È possibile gestire un componente aggiuntivo autonomo allo stesso modo in cui si gestisce qualsiasi altra sottoscrizione.
+I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione specifica. I componenti aggiuntivi autonomi vengono visualizzati come un abbonamento separato nella pagina dei **prodotti** e hanno la data di scadenza. È possibile gestire un componente aggiuntivo autonomo allo stesso modo in cui si gestisce qualsiasi altra sottoscrizione.
   
 ### <a name="update-a-traditional-add-on"></a>Aggiornare un componente aggiuntivo tradizionale
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
-2. Nella pagina **prodotti & Servizi** selezionare la sottoscrizione per la quale si desidera aggiornare un componente aggiuntivo.
+2. Nella pagina i **prodotti** selezionare l'abbonamento per cui si desidera aggiornare un componente aggiuntivo.
 
 3. Selezionare **componenti**aggiuntivi. Vengono visualizzati i componenti aggiuntivi acquistati.
 
@@ -122,7 +120,6 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 5. Immettere la modifica della quantità desiderata per l'abbonamento, quindi selezionare **Invia modifica**.
 
 ::: moniker-end
-
 
 ::: moniker range="o365-germany"
 
@@ -134,7 +131,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
     Vengono visualizzati i componenti aggiuntivi acquistati e sotto ognuno compare il collegamento **Cambio di quantità**.
 
-4. Selezionare il collegamento **Cambia quantità** per il componente aggiuntivo che si desidera aggiornare. 
+4. Selezionare il collegamento **Cambia quantità** per il componente aggiuntivo che si desidera aggiornare.
 
     ![Collegamento Componenti aggiuntivi e collegamento Cambio di quantità.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
@@ -157,7 +154,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
     Vengono visualizzati i componenti aggiuntivi acquistati e sotto ognuno compare il collegamento **Cambio di quantità**.
 
-4. Selezionare il collegamento **Cambia quantità** per il componente aggiuntivo che si desidera aggiornare. 
+4. Selezionare il collegamento **Cambia quantità** per il componente aggiuntivo che si desidera aggiornare.
 
     ![Collegamento Componenti aggiuntivi e collegamento Cambio di quantità.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
@@ -175,9 +172,9 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
-2. Nella pagina **prodotti & Servizi** selezionare l'abbonamento al componente aggiuntivo che si desidera aggiornare, quindi selezionare **Aggiungi/Rimuovi licenze**.
+2. Nella pagina i **prodotti** selezionare l'abbonamento al componente aggiuntivo che si desidera aggiornare, quindi selezionare **Aggiungi/Rimuovi licenze**.
 
 3. Immettere il numero di licenze necessarie nella casella e quindi selezionare **Invia modifica**.
 
@@ -213,7 +210,6 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker-end
 
-
 ## <a name="remove-an-add-on"></a>Rimuovere un componente aggiuntivo
 
 È possibile annullare un componente aggiuntivo autonomo allo stesso modo in cui si [Annulla un abbonamento](subscriptions/cancel-your-subscription.md). In alternativa, è possibile impostare la **fatturazione ricorrente** su disattivata per un componente aggiuntivo autonomo utilizzando la procedura precedente. Tuttavia, non è possibile rimuovere un componente aggiuntivo tradizionale dopo che è stato acquistato. Se è necessario rimuovere un componente aggiuntivo tradizionale, [contattare il supporto tecnico](../admin/contact-support-for-business-products.md).
@@ -230,12 +226,12 @@ Per informazioni sui componenti aggiuntivi di Skype for Business, vedere [Licenz
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |[Protezione avanzata dalle minacce di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 business standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
+|[Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|Spazio di archiviazione file aggiuntivo per Office 365  <br/> | Microsoft 365 Apps for business  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 business standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office per il Web con SharePoint piano 1  <br/>  Office per il Web con SharePoint piano 2  <br/>  SharePoint Online Piano 1  <br/>  SharePoint Online Piano 2  <br/> |
+|Spazio di archiviazione file aggiuntivo per Office 365  <br/> | App Microsoft 365 per le aziende  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office per il Web con SharePoint piano 1  <br/>  Office per il Web con SharePoint piano 2  <br/>  SharePoint Online Piano 1  <br/>  SharePoint Online Piano 2  <br/> |
 |Sistema telefonico  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
-|Audioconferenza  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 business standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 senza Audioconferenza <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Audioconferenza  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 senza Audioconferenza <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
 |Credito per la comunicazione  <br/> | Office 365 Enterprise E5  <br/> |
 |Piano per le chiamate nazionali <br/> | Office 365 Enterprise E5  <br/> |
 |Piani per le chiamate internazionali  <br/> | Office 365 Enterprise E5  <br/> |

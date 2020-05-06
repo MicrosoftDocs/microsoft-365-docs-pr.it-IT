@@ -1,5 +1,5 @@
 ---
-title: Configurazione dei criteri di filtro delle connessioni predefiniti, elenco indirizzi IP consentiti, elenco indirizzi IP bloccati, abilitazione o disabilitazione dell'elenco sicuro
+title: Configurare il criterio di filtro delle connessioni predefinito
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: Per assicurarsi che la posta elettronica inviata da persone di cui si ha fiducia non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi IP consentiti attendibili. È inoltre possibile creare un elenco di indirizzi IP bloccati di mittenti bloccati.
-ms.openlocfilehash: 54e68c79f78bb1408684ac583edff137cb687b53
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come configurare il filtro connessioni in Office 365 per consentire o bloccare i messaggi di posta elettronica provenienti dai server.
+ms.openlocfilehash: 0848e9a59df8c312891add29d14eec2dfed420df
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637747"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035083"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
@@ -44,7 +46,7 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell per Exchange Online Protection autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per modificare i criteri di filtro delle connessioni predefiniti, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri di filtro delle connessioni predefiniti, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per modificare i criteri di filtro delle connessioni predefiniti, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri di filtro delle connessioni predefiniti, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
 - Per trovare gli indirizzi IP di origine dei server di posta elettronica che si desidera consentire o bloccare, è possibile controllare il campo di intestazione IP di connessione (**CIP**) nell'intestazione del messaggio. Per visualizzare l'intestazione di un messaggio in vari client di posta elettronica, vedere [visualizzare le intestazioni dei messaggi Internet in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 

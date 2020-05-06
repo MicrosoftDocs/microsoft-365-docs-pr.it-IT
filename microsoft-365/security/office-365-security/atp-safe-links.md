@@ -15,6 +15,8 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -23,13 +25,13 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: La funzionalità collegamenti sicuri fornisce il tempo di fare clic sulla verifica dei link ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Utilizzare collegamenti sicuri per proteggere l'organizzazione da attacchi di phishing e altri.
-ms.openlocfilehash: 912c2fc0e76ca39ff4d600f53386d65e43946758
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In questo articolo viene illustrato come utilizzare collegamenti sicuri per proteggere l'organizzazione da tentativi di phishing e altri attacchi.
+ms.openlocfilehash: 5f166848fe5c2beb46fedfaa33394e1e73c94a10
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638561"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045252"
 ---
 # <a name="atp-safe-links"></a>Collegamenti sicuri di ATP
 
@@ -85,7 +87,7 @@ Nella tabella seguente vengono descritti alcuni scenari di esempio in cui la pro
 |Jean è un membro di un gruppo che dispone di criteri dei collegamenti sicuri di ATP che coprono gli URL nella posta elettronica e nei documenti di Office. Jean apre una presentazione di PowerPoint inviata da un utente e quindi fa clic su un URL nella presentazione.  <br/> |Sì. I criteri per i collegamenti sicuri di ATP definiti si applicano al gruppo di Jean, alla posta elettronica di Jean e ai documenti Word, Excel, PowerPoint o Visio che Jean apre, purché Jean sia connesso e utilizzi Microsoft 365 Apps for Enterprise su dispositivi Windows, iOS o Android.  <br/> |
 |Nell'organizzazione di Chris, nessun amministratore globale o di sicurezza ha ancora definito criteri di collegamenti sicuri ATP. Chris riceve un messaggio di posta elettronica contenente un URL di un sito Web malintenzionato. Chris non è a conoscenza che l'URL è dannoso e fa clic sul collegamento.  <br/> |No. Il criterio predefinito che include gli URL per tutti gli utenti dell'organizzazione deve essere definito in modo che la protezione sia sul posto.  <br/> |
 |Nell'organizzazione di Pat, nessun amministratore globale o di sicurezza ha ancora definito o modificato i criteri per i collegamenti sicuri ATP. Pat apre un documento di Word e fa clic su un URL nel file.  <br/> |No. È necessario definire un criterio che includa i documenti di Office in modo che la protezione sia sul posto. Vedere [configurare i criteri dei collegamenti sicuri di ATP in Office 365](set-up-atp-safe-links-policies.md).  <br/> |
-|L'organizzazione di Lee ha un criterio per i collegamenti sicuri `https://tailspintoys.com` di ATP che è elencato come sito Web bloccato. Lee riceve un messaggio di `https://tailspintoys.com/aboutus/trythispage`posta elettronica che contiene un URL. Lee fa clic sull'URL.  <br/> |Dipende dal fatto che l'intero sito e tutte le relative pagine secondarie siano inclusi nell'elenco degli URL bloccati. Vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).  <br/> |
+|L'organizzazione di Lee ha un criterio per i collegamenti sicuri `https://tailspintoys.com` di ATP che è elencato come sito Web bloccato. Lee riceve un messaggio di `https://tailspintoys.com/aboutus/trythispage`posta elettronica che contiene un URL. Lee fa clic sull'URL.  <br/> |Dipende dal fatto che l'intero sito e tutte le relative pagine secondarie siano inclusi nell'elenco degli URL bloccati. Vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-atp.md).  <br/> |
 |Jamie, collega di Jean, invia un messaggio di posta elettronica a Jean, non sapendo che l'indirizzo di posta elettronica contiene un URL dannoso.  <br/> |Dipende dal fatto che i criteri per i collegamenti sicuri di ATP sono definiti per la posta elettronica inviata all'interno dell'organizzazione. Vedere [configurare i criteri dei collegamenti sicuri di ATP in Office 365](set-up-atp-safe-links-policies.md).  <br/> |
 
 

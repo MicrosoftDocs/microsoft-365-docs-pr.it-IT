@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Gli amministratori possono configurare un connettore nativo per importare i dati da una pagina società di LinkedIn a Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e mantenimento, per gestire la conformità dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 6b74e6ba8dca810a8a185ae6011207a419c3e79d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Configurare un connettore per importare i dati di LinkedIn in Microsoft 365 in modo da poter utilizzare gli strumenti di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e mantenimento.
+ms.openlocfilehash: 7d88d366ea19be7d158a04edc7d7fb11dca7bab9
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943215"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043347"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurare un connettore per archiviare i dati di LinkedIn
 
@@ -57,17 +59,15 @@ Dopo che i dati della pagina della società LinkedIn sono archiviati in una cass
 
 6. Selezionare la pagina società da cui si desidera archiviare gli elementi, quindi fare clic su **Avanti**.
 
-7. Nella pagina **Imposta filtri** è possibile applicare un filtro per importare inizialmente gli elementi di una determinata età. Selezionare un'età, quindi fare clic su **Avanti**.
+7. Nella pagina **Scegli percorso di archiviazione** , fare clic nella casella, selezionare l'indirizzo di posta elettronica di una cassetta postale di Microsoft 365 a cui verranno importati gli elementi di LinkedIn e quindi fare clic su **Avanti**. Gli elementi vengono importati nella cartella posta in arrivo in questa cassetta postale.
 
-8. Nella pagina **Scegli percorso di archiviazione** , fare clic nella casella, selezionare l'indirizzo di posta elettronica di una cassetta postale di Microsoft 365 a cui verranno importati gli elementi di LinkedIn e quindi fare clic su **Avanti**. Gli elementi vengono importati nella cartella posta in arrivo in questa cassetta postale.
+8. Sul **consenso amministratore**, fare clic su **Fornisci consenso** e quindi eseguire la procedura. È necessario essere un amministratore globale per fornire il consenso per il servizio di importazione di Office 365 per accedere ai dati nell'organizzazione.
 
-9. Sul **consenso amministratore**, fare clic su **Fornisci consenso** e quindi eseguire la procedura. È necessario essere un amministratore globale per fornire il consenso per il servizio di importazione di Office 365 per accedere ai dati nell'organizzazione.
-
-10. Fare clic su **Avanti** per esaminare le impostazioni del connettore e quindi fare clic su **fine** per completare la configurazione del connettore.
+9. Fare clic su **Avanti** per esaminare le impostazioni del connettore e quindi fare clic su **fine** per completare la configurazione del connettore.
 
 Dopo aver creato il connettore, è possibile tornare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore (selezionare **Aggiorna** , se necessario, per aggiornare l'elenco dei connettori). Il valore nella colonna **stato** è in **attesa di inizio**. L'avvio del processo di importazione iniziale richiede fino a 24 ore. Dopo la prima esecuzione del connettore e le importazioni degli elementi di LinkedIn, il connettore verrà eseguito una volta ogni 24 ore e importerà eventuali nuovi elementi creati nella pagina società di LinkedIn nelle 24 ore precedenti.
 
-Per visualizzare ulteriori dettagli, selezionare il connettore nell'elenco nella pagina **connettori dati** per la visualizzazione della pagina a comparsa. In **stato**, l'intervallo di date visualizzato indica il filtro di età che è stato selezionato quando è stato creato il connettore. 
+Per visualizzare ulteriori dettagli, selezionare il connettore nell'elenco nella pagina **connettori dati** per la visualizzazione della pagina a comparsa. In **stato**, l'intervallo di date visualizzato indica il filtro di età che è stato selezionato quando è stato creato il connettore.
 
 ## <a name="more-information"></a>Ulteriori informazioni
 

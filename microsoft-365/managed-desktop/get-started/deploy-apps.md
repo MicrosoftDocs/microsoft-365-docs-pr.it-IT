@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302913"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046329"
 ---
 # <a name="deploy-apps-to-devices"></a>Distribuire le app ai dispositivi
 Parte dell'onboarding di Microsoft Managed Desktop include l'aggiunta e la distribuzione di app ai dispositivi dell'utente. Dopo aver utilizzato il portale Microsoft Managed Desktop, è possibile aggiungere e distribuire le app. 
@@ -38,10 +38,10 @@ In questa procedura, è possibile selezionare il tipo di app che si desidera agg
 
 È possibile accedere a Microsoft Managed Desktop Portal oppure accedere a Intune e quindi cercare Microsoft Managed Desktop. Verrà visualizzato l'accesso a Microsoft Managed Desktop Portal. 
 
-1.  Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mmdportal). 
-2.  In **inventario**, selezionare **app**.
-3.  Nel carico di lavoro delle app, selezionare **Aggiungi**.
-4.  In **Aggiungi app**selezionare app **line-of-business** o **Windows app (Win32)**.
+1.    Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mmdportal). 
+2.    In **inventario**, selezionare **app**.
+3.    Nel carico di lavoro delle app, selezionare **Aggiungi**.
+4.    In **Aggiungi app**selezionare app **line-of-business** o **Windows app (Win32)**.
     - Se è stata selezionata l' **applicazione line-of-business**, vedere [aggiungere un'app line-of-business di Windows a Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) per istruzioni sull'aggiunta e sulla configurazione delle app line-of-business.
     - Se è stata selezionata l'opzione **Windows app (Win32)**, vedere [gestione delle app Win32](https://docs.microsoft.com/intune/apps-win32-app-management) per istruzioni su come aggiungere e configurare le app di Windows.
 
@@ -55,7 +55,7 @@ Se non si è iscritti a Microsoft Store for business, è possibile iscriversi qu
 1. Accedere a [Microsoft Store for business](https://businessstore.microsoft.com) con l'account di amministratore di Microsoft Store for business.
 2. Selezionare **Shop per il gruppo personale**.
 3. Utilizza la ricerca per trovare l'app desiderata e seleziona l'app.
-4. Nei dettagli del prodotto, selezionare **Ottieni l'app**. Microsoft Store aggiunge l'app ai **prodotti & Services** per l'organizzazione.
+4. Nei dettagli del prodotto, selezionare **Ottieni l'app**. Microsoft Store aggiunge l'app ai **prodotti** per l'organizzazione.
 
 **Per forzare una sincronizzazione tra Intune e Microsoft Store for business**
 1. Accedere al [portale di Azure](https://portal.azure.com/) come amministratore di Intune o amministratore globale per il tenant
@@ -79,7 +79,7 @@ Se non si è iscritti a Microsoft Store for business, è possibile iscriversi qu
 
 Creare tre gruppi di Azure AD per ogni app. In questa tabella vengono illustrati i gruppi necessari (disponibili, necessari e disinstallati). 
 
-Tipo di assegnazione delle app |   Utilizzo di gruppo   | Nome di Azure AD di esempio
+Tipo di assegnazione delle app |    Utilizzo di gruppo    | Nome di Azure AD di esempio
 --- | --- | ---
 Disponibili |  L'app sarà disponibile nell'app o nel sito Web del portale aziendale. | MMD – *nome applicazione* – disponibile
 Obbligatorio |  L'app è installata nei dispositivi nei gruppi selezionati. | MMD – *nome dell'app* – obbligatorio

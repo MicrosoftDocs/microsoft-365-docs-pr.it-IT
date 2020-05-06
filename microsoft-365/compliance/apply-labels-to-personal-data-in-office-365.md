@@ -16,13 +16,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Informazioni su come utilizzare le etichette di Office per il piano di protezione RGPD.
-ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come usare le etichette di Office nell'ambito del piano di protezione GDPR.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2ad80a63470d0afa4cfb946def18f3408f8a27f4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636284"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034360"
 ---
 # <a name="apply-labels-to-personal-data"></a>Applicare le etichette ai dati personali
 

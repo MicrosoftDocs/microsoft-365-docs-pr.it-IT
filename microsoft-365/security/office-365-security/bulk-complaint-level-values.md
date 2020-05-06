@@ -1,5 +1,5 @@
 ---
-title: Valori di livello di reclamo in blocco, messaggi di posta in blocco, livelli di BCL, come funziona BCL, valutazioni BCL, antispam, intestazione antispam, filtro posta in blocco, Interrompi posta in blocco
+title: Valori dei livelli di reclamo in blocco (BCL)
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,12 +16,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui valori del livello di conformità in blocco (BCL, bulk Compliance Level) in Office 365.
-ms.openlocfilehash: e45b08756dd528e56b24635d670ddcd05e4396e4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 82c006f05ce3d37ff23ca1e522b653bd26efeed8
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630636"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035569"
 ---
 # <a name="bulk-complaint-level-bcl-in-office-365"></a>Livello di reclamo in blocco (BCL) in Office 365
 

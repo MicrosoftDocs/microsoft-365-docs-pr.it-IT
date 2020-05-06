@@ -1,5 +1,5 @@
 ---
-title: Come viene utilizzato Microsoft 365 Sender Policy Framework (SPF) per impedire lo spoofing
+title: Come il Sender Policy Framework (SPF) impedisce lo spoofing
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
-description: "Riepilogo: in questo articolo viene descritto in che modo Microsoft 365 utilizza il record TXT del Sender Policy Framework (SPF) in DNS per garantire che i sistemi di posta elettronica di destinazione consideri attendibili i messaggi inviati dal dominio personalizzato. Questo vale per la posta in uscita inviata da Microsoft 365. I messaggi inviati da Microsoft 365 a un destinatario all'interno di Microsoft 365 passeranno sempre SPF."
-ms.openlocfilehash: d73fb881b8395c6c1383cca70e506694795f1364
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come Microsoft 365 utilizza il record TXT del Sender Policy Framework (SPF) in DNS per garantire che i sistemi di posta elettronica di destinazione consideri attendibili i messaggi inviati dal dominio personalizzato.
+ms.openlocfilehash: 5d09047b51f191947c13a3e6ca64b5cb30d3f6a0
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633991"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036390"
 ---
-# <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Come viene utilizzato Microsoft 365 Sender Policy Framework (SPF) per impedire lo spoofing
+# <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Uso di Sender Policy Framework (SPF) in Microsoft 365 per impedire lo spoofing
 
  **Riepilogo:** In questo articolo viene descritto il modo in cui Microsoft 365 utilizza il record TXT del servizio di criteri del mittente (SPF) in DNS per garantire che i sistemi di posta elettronica di destinazione consideri attendibili i messaggi inviati dal Questo vale per la posta in uscita inviata da Microsoft 365. I messaggi inviati da Microsoft 365 a un destinatario all'interno di Microsoft 365 passeranno sempre SPF.
 
@@ -202,7 +204,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.ou
 
 Dopo aver formulato il record TXT SPF, seguire la procedura descritta in [set up SPF in Microsoft 365 per impedire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) di aggiungerlo al dominio.
 
-SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste procedure, dopo aver configurato SPF, è inoltre necessario configurare DKIM e DMARC per Microsoft 365. Per iniziare, vedere [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Microsoft 365](use-dkim-to-validate-outbound-email.md). Successivamente, vedere [utilizzare DMARC per convalidare la posta elettronica in Microsoft 365](use-dmarc-to-validate-email.md).
+SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste procedure, dopo aver configurato SPF, è inoltre necessario configurare DKIM e DMARC per Microsoft 365. Per iniziare, vedere [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Microsoft 365](use-dkim-to-validate-outbound-email.md). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Microsoft 365](use-dmarc-to-validate-email.md).
 
 ## <a name="troubleshooting-best-practices-for-spf-in-microsoft-365"></a>Risoluzione dei problemi: procedure consigliate per SPF in Microsoft 365
 <a name="SPFTroubleshoot"> </a>

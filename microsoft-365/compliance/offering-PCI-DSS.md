@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 12b3f0c94a3d391d5116af0c6eba366550a83040
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 85fa3c8a8e8ac2dda725227235512385bf991c12
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602083"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036355"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Payment Card Industry (PCI) Data Security Standard (DSS)
 
@@ -44,7 +44,8 @@ I clienti che intendono sviluppare un ambiente per i titolari di carte di credit
 - Servizio cloud Flow, indipendente o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Graph
 - Intune
-- Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
+- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- Servizio cloud PowerApps come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti Office 365
 - Ricerca in OneDrive for Business e SharePoint Online (solo Stati Uniti)
 
@@ -55,7 +56,7 @@ I clienti che intendono sviluppare un ambiente per i titolari di carte di credit
 
 ## <a name="get-your-pci-dss-solution-running-on-azure"></a>Creare una soluzione PCI DSS per Azure
 
-Per creare e implementare una soluzione PCI DSS nel cloud in maniera ancora più rapida è possibile usare i progetti di sicurezza e conformità di Azure per PCI DSS. Architettura di riferimento, guide per l'implementazione, mappe di controllo dell'implementazione, script automatizzati e molto altro. [Inizia a usare il Modello Blueprint PCI DSS di Azure](https://aka.ms/pciblueprint)
+Per creare e implementare una soluzione PCI DSS nel cloud in maniera ancora più rapida è possibile usare i progetti di sicurezza e conformità di Azure per PCI DSS. Architettura di riferimento, guide per l'implementazione, mappe di controllo dell'implementazione, script automatizzati e molto altro. [Iniziare a usare il modello di progetto PCI DSS di Azure](https://aka.ms/pciblueprint).
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

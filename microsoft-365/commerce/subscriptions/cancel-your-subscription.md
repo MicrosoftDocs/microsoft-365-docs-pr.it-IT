@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708084"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046205"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -43,7 +43,7 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Individuare la sottoscrizione che si desidera annullare e in **impostazioni & azioni**selezionare **Annulla sottoscrizione**.
 

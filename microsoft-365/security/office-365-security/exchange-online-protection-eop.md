@@ -11,13 +11,14 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: Di seguito sono riportate alcune considerazioni da tenere presenti prima di iniziare a lavorare con EOP.
-ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Informazioni sul servizio di filtraggio della posta elettronica ospitato in Microsoft Exchange Online Protection (EOP), inclusa la configurazione del servizio EOP.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ee39e051d3be0e3b27013929bdc3d3a948457c9b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032865"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036537"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
@@ -63,7 +64,7 @@ Il contenuto della Guida di EOP per gli amministratori comprende le seguenti cat
 
 I contenuti della Guida per l'assistenza agli utenti finali EOP per la gestione della posta indesiderata consistono dei seguenti argomenti:
 
-- [Segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md)
+- [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md)
 
 - Gli utenti finali possono aggiungere mittenti all'elenco dei mittenti attendibili o bloccarli in Outlook o Outlook sul Web. Gli amministratori possono anche modificare questi elenchi nelle cassette postali degli utenti. Per ulteriori informazioni, vedere [informazioni sulle impostazioni di posta indesiderata in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook).
 

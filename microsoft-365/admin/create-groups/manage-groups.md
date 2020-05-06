@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Informazioni su come gestire i gruppi di Microsoft 365, inclusa l'aggiunta di Rimuovi membri del gruppo, la modifica dell'indirizzo di posta elettronica, il nome del gruppo o la descrizione e la personalizzazione del funzionamento del gruppo.
-ms.openlocfilehash: 230a449bad22d0b872983a8c911955f4d00153ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 332d0dce46b94a3b69169183afb0c75ec537af8c
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630394"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049204"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gestire un gruppo nell'interfaccia di amministrazione di Microsoft 365
 
@@ -194,7 +194,7 @@ Questa opzione è ideale se si desidera disporre di un indirizzo di posta elettr
 
 [Creare un gruppo di Microsoft 365](create-groups.md)
 
-[Gestire l'accesso Guest ai gruppi di Microsoft 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Gestire l'accesso Guest ai gruppi di Microsoft 365](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Scegliere il dominio da utilizzare per la creazione dei gruppi di Microsoft 365](choose-domain-to-create-groups.md)
 
@@ -202,4 +202,4 @@ Questa opzione è ideale se si desidera disporre di un indirizzo di posta elettr
 
 [Aggiornare le liste di distribuzione ai gruppi di Microsoft 365](../manage/upgrade-distribution-lists.md)
 
-[Gestire i gruppi Microsoft 365 con PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)

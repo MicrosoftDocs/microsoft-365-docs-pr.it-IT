@@ -17,18 +17,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come gestire le sottoscrizioni di registrazione Self-Service gratuite per l'organizzazione.
-ms.openlocfilehash: 056ae95f9f5067ea3fa86164b620c72c84e3aad4
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43154133"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045261"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Gestione delle sottoscrizioni di iscrizione self-service
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>Che cosa sono le sottoscrizioni di iscrizione self-service?
 
-Sono disponibili un numero limitato di sottoscrizioni di iscrizione gratuite in modalità self-service in cui gli utenti dell'organizzazione possono iscriversi. Un utente può solo iscriversi e utilizzare una sottoscrizione di iscrizione self-service per se stessi. Le sottoscrizioni vengono visualizzate nella pagina **prodotti & Services** , sono contrassegnate come **gratuite**e hanno una nota che indica che "questo è un abbonamento gratuito attivato dagli utenti della propria azienda". È possibile gestire le sottoscrizioni di iscrizione self-service bloccando gli utenti dall'iscrizione e eliminando gratuitamente gli abbonamenti a cui gli utenti hanno effettuato l'accesso. Per ulteriori informazioni sull'accesso self-service e le sottoscrizioni disponibili, vedere [using self-service sign up nella propria organizzazione](../../admin/misc/self-service-sign-up.md).
+Sono disponibili un numero limitato di sottoscrizioni di iscrizione gratuite in modalità self-service in cui gli utenti dell'organizzazione possono iscriversi. Un utente può solo iscriversi e utilizzare una sottoscrizione di iscrizione self-service per se stessi. Le sottoscrizioni vengono visualizzate nella pagina dei **prodotti** , sono contrassegnate come **gratuite**e hanno una nota che indica che "questo è un abbonamento gratuito attivato dagli utenti della propria azienda". È possibile gestire le sottoscrizioni di iscrizione self-service bloccando gli utenti dall'iscrizione e eliminando gratuitamente gli abbonamenti a cui gli utenti hanno effettuato l'accesso. Per ulteriori informazioni sull'accesso self-service e le sottoscrizioni disponibili, vedere [using self-service sign up nella propria organizzazione](../../admin/misc/self-service-sign-up.md).
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>In che modo queste sottoscrizioni sono diverse dagli abbonamenti all'acquisto in modalità self-service?
 
@@ -43,7 +43,7 @@ Utilizzare il cmdlet [**Set-MsolCompanySettings**](https://docs.microsoft.com/po
 > [!IMPORTANT]
 > Quando si elimina una sottoscrizione di registrazione in modalità self-service, tutti gli utenti possono accedere ai propri dati e alla posta elettronica ed eliminare tutti i dati e la posta elettronica.
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** > .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 2. Individuare la sottoscrizione di accesso self-service che si desidera eliminare. Nella sezione **impostazioni & azioni** selezionare **Elimina sottoscrizione**.
 3. Nel riquadro **Elimina sottoscrizione** , selezionare la casella di controllo, quindi selezionare **Elimina sottoscrizione**.
 

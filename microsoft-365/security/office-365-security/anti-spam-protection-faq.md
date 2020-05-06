@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: Domande frequenti e risposte per gli amministratori sulla protezione da posta indesiderata in Exchange Online e standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In questo argomento vengono fornite domande & risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online & Exchange Online Protection (EOP).
+ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636059"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033739"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
@@ -133,7 +135,7 @@ R. Le linee guida presentate di seguito rappresentano le procedure ottimali per 
 
   I record SPF consentono di verificare che la posta inviata da un dominio giunga veramente da tale dominio e non sia soggetta a spoofing. Per ulteriori informazioni sui record SPF, vedere i seguenti collegamenti:
 
-  [Configurare SPF per impedire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [Configurazione di SPF per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [Domande frequenti sui domini](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 

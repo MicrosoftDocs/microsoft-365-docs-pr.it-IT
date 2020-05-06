@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 for business. "
-ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626947"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049448"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -93,7 +93,7 @@ Se si è dimenticato la password e non si è in grado di accedere:
     
 - Chiedere a un altro amministratore globale dell'azienda di reimpostare la password per l'utente.
     
-- In alternativa, [contattare il supporto tecnico Microsoft](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_). 
+- In alternativa, [contattare il supporto tecnico Microsoft](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products). 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Reimpostare contemporaneamente tutte le password aziendali per tutti gli utenti dell'organizzazione
 <a name="bkmk_forgot"> </a>
@@ -117,9 +117,9 @@ Questi passaggi sono validi per un'azienda con decine di utenti. Se gli utenti s
 
 Usare PowerShell. Vedere questo post di Eyal Doron: [Gestire le password con PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
-Ecco un articolo correlato: [Impostare le password per più account utente](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password).
+Ecco un articolo correlato: [Impostare le password per più account utente](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   
-Per informazioni generali, vedere [PowerShell for Microsoft 365 Administrators](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
+Per informazioni generali, vedere [PowerShell for Microsoft 365 Administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forzare la modifica della password per tutti gli utenti dell'organizzazione
 <a name="bkmk_forgot"> </a>
@@ -144,4 +144,4 @@ Leggere questo articolo: [Si è dimenticato l'account o la password per l'accoun
 
 [Rimuovere un ex dipendente](remove-former-employee.md)
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

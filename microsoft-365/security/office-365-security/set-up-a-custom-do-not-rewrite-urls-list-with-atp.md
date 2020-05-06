@@ -16,20 +16,22 @@ search.appverid:
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
-description: Quando si configurano i criteri per i collegamenti sicuri di ATP, è possibile includere un elenco di URL da non riscrivere per consentire ad alcuni utenti dell'organizzazione di visitare i siti inclusi nell'elenco.
-ms.openlocfilehash: 490fb3279f2c54bc6f2335510aa711866318e01d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come configurare gli URL bloccati personalizzati per gli utenti e l'elenco di URL non riscritti per un gruppo di utenti nei criteri dei collegamenti sicuri ATP di Office 365.
+ms.openlocfilehash: d7bd6c7d4c3dccfb4a16b2b2f172f8f75123692e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638381"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046305"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurare un elenco di URL non di riscrittura personalizzato utilizzando collegamenti sicuri di ATP
 
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), l'organizzazione può disporre di un [URL bloccato personalizzato](set-up-a-custom-blocked-urls-list-wtih-atp.md), in modo che quando gli utenti fanno clic su indirizzi Web (URL) nei messaggi di posta elettronica o in determinati documenti di Office, vengono impediti di passare a tali URL. L'organizzazione può anche disporre di elenchi personalizzati di "non riscrivere" per gruppi specifici dell'organizzazione. Un elenco "non riscrivere" consente ad alcuni utenti di visitare gli URL che sono altrimenti bloccati da [collegamenti sicuri di ATP in Office 365](atp-safe-links.md).
+Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), l'organizzazione può disporre di un [URL bloccato personalizzato](set-up-a-custom-blocked-urls-list-atp.md), in modo che quando gli utenti fanno clic su indirizzi Web (URL) nei messaggi di posta elettronica o in determinati documenti di Office, vengono impediti di passare a tali URL. L'organizzazione può anche disporre di elenchi personalizzati di "non riscrivere" per gruppi specifici dell'organizzazione. Un elenco "non riscrivere" consente ad alcuni utenti di visitare gli URL che sono altrimenti bloccati da [collegamenti sicuri di ATP in Office 365](atp-safe-links.md).
 
 In questo articolo viene descritto come specificare un elenco di URL esclusi dall'analisi dei collegamenti sicuri ATP e alcuni punti importanti da tenere presenti.
 
@@ -65,7 +67,7 @@ Per modificare (o definire) i criteri ATP, è necessario essere assegnati a un r
 7. Dopo aver aggiunto gli URL, fare clic su **Salva**nell'angolo in basso a destra dello schermo.
 
 > [!NOTE]
-> Assicurarsi di esaminare l'elenco personalizzato dell'organizzazione degli URL bloccati. Vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+> Assicurarsi di esaminare l'elenco personalizzato dell'organizzazione degli URL bloccati. Vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-atp.md).
 
 ## <a name="important-points-to-keep-in-mind"></a>Punti importanti da tenere presenti
 
