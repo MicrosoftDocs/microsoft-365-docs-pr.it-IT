@@ -13,13 +13,14 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: Informazioni sui vari tipi di visualizzazioni disponibili in Esplora minacce e sui rilevamenti in tempo reale.
-ms.openlocfilehash: ccee7905068619d959e0939aca8b31856dd114a1
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+description: Informazioni su come utilizzare l'esploratore di minacce e il rapporto sui rilevamenti in tempo reale per esaminare e rispondere alle minacce nel centro sicurezza & conformità.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 31fa228d69fcbe885f7639a47a5df2bf1ee0c60d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907250"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035189"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 

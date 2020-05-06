@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1edf55298981fe8c20a38c863229a7349d6b0862
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Visualizzazione di una tabella in cui sono elencati i campi dei metadati per i documenti in un set di evidenze in indagini sui dati (Preview).
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 3e13d62446cff3efdacaa5f8e1ade8a37006d922
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595181"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035698"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Campi dei metadati del documento in indagini sui dati (anteprima)
 
-Nella tabella seguente sono elencati i campi dei metadati per i documenti in un set di evidenze in un'indagine in indagini sui dati (Preview). La tabella indica il nome del campo metadati, se il campo può essere cercato durante l'esecuzione di una query in un set di evidenze, se il campo è presente quando si visualizzano i metadati di un documento selezionato in un set di prove e se il campo è incluso quando i documenti vengono esportati. 
+Nella tabella seguente sono elencati i campi dei metadati per i documenti in un set di evidenze in un'indagine in indagini sui dati (Preview). La tabella indica il nome del campo metadati, se il campo può essere cercato durante l'esecuzione di una query in un set di evidenze, se il campo è presente quando si visualizzano i metadati di un documento selezionato in un set di prove e se il campo è incluso quando vengono esportati i documenti. 
 
 > [!NOTE]
 > I valori racchiusi tra parentesi nella colonna del **set di evidenze** è il nome della proprietà di cui è possibile eseguire la ricerca. I valori racchiusi tra parentesi nella colonna dei **metadati visualizzabili in file** è il nome della proprietà visualizzata quando si visualizzano i metadati dei file.

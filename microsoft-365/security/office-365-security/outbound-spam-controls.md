@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono scoprire come Microsoft 365 e Exchange Online Protection (EOP) proteggono i clienti dalla posta indesiderata in uscita e cosa fare se è necessario inviare messaggi di posta elettronica di massa.
-ms.openlocfilehash: 71fe5d5ba1ffbecc77b646a06c3da4d9681ee3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come amministratore come Office 365 e Exchange Online Protection (EOP) consente di proteggere i clienti dalla posta indesiderata in uscita e come procedere se è necessario inviare invii di massa.
+ms.openlocfilehash: ffedcf68489914865c00eb68aecfa6c74e519ee2
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634497"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033927"
 ---
 # <a name="outbound-spam-protection"></a>Protezione della posta indesiderata in uscita
 

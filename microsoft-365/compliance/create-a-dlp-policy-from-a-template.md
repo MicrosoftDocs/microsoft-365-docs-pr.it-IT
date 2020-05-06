@@ -16,13 +16,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: 956359695978953445237afaa21af028ae8b4c6c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: In questo articolo vengono fornite informazioni su come creare criteri DLP utilizzando uno dei modelli inclusi in Office 365.
+ms.openlocfilehash: be063c8ee8605db94fe3a68f7ca42b7135553f5e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631335"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035718"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Creare criteri di prevenzione della perdita dei dati da un modello
 
@@ -58,7 +60,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere con l'account aziendale o dell'Istituto di istruzione. Si è ora nel centro sicurezza &amp; e conformità.
+2. Accedere usando l'account di lavoro o della scuola. Si è ora nel centro sicurezza &amp; e conformità.
     
 3. Nel &amp; centro \> sicurezza e conformità left navigation \> **policy** \> di prevenzione \> della **perdita dei dati** **+ creare un criterio**.
     

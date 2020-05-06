@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Per ulteriori informazioni sui domini, è possibile trovare le risposte alle domande più frequenti.
 ms.custom: okr_smb
-ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 0b9b79c3cab74f4f809f0bd96ed5a51c17282ccd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919482"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048162"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
@@ -366,7 +366,7 @@ Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.de*, quando s
 
 ## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>Come verificare lo stato dell'istruzione o dell'organizzazione no profit
 
-1. Selezionare **installazione** nell'interfaccia di [Amministrazione](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx) per avviare la procedura guidata. (Assicurarsi di accedere a Office 365 per primo). 
+1. Selezionare **installazione** nell'interfaccia di [Amministrazione](https://docs.microsoft.com/microsoft-365/admin/admin-home) per avviare la procedura guidata. (Assicurarsi di accedere a Office 365 per primo). 
     
 2. Per diventare l'amministratore dell'Istituto di istruzione, selezionare l'opzione **diventa amministratore** in Office 365. 
     

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di directory e di rete nell'ambiente.
-ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636809"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011652"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Passaggio 2: conformità di directory e rete
 
@@ -51,7 +51,7 @@ In questo articolo è possibile esplorare gli strumenti e le opzioni per prepara
 
 Se l'organizzazione usa già Office 365, Exchange Online, Microsoft Intune o altri servizi Microsoft Online, allora si sta già usando Azure Active Directory. In tal caso, sarà sufficiente assicurarsi che gli utenti destinatari della distribuzione desktop siano nell'istanza di Azure Active Directory usata e che siano state assegnate licenze.
 
-Se attualmente non si sta usando Azure Active Directory, esistono [numerose risorse](https://docs.microsoft.com/azure/active-directory/) che consentono di configurarlo. È possibile ricevere assistenza personalizzata tramite Microsoft FastTrack, nell'ambito della propria licenza. Informazioni relative a Microsoft Fastrack sono disponibili [qui](https://fasttrack.microsoft.com).
+Se attualmente non si sta usando Azure Active Directory, esistono [numerose risorse](https://docs.microsoft.com/azure/active-directory/) che consentono di configurarlo. È possibile ricevere assistenza personalizzata tramite Microsoft FastTrack, nell'ambito della propria licenza. Informazioni relative a Microsoft FastTrack sono disponibili [qui](https://fasttrack.microsoft.com).
 
 Dopo aver implementato Azure Active Directory sul posto, gli utenti possono accedere e attivare le applicazioni di Microsoft 365 Apps for enterprise ed è possibile consentire la distribuzione di Microsoft Intune o Windows Autopilot per la distribuzione automatica delle applicazioni e dei criteri.
 
@@ -121,7 +121,7 @@ Oltre a sfruttare Ottimizzazione recapito, ecco tre elementi che consentiranno d
 
 **Binary Delta Compression** Microsoft 365 Apps for enterprise utilizza Binary Delta Compression per ridurre la larghezza di banda consumata dagli aggiornamenti software durante l'aggiornamento dalla versione più recente di Microsoft 365 Apps for enterprise alla versione successiva. Modificando solo le modifiche al livello binario della versione precedente, l'impatto della crescita mensile degli aggiornamenti cumulativi è ridotto al minimo. Ciò ha il potenziale di salvare diverse centinaia di megabyte di dati per PC, ogni mese. Tuttavia, per utilizzare questa funzionalità, non è possibile saltare le versioni, nel qual caso, è necessario scaricare l'aggiornamento cumulativo completo.
 
-[Download degli aggiornamenti per Office 365](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[Scaricare aggiornamenti di sicurezza per Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
 **File di dati di Outlook**: Outlook viene spesso configurato per memorizzare nella cache l'intera cassetta postale degli utenti per l'uso offline. In qualsiasi distribuzione di Windows, ad eccezione di un aggiornamento sul posto, che richiede che i file di dati di Outlook degli utenti vengano ricostruiti automaticamente dopo l'aggiornamento, si tratta di un processo automatizzato, ma con i limiti delle cassette postali di Outlook generalmente impostati su un massimo di 100 GB, l'ulteriore caching dell'intera cassetta postale in locale per tutti gli utenti significa trasferire molti dati. Per ridurre il carico di rete, si consiglia di prendere in considerazione l'utilizzo di Criteri di gruppo per ridurre l'impostazione "Posta da mantenere offline". In Microsoft 365 Apps for enterprise o Office 2016 il valore predefinito di Outlook è impostato su 12 mesi. Al fine di ridurre l'impatto sulla rete, provare a impostare la cache offline per una durata compresa tra 1 e 6 mesi. Modificare questa impostazione non influisce sulle dimensioni della cassetta postale online e l'intera cassetta postale può ancora essere ricercata tramite Outlook quando è online.
 

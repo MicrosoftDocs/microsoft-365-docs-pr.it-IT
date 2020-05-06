@@ -1,5 +1,5 @@
 ---
-title: Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati
+title: Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati.
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,12 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
-ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637593"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034817"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati
 
@@ -126,7 +127,7 @@ Per confermare l'attacco, è possibile utilizzare uno dei due metodi seguenti:
 
 Il modo più semplice per verificare una regola o un attacco di moduli personalizzati consiste nell'eseguire lo script di PowerShell [Get-AllTenantRulesAndForms. ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) . Questo script si connette a tutte le cassette postali del tenant e Scarica tutte le regole e i moduli in due file. csv.
 
-#### <a name="pre-requisites"></a>Requisiti preliminari
+#### <a name="pre-requisites"></a>Prerequisiti
 
 Sarà necessario disporre di diritti di amministratore globale per eseguire lo script perché lo script si connette a tutte le cassette postali del contratto di locazione per leggere le regole e i moduli.
 
@@ -234,9 +235,9 @@ Cercare la chiave EnableUnsafeClientMailRules. Se è presente ed è impostato su
 
 I clienti con installazioni di Exchange locali dovrebbero considerare di bloccare le versioni precedenti di Outlook che non dispongono di patch disponibili. Informazioni dettagliate su questo processo sono disponibili nell'articolo [configure Outlook client blocking](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Protezione di Microsoft 365 come un Cybersecurity Pro
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteggere Microsoft 365 come un professionista della sicurezza informatica
 
-La sottoscrizione Microsoft 365 include un potente set di funzionalità di sicurezza che è possibile utilizzare per proteggere i dati e gli utenti. Utilizzare la [Roadmap di sicurezza di microsoft 365-priorità principali per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate di Microsoft consigliati per la protezione del tenant Microsoft 365.
+L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti. Usare la [Roadmap della sicurezza di Microsoft 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Microsoft 365.
 
 - Attività da eseguire i primi 30 giorni. Queste hanno effetto immediato e sono a basso impatto per gli utenti.
 

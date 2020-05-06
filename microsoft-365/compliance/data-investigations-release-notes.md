@@ -15,13 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
-ms.openlocfilehash: 813877151f538bc07a0460fdd702ab37ebcc5a1a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+description: In questo articolo vengono riportate le note sulla versione che contengono modifiche e nuove funzionalità per lo strumento indagini dati (Preview) in Microsoft 365.
+ms.openlocfilehash: 5bb18ccb3354082634780720938fb18164da0ccb
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637736"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035728"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Note sulla versione per le indagini sui dati (Preview) in Microsoft 365
 

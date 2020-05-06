@@ -1,5 +1,5 @@
 ---
-title: Prolungare il periodo di valutazione
+title: Prolunga il periodo di valutazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,23 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Informazioni su come estendere la sottoscrizione di valutazione per un altro periodo di 30 giorni.
-ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634897"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045765"
 ---
-# <a name="extend-your-trial"></a>Prolungare il periodo di valutazione
+# <a name="extend-your-trial"></a>Prolunga il periodo di valutazione
 
 È necessario più tempo per provare le funzionalità di Microsoft 365 for business prima dell'acquisto? Se l'abbonamento di valutazione scade entro 15 giorni e la versione di valutazione non è stata estesa precedentemente, è possibile prolungare il periodo di valutazione di altri 30 giorni. È possibile farlo una sola volta.
 
 ::: moniker range="o365-worldwide"
 
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
-
-2. Nella pagina **prodotti & Services** individuare la sottoscrizione di valutazione che si desidera estendere. Nella sezione **impostazioni & azioni** selezionare **Estendi versione di valutazione**.
+2. Nella pagina i **prodotti** individuare la sottoscrizione di valutazione che si desidera estendere. Nella sezione **impostazioni & azioni** selezionare **Estendi versione di valutazione**.
 
 3. Rivedere le informazioni sull'interno e, se necessario, cambiare il metodo di pagamento. Al termine, selezionare **Estendi versione di valutazione**.
 
@@ -45,9 +44,7 @@ ms.locfileid: "43634897"
 
 ::: moniker range="o365-germany"
 
-
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-
 
 2. Nella pagina **abbonamenti** selezionare la sottoscrizione di valutazione che si desidera estendere e quindi, sotto la data di scadenza, selezionare **Estendi versione di valutazione**.
 

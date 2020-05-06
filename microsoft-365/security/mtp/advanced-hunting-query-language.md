@@ -1,7 +1,7 @@
 ---
 title: Il linguaggio delle query in Ricerca avanzata in Microsoft Threat Protection
 description: Creare una prima query di ricerca delle minacce, conoscere gli operatori più comuni e altri aspetti del linguaggio di query di Ricerca avanzata
-keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, language, Learn, First query, telemetria, eventi, telemetria, rilevamenti personalizzati, schema, kusto, operatori, tipi di dati, PowerShell Download, esempio di query
+keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, language, Learn, First query, telemetria, eventi, telemetria, rilevamenti personalizzati, schema, kusto, operatori, tipi di dati, download di PowerShell, esempio di query
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5715baaccd95d975f7d15196906a6326177bbc2e
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 14de9d84ef19be3dcf1e630b2814a6060bfe7f27
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982012"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036500"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -147,6 +147,11 @@ I dati nelle tabelle di Ricerca avanzata sono generalmente classificati nei segu
 | `bool` | True o False |
 | `int` | Valore numerico 32 bit  |
 | `long` | Valore numerico 64 bit |
+
+## <a name="get-help-as-you-write-queries"></a>Ottenere assistenza nella scrittura delle query
+Trarre vantaggio dalle seguenti funzionalità per scrivere query più velocemente:
+- **AutoSuggest** : durante la scrittura di query, la ricerca avanzata fornisce suggerimenti da IntelliSense. 
+- **Riferimento di schema** — accanto all’area di lavoro è disponibile il riferimento a uno schema che include l'elenco di tabelle e le relative colonne. Per altre informazioni, passare il puntatore su un elemento. Fare doppio clic su un elemento per inserirlo nell'editor di query.
 
 ## <a name="use-sample-queries"></a>Usare query di esempio
 

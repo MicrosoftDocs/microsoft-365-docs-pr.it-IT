@@ -15,13 +15,14 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Spiega le differenze tra le versioni della crittografia dei messaggi.
-ms.openlocfilehash: 89d145f19591ba59df6983bb8863a8e0cc28fcf3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In questo articolo vengono illustrate le differenze tra le diverse versioni della crittografia dei messaggi di Office 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 32895f8aae8c6c23ab7f0e3d70d4caa73285fa9e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626792"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034876"
 ---
 # <a name="compare-versions-of-ome"></a>Confrontare le versioni di OME
 
@@ -43,7 +44,7 @@ In questo articolo viene confrontato legacy Office 365 Message Encryption (OME) 
 |*Esperienza per il destinatario interno*|I destinatari ricevono un messaggio HTML che consente di scaricare e aprire in un Web browser o in un'app per dispositivi mobili|Utilizzo nativo in linea nei client Outlook|Utilizzo nativo in linea per i destinatari nella stessa organizzazione con i client di Outlook.  I destinatari possono leggere il messaggio dal portale OME usando client diversi da Outlook (non è necessario alcun download o app).|
 |*Esperienza per il destinatario esterno*|I destinatari ricevono un messaggio HTML che consente di scaricare e aprire in un Web browser o in un'app per dispositivi mobili|N/D|Utilizzo nativo in linea per i destinatari di Microsoft 365. Tutti gli altri destinatari possono leggere il messaggio dal portale OME (non è necessario alcun download o app).|
 |*Autorizzazioni per gli allegati*           |Nessuna restrizione sugli allegati|Gli allegati sono protetti|Gli allegati sono protetti per l'opzione non inoltrare e i modelli personalizzati. Gli amministratori possono scegliere se gli allegati per l'opzione solo crittografia sono protetti o meno.|
-|*Fornire il supporto per la chiave personale (BYOK)*|Nessuna                |Nessuna               |BYOK supportato          |
+|*Fornire il supporto per la chiave personale (BYOK)*|Nessuno                |Nessuno               |BYOK supportato          |
 ||
 
 ## <a name="advantages-of-the-new-ome-capabilities-over-legacy-ome"></a>Vantaggi delle nuove funzionalità OME su OME legacy

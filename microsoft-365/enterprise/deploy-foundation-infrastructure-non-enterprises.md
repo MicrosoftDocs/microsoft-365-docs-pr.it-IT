@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Esame delle fasi semplificate dell'infrastruttura di base per Microsoft 365 per le aziende per organizzazioni non aziendali.
-ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1c747e5f4ab3e58adeaf91518512d8ece83d91b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638261"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011900"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Infrastruttura di base di Microsoft 365 per le aziende per organizzazioni non aziendali
 
@@ -215,7 +215,7 @@ Gli elementi nuovi ed evidenziati della fase Windows 10 Enterprise includono:
 
 ## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>Fase 4: Microsoft 365 Apps for enterprise
 
-Microsoft 365 Apps for enterprise include Microsoft 365 Apps for enterprise, la versione in abbonamento di Microsoft Office. Come Office 2016 o Office 2019, Microsoft 365 Apps for enterprise viene installato direttamente nei dispositivi client. Microsoft 365 Apps for enterprise riceve però regolarmente gli aggiornamenti delle nuove funzionalità. Per saperne di più consultare le [informazioni su Microsoft 365 Apps for enterprise nell'impresa](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Apps for enterprise include Microsoft 365 Apps for enterprise, la versione in abbonamento di Microsoft Office. Come Office 2016 o Office 2019, Microsoft 365 Apps for enterprise viene installato direttamente nei dispositivi client. Microsoft 365 Apps for enterprise riceve però regolarmente gli aggiornamenti delle nuove funzionalità. Per saperne di più, consultare le [informazioni su Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 Per un'organizzazione non aziendale, installare manualmente Microsoft 365 Apps for enterprise nei dispositivi, che possono essere dispositivi Windows, iOS e Android. Questa operazione può essere eseguita dall'amministratore durante la preparazione di un nuovo dispositivo per l'uso oppure dall'utente durante il processo di onboarding.
 

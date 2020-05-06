@@ -1,5 +1,5 @@
 ---
-title: Scaricare i report esistenti nel centro &amp; sicurezza e conformità
+title: Scaricare i report esistenti-Centro sicurezza & Compliance
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,13 +14,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: Informazioni su come scaricare uno o più report esistenti nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 62f87c3a11e35bd6dae25c786ac2360e9937c84d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come scaricare uno o più report esistenti nel centro sicurezza & Compliance per attenuare e risolvere i rischi per l'organizzazione.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 53daaf5bdcb6b9f471e70c6f9451ebcf33d6393d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637581"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034805"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Scaricare i report esistenti nel centro &amp; sicurezza e conformità
 

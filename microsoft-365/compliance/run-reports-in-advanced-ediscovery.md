@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
-description: 'Informazioni su come eseguire un report e quindi scaricare il relativo file. csv in Advanced eDiscovery.  '
-ms.openlocfilehash: 9da35e21de23e4773130f5aa87b16fe18d044140
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come eseguire un report per il processo selezionato e quindi scaricare il relativo file. csv in Advanced eDiscovery.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e8761277dae8898cfe4c1674beb3f89eeddb48ba
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626482"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034590"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>Esecuzione di report in Advanced eDiscovery (Classic)
 

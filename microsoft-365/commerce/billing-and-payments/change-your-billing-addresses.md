@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Informazioni su come aggiornare gli indirizzi di fatturazione per Microsoft 365 for business. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
 ms.custom: okr_SMB
-ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632720"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048026"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiare gli indirizzi di fatturazione
 
@@ -121,7 +121,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Individuare l'abbonamento che si desidera modificare. Nella sezione **impostazioni & azioni** selezionare **modifica indirizzo di utilizzo del servizio**.
 
@@ -170,6 +170,8 @@ Per impostazione predefinita, le notifiche di fatturazione dell'organizzazione v
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Cambiare l'indirizzo di posta elettronica alternativo di un altro amministratore
 
 È anche possibile cambiare l'indirizzo di posta elettronica alternativo di altri amministratori globali e di fatturazione dell'organizzazione.
+
+::: moniker range="o365-worldwide"
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifiche sulla fatturazione</a>.
 
