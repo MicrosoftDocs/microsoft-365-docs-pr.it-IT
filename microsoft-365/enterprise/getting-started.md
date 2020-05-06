@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introduzione al processo di distribuzione desktop.
-ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05ec900acbcfed9d148ef4f567aab099dd9b7c7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634219"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011876"
 ---
 # <a name="getting-started---desktop-deployment"></a>Guida introduttiva - Distribuzione desktop
 
@@ -53,7 +53,7 @@ Uno degli imperativi chiave nell'ambito di una procedura di gestione moderna è 
 
 [Windows 10 per IT Pro](https://www.microsoft.com/itpro/windows-10)
 
-[Informazioni su Microsoft 365 Apps for enterprise nell'impresa](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[App Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## <a name="what-has-changed"></a>Che cosa è cambiato
 
@@ -67,7 +67,7 @@ Iniziamo ad osservare cosa è cambiato ed è stato migliorato dall'ultima distri
 
 **Gestione di dispositivi basata sul cloud**. Grazie a servizi come Microsoft Intune è possibile gestire i dispositivi Windows 10 proprio come gli altri dispositivi mobili, tutti da un'unica posizione. Ciò che rende unico Microsoft Intune è la possibilità di gestire contemporaneamente i dispositivi Windows 10 con Microsoft Endpoint Configuration Manager. Si può usare Configuration Manager per facilitare il passaggio a Windows 10 e quindi aggiungere Microsoft Intune. Microsoft Endpoint Configuration Manager diventerà così una rete perimetrale intelligente all'interno dell'organizzazione, connesso al cloud intelligente Microsoft. In questo modo, sarà possibile gestire i dispositivi degli utenti in modo sicuro ovunque si trovino, che siano connessi all'infrastruttura aziendale o all'interno del cloud pubblico.
 
-[Gestione contemporanea di dispositivi Windows 10](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+[Gestione contemporanea di dispositivi Windows 10](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview)
 
 **Servizio di distribuzione basato sul cloud:** nei nuovi PC disponibili per l'acquisto è stato introdotto un nuovo servizio cloud per la distribuzione di dispositivi Microsoft 365. Si tratta del servizio di distribuzione Windows Autopilot. AutoPilot è integrato nei sistemi dei provider di hardware e i nuovi PC vengono registrati automaticamente in AutoPilot con la vendita all'utente finale. Alla prima accensione del PC, questo viene rapidamente configurato con la configurazione dell'organizzazione e può essere personalizzato in base a specifiche esigenze dell'utente.
 
@@ -77,7 +77,7 @@ Iniziamo ad osservare cosa è cambiato ed è stato migliorato dall'ultima distri
 
 L'installazione A portata di clic è molto diversa dai pacchetti basati su MSI del passato. È più veloce, più leggera e supporta gli aggiornamenti in background, per consentire agli utenti di essere operativi in pochi minuti e sempre aggiornati. Si tratta comunque di una copia locale di Office ed è possibile continuare a usare gli strumenti di distribuzione esistenti, come Microsoft Endpoint Configuration Manager, per eseguire il provisioning e configurare le app.
 
-[Guida alla distribuzione di Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Guida alla distribuzione di Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **Aggiornamenti semestrali:** una volta effettuato il passaggio a Windows 10 e Microsoft 365 Apps for enterprise, ogni sei mesi verranno offerti aggiornamenti con nuove funzionalità. Poiché Microsoft è in grado di fornire informazioni dettagliate dal cloud per agevolare le operazioni, è possibile distribuire questi aggiornamenti a centinaia o migliaia di dispositivi in modo rapido e sicuro. Analogamente a un aggiornamento sul posto, un aggiornamento delle funzionalità conserva app, dati e configurazioni della versione precedente.
 
@@ -109,14 +109,14 @@ Analogamente a quanto accadeva negli aggiornamenti precedenti, l'Utilità di mig
 
 **[Passaggio 6: distribuzione del sistema operativo e aggiornamenti delle funzionalità](https://aka.ms/mdd6)**. Una volta preparato tutto, il passo successivo è quello di implementare le immagini del sistema operativo. È possibile eseguire le attività più complesse utilizzando sequenze di attività e infrastruttura System Center Configuration Manage. L'approccio consigliato consiste nell'implementazione in fasi, il per prima cosa individuando un "gruppo di utenti iniziali" dell'organizzazione su cui operare l'implementazione mediante un insieme rappresentativo di hardware e app. Quindi è possibile utilizzare i dati di tali dispositivi e utenti per individuare gradualmente un numero sempre maggiore di PC.
 
-[Introduzione all'implementazione del sistema operativo in Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+[Introduzione all'implementazione del sistema operativo in Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[Passaggio 7: Office e Windows as a Service](https://aka.ms/mdd7)**. Si tratta di un importante cambiamento nelle modalità di manutenzione dei desktop degli utenti. Con il passaggio a Windows 10 e Microsoft 365 Apps for enterprise è possibile passare alla gestione di Windows e Office as a Service, ovvero come servizio. Anziché implementare radicali cambiamenti tecnologici a intervalli di alcuni anni, si introdurranno continuamente nuove funzionalità, esperienze e sistemi di protezione. Gli aggiornamenti semestrali forniscono nuove funzionalità ogni anno in autunno e in primavera, mentre gli aggiornamenti qualitativi mensili conterranno correzioni di bug, per la sicurezza e per l'affidabilità. Anche se si può scegliere di distribuire il client di Office 2019, è decisamente consigliabile passare a Microsoft 365 Apps for enterprise. che segue un piano di servizio simile a Windows, quindi anche gli utenti ricevono regolarmente aggiornamenti per le app di Office.
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Panoramica di Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[Panoramica di Office as a Service](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[Panoramica di Office as a Service](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[Passaggio 8: comunicazioni e formazione degli utenti](https://aka.ms/mdd8)** Quest'ultimo passaggio è fondamentale per favorire l'utilizzo di nuove funzionalità volte a migliorare il lavoro in team, le comunicazioni, la sicurezza e altro ancora. Prima di estendere la distribuzione agli utenti al di fuori del cerchio degli early adopter, è consigliabile implementare una strategia di comunicazione e formazione degli utenti. Questo aiuterà a introdurre i cambiamenti desiderati nel modo in cui gli utenti si servono delle nuove funzionalità in Office, Windows o altre app e servizi line-of-business. Può risultare utile il servizio di formazione online gratuita tramite Microsoft FastTrack. Inoltre, sono stati pubblicati piani di comunicazione e sequenze temporali di esempio gratuiti, insieme a modelli di posta elettronica, social e Intranet per facilitare l'implementazione di Windows 10. Le organizzazioni di Microsoft 365 possono essere idonee anche per il supporto diretto.
 

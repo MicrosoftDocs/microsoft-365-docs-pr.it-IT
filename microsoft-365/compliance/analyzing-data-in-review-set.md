@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0f9cb386ce57d6581ade5caa05e029511100d9b3
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Informazioni sugli strumenti disponibili per organizzare i set di documenti durante l'analisi di un caso di eDiscovery avanzato.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 87788e444a5ef671586567510448dab8b9deddcd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556784"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033820"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizzare i dati in un set di revisione in Advanced eDiscovery
 

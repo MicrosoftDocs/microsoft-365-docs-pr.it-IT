@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Acquistare un abbonamento a Microsoft 365 for business. È possibile acquistare lo stesso tipo di sottoscrizione provato o un altro piano.
-ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634945"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045801"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Acquistare un abbonamento a Microsoft 365 for business dalla versione di valutazione gratuita
 
@@ -50,9 +50,9 @@ Si è tentato Microsoft 365 e ora si è pronti per l'acquisto. Sono disponibili 
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
-2. Nella pagina **prodotti & Services** individuare la sottoscrizione che si desidera acquistare. Nella sezione **licenze** selezionare **Acquista sottoscrizione**.
+2. Nella pagina i **prodotti** individuare la sottoscrizione che si desidera acquistare. Nella sezione **licenze** selezionare **Acquista sottoscrizione**.
 
 3. Scegliere un impegno mensile o annuale per l'abbonamento, quindi selezionare **Estrai**.
 

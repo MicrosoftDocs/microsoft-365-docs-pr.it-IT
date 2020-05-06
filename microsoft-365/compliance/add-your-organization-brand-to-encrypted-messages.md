@@ -17,13 +17,15 @@ ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: In qualità di amministratore globale, è possibile applicare il marchio dell'organizzazione ai messaggi di posta elettronica crittografati dell'organizzazione e ai contenuti del portale di crittografia.
-ms.openlocfilehash: 231d0bd1e49d0529b4dc15ec758ba63fe5f60092
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Applicare il marchio dell'organizzazione ai messaggi di posta elettronica crittografati dell'organizzazione e al contenuto del portale di crittografia.
+ms.openlocfilehash: fc2767c0b7ad67a53e081d60d18ac583b2b4c686
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632291"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034392"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Aggiungere il logo della propria organizzazione ai messaggi crittografati
 

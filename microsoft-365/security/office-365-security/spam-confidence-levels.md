@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono ottenere informazioni su come il livello di probabilità di posta indesiderata (SCL) determina quanto probabile o improbabile sia la posta indesiderata e le azioni predefinite che il filtro posta indesiderata assume sui messaggi in base all'SCL.
-ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo, gli amministratori possono ottenere informazioni su come il livello di probabilità di posta indesiderata (SCL) determina la verosimiglianza di un messaggio come posta indesiderata.
+ms.openlocfilehash: 9448b1fd99878dbb85bc8699afc0719bc62dd951
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638285"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035249"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Livello di probabilità di posta indesiderata (SCL) in Office 365
 

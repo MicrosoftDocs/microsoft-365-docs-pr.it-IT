@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
-description: Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Office 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente Microsoft 365.
-ms.openlocfilehash: c5c84d154b25f29b94635e6506ed54158efc672f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come mittente esterno, come è possibile aumentare la possibilità di inviare messaggi di posta elettronica agli utenti in Microsoft 365. Vengono inoltre fornite informazioni su come segnalare la posta indesiderata & tentativi di phishing come utenti esterni.
+ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638417"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035385"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Invio di posta elettronica a Microsoft 365
 

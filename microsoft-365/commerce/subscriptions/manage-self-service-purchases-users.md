@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Gli utenti possono imparare a gestire i propri acquisti in modalità self-service.
-ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636640"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046169"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gestire acquisti in modalità self-service (utenti)
 
@@ -30,11 +30,11 @@ L'amministratore ha una visualizzazione di sola lettura in tutti gli abbonamenti
 
 ## <a name="view-your-subscriptions"></a>Visualizzare gli abbonamenti
 
-È possibile visualizzare un elenco di tutti gli abbonamenti acquistati in modalità self-service che sono stati acquistati. Nell'interfaccia di amministrazione, accedere alla pagina dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** > .
+È possibile visualizzare un elenco di tutti gli abbonamenti acquistati in modalità self-service che sono stati acquistati. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Come acquistare altre licenze o ridurle
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** > .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Individuare la sottoscrizione per la quale si desidera acquistare più o ridurre le licenze.
 
@@ -53,7 +53,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 3. Scegliere **assegna licenze**.
 
-4. Nel riquadro **Assegna licenze agli utenti** iniziare a digitare un nome, quindi selezionarlo dai risultati per aggiungerlo all'elenco. È possibile aggiungere fino a 20 utenti per volta.
+4. Nel riquadro **Assegna licenze agli utenti** iniziare a digitare un nome, quindi selezionarlo nei risultati per aggiungerlo all'elenco. È possibile aggiungere fino a 20 utenti per volta.
 
     > [!NOTE]
     > È possibile assegnare le licenze solo agli utenti dell'organizzazione.
@@ -74,7 +74,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ## <a name="cancel-a-subscription"></a>Annullamento di un abbonamento
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** > .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Individuare l'abbonamento che si desidera annullare.
 

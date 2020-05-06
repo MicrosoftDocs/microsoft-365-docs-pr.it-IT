@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilizzare la scheda comunicazioni in un caso avanzato di eDiscovery per gestire il flusso di lavoro di notifica della banca depositaria.
-ms.openlocfilehash: b4d3c4c3ed132914ebe46b03eb65d24e073ee687
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+description: Utilizzare lo strumento di comunicazione in un caso avanzato di eDiscovery per inviare, raccogliere e tenere presenti le notifiche di archiviazione legale.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280234"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035788"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creare un avviso per la conservazione legale
 

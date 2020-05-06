@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 for business, su come configurarlo e su come preparare i dispositivi e i PC degli utenti per assicurarsi che siano protetti da Microsoft 365 for business.
-ms.openlocfilehash: 17b142fb704d1b0be088a649490e751effb19517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633204"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048086"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introduzione a Microsoft 365 for business
 
@@ -44,7 +44,7 @@ Guardare questo video per una breve panoramica di Microsoft 365 for business.<br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 for business è destinato a un massimo di 300 licenze. Per ulteriori informazioni, vedere documentazione relativa a [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) . 
+Microsoft 365 for business è destinato a un massimo di 300 licenze. Se occorrono più licenze, vedere la documentazione di [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) per maggiori informazioni. 
   
 ## <a name="get-microsoft-365-for-business"></a>Ottenere Microsoft 365 per le aziende
 
@@ -52,7 +52,7 @@ Microsoft 365 for business è destinato a un massimo di 300 licenze. Per ulterio
     
 - Se non si dispone di un partner e si desidera ottenere Microsoft 365 for business, è possibile [acquistarlo qui](https://www.microsoft.com/microsoft-365/business).
     
-## <a name="set-up-microsoft-365-for-business"></a>Configurare Microsoft 365 for business
+## <a name="set-up-microsoft-365-for-business"></a>Configurare Microsoft 365 per le aziende
 
  **Panoramica di Microsoft 365 for Business Suite set up**
   
@@ -83,7 +83,7 @@ Accedere all'interfaccia di [amministrazione di microsoft 365](https://portal.of
     
     - Utilizzare la procedura guidata di sincronizzazione della directory per sincronizzare gli utenti con il cloud. Seguire la procedura descritta in [set up Directory Synchronization for Microsoft 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) per completare il processo. Dopo aver sincronizzato gli utenti nel cloud, è necessario disattivare la [sincronizzazione della directory per Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
     
-    È inoltre necessario fornire a ciascun utente aggiunto in questo modo una licenza a Microsoft 365 for business. È possibile eseguire questa operazione nell' [installazione guidata](set-up.md) oppure è possibile [assegnare licenze agli utenti in Microsoft 365 for business](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
+    È inoltre necessario fornire a ciascun utente aggiunto in questo modo una licenza a Microsoft 365 for business. È possibile eseguire questa operazione nell' [installazione guidata](set-up.md) oppure è possibile [assegnare licenze agli utenti in Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
     
 ### <a name="2-prepare-mobile-devices"></a>2: preparare i dispositivi mobili
 
@@ -112,4 +112,4 @@ Se si conserva un Active Directory locale che contiene alcune risorse locali (ad
   
 [Gestire microsoft 365 for business](manage.md)[migrate a Microsoft 365 for business](migrate-to-microsoft-365-business.md)
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
