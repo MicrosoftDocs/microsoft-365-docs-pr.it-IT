@@ -1,6 +1,6 @@
 ---
 title: Creare e monitorare i ticket tramite ServiceNow
-description: Microsoft 365 Security Center è in fase di miglioramento grazie alla possibilità di creare e registrare in modo nativo i ticket in ServiceNow. Gli amministratori della sicurezza possono inviare una raccomandazione di Punteggio sicuro direttamente a ServiceNow e creare un ticket.
+description: Informazioni su come creare e monitorare i ticket in ServiceNow dal centro sicurezza Microsoft 365.
 keywords: sicurezza, Microsoft 365, M365, Secure score, Centro sicurezza, ServiceNow, ticket, attività
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,12 +17,14 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.custom:
+- seo-marvel-apr2020
+ms.openlocfilehash: 6070878d6cf0efd8a85d05ff6ef89ee49baf4144
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901023"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034189"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gestire i ticket tramite ServiceNow
 

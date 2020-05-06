@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nel DNS basato su Windows per Microsoft.
-ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631370"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048844"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Creare record DNS per Microsoft tramite DNS basato su Windows
 
@@ -200,7 +200,7 @@ Verificare il dominio in Microsoft.
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Indirizzo di posta elettronica non instradabile usato come UPN in Active Directory locale
 <a name="BKMK_ADNote"> </a>
 
-Se si prevede di sincronizzare Active Directory locale con Microsoft, è necessario assicurarsi che il suffisso nome dell'entità utente (UPN) di Active Directory sia un suffisso di dominio valido e non un suffisso di dominio non supportato, ad esempio @contoso. local. Se è necessario modificare il suffisso UPN, vedere [come preparare un dominio non instradabile per la sincronizzazione della directory](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7).
+Se si prevede di sincronizzare Active Directory locale con Microsoft, è necessario assicurarsi che il suffisso nome dell'entità utente (UPN) di Active Directory sia un suffisso di dominio valido e non un suffisso di dominio non supportato, ad esempio @contoso. local. Se è necessario modificare il suffisso UPN, vedere [come preparare un dominio non instradabile per la sincronizzazione della directory](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
   
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 

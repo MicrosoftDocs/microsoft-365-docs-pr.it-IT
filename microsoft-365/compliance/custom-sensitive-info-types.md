@@ -15,13 +15,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Panoramica dei tipi di informazioni sensibili per DLP.
-ms.openlocfilehash: 2e56811cf8e837e698254c0205d5b831f7b1f3b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Panoramica sui tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati, ad esempio criterio principale, prossimità dei caratteri e livello di probabilità.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 621c7be728f772e113ef5cd65d5b79a2526ec7c5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617090"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035748"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipi di informazioni sensibili personalizzati
 

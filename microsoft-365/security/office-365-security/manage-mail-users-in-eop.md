@@ -11,13 +11,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
-description: La definizione degli utenti di posta è una parte importante della gestione del servizio Exchange Online Protection (EOP).
-ms.openlocfilehash: 56827e29872c6a6ffd14821af8e2d9ea005ff20c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come gestire gli utenti di posta elettronica in Exchange Online Protection (EOP), tra cui l'utilizzo della sincronizzazione della directory, EAC e PowerShell per la gestione degli utenti.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 9a4555bf4b6a716839c327c692f0e44b590f8175
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635581"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035557"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestire utenti di posta in Exchange Online Protection
 

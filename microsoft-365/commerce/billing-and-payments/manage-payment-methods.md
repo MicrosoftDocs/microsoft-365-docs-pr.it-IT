@@ -1,5 +1,5 @@
 ---
-title: Gestire metodi di pagamento
+title: Gestire i metodi di pagamento
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni su come gestire i metodi di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: fb3efa7aa2e098462e8c323d1cd0038222862e7b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894842"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045869"
 ---
-# <a name="manage-payment-methods"></a>Gestire metodi di pagamento
+# <a name="manage-payment-methods"></a>Gestire i metodi di pagamento
 
 Quando si acquistano prodotti o servizi aziendali da Microsoft, è possibile utilizzare un metodo di pagamento esistente oppure aggiungerne uno nuovo. È possibile utilizzare una carta di credito o di debito o un conto corrente bancario per pagare le operazioni acquistate. Tuttavia, è possibile gestire solo i metodi di pagamento aggiunti.
 
@@ -36,7 +36,7 @@ Quando si acquistano prodotti o servizi aziendali da Microsoft, è possibile uti
 >
 > È necessario utilizzare un metodo di pagamento emesso dallo stesso paese del tenant.
 
-## <a name="add-a-payment-method"></a>Aggiungere un metodo di pagamento
+## <a name="add-a-payment-method"></a>Aggiungere una modalità di pagamento
 
 L'aggiunta di un metodo di pagamento non associa gli abbonamenti. Per assegnare una singola sottoscrizione al metodo di pagamento, vedere [modificare un metodo di pagamento per una singola sottoscrizione](#change-a-payment-method-for-a-single-subscription). Per sostituire tutte le sottoscrizioni che utilizzano un altro metodo di pagamento con quello nuovo, vedere [Replace a Payment Method](#replace-a-payment-method).
 
@@ -73,7 +73,7 @@ Per modificare il metodo di pagamento per una singola sottoscrizione, vedere [mo
 
 È possibile modificare il metodo di pagamento utilizzato per pagare un singolo abbonamento.
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">servizi di &</a> di **fatturazione** > .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 2. Nella scheda **abbonamenti** selezionare l'abbonamento che si desidera pagare con il metodo di pagamento alternativo. 
 3. In **fatturazione**, fare clic su **modifica**accanto al metodo di pagamento.
 4. Accanto al metodo di pagamento esistente, selezionare **Cambia**.
@@ -108,7 +108,7 @@ Se un metodo di pagamento è collegato a qualsiasi sottoscrizione o profilo di f
 7. Il nuovo metodo di pagamento è già selezionato nell'elenco a discesa. Selezionare **Avanti**.
 8. Selezionare **Elimina**.
 
-## <a name="troubleshoot-payment-methods"></a>Risoluzione dei problemi relativi ai metodi di pagamento
+## <a name="troubleshoot-payment-methods"></a>Risoluzione dei problemi relativi alle modalità di pagamento
 
 |**Problema**|**Procedure per la risoluzione dei problemi**|
 |:----------|:-----|

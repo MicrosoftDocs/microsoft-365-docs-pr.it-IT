@@ -14,15 +14,17 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: ''
-description: Utilizzare questo argomento per ulteriori informazioni sulla gestione degli accessi con privilegi
-ms.openlocfilehash: 932e4d5574ac14c7dd76f8df70b61ed274acebbf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In questo articolo viene fornita una panoramica della gestione degli accessi con privilegi in Microsoft 365, incluse le risposte alle domande frequenti.
+ms.openlocfilehash: eb5fe5320c061d40f0882f93b66afa3cad4fa0fa
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626502"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036039"
 ---
 # <a name="privileged-access-management"></a>Gestione accessi con privilegi
 

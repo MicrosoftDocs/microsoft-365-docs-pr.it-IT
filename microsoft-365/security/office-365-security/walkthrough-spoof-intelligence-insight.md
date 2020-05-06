@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Vedere come funziona lo spoofing Intelligence Insight in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come funziona il nuovo spoofing Intelligence Insight, compreso il modo in cui determinare rapidamente quali mittenti stanno inviando legalmente messaggi di posta elettronica non autenticati.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630930"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033645"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procedura dettagliata: analisi di intelligence su spoofing di ATP in Microsoft 365
 
@@ -34,15 +35,15 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina del **dashboard di sicurezza** , <https://protection.office.com/searchandinvestigation/dashboard>utilizzare.
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per accedere direttamente alla pagina del **dashboard di sicurezza** , <https://protection.office.com/searchandinvestigation/dashboard>utilizzare.
 
   È possibile visualizzare l'Insight di intelligence di spoofing da più di un dashboard nel centro sicurezza & Compliance. Indipendentemente dal dashboard che si sta esaminando, l'Insight fornisce gli stessi dettagli e consente di eseguire rapidamente le stesse attività.
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per utilizzare lo spoofing Intelligence Insight, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione**, **amministratore sicurezza**o **lettore di sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per utilizzare lo spoofing Intelligence Insight, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione**, **amministratore sicurezza**o **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
 - È possibile abilitare e disabilitare l'intelligence spoof nei criteri di anti-phishing ATP. Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
-- In Microsoft 365 organizzazioni con cassette postali di Exchange Online e in standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online, è possibile utilizzare l'intelligence spoof per monitorare e gestire i mittenti che si stanno inviando messaggi non autenticati. Per ulteriori informazioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- In Microsoft 365 organizzazioni con cassette postali di Exchange Online e in standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online, è possibile utilizzare l'intelligence spoof per monitorare e gestire i mittenti che si stanno inviando messaggi non autenticati. Per altre informazioni, vedere [Configurare spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Aprire lo spoofing Intelligence Insight nel centro sicurezza & Compliance
 

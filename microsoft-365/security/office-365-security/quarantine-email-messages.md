@@ -17,13 +17,15 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: La quarantena in Microsoft 365 contiene messaggi potenzialmente pericolosi o indesiderati. Gli amministratori e gli utenti finali possono accedere alla quarantena.
-ms.openlocfilehash: 2e2a83bc2ff2d57cf3310e2cb17a656683dbed47
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo viene illustrata la quarantena in Microsoft 365. La quarantena contiene messaggi potenzialmente pericolosi o indesiderati.
+ms.openlocfilehash: 396be17e07a347ab4d28a3e0b67dd137bda999db
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634437"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033867"
 ---
 # <a name="quarantine-email-messages"></a>Messaggi di posta elettronica in quarantena
 

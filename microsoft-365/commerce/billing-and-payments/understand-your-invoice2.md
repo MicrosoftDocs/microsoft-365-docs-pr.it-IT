@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla fattura di Microsoft 365 per le aziende e su come modificare il numero dell'ordine di acquisto.
-ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634969"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045813"
 ---
 # <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Informazioni sulla fattura per Microsoft 365 for business
 
@@ -104,7 +104,7 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Se si è in visualizzazione **tabella** , selezionare **schede** per cambiare le visualizzazioni.
 

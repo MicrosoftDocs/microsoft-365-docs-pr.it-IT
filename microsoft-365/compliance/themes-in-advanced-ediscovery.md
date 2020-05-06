@@ -1,5 +1,5 @@
 ---
-title: Temi
+title: Temi-eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5de5a67c320a64d627baf204fe4b2ad051c9f452
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilizzare i temi in Advanced eDiscovery per organizzare i set di revisione individuando il tema dominante in ciascun documento.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: eb008e091cd8c8330d1cdd5b388e252af70922da
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069543"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034520"
 ---
 # <a name="themes"></a>Temi
 

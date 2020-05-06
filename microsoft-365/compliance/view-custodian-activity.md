@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: bf4274106ce1724785c3ac38204f753cd7788a63
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Utilizzare lo strumento di gestione dei depositari di Advanced eDiscovery per accedere e cercare facilmente l'attività dei depositari all'interno del caso.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 84da57c8f2115c18543d4f38fd84f2c4eccb46d5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626342"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034298"
 ---
 # <a name="view-custodian-audit-activity"></a>Visualizzazione dell'attività di controllo del custode
 
@@ -29,7 +30,7 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Per eseguire la ricerca nel registro di controllo, è necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'Interfaccia di amministrazione di Exchange. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo avanzato di eDiscovery con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere Gestire i gruppi di ruoli in Exchange Online.
+È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'Interfaccia di amministrazione di Exchange. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo avanzato di eDiscovery con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere Gestire i gruppi di ruoli in Exchange Online.
 
 > [!IMPORTANT]
 > Se si assegna a un utente il ruolo di controllo solo visualizzazione o log di controllo nella pagina autorizzazioni nel centro sicurezza & Compliance, non sarà possibile eseguire la ricerca nel registro di controllo. È necessario assegnare le autorizzazioni in Exchange Online. Ciò avviene perché il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online.

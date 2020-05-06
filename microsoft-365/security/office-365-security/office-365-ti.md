@@ -1,5 +1,5 @@
 ---
-title: Analisi delle minacce e funzionalità di risposta in Office 365 Advanced Threat Protection piano 2
+title: Analisi delle minacce & capacità di risposta-Office 365 ATP piano 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: Scoprite in che modo le funzionalità di Threat Intelligence in Office 365 Advanced Threat Protection consentono di ricercare le minacce all'interno dell'organizzazione, di rispondere a malware, phishing e altri attacchi che Microsoft 365 ha rilevato per conto dell'utente e di cercare indicatori di minaccia.
-ms.openlocfilehash: 9d89e84cc50b82b8cc5f2fe4e0e5ad6f4f85b091
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni sulle funzionalità di ricerca e risposta alle minacce in Office 365 Advanced Threat Protection Plan.
+ms.openlocfilehash: 61b08dc2b77c874e255547b2bcaef596ee017bf4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634521"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033939"
 ---
 # <a name="threat-investigation-and-response"></a>Analisi e risposta alle minacce
 

@@ -1,5 +1,5 @@
 ---
-title: Invii di amministratore, invii, problemi di posta indesiderata, false negative, inviare phishing, inviare messaggi di posta elettronica per l'analisi, messaggi di posta elettronica sospetti in Office 365, analizzare una posta elettronica, avere Microsoft Scan per phishing, avere Microsoft Scan per posta indesiderata, inviare messaggi di posta elettronica, inviare messaggi di posta elettronica, segnalare messaggi di posta elettronica ingannevoli a Microsoft , segnala malware nella posta elettronica a Microsoft, messaggi di posta indesiderata in posta in arrivo, virus nella posta elettronica
+title: Invii dell'amministratore in Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,13 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: Informazioni su come inviare messaggi di posta elettronica sospetti, sospette mail di phishing, la posta indesiderata e altre potenzialmente dannose, URL e file dalla propria azienda a Microsoft per l'analisi.
-ms.openlocfilehash: 73c33ba1218a710c33f8b2675bc65c0a7486efda
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921529"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034201"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
