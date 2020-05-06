@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Usare lo strumento Ricerca contenuto nel Centro sicurezza e conformità per cercare ed esportare i dati delle chat di Microsoft Teams (denominate chat 1xN) degli utenti locali in una distribuzione ibrida di Exchange.
-ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626452"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034573"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali
 
@@ -47,7 +47,7 @@ Se un utente abilitato per Microsoft Teams ha una cassetta postale locale e la s
   
 L'immagine seguente mostra il flusso di lavoro che consente di cercare, visualizzare in anteprima ed esportare i dati delle chat di Teams per gli utenti locali.
   
-![Spazio di archiviazione basato sul cloud per gli utenti locali in Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Spazio di archiviazione basato sul cloud per gli utenti locali in Microsoft Teams](../media/EHAMShard1.png)
   
 Oltre a questa nuova funzionalità, si può continuare a usare Ricerca contenuto per cercare, visualizzare in anteprima ed esportare il contenuto di Teams nel sito di SharePoint basato sul cloud e nella cassetta postale di Exchange associata a ogni team di Microsoft Teams e dati delle chat 1xN di Teams in una cassetta postale di Exchange Online per gli utenti basati sul cloud.
 

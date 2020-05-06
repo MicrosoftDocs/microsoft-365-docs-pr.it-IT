@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo Microsoft 365 Enterprise ha soddisfatto le sue esigenze di business.
-ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625291"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011198"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastruttura IT ed esigenze di business di Contoso
 
@@ -110,7 +110,7 @@ Gestione:
 
 - Ridurre la spesa IT per la gestione del software dei computer e dei dispositivi client
 
-  Automatizzare l'installazione degli aggiornamenti del sistema operativo Windows e Microsoft Office ProPlus nell'organizzazione.
+  Automatizzare l'installazione degli aggiornamenti del sistema operativo Windows e Microsoft 365 Apps for enterprise nell'organizzazione.
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Tabella delle esigenze di business di Contoso rispetto alle funzionalità di Microsoft 365 Enterprise
 

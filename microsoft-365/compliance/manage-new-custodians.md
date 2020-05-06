@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Gestire i depositari in un caso di eDiscovery avanzato.
-ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come visualizzare i dettagli, modificare e modificare in blocco l'elenco dei depositari in un caso di eDiscovery avanzato.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635896"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034178"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestire i depositari in un caso avanzato di eDiscovery
 
@@ -110,7 +111,7 @@ Per attivare il processo di reindicizzazione per risolvere gli elementi parzialm
 
 La reindicizzazione dei dati del custode è un processo a esecuzione prolungata. il processo corrispondente creato è denominato **reindicizzazione dei dati del custode**. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **depositari** monitorando lo stato nella colonna **stato processo di indicizzazione** .
 
-Per altre informazioni, vedere:
+Per ulteriori informazioni, vedere:
 
 - [Gestire gli errori di elaborazione](processing-data-for-case.md)
 
@@ -126,9 +127,9 @@ Per rilasciare un custode:
 
 1. Accedere a **eDiscovery > Advanced eDiscovery** e aprire il caso.
 
-2.  Passare alla scheda **depositari** .
+2.    Passare alla scheda **depositari** .
 
-3.  Fare clic sulla **scheda depositari**e quindi selezionare il custode che viene rilasciato dal caso.
+3.    Fare clic sulla **scheda depositari**e quindi selezionare il custode che viene rilasciato dal caso.
 
 4. Nella pagina riquadro a comparsa fare clic su **rilascia custode**.
 

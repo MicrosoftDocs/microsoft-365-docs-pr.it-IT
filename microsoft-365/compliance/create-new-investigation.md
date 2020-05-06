@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 007a7517cb0ea3c810d667cbfa88c0da1755b0d8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su come creare, configurare e salvare una nuova indagine in indagini sui dati (Preview) nel centro conformità di Microsoft 365.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 62166f1fb820c33e1e8981b31c5fc9a48e54390a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077469"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035778"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Creare una nuova indagine in indagini sui dati (anteprima)
 
 1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
-2. Accedere con l'account aziendale o dell'Istituto di istruzione.
+2. Accedere usando l'account di lavoro o della scuola.
     
 3. Nel centro conformità fare clic su **indagini sui dati**.
  

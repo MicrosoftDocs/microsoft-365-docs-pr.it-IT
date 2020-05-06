@@ -13,13 +13,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Descrive l'ordine di applicazione di Office 365 Protections e come il valore di priorità nei criteri di protezione determina il criterio applicato.
-ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni sull'ordine di applicazione di Office 365 Protections e sul modo in cui il valore di priorità nei criteri di protezione determina il criterio applicato.
+ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633967"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036717"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
@@ -34,9 +36,9 @@ Esistono due fattori principali che determinano il criterio applicato a un messa
   |||||
   |---|---|---|---|
   |**Priorità**|**Protezione della posta elettronica**|**Categoria**|**Dove gestire**|
-  |1 |Malware|CAT: MALW|[Configurazione dei criteri anti-malware in Office 365](configure-anti-malware-policies.md)|
-  |2 |Phishing|CAT: PHSH|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
-  |3 |Alta probabilità di posta indesiderata|CAT: HSPM|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
+  |1|Malware|CAT: MALW|[Configurazione dei criteri anti-malware in Office 365](configure-anti-malware-policies.md)|
+  |2|Phishing|CAT: PHSH|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
+  |3|Alta probabilità di posta indesiderata|CAT: HSPM|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|CAT: SPOOFING|[Configurare l'intelligence di spoofing in Office 365](learn-about-spoof-intelligence.md)|
   |5 |Posta indesiderata|CAT: SPM|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
   |6 |Invio in blocco|CAT: IN BLOCCO|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
@@ -55,8 +57,8 @@ Si consideri, ad esempio, i seguenti criteri di anti-phishing ATP **che si appli
   |||||
   |---|---|---|---|
   |**Criteri di anti-phishing ATP**|**Priorità**|**Rappresentazione utente**|**Anti-spoofing**|
-  |Criteri A|1 |Attivato|Off|
-  |Criterio B|2 |Disattivato|Attivato|
+  |Criteri A|1|Attivato|Off|
+  |Criterio B|2|Disattivato|Attivato|
   |
 
 1. Il messaggio viene contrassegnato e trattato come spoofing, in quanto lo spoofing ha una priorità più alta (4) rispetto alla rappresentazione utente (8).

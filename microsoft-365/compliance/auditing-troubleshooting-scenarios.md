@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: È possibile utilizzare lo strumento di ricerca del registro di controllo per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso, la possibilità di individuare gli utenti che configurano l'inoltro della posta elettronica per una cassetta postale o determinare il motivo per cui un utente esterno ha eseguito correttamente l'accesso all'organizzazione.
-ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi di supporto comuni per gli account di posta elettronica.
+ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636384"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034212"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Eseguire una ricerca nel registro di controllo per esaminare i problemi di supporto comuni
 
@@ -236,6 +238,6 @@ Di seguito sono riportati due esempi di scenari che comportano l'accesso di un *
 
     Oltre all'utente che ha **effettuato l'accesso** , è possibile che vengano restituiti altri record di controllo, ad esempio per indicare a un utente dell'organizzazione risorse condivise con l'utente esterno e se l'utente esterno ha eseguito l'accesso, la modifica o il download di un documento condiviso con essi.
 
-- Cercare le attività di condivisione di SharePoint che indichino che un file è stato condiviso con l'utente esterno identificato da un utente che ha **eseguito l'accesso al** record di controllo. Per ulteriori informazioni, vedere [use sharing audit in the audit log](use-sharing-auditing.md).
+- Cercare le attività di condivisione di SharePoint che indichino che un file è stato condiviso con l'utente esterno identificato da un utente che ha **eseguito l'accesso al** record di controllo. Per altre informazioni, vedere [Usare il controllo della condivisione nel log di controllo](use-sharing-auditing.md).
 
 - Esportare i risultati della ricerca del registro di controllo che contengono record rilevanti per l'analisi in modo che sia possibile utilizzare Excel per cercare altre attività correlate all'utente esterno. Per ulteriori informazioni, vedere [esportare, configurare e visualizzare i record del registro di controllo](export-view-audit-log-records.md).

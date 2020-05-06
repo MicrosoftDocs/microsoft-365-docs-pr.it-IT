@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come distribuire Office e app line-of-business.
-ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab40e59face9e8c4b37db15a9c815ea5579b4a2c
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636797"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011640"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Passaggio 3: distribuzione di Office e app line-of-business
 
@@ -63,9 +63,9 @@ Un altro metodo diffuso di distribuzione delle app è la creazione dell'immagine
 
 Se si desidera includere Microsoft 365 Apps for enterprise nell'immagine, tenere presente che utilizza un'attivazione basata sull'utente e non può essere pre-attivato dall'amministratore di sistema. Usare lo Strumento di distribuzione di Office per pre-installare Office nel dispositivo di cui si sta acquisendo l'immagine e ignorare l'accesso utente. Dopo la distribuzione dell'immagine, gli utenti finali possono accedere con le credenziali e attivare Microsoft 365 Apps for enterprise.
 
-[Creare una sequenza di attività per installare un sistema operativo](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Creare una sequenza di attività per installare un sistema operativo](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Distribuire Microsoft 365 Apps for enterprise come parte di un'immagine del sistema operativo](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Distribuire Microsoft 365 Apps come parte di un'immagine del sistema operativo](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office A portata di clic 
 
@@ -81,11 +81,11 @@ Se si utilizza Configuration Manager, è possibile usarlo anche per una distribu
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Guida alla distribuzione di Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Guida alla distribuzione di Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Rimuovere le versioni MSI di Office esistenti quando si effettua l'aggiornamento a Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version).
+[Rimuovere le versioni MSI di Office esistenti quando si effettua l'aggiornamento a Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version).
 
-[Gestire Microsoft 365 Apps for enterprise con Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Gestire Microsoft 365 Apps for enterprise con Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Assegnare le app di Office 365 ai dispositivi Windows 10 con Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 

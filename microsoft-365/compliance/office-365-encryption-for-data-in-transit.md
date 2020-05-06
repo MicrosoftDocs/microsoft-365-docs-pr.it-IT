@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Una breve spiegazione del modo in cui Microsoft crittografa i dati in transito nei suoi Data Center.
-ms.openlocfilehash: 645294522185a631012c1654fbad96ba0a21b33e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: In questo articolo, trovare una breve spiegazione del modo in cui Microsoft crittografa i dati dei clienti di Microsoft 365 in transito.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7ee869308549398a9df00ed42975b4aeedb666a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943305"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033604"
 ---
 # <a name="encryption-for-data-in-transit"></a>Crittografia per i dati in transito
 

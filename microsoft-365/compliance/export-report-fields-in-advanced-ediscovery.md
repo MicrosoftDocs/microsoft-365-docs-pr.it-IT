@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
-description: Vengono descritti tutti i campi inclusi nei report di esportazione per Advanced eDiscovery.
-ms.openlocfilehash: a7ee8e3971ab2fc921085ca63f7a8451a1597be2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: In questo articolo vengono descritti tutti i campi inclusi nei report di esportazione per Advanced eDiscovery.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a971c19563741520a85d6120cb69d13d9b764b8d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637808"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035900"
 ---
 # <a name="export-report-fields-in-advanced-ediscovery-classic"></a>Esportare i campi di report in Advanced eDiscovery (Classic)
 

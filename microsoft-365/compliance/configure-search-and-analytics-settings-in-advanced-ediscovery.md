@@ -1,5 +1,5 @@
 ---
-title: Configurare le impostazioni di ricerca e analisi
+title: Configurare le impostazioni di ricerca e analisi-eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: Configurare le impostazioni avanzate di eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e l'OCR.
-ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
-ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
+ms.openlocfilehash: eb934146b065454b54d797e47f7a643b95be546d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42588809"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033676"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analisi
 
@@ -83,7 +84,7 @@ Vi sono situazioni in cui un determinato testo diminuirà la qualità dell'anali
 
 ## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico caratteri (OCR)
 
-Quando questa impostazione è attivata, l'OCR verrà eseguito sui file di immagine aggiunti ai set di revisione in modo che il testo dell'immagine possa essere esaminato, cercato, taggato e analizzato. È possibile visualizzare il testo estratto nel Visualizzatore di testo del file di immagine selezionato nel set di revisione. Per altre informazioni, vedere:
+Quando questa impostazione è attivata, l'OCR verrà eseguito sui file di immagine aggiunti ai set di revisione in modo che il testo dell'immagine possa essere esaminato, cercato, taggato e analizzato. È possibile visualizzare il testo estratto nel Visualizzatore di testo del file di immagine selezionato nel set di revisione. Per ulteriori informazioni, vedere:
 
 - [Aggiungere i risultati della ricerca a un insieme da rivedere](add-data-to-review-set.md#optical-character-recognition)
 
