@@ -17,15 +17,15 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: ''
-description: Informazioni su come modificare o creare nuovi tipi di informazioni riservate per il GDPR.
-ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come modificare o creare nuovi tipi di informazioni sensibili di Office 365 per la conformità al Regolamento generale sulla protezione dei dati (GDPR).
+ms.openlocfilehash: ffe9792eabc8607506f2ebabd75ae24b70214449
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637778"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035738"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizzare o creare un nuovo tipo di informazione riservata
 

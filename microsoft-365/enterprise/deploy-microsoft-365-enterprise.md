@@ -13,14 +13,14 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom: ''
-description: Comprendere le risorse a disposizione per la distribuzione nell'organizzazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: seo-marvel-apr2020
+description: Informazioni sulle diverse risorse disponibili per distribuire Microsoft 365 per le aziende nell'organizzazione.
+ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002356"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031427"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuire Microsoft 365 per le aziende
 
@@ -117,7 +117,7 @@ La definizione di una cultura digitale rappresenta la maggiore priorità per ogn
 
 Nel contempo, le funzionalità di sicurezza e l'integrazione dei prodotti sono utili per semplificare le esigenze di gestione e ridurre al minimo il costo totale di proprietà nel ciclo di vita IT. 
 
-Informazioni su come Core Services Engineering and Operations (precedentemente Microsoft IT) ha creato [ un ambiente di lavoro moderno con Microsoft 365 ](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
+Informazioni su come Core Services Engineering and Operations (precedentemente Microsoft IT) ha creato [ un ambiente di lavoro moderno con Microsoft 365 ](https://www.microsoft.com/it-IT/itshowcase/microsoft-365).
 
 > [!Note]
 > Questa pagina web è disponibile solo in inglese.

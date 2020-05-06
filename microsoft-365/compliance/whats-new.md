@@ -1,5 +1,5 @@
 ---
-title: Novità nel centro conformità di Microsoft 365
+title: Novità del Centro conformità
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -17,12 +17,13 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Aggiungiamo continuamente nuove funzionalità al centro conformità di Microsoft 365, risolvendo i problemi che vengono apportati e modificando in base ai commenti e suggerimenti. Scoprire cosa è stato fino a questo mese.
-ms.openlocfilehash: 2f172c8639215285a793f16f4913917be6a58614
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626262"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034268"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novità nel centro conformità di Microsoft 365
 
@@ -91,7 +92,7 @@ Ci piacerebbe sapere cosa ne pensi. Quando si utilizza la soluzione, è possibil
 
 ### <a name="just-launched"></a>Appena avviato
 
-**Conformità alla comunicazione**
+**Conformità delle comunicazioni**
 
 La graduazione dalla fase di anteprima alla disponibilità completa, la conformità alla comunicazione è un componente chiave del nuovo set di soluzioni di rischio Insider. Questa soluzione robusta consente di ridurre al minimo i rischi di comunicazione utilizzando flussi di lavoro per il rilevamento, l'analisi e l'adozione di azioni correttive per i messaggi che non soddisfano gli standard dell'organizzazione.
 
@@ -161,7 +162,7 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 |**Caratteristica**|**Centro sicurezza e conformità di Office 365**|**Centro conformità Microsoft 365**|**Altre informazioni**|
 |:-----|:-----|:-----|:-----|
 |Advanced eDiscovery|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > Advanced <br/> https://compliance.microsoft.com/advancedediscovery | [Panoramica della soluzione avanzata di eDiscovery in Microsoft 365](overview-ediscovery-20.md) |
-|Criteri di avviso|Avvisi > criteri di avviso <br/> https://protection.office.com/alertpolicies |In questo momento, i criteri di avviso sono gestiti solo nel centro conformità & sicurezza di Office 365. |[Criteri di avviso nel centro sicurezza e conformità](alert-policies.md) |
+|Criteri di avviso|Avvisi > criteri di avviso <br/> https://protection.office.com/alertpolicies |In questo momento, i criteri di avviso sono gestiti solo nel centro conformità & sicurezza di Office 365. |[Criteri di avviso nel Centro sicurezza e conformità](alert-policies.md) |
 |Avvisi|Avvisi > visualizzare gli avvisi <br/> https://protection.office.com/viewalerts |Avvisi <br/> https://compliance.microsoft.com/compliancealerts |[Visualizzazione degli avvisi](alert-policies.md#viewing-alerts)|
 |Archivio|Archivio > di governance delle informazioni <br/> https://protection.office.com/archiving |Scheda Archivio informazioni > di governance <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Abilitare le cassette postali di archiviazione](enable-archive-mailboxes.md)|
 |Ricerca dei log di controllo|Ricerca > log di controllo <br/> https://protection.office.com/unifiedauditlog |Audit <br/> https://compliance.microsoft.com/auditlogsearch | [Eseguire una ricerca nel log di controllo nel centro sicurezza & Compliance](search-the-audit-log-in-security-and-compliance.md)|
@@ -172,11 +173,11 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 |eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Core <br/> https://compliance.microsoft.com/classicediscovery |[Gestire casi di eDiscovery](ediscovery-cases.md) |
 |Eventi|Eventi > di gestione dei record <br/> https://protection.office.com/events |Scheda eventi > di gestione dei record <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Panoramica della conservazione basata su eventi](event-driven-retention.md)|
 |Piano di archiviazione|Gestione dei record > piano file <br/> https://protection.office.com/fileplan |Scheda Gestione record > piano file <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Panoramica della gestione del piano file](file-plan-manager.md)|
-|Importare i file PST|Information Governance > importazione di file PST <br/> https://protection.office.com/importV2 |Scheda Importazione > di governance delle informazioni <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Panoramica sull'importazione dei file PST dell'organizzazione](importing-pst-files-to-office-365.md)|
+|Importare i file PST|Information Governance > importazione di file PST <br/> https://protection.office.com/importV2 |Scheda Importazione > di governance delle informazioni <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Panoramica dell'importazione di file PST dell'organizzazione](importing-pst-files-to-office-365.md)|
 |Esplora attività etichette|Gestione delle informazioni > label Activity Explorer <br/> https://protection.office.com/labelexplorer |Classificazione dei dati > scheda Esplora attività <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Visualizzare le attività sul contenuto etichettato (anteprima)](data-classification-activity-explorer.md)|
 |Etichette di conservazione e criteri di etichetta |Schede di classificazione > etichette di conservazione > etichette e criteri etichetta <br/> https://protection.office.com/retentionlabels |Schede per la governance delle informazioni > etichette e criteri etichetta <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Panoramica delle etichette di conservazione](labels.md)|
 |Criteri di conservazione|Gestione delle informazioni > conservazione <br/> https://protection.office.com/retention |Scheda conservazione > di gestione delle informazioni <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Panoramica dei criteri di conservazione](retention-policies.md)|
-|Tipi di informazioni riservate|Classificazione > tipi di informazioni riservate <br/> https://protection.office.com/sensitivetypes |Classificazione dei dati > scheda tipi di informazioni riservate <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Elementi cercati dai tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)|
+|Tipi di informazioni riservate|Classificazione > tipi di informazioni riservate <br/> https://protection.office.com/sensitivetypes |Classificazione dei dati > scheda tipi di informazioni riservate <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Tipi di informazioni riservate disponibili da cercare](what-the-sensitive-information-types-look-for.md)|
 |Etichette di riservatezza e criteri di etichetta|Classificazione > etichette di riservatezza > etichette e schede criteri etichetta <br/> https://protection.office.com/sensitivity |Schede per la protezione delle informazioni > etichette e criteri etichette <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Informazioni sulle etichette di riservatezza](sensitivity-labels.md) |
 |Garanzia del servizio|Garanzia del servizio <br/> https://protection.office.com/serviceassurance/dashboard |A questo punto, è possibile accedere alle risorse di Service Assurance solo nel centro sicurezza & conformità di Office 365. |[Garanzia del servizio nel centro sicurezza & conformità](service-assurance.md)|
 |Supervisione|Supervisione <br/> https://protection.office.com/supervisoryreviewv2 |Conformità delle comunicazioni <br/> https://compliance.microsoft.com/supervisoryreview |[Conformità della comunicazione in Microsoft 365 (anteprima)](communication-compliance.md) |

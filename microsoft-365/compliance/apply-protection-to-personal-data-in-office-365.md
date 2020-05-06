@@ -18,13 +18,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Informazioni su come usare i criteri di prevenzione della perdita dei dati (DLP) per proteggere i dati personali in Microsoft 365.
-ms.openlocfilehash: 54bfdd27f5c18d6c145b1e9f13c5e92c1b322048
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come usare i criteri di prevenzione della perdita dei dati (DLP) nel Centro conformità per proteggere i dati personali in Office 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f5c82a1f841cca1eea9a79d8f9dbcc1f81a3ad74
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634274"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035178"
 ---
 # <a name="apply-protection-to-personal-data"></a>Applicare protezione ai dati personali
 
@@ -252,9 +253,9 @@ L'illustrazione traccia i livelli di autorizzazione da Controllo completo a Solo
 
 Ulteriori informazioni:
 
--   [Informazioni sui i livelli di autorizzazione in SharePoint](https://support.office.com/en-US/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [Informazioni sui i livelli di autorizzazione in SharePoint](https://support.office.com/it-IT/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   [Informazioni sui gruppi di SharePoint](https://support.office.com/en-US/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [Informazioni sui gruppi di SharePoint](https://support.office.com/it-IT/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>Criteri di condivisione esterna per le raccolte di SharePoint Online e OneDrive for Business
 
@@ -306,7 +307,7 @@ Ulteriori informazioni:
 
 -   [Gestire la condivisione esterna per l'ambiente di SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   [Condividere siti o documenti con utenti esterni alla propria organizzazione](https://support.office.com/en-US/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [Condividere siti o documenti con utenti esterni alla propria organizzazione](https://support.office.com/it-IT/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>Criteri di accesso al dispositivo a livello di sito
 

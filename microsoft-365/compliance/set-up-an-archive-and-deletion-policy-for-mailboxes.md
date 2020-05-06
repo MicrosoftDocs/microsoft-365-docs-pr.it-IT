@@ -19,13 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Creare un criterio di archiviazione ed eliminazione che consente di spostare automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
-ms.openlocfilehash: b8d156ec9340e644e8f0bf213f04135e756421eb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: Creare un criterio di archiviazione ed eliminazione in Microsoft 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0d2dd6d95018742247655f085553ad6583f8843d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943579"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034318"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione
 
@@ -47,7 +48,7 @@ La procedura descritta in questo articolo consentirà di impostare un criterio d
     
 È possibile seguire alcuni o tutti i passaggi descritti in questo articolo per configurare un criterio di eliminazione e archiviazione per le cassette postali nella propria organizzazione. È consigliabile testare questo processo su poche cassette postali prima di implementarlo in tutte le cassette postali dell'organizzazione.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per eseguire la procedura descritta in questo argomento, è necessario essere un amministratore globale dell'organizzazione. 
     

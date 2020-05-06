@@ -14,20 +14,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: pagina di destinazione per la protezione delle informazioni
-ms.openlocfilehash: f5153373d73ec542f2a21561ce32c37368ff02e4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: In questa pagina di destinazione sono disponibili collegamenti e informazioni sulla protezione delle informazioni in Microsoft 365 e Office 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: bf230c8ca679b36046048b0b349326778a489369
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601673"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031480"
 ---
 # <a name="protect-information"></a>Proteggere le informazioni
 
 Microsoft 365 e Office 365 includono funzionalità che possono essere applicate a tipi specifici di dati per proteggere le informazioni.
 
 
-|**Funzionalità**|**Ulteriori informazioni**|
+|**Funzionalità**|**Altre informazioni**|
 |:-----|:-----|
 |[Etichette di riservatezza](sensitivity-labels.md) <br/> |Con le etichette di riservatezza è possibile classificare e proteggere i contenuti sensibili. Le opzioni di protezione includono etichette, filigrane e crittografia. Le etichette di riservatezza utilizzano Azure Information Protection. Se si utilizzano le etichette di Azure Information Protection, è consigliabile evitare di creare nuove etichette in altri centri di amministrazione finché non si è completata la migrazione. Vedere [Azure Information Protection Migration](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). <br/> Le [etichette di conservazione](retention-policies.md) sono diverse dalle etichette di riservatezza. Le etichette di conservazione consentono di conservare o eliminare il contenuto in base ai criteri definiti. Queste organizzazioni di assistenza sono conformi alle normative industriali e ai criteri interni.|
 |[Prevenzione della perdita di dati](data-loss-prevention-policies.md) (DLP)  <br/> |Con i criteri DLP, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservate in Office 365. I criteri di prevenzione della perdita di dati possono utilizzare etichette di riservatezza e tipi di informazioni riservate per identificare informazioni riservate. <br/> |

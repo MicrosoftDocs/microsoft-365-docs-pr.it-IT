@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 099b19df89026562201131d1e7c099785b1cb03e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Informazioni su come esportare o scaricare contenuto da un set di revisione per presentazioni o recensioni esterne in un caso di eDiscovery avanzato.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 2aeb8b2cdfa850c3878b23205ce965794ea3be15
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558187"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035954"
 ---
 # <a name="export-case-data-in-advanced-ediscovery"></a>Esportare i dati del caso in Advanced eDiscovery
 
@@ -29,7 +30,7 @@ Esistono tre modi per esportare i dati da un set di Revisione:
 
 **Download:** Scaricare (utilizzando un browser) un piccolo insieme di file nativi. Questo è il modo più rapido per esportare un set di dati di piccole dimensioni. Questo metodo conserva i nomi di file nativi.
 
-**Esporta:** Personalizzare i dati esportati. Questo include l'esportazione di metadati di file, file nativi, file di testo e documenti redatti che sono stati salvati in un file PDF. Dopo aver caricato i dati esportati in un percorso di archiviazione di Azure, è possibile scaricarlo in un computer locale. Per altre informazioni, vedere: 
+**Esporta:** Personalizzare i dati esportati. Questo include l'esportazione di metadati di file, file nativi, file di testo e documenti redatti che sono stati salvati in un file PDF. Dopo aver caricato i dati esportati in un percorso di archiviazione di Azure, è possibile scaricarlo in un computer locale. Per ulteriori informazioni, vedere: 
 
    - [Esportare i documenti da un insieme da rivedere](export-documents-from-review-set.md)
 

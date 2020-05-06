@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Informazioni sull'iscrizione a Microsoft 365 self-service e sui programmi self-service disponibili, ad esempio Microsoft Power Apps, Microsoft Flow e Dynamics 365 per i servizi finanziari.
 ms.custom: okr_SMB
-ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627801"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045273"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso dell'iscrizione self-service nell'organizzazione
 
@@ -42,7 +42,7 @@ L'esempio seguente descrive come funziona l'iscrizione self-service per un istit
 
 3. Convalidare il proprio indirizzo di posta elettronica e quindi iniziare a utilizzare Microsoft 365, Power BI o altri servizi subito.
 
-4. Come amministratore dell'azienda, è possibile visualizzare gli utenti che hanno effettuato l'iscrizione a un abbonamento visualizzando la pagina **prodotti & Services** nell'interfaccia di amministrazione. In questo modo è possibile vedere quando ci sono licenze nuove o non riconosciute per i servizi nel tenant. Per controllare se gli utenti possono iscriversi per le sottoscrizioni in modalità self-service, utilizzare il cmdlet [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) di PowerShell con il parametro **AllowAdHocSubscriptions** . Per ulteriori informazioni, vedere [come si controllano le impostazioni self-service?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. Come amministratore dell'azienda, è possibile visualizzare gli utenti che hanno effettuato l'iscrizione a un abbonamento visualizzando la pagina dei **prodotti** nell'interfaccia di amministrazione. In questo modo è possibile vedere quando ci sono licenze nuove o non riconosciute per i servizi nel tenant. Per controllare se gli utenti possono iscriversi per le sottoscrizioni in modalità self-service, utilizzare il cmdlet [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) di PowerShell con il parametro **AllowAdHocSubscriptions** . Per ulteriori informazioni, vedere [come si controllano le impostazioni self-service?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
 ## <a name="available-self-service-programs"></a>Programmi self-service disponibili
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 6991cfaa0cc174d3cee7cc441ab12195719b7056
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Informazioni su come aggiungere o rimuovere i membri che possono accedere a un caso durante la gestione di un caso di eDiscovery avanzato.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 0f54953c77f3350746f3853ba128b2d5c08d4321
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594039"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034660"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Aggiungere o rimuovere membri da un caso
 

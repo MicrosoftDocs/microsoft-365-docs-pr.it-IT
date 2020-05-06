@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di prevenire la posta indesiderata in Exchange Online e Microsoft 365. Ottenere troppi messaggi di posta indesiderata in Microsoft 365? È possibile personalizzare i filtri posta indesiderata e le impostazioni di protezione da posta indesiderata
-ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di prevenire la posta indesiderata in Exchange Online e Microsoft 365.
+ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708572"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034059"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Protezione dalla posta indesiderata in Microsoft 365
 
@@ -71,7 +73,7 @@ Di seguito sono riportate alcune procedure consigliate che si applicano a uno sc
 
 - **Utilizzo dell'autenticazione della posta elettronica**: se si è proprietari di un dominio di posta elettronica, è possibile utilizzare DNS per garantire che i messaggi provenienti da mittenti del dominio siano legittimi. Per evitare la posta indesiderata e la falsificazione dello spoofing in EOP, utilizzare tutti i metodi di autenticazione della posta elettronica seguenti:
 
-  - **SPF**: Sender Policy Framework verifica l'indirizzo IP di origine del messaggio in base al proprietario del dominio di invio. Per una breve introduzione a SPF e per configurarla rapidamente, vedere [set up SPF to help prevenire spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Per una migliore comprensione del modo in cui Microsoft 365 utilizza SPF o per la risoluzione dei problemi o di distribuzioni non standard, ad esempio le distribuzioni ibride, iniziare con [la modalità di utilizzo di microsoft 365 Sender Policy Framework (SPF) per impedire lo spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
+  - **SPF**: Sender Policy Framework verifica l'indirizzo IP di origine del messaggio in base al proprietario del dominio di invio. Per una breve introduzione a SPF e per configurarla rapidamente, vedere [set up SPF to help prevenire spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Per informazioni più dettagliate su come Microsoft 365 utilizza SPF oppure per risolvere i problemi o per eseguire distribuzioni non standard (ad esempio, le distribuzioni ibride), consultare innanzitutto [Come Microsoft 365 utilizza Sender Policy Framework (SPF) per prevenire lo spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
   - **DKIM**: DomainKeys identificata la posta elettronica aggiunge una firma digitale all'intestazione del messaggio dei messaggi inviati dal dominio. Per ulteriori informazioni, vedere [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Microsoft 365](use-dkim-to-validate-outbound-email.md).
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 806e27f85df0c51ffe019f5fd3c702c165afdd89
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+description: Informazioni su come gestire i set di revisione in modo da poter analizzare, interrogare, visualizzare, contrassegnare ed esportare i dati in un caso avanzato di eDiscovery.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: c489fa77c8e2d40d4f50275848465d5e8334c7a1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800057"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034168"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gestire i set di revisione in Advanced eDiscovery
 

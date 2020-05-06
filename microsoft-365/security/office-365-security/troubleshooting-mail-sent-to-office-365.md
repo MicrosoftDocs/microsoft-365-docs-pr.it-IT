@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Microsoft 365 e le procedure consigliate per la posta in blocco ai clienti
-ms.openlocfilehash: 89fd6d11cca0d7689203948922b27e46ae2c602a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi relativi all'invio di posta elettronica alle cassette postali in Microsoft 365 & procedure consigliate per la posta in blocco ai clienti di Microsoft 365.
+ms.openlocfilehash: 849707ee8b703f13ac12ecb414a8ed9ea6421704
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631146"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036741"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Risoluzione dei problemi della posta elettronica inviati a Office 365
 

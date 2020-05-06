@@ -16,13 +16,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Determinare se l'organizzazione implementerà etichette nell'ambito del piano RGPD.
-ms.openlocfilehash: db61c5c26ed8484e99aa8f06310bdd3385cf2dce
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Determinare se l'organizzazione implementerà etichette nell'ambito del piano per la conformità al GDPR.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 17484e56206ba8f32db3c779623f2f8d7ed57496
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637136"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035168"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Progettare uno schema di classificazione per i dati personali
 

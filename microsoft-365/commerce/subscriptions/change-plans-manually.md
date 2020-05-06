@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modificare manualmente le sottoscrizioni acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707632"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046193"
 ---
 # <a name="change-plans-manually"></a>Modificare i piani manualmente
 
@@ -58,14 +58,14 @@ Includere una licenza per ogni utente da spostare.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Passaggio 3: controllare il nuovo abbonamento e le licenze
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. **Verificare che entrambe le sottoscrizioni siano elencate e attive** La sottoscrizione da cui si sta spostando gli utenti e l'abbonamento a cui si sta spostando gli utenti devono essere elencati insieme. Se il nuovo abbonamento non compare ancora al primo controllo, controllare di nuovo più tardi. Verificare che entrambe le sottoscrizioni siano attive. [Il nuovo abbonamento non è elencato o non è attivo](#the-new-subscription-isnt-listed-or-isnt-active).
 
 3. **Verificare di disporre di licenze sufficienti per ogni utente** Ogni utente ha bisogno di una licenza che corrisponda alla propria sottoscrizione. Pertanto, se si desidera spostare dieci utenti in Microsoft 365 Business Premium, è necessario assicurarsi che siano disponibili dieci licenze.
 
 4. **Servono altre licenze per il nuovo abbonamento?**
-   Passare alla pagina **prodotti & Servizi** e [acquistare altre licenze](../licenses/buy-licenses.md).
+   Passare alla pagina dei **prodotti** e [acquistare altre licenze](../licenses/buy-licenses.md).
 
 > [Cosa accade alle vecchie licenze](#what-about-the-old-licenses)
 

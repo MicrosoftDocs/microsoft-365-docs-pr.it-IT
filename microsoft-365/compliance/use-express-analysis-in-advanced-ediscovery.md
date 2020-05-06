@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: Informazioni su come eseguire la modalità di analisi Express di Advanced eDiscovery
-ms.openlocfilehash: 32e1087d33b9e9a6c0e4935bd3488a6b464d06a2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come eseguire la modalità di analisi Express di Advanced eDiscovery e quindi esportare i risultati.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ccc81ccf4446af3d6e5584924883a1c8049ed962
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626412"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034308"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Utilizzare l'analisi Express in Advanced eDiscovery (Classic) 
 

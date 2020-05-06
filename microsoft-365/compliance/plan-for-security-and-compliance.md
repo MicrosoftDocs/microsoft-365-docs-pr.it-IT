@@ -14,14 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
-description: Pagina di destinazione per pianificare la sicurezza e la conformità
+description: La pagina di destinazione fornisce collegamenti e informazioni sulla pianificazione per la sicurezza e la conformità in Office 365.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 93c342a6b94dfb2333963c682f01e6a37aa7fb72
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b0f3bb6499de2ddd6fb613834b98e46d453d739a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626650"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034896"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Pianificare la conformità &amp; alla sicurezza
 

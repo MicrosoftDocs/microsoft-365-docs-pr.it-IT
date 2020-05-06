@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 11115db9e9a29f9abe83b3c26322f7586806d4dc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come utilizzare lo strumento di gestione del custode incorporato in Advanced eDiscovery per coordinare i flussi di lavoro e identificare le origini dati rilevanti in un caso.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632311"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034690"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Aggiungere i depositari a un caso avanzato di eDiscovery
 

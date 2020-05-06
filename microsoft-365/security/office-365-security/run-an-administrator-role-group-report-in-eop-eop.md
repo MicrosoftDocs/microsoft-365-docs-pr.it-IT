@@ -1,5 +1,5 @@
 ---
-title: 'Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection '
+title: Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-description: Gli amministratori possono ottenere informazioni su come eseguire un rapporto del gruppo di ruoli di amministratore in Exchange Online Protection (EOP). Questo rapporto si registra quando un amministratore aggiunge o rimuove membri dai gruppi di ruoli di amministratore, Microsoft Exchange Online Protection (EOP) registra ogni occorrenza.
-ms.openlocfilehash: d9e7db8accae259b3eb332ce17c52c6749c2bec2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: In questo articolo verrà illustrato come eseguire un rapporto del gruppo di ruoli di amministratore in Exchange Online Protection (EOP).
+ms.openlocfilehash: d3c4db8079a71ba054f323617d3ade65083a3a04
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598543"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034457"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection
 
