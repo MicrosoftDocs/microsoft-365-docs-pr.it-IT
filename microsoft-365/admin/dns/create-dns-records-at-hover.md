@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi al passaggio del mouse per Microsoft.
-ms.openlocfilehash: 7d5222ba68858f9ad50c95a0123c2cd2943ea2c0
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 4779b8f6fadcd4b134d3954d2c6c133da40c19e6
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939440"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048988"
 ---
 # <a name="create-dns-records-at-hover-for-microsoft"></a>Creare record DNS al passaggio del mouse per Microsoft
 
@@ -127,7 +127,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video](https://support.off
     
     |**Nome host**|**Tipo di record**|**Priority**|**Hostname**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Digitare o copiare e incollare i valori DNS](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   

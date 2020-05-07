@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come configurare e iniziare a utilizzare Microsoft Compliance score, che semplifica e automatizza le valutazioni dei rischi.
-ms.openlocfilehash: 4ccd89647540aeda8ba6253f6e5eefab1dc81791
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7a0030ed417e21484717b6edf12406d2f5e760e5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632391"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140861"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configurazione del Punteggio di conformità Microsoft (anteprima)
 
@@ -40,16 +40,14 @@ Il Punteggio di conformità utilizza un modello di autorizzazione di controllo d
 
 ### <a name="where-to-set-permissions"></a>Dove impostare le autorizzazioni
 
-L'amministratore globale dell'organizzazione può impostare le autorizzazioni utente nel centro conformità Microsoft 365 o in Azure Active Directory (Azure AD). Dopo aver impostato i ruoli in una di queste posizioni, gli utenti possono accedere al Punteggio di conformità e a Compliance Manager.
-
-Si noti che i ruoli di gestione della conformità esistenti non **vengono** trasferiti al Punteggio di conformità. Se si ha un ruolo in Compliance Manager e si è nuovi al Punteggio di conformità, il ruolo di Compliance Manager non concederà l'accesso al Punteggio di conformità. L'amministratore globale dovrà impostare le autorizzazioni e un ruolo per l'utente nel centro conformità Microsoft 365 o Azure AD in modo che sia possibile accedere al Punteggio di conformità.
+L'amministratore globale dell'organizzazione può impostare le autorizzazioni utente in [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) o in [Compliance Manager](compliance-manager-overview.md#permissions). Dopo aver impostato i ruoli in una di queste posizioni, gli utenti possono accedere al Punteggio di conformità e a Compliance Manager.
 
 ### <a name="role-types"></a>Tipi di ruolo
 
-Nella tabella seguente viene illustrato il modo in cui ogni ruolo di centro conformità di Microsoft 365 viene mappato ai ruoli di gestione conformità esistenti e le funzioni consentite da ogni ruolo.
+Nella tabella seguente viene illustrato il modo in cui ogni [ruolo di Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) è associato ai ruoli di gestione della conformità esistenti e le funzioni consentite da ogni ruolo. Gli utenti avranno bisogno almeno del ruolo di Reader globale di Azure AD per accedere al Punteggio di conformità.
 
 
-| L'utente può: | Ruolo centro conformità di Microsoft 365 | Ruolo di Compliance Manager | 
+| L'utente può: | Ruolo di Azure AD | Ruolo di Compliance Manager | 
 | :------------- | :-------------: | :------------: |
 | **Leggere ma non modificare i dati**| Lettore globale di Azure AD  | Lettore globale di Azure AD | 
 | **Leggere ma non modificare i dati**| Ruolo con autorizzazioni di lettura per la sicurezza | Reader di Compliance Manager  | 
@@ -60,13 +58,6 @@ Nella tabella seguente viene illustrato il modo in cui ogni ruolo di centro conf
 
 > [!NOTE]
 > Quando si passa da Punteggio di conformità a Compliance Manager per completare un'attività (ad esempio, per gestire le valutazioni), il browser aprirà una nuova scheda e verrà visualizzata una finestra di dialogo. Nella sezione superiore con l'intestazione, "già un cliente dei servizi cloud Microsoft? Accedi al tuo account, **"seleziona Accedi** per accedere a Compliance Manager; non sarà necessario immettere di nuovo le credenziali.
-
-### <a name="how-to-set-permissions-and-roles-in-the-microsoft-365-compliance-center"></a>Come impostare le autorizzazioni e i ruoli nel centro conformità di Microsoft 365
-
-Per impostare le autorizzazioni nel centro conformità di Microsoft 365:
-
-1. Accedere al [centro conformità di Microsoft 365](https://compliance.microsoft.com) e accedere con l'account di amministratore globale.
-2. Selezionare **autorizzazioni** nel riquadro di spostamento a sinistra. Da qui, è possibile visualizzare i ruoli e assegnare le autorizzazioni.
 
 ## <a name="configure-automatic-secure-score-updates"></a>Configurare gli aggiornamenti automatici del Punteggio sicuro
 

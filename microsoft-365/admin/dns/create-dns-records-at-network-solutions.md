@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Network Solutions per Microsoft.
-ms.openlocfilehash: f990e4311ef88022d7fec2e1b7c90b3d8d035448
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: fb5fd2d2bcb263a62306617d728f08b07bb6da34
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939144"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048928"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Creare record DNS in Network Solutions per Microsoft
 
@@ -160,7 +160,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
     
     |**Priorità**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |3600  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Digitare o incollare i valori nelle caselle per il nuovo record](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   

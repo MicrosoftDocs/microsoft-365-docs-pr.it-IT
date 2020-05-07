@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046205"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141170"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 *Eleggibilità:* Se si hanno meno di 25 licenze assegnate agli utenti, è possibile annullare la versione di valutazione di Microsoft 365 per le aziende o la sottoscrizione a pagamento online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se si dispone di più di 25 licenze assegnate agli utenti, [contattare il supporto per annullare l'abbonamento](../../admin/contact-support-for-business-products.md).
 

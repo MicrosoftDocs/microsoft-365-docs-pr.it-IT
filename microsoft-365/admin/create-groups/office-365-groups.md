@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui gruppi di Microsoft 365.
-ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: aca6dfee26e05f162b8cc3efb69005d773a9a9dc
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630044"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049168"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Panoramica dei gruppi di Microsoft 365 per gli amministratori
 
@@ -56,7 +56,7 @@ In qualità di amministratore, è possibile:
 - [Specificare gli utenti autorizzati a creare gruppi](manage-creation-of-groups.md)
 - [Creare un criterio di denominazione per i gruppi nell'organizzazione](groups-naming-policy.md)
 - [Scegliere il dominio da utilizzare per la creazione di un gruppo](choose-domain-to-create-groups.md)
-- [Gestire l'accesso Guest ai gruppi](manage-guest-access-in-groups.md)
+- [Gestire l'accesso guest ai gruppi](manage-guest-access-in-groups.md)
 - [Recuperare un gruppo eliminato](restore-deleted-group.md) (entro 30 giorni dall'eliminazione)
 
 Se si preferisce un modo più automatico per gestire il ciclo di vita dei gruppi di Microsoft 365, è possibile utilizzare i criteri di scadenza per scadere i gruppi a un intervallo di tempo specifico. I proprietari del gruppo riceveranno un messaggio di posta elettronica di 30, 15 e 1 giorni prima della scadenza del gruppo che consente di rinnovare facilmente il gruppo, se necessario. Vedere: [criteri di scadenza del gruppo Microsoft 365](office-365-groups-expiration-policy.md).
@@ -79,7 +79,7 @@ I limiti seguenti si applicano ai gruppi di Microsoft 365:
 |Archivio file|1 terabyte + 10 GB per utente sottoscritto + qualsiasi altro spazio di archiviazione acquistato. È possibile acquistare una quantità illimitata di spazio di archiviazione aggiuntivo.|
 |Dimensione della cassetta postale del gruppo|50 GB|
 
-Il numero massimo predefinito di gruppi di Microsoft 365 che un'organizzazione può avere è 500.000, ma può essere aumentato di una richiesta. Per ulteriori informazioni sui limiti relativi ai gruppi di Microsoft 365, vedere [gruppi di microsoft 365-Guida](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)per gli amministratori.
+Il numero massimo predefinito di gruppi di Microsoft 365 che un'organizzazione può avere è 500.000, ma può essere aumentato di una richiesta. Per ulteriori informazioni sui limiti relativi ai gruppi di Microsoft 365, vedere [gruppi di microsoft 365-Guida](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)per gli amministratori.
 
 La gestione dei gruppi Microsoft 365 è più efficace quando si dispone di informazioni sull'utilizzo dei gruppi. Nell'interfaccia di amministrazione di Microsoft 365 è disponibile uno strumento per la creazione di report che consente di visualizzare elementi quali l'utilizzo dell'archiviazione, il numero di gruppi attivi e la modalità di utilizzo dei gruppi da parte degli utenti. Vedere: [Microsoft 365 segnalazioni nell'](../activity-reports/office-365-groups.md) interfaccia di amministrazione per ulteriori informazioni.
 

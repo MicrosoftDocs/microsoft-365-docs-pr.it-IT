@@ -24,12 +24,12 @@ description: Per ulteriori informazioni, vedere quali opzioni di pagamento sono 
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635017"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045837"
 ---
 # <a name="pay-for-your-subscription"></a>Pagare l'abbonamento
 
@@ -51,7 +51,7 @@ Se si paga con carta di credito e questa viene rifiutata, si riceverà un messag
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Trovare l'abbonamento con il saldo insoluto. Nella sezione **Fatturazione**, accanto a **L'abbonamento ha un pagamento scaduto** selezionare **Liquidazione del saldo**.
 

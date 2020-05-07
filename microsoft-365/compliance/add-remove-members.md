@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 82bea95f1bc32dd6fd90c7ecda4a046788a9f154
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Informazioni su come aggiungere o rimuovere i membri che possono accedere a un'indagine durante la gestione di un'analisi dei dati.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: dd57b0bd30e032f16160953e2849d908ecdfc3c5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594627"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034916"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>Aggiungere o rimuovere membri da un'analisi dei dati
 

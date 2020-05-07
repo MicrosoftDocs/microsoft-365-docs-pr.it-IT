@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Namecheap per Microsoft.
-ms.openlocfilehash: 2b55e529ab4a66dbada95914f213807884b4b6c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 57ba92f3ad31a54abae6a6a212a84d3b7a665da1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629336"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048952"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>Creare record DNS in Namecheap per Microsoft
 
@@ -41,7 +41,7 @@ Dopo aver aggiunto questi record in Namecheap, il dominio sarà configurato per 
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 <a name="BKMK_verify"> </a>
 
-Prima di utilizzare il dominio con Microsoft, è necessario assicurarsi di possederlo. La possibilità di eseguire l'accesso al proprio account presso il registrar e di creare il record DNS dimostra a Microsoft che si è proprietari del dominio.
+Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft che si è il proprietario del dominio.
   
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
@@ -81,7 +81,7 @@ Effettuare le operazioni seguenti.
     
     |**Tipo**|**Host**|**Valore**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Note:** questo è un esempio. Utilizzare il valore **di indirizzo di destinazione o puntamento** specifico qui, dalla tabella.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+    |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
        
     ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -91,7 +91,7 @@ Effettuare le operazioni seguenti.
   
 9. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e richiedere il record.
+Una volta che il record è stato aggiunto al sito del registrar, è possibile tornare a Microsoft e richiedere il record.
   
 Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
@@ -113,7 +113,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 > In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga a Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Aggiungere un record MX in modo che la posta elettronica del dominio venga recapitata in Microsoft
 <a name="BKMK_add_MX"> </a>
 
 Effettuare le operazioni seguenti.
@@ -150,7 +150,7 @@ Effettuare le operazioni seguenti.
     
     |**Tipo**|**Host**|**Valore**|**Priorità**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |Record MX  <br/> |@  <br/> |\<*Domain-Key*\>. mail.Protection.Outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.  [Come trovarla](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |30 min  <br/> |
+    |Record MX  <br/> |@  <br/> |\<*Domain-Key*\>. mail.Protection.Outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.  [Come trovarla](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |30 min  <br/> |
        
     ![Namecheap-BP-Configure-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
@@ -209,8 +209,8 @@ Effettuare le operazioni seguenti.
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
        
     ![Namecheap-BP-configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
@@ -303,8 +303,8 @@ Effettuare le operazioni seguenti.
     
     |**Servizio**|**Protocollo**|**Priorità**|**Peso**|**Porta**|**Target**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |30 min  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |30 min  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |30 min  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |30 min  <br/> |
        
     ![Namecheap-BP-Configure-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   

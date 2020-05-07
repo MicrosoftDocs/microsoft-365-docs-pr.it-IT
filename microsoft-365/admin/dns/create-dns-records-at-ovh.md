@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in OVH per Microsoft.
-ms.openlocfilehash: a1f29b6f6464e781768997be0969914771ec5703
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939132"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048916"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Creare record DNS in OVH per Microsoft
 
@@ -142,7 +142,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
     |**Tipo di record**|**Sottodominio**|**TTL**|**Priorità**|**Destinazione**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |\<chiave-dominio\>.mail.protection.outlook.com.  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<chiave-dominio\>.mail.protection.outlook.com.  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![Record MX OVH per la posta elettronica](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   

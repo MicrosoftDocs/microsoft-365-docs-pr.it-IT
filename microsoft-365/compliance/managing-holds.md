@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come inserire le esenzioni sui depositari e sulle relative origini dati per conservare il contenuto pertinente per il caso di eDiscovery avanzato.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632961"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034125"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gestione delle esenzioni in Advanced eDiscovery
 

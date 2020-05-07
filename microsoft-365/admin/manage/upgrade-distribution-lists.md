@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Informazioni su come eseguire l'aggiornamento di una o più liste di distribuzione ai gruppi di Microsoft 365 in Outlook e sull'utilizzo di PowerShell per l'aggiornamento simultaneo di più liste di distribuzione.
-ms.openlocfilehash: 14eeedcc898c13c31362731699f575bc06f96878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3f364de1e863cef542fb8342e61f537bcd113535
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627993"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048174"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Aggiornare le liste di distribuzione ai gruppi di Microsoft 365 in Outlook
 
-È possibile aggiornare le liste di distribuzione ai gruppi di Microsoft 365 con Outlook. Questo è un ottimo modo per fornire alle liste di distribuzione dell'organizzazione tutte le caratteristiche e le funzionalità dei gruppi di Microsoft 365. [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+È possibile aggiornare le liste di distribuzione ai gruppi di Microsoft 365 con Outlook. Questo è un ottimo modo per fornire alle liste di distribuzione dell'organizzazione tutte le caratteristiche e le funzionalità dei gruppi di Microsoft 365. [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 È possibile aggiornare le liste di distribuzione una per volta oppure diverse contemporaneamente.
 

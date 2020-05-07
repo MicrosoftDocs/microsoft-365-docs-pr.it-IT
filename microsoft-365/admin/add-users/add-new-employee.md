@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Aggiungere nuovi dipendenti a Microsoft 365 for business per le app di posta elettronica, Skype e Office.
-ms.openlocfilehash: 43685a786da7ec43c982f91b4fca554424cad624
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618897"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049498"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Aggiungere un nuovo dipendente a Microsoft 365
 
@@ -82,7 +82,7 @@ Di seguito è illustrato un riferimento rapido per iniziare a eseguire le operaz
 |Configurare Skype for business in modo che sia possibile connettersi a colleghi o partner commerciali nell'azienda o in tutto il mondo. È possibile avviare conversazioni con le chiamate di messaggistica istantanea, vocali o video.  <br/> |[Installare Skype for business nel computer in uso](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Per informazioni su come usare Skype for business, [Guarda un video.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>È possibile configurare Skype for business in modo che i dipendenti possano contattare persone esterne alla propria azienda che utilizzano l'app gratuita Skype? In caso contrario, informare il nuovo dipendente in modo che sappia cosa aspettarsi quando si utilizza Skype for business.  <br/> |
 |Installare le app nel dispositivo mobile se si desidera ottenere la posta elettronica o usare Skype for business sul telefono.  <br/> |Se si desidera configurare l'app per dispositivi mobili di Outlook, è possibile ottenere messaggi di posta elettronica tramite il telefono. Per istruzioni, vedere [iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234.aspx), [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872.aspx), [Windows Phone](https://support.microsoft.com/en-us/office/set-up-email-on-windows-phone-181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>Se si desidera utilizzare Skype for business sul dispositivo mobile, scaricare e installare l'app per dispositivi mobili. Per istruzioni, vedere [iOS](https://support.microsoft.com/en-us/office/install-skype-for-business-on-a-mobile-device-3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS), [Android](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android), [Windows Phone](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
 |Completare la formazione di OneDrive for business per informazioni su come archiviare e organizzare documenti, presentazioni e fogli di calcolo nel cloud.  <br/> |Mantenere i documenti correlati all'azienda nel cloud utilizzando OneDrive for business. È sempre possibile accedere al contenuto, anche se è stato eseguito l'accesso a Microsoft 365 in un computer diverso. [Guardare un video per informazioni su come utilizzare OneDrive for business](https://support.office.com/article/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde.aspx) <br/><br/> **Formazione:** [formazione di OneDrive for business](https://support.office.com/article/1f608184-b7e6-43ca-8753-2ff679203132.aspx) (selezionare OneDrive for business).  <br/> |
-|Completare la formazione di SharePoint Online per collaborare con i colleghi e condividere il contenuto.  <br/> |Il posto migliore per mantenere i documenti che i colleghi avranno accesso anche è in SharePoint Online.  <br/> <br/>**Formazione:** [video: collaborare con il contenuto del team tramite SharePoint Online](https://support.office.com/article/2dd9aeff-7749-4b78-9696-eb0f6267f1f5.aspx) <br/><br/> **Scopri:** In che modo l'organizzazione utilizza SharePoint Online e quali tipi di documenti vengono archiviati. Inoltre, quali documenti sono archiviati in OneDrive for business.  <br/> |
+|Completare la formazione di SharePoint Online per collaborare con i colleghi e condividere il contenuto.  <br/> |Il posto migliore per mantenere i documenti che i colleghi avranno accesso anche è in SharePoint Online.  <br/> <br/>**Formazione:** [video: collaborare con il contenuto del team tramite SharePoint Online](https://support.office.com/article/what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Scopri:** In che modo l'organizzazione utilizza SharePoint Online e quali tipi di documenti vengono archiviati. Inoltre, quali documenti sono archiviati in OneDrive for business.  <br/> |
 
    
 ## <a name="related-articles"></a>Articoli correlati

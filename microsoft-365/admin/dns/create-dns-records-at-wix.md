@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in WiX per Microsoft.
-ms.openlocfilehash: 2cbc4887f276e63f09b433225e09315c227c961c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6f88cc65ae19f747a9fc3740ea1578f30d18b5e2
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629240"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048856"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Creare record DNS in WiX per Microsoft
 
@@ -53,7 +53,7 @@ Dopo aver aggiunto questi record in WiX, il dominio sarà configurato per l'uso 
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 <a name="BKMK_txt"> </a>
 
-Prima di utilizzare il dominio con Microsoft, è necessario assicurarsi di possederlo. La possibilità di eseguire l'accesso al proprio account presso il registrar e di creare il record DNS dimostra a Microsoft che si è proprietari del dominio.
+Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft che si è il proprietario del dominio.
   
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
@@ -69,13 +69,13 @@ Prima di utilizzare il dominio con Microsoft, è necessario assicurarsi di posse
 ||||
 |:-----|:-----|:-----|
 |**Host Name** <br/> |**TXT Value** <br/> |**TTL** <br/> |
-|Popolamento automatico  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Utilizzare il valore **di indirizzo di destinazione o puntamento** specifico qui, dalla tabella.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
+|Popolamento automatico  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
    
 5. Selezionare il pulsante **Salva DNS** nella parte superiore dell'editor DNS. 
     
 6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e richiedere il record.
+Una volta che il record è stato aggiunto al sito del registrar, è possibile tornare a Microsoft e richiedere il record.
   
 Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
@@ -94,7 +94,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga a Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Aggiungere un record MX in modo che la posta elettronica del dominio venga recapitata in Microsoft
 <a name="BKMK_mx"> </a>
 
 1. Per iniziare, passare alla propria pagina dei domini su Wix usando [questo collegamento](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Verrà richiesto di eseguire l'accesso.
@@ -109,7 +109,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 |**Host Name**|**Points to**|**Priorità**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|Popolamento automatico <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.   [Come trovarla](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/What-is-MX-priority-2784cc4d-95be-443d-b5f7-bb5dd867ba83). | 1 Hour|
+|Popolamento automatico <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.   [Come trovarla](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). | 1 Hour|
    
 6. Se sono elencati altri record MX, eliminarli tutti. 
     
@@ -175,8 +175,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 |**Servizio**|**Protocol**|**Name**|**Peso**|**Porta**|**Destinazione**|**Priorità**|**TTL**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|sip  |tls  |Popolamento automatico |1   |443   |sipdir.online.lync.com |100 |1 Hour |
-|sipfed|tcp |Popolamento automatico|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
+|sip  |tls  |Popolamento automatico |1  |443   |sipdir.online.lync.com |100 |1 Hour |
+|sipfed|tcp |Popolamento automatico|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. Selezionare il pulsante **Salva DNS** nella parte superiore dell'editor DNS. 
     

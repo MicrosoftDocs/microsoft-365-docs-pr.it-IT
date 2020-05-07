@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Informazioni su come trasferire manualmente i dati tra due account di Microsoft 365 quando è stato modificato il piano o il nome della società oppure sono stati combinati più abbonamenti in uno.
-ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628376"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053741"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Trasferire manualmente i dati tra due account
 
@@ -55,7 +55,7 @@ Prepararsi a rimboccarsi le maniche e bloccare un pezzo di tempo nel calendario:
 
 Passare alle pagine seguenti in ogni account e configurare il nuovo account in base alle impostazioni dell'account precedente.
   
-Se si trasferiscono dati da Microsoft 365 a Microsoft 365 medie imprese o Microsoft 365 Enterprise, le pagine di amministrazione sono strutturate in modo diverso. Guardare un [video: Introduzione a Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)e accedere alle seguenti posizioni per esaminare le impostazioni di amministratore.
+Se si trasferiscono dati da Microsoft 365 a Microsoft 365 medie imprese o Microsoft 365 Enterprise, le pagine di amministrazione sono strutturate in modo diverso. Guardare un [video: Introduzione a Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/)e accedere alle seguenti posizioni per esaminare le impostazioni di amministratore.
   
 Per Microsoft 365 Enterprise e Microsoft 365 medie imprese:
   
@@ -90,9 +90,9 @@ Esistono vari modi per salvare o trasferire i dati del sito del team:
   
 - Si può salvare il vecchio sito come modello e importare il modello nel nuovo sito.
 
-- Per trasferire documenti, prima di tutto, ricreare manualmente la gerarchia nel nuovo sito. Fatto questo, sarà possibile aprire contemporaneamente entrambi i siti del team di SharePoint, aprire entrambe le raccolte documenti con Esplora risorse e copiare e incollare i documenti. Vedere [Video: Copiare o spostare file delle raccolte tramite Apri con Esplora risorse](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx).
+- Per trasferire documenti, prima di tutto, ricreare manualmente la gerarchia nel nuovo sito. Fatto questo, sarà possibile aprire contemporaneamente entrambi i siti del team di SharePoint, aprire entrambe le raccolte documenti con Esplora risorse e copiare e incollare i documenti. Vedere [Video: Copiare o spostare file delle raccolte tramite Apri con Esplora risorse](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790).
 
-- Per trasferire dati di elenco, salvare un [modello di elenco](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx) e usare il modello salvato per ricreare l'elenco nel nuovo sito.
+- Per trasferire dati di elenco, salvare un [modello di elenco](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393) e usare il modello salvato per ricreare l'elenco nel nuovo sito.
 
 - Per salvare una raccolta documenti o un elenco di contenuto da un ambiente di SharePoint Online (OneDrive for business o siti del team) in condivisioni di file o in un computer locale, vedere [informazioni sulla migrazione manuale del contenuto di SharePoint Online](https://support.microsoft.com/kb/2783484).
 

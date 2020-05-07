@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare gli utenti e i gruppi in un altro dominio.
-ms.openlocfilehash: b072a8f30d6b6a655441dec49ff9af9b4d0fdbe4
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: ef0209d6ccb7534745172585fe599f627e386cb4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43938637"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140406"
 ---
 # <a name="remove-a-domain"></a>Rimuovere un dominio
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
@@ -217,7 +224,7 @@ Se ci sono centinaia o migliaia di utenti, usare PowerShell per eseguire query p
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> Non si riesce a rimuovere il dominio [".onmicrosoft.com"](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) dall'account.
+> Non si riesce a rimuovere il dominio [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) dall'account.
   
 Il problema persiste? Potrebbe essere necessario rimuovere manualmente il dominio. [Contattare il supporto](../contact-support-for-business-products.md) per ottenere assistenza.
   

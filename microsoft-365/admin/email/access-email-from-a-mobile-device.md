@@ -16,18 +16,18 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come accedere alla posta elettronica dal dispositivo mobile.
-ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784d652d26222fc53b3e11f3427cf286cb32dd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629096"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048820"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Opzioni per l'accesso alla posta elettronica dal dispositivo mobile
 
 Nell'organizzazione sono state configurate le impostazioni che consentono di controllare le app mobili che è possibile utilizzare per accedere all'account di lavoro per posta elettronica, calendario e contatti.
   
-Le app Outlook per Android e Outlook per dispositivi mobili iOS sono progettate per la posta elettronica aziendale o scolastica e sono le uniche app che forniscono funzionalità come la [posta in arrivo](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx)evidenziata, che conserva importanti messaggi di posta elettronica front and Center e [Assistente di pianificazione](https://go.microsoft.com/fwlink/?linkid=873406), che consente di trovare i tempi di riunione che interagiscono con i colleghi e trova semplicemente le sale conferenze disponibili.
+Le app Outlook per Android e Outlook per dispositivi mobili iOS sono progettate per la posta elettronica aziendale o scolastica e sono le uniche app che forniscono funzionalità come la [posta in arrivo](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx)evidenziata, che conserva importanti messaggi di posta elettronica front and Center e [Assistente di pianificazione](https://www.microsoft.com/?ref=go), che consente di trovare i tempi di riunione che interagiscono con i colleghi e trova semplicemente le sale conferenze disponibili.
   
 ## <a name="end-user-experience"></a>Esperienza dell'utente finale
 

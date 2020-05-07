@@ -22,14 +22,21 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Informazioni su come conservare i file e i messaggi di posta elettronica di un dipendente quando la persona lascia l'organizzazione.
-ms.openlocfilehash: 9f665b68f50fd9b7f41ac0a6ef4b9e29ef289d7c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f7132b927c05b8339f20b268b48847291e9c710e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617225"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140634"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Accedere ai dati di un ex utente ed eseguirne il backup
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 
 Quando un dipendente lascia l'organizzazione, è probabile che si desideri accedere ai propri dati (documenti e messaggi di posta elettronica) e rivederla, eseguirne il backup o darla a un nuovo dipendente.

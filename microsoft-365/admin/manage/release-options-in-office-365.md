@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 11672e46acb3124c8fd840ab19ee683cfd6af94f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fc931893e95ff053cd251b6c1b12bfdbaadf49ae
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628113"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139650"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurare le opzioni di rilascio standard o di destinazione
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Con Microsoft 365, vengono visualizzati nuovi aggiornamenti e funzionalità del prodotto quando diventano disponibili invece di effettuare aggiornamenti costosi ogni pochi anni. È possibile gestire la modalità di ricezione degli aggiornamenti da parte dell'organizzazione. Ad esempio, è possibile iscriversi per una versione anticipata in modo che l'organizzazione riceva prima gli aggiornamenti. È possibile indicare che solo alcuni utenti ricevono gli aggiornamenti. In alternativa, è possibile rimanere nella pianificazione di rilascio predefinita e ricevere gli aggiornamenti in un secondo momento. In questo articolo vengono illustrate le diverse opzioni di rilascio e come è possibile utilizzarle per l'organizzazione.
   
@@ -110,6 +117,6 @@ La versione mirata consente agli amministratori, ai responsabili delle modifiche
 
 Per installare una build Targeted Release di Office, [eseguire questa procedura](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead). Questa build consente di accedere in anteprima alle nuove funzionalità di Office 2016 per desktop Windows.
   
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Scopri di più
 
 Informazioni su come [gestire i messaggi](https://docs.microsoft.com/office365/admin/manage/message-center) nel [centro messaggi di Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) per ottenere notifiche relative agli aggiornamenti e rilasci imminenti di Microsoft 365.

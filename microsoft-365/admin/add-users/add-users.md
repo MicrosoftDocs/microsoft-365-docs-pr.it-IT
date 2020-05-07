@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: Informazioni su come aggiungere utenti a Microsoft 365, uno alla volta o più utenti contemporaneamente da un file CSV.
-ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618861"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049472"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Aggiungere utenti singolarmente o in blocco
 
@@ -118,7 +118,7 @@ Gli utenti del team hanno a disposizione un account utente prima di poter accede
 Dopo aver aggiunto un utente, si otterrà una notifica tramite posta elettronica dal team dei Microsoft Online Services. Il messaggio di posta elettronica conterrà l'ID utente e la password della persona in modo che possano accedere a Microsoft 365. È necessario informare il nuovo utente sulle informazioni di accesso di Microsoft 365. Usare il consueto processo per la comunicazione di nuove password.
 
 > [!NOTE]
->Se si creano utenti eseguendo la migrazione di cassette postali, sarà necessario attivare gli account utente assegnando le licenze. Se non si assegna una licenza a un utente, la propria cassetta postale verrà disabilitata dopo un periodo di prova di 30 giorni. Vedere come [assegnare le licenze agli utenti](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) utilizzando l'interfaccia di amministrazione di Microsoft 365.
+>Se si creano utenti eseguendo la migrazione di cassette postali, sarà necessario attivare gli account utente assegnando le licenze. Se non si assegna una licenza a un utente, la propria cassetta postale verrà disabilitata dopo un periodo di prova di 30 giorni. Vedere come [assegnare le licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) utilizzando l'interfaccia di amministrazione di Microsoft 365.
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>Video: aggiungere e gestire gli utenti nell'interfaccia di amministrazione
 
