@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a83c744bc9f1335e0ce2993801475fdf16164766
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8e147e26072609a43d962b1d9fc7e71925510da4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627068"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064695"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Benchmark del Center for Internet Security (CIS)
 
@@ -46,7 +46,7 @@ I benchmark CIS sono riconosciuti a livello internazionale come standard di sicu
   
 Come tutti i benchmark CIS , i benchmark Microsoft sono stati creati tramite un processo di revisione del consenso basato sul contributo di esperti in materia provenienti da diversi settori che spaziano da sviluppo software, controllo e conformità, ricerca sulla sicurezza, operazioni, enti governativi e giuridici. Microsoft è stato parte integrante del lavoro del CIS. Ad esempio, Office 365 è stato testato in merito ai servizi elencati e il risultante Microsoft 365 Foundations Benchmark (Benchmark di Microsoft 365 Foundations) copre un'ampia gamma di consigli per l'impostazione di criteri di sicurezza appropriati che coprono account e autenticazione, gestione dei dati, autorizzazioni delle applicazioni, archiviazione e altre aree dei criteri di sicurezza.  
   
-Oltre ai benchmark per prodotti e servizi Microsoft, il CIS ha anche pubblicato [CIS Hardened Images for use on Azure virtual machines](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/) (Immagini con protezione avanzata del CIS per l'uso su macchine virtuali di Azure) configurate per soddisfare i benchmark CIS. Questi includono l'immagine con protezione avanzata del CIS per Microsoft Windows Server 2016 certificata per l'esecuzione su Azure. CIS afferma che "tutte le immagini con protezione avanzata del CIS disponibili su [Azure Marketplace ](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) sono certificate per l'esecuzione su Azure. Sono state precedentemente testate per l'idoneità e la compatibilità con il cloud pubblico di Azure, la piattaforma cloud Microsoft ospitata dai provider di servizi attraverso la rete del sistema operativo cloud e le distribuzioni in locale di Hyper-V di Windows Server del cloud privato interno gestite dai clienti".
+Oltre ai benchmark per prodotti e servizi Microsoft, il CIS ha anche pubblicato [CIS Hardened Images for use on Azure virtual machines](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/) (Immagini con protezione avanzata del CIS per l'uso su macchine virtuali di Azure) configurate per soddisfare i benchmark CIS. Questi includono l'immagine con protezione avanzata del CIS per Microsoft Windows Server 2016 certificata per l'esecuzione su Azure. Il CIS afferma che "tutte le immagini con protezione avanzata del CIS disponibili su [Azure Marketplace ](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) sono certificate per l'esecuzione su Azure. Sono state precedentemente testate per l'idoneità e la compatibilità con il cloud pubblico di Azure, la piattaforma cloud Microsoft ospitata dai provider di servizi attraverso la rete del sistema operativo cloud e le distribuzioni in locale di Hyper-V di Windows Server del cloud privato interno gestite dai clienti".
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
@@ -84,15 +84,11 @@ Il rilascio dei benchmark CIS rivisti cambia in base alla community di professio
 
 **Chi ha contribuito allo sviluppo dei benchmark CIS di Microsoft?**
 
-Il CIS afferma che i suoi "benchmark sono sviluppati attraverso il generoso impegno volontario di esperti in materia, fornitori di tecnologia, membri della community di CIS Benchmark pubblici e privati e il team preposto allo sviluppo del benchmark CIS". Ad esempio, è possibile trovare un elenco dei collaboratori su [CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/) (Microsoft Azure Foundations Benchmark v1.0.0 del CIS ora disponibile).
+Il CIS afferma che i rispettivi benchmark sono "sviluppati attraverso il generoso impegno volontario di esperti in materia, fornitori di tecnologia, membri della community di CIS Benchmark pubblici e privati e il team preposto allo sviluppo del benchmark CIS". Ad esempio, è possibile trovare un elenco dei collaboratori su [CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/) (Microsoft Azure Foundations Benchmark v1.0.0 del CIS ora disponibile).
 
 ## <a name="resources"></a>Risorse
 
 - [Procedure consigliate del CIS per un uso sicuro di Microsoft 365](https://www.microsoft.com/security/blog/2019/01/10/best-practices-for-securely-using-microsoft-365-the-cis-microsoft-365-foundations-benchmark-now-available/)
 - [Impostazioni relative ai criteri di sicurezza di Windows 10](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/security-policy-settings)
 - [Sicurezza di livello enterprise di Windows 10](https://docs.microsoft.com/windows/security/index)
-- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/9/B/7/9B75D846-BDB9-41CB-86FF-F0ADFD15800B/CIS_Benchmarks-Compliance.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

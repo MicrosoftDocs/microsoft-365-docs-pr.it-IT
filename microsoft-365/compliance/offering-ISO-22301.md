@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0c3898fd808a588578cba29f7f40b8d5be183e1c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602263"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065911"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Standard di gestione della continuità aziendale ISO 22301:2012
 
@@ -33,9 +33,7 @@ Pubblicato nel 2012 dal comitato tecnico, ISO 22301:2012 è il primo standard in
 
 Microsoft è stato il primo provider di servizi cloud iperscalabile a ricevere la certificazione ISO 22301 per la gestione della continuità aziendale. Un organismo di certificazione indipendente ha rilasciato questa certificazione a Microsoft Azure, Microsoft Azure per enti pubblici, Microsoft Office 365 (incluse le offerte commerciali, per enti pubblici e per l'istruzione), Microsoft Cloud App Security, Microsoft Intune e Microsoft Power BI dopo un controllo rigoroso di tutti gli aspetti dei processi di continuità aziendale. Il controllo ha riguardato i servizi in ambito elencati di seguito e le funzionalità di gestione di Azure, il portale di Azure e i sistemi usati per monitorare, gestire e aggiornare i servizi rientranti nell'ambito.
 
-Per informazioni sui vantaggi di ISO/IEC 22301 in Microsoft Cloud, [scaricare i Principi fondamentali di ISO/IEC 22301](https://aka.ms/iso22301-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -79,7 +77,3 @@ Sì. Se l'azienda richiede la certificazione ISO 22301 per le implementazioni di
 - [Descrizione del programma di gestione della continuità aziendale Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2092212)
 - [punteggio di conformità](compliance-score.md)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf ).

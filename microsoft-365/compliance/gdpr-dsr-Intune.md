@@ -1,6 +1,6 @@
 ---
 title: Richieste degli interessati per Intune nell'ambito del GDPR e del CCPA
-description: Guida su come usare i prodotti, i servizi e gli strumenti di amministrazione Microsoft per aiutare i clienti titolari del trattamento dei dati a individuare e gestire i dati personali per rispondere alle richieste degli interessati e nell'ambito del CCPA.
+description: Questa guida aiuterà i clienti titolari del trattamento a capire come trovare i dati personali e come agire su di essi per rispondere alle richieste dell'interessato e alle richieste CCPA dei clienti che usano Microsoft Intune.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -14,14 +14,16 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3d30b2187199b223086d53a144d711537fd7e59d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 6c39450169f835b3d558f14d248d425cb20f939f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557996"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035432"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Intune nell'ambito del GDPR e del CCPA
 
@@ -75,7 +77,7 @@ Le richieste DSR rispetto a un account Intune, **al di fuori di un determinato t
 Microsoft consente di accedere, eliminare ed esportare alcuni dati dei clienti tramite il portale di Azure e anche direttamente tramite le API (Application Programming Interface) o le interfacce utente (UI) pre-esistenti per i servizi specifici (noti anche come *esperienze nel prodotto*). Informazioni su tali esperienze nel prodotto sono disponibili nella documentazione di riferimento per i relativi servizi.
 
 >[!IMPORTANT]  
->I servizi che supportano le richieste DSR nel prodotto richiedono l'uso diretto dell'API (Application Programming Interface) o dell'interfaccia utente (UI) del servizio, descrivendo le operazioni CRUD (Create, Read, Update, Delete) applicabili. Pertanto, l'esecuzione di richieste DSR in un determinato servizio deve essere effettuata unitamente all'esecuzione di una richiesta DSR all'interno del portale di Azure per completare una richiesta per uno specifico soggetto dei dati. Per ulteriori dettagli, consultare la documentazione di riferimento per i relativi servizi.
+>I servizi che supportano le richieste dell'interessato all'interno dei prodotti richiedono l'uso diretto dell'API (Application Programming Interface) o dell'interfaccia utente del servizio, con la descrizione delle operazioni di creazione, lettura, aggiornamento ed eliminazione applicabili. Pertanto, l'esecuzione di richieste dell'interessato all'interno di un determinato servizio deve essere accompagnata dall'esecuzione di una richiesta dell'interessato nel portale di Azure per completare una richiesta completa per un determinato interessato. Per ulteriori dettagli, consultare la documentazione di riferimento per i relativi servizi.
 
 ### <a name="step-1-discover"></a>Passaggio 1: scoprire
 
@@ -89,7 +91,7 @@ Dopo aver trovato i dati, è quindi possibile eseguire un'azione specifica per s
 
 ### <a name="step-2-access"></a>Passaggio 2: accedere
 
-Dopo aver individuato i dati dei clienti che contengono dati personali potenzialmente reattivi a una richiesta DSR, l'utente e l'organizzazione devono decidere quali dati fornire all'interessato. È possibile fornire una copia del documento effettivo, una versione appositamente riadattata o uno screenshot delle parti considerate adatte alla condivisione. Per ognuna di queste risposte a una richiesta di accesso, sarà necessario recuperare una copia del documento o altro elemento contenente i dati sensibili.
+Dopo aver individuato i dati dei clienti che contengono dati personali potenzialmente reattivi a una richiesta DSR, l'utente e l'organizzazione devono decidere quali dati fornire all'interessato. Si può fornire una copia del documento effettivo, una versione opportunamente oscurata o uno screenshot delle parti che si ritiene appropriato condividere. Per ognuna di queste risposte a una richiesta di accesso, sarà necessario recuperare una copia del documento o altro elemento contenente i dati sensibili.
 
 Quando si invia una copia all'interessato, potrebbe essere necessario rimuovere o redigere informazioni personali su altri interessati ed eventuali informazioni riservate.
 

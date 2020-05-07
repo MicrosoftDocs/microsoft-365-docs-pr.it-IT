@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e903467a35427e4d1c6fae0b29f41d970d0fbc8
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043317"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065821"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -34,8 +34,10 @@ Prima di iniziare a utilizzare la gestione dei rischi Insider, è necessario con
 
 - Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione)
 - Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance
+- Sottoscrizione Microsoft 365 E3 + componente aggiuntivo Microsoft 365 E5 Insider Risk Management
 - Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione)
 - Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Insider Risk Management
 
 Gli utenti inclusi nei criteri di gestione dei rischi Insider devono essere assegnati a una delle licenze sopra riportate.
 

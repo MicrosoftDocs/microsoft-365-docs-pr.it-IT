@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5bbc8e8e39e28a020864d705489d704acd0c012b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3169a1e9e7cb8b269e74463adaee017b8f48e4ad
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602063"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065941"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Securities and Exchange Commission (SEC) Rule 17a-4 (f) Stati Uniti
 
@@ -42,7 +42,7 @@ Per valutare Azure e Office 365 compliance with SEC Rule 17a-4 (f), Microsoft ha
 - **Azure**: [SEC 17a-4 (f) valutazione della conformità: Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset ha convalidato che l' [archiviazione BLOB immutabile di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) con l'opzione di blocco dei criteri, quando viene utilizzata per mantenere i BLOB basati sul tempo in un formato non cancellabile e non riscrivibile (Worm), soddisfa i requisiti di archiviazione immutabili della regola sec. Ogni BLOB (record) è protetto dall'essere modificato, sovrascritto o eliminato fino a quando non è scaduto il periodo di conservazione obbligatorio e sono state rilasciate eventuali esenzioni legali associate. I provider di software e i partner che dispongono di carichi di lavoro sensibili possono ora basarsi sull'archiviazione BLOB immutabile di Azure come soluzione cloud di onestop-Shop per la conservazione dei record e l'archiviazione immutabile. Gli istituti finanziari possono ora creare le proprie applicazioni approfittando di queste funzionalità pur rimanendo conformi.
 - **Office 365**: [utilizzare Exchange Online per conformarsi a SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4), Cohasset ha convalidato [che Office 365 con conservazione Lock](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo da aiutarli a conformarsi ai requisiti sec per la conservazione dei record. I criteri di conservazione in Office 365 consentono di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Office 365 consente ai clienti di impostare criteri di conservazione dei messaggi globali o granulari per archiviare i dati per un periodo definito e oltre in un formato non riscrivibile e non cancellabile.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
@@ -57,7 +57,7 @@ Per valutare Azure e Office 365 compliance with SEC Rule 17a-4 (f), Microsoft ha
 
 [SEC 17a-4 (f) valutazione di conformità: Microsoft Security & Compliance Center with Exchange Online](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-## <a name="how-to-implement"></a>Come implementare
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 ### <a name="financial-services-regulation"></a>Regolamentazione dei servizi finanziari
 
@@ -81,7 +81,3 @@ Utilizzare le anteprime dei casi, le esercitazioni e altre risorse per creare so
 - [Criteri di conservazione di Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Blog sui servizi finanziari di Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/E/5/2/E52103E7-C1BB-4118-9725-4452FEA931D8/SEC17a-4(f)-Compliance.pdf).

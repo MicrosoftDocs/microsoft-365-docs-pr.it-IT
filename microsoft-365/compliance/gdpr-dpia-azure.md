@@ -1,6 +1,6 @@
 ---
-title: DPIA in Azure per il RGPD
-description: ''
+title: DPIA in Azure per il GDPR
+description: Informazioni utili per stabilire se è necessaria una valutazione d'impatto sulla protezione dei dati (DPIA) in Microsoft Azure.
 keywords: DPIA,Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -16,12 +16,13 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: b7736a3890f293ca6bcfa05fd2f1630748009d9f
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: ec7bcf7a3211531e1c0cd2abf514752c6099e8d1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547556"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035464"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-azure"></a>Valutazioni d'impatto sulla protezione dei dati: guida per i titolari del trattamento dei dati che utilizzano Microsoft Azure
 

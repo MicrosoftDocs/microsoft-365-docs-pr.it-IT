@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4376d2ca5ac27ec8e12f266bb7d3bb54289c1dbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637526"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065761"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>Code of Practice per la protezione dei dati personali nel cloud ISO/IEC 27018
 
@@ -40,9 +40,7 @@ Seguendo gli standard ISO/IEC 27001 e il Code of Practice integrato in ISO/IEC 2
 - **I clienti Microsoft sanno cosa accade alle informazioni personali.** ISO/IEC 27018 richiede criteri che consentano la restituzione, il trasferimento e l'eliminazione sicura delle informazioni personali entro un periodo di tempo ragionevole. Se Microsoft collabora con altre società che necessitano di accedere ai dati dei clienti, comunicherà preventivamente le identità di tali responsabili secondari del trattamento.
 - **Microsoft ottempera esclusivamente alle richieste di divulgazione dei dati dei clienti legalmente vincolanti.** Se Microsoft dovesse ottemperare a una richiesta di questo tipo, ad esempio in caso di indagine penale, ne informerà sempre il cliente a meno che ciò non sia proibito per legge.
 
-Per informazioni sui vantaggi di ISO/IEC 27018 in Microsoft Cloud, [scaricare i Principi fondamentali di ISO/IEC 27017](https://aka.ms/iso27017-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -132,8 +130,4 @@ Tuttavia, si ha la responsabilità di affidare l'incarico a un perito affinché 
 - [Criteri di accesso ai dati per servizi cloud aziendali e servizi tecnici Microsoft](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf).
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

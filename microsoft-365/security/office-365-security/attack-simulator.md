@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: In qualità di amministratore globale, è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale colpisca la propria azienda.
-ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come utilizzare Attack Simulator per eseguire attacchi di phishing e di password simulati nell'organizzazione Microsoft 365 E5 o ATP Plan 2.
+ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638573"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035859"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulatore di attacco in ATP
 
@@ -29,13 +31,13 @@ ms.locfileid: "43638573"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Per aprire il Centro sicurezza & conformità, accedere a <https://protection.office.com/>. Simulatore di attacco è disponibile in **Threat Management** \> **Attack Simulator**.
+- Per aprire il Centro sicurezza e conformità, passare a <https://protection.office.com/>. Simulatore di attacco è disponibile in **Threat Management** \> **Attack Simulator**.
 
   ![Threat Management-simulatore d'attacco](../../media/ThreatMgmt-AttackSimulator.png)
 
 - Per ulteriori informazioni sulla disponibilità di simulatori di attacco in diverse sottoscrizioni di Microsoft 365, vedere [Descrizione del servizio Advanced Threat Protection di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- È necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- È necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
 - L'account deve essere configurato per l'autenticazione a più fattori (AMF) per creare e gestire le campagne in Attack Simulator. Per istruzioni, vedere [configurare l'autenticazione](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)a più fattori.
 

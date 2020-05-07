@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 19f9e5dc72231093b279d39b8bf38f5cea0a9c18
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 3cc92be00eca4f1e90917cadea26df8f10adf267
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583543"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066613"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>Standard di gestione della sicurezza delle informazioni ISO/IEC 27001:2013
 
@@ -161,7 +161,3 @@ Sì. Se l'azienda richiede la certificazione ISO/IEC 27001 per le implementazion
 
 - [Panoramica della protezione dati di Azure DevOps Services](https://www.visualstudio.com/articles/team-services-security-whitepaper)
 - [13 controlli di sicurezza efficaci per la conformità a ISO 27001](https://aka.ms/13securitycontrolsforiso27001compliance)
-
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf).

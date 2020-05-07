@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f96b4eccec92f78b22eb28caecf3910a5d4ace2d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1a45b101363c3b881161384a241c1ea50e951552
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602443"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066389"
 ---
 # <a name="united-kingdom-financial-conduct-authority-fca"></a>Autorità di condotta finanziaria del Regno Unito (FCA)
 
@@ -27,13 +27,13 @@ ms.locfileid: "41602443"
 
 La [Financial conduzione Authority](https://www.fca.org.uk/) (FCA), un organismo pubblico indipendente che è responsabile del tesoro, regola 58.000 imprese finanziarie e mercati nel Regno Unito e funge da regolatore prudenziale per oltre 18.000 di tali organizzazioni. [Autorità di regolamentazione prudenziale](https://www.bankofengland.co.uk/pra/pages/default.aspx) (PRA), che funge anche da regolatore prudenziale per la Banca d'Inghilterra e regola 1.500 delle istituzioni di servizi finanziari più estese quali banche, società edilizie, unioni di credito, assicurazioni e imprese di investimento. (L'FCA preleva una regolamentazione prudenziale per le aziende che non rientrano nel mandato PRA).
 
-L'FCA ha ricevuto un feedback che le istituzioni finanziarie e i provider di servizi cloud non sono stati chiari su come applicare le regole per l'outsourcing nel cloud, una potenziale barriera all'utilizzo del cloud. Dato che il mandato FCA include la promozione di una concorrenza effettiva (per cui l'innovazione può essere un driver), l'FCA ha voluto supportare l'utilizzo dei servizi cloud, affermando che "non viene visualizzato alcun motivo fondamentale per cui i servizi cloud (compresi i servizi cloud pubblici) non possono essere implementato, con una considerazione appropriata, in un modo conforme alle nostre regole ". In questo modo, l'FCA ha chiarito i requisiti per l'outsourcing nel cloud, pubblicando una guida finale del 2016 novembre nelle [linee guida per l'outsourcing delle aziende verso il cloud e altri servizi IT di terze parti](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf) intesi ad aiutare le aziende finanziarie e i provider di servizi cloud a comprendere le aspettative di FCA quando le aziende esternalizzano al cloud (o pianificano di farlo). Anche se queste linee guida non sono vincolanti, l'AFD prevede che le aziende lo utilizzino, se necessario. (Si noti che la PRA ha diversi obiettivi statutari, quindi le aziende che regolano devono confermare il loro approccio con il PRA). Si tratta di un documento dettagliato che offre indicazioni specifiche per l'utilizzo, la valutazione e il monitoraggio continuo di terze parti per il recapito dei servizi IT. Suddivide le considerazioni in 13 aree di interesse, che vanno dalle considerazioni legali e normative e dalla gestione dei rischi alla pianificazione della continuità e ai piani per l'uscita dalle modalità di outsourcing
+L'FCA ha ricevuto un feedback che le istituzioni finanziarie e i provider di servizi cloud non sono stati chiari su come applicare le regole per l'outsourcing nel cloud, una potenziale barriera all'utilizzo del cloud. Dato che il mandato di FCA include la promozione di una concorrenza effettiva (per cui l'innovazione può essere un driver), l'FCA ha voluto supportare l'utilizzo dei servizi cloud, affermando che "non viene visualizzato alcun motivo fondamentale per cui i servizi cloud (compresi i servizi cloud pubblici) non possono essere implementati, con una considerazione appropriata, in un modo conforme alle nostre regole". In questo modo, l'FCA ha chiarito i requisiti per l'outsourcing nel cloud, pubblicando una guida finale del 2016 novembre nelle [linee guida per l'outsourcing delle aziende verso il cloud e altri servizi IT di terze parti](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf) intesi ad aiutare le aziende finanziarie e i provider di servizi cloud a comprendere le aspettative di FCA quando le aziende esternalizzano al cloud (o pianificano di farlo). Anche se queste linee guida non sono vincolanti, l'AFD prevede che le aziende lo utilizzino, se necessario. (Si noti che la PRA ha diversi obiettivi statutari, quindi le aziende che regolano devono confermare il loro approccio con il PRA). Si tratta di un documento dettagliato che offre indicazioni specifiche per l'utilizzo, la valutazione e il monitoraggio continuo di terze parti per il recapito dei servizi IT. Suddivide le considerazioni in 13 aree di interesse, che vanno dalle considerazioni legali e normative e dalla gestione dei rischi alla pianificazione della continuità e ai piani per l'uscita dalle modalità di outsourcing
 
 ## <a name="microsoft-and-fca-uk"></a>Microsoft e FCA (Regno Unito)
 
 Microsoft ha pubblicato una guida completa, che [consente la conformità: l'approccio Microsoft alla guida per il cloud finalizzata a FCA, in](https://go.microsoft.com/fwlink/p/?linkid=2101561)cui viene descritto come Azure può aiutare i clienti dei servizi finanziari autorizzati e regolati dall'autorità di condotta finanziaria britannica (FCA) e dall'autorità di regolamentazione prudenziale (PRA) quando si spostano le operazioni IT nel cloud.
 
-La Guida Microsoft descrive in dettaglio la conformità con numerosi standard internazionali riconosciuti, la trasparenza attorno a come vengono gestiti i dati dei clienti per darvi il controllo e le disposizioni contrattuali che si riferiscono a specifiche risorse finanziarie requisiti normativi.
+La Guida di Microsoft descrive in dettaglio la conformità con numerosi standard internazionali riconosciuti, la trasparenza attorno a come vengono gestiti i dati dei clienti per darvi il controllo e le disposizioni contrattuali che si riferiscono a specifiche esigenze di regolamentazione finanziaria.
 
 Sezioni della mappa di Microsoft Guide in modo approfondito per ogni area di interesse nelle linee guida di FCA. Ad esempio, un aspetto fondamentale dei requisiti di outsourcing normativo è che le aziende dei servizi finanziari devono identificare e gestire i rischi che l'outsourcing può introdurre nelle loro attività. Microsoft discute il suo approccio nell'eseguire una valutazione dei rischi, documentarla, identificare le procedure consigliate correnti e così via. Vi aiutiamo a valutare i rischi rilevanti e a rendere disponibili una vasta gamma di risorse per facilitare la vostra dovuta diligenza.
 
@@ -43,7 +43,7 @@ Informazioni su come Azure è in grado di abilitare la conformità FCA nelle ban
 
 [Scaricare Microsoft approach to FCA finald cloud Guidance](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -65,8 +65,4 @@ Sì. Tuttavia, sebbene le risposte di Microsoft a questo Framework siano conferm
 - [Microsoft Financial Services Compliance Program](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Conformità dei servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servizi finanziari e servizi cloud aziendali di Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

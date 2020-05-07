@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a0dfc1b03099d52255f2e474ba8d99c2ea3a2cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a305c66aaa3359417bd72b8525ed63787d655f8f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602153"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065681"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Standard Multi-Tier Cloud Security (MTCS) per Singapore
 
@@ -42,9 +42,7 @@ Dopo valutazioni rigorose condotte dall'organo di certificazione di MTCS, i serv
 
 Le certificazione rilasciate sono di livello 3 per i servizi Microsoft Azure (IaaS e PaaS), Microsoft Dynamics 365 Services (SaaS) e Microsoft Office 365 Services (SaaS).  Una certificazione di livello 3 indica che i servizi cloud Microsoft interni all'ambito possono ospitare dati ad alto impatto per le organizzazioni regolamentate con i requisiti di sicurezza più rigidi. È richiesta per determinate implementazioni di soluzioni cloud del governo di Singapore.
 
-Scopri tutti i vantaggi di MTCS su Microsoft Cloud: [scarica lo standard MTCS per Singapore Backgrounder](https://aka.ms/mtcs-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
@@ -104,8 +102,4 @@ Sì. Se hai l'esigenza di certificare i tuoi servizi basati su questi servizi cl
 - [Schema di certificazione MTCS (in inglese)](https://go.microsoft.com/fwlink/p/?linkid=2092918)
 - [Conformità di Azure nel contesto dei requisiti di sicurezza e privacy di Singapore](https://aka.ms/azurecompliancesingapore)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/3/1/A/31AA4618-A5AE-4013-832B-C7A23CEBC26E/MCTS_Compliance_Backgrounder.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

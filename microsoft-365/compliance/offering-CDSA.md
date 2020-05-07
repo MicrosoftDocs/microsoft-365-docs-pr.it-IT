@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 34e0b0197754a85576c86fc4d447af7a25c0dc62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b349c41f2f423f7c0fca1b66c20c571a3512fa54
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602653"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065861"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Standard CPS (Content Protection & Security) della CDSA (Content Delivery & Security Association)
 
@@ -76,7 +76,3 @@ Sì. Puoi cercare di ottenere la certificazione CPS di Azure nell'ambito della t
 - [Come i Servizi multimediali di Azure hanno acquisito la certificazione di sicurezza della CDSA](https://johndeutscher.com/2015/04/14/how-azure-media-services-earned-cdsa-security-certification/)
 - [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - Informazioni sulla conformità di CDSA e Azure
-
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf).

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c6f175a140b3744e4bf47dff7b542414c659c4fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 62be8fe021ebacfe07faaaadfc33811dd7c8a7ef
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071213"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065701"
 ---
 # <a name="trusight"></a>TruSight
 
@@ -68,8 +68,4 @@ Per acquistare il report *Comprehensive Assessment of Microsoft Cloud* (Valutazi
 - [Conformità dei servizi finanziari in Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Servizi finanziari e servizi cloud aziendali di Microsoft](https://aka.ms/FinServ-Compliance)
 - [Responsabilità condivise per il cloud computing](https://aka.ms/sharedresponsibility)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/D/A/D/dad1cf29-5529-4797-9eda-96e5e472e619/TruSight-Compliance.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
-description: Documento destinato agli amministratori della versione autonoma di Exchange Online Protection che contiene informazioni per evitare falsi negativi della posta indesiderata
-ms.openlocfilehash: 326c51f7f6730d510f411b5318b29e97b128c078
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come configurare i filtri di Office 365 per bloccare la posta indesiderata e impedire i messaggi falsi negativi.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 16bb5530384dba360483eba3a8e05fbfdf3fe895
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630648"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035581"
 ---
 # <a name="customize-the-anti-spam-filter-with-these-settings"></a>Personalizzare il filtro della posta indesiderata con queste impostazioni
 

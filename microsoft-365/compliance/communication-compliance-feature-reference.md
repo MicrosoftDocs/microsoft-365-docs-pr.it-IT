@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1a63e71df0d9ac6d43fce31ad2e974b787697a9a
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 797b32dfa0cd286cf7eb9b6e0aa128d332f5c19a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919673"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066205"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -32,7 +32,7 @@ ms.locfileid: "43919673"
 >[!Important]
 >L'utilizzo di PowerShell per la creazione e la gestione di criteri di conformità della comunicazione non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella [soluzione Microsoft 365 Communication Compliance](https://compliance.microsoft.com/supervisoryreview).
 
-È possibile creare criteri di conformità della comunicazione per le organizzazioni Microsoft 365 nel centro conformità di Microsoft 365. Se si dispone di un'organizzazione Microsoft 365, verranno [configurati i criteri di supervisione](configure-supervision-policies.md) nel centro sicurezza & conformità. I criteri di conformità della comunicazione definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specificano chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli **amministratore revisione di supervisione** possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche apportate a un criterio a un file con estensione CSV che include anche lo stato degli avvisi in sospeso, degli elementi escalation e degli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
+È possibile creare criteri di conformità della comunicazione per le organizzazioni Microsoft 365 nel centro conformità di Microsoft 365. I criteri di conformità della comunicazione definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specificano chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli **amministratore revisione di supervisione** possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche apportate a un criterio a un file con estensione CSV che include anche lo stato degli avvisi in sospeso, degli elementi escalation e degli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
 
 >[!NOTE]
 >I criteri di supervisione creati nel centro sicurezza & Compliance per le sottoscrizioni di Office 365 non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da un abbonamento a Office 365 a un abbonamento a Microsoft 365, sarà necessario creare nuovi criteri di conformità per la comunicazione per sostituire il criterio di supervisione esistente.
@@ -179,7 +179,7 @@ Per analizzare i messaggi di posta elettronica e gli allegati per le stesse paro
   
 #### <a name="enter-multiple-conditions"></a>Immettere più condizioni
 
-Se si immettono più condizioni, Microsoft 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio di supervisione agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che vengano soddisfatte tutte le condizioni per applicare il criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario un criterio che si applica se un messaggio contiene la parola "Trade" ed è maggiore di 2 MB. Tuttavia, se il messaggio contiene anche le parole "approvate da Contoso Financial", il criterio non deve essere applicato. In questo esempio, le tre condizioni verrebbero definite nel modo seguente:
+Se si immettono più condizioni, Microsoft 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio di conformità della comunicazione agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che vengano soddisfatte tutte le condizioni per applicare il criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario un criterio che si applica se un messaggio contiene la parola "Trade" ed è maggiore di 2 MB. Tuttavia, se il messaggio contiene anche le parole "approvate da Contoso Financial", il criterio non deve essere applicato. In questo esempio, le tre condizioni verrebbero definite nel modo seguente:
   
 - Il **messaggio contiene una di queste parole**, con le parole chiave "Trade"
 - La **dimensione del messaggio è maggiore di**, con il valore 2 MB
@@ -187,7 +187,7 @@ Se si immettono più condizioni, Microsoft 365 utilizza tutte le condizioni insi
 
 ### <a name="review-percentage"></a>Percentuale di Revisione
 
-Se si desidera ridurre la quantità di contenuto da rivedere, è possibile specificare una percentuale di tutte le comunicazioni regolate da un criterio di supervisione. Viene selezionato un campione casuale di contenuto in tempo reale rispetto alla percentuale totale di contenuto che corrisponde alle condizioni dei criteri scelte. Se si desidera che i revisori rivedano tutti gli elementi, è possibile configurare il **100%** in un criterio di conformità della comunicazione.
+Se si desidera ridurre la quantità di contenuto da rivedere, è possibile specificare una percentuale di tutte le comunicazioni regolate da un criterio di conformità della comunicazione. Viene selezionato un campione casuale di contenuto in tempo reale rispetto alla percentuale totale di contenuto che corrisponde alle condizioni dei criteri scelte. Se si desidera che i revisori rivedano tutti gli elementi, è possibile configurare il **100%** in un criterio di conformità della comunicazione.
 
 ## <a name="notices"></a>Avvisi
 

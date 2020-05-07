@@ -1,5 +1,5 @@
 ---
-title: Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
+title: Configurare gruppi e utenti - Ambiente di sviluppo/test per la campagna politica
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Riepilogo: creare sottoscrizioni di valutazione di Office 365 ed Enterprise Mobility + Security (EMS) con utenti e gruppi per un ambiente di sviluppo/test di una campagna politica.'
-ms.openlocfilehash: f07ccbb648ef20c6b7c6ef005afef59fd89d56aa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 14722ab96230ecb8acaf4476d6ca70c47de2ffdd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638457"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035107"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
 

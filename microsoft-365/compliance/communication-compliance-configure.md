@@ -18,21 +18,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 990e39484b7f3f5b26b39e52f9344da0a3ffa290
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 35eb63fd5b472f4b58c5f2fb5285ffff012277dd
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919683"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065901"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
->[!IMPORTANT]
->Questo argomento si applica alla configurazione della conformità di comunicazione in un abbonamento a Microsoft 365. Se si desidera configurare i criteri di supervisione per un abbonamento a Microsoft 365, vedere [Configure supervisioning for microsoft 365](supervision-policies.md).
-
 Utilizzare i criteri di conformità della comunicazione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di conformità della comunicazione consentono di monitorare le comunicazioni nell'organizzazione, vedere [Communication Compliance Policies in Microsoft 365](communication-compliance.md). Se si desidera esaminare in che modo Contoso ha configurato rapidamente un criterio di conformità della comunicazione per il monitoraggio per la lingua offensiva in Microsoft teams, Exchange Online e Yammer Communications, vedere questo [caso di studio](communication-compliance-case-study.md).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e i componenti aggiuntivi. Per accedere e utilizzare la conformità di comunicazione, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
@@ -70,13 +67,13 @@ Per rendere la **conformità di comunicazione** disponibile come opzione di menu
 
 3. Selezionare **Crea**.
 
-4. Nel campo **nome** assegnare un nome descrittivo al nuovo gruppo di ruoli. Scegliere **Avanti**.
+4. Nel campo **nome** assegnare un nome descrittivo al nuovo gruppo di ruoli. Selezionare **Avanti**.
 
-5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare la casella di controllo per l' **amministratore della revisione di supervisione**, la **gestione dei casi**, l' **amministratore della conformità**e la **Revisione**, quindi selezionare **Aggiungi** e **Chiudi**. Scegliere **Avanti**.
+5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare la casella di controllo per l' **amministratore della revisione di supervisione**, la **gestione dei casi**, l' **amministratore della conformità**e la **Revisione**, quindi selezionare **Aggiungi** e **Chiudi**. Selezionare **Avanti**.
 
     ![Gruppi di ruoli necessari per la conformità della comunicazione](../media/communication-compliance-role-groups-1.png)
 
-6. Selezionare **Scegli membri** e quindi **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera creare criteri e gestire i messaggi con le corrispondenze di criteri, quindi fare clic su **Aggiungi** e **Chiudi**. Scegliere **Avanti**.
+6. Selezionare **Scegli membri** e quindi **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera creare criteri e gestire i messaggi con le corrispondenze di criteri, quindi fare clic su **Aggiungi** e **Chiudi**. Selezionare **Avanti**.
 
 7. Selezionare **Crea gruppo di ruoli** per terminare.
 

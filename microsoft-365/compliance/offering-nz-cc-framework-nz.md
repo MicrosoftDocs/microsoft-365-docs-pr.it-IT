@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3142ce35cdc55e32cf5f40042967ba60de789dcc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cbf118d918dd5c3bc922fbea157fb56a709fad66
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601883"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065801"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Considerazioni sulla sicurezza e sulla privacy di cloud computing del governo neozelandese
 
@@ -33,13 +33,11 @@ Per assistere gli enti governativi neozelandesi nello svolgimento di due diligen
 
 Considerazioni sulla sicurezza e sulla privacy di Microsoft e della Nuova Zelanda sul cloud computing
 
-Per aiutare le agenzie a intraprendere la propria analisi e la valutazione dei servizi cloud Microsoft Enterprise, Microsoft New Zealand ha prodotto una serie di documenti che mostrano come i servizi cloud aziendali affrontino le domande definite nel cloud computing ISPC collegarli agli standard in base ai quali sono certificati i servizi cloud Microsoft. Queste certificazioni sono al centro del modo in cui Microsoft garantisce ai clienti del settore pubblico e privato che i servizi cloud sono stati disegnati, costruiti e gestiti per attenuare efficacemente la privacy e i rischi per la sicurezza e per risolvere i problemi relativi alla sovranità dei dati.
-
-Informazioni sui vantaggi offerti da NZ CC Framework sul cloud Microsoft: [scaricare il backgrounder di Framework NZ CC](https://aka.ms/nzcc-framework-backgrounder)
+Per aiutare le agenzie a eseguire l'analisi e la valutazione dei servizi cloud di Microsoft Enterprise, Microsoft New Zealand ha prodotto una serie di documenti che mostrano come i servizi cloud aziendali affrontino le domande definite nel "cloud computing ISPC" collegandosi agli standard per i quali sono certificati i servizi cloud Microsoft. Queste certificazioni sono al centro del modo in cui Microsoft garantisce ai clienti del settore pubblico e privato che i servizi cloud sono stati disegnati, costruiti e gestiti per attenuare efficacemente la privacy e i rischi per la sicurezza e per risolvere i problemi relativi alla sovranità dei dati.
 
 Informazioni su come accelerare la distribuzione del Framework NZ CC con il modello di sicurezza e conformità di Azure: [scaricare la risposta di Azure per il Framework NZ CC](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -67,16 +65,12 @@ Se l'Agenzia è tenuta a effettuare la certificazione e l'accreditamento del sis
 - [Cloud Computing: considerazioni sulla sicurezza delle informazioni e sulla privacy (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Office 365: integrazione e architettura di riferimento per la posta elettronica](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (altre linee guida di Microsoft NZ sull'adozione del servizio cloud)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Microsoft Responses to "cloud computing IPSC"
+## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Microsoft Responses to ' cloud computing IPSC '
 
 - [Azure](https://aka.ms/Azure-NZ-response)
 - [Dynamics 365](https://aka.ms/d365-nz-response)
 - [Intune](https://aka.ms/Intune-NZ-response)
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf).

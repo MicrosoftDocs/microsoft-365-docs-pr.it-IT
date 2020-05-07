@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Si ha una domanda su come funzionano le nuove funzionalità di protezione dei messaggi? Controllare la risposta qui.
-ms.openlocfilehash: 93b57e2b973fadd8b4ac2388e42f460114228c3c
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781461"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049521"
 ---
 # <a name="message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi
 
@@ -109,11 +109,11 @@ Se è supportato un formato di file, ad esempio un file di Word, Excel o PowerPo
   
 ## <a name="are-pdf-file-attachments-supported"></a>Gli allegati di file PDF sono supportati?
 
-La risposta breve è sì. La crittografia in formato PDF consente di proteggere i documenti PDF sensibili tramite una comunicazione sicura o una collaborazione sicura. Quando si invia un messaggio di posta elettronica, il servizio Office 365 crittografa gli allegati di file PDF non il client Outlook. 
+La risposta breve è sì. La crittografia in formato PDF consente di proteggere i documenti PDF sensibili tramite una comunicazione sicura o una collaborazione sicura. Quando si invia un messaggio di posta elettronica, il servizio Office 365 crittografa gli allegati di file PDF non il client Outlook.
 
-Dopo aver abilitato la crittografia degli allegati di file PDF, è possibile crittografare i documenti inviati senza ulteriori passaggi da Outlook sul Web, Outlook per iOS e Outlook per Android.
+Per Outlook sul Web, Outlook per iOS e Outlook per Android, è possibile crittografare i file PDF inviati senza ulteriori passaggi. Questi client supportano nativamente la crittografia in formato PDF.
 
-Outlook desktop non supporta nativamente la crittografia degli allegati di file PDF. Per ovviare a questo, è comunque possibile abilitare la crittografia degli allegati di file PDF nell'organizzazione. Quando si invia la posta da Outlook desktop con un allegato PDF, il client invia il messaggio con l'allegato al servizio per primo. Quando il servizio riceve il file, il servizio applica la protezione OME del criterio di prevenzione della perdita di dati (DLP) o della regola del flusso di posta in Exchange Online. Successivamente, Exchange Online invia il messaggio con l'allegato file PDF protetto.
+Outlook desktop non supporta nativamente la crittografia degli allegati di file PDF. Al contrario, è necessario configurare le regole del flusso di posta di Exchange o DLP per applicare la crittografia agli allegati PDF per primo. Quando si invia la posta da Outlook desktop con un allegato PDF, il client invia il messaggio con l'allegato al servizio per primo. Quando il servizio riceve il file, il servizio applica la protezione OME del criterio di prevenzione della perdita di dati (DLP) o della regola del flusso di posta in Exchange Online. Successivamente, Exchange Online invia il messaggio con l'allegato file PDF protetto.
 
 Per abilitare la crittografia per gli allegati PDF, eseguire il comando seguente in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 

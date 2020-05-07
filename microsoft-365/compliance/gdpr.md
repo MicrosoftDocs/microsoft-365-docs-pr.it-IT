@@ -1,6 +1,6 @@
 ---
 title: Regolamento generale sulla protezione dei dati
-description: Documentazione tecnica di Microsoft per il Regolamento generale sulla protezione dei dati (GDPR)
+description: Informazioni sulla documentazione tecnica di Microsoft e altre informazioni utili per il Regolamento generale sulla protezione dei dati (GDPR)
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322555"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036209"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Riepilogo del Regolamento generale sulla protezione dei dati
 
@@ -99,7 +100,7 @@ Qui è disponibile una serie di articoli correlati al GDPR. Sono prodotti da Mic
 
 **In che modo Microsoft consente di rispondere alle richieste degli interessati?**
 
-Online Services offre una serie di funzionalità che consentono al titolare del trattamento di rispondere a una richiesta dell'interessato. I servizi online aziendali Microsoft e i controlli amministrativi consentono di intervenire sui dati personali in risposta alle richieste di esercizio dei diritti dei titolari, consentendo di individuare, accedere, rettificare, limitare, eliminare ed esportare i dati personali inclusi nei dati gestiti dal titolare del trattamento archiviati nel cloud Microsoft. Inoltre, in caso di necessità, Online Services fornisce i dati in un formato leggibile da dispositivo automatico.
+Online Services offre una serie di funzionalità che consentono al titolare del trattamento di rispondere a una richiesta dell'interessato. I servizi online aziendali Microsoft e i controlli amministrativi consentono di intervenire sui dati personali in risposta alle richieste di esercizio dei diritti degli interessati, consentendo di individuare, accedere, rettificare, limitare, eliminare ed esportare i dati personali inclusi nei dati gestiti dal titolare del trattamento archiviati nel cloud Microsoft. Inoltre, in caso di necessità, Online Services fornisce i dati in un formato leggibile da dispositivo automatico.
 
 ## <a name="data-protection-impact-assessment"></a>Valutazione d'impatto sulla protezione dei dati
 
@@ -115,7 +116,7 @@ I titolari devono eseguire una DPIA per rispondere ai rischi relativi alla sicur
 
 Secondo il GDPR, una DPIA deve includere quanto segue:
 
-- Una valutazione della necessità e proporzionalità dell'elaborazione dei dati in relazione agli scopi della DPIA.
+- Una valutazione della necessità e proporzionalità delle operazioni di trattamento dei dati in relazione agli scopi della DPIA.
 - Una valutazione dei rischi per i diritti e le libertà dell'interessato.
 - Misure previste per risolvere i rischi, garanzie, misure di sicurezza e meccanismi per garantire la protezione dei dati personali e dimostrare la conformità al GDPR.
 
@@ -140,7 +141,7 @@ In qualità di responsabile del trattamento dei dati, Microsoft ha il dovere di 
 
 ## <a name="breach-notification"></a>Notifica di violazione
 
-Il GPDR impone ai titolari e ai responsabili del trattamento dei dati l'obbligo di notifica in caso di violazione dei dati personali. In qualità di responsabile del trattamento dei dati, Microsoft assicura che i clienti riescano a soddisfare i requisiti di notifica della violazione del GDPR. I titolari del trattamento dei dati sono responsabili della valutazione dei rischi per la privacy di tali dati e della scelta se una violazione richiede la notifica relativa alla Legge sulla protezione dei dati del cliente. Microsoft fornisce le informazioni necessarie per eseguire tale valutazione. Per ulteriori informazioni su come Microsoft rileva e gestisce un caso di violazione dei dati personali, vedere [Notifica di violazione dei dati secondo il GDPR](gdpr-breach-notification.md).
+Il GPDR impone ai titolari e ai responsabili del trattamento dei dati l'obbligo di notifica in caso di violazione dei dati personali. In qualità di responsabile del trattamento dei dati, Microsoft mette i clienti in condizione di soddisfare i requisiti di notifica delle violazioni previsti dal GDPR. I titolari del trattamento dei dati sono tenuti a valutare i rischi per la privacy di tali dati e a stabilire se una violazione richieda la notifica all'autorità per la protezione dei dati di un cliente. Microsoft fornisce le informazioni necessarie per eseguire tale valutazione. Per ulteriori informazioni su come Microsoft rileva e gestisce un caso di violazione dei dati personali, vedere [Notifica di violazione dei dati secondo il GDPR](gdpr-breach-notification.md).
 
 ### <a name="breach-notification-faqs"></a>Domande frequenti sulla notifica di violazione
 
@@ -152,7 +153,7 @@ Per dati personali si intendono tutte le informazioni relative a un individuo ch
 
 Se si verifica una violazione di dati personali che potenzialmente presenta un rischio elevato per i diritti e le libertà delle persone (come discriminazione, furto di identità, frodi, perdite finanziarie o danni alla reputazione), il GDPR richiede di:
 
-- Informare l'autorità incaricata della protezione dei dati competente entro 72 ore dal momento in cui se ne viene a conoscenza, ad esempio dopo la ricezione della notifica da Microsoft. Se non si invia una notifica all'autorità incaricata della protezione dei dati entro tale termine, sarà necessario fornire una spiegazione. Questa notifica all'autorità incaricata della protezione dei dati è necessaria anche in caso di rischi non elevati per gli individui.
+- Informare l'autorità incaricata della protezione dei dati competente entro 72 ore dal momento in cui se ne viene a conoscenza, ad esempio dopo la ricezione della notifica da Microsoft. Se non si invia una notifica all'autorità per la protezione dei dati entro tale termine, sarà necessario fornirle una spiegazione. Questa notifica all'autorità incaricata della protezione dei dati è necessaria anche in caso di rischi non elevati per gli individui.
 - Informare immediatamente i soggetti dei dati della violazione.
 - Documentare la violazione includendo una descrizione della natura della violazione, indicando ad esempio quante persone sono interessate, il numero dei record di dati interessati, le conseguenze della violazione ed eventuali azioni correttive programmate o attuate dall'organizzazione.
 
@@ -249,7 +250,7 @@ Sì, si applica a entrambe le figure. I titolari devono servirsi esclusivamente 
 
 **Quali sanzioni possono essere comminate alle aziende per mancata conformità?**
 
-Le sanzioni per mancato rispetto di determinati requisiti del GDPR possono arrivare fino a 20 milioni di euro o al 4% del fatturato globale annuo, se superiore. Altre azioni di riparazione individuali potrebbero aumentare il rischio in caso di mancato rispetto dei requisiti del GDPR.
+Le sanzioni per mancato rispetto di determinati requisiti del GDPR possono arrivare fino a 20 milioni di &euro; o al 4% del fatturato globale annuo, se superiore. Altre azioni di riparazione individuali potrebbero aumentare il rischio in caso di mancato rispetto dei requisiti del GDPR.
 
 **L'azienda deve nominare un responsabile della protezione dei dati?**
 
@@ -316,7 +317,7 @@ Il GDPR cambierà i requisiti in materia di protezione dei dati e renderà più 
 
 I prodotti e servizi Microsoft, quali Azure, Dynamics 365, Enterprise Mobility + Security, Microsoft Office 365 e Windows 10, offrono soluzioni utili per rilevare e valutare le violazioni e le minacce per la sicurezza e a ottemperare agli obblighi di notifica delle violazioni previsti dal GDPR.
 
-## <a name="additional-resources"></a>Altre risorse
+## <a name="additional-resources"></a>Risorse aggiuntive
 
 - [Per affrontare le tue esigenze relative al GDPR, rivolgiti a uno dei nostri partner globali che offrono soluzioni basate su Microsoft](https://aka.ms/findgdprpartner)
 - [Scopri in che modo Microsoft gestisce i dati, dove si trovano, chi può accedervi e a quali condizioni e altro.](https://www.microsoft.com/trust-center/privacy)

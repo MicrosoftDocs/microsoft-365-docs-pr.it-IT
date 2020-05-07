@@ -1,5 +1,5 @@
 ---
-title: "Piano d'azione GDPR di Microsoft 365: massime priorità per i primi 30 giorni, 90 giorni e oltre"
+title: Piano d'azione di Microsoft 365 per il GDPR e priorità per i primi 30 giorni, 90 giorni e oltre
 description: Un piano d'azione prioritario che può essere seguito durante il lavoro per soddisfare i requisiti del Regolamento generale sulla protezione dei dati (GDPR)
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 64b8a693cadce2d304bf5615a5e21fa15b8a55b0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c4b135f189aa43e4e7015550739c9e79a74c2310
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633321"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036079"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Piano d'azione GDPR di Microsoft 365: massime priorità per i primi 30 giorni, 90 giorni e oltre
 

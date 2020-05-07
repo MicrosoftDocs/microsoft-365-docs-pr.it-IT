@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di scadenza dei gruppi di Microsoft 365.
-ms.openlocfilehash: 82938caf083cd5b5fa330fd047686ae6a8b5300d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049180"
+ms.locfileid: "44064822"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Criteri di scadenza del gruppo Microsoft 365
 
@@ -77,7 +77,7 @@ I proprietari del gruppo saranno informati solo tramite posta elettronica. Se il
 
 30 giorni prima della scadenza del gruppo, i proprietari del gruppo (o gli indirizzi di posta elettronica specificati per i gruppi che non dispongono di un proprietario) riceveranno un messaggio di posta elettronica che consente di rinnovare facilmente il gruppo. Se non lo rinnovano, riceveranno un'altra e-mail di rinnovo 15 giorni prima della scadenza. Se non sono ancora state rinnovate, riceveranno una notifica di posta elettronica di più il giorno prima della scadenza.
 
-Se per qualche motivo nessuno dei proprietari o degli amministratori rinnova il gruppo prima della scadenza, l'amministratore può comunque ripristinare il gruppo fino a 30 giorni dopo la data di scadenza. Per informazioni dettagliate, vedere: [ripristinare un gruppo di Microsoft 365 eliminato](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group).
+Se per qualche motivo nessuno dei proprietari o degli amministratori rinnova il gruppo prima della scadenza, l'amministratore può comunque ripristinare il gruppo fino a 30 giorni dopo la data di scadenza. Per informazioni dettagliate, vedere: [ripristinare un gruppo di Microsoft 365 eliminato](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ## <a name="related-articles"></a>Articoli correlati
 

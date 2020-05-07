@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dc5e8312f219176dbed7a84072c90e0ca165cd11
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 7f61248fc6e31d0982eedd153aa71ae3eed71de5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228522"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066299"
 ---
 # <a name="us-section-508"></a>Sezione 508 degli Stati Uniti
 
 ## <a name="about-us-section-508"></a>Informazioni sugli Stati Uniti sezione 508
 
-Il Congresso degli Stati Uniti ha modificato la legge sulla riabilitazione in 1998 e 2000 per richiedere alle agenzie federali di rendere i propri prodotti elettronici e informatici (IET), come software, hardware, contenuto elettronico e documentazione di supporto, accessibili a persone con disabilità. Sezione 508 della legge sulla riabilitazione della manodopera degli Stati Uniti del 1973 (29 US Code § 794d), come modificato, impone che le agenzie federali procurano, mantengano e utilizzino l'EIT in modo da garantire che i dipendenti federali con disabilità abbiano accesso e utilizzo comparabili, Data e EIT rispetto ad altri impiegati federali.
+Il Congresso degli Stati Uniti ha modificato la legge sulla riabilitazione in 1998 e 2000 per richiedere alle agenzie federali di rendere i propri prodotti elettronici e informatici (IET), ad esempio software, hardware, contenuto elettronico e documentazione di supporto, accessibili alle persone con disabilità. Sezione 508 della legge sulla riabilitazione della forza lavoro degli Stati Uniti del 1973 (29 US Code § 794d), come modificato, impone che le agenzie federali procurano, mantengano e utilizzino l'EIT in modo da garantire che i dipendenti federali con disabilità abbiano un accesso e un utilizzo analogo di dati e EIT rispetto ad altri dipendenti federali.
 
 Microsoft è un importante provider di servizi software e cloud per i governi federali e statali degli Stati Uniti.  Per aiutare i clienti governativi a prendere decisioni sugli appalti, Microsoft pubblica i rapporti di conformità per l'accessibilità che descrivono la misura in cui i prodotti e i servizi supportano i criteri della sezione 508.  Queste informazioni consentono ai clienti Microsoft di determinare se un determinato prodotto o un servizio soddisferà le loro esigenze specifiche.
 
@@ -33,7 +33,7 @@ Microsoft è un importante provider di servizi software e cloud per i governi fe
 
 La valutazione di Microsoft degli Stati Uniti sezione 508 nello sviluppo di prodotti e servizi punta al suo impegno a rendere accessibili la tecnologia e i dati per tutti i clienti.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
@@ -53,8 +53,4 @@ Sono disponibili [report di conformità](https://cloudblogs.microsoft.com/indust
 - [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801): le risorse di Office 365 per persone con disabilità.
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): supporto dedicato per clienti aziendali con domande sull'accessibilità sui prodotti e servizi Microsoft o sulla conformità.
 - [Programma del tester attendibile del DHS](https://go.microsoft.com/fwlink/?linkid=2052171): ottenere informazioni sul programma del tester attendibile del Department of Homeland Security (DHS), in cui partecipa Microsoft.
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

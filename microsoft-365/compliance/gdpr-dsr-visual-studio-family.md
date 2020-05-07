@@ -1,6 +1,6 @@
 ---
 title: Richieste degli interessati per la famiglia Visual Studio nell'ambito del GDPR e del CCPA
-description: Richieste degli interessati per la famiglia Visual Studio nell'ambito del GDPR e del CCPA
+description: Informazioni su come usare gli strumenti Microsoft per gestire le richieste degli interessati per la famiglia in Visual Studio nell'ambito del GDPR e del CCPA.
 keywords: Visual Studio, Visual Studio Code, Visual Studio per Mac, documentazione di Visual Studio, privacy, GDPR, CCPA
 localization_priority: Priority
 audience: itpro
@@ -18,12 +18,13 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 81dfd4b0c0724e2ab40113c1d134e0932c215c8f
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f6d5e4fe6db8ef776435cc75da04ac5d2e038a47
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557986"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036301"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per la famiglia Visual Studio nell'ambito del GDPR e del CCPA
 

@@ -1,6 +1,6 @@
 ---
 title: Richieste degli interessati per Dynamics 365 nell'ambito del GDPR e del CCPA
-description: Guida su come usare i prodotti, i servizi e gli strumenti di amministrazione Microsoft per aiutare i clienti titolari del trattamento dei dati a individuare e gestire i dati personali per rispondere alle richieste degli interessati e nell'ambito del CCPA.
+description: Questa guida consente di capire come trovare i dati personali e come agire su di essi per rispondere alle richieste dell'interessato e alle richieste CCPA dei clienti che usano Dynamics 365.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,13 +15,15 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 38c50703fbc58e85a646720b5bbe8b400477b9d4
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558006"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043328"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Dynamics 365 nell'ambito del GDPR e del CCPA
 
@@ -223,7 +225,7 @@ Gli amministratori possono accedere ai log generati dal sistema associati all'us
 
 Dopo aver creato una nuova richiesta, questa verrà inserita nella pagina **Esportazione log di dati**, in cui è possibile tenere traccia del suo stato. Una volta completata una richiesta, è possibile fare clic su un collegamento per accedere ai log generati dal sistema che verranno esportati in un percorso di archiviazione di Azure dell'organizzazione entro 30 giorni dalla creazione della richiesta. I dati verranno salvati in formati di file leggibili di uso comune, ad esempio JSON o XML. Se non si dispone di un account Azure e di un percorso di archiviazione di Azure, sarà necessario creare l'account e/o il percorso di archiviazione per l'organizzazione affinché lo strumento Esportazione log di dati possa esportare i log generati dal sistema.
 
-Azure supporta questa caratteristica, consentendo all'organizzazione di esportare i dati in formato JSON nativo nel contenitore di archiviazione di Azure specificato[. Vedere l'articolo di introduzione su Archiviazione BLOB di Archiviazione di Microsoft Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage).
+Azure supporta questa caratteristica, consentendo all'organizzazione di esportare i dati in formato JSON nativo nel contenitore di archiviazione di Azure specificato[. Vedere l'articolo di introduzione su Archiviazione BLOB di Archiviazione di Microsoft Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage). I dati recuperati non includeranno dati che possono compromettere la sicurezza e la stabilità del servizio.
 
 > [!IMPORTANT]
 > È necessario essere un amministratore tenant per esportare i dati di un utente dal tenant.
@@ -245,9 +247,7 @@ La tabella seguente riepiloga l'accesso e l'esportazione dei log generati dal si
 
 ### <a name="deleting-system-generated-logs"></a>Eliminazione di log generati dal sistema
 
-Per eliminare i log generati dal sistema recuperati attraverso una richiesta di accesso, è necessario rimuovere l'utente dal servizio ed eliminare definitivamente il suo account Azure Active Directory. Per istruzioni su come eliminare definitivamente un utente, vedere la sezione [Eliminazione di un utente](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user). È importante tenere presente che l'operazione di eliminazione definitiva di un account utente è irreversibile una volta avviata.
-
-Se si elimina definitivamente un account utente, i dati dell'utente verranno rimossi dai registri generati dal sistema per quasi tutti i servizi di Dynamics 365 entro 30 giorni.
+Per eliminare i log generati dal sistema recuperati durante una richiesta di accesso, è necessario rimuovere l'utente dal servizio ed eliminare definitivamente il suo account Azure Active Directory. È importante tenere presente che l'eliminazione definitiva di un account utente, un volta avviata, è irreversibile. Se si elimina definitivamente un account utente, i dati dell'utente verranno rimossi dai registri generati dal sistema per quasi tutti i servizi di Dynamics 365 entro 30 giorni.
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 

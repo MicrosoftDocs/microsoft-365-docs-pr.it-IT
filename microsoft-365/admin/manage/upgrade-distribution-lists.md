@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Informazioni su come eseguire l'aggiornamento di una o più liste di distribuzione ai gruppi di Microsoft 365 in Outlook e sull'utilizzo di PowerShell per l'aggiornamento simultaneo di più liste di distribuzione.
-ms.openlocfilehash: 3f364de1e863cef542fb8342e61f537bcd113535
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048174"
+ms.locfileid: "44065670"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Aggiornare le liste di distribuzione ai gruppi di Microsoft 365 in Outlook
 
@@ -51,7 +51,7 @@ Per aggiornare una lista di distribuzione, è necessario essere un amministrator
 7. Se è stata selezionata una lista di distribuzione per l'aggiornamento, ma questa viene ancora visualizzata nella pagina in Disponibili per l'aggiornamento, l'aggiornamento non è riuscito. Vedere [Che cosa fare se l'aggiornamento non riesce](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
-> Se si ricevono messaggi di posta elettronica di riepilogo dei gruppi, si potrebbe notare nella parte inferiore una notifica che offre di aggiornare tutte le liste di distribuzione idonee di cui si è proprietari. Per altre informazioni sui messaggi di posta elettronica di riepilogo, vedere [Avviare una conversazione di gruppo in Outlook](https://support.office.com/article/a0482e24-a769-4e39-a5ba-a7c56e828b22.aspx).
+> Se si ricevono messaggi di posta elettronica di riepilogo dei gruppi, si potrebbe notare nella parte inferiore una notifica che offre di aggiornare tutte le liste di distribuzione idonee di cui si è proprietari. Per altre informazioni sui messaggi di posta elettronica di riepilogo, vedere [Avviare una conversazione di gruppo in Outlook](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>Che cosa fare se l'aggiornamento non riesce
