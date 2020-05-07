@@ -1,6 +1,6 @@
 ---
 title: Elenchi di controllo di preparazione della conformità al GDPR
-description: Informazioni su come i servizi Microsoft proteggono da una violazione dei dati personali e su come Microsoft gestisce un'eventuale violazione e lo comunica agli utenti interessati.
+description: In questo articolo viene illustrato l'uso degli elenchi di controllo di preparazione della conformità per accedere alle informazioni per l'applicazione del GDPR quando si usano prodotti e servizi Microsoft.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -13,68 +13,70 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
-- M365-security-compliance
+- M365-security-complianc
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: b34221c45acc3d2918ed1a397e9e1ff0e726c152
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 154ba945db3bd5cfab25881bfdbbdc6738a3dfd7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558126"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036114"
 ---
-# <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a><span data-ttu-id="6a6e8-104">Supportare il programma GDPR con elenchi di controllo di preparazione della conformità</span><span class="sxs-lookup"><span data-stu-id="6a6e8-104">Support your GDPR program with Accountability Readiness Checklists</span></span>
+# <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a><span data-ttu-id="b7229-104">Supportare il programma GDPR con elenchi di controllo di preparazione della conformità</span><span class="sxs-lookup"><span data-stu-id="b7229-104">Support your GDPR program with Accountability Readiness Checklists</span></span>
 
-<span data-ttu-id="6a6e8-105">Il regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda.</span><span class="sxs-lookup"><span data-stu-id="6a6e8-105">The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located.</span></span> <span data-ttu-id="6a6e8-106">Altri dettagli sono disponibili [nell'argomento relativo al Riepilogo sul GDPR](gdpr.md).</span><span class="sxs-lookup"><span data-stu-id="6a6e8-106">Additional details are in the [GDPR Summary topic](gdpr.md).</span></span>
+<span data-ttu-id="b7229-105">Il regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda.</span><span class="sxs-lookup"><span data-stu-id="b7229-105">The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located.</span></span> <span data-ttu-id="b7229-106">Altri dettagli sono disponibili [nell'argomento relativo al Riepilogo sul GDPR](gdpr.md).</span><span class="sxs-lookup"><span data-stu-id="b7229-106">Additional details are in the [GDPR Summary topic](gdpr.md).</span></span>
 
-## <a name="accountability-readiness-checklists"></a><span data-ttu-id="6a6e8-107">Elenchi di controllo di preparazione della conformità</span><span class="sxs-lookup"><span data-stu-id="6a6e8-107">Accountability Readiness Checklists</span></span>
+## <a name="accountability-readiness-checklists"></a><span data-ttu-id="b7229-107">Elenchi di controllo di preparazione della conformità</span><span class="sxs-lookup"><span data-stu-id="b7229-107">Accountability Readiness Checklists</span></span>
 
-<span data-ttu-id="6a6e8-108">Gli elenchi di controllo di preparazione della conformità vengono forniti per accedere in modo pratico alle informazioni necessarie per l'applicazione del GDPR quando si usano prodotti e servizi Microsoft.</span><span class="sxs-lookup"><span data-stu-id="6a6e8-108">Accountability readiness checklists are provided to conveniently access information you may need to support the GDPR when using Microsoft products and services.</span></span> <span data-ttu-id="6a6e8-109">L'elenco di controllo elenca i potenziali obblighi che si possono avere nell'ambito del GDPR e indica le informazioni che è possibile usare per supportare la conformità delle organizzazioni.</span><span class="sxs-lookup"><span data-stu-id="6a6e8-109">The checklist lists potential obligations you may have under the GDPR, and points you to information that you can use to support your organizations’ compliance.</span></span>
+<span data-ttu-id="b7229-108">Gli elenchi di controllo di preparazione della conformità vengono forniti per accedere in modo pratico alle informazioni necessarie per l'applicazione del GDPR quando si usano prodotti e servizi Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b7229-108">Accountability readiness checklists are provided to conveniently access information you may need to support the GDPR when using Microsoft products and services.</span></span> <span data-ttu-id="b7229-109">L'elenco di controllo elenca i potenziali obblighi che si possono avere nell'ambito del GDPR e indica le informazioni che è possibile usare per supportare la conformità delle organizzazioni.</span><span class="sxs-lookup"><span data-stu-id="b7229-109">The checklist lists potential obligations you may have under the GDPR, and points you to information that you can use to support your organizations’ compliance.</span></span>
 
-<span data-ttu-id="6a6e8-110">Esiste una guida specifica per quattro famiglie di prodotti e servizi Microsoft:</span><span class="sxs-lookup"><span data-stu-id="6a6e8-110">There is a specific guide for four Microsoft product and services families:</span></span>
+<span data-ttu-id="b7229-110">Esiste una guida specifica per quattro famiglie di prodotti e servizi Microsoft:</span><span class="sxs-lookup"><span data-stu-id="b7229-110">There is a specific guide for four Microsoft product and services families:</span></span>
 
-- [<span data-ttu-id="6a6e8-111">Office 365</span><span class="sxs-lookup"><span data-stu-id="6a6e8-111">Office 365</span></span>](gdpr-arc-Office365.md)
-- [<span data-ttu-id="6a6e8-112">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="6a6e8-112">Dynamics 365</span></span>](gdpr-arc-Dynamics365.md)
-- [<span data-ttu-id="6a6e8-113">Azure</span><span class="sxs-lookup"><span data-stu-id="6a6e8-113">Azure</span></span>](gdpr-arc-Azure.md)
-- [<span data-ttu-id="6a6e8-114">Servizi professionali e supporto tecnico Microsoft</span><span class="sxs-lookup"><span data-stu-id="6a6e8-114">Microsoft Support and Professional Services</span></span>](gdpr-arc-prof-services.md)
+- [<span data-ttu-id="b7229-111">Office 365</span><span class="sxs-lookup"><span data-stu-id="b7229-111">Office 365</span></span>](gdpr-arc-Office365.md)
+- [<span data-ttu-id="b7229-112">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="b7229-112">Dynamics 365</span></span>](gdpr-arc-Dynamics365.md)
+- [<span data-ttu-id="b7229-113">Azure</span><span class="sxs-lookup"><span data-stu-id="b7229-113">Azure</span></span>](gdpr-arc-Azure.md)
+- [<span data-ttu-id="b7229-114">Servizi professionali e supporto tecnico Microsoft</span><span class="sxs-lookup"><span data-stu-id="b7229-114">Microsoft Support and Professional Services</span></span>](gdpr-arc-prof-services.md)
 
-<span data-ttu-id="6a6e8-115">È possibile gestire gli elementi di questo elenco di controllo con il [punteggio di conformità](compliance-score.md) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.</span><span class="sxs-lookup"><span data-stu-id="6a6e8-115">You can manage the items in this checklist with [Compliance Score](compliance-score.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.</span></span>
+<span data-ttu-id="b7229-115">È possibile gestire gli elementi di questo elenco di controllo con il [punteggio di conformità](compliance-score.md) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.</span><span class="sxs-lookup"><span data-stu-id="b7229-115">You can manage the items in this checklist with [Compliance Score](compliance-score.md) by referencing the Control ID and Control Title under Customer Managed Controls in the GDPR tile.</span></span>
 
-<span data-ttu-id="6a6e8-116">Gli elenchi di controllo includono le quattro categorie di base di considerazioni per un programma sulla privacy che supporta il GDPR elencate di seguito, insieme ai requisiti di esempio.</span><span class="sxs-lookup"><span data-stu-id="6a6e8-116">The checklists include the four basic categories of considerations for a privacy program supporting GDPR listed below, along with example requirements.</span></span>
+<span data-ttu-id="b7229-116">Gli elenchi di controllo includono le quattro categorie di base di considerazioni per un programma sulla privacy che supporta il GDPR elencate di seguito, insieme ai requisiti di esempio.</span><span class="sxs-lookup"><span data-stu-id="b7229-116">The checklists include the four basic categories of considerations for a privacy program supporting GDPR listed below, along with example requirements.</span></span>
 
-1. <span data-ttu-id="6a6e8-117">Condizioni per la raccolta e l'elaborazione dei dati:</span><span class="sxs-lookup"><span data-stu-id="6a6e8-117">Conditions for Data Collection and Processing:</span></span>
+1. <span data-ttu-id="b7229-117">Condizioni per la raccolta e l'elaborazione dei dati:</span><span class="sxs-lookup"><span data-stu-id="b7229-117">Conditions for Data Collection and Processing:</span></span>
 
-    - <span data-ttu-id="6a6e8-118">Quando si ottiene il consenso?</span><span class="sxs-lookup"><span data-stu-id="6a6e8-118">When is consent obtained?</span></span>  
-    - <span data-ttu-id="6a6e8-119">Identificare e documentare la finalità</span><span class="sxs-lookup"><span data-stu-id="6a6e8-119">Identify and document purpose</span></span>  
-    - <span data-ttu-id="6a6e8-120">Valutazione dell'impatto sulla privacy</span><span class="sxs-lookup"><span data-stu-id="6a6e8-120">Privacy impact assessment</span></span>
+    - <span data-ttu-id="b7229-118">Quando si ottiene il consenso?</span><span class="sxs-lookup"><span data-stu-id="b7229-118">When is consent obtained?</span></span>  
+    - <span data-ttu-id="b7229-119">Identificare e documentare la finalità</span><span class="sxs-lookup"><span data-stu-id="b7229-119">Identify and document purpose</span></span>  
+    - <span data-ttu-id="b7229-120">Valutazione dell'impatto sulla privacy</span><span class="sxs-lookup"><span data-stu-id="b7229-120">Privacy impact assessment</span></span>
 
-2. <span data-ttu-id="6a6e8-121">Diritti del soggetto interessato</span><span class="sxs-lookup"><span data-stu-id="6a6e8-121">Data Subject Rights</span></span>  
+2. <span data-ttu-id="b7229-121">Diritti del soggetto interessato</span><span class="sxs-lookup"><span data-stu-id="b7229-121">Data Subject Rights</span></span>  
 
-    - <span data-ttu-id="6a6e8-122">Definizione delle informazioni degli interessati</span><span class="sxs-lookup"><span data-stu-id="6a6e8-122">Determining information for PII principals (data subjects)</span></span>  
-    - <span data-ttu-id="6a6e8-123">Meccanismo per modificare o revocare il consenso</span><span class="sxs-lookup"><span data-stu-id="6a6e8-123">Providing mechanism to modify or withdraw consent</span></span>
+    - <span data-ttu-id="b7229-122">Definizione delle informazioni degli interessati</span><span class="sxs-lookup"><span data-stu-id="b7229-122">Determining information for PII principals (data subjects)</span></span>  
+    - <span data-ttu-id="b7229-123">Meccanismo per modificare o revocare il consenso</span><span class="sxs-lookup"><span data-stu-id="b7229-123">Providing mechanism to modify or withdraw consent</span></span>
 
-3. <span data-ttu-id="6a6e8-124">Privacy by design e by default</span><span class="sxs-lookup"><span data-stu-id="6a6e8-124">Privacy by Design and Default</span></span>  
+3. <span data-ttu-id="b7229-124">Privacy by design e by default</span><span class="sxs-lookup"><span data-stu-id="b7229-124">Privacy by Design and Default</span></span>  
 
-    - <span data-ttu-id="6a6e8-125">Limitazione della raccolta</span><span class="sxs-lookup"><span data-stu-id="6a6e8-125">Limit Collection</span></span>  
-    - <span data-ttu-id="6a6e8-126">Conformità ai livelli di identificazione</span><span class="sxs-lookup"><span data-stu-id="6a6e8-126">Comply with identification levels</span></span>  
-    - <span data-ttu-id="6a6e8-127">File temporanei</span><span class="sxs-lookup"><span data-stu-id="6a6e8-127">Temporary files</span></span>
+    - <span data-ttu-id="b7229-125">Limitazione della raccolta</span><span class="sxs-lookup"><span data-stu-id="b7229-125">Limit Collection</span></span>  
+    - <span data-ttu-id="b7229-126">Conformità ai livelli di identificazione</span><span class="sxs-lookup"><span data-stu-id="b7229-126">Comply with identification levels</span></span>  
+    - <span data-ttu-id="b7229-127">File temporanei</span><span class="sxs-lookup"><span data-stu-id="b7229-127">Temporary files</span></span>
 
-4. <span data-ttu-id="6a6e8-128">Protezione e sicurezza dei dati</span><span class="sxs-lookup"><span data-stu-id="6a6e8-128">Data Protection and Security</span></span>  
+4. <span data-ttu-id="b7229-128">Protezione e sicurezza dei dati</span><span class="sxs-lookup"><span data-stu-id="b7229-128">Data Protection and Security</span></span>  
 
-    - <span data-ttu-id="6a6e8-129">Informazioni sull'organizzazione e il contesto</span><span class="sxs-lookup"><span data-stu-id="6a6e8-129">Understanding the organization and its context</span></span>  
-    - <span data-ttu-id="6a6e8-130">Pianificazione</span><span class="sxs-lookup"><span data-stu-id="6a6e8-130">Planning</span></span>  
-    - <span data-ttu-id="6a6e8-131">Criteri di sicurezza delle informazioni</span><span class="sxs-lookup"><span data-stu-id="6a6e8-131">Information Security Policies</span></span>
+    - <span data-ttu-id="b7229-129">Informazioni sull'organizzazione e il contesto</span><span class="sxs-lookup"><span data-stu-id="b7229-129">Understanding the organization and its context</span></span>  
+    - <span data-ttu-id="b7229-130">Pianificazione</span><span class="sxs-lookup"><span data-stu-id="b7229-130">Planning</span></span>  
+    - <span data-ttu-id="b7229-131">Criteri di sicurezza delle informazioni</span><span class="sxs-lookup"><span data-stu-id="b7229-131">Information Security Policies</span></span>
 
-## <a name="customer-agreements"></a><span data-ttu-id="6a6e8-132">Contratti dei clienti</span><span class="sxs-lookup"><span data-stu-id="6a6e8-132">Customer agreements</span></span>
+## <a name="customer-agreements"></a><span data-ttu-id="b7229-132">Contratti dei clienti</span><span class="sxs-lookup"><span data-stu-id="b7229-132">Customer agreements</span></span>
 
-- <span data-ttu-id="6a6e8-133">**Condizioni dei servizi online**: gli impegni contrattuali di Microsoft in relazione al GDPR sono disponibili nelle [Condizioni dei servizi online](https://go.microsoft.com/fwlink/p/?linkid=2052208).</span><span class="sxs-lookup"><span data-stu-id="6a6e8-133">**Online service terms**: You can find Microsoft contractual commitments with regard to the GDPR in the [Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=2052208).</span></span>
-- <span data-ttu-id="6a6e8-134">**Condizioni dei prodotti Microsoft**: Microsoft estende gli [impegni delle condizioni del GDPR](https://go.microsoft.com/fwlink/p/?linkid=2052213) a tutti i clienti con contratti multilicenza.</span><span class="sxs-lookup"><span data-stu-id="6a6e8-134">**Microsoft product terms**: Microsoft extends the [GDPR Terms commitments](https://go.microsoft.com/fwlink/p/?linkid=2052213) to all Volume Licensing customers.</span></span>
-- <span data-ttu-id="6a6e8-135">**Addendum per la protezione dei dati**: i servizi Microsoft[ estendono gli impegni ](https://go.microsoft.com/fwlink/p/?linkid=2052215)ai clienti di Microsoft Consulting Services e altri.</span><span class="sxs-lookup"><span data-stu-id="6a6e8-135">**Data protection addendum**: Microsoft services [extends the commitments](https://go.microsoft.com/fwlink/p/?linkid=2052215) to Microsoft Consulting Services customers and others.</span></span>
+- <span data-ttu-id="b7229-133">**Condizioni dei servizi online**: gli impegni contrattuali di Microsoft in relazione al GDPR sono disponibili nelle [Condizioni dei servizi online](https://go.microsoft.com/fwlink/p/?linkid=2052208).</span><span class="sxs-lookup"><span data-stu-id="b7229-133">**Online service terms**: You can find Microsoft contractual commitments with regard to the GDPR in the [Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=2052208).</span></span>
+- <span data-ttu-id="b7229-134">**Condizioni dei prodotti Microsoft**: Microsoft estende gli [impegni delle condizioni del GDPR](https://go.microsoft.com/fwlink/p/?linkid=2052213) a tutti i clienti con contratti multilicenza.</span><span class="sxs-lookup"><span data-stu-id="b7229-134">**Microsoft product terms**: Microsoft extends the [GDPR Terms commitments](https://go.microsoft.com/fwlink/p/?linkid=2052213) to all Volume Licensing customers.</span></span>
+- <span data-ttu-id="b7229-135">**Addendum per la protezione dei dati**: i servizi Microsoft[ estendono gli impegni ](https://go.microsoft.com/fwlink/p/?linkid=2052215)ai clienti di Microsoft Consulting Services e altri.</span><span class="sxs-lookup"><span data-stu-id="b7229-135">**Data protection addendum**: Microsoft services [extends the commitments](https://go.microsoft.com/fwlink/p/?linkid=2052215) to Microsoft Consulting Services customers and others.</span></span>
 
-## <a name="gdpr-compliance-controls"></a><span data-ttu-id="6a6e8-136">Controlli per la conformità al GDPR</span><span class="sxs-lookup"><span data-stu-id="6a6e8-136">GDPR compliance controls</span></span>
+## <a name="gdpr-compliance-controls"></a><span data-ttu-id="b7229-136">Controlli per la conformità al GDPR</span><span class="sxs-lookup"><span data-stu-id="b7229-136">GDPR compliance controls</span></span>
 
-- <span data-ttu-id="6a6e8-137">**Utilizzo del punteggio di conformità**: esaminare e incorporare i controlli che Microsoft utilizza per supportare gli obblighi nel GDPR tramite il [punteggio di conformità](compliance-score.md).</span><span class="sxs-lookup"><span data-stu-id="6a6e8-137">**Use Compliance Score**: Review and incorporate controls Microsoft uses to support obligations in the GDPR with [Compliance Score](compliance-score.md).</span></span>
-- <span data-ttu-id="6a6e8-138">**Mapping di controllo del GDPR**: accedere a un [mapping completo](https://go.microsoft.com/fwlink/p/?linkid=2052220) dei controlli di Microsoft agli obblighi del GDPR.</span><span class="sxs-lookup"><span data-stu-id="6a6e8-138">**GDPR control mapping**: Access a [comprehensive mapping](https://go.microsoft.com/fwlink/p/?linkid=2052220) of Microsoft controls to GDPR obligations.</span></span>
+- <span data-ttu-id="b7229-137">**Utilizzo del punteggio di conformità**: esaminare e incorporare i controlli che Microsoft utilizza per supportare gli obblighi nel GDPR tramite il [punteggio di conformità](compliance-score.md).</span><span class="sxs-lookup"><span data-stu-id="b7229-137">**Use Compliance Score**: Review and incorporate controls Microsoft uses to support obligations in the GDPR with [Compliance Score](compliance-score.md).</span></span>
+- <span data-ttu-id="b7229-138">**Mapping di controllo del GDPR**: accedere a un [mapping completo](https://go.microsoft.com/fwlink/p/?linkid=2052220) dei controlli di Microsoft agli obblighi del GDPR.</span><span class="sxs-lookup"><span data-stu-id="b7229-138">**GDPR control mapping**: Access a [comprehensive mapping](https://go.microsoft.com/fwlink/p/?linkid=2052220) of Microsoft controls to GDPR obligations.</span></span>
 
-## <a name="learn-more"></a><span data-ttu-id="6a6e8-139">Ulteriori informazioni</span><span class="sxs-lookup"><span data-stu-id="6a6e8-139">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="b7229-139">Ulteriori informazioni</span><span class="sxs-lookup"><span data-stu-id="b7229-139">Learn more</span></span>
 
-- [<span data-ttu-id="6a6e8-140">Centro protezione Microsoft</span><span class="sxs-lookup"><span data-stu-id="6a6e8-140">Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
+- [<span data-ttu-id="b7229-140">Centro protezione Microsoft</span><span class="sxs-lookup"><span data-stu-id="b7229-140">Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

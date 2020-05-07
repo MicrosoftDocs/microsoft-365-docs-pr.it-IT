@@ -18,72 +18,79 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere gli ospiti a un gruppo di Microsoft 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: 1b315ac89936aaa69072959031733fef4e0a5c1a
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 48f3339968040eeb82a93d6540c70f0bbea0754a
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049192"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140544"
 ---
-# <a name="manage-guest-access-in-microsoft-365-groups"></a><span data-ttu-id="ddc16-103">Gestire l'accesso guest nei gruppi di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="ddc16-103">Manage guest access in Microsoft 365 groups</span></span>
+# <a name="manage-guest-access-in-microsoft-365-groups"></a><span data-ttu-id="bc791-103">Gestire l'accesso guest nei gruppi di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="bc791-103">Manage guest access in Microsoft 365 groups</span></span>
 
-<span data-ttu-id="ddc16-104">Per impostazione predefinita, l'accesso guest per i gruppi di Microsoft 365 è attivato per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="ddc16-104">By default, guest access for Microsoft 365 groups is turned on for your organization.</span></span> <span data-ttu-id="ddc16-105">Gli amministratori possono controllare se consentire l'accesso Guest ai gruppi per l'intera organizzazione o per i singoli gruppi.</span><span class="sxs-lookup"><span data-stu-id="ddc16-105">Admins can control whether to allow guest access to groups for their whole organization or for individual groups.</span></span>
-
-<span data-ttu-id="ddc16-106">Quando è attivata, i membri del gruppo possono invitare gli utenti Guest a un gruppo di Microsoft 365 tramite Outlook sul Web.</span><span class="sxs-lookup"><span data-stu-id="ddc16-106">When it's turned on, group members can invite guest users to a Microsoft 365 group through Outlook on Web.</span></span> <span data-ttu-id="ddc16-107">Gli inviti vengono inviati al proprietario del gruppo per l'approvazione.</span><span class="sxs-lookup"><span data-stu-id="ddc16-107">Invitations are sent to the group owner for approval.</span></span>
-
-> [!Note]
-> <span data-ttu-id="ddc16-108">Le reti aziendali di Yammer che si trovano in modalità nativa o l' [eu Geo](https://go.microsoft.com/fwlink/?linkid=2107357) non supportano gli utenti della rete.</span><span class="sxs-lookup"><span data-stu-id="ddc16-108">Yammer Enterprise networks that are in Native Mode or the [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) do not support network guests.</span></span>
-> <span data-ttu-id="ddc16-109">I gruppi di Yammer connessi a Microsoft 365 non supportano attualmente l'accesso guest, ma è possibile creare gruppi esterni non connessi nella rete Yammer.</span><span class="sxs-lookup"><span data-stu-id="ddc16-109">Microsoft 365 Connected Yammer groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network.</span></span> <span data-ttu-id="ddc16-110">Per istruzioni, vedere [creare e gestire gruppi esterni in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) .</span><span class="sxs-lookup"><span data-stu-id="ddc16-110">See [Create and manage external groups in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) for instructions.</span></span>
-
-### <a name="edit-guest-information"></a><span data-ttu-id="ddc16-111">Modificare le informazioni Guest</span><span class="sxs-lookup"><span data-stu-id="ddc16-111">Edit guest information</span></span>
-
-<span data-ttu-id="ddc16-112">Una volta approvato, l'utente ospite viene aggiunto alla directory e al gruppo.</span><span class="sxs-lookup"><span data-stu-id="ddc16-112">Once approved, the guest user is added to the directory and the group.</span></span>
-
-<span data-ttu-id="ddc16-113">L'accesso guest nei gruppi è spesso utilizzato come parte di uno scenario più ampio che include SharePoint o teams.</span><span class="sxs-lookup"><span data-stu-id="ddc16-113">Guest access in groups is often used as part of a broader scenario that includes SharePoint or Teams.</span></span> <span data-ttu-id="ddc16-114">Tali servizi dispongono di impostazioni di condivisione Guest.</span><span class="sxs-lookup"><span data-stu-id="ddc16-114">These services have their own guest sharing settings.</span></span> <span data-ttu-id="ddc16-115">Per istruzioni complete su come configurare la condivisione Guest tra gruppi, SharePoint e team, vedere:</span><span class="sxs-lookup"><span data-stu-id="ddc16-115">For complete instructions for setting up guest sharing across groups, SharePoint, and Teams, see:</span></span>
-
-- [<span data-ttu-id="ddc16-116">Collaborare con gli utenti guest a un sito</span><span class="sxs-lookup"><span data-stu-id="ddc16-116">Collaborate with guests in a site</span></span>](../../solutions/collaborate-in-site.md)
-- [<span data-ttu-id="ddc16-117">Collaborare con gli utenti guest in un team</span><span class="sxs-lookup"><span data-stu-id="ddc16-117">Collaborate with guests in a team</span></span>](../../solutions/collaborate-as-team.md)
-
-## <a name="manage-groups-guest-access"></a><span data-ttu-id="ddc16-118">Gestione degli accessi ai gruppi</span><span class="sxs-lookup"><span data-stu-id="ddc16-118">Manage groups guest access</span></span>
-
-<span data-ttu-id="ddc16-119">Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile farlo nell'interfaccia di amministrazione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ddc16-119">If you want to enable or disable guest access in groups, you can do so in the Microsoft 365 admin center.</span></span>
-
-1. <span data-ttu-id="ddc16-120">Nell'interfaccia di amministrazione, passare **Settings** \> alla pagina **Impostazioni e** selezionare **Microsoft 365 gruppi**.</span><span class="sxs-lookup"><span data-stu-id="ddc16-120">In the admin center, go to the **Settings** \> **Settings** and select **Microsoft 365 groups**.</span></span>
-  
-2. <span data-ttu-id="ddc16-121">Nella pagina **Microsoft 365 groups** , scegliere se si desidera consentire agli utenti esterni all'organizzazione di accedere alle risorse del gruppo o consentire ai proprietari di gruppi di aggiungere persone esterne all'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="ddc16-121">On the **Microsoft 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.</span></span>
-
-## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a><span data-ttu-id="ddc16-122">Aggiungere gli utenti a un gruppo di Microsoft 365 dall'interfaccia di amministrazione</span><span class="sxs-lookup"><span data-stu-id="ddc16-122">Add guests to a Microsoft 365 group from the admin center</span></span>
-
-<span data-ttu-id="ddc16-123">Se l'ospite è già presente nella directory, è possibile aggiungerli ai gruppi dall'interfaccia di amministrazione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ddc16-123">If the guest already exists in your directory, you can add them to your groups from the Microsoft 365 admin center.</span></span>
-  
-1. <span data-ttu-id="ddc16-124">Nell'interfaccia di amministrazione, andare alla**Groups**  > pagina **gruppi.**</span><span class="sxs-lookup"><span data-stu-id="ddc16-124">In the admin center, go to the **Groups** > **Groups** page.</span></span>
-  
-2. <span data-ttu-id="ddc16-125">Fare clic sul gruppo a cui si desidera aggiungere l'ospite e selezionare **Visualizza tutti e Gestisci membri** nella scheda **membri** .</span><span class="sxs-lookup"><span data-stu-id="ddc16-125">Click the group you want to add the guest to, and select **View all and manage members** on the **Members** tab.</span></span> 
-  
-4. <span data-ttu-id="ddc16-126">Selezionare **Aggiungi membri**e scegliere il nome del Guest che si desidera aggiungere.</span><span class="sxs-lookup"><span data-stu-id="ddc16-126">Select **Add members**, and choose the name of the guest you want to add.</span></span>
-    
-5. <span data-ttu-id="ddc16-127">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="ddc16-127">Select **Save**.</span></span>
-
-<span data-ttu-id="ddc16-128">Se si desidera aggiungere direttamente un guest alla directory, è possibile [aggiungere gli utenti di collaborazione B2B di Azure Active Directory nel portale di Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).</span><span class="sxs-lookup"><span data-stu-id="ddc16-128">If you want to add a guest to the directory directly, you can [Add Azure Active Directory B2B collaboration users in the Azure portal](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).</span></span>
-
-<span data-ttu-id="ddc16-129">Se si desidera modificare le informazioni di un ospite, è possibile [aggiungere o aggiornare le informazioni del profilo di un utente utilizzando Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="ddc16-129">If you want to edit any of a guest's information, you can [Add or update a user's profile information using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).</span></span>
-  
-## <a name="block-guest-users-from-a-specific-group"></a><span data-ttu-id="ddc16-130">Bloccare gli utenti Guest da un gruppo specifico</span><span class="sxs-lookup"><span data-stu-id="ddc16-130">Block guest users from a specific group</span></span>
-
-<span data-ttu-id="ddc16-131">Se si desidera consentire l'accesso guest alla maggior parte dei gruppi, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per i singoli gruppi tramite Microsoft PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ddc16-131">If you want to allow guest access to most groups, but have some where you want to prevent guest access, you can block guest access for individual groups by using Microsoft PowerShell.</span></span>
-
-<span data-ttu-id="ddc16-132">È necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**) per modificare l'impostazione di accesso Guest a livello di gruppo:</span><span class="sxs-lookup"><span data-stu-id="ddc16-132">You must use the preview version of [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:</span></span>
-
-- <span data-ttu-id="ddc16-133">Se non è ancora stata installata una versione del modulo PowerShell di Azure AD, vedere [installare il modulo Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) e seguire le istruzioni per installare la versione di anteprima pubblica.</span><span class="sxs-lookup"><span data-stu-id="ddc16-133">If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) and follow the instructions to install the public preview release.</span></span>
-
-- <span data-ttu-id="ddc16-134">Se è installata la versione 2.0 disponibile a livello generale del modulo PowerShell di Azure AD (AzureAD), è necessario disinstallarlo eseguendo `Uninstall-Module AzureAD` nella sessione di PowerShell e quindi installare la versione di anteprima eseguendo `Install-Module AzureADPreview`.</span><span class="sxs-lookup"><span data-stu-id="ddc16-134">If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.</span></span>
-
-- <span data-ttu-id="ddc16-135">Se è già stata installata la versione Preview, eseguire `Install-Module AzureADPreview` per verificare che sia la versione più recente di questo modulo.</span><span class="sxs-lookup"><span data-stu-id="ddc16-135">If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version of this module.</span></span>
+::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="ddc16-136">È necessario disporre dei diritti di amministratore globale per eseguire questi comandi.</span><span class="sxs-lookup"><span data-stu-id="ddc16-136">You must have global admin rights to run these commands.</span></span> 
+> <span data-ttu-id="bc791-104">L'interfaccia di amministrazione cambia.</span><span class="sxs-lookup"><span data-stu-id="bc791-104">The admin center is changing.</span></span> <span data-ttu-id="bc791-105">Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="bc791-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
 
-<span data-ttu-id="ddc16-137">Eseguire lo script seguente, modificando \* / \* il nome del gruppo in cui si desidera bloccare l'accesso guest.</span><span class="sxs-lookup"><span data-stu-id="ddc16-137">Run the following script, changing */<GroupName/>* to the name of the group where you want to block guest access.</span></span>
+::: moniker-end
+
+<span data-ttu-id="bc791-106">Per impostazione predefinita, l'accesso guest per i gruppi di Microsoft 365 è attivato per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="bc791-106">By default, guest access for Microsoft 365 groups is turned on for your organization.</span></span> <span data-ttu-id="bc791-107">Gli amministratori possono controllare se consentire l'accesso Guest ai gruppi per l'intera organizzazione o per i singoli gruppi.</span><span class="sxs-lookup"><span data-stu-id="bc791-107">Admins can control whether to allow guest access to groups for their whole organization or for individual groups.</span></span>
+
+<span data-ttu-id="bc791-108">Quando è attivata, i membri del gruppo possono invitare gli utenti Guest a un gruppo di Microsoft 365 tramite Outlook sul Web.</span><span class="sxs-lookup"><span data-stu-id="bc791-108">When it's turned on, group members can invite guest users to a Microsoft 365 group through Outlook on Web.</span></span> <span data-ttu-id="bc791-109">Gli inviti vengono inviati al proprietario del gruppo per l'approvazione.</span><span class="sxs-lookup"><span data-stu-id="bc791-109">Invitations are sent to the group owner for approval.</span></span>
+
+> [!Note]
+> <span data-ttu-id="bc791-110">Le reti aziendali di Yammer che si trovano in modalità nativa o l' [eu Geo](https://go.microsoft.com/fwlink/?linkid=2107357) non supportano gli utenti della rete.</span><span class="sxs-lookup"><span data-stu-id="bc791-110">Yammer Enterprise networks that are in Native Mode or the [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) do not support network guests.</span></span>
+> <span data-ttu-id="bc791-111">I gruppi di Yammer connessi a Microsoft 365 non supportano attualmente l'accesso guest, ma è possibile creare gruppi esterni non connessi nella rete Yammer.</span><span class="sxs-lookup"><span data-stu-id="bc791-111">Microsoft 365 Connected Yammer groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network.</span></span> <span data-ttu-id="bc791-112">Per istruzioni, vedere [creare e gestire gruppi esterni in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) .</span><span class="sxs-lookup"><span data-stu-id="bc791-112">See [Create and manage external groups in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) for instructions.</span></span>
+
+### <a name="edit-guest-information"></a><span data-ttu-id="bc791-113">Modificare le informazioni Guest</span><span class="sxs-lookup"><span data-stu-id="bc791-113">Edit guest information</span></span>
+
+<span data-ttu-id="bc791-114">Una volta approvato, l'utente ospite viene aggiunto alla directory e al gruppo.</span><span class="sxs-lookup"><span data-stu-id="bc791-114">Once approved, the guest user is added to the directory and the group.</span></span>
+
+<span data-ttu-id="bc791-115">L'accesso guest nei gruppi è spesso utilizzato come parte di uno scenario più ampio che include SharePoint o teams.</span><span class="sxs-lookup"><span data-stu-id="bc791-115">Guest access in groups is often used as part of a broader scenario that includes SharePoint or Teams.</span></span> <span data-ttu-id="bc791-116">Tali servizi dispongono di impostazioni di condivisione Guest.</span><span class="sxs-lookup"><span data-stu-id="bc791-116">These services have their own guest sharing settings.</span></span> <span data-ttu-id="bc791-117">Per istruzioni complete su come configurare la condivisione Guest tra gruppi, SharePoint e team, vedere:</span><span class="sxs-lookup"><span data-stu-id="bc791-117">For complete instructions for setting up guest sharing across groups, SharePoint, and Teams, see:</span></span>
+
+- [<span data-ttu-id="bc791-118">Collaborare con gli utenti guest a un sito</span><span class="sxs-lookup"><span data-stu-id="bc791-118">Collaborate with guests in a site</span></span>](../../solutions/collaborate-in-site.md)
+- [<span data-ttu-id="bc791-119">Collaborare con gli utenti guest in un team</span><span class="sxs-lookup"><span data-stu-id="bc791-119">Collaborate with guests in a team</span></span>](../../solutions/collaborate-as-team.md)
+
+## <a name="manage-groups-guest-access"></a><span data-ttu-id="bc791-120">Gestione degli accessi ai gruppi</span><span class="sxs-lookup"><span data-stu-id="bc791-120">Manage groups guest access</span></span>
+
+<span data-ttu-id="bc791-121">Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile farlo nell'interfaccia di amministrazione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="bc791-121">If you want to enable or disable guest access in groups, you can do so in the Microsoft 365 admin center.</span></span>
+
+1. <span data-ttu-id="bc791-122">Nell'interfaccia di amministrazione, passare **Settings** \> alla pagina **Impostazioni e** selezionare **Microsoft 365 gruppi**.</span><span class="sxs-lookup"><span data-stu-id="bc791-122">In the admin center, go to the **Settings** \> **Settings** and select **Microsoft 365 groups**.</span></span>
+  
+2. <span data-ttu-id="bc791-123">Nella pagina **Microsoft 365 groups** , scegliere se si desidera consentire agli utenti esterni all'organizzazione di accedere alle risorse del gruppo o consentire ai proprietari di gruppi di aggiungere persone esterne all'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="bc791-123">On the **Microsoft 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.</span></span>
+
+## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a><span data-ttu-id="bc791-124">Aggiungere gli utenti a un gruppo di Microsoft 365 dall'interfaccia di amministrazione</span><span class="sxs-lookup"><span data-stu-id="bc791-124">Add guests to a Microsoft 365 group from the admin center</span></span>
+
+<span data-ttu-id="bc791-125">Se l'ospite è già presente nella directory, è possibile aggiungerli ai gruppi dall'interfaccia di amministrazione di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="bc791-125">If the guest already exists in your directory, you can add them to your groups from the Microsoft 365 admin center.</span></span>
+  
+1. <span data-ttu-id="bc791-126">Nell'interfaccia di amministrazione, andare alla**Groups**  > pagina **gruppi.**</span><span class="sxs-lookup"><span data-stu-id="bc791-126">In the admin center, go to the **Groups** > **Groups** page.</span></span>
+  
+2. <span data-ttu-id="bc791-127">Fare clic sul gruppo a cui si desidera aggiungere l'ospite e selezionare **Visualizza tutti e Gestisci membri** nella scheda **membri** .</span><span class="sxs-lookup"><span data-stu-id="bc791-127">Click the group you want to add the guest to, and select **View all and manage members** on the **Members** tab.</span></span> 
+  
+4. <span data-ttu-id="bc791-128">Selezionare **Aggiungi membri**e scegliere il nome del Guest che si desidera aggiungere.</span><span class="sxs-lookup"><span data-stu-id="bc791-128">Select **Add members**, and choose the name of the guest you want to add.</span></span>
+    
+5. <span data-ttu-id="bc791-129">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="bc791-129">Select **Save**.</span></span>
+
+<span data-ttu-id="bc791-130">Se si desidera aggiungere direttamente un guest alla directory, è possibile [aggiungere gli utenti di collaborazione B2B di Azure Active Directory nel portale di Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).</span><span class="sxs-lookup"><span data-stu-id="bc791-130">If you want to add a guest to the directory directly, you can [Add Azure Active Directory B2B collaboration users in the Azure portal](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).</span></span>
+
+<span data-ttu-id="bc791-131">Se si desidera modificare le informazioni di un ospite, è possibile [aggiungere o aggiornare le informazioni del profilo di un utente utilizzando Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="bc791-131">If you want to edit any of a guest's information, you can [Add or update a user's profile information using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).</span></span>
+  
+## <a name="block-guest-users-from-a-specific-group"></a><span data-ttu-id="bc791-132">Bloccare gli utenti Guest da un gruppo specifico</span><span class="sxs-lookup"><span data-stu-id="bc791-132">Block guest users from a specific group</span></span>
+
+<span data-ttu-id="bc791-133">Se si desidera consentire l'accesso guest alla maggior parte dei gruppi, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per i singoli gruppi tramite Microsoft PowerShell.</span><span class="sxs-lookup"><span data-stu-id="bc791-133">If you want to allow guest access to most groups, but have some where you want to prevent guest access, you can block guest access for individual groups by using Microsoft PowerShell.</span></span>
+
+<span data-ttu-id="bc791-134">È necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**) per modificare l'impostazione di accesso Guest a livello di gruppo:</span><span class="sxs-lookup"><span data-stu-id="bc791-134">You must use the preview version of [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:</span></span>
+
+- <span data-ttu-id="bc791-135">Se non è ancora stata installata una versione del modulo PowerShell di Azure AD, vedere [installare il modulo Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) e seguire le istruzioni per installare la versione di anteprima pubblica.</span><span class="sxs-lookup"><span data-stu-id="bc791-135">If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) and follow the instructions to install the public preview release.</span></span>
+
+- <span data-ttu-id="bc791-136">Se è installata la versione 2.0 disponibile a livello generale del modulo PowerShell di Azure AD (AzureAD), è necessario disinstallarlo eseguendo `Uninstall-Module AzureAD` nella sessione di PowerShell e quindi installare la versione di anteprima eseguendo `Install-Module AzureADPreview`.</span><span class="sxs-lookup"><span data-stu-id="bc791-136">If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.</span></span>
+
+- <span data-ttu-id="bc791-137">Se è già stata installata la versione Preview, eseguire `Install-Module AzureADPreview` per verificare che sia la versione più recente di questo modulo.</span><span class="sxs-lookup"><span data-stu-id="bc791-137">If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version of this module.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="bc791-138">È necessario disporre dei diritti di amministratore globale per eseguire questi comandi.</span><span class="sxs-lookup"><span data-stu-id="bc791-138">You must have global admin rights to run these commands.</span></span> 
+
+<span data-ttu-id="bc791-139">Eseguire lo script seguente, modificando \* / \* il nome del gruppo in cui si desidera bloccare l'accesso guest.</span><span class="sxs-lookup"><span data-stu-id="bc791-139">Run the following script, changing */<GroupName/>* to the name of the group where you want to block guest access.</span></span>
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -97,42 +104,42 @@ $groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
 New-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy
 ```
 
-<span data-ttu-id="ddc16-138">Per verificare le impostazioni, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="ddc16-138">To verify your settings, run this command:</span></span>
+<span data-ttu-id="bc791-140">Per verificare le impostazioni, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="bc791-140">To verify your settings, run this command:</span></span>
 
 ```PowerShell
 Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 ```
 
-<span data-ttu-id="ddc16-139">La verifica è simile alla seguente:</span><span class="sxs-lookup"><span data-stu-id="ddc16-139">The verification looks like this:</span></span>
+<span data-ttu-id="bc791-141">La verifica è simile alla seguente:</span><span class="sxs-lookup"><span data-stu-id="bc791-141">The verification looks like this:</span></span>
     
 ![Schermata della finestra di PowerShell che indica che l'accesso al gruppo Guest è stato impostato su false.](../../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
   
-## <a name="allow-or-block-guest-access-based-on-their-domain"></a><span data-ttu-id="ddc16-141">Consenti o blocca l'accesso guest in base al dominio</span><span class="sxs-lookup"><span data-stu-id="ddc16-141">Allow or block guest access based on their domain</span></span>
+## <a name="allow-or-block-guest-access-based-on-their-domain"></a><span data-ttu-id="bc791-143">Consenti o blocca l'accesso guest in base al dominio</span><span class="sxs-lookup"><span data-stu-id="bc791-143">Allow or block guest access based on their domain</span></span>
 
-<span data-ttu-id="ddc16-142">È possibile autorizzare o bloccare utenti guest che utilizzano uno specifico dominio.</span><span class="sxs-lookup"><span data-stu-id="ddc16-142">You can allow or block guest users who are using a specific domain.</span></span> <span data-ttu-id="ddc16-143">Ad esempio, se la propria azienda (contoso) ha una partnership con un'altra azienda (Fabrikam), è possibile aggiungere Fabrikam all'elenco Consenti in modo che gli utenti possano aggiungerli ai propri gruppi.</span><span class="sxs-lookup"><span data-stu-id="ddc16-143">For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your Allow list so your users can add those guests to their groups.</span></span>
+<span data-ttu-id="bc791-144">È possibile autorizzare o bloccare utenti guest che utilizzano uno specifico dominio.</span><span class="sxs-lookup"><span data-stu-id="bc791-144">You can allow or block guest users who are using a specific domain.</span></span> <span data-ttu-id="bc791-145">Ad esempio, se la propria azienda (contoso) ha una partnership con un'altra azienda (Fabrikam), è possibile aggiungere Fabrikam all'elenco Consenti in modo che gli utenti possano aggiungerli ai propri gruppi.</span><span class="sxs-lookup"><span data-stu-id="bc791-145">For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your Allow list so your users can add those guests to their groups.</span></span>
 
-<span data-ttu-id="ddc16-144">Per ulteriori informazioni, vedere [Consenti o blocca gli inviti agli utenti B2B provenienti da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).</span><span class="sxs-lookup"><span data-stu-id="ddc16-144">For more information, see [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).</span></span>
+<span data-ttu-id="bc791-146">Per ulteriori informazioni, vedere [Consenti o blocca gli inviti agli utenti B2B provenienti da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).</span><span class="sxs-lookup"><span data-stu-id="bc791-146">For more information, see [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).</span></span>
 
-## <a name="add-guests-to-the-global-address-list"></a><span data-ttu-id="ddc16-145">Aggiungere gli ospiti all'elenco indirizzi globale</span><span class="sxs-lookup"><span data-stu-id="ddc16-145">Add guests to the global address list</span></span>
+## <a name="add-guests-to-the-global-address-list"></a><span data-ttu-id="bc791-147">Aggiungere gli ospiti all'elenco indirizzi globale</span><span class="sxs-lookup"><span data-stu-id="bc791-147">Add guests to the global address list</span></span>
 
-<span data-ttu-id="ddc16-146">Per impostazione predefinita, gli utenti non sono visibili nell'elenco indirizzi globale di Exchange.</span><span class="sxs-lookup"><span data-stu-id="ddc16-146">By default, guests aren't visible in the Exchange Global Address List.</span></span> <span data-ttu-id="ddc16-147">Utilizzare la procedura riportata di seguito per rendere visibile un ospite nell'elenco indirizzi globale.</span><span class="sxs-lookup"><span data-stu-id="ddc16-147">Use the steps listed below to make a guest visible in the global address list.</span></span>
+<span data-ttu-id="bc791-148">Per impostazione predefinita, gli utenti non sono visibili nell'elenco indirizzi globale di Exchange.</span><span class="sxs-lookup"><span data-stu-id="bc791-148">By default, guests aren't visible in the Exchange Global Address List.</span></span> <span data-ttu-id="bc791-149">Utilizzare la procedura riportata di seguito per rendere visibile un ospite nell'elenco indirizzi globale.</span><span class="sxs-lookup"><span data-stu-id="bc791-149">Use the steps listed below to make a guest visible in the global address list.</span></span>
 
-<span data-ttu-id="ddc16-148">Individuare l'ObjectID dell'utente Guest eseguendo:</span><span class="sxs-lookup"><span data-stu-id="ddc16-148">Find the guest user's ObjectID by running:</span></span>
+<span data-ttu-id="bc791-150">Individuare l'ObjectID dell'utente Guest eseguendo:</span><span class="sxs-lookup"><span data-stu-id="bc791-150">Find the guest user's ObjectID by running:</span></span>
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"
 ```
 
-<span data-ttu-id="ddc16-149">Eseguire quindi il comando seguente utilizzando i valori corretti per ObjectID, DATENAME, cognome, DisplayName e TelephoneNumber.</span><span class="sxs-lookup"><span data-stu-id="ddc16-149">Then run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.</span></span>
+<span data-ttu-id="bc791-151">Eseguire quindi il comando seguente utilizzando i valori corretti per ObjectID, DATENAME, cognome, DisplayName e TelephoneNumber.</span><span class="sxs-lookup"><span data-stu-id="bc791-151">Then run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.</span></span>
 
 ```PowerShell
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-articles"></a><span data-ttu-id="ddc16-150">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="ddc16-150">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="bc791-152">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="bc791-152">Related articles</span></span>
 
-[<span data-ttu-id="ddc16-151">Gestire l'appartenenza ai gruppi nell'interfaccia di amministrazione di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="ddc16-151">Manage group membership in the Microsoft 365 admin center</span></span>](add-or-remove-members-from-groups.md)
+[<span data-ttu-id="bc791-153">Gestire l'appartenenza ai gruppi nell'interfaccia di amministrazione di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="bc791-153">Manage group membership in the Microsoft 365 admin center</span></span>](add-or-remove-members-from-groups.md)
   
-[<span data-ttu-id="ddc16-152">Recensioni di Azure Active Directory Access</span><span class="sxs-lookup"><span data-stu-id="ddc16-152">Azure Active Directory access reviews</span></span>](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[<span data-ttu-id="bc791-154">Recensioni di Azure Active Directory Access</span><span class="sxs-lookup"><span data-stu-id="bc791-154">Azure Active Directory access reviews</span></span>](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
-[<span data-ttu-id="ddc16-153">Set-AzureADUser</span><span class="sxs-lookup"><span data-stu-id="ddc16-153">Set-AzureADUser</span></span>](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser)
+[<span data-ttu-id="bc791-155">Set-AzureADUser</span><span class="sxs-lookup"><span data-stu-id="bc791-155">Set-AzureADUser</span></span>](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser)
