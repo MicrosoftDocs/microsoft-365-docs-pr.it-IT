@@ -23,25 +23,25 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Informazioni su come verificare il dominio e creare record DNS presso un provider di hosting DNS per Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2cf28cdd3cc2f85e448d512e72f5b022177e8f1e
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048784"
+ms.locfileid: "44053724"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Creare record DNS presso un provider di hosting DNS
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
-Controllare l'elenco delle [istruzioni specifiche per l'host](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) per trovare l'host e seguire la procedura per aggiungere tutti i record necessari. 
+Controllare l'elenco delle [istruzioni specifiche per l'host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) per trovare l'host e seguire la procedura per aggiungere tutti i record necessari. 
   
 Per identificare il provider di hosting DNS o il registrar per il dominio, vedere [Trovare il registrar o il provider di hosting DNS](../get-help-with-domains/find-your-domain-registrar.md).
   
 Ecco i record da aggiungere per la configurazione manuale. Si noti che il record di verifica e il record MX sono specifici del dominio. Per configurarli, è necessario ottenere e usare un valore "token" specifico per il dominio. I passaggi seguenti spiegano come fare.
   
 > [!IMPORTANT]
-> Il nome esatto delle caselle o dei  *campi*  in cui si digitano o incollano le informazioni per creare i diversi tipi di record DNS varia a seconda dell'host DNS. Sul sito Web dell'host potrebbe essere disponibile una Guida per aiutare ad associare le istruzioni contenute qui ai campi del sito Web. È consigliabile controllare se sono disponibili istruzioni dettagliate per il proprio host DNS nell'articolo [Creare record DNS per Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). >  Alcuni host DNS non consentono di creare tutti i tipi di record necessari, con conseguenti [limitazioni del servizio](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. Se l'host del proprio dominio non supporta i record SRV, TXT o CNAME, ad esempio, è consigliabile [trasferire il dominio](../get-help-with-domains/buy-a-domain-name.md) in un host che supporta tutti i record necessari. Per una configurazione automatizzata delle procedure con Microsoft 365, è consigliabile trasferire il dominio in GoDaddy. 
+> Il nome esatto delle caselle o dei  *campi*  in cui si digitano o incollano le informazioni per creare i diversi tipi di record DNS varia a seconda dell'host DNS. Sul sito Web dell'host potrebbe essere disponibile una Guida per aiutare ad associare le istruzioni contenute qui ai campi del sito Web. È consigliabile controllare se sono disponibili istruzioni dettagliate per il proprio host DNS nell'articolo [Creare record DNS per Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). >  Alcuni host DNS non consentono di creare tutti i tipi di record necessari, con conseguenti [limitazioni del servizio](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. Se l'host del proprio dominio non supporta i record SRV, TXT o CNAME, ad esempio, è consigliabile [trasferire il dominio](../get-help-with-domains/buy-a-domain-name.md) in un host che supporta tutti i record necessari. Per una configurazione automatizzata delle procedure con Microsoft 365, è consigliabile trasferire il dominio in GoDaddy. 
   
 > [!NOTE]
 > In genere l'applicazione delle modifiche al DNS richiede pochi minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -432,6 +432,6 @@ Nel sito Web dell'host DNS sarà necessario creare due nuovi record SRV, in gene
   
  **Se è necessaria assistenza per aggiungere i record DNS necessari**, vedere [Configurare il dominio (istruzioni specifiche per l'host)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide) e [raccogliere innanzitutto le informazioni necessarie per creare record DNS di Microsoft 365](../get-help-with-domains/information-for-dns-records.md). Seguire quindi i passaggi generali descritti in questo argomento per configurare i record DNS del dominio in modo da poter usare il dominio con i servizi di Microsoft 365, come la posta elettronica.
   
- **Se non si ha un sito Web da usare con il dominio personalizzato**, è possibile affidare a Microsoft 365 la configurazione e la gestione dei record DNS per il dominio invece di eseguire tutte le operazioni manualmente. Leggere informazioni sulle [due opzioni disponibili per configurare e gestire i record DNS per un dominio personalizzato](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) in Microsoft 365. 
+ **Se non si ha un sito Web da usare con il dominio personalizzato**, è possibile affidare a Microsoft 365 la configurazione e la gestione dei record DNS per il dominio invece di eseguire tutte le operazioni manualmente. Leggere informazioni sulle [due opzioni disponibili per configurare e gestire i record DNS per un dominio personalizzato](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. 
   
 

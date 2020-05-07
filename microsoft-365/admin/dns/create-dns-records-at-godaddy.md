@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su GoDaddy per Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 0f71eb512b83451db8fee41b535ecc0c60d8d6bc
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: b1c5539af6683bbf8f94fd15880fb870caf31342
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939216"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049024"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>Creare record DNS su GoDaddy per Microsoft
 
@@ -122,7 +122,7 @@ Effettuare le operazioni seguenti.
 
     |**Tipo di record**|**Host**|**Punta a**|**Priorità**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |1 ora  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1 ora  <br/> |
 
 6. Selezionare **Salva**.
 

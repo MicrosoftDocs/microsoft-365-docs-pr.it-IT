@@ -22,14 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Informazioni su come configurare e utilizzare Microsoft 365 nel computer, nel telefono e nel tablet.
-ms.openlocfilehash: fd52b12ab008e2c8d7b7a4476ae2212e01e1bb10
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6db85e57757d627c22767289761b4cb3120b3716
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623919"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049424"
 ---
-# <a name="get-started"></a>Per iniziare
+# <a name="get-started"></a>Informazioni di base
 
 L'organizzazione ha recentemente ottenuto Microsoft 365 e ora è necessario utilizzarla per iniziare a leggere messaggi di posta elettronica, condividere documenti e altro ancora. Informazioni su come configurare e utilizzare Microsoft 365 nel computer, nel telefono e nel tablet.
   
@@ -60,7 +60,7 @@ Di seguito sono riportate alcune risorse utili per iniziare.
   
 - [Formazione per gli amministratori](https://support.office.com/article/e990f8ff-56d7-450e-ad9f-74ae8718ef09.aspx): ottenere collegamenti a classi gratuite online per gli amministratori.
     
-- [Guida](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx)per gli amministratori: ottenere informazioni sulle attività principali, Guida introduttiva agli strumenti di amministrazione e risoluzione dei problemi.
+- [Guida](https://docs.microsoft.com/microsoft-365/admin/admin-home)per gli amministratori: ottenere informazioni sulle attività principali, Guida introduttiva agli strumenti di amministrazione e risoluzione dei problemi.
     
 - [Supporto per i contatti-Guida](../contact-support-for-business-products.md) per gli amministratori: chiamateci, aprite una richiesta online o lasciate che la community sia d'aiuto. 
     

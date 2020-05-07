@@ -1,6 +1,5 @@
 ---
 title: Richieste degli interessati nell'ambito del GDPR e del CCPA
-description: ''
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,18 +14,20 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fc5f4f8752d17595cfafaa39626f0d36675d7c82
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Informazioni su come completare le richieste degli interessati in base al Regolamento generale sulla protezione dei dati (GDPR) e al California Consumer Privacy Act (CCPA) usando i prodotti e i servizi Microsoft.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 7342c0ae4105c05ae2e2956df51581d3afedb286
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558056"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035474"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Richieste degli interessati nell'ambito del GDPR e del CCPA
 
-Il Regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda. Altri dettagli sono disponibili [nell'argomento Riepilogo sul GDPR](gdpr.md).
+Il Regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda. Altri dettagli sono disponibili [nell'argomento relativo al Riepilogo sul GDPR](gdpr.md).
 
-Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". Questo documento illustra come completare le richieste dell'interessato (DSR) secondo il GDPR e il CCPA usando i prodotti e i servizi Microsoft.
+Analogamente, il California Consumer Privacy Act (CCPA) prevede obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili a quelli che il GDPR riconosce all'interessato, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". Questo documento illustra come completare le richieste dell'interessato (DSR) secondo il GDPR e il CCPA usando i prodotti e i servizi Microsoft.
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -49,17 +50,17 @@ Definizioni utili per i termini relativi al GDPR usati nel documento:
 
 Il regolamento generale sulla protezione dei dati (GDPR) attribuisce alle persone (definite nel regolamento "soggetti interessati") il diritto di gestire i dati personali raccolti da un datore di lavoro o da un altro tipo di organizzazione o organismo (definito titolare del trattamento dei dati o semplicemente titolare del trattamento). In base al regolamento GDPR, ai soggetti dei dati vengono assegnati diritti specifici per i dati personali, tra i quali il diritto di ottenere copie dei dati personali stessi, richiedere modifiche di tali dati, limitarne l'elaborazione, eliminarli o riceverli in formato elettronico in modo che possano essere trasferiti a un altro titolare.
 
-Il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  
+Il California Consumer Privacy Act (CCPA) prevede obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili a quelli che il GDPR riconosce all'interessato, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  
 
 In quanto titolare, è necessario prendere in considerazione ogni richiesta dell'interessato e fornire una risposta sostanziale, eseguendo l'azione richiesta o fornendo una spiegazione del motivo per cui la richiesta non può essere soddisfatta dal titolare. Un titolare deve rivolgersi al proprio consulente legale o alla conformità relativamente all'idoneità di qualsiasi richiesta dell’interessato specifica.
 
-È possibile che nel completamento di una richiesta siano coinvolti diversi processi, soggetti alle regole di conformità al GDPR dell'organizzazione.
+Nel completamento di una richiesta dell'interessato possono essere coinvolti diversi processi, a seconda delle regole di conformità al GDPR dell'organizzazione.
   
 - **Individuazione**. Il processo di determinazione dei dati necessari per completare una richiesta dell’interessato.
 - **Accesso**. Il recupero e la potenziale trasmissione al soggetto interessato delle informazioni individuate.
 - **Rettifica**. Implementare le modifiche o altre modifiche ai dati personali richieste.
 - **Restrizione**. Modifica dell'accesso o dell'elaborazione dei dati personali, restrizione dell'accesso o rimozione dei dati da Microsoft Cloud.
-- **Esportazione**. Fornire un "formato strutturato, comunemente usato e leggibile dalla macchina" dei dati personali del soggetto interessato, come indicato dal "diritto alla portabilità dei dati" del GDPR.
+- **Esportazione**. Fornire i dati personali all'interessato in un "formato strutturato, di uso comune e leggibile da dispositivo automatico", come previsto dal "diritto alla portabilità dei dati" del GDPR.
 - **Eliminazione**. Rimozione definitiva dei dati personali da Microsoft Cloud.
 
 ## <a name="specific-dsr-considerations"></a>Considerazioni specifiche sulle richieste dell’interessato
@@ -78,7 +79,7 @@ I log e i dati correlati generati da Microsoft potrebbero contenere dati conside
 
 ### <a name="yammer-and-kaizala"></a>Yammer e Kaizala
 
-L'eliminazione di un account utente non rimuove i log generati dal sistema per Yammer e Kaizala. Per rimuovere i dati da queste applicazioni, vedere una delle seguenti risorse:
+L'eliminazione dell'account di un utente non comporta la rimozione dei log generati dal sistema per Yammer e Kaizala. Per rimuovere i dati da queste applicazioni, fare riferimento a una delle seguenti risorse:
 
 - [Gestire le richieste dell'interessato per il GDPR in Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [Esportare o eliminare i dati dell'organizzazione di un utente in Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
@@ -93,7 +94,7 @@ Se l'organizzazione o gli utenti si impegnano con Microsoft a ricevere supporto 
 
 ### <a name="microsoft-controller-products"></a>Prodotti con titolare Microsoft
 
-In alcune situazioni, gli utenti dell'organizzazione possono accedere ai prodotti o ai servizi Microsoft per cui Microsoft è il titolare del trattamento dei dati. In questi casi, è necessario che gli utenti rivolgano le proprie richieste direttamente a Microsoft, e Microsoft soddisferà le richieste per l'utente direttamente.
+In alcune situazioni, gli utenti dell'organizzazione possono accedere a prodotti o ai servizi Microsoft per cui Microsoft è il titolare del trattamento dei dati. In questi casi, è necessario che gli utenti rivolgano le proprie richieste direttamente a Microsoft, e Microsoft soddisferà le richieste per l'utente direttamente.
 
 ### <a name="third-party-products"></a>Prodotti di terze parti
 

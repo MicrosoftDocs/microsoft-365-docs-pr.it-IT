@@ -1,6 +1,6 @@
 ---
 title: RGDP per Office Online Server e Server Office Web Apps
-description: Informazioni su come gestire i requisiti GDPR nell'ambiente Exchange Server locale.
+description: In questo articolo vengono fornite informazioni su come gestire i requisiti del GDPR per Office Online Server e Office Web Apps Server.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e16f206c858d35dd2894b44d398e375c0a59fde5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0391fccfd7316b5c3268dd479c16fc2acf37080d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073259"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036271"
 ---
-# <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>RGDP per Server Office Web Apps e Office Online Server
+# <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>GDPR per Server Office Web Apps e Office Online Server
 
 I dati di telemetria di Office Online Server e Server Office Web Apps sono archiviati come log ULS. È possibile utilizzare il [Visualizzatore Servizio di registrazione unificato](https://www.microsoft.com/download/details.aspx?id=44020) per visualizzare i log di Servizio di registrazione unificato dal tenant locale.
 

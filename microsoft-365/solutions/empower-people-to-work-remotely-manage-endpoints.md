@@ -17,18 +17,20 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Usare Microsoft Endpoint Manager per gestire dispositivi, PC e altri endpoint.
-ms.openlocfilehash: 76e18d65865f4ec2bbc8a8d1554bb4cad6fee553
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 2a5b047aabb95d0b60c46fe3bec339e723adee0e
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011604"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049583"
 ---
 # <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint
 
 Con i lavoratori remoti, è necessario supportare un numero crescente di dispositivi personali. La gestione degli endpoint è un approccio alla sicurezza basato su criteri che richiede che i dispositivi siano conformi a criteri specifici prima che gli venga consentito l'accesso alle risorse. Microsoft Endpoint Manager offre strumenti moderni per l'area di lavoro e la gestione, che garantiscono la sicurezza dei dati sia nel cloud sia in locale. 
 
 Endpoint Manager include servizi e strumenti che consentono di gestire dispositivi mobili, computer desktop, macchine virtuali, dispositivi incorporati e server combinando i servizi seguenti, probabilmente già noti e usati.
+
+![I componenti per la gestione degli endpoint](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 

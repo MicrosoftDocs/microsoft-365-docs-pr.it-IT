@@ -15,14 +15,21 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Informazioni su come chiudere l'account con Microsoft.
-ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e41d11502b0c0f738cc23405c387bd5fca1cb0fe
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045777"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141279"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Quando si chiude l'account con Microsoft, verranno eliminate tutte le informazioni correlate all'account. Queste informazioni includono abbonamenti, licenze, modalità di pagamento, utenti e dati utente. Prima di iniziare questa procedura, verificare di eseguire il backup di tutti i dati che si desidera conservare.
 

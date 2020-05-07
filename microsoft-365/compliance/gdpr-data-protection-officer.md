@@ -1,6 +1,6 @@
 ---
 title: Responsabile della protezione dei dati di Microsoft
-description: Informazioni sul Responsabile della protezione dei dati dell'Unione europea di Microsoft per il GDPR
+description: Informazioni sulla posizione e le qualifiche del Responsabile della protezione dei dati dell'Unione europea di Microsoft per il GDPR.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,18 +15,19 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 8e517db11806085339f6f431c9b942b468a211ed
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b09458bfba65a196ff9be4d9bfd7f3fbfda25fda
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558066"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036094"
 ---
 # <a name="microsofts-data-protection-officer"></a>Responsabile della protezione dei dati di Microsoft
 
 ## <a name="overview"></a>Panoramica
 
-Microsoft ha designato un responsabile della protezione dei dati dell'Unione europea affinché sia un consulente indipendente per i gruppi aziendali e di progettazione Microsoft e per garantire che il trattamento dei dati personali proposto rispetti i requisiti legati comunitari e gli standard aziendali di Microsoft. Il ruolo è stato designato per soddisfare i criteri del GDPR delineati negli Articoli 37-39.
+Microsoft ha designato un responsabile della protezione dei dati dell'Unione europea quale consulente indipendente per i gruppi aziendali e di progettazione Microsoft e per garantire che il trattamento dei dati personali proposto rispetti i requisiti legati comunitari e gli standard aziendali di Microsoft. Il ruolo è stato progettato per soddisfare i criteri del GDPR delineati negli Articoli 37-39.
 
 ## <a name="qualifications"></a>Qualifiche professionali
 
@@ -38,7 +39,7 @@ Il responsabile della protezione dei dati è prontamente e adeguatamente coinvol
 
 ## <a name="position-of-the-data-protection-officer"></a>Posizione del responsabile della protezione dei dati
 
-Il responsabile della protezione dei dati dell'Unione europea riferisce direttamente al Privacy Officer di Microsoft, un soggetto senior all'interno del reparto Corporate and Legal Affairs di Microsoft. Il ruolo di responsabile della protezione dei dati ha l'autonomia di svolgere le proprie funzioni in modo indipendente e imparziale. Tramite l'organizzazione del Privacy Officer, il responsabile della protezione dei dati ha accesso alle risorse relative alla formazione e alle risposte dei clienti come necessario per adempiere al suo ruolo. Sulla base di un accordo di riservatezza, il responsabile della protezione dei dati è vincolato da un obbligo di riservatezza per quanto riguarda le proprie attività.  
+Il responsabile della protezione dei dati dell'Unione europea riferisce direttamente al Privacy Officer di Microsoft, un soggetto senior all'interno del reparto Corporate and Legal Affairs di Microsoft. Il ruolo di responsabile della protezione dei dati gode dell'autonomia necessaria per svolgere le proprie funzioni in modo indipendente e imparziale. Tramite l'organizzazione del Privacy Officer, il responsabile della protezione dei dati ha accesso alle risorse di formazione e per la risposta ai clienti di cui necessita per adempiere al suo ruolo. Sulla base di un accordo di riservatezza, il responsabile della protezione dei dati è vincolato da un obbligo di riservatezza per quanto riguarda le proprie attività.  
 
 ## <a name="contact"></a>Contatto
 
@@ -55,6 +56,6 @@ Telefono: + 353 (0) 1295 3826<br>
 
 Le informazioni di contatto del responsabile della protezione dei dati sono state comunicate all'autorità di supervisione di Microsoft.
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Scopri di più
 
 - [Centro protezione Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

@@ -1,6 +1,6 @@
 ---
 title: GDPR per SharePoint Server
-description: Informazioni su come gestire i requisiti GDPR nell'ambiente SharePoint Server locale.
+description: Informazioni su come gestire i requisiti del GDPR in SharePoint Server locale.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 6cbcb7f0918d472d953cb0f837adcb23b642a3a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 58ddbe98ec5ca6b08e6d6be58c4258265c13e3de
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596393"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036229"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>GDPR per SharePoint Server
 
@@ -113,7 +114,7 @@ In SharePoint Server, la cronologia delle query e le query "preferite" scadono a
 
 Le seguenti query SQL si applicano a SharePoint Server e consentono di:
 
--   Esportare la cronologia query o le query preferite di un utente
+-   Esportare la cronologia delle query o le query preferite di un utente
 
 -   Rimuovere i riferimenti ai nomi utente nella cronologia query
 
@@ -143,7 +144,7 @@ END 
 GO 
 ```
 
-#### <a name="export-a-users-queries-from-the-past-100-days"></a>Esportare le query di un utente relative a un periodo di 100 giorni
+#### <a name="export-a-users-queries-from-the-past-100-days"></a>Esportare le query di un utente degli ultimi 100 giorni
 
 ```sql
 DECLARE @FROMDATE datetime 
@@ -179,7 +180,7 @@ END 
 GO 
 ```
 
-#### <a name="export-a-users-favorite-queries-from-the-past-100-days"></a>Esportare le query preferite di un utente relative a un periodo di 100 giorni 
+#### <a name="export-a-users-favorite-queries-from-the-past-100-days"></a>Esportare le query preferite di un utente degli ultimi 100 giorni 
 
 ```sql
 DECLARE @FROMDATE datetime 
@@ -306,9 +307,9 @@ Seguire questi semplici passaggi per rimuovere le informazioni personali di un u
 
 2.  Eseguire una[sincronizzazione dei profili](https://docs.microsoft.com/sharepoint/administration/start-profile-synchronization-manually) su SharePoint Server.
 
-3.  Eliminare il profilo di SharePoint Server. Una volta terminata la procedura, SharePoint Server rimuoverà completamente il profilo dal Database profili utente entro 30 giorni. La pagina del profilo e il sito personale dell'utente saranno cancellati.
+3.  Eliminare il profilo di SharePoint Server. Al termine della procedura, SharePoint Server rimuoverà completamente il profilo dal Database profili utente entro 30 giorni. La pagina del profilo e il sito personale dell'utente saranno cancellati.
 
-Dopo l'eliminazione di un profilo utente, alcune informazioni limitate (ad esempio l'ID utente) potrebbero risultare ancora registrate nelle raccolte siti visitate dall'utente. Se si sceglie di eliminare i dati da una raccolta siti, questa operazione può essere eseguita utilizzando CSOM. Qui di seguito è riportato uno script di esempio:
+Dopo l'eliminazione di un profilo utente, alcune informazioni limitate (ad esempio l'ID utente) potrebbero risultare ancora registrate nelle raccolte siti visitate dall'utente. Se si sceglie di eliminare questi dati da una determinata raccolta siti, è possibile usare CSOM. Qui di seguito è riportato uno script di esempio:
 
 ```powershell
 $username = "<admin@company.sharepoint.com>"

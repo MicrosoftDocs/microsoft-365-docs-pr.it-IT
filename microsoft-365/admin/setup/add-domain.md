@@ -25,14 +25,21 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Office 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: a77526efc526073e17b535612213202ad22d5657
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: bab4da6e4a8191d91ccdd38dd54f62f4d790c3b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800024"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140776"
 ---
 # <a name="add-a-domain-to-office-365"></a>Aggiungere un dominio a Office 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](domains-faq.md)**. 
   
@@ -94,7 +101,7 @@ ms.locfileid: "43800024"
   
     Se il portale non riconosce il registrar, è possibile [seguire queste istruzioni generali.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
-    Controllare l'elenco delle [istruzioni specifiche per l'host](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) per trovare l'host e seguire la procedura per aggiungere tutti i record necessari. 
+    Controllare l'elenco delle [istruzioni specifiche per l'host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) per trovare l'host e seguire la procedura per aggiungere tutti i record necessari. 
     
     Per identificare il provider di hosting DNS o il registrar per il dominio, vedere [Trovare il registrar o il provider di hosting DNS](../get-help-with-domains/find-your-domain-registrar.md).
     

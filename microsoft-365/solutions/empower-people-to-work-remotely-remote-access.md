@@ -16,29 +16,33 @@ ms.collection:
 - remotework
 ms.custom:
 - M365solutions
-description: Assicurarsi che i lavoratori remoti possano accedere alle risorse locali ottimizzando l'accesso ai servizi cloud di Microsoft 365.
-ms.openlocfilehash: fb91451b52c55f2cad1e0efefe19a044ce1cc37b
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: Assicurarsi che i lavoratori remoti possano accedere alle risorse locali e ottimizzare l'accesso ai servizi cloud di Microsoft 365.
+ms.openlocfilehash: daa1a04912dd83c7a53769299b3870b90dbfd33a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002914"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049559"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Passaggio 2. Fornire l'accesso remoto alle app e ai servizi locali.
 
-Se l'organizzazione usa una soluzione VPN di accesso remoto, in genere con server VPN nel perimetro della rete e dei client VPN installati nei dispositivi degli utenti, gli utenti possono usare connessioni VPN di accesso remoto per accedere alle app e ai server locali. Tuttavia, potrebbe essere necessario ottimizzare il traffico verso i servizi basati sul cloud di Microsoft 365.
+Se l'organizzazione usa una VPN di accesso remoto, in genere con server VPN nel perimetro della rete e dei client VPN installati nei dispositivi degli utenti, gli utenti possono usare connessioni VPN di accesso remoto per accedere alle app e ai server locali. Tuttavia, potrebbe essere necessario ottimizzare il traffico verso i servizi basati nel cloud di Microsoft 365.
 
 Se gli utenti non scelgono una soluzione VPN, è possibile usare il proxy di applicazione di Azure Active Directory (Azure AD) e la VPN da punto a sito (point-to-site) di Azure per fornire l'accesso, nel caso in cui tutte le app siano basate sul Web.
 
 Esistono tre tipi di configurazione principali:
 
 1. Configurazione con soluzione VPN di accesso remoto.
-2. Configurazione senza soluzione VPN di accesso remoto, bensì con identità ibrida e necessario accesso remoto solo alle app locali basate sul Web.
-3. Configurazione senza soluzione VPN di accesso remoto e necessario accesso alle app locali, alcuni delle quali non basate sul Web.
+2. Configurazione senza soluzione VPN di accesso remoto, bensì con identità ibrida e accesso remoto necessario solo alle app locali basate sul Web.
+3. Configurazione senza soluzione VPN di accesso remoto e accesso necessario alle app locali, alcuni delle quali non basate sul Web.
+
+Vedere questo diagramma di flusso per le opzioni di configurazione di accesso remoto descritte in questo articolo.
+
+![Diagramma di flusso della configurazione di accesso remoto](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
 
 Grazie alle connessioni di accesso remoto, è anche possibile usare il [Desktop remoto](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) per connettere gli utenti a un PC locale. Ad esempio, un lavoratore remoto può usare il Desktop remoto per connettersi al PC che si trova in ufficio dal proprio dispositivo Windows, iOS o Android. Una volta che il lavoratore si sarà connesso in remoto, sarà come lavorare davanti al proprio PC in ufficio.
 
-## <a name="optimize-performance-for-remote-access-vpn-clients-to-microsoft-365-cloud-services"></a>Ottimizzare le prestazioni per i client VPN di accesso remoto verso i servizi basati sul cloud di Microsoft 365
+## <a name="optimize-performance-for-remote-access-vpn-clients-to-microsoft-365-cloud-services"></a>Ottimizzare le prestazioni per i client VPN di accesso remoto verso i servizi basati nel cloud di Microsoft 365
 
 Se i lavoratori remoti usano un client VPN tradizionale per ottenere l'accesso remoto alla rete dell'organizzazione, verificare che nel client VPN vi sia la modalità split tunneling.
 
@@ -89,7 +93,7 @@ Per altre informazioni, vedere la [panoramica sul Desktop virtuale Windows](http
 ## <a name="admin-technical-resources-for-remote-access"></a>Risorse tecniche e amministrative per l’accesso remoto
 
 - [Come ottimizzare rapidamente il traffico di Office 365 per il personale remoto riducendo il carico nell'infrastruttura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571).
-- [Ottimizzare la connettività di Office 365 per gli utenti remoti tramite lo split tunneling della VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
+- [Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
 
 ## <a name="results-of-step-2"></a>Risultati del passaggio 2
 

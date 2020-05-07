@@ -17,12 +17,14 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: a43c2e874092de70535c0150f10870b8a071aafc
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Informazioni su come usare gli strumenti Microsoft per esportare o eliminare i dati personali raccolti durante una sessione autenticata di Azure DevOps Services.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 5cfe8f4b8fad19f56b56d101937f9ebacdc57f79
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557976"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036291"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Azure DevOps Services nell'ambito del GDPR e del CCPA
 

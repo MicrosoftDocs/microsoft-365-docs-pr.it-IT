@@ -1,6 +1,6 @@
 ---
 title: Elenchi di controllo di preparazione della conformità al GDPR
-description: Informazioni su come i servizi Microsoft proteggono da una violazione dei dati personali e su come Microsoft gestisce un'eventuale violazione e lo comunica agli utenti interessati.
+description: In questo articolo viene illustrato l'uso degli elenchi di controllo di preparazione della conformità per accedere alle informazioni per l'applicazione del GDPR quando si usano prodotti e servizi Microsoft.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -13,14 +13,16 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
-- M365-security-compliance
+- M365-security-complianc
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: b34221c45acc3d2918ed1a397e9e1ff0e726c152
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 154ba945db3bd5cfab25881bfdbbdc6738a3dfd7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558126"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036114"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Supportare il programma GDPR con elenchi di controllo di preparazione della conformità
 

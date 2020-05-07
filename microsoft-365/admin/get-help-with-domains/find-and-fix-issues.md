@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Informazioni su come individuare i problemi che si sono verificati durante la configurazione di un dominio personalizzato assicurandosi che i record DNS siano configurati correttamente.
-ms.openlocfilehash: 13d867559684d80ee5c0e1f7005d1dcaf3b4d611
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628471"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053723"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS
 
@@ -65,21 +65,21 @@ La verifica del dominio potrebbe non funzionare in alcuni scenari comuni:
 ## <a name="outlook-isnt-working"></a>Outlook non funziona?
 <a name="BKMK_OutlookBroken"> </a>
 
-Se la configurazione del record MX e di altri record DNS per il dominio è stata eseguita correttamente ma la posta elettronica non funziona, contattare il supporto per la [risoluzione dei problemi di Outlook](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx).
+Se la configurazione del record MX e di altri record DNS per il dominio è stata eseguita correttamente ma la posta elettronica non funziona, contattare il supporto per la [risoluzione dei problemi di Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>LA posta elettronica di tutti è stata commutata in Microsoft 365 e si voleva solo che la posta elettronica cambiasse?
 <a name="BKMK_EmailSwitched"> </a>
 
 Quando si aggiunge il dominio a Microsoft 365, in genere il record MX del dominio viene aggiornato (dall'utente o da Microsoft 365) per puntare a Microsoft 365 e tutti i messaggi di posta elettronica inviati a tale dominio inizieranno a essere Microsoft 365. Assicurarsi di aver creato le cassette postali in Microsoft 365 per tutti gli utenti che hanno un messaggio di posta elettronica nel dominio prima di modificare il record MX.
   
-Che cosa fare se non si desidera spostare la posta elettronica per tutti gli utenti del dominio in Microsoft 365? È possibile eseguire la procedura per [pilotare Microsoft 365 con solo alcuni indirizzi di posta elettronica](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx).
+Che cosa fare se non si desidera spostare la posta elettronica per tutti gli utenti del dominio in Microsoft 365? È possibile eseguire la procedura per [pilotare Microsoft 365 con solo alcuni indirizzi di posta elettronica](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Non è possibile verificare lo stato di un account non profit o School?
 <a name="BKMK_validateAcct"> </a>
 
 Esistono due scenari in cui è solo necessario verificare il dominio dell'organizzazione e non configurare i servizi. Ad esempio, per dimostrare a Microsoft 365 che l'organizzazione è qualificata per un abbonamento scolastico.
   
-Consultare le linee guida per [verificare il dominio Microsoft 365 per dimostrare la proprietà, l'organizzazione no profit o l'istruzione o per attivare Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590) per assicurarsi di aver completato tutti i passaggi necessari. Si tratta di un po' diverso per ogni situazione. 
+Consultare le linee guida per [verificare il dominio Microsoft 365 per dimostrare la proprietà, l'organizzazione no profit o l'istruzione o per attivare Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) per assicurarsi di aver completato tutti i passaggi necessari. Si tratta di un po' diverso per ogni situazione. 
   
 ## <a name="services-not-working-with-your-domain"></a>I servizi non funzionano con il proprio dominio?
 <a name="BKMK_Test"> </a>
@@ -87,14 +87,14 @@ Consultare le linee guida per [verificare il dominio Microsoft 365 per dimostrar
 Sono disponibili strumenti e informazioni per individuare i problemi relativi alla configurazione del DNS del dominio. La risoluzione dei problemi relativi ai domini in Microsoft 365 mostrerà gli eventuali record che devono essere fissati e gli elementi di cui è necessario impostare i record. 
 
 > [!TIP]
-> Il DNS è configurato correttamente ma la posta elettronica non funziona in Outlook sul desktop? Consultare i [diversi scenari del flusso di posta che è possibile avere con Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=787530) per assicurarsi che siano configurati correttamente per la propria azienda. Oppure, per altre informazioni sulla risoluzione dei problemi di posta, vedere [Risolvere i problemi di Outlook](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx). 
+> Il DNS è configurato correttamente ma la posta elettronica non funziona in Outlook sul desktop? Consultare i [diversi scenari del flusso di posta che è possibile avere con Microsoft 365](https://www.microsoft.com/?ref=go) per assicurarsi che siano configurati correttamente per la propria azienda. Oppure, per altre informazioni sulla risoluzione dei problemi di posta, vedere [Risolvere i problemi di Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>L'accesso al sito Web non funziona?
 <a name="BKMK_Website"> </a>
 
 Se gli errori del DNS sono stati corretti ma si verificano ancora problemi, provare una della soluzioni seguenti.
   
-- Le persone non riescono ad accedere al sito Web all'indirizzo www.mydomain.com: [Risolvere i problemi relativi al sito Web](https://support.office.com/article/61f34ca1-ca7f-4a65-9348-def20db09ddf.aspx)
+- Le persone non riescono ad accedere al sito Web all'indirizzo www.mydomain.com: [Risolvere i problemi relativi al sito Web](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
 - Non è possibile aggiornare il record a record o CNAME in modo che punti al sito Web: [aggiornare i record DNS personalizzati in Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
     
