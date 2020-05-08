@@ -7,24 +7,24 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - M365-security-compliance
-ms.prod: microsoft-365-enterprise
-ms.custom:
 - M365solutions
+ms.prod: microsoft-365-enterprise
+ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 consente ai servizi finanziari di passare a una moderna piattaforma di collaborazione, contribuendo a mantenere i dati e i sistemi sicuri e conformi alle normative
 f1.keywords: NOCSH
-ms.openlocfilehash: 3d61e9585fcfa5b4b235e797db64b8da633b15e1
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 30e9888a50f4a6ce28597e29760f3a7e7ba4c847
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002975"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160495"
 ---
-# <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a><span data-ttu-id="2e81d-103">Considerazioni chiave su conformità e sicurezza per i mercati bancario e finanziario degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="2e81d-103">Key compliance and security considerations for US banking and capital markets</span></span>
+# <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a><span data-ttu-id="caa55-103">Considerazioni chiave su conformità e sicurezza per i mercati bancario e finanziario degli Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="caa55-103">Key compliance and security considerations for US banking and capital markets</span></span>
 
-## <a name="introduction"></a><span data-ttu-id="2e81d-104">Introduzione</span><span class="sxs-lookup"><span data-stu-id="2e81d-104">Introduction</span></span>
-<span data-ttu-id="2e81d-105">Gli istituti di servizi finanziari sorpassano quasi tutte le aziende commerciali nella loro richiesta di controlli rigorosi di sicurezza, conformità e governance.</span><span class="sxs-lookup"><span data-stu-id="2e81d-105">Financial services institutions surpass nearly all commercial businesses in their demand for stringent security, compliance, and governance controls.</span></span> <span data-ttu-id="2e81d-106">La protezione di dati, identità, dispositivi e applicazioni non è solo fondamentale per la loro attività, ma è soggetta ai requisiti di conformità e alle linee guida di enti normativi, quali SEC (Securities and Exchange Commission), FINRA (Financial Industry Regulatory Authority), FFIEC (Federal Financial Institutions Examination Council) e CFTC (Commodity Futures Trading Commission).</span><span class="sxs-lookup"><span data-stu-id="2e81d-106">The protection of data, identities, devices, and applications is not only critical to their business, it is subject to compliance requirements and guidelines from regulatory bodies such as the U.S. Securities and Exchange Commission (SEC), the Financial Industry Regulatory Authority (FINRA), the Federal Financial Institutions Examination Council (FFIEC), and the Commodity Futures Trading Commission (CFTC).</span></span> <span data-ttu-id="2e81d-107">Gli istituti finanziari sono anche soggetti a leggi come la riforma Dodd-Frank e la Sarbanes-Oxley Act del 2002.</span><span class="sxs-lookup"><span data-stu-id="2e81d-107">In addition, financial institutions are subject to laws such as Dodd-Frank and the Sarbanes-Oxley Act of 2002.</span></span> <span data-ttu-id="2e81d-108">Oltre ciò, nel contesto odierno di una maggiore vigilanza della sicurezza, delle problematiche del rischio Insider e delle violazioni dei dati pubblici, i clienti richiedono livelli di sicurezza più elevati dai loro istituti finanziari per affidare a essi i propri dati personali e gli attivi bancari.</span><span class="sxs-lookup"><span data-stu-id="2e81d-108">Beyond this, in today's climate of increased security vigilance, insider risk concerns and public data breaches, customers demand higher levels of security from their financial institutions in order to trust them with their personal data and banking assets.</span></span>
+## <a name="introduction"></a><span data-ttu-id="caa55-104">Introduzione</span><span class="sxs-lookup"><span data-stu-id="caa55-104">Introduction</span></span>
+<span data-ttu-id="caa55-105">Gli istituti di servizi finanziari sorpassano quasi tutte le aziende commerciali nella loro richiesta di controlli rigorosi di sicurezza, conformità e governance.</span><span class="sxs-lookup"><span data-stu-id="caa55-105">Financial services institutions surpass nearly all commercial businesses in their demand for stringent security, compliance, and governance controls.</span></span> <span data-ttu-id="caa55-106">La protezione di dati, identità, dispositivi e applicazioni non è solo fondamentale per la loro attività, ma è soggetta ai requisiti di conformità e alle linee guida di enti normativi, quali SEC (Securities and Exchange Commission), FINRA (Financial Industry Regulatory Authority), FFIEC (Federal Financial Institutions Examination Council) e CFTC (Commodity Futures Trading Commission).</span><span class="sxs-lookup"><span data-stu-id="caa55-106">The protection of data, identities, devices, and applications is not only critical to their business, it is subject to compliance requirements and guidelines from regulatory bodies such as the U.S. Securities and Exchange Commission (SEC), the Financial Industry Regulatory Authority (FINRA), the Federal Financial Institutions Examination Council (FFIEC), and the Commodity Futures Trading Commission (CFTC).</span></span> <span data-ttu-id="caa55-107">Gli istituti finanziari sono anche soggetti a leggi come la riforma Dodd-Frank e la Sarbanes-Oxley Act del 2002.</span><span class="sxs-lookup"><span data-stu-id="caa55-107">In addition, financial institutions are subject to laws such as Dodd-Frank and the Sarbanes-Oxley Act of 2002.</span></span> <span data-ttu-id="caa55-108">Oltre ciò, nel contesto odierno di una maggiore vigilanza della sicurezza, delle problematiche del rischio Insider e delle violazioni dei dati pubblici, i clienti richiedono livelli di sicurezza più elevati dai loro istituti finanziari per affidare a essi i propri dati personali e gli attivi bancari.</span><span class="sxs-lookup"><span data-stu-id="caa55-108">Beyond this, in today's climate of increased security vigilance, insider risk concerns and public data breaches, customers demand higher levels of security from their financial institutions in order to trust them with their personal data and banking assets.</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="2e81d-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="2e81d-109">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="caa55-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="caa55-109">See Also</span></span>
