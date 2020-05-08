@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Panoramica dell'installazione di Microsoft 365 per le campagne
-ms.openlocfilehash: 0fa804c46ac3545a7f2d30ffe80b148262cc23cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 463d7cebf88ea830048c25e2781eac4aa379e30a
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632756"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165698"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Configurare Microsoft 365 per le campagne
 
@@ -62,6 +62,6 @@ Per configurare i dispositivi utente:
 
  **Se è necessario contattare il supporto:**
   
-In qualità di amministratore Microsoft 365, è possibile accedere al team di supporto clienti, ** [contattare il supporto tecnico per i prodotti aziendali-Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+In qualità di amministratore Microsoft 365, è possibile accedere al team di supporto clienti, ** [contattare il supporto tecnico per i prodotti aziendali-Guida per gli amministratori](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
 

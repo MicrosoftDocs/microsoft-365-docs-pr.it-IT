@@ -1,5 +1,5 @@
 ---
-title: "# Passaggio 5: creare sedi di comunicazione per l'emergenza COVID-19"
+title: "Passaggio 5: creare sedi di comunicazione per l'emergenza COVID-19"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
+- M365solutions
 ms.custom: ''
 description: Usare Microsoft 365 per creare modi diversi per comunicare notizie nazionali e internazionali riguardanti il COVID-19.
-ms.openlocfilehash: 189e0bde959ee8ad245b03cb5aca42ab6b19a0b3
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 686cfa12d76bf4122ebe4ae22a49da938322fee9
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003069"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160811"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>Passaggio 5: creare sedi di comunicazione per l'emergenza COVID-19
 
@@ -31,6 +32,8 @@ Sono disponibili diversi modi per fornire ulteriori sedi di comunicazione che so
 - Salute pubblica e notizie consolidate in un unico portale
 - Un sito di comunicazione in SharePoint Online
 - Una community di Yammer
+
+![Sedi di comunicazione per l'emergenza COVID-19](../media/empower-people-to-work-remotely/comm-venues-grid.png)
 
 ## <a name="employee-surveys"></a>Sondaggi dei dipendenti
 

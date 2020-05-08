@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Questo articolo descrive le procedure consigliate per la condivisione di file e cartelle con utenti non autenticati.
-ms.openlocfilehash: 4660d1ab34172bf73e6bea0de3065d2c946a7d2c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 127f50a6a94e35a9f3c8acf655bd260080aa8420
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036765"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160680"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Procedure consigliate per la condivisione di file e cartelle con utenti non autenticati
 
@@ -40,7 +40,7 @@ Quando un collegamento *Chiunque* scade, non può più essere utilizzato per acc
 Per impostare una data di scadenza per i collegamenti Chiunque
 1. Aprire l'interfaccia di amministrazione di SharePoint Online.
 2. Nel riquadro di spostamento sinistro fare clic su **Condivisione**.
-3. In **Impostazioni avanzate per i collegamenti di tipo "Chiunque"** selezionare la casella di controllo **Questi collegamenti devono scadere entro questo numero di giorni**.</br>
+3. In **Scegliere le opzioni delle autorizzazioni e di scadenza per i collegamenti di tipo "Chiunque"**, selezionare la casella di controllo **Questi collegamenti devono scadere entro questo numero di giorni**.</br>
    ![Screenshot delle impostazioni di scadenza dei collegamenti Chiunque a livello di organizzazione in SharePoint](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Digitare un numero di giorni nella casella, quindi fare clic su **Salva**.
 

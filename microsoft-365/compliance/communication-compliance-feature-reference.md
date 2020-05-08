@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 797b32dfa0cd286cf7eb9b6e0aa128d332f5c19a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 70c82232dff10bb13c5079de9590cde2508db14c
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066205"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159933"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -44,7 +44,7 @@ I modelli di criteri sono impostazioni predefinite che è possibile utilizzare p
 |**Area**|**Modello di criteri**|**Dettagli**|
 |:-----|:-----|:-----|
 | **Lingua offensiva e anti-molestia** | Monitorare le comunicazioni per la lingua offensiva | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 100% <br> -Conditions: classificatore di lingua offensivo |
-| **Informazioni sensibili** | Monitorare le comunicazioni per informazioni riservate | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 10% <br> -Conditions: informazioni riservate, modelli e tipi di contenuto esterno alla casella, opzione dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
+| **Informazioni sensibili** | Monitorare le comunicazioni per informazioni riservate | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 10% <br> -Conditions: informazioni riservate, modelli di contenuto esterno alla casella e tipi, opzione dizionario personalizzato, allegati superiori a 1 MB |
 | **Conformità alle normative** | Monitorare le comunicazioni per informazioni relative alla conformità alle normative finanziarie | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: in ingresso, in uscita <br> -Percentuale di verifica: 10% <br> -Conditions: opzione dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
 
 ## <a name="supervised-users"></a>Utenti controllati
@@ -62,7 +62,7 @@ Quando si crea un criterio di conformità della comunicazione, è necessario det
 
 Per semplificare l'installazione, creare gruppi per gli utenti che hanno bisogno di una revisione delle comunicazioni e di gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, se si desidera eseguire l'analisi delle comunicazioni tra due gruppi distinti di persone oppure se si desidera specificare un gruppo non supervisionato.
 
-Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il criterio analizza il contenuto della cassetta postale condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio analizza le singole cassette postali degli utenti.
+Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il criterio analizza il contenuto della cassetta postale condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio analizza le singole cassette postali degli utenti. L'aggiunta di gruppi e liste di distribuzione ai criteri di conformità della comunicazione fa parte delle condizioni generali e del set di regole, quindi il numero massimo di gruppi e di liste di distribuzione supportate da un criterio varia a seconda del numero di condizioni aggiunte al criterio. Ogni criterio deve supportare circa 20 gruppi o liste di distribuzione, a seconda del numero di condizioni aggiuntive presenti nel criterio.
 
 ## <a name="supported-communication-types"></a>Tipi di comunicazione supportati
 

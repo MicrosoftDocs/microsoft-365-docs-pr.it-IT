@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Informazioni su come attivare, rinnovare o aggiungere licenze a un abbonamento a Microsoft 365 for business.
-ms.openlocfilehash: da4e42ae2dadec8d376b9ef8d12c6d4cb4fe7af5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0f8233613f7929dad37167e7237be335d4e8f567
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636453"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165130"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Immettere il codice Product Key acquistato da Microsoft Open
 
@@ -63,7 +63,7 @@ Per informazioni su come [configurare microsoft 365 per la propria organizzazion
 
 Vedere questo elenco di errori e soluzioni comuni: [problemi con il codice Product Key?](product-key-errors-and-solutions.md)
   
-I partner possono trovare utile l'articolo [Partner: usare un codice Product Key per configurare l'abbonamento di un cliente](https://support.office.com/article/cf22c50f-95c9-4fa2-b959-c264de256d40.aspx).
+I partner possono trovare utile l'articolo [Partner: usare un codice Product Key per configurare l'abbonamento di un cliente](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40).
   
 I clienti con contratto multilicenza possono trovare altre informazioni nel [Centro servizi per contratti multilicenza e risorse](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   

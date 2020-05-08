@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0dd56450186f286419feb93b31e21445d048e5b7
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 648813ffa5b7ac801ef0dd6028bd803315fdade5
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003109"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159956"
 ---
 # <a name="microsoft-365-workload-solutions-and-scenarios"></a>Soluzioni e scenari del carico di lavoro Microsoft 365
 

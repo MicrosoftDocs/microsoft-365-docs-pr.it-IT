@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdbd14ebd71964728282f5cff2e20f87f5a4a4a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 548b331a8ee26434f53b9960fd355feacd45dfde
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633431"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066319"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -42,8 +42,6 @@ I revisori possono inoltre creare un report SOC 3, ovvero una versione abbreviat
 I servizi cloud di Microsoft vengono sottoposti a controlli almeno annuali rispetto al framework di reporting SOC da parte di auditor di terze parti indipendenti. Il controllo dei servizi cloud Microsoft include controlli per la sicurezza dati, la disponibilità, l'integrità di elaborazione e la riservatezza secondo quanto applicabile ai principi di affidabilità interni all'ambito per ciascun servizio.
 
 Microsoft ha superato i controlli SOC 1 Type 2, SOC 2 Type 2 e SOC 3. In generale, la disponibilità dei report SOC 1 e SOC 2 è limitata ai clienti che hanno firmato accordi di riservatezza con Microsoft, mentre il report SOC 3 è di dominio pubblico.
-
-Per informazioni sui vantaggi dei report SOC 1, 2 e 3 in Microsoft Cloud: [Scaricare i principi fondamentali dei report SOC 1 e SOC 2 Tipo 2](https://aka.ms/soc_backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 

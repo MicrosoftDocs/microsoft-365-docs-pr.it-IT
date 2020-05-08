@@ -22,6 +22,8 @@
       items:
         - name: Informazioni sulla gestione dei rischi Insider
           href: insider-risk-management.md
+        - name: Piano per la gestione dei rischi Insider
+          href: insider-risk-management-plan.md
         - name: Introduzione alla gestione dei rischi Insider
           href: insider-risk-management-configure.md
         - name: Creare e gestire i criteri dei rischi Insider
@@ -40,6 +42,8 @@
       items:
         - name: Informazioni sulla conformità delle comunicazioni
           href: communication-compliance.md
+        - name: Piano per la conformità delle comunicazioni
+          href: communication-compliance-plan.md
         - name: Introduzione alla conformità delle comunicazioni
           href: communication-compliance-configure.md
         - name: Esaminare e correggere gli avvisi di conformità delle comunicazioni
@@ -1052,8 +1056,6 @@
               href: offering-mars-e.md
             - name: NEN-7510 (Paesi Bassi)
               href: offering-nen-7510-netherlands.md
-            - name: NHS IG Toolkit (Regno Unito)
-              href: offering-nhs-ig-toolkit-uk.md
         - name: Produzione
           items:
             - name: FDA CFR Titolo 21 parte 11
@@ -1130,8 +1132,6 @@
               href: offering-mpaa.md
             - name: NBB + FSMA (Belgio)
               href: offering-nbb-fsma-belgium.md
-            - name: NHS IG Toolkit (Regno Unito)
-              href: offering-nhs-ig-toolkit-uk.md
             - name: NIST CSF
               href: offering-nist-csf.md
             - name: PCI DSS
