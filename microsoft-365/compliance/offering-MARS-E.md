@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b62e40ce317bc5a6bc817e5eade5b476542c5f04
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac5a027225ce0f7c4c719ba3a897f5bc6f5629d5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602173"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065647"
 ---
 # <a name="minimum-acceptable-risk-standards-for-exchanges-mars-e-20-framework"></a>Framework MARS-E (Minimum Acceptable Risk Standards for Exchanges) 2.0
 
@@ -35,9 +35,7 @@ Questi aggiornamenti riguardano la riservatezza, l'integrità e la disponibilit�
 
 Attualmente non esiste un processo formale di autorizzazione e accreditamento per MARS-E. Tuttavia, i servizi della piattaforma Microsoft Azure sono stati sottoposti a controlli FedRAMP indipendenti a livello di impatto moderato e Azure per enti pubblici a livello di impatto elevato e sono autorizzati in base agli standard FedRAMP. Anche se questi standard non riguardano in modo specifico MARS-E, gli obiettivi e i requisiti di controllo MARS-E sono strettamente correlati e ciò assicura la protezione della riservatezza, dell'integrità e della disponibilità dei dati.
 
-Scopri di più sui vantaggi del framework MARS-E 2.0 su Microsoft Cloud: [scaricare il documento di informazioni di base di MARS-E](https://aka.ms/mars-e-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Intune
@@ -71,8 +69,4 @@ Sì. I report di controllo di terze parti agli standard FedRAMP attestano l'effi
     - [Volume III: Catalog of minimum acceptable risk security and privacy controls for exchanges](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/3-MARS-E-v2-0-Catalog-of-Security-and-Privacy-Controls-11102015.pdf) (Volume III: Catalogo dei controlli minimi di sicurezza e privacy accettabili per gli scambi)
 - [White paper sul framework di conformità Microsoft per i servizi online](https://aka.ms/compliance-framework)
 - [Condizioni di Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/7/C/2/7C2690A7-19CC-4EED-A47A-B43CC418790A/MARS-E-Compliance.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Informazioni su cosa succede ai dati quando la sottoscrizione Microsoft 365 for business scade, è disabilitata o se si Annulla.
-ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707608"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165121"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Cosa succede ai dati e all'accesso quando termina l'abbonamento a Microsoft 365 for business?
 
@@ -50,7 +50,7 @@ Nella tabella seguente vengono illustrate le operazioni che è possibile prevede
 * Per la maggior parte delle offerte, nella maggior parte dei paesi e aree geografiche.
   
 > [!NOTE]
-> **Che cosa sono i "dati del cliente"?** I dati dei clienti, come definito nelle [condizioni dei servizi online di Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613649), fanno riferimento a tutti i dati, inclusi tutti i file di testo, audio o immagine forniti a Microsoft da o per conto del cliente tramite l'utilizzo da parte del cliente dei servizi Microsoft 365. Per ulteriori informazioni sulla protezione dei dati del cliente, vedere il articolo [introduttivo di Microsoft Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662).
+> **Che cosa sono i "dati del cliente"?** I dati dei clienti, come definito nelle [condizioni dei servizi online di Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613649), fanno riferimento a tutti i dati, inclusi tutti i file di testo, audio o immagine forniti a Microsoft da o per conto del cliente tramite l'utilizzo da parte del cliente dei servizi Microsoft 365. Per ulteriori informazioni sulla protezione dei dati del cliente, vedere il articolo [introduttivo di Microsoft Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Cosa è possibile fare quando l'abbonamento sta per scadere?
 

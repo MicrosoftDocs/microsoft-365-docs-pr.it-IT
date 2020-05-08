@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f9054c164efa340b489de917fb820e0460123df5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601973"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066439"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>US DoE 10 CFR parte 810
 
@@ -34,7 +34,7 @@ FedRAMP offre una linea di base appropriata per garantire che Azure Government o
 
 Inoltre, Azure Government è un cloud della community del governo degli Stati Uniti che è fisicamente separato dal cloud di Azure. Fornisce garanzie aggiuntive relative ai requisiti specifici di screening del background da parte del governo degli Stati Uniti, compresi controlli specifici che limitano l'accesso alle informazioni e ai sistemi per i cittadini degli Stati Uniti tra il personale di Azure Operations.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -45,7 +45,7 @@ Inoltre, Azure Government è un cloud della community del governo degli Stati Un
 
 ## <a name="about-doe-10-cfr-part-810"></a>Informazioni su DoE 10 CFR parte 810
 
-La normativa sul controllo delle esportazioni del dipartimento di energia (DoE) del reparto statunitense [10 cfr parte 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) disciplina l'esportazione di tecnologie e assistenza nucleare non classificate. Aiuta a garantire che le tecnologie nucleari esportate dagli Stati Uniti vengano utilizzate solo per scopi pacifici. La parte riveduta 810 (regola finale) ha avuto effetto nel marzo 2015 ed è amministrata dall' [amministrazione nazionale per la sicurezza nucleare](https://www.energy.gov/nnsa/national-nuclear-security-administration). La sezione 810,6 indica che è necessaria una specifica autorizzazione DoE per entrambe le condizioni di assistenza e di trasferimento di tecnologie nucleari sensibili che sono "generalmente autorizzate", nonché quelle che richiedono un'autorizzazione specifica (ad esempio per l'assistenza che coinvolgono tecnologie nucleari sensibili come l'arricchimento e la produzione di acqua pesante).
+La normativa sul controllo delle esportazioni del dipartimento di energia (DoE) del reparto statunitense [10 cfr parte 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) disciplina l'esportazione di tecnologie e assistenza nucleare non classificate. Aiuta a garantire che le tecnologie nucleari esportate dagli Stati Uniti vengano utilizzate solo per scopi pacifici. La parte riveduta 810 (regola finale) ha avuto effetto nel marzo 2015 ed è amministrata dall' [amministrazione nazionale per la sicurezza nucleare](https://www.energy.gov/nnsa/national-nuclear-security-administration). La sezione 810,6 indica che è necessaria una specifica autorizzazione DoE per entrambe le condizioni di assistenza e di trasferimento di tecnologie nucleari sensibili che sono "generalmente autorizzate", nonché quelle che richiedono un'autorizzazione specifica (ad esempio, per l'assistenza che coinvolge tecnologie nucleari sensibili come l'arricchimento e la produzione di acqua pesante).
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -67,8 +67,4 @@ I clienti che distribuiscono dati in Azure government sono responsabili del prop
 - [Microsoft e FedRAMP](offering-fedramp.md)
 - [Microsoft e DoD](offering-dod-disa-l2-l4-l5.md)
 - [Cloud Microsoft per enti pubblici](https://www.microsoft.com/enterprise/government)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf).
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

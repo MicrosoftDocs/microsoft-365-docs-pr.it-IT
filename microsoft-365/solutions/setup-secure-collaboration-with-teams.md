@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
 description: Informazioni su come configurare i team per la protezione dei dati in base alla relativa sensibilità
-ms.openlocfilehash: 77493398b11109a51c4e60599561fd8cd4f6c3ac
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002954"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159468"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurare la collaborazione sicura con Microsoft 365
 
@@ -85,9 +85,9 @@ La configurazione di questi livelli comporta quanto segue:
 
 Iniziare con il livello di base e quindi aggiungere i team che utilizzano i livelli *sensibili* e *altamente sensibili* , se necessario, per proteggere le informazioni nell'organizzazione. Per iniziare, vedere le risorse seguenti:
 
-- [Configurare Team con protezione di base](configure-teams-baseline-protection.md)
-- [Configurare Team con protezione per i dati riservati](configure-teams-sensitive-protection.md)
-- [Configurare Team con protezione per dati altamente riservati](configure-teams-highly-sensitive-protection.md)
+- [Configurare team con la protezione di base](configure-teams-baseline-protection.md)
+- [Configurare team con la protezione dei dati sensibili](configure-teams-sensitive-protection.md)
+- [Configurare team con la protezione dei dati altamente sensibili](configure-teams-highly-sensitive-protection.md)
 
 Se si dispone di un progetto estremamente riservato che richiede ulteriore protezione dalla condivisione anche all'interno dell'organizzazione, è possibile configurare un team che utilizza la propria etichetta di riservatezza per crittografare i file in modo che solo i membri del team possano leggerli. Per informazioni dettagliate, vedere [configurare un team con isolamento della sicurezza](secure-teams-security-isolation.md) .
 

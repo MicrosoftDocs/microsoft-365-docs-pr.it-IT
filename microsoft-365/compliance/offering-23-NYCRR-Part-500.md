@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e5d9c847173af4155d6c9eb0f8c59a07053435c2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9b72f7206ff83b790cf41c00e3f7042eadf3664
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602893"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066663"
 ---
 # <a name="title-23-nycrr-part-500"></a>Normativa Title 23 NYCRR Part 500
 
@@ -40,7 +40,7 @@ Queste norme emesse dallo Stato di New York richiedono ad ogni istituto finanzia
 - **Designare un Chief Information Security Officer** (CISO) che gestisca il programma di sicurezza informatica applicando la relativa politica. Per supportare l'operato del CISO, Microsoft fornisce informazioni di cybersecurity dettagliate riguardo alle distribuzioni cloud di Microsoft attraverso [Azure Security Center](https://azure.microsoft.com/services/security-center/?v=17.23h), [Office 365 Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/) e [Power BI Security](https://go.microsoft.com/fwlink/?LinkId=829185).
 - **Monitorare e testare l'efficacia del proprio programma di sicurezza informatica**: Microsoft offre informazioni derivanti dai controlli delle proprie pratiche di cybersecurity, che includono il monitoraggio continuo, i test di penetrazione periodici e le valutazioni della vulnerabilità. I clienti possono condurre i propri test senza la previa autorizzazione di Microsoft.
 - **Mantenere un audit trail.** Grazie alle funzionalità di controllo integrate di Azure, Office 365 e Power BI, i clienti generano informazioni utili per la ricostruzione di transazioni finanziarie e per lo sviluppo delle informazioni ricavate dall'audit trail.
-- **Limitare l'accesso ai sistemi informatici che contengono informazioni non pubbliche**. A tal fine, Azure, Office 365 e Power BI offrono un processo di controllo degli accessi basato sui ruoli che è nativo per ogni servizio, oltre a stringenti requisiti di sicurezza e di accesso per ciascun amministratore Microsoft e controlli per ogni richiesta di accesso con privilegi elevati.
+- **Limitare l'accesso ai sistemi informatici che contengono informazioni non pubbliche**: Azure, Office 365 e Power BI offrono un processo di controllo degli accessi basato sui ruoli che è nativo per ogni servizio, oltre a stringenti requisiti di sicurezza e di accesso per ciascun amministratore Microsoft e controlli per ogni richiesta di accesso con privilegi elevati.
 - **Definire delle procedure per la valutazione e la verifica della sicurezza delle applicazioni sviluppate esternamente**: per gli sviluppatori che usano Visual Studio, le [regole di sicurezza](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code) per il codice gestito possono aiutare a garantire che le minacce di cybersecurity delle applicazioni siano rilevate e contrastate prima della distribuzione del codice.
 - **Avvalersi di valutazioni dei rischi periodiche per progettare e ottimizzare i programmi di cybersecurity**: per i clienti, Microsoft aggrega informazioni relative a minacce per la sicurezza, fornisce guide di orientamento per la gestione delle modifiche e aggiorna regolarmente le informazioni sui subappaltatori. Inoltre, Microsoft conduce valutazioni di rischio dei propri servizi su base regolare, mettendone i risultati a disposizione dei clienti.
 - **Usare personale qualificato per gestire i rischi di sicurezza informatica e sovrintendere alle relative funzioni**: Microsoft impiega rigorose procedure per regolare l'accesso dei propri dipendenti ai dati dei clienti. Se si rivolge a un subappaltatore, Microsoft resta comunque responsabile della distribuzione del servizio, assicurandosi che tale subappaltatore risulti pienamente conforme agli impegni assunti da Microsoft in materia di privacy e sicurezza, inclusi i requisiti per il trattamento dei dati sensibili, il controllo dei precedenti e il ricorso ad accordi di non divulgazione.
@@ -76,7 +76,3 @@ Per determinare se il proprio istituto è regolato da questa normativa, consulta
 - [Cloud Financial Services Compliance Program di Microsoft](https://www.microsoft.com/download/confirmation.aspx?id=55332)
 - [Conformità dei servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Responsabilità condivise per il cloud computing](https://aka.ms/sharedresponsibility)- 
-
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf).

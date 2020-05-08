@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3b1f93b301ba4db44b7260ae588688acf648e345
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 86a3e7ce703881452d3d112aace3b418bf0984af
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602143"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066097"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministry of Electronics and Information Technology (Riccardo)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602143"
 
 Il Ministry of Electronics and Information Technology (Riccardo), un'agenzia del governo indiano, fornisce linee guida per tutte le organizzazioni del settore pubblico governativo e dello stato. Le linee guida sono inoltre spesso adottate dalle organizzazioni del settore privato nelle industrie regolamentate, come i servizi finanziari e le telecomunicazioni.
 
-Riccardo fornisce l'accreditamento (denominato da Riccardo come "empanelment") dei provider di servizi cloud, che richiede che i servizi cloud siano certificati come conformi rispetto a un insieme predefinito di standard e linee guida sulla sicurezza, l'interoperabilità, la portabilità dei dati, contratto di servizio, termini e condizioni contrattuali. I revisori accreditati da Riccardo verificano la conformità eseguendo audit dei provider di servizi cloud.
+Riccardo fornisce l'accreditamento (denominato da Riccardo come ' empanelment ') dei provider di servizi cloud, che richiede che i servizi cloud siano certificati come conformi rispetto a un insieme predefinito di standard e linee guida sulla sicurezza, l'interoperabilità, la portabilità dei dati, il contratto di servizio e i termini e le condizioni contrattuali. I revisori accreditati da Riccardo verificano la conformità eseguendo audit dei provider di servizi cloud.
 
 Una volta accreditati, i provider di servizi cloud sono elencati in una directory del servizio cloud governativo in cui le organizzazioni del settore pubblico possono confrontare e procurare servizi cloud accreditati. La directory è un servizio di [MeghRaj cloud Initiative](https://meity.gov.in/content/gi-cloud-meghraj) (o Gi \[Government of India\] cloud), che promuove l'utilizzo del cloud computing nel governo e regola l'implementazione dei servizi IT del settore pubblico.
 
@@ -39,9 +39,9 @@ Nel novembre 2017, Microsoft è diventato uno dei primi provider di servizi clou
 - Cloud privato virtuale del governo, che deve essere logicamente separato dalle offerte pubbliche e di altro tipo del provider di servizi cloud
 - Community Cloud del governo, per i servizi cloud dedicati ai dipartimenti governativi e fisicamente separati dalle offerte pubbliche e di altro genere del provider di servizi cloud
 
-L'accreditamento di Riccardo di Microsoft è stato il risultato di un rigoroso audit condotto dalla Directional testing and Quality Certification (STQC), un'organizzazione del governo che fornisce servizi di controllo della qualità, utilizzando un Framework di valutazione in base al lavoro dell'iniziativa cloud di MeghRaj. Tramite Microsoft Azure, le organizzazioni del settore pubblico possono ora attingere a una vasta gamma di modelli di distribuzione e offerte di servizi, tra cui l'infrastruttura come servizio (IaaS), la piattaforma come servizio (PaaS), il ripristino di emergenza, DevOps e il backup gestito.
+L'accreditamento Riccardo di Microsoft è stato il risultato di un rigoroso audit condotto dalla Directional testing and Quality Certification (STQC), un'organizzazione del governo che fornisce servizi di controllo della qualità, utilizzando un Framework di valutazione basato sul lavoro dell'iniziativa cloud di MeghRaj. Tramite Microsoft Azure, le organizzazioni del settore pubblico possono ora attingere a una vasta gamma di modelli di distribuzione e offerte di servizi, tra cui l'infrastruttura come servizio (IaaS), la piattaforma come servizio (PaaS), il ripristino di emergenza, DevOps e il backup gestito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -55,15 +55,11 @@ L'accreditamento di Riccardo di Microsoft è stato il risultato di un rigoroso a
 
 **Perché Riccardo è importante?**
 
-La messa a disposizione dei servizi governativi ai cittadini online è una parte fondamentale del programma Digital India, che mira a "trasformare l'India in una società con poteri digitali e un'economia della conoscenza". Riccardo elenca i provider di servizi cloud accreditati nella directory Government Cloud Services, che consente alle organizzazioni del settore pubblico di confrontare e procurare tali servizi.
+La messa a disposizione dei servizi governativi ai cittadini online è una parte fondamentale del programma Digital India, che ha lo scopo di "trasformare l'India in una società con poteri digitali e un'economia della conoscenza". Riccardo elenca i provider di servizi cloud accreditati nella directory Government Cloud Services, che consente alle organizzazioni del settore pubblico di confrontare e procurare tali servizi.
 
 ## <a name="resources"></a>Risorse
 
 - [Ministero dell'elettronica e della tecnologia dell'informazione](https://meity.gov.in/)
 - [Iniziativa cloud di MeghRaj](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Provider di servizi cloud accreditati](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

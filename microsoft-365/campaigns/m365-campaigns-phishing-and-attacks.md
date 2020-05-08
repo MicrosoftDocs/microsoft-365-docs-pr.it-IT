@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteggersi da tentativi di phishing e altri attacchi con Microsoft 365 per le campagne.
-ms.openlocfilehash: 2b0acd42b1c272bba7078bf6bc09944540ca9e42
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6f53cc069de2d9162d81a5049128dd35064003c1
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080603"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165710"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Proteggersi da tentativi di phishing e altri attacchi
 
@@ -43,7 +43,7 @@ Microsoft 365 include molte protezioni per proteggersi dagli attacchi, ma ci son
 
 **Ridurre la posta indesiderata**
 
-Segui questi [10 suggerimenti su come ridurre la posta indesiderata](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
+Segui questi [10 suggerimenti su come ridurre la posta indesiderata](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
 **Segnalarlo!**
 
@@ -69,11 +69,11 @@ Scaricare l'infografica con suggerimenti per l'utente e i membri del team della 
 
 [![La guida per proteggere la grafica delle informazioni sulla campagna](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
-[](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx) (PDF)
+[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx) (PDF)
 
 ## <a name="set-it-up"></a>Configurazione
 
 Ulteriori informazioni su come eseguire le operazioni seguenti:
-- [Mantenere i file e le comunicazioni sicure con Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+- [Mantenere i file e le comunicazioni sicure con Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
 - [Soggiorno sicuro e privato sul posto di lavoro](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

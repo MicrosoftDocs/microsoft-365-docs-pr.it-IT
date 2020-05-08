@@ -13,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
+- M365solutions
 ms.custom: ''
 description: Modalità di distribuzione delle soluzioni di Microsoft 365 da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
-ms.openlocfilehash: 89909681cfbbc473b81ec4f95efe7fcc97270617
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 7d99a936bcfaddb2032b5f077ea95034e275182a
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003232"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159492"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Soluzioni di Microsoft 365 per Contoso Corporation
 

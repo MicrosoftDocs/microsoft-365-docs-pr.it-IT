@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ee198d5813c910f6d9d8add74d5faf32e094d7e3
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: be79402c7aaf540ba3174e0844b1fe5bdc87a7ec
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003272"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160040"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Illustrazioni di Microsoft Cloud per Enterprise Architects
 
@@ -32,7 +32,7 @@ Cosa devono sapere gli architetti IT della rete per i servizi cloud e le piattaf
   
 |**Elemento**|**Descrizione**|
 |:-----|:-----|
-|[![Immagine di anteprima del modello di rete cloud Microsoft](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/>Aggiornato il 2019 novembre| Questo modello comprende: <ul><li> Trasformazione della rete per la connettività cloud </li><li> Elementi comuni della connettività cloud Microsoft </li><li> ExpressRoute per la connettività cloud Microsoft </li><li> Progettazione di rete per Microsoft SaaS, Azure PaaS e Azure IaaS </li></ul><br/>  <br/>|
+|[![Immagine di anteprima del modello di rete cloud Microsoft](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/>Aggiornato il 2019 novembre| Questo modello comprende: <ul><li> Trasformazione della rete per la connettività cloud </li><li> Elementi comuni della connettività cloud Microsoft </li><li> ExpressRoute per la connettività cloud Microsoft </li><li> Progettazione di rete per Microsoft SaaS, Azure PaaS e Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Cloud ibrido Microsoft per Enterprise Architect

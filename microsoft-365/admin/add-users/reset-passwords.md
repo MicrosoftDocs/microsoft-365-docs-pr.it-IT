@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 for business. "
-ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049448"
+ms.locfileid: "44064810"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -93,7 +93,7 @@ Se si è dimenticato la password e non si è in grado di accedere:
     
 - Chiedere a un altro amministratore globale dell'azienda di reimpostare la password per l'utente.
     
-- In alternativa, [contattare il supporto tecnico Microsoft](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products). 
+- In alternativa, [contattare il supporto tecnico Microsoft](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Reimpostare contemporaneamente tutte le password aziendali per tutti gli utenti dell'organizzazione
 <a name="bkmk_forgot"> </a>
