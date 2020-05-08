@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Informazioni su come ottenere una versione di valutazione gratuita o su come acquistare un abbonamento a Microsoft 365.
-ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707536"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141055"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Provare o acquistare un abbonamento a Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Microsoft 365 è una soluzione completa che unisce Office 365 e Windows 10 con sicurezza avanzata e gestione dei dispositivi. Se si dispone già di un abbonamento e si vuole provare o acquistare un abbonamento a Microsoft 365, il modo migliore per farlo è tramite l'interfaccia di amministrazione. Gli abbonamenti di Microsoft 365 seguenti sono disponibili nell'interfaccia di amministrazione per provare o acquistare subito:
   

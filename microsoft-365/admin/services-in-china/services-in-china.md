@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Per ulteriori informazioni, vedere Office 365 gestito da 21Vianet che è stato creato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: c473dacee7fe6f2e779960711a87368e261c3448
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360797"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155410"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 gestito da 21Vianet
 
@@ -54,12 +54,12 @@ Se si desidera informazioni su come iniziare a utilizzare i servizi generali di 
 
 |||
 |:-----|:-----|
-|Domini personalizzati  <br/> |Gli amministratori possono creare e/o utilizzare domini personalizzati registrati tramite provider di dominio specifici per il cinese. Se non si dispone di un dominio personalizzato, è possibile [acquistare un nome di dominio](https://support.office.com/article/a6689b24-eeca-41f1-afe6-19917936b73c.aspx) da un registrar. Se si dispone già di un utente, [individuare il registrar o il provider di hosting DNS](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3).  <br/> Inoltre, se si crea un sito Web pubblico con il servizio Office 365 SharePoint Online, i criteri di conformità in Cina richiedono l'ottenimento di un numero di provider di contenuti Internet (ICP).  **Nota:** La convalida automatica per le parole non consentite nei nomi di dominio personalizzati non è disponibile.           |
+|Domini personalizzati  <br/> |Gli amministratori possono creare e/o utilizzare domini personalizzati registrati tramite provider di dominio specifici per il cinese. Se non si dispone di un dominio personalizzato, è possibile [acquistare un nome di dominio](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) da un registrar. Se si dispone già di un utente, [individuare il registrar o il provider di hosting DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> Inoltre, se si crea un sito Web pubblico con il servizio Office 365 SharePoint Online, i criteri di conformità in Cina richiedono l'ottenimento di un numero di provider di contenuti Internet (ICP).  **Nota:** La convalida automatica per le parole non consentite nei nomi di dominio personalizzati non è disponibile.           |
 |Supporto tecnico, per abbonamenti e per la fatturazione  <br/> |Fornito da 21Vianet. Per informazioni su come contattare il supporto tecnico, vedere [contattare il supporto di Office 365 for business](../contact-support-for-business-products.md).  <br/> |
-|Reimpostazione password self-service  <br/> |Disponibile solo per gli amministratori. Per ulteriori informazioni, vedere [modificare o reimpostare la password in Office 365 gestito da 21ViaNet](https://support.office.com/article/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Reimpostazione password self-service  <br/> |Disponibile solo per gli amministratori. Per ulteriori informazioni, vedere [modificare o reimpostare la password in Office 365 gestito da 21ViaNet](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Sicurezza, privacy, conformità e dettagli sui livelli di supporto  <br/> |Fornito da 21Vianet.  <br/> |
 |Installazione desktop di Office  <br/> |L'installazione desktop di Office non è disponibile per Office 2010 e Office 2007. Tuttavia, gli amministratori possono [configurare le applicazioni desktop di Office correnti in modo che funzionino con office 365](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
-|Supporto per dispositivi mobili\*  <br/> | A breve sono disponibili le seguenti funzionalità per dispositivi mobili:  <br/>  Gestione di dispositivi mobili (MDM)  <br/>  BlackBerry Business Cloud Services (BBCS) non è disponibile, ma è possibile utilizzare i dispositivi Exchange ActiveSync o un'offerta di Research in Motion (RIM, la soluzione di posta elettronica wireless BlackBerry) per eseguire BlackBerry Enterprise Server (BES).  <br/>  Per ulteriori informazioni sul supporto per i dispositivi mobili, vedere [set up and Manage Mobile Access for your users](https://support.office.com/article/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
+|Supporto per dispositivi mobili\*  <br/> | A breve sono disponibili le seguenti funzionalità per dispositivi mobili:  <br/>  Gestione di dispositivi mobili (MDM)  <br/>  BlackBerry Business Cloud Services (BBCS) non è disponibile, ma è possibile utilizzare i dispositivi Exchange ActiveSync o un'offerta di Research in Motion (RIM, la soluzione di posta elettronica wireless BlackBerry) per eseguire BlackBerry Enterprise Server (BES).  <br/>  Per ulteriori informazioni sul supporto per i dispositivi mobili, vedere [set up and Manage Mobile Access for your users](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
 |Office Lens  <br/> |Non disponibile.  <br/> |
 |Microsoft Planner  <br/> |Prossimamente.  <br/> |
 |Microsoft Teams  <br/> |Non disponibile.  <br/> |
@@ -210,7 +210,7 @@ Condivisione di dati dei contatti di Exchange su dispositivi mobili Apple per il
 
 |||
 |:-----|:-----|
-|Provider di dominio per il supporto di Skype for business  <br/> |Sarà necessario registrare il dominio con un provider di dominio specifico per il cinese che supporta i record SRV. Per ulteriori informazioni su come registrare i domini, vedere [trovare il registrar di dominio o il provider di hosting DNS](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3).  <br/> |
+|Provider di dominio per il supporto di Skype for business  <br/> |Sarà necessario registrare il dominio con un provider di dominio specifico per il cinese che supporta i record SRV. Per ulteriori informazioni su come registrare i domini, vedere [trovare il registrar di dominio o il provider di hosting DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> |
 |Servizi di conferenza telefonica con accesso esterno (la possibilità di aggiungere il telefono alle riunioni per gli utenti che non possono accedere a un computer)  <br/> |È possibile visualizzare le opzioni in Skype for business e nell'interfaccia di amministrazione di Skype for business per le conferenze telefoniche con accesso esterno e i provider, ma queste funzionalità non sono ancora disponibili. Saranno presto disponibili.  <br/> |
 |Guida per il desktop di Skype for business  <br/> |È possibile trovare assistenza per il desktop di Skype for business [qui](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx). Tuttavia, la guida del desktop non è disponibile dal prodotto, a meno che non si utilizzi Office a portata di clic.  <br/> |
 |Lync 2010  <br/> |Non disponibile.  <br/> |
@@ -225,7 +225,7 @@ Condivisione di dati dei contatti di Exchange su dispositivi mobili Apple per il
    
 ## <a name="data-subject-requests-for-gdpr"></a>Richieste del soggetto dei dati per GDPR
 
-GDPR concede a singoli (o, soggetti di dati) alcuni diritti in relazione al trattamento dei dati personali, incluso il diritto di correggere dati imprecisi, cancellare i dati o limitarne l'elaborazione, ricevere i dati e soddisfare la richiesta di trasmettere i propri dati a un altro controller. Il ruolo di amministratore tenant per Office 365 gestito da 21Vianet può richiedere i dati per conto di un soggetto dei dati nei modi seguenti:
+GDPR concede a singoli (o, soggetti di dati) alcuni diritti in relazione al trattamento dei dati personali, incluso il diritto di correggere dati imprecisi, cancellare i dati o limitarne l'elaborazione, ricevere i dati e soddisfare una richiesta di trasmissione dei dati a un altro responsabile. Il ruolo di amministratore tenant per Office 365 gestito da 21Vianet può richiedere i dati per conto di un soggetto dei dati nei modi seguenti:
   
 - Utilizzando l'interfaccia di amministrazione di Azure Active Directory, un amministratore tenant può eliminare definitivamente un soggetto dei dati da Azure Active Directory e dai relativi servizi.
     

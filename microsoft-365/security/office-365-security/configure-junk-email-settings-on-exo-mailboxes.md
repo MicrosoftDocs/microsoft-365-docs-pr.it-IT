@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
-ms.openlocfilehash: 55597c45f093a5b9a0b860c6987454f926025e28
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 20112e23ff8bb62b96bdba4e86725c8566af3444
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804788"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066194"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 
@@ -90,12 +90,6 @@ Per verificare la corretta abilitazione o disabilitazione della regola di posta 
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
-  ```
-
-- Sostituire _ \<MailboxIdentity\> _ con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale ed eseguire il comando riportato di seguito per verificare il valore della proprietà **Enabled** della regola di posta indesiderata.
-
-  ```PowerShell
-  Get-InboxRule "Junk E-mail Rule" -Mailbox "<MailboxIdentity>" -IncludeHidden
   ```
 
 ## <a name="use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox"></a>Utilizzo di PowerShell di Exchange Online per configurare la raccolta degli elenchi indirizzi attendibili in una cassetta postale

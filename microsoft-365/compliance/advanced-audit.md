@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6fb42e9df35fe025c5c5f292238217aebb4098c7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632281"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141044"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
@@ -93,7 +93,7 @@ Un utente deve essere assegnato a una licenza E5 per usufruire delle funzionalit
 
 **Perché Audit avanzato non viene mostrato nell'organizzazione, nonostante si disponga di un abbonamento a E5 e siano presenti utenti con licenze E5 assegnate?**
 
-È possibile che le funzionalità di Audit avanzato (ad esempio la possibilità di creare i criteri di conservazione dei log di controllo e la registrazione dei record di controllo MailItemsAccessed) non siano disponibili nell'organizzazione, nonostante si dispongano delle licenze corrette. In caso si verifichi, è possibile che il pacchetto di Audit avanzato non sia stato ancora distribuito nell'organizzazione. Si tratta di un problema temporaneo di recupero delle informazioni delle licenze, che dovrebbe venire risolto per le organizzazioni interessate nelle prossime settimane. Per ovviare a tale problema, eseguire la procedura seguente per ogni utente E5:
+È possibile che le funzionalità di Audit avanzato (ad esempio la possibilità di creare i criteri di conservazione dei log di controllo e la registrazione dei record di controllo MailItemsAccessed) non siano disponibili nell'organizzazione, nonostante si dispongano delle licenze corrette. In caso si verifichi, è possibile che il pacchetto di Audit avanzato non sia stato ancora distribuito nell'organizzazione. Si tratta di un problema temporaneo di recupero delle informazioni delle licenze, che dovrebbe venire risolto a breve per le organizzazioni interessate. Per ovviare a tale problema, eseguire la procedura seguente per ogni utente E5:
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, passare a **Utenti > Utenti attivi** e quindi selezionare un utente.
 
@@ -106,6 +106,8 @@ Un utente deve essere assegnato a una licenza E5 per usufruire delle funzionalit
    b. Se la casella di controllo **Controllo avanzato Microsoft 365** è selezionata, deselezionarla e quindi fare clic su **Salva modifiche.** Vedere il passaggio 4.
 
 4. Se al passaggio 3 è stata deselezionata la casella di controllo, attendere 60 minuti e quindi ripetere il passaggio 3a per abilitare l'app Controllo avanzato Microsoft 365.
+
+Per le organizzazioni che assegnano licenze ai gruppi di utenti usando le licenze basate su gruppi, è necessario disabilitare l'assegnazione delle licenze per il controllo avanzato di Microsoft 365 per il gruppo. Dopo aver salvato le modifiche, verificare che il controllo avanzato di Microsoft 365 sia disabilitato per il gruppo. Quindi, riabilitare l'assegnazione delle licenze per il gruppo. Per istruzioni sulle licenze basate su gruppi, vedere [Assegnare licenze agli utenti in base all'appartenenza ai gruppi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 **Cosa succede se l'organizzazione era in anteprima privata per la conservazione annuale dei record di controllo?**
 

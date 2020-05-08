@@ -17,19 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8767174fa17aceab7d83adb96f938efad5074356
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 8277549c683da19dbbf915a7cf673fc731cb8803
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804771"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141417"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (anteprima)
 
 >[!IMPORTANT]
 >Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft Secure Score è una misura della posizione di sicurezza di un'organizzazione, con un numero superiore che indica altre azioni di miglioramento eseguite. Può essere trovato https://security.microsoft.com/securescore nel centro sicurezza Microsoft 365.
+Microsoft Secure Score è una misura della posizione di sicurezza di un'organizzazione, con un numero superiore che indica altre azioni di miglioramento eseguite. Può essere trovato https://security.microsoft.com/securescore nel [centro sicurezza Microsoft 365](overview-security-center.md).
 
 Dopo i consigli sui punteggi di sicurezza è possibile proteggere l'organizzazione dalle minacce. Da un Dashboard centralizzato nel centro sicurezza Microsoft 365, le organizzazioni possono monitorare e lavorare sulla sicurezza delle identità, dei dati, delle app, degli strumenti e dell'infrastruttura di Microsoft 365.
 
@@ -57,7 +57,7 @@ Ogni azione di miglioramento vale 10 punti o meno. La maggior parte sono segnati
 
 ### <a name="products-included-in-secure-score"></a>Prodotti inclusi nel punteggio sicuro
 
-Sono attualmente disponibili suggerimenti per Microsoft 365 (tra cui SharePoint Online, Exchange Online, OneDrive for business, Microsoft Information Protection e altro ancora), Azure AD, Microsoft Defender ATP e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate in base a una terza parte.
+Sono attualmente disponibili suggerimenti per Microsoft 365 (incluso Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate in base a una terza parte.
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
@@ -97,7 +97,7 @@ Per facilitare le informazioni necessarie più rapidamente, le azioni di miglior
 
 * Identity (account di Azure AD & ruoli)
 * Data (protezione delle informazioni di Microsoft)
-* Dispositivo (nessuna azione di miglioramento per il momento)
+* Dispositivo (Microsoft Defender ATP)
 * App (applicazioni di posta elettronica e cloud, tra cui Office 365 e Microsoft cloud app Security)
 * Infrastructure (nessuna azione di miglioramento per il momento)
 
@@ -108,17 +108,17 @@ di Secure Score*Figura 1: pagina Panoramica del Punteggio di Microsoft Secure*
 
 ## <a name="take-action-to-improve-your-score"></a>Eseguire un'azione per migliorare il Punteggio
 
-Nella scheda azioni di miglioramento sono elencati i suggerimenti per la sicurezza che indirizzano le possibili superfici di attacco, insieme al relativo stato (completata, pianificata, rischio accettata, terze parti e indirizzo). È possibile eseguire la ricerca, il filtro e il raggruppamento di tutte le azioni di miglioramento.  
+Nella scheda **azioni di miglioramento** sono elencati i suggerimenti per la sicurezza che consentono di risolvere eventuali superfici di attacco, insieme al relativo stato (per indirizzare, pianificare, rischi accettati, risolti tramite terze parti, risolti tramite attenuazione alternativa e completati). È possibile eseguire la ricerca, il filtro e il raggruppamento di tutte le azioni di miglioramento.  
 
 ### <a name="ranking"></a>Classificazione
 
 La classificazione si basa sul numero di punti rimanenti rimasti per raggiungere, sulla difficoltà di implementazione, sull'impatto dell'utente e sulla complessità. Le azioni di miglioramento più elevate hanno un numero elevato di punti rimanenti con difficoltà bassa, impatto dell'utente e complessità.
 
-### <a name="actions"></a>Azioni
+### <a name="view-improvement-action-details"></a>Visualizzare i dettagli dell'azione di miglioramento
 
 Quando si seleziona un'azione di miglioramento specifica, viene visualizzato un riquadro a comparsa a pagina intera.  
 
-![Esempio](../../media/secure-score/secure-score-improvement-action.png)
+![Esempio](../../media/secure-score/secure-score-improvement-action-details.png)
 di riquadro a comparsa Azione miglioramento*Figura 2: esempio del riquadro a comparsa Azione miglioramento*
 
 Per completare l'azione, sono disponibili alcune opzioni:
@@ -127,16 +127,34 @@ Per completare l'azione, sono disponibili alcune opzioni:
 
 * Selezionare **Condividi** per copiare il collegamento diretto all'azione di miglioramento oppure scegliere la piattaforma per la condivisione del collegamento, ad esempio posta elettronica, Microsoft teams, Microsoft Planner o ServiceNow. La selezione di ServiceNow consente di creare un ticket di modifica che sarà visibile in ServiceNow e nella Home page del Centro sicurezza Microsoft 365. Per ulteriori informazioni, vedere [Microsoft 365 Security Center e ServiceNow Integration](tickets.md).
 
-* Selezionare **modifica stato e note** per modificare gli Stati manuali o le note di record specifiche per l'azione di miglioramento. È possibile filtrare o raggruppare in base agli Stati della scheda azioni di miglioramento. Le statue che è possibile selezionare sono le seguenti
+### <a name="choose-an-improvement-action-status"></a>Scegliere uno stato di azione di miglioramento
 
-    * **To address** : si riconosce che l'azione di miglioramento è necessaria e si prevede di affrontarla a un certo punto in futuro. Questo stato si applica anche alle azioni che vengono rilevate come parziali, ma non completamente completate.
-    * **Pianificato** : sono disponibili piani concreti per completare l'azione di miglioramento.
-    * **Rischi accettati** : la sicurezza deve essere sempre bilanciata con l'usabilità e non ogni raccomandazione funzionerà per l'ambiente in uso. In questo caso, è possibile scegliere di accettare il rischio o il rischio restante e non applicare l'azione di miglioramento. Non verranno assegnati punti, ma l'azione non sarà più visibile nell'elenco delle azioni di miglioramento. È possibile visualizzare questa azione nella cronologia o annullarla in qualsiasi momento.
-    * **Risoluzione tramite terze parti** : l'azione di miglioramento è già stata indirizzata da un'applicazione o un software di terze parti. Si ottengono i punti che l'azione vale, in modo che il Punteggio rispecchi meglio la posizione di sicurezza generale. Se una terza parte non è più in grado di coprire il controllo, è possibile scegliere un altro stato. Tenere presente che Microsoft non avrà visibilità sulla completezza dell'implementazione se l'azione di miglioramento è contrassegnata come risolta tramite terze parti
+Scegliere eventuali stati e note di record specifiche per l'azione di miglioramento. Le statue che è possibile selezionare sono le seguenti:
 
-### <a name="prerequisites"></a>Prerequisiti
+* **To address** : si riconosce che l'azione di miglioramento è necessaria e si prevede di affrontarla a un certo punto in futuro. Questo stato si applica anche alle azioni che vengono rilevate come parziali, ma non completamente completate.
+* **Pianificato** : sono disponibili piani concreti per completare l'azione di miglioramento.
+* **Rischi accettati** : la sicurezza deve essere sempre bilanciata con l'usabilità e non ogni raccomandazione funzionerà per l'ambiente in uso. In questo caso, è possibile scegliere di accettare il rischio o il rischio restante e non applicare l'azione di miglioramento. Non verranno assegnati punti, ma l'azione non sarà più visibile nell'elenco delle azioni di miglioramento. È possibile visualizzare questa azione nella cronologia o annullarla in qualsiasi momento.
+* **Risolti tramite terze parti** e **risolti tramite attenuazione alternativa** , l'azione di miglioramento è già stata indirizzata da un'applicazione o un software di terze parti o da uno strumento interno. Si ottengono i punti che l'azione vale, in modo che il Punteggio rispecchi meglio la posizione di sicurezza generale. Se uno strumento di terze parti o interno non è più in grado di coprire il controllo, è possibile scegliere un altro stato. Tenere presente che Microsoft non avrà visibilità sulla completezza dell'implementazione se l'azione di miglioramento è contrassegnata come uno di questi Stati.
 
-I prerequisiti nella sezione implementazione elencano le licenze che devono essere ottenute o le azioni che devono essere completate prima che venga affrontata l'azione di miglioramento. Assicurarsi di disporre di un numero sufficiente di posti nella licenza per completare l'azione di miglioramento e che tali licenze vengano applicate agli utenti necessari.  
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Azioni di miglioramento della gestione della vulnerabilità & di minacce
+
+Per le azioni di miglioramento nella categoria "dispositivo", non sarà possibile scegliere status. Al contrario, si verrà indirizzati all'indicazione di sicurezza per la [gestione della vulnerabilità del & di protezione (TVM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) associata in [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) per eseguire l'azione. L'eccezione scelta e la giustificazione scritta saranno specifiche di quel portale e non saranno presenti nel portale Microsoft Secure score.
+
+#### <a name="completed-improvement-actions"></a>Azioni di miglioramento completate
+
+Le azioni di miglioramento hanno uno stato "completato" una volta che sono stati raggiunti tutti i punti possibili per l'azione di miglioramento. Le azioni di miglioramento completate sono state confermate se i dati di Microsoft e non saranno in grado di modificare lo stato.
+
+### <a name="assess-information-and-review-user-impact"></a>Valutare le informazioni e esaminare l'impatto dell'utente
+
+La sezione **a colpo d'occhio** vi dirà la categoria, gli attacchi che può proteggere e il prodotto.
+
+L' **impatto dell'utente** indica ciò che gli utenti sperimenteranno se l'azione di miglioramento è stata emanata e **gli utenti interessati** visualizzano chi lo sperimenteranno.
+
+### <a name="implement-the-improvement-action"></a>Implementazione dell'azione di miglioramento
+
+La sezione **implementazione** Visualizza eventuali prerequisiti, passaggi successivi per completare l'azione di miglioramento, lo stato di implementazione corrente dell'azione di miglioramento e qualsiasi altro collegamento per ulteriori informazioni.
+
+I prerequisiti saranno tutte le licenze che devono essere ottenute o le azioni che devono essere completate prima che venga affrontata l'azione di miglioramento. Assicurarsi di disporre di un numero sufficiente di posti nella licenza per completare l'azione di miglioramento e che tali licenze vengano applicate agli utenti necessari.  
 
 ## <a name="track-your-score-history-and-meet-goals"></a>Monitorare la cronologia dei punteggi e raggiungere gli obiettivi
 
@@ -148,7 +166,7 @@ Nella scheda **tendenze & metriche** sono disponibili diversi grafici e grafici 
 * **Tendenza di regressione** : una sequenza temporale di punti che sono stati regressione a causa di modifiche apportate alla configurazione, all'utente o al dispositivo.  
 * **Trend di confronto** : la modalità di confronto tra il Punteggio sicuro dell'organizzazione e gli altri nel corso del tempo. Questa visualizzazione può includere linee che rappresentano la media del Punteggio di organizzazioni con conteggio dei sedili analogo e una visualizzazione di confronto personalizzata che è possibile impostare.
 * **Tendenza all'accettazione del rischio** : cronologia delle azioni di miglioramento contrassegnate come "rischi accettati".
-* **Modifiche al Punteggio** : il numero di punti ottenuti, i punti di regressione o le nuove azioni aggiunte, insieme alla successiva modifica del punteggio, nell'intervallo di date specificato.
+* **Modifiche al Punteggio** : il numero di punti ottenuti, i punti di regressione, insieme alla variazione del punteggio successivo, nell'intervallo di date specificato.
 
 ## <a name="risk-awareness"></a>Sensibilizzazione ai rischi
 
@@ -158,7 +176,7 @@ Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in ba
 
 Per rendere Microsoft Secure Score un migliore rappresentante della posizione di sicurezza, sono state apportate alcune modifiche. Per informazioni sulle modifiche pianificate, vedere [What ' s Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### <a name="april-21st-2020"></a>21 aprile 2020
+### <a name="april-2020"></a>Aprile 2020
 
 #### <a name="added-azure-active-directory-improvement-action"></a>Aggiunta di un'azione di miglioramento di Azure Active Directory
 

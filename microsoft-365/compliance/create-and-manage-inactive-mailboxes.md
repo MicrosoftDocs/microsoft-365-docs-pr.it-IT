@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: È possibile creare una cassetta postale inattiva in Microsoft 365 applicando un criterio di conservazione o mantenimento alla cassetta postale e quindi eliminando l'account utente corrispondente. Gli elementi di una cassetta postale inattiva vengono conservati per la durata del blocco o del criterio di conservazione applicato prima che venisse reso inattivo. Per eliminare definitivamente una cassetta postale inattiva, è sufficiente rimuovere il blocco o il criterio di conservazione.
-ms.openlocfilehash: 6265504f12adeadbc51c36c1e97c999e30a0d141
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048015"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166087"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Creare e gestire le cassette postali inattive
 
@@ -63,7 +63,7 @@ Per le procedure dettagliate relative all'inserimento di una cassetta postale in
   
 ### <a name="step-2-delete-the-mailbox"></a>Passaggio 2: Eliminare la cassetta postale
 
-Dopo che la cassetta postale è stata messa in attesa o che è stato applicato un criterio di conservazione, il passaggio successivo consiste nell'eliminare la cassetta postale. Il modo migliore per eliminare una cassetta postale consiste nell'eliminare l'account utente corrispondente nell'interfaccia di amministrazione di Microsoft 365. Per informazioni sull'eliminazione degli account utente, vedere [eliminare un utente dall'organizzazione](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
+Dopo che la cassetta postale è stata messa in attesa o che è stato applicato un criterio di conservazione, il passaggio successivo consiste nell'eliminare la cassetta postale. Il modo migliore per eliminare una cassetta postale consiste nell'eliminare l'account utente corrispondente nell'interfaccia di amministrazione di Microsoft 365. Per informazioni sull'eliminazione degli account utente, vedere [eliminare un utente dall'organizzazione](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
   
 > [!NOTE]
 > È inoltre possibile eliminare la cassetta postale utilizzando il cmdlet **Remove-Mailbox** in PowerShell di Exchange Online. Per ulteriori informazioni, vedere [Eliminare o ripristinare le cassette postali utente in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 

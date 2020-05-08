@@ -18,15 +18,15 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo sono contenute informazioni sulle nuove funzionalità di Office 365 Message Encryption (OME).
-ms.openlocfilehash: e379e4cd9c4a1620dd394541b08c447d62a741ca
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b1a9c58a17b5f8434325191828063ec91a116e88
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033686"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166097"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurare IRM con Azure Rights Management
 
-Con il rilascio di nuove funzionalità di Office 365 Message Encryption (OME), non è più necessario impostare IRM separatamente. Non è consigliabile configurare nuove distribuzioni con OME legacy e IRM con Azure Rights Management. Per ulteriori informazioni sulle nuove funzionalità OME, vedere [Domande frequenti su Crittografia dei messaggi di Office 365Office 365 Message Encryption](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e). Se si è pronti per iniziare a usare le nuove funzionalità OME all'interno dell'organizzazione, vedere [Configurare nuove funzionalità di Office 365 Message Encryption in Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).
+Con il rilascio di nuove funzionalità di Office 365 Message Encryption (OME), non è più necessario impostare IRM separatamente. Non è consigliabile configurare nuove distribuzioni con OME legacy e IRM con Azure Rights Management. Per ulteriori informazioni sulle nuove funzionalità OME, vedere [Domande frequenti su Crittografia dei messaggi di Office 365Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome-faq). Se si è pronti per iniziare a usare le nuove funzionalità OME all'interno dell'organizzazione, vedere [Configurare nuove funzionalità di Office 365 Message Encryption in Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
   
 

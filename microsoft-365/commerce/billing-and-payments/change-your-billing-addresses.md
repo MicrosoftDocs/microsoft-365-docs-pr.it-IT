@@ -23,14 +23,21 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Informazioni su come aggiornare gli indirizzi di fatturazione per Microsoft 365 for business. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
 ms.custom: okr_SMB
-ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 09f4ef95c9f8ab3dcce3b3a2511c5e407539020e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048026"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140924"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiare gli indirizzi di fatturazione
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 La fattura o la fattura contiene tre indirizzi:
   

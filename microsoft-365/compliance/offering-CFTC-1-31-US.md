@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 448dbcf250a34d7c7d7acb2d3f3acc4c8de4d14b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08f912492d1874b940156e3a6165f9476add7711
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602643"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065851"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>Regole di trading futures di commodity (CFTC) regola 1.31 (c-d) Stati Uniti
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602643"
 
 La [Commodity Futures Trading Commission](https://www.cftc.gov/) (CFTC), un'agenzia federale degli Stati Uniti indipendente, regolamenta i mercati dei futures e delle opzioni delle merci e, più recentemente, il mercato degli scambi.  
   
-La regola CFTC di vecchia data 1,31 definisce i requisiti di conservazione dei record stabiliti dalla regola SEC 17a-4 (f). Inoltre, specifica che i record elettronici devono essere mantenuti per cinque anni e che gli originali vengano mantenuti "prontamente accessibili" nei primi due anni e resi disponibili per essere ispezionati dalla Commissione o dal dipartimento di giustizia degli Stati Uniti durante l'intero periodo di conservazione.  
+La regola CFTC di vecchia data 1,31 definisce i requisiti di conservazione dei record stabiliti dalla regola SEC 17a-4 (f). Inoltre, specifica che i record elettronici devono essere mantenuti per cinque anni e che gli originali vengano mantenuti "prontamente accessibili" nei primi due anni e messi a disposizione per l'ispezione da parte della Commissione o del dipartimento di giustizia degli Stati Uniti durante tutto il periodo di conservazione.  
   
 Nel 2017, la [CFTC ha riveduto la sua regola](https://www.cftc.gov/sites/default/files/idc/groups/public/@lrfederalregister/documents/file/2017-11014a.pdf), modificando e modernizzando la sua normativa archiviazione per adottare standard meno prescrittivi e basati su principi che offrano una maggiore flessibilità nel modo in cui è possibile mantenere i record. In questo modo la regola risulta più neutrale, consentendo alle entità regolamentate di scegliere la tecnologia più appropriata per la propria azienda, mantenendo le misure di salvaguardia che "garantiscono l'affidabilità del processo di archiviazione". La regola riveduta rimuove il requisito che le organizzazioni mantengano i record originali per due anni, mantenendo tuttavia il periodo di mantenimento quinquennale, che armonizza le procedure per le aziende regolamentate sia dalla CFTC che dalla SEC.
 
@@ -45,7 +45,7 @@ Per valutare la conformità di Office 365 alla regola di CFTC 1.31 (c-d), Micros
 
 L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Office 365 consente ai clienti di impostare i criteri di conservazione dei messaggi globali o granulari per archiviare i dati per un periodo definito e oltre in un formato non riscrivibile e non cancellabile.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
@@ -56,10 +56,10 @@ L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra
 
 [Office 365 & CFTC Rule 1,31 — Archiving in Office 365, data retention e SEC Rule 17a-4 Compliance
 
-## <a name="how-to-implement"></a>Come implementare
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Regolamento sui servizi finanziari](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): mappa di conformità dei principali principi di regolamentazione degli Stati Uniti per il cloud computing e i Microsoft Online Services.
-- [Valutazione dei rischi e guida alla conformità](https://aka.ms/RiskGovernanceGuide): per creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'autorità competente.
+- [Guida alla valutazione dei rischi e alla conformità](https://aka.ms/RiskGovernanceGuide): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
 - [Casi di utilizzo del settore finanziario](https://docs.microsoft.com/azure/industry/financial/): i casi di utilizzo, le guide e le altre risorse aiutano a sviluppare le soluzioni Azure per i servizi finanziari.
 
 ## <a name="resources"></a>Risorse
@@ -71,7 +71,3 @@ L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra
 - [Criteri di conservazione di Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Blog sui servizi finanziari di Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf).

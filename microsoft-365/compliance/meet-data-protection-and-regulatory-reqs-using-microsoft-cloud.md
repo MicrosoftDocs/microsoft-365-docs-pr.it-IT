@@ -1,5 +1,5 @@
 ---
-title: Utilizzare Compliance Manager per soddisfare i requisiti normativi e garantire la protezione dei dati quando si utilizzano i servizi cloud Microsoft
+title: Soddisfare i requisiti normativi e garantire la protezione dei dati con Compliance Manager per i servizi cloud Microsoft
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
-ms.openlocfilehash: 3019378c82e263ce438b385a998dcf2475f3b62d
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9cfa034de5d8116485a7d371c40ef55b0466103
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790623"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034222"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance Manager (classico)
 

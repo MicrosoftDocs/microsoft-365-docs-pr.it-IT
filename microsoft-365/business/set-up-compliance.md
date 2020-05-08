@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare le funzionalità di conformità per evitare la perdita di dati e proteggere le informazioni riservate dei clienti.
-ms.openlocfilehash: 523d020587bcf16e46263b88ee7654b9c786e7a2
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a3405207cd7d2d6565807ef0f3a51acbcb80409a
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048066"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165738"
 ---
 # <a name="set-up-compliance-features"></a>Funzionalità di conformità della configurazione
 
@@ -34,9 +34,9 @@ Microsoft 365 Business Premium è dotato di funzionalità per proteggere i dati 
 
 ## <a name="set-up-dlp-features"></a>Configurare le funzionalità DLP
 
-Vedere [creare un criterio DLP da un modello](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369) per un esempio su come impostare un criterio per proteggere le informazioni personali. 
+Vedere [creare un criterio DLP da un modello](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) per un esempio su come impostare un criterio per proteggere le informazioni personali. 
   
-DLP viene fornito con molti modelli di criteri pronti per l'uso per molte impostazioni locali diverse. Ad esempio, Australia Financial Data, Canada Personal Information Act, US Financial Data e così via. Vedere [cosa includono i modelli di criteri DLP](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a) per un elenco completo. Tutti questi modelli possono essere abilitati in modo analogo all'esempio del modello PII. 
+DLP viene fornito con molti modelli di criteri pronti per l'uso per molte impostazioni locali diverse. Ad esempio, Australia Financial Data, Canada Personal Information Act, US Financial Data e così via. Vedere [cosa includono i modelli di criteri DLP](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) per un elenco completo. Tutti questi modelli possono essere abilitati in modo analogo all'esempio del modello PII. 
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurare la conservazione della posta elettronica con archiviazione Exchange Online
 

@@ -24,14 +24,21 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Informazioni su come gestire i metodi di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: b15381ee4eba7c1a91e108743fc326c890ab1820
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: fda0bc13fc8c15644eeabd497cd3783b4f50e9db
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045929"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140948"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Aggiungere, aggiornare o rimuovere i metodi di pagamento
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 È possibile acquistare prodotti e servizi da Microsoft con una carta di credito o di debito o un conto corrente bancario. È possibile immettere le informazioni di pagamento nella pagina **Modalità di pagamento** o quando si effettua un acquisto.

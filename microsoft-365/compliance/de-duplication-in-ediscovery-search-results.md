@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: È possibile eseguire la duplicazione dei risultati di ricerca di eDiscovery esportati in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio in cassette postali diverse.
-ms.openlocfilehash: 17bfb7581da1147c7de8cae0437fe91316a3fcb6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943133"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166047"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>De-duplicazione nei risultati della ricerca di eDiscovery
 
@@ -84,4 +84,4 @@ I messaggi univoci possono essere contrassegnati anche come duplicati quando la 
 
   - [Esportare i risultati della ricerca eDiscovery sul posto in un file PST](https://go.microsoft.com/fwlink/p/?linkid=832671)
 
-  - [Esportare il contenuto e creare report nel centro eDiscovery](https://support.office.com/article/7b2ea190-5f9b-4876-86e5-4440354c381a)
+  - [Esportare il contenuto e creare report nel centro eDiscovery](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

@@ -9,17 +9,17 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come creare un sito Extranet o un team B2B con gli utenti Guest gestiti provenienti da un'organizzazione partner.
-ms.openlocfilehash: 3a1faab90907daf9c48ec02c51eb272187fb0fde
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44001704"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166150"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Creare una Extranet B2B con guest gestiti.
 

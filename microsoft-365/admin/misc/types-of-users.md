@@ -21,12 +21,12 @@ ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: "Informazioni sui tipi di utenti nell'interfaccia di amministrazione. "
 ms.custom: okr_smb
-ms.openlocfilehash: b9a705d651aff3cde9fdd32d0122e8947e574715
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 152be955ffdb5526c974d3b0f4d19693cb29e948
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627765"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155353"
 ---
 # <a name="quick-help-types-of-users"></a>Guida rapida: Tipi di utenti
 
@@ -45,7 +45,7 @@ Nella pagina **utenti attivi** nell'interfaccia di amministrazione di Microsoft 
 |Amministratori password  <br/> |Questi utenti possono reimpostare le password, gestire le richieste di servizio e monitorare l'integrità dei servizi per conto del delegante.  <br/> |
 |Amministratori dei servizi  <br/> |Questi utenti possono gestire le richieste di servizio e monitorare l'integrità dei servizi per conto del delegante.  <br/> |
 |Amministratori Gestione utenti  <br/> |Questi utenti possono reimpostare le password, monitorare l'integrità dei servizi, gestisce account utente, gruppi di utenti e richieste di servizi. Non possono eliminare un amministratore globale, creare altri ruoli di amministratore né reimpostare le password per gli amministratori fatturazione, gli amministratori globali e gli amministratori dei servizi.  <br/> |
-|Aggiungi filtro personalizzato  <br/> |Con questa opzione, è possibile creare un filtro personalizzato per visualizzare solo alcuni tipi di utenti di preferenza, ad esempio gli utenti nel piano Microsoft 365 Apps for business. [Guida rapida: filtrare gli utenti](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c).  <br/> |
+|Aggiungi filtro personalizzato  <br/> |Con questa opzione, è possibile creare un filtro personalizzato per visualizzare solo alcuni tipi di utenti di preferenza, ad esempio gli utenti nel piano Microsoft 365 Apps for business. [Guida rapida: filtrare gli utenti](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
    
 ## <a name="related-articles"></a>Articoli correlati
 

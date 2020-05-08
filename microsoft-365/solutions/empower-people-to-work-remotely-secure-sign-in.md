@@ -17,16 +17,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: È necessario che l'utente remoto acceda con l'autenticazione a più fattori (MFA).
-ms.openlocfilehash: f8154f35baaf693bb51c523cfe4c44374437de02
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: dfb4262c05399e1c5add9b151c42c143ac723a7d
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003580"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066128"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Passaggio 1. Aumentare la sicurezza di accesso per i lavoratori remoti con la MFA.
 
 Per aumentare la sicurezza degli accessi dei lavoratori remoti, utilizzare l'autenticazione a più fattori (MFA). La MFA richiede che gli accessi utente siano soggetti a un'ulteriore verifica oltre alla password dell'account utente. Anche se un utente malintenzionato determina una password dell'account utente, deve anche essere in grado di rispondere a un'ulteriore verifica, ad esempio un SMS inviato a uno smartphone prima che venga concesso l'accesso.
+
+![L'inserimento della password corretta e un'ulteriore verifica permettono di accedere](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 Per tutti gli utenti, inclusi i lavoratori remoti e in particolare gli amministratori, Microsoft consiglia vivamente la MFA.
 

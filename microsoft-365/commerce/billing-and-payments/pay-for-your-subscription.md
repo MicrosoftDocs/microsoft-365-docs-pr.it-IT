@@ -24,14 +24,21 @@ description: Per ulteriori informazioni, vedere quali opzioni di pagamento sono 
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045837"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140872"
 ---
 # <a name="pay-for-your-subscription"></a>Pagare l'abbonamento
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Quando si configura l'abbonamento, è possibile pagare con addebito sulla carta di credito o sul conto bancario o tramite fattura usando un assegno o un bonifico bancario. La modalità di pagamento continuerà a essere usata per i periodi di fatturazione successivi, a meno che non si decida di [cambiare modalità di pagamento](change-payment-method.md).
 

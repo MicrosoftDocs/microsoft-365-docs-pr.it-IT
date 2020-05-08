@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Informazioni su come ripristinare un gruppo di Microsoft 365 eliminato.
-ms.openlocfilehash: 870db3c92cd1f28f91540633a1dce9d0353c2b87
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 9d432d6ddb7e41b6560329b562c24f392a424412
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049156"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140525"
 ---
 # <a name="restore-a-deleted-group"></a>Ripristinare un gruppo eliminato
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Se si è eliminato un gruppo, questo verrà mantenuto per 30 giorni per impostazione predefinita. Questo periodo di 30 giorni è considerato "soft-delete" perché è ancora possibile ripristinare il gruppo. Dopo 30 giorni, il gruppo e il relativo contenuto associato vengono eliminati definitivamente e non possono essere ripristinati.
 

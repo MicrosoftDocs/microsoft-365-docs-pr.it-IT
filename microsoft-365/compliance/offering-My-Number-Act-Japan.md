@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7b8e7e7f15ac4a0f257e9c4c86bd14659cc609b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d270e43bb336a6cdf110507ba51281e135f99b9a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632931"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066080"
 ---
 # <a name="my-number-act-japan"></a>My Number Act (Giappone)
 
@@ -33,11 +33,11 @@ La Personal Information Protection Commission (PPC), che funge da autorità cent
 
 Per aiutare i clienti giapponesi a proteggere la privacy dei dati personali, Microsoft si impegna contrattualmente attraverso le [Condizioni di Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) a garantire che nei servizi cloud per le aziende interessate siano implementate misure di sicurezza tecniche e organizzative in grado di aiutare i clienti a rispettare il My Number Act. Questo significa che i clienti in Giappone possono usare i servizi cloud Microsoft per le aziende nel rispetto degli obblighi alle normative giapponesi.
 
-Le [Domande \&frequenti](https://www.ppc.go.jp/legal/policy/faq/) (in giapponese) pubblicate dalla PPC delineano le linee guida per il trattamento e la protezione adeguate delle informazioni personali. Il documento stabilisce che eventuali terze parti non sono considerate responsabili del trattamento dei dati personali se nel loro contratto stipulano che (a) non trattano dati personali e (b) definiscono un sistema di controllo degli accessi appropriato. Il My Number Act specifica gli obblighi da rispettare quando i dati vengono trasferiti a terze parti, ma la sezione [Q3-12](https://www.ppc.go.jp/legal/policy/faq/) (in giapponese) delle Domande \&frequenti della PPC spiega che gli obblighi non sono applicabili se la terza parte non tratta i dati personali, ovvero non ha accesso permanente ad essi.
+Le [Domande \&frequenti](https://www.ppc.go.jp/legal/policy/faq/) (in giapponese) pubblicate dalla PPC delineano le linee guida per il trattamento e la protezione adeguate delle informazioni personali. Il documento stabilisce che eventuali terze parti non sono considerate responsabili del trattamento dei dati personali se nel loro contratto stipulano che (a) non trattano dati personali e (b) definiscono un sistema di controllo degli accessi appropriato. Il My Number Act specifica gli obblighi da rispettare quando i dati vengono trasferiti a terze parti, ma la sezione [Q3-12](https://www.ppc.go.jp/legal/policy/faq/) (in giapponese) delle Domande\&frequenti della PPC spiega che gli obblighi non sono applicabili se la terza parte non tratta i dati personali, ovvero non ha accesso permanente ad essi.
 
 I servizi cloud Microsoft per le aziende definiscono questi obblighi nelle [Condizioni di Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), che stipulano che la proprietà e la responsabilità dei dati contenenti i dati My Number sono esclusive dei clienti e non di Microsoft. Il cliente deve pertanto adottare controlli appropriati per proteggere i dati My Number contenuti nei dati dei clienti.
 
-Dato che Microsoft non dispone dell'accesso permanente ai dati My Number archiviati nei suoi servizi cloud, non è necessario un contratto di "outsourcing" per il trattamento dei dati My Number. Se un cliente vuole ottenere accesso ai dati dei clienti che contengono dati My Number, deve creare un altro contratto di outsourcing con Microsoft per ogni caso prima di avanzare tale richiesta.
+Dato che Microsoft non dispone dell'accesso permanente ai dati My Number archiviati nei propri servizi cloud, non è necessario un contratto di "outsourcing" per il trattamento dei dati My Number. Se un cliente vuole ottenere accesso ai dati dei clienti che contengono dati My Number, deve creare un altro contratto di outsourcing con Microsoft per ogni caso prima di avanzare tale richiesta.
 
 Le condizioni stabiliscono anche che Microsoft si impegna a usare i dati dei clienti solo per fornire servizi al cliente, non per fini pubblicitari o altri scopi commerciali simili, e che dispone di sistemi solidi di controllo degli accessi.
 
@@ -73,11 +73,7 @@ La [sezione Q3-13](https://www.ppc.go.jp/legal/policy/faq/) (in giapponese) dell
 ## <a name="resources"></a>Risorse
 
 - [Conformità di Azure e obblighi di privacy e sicurezza in Giappone](https://gallery.technet.microsoft.com/Azure-Compliance-and-the-53409748)
-- [Privacy di Microsoft](https://privacy.microsoft.com/en-US/)
+- [Privacy di Microsoft](https://privacy.microsoft.com/it-IT/)
 - [Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement)
 - [Considerazioni sulla privacy nel cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf).

@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Informazioni su come avviare la raccolta dei dati per il tenant utilizzando l'app modello di analisi di utilizzo di Microsoft 365 in Power BI.
-ms.openlocfilehash: 249fadce15ca2e4c979d6e1930ff0d14ccd9bc08
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355007"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140684"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Microsoft 365 Usage Analytics è disponibile anche per la community di Microsoft 365 US Government.
   
@@ -90,7 +97,7 @@ Le aggregazioni a livello di tenant saranno disponibili in tutti i report. I **d
 
 Per rendere anonimi i dati raccolti per tutti i report è necessario essere un amministratore globale. In questo modo vengono nascoste informazioni identificabili, ad esempio i nomi di utenti, gruppi e siti, nei report e nell'app modello.
   
-1. \> Nell'interfaccia di amministrazione, passare alla scheda **Impostazioni e** in **Servizi** , scegliere **report**. ****
+1. \> Nell'interfaccia di amministrazione, passare alla scheda **Impostazioni e** in **Servizi** , scegliere **report**. **Settings**
     
 2. Selezionare **report**, quindi scegliere di **visualizzare gli identificatori anonimi**. Questa impostazione viene applicata sia ai report sull'utilizzo che all'app modello.
   

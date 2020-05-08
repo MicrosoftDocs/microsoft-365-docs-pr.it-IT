@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versione precedente della crittografia dei messaggi di Office 365 dipende da Microsoft Azure Rights Management (precedentemente noto come Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 234115a76116fe9033e8da7868f846658d0d3eee
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 879f4ec1db8a8cfe1fe3c8d3b1dd9e1fc68dd687
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943265"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165917"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configurare Azure Rights Management per la versione precedente della crittografia dei messaggi
 
@@ -116,7 +116,7 @@ Un dominio di pubblicazione trusted è un file XML che contiene informazioni sul
 ## <a name="next-steps"></a>Passaggi successivi
 <a name="importTPDs"> </a>
 
-Dopo aver completato il programma di installazione di Azure Rights Management, se si desidera abilitare le nuove funzionalità OME, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection.](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)
+Dopo aver completato il programma di installazione di Azure Rights Management, se si desidera abilitare le nuove funzionalità OME, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
   
 Dopo aver configurato l'organizzazione per l'utilizzo delle nuove funzionalità OME, è possibile [definire le regole del flusso di posta per proteggere i messaggi di posta elettronica con le nuove funzionalità ome](define-mail-flow-rules-to-encrypt-email.md).
   

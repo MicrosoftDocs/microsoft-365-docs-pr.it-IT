@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071283"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066379"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR Titolo 21 parte 11
 
@@ -39,13 +39,13 @@ CFR Title 21 Part 11 stabilisce i requisiti per garantire che i record elettroni
 
 I servizi cloud di Microsoft Enterprise vengono sottoposti a controlli di terze parti indipendenti di tipo 2 e SOC 2 regolari e sono certificati secondo gli standard ISO/IEC 27001 e ISO/IEC 27018.
 
-Anche se questi controlli regolari e le certificazioni non si concentrano in particolare sulla conformità normativa della FDA, il loro scopo e gli obiettivi sono simili in natura a quelli del titolo CFR 21 parte 11 e servono a garantire la riservatezza, l'integrità e la disponibilità di dati archiviati nei servizi cloud Microsoft. Il nostro approccio di qualificazione si basa anche sulle procedure consigliate del settore, tra cui la serie di guide di Good Practices della società internazionale per l'ingegneria farmaceutica (ISPE) GAMP e la procedura consigliata per la cooperazione all'ispezione farmaceutica (PIC/S) per sistemi informatizzati in ambienti GxP regolamentati.
+Anche se questi controlli regolari e le certificazioni non si concentrano specificamente sulla conformità normativa della FDA, il loro scopo e gli obiettivi sono simili in natura a quelli del titolo CFR 21 parte 11 e servono a garantire la riservatezza, l'integrità e la disponibilità dei dati archiviati nei servizi cloud Microsoft. Il nostro approccio di qualificazione si basa anche sulle procedure consigliate del settore, tra cui la serie di guide di Good Practices della società internazionale per l'ingegneria farmaceutica (ISPE) GAMP e la procedura consigliata per la cooperazione all'ispezione farmaceutica (PIC/S) per sistemi informatizzati in ambienti GxP regolamentati.
 
-I clienti possono richiedere l'accesso ai rapporti di conformità, in base ai termini e alle condizioni dell'accordo di segretezza, tramite il proprio rappresentante dell'account Microsoft o tramite il [Service Trust Portal](https://aka.ms/stphelp). Inoltre, le linee guida per la qualificazione per Microsoft Azure e Microsoft Office 365 forniscono una spiegazione dettagliata del modo in cui i controlli di controllo di Microsoft corrispondono ai requisiti di CFR Title 21 parte 11, linee guida per l'implementazione di una strategia di qualificazione della FDA e Descrizione delle aree di responsabilità condivisa.
+I clienti possono richiedere l'accesso ai rapporti di conformità, in base ai termini e alle condizioni dell'accordo di segretezza, tramite il proprio rappresentante dell'account Microsoft o tramite il [Service Trust Portal](https://aka.ms/stphelp). Inoltre, le linee guida per la qualificazione per Microsoft Azure e Microsoft Office 365 forniscono una spiegazione dettagliata del modo in cui i controlli di controllo di Microsoft corrispondono ai requisiti di CFR Title 21 parte 11, linee guida per l'implementazione di una strategia di qualificazione della FDA e una descrizione delle aree di responsabilità condivisa.
 
 Informazioni su come accelerare la distribuzione della FDA CFR Title 21: [scaricare la guida alla qualificazione di Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 Anche se non vi è alcuna certificazione per la conformità con il titolo QRC 21 parte 11, i seguenti servizi cloud di Microsoft Enterprise sono stati sottoposti a controlli di terze parti indipendenti, che possono aiutare i clienti a rispettare le proprie attività. Questi servizi includono:
 
@@ -90,11 +90,7 @@ Microsoft garantisce che i servizi cloud aziendali soddisfino i termini definiti
 - [Guida della FDA per l'industria parte 11: registri elettronici e firme](https://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 - [Linee guida per la qualificazione per Azure](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Linee guida per la qualificazione di Office 365](https://aka.ms/o365-qualification-guideline)
-- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud per enti pubblici](https://aka.ms/govt-cloud)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf).

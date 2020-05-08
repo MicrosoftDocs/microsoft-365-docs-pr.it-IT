@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 576404aadb2328682f10f69f30e58df2cafebe54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601993"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066449"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Autovalutazione Cloud Security Alliance (CSA) STAR
 
@@ -41,8 +41,6 @@ STAR prevede tre livelli di controllo: l’autovalutazione CSA-STAR è l'offerta
 ## <a name="microsoft-and-csa-star-self-assessment"></a>Microsoft e l’autovalutazione CSA STAR
 
 Nell'ambito dell'autovalutazione STAR, i CSP possono inviare due tipi di documenti diversi per indicare la conformità alle procedure consigliate della CSA: un CAIQ completato o un report che documenti la conformità al CCM. Per la l’autovalutazione CSA STAR, Microsoft pubblica sia un CAIQ sia un report basato sul CCM per Microsoft Azure, e report basati sul CCM per Microsoft Dynamics 365 e Microsoft Office 365.  
-  
-Informazioni sui vantaggi offerti dall'autovalutazione CSA STAR nel cloud Microsoft: [Scaricare il documento di informazioni di base sull’autovalutazione CSA STAR](https://aka.ms/csastar-selfassessment-backgrounder)
 
 Come accelerare la distribuzione dell’autovalutazione CSA STAR con il progetto di sicurezza e conformità di Azure: [Scaricare la risposta di Azure alle valutazioni sul consenso della CSA](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
@@ -85,8 +83,3 @@ Consente ai CSP di documentare in modo trasparente la propria conformità alle p
 
 - [Azure](https://aka.ms/Azure_STAR)
 - [Dynamics 365](https://aka.ms/DynamicsCRM_Online_STAR)
-
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf).
-

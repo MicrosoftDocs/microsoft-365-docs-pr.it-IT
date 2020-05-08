@@ -20,14 +20,21 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Informazioni su come aggiungere un membro a un gruppo, rimuovere un membro da un gruppo e gestire lo stato del proprietario di un gruppo nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 8b4df54e3dc54baf2f9e770f42333b95af391e90
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 96d9485821c27f2e9a4696401938da35a9996996
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049400"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140556"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Aggiungere o rimuovere membri dai gruppi di Microsoft 365 utilizzando l'interfaccia di amministrazione
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiungono ai gruppi a cui si desidera partecipare o sono invitati dai proprietari dei gruppi. Se le modifiche apportate alla proprietà del gruppo o se si determina che un membro deve essere aggiunto o rimosso, come amministratore è anche possibile apportare tale modifica. È possibile apportare queste modifiche solo a un amministratore globale, un amministratore di Exchange, un amministratore di gruppi o un amministratore dell'utente. [Che cos'è un gruppo di Microsoft 365?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 

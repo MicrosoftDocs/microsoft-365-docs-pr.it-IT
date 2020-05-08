@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 837dda3a506a2ba2a743b1aed89a5c004a4fb163
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 48b9e0135198f687430bf195c7dff8a405d15f7e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228552"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065871"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>Cloud Computing Compliance Controls Catalog (C5)
 
@@ -67,7 +67,3 @@ Microsoft Cloud per la Germania si trova fisicamente in Germania e rispetta i re
 - [Report di conformità: C5-und SOC-Testate Azure Deutschland](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=df100ae1-baf9-4785-8a6d-864c0bc5c308&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)
 - [Manuale di conformità IT-Grundschutz](https://gallery.technet.microsoft.com/Azure-Germany-IT-fca4afd7) per Microsoft Azure Germania
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/E/F/6/EF619A4D-C17C-4279-8DC4-79C0620676AB/C5Germany-Compliance.pdf).

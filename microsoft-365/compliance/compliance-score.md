@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il Punteggio di conformità di Microsoft aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce azioni consigliate per aiutare a gestire i rischi.
-ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 5fced1a9452f2345a678bfef670e1a19b9811e81
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046274"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140851"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Punteggio di conformità Microsoft (anteprima)
 
@@ -104,7 +104,7 @@ Visualizzare istruzioni dettagliate per la [gestione delle valutazioni in Compli
 
 ### <a name="templates"></a>Modelli
 
-Il Punteggio di conformità fornisce modelli preconfigurati per le valutazioni. È inoltre possibile personalizzare un modello preconfigurato aggiungendo controlli e azioni personalizzati. Ad esempio, è possibile creare un modello per il controllo del processo aziendale oppure un modello per uno standard di protezione dei dati o di conformità regionale non incluso in uno dei modelli già configurati. Introducendo i propri modelli in Score Compliance, è possibile monitorare non solo le valutazioni cloud di Microsoft, ma anche eventuali altre valutazioni dei rischi nell'ambito della propria organizzazione.
+Il Punteggio di conformità fornisce modelli preconfigurati per le valutazioni. È inoltre possibile creare una valutazione personalizzata aggiungendo controlli e azioni personalizzati a un modello preconfigurato. Ad esempio, è possibile creare un modello per il controllo del processo aziendale oppure un modello per uno standard di protezione dei dati o di conformità regionale non incluso in uno dei modelli già configurati. Introducendo i propri modelli in Score Compliance, è possibile monitorare non solo le valutazioni cloud di Microsoft, ma anche eventuali altre valutazioni dei rischi nell'ambito della propria organizzazione.
 
 I modelli preconfigurati per il Punteggio di conformità sono:
 

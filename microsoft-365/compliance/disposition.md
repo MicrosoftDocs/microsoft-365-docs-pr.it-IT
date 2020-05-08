@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
+ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952619"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44156891"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -63,11 +63,14 @@ Quando il contenuto raggiunge la fine del periodo di conservazione, è possibile
 
 Quando viene attivata una revisione della disposizione alla fine del periodo di conservazione:
   
-- Gli utenti che scelgono ricevono una notifica tramite posta elettronica che dispongono di contenuto da esaminare. Questi revisori possono essere singoli utenti, gruppi di distribuzione o di sicurezza o gruppi di Office 365. Si noti che le notifiche vengono inviate su base settimanale.
+- Gli utenti che scelgono ricevono una notifica tramite posta elettronica che dispongono di contenuto da esaminare. Questi revisori possono essere singoli utenti, gruppi di distribuzione o di sicurezza o gruppi Microsoft 365 (in[precedenza gruppi di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)). Si noti che le notifiche vengono inviate su base settimanale.
     
 - I revisori passano alla scheda **disposizione** del centro conformità Microsoft 365 per esaminare il contenuto e decidere se eliminarlo definitivamente, estenderne il periodo di conservazione o applicare un'etichetta di conservazione diversa.
 
 Una recensione di disposizione può includere il contenuto nelle cassette postali di Exchange, siti di SharePoint, account di OneDrive e gruppi Microsoft 365. Il contenuto in attesa di una revisione della disposizione in tali posizioni viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto.
+
+> [!NOTE]
+> Una cassetta postale deve disporre di almeno 10 MB di dati per il supporto delle recensioni sulla disposizione.
 
 È possibile visualizzare una panoramica di tutte le disposizioni in sospeso nella scheda **Panoramica** . Per esempio:
 
@@ -106,10 +109,10 @@ Come si può vedere dall'immagine, le azioni supportate sono:
 - Applicazione di un'etichetta di conservazione diversa
 
 Se si dispone delle autorizzazioni per la posizione e il contenuto, è possibile utilizzare il collegamento nella colonna **percorso** per visualizzare i documenti nel percorso originale. Durante una revisione della disposizione, il contenuto non si sposta mai dal percorso originale e non viene mai eliminato fino a quando il revisore non lo sceglie.
-  
+
 Le notifiche di posta elettronica vengono inviate automaticamente ai revisori su base settimanale. Questo processo pianificato indica che quando il contenuto raggiunge la fine del periodo di conservazione, potrebbero essere necessari fino a sette giorni affinché i revisori ricevano la notifica di posta elettronica che il contenuto è in attesa di disposizione.
   
-È possibile controllare tutte le azioni di disposizione.
+È possibile controllare tutte le azioni di disposizione e il testo di giustificazione immesso dal revisore viene salvato e visualizzato nella colonna **Commento** della pagina **elementi eliminati** .
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Durata dell'eliminazione definitiva del contenuto eliminato
 

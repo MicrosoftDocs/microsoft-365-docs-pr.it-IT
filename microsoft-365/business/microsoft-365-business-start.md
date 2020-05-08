@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 for business, su come configurarlo e su come preparare i dispositivi e i PC degli utenti per assicurarsi che siano protetti da Microsoft 365 for business.
-ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a470f015857117d3cbbc15255e8d815438222509
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048086"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165790"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introduzione a Microsoft 365 for business
 
@@ -79,9 +79,9 @@ Accedere all'interfaccia di [amministrazione di microsoft 365](https://portal.of
     
     Se si sta **spostando definitivamente da una Active Directory locale al cloud**, è possibile accedere all'interfaccia di amministrazione di Microsoft 365 e utilizzare l'installazione guidata per aggiungere manualmente gli utenti oppure è possibile eseguire una sincronizzazione una tantum con Azure ad Connect. Questa operazione può essere eseguita in due modi: 
     
-    - Se si dispone anche di un server Exchange 2010, Exchange 2013 o Exchange 2016, è possibile [utilizzare un ambiente ibrido minimo per eseguire rapidamente la migrazione delle cassette postali di Exchange a Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). I passaggi ibridi minimi includono una sincronizzazione una tantum degli utenti in Azure AD e la migrazione della posta elettronica da locale al cloud. Una volta completata la migrazione della posta elettronica, la sincronizzazione della directory viene disattivata automaticamente quando si utilizza questo metodo.
+    - Se si dispone anche di un server Exchange 2010, Exchange 2013 o Exchange 2016, è possibile [utilizzare un ambiente ibrido minimo per eseguire rapidamente la migrazione delle cassette postali di Exchange a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). I passaggi ibridi minimi includono una sincronizzazione una tantum degli utenti in Azure AD e la migrazione della posta elettronica da locale al cloud. Una volta completata la migrazione della posta elettronica, la sincronizzazione della directory viene disattivata automaticamente quando si utilizza questo metodo.
     
-    - Utilizzare la procedura guidata di sincronizzazione della directory per sincronizzare gli utenti con il cloud. Seguire la procedura descritta in [set up Directory Synchronization for Microsoft 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) per completare il processo. Dopo aver sincronizzato gli utenti nel cloud, è necessario disattivare la [sincronizzazione della directory per Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
+    - Utilizzare la procedura guidata di sincronizzazione della directory per sincronizzare gli utenti con il cloud. Seguire la procedura descritta in [set up Directory Synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) per completare il processo. Dopo aver sincronizzato gli utenti nel cloud, è necessario disattivare la [sincronizzazione della directory per Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
     È inoltre necessario fornire a ciascun utente aggiunto in questo modo una licenza a Microsoft 365 for business. È possibile eseguire questa operazione nell' [installazione guidata](set-up.md) oppure è possibile [assegnare licenze agli utenti in Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
     
@@ -104,7 +104,7 @@ Se si conserva un Active Directory locale che contiene alcune risorse locali (ad
   
 - Contattare il partner.
     
-- In qualità di amministratore Microsoft 365 for business, è possibile accedere al team di supporto clienti: ** [contattare il supporto tecnico per i prodotti aziendali-Guida](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) per gli amministratori**
+- In qualità di amministratore Microsoft 365 for business, è possibile accedere al team di supporto clienti: ** [contattare il supporto tecnico per i prodotti aziendali-Guida](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) per gli amministratori**
     
 ## <a name="see-also"></a>Vedere anche
 

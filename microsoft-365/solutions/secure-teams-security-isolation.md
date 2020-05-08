@@ -10,16 +10,16 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
-- M365solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: cfb05bdfe791289cef7af480397802a3e11271a1
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 3af0826e925f2592aaae930200c0f7b8b9865be1
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003059"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160064"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -78,7 +78,7 @@ Per creare un team per le informazioni sensibili
 È consigliabile limitare la creazione di canali privati ai proprietari dei team.
 
 Per limitare la creazione di canali privati
-1. Nel team fare clic **Altre opzioni** e quindi su **Gestisci team**.
+1. Nel team fare clic su **Altre opzioni** e quindi su **Gestisci team**.
 2. Nella scheda **Impostazioni** espandere **Autorizzazioni dei membri**.
 3. Deselezionare la casella di controllo **Consenti ai membri di creare canali privati**.
 

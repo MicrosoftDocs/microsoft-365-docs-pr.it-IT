@@ -13,14 +13,21 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: Informazioni su come attivare e gestire app di terze parti nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 521a535115cd3a082348485f4d03dade27c71d92
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045965"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141189"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni delle app di terze parti per l'organizzazione
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 È possibile gestire le licenze e la fatturazione per le app di terze parti nell'interfaccia di amministrazione di Microsoft 365 con la modalità Anteprima attivata. Le funzionalità aggiornate includono la gestione avanzata degli abbonamenti, l'accesso migliorato alle informazioni sulla fatturazione e una maggiore flessibilità per la gestione delle fatture. La gestione della sottoscrizione si basa sulla piattaforma di commercio aggiornata di Microsoft. Questo si applica alle app software-as-a-Service che i clienti acquistano direttamente o da un provider di terze parti.
 

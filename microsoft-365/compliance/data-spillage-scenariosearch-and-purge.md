@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
-ms.openlocfilehash: fd230d3e54ca61046a28f60d81d497a413bfa4f7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 708343992d2b8d51d9b10f89cd6b986de00423d6
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630593"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166057"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -120,7 +120,7 @@ Per ulteriori informazioni sull'eventuale condivisione di messaggi di posta elet
   
 È possibile utilizzare la traccia dei messaggi nel centro sicurezza e conformità o utilizzare i cmdlet corrispondenti in PowerShell di Exchange Online. È importante tenere presente che l'analisi dei messaggi non offre garanzie complete sulla completezza di dati restituiti. Per ulteriori informazioni sull'utilizzo della traccia dei messaggi, vedere: 
   
-- [Traccia dei messaggi nel Centro sicurezza e conformità](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [Traccia dei messaggi nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc)
     
 - [Nuova traccia dei messaggi nel centro sicurezza & conformità](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     

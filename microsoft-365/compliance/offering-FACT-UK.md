@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2aa68d75f795e670390c913c999c154a0164c18c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602463"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066399"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>Federazione contro il furto del copyright (FACT)
 
@@ -29,13 +29,11 @@ Il contenuto protetto da copyright è disponibile in molte forme, ovvero immagin
 
 ## <a name="microsoft-and-federation-against-copyright-theft-fact"></a>Microsoft and Federation Against furto del copyright (FACT)
 
-Per sottolineare l'impegno di Microsoft per la protezione dei clienti quando affidano tali risorse al cloud pubblico, Microsoft Azure è stata certificata dalla Federazione contro il furto del copyright (FACT) nel Regno Unito. La certificazione dei fatti si basa sulla norma ISO 27001, concentrandosi sulla sicurezza fisica e digitale, sullo screening e sulla formazione del personale e sul controllo dell'accesso. Il programma per la protezione e la sicurezza del contenuto di FACT attinge alle competenze tra l'applicazione della legge, i partner tecnologici e le associazioni di settore per combattere la violazione del copyright e il furto di contenuti, come la condivisione peer-to-peer, la duplicazione illegale dei dischi e il segnale furto.
+Per sottolineare l'impegno di Microsoft per la protezione dei clienti quando affidano tali risorse al cloud pubblico, Microsoft Azure è stata certificata dalla Federazione contro il furto del copyright (FACT) nel Regno Unito. La certificazione dei fatti si basa sulla norma ISO 27001, concentrandosi sulla sicurezza fisica e digitale, sullo screening e sulla formazione del personale e sul controllo dell'accesso. Il programma per la protezione e la sicurezza del contenuto di FACT attinge alle competenze tra l'applicazione della legge, i partner tecnologici e le associazioni di settore per combattere la violazione del copyright e il furto di contenuti, come la condivisione peer-to-peer, la duplicazione illegale dei dischi e il furto di segnali.
 
 In base all'invio volontario da parte di Microsoft a un audit dei fatti, il revisore ha certificato Azure. Azure è stato il primo servizio cloud pubblico multi-tenant a ottenere la certificazione dei fatti, aggiungendo al portfolio di Azure le Certificazioni correlate ai media, tra cui la certificazione CDSA e una valutazione formale da parte della MPAA.
 
-Informazioni sui vantaggi di FACT sul cloud Microsoft: [scaricare la fact Backgrounder](https://aka.ms/fact-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 
@@ -62,7 +60,3 @@ La conformità con FACT è volontaria, ma Microsoft ha scelto di eseguire una va
 - [Valutazione della MPAA](offering-mpaa.md)
 - [Risposte Azure a CSA CAIQ v3.0.1](https://aka.ms/csacaiqresponses)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf).

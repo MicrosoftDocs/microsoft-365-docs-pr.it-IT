@@ -20,31 +20,38 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: 2f70bf8d7b3a98416eca288aaa68f12fde1ba211
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 119329289a9c19c2256cf112e82289b55cf9ce07
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627693"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155434"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Top 10 modi per proteggere i piani Microsoft 365 for business
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Se si è un'organizzazione di piccole o medie dimensioni che utilizza uno dei piani aziendali di Microsoft e il tipo di organizzazione è mirato da criminali informatici e hacker, utilizzare le istruzioni contenute in questo articolo per aumentare la sicurezza dell'organizzazione. Questa guida aiuta l'organizzazione a raggiungere gli obiettivi descritti nel [manuale della campagna](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)di Harvard Kennedy School Cybersecurity.
   
 Microsoft consiglia di completare le attività elencate nella tabella seguente che si applicano al piano di servizio. 
   
-||**Attività**|**Microsoft 365 business standard**|**Microsoft 365 Business Premium**|
+||**Attività**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
-|1   <br/> |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2   <br/> |[Formazione degli utenti](secure-your-business-data.md#train) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3   <br/> |[Utilizzo degli account amministratore dedicati](secure-your-business-data.md#admin) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1  <br/> |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2  <br/> |[Formazione degli utenti](secure-your-business-data.md#train) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3  <br/> |[Utilizzo degli account amministratore dedicati](secure-your-business-data.md#admin) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[Aumentare il livello di protezione da malware nella posta elettronica](secure-your-business-data.md#malware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5   <br/> |[Proteggere l'ambiente da ransomware](secure-your-business-data.md#ransomware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |6   <br/> |[Interrompere l'inoltro automatico per la posta elettronica](secure-your-business-data.md#forwarding) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |7   <br/> |[Utilizzare la crittografia dei messaggi di Office](secure-your-business-data.md#encryption) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |8   <br/> |[Proteggere la posta elettronica da attacchi di phishing](secure-your-business-data.md#phishing) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |9   <br/> |[Protezione da allegati e file dannosi con gli allegati sicuri di ATP](secure-your-business-data.md#atp) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10   <br/> |[Protezione da attacchi di phishing con collegamenti sicuri di ATP](secure-your-business-data.md#phishingatp) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10    <br/> |[Protezione da attacchi di phishing con collegamenti sicuri di ATP](secure-your-business-data.md#phishingatp) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 Prima di iniziare, controllare il [Punteggio microsoft 365 Secure](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) nel centro sicurezza di Microsoft 365. Da un Dashboard centralizzato, è possibile monitorare e migliorare la sicurezza per le identità, i dati, le app, i dispositivi e l'infrastruttura di Microsoft 365. Si ricevono punti per la configurazione delle funzionalità di sicurezza consigliate, per l'esecuzione di attività correlate alla sicurezza (come la visualizzazione dei report) o per l'indirizzamento di suggerimenti con un'applicazione o un software di terze parti. Con ulteriori informazioni e una maggiore visibilità in un insieme più ampio di prodotti e servizi Microsoft, è possibile ottenere una relazione sicura sull'integrità della sicurezza dell'organizzazione.
   
@@ -90,7 +97,7 @@ Oltre a queste linee guida, Microsoft consiglia agli utenti di eseguire le azion
     
 Microsoft consiglia inoltre agli utenti di proteggere gli account di posta elettronica personali adottando le azioni consigliate negli articoli seguenti:
   
-- [Proteggi il tuo account di posta elettronica di Outlook.com](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [Proteggi il tuo account di posta elettronica di Outlook.com](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [Proteggi l'account di Gmail con la verifica in due passaggi](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -222,7 +229,7 @@ Se il destinatario dispone di Outlook 2013 o Outlook 2016 e di un account di pos
   
 Se il destinatario utilizza un altro client di posta elettronica o un account di posta elettronica, ad esempio Gmail o Yahoo, visualizzerà un collegamento che consente di accedere alla lettura del messaggio di posta elettronica o di richiedere un codice di accesso una tantum per visualizzare il messaggio in un Web browser. Se gli utenti non ricevono la posta elettronica, verificarne la posta indesiderata o la cartella posta indesiderata. 
   
-Per ulteriori informazioni, vedere [inviare, visualizzare e rispondere a messaggi crittografati in Outlook per PC](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx).
+Per ulteriori informazioni, vedere [inviare, visualizzare e rispondere a messaggi crittografati in Outlook per PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
   
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. proteggere la posta elettronica da attacchi di phishing
 <a name="phishing"> </a>

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: f7ae1a285e22ad18d292d37aab0bba0b4a441461
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 6ac6d74b027cc533f689c1d67c7fce246c73984f
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857452"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166162"
 ---
 # <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>Funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection
 
@@ -54,7 +54,7 @@ Un avviso attivato crea un evento Incident che può avviare un'indagine automati
 |Dispositivi (detti anche endpoint)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Contenuto della posta elettronica (file e messaggi nelle cassette postali)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-Ogni indagine genera un verdetto (*Dannosa*, *Sospetta* o *Pulita*) per ogni prova analizzata. A seconda del tipo di minaccia e del verdetto risultante, le azioni di correzione si verificano automaticamente o dopo l'approvazione da parte del team di operazioni di sicurezza dell'organizzazione. Le azioni in sospeso e quelle completate sono elencate nel [centro notifiche](mtp-action-center.md).
+Ogni indagine genera verdetti (*dannosi*, *sospetti*o *non sono state trovate minacce*) per ogni elemento di prova indagato. A seconda del tipo di minaccia e del verdetto risultante, le azioni di correzione si verificano automaticamente o dopo l'approvazione da parte del team di operazioni di sicurezza dell'organizzazione. Le azioni in sospeso e quelle completate sono elencate nel [centro notifiche](mtp-action-center.md).
 
 > [!TIP]
 > Se si pensa che qualcosa è stato perso o rilevato erroneamente dalle funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection, fatecelo sapere! Vedere [How to report false positives/negatives in Automatic Investigation and Response (Air) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).

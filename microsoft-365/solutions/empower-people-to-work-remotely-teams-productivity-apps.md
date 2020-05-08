@@ -1,5 +1,5 @@
 ---
-title: 4. Distribuire le app e i servizi per la produttività dei lavoratori remoti
+title: Passaggio 4. Distribuire le app e i servizi per la produttività dei lavoratori remoti
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: Consentire agli utenti di essere produttivi con Teams, Exchange, SharePoint e altri servizi di Microsoft 365.
-ms.openlocfilehash: dddc3cac8a6cb955e8a337eed07279ba75c029aa
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003199"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160739"
 ---
-# <a name="4-deploy-remote-worker-productivity-apps-and-services"></a>4. Distribuire le app e i servizi per la produttività dei lavoratori remoti
+# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Passaggio 4. Distribuire le app e i servizi per la produttività dei lavoratori remoti
 
 Per essere produttivi, le persone devono comunicare e collaborare tra loro. Devono partecipare a riunioni, chattare tramite voce e testo, creare nuovi contenuti e condividere informazioni e file, scambiare messaggi di posta elettronica e gestire calendari e attività. Microsoft 365 include servizi basati sul cloud per tutte queste funzionalità principali:
 
@@ -32,6 +32,8 @@ Per essere produttivi, le persone devono comunicare e collaborare tra loro. Devo
 - Per lo scambio di posta elettronica e la gestione di calendari, contatti e attività, utilizzare Exchange Online e il client Outlook.
 - Per archiviare e collaborare ai file, utilizzare SharePoint e OneDrive. È possibile usarli con un Web browser o all'interno di Teams.
 - Per creare nuovi contenuti o collaborare a contenuti esistenti, Microsoft 365 Apps è costituito da versioni di Word, PowerPoint, Excel e Outlook che vengono installate sul computer locale e ricevono continui aggiornamenti di funzionalità e sicurezza.
+
+![Usare le app di Teams, Outlook, SharePoint, OneDrive e Microsoft 365 per rimanere produttivi](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Mantenere le persone in contatto con Microsoft Teams
 

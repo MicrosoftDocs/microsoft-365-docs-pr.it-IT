@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 989d30a53b767bc8ec757c92e72198e3900bcfeb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 70e36d4f11f7fc1a5870f41a32351cf7078bdc68
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943665"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065771"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>Requisiti per la localizzazione dei dati personali in russo
 
@@ -71,5 +71,5 @@ Per domande tecniche e di fatturazione, fare riferimento alle risorse del suppor
 - **Supporto online**: inviare query tramite il [supporto di Power Platform](https://docs.microsoft.com/power-platform/admin/get-help-support)
 
 > [!NOTE]
-> <sup>1</sup> legge federale n. 242-FZ (edizione datata 12.31.2014) "sull'inserimento di emendamenti in alcuni atti legislativi della Federazione Russa per chiarire la procedura per il trattamento dei dati personali in Information and Telecommunication Networks" datato 07.21.2014 <br>
+> <sup>1</sup> legge federale n. 242-FZ (edizione datata 12.31.2014)' sull'inserimento di emendamenti in alcuni atti legislativi della Federazione Russa per chiarire la procedura per il trattamento dei dati personali in Information and Telecommunication Networks ' datato 07.21.2014 <br>
 > <sup>2</sup> diritto federale n. 152-FZ su dati personali di 07,27. 2006<br>

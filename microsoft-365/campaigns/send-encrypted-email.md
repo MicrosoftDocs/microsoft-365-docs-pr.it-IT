@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come inviare messaggi di posta elettronica crittografati tramite Outlook.
-ms.openlocfilehash: 559998326caedaf3352741ad9083940f79b1a614
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080459"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165686"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Crittografare o contrassegnare il messaggio di posta elettronica sensibile
 
@@ -48,7 +48,7 @@ Prima di inviare messaggi di posta elettronica con informazioni riservate o sens
 
 ## <a name="set-it-up"></a>Configurazione
 
-Se si desidera crittografare un messaggio che non soddisfa una regola predefinita o che l'amministratore non ha impostato regole, è possibile applicare una serie di regole di crittografia diverse prima di inviare il messaggio. Per inviare un messaggio crittografato da Outlook 2013 o 2016 o Outlook 2016 per Mac, selezionare **opzioni > autorizzazioni**, quindi selezionare l'opzione di protezione necessaria. È anche possibile inviare un messaggio crittografato selezionando il pulsante **Proteggi** in Outlook sul Web. Per ulteriori informazioni, vedere [inviare, visualizzare e rispondere a messaggi crittografati in Outlook per PC](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
+Se si desidera crittografare un messaggio che non soddisfa una regola predefinita o che l'amministratore non ha impostato regole, è possibile applicare una serie di regole di crittografia diverse prima di inviare il messaggio. Per inviare un messaggio crittografato da Outlook 2013 o 2016 o Outlook 2016 per Mac, selezionare **opzioni > autorizzazioni**, quindi selezionare l'opzione di protezione necessaria. È anche possibile inviare un messaggio crittografato selezionando il pulsante **Proteggi** in Outlook sul Web. Per ulteriori informazioni, vedere [inviare, visualizzare e rispondere a messaggi crittografati in Outlook per PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## <a name="admin-settings"></a>Impostazioni di amministratore
 

@@ -1,5 +1,7 @@
 ---
-title: Gestire i profili di fatturazione
+title: Gestire profili di fatturazione
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -16,14 +18,22 @@ search.appverid:
 - MET150
 description: Informazioni su come i profili di fatturazione supportano le fatture.
 keywords: Profilo di fatturazione, fatture, addebiti, spese gestite
-ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837390"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140891"
 ---
-# <a name="manage-billing-profiles"></a>Gestire i profili di fatturazione
+# <a name="manage-billing-profiles"></a>Gestire profili di fatturazione
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Per i clienti commerciali che acquistano prodotti e servizi da Microsoft, i profili di fatturazione consentono di personalizzare gli elementi inclusi nella fattura e come vengono pagate le fatture.
 
 I profili di fatturazione includono le informazioni seguenti:
@@ -51,7 +61,7 @@ I ruoli nei profili di fatturazione dispongono delle autorizzazioni per controll
 
 ## <a name="view-billing-profiles"></a>Visualizzare i profili di fatturazione
 
-1. Nell'interfaccia di amministrazione, **andare alla** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">fatture & pagamenti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Fatture e pagamenti</a>.
 
 2. Scegliere **profili di fatturazione**e quindi scegliere un profilo di fatturazione dall'elenco.
 

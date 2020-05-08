@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un sito di SharePoint per la collaborazione con gli utenti.
-ms.openlocfilehash: f79846de5d4fd8661205e549db3457a7696e9770
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035996"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160004"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 

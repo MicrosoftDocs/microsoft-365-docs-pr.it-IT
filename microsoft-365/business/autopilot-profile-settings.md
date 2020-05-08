@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: I profili Autopilot consentono di controllare il modo in cui viene installato Windows nei dispositivi utente. I profili contengono impostazioni predefinite e facoltative come l'installazione di Skip Cortana.
-ms.openlocfilehash: 5c2ec3f4c3e0ebc4ea545d11f819c897f414ad52
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0c706d12ba262856ff40ea3bee57c64234fd77f7
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627415"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165842"
 ---
 # <a name="about-autopilot-profile-settings"></a>Informazioni sulle impostazioni dei profili AutoPilot
 
@@ -47,7 +47,7 @@ ms.locfileid: "43627415"
 |**Impostazione**|**Descrizione**|
 |:-----|:-----|
 |Ignorare la registrazione di Cortana, OneDrive e OEM  <br/> |Ignora l'installazione delle app consumer come Cortana e Personal OneDrive. L'utente del dispositivo può installarli in un secondo momento, purché l'utente sia un amministratore locale del dispositivo. La registrazione del produttore originale viene ignorata perché il dispositivo sarà gestito da Microsoft 365 Business Premium.  <br/> |
-|Esperienza di accesso con il tuo marchio aziendale  <br/> |Se l'azienda dispone [di un marchio Aggiungi la propria società alla pagina di accesso a Microsoft 365](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), l'utente del dispositivo otterrà quell'esperienza al momento dell'accesso.  <br/> |
+|Esperienza di accesso con il tuo marchio aziendale  <br/> |Se l'azienda dispone [di un marchio Aggiungi la propria società alla pagina di accesso a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page), l'utente del dispositivo otterrà quell'esperienza al momento dell'accesso.  <br/> |
 |Registrazione automatica in MDM con account AAD configurati.  <br/> |L'identità dell'utente verrà gestita da Azure Active Directory e gli utenti accederanno a Windows e Microsoft 365 con le credenziali di Microsoft 365 Business Premium.  <br/> |
    
  **Impostazioni facoltative:**

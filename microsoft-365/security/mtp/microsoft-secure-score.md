@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804751"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141508"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -52,7 +52,7 @@ La maggior parte sono segnati in modo binario, se si implementa l'azione di migl
 
 ### <a name="products-included-in-secure-score"></a>Prodotti inclusi nel punteggio sicuro
 
-Sono attualmente disponibili suggerimenti per l'inclusione di SharePoint Online, Exchange Online, OneDrive for business, Microsoft Information Protection e altro ancora), Azure AD e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza, come Azure ATP e Microsoft Defender ATP. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate in base a una terza parte.
+Sono attualmente disponibili suggerimenti per Microsoft 365 (incluso Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate in base a una terza parte.
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
@@ -110,8 +110,6 @@ La classificazione si basa sul numero di punti rimanenti rimasti per raggiungere
 
 ### <a name="actions"></a>Azioni
 
-Le azioni contrassegnate come [non segnate] non vengono registrate da Microsoft Secure score. È comunque possibile eseguire un'azione, ma il loro completamento non influirà sul punteggio. Se un'azione viene registrata in futuro da Microsoft Secure score ed è già stata completata, il Punteggio sicuro rispecchierà automaticamente la modifica.
-
 Quando si seleziona un'azione di miglioramento specifica, viene visualizzato un volo. Per completare l'azione, sono disponibili alcune opzioni:
 
 1. Selezionare **Visualizza impostazioni** per passare alla schermata di configurazione e apportare le modifiche. È quindi possibile ottenere i punti che l'azione vale, visibili nella parte superiore del volo. I punti possono richiedere fino a 24 ore per l'aggiornamento.
@@ -122,7 +120,7 @@ Quando si seleziona un'azione di miglioramento specifica, viene visualizzato un 
 
 ![Esempio di azione di miglioramento sicuro del Punteggio](../../media/secure-score/secure-score1x450.png)
 
-*Figure 2 & 3: azione di miglioramento comparsa*
+*Figure 2: riquadro a comparsa Azione di miglioramento*
 
 ## <a name="monitor-improvements-over-time"></a>Monitorare i miglioramenti nel tempo
 
@@ -215,7 +213,7 @@ Per riflettere la necessità per le aziende di garantire la massima sicurezza du
 Azioni di miglioramento rimosse:
 
 - Registrare tutti gli utenti per l'autenticazione a più fattori
-- Richiedi l'AMF per tutti gli utenti
+- Richiedere la MFA per tutti gli utenti
 - Richiedere l'autenticazione master per i ruoli con privilegi di Azure AD
 
 Operazioni di miglioramento aggiunte:

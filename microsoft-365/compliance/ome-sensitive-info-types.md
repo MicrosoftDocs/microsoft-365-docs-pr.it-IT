@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Informazioni su come creare un criterio di tipo di informazioni riservate per l'organizzazione utilizzando la crittografia dei messaggi di Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a6baf20d755ed30ce962d7cc6b03f6c9734e4a4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7ba94923c1f8c6ade6b7bf494636c562b4cc4102
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031406"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165957"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Creare un criterio per i tipi di informazioni riservate per l'organizzazione tramite la crittografia dei messaggi
 
@@ -64,7 +64,7 @@ Dopo che Microsoft ha crittografato un messaggio, i destinatari hanno accesso il
 
 Potrebbe essere necessario aggiornare la documentazione per gli utenti finali applicabile e i materiali di formazione per preparare le persone all'interno dell'organizzazione per questa modifica. Condividere queste risorse di crittografia dei messaggi di Office 365 con gli utenti in base alle esigenze:
 
-- [Inviare, visualizzare e rispondere a messaggi crittografati in Outlook per PC](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Inviare, visualizzare e rispondere a messaggi crittografati in Outlook per PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
 - [Video di Microsoft 365 Essentials: crittografia dei messaggi di Office](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Visualizzare queste modifiche nel log di controllo

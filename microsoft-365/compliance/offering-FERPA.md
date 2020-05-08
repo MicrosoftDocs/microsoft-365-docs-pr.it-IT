@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 11fa59476737fd3326fb49427945f183f8b990bc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6685a542ac082b97ec771bb14481eecf212f4898
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602433"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066369"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Legge sull'educazione alla famiglia e la Privacy Act (FERPA)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602433"
 
 La Family Educational Rights and Privacy Act (FERPA) è una legge federale degli Stati Uniti che protegge la privacy dei record scolastici degli studenti, compresi i dati di identificazione personale e di directory. FERPA è stato emanato per garantire che i genitori e gli studenti di età pari a 18 anni possano accedere a tali record, richiedere loro modifiche e controllare la divulgazione di informazioni, tranne in casi specifici e limitati in cui FERPA consente la divulgazione senza consenso.
 
-La legge si applica alle scuole, ai distretti scolastici e a qualsiasi altra istituzione che riceve finanziamenti dal dipartimento dell'istruzione degli Stati Uniti, ovvero quasi tutte le scuole pubbliche e i distretti scolastici, nonché la maggior parte delle istituzioni post-secondarie, sia pubbliche che private .
+La legge si applica alle scuole, ai distretti scolastici e a qualsiasi altra istituzione che riceve finanziamenti dal dipartimento dell'istruzione degli Stati Uniti, ovvero quasi tutte le scuole e i distretti scolastici pubblici, nonché la maggior parte delle istituzioni post-secondarie, sia pubbliche che private.
 
 La sicurezza è fondamentale per la conformità con FERPA, che richiede la protezione delle informazioni degli studenti da divulgazioni non autorizzate. Gli istituti di istruzione che utilizzano cloud computing devono rassicurazioni contrattuali che un fornitore di tecnologia gestisce adeguatamente i dati degli studenti sensibili.
 
@@ -39,13 +39,11 @@ FERPA non richiede o riconosce audit o altre certificazioni, quindi qualsiasi is
 - Microsoft si impegna inoltre a utilizzare i dati dei clienti solo per fornire alle organizzazioni i propri servizi cloud e i relativi scopi compatibili (come il miglioramento del rilevamento di malware) e non i dati dei clienti per la pubblicità.
 - Microsoft si impegna anche contrattualmente a non divulgare i dati dei clienti, ad eccezione del fatto che l'Istituto di istruzione indirizza, come descritto nel contratto, o come richiesto dalla legge. Gli istituti scolastici che forniscono i record di istruzione a Microsoft tramite l'utilizzo di un servizio cloud Microsoft possono quindi essere certi che tali record siano soggetti a severi vincoli contrattuali relativi all'utilizzo e alla divulgazione.
 
-A causa di questi impegni contrattuali, i clienti che sono soggetti a FERPA, sia istituzioni educative che terze parti a cui danno accesso ai dati riservati degli studenti, possono utilizzare in modo sicuro i servizi cloud di Microsoft Business nell'ambito per elaborarli, archiviarli e trasmettere tali dati.
+A causa di questi impegni contrattuali, i clienti che sono soggetti a FERPA, sia istituzioni educative che terze parti a cui danno accesso ai dati riservati degli studenti, possono utilizzare con sicurezza i servizi cloud aziendali di Microsoft per elaborare, archiviare e trasmettere tali dati.
 
-Informazioni sui vantaggi di FERPA nel cloud Microsoft: [scaricare il backgrounder di FERPA](https://aka.ms/ferpa-compliance)
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
-
-I servizi per i quali Microsoft accetta di essere designati come "ufficiali scolastici" con "interessi educativi legittimi" nei dati dei clienti includono:
+I servizi per i quali Microsoft accetta di essere designati come ' ufficiali scolastici ' con ' interessi scolastici legittimi ' nei dati dei clienti includono:
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -79,7 +77,3 @@ La legge federale degli Stati Uniti incarica la protezione della privacy dei rec
 - [Mapping del Framework di conformità di FERPA di Azure](https://aka.ms/AzureFERPAMapping)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).

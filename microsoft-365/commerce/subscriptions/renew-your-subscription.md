@@ -24,14 +24,21 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: "Informazioni su come rinnovare l'abbonamento a Microsoft 365 for business utilizzando un codice \"Product Key\" e disattivare o meno la fatturazione ricorrente. "
-ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046229"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141079"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Rinnovare Microsoft 365 for business
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Questo articolo si applica alla maggior parte degli abbonamenti a pagamento Microsoft 365 for business.
   

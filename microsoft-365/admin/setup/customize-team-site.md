@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: In questo articolo vengono fornite informazioni su come personalizzare, organizzare e gestire il sito del team per l'archiviazione e la condivisione dei file.
-ms.openlocfilehash: 49bacdd193277e88eb076baeb90380c8f696d27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 465cd3781fb5023fa6a1c943b41fa7802d7b4a45
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033787"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165108"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizzare il sito del team per l'archiviazione e la condivisione dei file
 
@@ -51,7 +51,7 @@ Migliorare la struttura di spostamento del sito con [Personalizza la struttura d
   
 Per migliorare l'individuazione di un sito, aggiungerlo come collegamento in primo piano nella pagina iniziale di SharePoint. Per informazioni, vedere [Add Featured Links to the SharePoint Start Page](/sharepoint/change-links-list-on-sharepoint-home-page).
   
-Per aggiungere un'immagine a una pagina iniziale del sito del team, vedere [aggiungere un file di immagine o immagini a una pagina di SharePoint](https://support.office.com/article/4A9B0E98-C89A-4A41-8ADB-B7750DCCCA16.aspx#ID0EAACAAA=SharePoint_Online).
+Per aggiungere un'immagine a una pagina iniziale del sito del team, vedere [aggiungere un file di immagine o immagini a una pagina di SharePoint](https://support.microsoft.com/en-us/office/add-a-picture-or-image-file-to-a-sharepoint-page-4a9b0e98-c89a-4a41-8adb-b7750dccca16).
   
 Per aggiungere pagine al sito, vedere [aggiungere una pagina a un sito](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec.aspx).
   
@@ -65,7 +65,7 @@ Per iniziare il caricamento, vedere [caricare una cartella o un file in una racc
    
 Informazioni su come modificare, eliminare, estrarre file e altro ancora. Per altre informazioni, vedere [lavorare con i file in una raccolta documenti](https://support.office.com/article/a9d89171-1673-4892-9dd2-1ca52037dea2.aspx).
   
-Per informazioni sulla creazione di visualizzazioni di raccolte per visualizzare dati specifici per la superficie, vedere [creare una visualizzazione personalizzata di una raccolta documenti](https://support.office.com/article/8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7.aspx).
+Per informazioni sulla creazione di visualizzazioni di raccolte per visualizzare dati specifici per la superficie, vedere [creare una visualizzazione personalizzata di una raccolta documenti](https://support.microsoft.com/en-us/office/create-a-custom-view-of-a-document-library-8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7).
   
 ## <a name="work-with-lists-to-organize-data"></a>Utilizzare gli elenchi per organizzare i dati
 
@@ -73,11 +73,11 @@ SharePoint include numerosi modelli per gli elenchi che è possibile aggiungere 
   
 Informazioni su come [creare un elenco in SharePoint](https://support.office.com/article/0D397414-D95F-41EB-ADDD-5E6EFF41B083.aspx#ID0EAAGAAA=Online).
   
-Per informazioni sull'espansione degli elenchi con più colonne, vedere [creare una colonna in un elenco o in una raccolta di SharePoint](https://support.office.com/article/2b0361ae-1bd3-41a3-8329-269e5f81cfa2.aspx#ID0EAADAAA=Online).
+Per informazioni sull'espansione degli elenchi con più colonne, vedere [creare una colonna in un elenco o in una raccolta di SharePoint](https://support.microsoft.com/en-us/office/create-a-column-in-a-sharepoint-list-or-library-2b0361ae-1bd3-41a3-8329-269e5f81cfa2).
   
 Se si stanno archiviando un numero elevato di dati in un elenco, vedere [gestire elenchi e raccolte di grandi dimensioni in SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-Visualizzare un video sull'aggiunta di calendari al sito, vedere [creare un calendario condiviso](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+Visualizzare un video sull'aggiunta di calendari al sito, vedere [creare un calendario condiviso](https://support.microsoft.com/en-us/office/video-create-a-shared-calendar-in-office-365-61b96006-70e2-4535-a34f-ee4fc772f798).
 
 ## <a name="organize-sites-into-hubs"></a>Organizzare i siti in hub
 
@@ -87,7 +87,7 @@ I siti hub consentono di aggiungere e associare siti. Per altre informazioni, ve
   
 Pronto per creare un sito hub, vedere [Create a hub site in SharePoint Online](/sharepoint/create-hub-site).
   
-Per informazioni su come aggiungere siti a un sito hub, vedere [associare un sito di SharePoint a un sito hub](https://support.office.com/article/ae0009fd-af04-4d3d-917d-88edb43efc05.aspx).
+Per informazioni su come aggiungere siti a un sito hub, vedere [associare un sito di SharePoint a un sito hub](https://support.microsoft.com/en-us/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05).
   
 ## <a name="sharing-files-with-the-team"></a>Condivisione di file con il team
 
@@ -115,7 +115,7 @@ Informazioni su come gestire le richieste di accesso con la [configurazione e la
     
   - [Installare e configurare Office in un iPhone o iPad con Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Configurare Office in Windows Phone con Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Configurare Office in Windows Phone con Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [Altre informazioni sull'uso di OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     

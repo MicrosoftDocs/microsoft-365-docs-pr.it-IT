@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Con Office 365, il contenuto viene crittografato a riposo e in transito con la crittografia, i protocolli e le tecnologie più forti disponibili. Ottenere una panoramica della crittografia in Office 365.
-ms.openlocfilehash: fdd1c50c7fde1892b5bab4ad83cddf8e032f4d61
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 16b7786097690af6a2dbb558582a7cf88e605bec
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631681"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166007"
 ---
 # <a name="encryption"></a>Crittografia
 
@@ -63,7 +63,7 @@ Per altre informazioni, vedere le risorse seguenti:
   
 - [Informazioni su Azure Rights Management](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Attivare Rights Management nell'interfaccia di amministrazione](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [Attivare Rights Management nell'interfaccia di amministrazione](https://docs.microsoft.com/office365/enterprise/activate-rms-in-office-365)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -75,7 +75,7 @@ Per altre informazioni, vedere le risorse seguenti:
 |:-----|:-----|
 |Configurare la crittografia per l'organizzazione  <br/> |[Configurare la crittografia in Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Visualizzare i dettagli relativi ai certificati, alle tecnologie e ai gruppi di crittografia TLS <br/> |[Informazioni tecniche sulla crittografia](technical-reference-details-about-encryption.md) <br/> |
-|Utilizzo dei messaggi crittografati in un dispositivo mobile  <br/> |[Visualizzazione dei messaggi crittografati sul dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Visualizzare i messaggi crittografati sul tuo iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
+|Utilizzo dei messaggi crittografati in un dispositivo mobile  <br/> |[Visualizzazione dei messaggi crittografati sul dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Visualizzare i messaggi crittografati sul tuo iPhone o iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
 |Crittografare un documento mediante la protezione tramite password  <br/><br/>  La protezione tramite password non è supportata in un browser. Utilizzare le versioni desktop di Word, Excel e PowerPoint per la protezione delle password. |[Aggiungere o rimuovere la protezione nel documento, nella cartella di lavoro o nella presentazione](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Scegliere una sezione **Aggiungi protezione** e quindi fare clic **su Crittografa con password**.  |
 |Rimuovere la crittografia da un documento  <br/> |[Aggiungere o rimuovere la protezione nel documento, nella cartella di lavoro o nella presentazione](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Scegliere una sezione **Rimuovi protezione** e quindi fare clic su **Rimuovi crittografia password**.  |
 

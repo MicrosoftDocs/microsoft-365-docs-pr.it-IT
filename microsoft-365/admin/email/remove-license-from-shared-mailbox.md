@@ -21,14 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Rimuovere la licenza da una cassetta postale condivisa per assegnarla a un altro utente. '
-ms.openlocfilehash: 02c98570a1742d710373c6711d2621a0a9ebe818
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210529"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140430"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Rimuovere una licenza da una cassetta postale condivisa
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Le cassette postali condivise non necessitano di una licenza, a meno che la cassetta postale non abbia più di 50 GB Seguire le istruzioni riportate di seguito per rimuovere una licenza da una cassetta postale condivisa in modo che sia possibile assegnarla a un utente oppure restituire la licenza in modo che non si paghi una licenza di cui non si ha bisogno.
   

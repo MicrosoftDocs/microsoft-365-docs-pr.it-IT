@@ -18,22 +18,22 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Informazioni su come automatizzare le attività di ricerca contenuto come la creazione di ricerche e l'esecuzione di report tramite gli script di PowerShell nel centro sicurezza & compliance in Office 365.
-ms.openlocfilehash: 4e66013ba34c71fd7e2078691f892c2ae289538b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 1967d17ab24c991d38a7c5881d3cff87750084c3
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943497"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166077"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Creare, analizzare ed eliminare più ricerche di contenuto
 
  Creare rapidamente e segnalare le ricerche di individuazione è spesso un passaggio importante in eDiscovery e nelle indagini quando si cerca di conoscere i dati sottostanti e la ricchezza e la qualità delle ricerche. Per eseguire questa operazione, la sicurezza & Compliance Center PowerShell offre un set di cmdlet per automatizzare le attività di ricerca del contenuto in termini di tempo. Questi script consentono di creare una serie di ricerche in modo semplice e rapido e quindi di eseguire i report dei risultati di ricerca stimati che consentono di determinare la quantità di dati in questione. È inoltre possibile utilizzare gli script per creare diverse versioni delle ricerche per confrontare i risultati prodotti da ognuno di essi. Questi script consentono di identificare e abbattere i dati in modo rapido ed efficiente. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per eseguire gli script descritti in questo argomento, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & Compliance. 
     
-- Per raccogliere un elenco degli URL per i siti di OneDrive for business nell'organizzazione che è possibile aggiungere al file CSV nel passaggio 1, vedere [creare un elenco di tutti i percorsi di OneDrive nell'organizzazione](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
+- Per raccogliere un elenco degli URL per i siti di OneDrive for business nell'organizzazione che è possibile aggiungere al file CSV nel passaggio 1, vedere [creare un elenco di tutti i percorsi di OneDrive nell'organizzazione](https://docs.microsoft.com/onedrive/list-onedrive-urls). 
     
 - Assicurarsi di salvare tutti i file creati in questo argomento nella stessa cartella. Questo renderà più facile eseguire gli script.
     

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 778338220cf7897f8a557fb1e335062d3effeac5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637980"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066419"
 ---
 # <a name="european-union-model-clauses"></a>Clausole del modello dell'Unione europea
 
@@ -39,11 +39,7 @@ Microsoft ha sottoposto le sue clausole contrattuali standard al Gruppo di lavor
 
 Il gruppo ha stabilito che l'implementazione delle disposizioni negli accordi Microsoft era conforme ai loro rigidi requisiti (Microsoft è stato il primo provider di servizi cloud a ricevere una lettera di approvazione da parte del gruppo). L'approvazione riguardava gli impegni riportati nelle clausole del modello 2010/87/EU ma non nelle appendici, che descrivono i trasferimenti di dati e le misure di sicurezza implementati dalla persona incaricata a importare i dati. Le appendici possono essere analizzate separatamente dalla DPA.
 
-Ulteriori informazioni sui vantaggi delle clausole del modello dell'Unione europea su Microsoft Cloud
-
-[Scaricare il documento di informazioni di base delle clausole del modello dell'Unione europea](https://aka.ms/eu-model-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -93,8 +89,4 @@ Un "responsabile secondario del trattamento dei dati" è chiunque elabori i dati
 - [Microsoft e il Privacy Shield UE-USA](https://go.microsoft.com/fwlink/p/?linkid=2099701)
 - [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

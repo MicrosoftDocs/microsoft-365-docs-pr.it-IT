@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Informazioni su come acquistare un componente aggiuntivo per aggiungere ulteriori funzionalità all'abbonamento a Microsoft 365 for business. È inoltre possibile aggiornare e rimuovere un componente aggiuntivo.
 ms.custom: okr_SMB
-ms.openlocfilehash: 801da522c9fea9efcc4d3d4a0285a6ffcb5adc0b
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 60bc63d4db84667f00ab0bde95e8541f45a38df7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045789"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141291"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Acquistare o modificare un componente aggiuntivo
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiuntivi che è possibile acquistare per l'abbonamento. I componenti aggiuntivi offrono altre funzionalità nell'abbonamento per cui vengono acquistati.
 

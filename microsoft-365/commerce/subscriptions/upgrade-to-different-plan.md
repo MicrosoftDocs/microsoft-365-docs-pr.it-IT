@@ -23,15 +23,21 @@ search.appverid:
 - BEA160
 - GEA150
 description: Informazioni su come eseguire l'aggiornamento a un nuovo abbonamento.
-monikerRange: o365-worldwide
-ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046217"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141067"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso 
+# <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Quando la tua azienda cambia o hai bisogno di altre caratteristiche, puoi aggiornare i piani. Il modo più semplice per eseguire questa operazione consiste nell'utilizzare la scheda **aggiornamento** nell'interfaccia di amministrazione. Tuttavia, l'utilizzo della scheda **aggiornamento** non è supportato in tutte le situazioni. In alcuni casi, potrebbe essere possibile modificare i piani manualmente.
 

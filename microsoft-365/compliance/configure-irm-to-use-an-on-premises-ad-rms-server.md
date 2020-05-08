@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare Information Rights Management (IRM) in Exchange Online per l'utilizzo di un server Active Directory Rights Management Services (AD RMS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 510dc7ea628a46bc5bedfc04ba3b197407d5d67d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 92bf92427ed9a0ba55a0f059859d59c11023ea33
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033696"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166117"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurare IRM per l'uso di un server AD RMS locale
   
 Per l'utilizzo con distribuzioni locali, Information Rights Management (IRM) in Exchange Online utilizza Active Directory Rights Management Services (AD RMS), una tecnologia di protezione delle informazioni in Windows Server 2008 e versioni successive. La protezione IRM viene applicata alla posta elettronica applicando un modello dei criteri dei diritti AD RMS a un messaggio di posta elettronica. I diritti sono allegati al messaggio stesso, in modo che la protezione si verifichi online e offline e all'interno e all'esterno del firewall dell'organizzazione.
   
-In questo argomento viene illustrato come configurare IRM per utilizzare un server AD RMS. Per informazioni sull'utilizzo delle nuove funzionalità per la crittografia dei messaggi di Office 365 con Azure Active Directory e Azure Rights Management, vedere le [domande frequenti sulla crittografia dei messaggi di office 365](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
+In questo argomento viene illustrato come configurare IRM per utilizzare un server AD RMS. Per informazioni sull'utilizzo delle nuove funzionalità per la crittografia dei messaggi di Office 365 con Azure Active Directory e Azure Rights Management, vedere le [domande frequenti sulla crittografia dei messaggi di office 365](https://docs.microsoft.com/microsoft-365/compliance/ome-faq).
   
 Per ulteriori informazioni su IRM in Exchange Online, vedere [Information Rights Management in Exchange Online](information-rights-management-in-exchange-online.md).
   

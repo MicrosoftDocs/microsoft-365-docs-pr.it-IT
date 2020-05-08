@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Iniziare a utilizzare le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033951"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159408"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Iniziare a usare l'analisi e la risposta automatizzate (AIR) in Office 365
 
@@ -93,6 +93,13 @@ Le autorizzazioni vengono concesse tramite alcuni ruoli, ad esempio quelli descr
 |--|--|
 |Per impostare le caratteristiche dell'aria |Uno dei ruoli seguenti: <br/>-Amministratore globale<br/>-Amministratore della sicurezza <br/>Questi ruoli possono essere assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
 |Per approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center):<br/>-Amministratore globale <br/>-Amministratore della sicurezza<br/>-Lettore di sicurezza <br/>--- e ---<br/>-Search and Purge (questo ruolo è assegnato solo nel [Centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Search and Purge a quel nuovo gruppo di ruoli.
+
+Le licenze di [Office 365 ATP Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) devono essere assegnate a:
+- Amministratori della sicurezza (compresi gli amministratori globali)
+- Il team delle operazioni di sicurezza dell'organizzazione (inclusi i lettori di sicurezza e quelli con il ruolo di ricerca e spurgo)
+- Utenti finali
+
+Inoltre, i [criteri ATP di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) devono essere definiti e applicati in modo che la protezione sia sul posto.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
