@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa35e71d2748e02da12a239f67134c1b25b5a369
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: e94cc9164938189e1b6fb07d897cf4bbf1e73c5d
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011829"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066673"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Framework di sicurezza comune (QCS, Health Information Trust Alliance) (HITRUST)
 
@@ -39,7 +39,7 @@ Informazioni su come accelerare la distribuzione di HITRUST con il modello di si
 
 [Scaricare Microsoft Azure HITRUST customer responsibility Matrix (CRM) Blueprint v 9.0 d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Intune
@@ -109,8 +109,4 @@ Accedere allo strumento di® di HITRUST MyCSF e prepopolare la valutazione per l
 - [HITRUST CSF 9,3](https://hitrustalliance.net/csf-license-agreement/)
 - [Comprensione e sfruttamento del QCS](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Per saperne di più sul programma di responsabilità condivisa di HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

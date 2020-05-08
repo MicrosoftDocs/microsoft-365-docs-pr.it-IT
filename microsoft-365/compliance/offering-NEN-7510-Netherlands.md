@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 17820674f9c6db417289a232f006c115e7060d01
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 85c629c12ec1a9fccd8c8a3bd6b1e9e8b63ded39
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637156"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066053"
 ---
 # <a name="nen-7510"></a>NEN 7510
 
@@ -78,8 +78,4 @@ I clienti possono condividere il report con il proprio revisore interno o estern
 
 - [Informazioni sulla norma NEN](https://www.nen.nl/About-NEN.htm)
 - [Norma NEN 7510:2011](https://www.nen.nl/NEN-Shop-2/Standard/NEN-75102011-nl.htm)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/3/D/E/3DE55FFB-0B45-49BC-851E-3696C8BD5FB7/NEN7510-Compliance.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

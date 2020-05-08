@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71226634f17e8e801c409e513494dfdcc19d0719
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046294"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066239"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
 
@@ -49,7 +49,7 @@ I criteri di conformità della comunicazione possono fornire assistenza per la r
 
 - **Gestione dei rischi**
 
-    Le organizzazioni sono responsabili di tutte le comunicazioni distribuite nell'infrastruttura e nei sistemi di rete aziendale. L'utilizzo dei criteri di supervisione delle comunicazioni per identificare e gestire potenziali esposizione e rischi legali può contribuire a minimizzare i rischi prima che possano danneggiare le operazioni aziendali. Ad esempio, è possibile analizzare i messaggi nell'organizzazione per comunicazioni non autorizzate su progetti riservati, come acquisizioni imminenti, fusioni, divulgazioni di guadagni, riorganizzazioni o modifiche del team di leadership.
+    Le organizzazioni sono responsabili di tutte le comunicazioni distribuite nell'infrastruttura e nei sistemi di rete aziendale. L'utilizzo di criteri di conformità della comunicazione per identificare e gestire potenziali esposizione e rischi legali può contribuire a ridurre al minimo i rischi prima che possano danneggiare le operazioni aziendali. Ad esempio, è possibile analizzare i messaggi nell'organizzazione per comunicazioni non autorizzate su progetti riservati, come acquisizioni imminenti, fusioni, divulgazioni di guadagni, riorganizzazioni o modifiche del team di leadership.
 
 - **Conformità alle normative**
 
@@ -98,7 +98,7 @@ I nuovi dashboard interattivi per gli avvisi, le corrispondenze di criteri, le a
 I criteri di conformità della comunicazione consentono di analizzare e acquisire i messaggi su diversi canali di comunicazione per esaminare e correggere rapidamente i problemi di conformità:
 
 - **Microsoft teams**: Chat Communications per i canali [Microsoft](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) pubblici e privati e le chat individuali sono supportate nella conformità della comunicazione come origine canale autonoma o con altri servizi Microsoft 365. I criteri ora analizzano automaticamente tutti i canali e i team di Microsoft teams per utenti specifici definiti in un criterio, eliminando la necessità di mantenere un elenco di mapping separato per le assegnazioni di Microsoft teams.
-- **Exchange Online**: tutte le cassette postali ospitate in [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) nell'organizzazione Microsoft 365 sono idonee per l'analisi. Messaggi di posta elettronica e allegati corrispondenti alle condizioni dei criteri di conformità della comunicazione sono immediatamente disponibili per il monitoraggio e nei report di supervisione Exchange Online è ora un canale di origine facoltativo e non è più necessario nei criteri di conformità della comunicazione.
+- **Exchange Online**: tutte le cassette postali ospitate in [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) nell'organizzazione Microsoft 365 sono idonee per l'analisi. Messaggi di posta elettronica e allegati corrispondenti alle condizioni dei criteri di conformità della comunicazione sono immediatamente disponibili per il monitoraggio e i rapporti di conformità. Exchange Online è ora un canale di origine facoltativo e non è più necessario nei criteri di conformità della comunicazione.
 - **Yammer**: i messaggi privati e le conversazioni della community pubblica in [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) sono supportati nei criteri di conformità della comunicazione. Yammer è un canale facoltativo e deve essere in [modalità nativa](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) per supportare l'analisi dei messaggi e degli allegati.
 - **Skype for business online**: i criteri di conformità della comunicazione supportano l'analisi delle comunicazioni chat e degli allegati associati in [Skype for business online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Origini**di terze parti: è possibile eseguire l'analisi dei messaggi provenienti da origini di terze [parti](archiving-third-party-data.md) per i dati importati nelle cassette postali dell'organizzazione Microsoft 365. La conformità alla comunicazione supporta le connessioni a diverse piattaforme popolari, tra cui Instant Bloomberg, Facebook, Twitter e altri.
@@ -125,13 +125,13 @@ In questo passaggio del flusso di lavoro vengono identificati i requisiti di con
 - **Linguaggio offensivo e antimolestia**: utilizzare questo modello per creare rapidamente un criterio che utilizza il classificatore incorporato per rilevare automaticamente il contenuto che può essere considerato abusivo o offensivo.
 - **Informazioni riservate**: utilizzare questo modello per creare un criterio per l'analisi delle comunicazioni contenenti tipi di informazioni riservate definite o parole chiave per garantire che i dati importanti non siano condivisi con utenti che non devono avere accesso.
 - **Conformità alle normative**: utilizzare questo modello per creare un criterio per l'analisi delle comunicazioni per i riferimenti ai termini finanziari standard associati agli standard normativi.
-- **Criteri personalizzati**: utilizzare questo modello per configurare i canali di comunicazione specifici, le condizioni di rilevamento individuali e la quantità di contenuto da esaminare per la supervisione nell'organizzazione.
+- **Criteri personalizzati**: utilizzare questo modello per configurare i canali di comunicazione specifici, le condizioni di rilevamento individuali e la quantità di contenuto da monitorare e rivedere nell'organizzazione.
 
 ### <a name="investigate"></a>Analizzare
 
 In questo passaggio, si esaminano i problemi rilevati come corrispondenti ai criteri di conformità della comunicazione. In questo passaggio sono incluse le azioni seguenti disponibili nel centro conformità di Microsoft 365:
 
-- **Avvisi**: quando un messaggio corrisponde a un criterio di supervisione, viene generato automaticamente un avviso. Per ogni avviso, è possibile visualizzare lo stato, la gravità, il tempo rilevato e se viene assegnato un caso e il relativo stato. I nuovi avvisi vengono visualizzati nella Home page conformità comunicazione e nella pagina **avvisi** e sono elencati in ordine di gravità.
+- **Avvisi**: quando un messaggio corrisponde a una condizione di criteri, viene generato automaticamente un avviso. Per ogni avviso, è possibile visualizzare lo stato, la gravità, il tempo rilevato e se viene assegnato un caso e il relativo stato. I nuovi avvisi vengono visualizzati nella Home page conformità comunicazione e nella pagina **avvisi** e sono elencati in ordine di gravità.
 - **Gestione dei problemi**: per ogni avviso, è possibile intraprendere azioni investigative per contribuire a correggere il problema rilevato nel messaggio.
 - **Revisione del documento**: durante l'analisi di un problema, è possibile utilizzare diverse visualizzazioni del messaggio per valutare adeguatamente il problema rilevato. Le visualizzazioni includono un riepilogo delle conversazioni, visualizzazioni di solo testo, annotazioni e dettagli della conversazione di comunicazione.
 - Revisione della **cronologia delle attività degli utenti**: visualizzare la cronologia delle attività dei messaggi degli utenti e le azioni di correzione, ad esempio le notifiche e le escalation precedenti, per le corrispondenze di criteri.

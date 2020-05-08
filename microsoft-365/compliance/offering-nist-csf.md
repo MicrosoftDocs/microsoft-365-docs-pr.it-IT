@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 49eb9ae31ab913be30b2b96735f15ae57e85a10f
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 3ebed6af6ba1e3e82178ad87cfe3592e0df4bc48
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011233"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066151"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 
@@ -40,7 +40,7 @@ Informazioni su come accelerare la distribuzione di Cybersecurity Framework di N
 - [Scaricare l'elenco di controllo di valutazione dei rischi per la sicurezza e la conformità di Azure-NIST CSF](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [Per ulteriori informazioni sulla valutazione di NIST CSF per Office 365, vedere Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 per il governo](https://aka.ms/d365-compliance-list)
@@ -109,8 +109,4 @@ Microsoft fornisce le offerte più complete rispetto ad altri provider di serviz
 - [Ordine esecutivo presidenziale per il potenziamento della CyberSecurity delle reti federali e delle infrastrutture critiche](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Condizioni dei Servizi online](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf).
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

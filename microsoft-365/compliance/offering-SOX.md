@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ef2f30492df89e97348e4dbce81ce4ae43c2e806
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a1ee3987a762d3ff9555a8e992dda67e4a154849
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602033"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066309"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>Sarbanes-Oxley Act del 2002 (SOX)
 
@@ -43,7 +43,7 @@ Microsoft condivide la responsabilità di conformarsi ai clienti. Vengono fornit
 
 Per ulteriori informazioni su come utilizzare i report di conformità di Microsoft Azure quando si affrontano gli obblighi di conformità di SOX: [scaricare le linee guida di Azure per Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -73,7 +73,3 @@ Quando si esegue la migrazione delle applicazioni e dei dati in base ai servizi 
 - [Servizi finanziari e servizi cloud aziendali di Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Responsabilità condivise per il cloud computing](https://aka.ms/sharedresponsibility)
 - [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf).
