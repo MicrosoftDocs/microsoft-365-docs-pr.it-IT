@@ -21,20 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Informazioni su come impostare le singole password utente in modo che non scadano mai, utilizzando Windows PowerShell.
-ms.openlocfilehash: 66c4901d171f5ed2e07d7a9f5cccbf141dc3d04d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43624035"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173497"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Impostare la password di un singolo utente in modo che non scada mai
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>Impostare i criteri di scadenza delle password per l'organizzazione
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">protezione & privacy</a> .
-2. Accanto a **criteri password** selezionare **modifica**. 
-3. Se le password sono impostate su non scadono mai, impostare l'interruttore su **disattivata**. Si otterrà l'opzione per specificare il numero di giorni fino alla scadenza delle password.
+1. Nell'interfaccia di amministrazione passare <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">alla pagina</a> impostazioni **Impostazioni** \> .
+2. Nella parte superiore della pagina Impostazioni selezionare **sicurezza & privacy**.
+3. Selezionare **Criterio di scadenza delle password**. 
+4. Se le password sono impostate su non scadono mai, fare clic sulla casella di controllo accanto a **Imposta password utente per scadere dopo un certo numero di giorni**. Si otterrà l'opzione per specificare il numero di giorni fino alla scadenza delle password.
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>Impostare i criteri di scadenza delle password per i singoli utenti
 

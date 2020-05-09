@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su zero-hour auto Purge (ZAP), una funzionalità di protezione della posta elettronica in Microsoft 365 che rileva la posta indesiderata, il malware o i messaggi di phishing che sono già stati recapitati a Exchange Online.
-ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba7aa74dd9152990ce327d1b1564c3246d15cbb8
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034927"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173299"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Zero-hour auto Purge (ZAP)-protezione da posta indesiderata e malware in Microsoft 365
 
@@ -42,7 +42,7 @@ Microsoft 365 aggiorna le firme di posta indesiderata e malware in tempo reale s
 
 L'azione ZAP è senza problemi per l'utente. non vengono informati se un messaggio viene rilevato e spostato.
 
-[Elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md), regole del flusso di posta (note anche come regole di trasporto), regole di posta in arrivo o filtri aggiuntivi hanno la precedenza su Zap.
+[Elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md), regole del flusso di posta (note anche come regole di trasporto), regole di posta in arrivo o filtri aggiuntivi hanno la precedenza su Zap. Analogamente a quanto avviene nel flusso di posta, ciò significa che anche se il servizio determina che il messaggio recapitato ha bisogno di ZAP, il messaggio non viene attivato a causa della configurazione dei mittenti attendibili. Questo è un altro motivo per cui fare attenzione alla configurazione dei messaggi per ignorare il filtro.
 
 ### <a name="malware-zap"></a>Malware ZAP
 
@@ -88,28 +88,28 @@ Per determinare se il messaggio è stato spostato da ZAP, è possibile utilizzar
 
 ## <a name="zap-faq"></a>DOMANDE FREQUENTI SU ZAP
 
-### <a name="q-what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>D: cosa accade se un messaggio legittimo viene spostato nella cartella posta indesiderata?
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>Cosa succede se un messaggio legittimo viene spostato nella cartella posta indesiderata?
 
-A: è consigliabile seguire la procedura di creazione di report normale per i [falsi positivi](report-junk-email-messages-to-microsoft.md). L'unico motivo per il quale il messaggio verrebbe spostato dalla posta in arrivo alla cartella posta indesiderata sarebbe perché il servizio ha determinato che il messaggio era posta indesiderata o dannoso.
+È consigliabile seguire la procedura di creazione di report normale per i [falsi positivi](report-junk-email-messages-to-microsoft.md). L'unico motivo per il quale il messaggio verrebbe spostato dalla posta in arrivo alla cartella posta indesiderata sarebbe perché il servizio ha determinato che il messaggio era posta indesiderata o dannoso.
 
-### <a name="q-what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>D: che cosa accade se si utilizza la cartella Quarantine anziché la cartella posta indesiderata?
+### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Che cosa fare se si utilizza la cartella Quarantine anziché la cartella posta indesiderata?
 
-A: ZAP eseguirà un'azione su un messaggio in base alla configurazione dei criteri di protezione da posta indesiderata, come descritto in precedenza in questo argomento.
+ZAP eseguirà un'azione su un messaggio in base alla configurazione dei criteri di protezione da posta indesiderata, come descritto in precedenza in questo argomento.
 
-### <a name="q-what-if-im-using-mail-flow-rules-or-allowedblocked-sender-lists"></a>D: che cosa succede se si utilizzano le regole del flusso di posta o gli elenchi di mittenti consentiti/bloccati?
+### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Cosa succede se si utilizzano mittenti attendibili, regole del flusso di posta o elenchi di mittenti consentiti o bloccati?
 
-A: le regole del flusso di posta o blocca e Consenti le impostazioni dell'organizzazione hanno la precedenza. Questi messaggi sono esclusi da ZAP.
+I mittenti attendibili, le regole del flusso di posta o blocca e Consenti le impostazioni dell'organizzazione hanno la precedenza. Questi messaggi sono esclusi da ZAP poiché il servizio sta facendo ciò che è stato configurato per eseguire. Questo è un altro motivo per cui fare attenzione alla configurazione dei messaggi per ignorare il filtro.
 
-### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>D: che cosa succede se un messaggio viene spostato in un'altra cartella (ad esempio, le regole di posta in arrivo)?
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Cosa succede se un messaggio viene spostato in un'altra cartella (ad esempio, le regole di posta in arrivo)?
 
-A: la funzione ZAP continua a funzionare finché il messaggio non è stato eliminato oppure finché non è stata applicata la stessa azione. Ad esempio, se il criterio phishing è impostato per la quarantena e l'utente o l'amministratore ha già scartato il messaggio di posta elettronica, la quarantena eseguirà un'azione per la quarantena del file.
+Lo ZAP continua a funzionare fino a quando il messaggio non è stato eliminato oppure finché non è stato ancora applicato lo stesso valore. Ad esempio, se il criterio phishing è impostato per la quarantena e l'utente o l'amministratore ha già scartato il messaggio di posta elettronica, la quarantena eseguirà un'azione per la quarantena del file.
 
-### <a name="q-does-zap-change-the-message-header"></a>D: lo ZAP cambia l'intestazione del messaggio?
+### <a name="does-zap-change-the-message-header"></a>ZAP cambia l'intestazione del messaggio?
 
-A: un'azione ZAP non apporta modifiche all'intestazione del messaggio.
+Un'azione ZAP non apporta modifiche all'intestazione del messaggio.
 
-### <a name="q-how-does-zap-affect-mailboxes-on-hold"></a>D: in che modo ZAP influenza le cassette postali in attesa?
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>In che modo ZAP influenza le cassette postali in attesa?
 
-A: ZAP non consentirà di mettere in quarantena i messaggi dalle cassette postali. ZAP è in grado di spostare i messaggi nella cartella posta indesiderata in base all'azione configurata per una posta indesiderata o di phishing nei criteri di protezione da posta indesiderata.
+ZAP non consentirà di mettere in quarantena i messaggi dalle cassette postali. ZAP è in grado di spostare i messaggi nella cartella posta indesiderata in base all'azione configurata per una posta indesiderata o di phishing nei criteri di protezione da posta indesiderata.
 
 Per ulteriori informazioni sulle esenzioni in Exchange Online, vedere [blocco sul posto e conservazione per controversia legale in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).

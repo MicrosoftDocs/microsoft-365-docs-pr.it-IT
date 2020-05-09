@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 for business. "
-ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064810"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173519"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -79,11 +79,11 @@ Questi passaggi sono disponibili solo per gli utenti che utilizzano un piano Mic
 
 Utilizzare questa procedura se si è dimenticato la password ma si è in grado di accedere a Microsoft 365 perché, ad esempio, la password viene salvata nel browser: 
     
-1. In Microsoft 365 selezionare **Impostazioni** \> di **Office 365** \> **personal info**. 
+1. Seleziona il tuo nome (icona) nell'angolo in alto a destra > le**informazioni personali**del **mio account** > . 
           
-2. Verificare che i dettagli dei **contatti** e il **messaggio di posta elettronica alternativo** siano accurati. In caso contrario, cambiali subito. 
+2. In **informazioni di contatto**, verificare che la **posta elettronica alternativa** sia accurata e che sia stato fornito un numero di cellulare. In caso contrario, cambiali subito. 
         
-3. Disconnettersi da Office 365: selezionare il proprio nome nell'angolo in alto a destra (nell'immagine sopra riportata come **Diane**) \> **disconnettersi**. 
+3. Disconnettiti: seleziona il tuo nome nell'angolo in alto a destra (nell'immagine sopra riportata come **Diane**) \> **disconnettiti**. 
         
 4. Ora accedi di nuovo: digita il tuo nome \> **utente** \> e quindi seleziona **password dimenticata**. 
     
@@ -92,6 +92,8 @@ Utilizzare questa procedura se si è dimenticato la password ma si è in grado d
 Se si è dimenticato la password e non si è in grado di accedere: 
     
 - Chiedere a un altro amministratore globale dell'azienda di reimpostare la password per l'utente.
+
+- Assicurarsi di aver fornito informazioni di contatto alternative, incluso un numero di cellulare. 
     
 - In alternativa, [contattare il supporto tecnico Microsoft](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     

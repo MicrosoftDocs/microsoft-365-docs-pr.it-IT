@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come gli amministratori possono creare un elenco di mittenti attendibili in Microsoft 365 e EOP che consente ai messaggi in ingresso di ignorare il filtro posta indesiderata.
-ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 300ecf8cfdb7436b8eda306a28c237ed8bf19760
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036344"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173417"
 ---
 # <a name="create-safe-sender-lists"></a>Creare elenchi di mittenti attendibili
 
@@ -85,7 +85,7 @@ Nell'esempio seguente si presuppone che sia necessario inviare posta elettronica
 
 ## <a name="use-outlook-safe-senders"></a>Utilizzo di mittenti attendibili di Outlook
 
-Invece di un'impostazione organizzativa, gli utenti o gli amministratori possono aggiungere gli indirizzi di posta elettronica del mittente all'elenco Mittenti attendibili nella cassetta postale. Per istruzioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+Invece di un'impostazione organizzativa, gli utenti o gli amministratori possono aggiungere gli indirizzi di posta elettronica del mittente all'elenco Mittenti attendibili nella cassetta postale. Per istruzioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Non è consigliabile nella maggior parte delle situazioni poiché i mittenti ignoreranno le parti dello stack di filtro. Anche se si considera attendibile il mittente, il mittente potrebbe essere compromesso e finire per inviare contenuti dannosi. È preferibile che i filtri siano in grado di eseguire le operazioni necessarie per controllare tutti i messaggi e quindi [segnalare il falso positivo/negativo a Microsoft](report-junk-email-messages-to-microsoft.md) se i filtri sono stati errati. Questo impedisce anche a [zap](zero-hour-auto-purge.md) di fare ciò che dovrebbe fare per il messaggio.
 
 Quando i messaggi ignorano il filtro posta indesiderata a causa dell'elenco dei mittenti attendibili di un utente, il campo di intestazione **X-Forefront-antispam-report** conterrà il valore `SFV:SFE`, che indica che la posta indesiderata, la falsificazione e il filtro phishing sono stati ignorati.
 

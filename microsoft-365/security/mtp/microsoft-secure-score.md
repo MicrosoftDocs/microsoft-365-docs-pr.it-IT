@@ -1,6 +1,6 @@
 ---
-title: Microsoft Secure Score
-description: Descrive Microsoft Secure score in Microsoft 365 Security Center, in che modo vengono calcolati i dettagli e quali amministratori della sicurezza possono aspettarsi.
+title: Microsoft Secure Score (iterazione precedente)
+description: Descrive Microsoft Secure score in Microsoft 365 Security Center, come migliorare la posizione di sicurezza e gli amministratori di sicurezza che possono aspettarsi.
 keywords: sicurezza, malware, Microsoft 365, M365, Punteggio sicuro, Centro sicurezza, azioni di miglioramento
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,14 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141508"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173393"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft Secure Score
+# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure Score (iterazione precedente)
+
+>[!IMPORTANT]
+>Questa iterazione di Microsoft Secure score viene sostituita con nuovi elementi di progettazione e caratteristiche nei prossimi mesi. Se non è già presente l'iterazione più recente, sarà possibile eseguire la prossima operazione.
+>
+>Se viene visualizzata una scheda **metriche & Trends** accanto alla cronologia, si è nella nuova iterazione. [Passare a Microsoft Secure Score (nuovo)](microsoft-secure-score-new.md)
 
 Microsoft Secure Score è una misura della posizione di sicurezza di un'organizzazione, con un numero superiore che indica altre azioni di miglioramento eseguite. Dopo i consigli sui punteggi di sicurezza è possibile proteggere l'organizzazione dalle minacce. Da un Dashboard centralizzato nel centro sicurezza Microsoft 365, le organizzazioni possono monitorare e lavorare sulla sicurezza delle identità, dei dati, delle app, degli strumenti e dell'infrastruttura di Microsoft 365.
 

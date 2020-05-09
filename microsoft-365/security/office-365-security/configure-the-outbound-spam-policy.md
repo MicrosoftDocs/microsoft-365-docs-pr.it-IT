@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni su come configurare i criteri di posta indesiderata in uscita che si applicano a utenti, gruppi o domini specifici nell'organizzazione.
-ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036789"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173441"
 ---
 # <a name="configure-outbound-spam-filtering"></a>Configurare il filtro posta indesiderata in uscita
 
@@ -53,7 +53,7 @@ La differenza tra questi due elementi non è ovvia quando si gestiscono i criter
 
 - Quando si rimuove un criterio di posta indesiderata in uscita dal centro sicurezza & conformità, la regola di filtro posta indesiderata in uscita e i criteri di filtro della posta indesiderata in uscita associati vengono rimossi.
 
-In Exchange Online PowerShell o Exchange Online Protection PowerShell autonomo, la differenza tra i criteri di filtro della posta indesiderata in uscita e le regole del filtro per la posta indesiderata è evidente. È possibile gestire i criteri di filtro della posta indesiderata in uscita utilizzando i ** \*cmdlet-HostedContentFilterPolicy** e gestire le regole del filtro per la posta indesiderata in uscita utilizzando i ** \*cmdlet-HostedContentFilterRule** .
+In Exchange Online PowerShell o Exchange Online Protection PowerShell autonomo, la differenza tra i criteri di filtro della posta indesiderata in uscita e le regole del filtro per la posta indesiderata è evidente. È possibile gestire i criteri di filtro della posta indesiderata in uscita utilizzando i ** \*cmdlet-HostedOutboundSpamFilterPolicy** e gestire le regole del filtro per la posta indesiderata in uscita utilizzando i ** \*cmdlet-HostedOutboundSpamFilterRule** .
 
 - In PowerShell, creare innanzitutto il criterio di filtro per la posta indesiderata in uscita, quindi creare la regola di filtro posta indesiderata in uscita che identifica il criterio a cui si applica la regola.
 

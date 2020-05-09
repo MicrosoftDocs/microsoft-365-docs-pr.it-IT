@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro &amp; sicurezza e conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c202e7df274e81da5395f7466199d85443361c05
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034963"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173323"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 
@@ -101,7 +101,7 @@ Questo rapporto è basato sui dati raccolti e sui rischi rilevati, per clic (men
 Nella tabella Details, è possibile visualizzare ulteriori informazioni su informazioni sui tempi e sugli utenti di clic. Infine, tenere presente che il rapporto sullo stato di protezione URL Mostra la caratteristica protezione dalla funzionalità collegamenti sicuri ATP, quindi solo i clienti che hanno abilitato i collegamenti sicuri di ATP vedranno i dati riportati in questo report.
 
 > [!NOTE]
-> Si tratta di un *report di tendenza di protezione*, in cui i dati rappresentano le tendenze di un DataSet più grande. La creazione di report non è disponibile in tempo reale. Per l'URL in tempo reale, fare clic su dati, continuare a utilizzare la traccia URL.
+> Si tratta di un *report di tendenza di protezione*, in cui i dati rappresentano le tendenze di un DataSet più grande. Di conseguenza, i dati nella visualizzazione aggregata non sono disponibili in tempo reale qui, ma i dati nella visualizzazione tabella dettagli sono, pertanto è possibile che si verifichi una leggera discrepanza tra le due visualizzazioni.
 
 ## <a name="atp-file-types-report"></a>Report dei tipi di file di ATP
 

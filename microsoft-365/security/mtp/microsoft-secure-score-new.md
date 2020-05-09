@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score (anteprima)
+title: Nuovo punteggio di Microsoft Secure
 description: Descrive Microsoft Secure score in Microsoft 365 Security Center, la modalità di calcolo dei dettagli e gli amministratori della sicurezza che possono aspettarsi di usarli.
 keywords: sicurezza, malware, Microsoft 365, M365, Punteggio sicuro, Centro sicurezza, azioni di miglioramento
 ms.prod: w10
@@ -17,17 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0a721311706faccbd7563520183c7f198298dddc
+ms.openlocfilehash: 965b4cf872129dc7bc9b439c1c15025acceb44c6
 ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173463"
+ms.locfileid: "44173552"
 ---
-# <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (anteprima)
+# <a name="microsoft-secure-score-new"></a>Microsoft Secure Score (nuovo)
 
 >[!IMPORTANT]
->Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>Questa nuova iterazione del Punteggio di Microsoft Secure sta sostituendo l'iterazione precedente con nuovi elementi di progettazione e caratteristiche nei prossimi mesi
+>
+>Se non si vede una scheda **metriche & Trends** accanto alla cronologia, si è nell'iterazione precedente. [Passare a Microsoft Secure Score (iterazione precedente)](microsoft-secure-score.md)
 
 Microsoft Secure Score è una misura della posizione di sicurezza di un'organizzazione, con un numero superiore che indica altre azioni di miglioramento eseguite. Può essere trovato https://security.microsoft.com/securescore nel [centro sicurezza Microsoft 365](overview-security-center.md).
 
@@ -103,8 +105,8 @@ Per facilitare le informazioni necessarie più rapidamente, le azioni di miglior
 
 Nella pagina Panoramica di Microsoft Secure score, è possibile vedere come vengono divisi i punti tra questi gruppi e quali sono i punti disponibili. La pagina di panoramica è anche il luogo in cui ottenere una visualizzazione completa del punteggio totale, l'andamento storico del Punteggio sicuro con i confronti di benchmark e le azioni di miglioramento prioritarie che possono essere intraprese per migliorare il punteggio.
 
-![Pagina iniziale](../../media/secure-score/secure-score-homepage.png)
-di Secure Score*Figura 1: pagina Panoramica del Punteggio di Microsoft Secure*
+![Homepage del Punteggio sicuro](../../media/secure-score/secure-score-homepage-new.png)
+
 
 ## <a name="take-action-to-improve-your-score"></a>Eseguire un'azione per migliorare il Punteggio
 
@@ -176,32 +178,12 @@ Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in ba
 
 Per rendere Microsoft Secure Score un migliore rappresentante della posizione di sicurezza, sono state apportate alcune modifiche. Per informazioni sulle modifiche pianificate, vedere [What ' s Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### <a name="april-2020"></a>Aprile 2020
+- Aggiunta delle azioni di miglioramento di Azure Active Directory
+- Aggiunta delle azioni di miglioramento di Azure Advanced Threat Protection
+- Supporto per le indicazioni sulla sicurezza del trifosfato di adenosina di Microsoft Defender [& vulnerabilità](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+    - Tutti i consigli di sicurezza rilasciati forniti da TVM sono ora disponibili
 
-#### <a name="added-azure-active-directory-improvement-action"></a>Aggiunta di un'azione di miglioramento di Azure Active Directory
-
-- Non consentire agli utenti di concedere il consenso alle applicazioni non gestite (attualmente disponibili nella versione rilasciata)
-
-#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>Aggiunta delle azioni di miglioramento di Azure Advanced Threat Protection
-
-- Disabilitare il servizio spooler di stampa nei controller di dominio
-- Modificare le deleghe Kerberos non sicure per impedire la rappresentazione
-- Proteggere e gestire le password di amministratore locale con i giri Microsoft
-- Ridurre il rischio del percorso laterale per le entità sensibili
-- Rimuovere gli account dormienti dai gruppi sensibili
-- Rimuovere gli attributi di cronologia SID non sicuri dalle entità
-- Risolvere gli attributi degli account non sicuri
-- Interrompere l'esposizione delle credenziali del testo
-- Interrompere la comunicazione con i protocolli legacy
-- Interrompere l'utilizzo di crittografia debole
-
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Supporto per i suggerimenti per la sicurezza di Microsoft Defender ATP Threat & vulnerabilità (TVM)
-
-Tutti i consigli di sicurezza rilasciati forniti da TVM sono ora disponibili.
-
-### <a name="january---march-2020"></a>Gennaio-marzo 2020
-
-#### <a name="updated-interface-and-functionality"></a>Interfaccia e funzionalità aggiornate
+### <a name="updated-interface-and-functionality"></a>Interfaccia e funzionalità aggiornate
 
 * Tutte le nuove visualizzazioni metriche e tendenze per le discussioni su OICOL e Lead Level
 * Nuove modalità di monitoraggio e benchmark del Punteggio
@@ -209,16 +191,6 @@ Tutti i consigli di sicurezza rilasciati forniti da TVM sono ora disponibili.
 * Filtrare, contrassegnare, ricercare e raggruppare le azioni di miglioramento
 * Gestire gli obiettivi futuri utilizzando le proiezioni dei punteggi e le azioni pianificate
 * E altro ancora!
-
-#### <a name="removed-not-scored-and-review-improvement-actions"></a>Azioni di miglioramento "non segnate" e "revisione" rimosse
-
-Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Un punteggio sicuro di Microsoft ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Le azioni di miglioramento non consentite non sono misurabili e le azioni di miglioramento delle analisi non vengono misurate allo stesso livello di altre azioni di miglioramento.
-
-Per questi motivi, tutte le azioni di miglioramento che non sono state segnate o che sono state richieste una cadenza di revisione sono state temporaneamente rimosse. Non è necessaria alcuna azione da parte vostra.
-
-#### <a name="simplification-of-the-point-system"></a>Semplificazione del sistema di punti
-
-Per standardizzare i punti tra più esperienze, ogni punto totale di azione miglioramento Punteggio sicuro è stato aggiornato in modo da avere un valore di 10 punti o meno. È necessario essere più coerenti nell'ampio respiro dei controlli di sicurezza che sono presenti oggi e quelli che verranno aggiunti in futuro. Anche se si tratta di una modifica significativa e si vedrà un calo dei totali dei punti, non verranno apportate modifiche alla postura di sicurezza.
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 
