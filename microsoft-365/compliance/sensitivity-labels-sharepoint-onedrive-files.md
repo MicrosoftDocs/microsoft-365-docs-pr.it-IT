@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: bdf66e4160e324fa3b83cc58214b16fbacf5c233
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957286"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44170915"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -56,7 +56,7 @@ Guardare il video seguente (senza audio) per visualizzare le nuove funzionalità
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-È sempre possibile scegliere di disabilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive in qualsiasi momento.
+Si ha sempre la possibilità di disabilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive ([opt-out](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) in qualsiasi momento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,21 +66,13 @@ Usare l'app OneDrive Sync 19.002.0121.0008 o versione successiva su Windows e la
 
 ## <a name="limitations"></a>Limitazioni
 
-- Quando si abilitano le etichette di riservatezza per i file di Office in SharePoint e OneDrive, gli utenti che modificano un'etichetta su un file in una cartella di sincronizzazione di OneDrive potrebbero non essere in grado di salvare le modifiche apportate al file. Questo scenario si applica ai file contrassegnati con la crittografia e anche quando la modifica dell'etichetta è da un'etichetta che non applica la crittografia a un'etichetta che applica la crittografia. Gli utenti visualizzano un [cerchio rosso con un errore di icona trasversale bianco](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)e sono invitati a salvare nuove modifiche come copia distinta.  
-    
-    Oltre alle modifiche alle etichette avviate dagli utenti, lo stesso comportamento può verificarsi se un amministratore modifica le impostazioni per un'etichetta pubblicata già applicata ai file scaricati nel client di sincronizzazione degli utenti.
-    
-    Per evitare di perdere il lavoro per questi scenari, eseguire una delle operazioni seguenti:
-    - Per applicare le etichette, utilizzare le versioni Web delle app di Office.
-    - Chiudere un file dopo l'applicazione di un'etichetta e quindi riaprire il file per apportare altre modifiche.
-
 - SharePoint non applica automaticamente le etichette di riservatezza ai file esistenti già crittografati utilizzando le etichette di Azure Information Protection. Al contrario, per far funzionare le caratteristiche dopo aver abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive, eseguire le seguenti attività:
     
-    1. Assicurarsi di aver eseguito la migrazione delle etichette di Azure Information Protection in etichette di riservatezza e di pubblicarle dal centro conformità di Microsoft 365 o dall'interfaccia di amministrazione dell'etichettatura equivalente.
+    1. Assicurarsi di aver eseguito [la migrazione delle etichette di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) in etichette di riservatezza e di [pubblicarle](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) dal centro conformità di Microsoft 365 o dall'interfaccia di amministrazione dell'etichettatura equivalente.
     
     2. Scaricare i file e quindi caricarli in SharePoint.
 
-- SharePoint non è in grado di elaborare i file crittografati quando l'etichetta che applica la crittografia ha una delle seguenti configurazioni per la crittografia:
+- SharePoint non è in grado di elaborare i file crittografati quando l'etichetta che applica la crittografia ha una delle seguenti [configurazioni per la crittografia](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Consenti agli utenti di assegnare le autorizzazioni quando applicano l'etichetta** e la casella di controllo per **in Word, PowerPoint ed Excel,** è selezionata l'opzione utenti per specificare le autorizzazioni. Questa impostazione viene a volte definita "autorizzazioni definite dall'utente".
     - **L'accesso degli utenti al contenuto scade** è impostato su un valore diverso da **Never**.
     
@@ -91,6 +83,8 @@ Usare l'app OneDrive Sync 19.002.0121.0008 o versione successiva su Windows e la
 - Il sito di verifica dei documenti di Azure Information Protection non è supportato.
 
 - Le app desktop di Office e le app per dispositivi mobili non supportano la CoAuthoring per i file contrassegnati con la crittografia. Queste app continuano ad aprire i file contrassegnati e crittografati in modalità di modifica esclusiva.
+
+- Se un amministratore modifica le impostazioni per un'etichetta pubblicata già applicata ai file scaricati nel client di sincronizzazione degli utenti, gli utenti potrebbero non essere in grado di salvare le modifiche apportate al file nella propria cartella di sincronizzazione di OneDrive. Questo scenario si applica ai file contrassegnati con la crittografia e anche quando la modifica dell'etichetta è da un'etichetta che non applica la crittografia a un'etichetta che applica la crittografia. Gli utenti visualizzano un [cerchio rosso con un errore di icona trasversale bianco](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)e sono invitati a salvare nuove modifiche come copia distinta. In alternativa, possono chiudere e riaprire il file oppure utilizzare Office sul Web.
 
 - Se un documento etichettato viene caricato in SharePoint e l'etichetta ha applicato la crittografia utilizzando un account di un nome dell'entità servizio, il documento non può essere aperto in Office sul Web. Gli scenari di esempio includono la sicurezza delle app cloud di Microsoft e un file inviato ai team tramite posta elettronica.
 

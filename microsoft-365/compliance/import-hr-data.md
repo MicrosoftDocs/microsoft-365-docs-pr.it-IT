@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943365"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173486"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurare un connettore per importare i dati sulle risorse umane
 
 È possibile configurare un connettore di dati nel centro conformità di Microsoft 365 per importare i dati delle risorse umane (HR), ad esempio la data in cui un dipendente ha inviato le proprie dimissioni e la data dell'ultimo giorno del dipendente. Questo tipo di dati HR può quindi essere utilizzato dalle soluzioni Microsoft per la protezione delle informazioni, ad esempio la nuova [soluzione di gestione dei rischi Insider](insider-risk-management.md), per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione. La configurazione di un connettore HR consiste nella creazione di un'app in Azure Active Directory utilizzata per l'autenticazione tramite connettore, la creazione di un file di mapping CSV contenente i dati HR, la creazione di un connettore di dati nel centro conformità e l'esecuzione di uno script (su base pianificata) che consente di ingerire i dati HR nel file CSV nel cloud Microsoft. Successivamente, il connettore dati viene utilizzato Microsoft Compliance Solutions (come Insider Risk Management) per accedere ai dati HR che sono stati importati nell'organizzazione Microsoft 365.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - L'organizzazione deve acconsentire a consentire al servizio di importazione di Office 365 di accedere ai dati nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore HR nel passaggio 3.
 
@@ -68,7 +68,7 @@ Nella tabella seguente vengono descritte tutte le colonne del file CSV:
 |**LastWorkingDate**|Specifica l'ultimo giorno di lavoro per il dipendente terminato. È necessario utilizzare il formato di data seguente `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`:, ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Dopo aver creato il file CSV con i dati HR necessari, archiviarlo nel computer locale in cui viene eseguito lo script nel passaggio 4. È inoltre consigliabile implementare una strategia di aggiornamento per verificare che il file CSV contenga sempre le informazioni più aggiornate, in modo che qualsiasi operazione esegua lo script, i dati di terminazione dei dipendenti più recenti vengano caricati nel cloud Microsoft.
+Dopo aver creato il file CSV con i dati HR necessari, archiviarlo nello stesso sistema dello script eseguito nel passaggio 4. È inoltre consigliabile implementare una strategia di aggiornamento per verificare che il file CSV contenga sempre le informazioni più aggiornate, in modo che qualsiasi operazione esegua lo script, i dati di terminazione dei dipendenti più recenti vengano caricati nel cloud Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Passaggio 3: creare il connettore HR
 
@@ -94,7 +94,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
    Viene visualizzata una pagina di stato che conferma che il connettore è stato creato. Questa pagina contiene anche l'ID del processo. Questo ID processo è necessario per eseguire lo script nel passaggio successivo. È possibile copiarlo da questa pagina o dalla pagina del riquadro a comparsa del connettore.
 
-7. Fai clic su **Fine**.
+7. Fare clic su **Fatto**.
    
    Il nuovo connettore viene visualizzato nell'elenco della scheda **connettori** . 
 
@@ -136,7 +136,7 @@ L'ultimo passaggio per la configurazione di un connettore HR è l'esecuzione di 
    |`appId` |Questo è l'ID dell'applicazione AAD per l'app creata in Azure AD nel passaggio 1. Questo metodo viene utilizzato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione Microsoft 365. | 
    |`appSecret`|Si tratta del segreto dell'applicazione AAD per l'app creata in Azure AD nel passaggio 1. Questo utilizzato anche per l'autenticazione.|
    |`jobId`|Questo è l'ID processo per il connettore HR creato nel passaggio 3. Viene utilizzato per associare i dati HR caricati nel cloud Microsoft con il connettore HR.|
-   |`csvFilePath`|Si tratta del percorso del file nel computer locale (quello utilizzato per eseguire lo script) per il file CSV creato nel passaggio 2. Provare ad evitare gli spazi nel percorso del file; in caso contrario, utilizzare virgolette singole.|
+   |`csvFilePath`|Si tratta del percorso del file CSV, memorizzato nello stesso sistema dello script, creato nel passaggio 2. Provare ad evitare gli spazi nel percorso del file; in caso contrario, utilizzare virgolette singole.|
    |||
    
    Di seguito è riportato un esempio della sintassi per lo script del connettore HR utilizzando i valori effettivi per ogni parametro:
@@ -177,7 +177,7 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
 3. Nella sezione **azioni** fare clic su **Crea attività**.
 
-4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **lo script del connettore HR**. È inoltre possibile aggiungere una descrizione facoltativa. 
+4. Nella scheda **generale** Digitare un nome descrittivo per l'attività pianificata. ad esempio, **lo script del connettore HR**. È inoltre possibile aggiungere una descrizione facoltativa.
 
 5. In **Opzioni di sicurezza**eseguire le operazioni seguenti:
 

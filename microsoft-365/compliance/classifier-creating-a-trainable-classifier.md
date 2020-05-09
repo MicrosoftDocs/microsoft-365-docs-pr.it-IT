@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzare classificatori addestrabili quando uno dei classificatori incorporati non soddisfa le proprie esigenze. Un classificatore Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. In questo argomento viene illustrato come creare un classificatore personalizzato.
-ms.openlocfilehash: 31fb4374290bcf92a5c68bc4e7531e9472622b0b
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266895"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173508"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creazione di un classificatore addestrabile (anteprima)
 
@@ -118,7 +118,7 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 
 21. Pubblicare il classificatore.
 
-22. Una volta pubblicato, il classificatore sarà disponibile come condizione nel criterio di etichetta di conservazione per l' [applicazione automatica in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions) e in [conformità alla comunicazione](communication-compliance.md).
+22. Dopo aver pubblicato il classificatore sarà disponibile come condizione in [Office autolabeling con etichette di riservatezza](apply-sensitivity-label-automatically.md), [applicare automaticamente i criteri delle etichette di conservazione in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions) e in [conformità alla comunicazione](communication-compliance.md).
 
 > [!CAUTION]
 > Dopo la pubblicazione di un classificatore, non è possibile eseguire ulteriori corsi di formazione, quindi accertarsi di aver testato e Recensito il maggior numero possibile di elementi per garantire la massima accuratezza possibile.
