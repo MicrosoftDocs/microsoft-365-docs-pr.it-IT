@@ -1,5 +1,5 @@
 ---
-title: 3. Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint
+title: 'Passaggio 3: Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: Usare Microsoft Endpoint Manager per gestire dispositivi, PC e altri endpoint.
-ms.openlocfilehash: 2a5b047aabb95d0b60c46fe3bec339e723adee0e
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 388ac2b7f9f4a31d33c1f4551e215b2b32c8f85f
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049583"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160799"
 ---
-# <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint
+# <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Passaggio 3: Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint
 
 Con i lavoratori remoti, è necessario supportare un numero crescente di dispositivi personali. La gestione degli endpoint è un approccio alla sicurezza basato su criteri che richiede che i dispositivi siano conformi a criteri specifici prima che gli venga consentito l'accesso alle risorse. Microsoft Endpoint Manager offre strumenti moderni per l'area di lavoro e la gestione, che garantiscono la sicurezza dei dati sia nel cloud sia in locale. 
 
