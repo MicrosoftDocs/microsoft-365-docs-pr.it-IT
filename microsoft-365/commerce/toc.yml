@@ -1,7 +1,7 @@
 - name: Gestire gli abbonamenti aziendali
   href: index.yml
-- name: Centro assistenza per Amministrazione di Microsoft 365
-  href: ../admin/admin-home.md
+- name: Centro assistenza per gli amministratori di Microsoft 365
+  href: ../admin/index.yml
 - name: Provare o acquistare
   items:
     - name: Iscriversi alla versione di valutazione di Microsoft 365
@@ -51,7 +51,7 @@
     - name: Informazioni sulla fattura
       href: billing-and-payments/understand-your-invoice.md
     - name: Gestire metodi di pagamento
-      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+      href: billing-and-payments/manage-payment-methods.md
     - name: Pagare l'abbonamento
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Cambia modalità di pagamento
