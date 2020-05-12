@@ -20,12 +20,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: ''
 description: Informazioni su come modificare o creare nuovi tipi di informazioni sensibili di Office 365 per la conformità al Regolamento generale sulla protezione dei dati (GDPR).
-ms.openlocfilehash: ffe9792eabc8607506f2ebabd75ae24b70214449
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3eca04fcf949a19615dc574c90d8dbeea0894a23
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035738"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166067"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizzare o creare un nuovo tipo di informazione riservata
 
@@ -73,7 +73,7 @@ Per personalizzare un tipo di informazione riservata:
 
 7.  Caricare il nuovo tipo di informazione riservata.
 
-8.  Rieffettuare una ricerca per indicizzazione del contenuto per identificare l'informazione riservata. Vedere [Richiedere manualmente la ricerca per indicizzazione e la reindicizzazione di un sito](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
+8.  Rieffettuare una ricerca per indicizzazione del contenuto per identificare l'informazione riservata. Vedere [Richiedere manualmente la ricerca per indicizzazione e la reindicizzazione di un sito](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Esempio: modificare il tipo di informazione riservata "Numero di carta di debito dell'Unione Europea"
 
@@ -147,11 +147,11 @@ Utilizzare queste risorse per formulare e ottimizzare query tramite KQL:
 
 - [Eseguire una Ricerca contenuto](content-search.md)
 
-Ricerca contenuto fornisce un'altra risorsa che consente di sviluppare query KQL e tipi di informazioni riservate: le parole chiave. Perché utilizzare l'elenco delle parole chiave? È possibile ottenere le statistiche che mostrano quanti elementi corrispondo a ciascuna parola chiave. Questo può essere utile per trovare rapidamente le parole chiave più o meno efficaci. Per ulteriori informazioni sulle statistiche di ricerca, vedere [Visualizzare statistiche delle parole chiave per i risultati di Ricerca contenuto](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+Ricerca contenuto fornisce un'altra risorsa che consente di sviluppare query KQL e tipi di informazioni riservate: le parole chiave. Perché utilizzare l'elenco delle parole chiave? È possibile ottenere le statistiche che mostrano quanti elementi corrispondo a ciascuna parola chiave. Questo può essere utile per trovare rapidamente le parole chiave più o meno efficaci. Per ulteriori informazioni sulle statistiche di ricerca, vedere [Visualizzare statistiche delle parole chiave per i risultati di Ricerca contenuto](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search).
 
 Le parole chiave in ogni riga sono collegate dall'operatore OR nella query di ricerca creata. È inoltre possibile utilizzare una frase parola chiave (racchiusa tra parentesi) in una riga.
 
-Per ulteriori informazioni, vedere [Query delle parole chiave e condizioni di ricerca per ricerca contenuto](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+Per ulteriori informazioni, vedere [Query delle parole chiave e condizioni di ricerca per ricerca contenuto](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>Esempio: identificare indirizzi e-mail tramite Ricerca contenuto
 

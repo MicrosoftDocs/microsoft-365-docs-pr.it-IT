@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: Usare lo strumento Ricerca contenuto nel Centro conformità di Office 365 o Microsoft 365 per cercare contenuto in più servizi di Office 365.
-ms.openlocfilehash: e16b369c2844f75673ac4f6eee1cb3b8f4fdfab4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b2120ed131af48defb87af80e8b38c55dc0a0422
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035504"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166107"
 ---
 # <a name="content-search"></a>Ricerca contenuto
 
@@ -237,7 +237,7 @@ Tenere presente quanto segue quando si usa l'elenco di parole chiave per creare 
   
 ### <a name="searching-onedrive-accounts"></a>Eseguire una ricerca negli account di OneDrive
 
-- Per ottenere un elenco degli URL dei siti di OneDrive nell'organizzazione, vedere [Creare un elenco di tutti i percorsi di OneDrive nell'organizzazione](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Lo script in questo articolo crea un file di testo che contiene un elenco di tutti i siti di OneDrive. Per eseguire questo script, è necessario installare e usare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL del dominio MySite dell'organizzazione a ogni sito OneDrive che si desidera includere nella ricerca. Si tratta del dominio che contiene tutti i siti di OneDrive, ad esempio, `https://contoso-my.sharepoint.com`. Di seguito viene riportato un esempio di sito OneDrive di un utente: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+- Per ottenere un elenco degli URL dei siti di OneDrive nell'organizzazione, vedere [Creare un elenco di tutti i percorsi di OneDrive nell'organizzazione](https://docs.microsoft.com/onedrive/list-onedrive-urls). Lo script in questo articolo crea un file di testo che contiene un elenco di tutti i siti di OneDrive. Per eseguire questo script, è necessario installare e usare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL del dominio MySite dell'organizzazione a ogni sito OneDrive che si desidera includere nella ricerca. Si tratta del dominio che contiene tutti i siti di OneDrive, ad esempio, `https://contoso-my.sharepoint.com`. Di seguito viene riportato un esempio di sito OneDrive di un utente: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
     
     Nei rari casi in cui il nome dell'entità utente (UPN) di una persona viene modificato, l'URL per il relativo percorso OneDrive viene modificato in modo da incorporare il nuovo UPN. Se ciò si verifica, è necessario modificare la ricerca contenuto aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente. Per altre informazioni, vedere [Come le modifiche UPN influiscono sull'URL di OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
   

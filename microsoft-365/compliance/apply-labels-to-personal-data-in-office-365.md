@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Informazioni su come usare le etichette di Office nell'ambito del piano di protezione GDPR.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad80a63470d0afa4cfb946def18f3408f8a27f4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034360"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165259"
 ---
 # <a name="apply-labels-to-personal-data"></a>Applicare le etichette ai dati personali
 
@@ -195,7 +195,7 @@ Creare le etichette e i criteri nel centro sicurezza o nel centro conformità.
 <tr class="odd">
 <td align="left"><p>Assegnare autorizzazioni ai membri del team di conformità.</p></td>
 <td align="left"><p>I membri del team di conformità che creeranno le etichette necessitano di autorizzazioni per utilizzare il centro sicurezza e/o il centro conformità. Andare a Autorizzazioni nel centro sicurezza o nel centro conformità e modificare i membri del gruppo Amministratori di conformità.</p>
-<p>Vedere <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Concedere agli utenti l'accesso al centro sicurezza e/o al centro conformità</a>.</p></td>
+<p>Vedere <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Concedere agli utenti l'accesso al centro sicurezza e/o al centro conformità</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Creare etichette di conservazione.</p></td>

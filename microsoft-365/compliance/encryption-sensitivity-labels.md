@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 11a4ee93835ae39c196cf3f48fc1ae2b9baa6949
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 551223196e5870034cf7c3f69145a7b622932a99
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035920"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166037"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -377,7 +377,7 @@ La crittografia dei documenti e dei messaggi di posta elettronica più sensibili
 - Le azioni seguenti per i file crittografati non sono supportate dalle app di Office (Windows, Mac, Android e iOS) e gli utenti visualizzano un messaggio di errore che indica che si è verificato un problema. Tuttavia, in alternativa è possibile usare la funzionalità di SharePoint:
     
     - Visualizzare, ripristinare e salvare copie delle versioni precedenti. In alternativa, gli utenti possono eseguire queste azioni usando Office sul Web per [attivare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37). 
-    - Modificare il nome o il percorso dei file. In alternativa, gli utenti possono [rinominare un file, una cartella o un collegamento in una raccolta documenti](https://support.office.com/article/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
+    - Modificare il nome o il percorso dei file. In alternativa, gli utenti possono [rinominare un file, una cartella o un collegamento in una raccolta documenti](https://support.microsoft.com/it-IT/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
 
 Per un'esperienza di collaborazione in file crittografati con etichetta di riservatezza ottimale, si consiglia di usare [etichette di riservatezza per file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) e Office per il Web. 
 

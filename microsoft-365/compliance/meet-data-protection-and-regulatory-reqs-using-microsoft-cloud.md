@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9cfa034de5d8116485a7d371c40ef55b0466103
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 13d90e733dad48dc0e979f6d307a9419afd05cf6
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034222"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165967"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance Manager (classico)
 
@@ -30,7 +30,7 @@ ms.locfileid: "44034222"
 
  *Compliance Manager non è disponibile in Office 365 gestito da 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) o Office 365 Dipartimento della Difesa.*
   
-Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro in Microsoft [Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662), che consente di tenere traccia, assegnare e verificare le attività di conformità dell'organizzazione correlate a Microsoft Professional Services e a servizi cloud Microsoft, come Microsoft Office 365, Microsoft Dynamics 365 e Microsoft Azure. 
+Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro in Microsoft [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal), che consente di tenere traccia, assegnare e verificare le attività di conformità dell'organizzazione correlate a Microsoft Professional Services e a servizi cloud Microsoft, come Microsoft Office 365, Microsoft Dynamics 365 e Microsoft Azure. 
 
 Compliance Manager:
   

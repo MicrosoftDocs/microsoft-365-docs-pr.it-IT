@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 548b331a8ee26434f53b9960fd355feacd45dfde
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cc6f99dea89a5abc7f4c5bc07187c82d8999a064
+ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066319"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44156881"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -77,19 +77,13 @@ Microsoft ha superato i controlli SOC 1 Type 2, SOC 2 Type 2 e SOC 3. In general
 
 ### <a name="audit-cycle"></a>Ciclo di controllo
 
-I servizi cloud Microsoft vengono controllati almeno una volta l'anno rispetto agli standard SOC 1 (SSAE18, ISAE 3402) e SOC 2 (Sezione AT 101).
+I servizi cloud Microsoft vengono controllati almeno una volta l'anno rispetto agli standard SOC 1 (SSAE18, ISAE 3402), SOC 2 (AT Section 101) e SOC 3.
 
-#### <a name="azure-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft
+#### <a name="azure-dynamics-365-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure, Dynamics 365, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft
 
-- [Report di Azure e Azure per enti pubblici SOC 1 Tipo 2](https://go.microsoft.com/fwlink/p/?linkid=2099601)
-- [Report Azure e Azure per enti pubblici SOC 2 Tipo 2](https://aka.ms/azuresoc2auditreport)
-- [Report Azure e Azure per enti pubblici SOC 3](https://aka.ms/azuresoc3auditreport)
-
-#### <a name="dynamics-365"></a>Dynamics 365
-
-- [Report Dynamics 365 SOC 1 Tipo 2](https://aka.ms/Dynamics365SOC1AuditReport)
-- [Report di controllo Dynamics 365 SOC 2 AT 101 Tipo II](https://aka.ms/Dynamics365SOC2AuditReport)
-- [Visualizzare le lettere ponte e altri report di controllo](https://aka.ms/auditreports)
+- [Report di Azure + Dynamics 365 e Azure + Dynamics 365 Government SOC 1 Tipo 2](https://aka.ms/azuresoc1auditreport)
+- [Report di Azure + Dynamics 365 e Azure + Dynamics 365 Government SOC 2 Tipo 2](https://aka.ms/azuresoc2auditreport)
+- [Report di Azure + Dynamics 365 e Azure + Dynamics 365 Government SOC 3](https://aka.ms/azuresoc3auditreport)
 
 #### <a name="office-365"></a>Office 365
 
