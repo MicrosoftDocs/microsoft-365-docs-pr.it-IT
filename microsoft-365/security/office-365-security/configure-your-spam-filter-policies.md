@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 66266ac79f6f442c8551b9ec15d553d6fb074cdc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 85517d5caeac900623c61ef8294b416ddbd97eb8
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209560"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213377"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -31,7 +31,7 @@ Gli amministratori possono visualizzare, modificare e configurare, ma non elimin
 
 È possibile configurare criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità o in PowerShell (PowerShell di Exchange Online per organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell di EOP autonomo per organizzazioni prive di cassette postali di Exchange Online).
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Differenza tra i criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità e in PowerShell di Exchange Online o PowerShell di Exchange Online Protection
+## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Criteri di protezione da posta indesiderata nel Centro sicurezza e conformità o in PowerShell
 
 Gli elementi di base del criterio di protezione dalla posta indesiderata in EOP sono:
 
@@ -47,7 +47,7 @@ La differenza tra questi due elementi non è ovvia quando si gestiscono criteri 
 
 - Quando si rimuovono il criterio di protezione dalla posta indesiderata dal Centro sicurezza e conformità, la regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata vengono rimossi.
 
-In PowerShell per Exchange Online o PowerShell per Exchange Online Protection autonomo è evidente la differenza tra i criteri di filtro della posta indesiderata e le regole di filtro della posta indesiderata. Gestire i criteri di filtro della posta indesiderata usando i cmdlet **\*-HostedContentFilterPolicy** e le regole di filtro della posta indesiderata usando i cmdlet **\*-HostedContentFilterRule**.
+In PowerShell per Exchange Online o PowerShell di EOP autonomo è evidente la differenza tra i criteri di filtro della posta indesiderata e le regole di filtro della posta indesiderata. Gestire i criteri di filtro della posta indesiderata usando i cmdlet **\*-HostedContentFilterPolicy** e le regole di filtro della posta indesiderata usando i cmdlet **\*-HostedContentFilterRule**.
 
 - In PowerShell, creare innanzitutto il criterio di filtro della posta indesiderata, quindi creare la regola di filtro della posta indesiderata che identifica il criterio cui viene applicata la regola.
 
@@ -71,7 +71,7 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell per Exchange Online Protection autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare criteri di protezione dalla posta indesiderata, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore della sicurezza**. Per l'accesso in sola lettura ai criteri di protezione dalla posta indesiderata, è necessario essere un membro del gruppo di ruoli **Ruolo con autorizzazioni di lettura per la sicurezza**. Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
@@ -363,7 +363,7 @@ Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, �
 
 Non è possibile rimuovere il criterio predefinito.
 
-## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-anti-spam-policies"></a>Utilizzare PowerShell per Exchange Online o PowerShell per Exchange Online Protection per configurare criteri di protezione dalla posta indesiderata
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Utilizzare PowerShell per Exchange Online o PowerShell di EOP autonomo per configurare criteri di protezione dalla posta indesiderata
 
 Le impostazioni dei criteri contro la posta indesiderata seguenti sono disponibili solo in PowerShell:
 
