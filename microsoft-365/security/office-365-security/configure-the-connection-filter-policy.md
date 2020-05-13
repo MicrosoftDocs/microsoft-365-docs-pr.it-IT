@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server.
-ms.openlocfilehash: 9b4f203f11e72b4459c9fa35d3e4fdca544cffbb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b9fd8c1b365f59647618e397a511873aae40146f
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209584"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213437"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
@@ -44,7 +44,7 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell per Exchange Online Protection autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per modificare i criteri di filtro delle connessioni predefiniti, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri di filtro delle connessioni predefiniti, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
@@ -90,7 +90,7 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
 3. Le impostazioni dei criteri vengono visualizzate nell'elenco a discesa che viene aperto.
 
-## <a name="use-exchange-online-powershell-or-standalone-exchange-online-protection-powershell-to-modify-the-default-connection-filter-policy"></a>Utilizzare PowerShell di Exchange Online o standalone Exchange Online Protection PowerShell per modificare il criterio del filtro di connessione predefinito
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>Utilizzare PowerShell di Exchange Online o standalone EOP PowerShell per modificare il criterio del filtro di connessione predefinito
 
 Utilizzare la sintassi seguente:
 
@@ -134,7 +134,7 @@ Per verificare la corretta modifica del criterio del filtro di connessione prede
 
 - Nel centro sicurezza & conformità, accedere a protezione **Threat management** dalla \> **Policy** \> **posta indesiderata** dei criteri di gestione delle minacce \> fare clic sul menu a discesa accanto a **criterio filtro connessioni (sempre**attivato) e verificare le impostazioni.
 
-- In Exchange Online PowerShell o Exchange Online Protection PowerShell, eseguire il comando riportato di seguito e verificare le impostazioni:
+- In Exchange Online PowerShell o standalone EOP PowerShell, eseguire il comando riportato di seguito e verificare le impostazioni:
 
   ```powershell
   Get-HostedConnectionFilterPolicy -Identity Default

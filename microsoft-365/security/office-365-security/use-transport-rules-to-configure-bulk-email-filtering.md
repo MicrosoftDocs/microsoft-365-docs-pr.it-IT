@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come utilizzare le regole del flusso di posta (regole di trasporto) per identificare e filtrare la posta in blocco (Gray mail) in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bb305551db1e86d8d6eccf5e95cdaad29e6711ef
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a31030ea2f844cdeb4bee68bf748a2ab8ca29dad
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208526"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213365"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Utilizzare le regole del flusso di posta per filtrare la posta elettronica in blocco in EOP
 
@@ -41,7 +41,7 @@ In questo argomento viene illustrato come creare queste regole del flusso di pos
 
 - Per aprire EAC in Exchange Online, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Per aprire EAC in EOP autonomo, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell per Exchange Online Protection autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Per ulteriori informazioni sulle regole del flusso di posta in Exchange Online e EOP autonomo, vedere i seguenti argomenti:
 

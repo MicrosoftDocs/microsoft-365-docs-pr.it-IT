@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing avanzati disponibili nelle organizzazioni con Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: efecd830db7ed10210605e31aa0ded2599de1b72
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5b67fe1a39f577209d1f10688215722a67d5546a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208888"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213461"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurare i criteri anti-phishing ATP
 
@@ -31,7 +31,7 @@ Gli amministratori possono visualizzare, modificare e configurare (ma non elimin
 
 Per informazioni sulla configurazione dei criteri di anti-phishing più limitati disponibili nelle organizzazioni di protezione di Exchange Online (ovvero le organizzazioni Microsoft 365 senza Office 365 ATP), vedere [Configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md).
 
-## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Criteri di anti-phishing ATP nel centro sicurezza & Compliance vs Exchange Online PowerShell
+## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>Criteri di anti-phishing ATP nel centro sicurezza & Compliance vs PowerShell
 
 Gli elementi di base di un criterio anti-phishing ATP sono:
 

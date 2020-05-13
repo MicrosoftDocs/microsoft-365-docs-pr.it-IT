@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing disponibili nelle organizzazioni di Exchange Online Protection (EOP) con o senza cassette postali di Exchange Online.
-ms.openlocfilehash: 076c8aa8a0111643ab0f43bcd5f6ff21f82277b2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5c2e036c075072056e7783ca4dc5aeb1289d827a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208900"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213389"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurazione dei criteri di anti-phishing in EOP
 
@@ -31,7 +31,7 @@ Le organizzazioni con cassette postali di Exchange Online possono configurare cr
 
 Per informazioni sulla creazione e la modifica dei criteri di anti-phishing ATP più avanzati disponibili in Office 365 Advanced Threat Protection (Office 365 ATP), vedere [Configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
 
-## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Criteri di anti-phishing nel centro sicurezza & Compliance vs Exchange Online PowerShell
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>Criteri di anti-phishing nel centro sicurezza & Compliance vs PowerShell
 
 Gli elementi di base di un criterio anti-phishing sono:
 

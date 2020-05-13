@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 78a012b4ecc3401a664fba5e270e7cd67a5dce49
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708441"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208120"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 
@@ -33,13 +33,13 @@ Per accedere a Gestione del piano di archiviazione nel Centro sicurezza e confor
 
 ![Pagina del piano file](../media/file-plan-page.png)
 
-## <a name="accessing-file-plan-manager"></a>Accesso alla gestione del piano file
+## <a name="accessing-file-plan-manager"></a>Accesso alla gestione del piano di archiviazione
 
-Per accedere alla gestione del piano di archiviazione, è necessario avere uno dei seguenti ruoli di amministratore:
+Per accedere alla gestione del piano di archiviazione, è necessario avere uno dei ruoli di amministratore seguenti:
     
-    - Responsabile della conservazione
-    
-    - Responsabile della conservazione solo visualizzazione
+- Responsabile della conservazione
+
+- Responsabile della conservazione solo visualizzazione
 
 ## <a name="default-retention-labels-and-label-policy"></a>Etichette di conservazione e criteri di etichetta predefiniti
 

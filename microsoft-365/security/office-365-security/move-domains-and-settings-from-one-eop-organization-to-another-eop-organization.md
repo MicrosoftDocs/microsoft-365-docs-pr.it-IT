@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni su come spostare i domini e le impostazioni da un'organizzazione di Microsoft Exchange Online Protection (EOP) a un'altra.
-ms.openlocfilehash: c57f8363093c2e1a9bfad5c34f62a0ca2c1ae689
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e9e0bd0d18ad73c08f0bc5b487a46289f67e40ba
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208312"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213449"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Spostare i domini e le impostazioni da un'organizzazione di EOP a un'altra
 
@@ -59,11 +59,11 @@ Per ricreare l'organizzazione di origine nell'organizzazione di destinazione, as
   > [!NOTE]
   > Il supporto dei cmdlet per l'esportazione e l'importazione della raccolta di regole del flusso di posta è attualmente supportato solo per i piani di sottoscrizione Premium di EOP.
 
-Il modo più semplice per raccogliere tutte le impostazioni consiste nell'utilizzare PowerShell. Per connettersi a PowerShell di Exchange Online Protection, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+Il modo più semplice per raccogliere tutte le impostazioni consiste nell'utilizzare PowerShell. Per connettersi a PowerShell di EOP autonomo, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 Successivamente, è possibile raccogliere tutte le impostazioni ed esportarle in un file XML da importare nel tenant di destinazione. In generale, è possibile eseguire il piping dell'output del cmdlet **Get** per ogni impostazione per il cmdlet **Export-Clixml** in modo da salvare le impostazioni nel file XML, come illustrato nell'esempio di codice seguente.
 
-In PowerShell di Exchange Online Protection, creare una directory denominata Export in una posizione facile da trovare e cambiare in quella directory. Ad esempio:
+In EOP standalone PowerShell, creare una directory denominata Export in una posizione facile da trovare e cambiare in quella directory. Ad esempio:
 
 ```PowerShell
 mkdir C:\EOP\Export

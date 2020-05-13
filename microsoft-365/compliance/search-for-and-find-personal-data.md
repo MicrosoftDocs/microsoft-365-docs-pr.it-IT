@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Informazioni su come cercare e trovare i dati personali soggetti al Regolamento generale sulla protezione dei dati (GDPR) in Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5634437e5212fca6a7caf768d5a66d99497de3c6
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 50c8db59cfd5e9a7de3da0dc696227e85dab1cee
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036411"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208090"
 ---
 # <a name="search-for-and-find-personal-data"></a>Cercare e trovare i dati personali
 
@@ -130,7 +130,7 @@ Attualmente le tipologie di informazioni sensibili non sono utilizzabili per tro
 <p><li>Molti falsi positivi</li></p>
 <p><li>Mancano istanze note dei dati
 </li></p>
-<p>Vedere <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Esportare i risultati di Ricerca contenuto dal Centro sicurezza e conformità</a>.</p>
+<p>Vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/export-search-results">Esportare i risultati di Ricerca contenuto dal Centro sicurezza e conformità</a>.</p>
 <p>Nota: se si utilizza Mozilla Firefox o Chrome, è necessario prima scaricare i report utilizzando Internet Explorer o Edge per installare il componente aggiuntivo necessario.</p></td>
 </tr>
 </tbody>

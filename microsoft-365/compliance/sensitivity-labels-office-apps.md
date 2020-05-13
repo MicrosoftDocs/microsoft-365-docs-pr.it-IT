@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: 5a5b793358364efdd725de5478318a8237d78ca8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39ab61a13af311339174c0e37a10f4637f51ba84
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208070"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213306"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -169,9 +169,9 @@ Altrimenti
 
 Per utilizzare il client di etichettatura incorporato di Office con Office sul Web per i documenti in OneDrive for business o SharePoint Online, assicurarsi di aver optato per l'anteprima per abilitare le [etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="when-office-365-applies-content-marking-and-encryption"></a>Quando Office 365 applica la marcatura e la crittografia del contenuto
+## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Quando le app di Office applicano il contrassegno e la crittografia del contenuto
 
-Office 365 applica la marcatura del contenuto e la crittografia con un'etichetta di riservatezza diversa, a seconda dell'applicazione utilizzata.
+Le app di Office applicano la marcatura e la crittografia del contenuto con un'etichetta di riservatezza diversa, a seconda dell'app utilizzata.
 
 | App | Contrassegno contenuto | Crittografia |
 | --- | --- | --- |
@@ -179,6 +179,22 @@ Office 365 applica la marcatura del contenuto e la crittografia con un'etichetta
 | Outlook per PC e Mac | Dopo che Exchange Online ha inviato il messaggio di posta elettronica | Immediatamente. |
 | Outlook sul web, iOS e Android | Dopo che Exchange Online ha inviato il messaggio di posta elettronica | Dopo che Exchange Online ha inviato il messaggio di posta elettronica |
 |
+
+Le soluzioni che applicano etichette di riservatezza ai file esterni alle app di Office lo fanno applicando i metadati dell'etichettatura al file. In questo scenario, la marcatura del contenuto proveniente dalla configurazione dell'etichetta non viene inserita nel file, ma viene applicata la crittografia. 
+
+Quando i file vengono aperti in un'app desktop di Office, le marcature di contenuto vengono applicate automaticamente dal client di etichettatura unificata di Azure Information Protection. Le indicazioni di contenuto non vengono applicate automaticamente quando si utilizza l'etichettatura incorporata per le app desktop, mobili o Web.
+
+Gli scenari che includono l'applicazione di un'etichetta di riservatezza esterna alle app di Office includono:
+
+- Scanner, file Explorer e PowerShell dal client di etichettatura unificata di Azure Information Protection 
+
+- Criteri di etichettatura automatica per SharePoint e OneDrive
+
+- Dati esportati etichettati e crittografati da Power BI
+
+- Microsoft Cloud App Security
+
+Per questi scenari, utilizzando le proprie app di Office, un utente con etichette predefinite può applicare le indicazioni di contenuto dell'etichetta rimuovendo temporaneamente o sostituendo l'etichetta corrente e quindi riapplicando l'etichetta originale.
 
 ## <a name="end-user-documentation"></a>Documentazione per gli utenti finali
 

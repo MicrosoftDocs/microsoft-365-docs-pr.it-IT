@@ -2,8 +2,8 @@
 title: Protezione dalle minacce
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: hub-page
@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-description: Informazioni su Office 365 Threat Protection e sulla configurazione di come utilizzarla per l'organizzazione.
+description: Gli amministratori possono acquisire informazioni sulla protezione dalle minacce in Microsoft 365 e configurare come utilizzarla per l'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bdc7d619f3c48318572116fbc52647a0858ec5e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3ed243d36866e9ebadf00a0247dd4545113788e8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033891"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206605"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -61,13 +61,13 @@ Le funzionalità di protezione dalle minacce sono incluse in tutte le sottoscriz
 |Gestione organizzazione di Exchange Online|[Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>e<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |
 
-Per ulteriori informazioni, vedere [Permissions in &amp; the Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Per ulteriori informazioni, vedere [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="part-1---anti-malware-protection"></a>Parte 1-protezione antimalware
 
 La [protezione antimalware](anti-malware-protection.md) è disponibile in abbonamenti che includono [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere**antimalware**per**criteri** > di **gestione** > delle minacce.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere **Threat management**  >  **Policy**  >  **antimalware**per criteri di gestione delle minacce.
 
 2. Fare doppio clic sul criterio **predefinito** e quindi scegliere **Impostazioni**.
 
@@ -89,15 +89,15 @@ La protezione del tempo di clic da URL e file dannosi è disponibile in abboname
 
 Per configurare gli [allegati sicuri di ATP](atp-safe-attachments.md), è necessario definire almeno un criterio per gli allegati sicuri ATP.
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere gli**allegati sicuri**per i**criteri** > di **gestione** > delle minacce ATP.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere gli allegati sicuri per i criteri di **gestione delle minacce**  >  **Policy**  >  **ATP**.
 
 2. Selezionare l'opzione **attiva ATP per SharePoint, OneDrive e Microsoft teams**.
 
-3. Nella sezione **Proteggi allegati di posta elettronica** , fare clic sul**+** segno più ().
+3. Nella sezione **Proteggi allegati di posta elettronica** , fare clic sul segno più ( **+** ).
 
 4. Specificare le impostazioni seguenti:
 
-   - Nella casella **nome** Digitare `Block malware`.
+   - Nella casella **nome** Digitare `Block malware` .
 
    - Nella sezione Response scegliere **Block**.
 
@@ -115,17 +115,17 @@ Per ulteriori informazioni, vedere [configurare i criteri per gli allegati sicur
 
 Per configurare i [collegamenti sicuri di ATP](atp-safe-links.md), esaminare e modificare il criterio predefinito e aggiungere un criterio per utenti specifici.
 
-1. Nel [Centro sicurezza & Compliance](https://protection.office.com)scegliere**criteri** > di **gestione** > delle minacce**ATP collegamenti sicuri**.
+1. Nel [Centro sicurezza & Compliance](https://protection.office.com)scegliere criteri di **gestione delle minacce**  >  **Policy**  >  **ATP collegamenti sicuri**.
 
 2. Fare doppio clic sul criterio **predefinito** .
 
 3. Nella sezione **use Safe Links in** selezionare l'opzione **Microsoft 365 Apps for Enterprise, Office per iOS e Android**e quindi fare clic su **Salva**.
 
-4. Nella sezione **criteri che si applicano a destinatari specifici** fare clic sul segno più**+**().
+4. Nella sezione **criteri che si applicano a destinatari specifici** fare clic sul segno più ( **+** ).
 
 5. Specificare le impostazioni seguenti:
 
-   - Nella casella **nome** Digitare un nome, ad esempio `Safe Links`.
+   - Nella casella **nome** Digitare un nome, ad esempio `Safe Links` .
 
    - Nella sezione **selezionare l'azione** scegliere **attivato.**
 
@@ -151,7 +151,7 @@ La [protezione anti-phishing](anti-phishing-protection.md) è disponibile in abb
 
 Nella procedura seguente viene descritto come configurare un criterio anti-phishing ATP. I passaggi sono simili per la configurazione di un criterio anti-phishing (senza ATP).
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere**criteri** > di **gestione** > delle minacce**ATP anti-phishing**.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere criteri di **gestione delle minacce**  >  **Policy**  >  **ATP anti-phishing**.
 
 2. Fare clic su **criteri predefiniti**.
 
@@ -179,13 +179,13 @@ Nella procedura seguente viene descritto come configurare un criterio anti-phish
 
 5. Chiudere la pagina impostazioni di criteri predefinite.
 
-Per ulteriori informazioni sulle opzioni di criteri anti-phishing, vedere [configurare i criteri di anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md).
+Per ulteriori informazioni sulle opzioni di criteri anti-phishing, vedere [Configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
 
 ## <a name="part-4---anti-spam-protection"></a>Parte 4-protezione dalla posta indesiderata
 
 La [protezione da posta indesiderata](anti-spam-protection.md) è disponibile in abbonamenti che includono [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere protezione dalla**posta indesiderata** **dei** > **criteri** > di gestione delle minacce.
+1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere protezione dalla **Threat management**  >  **Policy**  >  **posta indesiderata**dei criteri di gestione delle minacce.
 
 2. Nella scheda **personalizzato** , attiva **impostazioni personalizzate** .
 
@@ -197,7 +197,7 @@ La [protezione da posta indesiderata](anti-spam-protection.md) è disponibile in
 
 4. Fare clic su **Salva**.
 
-Per ulteriori informazioni sulle opzioni relative ai criteri di protezione da posta indesiderata, vedere [Configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md).
+Per ulteriori informazioni sulle opzioni relative ai criteri di protezione da posta indesiderata, vedere [Configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="part-5---additional-settings-to-configure"></a>Parte 5-impostazioni aggiuntive da configurare
 
