@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 12e68cd8fcd7c784b1d0b4c70c5c25370cbbb409
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 66b3f7e446416b6252050e6f41a2b22d99d25767
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016003"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209236"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Prerequisiti di Microsoft Threat Protection
 
@@ -34,6 +34,9 @@ ms.locfileid: "44016003"
 Informazioni sui requisiti di licenza, hardware e software e altre impostazioni di configurazione per il provisioning e l'utilizzo di Microsoft Threat Protection.
 
 ## <a name="licensing-requirements"></a>Requisiti per la licenza
+
+>[!IMPORTANT]
+>A partire dal 12 maggio 2020, Microsoft eseguirà gradualmente nuove esperienze ottimizzate in merito ai requisiti di licenza e [all'attivazione di Microsoft Threat Protection](mtp-enable.md). Per alcune settimane durante questo periodo, alcuni clienti inizieranno a visualizzare le modifiche apportate alle esperienze del portale. Le informazioni sulle nuove esperienze sono state contrassegnate come **nuova esperienza** in questo articolo.
 
 Per utilizzare Microsoft Threat Protection, è necessaria una singola licenza o una combinazione di licenze. Queste licenze o combinazioni di licenze consentono di accedere alle funzionalità di protezione dalle minacce di Microsoft senza costi aggiuntivi.
 
@@ -54,6 +57,19 @@ Per ulteriori informazioni, [vedere i piani del servizio Microsoft 365 Enterpris
 
 > Non si dispone ancora di una licenza? [Provare o acquistare un abbonamento a Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
+
+**Nuova esperienza:** A partire dal 12 maggio 2020, i clienti riceveranno gradualmente le modifiche apportate a questa esperienza. Per gli utenti con la nuova esperienza, la possibilità di abilitare Microsoft Threat Protection sarà disponibile per *tutti* i clienti con una delle licenze seguenti:
+
+- Microsoft 365 E5 o a5
+- Sicurezza di Microsoft 365 E5 o sicurezza a5
+- Windows 10 Enterprise E5 o a5
+- Enterprise Mobility + Security (EMS) E5 o a5 
+- Office 365 E5 o a5
+- Microsoft Defender Advanced Threat Protection 
+- Azure Advanced Threat Protection 
+- Microsoft Cloud App Security 
+- Protezione avanzata dalle minacce di Office 365 (piano 2) 
+
 ### <a name="check-your-existing--licenses"></a>Controllare le licenze esistenti
 Accedere a Microsoft 365 Admin Center ([admin.Microsoft.com](https://admin.microsoft.com/)) per visualizzare le licenze esistenti. Nell'interfaccia di amministrazione, andare in **Fatturazione** > **Licenze**.
 
@@ -63,8 +79,8 @@ Accedere a Microsoft 365 Admin Center ([admin.Microsoft.com](https://admin.micro
 ## <a name="browser-requirements"></a>Requisiti per il browser
 Accedere a Microsoft Threat Protection nel centro sicurezza Microsoft 365 utilizzando Microsoft Edge, Internet Explorer 11 o qualsiasi Web browser compatibile con HTML 5.
 
-## <a name="microsoft-threat-protection-for-us-government-community-cloud-and-us-government-community-cloud-high-gcc-high-customers"></a>Microsoft Threat Protection per il governo degli Stati Uniti Cloud Community and US Government community Cloud High (GCC High) clienti
-Attualmente, Microsoft Threat Protection non è disponibile per i clienti americani GCC e GCC High. 
+## <a name="us-gcc-and-gcc-high-availability"></a>Disponibilità elevata di GCC e GCC
+Attualmente, Microsoft Threat Protection non è disponibile per i clienti di US Government community Cloud (GCC) e Government community Cloud High (GCC High). 
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica su Microsoft Threat Protection](microsoft-threat-protection.md)

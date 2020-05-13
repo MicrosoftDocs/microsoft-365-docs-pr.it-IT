@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,18 +20,17 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Informazioni su Office 365 Germany.
-ms.openlocfilehash: d992d437e40baaa105ca407d40bb81ff84d9e3f3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c63672865ac2c64bd9731df797202cf9cfdd9cd
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623907"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208355"
 ---
-> [!NOTE]
-> Office 365 Germany non accetta più nuovi clienti o distribuisce nuovi servizi. Le nuove aree geografiche in Germania, disponibili nel primo trimestre di 2020 per Microsoft 365 e Office 365, forniscono sia la residenza di dati di base dei clienti in Germania, sia la connettività completa alla rete cloud globale di Microsoft. 
->
-
 # <a name="learn-about-office-365-germany"></a>Informazioni su Office 365 Germany
+
+> [!NOTE]
+> Office 365 Germany non accetta più nuovi clienti o distribuisce nuovi servizi. Le nuove aree geografiche in Germania, disponibili nel primo trimestre di 2020 per Microsoft 365 e Office 365, forniscono sia la residenza di dati di base dei clienti in Germania, sia la connettività completa alla rete cloud globale di Microsoft.
 
 Office 365 Germany è un'opzione differenziata per i servizi di Office 365 disponibili in Europa. Ha contribuito a soddisfare le esigenze dei clienti più regolamentati in Germania, Unione europea (UE) e l'associazione europea di libero scambio (AELS), fornendo i servizi di produttività leader del settore per il lavoro digitale, dai datacenter tedeschi, con la residenza dei dati in Germania, e le misure di controllo e accesso ai dati rigorose tramite un modello di protezione dei dati univoco disciplinato dal diritto tedesco
   

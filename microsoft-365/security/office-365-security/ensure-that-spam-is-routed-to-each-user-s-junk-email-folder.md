@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a instradare la posta indesiderata alle cartelle posta indesiderata degli utenti in un ambiente ibrido di Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036573"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209476"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurare EOP autonomo per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi
 
@@ -44,7 +44,7 @@ Per ulteriori informazioni su questi valori di intestazione, vedere intestazioni
 In questo argomento viene descritto come creare queste regole del flusso di posta dell'interfaccia di amministrazione di Exchange (EAC) e in Exchange Management Shell (Exchange PowerShell) nell'organizzazione di Exchange locale.
 
 > [!TIP]
-> Invece di inviare i messaggi alla cartella posta indesiderata dell'utente locale, è possibile configurare i criteri di protezione dalla posta indesiderata in EOP per la quarantena dei messaggi di posta indesiderata in EOP. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+> Invece di inviare i messaggi alla cartella posta indesiderata dell'utente locale, è possibile configurare i criteri di protezione dalla posta indesiderata in EOP per la quarantena dei messaggi di posta indesiderata in EOP. Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -60,7 +60,7 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 
   - Se la regola di posta indesiderata è abilitata per la cassetta postale (il valore del parametro _Enabled_ è $true sul cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) in Exchange Management Shell). È la regola di posta indesiderata che in realtà sposta il messaggio nella cartella posta indesiderata dopo il recapito. Per impostazione predefinita, la regola di posta indesiderata è abilitata sulle cassette postali. Per ulteriori informazioni, vedere [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Per aprire EAC su un server Exchange, vedere interfaccia [di amministrazione di Exchange in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Per aprire Exchange Management Shell, vedere [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- Per aprire EAC su un server Exchange, vedere interfaccia [di amministrazione di Exchange in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Per aprire Exchange Management Shell, vedere [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
 
 - Per ulteriori informazioni sulle regole del flusso di posta in Exchange locale, vedere i seguenti argomenti:
 
@@ -74,7 +74,7 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 
 1. Nell'interfaccia di amministrazione di Exchange, andare a **Flusso di posta** \> **Regole**.
 
-2. Fare **Add** ![clic su Aggiungi](../../media/ITPro-EAC-AddIcon.png) icona e selezionare **Crea una nuova regola** nell'elenco a discesa che viene visualizzato.
+2. Fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) e selezionare **Crea una nuova regola** nell'elenco a discesa che viene visualizzato.
 
 3. Nella pagina **Nuova regola** che si apre, configurare le seguenti impostazioni:
 
@@ -94,9 +94,9 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 
      - Fare clic su **Immetti testo**. Nella finestra di dialogo **Specifica nome intestazione** che viene visualizzata, immettere **X-Forefront-antispam-report** e quindi fare clic su **OK**.
 
-     - Fare clic su **Immetti parole**. Nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori delle intestazioni di posta indesiderata di EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**),](../../media/ITPro-EAC-AddIcon.png)fare clic su **Aggiungi** ![icona e quindi fare clic su **OK**.
+     - Fare clic su **Immetti parole**. Nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori delle intestazioni di posta indesiderata di EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**), fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) e quindi fare clic su **OK**.
 
-   - **Eseguire le operazioni seguenti**: selezionare **modifica le proprietà** \> del messaggio **impostare il livello di probabilità di posta indesiderata (SCL)**.
+   - **Eseguire le operazioni seguenti**: selezionare **modifica le proprietà del messaggio** \> **impostare il livello di probabilità di posta indesiderata (SCL)**.
 
      Nella finestra di dialogo **specifica SCL** visualizzata, selezionare **6** (il valore predefinito è **5**).
 
@@ -132,9 +132,9 @@ Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule]
 
 Per verificare la corretta configurazione di EOP autonomo per recapitare la posta indesiderata alla cartella posta indesiderata in ambiente ibrido, eseguire una delle operazioni seguenti:
 
-- Nell'interfaccia di amministrazione di Exchange, andare a **regole**del **flusso** \> di posta, selezionare la regola, quindi](../../media/ITPro-EAC-EditIcon.png) fare clic su **modifica** ![icona modifica per verificare le impostazioni.
+- Nell'interfaccia di amministrazione di Exchange, andare a regole del **flusso di posta** \> **Rules**, selezionare la regola, quindi fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) per verificare le impostazioni.
 
-- In Exchange Management Shell, sostituire \<RuleName\> con il nome della regola del flusso di posta e RUL il comando seguente per verificare le impostazioni:
+- In Exchange Management Shell, sostituire \< RuleName \> con il nome della regola del flusso di posta e RUL il comando seguente per verificare le impostazioni:
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

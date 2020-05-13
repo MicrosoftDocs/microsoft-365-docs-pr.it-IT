@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Progettare siti del team di SharePoint Online isolati, tra cui determinare i livelli di autorizzazione, assegnare autorizzazioni per gli utenti con gruppi di accesso e gruppi di Azure AD nidificati.
-ms.openlocfilehash: 4663a0b9710fc05d0b063a3100d3b5ac223a2161
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 821e15a05bc80e3795f9e18d4457416baf7145b7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034841"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209512"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Progettare un sito del team di SharePoint Online isolato
 
@@ -63,15 +63,15 @@ Di seguito sono disponibili i gruppi di SharePoint e i livelli di autorizzazione
   
 Utilizzo di gruppi di SharePoint predefiniti, ad esempio:
   
-- I membri del ** \<nome del sito> membri** di gruppo di SharePoint, che possono includere sia gli account utente che i gruppi, vengono assegnati il livello di autorizzazione **modifica** .
+- I membri del ** \< nome del sito> membri** di gruppo di SharePoint, che possono includere sia gli account utente che i gruppi, vengono assegnati il livello di autorizzazione **modifica** .
     
-- Membri del ** \<nome del sito>** gruppo di SharePoint visitatori, che può includere sia gli account utente che i gruppi, viene assegnato il livello di autorizzazione **lettura** .
+- Membri del ** \< nome del sito>** gruppo di SharePoint visitatori, che può includere sia gli account utente che i gruppi, viene assegnato il livello di autorizzazione **lettura** .
     
-- I membri del ** \<nome del sito> proprietari** del gruppo di SharePoint, che può includere sia gli account utente che i gruppi, vengono assegnati il livello di autorizzazione **controllo completo** .
+- I membri del ** \< nome del sito> proprietari** del gruppo di SharePoint, che può includere sia gli account utente che i gruppi, vengono assegnati il livello di autorizzazione **controllo completo** .
     
  **Procedura consigliata:** Anche se è possibile gestire le autorizzazioni per singoli account utente, è consigliabile utilizzare un singolo gruppo di Azure AD, noto come gruppo di accesso. In questo modo si semplifica la gestione delle autorizzazioni tramite l'appartenenza al gruppo di accesso, anziché gestire l'elenco di account utente per ogni gruppo di SharePoint.
   
-I gruppi di Azure AD per Microsoft 365 sono diversi dai gruppi di Microsoft 365. I gruppi di Azure AD vengono visualizzati nell'interfaccia di amministrazione di Microsoft 365 con il relativo **tipo** impostato su **sicurezza** e non dispongono di un indirizzo di posta elettronica. I gruppi di Azure AD possono essere gestiti all'interno di:
+I gruppi di Azure AD per Microsoft 365 sono diversi gruppi di Microsoft 365. I gruppi di Azure AD vengono visualizzati nell'interfaccia di amministrazione di Microsoft 365 con il relativo **tipo** impostato su **sicurezza** e non dispongono di un indirizzo di posta elettronica. I gruppi di Azure AD possono essere gestiti all'interno di:
   
 - Servizi di dominio Active Directory (AD DS)
     
@@ -101,7 +101,7 @@ Quando si progettano i tre gruppi di accesso, tenere presente quanto segue:
   
 - I membri del gruppo di accesso ** \<> Admins** devono essere presenti solo alcuni utenti, che corrispondono a un numero limitato di amministratori di SharePoint Online che gestiscono il sito del team.
     
-- La maggior parte dei membri del sito è presente nel ** \<nome del sito> membri** o ** \<nel nome del sito>** gruppi di accesso dei visualizzatori. Poiché i membri del sito del gruppo di ** \<accesso> membri** del sito hanno la possibilità di eliminare o modificare le risorse nel sito, è opportuno considerare con attenzione la propria appartenenza. In caso di dubbi, aggiungere il membro del sito al gruppo di accesso dei ** \<visualizzatori> nome del sito** .
+- La maggior parte dei membri del sito è presente nel nome del sito ** \<> membri** o nel ** \< nome del sito>** gruppi di accesso dei visualizzatori. Poiché i membri del sito del gruppo di accesso ** \<> membri** del sito hanno la possibilità di eliminare o modificare le risorse nel sito, è opportuno considerare con attenzione la propria appartenenza. In caso di dubbi, aggiungere il membro del sito al gruppo di accesso dei ** \< visualizzatori> nome del sito** .
     
 Di seguito è riportato un esempio di gruppi di SharePoint e gruppi di accesso per un sito isolato denominato ProjectX.
   

@@ -14,13 +14,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Microsoft 365. Tra questi tipi di esenzioni sono inclusi il blocco per controversia legale, eDiscovery holds e Microsoft 365 Retention Policies. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: 232173b82033f7372ef54411a04f3ee891a42bbb
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Microsoft 365. Tra questi tipi di esenzioni sono inclusi il blocco per controversia legale, eDiscovery holds e Microsoft 365 Retention Policies. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello dell'organizzazione.
+ms.openlocfilehash: 594b8550cdd418af9551c732b78091817da7bfc3
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048001"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208667"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -30,7 +30,7 @@ Microsoft 365 offre diversi modi in cui l'organizzazione può impedire che il co
 
 - ** [Blocco per controversia legale](create-a-litigation-hold.md):** Esenzioni applicate alle cassette postali degli utenti in Exchange Online.
 
-- ** [eDiscovery Hold](ediscovery-cases.md#step-4-place-content-locations-on-hold):** Esenzioni associate a un caso di eDiscovery nel centro sicurezza e conformità. le esenzioni di eDiscovery possono essere applicate alle cassette postali degli utenti e alla cassetta postale corrispondente per i gruppi Microsoft 365 e Microsoft teams.
+- ** [eDiscovery Hold](create-ediscovery-holds.md):** Esenzioni associate a un caso di eDiscovery di base nel centro sicurezza e conformità. le esenzioni di eDiscovery possono essere applicate alle cassette postali degli utenti e alla cassetta postale corrispondente per i gruppi Microsoft 365 e Microsoft teams.
 
 - ** [Blocco sul posto](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Esenzioni applicate alle cassette postali degli utenti utilizzando lo strumento di archiviazione eDiscovery sul posto & nell'interfaccia di amministrazione di Exchange in Exchange Online.
 
@@ -73,11 +73,11 @@ Nella tabella seguente viene descritto come identificare diversi tipi di esenzio
 
 |Tipo di blocco  |Valore di esempio  |Come identificare il blocco  |
 |---------|---------|---------|
-|Conservazione in caso di dispute     |    `True`     |     Il blocco per controversia legale è abilitato per una *LitigationHoldEnabled* cassetta postale quando la proprietà `True`LitigationHoldEnabled è impostata su.    |
-|eDiscovery Hold     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *Proprietà InPlaceHolds* contiene il GUID di qualsiasi blocco associato a un caso di eDiscovery nel centro sicurezza e conformità. Si può dire che si tratta di un blocco eDiscovery perché il GUID inizia `UniH` con il prefisso (che denota una conservazione unitaria).      |
+|Conservazione in caso di dispute     |    `True`     |     Il blocco per controversia legale è abilitato per una cassetta postale quando la proprietà *LitigationHoldEnabled* è impostata su `True` .    |
+|eDiscovery Hold     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *Proprietà InPlaceHolds* contiene il GUID di qualsiasi blocco associato a un caso di eDiscovery nel centro sicurezza e conformità. Si può dire che si tratta di un blocco eDiscovery perché il GUID inizia con il `UniH` prefisso (che denota una conservazione unitaria).      |
 |Blocco sul posto     |     `c0ba3ce811b6432a8751430937152491` <br/> oppure <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La proprietà *InPlaceHolds* contiene il GUID del blocco sul posto applicato alla cassetta postale. Si può dire che si tratta di un blocco sul posto, perché il GUID non inizia con un prefisso o inizia con il `cld` prefisso.     |
-|Criterio di conservazione Microsoft 365 applicato specificamente alla cassetta postale     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> oppure <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La proprietà InPlaceHolds contiene GUID di tutti i criteri di conservazione delle posizioni specifici applicati alla cassetta postale. È possibile identificare i criteri di conservazione perché il GUID inizia `mbx` con il `skp` prefisso o. Il `skp` prefisso indica che il criterio di conservazione viene applicato alle conversazioni di Skype for business nella cassetta postale dell'utente.    |
-|Escluso da un criterio di conservazione Microsoft 365 a livello di organizzazione     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Se una cassetta postale è esclusa da un criterio di conservazione Microsoft 365 a livello di organizzazione, il GUID del criterio di conservazione a cui è esclusa la cassetta postale viene visualizzato nella proprietà `-mbx` InPlaceHolds ed è identificato dal prefisso.    |
+|Criterio di conservazione Microsoft 365 applicato specificamente alla cassetta postale     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> oppure <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La proprietà InPlaceHolds contiene GUID di tutti i criteri di conservazione delle posizioni specifici applicati alla cassetta postale. È possibile identificare i criteri di conservazione perché il GUID inizia con il `mbx` `skp` prefisso o. Il `skp` prefisso indica che il criterio di conservazione viene applicato alle conversazioni di Skype for business nella cassetta postale dell'utente.    |
+|Escluso da un criterio di conservazione Microsoft 365 a livello di organizzazione     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Se una cassetta postale è esclusa da un criterio di conservazione Microsoft 365 a livello di organizzazione, il GUID del criterio di conservazione a cui è esclusa la cassetta postale viene visualizzato nella proprietà InPlaceHolds ed è identificato dal `-mbx` prefisso.    |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
 Se la proprietà *InPlaceHolds* è vuota quando si esegue il cmdlet **Get-Mailbox** , è possibile che siano ancora presenti uno o più criteri di conservazione Microsoft 365 a livello di organizzazione applicati alla cassetta postale. Eseguire il seguente comando in PowerShell di Exchange Online per ottenere un elenco di GUID per i criteri di conservazione Microsoft 365 a livello di organizzazione.
@@ -94,7 +94,7 @@ Nella tabella seguente vengono descritti i diversi tipi di esenzioni a livello d
 
 |Tipo di blocco  |Valore di esempio  |Descrizione  |
 |---------|---------|---------|
-|Criteri di conservazione Microsoft 365 applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di Teams    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   I criteri di conservazione a livello di organizzazione applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di 1xN in Microsoft teams `mbx` sono identificati da GUID che iniziano con il prefisso. Note le chat di 1xN vengono archiviate nella cassetta postale dei singoli partecipanti alla chat.      |
+|Criteri di conservazione Microsoft 365 applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di Teams    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   I criteri di conservazione a livello di organizzazione applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di 1xN in Microsoft teams sono identificati da GUID che iniziano con il `mbx` prefisso. Note le chat di 1xN vengono archiviate nella cassetta postale dei singoli partecipanti alla chat.      |
 |Criterio di conservazione Microsoft 365 applicato a gruppi di Microsoft 365 e ai messaggi di canale Teams     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    I criteri di conservazione a livello di organizzazione applicati ai gruppi di Microsoft 365 e ai messaggi di canale in Microsoft teams sono identificati da GUID che iniziano con il `grp` prefisso. Note i messaggi del canale vengono archiviati nella cassetta postale di gruppo associata a un team di Microsoft.     |
 
 Per ulteriori informazioni sui criteri di conservazione applicati a Microsoft teams, vedere la sezione "percorso team" [Panoramica dei criteri di conservazione](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
@@ -235,9 +235,9 @@ Tenere presenti le considerazioni seguenti quando si gestisce una cassetta posta
 
 Dopo aver identificato le esenzioni applicate a una cassetta postale, è possibile eseguire attività quali la modifica della durata del blocco, la rimozione temporanea o permanente del blocco o l'esclusione di una cassetta postale inattiva da un criterio di conservazione Microsoft 365. Per ulteriori informazioni sull'esecuzione di attività correlate alle esenzioni, vedere uno dei seguenti argomenti:
 
-- Eseguire il comando [>cassetta postale dell' \<utente set-RetentionCompliancePolicy-AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps) in sicurezza & Compliance Center PowerShell per escludere una cassetta postale da un criterio di conservazione Microsoft 365 a livello di organizzazione. Questo comando può essere utilizzato solo per i criteri di conservazione in cui il *ExchangeLocation* valore della proprietà ExchangeLocation `All`è uguale a.
+- Eseguire il comando [ \<>cassetta postale dell'utente set-RetentionCompliancePolicy-AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps) in sicurezza & Compliance Center PowerShell per escludere una cassetta postale da un criterio di conservazione Microsoft 365 a livello di organizzazione. Questo comando può essere utilizzato solo per i criteri di conservazione in cui il valore della proprietà *ExchangeLocation* è uguale a `All` .
 
-- Eseguire il [GUID di blocco set- \<Mailbox-ExcludeFromOrgHolds senza prefisso o suffisso>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) comando in PowerShell di Exchange Online per escludere una cassetta postale inattiva da un criterio di conservazione Microsoft 365 a livello di organizzazione.
+- Eseguire il [GUID di blocco Set-Mailbox-ExcludeFromOrgHolds \< senza prefisso o suffisso>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps) comando in PowerShell di Exchange Online per escludere una cassetta postale inattiva da un criterio di conservazione Microsoft 365 a livello di organizzazione.
 
 - [Cambiare la durata del blocco per una cassetta postale inattiva](change-the-hold-duration-for-an-inactive-mailbox.md)
 

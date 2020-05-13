@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 for business. "
-ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 0cd9bfe2b4f60ed0150e95f35d1f24994724ca60
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173519"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208199"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -79,7 +79,7 @@ Questi passaggi sono disponibili solo per gli utenti che utilizzano un piano Mic
 
 Utilizzare questa procedura se si è dimenticato la password ma si è in grado di accedere a Microsoft 365 perché, ad esempio, la password viene salvata nel browser: 
     
-1. Seleziona il tuo nome (icona) nell'angolo in alto a destra > le**informazioni personali**del **mio account** > . 
+1. Seleziona il tuo nome (icona) nell'angolo in alto a destra > **le**  >  **informazioni personali**del mio account. 
           
 2. In **informazioni di contatto**, verificare che la **posta elettronica alternativa** sia accurata e che sia stato fornito un numero di cellulare. In caso contrario, cambiali subito. 
         
@@ -100,7 +100,7 @@ Se si è dimenticato la password e non si è in grado di accedere:
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Reimpostare contemporaneamente tutte le password aziendali per tutti gli utenti dell'organizzazione
 <a name="bkmk_forgot"> </a>
 
-Questi passaggi sono validi per un'azienda con decine di utenti. Se gli utenti sono centinaia o migliaia, vedere la sezione successiva sulla reimpostazione della password in blocco.
+Questi passaggi sono validi per un'azienda con decine di utenti. Se si dispone di centinaia o migliaia di utenti, vedere la sezione successiva sulla reimpostazione delle password all'ingrosso (massimo 40 utenti alla volta).
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
     

@@ -13,23 +13,21 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: In questo articolo i clienti di Exchange Online Protection (EOP) possono sapere come configurare il routing della posta personalizzato che può essere conforme ai requisiti aziendali.
-ms.openlocfilehash: cdc919c628f2254ffc971678f7887c37786d2528
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: L'amministratore può ottenere informazioni sulle opzioni per la configurazione del flusso di posta e del routing in Exchange Online Protection (EOP).
+ms.openlocfilehash: cb2ae7370d50fe32802ad5c279cc2170eb35f581
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034233"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208331"
 ---
 # <a name="mail-flow-in-eop"></a>Flusso di posta in Exchange Online Protection
 
-Come cliente di Exchange Online Protection (EOP), tutti i messaggi inviati all'organizzazione passano attraverso EOP prima che i dipendenti li visualizzino. A prescindere che tutte le cassette postali siano ospitate nel cloud con Exchange Online o siano locali (il cosiddetto scenario autonomo), ad esempio per continuare a sfruttare l'infrastruttura esistente, sono disponibili diverse opzioni di routing dei messaggi che passeranno attraverso EOP per l'elaborazione prima di essere instradati alle cassette postali dei dipendenti.
-
-È possibile configurare il routing della posta personalizzato ai fini della conformità della messaggistica a un requisito aziendale. Ad esempio, è possibile far passare tutta la posta in uscita attraverso l'applicazione di filtro dei criteri di posta.
+In Microsoft 365 organizzazioni con cassette postali di Exchange Online o organizzazioni autonome di Exchange Online Protection (EOP) prive di cassette postali di Exchange Online, tutti i messaggi inviati all'organizzazione passano attraverso EOP prima che i dipendenti li vedano. Sono disponibili opzioni su come instradare i messaggi che passano attraverso EOP per l'elaborazione prima che vengano instradati alle cassette postali di lavoro.
 
 ## <a name="working-with-messages-and-message-access-options"></a>Utilizzo dei messaggi e delle opzioni di accesso ai messaggi
 
-EOP offre molta flessibilità per il routing dei messaggi. Gli argomenti seguenti spiegano i passaggi del processo del flusso di posta.
+EOP offre flessibilità nel modo in cui i messaggi vengono instradati. Gli argomenti seguenti spiegano i passaggi del processo del flusso di posta.
 
 [Utilizzare il blocco Edge basato su directory per rifiutare i messaggi inviati a destinatari non validi](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) Descrive la funzionalità di blocco Edge basato su directory che consente di rifiutare i messaggi per i destinatari non validi nel perimetro della rete di servizi.
 
@@ -37,9 +35,11 @@ EOP offre molta flessibilità per il routing dei messaggi. Gli argomenti seguent
 
 Se si aggiungono sottodomini all'organizzazione, il servizio EOP può essere utile nella gestione anche di questi sottodomini. Per ulteriori informazioni sui sottodomini, vedere [Enable Mail Flow for subdomains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
 
-In [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) vengono descritti i connettori EOP e come è possibile utilizzarli per personalizzare il routing della posta. Gli scenari includono la verifica relativa alla sicurezza delle comunicazioni con un'organizzazione partner e la configurazione di uno smart host.
+[Configure Mail Flow using Connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) introduce connettori e visualizza come utilizzarli per personalizzare il routing della posta. Gli scenari includono la verifica relativa alla sicurezza delle comunicazioni con un'organizzazione partner e la configurazione di uno smart host.
 
-Per assicurarsi che la posta indesiderata venga instradata correttamente nella cartella Posta indesiderata di ciascun utente, è necessario eseguire un paio di passaggi per la configurazione. Sono descritti in dettaglio in [Configure standalone EOP per recapitare la posta indesiderata alla cartella posta indesiderata in ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Se non si intende spostare i messaggi nella cartella Posta indesiderata di ciascun utente, è possibile optare per un'altra azione modificando i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata](configure-your-spam-filter-policies.md).
+[Filtro avanzato per i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) viene descritto come configurare i connettori se la posta viene instradata a un servizio o a un dispositivo prima di EOP.
+
+Nelle organizzazioni di EOP autonome, è necessario eseguire una procedura di configurazione di coppia per assicurarsi che la posta indesiderata venga instradata correttamente nella cartella posta indesiderata di ogni utente. Sono descritti in dettaglio in [Configure standalone EOP per recapitare la posta indesiderata alla cartella posta indesiderata in ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Se non si desidera spostare i messaggi nella cartella posta indesiderata di ogni utente, è possibile scegliere un'altra azione modificando i criteri di protezione da posta indesiderata (noti anche come criteri di filtro dei contenuti). Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata](configure-your-spam-filter-policies.md).
 
 ## <a name="verify-mail-flow"></a>Verificare il flusso di posta
 

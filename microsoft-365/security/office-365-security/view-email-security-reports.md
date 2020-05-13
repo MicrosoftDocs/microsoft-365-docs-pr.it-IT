@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
-ms.openlocfilehash: b65dd6479262b97f08e34420d9a88ee2a327a73b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ca23f7ba0ce7bc43f8808e213dc79d066316a9ec
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631086"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208514"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -75,7 +75,7 @@ Questo report, disponibile per tutti gli utenti con Exchange Online Protection, 
 
 Il **rapporto di crittografia** Visualizza informazioni sui messaggi di posta elettronica crittografati, tramite i criteri dell'organizzazione o tramite i controlli dell'utente finale. Il team di sicurezza dell'organizzazione può utilizzare le informazioni contenute in questo report per identificare modelli e applicare o modificare in modo proattivo i criteri per i messaggi di posta elettronica sensibili.
 
-Per visualizzare il report, nel centro sicurezza & conformità accedere a report **crittografia** **Dashboard** \> **report** \> .
+Per visualizzare il report, nel centro sicurezza & conformità accedere a report **Reports** \> **Dashboard** \> **crittografia**dashboard report.
 
 ![Rapporto di crittografia](../../media/encryptionreport-defaultview.png)
 
@@ -100,7 +100,7 @@ Utilizzare questo rapporto consente al team di conformità e sicurezza dell'orga
 Il rapporto **sullo stato della protezione dalle minacce** è uno smart report che indica che la posta elettronica dannosa è stata rilevata e bloccata da Exchange Online Protection. Questo rapporto è utile per la visualizzazione di messaggi di posta elettronica identificati come malware o tentativi di phishing nel tempo (fino a 90 giorni) e consente agli amministratori della sicurezza di identificare le tendenze o determinare se i criteri devono essere adattati.
 
 > [!NOTE]
-> Un rapporto sullo stato della protezione dalle minacce è disponibile per i clienti che dispongono di [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) o [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop) (EOP); Tuttavia, le informazioni visualizzate nel rapporto sullo stato di protezione di minacce per i clienti ATP probabilmente conterranno dati diversi da quelli che potrebbero essere visualizzati dai clienti di EOP. Ad esempio, i clienti di EOP possono visualizzare informazioni sui malware rilevati tramite posta elettronica, ma non informazioni sui [file dannosi rilevati in SharePoint Online, OneDrive o Microsoft teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams), una funzionalità specifica del trifosfato di adenosina. (Ulteriori[informazioni sui rapporti ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)).
+> Un rapporto sullo stato della protezione dalle minacce è disponibile per i clienti che dispongono di [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) o [Exchange Online Protection](exchange-online-protection-overview.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto sullo stato di protezione di minacce per i clienti ATP probabilmente conterranno dati diversi da quelli che potrebbero essere visualizzati dai clienti di EOP. Ad esempio, i clienti di EOP possono visualizzare informazioni sui malware rilevati tramite posta elettronica, ma non informazioni sui [file dannosi rilevati in SharePoint Online, OneDrive o Microsoft teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams), una funzionalità specifica del trifosfato di adenosina. (Ulteriori[informazioni sui rapporti ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)).
 
 Per visualizzare questo report, nel [Centro sicurezza & conformità](https://protection.office.com)accedere a **segnala** \> **Dashboard** \> **lo stato di protezione delle minacce**del dashboard.
 
@@ -120,7 +120,7 @@ Questo report è utile per visualizzare l'efficacia e l'impatto delle funzionali
 
 Il rapporto **rilevamento malware** indica il numero di messaggi in ingresso e in uscita che sono stati rilevati come contenenti malware per l'organizzazione.
 
-Per visualizzare questo report, nel [Centro sicurezza & conformità](https://protection.office.com)accedere a **report** \> di **rilevamento malware**del **Dashboard** \> .
+Per visualizzare questo report, nel [Centro sicurezza & conformità](https://protection.office.com)accedere a report di **Reports** \> **Dashboard** \> **rilevamento malware**del dashboard.
 
 ![Esempio di rapporto rilevamenti malware](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
 
@@ -148,13 +148,13 @@ Il report **mittenti e destinatari principali** è un grafico a torta che mostra
 
 Per visualizzare questo report, nel [Centro sicurezza & conformità](https://protection.office.com)accedere a **report** \> **Dashboard** \> **e destinatari principali**del dashboard.
 
-![Per visualizzare questo report, nel centro sicurezza & conformità accedere a report \> e destinatari principali \> del dashboard](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
+![Per visualizzare questo report, nel centro sicurezza & conformità accedere a report \> \> e destinatari principali del dashboard](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
 
 Quando si posiziona il puntatore del mouse su un cuneo nel grafico a torta, è possibile visualizzare il numero di messaggi inviati o ricevuti.
 
 Fare clic su (o toccare) il report per aprirlo in una nuova finestra del browser, in cui è possibile ottenere una visualizzazione più dettagliata del report.
 
-Utilizzare l'elenco **Mostra dati per** scegliere se visualizzare i dati per i mittenti principali, i destinatari, gli utenti di posta indesiderata e i destinatari di malware. È inoltre possibile visualizzare gli utenti che hanno ricevuto malware rilevati da [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop).
+Utilizzare l'elenco **Mostra dati per** scegliere se visualizzare i dati per i mittenti principali, i destinatari, gli utenti di posta indesiderata e i destinatari di malware. È inoltre possibile visualizzare gli utenti che hanno ricevuto malware rilevati da [Exchange Online Protection](exchange-online-protection-overview.md).
 
 ![Utilizzare l'elenco Mostra dati per visualizzare informazioni specifiche](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
 
@@ -164,9 +164,9 @@ Al di sotto del grafico, si vedrà chi sono i mittenti di posta elettronica o i 
 
 Il rapporto sui rilevamenti **spoof** indica il numero di messaggi di posta elettronica contraffatti individuati e di quelli che sono stati considerati "buoni" (la posta contraffatta è stata realizzata per motivi aziendali legittimi).
 
-Per visualizzare questo report, nel [Centro sicurezza & conformità](https://protection.office.com)accedere a **report** \> di **posta**indesiderata del **Dashboard** \> .
+Per visualizzare questo report, nel [Centro sicurezza & conformità](https://protection.office.com)accedere a **report** di posta indesiderata del \> **Dashboard** \> **Spoof Mail**.
 
-![Nel centro sicurezza & conformità, accedere a report \> di posta \> indesiderata del dashboard](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![Nel centro sicurezza & conformità, accedere a report di posta indesiderata del \> Dashboard \>](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
 
 Quando si posiziona il puntatore del mouse su un giorno nel grafico, è possibile visualizzare il numero di messaggi di posta elettronica contraffatti.
 
@@ -176,9 +176,9 @@ Fare clic su (o toccare) il report per aprirlo in una nuova finestra del browser
 
 Il rapporto sui **rilevamenti di posta indesiderata** consente di visualizzare tutti i contenuti di posta indesiderata bloccati I messaggi vengono conteggiati per ogni messaggio e non per destinatario. Ad esempio, se un messaggio di posta elettronica è stato inviato a 100 destinatari nell'organizzazione, viene conteggiato come un solo messaggio.
 
-Per visualizzare questo report, nel [Centro sicurezza & conformità](https://protection.office.com)accedere a **report** \> di **rilevamento della posta indesiderata**del **Dashboard** \> .
+Per visualizzare questo report, nel [Centro sicurezza & conformità](https://protection.office.com)accedere a report di **Reports** \> rilevamento della **Dashboard** \> **posta indesiderata**del dashboard.
 
-![Per visualizzare il report, nel centro sicurezza & conformità, accedere a report \> dashboard \> EOP spam detections](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
+![Per visualizzare il report, nel centro sicurezza & conformità, accedere a report \> Dashboard \> EOP spam detections](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
 
 Quando si posiziona il puntatore del mouse su un giorno nel grafico, è possibile vedere quanti elementi sono stati bloccati quel giorno, così come gli elementi sono categorizzati. Ad esempio, è possibile visualizzare il numero di messaggi di posta indesiderata filtrati e il numero di elementi provenienti da un indirizzo IP (Internet Protocol) bloccato.
 
@@ -192,9 +192,9 @@ Al di sotto del grafico, verrà visualizzato un elenco di elementi di posta inde
 
 Il rapporto **messaggi di posta elettronica inviati e ricevuti** è un report Smart che contiene informazioni sulla posta elettronica in arrivo e in uscita, inclusi i rilevamenti di posta indesiderata, il malware e la posta elettronica identificata come "buona".
 
-Per visualizzare il report, nel [Centro sicurezza & Compliance](https://protection.office.com)accedere al **Dashboard** \> dei **report** \> **inviati e ricevuti tramite posta elettronica**.
+Per visualizzare il report, nel [Centro sicurezza & Compliance](https://protection.office.com)accedere al dashboard dei **report** \> **Dashboard** \> **inviati e ricevuti tramite posta elettronica**.
 
-![Per visualizzare il report, nel centro sicurezza & conformità, accedere a report \> dashboard \> inviati e ricevuti tramite posta elettronica](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
+![Per visualizzare il report, nel centro sicurezza & conformità, accedere a report \> Dashboard \> inviati e ricevuti tramite posta elettronica](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
 
 Quando si posiziona il puntatore del mouse su un giorno nel grafico, è possibile visualizzare il numero di messaggi in arrivo e il modo in cui i messaggi vengono categorizzati. Ad esempio, è possibile vedere quanti messaggi sono stati rilevati come contenenti malware e quante sono stati identificati come posta indesiderata.
 
@@ -220,11 +220,11 @@ I dettagli sono disponibili per ogni messaggio, incluso il motivo del recapito, 
 
 Per visualizzare il report, nel [Centro sicurezza & Compliance](https://protection.office.com)eseguire una delle operazioni seguenti:
 
-- Accedere a **messaggi segnalati dall'utente**del \> **Dashboard** \> di **gestione delle minacce** .
+- Accedere a **Threat management** \> **Dashboard** \> **messaggi segnalati dall'utente**del dashboard di gestione delle minacce.
 
-- Passare a **gestione** \> minacce **esaminare** \> **i messaggi segnalati dall'utente**.
+- Passare a **gestione minacce** \> **esaminare** \> **i messaggi segnalati dall'utente**.
 
-![Nel centro sicurezza & conformità, scegliere messaggi segnalati \> dall' \> utente di Threat Management Review](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![Nel centro sicurezza & conformità, scegliere \> \> messaggi segnalati dall'utente di Threat Management Review](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
 > Affinché il rapporto messaggi segnalati dall'utente funzioni correttamente, **è necessario che la registrazione di controllo sia attivata** per l'ambiente Office 365. Questa operazione viene in genere fatta da una persona a cui è stato assegnato il ruolo registri di controllo in Exchange Online. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca del registro di controllo di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off).
@@ -235,9 +235,9 @@ Per visualizzare e utilizzare i report descritti in questo articolo, **è necess
 
 - Per il Centro sicurezza & conformità, è necessario che sia assegnato uno dei ruoli seguenti:
 
-  -Organization Management-Security Administrator (può essere assegnato nell'interfaccia di amministrazione di Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))-Security Reader
+  -Organization Management-Security Administrator (può essere assegnato nell'interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )-Security Reader
 
-- Per Exchange Online, è necessario che sia assegnato uno dei ruoli seguenti nell'interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) o con i cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
+- Per Exchange Online, è necessario che sia assegnato uno dei ruoli seguenti nell'interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) o con i cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
 
   -Gestione organizzazione-solo visualizzazione organizzazione-ruolo destinatari di sola visualizzazione-gestione della conformità
 

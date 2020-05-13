@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 50557b0824999f0220af4d12b906b0274db4471e
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 117681bd4722615e870594e46d6896e9128d0d0c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049616"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209224"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Configurare l'ambiente di test lab di Microsoft Threat Protection 
 
@@ -72,51 +72,51 @@ In questa fase, verranno guidati i seguenti aspetti:
 >Se si dispone già di una sottoscrizione di Office 365 o di Azure Active Directory, è possibile ignorare la procedura di creazione del tenant di valutazione di Office 365 E5.
 
 1. Andare al [portale del prodotto Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) e selezionare **versione di valutazione gratuita**.
-![Of_page immagine](../../media/mtp-eval-9.png) <br>
+![Image of_Office 365 E5 versione di valutazione gratuita](../../media/mtp-eval-9.png) <br>
   
 2. Completare la registrazione di prova inserendo l'indirizzo di posta elettronica (personale o aziendale). Fare clic su **Configura account**.
-![Of_page immagine](../../media/mtp-eval-10.png) <br> 
+![Pagina immagine of_Office 365 E5 registrazione di prova](../../media/mtp-eval-10.png) <br> 
 
 3. Inserire il nome, il cognome, il numero di telefono aziendale, il nome della società, la dimensione dell'azienda e il paese o l'area geografica.  
-<br>![Of_page immagine](../../media/mtp-eval-11.png) <br>
+<br>![Immagine of_Office 365 E5 pagina di installazione di registrazione di prova per i dettagli relativi a nome, telefono e società](../../media/mtp-eval-11.png) <br>
 >[!NOTE]
 >Il paese o l'area geografica impostata in questa sezione determina l'area del Data Center in cui verrà ospitata la sede di Office 365.
   
 4. Scegliere la preferenza di verifica: tramite un messaggio di testo o una chiamata. Fare clic su **Invia codice di verifica**. 
-![Of_page immagine](../../media/mtp-eval-12.png) <br>
+![Immagine of_Office 365 E5 registrazione di prova pagina di installazione per richiedere la preferenza di verifica](../../media/mtp-eval-12.png) <br>
 
 5. Impostare il nome di dominio personalizzato per il tenant, quindi fare clic su **Avanti**.
-<br>![Of_page immagine](../../media/mtp-eval-13.png) <br>
+<br>![Immagine of_Office pagina di installazione di registrazione di prova 365 E5 in cui è possibile configurare il nome di dominio personalizzato](../../media/mtp-eval-13.png) <br>
  
 6. Configurare la prima identità che sarà un amministratore globale per il tenant. Immettere il **nome** e la **password**. Fare clic su **Iscriviti**.
-![Of_page immagine](../../media/mtp-eval-14.png) <br>
-c
+![Immagine of_Office pagina di installazione di registrazione di prova 365 E5 in cui è possibile impostare l'identità aziendale](../../media/mtp-eval-14.png) <br>
+
 7. Fare clic su **Vai al programma di installazione** per completare il provisioning del tenant di valutazione di Office 365 E5.
-<br>![Of_page immagine](../../media/mtp-eval-15.png) <br>
+<br>![Immagine della pagina di installazione di registrazione di prova di Office 365 E5 che richiede di fare clic su Vai imposta pulsante](../../media/mtp-eval-15.png) <br>
 
 8. Connettere il dominio aziendale al tenant di Office 365. Optional Scegliere **Connect a Domain your già own** e digitare il nome di dominio. Fare clic su **Avanti**.
-<br>![Of_page immagine](../../media/mtp-eval-16.png) <br>
+<br>![Image of_Office pagina di installazione di 365 E5 dove è necessario personalizzare l'accesso e la posta elettronica](../../media/mtp-eval-16.png) <br>
  
 9. Sarà necessario aggiungere un record TXT o MX per convalidare la proprietà del dominio. Dopo aver aggiunto il record TXT o MX al dominio, selezionare **Verifica**.
-<br>![Of_page immagine](../../media/mtp-eval-17.png) <br>
+<br>![Image of_Office pagina di installazione di 365 E5 dove è necessario aggiungere un record TXT di MX per verificare il dominio](../../media/mtp-eval-17.png) <br>
  
 10. Optional Creare più account utente per il tenant. È possibile ignorare questo passaggio facendo clic su **Avanti**.
-![Of_page immagine](../../media/mtp-eval-18.png) <br>
+![Pagina di installazione di Image of_Office 365 E5 dove è possibile aggiungere altri utenti](../../media/mtp-eval-18.png) <br>
  
 11. Optional Scaricare le app di Office. Fare clic su **Avanti** per ignorare questo passaggio. 
-<br>![Of_page immagine](../../media/mtp-eval-19.png) <br>
+<br>![Image of_Office 365 E5 page dove è possibile installare le app di Office](../../media/mtp-eval-19.png) <br>
 
 12. Optional Eseguire la migrazione dei messaggi di posta elettronica. Anche in questo caso, è possibile ignorare questo passaggio.
-<br>![Of_page immagine](../../media/mtp-eval-20.png) <br>
+<br>![Image of_Office 365 E5 dove è possibile impostare se eseguire la migrazione o meno dei messaggi di posta elettronica](../../media/mtp-eval-20.png) <br>
  
 13. Scegliere servizi online. Selezionare **Exchange** e fare clic su **Avanti**. 
-<br>![Of_page immagine](../../media/mtp-eval-21.png) <br>
+<br>![Image of_Office 365 E5 dove è possibile scegliere i servizi online come Exchange o Skype for business o mibile Device Management per Office 365](../../media/mtp-eval-21.png) <br>
 
 14. Aggiungere i record MX, CNAME e TXT al dominio. Al termine, selezionare **Verifica**.
-<br>![Of_page immagine](../../media/mtp-eval-22.png) <br>
+<br>![Image of_Office 365 E5 è possibile aggiungere i record DNS](../../media/mtp-eval-22.png) <br>
  
 15. Congratulazioni, è stato completato il provisioning del tenant di Office 365.
-<br>![Of_page immagine](../../media/mtp-eval-23.png) <br>
+<br>![Pagina di conferma del completamento dell'installazione di Image of_Office 365 E5](../../media/mtp-eval-23.png) <br>
 
 ## <a name="enable-microsoft-365-trial-subscription"></a>Abilitare la sottoscrizione di valutazione di Microsoft 365
 
@@ -126,25 +126,25 @@ c
 1. Dall'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com/), fare clic su **fatturazione** , quindi passare a **acquisto servizi**.
 
 2. Selezionare **Microsoft 365 E5** e fare clic su **Avvia versione di valutazione gratuita**. 
-![Of_page immagine](../../media/mtp-eval-24.png) <br>
+![Pagina immagine of_Microsoft 365 E5 inizio versione di valutazione gratuita](../../media/mtp-eval-24.png) <br>
 
 3. Scegliere la preferenza di verifica: tramite un messaggio di testo o una chiamata. Dopo aver deciso, immettere il numero di telefono, selezionare **Text me** or **Call me** a seconda della selezione.
-![Of_page immagine](../../media/mtp-eval-25.png) <br>
+![Immagine of_Microsoft 365 E5 avvio della pagina di valutazione gratuita per richiedere informazioni di contatto per inviare codice per dimostrare che non sei un robot](../../media/mtp-eval-25.png) <br>
  
 4. Immettere il codice di verifica e fare clic su **Avvia la versione di valutazione gratuita**. 
-<br>![Of_page immagine](../../media/mtp-eval-26.png) <br>
+<br>![Image of_Microsoft 365 E5 avviare la pagina di valutazione gratuita dove è possibile compilare il codice di verifica del sistema inviato per dimostrare che non si è un robot](../../media/mtp-eval-26.png) <br>
 
 5. Fare clic su **prova ora** per confermare la versione di valutazione di Microsoft 365 E5.
-<br>![Of_page immagine](../../media/mtp-eval-27.png) <br>
+<br>![Immagine of_Microsoft 365 E5 avviare la pagina di prova gratuita in cui è necessario Clock il pulsante prova ora per iniziare](../../media/mtp-eval-27.png) <br>
  
-6. Accedere agli utenti**attivi**degli > **utenti** > dell'interfaccia di **amministrazione di Microsoft 365**. Selezionare l'account utente, selezionare **Gestisci licenze di prodotto**, quindi scambiare la licenza da Office 365 E5 a **Microsoft 365 E5**. Fare clic su **Salva**.
-![Of_page immagine](../../media/mtp-eval-28.png) <br>
+6. Accedere agli utenti attivi degli utenti dell'interfaccia di **amministrazione di Microsoft 365**  >  **Users**  >  **Active users**. Selezionare l'account utente, selezionare **Gestisci licenze di prodotto**, quindi scambiare la licenza da Office 365 E5 a **Microsoft 365 E5**. Fare clic su **Salva**.
+![Image of_Microsoft 365 pagina dell'interfaccia di amministrazione in cui è possibile selezionare la licenza Microsoft 365 E5](../../media/mtp-eval-28.png) <br>
  
 7. Selezionare di nuovo l'account di amministratore globale e quindi fare clic su **Gestisci nome utente**.
-<br>![Of_page immagine](../../media/mtp-eval-29.png) <br>
+<br>![Image of_Microsoft 365 pagina dell'interfaccia di amministrazione in cui è possibile selezionare account e quindi Gestione nome utente](../../media/mtp-eval-29.png) <br>
 
 8. Optional Modificare il dominio da *onmicrosoft.com* al proprio dominio, a seconda di cosa si è scelto nei passaggi precedenti. Fare clic su **Salva modifiche**.
-<br>![Of_page immagine](../../media/mtp-eval-30.png) <br>
+<br>![Image of_Microsoft 365 pagina dell'interfaccia di amministrazione in cui è possibile modificare la preferenza del dominio](../../media/mtp-eval-30.png) <br>
 
 
 

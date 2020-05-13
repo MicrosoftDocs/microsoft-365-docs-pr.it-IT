@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: In questo articolo vengono fornite informazioni su come configurare la protezione anti-phishing in Microsoft 365, per proteggere l'organizzazione da attacchi di phishing dannosi.
-ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
+ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035333"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209812"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
-I criteri per configurare le impostazioni di protezione anti-phishing sono disponibili nelle organizzazioni Microsoft 365 con le cassette postali di Exchange Online, le organizzazioni standalone di Exchange Online Protection (EOP) senza le cassette postali di Exchange Online e le organizzazioni di Office 365 Advanced Threat Protection (ATP).
+I criteri per configurare le impostazioni di protezione anti-phishing sono disponibili nelle organizzazioni Microsoft 365 con le cassette postali di Exchange Online, le organizzazioni autonome di Exchange Online Protection (EOP) senza le cassette postali di Exchange Online e le organizzazioni Office 365 Advanced Threat Protection (Office 365 ATP).
 
 I criteri di anti-phishing ATP sono disponibili solo nelle organizzazioni con Office 365 ATP. Ad esempio:
 
@@ -40,7 +40,7 @@ Nella tabella seguente sono descritte le differenze di alto livello tra i criter
 
 ||||
 |---|:---:|:---:|
-|**Caratteristica**|**Criteri anti-phishing**|**Criteri di anti-phishing ATP**|
+|**Funzionalità**|**Criteri anti-phishing**|**Criteri di anti-phishing ATP**|
 |Criterio predefinito creato automaticamente|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Creare criteri personalizzati|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Impostazioni di criteri<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -185,7 +185,7 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri d
 
 ### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>Soglie di phishing avanzate nei criteri di anti-phishing ATP
 
-Le soglie di phishing avanzate seguenti sono disponibili solo nei criteri di anti-phishing ATP per specificare come trattare i messaggi di phishing rilevati:
+Le soglie di phishing avanzate seguenti sono disponibili solo nei criteri di anti-phishing ATP per controllare la sensibilità per l'applicazione dei modelli di apprendimento automatico ai messaggi per determinare un verdetto di phishing:
 
 - **1-standard**: questo è il valore predefinito. Il livello di gravità dell'azione intrapresa sul messaggio dipende dal grado di sicurezza del messaggio (basso, medio, alto o estremamente elevato). Ad esempio, i messaggi identificati come phishing con un livello di sicurezza molto elevato hanno le azioni più gravi applicate, mentre i messaggi che vengono identificati come phishing con un livello di confidenza basso presentano azioni meno gravi applicate.
 

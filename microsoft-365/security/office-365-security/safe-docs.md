@@ -15,16 +15,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui documenti attendibili in Office 365 ATP.
-ms.openlocfilehash: b70c7013ce038a3934b7ea5e62d1d0530f12e4e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 11c2736edee3dd1fcbc2560d5fa574def05a8f6e
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634317"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213117"
 ---
-# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Documenti attendibili in Office 365 Advanced Threat Protection
+# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Sicurezza documenti in Office 365 Advanced Threat Protection
 
-Documenti attendibili è una funzionalità di Office 365 Advanced Threat Protection (ATP) che utilizza [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per analizzare documenti e file aperti in [visualizzazione protetta](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
+Documenti attendibili è una funzionalità di Office 365 Advanced Threat Protection (Office 365 ATP) che utilizza [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per analizzare i documenti e i file aperti in [visualizzazione protetta](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -32,17 +32,22 @@ Documenti attendibili è una funzionalità di Office 365 Advanced Threat Protect
 
 - I documenti attendibili sono attualmente disponibili per l'anteprima pubblica, disponibili per gli utenti che fanno parte del [programma Office Insider](https://insider.office.com/en-us/join) sul ' canale mensile (mirato)' con office versione 2002 (12527,20092) o superiore. Questa funzionalità è disattivata per impostazione predefinita e dovrà essere abilitata dall'amministratore della sicurezza.
 
-- Solo l'area degli Stati Uniti attualmente supportata per l'elaborazione dei file conformi (tutti i file viaggeranno nell'area statunitense per l'analisi). Il supporto per l'area UK/EU è pianificato in un aggiornamento futuro.
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di Exchange Online Protection, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Prima di poter eseguire le procedure descritte in questo argomento, è necessario disporre delle autorizzazioni assegnate. Per abilitare e configurare documenti attendibili, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-- Prima di poter eseguire le procedure descritte in questo argomento, è necessario disporre delle autorizzazioni assegnate. Per abilitare e configurare documenti attendibili, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+## <a name="how-does-microsoft-handle-your-data"></a>In che modo Microsoft gestisce i dati?
+
+Per proteggersi, i documenti sicuri inviano i file al cloud di [protezione avanzata delle minacce di Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per l'analisi.
+
+- Informazioni dettagliate su come Microsoft Defender Advanced thread Protection gestisce i dati possono essere trovati [qui](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- Oltre alle linee guida sopra riportate, i file inviati dai documenti attendibili non vengono conservati in Defender oltre il tempo necessario per l'analisi, che in genere è inferiore a 24 ore.
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Utilizzare il Centro sicurezza & conformità per configurare i documenti attendibili
 
-1. Aprire il Centro sicurezza & Compliance <https://protection.office.com>all'indirizzo.
+1. Aprire il Centro sicurezza & Compliance all'indirizzo <https://protection.office.com> .
 
-2. Accedere a **criteri** \> di **gestione delle** \> minacce per gli **allegati sicuri ATP**.
+2. Accedere a criteri di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri ATP**.
 
 3. Nella sezione **informazioni su come mantenere la sicurezza per la protezione di un file da aprire visualizzazione protetta esterna in applicazioni di Office** , configurare una delle seguenti impostazioni:
 
@@ -54,7 +59,7 @@ Documenti attendibili è una funzionalità di Office 365 Advanced Threat Protect
 
 ![Pagina allegati sicuri ATP](../../media/safe-docs.png)
 
-### <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-safe-documents"></a>Utilizzare PowerShell di Exchange Online o Exchange Online Protection PowerShell per configurare documenti sicuri
+### <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-documents"></a>Utilizzare Exchange Online PowerShell o standalone EOP PowerShell per configurare documenti sicuri
 
 Utilizzare la sintassi seguente:
 
@@ -78,7 +83,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-AtpPoli
 
 Per verificare di aver abilitato e configurato documenti attendibili, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità andare al **criterio** \> di **gestione** \> delle minacce per gli **allegati sicuri di ATP**e verificare che le selezioni nelle **persone di supporto siano sicure quando si considera attendibile un file per aprire la visualizzazione protetta esterna nella sezione applicazioni di Office** .
+- Nel centro sicurezza & conformità andare al criterio di **gestione delle minacce** per gli \> **Policy** \> **allegati sicuri di ATP**e verificare che le selezioni nelle **persone di supporto siano sicure quando si considera attendibile un file per aprire la visualizzazione protetta esterna nella sezione applicazioni di Office** .
 
 - Eseguire il seguente comando in PowerShell di Exchange Online e verificare i valori delle proprietà:
 

@@ -1,5 +1,5 @@
 ---
-title: Come viene convalidato l'indirizzo da Microsoft 365 per impedire il phishing
+title: Come EOP convalida l'indirizzo del mittente per impedire il phishing
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Per evitare il phishing, Microsoft 365 e Outlook.com ora richiedono la conformità RFC per gli indirizzi da:.
+description: Gli amministratori possono ottenere informazioni sui tipi di indirizzi di posta elettronica accettati o rifiutati da Exchange Online Protection (EOP) e Outlook.com per evitare il phishing.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034083"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209452"
 ---
-# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Come viene convalidato l'indirizzo da Microsoft 365 per impedire il phishing
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Come EOP convalida l'indirizzo del mittente per impedire il phishing
 
-Gli account di posta elettronica di Microsoft 365 ricevono un numero sempre più elevato di attacchi di phishing. Oltre a utilizzare [gli indirizzi di posta elettronica del mittente falsificati (falsificati)](anti-spoofing-protection.md), gli utenti malintenzionati utilizzano spesso valori nell'indirizzo from che violano gli standard di Internet. Per evitare questo tipo di phishing, Microsoft 365 e Outlook.com ora richiedono che i messaggi in ingresso includano un indirizzo conforme a RFC, come descritto in questo argomento. Questo Enforcement è stato abilitato nel novembre 2017.
+Gli attacchi di phishing rappresentano una minaccia costante per qualsiasi organizzazione di posta elettronica. Oltre a utilizzare [gli indirizzi di posta elettronica del mittente falsificati (falsificati)](anti-spoofing-protection.md), gli utenti malintenzionati utilizzano spesso valori nell'indirizzo from che violano gli standard di Internet. Per evitare questo tipo di phishing, Exchange Online Protection (EOP) e Outlook.com ora richiedono che i messaggi in ingresso includano un indirizzo conforme a RFC, come descritto in questo argomento. Questo Enforcement è stato abilitato nel novembre 2017.
 
 **Note**:
 
@@ -39,9 +39,9 @@ Gli account di posta elettronica di Microsoft 365 ricevono un numero sempre più
 
 Un messaggio di posta elettronica SMTP standard è costituito da una *busta del messaggio* e dal contenuto del messaggio. La busta del messaggio contiene le informazioni necessarie per la trasmissione e il recapito del messaggio tra i server SMTP. Il contenuto del messaggio include i campi di intestazione del messaggio (denominati collettivamente *intestazione del messaggio*) e il corpo del messaggio. La busta del messaggio è descritta in [rfc 5321](https://tools.ietf.org/html/rfc5321)e l'intestazione del messaggio è descritta in [RFC 5322](https://tools.ietf.org/html/rfc5322). I destinatari non vedono mai la busta reale del messaggio perché viene generata dal processo di trasmissione del messaggio e non è in realtà parte del messaggio.
 
-- L' `5321.MailFrom` indirizzo (noto anche come indirizzo di **posta elettronica** , mittente P1 o mittente busta) è l'indirizzo di posta elettronica utilizzato per la trasmissione SMTP del messaggio. Questo indirizzo di posta elettronica viene in genere registrato nel campo di intestazione **Return-Path** nell'intestazione del messaggio (sebbene sia possibile che il mittente designi un indirizzo di posta elettronica diverso per il **percorso restituito** ).
+- L'indirizzo `5321.MailFrom` (noto anche come indirizzo di **posta elettronica** , mittente P1 o mittente busta) è l'indirizzo di posta elettronica utilizzato per la trasmissione SMTP del messaggio. Questo indirizzo di posta elettronica viene in genere registrato nel campo di intestazione **Return-Path** nell'intestazione del messaggio (sebbene sia possibile che il mittente designi un indirizzo di posta elettronica diverso per il **percorso restituito** ).
 
-- L' `5322.From` indirizzo di posta elettronica del mittente viene visualizzato nei client di posta elettronica (noto anche come indirizzo da o mittente P2) e è l'indirizzo di posta elettronica nel campo dell'intestazione **from** . L'indirizzo mittente è lo stato attivo dei requisiti di questo argomento.
+- L'indirizzo di posta `5322.From` elettronica del mittente viene visualizzato nei client di posta elettronica (noto anche come indirizzo da o mittente P2) e è l'indirizzo di posta elettronica nel campo dell'intestazione **from** . L'indirizzo mittente è lo stato attivo dei requisiti di questo argomento.
 
 L'indirizzo from è definito dettagliatamente in più RFC, ad esempio le sezioni di RFC 5322 3.2.3, 3,4 e 3.4.1 e [rfc 3696](https://tools.ietf.org/html/rfc3696). Sono presenti molte varianti sull'indirizzamento e su ciò che è considerato valido o non valido. Per semplificare le operazioni, è consigliabile utilizzare il formato e le definizioni seguenti:
 
@@ -53,7 +53,7 @@ L'indirizzo from è definito dettagliatamente in più RFC, ad esempio le sezioni
   - Se l'indirizzo from include un nome visualizzato, il valore EmailAddress deve essere racchiuso tra parentesi angolari (< >) come illustrato.
   - Microsoft consiglia vivamente di inserire uno spazio tra il nome visualizzato e l'indirizzo di posta elettronica.
 
-- **EmailAddress**: l'indirizzo di posta elettronica utilizza `local-part@domain`il formato seguente:
+- **EmailAddress**: l'indirizzo di posta elettronica utilizza il formato seguente `local-part@domain` :
 
   - **local-part**: una stringa che identifica la cassetta postale associata all'indirizzo. Questo valore è univoco all'interno del dominio. Spesso, viene utilizzato il nome utente o il GUID del proprietario della cassetta postale.
   - **dominio**: il nome di dominio completo (FQDN) del server di posta elettronica che ospita la cassetta postale identificata dalla parte locale dell'indirizzo di posta elettronica.
@@ -104,7 +104,7 @@ Gli indirizzi di posta elettronica seguenti non sono validi:
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Sopprimere le risposte automatiche al dominio personalizzato
 
-Non è possibile utilizzare il `From: <>` valore per sopprimere le risposte automatiche. Al contrario, è necessario configurare un record MX null per il dominio personalizzato. Le risposte automatiche (e tutte le risposte) sono naturalmente soppressi perché non esiste alcun indirizzo pubblicato a cui il server che risponde può inviare messaggi.
+Non è possibile utilizzare il valore `From: <>` per sopprimere le risposte automatiche. Al contrario, è necessario configurare un record MX null per il dominio personalizzato. Le risposte automatiche (e tutte le risposte) sono naturalmente soppressi perché non esiste alcun indirizzo pubblicato a cui il server che risponde può inviare messaggi.
 
 - Scegliere un dominio di posta elettronica che non sia in grado di ricevere posta elettronica. Ad esempio, se il dominio principale è contoso.com, è possibile scegliere noreply.contoso.com.
 

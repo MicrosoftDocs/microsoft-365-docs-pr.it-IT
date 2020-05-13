@@ -14,12 +14,12 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni su come passare a Exchange Online Protection (EOP) da un dispositivo di igiene della posta elettronica locale o da un servizio di protezione basato sul cloud.
-ms.openlocfilehash: 4bbd0b60d42b52d5c9343126f12059fcf1fc3d62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d7b2cfbe84d1e03bcd549c5220f6063592962792
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035225"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209272"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Passaggio a Exchange Online Protection da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort
 
@@ -55,9 +55,9 @@ Il modo migliore per iniziare, se si sta prendendo in considerazione una distrib
 
 Se si decide di passare a EOP, assicurarsi di prestare particolare attenzione alle seguenti aree:
 
-- **Regole di filtro personalizzate**: se si dispone di un filtro personalizzato o di regole aziendali per rilevare una posta indesiderata specifica, è consigliabile provare EOP con le impostazioni predefinite per un periodo, prima di eseguire la migrazione delle regole. Poiché EOP offre protezione da posta indesiderata a livello aziendale con impostazioni predefinite, è possibile che non sia necessario migrare alcune delle regole a EOP. Ovviamente, nel caso di regole che applicano criteri aziendali personalizzati specifici, è possibile eseguirne la creazione. [Le regole del flusso di posta (regole di trasporto) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) sono disponibili istruzioni dettagliate per la creazione di regole del flusso di posta in EOP.
+- **Regole di filtro personalizzate**: se si dispone di un filtro personalizzato o di regole aziendali per rilevare una posta indesiderata specifica, è consigliabile provare EOP con le impostazioni predefinite per un determinato periodo di tempo prima di eseguire la migrazione delle regole. Poiché EOP offre protezione da posta indesiderata a livello aziendale con impostazioni predefinite, è possibile che non sia necessario migrare alcune delle regole a EOP. Ovviamente, nel caso di regole che applicano criteri aziendali personalizzati specifici, è possibile eseguirne la creazione. [Le regole del flusso di posta (regole di trasporto) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) sono disponibili istruzioni dettagliate per la creazione di regole del flusso di posta in EOP.
 
-- Elenchi di indirizzi IP **consentiti ed elenchi di indirizzi IP bloccati**: se si dispone di elenchi di indirizzi consentiti per utente e di blocco, è possibile copiare gli elenchi in EOP come parte del processo di configurazione. Per ulteriori informazioni sugli elenchi di indirizzi IP consentiti e sugli elenchi di indirizzi IP bloccati, vedere [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md).
+- Elenchi di indirizzi IP **consentiti ed elenchi di indirizzi IP bloccati**: se si dispone di elenchi di indirizzi consentiti per utente e di blocco, è possibile copiare gli elenchi in EOP come parte del processo di configurazione. Per ulteriori informazioni sull'elenco indirizzi IP consentiti e sull'elenco indirizzi IP bloccati, vedere [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md).
 
 - **Comunicazione sicura**: se si dispone di un partner che richiede la messaggistica crittografata, è consigliabile configurarla nell'interfaccia di amministrazione di Exchange. Per configurare questo scenario, vedere [configurare i connettori per il flusso di posta sicura con un'organizzazione partner](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).
 

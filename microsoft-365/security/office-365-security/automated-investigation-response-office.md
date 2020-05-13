@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035617"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208912"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Panoramica dell'analisi automatizzata e della risposta (AIR) in Microsoft 365
 
@@ -50,7 +50,7 @@ Attualmente per l'aria, gli avvisi generati dai seguenti tipi di criteri di avvi
 > [!NOTE]
 > Agli avvisi contrassegnati da un asterisco (*) viene assegnata una gravità *informativa* nei rispettivi criteri di avviso all'interno del centro sicurezza & conformità, con le notifiche di posta elettronica disattivate. Le notifiche tramite posta elettronica possono essere attivate tramite la [configurazione del criterio di avviso](../../compliance/alert-policies.md#alert-policy-settings). Gli avvisi contrassegnati con un hash (#) sono generalmente disponibili agli avvisi associati ai PlayBook di anteprima pubblica.
 
-Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](air-view-investigation-results.md#investigation-graph)corrispondente.  
+Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi**  >  **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](air-view-investigation-results.md#investigation-graph)corrispondente.  
 
 > [!NOTE]
 > Gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, modificare il filtro degli avvisi per includere gli avvisi informativi.
@@ -68,6 +68,7 @@ Gli schemi di sicurezza che otterrete con AIR sono studiati per affrontare le mi
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Gli schemi di sicurezza vengono implementati in fasi
 
 Come parte di AIR, i PlayBook di sicurezza stanno per essere implementati in fasi. La fase 1 è ora generalmente disponibile e include diversi PlayBook che forniscono suggerimenti per le azioni che gli amministratori della sicurezza possono rivedere e approvare:
+
 - Messaggio phishing visualizzato dall'utente
 - URL fare clic su modifica verdetto
 - Malware rilevato dopo il recapito (ZAP malware)
@@ -76,6 +77,7 @@ Come parte di AIR, i PlayBook di sicurezza stanno per essere implementati in fas
 La fase 1 include anche il supporto per le indagini di posta elettronica attivate dall'amministratore (tramite [Esplora minacce](threat-explorer.md)).
 
 La fase 2 è ora in corso con i seguenti PlayBook nell' **anteprima pubblica**, fornendo suggerimenti per le azioni e aiutando gli amministratori della sicurezza a esaminare i problemi:
+
 - Utente segnalato come compromesso (anteprima pubblica)
 
 Ulteriori PlayBook verranno rilasciati Man mano che sono stati completati. Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cos'altro è pianificato e disponibile a breve.
@@ -83,6 +85,7 @@ Ulteriori PlayBook verranno rilasciati Man mano che sono stati completati. Visit
 ### <a name="playbooks-include-investigation-and-recommendations"></a>I PlayBook includono analisi e suggerimenti
 
 In AIR, ogni PlayBook di sicurezza include: 
+
 - analisi radice delle entità di un messaggio di posta elettronica (file, URL, destinatari, indirizzi IP e così via)
 - ulteriore ricerca di messaggi di posta elettronica simili ricevuti dall'organizzazione 
 - passaggi necessari per identificare e correlare altre potenziali minacce e 
@@ -95,6 +98,7 @@ Ogni passaggio di alto livello include una serie di passaggi che vengono eseguit
 Si supponga che un utente dell'organizzazione riceva un messaggio di posta elettronica che ritengono essere un tentativo di phishing. L'utente, addestrato a segnalare tali messaggi, utilizza il [componente aggiuntivo segnala messaggio](enable-the-report-message-add-in.md) per inviarlo a Microsoft per l'analisi. L'invio viene inviato anche al sistema ed è visibile in Esplora nella visualizzazione **invii** (in precedenza denominato visualizzazione **segnalata dall'utente** ). Inoltre, il messaggio visualizzato dall'utente ora attiva un avviso informativo basato sul sistema, che avvia automaticamente il PlayBook di analisi.
 
 Durante la fase di analisi radice, vengono valutati vari aspetti del messaggio di posta elettronica. Ad esempio:
+
 - Determinazione del tipo di minaccia che potrebbe essere;
 - Chi lo ha inviato;
 - In cui è stato inviato il messaggio di posta elettronica (infrastruttura di invio);
@@ -110,8 +114,8 @@ Successivamente, vengono eseguiti diversi passaggi di indagine e di ricerca di m
 - I messaggi di posta elettronica simili vengono identificati tramite ricerche cluster di posta elettronica.
 - Il segnale viene condiviso con altre piattaforme, ad esempio [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Si determina se gli utenti hanno fatto clic su eventuali collegamenti dannosi nei messaggi di posta elettronica sospetti.
-- Viene effettuato un controllo tramite Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) e Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
-- Viene effettuato un controllo per verificare se un utente è stato compromesso. Questa verifica utilizza i segnali di Office 365, [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security)e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlando eventuali anomalie relative alle attività degli utenti. 
+- Viene effettuato un controllo tramite Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) e Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
+- Viene effettuato un controllo per verificare se un utente è stato compromesso. Questa verifica utilizza i segnali di Office 365, [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security)e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlando eventuali anomalie relative alle attività degli utenti.
 
 Durante la fase di caccia, i rischi e le minacce sono assegnati a vari passaggi di caccia. 
 
@@ -136,4 +140,3 @@ Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che veng
 - [Iniziare a usare AIR](office-365-air.md)
 
 - [Visitare la Guida di orientamento di Microsoft 365 per vedere cosa succederà tra breve e in uscita](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

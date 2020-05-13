@@ -1,5 +1,5 @@
 ---
-title: Creazione di rapporti e traccia dei messaggi in Exchange Online Protection
+title: Creazione di report e traccia messaggio
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,16 +14,16 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni sui report e gli strumenti per la risoluzione dei problemi disponibili per gli amministratori di Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 44b4223b4310a2de1d90f99f8a7af23cc6054f94
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034381"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206443"
 ---
-# <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Creazione di rapporti e traccia dei messaggi in Exchange Online Protection
+# <a name="reporting-and-message-trace-in-eop"></a>Creazione di report e traccia dei messaggi in EOP
 
-Microsoft (EOP) Exchange Online Protection offre diversi rapporti che consentono di determinare lo stato generale e l'integrità dell'organizzazione. Sono inoltre disponibili strumenti per la risoluzione dei problemi relativi a eventi specifici, ad esempio il mancato recapito di un messaggio ai destinatari desiderati, e report di controllo per assicurare il rispetto dei requisiti di conformità.
+In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, EOP offre numerosi rapporti diversi che consentono di determinare lo stato generale e l'integrità dell'organizzazione. Sono inoltre disponibili strumenti per la risoluzione dei problemi relativi a eventi specifici, ad esempio il mancato recapito di un messaggio ai destinatari desiderati, e report di controllo per assicurare il rispetto dei requisiti di conformità.
 
 ## <a name="usage-reports"></a>Report sull'uso
 
@@ -57,11 +57,7 @@ Questi report avanzati forniscono un'esperienza di report interattiva per gli am
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Report personalizzati tramite Microsoft Graph
 
-Creare report a livello di programmazione che sono disponibili nell'interfaccia di amministrazione di Microsoft 365 tramite Microsoft Graph. Vedere gli argomenti secondari per l' [utilizzo dei report sull'uso di Office 365 in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
-
-## <a name="custom-reports-using-microsoft-graph"></a>Report personalizzati tramite Microsoft Graph
-
-Creare report a livello di programmazione. Vedere [Overview of Microsoft Graph](https://docs.microsoft.com/graph/overview).
+Creare report a livello di programmazione che sono disponibili nell'interfaccia di amministrazione tramite Microsoft Graph. Per ulteriori informazioni, vedere [Panoramica di Microsoft Graph](https://docs.microsoft.com/graph/overview) e utilizzo dei [report sull'utilizzo di Office 365 in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
 
 ## <a name="message-trace"></a>Traccia dei messaggi
 
@@ -69,7 +65,7 @@ Consente di seguire il percorso dei messaggi all'interno di EOP. È possibile st
 
 È possibile utilizzare queste informazioni per rispondere in modo efficiente alle domande dell'utente, risolvere i problemi relativi al flusso di posta, convalidare le modifiche apportate ai criteri e ridurre la necessità di contattare il supporto tecnico per assistenza.
 
-Vedere [traccia di un messaggio di posta elettronica](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)
+Vedere [Message Trace in the Security & Compliance Center](message-trace-scc.md).
 
 ## <a name="audit-logging"></a>Registrazione di controllo
 
@@ -85,6 +81,7 @@ La tabella seguente descrive quando in EOP le funzionalità di creazione rapport
 |Rapporti di riepilogo sulla protezione della posta|90 giorni|L'aggregazione dei dati dei messaggi è quasi completa entro 24-48 ore. Alcune modifiche aggregate incrementali minori possono verificarsi in un periodo massimo di 5 giorni.|
 |Rapporti dettagliati sulla protezione della posta|90 giorni|Per dati dettagliati creati da meno di 7 giorni, i dati devono essere visualizzati entro 24 ore ma potrebbero non essere completi fino a 48 ore. Alcune modifiche incrementali minori possono verificarsi in un periodo massimo di 5 giorni. <br/><br/> Per visualizzare rapporti dettagliati per messaggi creati da più di 7 giorni, i risultati potrebbero richiedere alcune ore.|
 |Dati di traccia dei messaggi|90 giorni|Quando si esegue la traccia dei messaggi per i messaggi creati da meno di 7 giorni, i messaggi devono essere visualizzati entro un periodo compreso tra 5 e 30 minuti.<br/><br/> Quando si esegua la traccia dei messaggi per messaggi creati da più di 7 giorni, i risultati potrebbero richiedere alcune ore.|
+|
 
 > [!NOTE]
-> La disponibilità e la latenza dei dati sono le stesse se richieste tramite l'interfaccia di amministrazione di Microsoft 365 o Remote PowerShell.
+> La disponibilità e la latenza dei dati sono le stesse se richieste tramite l'interfaccia di amministrazione o Remote PowerShell.

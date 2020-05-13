@@ -2,10 +2,10 @@
 title: Invio di posta elettronica a Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 04/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come mittente esterno, come è possibile aumentare la possibilità di inviare messaggi di posta elettronica agli utenti in Microsoft 365. Vengono inoltre fornite informazioni su come segnalare la posta indesiderata & tentativi di phishing come utenti esterni.
-ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035385"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209824"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Invio di posta elettronica a Microsoft 365
 
-Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Office 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente Microsoft 365.
+Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Microsoft 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente di Microsoft 365.
 
 Se non si è un cliente, ma si sta tentando di inviare messaggi di posta elettronica a un utente che si trova nel posto giusto. Se sei un amministratore e hai bisogno di assistenza per la lotta alla posta indesiderata, questa non è la sezione giusta per te. Invece, passare alla [protezione da posta indesiderata e anti-malware in Microsoft 365](anti-spam-and-anti-malware-protection.md).
 

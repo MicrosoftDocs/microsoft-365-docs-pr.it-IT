@@ -1,5 +1,5 @@
 ---
-title: Installazione del servizio EOP
+title: Configurare il servizio di EOP autonomo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: In questo articolo vengono fornite informazioni su come configurare Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: c00d39cae440bc95e26c853e107d8d7a8f4c50d8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Gli amministratori possono ottenere informazioni su come configurare standalone Exchange Online Protection (EOP) per proteggere gli ambienti di posta elettronica locali.
+ms.openlocfilehash: bf762eabcfebf34ca8cb8d37935ffac011228df0
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035285"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209800"
 ---
-# <a name="set-up-your-eop-service"></a>Configurare il servizio Exchange Online Protection
+# <a name="set-up-your-standalone-eop-service"></a>Configurare il servizio di EOP autonomo
 
-In questo argomento viene illustrato come configurare Microsoft Exchange Online Protection (EOP). Se si è arrivati qui dalla configurazione guidata dei domini di Office 365, tornare alla configurazione guidata dei domini di Office 365 se non si desidera utilizzare Exchange Online Protection. Per ulteriori informazioni su come configurare i connettori, vedere [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+In questo argomento viene descritto come configurare standalone Exchange Online Protection (EOP). Se si è arrivati qui dalla configurazione guidata dei domini di Office 365, tornare alla configurazione guidata dei domini di Office 365 se non si desidera utilizzare Exchange Online Protection. Per ulteriori informazioni su come configurare i connettori, vedere [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
 > In questo argomento si presuppone che siano presenti cassette postali locali e che si desideri proteggerle con EOP, noto come scenario autonomo. Se si desidera ospitare tutte le cassette postali nel cloud con Exchange Online, non è necessario completare tutti i passaggi descritti in questo argomento. Andare a [confrontare i piani di Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) per iscriversi e acquistare le cassette postali cloud. Se si desidera ospitare alcune delle cassette postali in locale e alcune nel cloud, questo è conosciuto come uno scenario ibrido. Richiede impostazioni di flusso di posta più avanzate. Le [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) spiegano il flusso di posta ibrido e dispongono di collegamenti a risorse che illustrano come configurarlo.
@@ -32,7 +32,7 @@ In questo argomento viene illustrato come configurare Microsoft Exchange Online 
 
 - Tempo stimato per il completamento di questa attività: 1 ora
 
-- Per configurare i connettori, è necessario che l'account sia un amministratore globale o che sia membro di Exchange Company Administrator (gruppo di ruoli di gestione dell'organizzazione). Per informazioni, vedere [Feature Permissions in EOP](feature-permissions-in-eop.md).
+- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. In particolare, è necessario il ruolo dei domini remoti e accettati, assegnato ai gruppi di ruoli MailFlowAdministrator e OrganizationManagement (Global Admins) per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Se non si è iscritti a EOP, visitare [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) e scegliere di acquistare o provare il servizio.
 
@@ -56,7 +56,7 @@ Prima di configurare il flusso di posta da e verso il servizio EOP, si consiglia
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Passaggio 3: Configurazione del flusso di posta tramite EAC
 
-Creare i connettori nell'Interfaccia di amministrazione di Exchange (EAC) per abilitare il flusso di posta tra EOP e i server di posta locali. Per istruzioni dettagliate, vedere [configurare i connettori per instradare la posta tra microsoft 365 e i propri server di posta elettronica](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
+Creare i connettori nell'Interfaccia di amministrazione di Exchange (EAC) per abilitare il flusso di posta tra EOP e i server di posta locali. Per istruzioni dettagliate, vedere [configurare i connettori per instradare la posta tra Microsoft 365 e i propri server di posta elettronica](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
@@ -73,11 +73,14 @@ Dopo aver configurato i connettori, attendere 72 ore per consentire la propagazi
 
 Per assicurarsi che la posta indesiderata venga instradata correttamente nella cartella posta indesiderata di ciascun utente, è necessario eseguire un paio di passaggi per la configurazione. I passaggi vengono forniti in [Configure standalone EOP per recapitare la posta indesiderata alla cartella posta indesiderata in ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-Se non si intende spostare i messaggi nella cartella posta indesiderata di ciascun utente, è possibile optare per un'altra azione modificando i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+Se non si desidera spostare i messaggi nella cartella posta indesiderata di ogni utente, è possibile scegliere un'altra azione modificando i criteri di protezione da posta indesiderata. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Passaggio 6: utilizzare l'interfaccia di amministrazione di Microsoft 365 per puntare il record MX a EOP
 
 Seguire la procedura di configurazione del dominio per aggiornare il record MX per il dominio, in modo che il flusso di posta elettronica in ingresso attraversi EOP. Fare in modo che il record MX punti direttamente a EOP anziché disporre di un messaggio di posta elettronica di inoltro di terze parti a EOP. Per ulteriori informazioni, è possibile fare riferimento a [create DNS Records for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+
+> [!NOTE]
+> Se è necessario puntare il record MX a un altro server o servizio che si trova di fronte a EOP, vedere [Enhanced Filtering for connectorss in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
@@ -90,4 +93,4 @@ A questo punto, l'erogazione del servizio è stata verificata per un connettore 
 - Per eseguire un test della posta elettronica in uscita, è possibile inviare un messaggio di posta elettronica da un utente nell'organizzazione a un account di posta elettronica basato su Web e verificare che sia stato ricevuto.
 
 > [!TIP]
-> Al termine dell'installazione, non è necessario eseguire ulteriori operazioni perché EOP rimuova posta indesiderata e malware. EOP li rimuove automaticamente. Tuttavia, è possibile utilizzare EAC per ottimizzare le impostazioni in base ai requisiti aziendali. Per ulteriori informazioni, vedere [protezione da posta indesiderata e anti-malware in Office 365](anti-spam-and-anti-malware-protection.md). <br/><br/> Ora che il servizio è in esecuzione, si consiglia di leggere le procedure consigliate [per la configurazione di EOP](best-practices-for-configuring-eop.md), in cui vengono descritte le impostazioni e le considerazioni consigliate per l'installazione di EOP.
+> Al termine dell'installazione, non è necessario eseguire ulteriori operazioni perché EOP rimuova posta indesiderata e malware. EOP li rimuove automaticamente. Tuttavia, è possibile ottimizzare le impostazioni in base ai requisiti aziendali. Per ulteriori informazioni, vedere [protezione da posta indesiderata e anti-malware in Office 365](anti-spam-and-anti-malware-protection.md) e [configurare l'intelligence spoof](learn-about-spoof-intelligence.md). <br/><br/> Ora che il servizio è in esecuzione, si consiglia di leggere le procedure consigliate [per la configurazione di EOP](best-practices-for-configuring-eop.md), in cui vengono descritte le impostazioni e le considerazioni consigliate per l'installazione di EOP.

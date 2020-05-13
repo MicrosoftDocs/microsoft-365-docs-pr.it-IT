@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Informazioni su come utilizzare OneDrive e un sito del team per l'archiviazione e la condivisione dei file.
-ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165218"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208187"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Configurare l'archiviazione e la condivisione di file
 
@@ -144,7 +144,7 @@ Ecco come sincronizzare i file archiviati nel sito del team con il desktop:
 
     ![Modificare la cartella locale in questa schermata](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. I file nei siti del team verranno visualizzati nel riquadro sinistro di Esplora file sotto il nome dell'organizzazione. I file in OneDrive verranno visualizzati in "OneDrive- \<nome dell'organizzazione\>"
+6. I file nei siti del team verranno visualizzati nel riquadro sinistro di Esplora file sotto il nome dell'organizzazione. I file in OneDrive verranno visualizzati in "OneDrive- \< nome dell'organizzazione \> "
 
     ![Vedere cosa è stato sincronizzato nella cartella locale](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
@@ -185,7 +185,7 @@ Anche se è possibile caricare quasi tutti i tipi di file, non sono consentiti a
   
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>.
 
-2. Passare alla pagina **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">Impostazioni</a> impostazioni.
+2. Passare alla pagina **Settings** impostazioni \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**org**</a> impostazioni.
 
 3. Nella scheda **Servizi** selezionare **Office sul Web**.
 

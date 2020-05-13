@@ -17,25 +17,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come configurare il filtro connessioni in Office 365 per consentire o bloccare i messaggi di posta elettronica provenienti dai server.
-ms.openlocfilehash: 0848e9a59df8c312891add29d14eec2dfed420df
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Gli amministratori possono ottenere informazioni su come configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server.
+ms.openlocfilehash: 9b4f203f11e72b4459c9fa35d3e4fdca544cffbb
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035083"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209584"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
 Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, è possibile utilizzare il filtro connessioni in EOP (in particolare, il criterio del filtro di connessione predefinito) per identificare i server di posta elettronica di origine buoni o difettosi tramite gli indirizzi IP. I componenti principali del criterio di filtro di connessione predefinito sono:
 
-- **Elenco indirizzi IP consentiti**: ignorare i filtri per la posta indesiderata per tutti i messaggi in arrivo dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo. Per gli scenari in cui il filtro di posta indesiderata può ancora verificarsi nei messaggi provenienti da queste origini, vedere gli [scenari in cui i messaggi provenienti da origini nell'elenco indirizzi IP consentiti sono ancora filtrati](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) in questo argomento Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP consentiti dovrebbe adattarsi alla strategia globale dei mittenti attendibili, vedere [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md).
+- **Elenco indirizzi IP consentiti**: ignorare i filtri per la posta indesiderata per tutti i messaggi in arrivo dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo. Per gli scenari in cui il filtro di posta indesiderata può ancora verificarsi nei messaggi provenienti da queste origini, vedere gli [scenari in cui i messaggi provenienti da origini nell'elenco indirizzi IP consentiti sono ancora filtrati](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) in questo argomento Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP consentiti dovrebbe adattarsi alla strategia globale dei mittenti attendibili, vedere [creare elenchi di mittenti attendibili in EOP](create-safe-sender-lists-in-office-365.md).
 
-- **Elenco indirizzi IP bloccati**: bloccare tutti i messaggi in ingresso dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo di indirizzo IP. I messaggi in arrivo vengono rifiutati, non vengono contrassegnati come posta indesiderata e non si verifica alcun filtro aggiuntivo. Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP bloccati dovrebbe adattarsi alla strategia complessiva dei mittenti bloccati, vedere [creare elenchi di mittenti bloccati in Office 365](create-block-sender-lists-in-office-365.md).
+- **Elenco indirizzi IP bloccati**: bloccare tutti i messaggi in ingresso dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo di indirizzo IP. I messaggi in arrivo vengono rifiutati, non vengono contrassegnati come posta indesiderata e non si verifica alcun filtro aggiuntivo. Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP bloccati dovrebbe adattarsi alla strategia complessiva dei mittenti bloccati, vedere [create Block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
 - **Elenco di indirizzi attendibili**: l' *elenco sicuro* è un elenco di indirizzi consentiti dinamici nel centro dati Microsoft che non richiede la configurazione dei clienti. Microsoft identifica queste origini di posta elettronica attendibili dagli abbonamenti a diversi elenchi di terze parti. È possibile abilitare o disabilitare l'utilizzo dell'elenco di indirizzi attendibili; non è possibile configurare i server di posta elettronica di origine nell'elenco delle cassette sicure. Il filtro posta indesiderata viene ignorato nei messaggi in arrivo dai server di posta elettronica nell'elenco indirizzi attendibili.
 
-In questo argomento viene descritto come configurare i criteri di filtro delle connessioni predefiniti nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per i clienti di Microsoft 365; PowerShell di Exchange Online Protection per clienti EOP autonomi. Per ulteriori informazioni sul modo in cui EOP utilizza il filtro connessioni è parte integrante delle impostazioni di protezione da posta indesiderata dell'organizzazione, vedere See [Anti-Spam Protection](anti-spam-protection.md).
+In questo argomento viene descritto come configurare i criteri di filtro delle connessioni predefiniti nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online). Per ulteriori informazioni sul modo in cui EOP utilizza il filtro connessioni è parte integrante delle impostazioni di protezione da posta indesiderata dell'organizzazione, vedere See [Anti-Spam Protection](anti-spam-protection.md).
 
 > [!NOTE]
 > L'elenco indirizzi IP consentiti, l'elenco sicuro e l'elenco indirizzi IP bloccati sono una parte della strategia complessiva per consentire o bloccare la posta elettronica all'interno dell'organizzazione. Per ulteriori informazioni, vedere [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md) e [creare elenchi di mittenti bloccati](create-block-sender-lists-in-office-365.md).
@@ -56,9 +56,9 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
 ## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>Utilizzare il Centro sicurezza & conformità per modificare il criterio del filtro connessioni predefinito
 
-1. Nel centro sicurezza & conformità e passare a **criteri** \> di **gestione** \> della protezione da **posta indesiderata**.
+1. Nel centro sicurezza & conformità e passare a criteri di **gestione** della protezione da \> **Policy** \> **posta indesiderata**.
 
-2. Nella pagina impostazioni di protezione da **posta indesiderata** espandere **criterio filtro connessioni** facendo ![clic](../../media/scc-expand-icon.png)su Espandi icona e quindi su **modifica criterio**.
+2. Nella pagina impostazioni di protezione da **posta indesiderata** espandere **criterio filtro connessioni** facendo clic su ![ Espandi icona ](../../media/scc-expand-icon.png) e quindi su **modifica criterio**.
 
 3. Nel riquadro a comparsa **predefinito** visualizzato, configurare una delle seguenti impostazioni:
 
@@ -72,11 +72,11 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
      - IP CIDR: ad esempio, 192.168.0.1/25. I valori validi per la maschera di rete sono/24 through/32. Per ignorare il filtro posta indesiderata per i valori della maschera IP CIDR/1 a/23, vedere il [filtro per ignorare la posta indesiderata per un IP CIDR all'esterno della sezione dell'intervallo disponibile](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) più avanti in questo argomento.
 
-     Per aggiungere l'indirizzo IP o l'intervallo di indirizzi **Add** ![, fare clic](../../media/ITPro-EAC-AddIcon.png)su Aggiungi icona. Per rimuovere una voce, selezionare la voce in **indirizzo IP consentito** e quindi fare **Remove** ![clic su](../../media/scc-remove-icon.png)Rimuovi Rimuovi. Al termine, scegliere **Salva**.
+     Per aggiungere l'indirizzo IP o l'intervallo di indirizzi, fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) . Per rimuovere una voce, selezionare la voce in **indirizzo IP consentito** e quindi fare clic su **Rimuovi** ![ Rimuovi ](../../media/scc-remove-icon.png) . Al termine, scegliere **Salva**.
 
    - **Elenco indirizzi IP bloccati**: fare clic su **modifica**. Nel riquadro a comparsa dell' **elenco indirizzi IP bloccati** visualizzato, immettere un singolo IP, un intervallo IP o un IP CIDR nella casella **indirizzo o intervallo di indirizzi** , come descritto in precedenza nell'impostazione dell' **elenco IP consentiti** .
 
-     Per aggiungere l'indirizzo IP o l'intervallo di indirizzi **Add** ![, fare clic](../../media/ITPro-EAC-AddIcon.png)su Aggiungi icona. Per rimuovere una voce, selezionare la voce in **indirizzo IP bloccato** e quindi fare **Remove** ![clic su](../../media/scc-remove-icon.png)Rimuovi Rimuovi. Al termine, scegliere **Salva**.
+     Per aggiungere l'indirizzo IP o l'intervallo di indirizzi, fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) . Per rimuovere una voce, selezionare la voce in **indirizzo IP bloccato** e quindi fare clic su **Rimuovi** ![ Rimuovi ](../../media/scc-remove-icon.png) . Al termine, scegliere **Salva**.
 
    - **Attiva elenco indirizzi attendibili**: consente di abilitare o disabilitare l'utilizzo dell'elenco di indirizzi attendibili per identificare i mittenti noti e validi che ignorano il filtro posta indesiderata.
 
@@ -84,7 +84,7 @@ In questo argomento viene descritto come configurare i criteri di filtro delle c
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>Utilizzare il Centro sicurezza & conformità per visualizzare i criteri di filtro delle connessioni predefiniti
 
-1. Nel centro sicurezza & conformità e passare a **criteri** \> di **gestione** \> della protezione da **posta indesiderata**.
+1. Nel centro sicurezza & conformità e passare a criteri di **gestione** della protezione da \> **Policy** \> **posta indesiderata**.
 
 2. Nella pagina impostazioni di protezione da **posta indesiderata** fare clic sull'elenco a discesa accanto al criterio predefinito denominato **criterio filtro connessioni**.
 
@@ -108,11 +108,11 @@ Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional
 
   - IP CIDR: ad esempio, 192.168.0.1/25. I valori validi per la maschera di rete sono/24 through/32.
 
-- Per *sovrascrivere* le voci esistenti con i valori specificati, utilizzare la sintassi seguente: `IPAddressOrRange1,IPAddressOrRange2,...,IPAddressOrRangeN`.
+- Per *sovrascrivere* le voci esistenti con i valori specificati, utilizzare la sintassi seguente: `IPAddressOrRange1,IPAddressOrRange2,...,IPAddressOrRangeN` .
 
-- Per *aggiungere o rimuovere* indirizzi IP o intervalli di indirizzi senza influire su altre voci esistenti, utilizzare la sintassi `@{Add="IPAddressOrRange1","IPAddressOrRange2",...,"IPAddressOrRangeN";Remove="IPAddressOrRange3","IPAddressOrRange4",...,"IPAddressOrRangeN"}`seguente:.
+- Per *aggiungere o rimuovere* indirizzi IP o intervalli di indirizzi senza influire su altre voci esistenti, utilizzare la sintassi seguente: `@{Add="IPAddressOrRange1","IPAddressOrRange2",...,"IPAddressOrRangeN";Remove="IPAddressOrRange3","IPAddressOrRange4",...,"IPAddressOrRangeN"}` .
 
-- Per svuotare l'elenco indirizzi IP consentiti o l'elenco indirizzi `$null`IP bloccati, utilizzare il valore.
+- Per svuotare l'elenco indirizzi IP consentiti o l'elenco indirizzi IP bloccati, utilizzare il valore `$null` .
 
 In questo esempio vengono configurati l'elenco indirizzi IP consentiti e l'elenco IP bloccati con l'indirizzo IP e gli intervalli di indirizzi specificati.
 
@@ -132,7 +132,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-HostedC
 
 Per verificare la corretta modifica del criterio del filtro di connessione predefinito, eseguire una delle operazioni seguenti:
 
-- Nel centro sicurezza & conformità, accedere a protezione dalla **posta indesiderata** \> dei **criteri** \> di **gestione** \> delle minacce fare clic sul menu a discesa accanto a **criterio filtro connessioni (sempre**attivato) e verificare le impostazioni.
+- Nel centro sicurezza & conformità, accedere a protezione **Threat management** dalla \> **Policy** \> **posta indesiderata** dei criteri di gestione delle minacce \> fare clic sul menu a discesa accanto a **criterio filtro connessioni (sempre**attivato) e verificare le impostazioni.
 
 - In Exchange Online PowerShell o Exchange Online Protection PowerShell, eseguire il comando riportato di seguito e verificare le impostazioni:
 
@@ -152,9 +152,9 @@ Come descritto in precedenza in questo argomento, è possibile utilizzare solo u
 
 Ora che si è pienamente consapevoli dei potenziali problemi, è possibile creare una regola del flusso di posta con le seguenti impostazioni (almeno) per garantire che i messaggi provenienti da questi indirizzi IP ignorino il filtro per la posta indesiderata:
 
-- Condizione della regola **: applica questa regola se** \> **l'indirizzo IP del mittente** \> **si trova in uno di questi intervalli o corrisponde** \> esattamente a (immettere l'IP CIDR con una maschera di rete da/1 a/23).
+- Condizione della regola: **applica questa regola se** \> **l'** \> **indirizzo IP del mittente si trova in uno di questi intervalli o corrisponde esattamente** a \> (immettere l'IP CIDR con una maschera di rete da/1 a/23).
 
-- Azione della regola **: modificare le proprietà** \> del messaggio impostare il **filtro di protezione**da posta indesiderata bypass **(SCL)** \> .
+- Azione della regola: **modificare le proprietà del messaggio** \> impostare il filtro di protezione da posta indesiderata bypass **(SCL)** \> **Bypass spam filtering**.
 
 È possibile controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. Per ulteriori informazioni, vedere [gestire le regole del flusso di posta in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
 
@@ -168,11 +168,11 @@ Ad esempio, il server di posta elettronica di origine 192.168.1.25 Invia messagg
 
 2. Configurare una regola del flusso di posta con le seguenti impostazioni (come minimo):
 
-   - Condizione della regola **: applicare questa regola se** \> **l'indirizzo IP del mittente** \> **si trova in uno di questi intervalli o corrisponde** \> esattamente a 192.168.1.25 (lo stesso indirizzo IP o l'intervallo di indirizzi aggiunto all'elenco dei conferimenti IP consentiti nel passaggio precedente).
+   - Condizione della regola: **applicare questa regola se** \> **l'** \> **indirizzo IP del mittente si trova in uno di questi intervalli o corrisponde esattamente** a \> 192.168.1.25 (lo stesso indirizzo IP o l'intervallo di indirizzi aggiunto all'elenco dei conferimenti IP consentiti nel passaggio precedente).
 
-   - Azione della regola: **modificare le proprietà** \> del messaggio **impostare il livello di probabilità di posta indesiderata (SCL)** \> **0**.
+   - Azione della regola: **modificare le proprietà del messaggio** \> **impostare il livello di probabilità di posta indesiderata (SCL)** \> **0**.
 
-   - Eccezione di regola: **il dominio del mittente** \> **è** \> fabrikam.com (solo il dominio o i domini che si desidera ignorare il filtro posta indesiderata).
+   - Eccezione di regola: **il dominio del mittente** \> **è** \> Fabrikam.com (solo il dominio o i domini che si desidera ignorare il filtro posta indesiderata).
 
 ### <a name="scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered"></a>Scenari in cui i messaggi provenienti da origini nell'elenco indirizzi IP consentiti sono ancora filtrati
 
@@ -184,12 +184,12 @@ I messaggi provenienti da un server di posta elettronica nell'elenco indirizzi I
 
 Se si verifica uno di questi scenari, è possibile creare una regola del flusso di posta con le seguenti impostazioni (almeno) per garantire che i messaggi provenienti da indirizzi IP problematici ignorino il filtro per la posta indesiderata:
 
-- Condizione della regola **: applica questa regola se** \> **l'indirizzo IP del mittente** \> **si trova in uno di questi intervalli o corrisponde** \> esattamente a quello dell'indirizzo IP o degli indirizzi.
+- Condizione della regola: **applica questa regola se** \> **l'** \> **indirizzo IP del mittente si trova in uno di questi intervalli o corrisponde esattamente a** quello dell' \> indirizzo IP o degli indirizzi.
 
-- Azione della regola **: modificare le proprietà** \> del messaggio impostare il **filtro di protezione**da posta indesiderata bypass **(SCL)** \> .
+- Azione della regola: **modificare le proprietà del messaggio** \> impostare il filtro di protezione da posta indesiderata bypass **(SCL)** \> **Bypass spam filtering**.
 
-## <a name="new-to-office-365"></a>Nuovo utente di Office 365?
+## <a name="new-to-microsoft-365"></a>Novità di Microsoft 365?
 
 ||
 |:-----|
-|![L'icona breve per LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Scopri i corsi video gratuiti per **amministratori e professionisti it**, offerti da LinkedIn Learning.|
+|![L'icona breve per LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Scopri i corsi video gratuiti per **amministratori e professionisti it**, offerti da LinkedIn Learning.|

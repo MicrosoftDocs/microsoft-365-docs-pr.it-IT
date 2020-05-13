@@ -2,10 +2,10 @@
 title: Criteri, procedure e linee guida di riferimento
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate per aiutare a proteggere gli utenti da messaggi di posta elettronica abusivi, indesiderati o dannosi.
-ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634389"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208211"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Informazioni di riferimento: criteri, procedure e linee guida
 
@@ -31,9 +31,9 @@ Se non si è in conformità con questi criteri e linee guida, potrebbe non esser
 
 ## <a name="general-microsoft-policies"></a>Criteri generali di Microsoft
 
-I messaggi di posta elettronica inviati a Microsoft 365 gli utenti devono essere conformi a tutti i criteri Microsoft che regolano la trasmissione e l'utilizzo di Office 365.
+I messaggi di posta elettronica inviati a Microsoft 365 gli utenti devono essere conformi a tutti i criteri Microsoft che regolano la trasmissione e l'utilizzo di Microsoft 365.
 
-- Termini di servizi applicabili a Office 365; in particolare, il divieto di utilizzare il servizio per la posta indesiderata o la distribuzione di malware
+- Termini di servizi applicabili a Microsoft 365; in particolare, il divieto di utilizzare il servizio per la posta indesiderata o la distribuzione di malware.
 
 - [Accordo sui servizi Microsoft](https://www.microsoft.com/servicesagreement/)
 
@@ -85,7 +85,7 @@ Microsoft collabora attivamente con gli enti del settore e i provider di servizi
 
 - [Alleanza Fiduciaria online](https://www.otalliance.org/resources)
 
-- [Coalizione &amp; provider di mittenti di posta elettronica](https://www.espcoalition.org/)
+- [Coalizione & provider di messaggi di posta elettronica](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Segnalazione di abusi e posta indesiderata
 

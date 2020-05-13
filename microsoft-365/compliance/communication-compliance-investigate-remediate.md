@@ -1,5 +1,5 @@
 ---
-title: Esaminare e correggere gli avvisi di conformità della comunicazione
+title: Esaminare e correggere gli avvisi di conformità delle comunicazioni
 description: Esaminare e correggere gli avvisi di conformità della comunicazione in Microsoft 365.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632857"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208398"
 ---
-# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità della comunicazione
+# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità delle comunicazioni
 
 Dopo aver configurato i criteri di conformità della comunicazione, si inizierà a ricevere avvisi nel centro conformità di Microsoft 365 per i problemi dei messaggi che soddisfano le condizioni di criteri. Seguire le istruzioni del flusso di lavoro qui per esaminare e correggere i problemi di avviso.
 
@@ -33,14 +33,14 @@ Dopo aver configurato i criteri di conformità della comunicazione, si inizierà
 
 Il primo passaggio per esaminare i problemi rilevati dai criteri consiste nell'esaminare gli avvisi generati nel centro conformità di Microsoft 365. Nel centro conformità sono presenti diverse aree che consentono di esaminare rapidamente gli avvisi, a seconda di come si preferisce visualizzare il raggruppamento degli avvisi:
 
-- **Home page Compliance Communication**: quando si accede all' [https://compliance.microsoft.com](https://compliance.microsoft.com) utilizzo delle credenziali per un account di amministratore nell'organizzazione Microsoft 365, selezionare > **Overview** **Compliance Communication**per visualizzare la Home page conformità comunicazione. Di seguito vengono visualizzate le informazioni seguenti:
+- **Home page Compliance Communication**: quando si accede all' [https://compliance.microsoft.com](https://compliance.microsoft.com) utilizzo delle credenziali per un account di amministratore nell'organizzazione Microsoft 365, selezionare Overview **Compliance Communication**  >  **Overview** per visualizzare la Home page conformità comunicazione. Di seguito vengono visualizzate le informazioni seguenti:
     - Avvisi che richiedono la revisione elencata dalla gravità elevata a quella bassa. Selezionare un avviso per avviare la pagina dei dettagli dell'avviso e avviare le azioni di correzione.
     - Corrispondenze di criteri recenti elencate in base al nome del criterio.
     - Elementi risolti elencati in base al nome del criterio.
     - Escalation elencate in base al nome del criterio.
     - Utenti con la maggior parte delle corrispondenze di criteri, elencate tra la maggior parte e il minor numero di corrispondenze.
-- **Scheda avvisi**: passare a **Communication compliance** > **avvisi** di conformità della comunicazione per visualizzare gli avvisi raggruppati in base al criterio di conformità della comunicazione corrispondente. Questa visualizzazione consente di visualizzare rapidamente quali criteri di conformità della comunicazione stanno generando la maggior parte degli avvisi ordinati per gravità.  Per avviare le azioni di correzione, espandere un criterio per selezionare un avviso specifico e avviare la pagina dei dettagli dell'avviso.
-- **Scheda criteri**: passare ai **Communication compliance** > **criteri** di conformità della comunicazione per visualizzare i criteri di conformità della comunicazione configurati per l'organizzazione Microsoft 365. Ogni criterio elencato include il numero di avvisi che devono essere esaminati. Se si seleziona un criterio, vengono visualizzati tutti gli avvisi in sospeso per le corrispondenze al criterio, selezionare un avviso specifico per avviare la pagina dei dettagli del criterio e avviare le azioni di correzione.
+- **Scheda avvisi**: passare a avvisi di **conformità della comunicazione**  >  **Alerts** per visualizzare gli ultimi 30 giorni di avvisi raggruppati in base alle corrispondenze di criteri. Questa visualizzazione consente di visualizzare rapidamente quali criteri di conformità della comunicazione stanno generando la maggior parte degli avvisi ordinati per gravità.  Per avviare le azioni di correzione, espandere un criterio per selezionare un avviso specifico e avviare la pagina dei dettagli dell'avviso.
+- **Scheda criteri**: passare ai **Communication compliance**  >  **criteri** di conformità della comunicazione per visualizzare i criteri di conformità della comunicazione configurati per l'organizzazione Microsoft 365. Ogni criterio elencato include il numero di avvisi che devono essere esaminati. Se si seleziona un criterio, vengono visualizzati tutti gli avvisi in sospeso per le corrispondenze al criterio, selezionare un avviso specifico per avviare la pagina dei dettagli del criterio e avviare le azioni di correzione.
 
 ### <a name="using-filters"></a>Utilizzo di filtri
 

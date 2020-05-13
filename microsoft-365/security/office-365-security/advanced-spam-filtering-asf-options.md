@@ -1,5 +1,5 @@
 ---
-title: Impostazioni ASF in Office 365
+title: Impostazioni ASF in EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,25 +17,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sulle impostazioni del filtro di posta indesiderata avanzato nei criteri di protezione da posta indesiderata, che consentono agli amministratori di identificare i messaggi che contengono proprietà del messaggio specifiche comunemente utilizzate in posta indesiderata.
-ms.openlocfilehash: 31793f5996cc27cf7e5de75d9c190657e6592c57
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Gli amministratori possono ottenere informazioni sulle impostazioni del filtro di posta indesiderata (Advanced Spam Filter) disponibili nei criteri di protezione da posta indesiderata in Exchange Online Protection (EOP).
+ms.openlocfilehash: 3193c1ea11d9a470a6b0df72f052bab20dec29f8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034135"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208049"
 ---
-# <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Impostazioni avanzate per il filtro della posta indesiderata (ASF) in Office 365
+# <a name="advanced-spam-filter-asf-settings-in-eop"></a>Impostazioni avanzate per il filtro della posta indesiderata in EOP
 
 > [!NOTE]
 > Le impostazioni ASF attualmente disponibili nei criteri di protezione da posta indesiderata sono in fase di divenire obsolete. Si consiglia di non utilizzare queste impostazioni nei criteri di protezione da posta indesiderata. La funzionalità di queste impostazioni ASF è incorporata in altre parti dello stack di filtro. Per ulteriori informazioni, vedere Impostazioni dei criteri di protezione da [posta indesiderata di EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-Le impostazioni del filtro di protezione da posta indesiderata avanzate nei criteri di protezione da posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri filtro contenuto) consentono agli amministratori di contrassegnare i messaggi come posta indesiderata in base ASF specifica specificamente queste proprietà perché sono comunemente presenti in posta indesiderata. A seconda della proprietà, i rilevamenti ASF contrassegnano il messaggio come **posta indesiderata** o **posta indesiderata con elevata attendibilità**.
+In Microsoft 365 organizzazioni con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, le impostazioni del filtro di posta indesiderata avanzate nei criteri di protezione da posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri di filtro contenuto) consentono agli amministratori di contrassegnare i messaggi come posta indesiderata ASF specifica specificamente queste proprietà perché sono comunemente presenti in posta indesiderata. A seconda della proprietà, i rilevamenti ASF contrassegnano il messaggio come **posta indesiderata** o **posta indesiderata con elevata attendibilità**.
 
 > [!NOTE]
-> L'abilitazione di una o più impostazioni ASF è un approccio aggressivo al filtro di posta indesiderata. Non è possibile segnalare i messaggi filtrati da ASF come falsi positivi. È possibile identificare i messaggi che sono stati filtrati tramite ASF: <ul><li>Notifiche di quarantena della posta indesiderata degli utenti finali periodiche.</li><li>La presenza di messaggi filtrati in quarantena.</li><li>I campi `X-CustomSpam:` X-header specifici che vengono aggiunti ai messaggi come descritto in questo argomento.</li></ul>
+> L'abilitazione di una o più impostazioni ASF è un approccio aggressivo al filtro di posta indesiderata. Non è possibile segnalare i messaggi filtrati da ASF come falsi positivi. È possibile identificare i messaggi che sono stati filtrati tramite ASF: <ul><li>Notifiche di quarantena della posta indesiderata degli utenti finali periodiche.</li><li>La presenza di messaggi filtrati in quarantena.</li><li>I `X-CustomSpam:` campi X-header specifici che vengono aggiunti ai messaggi come descritto in questo argomento.</li></ul>
 
-Nelle sezioni seguenti vengono descritte le impostazioni e le opzioni ASF disponibili nei criteri di protezione da posta indesiderata nel centro sicurezza & compliance e in Exchange Online PowerShell o standalone Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) e [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+Nelle sezioni seguenti vengono descritte le impostazioni e le opzioni ASF disponibili nei criteri di protezione da posta indesiderata nel centro sicurezza & compliance e in Exchange Online PowerShell o standalone Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) e [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Abilitazione, disabilitazione o test delle impostazioni ASF
 
@@ -49,7 +49,7 @@ Per ogni impostazione ASF, sono disponibili le seguenti opzioni nei criteri di p
 
   - **None**: il rilevamento ASF non ha alcun effetto sul routing e il recapito dei messaggi. Il messaggio è ancora soggetto ad altri tipi di filtro e regole in EOP.
 
-  - **Aggiungere il testo X-header predefinito (*AddXHeader*)**: il valore `X-CustomSpam: This message was filtered by the custom spam filter option` di x-header viene aggiunto al messaggio. È possibile utilizzare questo valore nelle regole di posta in arrivo o nelle regole del flusso di posta (note anche come regole di trasporto) per influire sul routing e sul recapito del messaggio.
+  - **Aggiungere il testo x-header predefinito (*AddXHeader*)**: il valore di x-header `X-CustomSpam: This message was filtered by the custom spam filter option` viene aggiunto al messaggio. È possibile utilizzare questo valore nelle regole di posta in arrivo o nelle regole del flusso di posta (note anche come regole di trasporto) per influire sul routing e sul recapito del messaggio.
 
   - **Send BCC Message (*BccMessage*)**: gli indirizzi di posta elettronica specificati (il valore del parametro *TestModeBccToRecipients* in PowerShell) vengono aggiunti al campo Ccn del messaggio e il messaggio viene recapitato ai destinatari Ccn. Nel centro sicurezza & conformità è possibile separare più indirizzi di posta elettronica in base al punto e virgola (;). In PowerShell, separare più indirizzi di posta elettronica in base alle virgole.
 
@@ -70,9 +70,9 @@ Per ogni impostazione ASF, sono disponibili le seguenti opzioni nei criteri di p
 Le seguenti impostazioni ASF consentono di impostare il livello di probabilità di posta indesiderata dei messaggi rilevati su 5 o 6, che corrisponde al verdetto del filtro **posta indesiderata** e all'azione corrispondente nei criteri di protezione da posta indesiderata.
 
 ||||
-|:-----|:-----|:-----|
+|---|---|---|
 |**Impostazione dei criteri di protezione da posta indesiderata**|**Descrizione**|**X-header aggiunto**|
-|**Collegamenti immagini a siti remoti** <br/><br/> *IncreaseScoreWithImageLinks*|I messaggi che `<Img>` contengono collegamenti ai tag HTML per i siti remoti (ad esempio, tramite http) sono contrassegnati come posta indesiderata.|`X-CustomSpam: Image links to remote sites`|
+|**Collegamenti immagini a siti remoti** <br/><br/> *IncreaseScoreWithImageLinks*|I messaggi che contengono `<Img>` collegamenti ai tag HTML per i siti remoti (ad esempio, tramite http) sono contrassegnati come posta indesiderata.|`X-CustomSpam: Image links to remote sites`|
 |**Reindirizzamento URL ad altra porta** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Il messaggio che contiene collegamenti ipertestuali che reindirizzano alle porte TCP diverse da 80 (HTTP), 8080 (HTTP alternativo) o 443 (HTTPS) sono contrassegnati come posta indesiderata.|`X-CustomSpam: URL redirect to other port`|
 |**Indirizzo IP numerico in URL** <br/><br/> *IncreaseScoreWithNumericIps*|I messaggi che contengono URL basati su numeri (in genere, gli indirizzi IP) sono contrassegnati come posta indesiderata.|`X-CustomSpam: Numeric IP in URL`|
 |**URL di siti Web .biz o .info** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|I messaggi che contengono i collegamenti. biz o. info nel corpo del messaggio sono contrassegnati come posta indesiderata.|`X-CustomSpam: URL to .biz or .info websites`|
@@ -83,14 +83,14 @@ Le seguenti impostazioni ASF consentono di impostare il livello di probabilità 
 Le seguenti impostazioni ASF consentono di impostare su 9 il livello SCL dei messaggi rilevati, che corrisponde al verdetto del filtro per la **posta indesiderata** e all'azione corrispondente nei criteri di protezione da posta indesiderata.
 
 ||||
-|:-----|:-----|:-----|
+|---|---|---|
 |**Impostazione dei criteri di protezione da posta indesiderata**|**Descrizione**|**X-header aggiunto**|
 |**Messaggi vuoti** <br/><br/> *MarkAsSpamEmptyMessages*|Messaggi senza oggetto, nessun contenuto nel corpo del messaggio e nessun allegato sono contrassegnati come posta indesiderata con elevata sicurezza.|`X-CustomSpam: Empty Message`|
 |**JavaScript o VBScript in HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|I messaggi che utilizzano JavaScript o Visual Basic Script Edition in HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Questi linguaggi di script vengono utilizzati nei messaggi di posta elettronica per determinare l'esecuzione automatica di azioni specifiche.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
-|**Tag Frame o IFrame in HTML** <br><br/> *MarkAsSpamFramesInHtml*|I messaggi che `<frame>` contengono `<iframe>` o i tag HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Questi tag vengono utilizzati nei messaggi di posta elettronica per formattare la pagina per la visualizzazione di testo o grafica.|`X-CustomSpam: IFRAME or FRAME in HTML`|
-|**Tag Object in HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|I messaggi che `<object>` contengono tag HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Questo tag consente l'esecuzione di plug-in o applicazioni in una finestra HTML.|`X-CustomSpam: Object tag in html`|
-|**Tag Embed in HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Il messaggio che `<embed>` contiene tag HTML è contrassegnato come posta indesiderata con elevata sicurezza. <br/><br/> Questo tag consente di incorporare diversi tipi di documenti di tipi di dati variabili in un documento HTML (ad esempio, suoni, filmati o immagini).|`X-CustomSpam: Embed tag in html`|
-|**Tag Form in HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|I messaggi che `<form>` contengono tag HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Questo tag viene utilizzato per creare moduli sito Web. I messaggi pubblicitari inviati tramite posta elettronica includono spesso questo tag per la richiesta di informazioni al destinatario.|`X-CustomSpam: Form tag in html`|
+|**Tag Frame o IFrame in HTML** <br><br/> *MarkAsSpamFramesInHtml*|I messaggi che contengono `<frame>` o i `<iframe>` tag HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Questi tag vengono utilizzati nei messaggi di posta elettronica per formattare la pagina per la visualizzazione di testo o grafica.|`X-CustomSpam: IFRAME or FRAME in HTML`|
+|**Tag Object in HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|I messaggi che contengono `<object>` tag HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Questo tag consente l'esecuzione di plug-in o applicazioni in una finestra HTML.|`X-CustomSpam: Object tag in html`|
+|**Tag Embed in HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Il messaggio che contiene `<embed>` tag HTML è contrassegnato come posta indesiderata con elevata sicurezza. <br/><br/> Questo tag consente di incorporare diversi tipi di documenti di tipi di dati variabili in un documento HTML (ad esempio, suoni, filmati o immagini).|`X-CustomSpam: Embed tag in html`|
+|**Tag Form in HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|I messaggi che contengono `<form>` tag HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Questo tag viene utilizzato per creare moduli sito Web. I messaggi pubblicitari inviati tramite posta elettronica includono spesso questo tag per la richiesta di informazioni al destinatario.|`X-CustomSpam: Form tag in html`|
 |**Bug Web in HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Un *bug Web* (noto anche come *Web Beacon*) è un elemento grafico (spesso piccolo come un pixel di un pixel) utilizzato nei messaggi di posta elettronica per determinare se il messaggio è stato letto. <br/><br/> I messaggi che contengono bug Web sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Le newsletter legittime possono utilizzare i bug Web, anche se molti considerano questa un'invasione della privacy. |`X-CustomSpam: Web bug`|
 |**Applica elenco parole sensibili** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft mantiene un elenco dinamico ma non modificabile di parole associate a messaggi potenzialmente offensivi. <br/><br/> I messaggi che contengono parole provenienti dall'elenco di Word sensibili nell'oggetto o nel corpo del messaggio vengono contrassegnati come posta indesiderata con elevata sicurezza.|`X-CustomSpam: Sensitive word in subject/body`|
 |**Record SPF: non riuscito** <br><br/> *MarkAsSpamSpfRecordHardFail*|I messaggi inviati da un indirizzo IP che non è specificato nel record SPF (SPF Sender Policy Framework) in DNS per il dominio di posta elettronica di origine sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> La modalità di test non è disponibile per questa impostazione.|`X-CustomSpam: SPF Record Fail`|

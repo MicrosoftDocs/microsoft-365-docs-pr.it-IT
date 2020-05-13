@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Informazioni sul modo in cui il pool di recapito ad alto rischio viene utilizzato per proteggere la reputazione dei server di posta elettronica nei datacenter Microsoft 365.
-ms.openlocfilehash: 7fb4788361534335be1e07bae44ed7511bebe434
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 190dc3bd7ed2a6cddb23c8bc7c117dee30fd4f13
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638035"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209188"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool di recapito ad alto rischio per i messaggi in uscita
 
@@ -45,11 +45,8 @@ Il pool di recapito ad alto rischio in uscita gestisce il recapito per tutti i r
 Le possibili cause di un aumento dei rapporti di mancato recapito includono:
 
 - Una campagna di spoofing che influisce su uno dei clienti che utilizzano il servizio.
-
 - Un attacco di raccolta directory.
-
 - Un attacco di posta indesiderata.
-
 - Un server di posta elettronica canaglia.
 
 Tutti questi problemi possono portare a un improvviso aumento del numero di rapporti di mancato recapito elaborati dal servizio. Molte volte, questi rapporti di mancato recapito sembrano essere posta indesiderata ad altri server e servizi di posta elettronica (noti anche come _[backscatter](backscatter-messages-and-eop.md)_).

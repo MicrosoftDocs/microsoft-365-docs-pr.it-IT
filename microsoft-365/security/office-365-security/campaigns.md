@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Visualizzazione campagne in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5441c877dac70330bf1e5653983494be5b1b3293
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637819"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209596"
 ---
 # <a name="campaign-views-in-atp"></a>Visualizzazioni della campagna in ATP
 
@@ -54,15 +54,15 @@ Una campagna potrebbe essere di breve durata, o potrebbe interferire tra diversi
 
 ## <a name="campaign-views-the-security--compliance-center"></a>Visualizzazione della campagna il Centro sicurezza & Compliance
 
-Le visualizzazioni campagna sono disponibili nel [Centro sicurezza & conformità](https://protection.office.com) nelle **Threat management** \> **campagne**di gestione delle minacce.
+Le visualizzazioni campagna sono disponibili nel [Centro sicurezza & conformità](https://protection.office.com) nelle campagne di **gestione delle minacce** \> **Campaigns**.
 
 ![Panoramica della campagna nel Centro sicurezza e conformità](../../media/campaigns-overview.png)
 
 È inoltre possibile accedere alla visualizzazione campagne da:
 
-- **Campagne** di **Explorer** \> **View** visualizzazione \> di **gestione delle minacce** \>
+- **Gestione delle minacce** \> **Gestione risorse** \> **Visualizzazione** \> **Campagne**
 
-- **Gestione delle** \> minacce **Esplora** \> **View** **All email** \> **Campaign** tutte le campagne di posta elettronica \>
+- **Gestione delle minacce** \> **Gestione risorse** \> **Visualizzazione** \> **Tutti i messaggi di posta elettronica** \> **Campagna**
 
 > [!TIP]
 > Se i dati della campagna non sono visibili, provare a modificare l'intervallo di date.
@@ -83,7 +83,7 @@ La pagina di panoramica visualizza le seguenti informazioni sulla campagna:
 
 - **Fare clic**su: il numero di utenti che hanno fatto clic sull'URL nel messaggio di phishing.
 
-- **Fare clic su rate**: la percentuale calcolata da "**fare clic su** / **posta in arrivo**". Questo valore è un indicatore dell'efficacia della campagna e indica se i destinatari sono stati in grado di identificare il messaggio come phishing ed evitare di fare clic sull'URL del payload.
+- **Fare clic su rate**: la percentuale calcolata da "**fare clic su**  /  **posta in arrivo**". Questo valore è un indicatore dell'efficacia della campagna e indica se i destinatari sono stati in grado di identificare il messaggio come phishing ed evitare di fare clic sull'URL del payload.
 
 - **Visitato**: numero di utenti effettivamente apportati al sito Web payload. Se sono presenti valori **cliccati** , ma i collegamenti sicuri impediscono l'accesso al sito Web, questo valore sarà zero.
 
@@ -144,7 +144,7 @@ Il diagramma include le seguenti informazioni:
 
   <sup>\*\*</sup>Esaminare i criteri di protezione da posta indesiderata, poiché tali messaggi devono essere messi in quarantena, non recapitati.
 
-- **Posizioni di recapito**: è consigliabile esaminare i messaggi che sono stati effettivamente recapitati ai destinatari (nella cartella posta in arrivo o posta indesiderata), anche se gli utenti non hanno fatto clic sull'URL del payload nel messaggio. È inoltre possibile rimuovere i messaggi in quarantena dalla quarantena. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
+- **Posizioni di recapito**: è consigliabile esaminare i messaggi che sono stati effettivamente recapitati ai destinatari (nella cartella posta in arrivo o posta indesiderata), anche se gli utenti non hanno fatto clic sull'URL del payload nel messaggio. È inoltre possibile rimuovere i messaggi in quarantena dalla quarantena. Per ulteriori informazioni, vedere [messaggi di posta elettronica in quarantena in EOP](quarantine-email-messages.md).
 
   - **Cartella eliminata**
 

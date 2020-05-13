@@ -1,5 +1,5 @@
 ---
-title: Interfaccia di amministrazione di Exchange in Exchange Online Protection
+title: Interfaccia di amministrazione di Exchange in EOP autonomo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,29 +15,39 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: L'Interfaccia di amministrazione di Exchange (EAC) è la console di gestione basata sul Web per Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Informazioni sull'interfaccia di gestione Web in standalone Exchange Online Protection (EOP).
+ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372494"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209730"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a>Interfaccia di amministrazione di Exchange in Exchange Online Protection
+# <a name="exchange-admin-center-in-standalone-eop"></a>Interfaccia di amministrazione di Exchange in EOP autonomo
 
-L'Interfaccia di amministrazione di Exchange (EAC) è la console di gestione basata sul Web per Microsoft Exchange Online Protection (EOP).
-
-Per informazioni sulla versione di Exchange Server in questo argomento, vedere Vedere interfaccia [di amministrazione di Exchange in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
+Interfaccia di amministrazione di Exchange (EAC) è una console di gestione basata sul Web per Exchange Online Protection (EOP) autonomo.
 
 Per informazioni sulla versione di Exchange online in questo argomento, vedere Vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-## <a name="accessing-the-eac"></a>Accesso a EAC
+## <a name="open-the-eac-in-eop"></a>Aprire l'interfaccia di amministrazione di Exchange in EOP
 
-Nella maggior parte dei casi, i clienti di EOP accederanno a EAC tramite l'interfaccia di amministrazione di Microsoft 365. È possibile trovare un collegamento a EOP nel menu a discesa nel riquadro **Amministratore**, accanto al riquadro **Io**. Fare clic sul riquadro amministratore e selezionare **Exchange Online Protection** dal menu a discesa da prendere nell'interfaccia di **Amministrazione** EAC.
+I clienti EOP autonomi possono accedere all'interfaccia di amministrazione di Exchange utilizzando i metodi seguenti:
 
-You can also access the EAC sign in page directly via the following URL: `https://admin.protection.outlook.com/ecp/<companydomain>`. For example, `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. After specifying your user credentials you will be taken directly into the EAC.
+- **Dall'interfaccia di amministrazione di Microsoft 365**:
 
-## <a name="common-user-interface-elements-in-the-eac"></a>Elementi comuni dell'interfaccia utente in EAC
+  1. Andare a <https://admin.microsoft.com> e fare clic su **Mostra tutto**.
+
+     ![Fare clic su Mostra tutto nell'interfaccia di amministrazione di Microsoft 365](../../media/m365-center-show-all.png)
+
+  2. Nella sezione interfaccia di **Amministrazione** visualizzata fare clic su **tutti i centri di amministrazione**.
+
+     ![Fare clic su tutti i centri di amministrazione nell'interfaccia di amministrazione di Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
+
+  3. Nella pagina **tutti i centri di amministrazione** visualizzati fare clic su **Exchange Online Protection**.
+
+- Andare direttamente a `https://admin.protection.outlook.com/ecp/` .
+
+## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>Elementi comuni dell'interfaccia utente in EAC in EOP
 
 In questa sezione vengono illustrati gli elementi dell'interfaccia utente disponibili in EAC.
 
@@ -47,15 +57,20 @@ In questa sezione vengono illustrati gli elementi dell'interfaccia utente dispon
 
 È il primo livello di esplorazione per la maggior parte delle attività da eseguire in EAC. Il riquadro delle funzionalità è organizzato in aree funzionali.
 
-1. **Destinatari**: consente di visualizzare gli utenti interni e i contatti esterni.
+- **Destinatari**: consente di visualizzare gruppi e contatti esterni.
 
-2. **Autorizzazioni**: consente di gestire i ruoli di amministratore.
+- **Autorizzazioni**: consente di gestire i ruoli di amministratore.
 
-3. **Gestione della conformità**: consente di trovare i registri di controllo e i rapporti, ad esempio il rapporto del gruppo di ruoli amministratore.
+- **Gestione della conformità**: consente di trovare il rapporto del gruppo di ruoli amministratore e il report del registro di controllo di amministrazione.
 
-4. **Protezione**: consente di gestire la protezione anti-malware e antispam per la propria organizzazione, nonché di gestire i messaggi in quarantena.
+- **Protezione**: è possibile gestire i criteri antimalware, i criteri di filtro delle connessioni predefiniti e DKIM.
 
-5. **Flusso di posta**: consente di gestire regole, domini accettati e connettori e di eseguire la traccia dei messaggi.
+  > [!NOTE]
+  > È consigliabile gestire i criteri antimalware e i criteri di filtro delle connessioni predefiniti nel centro sicurezza & conformità. Per ulteriori informazioni, vedere [Configure anti-malware Policies in EOP](configure-anti-malware-policies.md) e [Configure Connection Filtering in EOP](configure-the-connection-filter-policy.md).
+
+- **Flusso di posta**: consente di gestire le regole del flusso di posta (note anche come regole di trasporto), i domini accettati e i connettori, nonché le posizioni in cui è possibile eseguire la traccia dei messaggi.
+
+- Soluzione **ibrida**: è possibile eseguire la [procedura guidata di configurazione ibrida](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)e dove è possibile installare il [modulo di PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).
 
 ### <a name="tabs"></a>Schede
 
@@ -65,8 +80,9 @@ Le schede rappresentano il secondo livello di esplorazione. Ciascuna area funzio
 
 La selezione della maggior parte delle schede consente di visualizzare una barra degli strumenti. che include icone che eseguono un'azione specifica. Nella tabella seguente sono descritte le icone e le loro azioni.
 
+||||
+|---|---|---|
 |**Icona**|**Nome**|**Azione**|
-|:-----|:-----|:-----|
 |![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif)|Aggiungi, Nuovo|Utilizzare questa icona per creare un nuovo oggetto. Ad alcune icone è associata una freccia in giù sulla quale si può fare clic per mostrare ulteriori oggetti da creare.|
 |![Icona Modifica](../../media/ITPro-EAC-EditIcon.gif)|Modifica|Utilizzare questa icona per modificare un oggetto.|
 |![Icona Elimina](../../media/ITPro-EAC-DeleteIcon.gif)|Elimina|Utilizzare questa icona per eliminare un oggetto. Ad alcune icone Elimina è associata una freccia in giù su cui si può fare clic per mostrare altre opzioni.|
@@ -75,6 +91,7 @@ La selezione della maggior parte delle schede consente di visualizzare una barra
 |![Icona Ulteriori opzioni](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Altre opzioni|Utilizzare questa icona per visualizzare le altre azioni da eseguire per gli oggetti della scheda. Ad esempio in **Destinatari \> Utenti**, facendo clic sull'icona, viene visualizzata l'opzione per eseguire una **Ricerca avanzata**.  |
 |![Icona Freccia in su](../../media/ITPro-EAC-UpArrowIcon.gif)![Icona Freccia in giù](../../media/ITPro-EAC-DownArrowIcon.gif)|Freccia su e freccia giù|Utilizzare queste icone per spostare la priorità di un oggetto verso l'alto o verso il basso.|
 |![Icona Rimuovi](../../media/ITPro-EAC-RemoveIcon.gif)|Rimuovi|Questa icona consente di rimuovere gli oggetti da un elenco.|
+|
 
 ### <a name="list-view"></a>Visualizzazione elenco
 
@@ -88,21 +105,23 @@ Quando si seleziona un oggetto dalla visualizzazione elenco, nel riquadro dei de
 
 Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal menu a discesa **Guida**![Icona Guida](../../media/ITPro-EAC-HelpIcon.gif), è possibile eseguire le seguenti operazioni:
 
-1. **Guida**: fare ![clic su](../../media/ITPro-EAC-HelpIcon.gif) icona Guida per visualizzare il contenuto della Guida in linea.
+- **Guida**: fare clic su ![ icona Guida ](../../media/ITPro-EAC-HelpIcon.gif) per visualizzare il contenuto della Guida in linea.
 
-2. **Disattiva la guida del fumetto**: la Guida di bubbling Visualizza la supporto contestuale per i campi quando si crea o si modifica un oggetto. È possibile disabilitare la finestra della Guida o riattivarla se era stata disabilitata.
+- **Commenti e suggerimenti**: lasciare commenti e suggerimenti.
 
-3. **Copyright**: fare clic su questo collegamento per leggere le informazioni sul copyright per Exchange Online Protection.
+- **Community**: inviare una domanda per trovare risposte nei forum della community.
 
-4. **Privacy**: fare clic per leggere l'informativa sulla privacy per Exchange Online Protection.
+- **Disattiva la guida del fumetto**: la Guida di bubbling Visualizza la supporto contestuale per i campi quando si crea o si modifica un oggetto. È possibile disabilitare la finestra della Guida o riattivarla se era stata disabilitata.
+
+- **Mostra registrazione comandi**: viene visualizzata una nuova finestra in cui vengono visualizzati i comandi di PowerShell equivalenti in base alle impostazioni configurate in EAC.
 
 ## <a name="supported-browsers"></a>Browser supportati
 
 Per la migliore esperienza nell'utilizzo di EAC, si consiglia di utilizzare sempre i browser più recenti, i client e le app di Office. Si consiglia inoltre di installare gli aggiornamenti software quando disponibili. Per ulteriori informazioni sui browser supportati e sui requisiti di sistema per il servizio, vedere [requisiti di sistema per Office](https://products.office.com/office-system-requirements).
 
-## <a name="supported-languages-in-eop"></a>Lingue supportate in EOP
+## <a name="supported-languages"></a>Lingue supportate
 
-Per Exchange Online Protection sono disponibili e supportate le seguenti lingue server:
+Le lingue seguenti sono supportate e disponibili per l'interfaccia di amministrazione di Exchange in EOP autonomo.
 
 - Amharico
 
@@ -227,5 +246,3 @@ Per Exchange Online Protection sono disponibili e supportate le seguenti lingue 
 - Vietnamita
 
 - Gallese
-
-

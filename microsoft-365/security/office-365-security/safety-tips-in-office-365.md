@@ -2,10 +2,10 @@
 title: Suggerimenti per la sicurezza nei messaggi di posta elettronica
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/6/2016
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni sul modo in cui EOP e Office 365 proteggono i messaggi di posta indesiderata, phishing e antimalware aggiungendo un suggerimento per la sicurezza all'inizio della posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 77722b564dc73829947593405b04a2086fb800bf
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6fb461619aaacafad86bb3c53731526fd00047a4
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035943"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209152"
 ---
 # <a name="safety-tips-in-email-messages"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica
 

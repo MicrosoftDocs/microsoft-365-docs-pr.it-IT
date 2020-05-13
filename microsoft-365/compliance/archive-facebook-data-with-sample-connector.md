@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Configurare un connettore per importare i dati di Facebook in Microsoft 365 in modo da poter utilizzare le funzionalità di conformità, ad esempio il blocco legale, la ricerca di contenuto e i criteri di conservazione.
-ms.openlocfilehash: a1a45b3558e8c5fb77fb1d04a1a38402000bbd1b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035158"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210538"
 ---
-# <a name="set-up-a-connector-to-archive-facebook-data"></a>Configurare un connettore per archiviare i dati di Facebook
+# <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurare un connettore per archiviare i dati di Facebook (anteprima)
 
 Utilizzare un connettore nel centro conformità di Microsoft 365 per importare e archiviare i dati da pagine business di Facebook a Microsoft 365. Dopo aver configurato e configurato il connettore, si connette alla pagina business di Facebook (su base pianificata), converte il contenuto degli elementi di Facebook in un formato di messaggio di posta elettronica e quindi importa tali elementi in una cassetta postale in Microsoft 365.
 
@@ -74,7 +74,7 @@ Nelle istruzioni dettagliate per completare questo passaggio, sono disponibili l
 
 - TenantId: l'ID tenant dell'organizzazione Microsoft 365 copiato dopo aver creato l'app Facebook Connector in Azure Active Directory nel passaggio 1.
 
-Dopo aver completato questo passaggio, assicurarsi di copiare l'URL del servizio app di Azure, https://fbconnector.azurewebsites.net)ad esempio. Per completare il passaggio 3, il passaggio 4 e il passaggio 5, è necessario utilizzare questo URL.
+Dopo aver completato questo passaggio, assicurarsi di copiare l'URL del servizio app di Azure, ad esempio https://fbconnector.azurewebsites.net) . Per completare il passaggio 3, il passaggio 4 e il passaggio 5, è necessario utilizzare questo URL.
 
 ## <a name="step-3-register-the-web-app-on-facebook"></a>Passaggio 3: registrare l'app Web su Facebook
 
