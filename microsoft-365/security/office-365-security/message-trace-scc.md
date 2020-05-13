@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: e78d3361306a93542302e29ff5c1fac4e2262b2f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209428"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44212987"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -27,7 +27,7 @@ La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di p
 La traccia dei messaggi nel centro sicurezza & conformità migliora la traccia del messaggio originale disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni contenute nella traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti sull'accaduto ai messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
 
 > [!NOTE]
-> • Per eseguire una traccia dei messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione, gestione conformità o supporto tecnico. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Il numero massimo di messaggi visualizzati nei risultati dipende dal tipo di rapporto selezionato (vedere la sezione scegliere il tipo di [report](#choose-report-type) per informazioni dettagliate). Il cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in PowerShell di Exchange Online o Exchange Online Protection PowerShell restituisce tutti i messaggi nei risultati.
+> • Per eseguire una traccia dei messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione, gestione conformità o supporto tecnico. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Il numero massimo di messaggi visualizzati nei risultati dipende dal tipo di rapporto selezionato (vedere la sezione scegliere il tipo di [report](#choose-report-type) per informazioni dettagliate). Il cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in PowerShell di Exchange Online o standalone EOP PowerShell restituisce tutti i messaggi nei risultati.
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 
