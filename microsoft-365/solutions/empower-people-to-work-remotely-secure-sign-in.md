@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: È necessario che l'utente remoto acceda con l'autenticazione a più fattori (MFA).
-ms.openlocfilehash: 2cb16c78f7fb0b1f9f48559c61a6200d6adcf470
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a0350be5cf75024fbefadb21ae56017bf64ca0d8
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166138"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213473"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Passaggio 1. Aumentare la sicurezza di accesso per i lavoratori remoti con la MFA.
 
@@ -55,9 +55,9 @@ Per altre informazioni, vedere questa [panoramica delle impostazioni predefinite
 
 I criteri di accesso condizionale sono un insieme di regole che specificano le condizioni in base alle quali gli accessi vengono valutati e consentiti. Ad esempio, è possibile creare un criterio di accesso condizionale che indichi:
 
-- Se il nome dell'account utente è per un utente che è un amministratore di Exchange, utente, password, sicurezza, SharePoint o globale, richiedere la MFA prima di consentire l'accesso.
+- Se il nome dell'account utente corrisponde a un membro di un gruppo per utenti a cui sono assegnati i ruoli di amministratore di Exchange, utenti, password, sicurezza, SharePoint o globale, richiedere la MFA prima di consentire l'accesso.
 
-Questo criterio risulta più semplice che cercare di ricordare di configurare i singoli account utente per la MFA quando vengono aggiunti o rimossi da questi ruoli di amministratore.
+Questo criterio consente di richiedere l'autenticazione a più fattori in base all'appartenenza al gruppo, anziché configurare i singoli account utente per l'autenticazione a più fattori quando vengono assegnati o non assegnati tramite questi ruoli di amministratore.
 
 È inoltre anche utilizzare i criteri di accesso condizionale per funzionalità più avanzate, come la necessità di eseguire l'accesso da un dispositivo conforme, come il proprio portatile con Windows 10.
 
@@ -65,15 +65,15 @@ L'accesso condizionale richiede Azure AD Premium P1, incluso in Microsoft 365 E3
 
 Per altre informazioni, vedere questa [panoramica dell'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
-## <a name="azure-ad-identity-protection-policies"></a>Criteri di Azure AD Identity Protection
+## <a name="azure-ad-identity-protection-support"></a>Supporto di Azure AD Identity Protection
 
-I criteri di Azure AD Identity Protection sono un insieme di regole che specificano le condizioni in base alle quali gli accessi vengono valutati e consentiti. Ad esempio, è possibile creare un criterio di Azure AD Identity Protection che indichi:
+Con Azure AD Identity Protection è possibile creare un criterio di accesso condizionale aggiuntivo che indichi:
 
-- Se il rischio di accesso è determinato da un rischio medio o alto, l'utente deve utilizzare la MFA per accedere.
+- Se il rischio di accesso corrisponde a medio o alto, è richiesta la MFA.
 
 Azure AD Identity Protection richiede Azure AD Premium P2, incluso in Microsoft 365 E5.
 
-Per ulteriori informazioni, vedere questa [panoramica di Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+Per altre informazioni, vedere [Accesso condizionale basato sul rischio](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
 ## <a name="using-these-methods-together"></a>Usare questi metodi insieme
 
@@ -84,12 +84,12 @@ Tenere presente quanto segue:
 
 Se le impostazioni predefinite di sicurezza sono abilitate, a tutti i nuovi utenti viene richiesta la registrazione della MFA e l'utilizzo dell'app Microsoft Authenticator. 
 
-Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni predefinite di sicurezza, criteri di accesso condizionale e impostazioni dell'account per utente.
+Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni predefinite di sicurezza e criteri di accesso condizionale.
 
-|| Abilitato | Disattivato | Metodo di autenticazione secondario |
+|| Abilitato | Disattivato | Metodo di autenticazione aggiuntivo |
 |:-------|:-----|:-------|:-------|
 | **Impostazioni predefinite per la sicurezza**  | Non è possibile utilizzare i criteri di accesso condizionale | È possibile utilizzare i criteri di accesso condizionale | App Microsoft Authenticator |
-| **Criteri di accesso condizionale** | Se alcuni sono abilitati, non è possibile abilitare le impostazioni predefinite per la sicurezza | Se non tutti sono abilitati, è possibile abilitare le impostazioni predefinite per la sicurezza  | Specificato dall'utente durante la registrazione della MFA  |
+| **Criteri di accesso condizionale** | Se alcuni sono abilitati, non è possibile abilitare le impostazioni predefinite per la sicurezza | Se sono tutti disabilitati, è possibile abilitare le impostazioni predefinite per la sicurezza  | Specificato dall'utente durante la registrazione della MFA  |
 ||||
 
 ## <a name="admin-training-and-technical-resources-for-mfa-and-identity"></a>Formazione e risorse tecniche per amministratori per MFA e identità

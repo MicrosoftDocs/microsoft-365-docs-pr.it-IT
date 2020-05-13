@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 consente ai servizi finanziari di passare a una moderna piattaforma di collaborazione, contribuendo a mantenere i dati e i sistemi sicuri e conformi alle normative
 f1.keywords: NOCSH
-ms.openlocfilehash: affaf7ee6d9251003aec084d73b501212ebeda40
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160460"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214697"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Considerazioni chiave su conformità e sicurezza per i mercati bancario e finanziario degli Stati Uniti
 
@@ -216,7 +216,7 @@ Gli istituti finanziari gestiscono grandi quantità di dati. Alcuni periodi di c
 - Cosa succede quando scade il periodo di conservazione (eliminare il documento, avviare una revisione della disposizione o non eseguire alcuna azione)
 -  Cosa attiva l'avvio del periodo di conservazione (data di creazione, data dell'ultima modifica, data di etichettatura o evento) e contrassegna il documento o il messaggio di posta elettronica come record, in modo che non sia possibile modificarlo o eliminarlo
 
-Le etichette di conservazione vengono quindi pubblicate nei siti di SharePoint o OneDrive, nelle cassette postali di Exchange e nei gruppi di Microsoft 365. Gli utenti possono applicare manualmente le etichette di conservazione ai documenti e ai messaggi di posta elettronica. I responsabili dei record possono usare l'intelligence per applicare automaticamente le etichette. Le funzionalità intelligenti possono basarsi su [oltre 90 tipi di informazioni riservate predefinite](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide), come il codice ABA, il numero di conto corrente bancario statunitense o il codice di previdenza sociale degli Stati Uniti. Sono anche personalizzabili in base a parole chiave o a dati sensibili presenti in documenti o messaggi di posta elettronica, ad esempio numeri di carta di credito o altre informazioni personali o basate su metadati di SharePoint. Per i dati che non sono facilmente identificabili con la corrispondenza manuale o automatica dei criteri, i classificatori sottoponibili a training possono essere usati per classificare i documenti in modo intelligente in base alle tecniche di apprendimento automatico.
+Le etichette di conservazione vengono quindi pubblicate nei siti di SharePoint o OneDrive, nelle cassette postali di Exchange e nei gruppi di Microsoft 365. Gli utenti possono applicare manualmente le etichette di conservazione ai documenti e ai messaggi di posta elettronica. I responsabili dei record possono usare l'intelligence per applicare automaticamente le etichette. Le funzionalità intelligenti possono basarsi su [oltre 90 tipi di informazioni riservate predefinite](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide), come il codice ABA, il numero di conto corrente bancario statunitense o il codice di previdenza sociale degli Stati Uniti. Sono anche personalizzabili in base a parole chiave o a dati sensibili presenti in documenti o messaggi di posta elettronica, ad esempio numeri di carta di credito o altre informazioni personali o basate su metadati di SharePoint. Per i dati che non sono facilmente identificabili con la corrispondenza manuale o automatica dei criteri, i classificatori sottoponibili a training possono essere usati per classificare i documenti in modo intelligente in base alle tecniche di apprendimento automatico.
  
 Secondo la **Securities and Exchange Commission (SEC)**, i commercianti e gli altri istituti finanziari sono tenuti a conservare tutte le comunicazioni connesse all'azienda. Questi requisiti si applicano a molti tipi di comunicazioni e dati, tra cui messaggi di posta elettronica, documenti, messaggi istantanei, fax e così via. La **regola 17a-4 della SEC** definisce i criteri che devono essere soddisfatti per conservare i record in un sistema di archiviazione elettronica dei dati. Nel 2003, la SEC ha rilasciato una dichiarazione che ha chiarito tali requisiti. Includeva i criteri seguenti:
 

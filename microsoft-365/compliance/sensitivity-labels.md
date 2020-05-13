@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza del framework Microsoft Information Protection per classificare e proteggere i dati dell'organizzazione, garantendo al contempo che la produttività degli utenti e la loro capacità di collaborare non vengano ostacolate. Queste etichette possono applicare impostazioni di protezione che includono contrassegni visivi di crittografia come piè di pagina e filigrane.
-ms.openlocfilehash: b09a107c6b03743eeaddf86e812cc747482d2eb4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 418a52a8a9798fa0e08a6a2d4951fe91e0685c1a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022154"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213284"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -89,7 +89,7 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     
     ![Filigrana e intestazione applicate a un documento](../media/Sensitivity-label-watermark-header.png)
     
-    Se è necessario verificare se sono stati applicati contrassegni al contenuto, vedere [Quando Microsoft 365 applica il contrassegno e la crittografia](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
+    Se è necessario verificare se sono stati applicati contrassegni al contenuto, Vedere [Quando le app di Office applicano il contrassegno e la crittografia](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
     Lunghezza stringa: le filigrane sono limitate a 255 caratteri. Le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne che in Excel. Excel ha un limite totale di 255 caratteri per le intestazioni e i piè di pagina, ma questo limite include i caratteri non visibili, come i codici di formattazione. Se viene raggiunto questo limite, la stringa immessa non viene visualizzata in Excel.
 
