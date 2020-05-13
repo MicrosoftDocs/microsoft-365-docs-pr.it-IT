@@ -1,5 +1,5 @@
 ---
-title: Rinnovare Microsoft 365 for business
+title: Rinnovare Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -8,7 +8,7 @@ manager: mnirkhe
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,52 +23,52 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: "Informazioni su come rinnovare l'abbonamento a Microsoft 365 for business utilizzando un codice \"Product Key\" e disattivare o meno la fatturazione ricorrente. "
-ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
-ms.translationtype: MT
+description: "Informazioni su come rinnovare l'abbonamento a Microsoft 365 per le aziende usando un codice Product Key e attivare o disattivare la fatturazione ricorrente. "
+ms.openlocfilehash: 992a3c2cb100f9153cae5cbd681f6f789a361935
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141079"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208429"
 ---
-# <a name="renew-microsoft-365-for-business"></a>Rinnovare Microsoft 365 for business
+# <a name="renew-microsoft-365-for-business"></a>Rinnovare Microsoft 365 per le aziende
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Questo articolo si applica alla maggior parte degli abbonamenti a pagamento Microsoft 365 for business.
+Questo articolo si applica alla maggior parte degli abbonamenti a pagamento a Microsoft 365 per le aziende.
   
-Per rinnovare l'utilizzo di un codice Product Key acquistato da un rivenditore o da un partner Microsoft, vedere [trovare e immettere il codice "Product Key](../enter-your-product-key.md)".
+Per eseguire il rinnovo usando un codice Product Key acquistato presso un punto vendita o un partner Microsoft, vedere [Trovare e immettere il codice Product Key](../enter-your-product-key.md).
 
 > [!NOTE]
 > Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
   
-## <a name="turn-recurring-billing-off-or-on"></a>Attivazione o disattivazione della fatturazione ricorrente
+## <a name="turn-recurring-billing-off-or-on"></a>Attivare o disattivare la fatturazione ricorrente
 
-Se si paga con carta di credito o conto corrente bancario, la **fatturazione ricorrente** è attivata per impostazione predefinita. Quando la **fatturazione ricorrente** è attiva, l'abbonamento continuerà a essere addebitato ogni anno nel giorno in cui è stato sottoscritto. Se l'abbonamento è attivo, è possibile disattivarlo o riattivarlo nell'interfaccia di amministrazione.
+Se si paga con carta di credito o conto corrente bancario, la **fatturazione ricorrente** è attivata per impostazione predefinita. Se la **fatturazione ricorrente** è attivata, l'abbonamento continuerà a essere fatturato ogni anno nella data in cui è stato sottoscritto. Se l'abbonamento è attivo, è possibile disattivare o riattivare la fatturazione ricorrente nell'interfaccia di amministrazione.
   
-Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà alla fine del periodo di validità. È possibile abilitare la **fatturazione ricorrente** e fornire le informazioni sulla carta di credito o sul conto corrente bancario in modo che la sottoscrizione continuerà a essere addebitata ogni anno nel giorno in cui è stato sottoscritto. Si ha anche la possibilità di pagare ogni mese o di pagare per tutto l'anno in anticipo. L'addebito sulla carta di credito o sul conto corrente bancario non verrà effettuato prima della scadenza del periodo di abbonamento iniziale.
+Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà alla fine del periodo di validità. È possibile attivare la **fatturazione ricorrente** e fornire informazioni della carta di credito o del conto corrente bancario in modo che l'abbonamento continui a essere fatturato ogni anno nella data in cui è stato sottoscritto. È anche possibile pagare ogni mese oppure pagare l'intero anno in anticipo. L'addebito sulla carta di credito o sul conto corrente bancario non verrà effettuato prima della scadenza del periodo di abbonamento iniziale.
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
 
-3. In **fatturazione**, accanto a **rinotizie** o **scadenza**, selezionare **modifica**.
+3. In **Fatturazione**, accanto a **Data rinnovo** o **Data scadenza** selezionare **modifica**.
 
-4. Nel riquadro **impostazioni di fatturazione ricorrenti** **selezionare Disattiva** per disattivarlo. Se la fatturazione ricorrente è già disattivata, selezionare **mensile** o **una volta** per attivarla.
+4. Nel riquadro **Impostazioni della fatturazione** ricorrente selezionare **Disattiva** per disattivarla. Se la fatturazione ricorrente è già disattivata, selezionare **Mensile** o **Una volta** per attivarla.
 
 5. Selezionare **Invia modifica**.
 
     > [!NOTE]
-    > - È possibile modificare l'impostazione di **fatturazione ricorrente** solo per le sottoscrizioni attive. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di poter attivare o disattivare la **fatturazione ricorrente** .
-    > - Quando la **fatturazione ricorrente** è disattivata, l'abbonamento non viene annullato immediatamente. Rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella sezione **fatturazione** dei dettagli della sottoscrizione nella pagina i **prodotti** .
-    > - Per informazioni su come annullare l'abbonamento subito, vedere [annullare l'abbonamento](cancel-your-subscription.md).
+    > - L'impostazione della **fatturazione ricorrente** può essere modificata solo per gli abbonamenti attivi. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di attivare o disattivare la **fatturazione ricorrente**.
+    > - Quando si disattiva la **fatturazione ricorrente**, l'abbonamento non viene immediatamente annullato, ma rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella sezione **Fatturazione** dei dettagli dell'abbonamento nella pagina **I tuoi prodotti**.
+    > - Per informazioni su come annullare immediatamente l'abbonamento, vedere [Annullare l'abbonamento](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -78,16 +78,16 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
 
-3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore **su**attivato.
+3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore su **Attivato**.
 
-    ![Primo piano di una scheda di sottoscrizione con fatturazione ricorrente attivata.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Primo piano di una scheda di abbonamento con la fatturazione ricorrente attivata.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    È possibile disattivare la **fatturazione ricorrente** cambiando l' **interruttore su disattivata**.
+    È possibile disattivare la **fatturazione ricorrente** spostando l'interruttore su **Disattivato**.
 
     > [!NOTE]
-    > - È possibile modificare l'impostazione di **fatturazione ricorrente** solo per le sottoscrizioni attive. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di poter attivare o disattivare la **fatturazione ricorrente** .
-    > - Quando la **fatturazione ricorrente** è disattivata, l'abbonamento non viene annullato immediatamente. Rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza sulla scheda sottoscrizione
-    > - Per informazioni su come annullare l'abbonamento subito, vedere [annullare l'abbonamento](cancel-your-subscription.md).
+    > - L'impostazione della **fatturazione ricorrente** può essere modificata solo per gli abbonamenti attivi. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di attivare o disattivare la **fatturazione ricorrente**.
+    > - Quando si disattiva la **fatturazione ricorrente**, l'abbonamento non viene immediatamente annullato, ma rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella scheda dell'abbonamento
+    > - Per informazioni su come annullare immediatamente l'abbonamento, vedere [Annullare l'abbonamento](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -97,16 +97,16 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
 
-3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore **su**attivato.
+3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore su **Attivato**.
 
-    ![Primo piano di una scheda di sottoscrizione con fatturazione ricorrente attivata.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Primo piano di una scheda di abbonamento con la fatturazione ricorrente attivata.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    È possibile disattivare la **fatturazione ricorrente** cambiando l' **interruttore su disattivata**.
+    È possibile disattivare la **fatturazione ricorrente** spostando l'interruttore su **Disattivato**.
 
     > [!NOTE]
-    > - È possibile modificare l'impostazione di **fatturazione ricorrente** solo per le sottoscrizioni attive. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di poter attivare o disattivare la **fatturazione ricorrente** .
-    > - Quando la **fatturazione ricorrente** è disattivata, l'abbonamento non viene annullato immediatamente. Rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza sulla scheda di sottoscrizione.
-    > - Per informazioni su come annullare l'abbonamento subito, vedere [annullare l'abbonamento](cancel-your-subscription.md).
+    > - L'impostazione della **fatturazione ricorrente** può essere modificata solo per gli abbonamenti attivi. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di attivare o disattivare la **fatturazione ricorrente**.
+    > - Quando si disattiva la **fatturazione ricorrente**, l'abbonamento non viene immediatamente annullato, ma rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella scheda dell'abbonamento.
+    > - Per informazioni su come annullare immediatamente l'abbonamento, vedere [Annullare l'abbonamento](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -116,6 +116,6 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
   
 [Che cosa succede ai dati personali al termine dell'abbonamento?](what-if-my-subscription-expires.md)
 
-[Immettere il codice "Product Key"](../enter-your-product-key.md)
+[Immettere il codice Product Key](../enter-your-product-key.md)
   
-[Acquistare la versione di valutazione di Microsoft 365 for business](../buy-a-subscription-from-your-free-trial.md)
+[Acquistare la versione di valutazione di Microsoft 365 per le aziende](../buy-a-subscription-from-your-free-trial.md)

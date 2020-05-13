@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Informazioni sul modo in cui Exchange Online ed Exchange Online Protection (EOP) in Microsoft 365 usano l'autenticazione e-mail (SPF, DKIM e DMARC) per evitare lo spoofing, il phishing e la posta indesiderata.
-ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni per amministratori sul modo in cui Exchange Online Protection (EOP) usa l'autenticazione e-mail (SPF, DKIM e DMARC) per evitare lo spoofing, il phishing e la posta indesiderata.
+ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637557"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209500"
 ---
-# <a name="email-authentication-in-microsoft-365"></a>Autenticazione della posta elettronica in Microsoft 365
+# <a name="email-authentication-in-eop"></a>Autenticazione e-mail in EOP
 
-Con la denominazione di autenticazione e-mail, nota anche come autenticazione della posta elettronica o convalida della posta elettronica, si indica un gruppo di standard che prova a bloccare lo spoofing, ossia i messaggi di posta elettronica provenienti da mittenti contraffatti. Nelle organizzazioni di Microsoft 365 con cassette postali di Exchange Online e nelle organizzazioni di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, EOP usa gli standard per verificare la posta in ingresso:
+Con la denominazione di autenticazione e-mail, nota anche come autenticazione della posta elettronica o convalida della posta elettronica, si indica un gruppo di standard che prova a bloccare lo spoofing, ossia i messaggi di posta elettronica provenienti da mittenti contraffatti. Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online e nelle organizzazioni di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, EOP usa questi standard per verificare la posta in ingresso:
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 

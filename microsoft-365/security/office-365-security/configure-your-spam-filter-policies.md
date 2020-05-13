@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: Le impostazioni di base del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata.
-ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
+ms.openlocfilehash: 66266ac79f6f442c8551b9ec15d553d6fb074cdc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637713"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209560"
 ---
-# <a name="configure-anti-spam-policies"></a>Configurare i criteri di protezione dalla posta indesiderata
+# <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
-Per i clienti di Microsoft 365 con cassette postali in Exchange Online o di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online i messaggi di posta elettronica in ingresso vengono protetti automaticamente dalla posta indesiderata da EOP. Come parte del sistema di difesa dell'organizzazione, EOP utilizza criteri di protezione dalla posta indesiderata, noti anche come criteri di filtro della posta indesiderata o criteri di filtro di contenuti. Per altre informazioni, vedere [Protezione dalla posta indesiderata](anti-spam-protection.md).
+Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, i messaggi di posta elettronica in ingresso vengono protetti automaticamente dalla posta indesiderata da EOP. Come parte del sistema di difesa dell'organizzazione, EOP utilizza criteri di protezione dalla posta indesiderata, noti anche come criteri di filtro della posta indesiderata o criteri di filtro di contenuti. Per altre informazioni, vedere [Protezione dalla posta indesiderata](anti-spam-protection.md).
 
 Gli amministratori possono visualizzare, modificare e configurare, ma non eliminare, il criterio di protezione dalla posta indesiderata predefinito. Per una maggiore granularità, è anche possibile creare criteri di protezione dalla posta indesiderata personalizzati applicabili a utenti, gruppi o domini specifici nell'organizzazione. I criteri personalizzati hanno sempre la precedenza sul criterio predefinito, ma non è possibile modificarne la priorità (in funzione).
 
-È possibile configurare criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità o in PowerShell (PowerShell di Exchange Online per clienti di Microsoft 365; PowerShell di Exchange Online Protection per clienti di EOP autonomo).
+È possibile configurare criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità o in PowerShell (PowerShell di Exchange Online per organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell di EOP autonomo per organizzazioni prive di cassette postali di Exchange Online).
 
 ## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Differenza tra i criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità e in PowerShell di Exchange Online o PowerShell di Exchange Online Protection
 
@@ -120,9 +120,9 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
     |**Nessuna azione**|||||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |
 
-    > <sup>1</sup> In Exchange Online, il messaggio viene spostato nella cartella Posta indesiderata se la regola per la posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).<br/>Negli ambienti di EOP autonomi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare le regole del flusso di posta (anche note come regole di trasporto) in Exchange locale per tradurre il verdetto filtro posta indesiderata in modo che la regola della posta indesiderata possa spostare il messaggio nella cartella Posta indesiderata. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> È possibile usare questo valore come condizione nelle regole del flusso di posta, anche note come regole di trasporto, per filtrare o instradare il messaggio.
+    > <sup>1</sup> In Exchange Online, il messaggio viene spostato nella cartella Posta indesiderata se la regola per la posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).<br/>Negli ambienti di EOP autonomi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare le regole del flusso di posta (anche note come regole di trasporto) in Exchange locale per tradurre il verdetto filtro posta indesiderata in modo che la regola della posta indesiderata possa spostare il messaggio nella cartella Posta indesiderata. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> È possibile usare questo valore come condizione nelle regole del flusso di posta, anche note come regole di trasporto, per filtrare o instradare il messaggio.
 
-   - **Selezionare la soglia**: specifica il livello di reclamo in blocco di un messaggio che attiva l'azione specificata per il verdetto filtro posta indesiderata **Posta elettronica inviata in massa** (maggiore del valore specificato, non maggiore di o uguale a). Un valore alto indica che il messaggio è meno opportuno (probabilmente un messaggio di posta indesiderata). Il valore predefinito è 7. Per altre informazioni, vedere [Livello di reclamo in blocco in Office 365](bulk-complaint-level-values.md) e [Qual è la differenza tra posta indesiderata e posta inviata in massa?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Selezionare la soglia**: specifica il livello di reclamo in blocco di un messaggio che attiva l'azione specificata per il verdetto filtro posta indesiderata **Posta elettronica inviata in massa** (maggiore del valore specificato, non maggiore di o uguale a). Un valore alto indica che il messaggio è meno opportuno (probabilmente un messaggio di posta indesiderata). Il valore predefinito è 7. Per altre informazioni, vedere [Livello di reclamo in blocco in EOP](bulk-complaint-level-values.md) e [Qual è la differenza tra posta indesiderata e posta inviata in massa?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      Per impostazione predefinita, l'impostazione solo PowerShell _MarkAsSpamBulkMail_ è `On` nei criteri di protezione dalla posta indesiderata. Questa impostazione influisce molto sui risultati di un verdetto filtro **Posta elettronica inviata in massa**:
 
@@ -132,9 +132,9 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
    - **Quarantena**: specifica per quanto tempo mantenere il messaggio in quarantena se è stato selezionato **Messaggio di quarantena** come azione per il verdetto filtro posta indesiderata. Scaduto il periodo di tempo, il messaggio viene eliminato. Il valore predefinito è 30 giorni. Un valore valido è compreso tra 1 e 30 giorni. Per ulteriori informazioni sulla quarantena, vedere i seguenti argomenti:
 
-     - [Quarantena in Office 365](quarantine-email-messages.md)
-     - [Gestire i messaggi e i file messi in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md)
-     - [Trovare e rilasciare i messaggi messi in quarantena come utente di Office 365](find-and-release-quarantined-messages-as-a-user.md)
+     - [Messaggi in quarantena in EOP](quarantine-email-messages.md)
+     - [Gestire i messaggi e i file messi in quarantena come amministratore in EOP](manage-quarantined-messages-and-files.md)
+     - [Trovare e rilasciare i messaggi messi in quarantena come utente di EOP](find-and-release-quarantined-messages-as-a-user.md)
 
    - **Aggiungi testo X-Header**: questa casella è obbligatoria e disponibile solo se **Aggiungi X-Header** è stato selezionato come azione per il verdetto filtro posta indesiderata. Il valore specificato è il *nome* del campo di intestazione aggiunto all'intestazione del messaggio. Il *valore* del campo di intestazione è sempre `This message appears to be spam`.
 
@@ -148,7 +148,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
    - **Reindirizza a questo indirizzo di posta elettronica**: questa casella è obbligatoria e disponibile solo se **Reindirizza il messaggio all'indirizzo di posta elettronica** è stato selezionato come azione per il verdetto filtro posta indesiderata. Immettere l'indirizzo di posta elettronica cui recapitare il messaggio. È possibile immettere più valori separati da punto e virgola (;).
 
-   - **Suggerimenti per la sicurezza**: per impostazione predefinita, i suggerimenti per la sicurezza sono abilitati, ma è possibile disabilitarli deselezionando la casella di controllo **Attivo**. Per altre informazioni sui suggerimenti per la sicurezza, leggere [Suggerimenti per la sicurezza nei messaggi di posta elettronica di Office 365](safety-tips-in-office-365.md).
+   - **Suggerimenti per la sicurezza**: per impostazione predefinita, i suggerimenti per la sicurezza sono abilitati, ma è possibile disabilitarli deselezionando la casella di controllo **Attivo**. Per altre informazioni sui suggerimenti per la sicurezza, leggere [Suggerimenti per la sicurezza nei messaggi di posta elettronica](safety-tips-in-office-365.md).
 
    Impostazioni **Zero-Hour Auto Purge**: ZAP rileva ed esegue operazioni sui messaggi già recapitati nelle cassette di posta di Exchange Online. Per altre informazioni su Zero-Hour Auto Purge vedere [Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware](zero-hour-auto-purge.md).
 
@@ -159,7 +159,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 5. (Facoltativo) Espandere la sezione **Elenchi elementi consentiti** per configurare i mittenti dei messaggi in base all'indirizzo di posta elettronica o al dominio di posta elettronica a cui è consentito ignorare il filtro posta indesiderata:
 
    > [!CAUTION]
-   > <ul><li>valutare con attenzione prima di aggiungere domini in questa sezione. Per altre informazioni, vedere [Creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md)</li><li>Non aggiungere mai domini accettati, ovvero domini propri, o domini comuni, ad esempio microsoft.com o office.com, all'elenco di domini consentiti. Ciò consentirebbe agli utenti malintenzionati di inviare messaggi di posta elettronica in grado di ignorare il filtro posta indesiderata all'interno dell'organizzazione.</li></ul>
+   > • Valutare con attenzione prima di aggiungere domini in questa sezione. Per altre informazioni, vedere [Creare elenchi di mittenti attendibili in EOP](create-safe-sender-lists-in-office-365.md) <br/><br/> • Non aggiungere mai domini accettati, ovvero domini propri, o domini comuni, ad esempio microsoft.com o office.com, all'elenco di domini consentiti. Ciò consentirebbe agli utenti malintenzionati di inviare messaggi di posta elettronica in grado di ignorare il filtro posta indesiderata all'interno dell'organizzazione.
 
    - **Consenti mittente**: fare clic su **Modifica**. Nel riquadro a comparsa **Elenco di mittenti consentiti** che si apre:
 
@@ -188,7 +188,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 6. (Facoltativo) Espandere la sezione **Elenchi elementi bloccati** per configurare i mittenti dei messaggi in base all'indirizzo di posta elettronica o al dominio di posta elettronica che sarà sempre contrassegnato come posta indesiderata con alta confidenza:
 
    > [!NOTE]
-   > Il blocco manuale dei domini non è pericoloso, ma può aumentare il carico di lavoro amministrativo. Per altre informazioni, vedere [Creare elenchi di mittenti bloccati in Office 365](create-block-sender-lists-in-office-365.md).
+   > Il blocco manuale dei domini non è pericoloso, ma può aumentare il carico di lavoro amministrativo. Per altre informazioni, vedere [Creare elenchi di mittenti bloccati in EOP](create-block-sender-lists-in-office-365.md).
 
    - **Blocca mittente**: fare clic su **Modifica**. Nel riquadro a comparsa **Elenco di mittenti bloccati** che si apre procedere come segue:
 
@@ -238,7 +238,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
 8. La sezione **Proprietà posta indesiderata** facoltativa contiene impostazioni per il filtro posta indesiderata avanzato disattivate per impostazione predefinita. Le impostazioni ASF per il filtro posta indesiderata avanzato sono in fase di deprecazione e le loro funzionalità vengono integrate in altre parti dello stack di filtro. È consigliabile chiudere tutte le impostazioni per il filtro posta indesiderata avanzato disattivate nei criteri di protezione dalla posta indesiderata.
 
-   Per informazioni dettagliate su queste impostazioni, vedere [Impostazioni per il filtro posta indesiderata avanzato in Office 365](advanced-spam-filtering-asf-options.md).
+   Per informazioni dettagliate su queste impostazioni, vedere [Impostazioni per il filtro posta indesiderata avanzato in EOP](advanced-spam-filtering-asf-options.md).
 
 9. (Obbligatorio) Espandere la sezione **Si applica a** per identificare i destinatari interni cui si applica il criterio.
 
@@ -246,7 +246,7 @@ La creazione di un criterio di protezione dalla posta indesiderata nel Centro si
 
     È più facile fare clic su **Aggiungi una condizione** tre volte per visualizzare tutte le condizioni disponibili. È possibile fare clic su ![Pulsante Rimuovi](../../media/scc-remove-icon.png) per rimuovere le condizioni che non si vogliono configurare.
 
-    - **Il dominio del destinatario è**: specifica i destinatari in uno o più dei domini configurati accettati in Office 365. Fare clic sulla casella **Aggiungi un tag** per visualizzare e selezionare un dominio. Fare nuovamente clic sulla casella **Aggiungi un tag** per selezionare altri domini se è disponibile più di un dominio.
+    - **Il dominio del destinatario è**: specifica i destinatari in uno o più dei domini configurati accettati nell'organizzazione. Fare clic sulla casella **Aggiungi un tag** per visualizzare e selezionare un dominio. Fare nuovamente clic sulla casella **Aggiungi un tag** per selezionare altri domini se è disponibile più di un dominio.
 
     - **Il destinatario è**: specifica una o più cassette postali, utenti di posta o contatti di posta specificati nell'organizzazione. Fare clic su **Aggiungi un tag** e iniziare a digitare per filtrare l'elenco. Fare nuovamente clic sulla casella **Aggiungi un tag** per selezionare altri destinatari.
 
@@ -324,7 +324,7 @@ Per modificare la priorità di un criterio, spostare il criterio più in alto o 
 
 ### <a name="configure-end-user-spam-notifications"></a>Configurare le notifiche di posta indesiderata dell'utente finale
 
-Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, è possibile configurare le notifiche di posta indesiderata per l'utente finale per informare i destinatari su quanto accaduto ai messaggi a loro destinati. Per altre informazioni sulle notifiche, vedere [Notifiche di posta indesiderata per l'utente finale in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, è possibile configurare le notifiche di posta indesiderata per l'utente finale per informare i destinatari su quanto accaduto ai messaggi a loro destinati. Per altre informazioni sulle notifiche, vedere [Notifiche di posta indesiderata per l'utente finale in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata**.
 
@@ -342,10 +342,10 @@ Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, �
 
    - **Invia notifiche di posta indesiderata per l'utente finale ogni (giorni):**: selezionare la frequenza di invio delle notifiche. Il valore predefinito è 3 giorni. È possibile immettere da 1 a 15 giorni.
    
-     In un periodo di 24 esistono tre cicli di notifica della posta indesiderata, che partono agli orari seguenti: 01:00 UTC, 08:00 UTC e 16:00 UTC. 
+     Sono presenti 3 cicli di notifica della posta indesiderata dell'utente finale entro un periodo di 24 ore, che iniziano agli orari seguenti: 01:00 UTC, 08:00 UTC e 16:00 UTC. 
     
      > [!NOTE]
-     > Se abbiamo mancato una notifica durante il ciclo precedente, ne verrà eseguito il push in un ciclo successivo. Questo può dare l'impressione di ricevere più notifiche nello stesso giorno.
+     > Se una notifica durante risulta mancante durante un ciclo precedente, ne verrà eseguito il push in un ciclo successivo. Ciò può dare l'impressione di ricevere più notifiche nello stesso giorno.
 
    - **Lingua delle notifiche**: fare clic sul menu a discesa e selezionare una lingua disponibile dall'elenco. Il valore predefinito è **Default**, il che indica che le notifiche di quarantena per gli utenti finali usano la lingua predefinita dell'organizzazione di EOP.
 
