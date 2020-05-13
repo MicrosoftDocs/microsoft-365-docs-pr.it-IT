@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come gestire i casi di eDiscovery di base. Questo include la chiusura di un caso, la riapertura di un caso chiuso e l'eliminazione di un caso.
-ms.openlocfilehash: 41ba622a58b0abb5ce668e6d94d89b1694a328c9
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551422"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208418"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Chiudere, riaprire ed eliminare un caso di eDiscovery di base
 
@@ -42,7 +42,7 @@ Quando la causa legale o l'indagine supportata da un caso di eDiscovery di base 
 
 Per chiudere un caso:
   
-1. In Microsoft 365 Compliance Enter, fare clic su **eDiscovery** > **Core** per visualizzare l'elenco dei casi di eDiscovery di base nell'organizzazione.
+1. Nel centro conformità di Microsoft 365, fare clic su **eDiscovery**  >  **Core** per visualizzare l'elenco dei casi di eDiscovery di base nell'organizzazione.
 
 2. Fare clic sul nome del caso che si desidera chiudere.
 
@@ -66,7 +66,7 @@ Per chiudere un caso:
 
 Quando si riapre un caso, tutte le esenzioni di eDiscovery che erano sul posto quando il caso è stato chiuso non verranno ripristinate automaticamente. Dopo la riapertura del caso, è necessario andare alla pagina **esenzioni** e abilitare le esenzioni precedenti. Per attivare un'esenzione, selezionarla per visualizzare la pagina del riquadro a comparsa e quindi impostare l'interruttore di **stato** **su**attivato.
   
-1. In Microsoft 365 Compliance Enter, fare clic su **eDiscovery** > **Core** per visualizzare l'elenco dei casi di eDiscovery di base nell'organizzazione.
+1. Nel centro conformità di Microsoft 365, fare clic su **eDiscovery**  >  **Core** per visualizzare l'elenco dei casi di eDiscovery di base nell'organizzazione.
 
 2. Fare clic sul nome del caso che si desidera riaprire.
 
@@ -102,7 +102,7 @@ Per eliminare un blocco di eDiscovery:
 
 Per eliminare un caso:
 
-1. In Microsoft 365 Compliance Enter, fare clic su **eDiscovery** > **Core** per visualizzare l'elenco dei casi di eDiscovery di base nell'organizzazione.
+1. Nel centro conformità di Microsoft 365, fare clic su **eDiscovery**  >  **Core** per visualizzare l'elenco dei casi di eDiscovery di base nell'organizzazione.
 
 2. Fare clic sul nome del caso che si desidera eliminare.
 

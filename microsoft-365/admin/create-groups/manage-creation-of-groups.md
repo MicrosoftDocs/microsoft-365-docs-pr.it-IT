@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Informazioni su come controllare quali utenti possono creare gruppi di Microsoft 365.
-ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b3ec119e8c74982ce340c58f6b8da684c9ffa8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630406"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208343"
 ---
 # <a name="manage-who-can-create-groups"></a>Gestire gli utenti autorizzati a creare gruppi
 
@@ -96,7 +96,7 @@ Gli amministratori nei ruoli sopra elencati non devono necessariamente essere me
 > [!IMPORTANT]
 > Assicurarsi di utilizzare un **gruppo di sicurezza** per limitare gli utenti autorizzati a creare gruppi. Se si tenta di utilizzare un gruppo di Microsoft 365, i membri non saranno in grado di creare un gruppo da SharePoint perché verifica la ricerca di un gruppo di sicurezza. 
     
-1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> \> pagina **gruppi.**
+1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
 
 2. Fare clic su **Aggiungi gruppo**.
 
@@ -120,13 +120,13 @@ Per modificare l'impostazione di accesso Guest a livello di gruppo, è necessari
 
 Copiare lo script riportato di seguito in un editor di testo, ad esempio Blocco note, o [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Sostituire * \<SecurityGroupName\> * con il nome del gruppo di sicurezza creato. Ad esempio:
+Sostituire * \< SecurityGroupName \> * con il nome del gruppo di sicurezza creato. Ad esempio:
 
 `$GroupName = "Group Creators"`
 
 Salvare il file come GroupCreators. ps1. 
 
-Nella finestra di PowerShell, passare al percorso in cui è stato salvato il file (digitare " <FileLocation>CD").
+Nella finestra di PowerShell, passare al percorso in cui è stato salvato il file (digitare "CD <FileLocation> ").
 
 Eseguire lo script digitando:
 
@@ -173,6 +173,8 @@ Se in futuro si desidera modificare il gruppo di sicurezza utilizzato, è possib
 Se si desidera disattivare la restrizione per la creazione di un gruppo e consentire nuovamente a tutti gli utenti di creare gruppi, impostare $GroupName su "" e $AllowGroupCreation su "true" ed eseguire di nuovo lo script.
     
 ## <a name="step-4-verify-that-it-works"></a>Passaggio 4: verificare che funzioni
+
+Per rendere effettive le modifiche possono essere necessari 30 minuti o più. È possibile verificare le nuove impostazioni eseguendo le operazioni seguenti:
 
 1. Accedere con un account utente di utenti che non devono avere la possibilità di creare gruppi. Ovvero, non sono membri del gruppo di sicurezza creato o di un amministratore.
     

@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sull'ordine di applicazione di Office 365 Protections e sul modo in cui il valore di priorità nei criteri di protezione determina il criterio applicato.
-ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Gli amministratori possono ottenere informazioni sull'ordine di protezione delle applicazioni in Exchange Online Protection (EOP) e sul modo in cui il valore di priorità nei criteri di protezione determina il criterio applicato.
+ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036717"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209440"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
-Come utente di Microsoft 365, la posta elettronica in ingresso può essere contrassegnata da più forme di protezione. Ad esempio, i criteri di anti-phishing EOP incorporati disponibili per tutti i clienti di Microsoft 365 e i più robusti criteri di anti-phishing ATP disponibili anche per i clienti di Office 365 Advanced Threat Protection. I messaggi passano anche attraverso analisi di rilevamento multiple per malware, posta indesiderata, phishing e così via. Date tutte queste attività, è possibile che si verifichi una certa confusione sui criteri applicati.
+In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, la posta elettronica in ingresso può essere contrassegnata da più forme di protezione. Ad esempio, i criteri di anti-phishing EOP incorporati disponibili per tutti i clienti di Microsoft 365 e i più robusti criteri di anti-phishing ATP disponibili anche per i clienti di Office 365 Advanced Threat Protection (Office 365 ATP). I messaggi passano anche attraverso analisi di rilevamento multiple per malware, posta indesiderata, phishing e così via. Date tutte queste attività, è possibile che si verifichi una certa confusione sui criteri applicati.
 
 In generale, un criterio applicato a un messaggio viene identificato nell'intestazione **X-Forefront-antispam-report** nella proprietà **Cat (categoria)** . Per ulteriori informazioni, vedere [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md).
 
@@ -36,19 +36,19 @@ Esistono due fattori principali che determinano il criterio applicato a un messa
   |||||
   |---|---|---|---|
   |**Priorità**|**Protezione della posta elettronica**|**Categoria**|**Dove gestire**|
-  |1|Malware|CAT: MALW|[Configurazione dei criteri anti-malware in Office 365](configure-anti-malware-policies.md)|
-  |2|Phishing|CAT: PHSH|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
-  |3|Alta probabilità di posta indesiderata|CAT: HSPM|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
-  |4 |Spoofing|CAT: SPOOFING|[Configurare l'intelligence di spoofing in Office 365](learn-about-spoof-intelligence.md)|
-  |5 |Posta indesiderata|CAT: SPM|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
-  |6 |Invio in blocco|CAT: IN BLOCCO|[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)|
-  |7<sup>\*</sup>|Rappresentazione del dominio (utenti protetti)|DIMP|[Configurazione dei criteri di anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md)|
-  |8<sup>\*</sup>|Rappresentazione utente (domini protetti)|UIMP|[Configurazione dei criteri di anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md)|
+  |1|Malware|CAT: MALW|[Configurazione dei criteri anti-malware in EOP](configure-anti-malware-policies.md)|
+  |2|Phishing|CAT: PHSH|[Configurazione dei criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |3|Alta probabilità di posta indesiderata|CAT: HSPM|[Configurazione dei criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |4 |Spoofing|CAT: SPOOFING|[Configurare l'intelligence spoof in EOP](learn-about-spoof-intelligence.md)|
+  |5 |Posta indesiderata|CAT: SPM|[Configurazione dei criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |6 |Invio in blocco|CAT: IN BLOCCO|[Configurazione dei criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |7<sup>\*</sup>|Rappresentazione del dominio (utenti protetti)|DIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
+  |8<sup>\*</sup>|Rappresentazione utente (domini protetti)|UIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
   |
 
   <sup>\*</sup>Queste funzionalità sono disponibili solo nei criteri di anti-phishing ATP.
 
-- **Priorità del criterio**: per ogni tipo di protezione (antispam, anti-malware, anti-phishing e così via), è presente un criterio predefinito che si applica a tutti, ma spesso è possibile creare criteri personalizzati che si applicano a utenti specifici. Ogni criterio personalizzato ha un valore di priorità che determina l'ordine in cui vengono applicati i criteri. Il criterio predefinito viene sempre applicato per ultimo.
+- **Priorità del criterio**: per ogni tipo di protezione (antispam, anti-malware, anti-phishing e così via), è presente un criterio predefinito che si applica a tutti, ma è possibile creare criteri personalizzati che si applicano a utenti specifici. Ogni criterio personalizzato ha un valore di priorità che determina l'ordine in cui vengono applicati i criteri. Il criterio predefinito viene sempre applicato per ultimo.
 
   Se un utente è definito in più criteri dello stesso tipo, viene applicato solo il criterio con la priorità più alta. Tutti i criteri restanti di quel tipo non vengono valutati per l'utente (incluso il criterio predefinito).
 

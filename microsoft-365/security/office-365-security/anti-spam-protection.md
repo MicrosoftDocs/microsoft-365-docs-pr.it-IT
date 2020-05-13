@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di prevenire la posta indesiderata in Exchange Online e Microsoft 365.
-ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Gli amministratori possono ottenere informazioni sulle impostazioni di protezione da posta indesiderata e sui filtri che consentono di prevenire la posta indesiderata in Exchange Online Protection (EOP).
+ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034059"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211417"
 ---
-# <a name="anti-spam-protection-in-microsoft-365"></a>Protezione dalla posta indesiderata in Microsoft 365
+# <a name="anti-spam-protection-in-eop"></a>Protezione dalla posta indesiderata in EOP
 
 > [!NOTE]
-> Questo argomento è destinato a Microsoft 365 Admins. Per gli argomenti degli utenti finali, vedere [Panoramica del filtro posta indesiderata](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) e informazioni [sulla posta indesiderata e sul phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Questo argomento è destinato agli amministratori. Per gli argomenti degli utenti finali, vedere [Panoramica del filtro posta indesiderata](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) e informazioni [sulla posta indesiderata e sul phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
-Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, i messaggi di posta elettronica vengono protetti automaticamente dalla posta indesiderata (posta indesiderata) da EOP.
+In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, i messaggi di posta elettronica vengono protetti automaticamente dalla posta indesiderata (posta indesiderata) da EOP.
 
 La Guida di orientamento alla sicurezza della posta elettronica di Microsoft comporta un approccio cross-product senza eguali. La tecnologia di protezione da posta indesiderata e anti-phishing di EOP viene applicata nelle piattaforme di posta elettronica per offrire agli utenti gli strumenti e le innovazioni più recenti di protezione dalla posta indesiderata e anti-phishing nella rete L'obiettivo di EOP è offrire un servizio di posta elettronica completo e utilizzabile che aiuti a rilevare e proteggere gli utenti dalla posta indesiderata, dalle minacce alla posta elettronica fraudolente (phishing) e da malware.
 
@@ -43,7 +43,7 @@ Per contribuire alla riduzione della posta indesiderata, EOP include la protezio
 
 Le impostazioni di protezione da posta indesiderata in EOP sono costituite dalle seguenti tecnologie:
 
-- **Filtro connessioni**: identifica i server di origine della posta elettronica buoni e cattivi all'inizio della connessione di posta elettronica in ingresso tramite l'elenco indirizzi IP consentiti, l'elenco indirizzi IP bloccati e l' *elenco di indirizzi* attendibili (un elenco dinamico ma non modificabile dei mittenti affidabili gestiti da Microsoft). Queste impostazioni vengono configurate nel criterio di filtro delle connessioni. Per ulteriori informazioni, vedere [Configure Connection Filtering in Microsoft 365](configure-the-connection-filter-policy.md).
+- **Filtro connessioni**: identifica i server di origine della posta elettronica buoni e cattivi all'inizio della connessione di posta elettronica in ingresso tramite l'elenco indirizzi IP consentiti, l'elenco indirizzi IP bloccati e l' *elenco di indirizzi* attendibili (un elenco dinamico ma non modificabile dei mittenti affidabili gestiti da Microsoft). Queste impostazioni vengono configurate nel criterio di filtro delle connessioni. Per ulteriori informazioni, vedere [Configure Connection Filtering](configure-the-connection-filter-policy.md).
 
   > [!NOTE]
   > Spoof Intelligence utilizza il filtro connessioni per creare gli elenchi Consenti e blocca dei mittenti che eseguono lo spoofing del dominio di posta elettronica. Per ulteriori informazioni, vedere [Learn more about spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
@@ -105,7 +105,7 @@ Di seguito sono riportati alcuni passaggi che è possibile eseguire per impedire
 
   Per ulteriori informazioni su queste impostazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Utilizzare gli elenchi di mittenti attendibili disponibili**: per informazioni, vedere [creare elenchi di mittenti attendibili] (create-Safe-sender-lists-in-office-365.MD.
+- **Utilizzare gli elenchi di mittenti attendibili disponibili**: per informazioni, vedere [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md).
 
 - **Verificare che gli utenti siano entro i limiti di invio e ricezione** , come descritto in [ricezione e invio dei limiti](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) nella descrizione del servizio Exchange Online.
 

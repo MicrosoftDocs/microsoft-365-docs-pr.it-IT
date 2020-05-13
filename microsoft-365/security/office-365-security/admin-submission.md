@@ -1,5 +1,5 @@
 ---
-title: Invii dell'amministratore in Office 365
+title: Invii di amministratore
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come inviare messaggi di posta elettronica sospetti, sospette mail di phishing, la posta indesiderata e altre potenzialmente dannose, URL e file dalla propria azienda a Microsoft per l'analisi.
-ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Gli amministratori possono imparare a usare il portale per gli invii nel centro sicurezza & Compliance per inviare messaggi di posta elettronica sospetti, sospette mail di phishing, posta indesiderata e altre informazioni potenzialmente nocive, URL e file a Microsoft per l'analisi.
+ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034201"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209752"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
-Se si è un amministratore in un'organizzazione di Microsoft 365 con cassette postali in Exchange Online, è possibile utilizzare il portale degli invii nel centro sicurezza & Compliance per inviare messaggi di posta elettronica, URL e allegati a Microsoft per l'analisi.
+In Microsoft 365 organizzazioni con cassette postali in Exchange Online, gli amministratori possono utilizzare il portale degli invii nel centro sicurezza & Compliance per inviare messaggi di posta elettronica, URL e allegati a Microsoft per l'analisi.
 
 Quando si invia un messaggio di posta elettronica, si ottengono informazioni su tutti i criteri che possono aver consentito la posta elettronica in arrivo nel tenant, nonché l'esame degli URL e degli allegati della posta. I criteri che possono aver consentito a un messaggio di posta elettronica includono l'elenco dei mittenti attendibili di un singolo utente e i criteri di livello tenant, ad esempio le regole del flusso di posta di Exchange (note anche come regole di trasporto)
 
@@ -34,7 +34,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **invio** , utilizzare <https://protection.office.com/reportsubmission>.
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **invio** , utilizzare <https://protection.office.com/reportsubmission> .
 
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare i criteri di protezione da posta indesiderata, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione**, **amministratore sicurezza**o **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
@@ -42,7 +42,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Segnalare contenuti sospetti a Microsoft
 
-1. Nel centro sicurezza & conformità, accedere ai **messaggi di invio dell'amministratore**di gestione **Review** \> \> delle **minacce** .
+1. Nel centro sicurezza & conformità, accedere ai messaggi di invio dell'amministratore di **gestione delle minacce** \> **Review** \> **Admin submission messages**.
 
 2. Nella pagina **invii** che viene visualizzata, fare clic sul pulsante **nuovo invio** .
 
@@ -74,7 +74,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Inviare un URL sospetto a Microsoft
 
-1. Nella sezione **tipo oggetto** selezionare **URL**. Nella casella che viene visualizzata, immettere l'URL completo (ad esempio, <https://www.fabrikam.com/marketing.html>).
+1. Nella sezione **tipo oggetto** selezionare **URL**. Nella casella che viene visualizzata, immettere l'URL completo (ad esempio, <https://www.fabrikam.com/marketing.html> ).
 
 2. Nella sezione **motivo della presentazione** selezionare una delle opzioni seguenti:
 
@@ -104,11 +104,11 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
 ## <a name="view-admin-submissions"></a>Visualizzazione di invii di amministratore
 
-1. Nel centro sicurezza & conformità, accedere ai **messaggi di invio dell'amministratore**di gestione **Review** \> \> delle **minacce** .
+1. Nel centro sicurezza & conformità, accedere ai messaggi di invio dell'amministratore di **gestione delle minacce** \> **Review** \> **Admin submission messages**.
 
 2. Nella pagina **invii** che viene visualizzata, verificare che la scheda **invii amministratore** sia selezionata.
 
-Vicino alla parte superiore della pagina, è possibile immettere una data di inizio, una data di fine e (per impostazione predefinita) è possibile filtrare in base all' **ID di invio** immettendo un ![valore nella](../../media/scc-quarantine-refresh.png)casella e facendo clic su Aggiorna. È possibile immettere più valori separati da virgole.
+Vicino alla parte superiore della pagina, è possibile immettere una data di inizio, una data di fine e (per impostazione predefinita) è possibile filtrare in base all' **ID di invio** immettendo un valore nella casella e facendo clic su ![ Aggiorna ](../../media/scc-quarantine-refresh.png) . È possibile immettere più valori separati da virgole.
 
 Per modificare i criteri di filtro, fare clic sul pulsante **ID invio** e scegliere uno dei seguenti valori:
 
@@ -178,7 +178,7 @@ Fare clic sulla scheda **allegati** .
 
 Se è stato distribuito il [componente aggiuntivo](enable-the-report-message-add-in.md)per i messaggi di report o si utilizza la creazione di report [incorporati in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), è possibile visualizzare gli utenti che segnalano nella scheda **invii utente** .
 
-1. Nel centro sicurezza & conformità, accedere ai **messaggi di invio dell'amministratore**di gestione **Review** \> \> delle **minacce** .
+1. Nel centro sicurezza & conformità, accedere ai messaggi di invio dell'amministratore di **gestione delle minacce** \> **Review** \> **Admin submission messages**.
 
 2. Nella pagina **invii** che viene visualizzata, fare clic sulla scheda **invii utente** .
 
@@ -193,7 +193,7 @@ Se è stato distribuito il [componente aggiuntivo](enable-the-report-message-add
 
 <sup>\*</sup>Se si fa clic su questo valore, le informazioni dettagliate vengono visualizzate in un riquadro a comparsa.
 
-Nella parte superiore della pagina, è possibile immettere una data di inizio, una data di fine e (per impostazione predefinita) è possibile filtrare in base al **mittente** immettendo un valore nella ![casella e](../../media/scc-quarantine-refresh.png)facendo clic su Aggiorna. È possibile immettere più valori separati da virgole.
+Nella parte superiore della pagina, è possibile immettere una data di inizio, una data di fine e (per impostazione predefinita) è possibile filtrare in base al **mittente** immettendo un valore nella casella e facendo clic su ![ Aggiorna ](../../media/scc-quarantine-refresh.png) . È possibile immettere più valori separati da virgole.
 
 Per modificare i criteri di filtro, fare clic sul pulsante **mittente** e scegliere uno dei seguenti valori:
 
@@ -211,7 +211,7 @@ Per esportare i risultati, fare clic su **Esporta** vicino alla parte superiore 
 
 Se è stata [configurata una cassetta postale personalizzata](user-submission.md) per la ricezione di messaggi segnalati dall'utente, è possibile visualizzare e inviare anche messaggi che sono stati recapitati alla cassetta postale di Reporting.
 
-1. Nel centro sicurezza & conformità, accedere ai **messaggi di invio dell'amministratore**di gestione **Review** \> \> delle **minacce** .
+1. Nel centro sicurezza & conformità, accedere ai messaggi di invio dell'amministratore di **gestione delle minacce** \> **Review** \> **Admin submission messages**.
 
 2. Nella pagina **invii** che viene visualizzata, fare clic sulla scheda **cassetta postale personalizzata** .
 
@@ -224,7 +224,7 @@ Se è stata [configurata una cassetta postale personalizzata](user-submission.md
 - **Indirizzo IP mittente**<sup>\*</sup>
 - **Tipo di invio**
 
-Nei pressi della parte superiore della pagina, è possibile immettere una data di inizio, una data di fine ed è possibile filtrare in base a quanto **inserito** inserendo un valore nella casella ![e facendo](../../media/scc-quarantine-refresh.png)clic su Aggiorna. È possibile immettere più valori separati da virgole.
+Nei pressi della parte superiore della pagina, è possibile immettere una data di inizio, una data di fine ed è possibile filtrare in base a quanto **inserito** inserendo un valore nella casella e facendo clic su ![ Aggiorna ](../../media/scc-quarantine-refresh.png) . È possibile immettere più valori separati da virgole.
 
 Per esportare i risultati, fare clic su **Esporta** vicino alla parte superiore della pagina e selezionare **dati grafico** o **tabella**. Nella finestra di dialogo che viene visualizzata, salvare il file. csv.
 

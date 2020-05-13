@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Utilizzare lo script in questo articolo per generare un report contenente informazioni su tutte le esenzioni associate ai casi di eDiscovery nel centro conformità in Office 365 o Microsoft 365.
-ms.openlocfilehash: 9fa4bab745a3f956b32deb1dab1a1d909cecf08a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942899"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208378"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Creare un report sui casi di blocco in eDiscovery
   
@@ -41,27 +41,9 @@ Per una descrizione dettagliata delle informazioni incluse nel report, vedere la
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Passaggio 1: connettersi al centro sicurezza & Compliance PowerShell
 
-Il primo passaggio consiste nel connettersi al centro sicurezza & Compliance per l'organizzazione.
+Il primo passaggio consiste nel connettersi a PowerShell per il Centro sicurezza & Compliance per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `ConnectSCC.ps1`. 
-    
-      ```powershell
-      # Get login credentials 
-      $UserCredential = Get-Credential 
-      $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-      Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. Nel computer locale, aprire Windows PowerShell e passare alla cartella in cui è stato salvato lo script. 
-    
-3. Eseguire lo script; Per esempio:
-
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
-
-4. Quando vengono richieste le credenziali, immettere l'indirizzo di posta elettronica e la password, quindi fare clic su **OK**. 
+Se l'account di Microsoft 365 usa l'autenticazione a più fattori o l'autenticazione federata, non è possibile usare le istruzioni riportate nell'argomento precedente per la connessione a PowerShell in Centro sicurezza e conformità. Per farlo, vedere le istruzioni nell’argomento [Connettersi a PowerShell in Centro sicurezza e conformità mediante l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Passaggio 2: eseguire lo script per segnalare le esenzioni associate ai casi di eDiscovery
 
@@ -172,9 +154,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     > [!TIP]
     > Per salvare il report nella stessa cartella in cui si trova lo script, digitare un punto (".") quando viene richiesto di specificare una cartella di destinazione. Per salvare il report in una sottocartella della cartella in cui si trova lo script, digitare il nome della sottocartella. 
   
-    Lo script inizia a raccogliere informazioni su tutti i casi di eDiscovery nell'organizzazione. Non accedere al file di report mentre lo script è in esecuzione. Una volta completato lo script, nella sessione di Windows PowerShell viene visualizzato un messaggio di conferma. Dopo aver visualizzato questo messaggio, è possibile accedere al report nella cartella specificata nel passaggio 4. Il nome del file del report è `CaseHoldsReport<DateTimeStamp>.csv`.
+    Lo script inizia a raccogliere informazioni su tutti i casi di eDiscovery nell'organizzazione. Non accedere al file di report mentre lo script è in esecuzione. Una volta completato lo script, nella sessione di Windows PowerShell viene visualizzato un messaggio di conferma. Dopo aver visualizzato questo messaggio, è possibile accedere al report nella cartella specificata nel passaggio 4. Il nome del file del report è `CaseHoldsReport<DateTimeStamp>.csv` .
 
-    Addtionally, lo script crea anche un rapporto con un elenco di casi che non dispongono di alcuna esenzione. Il nome del file di questo report `CaseswithNoHolds<DateTimeStamp>.csv`è.
+    Addtionally, lo script crea anche un rapporto con un elenco di casi che non dispongono di alcuna esenzione. Il nome del file di questo report è `CaseswithNoHolds<DateTimeStamp>.csv` .
     
     Di seguito è riportato un esempio di esecuzione dello script CaseHoldsReport. ps1. 
     

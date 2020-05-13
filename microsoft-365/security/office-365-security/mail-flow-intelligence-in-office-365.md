@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori (noti anche come Intelligence del flusso di posta).
-ms.openlocfilehash: aa156299dcc835369b7eb69bb5719b27078d8404
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635637"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206617"
 ---
-# <a name="mail-flow-intelligence"></a>Intelligence del flusso di posta
+# <a name="mail-flow-intelligence-in-eop"></a>Intelligence del flusso di posta in EOP
 
-In genere, si utilizza un connettore per instradare i messaggi di posta elettronica dall'organizzazione all'ambiente di posta elettronica locale. È inoltre possibile utilizzare un connettore per instradare i messaggi da Microsoft 365 a un'organizzazione partner. Quando Microsoft 365 non è in grado di recapitare questi messaggi tramite il connettore, vengono accodati in Microsoft 365. Microsoft 365 continuerà a riprovare il recapito per ogni messaggio per 24 ore. Dopo 24 ore, il messaggio in coda scadrà e il messaggio verrà restituito al mittente originale in un rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo).
+In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, si utilizza in genere un connettore per instradare i messaggi di posta elettronica da EOP all'ambiente di posta elettronica locale. È inoltre possibile utilizzare un connettore per instradare i messaggi da Microsoft 365 a un'organizzazione partner. Quando Microsoft 365 non è in grado di recapitare questi messaggi tramite il connettore, vengono accodati in Microsoft 365. Microsoft 365 continuerà a riprovare il recapito per ogni messaggio per 24 ore. Dopo 24 ore, il messaggio in coda scadrà e il messaggio verrà restituito al mittente originale in un rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo).
 
 Microsoft 365 genera un errore quando un messaggio non può essere recapitato utilizzando un connettore. In questo argomento sono descritti gli errori più comuni e le relative soluzioni. Gli errori di Accodamento e di notifica per i messaggi non recapitabili inviati tramite connettori sono noti come _Intelligence del flusso di posta_.
 
@@ -68,13 +68,13 @@ In genere, questo errore indica che Microsoft 365 ha riscontrato un errore di co
 
   - Nell'interfaccia di [amministrazione di Exchange (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center), disabilitare o eliminare il connettore che invia messaggi di posta elettronica da Microsoft 365 all'ambiente di posta elettronica locale:
 
-    1. Nell'interfaccia di amministrazione di Exchange, andare a **connettori**del **flusso** \> di posta.
+    1. Nell'interfaccia di amministrazione di Exchange, andare a connettori del **flusso di posta** \> **Connectors**.
 
     2. Selezionare il connettore con il **From** valore da **Office 365** e il valore **per** il **server di posta elettronica dell'organizzazione** ed eseguire una delle operazioni seguenti:
 
-       - Eliminare il connettore facendo clic su **Elimina** ![icona Rimuovi](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Eliminare il connettore facendo clic su **Elimina** ![ icona Rimuovi](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Disabilitare il connettore facendo clic su **modifica** ![icona](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifica e deselezionando **attiva**.
+       - Disabilitare il connettore facendo clic su **modifica** ![ icona modifica ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) e deselezionando **attiva**.
 
   - Modificare il dominio accettato in Microsoft 365 associato all'ambiente di posta elettronica locale dall' **inoltro interno** a **autorevole**. Per istruzioni, vedere [Manage Accepted Domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
@@ -86,7 +86,7 @@ In genere, questo errore indica che Microsoft 365 ha riscontrato un errore di co
 
 In genere, questo errore indica che Microsoft 365 è connesso al server di posta elettronica di destinazione, ma il server ha risposto con un errore immediato o non soddisfa i requisiti di connessione. Nei dettagli dell'errore è riportata una spiegazione del problema. Ad esempio:
 
-- Il server di posta elettronica di destinazione ha risposto con un messaggio di errore "servizio non disponibile", che indica che il server non è in grado di mantenere la comunicazione con Office 365.
+- Il server di posta elettronica di destinazione ha risposto con un messaggio di errore "servizio non disponibile", che indica che il server non è in grado di mantenere la comunicazione con Microsoft 365.
 
 - Il connettore è configurato per richiedere TLS, ma il server di posta elettronica di destinazione non supporta TLS.
 
@@ -102,15 +102,15 @@ In genere, questo errore indica che Microsoft 365 ha difficoltà a comunicare co
 
 - Il firewall utilizza le regole di verifica del pacchetto SMTP e tali regole non funzionano correttamente.
 
-- Il server di posta elettronica locale non funziona correttamente (ad esempio, il servizio si blocca, si arresta in modo anomalo o con risorse di sistema ridotte), causando il timeout del server e la chiusura della connessione a Office 365.
+- Il server di posta elettronica locale non funziona correttamente (ad esempio, il servizio si blocca, si arresta in modo anomalo o con risorse di sistema ridotte), causando il timeout del server e la chiusura della connessione a Microsoft 365.
 
-- Sono presenti errori di rete tra l'ambiente locale e Office 365.
+- Esistono problemi di rete tra l'ambiente locale e Microsoft 365.
 
 ### <a name="how-do-i-fix-error-code-450-44318"></a>Come risolvere il codice di errore 450 4.4.318?
 
 - Trovare informazioni sulla situazione adatta al proprio caso e apportare le dovute correzioni.
 
-- Se il problema è causato da problemi di rete tra l'ambiente locale e Office 365, contattare il team di rete per risolvere il problema.
+- Se il problema è causato da problemi di rete tra l'ambiente locale e Microsoft 365, contattare il team di rete per risolvere il problema.
 
 - Se l'errore è generato nell'organizzazione del partner (ad esempio, il provider di servizi cloud di terze parti), è necessario contattarlo e chiedere la risoluzione del problema.
 

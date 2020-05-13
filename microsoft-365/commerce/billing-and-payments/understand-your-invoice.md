@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 description: Informazioni su come leggere e comprendere la fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: dad635df97e9cdf490118adc3a041c876878521b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 63186bb0fc601be786e223fe2e6febbdb48361e2
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141329"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211405"
 ---
 # <a name="understand-your-invoice"></a>Informazioni sulla fattura
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Nella parte superiore della prima pagina vengono identificati gli utenti respons
 | --- | --- |
 | Venduto a |L'account di fatturazione che identifica il nome e l'indirizzo dell'entità legale responsabile del pagamento. Tali informazioni possono essere gestite nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">account di fatturazione</a> , in cui è possibile trovare il contratto account e gestire i ruoli e le autorizzazioni. |
 | Fattura a |Identifica gli utenti che ricevono la fattura. Tali informazioni possono essere gestite nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profili di fatturazione</a> . Il profilo di fatturazione viene visualizzato anche nella pagina fattura online, nella sezione **Riepilogo fatture** . Per ulteriori informazioni sui profili di fatturazione e su come utilizzarli per creare opzioni di fatturazione più flessibili per la propria organizzazione, vedere [Manage Billing Profiles](manage-billing-profiles.md). |
-| Profilo di fatturazione |Nome del profilo di fatturazione utilizzato per definire le proprietà delle fatture, ad esempio, e i termini di pagamento. Tali informazioni possono essere gestite nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profili di fatturazione</a> . Per ulteriori informazioni sui profili di fatturazione e su come utilizzarli per creare opzioni di fatturazione più flessibili per la propria organizzazione, vedere [Manage Billing Profiles](manage-billing-profiles.md). |
+| Profilo di fatturazione |Nome del profilo di fatturazione utilizzato per definire le proprietà delle fatture, ad **PO number**esempio, e i termini **di**pagamento. Tali informazioni possono essere gestite nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profili di fatturazione</a> . Per ulteriori informazioni sui profili di fatturazione e su come utilizzarli per creare opzioni di fatturazione più flessibili per la propria organizzazione, vedere [Manage Billing Profiles](manage-billing-profiles.md). |
 | Numero fattura |Un numero di fattura generato da Microsoft univoco utilizzato per la verifica degli scopi. |
 | Data della fattura |Data in cui viene generata la fattura, in genere da cinque a 12 giorni dopo la fine del ciclo di fatturazione. È possibile controllare la data della fattura nella pagina dei dettagli del profilo di fatturazione. Gli addebiti che si verificano tra la fine del periodo di fatturazione e la data della fattura sono inclusi nella fattura per il mese successivo, in quanto si trovano nel periodo di fatturazione successivo. La data di inizio e di fine del periodo di fatturazione per ogni fattura è elencata nella fattura PDF sopra il **Riepilogo dei pagamenti**.|
 | Termini di pagamento |La modalità di pagamento per Microsoft Bill. *Net 30 giorni* significa che si paga seguendo le istruzioni sulla fattura, entro 30 giorni dalla data della fattura. |
@@ -77,13 +77,13 @@ Le pagine di addebiti mostrano i costi ripartiti per prodotto. Per i clienti di 
 | Importo fiscale | Importo della tassa applicata all'acquisto in base all'aliquota fiscale |
 | Totale | L'importo totale dovuto per l'acquisto |
 
-I dettagli degli elementi pubblicitari variano in base al tipo di prodotto per il quale si è addebitato. Ad esempio, per i prodotti di Azure, viene visualizzata la quantità di crediti di Azure applicati. I prodotti basati su Seat mostrano un prezzo unitario e una quantità. I dettagli fattura delineano i prodotti acquistati, gli sconti o i crediti applicati, l'aliquota fiscale e l'importo e i totali degli elementi pubblicitari.
+I dettagli degli elementi pubblicitari variano in base al tipo di prodotto per il quale si è addebitato. Ad esempio, per i prodotti di Azure, viene visualizzata la quantità di crediti di Azure applicati. I prodotti basati su Seat mostrano un prezzo unitario e una quantità. I dettagli fattura mostrano i prodotti acquistati, sconti o crediti applicati, il tasso di imposta e l'importo e i totali degli elementi pubblicitari.
 
-`Total = Charges - Azure Credit + Tax`
+    `Total = Charges - Azure Credit + Tax`
 
 L'importo totale dovuto per ogni famiglia di servizi viene calcolato sottraendo crediti di Azure da crediti/addebiti e aggiungendo tasse:
 
-`Total = Charges/Credits - Azure Credit + Tax`
+    `Total = Charges/Credits - Azure Credit + Tax`
 
 Se sulla fattura sono presenti costi di Azure che si desiderano ulteriori informazioni, vedere [rivedere la fattura del contratto di servizio Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
@@ -101,11 +101,11 @@ Se nella fattura sono presenti servizi di terze parti, il nome e l'indirizzo di 
 
 Le fatture sono disponibili online. Un collegamento alla fattura online è disponibile dalla fattura PDF e da una notifica tramite posta elettronica. La fattura online è espandibile in modo da poter visualizzare gli addebiti sulla fattura e visualizzare ulteriori dettagli per ogni elemento. La fattura online include:
 
-- **Dettagli** &mdash; sui prezzi informazioni aggiuntive, tra cui informazioni dettagliate sugli sconti e sui prezzi dei prodotti.
+- **Dettagli** &mdash; sui prezzi Ulteriori informazioni, inclusi i dettagli sugli sconti e sui prezzi dei prodotti.
 
-- **Pagamento** &mdash; online è possibile scegliere di effettuare un pagamento online dalla fattura.
+- **Pagamento online** &mdash; È possibile scegliere di effettuare un pagamento online dalla fattura.
 
-- **Gestione** &mdash; dei costi di Azure per i clienti di Azure, le fatture online includono un collegamento a Azure Cost Management.
+- **Gestione dei** &mdash; costi di Azure Per i clienti di Azure, le fatture online includono un collegamento a Azure Cost Management.
 
 ### <a name="to-view-your-online-invoice"></a>Per visualizzare la fattura online
 
@@ -114,6 +114,42 @@ Le fatture sono disponibili online. Un collegamento alla fattura online è dispo
 2. Per scaricare la versione. pdf della fattura, scegliere **Scarica fattura PDF** nella riga per la fattura che si desidera visualizzare.
 
 3. Per visualizzare la fattura online, scegli una fattura dall'elenco. È inoltre possibile scaricare il file. pdf dalla pagina Dettagli fattura.
+
+## <a name="invoice-faq"></a>Domande frequenti sulla fattura
+
+### <a name="when-is-my-invoice-available"></a>Quando è disponibile la fattura?
+
+Alcune fatture vengono generate entro le 24 ore successive all'acquisto. Altre fatture vengono generate alla fine del periodo di fatturazione e includono tutti gli elementi di quel periodo.
+
+### <a name="how-do-i-pay-the-amount-due-on-my-invoice"></a>Come si paga l'importo dovuto sulla fattura?
+
+Le istruzioni per il pagamento dipendono dal metodo di pagamento e vengono fornite nella parte inferiore della fattura PDF. Se il metodo di pagamento è una carta di credito, viene addebitato automaticamente entro 10 giorni dalla data della fattura. Se il metodo di pagamento è mediante assegno o bonifico bancario, vedere le informazioni in **istruzioni di pagamento** nel file PDF.
+
+### <a name="whats-the-difference-between-sold-to-and-bill-to-addresses"></a>Qual è la differenza tra gli indirizzi "venduti a" e "Bill to"?
+
+- **Venduto a:** La persona giuridica responsabile del pagamento e identificata sulla fattura. L'indirizzo fornito in questo articolo viene utilizzato per determinare l'aliquota fiscale, a meno che non si decida di fornire un indirizzo di spedizione alternativo durante l'acquisto. Per ulteriori informazioni, vedere [Tax Information](tax-information.md).
+- **Fattura a:** L'indirizzo in cui viene inviata la fattura fisica, se applicabile. Possono essere presenti più **fatture agli** indirizzi per persona giuridica, ma solo una **fattura per** l'indirizzo per ogni profilo di fatturazione.
+
+### <a name="what-are-billed-amount-and-amount-due"></a>Quali sono "importo fatturato" e "importo dovuto?"
+
+- **Importo fatturato:** Importo totale per l'acquisto eseguito.
+- **Importo dovuto:** Il saldo restante per ciò che si deve.
+
+### <a name="what-is-the-difference-between-service-period-and-billing-period"></a>Qual è la differenza tra "periodo di servizio" e "periodo di fatturazione?"
+
+- **Periodo di servizio:** Periodo di tempo durante il quale viene addebitato l'utilizzo del servizio.
+- **Periodo di fatturazione:** Il periodo di tempo dall'ultima data della fattura.
+
+### <a name="how-do-i-view-and-print-my-bill"></a>Come si fa a visualizzare e stampare la fattura?
+
+1. Nella pagina **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">fatture fatturazione & pagamenti</a> selezionare un intervallo di date delle fatture.
+2. Per stampare o salvare una copia PDF della fattura, selezionare **Scarica fattura PDF**e quindi stampare il file PDF.
+
+Per ulteriori informazioni, vedere [visualizzare la fattura o la fattura](view-your-bill-or-invoice.md).
+
+### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Perché non viene visualizzato il pagamento anticipato di Azure come metodo di pagamento?
+
+Il pagamento anticipato di Azure è disponibile come metodo di pagamento solo per i prodotti e i servizi di Azure idonei.
 
 ## <a name="need-help-contact-support"></a>Serve assistenza? Contattare il supporto.
 
