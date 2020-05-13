@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: 'Informazioni su abbonamenti e licenze in Microsoft 365 for business e sapere chi può assegnare licenze e cosa succede quando si assegna una licenza a un utente. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635437"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211439"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Informazioni su abbonamenti e licenze in Microsoft 365 for business
 
@@ -37,7 +37,7 @@ Quando si acquista un abbonamento a Microsoft 365 for business, è necessario is
 
 Quando si acquista un abbonamento, occorre specificare il numero di licenze necessario, in base al numero di utenti presenti all'interno dell'organizzazione. Dopo aver completato l'acquisto, è possibile creare gli account per gli utenti e assegnare una licenza a ogni persona. Quando si modificano le esigenze dell'organizzazione, è possibile acquistare altre licenze per accogliere nuove persone o riassegnare le licenze ad altri utenti quando qualcuno lascia la propria azienda. 
 
-Se si dispone di più di un abbonamento, è possibile assegnare licenze a persone diverse per ogni sottoscrizione. Ad esempio, tutti gli utenti possono essere assegnati a tutte le applicazioni e i servizi di Microsoft 365 come parte di una sottoscrizione di Microsoft 365 business standard, mentre un sottoinsieme di utenti può anche essere assegnato a Visio online tramite una sottoscrizione di Visio distinta. 
+Se si hanno più abbonamenti, è possibile assegnare le licenze a utenti diversi per ogni abbonamento. Ad esempio, tutti gli utenti possono essere assegnati a tutte le applicazioni e i servizi di Microsoft 365 come parte di una sottoscrizione di Microsoft 365 business standard, mentre un sottoinsieme di utenti può anche essere assegnato a Visio online tramite una sottoscrizione di Visio distinta. 
 
   
 ## <a name="find-out-who-can-assign-licenses"></a>Individuare chi può assegnare licenze
@@ -58,10 +58,10 @@ La tabella seguente descrive cosa accade automaticamente quando si assegna una l
   
 |**Se l'abbonamento include questo servizio**|**Ecco cosa accade automaticamente**|
 |:-----|:-----|
-|Exchange Online  <br/> |Viene creata una cassetta postale per l'utente.  <br/> |
+|Exchange Online  <br/> |Viene creata una cassetta postale per l'utente.  <br/> Per informazioni sull'SLA per il completamento di questa attività, vedere ["setting up..." messaggi nell'interfaccia di amministrazione di Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |All'utente vengono assegnate autorizzazioni di modifica per il sito del team predefinito di SharePoint Online.  <br/> |
 |Skype for Business online  <br/> |L'utente avrà accesso alle funzionalità associate alla licenza.  <br/> |
-|Microsoft 365 Apps for Enterprise  <br/> |L'utente potrà scaricare Microsoft Office su un massimo di 5 Mac o PC, 5 tablet e 5 smartphone.  <br/> |
+|Microsoft 365 Apps for enterprise  <br/> |L'utente potrà scaricare Microsoft Office su un massimo di 5 Mac o PC, 5 tablet e 5 smartphone.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>Su quanti dispositivi è possibile installare Office?
 
@@ -69,9 +69,9 @@ Se l'abbonamento include uno dei prodotti seguenti, ogni persona può installare
   
 - Microsoft 365 Apps for business
     
-- Microsoft 365 business standard
+- Microsoft 365 Business Standard
     
-- Microsoft 365 Apps for Enterprise
+- Microsoft 365 Apps for enterprise
     
 - Office 365 Enterprise E3
     

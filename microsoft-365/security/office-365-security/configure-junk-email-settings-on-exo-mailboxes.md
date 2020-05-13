@@ -16,22 +16,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
-ms.openlocfilehash: 20112e23ff8bb62b96bdba4e86725c8566af3444
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066194"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206629"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 
-Le impostazioni di protezione dalla posta indesiderata dell'organizzazione in Exchange Online sono controllate da Exchange Online Protection (EOP). Per altre informazioni, vedere [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md).
+In Microsoft 365 organizzazioni con cassette postali in Exchange Online, le impostazioni di protezione dalla posta indesiderata dell'organizzazione sono controllate da Exchange Online Protection (EOP). Per ulteriori informazioni, vedere [protezione da posta indesiderata in EOP](anti-spam-protection.md).
 
 Tuttavia, esistono anche impostazioni di protezione da posta indesiderata specifiche che possono essere configurate dagli amministratori per le singole cassette postali in Exchange Online:
 
 - **Abilitare o disabilitare la regola di posta**indesiderata: la regola di posta indesiderata è una regola di posta in arrivo nascosta chiamata regola di posta indesiderata abilitata per impostazione predefinita in ogni cassetta postale. La regola di posta indesiderata controlla le caratteristiche seguenti:
 
-  - **Spostare i messaggi nella cartella posta indesiderata in base ai criteri**di protezione dalla posta indesiderata: quando un criterio di protezione da posta indesiderata viene configurato con il **messaggio di spostamento dell'azione nella cartella posta indesiderata** per un verdetto del filtro della posta indesiderata, la regola di filtro posta elettronica consente di spostare il messaggio nella cartella posta indesiderata dopo Per ulteriori informazioni sui verdetti di filtraggio della posta indesiderata nei criteri di protezione dalla posta indesiderata, vedere [Configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md). Analogamente, se lo ZAP (auto Purge) rileva la posta indesiderata o phishing in un messaggio già recapitato, la regola del filtro della posta indesiderata sposta il messaggio nella cartella posta indesiderata per il **messaggio di spostamento in azioni di** filtro della posta indesiderata. Per ulteriori informazioni su ZAP, vedere [zero-hour auto Purge (ZAP)-protezione da posta indesiderata e malware in Office 365](zero-hour-auto-purge.md).
+  - **Spostare i messaggi nella cartella posta indesiderata in base ai criteri**di protezione dalla posta indesiderata: quando un criterio di protezione da posta indesiderata viene configurato con il **messaggio di spostamento dell'azione nella cartella posta indesiderata** per un verdetto del filtro della posta indesiderata, la regola di filtro posta elettronica consente di spostare il messaggio nella cartella posta indesiderata dopo Per ulteriori informazioni sui verdetti del filtro della posta indesiderata nei criteri di protezione da posta indesiderata, vedere [Configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md). Analogamente, se zero-hour auto Purge (ZAP) determina un messaggio recapitato è spam o phishing, la regola di filtro posta indesiderata sposta il messaggio nella cartella posta indesiderata per il **messaggio di spostamento nella cartella** posta indesiderata che filtra la posta indesiderata. Per ulteriori informazioni su ZAP, vedere [zero-hour auto Purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
   
   - **Impostazioni della posta indesiderata che gli utenti configurano per se stessi in Outlook o Outlook sul Web**: la raccolta degli elenchi _indirizzi attendibili_ è l'elenco dei mittenti attendibili, l'elenco destinatari attendibili e l'elenco Mittenti bloccati su ogni cassetta postale. Le voci di questi elenchi determinano se la regola di posta indesiderata sposta il messaggio nella cartella posta in arrivo o posta indesiderata. Gli utenti possono configurare la raccolta degli elenchi indirizzi attendibili per la propria cassetta postale in Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). Gli amministratori possono configurare la raccolta degli elenchi indirizzi attendibili sulla cassetta postale di un utente.
 
@@ -54,7 +54,7 @@ Gli amministratori possono utilizzare PowerShell di Exchange Online per disabili
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Utilizzo di PowerShell di Exchange Online per abilitare o disabilitare la regola di posta indesiderata in una cassetta postale
 
 > [!NOTE]
-> È possibile utilizzare solo il cmdlet **Set-MailboxJunkEmailConfiguration** per disabilitare la regola di posta indesiderata in una cassetta postale che è stata aperta in Outlook (in modalità cache) o Outlook sul Web. Se la cassetta postale non è stata aperta, verrà visualizzato l'errore `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` : se si desidera sopprimere questo errore per le operazioni in blocco, `-ErrorAction SlientlyContinue` è possibile aggiungere il comando **Set-MailboxJunkEmailConfiguration** .
+> È possibile utilizzare solo il cmdlet **Set-MailboxJunkEmailConfiguration** per disabilitare la regola di posta indesiderata in una cassetta postale che è stata aperta in Outlook (in modalità cache) o Outlook sul Web. Se la cassetta postale non è stata aperta, verrà visualizzato l'errore: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` se si desidera sopprimere questo errore per le operazioni in blocco, è possibile aggiungere `-ErrorAction SlientlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
 
 Per abilitare o disabilitare la regola di posta indesiderata in una cassetta postale, utilizzare la sintassi seguente:
 
@@ -78,7 +78,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-Mailbox
 
 > [!NOTE]
 > 
-> - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si esegue il comando precedente. Per eliminare questo errore per le operazioni in blocco `-ErrorAction SlientlyContinue` , aggiungere il comando **Set-MailboxJunkEmailConfiguration** .
+> - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si esegue il comando precedente. Per eliminare questo errore per le operazioni in blocco, aggiungere `-ErrorAction SlientlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
 > 
 > - Anche se si disattiva la regola di posta indesiderata, il filtro posta indesiderata di Outlook (a seconda del modo in cui è configurata) può anche determinare se un messaggio è spam e spostare i messaggi nella cartella posta in arrivo o posta indesiderata in base al verdetto di posta indesiderata e alla raccolta degli elenchi indirizzi attendibili sulla cassetta postale. Per ulteriori informazioni, vedere la sezione informazioni [sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) in questo argomento.
 
@@ -86,7 +86,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-Mailbox
 
 Per verificare la corretta abilitazione o disabilitazione della regola di posta indesiderata in una cassetta postale, utilizzare una delle seguenti procedure:
 
-- Sostituire _ \<MailboxIdentity\> _ con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale ed eseguire il comando riportato di seguito per verificare il valore della proprietà **Enabled** :
+- Sostituire _ \< MailboxIdentity \> _ con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale ed eseguire il comando riportato di seguito per verificare il valore della proprietà **Enabled** :
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -117,7 +117,7 @@ Per configurare la raccolta degli elenchi indirizzi attendibili in una cassetta 
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-Per immettere più valori e sovrascrivere le voci esistenti per i parametri _BlockedSendersAndDomains_ e _TrustedSendersAndDomains_ , utilizzare la sintassi seguente `"<Value1>","<Value2>"...`:. Per aggiungere o rimuovere uno o più valori senza alterare altre voci esistenti, utilizzare la sintassi seguente:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+Per immettere più valori e sovrascrivere le voci esistenti per i parametri _BlockedSendersAndDomains_ e _TrustedSendersAndDomains_ , utilizzare la sintassi seguente: `"<Value1>","<Value2>"...` . Per aggiungere o rimuovere uno o più valori senza alterare altre voci esistenti, utilizzare la sintassi seguente:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 In questo esempio vengono configurate le impostazioni seguenti per la raccolta degli elenchi indirizzi attendibili sulla cassetta postale di Epstein:
 
@@ -141,7 +141,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-Mailbox
 
 > [!NOTE]
 > 
-> - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si eseguono i comandi precedenti. Per eliminare questo errore per le operazioni in blocco `-ErrorAction SlientlyContinue` , aggiungere il comando **Set-MailboxJunkEmailConfiguration** .
+> - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si eseguono i comandi precedenti. Per eliminare questo errore per le operazioni in blocco, aggiungere `-ErrorAction SlientlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
 > 
 > - Anche se la regola di posta indesiderata è disabilitata per la cassetta postale, è comunque possibile configurare la raccolta degli elenchi indirizzi attendibili e il filtro posta indesiderata di Outlook è in grado di spostare i messaggi nella cartella posta in arrivo o posta indesiderata. Per ulteriori informazioni, vedere la sezione informazioni [sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) in questo argomento.
 > 
@@ -151,7 +151,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-Mailbox
 
 Per verificare che la raccolta degli elenchi indirizzi attendibili sia stata configurata correttamente in una cassetta postale, utilizzare una delle seguenti procedure:
 
-- Sostituire _ \<MailboxIdentity\> _ con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale ed eseguire il comando riportato di seguito per verificare i valori della proprietà:
+- Sostituire _ \< MailboxIdentity \> _ con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale ed eseguire il comando riportato di seguito per verificare i valori della proprietà:
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*
@@ -167,7 +167,7 @@ Per verificare che la raccolta degli elenchi indirizzi attendibili sia stata con
 
 Per abilitare, disabilitare e configurare le impostazioni del filtro per la posta indesiderata sul retro del client disponibili in Outlook, utilizzare criteri di gruppo. Per ulteriori informazioni, vedere [file dei modelli amministrativi (ADMX/ADML) e strumento di personalizzazione di Office per le app di Microsoft 365 per Enterprise, office 2019 e office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
-Quando il filtro posta indesiderata di Outlook è impostato sul valore predefinito **nessun filtro automatico** nelle \> **Opzioni**di **Opzioni di posta elettronica** **indesiderata** \> in **casa** \> , Outlook non cerca di classificare i massaggi come posta indesiderata, ma utilizza comunque la raccolta degli elenchi indirizzi attendibili (elenco Mittenti attendibili, elenco destinatari attendibili e elenco Mittenti bloccati) per spostare i messaggi nella cartella posta indesiderata dopo Per ulteriori informazioni su queste impostazioni, vedere [Panoramica del filtro della posta indesiderata](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+Quando il filtro posta indesiderata di Outlook è impostato sul valore predefinito **nessun filtro automatico** nelle opzioni di opzioni di posta elettronica indesiderata in **casa** \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook non cerca di classificare i massaggi come posta indesiderata, ma utilizza comunque la raccolta degli elenchi indirizzi attendibili (elenco Mittenti attendibili, elenco destinatari attendibili e elenco Mittenti bloccati) per spostare i messaggi nella cartella posta indesiderata dopo Per ulteriori informazioni su queste impostazioni, vedere [Panoramica del filtro della posta indesiderata](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
 Quando il filtro posta indesiderata di Outlook è impostato su **basso** o **alto**, il filtro della posta indesiderata di Outlook utilizza la propria tecnologia di filtro SmartScreen per identificare e spostare la posta indesiderata nella cartella posta elettronica. Questa classificazione di posta indesiderata è separata dal livello di probabilità di posta indesiderata (SCL) determinato da EOP. In effetti, Outlook ignora il SCL da EOP (a meno che EOP non abbia contrassegnato il messaggio per ignorare il filtro posta indesiderata) e utilizzi i propri criteri per determinare se il messaggio è posta indesiderata. Naturalmente, è possibile che il verdetto di posta indesiderata da EOP e Outlook potrebbe essere lo stesso. Per ulteriori informazioni su queste impostazioni, vedere [modificare il livello di protezione del filtro della posta indesiderata](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
 
