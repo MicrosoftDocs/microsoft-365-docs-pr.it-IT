@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili da tentativi di phishing, malware e altre minacce.
-ms.openlocfilehash: 2dd75b20bf203b9b8f0cdefb2459c45d1d0ccec1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 748868b07ac8759a66bac3c6b4165509270426a6
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627127"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224472"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
@@ -34,7 +34,7 @@ In questo articolo vengono fornite informazioni utili per aumentare la protezion
 
 Prima di iniziare, controllare il Punteggio di Office 365 Secure score. Office 365 Secure Score analizza la sicurezza dell'organizzazione in base alle normali attività e alle impostazioni di sicurezza e assegna un punteggio. Iniziare prendendo nota del punteggio corrente. Per aumentare il punteggio, completare le azioni consigliate in questo articolo. L'obiettivo non è quello di raggiungere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente che non influiscono negativamente sulla produttività per gli utenti. 
 
-Per ulteriori informazioni, vedere [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
+Per ulteriori informazioni, vedere [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Aumentare il livello di protezione da malware nella posta elettronica
 
@@ -42,7 +42,7 @@ L'ambiente Office 365 o Microsoft 365 include la protezione da malware. È possi
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali dell'account di amministratore. 
     
-2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri** \> **antimalware**in **gestione minacce**.
+2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri** antimalware in **gestione minacce** \> **Anti-Malware**.
     
 3. Fare doppio clic sul criterio predefinito per modificare il criterio a livello di società.
     
@@ -67,11 +67,11 @@ Oltre ai file bloccati nel passaggio precedente, è consigliabile creare una reg
 
 Per creare una regola di trasporto della posta:
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>Accedere all'interfaccia di amministrazione e scegliere interfaccia di **Amministrazione** \> di **Exchange**.
+1. Accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> e scegliere interfaccia di **Amministrazione** di \> **Exchange**.
     
 2. Nella categoria **flusso di posta** , selezionare **regole**.
     
-3. Selezionare **+**, quindi selezionare **Crea una nuova regola**.
+3. Selezionare **+** , quindi selezionare **Crea una nuova regola**.
     
 4. Selezionare **altre opzioni** nella parte inferiore della finestra di dialogo per visualizzare il set completo di opzioni. 
     
@@ -99,11 +99,11 @@ Gli hacker che accedono alla cassetta postale di un utente possono rubare la pos
   
 Per creare una regola di trasporto della posta, guardare [questo breve video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) o eseguire la procedura seguente:
   
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare interfaccia di **Amministrazione** \> di **Exchange**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare interfaccia di **Amministrazione** di \> **Exchange**.
     
 2. Nella categoria **flusso di posta** , selezionare **regole**.
     
-3. Selezionare **+**, quindi selezionare **Crea una nuova regola**.
+3. Selezionare **+** , quindi selezionare **Crea una nuova regola**.
     
 4. Per visualizzare tutte le opzioni, selezionare **altre opzioni** nella parte inferiore della finestra di dialogo. 
     
@@ -147,10 +147,10 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
 |Descrizione  <br/> |Garantire che la maggior parte del personale importante e del nostro dominio non siano rappresentati.  <br/> |
 |Aggiungere gli utenti da proteggere  <br/> |Seleziona **+ Aggiungi una condizione, il destinatario è**. Digitare i nomi utente oppure immettere l'indirizzo di posta elettronica del candidato, del responsabile della campagna e di altri membri del personale importanti. È possibile aggiungere fino a 20 indirizzi interni ed esterni che si desidera proteggere dalla rappresentazione.  <br/> |
 |Aggiungere i domini da proteggere  <br/> |Selezionare **+ Aggiungi una condizione, il dominio del destinatario è**. Se ne è stata definita una, immettere il dominio personalizzato associato all'abbonamento a Microsoft 365. È possibile immettere più di un dominio.  <br/> |
-|Scegli azioni  <br/> |Se la posta elettronica viene inviata da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica**e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza. ad esempio, *Alice<span><span>@contoso. com*. Se i messaggi di posta elettronica vengono inviati da un dominio imitato: scegliere di mettere il **messaggio in quarantena**.  <br/> |
+|Scegli azioni  <br/> |Se la posta elettronica viene inviata da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica**e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza. ad esempio, *Alice <span> <span> @contoso. com*. Se i messaggi di posta elettronica vengono inviati da un dominio imitato: scegliere di mettere il **messaggio in quarantena**.  <br/> |
 |Intelligence della cassetta postale  <br/> |Per impostazione predefinita, la funzione di intelligence della cassetta postale è selezionata quando si creano nuovi criteri anti-phishing. Per ottenere risultati ottimali, lasciare l’opzione **attiva**.  <br/> |
 |Aggiungere mittenti e domini attendibili  <br/> |Qui è possibile aggiungere il proprio dominio o altri domini attendibili.  <br/> |
-|Applicato a  <br/> |Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso.<span> com <span>*, nell'elenco, quindi selezionare **Aggiungi**. Scegliere **Fine**.  <br/> |
+|Applicato a  <br/> |Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso. <span> <span> com*, nell'elenco, quindi selezionare **Aggiungi**. Scegliere **Fine**.  <br/> |
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Protezione da allegati e file dannosi con gli allegati sicuri di ATP
 
@@ -158,7 +158,7 @@ Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio
   
 Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o completare i passaggi seguenti:
   
-1. Passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account di amministratore. 
+1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di amministratore. 
     
 2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri**in **gestione minacce**.
     
@@ -166,7 +166,7 @@ Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve vide
     
 4. Nella pagina allegati sicuri, applicare questa protezione in generale selezionando la casella di controllo **attiva ATP per SharePoint, OneDrive e Microsoft teams** . 
     
-5. Selezionare **+** questa impostazione per creare un nuovo criterio. 
+5. Selezionare questa **+** impostazione per creare un nuovo criterio. 
     
 6. Applicare le impostazioni nella tabella seguente. 
     
@@ -195,7 +195,7 @@ A volte gli hacker nascondono siti Web dannosi nei collegamenti nei messaggi di 
     
 Per configurare i collegamenti sicuri di ATP, guardare [questo breve video di formazione](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)o completare i passaggi seguenti:
   
-1. Passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account di amministratore. 
+1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di amministratore. 
     
 2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri**in **gestione minacce**.
     

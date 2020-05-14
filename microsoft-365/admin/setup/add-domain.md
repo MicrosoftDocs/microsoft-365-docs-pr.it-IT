@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Office 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: bab4da6e4a8191d91ccdd38dd54f62f4d790c3b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 336e6ee78d7020d73c7e00f639e8f1e1b20c62cd
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140776"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222340"
 ---
-# <a name="add-a-domain-to-office-365"></a>Aggiungere un dominio a Office 365
+# <a name="add-a-domain-to-microsoft-365"></a>Aggiungere un dominio a Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "44140776"
 
 ::: moniker-end
     
-2. Passare alla pagina **configurazione** > **domini** . 
+2. Passare alla pagina **configurazione**  >  **domini** . 
 
 3. Selezionare **Aggiungi dominio**.
     
@@ -82,7 +82,7 @@ ms.locfileid: "44140776"
     
 5. Scegliere in che modo si desidera verificare che si è proprietari del dominio.
     
-    1. Se il dominio è registrato su GoDaddy o 1&amp;1, selezionare **Accedi** > **successivamente** e Microsoft[consentirà la configurazione automatica dei record](../get-help-with-domains/domain-connect.md).
+    1. Se il dominio è registrato su GoDaddy o 1 &amp; 1, selezionare **Accedi**  >  **successivamente** e Microsoft [consentirà la configurazione automatica dei record](../get-help-with-domains/domain-connect.md).
     
     2. È possibile specificare l'invio di un messaggio di posta elettronica contenente un codice di verifica al contatto registrato per il dominio. Se non si riconosce o si ha accesso al messaggio di posta elettronica su record, è possibile utilizzare la terza opzione.
     
@@ -113,9 +113,9 @@ ms.locfileid: "44140776"
 
 Attenersi alla procedura riportata di seguito per aggiungere un record personalizzato per un sito Web o un servizio di terze parti.
 
-1. Accedere all'interfaccia di amministrazione di Microsoft all' <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>indirizzo.
+1. Accedere all'interfaccia di amministrazione di Microsoft all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
-2. Passare alla pagina **Impostazioni**  > **domini** .
+2. Passare alla pagina **Impostazioni**   >  **domini** .
 
 3. Nella pagina **Domini** selezionare un dominio. 
     
@@ -136,7 +136,7 @@ Nella procedura guidata, è sufficiente confermare che si è proprietari del dom
   
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domain Connect registrar che si integrano con Microsoft 365
 
-- [1&amp;1 IONOS](https://www.1and1.com/)
+- [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
