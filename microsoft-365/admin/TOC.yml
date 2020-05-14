@@ -196,6 +196,8 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: Installare e gestire i componenti aggiuntivi usando la distribuzione centralizzata
           href: manage/manage-deployment-of-add-ins.md
+        - name: Domande frequenti sulla distribuzione centralizzata
+          href: manage/centralized-deployment-faq.md
         - name: Trovare un partner o un rivenditore
           href: manage/find-your-partner-or-reseller.md
         - name: Informazioni sul Centro messaggi

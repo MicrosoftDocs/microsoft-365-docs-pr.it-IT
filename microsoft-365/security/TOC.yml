@@ -124,38 +124,32 @@
                   items:
                     - name: Informazioni sullo schema
                       href: mtp/advanced-hunting-schema-tables.md
-                    - name: AlertInfo
-                      href: mtp/advanced-hunting-alertinfo-table.md
                     - name: AlertEvidence
                       href: mtp/advanced-hunting-alertevidence-table.md
-                    - name: AccountInfo
-                      href: mtp/advanced-hunting-accountinfo-table.md
-                    - name: EmailEvents
-                      href: mtp/advanced-hunting-emailevents-table.md
-                    - name: EmailAttachmentInfo
-                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
-                    - name: EmailUrlInfo
-                      href: mtp/advanced-hunting-emailurlinfo-table.md
-                    - name: DeviceInfo
-                      href: mtp/advanced-hunting-deviceinfo-table.md
-                    - name: DeviceNetworkInfo
-                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
-                    - name: DeviceProcessEvents
-                      href: mtp/advanced-hunting-deviceprocessevents-table.md
-                    - name: DeviceNetworkEvents
-                      href: mtp/advanced-hunting-devicenetworkevents-table.md
-                    - name: DeviceFileEvents
-                      href: mtp/advanced-hunting-devicefileevents-table.md
-                    - name: DeviceRegistryEvents
-                      href: mtp/advanced-hunting-deviceregistryevents-table.md
-                    - name: DeviceLogonEvents
-                      href: mtp/advanced-hunting-devicelogonevents-table.md
-                    - name: DeviceImageLoadEvents
-                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: AlertInfo
+                      href: mtp/advanced-hunting-alertinfo-table.md
+                    - name: AppFileEvents
+                      href: mtp/advanced-hunting-appfileevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfo
                       href: mtp/advanced-hunting-devicefilecertificateinfo-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
                       href: mtp/advanced-hunting-tvm-configassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -164,8 +158,14 @@
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
-                    - name: AppFileEvents
-                      href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: EmailAttachmentInfo
+                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailEvents
+                      href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailUrlInfo
+                      href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityInfo
+                      href: mtp/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
                       href: mtp/advanced-hunting-identitylogonevents-table.md
                     - name: IdentityQueryEvents
@@ -207,7 +207,7 @@
                 - name: Impostare il fuso orario
                   href: mtp/mtp-time-zone.md
             - name: Visualizzare i profili dei dispositivi
-              href: 'mtp:/device-profile.md'
+              href: mtp/device-profile.md
             - name: Inviare feedback
               href: mtp/feedback.md
             - name: Gestire i ticket tramite ServiceNow
@@ -375,15 +375,6 @@
                       href: ./office-365-security/download-existing-reports.md
                 - name: Visualizzare informazioni sui file dannosi
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-            - name: Cos'è Exchange Online Protection?
-              href: ./office-365-security/what-is-eop.md
-              items:
-                - name: Bloccare la posta indesiderata nella versione autonoma di Exchange Online Protection
-                  href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: Proteggere le cassette postali locali con Exchange Online Protection
-                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: Configurare EOP autonomo per recapitare la posta indesiderata alla cartella Posta indesiderata
-                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: Protezione avanzata dalle minacce
           href: ./office-365-security/office-365-atp.md
           items:
@@ -523,14 +514,17 @@
               items: null
             - name: Integrazione server SIEM
               href: ./office-365-security/siem-server-integration.md
-            - name: Exchange Online Protection
+            - name: Panoramica su Exchange Online Protection
               href: ./office-365-security/exchange-online-protection-overview.md
               items:
                 - name: Funzionalità di Exchange Online Protection
                   href: ./office-365-security/eop-features.md
-                - name: Autorizzazioni per le funzionalità in Exchange Online Protection
+                - name: Autorizzazioni in Exchange Online Protection autonomo
                   href: ./office-365-security/feature-permissions-in-eop.md
-                - name: Interfaccia di amministrazione di Exchange in Exchange Online Protection
+                  items:
+                    - name: Gestire i gruppi di ruoli in Exchange Online Protection autonomo
+                      href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
+                - name: Interfaccia di amministrazione di Exchange Online Protection autonomo
                   href: ./office-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
                 - name: Configurare il servizio Exchange Online Protection
                   href: ./office-365-security/set-up-your-eop-service.md
@@ -541,48 +535,42 @@
                       href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
                     - name: Script di esempio per l'applicazione delle impostazioni di Exchange Online Protection a più tenant
                       href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
-                    - name: Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra organizzazione di Exchange Online Protection
+                    - name: Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra
                       href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
                     - name: 'Passaggio a Exchange Online Protection da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort'
                       href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
-                    - name: Posta indesiderata costituita da falsi rapporti di mancato recapito ed Exchange Online Protection
+                    - name: Backscatter in EOP
                       href: ./office-365-security/backscatter-messages-and-eop.md
-                - name: Criteri e conformità della messaggistica in Exchange Online Protection
-                  href: ./office-365-security/messaging-policy-and-compliance-in-eop.md
+                - name: Report di controllo in Exchange Online Protection autonomo
+                  href: ./office-365-security/auditing-reports-in-eop.md
                   items:
-                    - name: Report di controllo in Exchange Online Protection
-                      href: ./office-365-security/auditing-reports-in-eop.md
-                    - name: Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection
+                    - name: Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection autonomo
                       href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
-                - name: Gestire destinatari e gruppi di ruoli amministratore in Exchange Online Protection
-                  href: ./office-365-security/manage-recipients-and-admin-role-groups-in-eop.md
+                    - name: Visualizzare un log di controllo dell'amministratore in Exchange Online Protection autonomo
+                      href: ./office-365-security/view-the-admin-audit-log-eop.md
+                - name: Gestire i destinatari in Exchange Online Protection autonomo
+                  href: ./office-365-security/manage-recipients-in-eop.md
                   items:
-                    - name: Gestire destinatari in Exchange Online Protection
-                      href: ./office-365-security/manage-recipients-in-eop.md
-                    - name: Gestire utenti di posta in Exchange Online Protection
+                    - name: Gestire gli utenti di posta in Exchange Online Protection autonome
                       href: ./office-365-security/manage-mail-users-in-eop.md
-                    - name: Gestire gruppi in Exchange Online Protection
+                    - name: Gestire i gruppi in Exchange Online Protection autonomo
                       href: ./office-365-security/manage-groups-in-eop.md
-                    - name: Gestire autorizzazioni gruppo di ruoli di amministratore in Exchange Online Protection
-                      href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
                 - name: Flusso di posta in Exchange Online Protection
                   href: ./office-365-security/mail-flow-in-eop.md
                   items:
-                    - name: Come assicurarsi che un messaggio non venga contrassegnato come indesiderato
-                      href: ./office-365-security/how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md
-                    - name: Regole del flusso di posta (regole di trasporto)
+                    - name: Regole del flusso di posta (regole di trasporto) in Exchange Online Protection autonomo
                       href: ./office-365-security/mail-flow-rules-transport-rules-0.md
-                    - name: Usare le regole del flusso di posta per configurare il filtro per i messaggi inviati in blocco
+                    - name: Usare le regole del flusso di posta per filtrare la posta in blocco in Exchange Online Protection
                       href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
-                    - name: Riduzione dei pericoli di malware tramite blocco dei file allegati
+                    - name: Usare le regole del flusso di posta per bloccare messaggi con allegati eseguibili in Exchange Online Protection
                       href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
-                    - name: Creazione di report e traccia messaggio
+                    - name: Rapporti e traccia dei messaggi in Exchange Online Protection autonomo
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
-                    - name: Intelligence del flusso di posta in Office 365
+                    - name: Intelligence del flusso di posta in Exchange Online Protection
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
                 - name: Risoluzione dei problemi e supporto tecnico per Exchange Online Protection
                   items:
-                    - name: Risoluzione dei problemi della posta elettronica inviati a Office 365
+                    - name: Risoluzione dei problemi della posta elettronica inviati a Microsoft 365
                       href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
                     - name: Guida e supporto tecnico per Exchange Online Protection
                       href: ./office-365-security/help-and-support-for-eop.md
@@ -599,6 +587,10 @@
                       href: ./office-365-security/sending-mail-to-office-365.md
                     - name: Servizi per utenti che non sono clienti
                       href: ./office-365-security/services-for-non-customers.md
+                - name: Proteggere caselle di posta elettronica locali in Cina con Exchange Online Protection autonomo
+                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
+                - name: Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata
+                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: Funzionalità di sicurezza legacy
           items:
             - name: S/MIME
