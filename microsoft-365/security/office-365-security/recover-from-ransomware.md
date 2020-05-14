@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori di Microsoft 365 possono ottenere informazioni su come eseguire il ripristino da un attacco ransomware.
-ms.openlocfilehash: 51f5bb365fe707615444c1399479171aa72755e1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 29afb66dd90be3917d576a7533900e21a91966c0
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208259"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224710"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Eseguire il ripristino da un attacco ransomware in Microsoft 365
 
@@ -132,7 +132,7 @@ Se il paese non è elencato, chiedere alle agenzie di applicazione della legge f
 
 - [Norsk Hydro risponde all'attacco ransomware con trasparenza](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [Rilevamento ransomware e ripristino dei file in OneDrive](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [Rilevamento ransomware e ripristino dei file in OneDrive](https://support.microsoft.com/en-us/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
 - [Report di intelligence sulla sicurezza di Microsoft](https://www.microsoft.com/securityinsights/)
 

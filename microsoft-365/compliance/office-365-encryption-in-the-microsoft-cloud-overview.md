@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: In questo articolo, leggere una panoramica delle varie forme di crittografia utilizzate per garantire la sicurezza dei dati dei clienti nel cloud Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 62353725073f5010db1a8681bebad18bc671d81f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e48cc4fc54f0bc4553bab655611900523e11bd4d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031386"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214274"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Crittografia nel Microsoft Cloud
 
@@ -30,7 +30,7 @@ I dati dei clienti all'interno dei servizi cloud aziendali di Microsoft sono pro
 
 Indipendentemente dalla configurazione dei clienti, i dati dei clienti archiviati all'interno dei servizi cloud Microsoft Enterprise sono protetti utilizzando una o più forme di crittografia. La convalida dei criteri di crittografia e la relativa applicazione sono verificate in modo indipendente da più revisori di terze parti e i rapporti di tali controlli sono disponibili nel [Service Trust Portal](https://aka.ms/stp).
 
-Microsoft fornisce tecnologie sul fianco del servizio che crittografano i dati dei clienti a riposo e in transito. Ad esempio, per i dati dei clienti a riposo, Microsoft Azure utilizza [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) e [DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)e Microsoft 365 utilizza BitLocker, la [crittografia del servizio di archiviazione di Azure](https://azure.microsoft.com/documentation/articles/storage-service-encryption/), [Distributed Key Manager](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376) (DKM) e Microsoft 365 Service Encryption. Per i dati dei clienti in transito, Azure, Office 365, Microsoft Commercial Support, Microsoft Dynamics 365, Microsoft Power BI e Visual Studio Team Services utilizzano protocolli di trasporto sicuro standard del settore, quali IPsec (Internet Protocol Security) e TLS (Transport Layer Security), tra i datacenter Microsoft e tra i dispositivi utente e i datacenter Microsoft.
+Microsoft fornisce tecnologie sul fianco del servizio che crittografano i dati dei clienti a riposo e in transito. Ad esempio, per i dati dei clienti a riposo, Microsoft Azure utilizza [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) e [DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)e Microsoft 365 utilizza BitLocker, la [crittografia del servizio di archiviazione di Azure](https://docs.microsoft.com/azure/), [Distributed Key Manager](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-secures-email-secrets) (DKM) e Microsoft 365 Service Encryption. Per i dati dei clienti in transito, Azure, Office 365, Microsoft Commercial Support, Microsoft Dynamics 365, Microsoft Power BI e Visual Studio Team Services utilizzano protocolli di trasporto sicuro standard del settore, quali IPsec (Internet Protocol Security) e TLS (Transport Layer Security), tra i datacenter Microsoft e tra i dispositivi utente e i datacenter Microsoft.
 
 Oltre al livello di base della sicurezza crittografica fornita da Microsoft, i servizi cloud includono anche ulteriori opzioni di crittografia che è possibile gestire. Ad esempio, è possibile abilitare la crittografia per il traffico tra le macchine virtuali di Azure (VM) e gli utenti. Con le [reti virtuali di Azure](https://azure.microsoft.com/services/virtual-network/), è possibile utilizzare il protocollo IPSec standard del settore per crittografare il traffico tra il gateway VPN aziendale e Azure, nonché tra le macchine virtuali situate nella rete virtuale. Inoltre, le [nuove funzionalità di crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md) consentono di inviare posta crittografata a tutti gli utenti.
 
@@ -46,7 +46,7 @@ Microsoft certifica i moduli di crittografia sottostanti utilizzati nei servizi 
 - Dynamics 365 e Dynamics 365 U.S. Government
 - Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense
 
-La crittografia dei dati del cliente a riposo è fornita da più tecnologie sul fianco del servizio, tra cui BitLocker, DKM, la crittografia del servizio di archiviazione di Azure e la crittografia del servizio in Exchange Online, Skype for business, OneDrive for business e SharePoint Online. La crittografia dei servizi di Office 365 include un'opzione per l'utilizzo delle chiavi di crittografia gestite dal cliente archiviate in Azure Key Vault. Questa opzione di chiave gestita dal cliente, denominata [Customer Key](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697), è disponibile per Exchange Online, SharePoint Online, Skype for business e OneDrive for business.
+La crittografia dei dati del cliente a riposo è fornita da più tecnologie sul fianco del servizio, tra cui BitLocker, DKM, la crittografia del servizio di archiviazione di Azure e la crittografia del servizio in Exchange Online, Skype for business, OneDrive for business e SharePoint Online. La crittografia dei servizi di Office 365 include un'opzione per l'utilizzo delle chiavi di crittografia gestite dal cliente archiviate in Azure Key Vault. Questa opzione di chiave gestita dal cliente, denominata [Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview), è disponibile per Exchange Online, SharePoint Online, Skype for business e OneDrive for business.
 
 Per i dati dei clienti in transito, tutti i server di Office 365 negoziano le sessioni sicure tramite TLS per impostazione predefinita con i computer client per proteggere i dati dei clienti.  Questo vale per i protocolli su qualsiasi dispositivo utilizzato dai client, ad esempio Skype for business, Outlook e Outlook sul Web, i client mobili e i Web browser.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034817"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224590"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati
 
@@ -137,7 +137,7 @@ Sarà necessario disporre di diritti di amministratore globale per eseguire lo s
 
 3. Aprire un'istanza di PowerShell come amministratore e aprire la cartella in cui è stato salvato lo script.
 
-4. Eseguire la riga di comando di PowerShell `.\Get-AllTenantRulesAndForms.ps1`come segue .\Get-AllTenantRulesAndForms.ps1
+4. Eseguire la riga di comando di PowerShell come segue `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interpretare l'output
 
@@ -159,7 +159,7 @@ Se si riscontrano prove di uno di questi attacchi, la correzione è semplice, è
 
 1. Identificare tutti i dispositivi che l'utente ha utilizzato con Outlook. Tutti devono essere puliti da possibili malware. Non consentire all'utente di accedere e utilizzare la posta elettronica fino a quando tutti i dispositivi vengono puliti.
 
-2. Seguire la procedura descritta in [eliminare una regola](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f) per ogni dispositivo.
+2. Seguire la procedura descritta in [eliminare una regola](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f) per ogni dispositivo.
 
 3. Se non si è sicuri della presenza di altri malware, è possibile formattare e reinstallare tutto il software nel dispositivo. Per i dispositivi mobili è possibile seguire i passaggi dei costruttori per reimpostare il dispositivo nell'immagine Factory.
 

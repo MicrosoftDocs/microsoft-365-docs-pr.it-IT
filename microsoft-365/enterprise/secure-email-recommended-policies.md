@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 24cf0f9b4965b20f3a03dd64795985a082fdc847
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e469f0d1c0be85aeb5f98a4f2e6e2758cddd8450
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631406"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222698"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
 
@@ -39,7 +39,7 @@ Nel diagramma seguente vengono illustrati i criteri comuni di identità e access
 
 Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando vengono configurati, è necessario creare solo il nuovo criterio per bloccare i client ActiveSync. Esaminare i criteri elencati nella tabella seguente e apportare le aggiunte consigliate o confermare che sono già inclusi. Ogni regola collega le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Livello di protezione|Generali|Ulteriori informazioni|
+|Livello di protezione|Criteri|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nell'assegnazione delle app Cloud|
 |        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere Exchange Online nell'assegnazione delle app Cloud|
@@ -47,7 +47,7 @@ Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando ven
 |        |[Richiedere applicazioni approvate e protezione delle APP](identity-access-policies.md#require-approved-apps-and-app-protection)|Includere Exchange Online nell'elenco delle app Cloud|
 |        |[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere Exchange Online nell'elenco delle app Cloud|
 |        |[Bloccare i client ActiveSync](#block-activesync-clients)|Aggiungere il nuovo criterio| 
-|**Dati sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Includere Exchange Online nell'assegnazione delle app Cloud|
+|**Sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Includere Exchange Online nell'assegnazione delle app Cloud|
 |         |[Richiedere PC conformi *e* dispositivi mobili](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere Exchange Online nell'elenco delle app Cloud|
 |**Dati altamente regolamentati**|[Richiede *sempre* l'autenticazione Master](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nell'assegnazione delle app Cloud|
 
@@ -61,7 +61,7 @@ Questo criterio impedisce ai client ActiveSync di ignorare altre regole di acces
 
 Con le nuove funzionalità di crittografia dei messaggi di Office 365, che sfruttano le funzionalità di protezione di Azure Information Protection, l'organizzazione può facilmente condividere la posta elettronica protetta con chiunque su qualsiasi dispositivo. Gli utenti possono inviare e ricevere messaggi protetti con altre organizzazioni di Microsoft 365 e non clienti che utilizzano Outlook.com, Gmail e altri servizi di posta elettronica.
 
-Per ulteriori informazioni, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e).
+Per ulteriori informazioni, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

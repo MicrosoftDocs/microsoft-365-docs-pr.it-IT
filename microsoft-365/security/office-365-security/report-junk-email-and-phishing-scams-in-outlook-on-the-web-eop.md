@@ -1,5 +1,5 @@
 ---
-title: Messaggi di posta indesiderata e di phishing di RReport in Outlook sul Web
+title: Segnalare messaggi di posta indesiderata e di phishing in Outlook sul Web
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sulle opzioni di creazione di report di posta indesiderata, non di posta indesiderata e di phishing in Outlook sul Web (Outlook Web App) in Exchange Online, nonché su come disabilitare tali opzioni di creazione dei rapporti per gli utenti.
-ms.openlocfilehash: 1ec226259ccb3dac9a01ee8d4c5fc635c0fc5702
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: dd4b23efa9e12a02ce69167712bc0466b3445c44
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206479"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224698"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Segnalare messaggi di posta indesiderata e di phishing in Outlook sul Web in Exchange Online
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online, è possibile utilizzare le opzioni predefinite per la creazione di report in Outlook sul Web (in precedenza noto come Outlook Web App) per inviare falsi positivi (buon messaggio di posta indesiderata), falsi negativi (posta elettronica non consentita) e messaggi di phishing a Exchange Online Protection (EOP).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Se si è un amministratore di un'organizzazione con cassette postali di Exchange Online, è consigliabile utilizzare il portale degli invii nel centro sicurezza & Compliance. Per ulteriori informazioni, vedere [utilizzare l'invio di amministratore per inviare messaggi di posta indesiderata, phishing, URL e file a Microsoft](admin-submission.md).
 
@@ -77,7 +77,7 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online, è poss
 
 Per impostazione predefinita, gli utenti possono segnalare messaggi di posta indesiderata falsi positivi, falsi negativi e phishing a Microsoft per l'analisi in Outlook sul Web. Gli amministratori possono configurare i criteri cassetta postale di Outlook sul Web in Exchange Online PowerShell per impedire agli utenti di segnalare la posta indesiderata falsi positivi e falsi negativi di posta indesiderata a Microsoft. Non è possibile disabilitare la possibilità per gli utenti di segnalare i messaggi di phishing a Microsoft.
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 

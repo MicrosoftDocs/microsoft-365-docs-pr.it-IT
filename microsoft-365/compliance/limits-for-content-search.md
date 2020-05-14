@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Informazioni sui limiti effettivi per la funzionalità di ricerca contenuto nel centro sicurezza & conformità in Office 365, ad esempio il numero massimo di ricerche simultanee. '
-ms.openlocfilehash: 6c2093bced166901a4442e9ab6593de2b64b785b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ef6feaf6da51a49278ccd387bda0041c081659a6
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632651"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224601"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Limiti per la ricerca di contenuto nel centro sicurezza & conformità
 
@@ -39,7 +39,7 @@ Nella tabella seguente sono elencati i limiti di ricerca nel centro sicurezza & 
 |:-----|:-----|
 |Il numero massimo di cassette postali o di siti che possono essere ricercati in una singola ricerca di contenuto  <br/> |Nessun limite  <br/> |
 |Il numero massimo di ricerche di contenuto che possono essere eseguite contemporaneamente nell'organizzazione.  <br/> |Nessun limite  <br/> |
-|Il numero massimo di ricerche di contenuto che un singolo utente può avviare contemporaneamente. Si noti che è probabile che questo limite venga colpito quando l'utente tenta di avviare più ricerche utilizzando il comando **get \| -ComplianceSearch Start-ComplianceSearch** nel centro sicurezza & Compliance Center PowerShell.  <br/> |10   <br/> |
+|Il numero massimo di ricerche di contenuto che un singolo utente può avviare contemporaneamente. Si noti che è probabile che questo limite venga colpito quando l'utente tenta di avviare più ricerche utilizzando il comando **Get-ComplianceSearch \| Start-ComplianceSearch** nel centro sicurezza & Compliance Center PowerShell.  <br/> |10    <br/> |
 |Il numero massimo di elementi per ogni cassetta postale utente visualizzati nella pagina di anteprima quando si visualizzano i risultati della ricerca contenuto.  <br/> |100  <br/> |
 |Il numero massimo di elementi presenti in tutte le cassette postali degli utenti visualizzati nella pagina di anteprima quando si visualizzano i risultati della ricerca del contenuto. Vengono visualizzati gli elementi più recenti.  <br/> |1.000  <br/> |
 |Il numero massimo di cassette postali utente che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 1000 cassette postali che contengono contenuto che corrisponde alla query di ricerca, solo le cassette postali di 1000 con la maggior parte dei risultati della ricerca saranno disponibili per l'anteprima.  <br/> |1.000  <br/> |
@@ -49,12 +49,12 @@ Nella tabella seguente sono elencati i limiti di ricerca nel centro sicurezza & 
 |Il numero massimo di elementi trovati in tutte le cassette postali delle cartelle pubbliche che vengono visualizzate nella pagina di anteprima quando si visualizzano i risultati della ricerca del contenuto.  <br/> |200  <br/> |
 |Il numero massimo di cassette postali pubbliche che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 500 cassette postali delle cartelle pubbliche che contengono contenuto che corrisponde alla query di ricerca, solo le cassette postali delle cartelle pubbliche Top 500 con la maggior parte dei risultati della ricerca saranno disponibili per l'anteprima.  <br/> |500  <br/> |
 |Numero massimo di caratteri per la query di ricerca (compresi gli operatori e le condizioni) per una ricerca di contenuto.  <br/><br/> **Nota:** Questo limite ha effetto dopo che la query è stata espansa, il che significa che la query verrà espansa rispetto a ciascuna delle parole chiave. Ad esempio, se una query di ricerca contiene 15 parole chiave e parametri e condizioni aggiuntivi, la query viene espansa di 15 volte, ognuno con gli altri parametri e le condizioni della query. Pertanto, anche se il numero di caratteri nella query di ricerca potrebbe essere inferiore al limite, è la query espansa che può contribuire a superare questo limite.  <br/> |**Cassette postali:** 10.000  <br/> **Siti:** 4.000 quando si effettua la ricerca in tutti i siti o 2.000 quando si effettua la ricerca fino a 20 siti <sup>1</sup> <br/> |
-|Numero massimo di varianti restituite quando si utilizza un carattere jolly prefisso per cercare una frase esatta in una query di ricerca o quando si utilizza un carattere jolly di prefisso e l'operatore booleano **near** o **ONEAR** .  <br/> |10.000 <sup>2</sup> <br/> |
-|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso. ad esempio, `time*` `one*`,, o `set*`.  <br/> |3   <br/> |
+|Numero massimo di varianti restituite quando si utilizza un carattere jolly prefisso per cercare una frase esatta in una query di ricerca o quando si utilizza un carattere jolly prefisso e l'operatore **near** Boolean.  <br/> |10.000 <sup>2</sup> <br/> |
+|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso. ad esempio,,, `time*` `one*` o `set*` .  <br/> |3   <br/> |
 |Il numero massimo di cassette postali in una ricerca di contenuto in cui è possibile eliminare gli elementi eseguendo un'azione di "ricerca ed eliminazione" (tramite il comando **New-ComplianceSearchAction-Purge** ). Se la ricerca di contenuto a cui si sta eseguendo un'azione di eliminazione ha più cassette postali di origine rispetto a questo limite, l'azione Purge avrà esito negativo. Per ulteriori informazioni sulla ricerca e sul Purge, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione](search-for-and-delete-messages-in-your-organization.md).  <br/> |50.000  <br/> |
    
 > [!NOTE]
-> <sup>1</sup> quando si effettuano ricerche nei percorsi di SharePoint e OneDrive for business, i caratteri negli URL dei siti cercati vengono conteggiati rispetto a questo limite. <br/> <sup>2</sup> per le query non basate su parole (un valore di parola chiave che non utilizza virgolette doppie) viene utilizzato un indice di prefisso speciale. Questo indica che si verifica una parola in un documento, ma non in cui si trova nel documento. Per eseguire una query di frase (un valore di parola chiave con virgolette doppie), è necessario confrontare la posizione all'interno del documento per le parole della frase. Questo significa che non è possibile utilizzare l'indice di prefisso per le query di frase. In questo caso, la query viene espansa internamente con tutte le parole possibili che il prefisso espande; ad esempio, `"time*"` è possibile espandersi su `"time OR timer OR times OR timex OR timeboxed OR …"`. 10.000 è il numero massimo di varianti a cui la parola può espandersi, non il numero di documenti che corrispondono alla query. Non esiste un limite superiore per i termini non frase. 
+> <sup>1</sup> quando si effettuano ricerche nei percorsi di SharePoint e OneDrive for business, i caratteri negli URL dei siti cercati vengono conteggiati rispetto a questo limite. <br/> <sup>2</sup> per le query non basate su parole (un valore di parola chiave che non utilizza virgolette doppie) viene utilizzato un indice di prefisso speciale. Questo indica che si verifica una parola in un documento, ma non in cui si trova nel documento. Per eseguire una query di frase (un valore di parola chiave con virgolette doppie), è necessario confrontare la posizione all'interno del documento per le parole della frase. Questo significa che non è possibile utilizzare l'indice di prefisso per le query di frase. In questo caso, la query viene espansa internamente con tutte le parole possibili che il prefisso espande; ad esempio, è `"time*"` possibile espandersi su `"time OR timer OR times OR timex OR timeboxed OR …"` . 10.000 è il numero massimo di varianti a cui la parola può espandersi, non il numero di documenti che corrispondono alla query. Non esiste un limite superiore per i termini non frase. 
   
 ## <a name="indexing-limits-for-email-messages"></a>Limiti di indicizzazione per i messaggi di posta elettronica
 
@@ -82,7 +82,7 @@ Esistono ulteriori limiti relativi a diversi aspetti della ricerca del contenuto
     
 - [Analisi degli elementi parzialmente indicizzati in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
     
-- [Limiti della ricerca per SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
+- [Limiti della ricerca per SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits)
     
 Per informazioni sulle ricerche di contenuto, vedere:
   

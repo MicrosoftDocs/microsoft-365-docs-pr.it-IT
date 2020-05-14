@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bfbb0481670b2f957bf240c261fcbafab96717b9
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625207"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222590"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi
 
@@ -42,7 +42,7 @@ Prima di implementare i criteri di identità e accesso ai dispositivi consigliat
 | **Preparare il team di supporto**. Predisporre un piano per gli utenti che non riescono a portare a termine l'autenticazione a più fattori. Questo potrebbe essere l'aggiunta a un gruppo di esclusione dei criteri o la registrazione di nuove informazioni sull'AMF. Prima di eseguire una di queste modifiche sensibili alla sicurezza, è necessario verificare che l'utente effettivo stia effettuando la richiesta. Un passaggio efficace consiste nel richiedere ai responsabili degli utenti di offrire assistenza nel processo di approvazione. | Sì | Sì | Sì | Sì |  
 | [Configurare il writeback delle password nell'AD locale](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Il writeback delle password consente a Azure AD di richiedere che gli utenti modifichino le password locali quando viene rilevato un compromesso per gli account ad alto rischio. È possibile abilitare questa funzionalità tramite Azure AD Connect in uno dei due modi seguenti: abilitare il **writeback della password** nella schermata funzionalità facoltative dell'installazione guidata di Azure ad Connect oppure abilitarla tramite Windows PowerShell. |   | Sì | Sì | Sì |
 | [Abilitare Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/enable). Azure AD Identity Protection consente di rilevare potenziali vulnerabilità che interessano le identità dell'organizzazione e configurare un criterio di correzione automatizzato per il rischio di accesso basso, medio e alto e rischi per gli utenti.  | Sì | Sì | Sì | Sì |
-| **Abilitare l'autenticazione moderna** per [Exchange Online](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662) e per [Skype for business online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). L'autenticazione moderna è un prerequisito per l'utilizzo dell'autenticazione a più fattori (AMF). L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint Online e OneDrive for business. | Sì | Sì | Sì | Sì |
+| **Abilitare l'autenticazione moderna** per [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) e per [Skype for business online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). L'autenticazione moderna è un prerequisito per l'utilizzo dell'autenticazione a più fattori (AMF). L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint Online e OneDrive for business. | Sì | Sì | Sì | Sì |
 ||||||
 
 
@@ -69,7 +69,7 @@ I client di posta elettronica seguenti supportano l'autenticazione moderna e l'a
 
 |Piattaforma|Client|Versione/Note|
 |:-------|:-----|:------------|
-|**Windows**|Outlook|2016, 2013 [abilitare l'autenticazione moderna](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), [gli aggiornamenti necessari](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2016, 2013 [abilitare l'autenticazione moderna](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication), [gli aggiornamenti necessari](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook per iOS|[Ultima versione](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook per Android|[Ultima versione](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
@@ -91,7 +91,7 @@ Quando è stato applicato un criterio di protezione dei documenti, è consigliab
 |macOS|Anteprima pubblica|Anteprima pubblica|N/D|N/D|Non supportato|
 |Linux|Non supportato|Non supportato|Non supportato|Non supportato|Non supportato|
 
-<sup>*</sup>Ulteriori informazioni sull'utilizzo dell'accesso condizionale con il [client di sincronizzazione di OneDrive](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
+<sup>*</sup>Ulteriori informazioni sull'utilizzo dell'accesso condizionale con il [client di sincronizzazione di OneDrive](https://docs.microsoft.com/onedrive/enable-conditional-access).
 
 ### <a name="microsoft-365-client-support"></a>Supporto client Microsoft 365
 Per ulteriori informazioni sul supporto dei client, vedere gli articoli seguenti:
@@ -114,7 +114,7 @@ Per ulteriori informazioni, vedere [criteri di sicurezza di base per gli account
 Di seguito sono riportati alcuni suggerimenti:
 - Usare Azure AD Privileged Identity Management per ridurre il numero di account amministrativi permanenti. Vedere [iniziare a usare PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
 - [Utilizzare la gestione degli accessi con privilegi in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) per proteggere l'organizzazione da violazioni che possono utilizzare account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche. 
-- Utilizzare gli account Administrator solo per l'amministrazione. Gli amministratori devono disporre di un account utente distinto per l'utilizzo regolare non amministrativo e utilizzare il proprio account amministrativo solo quando necessario per completare un'attività associata alla propria funzione processi. I ruoli di [amministratore di microsoft 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) dispongono di privilegi sostanzialmente superiori rispetto ai servizi di Microsoft 365.
+- Utilizzare gli account Administrator solo per l'amministrazione. Gli amministratori devono disporre di un account utente distinto per l'utilizzo regolare non amministrativo e utilizzare il proprio account amministrativo solo quando necessario per completare un'attività associata alla propria funzione processi. I ruoli di [amministratore di microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) dispongono di privilegi sostanzialmente superiori rispetto ai servizi di Microsoft 365.
 - Seguire le procedure consigliate per la protezione degli account con privilegi in Azure AD, come descritto in questo [articolo](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
 ## <a name="next-steps"></a>Passaggi successivi

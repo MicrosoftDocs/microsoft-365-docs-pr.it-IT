@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere messaggi di posta indesiderata e di phishing segnalati dagli utenti.
-ms.openlocfilehash: 2931171d8e2dcd26593904385aec872c8967abf4
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 38fa16b5270273813b4549b0c3c9baaa1b05b098
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213353"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224554"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Specificare una cassetta postale per l'invio di messaggi di posta indesiderata e di phishing in Exchange Online
 
@@ -30,15 +30,18 @@ In Microsoft 365 organizzazioni con cassette postali di Exchange Online, è poss
 
 - [Creazione di report incorporati in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (in precedenza noto come Outlook Web App)
 
+  > [!NOTE]
+  > Se la segnalazione è stata [disabilitata in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), l'abilitazione degli invii degli utenti qui sostituirà tale impostazione e consentirà agli utenti di segnalare di nuovo i messaggi in Outlook sul Web.
+
 È inoltre possibile configurare gli strumenti di Reporting dei messaggi di terze parti per inoltrare i messaggi alla cassetta postale specificata.
 
 La distribuzione di messaggi segnalati dall'utente a una cassetta postale personalizzata invece che direttamente a Microsoft consente agli amministratori di segnalare selettivamente e manualmente i messaggi a Microsoft tramite l' [invio di amministratore](admin-submission.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina degli **invii degli utenti** , utilizzare <https://protection.office.com/userSubmissionsReportMessage> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina degli **invii degli utenti** , utilizzare <https://protection.office.com/userSubmissionsReportMessage> .
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per configurare la cassetta postale per gli invii degli utenti, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 

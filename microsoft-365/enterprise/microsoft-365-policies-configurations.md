@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214663"
+ms.locfileid: "44222328"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -120,7 +120,7 @@ In questa guida viene illustrato come creare criteri consigliati per applicare l
 
 In questa guida viene illustrato come implementare un insieme di criteri per proteggere l'accesso a Office 365, ad esempio Exchange Online, SharePoint Online e OneDrive for business. Oltre all'implementazione di questi criteri, è consigliabile aumentare anche il livello di protezione per il tenant utilizzando queste risorse:
 
-- [Configurare il tenant per una maggiore sicurezza](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): queste indicazioni si applicano alla sicurezza di base per il tenant.
+- [Configurare il tenant per una maggiore sicurezza](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security): queste indicazioni si applicano alla sicurezza di base per il tenant.
 - Guida [di orientamento alla sicurezza di Microsoft 365: priorità principali per i primi 30 giorni, 90 e oltre](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): questi suggerimenti includono la registrazione, la governance dei dati, l'accesso di amministratore e la protezione dalle minacce.
 
 

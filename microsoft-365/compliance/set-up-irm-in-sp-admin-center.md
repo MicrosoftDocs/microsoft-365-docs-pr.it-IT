@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Informazioni su come utilizzare IRM di SharePoint Online tramite Microsoft Azure Active Directory Rights Management Services (RMS) per proteggere gli elenchi e le raccolte documenti di SharePoint.
-ms.openlocfilehash: c981ceefde2cedb5f6c8731fd9a5ad9318174120
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab045c2319897a98bffd14f898dd254b06890bee
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634778"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222373"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -40,7 +40,7 @@ Dopo aver attivato il servizio Rights Management, accedere all'interfaccia di am
     
 2. Selezionare l'icona di avvio delle app ![Icona di avvio delle app di Office 365](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) nell'angolo in alto a sinistra e scegliere **Amministratore** per aprire l'interfaccia di amministrazione di Microsoft 365. Se non si Visualizza il riquadro amministratore, non si dispone delle autorizzazioni di amministratore nell'organizzazione. 
     
-3. Nel riquadro sinistro scegliere interfaccia di **Amministrazione** \> di **SharePoint**.
+3. Nel riquadro sinistro scegliere interfaccia di **Amministrazione** di \> **SharePoint**.
     
 4. Nel riquadro a sinistra, scegliere **Impostazioni**, quindi **pagina impostazioni classiche**.
     
@@ -77,6 +77,6 @@ SharePoint Online supporta la crittografia dei seguenti tipi di file:
 
 Dopo aver abilitato IRM per SharePoint Online, è possibile iniziare a applicare Rights Management agli elenchi e alle raccolte. Per informazioni, vedere [Applicare Information Rights Management a un elenco o una raccolta](apply-irm-to-a-list-or-library.md).
   
-Il nuovo client di sincronizzazione di OneDrive per Windows supporta la sincronizzazione delle raccolte documenti di SharePoint e delle posizioni OneDrive protette da IRM (purché l'impostazione IRM per la raccolta non sia impostata sulla scadenza dei diritti di accesso ai documenti). Per ulteriori informazioni o per iniziare a distribuire il nuovo client di sincronizzazione, vedere [distribuire il nuovo client di sincronizzazione di OneDrive per Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
+Il nuovo client di sincronizzazione di OneDrive per Windows supporta la sincronizzazione delle raccolte documenti di SharePoint e delle posizioni OneDrive protette da IRM (purché l'impostazione IRM per la raccolta non sia impostata sulla scadenza dei diritti di accesso ai documenti). Per ulteriori informazioni o per iniziare a distribuire il nuovo client di sincronizzazione, vedere [distribuire il nuovo client di sincronizzazione di OneDrive per Windows](https://docs.microsoft.com/onedrive/deploy-on-windows).
   
 [Inizio pagina](#introduction)  

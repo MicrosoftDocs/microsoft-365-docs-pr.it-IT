@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Informazioni su come abilitare ATP per SharePoint, OneDrive e teams, inclusa la procedura per impostare gli avvisi per i file rilevati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7708697f191107176173f2bfaced576c024954c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b4dfe56b635714cedf033f2d4f14cd6bc0286650
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036729"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224612"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivare ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -38,18 +38,18 @@ Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un r
 |Ruolo|Dove/come assegnato|
 |---------|---------|
 |amministratore globale|La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .|
-|Amministratore della sicurezza|Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
-|Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Amministratore della sicurezza|Interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Attivare ATP per SharePoint, OneDrive e Microsoft Teams
 
 **Prima di iniziare questa procedura, verificare che la registrazione di controllo sia già attiva per l'ambiente Microsoft 365**. Questa operazione viene in genere fatta da una persona a cui è stato assegnato il ruolo registri di controllo in Exchange Online. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. Passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account aziendale o dell'Istituto di istruzione.
+1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione.
 
-2. Nel riquadro di spostamento a sinistra del Centro sicurezza & conformità, in **gestione minacce**scegliere **allegati sicuri**per i **criteri** \> .
+2. Nel riquadro di spostamento a sinistra del Centro sicurezza & conformità, in **gestione minacce**scegliere **Policy** \> **allegati sicuri**per i criteri.
 
-   ![Nel centro sicurezza & conformità scegliere criteri di gestione \> delle minacce](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+   ![Nel centro sicurezza & conformità scegliere criteri di gestione delle minacce \>](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
 3. Selezionare **attiva ATP per SharePoint, OneDrive e Microsoft teams**.
 
@@ -71,7 +71,7 @@ Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un r
 
 Per ulteriori informazioni sull'utilizzo di PowerShell con Microsoft 365, vedere [gestire microsoft 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
 
-Per ulteriori informazioni sull'esperienza utente quando un file è stato rilevato come dannoso, vedere [cosa fare quando si trova un file dannoso in SharePoint Online, OneDrive o Microsoft teams](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
+Per ulteriori informazioni sull'esperienza utente quando un file è stato rilevato come dannoso, vedere [cosa fare quando si trova un file dannoso in SharePoint Online, OneDrive o Microsoft teams](https://support.microsoft.com/en-us/office/what-to-do-when-a-malicious-file-is-found-in-sharepoint-online-onedrive-or-microsoft-teams-01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
 
 ## <a name="set-up-alerts-for-detected-files"></a>Configurare gli avvisi per i file rilevati
 

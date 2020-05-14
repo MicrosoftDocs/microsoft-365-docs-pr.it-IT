@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: "Informazioni su come utilizzare il &amp; Centro sicurezza e conformità per preparare i dati per l'analisi con eDiscovery avanzato. "
-ms.openlocfilehash: 25b500e88e53dfae9b8fa9d504a402f4e2f7ce12
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 31bf002c275b228de12b7ff9e39fabf7c72be74d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208100"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214284"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Preparare i dati per Advanced eDiscovery (Classic)
 
@@ -37,7 +37,7 @@ Per analizzare i dati con Advanced eDiscovery, è possibile utilizzare i risulta
 Per la procedura dettagliata relativa alla preparazione dei risultati della ricerca per l'analisi in Advanced eDiscovery, vedere [Prepare search results for Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   
 > [!NOTE]
-> Se si dispone di dati al di fuori di Microsoft 365 e si desidera importarlo in Microsoft 365 in modo che sia possibile prepararlo e analizzarlo in Advanced eDiscovery, vedere [Overview of import PST files to microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) e [Archiving Third-Party data](https://go.microsoft.com/fwlink/p/?linkid=716918). 
+> Se si dispone di dati al di fuori di Microsoft 365 e si desidera importarlo in Microsoft 365 in modo che sia possibile prepararlo e analizzarlo in Advanced eDiscovery, vedere [Overview of import PST files to microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) e [Archiving Third-Party data](https://www.microsoft.com/?ref=go). 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>Passaggio 2: caricare i dati dei risultati della ricerca in un caso in Advanced eDiscovery
 

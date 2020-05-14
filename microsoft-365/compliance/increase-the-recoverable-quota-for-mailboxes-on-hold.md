@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: "Abilitare la cassetta postale di archiviazione e attivare l'archiviazione automatica per aumentare le dimensioni della cartella elementi ripristinabili per una cassetta postale in Office 365. "
-ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 884a03bc1693ec76cd3e80d85f62f4054e1d9911
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072925"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222709"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentare la quota degli elementi ripristinabili per le cassette postali bloccate
 
@@ -34,8 +34,8 @@ Per ridurre la possibilità di superare questo limite, la quota di archiviazione
 |**Percorso della cartella elementi ripristinabili**|**Cassette postali non in attesa**|**Cassette postali in blocco**|
 |:-----|:-----|:-----|
 |Cassetta postale principale  <br/> |30 GB  <br/> |100 GB  <br/> |
-|Cassetta postale di archiviazione<sup>\*</sup> <br/> |Illimitata  <br/> |Illimitata  <br/> |
-|**Quota di archiviazione totale per la cartella elementi ripristinabili** <br/> |Illimitata  <br/> |Illimitata  <br/> |
+|Cassetta postale di archiviazione<sup>\*</sup> <br/> |Illimitati  <br/> |Illimitati  <br/> |
+|**Quota di archiviazione totale per la cartella elementi ripristinabili** <br/> |Illimitati  <br/> |Illimitati  <br/> |
    
 > [!NOTE]
 > <sup>\*</sup>La quota di archiviazione iniziale per la cassetta postale di archivio è di 100 GB per gli utenti con una licenza di Exchange Online (piano 2). Tuttavia, quando l'archiviazione in espansione automatica è attivata per le cassette postali in blocco, la quota di archiviazione per la cassetta postale di archivio e la cartella elementi ripristinabili viene aumentata a 110 GB. Se necessario, verrà eseguito il provisioning di un ulteriore spazio di archiviazione dell'archivio, che consentirà di ottenere un numero illimitato di archiviazione. Per ulteriori informazioni sull'archiviazione automatica, vedere [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md). 
@@ -45,7 +45,7 @@ Quando la quota di archiviazione per la cartella elementi ripristinabili nella c
 - **Abilitazione della cassetta postale** di archiviazione e attivazione dell'archiviazione automatica-è possibile abilitare una capacità illimitata di archiviazione per la cartella elementi ripristinabili semplicemente abilitando la cassetta postale di archiviazione e quindi attivando la caratteristica di archiviazione in espansione automatica in Exchange Online. Ciò comporta 110 GB per la cartella elementi ripristinabili nella cassetta postale principale e una quantità illimitata di capacità di archiviazione per la cartella elementi ripristinabili nell'archivio dell'utente. Vedere come: [abilitare le cassette postali di archiviazione nel centro sicurezza & Compliance](enable-archive-mailboxes.md) e [abilitare l'archiviazione illimitata in Office 365](enable-unlimited-archiving.md).
     
     > [!NOTE]
-    > Dopo aver abilitato l'archivio per una cassetta postale vicina al superamento della quota di archiviazione per la cartella elementi ripristinabili, potrebbe essere necessario eseguire l'Assistente cartelle gestite per attivare manualmente l'assistente per elaborare la cassetta postale in modo che gli elementi scaduti vengano spostati nell' Cartella elementi ripristinabili nella cassetta postale di archiviazione. Per istruzioni, vedere [passaggio 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Tenere presente che gli altri elementi della cassetta postale dell'utente possono essere spostati nella nuova cassetta postale di archiviazione. È consigliabile informare l'utente che può verificarsi dopo aver abilitato la cassetta postale di archiviazione. 
+    > Dopo aver abilitato l'archivio per una cassetta postale vicina al superamento della quota di archiviazione per la cartella elementi ripristinabili, potrebbe essere necessario eseguire l'Assistente cartelle gestite per attivare manualmente l'assistente per elaborare la cassetta postale in modo che gli elementi scaduti vengano spostati nella cartella elementi ripristinabili nella cassetta postale di archiviazione. Per istruzioni, vedere [passaggio 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Tenere presente che gli altri elementi della cassetta postale dell'utente possono essere spostati nella nuova cassetta postale di archiviazione. È consigliabile informare l'utente che può verificarsi dopo aver abilitato la cassetta postale di archiviazione. 
   
 - **Creare un criterio di conservazione personalizzato per le cassette postali in attesa** -oltre che per abilitare la cassetta postale di archiviazione e l'archiviazione automatica per le cassette postali in blocco per controversia legale o in blocco sul posto, potrebbe essere necessario creare un criterio di conservazione personalizzato per le cassette postali in attesa. In questo modo è possibile applicare un criterio di conservazione alle cassette postali in blocco che differiscono dal criterio di gestione record di messaggistica predefinito applicato alle cassette postali che non sono in attesa. In questo modo è possibile applicare i tag di conservazione appositamente progettati per le cassette postali in blocco. Questo include la creazione di un nuovo tag di conservazione per la cartella elementi ripristinabili. 
     
@@ -78,7 +78,7 @@ Il primo passaggio consiste nel creare un tag di conservazione personalizzato (d
     ```
 
     > [!TIP]
-    > È consigliabile che il periodo di conservazione (definito dal parametro _AgeLimitForRetention_ ) per gli elementi ripristinabili sia lo stesso del periodo di conservazione per le cassette postali a cui verrà applicato il RPT. In questo modo un utente può recuperare il periodo di conservazione degli elementi eliminati prima che vengano spostati nella cassetta postale di archiviazione. Nell'esempio precedente, il periodo di conservazione è stato impostato su 30 giorni in base all'ipotesi che il periodo di conservazione degli elementi eliminati per le cassette postali sia anche di 30 giorni. Per impostazione predefinita, una cassetta postale di Exchange Online è configurata per mantenere gli elementi eliminati per 14 giorni. Tuttavia, è possibile modificare questa impostazione fino a un massimo di 30 giorni. Per ulteriori informazioni, vedere [modificare il periodo di conservazione degli elementi eliminati per una cassetta postale in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940). 
+    > È consigliabile che il periodo di conservazione (definito dal parametro _AgeLimitForRetention_ ) per gli elementi ripristinabili sia lo stesso del periodo di conservazione per le cassette postali a cui verrà applicato il RPT. In questo modo un utente può recuperare il periodo di conservazione degli elementi eliminati prima che vengano spostati nella cassetta postale di archiviazione. Nell'esempio precedente, il periodo di conservazione è stato impostato su 30 giorni in base all'ipotesi che il periodo di conservazione degli elementi eliminati per le cassette postali sia anche di 30 giorni. Per impostazione predefinita, una cassetta postale di Exchange Online è configurata per mantenere gli elementi eliminati per 14 giorni. Tuttavia, è possibile modificare questa impostazione fino a un massimo di 30 giorni. Per ulteriori informazioni, vedere [modificare il periodo di conservazione degli elementi eliminati per una cassetta postale in Exchange Online](https://www.microsoft.com/?ref=go). 
   
 ## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>Passaggio 2: creare un nuovo criterio di conservazione per le cassette postali in blocco
 
@@ -96,11 +96,11 @@ Prima di creare il nuovo criterio di conservazione, determinare i tag di conserv
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Creazione di un criterio di conservazione tramite l'interfaccia di amministrazione di Exchange
   
-1. Nell'interfaccia di amministrazione di Exchange, accedere a **criteri di conservazione**per la **gestione** \> della conformità](../media/ITPro-EAC-AddIcon.gif)e quindi fare clic su **Aggiungi** ![icona Aggiungi.
+1. Nell'interfaccia di amministrazione di Exchange, accedere a criteri di conservazione per la **gestione della conformità** \> **Retention policies**e quindi fare clic su **Aggiungi** ![ icona Aggiungi ](../media/ITPro-EAC-AddIcon.gif) .
     
 2. Nella pagina **nuovo criterio di conservazione** , in **nome**, digitare un nome che descriva lo scopo del criterio di conservazione. ad esempio, i **criteri di gestione record di messaggistica per le cassette postali**. 
     
-3. In **tag di conservazione**fare **** ![clic su Aggiungi](../media/ITPro-EAC-AddIcon.gif)icona Aggiungi.
+3. In **tag di conservazione**fare clic su **Aggiungi** ![ icona Aggiungi ](../media/ITPro-EAC-AddIcon.gif) .
     
 4. Nell'elenco dei tag di conservazione, selezionare il RPT elementi ripristinabili creato nel passaggio 1, quindi fare clic su **Aggiungi**.
     
@@ -139,7 +139,7 @@ L'ultimo passaggio consiste nell'applicare i nuovi criteri di conservazione crea
   
 1. Andare a **Destinatari** \> **Cassette postali**.
     
-2. Nella visualizzazione elenco, selezionare la cassetta postale a cui si desidera applicare il criterio di conservazione, quindi fare **** ![clic su modifica](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icona modifica.
+2. Nella visualizzazione elenco, selezionare la cassetta postale a cui si desidera applicare il criterio di conservazione, quindi fare clic su **modifica** ![ icona modifica ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
 3. Nella pagina **cassetta postale utente** , fare clic su **funzionalità cassette postali**.
     
@@ -223,8 +223,8 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-- Dopo aver abilitato la cassetta postale di archiviazione di un utente, è consigliabile comunicare all'utente che altri elementi della cassetta postale (non solo gli elementi nella cartella elementi ripristinabili) potrebbero essere spostati nella cassetta postale di archiviazione. Ciò è dovuto al fatto che il criterio di gestione record di messaggistica predefinito assegnato alle cassette postali di Exchange Online contiene un tag di conservazione (denominati 2 anni di spostamento in Archivio) che sposta gli elementi nella cassetta postale di archiviazione due anni dopo la data in cui l'elemento è stato recapitato alla cassetta postale o creato dal utente. Per ulteriori informazioni, vedere [criteri di conservazione predefiniti in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- Dopo aver abilitato la cassetta postale di archiviazione di un utente, è consigliabile comunicare all'utente che altri elementi della cassetta postale (non solo gli elementi nella cartella elementi ripristinabili) potrebbero essere spostati nella cassetta postale di archiviazione. Ciò è dovuto al fatto che il criterio di gestione record di messaggistica predefinito assegnato alle cassette postali di Exchange Online contiene un tag di conservazione (denominati 2 anni di spostamento in Archivio) che sposta gli elementi nella cassetta postale di archiviazione due anni dopo la data in cui l'elemento è stato recapitato alla cassetta postale o creato dall'utente. Per ulteriori informazioni, vedere [criteri di conservazione predefiniti in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
 - Dopo aver abilitato la cassetta postale di archiviazione di un utente, si potrebbe anche informare l'utente che è possibile recuperare gli elementi eliminati nella cartella elementi ripristinabili nella cassetta postale di archiviazione. È possibile eseguire questa operazione in Outlook selezionando la cartella **posta eliminata** nella cassetta postale di archiviazione e quindi facendo clic su **Ripristina elementi eliminati dal server** nella scheda **Home** . Per ulteriori informazioni sul ripristino degli elementi eliminati, vedere [recuperare gli elementi eliminati in Outlook per Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829). 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile cercare contenuto che potrebbe essere pertinente a un caso di eDiscovery di base.
-ms.openlocfilehash: b8aa090094dc2699ee774a9b662da17fefde1188
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: d17a9d16643ec9077e02b5438597237b80f09af5
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551450"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224623"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Ricerca di contenuto in un caso di eDiscovery di base
 
@@ -44,7 +44,7 @@ Per creare una ricerca di eDiscovery di base:
 
     ![Nuova ricerca](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-   a. È possibile specificare le parole chiave, le proprietà dei messaggi, ad esempio le date inviate e ricevute, o le proprietà del documento, ad esempio i nomi di file o la data dell'Ultima modifica di un documento. È possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio **and**, **or**, **not**, **near**o **ONEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di codice fiscale) nei documenti o cercare documenti condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca.
+   a. È possibile specificare le parole chiave, le proprietà dei messaggi, ad esempio le date inviate e ricevute, o le proprietà del documento, ad esempio i nomi di file o la data dell'Ultima modifica di un documento. È possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio **e**, **o**, **non**o **vicino**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di codice fiscale) nei documenti o cercare documenti condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca.
 
    b. È possibile fare clic sulla casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse dall'operatore **or** nella query di ricerca creata. È possibile immettere un massimo di 20 parole chiave all'elenco.
 

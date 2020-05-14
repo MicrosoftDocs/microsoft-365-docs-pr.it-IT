@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Creare un criterio di archiviazione ed eliminazione in Microsoft 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208060"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222527"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione
 
@@ -298,6 +298,6 @@ Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle
     |Non eliminare mai  <br/> |Questo tag impedisce che gli elementi vengano eliminati da un criterio di conservazione.  <br/> |Built-in  <br/> |Personali Questo tag può essere applicato dagli utenti.  <br/> |
     |Sposta elementi personali in archivio dopo 1 anni  <br/> |Sposta gli elementi nella cassetta postale di archiviazione dopo 1 anno.  <br/> |Built-in  <br/> |Personali Questo tag può essere applicato dagli utenti.  <br/> |
    
-    > <sup>\*</sup>Gli utenti possono utilizzare lo strumento Recupera elementi eliminati in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) per recuperare un elemento eliminato all'interno del periodo di conservazione degli elementi eliminati, che per impostazione predefinita è di 14 giorni in Exchange Online. Un amministratore può utilizzare Windows PowerShell per aumentare il periodo di conservazione degli elementi eliminati fino a un massimo di 30 giorni. Per ulteriori informazioni, vedere: [recuperare gli elementi eliminati in Outlook per Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) e [modificare il periodo di conservazione degli elementi eliminati per una cassetta postale in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940)
+    > <sup>\*</sup>Gli utenti possono utilizzare lo strumento Recupera elementi eliminati in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) per recuperare un elemento eliminato all'interno del periodo di conservazione degli elementi eliminati, che per impostazione predefinita è di 14 giorni in Exchange Online. Un amministratore può utilizzare Windows PowerShell per aumentare il periodo di conservazione degli elementi eliminati fino a un massimo di 30 giorni. Per ulteriori informazioni, vedere: [recuperare gli elementi eliminati in Outlook per Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) e [modificare il periodo di conservazione degli elementi eliminati per una cassetta postale in Exchange Online](https://www.microsoft.com/?ref=go)
   
 - Se si utilizza il tag di conservazione degli **elementi ripristinabili per 14 giorni** , viene liberato lo spazio di archiviazione nella cartella elementi ripristinabili nella cassetta postale principale dell'utente. Questo è utile quando la cassetta postale di un utente viene messa in attesa, il che significa che non è mai stata eliminata definitivamente la cassetta postale dell'utente. Senza spostare gli elementi nella cassetta postale di archiviazione, è possibile che venga raggiunta la quota di archiviazione per la cartella elementi ripristinabili nella cassetta postale principale. Per ulteriori informazioni su questo e su come evitarlo, vedere [aumentare la quota degli elementi ripristinabili per le cassette postali in blocco](https://go.microsoft.com/fwlink/p/?LinkId=786479).

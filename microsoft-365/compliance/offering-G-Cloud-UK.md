@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 66db28688a483aea8c0092202eda258a2032027f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066561"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214500"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Governo del Regno Unito-cloud (G-Cloud)
 
@@ -47,9 +47,9 @@ Informazioni su come accelerare la distribuzione di G-Cloud V6 per il Regno Unit
 - Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Office 365: Exchange Online, SharePoint Online e Skype for business online
-- Servizio cloud PowerApps come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
@@ -105,7 +105,7 @@ Oltre ai datacenter nel Regno Unito, i servizi cloud Microsoft dispongono di dat
 
 **Come è possibile ottenere le copie dei report di un revisore?**
 
-Il [Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) fornisce report di conformità controllati in modo indipendente. È possibile utilizzare il portale per richiedere i rapporti di controllo in modo che i revisori possano confrontare i risultati Microsoft con i propri requisiti legali e normativi.
+Il [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) fornisce report di conformità controllati in modo indipendente. È possibile utilizzare il portale per richiedere i rapporti di controllo in modo che i revisori possano confrontare i risultati Microsoft con i propri requisiti legali e normativi.
 
 ## <a name="resources"></a>Risorse
 
@@ -114,4 +114,4 @@ Il [Service Trust Portal](https://support.office.com/article/Get-started-with-th
 - [Principi di sicurezza di G-Cloud](https://aka.ms/UK-G-Cloud)
 - [Mercato digitale](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

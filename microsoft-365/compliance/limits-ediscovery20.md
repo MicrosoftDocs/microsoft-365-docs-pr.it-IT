@@ -1,5 +1,5 @@
 ---
-title: Limiti avanzati di eDiscovery
+title: Limiti di Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui limiti in vigore per la soluzione avanzata di eDiscovery in Microsoft 365. Questo include i limiti di caso, i limiti di indicizzazione e i limiti di ricerca quando si utilizza lo strumento di ricerca per raccogliere i dati del caso.
-ms.openlocfilehash: b3e5dd1d80a60249ccc24d1af20f5e78f94f8421
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5fe14aec3be9de2ec614ecf3737387f08d2e7b88
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585715"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224663"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limiti di Advanced eDiscovery
 
@@ -58,10 +58,10 @@ I limiti descritti in questa sezione sono correlati all'utilizzo dello strumento
 |:-----|:-----|
 |Numero massimo di cassette postali o siti che possono essere ricercati in una singola ricerca.  <br/> |Nessun limite  <br/> |
 |Numero massimo di ricerche che possono essere eseguite contemporaneamente.  <br/> |Nessun limite  <br/> | 
-|Numero massimo di ricerche che un singolo utente può avviare contemporaneamente.  <br/> |10   <br/> | 
+|Numero massimo di ricerche che un singolo utente può avviare contemporaneamente.  <br/> |10    <br/> | 
 |Numero massimo di caratteri per una query di ricerca (inclusi operatori e condizioni).  <br/> |**Cassette postali**: 10.000<br/>**Siti**: 4.000 quando si effettua la ricerca in tutti i siti o 2.000 quando si effettua la ricerca fino a 20 siti <sup>2</sup> <br/> |
-|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso; ad esempio **1\* ** o **set\***. <br/> |3   <br/> |  
-|Numero massimo di varianti restituite quando si utilizza il carattere jolly prefisso per cercare una frase esatta o quando si utilizza un carattere jolly prefisso e l'operatore booleano **near** o **ONEAR** .  <br/> |10.000 <sup>3</sup> <br/> |
+|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso; ad esempio **1 \* ** o **set \* **. <br/> |3   <br/> |  
+|Numero massimo di varianti restituite quando si utilizza il carattere jolly del prefisso per cercare una frase esatta o quando si utilizza un carattere jolly di prefisso e l'operatore booleano **vicino** .  <br/> |10.000 <sup>3</sup> <br/> |
 |Numero massimo di elementi per ogni cassetta postale utente che vengono visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti.   <br/> |100  <br/> |
 |Numero massimo di elementi di tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.  <br/> |1.000  <br/> |
 |Numero massimo di cassette postali che è possibile visualizzare in anteprima per i risultati della ricerca.  Se sono presenti più di 1000 cassette postali che contengono elementi che corrispondono alla query di ricerca, sono disponibili per l'anteprima solo le cassette postali di 1.000 con la maggior parte dei risultati.<br/> |1.000  <br/> |
@@ -92,6 +92,6 @@ I limiti descritti in questa sezione sono correlati all'utilizzo dello strumento
 > [!NOTE]
 > <sup>1</sup> qualsiasi elemento che supera il limite di un singolo file verrà visualizzato come un errore di elaborazione.<br/>
 > <sup>2</sup> quando si eseguono ricerche nei percorsi di SharePoint e OneDrive for business, i caratteri negli URL dei siti di cui è stata eseguita la ricerca vengono conteggiati rispetto a questo limite.<br/>
-> <sup>3</sup> per le query non basate su frasi (un valore di parola chiave che non utilizza virgolette doppie) viene utilizzato un indice di prefisso speciale. Questo indica che si verifica una parola in un documento, ma non in cui si trova nel documento. Per eseguire una query di frase (un valore di parola chiave con virgolette doppie), è necessario confrontare la posizione all'interno del documento per le parole della frase. Questo significa che non è possibile utilizzare l'indice di prefisso per le query di frase. In questo caso, la query viene espansa internamente con tutte le parole possibili che il prefisso espande; ad esempio, **il\* tempo** può espandersi su **"ora o timer o orari o Timex o timeboxed o..."**. Il limite di 10.000 è il numero massimo di varianti a cui la parola può espandersi, non il numero di documenti che corrispondono alla query. Non esiste un limite superiore per i termini non frase.<br/>
+> <sup>3</sup> per le query non basate su frasi (un valore di parola chiave che non utilizza virgolette doppie) viene utilizzato un indice di prefisso speciale. Questo indica che si verifica una parola in un documento, ma non in cui si trova nel documento. Per eseguire una query di frase (un valore di parola chiave con virgolette doppie), è necessario confrontare la posizione all'interno del documento per le parole della frase. Questo significa che non è possibile utilizzare l'indice di prefisso per le query di frase. In questo caso, la query viene espansa internamente con tutte le parole possibili che il prefisso espande; ad esempio, **il \* tempo** può espandersi su **"ora o timer o orari o Timex o timeboxed o..."**. Il limite di 10.000 è il numero massimo di varianti a cui la parola può espandersi, non il numero di documenti che corrispondono alla query. Non esiste un limite superiore per i termini non frase.<br/>
 > <sup>4</sup> questo limite si applica al download di documenti selezionati da un set di revisione. Non si applica ai documenti di esportazione da un set di revisione. Per ulteriori informazioni sul download e l'esportazione di documenti, vedere [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md). <br/>
 

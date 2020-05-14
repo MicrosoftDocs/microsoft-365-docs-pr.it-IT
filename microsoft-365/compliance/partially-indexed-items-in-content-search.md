@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Informazioni sugli elementi non indicizzati in Exchange e SharePoint che è possibile includere in una ricerca di contenuto tramite il Centro sicurezza & Compliance. '
-ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 534f0014a448b4ef280586a724067f1a4f820693
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626680"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214212"
 ---
 # <a name="partially-indexed-items-in-content-search"></a>Elementi parzialmente indicizzati in Ricerca contenuto
 
@@ -57,11 +57,11 @@ Alcuni tipi di file, ad esempio i file Bitmap o MP3, non presentano contenuti ch
   
 Per un elenco dei formati di file supportati e disattivati, vedere i seguenti argomenti:
   
-- **Exchange** - [Formati di file di Exchange indicizzati da ricerca di Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  -  [Formati di file indicizzati da ricerca di Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
-- **Exchange** - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  -  [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **SharePoint**Estensioni del[nome di file sottoposte a ricerca per indicizzazione e tipi di file analizzati in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)  - 
+- **SharePoint**  -  [Estensioni di file sottoposte a ricerca per indicizzazione predefinite e tipi di file analizzati in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
     
 
   
@@ -112,7 +112,7 @@ Una delle eccezioni a questa regola è quando si crea un blocco basato su query 
 
 Nella tabella seguente vengono descritti i limiti di indicizzazione che possono comportare la restituzione di un messaggio di posta elettronica come elemento parzialmente indicizzato in una ricerca di contenuto in Office 365.
   
-Per un elenco dei limiti di indicizzazione per i documenti di SharePoint, vedere [limiti della ricerca per SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f).
+Per un elenco dei limiti di indicizzazione per i documenti di SharePoint, vedere [limiti della ricerca per SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
   
 |**Limite di indicizzazione**|**Note**|**Descrizione**|
 |:-----|:-----|:-----|
