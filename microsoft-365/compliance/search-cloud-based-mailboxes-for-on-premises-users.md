@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Usare lo strumento Ricerca contenuto nel Centro sicurezza e conformità per cercare ed esportare i dati delle chat di Microsoft Teams (denominate chat 1xN) degli utenti locali in una distribuzione ibrida di Exchange.
-ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 488a08067a39ff4bab61696d5faf8b7c849b4ab8
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034573"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214600"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali
 
@@ -59,7 +59,7 @@ Includere le informazioni seguenti quando si invia la richiesta al Supporto tecn
   
 - Nome di dominio predefinito dell'organizzazione.
 
-- Nome e ID del tenant dell'organizzazione. Queste informazioni sono disponibili nel portale di Azure Active Directory (in **Gestione** \> **Proprietà**). Vedere [Trovare l'ID tenant di Microsoft 365](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- Nome e ID del tenant dell'organizzazione. Queste informazioni sono disponibili nel portale di Azure Active Directory (in **Gestione** \> **Proprietà**). Vedere [Trovare l'ID tenant di Microsoft 365](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
 
 - Il titolo seguente o la descrizione dello scopo della richiesta di supporto: "Abilitare la ricerca di contenuto dell'applicazione per gli utenti locali". Questo consentirà di instradare la richiesta al team di progettazione di eDiscovery che implementerà la richiesta.
 

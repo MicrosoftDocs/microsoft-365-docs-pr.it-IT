@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9564445f6b5a92479ba264947dbeaa109db76e14
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 196cbc0ebc05683315766b736dd9d5fc2d92afd2
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036219"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214570"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protezione delle informazioni per RGPD con le funzionalità di Microsoft 365
 
@@ -56,8 +56,8 @@ Microsoft fornisce una configurazione consigliata, che è possibile usare come p
 
 La protezione dalle minacce è incorporata in tutti i servizi Microsoft 365. Ecco alcune risorse per iniziare:
 
-- [Roadmap sulla sicurezza di Office 365: priorità per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352). Questa roadmap include elementi consigliati per l'implementazione delle funzionalità. 
-- [Proteggere l'ambiente dalle minacce in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Informazioni sulle azioni di protezione che è possibile effettuare nel centro sicurezza Microsoft 365.
+- [Roadmap sulla sicurezza di Office 365: priorità per i primi 30 giorni, 90 giorni e oltre](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap). Questa roadmap include elementi consigliati per l'implementazione delle funzionalità. 
+- [Proteggere l'ambiente dalle minacce in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats). Informazioni sulle azioni di protezione che è possibile effettuare nel centro sicurezza Microsoft 365.
 - [Protezione dalle minacce in Windows](https://docs.microsoft.com/windows/security/threat-protection/). Ulteriori informazioni su Windows Defender Advanced Threat Protection e altre funzionalità in Windows 10.
 
 ## <a name="learn-more"></a>Altre informazioni

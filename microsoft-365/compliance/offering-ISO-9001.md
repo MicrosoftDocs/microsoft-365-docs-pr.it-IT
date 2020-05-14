@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 279ecf60b0d9c023449031a3c5f086f15b18049f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065751"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214304"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 Quality Management Systems Standards
 
@@ -57,15 +57,15 @@ Questa norma fornisce indicazioni e strumenti per i provider e i clienti di serv
 
 **Dove posso reperire i report di controllo e le dichiarazioni di ambito di ISO 9001:2015 per i servizi Microsoft?**
 
-Il [Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) fornisce report di conformità controllati in modo indipendente. È possibile usare il portale per richiedere report in modo che i revisori possano confrontare i risultati dei servizi cloud di Microsoft con i requisiti normativi e legali che li riguardano. Sono disponibili il [Report di valutazione FY17 ISO 9001 di Microsoft Azure](https://aka.ms/Azure9001Report) e [Certificato FY17 ISO 9001 di Microsoft Azure](https://aka.ms/Azure9001Cert).
+Il [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) fornisce report di conformità controllati in modo indipendente. È possibile usare il portale per richiedere report in modo che i revisori possano confrontare i risultati dei servizi cloud di Microsoft con i requisiti normativi e legali che li riguardano. Sono disponibili il [Report di valutazione FY17 ISO 9001 di Microsoft Azure](https://www.microsoft.com/?ref=aka) e [Certificato FY17 ISO 9001 di Microsoft Azure](https://www.microsoft.com/?ref=aka).
 
 **Microsoft conduce test annuali per i problemi dell'infrastruttura?**
 
-Sì. La valutazione annuale ISO 9001:2015 include il infrastruttura fisica sottostante, ovvero il data center. [Rivedere il certificato](https://aka.ms/Azure9001Cert) per i dettagli della copertura.
+Sì. La valutazione annuale ISO 9001:2015 include il infrastruttura fisica sottostante, ovvero il data center. [Rivedere il certificato](https://www.microsoft.com/?ref=aka) per i dettagli della copertura.
 
 **Dove posso consultare le informazioni sull'adeguamento di Microsoft per ISO 9001:2015?**
 
-È possibile scaricare il [certificato ISO 9001:2015](https://aka.ms/Azure9001Cert) per Azure e altri servizi inclusi nell'ambito della valutazione.
+È possibile scaricare il [certificato ISO 9001:2015](https://www.microsoft.com/?ref=aka) per Azure e altri servizi inclusi nell'ambito della valutazione.
 
 ## <a name="resources"></a>Risorse
 

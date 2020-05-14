@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come preparare gli utenti finali al passaggio a Windows 10 e Microsoft 365 Apps for enterprise tramite comunicazioni e formazione.
-ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6118e1029186c84bebdb0fee079364f22356c2e
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636748"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222662"
 ---
 # <a name="step-8-user-communications-and-training"></a>Passaggio 8: comunicazioni e formazione utente
 
@@ -61,7 +61,7 @@ Sono inoltre presenti controlli di sicurezza e conformità visibili cui gli uten
 
 Ad esempio, se è stata attivata l'autenticazione a più fattori, questa utilizza Azure AD e protegge l'accesso dell'utente alle risorse sfruttando l'app o il PIN di un telefono per accedere in modo sicuro ai servizi. Inoltre, Azure Information Protection facilita la classificazione e l'etichettatura dei documenti da parte degli utenti.
 
-[Configurare l'autenticazione a più fattori per gli utenti](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Configurare l'autenticazione a più fattori per gli utenti](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
 
 Queste sono solo alcune delle nuove funzionalità che saranno sperimentate dagli utenti e alcune potrebbero coglierli di sorpresa, in modo positivo o meno. Tali sorprese, specialmente se alterano il normale flusso di lavoro, possono comportare più chiamate e ticket per l'helpdesk.
 

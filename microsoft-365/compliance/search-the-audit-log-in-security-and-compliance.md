@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. "
-ms.openlocfilehash: f3cf16da0c7623c1cdd7f90272fa4b11126dcc25
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+ms.openlocfilehash: 447777c4cf3eb8532e30977d97694445647889d4
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805188"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208080"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -69,7 +69,7 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
-- È necessario che l'amministratore corrente (o un altro amministratore) attivi la registrazione di controllo prima di iniziare a eseguire ricerche nel log di controllo. Per attivare la registrazione, fare clic su **Attiva il controllo** nella pagina **Ricerca log di controllo** del Centro sicurezza e conformità. Se questo collegamento non è visibile, il controllo è stato già attivato per la propria organizzazione. Dopo l'attivazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. Questa procedura deve essere eseguita una sola volta. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
+- È necessario che l'amministratore corrente (o un altro amministratore) abiliti la registrazione di controllo prima di iniziare a eseguire ricerche nel log di controllo. Per attivare la registrazione, fare clic su **Attiva il controllo** nella pagina **Ricerca log di controllo** del Centro sicurezza e conformità. Se questo collegamento non è visibile, il controllo è stato già attivato per la propria organizzazione. Dopo l'attivazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. Questa procedura deve essere eseguita una sola volta. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
 
   > [!NOTE]
   > Microsoft sta per impostare come predefinita l'attivazione del controllo. Nel frattempo, è possibile attivarlo come descritto in precedenza.
@@ -86,12 +86,12 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
     > [!NOTE]
     > Se l'organizzazione ha partecipato al programma di anteprima privata per la conservazione dei record di controllo per un anno, la durata di conservazione per i record di controllo generati prima della data di implementazione della disponibilità generale non verrà reimpostata.
 
-  - Per gli utenti con qualsiasi altra licenza Office 365 o Microsoft 365 (non E5), i record di controllo vengono conservati per 90 giorni. Per un elenco degli abbonamenti a Office 365 e Microsoft 365 che supportano la registrazione di controllo unificato, vedere [la descrizione del servizio del Centro sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+  - Per gli utenti con qualsiasi altra licenza di Office 365 o Microsoft 365 (non E5), i record di controllo vengono conservati per 90 giorni. Per un elenco degli abbonamenti a Office 365 e Microsoft 365 che supportano la registrazione di controllo unificato, vedere [la descrizione del servizio del Centro sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
     > Anche se il controllo delle cassette postali è attivato per impostazione predefinita, si potrebbe notare che gli eventi di controllo delle cassette postali per alcuni utenti non sono inclusi nelle ricerche nei log di controllo nel Centro sicurezza e conformità o nell'API Office 365 Management Activity. Vedere la sezione [Altre informazioni sulla registrazione di controllo delle cassette postali](enable-mailbox-auditing.md#more-information).
 
-- Se si desidera disattivare la ricerca nel log di controllo per la propria organizzazione, è possibile eseguire questo comando nell'istanza di PowerShell remota connessa all'organizzazione di Exchange Online:
+- Se si desidera disabilitare la ricerca nel log di controllo per la propria organizzazione, è possibile eseguire questo comando nell'istanza di PowerShell remota connessa all'organizzazione di Exchange Online:
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -103,9 +103,9 @@ Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
-  Per altre informazioni, vedere [Disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
+  Per altre informazioni, vedere [Disabilitare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
 
-- Come indicato in precedenza, il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Ciò significa che è possibile usare questo cmdlet anziché la pagina **Ricerca log di controllo** in Centro sicurezza e conformità per eseguire una ricerca nel log di controllo. È necessario eseguire questo cmdlet in una sessione remota di PowerShell connessa all'organizzazione di Exchange Online. Per altre informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Come indicato in precedenza, il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online, ovvero **Search-UnifiedAuditLog**. Ciò significa che è possibile usare questo cmdlet anziché la pagina **Ricerca log di controllo** nel Centro sicurezza e conformità per eseguire una ricerca nel log di controllo. È necessario eseguire questo cmdlet in una sessione remota di PowerShell connessa all'organizzazione di Exchange Online. Per altre informazioni, vedere [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
 
   Per informazioni sull'esportazione dei risultati della ricerca restituiti dal cmdlet **Search-UnifiedAuditLog** in un file CSV, vedere la sezione "Suggerimenti per l'esportazione e la visualizzazione del log di controllo in [Esportare, configurare e visualizzare i record del log di controllo ](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -500,12 +500,12 @@ Nella tabella seguente sono elencati gli eventi derivanti da attività di ammini
 |Agente utente esente aggiunto|ExemptUserAgentSet|L'amministratore di SharePoint o l'amministratore globale aggiunge un agente utente all'elenco di agenti utente esenti nell'interfaccia di amministrazione di SharePoint.|
 |Amministratore dell'area geografica aggiunto|GeoAdminAdded|Un amministratore globale o di SharePoint ha aggiunto un utente come amministratore geografico di una posizione.|
 |Utente autorizzato a creare gruppi|AllowGroupCreationSet|Un proprietario o un amministratore del sito aggiunge un livello di autorizzazione a un sito che consente a un utente a cui viene assegnata tale autorizzazione di creare un gruppo per tale sito.|
-|È stato annullato lo spostamento geografico di un sito|SiteGeoMoveCancelled|Un amministratore globale o di SharePoint annulla correttamente uno spostamento geografico di un sito SharePoint o OneDrive. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche di centri dati Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive e SharePoint Online](https://go.microsoft.com/fwlink/?linkid=860840).|
+|È stato annullato lo spostamento geografico di un sito|SiteGeoMoveCancelled|Un amministratore globale o di SharePoint annulla correttamente uno spostamento geografico di un sito SharePoint o OneDrive. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche dei data center di Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive e SharePoint Online](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Criterio di condivisione cambiato|SharingPolicyChanged|Un amministratore globale o di SharePoint ha modificato i criteri di condivisione di SharePoint usando il portale di amministrazione di Microsoft 365, il portale di amministrazione di SharePoint o SharePoint Online Management Shell. Qualsiasi modifica alle impostazioni dei criteri di condivisione dell'organizzazione verrà registrata. Il criterio modificato viene identificato nel campo **ModifiedProperties** nelle proprietà dettagliate del record dell'evento.|
 |I criteri di accesso per i dispositivi sono stati modificati|DeviceAccessPolicyChanged|Un amministratore di SharePoint o globale ha cambiato i criteri dei dispositivi non gestiti per l'organizzazione. Questo criterio controlla l'accesso a SharePoint, OneDrive e Microsoft 365 da dispositivi che non fanno parte dell'organizzazione. La configurazione di questo criterio richiede un abbonamento Enterprise Mobility + Security. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).|
 |Agenti utente esenti cambiati|CustomizeExemptUsers|L'amministratore globale o SharePoint ha personalizzato l'elenco di agenti utente esenti nell'interfaccia di amministrazione di SharePoint. È possibile specificare quali agenti utente esentare dalla ricezione di un'intera pagina Web da indicizzare. Ciò significa che quando un agente utente specificato come esente rileva un modulo di InfoPath, il modulo verrà restituito come file XML, invece che come pagina Web intera. In questo modo l'indicizzazione dei moduli di InfoPath risulta più veloce.|
 |Sono stati modificati i criteri di accesso alla rete|NetworkAccessPolicyChanged|Un amministratore di SharePoint o globale ha cambiato i criteri di accesso basati sulla posizione, denominati anche limite di rete attendibile, nell'interfaccia di amministrazione di SharePoint oppure usando PowerShell di SharePoint Online. Questi criteri controllano chi può accedere alle risorse di SharePoint e OneDrive nell'organizzazione in base a intervalli di indirizzi IP specificati dall'utente. Per altre informazioni, vedere [Controllare l'accesso ai dati di SharePoint Online e OneDrive in base a determinati percorsi di rete](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).|
-|Spostamento geografico di un sito completato|SiteGeoMoveCompleted|Uno spostamento geografico di un sito, pianificato da un amministratore globale dell'organizzazione, è stato completato correttamente. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche di centri dati Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive and SharePoint Online in OneDrive e SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Spostamento geografico di un sito completato|SiteGeoMoveCompleted|Uno spostamento geografico di un sito, pianificato da un amministratore globale dell'organizzazione, è stato completato correttamente. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche dei data center di Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive and SharePoint Online in OneDrive e SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Connessione Inviato a creata|SendToConnectionAdded|L'amministratore di SharePoint o globale crea una nuova connessione Invia a nella pagina Gestione record nell'interfaccia di amministrazione di SharePoint. Una connessione di invio specifica le impostazioni per un archivio documenti o un centro record. Quando si crea una connessione di invio, un Content Organizer può inviare documenti alla posizione specificata.|
 |Raccolta siti creata|SiteCollectionCreated|Un amministratore SharePoint o globale crea una raccolta siti nell'organizzazione di SharePoint Online o un utente esegue il provisioning del sito di OneDrive for Business.|
 |Sito hub orfano eliminato|HubSiteOrphanHubDeleted|Un amministratore SharePoint o globale ha eliminato un sito hub orfano, ossia un sito hub a cui non sono associati siti. È probabile che l'hub orfano sia causato dall'eliminazione del sito hub originale.|
@@ -521,7 +521,7 @@ Nella tabella seguente sono elencati gli eventi derivanti da attività di ammini
 |Rimossa la posizione dei dati consentita|AllowedDataLocationDeleted|Un amministratore SharePoint o globale ha rimosso una posizione di dati consentita in un ambiente multi-geografico.|
 |Amministratore dell'area geografica rimosso|GeoAdminDeleted|Un amministratore SharePoint o globale ha aggiunto un utente come amministratore geografico di una posizione.|
 |Sito rinominato|SiteRenamed|Un proprietario o un amministratore del sito rinomina un sito.|
-|Spostamento geografico di un sito pianificato|SiteGeoMoveScheduled|Un amministratore SharePoint o globale programma correttamente uno spostamento geografico di un sito SharePoint o OneDrive. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche di centri dati Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive and SharePoint Online in OneDrive e SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Spostamento geografico di un sito pianificato|SiteGeoMoveScheduled|Un amministratore SharePoint o globale programma correttamente uno spostamento geografico di un sito SharePoint o OneDrive. La funzionalità Multi-Geo Capabilities consente a un'organizzazione di utilizzare più aree geografiche dei data center di Microsoft, note anche come geo. Per altre informazioni, vedere [Multi-Geo Capabilities in OneDrive and SharePoint Online in OneDrive e SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Sito host impostato|HostSiteSet|Un amministratore di SharePoint o globale cambia il sito designato per ospitare siti di OneDrive for Business o personali.|
 |Impostare una quota di archiviazione per una posizione geografica|GeoQuotaAllocated|Un amministratore SharePoint o globale ha configurato una quota di archiviazione per una posizione geografica in un ambiente multi-geografico.|
 |Sito separato dal sito hub|HubSiteUnjoined|Il proprietario di un sito annulla l'associazione del sito a un sito hub.|
@@ -634,7 +634,7 @@ La tabella seguente elenca le attività di amministrazione ruoli di Azure AD reg
 |:-----|:-----|:-----|
 |Membro aggiunto a ruolo|Aggiunta di un membro del ruolo al ruolo|È stato aggiunto un utente a un ruolo di amministratore in Microsoft 365.|
 |Utente rimosso da un ruolo della directory|Rimozione di un membro del ruolo dal ruolo|È stato rimosso un utente da un ruolo di amministratore in Microsoft 365.|
-|Impostazione delle informazioni di contatto aziendali|Impostazione delle informazioni di contatto aziendali|Sono state aggiornare le preferenze di contatto a livello aziendale per l'organizzazione. Le informazioni includono indirizzi di posta elettronica per messaggi correlati all'abbonamento inviati da Microsoft 365, nonché notifiche tecniche relative ai servizi.|
+|Impostazione delle informazioni di contatto aziendali|Impostazione delle informazioni di contatto aziendali|Sono state aggiornare le preferenze di contatto a livello aziendale per l'organizzazione. Le informazioni includono indirizzi e-mail per messaggi correlati all'abbonamento inviati da Microsoft 365, nonché notifiche tecniche relative ai servizi.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Attività di amministrazione directory
@@ -647,7 +647,7 @@ La tabella seguente elenca le attività correlate a dominio e directory di Azure
 |Partner aggiunto alla directory|Aggiunta di un partner alla società|È stato aggiunto un partner (amministratore delegato) all'organizzazione.|
 |Dominio rimosso da società|Rimozione di un dominio dalla società|È stato rimosso un dominio dall'organizzazione.|
 |Partner rimosso dalla directory|Rimozione di un partner dalla società|È stato rimosso un partner (amministratore delegato) dall'organizzazione.|
-|Informazioni sulla società impostate|Informazioni sulla società impostate|Sono state aggiornate le informazioni sulla società per l'organizzazione. Le informazioni includono indirizzi di posta elettronica per messaggi correlati all'abbonamento inviati da Microsoft 365, nonché notifiche tecniche relative ai servizi di Microsoft 365.|
+|Informazioni sulla società impostate|Informazioni sulla società impostate|Sono state aggiornate le informazioni sulla società per l'organizzazione. Le informazioni includono indirizzi e-mail per messaggi correlati all'abbonamento inviati da Microsoft 365, nonché notifiche tecniche relative ai servizi di Microsoft 365.|
 |Impostazione dell'autenticazione del dominio|Impostazione dell'autenticazione del dominio|È stata modificata l'impostazione di autenticazione del dominio per l'organizzazione.|
 |Impostazioni della federazione aggiornate per un dominio|Configurazione delle impostazioni di federazione nel dominio|Sono state modificate le impostazioni di federazione (condivisione esterna) per l'organizzazione.|
 |Criteri password impostati|Criteri password impostati|Sono stati modificati i vincoli di lunghezza e caratteri per le password utente nell'organizzazione.|
@@ -684,7 +684,7 @@ Nella tabella seguente sono elencate le attività dall'esecuzione di attività i
 |:-----|:-----|:-----|
 |Aggiungere dati a un altro insieme da rivedere|AddWorkingSetQueryToWorkingSet|L'utente ha aggiunto i documenti di un insieme da rivedere a un altro insieme da rivedere.|
 |Aggiunti dati a un insieme da rivedere|AddQueryToWorkingSet|L'utente ha aggiunto i risultati della ricerca da una ricerca di contenuto associata a un caso di Advanced eDiscovery a un insieme da rivedere.|
-|Aggiunti dati non-Microsoft 365 a un insieme da rivedere|AddNonOffice365DataToWorkingSet|L'utente ha aggiunto dati non-Microsoft 365 a un insieme da rivedere.|
+|Sono stati aggiunti dati non di Microsoft 365 a un insieme da rivedere|AddNonOffice365DataToWorkingSet|L'utente ha aggiunto dati non di Microsoft 365 a un insieme da rivedere.|
 |Aggiunta di documenti con correzione a un insieme da rivedere|AddRemediatedData|L'utente carica i documenti con errori di indicizzazione corretti in un insieme da rivedere.|
 |Dati analizzati nell'insieme da rivedere|RunAlgo|L'utente ha eseguito analisi sui documenti in un insieme da rivedere.|
 |Documento con annotazioni nell'insieme da rivedere|AnnotateDocument|L'utente ha annotato un documento in un insieme da rivedere. L'annotazione include la correzione del contenuto di un documento.|
@@ -903,7 +903,7 @@ La tabella seguente elenca gli eventi risultanti dalle attività di etichettatur
 La registrazione di controllo dell'amministratore di Exchange, abilitata per impostazione predefinita in Office 365, registra un evento nel log di controllo quando un amministratore (o un utente a cui sono state assegnate autorizzazioni amministrative) apporta una modifica nell'organizzazione di Exchange Online. Le modifiche apportate mediante l'interfaccia di amministrazione di Exchange o eseguendo un cmdlet in PowerShell per Exchange Online vengono registrate nel log di controllo di amministrazione di Exchange. I cmdlet che iniziano con **Get-**, **Search-** o **Test-** non vengono registrati nel log di controllo. Per informazioni dettagliate sulla registrazione di controllo dell'amministratore in Exchange, vedere [Registrazione di controllo dell'amministratore](https://go.microsoft.com/fwlink/p/?LinkID=619225).
 
 > [!IMPORTANT]
-> Alcuni cmdlet di Exchange Online che non sono stati registrati nel log di controllo di amministrazione di Exchange o nel log di controllo. Molti di questi cmdlet sono correlati alla gestione del servizio Exchange Online e sono eseguiti dal personale del centro dati Microsoft o dagli account di servizio. Questi cmdlet non vengono registrati perché comportano un gran numero di eventi di controllo "fastidiosi". Se è presente un cmdlet di Exchange Online che non viene controllato, inviare un suggerimento al [Forum UserVoice su sicurezza e conformità](https://office365.uservoice.com/forums/289138-office-365-security-compliance) e chiedere che sia abilitato per il controllo. È anche possibile inviare una richiesta di modifica della progettazione al supporto tecnico Microsoft.
+> Alcuni cmdlet di Exchange Online che non sono stati registrati nel log di controllo di amministrazione di Exchange o nel log di controllo. Molti di questi cmdlet sono correlati alla gestione del servizio Exchange Online e sono eseguiti dal personale del centro dati Microsoft o dagli account di servizio. Questi cmdlet non vengono registrati perché comportano un gran numero di eventi di controllo "fastidiosi". Se è presente un cmdlet di Exchange Online che non viene controllato, inviare un suggerimento al [forum UserVoice su sicurezza e conformità](https://office365.uservoice.com/forums/289138-office-365-security-compliance) e chiedere che sia abilitato per il controllo. È anche possibile inviare una richiesta di modifica della progettazione al supporto tecnico Microsoft.
 
 Di seguito sono forniti alcuni suggerimenti per la ricerca delle attività di amministrazione di Exchange durante la ricerca nel log di controllo:
 

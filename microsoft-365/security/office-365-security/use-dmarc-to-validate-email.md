@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare DMARC (Domain-based Message Authentication, Reporting, and Conformance) per convalidare i messaggi inviati dall'organizzazione.
-ms.openlocfilehash: 9de3ef1218be8152dc0795809c21efe8a93fd659
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 9ae159ccb2673fd9c8538b184e4de1b8e1c2b039
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708548"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224578"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usare DMARC per convalidare la posta elettronica
 
@@ -84,13 +84,13 @@ Microsoft invia i propri report DMARC a una terza parte:[Agari](https://agari.co
 
 ## <a name="implement-dmarc-for-inbound-mail"></a>Implementare DMARC per la posta in ingresso
 
-Non serve fare nulla per configurare DMARC per la posta ricevuta in Microsoft 365. Microsoft si occupa di tutto. Per sapere cosa succede alla posta che non supera i controlli DMARC, vedere [Modalità di gestione della posta elettronica in ingresso che non supera DMARC da parte di Microsoft 365](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
+Non serve fare nulla per configurare DMARC per la posta ricevuta in Microsoft 365. Microsoft si occupa di tutto. Per sapere cosa succede alla posta che non supera i controlli DMARC, vedere [Come viene gestita la posta elettronica in ingresso che non supera il controllo DMARC in Microsoft 365](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
 
 ## <a name="implement-dmarc-for-outbound-mail-from-microsoft-365"></a>Implementare DMARC per la posta in uscita da Microsoft 365
 
-Se si usa Microsoft 365, ma non si utilizza un dominio personalizzato, vale a dire, si usa onmicrosoft.com, non è necessario eseguire altre operazioni per configurare o implementare DMARC per l'organizzazione. SPF è già configurato e Microsoft 365 genera automaticamente una firma DKIM per la posta in uscita. Per ulteriori informazioni sulla firma, vedere [Comportamento predefinito per DKIM e Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+Se si usa Microsoft 365, ma non si usa un dominio personalizzato, vale a dire, si usa onmicrosoft.com, non è necessario eseguire altre operazioni per configurare o implementare DMARC per l'organizzazione. SPF è già configurato e Microsoft 365 genera automaticamente una firma DKIM per la posta in uscita. Per altre informazioni sulla firma, vedere [Comportamento predefinito per DKIM e Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
 
- Se si dispone di un dominio personalizzato o si utilizzano i server Exchange locali oltre a Microsoft 365, è necessario implementare manualmente DMAR per la posta in uscita. L'implementazione DMARC per il dominio personalizzato include questa procedura:
+ Se si ha un dominio personalizzato o si usano server Exchange locali oltre a Microsoft 365, è necessario implementare manualmente DMAR per la posta in uscita. L'implementazione DMARC per il dominio personalizzato include questa procedura:
 
 - [Passaggio 1: identificare le origini valide della posta del dominio](#step-1-identify-valid-sources-of-mail-for-your-domain)
 
@@ -122,15 +122,15 @@ Come procedura consigliata, assicurarsi che il record TXT SPF tenga in considera
 
 ### <a name="step-3-set-up-dkim-for-your-custom-domain"></a>Passaggio 3: configurare DKIM per il dominio personalizzato
 
-Dopo aver configurato SPF, è necessario configurare DKIM. DKIM consente di aggiungere una firma digitale nell'intestazione dei messaggi di posta elettronica. Se non si configura DKIM e si consente invece a Microsoft 365 di usare la configurazione DKIM predefinita per il dominio, DMARC potrebbe non riuscire. Questo perché la configurazione DKIM predefinita utilizza il dominio onmicrosoft.com iniziale come indirizzo 5322.From, non il dominio personalizzato. Ciò forza una mancata corrispondenza tra gli indirizzi 5321.MailFrom e 5322.From in tutta la posta elettronica inviata dal dominio.
+Dopo aver configurato SPF, è necessario configurare DKIM. DKIM consente di aggiungere una firma digitale ai messaggi di posta elettronica nell'intestazione del messaggio. Se non si configura DKIM e si consente invece a Microsoft 365 di usare la configurazione DKIM predefinita per il dominio, DMARC potrebbe non riuscire. Questo perché la configurazione DKIM predefinita usa il dominio onmicrosoft.com iniziale come indirizzo 5322.From, non il dominio personalizzato. Ciò forza una mancata corrispondenza tra gli indirizzi 5321.MailFrom e 5322.From in tutta la posta elettronica inviata dal dominio.
 
-Se si dispone di mittenti di terze parti che inviano posta per conto dell'utente e la posta inviata presenta indirizzi  5321.MailFrom e 5322.From non corrispondenti, DMARC non riuscirà per tale posta elettronica. Per evitare il problema, è necessario configurare DKIM per il dominio in modo specifico con tale mittente di terze parti. In questo modo Microsoft 365 potrà autenticare la posta elettronica dal servizio di terze parti. Tuttavia, inoltre consente ad altri, ad esempio, Yahoo, Gmail e Comcast, di verificare la posta elettronica inviata a loro da terze parti come se la posta elettronica fosse stata inviata dall'utente. Ciò è utile perché consente ai clienti di creare fiducia nel dominio indipendentemente da dove si trova la loro cassetta postale e, contemporaneamente, Microsoft 365 non contrassegnerà un messaggio come posta indesiderata a causa dello spoofing perché supera i controlli di autenticazione del dominio.
+Se si hanno mittenti di terze parti che inviano posta per conto dell'organizzazione e i messaggi che inviano presentano indirizzi 5321.MailFrom e 5322.From non corrispondenti, la verifica DMARC non riuscirà. Per evitare il problema, è necessario configurare DKIM per il dominio in modo specifico con tale mittente di terze parti. In questo modo Microsoft 365 potrà autenticare la posta elettronica dal servizio di terze parti. Questo consente anche ad altri, ad esempio, Yahoo, Gmail e Comcast, di verificare la posta elettronica loro inviata da terze parti come se provenisse dall'organizzazione. Ciò è utile perché genera fiducia nel dominio da parte dei clienti indipendentemente da dove si trova la loro cassetta postale e, contemporaneamente, Microsoft 365 non contrassegnerà un messaggio come posta indesiderata a causa dello spoofing perché supera i controlli di autenticazione del dominio.
 
 Per istruzioni sulla configurazione di DKIM per il dominio e su come configurare DKIM per mittenti di terze parti affinché possano effettuare lo spoofing del dominio, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato](use-dkim-to-validate-outbound-email.md).
 
 ### <a name="step-4-form-the-dmarc-txt-record-for-your-domain"></a>Passaggio 4: formare il record TXT DMARC del dominio
 
-Anche se sono disponibili altre opzioni di sintassi non menzionate qui, queste sono le opzioni più comunemente utilizzate per Microsoft 365. Formare il record TXT DMARC per il dominio nel formato:
+Anche se sono disponibili altre opzioni di sintassi non menzionate qui, queste sono le opzioni più comunemente usate per Microsoft 365. Creare il record TXT DMARC per il dominio nel formato:
 
 ```text
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
@@ -168,7 +168,7 @@ Esempi:
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-Dopo aver creato il record, è necessario aggiornare il record nel registrar del dominio. Per istruzioni sull'aggiunta del record TXT DMARC ai record DNS di Microsoft 365, vedere [Creare record DNS per Microsoft 365 quando si gestiscono i record DNS](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
+Dopo aver creato il record, è necessario aggiornare il record nel registrar del dominio. Per istruzioni sull'aggiunta del record TXT DMARC ai record DNS di Microsoft 365, vedere [Creare record DNS per Microsoft 365 quando si gestiscono i record DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Procedure consigliate per l'implementazione di DMARC in Microsoft 365
 
@@ -192,7 +192,7 @@ Dopo aver creato il record, è necessario aggiornare il record nel registrar del
 
 Se un messaggio è in uscita da Microsoft 365 e non supera DMARC e il criterio è stato impostato su p=quarantine o p=reject, il messaggio viene instradato attraverso il [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md). Non viene eseguito override della posta elettronica in uscita.
 
-Se si pubblica un criterio reject DMARC (p=reject), nessun altro cliente in Microsoft 365 può eseguire lo spoofing del dominio perché i messaggi non potranno superare SPF o DKIM per il dominio quando si affidano a un messaggio in uscita attraverso il servizio. Tuttavia, se si pubblica un criterio reject di DMAR, ma non tutta la posta elettronica viene autenticata attraverso Microsoft 365, una parte di questa potrebbe essere contrassegnata come posta indesiderata per la posta elettronica in ingresso (come descritto sopra) oppure sarà rifiutata se non si pubblica SPF e si prova ad inoltrarla in uscita attraverso il servizio. Ciò accade, ad esempio, se si dimentica di includere alcuni degli indirizzi IP per server e app che inviano posta per conto del dominio quando si crea il record TXT DMARC.
+Se si pubblica un criterio reject DMARC (p=reject), nessun altro cliente in Microsoft 365 può eseguire lo spoofing del dominio perché i messaggi non potranno superare SPF o DKIM per il dominio quando recapitano un messaggio in uscita attraverso il servizio. Tuttavia, se si pubblica un criterio reject di DMARC, ma non tutta la posta elettronica viene autenticata attraverso Microsoft 365, parte dei messaggi potrebbe essere contrassegnata come posta indesiderata per la posta elettronica in ingresso (come descritto sopra) oppure sarà rifiutata se non si pubblica SPF e si prova ad inoltrarla in uscita attraverso il servizio. Ciò accade, ad esempio, se si dimentica di includere alcuni degli indirizzi IP per server e app che inviano posta per conto del dominio quando si crea il record TXT DMARC.
 
 ## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Come viene gestita la posta elettronica in ingresso che non supera il controllo DMARC in Microsoft 365
 

@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Riepilogo: Applicare la protezione delle informazioni di Azure per proteggere i file in un sito del team di SharePoint Online di livello estremamente riservato.'
-ms.openlocfilehash: 7d98ed6813e1c52ef2646cdbe402ab0bb3a50e3c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8d802d8c2b5202e51089659264b2e2c14f14ad3d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632181"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214630"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Proteggere i file di SharePoint Online con un'etichetta di riservatezza
 
@@ -38,7 +38,7 @@ L'uso delle etichette di riservatezza per i file in SharePoint Online non è con
 Alcune note importanti su questa soluzione:
 - Se l'organizzazione non ha [abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files): se la crittografia viene applicata ai file archiviati in Office 365, il servizio non può elaborare i contenuti di tali file. La creazione condivisa, eDiscovery, la ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri di prevenzione della perdita dei dati (DLP) funzionano solo con i metadati, incluse le etichette, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
 
-- Questa soluzione prevede che un utente selezioni un'etichetta che applica la protezione. Se è necessaria la crittografia automatica e la possibilità che SharePoint indicizzi e controlli i file, è consigliabile usare Information Rights Management (IRM) in SharePoint Online. Quando si configura una raccolta di SharePoint per IRM, i file vengono crittografati automaticamente quando vengono scaricati per la modifica.  SharePoint IRM ha alcune limitazioni che potrebbero influire sulla decisione. Per altre informazioni, vedere [Configurare Information Rights Management (IRM) nell'interfaccia di amministrazione di SharePoint](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
+- Questa soluzione prevede che un utente selezioni un'etichetta che applica la protezione. Se è necessaria la crittografia automatica e la possibilità che SharePoint indicizzi e controlli i file, è consigliabile usare Information Rights Management (IRM) in SharePoint Online. Quando si configura una raccolta di SharePoint per IRM, i file vengono crittografati automaticamente quando vengono scaricati per la modifica.  SharePoint IRM ha alcune limitazioni che potrebbero influire sulla decisione. Per altre informazioni, vedere [Configurare Information Rights Management (IRM) nell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center).
 
 ## <a name="admin-setup"></a>Configurazione degli amministratori
 

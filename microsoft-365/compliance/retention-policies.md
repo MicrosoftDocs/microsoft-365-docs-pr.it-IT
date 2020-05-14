@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 36866f457369248f642a4189f2d9f46e58baa2a3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a4bf22f7064e74926935a228f84281af9171bedc
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165947"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214610"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -422,7 +422,7 @@ Per conservare o eliminare contenuti in Microsoft 365, in passato sono state usa
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [Gestire i casi di eDiscovery nel Centro sicurezza &amp; conformità](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (blocco di eDiscovery) 
+- [Gestire i casi di eDiscovery nel Centro sicurezza &amp; conformità](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (blocco di eDiscovery) 
     
 - [Blocco sul posto e blocco per controversia legale](https://go.microsoft.com/fwlink/?linkid=846124) (blocco di eDiscovery) 
 
@@ -432,15 +432,15 @@ Per conservare o eliminare contenuti in Microsoft 365, in passato sono state usa
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online e OneDrive for Business
 
-- [Gestire i casi di eDiscovery nel Centro sicurezza &amp; conformità](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (blocco di eDiscovery) 
+- [Gestire i casi di eDiscovery nel Centro sicurezza &amp; conformità](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (blocco di eDiscovery) 
     
-- [Aggiunta di un contenuto a un caso e archiviare origini blocco nel centro eDiscovery](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (blocco di eDiscovery) 
+- [Aggiunta di un contenuto a un caso e archiviare origini blocco nel centro eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (blocco di eDiscovery) 
     
-- [Panoramica dei criteri di eliminazione dei documenti](https://support.office.com/article/55e8d858-f278-482b-a198-2e62d6a2e6e5) (solo eliminazione) 
+- [Panoramica dei criteri di eliminazione dei documenti](https://docs.microsoft.com/microsoft-365/compliance/document-deletion-policies) (solo eliminazione) 
     
 - [Configurazione di gestione dei record sul posto](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (conservazione) 
     
-- [Usare criteri per la chiusura e l'eliminazione di siti](https://support.office.com/article/a8280d82-27fd-48c5-9adf-8a5431208ba5) (solo eliminazione) 
+- [Usare criteri per la chiusura e l'eliminazione di siti](https://support.microsoft.com/it-IT/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (solo eliminazione) 
     
 - [Criteri di gestione delle informazioni ](intro-to-info-mgmt-policies.md) (solo eliminazione) 
     

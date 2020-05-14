@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Informazioni su come cercare e trovare i dati personali soggetti al Regolamento generale sulla protezione dei dati (GDPR) in Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50c8db59cfd5e9a7de3da0dc696227e85dab1cee
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e0d29697a28221b5ff998f5ce923c143bf7a0804
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208090"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214580"
 ---
 # <a name="search-for-and-find-personal-data"></a>Cercare e trovare i dati personali
 
@@ -87,7 +87,7 @@ Avviare la ricerca dei dati personali usando i tipi di informazioni riservate in
 
 Questo argomento include un elenco di alcuni tipi di informazioni riservate che si applicano ai cittadini dell'Unione Europea. Controllare il Centro sicurezza e conformità per le nuove aggiunte che semplificano la conformità all’RGDP.
 
-Vedere anche l'articolo: [Elenco dei tipi di informazioni riservate e l'aspetto di ognuno di essi](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
+Vedere anche l'articolo: [Elenco dei tipi di informazioni riservate e l'aspetto di ognuno di essi](https://docs.microsoft.com/microsoft-365/compliance/content-search).
 
 Le tipologie di informazioni sensibili permettono di riconoscere in modo automatico informazioni specifiche come i numeri di previdenza sociale e di carta di credito. Le tipologie di informazioni sensibili sono chiamate anche condizioni. Una tipologia di informazioni sensibili corrisponde a un modello identificato da un'espressione regolare o da una funzione. Inoltre, è possibile utilizzare altri elementi come parole chiave e checksum per identificare una tipologia di informazioni sensibili. In questa procedura di valutazione vengono usati anche il livello di confidenza e la prossimità.
 
@@ -122,7 +122,7 @@ Attualmente le tipologie di informazioni sensibili non sono utilizzabili per tro
 <p>SensitiveType:&quot;Numero di passaporto francese&quot;</p>
 </blockquote>
 <p>Definire l'ambito di ricerca per SharePoint (include OneDrive for Business). Verificare che la sintassi sia esatta e non siano presenti spazi o errori di digitazione.</p>
-<p>Vedere <a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">Creare una query per individuare dati riservati memorizzati nei siti</a>.</p></td>
+<p>Vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites">Creare una query per individuare dati riservati memorizzati nei siti</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Esaminare i risultati per ogni ricerca</p></td>
@@ -232,4 +232,4 @@ Esempi:
 
 Nota: "SensitiveType" distingue tra maiuscole e minuscole, il resto della query no.
 
-È inoltre possibile usare le proprietà e gli operatori per illustrare il modo in cui è possibile perfezionare le query. Per ulteriori informazioni ed esempi, vedere [Creare una query per trovare i dati riservati archiviati nei siti](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).
+È inoltre possibile usare le proprietà e gli operatori per illustrare il modo in cui è possibile perfezionare le query. Per ulteriori informazioni ed esempi, vedere [Creare una query per trovare i dati riservati archiviati nei siti](https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites).

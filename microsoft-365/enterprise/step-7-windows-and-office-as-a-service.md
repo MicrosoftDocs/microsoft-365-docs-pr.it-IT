@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come prepararsi per la manutenzione di Windows e Office nel proprio ambiente.
-ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: f30581408be1c69d7aec7e31e9b5d6461266adb1
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011616"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222674"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Passaggio 7: manutenzione di Windows e Office
 
@@ -95,7 +95,7 @@ Windows 10 offre tre canali di manutenzione:
 
 Microsoft 365 offre quattro canali di manutenzione:
 
-- [**Programma Office Insider**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16), che le organizzazioni possono usare per testare e fornire feedback sulle nuove funzionalità di Office ancora in fase di sviluppo
+- [**Programma Office Insider**](https://products.office.com/office-insider), che le organizzazioni possono usare per testare e fornire feedback sulle nuove funzionalità di Office ancora in fase di sviluppo
 - **Canale mensile**, che fornisce agli utenti le funzionalità più recenti di Office non appena sono disponibili
 - **Canale semestrale**, che fornisce nuove funzionalità e caratteristiche solo due volte l'anno
 - **Canale semestrale (mirato)**, una build di Office completamente supportata che consente a utenti pilota e tester della compatibilità di testare e convalidare il canale semestrale successivo.
