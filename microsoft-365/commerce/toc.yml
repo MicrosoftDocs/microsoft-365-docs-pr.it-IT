@@ -28,7 +28,7 @@
       href: subscriptions/cancel-your-subscription.md
     - name: Cosa succede se scade l'abbonamento?
       href: subscriptions/what-if-my-subscription-expires.md
-    - name: Gestire app di terze parti
+    - name: Gestire gli abbonamenti alle app di terze parti
       href: manage-saas-apps.md
     - name: Gestire acquisti in modalità self-service (utenti)
       href: subscriptions/manage-self-service-purchases-users.md
@@ -48,7 +48,7 @@
   items:
     - name: Visualizzare la fattura
       href: billing-and-payments/view-your-bill-or-invoice.md
-    - name: Informazioni sulla fattura
+    - name: Come leggere la fattura
       href: billing-and-payments/understand-your-invoice.md
     - name: Gestire metodi di pagamento
       href: billing-and-payments/manage-payment-methods.md
@@ -62,15 +62,15 @@
       href: billing-and-payments/manage-billing-profiles.md
     - name: Cambiare gli indirizzi di fatturazione
       href: billing-and-payments/change-your-billing-addresses.md
-    - name: Payment Services Directive 2 e Strong Customer Authentication
+    - name: Informazioni su Payment Services Directive 2 e Strong Customer Authentication
       href: billing-and-payments/psd2.md
 - name: Account di fatturazione
   items:
     - name: Gestire account di fatturazione
       href: manage-billing-accounts.md
-    - name: Associare un tenant a un account di fatturazione
+    - name: Associare un tenant al proprio account di fatturazione
       href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
-- name: Gestire relazioni con i partner
+- name: Gestire relazioni con i propri partner
   href: manage-partners.md
 - name: Chiudere il proprio account
   href: close-your-account.md
