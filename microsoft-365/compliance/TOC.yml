@@ -271,15 +271,25 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Conservare i dati
       items:
-        - name: Criteri di conservazione
+        - name: Informazioni sui criteri di conservazione
           href: retention-policies.md
+        - name: Creazione dei criteri di conservazione
+          href: create-retention-policies.md
+        - name: Conservazione per SharePoint e OneDrive
+          href: retention-policies-sharepoint.md
+        - name: Conservazione per Microsoft Teams
+          href: retention-policies-teams.md
+        - name: Conservazione per Exchange
+          href: retention-policies-exchange.md
         - name: Gestione del piano di archiviazione
           href: file-plan-manager.md
-        - name: Etichette di conservazione
+        - name: Informazioni sui tag di conservazione
           href: labels.md
+        - name: 'Creare, pubblicare e applicare automaticamente etichette di conservazione'
+          href: create-retention-labels.md
         - name: Rispettare la SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Creare e pubblicare le etichette di conservazione con PowerShell
+        - name: Usare PowerShell per creare e pubblicare le etichette di conservazione
           href: bulk-create-publish-labels-using-powershell.md
         - name: Conservazione basata su eventi
           href: event-driven-retention.md
@@ -325,9 +335,11 @@
           items:
             - name: Gestione del piano di archiviazione
               href: file-plan-manager.md
-            - name: Etichette di conservazione
+            - name: Informazioni sui tag di conservazione
               href: labels.md
-            - name: Creare e pubblicare le etichette di conservazione con PowerShell
+            - name: Creare e pubblicare le etichette di conservazione
+              href: create-retention-labels.md
+            - name: Usare PowerShell per creare e pubblicare etichette di conservazione su larga scala
               href: bulk-create-publish-labels-using-powershell.md
             - name: Visualizzare l'utilizzo delle etichette con Analisi delle etichette
               href: label-analytics.md
