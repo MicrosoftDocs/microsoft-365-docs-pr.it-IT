@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Analogamente alle funzionalità del centro conformità di Microsoft 365, il contenuto della guida è sempre in evoluzione. Stiamo creando continuamente nuovi articoli, aggiornando quelli esistenti ed eseguendo modifiche in base ai commenti e suggerimenti. Scopri cosa c'è di nuovo e aggiornato in questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221420"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231899"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aggiornamenti recenti a Microsoft 365 content Compliance
 
@@ -38,14 +38,14 @@ Analogamente alle funzionalità del centro conformità di Microsoft 365, il cont
 
 [Utilizzare il controllo avanzato per esaminare gli account compromessi](mailitemsaccessed-forensics-investigations.md) (nuovi)<br>Nuove linee guida sull'utilizzo della nuova azione di controllo delle cassette postali di *MailItemsAccessed* per le indagini forensi.
 
-Più aggiornamenti per eseguire [una ricerca nel registro di controllo](search-the-audit-log-in-security-and-compliance.md), tra cui:
+[Eseguire una ricerca nel registro di controllo](search-the-audit-log-in-security-and-compliance.md) (aggiornato)<br>Le modifiche includono:
 - [Nuova sezione](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records) con informazioni dettagliate sull'utente ' app@sharepoint ' elencato nei record di controllo.
 - [Nuove descrizioni](search-the-audit-log-in-security-and-compliance.md#quarantine-activities) delle attività di quarantena.
 - Nella sezione [attività amministrazione utente](search-the-audit-log-in-security-and-compliance.md#user-administration-activities) , è stato chiarito che l'evento cambia password utente viene attivato quando un utente modifica la propria password (tramite la reimpostazione della password in modalità self-service) e viene attivato l'evento "Reimposta password utente" quando un amministratore reimposta la password di un utente.
 
 ### <a name="auto-expanding-archive"></a>Archivio in espansione automatica
 
-[Panoramica dell'archiviazione illimitata](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)(aggiornata)<br>Sono stati aggiunti chiarimenti che non è possibile eliminare una cartella nell'archivio principale o un archivio ausiliario dopo che l'archiviazione in espansione automatica è abilitata su una cassetta postale.
+[Panoramica dell'archiviazione illimitata](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive) (aggiornata)<br>Sono stati aggiunti chiarimenti che non è possibile eliminare una cartella nell'archivio principale o un archivio ausiliario dopo che l'archiviazione in espansione automatica è abilitata su una cassetta postale.
 
 ### <a name="compliance-scorecompliance-manager"></a>Punteggio di conformità/gestione conformità
 

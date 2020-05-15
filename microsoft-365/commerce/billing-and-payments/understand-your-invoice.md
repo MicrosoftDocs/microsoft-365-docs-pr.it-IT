@@ -1,5 +1,5 @@
 ---
-title: Informazioni sulla fattura
+title: Comprendere la fattura o la fattura
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,16 +16,16 @@ ms.collection:
 ms.custom: ''
 search.appverid:
 - MET150
-description: Informazioni su come leggere e comprendere la fattura per i prodotti aziendali Microsoft.
+description: Informazioni su come leggere e comprendere la fattura o la fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: 63186bb0fc601be786e223fe2e6febbdb48361e2
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211405"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232818"
 ---
-# <a name="understand-your-invoice"></a>Informazioni sulla fattura
+# <a name="understand-your-bill-or-invoice"></a>Comprendere la fattura o la fattura
 
 ::: moniker range="o365-21vianet"
 
@@ -36,7 +36,7 @@ ms.locfileid: "44211405"
 
 La fattura fornisce un riepilogo degli addebiti e delle istruzioni per il pagamento. È possibile [visualizzare la fattura online](#view-your-online-invoice) nell'interfaccia di amministrazione di Microsoft 365. È anche possibile scaricarlo nel formato di documento portatile (. pdf) per inviare tramite posta elettronica.
 
-Se si dispone di un solo abbonamento a Microsoft 365, vedere [understand your fattura for microsoft 365 for business](understand-your-invoice2.md).
+Se si dispone di un solo abbonamento a Microsoft 365, vedere [understand your Bill or fattura for microsoft 365 for business](understand-your-invoice2.md).
 
 ## <a name="understand-the-invoice-header"></a>Informazioni sull'intestazione della fattura
 

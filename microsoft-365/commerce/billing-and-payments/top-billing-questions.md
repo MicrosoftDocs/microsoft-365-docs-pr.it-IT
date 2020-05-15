@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: "Trovare le risposte alle domande principali relative alla fatturazione per l'abbonamento a Microsoft 365 for business. "
-ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d5b705c8c283103c09dc13dd13b853ffb3b270b
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634993"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232806"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Domande principali relative alla fatturazione per Microsoft 365 for business
 
@@ -40,13 +40,13 @@ Se non si riesce a trovare una risposta alla domanda o si ha un problema con la 
   
 ::: moniker range="o365-worldwide"
 
-Se hai bisogno di aiuto per interpretare gli addebiti visualizzati sulla bolletta o per comprendere i termini utilizzati, vedere [understand your fattura](understand-your-invoice2.md).
+Se hai bisogno di aiuto per interpretare gli addebiti visualizzati sulla bolletta o per comprendere i termini utilizzati, consulta informazioni su fatture [o fattura](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Se hai bisogno di aiuto per interpretare gli addebiti visualizzati sulla bolletta o per comprendere i termini utilizzati, vedere [understand your fattura](understand-your-invoice2.md).
+Se hai bisogno di aiuto per interpretare gli addebiti visualizzati sulla bolletta o per comprendere i termini utilizzati, consulta informazioni su fatture [o fattura](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -120,7 +120,7 @@ Sì, ma è necessario chiamare il [supporto](../../admin/contact-support-for-bus
 
 Sì. Per ottenere l'estratto conto come allegato di posta elettronica, eseguire la procedura seguente:
   
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notifiche di fatturazione</a> **oppure selezionare** \> **notifiche**di fatturazione fatturazione.
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notifiche di fatturazione</a> oppure selezionare notifiche **di fatturazione fatturazione** \> **Billing notifications**.
 
 2. In **Vuoi ricevere l'estratto conto come allegato di posta elettronica?** impostare l'interruttore su **Attivato**.
 

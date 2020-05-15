@@ -1,5 +1,5 @@
 ---
-title: Informazioni sulla fattura per Microsoft 365 for business
+title: Comprendere la fattura o la fattura per Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla fattura di Microsoft 365 per le aziende e su come modificare il numero dell'ordine di acquisto.
-ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla bolletta o fattura di Microsoft 365 for business e su come modificare il numero dell'ordine di acquisto.
+ms.openlocfilehash: bd0204deb34d1fe08ec6391c24df5ab6fe6cc6d6
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045813"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232794"
 ---
-# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Informazioni sulla fattura per Microsoft 365 for business
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendere la fattura o la fattura per Microsoft 365 for business
 
 Ogni mese si riceverà un messaggio di posta elettronica che informa che la nuova dichiarazione di fatturazione è disponibile nell'interfaccia di amministrazione. [Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md).
   
@@ -104,7 +104,7 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Se si è in visualizzazione **tabella** , selezionare **schede** per cambiare le visualizzazioni.
 

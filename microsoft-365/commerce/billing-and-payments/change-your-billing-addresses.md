@@ -23,19 +23,19 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Informazioni su come aggiornare gli indirizzi di fatturazione per Microsoft 365 for business. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
 ms.custom: okr_SMB
-ms.openlocfilehash: 09f4ef95c9f8ab3dcce3b3a2511c5e407539020e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 87a9540218f7ef4bef48154930b62bddab7b54e8
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140924"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232888"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiare gli indirizzi di fatturazione
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -51,13 +51,13 @@ Nella maggior parte dei casi questi indirizzi coincidono. Se occorre cambiare un
   
 ::: moniker range="o365-worldwide"
 
-Per ulteriori informazioni sulla bolletta o sulla fattura, vedere [visualizzare la fattura o](view-your-bill-or-invoice.md) la fattura e [comprendere la fattura](understand-your-invoice2.md).
+Per ulteriori informazioni sulla bolletta o sulla fattura, vedere [visualizzare la](view-your-bill-or-invoice.md) fattura o la fattura e [comprendere la fattura o la fattura](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Per ulteriori informazioni sulla bolletta o sulla fattura, vedere [visualizzare la fattura o](view-your-bill-or-invoice.md) la fattura e [comprendere la fattura](understand-your-invoice2.md).
+Per ulteriori informazioni sulla bolletta o sulla fattura, vedere [View your Bill or fattura](view-your-bill-or-invoice.md) and [understand your Bill orinvoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 ## <a name="change-your-sold-to-address"></a>Cambiare l'indirizzo Venduto a
 
-1. Nell'interfaccia di amministrazione, andare alla \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">account Fatturazione</a> fatturazione. **Billing**
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">account Fatturazione</a> fatturazione.
 
 2. Selezionare **modifica informazioni account di fatturazione**.
 
@@ -80,13 +80,13 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">metodi di pagamento</a> fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla **Billing** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">metodi di pagamento</a> fatturazione.
 
 2. Selezionare la carta di credito o il conto corrente bancario che si desidera modificare.
 
 3. Nella pagina dei **Dettagli del metodo di pagamento** selezionare **modifica**.
 
-4. Aggiornare l'indirizzo di fatturazione e quindi **Save** \> **fare**clic su Salva.
+4. Aggiornare l'indirizzo di fatturazione e quindi fare clic su **Salva** \> **Done**.
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Individuare l'abbonamento che si desidera modificare. Nella sezione **impostazioni & azioni** selezionare **modifica indirizzo di utilizzo del servizio**.
 
@@ -192,7 +192,7 @@ Per impostazione predefinita, le notifiche di fatturazione dell'organizzazione v
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">notifiche</a> **fatturazione fatturazione** .
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">notifiche</a> fatturazione fatturazione.
 
 ::: moniker-end
 
@@ -204,7 +204,7 @@ Per impostazione predefinita, le notifiche di fatturazione dell'organizzazione v
 
 [Visualizzare la fattura](view-your-bill-or-invoice.md)
 
-[Comprendere la fattura](understand-your-invoice2.md)
+[Comprendere la fattura o la fattura](understand-your-invoice2.md)
 
 [Pagare l’abbonamento](pay-for-your-subscription.md)
 

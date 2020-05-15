@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Alle organizzazioni viene spesso richiesto di conservare i documenti per un determinato periodo di tempo a causa di norme legate alla conformità, legali o di altro tipo. Tuttavia, conservare i documenti per un periodo superiore a quello richiesto può esporre l'organizzazione a un rischio legale.
-ms.openlocfilehash: 5550f65e5b2ecb5dca775e1d851548913b8e8517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 065cb3c278a4c859c46d7d1c13c1f1160822337b
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632261"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232111"
 ---
 # <a name="create-a-document-deletion-policy"></a>Creare un criterio di eliminazione dei documenti
 
 > [!IMPORTANT]
-> Se si avanza, è consigliabile utilizzare un criterio di conservazione o le etichette di conservazione create nel centro conformità Microsoft 365, Microsoft 365 Security Center o nel &amp; Centro sicurezza e conformità anziché in un criterio di eliminazione dei documenti. I criteri di eliminazione dei documenti continueranno a funzionare fianco a fianco con i criteri di conservazione, ma se è necessario mantenere o eliminare il contenuto in un punto qualsiasi di Office 365, è consigliabile utilizzare un criterio di conservazione. Per ulteriori informazioni, vedere [use a Retention Policy anziché these features](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
+> Se si procede in avanti, è consigliabile utilizzare un criterio di conservazione dal centro conformità di Microsoft 365 anziché un criterio di eliminazione dei documenti. I criteri di eliminazione dei documenti continueranno a funzionare fianco a fianco con i criteri di conservazione, ma se è necessario mantenere o eliminare il contenuto in un punto qualsiasi di Office 365, è consigliabile utilizzare un criterio di conservazione o le etichette di conservazione. Per ulteriori informazioni, vedere [utilizzare un criterio di conservazione anziché le caratteristiche meno recenti](retention-policies.md#use-a-retention-policy-instead-of-older-features).
   
 Alle organizzazioni viene spesso richiesto di conservare i documenti per un determinato periodo di tempo a causa di norme legate alla conformità, legali o di altro tipo. Tuttavia, conservare i documenti per un periodo superiore a quello richiesto può esporre l'organizzazione a un rischio legale.
   
@@ -108,9 +108,9 @@ Inoltre, i criteri e le regole vengono creati in base a una raccolta di siti spe
   
 ## <a name="create-a-document-deletion-policy"></a>Creare un criterio di eliminazione dei documenti
 
-1. Nel centro conformità di &amp; Office 365Security, accedere a \> **conservazione** **della gestione dei dati** . In **Elimina**fare clic su **Gestisci criteri di eliminazione dei documenti per SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
+1. Nel &amp; centro conformità di Office 365Security, accedere a **conservazione della gestione dei dati** \> **Retention**. In **Elimina**fare clic su **Gestisci criteri di eliminazione dei documenti per SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
     
-    La prima volta che si passa dal centro &amp; sicurezza e conformità al centro criteri di eliminazione dei documenti, il centro criteri viene creato automaticamente per l'utente. In alternativa, è possibile creare manualmente il centro criteri [creando la raccolta siti](https://go.microsoft.com/fwlink/p/?LinkID=404342) e scegliendo **centro criteri di conformità** nella scheda **organizzazione** . 
+    La prima volta che si passa dal centro sicurezza e &amp; conformità al centro criteri di eliminazione dei documenti, il centro criteri viene creato automaticamente per l'utente. In alternativa, è possibile creare manualmente il centro criteri [creando la raccolta siti](https://go.microsoft.com/fwlink/p/?LinkID=404342) e scegliendo **centro criteri di conformità** nella scheda **organizzazione** . 
     
 2. Scegliere i **criteri di eliminazione**.
     
@@ -151,7 +151,7 @@ Assegnando un criterio a un modello di raccolta di siti, puoi rendere disponibil
   
 È importante comprendere che il periodo di tempo specificato per un criterio di eliminazione dei documenti significa che il tempo dopo la creazione o la modifica del documento non è il momento in cui è stato assegnato il criterio. Quando assegni il criterio per la prima volta, tutti i documenti nel sito vengono valutati e, se soddisfano il criterio, verranno eliminati. Questo vale per tutti i documenti esistenti, non solo per quelli creati dal momento dell'assegnazione del criterio.
   
-1. Nel centro sicurezza &amp; e conformità, accedere a \> **conservazione** **della gestione dei dati** . In **Elimina**fare clic su **Gestisci criteri di eliminazione dei documenti per SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
+1. Nel centro sicurezza &amp; e conformità, accedere a **conservazione della gestione dei dati** \> **Retention**. In **Elimina**fare clic su **Gestisci criteri di eliminazione dei documenti per SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
     
 2. Scegli **Assegnazioni dei criteri per i modelli**.
     
@@ -173,7 +173,7 @@ Assegnando un criterio a un modello di raccolta di siti, puoi rendere disponibil
 5. Fare clic su **Salva**.
     
     > [!NOTE]
-    > A ogni modello può essere assegnato solo un set di criteri. Se viene visualizzato un messaggio di errore che indica che a questo modello sono già stati assegnati criteri, scegliere **Annulla** \> **assegna a raccolta siti** nella \> barra di spostamento a sinistra selezionare una raccolta siti per visualizzare e gestire il set di criteri già assegnati. 
+    > A ogni modello può essere assegnato solo un set di criteri. Se viene visualizzato un messaggio di errore che indica che a questo modello sono già stati assegnati criteri, scegliere **Annulla** \> **assegna a raccolta siti** nella barra di spostamento a sinistra \> selezionare una raccolta siti per visualizzare e gestire il set di criteri già assegnati. 
   
 6. Scegli **Gestisci criteri assegnati**, seleziona i criteri che vuoi assegnati, quindi scegli se un criterio deve essere contrassegnato come predefinito. Quando configuri un criterio predefinito, tutti i siti in cui è assegnato il criterio hanno automaticamente il criterio attivo senza che il proprietario del sito debba fare nulla.
     
@@ -193,7 +193,7 @@ Assegnando un criterio a una raccolta di siti specifica, rendi disponibile il cr
   
 È importante comprendere che il periodo di tempo specificato per un criterio di eliminazione dei documenti significa che il tempo dopo la creazione o la modifica del documento non è il momento in cui è stato assegnato il criterio. Quando assegni il criterio per la prima volta, tutti i documenti nel sito vengono valutati e, se soddisfano il criterio, verranno eliminati. Questo vale per tutti i documenti esistenti, non solo per quelli creati dal momento dell'assegnazione del criterio.
   
-1. Nel centro sicurezza &amp; e conformità, accedere a \> **conservazione** **della gestione dei dati** . In **Elimina**scegliere **Gestisci criteri di eliminazione dei documenti per SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
+1. Nel centro sicurezza &amp; e conformità, accedere a **conservazione della gestione dei dati** \> **Retention**. In **Elimina**scegliere **Gestisci criteri di eliminazione dei documenti per SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
     
 2. Scegli **Assegnazioni dei criteri per le raccolte di siti**.
     
@@ -224,7 +224,7 @@ Assegnando un criterio a una raccolta di siti specifica, rendi disponibile il cr
 
 Quando elimini un'assegnazione, i criteri assegnati non verranno più applicati ai siti nella raccolta di siti o nel modello di raccolta di siti.
   
-1. Nel centro sicurezza &amp; e conformità, accedere a \> **conservazione** **della gestione dei dati** . In **Elimina**scegliere **Gestisci criteri di eliminazione dei documenti per SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
+1. Nel centro sicurezza &amp; e conformità, accedere a **conservazione della gestione dei dati** \> **Retention**. In **Elimina**scegliere **Gestisci criteri di eliminazione dei documenti per SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
     
 2. Scegliere una delle opzioni **Assegnazioni dei criteri per i modelli** o **Assegnazioni dei criteri per le raccolte di siti**.
     
@@ -236,7 +236,7 @@ Quando elimini un'assegnazione, i criteri assegnati non verranno più applicati 
 
 Non è possibile eliminare un criterio in uso. Prima di poter eliminare un criterio, è innanzitutto necessario eliminare tutte le assegnazioni alle raccolte siti e ai modelli di raccolta siti che includono tale criterio, vedere la sezione precedente.
   
-1. Nel centro &amp; \> sicurezza e conformità scegliere **conservazione** della \> **gestione** \> dei dati nel riquadro di spostamento a sinistra in **Delete** \> **Manage document deletion Policies for SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
+1. Nel centro sicurezza &amp; e conformità \> scegliere conservazione della **gestione dei dati** \> **Retention** nel riquadro di spostamento a sinistra in \> **Delete** \> **Manage document deletion Policies for SharePoint Online e OneDrive for business**. Il Centro criteri di eliminazione dei documenti si apre in una nuova scheda del browser.
     
 2. Scegliere * * criteri di eliminazione * *.
     
@@ -244,7 +244,7 @@ Non è possibile eliminare un criterio in uso. Prima di poter eliminare un crite
   
 3. Seleziona il criterio.
     
-4. Nella scheda \> **Items** \> elementi della barra multifunzione **rimuovere i criteri**.
+4. Nella scheda elementi della barra multifunzione \> **Items** \> **rimuovere i criteri**.
     
     ![Pulsante Rimuovi criterio sulla barra multifunzione](../media/IP-Remove-Policy-button-on-Ribbon.png)
   

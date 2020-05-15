@@ -24,19 +24,19 @@ description: Per ulteriori informazioni, vedere quali opzioni di pagamento sono 
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140872"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232876"
 ---
 # <a name="pay-for-your-subscription"></a>Pagare l'abbonamento
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Se si paga con carta di credito e questa viene rifiutata, si riceverà un messag
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Trovare l'abbonamento con il saldo insoluto. Nella sezione **Fatturazione**, accanto a **L'abbonamento ha un pagamento scaduto** selezionare **Liquidazione del saldo**.
 
@@ -107,7 +107,7 @@ Se si paga l'abbonamento tramite fattura, si riceverà un messaggio di posta ele
 Se l'abbonamento è configurato per il pagamento tramite fattura, i pagamenti diretti online non possono essere accettati. È tuttavia possibile [cambiare la modalità di pagamento scegliendo la carta di credito o il conto corrente bancario](change-payment-method.md), nel qual caso l'importo verrà addebitato automaticamente sulla carta o sul conto al termine di ogni periodo di validità del servizio. Per Azure, vedere [Come modificare la carta di credito usata per pagare una sottoscrizione di Azure](https://go.microsoft.com/fwlink/p/?LinkId=718057).
 
 > [!NOTE]
-> Se si passa al pagamento automatico tramite carta di credito, assicurarsi di estinguere prima tutti i saldi in sospeso. Consultare l'estratto conto per le opzioni di pagamento e le istruzioni. Per altre informazioni, vedere [Informazioni sulla fattura](understand-your-invoice2.md).
+> Se si passa al pagamento automatico tramite carta di credito, assicurarsi di estinguere prima tutti i saldi in sospeso. Consultare l'estratto conto per le opzioni di pagamento e le istruzioni. Per ulteriori informazioni, vedere [understand your Bill or fattura](understand-your-invoice2.md).
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>Dove è possibile inviare il pagamento tramite assegno o bonifico?
 
@@ -312,4 +312,4 @@ Se il motivo per cui è stato inizialmente scelto il pagamento tramite fattura, 
 
 [Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario](add-update-or-remove-credit-card-or-bank-account.md)
 
-[Informazioni sulla fattura](understand-your-invoice2.md)
+[Comprendere la fattura o la fattura](understand-your-invoice2.md)

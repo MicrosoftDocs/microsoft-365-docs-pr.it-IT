@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: "Scoprire quante tasse verranno addebitate per l'abbonamento a Microsoft 365 for business in diverse aree geografiche. "
 ms.custom: okr_SMB
-ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045825"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232830"
 ---
 # <a name="tax-information"></a>Informazioni fiscali
 
@@ -114,7 +114,7 @@ Si potrebbe essere idonei per un'esenzione dell'IVA nei casi seguenti:
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Aggiungere la partita IVA (solo paesi dell'Unione Europea)
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Trovare la scheda di sottoscrizione per l'abbonamento che si desidera aggiornare.
 
@@ -186,4 +186,4 @@ Preparare la documentazione seguente:
   
 [Visualizzare la fattura](view-your-bill-or-invoice.md)
   
-[Informazioni sulla fattura](understand-your-invoice.md)
+[Comprendere la fattura o la fattura](understand-your-invoice.md)

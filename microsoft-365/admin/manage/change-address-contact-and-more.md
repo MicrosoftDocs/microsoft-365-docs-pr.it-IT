@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Informazioni su come apportare modifiche al profilo dell'organizzazione, ad esempio il nome dell'organizzazione, l'indirizzo, il telefono, il contatto tecnico e la posta elettronica.
-ms.openlocfilehash: d3871e683aed862cfe58e072035b75cc004b9ef6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cae24ebb6ad317767c7798b808f166024cd9d73a
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208175"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232900"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modificare l'indirizzo dell'organizzazione, il contatto tecnico e altre informazioni
 
@@ -60,7 +60,7 @@ Per modificare altre informazioni nella pagina del profilo della società:
 |**Campo**  |**Descrizione**  |
 |---------|---------|
 |Nome  <br/>   | Il nome immesso qui è quello che gli utenti vedranno nelle pagine seguenti:  <br/>  Pagina di accesso: se gli utenti hanno configurato altri account Microsoft con l'indirizzo di posta elettronica aziendale o dell'istituto di istruzione, potrebbero vedere il nome dell'organizzazione nella pagina di accesso. In questo modo possono distinguere tra l'account aziendale o dell'istituto di istruzione e gli altri account e identificare quello da usare per l'accesso.  <br/>  Collegamento e pagina del profilo dell'organizzazione: il collegamento al profilo dell'organizzazione mostra il nome dell'organizzazione.  <br/>  Struttura di spostamento di Yammer: in Yammer, lo spostamento sinistro utilizza il nome dell'organizzazione come nome della rete di Yammer domestica.  <br/> Client di sincronizzazione di OneDrive: il nome dell'organizzazione è visualizzato in Esplora file in Windows e nel Finder su Mac, nei percorsi dei file, nel centro attività di OneDrive, nella descrizione comando dell'icona del cloud di OneDrive e nella finestra delle impostazioni di OneDrive. Attualmente, l'aggiornamento del nome dell'organizzazione non viene aggiornato per i client configurati. <br/> MS teams: l'organizzazione Switcher in teams Visualizza il nome dell'organizzazione <br/>  |
-|Indirizzo, Città, Provincia, Codice postale  <br/>     | L'indirizzo immesso qui è quello che vedrai sulla bolletta, in venduto a: l'indirizzo venduto per la bolletta è uguale all'indirizzo dell'organizzazione nella pagina del profilo (vedere [understand your fattura for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
+|Indirizzo, Città, Provincia, Codice postale  <br/>     | L'indirizzo immesso qui è quello che vedrai nella tua bolletta, in venduto a: l'indirizzo venduto a sulla bolletta è lo stesso dell'indirizzo dell'organizzazione nella pagina del profilo (vedere [capire la fattura o la fattura per Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
 |Paese o area geografica  <br/>    | Questo è il paese o l'area geografica in cui risiede la società. Il paese o l'area geografica che si seleziona determina quali servizi sono disponibili, le imposte e la valuta della fatturazione per il paese o l'area geografica e la posizione del data center più vicino. Vedere [Informazioni sulle restrizioni di licenza](https://office.microsoft.com/redir/FX103037529).  <br/>Nota: una volta selezionata, il paese o l'area geografica non può essere modificata. Se si vuole cambiare la selezione, è necessario annullare l'abbonamento e ripetere l'iscrizione. Per informazioni su questo processo, [contattare il supporto](../contact-support-for-business-products.md).        |
 |Telefono  <br/>     | Numero principale per l'organizzazione. Si tratta in genere del numero della sede centrale.  <br/>        |
 |Contatto tecnico  <br/> |Questo è l'indirizzo di posta elettronica per il responsabile tecnico principale che amministra la sottoscrizione Microsoft 365. Si tratta della persona che riceverà comunicazioni relative allo stato del servizio Microsoft 365.  <br/> |

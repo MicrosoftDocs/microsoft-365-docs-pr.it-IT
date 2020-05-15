@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Microsoft 365. Tra questi tipi di esenzioni sono inclusi il blocco per controversia legale, eDiscovery holds e Microsoft 365 Retention Policies. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello dell'organizzazione.
-ms.openlocfilehash: 594b8550cdd418af9551c732b78091817da7bfc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 12d91d987af2ba11b2d9aa417dff92adb745fb03
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208667"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232071"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -41,7 +41,8 @@ Microsoft 365 offre diversi modi in cui l'organizzazione può impedire che il co
     - **Criteri di conservazione delle posizioni specifiche:** Si tratta di criteri che vengono assegnati ai percorsi di contenuto di utenti specifici. È possibile utilizzare il cmdlet **Get-Mailbox** in Exchange Online PowerShell per ottenere informazioni sui criteri di conservazione assegnati a cassette postali specifiche.
 
     - **Criteri di conservazione a livello dell'organizzazione:** Si tratta di criteri che vengono assegnati a tutti i percorsi di contenuto dell'organizzazione. È possibile utilizzare il cmdlet **Get-OrganizationConfig** in PowerShell di Exchange Online per ottenere informazioni sui criteri di conservazione a livello dell'organizzazione.
-  Per ulteriori informazioni, vedere la sezione "applicazione di un criterio di conservazione a un'intera organizzazione o a percorsi specifici" in [Overview of Microsoft 365 Retention Policies](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+    
+  Per ulteriori informazioni, vedere [applicazione di un criterio di conservazione a un'intera organizzazione o a una sezione di percorsi specifici](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) .
 
 - **[Etichette di conservazione microsoft 365](labels.md):** se un utente applica un'etichetta di conservazione di Microsoft 365 (una configurata per conservare il contenuto o conservarlo e quindi eliminarlo) in *qualsiasi* cartella o elemento della propria cassetta postale, l'esenzione viene posizionata sulla cassetta postale come se la cassetta postale è stata inserita in una conservazione per controversia legale o assegnata a un criterio di ritenzione Microsoft 365 Per ulteriori informazioni, vedere l' [argomento relativo all'identificazione delle cassette postali in attesa perché è stata applicata un'etichetta di conservazione a una cartella o a una](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) sezione di elementi in questo articolo.
 
@@ -97,7 +98,7 @@ Nella tabella seguente vengono descritti i diversi tipi di esenzioni a livello d
 |Criteri di conservazione Microsoft 365 applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di Teams    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   I criteri di conservazione a livello di organizzazione applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di 1xN in Microsoft teams sono identificati da GUID che iniziano con il `mbx` prefisso. Note le chat di 1xN vengono archiviate nella cassetta postale dei singoli partecipanti alla chat.      |
 |Criterio di conservazione Microsoft 365 applicato a gruppi di Microsoft 365 e ai messaggi di canale Teams     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    I criteri di conservazione a livello di organizzazione applicati ai gruppi di Microsoft 365 e ai messaggi di canale in Microsoft teams sono identificati da GUID che iniziano con il `grp` prefisso. Note i messaggi del canale vengono archiviati nella cassetta postale di gruppo associata a un team di Microsoft.     |
 
-Per ulteriori informazioni sui criteri di conservazione applicati a Microsoft teams, vedere la sezione "percorso team" [Panoramica dei criteri di conservazione](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+Per ulteriori informazioni sui criteri di conservazione applicati a Microsoft teams, vedere la sezione "percorso team" [Panoramica dei criteri di conservazione](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>Informazioni sul formato del valore InPlaceHolds per i criteri di conservazione
 
@@ -117,7 +118,7 @@ Nella tabella seguente vengono definite le tre possibili azioni di conservazione
 |**2**    |    Indica che il criterio di conservazione è configurato per contenere gli elementi. Il criterio non elimina gli elementi dopo la scadenza del periodo di conservazione.     |
 |**3**     |   Indica che il criterio di conservazione è configurato per contenere gli elementi e quindi eliminarli dopo la scadenza del periodo di conservazione.      |
 
-Per ulteriori informazioni sulle azioni di conservazione, vedere la sezione "conservazione del contenuto per un periodo di tempo specifico" in [Overview of Retention Policies](retention-policies.md#retaining-content-for-a-specific-period-of-time).
+Per ulteriori informazioni sulle azioni di conservazione, vedere la sezione "conservazione del contenuto per un periodo di tempo specifico" in [Overview of Retention Policies](create-retention-policies.md#retaining-content-for-a-specific-period-of-time).
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Passaggio 2: utilizzare il GUID per identificare il blocco
 
