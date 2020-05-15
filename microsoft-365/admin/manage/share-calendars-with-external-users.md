@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Informazioni su come consentire agli utenti di condividere i propri calendari con utenti esterni per riunioni e appuntamenti. '
-ms.openlocfilehash: bd297fc2d684357d0500495e5a8263e5279efa39
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628041"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249873"
 ---
 # <a name="share-calendars-with-external-users"></a>Condividere calendari con utenti esterni
 
@@ -39,10 +39,9 @@ La condivisione del calendario è un'impostazione globale, ovvero l'amministrato
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Abilitare la condivisione del calendario con l'interfaccia di amministrazione di Microsoft 365
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">& componenti</a> aggiuntivi. 
+1. Nell'interfaccia di amministrazione, andare a impostazioni **Impostazioni** \> **Settings**. 
     
-  
-2. Nella pagina **componenti &amp; aggiuntivi servizi** Selezionare **Calendario**.
+2. Nella scheda **Servizi** selezionare **Calendario**.
   
 3. Nella pagina **Calendario** che si apre, scegliere se si desidera consentire agli utenti di condividere i propri calendari con persone esterne all'organizzazione che dispongono di Microsoft 365 o Exchange.
     
@@ -55,4 +54,3 @@ La condivisione del calendario è un'impostazione globale, ovvero l'amministrato
 
 Dopo l'abilitazione della condivisione per il tenant, i proprietari dei calendari possono estendere gli inviti a utenti specifici. Per istruzioni, vedere [Condivisione del calendario in Outlook Web App](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx). 
   
-

@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: fc931893e95ff053cd251b6c1b12bfdbaadf49ae
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139650"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249885"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurare le opzioni di rilascio standard o di destinazione
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -48,7 +48,7 @@ Tutte le nuove versioni sono state testate e convalidate dal team di funzionalit
   
 ![Rilasci gli anelli di convalida per Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-Per gli aggiornamenti significativi, i clienti di Office vengono inizialmente informati dalla [Roadmap di Microsoft 365](https://products.office.com/business/office-365-roadmap). Man mano che un aggiornamento si avvicina all'implementazione, viene comunicato tramite il [centro messaggi di Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
+Per gli aggiornamenti significativi, i clienti vengono inizialmente informati dalla [Roadmap di Microsoft 365](https://products.office.com/business/office-365-roadmap). Man mano che un aggiornamento si avvicina all'implementazione, viene comunicato tramite il [centro messaggi di Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
 > Per accedere al centro messaggi tramite l'interfaccia di [Amministrazione](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center), è necessario un account di Microsoft 365 o Azure ad. Microsoft 365 Home Plan gli utenti non dispongono di un centro di amministrazione.
@@ -99,7 +99,7 @@ La versione mirata consente agli amministratori, ai responsabili delle modifiche
 > [!IMPORTANT]
 > È possibile richiedere fino a 24 ore per rendere effettive le modifiche riportate di seguito in Microsoft 365. Se si disattiva l'opzione Targeted Release dopo averla abilitata, è possibile che gli utenti non possano più accedere alle funzionalità non ancora inserite nel rilascio pianificato. 
   
-1. Nell'interfaccia di amministrazione, passare all'impostazione **Impostazioni** > **Setting**e nella scheda **profilo organizzazione** scegliere **Preferenze di rilascio**.
+1. Nell'interfaccia di amministrazione, passare all'impostazione **Impostazioni**  >  **Setting**e nella scheda **profilo organizzazione** scegliere **Preferenze di rilascio**.
 
 5. Per disabilitare la versione di destinazione, selezionare **versione standard**, quindi fare clic su **Salva modifiche**. 
     
@@ -112,11 +112,7 @@ La versione mirata consente agli amministratori, ai responsabili delle modifiche
 9. Dopo aver completato l'aggiunta di utenti, selezionare **Salva modifiche**.
 
 
-
-## <a name="get-the-targeted-release-version-of-office"></a>Ottenere la versione finale di Office
-
-Per installare una build Targeted Release di Office, [eseguire questa procedura](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead). Questa build consente di accedere in anteprima alle nuove funzionalità di Office 2016 per desktop Windows.
   
-## <a name="learn-more"></a>Scopri di più
+## <a name="learn-more"></a>Altre informazioni
 
 Informazioni su come [gestire i messaggi](https://docs.microsoft.com/office365/admin/manage/message-center) nel [centro messaggi di Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) per ottenere notifiche relative agli aggiornamenti e rilasci imminenti di Microsoft 365.
