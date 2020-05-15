@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la gestione dei record in Microsoft 365, è possibile applicare le pianificazioni di conservazione specifiche dell'organizzazione in un piano di archiviazione per gestire la conservazione, la dichiarazione dei record e l'eliminazione a supporto dell'intero ciclo di vita del contenuto.
-ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 261ae3286792dde540d9bf648c15e529863091ed
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949249"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231869"
 ---
 # <a name="records-management-in-microsoft-365"></a>Gestione dei record in Microsoft 365
 
@@ -34,7 +34,7 @@ La soluzione di gestione dei record supporta i seguenti elementi:
 
 - **Eseguire la migrazione e gestire il piano di conservazione con il piano file** e usare [gestione del piano di archiviazione](file-plan-manager.md) da inserire nel piano di conservazione esistente oppure crearne di nuovi con descrittori di file e gerarchie in espansione.
 
-- **Stabilire criteri di conservazione e di eliminazione**. Definire i periodi di [conservazione](retention-policies.md#retaining-content-for-a-specific-period-of-time) ed [eliminazione](retention-policies.md#deleting-content-thats-older-than-a-specific-age) in base a vari fattori, tra cui la data dell'ultima modifica o di creazione.
+- **Stabilire criteri di conservazione e di eliminazione nell'etichetta di record**. Definire i periodi di [conservazione](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) ed [eliminazione](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age) in base a vari fattori, tra cui la data dell'ultima modifica o di creazione.
 
 - **Attivare la conservazione basata su eventi** con la [conservazione basata su eventi](event-driven-retention.md).
 
