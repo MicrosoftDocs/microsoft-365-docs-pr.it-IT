@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365
+title: Gestire utenti e gruppi
 summary: Consultare queste risorse per aiutare gli amministratori a svolgere attività comuni oppure visualizzare il riquadro di spostamento a sinistra per un elenco completo.
 metadata:
-  title: Gestire gli utenti e i gruppi di SharePoint Online con PowerShell di Office 365
+  title: Gestire utenti e gruppi
   description: Gestione delle password, aggiunta e rimozione di utenti, configurazione di gruppi e gestione delle licenze
   ms.service: O365-administration
   ms.subservice: subservice
@@ -11,12 +11,12 @@ metadata:
   ms.author: sirkkuw
   ms.date: 01/27/2020
   localization_priority: Priority
-  ms.openlocfilehash: fc4300d57f3a14a7f71b0ff61a3aedf4c54bbac6
-  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.openlocfilehash: fadbb38cbf4174366993ec3c27b58b914173b2be
+  ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43955314"
+  ms.lasthandoff: 05/15/2020
+  ms.locfileid: "44267136"
 landingContent:
 - title: Gestire gli utenti
   linkLists:
@@ -26,6 +26,8 @@ landingContent:
       url: add-users.md
     - text: Modifica di un utente
       url: add-users.md
+    - text: Aggiungere gli utenti a un gruppo di Microsoft 365
+      url: ../create-groups/manage-guest-access-in-groups.md
     - text: Aggiungere un altro indirizzo di posta elettronica
       url: ../email/add-another-email-alias-for-a-user.md
     - text: Creare una cassetta postale condivisa
@@ -34,7 +36,7 @@ landingContent:
       url: ../manage/assign-licenses-to-users.md
     - text: Rimuovere licenze dagli utenti
       url: ../manage/remove-licenses-from-users.md
-    - text: Utilizzo del dominio personalizzato
+    - text: Usare il dominio personalizzato
       url: ../email/change-email-address.md
 - title: Gestire gruppi
   linkLists:
@@ -54,7 +56,7 @@ landingContent:
     links:
     - text: Reimpostare la password di un utente
       url: reset-passwords.md
-    - text: Impostare le password in modo che non scada mai
+    - text: Impostare le password in modo che non scadano mai
       url: set-password-to-never-expire.md
     - text: Consentire agli utenti di reimpostare le loro password
       url: let-users-reset-passwords.md
