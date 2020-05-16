@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036585"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267168"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novità di Office 365 ATP
 
@@ -35,6 +35,10 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 > [!TIP]
 > Non si dispone ancora di Office 365 ATP? [Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## <a name="marchapril-2020"></a>Marzo/aprile 2020
+
+- La possibilità di [gestire gli account utente compromessi con l'analisi e la risposta automatizzata](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) è ora generalmente disponibile.
+
 ## <a name="januaryfebruary-2020"></a>Gennaio/febbraio 2020
 
 - [Disponibilità generale delle visualizzazioni della campagna in Office 365 ATP](campaigns.md)
@@ -46,7 +50,7 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
     - Advanced NOT Filters (queste sono le opzioni di filtro avanzate che includono non contiene, non include, ecc.)
     - Filtri temporali granulari (giorno, ora, mezz'ora) 
 
-- Il widget **eventi** non consentiti è ora il widget **Centro azioni** . Per visualizzare i widget di sicurezza, nel centro sicurezza & conformità, accedere a **Threat Management** > **Review**.
+- Il widget **eventi** non consentiti è ora il widget **Centro azioni** . Per visualizzare i widget di sicurezza, nel centro sicurezza & conformità, accedere a **gestione minacce**  >  **Revisione**.)
 
 - [Documenti attendibili in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(anteprima)**
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Informazioni su come consentire agli utenti di condividere i propri calendari con utenti esterni per riunioni e appuntamenti. '
-ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 5853d285508c5ed0ec4771a145912e374c191089
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249873"
+ms.locfileid: "44262296"
 ---
 # <a name="share-calendars-with-external-users"></a>Condividere calendari con utenti esterni
 
@@ -39,7 +39,7 @@ La condivisione del calendario è un'impostazione globale, ovvero l'amministrato
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Abilitare la condivisione del calendario con l'interfaccia di amministrazione di Microsoft 365
 
-1. Nell'interfaccia di amministrazione, andare a impostazioni **Impostazioni** \> **Settings**. 
+1. Nell' **interfaccia di amministrazione, andare a impostazioni** \> **organizzazione org**. 
     
 2. Nella scheda **Servizi** selezionare **Calendario**.
   

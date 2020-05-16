@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 2738cf7af32d2e15b0c2c790a241dabbb1f104bc
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249885"
+ms.locfileid: "44262318"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurare le opzioni di rilascio standard o di destinazione
 
@@ -99,7 +99,7 @@ La versione mirata consente agli amministratori, ai responsabili delle modifiche
 > [!IMPORTANT]
 > È possibile richiedere fino a 24 ore per rendere effettive le modifiche riportate di seguito in Microsoft 365. Se si disattiva l'opzione Targeted Release dopo averla abilitata, è possibile che gli utenti non possano più accedere alle funzionalità non ancora inserite nel rilascio pianificato. 
   
-1. Nell'interfaccia di amministrazione, passare all'impostazione **Impostazioni**  >  **Setting**e nella scheda **profilo organizzazione** scegliere **Preferenze di rilascio**.
+1. Nell'interfaccia di amministrazione passare all' **Settings**  >  **impostazione org**impostazioni e, nella scheda **profilo organizzazione** , scegliere **Preferenze di rilascio**.
 
 5. Per disabilitare la versione di destinazione, selezionare **versione standard**, quindi fare clic su **Salva modifiche**. 
     

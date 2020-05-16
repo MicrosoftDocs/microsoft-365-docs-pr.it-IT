@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di un classificatore incorporato (anteprima)
+title: Testing di classificatori incorporati tramite etichette di conservazione (anteprima)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,16 +14,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 viene fornito con un certo numero di classificatori incorporati che è possibile utilizzare per identificare ed etichettare il contenuto nell'organizzazione. In questo argomento viene illustrato come prepararsi per l'utilizzo di questi classificatori.
-ms.openlocfilehash: 2bd36ac42278cfe7b015d03caf2d9e1958908f8f
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: fad35d72c4c40c7b79cba4cb286ccc0f5bb5ab8d
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193504"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262547"
 ---
-# <a name="using-a-built-in-classifier-preview"></a>Utilizzo di un classificatore incorporato (anteprima)
+# <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Testing di classificatori incorporati tramite etichette di conservazione (anteprima)
 
-Microsoft ha formato e testato cinque classificatori utilizzando set di dati di esempio molto grandi, che possono essere utili per identificare determinate categorie di contenuto. Vedere [Guida introduttiva ai classificatori addestrabili (Preview)](classifier-getting-started-with.md). Questi classificatori vengono visualizzati nel `Ready to use` gruppo per impostazione predefinita.
+Microsoft ha formato e testato cinque classificatori che possono essere utili per identificare determinate categorie di contenuto. Questi classificatori vengono visualizzati nel `Ready to use` gruppo per impostazione predefinita e sono stati addestrati utilizzando set di dati di esempio molto grandi.
+
+> [!IMPORTANT]
+> Prima di utilizzare i classificatori incorporati nel flusso di lavoro di classificazione e etichettatura, è consigliabile verificarli in base a un campione del contenuto dell'organizzazione che si adatta alla categoria per verificare che le stime di classificazione soddisfino le proprie aspettative.
+
+Per ulteriori informazioni sui classificatori addestrabili, vedere [Guida introduttiva ai classificatori addestrabili (Preview)](classifier-getting-started-with.md).
 
 Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 
@@ -45,13 +50,10 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 - **Parolacce**: rileva una categoria specifica di elementi di testo di lingua offensiva che contengono espressioni che imbarazzano la maggior parte delle persone.
 - **Threat**: rileva una categoria specifica di elementi di testo offensivi relativi alle minacce per commettere violenze o arrecare danni fisici a una persona o a una proprietà,
 
-> [!NOTE]
-> Prima di utilizzare i classificatori incorporati nel flusso di lavoro di classificazione e etichettatura, è consigliabile verificarli in base a un campione del contenuto dell'organizzazione che si adatta alla categoria per verificare che le stime di classificazione soddisfino le proprie aspettative.
-
 > [!IMPORTANT]
 > Si noti che la lingua offensiva, la molestia, la profanità e i classificatori di minacce funzionano solo con il testo ricercabile non sono esaustivi o completi. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare questi classificatori a sua discrezione. Anche se i classificatori possono assistere la propria organizzazione nel monitoraggio di un'offensiva e di altre lingue utilizzate, i classificatori non affrontano le conseguenze di tale lingua e non sono destinati a fornire il solo mezzo di monitoraggio o di risposta dell'organizzazione all'uso di tale lingua. La propria organizzazione e non Microsoft o le sue affiliate resta responsabile di tutte le decisioni relative al monitoraggio, all'applicazione, al blocco, alla rimozione e alla conservazione di qualsiasi contenuto identificato da un classificatore preformato.
 
-## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>Come prepararsi e utilizzare un classificatore incorporato
+## <a name="how-to-verify-that-a-built-in-classifier-will-meet-your-needs"></a>Come verificare che un classificatore incorporato soddisfi le proprie esigenze
 
 1. Raccogliere gli elementi di contenuto di prova monouso che si ritiene appartengano alla categoria del classificatore incorporato (corrispondenze positive) e quelli che non devono essere inclusi (corrispondenze negative) nella categoria che si sta testando.
 
@@ -60,19 +62,19 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 
 2. Creare una cartella di SharePoint Online dedicata. attendere almeno un'ora che la cartella venga aggiunta all'indice di ricerca. Prendere nota dell'URL della cartella.
 
-3. Accedere a Microsoft 365 Compliance Center with Compliance admin or Security admin Role Access e aprire **Microsoft 365 Compliance Center** > **Records Management (Preview)** > **Label Policies** Tab.
+3. Accedere a Microsoft 365 Compliance Center with Compliance admin or Security admin Role Access e aprire **Microsoft 365 Compliance Center**  >  **Records Management (Preview)**  >  **Label Policies** Tab.
 
-4. Scegliere `Auto-apply a label`.
+4. Scegliere `Auto-apply a label` .
 
-5. Scegliere `Choose a label to auto-apply`.
+5. Scegliere `Choose a label to auto-apply` .
 
-6. Scegliere `Create new labels` e creare un'etichetta per l'utilizzo solo con questo test. Quando si esegue questa operazione, `Retention` lasciare impostato su disattivato. Non si desidera abilitare alcuna conservazione o altre azioni. In questo caso, l'etichetta di conservazione verrà utilizzata semplicemente come etichetta di testo, senza applicare alcuna azione. Ad esempio, è possibile creare un'etichetta di conservazione denominata "test di classificazione del codice sorgente" senza azioni e quindi applicarla automaticamente a contenuto con classificazione del codice sorgente come condizione. Per ulteriori informazioni sulla creazione di etichette di conservazione, vedere [Overview of retention labels](labels.md).
+6. Scegliere `Create new labels` e creare un'etichetta per l'utilizzo solo con questo test. Quando si esegue questa operazione, lasciare `Retention` impostato su `off` . Non si desidera abilitare alcuna conservazione o altre azioni. In questo caso, l'etichetta di conservazione verrà utilizzata semplicemente come etichetta di testo, senza applicare alcuna azione. Ad esempio, è possibile creare un'etichetta di conservazione denominata "test di classificazione del codice sorgente" senza azioni e quindi applicarla automaticamente a contenuto con classificazione del codice sorgente come condizione. Per ulteriori informazioni sulla creazione di etichette di conservazione, vedere [Overview of retention labels](labels.md).
   
-7. Scegliere `Auto-apply a label` e quindi `Choose a label to auto-apply`. Per ulteriori informazioni sull'utilizzo di una condizione di applicazione automatica di un'etichetta, vedere [applicazione automatica dei criteri delle etichette di conservazione in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions).
+7. Scegliere `Auto-apply a label` e quindi `Choose a label to auto-apply` . Per ulteriori informazioni sull'utilizzo di una condizione di applicazione automatica di un'etichetta, vedere [applicazione automatica dei criteri delle etichette di conservazione in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions).
 
-8. Scegliere l'etichetta di test dall'elenco e scegliere `Next`.
+8. Scegliere l'etichetta di test dall'elenco e scegliere `Next` .
 
-9. Scegliere `Apply label to content that matches a trainable classifier`.
+9. Scegliere `Apply label to content that matches a trainable classifier` .
 
 ![selezione di classificatore come condizione](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
 
@@ -80,9 +82,9 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 
 11. Denominare il criterio, ad esempio "test di classificazione incorporato del codice sorgente".
 
-12. Scegliere `Let me choose specific locations`.
+12. Scegliere `Let me choose specific locations` .
 
-13. Disattiva tutti i percorsi tranne `SharePoint sites` e scegli `Choose sites`.
+13. Disattiva tutti i percorsi tranne `SharePoint sites` e scegli `Choose sites` .
 
 14. Immettere l'URL del sito dal passaggio 2.
 

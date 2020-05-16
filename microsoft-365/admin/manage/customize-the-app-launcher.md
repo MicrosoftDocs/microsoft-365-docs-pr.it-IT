@@ -20,19 +20,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: "Creare collegamenti rapidi per la posta elettronica, i documenti, le app, i siti di SharePoint, i siti esterni e altre risorse mediante l'aggiunta di sezioni personalizzate all'icona di avvio delle app. "
-ms.openlocfilehash: 2c0a1cbd2f7c605bc03a55787266c7a627f8e329
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f099eabef7a22e9ebd8f20b23ccd3d8da142f07f
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139722"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262364"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Aggiungere riquadri personalizzati all'icona di avvio delle app
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Aggiungere un riquadro personalizzato all'icona di avvio delle app
 
-1. Nell'interfaccia di amministrazione, passare**Settings**  > alla scheda **Impostazioni e**scegliere **profilo organizzazione** .
+1. Nell'interfaccia di amministrazione, passare alla scheda **Impostazioni**  >  **Org Settings** organizzazione e scegliere **Organigramma profilo** .
     
 2. Nella scheda **profilo organizzazione** , scegliere **tessere di avvio delle app personalizzate**.
   
@@ -76,7 +76,7 @@ Il riquadro personalizzato viene ora visualizzato nella scheda **Tutte** nell'ic
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Nell'interfaccia di amministrazione, passare alla > **Settings** > scheda Impostazioni<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">profilo organizzazione</a> **impostazioni.**
+1. Nell'interfaccia di amministrazione, passare alla scheda **Impostazioni**  >  **organizzazione impostazioni org**  >  **Organization profile** </a> .
     
 2. Nella pagina **profilo organizzazione** , accanto a **Aggiungi riquadri personalizzati per l'organizzazione**, selezionare **modifica**.
 
@@ -84,7 +84,7 @@ Il riquadro personalizzato viene ora visualizzato nella scheda **Tutte** nell'ic
     
 4. Selezionare **Aggiorna** \> **Chiudi**. 
     
-Per eliminare un riquadro personalizzato, selezionare il riquadro nella finestra **riquadri personalizzati** , quindi selezionare **Rimuovi riquadro** > **Elimina**. 
+Per eliminare un riquadro personalizzato, selezionare il riquadro nella finestra **riquadri personalizzati** , quindi selezionare **Rimuovi riquadro**  >  **Elimina**. 
   
 ## <a name="whats-next"></a>Operazioni successive
 

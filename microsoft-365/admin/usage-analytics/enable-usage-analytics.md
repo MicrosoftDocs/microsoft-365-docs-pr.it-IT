@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Informazioni su come avviare la raccolta dei dati per il tenant utilizzando l'app modello di analisi di utilizzo di Microsoft 365 in Power BI.
-ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140684"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262536"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ Per avviare l'app modello, è necessario essere un **amministratore globale**, u
     
 2.  Dopo aver scaricato Power BI, eseguire l'accesso. Seleziona app->Ottieni app dal menu di spostamento.    
   
-3. Nella scheda **app** Digitare Microsoft 365 nella casella di \> ricerca e quindi selezionare **Analisi utilizzo Microsoft 365** **ottenerlo subito**.
+3. Nella scheda **app** Digitare Microsoft 365 nella casella di ricerca e quindi selezionare **Analisi utilizzo Microsoft 365** \> **ottenerlo subito**.
 
     [![Seleziona Ottieni subito](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
@@ -83,7 +83,7 @@ Per avviare l'app modello, è necessario essere un **amministratore globale**, u
 
 5.  Fare clic su **Esplora app** per visualizzare l'app con dati di esempio. Fare clic su **Connetti** per connettere l'app ai dati dell'organizzazione.
 
-6.  Dopo aver fatto clic su **Connetti**, nella schermata **Connetti a Microsoft 365 Usage Analytics** digitare l'ID tenant copiato nel passaggio (1) \> **successivo**.
+6.  Dopo aver fatto clic su **Connetti**, nella schermata **connetti a Microsoft 365 Usage Analytics** digitare l'ID tenant copiato nel passaggio (1) \> **successivo**.
     
 7. Nella schermata successiva, selezionare **OAuth2** come accesso al **Metodo** \> **di**autenticazione. Se si sceglie qualsiasi altro metodo di autenticazione, la connessione all'app modello avrà esito negativo.
     
@@ -97,7 +97,7 @@ Le aggregazioni a livello di tenant saranno disponibili in tutti i report. I **d
 
 Per rendere anonimi i dati raccolti per tutti i report è necessario essere un amministratore globale. In questo modo vengono nascoste informazioni identificabili, ad esempio i nomi di utenti, gruppi e siti, nei report e nell'app modello.
   
-1. \> Nell'interfaccia di amministrazione, passare alla scheda **Impostazioni e** in **Servizi** , scegliere **report**. **Settings**
+1. Nell'interfaccia di amministrazione passare alla **pagina Impostazioni** \> **organizzazione**e quindi in scheda **Servizi** scegliere **report**.
     
 2. Selezionare **report**, quindi scegliere di **visualizzare gli identificatori anonimi**. Questa impostazione viene applicata sia ai report sull'utilizzo che all'app modello.
   

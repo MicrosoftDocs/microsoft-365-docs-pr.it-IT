@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: Creare una scheda dell'help desk personalizzata nell'interfaccia di amministrazione e aggiungere informazioni di contatto del supporto personalizzate al riquadro della guida.
-ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dac276290f882aa1bd9f22eb6a3306f7869f4253
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627897"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262272"
 ---
 # <a name="add-customized-help-desk-info-to-the-help-pane"></a>Aggiungere informazioni di help desk personalizzate al riquadro della Guida
 
@@ -40,7 +40,7 @@ Per creare una scheda dell'help desk personalizzata, è necessario essere un amm
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>Creare una scheda dell'help desk personalizzata nell'interfaccia di amministrazione
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. Nell'interfaccia di amministrazione, accedere **alle impostazioni e scegliere la** > **Settings** scheda **informazioni di help desk** .
+1. Nell'interfaccia di amministrazione, andare alle impostazioni **Settings**  >  **org** impostazioni e scegliere **help desk Information** Tab.
     
 2. Nella scheda **profilo organizzazione** , scegliere **tessere di avvio delle app personalizzate**.
   
