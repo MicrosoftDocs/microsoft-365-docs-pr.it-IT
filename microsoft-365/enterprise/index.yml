@@ -13,12 +13,12 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 11/29/2019
-  ms.openlocfilehash: f954a03e23d354eb52e5dc112f1ebc1d804ca350
-  ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+  ms.openlocfilehash: 31685a610f6560296dc72b7624f81a5927d56ec2
+  ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 05/04/2020
-  ms.locfileid: "44011174"
+  ms.lasthandoff: 05/16/2020
+  ms.locfileid: "44268258"
 highlightedContent:
   items:
   - title: Informazioni su Microsoft 365 per le aziende
@@ -44,7 +44,7 @@ conceptualContent:
       text: Infrastruttura di base
     - url: deploy-workloads.md
       itemType: how-to-guide
-      text: Carichi di lavoro e scenari
+      text: Carichi di lavoro
     - url: desktop-deployment-center-home.md
       itemType: get-started
       text: Centro di distribuzione desktop
@@ -62,20 +62,6 @@ conceptualContent:
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
-  - title: Distribuire gli scenari principali
-    links:
-    - url: secure-teams-highly-regulated-data-scenario.md
-      itemType: how-to-guide
-      text: Microsoft Teams per dati molto regolamentati
-    - url: teams-sharepoint-online-sites-highly-regulated-data.md
-      itemType: how-to-guide
-      text: Siti di SharePoint per dati molto regolamentati
-    - url: empower-people-to-work-remotely.md
-      itemType: how-to-guide
-      text: Lavoratori remoti
-    - url: migration-microsoft-365-enterprise-workload.md
-      itemType: deploy
-      text: Migrazione di Windows e del client e del server di Office
   - title: Gestire Microsoft 365 per le aziende
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
