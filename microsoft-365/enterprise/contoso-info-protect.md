@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come Contoso usa le funzionalità di protezione delle informazioni disponibili in Microsoft 365 Enterprise per proteggere le proprie risorse digitali nel cloud.
-ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 137e6ff499ba8fb119c696dba9337307876ee0c2
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625303"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268411"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protezione delle informazioni per Contoso Corporation
 
@@ -65,15 +65,11 @@ Contoso ha utilizzato i seguenti passaggi per preparare Microsoft 365 Enterprise
 
    Contoso ha creato etichette di riservatezza per i livelli di dati con l'etichetta per dati altamente regolamentati, tra cui crittografia, autorizzazioni e filigrane.
 
-4. Ha creato siti di SharePoint protetti per dati sensibili e altamente regolamentati con autorizzazioni che bloccano l'accesso
-
-   Come siti del team privati sono stati configurati sia siti per dati sensibili che per dati altamente regolamentati con restrizioni aggiuntive delle autorizzazioni. I siti di SharePoint per dati riservati e altamente regolamentati sono stati configurati anche con un'etichetta di conservazione corrispondente. I file archiviati nei siti di SharePoint altamente regolamentati sono protetti con una sottoetichetta di riservatezza dell'etichetta per dati altamente regolamentati. Per altre informazioni, vedere [Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md).
-
-5.  Ha spostato i dati dai siti di SharePoint locali e le condivisioni di file ai nuovi siti di SharePoint
+4.  Ha spostato i dati dai siti di SharePoint locali e le condivisioni di file ai nuovi siti di SharePoint
 
     I file di cui è stata eseguita la migrazione ai nuovi siti di SharePoint hanno ereditato le etichette di conservazione predefinite assegnate al sito.
 
-6.  Ha istruito i dipendenti su come usare le etichette di riservatezza per i nuovi documenti, su come interagire con l'infrastruttura IT di Contoso durante la creazione di nuovi siti di SharePoint e su come archiviare sempre le risorse digitali nei siti di SharePoint
+5.  Ha istruito i dipendenti su come usare le etichette di riservatezza per i nuovi documenti, su come interagire con l'infrastruttura IT di Contoso durante la creazione di nuovi siti di SharePoint e su come archiviare sempre le risorse digitali nei siti di SharePoint
 
     Considerata la parte più difficile della transizione della protezione delle informazioni per il cloud, i responsabili e l'infrastruttura IT di Contoso hanno provveduto a cambiare le abitudini di archiviazione delle informazioni dei dipendenti dell'organizzazione inducendoli a etichettare e archiviare sempre le proprie risorse digitali nel cloud, a evitare di usare condivisioni di file locali e a non usare mai servizi di archiviazione cloud di terze parti o dispositivi USB.
 

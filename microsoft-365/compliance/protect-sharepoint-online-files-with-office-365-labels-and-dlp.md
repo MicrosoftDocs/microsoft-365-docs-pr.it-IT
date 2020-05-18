@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Sintesi: applicare etichette di conservazione e criteri di prevenzione della perdita dei dati ai siti del team di SharePoint Online con vari livelli di protezione delle informazioni.'
-ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b924b0d62d7c66a008739dfa12c0d1dd00deac9b
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081752"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262397"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteggere i file di SharePoint Online con le etichette di conservazione e la prevenzione della perdita dei dati
 
@@ -216,6 +216,10 @@ Seguire questa procedura per configurare un criterio della prevenzione della per
 Di seguito è riportata la configurazione risultante per i siti con riservatezza elevata del team di SharePoint Online.
   
 ![Criteri di prevenzione della perdita dei dati per un sito del team di SharePoint Online isolato usando l'etichetta di conservazione Riservatezza elevata](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>Il supporto per le etichette di riservatezza sarà disponibile a breve
+
+Attualmente è possibile usare solo un'etichetta di conservazione come condizione e non un’[etichetta di riservatezza](sensitivity-labels.md). Stiamo lavorando al supporto per l'uso di un'etichetta di riservatezza in questa condizione.
   
 ## <a name="next-step"></a>Passaggio successivo
 

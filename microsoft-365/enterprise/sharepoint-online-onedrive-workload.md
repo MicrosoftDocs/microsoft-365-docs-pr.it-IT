@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Passaggi del processo di pianificazione, distribuzione e promozione del valore di SharePoint all'interno dell'organizzazione.
-ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636917"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268210"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Distribuire SharePoint e OneDrive per Microsoft 365 Enterprise
 
@@ -67,10 +67,6 @@ I pilastri aziendali seguenti possono soddisfare le esigenze dell'organizzazione
 Vedere [Amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-online) per le risorse su come configurare SharePoint per le proprie esigenze.
 
 Un modo per scoprire i vantaggi di SharePoint consiste nell'esaminare come i singoli utenti, un team, un reparto o l'intera organizzazione interagiscono oggi e quindi individuare uno scenario adatto che fornisca modi più semplici per archiviare e condividere file. Tenere presente che [Microsoft Teams](teams-workload.md) potrebbe essere una soluzione migliore per alcuni scenari.
-
-#### <a name="sharepoint-site-for-highly-regulated-data"></a>Sito di SharePoint per dati altamente regolamentati
-
-I dati altamente regolamentati sono soggetti alle normative regionali o sono i dati più preziosi per l'organizzazione, ad esempio i segreti commerciali, le informazioni sulle risorse finanziarie o umane e la strategia dell'organizzazione. È possibile configurare un sito di SharePoint per l'accesso limitato, la classificazione dei dati, la prevenzione della perdita dei dati e la crittografia per i dati di questo tipo. Per informazioni dettagliate, vedere [Siti di Microsoft Teams e SharePoint Online per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### <a name="result"></a>Risultato
 Un elenco di scenari di SharePoint che soddisfano le esigenze dell'organizzazione in termini di archiviazione e condivisione dei documenti, gestione dei contenuti, collaborazione e sicurezza.
