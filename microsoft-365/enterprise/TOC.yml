@@ -90,7 +90,7 @@
           href: deploy-with-existing-infrastructure.md
         - name: Distribuzione per gli scenari non aziendali
           href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: Distribuire carichi di lavoro e scenari
+    - name: Distribuire carichi di lavoro
       href: deploy-workloads.md
       items:
         - name: Microsoft Teams
@@ -101,10 +101,6 @@
           href: sharepoint-online-onedrive-workload.md
         - name: Migrazione
           href: migration-microsoft-365-enterprise-workload.md
-        - name: Supportare i lavoratori remoti
-          href: empower-people-to-work-remotely.md
-        - name: Siti di SharePoint per dati altamente regolamentati
-          href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: Guide all'ambiente di test
       href: m365-enterprise-test-lab-guides.md
       items:
@@ -180,12 +176,6 @@
           href: contoso-info-protect.md
         - name: Riepilogo sicurezza
           href: contoso-security-summary.md
-        - name: Team per un progetto interno
-          href: contoso-team-for-top-secret-project.md
-        - name: Sito di SharePoint per dati altamente regolamentati
-          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Modifiche al contenuto sulla distribuzione di Microsoft 365 per aziende
-      href: microsoft-365-deploment-guide-changes.md
     - name: Stato di integrità dei servizi di Microsoft 365
       href: microsoft-365-service-health.md
 - name: Centro di distribuzione desktop
