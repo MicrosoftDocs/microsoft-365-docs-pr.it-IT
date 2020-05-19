@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come iniziare a utilizzare Core eDiscovery in Microsoft 365. Dopo aver assegnato le autorizzazioni di eDiscovery e aver creato un caso, è possibile aggiungere membri, creare eDiscovery e quindi cercare ed esportare i dati rilevanti per l'indagine.
-ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943385"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280546"
 ---
 # <a name="get-started-with-core-ediscovery"></a>Introduzione a Core eDiscovery
 
@@ -42,11 +42,11 @@ Licensing for Core eDiscovery richiede la sottoscrizione dell'organizzazione app
 
    OPPURE
 
-  - Una licenza Microsoft 365 E1 o Office 365 E1 con una licenza per il componente aggiuntivo di archiviazione di Exchange Online piano 2 o Exchange Online
+  - Licenza di Office 365 E1 con una licenza per il componente aggiuntivo di archiviazione Exchange Online piano 2 o Exchange Online
 
   E
 
-  - Una licenza Microsoft 365 E1 o Office 365 E1 con una licenza per i componenti aggiuntivi di SharePoint Online piano 2 o OneDrive for business piano 2
+  - Licenza di Office 365 E1 con una licenza del componente aggiuntivo di SharePoint Online piano 2 o OneDrive for business piano 2
   
   Per informazioni su come assegnare le licenze, vedere [assegnare licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 

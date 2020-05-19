@@ -14,32 +14,32 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 70e36d4f11f7fc1a5870f41a32351cf7078bdc68
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 3c2a89a881e2615a8459f0a7126b2d92f750c6b0
+ms.sourcegitcommit: dbc9ff159ed41160d8883c8a9787eba50b45f50b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065771"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278449"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>Requisiti per la localizzazione dei dati personali in russo
 
-Al 1 ° settembre 2015, le organizzazioni, che sono considerati operatori dei dati personali, devono garantire quando si raccolgono dati personali, che la registrazione dei dati personali dei cittadini russi, la sistematizzazione, l'accumulazione, l'archiviazione, la chiarificazione (l'aggiornamento, la modifica) e l'estrazione vengono eseguite attraverso i database situati in Russia (' requisito di localizzazione dei dati personali '). <sup>1</sup>
+Al 1 ° settembre 2015, le organizzazioni che sono considerate operatori di dati personali devono garantire che, quando si raccolgono dati personali, la registrazione dei dati personali dei cittadini russi, la sistematizzazione, l'accumulazione, l'archiviazione, la chiarificazione (aggiornamento, modifica) e l'estrazione vengano eseguite tramite i database situati in Russia (' Personal Data Localization requirement '). <sup>1</sup>
 
-I Microsoft Online Services, disponibili per le organizzazioni (compresi gli istituti di istruzione) (in seguito denominato ' Customer '), compresi quelli che abilitano l'elaborazione dei dati personali, quali Microsoft Azure, Microsoft 365, Dynamics 365 e Power Platform, sono forniti da centri di elaborazione dati situati all'esterno della Russia (per ulteriori informazioni, visitare il [Centro protezione Microsoft](https://www.microsoft.com/trust-center)).
+I servizi Microsoft online disponibili per le organizzazioni (compresi gli istituti di istruzione) (in seguito denominato ' Customer '), compresi quelli che abilitano l'elaborazione dei dati personali quali Microsoft Azure, Microsoft 365, Dynamics 365 e Power Platform, sono forniti da centri di elaborazione dei dati situati al di fuori della Russia (per ulteriori informazioni visitare il [Centro protezione Microsoft](https://www.microsoft.com/trust-center)).
 
-In base al tipo e al contenuto delle informazioni elaborate dai sistemi informativi dei clienti, tali sistemi, compresi quelli che utilizzano i prodotti cloud Microsoft, possono essere considerati un sistema di informazioni sui dati personali ("PDI", "ISPD"). Nei casi in cui il cliente desidera utilizzare i Microsoft Online Services, in un sistema che si qualifica come PDI attraverso la sua architettura e i tipi di informazioni elaborate, Microsoft invita i clienti a prendere in considerazione, tra le altre cose, le soluzioni disponibili, specificate di seguito. Tutti gli scenari riportati di seguito sono disponibili per i clienti come opzione aggiuntiva per le offerte aziendali standard.
+In base al tipo e al contenuto delle informazioni elaborate dai sistemi informativi dei clienti, tali sistemi, compresi quelli che utilizzano i prodotti cloud Microsoft, possono essere considerati un sistema di informazioni sui dati personali ("PDI", "ISPD"). Nei casi in cui il cliente desidera utilizzare i servizi Microsoft online in un sistema che si qualifica come PDI attraverso la sua architettura e i tipi di informazioni elaborate, Microsoft invita i clienti a prendere in considerazione, tra le altre cose, le soluzioni disponibili specificate di seguito. Tutti gli scenari forniti sono disponibili per i clienti come opzione aggiuntiva per le offerte aziendali standard.
 
-Si noti che è il cliente, in qualità di operatore dei dati personali di PDI, che è responsabile della conformità e deve analizzare e valutare i requisiti legali applicabili per la localizzazione dei dati personali e, a propria discrezione, determinare in modo indipendente misure sufficienti per garantire che il trattamento dei dati personali in PDI sia conforme alla legge sui dati personali russi. <sup>2</sup>
+Si noti che è il cliente come operatore dei dati personali di PDI che è responsabile della conformità e deve analizzare e valutare i requisiti legali applicabili per la localizzazione dei dati personali e, a propria discrezione, determinare in modo indipendente misure sufficienti per garantire che il trattamento dei dati personali in PDI sia conforme alla legge sui dati personali russi. <sup>2</sup>
 
 ## <a name="subscribing-to-microsoft-online-services"></a>Sottoscrizione a Microsoft Online Services
 
 ### <a name="microsoft-id-management"></a>Gestione dell'ID Microsoft
 
-Microsoft invita i clienti a prendere in considerazione la sottoscrizione a Microsoft Online Services – Microsoft Azure, Microsoft 365, Dynamics 365 e Power Platform – tramite un partner di Microsoft Cloud Solution Provider (CSP). Per ulteriori informazioni, vedere l' [elenco dei partner CSP](https://pinpoint.microsoft.com/search?type=services&campaign=691) .
+Microsoft invita i clienti a prendere in considerazione la sottoscrizione a Microsoft Online Services, Microsoft Azure, Microsoft 365, Dynamics 365 e Power Platform, tramite un partner di Microsoft Cloud Solution Provider (CSP). Per ulteriori informazioni, vedere l' [elenco dei partner CSP](https://pinpoint.microsoft.com/search?type=services&campaign=691) .
 
 ### <a name="managing-user-identity-and-access-for-microsoft-online-services"></a>Gestione dell'identità e dell'accesso degli utenti ai servizi online Microsoft
 
-Per i servizi Microsoft online quali Microsoft Azure, Microsoft 365, Dynamics 365 e Power Platform User Verification and Access Management vengono eseguiti tramite [Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/). Si noti che i casi in cui un cliente Microsoft utilizza un sistema di gestione dell'identificazione locale per i servizi cloud Microsoft (ad esempio, Windows Server Active Directory (AD) o qualsiasi altro sistema di gestione degli ID), il cliente ha la possibilità di integrare rapidamente tale sistema con Azure Active Directory (AAD) tramite Azure AD Connect. Per ulteriori informazioni, vedere l'opzione [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) . I clienti Microsoft possono anche prendere in considerazione l'utilizzo di applicazioni e soluzioni di fornitori di terze parti per la gestione degli utenti e l'integrazione del sistema di identificazione locale con Azure AD.
+Per i servizi Microsoft online, quali Microsoft Azure, Microsoft 365, Dynamics 365 e Power Platform, la verifica degli utenti e la gestione degli accessi vengono eseguite tramite [Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/). Si noti che i casi in cui un cliente Microsoft utilizza un sistema di gestione dell'identificazione locale per i servizi cloud Microsoft (ad esempio, Windows Server Active Directory (AD) o qualsiasi altro sistema di gestione degli ID), il cliente ha la possibilità di integrare rapidamente tale sistema con Azure Active Directory (AAD) tramite Azure AD Connect. Per ulteriori informazioni, vedere l'opzione [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) . I clienti Microsoft possono anche prendere in considerazione l'utilizzo di applicazioni e soluzioni di fornitori di terze parti per la gestione degli utenti e l'integrazione del sistema di identificazione locale con Azure AD.
 
 ## <a name="questions-and-support"></a>Domande e supporto tecnico
 
@@ -62,7 +62,7 @@ Per domande tecniche e di fatturazione, fare riferimento alle risorse del suppor
 
 - **Numero verde**: 8 10 800 2548 1044
 - **Chiamata locale**: 499 922 8623
-- **Supporto online**: inviare query tramite il [portale del supporto Dynamics](https://dynamics.microsoft.com/support/)
+- **Supporto online**: inviare query tramite il [portale di supporto Dynamics](https://dynamics.microsoft.com/support/)
 
 ### <a name="power-platform"></a>Piattaforma di alimentazione
 
