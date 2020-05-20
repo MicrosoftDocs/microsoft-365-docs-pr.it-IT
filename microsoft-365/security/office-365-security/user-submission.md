@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere messaggi di posta indesiderata e di phishing segnalati dagli utenti.
-ms.openlocfilehash: 6aa343b337139c4d81f35f78a227634d3b6a8781
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 2a1872aff88cd1cc21c6a6e3258671c303b55e17
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262524"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294194"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Specificare una cassetta postale per l'invio di messaggi di posta indesiderata e di phishing in Exchange Online
 
@@ -31,7 +31,7 @@ In Microsoft 365 organizzazioni con cassette postali di Exchange Online, è poss
 - [Creazione di report incorporati in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (in precedenza noto come Outlook Web App)
 
   > [!NOTE]
-  > Se la segnalazione è stata [disabilitata in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), l'abilitazione degli invii degli utenti qui sostituirà tale impostazione e consentirà agli utenti di segnalare di nuovo i messaggi in Outlook sul Web.
+  > Se la segnalazione è stata [disabilitata in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), l'abilitazione degli invii degli utenti qui sostituirà tale impostazione e consentirà agli utenti di segnalare di nuovo i messaggi in Outlook sul Web.
 
 È inoltre possibile configurare gli strumenti di Reporting dei messaggi di terze parti per inoltrare i messaggi alla cassetta postale specificata.
 
@@ -75,8 +75,6 @@ La distribuzione di messaggi segnalati dall'utente a una cassetta postale person
 
         Al termine, fare clic su **conferma**.
 
-        ![Inviare messaggi segnalati a Microsoft e a una cassetta postale personalizzata](../../media/user-submission-enable-outlook-report-message.png)
-
      > [!CAUTION]
      > Se è stata [disabilitata la segnalazione della posta indesiderata in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) utilizzando i criteri cassetta postale di Outlook sul Web, ma si configura una delle impostazioni precedenti per segnalare i messaggi a Microsoft, gli utenti saranno in grado di segnalare i messaggi a Microsoft in Outlook sul Web utilizzando il componente aggiuntivo segnala messaggio.
 
@@ -86,8 +84,6 @@ La distribuzione di messaggi segnalati dall'utente a una cassetta postale person
 
       Al termine, fare clic su **conferma**.
 
-      ![Inviare messaggi segnalati a una cassetta postale personalizzata utilizzando strumenti di terze parti](../../media/user-submission-disable-outlook-report-message.png)
-     
 ## <a name="message-submission-format"></a>Formato di invio dei messaggi
 
 I messaggi inviati alle cassette postali personalizzate devono seguire un formato di posta elettronica di invio specifico. L'oggetto (titolo della busta) dell'invio deve essere nel formato seguente:

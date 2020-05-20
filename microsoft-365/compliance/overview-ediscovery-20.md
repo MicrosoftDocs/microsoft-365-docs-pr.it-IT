@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene fornita una panoramica delle funzionalità avanzate di eDiscovery in Microsoft 365, uno strumento per le indagini interne ed esterne.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fae09b33364f9ff57233ee25ccf40e4956dfd408
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034906"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322041"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Panoramica della soluzione avanzata di eDiscovery in Microsoft 365
 
@@ -85,7 +85,7 @@ Utilizzare la scheda **ricerche** per creare ricerche per cercare le origini dat
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Revisione e analisi dei dati del caso
 
-Utilizzare la scheda **revisione dei set** per esaminare e analizzare il contenuto raccolto dal sistema Live e aggiungerlo a un set di revisione. Un *set di revisione* è una raccolta statica di tali dati (in altre parole, una copia offline di dati) dei dati di custodia (e, se applicabile, i dati non detentivi) raccolti nella fase precedente del flusso di lavoro di eDiscovery. Quando si aggiungono i risultati di ricerca a un set di revisione, viene attivato un processo che estrae i file dai contenitori, estrae i metadati ed estrae il testo. Al termine del processo, il sistema crea un nuovo indice di tutti i dati raccolti dai depositari e lo aggiunge al set di revisione. Dopo aver aggiunto i dati al set di revisione, è possibile eseguire altre query per limitare i dati del caso, visualizzare i dati come testo o nel formato di file nativo e annotare, redigere e contrassegnare i documenti nel set di revisione. È inoltre possibile eseguire analisi avanzate, ad esempio la duplicazione dei documenti, il threading di posta elettronica e i temi. Dopo aver abbattuto i dati solo su ciò che è pertinente per il caso, è possibile scaricare i documenti direttamente o esportarli insieme ai metadati, alle annotazioni e ai tag dei file. Per ulteriori informazioni, vedere:
+Utilizzare la scheda **revisione dei set** per esaminare e analizzare il contenuto raccolto dal sistema Live e aggiungerlo a un set di revisione. Un *set di revisione* è una raccolta statica di tali dati (in altre parole, una copia offline di dati) dei dati di custodia (e, se applicabile, i dati non detentivi) raccolti nella fase precedente del flusso di lavoro di eDiscovery. Quando si aggiungono i risultati di ricerca a un set di revisione, viene attivato un processo che estrae i file dai contenitori, estrae i metadati ed estrae il testo. Al termine del processo, il sistema crea un nuovo indice di tutti i dati raccolti dai depositari e lo aggiunge al set di revisione. Dopo aver aggiunto i dati al set di revisione, è possibile eseguire altre query per limitare i dati del caso, visualizzare i dati come testo o nel formato di file nativo e annotare, redigere e contrassegnare i documenti nel set di revisione. È inoltre possibile eseguire analisi avanzate, ad esempio la duplicazione dei documenti, il threading di posta elettronica e i temi. Dopo aver abbattuto i dati solo su ciò che è pertinente per il caso, è possibile scaricare i documenti direttamente o esportarli insieme ai metadati, alle annotazioni e ai tag dei file. Per altre informazioni, vedere:
 
 - [Visualizzare i documenti in un insieme da rivedere](view-documents-in-review-set.md)
 
@@ -106,7 +106,3 @@ Utilizzare la scheda **processi** per monitorare i processi a esecuzione prolung
 ## <a name="configuring-case-settings"></a>Configurazione delle impostazioni del caso
 
 Utilizzare la scheda **Impostazioni** per configurare le impostazioni a livello di maiuscole e minuscole. Questo include l'aggiunta di membri a un caso, la chiusura o l'eliminazione di un caso e la configurazione delle impostazioni di ricerca e analisi.
-
-## <a name="advanced-ediscovery-reports"></a>Report avanzati di eDiscovery
-
-È possibile utilizzare i report avanzati di eDiscovery nella Home page per aiutare l'organizzazione a monitorare l'attività e lo stato in tutti i casi di eDiscovery avanzato. La funzionalità Advanced eDiscovery Reports aggrega le informazioni sui casi, i depositari, le origini dati e le comunicazioni. È possibile filtrare i dati del report in base a vari criteri ed esportare le informazioni aggregate in un file CSV per un'ulteriore analisi.  Per ulteriori informazioni, vedere [Advanced eDiscovery Reports](advanced-ediscovery-reports.md).

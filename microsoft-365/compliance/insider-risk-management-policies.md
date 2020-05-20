@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4f52cb4ff6809bee7582e2c030fb782f6ac35fd8
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: be7b417f9127197bea96e79eab94c69b5c6e3fcb
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162688"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292504"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -75,7 +75,7 @@ La protezione della privacy degli utenti che dispongono di corrispondenze di cri
 
 I modelli di criteri per i rischi Insider definiscono il tipo di attività di rischio che si desidera rilevare ed esaminare. Ogni modello di criteri si basa su indicatori specifici che corrispondono a particolari attività a rischio e gli avvisi vengono attivati dai criteri quando gli utenti eseguono attività relative a tali indicatori. In alcuni casi, è possibile limitare gli indicatori applicati ai criteri di rischio Insider nell'organizzazione. È possibile disattivare gli indicatori per aree specifiche disattivando da tutti i criteri di rischio Insider.
 
-Per definire gli indicatori abilitati in tutti i criteri, passare a > **indicatori** **delle impostazioni dei rischi Insider**e selezionare uno o più indicatori. Gli indicatori selezionati nella pagina impostazioni **indicatori** non possono essere configurati singolarmente quando si crea o si modifica un criterio di rischio Insider nella procedura guidata dei criteri.
+Per definire gli indicatori abilitati in tutti i criteri, passare a **indicatori delle impostazioni dei rischi Insider**  >  **Indicators** e selezionare uno o più indicatori. Gli indicatori selezionati nella pagina impostazioni **indicatori** non possono essere configurati singolarmente quando si crea o si modifica un criterio di rischio Insider nella procedura guidata dei criteri.
 
 >[!IMPORTANT]
 >Per ricevere gli avvisi per le attività a rischio definite nei criteri, è necessario selezionare uno o più indicatori prima di configurare un criterio di rischio Insider.
@@ -89,7 +89,7 @@ Gli intervalli di tempo dei criteri consentono di definire i periodi di revision
 
 ### <a name="intelligent-detections"></a>Rilevamenti intelligenti
 
-Le impostazioni di rilevamento intelligente consentono di affinare la modalità di elaborazione dei rilevamenti delle attività rischiose per gli avvisi. In alcuni casi, potrebbe essere necessario definire i tipi di file da ignorare o si desidera applicare un livello di rilevamento per i file che consentono di definire una barra minima per gli avvisi. Quando si utilizzano criteri di linguaggio offensivi, potrebbe essere necessario aumentare o diminuire la sensibilità di rilevamento per controllare la quantità di corrispondenze di criteri segnalate. Utilizzare queste impostazioni per controllare le esclusioni di tipi di file, i limiti del volume dei file e la sensibilità di rilevamento di lingua offensiva.
+Le impostazioni di rilevamento intelligente consentono di affinare la modalità di elaborazione dei rilevamenti delle attività rischiose per gli avvisi. In alcuni casi, potrebbe essere necessario definire i tipi di file da ignorare o si desidera applicare un livello di rilevamento per i file che consentono di definire una barra minima per gli avvisi. Quando si utilizzano criteri di linguaggio offensivi, potrebbe essere necessario aumentare o diminuire la sensibilità di rilevamento per controllare la quantità di corrispondenze di criteri segnalate. Utilizzare queste impostazioni per controllare il volume generale degli avvisi, le esclusioni dei tipi di file, i limiti relativi al volume del file e la sensibilità all'individuazione del linguaggio offensivo.
 
 #### <a name="anomaly-detections"></a>Rilevamenti di anomalia
 
@@ -105,6 +105,14 @@ Per modificare la sensibilità del classificatore dei linguaggi offensivi per i 
 - **Low**: il livello di sensibilità più basso con l'intervallo più ampio per il rilevamento del linguaggio offensivo e del sentimento. La probabilità di falsi positivi per la corrispondenza di lingua offensiva è elevata.
 - **Medium**: livello di sensibilità medio-livello con un intervallo bilanciato per il rilevamento del linguaggio offensivo e del sentimento. La probabilità di falsi positivi per la corrispondenza dei linguaggi offensivi è media.
 - **High**: il livello di sensibilità più alto con un intervallo ristretto per il rilevamento del linguaggio offensivo e del sentimento. La probabilità di falsi positivi per la corrispondenza di lingua offensiva è bassa.
+
+#### <a name="alert-volume"></a>Volume avvisi
+
+Le attività degli utenti rilevate dai criteri di rischio Insider sono assegnate a un punteggio di rischio specifico, che a sua data determina la gravità degli avvisi (basso, medio, alto). Per impostazione predefinita, viene generato un determinato numero di avvisi di bassa, media e elevata gravità, ma è possibile aumentare o diminuire il volume in base alle proprie esigenze. Per modificare il volume degli avvisi per tutti i criteri di gestione dei rischi Insider, scegliere una delle seguenti impostazioni:
+
+- **Meno avvisi**: verranno visualizzati tutti gli avvisi di gravità elevata, meno avvisi di gravità media e nessun livello di gravità basso. Questo significa che potrebbe mancare qualche vero positivo.
+- **Volume predefinito**: verranno visualizzati tutti gli avvisi di gravità elevata e una quantità bilanciata di avvisi di gravità medio-bassa.
+- **Altri avvisi**: vedrai tutti gli avvisi di gravità media e alta e la maggior parte degli avvisi di gravità bassa. Ciò può comportare un numero maggiore di falsi positivi.
 
 ## <a name="create-a-new-policy"></a>Creare un nuovo criterio
 
@@ -129,7 +137,7 @@ Completare la procedura seguente per creare un nuovo criterio:
     - Tipo di informazioni riservate: selezionare **Scegli tipi di informazioni riservate** e selezionare i tipi di sensibilità che si desidera definire come prioritari. Ad esempio, *"numero di conto corrente bancario statunitense"* e *"numero di carta di credito"*.
     - Etichette di riservatezza: selezionare **Scegli etichette sensibili** e selezionare le etichette che si desidera definire come prioritarie. Ad esempio, *"confidenziale"* e *"segreto"*.
 7. Fare clic su **Avanti** per continuare.
-8. Nella pagina **indicatori di avviso** , verranno visualizzati gli indicatori definiti nella pagina > **indicatori** **impostazioni di rischio Insider**. Se all'inizio della procedura guidata è stato selezionato il modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** .
+8. Nella pagina **indicatori di avviso** , verranno visualizzati gli indicatori definiti nella pagina indicatori **impostazioni di rischio Insider**  >  **Indicators** . Se all'inizio della procedura guidata è stato selezionato il modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** .
 9. Nella pagina **selezione finestra di monitoraggio** , vengono visualizzate le [condizioni della finestra di monitoraggio](insider-risk-management-policies.md#policy-timeframes) per i criteri configurati in impostazioni di rischio Insider. Se è stato selezionato il modello dei criteri per il *furto dei dati* per i dipendenti in uscita, è possibile selezionare la casella di *controllo Controlla la terminazione del post attività* per rilevare l'attività dopo la data di fine importata dal connettore Microsoft 365 HR.
 10. Fare clic su **Avanti** per continuare.
 11. Nella pagina **Revisione** rivedere le impostazioni selezionate per il criterio. Selezionare **modifica** per modificare i valori dei criteri o selezionare **Invia** per creare e attivare il criterio.
@@ -153,7 +161,7 @@ Completare la procedura seguente per gestire un criterio esistente:
     - Tipo di informazioni riservate: selezionare **Scegli tipi di informazioni riservate** e selezionare i tipi di sensibilità che si desidera definire come prioritari. Ad esempio, *"numero di conto corrente bancario statunitense"* e *"numero di carta di credito"*.
     - Etichette di riservatezza: selezionare **Scegli etichette sensibili** e selezionare le etichette che si desidera definire come prioritarie. Ad esempio, *"confidenziale"* e *"segreto"*.
 8. Fare clic su **Avanti** per continuare.
-9. Nella pagina **indicatori di avviso** , verranno visualizzati gli indicatori definiti nella pagina > **indicatori** **impostazioni di rischio Insider**. Se all'inizio della procedura guidata è stato selezionato il modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** .
+9. Nella pagina **indicatori di avviso** , verranno visualizzati gli indicatori definiti nella pagina indicatori **impostazioni di rischio Insider**  >  **Indicators** . Se all'inizio della procedura guidata è stato selezionato il modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** .
 10. Nella pagina **selezione finestra di monitoraggio** , vengono visualizzate le [condizioni della finestra di monitoraggio](insider-risk-management-policies.md#policy-timeframes) per i criteri configurati in impostazioni di rischio Insider. Se è stato selezionato il modello dei criteri per il *furto dei dati* per i dipendenti in uscita, è possibile selezionare la casella di *controllo Controlla la terminazione del post attività* per rilevare l'attività dopo la data di fine importata dal connettore Microsoft 365 HR.
 11. Nella pagina **Revisione** rivedere le impostazioni selezionate per il criterio. Selezionare **modifica** per modificare i valori dei criteri o selezionare **Invia** per aggiornare e attivare le modifiche apportate al criterio.
 

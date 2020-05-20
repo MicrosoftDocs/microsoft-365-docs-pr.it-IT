@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
-ms.openlocfilehash: 708343992d2b8d51d9b10f89cd6b986de00423d6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 4246460f2f7d7fdc41754fc2acd3125601bb5f79
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166057"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292452"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -90,7 +90,7 @@ Se a un custode o a un utente finale viene assegnata una licenza di Office 365 E
 
 Quando si trova un messaggio di posta elettronica contenente dati versati, controllare i destinatari del messaggio per determinare se è stato condiviso esternamente. Per tracciare ulteriormente un messaggio, è possibile raccogliere le informazioni del mittente e l'intervallo di date in modo che sia possibile utilizzare i registri di traccia dei messaggi, come descritto nel [passaggio 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
-Afer sono stati verificati i risultati della ricerca, è possibile che si desideri condividere i risultati con altri utenti per una revisione secondaria. Gli utenti a cui è stato assegnato il caso nel passaggio 1 possono esaminare il contenuto del caso sia in eDiscovery che in Advanced eDiscovery e approvare i risultati del caso. È inoltre possibile generare un report senza esportare il contenuto effettivo. È inoltre possibile utilizzare lo stesso rapporto come prova dell'eliminazione, descritta nel [passaggio 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
+Dopo aver verificato i risultati della ricerca, è possibile che si desideri condividere i risultati con altri utenti per una revisione secondaria. Gli utenti a cui è stato assegnato il caso nel passaggio 1 possono esaminare il contenuto del caso sia in eDiscovery che in Advanced eDiscovery e approvare i risultati del caso. È inoltre possibile generare un report senza esportare il contenuto effettivo. È inoltre possibile utilizzare lo stesso rapporto come prova dell'eliminazione, descritta nel [passaggio 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
   
  **Per generare un report statistico:**
   
@@ -157,14 +157,15 @@ Aprire il rapporto di riepilogo di esportazione scaricato nel [passaggio 4](#ste
 Se il ripristino di un singolo elemento è abilitato o se una cassetta postale è in attesa, verrà mantenuto un messaggio eliminato definitivamente (eliminato) nella cartella elementi ripristinabili. Pertanto, prima di poter eliminare i dati versati, è necessario controllare le configurazioni delle cassette postali esistenti e disabilitare il ripristino di un singolo elemento e rimuovere qualsiasi blocco o criterio di conservazione. Tenere presente che è possibile preparare una cassetta postale alla volta, quindi eseguire lo stesso comando in cassette postali diverse o creare uno script di PowerShell per preparare più cassette postali contemporaneamente.
 
 - Vedere "passaggio 1: raccogliere informazioni sulla cassetta postale" in [eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) per istruzioni su come verificare se il ripristino di un singolo elemento è abilitato o se la cassetta postale è stata inserita o è stata assegnata a un criterio di conservazione. 
-    
+
 - Vedere "passaggio 2: preparare la cassetta postale" in [eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) per istruzioni sulla disabilitazione del ripristino di un singolo elemento. 
-    
+
 - Vedere "passaggio 3: rimuovere tutte le esenzioni dalla cassetta postale" in [eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) per istruzioni su come rimuovere un blocco o un criterio di conservazione da una cassetta postale. 
 
 - Vedere "passaggio 4: rimuovere il ritardo dalla cassetta postale" in [eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) per istruzioni sulla rimozione del blocco di ritardo che viene inserito nella cassetta postale dopo la rimozione di qualsiasi tipo di blocco.
-    
- **Importante:** Consultare la gestione dei record o i reparti giuridici prima di rimuovere un blocco o un criterio di conservazione. È possibile che l'organizzazione disponga di un criterio che definisce se una cassetta postale in attesa o un problema di fuoriuscita dei dati è prioritaria. 
+
+> [!IMPORTANT]
+> Consultare la gestione dei record o i reparti giuridici prima di rimuovere un blocco o un criterio di conservazione. È possibile che l'organizzazione disponga di un criterio che definisce se una cassetta postale in attesa o un problema di fuoriuscita dei dati è prioritaria. 
   
 Assicurarsi di ripristinare le configurazioni precedenti della cassetta postale dopo aver verificato che i dati versati siano stati eliminati definitivamente. Per informazioni dettagliate, vedere il [passaggio 7](#step-7-permanently-delete-the-spilled-data).
 
@@ -173,6 +174,9 @@ Assicurarsi di ripristinare le configurazioni precedenti della cassetta postale 
 Utilizzando i percorsi delle cassette postali raccolte e preparate nel passaggio 6 e la query di ricerca creata e affinata nel passaggio 3 per trovare i messaggi di posta elettronica che contengono i dati rovesciati, è ora possibile eliminare definitivamente i dati versati.  Come spiegato in precedenza, per eliminare i messaggi, è necessario essere membri del gruppo di ruoli Gestione organizzazione o assegnare il ruolo di gestione di ricerca ed eliminazione. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
 Per eliminare i messaggi versati, vedere i passaggi 2 & 3 per [cercare ed eliminare i messaggi di posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
+
+> [!IMPORTANT]
+> Gli elementi di posta elettronica in un set di revisione in un caso avanzato di eDiscovery non possono essere eliminati utilizzando le procedure illustrate in questo articolo. Ciò è dovuto al fatto che gli elementi in un set di revisione sono copie degli elementi del servizio Live che vengono copiate e archiviate in una posizione di archiviazione di Azure. Questo significa che non verranno restituiti da una ricerca di contenuto creata nel passaggio 3. Per eliminare gli elementi in un set di revisione, è necessario eliminare il caso Advanced eDiscovery che contiene il set di revisione. Per ulteriori informazioni, vedere [Close or Delete an Advanced eDiscovery case](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Passaggio 8: verificare, fornire una prova di eliminazione e controllo
 

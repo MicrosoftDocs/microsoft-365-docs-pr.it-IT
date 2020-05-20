@@ -24,19 +24,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Seguire questo elenco di controllo per rimuovere un dipendente da Microsoft 365 e proteggere i dati. '
-ms.openlocfilehash: d54a37575c0280ca9ad23fdd4a4b878286dde1ab
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: bfde2f55f12967e15213ecb12274a215c4190c93
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140594"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322088"
 ---
 # <a name="remove-a-former-employee"></a>Rimuovere un ex dipendente
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
   
@@ -135,7 +135,7 @@ Il contenuto della cassetta postale dell'ex dipendente può essere salvato in du
     
     Le cassette postali inattive non possono ricevere posta elettronica e non vengono visualizzate nella rubrica condivisa o in altri elenchi dell'organizzazione.
     
-    Per informazioni su come applicare un'esenzione su una cassetta postale, vedere [gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+    Per informazioni su come applicare un'esenzione su una cassetta postale, vedere [gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
     
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Inoltrare la posta elettronica di un ex dipendente a un altro dipendente o convertirla in una cassetta postale condivisa
 <a name="bkmk_forward"> </a>
@@ -218,7 +218,7 @@ Se l'ex dipendente aveva un telefono aziendale, è possibile usare Office 365 pe
     
 4. Selezionare l'utente e in **dispositivi mobili**selezionare **Visualizza dettagli**. 
     
-5. Nella pagina **Dettagli dispositivo mobile** , in **dispositivi mobili**, selezionare il dispositivo mobile, selezionare **wipe data**![Wipe Device](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), quindi selezionare **blocca**. 
+5. Nella pagina **Dettagli dispositivo mobile** , in **dispositivi mobili**, selezionare il dispositivo mobile, selezionare **wipe data** ![ Wipe Device ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , quindi selezionare **blocca**. 
     
 6. Selezionare **Salva**. 
     
@@ -325,7 +325,7 @@ Quando si rimuove la licenza, tutti i dati dell'utente vengono conservati per 30
 
 
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 
 ::: moniker-end

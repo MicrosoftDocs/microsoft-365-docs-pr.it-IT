@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162678"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292474"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -28,7 +28,7 @@ Usare i criteri di gestione dei rischi Insider per identificare attività rischi
 
 Per ulteriori informazioni su come i criteri di rischio Insider consentono di gestire i rischi nell'organizzazione, vedere [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Prima di iniziare a utilizzare la gestione dei rischi Insider, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e utilizzare Gestione dei rischi Insider, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
@@ -118,7 +118,7 @@ Prima di configurare un criterio, definire le seguenti impostazioni di rischio I
     >Per ricevere gli avvisi per le attività a rischio definite nei criteri, è necessario selezionare uno o più indicatori.
 
 4. Nella pagina **scadenze dei criteri** selezionare i [tempi](insider-risk-management-policies.md#policy-timeframes) di applicazione per l'esecuzione di un utente quando si attiva una corrispondenza per un criterio di rischio Insider.
-5. Nella pagina **rilevamento intelligente** , configurare i [rilevamenti delle anomalie e dei linguaggi offensivi](insider-risk-management-policies.md#intelligent-detections) per i criteri di rischio Insider.
+5. Nella pagina **rilevamento intelligente** , configurare il rilevamento di [anomalie, il rilevamento di lingua offensiva e il livello di volume degli avvisi](insider-risk-management-policies.md#intelligent-detections) per i criteri di rischio Insider.
 6. Selezionare **Salva** per abilitare queste impostazioni per i criteri di rischio Insider.
 
 ## <a name="step-5-required-create-an-insider-risk-management-policy"></a>Passaggio 5 (obbligatorio): creare un criterio di gestione dei rischi Insider
@@ -142,8 +142,8 @@ I criteri di gestione dei rischi Insider includono gli utenti assegnati e defini
     - **Tipo di informazioni riservate**: selezionare **Aggiungi tipo di informazioni riservate** e selezionare i tipi di sensibilità che si desidera impostare come priorità. Ad esempio, *"numero di conto corrente bancario statunitense"* e *"numero di carta di credito"*.
     - **Etichette di riservatezza**: selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette che si desidera impostare come priorità. Ad esempio, *"confidenziale"* e *"segreto"*.
 7. Fare clic su **Avanti** per continuare.
-8. Nella pagina **indicatori di avviso** , verranno visualizzati gli indicatori definiti nella pagina > **indicatori** **impostazioni di rischio Insider**. Se all'inizio della procedura guidata è stato selezionato il modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** .
-9. Nella pagina **selezione finestra di monitoraggio** , verranno visualizzate le [condizioni della finestra di monitoraggio](insider-risk-management-policies.md#policy-timeframes) per il criterio che si trova nella pagina scadenze dei**criteri** di **rischio** > Insider. Se è stato selezionato il modello dei criteri per il *furto dei dati* per i dipendenti in uscita, è possibile selezionare la casella di *controllo Controlla la terminazione del post attività* per rilevare l'attività dopo la data di fine importata dal connettore Microsoft 365 HR.
+8. Nella pagina **indicatori di avviso** , verranno visualizzati gli indicatori definiti nella pagina indicatori **impostazioni di rischio Insider**  >  **Indicators** . Se all'inizio della procedura guidata è stato selezionato il modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** .
+9. Nella pagina **selezione finestra di monitoraggio** , verranno visualizzate le [condizioni della finestra di monitoraggio](insider-risk-management-policies.md#policy-timeframes) per il criterio che si trova nella pagina scadenze dei criteri di **rischio Insider**  >  **Policy timeframes** . Se è stato selezionato il modello dei criteri per il *furto dei dati* per i dipendenti in uscita, è possibile selezionare la casella di *controllo Controlla la terminazione del post attività* per rilevare l'attività dopo la data di fine importata dal connettore Microsoft 365 HR.
 10. Fare clic su **Avanti** per continuare.
 11. Nella pagina **Revisione** rivedere le impostazioni selezionate per il criterio. Selezionare **modifica** per modificare i valori dei criteri o selezionare **Invia** per creare e attivare il criterio.
 

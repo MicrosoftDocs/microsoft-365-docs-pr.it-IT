@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: "Gli amministratori di Exchange Online gestiscono la posta elettronica e le cassette postali dell'organizzazione. Ad esempio, recuperano gli elementi eliminati nella cassetta postale di un utente. "
-ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 984345dd92e9b9a6da3c803b77b663bd8299c62e
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618909"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322076"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informazioni sul ruolo di amministratore di Exchange Online
 
@@ -37,7 +37,7 @@ Ecco alcune delle principali attività che possono eseguire gli utenti a cui è 
   
 - [Recuperare gli elementi eliminati nella cassetta postale di un utente](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [Configurare un criterio di archiviazione ed eliminazione per le cassette postali dell'organizzazione](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Configurare un criterio di archiviazione ed eliminazione per le cassette postali dell'organizzazione](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
 - Impostare le caratteristiche delle cassette postali, ad esempio i criteri di condivisione della cassetta postale: con che modalità gli utenti possono condividere le informazioni su calendario e contatti con altri utenti all'esterno dell'organizzazione. 
     
@@ -45,7 +45,7 @@ Ecco alcune delle principali attività che possono eseguire gli utenti a cui è 
     
 - [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) in modo che un gruppo di persone possa monitorare e inviare messaggi di posta elettronica da un indirizzo di posta elettronica comune. 
     
-- Filtri di protezione da posta [indesiderata](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) e malware per l'organizzazione. 
+- Filtri di protezione da posta [indesiderata](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) e malware per l'organizzazione. 
     
 - Gestire i gruppi di Microsoft 365
     

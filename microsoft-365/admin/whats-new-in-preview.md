@@ -20,12 +20,12 @@ search.appverid:
 description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle caratteristiche che sono state aggiunte in questo mese.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 6dcfa1bac5fa9837f9882a575c3d5eaa6cf3be4f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6514456a16a6ee2079a1b93e053c21863809db24
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208156"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322136"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -46,7 +46,7 @@ Se si è interessati alle novità in altri servizi cloud Microsoft:
 
 - [Novità di Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
 - [Novità di Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Novità nel centro conformità di Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [Novità nel centro conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
 - [Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Novità dell'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/whats-new)
 - [Aggiornamenti di Office](https://docs.microsoft.com/OfficeUpdates/)

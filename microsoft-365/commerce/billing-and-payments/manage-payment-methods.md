@@ -14,20 +14,28 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom:
+- TopSMBIssues
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: Informazioni su come gestire i metodi di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: c1679b8f525712681aaaad20334840da5e625ad6
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: d31da19c10eb61719ba813d271dbdcf573a5aff3
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213069"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322160"
 ---
 # <a name="manage-payment-methods"></a>Gestire metodi di pagamento
+
+::: moniker range="o365-21vianet"
+> [!NOTE]
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+::: moniker-end
 
 Quando si acquistano prodotti o servizi aziendali da Microsoft, è possibile utilizzare un metodo di pagamento esistente oppure aggiungerne uno nuovo. È possibile utilizzare una carta di credito o di debito o un conto corrente bancario per pagare le operazioni acquistate.
 
@@ -44,17 +52,42 @@ Se l'account aziendale non dispone di un profilo di fatturazione, qualsiasi ammi
 
 L'aggiunta di un metodo di pagamento non associa gli abbonamenti. Per assegnare una singola sottoscrizione al metodo di pagamento, vedere [modificare un metodo di pagamento per una singola sottoscrizione](#change-a-payment-method-for-a-single-subscription). Per sostituire tutte le sottoscrizioni che utilizzano un altro metodo di pagamento con quello nuovo, vedere [Replace a Payment Method](#replace-a-payment-method).
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione**  >  **& pagamenti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker range="o365-worldwide"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
 2. Selezionare **Aggiungere una modalità di pagamento**.
+
 3. Nella pagina **Modalità di pagamento** scegliere una modalità di pagamento dal menu a discesa.
+
 4. Immettere le informazioni per la nuova scheda o il conto corrente bancario, quindi selezionare **Aggiungi**.
 
 ## <a name="update-payment-method-details"></a>Aggiornare i dettagli del metodo di pagamento
 
 È possibile modificare il nome sulla carta di credito o di debito, l'indirizzo di fatturazione o la data di scadenza di un metodo di pagamento esistente. Tuttavia, non è possibile modificare il numero di carta o di account. Se il numero dell'account è stato modificato, [sostituirlo con un metodo di pagamento diverso](#replace-a-payment-method), quindi [eliminare quello precedente](#delete-a-payment-method).
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione**  >  **& pagamenti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker range="o365-worldwide"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
 2. Selezionare la riga del metodo di pagamento da aggiornare. Nel riquadro a destra, selezionare **modifica**.
+
 3. Aggiornare le informazioni sul metodo di pagamento, incluso il nome sulla carta di credito o di debito, l'indirizzo di fatturazione o la data di scadenza, quindi selezionare **Salva**.
 
 ## <a name="replace-a-payment-method"></a>Sostituire un metodo di pagamento
@@ -63,26 +96,58 @@ Quando si sostituisce un metodo di pagamento, è necessario sostituirlo per tutt
 
 Per modificare il metodo di pagamento per una singola sottoscrizione, vedere [modificare un metodo di pagamento per una singola sottoscrizione](#change-a-payment-method-for-a-single-subscription).
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione**  >  **& pagamenti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker range="o365-worldwide"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
 2. Selezionare la riga del metodo di pagamento da sostituire. Nel riquadro destro sono elencati tutti i profili di fatturazione e i singoli abbonamenti che utilizzano il metodo di pagamento selezionato.
+
 3. Nel riquadro a destra, selezionare **Sostituisci metodo di pagamento per tutti gli elementi**.
+
 4. Per utilizzare un metodo di pagamento esistente, sceglierne uno dall'elenco a discesa, quindi selezionare **Sostituisci**.
     > [!NOTE]
     > Se si dispone di abbonamenti associati a un profilo di fatturazione, è possibile utilizzare solo una carta di credito o di debito per pagarli. Se si dispone di account bancari elencati nella pagina **metodi di pagamento** , non sono disponibili per la selezione nell'elenco a discesa.
+
 5. Per aggiungere un nuovo metodo di pagamento, selezionare **Aggiungi metodo di pagamento**.
+
 6. Nel riquadro **Aggiungi un metodo di pagamento** , immettere le informazioni sull'account, quindi selezionare **Salva**. È necessario utilizzare un metodo di pagamento proveniente dallo stesso paese del tenant.
+
 7. Il nuovo metodo di pagamento è già selezionato nell'elenco a discesa. Selezionare **Sostituisci**.
 
 ## <a name="change-a-payment-method-for-a-single-subscription"></a>Modificare un metodo di pagamento per un singolo abbonamento
 
 È possibile modificare il metodo di pagamento utilizzato per pagare un singolo abbonamento.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
-2. Nella scheda **abbonamenti** selezionare l'abbonamento che si desidera pagare con il metodo di pagamento alternativo. 
+::: moniker range="o365-worldwide"
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > **I tuoi prodotti**.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > **I tuoi prodotti**.
+::: moniker-end
+
+2. Nella scheda **abbonamenti** selezionare l'abbonamento che si desidera pagare con il metodo di pagamento alternativo.
+
 3. In **fatturazione**, fare clic su **modifica**accanto al metodo di pagamento.
+
 4. Accanto al metodo di pagamento esistente, selezionare **Cambia**.
+
 5. Nell'elenco a discesa scegliere un metodo di pagamento alternativo oppure scegliere di aggiungere un metodo di pagamento.
+
 6. Se si aggiunge un metodo di pagamento, immettere la scheda o i dettagli dell'account, quindi fare clic su **Salva**.
+
 7. Verificare che il metodo di pagamento selezionato sia corretto, quindi selezionare **Salva**.
 
 ## <a name="delete-a-payment-method"></a>Eliminare un metodo di pagamento
@@ -93,23 +158,52 @@ Per modificare il metodo di pagamento per una singola sottoscrizione, vedere [mo
 
 Se un metodo di pagamento non è associato ad alcun abbonamento o profilo di fatturazione, è possibile eliminarlo immediatamente.
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione**  >  **& pagamenti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker range="o365-worldwide"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
 2. Trovare il metodo di pagamento da eliminare, selezionare i tre punti, quindi selezionare **Elimina**.
+
 3. Nella parte inferiore del riquadro destro fare clic su **Elimina**.
 
 ### <a name="delete-a-payment-method-with-subscriptions-or-billing-profiles-attached"></a>Eliminare un metodo di pagamento con abbonamenti o profili di fatturazione associati
 
 Se un metodo di pagamento è collegato a qualsiasi sottoscrizione o profilo di fatturazione, sostituirlo con un metodo di pagamento esistente oppure aggiungerne uno nuovo, quindi eliminare il vecchio metodo di pagamento.
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione**  >  **& pagamenti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker range="o365-worldwide"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> .
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
+::: moniker-end
+
 2. Selezionare la riga per il metodo di pagamento da eliminare. Nel riquadro destro sono elencate le sottoscrizioni esistenti che utilizzano il metodo di pagamento.
+
 3. Nel riquadro a destra, selezionare **Elimina**.
+
 4. Per utilizzare un metodo di pagamento esistente, selezionarlo nell'elenco a discesa, selezionare **Avanti**, quindi selezionare **Elimina**.
     > [!NOTE]
     > Se si dispone di abbonamenti associati a un profilo di fatturazione, è possibile utilizzare solo una carta di credito per pagarli. Se si dispone di account bancari elencati nella pagina **metodi di pagamento** , non sono disponibili per la scelta nell'elenco a discesa.
+
 5. Per aggiungere un nuovo metodo di pagamento, selezionare **Aggiungi metodo di pagamento**.
+
 6. Scegliere il tipo di metodo di pagamento che si desidera aggiungere, immettere le informazioni dell'account e quindi fare clic su **Salva**.
+
 7. Il nuovo metodo di pagamento è già selezionato nell'elenco a discesa. Selezionare **Avanti**.
+
 8. Selezionare **Elimina**.
 
 ## <a name="troubleshoot-payment-methods"></a>Risoluzione dei problemi relativi alle modalità di pagamento

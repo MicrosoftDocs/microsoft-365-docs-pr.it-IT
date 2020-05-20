@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 74e84fc00e5fe633f0d70315cea9ad1329e2f639
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 0618eb6b68f5753ea6af2469e3487eabfe566450
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372014"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292484"
 ---
 # <a name="insider-risk-management-alerts"></a>Avvisi relativi alla gestione dei rischi Insider
 
-Gli avvisi di gestione dei rischi Insider vengono generati automaticamente dagli indicatori di rischio definiti nei criteri di gestione dei rischi. Gli avvisi forniscono agli analisti e ai ricercatori una panoramica generale dello stato del rischio corrente e consentono all'organizzazione di valutare e intraprendere azioni per i rischi individuati.
+Gli avvisi di gestione dei rischi Insider vengono generati automaticamente dagli indicatori di rischio definiti nei criteri di gestione dei rischi. Gli avvisi forniscono agli analisti e ai ricercatori una panoramica generale dello stato del rischio corrente e consentono all'organizzazione di valutare e intraprendere azioni per i rischi individuati. Per impostazione predefinita, i criteri generano una determinata quantità di avvisi di gravità bassa, media e alta, ma è possibile [aumentare o diminuire il volume degli avvisi](insider-risk-management-policies.md#alert-volume) per soddisfare le proprie esigenze.
 
 ## <a name="alert-dashboard"></a>Dashboard avvisi
 

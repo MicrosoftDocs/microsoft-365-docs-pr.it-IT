@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Informazioni su come rimuovere le licenze dagli account utente.
-ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d4ac823a7345cb4d04f599c5635248d6ce324257
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139638"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322030"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 4. Nel riquadro **Sostituisci prodotti esistenti** selezionare **Sostituisci assegnazioni licenze di prodotto esistenti** \> **Avanti**.
 
-5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **Close** \> Chiudi **Chiudi**.
+5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **Chiudi** \> **Chiudi**.
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 4. Nel riquadro **Sostituisci prodotti esistenti** selezionare **Sostituisci assegnazioni licenze di prodotto esistenti** \> **Avanti**.
 
-5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **Close** \> Chiudi **Chiudi**.
+5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **Chiudi** \> **Chiudi**.
 
 ::: moniker-end
 
@@ -159,9 +159,9 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 - Si noti che i file salvati in OneDrive for business non vengono eliminati, a meno che l'utente non venga eliminato dall'interfaccia di amministrazione di Microsoft 365 o venga rimosso tramite la sincronizzazione di Active Directory. Per ulteriori informazioni, vedere [OneDrive retention and Deletion](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- Inoltre, la cassetta postale dell'utente non è più disponibile per la ricerca tramite uno strumento di eDiscovery, ad esempio la ricerca di contenuto o la eDiscovery avanzata quando la licenza è stata rimossa. Per ulteriori informazioni, vedere la sezione relativa alla ricerca di cassette postali disconnesse o deautorizzate in [Ricerca contenuto in Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Inoltre, la cassetta postale dell'utente non è più disponibile per la ricerca tramite uno strumento di eDiscovery, ad esempio la ricerca di contenuto o la eDiscovery avanzata quando la licenza è stata rimossa. Per ulteriori informazioni, vedere la sezione relativa alla ricerca di cassette postali disconnesse o deautorizzate in [Ricerca contenuto in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
-- Se si dispone di un abbonamento Enterprise, ad esempio Office 365 Enterprise E3, Exchange Online consente di mantenere i dati della cassetta postale di un account utente eliminato utilizzando le [cassette postali inattive](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). Per ulteriori informazioni, vedere [creare e gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+- Se si dispone di un abbonamento Enterprise, ad esempio Office 365 Enterprise E3, Exchange Online consente di mantenere i dati della cassetta postale di un account utente eliminato utilizzando le [cassette postali inattive](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365). Per ulteriori informazioni, vedere [creare e gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
 
 - Per informazioni su come bloccare l'accesso di un utente ai dati di Microsoft 365 dopo che la licenza è stata rimossa e come ottenere l'accesso ai dati successivamente, vedere [Remove a Former Employee](../add-users/remove-former-employee.md).
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come inviare messaggi di posta elettronica crittografati tramite Outlook.
-ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165686"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322148"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Crittografare o contrassegnare il messaggio di posta elettronica sensibile
 
@@ -52,7 +52,7 @@ Se si desidera crittografare un messaggio che non soddisfa una regola predefinit
 
 ## <a name="admin-settings"></a>Impostazioni di amministratore
 
-È possibile ottenere informazioni su come configurare la crittografia della posta elettronica alla [crittografia della posta elettronica in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+È possibile ottenere informazioni su come configurare la crittografia della posta elettronica alla [crittografia della posta elettronica in Office 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>Crittografia automatica dei messaggi di posta elettronica
 
@@ -64,9 +64,9 @@ Gli amministratori possono creare regole del flusso di posta per proteggere auto
 2. Scegliere il riquadro amministratore. 
 3. Nell'interfaccia di amministrazione scegliere **admin centers > Exchange**. 
 
-Per ulteriori informazioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+Per ulteriori informazioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Personalizzare i messaggi di crittografia
 
-È anche possibile applicare la personalizzazione della campagna per personalizzare l'aspetto e il testo nei messaggi di posta elettronica. Per ulteriori informazioni, vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+È anche possibile applicare la personalizzazione della campagna per personalizzare l'aspetto e il testo nei messaggi di posta elettronica. Per ulteriori informazioni, vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 

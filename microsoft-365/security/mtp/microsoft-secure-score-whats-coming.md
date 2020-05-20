@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d9025e4333c6d6ae40f894fc6bde195028871dab
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 723b2584846b9d6ec01e7d4286a63d2dce0757ac
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211451"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322172"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Che cosa viene in Microsoft Secure Score?
 
@@ -30,8 +30,6 @@ Per rendere [Microsoft Secure Score](microsoft-secure-score-new.md) un migliore 
 
 Per informazioni sulle modifiche recenti, vedere [What ' s New in Microsoft Secure Score?](microsoft-secure-score-new.md#whats-new)
 
-## <a name="may-2020"></a>2020 maggio
+## <a name="may-2020"></a>Maggio 2020
 
-### <a name="adding-additional-azure-advanced-threat-protection-improvement-actions-to-the-preview-release-and-new-iteration"></a>Aggiunta di altre azioni di miglioramento delle minacce avanzate di Azure per la versione di anteprima e la nuova iterazione
-
-- Abilitare le funzionalità di sicurezza per le relazioni di trust di Active Directory
+Nessuna modifica attualmente pianificata
