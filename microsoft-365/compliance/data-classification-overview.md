@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla classificazione dei dati (anteprima)
+title: Introduzione alla classificazione dei dati
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: 15beb3c0716aeb780fb3bfed3b3a8fa74557574d
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957276"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327872"
 ---
-# <a name="know-your-data---data-classification-overview-preview"></a>Conoscere i dati - Panoramica della classificazione dei dati (anteprima)
+# <a name="know-your-data---data-classification-overview"></a>Conoscere i dati - Panoramica della classificazione dei dati
 
 Gli amministratori di Microsoft 365 o gli amministratori di conformità possono valutare e poi contrassegnare i contenuti all'interno dell'organizzazione per controllarne gli spostamenti, per proteggerli indipendentemente dalla posizione e per garantire che vengano conservati ed eliminati in base alle esigenze dell'organizzazione. Queste operazioni possono essere eseguite mediante l'applicazione di [etichette di riservatezza](sensitivity-labels.md), di [etichette di conservazione](labels.md) e tramite la classificazione della tipologia delle informazioni riservate. Esistono vari modi per eseguire l'individuazione, la valutazione e l'aggiunta di tag, ma il risultato finale è che potrebbe essere presente un numero molto elevato di documenti e messaggi di posta elettronica contrassegnati e classificati con una o entrambe le etichette. Dopo aver applicato le etichette di conservazione e le etichette di riservatezza, è opportuno verificarne l'utilizzo nel tenant e controllare le operazioni che vengono svolte con tali elementi. La pagina di classificazione dei dati consente di avere visibilità sui contenuti, in particolare:
 
@@ -33,11 +33,41 @@ Gli amministratori di Microsoft 365 o gli amministratori di conformità possono 
 - il riepilogo delle attività che gli utenti svolgono sui contenuti riservati
 - le posizioni dei dati riservati e conservati
 
+Queste funzionalità vengono anche gestite nella pagina di classificazione dei dati:
+- [classificatori sottoponibili a training](classifier-getting-started-with.md)
+- [tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+
 La funzionalità Classificazione dei dati è disponibile nel **Centro conformità Microsoft 365**o nel **Centro sicurezza Microsoft 365** > **Classificazione** > **Classificazione dei dati**.
+
+Seguire una presentazione video sulle funzionalità di classificazione dei dati.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+Classificazione dei dati consentità di analizzare il contenuto riservato e il contenuto con etichetta prima di creare criteri. Tale operazione è nota come **gestione senza modifiche**. Consente di vedere l'impatto di tutte le etichette di conservazione e di riservatezza sul proprio ambiente e permette di valutare la necessità di iniziare a usare criteri di protezione e di governance.
+
+## <a name="prerequisites"></a>Prerequisiti
+
+A ogni account che accede e usa la classificazione dei dati deve essere assegnata una licenza da uno di questi abbonamenti:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Componente aggiuntivo Advanced Compliance (E5)
+- Componente aggiuntivo Advanced Threat Intelligence (E5)
+
+### <a name="permissions"></a>Autorizzazioni
+
+ Per accedere alla pagina di classificazione dei dati, è necessario che a un account sia assegnata l'appartenenza a uno di questi ruoli o gruppi di ruoli.
+
+**Gruppi di ruoli di Microsoft 365**
+
+- Amministratore globale
+- Amministratore di conformità
+- Amministratore della sicurezza
+- Amministratore dati di conformità
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>Tipologie di informazioni riservate usate più di frequente nei contenuti
 
-Microsoft 365 fornisce diverse definizioni delle tipologie di informazioni riservate, ad esempio un elemento che contiene un codice di previdenza sociale o un numero di carta di credito. Per altre informazioni sulle tipologie di informazioni riservate, vedere [Elementi cercati dai tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Microsoft 365 fornisce diverse definizioni delle tipologie di informazioni riservate, ad esempio un elemento che contiene un codice di previdenza sociale o un numero di carta di credito. Per altre informazioni sui tipi di informazioni sensibili, vedere [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md).
 
 La scheda tipologie di informazioni riservate mostra le principali tipologie di informazioni riservate individuate ed etichettate all'interno dell'organizzazione.
 
@@ -51,7 +81,7 @@ Per determinare il numero di elementi in una determinata categoria di classifica
 > Se la scheda mostra il messaggio "Nessun dato trovato per le informazioni riservate". Questo significa che non sono presenti elementi nell'organizzazione classificati come tipologia di informazioni riservate o sottoposti a ricerca per indicizzazione. Per iniziare a usare le etichette, vedere:
 >- [Etichette di riservatezza](sensitivity-labels.md)
 >- [Etichette di conservazione](labels.md)
->- [Elementi cercati dalle tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+>- [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>Principali etichette di riservatezza applicate ai contenuti
 
@@ -106,5 +136,6 @@ Il motivo della classificazione dei dati consiste nel fornire visibilità sul nu
 - [Visualizzare il contenuto con etichetta (anteprima)](data-classification-content-explorer.md)
 - [Etichette di riservatezza](sensitivity-labels.md)
 - [Etichette di conservazione](labels.md)
-- [Tipi di informazioni riservate disponibili da cercare](what-the-sensitive-information-types-look-for.md)
+- [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
 - [Panoramica dei criteri di conservazione](retention-policies.md)
+- [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md)

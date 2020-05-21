@@ -20,19 +20,24 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio apre ticket di supporto presso Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2f3b5fedf77c2f763f60c097b25101255d55ecaf
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618921"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294215"
 ---
 # <a name="about-admin-roles"></a>Informazioni sui ruoli di amministratore
 
-L'abbonamento include un set di ruoli di amministratore che possono essere assegnati a determinati utenti all'interno dell'organizzazione. Ogni ruolo di amministratore è associato a funzioni aziendali comuni e assegna le autorizzazioni per eseguire determinate attività nelle interfacce di amministrazione. Per ulteriori informazioni, vedere [Assegnare i ruoli di amministratore](assign-admin-roles.md).
+L'abbonamento a Microsoft 365 o Office 365 include un set di ruoli di amministratore che possono essere assegnati a determinati utenti all'interno dell'organizzazione tramite l'interfaccia di amministrazione di Microsoft 365. Ogni ruolo di amministratore è associato a funzioni aziendali comuni e assegna le autorizzazioni per eseguire determinate attività nelle interfacce di amministrazione.
 
-> [!TIP] 
-> Per le descrizioni dettagliate dei ruoli, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+L'interfaccia di amministrazione di Microsoft 365 consente di gestire i ruoli di Azure Active Directory e i ruoli di Microsoft Intune. Questi ruoli, tuttavia, sono un sottoinsieme dei ruoli disponibili nel portale di Azure AD e nell'interfaccia di amministrazione di Intune.
+
+Per le descrizioni dettagliate dei ruoli di Azure AD, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+
+Per le descrizioni dettagliate dei ruoli di Microsoft Intune, vedere [Controllo degli accessi in base al ruolo con Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+
+Per altre informazioni sull'assegnazione di ruoli nell'interfaccia di amministrazione di Microsoft 365, vedere [Assegnare ruoli di amministratore](assign-admin-roles.md).
 
 ## <a name="things-to-consider"></a>Aspetti da considerare
 
@@ -44,32 +49,21 @@ Dato che gli amministratori hanno accesso a file e dati sensibili, è consigliab
 | Assegnare il ruolo *meno permissivo*    | Se si assegna il ruolo *meno permissivo*, gli amministratori avranno solo l'accesso di cui hanno bisogno per completare l'attività. Ad esempio, se si vuole che un qualcuno reimposti le password dei dipendenti, è meglio non assegnare il ruolo di amministratore globale illimitato, ma un ruolo di amministratore limitato, ad esempio amministratore password o di supporto tecnico. Questo contribuisce a proteggere i dati.                 |
 | Richiedere l'autenticazione a più fattori per gli amministratori                  |    In realtà l'autenticazione a più fattori è consigliabile per tutti gli utenti, ma a maggior ragione per l'accesso degli amministratori dovrebbe essere un requisito imprescindibile. L'autenticazione a più fattori consente agli utenti di immettere un secondo metodo di identificazione per verificare la loro identità. Gli amministratori possono avere accesso a molti dati di clienti e dipendenti e, quando si applica l'autenticazione a più fattori, anche se la password dell'amministratore dovesse essere compromessa, sarebbe comunque inutilizzabile senza la seconda forma di identificazione.  <br><br>Quando si attiva l'autenticazione a più fattori, al successivo accesso l'utente dovrà specificare un indirizzo di posta elettronica alternativo e un numero di telefono per il ripristino dell'account.  <br> [Configurare l'autenticazione a più fattori](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-  
-## <a name="some-roles-are-missing-from-active-users--manage-admin-roles-where-did-they-go"></a>Alcuni ruoli non sono più presenti in Utenti attivi > Gestire ruoli di amministratore. Dove sono finiti?
-Per impostazione predefinita, vengono visualizzati i ruoli usati dalla maggior parte delle organizzazioni. Se non si riesce a trovare un ruolo, selezionare **Visualizza altri ruoli** in fondo all'elenco.
-
-## <a name="how-can-i-tell-which-permissions-are-assigned-to-me"></a>Come si fa a stabilire di quali autorizzazioni si dispone?
 Se nell'interfaccia di amministrazione viene visualizzato un messaggio che informa che non si hanno le autorizzazioni necessarie per modificare un'opzione o una pagina, è possibile che il ruolo di cui si dispone sia privo di tale autorizzazione.
 
-## <a name="what-about-the-azure-active-directory-roles"></a>Informazioni sui ruoli di Azure Active Directory
+## <a name="azure-ad-roles-available-in-the-microsoft-365-admin-center"></a>Ruoli di Azure AD disponibili nell'interfaccia di amministrazione di Microsoft 365
 
-Sul portale di Azure sono disponibili più ruoli rispetto all'interfaccia di amministrazione di Microsoft 365. Se si ha un'azienda di grandi dimensioni, nel portale di Azure potrebbero essere presenti ruoli che soddisfano le esigenze dell'organizzazione.
-
-Per un elenco e una descrizione di tutti i ruoli di Azure Active Directory, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+L'interfaccia di amministrazione di Microsoft 365 consente di gestire più di 30 ruoli di Azure AD. Questi ruoli, tuttavia, sono un sottoinsieme dei ruoli disponibili nel portale di Azure. Se si ha un'azienda di grandi dimensioni, nel portale di Azure potrebbero essere presenti ruoli che soddisfano le esigenze dell'organizzazione.
 
 Un utente a cui è assegnato un ruolo di amministratore avrà lo stesso livello di accesso a tutti i servizi cloud a cui è abbonata l'organizzazione, indipendentemente da come viene assegnato il ruolo, con l'interfaccia di amministrazione di Microsoft 365, nel portale di Azure o con il modulo di Azure AD per Windows PowerShell.
-  
-## <a name="roles-available-in-the-microsoft-365-admin-center"></a>Ruoli disponibili nell'interfaccia di amministrazione di Microsoft 365
-
-L'interfaccia di amministrazione di Microsoft 365 consente di gestire più di 30 ruoli di Azure AD. Questi ruoli, tuttavia, sono un sottoinsieme dei ruoli disponibili nel portale di Azure.
 
 ::: moniker range="o365-worldwide"
 
-Nell'interfaccia di amministrazione è possibile passare a **Ruoli** e quindi selezionare un ruolo per aprire il relativo riquadro dei dettagli. Selezionare la scheda **Autorizzazioni** per visualizzare l'elenco dettagliato delle autorizzazioni di cui dispongono gli amministratori a cui è assegnato quel ruolo.
+Nell'interfaccia di amministrazione di Microsoft 365 è possibile passare a **Ruoli** e quindi selezionare un ruolo per aprire il relativo riquadro dei dettagli. Selezionare la scheda **Autorizzazioni** per visualizzare l'elenco dettagliato delle autorizzazioni di cui dispongono gli amministratori a cui è assegnato quel ruolo. Selezionare la scheda **Assegnate** o **Amministratori assegnati** per aggiungere utenti ai ruoli.
 
 ::: moniker-end
 
-Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazione. Per informazioni dettagliate, inclusi i cmdlet associati a un ruolo, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazione. Per impostazione predefinita, vengono visualizzati i ruoli usati dalla maggior parte delle organizzazioni. Se non si riesce a trovare un ruolo, selezionare **Visualizza altri ruoli** in fondo all'elenco. Per informazioni dettagliate, inclusi i cmdlet associati a un ruolo, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 |Ruolo di amministratore     |A chi è opportuno assegnare questo ruolo?  |
 |---------|---------|
@@ -84,7 +78,7 @@ Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazio
 |Amministratore del servizio Teams    |   Assegnare il ruolo di amministratore del servizio Teams agli utenti che devono accedere e gestire l'interfaccia di amministratore di Teams. <br><br>Gli amministratori del servizio Teams possono anche svolgere le seguenti operazioni: <br> - Gestire riunioni <br> - Gestire i bridge di conferenza <br> - Gestire tutte le impostazioni a livello di organizzazione, inclusi federazione, aggiornamento di Teams e impostazioni del client Teams   |
 |Amministratore utenti     |    Assegnare il ruolo di amministratore utenti agli utenti che devono eseguire le operazioni seguenti per tutti gli utenti: <br> - Aggiungere utenti e gruppi <br> - Assegnare licenze <br> -Gestire la maggior parte delle proprietà degli utenti <br> - Creare e gestire le visualizzazioni utente <br> - Aggiornare i criteri di scadenza delle password <br> - Gestire le richieste di servizio <br> - Monitorare l'integrità dei servizi <br><br>  L'amministratore utenti può eseguire le azioni seguenti anche per gli utenti che non sono amministratori e a cui è assegnato il ruolo con autorizzazioni di lettura nella directory, mittente dell'invito guest, amministratore di supporto tecnico, il ruolo con autorizzazioni di lettura per il Centro messaggi e il ruolo con autorizzazioni di lettura per i report: <br> - Gestire i nomi utente<br> - Eliminare e ripristinare utenti<br> - Reimpostare password <br> - Forzare gli utenti a disconnettersi <br> - Aggiornare le chiavi del dispositivo (FIDO)   |
 
-### <a name="all-roles"></a>Tutti i ruoli
+### <a name="all-azure-ad-roles"></a>Tutti i ruoli di Azure AD
 
  Ecco un elenco dei ruoli di amministratore disponibili nell'interfaccia di amministrazione di Microsoft 365.
 
@@ -134,6 +128,17 @@ Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazio
 |Tecnico del supporto delle comunicazioni di Teams     |    Legge i dettagli del registro chiamate per tutti i partecipanti per risolvere i problemi di comunicazione.     |
 |Specialista del supporto delle comunicazioni di Teams     |    Legge i dettagli delle chiamate degli utenti solo per un utente specifico per risolvere i problemi di comunicazione.|
 |Amministratore utenti     |   Reimposta le password utente, crea e gestisce utenti e gruppi, inclusi i filtri, gestisce le richieste di servizio e monitora l'integrità dei servizi.|
+
+## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Ruoli di Microsoft Intune disponibili nell'interfaccia di amministrazione di Microsoft 365
+
+|Ruolo di amministratore     |A chi è opportuno assegnare questo ruolo?  |
+|---------|---------|
+|Gestione applicazioni     |   Assegnare il ruolo Gestione applicazioni agli utenti che gestiscono il ciclo di vita delle applicazioni per dispositivi mobili, configurano le app gestite dai criteri e visualizzano informazioni sui dispositivi e profili di configurazione.  |
+|Operatore help desk     |   Assegnare il ruolo Operatore help desk agli utenti che assegnano app e criteri agli utenti e ai dispositivi. |
+|Amministratore ruolo Intune    |   Assegnare il ruolo Amministratore ruolo Intune agli utenti che possono assegnare le autorizzazioni di Intune ad altri amministratori e gestire i ruoli personalizzati e predefiniti di Intune.   |
+|Gestione criteri e profili     |   Assegnare il ruolo Gestione criteri e profili agli utenti che gestiscono criteri di conformità, profili di configurazione e iscrizioni Apple.   |
+|Operatore di sola lettura     |   Assegnare il ruolo Operatore di sola lettura agli utenti che possono solo visualizzare utenti, dispositivi, dettagli di iscrizione e configurazioni.   |
+|Amministratore dell'istituto di istruzione     |   Assegnare il ruolo Amministratore dell'istituto di istruzione agli utenti per fornire accesso completo per la gestione di app, configurazioni e dispositivi Windows 10 e iOS in Intune per Education.   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Amministrazione con delega per partner Microsoft
 
