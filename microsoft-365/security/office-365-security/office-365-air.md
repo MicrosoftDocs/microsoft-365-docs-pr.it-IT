@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Iniziare a utilizzare le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c2020c3d46fcf17194e2560af53d9a26fca30629
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159408"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327831"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Iniziare a usare l'analisi e la risposta automatizzate (AIR) in Office 365
 
@@ -31,7 +31,7 @@ In questo articolo viene descritto il [flusso globale](#the-overall-flow-of-air)
 
 ## <a name="the-overall-flow-of-air"></a>Flusso globale dell'aria
 
-A livello elevato viene attivato un avviso e viene avviato un sistema di sicurezza e viene eseguita un'analisi automatizzata, che risulta in risultati e suggerimenti. Di seguito è indicato il flusso di aria generale, Step by Step:
+A livello elevato viene attivato un avviso e un playbook di sicurezza avvia un'indagine automatizzata, che risulta in risultati e suggerimenti. Di seguito è indicato il flusso di aria generale, Step by Step:
 
 1. Un'analisi automatizzata viene avviata in uno dei modi seguenti:
 

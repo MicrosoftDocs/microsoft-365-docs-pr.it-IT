@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Note sulla versione e i problemi noti di Microsoft Compliance Score (Preview), una funzionalità del centro conformità di M365 che consente di semplificare e automatizzare le valutazioni dei rischi.
-ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: 1567921b8bd07b0fe4deda0bab6601898eed75a9
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790591"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330780"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Note sulla versione di Microsoft Compliance Score (Preview)
 
@@ -32,6 +32,7 @@ La conformità Score è una nuova funzionalità del [centro conformità di Micro
 I nuovi modelli preconfigurati per le valutazioni vengono rilasciati in produzione per il Punteggio di conformità (anteprima) Man mano che diventano disponibili. Controllare l' [elenco completo dei modelli qui](compliance-score.md#templates). I modelli aggiunti di recente includono:
 
 - Legge generale sulla protezione dei dati (LGPD) in Brasile
+- Risoluzione sulla sicurezza delle informazioni di Dubai (DGISR)
 - IRAP/governo australiano ISM (anteprima)
 - ISO 27701:2019
 - SOC 1
@@ -47,7 +48,7 @@ Il Punteggio di conformità è ora disponibile nelle seguenti lingue oltre all'i
 
 ## <a name="common-actions-will-synch-status-across-groups"></a>Azioni comuni lo stato di sincronizzazione tra i gruppi
 
-Se l'organizzazione dispone di più gruppi di valutazioni, il comportamento delle azioni **tecniche** (ovvero azioni che interessano l'intera organizzazione) è stato modificato. Tutte le azioni duplicate tra i gruppi sono state combinate in un'unica azione. Questa singola azione contiene tutte le note e le evidenze caricate dalle versioni duplicate. Con questa modifica, le azioni tecniche si comportano in questo modo quando appartengono allo stesso gruppo. Tutte le modifiche apportate all'azione in un gruppo o in una valutazione verranno riflesse in tutte le istanze. Lo **stato**di implementazione, la **Data di implementazione**, **lo stato del test**e la data di **test**rispecchiano gli aggiornamenti più recenti.
+Se l'organizzazione dispone di più gruppi di valutazioni, il comportamento delle azioni **tecniche** (ovvero azioni che interessano l'intera organizzazione) è stato modificato. Tutte le azioni duplicate tra i gruppi sono state combinate in un'unica azione. Questa singola azione contiene tutte le note e le evidenze caricate dalle versioni duplicate. Con questa modifica, le azioni tecniche si comportano in questo modo quando appartengono allo stesso gruppo. Tutte le modifiche apportate all'azione in un gruppo o in una valutazione verranno riflesse in tutte le istanze. Lo **stato**di implementazione, la **Data di implementazione**, **lo stato del test**e la data di **test**   rispecchiano gli aggiornamenti più recenti.
 
 ## <a name="compliance-score-relationship-to-compliance-manager"></a>Relazione tra Punteggio di conformità e Compliance Manager
 

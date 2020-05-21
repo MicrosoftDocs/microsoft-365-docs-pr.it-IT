@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Informazioni su come modificare il tema predefinito di Microsoft 365 e personalizzarlo in modo che corrisponda al logo o al colore dell'azienda. "
-ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: dba7003f6624a2635976ac689d608a83e62de5c0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262330"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327207"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
@@ -64,7 +64,7 @@ Informazioni su come personalizzare il tema nell'interfaccia di amministrazione 
     
 4. Selezionare **Salva modifiche**.
     
-Vedrai subito il nuovo tema nell'interfaccia di amministrazione e dopo un breve periodo di tempo, lo vedrai in tutta la Microsoft 365, incluse le pagine in Outlook, SharePoint, l' [app per dispositivi mobili di SharePoint per iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)e l' [app per dispositivi mobili di SharePoint per Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Per un esempio di dove è possibile personalizzare le modifiche dei temi dall'interfaccia di amministrazione, vedere l'immagine seguente.
+Vedrai subito il nuovo tema nell'interfaccia di amministrazione e, dopo un breve ritardo, lo vedrai in tutto il sito Microsoft 365, incluse le pagine in Outlook, SharePoint, l' [app per dispositivi mobili di SharePoint per iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)e l' [app per dispositivi mobili di SharePoint per Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Per un esempio di dove è possibile personalizzare le modifiche dei temi dall'interfaccia di amministrazione, vedere l'immagine seguente.
 
 ![M365-admin-tenant-Theme-Conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 

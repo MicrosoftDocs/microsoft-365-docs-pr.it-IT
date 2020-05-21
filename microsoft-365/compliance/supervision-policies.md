@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: b0778cd05565057fde8982e791a75801d097046c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 45dc5a3e9674ebdf9488d14813abf04fc81b6781
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034560"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327254"
 ---
 # <a name="supervision-policies"></a>Criteri di supervisione
 
@@ -139,7 +139,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 - Privacy
 - Tipo di informazioni personalizzato
 
-Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi predefiniti, vedere [quali tipi di informazioni riservate devono essere cercate](what-the-sensitive-information-types-look-for.md).
+Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi predefiniti, vedere definizioni di [entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md).
 
 #### <a name="custom-keyword-dictionaries"></a>Dizionari per parole chiave personalizzate
 
@@ -213,7 +213,7 @@ Se si desidera ridurre la quantità di contenuto da rivedere, è possibile speci
 
 ### <a name="supervision-policy-dashboard"></a>Dashboard criteri di supervisione
 
-Utilizzare il dashboard dei criteri di supervisione per gestire i risultati dei criteri di supervisione e risolvere gli elementi in sospeso. Questo dashboard consente ai revisori di visualizzare gli elementi che devono essere esaminati, agire su un elemento ed esaminare i risultati degli elementi precedentemente esaminati e risolti per ogni criterio di supervisione. È possibile accedere al dashboard dei criteri di supervisione nel centro conformità **al momento** > dell' > **apertura**del*criterio personalizzato*.
+Utilizzare il dashboard dei criteri di supervisione per gestire i risultati dei criteri di supervisione e risolvere gli elementi in sospeso. Questo dashboard consente ai revisori di visualizzare gli elementi che devono essere esaminati, agire su un elemento ed esaminare i risultati degli elementi precedentemente esaminati e risolti per ogni criterio di supervisione. È possibile accedere al dashboard dei criteri di supervisione nel centro conformità **al momento dell'**  >  apertura del*criterio personalizzato*  >  **Open**.
 
 #### <a name="dashboard-home"></a>Home dashboard
 
@@ -252,7 +252,7 @@ Utilizzare i rapporti di supervisione per visualizzare l'attività di revisione 
 ### <a name="view-the-supervision-report"></a>Visualizzare il report di supervisione
 
 1. Accedere al [centro conformità](https://compliance.microsoft.com) con le credenziali per un account di amministratore con le autorizzazioni per visualizzare i report di supervisione.
-2. Accedere al **Dashboard** dei **report** \> o alla **supervisione** per visualizzare il widget report di supervisione per un riepilogo delle attività correnti sui criteri di supervisione.
+2. Accedere al **Reports** \> **Dashboard** dei report o alla **supervisione** per visualizzare il widget report di supervisione per un riepilogo delle attività correnti sui criteri di supervisione.
 3. Selezionare il widget di **supervisione** per aprire la pagina del rapporto dettagliato.
 
 >[!NOTE]

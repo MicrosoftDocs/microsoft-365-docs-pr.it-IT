@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Per ulteriori informazioni sui domini, è possibile trovare le risposte alle domande più frequenti.
 ms.custom: okr_smb
-ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 1af20ed0052a7bb4f98072a7142bf7e112b8305e
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140750"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327113"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Sono disponibili due opzioni per la gestione DNS con Office 365:
 
 Un dominio è un nome univoco che segue il segno **@** negli indirizzi di posta elettronica e **www.** negli indirizzi Web. In genere è composto dal nome dell'organizzazione e da un suffisso Internet standard, come  *nomeazienda.com*  o  *nomeuniversità.edu*  . 
   
-L'utilizzo di un dominio personalizzato come "**rob\@contoso.com**" con Office 365 può contribuire a creare credibilità e riconoscimento per il proprio marchio. 
+L'utilizzo di un dominio personalizzato come "**rob \@ contoso.com**" con Office 365 può contribuire a creare credibilità e riconoscimento per il proprio marchio. 
   
 È possibile [acquistare un dominio in Office 365 e lasciare che venga configurato automaticamente](../get-help-with-domains/buy-a-domain-name.md) oppure acquistarne uno o trasferirne uno già esistente presso un registrar.
   
@@ -132,7 +132,7 @@ Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi pas
 
 ::: moniker-end
     
-2. **Nella pagina** Domains selezionare il dominio di Office 365 che si desidera trasferire a un altro registrar, **quindi selezionare** > trasferimento di dominio**Abilita trasferimento del dominio**.
+2. **Nella pagina** Domains selezionare il dominio di Office 365 che si desidera trasferire a un altro registrar, **quindi selezionare trasferimento di dominio**  >  **Abilita trasferimento del dominio**.
        
 4. Seguire la procedura per preparare il trasferimento del dominio.
     
@@ -187,7 +187,7 @@ Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi pas
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> **delle impostazioni** \> ..
+1. Nell'interfaccia di amministrazione, andare alla pagina dei domini **delle impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ..
 
 ::: moniker-end
 
@@ -258,6 +258,8 @@ Provider che supportano tutti i record DNS necessari:
 - Possibilità per i client desktop di Skype for Business Online di usare l'individuazione automatica per trovare automaticamente il servizio di Skype for Business Online, in modo che gli utenti possano accedere senza dover immettere il nome del server.
     
 - Possibilità per i client di Skype for Business Online per dispositivi mobili di usare l'individuazione automatica per trovare automaticamente il servizio di Skype for Business Online, in modo che gli utenti possano accedere senza dover immettere il nome del server.
+
+- Microsoft teams Federation con Skype for business, sia in locale che online. Per ulteriori informazioni, vedere [preparare la rete dell'organizzazione per Microsoft teams](https://docs.microsoft.com/microsoftteams/prepare-network).
     
  **Se i record SPF/TXT non sono supportati**, altre persone potrebbero usare il dominio per inviare posta indesiderata o in altro modo dannosa. I record SPF identificano i server autorizzati a inviare posta elettronica per conto del dominio. 
   
@@ -342,7 +344,7 @@ Quando si aggiungono più domini a Office 365 è possibile ospitare uno qualsias
 
 Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.com*, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio *Alan@contoso.onmicrosoft.com*. 
   
- **Se si desidera che la posta elettronica sia simile *a\@Alan contoso.com*:** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già. 
+ **Se si desidera che la posta elettronica sia simile a *Alan \@ contoso.com*:** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già. 
   
 - **Dopo l'iscrizione, non è possibile rinominare il dominio onmicrosoft**. Se ad esempio il dominio iniziale scelto è fourthcoffee.onmicrosoft.com, non lo si può cambiare in fabrikam.onmicrosoft.com. Per usare un dominio onmicrosoft.com diverso, si dovrà iniziare un nuovo abbonamento a Office 365. 
     
@@ -447,7 +449,7 @@ Vuoi saperne di più su come diventare l'amministratore per la tua scuola? Infor
     
     1. Passare all'interfaccia di amministrazione di Microsoft 365.
         
-    2. Sulla barra di spostamento sinistra **fare clic** \> su utenti **attivi**. 
+    2. Sulla barra di spostamento sinistra **fare clic su utenti** \> **attivi**. 
         
     3. Creare gli account utente.
         

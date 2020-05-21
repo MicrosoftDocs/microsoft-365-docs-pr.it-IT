@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: edfa708077e273d9c644801f5461c880d87261b5
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292432"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327758"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -34,7 +34,7 @@ Questo metodo richiede il giudizio umano e l'azione. Un amministratore può util
 Questa categoria di meccanismi di classificazione include la ricerca di contenuto per:
 
 - Parole chiave o valori di metadati (parola chiave Query Language)
-- utilizzo di modelli di informazioni riservate in precedenza identificati come la sicurezza sociale, la carta di credito o il conto corrente bancario [(tipi di informazioni riservate)](what-the-sensitive-information-types-look-for.md)
+- utilizzo di modelli di informazioni riservate in precedenza identificati come la sicurezza sociale, la carta di credito o il conto corrente bancario [(definizioni di entità tipo di informazioni riservate)](sensitive-information-type-entity-definitions.md)
 - Riconoscere un elemento perché è una variante su un modello [(stampa su un dito del documento)](document-fingerprinting.md)
 - utilizzo della presenza di stringhe esatte [(corrispondenza esatta dei dati)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
@@ -114,10 +114,10 @@ La creazione e la pubblicazione di un classificatore addestrabile per l'utilizzo
 
 ## <a name="see-also"></a>Vedere anche
 
-- [etichette di conservazione](labels.md)
-- [criteri di conservazione](retention-policies.md)
-- [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md)
-- [etichette di riservatezza](sensitivity-labels.md)
-- [tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
-- [stampa di impronte digitali del documento](document-fingerprinting.md)
-- [corrispondenza esatta dei dati](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Etichette di conservazione](labels.md)
+- [Criteri di conservazione](retention-policies.md)
+- [Data loss prevention (DLP)](data-loss-prevention-policies.md)
+- [Etichette di riservatezza](sensitivity-labels.md)
+- [Definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
+- [Stampa di impronte digitali del documento](document-fingerprinting.md)
+- [Corrispondenza esatta dei dati](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

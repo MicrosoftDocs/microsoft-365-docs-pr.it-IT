@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Informazioni su come ripristinare un gruppo di Microsoft 365 eliminato.
-ms.openlocfilehash: 9d432d6ddb7e41b6560329b562c24f392a424412
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 123805750beff88904a8e3874f0d4d46a72e8f01
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140525"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327629"
 ---
 # <a name="restore-a-deleted-group"></a>Ripristinare un gruppo eliminato
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -72,6 +72,9 @@ Se si è amministratori globali o amministratori di gruppi, è possibile riprist
 1. Accedere all'interfaccia di [Amministrazione](https://admin.microsoft.com).
 2. Espandere **gruppi**e quindi fare clic su **gruppi eliminati**.
 3. Selezionare il gruppo che si desidera ripristinare e quindi fare clic su **Ripristina gruppo**.
+
+> [!NOTE]
+> In alcuni casi, può richiedere fino a 24 ore prima che il gruppo e tutti i relativi dati vengano ripristinati. 
   
 ## <a name="permanently-delete-a-microsoft-365-group"></a>Eliminare definitivamente un gruppo di Microsoft 365
 

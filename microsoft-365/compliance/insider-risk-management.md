@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 8b7d60d8b1a3c7295dbeda93c9f2e017ca6f9282
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043307"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327882"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestione dei rischi insider in Microsoft 365
 

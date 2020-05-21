@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: d481a53da541b28975071a9dff6b7cdcc671345b
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 034305eec75bd369752915084b2857ebea455aa0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804801"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327925"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
@@ -25,7 +25,7 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si desidera ordinare i dispositivi, utilizzare i contatti del canale commerciale per assicurarsi di scegliere le configurazioni corrette. In questa tabella la *Data di archiviazione* è la data in cui questi modelli saranno soggetti a una più breve durata del servizio Microsoft Managed Desktop; Tutti questi dispositivi onboarded dopo questa data non riceveranno un termine completo di tre anni di supporto da Microsoft Managed Desktop. I dispositivi archiviati sono elencati anche nei [dispositivi archiviati di Microsoft Managed Desktop](archived-device-list.md). *Data di pensionamento* è la data in cui questo modello non sarà più supportato da Microsoft Managed Desktop. A tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
 
 >[!NOTE]
->I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma verranno forniti 90 giorni di preavviso per eventuali modifiche che interessano l'archiviazione o la data di pensionamento. I dispositivi aggiunti più di recente sono contrassegnati **\*** con.
+>I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma verranno forniti 90 giorni di preavviso per eventuali modifiche che interessano l'archiviazione o la data di pensionamento. I dispositivi aggiunti più di recente sono contrassegnati con **\*** .
 
 
 **Dispositivi Microsoft Managed Desktop**
@@ -54,19 +54,23 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 | [HP ProBook X360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV, videocamera IR o lettore di impronte digitali necessario | Giugno 6, 2020 | Giugno 6, 2023 |
 | [Workstation HP Z2 Mini G4](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB di RAM | SKU con 8QR48AV| 31 gennaio 2021 | 31 gennaio 2024 |
 |[Workstation mobile HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS02AV, videocamera IR necessaria | Nov 30, 2020 | Nov 30, 2023 |
-| [Superficie andare](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 4415Y/8GB di RAM | Nessuno | Aug 2, 2020 | Aug 2, 2023 |
-| [Laptop Surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB di RAM | Nessuno | Ott 16, 2020 | Ott 16, 2023 |
-| **\*[Laptop Surface 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB di RAM | Nessuno | 22 ottobre 2021 | 22 ottobre 2024 |
-| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB di RAM | Nessuno | Ott 16, 2020 | Ott 16, 2023 |
-| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB di RAM | Nessuno | 22 ottobre 2021 | 22 ottobre 2024 |
-
-
+| [Superficie andare](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 4415Y/8GB di RAM | Nessuna | Aug 2, 2020 | Aug 2, 2023 |
+| [Laptop Surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB di RAM | Nessuna | Ott 16, 2020 | Ott 16, 2023 |
+| **\*[Laptop Surface 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB di RAM | Nessuna | 22 ottobre 2021 | 22 ottobre 2024 |
+| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB di RAM | Nessuna | Ott 16, 2020 | Ott 16, 2023 |
+| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB di RAM | Nessuna | 22 ottobre 2021 | 22 ottobre 2024 |
 
 Inoltre, il dispositivo deve soddisfare anche questi criteri:     
 
 - Avere un'immagine approvata da Microsoft Managed Desktop. Quando si ordinano i dispositivi, accertarsi di specificare che vengono utilizzati con Microsoft Managed Desktop.
 - Non è stata completata l'esperienza di Windows per la prima esecuzione.
 - Essere registrato con Microsoft Managed Desktop utilizzando la funzionalità di [registrazione dei dispositivi](https://aka.ms/mmddrhelp)
+
+>[!NOTE]
+>I dispositivi con processore a 2,0 GHz o superiore forniranno un'esperienza molto migliore per gli utenti coinvolti in queste attività:
+>- Utilizzo delle conferenze video con teams. Per ulteriori informazioni, vedere [requisiti hardware per Microsoft teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) .
+>-  Utilizzo di un dispositivo per diversi carichi di lavoro.
+>- Utilizzo di più monitor.
 
 **Ulteriori informazioni**
 

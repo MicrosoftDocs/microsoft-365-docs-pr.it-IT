@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 80b7e209f87d3612e753127f5d1a1b3c36304cc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209421"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330852"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurare i pilastri Microsoft Threat Protection per l'ambiente lab di valutazione
 
@@ -237,5 +237,14 @@ Fare clic su **Avanti**.
 16. Scorrere verso il basso e fare clic su **Salva preferenze** per confermare le nuove integrazioni.
 <br>![Pulsante Preferenze of_Save immagine che è necessario fare clic su](../../media/mtp-eval-72.png) <br>
 
+## <a name="turn-on-microsoft-threat-protection"></a>Attivare Microsoft Threat Protection
+1. Accedere a [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Passare a **Impostazioni** , quindi selezionare **Microsoft Threat Protection**.
+<br>![Immagine of_Microsoft opzione di protezione dalle minacce screenshot dalla pagina delle impostazioni di Microsoft 365 Security Center](../../media/mtp-eval-72b.png) <br>
+
+2. Selezionare la casella **di controllo attiva Microsoft Threat Protection** e quindi fare clic su **Salva**.
+<br>![Immagine of_Microsoft opzione di protezione dalle minacce screenshot dalla pagina delle impostazioni di Microsoft 365 Security Center](../../media/mtp-eval-72c.png) <br>
+
+Congratulazioni! L'ambiente di valutazione di Microsoft Threat Protection è appena stato creato. È ora possibile simulare un attacco e vedere in che modo le funzionalità del prodotto Cross rilevano, creano avvisi e rispondono automaticamente a un attacco non file su un endpoint.
+
 ## <a name="next-steps"></a>Passaggi successivi
-[Attiva Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service) e quindi [genera un avviso di test](generate-test-alert.md).
+[Generare un avviso di test](generate-test-alert.md).

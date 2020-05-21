@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9959d41cf112c1ebcc88a8dd0335cae5a5537059
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804840"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327862"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi Insider
 
@@ -172,7 +172,7 @@ Per inoltrare un caso a un'indagine dipendente:
 3. Nella finestra **di dialogo escalation for investigation** immettere un nome per la nuova indagine dipendente. Se necessario, immettere le note relative al caso e selezionare **escalation**.
 5. Selezionare **conferma** per creare il caso di indagine dei dipendenti oppure fare clic su **Annulla** per chiudere la finestra di dialogo senza creare un nuovo caso di indagine dipendente.
 
-Dopo che il caso di gestione dei rischi Insider è stato inoltrato a un nuovo caso di indagine dei dipendenti, è possibile esaminare il nuovo caso nell'area**avanzata** di **eDiscovery** > nel centro conformità di Microsoft 365.
+Dopo che il caso di gestione dei rischi Insider è stato inoltrato a un nuovo caso di indagine dei dipendenti, è possibile esaminare il nuovo caso nell'area avanzata di **eDiscovery**  >  **Advanced** nel centro conformità di Microsoft 365.
 
 ### <a name="resolve-the-case"></a>Risolvere il caso
 

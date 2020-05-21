@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: 119329289a9c19c2256cf112e82289b55cf9ce07
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: a6b73070affc1054d316f71c071772b53b2e4f09
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155434"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327231"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Top 10 modi per proteggere i piani Microsoft 365 for business
 
@@ -42,8 +42,8 @@ Microsoft consiglia di completare le attività elencate nella tabella seguente c
   
 ||**Attività**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
-|1  <br/> |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2  <br/> |[Formazione degli utenti](secure-your-business-data.md#train) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1   <br/> |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2   <br/> |[Formazione degli utenti](secure-your-business-data.md#train) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |3  <br/> |[Utilizzo degli account amministratore dedicati](secure-your-business-data.md#admin) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[Aumentare il livello di protezione da malware nella posta elettronica](secure-your-business-data.md#malware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5   <br/> |[Proteggere l'ambiente da ransomware](secure-your-business-data.md#ransomware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -67,7 +67,7 @@ Per visualizzare un video per la formazione su come configurare l'AMF e su come 
   
 Per configurare l'autenticazione a più fattori:
 
-1. Nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=834822) **selezionare** > utenti**attivi**.
+1. Nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=834822) **selezionare utenti**  >  **attivi**.
 
 2. Nella sezione **utenti attivi** selezionare autenticazione a più **fattori**.
 
@@ -119,7 +119,7 @@ L'ambiente Microsoft 365 include la protezione da malware, ma è possibile aumen
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali dell'account di amministratore. 
     
-2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri** \> **antimalware**in **gestione minacce**.
+2. Nel riquadro di &amp; spostamento a sinistra del centro conformità sicurezza fare clic su **criteri** antimalware in **gestione minacce** \> **Anti-Malware**.
     
 3. Fare doppio clic sul criterio predefinito per modificare il criterio a livello di società.
     
@@ -192,10 +192,11 @@ Per creare una regola di trasporto della posta:
     
 6. Selezionare **Salva**.
     
-|**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**|
+|**Impostazione**|**Rifiutare i messaggi di posta elettronica di inoltro automatico ai domini esterni**|
 |:-----|:-----|
 |Nome  <br/> |Impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni  <br/> |
 |Applica questa regola se...  <br/> |Il mittente. . . è esterno/interno. . . All'interno dell'organizzazione  <br/> |
+|Aggiungi condizione  <br/> |Il destinatario. . . è esterno/interno. . . All'esterno dell'organizzazione  <br/> |
 |Aggiungi condizione  <br/> |Le proprietà del messaggio. . . includere il tipo di messaggio. . . Inoltro automatico  <br/> |
 |Eseguire le operazioni seguenti:  <br/> |Blocca il messaggio. . . rifiuta il messaggio e Includi una spiegazione.  <br/> |
 |Fornire il testo del messaggio  <br/> |L'inoltro automatico della posta elettronica all'esterno dell'organizzazione è impedito per motivi di sicurezza.  <br/> |
@@ -254,7 +255,7 @@ Per creare un criterio di anti-phishing ATP, visualizzare un [video di formazion
     
 6. Dopo aver esaminato le impostazioni, selezionare **crea questo criterio** o **Salva**, a seconda dei casi.
     
-| | | Impostazione **o opzione**|**consigliata** <br/>
+| | | **Impostazione o opzione** | **Impostazione consigliata** <br/>
 | Nome  <br/> | Domain e la maggior parte del personale prezioso della campagna  <br/> | | Descrizione  <br/> | Garantire che la maggior parte del personale importante e del nostro dominio non siano rappresentati.  <br/> | | Aggiungere gli utenti a Protect  <br/> | Seleziona **+ Aggiungi una condizione, il destinatario è**. Digitare i nomi utente oppure immettere l'indirizzo di posta elettronica del candidato, del responsabile della campagna e di altri membri del personale importanti. È possibile aggiungere fino a 20 indirizzi interni ed esterni che si desidera proteggere dalla rappresentazione.  <br/> | | Aggiungere domini da proteggere  <br/> | Selezionare **+ Aggiungi una condizione, il dominio del destinatario è**. Se ne è stata definita una, immettere il dominio personalizzato associato all'abbonamento a Microsoft 365. È possibile immettere più di un dominio.  <br/> | | Scegliere azioni  <br/> | Se la posta elettronica viene inviata da un utente rappresentato: selezionare **reindirizza messaggio a un altro indirizzo di posta elettronica**e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza. ad esempio, securityadmin@contoso.com.          Se la posta elettronica viene inviata da un dominio rappresentato: selezionare **messaggio in quarantena**.  <br/> | | Intelligence delle cassette postali  <br/> | Per impostazione predefinita, la funzionalità di intelligence delle cassette postali viene selezionata quando si crea un nuovo criterio anti-phishing. Per ottenere risultati ottimali, lasciare l’opzione **attiva**.  <br/> | | Aggiungere mittenti e domini attendibili  <br/> | In questo esempio non vengono definite eventuali sostituzioni.  <br/> | | Applicato a  <br/> | Selezionare **il dominio del destinatario**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio contoso.com, nell'elenco e quindi fare clic su **Aggiungi**. Scegliere **Fine**.  <br/> |
    
 Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
@@ -274,13 +275,13 @@ Per creare un criterio degli allegati sicuri di ATP, visualizzare un [video di f
     
 4. Nella pagina allegati sicuri, applicare questa protezione in generale selezionando la casella di controllo **attiva ATP per SharePoint, OneDrive e Microsoft teams** . 
     
-5. Selezionare **+** questa impostazione per creare un nuovo criterio. 
+5. Selezionare questa **+** impostazione per creare un nuovo criterio. 
     
 6. Applicare le impostazioni nella tabella seguente. 
     
 7. Dopo aver esaminato le impostazioni, selezionare **crea questo criterio** o **Salva**, a seconda dei casi.
     
-| | | Impostazione **o opzione**|**consigliata** <br/>| | Nome  <br/> | Blocca i messaggi di posta elettronica correnti e futuri con malware rilevato.  <br/> | | Descrizione  <br/> | Blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato.  <br/> | | Save Attachments Unknown Malware Response  <br/> | Selezionare **blocca-blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato**.  <br/> | | Reindirizza l'allegato sul rilevamento  <br/> | Attiva reindirizzamento (selezionare questa casella) immettere l'account di amministratore o la configurazione di una cassetta postale per la quarantena.          Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore (selezionare questa casella).  <br/> | | Applicato a  <br/> | Il dominio del destinatario è. . . Selezionare il dominio.  <br/> |
+| | | **Impostazione o opzione** | **Impostazione consigliata** <br/>| | Nome  <br/> | Blocca i messaggi di posta elettronica correnti e futuri con malware rilevato.  <br/> | | Descrizione  <br/> | Blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato.  <br/> | | Save Attachments Unknown Malware Response  <br/> | Selezionare **blocca-blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato**.  <br/> | | Reindirizza l'allegato sul rilevamento  <br/> | Attiva reindirizzamento (selezionare questa casella) immettere l'account di amministratore o la configurazione di una cassetta postale per la quarantena.          Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore (selezionare questa casella).  <br/> | | Applicato a  <br/> | Il dominio del destinatario è. . . Selezionare il dominio.  <br/> |
    
 Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -319,6 +320,6 @@ Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
     
 3. Selezionare **Salva**. 
     
-| | | Impostazione **o opzione**|**consigliata** <br/>| | Nome  <br/> | Criteri dei collegamenti sicuri per tutti i destinatari del dominio  <br/> | | Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi  <br/> | Selezionare **su URL verrà riscritto e controllato in base a un elenco di collegamenti dannosi noti quando l'utente fa clic sul collegamento**.  <br/> | | Utilizzare gli allegati sicuri per analizzare il contenuto scaricabile  <br/> | Selezionare questa casella.  <br/> | | Applicato a  <br/> | Il dominio del destinatario è. . . Selezionare il dominio.  <br/> |
+| | | **Impostazione o opzione** | **Impostazione consigliata** <br/>| | Nome  <br/> | Criteri dei collegamenti sicuri per tutti i destinatari del dominio  <br/> | | Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi  <br/> | Selezionare **su URL verrà riscritto e controllato in base a un elenco di collegamenti dannosi noti quando l'utente fa clic sul collegamento**.  <br/> | | Utilizzare gli allegati sicuri per analizzare il contenuto scaricabile  <br/> | Selezionare questa casella.  <br/> | | Applicato a  <br/> | Il dominio del destinatario è. . . Selezionare il dominio.  <br/> |
    
 Per ulteriori informazioni, vedere [collegamenti sicuri ATP di Office 365](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).

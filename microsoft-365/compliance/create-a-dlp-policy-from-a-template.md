@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: In questo articolo vengono fornite informazioni su come creare criteri DLP utilizzando uno dei modelli inclusi in Office 365.
-ms.openlocfilehash: be063c8ee8605db94fe3a68f7ca42b7135553f5e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 612f6d0c9459c31087bafa5c498bd4767535e169
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035718"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327808"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Creare criteri di prevenzione della perdita dei dati da un modello
 
@@ -60,9 +60,9 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere usando l'account di lavoro o della scuola. Si è ora nel centro sicurezza &amp; e conformità.
+2. Accedere usando l'account di lavoro o della scuola. Si è ora nel centro sicurezza e &amp; conformità.
     
-3. Nel &amp; centro \> sicurezza e conformità left navigation \> **policy** \> di prevenzione \> della **perdita dei dati** **+ creare un criterio**.
+3. Nel centro sicurezza e &amp; conformità \> Left Navigation \> policy di **prevenzione della perdita dei dati** \> **Policy** \> **+ creare un criterio**.
     
     ![Pulsante Crea un criterio](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
@@ -74,13 +74,13 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
     ![Pagina per la scelta di un modello di criteri DLP](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
   
-5. Denominare \> il criterio **successivo**.
+5. Denominare il criterio \> **successivo**.
     
 6. Per scegliere i percorsi che si desidera proteggere dal criterio DLP, effettuare una delle seguenti operazioni:
     
   - Scegliere **tutte le posizioni in Office 365** \> **Avanti**.
     
-  - Scegliere **Consenti di scegliere le posizioni** \> specifiche **successive**. Per questo esempio, scegliere questo.
+  - Scegliere **Consenti di scegliere le posizioni specifiche** \> **successive**. Per questo esempio, scegliere questo.
     
     Per includere o escludere un'intera posizione, ad esempio tutti i messaggi di posta elettronica di Exchange o tutti gli account di OneDrive, attivare o disattivare lo **stato** di tale percorso. 
     
@@ -90,7 +90,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
   
     In questo esempio, per proteggere le informazioni riservate archiviate in tutti gli account di OneDrive for business, disattivare lo **stato** sia per la **posta elettronica di Exchange** che per i **siti di SharePoint**e lasciare lo **stato** su per gli **account di OneDrive**.
     
-7. Scegliere **Usa impostazioni** \> avanzate **successive**.
+7. Scegliere **Usa impostazioni avanzate** \> **successive**.
     
 8. Un modello di criteri DLP contiene regole predefinite con condizioni e azioni che rilevano e agiscono su tipi specifici di informazioni riservate. È possibile modificare, eliminare o disabilitare una o più delle regole esistenti oppure aggiungerne di nuove. Al termine, fare clic su **Avanti**.
     
@@ -108,17 +108,17 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
     ![Pulsante Elimina regola](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
   
-9. Ora, in questo esempio, è necessario aggiungere due tipi di informazioni riservate (numeri di conto corrente bancario statunitense e numeri di licenza degli Stati Uniti), consentire agli utenti di ignorare una regola e modificare il conteggio in qualsiasi occorrenza. È possibile eseguire tutte queste modifiche modificando una regola, quindi selezionare un \> **volume elevato di contenuto rilevato dalla regola di modifica delle informazioni personali degli Stati Uniti** . **Edit rule**
+9. Ora, in questo esempio, è necessario aggiungere due tipi di informazioni riservate (numeri di conto corrente bancario statunitense e numeri di licenza degli Stati Uniti), consentire agli utenti di ignorare una regola e modificare il conteggio in qualsiasi occorrenza. È possibile eseguire tutte queste modifiche modificando una regola, quindi selezionare un **volume elevato di contenuto rilevato dalla regola di modifica delle informazioni personali degli Stati Uniti** \> **Edit rule**.
     
     ![Pulsante Modifica regola](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
-10. Per aggiungere un tipo di informazioni riservate, **Conditions** nella sezione \> condizioni **aggiungere o modificare i tipi**. Quindi, in **Aggiungi o modifica tipi** \> scegliere **Aggiungi** \> selezionare **il numero di conto corrente bancario statunitense** e **il numero** \> della patente di guida statunitense **Aggiungi** \> **completato**.
+10. Per aggiungere un tipo di informazioni riservate, nella sezione **condizioni** \> **aggiungere o modificare i tipi**. Quindi, in **Aggiungi o modifica tipi** \> scegliere **Aggiungi** \> selezionare il **numero di conto corrente bancario statunitense** e **il numero della patente di guida statunitense** \> **Aggiungi** \> **completato**.
     
     ![Opzione per aggiungere o modificare i tipi](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
     ![Riquadro dei tipi di aggiunta o modifica](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
   
-11. Per modificare il conteggio, ovvero il numero di istanze di informazioni riservate necessarie per attivare la regola, in **conteggio** \> istanze scegliere il valore **minimo** per ogni \> tipo immettere 1. Il numero minimo non può essere vuoto. Il numero massimo può essere vuoto. valore **massimo** vuoto convertito in **any**.
+11. Per modificare il conteggio, ovvero il numero di istanze di informazioni riservate necessarie per attivare la regola, in **conteggio istanze** \> scegliere il valore **minimo** per ogni tipo \> immettere 1. Il numero minimo non può essere vuoto. Il numero massimo può essere vuoto. valore **massimo** vuoto convertito in **any**.
     
     Al termine, il conteggio minimo per tutti i tipi di informazioni riservate deve essere **1** e il numero massimo dovrebbe essere **qualsiasi**. In altre parole, qualsiasi occorrenza di questo tipo di informazioni riservate soddisferà questa condizione.
     
@@ -134,13 +134,13 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
   
 13. Nella parte superiore dell'editor delle regole cambiare il nome di questa regola dall' **alto volume predefinito di contenuto delle informazioni personali rilevate dagli Stati Uniti** a **qualsiasi contenuto rilevato con i dati personali degli Stati Uniti** , in quanto è ora attivato da qualsiasi occorrenza dei relativi tipi di informazione sensibili. 
     
-14. Nella parte inferiore dell'editor \> delle regole **salvare**.
+14. Nella parte inferiore dell'editor delle regole \> **salvare**.
     
-15. Esaminare le condizioni e le azioni per la \> regola **successive**.
+15. Esaminare le condizioni e le azioni per la regola \> **successive**.
     
     A destra, notare l'opzione di **stato** per la regola. Se si disattiva un intero criterio, tutte le regole incluse nel criterio sono disattivate. Tuttavia, è possibile disattivare una regola specifica senza disattivare l'intero criterio. Questo può essere utile nei casi in cui è necessario esaminare una regola che genera un gran numero di falsi positivi. 
     
-16. Nella pagina successiva leggere e comprendere quanto segue, quindi scegliere se accendere la regola o \> testarla **prima.**
+16. Nella pagina successiva leggere e comprendere quanto segue, quindi scegliere se accendere la regola o testarla prima \> **Next**.
     
      Prima di aver creato i criteri DLP, è necessario distribuirli gradualmente per valutarne l'impatto e l'efficacia, prima di applicarli completamente. Ad esempio, non si desidera che un nuovo criterio DLP involontariamente blocca l'accesso a migliaia di documenti necessari per ottenere il proprio lavoro. 
     
@@ -160,7 +160,7 @@ Dopo aver creato e attivato un criterio DLP, viene distribuito in tutte le origi
   
 ## <a name="view-the-status-of-a-dlp-policy"></a>Visualizzare lo stato di un criterio DLP
 
-In qualsiasi momento, è possibile visualizzare lo stato dei criteri DLP nella pagina **criteri** nella sezione **prevenzione perdita di dati** del Centro sicurezza &amp; e conformità. In questa pagina sono disponibili informazioni importanti, ad esempio se un criterio è stato correttamente attivato o disattivato oppure se il criterio è in modalità test. 
+In qualsiasi momento, è possibile visualizzare lo stato dei criteri DLP nella pagina **criteri** nella sezione **prevenzione perdita di dati** del Centro sicurezza e &amp; conformità. In questa pagina sono disponibili informazioni importanti, ad esempio se un criterio è stato correttamente attivato o disattivato oppure se il criterio è in modalità test. 
   
 Di seguito sono riportati i diversi stati e il loro significato.
   
@@ -178,7 +178,7 @@ Di seguito sono riportati i diversi stati e il loro significato.
 
 È possibile modificare o disattivare un criterio DLP in qualsiasi momento. La disattivazione di un criterio Disattiva tutte le regole del criterio.
   
-Per modificare o disabilitare un criterio DLP, nella pagina \> **criterio** selezionare il criterio di modifica dei criteri. **Edit policy** \>
+Per modificare o disabilitare un criterio DLP, nella pagina **criterio** \> selezionare il criterio di \> **modifica**dei criteri.
   
 ![Pulsante Modifica criterio](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
   
@@ -194,6 +194,6 @@ Inoltre, è possibile disattivare singolarmente ogni regola modificando il crite
     
 - [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Inventario di tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+- [Definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
     
 

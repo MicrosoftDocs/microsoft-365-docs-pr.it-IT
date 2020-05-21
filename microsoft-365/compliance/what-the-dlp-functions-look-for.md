@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: I tipi di informazioni riservate cercano un modello specifico e lo confermano assicurando la corretta formattazione, l'applicazione di checksum e la ricerca di parole chiave rilevanti o altre informazioni. Alcune di queste funzionalità vengono eseguite da funzioni interne. In questo argomento viene descritto cosa viene cercato da queste funzioni per comprendere come funzionano i tipi di informazioni riservate predefiniti.
-ms.openlocfilehash: 86ce1c9d546f776e239fdaca76219129c24a73e8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601203"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327748"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati
 
 Prevenzione della perdita di dati (DLP) include tipi di informazioni riservate, come il numero di carta di credito e il numero di carta di debito EU, pronti per essere utilizzati nei criteri DLP. Questi tipi di informazioni riservate cercano uno schema specifico e lo confermano assicurando la corretta formattazione, applicando checksum e individuando parole chiave specifiche o altre informazioni. Alcune di queste funzionalità vengono eseguite da funzioni interne. Ad esempio, il tipo di informazioni riservate relative al numero di carta di credito utilizza una funzione per cercare le date formattate come una data di scadenza, in modo da confermare che si tratta di un numero di carta di credito.
   
-In questo argomento viene descritto cosa viene cercato da queste funzioni per comprendere come funzionano i tipi di informazioni riservate predefiniti. Per ulteriori informazioni, vedere [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+In questo argomento viene descritto cosa viene cercato da queste funzioni per comprendere come funzionano i tipi di informazioni riservate predefiniti. Per ulteriori informazioni, vedere [definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -126,7 +126,7 @@ Nomi dei mesi accettati:
 > [!NOTE]
 > Questa funzione è obsoleta perché supporta solo i nomi dei mesi portoghesi, che ora sono inclusi nella `Func_eu_date` funzione precedente. 
   
-Questa funzione consente di cercare una data nel formato comunemente utilizzato in portoghese. Il formato di questa funzione è lo stesso che `Func_eu_date`differisce solo nella lingua utilizzata.
+Questa funzione consente di cercare una data nel formato comunemente utilizzato in portoghese. Il formato di questa funzione è lo stesso che `Func_eu_date` differisce solo nella lingua utilizzata.
   
 Esempi:
   
@@ -155,9 +155,9 @@ Nomi dei mesi accettati:
 ## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 (obsoleto)
 
 > [!NOTE]
-> Questa funzione è obsoleta perché supporta solo i nomi dei mesi olandesi, che ora sono inclusi `Func_eu_date` nella funzione precedente. 
+> Questa funzione è obsoleta perché supporta solo i nomi dei mesi olandesi, che ora sono inclusi nella `Func_eu_date` funzione precedente. 
   
-Questa funzione consente di cercare una data nel formato comunemente utilizzato in olandese. Il formato di questa funzione è lo stesso che `Func_eu_date`differisce solo nella lingua utilizzata.
+Questa funzione consente di cercare una data nel formato comunemente utilizzato in olandese. Il formato di questa funzione è lo stesso che `Func_eu_date` differisce solo nella lingua utilizzata.
   
 Esempi:
   

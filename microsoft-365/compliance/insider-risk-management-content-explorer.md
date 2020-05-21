@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68a472e4e6b7556fc1b738a49b3c82dcf4804842
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: e48b18ee905bc8589ad3fd6145630b436603ae15
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179077"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327050"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Esploratore contenuto gestione dei rischi Insider
 
-L'esploratore del contenuto di gestione dei rischi insider consente agli analisti e ai ricercatori dei rischi di esaminare il contesto e i dettagli delle comunicazioni acquisite negli avvisi. Per tutti gli avvisi, le copie dei dati e i file dei messaggi vengono archiviati come snapshot nel tempo degli elementi, mantenendo i file e i messaggi originali nelle origini di archiviazione. La copia di dati e messaggi è trasparente per il dipendente associato all'avviso e per il proprietario del contenuto. Le impostazioni di autorizzazione e i diritti di accesso per i dati vengono mantenuti per il contenuto copiato e i messaggi e gli analisti dei rischi e gli investigatori devono disporre di tali autorizzazioni e diritti, se necessario, per aprire e visualizzare i file. A ciascun file e al messaggio viene assegnato automaticamente un ID file univoco nel caso di gestione dei rischi Insider per la gestione.
+L'esploratore contenuto di gestione dei rischi insider consente agli utenti assegnati al ruolo **investigatori di gestione dei rischi Insider** di esaminare il contesto e i dettagli delle comunicazioni acquisite negli avvisi. Per tutti gli avvisi, le copie dei dati e i file dei messaggi vengono archiviati come snapshot nel tempo degli elementi, mantenendo i file e i messaggi originali nelle origini di archiviazione. La copia di dati e messaggi è trasparente per il dipendente associato all'avviso e per il proprietario del contenuto. Le impostazioni di autorizzazione e i diritti di accesso per i dati vengono mantenuti per il contenuto copiato e i messaggi e gli analisti dei rischi e gli investigatori devono disporre di tali autorizzazioni e diritti, se necessario, per aprire e visualizzare i file. A ciascun file e al messaggio viene assegnato automaticamente un ID file univoco nel caso di gestione dei rischi Insider per la gestione.
 
 ## <a name="column-options"></a>Opzioni di colonna
 
@@ -125,9 +125,9 @@ Nella tabella seguente sono elencate le condizioni delle proprietà dei messaggi
 | **Partecipanti** | Tutti i campi persone in un messaggio di posta elettronica. Questi campi sono da, a, CC e Ccn. |
 | **Received** | La data in cui un messaggio di posta elettronica viene ricevuto da un destinatario. |
 | **Domini destinatario** | Elenco di tutti i domini dei destinatari di un messaggio. |
-| **Mittente** | Campo mittente (da) per i tipi di messaggio.  Format è **DisplayName \<SmtpAddress>**. |
+| **Mittente** | Campo mittente (da) per i tipi di messaggio.  Format è **DisplayName \< SmtpAddress>**. |
 | **Dominio del mittente** | Dominio del mittente. |
-| **Oggetto** | Il testo nella riga dell'oggetto di un messaggio di posta elettronica.  <br/> **Nota:** Quando si utilizza la proprietà Subject in una query, la ricerca restituisce tutti i messaggi in cui la riga dell'oggetto contiene il testo che si sta cercando. In altre parole, la query non restituisce solo i messaggi che hanno una corrispondenza esatta. Ad esempio, se si cerca `subject:"Quarterly Financials"`, i risultati includono i messaggi con l'oggetto "Financials trimestrali 2018". |
+| **Oggetto** | Il testo nella riga dell'oggetto di un messaggio di posta elettronica.  <br/> **Nota:** Quando si utilizza la proprietà Subject in una query, la ricerca restituisce tutti i messaggi in cui la riga dell'oggetto contiene il testo che si sta cercando. In altre parole, la query non restituisce solo i messaggi che hanno una corrispondenza esatta. Ad esempio, se si cerca `subject:"Quarterly Financials"` , i risultati includono i messaggi con l'oggetto "Financials trimestrali 2018". |
 | **To** | Il campo To (A) di un messaggio di posta elettronica. |
 | **Univoco nel set di posta elettronica** | False se è presente un duplicato dell'allegato nel relativo set di posta elettronica. |
 
@@ -166,7 +166,7 @@ Nella tabella seguente sono elencate le condizioni delle proprietà dei document
 | **Punteggio di pertinenza** | Punteggio di pertinenza di un documento in base alla pertinenza. |
 | **Tag pertinenza** | Punteggio di pertinenza di un documento in base alla pertinenza. |
 | **ID rappresentativo** | Identificatore numerico di ogni set di duplicati esatti. |
-| **Tag** | Tag applicati in un set di revisione. |
+| **Categorie** | Tag applicati in un set di revisione. |
 | **Elenco temi** | Elenco temi come calcolato per l'analisi. |
 | **Titolo** | Il titolo del documento. La proprietà Title è rappresentata dai metadati specificati nei documenti di Office. È diverso dal nome di file del documento. |
 | **È stato rimediato** | Ha valore true se l'elemento è stato rimediato, altrimenti false. |

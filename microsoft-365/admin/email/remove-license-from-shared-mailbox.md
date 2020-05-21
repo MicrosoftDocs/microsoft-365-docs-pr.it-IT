@@ -21,23 +21,30 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Rimuovere la licenza da una cassetta postale condivisa per assegnarla a un altro utente. '
-ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9ba411c614fee93e37ac45e58fd40bf246a9c2ab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140430"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327243"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Rimuovere una licenza da una cassetta postale condivisa
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Le cassette postali condivise non necessitano di una licenza, a meno che la cassetta postale non abbia più di 50 GB Seguire le istruzioni riportate di seguito per rimuovere una licenza da una cassetta postale condivisa in modo che sia possibile assegnarla a un utente oppure restituire la licenza in modo che non si paghi una licenza di cui non si ha bisogno.
+Le cassette postali condivise in genere non richiedono una licenza. Seguire le istruzioni riportate di seguito per rimuovere una licenza da una cassetta postale condivisa in modo che sia possibile assegnarla a un utente oppure restituire la licenza in modo che non si paghi una licenza di cui non si ha bisogno.
+
+> [!NOTE]
+> È necessaria una licenza negli scenari seguenti:
+> 1. La cassetta postale condivisa ha più di 50 GB di spazio di archiviazione in uso.
+> 2. La cassetta postale condivisa utilizza l'archiviazione sul posto.
+> 3. La cassetta postale condivisa viene messa in blocco per controversia legale.
+
   
 ## <a name="remove-the-license"></a>Rimuovere la licenza
 

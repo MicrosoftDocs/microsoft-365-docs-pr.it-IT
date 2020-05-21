@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Aggiungiamo continuamente nuove funzionalità al centro conformità di Microsoft 365, risolvendo i problemi che vengono apportati e modificando in base ai commenti e suggerimenti. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: baccff8699f9ec7b38090fb5adc0fcde8811c764
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034268"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327738"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novità nel centro conformità di Microsoft 365
 
@@ -70,7 +70,7 @@ L'attesa è terminata. Siamo lieti di annunciare che Microsoft 365 Compliance Ce
 > [!TIP]
 > Leggere di nuovo l'aggiornamento del mese scorso per una panoramica su alcune delle [nuove soluzioni](#new-compliance-solutions) presentate di recente, oltre a una [Roadmap](#updated-compliance-solutions) in cui sono riportate le caratteristiche di conformità dal centro sicurezza & conformità ora in Microsoft 365.
 
-Segnalibro e Head Over Now [https://compliance.microsoft.com](https://compliance.microsoft.com) to to tour Your One-Stop-Shop per la gestione della conformità in tutto il tuo org... oppure [leggere questo articolo](microsoft-365-compliance-center.md) per approfondire un po' di più.
+Segnalibro e Head Over Now to [https://compliance.microsoft.com](https://compliance.microsoft.com) to tour Your One-Stop-Shop per la gestione della conformità in tutto il tuo org... oppure [leggere questo articolo](microsoft-365-compliance-center.md) per approfondire un po' di più.
 
 ![Home page del centro conformità Microsoft 365](../media/mcc-home-ga.png)
 
@@ -159,7 +159,7 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 > Alcune funzionalità sono ancora disponibili solo nel centro sicurezza & conformità di Office 365: queste sono note di seguito. Ma stiamo lavorando duramente per visualizzare in anteprima questi nel centro conformità Microsoft 365, quindi resta sintonizzato per gli aggiornamenti. 
 <br/>
 
-|**Caratteristica**|**Centro sicurezza e conformità di Office 365**|**Centro conformità Microsoft 365**|**Altre informazioni**|
+|**Funzionalità**|**Centro sicurezza e conformità di Office 365**|**Centro conformità Microsoft 365**|**Altre informazioni**|
 |:-----|:-----|:-----|:-----|
 |Advanced eDiscovery|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > Advanced <br/> https://compliance.microsoft.com/advancedediscovery | [Panoramica della soluzione avanzata di eDiscovery in Microsoft 365](overview-ediscovery-20.md) |
 |Criteri di avviso|Avvisi > criteri di avviso <br/> https://protection.office.com/alertpolicies |In questo momento, i criteri di avviso sono gestiti solo nel centro conformità & sicurezza di Office 365. |[Criteri di avviso nel Centro sicurezza e conformità](alert-policies.md) |
@@ -177,7 +177,7 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 |Esplora attività etichette|Gestione delle informazioni > label Activity Explorer <br/> https://protection.office.com/labelexplorer |Classificazione dei dati > scheda Esplora attività <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Visualizzare le attività sul contenuto etichettato (anteprima)](data-classification-activity-explorer.md)|
 |Etichette di conservazione e criteri di etichetta |Schede di classificazione > etichette di conservazione > etichette e criteri etichetta <br/> https://protection.office.com/retentionlabels |Schede per la governance delle informazioni > etichette e criteri etichetta <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Panoramica delle etichette di conservazione](labels.md)|
 |Criteri di conservazione|Gestione delle informazioni > conservazione <br/> https://protection.office.com/retention |Scheda conservazione > di gestione delle informazioni <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Panoramica dei criteri di conservazione](retention-policies.md)|
-|Tipi di informazioni riservate|Classificazione > tipi di informazioni riservate <br/> https://protection.office.com/sensitivetypes |Classificazione dei dati > scheda tipi di informazioni riservate <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Tipi di informazioni riservate disponibili da cercare](what-the-sensitive-information-types-look-for.md)|
+|Tipi di informazioni riservate|Classificazione > tipi di informazioni riservate <br/> https://protection.office.com/sensitivetypes |Classificazione dei dati > scheda tipi di informazioni riservate <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)|
 |Etichette di riservatezza e criteri di etichetta|Classificazione > etichette di riservatezza > etichette e schede criteri etichetta <br/> https://protection.office.com/sensitivity |Schede per la protezione delle informazioni > etichette e criteri etichette <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Informazioni sulle etichette di riservatezza](sensitivity-labels.md) |
 |Garanzia del servizio|Garanzia del servizio <br/> https://protection.office.com/serviceassurance/dashboard |A questo punto, è possibile accedere alle risorse di Service Assurance solo nel centro sicurezza & conformità di Office 365. |[Garanzia del servizio nel centro sicurezza & conformità](service-assurance.md)|
 |Supervisione|Supervisione <br/> https://protection.office.com/supervisoryreviewv2 |Conformità delle comunicazioni <br/> https://compliance.microsoft.com/supervisoryreview |[Conformità della comunicazione in Microsoft 365 (anteprima)](communication-compliance.md) |

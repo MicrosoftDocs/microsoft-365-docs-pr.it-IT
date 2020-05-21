@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Office 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: 336e6ee78d7020d73c7e00f639e8f1e1b20c62cd
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: b40f537ec10b7d2406a9bb2fe281c39342f2d119
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222340"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327219"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Aggiungere un dominio a Microsoft 365
 
@@ -74,7 +74,7 @@ ms.locfileid: "44222340"
 
 ::: moniker-end
     
-2. Passare alla pagina **configurazione**  >  **domini** . 
+2. Passare alla pagina **Impostazioni**  >  **domini** . 
 
 3. Selezionare **Aggiungi dominio**.
     

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In questo articolo vengono fornite informazioni su come creare, testare e ottimizzare un criterio DLP in base alle esigenze dell'organizzazione.
-ms.openlocfilehash: 2a7ef029d00aff8450d9e8cf41253c2a86606807
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035758"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327798"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
@@ -51,13 +51,13 @@ In altre parole, DLP è in genere abbastanza intelligente da riconoscere la diff
 - "Puoi ordinarmi un nuovo laptop. Utilizzare il numero di VISA 1111-1111-1111-1111, la scadenza 11/22 e inviare la data di consegna stimata quando si ha. "
 - "Il numero di serie del laptop è 2222-2222-2222-2222 ed è stato acquistato il 11/2010. A proposito, il mio visto di viaggio è già approvato? "
 
-Un buon riferimento per mantenere i segnalibri è questo [argomento sui tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md) che spiega la modalità di rilevamento di ogni tipo di informazioni.
+Un buon riferimento per mantenere i segnalibri è il [tipo di informazioni riservate definizioni entità](sensitive-information-type-entity-definitions.md) che spiega come ogni tipo di informazione viene rilevata.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Da dove iniziare con la prevenzione della perdita di dati
 
 Quando i rischi di perdita di dati non sono del tutto evidenti, è difficile capire esattamente dove iniziare con l'implementazione di DLP. Fortunatamente, i criteri DLP possono essere eseguiti in "modalità test", consentendo di valutare l'efficacia e l'accuratezza prima di attivarli.
 
-I criteri DLP per Exchange Online possono essere gestiti tramite l'interfaccia di amministrazione di Exchange. Tuttavia, è possibile configurare i criteri DLP per tutti i carichi di lavoro tramite il Centro sicurezza & Compliance, quindi questo è ciò che verrà utilizzato per le dimostrazioni in questo articolo. Nel centro sicurezza & conformità sono disponibili i criteri DLP in**criteri**di **prevenzione** > della perdita di dati. Fare clic su **Crea un criterio** per iniziare.
+I criteri DLP per Exchange Online possono essere gestiti tramite l'interfaccia di amministrazione di Exchange. Tuttavia, è possibile configurare i criteri DLP per tutti i carichi di lavoro tramite il Centro sicurezza & Compliance, quindi questo è ciò che verrà utilizzato per le dimostrazioni in questo articolo. Nel centro sicurezza & conformità sono disponibili i criteri DLP in criteri di **prevenzione della perdita di dati**  >  **Policy**. Fare clic su **Crea un criterio** per iniziare.
 
 Microsoft 365 fornisce una serie di [modelli di criteri DLP](what-the-dlp-policy-templates-include.md) che è possibile utilizzare per creare i criteri DLP. Si supponga che si tratta di un'azienda australiana. È possibile filtrare i modelli di criteri per visualizzare solo quelli rilevanti per l'Australia, che rientrano nelle categorie generali finanziarie, mediche e sanitarie e di privacy.
 
@@ -95,7 +95,7 @@ Nella schermata Revisione finale fare clic su **Crea** per completare la creazio
 
 ## <a name="test-a-dlp-policy"></a>Testare un criterio DLP
 
-Il nuovo criterio DLP inizierà a essere applicato entro circa 1 ora. È possibile sedersi e attendere che venga attivata dalla normale attività utente oppure provare a attivarla personalmente. In precedenza ho collegato a questo [argomento sui tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md), in cui vengono fornite informazioni su come attivare le corrispondenze DLP.
+Il nuovo criterio DLP inizierà a essere applicato entro circa 1 ora. È possibile sedersi e attendere che venga attivata dalla normale attività utente oppure provare a attivarla personalmente. In precedenza ho collegato a [definizioni di entità tipo di informazioni riservate](sensitive-information-type-entity-definitions.md), in cui vengono fornite informazioni su come attivare le corrispondenze DLP.
 
 Ad esempio, il criterio DLP creato per questo articolo rileverà i numeri di file fiscali australiani (TFN). In base alla documentazione, la corrispondenza si basa sui criteri seguenti.
 
@@ -192,7 +192,7 @@ Un'altra opzione consiste nel semplicemente aumentare il numero di istanze, in m
 
 Oltre a modificare il numero di istanze, è anche possibile regolare l'accuratezza della corrispondenza (o il livello di confidenza). Se il tipo di informazioni riservate dispone di più modelli, è possibile regolare l'accuratezza della corrispondenza nella regola, in modo che la regola corrisponda solo a modelli specifici. Ad esempio, per ridurre i falsi positivi, è possibile impostare l'accuratezza della corrispondenza della regola in modo che corrisponda solo al modello con il livello di probabilità più alto. Capire come viene calcolato il livello di sicurezza è un po' complicato (oltre all'ambito di questo post), ma ecco una buona spiegazione su [come usare il livello di sicurezza per ottimizzare le regole](data-loss-prevention-policies.md#match-accuracy).
 
-Infine, se si vuole ottenere anche un po' più avanzato, è possibile personalizzare qualsiasi tipo di informazioni riservate-ad esempio, è possibile rimuovere "Sydney NSW" dall'elenco di parole chiave per la [patente di guida australiana](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number), per eliminare il falso positivo attivato sopra. Per informazioni su come eseguire questa operazione tramite XML e PowerShell, vedere questo argomento relativo alla [personalizzazione di un tipo di informazione riservata incorporato](customize-a-built-in-sensitive-information-type.md).
+Infine, se si vuole ottenere anche un po' più avanzato, è possibile personalizzare qualsiasi tipo di informazioni riservate-ad esempio, è possibile rimuovere "Sydney NSW" dall'elenco di parole chiave per il [numero di patente di guida Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), per eliminare il falso positivo attivato sopra. Per informazioni su come eseguire questa operazione tramite XML e PowerShell, vedere questo argomento relativo alla [personalizzazione di un tipo di informazione riservata incorporato](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Attivazione di un criterio DLP
 

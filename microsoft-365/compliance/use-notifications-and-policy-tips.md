@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: fd6c7a33f8c75615019cca32797008a8fa4753ed
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6c9175045f7a93cab03acff891454536c8b5b7a0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626402"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327264"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 
@@ -44,9 +44,9 @@ Nel centro sicurezza &amp; e conformità, quando si crea un criterio DLP, è pos
     
   - Per la posta elettronica in Outlook sul Web e Outlook 2013 e versioni successive, il suggerimento del criterio viene visualizzato nella parte superiore di un messaggio sopra i destinatari mentre il messaggio è in fase di composizione.
     
-  - Per i documenti in un account OneDrive for business o in un sito di SharePoint Online, il suggerimento per i criteri è indicato da un'icona di avviso che viene visualizzata sull'elemento. Per visualizzare altre informazioni, è possibile selezionare un elemento e quindi fare **Information** ![clic su icona](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del riquadro informazioni informazioni nell'angolo in alto a destra della pagina per aprire il riquadro dei dettagli. 
+  - Per i documenti in un account OneDrive for business o in un sito di SharePoint Online, il suggerimento per i criteri è indicato da un'icona di avviso che viene visualizzata sull'elemento. Per visualizzare altre informazioni, è possibile selezionare un elemento e quindi fare clic su icona del riquadro informazioni **informazioni** ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) nell'angolo in alto a destra della pagina per aprire il riquadro dei dettagli. 
     
-  - Per i documenti di Excel, PowerPoint e Word archiviati in un sito di OneDrive for business o in un sito di SharePoint Online incluso nei criteri DLP, il suggerimento per i criteri viene visualizzato sulla barra dei messaggi e sulla visualizzazione **File** backstage \> ( **informazioni**sul menu file).
+  - Per i documenti di Excel, PowerPoint e Word archiviati in un sito di OneDrive for business o in un sito di SharePoint Online incluso nei criteri DLP, il suggerimento per i criteri viene visualizzato sulla barra dei messaggi e sulla visualizzazione Backstage (informazioni sul menu **file** \> **Info**).
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Aggiungere notifiche utente a un criterio DLP
 
@@ -54,29 +54,29 @@ Quando si crea un criterio DLP, è possibile abilitare le **notifiche degli uten
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere con l'account aziendale o dell'Istituto di istruzione. Si è ora nel centro sicurezza &amp; e conformità.
+2. Accedere usando l'account di lavoro o della scuola. Si è ora nel centro sicurezza e &amp; conformità.
     
-3. Nel &amp; centro \> sicurezza e conformità left navigation \> **policy** \> di prevenzione \> della **perdita dei dati** **+ creare un criterio**.
+3. Nel centro sicurezza e &amp; conformità \> Left Navigation \> policy di **prevenzione della perdita dei dati** \> **Policy** \> **+ creare un criterio**.
     
     ![Pulsante Crea un criterio](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
 4. Scegliere il modello di criteri DLP che protegge i tipi di informazioni riservate necessarie \> **successivamente**.
     
-    Per iniziare con un modello vuoto, fare **clic** \> su Custom Custom **policy** \> **Next**.
+    Per iniziare con un modello vuoto, fare **clic su Custom Custom** \> **policy** \> **Next**.
     
-5. Denominare \> il criterio **successivo**.
+5. Denominare il criterio \> **successivo**.
     
 6. Per scegliere i percorsi che si desidera proteggere dal criterio DLP, effettuare una delle seguenti operazioni:
     
    - Scegliere **tutte le posizioni in Office 365** \> **Avanti**.
     
-   - Scegliere **Consenti di scegliere le posizioni** \> specifiche **successive**.
+   - Scegliere **Consenti di scegliere le posizioni specifiche** \> **successive**.
     
    Per includere o escludere un'intera posizione, ad esempio tutti i messaggi di posta elettronica di Exchange o tutti gli account di OneDrive, attivare o disattivare lo **stato** di tale percorso. 
     
    Per includere solo i siti di SharePoint specifici o gli account di OneDrive, passare lo **stato** su attivato e quindi fare clic sui collegamenti in **Includi** per scegliere i siti o gli account specifici. 
     
-7. Scegliere **Usa impostazioni** \> avanzate **successive**.
+7. Scegliere **Usa impostazioni avanzate** \> **successive**.
     
 8. Scegliere **+ nuova regola**.
     
@@ -136,7 +136,7 @@ Per ogni regola in un criterio DLP, è possibile configurare suggerimenti per i 
     
 - Consentire all'utente di ignorare il criterio DLP. In alternativa, è possibile:
     
-  - Richiedere all'utente di immettere una motivazione aziendale per ignorare il criterio. Queste informazioni sono registrate ed è possibile visualizzarle nei report DLP nella sezione **report** del Centro sicurezza &amp; e conformità. 
+  - Richiedere all'utente di immettere una motivazione aziendale per ignorare il criterio. Queste informazioni sono registrate ed è possibile visualizzarle nei report DLP nella sezione **report** del Centro sicurezza e &amp; conformità. 
     
   - Consentire all'utente di segnalare un falso positivo e di ignorare il criterio DLP. Anche questa informazione viene registrata per il report affinché sia possibile utilizzare falsi positivi per ottimizzare le regole.
     
@@ -168,7 +168,7 @@ Quando un documento in un sito di OneDrive for business o in un sito di SharePoi
     
    ![Icone del suggerimento per i criteri nei documenti in un account di OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Per eseguire un'azione su un documento, è possibile selezionare l' \> icona **Information** ![](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) seleziona informazioni riquadro delle informazioni nell'angolo in alto a destra della pagina per aprire il suggerimento per \> i **criteri di visualizzazione**del riquadro dei dettagli.
+Per eseguire un'azione su un documento, è possibile selezionare l' \> icona **Seleziona informazioni** ![ riquadro delle informazioni ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) nell'angolo in alto a destra della pagina per aprire il suggerimento per i \> **criteri di visualizzazione**del riquadro dei dettagli.
   
 Il suggerimento per i criteri elenca i problemi con il contenuto e, se i suggerimenti per i criteri sono configurati con queste opzioni, è possibile selezionare **Risolvi** e quindi **ignorare** il suggerimento per i criteri oppure **segnalare** un falso positivo. 
   
@@ -202,7 +202,7 @@ I suggerimenti per i criteri funzionano se le informazioni riservate vengono vis
   
 ![Suggerimento per i criteri che indica che un allegato è in conflitto con un criterio DLP](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
-Se i suggerimenti per i criteri sono configurati in modo da consentire la sostituzione, è possibile scegliere **Mostra dettagli** \> **sostituzione** \> immettere una \> giustificazione aziendale o segnalare un **falso positivo.**
+Se i suggerimenti per i criteri sono configurati in modo da consentire la sostituzione, è possibile scegliere **Mostra dettagli** \> **sostituzione** \> immettere una giustificazione aziendale o segnalare un falso positivo \> **Override**.
   
 ![Suggerimento per i criteri nel messaggio espanso per visualizzare l'opzione Sostituisci](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
@@ -219,13 +219,13 @@ Attualmente, Outlook 2013 e versioni successive supporta la visualizzazione dei 
 
 Tenere presente che tutte queste condizioni funzionano in Outlook, in cui corrispondono ai contenuti e applicano azioni protettive sul contenuto. Tuttavia, la visualizzazione di suggerimenti per i criteri per gli utenti non è ancora supportata.
   
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange rispetto &amp; al centro sicurezza e conformità
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange rispetto al centro sicurezza e &amp; conformità
 
-I suggerimenti per i criteri possono essere compatibili con i criteri DLP e le regole del flusso di posta creati nell'interfaccia di amministrazione di Exchange oppure &amp; con i criteri DLP creati nel centro sicurezza e conformità, ma non in entrambi. Ciò è dovuto al fatto che questi criteri sono archiviati in posizioni diverse, ma i suggerimenti per i criteri possono essere disegnati solo da una singola posizione.
+I suggerimenti per i criteri possono essere compatibili con i criteri DLP e le regole del flusso di posta creati nell'interfaccia di amministrazione di Exchange oppure con i criteri DLP creati nel centro sicurezza e &amp; conformità, ma non in entrambi. Ciò è dovuto al fatto che questi criteri sono archiviati in posizioni diverse, ma i suggerimenti per i criteri possono essere disegnati solo da una singola posizione.
   
-Se sono stati configurati suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange, gli eventuali suggerimenti per &amp; i criteri configurati nel centro sicurezza e conformità non verranno visualizzati in Outlook sul Web e Outlook 2013 e versioni successive finché non si disattivano i suggerimenti nell'interfaccia di amministrazione di Exchange. In questo modo, le regole del flusso di posta di Exchange correnti (note anche come regole di trasporto) continueranno a funzionare fino a quando non &amp; si sceglie di passare al centro sicurezza e conformità.
+Se sono stati configurati suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange, gli eventuali suggerimenti per i criteri configurati nel &amp; Centro sicurezza e conformità non verranno visualizzati in Outlook sul Web e outlook 2013 e versioni successive finché non si disattivano i suggerimenti nell'interfaccia di amministrazione di Exchange. In questo modo, le regole del flusso di posta di Exchange correnti (note anche come regole di trasporto) continueranno a funzionare fino a quando non si sceglie di passare al centro sicurezza e &amp; conformità.
   
-Si noti che, mentre i suggerimenti per i criteri possono essere disegnati solo da una singola posizione, le notifiche di posta elettronica vengono sempre inviate, anche &amp; se si utilizzano i criteri DLP sia nel centro conformità sicurezza sia nell'interfaccia di amministrazione di Exchange.
+Si noti che, mentre i suggerimenti per i criteri possono essere disegnati solo da una singola posizione, le notifiche di posta elettronica vengono sempre inviate, anche se si utilizzano i criteri DLP sia nel centro conformità sicurezza sia nell'interfaccia di &amp; amministrazione di Exchange.
   
 ### <a name="default-text-for-policy-tips-in-email"></a>Testo predefinito per i suggerimenti per i criteri in posta elettronica
 
@@ -287,4 +287,4 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo sim
     
 - [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Elementi cercati dai tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+- [Definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)

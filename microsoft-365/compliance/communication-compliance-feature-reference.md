@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bfaead99bf439173cb353bc745488a5d0aee70c4
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210543"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327608"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -115,7 +115,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 - In **uscita**: è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone scelte per la supervisione.
 - **Internal**: è possibile scegliere **Internal** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
 
-### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
+### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
 
 È possibile includere i tipi di informazioni riservate nell'ambito del criterio di conformità della comunicazione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Come parte di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md), la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 
@@ -124,7 +124,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 - Privacy
 - Tipo di informazioni personalizzato
 
-Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi predefiniti, vedere [quali tipi di informazioni riservate devono essere cercate](what-the-sensitive-information-types-look-for.md).
+Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi predefiniti, vedere definizioni di [entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md).
 
 ### <a name="custom-keyword-dictionaries"></a>Dizionari per parole chiave personalizzate
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Molte organizzazioni dispongono già di un processo per identificare e classificare le informazioni riservate mediante le proprietà di classificazione nell'Infrastruttura di classificazione file (FCI) di Windows Server, le proprietà dei documenti in SharePoint o le proprietà dei documenti applicate da un sistema di terze parti. Se in questo articolo viene descritta l'organizzazione, è possibile creare un criterio DLP che riconosca le proprietà applicate ai documenti da Windows Server FCI o da un altro sistema in modo che sia possibile applicare il criterio DLP ai documenti di Office con valori di proprietà FCI o altri specifici.
-ms.openlocfilehash: e2b64412a6f35dc3f29fe538a849f84e764af156
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3fa28492ef4d19903797741795091561de3fa257
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632201"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327102"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
 
@@ -54,13 +54,13 @@ Prima di tutto, è necessario caricare un documento con la proprietà cui si des
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
     
-2. Nel riquadro di spostamento a sinistra, scegliere interfaccia di **Amministrazione** \> di **SharePoint**. Ci si trova ora nell'interfaccia di amministrazione di SharePoint.
+2. Nel riquadro di spostamento a sinistra, scegliere interfaccia di **Amministrazione** di \> **SharePoint**. Ci si trova ora nell'interfaccia di amministrazione di SharePoint.
     
-3. Nella barra di spostamento a sinistra, scegliere **ricerca** \> nella pagina \> **Amministrazione ricerca** **gestire lo schema di ricerca**.
+3. Nella barra di spostamento a sinistra, scegliere **ricerca** \> nella pagina **Amministrazione ricerca** \> **gestire lo schema di ricerca**.
     
     ![pagina di amministrazione della ricerca nell'interfaccia di amministrazione di SharePoint](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
-4. Nella \> pagina **proprietà gestite** **nuova proprietà gestita**.
+4. Nella pagina **proprietà gestite** \> **nuova proprietà gestita**.
     
     ![Pagina Proprietà gestite con il pulsante Nuova proprietà gestita evidenziato](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
@@ -70,9 +70,9 @@ Prima di tutto, è necessario caricare un documento con la proprietà cui si des
     
 7. In **Caratteristiche principali**, selezionare **Disponibile per query** e **Recuperabile**.
     
-8. \> In **mapping a proprietà sottoposte a ricerca per indicizzazione** **aggiungere un mapping**.
+8. In **mapping a proprietà sottoposte a ricerca per indicizzazione** \> **aggiungere un mapping**.
     
-9. Nella finestra di dialogo Selezione proprietà sottoposta a **ricerca per indicizzazione** \> trovare e selezionare la proprietà \> **sottoposto**a ricerca per indicizzazione corrispondente alla proprietà di Windows Server FCI o ad altre proprietà che verranno utilizzate nel criterio DLP OK.
+9. Nella finestra di dialogo Selezione proprietà sottoposta a **ricerca per indicizzazione** \> trovare e selezionare la proprietà sottoposto a ricerca per indicizzazione corrispondente alla proprietà di Windows Server FCI o ad altre proprietà che verranno utilizzate nel criterio DLP \> **OK**.
     
     ![finestra di dialogo per la selezione di proprietà sottoposte a ricerca per indicizzazione](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
@@ -92,13 +92,13 @@ Successivamente, si crea un criterio DLP con due regole che entrambe utilizzano 
     
 ### <a name="create-the-dlp-policy-by-using-powershell"></a>Creare il criterio DLP tramite PowerShell
 
-Tenere presente che le **proprietà del documento Condition contengono uno qualsiasi di questi valori** non è temporaneamente disponibile nell'interfaccia utente &amp; del Centro sicurezza e conformità, ma è comunque possibile utilizzare questa condizione tramite PowerShell. È possibile utilizzare i `New\Set\Get-DlpCompliancePolicy` cmdlet per l'utilizzo di un criterio DLP e utilizzare i `New\Set\Get-DlpComplianceRule` cmdlet con il `ContentPropertyContainsWords` parametro per aggiungere le proprietà del documento condition che **contengono uno dei valori seguenti**.
+Tenere presente che le **proprietà del documento Condition contengono uno qualsiasi di questi valori** non è temporaneamente disponibile nell'interfaccia utente del &amp; Centro sicurezza e conformità, ma è comunque possibile utilizzare questa condizione tramite PowerShell. È possibile utilizzare i `New\Set\Get-DlpCompliancePolicy` cmdlet per l'utilizzo di un criterio DLP e utilizzare i `New\Set\Get-DlpComplianceRule` cmdlet con il `ContentPropertyContainsWords` parametro per aggiungere le proprietà del documento condition che **contengono uno dei valori seguenti**.
   
 Per ulteriori informazioni su questi cmdlet, vedere [cmdlet del &amp; Centro sicurezza e conformità](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Connettersi al centro sicurezza &amp; e conformità tramite Remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connettersi al centro sicurezza e &amp; conformità tramite Remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Creare il criterio utilizzando `New-DlpCompliancePolicy`.
+2. Creare il criterio utilizzando `New-DlpCompliancePolicy` .
 
 Di seguito è riportato un esempio di PowerShell che consente di creare un criterio DLP che si applica a tutte le posizioni.
 
@@ -106,7 +106,7 @@ Di seguito è riportato un esempio di PowerShell che consente di creare un crite
 New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
 ```
 
-3. Creare le due regole `New-DlpComplianceRule`sopra descritte utilizzando, in cui una regola è per il valore **basso** e un'altra regola per i valori **alto** e **medio** . 
+3. Creare le due regole sopra descritte utilizzando `New-DlpComplianceRule` , in cui una regola è per il valore **basso** e un'altra regola per i valori **alto** e **medio** . 
     
     Di seguito è riportato un esempio di PowerShell che consente di creare queste due regole. Si noti che le coppie nome/valore della proprietà sono racchiuse tra virgolette e il nome di una proprietà può specificare più valori separati da virgole senza spazi, ad esempio`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
@@ -149,4 +149,4 @@ Per altre informazioni, vedere [Richiedere manualmente la ricerca per indicizzaz
     
 - [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Inventario di tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+- [Definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)

@@ -1,5 +1,5 @@
 ---
-title: Pianificare la gestione dei rischi Insider
+title: Piano per la gestione dei rischi Insider
 description: Informazioni su come pianificare l'utilizzo dei criteri di gestione dei rischi Insider nell'organizzazione.
 keywords: Microsoft 365, rischio Insider, gestione dei rischi, conformità
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2b2abd68d767f169ea8e20fc349e6314cc6400d5
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: ca15f26cf8eb19990c3252acf66ba50d52567e44
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043402"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327124"
 ---
-# <a name="plan-for-insider-risk-management"></a>Pianificare la gestione dei rischi Insider
+# <a name="plan-for-insider-risk-management"></a>Piano per la gestione dei rischi Insider
 
 Prima di iniziare a utilizzare la [gestione dei rischi Insider](insider-risk-management.md) nell'organizzazione, sono importanti le attività di pianificazione e le considerazioni che devono essere esaminate dai team di gestione della conformità e della tecnologia delle informazioni. La comprensione e la pianificazione approfondite per la distribuzione nelle aree seguenti consentiranno di garantire che l'implementazione e l'utilizzo delle funzionalità di gestione dei rischi Insider siano uniformi e siano allineate alle procedure consigliate per la soluzione.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: È possibile abilitare la funzionalità di ricerca del registro di controllo nel centro sicurezza & Compliance. Se si cambia idea, è possibile attivarlo in qualsiasi momento. Quando la ricerca del registro di controllo è disattivata, gli amministratori non possono eseguire ricerche nel log di controllo di Microsoft 365 per l'attività dell'utente e dell'amministratore nell'organizzazione.
-ms.openlocfilehash: 6b5ea41ff9f40291e54f8cc9f6660d0f86367994
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633421"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330790"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Abilitare o disabilitare la ricerca dei log di controllo
 
@@ -33,7 +33,7 @@ L'utente (o un altro amministratore) deve attivare la registrazione di controllo
 > [!IMPORTANT]
 > Se si disattiva la ricerca del registro di controllo in Microsoft 365, non è possibile utilizzare l'API di attività di gestione di Office 365 o la sentinella di Azure per accedere ai dati di controllo per l'organizzazione. La disattivazione della ricerca del registro di controllo seguendo i passaggi descritti in questo articolo indica che non verranno restituiti risultati quando si esegue una ricerca nel log di controllo utilizzando il Centro sicurezza & conformità o quando si utilizza il cmdlet **Search-UnifiedAuditLog** in Exchange Online PowerShell. Questo significa anche che i registri di controllo non saranno disponibili tramite l'API di attività di gestione di Office 365 o la sentinella di Azure.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - È necessario essere assegnati al ruolo registri di controllo in Exchange Online per abilitare o disabilitare la ricerca del registro di controllo nell'organizzazione Microsoft 365. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Gli amministratori globali di Microsoft 365 sono membri del gruppo di ruoli Gestione organizzazione in Exchange Online. 
     
@@ -48,22 +48,24 @@ L'utente (o un altro amministratore) deve attivare la registrazione di controllo
   
 ### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a>Utilizzare il Centro sicurezza & conformità per abilitare la ricerca nel registro di controllo
 
-1. Nel centro sicurezza & conformità, andare alla **ricerca del registro di controllo**della **ricerca** \> .
-    
+1. [Accedere al centro sicurezza & conformità](https://protection.office.com) e accedere.
+
+2. Nel centro sicurezza & conformità, andare alla ricerca del registro di controllo della **ricerca** \> **Audit log search**.
+
    Viene visualizzato un banner che indica che è necessario che il controllo sia attivato per registrare l'attività dell'utente e dell'amministratore.
 
-2. Fare clic **su Attiva controllo**.
-    
+3. Fare clic **su Attiva controllo**.
+
     ![Fare clic su Attiva controllo](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
     Il banner viene aggiornato per indicare che il registro di controllo è in fase di preparazione e che è possibile cercare l'attività dell'utente e dell'amministratore in poche ore.
-    
+
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Utilizzo di PowerShell per abilitare la ricerca nel registro di controllo
 
 1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. Eseguire il seguente comando di PowerShell per abilitare la ricerca del registro di controllo in Office 365.
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
@@ -75,15 +77,15 @@ L'utente (o un altro amministratore) deve attivare la registrazione di controllo
 Per disattivare la ricerca del registro di controllo, è necessario utilizzare Remote PowerShell connesso all'organizzazione di Exchange Online. Analogamente all'attivazione della ricerca del registro di controllo, è necessario assegnare il ruolo registri di controllo in Exchange Online per disattivare la ricerca del registro di controllo.
   
 1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. Eseguire il seguente comando di PowerShell per disattivare la ricerca del registro di controllo in Office 365.
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
 3. Dopo un po' di tempo, verificare che la ricerca del registro di controllo sia disattivata (disattivata). Questa operazione può essere eseguita in due modi:
-    
+
     - In PowerShell, eseguire il comando riportato di seguito:
 
     ```powershell
@@ -91,7 +93,7 @@ Per disattivare la ricerca del registro di controllo, è necessario utilizzare R
     ```
 
       Il valore della `False` proprietà _UnifiedAuditLogIngestionEnabled_ indica che la ricerca del registro di controllo è disattivata. 
-    
-    - Nel centro sicurezza & conformità, andare alla **ricerca del registro di controllo**della **ricerca** \> .
-    
+
+    - Nel [Centro sicurezza & conformità](https://protection.office.com), andare alla ricerca del registro di controllo della **ricerca** \> **Audit log search**.
+
       Viene visualizzato un banner che indica che è necessario che il controllo sia attivato per registrare l'attività dell'utente e dell'amministratore.
