@@ -19,91 +19,94 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Informazioni su come ripristinare un gruppo di Microsoft 365 eliminato.
-ms.openlocfilehash: 9d432d6ddb7e41b6560329b562c24f392a424412
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 123805750beff88904a8e3874f0d4d46a72e8f01
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140525"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327629"
 ---
-# <a name="restore-a-deleted-group"></a><span data-ttu-id="55fc2-103">Ripristinare un gruppo eliminato</span><span class="sxs-lookup"><span data-stu-id="55fc2-103">Restore a deleted Group</span></span>
+# <a name="restore-a-deleted-group"></a><span data-ttu-id="71da1-103">Ripristinare un gruppo eliminato</span><span class="sxs-lookup"><span data-stu-id="71da1-103">Restore a deleted Group</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="55fc2-104">L'interfaccia di amministrazione cambia.</span><span class="sxs-lookup"><span data-stu-id="55fc2-104">The admin center is changing.</span></span> <span data-ttu-id="55fc2-105">Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="55fc2-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="71da1-104">L'interfaccia di amministrazione sta cambiando.</span><span class="sxs-lookup"><span data-stu-id="71da1-104">The admin center is changing.</span></span> <span data-ttu-id="71da1-105">Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="71da1-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="55fc2-106">Se si è eliminato un gruppo, questo verrà mantenuto per 30 giorni per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="55fc2-106">If you've deleted a group, it will be retained for 30 days by default.</span></span> <span data-ttu-id="55fc2-107">Questo periodo di 30 giorni è considerato "soft-delete" perché è ancora possibile ripristinare il gruppo.</span><span class="sxs-lookup"><span data-stu-id="55fc2-107">This 30-day period is considered a "soft-delete" because you can still restore the group.</span></span> <span data-ttu-id="55fc2-108">Dopo 30 giorni, il gruppo e il relativo contenuto associato vengono eliminati definitivamente e non possono essere ripristinati.</span><span class="sxs-lookup"><span data-stu-id="55fc2-108">After 30 days, the group and its associated contents are permanently deleted and cannot be restored.</span></span>
+<span data-ttu-id="71da1-106">Se si è eliminato un gruppo, questo verrà mantenuto per 30 giorni per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="71da1-106">If you've deleted a group, it will be retained for 30 days by default.</span></span> <span data-ttu-id="71da1-107">Questo periodo di 30 giorni è considerato "soft-delete" perché è ancora possibile ripristinare il gruppo.</span><span class="sxs-lookup"><span data-stu-id="71da1-107">This 30-day period is considered a "soft-delete" because you can still restore the group.</span></span> <span data-ttu-id="71da1-108">Dopo 30 giorni, il gruppo e il relativo contenuto associato vengono eliminati definitivamente e non possono essere ripristinati.</span><span class="sxs-lookup"><span data-stu-id="71da1-108">After 30 days, the group and its associated contents are permanently deleted and cannot be restored.</span></span>
 
-<span data-ttu-id="55fc2-109">Quando si ripristina un gruppo, vengono ripristinati anche i contenuti seguenti:</span><span class="sxs-lookup"><span data-stu-id="55fc2-109">When a group is restored, the following content is restored:</span></span>
+<span data-ttu-id="71da1-109">Quando si ripristina un gruppo, vengono ripristinati anche i contenuti seguenti:</span><span class="sxs-lookup"><span data-stu-id="71da1-109">When a group is restored, the following content is restored:</span></span>
   
-- <span data-ttu-id="55fc2-110">Oggetto, proprietà e membri di Azure Active Directory (AD) Microsoft 365 groups.</span><span class="sxs-lookup"><span data-stu-id="55fc2-110">Azure Active Directory (AD) Microsoft 365 Groups object, properties, and members.</span></span>
+- <span data-ttu-id="71da1-110">Oggetto, proprietà e membri di Azure Active Directory (AD) Microsoft 365 groups.</span><span class="sxs-lookup"><span data-stu-id="71da1-110">Azure Active Directory (AD) Microsoft 365 Groups object, properties, and members.</span></span>
     
-- <span data-ttu-id="55fc2-111">Indirizzi di posta elettronica del gruppo.</span><span class="sxs-lookup"><span data-stu-id="55fc2-111">Group's e-mail addresses.</span></span>
+- <span data-ttu-id="71da1-111">Indirizzi di posta elettronica del gruppo.</span><span class="sxs-lookup"><span data-stu-id="71da1-111">Group's e-mail addresses.</span></span>
     
-- <span data-ttu-id="55fc2-112">Posta in arrivo condivisa e calendario di Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="55fc2-112">Exchange Online shared Inbox and calendar.</span></span>
+- <span data-ttu-id="71da1-112">Posta in arrivo condivisa e calendario di Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="71da1-112">Exchange Online shared Inbox and calendar.</span></span>
     
-- <span data-ttu-id="55fc2-113">Sito e file del team di SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="55fc2-113">SharePoint Online team site and files.</span></span>
+- <span data-ttu-id="71da1-113">Sito e file del team di SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="71da1-113">SharePoint Online team site and files.</span></span>
     
-- <span data-ttu-id="55fc2-114">Blocco appunti di OneNote</span><span class="sxs-lookup"><span data-stu-id="55fc2-114">OneNote notebook</span></span>
+- <span data-ttu-id="71da1-114">Blocco appunti di OneNote</span><span class="sxs-lookup"><span data-stu-id="71da1-114">OneNote notebook</span></span>
     
-- <span data-ttu-id="55fc2-115">Planner</span><span class="sxs-lookup"><span data-stu-id="55fc2-115">Planner</span></span>
+- <span data-ttu-id="71da1-115">Planner</span><span class="sxs-lookup"><span data-stu-id="71da1-115">Planner</span></span>
     
-- <span data-ttu-id="55fc2-116">Teams</span><span class="sxs-lookup"><span data-stu-id="55fc2-116">Teams</span></span>
+- <span data-ttu-id="71da1-116">Teams</span><span class="sxs-lookup"><span data-stu-id="71da1-116">Teams</span></span>
 
-- <span data-ttu-id="55fc2-117">Gruppo di Yammer e contenuto del gruppo (se il gruppo Microsoft 365 è stato creato da Yammer)</span><span class="sxs-lookup"><span data-stu-id="55fc2-117">Yammer group and group content (If the Microsoft 365 group was created from Yammer)</span></span>
+- <span data-ttu-id="71da1-117">Gruppo di Yammer e contenuto del gruppo (se il gruppo Microsoft 365 è stato creato da Yammer)</span><span class="sxs-lookup"><span data-stu-id="71da1-117">Yammer group and group content (If the Microsoft 365 group was created from Yammer)</span></span>
 
-## <a name="restore-a-group-that-you-own-by-using-outlook"></a><span data-ttu-id="55fc2-118">Ripristinare un gruppo personalizzato tramite Outlook</span><span class="sxs-lookup"><span data-stu-id="55fc2-118">Restore a group that you own by using Outlook</span></span>
+## <a name="restore-a-group-that-you-own-by-using-outlook"></a><span data-ttu-id="71da1-118">Ripristinare un gruppo personalizzato tramite Outlook</span><span class="sxs-lookup"><span data-stu-id="71da1-118">Restore a group that you own by using Outlook</span></span>
 
-<span data-ttu-id="55fc2-119">Se si è il proprietario di un gruppo di Microsoft 365, è possibile ripristinare il gruppo manualmente in Outlook attenendosi alla procedura seguente:</span><span class="sxs-lookup"><span data-stu-id="55fc2-119">If you are the owner of a Microsoft 365 group, you can restore the group yourself in Outlook by following these steps:</span></span>
+<span data-ttu-id="71da1-119">Se si è il proprietario di un gruppo di Microsoft 365, è possibile ripristinare il gruppo manualmente in Outlook attenendosi alla procedura seguente:</span><span class="sxs-lookup"><span data-stu-id="71da1-119">If you are the owner of a Microsoft 365 group, you can restore the group yourself in Outlook by following these steps:</span></span>
 
-1. <span data-ttu-id="55fc2-120">Nella [pagina Gruppi eliminati](https://outlook.office.com/people/group/deleted)selezionare l'opzione **Gestisci gruppi** nel nodo **gruppi** e quindi scegliere **eliminata**.</span><span class="sxs-lookup"><span data-stu-id="55fc2-120">On the [deleted groups page](https://outlook.office.com/people/group/deleted), select the **Manage groups** option under the **Groups** node, and then choose **Deleted**.</span></span>
+1. <span data-ttu-id="71da1-120">Nella [pagina Gruppi eliminati](https://outlook.office.com/people/group/deleted)selezionare l'opzione **Gestisci gruppi** nel nodo **gruppi** e quindi scegliere **eliminata**.</span><span class="sxs-lookup"><span data-stu-id="71da1-120">On the [deleted groups page](https://outlook.office.com/people/group/deleted), select the **Manage groups** option under the **Groups** node, and then choose **Deleted**.</span></span>
 
-2. <span data-ttu-id="55fc2-121">Fare clic sulla scheda **Ripristina** accanto al gruppo che si desidera ripristinare.</span><span class="sxs-lookup"><span data-stu-id="55fc2-121">Click on the **Restore** tab next to the group you want to restore.</span></span>
+2. <span data-ttu-id="71da1-121">Fare clic sulla scheda **Ripristina** accanto al gruppo che si desidera ripristinare.</span><span class="sxs-lookup"><span data-stu-id="71da1-121">Click on the **Restore** tab next to the group you want to restore.</span></span>
 
-<span data-ttu-id="55fc2-122">Se il gruppo eliminato non viene visualizzato, contattare un amministratore.</span><span class="sxs-lookup"><span data-stu-id="55fc2-122">If the deleted group doesn't appear here, contact an administrator.</span></span>
+<span data-ttu-id="71da1-122">Se il gruppo eliminato non viene visualizzato, contattare un amministratore.</span><span class="sxs-lookup"><span data-stu-id="71da1-122">If the deleted group doesn't appear here, contact an administrator.</span></span>
 
-## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a><span data-ttu-id="55fc2-123">Ripristinare un gruppo nell'interfaccia di amministrazione di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="55fc2-123">Restore a group in the Microsoft 365 admin center</span></span>
+## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a><span data-ttu-id="71da1-123">Ripristinare un gruppo nell'interfaccia di amministrazione di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="71da1-123">Restore a group in the Microsoft 365 admin center</span></span>
 
-<span data-ttu-id="55fc2-124">Se si è amministratori globali o amministratori di gruppi, è possibile ripristinare un gruppo eliminato nell'interfaccia di amministrazione di Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="55fc2-124">If you are a global administrator or a groups administrator, you can restore a deleted group in the Microsoft 365 admin center:</span></span>
+<span data-ttu-id="71da1-124">Se si è amministratori globali o amministratori di gruppi, è possibile ripristinare un gruppo eliminato nell'interfaccia di amministrazione di Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="71da1-124">If you are a global administrator or a groups administrator, you can restore a deleted group in the Microsoft 365 admin center:</span></span>
 
-1. <span data-ttu-id="55fc2-125">Accedere all'interfaccia di [Amministrazione](https://admin.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="55fc2-125">Go to the [admin center](https://admin.microsoft.com).</span></span>
-2. <span data-ttu-id="55fc2-126">Espandere **gruppi**e quindi fare clic su **gruppi eliminati**.</span><span class="sxs-lookup"><span data-stu-id="55fc2-126">Expand **Groups**, and then click **Deleted groups**.</span></span>
-3. <span data-ttu-id="55fc2-127">Selezionare il gruppo che si desidera ripristinare e quindi fare clic su **Ripristina gruppo**.</span><span class="sxs-lookup"><span data-stu-id="55fc2-127">Select the group that you want to restore, and then click **Restore group**.</span></span>
+1. <span data-ttu-id="71da1-125">Accedere all'interfaccia di [Amministrazione](https://admin.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="71da1-125">Go to the [admin center](https://admin.microsoft.com).</span></span>
+2. <span data-ttu-id="71da1-126">Espandere **gruppi**e quindi fare clic su **gruppi eliminati**.</span><span class="sxs-lookup"><span data-stu-id="71da1-126">Expand **Groups**, and then click **Deleted groups**.</span></span>
+3. <span data-ttu-id="71da1-127">Selezionare il gruppo che si desidera ripristinare e quindi fare clic su **Ripristina gruppo**.</span><span class="sxs-lookup"><span data-stu-id="71da1-127">Select the group that you want to restore, and then click **Restore group**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="71da1-128">In alcuni casi, può richiedere fino a 24 ore prima che il gruppo e tutti i relativi dati vengano ripristinati.</span><span class="sxs-lookup"><span data-stu-id="71da1-128">In some cases, it may take as long as 24 hours for the group and all of its data to be restored.</span></span> 
   
-## <a name="permanently-delete-a-microsoft-365-group"></a><span data-ttu-id="55fc2-128">Eliminare definitivamente un gruppo di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="55fc2-128">Permanently delete a Microsoft 365 group</span></span>
+## <a name="permanently-delete-a-microsoft-365-group"></a><span data-ttu-id="71da1-129">Eliminare definitivamente un gruppo di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="71da1-129">Permanently delete a Microsoft 365 group</span></span>
 
-<span data-ttu-id="55fc2-129">A volte è possibile che si desideri eliminare definitivamente un gruppo senza attendere la scadenza del periodo di cancellazione di 30 giorni.</span><span class="sxs-lookup"><span data-stu-id="55fc2-129">Sometimes you may want to permanently purge a group without waiting for the 30 day soft-deletion period to expire.</span></span> <span data-ttu-id="55fc2-130">A tale scopo, avviare PowerShell ed eseguire questo comando per ottenere l'ID oggetto del gruppo:</span><span class="sxs-lookup"><span data-stu-id="55fc2-130">To do that, start PowerShell and run this command to get the object ID of the group:</span></span>
+<span data-ttu-id="71da1-130">A volte è possibile che si desideri eliminare definitivamente un gruppo senza attendere la scadenza del periodo di cancellazione di 30 giorni.</span><span class="sxs-lookup"><span data-stu-id="71da1-130">Sometimes you may want to permanently purge a group without waiting for the 30 day soft-deletion period to expire.</span></span> <span data-ttu-id="71da1-131">A tale scopo, avviare PowerShell ed eseguire questo comando per ottenere l'ID oggetto del gruppo:</span><span class="sxs-lookup"><span data-stu-id="71da1-131">To do that, start PowerShell and run this command to get the object ID of the group:</span></span>
   
 ```
 Get-AzureADMSDeletedGroup
 ```
 
-<span data-ttu-id="55fc2-131">Prendere nota dell'ID oggetto del gruppo o dei gruppi che si desidera eliminare definitivamente.</span><span class="sxs-lookup"><span data-stu-id="55fc2-131">Take note of the object ID of the group, or groups, that you want to permanently delete.</span></span>
+<span data-ttu-id="71da1-132">Prendere nota dell'ID oggetto del gruppo o dei gruppi che si desidera eliminare definitivamente.</span><span class="sxs-lookup"><span data-stu-id="71da1-132">Take note of the object ID of the group, or groups, that you want to permanently delete.</span></span>
   
 > [!CAUTION]
-> <span data-ttu-id="55fc2-132">Il gruppo e i dati che contiene vengono eliminati in modo definitivo.</span><span class="sxs-lookup"><span data-stu-id="55fc2-132">Purging the group removes the group and its data forever.</span></span> 
+> <span data-ttu-id="71da1-133">Il gruppo e i dati che contiene vengono eliminati in modo definitivo.</span><span class="sxs-lookup"><span data-stu-id="71da1-133">Purging the group removes the group and its data forever.</span></span> 
   
-<span data-ttu-id="55fc2-133">Per eliminare il gruppo, eseguire questo comando in PowerShell:</span><span class="sxs-lookup"><span data-stu-id="55fc2-133">To purge the group run this command in PowerShell:</span></span>
+<span data-ttu-id="71da1-134">Per eliminare il gruppo, eseguire questo comando in PowerShell:</span><span class="sxs-lookup"><span data-stu-id="71da1-134">To purge the group run this command in PowerShell:</span></span>
   
 ```
 Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
-<span data-ttu-id="55fc2-p104">Per verificare che il gruppo sia stato eliminato correttamente, eseguire di nuovo il cmdlet  *Get-AzureADMSDeletedGroup*  per controllare che il gruppo non compaia più nell'elenco dei gruppi eliminati temporaneamente. In alcuni casi l'eliminazione definitiva del gruppo e di tutti i suoi dati può richiedere fino a 24 ore.</span><span class="sxs-lookup"><span data-stu-id="55fc2-p104">To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted.</span></span> 
+<span data-ttu-id="71da1-p104">Per verificare che il gruppo sia stato eliminato correttamente, eseguire di nuovo il cmdlet  *Get-AzureADMSDeletedGroup*  per controllare che il gruppo non compaia più nell'elenco dei gruppi eliminati temporaneamente. In alcuni casi l'eliminazione definitiva del gruppo e di tutti i suoi dati può richiedere fino a 24 ore.</span><span class="sxs-lookup"><span data-stu-id="71da1-p104">To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted.</span></span> 
   
-## <a name="got-questions-about-microsoft-365-groups"></a><span data-ttu-id="55fc2-136">Hai domande sui gruppi di Microsoft 365?</span><span class="sxs-lookup"><span data-stu-id="55fc2-136">Got questions about Microsoft 365 Groups?</span></span>
+## <a name="got-questions-about-microsoft-365-groups"></a><span data-ttu-id="71da1-137">Hai domande sui gruppi di Microsoft 365?</span><span class="sxs-lookup"><span data-stu-id="71da1-137">Got questions about Microsoft 365 Groups?</span></span>
 
-<span data-ttu-id="55fc2-137">Visitare la [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) per inviare domande e partecipare a conversazioni sui gruppi di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="55fc2-137">Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) to post questions and participate in conversations about Microsoft 365 groups.</span></span> 
+<span data-ttu-id="71da1-138">Visitare la [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) per inviare domande e partecipare a conversazioni sui gruppi di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="71da1-138">Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) to post questions and participate in conversations about Microsoft 365 groups.</span></span> 
   
-## <a name="related-articles"></a><span data-ttu-id="55fc2-138">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="55fc2-138">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="71da1-139">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="71da1-139">Related articles</span></span>
 
-[<span data-ttu-id="55fc2-139">Gestire i gruppi Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="55fc2-139">Manage Microsoft 365 Groups with PowerShell</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[<span data-ttu-id="71da1-140">Gestire i gruppi Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="71da1-140">Manage Microsoft 365 Groups with PowerShell</span></span>](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
   
-[<span data-ttu-id="55fc2-140">Eliminare gruppi usando il cmdlet Remove-UnifiedGroup</span><span class="sxs-lookup"><span data-stu-id="55fc2-140">Delete groups using the Remove-UnifiedGroup cmdlet</span></span>](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
+[<span data-ttu-id="71da1-141">Eliminare gruppi usando il cmdlet Remove-UnifiedGroup</span><span class="sxs-lookup"><span data-stu-id="71da1-141">Delete groups using the Remove-UnifiedGroup cmdlet</span></span>](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   
-[<span data-ttu-id="55fc2-141">Gestire le impostazioni del sito del team connesso al gruppo</span><span class="sxs-lookup"><span data-stu-id="55fc2-141">Manage your group-connected team site settings</span></span>](https://support.office.com/article/8376034d-d0c7-446e-9178-6ab51c58df42.aspx)
+[<span data-ttu-id="71da1-142">Gestire le impostazioni del sito del team connesso al gruppo</span><span class="sxs-lookup"><span data-stu-id="71da1-142">Manage your group-connected team site settings</span></span>](https://support.office.com/article/8376034d-d0c7-446e-9178-6ab51c58df42.aspx)
   
-[<span data-ttu-id="55fc2-142">Eliminare un gruppo in Outlook</span><span class="sxs-lookup"><span data-stu-id="55fc2-142">Delete a group in Outlook</span></span>](https://support.office.com/article/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f.aspx)
+[<span data-ttu-id="71da1-143">Eliminare un gruppo in Outlook</span><span class="sxs-lookup"><span data-stu-id="71da1-143">Delete a group in Outlook</span></span>](https://support.office.com/article/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f.aspx)
