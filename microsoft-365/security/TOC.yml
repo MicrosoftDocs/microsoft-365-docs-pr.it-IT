@@ -57,6 +57,8 @@
               href: mtp/portals.md
             - name: Risolvere i problemi
               href: ./mtp/troubleshoot.md
+            - name: Test di settore
+              href: ./mtp/top-scoring-industry-tests.md
         - name: Valutare le funzionalità
           items:
             - name: Informazioni generali sui laboratori di valutazione
@@ -282,6 +284,8 @@
                   items:
                     - name: Usare invio amministratore
                       href: ./office-365-security/admin-submission.md
+                    - name: Specificare una cassetta postale per gli invii degli utenti
+                      href: ./office-365-security/user-submission.md
                     - name: Abilitare il componente aggiuntivo Segnala messaggio
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Installazione e uso del componente aggiuntivo per la segnalazione della posta indesiderata
