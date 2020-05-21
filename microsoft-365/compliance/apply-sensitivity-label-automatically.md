@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 752a394b2e1c3d2219093f2342f597bdac38aee1
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952629"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280556"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -48,7 +48,7 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
 - **Etichettatura lato servizio quando il contenuto è già salvato (in SharePoint Online o OneDrive for Business) o inviato tramite posta elettronica (elaborato da Exchange Online)**: usare un criterio di applicazione automatica di etichette, attualmente in anteprima. 
     
     > [!NOTE]
-    > Vedere l'[annuncio dell'anteprima pubblica della classificazione automatica con etichette di riservatezza nei servizi Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
+    > Vedere il precedente [annuncio dell'anteprima pubblica della classificazione automatica con etichette di riservatezza nei servizi Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) e il webinar sull'[introduzione all'etichettatura automatica con etichette di riservatezza in SharePoint e OneDrive](https://aka.ms/SPOAutoLabelWebinar-Recording).
     
     Questo metodo è denominato classificazione automatica con etichette di riservatezza. Potrebbe essere indicato anche come applicazione automatica di etichette per i dati inattivi (documenti in SharePoint e OneDrive) e per i dati in transito (messaggi di posta elettronica inviati o ricevuti da Exchange). Per Exchange, non include i messaggi di posta elettronica inattivi (cassette postali). 
     
@@ -76,7 +76,7 @@ Nella tabella seguente sono riportate le differenze di comportamento tra i due m
 |:-----|:-----|:-----|:-----|
 |Dipendenza dall'app|[Sì](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
 |Limitazione in base alla posizione|No |Sì |
-|Condizioni: Classificatori sottoponibili a training|Sì (anteprima limitata) |No |
+|Condizioni: Classificatori sottoponibili a training|Sì |No |
 |Condizioni: Opzioni di condivisione e opzioni aggiuntive per la posta elettronica|No |Sì |
 |Consigli, suggerimento criteri e criteri ignorati dagli utenti|Sì |No |
 |Modalità di simulazione|No |Sì |
@@ -104,16 +104,12 @@ Per ulteriori informazioni sulle etichette padre e sulle sottoetichette, vedere 
 
 L'assegnazione automatica di etichette nelle app Office per Windows è supportata dal client di etichettatura unificata di Azure Information Protection. Per l'etichettatura predefinita nelle app Office, questa funzionalità è disponibile [in versione di anteprima per alcune app](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Le impostazioni di assegnazione automatica di etichette per le app Office sono disponibili quando si [crea o modifica un'etichetta di riservatezza](create-sensitivity-labels.md):
+Le impostazioni di applicazione automatica delle etichette per le app di Office sono disponibili quando si [crea o modifica un'etichetta di riservatezza](create-sensitivity-labels.md). È possibile scegliere di applicare automaticamente le etichette di riservatezza ai contenuti quando vengono rilevate informazioni sensibili. Scegliere da un elenco di tipi di informazioni sensibili o classificatori sottoponibili a training:
 
-![Opzioni di assegnazione automatica delle etichette di riservatezza](../media/sensitivity-labels-auto-labeling-options.png)
-
-È possibile scegliere di applicare automaticamente le etichette di riservatezza ai contenuti che includono specifici tipi di informazioni sensibili. Scegliere da un elenco di tipi di informazioni sensibili o classificatori:
-
-![Condizioni delle etichette per l'assegnazione automatica di etichette nelle app Office](../media/sensitivity-labels-conditions.png)
+![Condizioni delle etichette per l'applicazione automatica di etichette nelle app di Office](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> Attualmente, l'opzione per **Classificatori** è in anteprima limitata ed è necessario inviare un modulo a Microsoft per abilitare questa funzionalità per il tenant. Per ulteriori informazioni, vedere il post di blog [Annuncio dell'assegnazione automatica di etichette nelle app Office tramite i classificatori predefiniti - Anteprima limitata](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889).
+> L'opzione per i **Classificatori sottoponibili a training** è attualmente in distribuzione ai tenant in anteprima pubblica. Se non è disponibile, riprovare tra qualche giorno.
 
 Quando questa etichetta di riservatezza viene applicata automaticamente, l'utente riceve una notifica nella propria app Office. Ad esempio:
 
@@ -131,22 +127,25 @@ Inoltre, è possibile scegliere se una condizione deve rilevare tutti i tipi di 
 
 ![Opzioni per il numero di istanze e l'accuratezza della corrispondenza](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifiers-for-a-label"></a>Configurazione di classificatori per un'etichetta
+### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurazione di classificatori sottoponibili a training per un'etichetta
 
-Selezionando l'opzione **Classificatori**, scegliere uno o più classificatori predefiniti:
+Quando si seleziona l'opzione **Classificatori sottoponibili a training**, scegliere uno o più dei classificatori sottoponibili a training predefiniti di Microsoft. Se sono stati creati classificatori sottoponibili a training personalizzati, saranno anch'essi disponibili per la selezione:
 
-![Opzioni per i classificatori e le etichette di riservatezza](../media/sensitivity-labels-classifers.png)
+![Opzioni per i classificatori sottoponibili a training e le etichette di riservatezza](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non usare questo classificatore predefinito e, se è in uso, è consigliabile spostare i processi aziendali da esso. Usare invece i classificatori predefiniti per **molestie**, **volgarità** e **minacce**.
 
 Per ulteriori informazioni su questi classificatori, vedere [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md).
 
-Durante il periodo di anteprima, le app seguenti supportano i classificatori per le etichette di riservatezza:
+Durante il periodo di anteprima, le app seguenti supportano i classificatori sottoponibili a training per le etichette di riservatezza:
 
-- Applicazioni desktop per Windows di Microsoft 365 Apps for enterprise, da [Office Insider](https://office.com/insider):
+- Microsoft 365 Apps for enterprise (in precedenza Office 365 ProPlus) per Windows, da [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
 
-- Office per le app Web, se le [etichette di riservatezza sono abilitate per i file di Office in SharePoint e OneDrive (anteprima pubblica)](sensitivity-labels-sharepoint-onedrive-files.md):
+- Office per le app Web, se le [etichette di riservatezza sono abilitate per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     - Word
     - Excel
     - PowerPoint
@@ -176,7 +175,7 @@ Caratteristiche specifiche dell'etichettatura predefinita:
 
 - Per le etichette consigliate nelle versioni desktop di Word, il contenuto sensibile che ha generato il suggerimento viene contrassegnato in modo che gli utenti possano rivedere e rimuovere tale contenuto anziché applicare l'etichetta di riservatezza consigliata.
 
-- Per informazioni su come vengono applicate tali etichette nelle app di Office, screenshot di esempio e dettagli su come vengono rilevate le informazioni sensibili, vedere [Applicare automaticamente o consigliare l'applicazione di etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Per informazioni su come vengono applicate tali etichette nelle app di Office, screenshot di esempio e dettagli su come vengono rilevate le informazioni sensibili, vedere [Applicare automaticamente o consigliare l'applicazione di etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.office.com/it-IT/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Caratteristiche specifiche del client di etichettatura unificata di Azure Information Protection:
 
@@ -298,5 +297,5 @@ Per visualizzare i risultati del criterio di applicazione automatica di etichett
 - **Visualizzatore contenuto di Esplora contenuto** consente di vedere il contenuto del file.
 
 > [!TIP]
-> È anche possibile usare Esplora contenuto per identificare le posizioni in cui sono presenti documenti senza etichetta che contengono informazioni sensibili. Usando queste informazioni, è possibile aggiungere queste posizioni ai criteri di applicazione automatica di etichette e includere come regole i tipi di informazioni sensibili identificati.
+> È anche possibile usare Esplora contenuto per identificare le posizioni in cui sono presenti documenti con informazioni sensibili, ma senza etichetta. Usando queste informazioni, è possibile aggiungere queste posizioni ai criteri di applicazione automatica di etichette e includere come regole i tipi di informazioni sensibili identificati.
 

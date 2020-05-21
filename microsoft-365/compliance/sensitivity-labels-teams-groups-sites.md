@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: ff99489d933ee932c79fee8c655a46268eb8a6a4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 4bf640598b072064dcdec657b80182a58d430235
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022144"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327274"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)
 
@@ -40,7 +40,7 @@ Il contenuto di tali contenitori, tuttavia, non eredita le etichette per imposta
 
 ## <a name="about-the-public-preview-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Informazioni sull'anteprima pubblica per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
-Le etichette di riservatezza per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint sono in fase di implementazione graduale nei tenant e potrebbero essere modificate prima del rilascio finale. Questa anteprima pubblica non funziona con le reti per la distribuzione di contenuti (CDN) di Office 365.
+Le etichette di riservatezza per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint sono in anteprima e potrebbero essere modificate prima del rilascio finale. Questa anteprima pubblica non funziona con le reti per la distribuzione di contenuti (CDN) di Office 365.
 
 Prima di abilitare questa anteprima e configurare le etichette di riservatezza per le nuove impostazioni, gli utenti possono vedere e applicare tali etichette nelle loro app. Un esempio da Word:
 
@@ -79,17 +79,19 @@ Se serve aiuto per creare o modificare un'etichetta di riservatezza, seguire le 
 
 In questa nuova pagina **Impostazioni sito e gruppo**, configurare le impostazioni seguenti:
 
-- **Privacy dei siti dei team connessi a gruppi di Office 365**: l'impostazione predefinita **Nessuno: consente agli utenti di scegliere chi può accedere al sito** è in fase di distribuzione ai tenant. Mantenere questa impostazione predefinita quando si vuole proteggere il contenuto del contenitore usando l'etichetta di riservatezza, ma consentendo comunque agli utenti di configurare in autonomia le impostazioni di privacy.
+- **Privacy dei siti dei team connessi a gruppi di Office 365**: mantenere l'impostazione predefinita **Pubblico - qualsiasi utente dell'organizzazione può accedere al sito** se si vuole che chiunque nell'organizzazione possa accedere al sito del team o al gruppo in cui è applicata l'etichetta.
     
-    Selezionare **Pubblico** o **Privato** per impostare e bloccare l'impostazione della privacy quando si applica l'etichetta al contenitore. Scegliere **Pubblico** se si vuole che tutti gli utenti dell'organizzazione possano accedere al sito del team o al gruppo a cui è applicata l'etichetta oppure **Privato** se si vuole limitare l'accesso solo ai membri approvati nell'organizzazione. 
+    Selezionare **Privato** se si vuole limitare l'accesso solo ai membri approvati nell'organizzazione.
     
-    L'impostazione **Pubblico** o **Privato** sostituisce ogni precedente impostazione della privacy configurata per il team o il gruppo, bloccando il livello di privacy in modo che possa essere modificato solo rimuovendo prima l'etichetta di riservatezza dal contenitore. Dopo aver rimosso l'etichetta di riservatezza, viene mantenuto il livello di privacy impostato dall'etichetta, che ora potrà essere modificato, se necessario.
+    Selezionare **Nessuno: consente agli utenti di scegliere chi può accedere al sito** quando si vuole proteggere il contenuto del contenitore usando l'etichetta di riservatezza, ma consentendo comunque agli utenti di configurare in autonomia le impostazioni di privacy.
+    
+    Le impostazioni di **Pubblico** o **Privato** impostano e bloccano l'impostazione della privacy quando si applica l'etichetta al contenitore. L'impostazione scelta sostituisce ogni precedente impostazione della privacy configurata per il team o il gruppo, bloccando il livello di privacy in modo che possa essere modificato solo rimuovendo prima l'etichetta di riservatezza dal contenitore. Dopo aver rimosso l'etichetta di riservatezza, viene mantenuto il livello di privacy impostato dall'etichetta, che ora potrà essere modificato, se necessario.
 
 - **Accesso di utenti esterni**: controllare se il proprietario del gruppo può [aggiungere utenti guest al gruppo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
 - **Dispositivi non gestiti**: per i [dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices), è possibile consentire l'accesso completo, il solo accesso Web o il blocco totale. 
 
-![Scheda Impostazioni sito e gruppo](../media/edit-sensitivity-label-site-group.png)
+![Scheda Impostazioni sito e gruppo](../media/edit-sensitivity-label-site-group2.png)
 
 > [!IMPORTANT]
 > Quando si applica un'etichetta a un team, a un gruppo o a un sito, vengono applicate solo queste impostazioni a livello di sito e gruppo. Le altre impostazioni dell'etichetta, come la crittografia e il contrassegno di contenuti, non vengono applicate ai contenuto all'interno del team, del gruppo o del sito.
