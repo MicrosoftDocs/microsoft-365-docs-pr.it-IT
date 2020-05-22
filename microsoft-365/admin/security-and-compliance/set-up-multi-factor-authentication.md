@@ -20,77 +20,100 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: Informazioni su come utilizzare le impostazioni predefinite per la sicurezza per configurare l'autenticazione a più fattori per gli utenti.
+description: Informazioni su come configurare l'autenticazione a più fattori per l'organizzazione.
 monikerRange: o365-worldwide
-ms.openlocfilehash: c4ea6037b34d29f2d1e05e248e03e49ee6b06f56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 893a4ae535dfb781a4f77ee57c0ead40fda8454f
+ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262376"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44340775"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
   
-> [!IMPORTANT]
-> Se l'abbonamento o il processo è stato acquistato dopo il 21 ottobre 2019 e viene richiesto l'autenticazione a più fattori, le [impostazioni predefinite](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) per la sicurezza sono state abilitate automaticamente per l'abbonamento.
+In base alla comprensione dell' [autenticazione a più fattori e del relativo supporto in Microsoft 365](multi-factor-authentication-microsoft-365.md), è necessario configurarlo e distribuirlo all'organizzazione.
 
-Ogni nuova sottoscrizione Microsoft 365 avrà automaticamente le [impostazioni predefinite](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) per la sicurezza attivate. Questo significa che ogni utente dovrà configurare l'autenticazione a più fattori e installare l'app Microsoft Authenticator sul proprio dispositivo mobile. Per ulteriori informazioni, vedere [set up Mae for a Microsoft 365 account](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
+Prima di iniziare, determinare se queste condizioni speciali si applicano all'utente e intraprendere le azioni appropriate:
 
-I nove ruoli di amministratore seguenti dovranno eseguire delle autenticazioni aggiuntive ogni volta che eseguono l'accesso:
+- Se si dispone di client di Office 2013 nei dispositivi Windows, [abilitare l'autenticazione moderna](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
 
-- Amministratore globale
-- Amministratore di SharePoint
-- Amministratore di Exchange
-- Amministratore di accesso condizionale
-- Amministratore della sicurezza
-- Amministratore supporto tecnico o amministratore password:
-- Amministratore fatturazione
-- Amministratore utenti
-- Amministratore dell'autenticazione
+- Se si dispone di servizi directory di terze parti con Active Directory Federation Services (AD FS), configurare il server Azure Mae. Per ulteriori informazioni, vedere [scenari avanzati con autenticazione a più fattori di Azure e soluzioni VPN di terze parti](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) .
 
-Tutti gli altri utenti dovranno eseguire l'autenticazione aggiuntiva quando necessario.
+## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Passaggio 1: decidere il metodo per richiedere agli utenti di utilizzare il Master
 
-> [!NOTE]
-> È necessario essere un amministratore globale per impostare o modificare il Master <br><br>
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
+Esistono tre modi per richiedere agli utenti di utilizzare il servizio di autenticazione utente per gli accessi. Per i dettagli, vedere [supporto di AMF in Microsoft 365](multi-factor-authentication-microsoft-365.md) .
 
-Se in precedenza è stata configurata l'autenticazione con criteri di base, è necessario disattivarla [per abilitare le impostazioni predefinite per la sicurezza](#move-from-baseline-policies-to-security-defaults). Tuttavia, se si dispone di Microsoft 365 business o l'abbonamento include [Azure Active Directory Premium P1 o Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/), è anche possibile configurare i criteri di [accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) . Per utilizzare i criteri di accesso condizionale, è necessario verificare che le impostazioni predefinite per la sicurezza siano disabilitate e che [l'autenticazione moderna](#enable-modern-authentication-for-your-organization) sia abilitata.
+- Impostazioni predefinite per la sicurezza (consigliata per le aziende di piccole dimensioni)
 
-> [!TIP]
-> Per spiegare agli utenti come configurare l'app Microsoft Authenticator, vedere [utilizzare Microsoft Authenticator con Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411).
+  Se si è acquistato l'abbonamento o la versione di valutazione dopo il 21 ottobre 2019 e si è inaspettatamente richiesto l'AMF, le [impostazioni predefinite](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) per la sicurezza sono state abilitate automaticamente per l'abbonamento.
+  
+  Ogni nuova sottoscrizione Microsoft 365 avrà automaticamente le impostazioni predefinite per la sicurezza attivate. Questo significa che ogni utente dovrà configurare il master e installare l'app Microsoft Authenticator sul proprio dispositivo mobile.
 
-## <a name="manage-security-defaults"></a>Gestire le impostazioni predefinite per la sicurezza.
+  Tutti gli utenti devono utilizzare l'app Microsoft Authenticator come metodo di verifica aggiuntivo e l'autenticazione legacy è bloccata. 
 
-1. Accedere al [portale di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=834822) con le credenziali di amministratore globale.
-2. Passare alla [pagina Azure Active Directory-Properties](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-3. Nella parte inferiore della pagina scegliere **Gestire le impostazioni predefinite per la sicurezza**.
-4. Scegliere **Sì** per abilitare le impostazioni predefinite per la sicurezza e **No** per disabilitare le impostazioni predefinite per la sicurezza e quindi scegliere **Salva**.
+- Criteri di accesso condizionale (consigliato per le aziende)
 
-## <a name="move-from-baseline-policies-to-security-defaults"></a>Passare dai criteri di base alle impostazioni predefinite per la sicurezza
+  Gli utenti scelgono il metodo di verifica aggiuntivo durante la registrazione dell'AMF.
 
-1. Passare alla [pagina Criteri di accesso condizionale](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
-2. Scegliere tutti i criteri di base che **sono attivi** e impostare **Attiva criterio** su **disattivato**.
-3. Passare alla [pagina Azure Active Directory-Properties](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-4. Nella parte inferiore della pagina fare clic su **Gestisci impostazioni predefinite di sicurezza**e, nel riquadro **Attiva impostazioni di sicurezza** , impostare **Consenti impostazioni predefinite di sicurezza** su **Sì**e quindi scegliere **Salva**. 
+- Account per utente (non consigliato)
 
-## <a name="enable-modern-authentication-for-your-organization"></a>Abilitare l'autenticazione moderna per l'organizzazione
+  Gli utenti scelgono il metodo di verifica aggiuntivo durante la registrazione dell'AMF.
 
-Tutte le applicazioni client di Office 2016 supportano MFA con ADAL (Active Directory Authentication Library). Questo significa che le password dell'app non sono necessarie per i client di Office 2016. Per ulteriori informazioni, vedere [questo articolo](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) .
+## <a name="step-2-test-mfa-on-your-pilot-users"></a>Passaggio 2. Test dell'AMF per gli utenti pilota
 
-Tuttavia, è necessario assicurarsi che la sottoscrizione Microsoft 365 sia abilitata per l'autenticazione di ADAL o moderna.
+Se si utilizzano criteri di accesso condizionale o AMF per utente (scelta non consigliata), selezionare gli utenti pilota nell'azienda o nell'organizzazione per testare la registrazione e gli accessi dell'AMF. Per esempio:
 
-1. Per abilitare l'autenticazione moderna, nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=834822)selezionare **Impostazioni** \> **organizzazione organizzativa** e quindi nella scheda **Servizi** scegliere **autenticazione moderna** dall'elenco.
+- Per i criteri di accesso condizionale, creare un gruppo di utenti pilota e un criterio che richiede l'AMF per i membri del gruppo e per tutte le app. Aggiungere quindi gli account dell'utente pilota al gruppo.
 
-2. Selezionare la casella **Attiva autenticazione moderna (scelta consigliata)** nel pannello **autenticazione moderna** e quindi fare clic su **Salva modifiche**. 
+- Per l'autenticazione a livello di utente, abilitare l'AMF per gli account utente degli utenti pilota una volta.
 
-    ![Pannello Autenticazione moderna con casella di controllo Abilita selezionata.](../../media/enablemodernauth.png)
-    
-> [!IMPORTANT]
-> A agosto del 2017, tutte le nuove sottoscrizioni di Microsoft 365 che includono Skype for business online ed Exchange Online hanno l'autenticazione moderna abilitata per impostazione predefinita. Per controllare lo stato di autenticazione moderna di Skype for Business Online, è possibile usare PowerShell per Skype for Business Online con credenziali di amministratore globale. Eseguire Get-CsOAuthConfiguration per controllare l'output di -ClientADALAuthOverride. Se -ClientADALAuthOverride è "Allowed" (Consentito), l'autenticazione moderna è attiva.
-Per controllare lo stato di autenticazione moderna per Exchange Online, vedere [Abilitare l'autenticazione moderna in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
+Collaborare con gli utenti pilota per risolvere i problemi e le domande da preparare per una distribuzione uniforme all'organizzazione.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>Passaggio 3: Informare l'organizzazione dell'arrivo dell'AMF
 
-[Top 10 modi per proteggere i piani Microsoft 365 for business](secure-your-business-data.md)
+Utilizzare le notifiche di posta elettronica, i poster dei corridoi, le riunioni del team o la formazione formale per garantire che i dipendenti comprendano:
 
-[Abilitare l'autenticazione moderna per Office 2013 nei dispositivi Windows](enable-modern-authentication.md)
+- Perché è necessario disporre dell'AMF per gli accessi
+- [Come effettuare la registrazione per il metodo di verifica aggiuntivo](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
+- [Come effettuare l'accesso dopo la registrazione](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
+- [Come modificare il metodo di verifica aggiuntivo](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
+- [Come gestire situazioni come un nuovo smartphone](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+
+Soprattutto, assicurarsi che i dipendenti comprendano ***quando il requisito dell'AMF verrà imposto in*** modo che non li sorprenda.
+
+## <a name="step-4-roll-out-the-mfa-requirement-to-your-organization-or-users"></a>Passaggio 4. Implementazione del requisito AMF per l'organizzazione o gli utenti
+
+In base al metodo di requisiti di AMF prescelto, distribuire l'autenticazione dell'AMF ai dipendenti oltre i tester pilota.
+
+### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
+
+È possibile abilitare o disabilitare le impostazioni predefinite di sicurezza dal riquadro delle **Proprietà** di Azure Active Directory (Azure ad) nel portale di Azure.
+
+1.  Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) con le credenziali di amministratore globale.
+2.  Passare alla [pagina Azure Active Directory-Properties](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+3.  Nella parte inferiore della pagina scegliere **Gestire le impostazioni predefinite per la sicurezza**.
+4.  Scegliere **Sì** per abilitare le impostazioni predefinite per la sicurezza e **No** per disabilitare le impostazioni predefinite per la sicurezza e quindi scegliere **Salva**.
+
+Se sono stati utilizzati i [criteri di accesso condizionale di base](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection), ecco come passare a utilizzo delle impostazioni predefinite di sicurezza.
+
+1.  Passare alla [pagina Criteri di accesso condizionale](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
+2.  Scegliere tutti i criteri di base che **sono attivi** e impostare **Attiva criterio** su **disattivato**.
+2.  Passare alla [pagina Azure Active Directory-Properties](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+4.  Nella parte inferiore della pagina scegliere **Gestire le impostazioni predefinite per la sicurezza**.
+5.  Scegliere **Sì** per abilitare le impostazioni predefinite per la sicurezza e **No** per disabilitare le impostazioni predefinite per la sicurezza e quindi scegliere **Salva**.
+
+### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
+
+Creare, configurare o abilitare i criteri corretti che includono il gruppo di utenti che richiedono l'autenticazione a più fattori per l'accesso.
+
+### <a name="per-user-mfa-not-recommended"></a>AMF per utente (non consigliata)
+
+Abilitare gli account utente per l'AMF corrispondente all'implementazione.
+
+### <a name="supporting-your-employees"></a>Supporto dei dipendenti
+
+Quando i dipendenti si iscrivono e iniziano a eseguire l'accesso con l'AMF, assicurarsi che gli specialisti IT, il reparto IT o il supporto tecnico possano rispondere rapidamente a domande e risolvere i problemi.
+
+Vedere questo articolo per [informazioni sulla risoluzione dei problemi relativi agli accessi dell'AMF](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2). 
+
+

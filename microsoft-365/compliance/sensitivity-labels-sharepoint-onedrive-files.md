@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
-ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
+ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44170915"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342508"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -106,7 +106,7 @@ Questa opzione è il modo più semplice per abilitare le etichette di riservatez
 
 L'amministratore globale dell'organizzazione dispone delle autorizzazioni complete per creare e gestire tutti gli aspetti delle etichette di riservatezza. Se non si esegue l'accesso come amministratore globale, vedere le [autorizzazioni necessarie per creare e gestire etichette di riservatezza](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
 
-1. Accedere al [centro conformità Microsoft 365](https://compliance.microsoft.com/)e passare a **soluzioni** > **Information Protection**
+1. Accedere al [centro conformità Microsoft 365](https://compliance.microsoft.com/)e passare a **soluzioni**  >  **Information Protection**
     
     Se questa opzione non è immediatamente visibile, selezionare prima **Mostra tutto**. 
 
@@ -117,13 +117,13 @@ L'amministratore globale dell'organizzazione dispone delle autorizzazioni comple
     Il comando viene eseguito immediatamente e quando la pagina viene aggiornata successivamente, non viene più visualizzato il messaggio o il pulsante. 
 
 > [!NOTE]
-> Se si dispone di Office 365 multi-Geo, è necessario utilizzare PowerShell per abilitare queste funzionalità per tutte le geoposizioni geografiche. Per informazioni dettagliate, vedere la sezione successiva.
+> Se si dispone di Microsoft 365 multi-Geo, è necessario utilizzare PowerShell per abilitare queste funzionalità per tutte le posizioni geografiche. Per informazioni dettagliate, vedere la sezione successiva.
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Utilizzo di PowerShell per abilitare il supporto per le etichette di riservatezza
 
 In alternativa all'utilizzo del centro conformità, è possibile abilitare il supporto per le etichette di riservatezza utilizzando il cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) di PowerShell di SharePoint Online. 
 
-Se si dispone di Office 365 multi-Geo, è necessario utilizzare PowerShell per abilitare il supporto per tutte le geoposizioni geografiche.
+Se si dispone di Microsoft 365 multi-Geo, è necessario utilizzare PowerShell per abilitare il supporto per tutte le geoposizioni geografiche.
 
 #### <a name="prepare-the-sharepoint-online-management-shell"></a>Preparare la shell di gestione di SharePoint Online
 
@@ -149,16 +149,16 @@ Prima di eseguire il comando di PowerShell per abilitare le etichette di riserva
 
 Per abilitare le nuove funzionalità, utilizzare il cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) con il parametro *EnableAIPIntegration* :
 
-1. Utilizzo di un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale o di amministrazione di SharePoint in Office 365, connettersi a SharePoint. Per informazioni in merito, vedere [Guida introduttiva a SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Utilizzo di un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale o di amministrazione di SharePoint in Microsoft 365, connettersi a SharePoint. Per informazioni in merito, vedere [Guida introduttiva a SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Nota: se si dispone di Office 365 multi-Geo, utilizzare il parametro-URL con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)e specificare l'URL del sito dell'interfaccia di amministrazione di SharePoint Online per una delle geoposizioni geografiche.
+    Nota: se si dispone di Microsoft 365 multi-Geo, utilizzare il parametro-URL con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)e specificare l'URL del sito dell'interfaccia di amministrazione di SharePoint Online per una delle geoposizioni geografiche.
 
 2. Eseguire il seguente comando e premere **Y** per confermare:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
-3. Per Office 365 multi-geo: ripetere i passaggi 1 e 2 per ogni posizione geografica rimanente.
+3. Per Microsoft 365 multi-geo: ripetere i passaggi 1 e 2 per ogni posizione geografica rimanente.
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Pianificare l'implementazione dopo la creazione o la modifica di un'etichetta di riservatezza
 
@@ -182,7 +182,7 @@ Per disabilitare queste nuove funzionalità, è necessario utilizzare PowerShell
 Set-SPOTenant -EnableAIPIntegration $false
 ```
 
-Se si dispone di Office 365 multi-Geo, è necessario eseguire questo comando per ogni posizione geografica.
+Se si dispone di Microsoft 365 multi-Geo, è necessario eseguire questo comando per ogni posizione geografica.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

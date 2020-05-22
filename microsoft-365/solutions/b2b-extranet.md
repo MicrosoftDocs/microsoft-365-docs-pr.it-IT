@@ -14,12 +14,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come creare un sito Extranet o un team B2B con gli utenti Guest gestiti provenienti da un'organizzazione partner.
-ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: f01a558d55f497952494676f0148a1e3e4f06b35
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166150"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342523"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Creare una Extranet B2B con guest gestiti.
 
@@ -30,6 +30,12 @@ Con questo metodo di condivisione delle risorse per la collaborazione, l'organiz
 In questo articolo vengono illustrati i passaggi per creare un pacchetto di risorse (in questo caso, un sito o un team) che è possibile condividere con un'organizzazione partner tramite un modello di registrazione di accesso self-service. 
 
 Prima di iniziare, creare il sito o il team che si desidera condividere con l'organizzazione partner e abilitarlo per la condivisione degli ospiti. Per ulteriori informazioni, vedere [collaborare con gli utenti di un sito](collaborate-in-site.md) o [collaborare con gli ospiti di un team](collaborate-as-team.md) . È inoltre consigliabile esaminare [creare un ambiente di condivisione Guest sicuro](create-secure-guest-sharing-environment.md) per informazioni sulle funzionalità di sicurezza e conformità che è possibile utilizzare per gestire i criteri di governance durante la collaborazione con gli utenti.
+
+## <a name="video-demonstration"></a>Dimostrazione video
+
+In questo video vengono illustrate le procedure descritte in questo articolo.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
 ## <a name="connect-the-partner-organization"></a>Connettere l'organizzazione partner
 

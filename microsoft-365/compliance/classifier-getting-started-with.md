@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
+ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327758"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339914"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -33,10 +33,10 @@ Questo metodo richiede il giudizio umano e l'azione. Un amministratore può util
 
 Questa categoria di meccanismi di classificazione include la ricerca di contenuto per:
 
-- Parole chiave o valori di metadati (parola chiave Query Language)
-- utilizzo di modelli di informazioni riservate in precedenza identificati come la sicurezza sociale, la carta di credito o il conto corrente bancario [(definizioni di entità tipo di informazioni riservate)](sensitive-information-type-entity-definitions.md)
-- Riconoscere un elemento perché è una variante su un modello [(stampa su un dito del documento)](document-fingerprinting.md)
-- utilizzo della presenza di stringhe esatte [(corrispondenza esatta dei dati)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- Parole chiave o valori di metadati (linguaggio di query con parole chiave).
+- Utilizzo di modelli di informazioni riservate in precedenza identificati come la sicurezza sociale, la carta di credito o il conto corrente bancario [(definizioni di entità tipo di informazioni riservate)](sensitive-information-type-entity-definitions.md).
+- Riconoscere un elemento perché è una variante su un modello [(stampa su un dito del documento)](document-fingerprinting.md).
+- Utilizzo della presenza di stringhe esatte [(corrispondenza esatta dei dati)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 È quindi possibile applicare automaticamente le etichette di riservatezza e conservazione per rendere il contenuto disponibile per l'utilizzo in [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md) e nei [criteri di conservazione](retention-policies.md).
 
@@ -44,8 +44,10 @@ Questa categoria di meccanismi di classificazione include la ricerca di contenut
 
 Questo metodo di classificazione è particolarmente adatto ai contenuti che non sono facilmente identificabili tramite i metodi di corrispondenza dei modelli manuale o automatico. Questo metodo di classificazione è più relativo all'addestramento di un classificatore per identificare un elemento in base a ciò che l'elemento è, non per elementi che si trovano nell'elemento (pattern matching). Un classificatore apprende come identificare un tipo di contenuto esaminando centinaia di esempi del contenuto che si desidera classificare. Si inizia con l'alimentazione di esempi che sono definitivamente nella categoria. Dopo averli elaborati, è possibile testarli conferendogli una combinazione di esempi di corrispondenza e non corrispondenti. Il classificatore effettua quindi stime per determinare se un determinato elemento rientra nella categoria che si sta creando. Sono quindi convalidati i risultati, vengono ordinati gli aspetti positivi, negativi, falsi positivi e falsi negativi per aumentare l'accuratezza delle stime. Quando si pubblica il classificatore addestrato, l'ordinamento viene ordinato tramite gli elementi in posizioni come SharePoint Online, Exchange e OneDrive e classifica il contenuto.
 
-> [!IMPORTANT]
-> Sia i classificatori incorporati che i classificatori addestrati sono disponibili come condizione per [l'applicazione automatica dei criteri delle etichette di conservazione in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions) e alla [conformità della comunicazione](communication-compliance.md). Le etichette di riservatezza possono utilizzare solo classificatori incorporati come condizione, vedere [applicazione automatica di un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md).
+### <a name="where-you-can-use-trainable-classifiers"></a>Dove è possibile utilizzare i classificatori addestrabili
+Sia i classificatori incorporati che i classificatori addestrati sono disponibili come condizione per [l'applicazione automatica dei criteri delle etichette di conservazione in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions) e alla [conformità della comunicazione](communication-compliance-configure.md). 
+
+Le etichette di riservatezza possono utilizzare classificatori incorporati e Build-your-own come condizioni, vedere [applicare un'etichetta di riservatezza al contenuto automaticamente e l'](apply-sensitivity-label-automatically.md) [etichetta automatica per le app di Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
 
 > [!IMPORTANT]
 > I classificatori addestrabili funzionano solo con elementi che non sono crittografati e sono in lingua inglese.
@@ -53,6 +55,18 @@ Questo metodo di classificazione è particolarmente adatto ai contenuti che non 
 ### <a name="licensing-requirements"></a>Requisiti per la licenza
 
 I classificatori addestrabili sono una funzionalità di conformità di Microsoft 365 E5 o E5. È necessario disporre di uno di questi abbonamenti per utilizzarli.
+
+### <a name="pre-requisites"></a>Prerequisiti
+
+Per accedere ai classificatori addestrabili nell'interfaccia utente: 
+- l'amministratore globale deve optare per il tenant
+- Il ruolo di amministratore conformità o il responsabile dei dati di conformità è necessario per formare un classificatore
+
+Sono necessari account con queste autorizzazioni per l'utilizzo di classificatori addestrabili in questi scenari:
+
+- Scenario dei criteri per l'etichetta di conservazione: ruoli di gestione di RecordManagement e conservazione 
+- Scenario di criteri per le etichette di riservatezza: amministratore della sicurezza, amministratore conformità, amministratore dei dati di conformità
+- Scenario di criteri di conformità della comunicazione: amministratore di gestione dei rischi Insider, Responsabile Revisione di supervisione 
 
 ## <a name="types-of-classifiers"></a>Tipi di classificatori
 
@@ -66,7 +80,7 @@ Esistono classificatori incorporati e classificatori addestrabili. Ottenere un c
 Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 
 > [!CAUTION]
-> Il classificatore incorporato del **linguaggio offensivo** è obsoleto perché produce un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece i classificatori incorporati per la **minaccia**, la **profanità**e la **molestia** .
+> Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece i classificatori incorporati per la **minaccia**, la **profanità**e la **molestia** .
 
 - **Resumes**: rileva gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale
 - **Codice sorgente**: consente di rilevare gli elementi che contengono una serie di istruzioni e istruzioni scritte nella Top 25 linguaggi di programmazione utilizzati su GitHub
@@ -114,10 +128,11 @@ La creazione e la pubblicazione di un classificatore addestrabile per l'utilizzo
 
 ## <a name="see-also"></a>Vedere anche
 
+
 - [Etichette di conservazione](labels.md)
 - [Criteri di conservazione](retention-policies.md)
 - [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 - [Etichette di riservatezza](sensitivity-labels.md)
-- [Definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
+- [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
 - [Stampa di impronte digitali del documento](document-fingerprinting.md)
 - [Corrispondenza esatta dei dati](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
