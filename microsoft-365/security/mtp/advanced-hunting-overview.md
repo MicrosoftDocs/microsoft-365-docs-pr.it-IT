@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4b5d58a006591da23d37aaeccf72cfccc6d1c43
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3e8f83b943e83c37ecf13af1221c043d413bd6b5
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033975"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347832"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Cercare in modo proattivo minacce con la ricerca avanzata di Microsoft Threat Protection
 
@@ -51,11 +51,19 @@ Nel centro sicurezza Microsoft 365, Advanced Hunting supporta le query che esami
 | **Ottimizzare le query** | Informazioni su come creare query efficienti e query che combinino dati da email e dispositivi. | - [Procedure consigliate per le query](advanced-hunting-shared-queries.md) <br>- [Cercare tra i dispositivi e i messaggi di posta elettronica](advanced-hunting-best-practices.md) |
 | **Creare regole di rilevamento personalizzate** | Informazioni su come è possibile utilizzare le query di ricerca avanzate per attivare gli avvisi e applicare automaticamente le azioni di risposta. | - [Panoramica sui rilevamenti personalizzati](custom-detections-overview.md)<br>- [Regole di rilevamento personalizzate](custom-detection-rules.md) |
 
+## <a name="get-access"></a>Ottenere l'accesso
+Per utilizzare la ricerca avanzata o altre funzionalità di [protezione dalle minacce di Microsoft](microsoft-threat-protection.md) , è necessario essere assegnati a un ruolo appropriato in Azure ad. Si noti che l'accesso ai dati dell'endpoint è influenzato dalle impostazioni del controllo di accesso basato sui ruoli in Microsoft Defender ATP. [Informazioni sulla gestione dell'accesso a Microsoft Threat Protection](mtp-permissions.md)
+
+## <a name="get-help-as-you-write-queries"></a>Ottenere assistenza nella scrittura delle query
+Trarre vantaggio dalle seguenti funzionalità per scrivere query più velocemente:
+- **AutoSuggest** : durante la scrittura di query, la ricerca avanzata fornisce suggerimenti da IntelliSense. 
+- **Riferimento di schema** — accanto all’area di lavoro è disponibile il riferimento a uno schema che include l'elenco di tabelle e le relative colonne. Per altre informazioni, passare il puntatore su un elemento. Fare doppio clic su un elemento per inserirlo nell'editor di query.
+
 ## <a name="related-topics"></a>Argomenti correlati
 - [Apprendere il linguaggio delle query](advanced-hunting-query-language.md)
 - [Usare i risultati delle query](advanced-hunting-query-results.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
-- [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)
+- [Ricerca delle minacce attraverso dispositivi ed email](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
-- [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)
+- [Applicazione delle procedure consigliate per le query](advanced-hunting-best-practices.md)
 - [Panoramica dei rilevamenti personalizzati](custom-detections-overview.md)

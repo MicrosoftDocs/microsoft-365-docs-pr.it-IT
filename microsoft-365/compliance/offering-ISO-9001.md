@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 3f733f3baf0db4d01a78e7984f44b17a5d5584e7
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214304"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254309"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 Quality Management Systems Standards
 
@@ -31,23 +31,27 @@ ISO 9001:2015 è uno standard internazionale che stabilisce i criteri per un sis
 
 Una società di revisione indipendente di terze parti ha eseguito un esame rigoroso di Microsoft Azure e di diversi servizi online Microsoft per verificarne il rispetto dei principi di gestione della qualità stabiliti dalla norma ISO 9001:2015. La certificazione di terze parti disponibile fornisce una conferma indipendente che Azure e i servizi online Microsoft soddisfano i requisiti ISO 9001:2015.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
-- [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomica
-- Graph
+- [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government e Dynamics 365 Germany
+- Microsoft Graph
 - Intune
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Healthcare Bot
 - Microsoft Managed Desktop
-- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
+- Servizio cloud Power Automate (in precedenza Microsoft Flow), autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
+- Power BI Embedded
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
-- [Report di valutazione FY19 ISO 9001 di Microsoft Azure](https://go.microsoft.com/fwlink/p/?linkid=2077661)
-- [Certificato FY19 ISO 9001 di Microsoft Azure](https://go.microsoft.com/fwlink/p/?linkid=2077747)
-- [Vedere gli altri report di controllo](https://aka.ms/auditreports)
+- [Azure, Dynamics 365 e Online Services: Certificazione ISO9001](https://aka.ms/azureiso9001cert)
+- [Azure, Dynamics 365 e Online Services: Report di valutazione ISO9001](https://aka.ms/azureiso9001report)
+- [Azure, Dynamics 365 e Online Services: Dichiarazione di applicabilità (SOA) ISO9001](https://aka.ms/azureiso9001soa)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -69,7 +73,7 @@ Sì. La valutazione annuale ISO 9001:2015 include il infrastruttura fisica sotto
 
 ## <a name="resources"></a>Risorse
 
-- [ISO 9001:2015 gestione della qualità](https://www.iso.org/iso-9001-quality-management.html)
+- [ISO 9001:2015 - Gestione della qualità](https://www.iso.org/iso-9001-quality-management.html)
 - [ISO 9001:2015 standard](https://www.iso.org/standard/62085.html) (requisiti per l'acquisto)
 - [ISO 9000:2015](https://www.iso.org/standard/45481.html) (concetti fondamentali e lessico per l'acquisto)
 - [Condizioni dei servizi online di Microsoft](https://aka.ms/Online-Services-Terms)

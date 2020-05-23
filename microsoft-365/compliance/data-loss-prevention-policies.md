@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
-ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 705c105853a67d4bb006efbfd0f3d6150f5e7181
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630603"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327704"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -289,7 +289,7 @@ In genere le azioni meno restrittive, come l'invio di notifiche all'utente, veng
   
 ### <a name="match-accuracy"></a>Accuratezza della corrispondenza
 
-Come illustrato in precedenza, ogni tipo di informazione riservata viene definito e rilevato usando una combinazione di tipi di prove. In genere, un tipo di informazioni riservate è definito da più combinazioni, dette criteri. Uno schema che richiede meno prove ha un'accuratezza della corrispondenza (o livello di probabilità) inferiore, che è invece maggiore per uno schema che richiede più prove. Per altre informazioni sugli schemi e sui livelli di probabilità usati da ogni tipo di informazioni riservate, vedere [Elementi cercati dai tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md).
+Come illustrato in precedenza, ogni tipo di informazione riservata viene definito e rilevato usando una combinazione di tipi di prove. In genere, un tipo di informazioni riservate è definito da più combinazioni, dette criteri. Uno schema che richiede meno prove ha un'accuratezza della corrispondenza (o livello di probabilità) inferiore, che è invece maggiore per uno schema che richiede più prove. Per altre informazioni sugli schemi e sui livelli di probabilità usati da ogni tipo di informazioni sensibili, vedere [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md).
   
 Ad esempio, il tipo di informazioni riservate denominato Numero carta di credito è definito da due schemi:
   
@@ -332,7 +332,7 @@ Per questi motivi, le indicazioni per la creazione di regole con diverse accurat
 Quando si usa un'[etichetta di conservazione](labels.md) creata e pubblicata in precedenza come condizione nei criteri di prevenzione della perdita dei dati (DLP), è necessario tenere presente che:
 
 - È necessario aver precedentemente creato, pubblicato e applicato l'etichetta di conservazione prima di usarla come condizione nei criteri DLP.
-- Le etichette di conservazione possono richiedere fino a un giorno per la sincronizzazione e fino a sette giorni per l'applicazione automatica dopo essere state create e pubblicate. Per informazioni dettagliate, vedere [Tempo necessario per l'applicazione delle etichette di conservazione](labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
+- Le etichette di conservazione possono richiedere fino a un giorno per la sincronizzazione e fino a sette giorni per l'applicazione automatica dopo essere state create e pubblicate. Per informazioni dettagliate, vedere [Tempo necessario per l'applicazione delle etichette di conservazione](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
 - L'uso di un'etichetta di conservazione in un criterio ***è supportato solo per gli elementi di SharePoint Online e OneDrive for Business***.
 
 
@@ -504,9 +504,13 @@ I membri del team conformità addetti alla creazione dei criteri di prevenzione 
 1. Creare un gruppo in Microsoft 365 e aggiungervi i responsabili della conformità.
     
 2. Creare un gruppo di ruoli nella pagina **Autorizzazioni** del Centro sicurezza e conformità. 
+
+3. Durante la creazione del gruppo di ruoli, usare la sezione **Scegli ruoli** per aggiungere il ruolo seguente al gruppo di ruoli: **Gestione conformità DLP**.
     
-3. Aggiungere il gruppo di Microsoft 365 al gruppo di ruoli.
-    
+4. Usare la sezione **Scegli membri** per aggiungere il gruppo di Microsoft 365 creato in precedenza al gruppo di ruoli.
+
+È anche possibile creare un gruppo di ruoli con privilegi di sola visualizzazione per i report e i criteri DLP concedendo il ruolo di **solo visualizzazione per la gestione della conformità DLP**.
+
 Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Queste autorizzazioni sono necessarie solo per creare e applicare criteri di prevenzione della perdita dei dati. L'applicazione dei criteri non richiede l'accesso al contenuto.
@@ -539,7 +543,7 @@ I report dei criteri di prevenzione della perdita dei dati devono tuttavia estra
     
 - [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Elementi cercati dai tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+- [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
     
 - [Cosa individuano le funzioni di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)
     

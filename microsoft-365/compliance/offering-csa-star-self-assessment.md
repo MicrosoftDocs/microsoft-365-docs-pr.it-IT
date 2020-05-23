@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 5abbfff81bd79e200eeaf0db680245ae8e449cb0
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066449"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254189"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Autovalutazione Cloud Security Alliance (CSA) STAR
 
@@ -68,7 +68,7 @@ Consente ai CSP di documentare in modo trasparente la propria conformità alle p
 **Quali sono i livelli di controllo CSA STAR raggiunti dai servizi cloud Microsoft per le aziende?**
 
 - **Livello 1**: **Autovalutazione CSA STAR**: Azure, Dynamics 365 e Office 365. L'autovalutazione è un'offerta gratuita fornita dai provider di servizi cloud per documentare i propri controlli di sicurezza e consentire ai clienti di valutare la sicurezza del servizio.
-- **Livello 2**: **Certificazione CSA STAR**: Azure, Cloud App Security, Intune e Power BI. La certificazione STAR si basa sull'ottenimento della certificazione ISO/IEC 27001 e sul rispetto dei criteri specificati nella CCM. Viene rilasciata dopo una rigorosa valutazione eseguita da terze parti dei controlli e delle procedure di sicurezza di un provider di servizi cloud.
+- **Livello 2** - **Certificazione CSA STAR**: Azure, Microsoft Cloud App Security, Intune e Power BI. La certificazione STAR si basa sull'ottenimento della certificazione ISO/IEC 27001 e sul rispetto dei criteri specificati nella CCM. Viene rilasciata dopo una rigorosa valutazione eseguita da terze parti dei controlli e delle procedure di sicurezza di un provider di servizi cloud.
 - **Livello 2** - **Attestazione CSA STAR**: Azure e Intune. La CSA e l’AICPA hanno collaborato per fornire delle linee guida per le CPA per l'esecuzione di impegni SOC 2, usando i criteri dell’AICPA (Principi dei servizi attendibili, AT 101) e il CSA CCM. L'attestazione STAR si basa su queste linee guida e viene riconosciuta dopo una rigorosa valutazione indipendente dei provider di servizi cloud.
 
 ## <a name="resources"></a>Risorse

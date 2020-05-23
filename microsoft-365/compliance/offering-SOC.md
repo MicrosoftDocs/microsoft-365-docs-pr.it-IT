@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cc6f99dea89a5abc7f4c5bc07187c82d8999a064
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156881"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254299"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -48,30 +48,30 @@ Microsoft ha superato i controlli SOC 1 Type 2, SOC 2 Type 2 e SOC 3. In general
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>Servizi coperti da SOC 1 e SOC 2
 
 - [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - [Dynamics 365 e Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Graph
+- Microsoft Graph
 - Intune
 - Microsoft Managed Desktop
-- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
+- Servizio cloud Power Automate (in precedenza Microsoft Flow), autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - [Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
-- Stream
+- Microsoft Stream
 - Azure DevOps Services
 
 ### <a name="covered-services-for-soc-3"></a>Servizi coperti da SOC 3
 
 - [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Graph
+- Microsoft Cloud App Security
+- Microsoft Graph
 - Intune
 - Microsoft Managed Desktop
-- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
+- Servizio cloud Power Automate (in precedenza Microsoft Flow), autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - [Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
-- Stream
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
@@ -79,7 +79,7 @@ Microsoft ha superato i controlli SOC 1 Type 2, SOC 2 Type 2 e SOC 3. In general
 
 I servizi cloud Microsoft vengono controllati almeno una volta l'anno rispetto agli standard SOC 1 (SSAE18, ISAE 3402), SOC 2 (AT Section 101) e SOC 3.
 
-#### <a name="azure-dynamics-365-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure, Dynamics 365, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft
+#### <a name="azure-dynamics-365-microsoft-cloud-app-security-flow-microsoft-graph-intune-power-bi-powerapps-microsoft-stream-and-microsoft-datacenters"></a>Azure, Dynamics 365, Microsoft Cloud App Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream e Data center Microsoft
 
 - [Report di Azure + Dynamics 365 e Azure + Dynamics 365 Government SOC 1 Tipo 2](https://aka.ms/azuresoc1auditreport)
 - [Report di Azure + Dynamics 365 e Azure + Dynamics 365 Government SOC 2 Tipo 2](https://aka.ms/azuresoc2auditreport)
@@ -107,7 +107,7 @@ Con i report, il revisore può confrontare i risultati dei servizi cloud Microso
 
 **Con quale frequenza vengono emessi report SOC di Azure?**
 
-I report SOC per Azure, Cloud app Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi ogni sei mesi (i fine periodo sono il 31 marzo e il 30 settembre). Le lettere ponte vengono emesse a gennaio per coprire il periodo 01/10 - 31/12 e a luglio per coprire il periodo 01/04 - 30/06. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
+I report SOC per Azure, Microsoft Cloud app Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi ogni sei mesi (i fine periodo sono il 31 marzo e il 30 settembre). Le lettere ponte vengono emesse a gennaio per coprire il periodo 01/10 - 31/12 e a luglio per coprire il periodo 01/04 - 30/06. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
 
 **Devo sottoporre a controlli i data center di Microsoft?**
 

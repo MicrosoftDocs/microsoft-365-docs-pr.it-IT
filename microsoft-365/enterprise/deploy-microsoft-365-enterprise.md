@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Informazioni sulle diverse risorse disponibili per distribuire Microsoft 365 per le aziende nell'organizzazione.
-ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031427"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268334"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuire Microsoft 365 per le aziende
 
@@ -55,7 +55,7 @@ Per distribuire autonomamente Microsoft 365 per le aziende, è possibile:
 
 - Distribuire l'[infrastruttura di base](deploy-foundation-infrastructure.md) per la sicurezza integrata e l'integrazione per una gestione semplificata che rende più semplice garantire che il software client sia aggiornato con i più recenti miglioramenti della produttività e della sicurezza. 
  
-  L'infrastruttura di base è organizzata come una serie di fasi numerate costruite l’una sull’altra e mirate ad un ambiente che supporta gli scenari e i carichi di lavoro di Microsoft 365 per le aziende. 
+  L'infrastruttura di base è organizzata come una serie di fasi numerate costruite l'una sull'altra e mirate ad un ambiente che supporta i carichi di lavoro di Microsoft 365 for enterprise. 
 
   **Organizzazioni di dimensioni inferiori o nuove** possono seguire le fasi per creare l’infrastruttura in modo metodico.
 
@@ -63,13 +63,13 @@ Per distribuire autonomamente Microsoft 365 per le aziende, è possibile:
 
   **Se si ha un'organizzazione aziendale**, visualizzare le fasi come livelli dell'infrastruttura IT invece di un percorso definito, e determinare la strategia migliore per ottenere una finale conformità ai requisiti per ogni livello all'interno dell'organizzazione.
 
-- Distribuire i [carichi di lavoro e gli scenari](deploy-workloads.md) chiave della produttività nella parte superiore dell'infrastruttura. Si sbloccano così creatività e collaborazione all'interno dell'organizzazione.
+- Distribuire i [carichi di lavoro](deploy-workloads.md) chiave della produttività nella parte superiore dell'infrastruttura. Si sbloccano così creatività e collaborazione all'interno dell'organizzazione.
 
-Ecco la relazione tra l'infrastruttura di base e i carichi di lavoro e gli scenari.
+Ecco la relazione tra l'infrastruttura di base e i carichi di lavoro.
 
-![Relazione tra l'infrastruttura di base e i carichi di lavoro e gli scenari](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Relazione tra l'infrastruttura di base e i carichi di lavoro](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-I carichi di lavoro e gli scenari operano al di sopra dell'infrastruttura di base. Tuttavia non occorre disporre di tutte le fasi dell'infrastruttura di base completate per iniziare a usare i carichi di lavoro per la produttività e la collaborazione.
+I carichi di lavoro operano al di sopra dell'infrastruttura di base. Tuttavia non occorre disporre di tutte le fasi dell'infrastruttura di base completate per iniziare a usare i carichi di lavoro per la produttività e la collaborazione.
 
 Iniziare in maniera autonoma il percorso di distribuzione end-to-end [qui](deploy-foundation-infrastructure.md).
 
@@ -125,10 +125,6 @@ Informazioni su come Core Services Engineering and Operations (precedentemente M
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Informazioni sulle modalità di distribuzione di Microsoft 365 per le aziende da parte di Contoso Corporation
 
 Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale con sede a Parigi, Francia. Vedere come [Contoso ha distribuito Microsoft 365 per le aziende](contoso-case-study.md) e ha affrontato decisioni di progettazione e dettagli di implementazione importanti riguardanti la rete, l’identità, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, la gestione dei dispositivi mobili, la protezione delle informazioni e la sicurezza. 
-
-## <a name="stay-current-with-deployment-content"></a>Rimanere aggiornati sul contenuto sulla distribuzione
-
-Per le modifiche più recenti al contenuto, vedere [questo articolo](microsoft-365-deploment-guide-changes.md).
 
 ## <a name="next-step"></a>Passaggio successivo
 

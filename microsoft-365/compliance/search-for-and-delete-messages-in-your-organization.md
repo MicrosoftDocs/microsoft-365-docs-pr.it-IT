@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cec7229da0d6bef9af94dfc017794ece21aa0ac8
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626442"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292442"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Cercare ed eliminare messaggi di posta elettronica
 
@@ -42,14 +42,16 @@ ms.locfileid: "43626442"
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per creare ed eseguire una ricerca di contenuto, è necessario essere membro del gruppo di ruoli **Gestione di eDiscovery** o disporre del ruolo di gestione della **Ricerca di conformità**. Per eliminare i messaggi, è necessario essere membro del gruppo di ruoli **Gestione dell’organizzazione** o disporre del ruolo di gestione **Search And Purge**. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](assign-ediscovery-permissions.md).
-    
+
 - Per eliminare i messaggi, è necessario usare PowerShell in Centro sicurezza e conformità. Per informazioni su come connettersi, vedere il [Passaggio 2](#step-2-connect-to-security--compliance-center-powershell).
-    
+
 - È possibile rimuovere al massimo 10 elementi per ogni cassetta postale alla volta. Poiché la possibilità di cercare e di rimuovere i messaggi è uno strumento di intervento, questo limite garantisce che i messaggi vengano rimossi rapidamente dalle cassette postali. Lo scopo di questa funzionalità non è svuotare le cassette postali degli utenti.
-    
+
 - Il numero massimo di cassette postali supportato dalla ricerca di contenuto per eliminare gli elementi con un'operazione di ricerca e rimozione è 50.000. Se la ricerca di contenuto, creata nel [Passaggio 1](#step-1-create-a-content-search-to-find-the-message-to-delete), include più di 50.000 cassette postali di origine, l'azione di rimozione, creata nel Passaggio 3, non riuscirà. Vedere la sezione [Ulteriori informazioni](#more-information) per ottenere suggerimenti su come eseguire un'operazione di ricerca e rimozione su più di 50.000 cassette postali. 
-    
+
 - La procedura descritta in questo articolo può essere usata solo per eliminare elementi nelle cassette postali e cartelle pubbliche di Exchange Online. Non è possibile usarla per eliminare il contenuto dai siti di SharePoint o OneDrive for Business.
+
+- Gli elementi di posta elettronica in un caso di Advanced eDiscovery non possono essere eliminati usando le procedure descritte in questo articolo. Il motivo è che gli elementi in un insieme da rivedere vengono archiviati in una posizione di archiviazione di Azure e non nel servizio Live. Questo vuol dire significa che non verranno restituite dalla ricerca di contenuto creata nel Passaggio 1. Per eliminare elementi in un insieme da rivedere, è necessario eliminare il caso di Advanced eDiscovery che contiene l'insieme da rivedere. Per altre informazioni, vedere [Chiudere o eliminare un caso di Advanced eDiscovery](close-or-delete-case.md).
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Passaggio 1: creare una ricerca di contenuto per trovare il messaggio da eliminare
 

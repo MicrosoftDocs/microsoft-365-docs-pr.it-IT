@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a30f856f418807025eb450537633aec1616c54f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00657f3e1e223305c4e4a4202e8ff6f612b5374e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065921"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254199"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>Gestione dei servizi informatici ISO/IEC 20000-1:2011 
 
@@ -35,26 +35,28 @@ L'ottenimento della certificazione ISO 20000-1:2011 è un passaggio logico per M
   
 Una società di revisione indipendente di terze parti ha eseguito un esame rigoroso di Microsoft Azure e di diversi servizi online Microsoft per verificarne il rispetto dei requisiti stabiliti dallo standard ISO 20000-1:2011. Il certificato ISO 20000-1 disponibile dimostra che Azure e i servizi online Microsoft coperti hanno implementato le corrette procedure di gestione dei servizi IT volte a garantirne efficienza e affidabilità, soggette a regolare monitoraggio, verifica e aggiornamento.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
-- [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Microsoft PowerApps
-- Microsoft Flow
-- Microsoft Graph
-- Microsoft Genomics
 - Office 365 gestito da 21Vianet
+- Microsoft PowerApps
+- Power Automate (in precedenza Microsoft Flow)
 - Power BI
+- Power BI Embedded
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
-2017 ISO 20000-1 documentazione per Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Genomica di Microsoft e Data center Microsoft
+Documentazione ISO 20000-1, come indicato di seguito:
 
-- [Report della valutazione](https://go.microsoft.com/fwlink/p/?linkid=2077810)
-- [Certificato](https://go.microsoft.com/fwlink/p/?linkid=2077815)
-- [Dichiarazione di applicabilità](https://aka.ms/AzureISO20000StatementofApplicability)
+- [Azure, Dynamics 365 e Online Services: Certificazione ISO20000-1](https://aka.ms/azureiso200001cert)
+- [Azure, Dynamics 365 e Online Services: Report di valutazione ISO20000-1](https://aka.ms/azureiso200001report)
+- [Azure, Dynamics 365 e Online Services: Dichiarazione di applicabilità (SOA) ISO20000-1](https://aka.ms/azureiso200001soa)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

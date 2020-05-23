@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 64a43fc281e5074314ca2b272306a0733297d34e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065911"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254435"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Standard di gestione della continuità aziendale ISO 22301:2012
 
@@ -35,21 +35,24 @@ Microsoft è stato il primo provider di servizi cloud iperscalabile a ricevere l
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
-- [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomica
-- Graph
+- [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government e Dynamics 365 Germany
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
+- Servizio cloud Power Automate (in precedenza Microsoft Flow), autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - [Office 365 commerciale, per enti pubblici e per l'istruzione](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
+- Power BI Embedded
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
-- [Certificato di registrazione ISO 22301 per Azure](https://go.microsoft.com/fwlink/p/?linkid=2099078)
-- [Report di valutazione ISO 22301 per Azure](https://go.microsoft.com/fwlink/p/?linkid=2099079)
+- [Azure, Dynamics 365 e Online Services: Certificazione ISO22301](https://aka.ms/azureiso22301cert)
+- [Azure, Dynamics 365 e Online Services: report di valutazione ISO22301](https://aka.ms/azureiso22301report)
 - [Certificato BSI 22301 per Microsoft Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092109)
 - [Addendum al report BSI 22301 Fase 2 per Microsoft Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092209)
 - [Report ISO 22301 Fase 2 per Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092211)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Usare l'azione di controllo delle cassette postali MailItemsAccessed per eseguire indagini forensi sugli account utente compromessi.
-ms.openlocfilehash: 20c57f1d11af8fded15cc2fdf280414f7172ffd7
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262579"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327650"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usare Audit avanzato per le indagini sugli account compromessi
 
@@ -37,13 +37,13 @@ L'azione di controllo delle cassette postali MailItemsAccessed copre tutti i pro
 
 ### <a name="auditing-sync-access"></a>Controllo dell'accesso per sincronizzazione
 
-Le operazioni Sync vengono registrate solo quando si accede a una cassetta postale da una versione desktop del client Outlook per Windows o Mac. Durante l'operazione Sync, in genere questi client scaricano un set di elementi di posta di grandi dimensioni dal cloud a un computer locale. Il volume di controllo per le operazioni Sync è enorme. Per questo motivo, invece di generare un record di controllo per ogni elemento di posta elettronica sincronizzato, viene generato solo un evento di controllo per la cartella di posta contenente gli elementi che sono stati sincronizzati. Questo presuppone che *tutti* gli elementi di posta nella cartella sincronizzata siano stati compromessi. Il tipo di accesso viene registrato nel campo OperationsProperties del record di controllo. 
+Le operazioni Sync vengono registrate solo quando si accede a una cassetta postale da una versione desktop del client Outlook per Windows o Mac. Durante l'operazione Sync, in genere questi client scaricano un set di elementi di posta di grandi dimensioni dal cloud a un computer locale. Il volume di controllo per le operazioni Sync è enorme. Per questo motivo, invece di generare un record di controllo per ogni elemento di posta elettronica sincronizzato, viene generato solo un evento di controllo per la cartella di posta contenente gli elementi che sono stati sincronizzati. Questo presuppone che *tutti* gli elementi di posta nella cartella sincronizzata siano stati compromessi. Il tipo di accesso viene registrato nel campo OperationProperties del record di controllo. 
 
 Vedere il passaggio 2 nella sezione [Usare i record di controllo MailItemsAccessed per le indagini forensi](#use-mailitemsaccessed-audit-records-for-forensic-investigations) per un esempio di visualizzazione del tipo di accesso Sync in un record di controllo.
 
 ### <a name="auditing-bind-access"></a>Controllo dell'accesso per binding
 
-Un'operazione Bind è un singolo accesso a un messaggio di posta elettronica. Per l'accesso a scopo di binding, il valore InternetMessageId dei singoli messaggi verrà registrato nel record di controllo. L'azione di controllo MailItemsAccessed registra le operazioni Bind e le aggrega in un singolo record di controllo. Tutte le operazioni Bind che si verificano in un intervallo di due minuti vengono aggregate in un singolo record di controllo nel campo delle cartelle all'interno della proprietà AuditData. Ogni messaggio a cui è stato eseguito l'accesso è identificato dal relativo valore InternetMessageId. Il numero di operazioni di binding aggregate nel record viene visualizzato nel campo OperationCount della proprietà AuditData.
+Un'operazione Bind è un singolo accesso a un messaggio di posta elettronica. Per l'accesso per binding, l'InternetMessageId dei singoli messaggi verrà registrato nel record di controllo. L'azione di controllo MailItemsAccessed registra le operazioni Bind e le aggrega in un singolo record di controllo. Tutte le operazioni Bind che si verificano in un intervallo di due minuti vengono aggregate in un singolo record di controllo nel campo delle cartelle all'interno della proprietà AuditData. Ogni messaggio a cui è stato eseguito l'accesso è identificato dal relativo InternetMessageId. Il numero di operazioni di binding aggregate nel record viene visualizzato nel campo OperationCount della proprietà AuditData.
 
 Vedere il passaggio 4 nella sezione [Usare i record di controllo MailItemsAccessed per le indagini forensi](#use-mailitemsaccessed-audit-records-for-forensic-investigations) per un esempio di visualizzazione del tipo di accesso Bind in un record di controllo.
 
@@ -152,13 +152,13 @@ Di seguito sono illustrati i passaggi per usare i record di controllo MailItemsA
  
    È possibile usare i dati di controllo per le operazioni di binding in due modi diversi:
 
-     - Accedere o raccogliere tutti i messaggi di posta elettronica a cui ha eseguito l'accesso l'utente malintenzionato usando il valore InternetMessageId per trovarli, quindi verificare se uno di questi messaggi contiene informazioni riservate.
+     - Accedere o raccogliere tutti i messaggi di posta elettronica a cui ha eseguito l'accesso l'utente malintenzionato usando l'InternetMessageId per trovarli, poi verificare se uno di questi messaggi contiene informazioni riservate.
 
-     - Usare il valore InternetMessageId per cercare i record di controllo relativi a un set di messaggi di posta elettronica potenzialmente sensibili. Questa opzione è utile se si è preoccupati solo per un numero limitato di messaggi.
+     - Usare l'InternetMessageId per cercare i record di controllo relativi a un set di messaggi di posta elettronica potenzialmente sensibili. Questa opzione è utile se si è preoccupati solo per un numero limitato di messaggi.
 
 ## <a name="filtering-of-duplicate-audit-records"></a>Filtro dei record di controllo duplicati
 
-I record di controllo duplicati per le stesse operazioni di binding che si verificano entro un'ora l'una dall'altra vengono esclusi per rimuovere i dati non significativi. Anche le operazioni di sincronizzazione sono filtrate a intervalli di un'ora. Un'eccezione a questo processo di deduplicazione avviene se, per lo stesso valore InternetMessageId, le proprietà descritte nella tabella seguente sono diverse. Se una di queste proprietà è diversa in un'operazione duplicata, viene generato un nuovo record di controllo. Questo processo è descritto in modo più dettagliato nella sezione successiva.
+I record di controllo duplicati per le stesse operazioni di binding che si verificano entro un'ora l'una dall'altra vengono esclusi per rimuovere i dati non significativi. Anche le operazioni di sincronizzazione sono filtrate a intervalli di un'ora. Un'eccezione a questo processo di deduplicazione si verifica se, per lo stesso InternetMessageId, le proprietà descritte nella tabella seguente sono diverse. Se una di queste proprietà è diversa in un'operazione duplicata, viene generato un nuovo record di controllo. Questo processo è descritto in modo più dettagliato nella sezione successiva.
 
 | Proprietà| Descrizione|
 |:--------|:---------|

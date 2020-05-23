@@ -1,8 +1,8 @@
 ---
-title: Carichi di lavoro e scenari di Microsoft 365 per le aziende
+title: Carichi di lavoro di Microsoft 365 for enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Caricare gli utenti dell’organizzazione nei carichi di lavoro produttivi di Microsoft 365 per le aziende.
-ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0e1658655c4b97a7e571d1ac09c4b2edcc6c82ce
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066216"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268285"
 ---
-# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 per le aziende
+# <a name="microsoft-365-for-enterprise-workloads"></a>Carichi di lavoro di Microsoft 365 for enterprise
 
 Per ottenere i vantaggi in termini di creatività e collaborazione di Microsoft 365 per le aziende, distribuire questi carichi di lavoro sull'infrastruttura di base:
 
@@ -29,31 +29,13 @@ Per ottenere i vantaggi in termini di creatività e collaborazione di Microsoft 
 
 Vedere l'articolo sulla [migrazione](migration-microsoft-365-enterprise-workload.md) per una roadmap generale su come eseguire la migrazione di tutta l'organizzazione a Microsoft 365 per le aziende che includa i prodotti client di Microsoft Office, i prodotti locali di Office Server e i dispositivi basati su Microsoft Windows.
 
-Gli scenari usano le funzionalità e i servizi di Microsoft 365 per le aziende in modo integrato per soddisfare le esigenze aziendali. 
+Ecco i carichi di lavoro nella guida di distribuzione generale di Microsoft 365 for enterprise:
 
-Una di queste esigenze è assicurarsi che i dipendenti possano lavorare in modo produttivo e sicuro quando non sono direttamente connessi alla Intranet aziendale. Per una roadmap generale su come distribuire gli elementi dell'infrastruttura e favorire l'adozione da parte degli utenti remoti per i carichi di lavoro chiave, ad esempio Team ed Exchange Online, vedere lo scenario [Supportare i lavoratori remoti](empower-people-to-work-remotely.md).
+![Carichi di lavoro nella guida di distribuzione generale di Microsoft 365 for enterprise](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-Un'altra di queste esigenze è proteggere dati estremamente regolamentati archiviati in Microsoft 365. I dati estremamente regolamentati includono asset digitali, tra cui:
+## <a name="foundation-infrastructure-prerequisites"></a>Prerequisiti dell'infrastruttura di base
 
-- Soggetti alle normative internazionali.
-- I dati più importanti per l'organizzazione, ad esempio segreti finanziari o informazioni sulle risorse umane e strategia dell'organizzazione.
-
-Per proteggere questi dati da minacce interne ed esterne, vedere:
-
-- [Teams per dati altamente regolamentati](secure-teams-highly-regulated-data-scenario.md)
-- [Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md). 
-
-Questi scenari rappresentano una guida per configurare un team di Microsoft Teams o un sito di SharePoint per archiviare in modo sicuro i dati più importanti.
-
-Ecco i carichi di lavoro e gli scenari della guida di distribuzione generale di Microsoft 365 per le aziende:
-
-![Carichi di lavoro e scenari della guida di distribuzione generale di Microsoft 365 per le aziende](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
-
-Vedere la [raccolta di produttività Microsoft 365](https://aka.ms/productivitylibrary)(https://aka.ms/productivitylibrary) per altri scenari. 
-
-## <a name="foundation-infrastructure-prerequisites"></a>Prerequisiti dell’infrastruttura di base
-
-*Idealmente*, è necessario distribuire i carichi di lavoro e gli scenari dopo aver configurato tutte le fasi [dell'infrastruttura di base](deploy-foundation-infrastructure.md). Per garantire che tutti i livelli sottostanti dell’infrastruttura di base siano in posizione per fornire integrazione, sicurezza e la migliore esperienza per gli utenti e i loro dispositivi.
+*Idealmente*, è necessario distribuire i carichi di lavoro dopo aver configurato tutte le fasi [dell'infrastruttura di base](deploy-foundation-infrastructure.md). Per garantire che tutti i livelli sottostanti dell’infrastruttura di base siano in posizione per fornire integrazione, sicurezza e la migliore esperienza per gli utenti e i loro dispositivi.
 
 | Fase | Risultato |
 |:-------|:-----|

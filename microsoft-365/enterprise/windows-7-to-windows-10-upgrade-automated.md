@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aggiornamenti automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
-ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: c151c5488fdbc77dc2da7dd308bafb75b6bb5f22
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011552"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221399"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Aggiornamenti sul posto automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
 
@@ -90,7 +90,7 @@ L'[opzione pre-cache](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/cr
 
 Sequenze di attività pre-cache combinate ad analisi della compatibilità
 
-Oltre al risparmio di tempo per il download del pacchetto, è possibile applicare l'opzione di pre-cache al pacchetto di aggiornamento e usare il programma di installazione di Windows per valutare se l'aggiornamento sul posto avrà esito positivo prima di eseguire l'aggiornamento effettivo di Windows. La seguente sintassi della riga di comando può essere usata per eseguire in automatico un'analisi della compatibilità e scoprire se Installazione di Windows valuta il dispositivo come pronto per l'aggiornamento.
+Oltre al risparmio di tempo per il download del pacchetto, è possibile applicare l'opzione di pre-cache al pacchetto di aggiornamento e usare il programma di installazione di Windows per valutare se l'aggiornamento sul posto avrà esito positivo prima di eseguire l'aggiornamento effettivo di Windows. La seguente sintassi della riga di comando può essere usata per eseguire in automatico un'analisi della compatibilità e scoprire se Installazione di Windows valuta il dispositivo come pronto per l'aggiornamento: **Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 I log verranno quindi inviati al percorso definito del server e Installazione di Windows non verrà visualizzato all'utente e si chiuderà senza interazione con l'utente.
 

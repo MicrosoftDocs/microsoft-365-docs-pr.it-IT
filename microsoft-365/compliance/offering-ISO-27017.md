@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f44c46046fc107e8059cebda3388fcd775bd31e
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 329bb7c4662d6449d69c6dca9ad489bdd70a0d3f
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065691"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254229"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>Codice di condotta in materia di controllo della sicurezza informatica ISO/IEC 27017:2015 
 
@@ -44,26 +44,28 @@ ISO/IEC 27017 è unico nel fornire indicazioni tanto ai provider di servizi clou
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- [Dynamics 365](https://aka.ms/d365-compliance-list)
-- Genomica
-- Graph
+- Microsoft Cloud App Security
+- [Dynamics 365, Dynamics 365 e Dynamics 365 Germany](https://aka.ms/d365-compliance-list)
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
+- Servizio cloud Power Automate (in precedenza Microsoft Flow), autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense e Office 365 Germany
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
+- Power BI Embedded
+- Microsoft Stream
 - Vedere un [elenco dettagliato](https://go.microsoft.com/fwlink/p/?linkid=2077751) dei servizi inclusi in Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
 I servizi cloud Microsoft vengono controllati una volta all'anno per verificare l'adeguamento al Codice di comportamento ISO/IEC 27017:2015 come parte del processo di certificazione per ISO/IEC 27001:2013.
 
-- [Certificato ISO 27017 di Azure](https://go.microsoft.com/fwlink/p/?linkid=2078005)
-- [Report di valutazione ISO 27017 per Azure](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Dichiarazione di applicabilità di Azure ISO 27017](https://aka.ms/azureiso27017StatementofApplicability)
-- [Report di valutazione di controllo ISO 27001, 27018 e 27017 per Office 365](https://aka.ms/o365isoreport)
+- [Certificato ISO 27017 di Azure](https://aka.ms/azureiso27017cert)
+- [Report di valutazione ISO 27017 per Azure](https://aka.ms/azureiso27017report)
+- [Office 365: report di valutazione di controllo ISO 27001, 27018 e 27017](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

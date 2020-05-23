@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Modalità di adozione di Microsoft 365 Enterprise da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
-ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625351"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268423"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise per Contoso Corporation
 
@@ -68,14 +68,9 @@ Fare riferimento ai seguenti articoli per i dettagli:
 
   Contoso usa la gamma completa di funzionalità di sicurezza di Microsoft 365 Enterprise per la gestione degli accessi e dell'identità, la protezione dalle minacce, la protezione delle informazioni e la gestione della sicurezza.
 
-- [Team per un progetto interno](contoso-team-for-top-secret-project.md)
+- [Team per un progetto interno](../solutions/contoso-team-for-top-secret-project.md)
 
-  Per creare un ambiente di collaborazione sicuro per un progetto interno, Contoso ha usato un team per dati altamente regolamentati.
-
-- [Sito di SharePoint Online per risorse digitali estremamente riservate](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
-  Per proteggere la proprietà intellettuale e consentire al proprio team di ricerca di collaborare con maggiore facilità, Contoso ha utilizzato un sito di SharePoint Online per i dati altamente regolamentati.
-
+  Per creare un ambiente di collaborazione sicuro per un progetto interno, Contoso ha usato un team con isolamento della sicurezza.
 
 ## <a name="next-step"></a>Passaggio successivo
 

@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si cercano informazioni sensibili nel contenuto, è necessario descriverle in una regola. La prevenzione della perdita dei dati (DLP) include regole per le tipologie più comuni di informazioni sensibili che è possibile utilizzare immediatamente. Per utilizzare queste regole, è necessario includerle in un criterio. Per modificare queste regole predefinite in modo che soddisfino esigenze specifiche dell'organizzazione, creare informazioni sensibili personalizzate. Questo argomento mostra come personalizzare il file XML che contiene la raccolta di regole esistenti per rilevare una gamma più ampia di potenziali informazioni sulle carte di credito.
-ms.openlocfilehash: 4c61ab1a60b6259509d2928e22d31e447a996ec9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2aa552fb7a2623aaa7783063e82101a1993b9d1c
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595493"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327294"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizzare una tipologia integrata di informazioni sensibili
 
 Quando si cercano informazioni sensibili nel contenuto, è necessario descriverle in una *regola*. La prevenzione della perdita dei dati (DLP) include regole per le tipologie più comuni di informazioni sensibili che è possibile utilizzare immediatamente. Per utilizzare queste regole, è necessario includerle in un criterio. Per modificare queste regole predefinite in modo che soddisfino esigenze specifiche dell'organizzazione, creare informazioni sensibili personalizzate. Questo argomento mostra come personalizzare il file XML che contiene la raccolta di regole esistenti per rilevare una gamma più ampia di potenziali informazioni sulle carte di credito. 
   
-L'esempio riportato può essere applicato ad altre tipologie di informazioni sensibili predefinite. Per un elenco delle tipologie di informazioni sensibili predefinite e delle definizioni XML, vedere [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md). 
+L'esempio riportato può essere applicato ad altre tipologie di informazioni sensibili predefinite. Per un elenco di tipi di informazioni sensibili predefiniti e delle definizioni XML, vedere [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md). 
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Esportare il file XML delle regole correnti
 
@@ -234,8 +234,8 @@ Di seguito sono riportati i termini incontrati durante la procedura.
    
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-- [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+- [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
     
-- [Creare una tipologia personalizzata di informazioni sensibili](create-a-custom-sensitive-information-type.md)
+- [Creare una tipologia personalizzata di informazioni riservate](create-a-custom-sensitive-information-type.md)
     
 - [Panoramica relativa ai criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md)

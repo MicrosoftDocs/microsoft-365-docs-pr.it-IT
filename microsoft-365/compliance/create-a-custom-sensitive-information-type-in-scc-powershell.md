@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come creare e importare un tipo di informazioni riservate personalizzato per DLP nel Centro sicurezza e conformità.
-ms.openlocfilehash: b937cfe1ce4de7b380ef47d14d5fe4c500e173d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 536662737e2e3fc4fc2796b616adf59b544b2376
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632351"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327788"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità
 
-Prevenzione della perdita dei dati (DLP) in Microsoft 365 include molti [tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md) integrati già pronti per l'uso nei criteri di protezione della perdita dei dati. Tali tipi integrati possono aiutare a identificare e proteggere i numeri di carte di credito, di conti bancari, di passaporto e molti altri. 
+Prevenzione della perdita dei dati (DLP) in Microsoft 365 include molte [Definizioni di entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md) integrati già pronti per l'uso nei criteri di protezione della perdita dei dati. Tali tipi integrati possono aiutare a identificare e proteggere i numeri di carte di credito, di conti bancari, di passaporto e molti altri. 
   
 E se fosse necessario identificare e proteggere un tipo diverso di informazioni sensibili (ad esempio il numero ID di un dipendente che usa un formato specifico dell'organizzazione)? Per farlo, è possibile creare un tipo di informazioni sensibili personalizzato che viene definito in un file XML denominato *pacchetto di regole*.
   
@@ -908,6 +908,6 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Set-DlpSensitiveIn
 
 - [Panoramica relativa ai criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md)
     
-- [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+- [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
     
 - [Cosa individuano le funzioni di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md)

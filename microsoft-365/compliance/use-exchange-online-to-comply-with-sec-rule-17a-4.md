@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates ha comprovato che se si esegue la configurazione di Exchange Online e del Centro sicurezza e conformità come consigliato vengono soddisfatti i requisiti di archiviazione pertinenti delle regole CFTC 1.31(c)-(d), FINRA 4511 e SEC 17a-4. È possibile scaricare la valutazione.
-ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d494c519576ed86ed56a331a3440d9237270e33
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626422"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231839"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4
 
@@ -53,7 +53,7 @@ I settori fortemente regolamentati sono spesso tenuti ad archiviare le comunicaz
 - Conservato per un periodo di conservazione necessario che non può essere abbreviato, ma solo aumentato.
 - Non modificabile, ovvero il record non può essere sovrascritto, cancellato né modificato durante il periodo di conservazione necessario.
 
-In Exchange Online, applicando un [criterio di conservazione](retention-policies.md) alla cassetta postale di un utente è possibile conservarne tutti i contenuti. In effetti, se un utente prova a eliminare o modificare un messaggio di posta elettronica, una copia precedente alla modifica verrà conservata in una posizione protetta e nascosta della cassetta postale. I criteri di conservazione garantiscono che un'organizzazione possa conservare le comunicazioni elettroniche, ma che sia comunque possibile modificare quei criteri.
+In Exchange Online, applicando un [criterio di conservazione](retention-policies.md) alla cassetta postale di un utente è possibile conservarne tutti i contenuti. In effetti, se un utente prova a eliminare o modificare un messaggio di posta elettronica, una copia precedente alla modifica verrà conservata in una posizione protetta e nascosta della cassetta postale. I criteri di conservazione possono contribuire a garantire che un'organizzazione possa conservare le comunicazioni elettroniche, ma che sia comunque possibile modificare quei criteri.
 
 Applicando la protezione dell'archiviazione a un criterio di conservazione, un'organizzazione si assicura che il criterio non possa essere modificato. In effetti, in seguito all'applicazione della protezione dell'archiviazione a un criterio di conservazione vengono limitate le azioni seguenti:
 
@@ -65,7 +65,7 @@ La protezione dell'archiviazione consente di soddisfare i requisiti normativi de
 
 ## <a name="how-to-set-up-preservation-lock"></a>Come configurare la protezione dell'archiviazione
 
-È possibile proteggere un criterio di conservazione con PowerShell. Per altre informazioni, vedere [Blocco dei criteri di conservazione](retention-policies.md#locking-a-retention-policy).
+È possibile bloccare i criteri di conservazione con PowerShell. Per altre informazioni, vedere [Usare la protezione dell'archiviazione per la conformità ai requisiti normativi](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
 ## <a name="known-limitations"></a>Limitazioni note
 

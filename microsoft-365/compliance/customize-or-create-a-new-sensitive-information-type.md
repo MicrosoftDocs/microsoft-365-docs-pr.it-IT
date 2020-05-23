@@ -20,12 +20,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: ''
 description: Informazioni su come modificare o creare nuovi tipi di informazioni sensibili di Office 365 per la conformità al Regolamento generale sulla protezione dei dati (GDPR).
-ms.openlocfilehash: 3eca04fcf949a19615dc574c90d8dbeea0894a23
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 70ce61f582cbc952811d01cccc7b958bf1b52dbb
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166067"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224633"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizzare o creare un nuovo tipo di informazione riservata
 
@@ -165,7 +165,7 @@ Non è possibile utilizzare KQL e parole chiave insieme. Utilizzare questi strum
 
 Note:
 
--   È possibile utilizzare NEAR e ONEAR per le ricerche di prossimità.
+-   È possibile utilizzare NEAR per le ricerche di prossimità.
 
 -   Purtroppo al momento KQL non supporta le query con la classe Regex (esempio: IdRef="Regex\_email\_address").
 

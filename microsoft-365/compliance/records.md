@@ -1,5 +1,5 @@
 ---
-title: Panoramica dei record
+title: Informazioni sui record
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,15 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Per implementare una strategia di gestione dei record nella tua organizzazione Microsoft o Office 365, usare etichette di conservazione che dichiarino un contenuto come record. Quindi pubblicare o applicare automaticamente l'etichetta record di conservazione.
-ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+description: Informazioni su come implementare una strategia di gestione dei record nell'organizzazione Microsoft o Office 365 e usare etichette di conservazione che dichiarino un contenuto come record. Quindi pubblicare o applicare automaticamente l'etichetta record di conservazione.
+ms.openlocfilehash: 8dcb3b03dcd908da2a3133d52c1a70ae197eee99
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949283"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231909"
 ---
-# <a name="overview-of-records"></a>Panoramica dei record
+# <a name="learn-about-records"></a>Informazioni sui record
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
@@ -38,7 +38,9 @@ A livelli elevati, dichiarare un contenuto come record significa che:
 
 - I record vengono eliminati al termine del loro periodo di conservazione.
 
-Usare le [etichette di conservazione](labels.md) per classificare un contenuto come record. Dopo aver creato le etichette di conservazione che dichiarano i record, è possibile [pubblicare](labels.md#how-retention-labels-work-with-retention-label-policies) tali etichette, in modo che gli utenti possano usarle per classificare il contenuto come record, o [applicarle automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) al contenuto che si vuole classificare come record. È possibile usare le etichette di conservazione per dichiarare i record per implementare un'unica strategia di gestione dei record coerente in tutto Office 365. Altre funzionalità di gestione dei record, al contrario, ad esempio il Centro record, si applicano solo al contenuto di SharePoint Online.
+Usare [etichette di conservazione ](labels.md) per classificare un contenuto come record. Dopo aver creato le etichette di conservazione che dichiarano i record, è possibile pubblicare tali etichette in modo che gli utenti possano applicarle al contenuto o applicarle automaticamente al contenuto che si vuole classificare come record. Per istruzioni, vedere [Creare, pubblicare e applicare automaticamente etichette di conservazione](create-retention-labels.md).
+
+Usando le etichette di conservazione per dichiarare i record, si può implementare un'unica strategia coerente di gestione dei record nell'ambiente Microsoft 365.
 
 Tenere presente quanto segue in relazione ai record:
 
@@ -60,27 +62,28 @@ Tenere presente quanto segue in relazione ai record:
 
     Per altre informazioni sull'applicazione di etichette di conservazione alle cartelle di SharePoint e OneDrive, vedere [Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
-  - **Non è possibile eliminare i record**. Se un utente prova a eliminare un record in Exchange, l'elemento viene spostato nella cartella Elementi ripristinabili, come descritto in [Funzionamento dei criteri di conservazione con il contenuto presente](retention-policies.md#content-in-mailboxes-and-public-folders).
+  - **Non è possibile eliminare i record**. Se un utente prova a eliminare un record in Exchange, l'elemento viene spostato nella cartella Elementi ripristinabili, come descritto in [Funzionamento dei criteri di conservazione con posizioni Exchange](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations).
 
     Se un utente prova a eliminare un record in SharePoint, viene visualizzato un messaggio di errore che indica che l'elemento non è stato eliminato e che rimane nella raccolta.
 
     ![Messaggio che segnala che un elemento non è stato eliminato da SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    Se un utente prova a eliminare un record in OneDrive, l'elemento viene spostato nella raccolta di archiviazione, come descritto in [Funzionamento dei criteri di conservazione con il contenuto presente](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites).
+    Se un utente prova a eliminare un record in OneDrive, l'elemento viene spostato nella raccolta di archiviazione, come descritto in [Funzionamento dei criteri di conservazione con SharePoint e OneDrive](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive).
 
   - **Non è possibile rimuovere le etichette dei record.** Dopo aver applicato un'etichetta record a un elemento, solo l'amministratore di tale posizione, ad esempio l'amministratore di una raccolta siti di un sito di SharePoint, può rimuovere l’etichetta.
 
 ## <a name="using-retention-labels-to-declare-records"></a>Usare le etichette di conservazione per dichiarare i record
 
-Quando si crea un'etichetta di conservazione, si può scegliere di usarla per classificare il contenuto come record. Per dichiarare il contenuto come record, eseguire le operazioni seguenti:
+Quando si crea un'etichetta di conservazione, si può scegliere di usarla per classificare il contenuto come record:
 
-1. Creare un’etichetta di conservazione. Nel Centro conformità Microsoft 365 passare a **Gestione record** \> **Piano di archiviazione**. Nella pagina **Piano di archiviazione**, selezionare **Crea un'etichetta**.
+1. Nel Centro conformità Microsoft 365 passare a **Gestione record** \> **Piano di archiviazione**. Nella pagina **Piano di archiviazione**, selezionare **Crea un'etichetta**.
 
 2. Nella pagina **Impostazioni etichetta** della procedura guidata scegliere l'opzione di impostazione dell'etichetta di conservazione per dichiarare il contenuto come record.
     
    ![Fare clic sulla casella di controllo Utilizza l'etichetta per classificare il contenuto come Record](../media/recordversioning6.png)
 
 3. [Pubblicare](labels.md#how-retention-labels-work-with-retention-label-policies) o [Applicare automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) l'etichetta di conservazione ai siti di SharePoint e/o agli account di OneDrive.
+
 
 ### <a name="applying-a-retention-label-to-content"></a>Applicare un'etichetta di conservazione al contenuto
 
