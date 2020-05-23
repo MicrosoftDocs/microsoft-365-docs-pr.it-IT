@@ -129,8 +129,8 @@
               href: how-dlp-works-between-admin-centers.md
     - name: Tipi di informazioni sensibili
       items:
-        - name: Tipi di informazioni riservate disponibili da cercare
-          href: what-the-sensitive-information-types-look-for.md
+        - name: Definizioni delle entità tipo di informazioni sensibili
+          href: sensitive-information-type-entity-definitions.md
         - name: Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati
           href: what-the-dlp-functions-look-for.md
         - name: Video della panoramica completa sulla personalizzazione della prevenzione della perdita dei dati
