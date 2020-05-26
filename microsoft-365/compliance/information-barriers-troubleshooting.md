@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Utilizzare questo articolo come guida per la risoluzione dei problemi relativi alle barriere informative.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f73493f53937c38f33eeab9595ddb07ef4813c89
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5aa45e3e9dea5ce413b2b0e62d825003bc24e20e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035032"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352325"
 ---
 # <a name="troubleshooting-information-barriers"></a>Risoluzione dei problemi relativi alle barriere informative
 
@@ -45,7 +45,7 @@ Determinare se gli utenti sono coinvolti in un criterio barriera informativo. A 
 
     |Sintassi  |Esempio  |
     |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>È possibile utilizzare qualsiasi valore di identità che identifichi in modo univoco ogni destinatario, ad esempio nome, alias, nome distinto (DN), DN canonico, indirizzo di posta elettronica o GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>In questo esempio viene utilizzato un alias (*meganb*) per il parametro Identity. Questo cmdlet restituirà informazioni che indicano se l'utente è influenzato da un criterio barriera informativo. (Cercare * ExoPolicyId: \<GUID>.)         |
+    | `Get-InformationBarrierRecipientStatus -Identity` <p>È possibile utilizzare qualsiasi valore di identità che identifichi in modo univoco ogni destinatario, ad esempio nome, alias, nome distinto (DN), DN canonico, indirizzo di posta elettronica o GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>In questo esempio viene utilizzato un alias (*meganb*) per il parametro Identity. Questo cmdlet restituirà informazioni che indicano se l'utente è influenzato da un criterio barriera informativo. (Cercare * ExoPolicyId: \<> GUID.)         |
 
     **Se gli utenti non sono inclusi nei criteri di barriera delle informazioni, contattare il supporto**. In caso contrario, passare al passaggio successivo.
 
@@ -126,7 +126,7 @@ I criteri barriera di informazioni vengono assegnati a segmenti di utenti. I seg
 
 3. Per rimuovere un utente da un segmento influenzato dalle barriere informative, [aggiornare le informazioni sul profilo dell'utente in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-4. Attendere circa 30 minuti affinché FwdSync si verifichi. In alternativa, eseguire `Start-InformationBarrierPoliciesApplication` il cmdlet per applicare tutti i criteri di barriera delle informazioni attive.
+4. Attendere circa 30 minuti affinché FwdSync si verifichi. In alternativa, eseguire il `Start-InformationBarrierPoliciesApplication` cmdlet per applicare tutti i criteri di barriera delle informazioni attive.
 
 ## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>Problema: il processo di applicazione barriera alle informazioni richiede troppo tempo
 
@@ -163,7 +163,7 @@ Assicurarsi che l'organizzazione non disponga di [Criteri rubrica di Exchange](h
 
 1. Connettersi a [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps). 
 
-2. Eseguire il cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) ed esaminare i risultati.
+2. Eseguire il cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) ed esaminare i risultati.
 
     |Risultati  |Passaggio successivo  |
     |---------|---------|
@@ -189,13 +189,13 @@ Quando si esegue il `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, es
 
 ### <a name="what-to-do"></a>Procedura
 
-1. Ricerca nel registro di controllo per `<application guid>`. È possibile copiare il codice di PowerShell e modificarlo per le variabili.
+1. Ricerca nel registro di controllo per `<application guid>` . È possibile copiare il codice di PowerShell e modificarlo per le variabili.
 
 ```powershell
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. Controllare l'output dettagliato dal registro di controllo per i valori dei campi `"UserId"` e `"ErrorDetails"` . In questo modo si otterrà la causa dell'errore. È possibile copiare il codice di PowerShell e modificarlo per le variabili.
+2. Controllare l'output dettagliato dal registro di controllo per i valori dei `"UserId"` campi e `"ErrorDetails"` . In questo modo si otterrà la causa dell'errore. È possibile copiare il codice di PowerShell e modificarlo per le variabili.
 
 ```powershell
    $DetailedLogs[1] |fl
@@ -206,7 +206,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 > 
 >"ErrorDetails": "stato: IBPolicyConflict. Errore: il segmento IB "Segment ID1" e IB segment "Segment ID2" ha un conflitto e non può essere assegnato al destinatario. 
 
-3. In genere, si noterà che un utente è stato incluso in più di un segmento. Per risolvere il `-UserGroupFilter` valore, è possibile aggiornarlo `OrganizationSegments`in.
+3. In genere, si noterà che un utente è stato incluso in più di un segmento. Per risolvere il valore, è possibile aggiornarlo `-UserGroupFilter` in `OrganizationSegments` .
 
 4. Applicare di nuovo i criteri di barriera delle informazioni usando queste procedure [criteri di barriere informative](information-barriers-policies.md#part-3-apply-information-barrier-policies).
 

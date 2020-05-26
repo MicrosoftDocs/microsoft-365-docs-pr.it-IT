@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: cec7229da0d6bef9af94dfc017794ece21aa0ac8
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 3be3b64d7745fe97aae6b2003e0adbcd6aa7d82e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292442"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352099"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Cercare ed eliminare messaggi di posta elettronica
 
@@ -61,9 +61,9 @@ Il primo passaggio consiste nel creare ed eseguire una ricerca contenuto per tro
     
 - [Query con parole chiave per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
     
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearch)
     
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/Start-ComplianceSearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
     
 > [!NOTE]
 > I percorsi di contenuto all'interno dei quali viene eseguita la Ricerca contenuto creata in questo passaggio non possono includere siti di SharePoint o OneDrive for Business. In una Ricerca contenuto che verrà usata per inviare messaggi di posta elettronica è possibile includere solo cassette postali e cartelle pubbliche. Se la Ricerca contenuto include siti, si riceverà un messaggio di errore al Passaggio 3 quando si esegue il cmdlet **New-ComplianceSearchAction**. 
@@ -129,7 +129,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 Quando si esegue il comando precedente per eliminare i messaggi temporaneamente o definitivamente, la ricerca specificata dal parametro *SearchName* è la ricerca contenuto creata nel Passaggio 1. 
   
-Per altre informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
+Per altre informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction).
 
 ## <a name="more-information"></a>Ulteriori informazioni
 

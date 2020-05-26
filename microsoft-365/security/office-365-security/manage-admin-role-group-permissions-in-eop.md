@@ -12,20 +12,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Gli amministratori possono imparare a assegnare o rimuovere le autorizzazioni nell'interfaccia di amministrazione di Exchange (EAC) in Exchange Online Protection.
-ms.openlocfilehash: 3d7b709304f901c4adc41c67b0d6fe9c6ff382bf
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209673"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352336"
 ---
-# <a name="manage-role-groups-in-standalone-eop"></a>Gestire i gruppi di ruoli in EOP autonomo
+# <a name="manage-role-groups-in-standalone-eop"></a>Gestire i gruppi di ruoli in Exchange Online Protection autonomo
 
 Nelle organizzazioni standalone di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) per aggiungere utenti ai gruppi di ruoli. L'aggiunta di un utente a un gruppo di ruoli consente alle autorizzazioni degli utenti di eseguire attività amministrative specifiche. È inoltre possibile rimuovere gli utenti dai gruppi di ruoli.
 
 Per ulteriori informazioni sui ruoli e sui gruppi di ruolo, vedere [Permissions in standalone EOP](feature-permissions-in-eop.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per aprire l'interfaccia di amministrazione di Exchange (EAC), vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -135,7 +135,7 @@ In questo esempio vengono restituiti tutti i gruppi di ruoli in cui l'utente Jul
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
-Per ulteriori informazioni sulla sintassi e sui parametri, vedere [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup).
+Per ulteriori informazioni sulla sintassi e sui parametri, vedere [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).
 
 ### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>Utilizzo di PowerShell EOP autonomo per creare gruppi di ruoli
 
@@ -184,7 +184,7 @@ Quando si crea un nuovo gruppo di ruoli, è possibile configurare tutte le impos
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-Per informazioni dettagliate sulla sintassi e sui parametri, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+Per informazioni dettagliate sulla sintassi e sui parametri, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
 ### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>Utilizzo di EOP autonomo PowerShell modificare l'elenco dei membri nei gruppi di ruoli
 
@@ -214,7 +214,7 @@ Questo esempio aggiunge Daigoro Akai e rimuove Valeria Barrio dall'elenco dei me
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
 
 ### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>Utilizzo di PowerShell EOP autonomo per rimuovere i gruppi di ruoli
 
@@ -232,7 +232,7 @@ Questo esempio rimuove il gruppo di ruolo Formazione degli amministratori.
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup).
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 

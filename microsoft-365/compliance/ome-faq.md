@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Si ha una domanda su come funzionano le nuove funzionalità di protezione dei messaggi? Controllare la risposta qui.
-ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049521"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352082"
 ---
 # <a name="message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi
 
@@ -28,7 +28,7 @@ Si ha una domanda su come funzionano le nuove funzionalità di protezione dei me
 ## <a name="what-is-office-365-message-encryption-ome"></a>Che cos'è la crittografia dei messaggi (OME) di Office 365?
 
 OME combina la crittografia della posta elettronica e le funzionalità di gestione dei diritti. Le funzionalità di Rights management si basano sulla tecnologia Azure Information Protection.
-  
+
 ## <a name="who-can-use-ome"></a>Chi può utilizzare OME?
 
 È possibile utilizzare le nuove funzionalità di OME nelle condizioni seguenti:
@@ -137,9 +137,9 @@ Sì. Utilizzare le regole del flusso di posta in Exchange Online per crittografa
 
 Gli amministratori possono impostare una regola del flusso di posta per rimuovere la crittografia per la posta in uscita. Non è possibile impostare una regola per rimuovere la crittografia per la posta in arrivo.
 
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>È possibile crittografare automaticamente i messaggi mediante l'impostazione di criteri di prevenzione della perdita di dati ( &amp; DLP) tramite il Centro sicurezza e conformità?
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>È possibile crittografare automaticamente i messaggi mediante l'impostazione di criteri di prevenzione della perdita di dati (DLP) tramite il Centro sicurezza e &amp; conformità?
 
-Sì! È possibile configurare le regole del flusso di posta in Exchange Online o utilizzando DLP nel centro &amp; sicurezza e conformità.
+Sì! È possibile configurare le regole del flusso di posta in Exchange Online o utilizzando DLP nel centro sicurezza e &amp; conformità.
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>È possibile personalizzare i messaggi crittografati con il marchio dell'azienda?
 
@@ -185,3 +185,9 @@ Sono attualmente presenti due limitazioni note:
 - È supportato solo l'accesso fornito dall'assegnazione diretta degli utenti alla cassetta postale condivisa. Non è supportato l'assegnazione tramite un gruppo di sicurezza abilitato alla posta elettronica.
 
 - Non è possibile aprire gli allegati ai messaggi di posta elettronica ricevuti nei dispositivi mobili tramite Outlook Mobile.
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>Cosa si può fare se non si riceve il codice Pass una tantum dopo averlo richiesto?
+
+Controllare innanzitutto la cartella posta indesiderata o posta indesiderata nel client di posta elettronica. Le impostazioni di DKIM e DMARC per l'organizzazione potrebbero causare la filtraggio della posta indesiderata.
+
+Successivamente, verificare la quarantena nel centro sicurezza & conformità. Spesso, i messaggi che contengono un codice di passaggio una tantum, in particolare i primi ricevuti dall'organizzazione, finiscono in quarantena.

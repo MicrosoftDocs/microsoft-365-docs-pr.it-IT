@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Dopo aver esportato e scaricato i risultati di una ricerca nel registro di controllo in un file CSV, è possibile utilizzare la caratteristica di trasformazione JSON nell'editor di query di alimentazione in Excel per dividere ogni proprietà nell'oggetto JSON nella colonna AuditData nella propria colonna. In questo modo è possibile individuare rapidamente i dati di controllo specifici che si stanno cercando. È inoltre possibile utilizzare PowerShell per cercare ed esportare i record del registro di controllo.
-ms.openlocfilehash: c06fbe28a62cf04e1ffdd6ecf173d027e89b5074
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799929"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352386"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Esportare, configurare e visualizzare i record del log di controllo
 
@@ -100,7 +100,7 @@ Il passaggio successivo consiste nell'utilizzare la caratteristica di trasformaz
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Utilizzo di PowerShell per la ricerca e l'esportazione dei record del registro di controllo
 
-Invece di utilizzare lo strumento di ricerca del registro di controllo nel centro sicurezza & conformità, è possibile utilizzare il cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) in Exchange Online PowerShell per esportare i risultati di una ricerca nel registro di controllo in un file CSV. È quindi possibile eseguire la stessa procedura descritta nel passaggio 2 per formattare il log di controllo utilizzando l'editor di query di alimentazione. Un vantaggio dell'utilizzo del cmdlet di PowerShell è che è possibile cercare gli eventi da un servizio specifico utilizzando il parametro *RecordType* . Di seguito sono riportati alcuni esempi di utilizzo di PowerShell per esportare i record di controllo in un file CSV, in modo che sia possibile utilizzare l'editor di query di alimentazione per trasformare l'oggetto JSON nella colonna **AuditData** come descritto nel passaggio 2.
+Invece di utilizzare lo strumento di ricerca del registro di controllo nel centro sicurezza & conformità, è possibile utilizzare il cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell per esportare i risultati di una ricerca nel registro di controllo in un file CSV. È quindi possibile eseguire la stessa procedura descritta nel passaggio 2 per formattare il log di controllo utilizzando l'editor di query di alimentazione. Un vantaggio dell'utilizzo del cmdlet di PowerShell è che è possibile cercare gli eventi da un servizio specifico utilizzando il parametro *RecordType* . Di seguito sono riportati alcuni esempi di utilizzo di PowerShell per esportare i record di controllo in un file CSV, in modo che sia possibile utilizzare l'editor di query di alimentazione per trasformare l'oggetto JSON nella colonna **AuditData** come descritto nel passaggio 2.
 
 In questo esempio, eseguire i comandi seguenti per restituire tutti i record relativi alle operazioni di condivisione di SharePoint.
 

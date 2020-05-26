@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cbde149419320495e3848867846322733cb56f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033656"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352159"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurare i criteri di supervisione in Office 365
 
@@ -83,7 +83,7 @@ Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il cr
 
 Per gestire gli utenti controllati nelle organizzazioni aziendali di grandi dimensioni, potrebbe essere necessario monitorare tutti gli utenti in gruppi di grandi dimensioni. È possibile utilizzare PowerShell per configurare un gruppo di distribuzione per un criterio di supervisione globale per il gruppo assegnato. In questo modo è possibile monitorare migliaia di utenti con un singolo criterio e mantenere il criterio di supervisione aggiornato man mano che i nuovi dipendenti fanno parte dell'organizzazione.
 
-1. Creare un [gruppo di distribuzione](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dedicato per il criterio di supervisione globale con le proprietà seguenti: assicurarsi che questo gruppo di distribuzione non venga utilizzato per altri scopi o per altri servizi di Office 365.
+1. Creare un [gruppo di distribuzione](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps) dedicato per il criterio di supervisione globale con le proprietà seguenti: assicurarsi che questo gruppo di distribuzione non venga utilizzato per altri scopi o per altri servizi di Office 365.
 
     - **MemberDepartRestriction = chiuso**. Assicura che gli utenti non possano rimuoversi dal gruppo di distribuzione.
     - **MemberJoinRestriction = chiuso**. Assicura che gli utenti non possano aggiungersi al gruppo di distribuzione.
@@ -136,9 +136,9 @@ A tale scopo, è possibile aggiungere se stessi come membro del gruppo di ruolo 
 
 1. Accedere all' [https://protection.office.com/permissions](https://protection.office.com/permissions) utilizzo delle credenziali per un account di amministratore nell'organizzazione.
 
-2. Nel centro sicurezza & conformità, accedere a **autorizzazioni** e quindi fare clic su Aggiungi**+**().
+2. Nel centro sicurezza & conformità, accedere a **autorizzazioni** e quindi fare clic su Aggiungi ( **+** ).
 
-3. Nella sezione **ruoli** fare clic su Aggiungi (**+**) e scorrere verso il basso fino a **amministratore revisione di supervisione**. Aggiungere questo ruolo al gruppo di ruoli.
+3. Nella sezione **ruoli** fare clic su Aggiungi ( **+** ) e scorrere verso il basso fino a **amministratore revisione di supervisione**. Aggiungere questo ruolo al gruppo di ruoli.
 
 4. Nella sezione **membri** aggiungere gli utenti a cui si desidera gestire la supervisione della comunicazione per l'organizzazione.
 
@@ -167,7 +167,7 @@ Utilizzare un editor di testo, ad esempio il blocco note, per creare un file che
 
     Per informazioni più dettagliate, vedere [creare un tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type.md) e [creare un dizionario di parole chiave](create-a-keyword-dictionary.md)
 
-    Dopo la creazione del dizionario/lessico personalizzato, è possibile visualizzare le parole chiave configurate con il cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) oppure aggiungere e rimuovere termini utilizzando il cmdlet [set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) .
+    Dopo la creazione del dizionario/lessico personalizzato, è possibile visualizzare le parole chiave configurate con il cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/get-dlpkeyworddictionary) oppure aggiungere e rimuovere termini utilizzando il cmdlet [set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/set-dlpkeyworddictionary) .
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>Passaggio 4: configurare un criterio di supervisione (obbligatorio)
   
@@ -196,5 +196,5 @@ Dopo aver creato un criterio di supervisione della comunicazione, è consigliabi
     >[!NOTE]
     >I messaggi di posta elettronica soggetti a criteri definiti vengono elaborati in tempo quasi reale e possono essere testati immediatamente dopo la configurazione del criterio. Le chat in Microsoft teams possono richiedere fino a 24 ore per il processo completo in un criterio. 
 
-3. Accedere a Microsoft 365 come un revisore designato nei criteri di supervisione della comunicazione. Passare alla **supervisione** > del*criterio* > personalizzato**aperto** per visualizzare il report per il criterio.
+3. Accedere a Microsoft 365 come un revisore designato nei criteri di supervisione della comunicazione. Passare alla **supervisione**del  >  *criterio personalizzato*  >  **aperto** per visualizzare il report per il criterio.
 

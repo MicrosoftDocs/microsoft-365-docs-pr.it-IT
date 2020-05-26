@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 458e5c9797874f35e99c09edbc3ef45753132cba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25232dd30fe0fba0f4cc31acae3235012bb025a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631731"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352109"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -153,13 +153,13 @@ Tenere presente che un amministratore con autorizzazione di accesso completo a u
 
 Per impostazione predefinita, il controllo delle cassette postali aggiunge una nuova proprietà *DefaultAuditSet* a tutte le cassette postali. Il valore di questa proprietà indica se le azioni delle cassette postali predefinite (gestite da Microsoft) vengono controllate sulla cassetta postale.
 
-Per visualizzare il valore delle cassette postali degli utenti o delle \<cassette\> postali condivise, sostituire MailboxIdentity con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire il comando seguente in PowerShell di Exchange Online:
+Per visualizzare il valore delle cassette postali degli utenti o delle cassette postali condivise, sostituire \< MailboxIdentity \> con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire il comando seguente in PowerShell di Exchange Online:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-Per visualizzare il valore delle cassette postali di gruppo di \<Microsoft\> 365, sostituire MailboxIdentity con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale condivisa ed eseguire il comando seguente in PowerShell di Exchange Online:
+Per visualizzare il valore delle cassette postali di gruppo di Microsoft 365, sostituire \< MailboxIdentity \> con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale condivisa ed eseguire il comando seguente in PowerShell di Exchange Online:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -173,11 +173,11 @@ Il valore `Admin, Delegate, Owner` indica:
 
 Se un amministratore ha mai modificato le azioni della cassetta postale controllate per un tipo di accesso (utilizzando i parametri *AuditAdmin*, *AuditDelegate*o *AuditOwner* sul cmdlet **Set-Mailbox** ), il valore della proprietà sarà diverso.
 
-Ad esempio, il valore `Owner` della proprietà *DefaultAuditSet* in una cassetta postale utente o in una cassetta postale condivisa indica quanto segue:
+Ad esempio, il valore della `Owner` proprietà *DefaultAuditSet* in una cassetta postale utente o in una cassetta postale condivisa indica quanto segue:
 
 - Le azioni delle cassette postali predefinite per il proprietario della cassetta postale vengono controllate.
 
-- Le azioni delle cassette postali controllate `Delegate` per `Admin` i tipi di accesso e sono state modificate dalle azioni predefinite.
+- Le azioni delle cassette postali controllate per i `Delegate` `Admin` tipi di accesso e sono state modificate dalle azioni predefinite.
 
 Un valore vuoto per la proprietà *DefaultAuditSet* indica che le azioni delle cassette postali per tutti e tre i tipi di accesso sono state modificate nella cassetta postale dell'utente o in una cassetta postale condivisa.
 
@@ -185,10 +185,10 @@ Per ulteriori informazioni, vedere la sezione [modificare o ripristinare le azio
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>Visualizzare le azioni delle cassette postali registrate nelle cassette postali
 
-Per visualizzare le azioni delle cassette postali attualmente in fase di accesso alle cassette postali degli \<utenti\> o alle cassette postali condivise, sostituire MailboxIdentity con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire uno o più dei comandi seguenti in PowerShell di Exchange Online.
+Per visualizzare le azioni delle cassette postali attualmente in fase di accesso alle cassette postali degli utenti o alle cassette postali condivise, sostituire \< MailboxIdentity \> con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire uno o più dei comandi seguenti in PowerShell di Exchange Online.
 
 > [!NOTE]
-> Anche se è possibile aggiungere `-GroupMailbox` l'opzione ai comandi **Get-Mailbox** seguenti per le cassette postali del gruppo Microsoft 365, non credere ai valori restituiti. Le azioni delle cassette postali predefinite e statiche di cui è stato eseguito il controllo per le cassette postali del gruppo Microsoft 365 sono descritte nella sezione [azioni della cassetta postale per](#mailbox-actions-for-microsoft-365-group-mailboxes) le cassette postali di Microsoft 365 di questo argomento.
+> Anche se è possibile aggiungere l' `-GroupMailbox` opzione ai comandi **Get-Mailbox** seguenti per le cassette postali del gruppo Microsoft 365, non credere ai valori restituiti. Le azioni delle cassette postali predefinite e statiche di cui è stato eseguito il controllo per le cassette postali del gruppo Microsoft 365 sono descritte nella sezione [azioni della cassetta postale per](#mailbox-actions-for-microsoft-365-group-mailboxes) le cassette postali di Microsoft 365 di questo argomento.
 
 #### <a name="owner-actions"></a>Azioni del proprietario
 
@@ -223,9 +223,9 @@ Tuttavia, è possibile che l'organizzazione debba controllare un diverso insieme
 
 È possibile utilizzare due metodi diversi per specificare le azioni delle cassette postali:
 
-- *Replace* (overwrite) the existing mailbox actions usando la `action1,action2,...actionN`sintassi seguente:.
+- *Replace* (overwrite) the existing mailbox actions usando la sintassi seguente: `action1,action2,...actionN` .
 
-- *Aggiungere o rimuovere* azioni delle cassette postali senza influire su altri valori esistenti utilizzando `@{Add="action1","action2",..."actionN"}` la `@{Remove="action1","action2",..."actionN"}`sintassi seguente: oppure.
+- *Aggiungere o rimuovere* azioni delle cassette postali senza influire su altri valori esistenti utilizzando la sintassi seguente: `@{Add="action1","action2",..."actionN"}` oppure `@{Remove="action1","action2",..."actionN"}` .
 
 In questo esempio vengono modificate le azioni delle cassette postali di amministrazione per la cassetta postale denominata "Gabriela Laureano" sovrascrivendo le azioni predefinite con SoftDelete e HardDelete.
 
@@ -323,7 +323,7 @@ Tuttavia, è comunque possibile utilizzare il cmdlet **Set-MailboxAuditBypassAss
 
 - Le azioni amministrative eseguite dagli utenti ignorati non vengono registrate.
 
-Per ignorare la registrazione di controllo delle cassette postali per \<un\> utente specifico, sostituire MailboxIdentity con il nome, l'indirizzo di posta elettronica, l'alias o il nome dell'entità utente (nomeutente) dell'utente ed eseguire il comando seguente:
+Per ignorare la registrazione di controllo delle cassette postali per un utente specifico, sostituire \< MailboxIdentity \> con il nome, l'indirizzo di posta elettronica, l'alias o il nome dell'entità utente (nomeutente) dell'utente ed eseguire il comando seguente:
 
 ```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
@@ -343,16 +343,16 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
 
   Per recuperare le voci del registro di controllo delle cassette postali per gli utenti senza licenze E5, è possibile:
 
-  - Abilitare manualmente il controllo delle cassette postali su singole cassette di posta `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`(eseguire il comando). Dopo aver eseguito questa operazione, è possibile utilizzare le ricerche del registro di controllo nel centro sicurezza & Compliance o tramite l'API di attività di gestione di Office 365.
+  - Abilitare manualmente il controllo delle cassette postali su singole cassette di posta (eseguire il comando `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` ). Dopo aver eseguito questa operazione, è possibile utilizzare le ricerche del registro di controllo nel centro sicurezza & Compliance o tramite l'API di attività di gestione di Office 365.
   
     > [!NOTE]
-    > Se il controllo delle cassette postali è già abilitato per la cassetta postale, ma le ricerche non restituiscono alcun risultato, modificare _AuditEnabled_ il valore del `$false` parametro AuditEnabled consente e quindi `$true`tornare a.
+    > Se il controllo delle cassette postali è già abilitato per la cassetta postale, ma le ricerche non restituiscono alcun risultato, modificare il valore del parametro _AuditEnabled consente_ `$false` e quindi tornare a `$true` .
   
   - Utilizzare i cmdlet seguenti in PowerShell di Exchange Online:
 
-    - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) per eseguire una ricerca nel registro di controllo della cassetta postale per utenti specifici.
+    - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) per eseguire una ricerca nel registro di controllo della cassetta postale per utenti specifici.
 
-    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch) per eseguire una ricerca nel log di controllo delle cassette postali per utenti specifici e per inviare i risultati tramite posta elettronica ai destinatari specificati.
+    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch) per eseguire una ricerca nel log di controllo delle cassette postali per utenti specifici e per inviare i risultati tramite posta elettronica ai destinatari specificati.
 
   - Utilizzare l'interfaccia di amministrazione di Exchange (EAC) in Exchange Online per eseguire le operazioni seguenti:
 
@@ -362,11 +362,11 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
 
 - Per impostazione predefinita, i record del registro di controllo della cassetta postale vengono conservati per 90 giorni prima di essere eliminati. È possibile modificare il limite di validità dei record del registro di controllo utilizzando il parametro *AuditLogAgeLimit* sul cmdlet **Set-Mailbox** in Exchange Online PowerShell. Tuttavia, l'aumento di questo valore non consente di cercare eventi che hanno più di 90 giorni nel log di controllo.
 
-  Se si aumenta il limite di validità, è necessario utilizzare il cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell per eseguire una ricerca nel registro di controllo della cassetta postale dell'utente per i record precedenti a 90 giorni.
+  Se si aumenta il limite di validità, è necessario utilizzare il cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) in Exchange Online PowerShell per eseguire una ricerca nel registro di controllo della cassetta postale dell'utente per i record precedenti a 90 giorni.
 
 - Se la proprietà *AuditLogAgeLimit* di una cassetta postale è stata modificata prima del controllo delle cassette postali attivata per impostazione predefinita per l'organizzazione, il periodo di validità del registro di controllo esistente della cassetta postale non è stato modificato. In altre parole, il controllo delle cassette postali per impostazione predefinita non influisce sul limite di validità corrente dei record di controllo delle cassette postali.
 
-- Per modificare il valore di *AuditLogAgeLimit* in una cassetta postale di un gruppo di Microsoft 365, `-GroupMailbox` è necessario includere l'opzione nel comando **Set-Mailbox** .
+- Per modificare il valore di *AuditLogAgeLimit* in una cassetta postale di un gruppo di Microsoft 365, è necessario includere l' `-GroupMailbox` opzione nel comando **Set-Mailbox** .
 
 - I record del registro di controllo delle cassette postali sono archiviati in una sottocartella (denominata *Audit*) nella cartella elementi ripristinabili nella cassetta postale di ogni utente. Tenere presenti le considerazioni seguenti sui record di controllo delle cassette postali e sulla cartella elementi ripristinabili:
 

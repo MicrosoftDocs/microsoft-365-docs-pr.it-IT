@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi di supporto comuni per gli account di posta elettronica.
-ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e370a0220fcc42854d3cc570e175ab96845f7d4b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034212"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351129"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Eseguire una ricerca nel registro di controllo per esaminare i problemi di supporto comuni
 
@@ -128,7 +128,7 @@ Se si determina che l'inoltro della posta elettronica non deve essere impostato 
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-Per ulteriori informazioni sui parametri relativi all'inoltro della posta elettronica, vedere l'articolo [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) .
+Per ulteriori informazioni sui parametri relativi all'inoltro della posta elettronica, vedere l'articolo [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) .
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>Determinare se un utente ha eliminato gli elementi di posta elettronica
 
@@ -192,9 +192,9 @@ Dopo aver eseguito la ricerca, i record di controllo per questa attività vengon
 
 a. Nel campo **ObjectID** viene visualizzato il nome completo della regola di posta in arrivo. Questo nome include l'alias della cassetta postale dell'utente (ad esempio, Sarad) e il nome della regola di posta in arrivo (ad esempio, "move messages from admin").
 
-b. Nel campo **parametri** viene visualizzata la condizione della regola di posta in arrivo. In questo esempio, la condizione è specificata dal parametro *from* . Il valore definito per il parametro *from* indica che la regola di posta in arrivo agisce sul messaggio di posta elettronica inviato da admin@alpinehouse.onmicrosoft.com. Per un elenco completo dei parametri che possono essere utilizzati per definire le condizioni delle regole di posta in arrivo, vedere l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. Nel campo **parametri** viene visualizzata la condizione della regola di posta in arrivo. In questo esempio, la condizione è specificata dal parametro *from* . Il valore definito per il parametro *from* indica che la regola di posta in arrivo agisce sul messaggio di posta elettronica inviato da admin@alpinehouse.onmicrosoft.com. Per un elenco completo dei parametri che possono essere utilizzati per definire le condizioni delle regole di posta in arrivo, vedere l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
 
-c. Il parametro *MoveToFolder* consente di specificare l'azione per la regola di posta in arrivo. In questo esempio, i messaggi ricevuti da admin@alpinehouse.onmicrosoft.com vengono spostati nella cartella denominata *AdminSearch*. Per un elenco completo dei parametri che possono essere utilizzati per definire l'azione di una regola di posta in arrivo, vedere anche l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+c. Il parametro *MoveToFolder* consente di specificare l'azione per la regola di posta in arrivo. In questo esempio, i messaggi ricevuti da admin@alpinehouse.onmicrosoft.com vengono spostati nella cartella denominata *AdminSearch*. Per un elenco completo dei parametri che possono essere utilizzati per definire l'azione di una regola di posta in arrivo, vedere anche l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
 
 d. Il campo **userid** indica l'utente che ha creato la regola di posta in arrivo specificata nel campo **ObjectID** . Questo utente viene inoltre visualizzato nella colonna **utente** della pagina dei risultati di ricerca.
 
@@ -202,7 +202,7 @@ d. Il campo **userid** indica l'utente che ha creato la regola di posta in arriv
 
 Quando si esaminano i record di controllo nel log di controllo, è possibile che vengano visualizzati record che indicano che un utente esterno è stato autenticato da Azure Active Directory e che ha eseguito correttamente l'accesso all'organizzazione. Ad esempio, un amministratore in contoso.onmicrosoft.com può visualizzare un record di controllo che indica che un utente di un'organizzazione diversa (ad esempio fabrikam.onmicrosoft.com) ha eseguito correttamente l'accesso a contoso.onmicrosoft.com. Analogamente, è possibile che vengano visualizzati i record di controllo che indicano che gli utenti con un account Microsoft (MSA), ad esempio Outlook.com o Live.com, hanno effettuato correttamente l'accesso all'organizzazione. In questi casi, l'attività controllata è l' **utente**che ha effettuato l'accesso. 
 
-Tale comportamento è preimpostato. Azure Active Directory (Azure AD), il servizio directory, consente di fare qualcosa chiamato *autenticazione pass-through* quando un utente esterno tenta di accedere a un sito di SharePoint o a una posizione di OneDrive nell'organizzazione. Quando l'utente esterno tenta di eseguire questa operazione, viene richiesto di immettere le proprie credenziali. Azure Active Directory utilizza le credenziali per autenticare l'utente, in modo che solo Azure AD verifichi che l'utente sia quello che dicono di essere. L'indicazione dell'account di accesso con esito positivo nel record di controllo è il risultato di Azure AD Authenticating the user. L'account di accesso con esito positivo non significa che l'utente sia stato in grado di accedere alle risorse o di eseguire altre azioni nell'organizzazione. Indica solo che l'utente è stato autenticato da Azure AD. Per consentire a un utente pass-through di accedere alle risorse di SharePoint o OneDrive, un utente dell'organizzazione deve condividere in modo esplicito una risorsa con l'utente esterno inviando un collegamento di condivisione di un invito o di condivisione anonima. 
+Si tratta di un comportamento legato alla progettazione del prodotto. Azure Active Directory (Azure AD), il servizio directory, consente di fare qualcosa chiamato *autenticazione pass-through* quando un utente esterno tenta di accedere a un sito di SharePoint o a una posizione di OneDrive nell'organizzazione. Quando l'utente esterno tenta di eseguire questa operazione, viene richiesto di immettere le proprie credenziali. Azure Active Directory utilizza le credenziali per autenticare l'utente, in modo che solo Azure AD verifichi che l'utente sia quello che dicono di essere. L'indicazione dell'account di accesso con esito positivo nel record di controllo è il risultato di Azure AD Authenticating the user. L'account di accesso con esito positivo non significa che l'utente sia stato in grado di accedere alle risorse o di eseguire altre azioni nell'organizzazione. Indica solo che l'utente è stato autenticato da Azure AD. Per consentire a un utente pass-through di accedere alle risorse di SharePoint o OneDrive, un utente dell'organizzazione deve condividere in modo esplicito una risorsa con l'utente esterno inviando un collegamento di condivisione di un invito o di condivisione anonima. 
 
 > [!NOTE]
 > Azure AD consente l'autenticazione pass-through solo per *le applicazioni di terze parti*, ad esempio SharePoint Online e OneDrive for business. Non è consentito per altre applicazioni di terze parti.

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 4850fa9f44bb4f9b23b40bc4e30c6e8ba4fac0ff
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: 9ce3ad0bfa7b50dfd5dfa5b5e2a35e6d70600e46
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340811"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351988"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -416,7 +416,7 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 > [!NOTE]
 > **New-HostedContentFilterPolicy** e **Set-HostedContentFilterPolicy** contengono un parametro precedente _ZapEnabled_, un parametro più recente _PhishZapEnabled_ e i parametri _SpamZapEnabled_. Il parametro _ZapEnabled_ è stato dichiarato obsoleto a febbraio 2020. I parametri _PhishZapEnabled_ e _SpamZapEnabled_ ereditavano i propri valori dal parametro _ZapEnabled_. Tuttavia, se si utilizzano i parametri _PhishZapEnabled_ e _SpamZapEnabled_ in un comando o si utilizzano le impostazioni **ZAP della posta indesiderata** o **ZAP del phishing** nei criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità, il valore del parametro _ZapEnabled_ viene ignorato. In altre parole, non utilizzare il parametro _ZapEnabled_. Utilizzare, invece, i parametri _PhishZapEnabled_ e _SpamZapEnabled_.
 
-Per informazioni dettagliate su sintassi e parametri, vedere [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy).
+Per informazioni dettagliate su sintassi e parametri, vedere [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
 #### <a name="step-2-use-powershell-to-create-a-spam-filter-rule"></a>Passaggio 2 - Utilizzo di PowerShell per creare una regola di filtro della posta indesiderata
 
@@ -436,7 +436,7 @@ In questo esempio viene creata una nuova regola di filtro della posta indesidera
 New-HostedContentFilterRule -Name "Contoso Executives" -HostedContentFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-Per informazioni dettagliate su sintassi e parametri, vedere [New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterrule).
+Per informazioni dettagliate su sintassi e parametri, vedere [New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterrule).
 
 ### <a name="use-powershell-to-view-spam-filter-policies"></a>Utilizzo di PowerShell per visualizzare criteri di filtro della posta indesiderata
 
@@ -458,7 +458,7 @@ In questo esempio vengono visualizzati tutti i valori delle proprietà per il cr
 Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 ```
 
-Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterpolicy).
+Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy).
 
 ### <a name="use-powershell-to-view-spam-filter-rules"></a>Utilizzo di PowerShell per visualizzare regole di filtro della posta indesiderata
 
@@ -496,7 +496,7 @@ In questo esempio vengono visualizzati tutti i valori delle proprietà per la re
 Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterrule).
+Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterrule).
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Utilizzo di PowerShell per modificare criteri di filtro della posta indesiderata
 
@@ -512,7 +512,7 @@ Per modificare un criterio di filtro della posta indesiderata, utilizzare questa
 Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Per informazioni dettagliate su sintassi e parametri, vedere [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy).
+Per informazioni dettagliate su sintassi e parametri, vedere [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>Utilizzo di PowerShell per modificare regole di filtro della posta indesiderata
 
@@ -532,7 +532,7 @@ In questo esempio viene rinominata la regola di filtro della posta indesiderata 
 Set-HostedContentFilterRule -Identity "{Fabrikam Spam Filter}" -Name "Fabrikam Spam Filter"
 ```
 
-Per informazioni dettagliate su sintassi e parametri, vedere [Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule).
+Per informazioni dettagliate su sintassi e parametri, vedere [Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterrule).
 
 ### <a name="use-powershell-to-enable-or-disable-spam-filter-rules"></a>Utilizzo di PowerShell per abilitare o disabilitare le regole di filtro della posta indesiderata
 
@@ -556,7 +556,7 @@ In questo esempio viene abilitata la stessa regola.
 Enable-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-Per informazioni dettagliate su sintassi e parametri, vedere [Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedcontentfilterrule) e [Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedcontentfilterrule).
+Per informazioni dettagliate su sintassi e parametri, vedere [Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedcontentfilterrule) e [Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedcontentfilterrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-spam-filter-rules"></a>Utilizzare PowerShell per impostare una priorità sulle regole di filtro della posta indesiderata
 
@@ -596,7 +596,7 @@ In questo esempio viene rimosso il criterio di filtro della posta indesiderata d
 Remove-HostedContentFilterPolicy -Identity "Marketing Department"
 ```
 
-Per informazioni dettagliate su sintassi e parametri, vedere [Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterpolicy).
+Per informazioni dettagliate su sintassi e parametri, vedere [Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterpolicy).
 
 ### <a name="use-powershell-to-remove-spam-filter-rules"></a>Utilizzo di PowerShell per rimuovere regole di filtro della posta indesiderata
 
@@ -614,7 +614,7 @@ In questo esempio viene rimossa la regola di filtro della posta indesiderata den
 Remove-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-Per informazioni dettagliate su sintassi e parametri, vedere [Remove-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterrule).
+Per informazioni dettagliate su sintassi e parametri, vedere [Remove-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterrule).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
