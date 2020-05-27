@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: f25232dd30fe0fba0f4cc31acae3235012bb025a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352109"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371430"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -39,7 +39,8 @@ Di seguito sono illustrati alcuni vantaggi del controllo delle cassette postali 
 - Si dispone di un criterio di controllo delle cassette postali coerente all'interno dell'organizzazione (perché si controllano le stesse azioni per tutte le cassette postali).
 
 > [!NOTE]
->* La cosa importante da ricordare sul rilascio del controllo delle cassette postali per impostazione predefinita è: non è necessario eseguire alcuna operazione per la gestione del controllo delle cassette postali. Tuttavia, per ulteriori informazioni, personalizzare il controllo delle cassette postali dalle impostazioni predefinite o disattivarlo completamente, questo argomento può essere di aiuto. <br><br>* Per impostazione predefinita, solo gli eventi di controllo delle cassette postali per gli utenti E5 sono disponibili nelle ricerche del registro di controllo nel centro sicurezza & conformità o tramite l'API di attività di gestione di Office 365. Per ulteriori informazioni, vedere la sezione [altre informazioni](#more-information) in questo argomento.
+>* La cosa importante da ricordare sul rilascio del controllo delle cassette postali per impostazione predefinita è: non è necessario eseguire alcuna operazione per la gestione del controllo delle cassette postali. Tuttavia, per ulteriori informazioni, personalizzare il controllo delle cassette postali dalle impostazioni predefinite o disattivarlo completamente, questo argomento può essere di aiuto.
+>- Per impostazione predefinita, solo gli eventi di controllo delle cassette postali per gli utenti E5 sono disponibili nelle ricerche del registro di controllo nel centro sicurezza & conformità o tramite l'API di attività di gestione di Office 365. Per ulteriori informazioni, vedere la sezione [altre informazioni](#more-information) in questo argomento.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Verificare che il controllo delle cassette postali per impostazione predefinita sia attivato
 

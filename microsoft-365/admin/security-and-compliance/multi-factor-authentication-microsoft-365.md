@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sull'autenticazione a più fattori in Microsoft 365.
-ms.openlocfilehash: 128296b7dbc37ba5ebffb25a87bce589f8e5a904
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: eba9ae38dbc17a22abb5d5ef92b8cd30a827ae11
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340847"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371453"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
 
@@ -151,17 +151,10 @@ Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni p
 |:-------|:-----|:-------|:-------|
 | **Impostazioni predefinite per la sicurezza** | Non è possibile utilizzare i criteri di accesso condizionale |   È possibile utilizzare i criteri di accesso condizionale | App Microsoft Authenticator |
 | **Criteri di accesso condizionale** |Se alcuni sono abilitati, non è possibile abilitare le impostazioni predefinite per la sicurezza | Se sono tutti disabilitati, è possibile abilitare le impostazioni predefinite per la sicurezza | Specificato dall'utente durante la registrazione della MFA |
-| **Impostazione dell'account per utente (non consigliata)** | Sottoposto a override dalle impostazioni predefinite di sicurezza e dai criteri di accesso condizionale che richiedono l'AMF | Sottoposto a override da criteri di accesso condizionale e impostazioni predefinite per la sicurezza | Specificato dall'utente durante la registrazione della MFA|
+| **Impostazione dell'account per utente (non consigliata)** | Esegue l'override delle impostazioni predefinite per la sicurezza e i criteri di accesso condizionale che richiedono l'AMF a ogni accesso | Sottoposto a override da criteri di accesso condizionale e impostazioni predefinite per la sicurezza | Specificato dall'utente durante la registrazione della MFA|
 ||||
 
 Se le impostazioni predefinite per la sicurezza sono abilitate, tutti i nuovi utenti vengono richieste per la registrazione dell'AMF e per l'utilizzo dell'app Microsoft Authenticator all'accesso successivo.
-
-Tuttavia, se un utente ha un telefono meno recente che può ricevere messaggi di testo ma non è in grado di eseguire l'app Microsoft Authenticator, è possibile abilitare l'autenticazione Master su quell'account utente specifico e farli registrare utilizzando il metodo di verifica supplementare del codice di testo con i passaggi seguenti:
-
-1. Disabilitare le impostazioni predefinite per la sicurezza nel portale di Azure.
-2. Abilitare l'autenticazione master per l'account utente nell'interfaccia di amministrazione di Microsoft 365.
-3. Fare in modo che l'utente esegua l'accesso e registri il metodo di autenticazione del codice di testo e dell'AMF.
-4. Al termine, abilitare le impostazioni predefinite per la sicurezza nel portale di Azure
 
 ## <a name="ways-to-manage-mfa-settings"></a>Modalità di gestione delle impostazioni dell'AMF
 

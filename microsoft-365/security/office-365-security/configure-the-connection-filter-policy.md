@@ -18,18 +18,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server.
-ms.openlocfilehash: 14221298ed8e85bd776e7a58a1d2e427c3d19438
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6fb1fd95a701802d9373c07b7661196271ac1e2c
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352012"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371475"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
 Se si è un cliente Microsoft 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, è possibile utilizzare il filtro connessioni in EOP (in particolare, il criterio del filtro di connessione predefinito) per identificare i server di posta elettronica di origine buoni o difettosi tramite gli indirizzi IP. I componenti principali del criterio di filtro di connessione predefinito sono:
 
-- **Elenco indirizzi IP consentiti**: ignorare i filtri per la posta indesiderata per tutti i messaggi in arrivo dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo. Per gli scenari in cui il filtro di posta indesiderata può ancora verificarsi nei messaggi provenienti da queste origini, vedere gli [scenari in cui i messaggi provenienti da origini nell'elenco indirizzi IP consentiti sono ancora filtrati](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) in questo argomento Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP consentiti dovrebbe adattarsi alla strategia globale dei mittenti attendibili, vedere [creare elenchi di mittenti attendibili in EOP](create-safe-sender-lists-in-office-365.md).
+- **Elenco indirizzi IP consentiti**: ignorare il filtro della posta indesiderata per tutti i messaggi in arrivo dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo. Per gli scenari in cui il filtro di posta indesiderata può ancora verificarsi nei messaggi provenienti da queste origini, vedere gli [scenari in cui i messaggi provenienti da origini nell'elenco indirizzi IP consentiti sono ancora filtrati](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) in questo argomento Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP consentiti dovrebbe adattarsi alla strategia globale dei mittenti attendibili, vedere [creare elenchi di mittenti attendibili in EOP](create-safe-sender-lists-in-office-365.md).
 
 - **Elenco indirizzi IP bloccati**: bloccare tutti i messaggi in ingresso dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo di indirizzo IP. I messaggi in arrivo vengono rifiutati, non vengono contrassegnati come posta indesiderata e non si verifica alcun filtro aggiuntivo. Per ulteriori informazioni sul modo in cui l'elenco indirizzi IP bloccati dovrebbe adattarsi alla strategia complessiva dei mittenti bloccati, vedere [create Block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 

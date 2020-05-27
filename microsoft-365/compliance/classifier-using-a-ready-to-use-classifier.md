@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 viene fornito con un certo numero di classificatori incorporati che è possibile utilizzare per identificare ed etichettare il contenuto nell'organizzazione. In questo argomento viene illustrato come prepararsi per l'utilizzo di questi classificatori.
-ms.openlocfilehash: 485ef8013c5a6656be9d0e025048154ec8b2f250
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292422"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371408"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Testing di classificatori incorporati tramite etichette di conservazione (anteprima)
 
@@ -33,18 +33,18 @@ Per ulteriori informazioni sui classificatori addestrabili, vedere [Guida introd
 Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 
 > [!CAUTION]
-> Il classificatore incorporato del **linguaggio offensivo** è obsoleto perché produce un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece i classificatori incorporati per la **minaccia**, la **profanità**e la **molestia** .
+> Il classificatore predefinito **Linguaggio offensivo** è stato deprecato perché generava un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece i classificatori incorporati per la **minaccia**, la **profanità**e la **molestia** .
 
 - **Resumes**: rileva gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale
 - **Codice sorgente**: consente di rilevare gli elementi che contengono una serie di istruzioni e istruzioni scritte nella Top 25 linguaggi di programmazione utilizzati su GitHub
 
-|nome della lingua|||||
-|---------|---------|---------|---------|---------|
-|ActionScript|C        |C #       |C++     |Clojure  |
-|CoffeeScript|CSS     |Andare       |Haskell |HTML     |
-|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
-|Perl     |PHP      |Python   |R        |Trascizione fonetica     |
-|Scala    |Shell    |Swift    |Tex      |Script VIM|
+  |nome della lingua|||||
+  |---------|---------|---------|---------|---------|
+  |ActionScript|C        |C #       |C++     |Clojure  |
+  |CoffeeScript|CSS     |Andare       |Haskell |HTML     |
+  |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+  |Perl     |PHP      |Python   |R        |Trascizione fonetica     |
+  |Scala    |Shell    |Swift    |Tex      |Script VIM|
 
 > [!NOTE]
 > Il codice sorgente è addestrato per rilevare quando la maggior parte del testo è codice sorgente. Non rileva il testo del codice sorgente intervallato da testo normale.
@@ -60,8 +60,8 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 
 1. Raccogliere gli elementi di contenuto di prova monouso che si ritiene appartengano alla categoria del classificatore incorporato (corrispondenze positive) e quelli che non devono essere inclusi (corrispondenze negative) nella categoria che si sta testando.
 
-> [!IMPORTANT]
-> Gli elementi di esempio non devono essere crittografati e devono essere in inglese.
+   > [!IMPORTANT]
+   > Gli elementi di esempio non devono essere crittografati e devono essere in inglese.
 
 2. Creare una cartella di SharePoint Online dedicata. attendere almeno un'ora che la cartella venga aggiunta all'indice di ricerca. Prendere nota dell'URL della cartella.
 
@@ -79,7 +79,7 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 
 9. Scegliere `Apply label to content that matches a trainable classifier` .
 
-![selezione di classificatore come condizione](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+   ![selezione di classificatore come condizione](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 10. Scegliere il classificatore dall'elenco, in questo caso`Source Code`
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44339914"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371464"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -85,13 +85,13 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 - **Resumes**: rileva gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale
 - **Codice sorgente**: consente di rilevare gli elementi che contengono una serie di istruzioni e istruzioni scritte nella Top 25 linguaggi di programmazione utilizzati su GitHub
 
-|nome della lingua|||||
-|---------|---------|---------|---------|---------|
-|ActionScript|C        |C #       |C++     |Clojure  |
-|CoffeeScript|CSS     |Andare       |Haskell |HTML     |
-|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
-|Perl     |PHP      |Python   |R        |Trascizione fonetica     |
-|Scala    |Shell    |Swift    |Tex      |Script VIM|
+  |nome della lingua|||||
+  |---------|---------|---------|---------|---------|
+  |ActionScript|C        |C #       |C++     |Clojure  |
+  |CoffeeScript|CSS     |Andare       |Haskell |HTML     |
+  |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+  |Perl     |PHP      |Python   |R        |Trascizione fonetica     |
+  |Scala    |Shell    |Swift    |Tex      |Script VIM|
 
 > [!NOTE]
 > Il codice sorgente è addestrato per rilevare quando la maggior parte del testo è codice sorgente. Non rileva il testo del codice sorgente intervallato da testo normale.

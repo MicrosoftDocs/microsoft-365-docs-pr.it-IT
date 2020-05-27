@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione con gli utenti in teams.
-ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160028"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371499"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -44,10 +44,10 @@ Controllare le impostazioni delle relazioni organizzative per garantire che la c
 
 Per impostare le impostazioni delle relazioni organizzative
 
-1. Accedere a Microsoft Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com).
+1. Accedere a Microsoft Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
 2. Nel riquadro di spostamento a sinistra, fare clic su **Azure Active Directory**.
-3. Nel riquadro **Panoramica** fare clic su **relazioni organizzative**.
-4. Nel riquadro **relazioni organizzative** fare clic su **Impostazioni**.
+3. Nel riquadro **Panoramica** fare clic su **identità esterne**.
+4. Nel riquadro **identità organizzativa** fare clic su **impostazioni di collaborazione esterna**.
 5. Verificare che **gli amministratori e gli utenti del ruolo invitato ospite possano invitare** e che **i membri possano invitare** siano entrambi impostati su **Sì**.
 6. Se si apportano modifiche, fare clic su **Salva**.
 
@@ -161,12 +161,12 @@ Per impostare le impostazioni di condivisione a livello di sito
 Le impostazioni di condivisione Guest sono ora configurate, quindi è possibile iniziare ad aggiungere utenti interni e ospiti al team. 
 
 Per invitare gli utenti interni a un team
-1. Nel team, fare clic su **altre opzioni** (**\*\***), quindi fare clic su **Aggiungi membro**.
+1. Nel team, fare clic su **altre opzioni** ( **\*\*\*** ), quindi fare clic su **Aggiungi membro**.
 2. Digitare il nome della persona che si desidera invitare.
 3. Fare clic su **Aggiungi**, quindi fare clic su **Chiudi**.
 
 Per invitare gli ospiti a un team
-1. Nel team, fare clic su **altre opzioni** (**\*\***), quindi fare clic su **Aggiungi membro**.
+1. Nel team, fare clic su **altre opzioni** ( **\*\*\*** ), quindi fare clic su **Aggiungi membro**.
 2. Digitare l'indirizzo di posta elettronica dell'ospite che si desidera invitare.
 3. Fare clic su **modifica informazioni Guest**.
 4. Digitare il nome completo dell'ospite e fare clic sul segno di spunta.
