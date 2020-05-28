@@ -9,18 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5dfdb1209a7a8acd8282f6cef661bf3005579cdc
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b7af4ce3df336bf6002a7a7e2592e8b2c5b38924
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253327"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404131"
 ---
-# <a name="payment-information-for-india"></a><span data-ttu-id="879cf-103">Informazioni di pagamento per l'India</span><span class="sxs-lookup"><span data-stu-id="879cf-103">Payment information for India</span></span>
+# <a name="payment-information-for-india"></a><span data-ttu-id="8e61f-103">Informazioni di pagamento per l'India</span><span class="sxs-lookup"><span data-stu-id="8e61f-103">Payment information for India</span></span>
 
-<span data-ttu-id="879cf-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="879cf-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="8e61f-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="8e61f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="879cf-105">Seguire le istruzioni per il pagamento sulla fattura e sui numeri di fattura di riferimento sulla sua rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="879cf-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>  
+<span data-ttu-id="8e61f-105">Seguire le istruzioni per il pagamento sulla fattura e sui numeri di fattura di riferimento sulla sua rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="8e61f-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>  
