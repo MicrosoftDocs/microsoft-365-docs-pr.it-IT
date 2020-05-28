@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e7950503fad3a8d0185ffdc8ec0b3456ba5b9034
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3f9308b51517c88325dfb56c1fae5f853f4b6c6c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360077"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398595"
 ---
 # <a name="contact-support-for-bahrain-kingdom-of"></a>Contattare il supporto per Bahrain, Regno di
 

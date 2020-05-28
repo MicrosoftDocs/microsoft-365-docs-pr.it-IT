@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 20816b8b-8b21-458f-81c1-320b8116597e
 ROBOTS: NOINDEX
 description: "Informazioni su come iscriversi a Office 365 con l'indirizzo di posta elettronica personale, se non si preferisce aggiungere un dominio personalizzato. "
-ms.openlocfilehash: c49da60af4d369ea2529ddaf5e9b9f0c44251319
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0b188754b169f6f0f0fb807a8ba236497a7439ff
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257256"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399255"
 ---
 # <a name="signing-up-for-office-365-with-a-personal-email-address"></a>Iscrizione a Office 365 con un indirizzo di posta elettronica personale
 
@@ -34,7 +35,7 @@ Quando si esegue l'iscrizione a Office 365 con l'indirizzo di posta elettronica 
   
 Se si sceglie di aggiungere un dominio personalizzato adesso, è possibile accedere a tutte le funzionalità Premium seguenti:
   
-|**Funzionalità**|**Office 365 con posta elettronica personale**|**Office 365 con dominio personalizzato**|
+|**Caratteristica**|**Office 365 con posta elettronica personale**|**Office 365 con dominio personalizzato**|
 |:-----|:-----|:-----|
 |**OneDrive <sup>1, 2</sup>**| [OneDrive personale](https://onedrive.live.com/about/en-us/plans/)| [OneDrive for Business](https://onedrive.live.com/about/en-us/business/) |
 |**Applicazioni di Office: Word, Excel, PowerPoint, OneNote, Outlook, Access (solo PC)**| Sì | Sì 
@@ -52,7 +53,7 @@ Se si sceglie di aggiungere un dominio personalizzato adesso, è possibile acced
   
 ## <a name="how-to-add-a-domain"></a>Come aggiungere un dominio
 
-Nell'interfaccia di amministrazione, accedere a **** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> > di installazione**Aggiungi dominio**.
+Nell'interfaccia di amministrazione, accedere a domini di **installazione**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>  >  **Aggiungi dominio**.
   
 
 

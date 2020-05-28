@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: Informazioni su come convalidare i dati di contatto per conformarsi alle normative ICANN.
-ms.openlocfilehash: c9a663a5795a542dfac01f7d4d29e7a3e76d16c9
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e96ae69af282af84595283a431ccb73f869f1454
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212234"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399351"
 ---
 # <a name="icann-verification-of-contact-information"></a>Verifica ICANN delle informazioni di contatto
 

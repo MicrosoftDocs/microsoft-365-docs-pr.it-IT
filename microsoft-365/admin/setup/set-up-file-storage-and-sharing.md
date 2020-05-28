@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Informazioni su come utilizzare OneDrive e un sito del team per l'archiviazione e la condivisione dei file.
-ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e41e180417cb8543a73b08668d18ef9d2998c782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208187"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398835"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Configurare l'archiviazione e la condivisione di file
 
@@ -144,7 +145,7 @@ Ecco come sincronizzare i file archiviati nel sito del team con il desktop:
 
     ![Modificare la cartella locale in questa schermata](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. I file nei siti del team verranno visualizzati nel riquadro sinistro di Esplora file sotto il nome dell'organizzazione. I file in OneDrive verranno visualizzati in "OneDrive- \< nome dell'organizzazione \> "
+6. I file nei siti del team verranno visualizzati nel riquadro sinistro di Esplora file sotto il nome dell'organizzazione. I file in OneDrive verranno visualizzati in "OneDrive- \<Name of Organization\> "
 
     ![Vedere cosa è stato sincronizzato nella cartella locale](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   

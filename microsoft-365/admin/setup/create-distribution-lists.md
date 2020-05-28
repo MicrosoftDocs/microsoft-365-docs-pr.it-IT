@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: Inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario creando la distribuzione (elenco).
-ms.openlocfilehash: a845055acbc5428e0e261997f946f75dc4701d57
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627643"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398967"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Creare gruppi di distribuzione nell'interfaccia di amministrazione di Microsoft 365
   
@@ -58,7 +59,7 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
     
     Non è possibile trovare l'app che si sta cercando? Dall'icona di avvio delle app, seleziona **tutte le app** per visualizzare un elenco alfabetico delle app disponibili. Da qui, è possibile cercare un'app specifica. 
     
-2. \> Selezionare **gruppi gruppi nel** riquadro di spostamento sinistro e quindi fare **clic su** **Aggiungi gruppo**. 
+2. Selezionare **gruppi gruppi** \> **Groups** nel riquadro di spostamento sinistro e quindi fare clic su **Aggiungi gruppo**. 
       
 3. Nel campo **scegliere un tipo di gruppo** scegliere **distribuzione**e quindi fare clic su **Avanti**.
   

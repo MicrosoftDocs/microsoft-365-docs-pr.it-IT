@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Vengono fornite informazioni sulle app integrate e su come attivarle per consentire alle app di terze parti di accedere all'informazione di Microsoft 365 degli utenti.
-ms.openlocfilehash: 2e292afc4ab33eef1ace91808f93588b9cec4702
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 070150662daeefb2a4d02c7e0940dfd242bd4b5f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022109"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399339"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Attivazione o disattivazione di App integrate
 
@@ -35,7 +36,7 @@ Quando le app integrate sono attivate, gli utenti dell'organizzazione possono co
 
 Ecco come attivare o disattivare App integrate.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla \> pagina **Impostazioni** \> **Impostazioni,** alla scheda **Servizi** e quindi selezionare **app integrate**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Settings** \> **Impostazioni** impostazioni, alla \> scheda **Servizi** e quindi selezionare **app integrate**.
 
 2. Nella pagina **app integrate** , selezionare l'opzione per abilitare o disabilitare le app integrate.
 

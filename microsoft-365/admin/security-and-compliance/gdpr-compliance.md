@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Informazioni su come Microsoft 365 for business può essere di aiuto per il processo di regolamento generale sulla protezione dei dati (GDPR).
-ms.openlocfilehash: a77de1b835e4cf6e312b8976a972ac10eb60e3b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 066803e15fe107c8a20b61d9871b6807629f2a9f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627717"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399159"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR semplificato: una guida per le piccole imprese
 

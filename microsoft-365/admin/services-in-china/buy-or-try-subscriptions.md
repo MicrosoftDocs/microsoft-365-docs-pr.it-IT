@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEA150
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: Informazioni su come provare a utilizzare un abbonamento a Office 365 o acquistarlo subito, aggiungere abbonamenti o ottenere componenti aggiuntivi per un account di Office 365 esistente gestito da 21Vianet in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 0781430eaf2ccfeed7c31665029d514be9cc5f2e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1ad668a5eb22ab38ac458fa7b1867941e1d6612
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360837"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399087"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>Acquistare o provare gli abbonamenti per Office 365 gestito da 21Vianet
 
@@ -65,7 +66,7 @@ ms.locfileid: "42360837"
 
 ## <a name="add-subscriptions-or-add-ons-to-an-existing-office-365-account"></a>Aggiungere abbonamenti o componenti aggiuntivi a un account di Office 365 esistente
 
-1. Nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=850627), andare alla pagina **servizi di acquisto** per la **fatturazione** \> .
+1. Nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=850627), andare alla pagina servizi di acquisto per la **fatturazione** \> **Purchase services** .
 
 2. Selezionare i servizi che si desidera acquistare, selezionare **Acquista**, quindi fare clic **su Estrai**.
 

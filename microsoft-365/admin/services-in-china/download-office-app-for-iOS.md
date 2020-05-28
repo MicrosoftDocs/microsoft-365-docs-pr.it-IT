@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
 - GEA150
 description: Per ulteriori informazioni, vedere l'app Microsoft Office per iOS per Office 365 gestito da 21Vianet e come scaricarlo per i clienti in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: fcdd1af001de59f5f2fec3cea091c96818d643ca
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: bd36684f7fa5365c3f680128cbbd0132c6a8876d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266982"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399051"
 ---
 # <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>App di Office per iOS per Office 365 gestito da 21Vianet
 

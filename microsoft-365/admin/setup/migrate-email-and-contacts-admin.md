@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -26,12 +27,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Informazioni su come importare contatti, calendari, messaggi di posta elettronica da Gmail o da un altro provider di posta elettronica a Microsoft 365. '
-ms.openlocfilehash: 3200ee91e4ca01fb946cbb045805a213958be000
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 6fa8ff991bf9c02743b81d7947d9486e8f7b7b0f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165156"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398871"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Eseguire la migrazione di posta elettronica e contatti a Microsoft 365
 

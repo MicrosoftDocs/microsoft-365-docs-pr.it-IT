@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
 - GEA150
 description: Per ulteriori informazioni, vedere l'app Microsoft Office per Android per Office 365 gestito da 21Vianet e come scaricarlo per i clienti in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3ccf9d25d7b9ac6c036b83fdaf084a95c72b4d62
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: 4ebb044835321a91109659ca9e58094345bc0d0c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547677"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399063"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>App di Office per Android per Office 365 gestito da 21Vianet
 

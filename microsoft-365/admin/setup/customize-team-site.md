@@ -17,18 +17,19 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: In questo articolo vengono fornite informazioni su come personalizzare, organizzare e gestire il sito del team per l'archiviazione e la condivisione dei file.
-ms.openlocfilehash: 465cd3781fb5023fa6a1c943b41fa7802d7b4a45
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a220fecdf6cafe1e042cc894631a224d0ab9a4fe
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165108"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398931"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizzare il sito del team per l'archiviazione e la condivisione dei file
 

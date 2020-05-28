@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Informazioni sulle operazioni necessarie per configurare Microsoft 365 for business.
-ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794040"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398847"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Pianificare la configurazione di Microsoft 365 per le aziende
 
@@ -49,7 +50,7 @@ La procedura guidata di installazione illustra l'installazione delle app Microso
 > [!NOTE]
 > Se è necessario [assegnare ruoli di amministratore in Microsoft 365 for business](../add-users/assign-admin-roles.md) agli utenti che si aggiungono nella procedura guidata, è possibile farlo in un secondo momento nella pagina **utenti** . 
   
-Se la configurazione guidata non viene completata, è possibile completare le attività di installazione in qualsiasi momento dalla**configurazione**dell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339) > . Da qui è possibile migrare la posta elettronica e i contatti da un altro servizio di posta elettronica, cambiare il dominio dell'account di amministratore, gestire le informazioni di fatturazione, aggiungere o rimuovere utenti, reimpostare le password ed eseguire altre funzioni aziendali. Per ulteriori informazioni sulle differenze tra l'installazione guidata e la pagina di **installazione** , vedere [differenze tra l'installazione guidata di Microsoft 365 e la pagina di installazione](o365-setup-wizard-and-setup-page.md).
+Se la configurazione guidata non viene completata, è possibile completare le attività di installazione in qualsiasi momento dalla configurazione dell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **Setup**. Da qui è possibile migrare la posta elettronica e i contatti da un altro servizio di posta elettronica, cambiare il dominio dell'account di amministratore, gestire le informazioni di fatturazione, aggiungere o rimuovere utenti, reimpostare le password ed eseguire altre funzioni aziendali. Per ulteriori informazioni sulle differenze tra l'installazione guidata e la pagina di **installazione** , vedere [differenze tra l'installazione guidata di Microsoft 365 e la pagina di installazione](o365-setup-wizard-and-setup-page.md).
 
 Per qualsiasi difficoltà, siamo disponibili telefonicamente. [Opzioni di assistenza](../contact-support-for-business-products.md)
   
@@ -93,7 +94,7 @@ Se si prevede di passare da un servizio di posta elettronica esistente a Microso
   
 Se si intende utilizzare Microsoft 365 per la posta elettronica:
   
-- Per spostare l'indirizzo di posta elettronica aziendale, ad esempio *rob\@contoso.com*, da un altro servizio di posta elettronica a Microsoft 365, è necessario indirizzare la posta elettronica alla nuova cassetta postale di Microsoft 365. A tale scopo, selezionare **Esegui la migrazione dei dati degli utenti** nella pagina di **installazione** , in cui vengono illustrati gli aggiornamenti che è necessario apportare all'host di dominio, passo dopo passo.
+- Per spostare l'indirizzo di posta elettronica aziendale, ad esempio *rob \@ contoso.com*, da un altro servizio di posta elettronica a Microsoft 365, è necessario indirizzare la posta elettronica alla nuova cassetta postale di Microsoft 365. A tale scopo, selezionare **Esegui la migrazione dei dati degli utenti** nella pagina di **installazione** , in cui vengono illustrati gli aggiornamenti che è necessario apportare all'host di dominio, passo dopo passo.
 
 - Una volta aggiornato l'host del dominio, le modifiche diventano in genere effettive dopo una o due ore. Tuttavia, tenere presente che a volte può richiedere fino a 72 ore affinché le modifiche vengano aggiornate su Internet.
 

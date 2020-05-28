@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
@@ -20,13 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Informazioni sull'iscrizione a Microsoft 365 self-service e sui programmi self-service disponibili, ad esempio Microsoft Power Apps, Microsoft Flow e Dynamics 365 per i servizi finanziari.
-ms.custom: okr_SMB
-ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045273"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399291"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso dell'iscrizione self-service nell'organizzazione
 
@@ -65,4 +67,4 @@ Di seguito sono elencati i programmi self-service attualmente disponibili. Quest
 |**Minecraft Education Edition** <br/> |Usando Minecraft come piattaforma di apprendimento, i docenti possono motivare e stimolare ogni studente a raggiungere obiettivi più alti e accendere la passione per lo studio. È possibile iscriversi a una community di docenti e imparare a usare Minecraft per sbloccare le potenzialità degli studenti.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |È possibile caricare e condividere video nell'intera organizzazione per migliorare la comunicazione, la partecipazione e l'apprendimento.  <br/> |[Sign up &amp; Day 0 experience](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Automatizzare la potenza** <br/> |Power automatizzate è un prodotto che consente di configurare i flussi di lavoro automatizzati tra le app e i servizi preferiti per sincronizzare i file, ottenere notifiche, raccogliere dati e altro ancora.  <br/> |[Iscriviti e accedi per il servizio automatizzato di alimentazione](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Automatizzare la potenza](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
-|**Agenti virtuali di alimentazione** <br/> |Power Virtual Agents consente ai team di creare facilmente bot potenti utilizzando un'interfaccia grafica senza codice guidata e senza il bisogno di scienziati o sviluppatori di dati. Power Virtual Agents affronta molti dei principali problemi relativi alla creazione di bot nell'industria odierna. Elimina il divario tra gli esperti del soggetto e i team di sviluppo che costruiscono i bot e la lunga latenza tra i team che riconoscono un problema e aggiornano il bot per risolverlo.  <br/> |[Informazioni su licenze e accessi](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Iscriversi a Power Virtual Agents](https://aka.ms/TryPVA) <br/> |
+|**Power Virtual Agents** <br/> |Power Virtual Agents consente ai team di creare facilmente bot potenti utilizzando un'interfaccia grafica senza codice guidata e senza il bisogno di scienziati o sviluppatori di dati. Power Virtual Agents affronta molti dei principali problemi relativi alla creazione di bot nell'industria odierna. Elimina il divario tra gli esperti del soggetto e i team di sviluppo che costruiscono i bot e la lunga latenza tra i team che riconoscono un problema e aggiornano il bot per risolverlo.  <br/> |[Informazioni su licenze e accessi](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Iscriversi a Power Virtual Agents](https://aka.ms/TryPVA) <br/> |

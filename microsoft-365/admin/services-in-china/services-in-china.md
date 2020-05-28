@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Per ulteriori informazioni, vedere Office 365 gestito da 21Vianet che è stato creato per soddisfare le esigenze di servizi cloud sicuri, affidabili e scalabili in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155410"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399015"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 gestito da 21Vianet
 
@@ -122,17 +123,17 @@ Per le organizzazioni che eseguono versioni precedenti o miste di Exchange Serve
 
 |**Versione di Exchange locale**|**Versione del server ibrido di Exchange**|**Procedura guidata di configurazione ibrida supportata?**|**Funzionalità ibride supportate**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | N/D  <br/> | Sì  <br/> | Tutto  <br/> |
-| 2013 CU5  <br/> | N/D  <br/> | Sì  <br/> | Tutto  <br/> |
-| 2013 SP1  <br/> | 2013 CU5  <br/> | Sì  <br/> | Tutto  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | Sì  <br/> | Tutto  <br/> |
+| 2016  <br/> | N/D  <br/> | Sì  <br/> | Tutti  <br/> |
+| 2013 CU5  <br/> | N/D  <br/> | Sì  <br/> | Tutti  <br/> |
+| 2013 SP1  <br/> | 2013 CU5  <br/> | Sì  <br/> | Tutti  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | Sì  <br/> | Tutti  <br/> |
 | Combinazione di 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Sì  <br/> | All, ad eccezione di eDiscovery/Archiving sul posto, accesso OWA (vedere la tabella seguente)  <br/> |
 | Combinazione di 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Sì  <br/> | Solo disponibilità configurata manualmente  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | No  <br/> | Nessuno  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | No  <br/> | Nessuna  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Sì  <br/> | Solo disponibilità  <br/> |
 | 2007  <br/> | 2013 SP1 o 2010 SP3No  <br/> | N/D  <br/> | Non supportato  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | N/D  <br/> | Non supportato  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | No  <br/> | Nessuno  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | No  <br/> | Nessuna  <br/> |
 
    
 > [!IMPORTANT]
