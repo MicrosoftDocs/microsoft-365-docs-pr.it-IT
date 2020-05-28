@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Gestire la posta elettronica e i calendari
+title: Gestire posta elettronica e calendari
 summary: Consultare queste risorse per aiutare gli amministratori a svolgere attività comuni oppure visualizzare il riquadro di spostamento a sinistra per un elenco completo.
 metadata:
-  title: Gestire la posta elettronica e i calendari
+  title: Gestire posta elettronica e calendari
   description: Gestire le impostazioni di posta elettronica, i gruppi di distribuzione, le impostazioni di sicurezza e configurare le cassette postali condivise
   ms.service: O365-administration
   ms.topic: landing-page
@@ -10,12 +10,13 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 65b0a249c5574ca149c0abe1e0ed879f649143fe
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: dd490fa2dd85189931e9917ba5c3ba60a2742b46
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952764"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44400065"
 landingContent:
 - title: Gestione della posta elettronica
   linkLists:
@@ -29,7 +30,7 @@ landingContent:
     links:
     - text: Aggiungere un altro alias di posta elettronica
       url: add-another-email-alias-for-a-user.md
-    - text: Utilizzo del dominio personalizzato
+    - text: Usare il dominio personalizzato
       url: change-email-address.md
     - text: Configurare l'inoltro della posta elettronica
       url: configure-email-forwarding.md

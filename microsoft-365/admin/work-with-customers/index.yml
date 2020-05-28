@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Utilizzo dei clienti
+title: Lavorare con i clienti
 summary: Consultare queste risorse per aiutare gli amministratori a svolgere attività comuni oppure visualizzare il riquadro di spostamento a sinistra per un elenco completo.
 metadata:
-  title: Utilizzo dei clienti
+  title: Lavorare con i clienti
   description: Condivisione di documenti e utilizzo di team per la collaborazione e la riunione
   ms.service: O365-administration
   ms.topic: landing-page
@@ -10,20 +10,21 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 299b7fa4cb98f05a1f5a3248fad59d3e8ea414ed
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: fddd5668a4b0d11af80ad7ff0847efdcc0b42117
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952720"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44401131"
 landingContent:
-- title: Utilizzo dei clienti
+- title: Lavorare con i clienti
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Condividere esternamente siti e file
       url: ../manage/share-sites-with-external-users.md
-    - text: Condividere i calendari con gli utenti Guest
+    - text: Condividere i calendari con gli utenti guest
       url: ../manage/share-calendars-with-external-users.md
   - linkListType: video
     links:
@@ -33,7 +34,7 @@ landingContent:
       url: https://support.office.com/article/928d1eef-61e2-49ec-b754-c2fe86b34824
     - text: Chat con dipendenti e clienti
       url: https://support.office.com/article/65748808-a403-462c-a6e1-b169e5bc6c92
-    - text: Pianificare una riunione di teams con gli ospiti
+    - text: Pianificare una riunione di Teams con guest
       url: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
-    - text: Partecipare a una riunione di teams con gli ospiti
+    - text: Partecipare a una riunione di Teams con guest
       url: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8
