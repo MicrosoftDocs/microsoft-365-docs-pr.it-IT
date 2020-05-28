@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Visualizzare i criteri e le azioni del dispositivo accedendo a Microsoft 365 for business con le credenziali di amministratore globale.
-ms.openlocfilehash: e514b48c17de492bd1eaa75b48418ce0f2ff493e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f65365584d8b05f4df012d9f5727a74c33c06ae8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635685"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403571"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Visualizzazione e gestione di criteri e dispositivi
 
@@ -44,7 +45,7 @@ ms.locfileid: "43635685"
   
 ## <a name="view-and-manage-devices"></a>Visualizzazione e gestione dei dispositivi
 
-1. Sulla barra di spostamento sinistra, scegliere **gestione** **dispositivi** \> . 
+1. Sulla barra di spostamento sinistra, **Devices** scegliere \> **gestione**dispositivi. 
     
     In questa pagina è possibile selezionare uno o più dispositivi e rimuovere i dati della società. Per i dispositivi Windows 10 per cui sono state configurate le impostazioni di protezione dispositivo, è anche possibile scegliere di ripristinare le impostazioni del produttore.
   

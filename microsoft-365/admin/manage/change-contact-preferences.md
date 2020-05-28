@@ -17,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: Aggiornare le informazioni di contatto dell'organizzazione e scegliere le comunicazioni relative al prodotto Microsoft 365 che si desidera ricevere.
-ms.openlocfilehash: e802a45c9b038c7256def259090c58f92b6a7cb8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399789"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407933"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Modificare le preferenze di contatto per le comunicazioni Microsoft
 
@@ -51,4 +51,4 @@ In caso di domande sulla fatturazione, vedere:
   
 - [Modificare gli indirizzi di fatturazione per Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario in Microsoft 365 for business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Gestire metodi di pagamento](../../commerce/billing-and-payments/manage-payment-methods.md)

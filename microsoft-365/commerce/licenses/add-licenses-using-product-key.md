@@ -16,6 +16,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - TopSMBIssues
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Informazioni su come aggiungere licenze all'abbonamento.
-ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 370ed833a1c7c5142c7725666885a945e1524b53
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045405"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404011"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key
 
@@ -42,7 +43,7 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Individuare la sottoscrizione a cui si desidera aggiungere le licenze. Nella sezione **licenze** selezionare **Aggiungi altre licenze**.
 
@@ -78,7 +79,7 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">servizi di &</a> di **fatturazione** \>.  
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei servizi di & di **fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Products & services</a> .  
 
 2. Individuare la sottoscrizione a cui si desidera aggiungere le licenze. Selezionare l'elenco a discesa **altre azioni** e quindi scegliere **rinnova o Aggiungi licenza con token**.
 
@@ -99,7 +100,7 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Individuare l'abbonamento che si desidera estendere. Nella sezione **fatturazione** selezionare **Estendi data di fine**.
 

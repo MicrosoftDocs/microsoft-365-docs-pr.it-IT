@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Scoprire i modi in cui è possibile aggiornare i dispositivi Windows a Windows 10 Pro per utilizzare le funzionalità di sicurezza e di rete aziendale più avanzate.
-ms.openlocfilehash: f0cedda49dbff2a8c2884bb52e240fabfbeb4537
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c982f59ded0b0d2e1cd321f5856b38bd792eebed
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632052"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403531"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Eseguire l'aggiornamento di dispositivi Windows a Windows 10 Pro
 
@@ -44,11 +45,11 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
   
 Per eseguire l'aggiornamento a Windows 10 Pro, sono disponibili diverse opzioni. È possibile:
     
-- Installare l'aggiornamento dal [sito](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; di download del software Microsoft selezionare questa opzione se il dispositivo da cui si è connessi è nello stesso dispositivo di quello che si desidera aggiornare. 
+- Installare l'aggiornamento dal [sito di download del software Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; selezionare questa opzione se il dispositivo da cui si è connessi è nello stesso dispositivo di quello che si desidera aggiornare. 
 
     - Dal sito di download del software, fare clic su **Aggiorna** per avviare l'aggiornamento del dispositivo a Windows 10 Pro Creators Update. 
     
-- Creare un supporto di installazione tramite lo [strumento](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; di creazione multimediale selezionare questa opzione per creare un supporto di installazione per l'aggiornamento di Windows 10 Pro Creator (unità flash USB o file ISO) per installare Windows 10 in un PC diverso da quello utilizzato.
+- Creare un supporto di installazione tramite lo [strumento di creazione multimediale](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; selezionare questa opzione per creare un supporto di installazione per l'aggiornamento di Windows 10 Pro Creator (unità flash USB o file ISO) per installare Windows 10 in un PC diverso da quello utilizzato.
 
     - Leggere le istruzioni su come utilizzare lo strumento e creare il supporto di installazione. 
 
@@ -61,4 +62,4 @@ Per completare la configurazione dei dispositivi Android e iOS, vedere [configur
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 for business
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

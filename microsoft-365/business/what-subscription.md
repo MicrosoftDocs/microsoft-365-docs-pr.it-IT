@@ -14,16 +14,17 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Determinare se Office 365 E3, Microsoft 365 business standard o Microsoft 365 Business Premium è appropriato per la propria azienda.
-ms.openlocfilehash: 480129ad8251770a4153b7ecc0777bdf03759012
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 10799de6e588a92782e17c8efe3fb17ba219bd48
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635665"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403719"
 ---
 # <a name="what-subscription-is-right-for-your-small-business"></a>Quale sottoscrizione è adatta per le piccole aziende?
 

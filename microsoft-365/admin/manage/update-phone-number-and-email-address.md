@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione. Se si desidera reimpostare la propria password di amministratore, sono necessarie queste informazioni.
-ms.openlocfilehash: fd0cf89391d87692f87db5d83b8d054783e9310a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bd8ee28cbc7982ea5b057fecb34d362557a5d5a9
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399507"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407921"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 
@@ -58,4 +58,4 @@ In caso di domande sulla fatturazione, vedere:
   
 - [Modificare gli indirizzi di fatturazione per Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario in Microsoft 365 for business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Gestire metodi di pagamento](../../commerce/billing-and-payments/manage-payment-methods.md)

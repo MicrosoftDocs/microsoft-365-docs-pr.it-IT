@@ -25,12 +25,12 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401763"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407957"
 ---
 # <a name="pay-for-your-subscription"></a>Pagare l'abbonamento
 
@@ -48,7 +48,7 @@ Quando si configura l'abbonamento, è possibile pagare con addebito sulla carta 
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>Pagare con carta di credito o conto corrente bancario
 
-Quando si sceglie il pagamento tramite carta di credito o conto corrente bancario, il giorno successivo alla data della fattura verrà automaticamente addebitato l'importo dell'abbonamento fino al termine dello stesso. È possibile [aggiornare le informazioni sulla carta di credito o sul conto corrente bancario](add-update-or-remove-credit-card-or-bank-account.md) tutte le volte che si vuole. È anche possibile scegliere di [Ricevere una copia dell'estratto conto tramite posta elettronica](#receive-a-copy-of-your-billing-statement-in-email).
+Quando si sceglie il pagamento tramite carta di credito o conto corrente bancario, il giorno successivo alla data della fattura verrà automaticamente addebitato l'importo dell'abbonamento fino al termine dello stesso. È possibile [gestire i metodi di pagamento](manage-payment-methods.md) ogni volta che è necessario. È anche possibile scegliere di [Ricevere una copia dell'estratto conto tramite posta elettronica](#receive-a-copy-of-your-billing-statement-in-email).
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>Cosa succede se la carta di credito viene rifiutata e si supera così la scadenza del pagamento?
 
@@ -63,12 +63,12 @@ Se si paga con carta di credito e questa viene rifiutata, si riceverà un messag
 
 2. Trovare l'abbonamento con il saldo insoluto. Nella sezione **Fatturazione**, accanto a **L'abbonamento ha un pagamento scaduto** selezionare **Liquidazione del saldo**.
 
-3. Se si è il proprietario della carta di credito, è possibile cambiare la data di scadenza della carta, scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
+3. Se si è il proprietario della carta di credito, è possibile cambiare la data di scadenza della carta, scegliere una carta diversa o [aggiungere una nuova carta](manage-payment-methods.md).
 
     > [!NOTE]
     > Scegliendo **Liquidazione del saldo** viene addebitato l'intero saldo insoluto sull'account, che potrebbe essere superiore all'importo dovuto visualizzato altrove.
 
-4. Se non si è il titolare della carta di credito, è possibile scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
+4. Se non si è il titolare della carta di credito, è possibile scegliere una carta diversa o [aggiungere una nuova carta](manage-payment-methods.md).
 
 5. Dopo aver aggiornato le informazioni della carta di credito o cambiato la carta su cui addebitare l'abbonamento, scegliere **Salva**.
 
@@ -80,12 +80,12 @@ Se si paga con carta di credito e questa viene rifiutata, si riceverà un messag
 
 2. Selezionare l'abbonamento che si vuole cambiare. Nella sezione **La mia fattura** scegliere **Paga adesso**.
 
-3. Se si è il proprietario della carta di credito, è possibile cambiare la data di scadenza della carta, scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
+3. Se si è il proprietario della carta di credito, è possibile cambiare la data di scadenza della carta, scegliere una carta diversa o [aggiungere una nuova carta](manage-payment-methods.md).
 
     > [!NOTE]
     > Scegliendo **Paga adesso**, viene addebitato l'intero saldo insoluto sull'account, che potrebbe essere superiore all'importo dovuto visualizzato altrove.
 
-4. Se non si è il titolare della carta di credito, è possibile scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
+4. Se non si è il titolare della carta di credito, è possibile scegliere una carta diversa o [aggiungere una nuova carta](manage-payment-methods.md).
 
 5. Dopo aver aggiornato le informazioni della carta di credito o cambiato la carta su cui addebitare l'abbonamento, scegliere **Invia**. Verrà visualizzato il messaggio di conferma seguente: "La modalità di pagamento è stata aggiornata e tutti gli addebiti arretrati sono stati liquidati. Grazie".
 
@@ -311,6 +311,6 @@ Se il motivo per cui è stato inizialmente scelto il pagamento tramite fattura, 
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario](add-update-or-remove-credit-card-or-bank-account.md)
+[Gestire metodi di pagamento](manage-payment-methods.md)
 
 [Come leggere la fattura](understand-your-invoice2.md)

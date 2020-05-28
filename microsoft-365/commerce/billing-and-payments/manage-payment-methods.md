@@ -17,18 +17,19 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: Informazioni su come gestire i metodi di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: d31da19c10eb61719ba813d271dbdcf573a5aff3
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 0320f71180a5c2c127217ebf01854943409e6386
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322160"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403679"
 ---
 # <a name="manage-payment-methods"></a>Gestire metodi di pagamento
 
@@ -70,7 +71,7 @@ L'aggiunta di un metodo di pagamento non associa gli abbonamenti. Per assegnare 
 
 4. Immettere le informazioni per la nuova scheda o il conto corrente bancario, quindi selezionare **Aggiungi**.
 
-## <a name="update-payment-method-details"></a>Aggiornare i dettagli del metodo di pagamento
+## <a name="update-payment-method-details"></a>Aggiornare i dettagli della modalità di pagamento
 
 È possibile modificare il nome sulla carta di credito o di debito, l'indirizzo di fatturazione o la data di scadenza di un metodo di pagamento esistente. Tuttavia, non è possibile modificare il numero di carta o di account. Se il numero dell'account è stato modificato, [sostituirlo con un metodo di pagamento diverso](#replace-a-payment-method), quindi [eliminare quello precedente](#delete-a-payment-method).
 
@@ -86,9 +87,9 @@ L'aggiunta di un metodo di pagamento non associa gli abbonamenti. Per assegnare 
 1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
 ::: moniker-end
 
-2. Selezionare la riga del metodo di pagamento da aggiornare. Nel riquadro a destra, selezionare **modifica**.
+2. Selezionare la riga della modalità di pagamento da aggiornare. Nel riquadro destro, selezionare **Modifica**.
 
-3. Aggiornare le informazioni sul metodo di pagamento, incluso il nome sulla carta di credito o di debito, l'indirizzo di fatturazione o la data di scadenza, quindi selezionare **Salva**.
+3. Aggiornare le informazioni sulla modalità di pagamento, inclusi il nome sulla carta di credito o di debito, l'indirizzo di fatturazione o la data di scadenza e quindi selezionare **Salva**.
 
 ## <a name="replace-a-payment-method"></a>Sostituire un metodo di pagamento
 
@@ -108,19 +109,19 @@ Per modificare il metodo di pagamento per una singola sottoscrizione, vedere [mo
 1. Nell'interfaccia di amministrazione, accedere alla pagina dei metodi di pagamento per la **fatturazione** > **& pagamenti** > **Payment methods** .
 ::: moniker-end
 
-2. Selezionare la riga del metodo di pagamento da sostituire. Nel riquadro destro sono elencati tutti i profili di fatturazione e i singoli abbonamenti che utilizzano il metodo di pagamento selezionato.
+2. Selezionare la riga della modalità di pagamento da sostituire. Nel riquadro destro sono elencati tutti i profili di fatturazione e i singoli abbonamenti che usano la modalità di pagamento selezionata.
 
-3. Nel riquadro a destra, selezionare **Sostituisci metodo di pagamento per tutti gli elementi**.
+3. Nel riquadro destro selezionare **Sostituisci metodo di pagamento per tutti gli articoli**.
 
-4. Per utilizzare un metodo di pagamento esistente, sceglierne uno dall'elenco a discesa, quindi selezionare **Sostituisci**.
+4. Per usare una modalità di pagamento esistente, sceglierne una nell'elenco a discesa, quindi selezionare **Sostituisci**.
     > [!NOTE]
-    > Se si dispone di abbonamenti associati a un profilo di fatturazione, è possibile utilizzare solo una carta di credito o di debito per pagarli. Se si dispone di account bancari elencati nella pagina **metodi di pagamento** , non sono disponibili per la selezione nell'elenco a discesa.
+    > Se si hanno abbonamenti associati a un profilo di fatturazione, si può usare solo una carta di credito o di debito per il pagamento. Se nella pagina **Modalità di pagamento** sono elencati conti bancari, non sono disponibili per la selezione nell'elenco a discesa.
 
-5. Per aggiungere un nuovo metodo di pagamento, selezionare **Aggiungi metodo di pagamento**.
+5. Per aggiungere una nuova modalità di pagamento, selezionare **Aggiungi modalità di pagamento**.
 
-6. Nel riquadro **Aggiungi un metodo di pagamento** , immettere le informazioni sull'account, quindi selezionare **Salva**. È necessario utilizzare un metodo di pagamento proveniente dallo stesso paese del tenant.
+6. Nel riquadro **Aggiungi un metodo di pagamento** immetti le informazioni sull'account e scegli **Salva**. È necessario usare una modalità di pagamento dello stesso paese/area geografica del tenant.
 
-7. Il nuovo metodo di pagamento è già selezionato nell'elenco a discesa. Selezionare **Sostituisci**.
+7. La nuova modalità di pagamento è già selezionata nell'elenco a discesa. Selezionare **Sostituisci**.
 
 ## <a name="change-a-payment-method-for-a-single-subscription"></a>Modificare un metodo di pagamento per un singolo abbonamento
 
@@ -198,11 +199,11 @@ Se un metodo di pagamento è collegato a qualsiasi sottoscrizione o profilo di f
     > [!NOTE]
     > Se si dispone di abbonamenti associati a un profilo di fatturazione, è possibile utilizzare solo una carta di credito per pagarli. Se si dispone di account bancari elencati nella pagina **metodi di pagamento** , non sono disponibili per la scelta nell'elenco a discesa.
 
-5. Per aggiungere un nuovo metodo di pagamento, selezionare **Aggiungi metodo di pagamento**.
+5. Per aggiungere una nuova modalità di pagamento, selezionare **Aggiungi modalità di pagamento**.
 
 6. Scegliere il tipo di metodo di pagamento che si desidera aggiungere, immettere le informazioni dell'account e quindi fare clic su **Salva**.
 
-7. Il nuovo metodo di pagamento è già selezionato nell'elenco a discesa. Selezionare **Avanti**.
+7. La nuova modalità di pagamento è già selezionata nell'elenco a discesa. Selezionare **Avanti**.
 
 8. Selezionare **Elimina**.
 

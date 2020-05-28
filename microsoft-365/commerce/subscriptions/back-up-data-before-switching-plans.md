@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Backup di Outlook, OneDrive, Yammer e contenuto di SharePoint prima di modificare i piani di Microsoft 365.
-ms.openlocfilehash: a482d59e92cd7055362663ed92630322e4ccf68a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708096"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403619"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Eseguire il backup dei dati prima di cambiare i piani di Microsoft 365 per le aziende
 
@@ -61,7 +62,7 @@ Per impostazione predefinita, il formato dell'URL del sito Web del team è:
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-dove _ \<orgDomain\> _ è l'URL dell'organizzazione.
+dove _\<orgDomain\>_ è l'URL dell'organizzazione.
   
 Ad esempio, se il dominio dell'organizzazione è contoso.onmicrosoft.com, l'URL diretto del sito del team sarà https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
   

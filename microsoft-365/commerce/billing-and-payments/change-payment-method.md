@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Informazioni su come modificare il metodo di pagamento per l'abbonamento aziendale.
-ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401811"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407969"
 ---
 # <a name="change-your-payment-method"></a>Cambiare la modalità di pagamento
 
@@ -43,7 +43,7 @@ Quando si acquista un abbonamento, si sceglie di pagare con carta di credito o c
 > [!IMPORTANT]
 > Il pagamento con un conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
 
- **Si vogliono modificare le informazioni sulla carta di credito o il conto corrente bancario?** Vedere [aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario](add-update-or-remove-credit-card-or-bank-account.md).
+ **Si vogliono modificare le informazioni sulla carta di credito o il conto corrente bancario?** Vedere [Manage Payment methods](manage-payment-methods.md).
 
  **Si desidera modificare la frequenza con cui si è fatturati?** Vedere [modificare la frequenza di pagamento](change-payment-frequency.md).
   
@@ -67,7 +67,7 @@ Quando si acquista Office 365 per le aziende, si sceglie se pagare tramite carta
   
  **Si vuole cambiare la frequenza di pagamento?** Se si desidera modificare la frequenza di pagamento per l'abbonamento, sia da annuale a mensile o mensile a annuale, è necessario [chiamare il supporto tecnico Microsoft](../../admin/contact-support-for-business-products.md) per assistenza.
   
- **Si vogliono modificare le informazioni sulla carta di credito o il conto corrente bancario?** Vedere [aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario](add-update-or-remove-credit-card-or-bank-account.md).
+ **Si vogliono modificare le informazioni sulla carta di credito o il conto corrente bancario?** Vedere [Manage Payment methods](manage-payment-methods.md).
   
  **Che cosa occorre fare in presenza di saldi insoluti?**
   
