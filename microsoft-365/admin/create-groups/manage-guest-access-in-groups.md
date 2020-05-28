@@ -13,24 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere gli ospiti a un gruppo di Microsoft 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: 48f3339968040eeb82a93d6540c70f0bbea0754a
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140544"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386782"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gestire l'accesso guest nei gruppi di Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -55,7 +56,7 @@ L'accesso guest nei gruppi è spesso utilizzato come parte di uno scenario più 
 
 Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile farlo nell'interfaccia di amministrazione di Microsoft 365.
 
-1. Nell'interfaccia di amministrazione, passare **Settings** \> alla pagina **Impostazioni e** selezionare **Microsoft 365 gruppi**.
+1. Nell'interfaccia di amministrazione, passare alla pagina **Impostazioni** \> **Settings** e selezionare **Microsoft 365 gruppi**.
   
 2. Nella pagina **Microsoft 365 groups** , scegliere se si desidera consentire agli utenti esterni all'organizzazione di accedere alle risorse del gruppo o consentire ai proprietari di gruppi di aggiungere persone esterne all'organizzazione.
 
@@ -63,7 +64,7 @@ Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile
 
 Se l'ospite è già presente nella directory, è possibile aggiungerli ai gruppi dall'interfaccia di amministrazione di Microsoft 365.
   
-1. Nell'interfaccia di amministrazione, andare alla**Groups**  > pagina **gruppi.**
+1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi**  >  **Groups** .
   
 2. Fare clic sul gruppo a cui si desidera aggiungere l'ospite e selezionare **Visualizza tutti e Gestisci membri** nella scheda **membri** . 
   
@@ -90,7 +91,7 @@ Se si desidera consentire l'accesso guest alla maggior parte dei gruppi, ma si d
 > [!NOTE]
 > È necessario disporre dei diritti di amministratore globale per eseguire questi comandi. 
 
-Eseguire lo script seguente, modificando * / * il nome del gruppo in cui si desidera bloccare l'accesso guest.
+Eseguire lo script seguente, modificando */<GroupName/>* il nome del gruppo in cui si desidera bloccare l'accesso guest.
 
 ```PowerShell
 $GroupName = "<GroupName>"

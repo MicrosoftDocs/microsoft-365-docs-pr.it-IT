@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
 description: "Ottenere il report sull'utilizzo di dispositivi di Yammer per conoscere i dispositivi su cui gli utenti utilizzano Yammer. "
-ms.openlocfilehash: 1dfd72c8974aa10b3774d2cdb17ac1bf82b9501b
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 17fcf6c7d46988f0783b5097d3381b9bc08cbbe7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047012"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387454"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-report sull'utilizzo di dispositivi Yammer
 

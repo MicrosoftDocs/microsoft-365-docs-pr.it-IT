@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Aggiungere nuovi dipendenti a Microsoft 365 for business per le app di posta elettronica, Skype e Office.
-ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0df9ed292cd4d8010c779cb822b84f9916cf1928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049498"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387310"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Aggiungere un nuovo dipendente a Microsoft 365
 
@@ -63,7 +64,7 @@ Poiché non avranno ancora accesso ai messaggi di posta elettronica, non inviare
 
 Analogamente a Facebook, Amazon o Gmail, il dipendente accede all'utente per l'utilizzo di Microsoft 365. Fornire le seguenti informazioni di accesso:
   
-- Accedere a [https://www.office.com](https://www.office.com).
+- Accedere a [https://www.office.com](https://www.office.com) .
     
 - Selezionare **Accedi**e quindi digitare l'ID utente e la password.
     
@@ -76,7 +77,7 @@ Di seguito è illustrato un riferimento rapido per iniziare a eseguire le operaz
   
 |**Attività**|**Trovare i dettagli**|
 |:-----|:-----|
-|Accedere a Office  <br/> |Andare a [https://www.office.com](https://www.office.com), selezionare **Accedi**e quindi immettere l'ID utente e la password.  <br/> |
+|Accedere a Office  <br/> |Andare a [https://www.office.com](https://www.office.com) , selezionare **Accedi**e quindi immettere l'ID utente e la password.  <br/> |
 |Installare le app di Office nel computer.  <br/><br/> |Quando si esegue l'accesso, la Home page contiene un collegamento per il download e l'installazione di app come Word e Outlook.  Selezionare **installa Office**.         Per istruzioni, vedere [come installare Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).  <br/> |
 |Configurare il messaggio di posta elettronica in Outlook 2016.  <br/> |Dopo aver installato le app di Office nel computer, configurare il messaggio di posta elettronica. Per istruzioni, vedere [How to setup Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).  <br/> |
 |Configurare Skype for business in modo che sia possibile connettersi a colleghi o partner commerciali nell'azienda o in tutto il mondo. È possibile avviare conversazioni con le chiamate di messaggistica istantanea, vocali o video.  <br/> |[Installare Skype for business nel computer in uso](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Per informazioni su come usare Skype for business, [Guarda un video.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>È possibile configurare Skype for business in modo che i dipendenti possano contattare persone esterne alla propria azienda che utilizzano l'app gratuita Skype? In caso contrario, informare il nuovo dipendente in modo che sappia cosa aspettarsi quando si utilizza Skype for business.  <br/> |

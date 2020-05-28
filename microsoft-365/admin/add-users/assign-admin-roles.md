@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Informazioni su come assegnare ruoli di amministratore a un utente o a più utenti dell'azienda in modo che possano eseguire attività specifiche nell'interfaccia di amministrazione.
-ms.openlocfilehash: 7842714d7a57c7db9c3f0afe7e4b2e353137b66f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618789"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387238"
 ---
 # <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore
 
@@ -65,9 +66,9 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>Assegnare i ruoli di amministratore agli utenti che utilizzano i ruoli
 
-1. Nell' > **interfaccia di amministrazione** **passare a ruoli ruoli per** visualizzare tutti i ruoli di amministratore disponibili per l'organizzazione.
+1. Nell'interfaccia di amministrazione **passare a ruoli ruoli** > **Roles** per visualizzare tutti i ruoli di amministratore disponibili per l'organizzazione.
 2. Selezionare il ruolo di amministratore a cui si desidera assegnare l'utente.
-3. Selezionare > **Add** **Admins assegnati** .
+3. Selezionare **Add Admins assegnati** > **Add**.
 4. Digitare il **nome visualizzato** o l' **username**dell'utente e quindi selezionare l'utente nell'elenco dei suggerimenti.
 5. Aggiungere più utenti fino a quando non si è completata.
 6. Selezionare **Salva**e quindi l'utente verrà aggiunto all'elenco degli amministratori assegnati.

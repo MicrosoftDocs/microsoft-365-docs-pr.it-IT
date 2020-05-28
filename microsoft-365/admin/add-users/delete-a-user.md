@@ -16,6 +16,7 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Informazioni su come eliminare un account utente. Decidere cosa fare con l'indirizzo di posta elettronica dell'utente, il contenuto di OneDrive e se mantenere la licenza del prodotto o smettere di pagarla.
-ms.openlocfilehash: a179915ae92def2a967dc86378346bb905c923e4
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 4102fe4ac297a1f426b3bf575e748a72b323ebb6
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049460"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387190"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Eliminare un utente dall'organizzazione
   
@@ -65,7 +66,7 @@ Prima di iniziare, considerare cosa si vuole fare con la posta elettronica e il 
 |Posta elettronica  <br/> | Se si concede a un altro utente l'accesso alla posta elettronica dell'utente eliminato, la cassetta postale dell'utente eliminato verrà convertita in una cassetta postale condivisa. Il nuovo proprietario della cassetta postale può quindi accedere alla cassetta postale e monitorare il nuovo messaggio di posta elettronica. Sono inoltre disponibili le opzioni seguenti:  <br/>  <br/>Modificare il nome visualizzato: si consiglia di modificare il nome visualizzato in modo che sia possibile identificare facilmente la cassetta postale condivisa nell'elenco utenti attivi.  <br/>  Attiva risposte automatiche-abbiamo già scritto una cortese risposta automatica per te. È possibile inviare una risposta automatica diversa alle persone all'interno dell'organizzazione e persone esterne all'organizzazione.  <br/> <br/> Pulizia degli alias-gli alias sono indirizzi di posta elettronica aggiuntivi per gli utenti. Alcune organizzazioni non le utilizzano, quindi se non si dispone di alcuna operazione non è necessario eseguire altre operazione. Se l'utente dispone di alias, è consigliabile rimuoverli in modo che sia possibile riutilizzare tali indirizzi di posta elettronica. In caso contrario, non è possibile riutilizzare tali indirizzi di posta elettronica fino al termine del periodo di conservazione per le cassette postali eliminate. Per impostazione predefinita, una cassetta postale eliminata è ripristinabile per 30 giorni. Per ulteriori informazioni, vedere [eliminare o ripristinare le cassette postali degli utenti in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
 |Active Directory  <br/> |Se l'organizzazione usa **Active Directory** che si sincronizza con Azure AD, è necessario eliminare l'account utente da Active Directory. Non è possibile farlo da Office 365. Per istruzioni, vedere [eliminare un account utente](https://go.microsoft.com/fwlink/p/?linkid=841808).  <br/> |
    
-### <a name="get-started"></a>Informazioni di base
+### <a name="get-started"></a>Per iniziare
 
 ::: moniker range="o365-worldwide"
 
@@ -138,7 +139,7 @@ La riduzione del numero di licenze è un passaggio separato che può essere eseg
   
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> . Se non si vede questa opzione, non si è un amministratore globale o un amministratore di fatturazione e non è possibile eseguire questo passaggio.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>. Se non si vede questa opzione, non si è un amministratore globale o un amministratore di fatturazione e non è possibile eseguire questo passaggio.
 
 2. Selezionare l'abbonamento (se si dispone di più di un utente) e quindi selezionare **Aggiungi/Rimuovi licenze** per eliminare la licenza in modo da non pagarla fino a quando non si assume un'altra persona.  
 

@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Ottenere l'app di amministrazione di Microsoft 365 e imparare a gestire l'organizzazione online dal telefono o dal tablet.
-ms.openlocfilehash: aead9f30f2d75e3eab5099596ff80a575e571306
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e0aa16bd01e81e89e80db51c6569009e177ed687
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623989"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386950"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'app Microsoft 365 admin per dispositivi mobili
 
@@ -104,4 +105,4 @@ Provare alcune procedure comuni per la risoluzione dei problemi delle app per di
   
 ## <a name="see-also"></a>Vedere anche
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

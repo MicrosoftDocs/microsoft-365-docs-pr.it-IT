@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Informazioni su come ottenere un report degli utenti attivi utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365 e scoprire quante licenze di prodotto vengono utilizzate.
-ms.openlocfilehash: e865fa1ed68e7e68c103bf6abc66816b844d7b2d
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 7f32059f01163a2a499f1befb9f4e3c519973549
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046844"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387898"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-utenti attivi
 
@@ -50,7 +51,7 @@ Ad esempio, è possibile usare il report **Utenti attivi** per sapere quante lic
 |3.  <br/> |Il grafico **Utenti attivi** mostra gli utenti attivi giornalieri nel periodo della relazione separati per prodotto.  <br/> Il grafico **Servizi** mostra il numero di utenti per tipo di attività e servizio.  <br/> |
 |4.  <br/> | Nel grafico **Utenti attivi** l'asse x mostra il periodo della relazione selezionato, mentre l'asse y mostra gli utenti attivi giornalieri separati e codificati per colore in base al tipo di licenza.  <br/>  Nel grafico attività **Servizi**, l'asse X mostra i servizi individuali per cui sono abilitati gli utenti nel periodo di tempo specificato, mentre l'asse Y indica il numero di utenti codificati per colore in base allo stato di attività.  <br/> |
 |5.  <br/> |È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. La modifica di questa selezione non modifica le informazioni nella tabella della griglia.  <br/> |
-|6.  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** ![Esporta i dati in un file](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) di Excel. Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> |
+|6.  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** ![ Esporta i dati in un file di Excel ](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> |
 |7.  <br/> |È possibile cambiare le informazioni visualizzate nella tabella della griglia con i controlli colonna.  <br/> Se l'abbonamento è gestito da 21Vianet, non verrà visualizzato Yammer. <br/> <br/> |
 |||
 

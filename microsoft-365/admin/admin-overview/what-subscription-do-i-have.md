@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,13 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Informazioni su come verificare gli abbonamenti che l'organizzazione deve passare alla pagina abbonamenti.
-ms.custom: okr_SMB
-ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045213"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386746"
 ---
 # <a name="what-subscription-do-i-have"></a>Qual è l'abbonamento corrente?
 
@@ -40,7 +42,7 @@ Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organ
 > [!NOTE]
 > Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Gli abbonamenti vengono visualizzati nella pagina dei **prodotti** , insieme al nome della sottoscrizione, alle informazioni sull'abbonamento e al relativo stato. Per visualizzare una visualizzazione ridotta, selezionare **visualizzazione tabella**.
 

@@ -17,18 +17,19 @@ ms.custom:
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come è possibile reimpostare le password utilizzando lo strumento di reimpostazione della password self-service.
-ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173531"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387034"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
@@ -53,19 +54,19 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 Con questi passaggi si attiva la reimpostazione della password in modalità self-service per tutti gli utenti dell'azienda.
   
 ::: moniker range="o365-worldwide"
-1. Nell'interfaccia di amministrazione passare <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">alla pagina</a> impostazioni **Impostazioni** \> .
+1. Nell'interfaccia di amministrazione passare alla pagina impostazioni **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>passare alla pagina **Impostazioni** \> **privacy sicurezza &amp; ** .
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>passare alla pagina **Impostazioni** \> ** &amp; privacy sicurezza** .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">di amministrazione</a>passare alla **pagina impostazioni di** \> **sicurezza &amp; ** **per la** \>privacy delle impostazioni.
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>passare alla pagina impostazioni di sicurezza **per la** \> **Settings** \> ** &amp; privacy** delle impostazioni.
 
 ::: moniker-end
 

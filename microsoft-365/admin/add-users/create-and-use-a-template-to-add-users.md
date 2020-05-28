@@ -15,23 +15,24 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: È possibile creare e utilizzare un modello per risparmiare tempo e standardizzare le impostazioni quando si aggiungono più utenti.
-ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140653"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387226"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Creare e usare un modello per aggiungere utenti
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -39,7 +40,7 @@ ms.locfileid: "44140653"
 
 ## <a name="create-a-template"></a>Creare un modello
 
-I modelli sono facili da&mdash;creare è possibile selezionare **utenti** > **attivi** > user**template utente**, quindi selezionare **Aggiungi un modello** dall'elenco a discesa oppure è possibile aggiungere un nuovo utente e al termine, si avrà la possibilità di salvare la voce come modello.
+I modelli sono facili da creare &mdash; è possibile selezionare **utenti**  >  **attivi**user  >  **template utente**, quindi selezionare **Aggiungi un modello** dall'elenco a discesa oppure è possibile aggiungere un nuovo utente e al termine, si avrà la possibilità di salvare la voce come modello.
 
 Quando si crea un modello dopo l'aggiunta di un utente, i valori scelti per le impostazioni seguenti vengono salvati nel modello:
 
@@ -68,12 +69,12 @@ Quando si crea un modello selezionando l'opzione **Aggiungi un modello** , è po
 
 Per utilizzare un modello esistente per aggiungere un utente:
 
-1. Nell'interfaccia di **Amministrazione selezionare** > utenti**attivi**.
+1. Nell'interfaccia di **Amministrazione selezionare utenti**  >  **attivi**.
 
 2. Selezionare **modelli utente**e quindi selezionare un modello nell'elenco a discesa. L'elenco conterrà solo i modelli creati e non quelli creati da altri amministratori.
 
  > [!NOTE]
- > È inoltre possibile utilizzare un modello per aggiungere un utente selezionando **modelli** > utente per la**gestione dei modelli**, selezionando un modello e quindi selezionando **utilizza modello**.
+ > È inoltre possibile utilizzare un modello per aggiungere un utente selezionando **modelli utente**per la  >  **gestione dei modelli**, selezionando un modello e quindi selezionando **utilizza modello**.
 
 3. Seguire la procedura per creare un utente dal modello selezionato.
 
@@ -84,7 +85,7 @@ Per utilizzare un modello esistente per aggiungere un utente:
 
 È possibile eliminare facilmente i modelli che non sono più necessari e aggiungerne di nuovi. Per eliminare un modello:
 
-1. Nell'interfaccia di **Amministrazione selezionare** > utenti**attivi**.
+1. Nell'interfaccia di **Amministrazione selezionare utenti**  >  **attivi**.
 
 2. Selezionare **modelli**e quindi fare clic su **Gestisci modelli** nell'elenco a discesa.
 

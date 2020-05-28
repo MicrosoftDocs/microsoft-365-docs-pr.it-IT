@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: Ottenere il report sull'utilizzo di attività di SharePoint per conoscere l'attività di ogni utente di SharePoint, il numero di file condivisi e l'utilizzo di archiviazione.
-ms.openlocfilehash: a3c8d73707ef09c3702450ebddab6e43c159638c
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: de4d4951f98e722a3608e9bccf2c4a1dbfc388d0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047048"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387490"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività di SharePoint
 
@@ -46,7 +47,7 @@ Per conoscere la quantità di attività eseguita in ogni sito di SharePoint e l'
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
 
     
-2. Nell'elenco **a discesa selezionare un report** selezionare **attività**di **SharePoint** \> .
+2. Nell'elenco **a discesa selezionare un report** selezionare attività di **SharePoint** \> **Activity**.
   
 ## <a name="interpreting-the-sharepoint-activity-report"></a>Interpretazione del report attività di SharePoint
 
@@ -62,7 +63,7 @@ Per avere una visuale dell'attività di SharePoint, è possibile osservare le vi
 |6.  <br/> | Nel grafico **File** l'asse Y è il numero di file univoci che un utente ha salvato, sincronizzato, modificato oppure condiviso.  <br/>  Nel grafico **Utenti** l'asse Y è il numero di utenti univoci che hanno eseguito attività su un file, ad esempio salvataggio, sincronizzazione, modifica o condivisione, in un sito.  <br/>  Nel grafico **Pagine** l'asse X corrisponde al numero di pagine univoche visitate dagli utenti.  <br/>  L'asse X in tutti i grafici rappresenta l'intervallo di date selezionato per il report specifico.  <br/> |
 |7.  <br/> |È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio, nel grafico **file** selezionare **visualizzato o modificato**, **sincronizzato**, **condiviso internamente**o **condiviso esternamente** per visualizzare solo le informazioni relative a ognuna di esse. La modifica di questa selezione non modifica le informazioni nella tabella della griglia.  <br/> |
 |8.  <br/> | La tabella mostra un'analisi delle attività a livello di sito.  <br/>  <br/> **Username** è l'indirizzo di posta elettronica dell'utente che ha eseguito l'attività nel sito di SharePoint.  <br/> **Data ultima attività (UTC)** è la data più recente in cui è stata eseguita un'attività sui file o è stata visitata una pagina nell'intervallo di date selezionato. Per visualizzare l'attività relativa a una data specifica, selezionare la data direttamente nel grafico.  <br/> ![Selezionare una data specifica nel grafico](../../media/29e54c4b-8dc2-4ed8-9367-1f66f2988fac.png) <br/> In questo modo la tabella verrà filtrata per visualizzare i dati relativi alle attività dei file solo per gli utenti che hanno eseguito l'attività in quel giorno specifico.  <br/>  **File visualizzati o modificati** è il numero di file che l'utente ha caricato, scaricato, modificato o visualizzato.  <br/>  **File sincronizzati** è il numero di file che sono stati sincronizzati dal dispositivo locale di un utente al sito di SharePoint.  <br/>  **File condivisi internamente** è il numero di file che sono stati condivisi con gli utenti all'interno dell'organizzazione o con utenti all'interno di gruppi (che potrebbero includere utenti esterni).  <br/>  **File condivisi esternamente** è il numero di file che sono stati condivisi con gli utenti all'esterno dell'organizzazione.  <br/>  Le **pagine visitate** sono le visite alle pagine univoche da parte dell'utente.  <br/>  **Eliminato** indica che la licenza dell'utente è stata rimossa.  <br/>  **Nota:** L'attività per un utente eliminato continuerà a essere visualizzata nel report purché sia stata concessa una licenza in un determinato momento durante il periodo di tempo selezionato. La colonna Eliminati consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.  <br/> **Data eliminazione** è la data in cui la licenza dell'utente è stata rimossa.  <br/>  **Prodotto assegnato** sono i prodotti Microsoft 365 che sono concessi in licenza all'utente.  <br/> |
-|9.  <br/> |Selezionare l'icona ![ **Gestisci colonne** gestione](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) colonne per aggiungere o rimuovere colonne dal report.  <br/> |
+|9.  <br/> |Selezionare l'icona **Gestisci colonne** ![ gestione colonne ](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) per aggiungere o rimuovere colonne dal report.  <br/> |
 |10.  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriori analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> |
 |||
    

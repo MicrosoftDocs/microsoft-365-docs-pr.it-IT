@@ -12,6 +12,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - ODB160
 ms.assetid: 0de3b312-c4e8-4e4b-a02d-32b2f726a680
 description: "Ottenere il report sull'utilizzo di OneDrive for business per conoscere il numero totale di file e di archiviazione utilizzati nell'organizzazione. "
-ms.openlocfilehash: 4c7cfaeed03627b6dfab6c694f3a5e858b125c40
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 84c76e564067f2580455296a1ed4d1159de7d44c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047108"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387550"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo di OneDrive for business
 
@@ -60,7 +61,7 @@ Per avere una panoramica dell'utilizzo di OneDrive for Business, è possibile os
 |6.  <br/> | Nel grafico **Account**, l'asse Y rappresenta il numero di account OneDrive.  <br/>  Nel grafico **File**, l'asse Y rappresenta il numero di file archiviati in OneDrive.  <br/>  Nel grafico **Archiviazione**, l'asse Y rappresenta la quantità di risorse di archiviazione OneDrive usate.  <br/>  L'asse X in tutti i grafici rappresenta l'intervallo di date selezionato per il report specifico.  <br/> |
 |7.  <br/> |È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio, nel grafico **file** selezionare il **numero totale di file** o **file attivi**. Nel grafico degli **account** , selezionare **account totali** o **account attivi**. O nel grafico di **archiviazione** , selezionare **archiviazione utilizzata**. La modifica della selezione non cambia le informazioni nella tabella.  <br/> |
 |8.  <br/> | La tabella mostra un'analisi dei dati per ciascun utente OneDrive. Per comparire nella tabella, è necessario che all'utente sia stata assegnata una licenza che include OneDrive, e che il suo SharePoint Online sia stato attivato. È inoltre necessario che l'utente abbia effettuato l'accesso al client di sincronizzazione OneDrive, o che abbia visitato il proprio OneDrive in un web browser.  <br/>  Se in OneDrive ci sono state attività sui file, sarà mostrata la data in cui si è verificata l'ultima attività sui file. Le righe nella tabella sono ordinate in base al valore **Data ultima attività** per cui il OneDrive con le attività più recenti verrà visualizzato all'inizio dell'elenco.  <br/>  È possibile aggiungere o rimuovere colonne nella tabella.  <br/> ![Opzioni di colonna](../../media/onedriveusage-columns.png)  <br/> **URL** è l'indirizzo Web per l'OneDrive dell'utente.  <br/> **Eliminato** è lo stato di eliminazione di OneDrive. Un account viene contrassegnato come eliminato dopo almeno 7 giorni.  <br/> **Proprietario** è il nome utente dell'amministratore principale di OneDrive.  <br/> **Nome dell'entità proprietario** è l'indirizzo di posta elettronica del proprietario del OneDrive.  <br/> **Data ultima attività (UTC)** è la data più recente in cui è stata eseguita un'attività sui file in OneDrive. Se in OneDrive non ci sono state attività sui file, il valore sarà vuoto.  <br/> **File** indica il numero di file in OneDrive.  <br/> **File attivi** è il numero di file attivi in un periodo di tempo determinato. Un file viene considerato attivo se è stato salvato, sincronizzato, modificato o condiviso entro il periodo di tempo selezionato.  <br/> Nota: un'attività dei file può verificarsi più volte per un singolo file, ma verrà conteggiato solo come un file attivo. Ad esempio, è possibile salvare e sincronizzare più volte lo stesso file in un periodo di tempo specificato, ma verrà conteggiato come un solo file attivo e un solo file sincronizzato nei dati. >  Se i file sono stati rimossi durante il periodo di tempo specificato per il report, il numero di file attivi visualizzati nel report potrebbe essere maggiore del numero attuale di file in OneDrive. >  Gli utenti eliminati continueranno a essere visualizzati nei report per 180 giorni.<br/>**Spazio di archiviazione usato (MB)** è la quantità di spazio di archiviazione usato in OneDrive, espressa in MB. Questa dimensione include le versioni e i metadati associati ai file.  <br/>  Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **come nascondere i dettagli a livello di utente** nei [report attività nell'anteprima dell'interfaccia di amministrazione di Microsoft 365](activity-reports.md).  <br/> |
-|9.  <br/> |Selezionare l'icona ![ **Gestisci colonne** gestione](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) colonne per aggiungere o rimuovere colonne dal report.  <br/> |
+|9.  <br/> |Selezionare l'icona **Gestisci colonne** ![ gestione colonne ](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) per aggiungere o rimuovere colonne dal report.  <br/> |
 |10.  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati per ciascun OneDrive, che possono poi essere ordinati e filtrati per un'ulteriore analisi. Se gli account OneDrive sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli account OneDrive sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> Nota: quando i dati vengono esportati in un file di Excel, si noti che la data in cui è stato generato il rapporto di contenuto viene riflessa nel file dei **dati** di colonna.  <br/> |
 |||
    

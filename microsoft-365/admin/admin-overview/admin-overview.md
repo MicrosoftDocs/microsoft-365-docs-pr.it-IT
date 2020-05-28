@@ -1,5 +1,5 @@
 ---
-title: Panoramica dell'interfaccia di amministrazione
+title: Informazioni generali sull'interfaccia di amministrazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,20 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: "Informazioni sull'interfaccia di amministrazione di Microsoft 365: come accedere, chi è l'amministratore e guardare un'introduzione video su di esso."
-ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623965"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386938"
 ---
-# <a name="admin-center-overview"></a>Panoramica dell'interfaccia di amministrazione 
+# <a name="admin-center-overview"></a>Informazioni generali sull'interfaccia di amministrazione 
 
   
 Quando si acquista un [piano microsoft 365 Apps for business](https://go.microsoft.com/fwlink/?linkid=856886) o un [piano Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business), viene assegnato un account speciale con autorizzazioni di amministratore. Questo account è detto account amministratore.
@@ -35,19 +36,19 @@ Con questo account è possibile accedere all'interfaccia di amministrazione di M
   
 ::: moniker range="o365-worldwide"
 
- **Accedere con l'account di amministratore all' <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>indirizzo.**
+ **Accedere con l'account di amministratore all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-**Accedere con l'account di amministratore a Office 365 Germany at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.**
+**Accedere con l'account di amministratore a Office 365 Germany at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> .**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-**Accedere con l'account di amministratore a Office 365 gestito da 21Vianet all' <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>indirizzo.**
+**Accedere con l'account di amministratore a Office 365 gestito da 21Vianet all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> .**
 
 ::: moniker-end
 

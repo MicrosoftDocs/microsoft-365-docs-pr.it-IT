@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Informazioni su come ottenere il report sull'utilizzo delle cassette postali per conoscere le attività degli utenti con una cassetta postale utente.
-ms.openlocfilehash: a866a586c9d36be03b39cb1c75be884eae3cb41b
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 15da09574b2273e119ba9cf2c132d2e9596e9a64
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44321994"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387682"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle cassette postali
 

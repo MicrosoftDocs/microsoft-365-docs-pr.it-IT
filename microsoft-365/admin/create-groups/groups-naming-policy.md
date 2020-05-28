@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Informazioni su come creare un criterio di denominazione per i gruppi di Microsoft 365.
-ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630444"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388006"
 ---
 # <a name="groups-naming-policy"></a>Criterio di denominazione dei gruppi
 
@@ -38,7 +39,7 @@ I criteri di denominazione vengono applicati ai gruppi creati in tutti i carichi
 
 I criteri di denominazione del gruppo sono composti dalle funzionalità seguenti:
 
-- **Criteri di denominazione dei suffissi prefix**: è possibile utilizzare prefissi o suffissi per definire la convenzione di denominazione di gruppi (ad esempio\_, "\_US My Group Engineering"). I prefissi o suffissi possono essere stringhe fisse o attributi utente come [Department] che verranno sostituiti in base all'utente che crea il gruppo.
+- **Criteri di denominazione dei suffissi prefix**: è possibile utilizzare prefissi o suffissi per definire la convenzione di denominazione di gruppi (ad esempio, "US \_ My Group \_ Engineering"). I prefissi o suffissi possono essere stringhe fisse o attributi utente come [Department] che verranno sostituiti in base all'utente che crea il gruppo.
 
 - **Parole bloccate personalizzate**: è possibile caricare una serie di parole bloccate specifiche per l'organizzazione che verrebbero bloccate nei gruppi creati dagli utenti. Ad esempio: ""CEO, Payroll, HR" (CEO, Buste paga, RU)".
 
@@ -54,7 +55,7 @@ I prefissi e i suffissi possono essere stringhe fisse o attributi utente.
 
 ### <a name="fixed-strings"></a>Stringhe fisse
 
-È possibile utilizzare stringhe brevi che consentono di distinguere i gruppi nell'elenco indirizzi globale e la struttura di spostamento sinistra dei carichi di lavoro di gruppo. Alcuni dei suffissi comuni prefissi sono parole chiave come "GRP\_Name", "\#Name", "\_Name"
+È possibile utilizzare stringhe brevi che consentono di distinguere i gruppi nell'elenco indirizzi globale e la struttura di spostamento sinistra dei carichi di lavoro di gruppo. Alcuni dei suffissi comuni prefissi sono parole chiave come "GRP \_ Name", " \# Name", " \_ Name"
 
 ### <a name="attributes"></a>Attributi
 
@@ -80,7 +81,7 @@ Gli attributi di Azure Active Directory (Azure AD) supportati sono [Department],
 
 - Prefissi e suffissi possono contenere caratteri speciali supportati nel nome e nell'alias del gruppo. Quando i prefissi e i suffissi contengono caratteri speciali non consentiti nell'alias di gruppo, vengono applicati solo al nome del gruppo. In questo caso, quindi, i prefissi e suffissi applicati al nome del gruppo sarebbero diversi da quelli applicati all'alias del gruppo.
 
-- Se si utilizzano i gruppi connessi di Yammer Microsoft 365, evitare di usare i seguenti caratteri nei criteri di denominazione: \#@ \[, \], \<,, \>e. Se questi caratteri sono inclusi nei criteri di denominazione, gli utenti di Yammer regolari non potranno creare gruppi.
+- Se si utilizzano i gruppi connessi di Yammer Microsoft 365, evitare di usare i seguenti caratteri nei criteri di denominazione: @, \# , \[ ,, \] \<, and \> . Se questi caratteri sono inclusi nei criteri di denominazione, gli utenti di Yammer regolari non potranno creare gruppi.
 
 ## <a name="custom-blocked-words"></a>Parole bloccate personalizzate
 

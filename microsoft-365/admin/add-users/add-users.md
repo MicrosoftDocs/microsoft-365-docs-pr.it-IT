@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: Informazioni su come aggiungere utenti a Microsoft 365, uno alla volta o più utenti contemporaneamente da un file CSV.
-ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049472"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387262"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Aggiungere utenti singolarmente o in blocco
 
@@ -42,7 +43,7 @@ Gli utenti del team hanno a disposizione un account utente prima di poter accede
 
 1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Passare a **Users** > utenti **attivi**e selezionare **Aggiungi un utente**.
+2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
    
 3. Nel riquadro **Configura le nozioni di base** , immettere le informazioni seguenti e quindi fare clic su **Avanti**. 
   
@@ -69,7 +70,7 @@ Gli utenti del team hanno a disposizione un account utente prima di poter accede
 
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
-2. Passare a **Users** > utenti **attivi**e selezionare **Aggiungi un utente**.
+2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
    
   
    Nel riquadro **nuovo utente** , immettere le informazioni seguenti. Selezionare **Aggiungi** al termine. 
@@ -94,7 +95,7 @@ Gli utenti del team hanno a disposizione un account utente prima di poter accede
 
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
-2. Passare a **Users** > utenti **attivi**e selezionare **Aggiungi un utente**.
+2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
    
   
    Nel riquadro **nuovo utente** , immettere le informazioni seguenti. Selezionare **Aggiungi** al termine. 

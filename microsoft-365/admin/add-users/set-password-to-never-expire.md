@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Informazioni su come impostare le singole password utente in modo che non scadano mai, utilizzando Windows PowerShell.
-ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173497"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387006"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Impostare la password di un singolo utente in modo che non scada mai
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>Impostare i criteri di scadenza delle password per l'organizzazione
 
-1. Nell'interfaccia di amministrazione passare <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">alla pagina</a> impostazioni **Impostazioni** \> .
+1. Nell'interfaccia di amministrazione passare alla pagina impostazioni **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> .
 2. Nella parte superiore della pagina Impostazioni selezionare **sicurezza & privacy**.
 3. Selezionare **Criterio di scadenza delle password**. 
 4. Se le password sono impostate su non scadono mai, fare clic sulla casella di controllo accanto a **Imposta password utente per scadere dopo un certo numero di giorni**. Si otterrà l'opzione per specificare il numero di giorni fino alla scadenza delle password.
@@ -127,4 +128,4 @@ Eseguire uno dei comandi seguenti:
     ```
 
 > [!WARNING]
-> Password impostate su `-PasswordPolicies DisablePasswordExpiration` still Age in base all' `pwdLastSet` attributo. Se si impostano le password utente in modo che non scadano mai e quindi passano 90 giorni, le password scadono. In base all' `pwdLastSet` attributo, se si modifica la scadenza `-PasswordPolicies None`, tutte le password con un `pwdLastSet` tempo precedente a 90 giorni richiedono all'utente di modificarle al successivo accesso. Questa modifica può influire su un numero elevato di utenti.
+> Password impostate `-PasswordPolicies DisablePasswordExpiration` su Still Age in base all' `pwdLastSet` attributo. Se si impostano le password utente in modo che non scadano mai e quindi passano 90 giorni, le password scadono. In base all' `pwdLastSet` attributo, se si modifica la scadenza `-PasswordPolicies None` , tutte le password con un `pwdLastSet` tempo precedente a 90 giorni richiedono all'utente di modificarle al successivo accesso. Questa modifica può influire su un numero elevato di utenti.

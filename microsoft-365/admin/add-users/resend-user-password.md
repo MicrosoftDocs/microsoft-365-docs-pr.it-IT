@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: 'Informazioni su come reimpostare la password e inviare un messaggio di posta elettronica di notifica a un nuovo utente di Microsoft 365. '
-ms.openlocfilehash: fcf5fb53c2468930e68929a9bf38b634d7e67404
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2f9d4fd829e4378b245fd3b8277e9b913d17ab69
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43624113"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386986"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Reinvio della password di un utente-Guida per gli amministratori
 
