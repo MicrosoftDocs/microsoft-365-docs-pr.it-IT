@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7d8c973f0170f34a09b3d69cdd8b2553fed6a72d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: c42d5ca65c91eab55103a978ee605d31b47855db
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358997"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397971"
 ---
 # <a name="contact-support-for-ethiopia"></a>Contattare il supporto per l'Etiopia
 

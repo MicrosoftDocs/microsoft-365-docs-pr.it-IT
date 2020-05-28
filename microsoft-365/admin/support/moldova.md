@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4f8b8c54389e04b09673ce07cfaba0d8b30f06e9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d76ada3dfbd916b301441284c6e14ce6e55ac472
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42357877"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44396651"
 ---
 # <a name="contact-support-for-moldova"></a>Contattare il supporto per la Moldova
 

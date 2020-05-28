@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4cc0b85858cb0d119ac2882701c50cdf3d418fa0
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 24cc25ef1f581c083a6348c1ce218792a53beb59
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42359057"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398007"
 ---
 # <a name="contact-support-for-equatorial-guinea"></a>Contattare il supporto per la Guinea Equatoriale
 
