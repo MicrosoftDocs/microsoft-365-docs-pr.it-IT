@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Informazioni su come eseguire l'aggiornamento di una o più liste di distribuzione ai gruppi di Microsoft 365 in Outlook e sull'utilizzo di PowerShell per l'aggiornamento simultaneo di più liste di distribuzione.
-ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065670"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399495"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Aggiornare le liste di distribuzione ai gruppi di Microsoft 365 in Outlook
 
@@ -38,7 +39,7 @@ Per aggiornare una lista di distribuzione, è necessario essere un amministrator
 
 1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
 
-2. Nell'interfaccia di amministrazione di Exchange, accedere a **gruppi**di **destinatari** \> .<br/>Verrà visualizzato un avviso che indica che sono presenti liste di distribuzione (denominate anche **gruppi di distribuzione** ) idonee per l'aggiornamento ai gruppi di Microsoft 365.<br/> ![Selezionare il pulsante inizia](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Nell'interfaccia di amministrazione di Exchange, accedere a gruppi di **destinatari** \> **Groups**.<br/>Verrà visualizzato un avviso che indica che sono presenti liste di distribuzione (denominate anche **gruppi di distribuzione** ) idonee per l'aggiornamento ai gruppi di Microsoft 365.<br/> ![Selezionare il pulsante inizia](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. Selezionare una o più liste di distribuzione (chiamate anche **gruppo di distribuzione** ) nella pagina **Gruppi**.<br/>![Selezionare un gruppo di distribuzione](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
@@ -89,7 +90,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
-Ad esempio, se si desidera aggiornare cinque DLS `dl1@contoso.com` con indirizzo SMTP e `dl2@contoso.com` `dl3@contoso.com`, `dl4@contoso.com` e `dl5@contoso.com`, eseguire il comando riportato di seguito:
+Ad esempio, se si desidera aggiornare cinque DLS con indirizzo SMTP `dl1@contoso.com` e, `dl2@contoso.com` e `dl3@contoso.com` , `dl4@contoso.com` `dl5@contoso.com` eseguire il comando riportato di seguito:
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -98,7 +99,7 @@ Ad esempio, se si desidera aggiornare cinque DLS `dl1@contoso.com` con indirizzo
 Esistono due modi in cui è possibile aggiornare tutti i DLs idonei.
 
 > [!NOTE]
-> Il cmdlet Upgrade-DistributionGroup non riceve i dati dalla pipeline, per questo motivo è necessario utilizzare l'operatore "foreach-{}Object" per eseguire correttamente.
+> Il cmdlet Upgrade-DistributionGroup non riceve i dati dalla pipeline, per questo motivo è necessario utilizzare l'operatore "foreach-Object {} " per eseguire correttamente.
 
 1. Ottenere il DLs idoneo nel tenant e aggiornarlo utilizzando il comando di aggiornamento:
 

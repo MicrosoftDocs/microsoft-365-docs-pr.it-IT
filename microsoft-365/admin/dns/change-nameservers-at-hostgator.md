@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: Informazioni su come è possibile configurare Microsoft per gestire i record DNS del dominio personalizzato in Hostgator.
-ms.openlocfilehash: 09f0409ed2a5f81b450c9aae7bb3699373ce6f22
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 787fe5f5e768d9d93cfca9d1644037142822216e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629888"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400642"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-hostgator"></a>Modificare i server dei nomi per configurare Microsoft 365 con Hostgator
 
@@ -70,7 +71,7 @@ Seguire questa procedura per associare il dominio e gli account di hosting.
 > [!IMPORTANT]
 > Prima di eseguire questa procedura, è necessario prima eseguire la procedura nella prima sezione di questo articolo, [puntare il dominio all'account di hosting.](#point-your-domain-to-your-hosting-account)
   
-Prima di utilizzare il dominio con Microsoft, è necessario assicurarsi di possederlo. La possibilità di eseguire l'accesso al proprio account presso il registrar e di creare il record DNS dimostra a Microsoft che si è proprietari del dominio.
+Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft che si è il proprietario del dominio.
   
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce.
@@ -93,7 +94,7 @@ Prima di utilizzare il dominio con Microsoft, è necessario assicurarsi di posse
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-|Usare il proprio  *nome_dominio*  , ad esempio fourthcoffee.com.<br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Utilizzare il valore **di indirizzo di destinazione o puntamento** specifico qui, dalla tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
+|Usare il proprio  *nome_dominio*  , ad esempio fourthcoffee.com.<br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
 4. Selezionare **Aggiungi record**.
     
@@ -113,7 +114,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. In caso di problemi con il flusso di posta o altri problemi dopo l'aggiunta di record DNS, vedere [individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record del server dei nomi del dominio
 

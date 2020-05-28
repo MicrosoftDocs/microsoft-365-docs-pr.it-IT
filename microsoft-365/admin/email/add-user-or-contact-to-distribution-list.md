@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Informazioni su come aggiungere un utente o un contatto di Microsoft 365 a un gruppo di distribuzione. Ad esempio, è possibile aggiungere un dipendente, un partner o un fornitore al gruppo di distribuzione della posta elettronica.
-ms.openlocfilehash: 0b1feacbd3e35adcdf96ae8c42aa330921a4b390
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 47b338a326c5c1152c8e14e13f01f9a36de1cb6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629072"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400173"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Aggiungere un utente o un contatto a un gruppo di distribuzione
 
@@ -37,7 +38,7 @@ Come amministratore di un'organizzazione, potrebbe essere necessario aggiungere 
 > [!NOTE]
 > Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
-1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> \> pagina **gruppi.**
+1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
 
 2. Nella pagina **gruppi** selezionare il nome del gruppo a cui si desidera aggiungere un contatto.
 
@@ -53,7 +54,7 @@ Come amministratore di un'organizzazione, potrebbe essere necessario aggiungere 
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> \> pagina **gruppi.**
+1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
     
 2. Nella pagina **gruppi** selezionare il gruppo a cui si desidera aggiungere un contatto.
     
@@ -71,7 +72,7 @@ Se il [contatto](../misc/contacts.md) non è ancora stato creato, farlo come pri
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> \> pagina **gruppi.**
+1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
     
 2. Nella pagina **gruppi** selezionare il gruppo a cui si desidera aggiungere un contatto.
     

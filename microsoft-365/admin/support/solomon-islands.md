@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c2899ad033b05d5bec3c3cedfbe2ff4f78558306
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: defd30fc2e67fa2e260314db53997bc1a7b9a940
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356337"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400775"
 ---
 # <a name="contact-support-for-solomon-islands"></a>Contattare il supporto per le Isole Salomone
 

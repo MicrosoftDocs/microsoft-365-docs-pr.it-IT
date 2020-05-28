@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in web.com per Microsoft.
-ms.openlocfilehash: a7567688ad9935b30c0749cb7aeffdbe128506ef
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2a9162c1ca6fc6a00e564e8f004768fac49bd3e3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048880"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400305"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Creare record DNS in web.com per Microsoft
 
@@ -130,7 +131,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Priorità**|**TTL**|**Mail server**|
     |:-----|:-----|:-----|
-    |1  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> |*\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md) |
+    |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> |*\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md) |
    
 
 5. Selezionare **Salva**.
@@ -214,8 +215,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
         
     |**Servizio**|**Protocol**|**TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip |_tls |3600 | 100|1 |443 |sipfed.online.lync.com  |
-    |_sipfederationtls |_tcp |3600 |100 |1 |5061 | sipfed.online.lync.com |
+    |_sip |_tls |3600 | 100|1  |443 |sipfed.online.lync.com  |
+    |_sipfederationtls |_tcp |3600 |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. Aggiungere l'altro record SRV scegliendo i valori della seconda riga della tabella. 

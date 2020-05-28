@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi a 1&1 IONOS per Microsoft.
-ms.openlocfilehash: 1c32e15be8bfdf9ea29647af511d0f8ff0ac0b57
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 983fba73a6f82308d6d1bcf706ff93d72b98976c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049144"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400594"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Creare record DNS in 1&1 IONOS per Microsoft
 
@@ -108,19 +109,19 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:22)](
     
 4. Nell'area **Impostazioni dominio** selezionare **Modifica impostazioni DNS**.
     
-5. Nella sezione **MX Records** , nell'area **Mail Exchanger (MX record)** , selezionare **altro server di posta**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. Nella sezione **MX Records** , nell'area **Mail Exchanger (MX record)** , selezionare **altro server di posta**.<br/>(You may have to scroll down.)<br/>![1 &amp; 1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
-6. Se sono già presenti record MX, eliminarli selezionandone ognuno e premendo **CANC**.<br/>Se l'elenco non include record MX, continuare con il passaggio successivo.<br/>![1&amp;1-BP-Configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
+6. Se sono già presenti record MX, eliminarli selezionandone ognuno e premendo **CANC**.<br/>Se l'elenco non include record MX, continuare con il passaggio successivo.<br/>![1 &amp; 1-BP-Configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
 7. Nelle caselle del record **MX 1** digitare oppure copiare e incollare i valori della tabella seguente. 
     
     |**MX 1**|**Priority**|
     |:-----|:-----|
-    | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/>  Nota: ottenere la \<propria chiave\> di dominio dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | 
+    | *\<domain-key\>*. mail.protection.outlook.com  <br/>  Nota: ottenere il proprio \<domain-key\> account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | 
     
     ![1 e 1-Configure 2 e 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. Selezionare **Salva**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. Selezionare **Salva**.<br/>(You may have to scroll down.)<br/>![1 &amp; 1-BP-Configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
 9. Nella finestra di dialogo **Modifica impostazioni DNS** selezionare **Sì**.<br/>![Selezionare Sì nella finestra di dialogo Modifica impostazioni DNS.](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -143,7 +144,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:57)](
     
 2. Selezionare **Manage Domains**.
     
-3. Nella pagina **centro Domain** individuare il dominio che si desidera aggiornare e quindi selezionare **Gestisci sottodomini**.<br/>![1&amp;1-BP-Configure-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Ora creare due sottodomini e impostare un valore **Alias** per ognuno.<br/>(Necessario perché 1&1 IONOS supporta solo un record CNAME di primo livello, ma Microsoft richiede diversi record CNAME).<br/>Creare prima di tutto il sottodominio di individuazione automatica.
+3. Nella pagina **centro Domain** individuare il dominio che si desidera aggiornare e quindi selezionare **Gestisci sottodomini**.<br/>![1 &amp; 1-BP-configure-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>Ora creare due sottodomini e impostare un valore **Alias** per ognuno.<br/>(Necessario perché 1&1 IONOS supporta solo un record CNAME di primo livello, ma Microsoft richiede diversi record CNAME).<br/>Creare prima di tutto il sottodominio di individuazione automatica.
     
 4. Nella sezione **Panoramica sottodominio** selezionare **Crea sottodominio**.
     
@@ -155,15 +156,15 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:57)](
     |:-----|:-----|
     |individuazione automatica  <br/> |autodiscover.outlook.com   | 
 
-    ![1&amp;1-BP-Configure-3-2](../../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
+    ![1 &amp; 1-BP-configure-3-2](../../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
   
-6. Selezionare **Crea sottodominio**.<br/>![1&amp;1-BP-Configure-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
+6. Selezionare **Crea sottodominio**.<br/>![1 &amp; 1-BP-configure-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
   
-7. Nella sezione **Panoramica sottodominio** individuare il sottodominio di **individuazione automatica** appena creato, quindi selezionare il controllo **Panel (v)** per il sottodominio. <br/>![1&amp;1-BP-Configure-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
+7. Nella sezione **Panoramica sottodominio** individuare il sottodominio di **individuazione automatica** appena creato, quindi selezionare il controllo **Panel (v)** per il sottodominio. <br/>![1 &amp; 1-BP-configure-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
   
-8. Nell'area **Impostazioni sottodominio** selezionare **Modifica impostazioni DNS**. <br/>![1&amp;1-BP-Configure-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
+8. Nell'area **Impostazioni sottodominio** selezionare **Modifica impostazioni DNS**. <br/>![1 &amp; 1-BP-configure-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
   
-9. Nella sezione a **/aaaa Records (indirizzi IP)** , nell'area **indirizzo IP (a record)** , selezionare **CNAME**.<br/>![1&amp;1-BP-Configure-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
+9. Nella sezione a **/aaaa Records (indirizzi IP)** , nell'area **indirizzo IP (a record)** , selezionare **CNAME**.<br/>![1 &amp; 1-BP-configure-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
   
 10. Nella casella **Alias** digitare o copiare e incollare solo il valore di **Alias** dalla tabella seguente:<br/> 
     
@@ -171,11 +172,11 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:57)](
     |:-----|:-----|
     |individuazione automatica  <br/> |autodiscover.outlook.com   |
 
-    ![1&amp;1-BP-Configure-3-7](../../media/afac3118-3337-4f99-98dd-a7ca930230ce.png)
+    ![1 &amp; 1-BP-configure-3-7](../../media/afac3118-3337-4f99-98dd-a7ca930230ce.png)
   
-11. Selezionare la casella di controllo accanto alla dichiarazione di non responsabilità **Sono consapevole**.<br/>![1&amp;1-BP-Configure-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
+11. Selezionare la casella di controllo accanto alla dichiarazione di non responsabilità **Sono consapevole**.<br/>![1 &amp; 1-BP-configure-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
-12. Selezionare **Salva**.<br/>![1&amp;1-BP-Configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
+12. Selezionare **Salva**.<br/>![1 &amp; 1-BP-configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
   
   
 ### <a name="additional-cname-records"></a>Record CNAME facoltativi
@@ -299,14 +300,14 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:51)](
     
     |**Tipo**|**Service**|**Protocol**|**Name**|**Host**|**Priorità**|**Peso**|**Porta**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |sip  <br/> |tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (1 ora)  <br/> |
-    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |Lasciare vuoto questo campo.  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (1 ora)  <br/> |  
+    |SRV  <br/> |sip  <br/> |tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 ora)  <br/> |
+    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |Lasciare vuoto questo campo.  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (1 ora)  <br/> |  
     
-    ![1&amp;1-BP-Configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
+    ![1 &amp; 1-BP-Configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
-7. Selezionare **Salva**. <br/>![1&amp;1-BP-Configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
+7. Selezionare **Salva**. <br/>![1 &amp; 1-BP-Configure-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
   
-8. Selezionare **Salva**. <br/>![1&amp;1-BP-Configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
+8. Selezionare **Salva**. <br/>![1 &amp; 1-BP-Configure-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
 9. Nella finestra di dialogo **Modifica impostazioni DNS** selezionare **Sì**. <br/>![Selezionare Sì nella finestra di dialogo Modifica impostazioni DNS.](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in 123-reg.co.uk per Microsoft.
-ms.openlocfilehash: 0c9a6a144a38398e7664f7f2bb317a96b627b640
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 3c188c7e9f2f9390aa45196d798e04441d33bcb0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049132"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400582"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>Creare record DNS in 123-reg.co.uk per Microsoft
 
@@ -101,7 +102,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** ottenere il valore \<domain-key\> dall'account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere il vostro \<domain-key\> dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copiare e incollare i valori dalla tabella](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   

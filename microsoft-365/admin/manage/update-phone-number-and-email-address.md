@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione. Se si desidera reimpostare la propria password di amministratore, sono necessarie queste informazioni.
-ms.openlocfilehash: 6f4303cd637bfb87fc4d35ce49904cedf5bf7f0a
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: fd0cf89391d87692f87db5d83b8d054783e9310a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139590"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399507"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 In questo articolo viene illustrato come l'amministratore può modificare il telefono aziendale e l'indirizzo di posta elettronica in Microsoft 365.
@@ -44,7 +45,7 @@ Usare la pagina **Informazioni personali** per cambiare il proprio nome, numero 
   
 1. Passare all'interfaccia di amministrazione di Microsoft 365.
 
-2. Nell'intestazione, seleziona \> l'icona del profilo **personale informazioni personali**dell' **account** \> .
+2. Nell'intestazione, seleziona l'icona del profilo \> **My account** \> **personale informazioni personali**dell'account.
 
 3. Nella sezione **Dettagli contatto** selezionare modifica. Aggiornare il cellulare, il telefono e l'indirizzo di posta elettronica alternativo. Assicurarsi di usare qualcosa di diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.
 

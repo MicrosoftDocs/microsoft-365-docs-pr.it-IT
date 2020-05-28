@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in OVH per Microsoft.
-ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b462979a3ab1bcf769c78d15d9fd3ad03f307ef0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048916"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400341"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Creare record DNS in OVH per Microsoft
 
@@ -142,7 +143,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
     |**Tipo di record**|**Sottodominio**|**TTL**|**Priorità**|**Destinazione**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<chiave-dominio\>.mail.protection.outlook.com.  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<domain-key\>. mail.protection.outlook.com.  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![Record MX OVH per la posta elettronica](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -276,8 +277,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Tipo di record**|**Sottodominio**|**Priorità**|**Peso**|**Porta**|**TTL**|**Destinazione**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |_sip. _tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (secondi)  <br/> |sipdir.online.lync.com.  <br/> |
-    |SRV (Service)  <br/> |_sipfederationtls. _tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (secondi)  <br/> |sipfed.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (secondi)  <br/> |sipdir.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (secondi)  <br/> |sipfed.online.lync.com.  <br/> |
        
     ![Record OVH SRV](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   

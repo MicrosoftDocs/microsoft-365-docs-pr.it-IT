@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Network Solutions per Microsoft.
-ms.openlocfilehash: fb5fd2d2bcb263a62306617d728f08b07bb6da34
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0804abef84dc97a290d3f8084cd20e0ad3d3c5ef
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048928"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400353"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Creare record DNS in Network Solutions per Microsoft
 
@@ -160,7 +161,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
     
     |**Priorità**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*. mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Digitare o incollare i valori nelle caselle per il nuovo record](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
@@ -319,8 +320,8 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 6:18)](
     
     |**Service**|**Protocol**|**TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
        
     ![Digitare o incollare i valori per i nuovi record](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   

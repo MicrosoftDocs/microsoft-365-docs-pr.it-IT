@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Informazioni su come creare un profilo pilota automatico e applicarlo a un dispositivo, nonché modificare o eliminare un profilo o rimuovere un profilo da un dispositivo.
-ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e58418813ed0b4d23a5fa7e1d23aae33d8850e7f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627375"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400975"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Creare e modificare profili AutoPilot
 
@@ -41,7 +42,7 @@ Un profilo si applica a un dispositivo o a un gruppo di dispositivi.
   
 1. Nell'interfaccia di amministrazione di Microsoft 365, scegliere **Devices** \> **Autopilot**.
   
-2. Nella pagina **Autopilot** scegliere la scheda \> **profili** **creare profilo**.
+2. Nella pagina **Autopilot** scegliere la scheda **profili** \> **creare profilo**.
     
 3. Nella pagina **Crea profilo** , immettere un nome per il profilo che consenta di identificarlo, ad esempio marketing. Attiva l'impostazione desiderata e quindi scegli **Salva**. Per ulteriori informazioni sulle impostazioni dei profili Autopilot, vedere [informazioni sulle impostazioni dei profili Autopilot](autopilot-profile-settings.md).
     
@@ -53,7 +54,7 @@ Dopo aver creato un profilo, è possibile applicarlo a un dispositivo o a un gru
   
 1. Nella pagina **Prepara Windows** scegliere la scheda **Dispositivi**. 
     
-2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **dispositivo** scegliere un profilo dall'elenco \> a discesa **profilo assegnato** **Salva**.
+2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **dispositivo** scegliere un profilo dall'elenco a discesa **profilo assegnato** \> **Salva**.
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -65,7 +66,7 @@ Dopo avere assegnato un profilo a un dispositivo, è possibile aggiornarlo anche
 
 1. Nella pagina **Prepara Windows** scegliere la scheda **Profili**. 
     
-2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **profilo** aggiornare le impostazioni \> disponibili per il **salvataggio**.
+2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **profilo** aggiornare le impostazioni disponibili per il \> **salvataggio**.
     
     Se si esegue questa operazione prima che un utente connetta il dispositivo a Internet, il profilo viene applicato al processo di configurazione.
     
@@ -81,5 +82,5 @@ Dopo avere assegnato un profilo a un dispositivo, è possibile aggiornarlo anche
 
 1. Nella pagina **Prepara Windows** scegliere la scheda **Dispositivi**. 
     
-2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **dispositivo** scegliere **nessuno** nell'elenco \> a discesa **profilo assegnato** **Salva**.
+2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **dispositivo** scegliere **nessuno** nell'elenco a discesa **profilo assegnato** \> **Salva**.
     

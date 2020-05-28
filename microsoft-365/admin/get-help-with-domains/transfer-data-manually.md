@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Informazioni su come trasferire manualmente i dati tra due account di Microsoft 365 quando è stato modificato il piano o il nome della società oppure sono stati combinati più abbonamenti in uno.
-ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053741"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399873"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Trasferire manualmente i dati tra due account
 
@@ -61,10 +62,10 @@ Per Microsoft 365 Enterprise e Microsoft 365 medie imprese:
   
 |**Posizione**|**Scopo**|
 |:-----|:-----|
-|**Impostazioni del servizio** **Microsoft 365** \> per l' **amministratore** \> <br/> |Selezionare ogni scheda per le impostazioni per la posta, i siti, Lync, il software utente, le password, la community, la gestione dei diritti e la telefonia mobile.  <br/> |
+|**Amministratore** \> **Microsoft 365** \> **Impostazioni del servizio** <br/> |Selezionare ogni scheda per le impostazioni per la posta, i siti, Lync, il software utente, le password, la community, la gestione dei diritti e la telefonia mobile.  <br/> |
 |**Amministratore** \> **Exchange** <br/> | Impostazioni di Exchange Online  <br/> |
 |**Amministratore** \> **SharePoint** <br/> | Impostazioni di SharePoint Online  <br/> |
-|**Amministratore** \> **di Skype for business** <br/> |Altre impostazioni di Skype for business  <br/> |
+|**Amministratore** \> **Skype for business** <br/> |Altre impostazioni di Skype for business  <br/> |
 
 Per Microsoft 365 Small Business
   

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Freenom per Microsoft.
-ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f139c21915d6922c2f77281990dd09949d9db928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049036"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400474"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Creare record DNS in Freenom per Microsoft
 
@@ -139,7 +140,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Tipo**|**TTL**|**Destinazione**|**Priorità**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lasciare vuoto)  <br/> |MX (Mail Exchanger)  <br/> |3600 (secondi)  <br/> |\<Domain-Key\>. mail.Protection.Outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |(lasciare vuoto)  <br/> |MX (Mail Exchanger)  <br/> |3600 (secondi)  <br/> |\<domain-key\>. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   

@@ -19,21 +19,22 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Informazioni su come creare, modificare o eliminare un criterio di gestione delle app e proteggere i file di lavoro su dispositivi Android o iOS.
-ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627435"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401055"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS
 
-![Banner che puntano https://aka.ms/aboutM365previewa.](../media/m365admincenterchanging.png)
+![Banner che puntano a https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>Creare un criterio di gestione delle app
 
@@ -51,7 +52,7 @@ ms.locfileid: "43627435"
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Successivamente decidere **chi otterrà queste impostazioni?** Se non si desidera utilizzare il gruppo di sicurezza **tutti gli utenti** predefinito, scegliere **Cambia**, scegliere i gruppi di sicurezza in cui \> vengono **selezionate**le impostazioni.
+6. Successivamente decidere **chi otterrà queste impostazioni?** Se non si desidera utilizzare il gruppo di sicurezza **tutti gli utenti** predefinito, scegliere **Cambia**, scegliere i gruppi di sicurezza in cui vengono \> **selezionate**le impostazioni.
     
 7. Infine, scegliere **Fatto** per salvare il criterio e assegnarlo ai dispositivi. 
     

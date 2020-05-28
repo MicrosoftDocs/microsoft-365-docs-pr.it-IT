@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Scoprite la differenza tra Microsoft 365 business standard e Microsoft 365 Business Premium e come è possibile eseguire l'aggiornamento a Microsoft 365 Business Premium.
-ms.openlocfilehash: 20a4162f74a9cb0e943195a589fd2d964f773f48
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: bdab8165623170926b17efa4cae9408b78a2f5f5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045981"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401383"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Eseguire l'aggiornamento a Microsoft 365 Business Premium da Microsoft 365 business standard
 
@@ -55,9 +56,9 @@ Per ulteriori informazioni su Microsoft 365 Business Premium, vedere [Microsoft.
 
 ## <a name="upgrade-to-microsoft-365-business-premium"></a>Eseguire l'aggiornamento a Microsoft 365 Business Premium
 
-1. Accedere all'interfaccia di amministrazione all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>indirizzo.
+1. Accedere all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
 
-2. Passare al riquadro di spostamento e selezionare **fatturazione** \> dei **prodotti**. Individuare la sottoscrizione corrente e selezionarla per visualizzare i dettagli.
+2. Passare al riquadro di spostamento e selezionare **fatturazione** dei \> **prodotti**. Individuare la sottoscrizione corrente e selezionarla per visualizzare i dettagli.
 
 3. Nella pagina successiva, selezionare **Aggiorna**.
 

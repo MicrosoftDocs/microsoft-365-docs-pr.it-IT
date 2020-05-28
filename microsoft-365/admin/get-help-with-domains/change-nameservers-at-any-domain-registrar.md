@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,13 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Skype for business online utilizzino il proprio nome di dominio.
-ms.custom: okr_smb
-ms.openlocfilehash: e987d1194d3ee86548a6628310ebdfd14cdbb9ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628507"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399993"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 
@@ -48,7 +50,7 @@ Seguire queste istruzioni per aggiungere e configurare il dominio in Microsoft 3
 > [!NOTE]
 > È necessario creare solo uno di questi record. Il record TXT è solitamente il tipo preferito, ma non è supportato da alcuni provider di hosting DNS. In questi casi è possibile creare un record MX. 
   
-Prima di utilizzare il dominio con Microsoft 365, è necessario verificare di possederlo. La possibilità di accedere al proprio account presso il registrar e di creare il record DNS dimostra a Microsoft 365 che si è proprietari del dominio.
+Prima di usare il proprio dominio con Microsoft 365, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft 365 che si è il proprietario del dominio.
   
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
@@ -71,18 +73,18 @@ Eseguire una delle operazioni seguenti in base al record da creare, ossia TXT o 
 |:-----|:-----|:-----|:-----|
 |**Tipo di record** <br/> |**Alias** o **nome host** <br/> |**Valore** <br/> |**TTL** <br/> |
 |TXT  <br/> |Eseguire una delle operazioni seguenti: Digitare **@**, lasciare vuoto il campo o immettere il proprio nome di dominio.  <br/> > [!NOTE]> I requisiti di questo campo variano a seconda dell'host DNS.           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Questo è un esempio. Utilizzare il valore **di indirizzo di destinazione o puntamento** specifico qui, dalla tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Impostare questo valore su **1 ora** o sull'equivalente in minuti ( **60** ), secondi ( **3600** ) e così via.  <br/> |
+|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Impostare questo valore su **1 ora** o sull'equivalente in minuti ( **60** ), secondi ( **3600** ) e così via.  <br/> |
    
 **Se si crea un record MX, usare questi valori:**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Tipo di record**|**Alias** o **nome host**|**Valore**|**Priorità**|**TTL**|
-|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Questo è un esempio. Utilizzare il valore **di indirizzo di destinazione o puntamento** specifico qui, dalla tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.md#what-is-mx-priority). |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
+|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.md#what-is-mx-priority). |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
    
 ### <a name="save-the-record"></a>Salvare il record
 
-Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft 365 e richiedere a Microsoft 365 di cercare il record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Microsoft 365 e chiedere di cercarlo.
   
 Quando Microsoft 365 trova il record TXT corretto, il dominio è verificato.
   

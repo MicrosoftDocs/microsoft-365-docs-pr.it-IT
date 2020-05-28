@@ -14,19 +14,21 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su GoDaddy per Microsoft.
-ms.custom: okr_smb
-ms.openlocfilehash: b1c5539af6683bbf8f94fd15880fb870caf31342
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 95bc9e1ca522796111bbf5146c93686bbbac1a3d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049024"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400462"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>Creare record DNS su GoDaddy per Microsoft
 
@@ -122,7 +124,7 @@ Effettuare le operazioni seguenti.
 
     |**Tipo di record**|**Host**|**Punta a**|**Priorità**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1 ora  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1 ora  <br/> |
 
 6. Selezionare **Salva**.
 
@@ -232,8 +234,8 @@ Effettuare le operazioni seguenti.
 
     |**Tipo di record**|**Nome**|**Destinazione**|**Protocollo**|**Servizio**|**Priorità**|**Peso**|**Porta**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 ora  <br/> |
-    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 ora  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 ora  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 ora  <br/> |
 
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 

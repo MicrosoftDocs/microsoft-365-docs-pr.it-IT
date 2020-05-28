@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -21,20 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Informazioni su come acquistare un nome di dominio in Microsoft 365.
-ms.custom: okr_smb
-ms.openlocfilehash: e60947b2f0f2591d09add00bd5aeb2ad3a5aa161
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9358df6728e1e29228241887be65fb68a4720281
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140418"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400005"
 ---
 # <a name="buy-a-domain-name"></a>Acquistare un nome di dominio
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -42,7 +44,7 @@ ms.locfileid: "44140418"
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Accedere e passare a Settings \> Domains \> buy a Domain
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Accedere e passare a Settings Domains \> \> buy a Domain
 
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
@@ -80,7 +82,7 @@ Offriamo un abbonamento gratuito per la privacy del dominio con l'acquisto di un
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>Acquistare un dominio presso un altro registrar
 Se si desidera acquistare un dominio da un registrar diverso da [GoDaddy](https://www.godaddy.com), è consigliabile utilizzarne uno sottostante che supporti l'installazione automatica (Domain Connect). 
   
-- [1&amp;1 IONOS](https://www.1and1.com/)
+- [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    

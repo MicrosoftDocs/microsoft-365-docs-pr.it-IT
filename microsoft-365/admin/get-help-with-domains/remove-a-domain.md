@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare gli utenti e i gruppi in un altro dominio.
-ms.openlocfilehash: ef0209d6ccb7534745172585fe599f627e386cb4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140406"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399897"
 ---
 # <a name="remove-a-domain"></a>Rimuovere un dominio
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
   
@@ -52,7 +53,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>.
 
-2. > Selezionare **utenti** **attivi**.
+2. Selezionare **utenti** > **attivi**.
 
 3. Selezionare le caselle accanto ai nomi di tutti gli utenti che si desidera spostare.
 
@@ -68,7 +69,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>.  
 
-2. > Selezionare **utenti** **attivi**.
+2. Selezionare **utenti** > **attivi**.
 
 3. Selezionare le caselle accanto ai nomi di tutti gli utenti che si desidera spostare.
 
@@ -84,7 +85,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>.  
 
-2. > Selezionare **utenti** **attivi**.
+2. Selezionare **utenti** > **attivi**.
 
 3. Selezionare le caselle accanto ai nomi di tutti gli utenti che si desidera spostare.
 
@@ -105,7 +106,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>.
 
-2. Passare a **Users** \> utenti **attivi**e selezionare l'account dall'elenco.
+2. Passare a **utenti** \> **attivi**e selezionare l'account dall'elenco.
 
 3. Nella scheda **account** selezionare **Gestisci nome utente**e quindi scegliere un dominio diverso.
   
@@ -119,7 +120,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Vai a **Users** \> utenti **attivi**e seleziona il tuo nome nell'elenco.
+1. Vai a **utenti** \> **attivi**e seleziona il tuo nome nell'elenco.
 
 2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica**e quindi scegliere un dominio diverso.
 
@@ -135,7 +136,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-21vianet"
 
-1. Vai a **Users** \> utenti **attivi**e seleziona il tuo nome nell'elenco.
+1. Vai a **utenti** \> **attivi**e seleziona il tuo nome nell'elenco.
 
 2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica**e quindi scegliere un dominio diverso.
 
@@ -153,7 +154,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> \> pagina **gruppi.**
+1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
   
 2. Selezionare il nome del gruppo, quindi nella scheda **generale** sotto **indirizzo di posta elettronica, primario**, selezionare **modifica**.
 
@@ -165,7 +166,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>, andare alla **Groups** > pagina **gruppi.**
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>, andare alla pagina **gruppi** > **Groups** .
 
 2. Selezionare il nome del gruppo e quindi fare clic su **modifica** accanto a **nome**.
 
@@ -177,7 +178,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>, andare alla **Groups** > pagina **gruppi.**
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>, andare alla pagina **gruppi** > **Groups** .
 
 2. Selezionare il nome del gruppo e quindi fare clic su **modifica** accanto a **nome**.
 
@@ -197,13 +198,13 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> di **installazione** \> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> di **installazione** \> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
 
 ::: moniker-end
   

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Lync e altri servizi in Google domains per Microsoft.
-ms.openlocfilehash: 6bfe32ba8f77adec97f4ab5ee40e92126be91f10
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: e6b1dd1eb90957a4e7fe22bd4b66ac87b2a51d09
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049012"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400450"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>Creare record DNS su Google domains per Microsoft
 
@@ -119,7 +120,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Tipo**|**TTL**|**Dati**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **0** è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Nota:** ottenere il valore \<*domain-key*\> dall'account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |@  <br/> |MX  <br/> |1H  <br/> |0 *\<domain-key\>* . mail.Protection.Outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **0** è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Nota:** Ottenere il vostro \<*domain-key*\> dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
     ![Digitare o incollare i valori nella sezione Custom Resource Records](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
@@ -145,7 +146,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 ## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Aggiungere i cinque record CNAME necessari per Microsoft
 
-1. Per iniziare, passare alla propria [pagina Google Domains] (https://domains.google.com/registrar) e accedere.
+1. Per iniziare, passare alla propria [pagina Google Domains] ( https://domains.google.com/registrar) e accedere.
     
 2. Nella sezione **Domain** **della pagina** Domains selezionare **configure DNS** for the Domain che si desidera modificare. 
     
@@ -163,7 +164,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |sip  <br/> |CNAME  <br/> |1H  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |1H  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |1H  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |1H  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |1H  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
    
     ![Digitare o incollare i valori nella sezione Custom Resource Records](../../media/cff9832a-6d57-421f-a183-55320974ed87.png)
   

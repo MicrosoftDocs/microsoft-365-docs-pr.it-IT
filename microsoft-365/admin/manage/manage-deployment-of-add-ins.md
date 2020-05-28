@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire i componenti aggiuntivi per gli utenti e i gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e71afad19690d3a05dc5f06bc0718861cb22f12d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139710"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399729"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Gestire la distribuzione dei componenti aggiuntivi nell'interfaccia di amministrazione di Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -67,7 +68,7 @@ A seconda delle dimensioni del gruppo di destinatari, si possono aggiungere o ri
 Prima di iniziare, vedere [determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione](centralized-deployment-of-add-ins.md).
 
   
-1. Nell'interfaccia di amministrazione, andare alla pagina dei **componenti** aggiuntivi di **Impostazioni** \> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei componenti aggiuntivi di **Impostazioni** \> **Add-ins** .
     
 2. Selezionare **Distribuisci componente aggiuntivo nella** parte superiore della pagina. Nella pagina Panoramica selezionare **Avanti**.
     
@@ -147,7 +148,7 @@ Gli aggiornamenti per i componenti aggiuntivi vengono eseguiti come segue:
 
 Dopo la distribuzione, gli amministratori possono anche modificare l'accesso degli utenti ai componenti aggiuntivi.
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni** > **& componenti** aggiuntivi.
+1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  **& componenti** aggiuntivi.
 
 2. Selezionare il componente aggiuntivo distribuito.
 
@@ -277,14 +278,14 @@ Se il componente aggiuntivo distribuito non supporta i comandi del componente ag
 
 È inoltre possibile eliminare un componente aggiuntivo distribuito.
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni** > **& componenti** aggiuntivi.
+1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  **& componenti** aggiuntivi.
 
 2. Selezionare il componente aggiuntivo distribuito.
 
 3. Fare clic su **Elimina componente aggiuntivo**. Rimuovere il pulsante del componente aggiuntivo nell'angolo in basso a destra.
 4. Convalidare le selezioni e scegliere **Rimuovi componente aggiuntivo**.
   
-## <a name="learn-more"></a>Scopri di più
+## <a name="learn-more"></a>Ulteriori informazioni
 
 Altre informazioni sulla creazione e sulla compilazione dei [componenti aggiuntivi per Office](https://go.microsoft.com/fwlink/p/?linkid=846362).
   

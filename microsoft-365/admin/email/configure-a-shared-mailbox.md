@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Dopo aver creato una cassetta postale condivisa, è necessario configurare alcune impostazioni per gli utenti, ad esempio l'inoltro della posta elettronica e le risposte automatiche. Successivamente, potrebbe essere necessario modificare altre impostazioni, ad esempio il nome della cassetta postale o i membri.
-ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629048"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400149"
 ---
 # <a name="configure-a-shared-mailbox"></a>Configurare una cassetta postale condivisa
 
@@ -79,7 +80,7 @@ Non è necessario assegnare una licenza alla cassetta postale condivisa per inol
 
 ::: moniker-end
 
-2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare \> **modifica** **inoltro della posta elettronica** .
+2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare modifica **inoltro della posta elettronica** \> **Edit**.
     
 3. Impostare l'interruttore **su**attivato e immettere un indirizzo di posta elettronica a cui inoltrare i messaggi. Può essere un qualsiasi indirizzo di posta elettronica valido. Per inoltrare a più indirizzi, è necessario [creare un gruppo di distribuzione](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) per gli indirizzi e quindi immettere il nome del gruppo in questa casella.
     
@@ -105,7 +106,7 @@ Non è necessario assegnare una licenza alla cassetta postale condivisa per inol
 
 ::: moniker-end
 
-2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare \> **modifica** **risposte automatiche** .
+2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare modifica **risposte automatiche** \> **Edit**.
     
 3. Set the toggle to **On**, and choose whether to send the reply to people inside your organization or outside your organization.
 
@@ -119,7 +120,7 @@ Non è necessario assegnare una licenza alla cassetta postale condivisa per inol
 
 Per impostazione predefinita, i messaggi inviati dalla cassetta postale condivisa non vengono salvati nella relativa cartella Posta inviata, bensì nella cartella Posta inviata della persona che ha inviato il messaggio.
 
-Se si desidera consentire a tutti di visualizzare il messaggio di posta elettronica inviato, nell'interfaccia di amministrazione modificare le impostazioni della cassetta postale condivisa e selezionare \> **modifica** **elementi inviati** .
+Se si desidera consentire a tutti di visualizzare il messaggio di posta elettronica inviato, nell'interfaccia di amministrazione modificare le impostazioni della cassetta postale condivisa e selezionare modifica **elementi inviati** \> **Edit**.
 
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Scegliere le app che possono essere utilizzate da una cassetta postale condivisa per accedere a Microsoft e-mail
@@ -142,7 +143,7 @@ Se si desidera consentire a tutti di visualizzare il messaggio di posta elettron
 
 ::: moniker-end
 
-2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare \> **modifica** **app di posta elettronica** .
+2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare modifica **app di posta elettronica** \> **Edit**.
 
 3. Impostare l'interruttore **su** attivato per tutte le app che si desidera siano in grado di utilizzare per accedere alla cassetta postale condivisa. Impostare l'interruttore su **disattivato** per tutte le applicazioni che non si desidera utilizzare. 
 
@@ -171,7 +172,7 @@ Per ulteriori informazioni sul blocco per controversia legale, vedere [creare un
 
 ::: moniker-end
 
-2. Selezionare la cassetta postale condivisa che si \> **desidera modificare,** quindi selezionare **blocco per controversia legale** .
+2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare **blocco per controversia legale** \> **Edit**.
 
 3. Impostare l'interruttore **su**attivato. 
 
@@ -260,7 +261,7 @@ Se si sceglie di non visualizzare la cassetta postale condivisa nell'elenco indi
 
 ::: moniker-end
 
-2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare **Mostra in** \> **modifica**elenco indirizzi globale.
+2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare **Mostra in modifica elenco indirizzi globale** \> **Edit**.
 
 3. Impostare l'interruttore **su attivata** o **disattivata**. 
 

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Informazioni su come individuare i problemi che si sono verificati durante la configurazione di un dominio personalizzato assicurandosi che i record DNS siano configurati correttamente.
-ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053723"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399945"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS
 
@@ -35,7 +36,7 @@ ms.locfileid: "44053723"
 Ottenere il dominio configurato per l'uso con Microsoft 365 può essere difficile. Il sistema DNS non è facile da usare e la configurazione del DNS per il dominio influisce su attività aziendali importanti, come la posta elettronica.
 
 > [!NOTE]
-> È possibile verificare se si verificano problemi con il dominio verificando il relativo stato. Accedere a **Setup** > **domini** di installazione e visualizzare le notifiche nella colonna **stato** . Se viene visualizzato un problema, selezionare altre azioni (tre punti) e quindi fare clic su **Controlla integrità**. Il riquadro che si apre descriverà tutti i problemi che si verificano con il dominio.
+> È possibile verificare se si verificano problemi con il dominio verificando il relativo stato. Accedere a **Setup**  >  **domini** di installazione e visualizzare le notifiche nella colonna **stato** . Se viene visualizzato un problema, selezionare altre azioni (tre punti) e quindi fare clic su **Controlla integrità**. Il riquadro che si apre descriverà tutti i problemi che si verificano con il dominio.
   
 ## <a name="whats-going-on"></a>Per quale motivo?
 

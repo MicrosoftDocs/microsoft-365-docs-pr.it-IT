@@ -14,17 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: "Informazioni su come diventare l'amministratore e ottenere un abbonamento a Microsoft 365 per l'organizzazione. "
-ms.openlocfilehash: ac18b40a1160d58e343df8196881769b7200d5a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627957"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399459"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>Diventa amministratore e acquista Microsoft 365 per la tua organizzazione
 
@@ -87,7 +88,7 @@ Ora che si è l'amministratore, è possibile eseguire le operazioni seguenti:
 |Aggiungere o rimuovere licenze  <br/> |È possibile [aggiungere altre licenze](../../commerce/licenses/buy-licenses.md) per gli utenti che non usano ancora Microsoft 365 o [rimuovere le licenze dagli utenti](../manage/remove-licenses-from-users.md) che non si desidera utilizzare per l'abbonamento Microsoft 365 for business dell'organizzazione.  <br/> |
 |Contattare altre persone che si sono già iscritte  <br/> |Rivolgersi agli altri utenti e far sapere che si sta gestendo la sottoscrizione Microsoft 365 e che sono stati aggiornati. [Seguire questi passaggi](../add-users/add-users.md) per visualizzare un elenco **Utenti attivi** e i rispettivi indirizzi di posta elettronica.  <br/> |
 |Iniziare a utilizzare Microsoft 365  <br/> |Visitare l'[Area risorse di Office 365](https://support.office.com/learn/office365-for-business) per informazioni su come accedere, controllare la posta elettronica, condividere documenti e altro ancora. Gli utenti possono utilizzare questo sito per iniziare a usare Microsoft 365.  <br/> |
-|Gestire la sottoscrizione Microsoft 365  <br/> |Visitare il [centro informazioni di Microsoft 365 admin](../admin-home.md) e imparare le attività amministrative comuni come l'aggiunta e la rimozione di utenti, la reimpostazione delle password e la configurazione dei dispositivi mobili.  <br/> |
+|Gestire l'abbonamento a Microsoft 365  <br/> |Visitare il [centro informazioni di Microsoft 365 admin](../admin-home.md) e imparare le attività amministrative comuni come l'aggiunta e la rimozione di utenti, la reimpostazione delle password e la configurazione dei dispositivi mobili.  <br/> |
 
 ## <a name="still-need-help"></a>Serve ulteriore assistenza?
 

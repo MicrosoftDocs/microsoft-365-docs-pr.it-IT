@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Analogamente alle funzionalità del centro conformità di Microsoft 365, il contenuto della guida è sempre in evoluzione. Stiamo creando continuamente nuovi articoli, aggiornando quelli esistenti ed eseguendo modifiche in base ai commenti e suggerimenti. Scopri cosa c'è di nuovo e aggiornato in questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 94a4025a0a30ce26175a1a598713721aaa835ee7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231899"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401200"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aggiornamenti recenti a Microsoft 365 content Compliance
 
@@ -100,13 +100,6 @@ Informazioni [introduttive sulla gestione dei rischi Insider](insider-risk-manag
 ### <a name="pst-import"></a>Importazione PST
 
 [Domande frequenti sull'importazione di file PST](faqimporting-pst-files-to-office-365.md) (aggiornato)<br>Aggiunte domande frequenti su come il processo di importazione PST gestisce gli elementi di posta elettronica duplicati.
-
-### <a name="retention"></a>Conservazione
-
-[Panoramica dei criteri di conservazione](retention-policies.md) (aggiornato)<br>Le modifiche includono:
-
-- Sono stati aggiunti percorsi di contenuto per i criteri di conservazione solo e di eliminazione, in precedenza i percorsi di contenuto descritti conservano e quindi eliminano.
-- [Sezione aggiornata](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) in cui viene spiegato che, per i percorsi di SharePoint, è necessario specificare un URL anziché scegliere un sito. Questo significa che non è necessario disporre delle autorizzazioni per accedere al sito per includerlo in un criterio di conservazione.
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 

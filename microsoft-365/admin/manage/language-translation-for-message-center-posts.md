@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Informazioni su come impostare il launguage preferito nel centro messaggi per la conversione automatica dei post.
-ms.openlocfilehash: 27391ca133eda39f533863452e87649c36ac0a7d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f998ee8f95ea9bd23ef16cef9e65eeaf4945680e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628173"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399741"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traduzione dei post del Centro messaggi
 

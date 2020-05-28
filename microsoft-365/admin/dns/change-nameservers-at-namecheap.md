@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
 description: 'Informazioni su come configurare il dominio personalizzato Microsoft con namecheap se si desidera che la gestione dei record DNS venga gestita da Microsoft. '
-ms.openlocfilehash: 6fdec37e837c74666ada82af81d43faaa0a6d589
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55fde3b0db960d78ad77c9f9189c5367de16c73f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629780"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400618"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>Modificare i server dei nomi per configurare Microsoft con namecheap
 
@@ -69,7 +70,7 @@ Se si desidera gestire i record DNS per l'utente, seguire le istruzioni riportat
     
 |**Tipo**|**Host**|**Valore**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota**: questo è un esempio. Utilizzare il valore **di indirizzo di destinazione o puntamento** specifico qui, dalla tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota**: questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
    
    ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   

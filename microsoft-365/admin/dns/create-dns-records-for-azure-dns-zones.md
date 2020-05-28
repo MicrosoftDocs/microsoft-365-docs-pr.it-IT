@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nelle aree DNS di Azure per Microsoft.
-ms.openlocfilehash: 3d50051e2302b6ef49762cad6682f15c90dd74a1
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: fcc3ea42b7414cdd5fc0c34bfae91104287d2379
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048868"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400269"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Creare record DNS per le aree DNS di Azure
 
@@ -109,7 +110,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Valore**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1  <br/> |Ore  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1   <br/> |Ore  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
@@ -159,7 +160,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Preference**|**Exchange Mail**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1  <br/> |Ore  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |1   <br/> |Ore  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-Configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
@@ -208,9 +209,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Alias**|
     |:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |1  <br/> |Ore  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |1  <br/> |Ore  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |1  <br/> |Ore  <br/> |webdir.online.lync.com  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |webdir.online.lync.com  <br/> |
     
    
     ![Azure-BP-configure-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
@@ -232,8 +233,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
-|enterpriseregistration  <br/> |CNAME  <br/> |1  <br/> |Ore  <br/> |enterpriseregistration.windows.net  <br/> |
-|enterpriseenrollment  <br/> |CNAME  <br/> |1  <br/> |Ore  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+|enterpriseregistration  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |enterpriseregistration.windows.net  <br/> |
+|enterpriseenrollment  <br/> |CNAME  <br/> |1   <br/> |Ore  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
@@ -259,7 +260,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Valore**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1  <br/> |Ore  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           
+    |@  <br/> |TXT  <br/> |1   <br/> |Ore  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           
 
     ![Azure-BP-Configure-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
@@ -290,8 +291,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |SRV  <br/> |1  <br/> |Ore  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp  <br/> |SRV  <br/> |1  <br/> |Ore  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
+    |_sip. _tls  <br/> |SRV  <br/> |1   <br/> |Ore  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls. _tcp  <br/> |SRV  <br/> |1   <br/> |Ore  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
 
     ![Azure-BP-Configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   

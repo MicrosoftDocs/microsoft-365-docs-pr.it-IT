@@ -21,18 +21,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: Informazioni su come configurare i criteri di dispositivo per Windows 10 che si applicano a tutti gli utenti dell'organizzazione, garantendo che si connettano in modo sicuro.
-ms.openlocfilehash: 1d25e51b1f61f67ca2ebe6180d6c280c23facaa5
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 811e948b33e8d305c88ff3e502c413356178696a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560641"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401015"
 ---
 # <a name="configure-windows-10-devices"></a>Configurare i dispositivi Windows 10
 

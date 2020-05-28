@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952640"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399483"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365
 
@@ -30,7 +31,7 @@ ms.locfileid: "43952640"
 
 Il nuovo interfaccia di amministrazione di Microsoft 365 è stato creato per i team IT come modo semplificato per gestire i servizi di Microsoft 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
 
-L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)può essere eseguito all'indirizzo. Le aree di lavoro specialistiche, come la sicurezza o la gestione dei dispositivi, consentono un controllo più granulare. Per ulteriori informazioni sul funzionamento dei centri di amministrazione, vedere informazioni [sui tipi specifici di ruoli IT e altre aree di lavoro, ad esempio la sicurezza, la gestione dei dispositivi o Exchange](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) , più avanti in questo articolo.
+L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e può essere eseguito all'indirizzo [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) . Le aree di lavoro specialistiche, come la sicurezza o la gestione dei dispositivi, consentono un controllo più granulare. Per ulteriori informazioni sul funzionamento dei centri di amministrazione, vedere informazioni [sui tipi specifici di ruoli IT e altre aree di lavoro, ad esempio la sicurezza, la gestione dei dispositivi o Exchange](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) , più avanti in questo articolo.
 
 ::: moniker-end
 
@@ -38,7 +39,7 @@ L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune
 
 Il nuovo interfaccia di amministrazione di Microsoft 365, che è attualmente in anteprima, è creato per i team IT come modo semplificato per gestire i servizi di Microsoft 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
 
-L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e può essere eseguito [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627)accedendo a. Inoltre, le aree di lavoro specialistiche, come Azure Active Directory ed Exchange, consentono un controllo più granulare. È possibile accedere alle aree di lavoro specialistiche dal riquadro di spostamento nell'interfaccia di amministrazione di Microsoft 365.
+L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e può essere eseguito accedendo a [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) . Inoltre, le aree di lavoro specialistiche, come Azure Active Directory ed Exchange, consentono un controllo più granulare. È possibile accedere alle aree di lavoro specialistiche dal riquadro di spostamento nell'interfaccia di amministrazione di Microsoft 365.
 
 ::: moniker-end
 
@@ -118,7 +119,7 @@ Ci piace sentire da voi! La segnalazione di bug e la condivisione dei commenti c
 
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Quali sono i tipi specifici di ruoli IT e altre aree di lavoro, ad esempio la sicurezza, la gestione dei dispositivi o Exchange?
 
-L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti i team e i ruoli che gestiscono Microsoft 365. L'esperienza, le informazioni e i controlli sono personalizzati e personalizzabili per ogni amministratore e ruolo. Inoltre, le aree di lavoro specialistiche consentono un controllo granulare approfondito. Queste aree di lavoro specialistiche includono SharePoint, &amp; teams Skype, Exchange, sicurezza, conformità, gestione dei dispositivi e Azure Active Directory. Le aree di lavoro specialistiche sono reperibili nel riquadro di spostamento dell'interfaccia di amministrazione di Microsoft [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)365 all'indirizzo.
+L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti i team e i ruoli che gestiscono Microsoft 365. L'esperienza, le informazioni e i controlli sono personalizzati e personalizzabili per ogni amministratore e ruolo. Inoltre, le aree di lavoro specialistiche consentono un controllo granulare approfondito. Queste aree di lavoro specialistiche includono SharePoint, teams &amp; Skype, Exchange, sicurezza, conformità, gestione dei dispositivi e Azure Active Directory. Le aree di lavoro specialistiche sono reperibili nel riquadro di spostamento dell'interfaccia di amministrazione di Microsoft 365 all'indirizzo [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
   
 L'aggiornamento di tutti i centri di amministrazione per un'esperienza coerente richiederà un po' di tempo, ma è possibile ottenere ulteriori informazioni sui centri di amministrazione già avviati per la restyling:
   

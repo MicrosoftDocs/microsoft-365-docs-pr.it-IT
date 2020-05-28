@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Register.com per Microsoft.
-ms.openlocfilehash: 125baf224cc9f3f21746a2f802b17f2572b65316
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 7b2353b4b6832c9316e302ace4db948e2550a28f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048904"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400329"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Creare record DNS in Register.com per Microsoft
 
@@ -123,7 +124,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:32)](
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
-    |@  <br/> |Alto  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/>  <br/>**Nota:** ottenere il valore \<*domain-key*\> dall'account Microsoft. <br> [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/>  <br/>**Nota:** Ottenere il vostro \<*domain-key*\> dal vostro account Microsoft. <br> [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copiare e incollare il valore dalla tabella](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -243,8 +244,8 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:55)](
     
     |****Service****|****Proto****|****Name****|****Priority****|****Weight****|****Port****|****Target****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![Copiare e incollare i valori della tabella](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   

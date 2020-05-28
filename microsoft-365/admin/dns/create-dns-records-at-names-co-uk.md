@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Names.co.uk per Microsoft.
-ms.openlocfilehash: 2df1a18f00fd7cd48b0d24860ddcf651c2fdac4e
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 1b519393e70483aa311354b96ebb11ad0feaa933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048940"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400377"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Creare record DNS in Names.co.uk per Microsoft
 
@@ -120,7 +121,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome host**|**Priority**|**Risultato**|
     |:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> |1  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |Lasciare vuoto questo campo.  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> > [!NOTE]> ottenere il proprio *\<domain-key\>* account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-Configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
@@ -234,8 +235,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Name**|**Priorità**|**Peso**|**Porta**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-Configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   

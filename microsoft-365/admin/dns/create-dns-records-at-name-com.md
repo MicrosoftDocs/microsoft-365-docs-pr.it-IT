@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in name.com per Microsoft.
-ms.openlocfilehash: e9133b3701c2b454cad11b9579dc7463f1a74460
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 646f486e73705f4b1e1bab63866fc7601d34cf92
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048964"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400401"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Creare record DNS in name.com per Microsoft
 
@@ -118,7 +119,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Tipo**|**Host**|**Answer**|**TTL**|**Prio**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |Lasciare vuoto questo campo.  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |MX  <br/> |Lasciare vuoto questo campo.  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Nome-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -234,8 +235,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Type**|**Service**|**Weight**|**TTL**|**Prio**|**Protocol**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1|Usare il valore predefinito (300).|100|tls|443|sipdir.online.lync.com <br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
-    |SRV|sipfederationtls|1|Usare il valore predefinito (300).|100|tcp|5061|sipfed.online.lync.com <br>**Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
+    |SRV|sip|1 |Usare il valore predefinito (300).|100|tls|443|sipdir.online.lync.com <br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
+    |SRV|sipfederationtls|1 |Usare il valore predefinito (300).|100|tcp|5061|sipfed.online.lync.com <br>**Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
    ![Nome-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Register365 per Microsoft.
-ms.openlocfilehash: 056d4dbf923c49b0586ed556f1844cd3b29abe75
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: e580779ce674375564c1b3ab6123ef1b19f50be0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048892"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400317"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>Creare record DNS in Register365 per Microsoft
 
@@ -130,7 +131,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome host**|**Priority**|**Risultato**|
     |:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> |1  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     |
+    |Lasciare vuoto questo campo.  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![Immissione di valori nella pagina Aggiungi/modifica area DNS](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
@@ -240,8 +241,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Name**|**Priorità**|**Peso**|**Porta**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Immissione di valori nella sezione Service Records](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   

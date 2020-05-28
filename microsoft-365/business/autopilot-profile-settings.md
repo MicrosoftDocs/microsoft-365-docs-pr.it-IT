@@ -23,18 +23,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: I profili Autopilot consentono di controllare il modo in cui viene installato Windows nei dispositivi utente. I profili contengono impostazioni predefinite e facoltative come l'installazione di Skip Cortana.
-ms.openlocfilehash: 0c706d12ba262856ff40ea3bee57c64234fd77f7
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 100de5e9548f901008d3ae154ac5a237ef265ffb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165842"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401035"
 ---
 # <a name="about-autopilot-profile-settings"></a>Informazioni sulle impostazioni dei profili AutoPilot
 

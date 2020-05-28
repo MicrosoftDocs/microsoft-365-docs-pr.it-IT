@@ -12,16 +12,17 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come accedere alla posta elettronica dal dispositivo mobile.
-ms.openlocfilehash: 42784d652d26222fc53b3e11f3427cf286cb32dd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 594091776025adcb7bbd92e2fa982cda36d50053
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048820"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400197"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Opzioni per l'accesso alla posta elettronica dal dispositivo mobile
 

@@ -1,5 +1,5 @@
 ---
-title: Distribuzione centralizzata dei componenti aggiuntivi
+title: Domande frequenti sulla distribuzione centralizzata
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -13,19 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Esaminare le risposte alle domande frequenti sulla distribuzione centralizzata dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011736"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399825"
 ---
-# <a name="centralized-deployment-faq"></a>Distribuzione centralizzata dei componenti aggiuntivi
+# <a name="centralized-deployment-faq"></a>Domande frequenti sulla distribuzione centralizzata
 
 La distribuzione centralizzata è il modo consigliato per un amministratore di Office 365 di distribuire i componenti aggiuntivi di Office (Word, Excel, PowerPoint e Outlook) a utenti e gruppi all'interno di un'organizzazione, purché l'organizzazione soddisfi tutti i requisiti per l'utilizzo della distribuzione centralizzata come illustrato in questo articolo.   
   
@@ -35,7 +36,7 @@ La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti
  
 La distribuzione centralizzata è supportata solo per le cassette postali online. La distribuzione non è supportata per le cassette postali di Exchange locali.
  
-È possibile utilizzare la [Verifica compatibilità della distribuzione centralizzata di Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)per determinare se l'abbonamento è idoneo. 
+È possibile utilizzare la [Verifica compatibilità della distribuzione centralizzata di Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   per determinare se l'abbonamento è idoneo. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Come si indirizzano le assegnazioni degli utenti ai componenti aggiuntivi con la distribuzione centralizzata?  
 
@@ -59,7 +60,7 @@ Per ulteriori informazioni sulla gestione dell'accesso degli utenti, vedere </br
 
 Sì. La distribuzione centralizzata fornisce agli amministratori la possibilità di scegliere uno dei tre metodi di distribuzione per i componenti aggiuntivi di Outlook durante la distribuzione dei componenti aggiuntivi:
 
-**Fixed (impostazione predefinita)**   il componente aggiuntivo viene distribuito automaticamente agli utenti assegnati e non è possibile rimuoverlo.  
+**Risolto (impostazione predefinita)**   Il componente aggiuntivo viene distribuito automaticamente agli utenti assegnati e non è possibile rimuoverlo.  
  
 **Disponibile** Gli utenti possono installare il componente aggiuntivo in Outlook scegliendo Home > ottenere altri componenti aggiuntivi > gestiti dall'amministratore.   
  

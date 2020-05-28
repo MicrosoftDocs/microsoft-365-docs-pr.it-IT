@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su Amazon Web Services (AWS) per Microsoft.
-ms.openlocfilehash: d75822feef5848575b8ec7fe09f834f67cdc6c55
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: fcc4da3a5841e9df2f6edabd540363fe70bb73ad
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049108"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400570"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Creare record DNS su Amazon Web Services (AWS) per Microsoft
 
@@ -105,7 +106,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Tipo**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0  *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere la \<propria *chiave* \> di dominio dall'account Microsoft 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Semplice  <br/> |
+    |Lasciare vuoto questo campo.  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0 *\<domain-key\>* . mail.Protection.Outlook.com.  <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il proprio \<*domain-key*\> account Microsoft 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Semplice  <br/> |
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   

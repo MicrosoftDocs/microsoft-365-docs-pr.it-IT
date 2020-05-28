@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in WiX per Microsoft.
-ms.openlocfilehash: 6f88cc65ae19f747a9fc3740ea1578f30d18b5e2
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b5fe216e65954bbcbdd9a1da223258a8362743ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048856"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400293"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Creare record DNS in WiX per Microsoft
 
@@ -109,7 +110,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 |**Host Name**|**Points to**|**Priorità**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|Popolamento automatico <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dal proprio account Microsoft.   [Come trovarla](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). | 1 Hour|
+|Popolamento automatico <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro *\<domain-key\>* dal vostro account Microsoft.   [Come trovarla](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). | 1 Hour|
    
 6. Se sono elencati altri record MX, eliminarli tutti. 
     
@@ -175,8 +176,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 |**Servizio**|**Protocol**|**Name**|**Peso**|**Porta**|**Destinazione**|**Priorità**|**TTL**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|sip  |tls  |Popolamento automatico |1  |443   |sipdir.online.lync.com |100 |1 Hour |
-|sipfed|tcp |Popolamento automatico|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+|sip  |tls  |Popolamento automatico |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+|sipfed|tcp |Popolamento automatico|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. Selezionare il pulsante **Salva DNS** nella parte superiore dell'editor DNS. 
     

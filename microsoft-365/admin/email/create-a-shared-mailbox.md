@@ -15,18 +15,19 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: 35711e1a17a244a9f68ac88daf665f0328b293b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: aac4966efca3dabc0edac1ceada96d2238cb266f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628904"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400101"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 

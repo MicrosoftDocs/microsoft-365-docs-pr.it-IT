@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni sui criteri di scadenza dei gruppi di Microsoft 365.
-ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064822"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400726"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Criteri di scadenza del gruppo Microsoft 365
 
@@ -53,11 +54,11 @@ I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una dell
 |Ruolo|Cosa possono fare|
 |---------|---------|
 |Amministratore globale (in Azure, amministratore della società), amministratore utente|Creare, leggere, aggiornare o eliminare le impostazioni dei criteri di scadenza per i gruppi di Microsoft 365.|
-|Utente|Rinnovare o [ripristinare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Microsoft 365 che possiede|
+|User|Rinnovare o [ripristinare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Microsoft 365 che possiede|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Informazioni su come impostare i criteri di scadenza
 
-Come indicato in alto, la scadenza è disattivata per impostazione predefinita. Un amministratore dovrà abilitare i criteri di scadenza e impostare le proprietà per rendere effettive le stesse. Per abilitarlo, passare alla**scadenza**di**gruppi** > di **Azure Active Directory (AAD)** > . In questa sezione è possibile impostare la durata predefinita del gruppo e specificare quanto in anticipo si desidera che la prima e la seconda notifica di scadenza vadano al proprietario del gruppo.
+Come indicato in alto, la scadenza è disattivata per impostazione predefinita. Un amministratore dovrà abilitare i criteri di scadenza e impostare le proprietà per rendere effettive le stesse. Per abilitarlo, passare alla scadenza di gruppi di **Azure Active Directory (AAD)**  >  **Groups**  >  **Expiration**. In questa sezione è possibile impostare la durata predefinita del gruppo e specificare quanto in anticipo si desidera che la prima e la seconda notifica di scadenza vadano al proprietario del gruppo.
 
 La durata del gruppo è specificata in giorni e può essere impostata su 180, 365 o su un valore personalizzato specificato. Il valore personalizzato deve essere di almeno 30 giorni.
 

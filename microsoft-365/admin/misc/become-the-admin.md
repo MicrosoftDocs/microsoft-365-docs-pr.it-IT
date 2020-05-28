@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Informazioni su come verificare la posta elettronica e la proprietà del dominio in modo da assumere un tenant non gestito in Microsoft 365
-ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627945"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399447"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Eseguire l'acquisizione di un amministratore interno
 
@@ -40,9 +41,9 @@ Se si è un amministratore e si vuole assumere un tenant non gestito creato da u
 > [!NOTE]
 > Se il servizio self-service è abilitato nel tenant, gli utenti possono iscriversi a servizi gratuiti, ad esempio Power BI, per conto proprio. In questa procedura si presuppone che la sottoscrizione di un utente in modalità self-service abbia creato il tenant non gestito che si desidera sottoporre a amministratore. Nel primo passaggio viene creato un contesto utente nel tenant non gestito, utilizzando Power BI per illustrare il percorso di acquisizione dell'amministratore.
 
-1. Per iscriversi a Power bi, passare al [sito Power bi](https://powerbi.com) e selezionare **Avvia** > **versione di valutazione** gratuita di avvio gratuito (in Condividi con Power bi Pro box). 
+1. Per iscriversi a Power bi, passare al [sito Power bi](https://powerbi.com) e selezionare **Avvia**versione di valutazione gratuita di avvio gratuito  >  **Start free trial** (in Condividi con Power bi Pro box). 
 
-2. Iscriversi con un account utente che utilizza il nome di dominio dell'organizzazione (come `powerbiadmin@contoso.com`). Se l'account è già in uso, accedere utilizzando la password corrente.
+2. Iscriversi con un account utente che utilizza il nome di dominio dell'organizzazione (come `powerbiadmin@contoso.com` ). Se l'account è già in uso, accedere utilizzando la password corrente.
 
 3. Controllare la posta elettronica per il **codice di verifica** e immettere il codice per convalidare l'indirizzo di posta elettronica.
     

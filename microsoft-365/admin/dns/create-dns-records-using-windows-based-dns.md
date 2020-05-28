@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nel DNS basato su Windows per Microsoft.
-ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048844"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400245"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Creare record DNS per Microsoft tramite DNS basato su Windows
 
@@ -38,21 +39,21 @@ Per iniziare, è necessario [trovare i record DNS nel DNS basato su Windows in](
 Problemi relativi al flusso di posta o ad altri problemi dopo l'aggiunta di record DNS, vedere [risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Trovare i record DNS in un server DNS basato su Windows
-<a name="BKMK_find_your_dns_1"> </a> Passare alla pagina contenente i record DNS per il dominio. Se si sta utilizzando Windows Server 2008, andare a **Start** > **Run**. Se si utilizza Windows Server 2012, premere il tasto Windows e **r**. Digitare **dnsmgmnt. msc**e quindi fare clic su **OK**. In gestione DNS espandere ** \<zone di ricerca in\> \> avanti del nome del server DNS  **. Selezionare il dominio. A questo punto è possibile creare i record DNS.
+<a name="BKMK_find_your_dns_1"> </a> Passare alla pagina contenente i record DNS per il dominio. Se si sta utilizzando Windows Server 2008, andare a **Start**  >  **Run**. Se si utilizza Windows Server 2012, premere il tasto Windows e **r**. Digitare **dnsmgmnt. msc**e quindi fare clic su **OK**. In gestione DNS espandere ** \<DNS server name\> \> zone di ricerca diretta  **. Selezionare il dominio. A questo punto è possibile creare i record DNS.
    
 ## <a name="add-mx-record"></a>Aggiungere il record MX
 <a name="BKMK_add_MX"> </a>
 
 Aggiungere un record MX in modo che la posta elettronica per il dominio venga a Microsoft.
-- Il record MX aggiunto contiene il valore **Indirizzo di puntamento**, che ha un aspetto simile a \<MX token\>.mail.protection.outlook.com, dove \<MX token\> è un valore del tipo MSxxxxxxx. 
+- Il record MX che verrà aggiunto include un valore (il valore dei **punti di indirizzo** ) simile al seguente: \<MX token\> . mail.Protection.Outlook.com, dove \<MX token\> è un valore come MSxxxxxxx. 
 - Dalla riga MX nella sezione Exchange Online della pagina Aggiungi record DNS in Microsoft, copiare il valore elencato in punti a indirizzo. Questo valore viene utilizzato nel record che si sta creando in questa attività. 
-- Nella pagina Gestore DNS per il dominio, passare a **azione** > **Mail Exchanger (MX)**. Per trovare questa pagina per il dominio, vedere [trovare i record DNS nel DNS basato su Windows](#find-your-dns-records-in-windows-based-dns).  
+- Nella pagina Gestore DNS per il dominio, passare a **azione**  >  **Mail Exchanger (MX)**. Per trovare questa pagina per il dominio, vedere [trovare i record DNS nel DNS basato su Windows](#find-your-dns-records-in-windows-based-dns).  
 - Nella finestra di dialogo **nuovo record di risorse** verificare che i campi siano impostati esattamente sui valori seguenti: 
     - Nome host:  
     - @Address: incollare il valore dei punti di indirizzo appena copiato da Microsoft qui.  
     - Pref 
 - Selezionare **Salva modifiche**.
-- Rimuovere eventuali record MX obsoleti. Se sono presenti record MX precedenti per questo dominio che instradano la posta elettronica da qualche altra parte, selezionare la casella di controllo accanto a ogni record precedente, quindi selezionare **Elimina** > **OK**. 
+- Rimuovere eventuali record MX obsoleti. Se sono presenti record MX precedenti per questo dominio che instradano la posta elettronica da qualche altra parte, selezionare la casella di controllo accanto a ogni record precedente, quindi selezionare **Elimina**  >  **OK**. 
    
 ## <a name="add-cname-records"></a>Aggiungere i record CNAME
 <a name="BKMK_add_CNAME"> </a>
@@ -62,7 +63,7 @@ Aggiungere i record CNAME necessari per Microsoft. Se sono elencati altri record
 > [!IMPORTANT]
 > Se si dispone di gestione dei dispositivi mobili (MDM) per Microsoft, è necessario creare due record CNAME aggiuntivi. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. Se non si dispone di MDM, è possibile ignorare questo passaggio. 
 
-- Nella pagina Gestore DNS per il dominio passare a **azione** > **CNAME (CNAME)**.
+- Nella pagina Gestore DNS per il dominio passare a **azione**  >  **CNAME (CNAME)**.
 - Nella finestra di dialogo **nuovo record di risorse** verificare che i campi siano impostati esattamente sui valori seguenti:  
     - Nome host: individuazione automatica
     - Tipo 
@@ -183,14 +184,14 @@ Aggiungere un record TXT.
 - Nome host: @
 - Digitare: TXT
 - Indirizzo: incollare il valore di destinazione o punta a indirizzo appena copiato da Microsoft qui.  
-- **Fare**clic su **OK** > .
+- Fare clic su **OK**  >  **Done**.
 
 Verificare il dominio in Microsoft.  
 > [!IMPORTANT]
 > Attendere circa 15 minuti prima di eseguire questa operazione, in modo che il record appena creato possa essere aggiornato su Internet.       
 
 - Tornare a Microsoft e seguire i passaggi riportati di seguito per richiedere un controllo di verifica. Il processo di verifica cerca il record TXT aggiunto al passaggio precedente. Se trova il record TXT corretto, il dominio è verificato.  
-1. Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> di **installazione** \> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
 2. Nella pagina **domini** , nella colonna **azione** per il dominio che si sta verificando, selezionare **Avvia installazione**. 
 3. Nella casella di controllo **conferma la propria** pagina di dominio, selezionare fine **, verifica ora**, quindi nella finestra di dialogo di conferma selezionare **termina**. 
    

@@ -21,17 +21,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Consente agli utenti di installare le app di Office nei dispositivi Windows 10 e di installare facilmente Office nei PC Windows 10 dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: a7078ad6d7423900aefba47605cb2b2852856108
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627199"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400907"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aiutare gli utenti a installare Office nei dispositivi Windows 10
 
@@ -49,7 +50,7 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 ## <a name="manage-office-deployments"></a>Gestire le distribuzioni di Office
 
-1. Accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>e accedere con le credenziali di amministratore globale. 
+1. Accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e accedere con le credenziali di amministratore globale. 
 
 2. Andare a **installazione** nel riquadro di spostamento a sinistra e nella pagina **configurazione** , scorrere fino a **Apps and Updates**.
     > [!NOTE]
@@ -64,4 +65,4 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 Business Premium
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

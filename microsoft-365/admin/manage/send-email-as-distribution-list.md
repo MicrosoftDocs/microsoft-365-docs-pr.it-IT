@@ -14,18 +14,19 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Informazioni su come inviare messaggi di posta elettronica come lista di distribuzione in Microsoft 365.
-ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a917e59bbac40846fa289a97465f6d6e065b87ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628065"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399591"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Inviare messaggi di posta elettronica come lista di distribuzione
 
@@ -45,7 +46,7 @@ Prima di eseguire questa procedura, verificare di essere stati aggiunti a una li
     
 4. Nella parte inferiore del messaggio, selezionare **altro** \> **Mostra da**.<br/> ![Seleziona altro e quindi fai clic su Mostra da](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Fare clic con il pulsante destro del mouse sull'indirizzo `Ina@weewalter.me` mittente, ad esempio, e scegliere **Rimuovi**.<br/> ![Rimuovere l'alias da](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Fare clic con il pulsante destro del mouse sull'indirizzo mittente, ad esempio, `Ina@weewalter.me` e scegliere **Rimuovi**.<br/> ![Rimuovere l'alias da](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. Digitare quindi l'indirizzo della lista di distribuzione, ad esempio support@contoso.com, e inviare il messaggio. La volta successiva che rispondi dalla lista di distribuzione, il suo indirizzo verrà visualizzato come opzione nell'elenco **da** .<br/>![Viene visualizzato l'alias della cassetta postale condivisa](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   

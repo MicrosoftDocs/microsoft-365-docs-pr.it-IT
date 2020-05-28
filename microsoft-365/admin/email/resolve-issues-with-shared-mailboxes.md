@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Provare queste soluzioni se si verificano problemi con le cassette postali condivise.
-ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d6de9ac66b11f0e50b259cdca0b1bb50b8326ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628748"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400017"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Risolvere i problemi relativi alle cassette postali condivise
 
@@ -34,7 +35,7 @@ Se viene visualizzato un messaggio di errore durante la creazione o l'utilizzo d
 ## <a name="error-when-creating-shared-mailboxes"></a>Errore durante la creazione di cassette postali condivise
 <a name="bkmk_Fix"> </a>
 
-Se viene visualizzato il messaggio di errore, **l'indirizzo proxy "SMTP: <nome\>della cassetta postale condivisa" è già utilizzato dagli indirizzi proxy o legacyExchangeDN di\<"Name>". Scegliere un altro indirizzo proxy**, significa che si sta tentando di assegnare alla cassetta postale condivisa un nome già in uso. Ad esempio, supponiamo di voler assegnare a due cassette postali condivise i nomi info@dominio1 e info@dominio2. Questa operazione può essere eseguita in due modi:
+Se viene visualizzato il messaggio di errore, **l'indirizzo proxy "SMTP: <nome della cassetta postale condivisa \> " è già utilizzato dagli indirizzi proxy o legacyExchangeDN di " \<name> ". Scegliere un altro indirizzo proxy**, significa che si sta tentando di assegnare alla cassetta postale condivisa un nome già in uso. Ad esempio, supponiamo di voler assegnare a due cassette postali condivise i nomi info@dominio1 e info@dominio2. Questa operazione può essere eseguita in due modi:
 
   - Usare Windows PowerShell. Per istruzioni, vedere questo post di Blog: [creare cassette postali condivise con lo stesso alias in domini diversi](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     

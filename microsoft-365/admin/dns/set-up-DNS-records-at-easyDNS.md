@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in easyDNS per Microsoft.
-ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631358"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400233"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Creare record DNS in easyDNS per Microsoft
 
@@ -54,7 +55,7 @@ Nota: i record SRV non sono attualmente disponibili in tutti i pacchetti di serv
     
 7. Attendere alcuni minuti prima di continuare, in modo che il record appena creato sia in grado di propagarsi su Internet e venga rilevato da Microsoft.
     
-8. Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e richiedere il record.
+8. Una volta che il record è stato aggiunto al sito del registrar, è possibile tornare a Microsoft e richiedere il record.
     
 9. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
@@ -76,7 +77,7 @@ Nota: i record SRV non sono attualmente disponibili in tutti i pacchetti di serv
     
     |**POSTA ELETTRONICA PER L'AREA**|**SERVER DI POSTA ELETTRONICA**|**PREF**|
     |:-----|:-----|:-----|
-    |@  <br/> |\<Domain-Key\>. mail.Protection.Outlook.com (ottenere il \<valore della chiave\> di dominio dalla pagina Domains Admin Center)  <br/> |0  <br/> |
+    |@  <br/> |\<domain-key\>. mail.protection.outlook.com (ottenere il \<domain-key\> valore dalla pagina Domains dell'interfaccia di amministrazione)  <br/> |0  <br/> |
    
 2. Se si desidera salvare gli altri record MX per scopi di backup, copiarli in un punto qualsiasi. Prima di procedere, rimuovere tutti gli altri record MX qui.
     

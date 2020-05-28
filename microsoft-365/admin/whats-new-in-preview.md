@@ -20,12 +20,13 @@ search.appverid:
 description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle caratteristiche che sono state aggiunte in questo mese.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 6514456a16a6ee2079a1b93e053c21863809db24
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+- AdminSurgePortfolio
+ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322136"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401143"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -306,7 +307,7 @@ Sono state apportate numerose modifiche ai ruoli nell'interfaccia di amministraz
 
 - **Preferiti** : è possibile aggiungere una stella ai ruoli preferiti o più utilizzati, in modo da poterli trovare facilmente ordinando la colonna o creando un filtro.
 - **Utenti attivi**  >  **Manage Roles** -questo è stato aggiornato per allineare le modifiche nei ruoli. Come con l'elenco dei ruoli, l'elenco predefinito di ruoli è stato definito come più utile, ma è possibile visualizzare tutti i ruoli espandendo **Mostra tutto in base alla categoria**.
-- **Ruolo lettore globale** -l'hai chiesto! Ce l'hai fatta. Ruolo di [lettura globale](add-users/about-admin-roles.md#roles-available-in-the-microsoft-365-admin-center) .
+- **Ruolo lettore globale** -l'hai chiesto! Ce l'hai fatta. Ruolo di [lettura globale](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) .
 
 ### <a name="report-an-issue"></a>Segnalare un problema
 
