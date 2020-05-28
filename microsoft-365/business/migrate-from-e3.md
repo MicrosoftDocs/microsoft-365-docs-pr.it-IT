@@ -17,16 +17,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare la propria azienda in Microsoft 365 Business Premium da Office 365 E3.
-ms.openlocfilehash: 0d23e293d599f5b9d6c829d101f2395d6ac21215
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633188"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402239"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrazione da Office 365 E3 a Microsoft 365 Business Premium 
 
@@ -41,7 +42,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 Business Pr
 | Funzionalità    | Supporto in Microsoft 365 Business Premium    | Supporto in Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Locale**        | | | 
-| App di Office<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for Enterprise | 
+| App di Office<sup>1</sup>    | App Microsoft 365 per le aziende    | Microsoft 365 Apps for enterprise | 
 | **App per la produttività del cloud**        | | | 
 | Exchange Online e Outlook    | 50 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata    | 100 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata | 
 | Teams    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png) | 
@@ -93,7 +94,7 @@ Se tutti gli utenti dell'organizzazione sono stati aggiornati a Microsoft 365 Bu
 
 È inoltre possibile eseguire questi passaggi nella pagina dispositivi:
   
-1. Nell'interfaccia di amministrazione, nella barra di spostamento a sinistra, passare ai **criteri**dei **dispositivi** \> .
+1. Nell'interfaccia di amministrazione, nella barra di spostamento a sinistra, passare ai criteri dei **dispositivi** \> **Policies**.
     
 2. Nella pagina **Criteri dispositivo** scegliere **Aggiungi**.
     

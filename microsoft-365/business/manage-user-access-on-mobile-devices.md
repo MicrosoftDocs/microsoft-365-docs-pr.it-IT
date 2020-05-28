@@ -20,18 +20,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: Informazioni sui criteri di protezione che consentono di gestire il modo in cui gli utenti accedono alle app di Office e ai file di lavoro dai dispositivi mobili.
-ms.openlocfilehash: 870706103a6c05e2e193c80f7a586eab529bb1e7
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: f613e518c3607010cae55443456be9d3ddc3d689
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561501"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403079"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>Gestire la modalità di accesso ai documenti di Office nei dispositivi mobili
 

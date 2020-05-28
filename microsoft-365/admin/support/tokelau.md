@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: be33b8f43a7e5a771aec2d9771f795fcc1c28c3c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 70396549d08f06068340d828c2ba329d455d4e89
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356017"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401595"
 ---
 # <a name="contact-support-for-tokelau"></a>Contattare il supporto per il Tokelau
 

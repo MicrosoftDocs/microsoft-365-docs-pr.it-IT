@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 863bb9c5cd6a6c9468715f02df6b40e91859ca27
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141170"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403295"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Individuare la sottoscrizione che si desidera annullare e in **impostazioni & azioni**selezionare **Annulla sottoscrizione**.
 

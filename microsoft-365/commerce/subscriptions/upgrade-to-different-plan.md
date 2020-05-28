@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,19 +24,19 @@ search.appverid:
 - BEA160
 - GEA150
 description: Informazioni su come eseguire l'aggiornamento a un nuovo abbonamento.
-ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141067"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403175"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -48,7 +49,7 @@ Quando la tua azienda cambia o hai bisogno di altre caratteristiche, puoi aggior
 
 Quando si utilizza la scheda **aggiornamento** , è possibile procedere con l'acquisto di un nuovo piano. A tutti gli utenti vengono assegnate automaticamente le licenze nel nuovo piano e il vecchio piano viene annullato per l'utente.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** dei \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Selezionare l'abbonamento che si desidera aggiornare.
 
@@ -95,7 +96,7 @@ Per aggiornare automaticamente i piani, tutti gli utenti devono essere assegnati
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Non è possibile aggiornare gli abbonamenti subito perché questa sottoscrizione non è completamente configurata o il servizio non è disponibile.
 
-Ad esempio, se uno dei servizi ha un problema, non sarà possibile eseguire l'aggiornamento fino a quando tutti i servizi non saranno integri. Per verificare se sono presenti problemi di provisioning o di integrità dei servizi, nell'interfaccia di amministrazione passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">integrità del servizio</a> **integrità** \> .
+Ad esempio, se uno dei servizi ha un problema, non sarà possibile eseguire l'aggiornamento fino a quando tutti i servizi non saranno integri. Per verificare se sono presenti problemi di provisioning o di integrità dei servizi, nell'interfaccia di amministrazione passare **Health** alla \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">integrità del servizio</a> integrità.
 
 Se il provisioning del piano non è stato ancora completato o si è verificato un problema di integrità di un servizio, attendere alcune ore finché il servizio non diventa di nuovo disponibile e riprovare. Se si ha ancora un problema, contattare il [supporto tecnico](../../admin/contact-support-for-business-products.md).
 
@@ -133,7 +134,7 @@ Se si dispone di un piano governativo o no profit, è possibile [modificare i pi
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Il piano a cui si desidera eseguire l'aggiornamento non è un'opzione supportata
 
-Quando si aggiornano i piani, i piani che sono disponibili per l'aggiornamento vengono visualizzati in base ai servizi inclusi nel piano corrente. È possibile eseguire l'aggiornamento a un piano che include gli stessi servizi correlati ai dati, ad esempio Exchange Online o SharePoint Online, o a una versione superiore. In questo modo gli utenti\'non perderanno dati relativi a tali servizi durante l'aggiornamento.
+Quando si aggiornano i piani, i piani che sono disponibili per l'aggiornamento vengono visualizzati in base ai servizi inclusi nel piano corrente. È possibile eseguire l'aggiornamento a un piano che include gli stessi servizi correlati ai dati, ad esempio Exchange Online o SharePoint Online, o a una versione superiore. In questo modo gli utenti non \' perderanno dati relativi a tali servizi durante l'aggiornamento.
 
 Se il piano non è idoneo per l'aggiornamento automatico dei piani, potrebbe essere possibile [modificare i piani manualmente](change-plans-manually.md). È inoltre possibile [chiamare il supporto](../../admin/contact-support-for-business-products.md) per la guida.
 

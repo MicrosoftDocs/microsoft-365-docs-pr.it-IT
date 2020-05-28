@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprendere i motivi per cui a volte è necessario che i piani di commutazione vengano eseguiti manualmente o chiamando il supporto.
-ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943144"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403151"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Perché non è possibile cambiare I piani di Microsoft 365 for business?
 
@@ -41,18 +42,18 @@ Se il pulsante **Cambia** piano non è visualizzato, non è possibile commutarlo
   
 ::: moniker range="o365-worldwide"
 
- **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md) | [Annulla gli](cancel-your-subscription.md) | [abbonamenti a sottoscrizione e](../index.yml) | il supporto per le[chiamate](../../admin/contact-support-for-business-products.md) di fatturazione
+ **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md)  |  [Annullare l'abbonamento](cancel-your-subscription.md)  |  [Abbonamenti e fatturazione](../index.yml)  |  [Supporto](../../admin/contact-support-for-business-products.md) per le chiamate
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md) | [Annulla gli](cancel-your-subscription.md) | [abbonamenti a sottoscrizione e](../index.yml) | il supporto per le[chiamate](../../admin/contact-support-for-business-products.md) di fatturazione
+ **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md)  |  [Annullare l'abbonamento](cancel-your-subscription.md)  |  [Abbonamenti e fatturazione](../index.yml)  |  [Supporto](../../admin/contact-support-for-business-products.md) per le chiamate
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **Serve altro?** [Acquistare o provare gli abbonamenti per Office 365 gestito da 21ViaNet](../../admin/services-in-china/buy-or-try-subscriptions.md) | [Annulla il](cancel-your-subscription.md) | [supporto](../../admin/contact-support-for-business-products.md) per le chiamate di sottoscrizione
+ **Serve altro?** [Acquistare o provare gli abbonamenti per Office 365 gestito da 21ViaNet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Annullare l'abbonamento](cancel-your-subscription.md)  |  [Supporto](../../admin/contact-support-for-business-products.md) per le chiamate
 
 ::: moniker-end
 
@@ -83,19 +84,19 @@ Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli
 
 ::: moniker range="o365-worldwide"
 
-Per verificare se sono presenti problemi di provisioning o di integrità dei servizi, nell'interfaccia di amministrazione passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">integrità dei servizi</a> oppure selezionare integrità del **servizio** **integrità** \> .
+Per verificare se sono presenti problemi di provisioning o di integrità dei servizi, nell'interfaccia di amministrazione passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">integrità dei servizi</a> oppure selezionare integrità del **Health** \> **servizio**integrità.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Per verificare se sono presenti problemi di provisioning o di integrità dei servizi, nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">integrità del servizio</a> oppure selezionare integrità del **servizio** **integrità** \> .
+Per verificare se sono presenti problemi di provisioning o di integrità dei servizi, nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">integrità del servizio</a> oppure selezionare integrità del **Health** \> **servizio**integrità.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Per verificare se sono presenti problemi di provisioning o di integrità dei servizi, nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">integrità del servizio</a> oppure selezionare integrità del **servizio** **integrità** \> .
+Per verificare se sono presenti problemi di provisioning o di integrità dei servizi, nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">integrità del servizio</a> oppure selezionare integrità del **Health** \> **servizio**integrità.
 
 ::: moniker-end
 

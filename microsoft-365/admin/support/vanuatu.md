@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5b2ad3e1a1862408111f6118c6f5f74b55dc8ef2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 51c93fa2665fb24bece3ee7374a0635240f277b1
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355617"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402331"
 ---
 # <a name="contact-support-for-vanuatu"></a>Contattare il supporto per Vanuatu
 

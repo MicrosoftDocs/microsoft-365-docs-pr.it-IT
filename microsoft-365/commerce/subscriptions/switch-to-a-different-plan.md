@@ -1,5 +1,5 @@
 ---
-title: Passare a un piano Microsoft 365 for business diverso
+title: Passare a un piano di Microsoft 365 per le aziende diverso
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,14 +25,14 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Informazioni su come passare a un nuovo abbonamento a Microsoft 365 for business.
-ms.openlocfilehash: 8682ced4aab6fd1b0cbfc132527e977eabc59306
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: c1216f0eb5069610ea63ca1a81d90243d3ef111d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707500"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403187"
 ---
-# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Passare a un piano Microsoft 365 for business diverso
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Passare a un piano di Microsoft 365 per le aziende diverso
 
 Quando la tua azienda cambia o hai bisogno di altre caratteristiche, puoi cambiare piano.  
 

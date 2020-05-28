@@ -11,16 +11,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni sugli account di fatturazione e su come gestirli.
-ms.openlocfilehash: ce7b9d2a2cc35261c7e6e3f5547574ea9c49e658
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 87cc861ab48b99106a3cbd50d8ded91205ffb0a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826268"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402607"
 ---
 # <a name="manage-billing-accounts"></a>Gestire account di fatturazione
 
@@ -66,9 +66,9 @@ In questa sezione vengono elencati gli indirizzi di spedizione associati all'acc
 
 È possibile fornire agli utenti l'accesso all'account di fatturazione nell'interfaccia di amministrazione di Microsoft 365 tramite ruoli e autorizzazioni. Solo il proprietario di un account di fatturazione può concedere l'accesso a un account di fatturazione. È possibile assegnare uno dei seguenti ruoli agli utenti:
 
-- Il **proprietario** &mdash; dell'account di fatturazione può assegnare le autorizzazioni, modificare gli account, firmare i contratti e visualizzare gli account.
-- Il **collaboratore** &mdash; account di fatturazione può modificare gli account, firmare i contratti e visualizzare gli account.
-- Il **lettore** &mdash; account di fatturazione può visualizzare gli account.
+- Proprietario dell'account di **fatturazione** &mdash; È possibile assegnare autorizzazioni, modificare account, firmare contratti e visualizzare gli account.
+- Collaboratore account di **fatturazione** &mdash; È possibile modificare gli account, firmare i contratti e visualizzare gli account.
+- Lettore account di **fatturazione** &mdash; È possibile visualizzare gli account.
 
 > [!Note]
 > I ruoli degli account di fatturazione si applicano solo agli account di fatturazione e non si applicano ad altri scenari di interfaccia di amministrazione di Microsoft 365.

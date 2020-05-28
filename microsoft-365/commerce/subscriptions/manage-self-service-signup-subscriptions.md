@@ -14,15 +14,16 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni su come gestire le sottoscrizioni di registrazione Self-Service gratuite per l'organizzazione.
-ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 81c67292a394c62d6057022babb88aa8796b9b3d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045261"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403247"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Gestione delle sottoscrizioni di iscrizione self-service
 
@@ -43,7 +44,7 @@ Utilizzare il cmdlet [**Set-MsolCompanySettings**](https://docs.microsoft.com/po
 > [!IMPORTANT]
 > Quando si elimina una sottoscrizione di registrazione in modalità self-service, tutti gli utenti possono accedere ai propri dati e alla posta elettronica ed eliminare tutti i dati e la posta elettronica.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 2. Individuare la sottoscrizione di accesso self-service che si desidera eliminare. Nella sezione **impostazioni & azioni** selezionare **Elimina sottoscrizione**.
 3. Nel riquadro **Elimina sottoscrizione** , selezionare la casella di controllo, quindi selezionare **Elimina sottoscrizione**.
 

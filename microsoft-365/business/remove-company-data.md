@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Scopri come usare Microsoft 365 for business per rimuovere i dati aziendali che gli utenti hanno sui propri dispositivi o PC Windows.
-ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784149fcf6b850e7d0483c17dd605e7ecb7cf0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634849"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402787"
 ---
 # <a name="remove-company-data-from-devices"></a>Rimuovere i dati aziendali dai dispositivi
 
@@ -40,7 +41,7 @@ ms.locfileid: "43634849"
   
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. Sulla barra di spostamento sinistra, scegliere **gestione** **dispositivi** \> .  
+2. Sulla barra di spostamento sinistra, **Devices** scegliere \> **gestione**dispositivi.  
   
 3. Nella pagina **Gestisci** scegliere o cercare un utente di cui si desidera rimuovere i dati e quindi scegliere il nome. 
     

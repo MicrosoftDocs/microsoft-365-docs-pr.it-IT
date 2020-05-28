@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Passare manualmente gli abbonamenti di Microsoft 365 per le aziende acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 6d6f28dc45f1d5c8efc7202f1be718f8517cf12f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707512"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403199"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Cambiare manualmente i piani di Microsoft 365 for business
 
@@ -137,13 +138,13 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
   
 5. Impostare l'interruttore sulla posizione **disattivata** per le licenze di cui l'utente non ha più bisogno.
 
-6. Nella parte inferiore del riquadro **licenze di prodotto** , selezionare **assegna** \> **Close** \> **Close**chiudere Chiudi.
+6. Nella parte inferiore del riquadro **licenze di prodotto** , selezionare **assegna** \> **chiudere Chiudi** \> **Close**.
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Riassegnare licenze a più utenti contemporaneamente
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla \> pagina **utenti** <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">attivi</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">attivi</a> .
 
 ::: moniker-end
 

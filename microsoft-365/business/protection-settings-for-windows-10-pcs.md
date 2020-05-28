@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Informazioni sull'impostazione predefinita e altre impostazioni disponibili in Microsoft 365 for business per proteggere i dispositivi Windows 10.
-ms.openlocfilehash: 9096fb6a8fc790d9a9432578cfd8623f9cb69c7a
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0403ea2c30221dd5693b7f3e9b4921ad175399a1
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011568"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402807"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Configurare le impostazioni di protezione dei dispositivi per i PC Windows 10
 
@@ -39,7 +40,7 @@ Visualizzare un video su come proteggere i dispositivi Windows 10 con Microsoft 
   
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Nella barra di spostamento sinistra fare clic su **criteri** \> **dispositivi** \> **Aggiungi**.
+2. Nella barra di spostamento sinistra fare clic su criteri **dispositivi** \> **Policies** \> **Aggiungi**.
   
 3. Nel riquadro **Aggiungi criterio** immettere un nome univoco per il criterio. 
     

@@ -11,23 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni su come chiudere l'account con Microsoft.
-ms.openlocfilehash: e41d11502b0c0f738cc23405c387bd5fca1cb0fe
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f399a1ba4d67abf5982c111e9b915f02324150a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141279"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402179"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Passaggio 2: annullare tutte le sottoscrizioni attive
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede**sulla destra.
 
@@ -59,7 +59,7 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Passaggio 3: eliminare tutte le sottoscrizioni disabilitate
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Se l'elenco abbonamenti è in visualizzazione **tabella** , fare clic su **schede**sulla destra.
 
@@ -73,7 +73,7 @@ Se nell'organizzazione viene utilizzato Active Directory che esegue la sincroniz
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Passaggio 4: disabilitare l'autenticazione a più fattori
 
-1. Nell'interfaccia di amministrazione, andare alla > pagina **utenti**<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">attivi</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **utenti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">attivi</a> .
 
 2. Scegliere **l'autenticazione a più fattori**.
 

@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Informazioni su un utente attivo di analisi di utilizzo di Microsoft 365, report attività e metriche di adozioni.
-ms.openlocfilehash: 2117bae32913ad713318c1df25be66d6ef6859e5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b4834d96b2f762d77f0d27309cf8c71a782b0dcd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631792"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402883"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Utente attivo nei report di utilizzo di Microsoft 365
 
@@ -38,7 +39,7 @@ Un utente attivo di prodotti Microsoft 365 per l' [analisi dell'utilizzo di micr
 |Yammer  <br/> |Qualsiasi utente che abbia letto, pubblicato o espresso apprezzamento per un messaggio in Yammer.  <br/> ||
 |Skype for Business  <br/> |Qualsiasi utente che abbia partecipato a una sessione peer-to-peer (inclusi messaggistica istantanea, chiamate audio e video, condivisione delle applicazioni e trasferimento di file) che abbia organizzato o partecipato a una conferenza.  <br/> ||
 |Office  <br/> |Qualsiasi utente che abbia attivato la sottoscrizione Microsoft 365 Pro Plus, Visio Pro o Project Pro su almeno un dispositivo.  <br/> ||
-|Microsoft 365 gruppi  <br/> |Qualsiasi membro del gruppo con attività relative alle cassette postali (se è stato inviato un messaggio al gruppo)  <br/> |Questa definizione verrà migliorata con attività dei file di sito di gruppo e attività del gruppo Yammer (attività dei file nel sito del gruppo e messaggio inviato al gruppo di Yammer associato al gruppo). Questi dati non sono attualmente disponibili nell'app modello di analisi di utilizzo di Microsoft 365  <br/> |
+|Gruppi di Microsoft 365  <br/> |Qualsiasi membro del gruppo con attività relative alle cassette postali (se è stato inviato un messaggio al gruppo)  <br/> |Questa definizione verrà migliorata con attività dei file di sito di gruppo e attività del gruppo Yammer (attività dei file nel sito del gruppo e messaggio inviato al gruppo di Yammer associato al gruppo). Questi dati non sono attualmente disponibili nell'app modello di analisi di utilizzo di Microsoft 365  <br/> |
 |Microsoft Teams  <br/> |Qualsiasi utente che abbia partecipato a messaggi di chat, messaggi di chat privati, chiamate, riunioni o altre attività. Altre attività sono definite come il numero di altre attività del team da parte dell'utente, alcune delle quali includono, e non solo, i messaggi, le app, i file, le ricerche, i gruppi di lavoro e il canale e la loro preferenza.  <br/> ||
    
 ## <a name="adoption-metrics"></a>Metriche di adozione

@@ -19,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installare Office su un iPhone o su un telefono Android e i file di lavoro nelle app di Office saranno protetti da Microsoft 365 for business.
-ms.openlocfilehash: 1263a922ba41083511fec8030634ed6cfaf70f00
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e96e2edc0fc2bc25449d8f50239fa25179b345bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632568"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402999"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurare i dispositivi mobili per gli utenti di Microsoft 365 per le aziende
 
@@ -59,7 +60,7 @@ Al termine dell'installazione, toccare il pulsante **Apri** per aprire Outlook e
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Immettere l'indirizzo di posta elettronica di lavoro **nell'account Aggiungi**account \> di **posta elettronica** \> e quindi immettere l' **accesso**alle credenziali di Microsoft 365 per le aziende.
+Immettere l'indirizzo di posta elettronica di lavoro nell'account Aggiungi account di **posta elettronica** \> **Add Account**e quindi immettere l'accesso alle credenziali di Microsoft 365 per le aziende \> **Sign in**.
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -87,7 +88,7 @@ Immettere Microsoft Outlook nella casella di ricerca di Google Play e toccare **
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Nell'app Outlook **, toccare inizia**, quindi aggiungere l'account \> di posta elettronica Microsoft 365 for business **continua**e accedere con le credenziali dell'organizzazione.
+Nell'app Outlook **, toccare inizia**, quindi aggiungere l'account di posta elettronica Microsoft 365 for business \> **continua**e accedere con le credenziali dell'organizzazione.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -105,6 +106,6 @@ Aprire nuovamente Outlook, immettere il PIN e confermarlo. L'app Outlook è ora 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

@@ -17,16 +17,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Configurare le funzionalità di conformità per evitare la perdita di dati e proteggere le informazioni riservate dei clienti.
-ms.openlocfilehash: a3405207cd7d2d6565807ef0f3a51acbcb80409a
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165738"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402695"
 ---
 # <a name="set-up-compliance-features"></a>Funzionalità di conformità della configurazione
 
@@ -46,7 +47,7 @@ DLP viene fornito con molti modelli di criteri pronti per l'uso per molte impost
     
 Per inserire una cassetta postale per il blocco per controversia legale, nell'interfaccia di amministrazione:
     
-1. Nella barra di spostamento a sinistra, passare a utenti **attivi**degli **utenti** \> .
+1. Nella barra di spostamento a sinistra, passare a utenti attivi degli **utenti** \> **Active users**.
     
 2. Selezionare un utente la cui cassetta postale si desidera inserire nel blocco per controversia legale. Nel riquadro utente espandere Impostazioni di **posta elettronica**e accanto a **altre impostazioni**scegliere **modifica proprietà di Exchange**.
     

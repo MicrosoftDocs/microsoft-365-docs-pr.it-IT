@@ -13,24 +13,24 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni su come i profili di fatturazione supportano le fatture.
 keywords: Profilo di fatturazione, fatture, addebiti, spese gestite
-ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140891"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401775"
 ---
 # <a name="manage-billing-profiles"></a>Gestire profili di fatturazione
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -38,11 +38,11 @@ Per i clienti commerciali che acquistano prodotti e servizi da Microsoft, i prof
 
 I profili di fatturazione includono le informazioni seguenti:
 
-- Nome **account** &ndash; di fatturazione dell'account di fatturazione a cui è associato il profilo
-- **Metodi** &ndash; di pagamento carte di credito o di debito, conti correnti bancari, assegno o bonifico bancario
-- Indirizzo di fatturazione **delle informazioni** &ndash; di contatto e nome del contatto
-- Le **Impostazioni** &ndash; delle fatture valutano in base al paese dell'account di fatturazione, un numero di ordine facoltativo e l'opzione per la ricezione delle fatture come allegati di posta elettronica
-- Autorizzazioni per le **autorizzazioni** &ndash; che consentono di modificare il profilo di fatturazione, pagare le bollette o utilizzare il metodo di pagamento sul profilo di fatturazione per effettuare gli acquisti
+- **Account** &ndash; di fatturazione Nome dell'account di fatturazione a cui è associato il profilo
+- **Metodi** &ndash; di pagamento Carte di credito o di debito, conti correnti bancari, assegno o bonifico bancario
+- **Informazioni** &ndash; di contatto Indirizzo di fatturazione e nome del contatto
+- **Impostazioni delle** &ndash; fatture Valuta basata sul paese dell'account di fatturazione, un numero di ordine di acquisto facoltativo e la possibilità di ricevere le fatture come allegati di posta elettronica
+- **Autorizzazioni** &ndash; Autorizzazioni che consentono di modificare il profilo di fatturazione, pagare le bollette o utilizzare il metodo di pagamento sul profilo di fatturazione per effettuare gli acquisti
 
 Utilizzare i profili di fatturazione per controllare gli acquisti e personalizzare la fattura. Viene generata una fattura mensile per i prodotti acquistati con il profilo di fatturazione. È possibile personalizzare la fattura, ad esempio aggiornare il numero dell'ordine di acquisto e la preferenza della fattura di posta elettronica.
 

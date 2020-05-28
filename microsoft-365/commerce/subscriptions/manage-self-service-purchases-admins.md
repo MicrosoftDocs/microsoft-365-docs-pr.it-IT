@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a gestire gli acquisti in modalità self-service effettuati dagli utenti dell'organizzazione.
-ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 562e0e26d9ca7d10d71a46b8cf2d87c487c1b529
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141151"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403271"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gestire acquisti in modalità self-service (amministratore)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -36,7 +37,7 @@ Come amministratore, è possibile visualizzare gli acquisti in modalità self-se
 
 ## <a name="view-self-service-subscriptions"></a>Visualizzare le sottoscrizioni in modalità self-service
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Accanto a **risultati di affinamento**, dall'elenco a discesa **tipo di account** scegliere **self-service**.
 
@@ -44,7 +45,7 @@ Come amministratore, è possibile visualizzare gli acquisti in modalità self-se
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visualizzazione delle licenze per un abbonamento all'acquisto in modalità self-service
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla **Billing**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
 
 2. Scegliere l'icona filtro e quindi fare clic su **self-service**.
 
@@ -63,7 +64,7 @@ Come amministratore, è possibile visualizzare gli acquisti in modalità self-se
 
 È possibile utilizzare il modulo di **MSCommerce** PowerShell per:
 
-- Visualizzare lo stato predefinito del valore **AllowSelfServicePurchase** &mdash; del parametro AllowSelfServicePurchase se è abilitato o disabilitato per prodotto
+- Visualizzare lo stato predefinito del valore **AllowSelfServicePurchase** del parametro AllowSelfServicePurchase &mdash; se è abilitato o disabilitato per prodotto
 - Visualizzare un elenco di prodotti applicabili e se l'acquisto in modalità self-service è abilitato o disabilitato
 - Visualizzare o modificare l'impostazione corrente per un prodotto specifico per abilitarlo o disabilitarlo
 
@@ -75,7 +76,7 @@ Per ulteriori informazioni, vedere [use AllowSelfServicePurchase for the MSComme
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a> con l'account di amministratore globale o amministratore di fatturazione.
 
-2. Passare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+2. Passare alla pagina **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 3. Trovare e scegliere il prodotto che si desidera acquistare, quindi scegliere **buy**.
 

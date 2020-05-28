@@ -20,6 +20,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Acquistare un abbonamento a Microsoft 365 for business. È possibile acquistare lo stesso tipo di sottoscrizione provato o un altro piano.
-ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: de141cb42b310bff6221d0bef6d923882dadadfd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045801"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402619"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Acquistare un abbonamento a Microsoft 365 for business dalla versione di valutazione gratuita
 
@@ -50,7 +51,7 @@ Si è tentato Microsoft 365 e ora si è pronti per l'acquisto. Sono disponibili 
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Nella pagina i **prodotti** individuare la sottoscrizione che si desidera acquistare. Nella sezione **licenze** selezionare **Acquista sottoscrizione**.
 
@@ -99,7 +100,7 @@ Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutaz
 ::: moniker range="o365-worldwide"
 
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla **Billing** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 2. Nella pagina **acquisto servizi** selezionare l'abbonamento che si desidera acquistare, quindi selezionare **Acquista**.
 
@@ -109,7 +110,7 @@ Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutaz
 
 5. Rivedere le informazioni sui prezzi e selezionare **Avanti**.
 
-6. Fornire le informazioni di pagamento, quindi selezionare **Ordina** \> per **andare a casa di amministrazione**.
+6. Fornire le informazioni di pagamento, quindi selezionare **Ordina** per \> **andare a casa di amministrazione**.
 
 ::: moniker-end
 

@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Informazioni su come acquistare un componente aggiuntivo per aggiungere ulteriori funzionalità all'abbonamento a Microsoft 365 for business. È inoltre possibile aggiornare e rimuovere un componente aggiuntivo.
-ms.custom: okr_SMB
-ms.openlocfilehash: 60bc63d4db84667f00ab0bde95e8541f45a38df7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: e22c4193fffa1d97334f61e789265e75d55d53a3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141291"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402191"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Acquistare o modificare un componente aggiuntivo
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -44,7 +46,7 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla **Billing** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 2. Nella parte inferiore della pagina **acquisto servizi** selezionare **componenti**aggiuntivi.
 
@@ -56,7 +58,7 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 6. Rivedere le informazioni sui prezzi, quindi selezionare **Avanti**.
 
-7. Fornire le informazioni di pagamento, quindi selezionare **Ordina** \> per **andare a casa di amministrazione**.
+7. Fornire le informazioni di pagamento, quindi selezionare **Ordina** per \> **andare a casa di amministrazione**.
 
 ::: moniker-end
 
@@ -66,7 +68,7 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera acquistare un componente aggiuntivo.
 
-3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** \> aggiuntivi per **acquistare i componenti**aggiuntivi.
+3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** aggiuntivi per \> **acquistare i componenti**aggiuntivi.
 
     ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione di Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -78,7 +80,7 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 7. Rivedere le informazioni sui prezzi, quindi selezionare **Avanti**.
 
-8. Fornire le informazioni di pagamento, quindi selezionare **Ordina** \> per **andare a casa di amministrazione**.
+8. Fornire le informazioni di pagamento, quindi selezionare **Ordina** per \> **andare a casa di amministrazione**.
 
 ::: moniker-end
 
@@ -88,7 +90,7 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera acquistare un componente aggiuntivo.
 
-3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** \> aggiuntivi per **acquistare i componenti**aggiuntivi.
+3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** aggiuntivi per \> **acquistare i componenti**aggiuntivi.
 
     ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione di Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -100,7 +102,7 @@ Alcuni dei piani di Microsoft 365 for business dispongono di componenti aggiunti
 
 7. Rivedere le informazioni sui prezzi, quindi selezionare **Avanti**.
 
-8. Fornire le informazioni di pagamento, quindi selezionare **Ordina** \> per **andare a casa di amministrazione**.
+8. Fornire le informazioni di pagamento, quindi selezionare **Ordina** per \> **andare a casa di amministrazione**.
 
 ::: moniker-end
 
@@ -116,7 +118,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Nella pagina i **prodotti** selezionare l'abbonamento per cui si desidera aggiornare un componente aggiuntivo.
 
@@ -179,7 +181,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Nella pagina i **prodotti** selezionare l'abbonamento al componente aggiuntivo che si desidera aggiornare, quindi selezionare **Aggiungi/Rimuovi licenze**.
 

@@ -24,12 +24,13 @@ description: Per ulteriori informazioni, vedere quali opzioni di pagamento sono 
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+- AdminSurgePortfolio
+ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232876"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401763"
 ---
 # <a name="pay-for-your-subscription"></a>Pagare l'abbonamento
 
@@ -312,4 +313,4 @@ Se il motivo per cui è stato inizialmente scelto il pagamento tramite fattura, 
 
 [Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario](add-update-or-remove-credit-card-or-bank-account.md)
 
-[Comprendere la fattura o la fattura](understand-your-invoice2.md)
+[Come leggere la fattura](understand-your-invoice2.md)

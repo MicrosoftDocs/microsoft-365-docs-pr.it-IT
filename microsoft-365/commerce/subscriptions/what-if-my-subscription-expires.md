@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Informazioni su cosa succede ai dati quando la sottoscrizione Microsoft 365 for business scade, è disabilitata o se si Annulla.
-ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165121"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403163"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Cosa succede ai dati e all'accesso quando termina l'abbonamento a Microsoft 365 for business?
 
@@ -40,9 +41,9 @@ Se l'abbonamento termina, perché scade o perché si decide di annullare, l'acce
 
 Nella tabella seguente vengono illustrate le operazioni che è possibile prevedere quando un abbonamento a pagamento Microsoft 365 for business scade.
 
-| **Attivazione**                                                             | **Scaduto <br/>(30 giorni\*)**                                                | **Disabled <br/>(90\*giorni)**                                               | **Senza provisioning**                                                                         |
+| **Attivazione**                                                             | **Scaduto <br/> (30 giorni \* )**                                                | **Disabled <br/> (90 giorni \* )**                                               | **Senza provisioning**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *Dati accessibili a tutti*                                               | *Dati accessibili a tutti*                                                     | *Dati accessibili solo agli amministratori*                                             | **Data eliminazione<br/>di Azure Active Directory viene rimossa, se non utilizzata da altri servizi** |
+| *Dati accessibili a tutti*                                               | *Dati accessibili a tutti*                                                     | *Dati accessibili solo agli amministratori*                                             | **Data eliminazione <br/> di Azure Active Directory viene rimossa, se non utilizzata da altri servizi** |
 | Gli utenti hanno accesso normale a Microsoft 365, dati e applicazioni di Office  | Gli utenti hanno accesso normale a Microsoft 365, file e applicazioni              | Gli utenti non possono accedere a Microsoft 365, file o applicazioni                        | Gli utenti non possono accedere a Microsoft 365, file o applicazioni                                     |
 | Gli amministratori hanno accesso normale a Microsoft 365, dati e applicazioni di Office | Gli amministratori possono accedere all'interfaccia di amministrazione                                           | Gli amministratori possono accedere all'interfaccia di amministrazione, ma non possono assegnare licenze agli utenti       | Gli amministratori possono accedere all'interfaccia di amministrazione per acquistare e gestire altri abbonamenti             |
 |                                                                        | Gli amministratori globali o di fatturazione possono riattivare la sottoscrizione nell'interfaccia di amministrazione | Gli amministratori globali o di fatturazione possono riattivare la sottoscrizione nell'interfaccia di amministrazione |                                                                                           |

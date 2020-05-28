@@ -18,6 +18,7 @@ ms.collection:
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,19 +29,19 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Informazioni su come aggiungere e ridurre l'archiviazione dei file nell'abbonamento a Microsoft 365. Con un'ulteriore archiviazione dei file, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
-ms.openlocfilehash: 921fd4a232d288971150a3379b138613f009f9dc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140967"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402679"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -95,7 +96,7 @@ Se non è stato ancora acquistato un ulteriore spazio di archiviazione per l'abb
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla **Billing** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 2. Nella parte inferiore della pagina **acquisto servizi** selezionare **componenti**aggiuntivi.
 
@@ -167,7 +168,7 @@ Se si è già acquistato un file di archiviazione supplementare tramite il compo
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Scegliere l'abbonamento che contiene il componente aggiuntivo di **archiviazione file aggiuntivo di Office 365** .
 

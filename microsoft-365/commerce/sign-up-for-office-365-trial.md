@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: Informazioni su come iscriversi a una sottoscrizione di valutazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: 9d1c9068b1d6596aabc09d44d854f89e76dd7ddb
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 968ab3c8bf7b377eba1aafb3fbc710eb4d36dad7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708108"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402835"
 ---
 # <a name="sign-up-for-a-trial-subscription"></a>Iscriversi a una sottoscrizione di valutazione
 
@@ -52,4 +53,4 @@ Se si decide di annullare la versione di valutazione prima della fine del period
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

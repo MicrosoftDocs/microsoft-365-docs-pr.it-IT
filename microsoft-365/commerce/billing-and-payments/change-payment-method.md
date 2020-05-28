@@ -18,6 +18,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Informazioni su come modificare il metodo di pagamento per l'abbonamento aziendale.
-ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045905"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401811"
 ---
 # <a name="change-your-payment-method"></a>Cambiare la modalità di pagamento
 
@@ -88,7 +89,7 @@ Se ci si sposta da una *carta di credito o da un conto corrente bancario a una f
   
 Quando si cambia la modalità di pagamento da fattura a carta di credito o conto corrente bancario, viene automaticamente creato un nuovo abbonamento in cui vengono spostati gli utenti, poi il vecchio abbonamento viene disabilitato. Gli utenti non subiranno alcuna interruzione del servizio e tutte le loro informazioni saranno disponibili tramite il nuovo abbonamento.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** dei \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Se si è in visualizzazione **tabella** , selezionare **schede**.
 
@@ -152,7 +153,7 @@ Se il quantitativo dell'ordine è troppo elevato, potrebbe essere necessaria una
 
 Se non è necessaria alcuna verifica del credito, eseguire la procedura seguente per passare a pagamento tramite fattura.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** dei \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Se si è in visualizzazione **tabella** , selezionare **schede**.
 
@@ -198,7 +199,7 @@ Se non è necessaria alcuna verifica del credito, eseguire la procedura seguente
 
 È possibile completare i passaggi seguenti in qualsiasi momento per verificare la modalità di pagamento configurata per un abbonamento.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** dei \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Individuare la sottoscrizione che si desidera verificare. La modalità di pagamento configurata per la sottoscrizione viene visualizzata nella sezione **fatturazione** .
 

@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 29fd2c8ed6863f9f9fde7ae7c5f3f52eb78d07eb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ae8ef2efbe2131d15b25de4cce1d02c49e988541
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253502"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402523"
 ---
 # <a name="payment-information-for-australia"></a>Informazioni di pagamento per l'Australia
 

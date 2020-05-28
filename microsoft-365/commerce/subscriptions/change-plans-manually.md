@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modificare manualmente le sottoscrizioni acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 20f5492a816c6c819456ac2ca4aa0f20da24eccd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046193"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403283"
 ---
 # <a name="change-plans-manually"></a>Modificare i piani manualmente
 
@@ -53,12 +54,12 @@ OPPURE
 
 **Acquistare un nuovo abbonamento e licenze:** Per acquistare un nuovo abbonamento, seguire la procedura illustrata in [acquistare un altro abbonamento a Microsoft 365 for business](../buy-another-subscription.md) .
 
-Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si trovano gli utenti. Ad esempio, controllare gli indirizzi di posta elettronica per gli utenti che si desidera spostare. Se gli indirizzi di posta \@elettronica includono contoso.com, è necessario acquistare un nuovo abbonamento per contoso.com.
+Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si trovano gli utenti. Ad esempio, controllare gli indirizzi di posta elettronica per gli utenti che si desidera spostare. Se gli indirizzi di posta elettronica includono \@ contoso.com, è necessario acquistare un nuovo abbonamento per contoso.com.
 Includere una licenza per ogni utente da spostare.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Passaggio 3: controllare il nuovo abbonamento e le licenze
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. **Verificare che entrambe le sottoscrizioni siano elencate e attive** La sottoscrizione da cui si sta spostando gli utenti e l'abbonamento a cui si sta spostando gli utenti devono essere elencati insieme. Se il nuovo abbonamento non compare ancora al primo controllo, controllare di nuovo più tardi. Verificare che entrambe le sottoscrizioni siano attive. [Il nuovo abbonamento non è elencato o non è attivo](#the-new-subscription-isnt-listed-or-isnt-active).
 

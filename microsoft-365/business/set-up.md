@@ -24,17 +24,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Individuare i passaggi di installazione per Microsoft 365 Business Premium, tra cui l'aggiunta di un dominio e degli utenti, la configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: 03f446f790a664af85cc630048bc022d88b6e54f
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 6606e9fd66aacab317e4b0bfd5ce2a090208018e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165774"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402943"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurare Microsoft 365 Business Premium nell'installazione guidata
 

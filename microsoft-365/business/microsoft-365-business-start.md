@@ -22,17 +22,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 for business, su come configurarlo e su come preparare i dispositivi e i PC degli utenti per assicurarsi che siano protetti da Microsoft 365 for business.
-ms.openlocfilehash: a470f015857117d3cbbc15255e8d815438222509
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a09b7c676f0e095d2a9db16daa56e19fb7a3baae
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165790"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402007"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introduzione a Microsoft 365 for business
 

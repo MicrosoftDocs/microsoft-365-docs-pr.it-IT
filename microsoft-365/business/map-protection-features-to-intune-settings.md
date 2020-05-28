@@ -20,17 +20,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Informazioni su come le caratteristiche di protezione in Microsoft 365 Business Premium sono mappate alle impostazioni di Intune. La sottoscrizione fornisce una licenza per modificare le impostazioni di Intune.
-ms.openlocfilehash: 572d3364e465067536e8369b49404d3d1de1bb5b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633244"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401579"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Come le caratteristiche di protezione in Microsoft 365 Business Premium eseguono il mapping alle impostazioni di Intune
 
@@ -44,7 +45,7 @@ Per trovare l'impostazione Intune, accedere con le credenziali di amministratore
  > 
  > Un abbonamento a Microsoft 365 Business Premium fornisce una licenza per modificare tutte le impostazioni di Intune. [Per iniziare, vedere Introduzione a Intune.](https://docs.microsoft.com/intune/introduction-intune)
   
-Selezionare il nome del criterio che &mdash; si desidera, ad esempio, i &mdash; criteri delle applicazioni per Android e quindi scegliere **impostazioni dei criteri**.
+Selezionare il nome del criterio che si desidera &mdash; , ad esempio, i criteri delle applicazioni per Android &mdash; e quindi scegliere **impostazioni dei criteri**.
   
 In **Proteggi i file di lavoro in caso di furto o smarrimento dei dispositivi**
   
@@ -95,7 +96,7 @@ Per esplorare le impostazioni disponibili, selezionare il nome del criterio desi
 
 La tabella seguente descrive il mapping tra le impostazioni di configurazione per i dispositivi Windows 10 e le impostazioni di Intune.
   
-Per trovare l'impostazione Intune, accedere con le credenziali di amministratore di Microsoft 365 Business Premium e passare a [portale di Azure](https://portal.azure.com), selezionare **altri servizi**e digitare Intune nel **filtro**, selezionare **profili**di **configurazione** \> dei dispositivi di **Intune** \> . Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+Per trovare l'impostazione Intune, accedere con le credenziali di amministratore di Microsoft 365 Business Premium e passare a [portale di Azure](https://portal.azure.com), selezionare **altri servizi**e digitare Intune nel **filtro**, selezionare profili di configurazione dei dispositivi di **Intune** \> **Device configuration** \> **Profiles**. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Impostazione dei criteri per i dispositivi Windows 10**|**Impostazioni di Intune**|
 |:-----|:-----|
@@ -103,9 +104,9 @@ Per trovare l'impostazione Intune, accedere con le credenziali di amministratore
 |Protegge i PC dalle minacce del Web in Microsoft Edge  <br/> |**SmartScreen** in **Impostazioni del browser Microsoft Edge** è impostato su **Obbligatorio**.  <br/> |
 |Disattiva lo schermo del dispositivo quando rimane inattivo per (minuti)  <br/> |Numero massimo di minuti di inattività fino al blocco dello schermo (minuti)  <br/> |
 |Consenti agli utenti di scaricare app da Microsoft Store  <br/> |Criteri URI personalizzati  <br/> |
-|Consenti agli utenti di accedere a Cortana  <br/> |L'opzione **generale** \> **Cortana** è impostata su **blocca** in Intune se impostata su **disattivato** in Microsoft 365 Business Premium.  <br/> |
+|Consenti agli utenti di accedere a Cortana  <br/> |**Informazioni generali** \> **Cortana** è impostato su **blocca** in Intune quando è impostato su **disattivato** in Microsoft 365 Business Premium.  <br/> |
 |Consenti agli utenti di ricevere da Microsoft suggerimenti e pubblicità su Windows  <br/> |**Windows Spotlight**, tutti bloccati se questa opzione è impostata su **disattivato** in Microsoft 365 Business Premium.  <br/> |
-|Mantieni automaticamente aggiornati i dispositivi Windows 10  <br/> | Questa impostazione è in aggiornamenti del servizio **Microsoft Intune** \> **-anelli di aggiornamento di Windows 10**, scegliere **criteri di aggiornamento per i dispositivi Windows 10**e quindi **Impostazioni** **Proprietà** \> .  <br/>  Quando l'impostazione Microsoft 365 Business Premium è impostata **su**attivato, vengono impostate tutte le impostazioni seguenti:  <br/> **Service Branch** è impostato su **CB** (CBB quando questa opzione è disattivata in Microsoft 365 Business Premium).  <br/> **Aggiornamenti ai prodotti Microsoft** è impostato su **Consenti**.  <br/> **Driver di Windows** è impostato su **Consenti**.  <br/> **Comportamento di aggiornamento automatico** è impostato su **Installa automaticamente durante la manutenzione** con:  <br/> **Inizio dell'orario di attività** è impostato su **6**.  <br/> **Fine dell'orario di attività** è impostato su **22**.  <br/> **Periodo di differimento dell'aggiornamento qualitativo (giorni)** è impostato su **0**.  <br/> **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)** è impostato su **0**.  <br/> **Modalità di download con ottimizzazione recapito** è impostato su **HTTP combinato con peering dietro la stessa NAT**.  <br/> |
+|Mantieni automaticamente aggiornati i dispositivi Windows 10  <br/> | Questa impostazione è in aggiornamenti del servizio **Microsoft Intune** \> **-anelli di aggiornamento di Windows 10**, scegliere **criteri di aggiornamento per i dispositivi Windows 10**e quindi **Properties** \> **Impostazioni**proprietà.  <br/>  Quando l'impostazione Microsoft 365 Business Premium è impostata **su**attivato, vengono impostate tutte le impostazioni seguenti:  <br/> **Service Branch** è impostato su **CB** (CBB quando questa opzione è disattivata in Microsoft 365 Business Premium).  <br/> **Aggiornamenti ai prodotti Microsoft** è impostato su **Consenti**.  <br/> **Driver di Windows** è impostato su **Consenti**.  <br/> **Comportamento di aggiornamento automatico** è impostato su **Installa automaticamente durante la manutenzione** con:  <br/> **Inizio dell'orario di attività** è impostato su **6**.  <br/> **Fine dell'orario di attività** è impostato su **22**.  <br/> **Periodo di differimento dell'aggiornamento qualitativo (giorni)** è impostato su **0**.  <br/> **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)** è impostato su **0**.  <br/> **Modalità di download con ottimizzazione recapito** è impostato su **HTTP combinato con peering dietro la stessa NAT**.  <br/> |
 |||
    
 

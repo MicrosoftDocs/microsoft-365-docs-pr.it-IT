@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Gli utenti possono imparare a gestire i propri acquisti in modalità self-service.
-ms.openlocfilehash: 8f141f28c2f1241d19ed34ae234c3b122dd9d69c
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141125"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403259"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gestire acquisti in modalità self-service (utenti)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -37,11 +38,11 @@ L'amministratore ha una visualizzazione di sola lettura in tutti gli abbonamenti
 
 ## <a name="view-your-subscriptions"></a>Visualizzare gli abbonamenti
 
-È possibile visualizzare un elenco di tutti gli abbonamenti acquistati in modalità self-service che sono stati acquistati. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+È possibile visualizzare un elenco di tutti gli abbonamenti acquistati in modalità self-service che sono stati acquistati. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Come acquistare altre licenze o ridurle
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Individuare la sottoscrizione per la quale si desidera acquistare più o ridurre le licenze.
 
@@ -54,7 +55,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ### <a name="to-assign-licenses"></a>Per assegnare le licenze
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla **Billing**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
 
 2. Scegliere l'abbonamento per cui si desidera assegnare le licenze.
 
@@ -69,7 +70,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ### <a name="to-unassign-licenses"></a>Per annullare l'assegnazione delle licenze
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla **Billing**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
 
 2. Scegliere il prodotto di cui si desidera annullare l'assegnazione delle licenze.
 
@@ -81,7 +82,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ## <a name="cancel-a-subscription"></a>Annullamento di un abbonamento
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** > dei<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
 
 2. Individuare l'abbonamento che si desidera annullare.
 
@@ -91,7 +92,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ## <a name="manage-your-payment-details"></a>Gestire le informazioni di pagamento
 
-1. Nell'interfaccia di amministrazione, andare > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">alla</a> **Billing** > pagina**fatture fatturazione & pagamenti**.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing**  >  **fatture fatturazione & pagamenti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> .
 
 2. Selezionare un profilo di fatturazione dall'elenco.
 
@@ -104,7 +105,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ### <a name="update-an-existing-payment-method"></a>Aggiornare una modalità di pagamento esistente
 
-1. Nell'interfaccia di amministrazione, **andare alla** > pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">fatture & pagamenti</a> .
+1. Nell'interfaccia di amministrazione, **andare alla**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">fatture & pagamenti</a> .
 
 2. Per modificare un metodo di pagamento esistente, selezionarlo nell'elenco.
 
@@ -114,7 +115,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ### <a name="add-a-new-payment-method"></a>Aggiungere un nuovo metodo di pagamento
 
-1. Nell'interfaccia di amministrazione, **andare alla** > pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">fatture & pagamenti</a> .
+1. Nell'interfaccia di amministrazione, **andare alla**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">fatture & pagamenti</a> .
 
 2. Scegliere **Add a Payment Method**.
 
@@ -122,7 +123,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ## <a name="view-your-invoices"></a>Visualizzazione delle fatture
 
-1. Nell'interfaccia di amministrazione, andare a **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">bollette fatturazione & pagina pagamenti</a> .
+1. Nell'interfaccia di amministrazione, andare a **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">bollette fatturazione & pagina pagamenti</a> .
 
 2. In **fatture** selezionare la fattura che si desidera visualizzare.
 

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: Informazioni su Microsoft 365 for business e-fattura per Taiwan.
-ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 1ea9ff21e25229924cd6815999b9c0868173026f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045881"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401787"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Comprendere la fattura elettronica per Microsoft 365 for business (Taiwan)
 
@@ -55,7 +56,7 @@ Al momento della creazione dell'account, al **passaggio 1**, welcome, Let ' s Ge
   
 Dopo aver creato l'account, è possibile aggiornare l'ID IVA tramite l'interfaccia di amministrazione attenendosi alla procedura seguente:
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
     
 2. Selezionare un abbonamento, quindi fare clic su **altre azioni**.
     

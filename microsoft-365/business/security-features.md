@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Informazioni sulle funzionalità di sicurezza disponibili in Microsoft 365 Business Premium per garantire la protezione dei dati su PC, telefoni e tablet.
-ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 839b5481e27591e1762a0d8eb5623f279d6d22dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165758"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402715"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Funzionalità di sicurezza e conformità di Microsoft 365 Business Premium
 
@@ -109,7 +110,7 @@ La sottoscrizione Microsoft 365 Business Premium include funzionalità che conse
 
    Microsoft 365 Business Premium include tutte le funzionalità di [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Con questo piano, è possibile creare **etichette di riservatezza** che consentono di controllare l'accesso alle informazioni riservate in messaggi di posta elettronica e documenti, con controlli quali "non inoltrare" e "non copiare". È inoltre possibile classificare le informazioni riservate come "riservate" e specificare in che modo le informazioni classificate possono essere condivise all'esterno e all'interno dell'azienda. La crittografia di livello aziendale è facile da applicare ai messaggi di posta elettronica e ai documenti per mantenere private le informazioni. È inoltre possibile installare il componente aggiuntivo di Azure Information Protection client per le app di Office. Per ulteriori informazioni, vedere [Azure Information Protection Unified Labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Per le etichette di riservatezza, installare il **AzInfoProtection_UL. exe**.
 
-È possibile gestire queste funzionalità nel centro conformità &amp; sicurezza e nell'interfaccia di amministrazione di Intune. Nel corso del tempo, i controlli semplificati verranno aggiunti all'interfaccia di amministrazione di Microsoft 365.
+È possibile gestire queste funzionalità nel &amp; centro conformità sicurezza e nell'interfaccia di amministrazione di Intune. Nel corso del tempo, i controlli semplificati verranno aggiunti all'interfaccia di amministrazione di Microsoft 365.
   
     
 ## <a name="faq"></a>Domande frequenti
@@ -118,7 +119,7 @@ La sottoscrizione Microsoft 365 Business Premium include funzionalità che conse
   
 Sì, queste funzionalità sono disponibili in tutti i mercati in cui è venduto Microsoft 365 Business Premium.
   
-### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Come trovare il Centro sicurezza &amp; e conformità
+### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Come trovare il Centro sicurezza e &amp; conformità
   
 1. [Accedere a Microsoft 365 Business Premium](https://portal.microsoft.com/) utilizzando le credenziali di amministratore. 
     
@@ -126,4 +127,4 @@ Sì, queste funzionalità sono disponibili in tutti i mercati in cui è venduto 
     
     ![Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, scegliere interfaccia di amministrazione.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Scegliere **conformità &amp; di sicurezza** per accedere al &amp; Centro sicurezza e conformità.
+3. Scegliere ** &amp; conformità di sicurezza** per accedere al &amp; Centro sicurezza e conformità.

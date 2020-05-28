@@ -9,19 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
-search.appverid:
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 description: Ulteriori informazioni sulla nuova funzionalità di assegnazione.
-ms.openlocfilehash: e6fe91ee2c0e2de58b54e40eddba6d3066999e6d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942176"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402415"
 ---
 # <a name="allotment-basics"></a>Nozioni di base di assegnazione
 
@@ -51,4 +49,4 @@ Per iniziare a utilizzare un riparto, è necessario essere un amministratore glo
 
 ## <a name="getting-started"></a>Introduzione
 
-La funzionalità di assegnazione è disponibile in un'anteprima privata solo per un numero limitato di clienti. Se si è interessati a partecipare, compilare questo modulo: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+La funzionalità di assegnazione è disponibile in un'anteprima privata solo per un numero limitato di clienti. Se si è interessati a partecipare, compilare questo modulo: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .

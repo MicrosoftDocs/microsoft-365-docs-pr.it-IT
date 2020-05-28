@@ -18,16 +18,17 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come proteggere i PC Windows 10 dopo aver configurato Microsoft 365 for business.
-ms.openlocfilehash: 71fd9202b04c2559e992977f1c21a129dd5455b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 88fb149e521848d6a7daa9498cd7d6240169c9fa
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633002"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402751"
 ---
 # <a name="secure-windows-10-computers"></a>Proteggere i computer Windows 10
 

@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Ottenere una panoramica del modo in cui l'organizzazione adotta i servizi Microsoft 365 per comunicare e collaborare.
-ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011760"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402023"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analisi di utilizzo di Microsoft 365
 ---
@@ -55,25 +56,25 @@ In questo riepilogo è possibile comprendere rapidamente i modelli di utilizzo i
 
 Il report introduttivo di Microsoft 365 contiene i report seguenti. È possibile visualizzarli scegliendo la scheda nella parte superiore della pagina del report. Tutti i valori del mese riportati nella sezione superiore del report si riferiscono all'ultimo mese completo.
 
-- **Adoption** &ndash; offre un riepilogo di tutti i trend di adozione. Utilizzare i rapporti riportati in questa sezione per informazioni su come gli utenti hanno adottato Microsoft 365, nonché sul modo in cui l'utilizzo generale dei singoli servizi è stato modificato mensilmente nel mese. È possibile vedere in che modo gli utenti possono essere abilitati, quante persone nell'organizzazione stanno usando attivamente Microsoft 365, quanti stanno restituendo gli utenti e quanti utilizzano il prodotto per la prima volta.
+- **Adozione** &ndash; Offre un riepilogo di tutti i trend di adozione. Utilizzare i rapporti riportati in questa sezione per informazioni su come gli utenti hanno adottato Microsoft 365, nonché sul modo in cui l'utilizzo generale dei singoli servizi è stato modificato mensilmente nel mese. È possibile vedere in che modo gli utenti possono essere abilitati, quante persone nell'organizzazione stanno usando attivamente Microsoft 365, quanti stanno restituendo gli utenti e quanti utilizzano il prodotto per la prima volta.
 
-- **Usage** &ndash; offre una visualizzazione drill-down nel volume degli utenti attivi e le attività chiave per ogni prodotto negli ultimi 12 mesi. Utilizzare i report di questa sezione per informazioni su come gli utenti dell'organizzazione utilizzano Microsoft 365.
+- **Utilizzo** &ndash; Offre una visualizzazione drill-down nel volume degli utenti attivi e le attività chiave per ogni prodotto negli ultimi 12 mesi. Utilizzare i report di questa sezione per informazioni su come gli utenti dell'organizzazione utilizzano Microsoft 365.
 
-- **Comunicazione** &ndash; è possibile vedere a colpo d'occhio se gli utenti dell'organizzazione preferiscono rimanere in contatto con teams, Yammer, email o Skype calls. È possibile osservare se sono presenti turni negli schemi nell'utilizzo degli strumenti di comunicazione tra i dipendenti. 
+- **Comunicazione** &ndash; È possibile vedere a colpo d'occhio se gli utenti dell'organizzazione preferiscono rimanere in contatto tramite teams, Yammer, email o Skype calls. È possibile osservare se sono presenti turni negli schemi nell'utilizzo degli strumenti di comunicazione tra i dipendenti. 
 
-- **Collaborazione** &ndash; vedere come gli utenti dell'organizzazione utilizzano OneDrive e SharePoint per archiviare documenti e collaborare tra loro e in che modo queste tendenze si evolvono mensilmente nel mese. È inoltre possibile visualizzare il numero di documenti condivisi internamente o esternamente e il numero di siti di SharePoint o di account di OneDrive che vengono utilizzati attivamente, suddivisi per i proprietari e gli altri collaboratori.
+- **Collaborazione** &ndash; Vedere in che modo gli utenti dell'organizzazione utilizzano OneDrive e SharePoint per archiviare documenti e collaborare tra loro e in che modo queste tendenze si evolvono mensilmente nel mese. È inoltre possibile visualizzare il numero di documenti condivisi internamente o esternamente e il numero di siti di SharePoint o di account di OneDrive che vengono utilizzati attivamente, suddivisi per i proprietari e gli altri collaboratori.
 
-- **Archiviazione** &ndash; utilizzare questo report per monitorare l'archiviazione del cloud per le cassette postali, OneDrive e i siti di SharePoint.
+- **Archiviazione** &ndash; Utilizzare questo report per monitorare l'archiviazione del cloud per le cassette postali, OneDrive e i siti di SharePoint.
 
-- Pista per dispositivi **mobili** &ndash; che i client e gli utenti utilizzano per la connessione a posta elettronica, teams, Skype o Yammer.
+- **Dispositivi mobili** &ndash; Monitorare i client e i dispositivi utilizzati dalle persone per la connessione a posta elettronica, teams, Skype o Yammer.
 
 ## <a name="activation-and-licensing"></a>Attivazione e gestione delle licenze
 
 La pagina di attivazione e licenza offre rapporti sull'attivazione di Microsoft 365; in questo modo, il numero di utenti che hanno scaricato e attivato le app di Office e quante licenze sono state assegnate dall'organizzazione. Il valore del mese verso l'alto si riferisce al mese corrente e la metrica riflette i valori aggregati dall'inizio del mese alla data corrente.
 
-- Piano di servizio Tracking di **attivazione** &ndash; , ad esempio le attivazioni di Microsoft 365 Apps for Enterprise, Project e Visio nell'organizzazione. Ogni persona con una licenza di Office può installare prodotti in un totale di cinque dispositivi. È inoltre possibile utilizzare i report di questa sezione per visualizzare i dispositivi in cui sono installate le app di Office. Si noti che per attivare un piano, un utente deve installare l'app e accedere con il proprio account.
+- **Attivazione** &ndash; Monitorare il piano del servizio (ad esempio, le attivazioni di Microsoft 365 Apps per Enterprise, Project e Visio) nell'organizzazione. Ogni persona con una licenza di Office può installare prodotti in un totale di cinque dispositivi. È inoltre possibile utilizzare i report di questa sezione per visualizzare i dispositivi in cui sono installate le app di Office. Si noti che per attivare un piano, un utente deve installare l'app e accedere con il proprio account.
 
-- **Licensing** &ndash; questo report contiene una panoramica dei tipi di licenza, il numero di utenti a cui sono stati assegnati ogni tipo di licenza e la distribuzione dell'assegnazione della licenza per ogni mese. Il valore del mese verso l'alto si riferisce al mese corrente e la metrica riflette i valori aggregati dall'inizio del mese alla data corrente.
+- **Gestione delle licenze** &ndash; Questo report contiene una panoramica dei tipi di licenza, il numero di utenti a cui sono stati assegnati ogni tipo di licenza e la distribuzione dell'assegnazione della licenza per ogni mese. Il valore del mese verso l'alto si riferisce al mese corrente e la metrica riflette i valori aggregati dall'inizio del mese alla data corrente.
 
 ## <a name="product-usage"></a>Utilizzo del prodotto
 

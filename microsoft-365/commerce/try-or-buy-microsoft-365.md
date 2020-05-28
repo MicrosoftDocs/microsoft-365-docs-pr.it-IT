@@ -14,24 +14,25 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Informazioni su come ottenere una versione di valutazione gratuita o su come acquistare un abbonamento a Microsoft 365.
-ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141055"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403139"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Provare o acquistare un abbonamento a Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, 
 ::: moniker range="o365-worldwide"
 
 
-1. Accedere all'interfaccia [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)di amministrazione e quindi accedere a servizi di **acquisto** **fatturazione** \> .
+1. Accedere all'interfaccia di amministrazione [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) e quindi accedere a servizi di acquisto **fatturazione** \> **Purchase services**.
 
 2. Nella pagina **acquisto servizi** sono elencate le sottoscrizioni disponibili per l'organizzazione. Scegliere il piano Microsoft 365 che si desidera provare o acquistare.
 
@@ -79,7 +80,7 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. Accedere all'interfaccia [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)di amministrazione e quindi accedere a servizi di **acquisto** **fatturazione** \> .
+1. Accedere all'interfaccia di amministrazione [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686) e quindi accedere a servizi di acquisto **fatturazione** \> **Purchase services**.
 
 2. Nella pagina **acquisto servizi** sono elencate le sottoscrizioni disponibili per l'organizzazione. 
 
@@ -107,7 +108,7 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. Accedere all'interfaccia [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)di amministrazione e quindi accedere a servizi di **acquisto** **fatturazione** \> .
+1. Accedere all'interfaccia di amministrazione [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628) e quindi accedere a servizi di acquisto **fatturazione** \> **Purchase services**.
 
 2. Nella pagina **acquisto servizi** sono elencate le sottoscrizioni disponibili per l'organizzazione. 
 

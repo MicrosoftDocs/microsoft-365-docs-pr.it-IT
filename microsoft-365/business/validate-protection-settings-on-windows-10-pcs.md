@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Convalidare le impostazioni di protezione delle app di Microsoft 365 Business Premium nei dispositivi Windows 10 e verificare che gli utenti non possano copiare i dati aziendali in file personali o app non gestite.
-ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 589d2fc25cc1425a775523595881660cc03e152e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635745"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403391"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Verificare le impostazioni di protezione delle app nei PC Windows 10
 
@@ -37,11 +38,11 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
   
  **Verificare le impostazioni di connessione**
   
-1. Dopo aver eseguito l'accesso con le credenziali di Microsoft 365 Business Premium e la connessione ad Azure ad, come descritto in [configurare i dispositivi Windows per gli utenti di Microsoft 365 Business Premium](set-up-windows-devices.md), passare a **account** \> di accesso a **Windows Settings** \> **work or School**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
+1. Dopo aver eseguito l'accesso con le credenziali di Microsoft 365 Business Premium e la connessione ad Azure ad, come descritto in [configurare i dispositivi Windows per gli utenti di Microsoft 365 Business Premium](set-up-windows-devices.md), passare a account di accesso a **Windows Settings** \> **Accounts** \> **work or School**. Scegliere **connesso ad \<tenant name\> Azure ad**e quindi fare clic su **info**.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. Nella pagina **gestito da** \<nome\> tenant, è possibile visualizzare le **informazioni di connessione** che includono un **indirizzo del server di gestione** come quello illustrato nella figura seguente. 
+2. Nella pagina **gestito da** \<tenant name\> , è possibile visualizzare le **informazioni di connessione** che includono un **indirizzo del server di gestione** come quello illustrato nella figura seguente. 
     
     ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
@@ -67,7 +68,7 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
     
 2. Scegliere **Connetti** in **Accedi all'azienda o all'istituto di istruzione**.
     
-3. Immettere le credenziali Microsoft 365 Business Premium nell' **accesso**alla finestra di \> **dialogo Configura un account aziendale o dell'Istituto di istruzione** .
+3. Immettere le credenziali Microsoft 365 Business Premium nell'accesso alla **finestra di dialogo Configura un account aziendale o** \> **dell'Istituto di**istruzione.
     
 4. Nella pagina **Accedi all'azienda o all'istituto di istruzione** scegliere **Account aziendale o dell'istituto di istruzione**, quindi scegliere **Informazioni**.
     

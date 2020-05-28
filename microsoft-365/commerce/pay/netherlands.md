@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37872115733faf8667a2d606c2a16cfd8a5d8dad
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0c26fe99423890f5821af9dbdc80960890c81559
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241960"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402095"
 ---
 # <a name="payment-information-for-netherlands"></a>Informazioni di pagamento per i Paesi Bassi
 

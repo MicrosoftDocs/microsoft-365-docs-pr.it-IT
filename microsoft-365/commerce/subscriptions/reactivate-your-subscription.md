@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - fwlink 874703
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,19 +26,19 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Informazioni su come riattivare l'abbonamento alla scadenza o se Microsoft la disattiva o se viene annullata al centro.
-ms.openlocfilehash: d75ebb3b09ec8b72c60e829406c1341939a4e534
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 922646dc02cbe8ed2072920a92c5c818d9f682a9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141099"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403235"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -47,7 +48,7 @@ Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato a
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** \> dei <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
 2. Nella pagina i **prodotti** individuare la sottoscrizione che si desidera riattivare. Nella sezione **fatturazione** selezionare **riattiva**.
   

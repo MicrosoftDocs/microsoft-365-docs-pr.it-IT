@@ -16,17 +16,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda da Microsoft 365 Business Premium a Microsoft 365 E3.
-ms.openlocfilehash: a41b27b91bd049abb2231a397a328f4f53af9500
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633176"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401991"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Eseguire la migrazione da Microsoft 365 Business Premium a Microsoft 365 E3
 
@@ -50,7 +51,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 Business Pr
 |:-------|:-----|:-----|
 | **Locale**        | | | 
 | Windows 10    | Windows 10 Business  |     Windows 10 Enterprise E3| 
-| App di Office *    | [Microsoft 365 Apps for business](#office-365-business)    | Microsoft 365 Apps for Enterprise | 
+| App di Office *    | [App Microsoft 365 per le aziende](#office-365-business)    | Microsoft 365 Apps for enterprise | 
 | **App per la produttività del cloud**        | | | 
 | Exchange Online e Outlook    | 50 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata    | 100 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata | 
 | Teams    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
@@ -140,7 +141,7 @@ Non è necessario apportare modifiche alla configurazione di Intune corrente pri
 Microsoft 365 Business Premium include Windows 10 business, che è possibile installare con Windows Autopilot. Quando si esegue la migrazione a Microsoft 365 E3, ogni licenza utente include Windows 10 Enterprise E3, che è possibile installare anche con Windows Autopilot.
 
 <a name="office-365-business"></a>
-###  <a name="microsoft-365-apps-for-business"></a>Microsoft 365 Apps for business
+###  <a name="microsoft-365-apps-for-business"></a>App Microsoft 365 per le aziende
 
 Il client Microsoft 365 Apps for business installato nei dispositivi inizierà automaticamente a utilizzare le funzionalità di Microsoft 365 Apps for Enterprise. Dopo la migrazione, è ora possibile utilizzare:
 

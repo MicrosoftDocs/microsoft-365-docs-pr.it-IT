@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Informazioni su come personalizzare i report nel desktop del browser e Power BI.
-ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 121a9be4a83570b7fcf358c48bf558d3bc7c1131
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140710"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402931"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizzare i report nell'analisi dell'utilizzo di Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ In questo esempio viene illustrato come modificare la scheda **attivazione** all
   
 1. All'interno del rapporto di **attivazione/gestione delle licenze** , fare clic sulla scheda **attivazione** .
     
-2. Immettere la modalità di modifica facendo clic sul pulsante **modifica** nella parte superiore tramite ![il pulsante altro pagina nel pulsante Power](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) bi. 
+2. Immettere la modalità di modifica facendo clic sul pulsante **modifica** nella parte superiore tramite il pulsante ![ altro pagina nel pulsante Power bi ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) . 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -69,7 +70,7 @@ L'esempio seguente illustra come creare un nuovo oggetto visivo per tenere tracc
   
 1. Accedere al report **sull'utilizzo del prodotto** usando il NAV sinistro e fare clic sulla scheda **Yammer** .
     
-2. Passare alla modalità di modifica facendo clic ![sul pulsante altro pagina in Power bi](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) e **modifica**. 
+2. Passare alla modalità di modifica facendo clic sul ![ pulsante altro pagina in Power bi ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) e **modifica**. 
     
 3. Nella parte inferiore della pagina, fare clic su ![Pulsante Aggiungi pagina in Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) per creare una nuova pagina.
   
@@ -95,7 +96,7 @@ L'esempio seguente illustra come creare un nuovo oggetto visivo per tenere tracc
 
     ![Selezionare la casella di controllo Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Appena sotto l'elenco delle visualizzazioni, fare clic sull' **icona formato formato icona** ![in Power bi Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
+12. Appena sotto l'elenco delle visualizzazioni, fare clic sull'icona **formato formato icona** ![ in Power bi Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
 
 13. Espandere Titolo e cambiare il valore **Testo titolo** in **Nuovi utenti di Yammer per mese**.
     
@@ -115,7 +116,7 @@ Per la maggior parte dei clienti è sufficiente modificare i report e gli oggett
   
 1. Passare a **Recupera dati** \> **Altro** \> **Feed OData** \> **Connetti**.
     
-2. Nella finestra URL immettere "https://<i></i>Reports.Office.com/PBI/V1.0/\<TenantId"\>
+2. Nella finestra URL immettere "https:// <i></i> Reports.Office.com/PBI/V1.0/ \<tenantid\> "
     
     **Nota:** Le API dei report sono in anteprima e sono soggette a modifiche fino a quando non entrano in produzione. 
   

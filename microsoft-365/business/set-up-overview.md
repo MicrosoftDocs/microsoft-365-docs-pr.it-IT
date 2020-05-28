@@ -21,17 +21,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Per ulteriori informazioni, vedere la procedura di installazione di Microsoft 365 Business Premium, dalla sottoscrizione all'aggiunta di un dominio e degli utenti, alla configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: 8b26d423d4f62ee8f9ea4a61eb8f7efa72ee26cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 80243fac6ca2efcfca030b6ee1c1113c026a80ce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633356"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402979"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell'installazione
 
@@ -94,4 +95,4 @@ Quando si aggiunge un dispositivo Windows 10 ad Azure AD, i criteri impostati pe
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

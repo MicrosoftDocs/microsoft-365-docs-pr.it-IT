@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Informazioni su come configurare i dispositivi Windows che eseguono Windows 10 Pro per gli utenti di Microsoft 365 Business Premium, consentendo la gestione centralizzata e i controlli di sicurezza.
-ms.openlocfilehash: efe81a5547496f502232e1db2f3f092165475641
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ecd9f5aa348d29d34e77061657619c015b09c41a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635453"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402959"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurare i dispositivi Windows per gli utenti di Microsoft 365 Business Premium
 
@@ -104,7 +105,7 @@ Se sono stati caricati file in OneDrive for Business, sincronizzarli nuovamente.
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Verificare che il dispositivo sia connesso a Azure AD
 
-Per verificare lo stato della sincronizzazione, nella pagina **Accedi all'azienda o all'istituto di istruzione** in **Impostazioni** fare clic nell'area **Connesso a** _ \<organization name\> _ per visualizzare i pulsanti **Informazioni** e **Disconnetti**. Fare clic su **Informazioni** per ottenere lo stato di sincronizzazione. 
+Per verificare lo stato della sincronizzazione, nella pagina **Access Work or School** in **Settings**fare clic nell'area **connessa a** _ \<organization name\> _ per esporre i pulsanti **info** e **Disconnetti**. Fare clic su **Informazioni** per ottenere lo stato di sincronizzazione. 
   
 Nella pagina Stato sincronizzazione fare clic su Sincronizza per ottenere i criteri di gestione più recenti per i dispositivi mobili nel PC.
   
@@ -128,4 +129,4 @@ Per configurare i dispositivi mobili, vedere [configurare i dispositivi mobili p
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 Business Premium
 
-[Video sulla formazione di Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

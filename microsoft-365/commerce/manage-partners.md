@@ -11,30 +11,30 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni su come collaborare con i provider di soluzioni certificati Microsoft per l'acquisto e la gestione di prodotti e servizi per l'organizzazione o l'Istituto di istruzione.
 keywords: partner, provider di soluzioni
-ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141208"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402595"
 ---
 # <a name="manage-partner-relationships"></a>Gestire le relazioni con i partner
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione cambia. Se l'esperienza non corrisponde ai dettagli presentati, vedere [About The New Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
 È possibile collaborare con i provider di soluzioni certificati Microsoft per acquistare e gestire prodotti e servizi per l'organizzazione o l'Istituto di istruzione. Sono necessari alcuni passaggi per ottenere le operazioni configurate.
 
-- Gli amministratori trovano e contattano un partner che utilizza il <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>modulo all'indirizzo.
+- Gli amministratori trovano e contattano un partner che utilizza il modulo all'indirizzo <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> .
 - I partner inviano una richiesta di posta elettronica ai clienti per stabilire una relazione tra partner.
 - I clienti accettano l'invito nell'interfaccia di amministrazione di Microsoft 365 e iniziano a lavorare con il partner.
 
@@ -90,7 +90,7 @@ Se non si desidera delegare i privilegi di amministratore al partner, annullare 
 
 Se si delegano i privilegi di amministratore a un partner, è possibile rimuovere tali privilegi in qualsiasi momento. La rimozione dei privilegi di amministratore non rimuove la relazione tra partner. Possono comunque collaborare con l'utente, ad esempio, come rivenditore.
 
-1. Nell'interfaccia di amministrazione, andare alla > pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">account Fatturazione</a> fatturazione. **Billing**
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">account Fatturazione</a> fatturazione.
 2. Nella pagina **account di fatturazione** selezionare la scheda **Relazioni partner** .
 3. Selezionare la riga che contiene il nome del partner.
 4. Nella pagina partner, selezionare **Rimuovi ruoli di amministratore**.
@@ -99,7 +99,7 @@ Se si delegano i privilegi di amministratore a un partner, è possibile rimuover
 
 Se si decide che non si desidera più collaborare con un partner, è possibile terminare la relazione. Tuttavia, è possibile eliminare solo le relazioni in cui il partner è un amministratore delegato o un consulente. Per tutti gli altri tipi di partner, contattare il partner per terminare la relazione.
 
-1. Nell'interfaccia di amministrazione, andare alla > pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">account Fatturazione</a> fatturazione. **Billing**
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">account Fatturazione</a> fatturazione.
 2. Nella pagina **account di fatturazione** selezionare la scheda **Relazioni partner** .
 3. Selezionare la riga che contiene il nome del partner.
 4. Nella pagina dei dettagli del partner, selezionare **Elimina partner**.
