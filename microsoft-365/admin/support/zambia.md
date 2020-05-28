@@ -9,30 +9,31 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d7e0fdedf6dfe88eba0cac341880787ae6d22934
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8235c74248933c903c6b4fab1c94683a27ba2fba
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355127"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402427"
 ---
-# <a name="contact-support-for-zambia"></a><span data-ttu-id="27ecb-103">Contattare il supporto per Zambia</span><span class="sxs-lookup"><span data-stu-id="27ecb-103">Contact support for Zambia</span></span>
+# <a name="contact-support-for-zambia"></a><span data-ttu-id="d3450-103">Contattare il supporto per Zambia</span><span class="sxs-lookup"><span data-stu-id="d3450-103">Contact support for Zambia</span></span>
 
-<span data-ttu-id="27ecb-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="27ecb-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="d3450-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="d3450-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="27ecb-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="27ecb-105">Phone number</span></span>
-<span data-ttu-id="27ecb-106">+ 27 21 427 3315</span><span class="sxs-lookup"><span data-stu-id="27ecb-106">+27 21 427 3315</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d3450-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="d3450-105">Phone number</span></span>
+<span data-ttu-id="d3450-106">+ 27 21 427 3315</span><span class="sxs-lookup"><span data-stu-id="d3450-106">+27 21 427 3315</span></span>
 
-## <a name="hours"></a><span data-ttu-id="27ecb-107">Ore</span><span class="sxs-lookup"><span data-stu-id="27ecb-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="27ecb-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="27ecb-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d3450-107">Ore</span><span class="sxs-lookup"><span data-stu-id="d3450-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d3450-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="d3450-108">Billing Support:</span></span>
 
-<span data-ttu-id="27ecb-109">Inglese: lun-ven 9 AM-17.00</span><span class="sxs-lookup"><span data-stu-id="27ecb-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="d3450-109">Inglese: lun-ven 9 AM-17.00</span><span class="sxs-lookup"><span data-stu-id="d3450-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="27ecb-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="27ecb-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d3450-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="d3450-110">Technical Support:</span></span>
 
-<span data-ttu-id="27ecb-111">Italiano: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="27ecb-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d3450-111">Italiano: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="d3450-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="27ecb-112">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="27ecb-112">International call charges apply</span></span>
+<span data-ttu-id="d3450-112">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="d3450-112">International call charges apply</span></span>
