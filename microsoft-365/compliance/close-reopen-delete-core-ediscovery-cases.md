@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come gestire i casi di eDiscovery di base. Questo include la chiusura di un caso, la riapertura di un caso chiuso e l'eliminazione di un caso.
-ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 17b243a7207fd6927188b42e585101ff1d258b76
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208418"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412795"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Chiudere, riaprire ed eliminare un caso di eDiscovery di base
 
@@ -32,7 +32,7 @@ In questo articolo viene descritto come chiudere, riaprire ed eliminare i casi d
 
 Quando la causa legale o l'indagine supportata da un caso di eDiscovery di base è stata completata, è possibile chiudere il caso. Ecco cosa succede quando si chiude un caso:
   
-- Se il caso contiene posizioni di contenuto in eDiscovery Hold, tali esenzioni verranno disattivate. Potrebbe risultare che il contenuto venga eliminato o rimosso definitivamente, dall'utente o da un processo automatizzato, ad esempio un criterio di eliminazione.
+- Se il caso contiene posizioni di contenuto in eDiscovery Hold, tali esenzioni verranno disattivate. Dopo che l'esenzione è stata disattivata, viene applicato un periodo di tolleranza di 30 giorni (denominato *blocco di ritardo*) ai percorsi di contenuto in attesa. Ciò consente di evitare che il contenuto venga eliminato immediatamente e fornisce agli amministratori la possibilità di cercare e ripristinare il contenuto prima che venga eliminato definitivamente dopo la scadenza del periodo di attesa. Per ulteriori informazioni, vedere [rimozione di percorsi di contenuto da un'esenzione di eDiscovery](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 - La chiusura di un caso disattiva solo le esenzioni associate a quel caso. Se altre esenzioni vengono inserite in una posizione di contenuto, ad esempio un blocco per controversia legale, un criterio di conservazione o un'esenzione da un caso di eDiscovery di base diverso, tali esenzioni verranno comunque mantenute.
 

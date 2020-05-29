@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su cosa accade quando un'indagine o un caso legale supportato da un caso avanzato di eDiscovery è chiuso o eliminato.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e64f5cc0483129396a28cbf657778001e5d372a7
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292412"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412785"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Chiudere o eliminare un caso avanzato di eDiscovery
 
@@ -32,7 +32,7 @@ Quando la causa legale o l'indagine supportata da un caso avanzato di eDiscovery
 
 Ecco cosa succede quando si chiude un caso avanzato di eDiscovery:
 
-- Se il caso contiene eventuali posizioni di contenuto in attesa, tali esenzioni saranno disattivate. Potrebbe risultare che il contenuto venga eliminato o rimosso definitivamente, dall'utente o da un processo automatizzato, ad esempio un criterio di eliminazione.
+- Se il caso contiene eventuali posizioni di contenuto in attesa, tali esenzioni saranno disattivate. Dopo che l'esenzione è stata disattivata, viene applicato un periodo di tolleranza di 30 giorni (denominato *blocco di ritardo*) ai percorsi di contenuto in attesa. Ciò consente di evitare che il contenuto venga eliminato immediatamente e fornisce agli amministratori la possibilità di cercare o recuperare il contenuto che verrà eliminato definitivamente dopo la scadenza del periodo di attesa. Per ulteriori informazioni, vedere [rimozione di percorsi di contenuto da un'esenzione di eDiscovery](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 - La chiusura di un caso disattiva solo le esenzioni associate a quel caso. Se altre esenzioni sono posizionate in una posizione di contenuto, ad esempio una conservazione per controversia legale, un blocco di eDiscovery di base o un'esenzione da un caso eDiscovery avanzato diverso, tali esenzioni verranno mantenute.
 

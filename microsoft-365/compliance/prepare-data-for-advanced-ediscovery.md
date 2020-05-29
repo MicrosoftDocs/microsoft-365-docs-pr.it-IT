@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: "Informazioni su come utilizzare il &amp; Centro sicurezza e conformità per preparare i dati per l'analisi con eDiscovery avanzato. "
-ms.openlocfilehash: 31bf002c275b228de12b7ff9e39fabf7c72be74d
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: cf6ace4f88aa18790495b79ed3aa22ebeda75545
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214284"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412825"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Preparare i dati per Advanced eDiscovery (Classic)
 
@@ -51,7 +51,7 @@ Dopo aver preparato i risultati della ricerca nel &amp; Centro sicurezza e confo
     
 4. Fare clic su **Apri** accanto al caso in cui si desidera caricare i dati in Advanced eDiscovery. 
     
-5. Nella **Home** page del caso, fare clic su **Advanced eDiscovery**. 
+5. Nella **Home** page del caso, fare clic su **passa a Advanced eDiscovery**. 
     
     ![Fare clic su passa a Advanced eDiscovery per aprire il caso in Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

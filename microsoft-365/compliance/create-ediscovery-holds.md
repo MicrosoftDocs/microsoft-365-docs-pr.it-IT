@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile creare un'esenzione associata a un caso di eDiscovery di base per conservare il contenuto che potrebbe essere pertinente per un'indagine.
-ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 41e5f21d36456eb39999afa71852b169de864356
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352253"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412855"
 ---
 # <a name="create-an-ediscovery-hold"></a>Creare un blocco di eDiscovery
 
@@ -113,7 +113,7 @@ Di seguito sono riportate alcune altre informazioni da tenere presenti quando si
 
 - Se una ricerca viene configurata per la ricerca di percorsi in attesa e quindi si modifica un blocco di eDiscovery nel caso (aggiungendo o rimuovendo una posizione o modificando una query di blocco), la configurazione di ricerca viene aggiornata con tali modifiche. Tuttavia, è necessario eseguire nuovamente la ricerca dopo che il blocco è stato modificato per aggiornare i risultati della ricerca.
 
-- Se più eDiscovery contiene sono posizionate in una singola posizione in un caso di eDiscovery e si seleziona per eseguire la ricerca di percorsi in attesa, il numero massimo di parole chiave per la query di ricerca è 500. Ciò è dovuto al fatto che la ricerca combina tutte le esenzioni basate su query utilizzando l'operatore **or** . Se sono presenti più di 500 parole chiave nelle query di archiviazione combinata e nella query di ricerca, viene cercato tutto il contenuto della cassetta postale, non solo il contenuto che corrisponde al caso basato su query. 
+- Se più eDiscovery contiene sono posizionate in una singola posizione in un caso di eDiscovery e si seleziona per eseguire la ricerca di percorsi in attesa, il numero massimo di parole chiave per la query di ricerca è 500. Ciò è dovuto al fatto che la ricerca combina tutte le esenzioni basate su query utilizzando l'operatore **or** . Se sono presenti più di 500 parole chiave nelle query di archiviazione combinata e nella query di ricerca, viene cercato tutto il contenuto della cassetta postale, non solo il contenuto che corrisponde al caso basato su query.
     
 - Se un blocco di eDiscovery ha lo stato di **attivazione**, è comunque possibile cercare le posizioni in attesa mentre il blocco è attivo.
 
@@ -174,6 +174,26 @@ Per raccogliere un elenco degli URL per i siti di OneDrive for business nell'org
 
 > [!IMPORTANT]
 > L'URL dell'account OneDrive di un utente include il nome dell'utente (UPN) (ad esempio, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Nel caso raro che l'UPN di una persona sia cambiato, anche il relativo URL di OneDrive verrà modificato per incorporare il nuovo UPN. Se l'account OneDrive di un utente fa parte di un blocco eDiscovery, il vecchio e il relativo UPN sono cambiati, è necessario aggiornare il blocco e sarà necessario aggiornare il blocco e aggiungere il nuovo URL di OneDrive dell'utente e rimuovere quello precedente. Per altre informazioni, vedere [Come le modifiche UPN influiscono sull'URL di OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+
+## <a name="removing-content-locations-from-an-ediscovery-hold"></a>Rimozione di percorsi di contenuto da un'esenzione di eDiscovery
+
+Dopo la rimozione di una cassetta postale, un sito di SharePoint o un account OneDrive da un'esenzione di eDiscovery, viene applicato un *blocco di ritardo* . Questo significa che la rimozione effettiva del blocco viene posticipata di 30 giorni per impedire che i dati vengano eliminati definitivamente (eliminati) da una posizione di contenuto. In questo modo gli amministratori avranno la possibilità di cercare o recuperare contenuti che verranno eliminati dopo la rimozione di un blocco di eDiscovery. I dettagli sulla modalità di funzionamento del blocco di ritardo per le cassette postali e i siti sono diversi.
+
+- **Cassette postali:** Un blocco di ritardo viene inserito in una cassetta postale alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite e viene rilevato che un blocco di eDiscovery è stato rimosso. In particolare, un blocco di ritardo viene applicato a una cassetta postale quando l'Assistente cartelle gestite imposta una delle seguenti proprietà della cassetta postale su **true**: 
+
+   - **DelayHoldApplied:** Questa proprietà si applica al contenuto relativo alla posta elettronica (generato da utenti che utilizzano Outlook e Outlook sul Web) archiviato nella cassetta postale di un utente.
+
+   - **DelayReleaseHoldApplied:** Questa proprietà si applica ai contenuti basati sul cloud (generati da app non Outlook, ad esempio Microsoft teams, Microsoft Forms e Microsoft Yammer) archiviati nella cassetta postale di un utente. I dati del cloud generati da un'app Microsoft vengono in genere archiviati in una cartella nascosta della cassetta postale di un utente.
+
+   Quando una conservazione di ritardo viene posizionata sulla cassetta postale (quando una delle proprietà precedenti è impostata su **true**), la cassetta postale è ancora considerata in attesa per una durata di conservazione illimitata, come se la cassetta postale fosse in conservazione per controversia legale. Dopo 30 giorni, scade il ritardo e Microsoft 365 tenterà automaticamente di rimuovere il blocco di ritardo (impostando la proprietà DelayHoldApplied o DelayReleaseHoldApplied su **false**) in modo che il blocco venga rimosso. Dopo che entrambe le proprietà sono state impostate su **false**, gli elementi corrispondenti contrassegnati per la rimozione vengono eliminati alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite.
+
+   Per altre informazioni, vedere [Gestione della permanenza nelle cassette postali ](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+
+- **Siti di SharePoint e OneDrive:** Qualsiasi contenuto di SharePoint o OneDrive che viene conservato nella raccolta di conservazione non viene eliminato durante il periodo di attesa di 30 giorni dopo la rimozione di un sito da un blocco eDiscovery. Questo è simile a quello che succede quando un sito viene rilasciato da un criterio di conservazione. Inoltre, non è possibile eliminare manualmente il contenuto nella raccolta conservazione per il periodo di attesa di 30 giorni. 
+
+   Per ulteriori informazioni, vedere [rilasciando un criterio di conservazione](retention-policies.md#releasing-a-retention-policy).
+
+Un blocco di ritardo viene applicato anche ai percorsi di contenuto in attesa quando si chiude un caso di eDiscovery di base perché le esenzioni sono disattivate quando si chiude un caso. Per ulteriori informazioni sulla chiusura di un caso, vedere [chiudere, riaprire ed eliminare un caso di eDiscovery di base](close-reopen-delete-core-ediscovery-cases.md).
 
 ## <a name="ediscovery-hold-limits"></a>limiti di blocco di eDiscovery
 

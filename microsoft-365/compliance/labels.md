@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: 54691f996f1b2e0759c4d8758df0044a32b9ffa9
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327904"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411043"
 ---
 # <a name="learn-about-retention-labels"></a>Informazioni sulle etichette di conservazione
 
@@ -107,10 +107,6 @@ Per capire come e perché è stata applicata un'etichetta di conservazione anzic
 
 Un'etichetta di conservazione assegnata in modo esplicito ha la precedenza su un'etichetta di conservazione assegnata in modo implicito. Per altre informazioni, vedere la sezione [Precedenza nei principi di conservazione](#the-principles-of-retention-or-what-takes-precedence) in questa pagina.
 
-Nei risultati, la proprietà `ELCLastSuccessTimeStamp` (UTC) mostra quando il sistema ha elaborato la casetta postale per l'ultima volta. Se questa operazione non è stata eseguita da quando è stato creato il criterio, le etichette non verranno visualizzate. Per forzare l'elaborazione, eseguire `Start-ManagedFolderAssistant -Identity <user>`.
-    
-Se le etichette non compaiono in Outlook sul web e si ritiene che invece debbano comparire, svuotare la cache del browser (CTRL+F5).
-    
 ## <a name="retention-label-policies-and-locations"></a>Criteri per le etichette di conservazione e posizioni
 
 È possibile pubblicare tipi di etichette di conservazione differenti in posizioni diverse, a seconda dell'azione eseguita dall'etichetta di conservazione.
@@ -123,12 +119,12 @@ Se le etichette non compaiono in Outlook sul web e si ritiene che invece debbano
    
 Le etichette di conservazione applicate automaticamente in Exchange (sia per le query che per i tipi di informazioni riservate) vengono applicate solo ai messaggi appena inviati (dati in transito), non a tutti gli elementi attualmente nella cassetta postale (dati archiviati). Inoltre, le etichette di conservazione applicate automaticamente per i tipi di informazioni riservate possono essere applicate solo a tutte le cassette postali, non a cassette postali specifiche.
   
-Le cartelle pubbliche di Exchange e Skype non supportano le etichette di conservazione.
+Le cartelle pubbliche di Exchange, Skype e le chat e i messaggi di canale di Teams non supportano le etichette di conservazione.
 
 ## <a name="how-retention-labels-enforce-retention"></a>In che modo le etichette di conservazione applicano i criteri di conservazione
 
-Le etichette di conservazione possono applicare esattamente le stesse azioni di conservazione di un criterio di conservazione, ovvero conservare e poi eliminare, solo conservare oppure solo eliminare. Si possono usare le etichette di conservazione per implementare un piano contenuti (o un piano file) sofisticato. Per altre informazioni sul funzionamento della conservazione, vedere [Informazioni sui criteri di conservazione](retention-policies.md).
-  
+Le etichette di conservazione possono applicare esattamente le stesse azioni di conservazione di un criterio di conservazione, ovvero conservare e poi eliminare, solo conservare oppure solo eliminare. È possibile usare le etichette di conservazione per implementare un piano di archiviazione avanzato che identifichi specifici file per impostazioni di conservazione diverse. Per altre informazioni sul funzionamento della conservazione, vedere [Informazioni sui criteri di conservazione](retention-policies.md).
+
 Inoltre, un'etichetta di conservazione ha due opzioni di conservazione che sono disponibili solo in un'etichetta di conservazione e non in un criterio di conservazione. Con un'etichetta di conservazione, è possibile:
   
 - Attivare una revisione per l'eliminazione alla fine del periodo di conservazione, in modo che venga impostata una revisione obbligatoria dei documenti di SharePoint e OneDrive prima che vengano eliminati. Per altre informazioni, vedere [Revisioni per l'eliminazione](disposition.md#disposition-reviews).
@@ -136,6 +132,8 @@ Inoltre, un'etichetta di conservazione ha due opzioni di conservazione che sono 
 - Iniziare il periodo di conservazione dal momento in cui il contenuto è stato etichettato invece che in base all'età o alla data dell'ultima modifica. Questa opzione si applica solo al contenuto di siti di SharePoint e account di OneDrive. Per la posta elettronica di Exchange il periodo di conservazione è sempre basato sulla data di invio o ricezione del messaggio, indipendentemente dall'opzione scelta.
     
 ![Impostazioni di conservazione con opzioni specifiche per le etichette](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+
+Un'altra differenza importante è che quando si applica un'etichetta di conservazione anziché un criterio di conservazione ai file in SharePoint e l'etichetta è configurata per la conservazione del contenuto, gli utenti non possono eliminare il file mentre è in vigore il periodo di conservazione. Gli utenti possono eliminare il contenuto quando la stessa etichetta è applicata ai file di OneDrive e ai messaggi di posta elettronica, a meno che l'etichetta non contrassegni il contenuto come record.
 
 ## <a name="where-published-retention-labels-can-appear-to-end-users"></a>Posizioni in cui è possibile visualizzare le etichette di conservazione pubblicate agli utenti finali
 
@@ -197,7 +195,7 @@ Dopo l'applicazione di un'etichetta di conservazione a un elemento, è possibile
 ![Etichetta applicata visibile nel riquadro dei dettagli](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 Per SharePoint, ma non per OneDrive, è possibile creare una visualizzazione della raccolta che contenga la colonna **Etichette** o la colonna **L'elemento è un record**. Questa visualizzazione consente di vedere a colpo d'occhio le etichette di conservazione assegnate a tutti gli elementi e quali elementi sono record. Si noti, tuttavia, che non è possibile filtrare la visualizzazione per la colonna **L'elemento è un record**. Per istruzioni su come aggiungere colonne, vedere [Mostrare o nascondere le colonne in un elenco o in una raccolta](https://support.microsoft.com/it-IT/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
-  
+
 
 ### <a name="microsoft-365-groups"></a>Gruppi di Microsoft 365
 
@@ -276,11 +274,12 @@ Quando si crea un'etichetta di conservazione, è possibile farlo senza attivare 
   
 Ad esempio, si può creare un'etichetta di conservazione denominata "Rivedere in un secondo momento" senza azioni e quindi applicarla automaticamente a contenuto con tipi di informazioni riservate o a contenuto in cui vengono eseguite query.
   
-![Pagina Impostazioni etichetta con conservazione disattivata](../media/17ce863b-a823-426e-aaad-83718465f762.png)
+![Pagina Impostazioni etichetta con conservazione disattivata](../media/retention-label-retentionoff.png)
+
   
 ## <a name="using-retention-labels-for-records-management"></a>Uso di etichette di conservazione per la gestione dei record
     
-È possibile usare le etichette di conservazione per dichiarare il contenuto come record. Questo permette di implementare un'unica strategia di gestione dei record coerente in Microsoft 365. Per altre informazioni, vedere [Panoramica dei record](records.md).
+È possibile usare le etichette di conservazione per dichiarare il contenuto come record. Questo permette di implementare un'unica strategia di gestione dei record coerente in Microsoft 365. Per altre informazioni, vedere [Informazioni sui record](records.md).
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta di conservazione come condizione nei criteri di prevenzione della perdita dei dati
 
@@ -353,7 +352,7 @@ Per conservare o eliminare il contenuto o gestire i record in Microsoft 365 esis
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [Tag di conservazione e criteri di conservazione](https://go.microsoft.com/fwlink/?linkid=846125), noti anche come [gestione record di messaggistica](https://go.microsoft.com/fwlink/?linkid=846126) (solo eliminazione) 
+- [Tag di conservazione e criteri di conservazione](https://go.microsoft.com/fwlink/?linkid=846125), noti anche come [gestione record di messaggistica (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (solo eliminazione) 
     
 ### <a name="sharepoint-and-onedrive"></a>SharePoint e OneDrive
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342508"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411013"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -57,6 +57,8 @@ Guardare il video seguente (senza audio) per visualizzare le nuove funzionalità
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 Si ha sempre la possibilità di disabilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive ([opt-out](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) in qualsiasi momento.
+
+Se si sta attualmente proteggendo i documenti in SharePoint tramite SharePoint Information Rights Management (IRM), controllare la sezione [SharePoint Information Rights Management (IRM) e le etichette di riservatezza](#sharepoint-information-rights-management-irm-and-sensitivity-labels) in questa pagina. 
 
 ## <a name="requirements"></a>Requisiti
 
@@ -171,6 +173,26 @@ Dopo aver creato o modificato un'etichetta di riservatezza nel centro conformit�
 2. Attendere almeno 24 ore dopo la pubblicazione iniziale. Verificare che l'etichetta sia stata completamente sincronizzata.
 
 3. Pubblicare l'etichetta in senso più generale.
+
+## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) e etichette di riservatezza
+
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) è una tecnologia meno recente che consente di proteggere i file a livello di elenco e raccolta applicando la crittografia e le restrizioni quando si scaricano i file. Questa tecnologia di protezione obsoleta è progettata per impedire agli utenti non autorizzati di aprire il file quando si trova all'esterno di SharePoint.
+
+In confronto, le etichette di riservatezza forniscono le impostazioni di protezione delle marcature visive (intestazioni, piè di pagina, filigrane) oltre alla crittografia. Le impostazioni di crittografia supportano l'intera gamma di [diritti di utilizzo](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) per limitare gli elementi che gli utenti possono eseguire con il contenuto e le stesse etichette di riservatezza sono supportate per [molti scenari](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). L'utilizzo dello stesso metodo di protezione con impostazioni coerenti tra carichi di lavoro e app comporta una strategia di protezione coerente.
+
+Tuttavia, è possibile utilizzare entrambe le soluzioni di protezione insieme e il comportamento è il seguente: 
+
+- Se si carica un file con un'etichetta di riservatezza che applica la crittografia, la crittografia non viene rimossa così per questi file, CoAuthoring, eDiscovery, DLP e Search non sono supportati.
+
+- Se si etichetta un file tramite Office sul Web, vengono applicate tutte le impostazioni di crittografia dell'etichetta. Per questi file sono supportati la CoAuthoring, eDiscovery, DLP e la ricerca.
+
+- Se si scarica un file etichettato utilizzando Office sul Web, l'etichetta viene mantenuta e tutte le impostazioni di crittografia dall'etichetta vengono applicate anziché le impostazioni di restrizione di IRM.
+
+- Se si scarica un file di Office o PDF che non è crittografato con un'etichetta di riservatezza, vengono applicate le impostazioni di IRM.
+
+- Se sono state abilitate le impostazioni di una raccolta IRM aggiuntive, in cui è possibile impedire agli utenti di caricare documenti che non supportano IRM, queste impostazioni vengono applicate.
+
+Con questo comportamento, è possibile garantire che tutti i file di Office e PDF siano protetti da accessi non autorizzati, se sono stati scaricati, anche se non sono etichettati. Tuttavia, i file etichettati caricati non trarranno vantaggio dalle nuove funzionalità.
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Come disabilitare le etichette di riservatezza per SharePoint e OneDrive (opt-out)
 
