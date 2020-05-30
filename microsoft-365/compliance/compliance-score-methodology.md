@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul modo in cui il Punteggio di conformità di Microsoft calcola un punteggio personalizzato sulla base delle azioni intraprese per risolvere i rischi e migliorare la conformità alla postura.
-ms.openlocfilehash: 10e75be9541c4bd2b5a62d8bea46c45d213655e2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141584"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429191"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Calcolo del Punteggio di conformità Microsoft (anteprima)
 
 > [!IMPORTANT]
-> Il Punteggio di conformità non esprime una misura assoluta di conformità organizzativa rispetto a una norma o a un regolamento particolari. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Le raccomandazioni del Punteggio di conformità e del Compliance Manager non devono essere interpretate come garanzia di conformità. Questo servizio è attualmente in anteprima ed è soggetto ai termini e alle condizioni nelle condizioni dei [servizi online](https://go.microsoft.com/fwlink/?linkid=2108910).
+> I consigli di Compliance Manager e Punteggio di conformità non devono essere interpretati come una garanzia di conformità. Spetta a te valutare e convalidare l'efficacia dei controlli del cliente per il tuo ambiente normativo. Questi servizi sono attualmente in anteprima e sono soggetti ai termini e alle condizioni nelle condizioni dei [servizi online](https://go.microsoft.com/fwlink/?linkid=2108910). Vedere anche [linee guida per la gestione delle licenze di Microsoft 365 per sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="overview"></a>Panoramica
 
@@ -37,7 +37,7 @@ I valori di Punteggio di conformità visualizzati per il controllo vengono appli
 - **Lo stato di implementazione** è uguale a **implementato** o all' **implementazione alternativa** e,
 - **Risultato del test** uguale a **superato**.
 
-La somma dei punti ottenuti adottando azioni di miglioramento è il Punteggio di controllo. La somma dei punteggi di controllo è il Punteggio di valutazione. La somma dei punteggi di valutazione è il Punteggio di conformità globale
+La somma dei punti ottenuti adottando azioni di miglioramento è il Punteggio di controllo. La somma dei punteggi di controllo è il Punteggio di valutazione. La somma dei punteggi di valutazione è il Punteggio di conformità globale.
 
 ## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Punteggio iniziale basato sulla linea di base per la protezione dei dati di Microsoft 365
   
@@ -82,9 +82,9 @@ Ogni controllo ha un valore assegnato nel punteggio di conformità basato sul ri
 |:-----|:-----|
 | Obbligatorio preventivo | 27 |
 | Discrezionale preventiva | 9  |
-| Detective obbligatorio | 3  |
+| Detective obbligatorio | 3 |
 | Discrezionale detective | 1  |
-| Obbligatorio correttivo | 3  |
+| Obbligatorio correttivo | 3 |
 | Discrezionale correttiva | 1  |
   
 ![Punteggio di conformità controlla i valori dei punti](../media/compliance-score-controls-scoring.png "Punteggio di conformità controlla i valori dei punti")

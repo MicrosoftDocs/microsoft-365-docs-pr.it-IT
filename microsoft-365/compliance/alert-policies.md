@@ -19,21 +19,21 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni.
-ms.openlocfilehash: 8720d4811377365ad00ced4d950d89cf459f653e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 92f7146c40bbcbd93eb36e43a4dff9c8a807c403
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165167"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429217"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
-È possibile utilizzare il nuovo criterio di avviso e gli strumenti del dashboard di avviso nei centri sicurezza e conformità per creare criteri di avviso e quindi visualizzare gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
+È possibile utilizzare i criteri di avviso e gli strumenti del dashboard di avviso nei centri di sicurezza e conformità di Microsoft 365 per creare criteri di avviso e quindi visualizzare gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
 
 I criteri di avviso consentono di creare ed espandere la funzionalità degli avvisi di attività consentendo di categorizzare i criteri di avviso, applicare il criterio a tutti gli utenti dell'organizzazione, impostare un livello di soglia per il momento in cui viene attivato un avviso e decidere se ricevere notifiche tramite posta elettronica. È inoltre disponibile una pagina **Visualizza avvisi** nel centro sicurezza e conformità in cui è possibile visualizzare e filtrare gli avvisi, impostare lo stato di avviso per la gestione degli avvisi e quindi ignorare gli avvisi dopo aver affrontato o risolto l'evento sottostante. È stato inoltre esteso il tipo di eventi per cui è possibile creare avvisi. Ad esempio, è possibile creare criteri di avviso per monitorare l'attività di malware e gli incidenti di perdita di dati. Sono stati inclusi anche diversi criteri di avviso predefiniti che consentono di monitorare le attività, ad esempio l'assegnazione dei privilegi di amministratore in Exchange Online, gli attacchi di malware, le campagne di phishing e i livelli inusuali di eliminazione dei file e la condivisione esterna.
 
 > [!NOTE]
-> I criteri di avviso sono disponibili per le organizzazioni che dispongono di un abbonamento a Microsoft 365, Office 365 Enterprise o Office 365 US Government E1/F1/G1, E3/G3 o E5/G5. La funzionalità avanzata è disponibile solo per le organizzazioni con un abbonamento E5/G5 o per le organizzazioni che dispongono di un abbonamento E1/F1/G1 o E3/G3 e di una sottoscrizione di Office 365 Advanced Threat Protection (ATP) P2 o Microsoft 365 E5 o Microsoft 365 E5 eDiscovery e l'abbonamento di controllo del componente aggiuntivo. In questo argomento è evidenziata la funzionalità che richiede un abbonamento E5/G5 o un componente aggiuntivo. Si noti inoltre che i criteri di avviso sono disponibili in Office 365 GCC, GCC High e DoD US Government environments.
+> I criteri di avviso sono disponibili per le organizzazioni che dispongono di un abbonamento a Microsoft 365 Enterprise, Office 365 Enterprise o Office 365 US Government E1/F1/G1, E3/G3 o E5/G5. La funzionalità avanzata è disponibile solo per le organizzazioni con un abbonamento E5/G5 o per le organizzazioni che dispongono di un abbonamento E1/F1/G1 o E3/G3 e di una sottoscrizione di Office 365 Advanced Threat Protection (ATP) P2 o Microsoft 365 E5 o Microsoft 365 E5 eDiscovery e l'abbonamento di controllo del componente aggiuntivo. In questo argomento è evidenziata la funzionalità che richiede un abbonamento E5/G5 o un componente aggiuntivo. Si noti inoltre che i criteri di avviso sono disponibili in Office 365 GCC, GCC High e DoD US Government environments.
 
 ## <a name="how-alert-policies-work"></a>Funzionamento di criteri di avviso
 
@@ -53,7 +53,7 @@ Di seguito viene illustrata una breve panoramica del funzionamento dei criteri d
 
 Un criterio di avviso è costituito da un insieme di regole e condizioni che definiscono l'attività dell'utente o dell'amministratore che genera un avviso, un elenco di utenti che attivano l'avviso se eseguono l'attività e una soglia che definisce il numero di volte in cui l'attività deve verificarsi prima che venga attivato un avviso. È inoltre possibile suddividere in categorie il criterio e assegnargli un livello di gravità. Queste due impostazioni consentono di gestire i criteri di avviso (e gli avvisi attivati quando vengono soddisfatte le condizioni dei criteri) perché è possibile filtrare queste impostazioni quando si gestiscono i criteri e si visualizzano gli avvisi nel centro sicurezza e conformità. Ad esempio, è possibile visualizzare gli avvisi che soddisfano le condizioni della stessa categoria o visualizzare gli avvisi con lo stesso livello di gravità.
 
-Per visualizzare e creare criteri di avviso, passare [https://protection.office.com](https://protection.office.com) a e selezionare **avvisi** \> per i **criteri di avviso**.
+Per visualizzare e creare criteri di avviso, passare a [https://protection.office.com](https://protection.office.com) e selezionare **avvisi** per i \> **criteri di avviso**.
 
 ![Nel centro sicurezza e conformità, selezionare avvisi, quindi selezionare i criteri di avviso per visualizzare e creare criteri di avviso.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
@@ -141,7 +141,7 @@ Le attività insolite monitorate da alcuni dei criteri incorporati si basano sul
 
 Quando un'attività eseguita dagli utenti nell'organizzazione corrisponde alle impostazioni di un criterio di avviso, viene generato un avviso e visualizzato nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. A seconda delle impostazioni di un criterio di avviso, una notifica di posta elettronica viene inviata anche a un elenco di utenti specificati quando si attiva un avviso. Per ogni avviso, il dashboard nella pagina **Visualizza avvisi** Visualizza il nome del criterio di avviso corrispondente, la gravità e la categoria dell'avviso (definiti nel criterio di avviso) e il numero di volte in cui si è verificata un'attività che ha determinato la generazione dell'avviso. Questo valore si basa sull'impostazione di soglia del criterio di avviso. Il dashboard Visualizza anche lo stato di ogni avviso. Per ulteriori informazioni sull'utilizzo della proprietà Status per gestire gli avvisi, vedere la sezione [Managing Alerts](#managing-alerts) .
 
-Per visualizzare gli avvisi, passare [https://protection.office.com](https://protection.office.com) a e quindi selezionare **avvisi** \> **Visualizza**avvisi.
+Per visualizzare gli avvisi, passare a [https://protection.office.com](https://protection.office.com) e quindi selezionare **avvisi** \> **Visualizza**avvisi.
 
 ![In sicurezza e conformità, selezionare avvisi, quindi selezionare Visualizza avvisi per visualizzare gli avvisi](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
 
@@ -158,6 +158,27 @@ Per visualizzare gli avvisi, passare [https://protection.office.com](https://pro
 - **Categoria.** Utilizzare questo filtro per visualizzare gli avvisi di una o più categorie di avvisi.
 
 - **Fonte.** Utilizzare questo filtro per visualizzare gli avvisi attivati dai criteri di avviso nel centro sicurezza e conformità o gli avvisi attivati dai criteri di sicurezza di Office 365 cloud app o entrambi. Per ulteriori informazioni sugli avvisi di sicurezza per le app di Office 365 cloud, vedere la sezione [Visualizzazione avvisi di sicurezza per le app Cloud](#viewing-cloud-app-security-alerts) .
+
+## <a name="alert-aggregation"></a>Aggregazione degli avvisi
+
+Quando più eventi che soddisfano le condizioni di un criterio di avviso si verificano con un breve periodo di tempo, vengono aggiunti a un avviso esistente tramite un processo denominato *aggregazione avvisi*. Quando un evento attiva un avviso, l'avviso viene generato e visualizzato nella pagina **Visualizza avvisi** e viene inviata una notifica. Se si verifica lo stesso evento all'interno dell'intervallo di aggregazione, Microsoft 365 aggiunge dettagli sul nuovo evento all'avviso esistente anziché attivare un nuovo avviso. L'obiettivo dell'aggregazione degli avvisi consiste nel contribuire a ridurre l'avviso "affaticamento" e a concentrarsi e a intervenire su un numero inferiore di avvisi per lo stesso evento.
+
+La durata dell'intervallo di aggregazione dipende dall'abbonamento a Office 365 o Microsoft 365.
+
+|Abbonamento|Intervallo di aggregazione|
+|:---------|:---------:|
+|Office 365 o Microsoft 365 E5/G5|1 minuto|
+|Office 365 ATP Piano 2 |1 minuto|
+|Componente aggiuntivo per la conformità E5 o per l'individuazione e l'identificazione di controllo|1 minuto|
+|Office 365 o Microsoft 365 E1/F1/G1 o E3/F3/G3|15 minuti|
+|Office 365 ATP piano 1 o Exchange Online Protection|15 minuti|
+|||
+
+Quando gli eventi che corrispondono allo stesso criterio di avviso si verificano all'interno dell'intervallo di aggregazione, i dettagli sull'evento successivo vengono aggiunti all'avviso originale. Per tutti gli eventi, le informazioni sugli eventi aggregati vengono visualizzate nel campo Details e il numero di volte in cui si è verificato un evento con l'intervallo di aggregazione viene visualizzato nel campo attività/hit count. È possibile visualizzare ulteriori informazioni su tutte le istanze di eventi aggregati visualizzando l'elenco attività.
+
+Nella schermata seguente viene mostrato un avviso con quattro eventi aggregati. L'elenco attività contiene informazioni sui quattro messaggi di posta elettronica rilevanti per l'avviso.
+
+![Esempio di aggregazione degli avvisi](../media/AggregatedAlertExample.png)
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Autorizzazioni RBAC necessarie per visualizzare gli avvisi
 
@@ -184,7 +205,7 @@ Per visualizzare la categoria a cui è assegnato un criterio di avviso predefini
 |Gestione dei dispositivi|||||||
 |Gestione della disposizione|||||||
 |Gestione della conformità DLP||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Esportazione|||||||
+|Esporta|||||||
 |Hold|||||||
 |Gestione avvisi||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configurazione dell'organizzazione||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

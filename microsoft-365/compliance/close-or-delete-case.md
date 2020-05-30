@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su cosa accade quando un'indagine o un caso legale supportato da un caso avanzato di eDiscovery è chiuso o eliminato.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412785"
+ms.locfileid: "44419062"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Chiudere o eliminare un caso avanzato di eDiscovery
 
@@ -56,7 +56,7 @@ Quando si riapre un caso di eDiscovery avanzato, tutte le esenzioni sul posto qu
 
 Per riaprire un caso chiuso:
 
-1. Nella pagina **Advanced eDiscovery** selezionare il caso che si desidera eliminare.
+1. Nella pagina **Advanced eDiscovery** selezionare il caso che si desidera riaprire.
 
 2. Nella scheda **Impostazioni** , in **informazioni sul caso**, fare clic su **Seleziona**.
 

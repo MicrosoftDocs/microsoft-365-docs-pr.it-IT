@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Aggiungiamo continuamente nuove funzionalità al centro conformità di Microsoft 365, risolvendo i problemi che vengono apportati e modificando in base ai commenti e suggerimenti. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: baccff8699f9ec7b38090fb5adc0fcde8811c764
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 314c118673375abcf1e774a8d96d8a17edb505ff
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327738"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44418900"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novità nel centro conformità di Microsoft 365
 
@@ -159,7 +159,7 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 > Alcune funzionalità sono ancora disponibili solo nel centro sicurezza & conformità di Office 365: queste sono note di seguito. Ma stiamo lavorando duramente per visualizzare in anteprima questi nel centro conformità Microsoft 365, quindi resta sintonizzato per gli aggiornamenti. 
 <br/>
 
-|**Funzionalità**|**Centro sicurezza e conformità di Office 365**|**Centro conformità Microsoft 365**|**Altre informazioni**|
+|**Caratteristica**|**Centro sicurezza e conformità di Office 365**|**Centro conformità Microsoft 365**|**Altre informazioni**|
 |:-----|:-----|:-----|:-----|
 |Advanced eDiscovery|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > Advanced <br/> https://compliance.microsoft.com/advancedediscovery | [Panoramica della soluzione avanzata di eDiscovery in Microsoft 365](overview-ediscovery-20.md) |
 |Criteri di avviso|Avvisi > criteri di avviso <br/> https://protection.office.com/alertpolicies |In questo momento, i criteri di avviso sono gestiti solo nel centro conformità & sicurezza di Office 365. |[Criteri di avviso nel Centro sicurezza e conformità](alert-policies.md) |
@@ -172,12 +172,12 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 |Richieste del soggetto dei dati |Privacy dei dati > richieste del soggetto dei dati <br/> https://protection.office.com/dsrcases |Richieste del soggetto dei dati <br/> https://compliance.microsoft.com/datasubjectrequest |[Gestire le richieste del soggetto dei dati di GDPR con lo strumento di gestione dei casi DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Core <br/> https://compliance.microsoft.com/classicediscovery |[Gestire casi di eDiscovery](ediscovery-cases.md) |
 |Eventi|Eventi > di gestione dei record <br/> https://protection.office.com/events |Scheda eventi > di gestione dei record <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Panoramica della conservazione basata su eventi](event-driven-retention.md)|
-|Piano di archiviazione|Gestione dei record > piano file <br/> https://protection.office.com/fileplan |Scheda Gestione record > piano file <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Panoramica della gestione del piano file](file-plan-manager.md)|
+|Piano di archiviazione|Gestione dei record > piano file <br/> https://protection.office.com/fileplan |Scheda Gestione record > piano file <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Utilizzare il piano di file per gestire le etichette di conservazione](file-plan-manager.md)|
 |Importare i file PST|Information Governance > importazione di file PST <br/> https://protection.office.com/importV2 |Scheda Importazione > di governance delle informazioni <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Panoramica dell'importazione di file PST dell'organizzazione](importing-pst-files-to-office-365.md)|
 |Esplora attività etichette|Gestione delle informazioni > label Activity Explorer <br/> https://protection.office.com/labelexplorer |Classificazione dei dati > scheda Esplora attività <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Visualizzare le attività sul contenuto etichettato (anteprima)](data-classification-activity-explorer.md)|
 |Etichette di conservazione e criteri di etichetta |Schede di classificazione > etichette di conservazione > etichette e criteri etichetta <br/> https://protection.office.com/retentionlabels |Schede per la governance delle informazioni > etichette e criteri etichetta <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Panoramica delle etichette di conservazione](labels.md)|
 |Criteri di conservazione|Gestione delle informazioni > conservazione <br/> https://protection.office.com/retention |Scheda conservazione > di gestione delle informazioni <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Panoramica dei criteri di conservazione](retention-policies.md)|
-|Tipi di informazioni riservate|Classificazione > tipi di informazioni riservate <br/> https://protection.office.com/sensitivetypes |Classificazione dei dati > scheda tipi di informazioni riservate <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)|
+|Tipi di informazioni riservate|Classificazione > tipi di informazioni riservate <br/> https://protection.office.com/sensitivetypes |Classificazione dei dati > scheda tipi di informazioni riservate <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)|
 |Etichette di riservatezza e criteri di etichetta|Classificazione > etichette di riservatezza > etichette e schede criteri etichetta <br/> https://protection.office.com/sensitivity |Schede per la protezione delle informazioni > etichette e criteri etichette <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Informazioni sulle etichette di riservatezza](sensitivity-labels.md) |
 |Garanzia del servizio|Garanzia del servizio <br/> https://protection.office.com/serviceassurance/dashboard |A questo punto, è possibile accedere alle risorse di Service Assurance solo nel centro sicurezza & conformità di Office 365. |[Garanzia del servizio nel centro sicurezza & conformità](service-assurance.md)|
 |Supervisione|Supervisione <br/> https://protection.office.com/supervisoryreviewv2 |Conformità delle comunicazioni <br/> https://compliance.microsoft.com/supervisoryreview |[Conformità della comunicazione in Microsoft 365 (anteprima)](communication-compliance.md) |
