@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: La procedura per distribuire l'infrastruttura delle identità di Microsoft 365 Enterprise.
-ms.openlocfilehash: 0189da0814d1d526d9e07ad35dbbabcbfe82a4cd
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 6f237f779df16f2a2a03eab29af78a89c5f7a5ae
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952031"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371419"
 ---
 # <a name="phase-2-identity"></a>Fase 2: identità
 
@@ -70,7 +70,11 @@ Microsoft offre un set di consigli per [l’identità e accesso ai dispositivi](
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Informazioni su come gli esperti IT di Microsoft [gestiscono le identità e l'accesso sicuro](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).
+Informazioni su come gli esperti IT di Microsoft [gestiscono le identità e l'accesso sicuro](https://www.microsoft.com/it-IT/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
+
+>[!Note]
+>Questa risorsa IT Showcase è disponibile solo in inglese.
+>
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Come ha agito Contoso con Microsoft 365 Enterprise
 
