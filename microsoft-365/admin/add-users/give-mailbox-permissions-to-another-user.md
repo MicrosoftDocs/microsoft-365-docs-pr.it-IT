@@ -22,193 +22,186 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Informazioni su come assegnare a un utente il diritto di accedere alla cassetta postale di un altro utente. In questo modo l'utente potrà leggere i messaggi di posta elettronica e inviare messaggi dalla cassetta postale dell'altro utente. "
-ms.openlocfilehash: 51de5f4e2b134a503ec935b1f1d0ec6519d2c229
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3fb920fb6f15a2ca48c5676e9b25afd1aa5263f1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387178"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431666"
 ---
-# <a name="give-mailbox-permissions-to-another-user---admin-help"></a><span data-ttu-id="fcf89-104">Assegnare le autorizzazioni della cassetta postale a un altro utente - Guida per l'amministratore</span><span class="sxs-lookup"><span data-stu-id="fcf89-104">Give mailbox permissions to another user - Admin Help</span></span>
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a><span data-ttu-id="9d8eb-104">Assegnare le autorizzazioni della cassetta postale a un altro utente - Guida per l'amministratore</span><span class="sxs-lookup"><span data-stu-id="9d8eb-104">Give mailbox permissions to another user - Admin Help</span></span>
+
+<span data-ttu-id="9d8eb-105">In base ai requisiti aziendali, l'amministratore può consentire ad alcuni utenti di accedere alla cassetta postale di un altro utente.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-105">As the admin, you may have company requirements to allow some users access to another user's mailbox.</span></span> <span data-ttu-id="9d8eb-106">Ad esempio, è possibile consentire a un assistente di inviare o leggere posta elettronica dalla cassetta postale del suo manager oppure permettere a un utente di inviare messaggi per conto di un altro utente.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-106">For example, you may want to enable an assistant to send or read email from their manager's mailbox, or one of your user's the ability to send email on behalf of another user.</span></span> <span data-ttu-id="9d8eb-107">Questo argomento illustra le procedure da eseguire.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-107">This topic shows you how to accomplish this.</span></span>
+  
+<span data-ttu-id="9d8eb-108">Se si cercano informazioni su come creare e gestire cassette postali condivise, vedere [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md).</span><span class="sxs-lookup"><span data-stu-id="9d8eb-108">If you're looking for information about creating and managing shared mailboxes, check out [Create a shared mailbox](../email/create-a-shared-mailbox.md).</span></span>
+    
+## <a name="looking-to-set-up-mailbox-permissions"></a><span data-ttu-id="9d8eb-109">Configurare le autorizzazioni per le cassette postali</span><span class="sxs-lookup"><span data-stu-id="9d8eb-109">Looking to set up mailbox permissions?</span></span>
+
+<span data-ttu-id="9d8eb-p103">Le autorizzazioni per le cassette postali consentono di concedere a un altro utente l'accesso in lettura/scrittura a una cassetta postale. Gli articoli elencati di seguito potrebbero fornire l'aiuto necessario per configurare e usare questa funzionalità:</span><span class="sxs-lookup"><span data-stu-id="9d8eb-p103">Mailbox permissions allow you to give read/write access to a mailbox to another user. The articles below might give you the help you need to set up and use this feature:</span></span>
+  
+ <span data-ttu-id="9d8eb-112">**Configurazione delle autorizzazioni:**</span><span class="sxs-lookup"><span data-stu-id="9d8eb-112">**Setting up the permissions:**</span></span>
+  
+<span data-ttu-id="9d8eb-p104">Il primo passaggio del processo di configurazione delle autorizzazioni consiste nel decidere quali azioni potranno essere eseguite dall'altro utente nella cassetta postale specifica. È possibile consentire a un utente di leggere i messaggi di posta elettronica contenuti nella cassetta postale, inviare messaggi per conto di un altro utente oppure inviarli con la cassetta postale come mittente. Per informazioni su come configurare ogni tipo di autorizzazione, vedere gli articoli seguenti:</span><span class="sxs-lookup"><span data-stu-id="9d8eb-p104">The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:</span></span>
+  
+- [<span data-ttu-id="9d8eb-116">Leggere messaggi di posta elettronica dalla cassetta postale di un altro utente</span><span class="sxs-lookup"><span data-stu-id="9d8eb-116">Read email from another user's mailbox</span></span>](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
+    
+- [<span data-ttu-id="9d8eb-117">Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente</span><span class="sxs-lookup"><span data-stu-id="9d8eb-117">Send email from another user's mailbox</span></span>](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [<span data-ttu-id="9d8eb-118">Inviare e-mail per conto di un altro utente</span><span class="sxs-lookup"><span data-stu-id="9d8eb-118">Send email on behalf of another user</span></span>](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
+    
+ <span data-ttu-id="9d8eb-119">**Propagazione delle modifiche:**</span><span class="sxs-lookup"><span data-stu-id="9d8eb-119">**Changing propagation:**</span></span>
+  
+<span data-ttu-id="9d8eb-120">Dopo la configurazione delle autorizzazioni, la loro propagazione e applicazione nell'intero sistema può richiedere fino a 60 minuti.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-120">Once you've set up the permissions, it can take up to 60 minutes for the changes to propagate through the system and be in effect.</span></span>
+  
+ <span data-ttu-id="9d8eb-121">**Come usare la funzionalità dopo la configurazione delle autorizzazioni:**</span><span class="sxs-lookup"><span data-stu-id="9d8eb-121">**How to use it once permissions are set up:**</span></span>
+  
+<span data-ttu-id="9d8eb-p105">Dopo la concessione dell'accesso, è possibile accedere a una cassetta postale in alcuni modi diversi. Per altre informazioni, vedere l'articolo [Accedere alla cassetta postale di un'altra persona](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081.aspx).</span><span class="sxs-lookup"><span data-stu-id="9d8eb-p105">There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081.aspx)</span></span>
+  
+## <a name="send-email-from-another-users-mailbox"></a><span data-ttu-id="9d8eb-124">Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente</span><span class="sxs-lookup"><span data-stu-id="9d8eb-124">Send email from another user's mailbox</span></span>
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> <span data-ttu-id="fcf89-105">Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.</span><span class="sxs-lookup"><span data-stu-id="fcf89-105">If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.</span></span>
-
-::: moniker-end
-
-<span data-ttu-id="fcf89-106">In base ai requisiti aziendali, l'amministratore può consentire ad alcuni utenti di accedere alla cassetta postale di un altro utente.</span><span class="sxs-lookup"><span data-stu-id="fcf89-106">As the admin, you may have company requirements to allow some users access to another user's mailbox.</span></span> <span data-ttu-id="fcf89-107">Ad esempio, è possibile consentire a un assistente di inviare o leggere posta elettronica dalla cassetta postale del suo manager oppure permettere a un utente di inviare messaggi per conto di un altro utente.</span><span class="sxs-lookup"><span data-stu-id="fcf89-107">For example, you may want to enable an assistant to send or read email from their manager's mailbox, or one of your user's the ability to send email on behalf of another user.</span></span> <span data-ttu-id="fcf89-108">Questo argomento illustra le procedure da eseguire.</span><span class="sxs-lookup"><span data-stu-id="fcf89-108">This topic shows you how to accomplish this.</span></span>
-  
-<span data-ttu-id="fcf89-109">Se si cercano informazioni su come creare e gestire cassette postali condivise, vedere [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md).</span><span class="sxs-lookup"><span data-stu-id="fcf89-109">If you're looking for information about creating and managing shared mailboxes, check out [Create a shared mailbox](../email/create-a-shared-mailbox.md).</span></span>
+1. <span data-ttu-id="9d8eb-125">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-125">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
     
-## <a name="looking-to-set-up-mailbox-permissions"></a><span data-ttu-id="fcf89-110">Configurare le autorizzazioni per le cassette postali</span><span class="sxs-lookup"><span data-stu-id="fcf89-110">Looking to set up mailbox permissions?</span></span>
-
-<span data-ttu-id="fcf89-p103">Le autorizzazioni per le cassette postali consentono di concedere a un altro utente l'accesso in lettura/scrittura a una cassetta postale. Gli articoli elencati di seguito potrebbero fornire l'aiuto necessario per configurare e usare questa funzionalità:</span><span class="sxs-lookup"><span data-stu-id="fcf89-p103">Mailbox permissions allow you to give read/write access to a mailbox to another user. The articles below might give you the help you need to set up and use this feature:</span></span>
-  
- <span data-ttu-id="fcf89-113">**Configurazione delle autorizzazioni:**</span><span class="sxs-lookup"><span data-stu-id="fcf89-113">**Setting up the permissions:**</span></span>
-  
-<span data-ttu-id="fcf89-p104">Il primo passaggio del processo di configurazione delle autorizzazioni consiste nel decidere quali azioni potranno essere eseguite dall'altro utente nella cassetta postale specifica. È possibile consentire a un utente di leggere i messaggi di posta elettronica contenuti nella cassetta postale, inviare messaggi per conto di un altro utente oppure inviarli con la cassetta postale come mittente. Per informazioni su come configurare ogni tipo di autorizzazione, vedere gli articoli seguenti:</span><span class="sxs-lookup"><span data-stu-id="fcf89-p104">The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:</span></span>
-  
-- [<span data-ttu-id="fcf89-117">Leggere messaggi di posta elettronica dalla cassetta postale di un altro utente</span><span class="sxs-lookup"><span data-stu-id="fcf89-117">Read email from another user's mailbox</span></span>](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
+2. <span data-ttu-id="9d8eb-126">Selezionare il nome dell'utente da cui si vuole concedere l'autorizzazione di invio per aprire il riquadro delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-126">Select the name of the user (from whom you plan to give a sending permission) to open their properties pane.</span></span>
     
-- [<span data-ttu-id="fcf89-118">Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente</span><span class="sxs-lookup"><span data-stu-id="fcf89-118">Send email from another user's mailbox</span></span>](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+3. <span data-ttu-id="9d8eb-127">Nella scheda **Posta** selezionare **Gestire le autorizzazioni della cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-127">On the **Mail** tab, select **Manage mailbox permissions**.</span></span>
 
-- [<span data-ttu-id="fcf89-119">Inviare e-mail per conto di un altro utente</span><span class="sxs-lookup"><span data-stu-id="fcf89-119">Send email on behalf of another user</span></span>](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
+4. <span data-ttu-id="9d8eb-128">Accanto a **Invia come** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-128">Next to **Send as**, select **Edit**.</span></span> 
+
+5. <span data-ttu-id="9d8eb-129">Selezionare **Aggiungi autorizzazioni**, quindi scegliere il nome della persona con cui si vuole che questo utente invii un messaggio.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-129">Select **Add permissions**, then choose the name of the person who you want this user to be able to send as.</span></span> 
     
- <span data-ttu-id="fcf89-120">**Propagazione delle modifiche:**</span><span class="sxs-lookup"><span data-stu-id="fcf89-120">**Changing propagation:**</span></span>
-  
-<span data-ttu-id="fcf89-121">Dopo la configurazione delle autorizzazioni, la loro propagazione e applicazione nell'intero sistema può richiedere fino a 60 minuti.</span><span class="sxs-lookup"><span data-stu-id="fcf89-121">Once you've set up the permissions, it can take up to 60 minutes for the changes to propagate through the system and be in effect.</span></span>
-  
- <span data-ttu-id="fcf89-122">**Come usare la funzionalità dopo la configurazione delle autorizzazioni:**</span><span class="sxs-lookup"><span data-stu-id="fcf89-122">**How to use it once permissions are set up:**</span></span>
-  
-<span data-ttu-id="fcf89-p105">Dopo la concessione dell'accesso, è possibile accedere a una cassetta postale in alcuni modi diversi. Per altre informazioni, vedere l'articolo [Accedere alla cassetta postale di un'altra persona](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081.aspx).</span><span class="sxs-lookup"><span data-stu-id="fcf89-p105">There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081.aspx)</span></span>
-  
-## <a name="send-email-from-another-users-mailbox"></a><span data-ttu-id="fcf89-125">Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente</span><span class="sxs-lookup"><span data-stu-id="fcf89-125">Send email from another user's mailbox</span></span>
-
-::: moniker range="o365-worldwide"
-
-1. <span data-ttu-id="fcf89-126">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="fcf89-126">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
-    
-2. <span data-ttu-id="fcf89-127">Selezionare il nome dell'utente da cui si vuole concedere l'autorizzazione di invio per aprire il riquadro delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="fcf89-127">Select the name of the user (from whom you plan to give a sending permission) to open their properties pane.</span></span>
-    
-3. <span data-ttu-id="fcf89-128">Nella scheda **Posta** selezionare **Gestire le autorizzazioni della cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-128">On the **Mail** tab, select **Manage mailbox permissions**.</span></span>
-
-4. <span data-ttu-id="fcf89-129">Accanto a **Invia come** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-129">Next to **Send as**, select **Edit**.</span></span> 
-
-5. <span data-ttu-id="fcf89-130">Selezionare **Aggiungi autorizzazioni**, quindi scegliere il nome della persona con cui si vuole che questo utente invii un messaggio.</span><span class="sxs-lookup"><span data-stu-id="fcf89-130">Select **Add permissions**, then choose the name of the person who you want this user to be able to send as.</span></span> 
-    
-6. <span data-ttu-id="fcf89-131">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-131">Select **Save**.</span></span>
+6. <span data-ttu-id="9d8eb-130">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-130">Select **Save**.</span></span>
  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="fcf89-132">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="fcf89-132">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="9d8eb-131">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-131">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
 
-2. <span data-ttu-id="fcf89-133">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-133">Select the user you want, expand **Mail Settings**, and then Select **Edit** next to **Mailbox permissions**.</span></span>
+2. <span data-ttu-id="9d8eb-132">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-132">Select the user you want, expand **Mail Settings**, and then Select **Edit** next to **Mailbox permissions**.</span></span>
 
-3. <span data-ttu-id="fcf89-134">Accanto a **Invia come** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-134">Next to **Send as**, select **Edit**.</span></span> 
+3. <span data-ttu-id="9d8eb-133">Accanto a **Invia come** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-133">Next to **Send as**, select **Edit**.</span></span> 
 
-4. <span data-ttu-id="fcf89-135">Selezionare **Aggiungi autorizzazioni**, quindi scegliere il nome della persona con cui si vuole che questo utente invii un messaggio.</span><span class="sxs-lookup"><span data-stu-id="fcf89-135">Select **Add permissions**, then choose the name of the person who you want this user to be able to send as.</span></span> 
+4. <span data-ttu-id="9d8eb-134">Selezionare **Aggiungi autorizzazioni**, quindi scegliere il nome della persona con cui si vuole che questo utente invii un messaggio.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-134">Select **Add permissions**, then choose the name of the person who you want this user to be able to send as.</span></span> 
     
-5. <span data-ttu-id="fcf89-136">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-136">Select **Save**.</span></span>
+5. <span data-ttu-id="9d8eb-135">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-135">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="fcf89-137">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="fcf89-137">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
+1. <span data-ttu-id="9d8eb-136">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-136">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
 
-2. <span data-ttu-id="fcf89-138">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-138">Select the user you want, expand **Mail Settings**, and then Select **Edit** next to **Mailbox permissions**.</span></span>
+2. <span data-ttu-id="9d8eb-137">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-137">Select the user you want, expand **Mail Settings**, and then Select **Edit** next to **Mailbox permissions**.</span></span>
 
-3. <span data-ttu-id="fcf89-139">Accanto a **Invia come** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-139">Next to **Send as**, select **Edit**.</span></span> 
+3. <span data-ttu-id="9d8eb-138">Accanto a **Invia come** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-138">Next to **Send as**, select **Edit**.</span></span> 
 
-4. <span data-ttu-id="fcf89-140">Selezionare **Aggiungi autorizzazioni**, quindi scegliere il nome della persona con cui si vuole che questo utente invii un messaggio.</span><span class="sxs-lookup"><span data-stu-id="fcf89-140">Select **Add permissions**, then choose the name of the person who you want this user to be able to send as.</span></span> 
+4. <span data-ttu-id="9d8eb-139">Selezionare **Aggiungi autorizzazioni**, quindi scegliere il nome della persona con cui si vuole che questo utente invii un messaggio.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-139">Select **Add permissions**, then choose the name of the person who you want this user to be able to send as.</span></span> 
     
-5. <span data-ttu-id="fcf89-141">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-141">Select **Save**.</span></span>
+5. <span data-ttu-id="9d8eb-140">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-140">Select **Save**.</span></span>
 
 ::: moniker-end
   
-## <a name="read-email-in-another-users-mailbox"></a><span data-ttu-id="fcf89-142">Leggere messaggi di posta elettronica nella cassetta postale di un altro utente</span><span class="sxs-lookup"><span data-stu-id="fcf89-142">Read email in another user's mailbox</span></span>
+## <a name="read-email-in-another-users-mailbox"></a><span data-ttu-id="9d8eb-141">Leggere messaggi di posta elettronica nella cassetta postale di un altro utente</span><span class="sxs-lookup"><span data-stu-id="9d8eb-141">Read email in another user's mailbox</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="fcf89-143">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="fcf89-143">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="9d8eb-142">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-142">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
     
-2. <span data-ttu-id="fcf89-144">Selezionare il nome dell'utente (di cui si vuole consentire la lettura della cassetta postale) per aprire il riquadro delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="fcf89-144">Select the name of the user (whose mailbox you want to allow to be read) to open their properties pane.</span></span>
+2. <span data-ttu-id="9d8eb-143">Selezionare il nome dell'utente (di cui si vuole consentire la lettura della cassetta postale) per aprire il riquadro delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-143">Select the name of the user (whose mailbox you want to allow to be read) to open their properties pane.</span></span>
     
-3. <span data-ttu-id="fcf89-145">Nella scheda **Posta** selezionare **Gestire le autorizzazioni della cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-145">On the **Mail** tab, select **Manage mailbox permissions**.</span></span>
+3. <span data-ttu-id="9d8eb-144">Nella scheda **Posta** selezionare **Gestire le autorizzazioni della cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-144">On the **Mail** tab, select **Manage mailbox permissions**.</span></span>
     
-4. <span data-ttu-id="fcf89-146">Accanto a **Lettura e gestione**, selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-146">Next to **Read and manage**, select **Edit**.</span></span> 
+4. <span data-ttu-id="9d8eb-145">Accanto a **Lettura e gestione**, selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-145">Next to **Read and manage**, select **Edit**.</span></span> 
     
-5. <span data-ttu-id="fcf89-147">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire la lettura dei messaggi di posta elettronica da questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="fcf89-147">Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.</span></span>
+5. <span data-ttu-id="9d8eb-146">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire la lettura dei messaggi di posta elettronica da questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-146">Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.</span></span>
 
-6. <span data-ttu-id="fcf89-148">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-148">Select **Save**.</span></span>
+6. <span data-ttu-id="9d8eb-147">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-147">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="fcf89-149">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="fcf89-149">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="9d8eb-148">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-148">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
   
-2. <span data-ttu-id="fcf89-150">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-150">Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.</span></span>
+2. <span data-ttu-id="9d8eb-149">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-149">Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.</span></span>
     
-3. <span data-ttu-id="fcf89-151">Accanto a **Lettura e gestione**, selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-151">Next to **Read and manage**, select **Edit**.</span></span> 
+3. <span data-ttu-id="9d8eb-150">Accanto a **Lettura e gestione**, selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-150">Next to **Read and manage**, select **Edit**.</span></span> 
     
-4. <span data-ttu-id="fcf89-152">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire la lettura dei messaggi di posta elettronica da questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="fcf89-152">Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.</span></span>
+4. <span data-ttu-id="9d8eb-151">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire la lettura dei messaggi di posta elettronica da questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-151">Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.</span></span>
 
-5. <span data-ttu-id="fcf89-153">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-153">Select **Save**.</span></span>
+5. <span data-ttu-id="9d8eb-152">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-152">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="fcf89-154">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="fcf89-154">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
+1. <span data-ttu-id="9d8eb-153">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-153">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
   
-2. <span data-ttu-id="fcf89-155">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-155">Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.</span></span>
+2. <span data-ttu-id="9d8eb-154">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-154">Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.</span></span>
     
-3. <span data-ttu-id="fcf89-156">Accanto a **Lettura e gestione**, selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-156">Next to **Read and manage**, select **Edit**.</span></span> 
+3. <span data-ttu-id="9d8eb-155">Accanto a **Lettura e gestione**, selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-155">Next to **Read and manage**, select **Edit**.</span></span> 
     
-4. <span data-ttu-id="fcf89-157">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire la lettura dei messaggi di posta elettronica da questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="fcf89-157">Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.</span></span>
+4. <span data-ttu-id="9d8eb-156">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire la lettura dei messaggi di posta elettronica da questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-156">Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.</span></span>
 
-5. <span data-ttu-id="fcf89-158">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-158">Select **Save**.</span></span>
+5. <span data-ttu-id="9d8eb-157">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-157">Select **Save**.</span></span>
 
 ::: moniker-end
 
 
-## <a name="send-email-on-behalf-of-another-user"></a><span data-ttu-id="fcf89-159">Inviare messaggi di posta elettronica per conto di un altro utente</span><span class="sxs-lookup"><span data-stu-id="fcf89-159">Send email on behalf of another user</span></span>
+## <a name="send-email-on-behalf-of-another-user"></a><span data-ttu-id="9d8eb-158">Inviare messaggi di posta elettronica per conto di un altro utente</span><span class="sxs-lookup"><span data-stu-id="9d8eb-158">Send email on behalf of another user</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="fcf89-160">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="fcf89-160">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="9d8eb-159">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-159">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
 
-2. <span data-ttu-id="fcf89-161">Selezionare il nome dell'utente da cui si vuole concedere l'autorizzazione **Invia per conto di** per aprire il riquadro delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="fcf89-161">Select the name of the user (from whom you plan to give a **Send on behalf** permission) to open their properties pane.</span></span>
+2. <span data-ttu-id="9d8eb-160">Selezionare il nome dell'utente da cui si vuole concedere l'autorizzazione **Invia per conto di** per aprire il riquadro delle proprietà.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-160">Select the name of the user (from whom you plan to give a **Send on behalf** permission) to open their properties pane.</span></span>
     
-3. <span data-ttu-id="fcf89-162">Nella scheda **Posta** selezionare **Gestire le autorizzazioni della cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-162">On the **Mail** tab, select **Manage mailbox permissions**.</span></span>
+3. <span data-ttu-id="9d8eb-161">Nella scheda **Posta** selezionare **Gestire le autorizzazioni della cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-161">On the **Mail** tab, select **Manage mailbox permissions**.</span></span>
     
-4. <span data-ttu-id="fcf89-163">Accanto a **Invia per conto di** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-163">Next to **Send on behalf**, select **Edit**.</span></span>
+4. <span data-ttu-id="9d8eb-162">Accanto a **Invia per conto di** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-162">Next to **Send on behalf**, select **Edit**.</span></span>
 
-5. <span data-ttu-id="fcf89-164">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire l'invio di messaggi di posta elettronica per conto di questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="fcf89-164">Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.</span></span>
+5. <span data-ttu-id="9d8eb-163">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire l'invio di messaggi di posta elettronica per conto di questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-163">Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.</span></span>
 
-6. <span data-ttu-id="fcf89-165">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-165">Select **Save**.</span></span>
+6. <span data-ttu-id="9d8eb-164">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-164">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="fcf89-166">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="fcf89-166">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="9d8eb-165">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-165">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
 
-2. <span data-ttu-id="fcf89-167">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-167">Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.</span></span>
+2. <span data-ttu-id="9d8eb-166">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-166">Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.</span></span>
 
-3. <span data-ttu-id="fcf89-168">Accanto a **Invia per conto di** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-168">Next to **Send on behalf**, select **Edit**.</span></span>
+3. <span data-ttu-id="9d8eb-167">Accanto a **Invia per conto di** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-167">Next to **Send on behalf**, select **Edit**.</span></span>
     
-4. <span data-ttu-id="fcf89-169">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire l'invio di messaggi di posta elettronica per conto di questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="fcf89-169">Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.</span></span>
+4. <span data-ttu-id="9d8eb-168">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire l'invio di messaggi di posta elettronica per conto di questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-168">Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.</span></span>
 
-5. <span data-ttu-id="fcf89-170">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-170">Select **Save**.</span></span>
+5. <span data-ttu-id="9d8eb-169">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-169">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="fcf89-171">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="fcf89-171">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
+1. <span data-ttu-id="9d8eb-170">Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-170">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
 
-2. <span data-ttu-id="fcf89-172">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-172">Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.</span></span>
+2. <span data-ttu-id="9d8eb-171">Selezionare l'utente desiderato, espandere **Impostazioni della posta** e quindi selezionare **Modifica** accanto a **Autorizzazioni cassetta postale**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-171">Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.</span></span>
 
-3. <span data-ttu-id="fcf89-173">Accanto a **Invia per conto di** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-173">Next to **Send on behalf**, select **Edit**.</span></span>
+3. <span data-ttu-id="9d8eb-172">Accanto a **Invia per conto di** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-172">Next to **Send on behalf**, select **Edit**.</span></span>
     
-4. <span data-ttu-id="fcf89-174">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire l'invio di messaggi di posta elettronica per conto di questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="fcf89-174">Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.</span></span>
+4. <span data-ttu-id="9d8eb-173">Selezionare **Aggiungi autorizzazioni** e quindi scegliere il nome dell'utente o degli utenti a cui si vuole consentire l'invio di messaggi di posta elettronica per conto di questa cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-173">Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.</span></span>
 
-5. <span data-ttu-id="fcf89-175">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="fcf89-175">Select **Save**.</span></span>
+5. <span data-ttu-id="9d8eb-174">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="9d8eb-174">Select **Save**.</span></span>
 
 ::: moniker-end
 
 
-## <a name="send-and-read-from-outlook-and-outlook-on-the-web-for-business"></a><span data-ttu-id="fcf89-176">Inviare e leggere messaggi da Outlook e Outlook sul Web per le aziende</span><span class="sxs-lookup"><span data-stu-id="fcf89-176">Send and read from Outlook and Outlook on the web for business</span></span>
+## <a name="send-and-read-from-outlook-and-outlook-on-the-web-for-business"></a><span data-ttu-id="9d8eb-175">Inviare e leggere messaggi da Outlook e Outlook sul Web per le aziende</span><span class="sxs-lookup"><span data-stu-id="9d8eb-175">Send and read from Outlook and Outlook on the web for business</span></span>
 
 
-<span data-ttu-id="fcf89-p106">Per informazioni su come inviare messaggi di posta elettronica dalla cassetta postale di un altro utente, vedere gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="fcf89-p106">Want to know how to send email from another user's mailbox? Check out the following topics:</span></span>
+<span data-ttu-id="9d8eb-p106">Per informazioni su come inviare messaggi di posta elettronica dalla cassetta postale di un altro utente, vedere gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="9d8eb-p106">Want to know how to send email from another user's mailbox? Check out the following topics:</span></span>
   
-- [<span data-ttu-id="fcf89-179">Gestire gli elementi di posta e di calendario di un altro utente</span><span class="sxs-lookup"><span data-stu-id="fcf89-179">Manage another person's mail and calendar items</span></span>](https://support.office.com/article/afb79d6b-2967-43b9-a944-a6b953190af5.aspx)
+- [<span data-ttu-id="9d8eb-178">Gestire gli elementi di posta e di calendario di un altro utente</span><span class="sxs-lookup"><span data-stu-id="9d8eb-178">Manage another person's mail and calendar items</span></span>](https://support.office.com/article/afb79d6b-2967-43b9-a944-a6b953190af5.aspx)
     
-- [<span data-ttu-id="fcf89-180">Inviare un messaggio di posta elettronica da un altro utente o gruppo</span><span class="sxs-lookup"><span data-stu-id="fcf89-180">Send email from another person or group</span></span>](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)
+- [<span data-ttu-id="9d8eb-179">Inviare un messaggio di posta elettronica da un altro utente o gruppo</span><span class="sxs-lookup"><span data-stu-id="9d8eb-179">Send email from another person or group</span></span>](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)
