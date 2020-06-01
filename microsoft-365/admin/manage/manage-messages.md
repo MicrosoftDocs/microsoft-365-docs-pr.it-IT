@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Informazioni su come gestire i messaggi del centro messaggi per facilitare la gestione delle modifiche.
-ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399717"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432266"
 ---
 # <a name="manage-messages-in-message-center"></a>Gestire i messaggi nel Centro messaggi
 
@@ -36,13 +36,6 @@ I post del Centro messaggi sono annunci importanti sulle caratteristiche nuove e
 Per accedere al centro messaggi, accedere all'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339)e selezionare **Health**  >  **centro messaggi**di integrità. 
 
 Selezionare un titolo del messaggio per aprirlo nel riquadro di lettura. Ogni messaggio contiene un riepilogo della modifica, una dichiarazione del modo in cui la modifica può influire sull'utente, informazioni su come preparare la propria organizzazione per la modifica e, nella maggior parte dei casi, un collegamento di informazioni aggiuntive in cui è possibile ottenere ulteriori dettagli. Le informazioni aggiuntive continuano a essere disponibili anche dopo la scadenza di un messaggio.
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
-::: moniker-end
 
 ## <a name="filter-and-sort"></a>Filtrare e ordinare
 

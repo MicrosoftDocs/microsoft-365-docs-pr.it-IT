@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365
+title: Informazioni sull'interfaccia di amministrazione di Microsoft 365
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Informazioni sull'interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399483"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432208"
 ---
-# <a name="about-the-new-microsoft-365-admin-center"></a>Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365
+# <a name="about-the-microsoft-365-admin-center"></a>Informazioni sull'interfaccia di amministrazione di Microsoft 365
 
 ::: moniker range="o365-worldwide"
 
-Il nuovo interfaccia di amministrazione di Microsoft 365 è stato creato per i team IT come modo semplificato per gestire i servizi di Microsoft 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
+L'interfaccia di amministrazione di Microsoft 365 viene creata per i team IT come metodo semplificato per la gestione dei servizi di Microsoft 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
 
 L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e può essere eseguito all'indirizzo [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) . Le aree di lavoro specialistiche, come la sicurezza o la gestione dei dispositivi, consentono un controllo più granulare. Per ulteriori informazioni sul funzionamento dei centri di amministrazione, vedere informazioni [sui tipi specifici di ruoli IT e altre aree di lavoro, ad esempio la sicurezza, la gestione dei dispositivi o Exchange](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) , più avanti in questo articolo.
 
@@ -37,7 +37,7 @@ L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune
 
 ::: moniker range="o365-21vianet"
 
-Il nuovo interfaccia di amministrazione di Microsoft 365, che è attualmente in anteprima, è creato per i team IT come modo semplificato per gestire i servizi di Microsoft 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
+L'interfaccia di amministrazione di Microsoft 365 viene creata per i team IT come metodo semplificato per la gestione dei servizi di Microsoft 365. L'interfaccia di amministrazione fornisce un'esperienza personalizzata in base alle esigenze specifiche del proprio ruolo o organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili per consentire alle decisioni basate sui dati di offrire un'esperienza migliore per gli utenti.
 
 L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 e può essere eseguito accedendo a [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) . Inoltre, le aree di lavoro specialistiche, come Azure Active Directory ed Exchange, consentono un controllo più granulare. È possibile accedere alle aree di lavoro specialistiche dal riquadro di spostamento nell'interfaccia di amministrazione di Microsoft 365.
 
@@ -45,14 +45,11 @@ L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune
 
 ::: moniker range="o365-worldwide"
 
-Poiché le nuove funzionalità sono disponibili nell'interfaccia di amministrazione di Microsoft 365, è possibile accedere al nuovo interfaccia di amministrazione e condividere i propri commenti e suggerimenti con Microsoft in modo da poter continuare a migliorare l'esperienza di amministratore. Se si opta per l'accesso, non vi sarà alcun impatto sugli utenti e si potrà tornare all'interfaccia di amministrazione precedente in qualsiasi momento.
-Novità della [nuova interfaccia di amministrazione di Microsoft 365](whats-new-in-preview.md).
+Poiché le nuove funzionalità sono disponibili nell'interfaccia di amministrazione di Microsoft 365, è possibile accedere all'interfaccia di amministrazione e condividere i propri commenti e suggerimenti con Microsoft in modo da poter continuare a migliorare l'esperienza di amministrazione. Se si opta per l'accesso, non vi sarà alcun impatto sugli utenti e si potrà tornare all'interfaccia di amministrazione precedente in qualsiasi momento.
+[Novità dell'interfaccia di amministrazione di Microsoft 365](whats-new-in-preview.md).
   
 > [!NOTE]
-> Gli amministratori di release mirati avranno il primo accesso alle nuove funzionalità. Le nuove funzionalità verranno quindi eseguite per tutti gli amministratori. Questo significa che non è possibile visualizzare il nuovo interfaccia di amministrazione o che può avere un aspetto diverso da quello descritto negli articoli della guida. Per essere tra i primi a visualizzare le nuove funzionalità, vedere participate to the New Admin Center, in basso. 
-    
-## <a name="participate-in-the-new-admin-center"></a>Partecipare al nuovo interfaccia di amministrazione
-Ci piacerebbe poter partecipare alla nuova interfaccia di amministrazione di Microsoft 365 in modo da poter preparare la modifica e darci un feedback.
+> Gli amministratori di release mirati avranno il primo accesso alle nuove funzionalità. Le nuove funzionalità verranno quindi eseguite per tutti gli amministratori. Questo significa che non è possibile visualizzare l'interfaccia di amministrazione o che può avere un aspetto diverso da quello descritto negli articoli della guida. Per essere tra i primi a visualizzare le nuove funzionalità, vedere participate nell'interfaccia di amministrazione, in basso. 
 
 ### <a name="turn-on-targeted-release"></a>Attivazione della versione di destinazione
 
@@ -64,18 +61,9 @@ Ci piacerebbe poter partecipare alla nuova interfaccia di amministrazione di Mic
     
 3. Selezionare **rilasci mirati per tutti** o **rilascio di destinazione per gli utenti selezionati**. Se si sceglie la versione di destinazione per gli utenti selezionati, è necessario aggiungere l'account di amministratore (e tutti gli altri amministratori dell'organizzazione che desiderano partecipare) all'elenco di utenti selezionati.
     
-### <a name="switch-to-the-new-admin-center-and-back-again"></a>Passare alla nuova interfaccia di amministrazione e viceversa
+### <a name="admin-center-feedback"></a>Commenti e suggerimenti dell'interfaccia di amministrazione
 
-- Quando la nuova interfaccia di amministrazione di Microsoft 365 è disponibile, è possibile optare selezionando il **nuovo** Toggle dell'interfaccia di amministrazione che si trova nella parte superiore della Home page. Se si effettua l'accesso all'interfaccia di amministrazione, si ricorderà la selezione e si eseguirà l'accesso alla nuova interfaccia di amministrazione. <br/><br/>![Nuovo interruttore dell'interfaccia di amministrazione dal centro di amministrazione precedente](../media/admin-center-toggle-off.png) 
-  
-- Tornare all'interfaccia di amministrazione precedente dalla Home page ruotando l'interruttore su **disattivata**. <br/><br/>![Attiva l'attivazione del nuovo interfaccia di amministrazione](../media/admin-center-toggle-on.png)
-
-Quando si è nel nuovo interfaccia di amministrazione, è possibile fornire commenti e suggerimenti su Microsoft sulla propria esperienza selezionando **Invia commenti e suggerimenti** direttamente accanto al pulsante **serve assistenza?** nella parte inferiore di ogni pagina. Dicci cosa ti piace e cosa potremmo fare di meglio. Inoltre, è possibile ottenere sondaggi pop-up di tanto in tanto chiedendo informazioni sulle impressioni complessive o su un'esperienza specifica appena rilasciata. È inoltre possibile fornire commenti e suggerimenti alla fine di questo articolo selezionando **queste informazioni sono state utili?**
-  
-Se si vuole essere un Early Adopter nella nuova interfaccia di amministrazione, è necessario attivare la versione di destinazione e quindi, quando è disponibile il nuovo interfaccia di amministrazione, è possibile passare a esso per estrarlo e fornire commenti e suggerimenti.
-  
-> [!NOTE]
-> L'accesso al nuovo interfaccia di amministrazione verrà implementato su tutti gli amministratori di Microsoft 365. Gli amministratori che si trovano nel gruppo di rilascio di destinazione nell'organizzazione avranno prima il nuovo interfaccia di amministrazione. Essere in versione mirata non garantisce che l'interruttore venga visualizzato immediatamente, ma lo si otterrà prima di quelli in versione standard. 
+Mentre nell'interfaccia di amministrazione, è possibile fornire commenti e suggerimenti su Microsoft sulla propria esperienza selezionando **Invia commenti e suggerimenti** accanto al pulsante **serve assistenza?** nella parte inferiore di ogni pagina. Dicci cosa ti piace e cosa potremmo fare di meglio. Inoltre, è possibile ottenere sondaggi pop-up di tanto in tanto chiedendo informazioni sulle impressioni complessive o su un'esperienza specifica appena rilasciata. È inoltre possibile fornire commenti e suggerimenti alla fine di questo articolo selezionando **queste informazioni sono state utili?**
   
 ::: moniker-end
 

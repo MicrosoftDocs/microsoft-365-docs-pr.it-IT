@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411013"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432605"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -39,6 +39,8 @@ Quando si abilitano le etichette di riservatezza per i file di Office in SharePo
 - Affinché SharePoint elimini la crittografia dal file al momento del caricamento, l'utente che carica il file contrassegnato e crittografato deve disporre dei diritti di utilizzo per visualizzare almeno il file. SharePoint non rimuove la crittografia dai file se l'utente non è in grado di aprirli all'esterno di SharePoint.
 
 - Utilizzare Office sul Web (Word, Excel, PowerPoint) per aprire e modificare i file di Office che dispongono di etichette di riservatezza che applicano la crittografia. Le autorizzazioni assegnate alla crittografia vengono applicate. Con Word sul Web, è possibile utilizzare l'etichetta automatica anche quando si modificano questi documenti.
+
+- Gli utenti esterni possono accedere ai documenti contrassegnati con la crittografia tramite gli account Guest. Per ulteriori informazioni, vedere [supporto per utenti esterni e contenuto con etichetta](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
 - Office 365 eDiscovery supporta la ricerca full-text per questi file. I criteri di prevenzione della perdita di dati (DLP) riguardano i contenuti di questi file.
 

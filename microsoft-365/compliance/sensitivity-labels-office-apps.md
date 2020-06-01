@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: 2cff14f2de60136b35399225da7cb04bbf9e880c
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222505"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432595"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -168,6 +168,34 @@ Altrimenti
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>Supporto per i file di SharePoint e OneDrive protetti da etichette di riservatezza
 
 Per utilizzare il client di etichettatura incorporato di Office con Office sul Web per i documenti in SharePoint o OneDrive, verificare di aver [abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+## <a name="support-for-external-users-and-labeled-content"></a>Supporto per utenti esterni e contenuto con etichetta
+
+Quando si etichetta un documento o un messaggio di posta elettronica, l'etichetta viene archiviata come metadati che includono il tenant e un GUID dell'etichetta. Quando un documento o un messaggio di posta elettronica viene aperto da un'app di Office che supporta le etichette di riservatezza, questi metadati vengono letti e solo se l'utente appartiene allo stesso tenant, l'etichetta viene visualizzata nell'app. Ad esempio, per l'etichettatura incorporata per Word, PowerPoint ed Excel, il nome dell'etichetta viene visualizzato sulla barra di stato. 
+
+Questo significa che se si condividono documenti con un'altra organizzazione che utilizza nomi di etichette diversi, ogni organizzazione può applicare e vedere la propria etichetta applicata al documento. Tuttavia, gli elementi seguenti di un'etichetta applicata sono visibili per gli utenti esterni all'organizzazione:
+
+- Contrassegni di contenuto. Quando un'etichetta applica un'intestazione, un piè di pagina o una filigrana, questi vengono aggiunti direttamente al contenuto e rimangono visibili fino a quando qualcuno li modifica o li elimina.
+
+- Il nome e la descrizione del modello di protezione sottostante da un'etichetta che applica la crittografia. Queste informazioni vengono visualizzate in una barra dei messaggi all'inizio del documento, per fornire informazioni su chi è autorizzato ad aprire il documento e sui relativi diritti di utilizzo per tale documento.
+
+### <a name="sharing-encrypted-documents-with-external-users"></a>Condivisione di documenti crittografati con utenti esterni
+
+Oltre a limitare l'accesso agli utenti nella propria organizzazione, è possibile estendere l'accesso a qualsiasi altro utente che dispone di un account in Azure Active Directory. Tutte le app di Office e altre [applicazioni con RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) sono in grado di aprire i documenti crittografati dopo che l'utente ha eseguito l'autenticazione. 
+
+Se gli utenti esterni non dispongono di un account in Azure Active Directory, è possibile creare un account Guest per il proprio tenant. Per l'indirizzo di posta elettronica, è possibile specificare qualsiasi indirizzo di posta elettronica che già utilizza. Ad esempio, l'indirizzo Gmail. Questo account Guest può anche essere utilizzato per accedere a un documento condiviso in SharePoint o OneDrive quando sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+Gli utenti esterni possono anche utilizzare e creare un account Microsoft per i documenti crittografati quando utilizzano le app Microsoft 365 su Windows. Questa funzionalità non è ancora supportata per MacOS, Android o iOS. Ad esempio, qualcuno condivide un documento crittografato con loro e le impostazioni di crittografia specificano l'indirizzo di posta elettronica di Gmail. Questo utente può creare un proprio account Microsoft che usa il proprio indirizzo di posta elettronica di Gmail. Successivamente, dopo aver eseguito l'accesso con questo account, è possibile aprire il documento e modificarlo in base alle restrizioni di utilizzo specificate per tale utente. Per un esempio di procedura dettagliata di questo scenario, vedere [Opening and editing the protected Document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+
+> [!NOTE]
+> L'indirizzo di posta elettronica dell'account Microsoft deve corrispondere all'indirizzo di posta elettronica specificato per limitare l'accesso alle impostazioni di crittografia.
+
+Quando un utente con un account Microsoft apre un documento crittografato in questo modo, crea automaticamente un account Guest per il tenant se non esiste già un account Guest con lo stesso nome. Quando l'account Guest esiste, può essere utilizzato per aprire i documenti in SharePoint e OneDrive utilizzando un browser (Office sul Web), oltre ad aprire i documenti crittografati dall'app desktop di Windows. 
+
+Tuttavia, l'account Guest automatico non viene creato immediatamente a causa della latenza di replica. Se si specificano gli indirizzi di posta elettronica personali come parte delle impostazioni di crittografia dell'etichetta, è consigliabile creare gli account Guest corrispondenti in Azure Active Directory. Fare in modo che gli utenti sappiano che devono utilizzare questo account per aprire un documento crittografato dall'organizzazione.
+
+> [!TIP]
+> Poiché non è possibile essere certi che gli utenti esterni utilizzeranno un'app client di Office supportata, la condivisione dei collegamenti da SharePoint e OneDrive dopo la creazione degli account Guest è un metodo più affidabile per supportare la collaborazione sicura con gli utenti esterni.
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Quando le app di Office applicano il contrassegno e la crittografia del contenuto
 

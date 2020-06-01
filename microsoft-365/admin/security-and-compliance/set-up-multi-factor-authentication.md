@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Informazioni su come configurare l'autenticazione a più fattori per l'organizzazione.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 2b4ac2b5950d2641254742e03f054f3e4c886833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c84c66cc051363fbc582abfb5521f922440b6801
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399123"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432380"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
   
@@ -42,7 +42,8 @@ Prima di iniziare, determinare se queste condizioni speciali si applicano all'ut
 
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Passaggio 1: decidere il metodo per richiedere agli utenti di utilizzare il Master
 
-Esistono tre modi per richiedere agli utenti di utilizzare il servizio di autenticazione utente per gli accessi. Per i dettagli, vedere [supporto di AMF in Microsoft 365](multi-factor-authentication-microsoft-365.md) .
+> [!NOTE]
+> È necessario essere un amministratore globale per impostare o modificare l'AMF. Esistono tre modi per richiedere agli utenti di utilizzare il servizio di autenticazione utente per gli accessi. Per i dettagli, vedere [supporto di AMF in Microsoft 365](multi-factor-authentication-microsoft-365.md) .
 
 - Impostazioni predefinite per la sicurezza (consigliata per le aziende di piccole dimensioni)
 

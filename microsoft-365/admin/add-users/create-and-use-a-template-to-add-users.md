@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: È possibile creare e utilizzare un modello per risparmiare tempo e standardizzare le impostazioni quando si aggiungono più utenti.
-ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cbe61c87bec40196ffd7a8e9868ea4611e4c259e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387226"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431810"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Creare e usare un modello per aggiungere utenti
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 È possibile creare e utilizzare un modello per risparmiare tempo e standardizzare le impostazioni quando si aggiungono più utenti. I modelli sono particolarmente utili se si dispone di utenti che condividono molte proprietà comuni, come quelli che hanno lo stesso ruolo e lavorano nello stesso percorso e quelli che richiedono lo stesso software. Ad esempio, è possibile disporre di un team di ingegneri del supporto tecnico che lavorano nello stesso ufficio.  
 

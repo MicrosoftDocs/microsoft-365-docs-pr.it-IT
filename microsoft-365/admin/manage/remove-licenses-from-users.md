@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Informazioni su come rimuovere le licenze dagli account utente.
-ms.openlocfilehash: 7207509c8e20710abae53cb095f7cbedfdc3bd6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399681"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432232"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 
@@ -45,9 +45,6 @@ ms.locfileid: "44399681"
 
 Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle licenze, è necessario annullare l'assegnazione delle licenze per un prodotto specifico per un massimo di 20 utenti. 
 
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a>.
 2. Selezionare il prodotto per il quale si desidera annullare l'assegnazione delle licenze.
 3. Selezionare gli utenti per i quali si desidera annullare l'assegnazione delle licenze.
@@ -59,9 +56,6 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 ## <a name="unassign-licenses-from-one-user-on-the-active-users-page"></a>Annullamento dell'assegnazione delle licenze da un utente nella pagina utenti attivi
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
@@ -104,9 +98,6 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 ## <a name="unassign-licenses-from-multiple-users-on-the-active-users-page"></a>Annullamento dell'assegnazione delle licenze da più utenti nella pagina utenti attivi
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: "Gli amministratori di Exchange Online gestiscono la posta elettronica e le cassette postali dell'organizzazione. Ad esempio, recuperano gli elementi eliminati nella cassetta postale di un utente. "
-ms.openlocfilehash: cf7bd2a7856017ccf4f17f71ad1845b56b004a10
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387425"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432136"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informazioni sul ruolo di amministratore di Exchange Online
 
@@ -56,9 +56,10 @@ Se si ha un'organizzazione di grandi dimensioni, l'amministratore di Exchange pu
   
  Ad esempio, l'amministratore di Exchange può assegnare un utente al gruppo di ruoli Gestione individuazione in modo che possa eseguire ricerche nelle cassette postali per i dati che soddisfano determinati criteri. Per altre informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) e [Gestire gruppi di ruoli](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-roles"></a>Informazioni su altri ruoli di amministratore
-    
+## <a name="learn-about-other-admin-role"></a>Informazioni sull'altro ruolo di amministratore
+
+- [Informazioni sui ruoli di amministratore di Microsoft 365](about-admin-roles.md)
+
 - [Informazioni sul ruolo di amministratore di SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
-    
+
 - [Informazioni sul ruolo di amministratore di Skype for Business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
-    

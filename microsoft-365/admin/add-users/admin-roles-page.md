@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio apre ticket di supporto presso Microsoft.
-ms.openlocfilehash: 1dde487ef9dc99b45263a21ce62d556249ada927
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387274"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432112"
 ---
 # <a name="get-started-with-the-roles-page"></a>Iniziare a utilizzare la pagina ruoli
 
@@ -99,3 +99,9 @@ Nell'interfaccia di amministrazione:
 :::image type="content" source="../../media/compare-roles-list.png" alt-text="Figura che illustra un confronto tra i ruoli di amministratore":::
 
 ::: moniker-end
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Informazioni sui ruoli di amministratore di Microsoft 365](about-admin-roles.md)
+
+[Assegnare ruoli di amministratore](assign-admin-roles.md)

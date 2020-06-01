@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Ottenere una panoramica del centro messaggi di Microsoft 365 e del relativo ruolo nella gestione delle modifiche.
-ms.openlocfilehash: 509c379beffaa4be8bb9cfcd7277ef6beb147bf3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0d23280f5657d656e778c358dfe6349e16db9c3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399705"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432254"
 ---
 # <a name="message-center"></a>Centro messaggi
 
 
 Per tenere conto delle modifiche imminenti, incluse le funzionalità nuove e modificate, la manutenzione pianificata o altri annunci importanti, visitare il <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">centro messaggi</a>. È qui che vengono pubblicati annunci ufficiali che consentono di adottare un approccio proattivo per la gestione delle modifiche. Ogni post fornisce una panoramica di alto livello su una modifica pianificata e su come potrebbe influire sugli utenti e collegamenti a informazioni più dettagliate utili per la preparazione.
   
-Per aprire il centro messaggi, prima di tutto, assicurarsi di aver selezionato il nuovo Toggle dell'interfaccia di **Amministrazione** nella Home page dell'interfaccia di amministrazione e quindi:
+Per aprire il centro messaggi:
 
 ::: moniker range="o365-worldwide"
 
@@ -62,7 +62,7 @@ Per aprire il centro messaggi, prima di tutto, assicurarsi di aver selezionato i
 |Chi può visualizzare i post nel Centro messaggi?  <br/> |La maggior parte degli utenti a cui è stato assegnato un ruolo di amministratore in Microsoft 365 può visualizzare i post del centro messaggi. Di [seguito è indicato un elenco](#admin-roles-that-dont-have-access-to-the-message-center) dei ruoli di amministratore che non dispongono dell'accesso al centro messaggi. È inoltre possibile assegnare il ruolo lettore centro messaggi agli utenti che devono essere in grado di leggere e condividere i post del centro messaggi senza avere altri privilegi di amministratore.<br/><br/> Inoltre, è possibile assegnare il ruolo di lettore di privacy del centro messaggi alle persone che dovrebbero visualizzare le notifiche relative alle informazioni sulla sicurezza e sulla privacy rilevanti per la propria organizzazione. Vedere [informazioni sui ruoli di amministratore](../add-users/about-admin-roles.md) per ulteriori informazioni su ciò che ogni ruolo di amministratore può eseguire. <br/><br/>La maggior parte dei post del centro messaggi può essere condivisa tramite posta elettronica con utenti non amministratori che potrebbero dover intervenire. Questa opzione non è disponibile per i post sulla privacy dei dati che Visualizza il Visualizzatore di privacy del centro messaggi. <br/> |
 |Questo è l'unico modo in cui Microsoft comunica le modifiche apportate a Microsoft 365?  <br/> |No, esistono diversi modi per comunicare le modifiche apportate in Microsoft 365. Il Centro messaggi è lo strumento principale con cui vengono comunicate le tempistiche di singole modifiche. Per informazioni sulle risorse aggiuntive, vedere [Stay on top of Microsoft 365 changes](stay-on-top-of-updates.md) .  <br/> |
 |Come si visualizzano i post in una lingua specifica?  <br/> |I post del centro messaggi vengono scritti in inglese solo a causa della tempestività delle informazioni che si stanno inviando, ma è possibile controllare se, per impostazione predefinita, i post vengono visualizzati in inglese oppure vengono tradotti automaticamente nella lingua preferita. Indipendentemente dalla visualizzazione predefinita scelta, è possibile selezionare la conversione automatica dei post in qualsiasi lingua supportata. Per ulteriori informazioni, vedere [Traduzione in lingua per i post del centro messaggi](language-translation-for-message-center-posts.md) .  <br/> |
-|È possibile ottenere un'anteprima delle modifiche o delle caratteristiche prima che vengano distribuite nell'organizzazione?  <br/> |A volte. È possibile visualizzare in anteprima alcune modifiche e nuove funzionalità optando per il programma di rilascio di destinazione. Per scegliere l'opzione, nell' **interfaccia di amministrazione, accedere a**  >  Preferenze di rilascio del**profilo dell'organizzazione**  >  **Release preferences**. (Nel nuovo interfaccia di amministrazione, potrebbe essere necessario selezionare **Mostra tutto** nella parte inferiore del riquadro di spostamento a sinistra per visualizzare **le impostazioni**). È possibile scegliere la versione di destinazione per l'intera organizzazione o solo per gli utenti selezionati. Per ulteriori informazioni sul programma, vedere [Opzioni di rilascio standard o mirate in Microsoft 365](release-options-in-office-365.md) .  <br/> |
+|È possibile ottenere un'anteprima delle modifiche o delle caratteristiche prima che vengano distribuite nell'organizzazione?  <br/> |A volte. È possibile visualizzare in anteprima alcune modifiche e nuove funzionalità optando per il programma di rilascio di destinazione. Per scegliere l'opzione, nell' **interfaccia di amministrazione, accedere a**  >  Preferenze di rilascio del**profilo dell'organizzazione**  >  **Release preferences**. (Nell'interfaccia di amministrazione, potrebbe essere necessario selezionare **Mostra tutto** nella parte inferiore del riquadro di spostamento a sinistra per visualizzare **le impostazioni**). È possibile scegliere la versione di destinazione per l'intera organizzazione o solo per gli utenti selezionati. Per ulteriori informazioni sul programma, vedere [Opzioni di rilascio standard o mirate in Microsoft 365](release-options-in-office-365.md) .  <br/> |
 |È possibile individuare la data esatta in cui una modifica verrà resa disponibile a un'organizzazione?  <br/> |Purtroppo, non è possibile indicare la data esatta in cui verrà apportata una modifica all'organizzazione. Nel post del Centro messaggi vengono fornite tutte le informazioni disponibili al momento del rilascio, in base al livello di probabilità. Microsoft si rende conto che gli utenti vogliono conoscere informazioni più precise sulle tempistiche e sta lavorando ad alcuni miglioramenti per ottimizzare questo livello di dettaglio.  <br/> |
 |I messaggi sono specifici per l'organizzazione di ogni utente?  <br/> |Microsoft si impegna al massimo perché a ogni utente vengano visualizzati solo i post del Centro messaggi che interessano la sua organizzazione. La roadmap di Microsoft 365 include tutte le funzionalità attualmente in fase di elaborazione e di implementazione, ma non tutte queste funzionalità sono valide per ogni organizzazione. Ad esempio, se una caratteristica viene distribuita solo per gli istituti di istruzione, il post del Centro messaggi corrispondente verrà inviato solo a tali organizzazioni.  <br/> |
 |È possibile ottenere messaggi al centro messaggi tramite posta elettronica?  <br/> |Sì! È possibile selezionare un digest settimanale inviato tramite posta elettronica e fino a due indirizzi di posta elettronica. Se è necessario che il digest vada a più di due persone, è possibile inviarlo a un gruppo o a una lista di distribuzione di Microsoft 365. Il digest settimanale inviato tramite posta elettronica è attivato per impostazione predefinita. Se non si ricevono i digest settimanali, controllare la cartella posta indesiderata. Per ulteriori informazioni su come configurare il digest settimanale, vedere la sezione [Preferenze](#preferences) di questo articolo.  <br/> |
@@ -128,9 +128,6 @@ Se l'amministrazione è distribuita all'interno dell'organizzazione, è possibil
 - Impostare le preferenze di posta elettronica per ricevere un digest settimanale di tutti i messaggi, le e-mail solo per gli aggiornamenti più importanti e i messaggi di posta elettronica per la privacy dei dati.  
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Selezionare **Modifica preferenze** nella parte superiore del centro messaggi.
 

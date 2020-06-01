@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Informazioni su come assegnare ruoli di amministratore a un utente o a più utenti dell'azienda in modo che possano eseguire attività specifiche nell'interfaccia di amministrazione.
-ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387238"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432100"
 ---
 # <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore
 
@@ -47,13 +47,6 @@ Guardare un breve video sull'aggiunta di un amministratore.<br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
 Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
-::: moniker-end
 
 ## <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore 
 
@@ -99,7 +92,7 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
 
-2. Nella pagina **utenti attivi** selezionare l'utente di cui si desidera modificare il ruolo di amministratore. Nel riquadro a comparsa fare clic su **modifica**accanto a **ruoli**. 
+2. Nella pagina **utenti attivi** selezionare l'utente di cui si desidera modificare il ruolo di amministratore. Nel riquadro a comparsa fare clic su **modifica**accanto a **ruoli**.
 
     Se non si vede l'opzione di **modifica** , non si dispone di un'autorizzazione per la modifica e non è possibile assegnare ruoli di amministratore ad altri utenti. Chiedere a un amministratore globale dell'azienda di assegnare i ruoli per l'utente. In una piccola azienda, il proprietario dell'azienda (la persona che ha acquistato l'abbonamento) è un amministratore globale. In un'azienda di grandi dimensioni, gli utenti principali del reparto IT sono amministratori globali.
 
@@ -125,9 +118,10 @@ Potrebbe non essere necessario disporre delle autorizzazioni corrette e quindi n
 
 ## <a name="related-articles"></a>Articoli correlati
 
+[Informazioni sui ruoli di amministratore di Microsoft 365](about-admin-roles.md)
+
 [Assegnare ruoli agli account utente con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Autorizzare o rimuovere relazioni con i partner](../misc/add-partner.md)
 
 [Aggiungere un indirizzo di posta elettronica alternativo utilizzando l'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
-

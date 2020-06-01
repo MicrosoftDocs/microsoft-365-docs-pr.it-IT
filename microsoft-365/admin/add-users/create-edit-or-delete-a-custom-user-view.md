@@ -20,23 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Informazioni su come utilizzare i filtri per creare, modificare o eliminare una visualizzazione utente personalizzata in Microsoft 365.
-ms.openlocfilehash: faea21f0e5142d197cc2b90d6ade99490f9f88e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387214"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431642"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Creare, modificare o eliminare una visualizzazione utente personalizzata in Office 365
 
 Se l'utente è un amministratore Gestione utenti o un amministratore globale di Office 365, è possibile creare visualizzazioni utente personalizzate per visualizzare un sottoinsieme specifico di utenti. Queste visualizzazioni si aggiungono all'insieme standard di visualizzazioni incluso in Office 365. È possibile creare, modificare o eliminare le visualizzazioni utente personalizzate e quelle create dall'utente sono disponibili per tutti gli amministratori.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
-::: moniker-end
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Visualizzazioni utente personalizzate nell'interfaccia di amministrazione
 

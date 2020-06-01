@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Informazioni su come aggiungere un partner Advisor di sottoscrizione come partner di record al momento dell'acquisto di Microsoft 365, cambiare il partner o eliminare un partner da un abbonamento.
-ms.openlocfilehash: fa9cd549c0af616776722f6d2be4ecb9ecac1bc7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ab02e95c2a2330e95f8a54f717e38025d04714c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399471"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432196"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Aggiungere, modificare o rimuovere un partner con il ruolo di consulente dell'abbonamento
 
@@ -70,9 +70,6 @@ Come amministratore per Office 365, è possibile creare o modificare gli utenti,
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>Aggiungere un partner al momento dell'acquisto
 
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
 1. Nell'interfaccia di amministrazione, andare alla **Billing** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
     
 2. Selezionare il prodotto che si desidera acquistare, quindi selezionare **Acquista**.
@@ -111,9 +108,6 @@ Seguire i passaggi della pagina providers per la ricerca o per ottenere la corri
 ## <a name="add-a-partner-to-an-existing-subscription"></a>Aggiunta di un partner a una sottoscrizione esistente
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
     
@@ -159,9 +153,6 @@ Per accettare questa offerta
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
     
 2. Se si hanno più abbonamenti, selezionare il nome dell'abbonamento da modificare.
@@ -206,9 +197,6 @@ Per accettare questa offerta
 ## <a name="delete-a-partner-from-a-subscription"></a>Eliminare un partner da un abbonamento
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1.  Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
     

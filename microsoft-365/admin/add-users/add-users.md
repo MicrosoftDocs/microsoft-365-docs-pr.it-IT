@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: Informazioni su come aggiungere utenti a Microsoft 365, uno alla volta o più utenti contemporaneamente da un file CSV.
-ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: af4fead3112a678b1ee7eacb087dddc40ed43d36
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387262"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432124"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Aggiungere utenti singolarmente o in blocco
 
@@ -38,10 +38,7 @@ Gli utenti del team hanno a disposizione un account utente prima di poter accede
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
-1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 2. Passare a **utenti** > **attivi**e selezionare **Aggiungi un utente**.
    
