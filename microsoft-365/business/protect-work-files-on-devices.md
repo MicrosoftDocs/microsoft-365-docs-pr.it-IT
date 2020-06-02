@@ -28,14 +28,16 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: "Informazioni sulla configurazione predefinita e sull'aggiunta dei criteri di gestione delle applicazioni per proteggere i dati aziendali nei dispositivi mobili personali degli utenti. "
-ms.openlocfilehash: 1d76b8fde6db4cf99d29fcfff000c20f0e7c18fe
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401283"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470908"
 ---
 # <a name="protect-work-files-on-devices"></a>Proteggere i file di lavoro nei dispositivi
+
+Questo articolo si applica a Microsoft 365 Business Premium.
 
 Nel mondo di oggi, gli utenti sono legati ai propri dispositivi e, per la collisione personale e lavorativa, i dati aziendali possono finire sul dispositivo personale di un dipendente. Le impostazioni configurate in questo articolo consentono di eseguire il controllo e di garantire la protezione dei file di lavoro, senza influire su nessuna delle impostazioni o dei dati personali dell'utente.
   

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 1f86c904d3168eef84b4d48d8d578dd7a935267c
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327727"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470490"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sicurezza in Microsoft Managed Desktop
 
@@ -27,7 +27,6 @@ Microsoft Managed Desktop utilizza diverse tecnologie Microsoft per proteggere i
 
 Per informazioni sull'archiviazione dei dati, l'utilizzo e le procedure di sicurezza utilizzate da Microsoft Managed Desktop, scaricare il white paper all'indirizzo [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
-Per ulteriori informazioni sul team delle operazioni di sicurezza su Microsoft Managed Desktop e sul loro funzionamento per garantire la sicurezza per i dispositivi, vedere il video [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 
 ## <a name="device-security"></a>Sicurezza del dispositivo
 

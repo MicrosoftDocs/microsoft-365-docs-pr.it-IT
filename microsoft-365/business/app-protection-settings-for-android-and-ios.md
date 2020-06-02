@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Informazioni su come creare, modificare o eliminare un criterio di gestione delle app e proteggere i file di lavoro su dispositivi Android o iOS.
-ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 67e7aaec5ff5a28f1e2d489913246c1c15c2f7b6
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401055"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471200"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS
 
-![Banner che puntano a https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
+Questo articolo si applica a Microsoft 365 Business Premium.
 
 ## <a name="create-an-app-management-policy"></a>Creare un criterio di gestione delle app
 

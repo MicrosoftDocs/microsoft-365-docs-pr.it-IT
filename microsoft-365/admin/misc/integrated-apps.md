@@ -1,5 +1,5 @@
 ---
-title: Attivazione o disattivazione di App integrate
+title: Gestione del consenso degli utenti alle app in Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,42 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Vengono fornite informazioni sulle app integrate e su come attivarle per consentire alle app di terze parti di accedere all'informazione di Microsoft 365 degli utenti.
-ms.openlocfilehash: 070150662daeefb2a4d02c7e0940dfd242bd4b5f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Informazioni sul consenso degli utenti per le app e su come attivarle per consentire alle app di terze parti di accedere all'informazione Microsoft 365.
+ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399339"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477173"
 ---
-# <a name="turning-integrated-apps-on-or-off"></a>Attivazione o disattivazione di App integrate
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Gestione del consenso degli utenti alle app in Microsoft 365
 
-Quando le app integrate sono attivate, gli utenti dell'organizzazione possono consentire alle app di terze parti di accedere alle informazioni di Microsoft 365. Un'eventuale app di terze parti usata da qualcuno potrebbe ad esempio chiedere l'autorizzazione per accedere al calendario e per modificare i file contenuti in una cartella di OneDrive di questa persona.
+Questa impostazione consente di controllare se gli utenti possono concedere il consenso alle app che utilizzano OpenID Connect e OAuth 2,0 per l'accesso e le richieste di accedere ai dati. Un'app può essere creata dall'interno dell'organizzazione oppure può provenire da un'altra organizzazione di Office 365 o da terze parti.
 
-## <a name="turning-integrated-apps-on-or-off"></a>Attivazione o disattivazione di App integrate
+Se si attiva questa impostazione, tali app richiederanno agli utenti l'autorizzazione per accedere ai dati dell'organizzazione e gli utenti possono scegliere se consentirli. Se questa impostazione viene disattivata, gli amministratori devono acconsentire a tali app prima che gli utenti possano usarli. In questo caso, prendere in considerazione la configurazione di un flusso di lavoro di consenso dell'amministratore nel portale di Azure in modo che gli utenti possano inviare una richiesta di approvazione dell'amministratore per l'utilizzo di qualsiasi applicazione bloccata.
+
+Ogni utente può concedere l'accesso solo alle app di cui è proprietario e che accedono alle proprie informazioni di Office 365. Non può invece concedere l'accesso alle informazioni degli altri utenti.
+
+## <a name="turning-user-consent-on-or-off"></a>Attivazione o disattivazione del consenso dell'utente
 <a name="__toc379982114"> </a>
 
-Ecco come attivare o disattivare App integrate.
+Ecco come abilitare o disabilitare l'autorizzazione utente per le app.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Settings** \> **Impostazioni** impostazioni, alla \> scheda **Servizi** e quindi selezionare **app integrate**.
+1. Nell'interfaccia di amministrazione, passare alla pagina **Impostazioni** \> **org Settings**  >  [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) , quindi selezionare **consenso utente per le app**.
 
-2. Nella pagina **app integrate** , selezionare l'opzione per abilitare o disabilitare le app integrate.
+2. Nella pagina **autorizzazioni utente per le app** selezionare l'opzione per abilitare o disabilitare le app integrate.
 
-## <a name="more-info-on-integrated-apps"></a>Altre informazioni sulle app integrate
+## <a name="more-info"></a>Altre informazioni
 <a name="__toc379982114"> </a>
 
-Un'app integrata può essere creata dall'interno dell'organizzazione oppure può provenire da un'altra organizzazione o da terze parti.
+Per informazioni su come configurare le impostazioni di consenso in Azure Active Directory, leggere [configurare il flusso di lavoro di approvazione dell'amministratore](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 
-Se l'opzione App integrate è attivata, le eventuali app che vengono usate chiedono l'autorizzazione per impostare il livello di accesso necessario per accedere alle informazioni dell'utente. Un utente può concedere l'accesso solo alle app che possiedono per accedere alle informazioni di Microsoft 365. Non può invece concedere l'accesso alle informazioni degli altri utenti.
-
-Esistono due tipi di autorizzazioni che vengono utilizzate quando si utilizzano app integrate in Microsoft 365: autorizzazioni utente e autorizzazioni di amministratore. Se ad esempio le app integrate sono abilitate per l'organizzazione e un utente usa un'app di terze parti, quest'ultima può chiedere l'autorizzazione dell'utente per leggere i dettagli del suo profilo, modificare o eliminare file, leggere gli elementi contenuti nelle raccolte siti e inviare messaggi di posta elettronica a nome dell'utente.
-
-![Autorizzazioni utente per App integrate](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
-
-Se un amministratore registra un'app per tutti gli utenti di un'organizzazione, gli viene chiesto l'autorizzazione per consentire all'app di accedere alle informazioni e alle risorse nell'organizzazione. Quando in seguito altri utenti dell'organizzazione useranno l'app, non visualizzeranno la richiesta di autorizzazione. L'amministratore che registra un'app deve verificare l'attendibilità di chi la pubblica. Per informazioni sulla registrazione di app, vedere [Aggiunta, aggiornamento e rimozione di applicazioni](https://go.microsoft.com/fwlink/p/?LinkID=518600).
-
-![Autorizzazioni dell'amministratore per App integrate](../../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
-
-Se l'opzione App integrate viene disattivata, le app già installate e con l'autorizzazione per accedere alle informazioni non verranno disinstallate e le autorizzazioni non verranno rimosse. Anche se questa opzione è disattivata, gli amministratori possono comunque registrare app per renderle disponibili agli utenti e consentire l'accesso alle informazioni. Per informazioni sulla rimozione di un'applicazione registrata e delle relative autorizzazioni, vedere [Aggiunta, aggiornamento e rimozione di applicazioni](https://go.microsoft.com/fwlink/?LinkID=518600&amp;clcid=0x409).
-
-
+Per ulteriori informazioni sulla gestione del consenso degli utenti alle app, vedere [Managing consenso to Applications and valutare le richieste di consenso](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests).

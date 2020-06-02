@@ -28,14 +28,14 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Informazioni su come rimuovere i dati aziendali dai dispositivi gestiti tramite criteri di protezione e come ripristinare le impostazioni di fabbrica dei dispositivi Windows 10.
-ms.openlocfilehash: 2d725224631901054480d705ab2adc0f8f4f9353
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5e6ba7352a6a82811e1c79fe29bff35e3da5639e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403099"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471140"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-for-business"></a>Gestire i dispositivi protetti con Microsoft 365 for business
+# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Gestire i dispositivi protetti con Microsoft 365 Business Premium
 
 Dopo che un utente ha connesso il dispositivo all'organizzazione accedendo con il proprio account di lavoro al dispositivo o alle app di Office nel dispositivo, è possibile proteggere il dispositivo con i criteri configurati. I dispositivi connessi sono elencati nella pagina **dispositivi** . In caso di perdita o di furto di un dispositivo, è possibile gestirlo da questa pagina per rimuovere eventuali dati aziendali. È anche possibile ripristinare le impostazioni del produttore per i dispositivi Windows 10, in modo da cancellare eventuali impostazioni personalizzate. 
 

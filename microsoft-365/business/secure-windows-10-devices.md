@@ -27,14 +27,16 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Informazioni su come configurare le impostazioni del criterio di dispositivo predefinito che qualsiasi dispositivo Windows 10 riceverà al momento dell'accesso al proprio account aziendale o dell'Istituto di istruzione.
-ms.openlocfilehash: 7714a6e47de8a254d836ca2e158b92907b87f8c3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 03ae86861ddb0cb83cd39b7834f19e01bf3e99e2
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402735"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470628"
 ---
 # <a name="secure-windows-10-devices"></a>Proteggere i dispositivi Windows 10
+
+Questo articolo si applica a Microsoft 365 Business Premium.
 
 Le impostazioni configurate qui fanno parte dei criteri predefiniti per i dispositivi Windows 10. Tutti gli utenti che si connettono a un dispositivo Windows 10, inclusi i dispositivi mobili e i PC, accedendo con il proprio account di lavoro riceveranno automaticamente queste impostazioni. È consigliabile accettare i criteri predefiniti durante l'installazione e aggiungere in un secondo momento i criteri relativi a gruppi di utenti specifici.
   
