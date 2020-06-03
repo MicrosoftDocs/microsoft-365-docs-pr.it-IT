@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni.
-ms.openlocfilehash: 92f7146c40bbcbd93eb36e43a4dff9c8a807c403
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.openlocfilehash: 48c187d7456f4b0a8e1da7558b7813fc2a8dc9f7
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429217"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520170"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
@@ -42,6 +42,9 @@ Di seguito viene illustrata una breve panoramica del funzionamento dei criteri d
 ![Panoramica della modalità di funzionamento dei criteri di avviso](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
 1. Un amministratore dell'organizzazione crea, configura e attiva un criterio di avviso utilizzando la pagina **criteri di avviso** nel centro sicurezza e conformità. È inoltre possibile creare criteri di avviso utilizzando il cmdlet **New-ProtectionAlert** in PowerShell per il centro sicurezza & Compliance. Per creare criteri di avviso, è necessario assegnare il ruolo Gestisci avvisi o il ruolo Configurazione organizzazione nel centro sicurezza e conformità.
+
+   > [!NOTE]
+   > Dopo aver creato o aggiornato un criterio di avviso, sono necessari fino a 24 ore prima che i criteri vengano attivati dagli avvisi. Ciò è dovuto al fatto che i criteri devono essere sincronizzati con il motore di rilevamento degli avvisi.
 
 2. Un utente esegue un'attività che soddisfa le condizioni di un criterio di avviso. In caso di attacchi di malware, i messaggi di posta elettronica infetti inviati agli utenti dell'organizzazione attivano un avviso.
 
@@ -180,6 +183,12 @@ Nella schermata seguente viene mostrato un avviso con quattro eventi aggregati. 
 
 ![Esempio di aggregazione degli avvisi](../media/AggregatedAlertExample.png)
 
+Tenere presenti le considerazioni seguenti sull'aggregazione degli avvisi:
+
+- Gli avvisi attivati dal **clic su un URL potenzialmente dannoso sono stati rilevati** i [criteri di avviso predefiniti](#default-alert-policies) non vengono aggregati. Ciò è dovuto al fatto che gli avvisi attivati da questo criterio sono univoci per ogni utente e messaggio di posta elettronica.
+
+- A questo punto, la proprietà avviso di **hit count** non indica il numero di eventi aggregati per tutti i criteri di avviso. Per gli avvisi attivati da questi criteri di avviso, è possibile visualizzare gli eventi aggregati facendo clic su **Visualizza elenco messaggi** o su **attività di visualizzazione** nell'avviso. Stiamo lavorando per rendere il numero di eventi aggregati elencati nella proprietà Alert **count hit** disponibile per tutti i criteri di avviso.
+
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Autorizzazioni RBAC necessarie per visualizzare gli avvisi
 
 Le autorizzazioni di controllo di accesso basato sui ruoli (RBAC) assegnate agli utenti nell'organizzazione determinano gli avvisi che un utente può visualizzare nella pagina **Visualizza avvisi** . Come è possibile eseguire questa operazione? I ruoli di gestione assegnati agli utenti (in base alla loro appartenenza ai gruppi di ruoli nel centro sicurezza & conformità) determinano le categorie di avvisi che un utente può visualizzare nella pagina **Visualizza avvisi** . Ecco alcuni esempi:
@@ -205,7 +214,7 @@ Per visualizzare la categoria a cui è assegnato un criterio di avviso predefini
 |Gestione dei dispositivi|||||||
 |Gestione della disposizione|||||||
 |Gestione della conformità DLP||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Esporta|||||||
+|Esportazione|||||||
 |Hold|||||||
 |Gestione avvisi||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configurazione dell'organizzazione||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

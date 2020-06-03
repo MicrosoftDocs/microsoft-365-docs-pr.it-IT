@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare la propria azienda in Microsoft 365 Business Premium da Office 365 E3.
-ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402239"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515900"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrazione da Office 365 E3 a Microsoft 365 Business Premium 
 
@@ -78,6 +78,7 @@ Non è necessario apportare modifiche alla sottoscrizione corrente o ai dati pri
 - Configurazione della sottoscrizione, ad esempio i record DNS e i nomi di dominio.
 - Gli account utente e di gruppo e le impostazioni di autenticazione, ad esempio l'autenticazione a più fattori o i criteri di accesso condizionale.
 - Configurazioni dei servizi di produttività e relativi dati, ad esempio Team, cassette postali di Exchange Online, siti di SharePoint Online, cartelle di OneDrive for business e blocchi appunti di OneNote.
+- Le applicazioni di Office verranno scalate automaticamente. Office 365 Modern Licensing controllerà l'assegnazione della licenza dell'utente ogni 72 ore e convertirà le applicazioni di Office nella versione corrispondente alla sottoscrizione dell'utente.
 
 ### <a name="windows-10"></a>Windows 10
 

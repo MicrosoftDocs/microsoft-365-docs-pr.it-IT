@@ -14,26 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui limiti in vigore per la soluzione avanzata di eDiscovery in Microsoft 365. Questo include i limiti di caso, i limiti di indicizzazione e i limiti di ricerca quando si utilizza lo strumento di ricerca per raccogliere i dati del caso.
-ms.openlocfilehash: 5fe14aec3be9de2ec614ecf3737387f08d2e7b88
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: babc05cc5c74f435f0be6fbc8eafd80f09a77b75
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224663"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520148"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limiti di Advanced eDiscovery
 
 In questo articolo vengono descritti i limiti della soluzione avanzata di eDiscovery in Microsoft 365.
 
-## <a name="case-limits"></a>Limiti relativi al caso
+## <a name="case-and-review-set-limits"></a>Limiti del caso e del set di Revisione
 
-Nella tabella seguente sono elencati i limiti per i casi in Advanced eDiscovery.
+Nella tabella seguente sono elencati i limiti relativi ai casi e ai set di revisione in Advanced eDiscovery.
 
 |**Descrizione del limite**|**Tipo di limite**|
 |:-----|:-----|
 |Numero totale di documenti che è possibile aggiungere a un caso (per tutti i set di revisione in un caso).  <br/> |1 milione  <br/> |
-|Dimensione totale dei file per set di carico.  <br/> |100 GB  <br/> |
-|Quantità totale di dati caricati in un caso al giorno.<br/> |2 TB <br/> |
+|Dimensione totale dei file per set di carico. Questo include il caricamento di non Office 365 in un set di revisione.  <br/> |100 GB  <br/> |
+|Quantità totale di dati caricati in tutti i set di revisione nell'organizzazione al giorno.<br/> |2 TB <br/> |
 |Numero massimo di set di carichi per caso.  <br/> |15  <br/> |
 |Numero massimo di insiemi di revisione per ogni caso.  <br/> |20 <br/> |
 |||
@@ -60,7 +60,7 @@ I limiti descritti in questa sezione sono correlati all'utilizzo dello strumento
 |Numero massimo di ricerche che possono essere eseguite contemporaneamente.  <br/> |Nessun limite  <br/> | 
 |Numero massimo di ricerche che un singolo utente può avviare contemporaneamente.  <br/> |10    <br/> | 
 |Numero massimo di caratteri per una query di ricerca (inclusi operatori e condizioni).  <br/> |**Cassette postali**: 10.000<br/>**Siti**: 4.000 quando si effettua la ricerca in tutti i siti o 2.000 quando si effettua la ricerca fino a 20 siti <sup>2</sup> <br/> |
-|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso; ad esempio **1 \* ** o **set \* **. <br/> |3   <br/> |  
+|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso; ad esempio **1 \* ** o **set \* **. <br/> |3  <br/> |  
 |Numero massimo di varianti restituite quando si utilizza il carattere jolly del prefisso per cercare una frase esatta o quando si utilizza un carattere jolly di prefisso e l'operatore booleano **vicino** .  <br/> |10.000 <sup>3</sup> <br/> |
 |Numero massimo di elementi per ogni cassetta postale utente che vengono visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti.   <br/> |100  <br/> |
 |Numero massimo di elementi di tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.  <br/> |1.000  <br/> |

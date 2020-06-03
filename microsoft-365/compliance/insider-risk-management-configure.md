@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292474"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515763"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -28,7 +28,7 @@ Usare i criteri di gestione dei rischi Insider per identificare attività rischi
 
 Per ulteriori informazioni su come i criteri di rischio Insider consentono di gestire i rischi nell'organizzazione, vedere [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di iniziare a utilizzare la gestione dei rischi Insider, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e utilizzare Gestione dei rischi Insider, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
@@ -95,14 +95,17 @@ Vedere l'argomento [set up a Connector to Import HR data](import-hr-data.md) for
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurare i criteri di prevenzione della perdita di dati (DLP)
 
-Gestione dei rischi Insider supporta l'utilizzo di criteri DLP per identificare l'esposizione intenzionale o accidentale di informazioni riservate a parti indesiderate. Quando si configura un criterio di gestione dei rischi Insider con il modello di *perdita di dati* , è necessario assegnare un criterio DLP specifico al criterio.
+Gestione dei rischi Insider supporta l'utilizzo di criteri DLP per identificare l'esposizione intenzionale o accidentale di informazioni riservate a parti indesiderate per avvisi DLP a livello di gravità elevato. Quando si configura un criterio di gestione dei rischi Insider con il modello di **perdita di dati** , è necessario assegnare un criterio DLP specifico al criterio.
 
-Questo criterio consente di instradare gli indicatori di gestione dei rischi Insider per gli avvisi High Severity DLP per informazioni riservate ed è una parte importante della configurazione della copertura di gestione dei rischi nell'organizzazione. Se si configurano più criteri DLP per l'organizzazione, sarà necessario assegnare un criterio di gestione dei rischi Insider per ogni criterio DLP.
-
-Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) . Dopo aver configurato un criterio DLP, tornare a questi passaggi di configurazione.
+Questo criterio consente di instradare gli indicatori di gestione dei rischi Insider per gli avvisi High Severity DLP per informazioni riservate ed è una parte importante della configurazione della copertura di gestione dei rischi nell'organizzazione. Per ulteriori informazioni sulla gestione dei rischi Insider e sull'integrazione e sulla pianificazione di criteri DLP, vedere [Insider Risk Management Policies](insider-risk-management-policies.md#data-leaks).
 
 >[!IMPORTANT]
->Verificare che l'impostazione dei **rapporti sugli incidenti** nei criteri DLP per la gestione dei rischi Insider utilizzati con questo modello sia configurata per gli avvisi a livello di gravità *elevato* . Gli avvisi di gestione dei rischi insider non verranno generati da criteri DLP con il campo **rapporto eventi** non consentiti impostato su *basso* o *medio*.
+>Assicurarsi di aver completato le operazioni seguenti:
+>
+>- È possibile comprendere e configurare correttamente gli utenti in ambito sia nei criteri di gestione del rischio DLP che insider per produrre la copertura dei criteri prevista.
+>- Verificare che l'impostazione dei **rapporti sugli incidenti** nei criteri DLP per la gestione dei rischi Insider utilizzati con questo modello sia configurata per gli avvisi a livello di gravità *elevato* . Gli avvisi di gestione dei rischi insider non verranno generati da criteri DLP con il campo **rapporto eventi** non consentiti impostato su *basso* o *medio*.
+
+Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) . Dopo aver configurato un criterio DLP, tornare a questi passaggi di configurazione.
 
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Passaggio 4 (obbligatorio): configurare le impostazioni dei rischi Insider
 

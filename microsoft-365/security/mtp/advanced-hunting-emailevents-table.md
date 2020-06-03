@@ -1,6 +1,6 @@
 ---
 title: Tabella EmailEvents nello schema per ricerca avanzata
-description: Informazioni sugli eventi associati ai messaggi di posta elettronica Microsoft nella tabella EmailEvents dello schema di caccia avanzato
+description: Informazioni sugli eventi associati ai messaggi di posta elettronica di Microsoft 365 nella tabella EmailEvents dello schema di caccia avanzato
 keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, EmailEvents, ID messaggio di rete, mittente, destinatario, ID allegato, nome allegato, verdetto di malware, verdetto di phishing, conteggio degli allegati
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be86f446e05952f7e88dc32e12a6a0d05e380afd
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633532"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515856"
 ---
 # <a name="emailevents"></a>EmailEvents
 

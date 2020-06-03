@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a9ba61650b69e3c42506735c90ae05b917a53209
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931733"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498352"
 ---
 # <a name="custom-detections-overview"></a>Panoramica dei rilevamenti personalizzati
 
 **Si applica a:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Con i rilevamenti personalizzati, è possibile monitorare e rispondere in modo proattivo ai vari eventi e Stati del sistema, tra cui l'attività di violazione sospetta e gli endpoint non configurati correttamente. Ciò è reso possibile dalle regole di rilevamento personalizzabili che attivano automaticamente gli avvisi e le azioni di risposta.
 

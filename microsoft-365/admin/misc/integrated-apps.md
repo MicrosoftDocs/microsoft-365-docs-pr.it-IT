@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Informazioni sul consenso degli utenti per le app e su come attivarle per consentire alle app di terze parti di accedere all'informazione Microsoft 365.
-ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477173"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498318"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Gestione del consenso degli utenti alle app in Microsoft 365
 
@@ -42,7 +42,7 @@ Ecco come abilitare o disabilitare l'autorizzazione utente per le app.
 
 1. Nell'interfaccia di amministrazione, passare alla pagina **Impostazioni** \> **org Settings**  >  [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) , quindi selezionare **consenso utente per le app**.
 
-2. Nella pagina **autorizzazioni utente per le app** selezionare l'opzione per abilitare o disabilitare le app integrate.
+2. Nella pagina **autorizzazioni utente per le app** selezionare l'opzione per abilitare o disabilitare il consenso dell'utente.
 
 ## <a name="more-info"></a>Altre informazioni
 <a name="__toc379982114"> </a>

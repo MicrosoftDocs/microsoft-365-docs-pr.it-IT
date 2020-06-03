@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: b0703aa14bee3d14d1c3ff4fe46ea9d72de73ce2
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503984"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515868"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Funzionalità di anteprima di Microsoft Threat Protection
 
@@ -48,7 +48,7 @@ Attiva l'impostazione Anteprima esperienza per essere tra i primi a provare le f
 2. Selezionare **Microsoft Threat Protection**.
 
 
-3. Seleziona **funzionalità** > **di anteprima attiva le funzionalità di anteprima**. 
+3. Seleziona **funzionalità**  >  **di anteprima attiva le funzionalità di anteprima**. 
 
 3. Selezionare **Salva**.
 
@@ -57,6 +57,8 @@ Quando si vede che è selezionata la casella di controllo attiva le caratteristi
 ## <a name="preview-features"></a>Funzionalità di anteprima
 Le caratteristiche e i miglioramenti seguenti sono attualmente disponibili in anteprima:
 
-- **[Rilevamenti personalizzati](custom-detections-overview.md)** : utilizzare query di caccia avanzate per creare regole che ricercano automaticamente l'attività di violazione e altri elementi di interesse a intervalli regolari. Corrisponde agli avvisi del trigger di query e alle azioni di risposta specificate.
-
 - **[Tabelle di identità e app](advanced-hunting-schema-tables.md)** : consente di ottenere visibilità negli eventi di autenticazione, nelle query di Active Directory e nell'attività correlata all'applicazione con le tabelle [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)e [AppFileEvents](advanced-hunting-appfileevents-table.md) nello schema di caccia avanzato.
+
+- **[Tabella EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** -utilizzare questa tabella per creare query di [ricerca avanzate](advanced-hunting-overview.md) che controllano le operazioni eseguite nei messaggi di posta elettronica dopo che sono state recapitate alle cassette postali dei destinatari.
+
+- **[Funzione fileprofile ()](advanced-hunting-fileprofile-function.md)** : utilizzare nelle query di [caccia avanzate](advanced-hunting-overview.md) per incorporare informazioni complete sui file.

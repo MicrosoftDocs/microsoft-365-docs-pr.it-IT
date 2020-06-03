@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: be7b417f9127197bea96e79eab94c69b5c6e3fcb
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292504"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515881"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -49,12 +49,27 @@ Quando i dipendenti lasciano la propria organizzazione, esistono indicatori di r
 
 ### <a name="data-leaks"></a>Perdite di dati
 
-La protezione dei dati e la prevenzione della perdita di dati è una sfida costante per la maggior parte delle organizzazioni, in particolare con la rapida crescita dei nuovi dati creati da dipendenti, dispositivi e servizi. I dipendenti sono autorizzati a creare, archiviare e condividere informazioni tra i servizi e i dispositivi che rendono la gestione delle perdite di dati sempre più complesse e difficili. Le perdite di dati possono includere la sovracondivisione accidentale di informazioni all'esterno dell'organizzazione o il furto di dati con intenti dolosi. Questo modello determina la priorità del rilevamento in tempo reale dei download di dati di SharePoint online sospetti, la condivisione di file e cartelle, la copia di file su dispositivi portatili, come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali.
+La protezione dei dati e la prevenzione della perdita di dati è una sfida costante per la maggior parte delle organizzazioni, in particolare con la rapida crescita dei nuovi dati creati da dipendenti, dispositivi e servizi. I dipendenti sono autorizzati a creare, archiviare e condividere informazioni tra i servizi e i dispositivi che rendono la gestione delle perdite di dati sempre più complesse e difficili. Le perdite di dati possono includere la sovracondivisione accidentale di informazioni all'esterno dell'organizzazione o il furto di dati con intenti dolosi. In combinazione con un criterio di prevenzione della perdita di dati (DLP) assegnato, questo modello determina la priorità del rilevamento in tempo reale dei download di dati di SharePoint online sospetti, la condivisione di file e cartelle, la copia di file su dispositivi portatili come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali.
 
->[!IMPORTANT]
->Quando si utilizza questo modello, è necessario configurare almeno un criterio di prevenzione della perdita di dati (DLP) per definire le informazioni riservate nell'organizzazione. Verificare che l'impostazione dei **rapporti sugli incidenti** nei criteri DLP per la gestione dei rischi Insider utilizzati con questo modello sia configurata per gli avvisi a livello di gravità *elevato* . Gli avvisi di gestione dei rischi insider non verranno generati da criteri DLP con il campo **rapporto eventi** non consentiti impostato su *basso* o *medio*.
->
->Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) .
+Quando si utilizza il modello per le **perdite di dati** , è necessario assegnare un criterio DLP per attivare gli indicatori nei criteri di rischio Insider per gli avvisi di gravità elevata nell'organizzazione. Ogni volta che viene generato un avviso di severità elevato da una regola di criteri DLP viene aggiunto al registro di controllo di Office 365, i criteri di rischio Insider creati con questo modello esaminano automaticamente l'avviso di gravità elevata. Se l'avviso contiene un utente in ambito definito nel criterio di rischio Insider, l'avviso verrà elaborato dal criterio di rischio insider come nuovo avviso e assegnato un livello di rischio Insider e un punteggio di rischio. Questo avviso può essere valutato come parte del flusso di lavoro di gestione dei rischi Insider e aggiunto a un caso di gestione dei rischi, se necessario.
+
+Quando si creano o si modificano i criteri DLP per l'utilizzo con i criteri di gestione dei rischi Insider, tenere presente quanto segue
+
+- Assegnare la *priorità agli eventi di exfiltration* dei dati ed essere selettivi quando si configurano **le regole** nei criteri DLP. Ad esempio, la posta elettronica dei documenti sensibili a un concorrente conosciuto dovrebbe essere un evento exfiltration a livello di avviso *elevato* . L'assegnazione eccessiva del livello *elevato* nelle impostazioni dei **rapporti sugli incidenti** in altre regole di criteri DLP può aumentare il rumore nel flusso di lavoro di avviso di gestione dei rischi Insider e rendere più difficile per i ricercatori e gli analisti di dati valutare adeguatamente questi avvisi. Ad esempio, l'assegnazione di livelli di avviso *elevati* per il blocco delle attività nei criteri DLP rende più difficile valutare le attività e il comportamento degli utenti davvero rischiosi.
+- Assicurarsi di aver compreso e configurato correttamente gli utenti in ambito sia nei criteri di gestione del rischio DLP che Insider. Solo gli utenti definiti come ambito per i criteri di gestione dei rischi Insider che utilizzano il modello di **perdita di dati** avranno gli avvisi del criterio DLP a gravità elevata elaborati. Inoltre, solo gli utenti definiti come nell'ambito di una regola per un avviso DLP di gravità elevato verranno esaminati dal criterio di gestione dei rischi Insider per considerazione. È importante che non si configuri inconsapevolmente gli utenti in ambito sia nei criteri di rischio DLP che insider in modo conflittuale.
+
+     Ad esempio, se le regole dei criteri DLP sono limitate a solo gli utenti del team di vendita e il criterio di rischio Insider creato dal modello per le **perdite di dati** ha definito tutti gli utenti come nell'ambito, il criterio di rischio Insider elaborerà solo avvisi DLP ad alta gravità per gli utenti del team di vendita. Il criterio di rischio insider non riceverà avvisi DLP ad alta priorità per gli utenti di elaborare che non sono definiti nelle regole DLP in questo esempio. Viceversa, se il criterio di gestione dei rischi Insider creato dal modello per le **perdite di dati** ha come ambito solo gli utenti del team di vendita e il criterio DLP assegnato ha come ambito tutti gli utenti, il criterio di rischio Insider elaborerà solo avvisi DLP di gravità elevata per i membri del team di vendita. Il criterio di gestione dei rischi Insider ignorerà gli avvisi DLP ad alta gravità per tutti gli utenti non del team di vendita.
+
+- Verificare che l'impostazione della regola per i **rapporti imprevisti** nel criterio DLP utilizzato per il modello di gestione dei rischi Insider sia configurata per avvisi a livello di gravità *elevato* . Il livello di gravità *elevato* è l'indicatore di attivazione e gli avvisi di gestione dei rischi insider non vengono generati dalle regole nei criteri DLP con il campo **rapporto incidenti** impostato su *bassa* o *media*.
+
+    ![Impostazione dell'avviso del criterio DLP](../media/insider-risk-DLP-policy-high-severity.png)
+
+     >[!NOTE]
+     >Quando si crea un nuovo criterio DLP utilizzando i modelli incorporati, è necessario selezionare l'opzione **Crea o Personalizza Advanced DLP Rules** per configurare l'impostazione dei **rapporti sugli incidenti** per il livello di gravità *elevato* .
+
+Ogni criterio di gestione dei rischi Insider creato dal modello per le **perdite di dati** può essere assegnato solo a un criterio DLP. Se si dispone di più di un criterio DLP che si desidera utilizzare per gli avvisi di gravità elevata elaborati da un criterio di gestione dei rischi Insider, è necessario creare un criterio di gestione dei rischi Insider separato per ogni criterio DLP.
+
+Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) .
 
 ### <a name="offensive-language-in-email"></a>Lingua offensiva nel messaggio di posta elettronica
 
@@ -66,7 +81,7 @@ Le impostazioni dei rischi Insider si applicano a tutti i criteri di gestione de
 
 ### <a name="privacy"></a>Privacy
 
-La protezione della privacy degli utenti che dispongono di corrispondenze di criteri è importante e può contribuire a promuovere l'oggettività nelle analisi dei dati e nelle recensioni degli analizzatori dei rischi Insider Per gli utenti con corrispondenze di criteri di rischio Insider, è possibile scegliere una delle seguenti impostazioni:
+La protezione della privacy degli utenti che dispongono di corrispondenze di criteri è importante e può contribuire a promuovere l'oggettività nelle analisi dei dati e nelle recensioni degli analizzatori dei rischi Insider Per gli utenti con una corrispondenza dei criteri di rischio Insider, è possibile scegliere una delle seguenti impostazioni:
 
 - **Mostrare le versioni di anonimi dei**nomi utente: i denominati degli utenti sono anonimi per impedire agli amministratori, ai ricercatori di dati e ai revisori di vedere gli utenti associati agli avvisi dei criteri. Ad esempio, un utente ' Grace Taylor ' verrebbe visualizzato con uno pseudonimo randomizzato come ' AnonIS8-988' in tutte le aree dell'esperienza di gestione dei rischi Insider. Se si sceglie questa impostazione, anonimizza tutti gli utenti con le corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni sui profili utente nell'avviso del rischio Insider e nei dettagli del caso non saranno disponibili quando si sceglie questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano gli utenti ai nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente verranno visualizzati per tutti gli utenti che hanno corrispondenze di criteri correnti o precedenti.
 - Non vengono visualizzate le **versioni di anonimi dei nomi utente**: i nomi utente vengono visualizzati per tutte le corrispondenze di criteri correnti e precedenti per gli avvisi e i casi. Le informazioni sui profili utente, ovvero il nome, il titolo, l'alias e l'organizzazione o il reparto, vengono visualizzate per tutti gli avvisi e i casi di gestione dei rischi Insider.
@@ -110,9 +125,9 @@ Per modificare la sensibilità del classificatore dei linguaggi offensivi per i 
 
 Le attività degli utenti rilevate dai criteri di rischio Insider sono assegnate a un punteggio di rischio specifico, che a sua data determina la gravità degli avvisi (basso, medio, alto). Per impostazione predefinita, viene generato un determinato numero di avvisi di bassa, media e elevata gravità, ma è possibile aumentare o diminuire il volume in base alle proprie esigenze. Per modificare il volume degli avvisi per tutti i criteri di gestione dei rischi Insider, scegliere una delle seguenti impostazioni:
 
-- **Meno avvisi**: verranno visualizzati tutti gli avvisi di gravità elevata, meno avvisi di gravità media e nessun livello di gravità basso. Questo significa che potrebbe mancare qualche vero positivo.
+- **Meno avvisi**: verranno visualizzati tutti gli avvisi di gravità elevata, meno avvisi di gravità media e nessun livello di gravità basso. Questo livello di impostazione significa che potrebbe essere possibile perdere alcuni veri positivi.
 - **Volume predefinito**: verranno visualizzati tutti gli avvisi di gravità elevata e una quantità bilanciata di avvisi di gravità medio-bassa.
-- **Altri avvisi**: vedrai tutti gli avvisi di gravità media e alta e la maggior parte degli avvisi di gravità bassa. Ciò può comportare un numero maggiore di falsi positivi.
+- **Altri avvisi**: vedrai tutti gli avvisi di gravità media e alta e la maggior parte degli avvisi di gravità bassa. Questo livello di impostazione può comportare un numero maggiore di falsi positivi.
 
 ## <a name="create-a-new-policy"></a>Creare un nuovo criterio
 

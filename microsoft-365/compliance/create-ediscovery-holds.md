@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile creare un'esenzione associata a un caso di eDiscovery di base per conservare il contenuto che potrebbe essere pertinente per un'indagine.
-ms.openlocfilehash: 8993a3e88ab7513713086499a316c92fdb7509cb
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 4ec9ff37a49f783afc25835ca91208608ab4733a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477196"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498329"
 ---
 # <a name="create-an-ediscovery-hold"></a>Creare un blocco di eDiscovery
 
@@ -32,12 +32,9 @@ Dopo aver creato un blocco eDiscovery, potrebbero essere necessarie fino a 24 or
 
 Quando si crea un'esenzione, sono disponibili le opzioni seguenti per l'ambito del contenuto conservato nei percorsi di contenuto specificati:
   
-- È possibile creare un'esenzione infinita in cui tutto il contenuto viene messo in attesa. In alternativa, è possibile creare un blocco basato su query in cui viene memorizzato solo il contenuto che corrisponde a una query di ricerca.
+- È possibile creare un'esenzione infinita in cui tutto il contenuto nei percorsi specificati è messo in attesa. In alternativa, è possibile creare un blocco basato su query in cui viene memorizzato solo il contenuto nei percorsi specificati che corrispondono a una query di ricerca.
 
-- È possibile specificare un intervallo di date che consenta di conservare solo il contenuto che è stato inviato, ricevuto o creato all'interno di tale intervallo di date. In alternativa, è possibile conservare tutto il contenuto indipendentemente dal momento in cui è stato inviato, ricevuto o creato.
-
-> [!NOTE]
-> È possibile disporre di un massimo di 10.000 eDiscovery in tutti i casi di eDiscovery di base nell'organizzazione.
+- È possibile specificare un intervallo di date che consenta di conservare solo il contenuto che è stato inviato, ricevuto o creato all'interno di tale intervallo di date. In alternativa, è possibile conservare tutto il contenuto in percorsi specificati indipendentemente dal momento in cui è stato inviato, ricevuto o creato.
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Come creare un'esenzione di eDiscovery
 
@@ -64,6 +61,9 @@ Per creare un blocco di eDiscovery associato a un caso di eDiscovery di base:
    b. **Posizioni del sito** -fare clic su **Scegli siti** , quindi fare di nuovo clic su **Choose sites** per specificare gli account di SharePoint e OneDrive da inserire in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Microsoft Team, Office 365 o un gruppo di Yammer. Fare clic su **Scegli**e quindi su **fine**.
   
    c. **Cartelle pubbliche di Exchange.** Spostare il controllo Toggle toggle switch nella ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) posizione **All** per inserire in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Non è possibile scegliere cartelle pubbliche specifiche da mantenere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
+
+   > [!NOTE]
+   > È necessario aggiungere almeno un percorso di contenuto all'esenzione. In caso contrario, l'eDiscovery Hold statics mostrerà che non sono presenti elementi in attesa.
 
 8. Dopo aver aggiunto i percorsi di contenuto all'esenzione, fare clic su **Avanti**.
 

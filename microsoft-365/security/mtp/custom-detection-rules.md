@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1a84c568d1411cf21c23e59cabad955c40c18ac6
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034865"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498364"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creare e gestire le regole per i rilevamenti personalizzati
 
 **Si applica a:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le regole di rilevamento personalizzate create con le query di [ricerca avanzata](advanced-hunting-overview.md) consentono di monitorare in modo proattivo vari eventi e Stati del sistema, tra cui l'attività di violazione sospetta e gli endpoint non configurati correttamente. È possibile impostare gli avvisi e le azioni di risposta ogni volta che si verificano delle corrispondenze.
 
@@ -43,8 +41,8 @@ Per gestire i rilevamenti personalizzati, è necessario essere assegnati a uno d
 
 Per gestire le autorizzazioni necessarie, un **amministratore globale** può eseguire le operazioni seguenti:
 
-- Assegnare l' **amministratore della sicurezza** o il ruolo di **operatore di sicurezza** nell'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com/) in **roles** > **Security admin**.
-- Controllare le impostazioni di RBAC per Microsoft Defender ATP in [Microsoft Defender Security Center](https://securitycenter.windows.com/) in **Settings** > **Permissions** > **roles**. Selezionare il ruolo corrispondente per assegnare l'autorizzazione **Gestisci impostazioni di sicurezza** .
+- Assegnare l' **amministratore della sicurezza** o il ruolo di **operatore di sicurezza** nell'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com/) in **roles**  >  **Security admin**.
+- Controllare le impostazioni di RBAC per Microsoft Defender ATP in [Microsoft Defender Security Center](https://securitycenter.windows.com/) in **Settings**  >  **Permissions**  >  **roles**. Selezionare il ruolo corrispondente per assegnare l'autorizzazione **Gestisci impostazioni di sicurezza** .
 
 > [!NOTE]
 > Per gestire i rilevamenti personalizzati, **gli operatori di sicurezza** avranno bisogno dell'autorizzazione **Gestisci impostazioni di sicurezza** in Microsoft Defender ATP se RBAC è attivato.
@@ -66,24 +64,25 @@ Per creare una regola di rilevamento personalizzata, è necessario che la query 
     - `SenderFromAddress`(mittente busta o indirizzo del percorso restituito)
     - `SenderMailFromAddress`(indirizzo mittente visualizzato dal client di posta elettronica)
     - `RecipientObjectId`
+    - `AccountObjectId`
     - `AccountSid`
+    - `AccountUpn`
     - `InitiatingProcessAccountSid`
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
 >[!NOTE]
 >Il supporto per altre entità verrà aggiunto quando vengono aggiunte nuove tabelle allo [schema di caccia avanzato](advanced-hunting-schema-tables.md).
 
-Query semplici, ad esempio quelle che non utilizzano l' `project` operatore `summarize` or per personalizzare o aggregare i risultati, generalmente restituiscono queste colonne comuni.
+Query semplici, ad esempio quelle che non utilizzano l' `project` `summarize` operatore OR per personalizzare o aggregare i risultati, generalmente restituiscono queste colonne comuni.
 
-Sono disponibili vari modi per garantire che le query più complesse restituiscano queste colonne. Ad esempio, se si preferisce aggregare e contare per entità in una colonna come `DeviceId`, è comunque possibile restituire `Timestamp` ottenendolo dall'evento più recente che coinvolge ogni Unique. `DeviceId`
+Sono disponibili vari modi per garantire che le query più complesse restituiscano queste colonne. Ad esempio, se si preferisce aggregare e contare per entità in una colonna come `DeviceId` , è comunque possibile restituire `Timestamp` ottenendolo dall'evento più recente che coinvolge ogni Unique `DeviceId` .
 
-La query di esempio seguente conta il numero di computer univoci (`DeviceId`) con rilevamenti antivirus e utilizza questo conteggio per trovare solo i computer con più di cinque rilevamenti. Per restituire la versione `Timestamp`più recente, viene `summarize` utilizzato l'operatore `arg_max` con la funzione.
+La query di esempio seguente conta il numero di dispositivi univoci ( `DeviceId` ) con rilevamenti antivirus e utilizza questo conteggio per trovare solo i dispositivi con più di cinque rilevamenti. Per restituire la versione più recente `Timestamp` , viene utilizzato l' `summarize` operatore con la `arg_max` funzione.
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(7d)
 | where ActionType == "AntivirusDetection"
-| summarize Timestamp = max(Timestamp), count() by DeviceId
+| summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. creare una nuova regola e fornire informazioni dettagliate sugli avvisi.
@@ -95,7 +94,7 @@ Con la query nell'editor di query, selezionare **Crea regola di rilevamento** e 
 - **Titolo avviso** -titolo visualizzato con gli avvisi attivati dalla regola
 - **Severity** -potenziale rischio del componente o dell'attività identificata dalla regola
 - **Categoria** -componente di minaccia o attività identificata dalla regola
-- **Mitre att&le tecniche CK** -una o più tecniche di attacco identificate dalla regola come documentate nel [&CK Framework di Mitra](https://attack.mitre.org/)
+- **Mitre att&tecniche CK** : una o più tecniche di attacco identificate dalla regola come documentate nel [Framework di Mitre att&CK](https://attack.mitre.org/). Questa sezione non si applica ed è nascosta per alcune categorie di avviso, tra cui malware, ransomware, attività sospette e software indesiderato
 - **Descrizione** : altre informazioni sul componente o l'attività identificata dalla regola 
 - **Azioni consigliate** : azioni aggiuntive che i risponditori potrebbero prendere in risposta a un avviso
 
@@ -110,22 +109,26 @@ Quando viene salvata, viene eseguita immediatamente una regola di rilevamento pe
 Selezionare la frequenza corrispondente alla misura in cui si desidera monitorare i rilevamenti e valutare la capacità dell'organizzazione di rispondere agli avvisi.
 
 ### <a name="3-choose-the-impacted-entities"></a>3. scegliere le entità interessate.
-Identificare le colonne nei risultati della query in cui si prevede di trovare l'entità interessata o con l'impatto principale. Ad esempio, una query potrebbe restituire gli indirizzi`SenderFromAddress` mittente `SenderMailFromAddress`(o) e`RecipientEmailAddress`destinatario (). Identificare quali di queste colonne rappresentano la principale entità interessata aiuta gli avvisi rilevanti di aggregazione del servizio, la correlazione degli incidenti e le azioni di risposta di destinazione.
+Identificare le colonne nei risultati della query in cui si prevede di trovare l'entità interessata o con l'impatto principale. Ad esempio, una query potrebbe restituire `SenderFromAddress` gli indirizzi mittente (o `SenderMailFromAddress` ) e destinatario ( `RecipientEmailAddress` ). Identificare quali di queste colonne rappresentano la principale entità interessata aiuta gli avvisi rilevanti di aggregazione del servizio, la correlazione degli incidenti e le azioni di risposta di destinazione.
 
 È possibile selezionare una sola colonna per ogni tipo di entità (cassetta postale, utente o dispositivo). Le colonne non restituite dalla query non possono essere selezionate.
 
-### <a name="4-specify-actions-on-files-or-machines"></a>4. specificare le azioni su file o computer.
-La regola di rilevamento personalizzata può eseguire automaticamente azioni su file o computer restituiti dalla query.
+### <a name="4-specify-actions"></a>4. specificare le azioni.
+La regola di rilevamento personalizzata può eseguire automaticamente azioni su dispositivi, file o utenti restituiti dalla query.
 
-#### <a name="actions-on-machines"></a>Azioni sui computer
-Queste azioni vengono applicate ai computer nella `DeviceId` colonna dei risultati della query:
-- **Isolate Machine** : utilizza Microsoft Defender ATP per applicare l'isolamento completo della rete, impedendo al computer di connettersi a qualsiasi applicazione o servizio. [Altre informazioni sull'isolamento del computer ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **Raccolta del pacchetto di analisi** : raccoglie le informazioni sul computer in un file zip. [Per ulteriori informazioni, vedere il pacchetto di analisi ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
-- **Run Antivirus Scan** : esegue un'analisi completa di Windows Defender antivirus sul computer
-- **Avviare un'indagine** : avvia un' [indagine automatizzata](mtp-autoir.md) sul computer
+#### <a name="actions-on-devices"></a>Azioni sui dispositivi
+Queste azioni vengono applicate ai dispositivi nella `DeviceId` colonna dei risultati della query:
+- **Isolate Device** -utilizza Microsoft Defender ATP per applicare l'isolamento completo della rete, impedendo al dispositivo di connettersi a qualsiasi applicazione o servizio. [Altre informazioni sull'isolamento del computer ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
+- **Raccolta del pacchetto di analisi** : raccoglie le informazioni sui dispositivi in un file zip. [Per ulteriori informazioni, vedere il pacchetto di analisi ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
+- **Run Antivirus Scan** : esegue un'analisi completa di Windows Defender antivirus sul dispositivo
+- **Avviare un'analisi** : consente di avviare un' [analisi automatizzata](mtp-autoir.md) sul dispositivo
+- **Limitazione dell'esecuzione delle app** : consente di impostare restrizioni sul dispositivo per consentire l'esecuzione di solo i file firmati con un certificato rilasciato da Microsoft. [Per ulteriori informazioni sulle restrizioni delle app con Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>Azioni sui file
-Se si seleziona questa opzione, l'azione **file di quarantena** viene eseguita `SHA1`sui `InitiatingProcessSHA1`file `SHA256`nella colonna `InitiatingProcessSHA256` ,, o dei risultati della query. Questa azione consente di eliminare il file dal percorso corrente e di collocarne una copia in quarantena.
+Se si seleziona questa opzione, è possibile scegliere di applicare l'azione **file di quarantena** sui file nella `SHA1` colonna,, `InitiatingProcessSHA1` `SHA256` o `InitiatingProcessSHA256` dei risultati della query. Questa azione consente di eliminare il file dal percorso corrente e di collocarne una copia in quarantena.
+
+#### <a name="actions-on-users"></a>Azioni sugli utenti
+Se si seleziona questa opzione, l' **utente Contrassegno come azione compromessa** viene utilizzato per gli utenti nella `AccountObjectId` `InitiatingProcessAccountObjectId` colonna, o `RecipientObjectId` dei risultati della query. Questa azione imposta il livello di rischio degli utenti su "High" in Azure Active Directory, attivando i [criteri di protezione dell'identità](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)corrispondenti.
 
 > [!NOTE]
 > L'azione Consenti o blocca per le regole di rilevamento personalizzate non è attualmente supportata su Microsoft Threat Protection.
@@ -148,7 +151,7 @@ Dopo aver esaminato la regola, fare clic su **Crea** per salvarla. Viene eseguit
 
 ### <a name="view-existing-rules"></a>Visualizzazione delle regole esistenti
 
-Per visualizzare tutte le regole di rilevamento personalizzate esistenti, **passare a ricerca** > di**rilevamenti personalizzati**. Nella pagina sono elencate tutte le regole con le seguenti informazioni di esecuzione:
+Per visualizzare tutte le regole di rilevamento personalizzate esistenti, **passare a ricerca**di  >  **rilevamenti personalizzati**. Nella pagina sono elencate tutte le regole con le seguenti informazioni di esecuzione:
 
 - **Ultima esecuzione** : quando è stata eseguita l'ultima esecuzione di una regola per verificare la corrispondenza di query e generare avvisi
 - **Stato ultima esecuzione** -se una regola ha avuto esito positivo
@@ -157,7 +160,7 @@ Per visualizzare tutte le regole di rilevamento personalizzate esistenti, **pass
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>Visualizzare i dettagli delle regole, modificare la regola e eseguire la regola
 
-Per visualizzare informazioni complete su una regola di rilevamento personalizzata, selezionare il nome della regola nell'elenco delle regole in **caccia** > ai**rilevamenti personalizzati**. In questo articolo viene aperta una pagina sulla regola di rilevamento personalizzata con informazioni generali sulla regola, inclusi i dettagli dell'avviso, lo stato di esecuzione e l'ambito. Fornisce inoltre l'elenco degli avvisi attivati e delle azioni attivate.
+Per visualizzare informazioni complete su una regola di rilevamento personalizzata, selezionare il nome della regola nell'elenco delle regole in **caccia**ai  >  **rilevamenti personalizzati**. In questo articolo viene aperta una pagina sulla regola di rilevamento personalizzata con informazioni generali sulla regola, inclusi i dettagli dell'avviso, lo stato di esecuzione e l'ambito. Fornisce inoltre l'elenco degli avvisi attivati e delle azioni attivate.
 
 ![Pagina dei dettagli delle regole di rilevamento personalizzate](../../media/custom-detection-details.png)<br>
 *Dettagli sulle regole di rilevamento personalizzate*
@@ -167,19 +170,19 @@ Per visualizzare informazioni complete su una regola di rilevamento personalizza
 - **Esegui** -eseguire immediatamente la regola. Questo reimposta anche l'intervallo per la successiva esecuzione.
 - **Modifica** : consente di modificare la regola senza modificare la query
 - **Modify query** -modificare la query in Advanced Hunting
-- **Attiva**disattivazione-Abilita la regola o Interrompi l'esecuzione**Turn off**  / 
+- **Attiva**  /  **Disattiva** : attiva la regola o Interrompi l'esecuzione
 - **Elimina (Delete** )-disattiva la regola e rimuovila
 
 ### <a name="view-and-manage-triggered-alerts"></a>Visualizzare e gestire gli avvisi attivati
 
-Nella schermata Dettagli regola (**caccia** > **ai rilevamenti** > personalizzati **[nome regola]**), andare a **avvisi attivati** per visualizzare l'elenco degli avvisi generati dalle corrispondenze alla regola. Selezionare un avviso per visualizzare informazioni dettagliate sull'avviso e intraprendere le azioni seguenti per l'avviso:
+Nella schermata Dettagli regola (**caccia**ai  >  **rilevamenti personalizzati**  >  **[nome regola]**), andare a **avvisi attivati** per visualizzare l'elenco degli avvisi generati dalle corrispondenze alla regola. Selezionare un avviso per visualizzare informazioni dettagliate sull'avviso e intraprendere le azioni seguenti per l'avviso:
 
 - Gestire l'avviso impostando lo stato e la classificazione (avviso vero o falso)
 - Collegare l'avviso a un evento imprevisto
 - Eseguire la query che ha attivato l'avviso per la ricerca avanzata
 
 ### <a name="review-actions"></a>Esaminare le azioni
-Nella schermata Dettagli regola (**caccia** > **ai rilevamenti** > personalizzati **[nome regola]**), andare a **azioni attivate** per visualizzare l'elenco delle azioni intraprese in base alle corrispondenze alla regola.
+Nella schermata Dettagli regola (**caccia**ai  >  **rilevamenti personalizzati**  >  **[nome regola]**), andare a **azioni attivate** per visualizzare l'elenco delle azioni intraprese in base alle corrispondenze alla regola.
 
 >[!TIP]
 >Per visualizzare rapidamente le informazioni e intervenire su un elemento di una tabella, utilizzare la colonna di selezione [&#10003;] a sinistra della tabella.
