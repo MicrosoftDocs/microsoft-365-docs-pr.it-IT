@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa specifiche condizioni.
-ms.openlocfilehash: b91b4be724c3d664cdd237fc01596372a2a6bdcc
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412815"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432337"
 ---
 # <a name="learn-about-retention-policies"></a>Informazioni sui criteri di conservazione
 
@@ -178,8 +178,12 @@ Tutti i criteri già configurati sono disponibili nella pagina **Criteri** nel [
 
 ## <a name="related-information"></a>Informazioni correlate
 
-- [Creare e configurare criteri di conservazione](create-retention-policies.md)
 - [Informazioni sulle etichette di conservazione](labels.md)
 - [Limiti di SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limiti e specifiche per Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Se si è pronti per creare criteri di conservazione, vedere [Creare e configurare criteri di conservazione](create-retention-policies.md).
+

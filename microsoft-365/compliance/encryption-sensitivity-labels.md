@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
+description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551223196e5870034cf7c3f69145a7b622932a99
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166037"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470673"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -38,7 +38,7 @@ Quando un documento o un messaggio di posta elettronica è crittografato, l'acce
 
 - Può essere decrittografato solo dagli utenti autorizzati in base alle impostazioni di crittografia dell'etichetta.
 - Il contenuto rimane crittografato indipendentemente da dove risiede il file, all'interno o all'esterno dell'organizzazione, anche nel caso in cui il file venisse rinominato.
-- Il contenuto resta crittografato sia se il file è archiviato (ad esempio, in un account OneDrive) sia se è in transito (ad esempio, un messaggio di posta elettronica inviato).
+- Il contenuto resta crittografato sia se il file è archiviato (ad esempio, in un account OneDrive) sia se è in transito (ad esempio, un messaggio di posta elettronica che viaggia in Internet).
 
 Infine, quando si configura la crittografia nelle etichette di riservatezza come amministratore, è possibile scegliere di:
 
@@ -359,7 +359,7 @@ Usare questa configurazione solo se non è necessario limitare l'accesso al docu
 
 La crittografia dei documenti e dei messaggi di posta elettronica più sensibili aiuta a garantire che solo gli utenti autorizzati possano accedere a tali dati. Esistono tuttavia alcune considerazioni da tenere presente:
 
-- Se l'organizzazione non ha [abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](sensitivity-labels-sharepoint-onedrive-files.md):
+- Se l'organizzazione non ha [abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     
     - L'opzione di ricerca, eDiscovery e Delve non funzioneranno con i file crittografati. 
     - I criteri di prevenzione della perdita dei dati funzionano per i metadati dei file crittografati, incluse le informazioni sulle etichette di conservazione, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411043"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432243"
 ---
 # <a name="learn-about-retention-labels"></a>Informazioni sulle etichette di conservazione
 
@@ -362,4 +362,6 @@ Per conservare o eliminare il contenuto o gestire i record in Microsoft 365 esis
     
 - [Criteri di gestione delle informazioni ](intro-to-info-mgmt-policies.md) (solo eliminazione) 
     
+## <a name="next-steps"></a>Passaggi successivi
 
+Se si è pronti per creare e pubblicare etichette di conservazione, vedere [Creare, pubblicare e applicare automaticamente etichette di conservazione](create-retention-labels.md).
