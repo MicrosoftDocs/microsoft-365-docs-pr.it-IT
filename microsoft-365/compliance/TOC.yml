@@ -281,9 +281,9 @@
           href: retention-policies-teams.md
         - name: Conservazione per Exchange
           href: retention-policies-exchange.md
-        - name: Gestione del piano di archiviazione
+        - name: Piano di archiviazione
           href: file-plan-manager.md
-        - name: Informazioni sui tag di conservazione
+        - name: Informazioni sulle etichette di conservazione
           href: labels.md
         - name: 'Creare, pubblicare e applicare automaticamente etichette di conservazione'
           href: create-retention-labels.md
@@ -333,9 +333,9 @@
           href: records.md
         - name: Piano di archiviazione
           items:
-            - name: Gestione del piano di archiviazione
+            - name: Gestire le etichette di conservazione
               href: file-plan-manager.md
-            - name: Informazioni sui tag di conservazione
+            - name: Informazioni sulle etichette di conservazione
               href: labels.md
             - name: Creare e pubblicare le etichette di conservazione
               href: create-retention-labels.md
