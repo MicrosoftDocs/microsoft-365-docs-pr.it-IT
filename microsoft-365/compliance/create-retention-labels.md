@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Istruzioni per creare, pubblicare e applicare automaticamente etichette di conservazione per conservare il contenuto necessario, eliminare quello che non è necessario e dichiarare un elemento come record nell'ambiente di Office 365.
-ms.openlocfilehash: 4a9343ddfe07bbc4bf535759a39268915fd83ca1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: a3ba321c9eae91bf701646a45271d3edcbc8dccc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352243"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545958"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>Creare, pubblicare e applicare automaticamente etichette di conservazione
 
@@ -56,13 +56,13 @@ Queste autorizzazioni sono necessarie solo per creare e applicare etichette di c
 
 2. Seguire le istruzioni della procedura guidata. Se si usa la gestione dei record:
     
-    - Per informazioni sui descrittori del piano di archiviazione, vedere [Panoramica della gestione del piano di archiviazione](file-plan-manager.md)
+    - Per informazioni sui descrittori del piano di archiviazione, vedere [Usare il piano di archiviazione per gestire le etichette di conservazione](file-plan-manager.md).
     
     - Per usare l'etichetta di conservazione per dichiarare il contenuto come record, attivare la casella di controllo **Usa l'etichetta per classificare il contenuto come "Record"**.
 
 3. Ripetere questi passaggi per creare altre etichette.
 
-Per modificare un'etichetta esistente, selezionarla e quindi scegliere **Modifica etichetta**. Verrà avviata la stessa procedura guidata, che consente di modificare le descrizioni e le impostazioni delle etichette nel passaggio 2.
+Per modificare un'etichetta esistente, selezionarla e quindi selezionare **Modifica etichetta** per avviare la stessa procedura guidata che consente di modificare le descrizioni dell'etichetta e le [impostazioni idonee](#updating-retention-labels-and-their-policies) dal passaggio 2. In alternativa, selezionare una delle opzioni **Modifica** disponibili per passare direttamente alla pagina pertinente per eseguire l'aggiornamento.
 
 ## <a name="publish-retention-labels-by-creating-a-retention-label-policy"></a>Pubblicare etichette di conservazione creando un criterio di etichetta di conservazione
 
@@ -80,7 +80,9 @@ Pubblicare le etichette di conservazione in modo che possano essere applicate ma
 
 2. Seguire le istruzioni della procedura guidata.
     
-    Per informazioni sulla configurazione delle posizioni, vedere la sezione [Etichette di conservazione e posizioni](#retention-labels-and-locations) in questa pagina. 
+    Per informazioni sulle posizioni supportate dalle etichette di conservazione, vedere la sezione [Etichette di conservazione e posizioni](labels.md#retention-label-policies-and-locations). 
+
+Per modificare un criterio di etichetta di conservazione esistente, selezionarlo e quindi selezionare **Modifica criteri** per avviare la stessa procedura guidata che consente di modificare la descrizione del criterio e le [impostazioni idonee](#updating-retention-labels-and-their-policies) dal passaggio 2. In alternativa, selezionare una delle opzioni **Modifica** disponibili per passare direttamente alla pagina pertinente per eseguire l'aggiornamento.
 
 ## <a name="auto-apply-a-retention-label"></a>Applicare automaticamente un'etichetta di conservazione
 
@@ -100,21 +102,9 @@ Applicare automaticamente un'etichetta di conservazione in base alle condizioni 
     
     Per informazioni su come configurare le condizioni per l'applicazione automatica dell'etichetta di conservazione, vedere la sezione [Configurare le condizioni per l'applicazione automatica delle etichette di conservazione](#configuring-conditions-for-auto-apply-retention-labels) in questa pagina.
     
-    Per informazioni sulla configurazione delle posizioni, vedere la prossima sezione in questa pagina, [Etichette di conservazione e posizioni](#retention-labels-and-locations).
+    Per informazioni sulle posizioni supportate dalle etichette di conservazione, vedere la sezione [Etichette di conservazione e posizioni](labels.md#retention-label-policies-and-locations).
 
-## <a name="retention-labels-and-locations"></a>Etichette di conservazione e posizioni
-
-È possibile pubblicare tipi di etichette di conservazione differenti in posizioni diverse, a seconda dell'azione eseguita dall'etichetta di conservazione.
-  
-|**Se l'etichetta di conservazione è...**|**Il criterio di etichetta può essere applicato a…**|
-|:-----|:-----|
-|Pubblicata agli utenti finali  <br/> |Exchange, SharePoint, OneDrive, gruppi di Office 365  <br/> |
-|Applicata automaticamente in base ai tipi di informazioni riservate  <br/> |Exchange (solo a tutte le cassette postali), SharePoint, OneDrive  <br/> |
-|Applicata automaticamente in base a una query  <br/> |Exchange, SharePoint, OneDrive, gruppi di Office 365  <br/> |
-   
-Le etichette di conservazione applicate automaticamente in Exchange (sia per le query che per i tipi di informazioni riservate) vengono applicate solo ai messaggi appena inviati (dati in transito), non a tutti gli elementi attualmente nella cassetta postale (dati archiviati). Inoltre, le etichette di conservazione applicate automaticamente per i tipi di informazioni riservate possono essere applicate solo a tutte le cassette postali, non a cassette postali specifiche.
-  
-Le cartelle pubbliche di Exchange e Skype non supportano le etichette di conservazione.
+Per modificare un criterio di etichetta applicata automaticamente, selezionarlo e quindi selezionare **Modifica criteri** per avviare la stessa procedura guidata che consente di modificare la descrizione del criterio e le [impostazioni idonee](#updating-retention-labels-and-their-policies) dal passaggio 2. In alternativa, selezionare una delle opzioni **Modifica** disponibili per passare direttamente alla pagina pertinente per eseguire l'aggiornamento.
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configurare le condizioni per l'applicazione automatica delle etichette di conservazione
@@ -206,7 +196,7 @@ In caso di applicazione automatica di etichette di conservazione ai contenuti ch
   
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Come verificare lo stato delle etichette di conservazione pubblicate in Exchange
 
-In Exchange Online le etichette di conservazione vengono rese disponibili agli utenti finali mediante un processo eseguito ogni sette giorni. Usando Powershell è possibile vedere quando è stato eseguito per l'ultima volta questo processo e quindi stabilire quando verrà eseguito nuovamente.
+In Exchange Online le etichette di conservazione vengono rese disponibili agli utenti finali mediante un processo eseguito ogni sette giorni. Usando Powershell è possibile vedere quando è stato eseguito per l'ultima volta questo processo e quindi identificare quando verrà eseguito nuovamente.
   
 1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773).
     
@@ -231,7 +221,11 @@ Se le etichette non compaiono in Outlook sul web e si ritiene che invece debbano
 
 ## <a name="updating-retention-labels-and-their-policies"></a>Aggiornare le etichette di conservazione e i criteri
 
-Se si modifica un'etichetta di conservazione, un criterio di etichetta di conservazione o un criterio di applicazione automatica e l'etichetta di conservazione è già applicata al contenuto, le impostazioni aggiornate verranno applicate automaticamente a tale contenuto oltre che a quello a cui verranno applicate etichette per la prima volta.
+Quando si modifica un'etichetta di conservazione, un criterio di etichetta di conservazione o un criterio di applicazione automatica e l'etichetta di conservazione o il criterio è già applicato al contenuto, le impostazioni aggiornate verranno applicate automaticamente a tale contenuto oltre che a quello identificato per la prima volta.
+
+Alcune impostazioni non possono essere modificate dopo aver creato e salvato l'etichetta o i criteri, tra cui:
+- Le impostazioni di conservazione tranne il periodo di conservazione, a meno che l'etichetta non sia stata configurata per conservare o eliminare il contenuto in base alla data di creazione.
+- L'opzione per classificare come record.
 
 ## <a name="find-the-powershell-cmdlets-for-retention-labels"></a>Trovare i cmdlet di PowerShell per le etichette di conservazione
 
