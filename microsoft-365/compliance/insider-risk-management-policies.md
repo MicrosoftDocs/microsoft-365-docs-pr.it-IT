@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 827cffde0ff719d133830e10e958f04fe70fc9d6
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515881"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534928"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -67,7 +67,7 @@ Quando si creano o si modificano i criteri DLP per l'utilizzo con i criteri di g
      >[!NOTE]
      >Quando si crea un nuovo criterio DLP utilizzando i modelli incorporati, è necessario selezionare l'opzione **Crea o Personalizza Advanced DLP Rules** per configurare l'impostazione dei **rapporti sugli incidenti** per il livello di gravità *elevato* .
 
-Ogni criterio di gestione dei rischi Insider creato dal modello per le **perdite di dati** può essere assegnato solo a un criterio DLP. Se si dispone di più di un criterio DLP che si desidera utilizzare per gli avvisi di gravità elevata elaborati da un criterio di gestione dei rischi Insider, è necessario creare un criterio di gestione dei rischi Insider separato per ogni criterio DLP.
+Ogni criterio di gestione dei rischi Insider creato dal modello per le **perdite di dati** può essere assegnato solo a un criterio DLP. Valutare la possibilità di creare un criterio DLP dedicato che combini le diverse attività che si desidera rilevare e fungere da indicatori di attivazione per i criteri di rischio Insider che utilizzano il modello di **perdita di dati** .
 
 Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) .
 

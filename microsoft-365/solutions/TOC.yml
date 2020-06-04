@@ -12,8 +12,9 @@
     - name: Panoramica
       href: foundation-solutions-overview.md
     - name: Aumentare la produttività dei lavoratori remoti con Microsoft 365
-      href: empower-people-to-work-remotely.md
       items:
+        - name: Panoramica
+          href: empower-people-to-work-remotely.md
         - name: Passaggio 1. Aumentare la sicurezza per l'accesso
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: Passaggio 2. Fornire accesso remoto

@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili e preferite per bloccare i messaggi in ingresso in Exchange Online Protection (EOP).
-ms.openlocfilehash: d9db3d4ac123998e6ab4f108199b3aee852f95d6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2862fa4a33a31eac9c61f94aa929133d2dc69fc8
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209548"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545901"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Creare elenchi di mittenti bloccati in EOP
 
@@ -38,6 +38,18 @@ Il metodo migliore per bloccare i mittenti varia in base all'ambito di impatto. 
 > Anche se è possibile utilizzare le impostazioni di blocco a livello dell'organizzazione per risolvere i falsi negativi (posta indesiderata), è necessario inviare tali messaggi a Microsoft per l'analisi. La gestione dei falsi negativi tramite gli elenchi bloccati aumenta significativamente il sovraccarico amministrativo. Se si utilizzano gli elenchi bloccati per deflettere la posta indesiderata, è necessario mantenere l'argomento [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md) in pronto.
 
 Al contrario, sono inoltre disponibili diverse opzioni per consentire sempre la posta elettronica da origini specifiche utilizzando _elenchi di mittenti attendibili_. Per altre informazioni, vedere [Creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md).
+
+## <a name="email-message-basics"></a>Nozioni fondamentali sui messaggi di posta elettronica
+
+Un messaggio di posta elettronica SMTP standard è costituito da una *busta del messaggio* e dal contenuto del messaggio. La busta del messaggio contiene le informazioni necessarie per la trasmissione e il recapito del messaggio tra i server SMTP. Il contenuto del messaggio include i campi di intestazione del messaggio (denominati collettivamente *intestazione del messaggio*) e il corpo del messaggio. La busta del messaggio è descritta in RFC 5321 e l'intestazione del messaggio è descritta in RFC 5322. I destinatari non vedono mai la busta reale del messaggio perché viene generata dal processo di trasmissione del messaggio e non è in realtà parte del messaggio.
+
+- L'indirizzo `5321.MailFrom` (noto anche come indirizzo di **posta elettronica** , mittente P1 o mittente busta) è l'indirizzo di posta elettronica utilizzato per la trasmissione SMTP del messaggio. Questo indirizzo di posta elettronica viene in genere registrato nel campo di intestazione **Return-Path** nell'intestazione del messaggio (sebbene sia possibile che il mittente designi un indirizzo di posta elettronica diverso per il **percorso restituito** ). Se il messaggio non può essere recapitato, è il destinatario del rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo).
+
+- L'indirizzo di posta `5322.From` elettronica del mittente viene visualizzato nei client di posta elettronica (noto anche come indirizzo **da** o mittente P2) e è l'indirizzo di posta elettronica nel campo dell'intestazione **from** .
+
+Spesso, gli `5321.MailFrom` `5322.From` indirizzi e sono uguali (comunicazione da persona a persona). Tuttavia, quando viene inviato un messaggio di posta elettronica per conto di qualcun altro, gli indirizzi possono essere diversi.
+
+Gli elenchi di mittenti bloccati e gli elenchi di domini bloccati nei criteri di protezione da posta indesiderata in EOP ispezionano sia gli `5321.MailFrom` indirizzi che quelli `5322.From` . I mittenti bloccati di Outlook usano solo l' `5322.From` indirizzo.
 
 ## <a name="use-outlook-blocked-senders"></a>Utilizzo di mittenti bloccati di Outlook
 

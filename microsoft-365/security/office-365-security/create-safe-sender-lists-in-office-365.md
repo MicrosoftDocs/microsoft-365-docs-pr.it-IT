@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
-ms.openlocfilehash: 3ef05c919a86bc3458cceb2a2bc73522e16e4bb1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209536"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545947"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
 
@@ -39,7 +39,7 @@ Le regole del flusso di posta consentono la massima flessibilità per garantire 
 > [!IMPORTANT]
 > • Fare attenzione a monitorare attentamente *le* eccezioni che è possibile filtrare tramite posta indesiderata utilizzando elenchi di mittenti attendibili. <br/><br/> • Anche se è possibile utilizzare elenchi di mittenti attendibili per ottenere falsi positivi (un buon messaggio di posta elettronica contrassegnato come posta indesiderata), è consigliabile considerare l'utilizzo di elenchi di mittenti attendibili come soluzione temporanea che dovrebbe essere evitata se possibile. Non è consigliabile gestire falsi positivi utilizzando elenchi di mittenti attendibili, perché le eccezioni ai filtri per la posta indesiderata possono aprire l'organizzazione allo spoofing e ad altri attacchi. Se si insiste sull'utilizzo degli elenchi di mittenti attendibili per la gestione dei falsi positivi, è necessario essere vigili e mantenere l'argomento [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md) in pronto. <br/><br/> • Per consentire a un dominio di inviare messaggi di posta elettronica non autenticati (bypass anti-spoofing) ma non di ignorare i controlli di protezione dalla posta indesiderata e antimalware, è possibile aggiungerlo all' [elenco dei mittenti attendibili di AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP e Outlook ispezionano le diverse proprietà dei messaggi per determinare il mittente del messaggio. Per ulteriori informazioni, vedere la sezione [considerazioni sulla posta elettronica in blocco](#considerations-for-bulk-email) più avanti in questo argomento.
 
-Al contrario, sono inoltre disponibili diverse opzioni per bloccare la posta elettronica da origini specifiche tramite _elenchi di mittenti bloccati_. Per ulteriori informazioni, vedere [creare elenchi di mittenti bloccati in EOP](create-block-sender-lists-in-office-365.md).
+Al contrario, sono inoltre disponibili diverse opzioni per bloccare la posta elettronica da origini specifiche tramite _elenchi di mittenti bloccati_. Per altre informazioni, vedere [Creare elenchi di mittenti bloccati in EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>Consigliato Utilizzare le regole del flusso di posta
 
@@ -66,13 +66,13 @@ Nell'esempio seguente si presuppone che sia necessario inviare posta elettronica
 
    - **Il mittente** \> **interno/esterno** \> **All'esterno dell'organizzazione**: questa condizione è implicita, ma è possibile utilizzarla per tenere conto dei server di posta elettronica locali che potrebbero non essere configurati correttamente.
 
-   - **L'oggetto o il corpo** \> l' **oggetto o il corpo include una o più delle seguenti parole** \> \<parole chiave \> : se è possibile limitare ulteriormente i messaggi tramite parole chiave o frasi nella riga dell'oggetto o nel corpo del messaggio, è possibile utilizzare tali parole come condizione.
+   - **L'oggetto o il corpo** \> l' **oggetto o il corpo include una o più delle seguenti parole** \> \<keywords\>: Se è possibile limitare ulteriormente i messaggi tramite parole chiave o frasi nella riga dell'oggetto o nel corpo del messaggio, è possibile utilizzare tali parole come condizione.
 
 4. **Azione**: configurare entrambe le azioni nella regola:
 
    a. **Modificare le proprietà** \> del messaggio **impostare il livello di probabilità di posta indesiderata (SCL)** \> **Ignorare il filtro posta indesiderata**.
 
-   b. Intestazione di un **messaggio** \> **include una o più delle seguenti parole** \> **Nome intestazione**: \< CustomHeaderName \> **intestazione valore**: \< CustomHeaderValue \> .
+   b. Intestazione di un **messaggio** \> **include una o più delle seguenti parole** \> **Nome intestazione**: \<CustomHeaderName\> **valore intestazione**: \<CustomHeaderValue\> .
 
       Ad esempio, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Se nella regola sono presenti più domini, è possibile personalizzare il testo dell'intestazione in base alle proprie esigenze.
 
@@ -103,7 +103,7 @@ Se non è possibile utilizzare le regole del flusso di posta come descritto in p
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Utilizzare elenchi di mittenti consentiti o elenchi di domini consentiti
 
-L'opzione meno desiderata consiste nell'utilizzare l'elenco dei mittenti consentiti o l'elenco dei domini consentiti nei criteri di protezione da posta indesiderata È consigliabile evitare questa opzione *se possibile* perché i mittenti ignorano tutti i messaggi di posta indesiderata, la protezione da spoofing e phishing e l'autenticazione del mittente (SPF, DKIM, DMARC). Questo metodo viene utilizzato in modo ottimale solo per i test temporanei. I passaggi dettagliati sono disponibili in [configurare i criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md) .
+L'opzione meno desiderata consiste nell'utilizzare l'elenco dei mittenti consentiti o l'elenco dei domini consentiti nei criteri di protezione da posta indesiderata È consigliabile evitare questa opzione *se possibile* perché i mittenti ignorano tutti i messaggi di posta indesiderata, la protezione da spoofing e phishing e l'autenticazione del mittente (SPF, DKIM, DMARC). È consigliabile usare questo metodo solo per test temporanei. I passaggi dettagliati sono disponibili in [configurare i criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md) .
 
 Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci; anche se, sarà possibile immettere 30 voci nel portale. Per aggiungere più di 30 voci, è necessario utilizzare PowerShell.
 
@@ -118,7 +118,7 @@ Un messaggio di posta elettronica SMTP standard è costituito da una *busta del 
 
 - L'indirizzo di posta `5322.From` elettronica del mittente viene visualizzato nei client di posta elettronica (noto anche come indirizzo **da** o mittente P2) e è l'indirizzo di posta elettronica nel campo dell'intestazione **from** .
 
-Spesso, gli `5321.MailFrom` `5322.From` indirizzi e sono uguali (comunicazione da persona a persona). Tuttavia, quando viene inviato un messaggio di posta elettronica per conto di qualcun altro, gli indirizzi sono spesso diversi. Questo accade solitamente più spesso per i messaggi di posta elettronica in blocco.
+Spesso, gli `5321.MailFrom` `5322.From` indirizzi e sono uguali (comunicazione da persona a persona). Tuttavia, quando viene inviato un messaggio di posta elettronica per conto di qualcun altro, gli indirizzi possono essere diversi. Questo accade più spesso per i messaggi di posta elettronica in blocco.
 
 Si supponga, ad esempio, che la compagnia aerea Blu laggiù abbia assunto Margie ' s Travel per inviare la propria pubblicità tramite posta elettronica. Il messaggio che viene visualizzato nella posta in arrivo ha le seguenti proprietà:
 
