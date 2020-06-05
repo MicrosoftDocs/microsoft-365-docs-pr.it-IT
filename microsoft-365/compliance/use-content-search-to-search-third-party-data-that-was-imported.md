@@ -16,18 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utilizzare lo strumento eDiscovery ricerca contenuto per cercare gli elementi importati nelle cassette postali in Microsoft 365 da un'origine dati di terze parti. È possibile creare una query per cercare tutti gli elementi importati o creare una query per la ricerca di tipi di dati specifici di terze parti. In questo articolo vengono elencati i valori che è possibile utilizzare in una query di parole chiave per eseguire la ricerca nei tipi di dati di terze parti che è possibile importare in Microsoft 365.
-ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: ab693ff8e2283e201b9d573e68f4bdfb9f859749
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942969"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564969"
 ---
-# <a name="use-content-search-to-search-third-party-imported-data"></a>Utilizzare la ricerca contenuto per cercare i dati importati di terze parti
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Utilizzare la ricerca contenuto per eseguire la ricerca di dati di terze parti importati da un connettore partner personalizzato
 
-È possibile utilizzare lo [strumento eDiscovery ricerca contenuto](content-search.md) nel centro sicurezza & Compliance per cercare gli elementi importati nelle cassette postali in Microsoft 365 da un'origine dati di terze parti. È possibile creare una query per eseguire una ricerca in tutti gli elementi di dati di terze parti importati oppure creare una query per la ricerca di elementi di dati di terze parti specifici. Inoltre, è anche possibile creare un criterio di conservazione basato su query o un blocco di eDiscovery basato su query per conservare i dati di terze parti. 
+È possibile utilizzare lo [strumento eDiscovery ricerca contenuto](content-search.md) nel centro sicurezza & Compliance per cercare gli elementi importati nelle cassette postali in Microsoft 365 da un'origine dati di terze parti. È possibile creare una query per eseguire una ricerca in tutti gli elementi di dati di terze parti importati oppure creare una query per la ricerca di elementi di dati di terze parti specifici. Inoltre, è anche possibile creare un criterio di conservazione basato su query o un blocco di eDiscovery basato su query per conservare i dati di terze parti.
   
-Per ulteriori informazioni sull'importazione di dati di terze parti e un elenco dei tipi di dati di terze parti che è possibile importare in Microsoft 365, vedere [collaborare con un partner per archiviare i dati di terze parti in Office 365](work-with-partner-to-archive-third-party-data.md). 
+Per ulteriori informazioni sull'utilizzo di un partner per l'importazione di dati di terze parti e un elenco dei tipi di dati di terze parti che è possibile importare in Microsoft 365, vedere [collaborare con un partner per archiviare i dati di terze parti in Office 365](work-with-partner-to-archive-third-party-data.md).
+
+> [!IMPORTANT]
+> Le indicazioni contenute in questo articolo si applicano solo ai dati di terze parti che sono stati importati da un connettore partner personalizzato. Questo articolo non si applica ai dati di terze parti che vengono importati utilizzando i [connettori di dati di terze parti](archiving-third-party-data.md#third-party-data-connectors) nel centro conformità Microsoft.
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Creazione di una query per la ricerca di tutti i dati di terze parti
 
@@ -55,9 +58,9 @@ Ad esempio, per cercare i dati di Facebook che contengono la parola "contoso" ne
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-Nella tabella seguente sono elencati i tipi di dati di terze parti di cui è possibile eseguire la ricerca e il `itemclass:` valore da utilizzare per la proprietà Message per cercare in modo specifico il tipo di dati di terze parti. La sintassi della query non è sensibile al caso. 
+Nella tabella seguente sono elencati i tipi di dati di terze parti di cui è possibile eseguire la ricerca e il valore da utilizzare per la `itemclass:` Proprietà Message per cercare in modo specifico il tipo di dati di terze parti. La sintassi della query non è distinzione tra maiuscole e minuscole. 
   
-|**Tipo di dati di terze parti**|**Valore della `itemclass:` proprietà**|
+|**Tipo di dati di terze parti**|**Valore della `itemclass:` Proprietà**|
 |:-----|:-----|
 |OBIETTIVO  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -81,7 +84,7 @@ Nella tabella seguente sono elencati i tipi di dati di terze parti di cui è pos
 |Posta Bloomberg  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Messaggistica Bloomberg  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
-|Server di &amp; presenza di messaggistica istantanea Cisco  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|Server di presenza di messaggistica istantanea Cisco &amp;  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud per Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
 |Connessione diretta  <br/> | `ipm.externaldata.DirectConnect*` <br/> |

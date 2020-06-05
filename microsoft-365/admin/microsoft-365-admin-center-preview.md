@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Informazioni sull'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 720130f01000e1f8845d2fa28dbc2d278a258ebf
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432208"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560424"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informazioni sull'interfaccia di amministrazione di Microsoft 365
 
@@ -54,8 +54,6 @@ Poiché le nuove funzionalità sono disponibili nell'interfaccia di amministrazi
 ### <a name="turn-on-targeted-release"></a>Attivazione della versione di destinazione
 
 1. Accedere a [admin.Microsoft.com](https://admin.microsoft.com), passare al riquadro di spostamento e selezionare **Impostazioni** \> **profilo organizzazione**.
-
-1. Accedere a [Portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813), passare al riquadro di spostamento e selezionare **Impostazioni** \> **profilo organizzazione**.
 
 2. Passare alla scheda **Preferenze di rilascio** e quindi selezionare **modifica**. 
     

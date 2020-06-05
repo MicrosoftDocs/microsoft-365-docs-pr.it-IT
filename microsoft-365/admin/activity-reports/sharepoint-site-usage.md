@@ -21,19 +21,20 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: "Ottenere il report sull'utilizzo del sito di SharePoint per conoscere il numero di file archiviati dagli utenti nei siti di SharePoint, il numero di utilizzi attivi e lo spazio di archiviazione totale utilizzato. "
-ms.openlocfilehash: 45614557710e05c600a3603d85462c4987022881
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a7fece8868ceb34cbcf356e23fd13006defa439
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387514"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560400"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo del sito di SharePoint
 
 In qualità di amministratore Microsoft 365, nel dashboard dei **report** viene illustrata la panoramica delle attività in vari prodotti dell'organizzazione. Consente di eseguire il drill-down per ottenere informazioni più dettagliate sulle attività specifiche di ogni prodotto. È possibile, ad esempio, ottenere una visualizzazione generale del valore ricavato da SharePoint in termini di numero totale di file archiviati dagli utenti nei siti di SharePoint, numero di file attivamente in uso e spazio di archiviazione utilizzato in tutti questi siti. È quindi possibile eseguire il drill-down del report sull'utilizzo dei siti di SharePoint per conoscere le tendenze e i dettagli a livello di sito. 
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.
+I rapporti Microsoft 365 nell'interfaccia di amministrazione non sono supportati per i tenant GCC High e DoD.
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Come ottenere il report sull'utilizzo del sito di SharePoint
 
