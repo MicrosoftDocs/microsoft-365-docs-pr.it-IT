@@ -11,17 +11,29 @@
         - name: Pianificare la configurazione
           href: setup/plan-your-setup.md
         - name: Configurare l'organizzazione con la configurazione guidata
-          href: setup/setup.md
+          items:
+            - name: Microsoft 365 Business Basic
+              href: setup/setup-business-basic.md
+            - name: Microsoft 365 Business Standard
+              href: setup/setup-business-standard.md
+            - name: Microsoft Business Premium
+              href: ../business/set-up.md
+            - name: Microsoft 365 Apps for business
+              href: setup/setup-apps-for-business.md
         - name: Esplorare la pagina di configurazione e la procedura guidata
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Eseguire la migrazione dei dati
           href: setup/migrate-email-and-contacts-admin.md
         - name: Installare app di Office
           href: setup/install-applications.md
+        - name: Configurare i dispositivi Windows
+          href: ../business/set-up-windows-devices.md
+        - name: Configurare i dispositivi mobili
+          href: ../business/set-up-mobile-devices.md
         - name: Implementare Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: Formazione sulle app per tutti gli utenti
-          href: 'https://support.office.com/en-us/office-training-center'
+          href: 'https://support.office.com/office-training-center'
         - name: Qual è l'abbonamento corrente?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Personalizzare una pagina di accesso
@@ -210,6 +222,8 @@
           href: manage/manage-messages.md
         - name: Configurare le opzioni di rilascio
           href: manage/release-options-in-office-365.md
+        - name: Mostrare o nascondere le nuove funzionalità
+          href: manage/show-hide-new-features.md
         - name: Analisi di utilizzo di Power BI
           items:
             - name: Informazioni sull'analisi di utilizzo
@@ -240,10 +254,42 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Abilitare l'autenticazione moderna per Office 2013
           href: security-and-compliance/enable-modern-authentication.md
+        - name: Proteggere Microsoft Business Premium
+          items:
+            - name: Prerequisiti per la protezione dei dati
+              href: ../business/pre-requisites-for-data-protection.md
+            - name: Funzionalità di sicurezza
+              href: ../business/security-features.md
+            - name: Protezione avanzata dalle minacce
+              href: ../business/increase-threat-protection.md
+            - name: Funzionalità di conformità della configurazione
+              href: ../business/set-up-compliance.md
         - name: Punteggio di sicurezza
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: Guida alla conformità al GDPR
           href: security-and-compliance/gdpr-compliance.md
+    - name: Gestire i dispositivi
+      items:
+        - name: Visualizzare e modificare criteri e dispositivi
+          href: ../business/view-policies-and-devices.md
+        - name: Rimuovere i dati aziendali
+          href: ../business/remove-company-data.md
+        - name: Ripristinare i dispositivi alle impostazioni di fabbrica
+          href: ../business/reset-devices-to-factory-settings.md
+        - name: Funzionalità di protezione mapping alle impostazioni di Intune
+          href: ../business/map-protection-features-to-intune-settings.md
+        - name: Impostazioni di protezione delle app per Android e iOS
+          href: ../business/app-protection-settings-for-android-and-ios.md
+          items:
+            - name: Convalidare le impostazioni su Android o iOS
+              href: ../business/validate-settings-on-android-or-ios.md
+        - name: Impostazioni di protezione dei dispositivi per i PC Windows 10
+          href: ../business/protection-settings-for-windows-10-pcs.md
+          items:
+            - name: Convalidare le impostazioni su PC Windows 10
+              href: ../business/validate-settings-on-windows-10-pcs.md
+        - name: Impostazioni di protezione delle app per PC Windows 10
+          href: ../business/protection-settings-for-windows-10-devices.md
     - name: Lavorare con i clienti
       href: work-with-customers/index.yml
       items:
