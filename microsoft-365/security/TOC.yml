@@ -172,6 +172,8 @@
                       href: mtp/advanced-hunting-emailattachmentinfo-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailPostDeliveryEvents
+                      href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
                       href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: IdentityInfo
@@ -180,6 +182,10 @@
                       href: mtp/advanced-hunting-identitylogonevents-table.md
                     - name: IdentityQueryEvents
                       href: mtp/advanced-hunting-identityqueryevents-table.md
+                - name: Funzioni
+                  items:
+                    - name: FileProfile()
+                      href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Applicare le procedure consigliate per le query
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Rilevamenti personalizzati
@@ -283,7 +289,7 @@
                   items:
                     - name: Configurare il filtro posta indesiderata in uscita
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
-                    - name: Pool di recapito ad alto rischio per i messaggi in uscita
+                    - name: Pool di recapito in uscita
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: Rimuovere utenti bloccati dal portale Utenti con restrizioni
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
