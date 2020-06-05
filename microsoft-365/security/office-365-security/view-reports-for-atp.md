@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro sicurezza e &amp; conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0d8a5c0231d1ac63573619470be3b786cae9c37a
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351874"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566729"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 
@@ -173,8 +173,4 @@ Se i dati non vengono visualizzati nei rapporti ATP, verificare che i criteri si
 
 [Report e informazioni dettagliate nel centro sicurezza e &amp; conformità](reports-and-insights-in-security-and-compliance.md)
   
-[Creare una pianificazione per un report nel centro sicurezza e &amp; conformità](create-a-schedule-for-a-report.md)
-
-[Configurare e scaricare un report personalizzato nel centro sicurezza e &amp; conformità](set-up-and-download-a-custom-report.md)
-
 [Autorizzazioni ruolo (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

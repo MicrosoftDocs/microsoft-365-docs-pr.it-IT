@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono sapere come funziona lo spoofing Intelligence Insight, compreso il modo in cui determinare rapidamente quali mittenti stanno inviando legalmente messaggi di posta elettronica non autenticati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208465"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566705"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procedura dettagliata: analisi di intelligence su spoofing di ATP in Microsoft 365
 
@@ -35,7 +35,7 @@ Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Com
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per accedere direttamente alla pagina del **dashboard di sicurezza** , utilizzare <https://protection.office.com/searchandinvestigation/dashboard> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina del **dashboard di sicurezza** , utilizzare <https://protection.office.com/searchandinvestigation/dashboard> .
 
   È possibile visualizzare l'Insight di intelligence di spoofing da più di un dashboard nel centro sicurezza & Compliance. Indipendentemente dal dashboard che si sta esaminando, l'Insight fornisce gli stessi dettagli e consente di eseguire rapidamente le stesse attività.
 
@@ -102,9 +102,3 @@ Ad esempio, se si aggiunge la seguente coppia di dominio all'elenco dei mittenti
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Protezione anti-spoofing in Microsoft 365](anti-spoofing-protection.md)
-
-[Procedura: da una dashboard alle informazioni dettagliate](from-a-dashboard-to-an-insight.md)
-
-[Procedura: da un report dettagliato alle informazioni dettagliate](from-a-detailed-report-to-an-insight.md)
-
-[Procedura: dalle informazioni dettagliate a un report dettagliato](from-an-insight-to-a-detailed-report.md)
