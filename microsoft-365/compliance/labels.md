@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: ab2e1baf553a386009d55e43efdf75b796cc1ffd
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432243"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545968"
 ---
 # <a name="learn-about-retention-labels"></a>Informazioni sulle etichette di conservazione
 
@@ -129,7 +129,9 @@ Inoltre, un'etichetta di conservazione ha due opzioni di conservazione che sono 
   
 - Attivare una revisione per l'eliminazione alla fine del periodo di conservazione, in modo che venga impostata una revisione obbligatoria dei documenti di SharePoint e OneDrive prima che vengano eliminati. Per altre informazioni, vedere [Revisioni per l'eliminazione](disposition.md#disposition-reviews).
     
-- Iniziare il periodo di conservazione dal momento in cui il contenuto è stato etichettato invece che in base all'età o alla data dell'ultima modifica. Questa opzione si applica solo al contenuto di siti di SharePoint e account di OneDrive. Per la posta elettronica di Exchange il periodo di conservazione è sempre basato sulla data di invio o ricezione del messaggio, indipendentemente dall'opzione scelta.
+- Iniziare il periodo di conservazione dal momento in cui il contenuto è stato etichettato invece che in base all'età o alla data dell'ultima modifica. Quando si utilizza questa opzione:
+    - questa opzione si applica solo al contenuto di siti di SharePoint e account di OneDrive. Per la posta elettronica di Exchange il periodo di conservazione è sempre basato sulla data di invio o ricezione del messaggio.
+    - Non è possibile cambiare il periodo di conservazione dopo aver salvato l'etichetta.
     
 ![Impostazioni di conservazione con opzioni specifiche per le etichette](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
 

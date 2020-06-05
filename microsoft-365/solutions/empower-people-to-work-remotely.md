@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/27/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configurare le funzionalità di sicurezza e l'infrastruttura di servizio necessarie per consentire ai lavoratori di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: ce287cdf5bcbd0283252b08c035dc954044a9c0e
-ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
+ms.openlocfilehash: 763c8e745eb54897c1df88ecb5a9064987ed5a13
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44534963"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560463"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
@@ -38,6 +38,16 @@ Il lavoro remoto, o telelavoro, può includere uno spettro che include:
 - Alcuni lavoratori che lavorano da remoto a tempo pieno.
 - Un'organizzazione completamente remota in cui non ci sono uffici e tutti sono telelavoratori.
 
+Da qualunque parte del mondo e in qualsiasi momento, i lavoratori remoti devono poter accedere a:
+
+- Risorse dell'organizzazione, ad esempio quelle offerte dai data center delle applicazioni locali.
+- Dati e servizi basati sul cloud nell'abbonamento a Microsoft 365, come Teams, Exchange Online, SharePoint e OneDrive.
+
+Per un'esperienza di accesso senza soluzione di continuità, è necessario sincronizzare gli account utente di Active Directory Domain Services (AD DS) con Azure Active Directory (Azure AD). Per proteggere i dispositivi Windows 10, è necessario registrarli in Intune. Ecco una panoramica generale dell'infrastruttura.
+
+![Infrastruttura di base per i lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+
+
 Per supportare i lavoratori remoti, ad esempio in risposta all'emergenza COVID-19, Microsoft 365 offre una serie di funzionalità che consentono di collaborare in modo estremamente semplice da remoto, ad esempio:
 
 - Riunioni online e sessioni di chat.
@@ -51,27 +61,25 @@ Per la massima sicurezza, Microsoft 365 include:
 - Autorizzazioni per definire le operazioni che possono essere eseguite da ciascun utente sui file.
 - Funzionalità di sicurezza complete per proteggere i dispositivi Windows 10.
 
-Per soddisfare questi criteri per i lavoratori remoti, usare le funzionalità di Microsoft 365 seguenti:
+Per soddisfare questi criteri per i lavoratori remoti, usare queste capacità e funzionalità di Microsoft 365.
 
-- Identità utente e protezione degli accessi
-  - Account utente di Azure Active Directory (Azure AD) con autenticazione a più fattori (MFA)
-  - Criteri di accesso condizionale per richiedere l'autenticazione MFA per gli accessi a rischio (Microsoft 365 E5)
-- Piattaforme di collaborazione
-  - Microsoft Teams, SharePoint e OneDrive, con cui i lavoratori remoti possono programmare e partecipare a riunioni video online e lavorare contemporaneamente agli stessi documenti.
-- Protezione dell'accesso alle risorse
-  - Gruppi e autorizzazioni per Teams, siti di SharePoint e OneDrive, in modo che possano accedere solo gli utenti autenticati e consentiti
-- Protezione dalla perdita di file
-  - Etichette di riservatezza per la crittografia e autorizzazioni che seguono i file
-- Sicurezza e gestione dei dispositivi con Microsoft Intune
-  - Registrazione per i dispositivi gestiti
-  - Impostazioni delle app per i dispositivi personali
-  - Criteri per dispositivi e app
-- App di produttività per i dispositivi
-  - Microsoft 365 Apps (Word, PowerPoint, Excel) per esperienze di collaborazione con Teams, Exchange, SharePoint e OneDrive 
-- Windows 10 Enterprise
-  - Suite integrata di funzionalità di sicurezza per la protezione dai cyberattacchi e la prevenzione della perdita di dati
-- Accesso alle app e ai server locali
-  - Connessioni di rete privata virtuale (VPN), Azure AD Application Proxy o VPN da punto a sito di Azure.
+| Capacità o funzionalità | Descrizione | Licenze |
+|:-------|:-----|:-------|
+| MFA applicata con le impostazioni predefinite per la sicurezza   | Proteggere le identità e i dispositivi dalla compromissione richiedendo una seconda forma di autenticazione per gli accessi. Le impostazioni predefinite per la sicurezza richiedono l'autenticazione a più fattori per tutti gli account utente.   | Microsoft 365 E3 ed E5 |
+| MFA applicata con l'accesso condizionale| Richiedere l'autenticazione a più fattori in base alle proprietà dell'accesso con i criteri di accesso condizionale.    | Microsoft 365 E3 ed E5 | 
+| MFA applicata con l'accesso condizionale basato sul rischio   | Richiedere l'autenticazione a più fattori in base al rischio di accesso dell'utente con Azure Advanced Threat Protection. | Microsoft 365 E5 o E3 con licenze di Azure AD Premium P2 | 
+| Reimpostazione della password self-service    | Consentire agli utenti di reimpostare o sbloccare le password o gli account personali.  | Microsoft 365 E3 ed E5 |
+| Azure AD Application Proxy    | Offrire un accesso remoto sicuro per le applicazioni basate sul Web ospitate nei server Intranet.   | Richiede una sottoscrizione di Azure a pagamento separata |
+| VPN da punto a sito di Azure   | Stabilire una connessione sicura dal dispositivo di un lavoratore remoto alla Intranet aziendale tramite una rete virtuale di Azure.   | Richiede una sottoscrizione di Azure a pagamento separata |
+| Desktop virtuale Windows   | Supportare i lavoratori remoti che possono usare solo i propri dispositivi personali e non gestiti con desktop virtuali in esecuzione in Azure. | Richiede una sottoscrizione di Azure a pagamento separata |
+| Servizi Desktop remoto | Consentire ai dipendenti di connettersi a computer basati su Windows nella Intranet aziendale. | Microsoft 365 E3 ed E5 | 
+| Gateway di Servizi Desktop remoto   | Crittografare le comunicazioni e impedire che gli host RDS siano esposti direttamente a Internet. | Richiede licenze di Windows Server separate |
+| Microsoft Intune | Gestire dispositivi e applicazioni.   | Microsoft 365 E3 ed E5 | 
+| Configuration Manager | Gestire installazioni, aggiornamenti e impostazioni del software nei dispositivi | Richiede licenze di Configuration Manager separate |
+| Desktop Analytics | Determinare l'adozione degli aggiornamenti dei client Windows.   | Richiede licenze di Configuration Manager separate |
+| Windows Autopilot | Impostare e preconfigurare nuovi dispositivi Windows 10 in modo da predisporli per l'uso.   | Microsoft 365 E3 ed E5 |
+| Microsoft Teams, Exchange Online, SharePoint Online e OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Creare, comunicare e collaborare. | Microsoft 365 E3 ed E5 |
+||||
 
 Utilizzare i seguenti passaggi per proteggere e ottimizzare l'accesso ai server, ai dati e ai servizi cloud dell'organizzazione e consentire la massima produttività dei lavoratori.
 
