@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come Microsoft 365 utilizza il record TXT del Sender Policy Framework (SPF) in DNS per garantire che i sistemi di posta elettronica di destinazione consideri attendibili i messaggi inviati dal dominio personalizzato.
-ms.openlocfilehash: 5d09047b51f191947c13a3e6ca64b5cb30d3f6a0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a86087f510dca328bb5b56af6fd4802f1f42a454
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036390"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587485"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Uso di Sender Policy Framework (SPF) in Microsoft 365 per impedire lo spoofing
 
@@ -51,11 +51,11 @@ Ogni record TXT SPF è costituito da tre parti: la dichiarazione che si tratta d
 
 Ecco la sintassi di base di una regola SPF:
 
-v=spf1 \<IP\> \<regola di imposizione\>
+v = spf1 \<IP\>\<enforcement rule\>
 
 Si supponga, ad esempio, che sia presente la seguente regola SPF per contoso.com:
 
-v=spf1 \<indirizzo IP #1\> \<indirizzo IP #2\> \<indirizzo IP #3\> \<regola di imposizione\>
+v = spf1 \<IP address #1\> \<IP address #2\> \<IP address #3\>\<enforcement rule\>
 
 In questo esempio la regola SPF indica al server di posta elettronica ricevente di accettare solo messaggi provenienti da questi indirizzi IP per il dominio contoso.com:
 
@@ -131,7 +131,7 @@ Se si dispone di una distribuzione ibrida, ovvero si dispone di alcune cassette 
 
 Utilizzare le informazioni relative alla sintassi fornite in questo articolo per formare il record TXT SPF per il dominio personalizzato. Anche se sono disponibili altre opzioni di sintassi non menzionate qui, queste sono le opzioni più comunemente utilizzate. Dopo aver creato il record, è necessario aggiornare il record nel registrar del dominio.
 
-Per informazioni sui domini che sarà necessario includere per Microsoft 365, vedere [External DNS Records required for SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Utilizzare le [istruzioni dettagliate ](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) per aggiornare i record (TXT) SPF per il registrar.
+Per informazioni sui domini che sarà necessario includere per Microsoft 365, vedere [External DNS Records required for SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Utilizzare le [istruzioni dettagliate ](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) per aggiornare i record (TXT) SPF per il registrar.
 
 ### <a name="spf-txt-record-syntax-for-microsoft-365"></a>Sintassi del record TXT SPF per Microsoft 365
 <a name="SPFSyntaxO365"> </a>
@@ -248,6 +248,6 @@ Quando si includono domini di terze parti nel record TXT SPF, è necessario conf
 ## <a name="for-more-information"></a>Ulteriori informazioni
 <a name="SPFTroubleshoot"> </a>
 
-Sono necessarie informazioni sull'aggiunta del record TXT SPF? Leggere l'articolo [creare record DNS in qualsiasi provider di hosting DNS per Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) per informazioni dettagliate sull'utilizzo di Sender Policy Framework con il dominio personalizzato in Microsoft 365. Intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md) include i campi di intestazione e di sintassi usati da Microsoft 365 per i controlli SPF.
+Sono necessarie informazioni sull'aggiunta del record TXT SPF? Leggere l'articolo [creare record DNS in qualsiasi provider di hosting DNS per Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) per informazioni dettagliate sull'utilizzo di Sender Policy Framework con il dominio personalizzato in Microsoft 365. Intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md) include i campi di intestazione e di sintassi usati da Microsoft 365 per i controlli SPF.
 
 

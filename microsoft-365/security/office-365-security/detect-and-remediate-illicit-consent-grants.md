@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034829"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587497"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecite
 
@@ -90,7 +90,7 @@ In questo modo vengono mostrate le app che sono state assegnate all'utente e qua
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Procedure per consentire agli utenti di enumerare l'accesso alle applicazioni
 
-Fare in modo che gli https://myapps.microsoft.com utenti accedano e rivedano l'accesso a un'applicazione. Essi dovrebbero essere in grado di visualizzare tutte le app con accesso, visualizzare i dettagli relativi (compreso l'ambito di accesso) ed essere in grado di revocare i privilegi alle app sospette o illecite.
+Fare in modo che gli utenti https://myapps.microsoft.com accedano e rivedano l'accesso a un'applicazione. Essi dovrebbero essere in grado di visualizzare tutte le app con accesso, visualizzare i dettagli relativi (compreso l'ambito di accesso) ed essere in grado di revocare i privilegi alle app sospette o illecite.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Passaggi per eseguire questa operazione con PowerShell
 
@@ -158,7 +158,7 @@ Dopo aver identificato un'applicazione con autorizzazioni illecite, sono disponi
 
 - È inoltre possibile disabilitare l'accesso per l'account interessato del tutto, che disattiverà la disabilitazione dell'app ai dati di quell'account. Questo non è l'ideale per la produttività dell'utente finale, naturalmente, ma se si lavora per limitare rapidamente l'impatto, può essere una soluzione valida per la correzione a breve termine.
 
-- È possibile disattivare le applicazioni integrate per il tuo contratto di locazione. Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant. Ciò impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa. Questo non è fortemente consigliato perché compromette gravemente la capacità degli utenti di essere produttivi con le applicazioni di terze parti. È possibile eseguire questa operazione attenendosi alla procedura descritta in [attivazione o disattivazione delle app integrate](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
+- È possibile disattivare le applicazioni integrate per il tuo contratto di locazione. Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant. Ciò impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa. Questo non è fortemente consigliato perché compromette gravemente la capacità degli utenti di essere produttivi con le applicazioni di terze parti. È possibile eseguire questa operazione attenendosi alla procedura descritta in [attivazione o disattivazione delle app integrate](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps).
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteggere Microsoft 365 come un professionista della sicurezza informatica
 

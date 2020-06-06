@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sul dashboard del flusso di posta elettronica nel centro sicurezza & Compliance, inclusi Insight, report e widget.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6bd3638f9f7cc2c6c8a7c1abe31b2e7655d110af
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034147"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588017"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 
@@ -57,19 +57,19 @@ Il dashboard del flusso di posta è disponibile per:
 
 - Membri del **ruolo di amministratore del flusso di posta** nel centro sicurezza & Compliance. Se questo ruolo viene assegnato in modo esplicito a un utente che non è un membro dell'amministratore globale o dei ruoli di amministratore di Exchange:
 
-  - L'utente deve accedere al centro sicurezza & conformità direttamente a [https://protection.office.com](https://protection.office.com).
+  - L'utente deve accedere al centro sicurezza & conformità direttamente a [https://protection.office.com](https://protection.office.com) .
 
   - L'utente avrà solo l'autorizzazione di sola lettura per il dashboard del flusso di posta.
 
   - L'utente non avrà accesso all'interfaccia di amministrazione di Microsoft 365.
 
-Per ulteriori informazioni sul ruolo amministratore globale, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Per ulteriori informazioni sul ruolo amministratore globale, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 Per informazioni sull'assegnazione di ruoli Centro sicurezza & conformità agli utenti, vedere [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dove trovare il dashboard del flusso di posta
 
-1. Accedere al centro sicurezza & Compliance all' [https://protection.office.com](https://protection.office.com)indirizzo.
+1. Accedere al centro sicurezza & Compliance all'indirizzo [https://protection.office.com](https://protection.office.com) .
 
 2. Espande il **flusso di posta** e quindi seleziona **Dashboard**.
 

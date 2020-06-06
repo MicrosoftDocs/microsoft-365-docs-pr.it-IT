@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: "Domande frequenti per gli amministratori sull'utilizzo del servizio di importazione di Office 365 per importare i file PST dell'organizzazione nelle cassette postali di Microsoft 365. "
-ms.openlocfilehash: e2ddd464f2cfd421766fb9c4d1043533f5561b25
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0d3245c962c2d22f0d500aafe22703bd3e57d504
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208130"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579201"
 ---
 # <a name="faq-about-importing-pst-files"></a>Domande frequenti sull'importazione di file PST
 
@@ -50,7 +50,7 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
   
  **Dov'è disponibile il caricamento tramite rete?**
   
-Il caricamento di rete è attualmente disponibile in queste aree: Stati Uniti, Canada, Brasile, Regno Unito, Francia, Europa, India, Asia orientale, sud-est asiatico, Giappone, Repubblica di Corea e Australia. Network upload will be available in more regions soon.
+Il caricamento di rete è attualmente disponibile in queste aree: Stati Uniti, Canada, Brasile, Regno Unito, Francia, Europa, India, Asia orientale, sud-est asiatico, Giappone, Repubblica di Corea, Australia e Emirati Arabi Uniti (UAE). Network upload will be available in more regions soon.
 
 > [!NOTE]
 > Al momento, il caricamento tramite rete dei file PST non è disponibile in Germania e Svizzera. Le domande frequenti verranno aggiornate quando il caricamento tramite rete sarà disponibile in questi paesi.

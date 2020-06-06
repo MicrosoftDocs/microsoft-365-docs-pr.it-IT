@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su Smart report e Insight disponibili nel centro sicurezza e conformità e su come utilizzarli per visualizzare ed esplorare i dati e intraprendere azioni rapide.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a033231b808964829ced0b9520515c426f5b81f
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566693"
+ms.locfileid: "44588157"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Smart report e informazioni dettagliate nel centro sicurezza e &amp; conformità
 
@@ -50,7 +50,7 @@ Oltre a evidenziare aree problematiche, Smart report e Insight includono suggeri
 |**Esplora minacce** (noto anche come esploratore) o **rilevamenti in tempo reale** <br/> Sospetti di malware rilevati nei messaggi di posta elettronica e file in Microsoft 365  <br/> |Nel centro sicurezza &amp; e conformità, accedere a **Threat Management** \> **Explorer** o ai **rilevamenti in tempo reale**<br/> |[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md) <br/> |
 |**Report di protezione avanzata dalle minacce e messaggi di sicurezza** <br/> Report sulla sicurezza della posta elettronica e sulla protezione delle minacce (inclusi malware, posta indesiderata, phishing e spoofing)  <br/> |Nel centro sicurezza &amp; e conformità, andare al **Reports** \> **Dashboard** dei report <br/> |[Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [Visualizzare i report sulla sicurezza della posta elettronica nel centro sicurezza e &amp; conformità](view-email-security-reports.md) <br/> |
 |**Flusso di posta** <br/> Informazioni sui messaggi di posta elettronica inviati e ricevuti, sugli avvisi recenti, sui mittenti e i destinatari principali, sui report di inoltro della posta elettronica e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, accedere a **Mail flow** \> **Dashboard** flusso di posta <br/> |[Approfondimenti sul flusso di posta nel Centro sicurezza e conformità](mail-flow-insights-v2.md)<br/> |
-|**Conformità al GDPR** <br/> Informazioni sulla conformità di GDPR, inclusi i collegamenti agli argomenti di dati, le tendenze delle etichette e i &amp; casi chiusi attivi  <br/> |Nel centro sicurezza &amp; e conformità, passare a **Data Privacy** \> **GDPR dashboard** <br/> |[Information Protection di Office 365 per il GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
+|**Conformità al GDPR** <br/> Informazioni sulla conformità di GDPR, inclusi i collegamenti agli argomenti di dati, le tendenze delle etichette e i &amp; casi chiusi attivi  <br/> |Nel centro sicurezza &amp; e conformità, passare a **Data Privacy** \> **GDPR dashboard** <br/> |[Information Protection di Office 365 per il GDPR](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr) <br/> |
 |**Registro di controllo** <br/> Informazioni relative ad attività, utenti, file o cartelle di Microsoft 365 e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, andare alla ricerca nel registro di controllo ** &amp; analisi di ricerca** \> **Audit log search** <br/> |[Eseguire una ricerca nel log di controllo nel centro sicurezza e &amp; conformità](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Rapporti di conformità** <br/> Report di FedRAMP, governance, report di rischio e conformità, report di gestione della sicurezza delle informazioni ISO e report di controllo e valutazione di SOC (Service Organization Controls)  <br/> |Nel centro sicurezza &amp; e conformità, accedere ai report di conformità di **Service Assurance** \> **Compliance reports** <br/> |[Pianificare la &amp; conformità della sicurezza in Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   

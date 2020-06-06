@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come eseguire un rapporto del gruppo di ruoli di amministratore in Exchange Online Protection (EOP) autonomo. Questo rapporto si registra quando un amministratore aggiunge o rimuove membri dai gruppi di ruoli di amministratore, EOP registra ogni occorrenza.
-ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350940"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587365"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection autonomo
 
@@ -27,7 +27,7 @@ Nelle organizzazioni autonome di Exchange Online Protection (EOP) prive di casse
 
 Quando si esegue un rapporto del gruppo di ruoli di amministratore nell'interfaccia di amministrazione di Exchange, le voci vengono visualizzate come risultati della ricerca e includono i gruppi di ruoli interessati, che hanno modificato l'appartenenza al gruppo di ruoli e quando e quali sono stati apportati gli aggiornamenti di appartenenza. Utilizzare questo rapporto per monitorare le modifiche apportate alle autorizzazioni amministrative assegnate agli utenti dell'organizzazione.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Per aprire l'interfaccia di amministrazione di Exchange, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -74,7 +74,7 @@ In questo esempio, l'account utente Amministratore ha apportato le modifiche seg
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Utilizzare PowerShell di Exchange Online autonomo per cercare le voci del registro di controllo
 
-È possibile utilizzare PowerShell di Exchange Online per cercare le voci del registro di controllo che soddisfano i criteri specificati. Per un elenco dei criteri di ricerca, vedere [Registrazione controlli dell'amministratore](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). In questa procedura viene utilizzato il cmdlet **Search-AdminAuditLog** e vengono visualizzati i risultati della ricerca in Exchange Online PowerShell. È possibile utilizzare questo cmdlet per la restituzione di un set di risultati che supera i limiti definiti nel cmdlet **New-AdminAuditLogSearch** o nei report di controllo di Interfaccia di amministrazione di Exchange.
+È possibile utilizzare PowerShell di Exchange Online per cercare le voci del registro di controllo che soddisfano i criteri specificati. Per un elenco dei criteri di ricerca, vedere [Search-AdminAuditLog Search criteries](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet). In questa procedura viene utilizzato il cmdlet **Search-AdminAuditLog** e vengono visualizzati i risultati della ricerca in Exchange Online PowerShell. È possibile utilizzare questo cmdlet per la restituzione di un set di risultati che supera i limiti definiti nel cmdlet **New-AdminAuditLogSearch** o nei report di controllo di Interfaccia di amministrazione di Exchange.
 
 Per effettuare una ricerca nel log di controllo in base ai criteri specificati, utilizzare la sintassi seguente.
 
@@ -119,7 +119,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Search-Admi
 
 ### <a name="view-details-of-audit-log-entries"></a>Visualizzazione dei dettagli del log di controllo
 
-Il cmdlet **Search-AdminAuditLog** restituisce i campi descritti nella sezione dedicata al contenuto dei log di controllo di [Registrazione controlli dell'amministratore](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Dei due campi restituiti dal cmdlet, due, ovvero **CmdletParameters** e **ModifiedProperties**, contengono ulteriori informazioni non visualizzabili per impostazione predefinita.
+Il cmdlet **Search-AdminAuditLog** restituisce i campi descritti in [Content log di controllo](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents). Dei due campi restituiti dal cmdlet, due, ovvero **CmdletParameters** e **ModifiedProperties**, contengono ulteriori informazioni non visualizzabili per impostazione predefinita.
 
 Per visualizzare il contenuto dei campi **CmdletParameters** e **ModifiedProperties**, attenersi alla procedura riportata di seguito. In alternativa, è possibile utilizzare la procedura in **use Exchange Online PowerShell per cercare le voci del registro di controllo e inviare i risultati a un destinatario** più avanti in questo argomento per creare un file XML.
 

@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni sui report e gli strumenti per la risoluzione dei problemi disponibili per gli amministratori di Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206443"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588169"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Creazione di report e traccia dei messaggi in EOP
 
@@ -37,13 +37,13 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standa
 
 Per ulteriori informazioni, vedere le risorse seguenti:
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione-gruppi Microsoft 365](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione-gruppi Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [Rapporti Microsoft 365 nell'interfaccia di amministrazione-attività di posta elettronica](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Rapporti Microsoft 365 nell'interfaccia di amministrazione-attività di posta elettronica](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle app di posta elettronica](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle app di posta elettronica](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle cassette postali](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle cassette postali](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Rapporti di conformità & di sicurezza nell'interfaccia di amministrazione di Microsoft 365
 

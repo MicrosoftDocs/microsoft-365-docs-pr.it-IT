@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come utilizzare Attack Simulator per eseguire attacchi di phishing e di password simulati nell'organizzazione Microsoft 365 E5 o ATP Plan 2.
-ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035859"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587569"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulatore di attacco in ATP
 
@@ -39,7 +39,7 @@ ms.locfileid: "44035859"
 
 - È necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-- L'account deve essere configurato per l'autenticazione a più fattori (AMF) per creare e gestire le campagne in Attack Simulator. Per istruzioni, vedere [configurare l'autenticazione](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)a più fattori.
+- L'account deve essere configurato per l'autenticazione a più fattori (AMF) per creare e gestire le campagne in Attack Simulator. Per istruzioni, vedere [configurare l'autenticazione](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)a più fattori.
 
 Affinché l'avvio di un attacco venga eseguito correttamente, verificare che l'account utilizzato per eseguire gli attacchi simulati utilizzi l'autenticazione a più fattori. Inoltre, è necessario essere un amministratore globale o un amministratore della sicurezza. Per ulteriori informazioni sui ruoli e le autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,7 +55,7 @@ Il *phishing* è un termine generico per gli attacchi di posta elettronica che t
 
 In Attack Simulator sono disponibili due diversi tipi di campagne di phishing Spear:
 
-- L'autenticazione a più fattori e l' [accesso condizionale](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) sono attivati, almeno per l'account di amministratore globale e gli amministratori della sicurezza che utilizzeranno simulatore di attacco. (Idealmente, l'autenticazione a più fattori e l'accesso condizionale sono attivati per tutti gli utenti dell'organizzazione.)
+- L'autenticazione a più fattori e l' [accesso condizionale](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) sono attivati, almeno per l'account di amministratore globale e gli amministratori della sicurezza che utilizzeranno simulatore di attacco. (Idealmente, l'autenticazione a più fattori e l'accesso condizionale sono attivati per tutti gli utenti dell'organizzazione.)
 
   - Una pagina predefinita che spiega questo è stato un semplice test e fornisce suggerimenti per il riconoscimento dei messaggi di phishing.
 
@@ -63,7 +63,7 @@ In Attack Simulator sono disponibili due diversi tipi di campagne di phishing Sp
 
   - Una pagina personalizzata (URL) specificata.
 
-- **Spear phishing (Attachment)**: l'attacco tenta di convincere i destinatari ad aprire un allegato. docx o. pdf nel messaggio. L'allegato contiene lo stesso contenuto del collegamento di phishing predefinito, ma la prima frase inizia con "\<nome\>visualizzato, si sta vedendo questo messaggio come un messaggio di posta elettronica recente che è stato aperto...".
+- **Spear phishing (Attachment)**: l'attacco tenta di convincere i destinatari ad aprire un allegato. docx o. pdf nel messaggio. L'allegato contiene lo stesso contenuto del collegamento di phishing predefinito, ma la prima frase inizia con " \<Display Name\> , si sta vedendo questo messaggio come un messaggio di posta elettronica recente è stato aperto...".
 
 > [!NOTE]
 > Attualmente, le campagne di phishing Spear in Attack Simulator non scadono.
@@ -291,7 +291,7 @@ Le informazioni seguenti sono disponibili nella pagina dei **Dettagli sull'attac
 
 - **Tentativi riusciti**: il numero di utenti che hanno fatto clic sul collegamento **e** hanno immesso le proprie credenziali (*qualsiasi* nome utente e valore password).
 
-- **Tasso di successo globale**: percentuale calcolata con **esito positivo dei tentativi** / **totali degli utenti mirati**.
+- **Tasso di successo globale**: percentuale calcolata con **esito positivo dei tentativi**  /  **totali degli utenti mirati**.
 
 - Più **veloce fare clic su**: quanto tempo è stato necessario per il primo utente per fare clic sul collegamento dopo aver avviato la campagna.
 
@@ -331,7 +331,7 @@ Le informazioni seguenti sono disponibili nella pagina dei **Dettagli sull'attac
 
 - **Tentativi riusciti**: il numero di utenti che hanno aperto o scaricato e aperto l'allegato (l'anteprima non conta).
 
-- **Tasso di successo globale**: percentuale calcolata con **esito positivo dei tentativi** / **totali degli utenti mirati**.
+- **Tasso di successo globale**: percentuale calcolata con **esito positivo dei tentativi**  /  **totali degli utenti mirati**.
 
 - **Intervallo di tempo di apertura più rapido**: il tempo impiegato dal primo utente per aprire l'allegato dopo aver avviato la campagna.
 
@@ -349,7 +349,7 @@ Le informazioni seguenti sono disponibili nella pagina dei **Dettagli sull'attac
 
 - **Tentativi riusciti**: il numero di utenti che hanno trovato l'utilizzo di una delle password specificate.
 
-- **Tasso di successo globale**: percentuale calcolata con **esito positivo dei tentativi** / **totali degli utenti mirati**.
+- **Tasso di successo globale**: percentuale calcolata con **esito positivo dei tentativi**  /  **totali degli utenti mirati**.
 
 - La sezione **utenti compromessi** elenca gli indirizzi di posta elettronica degli utenti coinvolti. È possibile fare clic su **Esporta** per esportare i risultati in un file CSV.
 
@@ -363,4 +363,4 @@ Le informazioni seguenti sono disponibili nella pagina dei **Dettagli sull'attac
 
 - **Tentativi riusciti**: il numero di utenti che sono stati trovati a utilizzare la password specificata.
 
-- **Tasso di successo globale**: percentuale calcolata con **esito positivo dei tentativi** / **totali degli utenti mirati**.
+- **Tasso di successo globale**: percentuale calcolata con **esito positivo dei tentativi**  /  **totali degli utenti mirati**.

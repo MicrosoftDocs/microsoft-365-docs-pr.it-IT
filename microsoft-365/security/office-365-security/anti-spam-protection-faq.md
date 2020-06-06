@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono visualizzare le domande frequenti e le risposte sulla protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c80a4cb93cf0c37ffbdf917e238960dd8fea80
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209644"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588041"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
@@ -59,7 +59,7 @@ Per ulteriori informazioni, vedere i seguenti argomenti:
 
 [Configurare il filtro connessioni in EOP](configure-the-connection-filter-policy.md)
 
-[Configurazione dei criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md)
+[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)
 
 [Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
 
@@ -137,7 +137,7 @@ Le linee guida presentate di seguito rappresentano le procedure ottimali per l'i
 
   [Configurazione di SPF per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Domande frequenti sui domini](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Domande frequenti sui domini](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 - **Per accedere alla posta elettronica con DKIM, utilizzare la canonicalizzazione semplice.**
 

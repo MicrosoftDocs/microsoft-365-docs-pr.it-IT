@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Informazioni su ciò che è necessario conoscere prima di passare attraverso il processo di iscrizione per Office 365. '
-ms.openlocfilehash: 2778dda03c517e176fbab044243306fb51355396
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386758"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579170"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Come iscriversi-Guida per gli amministratori
 
@@ -40,21 +40,11 @@ ms.locfileid: "44386758"
 
 Iscriversi a Microsoft 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office nella propria azienda.
   
-Guardare una breve panoramica dei tre piani di Microsoft 365 for business o scorrere verso il basso per altre info.
-<br><br>
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 Iscriversi a Microsoft 365 for business in modo che il team possa iniziare a utilizzare le versioni più recenti di Word, Excel, PowerPoint e altre applicazioni di Office nella propria azienda.
-  
-Guarda una breve panoramica dei tre piani migliori per la tua azienda. o scorri verso il basso per altre info.
-<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
   
 ::: moniker-end
 

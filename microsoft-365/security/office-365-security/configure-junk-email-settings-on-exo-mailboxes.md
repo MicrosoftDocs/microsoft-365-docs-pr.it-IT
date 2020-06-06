@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
-ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498664"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588453"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 
@@ -32,7 +32,7 @@ Tuttavia, esistono anche impostazioni di protezione da posta indesiderata specif
 - **Abilitare o disabilitare la regola di posta**indesiderata: la regola di posta indesiderata è una regola di posta in arrivo nascosta chiamata regola di posta indesiderata abilitata per impostazione predefinita in ogni cassetta postale. La regola di posta indesiderata controlla le caratteristiche seguenti:
 
   - **Spostare i messaggi nella cartella posta indesiderata in base ai criteri**di protezione dalla posta indesiderata: quando un criterio di protezione da posta indesiderata viene configurato con il **messaggio di spostamento dell'azione nella cartella posta indesiderata** per un verdetto del filtro della posta indesiderata, la regola di filtro posta elettronica consente di spostare il messaggio nella cartella posta indesiderata dopo Per ulteriori informazioni sui verdetti del filtro della posta indesiderata nei criteri di protezione da posta indesiderata, vedere [Configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md). Analogamente, se zero-hour auto Purge (ZAP) determina un messaggio recapitato è spam o phishing, la regola di filtro posta indesiderata sposta il messaggio nella cartella posta indesiderata per il **messaggio di spostamento nella cartella** posta indesiderata che filtra la posta indesiderata. Per ulteriori informazioni su ZAP, vedere [zero-hour auto Purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
-  
+
   - **Impostazioni della posta indesiderata che gli utenti configurano per se stessi in Outlook o Outlook sul Web**: la raccolta degli elenchi _indirizzi attendibili_ è l'elenco dei mittenti attendibili, l'elenco destinatari attendibili e l'elenco Mittenti bloccati su ogni cassetta postale. Le voci di questi elenchi determinano se la regola di posta indesiderata sposta il messaggio nella cartella posta in arrivo o posta indesiderata. Gli utenti possono configurare la raccolta degli elenchi indirizzi attendibili per la propria cassetta postale in Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). Gli amministratori possono configurare la raccolta degli elenchi indirizzi attendibili sulla cassetta postale di un utente.
 
 Quando la regola di posta indesiderata è abilitata per la cassetta postale, EOP è in grado di spostare i messaggi nella cartella posta indesiderata in base al messaggio di spostamento dell'azione del verdetto del filtro posta indesiderata nella **cartella posta indesiderata** o nell'elenco Mittenti bloccati sulla cassetta postale e impedire che i messaggi vengano recapitati nella cartella posta indesiderata (in base all'
@@ -148,7 +148,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-Mailbox
 > 
 > - Anche se la regola di posta indesiderata è disabilitata per la cassetta postale, è comunque possibile configurare la raccolta degli elenchi indirizzi attendibili e il filtro posta indesiderata di Outlook è in grado di spostare i messaggi nella cartella posta in arrivo o posta indesiderata. Per ulteriori informazioni, vedere la sezione informazioni [sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) in questo argomento.
 > 
-> - Il filtro posta indesiderata di Outlook contiene altre impostazioni della raccolta degli elenchi indirizzi attendibili (ad esempio, **aggiunge automaticamente gli utenti che inviano la posta elettronica all'elenco Mittenti attendibili**). Per ulteriori informazioni, vedere [utilizzo dei filtri di posta indesiderata per controllare quali messaggi vengono visualizzati](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
+> - Il filtro posta indesiderata di Outlook contiene altre impostazioni della raccolta degli elenchi indirizzi attendibili (ad esempio, **aggiunge automaticamente gli utenti che inviano la posta elettronica all'elenco Mittenti attendibili**). Per ulteriori informazioni, vedere [utilizzo dei filtri di posta indesiderata per controllare quali messaggi vengono visualizzati](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
@@ -197,7 +197,7 @@ La raccolta degli elenchi indirizzi attendibili (elenco Mittenti attendibili, el
   - 500 totale voci nell'elenco Mittenti bloccati e nei domini bloccati.
 
   Quando viene raggiunto il limite di voce 1024, vengono eseguite le operazioni seguenti:
-  
+
   - L'elenco interrompe l'accettazione delle voci in PowerShell e Outlook sul Web, ma non viene visualizzato alcun messaggio di errore.
 
     Gli utenti di Outlook possono continuare ad aggiungere più di 1024 voci fino a raggiungere il limite di Outlook di 510 KB. Outlook è in grado di utilizzare queste voci aggiuntive, purché un filtro di EOP non blocchi il messaggio prima del recapito alla cassetta postale (regole del flusso di posta, anti-spoofing e così via).
@@ -208,7 +208,7 @@ La raccolta degli elenchi indirizzi attendibili (elenco Mittenti attendibili, el
   2. L'elenco dei mittenti attendibili e l'elenco di destinatari attendibili sono combinati, deduplicati e ordinati in ordine alfabetico ogni volta che viene apportata una modifica per le prime voci di 1024.
 
   Vengono utilizzate le prime voci di 1024 e le relative informazioni vengono contrassegnate nelle intestazioni del messaggio.
-  
+
   Le voci superiori a 1024 che non sono state sincronizzate con Azure AD vengono elaborate da Outlook (non Outlook sul Web) e nessuna informazione viene contrassegnata nelle intestazioni del messaggio.
 
 Come si può notare, se si Abilita la **posta elettronica attendibile dall'impostazione contatti** è possibile ridurre il numero di mittenti attendibili e destinatari attendibili che possono essere sincronizzati. Se si tratta di un problema, è consigliabile utilizzare criteri di gruppo per disattivare questa funzionalità:

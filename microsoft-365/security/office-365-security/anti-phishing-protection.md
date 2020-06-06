@@ -19,12 +19,12 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle funzionalità di protezione anti-phishing in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 2b5d5786e363b0d74e29b1f0c27ab110d2e60b0d
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 657224d3a18d7cae1581eaf6c603d1c04c3b41f3
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262284"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588313"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protezione anti-phishing in Microsoft 365
 
@@ -62,6 +62,6 @@ Office 365 ATP contiene funzionalità di anti-phishing aggiuntive e avanzate:
 
 ## <a name="other-anti-phishing-resources"></a>Altre risorse anti-phishing
 
-- Per gli utenti finali: [proteggersi da schemi di phishing e altre forme di frode online](https://support.office.com/article/protect-yourself-from-phishing-schemes-and-other-forms-of-online-fraud-be0de46a-29cd-4c59-aaaf-136cf177d593).
+- Per gli utenti finali: [proteggersi da schemi di phishing e altre forme di frode online](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593).
 
 - [In che modo Microsoft 365 convalida l'indirizzo del mittente per impedire il phishing](how-office-365-validates-the-from-address.md).

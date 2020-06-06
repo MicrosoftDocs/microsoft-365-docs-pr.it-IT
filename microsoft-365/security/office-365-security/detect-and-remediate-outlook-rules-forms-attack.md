@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351976"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588265"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati
 
@@ -165,7 +165,7 @@ Se si riscontrano prove di uno di questi attacchi, la correzione è semplice, è
 
 4. Installare le versioni più aggiornate di Outlook. Tenere presente che la versione corrente di Outlook blocca entrambi i tipi di questo attacco per impostazione predefinita.
 
-5. Dopo che tutte le copie offline della cassetta postale sono state rimosse, reimpostare la password dell'utente (utilizzare un valore di alta qualità) e seguire i passaggi illustrati nell'installazione di autenticazione a più [fattori per gli utenti se l'](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) AMF non è già stata abilitata. In questo modo, le credenziali dell'utente non vengono esposte tramite altri strumenti (ad esempio, il riutilizzo di phishing o password).
+5. Dopo che tutte le copie offline della cassetta postale sono state rimosse, reimpostare la password dell'utente (utilizzare un valore di alta qualità) e seguire i passaggi illustrati nell'installazione di autenticazione a più [fattori per gli utenti se l'](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) AMF non è già stata abilitata. In questo modo, le credenziali dell'utente non vengono esposte tramite altri strumenti (ad esempio, il riutilizzo di phishing o password).
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
@@ -193,7 +193,7 @@ Sono disponibili due cmdlet di PowerShell remoti che è possibile utilizzare per
 
 Le regole e gli exploit dei moduli vengono utilizzati solo da un utente malintenzionato dopo che hanno rubato o violato uno degli account degli utenti. Pertanto, il primo passaggio per impedire l'utilizzo di tali exploit nei confronti dell'organizzazione consiste nel proteggere in modo aggressivo gli account utente. Alcuni dei modi più comuni in cui gli account vengono violati sono gli attacchi di phishing o di [spruzzatura delle password](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) .
 
-Il modo migliore per proteggere gli account utente e in particolare gli account di amministratore consiste nel [configurare l'autenticazione a più fattori per gli utenti](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). È inoltre necessario:
+Il modo migliore per proteggere gli account utente e in particolare gli account di amministratore consiste nel [configurare l'autenticazione a più fattori per gli utenti](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication). È inoltre necessario:
 
 - Monitorare la modalità [di accesso e utilizzo](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)degli account utente. Non è possibile impedire la violazione iniziale, ma è possibile ridurre la durata e l'impatto della violazione rilevando prima. È possibile utilizzare questi [criteri di sicurezza dell'app cloud di Office 365](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) per monitorare gli account e allertare attività inusuali:
 

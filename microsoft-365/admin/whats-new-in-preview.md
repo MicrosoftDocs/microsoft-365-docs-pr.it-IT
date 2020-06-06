@@ -2,8 +2,8 @@
 title: Novità dell'interfaccia di amministrazione di Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: anfowler
+author: adefowler
 manager: shohara
 audience: Admin
 ms.topic: overview
@@ -21,12 +21,12 @@ description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle 
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401143"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587581"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -43,18 +43,62 @@ Si aggiungono continuamente nuove funzionalità all'interfaccia di [amministrazi
 > **"Classic" prepensionamento del centro di amministrazione a partire da marzo**<br><br>
 Quando si accede all'interfaccia di amministrazione di Microsoft 365, è possibile accedere al nuovo interfaccia di amministrazione ogni volta. E in marzo, è stata avviata la disabilitazione della possibilità di tornare all'interfaccia di amministrazione classica. Per il momento, è ancora possibile tornare indietro, ma siccome il nuovo interfaccia di amministrazione arriva alla parità (e lo supera), si disattiverà l'opzione per tutte le organizzazioni. <br><br> *Ultimo aggiornamento: 11 maggio 2020*
 
-Se si è interessati alle novità in altri servizi cloud Microsoft:
+Se si desidera sapere cosa c'è di nuovo con altri servizi cloud Microsoft:
 
-- [Novità di Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Novità di Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Novità nel centro conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
-- [Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Novità di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
 - [Novità dell'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/whats-new)
+- [Novità di Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+- [Novità nel centro conformità di Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [Novità di Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="may-2020"></a>Maggio 2020
+
+### <a name="new-update-channel-for-office"></a>Nuovo canale di aggiornamento per Office
+
+Il 12 maggio, è stata annunciata la disponibilità di un nuovo canale di aggiornamento per Office: Monthly Enterprise Channel. Questo canale di aggiornamento consente agli utenti di disporre di nuove funzionalità di Office una volta al mese, il secondo martedi del mese.
+
+Se si consente agli utenti di eseguire l'installazione automatica di Office dal portale, è possibile selezionare il canale Enterprise mensile. A tale scopo, accedere all'interfaccia di amministrazione di Microsoft 365 e passare a **Mostra tutte**  > **le impostazioni**  >  dell'**organizzazione**per il download del  >  **Services**  >  **software di Office**. Se si seleziona una **volta al mese (Monthly Enterprise Channel)**, tutte le nuove installazioni di Office verranno configurate per l'utilizzo di Monthly Enterprise Channel.
+
+In combinazione con il rilascio di Monthly Enterprise Channel, stiamo anche rivedendo i nomi dei canali di aggiornamento esistenti. Ad esempio, il canale mensile viene rinominato nel canale corrente. I nuovi nomi hanno effetto il 9 giugno 2020.
+
+Per ulteriori informazioni, vedere [changes to Update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
+
+### <a name="new-admin-roles"></a>Nuovi ruoli di amministratore
+
+Sono stati aggiunti alcuni nuovi ruoli di amministratore di Azure Active Directory all'interfaccia di amministrazione di Microsoft 365.
+
+- Il ruolo di amministratore di identità ibrido fornisce agli utenti l'autorizzazione per gestire i servizi di autenticazione e provisioning dei cloud.
+- Il ruolo di amministratore di rete consente agli utenti di gestire i percorsi di rete ed esaminare le informazioni di rete per il software Microsoft 365 come app di servizio.
+- Il ruolo di amministratore della stampante concede l'autorizzazione per gestire tutti gli aspetti delle stampanti e delle connessioni della stampante.
+- Il tecnico della stampante è un sottoinsieme del ruolo di amministratore della stampante in cui gli utenti possono registrare e annullare la registrazione delle stampanti e aggiornare lo stato della stampante.
+Per ulteriori informazioni su questi ruoli, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+
+### <a name="export-groups-list"></a>Elenco gruppi di esportazione
+
+Sono stati apportati numerosi amministratori che hanno la necessità di condividere informazioni sui gruppi e il loro utilizzo per gli utenti che non dispongono dell'accesso ai centri di amministrazione. È ora possibile esportare l'elenco dei gruppi in un file CSV per scopi di controllo, il che significa che è possibile eliminare il vecchio script di PowerShell. Per provarlo, **passare a gruppi di gruppi**  >  **Groups**, quindi selezionare **Esporta gruppi** dalla barra dei comandi.
+
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 Solution and Architecture Center
+
+Proprio questo mese, è stato rilasciato un nuovo sito su [https://docs.microsoft.com](https://docs.microsoft.com) chiamato [Microsoft 365 Solution and Architecture Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center), che raccoglie le indicazioni tecniche necessarie per comprendere, pianificare e implementare soluzioni integrate di Microsoft 365 per una collaborazione sicura e conforme. In questo centro sono disponibili le seguenti informazioni:
+
+- Linee guida per la soluzione di base
+- Soluzioni di carico di lavoro e guida per gli scenari
+- Illustrazioni su soluzioni e architetture (manifesti!!!)
+- Istruzioni specifiche per l'industria
+- Entità di progettazione dell'architettura Enterprise
+
+### <a name="docs-training-and-videos"></a>Documenti, formazione e video
+
+- **What ' s New in microsoft 365 video Series**: questo mese, viene illustrata la nuova esperienza di supporto nei centri di amministrazione e sicurezza e conformità dei team, l'integrazione del pianificatore con il centro messaggi e il nuovo layout video 3x3 in Microsoft teams. [Novità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- La pagina hub della Guida dell'interfaccia di [amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/) è stata aggiornata per trovare le informazioni necessarie più rapidamente. E se si va a vedere la pagina in questo momento, è stata aggiunta una scheda per informare gli aggiornamenti e le modifiche importanti.
 
 ## <a name="april-2020"></a>Aprile 2020
 
 ### <a name="intune-roles-management"></a>Gestione dei ruoli di Intune
+
+[Aprile 2020](#april-2020)
 
 Bene, ce l'abbiamo fatta. È stato compiuto il secondo passaggio verso un'esperienza di ruoli unificata e ora è possibile gestire i ruoli di Intune nell'interfaccia di amministrazione di Microsoft 365. È inoltre possibile sfruttare le funzionalità come la possibilità di cercare i ruoli e visualizzare le autorizzazioni per il ruolo. Questo significa che non sono necessari due strumenti distinti per gestire i ruoli per Microsoft 365 e Intune. Quando si accede all'interfaccia di amministrazione di Microsoft 365, si noterà che sono presenti due pivot nella pagina ruoli, uno per Azure AD e uno per Intune.
 
@@ -103,7 +147,7 @@ Sono disponibili due aggiornamenti per i gruppi di questo mese:
 - È ora possibile modificare gli indirizzi di posta elettronica per i gruppi di Office 365 (noti anche come gruppi in Outlook e che saranno presto noti come gruppi di Microsoft 365).
 - Sono stati apportati commenti e suggerimenti per il motivo per cui non è possibile convertire un gruppo in un team di Microsoft.
 
-### <a name="docs-videos-and-training"></a>Documenti, video e formazione
+### <a name="docs-videos-and-training-april"></a>Documenti, video e formazione (aprile)
 
 **What ' s New in Microsoft 365 video Series**: questo mese, vengono illustrati i suggerimenti e le risorse per aiutare le piccole imprese alla transizione verso il lavoro remoto, tra cui la modalità di implementazione di Microsoft teams, le risorse di formazione del lavoro remoto per rimanere in contatto con clienti e partner e il nuovo piano di Business Voice di Microsoft 365. [Novità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -118,7 +162,7 @@ Sono disponibili due aggiornamenti per i gruppi di questo mese:
 
 #### <a name="for-admins-and-business-owners"></a>Per gli amministratori e i proprietari di aziende
 
-- [Potenziare le piccole aziende con il lavoro a distanza](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [Potenziare le piccole aziende con il lavoro a distanza](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [Esecuzione di una piccola azienda remota](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Iscriversi a Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Impostazione dell'accesso a due fattori](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -143,8 +187,6 @@ Utilizzando l'interfaccia di amministrazione di Microsoft 365, è ora possibile 
 
 :::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramma che mappa le impostazioni dell'interfaccia di amministrazione all'app per dispositivi mobili.":::
 
-:::image-end:::
-
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Miglioramenti apportati alla procedura guidata "Aggiungi un gruppo"
 
 Quando gli amministratori hanno creato un nuovo gruppo e ne hanno fatto una squadra nello stesso momento, possono assegnare proprietari che non dispongono di una licenza che include team. E questo ha creato alcuni mal di testa. È stato aggiornato il flusso della procedura guidata per verificare che i proprietari dispongano di una licenza per i team e che se non è possibile disattivare il gruppo in un team è disabilitato.
@@ -162,7 +204,7 @@ I nuovi nomi dei prodotti entrano in vigore il 21 aprile 2020. Si tratta di una 
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    App Microsoft 365 per le aziende       | 
+|Office 365 Business     |    Microsoft 365 Apps for business       |
 |Office 365 ProPlus    |   Microsoft 365 Apps for Enterprise      |
 
 ### <a name="videos-training-and-docs"></a>Video, formazione e documenti
@@ -192,7 +234,7 @@ Un paio di modifiche nell'area gruppi di questo mese:
 - **Ordina in base al nome del gruppo**: è possibile ordinare l'elenco dei gruppi in ordine alfabetico selezionando la colonna **nome gruppo** .
 - **Ripristinare i gruppi microsoft 365 eliminati**: non è più necessario accedere all'interfaccia di amministrazione di Exchange per ripristinare i gruppi di Microsoft 365 eliminati. Vai a **Microsoft 365** interfaccia di amministrazione gruppi \> **Groups** \> **eliminati gruppi** \> (seleziona un gruppo dall'elenco) \> **Ripristina gruppo**. Ripristinerà nuovamente il gruppo nell'elenco **gruppi** e ripristinerà la posta elettronica, le conversazioni, il blocco appunti, i file e il calendario del gruppo.
 
-### <a name="videos-training-and-docs"></a>Video, formazione e documenti
+### <a name="videos-training-and-docs-february"></a>Video, formazione e documenti (febbraio)
 
 - **What ' s New in Microsoft 365 video Series**: questo mese, siamo concentrati sulle funzionalità di ricerca personalizzate per SharePoint Online, la funzionalità di gestione di Office "What ' s New" che consente di mostrare o nascondere caratteristiche specifiche degli utenti finali tramite il riquadro della Guida in-app, gli aggiornamenti più recenti per la sicurezza e la conformità in Yammer e altro ancora. Ecco l'ultimo episodio: [What ' s New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
