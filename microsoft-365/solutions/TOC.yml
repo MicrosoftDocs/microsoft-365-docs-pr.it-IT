@@ -23,7 +23,7 @@
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: Passaggio 4. Distribuire le app e i servizi per la produttività
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: Passaggio 5. Creare sedi di comunicazione
+        - name: Passaggio 5. Creare spazi di comunicazione
           href: empower-people-to-work-remotely-communication-venues.md
         - name: Passaggio 6. Addestrare gli utenti remoti
           href: empower-people-to-work-remotely-train-monitor-usage.md
@@ -81,7 +81,7 @@
         - name: Soluzioni di telefonia
           items:
             - name: Scegliere la soluzione
-              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: Case Study per la società multi-nazionale
               href: null
         - name: Collaborazione ai file in SharePoint con Microsoft 365
@@ -89,7 +89,7 @@
         - name: Pianificare una rete Intranet di SharePoint intelligente
           href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Guida di OneDrive per le aziende
-          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Sicurezza
       items:
         - name: Attività principali per i team di sicurezza che supportano l'utilizzo da casa
@@ -158,6 +158,8 @@
       href: identity-design-principles.md
     - name: Ostacoli alla sicurezza in cui è possibile navigare
       href: security-design-principles.md
+    - name: Creazione di reti (nel cloud)
+      href: networking-design-principles.md
 - name: Risorse per la distribuzione di Microsoft 365
   items:
     - name: Distribuire Microsoft 365
