@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: c696c7b8b19b5c19ff3fcaf30029001604f791bf
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 47122e4ec6f902e0c84bd223ff771dc5db6fdfa5
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327134"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560483"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -62,10 +62,7 @@ Per impostazione predefinita, gli amministratori globali del tenant hanno access
 
 In alternativa all'utilizzo dei ruoli, è possibile creare un nuovo gruppo di ruoli e aggiungere l’**amministratore dell'etichetta di riservatezza** o la **configurazione dell’organizzazione** al gruppo. Per un ruolo di sola lettura, usare **Lettore di etichette di riservatezza**. Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
-Queste autorizzazioni sono necessarie solo per creare e configurare le etichette di riservatezza e i relativi criteri di etichetta. Non sono invece necessarie per applicare le etichette nelle app o nei servizi.
-
-> [!NOTE]
-> **Lettore di etichette di riservatezza** è un nuovo ruolo che inizialmente supportava solo i cmdlet di etichettatura di PowerShell. Il supporto per i centri di etichettatura per amministratori ora è in corso di distribuzione nei tenant.
+Queste autorizzazioni sono necessarie solo per creare e configurare le etichette di riservatezza e i relativi criteri di etichetta. Non sono invece necessarie per applicare le etichette nelle app o nei servizi. Se sono necessarie autorizzazioni aggiuntive per configurazioni specifiche relative alle etichette di riservatezza, tali autorizzazioni verranno riportate nelle rispettive istruzioni nella documentazione.
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scenari comuni per le etichette di riservatezza
 
@@ -81,9 +78,8 @@ Usare la documentazione seguente a supporto della distribuzione delle etichette 
 |Usare le etichette di riservatezza per proteggere il contenuto in Teams e SharePoint |[Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md)|
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi Azure Information Protection per classificare e proteggere automaticamente i file](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati nel cloud|[Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Applicare e visualizzare le etichette di riservatezza in Power BI e proteggere i report scaricati|[Protezione dei dati in Power BI (anteprima)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|Applicare e visualizzare le etichette di riservatezza in Power BI e proteggere i dati durante l'esportazione|[Protezione dei dati in Power BI ](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |Monitorare e capire come vengono usate le etichette di riservatezza nell'organizzazione|[Conoscere i dati - Panoramica della classificazione dei dati](data-classification-overview.md) <br /><br /> [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)|
-
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentazione per gli utenti finali sulle etichette di riservatezza
 
