@@ -373,26 +373,10 @@
                   href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
-              items:
-                - name: Panoramica del Dashboard sulla sicurezza
-                  href: ./office-365-security/security-dashboard.md
-                  items:
-                    - name: 'Procedura: da un report dettagliato alle informazioni dettagliate'
-                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
-                    - name: 'Procedura: dalle informazioni dettagliate a un report dettagliato'
-                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
-                    - name: 'Procedura: da una dashboard alle informazioni dettagliate'
-                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
-                    - name: Creare una pianificazione per un report
-                      href: ./office-365-security/create-a-schedule-for-a-report.md
-                    - name: Gestire le pianificazioni per più report
-                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
-                    - name: Configurare e scaricare un report personalizzato
-                      href: ./office-365-security/set-up-and-download-a-custom-report.md
-                    - name: Scaricare i report esistenti
-                      href: ./office-365-security/download-existing-reports.md
-                - name: Visualizzare informazioni sui file dannosi
-                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: Panoramica del Dashboard sulla sicurezza
+              href: ./office-365-security/security-dashboard.md
+            - name: Visualizzare informazioni sui file dannosi
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Protezione avanzata dalle minacce
           href: ./office-365-security/office-365-atp.md
           items:

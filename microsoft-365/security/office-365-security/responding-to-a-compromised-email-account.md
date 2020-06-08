@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso usando gli strumenti disponibili in Microsoft 365.
-ms.openlocfilehash: f53d38c6e34e555542e0c655d7e7d24ca3c9c978
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf1ded6fb88cc26e96840dc2a8bfe20300205dc
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033831"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588217"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Rispondere a un account di posta elettronica compromesso
 
@@ -87,7 +87,7 @@ Anche l’accesso all’account è stato riacquisito rapidamente, un utente mali
 > [!WARNING]
 > Non inviare la nuova password per l'utente desiderato tramite posta elettronica, poiché l’utente malintenzionato potrebbe ancora avere accesso alla cassetta postale.
 
-1. Seguire i passaggi descritti in Reimpostare la password di App Microsoft 365 for business per altri utenti in[Reimpostare le password per App Microsoft 365 for business](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Seguire i passaggi descritti in Reimpostare la password di App Microsoft 365 for business per altri utenti in[Reimpostare le password per App Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
 
 **Note**:
 
@@ -98,7 +98,7 @@ Anche l’accesso all’account è stato riacquisito rapidamente, un utente mali
 - Se l'identità dell'utente locale è federata con Microsoft 365, è necessario cambiare la password locale e quindi informare l'amministratore della violazione.
 
 > [!TIP]
-> È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi.  Altre informazioni su MFA sono disponibili [qui](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi.  Altre informazioni su MFA sono disponibili [qui](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Passaggio 2: Rimuovere indirizzi di inoltro della posta elettronica
 
@@ -202,4 +202,4 @@ L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezi
 
 - [Securities and Exchange Commission (SEC) - Frode “Phishing”](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- Per segnalare messaggi di posta elettronica indesiderata direttamente a Microsoft e all'amministratore, [usare il componente aggiuntivo Segnala messaggio](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Per segnalare messaggi di posta elettronica indesiderata direttamente a Microsoft e all'amministratore, [usare il componente aggiuntivo Segnala messaggio](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
