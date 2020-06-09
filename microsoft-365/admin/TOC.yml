@@ -42,6 +42,14 @@
           href: setup/customize-your-organization-theme.md
         - name: Informazioni su Office 365 Germany
           href: admin-overview/learn-about-office-365-germany.md
+        - name: Accedere agli utenti e alle risorse locali
+          items:
+            - name: Sincronizzare gli utenti di dominio con Microsoft 365
+              href: ../business/manage-domain-users.md
+            - name: Abilitare dispositivi Windows 10 aggiunti a un dominio da gestire
+              href: ../business/manage-windows-devices.md
+            - name: Accedere alle risorse da un dispositivo aggiunto ad Azure AD
+              href: ../business/access-resources.md
     - name: Informazioni generali sull'interfaccia di amministrazione di Microsoft 365
       items:
         - name: Informazioni generali sull'interfaccia di amministrazione
@@ -278,6 +286,10 @@
           href: ../business/reset-devices-to-factory-settings.md
         - name: Funzionalità di protezione mapping alle impostazioni di Intune
           href: ../business/map-protection-features-to-intune-settings.md
+        - name: Stati dei dispositivi
+          href: ../business/device-states.md
+        - name: Impostazioni di protezione delle app per PC Windows 10
+          href: ../business/protection-settings-for-windows-10-devices.md
         - name: Impostazioni di protezione delle app per Android e iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
@@ -288,8 +300,16 @@
           items:
             - name: Convalidare le impostazioni su PC Windows 10
               href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: Impostazioni di protezione delle app per PC Windows 10
-          href: ../business/protection-settings-for-windows-10-devices.md
+        - name: Autopilot
+          items:
+            - name: Aggiungere dispositivi e profilo di AutoPilot
+              href: ../business/add-autopilot-devices-and-profile.md
+            - name: Creare e modificare profili AutoPilot
+              href: ../business/create-and-edit-autopilot-profiles.md
+            - name: Creare e modificare dispositivi AutoPilot
+              href: ../business/create-and-edit-autopilot-devices.md
+            - name: Impostazioni dei profili di AutoPilot
+              href: ../business/autopilot-profile-settings.md
     - name: Lavorare con i clienti
       href: work-with-customers/index.yml
       items:
