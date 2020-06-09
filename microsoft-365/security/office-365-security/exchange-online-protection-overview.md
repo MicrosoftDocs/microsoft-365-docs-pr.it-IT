@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come Exchange Online Protection (EOP) può aiutare a proteggere l'organizzazione di posta elettronica locale in ambienti autonomi e ibridi.
-ms.openlocfilehash: 7a019b2651eda114bab8dcf9df6d9a6201558704
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206680"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616987"
 ---
 # <a name="exchange-online-protection-overview"></a>Panoramica su Exchange Online Protection
 
@@ -109,6 +109,6 @@ Il contenuto della Guida di EOP per gli amministratori comprende le seguenti cat
 
 - Interfaccia di [amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md): viene descritto come accedere e navigare tramite il centro di gestione di amministrazione di Exchange (EAC) per gestire il servizio EOP.
 
-- [PowerShell di Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): fornisce informazioni su PowerShell remoto, che consente di gestire il servizio EOP dalla riga di comando.
+- [PowerShell di Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell): fornisce informazioni su PowerShell remoto, che consente di gestire il servizio EOP dalla riga di comando.
 
 - [Guida e supporto tecnico per EOP](help-and-support-for-eop.md) Fornisce informazioni su come ottenere assistenza e supporto tecnico.

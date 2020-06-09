@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceNetworkEvents nello schema di caccia avanzato
 description: Informazioni sugli eventi di connessione di rete che è possibile eseguire una query dalla tabella DeviceNetworkEvents dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, devicenetworkevents, NetworkCommunicationEvents, Network connessione, IP remoto, IP locale
+keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, devicenetworkevents, NetworkCommunicationEvents, connessione di rete, IP remoto, IP locale
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d5e3327f4b4e066b3e4c14f646ad8db78ff3804a
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3be6523372edcda520e05545c87385c0e1a42044
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929041"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617119"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -50,6 +50,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `LocalIPType` | stringa | Tipo di indirizzo IP, ad esempio pubblico, privato, riservato, loopback, Teredo, FourToSixMapping e broadcast |
 | `RemoteIPType` | stringa | Tipo di indirizzo IP, ad esempio pubblico, privato, riservato, loopback, Teredo, FourToSixMapping e broadcast |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file di immagine) che ha avviato l'evento |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |

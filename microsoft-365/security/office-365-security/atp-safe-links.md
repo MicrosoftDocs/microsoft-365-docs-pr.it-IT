@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo viene illustrato come utilizzare collegamenti sicuri per proteggere l'organizzazione da tentativi di phishing e altri attacchi.
-ms.openlocfilehash: f71ff8d625c6c365f39fd581f3483c8a0384d817
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5cd5e1331bb16b27cd036d20458355448ee32ae2
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587545"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616767"
 ---
 # <a name="atp-safe-links"></a>Collegamenti sicuri di ATP
 
@@ -69,7 +69,7 @@ Verificare **inoltre di disporre delle autorizzazioni necessarie**. Per definire
 |---------|---------|
 |amministratore globale|La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .|
 |Amministratore della sicurezza|Interfaccia di amministrazione di Azure Active Directory ( <https://aad.portal.azure.com> )|
-|Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di Exchange ( <https://outlook.office365.com/ecp> ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di Exchange ( <https://outlook.office365.com/ecp> ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Come assicurarsi che la protezione di collegamenti sicuri di ATP sia sul posto
 

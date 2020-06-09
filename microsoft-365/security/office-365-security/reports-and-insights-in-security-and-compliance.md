@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su Smart report e Insight disponibili nel centro sicurezza e conformità e su come utilizzarli per visualizzare ed esplorare i dati e intraprendere azioni rapide.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588157"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617309"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Smart report e informazioni dettagliate nel centro sicurezza e &amp; conformità
 
@@ -54,11 +54,6 @@ Oltre a evidenziare aree problematiche, Smart report e Insight includono suggeri
 |**Registro di controllo** <br/> Informazioni relative ad attività, utenti, file o cartelle di Microsoft 365 e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, andare alla ricerca nel registro di controllo ** &amp; analisi di ricerca** \> **Audit log search** <br/> |[Eseguire una ricerca nel log di controllo nel centro sicurezza e &amp; conformità](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Rapporti di conformità** <br/> Report di FedRAMP, governance, report di rischio e conformità, report di gestione della sicurezza delle informazioni ISO e report di controllo e valutazione di SOC (Service Organization Controls)  <br/> |Nel centro sicurezza &amp; e conformità, accedere ai report di conformità di **Service Assurance** \> **Compliance reports** <br/> |[Pianificare la &amp; conformità della sicurezza in Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>Passaggi successivi
-
-Ora che si dispone di una panoramica dei report e delle intuizioni, il passaggio successivo consiste nel sapere come personalizzare, gestire e scaricare i report. Fare inoltre riferimento ai seguenti articoli:
-  
-
     
 ## <a name="related-topics"></a>Argomenti correlati
 

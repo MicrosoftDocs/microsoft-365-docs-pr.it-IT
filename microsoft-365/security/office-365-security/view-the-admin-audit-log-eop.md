@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Gli amministratori possono ottenere informazioni su come visualizzare e cercare il log di controllo dell'amministratore in standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351862"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613325"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Visualizzare un log di controllo dell'amministratore in Exchange Online Protection autonomo
 
@@ -28,11 +28,11 @@ Il registro di controllo dell'amministratore registra azioni specifiche, basate 
 > [!NOTE]
 > <ul><li>La registrazione di controllo dell'amministratore è abilitata per impostazione predefinita e non è possibile disabilitarla.</li><li>Il registro di controllo dell'amministratore non registra le azioni in base ai cmdlet che iniziano con i verbi **Get**, **Search**o **test**.</li><li>Le voci del registro di controllo vengono conservate per 90 giorni. Quando una voce è più vecchia di 90 giorni, viene eliminata</li></ul>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Per aprire l'interfaccia di amministrazione di Exchange, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. In particolare, sono necessari i registri di controllo o il ruolo di controllo di sola visualizzazione, assegnati ai gruppi di ruoli ComplianceManagement, OrganizationManagement (Global Admins) e SecurityAdministrator per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -86,7 +86,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
   - Specificare il valore data/ora in UTC, ad esempio "2016-05-06 14:30:00z".
 
-  - Specificare il valore data/ora come formula che converte la data/ora nel fuso orario locale in ora UTC: ad esempio, `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Per altre informazioni, vedere [Get-Date](https://go.microsoft.com/fwlink/p/?LinkID=113313).
+  - Specificare il valore data/ora come formula che converte la data/ora nel fuso orario locale in ora UTC: ad esempio, `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Per altre informazioni, vedere [Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date).
 
 - Per impostazione predefinita, il cmdlet restituisce un massimo di 1.000 voci di log. Utilizzare il parametro _ResultSize_ per specificare fino a 250.000 voci di log. In alternativa, utilizzare il valore `Unlimited` per restituire tutte le voci.
 

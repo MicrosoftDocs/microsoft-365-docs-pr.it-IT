@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Gli amministratori possono imparare a assegnare o rimuovere le autorizzazioni nell'interfaccia di amministrazione di Exchange (EAC) in Exchange Online Protection.
-ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352336"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616515"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Gestire i gruppi di ruoli in Exchange Online Protection autonomo
 
@@ -25,11 +25,11 @@ Nelle organizzazioni standalone di Exchange Online Protection (EOP) senza casset
 
 Per ulteriori informazioni sui ruoli e sui gruppi di ruolo, vedere [Permissions in standalone EOP](feature-permissions-in-eop.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Per aprire l'interfaccia di amministrazione di Exchange (EAC), vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Per aprire PowerShell EOP autonomo, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Per aprire PowerShell EOP autonomo, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. In particolare, è necessario il ruolo di gestione dei ruoli, assegnato al gruppo di ruoli OrganizationManagement (Global Admins) per impostazione predefinita. Per ulteriori informazioni, vedere [autorizzazioni in EOP autonomo](feature-permissions-in-eop.md) e [utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -240,7 +240,7 @@ Per verificare la corretta copia di un gruppo di ruoli, eseguire una delle opera
 
 - Nell'interfaccia di amministrazione di Exchange, accedere ai ruoli di amministratore **delle autorizzazioni** \> **Admin roles**e verificare che il gruppo di ruoli sia elencato (o non elencato). Selezionare il gruppo di ruoli e verificare le impostazioni nel riquadro dei dettagli oppure fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) per verificare le impostazioni.
 
-- In Exchange Online PowerShell, sostituire il \< nome del gruppo di ruoli \> con il nome del gruppo di ruoli ed eseguire il seguente comando per verificare che il gruppo di ruoli esista (o non esista) e verificare le impostazioni:
+- In Exchange Online PowerShell, sostituire \<Role Group Name\> con il nome del gruppo di ruolo ed eseguire il comando riportato di seguito per verificare che il gruppo di ruoli esista (o non esista) e verificare le impostazioni:
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

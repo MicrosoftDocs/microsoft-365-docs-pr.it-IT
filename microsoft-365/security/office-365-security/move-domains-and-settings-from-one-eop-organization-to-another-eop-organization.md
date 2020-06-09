@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni su come spostare i domini e le impostazioni da un'organizzazione di Microsoft Exchange Online Protection (EOP) a un'altra.
-ms.openlocfilehash: 1144f193fd56587e8ea38fdd659af4bbaa05311c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 32a1721a70df88e7e0d558322988e3e64b3f3397
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588193"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617451"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra
 
@@ -59,7 +59,7 @@ Per ricreare l'organizzazione di origine nell'organizzazione di destinazione, as
   > [!NOTE]
   > Il supporto dei cmdlet per l'esportazione e l'importazione della raccolta di regole del flusso di posta è attualmente supportato solo per i piani di sottoscrizione Premium di EOP.
 
-Il modo più semplice per raccogliere tutte le impostazioni consiste nell'utilizzare PowerShell. Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+Il modo più semplice per raccogliere tutte le impostazioni consiste nell'utilizzare PowerShell. Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Successivamente, è possibile raccogliere tutte le impostazioni ed esportarle in un file XML da importare nel tenant di destinazione. In generale, è possibile eseguire il piping dell'output del cmdlet **Get** per ogni impostazione per il cmdlet **Export-Clixml** in modo da salvare le impostazioni nel file XML, come illustrato nell'esempio di codice seguente.
 

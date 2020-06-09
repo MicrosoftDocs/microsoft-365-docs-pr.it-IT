@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo &amp; reale nel centro sicurezza e conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
+description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza e &amp; conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036753"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613445"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -36,7 +36,7 @@ Se l'organizzazione dispone di [office 365 Advanced Threat Protection](office-36
 
 Con Esplora risorse (o rilevamenti in tempo reale), si dispone di un report potente che consente al team di operazioni di sicurezza di analizzare e rispondere alle minacce in modo efficace ed efficiente. Il report è simile all'immagine seguente:
 
-![Passare a gestione \> minacce](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Passare \> a gestione minacce](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Con questo rapporto, è possibile:
 
@@ -103,13 +103,13 @@ Per ulteriori informazioni sull'analisi dei messaggi di posta elettronica dannos
 
 Sarà inoltre possibile esportare i report per i clic URL in Microsoft Excel per visualizzare sia l'ID del messaggio di rete, sia il loro verdetto di clic, in cui è possibile capire dove è stato creato il traffico dell'URL. Ecco come funziona. A partire da Threat Management sulla barra di avvio veloce di Office 365, fare clic su questa catena:
 
-**Esplora** \> **visualizzazione phishing** \> **Clicks** **Top URLs or URL Top Clicks** \> URL principali o clic **su URL in alto fare clic su qualsiasi record per aprire il riquadro a comparsa URL** \>
+**Gestione risorse** \> **Visualizzazione phishing** \> **Clic su** \> URL **principali o clic** \> principali per gli URL **Fare clic su qualsiasi record per aprire il riquadro a comparsa URL**
 
 Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante Esporta nel riquadro di volo. Utilizzare questo pulsante per spostare i dati in un foglio di calcolo di Excel per semplificare la creazione di report.
 
 È possibile accedere allo stesso percorso nel rapporto rilevamenti in tempo reale, come indicato di seguito:
 
-**Explorer** \> **Rilevamenti** \> in tempo reale di Explorer visualizzare gli URL principali di **phishing** \> **URLs** \> **e** \> **fare clic su tutti i record per aprire il riquadro a comparsa** \> URL **passare alla scheda clic.**
+**Gestione risorse** \> Rilevamenti in tempo **reale** \> **Visualizzazione phishing** \> **URL** \> **URL principali o clic principali** \> **Fare clic su qualsiasi record per aprire il riquadro a comparsa URL** \> **Passare alla scheda clic.**
 
 > [!TIP]
 > ID messaggio di rete mappare il clic di nuovo su mail specifiche quando si esegue una ricerca tramite Explorer o gli strumenti di terze parti associati tramite ID messaggio di rete. La ricerca nell'ID messaggio di rete fornirà agli amministratori la posta elettronica specifica associata a un risultato di clic. In caso di esportazione, l'identificazione correlata dell'ID messaggio di rete rende l'analisi più rapida e potente.
@@ -120,13 +120,13 @@ Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante E
 
 Si supponga di voler vedere malware rilevato nella posta elettronica, tramite la tecnologia Microsoft 365. A tale scopo, utilizzare la visualizzazione [posta elettronica > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**Explorer** In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
-2. Scegliere**malware** **tramite posta elettronica** > dal menu **Visualizza** .
+2. Scegliere malware **tramite posta elettronica**dal menu **Visualizza**  >  **Malware**.
 
    ![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Fare clic su **mittente**e quindi scegliere**tecnologia di rilevamento**di **base** > .
+3. Fare clic su **mittente**e quindi scegliere tecnologia di rilevamento di **base**  >  **Detection technology**.
 
    Le tecnologie di rilevamento sono ora disponibili come filtri per il report.
 
@@ -144,13 +144,13 @@ Si supponga di voler visualizzare i tentativi di phishing tramite URL nella post
 
 Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi di phishing, utilizzare la visualizzazione di [posta elettronica > phishing](threat-explorer-views.md#email--phish) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**Explorer** In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
-2. Nel menu **Visualizza** scegliere **posta elettronica** > **phishing**.
+2. Nel menu **Visualizza** scegliere **posta elettronica**  >  **phishing**.
 
    ![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Fare clic su **sender**e quindi scegliere **urls** > **.**
+3. Fare clic su **sender**e quindi scegliere **urls**  >  **Click verdict**.
 
 4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate**, e quindi fare clic sul pulsante **Aggiorna** che si trova nella stessa riga delle opzioni per applicare il filtro. (Non aggiornare la finestra del browser.)
 
@@ -175,13 +175,13 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
 Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare la visualizzazione [> invii di posta elettronica](threat-explorer-views.md#email--submissions) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**Explorer** In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ), scegliere **gestione minacce**  >  **Explorer** (o **rilevamenti in tempo reale**). In questo esempio viene utilizzato Esplora.
 
-2. Scegliere **invii di posta elettronica** > **Submissions**dal menu **Visualizza** .
+2. Scegliere **invii di posta elettronica**dal menu **Visualizza**  >  **Submissions**.
 
    ![Menu Visualizza per Esplora risorse](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Fare clic su **mittente**e quindi scegliere**tipo di report**di **base** > .
+3. Fare clic su **mittente**e quindi scegliere tipo di report di **base**  >  **Report type**.
 
 4. Selezionare un'opzione, ad esempio **phishing**, e quindi fare clic sul pulsante **Aggiorna** .
 
@@ -216,13 +216,13 @@ Oltre agli scenari descritti in questo articolo, sono disponibili molte altre op
 
 Per visualizzare e utilizzare esplorazioni o rilevamenti in tempo reale, è necessario disporre delle autorizzazioni appropriate, ad esempio quelle concesse a un amministratore della sicurezza o a un lettore di sicurezza.
 
-- Per il centro &amp; sicurezza e conformità, è necessario che sia assegnato uno dei ruoli seguenti:
+- Per il &amp; Centro sicurezza e conformità, è necessario che sia assegnato uno dei ruoli seguenti:
 
   - Gestione organizzazione
-  - Amministratore della sicurezza (è possibile assegnarlo nell'interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ())
+  - Amministratore della sicurezza (è possibile assegnarlo nell'interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Ruolo con autorizzazioni di lettura per la sicurezza
 
-- Per Exchange Online, è necessario che sia assegnato uno dei ruoli seguenti nell'interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) o con i cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
+- Per Exchange Online, è necessario che sia assegnato uno dei ruoli seguenti nell'interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) o con i cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   - Gestione organizzazione
   - Gestione organizzazione in sola visualizzazione
@@ -231,7 +231,7 @@ Per visualizzare e utilizzare esplorazioni o rilevamenti in tempo reale, è nece
 
 Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse seguenti:
 
-- [Autorizzazioni nel centro sicurezza &amp; e conformità](permissions-in-the-security-and-compliance-center.md)
+- [Autorizzazioni nel centro sicurezza e &amp; conformità](permissions-in-the-security-and-compliance-center.md)
 - [Autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Alcune differenze tra Esplora minacce e rilevamenti in tempo reale

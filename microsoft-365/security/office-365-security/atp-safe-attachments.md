@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni sulla funzionalità degli allegati sicuri di ATP per Office 365 e su come ottenere la funzionalità per l'abbonamento.
-ms.openlocfilehash: 75b047c1761a936f1fb0e08c65d9c270a136a953
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 36993454a128d23ba388c24321a249f3be40d3d6
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588301"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616779"
 ---
 # <a name="atp-safe-attachments"></a>Allegati sicuri di ATP
 
@@ -49,7 +49,7 @@ Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un r
 |---------|---------|
 |amministratore globale|La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .|
 |Amministratore della sicurezza|Interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Come sapere se è attiva la protezione per gli allegati sicuri di ATP
 

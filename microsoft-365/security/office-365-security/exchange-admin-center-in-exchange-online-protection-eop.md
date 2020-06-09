@@ -1,5 +1,5 @@
 ---
-title: Interfaccia di amministrazione di Exchange in EOP autonomo
+title: Interfaccia di amministrazione di Exchange Online Protection autonomo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,14 +16,14 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Informazioni sull'interfaccia di gestione Web in standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209730"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616999"
 ---
-# <a name="exchange-admin-center-in-standalone-eop"></a>Interfaccia di amministrazione di Exchange in EOP autonomo
+# <a name="exchange-admin-center-in-standalone-eop"></a>Interfaccia di amministrazione di Exchange Online Protection autonomo
 
 Interfaccia di amministrazione di Exchange (EAC) è una console di gestione basata sul Web per Exchange Online Protection (EOP) autonomo.
 
@@ -70,7 +70,7 @@ In questa sezione vengono illustrati gli elementi dell'interfaccia utente dispon
 
 - **Flusso di posta**: consente di gestire le regole del flusso di posta (note anche come regole di trasporto), i domini accettati e i connettori, nonché le posizioni in cui è possibile eseguire la traccia dei messaggi.
 
-- Soluzione **ibrida**: è possibile eseguire la [procedura guidata di configurazione ibrida](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)e dove è possibile installare il [modulo di PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).
+- Soluzione **ibrida**: è possibile eseguire la [procedura guidata di configurazione ibrida](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)e dove è possibile installare il [modulo di PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).
 
 ### <a name="tabs"></a>Schede
 

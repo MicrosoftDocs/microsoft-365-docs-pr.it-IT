@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori nelle organizzazioni autonome di Exchange Online Protection (EOP) possono imparare a creare, modificare e rimuovere gruppi di distribuzione e gruppi di sicurezza abilitati alla posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) e in PowerShell di Exchange Online Protection (EOP) autonomo.
-ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352192"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616503"
 ---
 # <a name="manage-groups-in-eop"></a>Gestire gruppi in Exchange Online Protection
 
@@ -34,11 +34,11 @@ Nelle organizzazioni standalone di Exchange Online Protection (EOP) senza casset
 
 È possibile gestire i gruppi nell'interfaccia di amministrazione di Exchange (EAC) e in EOP PowerShell autonomo.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Per aprire l'interfaccia di amministrazione di Exchange, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Quando si gestiscono i gruppi in EOP standalone PowerShell, è possibile che si verifichi la limitazione. Nelle procedure di PowerShell di questo argomento viene utilizzato un metodo di elaborazione batch che genera un ritardo di propagazione di alcuni minuti prima che i risultati dei comandi siano visibili.
 
@@ -141,7 +141,7 @@ Per restituire un elenco riepilogativo di tutti i gruppi di distribuzione e i gr
 Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-Per restituire l'elenco dei membri del gruppo, sostituire \< groupIdentity \> con il nome, l'alias o l'indirizzo di posta elettronica del gruppo ed eseguire il comando riportato di seguito:
+Per restituire l'elenco dei membri del gruppo, sostituire \<GroupIdentity\> con il nome, l'alias o l'indirizzo di posta elettronica del gruppo ed eseguire il comando riportato di seguito:
 
 ```powershell
 Get-DistributionGroupMember -Identity <GroupIdentity>
@@ -231,13 +231,13 @@ Per verificare la corretta creazione, modifica o rimozione di un gruppo di distr
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
   ```
 
-- Sostituire \< groupIdentity \> con il nome, l'alias o l'indirizzo di posta elettronica del gruppo ed eseguire il comando riportato di seguito per verificare le impostazioni:
+- Sostituire \<GroupIdentity\> con il nome, l'alias o l'indirizzo di posta elettronica del gruppo ed eseguire il comando riportato di seguito per verificare le impostazioni:
 
   ```PowerShell
   Get-Recipient -Identity <GroupIdentity> | Format-List
   ```
 
-- Per visualizzare i membri del gruppo, sostituire \< groupIdentity \> con il nome, l'alias o l'indirizzo di posta elettronica del gruppo ed eseguire il comando riportato di seguito:
+- Per visualizzare i membri del gruppo, sostituire \<GroupIdentity\> con il nome, l'alias o l'indirizzo di posta elettronica del gruppo ed eseguire il comando riportato di seguito:
 
   ```PowerShell
   Get-DistributionGroupMember -Identity "<GroupIdentity>"

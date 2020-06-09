@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1a58d1e5db2ea8689d4909e6e9c47b08a6e94d34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: da6e84725aa391e4cb6056fadd327fdba2436214
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929242"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617087"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-La `AlertEvidence` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni su diverse entità, ovvero file, indirizzi IP, URL, utenti o dispositivi, associati a avvisi di Microsoft Defender ATP, Office 365 ATP, Microsoft cloud app Security e Azure ATP. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La `AlertEvidence` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni su diverse entità, ovvero file, indirizzi IP, URL, utenti o dispositivi, associati a avvisi di Microsoft Defender atp, Office 365 ATP, Microsoft cloud app Security e Azure ATP. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -40,7 +40,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `EntityType` | stringa | Tipo di oggetto, ad esempio un file, un processo, un dispositivo o un utente |
 | `EvidenceRole` | stringa | In che modo l'entità è coinvolta in un avviso, che indica se ha un impatto o è semplicemente correlato |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
-| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. Questo campo in genere non viene popolato, se disponibile, utilizzare la colonna SHA1. |
+| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `RemoteIP` | stringa | Indirizzo IP connesso a |
 | `RemoteUrl` | stringa | URL o nome di dominio completo (FQDN) connesso a |
 | `AccountName` | stringa | Nome utente dell'account |

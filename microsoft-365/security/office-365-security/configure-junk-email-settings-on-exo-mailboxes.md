@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
-ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: d5eaadc6d177acf91ea4d9d149c92a4de6cc8dd3
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588453"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616635"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 
@@ -46,9 +46,9 @@ Gli amministratori possono utilizzare PowerShell di Exchange Online per disabili
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Per eseguire queste procedure, è possibile utilizzare solo Exchange Online PowerShell. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Per eseguire queste procedure, è possibile utilizzare solo Exchange Online PowerShell. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni assegnate. In particolare, è necessario il ruolo **destinatari di posta elettronica** (assegnato ai gruppi di ruoli Gestione **organizzazione**, **Gestione destinatari**e **destinatari di posta elettronica personalizzati** per impostazione predefinita) o il ruolo **Opzioni utente** (assegnato ai gruppi di ruoli **Gestione organizzazione** e **supporto tecnico** per impostazione predefinita). Per aggiungere utenti ai gruppi di ruoli in Exchange Online, vedere [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Si noti che un utente con autorizzazioni predefinite può eseguire le stesse procedure nella propria cassetta postale, purché dispongano dell' [accesso a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+- Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni assegnate. In particolare, è necessario il ruolo **destinatari di posta elettronica** (assegnato ai gruppi di ruoli Gestione **organizzazione**, **Gestione destinatari**e **destinatari di posta elettronica personalizzati** per impostazione predefinita) o il ruolo **Opzioni utente** (assegnato ai gruppi di ruoli **Gestione organizzazione** e **supporto tecnico** per impostazione predefinita). Per aggiungere utenti ai gruppi di ruoli in Exchange Online, vedere [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Si noti che un utente con autorizzazioni predefinite può eseguire le stesse procedure nella propria cassetta postale, purché dispongano dell' [accesso a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 - Negli ambienti di EOP autonomi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare le regole del flusso di posta (anche note come regole di trasporto) in Exchange locale per tradurre il verdetto filtro posta indesiderata in modo che la regola della posta indesiderata possa spostare il messaggio nella cartella Posta indesiderata. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 

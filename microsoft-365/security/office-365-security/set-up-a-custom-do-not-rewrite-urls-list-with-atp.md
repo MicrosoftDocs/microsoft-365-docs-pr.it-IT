@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare gli URL bloccati personalizzati per gli utenti e l'elenco di URL non riscritti per un gruppo di utenti nei criteri dei collegamenti sicuri ATP di Office 365.
-ms.openlocfilehash: c75f468aa98c8fa9e45cd596c62a7509310fdca5
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: f4e7067c9edc9bbe2965311a7c203cb16f242f49
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588133"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617243"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurare un elenco di URL non di riscrittura personalizzato utilizzando collegamenti sicuri di ATP
 
@@ -45,7 +45,7 @@ Per modificare (o definire) i criteri ATP, è necessario essere assegnati a un r
 |---------|---------|
 |amministratore globale |La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .         |
 |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Gestione organizzazione di Exchange Online |Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+|Gestione organizzazione di Exchange Online |Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
 
 > [!TIP]
 > Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).

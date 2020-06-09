@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per l'uso autonomo di Exchange Online Protection (EOP) per essere configurati per l'esito positivo ed evitare errori comuni di configurazione.
-ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a2ef5d20a79a15e4b1965d352ed0603ac0783121
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587533"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616723"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedure consigliate per la configurazione di EOP autonomo
 
@@ -53,7 +53,7 @@ Queste impostazioni riguardano una serie di funzionalità esterne ai criteri di 
 |[Connettività POP alla cassetta postale](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disattivato|Disattivato||
 |Inoltro SMTP autenticato|Disattivato|Disattivato|Inoltro SMTP client autenticato (noto anche come invio SMTP client o autenticazione SMTP) per i client POP3 e IMAP4 per l'invio di posta elettronica.|
 |Connettività EWS alla cassetta postale|Disattivato|Disattivato||
-|[Connettività di PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Disattivato|Disattivato|Disponibile per gli utenti di cassette postali o per gli utenti di posta (oggetti utente restituiti dal cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) ).|
+|[Connettività di PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Disattivato|Disattivato|Disponibile per gli utenti di cassette postali o per gli utenti di posta (oggetti utente restituiti dal cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) ).|
 |Utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) per i mittenti whitelist quando possibile|Sì|Sì||
 |[Blocco Edge basato su directory (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Abilitato|Abilitato|Tipo di dominio = autorevole|
 |[Configurare l'autenticazione a più fattori per tutti gli account di amministrazione](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Abilitato|Abilitato||

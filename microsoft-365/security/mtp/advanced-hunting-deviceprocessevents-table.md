@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceProcessEvents nello schema di caccia avanzato
 description: Informazioni sugli eventi di creazione o di generazione dei processi nell'DeviceProcessEventstable dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento dello schema, kusto, tabella, colonna, tipo di dati, processcreationevents, DeviceProcessEvents, ID processo, comando riga, DeviceProcessEvents
+keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento dello schema, kusto, tabella, colonna, tipo di dati, processcreationevents, DeviceProcessEvents, ID processo, riga di comando, DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: eae1eff69fa6a91413e3f2dd6644c9c27549968e
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: a6e22dc9462ff8f06f171b71b2d68973fd87cc63
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234775"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617473"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -44,7 +44,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FolderPath` | stringa | Cartella contenente il file a cui è stata applicata l'azione registrata |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
-| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. Questo campo in genere non viene popolato, se disponibile, utilizzare la colonna SHA1. |
+| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `MD5` | stringa | Hash MD5 del file a cui è stata applicata l'azione registrata |
 | `ProcessId` | int | ID processo (PID) del processo appena creato |
 | `ProcessCommandLine` | stringa | Riga di comando utilizzata per creare il nuovo processo |
@@ -62,7 +62,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessIntegrityLevel` | stringa | Livello di integrità del processo che ha avviato l'evento. Windows assegna livelli di integrità ai processi basati su determinate caratteristiche, ad esempio se sono stati avviati da un download Internet. Tali livelli di integrità influiscono sulle autorizzazioni per le risorse |
 | `InitiatingProcessTokenElevation` | stringa | Tipo di token che indica la presenza o l'assenza dell'elevazione dei privilegi di controllo di accesso utente applicato al processo che ha avviato l'evento |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file di immagine) che ha avviato l'evento |
-| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. Questo campo in genere non viene popolato, se disponibile, utilizzare la colonna SHA1 |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |

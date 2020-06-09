@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceFileEvents nello schema di caccia avanzato
 description: Informazioni sugli eventi correlati ai file nella tabella DeviceFileEvents dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, filecreationevents, DeviceFileEvents, file, percorso, hash, SHA1, SHA256, MD5
+keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento dello schema, kusto, tabella, colonna, tipo di dati, descrizione, filecreationevents, DeviceFileEvents, file, percorso, hash, SHA1, SHA256, MD5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07569b93244bd420fe5961e20e6951ea84ae47d7
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 4b815afbe8e3ca1f7967d13f6482b90f7c64e362
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235035"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617163"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
 **Si applica a:**
 - Microsoft Threat Protection
-
-
 
 La `DeviceFileEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sulla creazione, la modifica e altri eventi del file System. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
@@ -44,7 +42,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FolderPath` | stringa | Cartella contenente il file a cui è stata applicata l'azione registrata |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
-| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. Questo campo in genere non viene popolato, se disponibile, utilizzare la colonna SHA1 |
+| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `MD5` | stringa | Hash MD5 del file a cui è stata applicata l'azione registrata |
 | `FileOriginUrl` | stringa | URL da cui è stato scaricato il file |
 | `FileOriginReferrerUrl` | stringa | URL della pagina Web che collega al file scaricato |
@@ -54,6 +52,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessAccountSid` | stringa | ID di sicurezza (SID) dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file di immagine) che ha avviato l'evento |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessFolderPath` | stringa | Cartella contenente il processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |
@@ -64,6 +63,13 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessParentId` | int | ID processo (PID) del processo padre che ha generato il processo responsabile dell'evento |
 | `InitiatingProcessParentFileName` | stringa | Nome del processo padre che ha generato il processo responsabile dell'evento |
 | `InitiatingProcessParentCreationTime` | datetime | Data e ora in cui è stato avviato l'elemento padre del processo responsabile dell'evento |
+| `RequestProtocol` | stringa | Protocollo di rete, se applicabile, utilizzato per avviare l'attività: Unknown, local, SMB o NFS |
+| `ShareName` | stringa | Nome della cartella condivisa che contiene il file |
+| `RequestSourceIP` | stringa | Indirizzo IPv4 o IPv6 del dispositivo remoto che ha avviato l'attività |
+| `RequestSourcePort` | stringa | Porta di origine nel dispositivo remoto che ha avviato l'attività |
+| `RequestAccountName` | stringa | Nome utente dell'account utilizzato per avviare l'attività in remoto |
+| `RequestAccountDomain` | stringa | Dominio dell'account utilizzato per avviare l'attività in remoto |
+| `RequestAccountSid` | stringa | ID di sicurezza (SID) dell'account utilizzato per avviare l'attività in remoto |
 | `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e timestamp. |
 | `AppGuardContainerId` | stringa | Identificatore per il contenitore virtualizzato utilizzato dalla protezione dell'applicazione per isolare l'attività del browser |
 | `SensitivityLabel` | stringa | Etichetta applicata a un messaggio di posta elettronica, un file o un altro contenuto per classificarlo per la protezione delle informazioni |

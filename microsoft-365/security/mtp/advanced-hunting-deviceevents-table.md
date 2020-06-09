@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f340a34b3c88f1caba83861c4d36ce140846d495
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235045"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617175"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235045"
 
 
 
-Gli eventi o `DeviceEvents` la tabella del dispositivo miscellaneo nello schema di [caccia avanzato](advanced-hunting-overview.md) contengono informazioni sui vari tipi di evento, tra cui gli eventi attivati dai controlli di sicurezza, ad esempio Windows Defender Antivirus e exploit Protection. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+Gli eventi o la tabella del dispositivo miscellaneo `DeviceEvents` nello schema di [caccia avanzato](advanced-hunting-overview.md) contengono informazioni sui vari tipi di evento, tra cui gli eventi attivati dai controlli di sicurezza, ad esempio Windows Defender Antivirus e exploit Protection. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -45,7 +45,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FolderPath` | stringa | Cartella contenente il file a cui è stata applicata l'azione registrata |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
-| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. Questo campo in genere non viene popolato, se disponibile, utilizzare la colonna SHA1 |
+| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `MD5` | stringa | Hash MD5 del file a cui è stata applicata l'azione registrata |
 | `AccountDomain` | stringa | Dominio dell'account |
 | `AccountName` | stringa | Nome utente dell'account |
@@ -68,7 +68,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `FileOriginIP` | stringa | Indirizzo IP da cui è stato scaricato il file |
 | `AdditionalFields` | stringa | Ulteriori informazioni sull'evento nel formato di matrice JSON |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file di immagine) che ha avviato l'evento |
-| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. Questo campo in genere non viene popolato, se disponibile, utilizzare la colonna SHA1 |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
 | `InitiatingProcessFolderPath` | stringa | Cartella contenente il processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a instradare la posta indesiderata alle cartelle posta indesiderata degli utenti in un ambiente ibrido di Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: dcfee309e532256a71511c3f6de019b22f5db093
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351964"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617055"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurare EOP autonomo per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi
 
@@ -46,7 +46,7 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 > [!TIP]
 > Invece di inviare i messaggi alla cartella posta indesiderata dell'utente locale, è possibile configurare i criteri di protezione dalla posta indesiderata in EOP per la quarantena dei messaggi di posta indesiderata in EOP. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni nell'ambiente di Exchange locale. In particolare, è necessario che venga assegnato il ruolo **regole di trasporto** , assegnato ai ruoli Gestione **organizzazione**, **Gestione conformità**e **record** per impostazione predefinita. Per ulteriori informazioni, vedere [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).
 
@@ -60,7 +60,7 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 
   - Se la regola di posta indesiderata è abilitata per la cassetta postale (il valore del parametro _Enabled_ è $true sul cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) in Exchange Management Shell). È la regola di posta indesiderata che in realtà sposta il messaggio nella cartella posta indesiderata dopo il recapito. Per impostazione predefinita, la regola di posta indesiderata è abilitata sulle cassette postali. Per ulteriori informazioni, vedere [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Per aprire EAC su un server Exchange, vedere interfaccia [di amministrazione di Exchange in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Per aprire Exchange Management Shell, vedere [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
+- Per aprire EAC su un server Exchange, vedere interfaccia [di amministrazione di Exchange in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Per aprire Exchange Management Shell, vedere [https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) .
 
 - Per ulteriori informazioni sulle regole del flusso di posta in Exchange locale, vedere i seguenti argomenti:
 
@@ -134,7 +134,7 @@ Per verificare la corretta configurazione di EOP autonomo per recapitare la post
 
 - Nell'interfaccia di amministrazione di Exchange, andare a regole del **flusso di posta** \> **Rules**, selezionare la regola, quindi fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) per verificare le impostazioni.
 
-- In Exchange Management Shell, sostituire \< RuleName \> con il nome della regola del flusso di posta e RUL il comando seguente per verificare le impostazioni:
+- In Exchange Management Shell, sostituire \<RuleName\> con il nome della regola del flusso di posta e RUL il comando seguente per verificare le impostazioni:
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

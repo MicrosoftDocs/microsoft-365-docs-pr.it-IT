@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c0b58d41996df2829590d7184615e8f30f4c4e16
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 610cdebaf4e010c78d7356286901fb18c5d740d1
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234805"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616491"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -51,6 +51,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessAccountName` | stringa | Nome utente dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountSid` | stringa | ID di sicurezza (SID) dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file di immagine) che ha avviato l'evento |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |

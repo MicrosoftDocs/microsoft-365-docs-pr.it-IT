@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
-ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
+ms.openlocfilehash: 0ad4381d4a4004d89dd35aa59098f26d8f12dd56
+ms.sourcegitcommit: bc17d4b2197dd60cdff7c9349bbe19eeaac85ac2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432605"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604311"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -195,6 +195,35 @@ Tuttavia, è possibile utilizzare entrambe le soluzioni di protezione insieme e 
 - Se sono state abilitate le impostazioni di una raccolta IRM aggiuntive, in cui è possibile impedire agli utenti di caricare documenti che non supportano IRM, queste impostazioni vengono applicate.
 
 Con questo comportamento, è possibile garantire che tutti i file di Office e PDF siano protetti da accessi non autorizzati, se sono stati scaricati, anche se non sono etichettati. Tuttavia, i file etichettati caricati non trarranno vantaggio dalle nuove funzionalità.
+
+## <a name="search-for-documents-by-sensitivity-label"></a>Ricerca di documenti in base all'etichetta di riservatezza
+
+Utilizzare la proprietà gestita **InformationProtectionLabelId** per trovare tutti i documenti di SharePoint o OneDrive che dispongono di un'etichetta di riservatezza specifica. Utilizzare la sintassi seguente:`InformationProtectionLabelId:<GUID>`
+
+Ad esempio, per cercare tutti i documenti che sono stati etichettati come "riservati" e tale etichetta ha un GUID di "8faca7b8-8d20-48A3-8ea2-0f96310a848e", nella casella di ricerca digitare quanto segue:
+
+`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
+
+Per ottenere i GUID per le etichette di riservatezza, utilizzare il cmdlet [get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) :
+    
+1. Prima di tutto, [connettersi a PowerShell in Centro sicurezza e conformità di Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
+    
+    Ad esempio, in una sessione di PowerShell eseguita come amministratore, accedere con un account di amministratore globale:
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
+
+2. Eseguire quindi il comando riportato di seguito:
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
+
+Per ulteriori informazioni sull'utilizzo delle proprietà gestite, vedere [gestire lo schema di ricerca in SharePoint](https://docs.microsoft.com/sharepoint/manage-search-schema).
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Come disabilitare le etichette di riservatezza per SharePoint e OneDrive (opt-out)
 

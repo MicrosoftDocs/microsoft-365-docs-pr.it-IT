@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
-ms.openlocfilehash: fc9a13ce7a2fc8782ed260ce0ce64aec456a4d51
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 820f635e679be9d579ba94fc3288830dc6996a0e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213425"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617043"
 ---
 # <a name="eop-features"></a>Funzionalità di Exchange Online Protection
 
@@ -78,7 +78,7 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |Amministrazione basata su Web|Gli amministratori possono gestire il servizio nell'interfaccia di amministrazione di Exchange (EAC), che è supportato in 60 lingue. Per ulteriori informazioni, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Sincronizzazione della directory|La sincronizzazione della directory è disponibile tramite lo strumento di sincronizzazione di Azure Active Directory. Per ulteriori informazioni, vedere la sezione "Utilizzare la sincronizzazione della directory per gestire gli utenti di posta" in [Gestione utenti di posta in EOP](manage-mail-users-in-eop.md).  |
 |DBEB (Directory Based Edge Blocking)|La funzionalità DBEB consente all'utente di rifiutare messaggi per destinatari non validi nel perimetro della rete di servizi. DBEB consente agli amministratori di aggiungere destinatari abilitati alla posta elettronica a Microsoft 365 e di bloccare tutti i messaggi inviati a indirizzi di posta elettronica che non sono presenti in Microsoft 365. Per ulteriori informazioni sulla configurazione di DBEB, vedere [use directory based Edge Blocking to Reject messages sent to invalid recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
-|PowerShell|La funzionalità EOP completa è disponibile in PowerShell EOP autonomo. Per ulteriori informazioni, vedere [PowerShell di Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
+|PowerShell|La funzionalità EOP completa è disponibile in PowerShell EOP autonomo. Per ulteriori informazioni, vedere [PowerShell di Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell).|
 |**Creazione di rapporti e registrazione**||
 |Traccia dei messaggi|Gli amministratori possono seguire i messaggi di posta elettronica che passano attraverso il servizio. È possibile determinare se un messaggio di posta elettronica di destinazione è stato ricevuto, rifiutato, rinviato o recapitato dal servizio. Ciò consente all'amministratore di rispondere in modo preciso alle domande dei propri utenti, di risolvere i problemi del flusso di posta elettronica e di convalidare eventuali modifiche apportate ai criteri, riducendo la necessità di rivolgersi al supporto tecnico per assistenza. Per ulteriori informazioni, vedere [Traccia messaggio nel Centro sicurezza e conformità](message-trace-scc.md).|
 |Rapporti basati su Web|I rapporti di protezione della posta elettronica nel centro sicurezza & Compliance forniscono i dati di messaggistica. Ad esempio, è possibile monitorare la quantità di posta indesiderata e malware rilevati o la frequenza con cui vengono confrontate le regole del flusso di posta. Grazie a questi rapporti interattivi, è possibile ottenere rapidamente un rapporto visivo dei dati di riepilogo e visualizzare i dettagli dei singoli messaggi, risalendo fino a 90 giorni addietro. Per ulteriori informazioni, vedere [Use Mail Protection reports to view data about malware, spam, and Rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|
