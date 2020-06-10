@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 9ce3ad0bfa7b50dfd5dfa5b5e2a35e6d70600e46
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 74e33fe394802050ced64c5c3d9e41dcbd2550f0
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351988"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616527"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -71,7 +71,7 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare criteri di protezione dalla posta indesiderata, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore della sicurezza**. Per l'accesso in sola lettura ai criteri di protezione dalla posta indesiderata, è necessario essere un membro del gruppo di ruoli **Ruolo con autorizzazioni di lettura per la sicurezza**. Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
@@ -336,7 +336,7 @@ Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, �
 
 3. Nei dettagli dei criteri espansi visualizzati, fare clic su **Configurare le notifiche di posta indesiderata dell'utente finale**.
 
-4. Nella finestra di dialogo **\<Nome criterio\>** che si apre, configurare le seguenti impostazioni:
+4. Nella finestra di dialogo **\<Policy Name\>** che si apre, configurare le seguenti impostazioni:
 
    - **Abilitare le notifiche di posta indesiderata per l'utente finale**: selezionare la casella di controllo per abilitare le notifiche. Per disattivare le notifiche, deselezionare la casella di controllo.
 
@@ -391,7 +391,7 @@ La creazione di un criterio di protezione dalla posta indesiderata in PowerShell
 
   - Creare il nuovo criterio come disabilitato (_Abilitato_ `$false` nel cmdlet **New-HostedContentFilterRule**).
 
-  - Impostare la priorità del criterio durante la creazione (_Numero di_ _\<priorità\>_, nel cmdlet **New-HostedContentFilterRule**).
+  - Impostare la priorità del criterio durante la creazione (_Priorità_ _\<Number\>_) nel cmdlet **New-HostedContentFilterRule**).
 
 - Il nuovo criterio di filtro della posta indesiderata creato in PowerShell non sarà visibile nel Centro sicurezza e conformità finché non vi verrà assegnata una regola di filtro della posta indesiderata.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: 8717f6dc9f86ed8d0d9bab378588d70e2854e8e7
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: ead28675a24b0364b89948fe582277862eaab3b8
+ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352488"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44649405"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)
 
@@ -89,7 +89,7 @@ In questa nuova pagina **Impostazioni sito e gruppo**, configurare le impostazio
 
 - **Accesso di utenti esterni**: controllare se il proprietario del gruppo può [aggiungere utenti guest al gruppo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Dispositivi non gestiti**: per i [dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices), è possibile consentire l'accesso completo, il solo accesso Web o il blocco totale. 
+- **Dispositivi non gestiti**: per i [dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices), è possibile consentire l'accesso completo, il solo accesso Web o il blocco totale. Se è stata configurata questa impostazione a livello di tenant o per un sito specifico, l'impostazione specificata qui verrà applicata solo se è più restrittiva.
 
 ![Scheda Impostazioni sito e gruppo](../media/edit-sensitivity-label-site-group2.png)
 

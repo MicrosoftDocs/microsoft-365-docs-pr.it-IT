@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono scoprire come rimuovere gli utenti dal portale Utenti con restrizioni in Office 365. Gli utenti vengono aggiunti al portale Utenti con restrizioni se hanno inviato posta indesiderata in uscita, in genere in seguito a una compromissione dell'account.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9865b409be6bce14b84a9175e8f17cdad58befe
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b9e28550c67e20466b18b17d8b49fb1b68997cc4
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351008"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617363"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Rimuovere utenti bloccati dal portale Utenti con restrizioni in Office 365
 
@@ -40,7 +40,7 @@ Gli amministratori possono rimuovere gli utenti dal portale Utenti con restrizio
 
 - Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **Utenti con restrizioni**, usare <https://protection.office.com/restrictedusers>.
 
-- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per rimuovere utenti dal portale Utenti con restrizioni è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore della sicurezza**. Per l'accesso in sola lettura al portale Utenti con restrizioni, è necessario essere un membro del gruppo di ruoli **Ruolo con autorizzazioni di lettura per la sicurezza**. Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
@@ -104,7 +104,7 @@ Get-BlockedSenderAddress -SenderAddress <emailaddress>
 
 Per informazioni dettagliate su sintassi e parametri, vedere [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress).
 
-Per rimuovere un utente dall’elenco Utenti con Restrizioni, sostituire \<emailaddress\> con l'indirizzo di posta elettronica corrispondente ed eseguire il comando seguente:
+Per rimuovere un utente dall'elenco Utenti con Restrizioni, sostituire \<emailaddress\> con l'indirizzo di posta elettronica corrispondente ed eseguire il comando seguente:
 
 ```powershell
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>

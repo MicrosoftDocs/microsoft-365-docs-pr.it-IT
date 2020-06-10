@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 47122e4ec6f902e0c84bd223ff771dc5db6fdfa5
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: db937347dd397628e0cfaae67b8c923f9433ca13
+ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560483"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44649395"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -71,6 +71,7 @@ Usare la documentazione seguente a supporto della distribuzione delle etichette 
 |Operazione da eseguire|Documentazione|
 |----------------|---------------|
 |Creare e pubblicare etichette di riservatezza per proteggere i dati dell'organizzazione|[Creare e configurare etichette di riservatezza e i relativi criteri](create-sensitivity-labels.md)|
+|Consentire agli utenti di etichettare e proteggere i file dai computer Windows tramite app di Office, Esplora file e PowerShell|[Client di etichettatura unificata di Azure Information Protection per Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Crittografare documenti e messaggi di posta elettronica con etichette di riservatezza e limitare gli utenti autorizzati ad accedervi e il relativo uso |[Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md)|
 |Abilitare le etichette di riservatezza per Office sul Web, con supporto per creazione condivisa, eDiscovery, prevenzione della perdita dei dati e ricerca, anche quando i documenti sono crittografati. | [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Gestire le etichette di riservatezza per le app di Office in modo che il contenuto venga etichettato non appena creato |[Usare le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md)|
