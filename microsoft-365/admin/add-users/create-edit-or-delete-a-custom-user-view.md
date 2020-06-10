@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Informazioni su come utilizzare i filtri per creare, modificare o eliminare una visualizzazione utente personalizzata in Microsoft 365.
-ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 598a167b9845f763ddab57d3c5ba36e431aa751c
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431642"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664575"
 ---
-# <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Creare, modificare o eliminare una visualizzazione utente personalizzata in Office 365
+# <a name="create-edit-or-delete-a-custom-user-view"></a>Creazione, modifica o eliminazione di una visualizzazione utente personalizzata
 
-Se l'utente è un amministratore Gestione utenti o un amministratore globale di Office 365, è possibile creare visualizzazioni utente personalizzate per visualizzare un sottoinsieme specifico di utenti. Queste visualizzazioni si aggiungono all'insieme standard di visualizzazioni incluso in Office 365. È possibile creare, modificare o eliminare le visualizzazioni utente personalizzate e quelle create dall'utente sono disponibili per tutti gli amministratori.
+Se si è un amministratore globale o di gestione utente di un abbonamento a Microsoft 365 for business, è possibile creare visualizzazioni utente personalizzate per visualizzare un sottoinsieme specifico di utenti. Queste visualizzazioni si aggiungono al set di visualizzazioni standard. È possibile creare, modificare o eliminare le visualizzazioni utente personalizzate e quelle create dall'utente sono disponibili per tutti gli amministratori.
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Visualizzazioni utente personalizzate nell'interfaccia di amministrazione
 
@@ -98,7 +98,7 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
+1. Nell'interfaccia di amministrazione, passare a utenti attivi degli **utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
     
 2. Nella pagina **utenti attivi** selezionare **filtri** e selezionare **nuovo filtro**.
   
@@ -108,7 +108,7 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
+1. Nell'interfaccia di amministrazione, passare a utenti attivi degli **utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
 
 2. Nella pagina **utenti attivi** selezionare **visualizzazioni** e quindi **Aggiungi visualizzazione personalizzata**.
   
@@ -119,7 +119,7 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
+1. Nell'interfaccia di amministrazione, passare a utenti attivi degli **utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
 
 2. Nella pagina **utenti attivi** selezionare **visualizzazioni** e quindi **Aggiungi visualizzazione personalizzata**.
   
@@ -132,7 +132,7 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
+1. Nell'interfaccia di amministrazione, passare a utenti attivi degli **utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
     
 2. Nella pagina **utenti attivi** selezionare **filtro**, selezionare il filtro che si desidera modificare e quindi scegliere **Modifica filtro**. 
     
@@ -145,7 +145,7 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
+1. Nell'interfaccia di amministrazione, passare a utenti attivi degli **utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
 
 2. Nella pagina **utenti attivi** selezionare **visualizzazioni**, selezionare il filtro che si desidera modificare, quindi selezionare **modifica questa visualizzazione**. 
     
@@ -158,7 +158,7 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
+1. Nell'interfaccia di amministrazione, passare a utenti attivi degli **utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
 
 2. Nella pagina **utenti attivi** selezionare **visualizzazioni**, selezionare il filtro che si desidera modificare, quindi selezionare **modifica questa visualizzazione**. 
     

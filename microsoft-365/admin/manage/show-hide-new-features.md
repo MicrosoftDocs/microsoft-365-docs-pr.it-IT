@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Decidere quali funzionalità e quali nuovi contenuti vengono visualizzati o nascosti dagli utenti finali in Office What ' s New Management for Office desktop apps.
-ms.openlocfilehash: 0723823e76be2baf15273d23ad343d91bcec8d60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399543"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678603"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Mostrare o nascondere le nuove funzionalità con Gestione novità
 
-Office What ' s New Management for Win 32 consente all'organizzazione di decidere quali funzionalità vengono visualizzate o nascoste dagli utenti finali nell'app desktop di Office. Ogni versione di Office include funzionalità nuove e migliorate e l'anteprima del contenuto consente di visualizzare il nuovo contenuto per ogni release version e Channel e di scegliere se nascondere o mostrare il nuovo contenuto per ogni caratteristica agli utenti finali. 
+Office What ' s New Management for Windows consente all'organizzazione di decidere quali funzionalità vengono visualizzate o nascoste dagli utenti finali nell'app desktop di Office. Ogni versione di Office include funzionalità nuove e migliorate e l'anteprima del contenuto consente di visualizzare il nuovo contenuto per ogni release version e Channel e di scegliere se nascondere o mostrare il nuovo contenuto per ogni caratteristica agli utenti finali. 
 
 Il nuovo contenuto nelle app desktop di Office evidenzia un elenco curato di nuove funzionalità rilasciate per tale applicazione, con una breve descrizione e spesso un'immagine o un video creato dal team che rilascia la funzionalità per aiutare i clienti a imparare a usare la caratteristica. 
 
@@ -37,11 +37,11 @@ Office What ' s New Management è disponibile nell'interfaccia di amministrazion
 > [!NOTE]
 > Amministratore globale e ruoli di amministratore di Office Apps gestire il nuovo contenuto visualizzato dagli utenti nelle app di Office.
 
-##  <a name="show-or-hide-new-features"></a>Mostrare o nascondere nuove funzionalità 
+##  <a name="show-or-hide-new-features"></a>Mostrare o nascondere le nuove funzionalità 
 
 Gli amministratori possono visualizzare in anteprima il nuovo contenuto di un canale e gestire il rilascio del contenuto tramite Office What ' s New Management.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, in **Impostazioni**fare clic su **Impostazioni**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, in **Impostazioni**, scegliere **Impostazioni organizzazione**.
 
 2. Nella scheda **Servizi** scegliere **Office What ' s New Management**.
 
@@ -59,11 +59,11 @@ Nuove funzionalità vengono visualizzate in Office What ' s New Management in ba
 ||||
 |:-----|:-----|:-----|
 |**Canale** <br/> |**In Gestione anteprime** <br/> |**Azione** <br/> |
-|**Mensile** <br/> |15 del mese  <br/> |1-3 settimane prima della pubblicazione mensile <br/> |
-|**Semestrale (mirato)** <br/> |Settembre 1 e marzo 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità
-|**Semestrale** <br/> |Gen 1 e luglio 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità<br/> |
+|**Corrente** <br/> |15 del mese  <br/> |1-3 settimane prima della pubblicazione mensile <br/> |
+|**Organizzazione semestrale (anteprima)** <br/> |Settembre 1 e marzo 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità
+|**Azienda semestrale** <br/> |Gen 1 e luglio 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità<br/> |
 
-Per ulteriori informazioni sulle pianificazioni degli aggiornamenti dei canali, vedere [Update History for Microsoft 365 Apps (elencato in base alla data)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+Per ulteriori informazioni sulle pianificazioni degli aggiornamenti dei canali, vedere [Update History for Microsoft 365 Apps (elencato in base alla data)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
 
 ## <a name="related-articles"></a>Articoli correlati
 

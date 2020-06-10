@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come è possibile reimpostare le password utilizzando lo strumento di reimpostazione della password self-service.
-ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 40f094489a1981302e97043b019e8c90a52ffc55
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431702"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678683"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
@@ -54,7 +54,8 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 Con questi passaggi si attiva la reimpostazione della password in modalità self-service per tutti gli utenti dell'azienda.
   
 ::: moniker range="o365-worldwide"
-1. Nell'interfaccia di amministrazione passare alla pagina impostazioni **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> .
+
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>, passare alla pagina **Impostazioni** > **org** Settings.
 
 ::: moniker-end
 
@@ -70,13 +71,17 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
 
 ::: moniker-end
 
-2. Nella parte superiore della pagina Impostazioni selezionare **sicurezza & privacy**.
+2. Nella parte superiore della pagina **Impostazioni organizzazione** selezionare la scheda **protezione & privacy** .
   
-3. Selezionare la **reimpostazione della password self-service**.
+3. Selezionare **reimpostazione della password in modalità self-service**.
+
+4. In **reimpostazione della password self-service**selezionare **Vai al portale di Azure per abilitare la reimpostazione della password in modalità self-service**.
+
+5. Nel riquadro di spostamento a sinistra, selezionare **utenti**e quindi fare clic su **utenti | Pagina tutti gli utenti** , selezionare **Reimposta password**.
   
-4. Nella pagina delle proprietà, selezionare **tutto** per attivarlo per tutti gli utenti dell'azienda, quindi selezionare **Salva**.
+6. Nella pagina delle **Proprietà** , selezionare **tutto** per attivarlo per tutti gli utenti dell'azienda, quindi selezionare **Salva**.
   
-5. Quando gli utenti accedono, verrà richiesto di immettere ulteriori informazioni di contatto che consentiranno di reimpostare la password in futuro.
+7. Quando gli utenti accedono, verrà richiesto di immettere ulteriori informazioni di contatto che consentiranno di reimpostare la password in futuro.
 
 ## <a name="related-articles"></a>Articoli correlati
 

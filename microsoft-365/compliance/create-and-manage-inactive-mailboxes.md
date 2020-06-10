@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: È possibile creare una cassetta postale inattiva in Microsoft 365 applicando un criterio di conservazione o mantenimento alla cassetta postale e quindi eliminando l'account utente corrispondente. Gli elementi di una cassetta postale inattiva vengono conservati per la durata del blocco o del criterio di conservazione applicato prima che venisse reso inattivo. Per eliminare definitivamente una cassetta postale inattiva, è sufficiente rimuovere il blocco o il criterio di conservazione.
-ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166087"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679100"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Creare e gestire le cassette postali inattive
 
@@ -34,7 +34,7 @@ Microsoft 365 rende possibile conservare il contenuto delle cassette postali eli
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per rendere inattiva una cassetta postale, deve essere assegnata una licenza di Exchange Online piano 2, in modo che sia possibile applicare una conservazione per controversia legale o un criterio di retention alla cassetta postale prima che venga eliminata. Le licenze di Exchange Online piano 2 fanno parte di un abbonamento a Office 365 Enterprise E3 ed E5. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1 o Exchange Online Kiosk (che fa parte rispettivamente di una sottoscrizione di Office 365 E1 e F1), è necessario assegnarle una licenza di archiviazione Exchange Online distinta in modo che sia possibile applicare un'esenzione alla cassetta postale prima che venga eliminata. Per ulteriori informazioni, vedere [Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Per rendere inattiva una cassetta postale, deve essere assegnata una licenza di Exchange Online piano 2 in modo che sia possibile applicare un blocco per controversia legale o un criterio di conservazione alla cassetta postale prima che venga eliminata. Le licenze di Exchange Online piano 2 fanno parte di un abbonamento a Office 365 Enterprise E3 ed E5. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1 o Exchange Online Kiosk (che fa parte rispettivamente di una sottoscrizione di Office 365 E1 e F1), è necessario assegnarle una licenza di archiviazione Exchange Online distinta in modo che sia possibile applicare un'esenzione alla cassetta postale prima che venga eliminata. Per ulteriori informazioni, vedere [Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
 - Le licenze associate alla cassetta postale di Exchange Online eliminata saranno disponibili dopo aver eliminato l'account utente corrispondente. È quindi possibile [assegnare tali licenze a un altro utente](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users). 
 
@@ -75,9 +75,9 @@ Per visualizzare un elenco delle cassette postali inattive nell'organizzazione:
   
 1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali di un account amministratore dell'organizzazione. 
     
-2. Fare clic su > **conservazione**della **governance delle informazioni**.
+2. Fare clic su conservazione della **governance delle informazioni**  >  **Retention**.
     
-3. Nella pagina **conservazione** fare clic su **altre**![ellissi](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)della barra di spostamento e quindi fare clic su **cassette postali inattive**.
+3. Nella pagina **conservazione** fare clic su **altre** ![ ellissi della barra di spostamento ](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) e quindi fare clic su **cassette postali inattive**.
     
     ![Nella pagina conservazione fare clic su altro e quindi su cassette postali inattive per visualizzare un elenco di cassette postali inattive](../media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
@@ -91,7 +91,7 @@ In alternativa, è possibile eseguire il comando seguente in Exchange Online Pow
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-È possibile fare ![clic su](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Esporta esportazione delle icone dei** risultati della ricerca per visualizzare o scaricare un file CSV che contiene informazioni aggiuntive sulle cassette postali inattive nell'organizzazione. 
+È possibile fare clic su ![ Esporta esportazione delle icone dei risultati della ricerca ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** per visualizzare o scaricare un file CSV che contiene informazioni aggiuntive sulle cassette postali inattive nell'organizzazione. 
   
 È inoltre possibile eseguire il comando seguente per esportare l'elenco delle cassette postali inattive e altre informazioni in un file CSV. In questo esempio, il file CSV viene creato nella directory corrente.
 

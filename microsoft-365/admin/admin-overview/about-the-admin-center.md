@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Usare l'interfaccia di amministrazione per configurare l'organizzazione nel cloud e gestire utenti e abbonamenti. Per iniziare, accedere all'account con autorizzazioni di amministratore.
-ms.openlocfilehash: c5f061e8ffd8f545965483d8d318debea708bf2c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386962"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678649"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informazioni sull'interfaccia di amministrazione di Microsoft 365
 
@@ -75,7 +75,7 @@ Ecco le funzionalità e le impostazioni disponibili nel riquadro di spostamento 
   
 |**Menu**|**Scopo**|
 |-----|-----|
-|**Home** <br/> |Questa è la pagina iniziale della nuova interfaccia di amministrazione. Qui è possibile vedere dove gestire gli utenti, la fatturazione, l'integrità dei servizi e i report.  <br/> |
+|**Home** <br/> |Questa è la pagina di destinazione nell'interfaccia di amministrazione. Qui è possibile vedere dove gestire gli utenti, la fatturazione, l'integrità dei servizi e i report.  <br/> |
 |**Utenti** <br/> |Qui è possibile aggiungere ed eliminare utenti dell'organizzazione, ad esempio dipendenti o studenti. Si può anche impostare il livello di autorizzazione e reimpostare le password di questi utenti.  <br/> |
 |**Gruppi** <br/> |Creare e gestire gruppi nell'organizzazione, ad esempio un gruppo di Microsoft 365, un gruppo di distribuzione, un gruppo di sicurezza o una cassetta postale condivisa. Informazioni su come [creare](../create-groups/create-groups.md) e [gestire](../create-groups/manage-groups.md) i gruppi.  <br/> |
 |**Risorse** <br/> |In questa pagina si possono creare e gestire le risorse, ad esempio una raccolta siti di SharePoint. Vedere come [creare le raccolte siti](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |

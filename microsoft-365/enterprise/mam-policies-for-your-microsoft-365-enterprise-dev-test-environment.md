@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per aggiungere criteri di conformità dei dispositivi di Intune all'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ef39310ff74e5d5a38e8a5dd8c7ca24a126af58
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631586"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679027"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Criteri di conformità dei dispositivi per l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -46,9 +46,9 @@ Se si desidera configurare i criteri MAM in un'azienda simulata, seguire le istr
 
 In questa fase, è possibile creare un criterio di conformità del dispositivo per i dispositivi Windows 10.
   
-1. Accedere al portale di Office 365 all'indirizzo[https://portal.office.com](https://portal.office.com)() e accedere alla sottoscrizione di laboratorio di testing di Office 365 con l'account di amministratore globale.
+1. Accedere al portale di Office 365 all'indirizzo ( [https://portal.office.com](https://portal.office.com) ) e accedere alla sottoscrizione di laboratorio di testing di office 365 con l'account di amministratore globale.
     
-2. In una nuova scheda del browser, aprire il portale di Azure all' [https://portal.azure.com](https://portal.azure.com)indirizzo.
+2. In una nuova scheda del browser, aprire il portale di Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
 
 3. Dalla scheda portale di Azure nel browser, digitare **Intune** nella casella di ricerca e quindi fare clic su **Intune**.
     
@@ -87,7 +87,7 @@ Fare clic su OK.
 
 20. Nel riquadro **Aggiungi app** selezionare impostazioni della **famiglia di applicazioni**.
 
-21. Per il **canale di aggiornamento**, selezionare **semestrale**e quindi fare clic su **OK**.
+21. Per il **canale di aggiornamento**, selezionare **organizzazione semestrale**e quindi fare clic su **OK**.
 
 22. Nel riquadro **Aggiungi applicazione** fare clic su **Aggiungi**.
 

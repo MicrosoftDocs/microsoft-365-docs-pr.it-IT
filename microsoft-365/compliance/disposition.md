@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156891"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678992"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -35,7 +35,7 @@ Per gestire le recensioni sulla disposizione e verificare che i record siano sta
 
 ### <a name="permissions-for-disposition"></a>Autorizzazioni per la disposizione
 
-Per accedere correttamente alla scheda **disposizione** nel centro conformità di Microsoft 365, è necessario essere membri del ruolo **gestione disposizione** e del ruolo di **controllo di sola visualizzazione** . È consigliabile creare un nuovo gruppo di ruoli denominato **reviewers Disposition**e aggiungere questi due ruoli a quel gruppo di ruoli. 
+Per accedere correttamente alla scheda **disposizione** nel centro conformità di Microsoft 365, è necessario essere membri del ruolo **gestione disposizione** e del ruolo di **controllo di sola visualizzazione** . È consigliabile creare un nuovo gruppo di ruoli denominato **reviewers Disposition**e aggiungere questi due ruoli a quel gruppo di ruoli. Anche se si è un utente di **Amministrazione globale** , sarà necessario far parte del ruolo **gestione disposizione** per accedere alla scheda disposizione.
 
 Specifica del ruolo di **controllo di sola visualizzazione** :
 
@@ -43,11 +43,11 @@ Specifica del ruolo di **controllo di sola visualizzazione** :
 
 - I gruppi Microsoft 365 (in[precedenza gruppi di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) non sono supportati per questo ruolo. Assegnare invece le cassette postali utente, gli utenti di posta elettronica o i gruppi di sicurezza abilitati alla posta elettronica.
 
-Per istruzioni su come concedere agli utenti il ruolo di **gestione della disposizione** e creare il nuovo ruolo **revisori disposizione** , vedere [fornire agli utenti l' &amp; accesso al centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per istruzioni su come concedere agli utenti il ruolo di **gestione della disposizione** e creare il nuovo ruolo **revisori disposizione** , vedere [fornire agli utenti l'accesso al centro sicurezza e &amp; conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Abilitazione del controllo
 
-Verificare che il controllo sia abilitato almeno un giorno prima della prima azione di eliminazione. Per ulteriori informazioni, vedere [eseguire la ricerca nel log di controllo nel centro &amp; sicurezza e conformità di Office 365](search-the-audit-log-in-security-and-compliance.md). 
+Verificare che il controllo sia abilitato almeno un giorno prima della prima azione di eliminazione. Per ulteriori informazioni, vedere [eseguire la ricerca nel log di controllo nel centro sicurezza e &amp; conformità di Office 365](search-the-audit-log-in-security-and-compliance.md). 
 
 ## <a name="disposition-reviews"></a>Revisioni per l'eliminazione
 

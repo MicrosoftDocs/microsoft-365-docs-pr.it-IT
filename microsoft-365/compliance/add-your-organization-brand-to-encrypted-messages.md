@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Applicare il marchio dell'organizzazione ai messaggi di posta elettronica crittografati dell'organizzazione e al contenuto del portale di crittografia.
-ms.openlocfilehash: 8d8e0a75a88cfe5dbcd5b1e6ed2c276e2edef904
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 86636b319151a96e9ec827f85cc943282c30f63c
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351737"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679110"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Aggiungere il logo della propria organizzazione ai messaggi crittografati
 
@@ -79,16 +79,16 @@ Utilizzare Windows PowerShell per modificare un modello di branding alla volta. 
 
 |**Per personalizzare questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi**|
 |:-----|:-----|
-|Colore di sfondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
-|Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formati di file supportati: png, jpg, bmp o tiff  <br/> Dimensione ottimale relativa al file del logo: inferiore a 40 KB  <br/> Dimensioni ottimali dell'immagine del logo: 170x70 pixel. Se l'immagine supera queste dimensioni, il logo viene ridimensionato per essere visualizzato nel portale. Il servizio non modifica il file grafico stesso. Per ottenere risultati ottimali, utilizzare le dimensioni ottimali.|
-|Testo accanto al nome e all'indirizzo di posta elettronica del mittente|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|Testo visualizzato sul pulsante "Leggi messaggio"|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|Testo visualizzato sotto il pulsante "Leggi messaggio"|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|URL del collegamento all'informativa sulla privacy|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PrivacyStatementURL "<URL>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
-|dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
-|testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
-|Per abilitare o disabilitare l'autenticazione con un codice Pass una tantum per questo modello personalizzato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **Esempi:** <br/>Per abilitare i codici di accesso una tantum per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> Per disabilitare i codici di accesso una tantum per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
-|Per abilitare o disabilitare l'autenticazione con identità Microsoft, Google o Yahoo per questo modello personalizzato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -SocialIdSignIn <$true|$false>` <br/> **Esempi:** <br/>Per abilitare gli ID di social networking per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> Per disabilitare gli ID di social networking per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
+|Colore di sfondo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <br/> Per ulteriori informazioni sui colori di sfondo, vedere la sezione [colori di sfondo](#background-color-reference) più avanti in questo argomento.|
+|Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formati di file supportati: png, jpg, bmp o tiff  <br/> Dimensione ottimale relativa al file del logo: inferiore a 40 KB  <br/> Dimensioni ottimali dell'immagine del logo: 170x70 pixel. Se l'immagine supera queste dimensioni, il logo viene ridimensionato per essere visualizzato nel portale. Il servizio non modifica il file grafico stesso. Per ottenere risultati ottimali, utilizzare le dimensioni ottimali.|
+|Testo accanto al nome e all'indirizzo di posta elettronica del mittente|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
+|Testo visualizzato sul pulsante "Leggi messaggio"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
+|Testo visualizzato sotto il pulsante "Leggi messaggio"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|URL del collegamento all'informativa sulla privacy|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
+|dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
+|testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
+|Per abilitare o disabilitare l'autenticazione con un codice Pass una tantum per questo modello personalizzato|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <br/> **Esempi:** <br/>Per abilitare i codici di accesso una tantum per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> Per disabilitare i codici di accesso una tantum per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
+|Per abilitare o disabilitare l'autenticazione con identità Microsoft, Google o Yahoo per questo modello personalizzato|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <br/> **Esempi:** <br/>Per abilitare gli ID di social networking per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> Per disabilitare gli ID di social networking per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>Creare un modello di branding OME (Advanced Message Encryption)
 
@@ -101,7 +101,7 @@ Per creare un nuovo modello di personalizzazione personalizzato:
 2. Utilizzare il cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) per creare un nuovo modello.
 
    ```powershell
-   New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
+   New-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
    For example,
@@ -122,11 +122,11 @@ Per rimuovere tutte le modifiche dal modello predefinito, incluse le personalizz
 
    **Per ripristinare il testo e l'immagine predefiniti per questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi**|
    |:-----|:-----|
-   |Testo predefinito che accompagna i messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-   |dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-   |testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Esempio ripristinando il valore predefinito:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
-   |Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Esempio ripristinando il valore predefinito:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-   |Colore di sfondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **Esempio ripristinando il valore predefinito:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   |Testo predefinito che accompagna i messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+   |testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <br/> **Esempio ripristinando il valore predefinito:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
+   |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <br/> **Esempio ripristinando il valore predefinito:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
+   |Colore di sfondo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <br/> **Esempio ripristinando il valore predefinito:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
    |
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>Rimuovere un modello di personalizzazione personalizzato (Advanced Message Encryption)
@@ -140,7 +140,7 @@ Per rimuovere un modello di personalizzazione personalizzato:
 2. Utilizzare il cmdlet **Remove-OMEConfiguration** come indicato di seguito:
 
    ```powershell
-   Remove-OMEConfiguration -Identity "<OMEConfigurationIdParameter>
+   Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
    ```
 
    For example,
@@ -184,3 +184,154 @@ Per informazioni su come creare una regola del flusso di posta di Exchange che a
    L'elenco dei modelli include tutti i modelli e le opzioni predefiniti, nonché tutti i modelli personalizzati creati per l'utilizzo da parte di Office 365. Se l'elenco è vuoto, verificare di aver configurato la crittografia dei messaggi di Office 365 con le nuove funzionalità descritte in [configurare le nuove funzionalità di crittografia dei messaggi di office 365](set-up-new-message-encryption-capabilities.md). Per informazioni sui modelli predefiniti, vedere [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Per informazioni sull'opzione non **inoltrare** , vedere non [inoltrare l'opzione per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Per informazioni sull'opzione **solo crittografia** , vedere [opzione di crittografia solo per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
    Fare clic su **Aggiungi azione** se si desidera specificare un'altra azione.
+
+## <a name="background-color-reference"></a>Riferimento al colore di sfondo
+
+I nomi di colore che è possibile utilizzare per il colore di sfondo sono limitati. Invece del nome di un colore, è possibile utilizzare un valore di codice esadecimale (#RRGGBB). È possibile utilizzare un valore di codice esadecimale corrispondente a un nome di colore oppure è possibile utilizzare un valore di codice esadecimale personalizzato. Tenere presente che il valore del codice esadecimale viene racchiuso tra virgolette (ad esempio, `"#f0f8ff"` ).
+
+Nella tabella seguente sono descritti i nomi dei colori di sfondo disponibili e i valori del codice esadecimale corrispondenti.
+
+|||
+|---|---|
+|**Nome colore**|**Codice colore**|
+|AliceBlue|#f0f8ff|
+|AntiqueWhite|#faebd7|
+|azzurro|#00ffff|
+|Acquamarina|#7fffd4|
+|Azure|#f0ffff|
+|beige|#f5f5dc|
+|Bisque|#ffe4c4|
+|nero|#000000|
+|BlanchedAlmond|#ffebcd|
+|blu|#0000ff|
+|BlueViolet|#8a2be2|
+|mogano|#a52a2a|
+|BurlyWood|#deb887|
+|CadetBlue|#5f9ea0|
+|Chartreuse|#7fff00|
+|cioccolato|#d2691e|
+|corallo|#ff7f50|
+|CornflowerBlue|#6495ed|
+|Cornsilk|#fff8dc|
+|Crimson|#dc143c|
+|ciano|#00ffff|
+|DarkBlue|#00008b|
+|DarkCyan|#008b8b|
+|DarkGoldenrod|#b8860b|
+|DarkGray|#a9a9a9|
+|DarkGreen|#006400|
+|DarkKhaki|#bdb76b|
+|DarkMagenta|#8b008b|
+|DarkOliveGreen|#556b2f|
+|arancione scuro|#ff8c00|
+|DarkOrchid|#9932cc|
+|DarkRed|#8b0000|
+|DarkSalmon|#e9967a|
+|DarkSeaGreen|#8fbc8f|
+|DarkSlateBlue|#483d8b|
+|DarkSlateGray|#2f4f4f|
+|DarkTurquoise|#00ced1|
+|DarkViolet|#9400d3|
+|DeepPink|#ff1493|
+|DeepSkyBlue|#00bfff|
+|DimGray|#696969|
+|DodgerBlue|#1e90ff|
+|Firebrick|#b22222|
+|FloralWhite|#fffaf0|
+|ForestGreen|#228b22|
+|fucsia|#ff00ff|
+|Gainsboro|#dcdcdc|
+|GhostWhite|#f8f8ff|
+|oro|#ffd700|
+|ocra|#daa520|
+|grigio|#808080|
+|verde|#008000|
+|GreenYellow|#adff2f|
+|melata|#f0fff0|
+|HotPink|#ff69b4|
+|IndianRed|#cd5c5c|
+|Indigo|#4b0082|
+|avorio|#fffff0|
+|Khaki|#f0e68c|
+|lavanda|#e6e6fa|
+|LavenderBlush|#fff0f5|
+|LawnGreen|#7cfc00|
+|LemonChiffon|#fffacd|
+|azzurro|#add8e6|
+|LightCoral|#f08080|
+|LightCyan|#e0ffff|
+|LightGoldenrodYellow|#fafad2|
+|LightGray|#d3d3d3|
+|lightgrey|#d3d3d3|
+|verde chiaro|#90ee90|
+|LightPink|#ffb6c1|
+|LightSalmon|#ffa07a|
+|LightSeaGreen|#20b2aa|
+|LightSkyBlue|#87cefa|
+|lightslategray|#778899|
+|LightSteelBlue|#b0c4de|
+|LightYellow|#ffffe0|
+|calce|#00ff00|
+|LimeGreen|#32cd32|
+|biancheria|#faf0e6|
+|Magenta|#ff00ff|
+|marrone|#800000|
+|MediumAquamarine|#66cdaa|
+|MediumBlue|#0000cd|
+|MediumOrchid|#ba55d3|
+|MediumPurple|#9370db|
+|MediumSeaGreen|#3cb371|
+|MediumSlateBlue|#7b68ee|
+|MediumSpringGreen|#00fa9a|
+|MediumTurquoise|#48d1cc|
+|MediumVioletRed|#c71585|
+|MidnightBlue|#191970|
+|MintCream|#f5fffa|
+|MistyRose|#ffe4e1|
+|Mocassino|#ffe4b5|
+|NavajoWhite|#ffdead|
+|Marina|#000080|
+|OldLace|#fdf5e6|
+|verde oliva|#808000|
+|OliveDrab|#6b8e23|
+|arancione|#ffa500|
+|OrangeRed|#ff4500|
+|violetto|#da70d6|
+|PaleGoldenrod|#eee8aa|
+|PaleGreen|#98fb98|
+|PaleTurquoise|#afeeee|
+|PaleVioletRed|#db7093|
+|PapayaWhip|#ffefd5|
+|PeachPuff|#ffdab9|
+|Perù|#cd853f|
+|rosa|#ffc0cb|
+|prugna|#dda0dd|
+|PowderBlue|#b0e0e6|
+|viola|#800080|
+|rosso|#ff0000|
+|RosyBrown|#bc8f8f|
+|royalblue|#4169e1|
+|SaddleBrown|#8b4513|
+|salmone|#fa8072|
+|Sandybrown|#f4a460|
+|SeaGreen|
+|Seashell|#fff5ee|
+|Siena|#a0522d|
+|argento|#c0c0c0|
+|SkyBlue|#87ceeb|
+|SlateBlue|#6a5acd|
+|SlateGray|#708090|
+|Snow|#fffafa|
+|SpringGreen|#00ff7f|
+|SteelBlue|#4682b4|
+|Tan|#d2b48c|
+|verde acqua|#008080|
+|Cardo|#d8bfd8|
+|pomodoro|#ff6347|
+|turchese|#40e0d0|
+|viola|#ee82ee|
+|grano|#f5deb3|
+|White|#ffffff|
+|WhiteSmoke|#f5f5f5|
+|giallo|#ffff00|
+|YellowGreen|#9acd32|
