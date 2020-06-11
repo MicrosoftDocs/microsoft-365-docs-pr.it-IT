@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209812"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689279"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -40,7 +40,7 @@ Nella tabella seguente sono descritte le differenze di alto livello tra i criter
 
 ||||
 |---|:---:|:---:|
-|**Funzionalità**|**Criteri anti-phishing**|**Criteri di anti-phishing ATP**|
+|**Caratteristica**|**Criteri anti-phishing**|**Criteri di anti-phishing ATP**|
 |Criterio predefinito creato automaticamente|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Creare criteri personalizzati|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Impostazioni di criteri<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -128,7 +128,7 @@ Le impostazioni dei criteri seguenti sono disponibili solo nei criteri di anti-p
 
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Impostazioni di rappresentazione nei criteri di anti-phishing ATP
 
-La rappresentazione è la posizione in cui il mittente o il dominio di posta elettronica del mittente in un messaggio ha un aspetto molto simile a un mittente o dominio reale:
+La rappresentazione è la posizione in cui il mittente o il dominio di posta elettronica del mittente in un messaggio ha un aspetto simile a un mittente o dominio reale:
 
 - Un esempio di rappresentazione del dominio contoso.com è ćóntoso.com.
 
@@ -140,11 +140,11 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri d
 
 - **Utenti da proteggere**: impedisce la rappresentazione degli utenti interni o esterni specificati. Ad esempio, dirigenti (interni) e membri di bordo (esterni). È possibile aggiungere fino a 60 indirizzi interni ed esterni. Questo elenco di utenti protetti è diverso dall'elenco dei destinatari a cui si applica il criterio nell'impostazione **applicato a** .
 
-  Ad esempio, è possibile specificare Felipe Apodaca (felipea@contoso.com) come utente protetto in un criterio che si applica al gruppo denominato Executives. I messaggi in ingresso inviati ai membri del gruppo dirigenti in cui è rappresentata la posizione di Felipe Apodaca verranno attivati dal criterio (l'azione configurata per gli utenti rappresentati).
+  Ad esempio, è possibile specificare Felipe Apodaca (felipea@contoso.com) come utente protetto in un criterio che si applica al gruppo denominato Executives. I messaggi in ingresso inviati ai membri del gruppo dirigenti in cui è rappresentato Felipe Apodaca verranno attivati dal criterio (l'azione configurata per gli utenti rappresentati).
 
 - **Domini da proteggere**: impedire la rappresentazione dei domini specificati. Ad esempio, tutti i domini che possiedi ([domini accettati](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o domini specifici (domini che possiedi o domini partner). Questo elenco di domini protetti è diverso dall'elenco dei domini a cui si applica il criterio nell'impostazione **applicato a** .
 
-  Ad esempio, è possibile specificare tailspintoys.com come dominio protetto in un criterio che si applica ai membri del gruppo denominati dirigenti. I messaggi in ingresso inviati ai membri del gruppo dirigenti in cui è rappresentata la tailspintoys.com in cui è rappresentato verranno attivati dal criterio (l'azione configurata per i domini rappresentati).
+  Ad esempio, è possibile specificare tailspintoys.com come dominio protetto in un criterio che si applica ai membri del gruppo denominati dirigenti. I messaggi in ingresso inviati ai membri del gruppo Executives in cui tailspintoys.com è rappresentato verranno attivati dal criterio (l'azione configurata per i domini rappresentati).
 
 - **Azioni per gli utenti o i domini protetti**: scegliere l'azione da intraprendere nei messaggi in ingresso che contengono tentativi di rappresentazione per gli utenti protetti e i domini protetti nel criterio. È possibile specificare diverse azioni per la rappresentazione degli utenti protetti e la rappresentazione dei domini protetti:
 

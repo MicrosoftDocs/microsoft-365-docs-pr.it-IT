@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: "Informazioni su come l'analisi dell'utilizzo si connette a un'API e fornisce un andamento mensile dell'utilizzo di vari servizi di Microsoft 365.  "
-ms.openlocfilehash: 6b0b005e6e07e52731a84490a6df7c9ead614321
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402047"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695092"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modello di dati nell'analisi dell'utilizzo di Microsoft 365
 
@@ -43,16 +43,16 @@ Questa API fornisce informazioni sull'andamento mensile dell'utilizzo dei vari s
 
 |**Nome di tabella**|**Informazioni nella tabella**|**Intervallo di date**|
 |:-----|:-----|:-----|
-|Tenant Product Usage  <br/> |Contiene i totali mensili degli utenti abilitati, degli utenti attivi, degli utenti mantenuti mese dopo mese, dei nuovi utenti e il numero di cumulativo di tutti gli utenti attivi.  <br/> |Contiene i dati aggregati mensili per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
+|Tenant Product Usage  <br/> |Contiene i totali mensili degli utenti abilitati e attivi, degli utenti conservati mensili, degli utenti per la prima volta e degli utenti attivi cumulativi.  <br/> |Contiene i dati aggregati mensili per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
 |Tenant Product Activity  <br/> |Contiene i totali mensili delle attività e il numero di utenti attivi per varie attività all'interno dei prodotti.  <br/> Vedere la [definizione di utente attivo](active-user-in-usage-reports.md) per informazioni sulle attività all'interno di un prodotto che vengono restituite in questa tabella dati.  <br/> |Contiene i dati aggregati mensili per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
-|Tenant Office Licenses  <br/> |Contiene i dati sul numero di abbonamenti a Microsoft Office assegnati agli utenti  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
-|Tenant Mailbox Usage  <br/> |Contiene i dati relativi alla cassetta postale dell'utente, come il conteggio totale della cassetta postale e l'uso dello spazio di archiviazione.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
+|Tenant Office Licenses  <br/> |Contiene i dati sul numero di abbonamenti a Microsoft Office assegnati agli utenti  <br/> |Contiene i dati sullo stato di fine mese per un periodo di 12 mesi che include il mese parziale corrente.  <br/> |
+|Tenant Mailbox Usage  <br/> |Contiene i dati relativi alla cassetta postale dell'utente, come il conteggio totale della cassetta postale e l'uso dello spazio di archiviazione.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di 12 mesi che include il mese parziale corrente.  <br/> |
 |Tenant Client Usage  <br/> |Contiene i dati relativi al numero di utenti che usano attivamente client/dispositivi specifici per connettersi a Exchange Online, Skype for Business e Yammer.  <br/> |Contiene i dati aggregati mensili per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
-|Tenant SharePoint Online Usage  <br/> |Contiene i dati relativi ai siti di SharePoint, inclusi i siti del gruppo o del team, ad esempio il numero totale dei siti, il numero di documenti del sito, il numero di file per tipo di attività e lo spazio di archiviazione usato.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
-|Tenant OneDrive for Business Usage  <br/> |Contiene i dati relativi gli account di OneDrive, ad esempio il numero di account, il numero di documenti nelle varie istanze di OneDrive, lo spazio di archiviazione usato e il numero di file per tipo di attività.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
-|Utilizzo di gruppi di Microsoft 365 tenant  <br/> |Contiene i dati relativi all'utilizzo dei gruppi di Microsoft 365, tra cui Mailbox, SharePoint e Yammer.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
-|Tenant Office Activation  <br/> |Contiene i dati sul numero di attivazioni di sottoscrizione di Office, il conteggio dell'attivazione per dispositivo (Android/iOS/Mac/PC), le attivazioni per piano di servizio, ad esempio Microsoft 365 Apps for Enterprise, Visio, Project.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di distribuzione di 12 mesi incluso il mese parziale corrente.  <br/> |
-|User State  <br/> |Contiene metadati sugli utenti, tra cui il nome visualizzato dell'utente, i prodotti assegnati, la posizione, il reparto, il titolo e la società. Questi dati sono relativi agli utenti a cui sono state assegnate licenze nel corso dell'ultimo mese completo. Ogni utente è rappresentato in modo univoco da un ID utente.  <br/> |Questi dati sono relativi agli utenti a cui è stata assegnata una licenza nel corso dell'ultimo mese completo.  <br/> |
+|Tenant SharePoint Online Usage  <br/> |Contiene i dati relativi ai siti di SharePoint, inclusi i siti del gruppo o del team, ad esempio il numero totale dei siti, il numero di documenti del sito, il numero di file per tipo di attività e lo spazio di archiviazione usato.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di 12 mesi che include il mese parziale corrente.  <br/> |
+|Tenant OneDrive for Business Usage  <br/> |Contiene i dati relativi gli account di OneDrive, ad esempio il numero di account, il numero di documenti nelle varie istanze di OneDrive, lo spazio di archiviazione usato e il numero di file per tipo di attività.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di 12 mesi che include il mese parziale corrente.  <br/> |
+|Utilizzo di gruppi di Microsoft 365 tenant  <br/> |Contiene i dati relativi all'utilizzo dei gruppi di Microsoft 365, tra cui Mailbox, SharePoint e Yammer.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di 12 mesi che include il mese parziale corrente.  <br/> |
+|Tenant Office Activation  <br/> |Contiene i dati sul numero di attivazioni di sottoscrizione di Office, il conteggio dell'attivazione per dispositivo (Android/iOS/Mac/PC), le attivazioni per piano di servizio, ad esempio Microsoft 365 Apps for Enterprise, Visio, Project.  <br/> |Contiene i dati sullo stato di fine mese per un periodo di 12 mesi che include il mese parziale corrente.  <br/> |
+|User State  <br/> |Contiene metadati sugli utenti, tra cui il nome visualizzato dell'utente, i prodotti assegnati, la posizione, il reparto, il titolo e la società. Questi dati sono relativi agli utenti a cui sono state assegnate licenze nel corso dell'ultimo mese completo. Tutti gli utenti sono rappresentati in modo univoco da un ID utente.  <br/> |Questi dati sono relativi agli utenti a cui è stata assegnata una licenza nel corso dell'ultimo mese completo.  <br/> |
 |User Activity  <br/> |Contiene informazioni sulle attività eseguite dagli utenti con licenza.  <br/> Vedere la [definizione di utente attivo](active-user-in-usage-reports.md) per informazioni sulle attività all'interno di un prodotto che vengono restituite in questa tabella dati.  <br/> |Questi dati sono relativi agli utenti che hanno eseguito un'attività in uno dei servizi nel corso dell'ultimo mese completo.  <br/> |
    
 Espandere le sezioni seguenti per visualizzare le informazioni dettagliate per ogni tabella di dati.
@@ -63,7 +63,7 @@ Questa tabella contiene i dettagli a livello di utente per tutti gli utenti a cu
   
 |**Nome colonna**|**Descrizione della colonna**|
 |:-----|:-----|
-|UserId  <br/> |ID utente univoco che rappresenta un utente e consente di unire altre tabelle di dati all'interno del set di dati.  <br/> |
+|UserId  <br/> |ID utente univoco che rappresenta un utente e che consente l'aggiunta di altre tabelle dati all'interno del set di dati.  <br/> |
 |Timeframe  <br/> |Valore del mese per cui questa tabella contiene dati.  <br/> |
 |UPN  <br/> |Nome dell'entità utente, che identifica in modo univoco l'utente per poter partecipare con altre origini dati esterne.  <br/> |
 |DisplayName  <br/> |Nome visualizzato dell'utente.  <br/> |
@@ -143,7 +143,7 @@ Questa tabella contiene i dati relativi a ogni utente che ha eseguito un'attivit
    
 ### <a name="data-table---tenant-product-usage"></a>Tabella di dati - Tenant Product Usage
 
-In questa tabella sono disponibili i dati relativi all'adozione mensile in termini di abilitazione, attivazione, restituzione e primo tempo degli utenti per ogni prodotto all'interno di Microsoft 365. Il valore Microsoft 365 rappresenta l'utilizzo attivo in uno dei prodotti.
+In questa tabella sono disponibili i dati di adozione mensile in termini di utenti abilitati, attivi, di restituzione e per la prima volta per ogni prodotto all'interno di Microsoft 365. Il valore Microsoft 365 rappresenta l'utilizzo attivo in uno dei prodotti.
   
 |**Nome colonna**|**Descrizione della colonna**|
 |:-----|:-----|
@@ -153,7 +153,7 @@ In questa tabella sono disponibili i dati relativi all'adozione mensile in termi
 |ActiveUsers  <br/> |Numero di utenti che hanno eseguito un'attività intenzionale nel prodotto per il valore dell'intervallo di tempo.  <br/> Un utente viene considerato attivo per un prodotto per un determinato mese se ha eseguito una delle attività principali nel prodotto. Le attività chiave sono disponibili nella tabella **Tenant Product Activity**.  <br/> |
 |CumulativeActiveUsers  <br/> |Numero di utenti che sono abilitati a usare un prodotto e lo hanno usato fino al mese dell'intervallo di tempo almeno una volta dopo l'inizio della raccolta dei dati nel nuovo sistema di gestione.  <br/> |
 |MoMReturningUsers  <br/> |Numero di utenti che sono attivi nel mese dell'intervallo di tempo e lo erano anche nel mese precedente.  <br/> |
-|FirstTimeUsers  <br/> |Numero di utenti che sono attivi nel mese dell'intervallo di tempo e che lo erano anche nel mese precedente.  <br/> Un utente viene considerato come nuovo utente in un determinato mese, se la sua attività viene rilevata per la prima volta dall'inizio della raccolta dei dati in questo nuovo sistema di registrazione. Una volta contato come utente per la prima volta, anche se l'utente ha un divario notevole nella loro attività, non verrà mai conteggiato di nuovo come utente per la prima volta.  <br/> |
+|FirstTimeUsers  <br/> |Numero di utenti che sono attivi nel mese dell'intervallo di tempo e che lo erano anche nel mese precedente.  <br/> Un utente viene considerato come nuovo utente in un determinato mese, se la sua attività viene rilevata per la prima volta dall'inizio della raccolta dei dati in questo nuovo sistema di registrazione. Una volta contato come utente per la prima volta, anche se l'utente ha una lacuna importante nelle attività, non verrà mai più conteggiato come utente per la prima volta.  <br/> |
 |Content Date  <br/> |Se l'intervallo di tempo mostra il mese corrente, questo valore rappresenterà l'ultima data del mese corrente per cui i dati sono disponibili.  <br/> Se l'intervallo di tempo mostra il mese precedente, questo valore rappresenterà l'ultima data del mese dell'intervallo di tempo.  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>Tabella di dati - Tenant Product Activity
@@ -191,7 +191,7 @@ Questa tabella è costituita dai dati di riepilogo per tutti gli utenti di Excha
    
 ### <a name="data-table---tenant-client-usage"></a>Tabella di dati - Tenant Client Usage
 
-Questa tabella contiene i dati di riepilogo mensili relativi ai client usati dagli utenti per connettersi a Exchange Online, Skype for Business e Yammer. Questa tabella non contiene ancora dati sull'utilizzo client per SharePoint Online e OneDrive for Business.
+In questa tabella sono disponibili i dati di riepilogo mensili relativi ai client che gli utenti utilizzano per la connessione a Exchange Online, Skype for business e Yammer. Questa tabella non contiene ancora dati sull'utilizzo client per SharePoint Online e OneDrive for Business.
   
 |**Nome colonna**|**Descrizione della colonna**|
 |:-----|:-----|

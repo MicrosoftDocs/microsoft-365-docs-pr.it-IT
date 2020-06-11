@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b0703aa14bee3d14d1c3ff4fe46ea9d72de73ce2
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 8a3e4b8979a346266336e2729d18465d391c28f9
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515868"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689267"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Funzionalità di anteprima di Microsoft Threat Protection
 
@@ -58,6 +58,8 @@ Quando si vede che è selezionata la casella di controllo attiva le caratteristi
 Le caratteristiche e i miglioramenti seguenti sono attualmente disponibili in anteprima:
 
 - **[Tabelle di identità e app](advanced-hunting-schema-tables.md)** : consente di ottenere visibilità negli eventi di autenticazione, nelle query di Active Directory e nell'attività correlata all'applicazione con le tabelle [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)e [AppFileEvents](advanced-hunting-appfileevents-table.md) nello schema di caccia avanzato.
+
+- **[Vai a cercare](advanced-hunting-go-hunt.md)** : rapidamente pivot dall'indagine di un incidente per esaminare un evento specifico, un utente, un dispositivo o altri tipi di entità che utilizzano funzionalità di [ricerca avanzata](advanced-hunting-overview.md) basate su query.
 
 - **[Tabella EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** -utilizzare questa tabella per creare query di [ricerca avanzate](advanced-hunting-overview.md) che controllano le operazioni eseguite nei messaggi di posta elettronica dopo che sono state recapitate alle cassette postali dei destinatari.
 
