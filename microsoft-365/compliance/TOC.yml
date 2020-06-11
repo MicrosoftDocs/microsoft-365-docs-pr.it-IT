@@ -249,17 +249,19 @@
           href: archiving-third-party-data.md
         - name: Archiviare i dati di Facebook (anteprima)
           href: archive-facebook-data-with-sample-connector.md
-        - name: Archiviare i dati di Twitter (anteprima)
-          href: archive-twitter-data-with-sample-connector.md
-        - name: Archiviare i dati di LinkedIn
-          href: archive-linkedin-data.md
-        - name: Archiviare i dati di Instant Bloomberg
-          href: archive-instant-bloomberg-data.md
         - name: Importare dati delle risorse umane (anteprima)
           href: import-hr-data.md
+        - name: Archiviare i dati di Instant Bloomberg
+          href: archive-instant-bloomberg-data.md
+        - name: Archiviare i dati di LinkedIn
+          href: archive-linkedin-data.md
+        - name: Archiviare i dati di Twitter (anteprima)
+          href: archive-twitter-data-with-sample-connector.md
         - name: Collaborare con un partner per archiviare i dati di terze parti
           href: work-with-partner-to-archive-third-party-data.md
-    - name: Archiviare i dati
+        - name: Cercare dati di terze parti
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: Archiviare i dati delle cassette postali
       items:
         - name: Abilitare le cassette postali di archiviazione
           href: enable-archive-mailboxes.md
@@ -388,8 +390,6 @@
               href: bulk-edit-content-searches.md
             - name: Preparare un file CSV per un elenco ID di ricerca
               href: csv-file-for-an-id-list-content-search.md
-            - name: Cercare dati di terze parti
-              href: use-content-search-to-search-third-party-data-that-was-imported.md
             - name: Verificare la presenza di errori nella query di ricerca
               href: check-your-content-search-query-for-errors.md
             - name: Risolvere i problemi comuni di eDiscovery
@@ -885,9 +885,7 @@
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
-        - name: Protezione delle informazioni
-          href: gdpr-information-protection.md
-        - name: Richieste del soggetto dei dati
+        - name: Richieste degli interessati
           items:
             - name: Richieste del soggetto dei dati
               href: gdpr-data-subject-requests.md
@@ -927,8 +925,12 @@
               href: gdpr-dpia-prof-services.md
             - name: Office 365
               href: gdpr-dpia-office365.md
+        - name: Protezione delle informazioni
+          href: gdpr-information-protection.md
         - name: Responsabile della protezione dei dati di Microsoft
           href: gdpr-data-protection-officer.md
+        - name: Ulteriore procedura di esportazione dei dati del log generato dal sistema
+          href: gdpr-system-generated-log-data.md
 - name: Funzionalità per la conformità ibrida
   items:
     - name: Crittografia della posta di Exchange Online con AD RMS

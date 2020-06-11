@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043328"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579191"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Dynamics 365 nell'ambito del GDPR e del CCPA
 
@@ -242,13 +242,10 @@ La tabella seguente riepiloga l'accesso e l'esportazione dei log generati dal si
 |**Come vengono restituiti i dati all'utente?**| I dati verranno esportati nel percorso di archiviazione di Azure dell'organizzazione. Spetterà agli amministratori dell'organizzazione stabilire come questi dati verranno visualizzati/restituiti agli utenti. |
 |**Che aspetto avranno i dati nei log generati dal sistema?**| Esempio di un record di log generato dal sistema in formato JSON: <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
-> [!NOTE]
-> Alcune funzionalità non consentono l'esportazione o l'eliminazione dei log generati dal sistema contenenti informazioni riservate per mantenere l'integrità di tali informazioni per motivi di sicurezza e controllo.
-
 ### <a name="deleting-system-generated-logs"></a>Eliminazione di log generati dal sistema
 
-Per eliminare i log generati dal sistema recuperati durante una richiesta di accesso, è necessario rimuovere l'utente dal servizio ed eliminare definitivamente il suo account Azure Active Directory. È importante tenere presente che l'eliminazione definitiva di un account utente, un volta avviata, è irreversibile. Se si elimina definitivamente un account utente, i dati dell'utente verranno rimossi dai registri generati dal sistema per quasi tutti i servizi di Dynamics 365 entro 30 giorni.
+Per eliminare i log generati dal sistema recuperati durante una richiesta di accesso, è necessario rimuovere l'utente dal servizio ed eliminare definitivamente il suo account Azure Active Directory. Per istruzioni su come eliminare definitivamente un utente, vedere la sezione [Passaggio 5: eliminazione](gdpr-dsr-azure.md#step-5-delete) nell'argomento relativo alle richieste degli interessati in Azure. È importante tenere presente che l'eliminazione definitiva di un account utente, un volta avviata, è irreversibile. Se si elimina definitivamente un account utente, i dati dell'utente, ad eccezione dei dati che possono compromettere la sicurezza e la stabilità del servizio, verranno rimossi dai log generati dal sistema per quasi tutti i servizi di Dynamics 365 entro 30 giorni.
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
 - [Centro protezione Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
