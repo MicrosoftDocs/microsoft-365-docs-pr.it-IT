@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b524001f848a106ec2832c698b474cfce8ceb24b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352086"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689244"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -62,7 +62,9 @@ Quando si crea un criterio di conformità della comunicazione, è necessario det
 
 Per semplificare l'installazione, creare gruppi per gli utenti che hanno bisogno di una revisione delle comunicazioni e di gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, se si desidera eseguire l'analisi delle comunicazioni tra due gruppi distinti di persone oppure se si desidera specificare un gruppo non supervisionato.
 
-Quando si seleziona un gruppo di Microsoft 365 per gli utenti controllati, il criterio analizza il contenuto della cassetta postale condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio analizza le singole cassette postali degli utenti. L'aggiunta di gruppi e liste di distribuzione ai criteri di conformità della comunicazione fa parte delle condizioni generali e del set di regole, quindi il numero massimo di gruppi e di liste di distribuzione supportate da un criterio varia a seconda del numero di condizioni aggiunte al criterio. Ogni criterio deve supportare circa 20 gruppi o liste di distribuzione, a seconda del numero di condizioni aggiuntive presenti nel criterio.
+Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora tutti i messaggi di posta elettronica di ogni utente del gruppo di distribuzione. Quando si assegna un gruppo di Microsoft 365 nel criterio, il criterio monitora tutti i messaggi di posta elettronica inviati a quel gruppo, non i singoli messaggi di posta elettronica ricevuti da ogni membro del gruppo.
+
+L'aggiunta di gruppi e liste di distribuzione ai criteri di conformità della comunicazione fa parte delle condizioni generali e del set di regole, quindi il numero massimo di gruppi e di liste di distribuzione supportate da un criterio varia a seconda del numero di condizioni aggiunte al criterio. Ogni criterio deve supportare circa 20 gruppi o liste di distribuzione, a seconda del numero di condizioni aggiuntive presenti nel criterio.
 
 ## <a name="supported-communication-types"></a>Tipi di comunicazione supportati
 
@@ -232,11 +234,11 @@ I filtri di conformità di comunicazione consentono di filtrare e ordinare i mes
 | **Data** | La data in cui il messaggio è stato inviato o ricevuto da un utente dell'organizzazione. |
 | **Classe file** | La classe del messaggio in base al tipo di messaggio, ovvero *messaggio* o *allegato*. |
 | **Ha allegato** | La presenza degli allegati nel messaggio. |
-| **Classe Item** | L'origine del messaggio in base al tipo di messaggio, alla posta elettronica, a Microsoft Team Chat, Bloonmberg e così via. |
+| **Classe Item** | L'origine del messaggio in base al tipo di messaggio, alla posta elettronica, a Microsoft Team Chat, Bloonmberg e così via. Per ulteriori informazioni sui tipi di elementi comuni e sulle classi dei messaggi, vedere [tipi di elementi e classi di messaggi](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Domini destinatario** | Il dominio in cui è stato inviato il messaggio. Questo dominio è in genere il dominio di sottoscrizione Microsoft 365 per impostazione predefinita. |
 | **Destinatario** | L'utente a cui è stato inviato il messaggio. |
 | **Mittente** | La persona che ha inviato il messaggio. |
-| **Dominio del mittente** | Il dominio che ha inviato il messaggio. |
+| **Dominio mittente** | Il dominio che ha inviato il messaggio. |
 | **Dimensioni** | Le dimensioni del messaggio in KB. |
 | **Subject/title** | L'oggetto del messaggio o il titolo della chat. |
 | **Categorie** | Tag assegnati a un messaggio, che può essere *discutibile*, *conforme*o *non conforme*. |
