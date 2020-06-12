@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470673"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678982"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -349,7 +349,7 @@ Usare questa configurazione solo se non è necessario limitare l'accesso al docu
 
 5. Selezionare **Scegliere le autorizzazioni dal contesto corrente o personalizzato**.
 
-6. Nel riquadro **Scegliere le autorizzazioni dal contesto corrente o personalizzato** selezionare la casella a discesa, selezionare **Visualizzatore** e le autorizzazioni desiderate, quindi scegliere **Salva**.
+6. Nel riquadro **Scegliere le autorizzazioni dal contesto corrente o personalizzato** selezionare la casella a discesa, selezionare le autorizzazioni e quindi selezionare **Salva**.
 
 7. Tornare al riquadro **Assegna autorizzazioni** e selezionare **Salva**.
 

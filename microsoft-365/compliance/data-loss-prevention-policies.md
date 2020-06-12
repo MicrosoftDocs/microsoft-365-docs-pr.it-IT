@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
-ms.openlocfilehash: 4328855a4a7332c452d7e2832e1b924c16652f8b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3f4cabab120f418e4c410a1e1f052868ad453f67
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351851"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679070"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -116,8 +116,8 @@ Le condizioni disponibili a questo punto consentono di determinare se:
     
 - Il contenuto viene condiviso con utenti esterni o interni all'organizzazione.
 
-> [!NOTE]
-> Gli utenti che hanno account non guest nel tenant di Active Directory o di Azure Active Directory di un'organizzazione host sono considerati come utenti interni all'organizzazione.
+  > [!NOTE]
+  > Gli utenti che hanno account non guest nel tenant di Active Directory o di Azure Active Directory di un'organizzazione host sono considerati come utenti interni all'organizzazione.
     
 #### <a name="types-of-sensitive-information"></a>Tipi di informazioni riservate
 
@@ -127,13 +127,13 @@ I criteri di prevenzione della perdita dei dati aiutano a proteggere le informaz
   
 Quando un criterio di prevenzione della perdita dei dati cerca un tipo di informazione riservata (ad esempio un numero di carta di credito), non effettua soltanto la ricerca di un codice a 16 cifre. Ogni tipo di informazioni riservate viene definito e rilevato utilizzando una combinazione dei seguenti elementi:
   
-- Parole chiave
+- Parole chiave.
     
-- 	Funzioni interne per convalidare i chesksum o la composizione
+- Funzioni interne per convalidare i chesksum o la composizione.
     
-- Valutazione di espressioni regolari per trovare corrispondenze di schemi
+- Valutazione di espressioni regolari per trovare corrispondenze di schemi.
     
-- Valutazione di altri contenuti
+- Altre analisi del contenuto.
     
 In questo modo, il rilevamento di prevenzione della perdita dei dati raggiunge un livello superiore di accuratezza riducendo il numero di falsi positivi che possono interrompere il lavoro degli utenti.
   
@@ -145,13 +145,19 @@ Quando un contenuto corrisponde a una condizione di una regola, è possibile app
   
 Con le azioni ora disponibili è possibile:
   
-- **Limitare l'accesso al contenuto** Per i contenuti dei siti, ciò significa che le autorizzazioni per il documento sono limitate per tutti tranne che per l'amministratore della raccolta siti principale, il proprietario del documento e la persona che lo ha modificato per ultima. Queste persone possono rimuovere le informazioni riservate dal documento o eseguire altri azioni correttive. Quando il documento è conforme, vengono automaticamente ripristinate le autorizzazioni originali. Se l'accesso è bloccato, il documento viene visualizzato con una speciale icona di suggerimento per i criteri nella raccolta del sito. 
+- **Limitare l'accesso al contenuto** In base alle proprie esigenze, è possibile limitare l'accesso al contenuto in tre modi:
+
+  1. Limitare l'accesso al contenuto per tutti.
+  2. Limitare l'accesso al contenuto per le persone esterne all'organizzazione.
+  3. Limitare l'accesso a "chiunque abbia il collegamento".
+
+  Per i contenuti dei siti, ciò significa che le autorizzazioni per il documento sono limitate per tutti tranne che per l'amministratore della raccolta siti principale, il proprietario del documento e la persona che lo ha modificato per ultima. Queste persone possono rimuovere le informazioni riservate dal documento o eseguire altri azioni correttive. Quando il documento è conforme, vengono automaticamente ripristinate le autorizzazioni originali. Se l'accesso è bloccato, il documento viene visualizzato con una speciale icona di suggerimento per i criteri nella raccolta del sito. 
     
-    ![Suggerimento per i criteri che segnala che l’accesso al documento è bloccato](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![Suggerimento per i criteri che segnala che l’accesso al documento è bloccato](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    Per il contenuto dei messaggi di posta elettronica, questa azione blocca l'invio del messaggio. In base alla configurazione della regola di prevenzione della perdita dei dati, il mittente vedrà un rapporto di mancato recapito oppure, se la regola usa una notifica, un suggerimento per i criteri e/o una notifica tramite posta elettronica.
+  Per il contenuto dei messaggi di posta elettronica, questa azione blocca l'invio del messaggio. In base alla configurazione della regola di prevenzione della perdita dei dati, il mittente vedrà un rapporto di mancato recapito oppure, se la regola usa una notifica, un suggerimento per i criteri e/o una notifica tramite posta elettronica.
     
-    ![Avviso che i destinatari non autorizzati devono essere rimossi dal messaggio](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![Avviso che i destinatari non autorizzati devono essere rimossi dal messaggio](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>Notifiche utente e criteri ignorati dall’utente
 
@@ -335,15 +341,14 @@ Quando si usa un'[etichetta di conservazione](labels.md) creata e pubblicata in 
 - Le etichette di conservazione possono richiedere fino a un giorno per la sincronizzazione e fino a sette giorni per l'applicazione automatica dopo essere state create e pubblicate. Per informazioni dettagliate, vedere [Tempo necessario per l'applicazione delle etichette di conservazione](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
 - L'uso di un'etichetta di conservazione in un criterio ***è supportato solo per gli elementi di SharePoint Online e OneDrive for Business***.
 
+  ![Etichette come condizione](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-![Etichette come condizione](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  È consigliabile usare un'etichetta di conservazione nei criteri DLP se sono presenti elementi in corso di conservazione ed eliminazione e si desidera applicare anche altri controlli, ad esempio:
 
-È consigliabile usare un'etichetta di conservazione nei criteri DLP se sono presenti elementi in corso di conservazione ed eliminazione e si desidera applicare anche altri controlli, ad esempio:
+  - È stata pubblicata un'etichetta di conservazione denominata **Anno di imposta 2018**, che una volta applicata ai documenti fiscali del 2018 archiviati in SharePoint, li conserva per 10 anni e poi li elimina. Inoltre, se si desidera che gli elementi non vengano condivisi all'esterno dell'organizzazione, è possibile usare i criteri DLP.
 
-- È stata pubblicata un'etichetta di conservazione denominata **Anno di imposta 2018**, che una volta applicata ai documenti fiscali del 2018 archiviati in SharePoint, li conserva per 10 anni e poi li elimina. Inoltre, se si desidera che gli elementi non vengano condivisi all'esterno dell'organizzazione, è possibile usare i criteri DLP.
-
-> [!IMPORTANT]
-> Se si specifica un'etichetta di conservazione come condizione in un criterio di prevenzione della perdita dei dati (DLP) e si includono anche Exchange e/o Teams come posizione, si visualizzerà un messaggio di errore simile al seguente: **"La protezione dei contenuti etichettati nelle e-mail e nei messaggi di Teams non è supportata. Rimuovere l'etichetta seguente o disabilitare Exchange e Teams come posizione."** Questo perché il trasporto di Exchange non valuta i metadati dell'etichetta durante l'invio e il recapito dei messaggi. 
+  > [!IMPORTANT]
+  > Se si specifica un'etichetta di conservazione come condizione in un criterio di prevenzione della perdita dei dati (DLP) e si includono anche Exchange e/o Teams come posizione, si visualizzerà un messaggio di errore simile al seguente: **"La protezione dei contenuti etichettati nelle e-mail e nei messaggi di Teams non è supportata. Rimuovere l'etichetta seguente o disabilitare Exchange e Teams come posizione."** Questo perché il trasporto di Exchange non valuta i metadati dell'etichetta durante l'invio e il recapito dei messaggi. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>Il supporto per le etichette di riservatezza sarà disponibile a breve
 
@@ -449,15 +454,15 @@ DLP permette di rilevare le informazioni riservate tramite un'analisi approfondi
 
 Dopo aver creato un criterio di prevenzione della perdita dei dati nel Centro sicurezza e conformità, tale criterio viene salvato in un apposito archivio centrale e successivamente viene sincronizzato con le diverse origini di contenuti, tra cui:
   
-- Exchange Online e da qui con Outlook sul web e Outlook
+- Exchange Online e da qui con Outlook sul Web e Outlook.
     
-- Siti di OneDrive for Business
+- Siti di OneDrive for Business.
     
-- Siti SharePoint Online
+- Siti di SharePoint Online.
     
-- Applicazioni desktop di Office (Excel, PowerPoint e Word)
+- Applicazioni desktop di Office (Excel, PowerPoint e Word).
 
-- Messaggi di chat e canali di Microsoft Teams
+- Messaggi di chat e canali di Microsoft Teams.
     
 In seguito alla sincronizzazione del criterio con il percorso corretto, viene avviata la valutazione del contenuto e l'applicazione delle azioni.
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
@@ -519,13 +524,13 @@ Queste autorizzazioni sono necessarie solo per creare e applicare criteri di pre
 
 Per usare la maggior parte dei cmdlet per il Centro sicurezza e conformità, è necessario:
   
-1. [Connettersi al Centro sicurezza e conformità di Office 365 utilizzando la sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Connettersi al Centro sicurezza &amp; conformità di Office 365 usando la sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
-2. Usare uno di questi [cmdlet policy-and-compliance-dlp](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)
+2. Usare uno di questi [cmdlet policy-and-compliance-dlp](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps).
     
 I report dei criteri di prevenzione della perdita dei dati devono tuttavia estrarre i dati da Microsoft 365, incluso Exchange Online. Per questo motivo, **i cmdlet per questi report sono disponibili in PowerShell per Exchange Online e non in PowerShell per Centro sicurezza e conformità**. Per usare i cmdlet per i report dei criteri di prevenzione della perdita dei dati, è quindi necessario:
   
-1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
 2. Usare uno di questi cmdlet per i report dei criteri di prevenzione della perdita dei dati:
     
