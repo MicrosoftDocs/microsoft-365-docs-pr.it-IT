@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul modo in cui Contoso usa Microsoft Endpoint Configuration Manager per distribuire Microsoft 365 Apps for enterprise.
-ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011888"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679039"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Distribuzione di Microsoft 365 Apps for enterprise per Contoso
 
@@ -53,10 +53,10 @@ Anziché gestire gli aggiornamenti a Office con Configuration Manager, Contoso h
 
 Contoso ha seguito lo stesso approccio di due fasi per gli aggiornamenti delle funzionalità usate per la distribuzione di Office: i dispositivi nel gruppo pilota hanno ricevuto aggiornamenti delle funzionalità quattro mesi prima dei dispositivi nel resto dell'organizzazione (il gruppo di grandi dimensioni). Per farlo per Office, Contoso ha usato due [canali di aggiornamento](https://docs.microsoft.com/DeployOffice/overview-update-channels) consigliati: 
 
-- Canale semestrale (mirato) per gli aggiornamenti del gruppo pilota 
-- Canale semestrale per gli aggiornamenti del gruppo di grandi dimensioni 
+- Canale Enterprise semestrale (Anteprima) per gli aggiornamenti del gruppo pilota 
+- Canale Enterprise semestrale per gli aggiornamenti del gruppo di grandi dimensioni. 
 
-Poiché il Canale semestrale (mirato) rilascia una versione di Microsoft 365 Apps for enterprise quattro mesi prima del Canale semestrale, Contoso ha il tempo di verificare gli aggiornamenti senza avere la necessità di gestirli. 
+Poiché il Canale Enterprise semestrale (Anteprima) rilascia una versione di Microsoft 365 Apps for enterprise quattro mesi prima del Canale Enterprise semestrale, Contoso ha il tempo di convalidare gli aggiornamenti senza avere la necessità di gestirli. 
 
 ## <a name="deployment-process"></a>Processo di distribuzione
 
@@ -65,7 +65,7 @@ Per completare la distribuzione di Office, Contoso ha implementato la procedura 
 1. Prima della distribuzione, ha usato Readiness Toolkit per testare le app e i componenti aggiuntivi di Office e valutarne la compatibilità con Microsoft 365 Apps for enterprise.
 2. In Configuration Manager, Contoso ha abilitato la peer cache nei propri dispositivi client, che ha aiutato con una capacità di rete limitata durante la distribuzione ai dispositivi client in posizioni remote. 
 3. Ha definito due gruppi di distribuzione come raccolte di dispositivi in Configuration Manager: un gruppo pilota e un gruppo di grandi dimensioni. Il gruppo pilota, che include un piccolo gruppo di dispositivi rappresentativi nell'organizzazione, è stato usato per eseguire ulteriori test di app, componenti aggiuntivi e hardware con Windows 10 Enterprise e Microsoft 365 Apps for enterprise. 
-4. Ha creato pacchetti di distribuzione per Office con il dashboard di gestione client di Office e l'installazione guidata di Office 365, entrambi inclusi nella Console di Configuration Manager. Ha integrato due pacchetti di Microsoft 365 Apps for enterprise, uno per il gruppo pilota nel Canale semestrale (mirato) e uno per il gruppo di grandi dimensioni nel Canale semestrale. 
+4. Ha creato pacchetti di distribuzione per Office con il dashboard di gestione client di Office e l'installazione guidata di Office 365, entrambi inclusi nella Console di Configuration Manager. Ha integrato due pacchetti di Microsoft 365 Apps for enterprise, uno per il gruppo pilota nel Canale Enterprise semestrale (Anteprima) e uno per il gruppo di grandi dimensioni nel Canale Enterprise semestrale. 
 5. Come parte di ogni pacchetto di Office, ha incluso i Language Pack per inglese, francese e tedesco. Se un dispositivo richiedesse una lingua non inclusa nel pacchetto di Office, verrebbe automaticamente scaricata dalla rete CDN (Content Delivery Network) di Office.
 6. Ha usato la funzionalità integrata nel pacchetto di Office per rimuovere automaticamente tutte le versioni di MSI esistenti di Office prima di installare Microsoft 365 Apps for enterprise.
 7. In Configuration Manager, ha distribuito i pacchetti di Windows e Office ai punti di distribuzione nella propria rete, quindi ha eseguito le sequenze di attività di distribuzione di Configuration Manager per distribuire il pacchetto pilota di Microsoft 365 Apps for enterprise nel gruppo pilota.

@@ -18,17 +18,17 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: "Per gli amministratori: informazioni sull'uso del servizio di importazione nel Centro sicurezza e conformità per importare dati di posta elettronica (file PST) nelle cassette postali degli utenti in Exchange Online. Questo argomento include le domande frequenti e spiega il funzionamento del processo di importazione PST."
-ms.openlocfilehash: baf8fc0dbfb464dcf6b8054a9d91aacda00e3da6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 71125a087925e369dd7bb7d61096964bc1abdc63
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636629"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679060"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Panoramica dell'importazione di file PST dell'organizzazione
 
 > [!NOTE]
-> Questo articolo è rivolto agli amministratori. L'utente sta tentando di importare file PST nella propria cassetta postale? Vedere [Importare posta elettronica, contatti e calendario da un file PST di Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> Questo articolo è rivolto agli amministratori. L'utente sta tentando di importare file PST nella propria cassetta postale? Vedere [Importare posta elettronica, contatti e calendario da un file PST di Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075).
 
 È possibile usare il servizio di importazione nel Centro sicurezza e conformità per importare rapidamente in blocco i file PST nelle cassette postali di Exchange Online nell'organizzazione. Per importare file PST in Office 365 sono disponibili due procedure:
 
@@ -145,7 +145,7 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
   
  **Dov'è disponibile il caricamento tramite rete?**
   
-Il caricamento tramite rete è attualmente disponibile nelle seguenti aree geografiche: Stati Uniti, Canada, Brasile, Regno Unito, Europa, India, Asia orientale, Asia sud-orientale, Giappone, Repubblica di Corea e Australia. Questa caratteristica sarà presto disponibile anche in altre aree geografiche.
+Il caricamento tramite rete è attualmente disponibile in queste aree geografiche: Stati Uniti, Canada, Brasile, Regno Unito, Europa, India, Asia orientale, Asia sud-orientale, Giappone, Repubblica di Corea, Australia ed Emirati Arabi Uniti. La funzionalità sarà presto disponibile anche in altre aree geografiche.
 
 > [!NOTE]
 > Al momento, il caricamento tramite rete dei file PST non è disponibile in Germania e Svizzera. Le domande frequenti verranno aggiornate quando il caricamento tramite rete sarà disponibile in questi paesi.
