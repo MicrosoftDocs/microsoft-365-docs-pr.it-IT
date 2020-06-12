@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678992"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702560"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -35,7 +35,10 @@ Per gestire le recensioni sulla disposizione e verificare che i record siano sta
 
 ### <a name="permissions-for-disposition"></a>Autorizzazioni per la disposizione
 
-Per accedere correttamente alla scheda **disposizione** nel centro conformità di Microsoft 365, è necessario essere membri del ruolo **gestione disposizione** e del ruolo di **controllo di sola visualizzazione** . È consigliabile creare un nuovo gruppo di ruoli denominato **reviewers Disposition**e aggiungere questi due ruoli a quel gruppo di ruoli. Anche se si è un utente di **Amministrazione globale** , sarà necessario far parte del ruolo **gestione disposizione** per accedere alla scheda disposizione.
+Per accedere correttamente alla scheda **disposizione** nel centro conformità di Microsoft 365, è necessario che gli utenti dispongano del ruolo **gestione disposizione** e del ruolo di **controllo di sola visualizzazione** . Anche se il Consiglio standard consiste nell'aggiungere utenti ai gruppi di ruoli predefiniti, in questo caso, è consigliabile creare un nuovo gruppo di ruoli denominato **reviewers Disposition** con questi due ruoli e aggiungere gli utenti a questo gruppo in base alle esigenze. Un singolo gruppo di ruoli per la disposizione consente di ridurre le spese generali di amministrazione e rende più semplice per gli utenti le autorizzazioni combinate di cui hanno bisogno.
+
+> [!NOTE]
+> Anche a un amministratore globale deve essere concesso il ruolo di **gestione della disposizione** . Pertanto, se gli amministratori globali devono accedere alla scheda disposizione, come membri del gruppo di ruolo **revisori disposizione** . 
 
 Specifica del ruolo di **controllo di sola visualizzazione** :
 
