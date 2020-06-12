@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365 che possono influire sulla condivisione con persone esterne all'organizzazione.
-ms.openlocfilehash: a1c734adfe72d5eff5f18e67116544fd63eb854a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160136"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679145"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
@@ -195,7 +195,7 @@ Se si desidera limitare chi può condividere contenuti con utenti guest in Share
 |Consenti solo agli utenti dei gruppi di sicurezza selezionati di condividere con utenti esterni autenticati|Disattivato|Se è su **Attivato**, solo le persone nei gruppi di sicurezza specificati possono condividere con gli utenti esterni. Sono disponibili solo i collegamenti *Persone specifiche*. La condivisione *Chiunque* è disabilitata a meno che anche **Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati** sia su **Attivato**|
 |Consenti la condivisione con utenti esterni autenticati e usando collegamenti anonimi ai soli utenti dei gruppi di sicurezza selezionati|Disattivato|Se è su **Attivato**, solo le persone nei gruppi di sicurezza specificati possono condividere con utenti guest. Sono disponibili i collegamenti *Chiunque* e *Persone specifiche*.|
 
-Queste due impostazioni possono essere usate contemporaneamente. Se un utente si trova nel gruppo di sicurezza specificato per entrambe le impostazioni, il livello di autorizzazione più elevato prevale (*Chiunque* più *Utente specifico*).
+Queste due impostazioni possono essere usate contemporaneamente. Se un utente si trova nel gruppo di sicurezza specificato per entrambe le impostazioni, il livello di autorizzazione più elevato prevale (*Chiunque* più *Utente specifico*). I gruppi di sicurezza annidati sono supportati.
 
 ## <a name="sharepoint-site-level"></a>SharePoint (livello sito)
 
