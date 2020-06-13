@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa specifiche condizioni.
-ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432337"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695139"
 ---
 # <a name="learn-about-retention-policies"></a>Informazioni sui criteri di conservazione
 
@@ -141,18 +141,17 @@ Ecco le funzionalità precedenti che possono essere state usate:
   
 **Funzionalità precedenti di Exchange Online:**
 
-- [Gestione di casi di eDiscovery nel Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (blocco di eDiscovery) 
-    
 - [Blocco sul posto e blocco per controversia legale](https://go.microsoft.com/fwlink/?linkid=846124) (blocco di eDiscovery) 
 
 - [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
     
 - [Tag di conservazione e criteri di conservazione](https://go.microsoft.com/fwlink/?linkid=846125), noti anche come [gestione record di messaggistica (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (solo eliminazione)
     
+Vedere anche [Ritiro degli strumenti legacy di eDiscovery](legacy-ediscovery-retirement.md).
+
+
 **Funzionalità precedenti di SharePoint e OneDrive:**
 
-- [Gestione di casi di eDiscovery nel Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (blocco di eDiscovery) 
-    
 - [Aggiunta di un contenuto a un caso e archiviare origini blocco nel centro eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (blocco di eDiscovery) 
     
 - [Criteri di eliminazione dei documenti](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (solo eliminazione)
