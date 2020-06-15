@@ -16,22 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Informazioni su come eseguire la ricerca nel registro di controllo per gli eventi registrati quando gli amministratori di conformità eseguono le attività di ricerca contenuto e di eDiscovery nel centro sicurezza & Compliance.
-ms.openlocfilehash: f575953fb2d48ac996e443589ff312743d93d424
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: e7ed3ddf16d22750449d3211d96800334676e519
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943655"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726517"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Cercare le attività di eDiscovery nel log di controllo
 
-Le attività relative alla ricerca di contenuto e al eDiscovery eseguite in centro sicurezza & conformità o eseguendo i cmdlet di PowerShell corrispondenti vengono registrate nel registro di controllo. Gli eventi vengono registrati quando gli amministratori o i responsabili di eDiscovery (o qualsiasi utente assegnato a autorizzazioni di eDiscovery) eseguono le seguenti attività di ricerca contenuto e di core eDiscovery nel centro sicurezza & Compliance:
+Le attività relative alla ricerca e al contenuto di eDiscovery (per eDiscovery di base e avanzate di eDiscovery) eseguite in centro sicurezza & conformità o eseguendo i cmdlet di PowerShell corrispondenti vengono registrate nel registro di controllo. Gli eventi vengono registrati quando gli amministratori o i responsabili di eDiscovery (o qualsiasi utente assegnato a autorizzazioni di eDiscovery) eseguono le seguenti attività di ricerca contenuto e di core eDiscovery nel centro sicurezza & Compliance:
   
-- Creazione e gestione di casi eDiscovery
+- Creazione e gestione di case di eDiscovery di base e avanzate
 
 - Creazione, avvio e modifica di ricerche di contenuto
 
 - Esecuzione di operazioni di ricerca di contenuto, ad esempio visualizzazione in anteprima, esportazione ed eliminazione dei risultati della ricerca
+
+- Gestione di custodi e set di revisione in Advanced eDiscovery
 
 - Configurazione del filtro delle autorizzazioni per Ricerca contenuto
 
@@ -47,31 +49,33 @@ Per ulteriori informazioni sulla ricerca nel registro di controllo, le autorizza
 Al momento, è necessario eseguire alcune operazioni specifiche per visualizzare le attività di eDiscovery nel registro di controllo. Ecco come fare.
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
-    
+
 2. Accedere usando l'account di lavoro o della scuola.
-    
+
 3. Nel riquadro sinistro fare clic su **Cerca**e quindi su **Ricerca log di controllo**.
-    
-4. Nell'elenco a discesa **attività** , in **attività eDiscovery**, fare clic su una o più attività da cercare. In alternativa, è possibile fare clic su **eDiscovery** per cercare tutte le attività relative a eDiscovery. 
-    
+
+4. Nell'elenco a discesa **attività** in **eDiscovery** o in attività avanzate di **eDiscovery**fare clic su una o più attività da cercare.
+
     > [!NOTE]
-    > L'elenco a discesa attività include anche un gruppo di attività denominate **attività cmdlet di eDiscovery** che restituiscono record dal registro di controllo del cmdlet. 
+    > L'elenco a discesa **attività** include anche un gruppo di attività denominate **attività cmdlet di eDiscovery** che restituiscono record dal registro di controllo del cmdlet.
   
-5.  Selezionare un intervallo di data e ora per visualizzare gli eventi di eDiscovery che si sono verificati entro quel periodo. 
-    
-6. Nella casella **utenti** selezionare uno o più utenti per visualizzare i risultati della ricerca. Lasciare vuota questa casella per restituire le voci per tutti gli utenti. 
-    
-7. Fare clic su **Cerca** per eseguire la ricerca usando i criteri di ricerca. 
-    
+5. Selezionare un intervallo di data e ora per visualizzare gli eventi di eDiscovery che si sono verificati entro quel periodo. 
+
+6. Nella casella **utenti** selezionare uno o più utenti per visualizzare i risultati della ricerca. Lasciare vuota questa casella per restituire le voci per tutti gli utenti.
+
+7. Fare clic su **Cerca** per eseguire la ricerca usando i criteri di ricerca.
+
 8. Dopo la visualizzazione dei risultati della ricerca, è possibile fare clic su **Filtra risultati** per filtrare o ordinare i record di attività risultanti. Purtroppo, non è possibile utilizzare il filtro per escludere in modo esplicito determinate attività. 
-    
+
 9. Per visualizzare i dettagli relativi a un'attività, fare clic sul record attività nell'elenco dei risultati della ricerca. 
-    
-    Viene visualizzata una pagina **Dettagli** che contiene le proprietà dettagliate del record di evento. Per visualizzare ulteriori dettagli, fare clic su **altre informazioni**. Per una descrizione di queste proprietà, vedere la sezione relativa alle [proprietà dettagliate per le attività di eDiscovery](#detailed-properties-for-ediscovery-activities) . 
+
+    Viene visualizzata una pagina **Dettagli** che contiene le proprietà dettagliate del record di evento. Per visualizzare ulteriori dettagli, fare clic su **altre informazioni**. Per una descrizione di queste proprietà, vedere la sezione relativa alle [proprietà dettagliate per le attività di eDiscovery](#detailed-properties-for-ediscovery-activities) .
+
+10. Se lo si desidera, è possibile esportare i risultati della ricerca del registro di controllo in un file CSV e quindi utilizzare la funzionalità Excel Power query per formattare e filtrare i record. Per ulteriori informazioni, vedere [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>Attività di eDiscovery
 
-Nella tabella seguente vengono descritte le attività di ricerca contenuto e di eDiscovery di base registrate quando un amministratore o un Manager di eDiscovery esegue un'attività correlata a eDiscovery utilizzando il Centro sicurezza & conformità o eseguendo il cmdlet corrispondente in PowerShell per Centro sicurezza & Compliance. 
+Nella tabella seguente vengono descritte le attività di ricerca contenuto e di eDiscovery di base registrate quando un amministratore o un Manager di eDiscovery esegue un'attività correlata a eDiscovery utilizzando il Centro sicurezza & conformità o eseguendo il cmdlet corrispondente in PowerShell per Centro sicurezza & Compliance. Si noti inoltre che alcune attività eseguite in Advanced verranno restituite quando si esegue la ricerca di attività nell'elenco.
   
 > [!NOTE]
 > Le attività di eDiscovery descritte in questa sezione forniscono informazioni simili alle attività del cmdlet eDiscovery descritte nella sezione successiva. È consigliabile utilizzare le attività di eDiscovery descritte in questa sezione perché verranno visualizzate nei risultati della ricerca del registro di controllo entro 30 minuti. Per visualizzare le attività del cmdlet eDiscovery nei risultati di ricerca del registro di controllo, sono necessarie fino a 24 ore. 
@@ -118,9 +122,40 @@ Nella tabella seguente vengono descritte le attività di ricerca contenuto e di 
 |(nessuno)|ViewedSearchPreviewed|Get-ComplianceSearchAction-Preview|Un utente visualizza in anteprima i risultati di una ricerca contenuto nel centro sicurezza e conformità o tramite l'esecuzione del cmdlet.|
 |||||
   
+## <a name="advanced-ediscovery-activities"></a>Attività di Advanced eDiscovery 
+
+Nella tabella seguente vengono descritte le attività avanzate di eDiscovery registrate nel registro di controllo. Tali attività (oltre alle rilevanti attività di eDiscovery possono essere utilizzate per monitorare la progressione delle attività in un caso di eDiscovery avanzato.
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+|Aggiungere dati a un altro insieme da rivedere|AddWorkingSetQueryToWorkingSet|L'utente ha aggiunto i documenti di un insieme da rivedere a un altro insieme da rivedere.|
+|Aggiunti dati a un insieme da rivedere|AddQueryToWorkingSet|L'utente ha aggiunto i risultati della ricerca da una ricerca di contenuto associata a un caso di Advanced eDiscovery a un insieme da rivedere.|
+|Sono stati aggiunti dati non di Microsoft 365 a un insieme da rivedere|AddNonOffice365DataToWorkingSet|L'utente ha aggiunto dati non di Microsoft 365 a un insieme da rivedere.|
+|Aggiunta di documenti con correzione a un insieme da rivedere|AddRemediatedData|L'utente carica i documenti con errori di indicizzazione corretti in un insieme da rivedere.|
+|Dati analizzati nell'insieme da rivedere|RunAlgo|L'utente ha eseguito analisi sui documenti in un insieme da rivedere.|
+|Documento con annotazioni nell'insieme da rivedere|AnnotateDocument|L'utente ha annotato un documento in un insieme da rivedere. L'annotazione include la correzione del contenuto di un documento.|
+|Set di carichi confrontati|LoadComparisonJob|L'utente ha confrontato due set di carichi diversi in insieme da rivedere. Un set di carichi si verifica quando i dati di una ricerca di contenuto associata al caso vengono aggiunti a un insieme da rivedere.|
+|Documenti corretti convertiti in PDF|BurnJob|L'utente ha convertito in file PDF tutti i documenti corretti di un insieme da rivedere.|
+|Creato insieme da rivedere|CreateWorkingSet|L'utente ha creato un insieme da rivedere.|
+|Ricerca insieme da rivedere creata|CreateWorkingSetSearch|L'utente ha creato una query di ricerca che consente di cercare i documenti in un insieme da rivedere.|
+|Creato tag|CreateTag|L'utente ha creato un gruppo di tag in un insieme da rivedere. Un gruppo di tag può contenere uno o più tag figlio. Questi tag vengono usati per contrassegnare i documenti nell'insieme da rivedere.|
+|Ricerca insieme da rivedere eliminata|DeleteWorkingSetSearch|Un utente ha eliminato una query di ricerca in un insieme da rivedere.|
+|Tag eliminato|DeleteTag|L'utente ha eliminato un tag o un gruppo di tag in un insieme da rivedere.|
+|Documento scaricato|DownloadDocument|L'utente ha scaricato un documento da un insieme da rivedere.|
+|Tag modificato|UpdateTag|L'utente ha modificato un tag in un insieme da rivedere.|
+|Esportati documenti da un insieme da rivedere|ExportJob|L'utente ha esportato dei documenti da un insieme da rivedere.|
+|Impostazione caso modificata|UpdateCaseSettings|L'utente ha modificato le impostazioni per un caso. Le impostazioni per il caso includono le informazioni sul caso, le autorizzazioni di accesso e le impostazioni che controllano il comportamento di ricerca e analisi.|
+|Ricerca insieme da rivedere modificata|UpdateWorkingSetSearch|Un utente ha modificato una query di ricerca in un insieme da rivedere.|
+|Visualizzazione dell'anteprima della ricerca dell'insieme da rivedere|PreviewWorkingSetSearch|Un utente ha visualizzato in anteprima i risultati di una query di ricerca in un insieme da rivedere.|
+|Corretti i documenti con errori|ErrorRemediationJob|L'utente corregge i file che contengono errori di indicizzazione.|
+|Documento con tag|TagFiles|L'utente contrassegna un documento in un insieme da rivedere.|
+|Contrassegnati i risultati di una query|TagJob|Un utente contrassegna tutti i documenti che corrispondono ai criteri della query di ricerca in un insieme da rivedere.|
+|Documento visualizzato nell'insieme da rivedere|ViewDocument|L'utente ha visualizzato un documento in un insieme da rivedere.|
+|||
+
 ## <a name="ediscovery-cmdlet-activities"></a>attività del cmdlet eDiscovery
 
-Nella tabella seguente sono elencati i record del registro di controllo del cmdlet che vengono registrati quando un amministratore o un utente esegue un'attività correlata a eDiscovery utilizzando il Centro sicurezza & Compliance oppure eseguendo il cmdlet corrispondente in Remote PowerShell connesso al centro sicurezza & conformità dell'organizzazione. Le informazioni dettagliate nel record del registro di controllo sono diverse per le attività del cmdlet elencate in questa tabella e le attività di eDiscovery descritte nella sezione precedente. 
+Nella tabella seguente sono elencati i record del registro di controllo del cmdlet che vengono registrati quando un amministratore o un utente esegue un'attività correlata a eDiscovery utilizzando il Centro sicurezza & Compliance oppure eseguendo il cmdlet corrispondente in Remote PowerShell connesso al centro sicurezza & conformità dell'organizzazione. Le informazioni dettagliate nel record del registro di controllo sono diverse per le attività del cmdlet elencate in questa tabella e le attività di eDiscovery descritte nella sezione precedente.
   
 Come indicato in precedenza, sono necessarie fino a 24 ore prima che le attività del cmdlet di eDiscovery vengano visualizzate nei risultati di ricerca del registro di controllo.
   

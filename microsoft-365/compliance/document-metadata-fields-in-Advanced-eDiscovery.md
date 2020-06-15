@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo vengono definiti i campi dei metadati per i documenti in un set di revisione in un caso in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941238"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726455"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati del documento in Advanced eDiscovery
 
@@ -44,8 +44,8 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Nomi degli allegati|AttachmentNames|Attachment_Names|Elenco di nomi degli allegati.|
 |Punteggio Privilege del cliente del procuratore|AttorneyClientPrivilegeScore||Punteggio di contenuto del modello di privilegio avvocato-client.|
 |Author|Author|Doc_authors|Autore dei metadati del documento.|
-|Ccn|Ccn|Email_bcc|Campo Ccn per i tipi di messaggio. Format è **DisplayName \<SmtpAddress>**.|
-|CC|CC|Email_cc|Campo CC per i tipi di messaggio. Format è **DisplayName \<SmtpAddress>**.|
+|Ccn|Ccn|Email_bcc|Campo Ccn per i tipi di messaggio. Format è **DisplayName \<SMTPAddress> **.|
+|CC|CC|Email_cc|Campo CC per i tipi di messaggio. Format è **DisplayName \<SMTPAddress> **.|
 |Etichette di conformità|ComplianceLabels|Compliance_labels|[Etichette di conservazione](labels.md) applicate ai contenuti di Office 365.|
 |Percorso composto|CompoundPath|Compound_path|Percorso leggibile che descrive l'origine dell'elemento.|
 |Contenuto|Contenuto||Testo estratto dell'elemento.|
@@ -110,10 +110,11 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Contrassegnato come caso di Seed problema 1 *||Marked_as_seed_Case_issue_1|Contrassegnata come problema del Seed case 1 dalla pertinenza.|
 |Data di fine riunione|MeetingEndDate|Meeting_end_date|Data di fine riunione per le riunioni.|
 |Data di inizio riunione|MeetingStartDate|Meeting_start_date|Data di inizio della riunione per le riunioni.|
-|Tipo di messaggio|MessageKind|Message_kind|Tipo di messaggio da cercare. Valori possibili: ** <br /> <br />contatti <br />documenti <br />di <br />posta <br />elettronica <br />externaldata <br />fax im <br />Journals Meetings <br />microsoftteams** (restituisce gli elementi da chat, riunioni e chiamate in Microsoft Teams) ** <br />note <br />post <br />rssfeeds <br />attività <br />segreteria telefonica**| 
+|Tipo di messaggio|MessageKind|Message_kind|Tipo di messaggio da cercare. Valori possibili: ** <br /> <br /> contatti <br /> documenti di <br /> posta elettronica <br /> externaldata <br /> Fax <br /> im <br /> Journals <br /> Meetings <br /> microsoftteams** (restituisce gli elementi da chat, riunioni e chiamate in Microsoft Teams) ** <br /> Note <br /> Post <br /> rssfeeds <br /> attività <br /> segreteria telefonica**| 
 |Interno nativo|NativeExtension|Native_extension|Interno nativo dell'elemento.|
 |Nome file nativo|NativeFileName|Native_file_name|Nome file nativo dell'elemento.|
-|NativeMD5||Native_MD5|Hash MD5 del flusso di file.|
+|NativeMD5||Native_MD5|Hash MD5 (valore hash a 128 bit) del flusso di file.|
+|NativeSHA256||Native_SHA_256|Hash SHA256 (valore hash a 256 bit) del flusso di file.|
 |Ordinamento ND/ET: esclusione degli allegati|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenazione del set di thread di posta elettronica e del set di quasi duplicati (ND). Questo campo viene utilizzato per l'ordinamento efficiente al momento della revisione. Un **D** è preceduto da set ND e un **e** è preceduto ai set di et.|
 |Ordinamento ND/ET: inclusi gli allegati|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenazione di un set di thread di posta elettronica e di set quasi duplicati (ND). Questo campo viene utilizzato per l'ordinamento efficiente al momento della revisione. Un **D** è preceduto da set ND e un **e** è preceduto ai set di et. Ogni elemento di posta elettronica in un set di ET è seguito dagli allegati corretti.|
 |Rilevanza normalizzata caso problema 1||Normalized_relevance_score_case_issue_1|Rilevanza normalizzata caso problema 1 dalla pertinenza.|
@@ -142,9 +143,9 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Punteggio di pertinenza|RelevanceScore||Punteggio di pertinenza di un documento in base alla pertinenza.|
 |Tag pertinenza|RelevanceTag||Punteggio di pertinenza di un documento in base alla pertinenza.|
 |ID rappresentativo|RepresentativeId||Identificatore numerico di ogni set di duplicati esatti.|
-|Mittente|Mittente|Email_sender|Campo mittente (da) per i tipi di messaggio. Format è **DisplayName \<SmtpAddress>**.|
+|Mittente|Mittente|Email_sender|Campo mittente (da) per i tipi di messaggio. Format è **DisplayName \<SmtpAddress> **.|
 |Mittente/autore|SenderAuthor||Campo calcolato composto dal mittente o dall'autore dell'elemento.|
-|Dominio del mittente|SenderDomain|Email_sender_domain|Dominio del mittente.|
+|Dominio mittente|SenderDomain|Email_sender_domain|Dominio del mittente.|
 |Inviati|Inviati|Email_date_sent|Data di invio del messaggio.|
 |Imposta ordine: First Inclusive|SetOrderInclusivesFirst|Set_order_inclusives_first|Campo di ordinamento-posta elettronica e allegati: contatore cronologico; documenti: pivot prima quindi discendendo Punteggio di somiglianza.|
 |SimilarityPercent||Similarity_percent|Indica il modo in cui un documento è simile al pivot del set di duplicati vicino.|
@@ -155,7 +156,7 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Categorie|Categorie|Categorie|Tag applicati in un set di revisione.|
 |Elenco temi|Tema|Themes_list|Elenco temi come calcolato per l'analisi.|
 |Titolo|Titolo|Doc_title|Titolo dei metadati del documento.|
-|A|A|Email_to|To Field per i tipi di messaggio. Format è **DisplayName\<SmtpAddress>**|
+|A|A|Email_to|To Field per i tipi di messaggio. Il formato **è \<SmtpAddress> DisplayName**|
 |Univoco nel set di posta elettronica|UniqueInEmailSet||**False** se è presente un duplicato dell'allegato nel relativo set di posta elettronica.|
 |È stato rimediato|WasRemediated|Was_Remediated|Ha valore **true** se l'elemento è stato rimediato, altrimenti **false**.|
 |Word count|WordCount|Word_count|Numero di parole nell'elemento.|

@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: In questo articolo, trovare una descrizione della crittografia di Office 365 per Skype, OneDrive, SharePoint e Exchange Online.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 'Riepilogo: Descrizione della crittografia per Skype, OneDrive, SharePoint, Microsoft teams ed Exchange Online.'
+ms.openlocfilehash: fc369d167d5aa35507f9509fc1b92294e16f75d9
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031396"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717337"
 ---
-# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Crittografia per Skype for Business, OneDrive for Business, SharePoint Online ed Exchange Online
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-microsoft-teams-and-exchange-online"></a>Crittografia per Skype for business, OneDrive for business, SharePoint Online, Microsoft teams ed Exchange Online
 
 Microsoft 365 è un ambiente altamente sicuro che offre una protezione estesa in più livelli: protezione dei data center fisici, sicurezza della rete, sicurezza dell'accesso, sicurezza delle applicazioni e sicurezza dei dati.
 
@@ -87,3 +86,32 @@ Exchange Online utilizza BitLocker per tutti i dati delle cassette postali e la 
 Oltre alla crittografia dei servizi, Microsoft 365 supporta la chiave del cliente, che si basa sulla crittografia del servizio. Customer Key è un'opzione di chiave gestita da Microsoft per la crittografia del servizio Exchange Online, che è anche nella roadmap di Microsoft. Questo metodo di crittografia garantisce una maggiore protezione non garantita da BitLocker, in quanto fornisce la separazione degli amministratori del server e le chiavi di crittografia necessarie per la decrittografia dei dati e poiché la crittografia viene applicata direttamente ai dati (in contrasto con BitLocker, che applica la crittografia sul volume del disco logico), i dati dei clienti copiati da un server Exchange restano crittografati.
 
 L'ambito della crittografia del servizio Exchange Online è costituito dai dati dei clienti archiviati in Rest all'interno di Exchange Online. (Skype for business archivia quasi tutti i contenuti generati dall'utente all'interno della cassetta postale di Exchange Online dell'utente e quindi eredita la caratteristica di crittografia dei servizi di Exchange Online).
+
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+I team utilizzano TLS e MTLS per crittografare i messaggi istantanei. Tutto il traffico da server a server richiede MTLS, indipendentemente dal fatto che il traffico venga confinato alla rete interna o attraversi il perimetro della rete interna.
+
+In questa tabella vengono riepilogati i protocolli utilizzati dai team.
+
+***Crittografia del traffico***
+
+|||
+|:-----|:-----|
+|**Tipo di traffico**|**Crittografato da**|
+|Da server a server|MTLS|
+|Da client a server (es. messaggistica istantanea e presenza)|TLS|
+|Flussi multimediali (es. condivisione di audio e video dei file multimediali|TLS|
+|Condivisione di audio e video dei file multimediali|SRTP/TLS|
+|Segnalazione|TLS|
+|||
+
+#### <a name="media-encryption"></a>Crittografia multimediale
+
+Il traffico multimediale viene crittografato tramite SRTP (Secure RTP), un profilo del protocollo RTP (Real-Time Transport Protocol) che garantisce riservatezza, autenticazione e protezione da attacchi di tipo replay per il traffico RTP. SRTP utilizza una chiave di sessione generata utilizzando un generatore di numeri casuali sicuro e viene scambiata utilizzando il canale TLS di segnalazione. Il traffico multimediale da client a client viene negoziato tramite una connessione tra client e server, ma viene crittografato utilizzando SRTP quando si passa direttamente da client a client.
+
+Teams utilizza un token basato sulle credenziali per l'accesso sicuro ai relay multimediali su turno. I relè multimediali scambiano il token su un canale protetto da TLS.
+
+#### <a name="fips"></a>FIPS
+
+Teams utilizza algoritmi FIPS (Federal Information Processing Standard) conformi per gli scambi di chiavi di crittografia. Per ulteriori informazioni sull'implementazione di FIPS, consultare la [pubblicazione FIPS (Federal Information Processing Standard) 140-2](https://docs.microsoft.com/microsoft-365/compliance/offering-fips-140-2?view=o365-worldwide).

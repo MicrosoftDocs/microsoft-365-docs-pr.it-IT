@@ -14,20 +14,22 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla resilienza dei dati in Microsoft Office 365.'
-ms.openlocfilehash: 1c31c0d5524370fd417460fbacf3695df4fa0102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e69d35f08070e1fe092ca8a9b4aef6d179711121
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632241"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717347"
 ---
 # <a name="service-encryption"></a>Crittografia del servizio
 
 Oltre a utilizzare la crittografia a livello di volume, Exchange Online, Skype for business, SharePoint Online e OneDrive for business utilizzano anche la crittografia del servizio per crittografare i dati dei clienti. La crittografia del servizio consente di eseguire due opzioni di gestione principali:
 
-- Microsoft gestisce tutte le chiavi di crittografia. Questa opzione è attualmente disponibile in SharePoint Online, OneDrive for business e Skype for business.
+## <a name="microsoft-managed-keys"></a>Chiavi gestite Microsoft: 
+Microsoft gestisce tutte le chiavi di crittografia, incluse le chiavi radice per la crittografia del servizio. Questa opzione è attualmente disponibile in SharePoint Online e OneDrive for business. Questa opzione è attualmente in fase di rollforward per Exchange Online. Le chiavi gestite Microsoft forniscono la crittografia del servizio predefinita, a meno che non si decida di onboard usando la chiave del cliente. Se, in un secondo momento, si decide di non utilizzare la chiave del cliente senza seguire il percorso di eliminazione dei dati, i dati rimarranno crittografati utilizzando le chiavi gestite Microsoft. I dati vengono sempre crittografati a questo livello predefinito almeno. 
 
-- L'organizzazione fornisce le chiavi radice. È possibile gestire queste chiavi utilizzando il Vault Key di Azure. Questa opzione è denominata Customer Key. La chiave del cliente è attualmente disponibile per i file di Exchange Online, SharePoint Online, OneDrive for business, Skype for business e teams. Se si utilizza il codice "Customer Key", queste chiavi sostituiscono le chiavi gestite da Microsoft per crittografare i dati.
+## <a name="customer-key"></a>Chiave cliente: 
+È possibile specificare le chiavi radice utilizzate con la crittografia del servizio e gestire queste chiavi utilizzando Azure Key Vault. Microsoft gestisce tutte le altre chiavi. Questa opzione è denominata Customer Key ed è attualmente disponibile per Exchange Online, SharePoint Online e OneDrive for business. (In precedenza denominato crittografia avanzata con BYOK. Vedere [miglioramento della trasparenza e del controllo per i clienti di Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) per l'annuncio originale.
 
 La crittografia dei servizi offre molteplici vantaggi. Ad esempio, Customer Key:
 
@@ -38,8 +40,6 @@ La crittografia dei servizi offre molteplici vantaggi. Ad esempio, Customer Key:
 - Consente di separare gli amministratori del sistema operativo Windows dall'accesso ai dati dei clienti archiviati o elaborati dal sistema operativo.
 
 - Migliora la capacità di Microsoft 365 di soddisfare le esigenze dei clienti con requisiti di conformità relativi alla crittografia.
-
-## <a name="customer-key"></a>Customer Key
 
 Se si utilizza il codice "Customer Key", è possibile generare le proprie chiavi di crittografia utilizzando un modulo di servizio hardware (HSM) locale o un Vault Key di Azure (AKV). Indipendentemente dal modo in cui viene generata la chiave, è possibile utilizzare AKV per controllare e gestire le chiavi di crittografia utilizzate da Office 365. Dopo aver memorizzato i tasti in AKV, è possibile utilizzarli come radice di uno dei portachiavi che crittografa i dati o i file delle cassette postali.
 
@@ -56,4 +56,4 @@ Per informazioni su come configurare la chiave del cliente per Microsoft 365 per
 - [Eseguire il rollforward o la rotazione di una chiave del cliente o di una chiave di disponibilità](customer-key-availability-key-roll.md)
 
 - [Comprendere il codice di disponibilità](customer-key-availability-key-understand.md)
- 
+

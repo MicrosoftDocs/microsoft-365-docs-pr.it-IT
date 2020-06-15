@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Si ha una domanda su come funzionano le nuove funzionalità di protezione dei messaggi? Controllare la risposta qui.
-ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352082"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717155"
 ---
 # <a name="message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi
 
@@ -120,6 +120,11 @@ Per abilitare la crittografia per gli allegati PDF, eseguire il comando seguente
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
+
+La crittografia in formato PDF consente di proteggere i documenti PDF sensibili tramite una comunicazione sicura o una collaborazione sicura. Per tutti i client Outlook, i messaggi e gli allegati PDF non protetti ereditano la protezione OME del criterio di prevenzione della perdita di dati (DLP) o della regola del flusso di posta in Exchange Online. Inoltre, se un utente di Outlook sul Web allega un documento PDF non protetto e applica la protezione al messaggio, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire solo gli allegati crittografati nelle applicazioni che supportano i file PDF protetti, ad esempio il portale OME e il Visualizzatore di informazioni di Azure Information Protection.
+
+> [!IMPORTANT]
+> Il client desktop di Outlook non supporta la crittografia PDF.
 
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Gli allegati di OneDrive for business sono supportati?
 

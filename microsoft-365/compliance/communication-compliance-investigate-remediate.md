@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bda1556b5726c6e94a6860c7c57f3f7082f2f5e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208398"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717317"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità delle comunicazioni
 
@@ -70,7 +70,7 @@ Per un elenco completo dei filtri e dettagli sul campo, vedere [Filters](communi
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Utilizzo dell'analisi duplicata vicina ed esatta
 
-I criteri di conformità della comunicazione analizzano e pregruppo i duplicati del messaggio vicino ed esatto senza ulteriori passaggi di configurazione. Questa visualizzazione consente di correggere rapidamente i messaggi simili uno per uno o come gruppo, riducendo il carico di indagine dei messaggi per i revisori. Quando vengono rilevati duplicati, **i duplicati e/** o i controlli **duplicati esatti** vengono visualizzati nella barra degli strumenti azione di correzione.
+I criteri di conformità della comunicazione analizzano e pregruppo i duplicati del messaggio vicino ed esatto senza ulteriori passaggi di configurazione. Questa visualizzazione consente di correggere rapidamente i messaggi simili uno per uno o come gruppo, riducendo il carico di indagine dei messaggi per i revisori. Quando vengono rilevati duplicati, **i duplicati e/** o i controlli **duplicati esatti** vengono visualizzati nella barra degli strumenti azione di correzione. Questa visualizzazione non è disponibile se sono stati trovati duplicati vicini o esatti.
 
 #### <a name="to-remediate-duplicates"></a>Per correggere i duplicati
 
