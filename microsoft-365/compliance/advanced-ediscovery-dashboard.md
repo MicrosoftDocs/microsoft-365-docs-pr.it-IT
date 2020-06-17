@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilizzare il dashboard Advanced eDiscovery per i set di revisione per analizzare rapidamente il corpo per identificare le tendenze o le statistiche chiave che consentiranno di sviluppare la strategia di revisione.
+ms.openlocfilehash: 36f30689047eec7ff2c2c49c6b0d54f1a60470e4
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080098"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741702"
 ---
-# <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>Dashboard avanzato di eDiscovery per i set di riesami (anteprima)
+# <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Dashboard avanzato di eDiscovery per i set di Revisione
 
 Per alcuni casi in Advanced eDiscovery, è possibile che si disponga di un volume elevato di documenti e messaggi di posta elettronica che devono essere esaminati. Prima di avviare il processo di revisione, è consigliabile analizzare rapidamente il corpus per identificare le tendenze o le statistiche chiave che consentono di sviluppare la strategia di revisione. A tale scopo, è possibile utilizzare il dashboard Advanced eDiscovery per i set di revisione per analizzare rapidamente il corpo.
 

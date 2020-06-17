@@ -25,18 +25,19 @@ ms.custom:
 - BEA160
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
-ms.openlocfilehash: 7425c0b49ff65fa0d5c777e3c7fdb7af99488a9d
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232782"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407945"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visualizzare l'estratto conto o la fattura
 
-Questo articolo è destinato agli abbonati a Microsoft 365 per le aziende. È necessario essere un amministratore globale o un amministratore fatturazione per eseguire le procedure descritte in questo articolo.
+This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
   
 Se serve aiuto per interpretare gli addebiti riportati nella fattura, vedere [Informazioni sull'estratto conto o la fattura](understand-your-invoice2.md) per una descrizione dettagliata.
   
@@ -89,6 +90,6 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 [Pagare con fattura, carta di credito o conto corrente bancario](pay-for-your-subscription.md)
   
-[Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario](add-update-or-remove-credit-card-or-bank-account.md)
+[Gestire metodi di pagamento](manage-payment-methods.md)
 
 [Minecraft: Opzioni di pagamento di Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761)

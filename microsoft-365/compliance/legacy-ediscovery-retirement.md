@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Advanced eDiscovery v 1.0 vengono anche ritirati nello stesso periodo di tempo.
-ms.openlocfilehash: 547b58bebf4ade04bc9c1992ed7f0f518924341f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351917"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761686"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ritiro degli strumenti legacy di eDiscovery
 
@@ -222,7 +222,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 </tr>
 <tr class="odd">
 <td>Copiare i risultati della ricerca in una cassetta postale di individuazione</td>
-<td>Nessuna</td>
+<td>Nessuno</td>
 <td>Non è disponibile una sostituzione diretta per questa funzionalità poiché non fornisce l'accesso a tutti i servizi di Microsoft 365. Vedere le domande frequenti seguenti per soluzioni alternative.</td>
 </tr>
   <tr class=even>
@@ -289,14 +289,6 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 </td>
 </tr>
 <tr class="even">
-<td>Eliminare i messaggi da una cassetta postale</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p></p></td>
-<td><p>I cmdlet ComplianceSearch e ComplianceSearchAction interagiscono per facilitare la ricerca e l'eliminazione del contenuto. È possibile creare ed eseguire una ricerca con cmdlet <strong>New-ComplianceSearch</strong> e <strong>New-ComplianceSearch</strong> , quindi è possibile eliminare il contenuto utilizzando il comando <strong>New-ComplianceSearchAction-Purge-PurgeType</strong> . Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">cercare ed eliminare i messaggi</span></a>.</p>
-</td>
-</tr>
-<tr class="odd">
 <td>Eliminare messaggi di posta elettronica in blocco da una cassetta postale</td>
 <td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Configurare i criteri di archiviazione ed eliminazione per le cassette postali</span></a></p>
 <p></p></td>
@@ -307,6 +299,24 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <td>Copiare i risultati della ricerca in una cassetta postale di individuazione</td>
 <td> </td>
 <td>Non è disponibile una sostituzione diretta per questa funzionalità poiché non fornisce l'accesso a tutti i servizi di Microsoft 365. Vedere le domande frequenti nella sezione <strong>cmdlet *-MailboxSearch</strong> per soluzioni alternative. </td>
+</tr>
+<tr class=odd>
+  <td>Copiare i messaggi da una cassetta postale a una cassetta postale diversa</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assegnare le autorizzazioni a una cassetta postale</a></td>
+  <td>Per concedere l'accesso alla posta elettronica di un altro utente (ad esempio, quando un dipendente lascia l'organizzazione ed è necessario consentire a un'altra persona di accedere alla posta elettronica dell'ex dipendente), si consiglia di assegnare le autorizzazioni per l'accesso alla cassetta postale dell'ex dipendente. Pertanto, invece di copiare gli elementi delle cassette postali in un'altra cassetta postale utente o in una cassetta postale condivisa, è sufficiente assegnare un utente per accedere alla cassetta postale di origine.</td>
+</tr>
+<tr class=even>
+  <td>Eliminare i messaggi da una cassetta postale</td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<p></p></td>
+<td><p>I cmdlet ComplianceSearch e ComplianceSearchAction interagiscono per facilitare la ricerca e l'eliminazione del contenuto. È possibile creare ed eseguire una ricerca con cmdlet <strong>New-ComplianceSearch</strong> e <strong>New-ComplianceSearch</strong> , quindi è possibile eliminare il contenuto utilizzando il comando <strong>New-ComplianceSearchAction-Purge-PurgeType</strong> . Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">cercare ed eliminare i messaggi</span></a>.</p>
+</td>
+</tr>
+<tr class="odd"> 
+<td>Eliminare i messaggi da una cassetta postale</td>
+<td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assegnare le autorizzazioni a una cassetta postale</a></td>
+<td>Per eliminare i messaggi da una cassetta postale, assegnare le autorizzazioni di amministratore per accedere alla cassetta postale del dipendente. I messaggi possono essere eliminati e riciclati in base alle esigenze sfruttando la funzionalità di ricerca e visualizzazione integrata in Outlook.</td>
 </tr>
 </tbody>
 </table>
