@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: db937347dd397628e0cfaae67b8c923f9433ca13
-ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
+ms.openlocfilehash: 2fbb54cadaa1681ace4e04dade4fd5a0784360eb
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44649395"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739057"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -64,17 +64,24 @@ In alternativa all'utilizzo dei ruoli, è possibile creare un nuovo gruppo di ru
 
 Queste autorizzazioni sono necessarie solo per creare e configurare le etichette di riservatezza e i relativi criteri di etichetta. Non sono invece necessarie per applicare le etichette nelle app o nei servizi. Se sono necessarie autorizzazioni aggiuntive per configurazioni specifiche relative alle etichette di riservatezza, tali autorizzazioni verranno riportate nelle rispettive istruzioni nella documentazione.
 
+## <a name="deployment-strategy-for-sensitivity-labels"></a>Strategia di distribuzione per le etichette di riservatezza
+
+Una strategia efficace per distribuire etichette di riservatezza per un'organizzazione consiste nel creare un team operativo virtuale che identifichi e gestisca le esigenze aziendali e tecniche, i test del modello di prova, i punti controllo interni e le approvazioni nonché la distribuzione finale per l'ambiente di produzione.
+
+Se si utilizza la tabella presente nella sezione seguente, è consigliabile identificare uno o due scenari principali che corrispondano ai propri requisiti aziendali più rilevanti. Dopo la distribuzione di questi scenari, tornare all'elenco per identificare una o due priorità successive per la distribuzione.
+
+Ulteriori indicazioni generali per la distribuzione sono disponibili nella guida scaricabile di Microsoft 365 sull'accelerazione della distribuzione di Information Protection e della Conformità. Per maggiori informazioni, vedere il post del blog [Guida all'accelerazione della distribuzione di Microsoft Information Protection e della Conformità](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493).
+
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scenari comuni per le etichette di riservatezza
 
-Usare la documentazione seguente a supporto della distribuzione delle etichette di riservatezza:
+Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza e i relativi criteri](create-sensitivity-labels.md).
 
 |Operazione da eseguire|Documentazione|
 |----------------|---------------|
-|Creare e pubblicare etichette di riservatezza per proteggere i dati dell'organizzazione|[Creare e configurare etichette di riservatezza e i relativi criteri](create-sensitivity-labels.md)|
+|Gestire le etichette di riservatezza per le app di Office in modo che il contenuto venga etichettato non appena creato |[Usare le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md)|
 |Consentire agli utenti di etichettare e proteggere i file dai computer Windows tramite app di Office, Esplora file e PowerShell|[Client di etichettatura unificata di Azure Information Protection per Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Crittografare documenti e messaggi di posta elettronica con etichette di riservatezza e limitare gli utenti autorizzati ad accedervi e il relativo uso |[Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md)|
-|Abilitare le etichette di riservatezza per Office sul Web, con supporto per creazione condivisa, eDiscovery, prevenzione della perdita dei dati e ricerca, anche quando i documenti sono crittografati. | [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
-|Gestire le etichette di riservatezza per le app di Office in modo che il contenuto venga etichettato non appena creato |[Usare le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md)|
+|Abilitare le etichette di riservatezza per Office sul Web, con supporto per creazione condivisa, eDiscovery, prevenzione della perdita dei dati e ricerca, anche quando i documenti sono crittografati | [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Applicare automaticamente etichette di riservatezza ai documenti e ai messaggi di posta elettronica | [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)|
 |Usare le etichette di riservatezza per proteggere il contenuto in Teams e SharePoint |[Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md)|
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi Azure Information Protection per classificare e proteggere automaticamente i file](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|

@@ -2,6 +2,8 @@
   href: index.yml
 - name: Per iniziare
   items:
+    - name: Attività rapide per iniziare con la conformità
+      href: compliance-quick-tasks.md
     - name: Novità del Centro conformità
       href: whats-new.md
     - name: Aggiornamenti recenti dei contenuti relativi alla conformità
@@ -155,6 +157,8 @@
       href: encryption.md
     - name: Servizio di crittografia di Office 365
       href: office-365-service-encryption.md
+    - name: Dettagli tecnici di riferimento sulla crittografia in Office 365
+      href: technical-reference-details-about-encryption.md
     - name: Customer Key
       items:
         - name: Crittografia del servizio con Customer Key in Office 365
@@ -198,8 +202,6 @@
           href: exchange-online-secures-email-secrets.md
         - name: Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica in Office 365
           href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: Dettagli tecnici di riferimento sulla crittografia in Office 365
-          href: technical-reference-details-about-encryption.md
         - name: BitLocker e Distributed Key Manager (DKM) per la crittografia
           href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
         - name: OME legacy
@@ -533,7 +535,7 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Esaminare i dati del caso
           items:
-            - name: Usare la dashboard dell'insieme da rivedere (anteprima)
+            - name: Usare la dashboard dell'insieme da rivedere
               href: advanced-ediscovery-dashboard.md
             - name: Visualizzare i documenti in un insieme da rivedere
               href: view-documents-in-review-set.md
