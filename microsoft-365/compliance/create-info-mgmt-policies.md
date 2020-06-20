@@ -19,13 +19,15 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: I criteri di gestione delle informazioni consentono all'organizzazione di controllare il periodo di conservazione del contenuto, di verificare le persone che hanno a che fare con il contenuto e di aggiungere codici a barre o etichette ai documenti. Un criterio può contribuire a garantire la conformità ai regolamenti legali e governativi o ai processi aziendali interni. In qualità di amministratore, è possibile configurare un criterio per controllare la modalità di gestione dei documenti e la durata della conservazione dei documenti.
-ms.openlocfilehash: eabbd2d6292de621b4c8e14d6d491f27b8fb24f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come configurare un criterio di gestione delle informative per controllare la durata delle informazioni e tenere conto di chi utilizza le informazioni.
+ms.openlocfilehash: 2519f039e7495d01a828aee564ce1a6caf41342d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077515"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817995"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Creare e applicare criteri di gestione delle informazioni
 
@@ -46,15 +48,15 @@ Per ulteriori informazioni, vedere [Introduzione ai criteri di gestione delle in
 
 Per garantire che un criterio di informazioni venga applicato a tutti i documenti di un determinato tipo all'interno di una raccolta siti, prendere in considerazione la possibilità di creare il criterio a livello di raccolta siti e successivamente applicarlo ai tipi di contenuto. Questi vengono definiti criteri di raccolta siti. 
   
-1. Nella Home Page \> della raccolta siti fare clic sul **pulsante impostazioni di**![SharePoint 2016 sulla barra del titolo.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
+1. Nella Home page della raccolta siti fare \> **Settings** ![ clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
-2. Nella pagina Impostazioni sito, in \> **modelli di criteri tipo di contenuto** **Amministrazione raccolta siti** . 
+2. Nella pagina Impostazioni sito, in modelli di criteri tipo di contenuto **Amministrazione raccolta siti** \> **Content Type Policy Templates**. 
   
 ![Collegamento Modelli di criteri tipo di contenuto nella pagina Impostazioni sito](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
-3. Nella pagina \> criteri **creare**. 
+3. Nella pagina criteri \> **creare**. 
     
 4. Immettere un nome e una descrizione per il criterio, quindi scrivere una breve istruzione di criteri che spieghi agli utenti il criterio.
     
@@ -69,17 +71,17 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
   
  È inoltre possibile aggiungere un criterio di gestione delle informazioni a un tipo di contenuto specifico per gli elenchi. Questo ha l'effetto di applicare il criterio solo agli elementi dell'elenco che utilizzano il tipo di contenuto. 
   
-1. Nella Home Page \> della raccolta siti fare clic sul **pulsante impostazioni di**![SharePoint 2016 sulla barra del titolo.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
+1. Nella Home page della raccolta siti fare \> **Settings** ![ clic sul pulsante impostazioni di SharePoint 2016 sulla barra del titolo.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
-2. Nella pagina Impostazioni sito, in **tipi di contenuto del sito**per le **raccolte** \> Web Designer.
+2. Nella pagina Impostazioni sito, in tipi di contenuto del sito per le **raccolte web designer** \> **Site content types**.
   
 ![Collegamento Tipi di contenuto del sito nella pagina Impostazioni sito](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
 3. Nella pagina Impostazioni tipo di contenuto del sito selezionare il tipo di contenuto a cui si desidera aggiungere un criterio.
     
-4. Nella pagina tipo di contenuto del sito, in impostazioni impostazioni **dei criteri di gestione** **delle** \> informazioni.
+4. Nella pagina tipo di contenuto del sito, **Settings** in impostazioni impostazioni \> **dei criteri di gestione delle informazioni**.
     
 5. Nella pagina Modifica criterio immettere un nome e una descrizione per il criterio, quindi scrivere una breve descrizione che spieghi agli utenti il criterio.
     
@@ -114,7 +116,7 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
     
     Per abilitare i codici a barre
     
-||||||1. * * * *|**Nella pagina Modifica criterio, in **codici** \> a barre **abilitare i codici a barre**.**|
+||||||1. * * * *|**Nella pagina Modifica criterio, in **codici** a barre \> **abilitare i codici a barre**.**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||**2.** <br/> |Per richiedere agli utenti di inserire i codici a barre nei documenti, scegliere **Richiedi agli utenti di inserire un codice a barre prima del salvataggio o della stampa**.  <br/> |
 ||||||**3.** <br/> |Scegliere **OK** per applicare la caratteristica Barcode al criterio.  <br/> |
@@ -128,7 +130,7 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
 ||||||**1.**|* * Per richiedere agli utenti di aggiungere un'etichetta a un documento, scegliere **Richiedi agli utenti di inserire un'etichetta prima del salvataggio o della stampa**.  <br/> > [!NOTE]> se si desidera che le etichette siano facoltative, non selezionare questa casella di controllo.        **|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||2.  <br/> |Per bloccare un'etichetta in modo che non possa essere modificata dopo l'inserimento, scegliere **Impedisci modifiche alle etichette dopo che sono state aggiunte**.  <br/>  Questa impostazione consente di evitare che il testo dell'etichetta venga aggiornato dopo l'inserimento dell'etichetta in un elemento all'interno di un'applicazione client, ad esempio Word, Excel o PowerPoint. Se si desidera che l'etichetta venga aggiornata in caso di aggiornamento delle proprietà del documento o dell'elemento, non selezionare questa casella di controllo.  <br/> |
-||||||3.  <br/> |Nella casella formato etichetta immettere il testo per l'etichetta che si desidera visualizzare. Le etichette possono contenere fino a 10 riferimenti di colonna, ognuno dei quali può avere una lunghezza massima di 255 caratteri. Per creare il formato per l'etichetta, eseguire le operazioni seguenti:  <br/> Digitare i nomi delle colonne che si desidera includere nell'etichetta nell'ordine in cui si desidera che vengano visualizzate. Racchiudere i nomi delle colonne racchiuse tra parentesi{}graffe (), come illustrato nell'esempio nella pagina Modifica criterio.  <br/> Digitare parole per identificare le colonne all'esterno delle parentesi quadre, come illustrato nell'esempio nella pagina Modifica criterio.  <br/> |
+||||||3.  <br/> |Nella casella formato etichetta immettere il testo per l'etichetta che si desidera visualizzare. Le etichette possono contenere fino a 10 riferimenti di colonna, ognuno dei quali può avere una lunghezza massima di 255 caratteri. Per creare il formato per l'etichetta, eseguire le operazioni seguenti:  <br/> Digitare i nomi delle colonne che si desidera includere nell'etichetta nell'ordine in cui si desidera che vengano visualizzate. Racchiudere i nomi delle colonne racchiuse tra parentesi graffe ( {} ), come illustrato nell'esempio nella pagina Modifica criterio.  <br/> Digitare parole per identificare le colonne all'esterno delle parentesi quadre, come illustrato nell'esempio nella pagina Modifica criterio.  <br/> |
 ||||||4.  <br/> |Per aggiungere un'interruzione di riga, immettere **\n** in cui si desidera che l'interruzione di riga venga visualizzata.  <br/> |
 ||||||5.  <br/> |Selezionare la dimensione e lo stile del carattere desiderati e specificare se si desidera che l'etichetta sia posizionata a sinistra, al centro o a destra all'interno del documento.  <br/>  Selezionare un tipo di carattere e uno stile disponibili nei computer degli utenti. Dalla dimensione del tipo di carattere dipende la quantità di testo visualizzabile sull'etichetta.  <br/> |
 ||||||6.  <br/> |Immettere l'altezza e la larghezza dell'etichetta. L'altezza e la larghezza dell'etichetta possono essere comprese tra 0,5 cm e 50 cm. Il testo dell'etichetta viene sempre centrato verticalmente all'interno dell'immagine dell'etichetta.  <br/> |
@@ -155,7 +157,7 @@ Se si desidera definire un criterio di gestione delle informazioni diverso da qu
   
 1. Passare all'elenco o alla raccolta per cui si desidera specificare un criterio di gestione delle informazioni. 
     
-2. Sulla barra multifunzione, scegliere le **Impostazioni** della raccolta \> o dell' **elenco**della scheda **raccolta** o **elenco** .
+2. Sulla barra multifunzione, scegliere le impostazioni della raccolta o dell'elenco della scheda **raccolta** o **elenco** \> **Library Settings** . **List Settings**
     
     In SharePoint Online, fare clic su **Impostazioni** , quindi fare clic su impostazioni **elenco** o **Impostazioni raccolta**. 
     
@@ -202,7 +204,7 @@ Se i criteri di gestione delle informazioni sono già stati creati per il sito c
   
 1. Passare all'elenco o alla raccolta che contiene il tipo di contenuto a cui si desidera applicare un criterio.
     
-2. Sulla barra multifunzione, scegliere le **Impostazioni** della raccolta \> o dell' **elenco**della scheda **raccolta** o **elenco** .
+2. Sulla barra multifunzione, scegliere le impostazioni della raccolta o dell'elenco della scheda **raccolta** o **elenco** \> **Library Settings** . **List Settings**
     
     In SharePoint Online, fare clic su **Impostazioni** , quindi fare clic su impostazioni **elenco** o **Impostazioni raccolta**. 
     
@@ -212,7 +214,7 @@ Se i criteri di gestione delle informazioni sono già stati creati per il sito c
   
 4. Verificare che l'origine dei criteri sia impostata su **tipi di contenuto**e in **criteri tipo di contenuto** Selezionare il tipo di contenuto a cui si desidera applicare il criterio. 
     
-5. In **specifica il** \> criterio **utilizzare un criterio di raccolta siti**e quindi selezionare il criterio che si desidera applicare dall'elenco. 
+5. In **specifica il** criterio \> **utilizzare un criterio di raccolta siti**e quindi selezionare il criterio che si desidera applicare dall'elenco. 
     
     > [!NOTE]
     >  Se l'opzione **Usa criterio raccolta siti** non è disponibile, non sono stati definiti criteri di raccolta siti per la raccolta siti. 
@@ -237,11 +239,11 @@ Condividere tipi di contenuto tra raccolte siti tramite un'applicazione di servi
 ### <a name="export-a-policy"></a>Esportare un criterio
 <a name="__toc260646790"> </a>
 
-1. Nella Home page della raccolta siti scegliere **Impostazioni**![impostazioni di piccole dimensioni che hanno posto le impostazioni del sito. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **sito.** \>
+1. Nella Home page della raccolta siti scegliere **Impostazioni** ![ piccole impostazioni ingranaggio che ha il posto delle impostazioni del ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) sito. \> **Site Settings**
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
-2. Nella pagina Impostazioni sito, in \> **modelli di criteri tipo di contenuto** **Amministrazione raccolta siti** . 
+2. Nella pagina Impostazioni sito, in modelli di criteri tipo di contenuto **Amministrazione raccolta siti** \> **Content Type Policy Templates**. 
   
 ![Collegamento Modelli di criteri tipo di contenuto nella pagina Impostazioni sito](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
@@ -256,17 +258,17 @@ Condividere tipi di contenuto tra raccolte siti tramite un'applicazione di servi
 
 L'importazione di un criterio di gestione delle informazioni consente di applicarla a più tipi di contenuto a livello di sito o di elenco all'interno di una determinata raccolta siti. I vantaggi derivanti dall'esecuzione di questa operazione sono duplici: non è necessario ridefinire e applicare il criterio su ogni tipo di contenuto ed è possibile gestire più facilmente le modifiche ai criteri apportando modifiche ai criteri in una sola posizione.
   
-1. Nella Home page della raccolta siti in cui si desidera applicare il criterio, scegliere **Impostazioni**![piccole impostazioni ingranaggio che ha avuto luogo delle impostazioni del sito. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **sito.** \>
+1. Nella Home page della raccolta siti in cui si desidera applicare il criterio, scegliere **Impostazioni** ![ piccole impostazioni ingranaggio che ha avuto luogo delle impostazioni del sito. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **Impostazioni**del sito.
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
-2. Nella pagina Impostazioni sito, in \> **modelli di criteri tipo di contenuto** **Amministrazione raccolta siti** .
+2. Nella pagina Impostazioni sito, in modelli di criteri tipo di contenuto **Amministrazione raccolta siti** \> **Content Type Policy Templates**.
     
-3. Nella pagina \> criteri **importare** \> **Sfoglia** per trovare il file XML per il criterio. 
+3. Nella pagina criteri \> **importare** \> **Sfoglia** per trovare il file XML per il criterio. 
     
-4. Selezionare il file XML in cui il criterio è \> **stato salvato.** 
+4. Selezionare il file XML in cui il criterio è stato salvato \> **Open**. 
     
-5. Nell' \> **importazione** della pagina importa un criterio di raccolta siti per aggiungere il criterio alla raccolta siti. 
+5. Nell'importazione della pagina importa un criterio di raccolta siti \> **Import** per aggiungere il criterio alla raccolta siti. 
     
 È ora possibile applicare i criteri importati a uno o più tipi di contenuto a livello di sito o di elenco. 
   

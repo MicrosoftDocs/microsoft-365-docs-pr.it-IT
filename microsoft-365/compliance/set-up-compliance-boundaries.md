@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
-ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+description: Informazioni su come utilizzare i limiti di conformità per creare confini logici che controllano i percorsi dei contenuti degli utenti che un Manager di eDiscovery può cercare in Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5d0c1741d46882c3ad623aa1d0529939ede3687f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262569"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819206"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurare i limiti di conformità per le indagini di eDiscovery
 
@@ -264,11 +265,11 @@ Il responsabile di eDiscovery può aggiungere parametri alla query di ricerca ch
   
  **Cosa succede se il valore dell'attributo utilizzato come attributo di conformità in un filtro delle autorizzazioni di ricerca è cambiato?**
   
-Il filtro delle autorizzazioni di ricerca impiega fino a tre giorni per applicare il limite di conformità se il valore dell'attributo utilizzato nel filtro viene modificato. Nello scenario di Contoso, ad esempio, si supponga che un utente del Fourth Coffee Agency venga trasferito all'agenzia di Coho Winery. Di conseguenza, il valore dell'attributo **Department** nell'oggetto User viene modificato da *fourthcoffee* a *cohowinery*. In questa situazione, Fourth Coffee eDiscovery and Investors otterrà i risultati di ricerca per l'utente per un massimo di tre giorni dopo la modifica dell'attributo. Analogamente, sono necessari fino a tre giorni prima che i responsabili e gli investigatori di Coho Winery eDiscovery ottenere risultati di ricerca per l'utente. 
+Il filtro delle autorizzazioni di ricerca impiega fino a tre giorni per applicare il limite di conformità se il valore dell'attributo utilizzato nel filtro viene modificato. Nello scenario di Contoso, ad esempio, si supponga che un utente del Fourth Coffee Agency venga trasferito all'agenzia di Coho Winery. Di conseguenza, il valore dell'attributo **Department** nell'oggetto User viene modificato da *fourthcoffee* a *cohowinery*. In questa situazione, Fourth Coffee eDiscovery and Investors otterrà i risultati di ricerca per l'utente per un massimo di tre giorni dopo la modifica dell'attributo. Analogamente, sono necessari fino a tre giorni prima che i responsabili e gli investigatori di Coho Winery eDiscovery ottenere risultati di ricerca per l'utente.
   
  **È possibile che un Manager di eDiscovery veda contenuto da due limiti di conformità distinti?**
   
-Sì. A tale scopo, è possibile aggiungere l'utente ai gruppi di ruoli che dispongono di visibilità per entrambe le agenzie.
+Sì, è possibile eseguire questa operazione quando si eseguono ricerche nelle cassette postali di Exchange aggiungendo eDiscovery Manager ai gruppi di ruoli che dispongono di visibilità per entrambe le agenzie. Tuttavia, durante la ricerca di siti di SharePoint e account di OneDrive, un responsabile di eDiscovery può cercare contenuto in limiti di conformità diversi solo se le agenzie si trovano nella stessa area geografica o geografica. **Nota:** Questa limitazione per i siti non è applicabile in Advanced eDiscovery poiché la ricerca di contenuto in SharePoint e OneDrive non è associata per località geografica.
   
  **I filtri per le autorizzazioni di ricerca funzionano per il caso eDiscovery, criteri di conservazione Microsoft 365 o DLP?**
   
