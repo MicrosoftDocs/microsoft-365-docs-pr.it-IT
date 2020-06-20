@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254179"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773767"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Governo del Regno Unito-cloud (G-Cloud)
 
@@ -37,8 +37,6 @@ Ogni anno Microsoft prepara la documentazione e Invia elementi di prova per atte
 
 L'appuntamento dei servizi Microsoft al mercato digitale significa che i partner e gli enti governativi BRITANNIci possono utilizzare i servizi nell'ambito per archiviare ed elaborare i dati governativi ufficiali del Regno Unito, la maggior parte dei dati governativi. Inoltre, vi sono più di 450 partner Microsoft inclusi in G-cloud che sono rivenditori di servizi cloud Microsoft. Possono affermare direttamente la conformità dei servizi nell'ambito con i 14 principi nelle proprie applicazioni. I clienti e i partner, tuttavia, dovranno raggiungere la propria conformità per tutti i componenti che non sono inclusi nell'attestazione e la determinazione della conformità per i servizi cloud Microsoft.
 
-Per ulteriori informazioni sui vantaggi del Regno Unito G-Cloud V6 sul cloud Microsoft: [scaricare il documento di sfondo del g-cloud V6 per il Regno Unito](https://aka.ms/uk-g-cloud_backgrounder)
-
 Informazioni su come accelerare la distribuzione di G-Cloud V6 per il Regno Unito con il modello di sicurezza e conformità di Azure: [scaricare il modello di Azure Blueprint UK g-cloud Principle Guida all'implementazione](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
@@ -47,9 +45,9 @@ Informazioni su come accelerare la distribuzione di G-Cloud V6 per il Regno Unit
 - Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Servizio cloud di Power automatizzate (in precedenza Microsoft Flow) come servizio autonomo o come incluso in un piano o in una famiglia di prodotti di Office 365 o Dynamics 365
+- Servizio cloud Power Automate (in precedenza Microsoft Flow), autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Office 365: Exchange Online, SharePoint Online e Skype for business online
-- Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Servizio cloud PowerApps come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati

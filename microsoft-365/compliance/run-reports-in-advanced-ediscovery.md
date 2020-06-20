@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: Informazioni su come eseguire un report per il processo selezionato e quindi scaricare il relativo file. csv in Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8761277dae8898cfe4c1674beb3f89eeddb48ba
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9672f8567cdebba357649833187664c2fa8402ab
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034590"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818916"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>Esecuzione di report in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In questo argomento viene descritto come eseguire i report in Advanced eDiscovery.
   
@@ -43,6 +43,6 @@ In questo argomento viene descritto come eseguire i report in Advanced eDiscover
     
 3. Fare clic su **Download CSV**. Il report richiesto viene generato e scaricato.
     
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)

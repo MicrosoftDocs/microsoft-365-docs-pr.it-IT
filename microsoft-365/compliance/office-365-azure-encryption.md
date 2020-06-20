@@ -17,18 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Informazioni sulla crittografia disponibile in Azure, ad esempio la crittografia su disco di Azure
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5d334c56228a372d7e389bd5d0eff9859184d5b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 57581f7ca1f4cb605aa2617f73dd1e4b04bd129c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033634"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818855"
 ---
 # <a name="encryption-in-azure"></a>Crittografia in Azure
 
 Le misure di salvaguardia tecnologiche in Azure, ad esempio le comunicazioni crittografate e i processi operativi, consentono di proteggere i dati. È inoltre possibile implementare ulteriori funzionalità di crittografia e gestire le proprie chiavi di crittografia. Indipendentemente dalla configurazione dei clienti, Microsoft applica la crittografia per proteggere i dati dei clienti in Azure. Microsoft consente inoltre di controllare i dati ospitati in Azure tramite una serie di tecnologie avanzate per crittografare, controllare e gestire le chiavi di crittografia, nonché controllare e verificare l'accesso ai dati. Nello spazio di archiviazione di Azure sono inoltre disponibili una serie completa di funzionalità di sicurezza che consentono agli sviluppatori di creare applicazioni sicure.
-
-## <a name="introduction"></a>Introduzione
 
 Azure offre numerosi meccanismi per la protezione dei dati quando si sposta da una posizione a un'altra. Microsoft utilizza TLS per proteggere i dati durante il viaggio tra i servizi cloud e i clienti. I Data Center di Microsoft negoziano una connessione TLS con i sistemi client che si connettono ai servizi di Azure. La perfetta segretezza avanzata (PFS) protegge le connessioni tra i sistemi client dei clienti e i servizi cloud di Microsoft tramite chiavi univoche. Le connessioni utilizzano anche la lunghezza della chiave di crittografia a 2.048 bit basata su RSA. Questa combinazione rende difficile l'intercettazione e l'accesso ai dati in transito.
 

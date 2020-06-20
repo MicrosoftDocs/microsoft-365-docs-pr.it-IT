@@ -16,13 +16,15 @@ ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Dopo aver configurato Office 365 Message Encryption (OME), è possibile personalizzare la configurazione della distribuzione in diversi modi. Ad esempio, è possibile configurare la possibilità di abilitare i codici Pass una tantum, visualizzare il pulsante Proteggi in Outlook sul Web e altro ancora. Le attività descritte in questo articolo illustrano come fare.
-ms.openlocfilehash: 25cb5cebda48432afdc670a6dab0a5229167df15
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: Dopo aver completato la configurazione di Office 365 Message Encryption (OME), informazioni su come personalizzare la distribuzione in diversi modi.
+ms.openlocfilehash: 83fa620852ea9b2e0cd50d50b6715742658b7239
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165977"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815433"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gestire Office 365 Message Encryption
 
@@ -191,9 +193,9 @@ Per ulteriori informazioni sul modo in cui Microsoft 365 implementa la crittogra
 
    - `mail flow rule name`è il nome che si desidera utilizzare per la nuova regola del flusso di posta.
 
-   - `option name`è `Encrypt` o `Do Not Forward`.
+   - `option name`è `Encrypt` o `Do Not Forward` .
 
-   - `template name`è il nome assegnato al modello personalizzato per la personalizzazione, ad esempio `OME Configuration`.
+   - `template name`è il nome assegnato al modello personalizzato per la personalizzazione, ad esempio `OME Configuration` .
 
    Per crittografare tutti i messaggi di posta elettronica esterni con il modello "OME Configuration" e applicare l'opzione solo crittografia:
 

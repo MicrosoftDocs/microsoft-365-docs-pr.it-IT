@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Risoluzione dei problemi relativi agli errori di AzCopy di Azure durante il caricamento dei dati non di Office 365 per la correzione degli errori in Advanced eDiscovery.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: afb89517f6c34495820bec424c72833324e00125
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 0185c179039b7aec72bc400709225ef42489f620
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034498"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819146"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Risoluzione dei problemi relativi a AzCopy in Advanced eDiscovery
 
@@ -38,13 +40,13 @@ A questo punto, è necessario utilizzare AzCopy v 8.1 per caricare i dati non Mi
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>AzCopy non è installato nel computer locale o non è installato nel percorso predefinito
 
-Se AzCopy non è installato oppure è installato in un percorso diverso da quello predefinito (ovvero `%ProgramFiles(x86)%`), quando si esegue il comando AzCopy è possibile che venga visualizzato il messaggio di errore seguente:
+Se AzCopy non è installato oppure è installato in un percorso diverso da quello predefinito (ovvero `%ProgramFiles(x86)%` ), quando si esegue il comando AzCopy è possibile che venga visualizzato il messaggio di errore seguente:
 
     The system cannot find the path specified.
 
-Se AzCopy non è installato nel computer locale, è possibile installarlo da [qui](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Assicurarsi di installarlo nel percorso predefinito.
+Se AzCopy non è installato nel computer locale, è possibile trovare informazioni sull'installazione in [trasferimento dati con AzCopy v 8.1 in Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Assicurarsi di installarlo nel percorso predefinito.
 
-Se AzCopy è installato, ma è installato in una posizione diversa da quella predefinita, è possibile copiare il comando, incollarlo in un file di testo e quindi cambiare il percorso in cui è installato AzCopy. Ad esempio, se si trova Azcopy `%ProgramFiles%`, è possibile modificare la prima parte del comando da `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` a. `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` Dopo aver apportato questa modifica, copiarla dal file di testo e quindi eseguirla come prompt dei comandi.
+Se AzCopy è installato, ma è installato in una posizione diversa da quella predefinita, è possibile copiare il comando, incollarlo in un file di testo e quindi cambiare il percorso in cui è installato AzCopy. Ad esempio, se si trova Azcopy `%ProgramFiles%` , è possibile modificare la prima parte del comando da `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` a `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` . Dopo aver apportato questa modifica, copiarla dal file di testo e quindi eseguirla come prompt dei comandi.
 
 > [!TIP]
 > Se AzCopy è installato in un percorso diverso dal percorso di installazione predefinito, è consigliabile disinstallarlo e quindi reinstallarlo nel percorso predefinito. Ciò consentirà di prevenire questo problema in futuro.

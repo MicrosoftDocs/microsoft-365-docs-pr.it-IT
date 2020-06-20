@@ -14,19 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul modo in cui il Punteggio di conformità di Microsoft calcola un punteggio personalizzato sulla base delle azioni intraprese per risolvere i rischi e migliorare la conformità alla postura.
-ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cf8a691b558614896cc17207e761035e1f360280
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429191"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818075"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Calcolo del Punteggio di conformità Microsoft (anteprima)
 
 > [!IMPORTANT]
 > I consigli di Compliance Manager e Punteggio di conformità non devono essere interpretati come una garanzia di conformità. Spetta a te valutare e convalidare l'efficacia dei controlli del cliente per il tuo ambiente normativo. Questi servizi sono attualmente in anteprima e sono soggetti ai termini e alle condizioni nelle condizioni dei [servizi online](https://go.microsoft.com/fwlink/?linkid=2108910). Vedere anche [linee guida per la gestione delle licenze di Microsoft 365 per sicurezza e conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="overview"></a>Panoramica
+## <a name="how-compliance-score-works"></a>Funzionamento del Punteggio di conformità
 
 Il dashboard del Punteggio di conformità Visualizza un punteggio che misura lo stato di avanzamento del completamento delle azioni di miglioramento all'interno dei controlli. I punti si accumulano quando si completano le azioni.
 

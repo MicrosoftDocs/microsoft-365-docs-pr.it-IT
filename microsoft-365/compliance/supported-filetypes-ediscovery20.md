@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Un elenco di tipi di file supportati in Microsoft 365 Advanced eDiscovery. Questo include un elenco dei tipi di file di immagine supportati dalla funzionalità OCR in Advanced eDiscovery.
-ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Un elenco di tipi di file supportati in Microsoft 365 Advanced eDiscovery, inclusi i tipi di file di immagine supportati dalla funzionalità OCR in Advanced eDiscovery.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634634"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819156"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipi di file supportati in Advanced eDiscovery
 
@@ -154,9 +155,9 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli, descritti nel
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | applicazione/MSWord | Sì | Sì | Sì | Sì | Sì | . dat;. doc |
 | applicazione/RTF | Sì | Sì | Sì | Sì | Sì | . doc;. RTF |
-| Application/vnd. MS-Word. Document. macroenabled. 12 | Sì | Sì | Sì | Sì | Sì | .docm |
+| applicazione/vnd.ms-word.document. macroenabled. 12 | Sì | Sì | Sì | Sì | Sì | .docm |
 | Application/vnd. MS-Word. template. macroenabled. 12 | Sì | Sì | Sì | Sì | Sì | . dotm |
-| Application/vnd. openxmlformats-officedocument. WordprocessingML. Document | Sì | Sì | Sì | Sì | Sì | . docx |
+| applicazione/vnd.openxmlformats-officedocument.wordprocessingml.document | Sì | Sì | Sì | Sì | Sì | . docx |
 | Application/vnd. openxmlformats-officedocument. WordprocessingML. template | Sì | Sì | Sì | Sì | Sì | . dotx |
 ||||||||
 

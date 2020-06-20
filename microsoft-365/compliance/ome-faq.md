@@ -14,12 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Si ha una domanda su come funzionano le nuove funzionalità di protezione dei messaggi? Controllare la risposta qui.
-ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717155"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818679"
 ---
 # <a name="message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi
 
@@ -103,7 +104,7 @@ Gli utenti di Microsoft 365 possono leggere e rispondere da Outlook per Windows 
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quali tipi di file sono supportati come allegati nei messaggi di posta elettronica protetti? Gli allegati ereditano i criteri di protezione associati ai messaggi di posta elettronica protetti?
 
-È possibile allegare qualsiasi tipo di file a un messaggio protetto, tuttavia i criteri di protezione vengono applicati solo nei formati di file menzionati in [questo](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)articolo.
+È possibile collegare qualsiasi tipo di file a un messaggio protetto, tuttavia i criteri di protezione vengono applicati solo nei formati di file menzionati in [tipi di file supportati dal client di Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
   
 Se è supportato un formato di file, ad esempio un file di Word, Excel o PowerPoint, il file è sempre protetto, anche dopo che l'allegato è stato scaricato dal destinatario. Ad esempio, se un allegato è protetto da non inoltrare e il destinatario originale Scarica e inoltra l'allegato a un nuovo destinatario, il nuovo destinatario non sarà in grado di aprire il file protetto.
   

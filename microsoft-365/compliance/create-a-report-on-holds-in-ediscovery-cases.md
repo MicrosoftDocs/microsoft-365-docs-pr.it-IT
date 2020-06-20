@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Utilizzare lo script in questo articolo per generare un report contenente informazioni su tutte le esenzioni associate ai casi di eDiscovery nel centro conformità in Office 365 o Microsoft 365.
-ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come generare un report in cui siano contenute tutte le esenzioni associate ai casi di eDiscovery.
+ms.openlocfilehash: b4387434d57373f9569b6472786e8ad40de85b21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208378"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818035"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Creare un report sui casi di blocco in eDiscovery
   
@@ -31,13 +33,13 @@ Lo script in questo articolo consente agli amministratori di eDiscovery e ai res
 
 Per una descrizione dettagliata delle informazioni incluse nel report, vedere la sezione [ulteriori informazioni](#more-information) .
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="admin-requirements-and-script-information"></a>Requisiti di amministratore e informazioni sullo script
 
 - Per generare un report su tutti i casi di eDiscovery nell'organizzazione, è necessario essere un amministratore di eDiscovery nell'organizzazione. Se si è un Manager di eDiscovery, il report includerà solo informazioni sui casi in cui è possibile accedere. Per ulteriori informazioni sulle autorizzazioni di eDiscovery, vedere [assign eDiscovery Permissions](assign-ediscovery-permissions.md).
     
 - Lo script di questo articolo contiene una gestione degli errori minima. Lo scopo principale consiste nel creare rapidamente report sulle esenzioni associate ai casi di eDiscovery nell'organizzazione.
     
-- Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Passaggio 1: connettersi al centro sicurezza & Compliance PowerShell
 
@@ -49,7 +51,7 @@ Se l'account di Microsoft 365 usa l'autenticazione a più fattori o l'autenticaz
 
 Dopo aver effettuato la connessione a PowerShell per il Centro sicurezza & conformità, il passaggio successivo consiste nel creare ed eseguire lo script che raccoglie informazioni sui casi di eDiscovery nell'organizzazione. 
   
-1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, CaseHoldsReport. ps1. 
+1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, CaseHoldsReport.ps1. 
     
   ```powershell
 #script begin
@@ -158,9 +160,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 
     Addtionally, lo script crea anche un rapporto con un elenco di casi che non dispongono di alcuna esenzione. Il nome del file di questo report è `CaseswithNoHolds<DateTimeStamp>.csv` .
     
-    Di seguito è riportato un esempio di esecuzione dello script CaseHoldsReport. ps1. 
+    Di seguito è riportato un esempio di esecuzione dello script CaseHoldsReport.ps1. 
     
-    ![L'output dopo l'esecuzione dello script CaseHoldsReport. ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![L'output dopo l'esecuzione dello script CaseHoldsReport.ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Ulteriori informazioni
 

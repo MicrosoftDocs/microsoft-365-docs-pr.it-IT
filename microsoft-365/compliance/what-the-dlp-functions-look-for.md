@@ -15,17 +15,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: I tipi di informazioni riservate cercano un modello specifico e lo confermano assicurando la corretta formattazione, l'applicazione di checksum e la ricerca di parole chiave rilevanti o altre informazioni. Alcune di queste funzionalità vengono eseguite da funzioni interne. In questo argomento viene descritto cosa viene cercato da queste funzioni per comprendere come funzionano i tipi di informazioni riservate predefiniti.
-ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni sul funzionamento delle funzioni di prevenzione della perdita di dati (DLP), per comprendere come funzionano i tipi di informazioni riservate predefinite.
+ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327748"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819276"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati
 
-Prevenzione della perdita di dati (DLP) include tipi di informazioni riservate, come il numero di carta di credito e il numero di carta di debito EU, pronti per essere utilizzati nei criteri DLP. Questi tipi di informazioni riservate cercano uno schema specifico e lo confermano assicurando la corretta formattazione, applicando checksum e individuando parole chiave specifiche o altre informazioni. Alcune di queste funzionalità vengono eseguite da funzioni interne. Ad esempio, il tipo di informazioni riservate relative al numero di carta di credito utilizza una funzione per cercare le date formattate come una data di scadenza, in modo da confermare che si tratta di un numero di carta di credito.
+Data loss prevention (DLP) includes sensitive information types, such as Credit Card Number and EU Debit Card Number, which are ready for you to use in your DLP policies. These sensitive information types look for a specific pattern and corroborate it by ensuring proper formatting, enforcing checksums, and looking for relevant keywords or other information. Some of this functionality is performed by internal functions. For example, the Credit Card Number sensitive information type uses a function to look for dates formatted like an expiration date, to help corroborate that a number is a credit card number.
   
 In questo argomento viene descritto cosa viene cercato da queste funzioni per comprendere come funzionano i tipi di informazioni riservate predefiniti. Per ulteriori informazioni, vedere [definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
   
@@ -51,7 +53,7 @@ Esempi:
     
 Nomi dei mesi accettati:
   
-- Inglese
+- English
     
   - Gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
@@ -59,7 +61,7 @@ Nomi dei mesi accettati:
     
 ## <a name="func_eu_date"></a>Func_eu_date
 
-Questa funzione consente di cercare una data nel formato comunemente usato nell'UE e nella maggior parte delle aree geografiche al di fuori degli Stati Uniti. Sono inclusi i formati "giorno/mese/anno", "giorno-mese-anno" e "giorno mese anno". I nomi o le iniziali dei mesi non fanno distinzione tra maiuscole e minuscole.
+This function looks for a date in the format commonly used in the E.U. (and most places outside the U.S.). This includes the formats "day/month/year", "day-month-year", and "day month year". The names or abbreviations of months are not case sensitive.
   
 Esempi:
   
@@ -79,31 +81,31 @@ Esempi:
     
 Nomi dei mesi accettati:
   
-- Inglese
+- English
     
   - Gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
   - Gen febbraio Feb Mar. apr maggio giugno luglio agosto sett. ott. nov. Dec.
     
-- Olandese
+- Dutch
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
   - Jan Feb maart apr Mei giu lug Aug Sep set ott Okt Nov Dec
     
-- Francese
+- French
     
   - Janvier, février, Mars, avril, mai, Juin Juillet, août, septembre, Octobre, novembre, décembre
     
   - janv. févr. Mars Avril mai juin juil. août sett. personalizzazione. novembre. déc.
     
-- Tedesco
+- German
     
   - jänuar, febbraio, März, April, mai, Juni Juli, August, September, Oktober, November, Dezember
     
   - Gen./Jän. Feb. März apr. mai Juni luglio Okt. Nov. dic.
     
-- Italiano
+- Italian
     
   - gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
@@ -115,7 +117,7 @@ Nomi dei mesi accettati:
     
   - Jan FEV Mar ABR mai Jun Jul ago set out nov dic
     
-- Spagnolo
+- Spanish
     
   - enero, febrero, marzo, Abril, Mayo, Junio, Julio, agosto, Septiembre, Octubre, Noviembre, Diciembre
     
@@ -177,7 +179,7 @@ Esempi:
     
 Nomi dei mesi accettati:
   
-- Olandese
+- Dutch
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
@@ -209,7 +211,7 @@ I formati seguenti supportano AA o AAAA:
     
 Nomi dei mesi accettati:
   
-- Inglese
+- English
     
   - Gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
@@ -217,7 +219,7 @@ Nomi dei mesi accettati:
     
 ## <a name="func_us_address"></a>Func_us_address
 
-Questa funzione cerca il nome di uno stato membro degli Stati Uniti o un'abbreviazione postale seguita da un CAP valido, esattamente come per gli indirizzi postali. Il CAP deve essere uno dei codici di avviamento postale corretti associati al nome o all'abbreviazione dello stato membro degli Stati Uniti. Il nome dello stato membro degli Stati Uniti e il CAP non possono essere separati da segni di punteggiatura o lettere.
+This function looks for a U.S. state name or postal abbreviation followed by a valid zip code, just as they are used in postal addresses. The zip code must be one of the correct zip codes associated with the U.S. state name or abbreviation. The U.S. state name and zip code cannot be separated by punctuation or letters.
   
 Esempi:
   

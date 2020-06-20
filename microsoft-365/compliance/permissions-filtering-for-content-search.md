@@ -19,12 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilizzare il filtro delle autorizzazioni per la ricerca del contenuto per consentire a un responsabile di eDiscovery di cercare solo un sottoinsieme di cassette postali e siti nell'organizzazione.
-ms.openlocfilehash: 9628548b3cb2f6af5bedf7895a8714822731361f
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 06fabfd1132166e2439c9790b50b0dbcb5bdca2c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347785"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818775"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configurare il filtro delle autorizzazioni per Ricerca contenuto
 
@@ -42,7 +43,7 @@ Il filtro delle autorizzazioni di ricerca è supportato dalla funzionalità di r
 
 [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="requirements-to-configure-permissions-filtering"></a>Requisiti per la configurazione del filtro delle autorizzazioni
 
 - Per eseguire i cmdlet del filtro di sicurezza per la conformità, è necessario essere membri del gruppo di ruoli Gestione organizzazione nel centro sicurezza & Compliance. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
     
@@ -58,7 +59,7 @@ Il filtro delle autorizzazioni di ricerca è supportato dalla funzionalità di r
     
 ## <a name="connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Connettersi al centro sicurezza & compliance e a Exchange online in una singola sessione di PowerShell remota
 
-1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di **. ps1**. Ad esempio, è possibile salvarlo in un file denominato **ConnectEXO-CC. ps1**.
+1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di **. ps1**. Ad esempio, è possibile salvarlo in un file denominato **ConnectEXO-CC.ps1**.
     
     ```powershell
     $UserCredential = Get-Credential
@@ -79,7 +80,7 @@ Come si può verificare se l'operazione ha avuto esito positivo? Dopo aver esegu
   
 Se non vengono visualizzati errori, controllare i requisiti seguenti:
   
-- Un problema comune è rappresentato da una password errata. Eseguire di nuovo questi due passaggi e prestare particolare attenzione al nome utente e alla password del passaggio 1.
+- A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
     
 - Verificare che l'account disponga dell'autorizzazione necessaria per accedere al centro sicurezza & conformità. Per informazioni dettagliate, vedere [fornire agli utenti l'accesso al centro sicurezza & Compliance](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
@@ -149,7 +150,7 @@ In questo esempio viene consentito agli utenti di DonH e suzanf di cercare solo 
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
 
-In questo esempio, i membri del gruppo di ruoli "US Discovery Managers" possono effettuare tutte le azioni di ricerca di contenuto solo nelle cassette postali negli Stati Uniti. Questo filtro contiene il codice numerico a tre cifre per gli Stati Uniti fornito dall'ISO 3166-1.
+This example allows members of the "US Discovery Managers" role group to perform all Content Search actions only on mailboxes in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All

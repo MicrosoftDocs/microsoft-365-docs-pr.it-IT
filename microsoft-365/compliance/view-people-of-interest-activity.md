@@ -15,20 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-ms.custom: seo-marvel-mar2020
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 description: Utilizzare lo strumento analisi dati (anteprima) persone di interesse di gestione nell'indagine accedendo e ricercando l'attività per gli utenti di interesse.
-ms.openlocfilehash: 552d7727761052a28c2a58b51bf9b937bf953ad5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 37a8d6bae02f1e18bdd5599d7c5472b8d42e145f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034278"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819016"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Visualizzare l'attività di controllo di persone di interesse
 
 Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, Indagini sui dati (Preview) è ora integrato con lo strumento di ricerca del registro di controllo esistente nel centro sicurezza & conformità. Usando questa esperienza incorporata, è possibile utilizzare lo strumento di gestione dei dati (Preview) People of interest Management Tool per facilitare le indagini, accedendo facilmente e ricercando le attività per gli utenti di interesse all'interno dell'indagine.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="get-permissions"></a>Ottenere le autorizzazioni
 
 È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'Interfaccia di amministrazione di Exchange. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo (anteprima) dei dati con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere Gestire i gruppi di ruoli in Exchange Online.
 

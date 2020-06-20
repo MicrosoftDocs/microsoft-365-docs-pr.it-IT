@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito. Utilizzarlo per monitorare, assegnare e verificare le attività di conformità alle normative relative ai prodotti Microsoft.
-ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come utilizzare Compliance Manager per monitorare, assegnare e verificare le attività di conformità alle normative relative ai prodotti Microsoft.
+ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790663"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817083"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Utilizzo di Microsoft Compliance Manager (anteprima)
 

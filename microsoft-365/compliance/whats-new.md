@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Aggiungiamo continuamente nuove funzionalità al centro conformità di Microsoft 365, risolvendo i problemi che vengono apportati e modificando in base ai commenti e suggerimenti. Scoprire cosa è stato fino a questo mese.
+description: Vengono continuamente aggiunte nuove funzionalità al centro conformità di Microsoft 365. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 314c118673375abcf1e774a8d96d8a17edb505ff
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 5dc55fe38b588cd2a9b6c67d3f651e7c52df0664
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418900"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817061"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novità nel centro conformità di Microsoft 365
 
@@ -169,7 +169,7 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 |Ricerca contenuto|Ricerca di contenuti > di ricerca <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Ricerca contenuto <br/> https://compliance.microsoft.com/contentsearch |[Ricerca di contenuto in Office 365](search-for-content.md) |
 |Connettori dati|Information Governance > archiviazione dei dati di terze parti <br/> https://protection.office.com/nativeconnector | Connettori dati <br/> https://compliance.microsoft.com/connectorlanding |[Archiviare i dati di terze parti](archiving-third-party-data.md)|
 |Prevenzione della perdita di dati|Prevenzione della perdita di dati <br/> https://protection.office.com/datalossprevention |Prevenzione della perdita di dati <br/> https://compliance.microsoft.com/datalossprevention |[Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md)|
-|Richieste del soggetto dei dati |Privacy dei dati > richieste del soggetto dei dati <br/> https://protection.office.com/dsrcases |Richieste del soggetto dei dati <br/> https://compliance.microsoft.com/datasubjectrequest |[Gestire le richieste del soggetto dei dati di GDPR con lo strumento di gestione dei casi DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
+|Richieste degli interessati |Privacy dei dati > richieste del soggetto dei dati <br/> https://protection.office.com/dsrcases |Richieste del soggetto dei dati <br/> https://compliance.microsoft.com/datasubjectrequest |[Gestire le richieste del soggetto dei dati di GDPR con lo strumento di gestione dei casi DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Core <br/> https://compliance.microsoft.com/classicediscovery |[Gestire casi di eDiscovery](ediscovery-cases.md) |
 |Eventi|Eventi > di gestione dei record <br/> https://protection.office.com/events |Scheda eventi > di gestione dei record <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Panoramica della conservazione basata su eventi](event-driven-retention.md)|
 |Piano di archiviazione|Gestione dei record > piano file <br/> https://protection.office.com/fileplan |Scheda Gestione record > piano file <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Utilizzare il piano di file per gestire le etichette di conservazione](file-plan-manager.md)|
@@ -192,13 +192,13 @@ Quando si configura la crittografia per un'etichetta di riservatezza, sono ora d
 - Quando si applica l'etichetta al **messaggio di posta elettronica di Outlook**, gli utenti possono applicare restrizioni equivalenti all'opzione non inoltrare. I destinatari saranno in grado di leggere il messaggio, ma non di inoltrarlo, stamparlo o copiarlo.
 - Quando si applica l'etichetta ai **file Word, PowerPoint ed Excel**, agli utenti verrà richiesto di assegnare le autorizzazioni di accesso a utenti e gruppi specifici.
 
-[Altre informazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)
+Andare a [limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md#let-users-assign-permissions) per ulteriori informazioni.
 
 ## <a name="august-2019"></a>Agosto 2019
 
 ### <a name="update-to-data-investigations"></a>Aggiornamento alle indagini sui dati
 
-Quando si esegue un'analisi dei dati, è ora possibile eliminare gli elementi dai percorsi originali. Questo significa che è possibile eliminare gli elementi da cassette postali di Exchange, siti di SharePoint e account di OneDrive nell'organizzazione. Dal momento che gli elementi sono stati raccolti come prova, è possibile che vengano conservate copie del gruppo di prove, in modo da poter indagare ulteriormente o conservare come riferimento. [Altre informazioni](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+Quando si esegue un'analisi dei dati, è ora possibile eliminare gli elementi dai percorsi originali. Questo significa che è possibile eliminare gli elementi da cassette postali di Exchange, siti di SharePoint e account di OneDrive nell'organizzazione. Dal momento che gli elementi sono stati raccolti come prova, è possibile che vengano conservate copie del gruppo di prove, in modo da poter indagare ulteriormente o conservare come riferimento. Per ulteriori informazioni, vedere [gestire un problema di fuoriuscita dei dati in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) . 
 
 ## <a name="july-2019"></a>Luglio 2019
 

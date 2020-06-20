@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c30f92bbbe3458fe4751f829b02203f622414cda
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066359"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800097"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Consiglio dell'esame degli istituti finanziari federali (FFIEC)
 
@@ -33,7 +33,7 @@ Il [manuale dell'esame di verifica it di FFIEC](https://ithandbook.ffiec.gov/it-
 
 Microsoft Azure, Microsoft Power BI e Microsoft Office 365 sono stati creati per soddisfare i severi requisiti offerti dalla fornitura di servizi cloud per le istituzioni di servizi finanziari. Come parte del nostro supporto, offriamo assistenza per soddisfare i requisiti di controllo di FFIEC per la tecnologia delle informazioni e la possibilità di utilizzare attestazioni di Azure SOC quando si perseguono gli obblighi di conformità di FFIEC.
 
-Accelerare la distribuzione dei servizi finanziari: [scaricare il modello di servizi finanziari di FFIEC per la sicurezza e la conformità di Azure](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
+Accelerare la distribuzione dei servizi finanziari: [scaricare il modello di servizi finanziari di FFIEC per la sicurezza e la conformità di Azure](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint)
 
 Per aiutare i clienti degli istituti finanziari a soddisfare i requisiti di conformità di FFIEC con Azure, Microsoft ha sviluppato:
 
@@ -42,12 +42,12 @@ Per aiutare i clienti degli istituti finanziari a soddisfare i requisiti di conf
 
 Per ulteriori informazioni su come soddisfare i requisiti di FFIEC, i servizi cloud Microsoft forniscono i [report di attestazione SOC](offering-SOC.md) prodotti da una ditta CPA indipendente. Ad esempio, l'attestazione SOC 1 di tipo 2 si basa sulla norma AICPA SSAE 18 (vedere AT-C section 105) che ha sostituito SAS 70 ed è adatta per la creazione di report su alcuni controlli per la creazione di rapporti finanziari. I report SOC includono il parere del revisore sull'efficacia dei controlli Microsoft per la realizzazione degli obiettivi di controllo correlati durante il periodo di monitoraggio specificato. Gli istituti finanziari possono utilizzare questo controllo formale quando perseguono obblighi di conformità specifici di FFIEC per le risorse distribuite su Azure, Power BI e Office 365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
+- Servizio cloud Power BI, indipendente o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
@@ -78,4 +78,4 @@ Per aiutarti a rispettare tali obblighi, Microsoft fornisce le specifiche relati
 - [Conformità dei servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servizi finanziari e servizi cloud aziendali di Microsoft](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Responsabilità condivise per il cloud computing](https://aka.ms/sharedresponsibility)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

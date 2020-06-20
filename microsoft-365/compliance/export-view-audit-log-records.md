@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Dopo aver esportato e scaricato i risultati di una ricerca nel registro di controllo in un file CSV, è possibile utilizzare la caratteristica di trasformazione JSON nell'editor di query di alimentazione in Excel per dividere ogni proprietà nell'oggetto JSON nella colonna AuditData nella propria colonna. In questo modo è possibile individuare rapidamente i dati di controllo specifici che si stanno cercando. È inoltre possibile utilizzare PowerShell per cercare ed esportare i record del registro di controllo.
-ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom: seo-marvel-apr2020
+description: In questo articolo vengono fornite informazioni su come esportare, configurare e visualizzare i record del registro di controllo di Microsoft 365.
+ms.openlocfilehash: 833d42ee37722092bddf14d0ef3418fac1ab03bb
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352386"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817745"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Esportare, configurare e visualizzare i record del log di controllo
 
@@ -116,7 +117,7 @@ I risultati della ricerca vengono esportati in un file CSV denominato *PowerShel
 
 È inoltre possibile utilizzare il nome o il valore enum per il tipo di record come valore per il parametro *RecordType* . Per un elenco di nomi di tipi di record e relativi valori enum corrispondenti, vedere la tabella *AuditLogRecordType* in [Office 365 Management Activity API schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
 
-È possibile includere solo un valore singolo per il parametro *RecordType* . Per cercare i record di controllo per altri tipi di record, è necessario eseguire di nuovo i due comandi precedenti per specificare un tipo di record diverso e accodare tali risultati al file CSV originale. Ad esempio, è necessario eseguire i due comandi seguenti per aggiungere le attività dei file di SharePoint dallo stesso intervallo di date al file PowerShellAuditlog. csv.
+È possibile includere solo un valore singolo per il parametro *RecordType* . Per cercare i record di controllo per altri tipi di record, è necessario eseguire di nuovo i due comandi precedenti per specificare un tipo di record diverso e accodare tali risultati al file CSV originale. Ad esempio, è necessario eseguire i due comandi seguenti per aggiungere le attività dei file di SharePoint dallo stesso intervallo di date al file PowerShellAuditlog.csv.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation

@@ -15,17 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: "Informazioni sulle linee guida per l'esportazione dei dati del caso di eDiscovery e dei risultati per la revisione tramite il processo di esportazione in Advanced eDiscovery.  "
-ms.openlocfilehash: 8a46a0c3d04cb89d50486d032a7958ccb779b5e1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 88be4a96720aee2392b6e0972919997f8634054b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615940"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817765"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>Esportare i dati del caso in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Il processo di esportazione in Advanced eDiscovery consente l'esportazione di contenuto di eDiscovery avanzato e i risultati per la revisione esterna. 
   
@@ -37,7 +38,7 @@ Il processo di esportazione in Advanced eDiscovery consente l'esportazione di co
     
 - L'esportazione di una grande quantità di dati in un database può influire in modo significativo sulle dimensioni dei database richieste e sulla configurazione necessaria del database di eDiscovery avanzato.
     
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724792"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780719"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -184,7 +184,7 @@ In confronto, le etichette di riservatezza forniscono le impostazioni di protezi
 
 Tuttavia, è possibile utilizzare entrambe le soluzioni di protezione insieme e il comportamento è il seguente: 
 
-- Se si carica un file con un'etichetta di riservatezza che applica la crittografia, la crittografia non viene rimossa così per questi file, CoAuthoring, eDiscovery, DLP e Search non sono supportati.
+- Se si carica un file con un'etichetta di riservatezza che applica la crittografia, SharePoint non è in grado di elaborare questo file in modo che la CoAuthoring, eDiscovery, DLP e Search non funzionino per questo file.
 
 - Se si etichetta un file tramite Office sul Web, vengono applicate tutte le impostazioni di crittografia dell'etichetta. Per questi file sono supportati la CoAuthoring, eDiscovery, DLP e la ricerca.
 

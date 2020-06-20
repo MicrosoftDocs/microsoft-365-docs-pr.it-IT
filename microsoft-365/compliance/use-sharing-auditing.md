@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: "La condivisione è un'attività chiave in SharePoint Online e OneDrive for business. Gli amministratori possono ora utilizzare il controllo di condivisione nel log di controllo per identificare le risorse condivise con gli utenti all'esterno dell'organizzazione. "
-ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: L'amministratore può imparare a usare il controllo di condivisione nel log di controllo di Microsoft 365 per identificare le risorse condivise con utenti esterni all'organizzazione.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626382"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819296"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Usare il controllo di condivisione nel log di controllo
 
@@ -97,7 +98,7 @@ Il primo passaggio consiste nell'eseguire una ricerca nel registro di controllo 
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
-2. Accedere con l'account aziendale o dell'Istituto di istruzione.
+2. Accedere usando l'account di lavoro o della scuola.
     
 3. Nel riquadro sinistro del Centro sicurezza e conformità fare clic su **Cerca**  > **Ricerca log di controllo**.
     
@@ -115,7 +116,7 @@ Il primo passaggio consiste nell'eseguire una ricerca nel registro di controllo 
     
     Dopo aver selezionato l'opzione di esportazione, nella parte inferiore della finestra viene visualizzato un messaggio in cui viene richiesto di aprire o salvare il file CSV.
     
-8. Fare clic su **Salva** \> con **nome** e salvare il file CSV in una cartella del computer locale. 
+8. Fare clic su **Salva** con \> **nome** e salvare il file CSV in una cartella del computer locale. 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>Passaggio 2: utilizzare l'editor di PowerQuery per formattare il registro di controllo esportato
 
@@ -152,4 +153,4 @@ Dopo aver seguito le istruzioni riportate nel passaggio precedente per preparare
     Ora Excel Visualizza le righe per gli eventi di condivisione e in cui l'utente di destinazione si trova all'esterno dell'organizzazione, perché gli utenti esterni sono identificati dal valore **TargetUserOrGroupType: Guest**. 
   
 > [!TIP]
-> Per i record di controllo visualizzati, la colonna **ObjectID** identifica la risorsa condivisa con l'utente di destinazione. ad esempio `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+> Per i record di controllo visualizzati, la colonna **ObjectID** identifica la risorsa condivisa con l'utente di destinazione. ad esempio `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx` .

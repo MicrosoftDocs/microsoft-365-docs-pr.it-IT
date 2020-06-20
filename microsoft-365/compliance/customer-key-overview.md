@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Con il codice "Customer Key", è possibile controllare le chiavi di crittografia dell'organizzazione e quindi configurare Microsoft 365 per utilizzarle per crittografare i dati a riposo nei data center di Microsoft.
-ms.openlocfilehash: 701dc306a81e12db7dd1062d2a840621b710abd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: In questo articolo vengono fornite informazioni sulla modalità di funzionamento della crittografia del servizio con la chiave del cliente in Microsoft 365.
+ms.openlocfilehash: 217e23eff89427e5bd30a1da4dd36729110ed563
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635592"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817955"
 ---
 # <a name="service-encryption-with-customer-key"></a>Crittografia del servizio con la chiave del cliente
 

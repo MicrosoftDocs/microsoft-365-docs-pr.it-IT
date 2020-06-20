@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bcffe85011bad55a458f2359051fe659f5720c8b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: af2e5986530ae6b1eb558ed3389f0927d5f912e9
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066339"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773757"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Autorità di regolamentazione del settore finanziario (FINRA) regola 4511 (c) Stati Uniti
 
@@ -47,11 +47,11 @@ I provider di software e i partner che dispongono di carichi di lavoro sensibili
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Per valutare Office 365 compliance with FINRA Rule 4511 (c), Microsoft ha mantenuto uno studio legale leader indipendente specializzato in questioni normative, Covington & Burling, LLP. Nel report risultante, archiving in Microsoft Office 365, data retention e Rule 17a-4 Compliance, Covington ha convalidato che [Office 365 con Preservation Lock](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo che li consentano di soddisfare i requisiti di FINRA per la conservazione dei record.
+Per valutare Office 365 compliance with FINRA Rule 4511 (c), Microsoft ha mantenuto uno studio legale leader indipendente specializzato in questioni normative, Covington & Burling, LLP. Nel report risultante, archiving in Microsoft Office 365, data retention e Rule 17a-4 Compliance, Covington ha convalidato che [Office 365 con Preservation Lock](retention-policies.md) include funzionalità di archiviazione che consentono ai clienti regolamentati, inclusi i broker-dealer, di archiviare i dati in modo che li consentano di soddisfare i requisiti di FINRA per la conservazione dei record.
 
 L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Office 365 consente ai clienti di impostare i criteri di conservazione dei messaggi globali o granulari per archiviare i dati per un periodo definito e oltre in un formato non riscrivibile e non cancellabile.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
@@ -69,7 +69,7 @@ L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra
 ## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - **Regolamento sui servizi finanziari**: mappa di conformità dei principali principi di regolamentazione degli Stati Uniti per il cloud computing e i Microsoft Online Services. [Altre informazioni](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **Guida alla valutazione dei rischi e alla conformità**: creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione. [Altre informazioni](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **Guida alla conformità e alla valutazione dei rischi**: creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione. [Altre informazioni](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 - **Casi di utilizzo del settore finanziario**: i casi di utilizzo, le guide e le altre risorse aiutano a sviluppare le soluzioni Azure per i servizi finanziari. [Altre informazioni](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>Risorse
@@ -80,4 +80,4 @@ L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra
 - [Strumento di valutazione del rischio cloud di Azure per i servizi finanziari](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Criteri di conservazione di Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Blog sui servizi finanziari di Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

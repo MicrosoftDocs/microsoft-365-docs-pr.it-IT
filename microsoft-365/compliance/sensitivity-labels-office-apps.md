@@ -14,13 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: 8feb8fc70277e502c5bbb321c864e4cd022ad725
-ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
+description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d2d1486aaed7ee3be308a847d9fd3ae19585f52d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44658342"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819256"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 

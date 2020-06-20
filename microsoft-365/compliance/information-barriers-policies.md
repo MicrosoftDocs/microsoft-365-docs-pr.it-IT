@@ -14,16 +14,14 @@ ms.collection:
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232053"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817545"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
-
-## <a name="overview"></a>Panoramica
 
 Con barriere informative, è possibile definire criteri che sono stati creati per impedire a determinati segmenti di utenti di comunicare tra loro oppure consentire a segmenti specifici di comunicare solo con determinati altri segmenti. I criteri barriera alle informazioni consentono all'organizzazione di mantenere la conformità agli standard e ai regolamenti del settore e di evitare potenziali conflitti di interesse. Per ulteriori informazioni, vedere [barriere informative](information-barriers.md). 
 

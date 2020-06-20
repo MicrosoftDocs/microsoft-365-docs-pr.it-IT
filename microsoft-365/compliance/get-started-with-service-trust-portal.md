@@ -11,15 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 mscollection: M365-security-compliance
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Per i report di conformità alle normative Microsoft 365, Azure e Dynamics 365 online, per visualizzare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e come è possibile essere conformi alle norme ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando si utilizzano questi servizi online.
-ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come accedere e utilizzare il Microsoft Service Trust Portal per facilitare la sicurezza, la privacy e le procedure di conformità.
+ms.openlocfilehash: 0866a32087e61bb8af3ea9d7d4c61ea463864067
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632447"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817625"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
@@ -82,9 +84,9 @@ Offre una vasta gamma di informazioni sulla progettazione e l'implementazione de
 
     - Service Organization Controls (SOC)
 
-    - Istituto nazionale di Standards and Technology (NIST)
+    - NIST (National Institute of Standards and Technology)
 
-    - Programma per la gestione delle autorizzazioni e dei rischi federali (FedRAMP)
+    - FedRAMP (Federal Risk and Authorization Management Program)
 
     - Regolamento generale sulla protezione dei dati (GDPR)
 

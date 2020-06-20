@@ -18,19 +18,20 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: Eseguire uno script per aggiungere rapidamente le cassette postali e i siti di OneDrive for business a una nuova esenzione associata a un caso di eDiscovery nel centro sicurezza & conformità.
-ms.openlocfilehash: 499a4ce3eb0f7be59f71565c0c841f323a364305
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom: seo-marvel-apr2020
+description: Informazioni su come eseguire uno script per aggiungere cassette postali & siti di OneDrive for business a un nuovo blocco associato a un caso di eDiscovery nel centro sicurezza & Compliance.
+ms.openlocfilehash: ff309bcc01bec5d67abbb0c9a0619a10ccebebac
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942989"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819116"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Utilizzo di uno script per aggiungere gli utenti a un'esenzione in un caso di eDiscovery nel centro sicurezza & Compliance
 
 Il Centro sicurezza & conformità fornisce numerosi cmdlet di Windows PowerShell che consentono di automatizzare le attività che richiedono tempo per la creazione e la gestione dei casi di eDiscovery. Attualmente, utilizzando lo strumento case di eDiscovery nel centro sicurezza & conformità per inserire un numero elevato di posizioni di contenuto del custode in attesa richiede tempo e preparazione. Ad esempio, prima di creare un'esenzione, è necessario raccogliere l'URL per ogni sito di OneDrive for business che si desidera inserire in attesa. Quindi, per ogni utente che si desidera inserire in attesa, è necessario aggiungere la propria cassetta postale e il proprio sito di OneDrive for business all'esenzione. Nelle versioni future del Centro sicurezza & conformità, questo sarà più facile da fare. Fino a quel momento, è possibile utilizzare lo script in questo articolo per automatizzare il processo.
   
-Lo script richiede il nome del dominio del sito Web dell'organizzazione, ad esempio **Contoso** nell'URL https://contoso-my.sharepoint.com), il nome di un caso di eDiscovery esistente, il nome del nuovo blocco associato al caso, un elenco di indirizzi di posta elettronica degli utenti che si desidera conservare e una query di ricerca da utilizzare se si desidera creare un blocco basato su query. Lo script ottiene quindi l'URL del sito di OneDrive for business per ogni utente nell'elenco, crea la nuova esenzione e quindi aggiunge la cassetta postale e il sito di OneDrive for business per ogni utente nell'elenco all'esenzione. Lo script genera anche file di registro che contengono informazioni sul nuovo blocco. 
+Lo script richiede il nome del dominio del sito Web dell'organizzazione, ad esempio **Contoso** nell'URL https://contoso-my.sharepoint.com) , il nome di un caso di eDiscovery esistente, il nome del nuovo blocco associato al caso, un elenco di indirizzi di posta elettronica degli utenti che si desidera conservare e una query di ricerca da utilizzare se si desidera creare un blocco basato su query. Lo script ottiene quindi l'URL del sito di OneDrive for business per ogni utente nell'elenco, crea la nuova esenzione e quindi aggiunge la cassetta postale e il sito di OneDrive for business per ogni utente nell'elenco all'esenzione. Lo script genera anche file di registro che contengono informazioni sul nuovo blocco. 
   
 Di seguito vengono illustrati i passaggi per eseguire questa operazione:
   
@@ -40,7 +41,7 @@ Di seguito vengono illustrati i passaggi per eseguire questa operazione:
   
 [Passaggio 3: eseguire lo script per creare un blocco e aggiungere utenti](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-add-users-to-a-hold"></a>Prima di aggiungere gli utenti a un'esenzione
 
 - È necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & compliance e un amministratore globale di SharePoint Online per eseguire lo script nel passaggio 3. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza & conformità di Office 365](assign-ediscovery-permissions.md).
     
@@ -52,7 +53,7 @@ Di seguito vengono illustrati i passaggi per eseguire questa operazione:
     
 - Lo script include la gestione degli errori minima. Il suo scopo principale è quello di posizionare rapidamente e facilmente la cassetta postale e il sito di OneDrive for business di ogni utente in attesa.
     
-- Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Passaggio 1: Installare SharePoint Online Management Shell
 
@@ -64,13 +65,13 @@ Andare a [configurare l'ambiente di Windows PowerShell per SharePoint Online Man
 
 Lo script nel passaggio 3 creerà un'esenzione associata a un caso di eDiscovery e i siti di aggiunta di cassette postali e OneDrive for business di un elenco di utenti all'esenzione. È possibile digitare gli indirizzi di posta elettronica in un file di testo oppure eseguire un comando in Windows PowerShell per ottenere un elenco di indirizzi di posta elettronica e salvarli in un file (che si trova nella stessa cartella in cui verrà salvato lo script nel passaggio 3).
   
-Di seguito è riportato un comando di PowerShell (eseguito utilizzando Remote PowerShell connesso all'organizzazione di Exchange Online) per ottenere un elenco di indirizzi di posta elettronica per tutti gli utenti dell'organizzazione e salvarlo in un file di testo denominato HoldUsers. txt.
+Di seguito è riportato un comando di PowerShell (eseguito utilizzando Remote PowerShell connesso all'organizzazione di Exchange Online) per ottenere un elenco di indirizzi di posta elettronica per tutti gli utenti dell'organizzazione e salvarlo in un file di testo denominato HoldUsers.txt.
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-Dopo aver eseguito il comando, aprire il file di testo e rimuovere l'intestazione che contiene il nome della `PrimarySmtpAddress`proprietà. Quindi rimuovere tutti gli indirizzi di posta elettronica ad eccezione di quelli per gli utenti che si desidera aggiungere al blocco che verrà creato nel passaggio 3. Verificare che non vi siano righe vuote prima o dopo l'elenco di indirizzi di posta elettronica.
+Dopo aver eseguito il comando, aprire il file di testo e rimuovere l'intestazione che contiene il nome della proprietà `PrimarySmtpAddress` . Quindi rimuovere tutti gli indirizzi di posta elettronica ad eccezione di quelli per gli utenti che si desidera aggiungere al blocco che verrà creato nel passaggio 3. Verificare che non vi siano righe vuote prima o dopo l'elenco di indirizzi di posta elettronica.
   
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Passaggio 3: eseguire lo script per creare un blocco e aggiungere utenti
 
@@ -78,7 +79,7 @@ Quando si esegue lo script in questo passaggio, vengono richieste le informazion
   
 - **Credenziali utente** : lo script utilizzerà le credenziali per connettersi al centro sicurezza & conformità con Remote PowerShell. Utilizzerà anche queste credenziali per accedere a SharePoint Online per ottenere gli URL di OneDrive for business per l'elenco di utenti.
     
-- **Nome del dominio del sito Web** : il dominio del sito Web è il dominio che contiene tutti i siti di OneDrive for business nell'organizzazione. Ad esempio, se l'URL del dominio del sito Web è **https://contoso-my.sharepoint.com**, è necessario immetterlo `contoso` quando lo script richiede il nome del dominio di siti personali. 
+- **Nome del dominio del sito Web** : il dominio del sito Web è il dominio che contiene tutti i siti di OneDrive for business nell'organizzazione. Ad esempio, se l'URL del dominio del sito Web è **https://contoso-my.sharepoint.com** , è necessario immetterlo `contoso` quando lo script richiede il nome del dominio di siti personali. 
     
 - **Nome del caso** : il nome di un caso esistente. Lo script creerà un nuovo blocco associato a questo caso.
     
@@ -96,11 +97,11 @@ Quando si esegue lo script in questo passaggio, vengono richieste le informazion
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **Nome del file di testo con l'elenco di utenti** : il nome del file di testo del passaggio 2 che contiene l'elenco di utenti da aggiungere all'esenzione. Se il file si trova nella stessa cartella dello script, digitare il nome del file, ad esempio HoldUsers. txt. Se il file di testo si trova in un'altra cartella, digitare il percorso completo del file.
+- **Nome del file di testo con l'elenco di utenti** : il nome del file di testo del passaggio 2 che contiene l'elenco di utenti da aggiungere all'esenzione. Se il file si trova nella stessa cartella dello script, digitare il nome del file, ad esempio HoldUsers.txt. Se il file di testo si trova in un'altra cartella, digitare il percorso completo del file.
     
 Dopo aver raccolto le informazioni che verranno richieste dallo script, il passaggio finale consiste nell'eseguire lo script per creare il nuovo blocco e aggiungervi gli utenti.
   
-1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `AddUsersToHold.ps1`.
+1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `AddUsersToHold.ps1` .
     
   ```powershell
   #script begin
@@ -289,10 +290,10 @@ Dopo aver raccolto le informazioni che verranno richieste dallo script, il passa
     
 Al termine dell'esecuzione dello script, vengono creati i file di registro riportati di seguito e vengono salvati nella cartella in cui si trova lo script.
   
-- **LocationsOnHold. txt** : contiene un elenco delle cassette postali e dei siti di OneDrive for business che lo script ha eseguito correttamente.
+- **LocationsOnHold.txt** : contiene un elenco delle cassette postali e dei siti di OneDrive for business che lo script ha eseguito correttamente.
     
-- **LocationsNotOnHold. txt** : contiene un elenco delle cassette postali e dei siti di OneDrive for business che lo script non ha posto in attesa. Se un utente dispone di una cassetta postale, ma non di un sito di OneDrive for business, l'utente verrebbe incluso nell'elenco dei siti di OneDrive for business che non sono stati inseriti in attesa.
+- **LocationsNotOnHold.txt** : contiene un elenco delle cassette postali e dei siti di OneDrive for business che lo script non ha posto in attesa. Se un utente dispone di una cassetta postale, ma non di un sito di OneDrive for business, l'utente verrebbe incluso nell'elenco dei siti di OneDrive for business che non sono stati inseriti in attesa.
     
-- **GetCaseHoldPolicy. txt** : contiene l'output del cmdlet **Get-CaseHoldPolicy** per il nuovo blocco, che lo script ha eseguito dopo la creazione del nuovo blocco. Le informazioni restituite da questo cmdlet includono un elenco di utenti le cui cassette postali e i siti di OneDrive for business sono stati messi in attesa e se il blocco è abilitato o disabilitato. 
+- **GetCaseHoldPolicy.txt** : contiene l'output del cmdlet **Get-CaseHoldPolicy** per la nuova esenzione, che lo script ha eseguito dopo la creazione del nuovo blocco. Le informazioni restituite da questo cmdlet includono un elenco di utenti le cui cassette postali e i siti di OneDrive for business sono stati messi in attesa e se il blocco è abilitato o disabilitato. 
     
-- **GetCaseHoldRule. txt** : contiene l'output del cmdlet **Get-CaseHoldRule** per il nuovo blocco, che lo script ha eseguito dopo la creazione del nuovo blocco. Le informazioni restituite da questo cmdlet includono la query di ricerca se è stato utilizzato lo script per creare un blocco basato su query. 
+- **GetCaseHoldRule.txt** : contiene l'output del cmdlet **Get-CaseHoldRule** per la nuova esenzione, che lo script ha eseguito dopo la creazione del nuovo blocco. Le informazioni restituite da questo cmdlet includono la query di ricerca se è stato utilizzato lo script per creare un blocco basato su query. 

@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: Ottenere una panoramica della fase di valutazione e del relativo ruolo per determinare la ricchezza dei problemi durante la formazione di pertinenza in Advanced eDiscovery.
-ms.openlocfilehash: e1e090a9b3aceecad8451657d7a8e5d26e92ed6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Ottenere una panoramica della fase di valutazione e del relativo ruolo per determinare la ricchezza dei problemi durante la formazione di pertinenza in Microsoft 365 Advanced eDiscovery.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: afd4f1f549d52652ac02cfa410efc507ece58910
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636154"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818415"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Comprendere la valutazione in rilevanza in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery consente di valutare precocemente, ad esempio, i problemi definiti e i dati importati per un caso. Advanced eDiscovery consente all'esperto di prendere decisioni su un approccio adottato e di applicare queste decisioni al progetto di revisione del documento.
   
@@ -53,7 +54,7 @@ Ogni problema ha la propria ricchezza, il margine di errore corrente e, di conse
 > [!NOTE]
 > La fase di valutazione può essere ignorata, nella scheda ** \> Tracking pertinenza** della visualizzazione espansa per un problema, deselezionando la casella di controllo **valutazione** per problema e quindi per "tutti i problemi". Tuttavia, di conseguenza, non saranno disponibili statistiche per questo problema. > deselezionando la casella di controllo **valutazione** può essere eseguita solo prima di eseguire la valutazione. Se in un caso esistono più problemi, la valutazione viene ignorata solo se la casella di controllo è deselezionata per ogni problema. 
   
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   

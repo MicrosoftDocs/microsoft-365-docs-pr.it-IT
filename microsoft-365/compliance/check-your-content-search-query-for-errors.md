@@ -14,15 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-ms.custom:
-- seo-marvel-apr2020
-description: Informazioni su come controllare la query di parole chiave per la ricerca di contenuto per errori e refusi, ad esempio i caratteri non supportati e gli operatori booleani minuscoli.
-ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: Informazioni su come rilevare gli errori e le refusi nella query di parole chiave per la ricerca di contenuto, prima di eseguire la ricerca.
+ms.openlocfilehash: 250db272014d5801bfb3927d14072eea94bd635f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035628"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818095"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Verificare la presenza di errori nella query di Ricerca contenuto
 
@@ -38,7 +37,7 @@ Di seguito è indicato un elenco dei caratteri non supportati che vengono verifi
     
 - **Segni da sinistra a destra e da destra a sinistra** -questi contrassegni sono caratteri di controllo utilizzati per indicare la direzione del testo per le lingue da sinistra a destra, ad esempio l'inglese e lo spagnolo, e le lingue da destra a sinistra, ad esempio l'arabo e l'ebraico.
     
-- **Operatori booleani minuscoli** : se si utilizza un operatore booleano, ad esempio **e**, **o**e **non** in una query di ricerca, è necessario che sia maiuscolo. Quando si controlla una query per errori di battitura, la sintassi della query indica spesso che è in uso un operatore booleano, anche se possono essere utilizzati operatori minuscoli; ad esempio, `(WordA or WordB) and (WordC or WordD)`.
+- **Operatori booleani minuscoli** : se si utilizza un operatore booleano, ad esempio **e**, **o**e **non** in una query di ricerca, è necessario che sia maiuscolo. Quando si controlla una query per errori di battitura, la sintassi della query indica spesso che è in uso un operatore booleano, anche se possono essere utilizzati operatori minuscoli; ad esempio, `(WordA or WordB) and (WordC or WordD)` .
     
 ## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>Cosa succede se una query ha un carattere non supportato?
 

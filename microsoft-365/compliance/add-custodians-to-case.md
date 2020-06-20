@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come utilizzare lo strumento di gestione del custode incorporato in Advanced eDiscovery per coordinare i flussi di lavoro e identificare le origini dati rilevanti in un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034690"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818613"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Aggiungere i depositari a un caso avanzato di eDiscovery
 
@@ -32,7 +32,7 @@ Utilizzare il flusso di lavoro seguente per aggiungere e gestire i depositari ne
 
 ![Scheda Gestione depositaria](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="make-sure-you-have-the-necessary-permissions"></a>Verificare di disporre delle autorizzazioni necessarie
 
 Per aggiungere depositari a un caso, è necessario essere membri del gruppo di ruoli eDiscovery Manager. In questo modo, vengono fornite le autorizzazioni necessarie per aggiungere i depositari a un caso e inserire un'esenzione nelle origini dati della custodia.
 

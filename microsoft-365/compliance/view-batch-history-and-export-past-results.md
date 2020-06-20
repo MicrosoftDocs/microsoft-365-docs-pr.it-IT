@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: "Scopri come visualizzare informazioni dettagliate per le sessioni batch di esportazione selezionate e come annullare l'ultima sessione di esportazione in Advanced eDiscovery.  "
-ms.openlocfilehash: 356b0b61288b466da38bc640f9aad636ee654da2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 498cd5d0fbeea4902a0992e8210666884a308f72
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626352"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819056"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Nella sezione seguente vengono descritte le opzioni aggiuntive per la visualizzazione in batch e l'esportazione dei dati in Advanced eDiscovery. 
   
@@ -34,7 +35,7 @@ Nella sezione seguente vengono descritte le opzioni aggiuntive per la visualizza
 
 La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sulle sessioni batch di esportazione selezionate e fornisce anche la possibilità di annullare l'ultima sessione.
   
-1. Nel **programma \> di installazione di esportazione**Selezionare il nome del batch dall'elenco a discesa **batch di esportazione** . 
+1. Nel ** \> programma di installazione di esportazione**Selezionare il nome del batch dall'elenco a discesa batch di **esportazione** . 
     
 2. A destra del nome del batch di esportazione, selezionare l'icona **cronologia batch** : 
     
@@ -46,9 +47,9 @@ La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sull
   
 3. Se è necessario eseguire il rollback di una sessione precedente, fare clic su **Annulla ultima sessione**. Il rollback può essere eseguito più volte, che annulla l'ultima sessione.
     
-4. Se si desidera scaricare i dati in qualsiasi momento da una sessione di esportazione batch eseguita in precedenza, fare clic ![sull'](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) **icona Download cronologia** di esportazione batch per il download accanto al batch di esportazione desiderato da esportare. 
+4. Se si desidera scaricare i dati in qualsiasi momento da una sessione di esportazione batch eseguita in precedenza, **Download** fare clic sull' ![ icona Download cronologia di esportazione batch per il download accanto al ](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) batch di esportazione desiderato da esportare. 
     
-5. Quando viene visualizzata la finestra di dialogo **firma di accesso condiviso** , fare clic su **copia negli Appunti** per copiare i dati della sessione di esportazione nel computer locale e quindi fare clic su **Chiudi**. Viene visualizzata &amp; la finestra di dialogo **strumento di esportazione di eDiscovery** per il Centro sicurezza. 
+5. Quando viene visualizzata la finestra di dialogo **firma di accesso condiviso** , fare clic su **copia negli Appunti** per copiare i dati della sessione di esportazione nel computer locale e quindi fare clic su **Chiudi**. &amp;Viene visualizzata la finestra di dialogo **strumento di esportazione di eDiscovery** per il Centro sicurezza. 
     
     ![Finestra di dialogo Esporta eDiscovery](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -60,7 +61,7 @@ La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sull
     
 3. Fare clic su **Avvia**. I file di esportazione vengono scaricati nel computer locale. 
     
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   

@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
-search.appverid:
-- MET150
-description: Questa raccomandazione basata su Insight aiuta l'organizzazione a mantenere i contenuti riservati sicuri quando viene archiviato e condiviso in Microsoft 365 informando quando si verifica una possibile lacuna nella copertura dei criteri DLP. Questo suggerimento viene visualizzato nella Home page del Centro sicurezza &amp; e conformità, se i documenti contengono uno dei primi cinque tipi più comuni di informazioni riservate ma non sono protetti da un criterio DLP.
-ms.openlocfilehash: 504a85b07f348c45c9925cc2e6ee24b1d8a48656
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come creare e modificare il criterio di prevenzione della perdita di dati (DLP) consigliato per la propria organizzazione.
+ms.openlocfilehash: 9588eabe5dbe2b1e60eaeb6a45eb95cc327383aa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943375"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817635"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Introduzione alle raccomandazioni per i criteri di prevenzione della perdita dei dati
 
-Questa raccomandazione basata su Insight aiuta l'organizzazione a mantenere i contenuti riservati sicuri quando viene archiviato e condiviso in Microsoft 365 informando quando si verifica una possibile lacuna nella copertura dei criteri DLP. Questo suggerimento viene visualizzato nella **Home** page del Centro sicurezza &amp; e conformità, se i documenti contengono uno dei primi cinque tipi più comuni di informazioni riservate, ma non sono protetti da un criterio di prevenzione della perdita di dati (DLP). 
+Questa raccomandazione basata su Insight aiuta l'organizzazione a mantenere i contenuti riservati sicuri quando viene archiviato e condiviso in Microsoft 365 informando quando si verifica una possibile lacuna nella copertura dei criteri DLP. Questo suggerimento viene visualizzato nella **Home** page del &amp; Centro sicurezza e conformità, se i documenti contengono uno dei primi cinque tipi più comuni di informazioni riservate, ma non sono protetti da un criterio di prevenzione della perdita di dati (DLP). 
   
 È possibile utilizzare questo widget per creare rapidamente un criterio DLP personalizzato con un solo clic o due e, dopo aver creato questo criterio DLP, è completamente personalizzabile. Si noti che, se la raccomandazione non viene visualizzata all'inizio, provare a fare clic su **+ altro** nella parte inferiore della sezione **consigliata per l'utente** . 
   
@@ -38,7 +38,7 @@ Per proteggere le informazioni riservate, questo criterio DLP:
   
 - Rileva quando il contenuto in Exchange, SharePoint e OneDrive che contiene uno dei tipi non protetti di informazioni riservate viene condiviso con persone esterne all'organizzazione.
     
-- Genera report di attività dettagliati in modo che sia possibile tenere conto di elementi quali la condivisione dei contenuti con persone esterne all'organizzazione e quando sono state eseguite. È possibile utilizzare i [report DLP](view-the-dlp-reports.md) e i [dati del log di controllo](search-the-audit-log-in-security-and-compliance.md) (dove **attività** = **DLP**) per visualizzare queste informazioni.
+- Genera report di attività dettagliati in modo che sia possibile tenere conto di elementi quali la condivisione dei contenuti con persone esterne all'organizzazione e quando sono state eseguite. È possibile utilizzare i [report DLP](view-the-dlp-reports.md) e i [dati del log di controllo](search-the-audit-log-in-security-and-compliance.md) (dove **attività**  =  **DLP**) per visualizzare queste informazioni.
     
 È inoltre possibile scegliere di disporre del criterio DLP:
   
@@ -54,7 +54,7 @@ Se si desidera modificare queste opzioni in un secondo momento, è possibile mod
   
 ## <a name="edit-the-recommended-dlp-policy"></a>Modificare il criterio DLP consigliato
 
-Dopo aver utilizzato il widget per creare un criterio DLP, il criterio viene visualizzato in **prevenzione della perdita di dati** nella pagina **criteri** del &amp; Centro sicurezza e conformità. 
+Dopo aver utilizzato il widget per creare un criterio DLP, il criterio viene visualizzato in **prevenzione della perdita di dati** nella pagina **criteri** del Centro sicurezza e &amp; conformità. 
   
 Per impostazione predefinita, il criterio è denominato **criterio consigliato dal sistema per la condivisione di informazioni riservate**. Questo criterio è completamente personalizzabile, lo stesso di qualsiasi criterio DLP creato da zero. Ad esempio, se si è deciso di non abilitare i rapporti sugli incidenti e i suggerimenti per i criteri quando è stato utilizzato il widget, è sempre possibile modificare il criterio e attivarle in qualsiasi momento.
   
@@ -62,7 +62,7 @@ Per impostazione predefinita, il criterio è denominato **criterio consigliato d
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Quando il widget fa e non viene visualizzato
 
-Il widget denominato **informazioni riservate non protette** viene visualizzato nella sezione **consigliata** della **Home** page del Centro sicurezza &amp; e conformità. 
+Il widget denominato **informazioni riservate non protette** viene visualizzato nella sezione **consigliata** della **Home** page del Centro sicurezza e &amp; conformità. 
   
 Questo widget viene visualizzato solo quando:
   

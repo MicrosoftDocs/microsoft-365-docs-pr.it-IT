@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: Utilizzare la funzionalità di statistiche di ricerca per visualizzare e confrontare le statistiche per più ricerche di contenuto nel centro sicurezza & conformità. È inoltre possibile configurare l'elenco di parole chiave quando si crea o si modifica una query di ricerca per ottenere statistiche avanzate che mostrano il numero di elementi corrispondenti a ciascuna parola chiave o frase di parola chiave.
-ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Informazioni su come utilizzare la funzionalità di statistiche di ricerca per visualizzare e confrontare le statistiche per più ricerche di contenuto nel centro sicurezza & conformità.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 30cc893d041819ac1fa2e24c6ecf6178677686b2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634124"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819036"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Visualizzare le statistiche delle parole chiave per i risultati di Ricerca contenuto
 
-Dopo aver creato ed eseguito una ricerca di contenuto, è possibile visualizzare le statistiche sui risultati della ricerca stimati. Questo include un riepilogo dei risultati della ricerca (simile al riepilogo dei risultati di ricerca stimati visualizzati nel riquadro dettagli), le statistiche di query, ad esempio il numero di posizioni di contenuto con gli elementi che corrispondono alla query di ricerca e il nome dei percorsi di contenuto. che presentano la maggior parte degli elementi corrispondenti. È possibile visualizzare statistiche per una o più ricerche di contenuto. In questo modo è possibile confrontare rapidamente i risultati per più ricerche e prendere decisioni sull'efficacia delle query di ricerca.
+Dopo aver creato ed eseguito una ricerca di contenuto, è possibile visualizzare le statistiche sui risultati della ricerca stimati. In questo modo è incluso un riepilogo dei risultati della ricerca (come il riepilogo dei risultati di ricerca stimati visualizzati nel riquadro dettagli), le statistiche di query, ad esempio il numero di posizioni di contenuto con elementi che corrispondono alla query di ricerca e il nome dei percorsi di contenuto con gli elementi più corrispondenti. È possibile visualizzare statistiche per una o più ricerche di contenuto. In questo modo è possibile confrontare rapidamente i risultati per più ricerche e prendere decisioni sull'efficacia delle query di ricerca.
   
 È inoltre possibile configurare ricerche nuove ed esistenti per restituire statistiche per ogni parola chiave in una query di ricerca. In questo modo è possibile confrontare il numero di risultati per ogni parola chiave di una query e confrontare le statistiche delle parole chiave provenienti da più ricerche.
   
@@ -37,7 +38,7 @@ Per visualizzare le statistiche per le ricerche di contenuto:
   
 1. Nel centro sicurezza & conformità, andare a ricerca **Search** \> **contenuto**ricerca.
     
-2. Nell'elenco delle ricerche, selezionare una o più ricerche, quindi fare clic su **Search Statistics**![Search Statistics Button](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png).
+2. Nell'elenco delle ricerche, selezionare una o più ricerche, quindi fare clic su **Search Statistics** ![ Search Statistics Button ](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) .
     
     ![Selezionare più ricerche e quindi fare clic su statistiche di ricerca](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
@@ -73,7 +74,7 @@ Per visualizzare le statistiche per le ricerche di contenuto:
     
     d. Questa colonna contiene la query di ricerca effettiva eseguita dallo strumento di ricerca del contenuto. Si noti che lo strumento aggiunge automaticamente alcuni componenti aggiuntivi alla query creata. 
 
-    - Quando si esegue la ricerca di tutto il contenuto nelle cassette postali (non specificando parole chiave), la `size>=0` query parola chiave effettiva è in modo che tutti gli elementi vengano restituiti. 
+    - Quando si esegue la ricerca di tutto il contenuto nelle cassette postali (non specificando parole chiave), la query parola chiave effettiva è in `size>=0` modo che tutti gli elementi vengano restituiti. 
     
      - Quando si eseguono ricerche in siti di SharePoint Online e OneDrive for business, vengono aggiunti i due componenti seguenti:
     
@@ -109,7 +110,7 @@ Per creare un elenco di parole chiave e visualizzare le statistiche delle parole
   
 1. Nel centro sicurezza & conformità, andare a ricerca **Search** \> **contenuto**ricerca.
     
-2. Nell'elenco delle ricerche di contenuto, fare clic e una ricerca, quindi fare **Edit** ![clic su modifica](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icona modifica.
+2. Nell'elenco delle ricerche di contenuto, fare clic e una ricerca, quindi fare clic su **modifica** ![ icona modifica ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
 3. Fare clic su **query** e quindi eseguire le operazioni seguenti: 
     
@@ -121,7 +122,7 @@ Per creare un elenco di parole chiave e visualizzare le statistiche delle parole
     
 4. Dopo aver aggiunto le parole chiave che si desidera cercare e ottenere le statistiche, fare clic su **Cerca** per eseguire la ricerca riveduta. 
     
-5. Al termine della ricerca, selezionarlo nell'elenco delle ricerche, quindi fare clic su **Search Statistics** ![Search Statistics](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Button. È inoltre possibile visualizzare e confrontare le statistiche delle parole chiave per più ricerche.
+5. Al termine della ricerca, selezionarlo nell'elenco delle ricerche, quindi fare clic su **Search Statistics** ![ Search Statistics ](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) Button. È inoltre possibile visualizzare e confrontare le statistiche delle parole chiave per più ricerche.
     
 6. Nella pagina **statistiche di ricerca** fare clic su **query** per visualizzare le statistiche delle parole chiave per le ricerche selezionate. 
     

@@ -16,23 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Esaminare i passaggi per configurare le opzioni per il processo di analisi in Advanced eDiscovery, inclusi i quasi duplicati, i thread di posta elettronica e i temi.  '
-ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 091eb75bea0312e5a06cc60ca915612efc820e6e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631263"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819226"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Impostare le opzioni di ANALYZE in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery, impostare le opzioni Analyze prima di eseguire ANALYZE.
   
 ## <a name="set-analyze-options"></a>Impostazione delle opzioni di analisi
 
-Aprire **prepara \> analisi** \> di **installazione**. Viene visualizzata la finestra seguente.
+Aprire **prepara \> analisi** di \> **installazione**. Viene visualizzata la finestra seguente.
   
 ![Impostare opzioni di analisi](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
@@ -55,7 +56,7 @@ Aprire **prepara \> analisi** \> di **installazione**. Viene visualizzata la fin
   
 1. Per visualizzare, aggiungere o modificare i temi suggeriti, fare clic su **modifica**.
     
-2. Nel riquadro **temi consigliati** fare clic sull'icona **Aggiungi** ![icona](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) per aggiungere un tema. Nel riquadro **Aggiungi tema suggerito** aggiungere le parole separate da virgole. 
+2. Nel riquadro **temi consigliati** fare clic sull'icona **Aggiungi** ![ icona ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) per aggiungere un tema. Nel riquadro **Aggiungi tema suggerito** aggiungere le parole separate da virgole. 
     
 3. In **numero di temi**selezionare un valore per determinare il numero di temi avanzati che eDiscovery tenterà di generare per queste parole (l'impostazione predefinita è 1 tema).
     
@@ -76,7 +77,7 @@ Aprire **prepara \> analisi** \> di **installazione**. Viene visualizzata la fin
   
 Dopo aver impostato queste opzioni, fare clic su **analizza** per l'esecuzione. [Visualizzare i risultati dell'analisi](view-analyze-results-in-advanced-ediscovery.md) . 
   
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   

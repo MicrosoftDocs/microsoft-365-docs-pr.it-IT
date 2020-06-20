@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come importare i dati non Microsoft 365 in un set di revisione per l'analisi in un caso di eDiscovery avanzato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ed4a26ea1dd68b9198cce67ce0f97580ed4b2a99
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9b506edc55da1916ae908eaa7ca619ba7300f87
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034424"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815463"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Caricare dati non Microsoft 365 in un set di Revisione
 
 Non tutti i documenti che devono essere analizzati in Advanced eDiscovery si trovano in Microsoft 365. Con la caratteristica di importazione di dati non Microsoft 365 in Advanced eDiscovery, è possibile caricare i documenti che non sono presenti in Microsoft 365 in un set di revisione. In questo articolo viene illustrato come portare i documenti non Microsoft 365 in Advanced eDiscovery per l'analisi.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="requirements-to-upload-non-office-365-content"></a>Requisiti per caricare il contenuto non Office 365
 
 Se si utilizza la funzionalità carica non Microsoft 365 descritta in questo articolo, è necessario disporre di quanto segue:
 

@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Utilizzare lo strumento di gestione dei depositari di Advanced eDiscovery per accedere e cercare facilmente l'attività dei depositari all'interno del caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 84da57c8f2115c18543d4f38fd84f2c4eccb46d5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 29aee2498b21cc4535ffa82f91fdba05125c4d18
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034298"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819046"
 ---
 # <a name="view-custodian-audit-activity"></a>Visualizzazione dell'attività di controllo del custode
 
 Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, Advanced eDiscovery è ora integrato con lo strumento di ricerca del registro di controllo esistente nel centro sicurezza & Compliance. Usando questa esperienza incorporata, è possibile utilizzare lo strumento di gestione dei depositari di Advanced eDiscovery per facilitare le indagini, accedendo facilmente e ricercando l'attività dei depositari all'interno del caso.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="get-permissions"></a>Ottenere le autorizzazioni
 
 È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'Interfaccia di amministrazione di Exchange. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo avanzato di eDiscovery con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere Gestire i gruppi di ruoli in Exchange Online.
 

@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.custom: seo-marvel-apr2020
+description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Microsoft 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
+ms.openlocfilehash: 5b1aaab6db56d989c36cd977122d4e5843587aac
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371430"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817835"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -110,7 +111,7 @@ Nella tabella seguente vengono descritte le azioni della cassetta postale dispon
 |**Copia**|Messaggio copiato in un'altra cartella.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Creare**|Un elemento è stato creato nella cartella calendario, contatti, note o attività nella cassetta postale (ad esempio, viene creata una nuova convocazione di riunione). La creazione, l'invio o la ricezione di un messaggio non viene controllata, così come la creazione di una cartella della cassetta postale.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Predefinita**||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**FolderBind**|Accesso effettuato a una cartella della cassetta postale. Tale azione viene registrata anche quando l'amministratore o un delegato apre la cassetta postale.<br/><br/> **Nota**: i record di controllo per le operazioni di associazione delle cartelle eseguite dai delegati vengono consolidati Viene generato un record di controllo per l'accesso a una singola cartella entro 24 ore.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**FolderBind**|A mailbox folder was accessed. This action is also logged when the admin or delegate opens the mailbox. <br/><br/> **Nota**: i record di controllo per le operazioni di associazione delle cartelle eseguite dai delegati vengono consolidati Viene generato un record di controllo per l'accesso a una singola cartella entro 24 ore.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Messaggio eliminato dalla cartella Elementi ripristinabili.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|I dati di posta elettronica sono accessibili tramite protocolli e client di posta elettronica. Questo valore è disponibile solo per gli utenti della sottoscrizione del componente aggiuntivo di conformità E5 o E5. Per informazioni dettagliate, vedere [accesso a eventi cruciali per le indagini](advanced-audit.md#access-to-crucial-events-for-investigations).|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailboxLogin**|L'utente ha eseguito l'accesso alla propria cassetta postale. |||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -120,9 +121,9 @@ Nella tabella seguente vengono descritte le azioni della cassetta postale dispon
 |**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**RecordDelete**|Un elemento etichettato come record è stato eliminato temporaneamente (spostato nella cartella elementi ripristinabili). Gli elementi contrassegnati come record non possono essere eliminati definitivamente (eliminati dalla cartella elementi ripristinabili).|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**RemoveFolderPermissions**|**Nota**: Sebbene questo valore venga accettato come azione della cassetta postale, è già incluso nell'azione **UpdateFolderPermissions** e non è controllato separatamente. In altre parole, non utilizzare questo valore.||||
-|**SendAs**|Messaggio inviato utilizzando l'autorizzazione SendAs. Ciò significa che un altro utente ha inviato il messaggio come se provenisse dal proprietario della cassetta postale.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SendAs**|A message was sent using the SendAs permission. This means another user sent the message as though it came from the mailbox owner.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendOnBehalf**|A message was sent using the SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Aggiorna**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Una delega del calendario è stata assegnata a una cassetta postale. La delega del calendario assegna a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|Viene applicata un'etichetta di conservazione diversa a un elemento di posta elettronica, a cui è assegnata solo un'etichetta di conservazione.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -147,20 +148,20 @@ Tenere presente che un amministratore con autorizzazione di accesso completo a u
 |**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|Un messaggio è stato inviato con l'autorizzazione SendAs,|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un messaggio è stato inviato con l'autorizzazione SendOnBehalf, |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Aggiorna**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Verificare che le azioni delle cassette postali predefinite vengano registrate per ogni tipo di accesso
 
 Per impostazione predefinita, il controllo delle cassette postali aggiunge una nuova proprietà *DefaultAuditSet* a tutte le cassette postali. Il valore di questa proprietà indica se le azioni delle cassette postali predefinite (gestite da Microsoft) vengono controllate sulla cassetta postale.
 
-Per visualizzare il valore delle cassette postali degli utenti o delle cassette postali condivise, sostituire \< MailboxIdentity \> con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire il comando seguente in PowerShell di Exchange Online:
+Per visualizzare il valore delle cassette postali degli utenti o delle cassette postali condivise, sostituire \<MailboxIdentity\> con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire il comando seguente in PowerShell di Exchange Online:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-Per visualizzare il valore delle cassette postali di gruppo di Microsoft 365, sostituire \< MailboxIdentity \> con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale condivisa ed eseguire il comando seguente in PowerShell di Exchange Online:
+Per visualizzare il valore delle cassette postali del gruppo Microsoft 365, sostituire \<MailboxIdentity\> con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale condivisa ed eseguire il comando seguente in PowerShell di Exchange Online:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -186,7 +187,7 @@ Per ulteriori informazioni, vedere la sezione [modificare o ripristinare le azio
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>Visualizzare le azioni delle cassette postali registrate nelle cassette postali
 
-Per visualizzare le azioni delle cassette postali attualmente in fase di accesso alle cassette postali degli utenti o alle cassette postali condivise, sostituire \< MailboxIdentity \> con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire uno o più dei comandi seguenti in PowerShell di Exchange Online.
+Per visualizzare le azioni delle cassette postali attualmente in fase di accesso alle cassette postali degli utenti o alle cassette postali condivise, sostituire \<MailboxIdentity\> con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire uno o più dei comandi seguenti in PowerShell di Exchange Online.
 
 > [!NOTE]
 > Anche se è possibile aggiungere l' `-GroupMailbox` opzione ai comandi **Get-Mailbox** seguenti per le cassette postali del gruppo Microsoft 365, non credere ai valori restituiti. Le azioni delle cassette postali predefinite e statiche di cui è stato eseguito il controllo per le cassette postali del gruppo Microsoft 365 sono descritte nella sezione [azioni della cassetta postale per](#mailbox-actions-for-microsoft-365-group-mailboxes) le cassette postali di Microsoft 365 di questo argomento.
@@ -324,7 +325,7 @@ Tuttavia, è comunque possibile utilizzare il cmdlet **Set-MailboxAuditBypassAss
 
 - Le azioni amministrative eseguite dagli utenti ignorati non vengono registrate.
 
-Per ignorare la registrazione di controllo delle cassette postali per un utente specifico, sostituire \< MailboxIdentity \> con il nome, l'indirizzo di posta elettronica, l'alias o il nome dell'entità utente (nomeutente) dell'utente ed eseguire il comando seguente:
+Per ignorare la registrazione di controllo delle cassette postali per un utente specifico, sostituire \<MailboxIdentity\> con il nome, l'indirizzo di posta elettronica, l'alias o il nome dell'entità utente (nomeutente) dell'utente ed eseguire il comando seguente:
 
 ```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true

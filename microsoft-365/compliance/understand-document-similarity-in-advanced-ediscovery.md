@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Esaminare in che modo il valore di somiglianza del documento, il livello minimo di somiglianza per due file da considerare quasi duplicati, è compatibile con Advanced eDiscovery. '
-ms.openlocfilehash: bfce2e3018c690fc0a25bcda8e2c03690a334dc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83c68eca8fba1ee8672f02f315585161c9abf2e3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633411"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819126"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Comprendere la somiglianza del documento in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery, la somiglianza dei documenti è il livello minimo di somiglianza necessario per due documenti che devono essere considerati quasi duplicati.
   
@@ -55,7 +56,7 @@ Si supponga che un altro documento, x1, sia stato inserito. La somiglianza tra x
   
 Dopo la fusione dei set, il documento pivot può variare quando vengono aggiunti nuovi documenti a un set. 
   
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   

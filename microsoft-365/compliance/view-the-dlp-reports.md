@@ -15,13 +15,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Con i report DLP in Office 365, è possibile visualizzare rapidamente il numero di corrispondenze di criteri DLP, sostituzioni o falsi positivi. controllare se si sta facendo una tendenza verso l'alto o verso il basso nel tempo; filtrare il report in modi diversi; e visualizzare ulteriori dettagli selezionando un punto su una linea del grafico.
-ms.openlocfilehash: 6ff8237b1471f10aff3abc40715af7fe538a211c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: Utilizzare i report DLP in Office 365 per visualizzare il numero di corrispondenze di criteri DLP, sostituzioni o falsi positivi e vedere se sono in trend up o Down nel corso del tempo.
+ms.openlocfilehash: 1ddcd60dc9314779ade2f7ceae02d336f902e483
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626292"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818996"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Visualizzare i report di prevenzione della perdita di dati
 
@@ -57,7 +58,7 @@ Dopo aver creato i criteri di prevenzione della perdita di dati (DLP), è necess
     
 Tutti i report DLP sono in grado di visualizzare i dati del periodo di quattro mesi più recente. I dati più recenti possono richiedere fino a 24 ore per essere visualizzati nei rapporti.
   
-Questi rapporti sono disponibili &amp; nel **Dashboard**dei **report** \> del centro \> sicurezza e conformità.
+Questi rapporti sono disponibili nel dashboard dei report del Centro sicurezza e &amp; conformità \> **Reports** \> **Dashboard**.
   
 ![Rapporto delle corrispondenze dei criteri DLP](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
@@ -87,11 +88,11 @@ Per visualizzare i report DLP nel centro sicurezza & Compliance, è necessario a
 
 Per usare la maggior parte dei cmdlet per il Centro sicurezza e conformità, è necessario:
   
-1. [Connettersi al centro sicurezza &amp; e conformità tramite Remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connettersi al centro sicurezza e &amp; conformità tramite Remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Utilizzare uno di questi [cmdlet &amp; del Centro sicurezza e conformità](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Utilizzare uno di questi [ &amp; cmdlet del Centro sicurezza e conformità](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
-I report dei criteri di prevenzione della perdita dei dati devono tuttavia estrarre i dati da Office 365, incluso Exchange Online. Per questo motivo, i cmdlet per i report DLP sono disponibili in PowerShell di Exchange Online, non in PowerShell &amp; per il Centro sicurezza e conformità. Per usare i cmdlet per i report dei criteri di prevenzione della perdita dei dati, è quindi necessario:
+I report dei criteri di prevenzione della perdita dei dati devono tuttavia estrarre i dati da Office 365, incluso Exchange Online. Per questo motivo, i cmdlet per i report DLP sono disponibili in PowerShell di Exchange Online, non in PowerShell per il Centro sicurezza e &amp; conformità. Per usare i cmdlet per i report dei criteri di prevenzione della perdita dei dati, è quindi necessario:
   
 1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     

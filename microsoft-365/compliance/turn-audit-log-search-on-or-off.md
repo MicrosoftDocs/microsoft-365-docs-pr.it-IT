@@ -18,13 +18,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: È possibile abilitare la funzionalità di ricerca del registro di controllo nel centro sicurezza & Compliance. Se si cambia idea, è possibile attivarlo in qualsiasi momento. Quando la ricerca del registro di controllo è disattivata, gli amministratori non possono eseguire ricerche nel log di controllo di Microsoft 365 per l'attività dell'utente e dell'amministratore nell'organizzazione.
-ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.custom: seo-marvel-apr2020
+description: Informazioni su come attivare o disattivare la funzionalità di ricerca del registro di controllo nel centro sicurezza & Compliance per abilitare o disabilitare la possibilità per gli amministratori di eseguire ricerche nel log di controllo.
+ms.openlocfilehash: 4571c90c4fa680acd8925e83e32ffcf07de7d626
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330790"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819136"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Abilitare o disabilitare la ricerca dei log di controllo
 
@@ -33,7 +34,7 @@ L'utente (o un altro amministratore) deve attivare la registrazione di controllo
 > [!IMPORTANT]
 > Se si disattiva la ricerca del registro di controllo in Microsoft 365, non è possibile utilizzare l'API di attività di gestione di Office 365 o la sentinella di Azure per accedere ai dati di controllo per l'organizzazione. La disattivazione della ricerca del registro di controllo seguendo i passaggi descritti in questo articolo indica che non verranno restituiti risultati quando si esegue una ricerca nel log di controllo utilizzando il Centro sicurezza & conformità o quando si utilizza il cmdlet **Search-UnifiedAuditLog** in Exchange Online PowerShell. Questo significa anche che i registri di controllo non saranno disponibili tramite l'API di attività di gestione di Office 365 o la sentinella di Azure.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-turn-audit-log-search-on-or-off"></a>Prima di abilitare o disabilitare la ricerca del registro di controllo
 
 - È necessario essere assegnati al ruolo registri di controllo in Exchange Online per abilitare o disabilitare la ricerca del registro di controllo nell'organizzazione Microsoft 365. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Gli amministratori globali di Microsoft 365 sono membri del gruppo di ruoli Gestione organizzazione in Exchange Online. 
     

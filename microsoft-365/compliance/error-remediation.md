@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Informazioni su come utilizzare la correzione degli errori per correggere i problemi relativi ai dati in indagini sui dati (Preview) che potrebbero impedire l'elaborazione corretta del contenuto.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c833ce9ae93f5395e06ee3dbde54ff4a8d5d4a00
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: fe77f918a7471bf36df7727f890ea043976e44db
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035118"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817815"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Correzione degli errori durante l'elaborazione dei dati per un'indagine
 
@@ -57,7 +59,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
     >È consigliabile utilizzare un percorso di file locale anziché un percorso di rete remoto per ottenere prestazioni ottimali.
 
     > [!NOTE]
-    > Se non è stato installato AzCopy, è possibile installarlo da qui:https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+    > Se non è stato installato AzCopy, accedere a [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) per installarlo.
 
 6. Copiare il comando predefinito facendo clic su **copia negli Appunti**. Avviare un prompt dei comandi di Windows, incollare il comando e quindi premere **invio**.  
 
@@ -71,7 +73,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 7. Dopo aver scaricato i file, è possibile risolverli con uno strumento appropriato. Per i file protetti da password, esistono diversi strumenti di cracking delle password che è possibile utilizzare. Se si conoscono le password per i file, è possibile aprirle e rimuovere la protezione tramite password.
     
    > [!NOTE]
-    > È importante mantenere la struttura di directory e i nomi di file dei file corretti. I nomi di percorso dei file e delle cartelle scaricati consentono di associare i file corretti ai file originali.  Se la struttura di directory o i nomi di file vengono modificati, verrà visualizzato il seguente `Cannot apply Error Remediation to the current Evidenceset`messaggio di errore:.
+    > È importante mantenere la struttura di directory e i nomi di file dei file corretti. I nomi di percorso dei file e delle cartelle scaricati consentono di associare i file corretti ai file originali.  Se la struttura di directory o i nomi di file vengono modificati, verrà visualizzato il seguente messaggio di errore: `Cannot apply Error Remediation to the current Evidenceset` .
 
 8. A questo punto, tornare a indagini sui dati (anteprima) e fare clic su **Avanti: carica file**.  In questo modo si passerà al passaggio successivo, in cui è ora possibile caricare i file.
 
@@ -81,7 +83,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
 10. Incollare il comando in un prompt dei comandi di Windows e premere **invio** per caricare i file.
 
-    ![ff2ff691-629F-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Infine, tornare a indagini sui dati (anteprima) e fare clic su **Avanti: elabora file**.
 

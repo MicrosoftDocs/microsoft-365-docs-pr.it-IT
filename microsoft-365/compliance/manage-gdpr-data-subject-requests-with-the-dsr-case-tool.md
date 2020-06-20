@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: Il GDPR fornisce ai cittadini dell'Unione europea (denominati soggetti dei dati) diritti specifici per i loro dati personali; tali diritti includono l'ottenimento di copie, la richiesta di modifiche, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico. Una richiesta formale da parte di un soggetto dei dati di intraprendere un'azione sui loro dati personali è denominata richiesta del soggetto dei dati o DSR. È possibile utilizzare i casi DSR nel centro conformità di Office 365 e Microsoft 365 per gestire le indagini DSR dell'organizzazione.
+description: Informazioni su come gestire le richieste del soggetto dei dati di GDPR (EU General Data Protection Regulation) con lo strumento di gestione dei casi DSR.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3be609ae1245b20b39d26fe60444e6e54f171d3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035870"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815453"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
 
@@ -90,7 +90,7 @@ Il passaggio successivo consiste nel creare un caso DSR. Quando si crea un caso,
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione. 
     
-2. Nel centro sicurezza & conformità fare clic su richieste degli \> **interessati**per la **privacy dei dati** e ![quindi fare](../media/ITPro-EAC-AddIcon.gif) clic su Aggiungi **nuovo caso DSR**.
+2. Nel centro sicurezza & conformità fare clic su richieste degli interessati per la **privacy dei dati** \> **Data subject requests**e quindi fare clic su ![ Aggiungi ](../media/ITPro-EAC-AddIcon.gif) **nuovo caso DSR**.
     
 3. Nella pagina **nuovo** riquadro a comparsa del modello DSR, assegnare un nome al caso, digitare una descrizione facoltativa e quindi fare clic su **Avanti**. Il nome del caso deve essere univoco nell'organizzazione.
     
@@ -149,7 +149,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
  **Per eseguire la ricerca incorporata per un caso DSR:**
   
-1. Nel centro sicurezza & conformità fare clic su \> **richieste degli interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR creato nel passaggio 2. 
+1. Nel centro sicurezza & conformità fare clic su richieste degli interessati per la **privacy dei dati** \> **Data subject requests**e quindi fare clic su **Apri** accanto al caso DSR creato nel passaggio 2. 
     
     Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca incorporata creata quando è stato creato il caso DSR. La ricerca ha lo stesso nome del caso DSR. 
     
@@ -192,11 +192,11 @@ Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti
   
  **Per esportare i dati dalla ricerca incorporata in un caso DSR:**
   
-1. Nel centro sicurezza & conformità fare clic su \> **richieste degli interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR da cui si desidera esportare i dati. 
+1. Nel centro sicurezza & conformità fare clic su richieste degli interessati per la **privacy dei dati** \> **Data subject requests**e quindi fare clic su **Apri** accanto al caso DSR da cui si desidera esportare i dati. 
     
 2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca incorporata creata quando è stato creato il caso DSR. Oppure fare clic su un'altra ricerca per esportare i dati dalla ricerca. 
     
-3. Nella pagina riquadro a comparsa di ricerca ![fare clic su Esporta](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
+3. Nella pagina riquadro a comparsa di ricerca fare clic su ![ Esporta altre icone dei risultati di ricerca ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
     
 4. Nella pagina **Export results** selezionare le opzioni consigliate seguenti per le richieste di esportazione DSR. 
     
@@ -206,7 +206,7 @@ Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti
     
     b. In **Esporta contenuto di Exchange come**selezionare la terza opzione, **un file PST contenente tutti i messaggi in una singola cartella**. Poiché alcuni dei risultati possono essere per gli elementi originati dalla cassetta postale di un altro utente, questa opzione consente di elencare solo l'elemento in una singola cartella senza indicare la cassetta postale effettiva ed è l'opzione migliore da utilizzare per la deduplicazione dei risultati come consigliato nell'elemento successivo. Questa opzione consente inoltre agli elementi di revisione del soggetto dei dati in ordine cronologico (gli elementi sono ordinati in base alla data di invio) senza dover esplorare la struttura delle cartelle della cassetta postale originale per ogni elemento.
     
-    c. Selezionare **Abilita opzione di deduplicazione** per escludere i messaggi di posta elettronica duplicati. Questa opzione è consigliabile perché la ricerca incorporata esegue ricerche in tutte le cassette postali dell'organizzazione. Pertanto, se vengono trovate più copie dello stesso messaggio nelle cassette postali di cui è stata eseguita la ricerca, questa opzione indica che verrà esportata una sola copia di un messaggio. Questa opzione, insieme esporterà i messaggi in un unico file PST in una singola cartella, consente di ottenere la migliore esperienza utente per le richieste di esportazione DSR. Il report Export results. csv elenca tutte le posizioni in cui sono stati trovati messaggi duplicati.
+    c. Selezionare **Abilita opzione di deduplicazione** per escludere i messaggi di posta elettronica duplicati. Questa opzione è consigliabile perché la ricerca incorporata esegue ricerche in tutte le cassette postali dell'organizzazione. Pertanto, se vengono trovate più copie dello stesso messaggio nelle cassette postali di cui è stata eseguita la ricerca, questa opzione indica che verrà esportata una sola copia di un messaggio. Questa opzione, insieme esporterà i messaggi in un unico file PST in una singola cartella, consente di ottenere la migliore esperienza utente per le richieste di esportazione DSR. Il rapporto di esportazione Results.csv elenca tutte le posizioni in cui sono stati trovati messaggi duplicati.
     
     Facoltativamente, è possibile selezionare l'opzione **Includi versioni per documenti di SharePoint** per esportare tutte le versioni dei documenti di SharePoint e OneDrive. Questo richiede che il controllo delle versioni sia attivato per le raccolte documenti. Questa opzione consente di garantire che tutti i dati rilevanti vengano esportati.
     
@@ -220,7 +220,7 @@ Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti
     
 8. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. Per scaricare i risultati della ricerca, è possibile utilizzare questa chiave nel passaggio 11.
     
-9. Fare ![clic su Esporta risultati](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) della ricerca dell'icona **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
+9. Fare clic su Esporta risultati della ![ ricerca dell'icona ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
     
 10. Nella finestra popup nella parte inferiore della pagina, fare clic su **Apri** per aprire lo strumento di **esportazione di eDiscovery**. Lo **strumento di esportazione di eDiscovery** verrà installato la prima volta che si scaricano i risultati della ricerca. 
     
@@ -243,11 +243,11 @@ Dopo aver eseguito la ricerca incorporata, è possibile modificarla in modo da r
   
 Di seguito sono riportati alcuni esempi delle condizioni che è possibile aggiungere alla query di ricerca incorporata di un caso DSR. Il nome della proprietà effettiva utilizzata in una query di ricerca viene visualizzato tra parentesi.
   
-- **Tipo di file `filetype`()** – specifica l'estensione di un documento o di un file. Utilizzare questa condizione per cercare i documenti e i file creati da specifiche applicazioni di Office, ad esempio Word, Excel e OneNote. 
+- **Tipo di file ( `filetype` )** – specifica l'estensione di un documento o di un file. Utilizzare questa condizione per cercare i documenti e i file creati da specifiche applicazioni di Office, ad esempio Word, Excel e OneNote. 
     
-- **Tipo di messaggio `kind`()** – specifica il tipo di elemento di posta elettronica da cercare. Ad esempio, è possibile utilizzare la sintassi `kind:email OR kind:im` per restituire solo messaggi di posta elettronica e conversazioni di Skype for business o chat uno-a-uno in Microsoft teams. 
+- **Tipo di messaggio ( `kind` )** – specifica il tipo di elemento di posta elettronica da cercare. Ad esempio, è possibile utilizzare la sintassi `kind:email OR kind:im` per restituire solo messaggi di posta elettronica e conversazioni di Skype for business o chat uno-a-uno in Microsoft teams. 
     
-- **Tag Compliance`compliancetag`()** : specifica un'etichetta assegnata a un messaggio di posta elettronica o a un documento. Questa condizione restituisce gli elementi classificati con una specifica etichetta. Le etichette vengono utilizzate per classificare la posta elettronica e i documenti per la governance dei dati e applicare le regole di conservazione in base alla classificazione definita dall'etichetta. Si tratta di una condizione utile per le indagini DSR perché l'organizzazione può utilizzare etichette per classificare il contenuto relativo alla privacy dei dati o che contiene dati personali o informazioni riservate. Per il valore di questa condizione, utilizzare il nome completo dell'etichetta o la prima parte del nome dell'etichetta con un carattere jolly. Per ulteriori informazioni, vedere [Overview of labels in Office 365](labels.md).
+- **Tag Compliance ( `compliancetag` )** : specifica un'etichetta assegnata a un messaggio di posta elettronica o a un documento. Questa condizione restituisce gli elementi classificati con una specifica etichetta. Le etichette vengono utilizzate per classificare la posta elettronica e i documenti per la governance dei dati e applicare le regole di conservazione in base alla classificazione definita dall'etichetta. Si tratta di una condizione utile per le indagini DSR perché l'organizzazione può utilizzare etichette per classificare il contenuto relativo alla privacy dei dati o che contiene dati personali o informazioni riservate. Per il valore di questa condizione, utilizzare il nome completo dell'etichetta o la prima parte del nome dell'etichetta con un carattere jolly. Per ulteriori informazioni, vedere [Overview of labels in Office 365](labels.md).
     
 Per un elenco e una descrizione di tutte le condizioni disponibili nello strumento dei casi DSR, [vedere l'](keyword-queries-and-search-conditions.md#search-conditions) articolo relativo alle condizioni di ricerca nella sezione "query con parole chiave e condizioni di ricerca per la ricerca di contenuto". 
   
@@ -303,9 +303,9 @@ Quando si esportano i dati dal servizio di roaming di Office, i dati vengono sal
    
  **Per cercare ed esportare i dati del servizio di roaming di Office:**
   
-1. Nel centro sicurezza & conformità fare clic su \> **richieste degli interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR per l'oggetto dati per il quale si desidera esportare i dati di utilizzo. 
+1. Nel centro sicurezza & conformità fare clic su richieste degli interessati per la **privacy dei dati** \> **Data subject requests**e quindi fare clic su **Apri** accanto al caso DSR per l'oggetto dati per il quale si desidera esportare i dati di utilizzo. 
     
-2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic ![su Aggiungi](../media/ITPro-EAC-AddIcon.gif) **Ricerca guidata**icona.
+2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic su ![ Aggiungi ](../media/ITPro-EAC-AddIcon.gif) **Ricerca guidata**icona.
     
 3. Fare clic su **Annulla** nella pagina **nome della ricerca** . 
     
@@ -327,9 +327,9 @@ Quando si esportano i dati dal servizio di roaming di Office, i dati vengono sal
     
  **Per esportare i dati del servizio di roaming di Office:**
   
-1. Quando la ricerca creata nel passaggio precedente è stata completata, fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca. Potrebbe essere necessario fare clic ![su](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Aggiorna **aggiornamento** per visualizzare la ricerca. 
+1. Quando la ricerca creata nel passaggio precedente è stata completata, fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca. Potrebbe essere necessario fare clic su ![ Aggiorna ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **aggiornamento** per visualizzare la ricerca. 
     
-2. Nella pagina riquadro a comparsa di ricerca ![fare clic su Esporta](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
+2. Nella pagina riquadro a comparsa di ricerca fare clic su ![ Esporta altre icone dei risultati di ricerca ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
     
 3. Nella pagina **Export results** selezionare le opzioni consigliate per esportare i dati di utilizzo. 
     
@@ -351,7 +351,7 @@ Quando si esportano i dati dal servizio di roaming di Office, i dati vengono sal
     
 7. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. Per scaricare i risultati della ricerca, è possibile utilizzare questa chiave nel passaggio 10.
     
-8. Fare ![clic su Esporta risultati](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) della ricerca dell'icona **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
+8. Fare clic su Esporta risultati della ![ ricerca dell'icona ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
     
 9. Nella finestra popup nella parte inferiore della pagina, fare clic su **Apri** per aprire lo strumento di **esportazione di eDiscovery**. Lo **strumento di esportazione di eDiscovery** verrà installato la prima volta che si scaricano i risultati della ricerca. 
     

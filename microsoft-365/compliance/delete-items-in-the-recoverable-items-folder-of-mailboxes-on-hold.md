@@ -1,5 +1,5 @@
 ---
-title: Eliminare gli elementi nella cassetta postale del cloud nella cartella elementi ripristinabili-Guida per gli amministratori
+title: Eliminare gli elementi nella cassetta postale del cloud nella cartella elementi ripristinabili di blocco
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: 'Per gli amministratori: eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale. Si tratta di un modo efficace per eliminare i dati che sono stati inavvertitamente riversati in Microsoft 365.'
+description: Informazioni su come eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352181"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817875"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
 
@@ -46,7 +46,7 @@ La cartella elementi ripristinabili per una cassetta postale di Exchange Online 
 > [!CAUTION]
 > Le procedure descritte in questo articolo determinano l'eliminazione definitiva (eliminata) dei dati da una cassetta postale di Exchange Online. Questo significa che i messaggi eliminati dalla cartella elementi ripristinabili non possono essere recuperati e non saranno disponibili per la ricerca legale o per altri scopi di conformità. Se si desidera eliminare i messaggi da una cassetta postale che è stata messa in attesa nell'ambito di un blocco per controversia legale, archiviazione sul posto, blocco di eDiscovery o criterio di conservazione creato nel centro sicurezza e conformità, consultare la gestione dei record o i servizi legali prima di rimuovere il blocco. È possibile che l'organizzazione disponga di un criterio che definisce se una cassetta postale in attesa o un evento di perdita dei dati ha la priorità. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-delete-items"></a>Prima di eliminare gli elementi
 
 - Per creare ed eseguire una ricerca di contenuto, è necessario essere un membro del gruppo di ruoli di gestione di eDiscovery o disporre del ruolo di gestione della ricerca di conformità. Per eliminare i messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
@@ -66,7 +66,7 @@ Questo primo passaggio consiste nel raccogliere le proprietà selezionate dalla 
 
 Inoltre, è necessario ottenere le impostazioni di accesso client delle cassette postali in modo da poterle disabilitare temporaneamente in modo che il proprietario (o altri utenti) non riesca ad accedere alla cassetta postale durante questa procedura. Infine, è possibile ottenere la dimensione corrente e il numero di elementi nella cartella elementi ripristinabili. Dopo aver eliminato gli elementi nella cartella elementi ripristinabili nel passaggio 5, è possibile utilizzare queste informazioni per verificare che gli elementi siano stati rimossi.
   
-1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Assicurarsi di utilizzare un nome utente e una password per un account amministratore a cui sono stati assegnati i ruoli di gestione idonei in Exchange Online. 
+1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Assicurarsi di utilizzare un nome utente e una password per un account amministratore a cui sono stati assegnati i ruoli di gestione idonei in Exchange Online. 
     
 2. Eseguire il seguente comando per ottenere informazioni sul ripristino di un singolo elemento e sul periodo di conservazione degli elementi eliminati.
 

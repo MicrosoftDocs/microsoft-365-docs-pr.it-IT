@@ -19,14 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Creare un criterio di archiviazione ed eliminazione in Microsoft 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+description: Informazioni su come creare un criterio di archiviazione ed eliminazione in Microsoft 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
+ms.openlocfilehash: e5f35938241608a247c625e8411821572d75b18e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222527"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819216"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione
 
@@ -48,7 +48,7 @@ La procedura descritta in questo articolo consentirà di impostare un criterio d
     
 È possibile seguire alcuni o tutti i passaggi descritti in questo articolo per configurare un criterio di eliminazione e archiviazione per le cassette postali nella propria organizzazione. È consigliabile testare questo processo su poche cassette postali prima di implementarlo in tutte le cassette postali dell'organizzazione.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-set-up-an-archive-and-deletion-policy"></a>Prima di impostare un criterio di eliminazione e archiviazione
 
 - Per eseguire la procedura descritta in questo argomento, è necessario essere un amministratore globale dell'organizzazione. 
     
@@ -244,7 +244,7 @@ Dopo aver applicato il nuovo criterio di conservazione alle cassette postali nel
   
 Di seguito sono riportati i passaggi per connettersi a Exchange Online PowerShell, quindi eseguire l'Assistente cartelle gestite in tutte le cassette postali dell'organizzazione.
 
-1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283).
+1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
   
 2. Eseguire i due comandi seguenti per avviare l'Assistente cartelle gestite per tutte le cassette postali degli utenti nell'organizzazione.
     
@@ -262,7 +262,7 @@ Di seguito sono riportati i passaggi per connettersi a Exchange Online PowerShel
 
 Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle cassette postali esistenti. Tuttavia, è possibile configurare Exchange online in modo che i nuovi criteri di conservazione vengano assegnati a nuove cassette postali create in futuro. A tale scopo, è possibile utilizzare PowerShell di Exchange Online per aggiornare il piano della cassetta postale predefinito dell'organizzazione. Un *piano per le cassette postali* è un modello che consente di configurare automaticamente le proprietà nelle nuove cassette postali.  In questo passaggio facoltativo è possibile sostituire il criterio di conservazione corrente assegnato al piano della cassetta postale (per impostazione predefinita, il criterio di gestione record di messaggistica predefinito) con il criterio di conservazione creato nel passaggio 3. Dopo aver aggiornato il piano della cassetta postale, il nuovo criterio di conservazione verrà assegnato a nuove cassette postali.
 
-1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283).
+1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
 
 2. Eseguire il seguente comando per visualizzare le informazioni sui piani delle cassette postali nell'organizzazione.
 

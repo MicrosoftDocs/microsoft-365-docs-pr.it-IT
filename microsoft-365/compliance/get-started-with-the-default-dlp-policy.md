@@ -16,17 +16,19 @@ search.appverid:
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
-description: Prima di creare anche il primo criterio di prevenzione della perdita di dati (DLP), DLP contribuisce a proteggere le informazioni riservate con un criterio predefinito. Questo criterio predefinito e il relativo suggerimento (illustrato di seguito) consentono di mantenere la sicurezza del contenuto riservato notificando quando la posta elettronica o i documenti contenenti un numero di carta di credito sono stati condivisi con un utente esterno all'organizzazione.
-ms.openlocfilehash: d24848e5956a6e8927307d3102f4ce31f1187bfd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come utilizzare il report per affinare i criteri di prevenzione della perdita di dati (DLP) predefiniti dell'organizzazione.
+ms.openlocfilehash: 7c8f0460f9cd02ee3d26197965f5ea74737ac833
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637830"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817615"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
 
-Prima di creare anche il primo criterio di prevenzione della perdita di dati (DLP), DLP contribuisce a proteggere le informazioni riservate con un criterio predefinito. Questo criterio predefinito e il relativo suggerimento (illustrato di seguito) consentono di mantenere la sicurezza del contenuto riservato notificando quando la posta elettronica o i documenti contenenti un numero di carta di credito sono stati condivisi con un utente esterno all'organizzazione. Questo suggerimento viene visualizzato nella **Home** page del Centro sicurezza &amp; e conformità. 
+Prima di creare anche il primo criterio di prevenzione della perdita di dati (DLP), DLP contribuisce a proteggere le informazioni riservate con un criterio predefinito. Questo criterio predefinito e il relativo suggerimento (illustrato di seguito) consentono di mantenere la sicurezza del contenuto riservato notificando quando la posta elettronica o i documenti contenenti un numero di carta di credito sono stati condivisi con un utente esterno all'organizzazione. Questo suggerimento viene visualizzato nella **Home** page del Centro sicurezza e &amp; conformità. 
   
 È possibile utilizzare questo widget per visualizzare rapidamente la condivisione e la quantità di informazioni riservate, quindi affinare il criterio DLP predefinito in un solo clic o due. È inoltre possibile modificare il criterio DLP predefinito in qualsiasi momento perché è completamente personalizzabile. Si noti che, se la raccomandazione non viene visualizzata all'inizio, provare a fare clic su **+ altro** nella parte inferiore della sezione **consigliata per l'utente** . 
   
@@ -44,7 +46,7 @@ Per proteggere le informazioni riservate, il criterio DLP predefinito:
     
 - Visualizza un suggerimento per i criteri e invia una notifica tramite posta elettronica agli utenti quando tentano di condividere queste informazioni riservate con persone esterne all'organizzazione. Per ulteriori informazioni su queste opzioni, vedere [inviare notifiche tramite posta elettronica e Mostra suggerimenti per i criteri DLP](use-notifications-and-policy-tips.md).
     
-- Genera report di attività dettagliati in modo che sia possibile tenere conto di elementi quali la condivisione dei contenuti con persone esterne all'organizzazione e quando sono state eseguite. È possibile utilizzare i [report DLP](view-the-dlp-reports.md) e i [dati del log di controllo](search-the-audit-log-in-security-and-compliance.md) (dove **attività** = **DLP**) per visualizzare queste informazioni.
+- Genera report di attività dettagliati in modo che sia possibile tenere conto di elementi quali la condivisione dei contenuti con persone esterne all'organizzazione e quando sono state eseguite. È possibile utilizzare i [report DLP](view-the-dlp-reports.md) e i [dati del log di controllo](search-the-audit-log-in-security-and-compliance.md) (dove **attività**  =  **DLP**) per visualizzare queste informazioni.
     
 Per affinare rapidamente il criterio DLP predefinito, è possibile sceglierlo:
   
@@ -62,7 +64,7 @@ Se si desidera modificare queste opzioni in un secondo momento, è possibile mod
   
 ## <a name="edit-the-default-dlp-policy"></a>Modificare il criterio DLP predefinito
 
-Questo criterio è denominato **criterio DLP predefinito** e viene visualizzato in **prevenzione della perdita di dati** nella pagina **criteri** del &amp; Centro sicurezza e conformità. 
+Questo criterio è denominato **criterio DLP predefinito** e viene visualizzato in **prevenzione della perdita di dati** nella pagina **criteri** del Centro sicurezza e &amp; conformità. 
   
 Questo criterio è completamente personalizzabile, lo stesso di qualsiasi criterio DLP creato da zero. È anche possibile disattivare o eliminare il criterio, in modo che gli utenti non ricevano più suggerimenti per i criteri o notifiche tramite posta elettronica.
   
@@ -70,11 +72,11 @@ Questo criterio è completamente personalizzabile, lo stesso di qualsiasi criter
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Quando il widget fa e non viene visualizzato
 
-Il widget denominato **ulteriore protezione contenuto condiviso** viene visualizzato nella sezione **consigliata per l'utente** della **Home** page del centro &amp; sicurezza e conformità. 
+Il widget denominato **ulteriore protezione contenuto condiviso** viene visualizzato nella sezione **consigliata per l'utente** della **Home** page del Centro sicurezza e &amp; conformità. 
   
 Questo widget viene visualizzato solo quando:
   
-- Non esistono criteri di prevenzione della perdita di dati nel &amp; Centro sicurezza o nell'interfaccia di amministrazione di Exchange. Questo widget ha lo scopo di iniziare a utilizzare DLP, in modo che non venga visualizzato se si dispone già di criteri DLP.
+- Non esistono criteri di prevenzione della perdita di dati nel centro sicurezza o nell'interfaccia di &amp; amministrazione di Exchange. Questo widget ha lo scopo di iniziare a utilizzare DLP, in modo che non venga visualizzato se si dispone già di criteri DLP.
     
 - I contenuti contenenti almeno una carta di credito sono stati condivisi con un utente esterno all'organizzazione negli ultimi 30 giorni.
     

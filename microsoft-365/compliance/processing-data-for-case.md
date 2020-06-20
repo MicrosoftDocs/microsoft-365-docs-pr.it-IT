@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: L'elaborazione in Advanced eDiscovery include la reindicizzazione dei dati del custode, l'espansione dei documenti e degli allegati incorporati e l'OCR. L'elaborazione include anche la correzione degli errori di indicizzazione.
-ms.openlocfilehash: ab0b9d3a92590812531be04f193ef51afa70a1cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Leggere una panoramica sull'elaborazione di vari tipi di dati in Advanced eDiscovery Tool in Office 365.
+ms.openlocfilehash: ec39df5ba8f8ad4ce979b2cd110e14f29f7838b4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632221"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818785"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Utilizzare gli errori di elaborazione in Advanced eDiscovery
 

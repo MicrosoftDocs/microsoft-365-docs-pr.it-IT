@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
-description: Informazioni su come configurare il registro di sistema di Windows per aumentare la velocità effettiva dei dati quando si scaricano i risultati della ricerca e i dati di ricerca dal centro sicurezza & compliance e Advanced eDiscovery.
-ms.openlocfilehash: a5e08f2fe7d8840cfe8f176080c90b8b40d16af6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come configurare il registro di sistema di Windows per aumentare la velocità effettiva dei dati quando si scaricano i risultati della ricerca.
+ms.openlocfilehash: a68a616d2dced4a3dd70580e1b258c95a0b5e39e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943355"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817675"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results"></a>Aumentare la velocità di download quando si esportano i risultati della ricerca di eDiscovery
 
@@ -53,7 +55,7 @@ Eseguire la procedura seguente nel computer che verrà utilizzato per scaricare 
     
     L'editor del registro di sistema Visualizza un messaggio in cui viene indicato che l'impostazione è stata aggiunta correttamente al registro di sistema.
     
-6. È possibile ripetere i passaggi 2-5 per modificare il valore per `DownloadConcurrency` l'impostazione del registro di sistema. 
+6. È possibile ripetere i passaggi 2-5 per modificare il valore per l' `DownloadConcurrency` impostazione del registro di sistema. 
     
     > [!IMPORTANT]
     > Dopo aver creato o modificato l' `DownloadConcurrency` impostazione del registro di sistema, assicurarsi di creare un nuovo processo di esportazione o di riavviare un processo di esportazione esistente per i risultati di ricerca o i dati che si desidera scaricare. Per ulteriori dettagli, vedere la sezione [ulteriori informazioni](#more-information) . 
@@ -62,9 +64,9 @@ Eseguire la procedura seguente nel computer che verrà utilizzato per scaricare 
 
 - La prima volta che si esegue il file con estensione reg creato in questa procedura viene creata una nuova chiave del registro di sistema. L' `DownloadConcurrency` impostazione del registro di sistema viene quindi modificata ogni volta che viene modificato e rieseguito il file. reg Edit. 
     
-- Lo strumento di esportazione di eDiscovery utilizza l' [utilità AzCopy di Azure](https://go.microsoft.com/fwlink/?linkid=849949) per scaricare i dati di ricerca dal centro sicurezza & Compliance o da Advanced eDiscovery. La configurazione `DownloadConcurrency` dell'impostazione del registro di sistema è simile all'utilizzo del parametro **/NC** quando si esegue l'utilità AzCopy. In questo modo, l' `"DownloadConcurrency=24"` impostazione del registro di sistema avrebbe lo stesso effetto dell'utilizzo `/NC:24` del valore del parametro con l'utilità AzCopy. 
+- Lo strumento di esportazione di eDiscovery utilizza l' [utilità AzCopy di Azure](https://go.microsoft.com/fwlink/?linkid=849949) per scaricare i dati di ricerca dal centro sicurezza & Compliance o da Advanced eDiscovery. La configurazione dell' `DownloadConcurrency` impostazione del registro di sistema è simile all'utilizzo del parametro **/NC** quando si esegue l'utilità AzCopy. In questo modo, l'impostazione del registro di sistema `"DownloadConcurrency=24"` avrebbe lo stesso effetto dell'utilizzo del valore del parametro `/NC:24` con l'utilità AzCopy. 
     
-- Se si interrompe un download di esportazione che è attualmente in corso e quindi lo si riavvia (tentando di scaricare di nuovo i risultati della ricerca), lo strumento di esportazione di eDiscovery tenterà di riprendere lo stesso download. Pertanto, se si avvia un download, lo si interrompe e quindi si modifica `DownloadConcurrency` l'impostazione del registro di sistema, il download probabilmente avrà esito negativo se lo si riavvia (facendo clic su **Scarica risultati esportati**). Ciò è dovuto al fatto che lo strumento di esportazione tenterà di riprendere il download precedente utilizzando le impostazioni non valide perché è stata modificata l'impostazione del registro di sistema.
+- Se si interrompe un download di esportazione che è attualmente in corso e quindi lo si riavvia (tentando di scaricare di nuovo i risultati della ricerca), lo strumento di esportazione di eDiscovery tenterà di riprendere lo stesso download. Pertanto, se si avvia un download, lo si interrompe e quindi si modifica l' `DownloadConcurrency` impostazione del registro di sistema, il download probabilmente avrà esito negativo se lo si riavvia (facendo clic su **Scarica risultati esportati**). Ciò è dovuto al fatto che lo strumento di esportazione tenterà di riprendere il download precedente utilizzando le impostazioni non valide perché è stata modificata l'impostazione del registro di sistema.
     
     Pertanto, dopo aver modificato l' `DownloadConcurrency` impostazione del registro di sistema, assicurarsi di riavviare il processo di esportazione (facendo clic su **Riavvia esportazione**) nel centro sicurezza & conformità. È quindi possibile scaricare i risultati esportati. Per ulteriori informazioni sull'esportazione di dati e risultati della ricerca, vedere:
     

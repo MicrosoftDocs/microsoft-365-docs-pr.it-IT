@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4a774613283c9639e36aa868538b338f60286246
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254209"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773717"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Portabilità e responsabilità dell'assicurazione malattia (HIPAA) & atti HITECH
 
@@ -59,7 +59,7 @@ Per informazioni su come il cloud Microsoft aiuta i clienti a supportare HIPAA e
 - Microsoft Stream
 - Microsoft Professional Services: premier e locale per Azure, Dynamics 365, Intune e per le medie e grandi imprese clienti di Microsoft 365 per le aziende
 - [Dynamics 365 e Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Servizio cloud di Power automatizzate (in precedenza Microsoft Flow) come servizio autonomo o come incluso in un piano o in una famiglia di prodotti di Office 365 o Dynamics 365
+- Servizio cloud Power Automate (in precedenza Microsoft Flow), autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Intune
 - [Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
@@ -109,9 +109,9 @@ Per assistere i clienti con questa attività, Microsoft ha pubblicato queste gui
 ## <a name="resources"></a>Risorse
 
 - [Regola omnibus HIPAA](https://aka.ms/HIPAA-omnibus) (la normativa finale-modifica delle regole HIPAA)
-- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 maggio 2016)
-- [Guida all'implementazione di Azure HIPAA](https://aka.ms/azure-hipaa-guide)
+- [Esempio di modello HIPAA HITRUST di Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

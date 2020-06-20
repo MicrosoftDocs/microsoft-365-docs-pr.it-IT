@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Per gli amministratori: informazioni su come abilitare l'archiviazione con espansione automatica, che consente agli utenti di disporre di spazio di archiviazione illimitato per le cassette postali di Exchange Online. È possibile abilitare l'archiviazione in espansione automatica per l'intera organizzazione o solo per utenti specifici."
-ms.openlocfilehash: cb63aa79365d17692dbedf1829f76fb91e965d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8d550e562e8226d586a9538f9f366e3283ad0437
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631711"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817825"
 ---
 # <a name="enable-unlimited-archiving--admin-help"></a>Abilitare l'archiviazione illimitata-guida per gli amministratori
 
 È possibile utilizzare la funzionalità di archiviazione per l'espansione automatica di Exchange Online per abilitare lo spazio di archiviazione illimitato per le cassette postali di archiviazione. Quando l'archiviazione in espansione automatica è attivata, lo spazio di archiviazione aggiuntivo viene aggiunto automaticamente alla cassetta postale di archiviazione di un utente quando si avvicina al limite di archiviazione. Il risultato è una capacità illimitata di archiviazione delle cassette postali. È possibile abilitare l'archiviazione in espansione automatica per tutti gli utenti dell'organizzazione o solo per i clienti specifici. Per ulteriori informazioni sull'archiviazione automatica, vedere [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-enable-auto-expanding-archiving"></a>Prima di abilitare l'archiviazione in espansione automatica
 
 - È necessario essere un amministratore globale dell'organizzazione o un membro del gruppo di ruoli Gestione organizzazione nell'organizzazione di Exchange Online per abilitare l'archiviazione in espansione automatica per l'intera organizzazione o per utenti specifici. In alternativa, è necessario essere membri di un gruppo di ruoli a cui è stato assegnato il ruolo destinatari di posta elettronica per abilitare l'archiviazione in espansione automatica per utenti specifici.
     
@@ -86,7 +87,7 @@ Per verificare che l'archiviazione con espansione automatica sia abilitata per l
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 ```
 
-Il valore `True` indica che l'archiviazione con espansione automatica è abilitata per l'organizzazione. 
+`True`Il valore indica che l'archiviazione con espansione automatica è abilitata per l'organizzazione. 
   
 Per verificare che l'archiviazione con espansione automatica sia abilitata per un utente specifico, eseguire il comando seguente in PowerShell di Exchange Online.
   
@@ -94,13 +95,13 @@ Per verificare che l'archiviazione con espansione automatica sia abilitata per u
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 ```
 
-Il valore `True` indica che l'archiviazione con espansione automatica è abilitata per l'utente. 
+`True`Il valore indica che l'archiviazione con espansione automatica è abilitata per l'utente. 
   
 Dopo aver abilitato l'archiviazione automatica, tenere presenti le considerazioni seguenti:
   
-- Se si esegue il comando **Set-OrganizationConfig-AutoExpandingArchive** per abilitare l'archiviazione con espansione automatica per la propria organizzazione, non è necessario eseguire **Enable-Mailbox-AutoExpandingArchive** su singole cassette postali. L'esecuzione del cmdlet **Set-OrganizationConfig** per abilitare l'archiviazione in espansione automatica per l'organizzazione non comporta la modifica della proprietà *AutoExpandingArchiveEnabled* nelle `True`cassette postali degli utenti.
+- Se si esegue il comando **Set-OrganizationConfig-AutoExpandingArchive** per abilitare l'archiviazione con espansione automatica per la propria organizzazione, non è necessario eseguire **Enable-Mailbox-AutoExpandingArchive** su singole cassette postali. L'esecuzione del cmdlet **Set-OrganizationConfig** per abilitare l'archiviazione in espansione automatica per l'organizzazione non comporta la modifica della proprietà *AutoExpandingArchiveEnabled* nelle cassette postali degli utenti `True` .
     
-- Analogamente, i valori per le proprietà delle cassette postali di *ArchiveQuota* e *ArchiveWarningQuota* non vengono modificati quando si Abilita l'archiviazione in espansione automatica. Infatti, quando si Abilita l'archiviazione automatica per una cassetta postale utente e la proprietà *AutoExpandingArchiveEnabled* è impostata su `True`, le proprietà *ArchiveQuota* e *ArchiveWarningQuota* vengono ignorate. Di seguito è riportato un esempio di queste proprietà della cassetta postale dopo che l'archiviazione in espansione automatica è abilitata per la cassetta postale di un utente. 
+- Analogamente, i valori per le proprietà delle cassette postali di *ArchiveQuota* e *ArchiveWarningQuota* non vengono modificati quando si Abilita l'archiviazione in espansione automatica. Infatti, quando si Abilita l'archiviazione automatica per una cassetta postale utente e la proprietà *AutoExpandingArchiveEnabled* è impostata su `True` , le proprietà *ArchiveQuota* e *ArchiveWarningQuota* vengono ignorate. Di seguito è riportato un esempio di queste proprietà della cassetta postale dopo che l'archiviazione in espansione automatica è abilitata per la cassetta postale di un utente. 
     
     ![Le proprietà ArchiveQuota e ArchiveWarningQuota vengono ignorate dopo l'abilitazione dell'archiviazione con espansione automatica](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 

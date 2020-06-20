@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: È possibile creare una cassetta postale inattiva in Microsoft 365 applicando un criterio di conservazione o mantenimento alla cassetta postale e quindi eliminando l'account utente corrispondente. Gli elementi di una cassetta postale inattiva vengono conservati per la durata del blocco o del criterio di conservazione applicato prima che venisse reso inattivo. Per eliminare definitivamente una cassetta postale inattiva, è sufficiente rimuovere il blocco o il criterio di conservazione.
-ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come conservare il contenuto delle cassette postali eliminate utilizzando la funzionalità cassette postali inattive in Office 365.
+ms.openlocfilehash: d479f6661c4d6e87263488ac75682683b4779380
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679100"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818015"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Creare e gestire le cassette postali inattive
 
@@ -32,7 +34,7 @@ Microsoft 365 rende possibile conservare il contenuto delle cassette postali eli
 > [!IMPORTANT]
 > Continuando a investire in modi diversi per conservare il contenuto delle cassette postali, si annuncia la prepensionamento delle archiviazioni sul posto nell'interfaccia di amministrazione di Exchange. Per creare una cassetta postale inattiva, è necessario utilizzare i criteri di conservazione per controversia legale. A partire dal 1 ° luglio 2020 non è possibile creare nuove archiviazioni sul posto in Exchange Online. Tuttavia, sarà comunque possibile modificare la durata del blocco di un blocco sul posto posto in una cassetta postale inattiva. Tuttavia, a partire dal 1 ° ottobre 2020, non sarà possibile modificare la durata del blocco. È possibile eliminare una cassetta postale inattiva solo rimuovendo il blocco sul posto. Le cassette postali inattive esistenti che si trovano sul blocco sul posto continueranno a essere conservate finché il blocco non viene rimosso. Per ulteriori informazioni sul pensionamento delle archiviazioni sul posto, vedere [pensionamento degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md).
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="preparations-before-creating-an-inactive-mailbox"></a>Preparazione prima della creazione di una cassetta postale inattiva
 
 - Per rendere inattiva una cassetta postale, deve essere assegnata una licenza di Exchange Online piano 2 in modo che sia possibile applicare un blocco per controversia legale o un criterio di conservazione alla cassetta postale prima che venga eliminata. Le licenze di Exchange Online piano 2 fanno parte di un abbonamento a Office 365 Enterprise E3 ed E5. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1 o Exchange Online Kiosk (che fa parte rispettivamente di una sottoscrizione di Office 365 E1 e F1), è necessario assegnarle una licenza di archiviazione Exchange Online distinta in modo che sia possibile applicare un'esenzione alla cassetta postale prima che venga eliminata. Per ulteriori informazioni, vedere [Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
@@ -66,7 +68,7 @@ Per le procedure dettagliate relative all'inserimento di una cassetta postale in
 Dopo che la cassetta postale è stata messa in attesa o che è stato applicato un criterio di conservazione, il passaggio successivo consiste nell'eliminare la cassetta postale. Il modo migliore per eliminare una cassetta postale consiste nell'eliminare l'account utente corrispondente nell'interfaccia di amministrazione di Microsoft 365. Per informazioni sull'eliminazione degli account utente, vedere [eliminare un utente dall'organizzazione](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
   
 > [!NOTE]
-> È inoltre possibile eliminare la cassetta postale utilizzando il cmdlet **Remove-Mailbox** in PowerShell di Exchange Online. Per ulteriori informazioni, vedere [Eliminare o ripristinare le cassette postali utente in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 
+> You can also delete the mailbox by using the **Remove-Mailbox** cmdlet in Exchange Online PowerShell. For more information, see [Delete or restore user mailboxes in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 
   
 
 ## <a name="view-a-list-of-inactive-mailboxes"></a>Visualizzazione di un elenco di cassette postali inattive

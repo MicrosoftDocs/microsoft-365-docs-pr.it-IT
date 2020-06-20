@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Informazioni su come selezionare i documenti da un set di revisione e utilizzarli singolarmente in un altro set in un caso di eDiscovery avanzato.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 433e59629ec40dbdf66b8daf6437ce84e41a3a33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034680"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818603"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Aggiungere dati a un set di revisione da un altro set di Revisione
 
@@ -30,9 +32,9 @@ In alcuni casi, potrebbe essere necessario selezionare i documenti da un set di 
 
 Seguire il flusso di lavoro in questo articolo per aggiungere contenuto da un set di revisione a un altro.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="create-a-review-set"></a>Creare un set di Revisione
 
-Prima di iniziare, è necessario creare un nuovo set di revisione a cui aggiungere i dati.  È possibile aggiungere un nuovo set di revisione nella scheda **revisione dei set** del caso. Per ulteriori informazioni, vedere [creare un set di revisione](managing-review-sets.md#create-a-review-set).
+Prima di iniziare, è necessario creare un set di revisione a cui aggiungere i dati.  È possibile aggiungere un nuovo set di revisione nella scheda **revisione dei set** del caso. Per ulteriori informazioni, vedere [creare un set di revisione](managing-review-sets.md#create-a-review-set).
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>Passaggio 1: identificare il contenuto da aggiungere a un altro set di Revisione
 

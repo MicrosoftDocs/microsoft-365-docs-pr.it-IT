@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
-description: È possibile eseguire la duplicazione dei risultati di ricerca di eDiscovery esportati in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio in cassette postali diverse.
-ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come eliminare i risultati della ricerca di eDiscovery duplicati in modo che venga esportata solo una copia di un messaggio di posta elettronica.
+ms.openlocfilehash: 046ef1e40e293e511672d5a95c6f5248b49d13a2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166047"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817915"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>De-duplicazione nei risultati della ricerca di eDiscovery
 
@@ -41,17 +43,17 @@ gli strumenti di eDiscovery utilizzano una combinazione delle seguenti propriet�
 
 - **BodyTagInfo** -questa è una proprietà di archivio di Exchange interna. Il valore di questa proprietà viene calcolato controllando vari attributi nel corpo del messaggio. Questa proprietà viene utilizzata per identificare le differenze nel corpo dei messaggi. 
 
-Durante il processo di esportazione di eDiscovery, queste tre proprietà vengono confrontate per ogni messaggio che corrisponde ai criteri di ricerca. Se queste proprietà sono identiche per due (o più) messaggi, i messaggi vengono considerati duplicati e il risultato è che verrà esportata solo una copia del messaggio se la deduplicazione è abilitata. Il messaggio esportato è noto come "elemento di origine". Le informazioni sui messaggi duplicati sono incluse nei report **results. csv** e **manifest. XML** inclusi nei risultati della ricerca esportati. Nel file **results. csv** viene identificato un messaggio duplicato che presenta un valore nella colonna **Duplica per elemento** . Il valore di questa colonna corrisponde al valore nella colonna **identità elemento** per il messaggio esportato. 
+Durante il processo di esportazione di eDiscovery, queste tre proprietà vengono confrontate per ogni messaggio che corrisponde ai criteri di ricerca. Se queste proprietà sono identiche per due (o più) messaggi, i messaggi vengono considerati duplicati e il risultato è che verrà esportata solo una copia del messaggio se la deduplicazione è abilitata. Il messaggio esportato è noto come "elemento di origine". Le informazioni sui messaggi duplicati sono incluse nei report di **Results.csv** e **Manifest.xml** inclusi nei risultati della ricerca esportati. Nel file di **Results.csv** , viene identificato un messaggio duplicato con un valore nella colonna **Duplica per elemento** . Il valore di questa colonna corrisponde al valore nella colonna **identità elemento** per il messaggio esportato. 
   
-Nella grafica seguente viene illustrato il modo in cui i messaggi duplicati vengono visualizzati nei report **results. csv** e **manifest. XML** esportati con i risultati della ricerca. Questi rapporti non includono le proprietà di posta elettronica descritte in precedenza, che vengono utilizzate nell'algoritmo di deduplicazione. Al contrario, i report includono la proprietà dell' **identità dell'elemento** assegnata agli elementi dall'archivio di Exchange. 
+Nella grafica seguente viene mostrato il modo in cui i messaggi duplicati vengono visualizzati nel **Results.csv** e **Manifest.xml** rapporti esportati con i risultati della ricerca. Questi rapporti non includono le proprietà di posta elettronica descritte in precedenza, che vengono utilizzate nell'algoritmo di deduplicazione. Al contrario, i report includono la proprietà dell' **identità dell'elemento** assegnata agli elementi dall'archivio di Exchange. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Report results. csv (visualizzato in Excel)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Report di Results.csv (visualizzato in Excel)
   
-![Visualizzazione delle informazioni sugli elementi duplicati nel report results. csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Visualizzazione delle informazioni sugli elementi duplicati nel report di Results.csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Report manifest. XML (visualizzato in Excel)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Report di Manifest.xml (visualizzato in Excel)
   
-![Visualizzazione delle informazioni sugli elementi duplicati nel report manifest. XML](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Visualizzazione delle informazioni sugli elementi duplicati nel report di Manifest.xml](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 Inoltre, le altre proprietà dei messaggi duplicati sono incluse nei report di esportazione. Questo include la cassetta postale in cui si trova il messaggio duplicato, se il messaggio è stato inviato a un gruppo di distribuzione e se il messaggio è stato CC ' d o Ccn ' s a un altro utente.
   

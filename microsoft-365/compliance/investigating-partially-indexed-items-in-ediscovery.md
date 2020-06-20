@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: Gli elementi parzialmente indicizzati (denominati anche elementi non indicizzati) sono elementi e documenti delle cassette postali di Exchange nei siti di SharePoint e OneDrive che per qualche motivo non sono stati completamente indicizzati per la ricerca di contenuto. In questo articolo, è possibile capire perché gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati, identificare gli errori di ricerca per gli elementi parzialmente indicizzati e utilizzare uno script di PowerShell per determinare l'esposizione dell'organizzazione agli elementi di posta elettronica parzialmente indicizzati.
-ms.openlocfilehash: 0053ec5b03f5d32af1a39be94474c05f74ec3234
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come gestire gli elementi parzialmente indicizzati (o non indicizzati) da Exchange, SharePoint e OneDrive all'interno dell'organizzazione.
+ms.openlocfilehash: ed85a9351aad340c5840b6b9b9ea6e55833ed527
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942129"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817525"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Analisi degli elementi parzialmente indicizzati in eDiscovery
 
@@ -80,9 +82,9 @@ Nei casi in cui è necessario esaminare parzialmente gli elementi per convalidar
   
 ![Scegliere la seconda o la terza opzione per esportare gli elementi parzialmente indicizzati](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
-Quando si esportano i risultati della ricerca del contenuto o un rapporto di ricerca contenuto utilizzando una di queste opzioni, l'esportazione include un report denominato unindexed Items. csv. Questo rapporto include la maggior parte delle stesse informazioni del file ResultsLog. csv. Tuttavia, il file unindexed Items. csv include anche due campi correlati agli elementi parzialmente indicizzati: **tag di errore** e proprietà di **errore**. Questi campi contengono informazioni sull'errore di indicizzazione per ogni elemento parzialmente indicizzato. L'utilizzo delle informazioni contenute in questi due campi consente di determinare se l'errore di indicizzazione per un determinato impatto dell'indagine. In caso affermativo, è possibile eseguire una ricerca di contenuto mirato e recuperare ed esportare messaggi di posta elettronica specifici e documenti di SharePoint o OneDrive in modo da poterli esaminare per determinare se sono rilevanti per la propria indagine. Per istruzioni dettagliate, vedere [preparare un file CSV per una ricerca di contenuto mirata in Office 365](csv-file-for-an-id-list-content-search.md).
+Quando si esportano i risultati della ricerca del contenuto o un rapporto di ricerca contenuto utilizzando una di queste opzioni, l'esportazione include un report denominato Items.csv non indicizzato. Questo rapporto include la maggior parte delle stesse informazioni del file di ResultsLog.csv; Tuttavia, il file di Items.csv non indicizzato include anche due campi correlati agli elementi parzialmente indicizzati: **tag di errore** e proprietà di **errore**. Questi campi contengono informazioni sull'errore di indicizzazione per ogni elemento parzialmente indicizzato. L'utilizzo delle informazioni contenute in questi due campi consente di determinare se l'errore di indicizzazione per un determinato impatto dell'indagine. In caso affermativo, è possibile eseguire una ricerca di contenuto mirato e recuperare ed esportare messaggi di posta elettronica specifici e documenti di SharePoint o OneDrive in modo da poterli esaminare per determinare se sono rilevanti per la propria indagine. Per istruzioni dettagliate, vedere [preparare un file CSV per una ricerca di contenuto mirata in Office 365](csv-file-for-an-id-list-content-search.md).
   
- **Nota:** Il file unindexed Items. csv contiene anche campi denominati **tipo di errore** e **messaggio di errore**. Si tratta di campi legacy che contengono informazioni simili alle informazioni nei campi dei **tag di errore** e delle **proprietà di errore** , ma con informazioni meno dettagliate. È possibile ignorare tali campi legacy. 
+ **Nota:** Il file di Items.csv non indicizzato contiene anche campi denominati **tipo di errore** e **messaggio di errore**. Si tratta di campi legacy che contengono informazioni simili alle informazioni nei campi dei **tag di errore** e delle **proprietà di errore** , ma con informazioni meno dettagliate. È possibile ignorare tali campi legacy. 
   
 ## <a name="errors-related-to-partially-indexed-items"></a>Errori relativi agli elementi parzialmente indicizzati
 
@@ -93,7 +95,7 @@ I tag di errore sono costituiti da due parti di informazioni, l'errore e il tipo
 ```
 
    
- `parseroutputsize`è l'errore ed `xls` è il tipo di file del file su cui si è verificato l'errore. Nei casi in cui il tipo di file non è stato riconosciuto o il tipo di file non è stato applicato all'errore, `noformat` verrà visualizzato il valore al posto del tipo di file. 
+ `parseroutputsize`è l'errore ed `xls` è il tipo di file del file su cui si è verificato l'errore. Nei casi in cui il tipo di file non è stato riconosciuto o il tipo di file non è stato applicato all'errore, verrà visualizzato il valore `noformat` al posto del tipo di file. 
   
 Di seguito è riportato un elenco di errori di indicizzazione e una descrizione della possibile causa dell'errore.
   
@@ -116,13 +118,13 @@ Di seguito è riportato un elenco di errori di indicizzazione e una descrizione 
 | `retrieverrms` <br/> |La funzione di recupero contenuto non è riuscita a decodificare un messaggio protetto da RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Nel documento sono state identificate troppe parole durante l'indicizzazione. L'elaborazione della proprietà si è interrotta al raggiungimento del limite e la proprietà è troncata.  <br/> |
    
-Nei campi di errore vengono descritti i campi che sono stati modificati dall'errore di elaborazione elencato nel campo tag error. Se si esegue la ricerca di una proprietà `subject` `participants`, ad esempio, gli errori nel corpo del messaggio non influiscono sui risultati della ricerca. Questo può essere utile quando si determinano esattamente gli elementi parzialmente indicizzati che potrebbe essere necessario approfondire.
+Nei campi di errore vengono descritti i campi che sono stati modificati dall'errore di elaborazione elencato nel campo tag error. Se si esegue la ricerca di una proprietà `subject` , ad esempio `participants` , gli errori nel corpo del messaggio non influiscono sui risultati della ricerca. Questo può essere utile quando si determinano esattamente gli elementi parzialmente indicizzati che potrebbe essere necessario approfondire.
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Utilizzo di uno script di PowerShell per determinare l'esposizione dell'organizzazione a elementi di posta elettronica parzialmente indicizzati
 
 Nei passaggi seguenti viene illustrato come eseguire uno script di PowerShell che consente di cercare tutti gli elementi in tutte le cassette postali di Exchange e quindi di generare un report sul rapporto tra l'organizzazione e gli elementi di posta elettronica parzialmente indicizzati (conta e per dimensione) e visualizza il numero di elementi (e il relativo tipo di file) per ogni errore di indicizzazione che si verifica. Utilizzare le descrizioni dei tag di errore nella sezione precedente per identificare l'errore di indicizzazione.
   
-1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `PartiallyIndexedItems.ps1`.
+1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `PartiallyIndexedItems.ps1` .
 
 ```powershell
   write-host "**************************************************"

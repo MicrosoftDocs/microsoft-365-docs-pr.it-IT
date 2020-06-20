@@ -13,16 +13,15 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
-ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5bd922bee0808262b297245340a2dd641f44018f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232009"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817535"
 ---
 # <a name="information-barriers"></a>Barriere informative
-
-## <a name="overview"></a>Panoramica
 
 I servizi cloud Microsoft includono potenti funzionalità di comunicazione e collaborazione. Tuttavia, si supponga di voler limitare le comunicazioni tra due gruppi per evitare che si verifichi un conflitto di interessi nell'organizzazione. In alternativa, è possibile limitare le comunicazioni tra alcune persone all'interno dell'organizzazione per salvaguardare le informazioni interne. Microsoft 365 consente la comunicazione e la collaborazione tra gruppi e organizzazioni, quindi è possibile limitare le comunicazioni tra i gruppi di utenti specifici, se necessario. Con barriere informative, è possibile! 
 

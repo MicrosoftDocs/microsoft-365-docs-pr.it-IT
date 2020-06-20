@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare la chiave del cliente per Microsoft 365 per Exchange Online, Skype for business, SharePoint Online, OneDrive for business e i file teams.
-ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 158096216974691bf0caff93a1c95db54b92f6b1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717263"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44810992"
 ---
 # <a name="set-up-customer-key"></a>Configurare la chiave del cliente
 
@@ -448,7 +448,15 @@ Assegnare la funzionalità Protezione esecuzione programmi a una cassetta postal
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Dove *MailboxIdParameter* specifica una cassetta postale. Per ulteriori informazioni sul cmdlet Set-Mailbox, vedere [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps).
+Dove *MailboxIdParameter* specifica una cassetta postale. Per ulteriori informazioni sul cmdlet Set-Mailbox, vedere [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+
+Per le [cassette postali locali che usano Outlook per iOS e Android con l'autenticazione moderna ibrida](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth), i dati delle cassette postali locali sincronizzati nel tenant di Exchange Online possono essere assegnati tramite il cmdlet Set-MailUser. 
+
+```powershell
+Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
+```
+
+Dove *MailUserIdParameter* specifica un utente di posta elettronica (noto anche come utente abilitato alla posta elettronica). Per ulteriori informazioni sul cmdlet Set-MailUser, vedere [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
   
 ### <a name="validate-mailbox-encryption"></a>Convalidare la crittografia della cassetta postale
 

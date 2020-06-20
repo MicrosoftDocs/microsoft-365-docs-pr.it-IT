@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
-description: 'Utilizzare la nuova caratteristica Intelligent Import nel servizio di importazione di Office 365 per filtrare gli elementi che vengono effettivamente importati nelle cassette postali di destinazione. Intelligent Import consente di decidere in modo proattivo quali dati importare e cosa lasciarsi alle spalle. Intelligent Import fornisce anche informazioni dettagliate sui dati che si stanno importando in Office 365. '
-ms.openlocfilehash: 5ab276af0ee0859657074657f7b21d202947b98a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom: seo-marvel-apr2020
+description: Informazioni su come filtrare i dati utilizzando la caratteristica Intelligent Import nel servizio di importazione di Office 365 quando si importano i file PST in Office 365.
+ms.openlocfilehash: d511c1277104a27076116fafcb4b71bc851baaca
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942209"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817725"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrare i dati durante l'importazione dei file PST
 
@@ -47,7 +48,7 @@ Nell'immagine seguente viene illustrato il processo di importazione intelligente
   
 ![Processo di importazione intelligente in Office 365](../media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="create-a-pst-import-job"></a>Creare un processo di importazione PST
 
 - Nella procedura descritta in questo argomento si presuppone che sia stato creato un processo di importazione PST nel servizio di importazione di Office 365 tramite caricamento di rete o unità di trasporto. Per istruzioni dettagliate, vedere uno degli argomenti seguenti:
     
@@ -55,7 +56,7 @@ Nell'immagine seguente viene illustrato il processo di importazione intelligente
     
   - [Usare la spedizione unità per importare file PST in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- Dopo aver creato un processo di importazione tramite il caricamento di rete, lo stato del processo di importazione nella pagina Importa nel centro sicurezza & conformità è impostato su **analisi in corso**, il che significa che Microsoft 365 analizza i dati nei file PST caricati. ![Fare **clic su Aggiorna aggiornamento**](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) per aggiornare lo stato del processo di importazione. 
+- Dopo aver creato un processo di importazione tramite il caricamento di rete, lo stato del processo di importazione nella pagina Importa nel centro sicurezza & conformità è impostato su **analisi in corso**, il che significa che Microsoft 365 analizza i dati nei file PST caricati. Fare **clic su Aggiorna aggiornamento** ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) per aggiornare lo stato del processo di importazione. 
     
 - Per i processi di importazione delle unità di trasporto, i dati verranno analizzati da Microsoft 365 dopo che il personale del datacenter Microsoft riceverà il disco rigido e caricherà i file PST nell'area di archiviazione di Azure per l'organizzazione.
   
@@ -101,7 +102,7 @@ Dopo aver creato un processo di importazione PST, attenersi alla procedura segue
     
       - **Tipo** : in questa sezione vengono illustrati tutti i tipi di messaggi trovati nei file PST per il processo di importazione. È possibile deselezionare una casella accanto a un tipo di messaggio che si desidera escludere. Si noti che non è possibile escludere l'altro tipo di messaggio. Per un elenco degli elementi delle cassette postali inclusi nell'altra categoria, vedere la sezione [ulteriori informazioni](#more-information) . 
     
-      - **Utenti** : è possibile escludere i messaggi inviati o ricevuti da persone specifiche. Per escludere le persone che vengono visualizzate nel campo da: campo, a: oppure il campo CC: dei messaggi, fare clic su **Escludi utenti** accanto a quel tipo di destinatario. Digitare l'indirizzo di posta elettronica (indirizzo SMTP) della persona, **Add**![fare clic su](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) Aggiungi nuova icona per aggiungerli all'elenco di utenti esclusi per tale tipo di destinatario e quindi fare clic su **Salva** per salvare l'elenco di utenti esclusi. 
+      - **Utenti** : è possibile escludere i messaggi inviati o ricevuti da persone specifiche. Per escludere le persone che vengono visualizzate nel campo da: campo, a: oppure il campo CC: dei messaggi, fare clic su **Escludi utenti** accanto a quel tipo di destinatario. Digitare l'indirizzo di posta elettronica (indirizzo SMTP) della persona, fare clic su **Aggiungi** ![ nuova icona ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) per aggiungerli all'elenco di utenti esclusi per tale tipo di destinatario e quindi fare clic su **Salva** per salvare l'elenco di utenti esclusi. 
     
         > [!NOTE]
         > Microsoft 365 non Visualizza informazioni dettagliate risultante dall'impostazione del filtro **persone** . Tuttavia, se si imposta questo filtro per escludere i messaggi inviati o ricevuti da persone specifiche, tali messaggi verranno esclusi durante il processo di importazione effettivo. 
@@ -124,7 +125,7 @@ Dopo aver creato un processo di importazione PST, attenersi alla procedura segue
     
     b. Nella pagina **Importa dati in Office 365** fare clic su **Importa dati** per avviare l'importazione. Si noti che la quantità totale di dati che verranno importati viene visualizzata. 
     
-6. Nella pagina **importazione file PST** **fare clic su Aggiorna** ![aggiornamento](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). Lo stato del processo di importazione viene visualizzato nella colonna **stato** . 
+6. Nella pagina **importazione file PST** **fare clic su Aggiorna** ![ aggiornamento ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) . Lo stato del processo di importazione viene visualizzato nella colonna **stato** . 
     
 7. Fare clic sul pulsante Importa il processo per visualizzare informazioni più dettagliate, ad esempio lo stato di ogni file PST e le impostazioni di filtro configurate.
 
@@ -138,8 +139,8 @@ Dopo aver creato un processo di importazione PST, attenersi alla procedura segue
     |**ID classe messaggio**|**Elementi della cassetta postale che utilizzano questa classe messaggio**|
     |:-----|:-----|
     |IPM. Attività  <br/> |Voci del diario  <br/> |
-    |IPM. Documento  <br/> |Documenti e file (non allegati a un messaggio di posta elettronica)  <br/> |
-    |IPM. File  <br/> |(uguale a IPM. Documento  <br/> |
+    |IPM.Document  <br/> |Documenti e file (non allegati a un messaggio di posta elettronica)  <br/> |
+    |IPM. File  <br/> |(uguale a IPM.Document)  <br/> |
     |IPM. Note. IMC. Notification  <br/> |Report inviati da Internet mail Connect, che è il gateway di Exchange Server per Internet  <br/> |
     |IPM. Note. Microsoft. fax  <br/> |Messaggi fax  <br/> |
     |IPM. Note. Rules. OOF. template. Microsoft  <br/> |Messaggi di risposta automatica fuori sede  <br/> |

@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Assegnare le autorizzazioni necessarie per eseguire le attività relative a eDiscovery utilizzando il Centro sicurezza & Compliance.
-ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b5c2cf20d3f417429c6e3793c23c299b860b28fa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411033"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818435"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance
 
@@ -45,7 +46,7 @@ Il gruppo di ruoli principale di eDiscovery nel centro sicurezza & conformità �
 > [!NOTE]
 > Per analizzare i dati di un utente tramite Advanced eDiscovery, è necessario che all'utente (custode dei dati) venga assegnata una licenza di Office 365 E5 o Microsoft 365 E5. In alternativa, gli utenti che dispongono di una licenza di Office 365 E1 o di Office 365 o Microsoft 365 E3 possono essere assegnati a una licenza Microsoft 365 E5 o a Microsoft 365 eDiscovery e di controllo del componente aggiuntivo. Gli amministratori, i responsabili della conformità o il personale legale assegnato ai casi come membri e utilizzano Advanced eDiscovery per raccogliere, visualizzare e analizzare i dati non hanno bisogno di una licenza E5. Per ulteriori informazioni sulle licenze avanzate di eDiscovery, vedere [Introduzione a Advanced eDiscovery](get-started-with-advanced-ediscovery.md).
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="confirm-your-roles"></a>Confermare i ruoli
 
 - È necessario essere membri del gruppo di ruoli Gestione organizzazione o essere assegnati al ruolo di gestione ruolo per assegnare le autorizzazioni di eDiscovery nel centro sicurezza & conformità.
     

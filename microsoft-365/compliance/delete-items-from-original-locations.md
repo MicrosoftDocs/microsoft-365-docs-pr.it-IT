@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & conformità per eliminare gli elementi dai percorsi originali.
-ms.openlocfilehash: 4ad450fbbfac838ba536b19ec54eb83a4fb5d597
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630523"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817885"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminare gli elementi dal percorso originale (anteprima)
 
@@ -31,7 +32,7 @@ La caratteristica per eliminare gli elementi dal percorso originale è in antepr
 
 Se si utilizzano indagini sui dati, è possibile eliminare gli elementi dai percorsi originali. Questo significa che è possibile eliminare gli elementi da cassette postali di Exchange, siti di SharePoint e account di OneDrive nell'organizzazione. Poiché gli elementi sono stati raccolti come prova, sono presenti copie degli elementi conservati nel set di prove per ulteriori indagini o come riferimento.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-delete-items"></a>Prima di eliminare gli elementi
 
 - Per eliminare gli elementi, è necessario assegnare il ruolo di **ricerca ed eliminazione** nel centro sicurezza & Compliance. Questo ruolo viene assegnato per impostazione predefinita al gruppo di ruoli investigatore dati incorporato.
 

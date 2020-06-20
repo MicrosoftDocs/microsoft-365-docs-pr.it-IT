@@ -14,13 +14,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Microsoft 365. Tra questi tipi di esenzioni sono inclusi il blocco per controversia legale, eDiscovery holds e Microsoft 365 Retention Policies. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello dell'organizzazione.
-ms.openlocfilehash: 331fd37f48e42666ceb33a2a751b7d7a7a945e4b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Exchange online in Microsoft 365.
+ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352315"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817605"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -236,9 +238,9 @@ Tenere presenti le considerazioni seguenti quando si gestisce una cassetta posta
 
 Dopo aver identificato le esenzioni applicate a una cassetta postale, è possibile eseguire attività quali la modifica della durata del blocco, la rimozione temporanea o permanente del blocco o l'esclusione di una cassetta postale inattiva da un criterio di conservazione Microsoft 365. Per ulteriori informazioni sull'esecuzione di attività correlate alle esenzioni, vedere uno dei seguenti argomenti:
 
-- Eseguire il comando [ \<>cassetta postale dell'utente set-RetentionCompliancePolicy-AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps) in sicurezza & Compliance Center PowerShell per escludere una cassetta postale da un criterio di conservazione Microsoft 365 a livello di organizzazione. Questo comando può essere utilizzato solo per i criteri di conservazione in cui il valore della proprietà *ExchangeLocation* è uguale a `All` .
+- Eseguire il comando [set-RetentionCompliancePolicy- \<user mailbox> AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps) in PowerShell per la sicurezza & Compliance Center per escludere una cassetta postale da un criterio di conservazione Microsoft 365 a livello di organizzazione. Questo comando può essere utilizzato solo per i criteri di conservazione in cui il valore della proprietà *ExchangeLocation* è uguale a `All` .
 
-- Eseguire il [GUID di blocco Set-Mailbox-ExcludeFromOrgHolds \< senza prefisso o suffisso>](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps) comando in PowerShell di Exchange Online per escludere una cassetta postale inattiva da un criterio di conservazione Microsoft 365 a livello di organizzazione.
+- Eseguire il comando [Set-Mailbox- \<hold GUID without prefix or suffix> ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps) in Exchange Online PowerShell per escludere una cassetta postale inattiva da un criterio di conservazione Microsoft 365 a livello di organizzazione.
 
 - [Cambiare la durata del blocco per una cassetta postale inattiva](change-the-hold-duration-for-an-inactive-mailbox.md)
 

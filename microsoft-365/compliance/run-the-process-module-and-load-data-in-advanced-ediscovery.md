@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Informazioni su come utilizzare il centro &amp; sicurezza e conformità per accedere a Advanced eDiscovery ed eseguire il modulo di processo per un caso.  '
-ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Informazioni su come utilizzare il &amp; Centro sicurezza e conformità per accedere a Advanced eDiscovery ed eseguire il modulo di processo per un caso.  '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626472"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818905"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Eseguire il modulo di processo e caricare i dati in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In questa sezione viene descritta la funzionalità del modulo di elaborazione di eDiscovery avanzato. 
   
@@ -41,13 +42,13 @@ Advanced eDiscovery fornisce i valori dei metadati di sistema, ad esempio raggru
   
 Eseguire la procedura seguente per eseguire il processo.
   
-1. [Aprire il centro &amp; sicurezza e conformità](go-to-the-securitycompliance-center.md) . 
+1. [Aprire la sicurezza &amp; Centro conformità](go-to-the-securitycompliance-center.md) . 
     
 2. Andare a **Search &amp; Investigation** \> **eDiscovery** e quindi fare clic su **go to Advanced eDiscovery**.
     
 3. In Advanced eDiscovery selezionare il caso appropriato nella pagina **casi** visualizzati e fare clic su **Vai a maiuscole/minuscole**.
     
-4. In **preparare** \> l' **installazione**del **processo** \> selezionare un contenitore dall'elenco dei contenitori disponibili.
+4. In **preparare** \> **Process** \> l' **installazione**del processo selezionare un contenitore dall'elenco dei contenitori disponibili.
     
     ![Fare clic su processo per aggiungere i risultati della ricerca al caso](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
@@ -77,11 +78,11 @@ Eseguire la procedura seguente per eseguire il processo.
     
 6. Per iniziare, fare clic su **elabora**. Al termine, vengono visualizzati i risultati del processo.
     
-7. Optional Se è necessario assegnare origini dati a un determinato custode, è possibile aggiungere e modificare i nomi dei depositari nei **depositari** \> **gestiscono** **e assegnano**i depositari nei **depositari** \> . 
+7. Optional Se è necessario assegnare origini dati a un determinato custode, è possibile aggiungere e modificare i nomi dei depositari nei **depositari** che \> **gestiscono** e assegnano i depositari nei **depositari** \> **Assign**. 
     
 Se si aggiunge il caso, è possibile procedere di nuovo.
   
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   

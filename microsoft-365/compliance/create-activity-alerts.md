@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Aggiungere e gestire gli avvisi di attività nel centro sicurezza & conformità in modo che Microsoft 365 invierà notifiche di posta elettronica quando gli utenti eseguono attività specifiche
-ms.openlocfilehash: 16c40ebeb44ecb1c54a1715a936436b3427a7d54
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ac78c57d368e27c43cc5f25733d49fad5fe4374a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035808"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818025"
 ---
 # <a name="create-activity-alerts"></a>Creare avvisi attività
 
@@ -34,11 +34,11 @@ ms.locfileid: "44035808"
 > [!NOTE]
 > Gli avvisi di attività sono deprecati. Si consiglia di iniziare a utilizzare i criteri di avviso nel centro sicurezza e conformità invece di creare nuovi avvisi attività. I criteri di avviso offrono funzionalità aggiuntive, come la possibilità di creare un criterio di avviso che attiva un avviso quando un utente esegue un'attività specificata e visualizza avvisi nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [criteri di avviso](alert-policies.md).
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="confirm-roles-and-configure-audit-logging"></a>Confermare i ruoli e configurare la registrazione di controllo
 
 - Per gestire gli avvisi di attività, è necessario che il ruolo Configurazione organizzazione sia assegnato al centro sicurezza & conformità. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli amministratore conformità e gestione organizzazione. Per ulteriori informazioni sull'aggiunta di membri ai gruppi di ruoli, vedere [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
-- L'utente (o un altro amministratore) deve prima attivare la registrazione di controllo per l'organizzazione prima di iniziare a utilizzare gli avvisi attività. A tale scopo, è sufficiente fare clic su **Avvia registrazione attività utente e amministratore** nella pagina **avvisi attività** . Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione. È inoltre possibile abilitare il controllo nella pagina di **ricerca del registro di controllo** nel centro sicurezza & Compliance (andare alla ricerca nel **Registro di controllo**di **ricerca** \> ). È necessario eseguire questa operazione una sola volta per l'organizzazione.
+- L'utente (o un altro amministratore) deve prima attivare la registrazione di controllo per l'organizzazione prima di iniziare a utilizzare gli avvisi attività. A tale scopo, è sufficiente fare clic su **Avvia registrazione attività utente e amministratore** nella pagina **avvisi attività** . Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione. È inoltre possibile abilitare il controllo nella pagina di **ricerca del registro di controllo** nel centro sicurezza & Compliance (andare alla ricerca nel registro di controllo di **ricerca** \> **Audit log search**). È necessario eseguire questa operazione una sola volta per l'organizzazione.
   
 - È possibile creare avvisi per le stesse attività di cui è possibile eseguire la ricerca nel registro di controllo. Vedere la sezione [ulteriori informazioni](#more-information) per un elenco di scenari comuni (e l'attività specifica da monitorare) per la quale è possibile creare avvisi. 
     
@@ -50,7 +50,7 @@ ms.locfileid: "44035808"
     
 2. Accedere usando l'account di lavoro o della scuola.
     
-3. Nella pagina **avvisi attività** fare clic ![su Aggiungi icona](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuovo**.
+3. Nella pagina **avvisi attività** fare clic su ![ Aggiungi icona ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuovo**.
 
    Viene visualizzata la pagina del riquadro a comparsa per creare un avviso di attività.
 
@@ -85,7 +85,7 @@ ms.locfileid: "44035808"
 
 È possibile disattivare un avviso di attività in modo che non venga inviata una notifica di posta elettronica. Dopo aver disattivato l'avviso attività, viene comunque visualizzato nell'elenco degli avvisi attività per l'organizzazione ed è comunque possibile visualizzarne le proprietà.
   
-1. Vai a Vai a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
+1. Vai a Vai a [https://protection.office.com/managealerts](https://protection.office.com/managealerts) .
     
 2. Accedere usando l'account aziendale o dell'istituto di istruzione.
     

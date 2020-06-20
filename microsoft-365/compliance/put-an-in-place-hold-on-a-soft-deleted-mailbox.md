@@ -11,13 +11,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
-description: Informazioni su come creare un blocco sul posto per una cassetta postale eliminata temporaneamente per renderla inattiva e conservarne il contenuto. È quindi possibile utilizzare gli strumenti di Microsoft eDiscovery per cercare la cassetta postale inattiva.
-ms.openlocfilehash: 1986a4bfca72c192b268984b7d2f49eb2e88134a
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come creare un blocco sul posto per una cassetta postale eliminata temporaneamente per renderla inattiva e conservarne il contenuto.
+ms.openlocfilehash: 4dcd6539519675094da9a05c7701b9f8511ce9a1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978156"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818865"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Inserire un blocco sul posto di una cassetta postale eliminata in modo reversibile in Exchange Online
 
@@ -31,7 +33,7 @@ Potrebbe verificarsi una situazione in cui una persona ha lasciato la propria or
 > [!NOTE]
 > In Exchange Online, una cassetta postale con eliminazione temporanea è una cassetta postale che è stata eliminata, ma che può essere recuperata entro un periodo di conservazione specifico. Il periodo di conservazione delle cassette postali con eliminazione temporanea in Exchange Online è pari a 30 giorni. Questo significa che la cassetta postale può essere recuperata (o resa una cassetta postale inattiva) entro 30 giorni dall'eliminazione. Dopo 30 giorni, una cassetta postale eliminata temporaneamente è contrassegnata per l'eliminazione definitiva e non può essere recuperata o resa inattiva. 
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="requirements-for-in-place-holds"></a>Requisiti per le archiviazioni sul posto
 
 - È necessario utilizzare il cmdlet **New-MailboxSearch** in Windows PowerShell per attivare il blocco sul posto di una cassetta postale eliminata temporaneamente. Non è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o il centro eDiscovery in SharePoint Online. 
 

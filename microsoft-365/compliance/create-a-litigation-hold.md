@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: Informazioni su come inserire una cassetta postale per il blocco per controversia legale, mantenendo tutto il contenuto della cassetta postale durante un'indagine.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9c62dfcd9e4cf1e3cc75e029b250c7abe80de6df
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351051"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818045"
 ---
 # <a name="create-a-litigation-hold"></a>Creare un blocco per controversia legale
 
@@ -35,7 +37,7 @@ Ecco cosa succede quando si crea un blocco per controversia legale.
     
 - Gli elementi nelle cassette postali primarie e di archiviazione dell'utente vengono conservati
     
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="assign-an-exchange-online-plan-2-license"></a>Assegnare una licenza di Exchange Online piano 2
 
 - Per attivare il blocco per controversia legale in una cassetta postale di Exchange Online, deve essere assegnata una licenza di Exchange Online piano 2. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1, è necessario assegnarle una licenza di archiviazione Exchange Online separata per inserirla in blocco.
     

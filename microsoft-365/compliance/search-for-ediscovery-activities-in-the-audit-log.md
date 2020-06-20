@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Informazioni su come eseguire la ricerca nel registro di controllo per gli eventi registrati quando gli amministratori di conformità eseguono le attività di ricerca contenuto e di eDiscovery nel centro sicurezza & Compliance.
-ms.openlocfilehash: e7ed3ddf16d22750449d3211d96800334676e519
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+description: Informazioni sugli eventi che vengono registrati quando gli utenti assegnati a eDiscovery Permissions eseguono la ricerca del contenuto e le attività di base di eDiscovery nel centro sicurezza & Compliance.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 671fdebd75dfdaaf09deebf320b9fe4cfab0ca1c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726517"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818875"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Cercare le attività di eDiscovery nel log di controllo
 

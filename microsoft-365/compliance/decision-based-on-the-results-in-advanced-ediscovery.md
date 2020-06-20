@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 'Informazioni su come la scheda decidere in Advanced eDiscovery fornisce dati che consentono di determinare le dimensioni corrette del set di revisione dei file di caso. '
-ms.openlocfilehash: 279b689e830089c683b8cd575a231635ca32de76
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Informazioni su come la scheda decidere in Microsoft 365 Advanced eDiscovery fornisce dati che consentono di determinare le dimensioni corrette del set di riesame dei file di caso. '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0139bc0505150a4d27aaca97b9b253f2043d649f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630573"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817905"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Decisione basata sui risultati in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
  In Advanced eDiscovery, la scheda decide fornisce informazioni aggiuntive per la visualizzazione e l'utilizzo delle statistiche di supporto decisionale per determinare le dimensioni del set di riesame dei file di caso. 
   
@@ -53,7 +54,7 @@ Questa scheda include gli elementi seguenti:
     
 Nel riquadro dettagli espansi vengono visualizzati ulteriori dettagli. I file nelle figure delle raccolte non includono file vuoti o nebulosi. Le figure dei file di famiglia rappresentano i file che non sono caricati in rilevanza, ma vengono comunque conteggiati come parte della famiglia.
   
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   

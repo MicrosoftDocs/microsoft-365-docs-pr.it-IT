@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
-description: Informazioni su come conservare il contenuto delle cassette postali per gli ex dipendenti trasformando la cassetta postale in una cassetta postale inattiva. A tale scopo, è possibile inserire la cassetta postale su blocco per controversia legale o applicare un criterio di conservazione Microsoft 365 alla cassetta postale e quindi rimuovere l'account Microsoft 365 corrispondente.
-ms.openlocfilehash: ab89f8a7262dcd4197c52275558d95f8053d2c9b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come conservare il contenuto delle cassette postali per gli ex dipendenti trasformando la cassetta postale in una cassetta postale inattiva.
+ms.openlocfilehash: d7805ad24adcad61841866e11cd25942aef6e70b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679050"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817575"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Panoramica delle cassette postali inattive
 

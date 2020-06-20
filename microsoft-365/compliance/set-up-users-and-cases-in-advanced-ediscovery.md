@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Informazioni su come configurare i ruoli utente, creare casi e assegnare gli utenti ai casi in Advanced eDiscovery.  '
-ms.openlocfilehash: 386be1201b30e6b0e7a46c9de47dd6cf2fc4b53c
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6cfc8e313816c0c01512dd0d4b71f1dbbd6e6505
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412805"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819176"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>Configurare gli utenti e i casi in Advanced eDiscovery (Classic)
 
@@ -29,7 +30,7 @@ In questo argomento viene descritto come configurare gli utenti e i casi per Adv
 > [!IMPORTANT]
 > Microsoft continua a investire in nuove versioni di Advanced eDiscovery e annuncia il ritiro di Advanced eDiscovery, noto anche come *Advanced eDiscovery (classico)* o *Advanced eDiscovery v1.0*. Se si usa ancora Advanced eDiscovery v 1.0, passare al più presto ad [Advanced eDiscovery v2.0](overview-ediscovery-20.md), noto anche come *soluzione Advanced eDiscovery in Microsoft 365*. Advanced eDiscovery 2.0 contiene funzionalità simili a quelle disponibili in Advanced eDiscovery v1.0, ma offre anche numerose nuove caratteristiche, come gestione dei responsabili, gestione delle comunicazioni e insiemi da rivedere. Per altre informazioni sul ritiro di Advanced eDiscovery v 1.0, vedere [Ritiro degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="requirements-to-set-up-users-and-cases"></a>Requisiti per la configurazione degli utenti e dei casi
 
 Prima di configurare i casi e gli utenti in Advanced eDiscovery, è necessario quanto segue:
   

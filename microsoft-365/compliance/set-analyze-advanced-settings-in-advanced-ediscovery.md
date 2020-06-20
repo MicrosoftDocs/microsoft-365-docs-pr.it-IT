@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Informazioni su come configurare le impostazioni avanzate, tra cui quasi duplicati, thread di posta elettronica e temi, per il processo di analisi in Advanced eDiscovery. '
-ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b596ffa4061909ccb5c149553ac8fac169b7fd77
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631273"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819236"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Impostare Analyze Advanced Settings in Advanced eDiscovery
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery fornisce parametri avanzati predefiniti per l'analisi delle impostazioni dei moduli. Nella procedura seguente vengono descritte le impostazioni che è possibile specificare.
   
@@ -46,7 +47,7 @@ Advanced eDiscovery fornisce parametri avanzati predefiniti per l'analisi delle 
     
 4. Fare clic su **Salva**. 
     
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   

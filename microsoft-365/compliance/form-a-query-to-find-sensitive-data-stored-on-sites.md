@@ -16,13 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Con la prevenzione della perdita di dati (DLP) in SharePoint Online, è possibile individuare i documenti che contengono dati riservati in tutto il tenant. Dopo aver individuato i documenti, è possibile collaborare con i proprietario al fine di proteggere i dati. In questo argomento viene illustrato come creare una query per cercare dati riservati.
-ms.openlocfilehash: 78f7f07bf6b2fbb0781f4bda8716b84399eef561
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+description: Utilizzare la prevenzione della perdita di dati (DLP) in SharePoint Online per individuare i documenti che contengono dati riservati in tutto il tenant.
+ms.openlocfilehash: b6a0943aa4e71b61c5f430034d9e445462eebde7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327914"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817705"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Creare una query per trovare i dati sensibili archiviati nei siti
 
@@ -33,7 +33,7 @@ Gli utenti memorizzano spesso dati riservati, ad esempio il numero della carta d
   
 ## <a name="forming-a-basic-dlp-query"></a>Creazione di una query DLP di base
 
-Una query DLP di base è formata da tre parti: SensitiveType, intervallo conteggio e intervallo di confidenza. Come illustrato nella figura seguente, **SensitiveType: " \< tipo \> "** è obbligatorio e** | \< \> ** entrambi gli intervalli di conteggio e di** | \< confidenza \> ** sono facoltativi. 
+Una query DLP di base è formata da tre parti: SensitiveType, intervallo conteggio e intervallo di confidenza. Come illustrato nella figura seguente, **SensitiveType: " \<type\> "** è obbligatorio e entrambi **|\<count range\>** e **|\<confidence range\>** sono facoltativi. 
   
 ![Query di esempio divisa in necessaria e facoltativa](../media/DLP-query-example-text.png)
   
@@ -88,7 +88,7 @@ Non tutte le query vengono create allo stesso modo. Nella tabella seguente vengo
    
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-- [Definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
+- [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
 - [Eseguire una Ricerca contenuto](content-search.md)
 - [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
   
