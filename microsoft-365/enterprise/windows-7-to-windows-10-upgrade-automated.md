@@ -90,7 +90,7 @@ L'[opzione pre-cache](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/cr
 
 Sequenze di attività pre-cache combinate ad analisi della compatibilità
 
-Oltre al risparmio di tempo per il download del pacchetto, è possibile applicare l'opzione di pre-cache al pacchetto di aggiornamento e usare il programma di installazione di Windows per valutare se l'aggiornamento sul posto avrà esito positivo prima di eseguire l'aggiornamento effettivo di Windows. La seguente sintassi della riga di comando può essere usata per eseguire in automatico un'analisi della compatibilità e scoprire se Installazione di Windows valuta il dispositivo come pronto per l'aggiornamento: **Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
+Oltre al risparmio di tempo per il download del pacchetto, è possibile applicare l'opzione di pre-cache al pacchetto di aggiornamento e usare il programma di installazione di Windows per valutare se l'aggiornamento sul posto avrà esito positivo prima di eseguire l'aggiornamento effettivo di Windows. La seguente sintassi della riga di comando può essere usata per eseguire in automatico un'analisi della compatibilità e scoprire se Installazione di Windows considera il dispositivo pronto per l'aggiornamento: **Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 I log verranno quindi inviati al percorso definito del server e Installazione di Windows non verrà visualizzato all'utente e si chiuderà senza interazione con l'utente.
 

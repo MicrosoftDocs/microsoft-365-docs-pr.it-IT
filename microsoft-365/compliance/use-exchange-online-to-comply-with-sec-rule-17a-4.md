@@ -14,7 +14,7 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Cohasset Associates ha comprovato che se si esegue la configurazione di Exchange Online e del Centro sicurezza e conformità come consigliato vengono soddisfatti i requisiti di archiviazione pertinenti delle regole CFTC 1.31(c)-(d), FINRA 4511 e SEC 17a-4. È possibile scaricare la valutazione.
+description: Cohasset Associates has validated that when Exchange Online and the Security & Compliance Center are configured as recommended, they meet the relevant storage requirements of CFTC Rule 1.31(c)-(d), FINRA Rule 4511, and SEC Rule 17a-4. You can download the assessment.
 ms.openlocfilehash: 4d494c519576ed86ed56a331a3440d9237270e33
 ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
@@ -26,13 +26,13 @@ ms.locfileid: "44231839"
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Se l'organizzazione deve conformarsi agli standard normativi per la conservazione dei dati, il Centro sicurezza e conformità offre funzionalità per la gestione del ciclo di vita dei dati in Exchange Online, tra cui la possibilità di conservare, controllare, cercare ed esportare i dati. Queste funzionalità sono sufficienti a soddisfare le esigenze della maggior parte delle organizzazioni.
+If your organization needs to comply with regulatory standards for retaining your data, the Security & Compliance Center provides features to manage the lifecycle of your data in Exchange Online. This includes the ability to retain, audit, search, and export your data. These capabilities are sufficient to meet the needs of most organizations.
 
-Tuttavia, alcune organizzazioni in settori fortemente regolamentati sono soggette a requisiti normativi più rigidi. Ad esempio, gli istituti finanziari come le banche o gli intermediari di borsa, sono soggetti alla regola 17a-4 emanata dalla Securities and Exchange Commission (SEC). La regola 17a-4 prevede requisiti specifici per l'archiviazione elettronica dei dati, tra cui molti aspetti riguardanti la gestione dei record, come la durata, il formato, la qualità, la disponibilità e la conformità della conservazione dei record.
+However, some organizations in highly regulated industries are subject to more stringent regulatory requirements. For example, financial institutions such as banks or broker dealers are subject to Rule 17a-4 issued by the Securities and Exchange Commission (SEC). Rule 17a-4 has specific requirements for electronic data storage, including many aspects of record management, such as the duration, format, quality, availability, and accountability of records retention.
 
 Per aiutare queste organizzazioni a comprendere meglio in che modo è possibile sfruttare il Centro sicurezza e conformità per soddisfare gli obblighi normativi per Exchange Online, in modo specifico in relazione ai requisiti della regola 17a-4, è stata rilasciata una valutazione in collaborazione con Cohasset Associates.
 
-Cohasset ha comprovato che se si esegue la configurazione di Exchange Online e del Centro sicurezza e conformità come consigliato vengono soddisfatti i requisiti di archiviazione pertinenti delle regole CFTC 1.31(c)-(d), FINRA 4511 e SEC 17a-4. L'obiettivo è stato individuato in questo set di regole perché rappresenta le indicazioni più prescrittive a livello globale per la conservazione dei record degli istituti finanziari.
+Cohasset validated that when Exchange Online and the Security & Compliance Center are configured as recommended, they meet the relevant storage requirements of CFTC Rule 1.31(c)-(d), FINRA Rule 4511, and SEC Rule 17a-4. We targeted this set of rules because they represent the most prescriptive guidance globally for records retention for financial institutions.
 
 ## <a name="download-the-cohasset-assessment"></a>Scaricare la valutazione Cohasset
 
@@ -42,20 +42,20 @@ Cohasset ha comprovato che se si esegue la configurazione di Exchange Online e d
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>La valutazione è specifica per Exchange Online
 
-Si noti che la valutazione è specifica per Exchange Online e non include altri servizi di Microsoft 365, ad esempio SharePoint Online o OneDrive for Business, anche se in futuro è previsto il supporto per tali servizi in relazione alla regola SEC 17a-4.
+Note that this assessment is specific to Exchange Online. The assessment does not include other Microsoft 365 services such as SharePoint Online or OneDrive for Business, although we are planning support for those services with respect to SEC 17a-4 in the future.
 
-È importante comprendere che anche Skype for Business e Teams archiviano i dati in Exchange Online. Di conseguenza, la valutazione include i messaggi provenienti da Skype for Business e i messaggi di canale e chat di Teams.
+It's important to understand that Skype for Business and Teams also store data in Exchange Online. Therefore, the assessment does cover messages from Skype for Business and channel and chat messages from Teams.
 
 ## <a name="using-preservation-lock-is-key-to-the-recommended-configuration"></a>L'uso della protezione dell'archiviazione è fondamentale per la configurazione consigliata
 
-I settori fortemente regolamentati sono spesso tenuti ad archiviare le comunicazioni elettroniche per soddisfare il requisito WORM (write once, read many), che prescrive una soluzione di archiviazione in cui un record deve essere:
+Highly regulated industries are often required to store electronic communications to meet the WORM (write once, read many) requirement. The WORM requirement dictates a storage solution in which a record must be:
 
 - Conservato per un periodo di conservazione necessario che non può essere abbreviato, ma solo aumentato.
 - Non modificabile, ovvero il record non può essere sovrascritto, cancellato né modificato durante il periodo di conservazione necessario.
 
-In Exchange Online, applicando un [criterio di conservazione](retention-policies.md) alla cassetta postale di un utente è possibile conservarne tutti i contenuti. In effetti, se un utente prova a eliminare o modificare un messaggio di posta elettronica, una copia precedente alla modifica verrà conservata in una posizione protetta e nascosta della cassetta postale. I criteri di conservazione possono contribuire a garantire che un'organizzazione possa conservare le comunicazioni elettroniche, ma che sia comunque possibile modificare quei criteri.
+In Exchange Online, when a [retention policy](retention-policies.md) is applied to a user's mailbox, all the user's content will be retained based on the criteria of the policy. In fact, if a user attempts to delete or modify an email, a copy of the email before the change is made will be preserved in a secure, hidden location in the user's mailbox. Retention policies can help ensure that an organization retains electronic communications, but those policies can be modified.
 
-Applicando la protezione dell'archiviazione a un criterio di conservazione, un'organizzazione si assicura che il criterio non possa essere modificato. In effetti, in seguito all'applicazione della protezione dell'archiviazione a un criterio di conservazione vengono limitate le azioni seguenti:
+By placing a Preservation Lock on a retention policy, an organization ensures that the policy cannot be modified. In fact, after a Preservation Lock is applied to a retention policy, the following actions are restricted:
 
 - Il periodo di conservazione dei criteri può essere solo aumentato, ma non ridotto.
 - È possibile aggiungere gli utenti ai criteri, ma non rimuoverli.
