@@ -25,19 +25,19 @@ description: Informazioni su come riscattare un codice Product Key Microsoft 365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de0a45fe35a53d166eb8d587a6410f91b69e3288
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 30c10efdadae1828438ea9cba01cda93adaa4f0f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402167"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818580"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Immettere il codice "Product Key" per Microsoft 365 business standard
 
 Se è stato acquistato Microsoft 365 business standard da un punto vendita, questo articolo consente di attivare l'abbonamento. 
   
  **Serve altro?**
- **Per informazioni sulla famiglia microsoft 365 o su microsoft 365 Personal**, vedere [utilizzo dei codici Product Key con Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Per informazioni sulla famiglia microsoft 365 o su microsoft 365 Personal**, vedere [utilizzo dei codici Product Key con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
  **Si ha un contratto multilicenza?** Se Microsoft 365 for business è stato acquistato tramite un [programma Microsoft Open License](https://go.microsoft.com/fwlink/p/?LinkID=613298), vedere l'articolo [immettere il codice Product Key acquistato da Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Attivare un nuovo abbonamento

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d8c4495715ef29e1d9b70b993d1216e80461cf7
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613385"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811051"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Rilevare e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati
 
@@ -95,13 +95,13 @@ Per confermare l'attacco, è possibile utilizzare uno dei due metodi seguenti:
 
 - Esaminare manualmente le regole e i moduli per ogni cassetta postale utilizzando il client di Outlook. Questo metodo è accurato, ma è possibile controllare solo l'utente della cassetta postale in un momento che può richiedere molto tempo se si dispone di molti utenti da controllare. Può anche provocare una violazione del computer in cui si esegue il controllo.
 
-- Utilizzare lo script PowerShell [Get-AllTenantRulesAndForms. ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) per scaricare automaticamente tutte le regole di inoltro della posta e i moduli personalizzati per tutti gli utenti nel proprio contratto di locazione. Questo è il metodo più rapido e sicuro con il minor numero di overhead.
+- Utilizzare lo script di PowerShell [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) per scaricare automaticamente tutte le regole di inoltro della posta e i moduli personalizzati per tutti gli utenti nel proprio contratto di locazione. Questo è il metodo più rapido e sicuro con il minor numero di overhead.
 
 ### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Confermare l'attacco delle regole tramite il client di Outlook
 
 1. Aprire il client Outlook degli utenti come utente. È possibile che l'utente abbia bisogno di assistenza per esaminare le regole sulla propria cassetta postale.
 
-2. Fare riferimento a [gestire i messaggi di posta elettronica utilizzando le regole](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59) dell'articolo per le procedure su come aprire l'interfaccia delle regole in Outlook.
+2. Fare riferimento a [gestire i messaggi di posta elettronica utilizzando le regole](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) dell'articolo per le procedure su come aprire l'interfaccia delle regole in Outlook.
 
 3. Cercare le regole che l'utente non ha creato o qualsiasi regola imprevista o regole con nomi sospetti.
 
@@ -113,7 +113,7 @@ Per confermare l'attacco, è possibile utilizzare uno dei due metodi seguenti:
 
 1. Aprire il client Outlook utente come utente.
 
-2. Attenersi alla procedura descritta in, [Mostra la scheda sviluppo](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45) per la versione degli utenti di Outlook.
+2. Attenersi alla procedura descritta in, [Mostra la scheda sviluppo](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) per la versione degli utenti di Outlook.
 
 3. Aprire la scheda ora visibile per gli sviluppatori in Outlook e fare clic su **Progetta modulo**.
 
@@ -125,7 +125,7 @@ Per confermare l'attacco, è possibile utilizzare uno dei due metodi seguenti:
 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>Passaggi per confermare le regole e i moduli di attacco tramite PowerShell
 
-Il modo più semplice per verificare una regola o un attacco di moduli personalizzati consiste nell'eseguire lo script di PowerShell [Get-AllTenantRulesAndForms. ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) . Questo script si connette a tutte le cassette postali del tenant e Scarica tutte le regole e i moduli in due file. csv.
+Il modo più semplice per verificare una regola o un attacco di moduli personalizzati consiste nell'eseguire lo script di [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell. Questo script si connette a tutte le cassette postali del tenant e Scarica tutte le regole e i moduli in due file. csv.
 
 #### <a name="pre-requisites"></a>Prerequisiti
 
@@ -133,11 +133,11 @@ Sarà necessario disporre di diritti di amministratore globale per eseguire lo s
 
 1. Accedere al computer in cui verrà eseguito lo script con i diritti di amministratore locale.
 
-2. Scaricare o copiare lo script Get-AllTenantRulesAndForms. ps1 da GitHub in una cartella dalla quale verrà eseguito. Lo script creerà due file con timbro data in questa cartella, MailboxFormsExport-yyyy-mm-dd. csv e MailboxRulesExport-yyyy-mm-dd. csv.
+2. Scaricare o copiare lo script Get-AllTenantRulesAndForms.ps1 da GitHub in una cartella dalla quale verrà eseguito. Lo script creerà due file con timbro data in questa cartella, MailboxFormsExport-yyyy-mm-dd.csv e MailboxRulesExport-yyyy-mm-dd.csv.
 
 3. Aprire un'istanza di PowerShell come amministratore e aprire la cartella in cui è stato salvato lo script.
 
-4. Eseguire la riga di comando di PowerShell come segue `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
+4. Eseguire la riga di comando di PowerShell come indicato di seguito `.\Get-AllTenantRulesAndForms.ps1`.\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interpretare l'output
 
@@ -159,7 +159,7 @@ Se si riscontrano prove di uno di questi attacchi, la correzione è semplice, è
 
 1. Identificare tutti i dispositivi che l'utente ha utilizzato con Outlook. Tutti devono essere puliti da possibili malware. Non consentire all'utente di accedere e utilizzare la posta elettronica fino a quando tutti i dispositivi vengono puliti.
 
-2. Seguire la procedura descritta in [eliminare una regola](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f) per ogni dispositivo.
+2. Seguire la procedura descritta in [eliminare una regola](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) per ogni dispositivo.
 
 3. Se non si è sicuri della presenza di altri malware, è possibile formattare e reinstallare tutto il software nel dispositivo. Per i dispositivi mobili è possibile seguire i passaggi dei costruttori per reimpostare il dispositivo nell'immagine Factory.
 
@@ -177,7 +177,7 @@ Sono disponibili due cmdlet di PowerShell remoti che è possibile utilizzare per
 
 2. Se si desidera rimuovere completamente una singola regola, più regole o tutte le regole di una cassetta postale, utilizzare il cmdlet [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
 
-3. Se si desidera mantenere la regola e il relativo contenuto per ulteriori indagini, utilizzare il cmdlet [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) .
+3. Se si desidera mantenere la regola e il relativo contenuto per ulteriori indagini, utilizzare il cmdlet [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) .
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Passaggi per le cassette postali in Exchange Online
 
@@ -185,7 +185,7 @@ Sono disponibili due cmdlet di PowerShell remoti che è possibile utilizzare per
 
 2. Se si desidera rimuovere completamente una singola regola, più regole o tutte le regole di una cassetta postale, utilizzare il cmdlet [Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
 
-3. Se si desidera mantenere la regola e il relativo contenuto per ulteriori indagini, utilizzare il cmdlet [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) .
+3. Se si desidera mantenere la regola e il relativo contenuto per ulteriori indagini, utilizzare il cmdlet [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) .
 
 ## <a name="how-to-minimize-future-attacks"></a>Come ridurre al minimo gli attacchi futuri
 
@@ -207,7 +207,7 @@ Il modo migliore per proteggere gli account utente e in particolare gli account 
 
 ### <a name="second-keep-your-outlook-clients-current"></a>Secondo: mantenere aggiornati i client Outlook
 
-Le versioni completamente aggiornate e con patch di Outlook 2013 e 2016 disabilitano per impostazione predefinita l'azione regola/maschera "Avvia applicazione". In questo modo, anche se un utente malintenzionato viola l'account, la regola e le azioni del modulo verranno bloccate. È possibile installare gli aggiornamenti più recenti e le patch di sicurezza attenendosi alla procedura descritta in [Install Office Updates](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5).
+Le versioni completamente aggiornate e con patch di Outlook 2013 e 2016 disabilitano per impostazione predefinita l'azione regola/maschera "Avvia applicazione". In questo modo, anche se un utente malintenzionato viola l'account, la regola e le azioni del modulo verranno bloccate. È possibile installare gli aggiornamenti più recenti e le patch di sicurezza attenendosi alla procedura descritta in [Install Office Updates](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Ecco le versioni delle patch per i client Outlook 2013 e 2016:
 
@@ -225,7 +225,7 @@ Per ulteriori informazioni sulle singole patch di sicurezza, vedere:
 
 Si noti che, anche con le patch e gli aggiornamenti installati, è possibile che un utente malintenzionato modifichi la configurazione del computer locale per riattivare il comportamento di avvio dell'applicazione. È possibile utilizzare la [Gestione avanzata dei criteri di gruppo](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) per monitorare e applicare i criteri del computer locale nei client.
 
-È possibile verificare se l'impostazione "Avvia applicazione" è stata riattivata tramite una sostituzione nel registro di sistema utilizzando le informazioni [visualizzate in come visualizzare il registro System di Windows utilizzando le versioni a 64 bit](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows). Controllare queste sottochiavi:
+È possibile verificare se l'impostazione "Avvia applicazione" è stata riattivata tramite una sostituzione nel registro di sistema utilizzando le informazioni [visualizzate in come visualizzare il registro System di Windows utilizzando le versioni a 64 bit](https://support.microsoft.com/help/305097). Controllare queste sottochiavi:
 
 - **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 

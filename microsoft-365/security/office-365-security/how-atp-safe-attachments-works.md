@@ -17,16 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come è possibile mantenere la sicurezza dell'organizzazione da file dannosi utilizzando gli allegati sicuri di ATP per Office 365.
-ms.openlocfilehash: a0d5923ccac525b23aa2ef6b45936524f0a7b483
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f4f355d4def1f108a72854c3796e0e9373cb5ef1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036657"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819401"
 ---
 # <a name="how-atp-safe-attachments-works"></a>Funzionamento di Allegati sicuri di ATP
-
-## <a name="how-it-works"></a>Funzionamento
 
 La funzionalità degli allegati sicuri di ATP controlla gli allegati di posta elettronica per gli utenti dell'organizzazione. Quando un criterio per gli allegati sicuri ATP è sul posto e un utente coperto da tale criterio Visualizza la posta elettronica in Office 365, gli allegati di posta elettronica vengono controllati e vengono eseguite azioni appropriate, in base ai criteri degli allegati sicuri di ATP. A seconda del modo in cui vengono definiti i criteri, gli utenti possono continuare a lavorare senza aver mai saputo che sono stati inviati file dannosi.
   

@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Scoprire i modi in cui è possibile aggiornare i dispositivi Windows a Windows 10 Pro per utilizzare le funzionalità di sicurezza e di rete aziendale più avanzate.
-ms.openlocfilehash: c982f59ded0b0d2e1cd321f5856b38bd792eebed
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 24ef1f1547ed8873ed1fa18120eef6275f53c7dc
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403531"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785531"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Eseguire l'aggiornamento di dispositivi Windows a Windows 10 Pro
 
@@ -39,7 +39,7 @@ Guardare un breve video sull'aggiornamento dei dispositivi Windows a Windows 10 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="upgrade-to-windows-10-pro"></a>Eseguire l'aggiornamento a Windows 10 Pro
   
@@ -62,4 +62,4 @@ Per completare la configurazione dei dispositivi Android e iOS, vedere [configur
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 for business
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

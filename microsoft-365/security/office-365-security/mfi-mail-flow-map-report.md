@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sul rapporto della mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635293"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818844"
 ---
 # <a name="mail-flow-map-report"></a>Report Mappa flusso di posta
 
@@ -30,7 +32,7 @@ Per impostazione predefinita, la mappa del flusso di posta Visualizza il modello
 
 ![Frecce a destra e a sinistra nel widget mappa del flusso di posta](../../media/mail-flow-map-widget.png)
 
-## <a name="overview"></a>Panoramica
+## <a name="mail-flow-map-basics"></a>Nozioni di base sul flusso di posta
 
 Se si fa clic sul widget **mappa del flusso di posta elettronica** , verrà eseguito il rapporto **mappa del flusso di posta** . In questa sezione è possibile visualizzare un livello di report più granulare, è possibile fare clic su Visualizza dettagli per visualizzare i dati dettagliati. È inoltre possibile scaricare il report dettagliato facendo clic su Richiedi report.
 

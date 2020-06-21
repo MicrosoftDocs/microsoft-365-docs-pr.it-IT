@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
+ms.custom:
+- seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sull'Insight nelle regole del flusso di posta lenta nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità.
-ms.openlocfilehash: d5317f2d45aacb91e51131bc5b8aa6e67d3ae4c7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088357"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819365"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Informazioni dettagliate sulle regole del flusso di posta lento
 
@@ -37,6 +39,6 @@ Quando si fa clic su **Visualizza dettagli**, viene visualizzato un riquadro a c
 
 ![Riquadro a comparsa dopo aver fatto clic su Visualizza dettagli in una panoramica delle regole del flusso di posta lenta nel dashboard del flusso di posta](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

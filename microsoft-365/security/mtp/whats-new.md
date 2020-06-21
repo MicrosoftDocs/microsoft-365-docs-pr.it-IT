@@ -15,19 +15,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d95879816193eb00881835b63f2aae3e232ddfb7
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 4fc56caa9be59d1a29032ee6e4f32e50918294fe
+ms.sourcegitcommit: 3119b2246001ba06af8264508785352dfb894166
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569070"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44820549"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Novità di Microsoft Threat Protection
 
 Le caratteristiche seguenti sono generalmente disponibili (GA) nella versione più recente di Microsoft Threat Protection.
 
-Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e incollando l'URL seguente nel lettore di feed:`https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us`
-
+Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e incollando l'URL seguente nel lettore di feed:
+```http
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
+```
 ## <a name="february-2020"></a>Febbraio 2020
 - [Eventi imprevisti](incidents-overview.md) <br> Sapere esattamente dove è stato avviato un attacco e altri dettagli che consentono di visualizzare l'entità dell'attacco.
 - [Analisi e risposta alle minacce automatizzate](mtp-autoir.md) <br> L'AIR consente al team delle operazioni di sicurezza di aumentare notevolmente la capacità dell'organizzazione di gestire avvisi e incidenti di sicurezza.

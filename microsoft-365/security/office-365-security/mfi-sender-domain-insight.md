@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sull'Insight del dominio del mittente Fix nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4cf4a87ad770325ca6ad2f0b87ac8ce52c345c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635173"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818832"
 ---
 # <a name="fix-sender-domain-insight"></a>Risolvere le informazioni dettagliate del dominio del mittente
 
@@ -28,7 +30,7 @@ Microsoft 365 richiede l'invio di messaggi da ambienti di posta elettronica loca
 
 - Nella configurazione, una delle seguenti affermazioni è vera:
 
-  - Il dominio di posta elettronica del mittente è registrato nell'organizzazione. Per ulteriori informazioni, vedere Add Domains in Office 365.
+  - Il dominio di posta elettronica del mittente è registrato nell'organizzazione. Per ulteriori informazioni, vedere Aggiungere domini in Office 365.
 
   - Il server di posta elettronica locale è configurato per l'utilizzo di un certificato per l'invio di posta elettronica a Microsoft 365, il certificato contiene o corrisponde esattamente a un nome di dominio registrato in Microsoft 365 ed è stato creato un connettore basato su certificato in Microsoft 365 con tale dominio. 
 
@@ -46,6 +48,6 @@ Verrà visualizzato il connettore in ingresso utilizzato per recapitare i messag
 
 ![Visualizzare gli ID dei messaggi di esempio nell'Insight del dominio del mittente FIX](../../media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

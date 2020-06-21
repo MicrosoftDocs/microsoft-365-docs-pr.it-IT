@@ -21,12 +21,12 @@ description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle 
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587581"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780708"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -153,19 +153,19 @@ Sono disponibili due aggiornamenti per i gruppi di questo mese:
 
 #### <a name="for-your-users"></a>Per gli utenti
 
-- [Pianificare una riunione](https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
-- [Partecipare a una riunione di Teams](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Creare un team org-Wide](https://support.office.com/article/create-a-company-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Creare un team con guest](https://support.office.com/article/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Partecipare a una squadra come ospite](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Creare un indirizzo di posta elettronica di gruppo](https://support.office.com/article/create-a-company-email-address-ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Pianificare una riunione](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Partecipare a una riunione di Teams](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Creare un team org-Wide](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [Creare un team con guest](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [Partecipare a una squadra come ospite](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [Creare un indirizzo di posta elettronica di gruppo](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
 
 #### <a name="for-admins-and-business-owners"></a>Per gli amministratori e i proprietari di aziende
 
-- [Potenziare le piccole aziende con il lavoro a distanza](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Esecuzione di una piccola azienda remota](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Iscriversi a Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Impostazione dell'accesso a due fattori](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Potenziare le piccole aziende con il lavoro a distanza](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [Esecuzione di una piccola azienda remota](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Iscriversi a Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Impostazione dell'accesso a due fattori](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ## <a name="march-2020"></a>Marzo 2020
 
@@ -204,7 +204,7 @@ I nuovi nomi dei prodotti entrano in vigore il 21 aprile 2020. Si tratta di una 
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for business       |
+|Office 365 Business     |    App Microsoft 365 per le aziende       |
 |Office 365 ProPlus    |   Microsoft 365 Apps for Enterprise      |
 
 ### <a name="videos-training-and-docs"></a>Video, formazione e documenti
@@ -276,12 +276,12 @@ L'elenco delle cassette postali per le risorse è stato aggiornato al nuovo stil
 
 Consultare la formazione di amministratore di Small Business che è stata rilasciata a gennaio:
 
-- [Creare il sito Web aziendale](https://support.office.com/article/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Trovare le risposte e la guida](https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [Ottenere assistenza o supporto tecnico](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [Eliminare un utente](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Scegliere un abbonamento Microsoft](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Panoramica della sicurezza di Microsoft 365 per le aziende](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Creare il sito Web aziendale](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
+- [Trovare le risposte e la guida](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
+- [Ottenere assistenza o supporto tecnico](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
+- [Eliminare un utente](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
+- [Scegliere un abbonamento Microsoft](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
+- [Panoramica della sicurezza di Microsoft 365 per le aziende](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## <a name="november-and-december-2019"></a>Novembre e dicembre 2019
 

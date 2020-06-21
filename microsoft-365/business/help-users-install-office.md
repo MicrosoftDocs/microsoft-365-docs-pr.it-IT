@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Consente agli utenti di installare le app di Office nei dispositivi Windows 10 e di installare facilmente Office nei PC Windows 10 dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400907"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786235"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aiutare gli utenti a installare Office nei dispositivi Windows 10
 
@@ -46,7 +46,7 @@ Guardare un breve video sull'installazione delle app di Office.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="manage-office-deployments"></a>Gestire le distribuzioni di Office
 
@@ -65,4 +65,4 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 Business Premium
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

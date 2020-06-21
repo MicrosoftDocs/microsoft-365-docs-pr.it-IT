@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Informazioni su come è possibile spostare i file di lavoro personali e i file aziendali riservati in OneDrive for business in pochi semplici passaggi.
-ms.openlocfilehash: ec225eb43d79bebaa7035178d4d1751c58149e7a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 561c9dee1080a50dea695f136df10be8e5d52959
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401363"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785913"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business
 
@@ -37,7 +37,7 @@ Guardare un breve video su come spostare i file in OneDrive for business.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business
@@ -50,8 +50,8 @@ Se un utente ha un computer che contiene molti file personali, occorre prima spo
     
 3. Scegliere **Carica**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) nella barra dei menu e passare ai file da salvare. 
     
-Per trasferire il profilo utente e i file importanti si può anche usare uno strumento di terze parti, come ForensiT. Occorre anche caricare i file risultanti in OneDrive for Business.
+To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 for business
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

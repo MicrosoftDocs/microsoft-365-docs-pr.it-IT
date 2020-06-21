@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile scegliere recapito dinamico per evitare ritardi nei messaggi e consentire agli utenti di visualizzare in anteprima gli allegati analizzati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c30803efd2dafedd6d988de5374f08bd61f7d2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034793"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819353"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Recapito dinamico e visualizzazione in anteprima con gli allegati sicuri di ATP
 
-## <a name="overview"></a>Panoramica
+## <a name="basic-features-of-dynamic-delivery"></a>Funzionalità di base per il recapito dinamico
 
 Recapito dinamico è un'opzione che può essere selezionata per gli [allegati sicuri di ATP](atp-safe-attachments.md). Leggere questo articolo per informazioni sulle funzionalità di anteprima degli allegati e il recapito dinamico in [ATP Safe Attachments in Office 365](atp-safe-attachments.md).
 
@@ -80,7 +80,7 @@ Esistono alcuni scenari in cui il recapito dinamico non è supportato. Tra le ca
 
 - Cartella di ricerca della cassetta postale di un utente che si trova in uno stato di errore
 
-- Ambienti in cui un amministratore di Exchange Online ha abilitato l'utente esclamativo. Per risolvere il caso, vedere [i messaggi con allegati non vengono recapitati quando viene utilizzato il recapito dinamico e l'esclamatore ATP](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
+- Ambienti in cui un amministratore di Exchange Online ha abilitato l'utente esclamativo. Per risolvere il caso, vedere [i messaggi con allegati non vengono recapitati quando viene utilizzato il recapito dinamico e l'esclamatore ATP](https://support.microsoft.com/help/4014438)
 
 - Messaggi crittografati con [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
 

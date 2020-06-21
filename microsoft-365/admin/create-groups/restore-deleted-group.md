@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Informazioni su come ripristinare un gruppo di Microsoft 365 eliminato.
-ms.openlocfilehash: 24e5159dd85ab6ede324b3981e3e592f1c2ead70
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7cf548816af1661298458f27c704d654845075d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400690"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818508"
 ---
 # <a name="restore-a-deleted-group"></a>Ripristinare un gruppo eliminato
 
@@ -56,9 +56,9 @@ Quando si ripristina un gruppo, vengono ripristinati anche i contenuti seguenti:
 
 - Gruppo di Yammer e contenuto del gruppo (se il gruppo Microsoft 365 è stato creato da Yammer)
 
-## <a name="restore-a-group-that-you-own-by-using-outlook"></a>Ripristinare un gruppo personalizzato tramite Outlook
+## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>Ripristinare un gruppo personalizzato tramite Outlook sul Web
 
-Se si è il proprietario di un gruppo di Microsoft 365, è possibile ripristinare il gruppo manualmente in Outlook attenendosi alla procedura seguente:
+Se si è il proprietario di un gruppo di Microsoft 365, è possibile ripristinare il gruppo manualmente in Outlook sul Web attenendosi alla procedura seguente:
 
 1. Nella [pagina Gruppi eliminati](https://outlook.office.com/people/group/deleted)selezionare l'opzione **Gestisci gruppi** nel nodo **gruppi** e quindi scegliere **eliminata**.
 
@@ -96,7 +96,7 @@ Per eliminare il gruppo, eseguire questo comando in PowerShell:
 Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
-Per verificare che il gruppo sia stato eliminato correttamente, eseguire di nuovo il cmdlet  *Get-AzureADMSDeletedGroup*  per controllare che il gruppo non compaia più nell'elenco dei gruppi eliminati temporaneamente. In alcuni casi l'eliminazione definitiva del gruppo e di tutti i suoi dati può richiedere fino a 24 ore. 
+To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
   
 ## <a name="got-questions-about-microsoft-365-groups"></a>Hai domande sui gruppi di Microsoft 365?
 
@@ -108,6 +108,6 @@ Visitare la [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Of
   
 [Eliminare gruppi usando il cmdlet Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   
-[Gestire le impostazioni del sito del team connesso al gruppo](https://support.office.com/article/8376034d-d0c7-446e-9178-6ab51c58df42.aspx)
+[Gestire le impostazioni del sito del team connesso al gruppo](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
   
-[Eliminare un gruppo in Outlook](https://support.office.com/article/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f.aspx)
+[Eliminare un gruppo in Outlook](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)

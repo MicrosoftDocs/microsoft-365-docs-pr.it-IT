@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare le funzionalità di conformità per evitare la perdita di dati e proteggere le informazioni riservate dei clienti.
-ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402695"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785833"
 ---
 # <a name="set-up-compliance-features"></a>Funzionalità di conformità della configurazione
 
@@ -61,7 +61,7 @@ Per inserire una cassetta postale per il blocco per controversia legale, nell'in
 
 Le etichette di riservatezza sono dotate di Azure Information Protection (AIP) piano 1 e consentono di classificare e, facoltativamente, proteggere i documenti e i messaggi di posta elettronica applicando etichette. Le etichette possono essere applicate automaticamente dagli amministratori che definiscono le regole e le condizioni, manualmente dagli utenti o utilizzando una combinazione in cui gli utenti ricevono consigli.
 
-Per impostare le etichette di riservatezza, vedere [creare e gestire le etichette di riservatezza](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
+Per impostare le etichette di riservatezza, vedere [creare e gestire le etichette di riservatezza](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
 
 
 
@@ -69,7 +69,7 @@ Per impostare le etichette di riservatezza, vedere [creare e gestire le etichett
 
 Per installare manualmente il client AIP:
 
-1. Scaricare **AzinfoProtection_UL. exe** dall' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Scaricare **AzinfoProtection_UL.exe** dall' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
  
 2. È possibile verificare che l'installazione abbia avuto esito positivo visualizzando un documento di Word e assicurandosi che l'opzione **sensitivity** sia disponibile nella scheda **Home** .
 <br/>![Elenco a discesa della scheda protezione in un documento di Word.](../media/word-sensitivity.png)

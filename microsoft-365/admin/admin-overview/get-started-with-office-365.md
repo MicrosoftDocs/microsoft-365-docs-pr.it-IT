@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Informazioni su come configurare e utilizzare Microsoft 365 nel computer, nel telefono e nel tablet.
-ms.openlocfilehash: 5510f93a0e282b73405fa066669cdc1b63ea8a28
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3909cdabd0c4f95c44ab5afaf7dba7244bf6eeb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386890"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780530"
 ---
 # <a name="get-started"></a>Per iniziare
 
@@ -45,21 +45,21 @@ L'organizzazione ha recentemente ottenuto Microsoft 365 e ora è necessario util
 ## <a name="training-resources-for-your-users"></a>Risorse di formazione per gli utenti
 
 
-- [Avvio rapido dei dipendenti](https://support.office.com/article/b9700090-ce64-4046-ab92-ce8488a7bc0f.aspx)
+- [Avvio rapido dei dipendenti](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
     
-- [Area risorse di Office](https://support.office.com/article/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb.aspx)
+- [Area risorse di Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Dove effettuare l'accesso](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Dove effettuare l'accesso](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
-- [Installare Office nel PC o nel Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)
+- [Installare Office nel PC o nel Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     
-- [Configurazione per dispositivi mobili](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
+- [Configurazione per dispositivi mobili](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
     
 ## <a name="training-resources-for-you-the-admin"></a>Risorse di formazione per gli amministratori
 
 Di seguito sono riportate alcune risorse utili per iniziare.
   
-- [Formazione per gli amministratori](https://support.office.com/article/e990f8ff-56d7-450e-ad9f-74ae8718ef09.aspx): ottenere collegamenti a classi gratuite online per gli amministratori.
+- [Formazione per gli amministratori](https://docs.microsoft.com/microsoft-365/admin): ottenere collegamenti a classi gratuite online per gli amministratori.
     
 - [Guida](https://docs.microsoft.com/microsoft-365/admin/admin-home)per gli amministratori: ottenere informazioni sulle attività principali, Guida introduttiva agli strumenti di amministrazione e risoluzione dei problemi.
     

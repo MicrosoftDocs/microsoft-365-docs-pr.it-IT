@@ -19,13 +19,14 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 description: Informazioni su Office 365 Advanced Threat Protection per i file in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: 90e84f0a4393e5097fb59b93693862a21d6d9f2f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031449"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815410"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -33,7 +34,7 @@ ms.locfileid: "44031449"
 
 Gli utenti condividono periodicamente file e collaborano con SharePoint, OneDrive e Microsoft teams. Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), l'organizzazione può collaborare in maniera più sicura. ATP aiuta a rilevare e bloccare i file identificati come dannosi nei siti del team e nelle raccolte documenti.
 
-## <a name="how-it-works"></a>Funzionamento
+## <a name="how-office-365-atp-operates"></a>Funzionamento di Office 365 ATP
 
 Quando un file in SharePoint Online, OneDrive for business e Microsoft teams è stato identificato come dannoso, ATP si integra direttamente con gli archivi di file per bloccare il file. Nell'immagine seguente viene mostrato un esempio di un file dannoso rilevato in una raccolta.
 
@@ -63,11 +64,11 @@ Per altre informazioni, vedere [Office 365 ATP per SharePoint, OneDrive e Micros
 
 ## <a name="quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>Quarantena in ATP per SharePoint Online, OneDrive for business e Microsoft Teams
 
- A partire dalla fine di maggio 2018, le funzionalità di [quarantena](quarantine-email-messages.md) nel centro sicurezza &amp; e conformità vengono estese a ATP per SharePoint Online, OneDrive for business e Microsoft teams.
+ A partire dalla fine di maggio 2018, le funzionalità di [quarantena](quarantine-email-messages.md) nel &amp; Centro sicurezza e conformità vengono estese a ATP per SharePoint Online, OneDrive for business e Microsoft teams.
 
-Quando un file in SharePoint Online, OneDrive for business o Microsoft teams viene identificato come dannoso, oltre a ATP che blocca il file dall'apertura o dalla condivisione, tale file è incluso in un elenco di elementi in quarantena. Nel &amp; Centro sicurezza e conformità, passare alla **quarantena** e al filtro per la **gestione** \> **Review** \> delle minacce per **i file**.
+Quando un file in SharePoint Online, OneDrive for business o Microsoft teams viene identificato come dannoso, oltre a ATP che blocca il file dall'apertura o dalla condivisione, tale file è incluso in un elenco di elementi in quarantena. (Nella pagina sicurezza &amp; Centro conformità, passare alla **Threat management** \> **Review** \> **quarantena** e al filtro per la gestione delle minacce per **i file**.
 
-Se si è parte del team di sicurezza Microsoft 365 for business dell'organizzazione e le autorizzazioni necessarie sono state [assegnate al centro &amp; sicurezza e conformità](permissions-in-the-security-and-compliance-center.md), è possibile scaricare, rilasciare, segnalare ed eliminare file che vengono rilevati come dannosi da ATP dalla quarantena.
+Se si è parte del team di sicurezza Microsoft 365 for business dell'organizzazione e le autorizzazioni necessarie sono state [assegnate al centro sicurezza e &amp; conformità](permissions-in-the-security-and-compliance-center.md), è possibile scaricare, rilasciare, segnalare ed eliminare file che vengono rilevati come dannosi da ATP dalla quarantena.
 
 - Il **rilascio e la segnalazione** di un file rimuove il blocco ATP nel file nel sito del team o nella raccolta documenti di SharePoint, OneDrive o Microsoft teams. Gli utenti sono quindi in grado di aprire, condividere e scaricare il file. Quando l'opzione **Invia rapporto a Microsoft** è selezionata, il file viene segnalato come falso positivo a Microsoft.
 

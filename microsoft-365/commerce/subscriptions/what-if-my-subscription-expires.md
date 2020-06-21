@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Informazioni su cosa succede ai dati quando la sottoscrizione Microsoft 365 for business scade, è disabilitata o se si Annulla.
-ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c50c8ca2e9f6342cc127c7a1b42575515fd36329
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403163"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818624"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Cosa succede ai dati e all'accesso quando termina l'abbonamento a Microsoft 365 for business?
 
@@ -63,7 +63,7 @@ Prima che l'abbonamento raggiunga effettivamente la data di scadenza, è possibi
   
 - **Abilitare la fatturazione ricorrente per la sottoscrizione.**
 
-  - Se la **fatturazione ricorrente** è già attiva, non è necessario eseguire alcuna azione. L'abbonamento verrà fatturato automaticamente e verrà addebitato un ulteriore anno o mese, a seconda della frequenza di pagamento corrente. Se per qualsiasi motivo si è attivata la **fatturazione ricorrente** , è sempre possibile [riattivare la fatturazione ricorrente](renew-your-subscription.md).
+  - Se la **fatturazione ricorrente** è già attiva, non è necessario eseguire alcuna azione. L'abbonamento verrà fatturato automaticamente e verrà addebitato un ulteriore anno o mese, a seconda della frequenza di pagamento attuale. Se per qualsiasi motivo si è attivata la **fatturazione ricorrente** , è sempre possibile [riattivare la fatturazione ricorrente](renew-your-subscription.md).
 
   - Se sono state acquistate Microsoft 365 Apps for business con una scheda prepagata, è possibile [abilitare la fatturazione ricorrente](renew-your-subscription.md) per l'abbonamento.
 
@@ -87,7 +87,7 @@ Prima che l'abbonamento raggiunga effettivamente la data di scadenza, è possibi
   
 - **Gestire la fatturazione ricorrente per la sottoscrizione.**
 
-  - Se la **fatturazione ricorrente** è già attiva, non è necessario eseguire alcuna azione. L'abbonamento verrà fatturato automaticamente e verrà addebitato un ulteriore anno o mese, a seconda della frequenza di pagamento corrente. Se per qualsiasi motivo si è attivata la **fatturazione ricorrente** , è sempre possibile [riattivare la fatturazione ricorrente](renew-your-subscription.md).
+  - Se la **fatturazione ricorrente** è già attiva, non è necessario eseguire alcuna azione. L'abbonamento verrà fatturato automaticamente e verrà addebitato un ulteriore anno o mese, a seconda della frequenza di pagamento attuale. Se per qualsiasi motivo si è attivata la **fatturazione ricorrente** , è sempre possibile [riattivare la fatturazione ricorrente](renew-your-subscription.md).
 
   - Se sono state acquistate Microsoft 365 Apps for business con una scheda prepagata, è possibile [abilitare la fatturazione ricorrente](renew-your-subscription.md) per l'abbonamento.
 
@@ -109,7 +109,7 @@ Prima che l'abbonamento raggiunga effettivamente la data di scadenza, è possibi
 
 ::: moniker range="o365-21vianet"
   
-- **Rinnovare l'abbonamento.** Se la **fatturazione ricorrente** è già attiva, non è necessario eseguire alcuna azione. L'abbonamento verrà fatturato automaticamente e verrà addebitato un ulteriore anno o mese, a seconda della frequenza di pagamento corrente. Se per qualsiasi motivo si è attivata la **fatturazione ricorrente** , è sempre possibile [riattivare la fatturazione ricorrente](renew-your-subscription.md).
+- **Rinnovare l'abbonamento.** Se la **fatturazione ricorrente** è già attiva, non è necessario eseguire alcuna azione. L'abbonamento verrà fatturato automaticamente e verrà addebitato un ulteriore anno o mese, a seconda della frequenza di pagamento attuale. Se per qualsiasi motivo si è attivata la **fatturazione ricorrente** , è sempre possibile [riattivare la fatturazione ricorrente](renew-your-subscription.md).
 
 - **Lasciar scadere l'abbonamento.** Se si paga con carta di credito o fattura e non si vuole proseguire con l'abbonamento, è possibile [disattivare la fatturazione ricorrente](renew-your-subscription.md). L'abbonamento scadrà alla data di scadenza si potranno ignorare tutte le relative notifiche tramite posta elettronica.
 
@@ -126,13 +126,13 @@ Ecco cosa aspettarsi in ogni stato dell'abbonamento.
   
 ::: moniker range="o365-worldwide"
 
- **Cosa aspettarsi:** lo stato Scaduto dura 30 giorni per la maggior parte degli abbonamenti, compresi quelli acquistati tramite [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), nella maggior parte dei paesi e delle aree geografiche. Per i prodotti con contratti multilicenza, tranne Microsoft Open, lo stato Scaduto dura 90 giorni.
+ **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Cosa aspettarsi:** lo stato Scaduto dura 30 giorni per la maggior parte degli abbonamenti, compresi quelli acquistati tramite [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), nella maggior parte dei paesi e delle aree geografiche. Per i prodotti con contratti multilicenza, tranne Microsoft Open, lo stato Scaduto dura 90 giorni.
+ **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
 
 ::: moniker-end
 
@@ -150,13 +150,13 @@ In qualità di amministratore, è comunque possibile accedere all'interfaccia di
   
 ::: moniker range="o365-worldwide"
 
- **Cosa aspettarsi:** se non viene riattivato mentre è nello stato Scaduto, l'abbonamento entra nello stato Disabilitato e questa fase dura 90 giorni per la maggior parte degli abbonamenti e nella maggior parte dei paesi e delle aree geografiche. Per i prodotti con contratti multilicenza, lo stato Disabilitato dura 30 giorni.
+ **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Cosa aspettarsi:** se non viene riattivato mentre è nello stato Scaduto, l'abbonamento entra nello stato Disabilitato e questa fase dura 90 giorni per la maggior parte degli abbonamenti e nella maggior parte dei paesi e delle aree geografiche. Per i prodotti con contratti multilicenza, lo stato Disabilitato dura 30 giorni.
+ **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
 
 ::: moniker-end
 
@@ -168,7 +168,7 @@ In qualità di amministratore, è comunque possibile accedere all'interfaccia di
 
 ::: moniker range="o365-worldwide"
 
-In questo stato, l'accesso diminuisce in modo significativo. Gli utenti non possono eseguire l'accesso o accedere ai servizi come la posta elettronica o SharePoint Online. Le applicazioni di Office si spostano infine in modalità di sola lettura e funzionalità ridotte e visualizzano le [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). È ancora possibile accedere e accedere all'interfaccia di amministrazione ma non è possibile assegnare licenze agli utenti. I dati dei clienti, inclusi tutti i dati degli utenti, i messaggi di posta elettronica e i file nei siti del team, sono disponibili solo per l'utente e gli altri amministratori.
+In questo stato, l'accesso diminuisce in modo significativo. Gli utenti non possono eseguire l'accesso o accedere ai servizi come la posta elettronica o SharePoint Online. Le applicazioni di Office si spostano infine in modalità di sola lettura e funzionalità ridotte e visualizzano le [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). È ancora possibile accedere e accedere all'interfaccia di amministrazione ma non è possibile assegnare licenze agli utenti. I dati dei clienti, inclusi tutti i dati degli utenti, i messaggi di posta elettronica e i file nei siti del team, sono disponibili solo per l'utente e gli altri amministratori.
 
 ::: moniker-end
 
@@ -178,7 +178,7 @@ In qualità di amministratore globale o di fatturazione, è possibile [riattivar
   
  **Cosa aspettarsi:** se l'abbonamento non viene riattivato durante il periodo di tolleranza o disabilitazione, ne viene eseguito il deprovisioning.
   
-Gli amministratori e gli utenti non hanno più accesso ai servizi o alle applicazioni di Office incluse nell'abbonamento. Tutti i dati della società, dai dati degli utenti ai documenti e messaggi di posta elettronica, vengono eliminati definitivamente e non potranno essere recuperati in alcun modo.
+Admins and users no longer have access to the services or Office applications that came with the subscription. All customer data—from user data to documents and email—is permanently deleted and unable to be recovered in any way.
   
 A questo punto non è più possibile riattivare l'abbonamento. Tuttavia, come amministratore globale o di fatturazione, è comunque possibile accedere all'interfaccia di amministrazione per gestire altri abbonamenti o acquistare nuovi abbonamenti per soddisfare le proprie esigenze aziendali.
   
@@ -216,7 +216,7 @@ Ecco cosa aspettarsi se si annulla un abbonamento.
   
 - **Accesso amministratore** Gli amministratori possono ancora accedere all'interfaccia di amministrazione e acquistare altri abbonamenti in base alle esigenze. In qualità di amministratore globale o di fatturazione, è necessario 90 giorni per [riattivare l'abbonamento](reactivate-your-subscription.md) con tutti i dati intatti.
 
-- **Accesso utente** Gli utenti non potranno utilizzare servizi come OneDrive for business o accedere ai dati dei clienti, ad esempio messaggi di posta elettronica o documenti nei siti del team. Le applicazioni di Office, come Word e Excel, entreranno alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzeranno [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+- **Accesso utente** Gli utenti non potranno utilizzare servizi come OneDrive for business o accedere ai dati dei clienti, ad esempio messaggi di posta elettronica o documenti nei siti del team. Le applicazioni di Office, come Word e Excel, entreranno alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzeranno [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
 
 Per informazioni su come annullare, vedere [annullare l'abbonamento](cancel-your-subscription.md).
   

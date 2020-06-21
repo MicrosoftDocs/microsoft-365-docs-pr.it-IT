@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Ottenere l'app di amministrazione di Microsoft 365 e imparare a gestire l'organizzazione online dal telefono o dal tablet.
-ms.openlocfilehash: e0aa16bd01e81e89e80db51c6569009e177ed687
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386950"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780542"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'app Microsoft 365 admin per dispositivi mobili
 
@@ -58,7 +58,7 @@ Guardare un breve video sull'installazione dell'app di amministrazione per dispo
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
  
 ## <a name="frequently-asked-questions"></a>Domande frequenti
@@ -105,4 +105,4 @@ Provare alcune procedure comuni per la risoluzione dei problemi delle app per di
   
 ## <a name="see-also"></a>Vedere anche
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

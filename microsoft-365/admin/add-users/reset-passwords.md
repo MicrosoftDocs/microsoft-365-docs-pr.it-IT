@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 for business. "
-ms.openlocfilehash: 44052ee0c795143d67d832f9528e3eea7232f1cb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386974"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780566"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -40,11 +40,11 @@ Guardare un breve video sulla reimpostazione delle password degli utenti.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
-È consigliabile configurare la reimpostazione self-service delle password, in modo da evitare di dover reimpostare manualmente le password degli utenti. Per altre informazioni, vedere [Consentire agli utenti di reimpostare le loro password in Office 365](let-users-reset-passwords.md).
+We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
   
 ## <a name="reset-a-business-password-for-someone-else"></a>Reimpostare una password aziendale per qualcun altro
 
@@ -118,11 +118,11 @@ Questi passaggi sono validi per un'azienda con decine di utenti. Se si dispone d
 ## <a name="reset-business-passwords-in-bulk"></a>Reimpostare le password aziendali in blocco
 <a name="bkmk_forgot"> </a>
 
-Usare PowerShell. Vedere questo post di Eyal Doron: [Gestire le password con PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 Ecco un articolo correlato: [Impostare le password per più account utente](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   
-Per informazioni generali, vedere [PowerShell for Microsoft 365 Administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).
+Per informazioni generali, vedere [PowerShell for Microsoft 365 Administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forzare la modifica della password per tutti gli utenti dell'organizzazione
 <a name="bkmk_forgot"> </a>
@@ -132,7 +132,7 @@ Vedere questo interessante post di blog da Vasil Michev, MVP Microsoft: [Forzare
 ## <a name="im-lost"></a>Serve assistenza.
 <a name="bkmk_forgot"> </a>
 
-Leggere questo articolo: [Si è dimenticato l'account o la password per l'account usato con Office](https://support.office.com/article/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
+Leggere questo articolo: [Si è dimenticato l'account o la password per l'account usato con Office](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
   
 ## <a name="related-articles"></a>Articoli correlati
 <a name="bkmk_forgot"> </a>
@@ -147,4 +147,4 @@ Leggere questo articolo: [Si è dimenticato l'account o la password per l'accoun
 
 [Rimuovere un ex dipendente](remove-former-employee.md)
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

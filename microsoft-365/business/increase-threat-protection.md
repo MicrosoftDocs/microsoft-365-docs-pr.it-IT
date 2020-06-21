@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili da tentativi di phishing, malware e altre minacce.
-ms.openlocfilehash: 6fa4d1595c379aaccf3a0cbfca020fbd32376fb9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400871"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786207"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
@@ -92,13 +92,13 @@ Per altre informazioni, vedere:
   
 - [Come gestire ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
-- [Ripristinare il OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [Ripristinare il OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
 ## <a name="stop-auto-forwarding-for-email"></a>Interrompere l'inoltro automatico per la posta elettronica
 
 Gli hacker che accedono alla cassetta postale di un utente possono rubare la posta impostando la cassetta postale in modo da inoltrare automaticamente la posta elettronica. Ciò può verificarsi anche senza la consapevolezza dell'utente. Per evitare che ciò accada, configurare una regola del flusso di posta. 
   
-Per creare una regola di trasporto della posta, guardare [questo breve video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) o eseguire la procedura seguente:
+Per creare una regola di trasporto della posta, guardare [questo breve video](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7) o eseguire la procedura seguente:
   
 1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare interfaccia di **Amministrazione** di \> **Exchange**.
     
@@ -127,7 +127,7 @@ Se sono stati configurati uno o più domini personalizzati per l'ambiente Office
   
 Si consiglia di iniziare a utilizzare questa protezione creando un criterio per proteggere gli utenti più importanti e il dominio personalizzato. 
 
-Per creare un criterio di anti-phishing ATP, guardare [questo breve video di formazione](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)o completare i passaggi seguenti:
+Per creare un criterio di anti-phishing ATP, guardare [questo breve video di formazione](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)o completare i passaggi seguenti:
   
 1. Passare a [https://protection.office.com](https://protection.office.com). 
     
@@ -157,7 +157,7 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
 
 Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio documenti, presentazioni, fogli di calcolo e altro ancora. Non è sempre facile stabilire se un allegato è sicuro o dannoso solo guardando un messaggio di posta elettronica. La protezione avanzata dalle minacce di Office 365 include la protezione degli allegati sicuri di ATP, ma questa protezione non è attivata per impostazione predefinita. Si consiglia di creare una nuova regola per iniziare a usare questa protezione. Questa protezione si estende ai file in SharePoint, OneDrive e Microsoft teams.
   
-Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o completare i passaggi seguenti:
+Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve video](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o completare i passaggi seguenti:
   
 1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di amministratore. 
     
@@ -194,7 +194,7 @@ A volte gli hacker nascondono siti Web dannosi nei collegamenti nei messaggi di 
     
 - Aggiungere un nuovo criterio indirizzato a tutti i destinatari del dominio.
     
-Per configurare i collegamenti sicuri di ATP, guardare [questo breve video di formazione](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)o completare i passaggi seguenti:
+Per configurare i collegamenti sicuri di ATP, guardare [questo breve video di formazione](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)o completare i passaggi seguenti:
   
 1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di amministratore. 
     

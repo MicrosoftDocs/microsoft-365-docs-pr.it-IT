@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Informazioni su come conservare i file e i messaggi di posta elettronica di un dipendente quando la persona lascia l'organizzazione.
-ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 32f64efb30acb5438e5add8bcb897200951e6362
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431714"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780614"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Accedere ai dati di un ex utente ed eseguirne il backup
 
@@ -141,7 +141,7 @@ In qualità di amministratore globale, è possibile accedere al contenuto del On
 
 Per salvare i messaggi di posta elettronica, il calendario, le attività e i contatti dell'ex dipendente, è possibile esportare le informazioni in un file di dati di Outlook (con estensione pst).
   
-1. [Aggiungere il messaggio di posta elettronica dell'ex dipendente](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) al proprio Outlook (se si [Reimposta la password dell'utente](reset-passwords.md), è possibile impostarla su una cosa che si conosce solo).
+1. [Aggiungere il messaggio di posta elettronica dell'ex dipendente](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) al proprio Outlook (se si [Reimposta la password dell'utente](reset-passwords.md), è possibile impostarla su una cosa che si conosce solo).
     
 2. In Outlook selezionare **file**.
     
@@ -160,7 +160,7 @@ Per salvare i messaggi di posta elettronica, il calendario, le attività e i con
 6. Selezionare l'account che si desidera esportare selezionando il nome o l'indirizzo di posta elettronica, ad esempio Mailbox-Anne Weiler o anne@contoso.com. Se si vuole esportare tutto il contenuto dell'account, inclusi i messaggi di posta elettronica, il calendario, i contatti, le attività e le note, verificare che sia selezionata la casella di controllo **Includi sottocartelle**. 
     
     > [!NOTE]
-    > È possibile esportare un solo account alla volta. Se si desidera esportare più account, ripetere questi passaggi per ognuno di essi. 
+    > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps. 
   
     ![Finestra di dialogo Esporta file di dati di Outlook con la cartella principale e l'opzione Includi sottocartelle selezionate](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
@@ -181,7 +181,7 @@ Outlook avvia immediatamente l'esportazione, a meno che non venga creato un nuov
     
   - Se si esporta in un file di dati di Outlook (con estensione pst) esistente protetto da password, nella finestra di dialogo **password file di dati di Outlook** Digitare la *password*e quindi fare clic su **OK**.
     
-Vedere come [esportare o eseguire il backup di posta elettronica, contatti e calendario in un file PST](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) di Outlook in Outlook 2010. 
+Vedere come [esportare o eseguire il backup di posta elettronica, contatti e calendario in un file PST](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) di Outlook in Outlook 2010. 
   
   
   > [!NOTE]

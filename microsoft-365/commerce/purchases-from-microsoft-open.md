@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Informazioni su come attivare, rinnovare o aggiungere licenze a un abbonamento a Microsoft 365 for business.
-ms.openlocfilehash: 83b4ba3338db4351ef50af687d3632da83f45648
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0e8de1546c5efdde907209e98f9ee5d710ab2c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404683"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818556"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Immettere il codice Product Key acquistato da Microsoft Open
 
@@ -38,7 +38,7 @@ Se Microsoft 365 for business è stato acquistato da un [programma Microsoft Ope
   
  **Serve altro?**
  
- **Per assistenza con Microsoft 365 Home o Personal**, vedere [utilizzo dei codici Product Key con Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).
+ **Per assistenza con Microsoft 365 Home o Personal**, vedere [utilizzo dei codici Product Key con Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
   
  **Per informazioni su Microsoft 365 business standard acquistato da un punto vendita al dettaglio**, vedere [immettere il codice Product Key acquistato da un punto vendita al dettaglio](enter-your-product-key.md). 
   
@@ -64,7 +64,7 @@ Per informazioni su come [configurare microsoft 365 per la propria organizzazion
 
 Vedere questo elenco di errori e soluzioni comuni: [problemi con il codice Product Key?](product-key-errors-and-solutions.md)
   
-I partner possono trovare utile l'articolo [Partner: usare un codice Product Key per configurare l'abbonamento di un cliente](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40).
+I partner possono trovare utile l'articolo [Partner: usare un codice Product Key per configurare l'abbonamento di un cliente](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40).
   
 I clienti con contratto multilicenza possono trovare altre informazioni nel [Centro servizi per contratti multilicenza e risorse](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   

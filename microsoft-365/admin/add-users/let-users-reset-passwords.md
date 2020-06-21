@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come è possibile reimpostare le password utilizzando lo strumento di reimpostazione della password self-service.
-ms.openlocfilehash: 40f094489a1981302e97043b019e8c90a52ffc55
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 288613023ee61626bf12f7090ad0ff73139ef06d
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678683"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780590"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
@@ -39,7 +39,7 @@ Ecco alcune informazioni utili:
   
 - Si ottiene la reimpostazione della password in modalità self-service per gli utenti Cloud **gratis** con qualsiasi piano di Microsoft 365 business, Education o no profit paid. Non funziona con Microsoft 365 Trial.
 
-- Si basa su Azure. Questa funzionalità verrà scaricata automaticamente e **gratuitamente** in Azure quando si esegue questa procedura. L'attivazione della reimpostazione della password in modalità self-service non costa nulla se non si usano altre funzionalità di Azure.
+- It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.
 
 - **Se si utilizza Active Directory locale**, non si applicano i due punti sopra riportati. Piuttosto, è possibile configurare questa impostazione, ma **richiede un abbonamento a pagamento ad Azure ad Premium**.
 
@@ -47,7 +47,7 @@ Guardare un breve video su come consentire agli utenti di reimpostare le proprie
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="let-people-reset-their-own-passwords"></a>Consentire alle persone di reimpostare le proprie password
 
@@ -89,4 +89,4 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
   
 [Impostare la password di un singolo utente in modo che non scada mai](set-password-to-never-expire.md)
 
-[Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video per la formazione di Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

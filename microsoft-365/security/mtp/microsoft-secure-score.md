@@ -17,12 +17,15 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+ms.openlocfilehash: a7097bfc9fb4c15408672171b27d577ddfaa9bd5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173393"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818568"
 ---
 # <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure Score (iterazione precedente)
 
@@ -43,7 +46,7 @@ Le organizzazioni accedono alla visualizzazione robusta delle metriche e delle t
 
 Inoltre, è possibile accedere ai consigli e al Punteggio tramite l' [API di Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Informazioni sul [tipo di risorsa Secure Score](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Funzionamento
+## <a name="how-your-secure-score-is-calculated"></a>Calcolo del Punteggio di sicurezza
 
 Si ricevono punti per la configurazione delle funzionalità di sicurezza consigliate, per l'esecuzione di attività relative alla sicurezza (come la visualizzazione di report) o per l'azione di miglioramento con un'applicazione o un software di terze parti. Alcune azioni di miglioramento offrono solo punti quando sono state completate e alcune forniscono punti parziali se sono state completate per alcuni dispositivi o utenti.
 
@@ -102,8 +105,8 @@ Per facilitare le informazioni necessarie più rapidamente, le azioni di miglior
 
 Nella pagina Panoramica di Microsoft Secure score, è possibile vedere come vengono divisi i punti tra questi gruppi e quali sono i punti disponibili. La pagina di panoramica è anche il luogo in cui ottenere una visualizzazione completa del punteggio totale, l'andamento storico del Punteggio sicuro con i confronti di benchmark e le azioni di miglioramento prioritarie che possono essere intraprese per migliorare il punteggio.
 
-![Pagina iniziale](../../media/secure-score/homepage-original.png)
-di Secure Score*Figura 1: pagina Panoramica del Punteggio di Microsoft Secure*
+![Pagina iniziale di Secure Score ](../../media/secure-score/homepage-original.png)
+ *Figura 1: pagina Panoramica del Punteggio di Microsoft Secure*
 
 ## <a name="take-action-to-improve-your-score"></a>Eseguire un'azione per migliorare il Punteggio
 

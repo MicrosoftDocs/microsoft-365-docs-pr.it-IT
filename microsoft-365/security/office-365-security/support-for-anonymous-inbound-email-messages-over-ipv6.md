@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: L'amministratore può imparare a configurare il supporto per la posta elettronica in ingresso anonima dalle origini IPv6 in Exchange Online e Exchange Online Protection.
-ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fbbcba3631c7b2a7060f07011c119ee973fdf4af
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631218"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818710"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Aggiungere il supporto per la posta elettronica in ingresso anonima su IPv6 in Microsoft 365
 
@@ -48,6 +50,6 @@ Dopo l'attivazione del supporto dei messaggi IPv6 in ingresso anonimo nell'organ
 
   > 550 5.2.1 servizio non disponibile, [contoso.com] non accetta la posta elettronica su IPv6.
 
-## <a name="for-more-information"></a>Ulteriori informazioni
+## <a name="related-topics"></a>Argomenti correlati
 
 [Supporto per la convalida di messaggi firmati con DKIM](support-for-validation-of-dkim-signed-messages.md)

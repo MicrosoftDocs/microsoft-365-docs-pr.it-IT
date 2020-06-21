@@ -10,17 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352499"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819341"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
-## <a name="overview"></a>Panoramica
+## <a name="message-trace-features"></a>Funzionalità di traccia dei messaggi
 
 La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
 
@@ -230,7 +232,7 @@ I report di riepilogo avanzati disponibili (completati) sono disponibili nella s
 
 - **sender_address**: l'indirizzo di posta elettronica del*alias*mittente ( @ *dominio*alias).
 
-- **Recipient_status**: lo stato del recapito del messaggio al destinatario. Se il messaggio è stato inviato a più destinatari, mostrerà tutti i destinatari e lo stato corrispondente per ognuno, nel formato: stato dell' \< *indirizzo di posta elettronica* \> ## \< *status* \> . Ad esempio:
+- **Recipient_status**: lo stato del recapito del messaggio al destinatario. Se il messaggio è stato inviato a più destinatari, mostrerà tutti i destinatari e lo stato corrispondente per ognuno, nel formato: \<*email address*\> ## \<*status*\> . Ad esempio:
 
   - **# #Receive, Send** indica che il messaggio è stato ricevuto dal servizio e che è stato inviato alla destinazione desiderata.
 
@@ -359,7 +361,7 @@ Un valore **custom_data** che inizia con `S:AMA` l'agente di filtro antimalware.
 
 |**Valore**|**Descrizione**|
 |:-----|:-----|
-|`AMA=SUM|v=1|`o`AMA=EV|v=1`|È stato determinato che il messaggio contiene malware. `SUM`indica che il malware potrebbe essere stato rilevato da un numero qualsiasi di motori. `EV`indica che il malware è stato rilevato da un motore specifico. Quando viene rilevato malware da un motore, questo attiva le seguenti azioni.|
+|`AMA=SUM|v=1|` o `AMA=EV|v=1`|È stato determinato che il messaggio contiene malware. `SUM`indica che il malware potrebbe essere stato rilevato da un numero qualsiasi di motori. `EV`indica che il malware è stato rilevato da un motore specifico. Quando viene rilevato malware da un motore, questo attiva le seguenti azioni.|
 |`Action=r`|Il messaggio è stato sostituito.|
 |`Action=p`|Il messaggio è stato ignorato.|
 |`Action=d`|Il messaggio è stato rinviato.|

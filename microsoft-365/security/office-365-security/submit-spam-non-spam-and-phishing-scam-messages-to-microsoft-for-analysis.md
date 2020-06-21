@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: Amministratori e it-gli utenti possono imparare a inviare messaggi di posta elettronica (buona posta contrassegnata come cattiva o cattiva posta consentita) a Microsoft per l'analisi.
+description: Gli amministratori e gli utenti finali possono imparare a inviare messaggi di posta elettronica (buona posta contrassegnata come cattiva o cattiva posta elettronica consentita) a Microsoft per l'analisi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ed605d88f025996646c928200c20945df9c9871f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: d6973330c4504bd6478265205f60798b3b7c1875
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208610"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811039"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Inviare manualmente messaggi a Microsoft per l'analisi
 

@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Backup di Outlook, OneDrive, Yammer e contenuto di SharePoint prima di modificare i piani di Microsoft 365.
-ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9acc97f65bb5b471cb992d7f01cd299192b74a52
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403619"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818532"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Eseguire il backup dei dati prima di cambiare i piani di Microsoft 365 per le aziende
 
@@ -35,13 +35,13 @@ Se un utente viene spostato in un altro abbonamento con meno servizi correlati a
   
 ## <a name="save-a-copy-of-outlook-information"></a>Salvataggio di una copia delle informazioni di Outlook
 
-Se gli utenti dispongono di Outlook, possono [esportare o eseguire il backup di posta elettronica, contatti e calendario in un file PST di Outlook prima di](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91) commutare il piano.
+Se gli utenti dispongono di Outlook, possono [esportare o eseguire il backup di posta elettronica, contatti e calendario in un file PST di Outlook prima di](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) commutare il piano.
   
-Dopo aver completato il passaggio al nuovo piano, gli utenti possono [importare messaggi di posta elettronica, contatti e calendario da un file PST di Outlook](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+Dopo aver completato il passaggio al nuovo piano, gli utenti possono [importare messaggi di posta elettronica, contatti e calendario da un file PST di Outlook](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
   
 ## <a name="save-files-stored-in-onedrive-for-business"></a>Salvare i file archiviati in OneDrive for business
 
-Prima di passare a una sottoscrizione diversa, gli utenti possono [scaricare file e cartelle da OneDrive o SharePoint](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05) in un percorso diverso, ad esempio una cartella sul disco rigido del computer, o una condivisione file sulla rete dell'organizzazione.
+Prima di passare a una sottoscrizione diversa, gli utenti possono [scaricare file e cartelle da OneDrive o SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) in un percorso diverso, ad esempio una cartella sul disco rigido del computer, o una condivisione file sulla rete dell'organizzazione.
   
 ## <a name="save-yammer-information"></a>Salvare le informazioni di Yammer
 
@@ -51,7 +51,7 @@ Gli amministratori possono esportare tutti i messaggi, le note, i file, gli argo
 
 Se un utente viene spostato da un abbonamento con SharePoint Online a uno che non lo contiene, il riquadro di **SharePoint** non verrà più visualizzato nel menu Microsoft 365.
   
-Tuttavia, se il nuovo abbonamento è nella stessa organizzazione di quello precedente, l'utente potrà continuare ad accedere al sito del team di SharePoint e potrà visualizzare e aggiornare blocchi appunti, documenti, attività e calendari usando l'URL diretto del sito del team.
+However, as long as the new subscription is within the same organization as the one they are switched from, users will still be able to access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
   
 > [!TIP]
 > è consigliabile che gli utenti accedano al sito del team prima del cambio di abbonamento e salvino l'URL come preferito o come segnalibro nel browser.

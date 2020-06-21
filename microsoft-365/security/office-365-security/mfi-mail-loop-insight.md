@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
+ms.custom:
+- seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sull'Insight del loop di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: d17c698cf66be56b6a08fa5efc2aaff78aaece07
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082817"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819317"
 ---
 # <a name="mail-loop-insight"></a>Informazioni dettagliate sul ciclo di posta
 
@@ -28,6 +30,6 @@ Un loop di posta non è valido perché spreca risorse di sistema, consuma la quo
 
 ![Riquadro a comparsa dopo aver fatto clic su Visualizza dettagli in una panoramica del flusso di posta in uscita](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

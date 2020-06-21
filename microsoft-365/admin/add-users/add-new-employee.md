@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Aggiungere nuovi dipendenti a Microsoft 365 for business per le app di posta elettronica, Skype e Office.
-ms.openlocfilehash: 0df9ed292cd4d8010c779cb822b84f9916cf1928
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bd0ed77954c7b7baa60e50473818577ec9ae7f76
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387310"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780674"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Aggiungere un nuovo dipendente a Microsoft 365
 
@@ -34,9 +34,9 @@ In questo articolo viene illustrato come eseguire l'onboarding di un nuovo dipen
   
 Se il nuovo dipendente ha bisogno di Microsoft 365, è possibile utilizzare un [piano microsoft 365](https://products.office.com/business/compare-office-365-for-business-plans) che consente di installare le app di Office come Word ed Excel su un computer. 
   
- **Se non si è un amministratore** Per [informazioni su Microsoft 365](https://support.office.com/article/office-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb) , è possibile aiutare gli utenti aziendali e di casa con la configurazione. 
+ **Se non si è un amministratore** Per [informazioni su Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) , è possibile aiutare gli utenti aziendali e di casa con la configurazione. 
   
- **Nessuna app di Office nel piano?** Attenersi alla procedura seguente, ma ignorare le sezioni per l'installazione delle app. Utilizzare invece le [versioni online di Office](https://support.office.com/article/91a4ec74-67fe-4a84-a268-f6bdf3da1804.aspx) . 
+ **Nessuna app di Office nel piano?** Attenersi alla procedura seguente, ma ignorare le sezioni per l'installazione delle app. Utilizzare invece le [versioni online di Office](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804) . 
   
 Ecco una breve panoramica: 
   
@@ -71,19 +71,19 @@ Analogamente a Facebook, Amazon o Gmail, il dipendente accede all'utente per l'u
 ## <a name="step-4-help-your-employee-get-started"></a>Passaggio 4: aiutare i dipendenti a iniziare
 
 
-Condividere con loro la [configurazione rapida dei dipendenti per Microsoft 365](https://support.office.com/article/employee-quick-setup-b9700090-ce64-4046-ab92-ce8488a7bc0f) per l'accesso, l'installazione del software, la configurazione della posta elettronica e altro ancora. 
+Condividere con loro la [configurazione rapida dei dipendenti per Microsoft 365](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) per l'accesso, l'installazione del software, la configurazione della posta elettronica e altro ancora. 
   
 Di seguito è illustrato un riferimento rapido per iniziare a eseguire le operazioni seguenti:
   
 |**Attività**|**Trovare i dettagli**|
 |:-----|:-----|
 |Accedere a Office  <br/> |Andare a [https://www.office.com](https://www.office.com) , selezionare **Accedi**e quindi immettere l'ID utente e la password.  <br/> |
-|Installare le app di Office nel computer.  <br/><br/> |Quando si esegue l'accesso, la Home page contiene un collegamento per il download e l'installazione di app come Word e Outlook.  Selezionare **installa Office**.         Per istruzioni, vedere [come installare Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).  <br/> |
-|Configurare il messaggio di posta elettronica in Outlook 2016.  <br/> |Dopo aver installato le app di Office nel computer, configurare il messaggio di posta elettronica. Per istruzioni, vedere [How to setup Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).  <br/> |
-|Configurare Skype for business in modo che sia possibile connettersi a colleghi o partner commerciali nell'azienda o in tutto il mondo. È possibile avviare conversazioni con le chiamate di messaggistica istantanea, vocali o video.  <br/> |[Installare Skype for business nel computer in uso](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Per informazioni su come usare Skype for business, [Guarda un video.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>È possibile configurare Skype for business in modo che i dipendenti possano contattare persone esterne alla propria azienda che utilizzano l'app gratuita Skype? In caso contrario, informare il nuovo dipendente in modo che sappia cosa aspettarsi quando si utilizza Skype for business.  <br/> |
-|Installare le app nel dispositivo mobile se si desidera ottenere la posta elettronica o usare Skype for business sul telefono.  <br/> |Se si desidera configurare l'app per dispositivi mobili di Outlook, è possibile ottenere messaggi di posta elettronica tramite il telefono. Per istruzioni, vedere [iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234.aspx), [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872.aspx), [Windows Phone](https://support.microsoft.com/en-us/office/set-up-email-on-windows-phone-181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>Se si desidera utilizzare Skype for business sul dispositivo mobile, scaricare e installare l'app per dispositivi mobili. Per istruzioni, vedere [iOS](https://support.microsoft.com/en-us/office/install-skype-for-business-on-a-mobile-device-3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS), [Android](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android), [Windows Phone](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
-|Completare la formazione di OneDrive for business per informazioni su come archiviare e organizzare documenti, presentazioni e fogli di calcolo nel cloud.  <br/> |Mantenere i documenti correlati all'azienda nel cloud utilizzando OneDrive for business. È sempre possibile accedere al contenuto, anche se è stato eseguito l'accesso a Microsoft 365 in un computer diverso. [Guardare un video per informazioni su come utilizzare OneDrive for business](https://support.office.com/article/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde.aspx) <br/><br/> **Formazione:** [formazione di OneDrive for business](https://support.office.com/article/1f608184-b7e6-43ca-8753-2ff679203132.aspx) (selezionare OneDrive for business).  <br/> |
-|Completare la formazione di SharePoint Online per collaborare con i colleghi e condividere il contenuto.  <br/> |Il posto migliore per mantenere i documenti che i colleghi avranno accesso anche è in SharePoint Online.  <br/> <br/>**Formazione:** [video: collaborare con il contenuto del team tramite SharePoint Online](https://support.office.com/article/what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Scopri:** In che modo l'organizzazione utilizza SharePoint Online e quali tipi di documenti vengono archiviati. Inoltre, quali documenti sono archiviati in OneDrive for business.  <br/> |
+|Installare le app di Office nel computer.  <br/><br/> |Quando si esegue l'accesso, la Home page contiene un collegamento per il download e l'installazione di app come Word e Outlook.  Selezionare **installa Office**.         Per istruzioni, vedere [come installare Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).  <br/> |
+|Configurare il messaggio di posta elettronica in Outlook 2016.  <br/> |Dopo aver installato le app di Office nel computer, configurare il messaggio di posta elettronica. Per istruzioni, vedere [How to set up Outlook](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).  <br/> |
+|Configurare Skype for business in modo che sia possibile connettersi a colleghi o partner commerciali nell'azienda o in tutto il mondo. È possibile avviare conversazioni con le chiamate di messaggistica istantanea, vocali o video.  <br/> |[Installare Skype for business nel computer in uso](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb).  <br/> <br/>Per informazioni su come usare Skype for business, [Guarda un video.](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>È possibile configurare Skype for business in modo che i dipendenti possano contattare persone esterne alla propria azienda che utilizzano l'app gratuita Skype? In caso contrario, informare il nuovo dipendente in modo che sappia cosa aspettarsi quando si utilizza Skype for business.  <br/> |
+|Installare le app nel dispositivo mobile se si desidera ottenere la posta elettronica o usare Skype for business sul telefono.  <br/> |Se si desidera configurare l'app per dispositivi mobili di Outlook, è possibile ottenere messaggi di posta elettronica tramite il telefono. Per istruzioni, vedere [iOS](https://support.microsoft.com/office/b2de2161-cc1d-49ef-9ef9-81acd1c8e234), [Android](https://support.microsoft.com/office/886db551-8dfa-4fd5-b835-f8e532091872), [Windows Phone](https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>Se si desidera utilizzare Skype for business sul dispositivo mobile, scaricare e installare l'app per dispositivi mobili. Per istruzioni, vedere [iOS](https://support.microsoft.com/office/3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS), [Android](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android), [Windows Phone](https://support.microsoft.com/office/4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
+|Completare la formazione di OneDrive for business per informazioni su come archiviare e organizzare documenti, presentazioni e fogli di calcolo nel cloud.  <br/> |Mantenere i documenti correlati all'azienda nel cloud utilizzando OneDrive for business. È sempre possibile accedere al contenuto, anche se è stato eseguito l'accesso a Microsoft 365 in un computer diverso. [Guardare un video per informazioni su come utilizzare OneDrive for business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Formazione:** [formazione di OneDrive for business](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (selezionare OneDrive for business).  <br/> |
+|Completare la formazione di SharePoint Online per collaborare con i colleghi e condividere il contenuto.  <br/> |Il posto migliore per mantenere i documenti che i colleghi avranno accesso anche è in SharePoint Online.  <br/> <br/>**Formazione:** [video: collaborare con il contenuto del team tramite SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Scopri:** In che modo l'organizzazione utilizza SharePoint Online e quali tipi di documenti vengono archiviati. Inoltre, quali documenti sono archiviati in OneDrive for business.  <br/> |
 
    
 ## <a name="related-articles"></a>Articoli correlati

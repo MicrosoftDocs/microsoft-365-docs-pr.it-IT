@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Per ulteriori informazioni, vedere la procedura di installazione di Microsoft 365 Business Premium, dalla sottoscrizione all'aggiunta di un dominio e degli utenti, alla configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: 4670344263ceb64a32962dfa6eb9c1644e61541d
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: a808ae5761c1bc5706966a3f7de95f96f8f7c8c8
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470526"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785813"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell'installazione
 
@@ -40,7 +40,7 @@ Guardare un breve video sulla configurazione di Microsoft 365 Business Premium.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 La maggior parte dei passaggi di installazione può essere effettuata nell'installazione guidata, ma anche le altre opzioni sono elencate.
 
@@ -95,4 +95,4 @@ Quando si aggiunge un dispositivo Windows 10 ad Azure AD, i criteri impostati pe
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

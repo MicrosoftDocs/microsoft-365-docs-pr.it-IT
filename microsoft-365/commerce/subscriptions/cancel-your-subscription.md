@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: 863bb9c5cd6a6c9468715f02df6b40e91859ca27
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403295"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818520"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -101,7 +101,7 @@ Se si annulla un abbonamento prima della fine del termine, l'abbonamento viene s
   
 - **Accesso amministratore** Gli amministratori possono ancora accedere all'interfaccia di amministrazione e acquistare altri abbonamenti in base alle esigenze. In qualità di amministratore globale o di fatturazione, è necessario 90 giorni per [riattivare l'abbonamento](reactivate-your-subscription.md) con tutti i dati intatti.
 
-- **Accesso utente** Gli utenti non saranno in grado di utilizzare servizi come OneDrive for business o di accedere ai dati dei clienti come la posta elettronica o i documenti nei siti del team. Le applicazioni di Office, come Word e Excel, entreranno alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzeranno [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+- **Accesso utente** Gli utenti non saranno in grado di utilizzare servizi come OneDrive for business o di accedere ai dati dei clienti come la posta elettronica o i documenti nei siti del team. Le applicazioni di Office, come Word e Excel, entreranno alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzeranno [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
 
 Per ulteriori informazioni, vedere [cosa succede ai dati e l'accesso al termine dell'abbonamento?](what-if-my-subscription-expires.md)
 
@@ -138,13 +138,13 @@ Per ulteriori informazioni, vedere in [che modo Microsoft 365 gestisce i record 
 
 Quando l'annullamento diventa efficace, gli utenti perdono l'accesso ai dati. Prima di annullare l'abbonamento, fare in modo che salvino i file di OneDrive for business o SharePoint online in un altro percorso. Tutti i dati dei clienti lasciati indietro potrebbero essere eliminati dopo 30 giorni e verranno eliminati entro 180 giorni dall'annullamento.
 
-- Per spostare posta elettronica, contatti, attività e informazioni del calendario in un altro account, vedere [Esportare o eseguire il backup di posta elettronica, contatti e calendari in un file PST di Outlook](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
+- Per spostare posta elettronica, contatti, attività e informazioni del calendario in un altro account, vedere [Esportare o eseguire il backup di posta elettronica, contatti e calendari in un file PST di Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
 - Per salvare una raccolta di documenti o il contenuto di un elenco (ad esempio i contatti) da un ambiente SharePoint Online (OneDrive for Business o siti del team) in una condivisione file o in un computer locale, vedere [Informazioni sulla migrazione manuale del contenuto di SharePoint Online](https://support.microsoft.com/kb/2783484).
 
 ### <a name="uninstall-office-optional"></a>Disinstallare Office (facoltativo)
 
-Se l'abbonamento è stato annullato e gli utenti non sono stati spostati in un altro abbonamento che include Microsoft 365, Microsoft 365 viene eseguito in modalità di funzionalità ridotte. In questo caso, gli utenti possono leggere e stampare solo i documenti e le applicazioni di Microsoft 365 visualizzano le [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Per evitare confusione, chiedere agli utenti di [disinstallare Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) dai propri computer.
+Se l'abbonamento è stato annullato e gli utenti non sono stati spostati in un altro abbonamento che include Microsoft 365, Microsoft 365 viene eseguito in modalità di funzionalità ridotte. In questo caso, gli utenti possono leggere e stampare solo i documenti e le applicazioni di Microsoft 365 visualizzano le [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Per evitare confusione, chiedere agli utenti di [disinstallare Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) dai propri computer.
 
 ## <a name="related-articles"></a>Articoli correlati
 

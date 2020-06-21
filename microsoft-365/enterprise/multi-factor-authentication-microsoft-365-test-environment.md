@@ -1,5 +1,5 @@
 ---
-title: Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 Enterprise
+title: Autenticazione a più fattori dell'ambiente di testing di Microsoft 365 Enterprise
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,13 +14,14 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
+- seo-marvel-apr2020
 description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno Smart Phone nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e26fb7470e01397266f5f424ee45941a79a2940c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213141"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819377"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -43,7 +44,7 @@ Sono disponibili due fasi per configurare l'autenticazione a più fattori per un
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+> Accedere a [stack di guida del laboratorio di testing](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per una mappa visiva in tutti gli articoli della guida del laboratorio di testing di Microsoft 365 Enterprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -98,7 +99,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
 7. Nella pagina **passaggio 3: mantenere le applicazioni esistenti** , fare clic su **fine**.
     
-8. Se è la prima volta che si accede con l'account User 2, viene richiesto di modificare la password. Digitare la password originale e una nuova password due volte, quindi fare clic su **Aggiornare la password ed eseguire l'accesso**. Annotare nome e password in una posizione sicura.
+8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
     
     Verrà visualizzato il portale di Office per l'utente 2 nella scheda **Microsoft Office Home** del browser.
 

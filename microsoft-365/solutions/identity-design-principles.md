@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 99112b70715770b24c1454fbd9442d2b5b6f08ea
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352547"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800132"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>To Identity and Beyond-punto di vista di un architetto
 
@@ -134,7 +134,7 @@ Se si è d'accordo con questa definizione espansa di autorizzazione, è necessar
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
 - [Protezione avanzata dalle minacce di Azure](https://docs.microsoft.com/azure-advanced-threat-protection/) (ATP di Azure)
 - [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP)
-- [Microsoft 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Microsoft 365 ATP)
+- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Office 365 ATP)
 - [Sicurezza delle app di Microsoft Cloud](https://docs.microsoft.com/cloud-app-security/) (MCAS)
 - [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide) (MTP)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
@@ -310,7 +310,7 @@ Il controllo di accesso basato sui ruoli (RBAC) di Azure consente la gestione de
 
 :::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="visualizzazione di alto livello dei componenti di Azure per l'amministrazione delegata":::
 
-Come si può vedere dall'immagine sopra, molti altri servizi dovrebbero essere considerati come parte del progetto (es.: [criteri di Azure](https://docs.microsoft.com/azure/governance/policy/overview), [cianografie](https://docs.microsoft.com/azure/governance/blueprints/overview), [gruppi di gestione](https://docs.microsoft.com/azure/governance/management-groups/)e così via).
+Come si può vedere dall'immagine sopra, molti altri servizi dovrebbero essere considerati come parte del progetto (es: criteri di [Azure](https://docs.microsoft.com/azure/governance/policy/overview), [cianografie di Azure](https://docs.microsoft.com/azure/governance/blueprints/overview), [gruppi di gestione](https://docs.microsoft.com/azure/governance/management-groups/)e così via).
 
 ## <a name="conclusion"></a>Conclusione
 È stato avviato un breve riepilogo, più lungo di quanto mi aspettassi.  Spero che ora si è pronti per avventurarsi in una profonda vista della creazione di un modello di delega per la propria organizzazione.  Questa conversazione è molto comune con i clienti. Non esiste un modello che funzioni per tutti. In attesa di alcuni miglioramenti pianificati da Microsoft Engineering prima di documentare i modelli comuni che vengono visualizzati tra i clienti. Nel frattempo, è possibile collaborare con il team dell'account Microsoft per organizzare una visita al [centro tecnologico Microsoft](https://www.microsoft.com/mtc)più vicino.  Ci vediamo lì!

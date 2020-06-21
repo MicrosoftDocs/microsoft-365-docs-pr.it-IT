@@ -15,17 +15,19 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 6aedc0e499a489d7526737700ecc76deab9e6e32
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679133"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819449"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
-## <a name="overview"></a>Panoramica
+## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Funzioni di base e apertura del dashboard di sicurezza
 
 Il [Centro sicurezza & conformità](../../compliance/go-to-the-securitycompliance-center.md) consente all'organizzazione di gestire la protezione dei dati e la conformità. Se si dispone delle autorizzazioni necessarie, il dashboard di sicurezza consente di esaminare lo stato della protezione dalle minacce, nonché di visualizzare e agire sugli avvisi di sicurezza.
 

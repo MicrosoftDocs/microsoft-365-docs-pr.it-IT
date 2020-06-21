@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 for business, su come configurarlo e su come preparare i dispositivi e i PC degli utenti per assicurarsi che siano protetti da Microsoft 365 for business.
-ms.openlocfilehash: a09b7c676f0e095d2a9db16daa56e19fb7a3baae
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402007"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786155"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introduzione a Microsoft 365 for business
 
@@ -65,7 +65,7 @@ Guardare questo video per una panoramica della configurazione di Microsoft 365 p
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: configurare Microsoft 365 for business (amministratore)
@@ -113,4 +113,4 @@ Se si conserva un Active Directory locale che contiene alcune risorse locali (ad
   
 [Gestire microsoft 365 for business](manage.md)[migrate a Microsoft 365 for business](migrate-to-microsoft-365-business.md)
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

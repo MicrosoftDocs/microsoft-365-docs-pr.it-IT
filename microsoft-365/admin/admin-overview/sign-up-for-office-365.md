@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Informazioni su ciò che è necessario conoscere prima di passare attraverso il processo di iscrizione per Office 365. '
-ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579170"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780518"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Come iscriversi-Guida per gli amministratori
 
@@ -70,7 +70,7 @@ Guarda un breve video sulla scelta di un piano Microsoft 365 for business.<br><b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Serve aiuto nella scelta? I consulenti di vendita sono a disposizione per rispondere a qualsiasi domanda. Basta andare a [confrontare tutti i prodotti](https://products.office.com/compare-all-microsoft-office-products?tab=2) e scegliere una delle opzioni di supporto per i contatti elencate sul lato sinistro della pagina.
   
@@ -115,9 +115,9 @@ Non è necessario annullare la versione di valutazione. Se non si acquista la so
 
 - **Indirizzo e informazioni di contatto dell'abbonamento:**
 
-  - **Paese** in cui verranno usati i servizi. **Non** sarà possibile modificare queste informazioni in un secondo momento, nemmeno durante il processo di iscrizione; sarà necessario riavviare la procedura guidata di iscrizione.
+  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
 
-  - **Indirizzo di posta elettronica** e **numero di telefono** per poter essere contattati in merito all'abbonamento, se necessario. Se ad esempio si dimentica la password, Microsoft può usare queste informazioni per inviarne una temporanea. Inoltre, le informazioni sulla fatturazione vengono inviate all'indirizzo specificato.
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > L'indirizzo di posta elettronica immesso qui è diverso dall'indirizzo di posta elettronica Microsoft 365 (il nome di accesso, in basso). Poiché a questo indirizzo vengono inviate anche le informazioni sulla fatturazione, è consigliabile usare un indirizzo appropriato per la ricezione di posta elettronica aziendale.
@@ -137,4 +137,4 @@ Non è necessario annullare la versione di valutazione. Se non si acquista la so
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video di formazione su Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video di formazione su Microsoft 365 per le aziende](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle impostazioni di protezione da posta indesiderata e sui filtri che consentono di prevenire la posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211417"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800108"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protezione dalla posta indesiderata in EOP
 
 > [!NOTE]
-> Questo argomento è destinato agli amministratori. Per gli argomenti degli utenti finali, vedere [Panoramica del filtro posta indesiderata](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) e informazioni [sulla posta indesiderata e sul phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Questo argomento è destinato agli amministratori. Per gli argomenti degli utenti finali, vedere [Panoramica del filtro posta indesiderata](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) e informazioni [sulla posta indesiderata e sul phishing](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, i messaggi di posta elettronica vengono protetti automaticamente dalla posta indesiderata (posta indesiderata) da EOP.
 
@@ -83,7 +83,7 @@ Di seguito sono riportate alcune procedure consigliate che si applicano a uno sc
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Impedire il recapito della posta indesiderata nella posta in arrivo
 
-- **Verificare le impostazioni dell'organizzazione**: guardare fuori per le impostazioni che consentono ai messaggi di ignorare il filtro posta indesiderata (ad esempio, se si aggiunge un dominio all'elenco dei domini consentiti nei criteri di protezione da posta indesiderata). Per le impostazioni consigliate, vedere [impostazioni consigliate per EOP e Microsoft 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) e [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md).
+- **Verificare le impostazioni dell'organizzazione**: guardare fuori per le impostazioni che consentono ai messaggi di ignorare il filtro posta indesiderata (ad esempio, se si aggiunge un dominio all'elenco dei domini consentiti nei criteri di protezione da posta indesiderata). Per le impostazioni consigliate, vedere [impostazioni consigliate per EOP e Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) e [creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md).
 
 - **Verificare che la regola di posta indesiderata sia abilitata nella cassetta postale dell'utente**: è abilitata per impostazione predefinita, ma se è disabilitata, i messaggi contrassegnati come posta indesiderata non possono essere spostati nella cartella posta indesiderata. Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 

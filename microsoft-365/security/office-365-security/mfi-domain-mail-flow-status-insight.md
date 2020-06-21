@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulla panoramica dello stato del flusso di posta del dominio principale nel dashboard del flusso di posta nel centro sicurezza & conformità.
-ms.openlocfilehash: 42ce0545dad2804829d15572ce6e1f5a0ca6b49f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 22b0f8cefe8baacac682550126de55dcbf880d73
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082845"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818592"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Informazioni dettagliate sullo stato del flusso di posta del dominio principale
 
@@ -32,6 +34,6 @@ Una x rossa per un dominio indica che il record MX è stato modificato e che il 
 
 ![Il riquadro a comparsa dettagli nell'Insight sullo stato del flusso di dominio superiore](../../media/domain-mail-flow-status-flyout.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
