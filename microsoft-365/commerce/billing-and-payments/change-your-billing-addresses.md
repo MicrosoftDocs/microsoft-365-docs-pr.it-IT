@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Informazioni su come aggiornare gli indirizzi di fatturazione per Microsoft 365 for business. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
-ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401799"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817030"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiare gli indirizzi di fatturazione
 
@@ -47,9 +47,9 @@ La fattura o la fattura contiene tre indirizzi:
 
 - **Indirizzo di fatturazione** L'indirizzo del reparto fatturazione, che in genere corrisponde all'indirizzo indicato in **Venduto a**.
 
-- **Indirizzo di utilizzo del servizio** L'indirizzo in cui viene usato li servizio. In genere corrisponde all'indirizzo indicato in **Venduto a**. Se l'organizzazione ha utenti remoti o più uffici, usare l'indirizzo in cui si trova la maggioranza degli utenti.
+- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
-Nella maggior parte dei casi questi indirizzi coincidono. Se occorre cambiare uno o più indirizzi, è possibile farlo. Si può anche specificare un indirizzo di posta elettronica alternativo a cui ricevere le notifiche sulla fatturazione e cambiare l'indirizzo di posta elettronica alternativo per altri amministratori.
+In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
   
 ::: moniker range="o365-worldwide"
 
@@ -166,7 +166,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 Per impostazione predefinita, le notifiche di fatturazione dell'organizzazione vengono inviate all'indirizzo di posta elettronica Microsoft e all'indirizzo di posta elettronica alternativo di ogni amministratore globale e di fatturazione dell'organizzazione. Ogni amministratore può cambiare l'indirizzo alternativo aggiornando le informazioni del suo profilo.
   
-1. Accedere a Microsoft 365 con l'account aziendale o dell'Istituto di istruzione come amministratore globale. [Informazioni su come effettuare l'accesso](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere a Microsoft 365 con l'account aziendale o dell'Istituto di istruzione come amministratore globale. [Informazioni su come effettuare l'accesso](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Selezionare l' **icona dell'utente**e quindi selezionare l' **account personale**.
   

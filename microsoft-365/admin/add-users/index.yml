@@ -12,12 +12,12 @@ metadata:
   ms.date: 01/27/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: ef25bfee5bd6d7a1ea498fd026e520859414bcf7
-  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+  ms.openlocfilehash: 25b100e8f685c94d3dccc290e8f80b25e24a6d9b
+  ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "44387106"
+  ms.lasthandoff: 06/18/2020
+  ms.locfileid: "44785473"
 landingContent:
 - title: Gestire gli utenti
   linkLists:
@@ -37,8 +37,12 @@ landingContent:
       url: ../manage/assign-licenses-to-users.md
     - text: Rimuovere licenze dagli utenti
       url: ../manage/remove-licenses-from-users.md
+    - text: Utenti guest
+      url: about-guest-users.md
     - text: Usare il dominio personalizzato
       url: ../email/change-email-address.md
+    - text: Aggiornare gli utenti alle app più recenti
+      url: ../setup/upgrade-users-to-latest-office-client.md
 - title: Gestire gruppi
   linkLists:
   - linkListType: how-to-guide

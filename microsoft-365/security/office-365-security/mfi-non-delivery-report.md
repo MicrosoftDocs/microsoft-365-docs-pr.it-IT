@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sul rapporto di mancato recapito nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 2ea15237900abd3d73634a9aa744b59ef7bce5ee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082683"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819510"
 ---
 # <a name="non-delivery-report"></a>Rapporto di mancato recapito
 
@@ -32,6 +34,6 @@ Quando si seleziona una riga nella tabella per visualizzare i dettagli del rappo
 
 ![Selezionare una riga nella tabella Details del rapporto di mancato recapito](../../media/non-delivery-report-details-table-select-row.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

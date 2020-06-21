@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per l'uso autonomo di Exchange Online Protection (EOP) per essere configurati per l'esito positivo ed evitare errori comuni di configurazione.
-ms.openlocfilehash: a2ef5d20a79a15e4b1965d352ed0603ac0783121
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e5e87883e9c8aad21552ebf306a9716f14532884
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616723"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739081"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedure consigliate per la configurazione di EOP autonomo
 
@@ -54,7 +54,7 @@ Queste impostazioni riguardano una serie di funzionalità esterne ai criteri di 
 |Inoltro SMTP autenticato|Disattivato|Disattivato|Inoltro SMTP client autenticato (noto anche come invio SMTP client o autenticazione SMTP) per i client POP3 e IMAP4 per l'invio di posta elettronica.|
 |Connettività EWS alla cassetta postale|Disattivato|Disattivato||
 |[Connettività di PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Disattivato|Disattivato|Disponibile per gli utenti di cassette postali o per gli utenti di posta (oggetti utente restituiti dal cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) ).|
-|Utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) per i mittenti whitelist quando possibile|Sì|Sì||
+|Utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) per aggiungere mittenti all'elenco Consenti|Sì|Sì||
 |[Blocco Edge basato su directory (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Abilitato|Abilitato|Tipo di dominio = autorevole|
 |[Configurare l'autenticazione a più fattori per tutti gli account di amministrazione](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Abilitato|Abilitato||
 |
@@ -71,7 +71,7 @@ Per migliorare il filtraggio della posta indesiderata nel servizio per tutti, è
 
 Creare regole del flusso di posta (note anche come regole di trasporto) oppure filtri personalizzati per soddisfare le proprie esigenze aziendali.
 
-Quando si distribuisce una nuova regola alla produzione, selezionare prima una delle modalità di prova per verificare l'effetto della regola. Quando si è soddisfatti del funzionamento della regola, cambiare la modalità della regola in **Applica**.
+When you deploy a new rule to production, select one of the test modes first to see the effect of the rule. Once you are satisfied that the rule is working in the manner intended, change the rule mode to **Enforce**.
 
 Quando si distribuiscono nuove regole, prendere in considerazione l'aggiunta dell'azione aggiuntiva **Genera rapporto operazioni non consentite** per monitorare la regola in azione.
 

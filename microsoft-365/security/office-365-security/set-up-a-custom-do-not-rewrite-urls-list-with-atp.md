@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare gli URL bloccati personalizzati per gli utenti e l'elenco di URL non riscritti per un gruppo di utenti nei criteri dei collegamenti sicuri ATP di Office 365.
-ms.openlocfilehash: f4e7067c9edc9bbe2965311a7c203cb16f242f49
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617243"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702537"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurare un elenco di URL non di riscrittura personalizzato utilizzando collegamenti sicuri di ATP
 
@@ -73,13 +73,15 @@ Per modificare (o definire) i criteri ATP, è necessario essere assegnati a un r
 
 - Gli URL specificati nell'elenco "non riscrivere" sono esclusi dall'analisi dei collegamenti sicuri ATP per i destinatari specificati.
 
+- È consigliabile aggiungere URL interni di uso comune all'elenco "non riscrivere" per migliorare l'esperienza dell'utente. Ad esempio, se si dispone di servizi locali, come Skype for business o SharePoint, è possibile aggiungere URL all'elenco per escluderli dall'analisi.
+
 - Se nell'elenco "non riscrivere" è già presente un elenco di URL, assicurarsi di esaminare l'elenco e aggiungere i caratteri jolly in base alle esigenze. Ad esempio, se l'elenco esistente dispone di una voce come `https://contoso.com/a` e si desidera includere i sottopercorsi come `https://contoso.com/a/b` nel criterio, aggiungere un carattere jolly alla voce in modo che appaia come `https://contoso.com/a/*` .
 
-- Quando si specifica un elenco "non riscrivere" per un criterio di collegamenti sicuri ATP, è possibile includere fino a tre asterischi jolly ( \* ). I caratteri jolly ( \* ) vengono utilizzati per includere in modo esplicito prefissi o sottodomini. La voce `contoso.com` non è la stessa `*.contoso.com/*` , perché `*.contoso.com/*` consente ai popoli di visitare i sottodomini e i percorsi nel dominio specificato.
+- Quando si specifica un elenco "non riscrivere" per un criterio di collegamenti sicuri ATP, è possibile includere fino a tre caratteri jolly ( \* ). I caratteri jolly includono in modo esplicito prefissi o sottodomini. Ad esempio, la voce `contoso.com` non è la stessa `*.contoso.com/*` , perché `*.contoso.com/*` consente agli utenti di visitare i sottodomini e i percorsi nel dominio specificato.
 
 Nella tabella seguente sono elencati esempi di elementi che è possibile immettere e quali effetti hanno tali voci.
 
-|**Voce di esempio**|**Cosa fa**|
+|Voce di esempio|Cosa fa|
 |:-----|:-----|
 |`contoso.com`|Consente ai destinatari di visitare un sito `https://contoso.com` , ad esempio, ma non sottodomini o percorsi.|
 |`*.contoso.com/*`|Consente ai destinatari di visitare un dominio, sottodomini e percorsi, ad esempio `https://www.contoso.com` ,, `https://www.contoso.com` `https://maps.contoso.com` o `https://www.contoso.com/a` . <br/><br/> Questa voce è intrinsecamente migliore rispetto `*contoso.com*` a quella, perché non include siti potenzialmente fraudolenti, come `https://www.falsecontoso.com` o`https://www.false.contoso.completelyfalse.com`|
