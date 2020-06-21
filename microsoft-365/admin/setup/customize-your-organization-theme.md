@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Informazioni su come modificare il tema predefinito di Microsoft 365 e personalizzarlo in modo che corrisponda al logo o al colore dell'azienda. "
-ms.openlocfilehash: 034e5cff726ea97397d5eee1592265ae3452209b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: f3ba6021205289426ee78f16c7d0678e4b81ef75
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678615"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779858"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizzare il tema Microsoft 365 per l'organizzazione
 
@@ -67,7 +67,7 @@ Come amministratore dell'abbonamento a Microsoft 365 for business, è possibile 
     
 4. Selezionare **Salva modifiche**.
     
-È possibile visualizzare subito il nuovo tema nell'interfaccia di amministrazione. Dopo un breve periodo di tempo, è possibile visualizzarlo in tutta la Microsoft 365, incluse le pagine in Outlook, SharePoint, [SharePoint Mobile app per iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)e l' [app per dispositivi mobili di SharePoint per Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284).
+È possibile visualizzare subito il nuovo tema nell'interfaccia di amministrazione. Dopo un breve periodo di tempo, è possibile visualizzarlo in tutta la Microsoft 365, incluse le pagine in Outlook, SharePoint, [SharePoint Mobile app per iOS](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)e l' [app per dispositivi mobili di SharePoint per Android](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284).
 
 È possibile rimuovere l'icona o i colori personalizzati in qualsiasi momento. Basta tornare alla pagina del tema e selezionare **Rimuovi tema personalizzato**.
   

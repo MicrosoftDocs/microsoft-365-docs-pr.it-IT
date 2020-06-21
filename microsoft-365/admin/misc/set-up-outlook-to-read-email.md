@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Informazioni su come configurare un account di posta elettronica in Outlook per Windows e Mac e sull'installazione delle app di Office e l'accesso ai messaggi online.
-ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e17e532afca0a552b7e0e2565cd34e9dda256421
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399279"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779990"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurare Outlook per leggere la posta elettronica
 
@@ -33,13 +33,13 @@ La sottoscrizione Microsoft 365 viene fornita con Outlook basato sul Web, ma se 
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Configurare un account di posta elettronica in Outlook
 
-Al primo avvio di Outlook si apre la Configurazione automatica account. In caso contrario, scegliere **File** e **Aggiungi account**.
+The first time you open Outlook, an Auto Account Wizard opens. If not, choose **File** then **Add Account**.
   
 1. Nella pagina **Account** scegliere **Avanti** \> **Aggiungi account**.
     
 2. Nella pagina **Configurazione automatica account** immettere il proprio nome, l'indirizzo di posta elettronica e la password e quindi scegliere **Avanti** \> **Fine**.
     
-Leggere l'[articolo completo](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).
+Leggere l'[articolo completo](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
 ## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Come si installano le app di Office, incluso Outlook?
 
@@ -59,7 +59,7 @@ Al primo avvio di Outlook si apre la procedura guidata Configura cartella Posta 
     
 3. Nella pagina **immettere le informazioni sull'account di Exchange** , immettere il proprio nome, l'indirizzo di posta elettronica e la password, quindi selezionare **Aggiungi account**.
     
-Leggere l'[articolo completo](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac). 
+Leggere l'[articolo completo](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac). 
   
 ## <a name="how-do-i-access-my-mail-online"></a>Come si accede alla posta online?
 

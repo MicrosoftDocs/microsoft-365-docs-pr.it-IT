@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Informazioni su come consentire ai membri di inviare messaggi di posta elettronica come gruppo di Microsoft 365 o di inviare messaggi di posta elettronica per conto di un gruppo di Microsoft 365.
-ms.openlocfilehash: a4d8cb65feab3fca69824adc8f7b4ef10e705d8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a93dda83b10d7c38c8c6e7d8fd484b37df565d0
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388138"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780470"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Consenti ai membri di inviare messaggi o Invia per conto di un gruppo
 
@@ -39,7 +39,7 @@ L'autorizzazione **Invia per conto** di consente a un utente di inviare messaggi
 > È possibile configurare **Invia come** o **Invia per conto** di un utente specificato, ma non di entrambi. Se si configurano entrambi, il valore predefinito sarà **Send As**.
 
 > [!TIP]
-> Vedere [inviare messaggi di posta elettronica da o per conto di un gruppo di Microsoft 365](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) per informazioni su come utilizzare Outlook e Outlook sul Web per inviare messaggi di posta elettronica da un gruppo.
+> Vedere [inviare messaggi di posta elettronica da o per conto di un gruppo di Microsoft 365](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) per informazioni su come utilizzare Outlook e Outlook sul Web per inviare messaggi di posta elettronica da un gruppo.
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Consenti ai membri di inviare messaggi di posta elettronica come gruppo
 
@@ -79,7 +79,7 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Altre informazioni sui gruppi di Microsoft 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Altre informazioni sui gruppi di Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

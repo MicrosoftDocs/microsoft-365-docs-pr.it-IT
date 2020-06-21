@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Gli utenti possono imparare a gestire i propri acquisti in modalità self-service.
-ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7513fc67ab80bcffe6e6159bb13db207be16d0e9
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403259"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741665"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gestire acquisti in modalità self-service (utenti)
 
@@ -105,9 +105,9 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ### <a name="update-an-existing-payment-method"></a>Aggiornare una modalità di pagamento esistente
 
-1. Nell'interfaccia di amministrazione, **andare alla**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">fatture & pagamenti</a> .
+1. Nell'interfaccia di amministrazione, **andare alla**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">fatture & pagamenti</a> .
 
-2. Per modificare un metodo di pagamento esistente, selezionarlo nell'elenco.
+2. Nella scheda **metodi di pagamento** scegliere un metodo di pagamento esistente nell'elenco.
 
 3. Nel riquadro a destra, scegliere **modifica**. È possibile modificare il codice di sicurezza, la data di scadenza, il nome sulla scheda e l'indirizzo.
 
@@ -115,20 +115,20 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ### <a name="add-a-new-payment-method"></a>Aggiungere un nuovo metodo di pagamento
 
-1. Nell'interfaccia di amministrazione, **andare alla**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">fatture & pagamenti</a> .
+1. Nell'interfaccia di amministrazione, **andare alla**  >  pagina<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">fatture & pagamenti</a> .
 
-2. Scegliere **Add a Payment Method**.
+2. Nella scheda **metodi di pagamento** scegliere **Aggiungi un metodo di pagamento**.
 
 3. Nel riquadro **Aggiungi un metodo di pagamento** , immettere le informazioni per il nuovo metodo di pagamento, quindi fare clic su **Aggiungi**.
 
 ## <a name="view-your-invoices"></a>Visualizzazione delle fatture
 
-1. Nell'interfaccia di amministrazione, andare a **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">bollette fatturazione & pagina pagamenti</a> .
+1. Nell'interfaccia di amministrazione, andare a **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">bollette fatturazione & pagina pagamenti</a> .
 
-2. In **fatture** selezionare la fattura che si desidera visualizzare.
+2. Nella scheda **fatture** selezionare la fattura che si desidera visualizzare. Se non sono visibili fatture, modificare i **3 mesi negli** **ultimi 6 mesi** oppure **specificare un intervallo di date**.
 
 ## <a name="need-help-contact-us"></a>Serve assistenza? Contattaci.
 
 Per domande comuni sugli acquisti in modalità self-service, vedere domande [frequenti sugli acquisti in modalità self-service](self-service-purchase-faq.md).
 
-Se hai domande o hai bisogno di assistenza per gli acquisti in modalità self-service, [Contatta il supporto](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Se hai domande o hai bisogno di assistenza per gli acquisti in modalità self-service, [Contatta il supporto](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).

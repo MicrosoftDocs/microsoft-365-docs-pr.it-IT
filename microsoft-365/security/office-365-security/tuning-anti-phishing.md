@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing in Microsoft 365 e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: ac416da714e30491f679e22909010a8c02fac843
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588441"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755053"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ottimizzare la protezione anti-phishing
 
@@ -51,17 +51,21 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
 - Su base mensile, eseguire il [Punteggio sicuro](../mtp/microsoft-secure-score.md) per valutare le impostazioni di sicurezza dell'organizzazione.
 
-- Esaminare periodicamente il [report di intelligence spoof](learn-about-spoof-intelligence.md) e [configurare l'intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) per la **quarantena** dei messaggi sospetti invece di recapitarli alla cartella posta indesiderata dell'utente.
+- Per i messaggi che finiscono in quarantena per sbaglio o per i messaggi consentiti tramite, è consigliabile cercare tali messaggi in [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md). È possibile eseguire una ricerca in base al mittente, al destinatario o all'ID del messaggio. Dopo aver individuato il messaggio, passare a dettagli facendo clic sull'oggetto. Per un messaggio in quarantena, vedere che cos'è la "tecnologia di rilevamento" in modo che sia possibile utilizzare il metodo appropriato per eseguire l'override. Per un messaggio consentito, vedere i criteri consentiti per il messaggio. 
+
+- La posta contraffatta è contrassegnata come phishing in ATP. A volte lo spoofing è benigno e a volte gli utenti non lo desiderano in quarantena. Per ridurre al minimo l'impatto degli utenti, esaminare periodicamente il [report di intelligence spoof](learn-about-spoof-intelligence.md). Dopo aver esaminato e apportato le modifiche necessarie, è possibile avere la certezza di [configurare l'intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) per la **quarantena** dei messaggi sospetti anziché recapitarli nella cartella posta indesiderata dell'utente.
+
+- È possibile ripetere il passaggio precedente per la rappresentazione (dominio o utente). Il rapporto di rappresentazione è disponibile in **Threat Management** \> **Dashboard** \> **Insights**dashboard di gestione delle minacce.
 
 - Esaminare periodicamente il [rapporto sullo stato della protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report).
 
-- Alcuni clienti consentono inavvertitamente di inviare messaggi di phishing inserendo i propri domini nell'elenco Consenti mittente o Consenti dominio nei criteri di protezione da posta indesiderata. Se si sceglie di eseguire questa operazione, è necessario utilizzare estrema cautela. Anche se questa configurazione consentirà alcuni messaggi legittimi tramite, consentirà anche messaggi dannosi che verrebbero normalmente bloccati dai filtri di posta indesiderata e/o phishing.
+- Alcuni clienti consentono inavvertitamente di inviare messaggi di phishing inserendo i propri domini nell'elenco Consenti mittente o Consenti dominio nei criteri di protezione da posta indesiderata. Anche se questa configurazione consentirà alcuni messaggi legittimi tramite, consentirà anche messaggi dannosi che verrebbero normalmente bloccati dai filtri di posta indesiderata e/o phishing. Invece di consentire il dominio, è necessario correggere il problema sottostante.
 
   Il modo migliore per gestire i messaggi legittimi bloccati da Microsoft 365 (falsi positivi) che coinvolgono i mittenti nel dominio consiste nel configurare completamente e completamente i record SPF, DKIM e DMARC in DNS per _tutti_ i domini di posta elettronica:
 
   - Verificare che il record SPF identifichi _tutte le_ origini della posta elettronica per i mittenti del dominio (non dimenticare i servizi di terze parti).
 
-  - Utilizzare il fail duro ( \- ) per garantire che i mittenti non autorizzati vengano rifiutati dai sistemi di posta elettronica configurati per tale operazione. È possibile utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) per identificare i mittenti che utilizzano il dominio in modo che sia possibile includere mittenti di terze parti autorizzati nel record SPF.
+  - Utilizzare l'operazione non riuscita ( \- tutto) per garantire che i mittenti non autorizzati vengano rifiutati dai sistemi di posta elettronica configurati per l'esecuzione. È possibile utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) per identificare i mittenti che utilizzano il dominio in modo che sia possibile includere mittenti di terze parti autorizzati nel record SPF.
 
   Per istruzioni sulla configurazione, vedere:
   
@@ -72,6 +76,8 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
   - [Usare DMARC per convalidare la posta elettronica](use-dmarc-to-validate-email.md)
 
 - Quando possibile, è consigliabile recapitare la posta elettronica per il dominio direttamente a Microsoft 365. In altre parole, puntare il record MX del dominio Microsoft 365 a Microsoft 365. Exchange Online Protection (EOP) è in grado di fornire la migliore protezione per gli utenti del cloud quando la posta viene recapitata direttamente a Microsoft 365. Se è necessario utilizzare un sistema di igiene della posta elettronica di terze parti di fronte a EOP, utilizzare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+- Gli utenti devono [segnalare i messaggi](enable-the-report-message-add-in.md) a Microsoft, che possono formare il sistema. Gli amministratori dovrebbero anche avvalersi delle funzionalità di [invio di amministratore](admin-submission.md) .
 
 - L'autenticazione a più fattori è un buon modo per impedire gli account compromessi. È consigliabile prendere in considerazione l'abilitazione dell'AMF per tutti gli utenti. Per un approccio graduale, iniziare abilitando l'AMF per gli utenti più sensibili (amministratori, dirigenti e così via) prima di abilitare l'AMF per tutti. Per istruzioni, vedere [configurare l'autenticazione](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)a più fattori.
 

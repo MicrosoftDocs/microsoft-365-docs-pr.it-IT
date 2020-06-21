@@ -23,22 +23,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Informazioni su come aggiungere la firma di posta elettronica, la dichiarazione di non responsabilità legale o la divulgazione a tutti i messaggi di posta elettronica che entrano o lasciano l'organizzazione.
-ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7e19c6e3f425f95429aefd769d2b8992fde141e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398955"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779882"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Creare firme e dichiarazioni di non responsabilità a livello di organizzazione
 
- È possibile aggiungere una firma di posta elettronica, una dichiarazione di non responsabilità legale o una dichiarazione di riservatezza ai messaggi di posta elettronica in entrata e in uscita dall'organizzazione. Questo elemento può essere configurato in modo da applicarlo a tutti i messaggi in entrata e in uscita, come illustrato di seguito, oppure solo a determinati messaggi, come quelli che contengono parole o modelli di testo specifici.
+ You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
  Guardare un breve video sulla creazione di una firma di posta elettronica a livello aziendale. <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Creare una firma da applicare a tutti i messaggi
 
@@ -89,7 +89,7 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
 
 9. Selezionare **selezionarne una** e scegliere **Wrap** come opzione di fallback. Quindi scegliere **OK**. Con questa opzione, se la dichiarazione di non responsabilità non può essere aggiunta a causa di un'impostazione della posta, come la crittografia, verrà incorporata nella busta del messaggio.
     
-10. Lasciare selezionata l'opzione **Controlla questa regola con livello di gravità**. Quindi scegliere **Basso**, **Medio** o **Alto** come livello da usare nel log dei messaggi. 
+10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
     
 11. Scegliere **Applica** per attivare immediatamente la dichiarazione di non responsabilità, a meno che non si voglia prima testarla. 
     

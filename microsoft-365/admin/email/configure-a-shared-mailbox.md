@@ -1,5 +1,5 @@
 ---
-title: Configurare una cassetta postale condivisa
+title: Configurare le impostazioni delle cassette postali condivise
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Dopo aver creato una cassetta postale condivisa, è necessario configurare alcune impostazioni per gli utenti, ad esempio l'inoltro della posta elettronica e le risposte automatiche. Successivamente, potrebbe essere necessario modificare altre impostazioni, ad esempio il nome della cassetta postale o i membri.
-ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3bde856f4db80192f5ed058a18c7942aa6a724b2
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400149"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739208"
 ---
-# <a name="configure-a-shared-mailbox"></a>Configurare una cassetta postale condivisa
+# <a name="configure-shared-mailbox-settings"></a>Configurare le impostazioni delle cassette postali condivise
 
 Dopo aver [creato una cassetta postale condivisa](create-a-shared-mailbox.md), è necessario configurare alcune impostazioni per gli utenti delle cassette postali, ad esempio l'inoltro della posta elettronica e le risposte automatiche. Successivamente, potrebbe essere necessario modificare altre impostazioni, ad esempio il nome della cassetta postale, i membri o le autorizzazioni per i membri. 
 
@@ -118,7 +118,7 @@ Non è necessario assegnare una licenza alla cassetta postale condivisa per inol
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Consentire a tutti di visualizzare la posta inviata (le risposte)
 
-Per impostazione predefinita, i messaggi inviati dalla cassetta postale condivisa non vengono salvati nella relativa cartella Posta inviata, bensì nella cartella Posta inviata della persona che ha inviato il messaggio.
+By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
 
 Se si desidera consentire a tutti di visualizzare il messaggio di posta elettronica inviato, nell'interfaccia di amministrazione modificare le impostazioni della cassetta postale condivisa e selezionare modifica **elementi inviati** \> **Edit**.
 

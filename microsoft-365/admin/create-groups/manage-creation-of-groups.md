@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Informazioni su come controllare quali utenti possono creare gruppi di Microsoft 365.
-ms.openlocfilehash: f3de4ac0856f1281151e6d1c686d90559a5e8544
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b64e7ac96c5a0e38583d00f8a61bd47c5304cf45
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387994"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761675"
 ---
 # <a name="manage-who-can-create-groups"></a>Gestire gli utenti autorizzati a creare gruppi
 
@@ -45,14 +45,12 @@ In questo articolo viene illustrato come disabilitare la possibilità di creare 
 - Microsoft Teams
 
 - Microsoft Stream
-    
-- StaffHub
-    
+
 - Planner
     
 - PowerBI
 
-- Roadmap
+- Progetto per il Web e la Guida di orientamento
     
 È possibile limitare la creazione di un gruppo di Microsoft 365 ai membri di un gruppo di sicurezza specifico. Per configurarlo, è necessario utilizzare Windows PowerShell. In questo articolo vengono illustrati i passaggi necessari.
   
@@ -125,7 +123,7 @@ Sostituire *\<SecurityGroupName\>* con il nome del gruppo di sicurezza creato. A
 
 `$GroupName = "Group Creators"`
 
-Salvare il file come GroupCreators. ps1. 
+Salvare il file come GroupCreators.ps1. 
 
 Nella finestra di PowerShell, passare al percorso in cui è stato salvato il file (digitare "CD <FileLocation> ").
 
@@ -173,7 +171,7 @@ Se in futuro si desidera modificare il gruppo di sicurezza utilizzato, è possib
 
 Se si desidera disattivare la restrizione per la creazione di un gruppo e consentire nuovamente a tutti gli utenti di creare gruppi, impostare $GroupName su "" e $AllowGroupCreation su "true" ed eseguire di nuovo lo script.
     
-## <a name="step-4-verify-that-it-works"></a>Passaggio 4: verificare che funzioni
+## <a name="step-3-verify-that-it-works"></a>Passaggio 3: Verificare il funzionamento del comando
 
 Per rendere effettive le modifiche possono essere necessari 30 minuti o più. È possibile verificare le nuove impostazioni eseguendo le operazioni seguenti:
 

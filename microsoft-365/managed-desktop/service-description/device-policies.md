@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 35c24153bdacbdc0d07d65b508e66878bd0045e4
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: e0e5c003ed78b78c5f259eae7e08478d523b5b12
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029829"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773788"
 ---
 # <a name="device-configuration"></a>Configurazione delle periferiche
 
@@ -33,11 +33,11 @@ In questa tabella vengono evidenziati i criteri predefiniti applicati a tutti i 
 
 Criteri | Descrizione
 --- | ---
-Previsione di sicurezza | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) for MDM è configurato per tutti i dispositivi Microsoft Managed Desktop. Questa linea di base è la configurazione standard del settore. È stato rilasciato pubblicamente, testato bene ed è stato recensito dagli esperti di sicurezza di Microsoft per mantenere i dispositivi e le app desktop gestiti da Microsoft protette nei luoghi di lavoro moderni. <br><br>Per attenuare le minacce nel panorama delle minacce di sicurezza in continua evoluzione, la linea di base per la sicurezza di Microsoft verrà aggiornata e distribuita nei dispositivi Microsoft Managed Desktop con ogni aggiornamento delle funzionalità di Windows 10.<br><br>Per ulteriori informazioni, vedere [baseline di sicurezza per Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
+Previsione di sicurezza | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) for MDM è configurato per tutti i dispositivi Microsoft Managed Desktop. Questa linea di base è la configurazione standard del settore. È stato rilasciato pubblicamente, testato bene ed è stato recensito dagli esperti di sicurezza di Microsoft per mantenere i dispositivi e le app desktop gestiti da Microsoft protette nei luoghi di lavoro moderni. <br><br>Per attenuare le minacce nel panorama delle minacce di sicurezza in continua evoluzione, la linea di base per la sicurezza di Microsoft verrà aggiornata e distribuita nei dispositivi Microsoft Managed Desktop con ogni aggiornamento delle funzionalità di Windows 10.<br><br>Per ulteriori informazioni, vedere [previsioni di sicurezza di Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines).
 Modello di sicurezza consigliato per Microsoft Managed Desktop | Un set di modifiche consigliate per la linea di base di sicurezza che consente di ottimizzare l'esperienza utente.  Tali modifiche sono documentate nell' [addendum alla sicurezza](#security-addendum). Gli aggiornamenti all'addendum dei criteri si verificano in base alle esigenze.  
 Distribuzione degli aggiornamenti | Utilizzare Windows Update for business per eseguire la distribuzione graduale degli aggiornamenti software. Gli amministratori IT non possono modificare le impostazioni per i criteri di gruppo di distribuzione. Per ulteriori informazioni sulla distribuzione basata su gruppo, vedere [come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop](updates.md).
 Connessioni con tassametro | Per impostazione predefinita, gli aggiornamenti su connessioni con tassametro (come le reti LTE) sono disattivati, anche se ogni utente può abilitare questa funzionalità in modo indipendente nelle **impostazioni > gli aggiornamenti > opzioni avanzate**. Se si desidera consentire a tutti gli utenti di abilitare gli aggiornamenti su connessioni a tassametro, [inviare una richiesta di modifica](../working-with-managed-desktop/admin-support.md), che attiva questa impostazione per tutti i dispositivi.
-| Conformità del dispositivo | Questi criteri sono configurati per tutti i dispositivi desktop Microsoft gestiti. Un dispositivo viene segnalato come non conforme quando deriva dalla configurazione di sicurezza necessaria.
+| Conformità dispositivo | Questi criteri sono configurati per tutti i dispositivi desktop Microsoft gestiti. Un dispositivo viene segnalato come non conforme quando deriva dalla configurazione di sicurezza necessaria.
 
 ## <a name="diagnostic-data"></a>Dati di diagnostica
 

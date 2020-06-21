@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono ottenere informazioni su come configurare le voci di URL e file nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance.
-ms.openlocfilehash: 0143ee2601a4cb9593c79f8c6c62d1f06914088f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 742a44c7ed63c8a3037e2ada295c94f89afa9c93
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613421"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726817"
 ---
 # <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Gestire gli URL e i file nell'elenco Consenti/blocca tenant
 
@@ -34,7 +34,7 @@ L'elenco Consenti/blocca tenant nel centro sicurezza & conformità consente di i
 
 In questo argomento viene descritto come configurare le voci nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con le cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina dell' **elenco Consenti/blocca tenant** , utilizzare <https://protection.office.com/tenantAllowBlockList> .
 
@@ -58,7 +58,17 @@ In questo argomento viene descritto come configurare le voci nell'elenco Consent
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere e rimuovere valori dall'elenco Consenti/blocca tenant, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura all'elenco Consenti/blocca tenant, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Prima di poter eseguire le procedure descritte in questo argomento, è necessario assegnare le autorizzazioni seguenti:
+
+  - Per aggiungere e rimuovere valori dall'elenco Consenti/blocca tenant, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+
+    - **Gestione organizzazione** o **amministratore della sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+    - Gestione dell' **organizzazione** o **gestione dell'igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Per l'accesso in sola lettura all'elenco Consenti/blocca tenant, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+
+    - **Lettore di sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+    - **Gestione dell'organizzazione in sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Utilizzare il Centro sicurezza & conformità per creare le voci URL nell'elenco Consenti/blocca tenant
 
@@ -262,7 +272,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Remove-Tena
 
 - Gli indirizzi IP4v e IPv6 sono consentiti, ma le porte TCP/UDP non lo sono.
 
-- Le estensioni dei nomi di file non sono consentite (ad esempio, test. pdf).
+- Le estensioni dei nomi di file non sono consentite (ad esempio, test.pdf).
 
 - Unicode non è supportato, ma Punycode è.
 

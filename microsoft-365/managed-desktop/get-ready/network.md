@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f70f997b1f3b2ef47cfc647178c1836893bc3e66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
+ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632840"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735515"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configurazione di rete per Microsoft Managed Desktop
 
@@ -53,8 +53,8 @@ Sono disponibili URL provenienti da diversi prodotti Microsoft che devono essere
 
 Servizio Microsoft | Origine documentazione-URL necessari nell'elenco Consenti
 --- | ---
-Windows 10 Enterprise incluso Windows Update for business | [Gestire gli endpoint di connessione per Windows 10, versione 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gestire gli endpoint di connessione per Windows 10, versione 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gestire gli endpoint di connessione per Windows 10, versione 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
-Ottimizzazione del recapito | [Configurare l'ottimizzazione del recapito per gli aggiornamenti di Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Windows 10 Enterprise incluso Windows Update for business | [Gestire gli endpoint di connessione per Windows 10, versione 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gestire gli endpoint di connessione per Windows 10, versione 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gestire gli endpoint di connessione per Windows 10, versione 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Gestire gli endpoint di connessione per Windows 10, versione 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
+Ottimizzazione recapito | [Configurare l'ottimizzazione del recapito per gli aggiornamenti di Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Intervalli di indirizzi IP e URL di Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Identità ibrida porte e protocolli necessari](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) e [Active Directory e servizi di dominio Active Directory requisiti di porta](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Requisiti di configurazione della rete Intune](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Endpoint di rete per Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)

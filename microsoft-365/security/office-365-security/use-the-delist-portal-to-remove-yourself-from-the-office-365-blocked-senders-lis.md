@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo viene illustrato come utilizzare il portale di esclusione per rimuovere se stessi dall'elenco dei mittenti bloccati di Microsoft 365.
-ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2d9dbba12740e62305e1bcfd193175659be34026
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208538"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739238"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco mittenti bloccati
 
@@ -43,7 +43,7 @@ _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di
 
 1. In un browser Web, andare a [https://sender.office.com](https://sender.office.com).
 
-2. Seguire le istruzioni visualizzate sulla pagina. Accertarsi di utilizzare l'indirizzo di posta elettronica al quale è stato recapitato il messaggio di errore e l'indirizzo IP specificato nel messaggio di errore. È possibile immettere solo un indirizzo di posta elettronica e un indirizzo IP per accesso.
+2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
 
 3. Fare clic su **Invia**.
 
@@ -60,4 +60,4 @@ _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di
     > [!NOTE]
     > Potrebbe richiedere fino a 24 ore o i risultati possono variare notevolmente prima che vengano rimosse le restrizioni.
 
-Vedere [creare elenchi di mittenti attendibili in EOP](create-safe-sender-lists-in-office-365.md) e la [protezione da posta indesiderata in uscita in EOP](outbound-spam-controls.md) per impedire che IP venga inserito nella lista nera.
+Vedere [creare elenchi di mittenti attendibili in EOP](create-safe-sender-lists-in-office-365.md) e la [protezione da posta indesiderata in uscita in EOP](outbound-spam-controls.md) per impedire che un IP venga bloccato.

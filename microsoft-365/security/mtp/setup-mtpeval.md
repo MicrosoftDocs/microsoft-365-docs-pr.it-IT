@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 117681bd4722615e870594e46d6896e9128d0d0c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6cba773d0c4bea259db151d5a8f1d8e03954a045
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209224"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717296"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Configurare l'ambiente di test lab di Microsoft Threat Protection 
 
@@ -110,7 +110,7 @@ In questa fase, verranno guidati i seguenti aspetti:
 <br>![Image of_Office 365 E5 dove è possibile impostare se eseguire la migrazione o meno dei messaggi di posta elettronica](../../media/mtp-eval-20.png) <br>
  
 13. Scegliere servizi online. Selezionare **Exchange** e fare clic su **Avanti**. 
-<br>![Image of_Office 365 E5 dove è possibile scegliere i servizi online come Exchange o Skype for business o mibile Device Management per Office 365](../../media/mtp-eval-21.png) <br>
+<br>![Image of_Office 365 E5 dove è possibile scegliere i servizi online](../../media/mtp-eval-21.png) <br>
 
 14. Aggiungere i record MX, CNAME e TXT al dominio. Al termine, selezionare **Verifica**.
 <br>![Image of_Office 365 E5 è possibile aggiungere i record DNS](../../media/mtp-eval-22.png) <br>
@@ -149,4 +149,6 @@ In questa fase, verranno guidati i seguenti aspetti:
 
 
 ## <a name="next-step"></a>Passaggio successivo
-||| |:-------|:-----| config-onboard. png) <br>[Fase 3: configurare & onboard](config-mtpeval.md) | Configurare ogni pilastro Microsoft Threat Protection per l'ambiente di test lab di Microsoft Threat Protection e onboard your Endpoints.
+|||
+|:-------|:-----|
+|![Fase 3: configurare & onboard](../../media/config-onboard.png) <br>[Fase 3: configurare & onboard](config-mtpeval.md) | Configurare ogni pilastro di Microsoft Threat Protection per il Lab di valutazione di Microsoft Threat Protection e onboard your Endpoints.

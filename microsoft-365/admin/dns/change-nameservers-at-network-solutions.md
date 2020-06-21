@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Informazioni su come configurare il dominio personalizzato Microsoft con le soluzioni di rete se si desidera che Microsoft gestisca i record DNS. '
-ms.openlocfilehash: 4a7c1eaab132b0ab41a62ba62d87956ccfafc014
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 69e63a6e5dac6e75e66cb816538d356fdd922581
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400606"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780386"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>Modificare i server dei nomi per configurare Microsoft con le soluzioni di rete
 
@@ -37,14 +37,14 @@ Se si desidera gestire i record DNS per l'utente, seguire le istruzioni riportat
     
 ## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a>Aggiungere un record TXT su Network Solutions per verificare che si è proprietari del dominio
 
-Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft che si è il proprietario del dominio.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:47)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-Network-Solutions-69b092e3-c026-4d19-a7d0-16cdb2d8b261?ui=en-US&amp;rs=en-US&amp;ad=US).
+Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:47)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).
   
-1. Per iniziare, passare alla propria pagina dei domini su Network Solutions usando [questo collegamento](https://www.networksolutions.com/manage-it). Verrà richiesto di eseguire l'accesso.
+1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
     
     > [!IMPORTANT]
     > Prima di selezionare il pulsante di **accesso** , selezionare First **Manage My Domain Names** nell'elenco **a discesa log in to:** .
@@ -108,7 +108,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
   
 > [!NOTE]
->  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record dei server dei nomi del dominio
 
@@ -117,7 +117,7 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
 > [!CAUTION]
 > Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft, sono coinvolti tutti i servizi attualmente associati al dominio. Ad esempio, tutta la posta elettronica inviata al dominio (come rob@ *your_domain* . com) inizierà a venire a Microsoft dopo aver apportato questa modifica.
   
-Pronto per modificare i record NS in modo che Microsoft possa configurare il dominio? Seguire le istruzioni riportate di seguito o [guardare il video (iniziare da 2:23)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-Network-Solutions-69b092e3-c026-4d19-a7d0-16cdb2d8b261?ui=en-US&amp;rs=en-US&amp;ad=US).
+Pronto per modificare i record NS in modo che Microsoft possa configurare il dominio? Seguire le istruzioni riportate di seguito o [guardare il video (iniziare da 2:23)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).
   
 > [!IMPORTANT]
 >  Dopo aver completato la procedura descritta in questa sezione, gli *unici* server dei nomi che devono essere elencati sono questi quattro: **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**e **NS4.BDM.microsoftonline.com**. La seguente procedura illustra come eliminare eventuali altri server dei nomi indesiderati dall'elenco e come aggiungere i server dei nomi  *corretti*  se non sono presenti nell'elenco. 
@@ -179,7 +179,7 @@ Pronto per modificare i record NS in modo che Microsoft possa configurare il dom
 ### <a name="if-there-are-nameservers-already-listed"></a>Se SONO già elencati server dei nomi
 
 > [!CAUTION]
-> Seguire questa procedura  *solo*  se sono presenti server dei nomi diversi dai quattro server dei nomi  *corretti*  . In altre parole, eliminare  *solo*  eventuali server dei nomi  *diversi*  da **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com** o **ns4.bdm.microsoftonline.com**.
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers. (That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.)
   
 1. Se sono già presenti server dei nomi, eliminarli selezionando ogni server e premendo **CANC**.
     

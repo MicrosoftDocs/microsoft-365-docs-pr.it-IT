@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Informazioni su come creare contatti nell'interfaccia di amministrazione e gestire l'elenco indirizzi globale.
-ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ecbeb508519fa20e70e9768874d7be57aa2be481
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399423"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780014"
 ---
 # <a name="quick-help-contacts"></a>Guida rapida: Contatti
 
@@ -42,7 +42,7 @@ Se sono necessari contatti condivisi che possono essere configurati da tutti gli
   
 ## <a name="how-are-these-contacts-different-from-my-contacts"></a>Che differenza c'è tra questi contatti e i contatti personali?
 
-I contatti personali sono i contatti creati per se stessi e gli utenti creano per se stessi, ma altri non possono vedere. I contatti creati nell'interfaccia di amministrazione sono invece contatti per l'organizzazione che possono essere visualizzati da tutti in aggiunta ai propri. Per ulteriori informazioni, vedere [people Overview-Outlook Web App](https://support.microsoft.com/en-us/office/people-overview-outlook-web-app-5fe173cf-e620-4f62-9bf6-da5041f651bf).
+I contatti personali sono i contatti creati per se stessi e gli utenti creano per se stessi, ma altri non possono vedere. I contatti creati nell'interfaccia di amministrazione sono invece contatti per l'organizzazione che possono essere visualizzati da tutti in aggiunta ai propri. Per ulteriori informazioni, vedere [people Overview-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>Cosa devono fare gli utenti per accedere ai contatti creati nell'interfaccia di amministrazione?
 

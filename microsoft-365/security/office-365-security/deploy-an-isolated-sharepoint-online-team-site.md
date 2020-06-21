@@ -16,25 +16,25 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Utilizzare questa guida alla distribuzione dettagliata per creare e configurare un sito del team di SharePoint Online isolato in Microsoft Office 365.
-ms.openlocfilehash: 772a9e5ea08871857a70cc840e377046d459a314
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 05fdbcfff792805708bfe0b8027e955d54a1ec6f
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036452"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755225"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Distribuire un sito del team di SharePoint Online isolato
 
  **Sintesi:** istruzioni dettagliate per distribuire un nuovo sito del team di SharePoint Online isolato.
   
-In questo articolo viene fornita una guida dettagliata alla distribuzione per creare e configurare un sito del team di SharePoint Online isolato in Microsoft Office 365. Questa procedura presuppone l'utilizzo di tre gruppi di SharePoint predefiniti e dei livelli di autorizzazione corrispondenti, con un singolo gruppo di Azure Active Directory (AD) per ogni livello di accesso.
+This article is a step-by-step deployment guide for creating and configuring an isolated SharePoint Online team site in Microsoft Office 365. These steps assume the use of the three default SharePoint groups and corresponding permission levels, with a single Azure Active Directory (AD)-based access group for each level of access.
   
 ## <a name="phase-1-create-and-populate-the-team-site-access-groups"></a>Fase 1: creare e popolare i gruppi di accesso al sito del team
 
 In questa fase, vengono creati tre gruppi di accesso basati su Azure AD per i tre gruppi di SharePoint predefiniti e vengono popolati con gli account utente appropriati.
   
 > [!NOTE]
-> La procedura seguente presuppone che tutti gli account utente necessari già esistano e siano dotati delle licenze appropriate. In caso contrario, aggiungerli e assegnare le licenze prima di procedere con il passaggio 1. 
+> The following steps assume that all necessary user accounts already exist and are assigned the appropriate licenses. If not, please add them and assign licenses before proceeding to step 1. 
   
 ### <a name="step-1-list-the-sharepoint-online-admins-for-the-site"></a>Passaggio 1: elencare gli amministratori di SharePoint Online per il sito
 
@@ -161,7 +161,7 @@ In questa fase, viene creato il sito di SharePoint Online isolato e vengono conf
   
 Creare innanzitutto il sito del team di SharePoint Online seguendo questa procedura.
   
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 con un account che verrà utilizzato anche per amministrare il sito del team di SharePoint Online (un amministratore di SharePoint Online). Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 con un account che verrà utilizzato anche per amministrare il sito del team di SharePoint Online (un amministratore di SharePoint Online). Per informazioni, vedere [Dove accedere a Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Nell'interfaccia di amministrazione di Microsoft 365, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
 
@@ -191,7 +191,7 @@ Successivamente, dal nuovo sito del team di SharePoint Online configurare le aut
     
 6. Nel riquadro **autorizzazioni** , fare clic su **Impostazioni avanzate autorizzazioni**.
     
-7. Nella scheda **autorizzazioni** del browser fare clic ** \<su nome sito> membri** nell'elenco.
+7. Nella scheda **autorizzazioni** del browser fare clic su ** \<site name> membri** nell'elenco.
     
 8. In **Utenti e gruppi** fare clic su **Nuovo**.
     
@@ -199,7 +199,7 @@ Successivamente, dal nuovo sito del team di SharePoint Online configurare le aut
     
 10. Fare clic sul pulsante Indietro del browser.
     
-11. Fare clic su ** \<nome sito> proprietari** nell'elenco.
+11. Fare clic su ** \<site name> proprietari** nell'elenco.
     
 12. In **Utenti e gruppi** fare clic su **Nuovo**.
     
@@ -207,7 +207,7 @@ Successivamente, dal nuovo sito del team di SharePoint Online configurare le aut
     
 14. Fare clic sul pulsante Indietro del browser.
     
-15. Fare clic su ** \<nome sito> visitatori** nell'elenco.
+15. Fare clic su ** \<site name> visitatori** nell'elenco.
     
 16. In **Utenti e gruppi** fare clic su **Nuovo**.
     
@@ -217,11 +217,11 @@ Successivamente, dal nuovo sito del team di SharePoint Online configurare le aut
     
 I risultati di queste impostazioni delle autorizzazioni sono i seguenti:
   
-- Il ** \<nome del sito> proprietari** gruppo di SharePoint contiene il gruppo di accesso degli amministratori del sito, in cui tutti i membri hanno il livello di autorizzazione **controllo completo** .
+- Il gruppo ** \<site name> proprietari** di SharePoint contiene il gruppo di accesso degli amministratori del sito, in cui tutti i membri hanno il livello di autorizzazione **controllo completo** .
     
-- Il ** \<nome del sito> membri** del gruppo di SharePoint contiene il gruppo di accesso dei membri del sito, in cui tutti i membri hanno il livello di autorizzazione **modifica** .
+- Il gruppo ** \<site name> membri** di SharePoint contiene il gruppo di accesso dei membri del sito, in cui tutti i membri hanno il livello di autorizzazione **modifica** .
     
-- Il ** \<nome del sito> visitatori** gruppo di SharePoint contiene il gruppo di accesso dei visualizzatori del sito, in cui tutti i membri hanno il livello di autorizzazione **lettura** .
+- Il gruppo ** \<site name> visitatori** di SharePoint contiene il gruppo di accesso dei visualizzatori del sito, in cui tutti i membri hanno il livello di autorizzazione **lettura** .
     
 - I membri non hanno la possibilità di invitare altri membri o di richiedere l'accesso per utenti non membri.
     

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Le cassette postali condivise vengono utilizzate quando più persone devono accedere alla stessa cassetta postale. Informazioni su ciò che è necessario sapere prima di creare una cassetta postale condivisa.
-ms.openlocfilehash: 6d9b7f59840b8eb4ce38822945066e14d9a86a4d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8ca942d35d54fc8cc635e401c250ce409b9af0dd
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400209"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780314"
 ---
 # <a name="about-shared-mailboxes"></a>Informazioni sulle cassette postali condivise
 
@@ -42,7 +42,7 @@ Prima [di creare una cassetta postale condivisa](create-a-shared-mailbox.md), ec
 
 - **Utenti esterni:** Non è possibile concedere agli utenti esterni alla propria azienda (ad esempio persone con un account Gmail) l'accesso alla cassetta postale condivisa. Se si vuole farlo comunque, è consigliabile creare un gruppo di Outlook. Per ulteriori informazioni, vedere [creare un gruppo di Microsoft 365 nell'](../create-groups/create-groups.md)interfaccia di amministrazione.
 
--  **Utilizzo con Outlook:** Oltre a utilizzare Outlook sul Web dal browser per accedere alle cassette postali condivise, è anche possibile usare l'app Outlook per iOS o l'app Outlook per Android. Per ulteriori informazioni, vedere <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">aggiungere una cassetta postale condivisa a Outlook Mobile</a>. Un'altra opzione consiste nel creare un gruppo per la cassetta postale condivisa. Per ulteriori informazioni, vedere [confronto di gruppi](../create-groups/compare-groups.md).  
+-  **Utilizzo con Outlook:** Oltre a utilizzare Outlook sul Web dal browser per accedere alle cassette postali condivise, è anche possibile usare l'app Outlook per iOS o l'app Outlook per Android. Per ulteriori informazioni, vedere <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">aggiungere una cassetta postale condivisa a Outlook Mobile</a>. Un'altra opzione consiste nel creare un gruppo per la cassetta postale condivisa. Per ulteriori informazioni, vedere [confronto di gruppi](../create-groups/compare-groups.md).  
 
 - **Crittografia:** Non è possibile crittografare la posta elettronica inviata da una cassetta postale condivisa. Ciò è dovuto al fatto che una cassetta postale condivisa non dispone di un proprio contesto di sicurezza (nome utente/password) in modo che non possa essere assegnata una chiave. Se più di una persona è un membro e inviano/ricevono messaggi di posta elettronica crittografati con le proprie chiavi, altri membri potrebbero essere in grado di leggere il messaggio di posta elettronica e altri potrebbero non, a seconda di quale chiave pubblica il messaggio di posta elettronica è stato crittografato con.
 
@@ -56,7 +56,7 @@ Prima [di creare una cassetta postale condivisa](create-a-shared-mailbox.md), ec
 
 - **Troppi utenti:** Quando si verificano contemporaneamente troppi utenti designati che accedono a una cassetta postale condivisa, potrebbero non essere in grado di connettersi a questa cassetta postale. In questo caso, è possibile valutare la riduzione del numero di utenti o l'utilizzo di un carico di lavoro diverso, ad esempio un gruppo di Microsoft 365 o una cartella pubblica.
 
-- **Eliminazione dei messaggi:** Purtroppo, non è possibile impedire agli utenti di eliminare i messaggi in una cassetta postale condivisa. In questo modo, è possibile creare un gruppo di Microsoft 365 anziché una cassetta postale condivisa. Un gruppo in Outlook è simile a una cassetta postale condivisa. Per un confronto tra i due, vedere [confrontare i gruppi](../create-groups/compare-groups.md). Per ulteriori informazioni sui gruppi, vedere ulteriori informazioni [sui gruppi](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx).
+- **Eliminazione dei messaggi:** Purtroppo, non è possibile impedire agli utenti di eliminare i messaggi in una cassetta postale condivisa. In questo modo, è possibile creare un gruppo di Microsoft 365 anziché una cassetta postale condivisa. Un gruppo in Outlook è simile a una cassetta postale condivisa. Per un confronto tra i due, vedere [confrontare i gruppi](../create-groups/compare-groups.md). Per ulteriori informazioni sui gruppi, vedere ulteriori informazioni [sui gruppi](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## <a name="related-articles"></a>Articoli correlati
 

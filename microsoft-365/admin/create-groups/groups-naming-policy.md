@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Informazioni su come creare un criterio di denominazione per i gruppi di Microsoft 365.
-ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ae216d0d8f3319e9633d300d785b4a8c31702798
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388006"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702549"
 ---
 # <a name="groups-naming-policy"></a>Criterio di denominazione dei gruppi
 
@@ -69,7 +69,7 @@ I prefissi e i suffissi possono essere stringhe fisse o attributi utente.
 
 Gli attributi di Azure Active Directory (Azure AD) supportati sono [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] e [title].
 
-- Gli attributi utente non supportati sono considerati stringhe fisse. Ad esempio, [Codicepostale]"
+- Unsupported user attributes are considered as fixed strings. E.g. "[postalCode]"
 
 - Gli attributi di estensione e gli attributi personalizzati non sono supportati.
 
@@ -80,6 +80,9 @@ Gli attributi di Azure Active Directory (Azure AD) supportati sono [Department],
 - Durante la creazione dei criteri, la lunghezza totale delle stringhe di prefisso e suffisso è limitata a 53 caratteri.
 
 - Prefissi e suffissi possono contenere caratteri speciali supportati nel nome e nell'alias del gruppo. Quando i prefissi e i suffissi contengono caratteri speciali non consentiti nell'alias di gruppo, vengono applicati solo al nome del gruppo. In questo caso, quindi, i prefissi e suffissi applicati al nome del gruppo sarebbero diversi da quelli applicati all'alias del gruppo.
+
+  > [!NOTE]
+  > Un punto (.) o un trattino (-) è consentito in qualsiasi punto del nome del gruppo, tranne all'inizio o alla fine del nome. Un carattere di sottolineatura (_) è consentito in qualsiasi punto del nome del gruppo, incluso all'inizio o alla fine del nome.
 
 - Se si utilizzano i gruppi connessi di Yammer Microsoft 365, evitare di usare i seguenti caratteri nei criteri di denominazione: @, \# , \[ ,, \] \<, and \> . Se questi caratteri sono inclusi nei criteri di denominazione, gli utenti di Yammer regolari non potranno creare gruppi.
 
@@ -101,7 +104,7 @@ Non vengono eseguite ricerche in una stringa secondaria. in particolare, è nece
 
 ## <a name="admin-override"></a>Override per gli amministratori
 
-Alcuni amministratori non sono soggetti a questi criteri in tutti gli endpoint e i carichi di lavoro di gruppo, possono quindi creare gruppi con le parole bloccate e con le convenzioni di denominazione che preferiscono. L'elenco seguente contiene i ruoli di amministratore non soggetti ai criteri di denominazione del gruppo.
+Selective administrators are exempted from these policies, across all group workloads and endpoints, so that they can create groups with these blocked words and with their desired naming conventions. The following are the list of administrator roles exempted from the group naming policy.
 
 - Amministratore globale
 

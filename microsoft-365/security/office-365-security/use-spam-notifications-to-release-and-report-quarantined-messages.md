@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono conoscere le notifiche di posta indesiderata degli utenti finali per i messaggi in quarantena in Exchange Online Protection (EOP).
-ms.openlocfilehash: 7d4cf21ade504e999dc5b53ad9062977369561c6
-ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
+ms.openlocfilehash: 14dcdfa8373e3826b23bc5574d1b5ae8ff76927b
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44294242"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754785"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Utilizzare le notifiche di posta indesiderata utente per rilasciare e segnalare messaggi in quarantena
 
@@ -44,7 +44,7 @@ Una notifica di posta indesiderata dell'utente finale contiene le informazioni s
 
 - **Date**: la data e l'ora (in formato UTC) in cui il messaggio è stato messo in quarantena.
 
-- **Blocca mittente**: fare clic su questo collegamento per aggiungere il mittente all'elenco dei mittenti bloccati. Per ulteriori informazioni, vedere [bloccare un mittente di posta elettronica in Outlook](https://support.office.com/article/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- **Blocca mittente**: fare clic su questo collegamento per aggiungere il mittente all'elenco dei mittenti bloccati. Per ulteriori informazioni, vedere [bloccare un mittente della posta](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Release**: per i messaggi di posta indesiderata (non phishing), è possibile rilasciare il messaggio qui senza andare a mettere in quarantena il centro sicurezza & Compliance.
 

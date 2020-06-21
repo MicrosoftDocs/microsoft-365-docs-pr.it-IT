@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Informazioni su come creare, modificare o eliminare un gruppo di sicurezza.
-ms.openlocfilehash: 49fe9b941564f26268045f6e57af329900476b90
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c7c8d57037d972cd89dad45358dc5a7aa3fb86e8
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432278"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780242"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Microsoft 365
 
@@ -41,7 +41,7 @@ Nella pagina Microsoft 365 **Groups** è possibile creare gruppi di account uten
 Sono inoltre disponibili [Gruppi in Exchange Online e SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) che è possibile usare per inviare messaggi di posta elettronica o assegnare autorizzazioni a un gruppo di utenti e [Gruppi in Exchange Online e SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) che consentono di concedere agli utenti i diritti e l'accesso a siti e raccolte siti. 
   
 > [!IMPORTANT]
->  Pianificazione dell'utilizzo delle cassette postali del sito? Tutti gli utenti aggiunti a un sito di SharePoint tramite un gruppo di sicurezza anziché essere aggiunti singolarmente possono utilizzare solo la cassetta postale del sito di SharePoint. Questi utenti non saranno in grado di accedere alla cassetta postale del sito da Outlook. Per ulteriori informazioni, vedere [utilizzare i gruppi di Microsoft 365 anziché le cassette postali del sito](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx). 
+>  Pianificazione dell'utilizzo delle cassette postali del sito? Tutti gli utenti aggiunti a un sito di SharePoint tramite un gruppo di sicurezza anziché essere aggiunti singolarmente possono utilizzare solo la cassetta postale del sito di SharePoint. Questi utenti non saranno in grado di accedere alla cassetta postale del sito da Outlook. Per ulteriori informazioni, vedere [utilizzare i gruppi di Microsoft 365 anziché le cassette postali del sito](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b). 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>Gestire i gruppi di sicurezza nell'interfaccia di amministrazione
 
@@ -155,7 +155,7 @@ I gruppi di sicurezza possono essere utilizzati con SharePoint, Exchange, MDM, W
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>È necessario utilizzare I gruppi di sicurezza per garantire la protezione dell'organizzazione?
 
-No. È solo un altro modo di gestire la sicurezza dell'organizzazione. È sempre possibile concedere le autorizzazioni e l'accesso ai siti ai singoli utenti, ma con i gruppi di sicurezza si possono gestire più facilmente gruppi di utenti di dimensioni maggiori.
+No. This is just one more way you can manage security for your organization. You can always grant user permissions and access to sites individually. But with security groups, you can easily manage larger groups of users.
   
 ## <a name="can-i-send-email-to-a-security-group"></a>È possibile inviare messaggi di posta elettronica a un gruppo di sicurezza?
 

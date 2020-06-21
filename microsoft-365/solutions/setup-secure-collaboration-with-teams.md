@@ -1,5 +1,5 @@
 ---
-title: Configurare la collaborazione sicura con Microsoft 365
+title: Proteggere la collaborazione con Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: Informazioni su come configurare i team per la protezione dei dati in base alla relativa sensibilità
-ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159468"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724799"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurare la collaborazione sicura con Microsoft 365
+# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Proteggere la collaborazione con Microsoft 365
 
 Essere in grado di condividere facilmente le informazioni con gli utenti giusti impedendo la sovracondivisione è la chiave del successo di un'organizzazione. Questo include la possibilità di condividere i dati sensibili in modo sicuro solo con gli utenti che devono accedervi. A seconda del progetto, potrebbe essere possibile includere la condivisione di dati riservati con persone esterne all'organizzazione.
 
@@ -57,7 +57,16 @@ Le informazioni che sono fondamentali per il successo dell'organizzazione o che 
 
 Per tutti gli scenari descritti in alto, è possibile utilizzare Team di Microsoft teams per archiviare, condividere e collaborare alle informazioni. 
 
-## <a name="using-teams-for-all-kinds-of-data"></a>Utilizzo di team per tutti i tipi di dati
+Per configurare Secure collabration, è possibile utilizzare le funzionalità e le funzionalità di Microsoft 365.
+
+| Prodotto o componente | Capacità o funzionalità | Licenze |
+|:-------|:-----|:-------|
+| Office 365 Advanced Threat Protection | Allegati sicuri di ATP per SPO, OneDrive e teams; Documenti sicuri ATP; Collegamenti sicuri ATP per i team    | Microsoft 365 E1, E3 ed E5 |
+| SharePoint    | Criteri di condivisione siti e file, autorizzazioni di condivisione siti, collegamenti di condivisione, richieste di accesso, impostazioni di condivisione Guest site | Microsoft 365 E1, E3 ed E5 |
+| Microsoft Teams   | Accesso guest, team privati, canali privati | Microsoft 365 E1, E3 ed E5 |
+| Conformità di Microsoft 365  | Etichette di riservatezza    | Microsoft 365 E3 ed E5 |
+
+### <a name="using-teams-for-all-kinds-of-data"></a>Utilizzo di team per tutti i tipi di dati
 
 Per gestire l'accesso alle informazioni con sensibilità diverse, sono stati sviluppati [tre diversi livelli di protezione per i team](configure-teams-three-tiers-protection.md). È possibile personalizzare uno qualsiasi di questi livelli per soddisfare al meglio le esigenze o la propria azienda. 
 
@@ -91,7 +100,7 @@ Iniziare con il livello di base e quindi aggiungere i team che utilizzano i live
 
 Se si dispone di un progetto estremamente riservato che richiede ulteriore protezione dalla condivisione anche all'interno dell'organizzazione, è possibile configurare un team che utilizza la propria etichetta di riservatezza per crittografare i file in modo che solo i membri del team possano leggerli. Per informazioni dettagliate, vedere [configurare un team con isolamento della sicurezza](secure-teams-security-isolation.md) .
 
-## <a name="sharing-with-people-outside-your-organization"></a>Condivisione con utenti esterni all'organizzazione
+### <a name="sharing-with-people-outside-your-organization"></a>Condivisione con utenti esterni all'organizzazione
 
 Potrebbe essere necessario [condividere informazioni di qualsiasi sensibilità con persone esterne all'organizzazione](collaborate-with-people-outside-your-organization.md). Questo potrebbe variare dalla condivisione di un singolo documento con una singola persona per collaborare a un progetto importante con un'organizzazione partner di grandi dimensioni o liberi professionisti di tutto il mondo. In Microsoft 365, questa gamma di condivisione esterna può essere svolta facilmente e con le misure di salvaguardia appropriate per proteggere le informazioni riservate.
 
@@ -108,6 +117,12 @@ A seconda della sensibilità delle informazioni condivise, è possibile aggiunge
 - [Creare un ambiente di condivisione guest sicuro](create-secure-guest-sharing-environment.md)
 
 Se si dispone di un progetto importante con un'organizzazione partner, è possibile utilizzare la gestione dei diritti di Azure per gestire gli ospiti dall'organizzazione in un team configurato per il progetto. Per ulteriori informazioni, vedere [Create a B2B Extranet with Managed guests](b2b-extranet.md) .
+
+## <a name="deploy-the-secure-collaboration-solution"></a>Distribuire la soluzione di collaborazione sicura
+
+Quando si è pronti per la distribuzione di questa soluzione, procedere come segue:
+1. Configurare i [tre diversi livelli di protezione per i team](configure-teams-three-tiers-protection.md).
+2. Configurare le impostazioni per la [condivisione delle informazioni di qualsiasi sensibilità con gli utenti esterni all'organizzazione](collaborate-with-people-outside-your-organization.md).
 
 ## <a name="see-also"></a>Vedere anche
 

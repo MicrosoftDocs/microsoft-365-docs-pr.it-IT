@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Informazioni su come trasferire manualmente i dati tra due account di Microsoft 365 quando è stato modificato il piano o il nome della società oppure sono stati combinati più abbonamenti in uno.
-ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6e64872ad7e145b63eb71d89ea2d69e5d8697eb6
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399873"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780170"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Trasferire manualmente i dati tra due account
 
@@ -46,10 +46,10 @@ Prepararsi a rimboccarsi le maniche e bloccare un pezzo di tempo nel calendario:
 
 |**Attività**|**Passaggi**|
 |:-----|:-----|
-|Acquistare il piano a cui si vuole passare.  <br/> |Al momento dell'iscrizione si specifica il nome azienda da usare nei nomi di dominio iniziali:  *nomeazienda*  .onmicrosoft.com,  *nomeazienda*  -public.sharepoint.com e  *nomeazienda*  .sharepoint.com. È necessario specificare un  *nomeazienda*  diverso da quello usato per gli abbonamenti esistenti.  <br/> > [!NOTE]>  In genere per il rilascio da parte dei sistemi Microsoft dei nomi di dominio iniziali che usano  *nomeazienda*  dopo l'annullamento di un abbonamento occorre un minimo di diversi mesi. Anche se si prevede di salvare tutti i dati dal vecchio abbonamento a Microsoft 365 e annullare tale sottoscrizione, il vecchio valore di *yourcompany* non è immediatamente disponibile per l'utilizzo in un nuovo abbonamento.           |
-|Rimuovere il dominio personalizzato dalla vecchia sottoscrizione Microsoft 365.  <br/> | Completare i [passaggi necessari prima della rimozione di un dominio](remove-a-domain.md) per rimuovere il nome di dominio dagli indirizzi di posta elettronica degli utenti e rimuovere i record DNS per la posta elettronica e Lync per il dominio personalizzato. Se si ospita il sito Web pubblico in Microsoft 365, è necessario rimuovere anche il record CNAME che punta a esso.  <br/> > [!IMPORTANT]>  Dopo aver rimosso il record MX che instrada la posta elettronica verso il dominio personalizzato, la posta elettronica smetterà di funzionare finché non si aggiunge il dominio al nuovo account, si configura il nuovo record MX e si configurano gli utenti. Quando si rimuovono i record DNS per Lync, Lync smetterà di funzionare. Inoltre, dopo aver rimosso il record CNAME che punta al sito Web pubblico, questo non sarà disponibile.           [Rimuovere il dominio](remove-a-domain.md) .  <br/> |
+|Acquistare il piano a cui si vuole passare.  <br/> |When you sign up, you specify the company name to use in the initial domain names:  *yourcompany*  .onmicrosoft.com,  *yourcompany*  -public.sharepoint.com, and  *yourcompany*  .sharepoint.com. You need to use a different  *yourcompany*  name than you did for any existing subscriptions.  <br/> > [!NOTE]>  In genere per il rilascio da parte dei sistemi Microsoft dei nomi di dominio iniziali che usano  *nomeazienda*  dopo l'annullamento di un abbonamento occorre un minimo di diversi mesi. Anche se si prevede di salvare tutti i dati dal vecchio abbonamento a Microsoft 365 e annullare tale sottoscrizione, il vecchio valore di *yourcompany* non è immediatamente disponibile per l'utilizzo in un nuovo abbonamento.           |
+|Rimuovere il dominio personalizzato dalla vecchia sottoscrizione Microsoft 365.  <br/> | Completare i [passaggi necessari prima della rimozione di un dominio](remove-a-domain.md) per rimuovere il nome di dominio dagli indirizzi di posta elettronica degli utenti e rimuovere i record DNS per la posta elettronica e Lync per il dominio personalizzato. Se si ospita il sito Web pubblico in Microsoft 365, è necessario rimuovere anche il record CNAME che punta a esso.  <br/> > [!IMPORTANT]>  After you remove the MX record that routes email to this custom domain, email will stop working until you have added the domain to your new account, set up the new MX record, and set up your users. When you remove the DNS records for Lync, Lync will stop working. And after you remove the CNAME record that points to your public website, it will not be available.           [Remove the domain](remove-a-domain.md) .  <br/> |
 |Configurare il dominio personalizzato per il nuovo abbonamento e configurare gli utenti.  <br/> | Configurare il nuovo abbonamento, inclusa la creazione dei record DNS necessari per il dominio personalizzato.  <br/>  Creare gli utenti e i relativi indirizzi di posta elettronica nel dominio personalizzato  <br/> |
-|Trasferire dati dal vecchio al nuovo abbonamento.  <br/> | Accedere a entrambi gli account in finestre del browser separate:  <br/>  Fare clic con il pulsante destro del mouse sull'icona di Internet Explorer e aprire due finestre del browser InPrivate. È possibile usare credenziali diverse nelle due finestre per accedere a entrambi gli account.  <br/> [Trasferire le impostazioni amministrative tra gli abbonamenti](#email) <br/> [Trasferire i dati e la struttura del sito del team](#transfer-team-site-structure-and-data) <br/> [Trasferire un sito Web pubblico tra abbonamenti](#transfer-a-public-website-between-subscriptions) <br/> [Trasferire le impostazioni amministrative tra gli abbonamenti](#email) <br/> |
+|Trasferire dati dal vecchio al nuovo abbonamento.  <br/> | Accedere a entrambi gli account in finestre del browser separate:  <br/>  Right-click the Internet Explorer icon, and open two InPrivate browser windows. You can use different credentials in the two windows to sign in on both accounts.  <br/> [Trasferire le impostazioni amministrative tra gli abbonamenti](#email) <br/> [Trasferire i dati e la struttura del sito del team](#transfer-team-site-structure-and-data) <br/> [Trasferire un sito Web pubblico tra abbonamenti](#transfer-a-public-website-between-subscriptions) <br/> [Trasferire le impostazioni amministrative tra gli abbonamenti](#email) <br/> |
 |Annullare l'abbonamento per il piano con cui si esegue la chiamata del supporto tecnico Microsoft per Microsoft 365.  <br/> | Verificare che il nuovo abbonamento funzioni e che tutti i dati siano stati trasferiti.  <br/>  [Contattare il supporto](../contact-support-for-business-products.md) tecnico per annullare il vecchio abbonamento.  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>Trasferire le impostazioni amministrative tra gli abbonamenti
@@ -78,7 +78,7 @@ Per Microsoft 365 Small Business
 Se si dispone di un sito Web pubblico ospitato in Microsoft 365, è necessario salvarlo e ricrearlo nel nuovo abbonamento.
   
 > [!NOTE]
-> Se il sito Web pubblico è ospitato presso un provider di hosting DNS, non sono necessarie modifiche. Non sarà interessato dalla transizione.
+> If your public website is hosted at a DNS hosting provider, no changes are required. It will not be affected by your transition.
   
 Per salvare una raccolta documenti o il contenuto di un elenco da un ambiente SharePoint Online in una condivisione file o in un computer locale, vedere [Informazioni sulla migrazione manuale del contenuto di SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=402910).
   
@@ -91,9 +91,9 @@ Esistono vari modi per salvare o trasferire i dati del sito del team:
   
 - Si può salvare il vecchio sito come modello e importare il modello nel nuovo sito.
 
-- Per trasferire documenti, prima di tutto, ricreare manualmente la gerarchia nel nuovo sito. Fatto questo, sarà possibile aprire contemporaneamente entrambi i siti del team di SharePoint, aprire entrambe le raccolte documenti con Esplora risorse e copiare e incollare i documenti. Vedere [Video: Copiare o spostare file delle raccolte tramite Apri con Esplora risorse](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790).
+- Per trasferire documenti, prima di tutto, ricreare manualmente la gerarchia nel nuovo sito. Fatto questo, sarà possibile aprire contemporaneamente entrambi i siti del team di SharePoint, aprire entrambe le raccolte documenti con Esplora risorse e copiare e incollare i documenti. Vedere [Video: Copiare o spostare file delle raccolte tramite Apri con Esplora risorse](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
 
-- Per trasferire dati di elenco, salvare un [modello di elenco](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393) e usare il modello salvato per ricreare l'elenco nel nuovo sito.
+- Per trasferire dati di elenco, salvare un [modello di elenco](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393) e usare il modello salvato per ricreare l'elenco nel nuovo sito.
 
 - Per salvare una raccolta documenti o un elenco di contenuto da un ambiente di SharePoint Online (OneDrive for business o siti del team) in condivisioni di file o in un computer locale, vedere [informazioni sulla migrazione manuale del contenuto di SharePoint Online](https://support.microsoft.com/kb/2783484).
 
@@ -101,8 +101,8 @@ Esistono vari modi per salvare o trasferire i dati del sito del team:
 
 ### <a name="email"></a>Posta elettronica:
 
-Chiedere agli utenti di [spostare posta elettronica, contatti, attività e informazioni del calendario](https://support.office.com/article/0996ece3-57c6-49bc-977b-0d1892e2aacc.aspx) dopo la configurazione del nuovo abbonamento. Possono accedere ai vecchi messaggi di posta elettronica usando il nome utente iniziale, ad esempio giorgia@contoso.onmicrosoft.com.
+Ask users to [move their email, contacts, tasks, and calendar information](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) after you set up your new subscription. They can get to their old email by using their initial user name, such as sue@contoso.onmicrosoft.com.
   
 ### <a name="onedrive-for-business-data"></a>Dati di OneDrive for business:
 
-Chiedere agli utenti di copiare/sincronizzare [il contenuto di OneDrive for business nel computer](https://support.office.com/article/59b1de2b-519e-4d3a-8f45-51647cf291cd.aspx)e quindi aggiungerlo al nuovo abbonamento.
+Chiedere agli utenti di copiare/sincronizzare [il contenuto di OneDrive for business nel computer](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)e quindi aggiungerlo al nuovo abbonamento.

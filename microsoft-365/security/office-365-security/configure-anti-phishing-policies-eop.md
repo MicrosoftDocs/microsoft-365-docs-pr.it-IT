@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing disponibili nelle organizzazioni di Exchange Online Protection (EOP) con o senza cassette postali di Exchange Online.
-ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b6b95515ad44a65dbdd8a7516d8e6c8b2a386450
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616699"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726782"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurazione dei criteri di anti-phishing in EOP
 
@@ -65,7 +65,7 @@ Ogni organizzazione dispone di un criterio di anti-phishing incorporato denomina
 
 Per aumentare l'efficacia della protezione anti-phishing, è possibile creare criteri di anti-phishing personalizzati con impostazioni più rigorose applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **anti-phishing** , utilizzare <https://protection.office.com/antiphishing> .
 
@@ -73,9 +73,19 @@ Per aumentare l'efficacia della protezione anti-phishing, è possibile creare cr
 
   Non è possibile gestire i criteri di anti-phishing in standalone EOP PowerShell.
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare i criteri di anti-phishing, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri anti-phishing, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Prima di poter eseguire le procedure descritte in questo argomento, è necessario assegnare le autorizzazioni seguenti:
 
-- Per poter creare e modificare i criteri di protezione dalla posta indesiderata in EOP autonomo, è necessario eseguire un'operazione che richiede l' _idratazione_ per il tenant. Ad esempio, nell'interfaccia di amministrazione di Exchange, è possibile accedere alla scheda **autorizzazioni** , selezionare un gruppo di ruoli esistente, fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) e rimuovere un ruolo (che verrà infine aggiunto di nuovo). Se il tenant non è mai stato idratato, viene visualizzata una finestra di dialogo denominata **Impostazioni organizzazione di aggiornamento** con una barra di avanzamento che deve essere completata correttamente. Per ulteriori informazioni sull'idratazione, vedere il cmdlet [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (che non è disponibile in standalone EOP PowerShell o nel Security & Compliance Center).
+  - Per aggiungere, modificare ed eliminare i criteri di anti-phishing, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+
+    - **Gestione organizzazione** o **amministratore della sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+    - Gestione dell' **organizzazione** o **gestione dell'igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Per l'accesso in sola lettura ai criteri di anti-phishing, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+
+    - **Lettore di sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+    - **Gestione dell'organizzazione in sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+- Per poter creare e modificare i criteri di protezione dalla posta indesiderata in EOP autonomo, è necessario eseguire un'operazione che richiede l' _idratazione_ per il tenant. Ad esempio, nell'interfaccia di amministrazione di Exchange (EAC), è possibile accedere alla scheda **autorizzazioni** , selezionare un gruppo di ruoli esistente, fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) e rimuovere un ruolo (che verrà infine aggiunto di nuovo). Se il tenant non è mai stato idratato, viene visualizzata una finestra di dialogo denominata **Impostazioni organizzazione di aggiornamento** con una barra di avanzamento che deve essere completata correttamente. Per ulteriori informazioni sull'idratazione, vedere il cmdlet [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (che non è disponibile in standalone EOP PowerShell o nel Security & Compliance Center).
 
 - Per le impostazioni consigliate per i criteri di anti-phishing, vedere [EOP default anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
@@ -103,7 +113,7 @@ Quando si crea un criterio anti-phishing, è possibile specificare solo il nome,
 
 4. Nella pagina **applicata alla** pagina che viene visualizzata, identificare i destinatari interni ai quali si applica il criterio.
 
-   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o utilizzo o logica dell'eccezione (ad esempio, _\<recipient1\>_ o _\<recipient2\>_ ). Utilizzo e logica di diverse condizioni o eccezioni (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_ ).
+   È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
 
    Fare clic su **Aggiungi condizione**. Nell'elenco a discesa che viene visualizzato, selezionare una condizione in **applicato se**:
 
@@ -450,7 +460,7 @@ Per impostare la priorità di una regola anti-phishing in PowerShell, utilizzare
 Set-AntiPhishRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-Nell'esempio seguente la priorità della regola denominata Marketing Department viene impostata su 2. Tutte le regole esistenti che hanno una priorità minore o uguale a 2 vengono abbassate di 1 valore (i numeri di priorità vengono aumentati di 1).
+This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
 ```PowerShell
 Set-AntiPhishRule -Identity "Marketing Department" -Priority 2

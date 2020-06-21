@@ -28,12 +28,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Informazioni su come utilizzare OneDrive e un sito del team per l'archiviazione e la condivisione dei file.
-ms.openlocfilehash: e41e180417cb8543a73b08668d18ef9d2998c782
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b92bbb96a2d5d2ccbb35eff430a810f92fd07892
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398835"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778938"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Configurare l'archiviazione e la condivisione di file
 
@@ -43,13 +43,13 @@ Guardare un breve video sul percorso in cui archiviare i file in Microsoft 365.<
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="where-you-can-store-documents-in-microsoft-365"></a>Dove è possibile archiviare i documenti in Microsoft 365
 
 - OneDrive è stato ideato per l'utilizzo individuale, con la condivisione occasionale dei file. 
 
-- Un sito del team è stato creato per la condivisione e la collaborazione dei file regolarmente. Un sito del team è ideale per l'archiviazione di file che dispongono di proprietà condivisa in cui più utenti possiedono i file e che possono collaborare su di essi. Creare un team di Microsoft per aggiungere un sito del team. Per ulteriori informazioni, vedere [creare un team in](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b)teams.
+- Un sito del team è stato creato per la condivisione e la collaborazione dei file regolarmente. Un sito del team è ideale per l'archiviazione di file che dispongono di proprietà condivisa in cui più utenti possiedono i file e che possono collaborare su di essi. Creare un team di Microsoft per aggiungere un sito del team. Per ulteriori informazioni, vedere [creare un team in](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b)teams.
 
 Sia OneDrive che i siti del team offrono accesso da qualsiasi luogo all'utente e ai dipendenti.
   
@@ -60,11 +60,11 @@ Di seguito sono riportati alcuni suggerimenti su cosa archiviare in ogni percors
 ||||
 |:-----|:-----|:-----|
 |**Posizione di archiviazione** <br/> |**Scopo** <br/> |**Cosa archiviare** <br/> |
-|**OneDrive** <br/> |L'archiviazione del contenuto in OneDrive è simile all'archiviazione dei file nel computer in uso. nessun altro può accedervi facilmente.  <br/> Per altre informazioni, vedere [che cos'è OneDrive for business?](https://support.office.com/article/187f90af-056f-47c0-9656-cc0ddca7fdc2.aspx) <br/> |File aziendali a cui gli altri membri del team non devono lavorare o accedere regolarmente.  <br/> |
-|**Siti del team di SharePoint** <br/> |Collaborazione. Quando si crea un gruppo di Microsoft 365 (ad esempio, nell'interfaccia di amministrazione di Microsoft 365, in Outlook o creando un team in Microsoft Teams), viene creato un sito del team di SharePoint per tale gruppo. Analogamente, quando si crea un nuovo sito del team di SharePoint dalla Home page di SharePoint o dalla nuova interfaccia di amministrazione di SharePoint, viene creato anche un gruppo di Microsoft 365. Per altre informazioni, vedere [che cos'è un sito del team di SharePoint](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx) e [creare un sito del team in SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx).  <br/> |File che dispongono di proprietà condivisa. È consigliabile separare i siti del team per ogni unità di lavoro nell'organizzazione. Ad esempio, per mantenere il personale e i documenti finanziari privati in un team di piccole dimensioni, creare un sito del team separato.  <br/> |
+|**OneDrive** <br/> |L'archiviazione del contenuto in OneDrive è simile all'archiviazione dei file nel computer in uso. nessun altro può accedervi facilmente.  <br/> Per altre informazioni, vedere [che cos'è OneDrive for business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |File aziendali a cui gli altri membri del team non devono lavorare o accedere regolarmente.  <br/> |
+|**Siti del team di SharePoint** <br/> |Collaborazione. Quando si crea un gruppo di Microsoft 365 (ad esempio, nell'interfaccia di amministrazione di Microsoft 365, in Outlook o creando un team in Microsoft Teams), viene creato un sito del team di SharePoint per tale gruppo. Analogamente, quando si crea un nuovo sito del team di SharePoint dalla Home page di SharePoint o dalla nuova interfaccia di amministrazione di SharePoint, viene creato anche un gruppo di Microsoft 365. Per altre informazioni, vedere [che cos'è un sito del team di SharePoint](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) e [creare un sito del team in SharePoint Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |File che dispongono di proprietà condivisa. È consigliabile separare i siti del team per ogni unità di lavoro nell'organizzazione. Ad esempio, per mantenere il personale e i documenti finanziari privati in un team di piccole dimensioni, creare un sito del team separato.  <br/> |
 
 > [!NOTE]
-> SharePoint ha anche altri tipi di siti che è possibile utilizzare per la propria azienda. È possibile utilizzare i [siti di comunicazione](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) della rete Intranet per pubblicare le informazioni per un vasto gruppo di destinatari. È possibile utilizzare i [siti hub](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) per connettere i siti della rete Intranet.
+> SharePoint ha anche altri tipi di siti che è possibile utilizzare per la propria azienda. È possibile utilizzare i [siti di comunicazione](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) della rete Intranet per pubblicare le informazioni per un vasto gruppo di destinatari. È possibile utilizzare i [siti hub](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f) per connettere i siti della rete Intranet.
   
 ## <a name="start-using-onedrive-and-your-team-site"></a>Iniziare a utilizzare OneDrive e il sito del team
 
@@ -116,7 +116,7 @@ Di seguito sono riportati i passaggi per aggiungere file:
   
 5. È possibile eliminare i file dal computer. Nel passaggio successivo, [sincronizzare i file online con il PC o il Mac](#sync-online-files-with-your-pc-or-mac), si creerà un nuovo percorso per questi file nel computer.
 
-    Se si hanno molti file o file di grandi dimensioni da caricare nel sito del team, leggere questi suggerimenti sul [caricamento di molti file o di file di grandi dimensioni in una raccolta](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242).
+    Se si hanno molti file o file di grandi dimensioni da caricare nel sito del team, leggere questi suggerimenti sul [caricamento di molti file o di file di grandi dimensioni in una raccolta](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242).
 
     Se serve più spazio di archiviazione, vedere [Modificare lo spazio di archiviazione per l'abbonamento](../../commerce/add-storage-space.md).
 
@@ -167,15 +167,15 @@ Di seguito vengono forniti alcuni suggerimenti per ottenere il massimo da OneDri
 
 Quando si archivia un file in OneDrive, è possibile accedervi solo, a meno che non venga condiviso con altri utenti. Quando si condividono file, è possibile scegliere di creare un collegamento che può essere inoltrato o di condividere solo con persone specifiche. È anche possibile creare cartelle distinte in OneDrive per scopi diversi, ad esempio cartelle pubbliche, private o per singoli progetti. Ogni cartella può essere condivisa con una persona o un gruppo diverso oppure con nessuno.
   
-Per ulteriori informazioni sulla condivisione, vedere anche [condivisione di file e cartelle con Microsoft 365](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx).
+Per ulteriori informazioni sulla condivisione, vedere anche [condivisione di file e cartelle con Microsoft 365](https://support.microsoft.com/office/72f26d6c-bf9e-432c-8b96-e3c2437f5b65).
   
 ### <a name="track-how-much-space-you-have-left"></a>Tenere traccia dello spazio di archiviazione residuo
 
-Per verificare la quantità di spazio di archiviazione disponibile in OneDrive, vedere [Manage your OneDrive for Business Storage](https://support.office.com/article/31519161-059C-4764-B6F8-F5CD29F7FE68.aspx).
+Per verificare la quantità di spazio di archiviazione disponibile in OneDrive, vedere [Manage your OneDrive for Business Storage](https://support.microsoft.com/office/31519161-059C-4764-B6F8-F5CD29F7FE68).
   
 ### <a name="what-files-can-be-stored-in-onedrive-and-a-team-site"></a>Quali file possono essere archiviati in OneDrive e in un sito del team?
 
-Anche se è possibile caricare quasi tutti i tipi di file, non sono consentiti alcuni nomi di file e caratteri nei nomi dei file. Per altre informazioni, vedere [caratteri di file e tipi di file non validi in OneDrive for business](https://support.office.com/article/64883A5D-228E-48F5-B3D2-EB39E07630FA.aspx).
+Anche se è possibile caricare quasi tutti i tipi di file, non sono consentiti alcuni nomi di file e caratteri nei nomi dei file. Per altre informazioni, vedere [caratteri di file e tipi di file non validi in OneDrive for business](https://support.microsoft.com/office/64883A5D-228E-48F5-B3D2-EB39E07630FA).
   
 ### <a name="enable-or-disable-third-party-storage-services"></a>Abilitare o disabilitare i servizi di archiviazione di terze parti
 
@@ -186,7 +186,7 @@ Anche se è possibile caricare quasi tutti i tipi di file, non sono consentiti a
   
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>.
 
-2. Passare alla pagina **Settings** impostazioni \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**org**</a> impostazioni.
+2. Passare alla pagina **Settings** impostazioni \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**org**</a> impostazioni.
 
 3. Nella scheda **Servizi** selezionare **Office sul Web**.
 
@@ -194,12 +194,12 @@ Anche se è possibile caricare quasi tutti i tipi di file, non sono consentiti a
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Personalizzare il sito del team per l'archiviazione e la condivisione dei file](customize-team-site.md). Questa esercitazione dettagliata mostra come è possibile sfruttare ulteriori caratteristiche di archiviazione e collaborazione. 
+- [Personalizzare il sito del team per l'archiviazione e la condivisione dei file](customize-team-site.md). Questa esercitazione dettagliata mostra come è possibile sfruttare ulteriori caratteristiche di archiviazione e collaborazione.
 
 - **Installare le app di Office su tablet e telefoni**. È necessario eseguire questa operazione in modo che sia possibile **modificare** i file archiviati in OneDrive e nei siti del team dal tablet o dal telefono. Se non si installano le app di Office per il tablet o il telefono, sarà possibile visualizzare i file ma non modificarli.
 
-  - [Installare e configurare Office in un dispositivo Android con Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Installare e configurare Office in un dispositivo Android con Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
 
-  - [Installare e configurare Office in un iPhone o iPad con Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Installare e configurare Office in un iPhone o iPad con Microsoft 365](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
 
-  - [Configurare Office in Windows Phone con Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
+  - [Configurare Office in Windows Phone con Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)

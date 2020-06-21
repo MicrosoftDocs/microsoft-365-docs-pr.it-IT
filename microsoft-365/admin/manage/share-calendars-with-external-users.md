@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Informazioni su come consentire agli utenti di condividere i propri calendari con utenti esterni per riunioni e appuntamenti. '
-ms.openlocfilehash: 905280d3c23ffcb9fcf281c39b232a3d05ba1ec5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 972e8376ae3d71b11205d4a6611dc6900c063ffe
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399567"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780062"
 ---
 # <a name="share-calendars-with-external-users"></a>Condividere calendari con utenti esterni
 
@@ -36,7 +36,7 @@ Spesso capita di dover pianificare riunioni con utenti esterni alla propria orga
 La condivisione del calendario è un'impostazione globale, ovvero l'amministratore può abilitarla per tutti gli utenti del tenant. Una volta abilitata la condivisione, gli utenti possono utilizzare Outlook Web App per condividere i propri calendari con chiunque sia all'interno che all'esterno dell'organizzazione. Gli utenti all'interno dell'organizzazione possono visualizzare il calendario condiviso affiancato con il proprio. Agli utenti esterni all'organizzazione verrà inviato un URL che può essere utilizzato per visualizzare il calendario. Gli utenti decidono quando condividere, quanto condividere e quando mantenere privati i propri calendari.
   
 > [!NOTE]
-> Se si vogliono condividere i calendari con un'organizzazione che usa Exchange Server 2013 (una soluzione locale), l'amministratore di Exchange dovrà configurare una relazione di autenticazione con il cloud, ovvero una "federazione", che prevede una serie di requisiti minimi da soddisfare per il software. Per altre informazioni, vedere [Condivisione](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx). 
+> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as "federation" and must meet minimum software requirements. See [Sharing](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) for more information. 
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Abilitare la condivisione del calendario con l'interfaccia di amministrazione di Microsoft 365
 
@@ -53,5 +53,5 @@ La condivisione del calendario è un'impostazione globale, ovvero l'amministrato
     
 ## <a name="invite-people-to-access-calendars"></a>Invitare utenti ad accedere ai calendari
 
-Dopo l'abilitazione della condivisione per il tenant, i proprietari dei calendari possono estendere gli inviti a utenti specifici. Per istruzioni, vedere [Condivisione del calendario in Outlook Web App](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx). 
+Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions. 
   

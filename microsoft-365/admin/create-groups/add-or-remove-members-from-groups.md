@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Informazioni su come aggiungere un membro a un gruppo, rimuovere un membro da un gruppo e gestire lo stato del proprietario di un gruppo nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 7a223d6387ca7d261d959c6803a484bc29cdd4b1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431594"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780482"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Aggiungere o rimuovere membri dai gruppi di Microsoft 365 utilizzando l'interfaccia di amministrazione
 
@@ -37,10 +37,10 @@ ms.locfileid: "44431594"
 
 ::: moniker-end
 
-In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiungono ai gruppi a cui si desidera partecipare o sono invitati dai proprietari dei gruppi. Se le modifiche apportate alla proprietà del gruppo o se si determina che un membro deve essere aggiunto o rimosso, come amministratore è anche possibile apportare tale modifica. È possibile apportare queste modifiche solo a un amministratore globale, un amministratore di Exchange, un amministratore di gruppi o un amministratore dell'utente. [Che cos'è un gruppo di Microsoft 365?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiungono ai gruppi a cui si desidera partecipare o sono invitati dai proprietari dei gruppi. Se le modifiche apportate alla proprietà del gruppo o se si determina che un membro deve essere aggiunto o rimosso, come amministratore è anche possibile apportare tale modifica. È possibile apportare queste modifiche solo a un amministratore globale, un amministratore di Exchange, un amministratore di gruppi o un amministratore dell'utente. [Che cos'è un gruppo di Microsoft 365?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> Se non si è un amministratore, è possibile [aggiungere o rimuovere membri utilizzando Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx).
+> Se non si è un amministratore, è possibile [aggiungere o rimuovere membri utilizzando Outlook](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Aggiungere un membro a un gruppo nell'interfaccia di amministrazione
 
@@ -179,7 +179,7 @@ In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiu
 
 ## <a name="manage-group-owner-status"></a>Gestione dello stato del proprietario del gruppo
 
-Per impostazione predefinita, la persona che crea il gruppo ne è il proprietario. Spesso un gruppo include più proprietari a scopo di backup o per altri motivi. I membri possono essere alzati di livello allo stato di proprietari e i proprietari possono essere abbassati di livello allo stato di membri.
+By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Innalzare di livello un membro allo stato del proprietario nell'interfaccia di amministrazione
 
@@ -281,13 +281,13 @@ Per impostazione predefinita, la persona che crea il gruppo ne è il proprietari
 
 - Per aggiungere centinaia o migliaia di utenti ai gruppi, utilizzare il [componente aggiuntivo UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
 
-- [Assegnare un nuovo proprietario a un gruppo orfano](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+- [Assegnare un nuovo proprietario a un gruppo orfano](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 ## <a name="articles-about-managing-groups"></a>Articoli sulla gestione dei gruppi
 
 - [Aggiornare le liste di distribuzione ai gruppi di Microsoft 365 in Outlook](../manage/upgrade-distribution-lists.md)
 
-- [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+- [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Gestire l'accesso guest nei gruppi di Microsoft 365](manage-guest-access-in-groups.md)
 

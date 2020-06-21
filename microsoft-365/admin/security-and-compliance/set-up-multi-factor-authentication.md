@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Informazioni su come configurare l'autenticazione a più fattori per l'organizzazione.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 9218e81aaf016c379c6ba8c7ae846a2a2132cf35
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: a8e84746a577b95307d325047f0822e8eb3786f0
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515808"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779942"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
   
@@ -75,15 +75,15 @@ Se si utilizzano criteri di accesso condizionale o AMF per utente (scelta non co
 
 Collaborare con gli utenti pilota per risolvere i problemi e le domande da preparare per una distribuzione uniforme all'organizzazione.
 
-## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>Passaggio 3: Informare l'organizzazione dell'arrivo dell'AMF
+## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>Passaggio 3. Informare l'organizzazione dell'arrivo dell'AMF
 
 Utilizzare le notifiche di posta elettronica, i poster dei corridoi, le riunioni del team o la formazione formale per garantire che i dipendenti comprendano:
 
 - Perché è necessario disporre dell'AMF per gli accessi
-- [Come effettuare la registrazione per il metodo di verifica aggiuntivo](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
-- [Come effettuare l'accesso dopo la registrazione](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
-- [Come modificare il metodo di verifica aggiuntivo](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
-- [Come gestire situazioni come un nuovo smartphone](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+- [Come effettuare la registrazione per il metodo di verifica aggiuntivo](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [Come effettuare l'accesso dopo la registrazione](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+- [Come modificare il metodo di verifica aggiuntivo](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+- [Come gestire situazioni come un nuovo smartphone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
 
 Soprattutto, assicurarsi che i dipendenti comprendano ***quando il requisito dell'AMF verrà imposto in*** modo che non li sorprenda.
 
@@ -120,6 +120,6 @@ Abilitare gli account utente per l'AMF corrispondente all'implementazione.
 
 Quando i dipendenti si iscrivono e iniziano a eseguire l'accesso con l'AMF, assicurarsi che gli specialisti IT, il reparto IT o il supporto tecnico possano rispondere rapidamente a domande e risolvere i problemi.
 
-Vedere questo articolo per [informazioni sulla risoluzione dei problemi relativi agli accessi dell'AMF](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2). 
+Vedere questo articolo per [informazioni sulla risoluzione dei problemi relativi agli accessi dell'AMF](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2). 
 
 

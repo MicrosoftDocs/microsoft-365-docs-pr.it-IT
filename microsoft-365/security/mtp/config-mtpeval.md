@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: be92bfe8fc4f544f0554f99d147bfc90bf569d57
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: ba603f3703a7d4b6df567f8299af9f1804e42b96
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498460"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702571"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurare i pilastri Microsoft Threat Protection per l'ambiente lab di valutazione
 
@@ -241,11 +241,9 @@ Fare clic su **Avanti**.
 >[!NOTE]
 >A partire dal 1 ° giugno 2020, Microsoft attiva automaticamente le funzionalità di protezione dalle minacce di Microsoft per tutti i tenant idonei. Per ulteriori informazioni, vedere l' [articolo relativo a Microsoft Tech Community sull'idoneità delle licenze](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) . 
 <br>
-1. Accedere a [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Passare a **Impostazioni** , quindi selezionare **Microsoft Threat Protection**.
-<br>![Immagine of_Microsoft opzione di protezione dalle minacce screenshot dalla pagina delle impostazioni di Microsoft 365 Security Center](../../media/mtp-eval-72b.png) <br>
 
-2. Selezionare la casella **di controllo attiva Microsoft Threat Protection** e quindi fare clic su **Salva**.
-<br>![Immagine of_Microsoft opzione di protezione dalle minacce screenshot dalla pagina delle impostazioni di Microsoft 365 Security Center](../../media/mtp-eval-72c.png) <br>
+Accedere a [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Passare a **Impostazioni** , quindi selezionare **Microsoft Threat Protection**.
+<br>![Immagine of_Microsoft opzione di protezione dalle minacce screenshot dalla pagina delle impostazioni di Microsoft 365 Security Center](../../media/mtp-eval-72b.png) <br>
 
 Congratulazioni! L'ambiente di valutazione di Microsoft Threat Protection è appena stato creato. È ora possibile simulare un attacco e vedere in che modo le funzionalità del prodotto Cross rilevano, creano avvisi e rispondono automaticamente a un attacco non file su un endpoint.
 

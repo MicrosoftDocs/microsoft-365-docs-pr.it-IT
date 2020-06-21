@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587497"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726797"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecite
 
@@ -30,7 +30,7 @@ ms.locfileid: "44587497"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Che cos'è l'attacco di concessione di autorizzazioni illecite in Office 365?
 
-In un attacco di concessione di consenso illecito, l'utente malintenzionato crea un'applicazione registrata in Azure che richiede l'accesso ai dati, ad esempio le informazioni di contatto, la posta elettronica o i documenti. L'utente malintenzionato, quindi, inganna l'utilizzatore finale per concedere a tale applicazione il consenso per accedere ai propri dati tramite un attacco di phishing o iniettando codice illecito in un sito Web attendibile. Dopo che l'applicazione illecita ha ottenuto il consenso, ha accesso ai dati a livello di account senza la necessità di un account organizzativo. I normali passaggi di correzione, come la reimpostazione delle password per gli account violati o la richiesta di autenticazione a più fattori (AMF) per gli account, non sono efficaci rispetto a questo tipo di attacco, poiché si tratta di applicazioni di terze parti e sono esterne all'organizzazione. 
+In un attacco di concessione di consenso illecito, l'utente malintenzionato crea un'applicazione registrata in Azure che richiede l'accesso ai dati, ad esempio le informazioni di contatto, la posta elettronica o i documenti. L'utente malintenzionato, quindi, inganna l'utilizzatore finale per concedere a tale applicazione il consenso per accedere ai propri dati tramite un attacco di phishing o iniettando codice illecito in un sito Web attendibile. Dopo che l'applicazione illecita ha ottenuto il consenso, ha accesso ai dati a livello di account senza la necessità di un account organizzativo. I normali passaggi di correzione, come la reimpostazione delle password per gli account violati o la richiesta di autenticazione a più fattori (AMF) per gli account, non sono efficaci rispetto a questo tipo di attacco, poiché si tratta di applicazioni di terze parti e sono esterne all'organizzazione.
 
 Questi attacchi sfruttano un modello di interazione che presuppone che l'entità che chiama le informazioni sia l'automazione e non un essere umano.
 
@@ -43,18 +43,21 @@ Questi attacchi sfruttano un modello di interazione che presuppone che l'entità
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Passaggi per individuare i segni di questo attacco
 
-1. Aprire il **Centro sicurezza & conformità** nel tenant.
+1. Aprire il **Centro sicurezza & Compliance** all'indirizzo <https://protection.office.com> .
 
 2. Passare a **ricerca** e selezionare **Ricerca log di controllo**.
 
-3. Search (tutte le attività e tutti gli utenti) e immettere la data di inizio e la data di fine, se necessario, e quindi fare clic su **Cerca**. 
+3. Search (tutte le attività e tutti gli utenti) e immettere la data di inizio e la data di fine, se necessario, e quindi fare clic su **Cerca**.
 
 4. Fare clic su **Filtra risultati** e immettere consenso all'applicazione nel campo **attività** .
 
 5. Fare clic sul risultato per visualizzare i dettagli dell'attività. Fare clic su **altre informazioni** per ottenere informazioni dettagliate sull'attività. Controllare se IsAdminContent è impostato su true.
 
 > [!NOTE]
-> La voce del registro di controllo corrispondente viene visualizzata nei risultati della ricerca dopo un evento di 30 minuti fino a 24 ore. <br/><br/> Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Microsoft 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> La voce del registro di controllo corrispondente viene visualizzata nei risultati della ricerca dopo un evento di 30 minuti fino a 24 ore.
+> 
+> Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Microsoft 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 > 
 > Se questo valore è impostato su true, indica che un utente con accesso amministratore globale può aver concesso l'accesso esteso ai dati. Se questa operazione non è prevista, eseguire le operazioni necessarie per [confermare un attacco](#how-to-confirm-an-attack).
 
@@ -94,7 +97,7 @@ Fare in modo che gli utenti https://myapps.microsoft.com accedano e rivedano l'a
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Passaggi per eseguire questa operazione con PowerShell
 
-Il modo più semplice per verificare l'attacco di concessione di consenso illecito consiste nell'eseguire [Get-AzureADPSPermissions. ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), che consentirà di scaricare tutti i concessioni di autorizzazione OAuth e le app OAuth per tutti gli utenti nel proprio contratto di locazione in un unico file. csv.
+Il modo più semplice per verificare l'attacco di concessione di consenso illecito consiste nell'eseguire [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), che consentirà di scaricare tutti i concessioni di autorizzazione OAuth e le app OAuth per tutti gli utenti nel proprio contratto di locazione in un unico file. csv.
 
 #### <a name="pre-requisites"></a>Prerequisiti
 
@@ -109,7 +112,7 @@ Il modo più semplice per verificare l'attacco di concessione di consenso illeci
 
 1. Accedere al computer in cui verrà eseguito lo script con i diritti di amministratore locale.
 
-2. Scaricare o copiare lo script [Get-AzureADPSPermissions. ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) da GitHub in una cartella dalla quale verrà eseguito lo script. Questa sarà la stessa cartella in cui verrà scritto il file di output "Permissions. csv".
+2. Scaricare o copiare lo script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) da GitHub in una cartella dalla quale verrà eseguito lo script. Questa sarà la stessa cartella in cui verrà scritto il file di output "permissions.csv".
 
 3. Aprire un'istanza di PowerShell come amministratore e aprirla alla cartella in cui è stato salvato lo script.
 
@@ -121,7 +124,7 @@ Il modo più semplice per verificare l'attacco di concessione di consenso illeci
    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-Lo script produce un file denominato Permissions. csv. Eseguire la procedura seguente per cercare le autorizzazioni di autorizzazione per l'applicazione illecite:
+Lo script produce un file denominato Permissions.csv. Eseguire la procedura seguente per cercare le autorizzazioni di autorizzazione per l'applicazione illecite:
 
 1. Nella colonna ConsentType (colonna G) cercare il valore "AllPrinciples". L'autorizzazione AllPrincipals consente all'applicazione client di accedere al contenuto di tutti nel contratto di locazione. Le applicazioni native di Microsoft 365 hanno bisogno di questa autorizzazione per funzionare correttamente. Tutte le applicazioni non Microsoft con questa autorizzazione devono essere esaminate con attenzione.
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni sulla funzionalità degli allegati sicuri di ATP per Office 365 e su come ottenere la funzionalità per l'abbonamento.
-ms.openlocfilehash: 36993454a128d23ba388c24321a249f3be40d3d6
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616779"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754761"
 ---
 # <a name="atp-safe-attachments"></a>Allegati sicuri di ATP
 
@@ -41,7 +41,7 @@ Successivamente, verificare che i criteri per gli allegati sicuri di ATP siano d
 
 - I criteri per gli allegati sicuri ATP sono configurati. Per ulteriori informazioni, vedere [configurare i criteri degli allegati sicuri di ATP in Office 365](set-up-atp-safe-attachments-policies.md).
 
-- Gli utenti hanno eseguito l'accesso utilizzando l'account aziendale o dell'Istituto di istruzione. (Vedere [accedere a Office o office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
+- Gli utenti hanno eseguito l'accesso utilizzando l'account aziendale o dell'Istituto di istruzione. (Vedere [accedere a Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)).
 
 Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un ruolo appropriato. Alcuni esempi sono descritti nella tabella seguente:
 

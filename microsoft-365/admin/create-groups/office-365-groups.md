@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui gruppi di Microsoft 365.
-ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 14bc1211aaa65fb2daeebdb22729fce10154f204
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419137"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780410"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Panoramica dei gruppi di Microsoft 365 per gli amministratori
 
@@ -80,7 +80,7 @@ I limiti seguenti si applicano ai gruppi di Microsoft 365:
 |Archivio file|1 terabyte + 10 GB per utente sottoscritto + qualsiasi altro spazio di archiviazione acquistato. È possibile acquistare una quantità illimitata di spazio di archiviazione aggiuntivo.|
 |Dimensione della cassetta postale del gruppo|50 GB|
 
-Il numero massimo predefinito di gruppi di Microsoft 365 che un'organizzazione può avere è 500.000, ma può essere aumentato di una richiesta. Per ulteriori informazioni sui limiti relativi ai gruppi di Microsoft 365, vedere [gruppi di microsoft 365-Guida](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)per gli amministratori.
+Il numero massimo predefinito di gruppi di Microsoft 365 che un'organizzazione può avere è 500.000, ma può essere aumentato di una richiesta. Per ulteriori informazioni sui limiti relativi ai gruppi di Microsoft 365, vedere [gruppi di microsoft 365-Guida](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)per gli amministratori.
 
 La gestione dei gruppi Microsoft 365 è più efficace quando si dispone di informazioni sull'utilizzo dei gruppi. Nell'interfaccia di amministrazione di Microsoft 365 è disponibile uno strumento per la creazione di report che consente di visualizzare elementi quali l'utilizzo dell'archiviazione, il numero di gruppi attivi e la modalità di utilizzo dei gruppi da parte degli utenti. Vedere: [Microsoft 365 segnalazioni nell'](../activity-reports/office-365-groups.md) interfaccia di amministrazione per ulteriori informazioni.
 
@@ -116,7 +116,7 @@ I gruppi Microsoft 365 sono compatibili con Azure Active Directory (AAD). Le fun
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Informazioni sui gruppi di Microsoft 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Informazioni sui gruppi di Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Aggiornare le liste di distribuzione ai gruppi di Microsoft 365](../manage/upgrade-distribution-lists.md)
 

@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: Gestire un sito del team di SharePoint Online isolato, aggiungere nuovi utenti e gruppi, rimuovere utenti e gruppi e creare una sottocartella di documenti con autorizzazioni personalizzate.
-ms.openlocfilehash: 05e3cf742482d34c158e14253eed9d1b99c82995
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 43329aa72b3729200007441ce73838a7d6a60f55
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036633"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755379"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Gestire un sito del team di SharePoint Online isolato
 
@@ -146,11 +146,11 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="create-a-documents-subfolder-with-custom-permissions"></a>Creare una sottocartella di documenti con autorizzazioni personalizzate
 
-In alcuni casi, un sottoinsieme di utenti che lavorano all'interno del sito isolato necessitano di una posizione più privata per la collaborazione. Per i siti di SharePoint Online, è possibile creare una sottocartella nella cartella Documenti del sito e assegnare autorizzazioni personalizzate. Gli utenti privi di autorizzazioni non saranno in grado di visualizzare la sottocartella.
+In some cases, a subset of the people working within the isolated site need a more private place to collaborate. For SharePoint Online sites, you can create a subfolder in the Documents folder of the site and assign custom permissions. Those without permissions will not see the subfolder.
   
 Per creare una sottocartella di documenti con autorizzazioni personalizzate, eseguire le operazioni seguenti:
   
-1. Accedere a un account membro del gruppo di accesso Admins per il sito. Per informazioni, vedere [Dove accedere a Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere a un account membro del gruppo di accesso Admins per il sito. Per informazioni, vedere [Dove accedere a Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Accedere al sito del team isolato e fare clic su **Documenti**.
     
@@ -168,9 +168,9 @@ Per creare una sottocartella di documenti con autorizzazioni personalizzate, ese
     
 9. Fare clic su **Concedi autorizzazioni > Condiviso con > Avanzate**.
     
-10. Nella pagina relativa alle autorizzazioni, fare clic su **\<Membri di <nome sito> nell'elenco**.
+10. Nella pagina relativa alle autorizzazioni, fare clic su **Membri di \<site name> nell'elenco**.
     
-11. Nella pagina **\<Membri di <nome sito>**, selezionare la casella di controllo accanto al gruppo di accesso dei membri del sito, fare clic su **Azioni**, fare clic su **Rimuovi utenti dal gruppo** e infine su **OK**.
+11. Nella pagina **Membri di \<site name>**, selezionare la casella di controllo accanto al gruppo di accesso dei membri del sito, fare clic su **Azioni**, fare clic su **Rimuovi utenti dal gruppo** e infine su **OK**.
     
 12. Per aggiungere membri specifici a questa sottocartella, fare clic su **Nuovo > Aggiungi utenti**.
     
@@ -178,9 +178,9 @@ Per creare una sottocartella di documenti con autorizzazioni personalizzate, ese
     
 14. Aggiornare la pagina Web per visualizzare i nuovi risultati.
     
-15. In **Gruppi** nella barra di spostamento sinistra, fare clic sul gruppo **\<Visitatori di <nome sito>** e seguire i passaggi 11-14 per specificare il set di account utente in grado di visualizzare i file nella sottocartella (in base alle esigenze).
+15. In **Gruppi** nella barra di spostamento sinistra, fare clic sul gruppo **Visitatori di \<site name>** e seguire i passaggi 11-14 per specificare il set di account utente in grado di visualizzare i file nella sottocartella (in base alle esigenze).
     
-16. In **Gruppi** nella barra di spostamento sinistra, fare clic sul gruppo **\<Proprietari di <nome sito>** e seguire i passaggi 11-14 per specificare il set di account utente in grado di amministrare le autorizzazioni nella sottocartella (in base alle esigenze).
+16. In **Gruppi** nella barra di spostamento sinistra, fare clic sul gruppo **Proprietari di \<site name>** e seguire i passaggi 11-14 per specificare il set di account utente in grado di amministrare le autorizzazioni nella sottocartella (in base alle esigenze).
     
 17. Chiudere la scheda **Utenti e gruppi** visualizzata nel browser.
     

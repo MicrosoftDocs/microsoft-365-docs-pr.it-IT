@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Ottenere una panoramica del centro messaggi di Microsoft 365 e del relativo ruolo nella gestione delle modifiche.
-ms.openlocfilehash: c243bb551d98cb0ea3c177cf098cccd035243a06
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44694960"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780086"
 ---
 # <a name="message-center"></a>Centro messaggi
 
@@ -164,7 +164,7 @@ Se l'amministrazione è distribuita all'interno dell'organizzazione, è possibil
 Viene utilizzata la traduzione automatica per visualizzare automaticamente i messaggi nella lingua preferita. Leggere la [Traduzione in lingua per i post del centro messaggi](language-translation-for-message-center-posts.md) per ulteriori informazioni su come impostare la lingua.
   
 > [!NOTE]
-> Il digest settimanale e qualsiasi post inviato tramite posta elettronica vengono inviati solo in inglese. I destinatari possono utilizzare [Translator per Outlook](https://support.office.com/article/3d7e12ed-99d6-406e-a453-b9db0d9653fa.aspx) per leggere il messaggio nella loro lingua preferita. 
+> Il digest settimanale e qualsiasi post inviato tramite posta elettronica vengono inviati solo in inglese. I destinatari possono utilizzare [Translator per Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) per leggere il messaggio nella loro lingua preferita. 
   
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Ruoli di amministratore che non dispongono dell'accesso al centro messaggi
 

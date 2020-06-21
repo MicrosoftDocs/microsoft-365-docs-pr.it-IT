@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: db5a9669464a9c4cb150dee119d8c0bcc2dc9833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399813"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717274"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
 La distribuzione centralizzata è il metodo consigliato e più ricco di funzionalità per la maggior parte dei clienti per distribuire i componenti aggiuntivi di Office agli utenti e ai gruppi all'interno dell'organizzazione. Se si è un amministratore, utilizzare queste linee guida per determinare se il tenant e gli utenti soddisfano i requisiti affinché sia possibile utilizzare la distribuzione centralizzata.
-La distribuzione centralizzata supporta le app di Office, Windows, Mac, iOS, Android e online.
-È possibile richiedere fino a 12 ore affinché un componente aggiuntivo venga visualizzato per il client per tutti gli utenti.
+La distribuzione centralizzata supporta tre piattaforme desktop Windows, Mac e le app di Office Online. La distribuzione centralizzata supporta anche iOS e Android (solo componenti aggiuntivi di Outlook Mobile).
+È possibile richiedere fino a 24 ore affinché un componente aggiuntivo venga visualizzato per il client per tutti gli utenti.
   
 ## <a name="requirements"></a>Requisiti
 
@@ -87,7 +87,7 @@ Per informazioni su Microsoft 365 Apps for Enterprise, vedere [Troubleshooting T
 
 Microsoft Exchange archivia i manifesti del componente aggiuntivo all'interno del tenant dell'organizzazione. Gli amministratori che distribuiscono i componenti aggiuntivi e gli utenti che ricevono i componenti aggiuntivi devono trovarsi in una versione di Exchange Online che supporta l'autenticazione OAuth.
   
-Contattare l'amministratore di Exchange dell'organizzazione per sapere quale configurazione è in uso. La connettività OAuth per ogni utente può essere verificata usando il cmdlet di PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell cmdlet. 
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Verifica compatibilità della distribuzione centralizzata
@@ -96,7 +96,7 @@ Tramite Verifica compatibilità della distribuzione centralizzata, è possibile 
   
 #### <a name="run-the-compatibility-checker"></a>Esecuzione di verifica compatibilità
   
-1. Avviare una finestra di PowerShell. exe con privilegi elevati.
+1. Avviare una finestra di PowerShell.exe con privilegi elevati.
     
 2. Eseguire il comando riportato di seguito:
 
@@ -139,7 +139,7 @@ La funzionalità di distribuzione centralizzata supporta attualmente la maggior 
   
 La distribuzione centralizzata supporta le assegnazioni a singoli utenti, gruppi e tutti i clienti del tenant. La distribuzione centralizzata supporta gli utenti in gruppi di primo livello o in gruppi senza gruppi padre, ma non gli utenti in gruppi annidati o in gruppi con gruppi padre.
    
-Esaminare l'esempio seguente, in cui Valeria, Pupetta e il gruppo Reparto vendite vengono assegnati a un componente aggiuntivo. Reparto vendite costa occidentale è un gruppo annidato, quindi Gianni e Albertino non sono assegnati a un componente aggiuntivo.
+Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
   
 ![Diagramma del reparto vendite](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
@@ -150,11 +150,11 @@ Il modo più semplice per rilevare se un gruppo contiene gruppi annidati consist
   
 ![Scheda membri della scheda contatto di Outlook](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
-È possibile eseguire la query opposta risolvendo il gruppo per vedere se è un membro di un gruppo. Nell'esempio seguente nella scheda **Appartenenza** della scheda contatto di Outlook si vede che il sottogruppo 1 è un membro del gruppo di test. 
+You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the **Membership** tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
   
 ![Scheda appartenenza della scheda contatto di Outlook](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
-In alternativa, è possibile usare l'API di Azure Active Directory Graph per eseguire query per trovare l'elenco dei gruppi all'interno di un gruppo. Per altre informazioni, vedere [Operazioni su gruppi | Riferimento API Graph](https://go.microsoft.com/fwlink/p/?linkid=846342).
+Alternately, you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](https://go.microsoft.com/fwlink/p/?linkid=846342).
   
 ### <a name="contacting-microsoft-for-support"></a>Contattare Microsoft per assistenza
 

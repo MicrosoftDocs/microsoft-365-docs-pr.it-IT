@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Decidere quali funzionalità e quali nuovi contenuti vengono visualizzati o nascosti dagli utenti finali in Office What ' s New Management for Office desktop apps.
-ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678603"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717176"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Mostrare o nascondere le nuove funzionalità con Gestione novità
 
@@ -60,7 +60,8 @@ Nuove funzionalità vengono visualizzate in Office What ' s New Management in ba
 |:-----|:-----|:-----|
 |**Canale** <br/> |**In Gestione anteprime** <br/> |**Azione** <br/> |
 |**Corrente** <br/> |15 del mese  <br/> |1-3 settimane prima della pubblicazione mensile <br/> |
-|**Organizzazione semestrale (anteprima)** <br/> |Settembre 1 e marzo 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità
+|**Enterprise mensile** <br/> |1 ° del mese  <br/> |2 settimane prima della versione principale che apporta nuove funzionalità |
+|**Organizzazione semestrale (anteprima)** <br/> |Settembre 1 e marzo 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità|
 |**Azienda semestrale** <br/> |Gen 1 e luglio 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità<br/> |
 
 Per ulteriori informazioni sulle pianificazioni degli aggiornamenti dei canali, vedere [Update History for Microsoft 365 Apps (elencato in base alla data)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).

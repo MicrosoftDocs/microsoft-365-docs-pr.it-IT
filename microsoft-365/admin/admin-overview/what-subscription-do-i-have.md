@@ -24,18 +24,18 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Informazioni su come verificare gli abbonamenti che l'organizzazione deve passare alla pagina abbonamenti.
-ms.openlocfilehash: 0e2ff42ad75e2006470c441c6c3403fcfd127e93
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44431606"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780506"
 ---
 # <a name="what-subscription-do-i-have"></a>Qual è l'abbonamento corrente?
 
 Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organizzazione accedendo all'interfaccia di amministrazione.
   
- **Se non si è un amministratore** Per informazioni sul [prodotto o sulla licenza di Microsoft 365 for business?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **Se non si è un amministratore** Per informazioni sul [prodotto o sulla licenza di Microsoft 365 for business?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 ::: moniker range="o365-worldwide"
 
@@ -53,7 +53,7 @@ Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organ
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. Se si hanno più abbonamenti, accanto alle informazioni dettagliate sull'abbonamento verrà visualizzata una colonna con l'elenco degli abbonamenti acquistati e degli eventuali abbonamenti di valutazione. Per impostazione predefinita, l'abbonamento all'inizio dell'elenco è selezionato automaticamente e sono visualizzate le informazioni dettagliate sull'abbonamento.
+3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     Se si dispone di più sottoscrizioni, scegliere quella per la quale si desidera visualizzare informazioni dettagliate. La visualizzazione verrà aggiornata con le informazioni su quell'abbonamento.
 
@@ -72,7 +72,7 @@ Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organ
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. Se si hanno più abbonamenti, accanto alle informazioni dettagliate sull'abbonamento verrà visualizzata una colonna con l'elenco degli abbonamenti acquistati e degli eventuali abbonamenti di valutazione. Per impostazione predefinita, l'abbonamento all'inizio dell'elenco è selezionato automaticamente e sono visualizzate le informazioni dettagliate sull'abbonamento.
+3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     Se si dispone di più sottoscrizioni, scegliere quella per la quale si desidera visualizzare informazioni dettagliate. La visualizzazione verrà aggiornata con le informazioni su quell'abbonamento.
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire i componenti aggiuntivi per gli utenti e i gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: 9d6a3da00445dd5cde26c80fe63edd81f745ce63
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 25a4cd4147f6388cdbd8982eb10624e7b7e8f6cb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678637"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780122"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Gestire la distribuzione dei componenti aggiuntivi nell'interfaccia di amministrazione di Microsoft 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "44678637"
 
 ::: moniker-end
 
-I componenti aggiuntivi di Office consentono di personalizzare i documenti e semplificare la modalità di accesso alle informazioni sul Web (vedere [iniziare a utilizzare il componente aggiuntivo di Office](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Come amministratore, è possibile distribuire i componenti aggiuntivi di Office per gli utenti dell'organizzazione. È possibile eseguire questa operazione utilizzando la caratteristica di distribuzione centralizzata nell'interfaccia di amministrazione di Microsoft 365.
+I componenti aggiuntivi di Office consentono di personalizzare i documenti e semplificare la modalità di accesso alle informazioni sul Web (vedere [iniziare a utilizzare il componente aggiuntivo di Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Come amministratore, è possibile distribuire i componenti aggiuntivi di Office per gli utenti dell'organizzazione. È possibile eseguire questa operazione utilizzando la caratteristica di distribuzione centralizzata nell'interfaccia di amministrazione di Microsoft 365.
   
 La distribuzione centralizzata è il metodo consigliato e più ricco di funzionalità per la maggior parte degli amministratori per la distribuzione di componenti aggiuntivi per utenti e gruppi all'interno di un'organizzazione. Per ulteriori informazioni su come determinare se l'organizzazione è in grado di supportare la distribuzione centralizzata, vedere [determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione](centralized-deployment-of-add-ins.md).
   
@@ -44,7 +44,7 @@ La distribuzione centralizzata offre i vantaggi seguenti:
   
 - Un amministratore globale può assegnare un componente aggiuntivo direttamente a un utente, a più utenti tramite un gruppo o a tutti i clienti del tenant.
     
-- All'avvio dell'applicazione di Office rilevante, il componente aggiuntivo viene scaricato automaticamente per l'utente. Se il componente aggiuntivo supporta i comandi dell'interfaccia, viene automaticamente visualizzato nella barra multifunzione all'interno dell'applicazione di Office.
+- When the relevant Office application starts, the add-in automatically downloads for the user. If the add-in supports add-in commands, the add-in automatically appears in the Ribbon within the Office application.
     
 - I componenti aggiuntivi non verranno più visualizzati per gli utenti se l'amministratore disattiva o Elimina il componente aggiuntivo oppure se l'utente è stato rimosso da Azure Active Directory o da un gruppo a cui è assegnato il componente aggiuntivo.
     
@@ -53,11 +53,11 @@ La distribuzione centralizzata offre i vantaggi seguenti:
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approccio consigliato per la distribuzione dei componenti aggiuntivi per Office
 
-È consigliabile distribuire i componenti aggiuntivi in un approccio in fasi per essere certi che la distribuzione dei componenti aggiuntivi proceda correttamente. Ecco il piano consigliato:
+Consider rolling out add-ins in a phased approach to help ensure your add-in deployment goes smoothly. We recommend the following plan:
   
-1. Distribuire il componente aggiuntivo in un gruppo ristretto di stakeholder dell'azienda e di membri del reparto IT. Valutare se la distribuzione è riuscita e, in caso affermativo, passare al passaggio 2.
+1. Roll-out the add-in to a small set of business stakeholders and members of the IT department. Evaluate if the deployment was successful, and if so, move on to step 2.
     
-2. Eseguire la distribuzione in un set più ampio di persone all'interno dell'azienda che useranno il componente aggiuntivo. Valutare di nuovo i risultati e, se sono tutti positivi, andare al passaggio successivo per la distribuzione completa.
+2. Roll-out to a larger set of individuals within the business who will be using the add-in. Again, evaluate results and, if all went well, go to the next step of a full deployment.
     
 3. Distribuire completamente all'intero gruppo di destinatari.
     
@@ -83,7 +83,7 @@ Prima di iniziare, vedere [determinare se la distribuzione centralizzata dei com
 7. Quando il componente aggiuntivo è stato distribuito, verrà visualizzato un segno di spunta verde. È possibile seguire le istruzioni visualizzate nella pagina per verificare che il componente aggiuntivo sia stato distribuito correttamente.
 
 > [!NOTE]
-> Gli utenti potrebbero dover rilanciare Office per visualizzare l'icona del componente aggiuntivo sulla barra multifunzione di app. I componenti aggiuntivi di Outlook possono richiedere fino a 12 ore per essere visualizzati sui nastri degli utenti.
+> Gli utenti potrebbero dover rilanciare Office per visualizzare l'icona del componente aggiuntivo sulla barra multifunzione di app. I componenti aggiuntivi di Outlook possono richiedere fino a 24 ore per essere visualizzati sui nastri degli utenti.
     
 8. Al termine, selezionare **Avanti**. Se è stata distribuita solo da solo, è possibile selezionare **cambia chi ha accesso al componente aggiuntivo** per la distribuzione a più utenti.
 
@@ -95,13 +95,13 @@ Se il componente aggiuntivo è stato distribuito ai membri dell'organizzazione d
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Considerazioni per l'assegnazione di un componente aggiuntivo a utenti e gruppi
 
-Gli amministratori possono assegnare un componente aggiuntivo a tutti gli utenti o a gruppi e utenti specifici. Ogni opzione ha delle implicazioni:
+Admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
   
-- **Tutti**: Come suggerisce il nome, questa opzione assegna il componente aggiuntivo a tutti gli utenti nel tenant. Usare questa opzione con moderazione e solo per i componenti aggiuntivi che effettivamente servono a tutti gli utenti dell'organizzazione. 
+- **Everyone**: As the name implies, this option assigns the add-in to every user in the tenant. Use this option sparingly and only for add-ins that are truly universal to your organization. 
     
-- **Utenti**: se si assegna un componente aggiuntivo a un singolo utente, per distribuirlo a un nuovo utente è necessario prima aggiungere l'utente. Lo stesso vale per la rimozione degli utenti. 
+- **Users**: If you assign an add-in to an individual user, then to deploy the add-in to a new user, you will need to first add that user. The same goes for removing users. 
     
-- **Gruppi**: se si assegna un componente aggiuntivo a un gruppo, il componente aggiuntivo verrà assegnato automaticamente agli utenti aggiunti al gruppo. Inoltre, quando un utente viene rimosso da un gruppo, perde l'accesso al componente aggiuntivo. In entrambi i casi, gli amministratori non devono eseguire altre azioni. 
+- **Groups**: If you assign an add-in to a group, users who are added to the group will automatically be assigned the add-in. And, when a user is removed from a group, the user loses access to the add-in. In either case, no additional action is required from you as the admin. 
 
 - **Solo me**: se si assegna un componente aggiuntivo solo a te stesso, questo assegna il componente aggiuntivo solo al tuo account. Questo è l'ideale se si desidera testare il componente aggiuntivo per primo.
     
@@ -121,7 +121,7 @@ Se non è più in uso, è consigliabile eliminare un componente aggiuntivo. Disa
   
 ### <a name="security-of-office-add-ins"></a>Sicurezza dei componenti aggiuntivi per Office
 
-I componenti aggiuntivi per Office combinano un file manifesto XML che contiene alcuni metadati sul componente aggiuntivo, ma soprattutto che punta a un'applicazione Web che contiene tutto il codice e la logica. Le funzionalità dei componenti aggiuntivi possono variare. Ad esempio, i componenti aggiuntivi possono:
+Office add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
   
 - Visualizzare i dati.
     
@@ -131,18 +131,18 @@ I componenti aggiuntivi per Office combinano un file manifesto XML che contiene 
     
 Per altre informazioni sui tipi e le funzionalità dei componenti aggiuntivi per Office, vedere [Panoramica della piattaforma Componenti aggiuntivi per Office](https://go.microsoft.com/fwlink/p/?linkid=846362), in particolare la sezione "Anatomia di un componente aggiuntivo per Office".
   
-Per interagire con il documento dell'utente, il componente aggiuntivo deve dichiarare il tipo di autorizzazione necessario nel manifesto. Un modello di autorizzazioni di accesso per API JavaScript con cinque livelli costituisce la base per la privacy e la sicurezza degli utenti per i componenti aggiuntivi del riquadro attività. La maggior parte dei componenti aggiuntivi in Office Store sono di livello ReadWriteDocument e quasi tutti i componenti aggiuntivi supportano almeno il livello ReadDocument. Per altre informazioni sui livelli di autorizzazione, vedere [Richiesta di autorizzazioni per l'uso di API nei componenti aggiuntivi del contenuto e del riquadro attività](https://go.microsoft.com/fwlink/p/?linkid=848863).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
   
-Quando si aggiorna un manifesto, le modifiche tipiche riguardano l'icona e il testo di un componente aggiuntivo. In alcuni casi, vengono modificati i comandi del componente aggiuntivo. Tuttavia, le autorizzazioni del componente aggiuntivo non cambiano. L'applicazione Web in cui viene eseguito tutto il codice e la logica per il componente aggiuntivo può essere modificata in qualsiasi momento, come accade per tutte le applicazioni Web.
+When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
 Gli aggiornamenti per i componenti aggiuntivi vengono eseguiti come segue:
   
-- **Componente aggiuntivo line-of-business:** In questo caso, in cui un amministratore ha caricato in modo esplicito un manifesto, il componente aggiuntivo richiede che l'amministratore carichi un file manifesto nuovo per supportare le modifiche dei metadati. All'avvio successivo delle applicazioni di Office rilevanti, il componente aggiuntivo verrà aggiornato. L'applicazione Web può essere modificata in qualsiasi momento. 
+- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
     > [!NOTE]
     > Non è necessario che l'amministratore elimini un componente aggiuntivo LOB per eseguire un aggiornamento.   Nella sezione componenti aggiuntivi, l'amministratore può semplicemente fare clic sul componente aggiuntivo LOB e scegliere il **pulsante Aggiorna** nell'angolo in basso a destra. L'aggiornamento funzionerà solo se la versione del nuovo componente aggiuntivo è maggiore di quella del componente aggiuntivo esistente.   
     
-- **Componente aggiuntivo di Office Store:** Se un amministratore ha selezionato un componente aggiuntivo da Office Store e questo viene aggiornato in Office Store, il componente aggiuntivo verrà aggiornato in un secondo momento nella distribuzione centralizzata. All'avvio successivo delle applicazioni di Office rilevanti, il componente aggiuntivo verrà aggiornato. L'applicazione Web può essere modificata in qualsiasi momento. 
+- **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
 ### <a name="edit-add-in-access"></a>Modificare l'accesso del componente aggiuntivo
 
@@ -252,9 +252,9 @@ Word, Excel e PowerPoint 2013 per Windows supportano gli stessi controlli second
     
 ## <a name="end-user-experience-with-add-ins"></a>Esperienza dell'utente finale con i componenti aggiuntivi
 
-In seguito alla distribuzione del componente aggiuntivo gli utenti finali possono iniziare a usarlo nelle proprie applicazioni di Office. Vedere [Iniziare a usare il componente aggiuntivo per Office](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx). Il componente aggiuntivo verrà visualizzato in tutte le piattaforme che supporta.
+Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in will appear on all platforms that the add-in supports.
   
-Se il componente aggiuntivo supporta i comandi dell'interfaccia, questi vengono visualizzati sulla barra multifunzione di Office. Nell'esempio seguente il comando **Cerca citazione** viene visualizzato per il componente aggiuntivo **Citazioni**. 
+If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 
 ![Barra multifunzione di Office con citazioni di ricerca](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   

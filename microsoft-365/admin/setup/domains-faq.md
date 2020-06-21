@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Per ulteriori informazioni sui domini, è possibile trovare le risposte alle domande più frequenti.
-ms.openlocfilehash: c82d5d01d64ad01f68d0c1ba73860511aa1718aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a52513130f9bbbf7c4cd25d4c4827e833700d992
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398907"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739162"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
@@ -102,7 +102,7 @@ Sono disponibili due opzioni per la gestione DNS con Office 365:
 ## <a name="what-is-a-domain-name"></a>Cos'è un nome di dominio?
 
 
-Un dominio è un nome univoco che segue il segno **@** negli indirizzi di posta elettronica e **www.** negli indirizzi Web. In genere è composto dal nome dell'organizzazione e da un suffisso Internet standard, come  *nomeazienda.com*  o  *nomeuniversità.edu*  . 
+A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.* 
   
 L'utilizzo di un dominio personalizzato come "**rob \@ contoso.com**" con Office 365 può contribuire a creare credibilità e riconoscimento per il proprio marchio. 
   
@@ -154,7 +154,7 @@ Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi pas
    
 1. Accedere al registrar del proprio dominio.
     
-2. Sul sito Web del registrar trovare l'area in cui vengono aggiornati i record dei server dei nomi e aggiornare i server dei nomi in modo che puntino all'host DNS del dominio. L'host DNS corrisponde spesso al registrar.
+2. Find the area on the registrar's website where you update nameserver records, and update the nameservers to point to your domain's DNS host. (The DNS host is often the domain registrar.)
     
 3. Seguire un collegamento per passare all'installazione guidata dei domini:
 
@@ -211,13 +211,13 @@ Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi pas
     
 4. Se il dominio non è ancora stato verificato, eseguire prima la procedura corrispondente.
     
-5. Nella pagina **Aggiorna impostazioni DNS** sono elencati i server dei nomi per Office 365. Passare al registrar del proprio dominio e aggiornare i server dei nomi ai server dei nomi di Office 365. 
+5. On the **Update DNS settings** page, we list the nameservers for Office 365. Go to the domain registrar for your domain, and update the nameservers to the Office 365 nameservers. 
     
 4. Dopo aver aggiornato i server dei nomi, **attendere almeno un'ora**. Quindi, di nuovo nella procedura guidata di Office 365, selezionare **Verifica**.
     
 ## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a>Cosa succede se il provider DNS non supporta alcuni tipi di record?
 
-Se si gestiscono personalmente i record DNS e l'host DNS scelto non supporta tutti i record DNS necessari per Office 365, alcune caratteristiche di Office 365 non saranno disponibili. È consigliabile trasferire il dominio presso un registrar che supporti tutti i record DNS necessari.
+If you manage your own DNS records and your DNS host does not support all the DNS records that Office 365 needs, some Office 365 features won't work. We recommend that you transfer your domain to a registrar that supports all required DNS records.
   
 Provider che supportano tutti i record DNS necessari:
   
@@ -263,7 +263,7 @@ Provider che supportano tutti i record DNS necessari:
 
 - Microsoft teams Federation con Skype for business, sia in locale che online. Per ulteriori informazioni, vedere [preparare la rete dell'organizzazione per Microsoft teams](https://docs.microsoft.com/microsoftteams/prepare-network).
     
- **Se i record SPF/TXT non sono supportati**, altre persone potrebbero usare il dominio per inviare posta indesiderata o in altro modo dannosa. I record SPF identificano i server autorizzati a inviare posta elettronica per conto del dominio. 
+ **If SPF/TXT records are not supported**, other people may be able to use your domain to send spam or other malicious email. SPF records work by identifying the servers that are authorized to send email from your domain. 
   
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Come impostare o modificare il dominio predefinito in Office 365?
 
@@ -335,7 +335,7 @@ Ad esempio, è possibile aggiungere i domini contoso.com e contosomarketing.com 
   
 Quando si aggiunge un sottodominio, la verifica viene eseguita automaticamente in base al dominio padre che si sta verificando.
   
-Quando si aggiungono più domini a Office 365 è possibile ospitare uno qualsiasi dei servizi (ad esempio la posta elettronica) in uno qualsiasi dei domini aggiunti.  *Quando si configura la posta elettronica per Office 365 aggiornando il record MX del dominio, TUTTI i messaggi inviati al dominio specificato inizieranno a essere recapitati a Office 365.* 
+When you add multiple domains to Office 365, you can host any of the services (like email) on any of the domains you've added.  *When you change your email to Office 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Office 365.* 
  
 ::: moniker range="o365-worldwide"
 
@@ -348,13 +348,13 @@ Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.com*, quando 
   
  **Se si desidera che la posta elettronica sia simile a *Alan \@ contoso.com*:** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già. 
   
-- **Dopo l'iscrizione, non è possibile rinominare il dominio onmicrosoft**. Se ad esempio il dominio iniziale scelto è fourthcoffee.onmicrosoft.com, non lo si può cambiare in fabrikam.onmicrosoft.com. Per usare un dominio onmicrosoft.com diverso, si dovrà iniziare un nuovo abbonamento a Office 365. 
+- **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com. To use a different onmicrosoft.com domain, you'd have to start a new subscription with Office 365. 
     
 - **Non è possibile rinominare l'URL del sito del team.** L'URL del sito del team si basa sul nome di dominio onmicrosoft.com. Purtroppo, a causa del modo in cui funziona l'architettura di SharePoint Online, non è possibile rinominare il sito del team. 
     
-- **Non è possibile rimuovere il dominio onmicrosoft.** Office 365 ne ha bisogno perché viene usato per l'abbonamento. Non è tuttavia necessario usare personalmente il dominio dopo averne aggiunto uno personalizzato. 
+- **You can't remove your onmicrosoft domain.** Office 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
     
-Si può continuare a usare il dominio iniziale onmicrosoft.com anche dopo l'aggiunta di quello personalizzato. È infatti sempre valido per la posta elettronica e altri servizi. La scelta spetta all'utente.
+You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
   
 ::: moniker-end
 
@@ -369,7 +369,7 @@ Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.de*, quando s
     
 - **Non è possibile rinominare l'URL del sito del team.** L'URL del sito del team si basa sul nome di dominio onmicrosoft.de. Purtroppo, a causa del modo in cui funziona l'architettura di SharePoint Online, non è possibile rinominare il sito del team. 
     
-- **Non è possibile rimuovere il dominio onmicrosoft.** Office 365 ne ha bisogno perché viene usato per l'abbonamento. Non è tuttavia necessario usare personalmente il dominio dopo averne aggiunto uno personalizzato. 
+- **You can't remove your onmicrosoft domain.** Office 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
     
 È possibile continuare a utilizzare il dominio onmicrosoft.de iniziale anche dopo aver aggiunto il dominio. Funziona ancora per la posta elettronica e altri servizi, quindi è una tua scelta.
   
@@ -439,7 +439,7 @@ Vuoi saperne di più su come diventare l'amministratore per la tua scuola? Infor
     
 4. Facoltativamente, sbloccare il server di posta elettronica esistente
     
-    1. Office 365 utilizza Exchange Online Protection (EOP) per la protezione da posta indesiderata. Se EOP rileva un elevato volume di posta indesiderata che viene inoltrata dal server di posta corrente, potrebbe bloccarla, in modo da impedire l'inoltro di lavoro. Se si è sicuri della protezione da posta indesiderata utilizzata dall'altro provider di posta elettronica, è possibile inserire in whitelist il server in Office 365. Tuttavia, ciò consentirà anche qualsiasi posta indesiderata che arriva attraverso il server originale per accedere alle cassette postali di Office 365 e non sarà in grado di valutare come Office 365 impedisce la posta indesiderata.
+    1. Office 365 utilizza Exchange Online Protection (EOP) per la protezione da posta indesiderata. Se EOP rileva un elevato volume di posta indesiderata che viene inoltrata dal server di posta corrente, potrebbe bloccarla, in modo da impedire l'inoltro di lavoro. Se si è sicuri della protezione da posta indesiderata utilizzata dall'altro provider di posta elettronica, è possibile aggiungere il proprio server a un elenco di indirizzi consentiti in Office 365. Tuttavia, ciò consentirà anche qualsiasi posta indesiderata che arriva attraverso il server originale per accedere alle cassette postali di Office 365 e non sarà in grado di valutare come Office 365 impedisce la posta indesiderata.
     
     2. Accedere a interfaccia di amministrazione di Exchange (EAC).
         

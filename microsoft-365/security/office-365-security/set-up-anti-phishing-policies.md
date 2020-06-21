@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689279"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754665"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -95,7 +95,7 @@ Le seguenti impostazioni di spoofing sono disponibili nei criteri anti-phishing 
     - Per il punto interrogativo nella foto del mittente, SPF o DKIM sono i più importanti.
     - Per il tag via, confermare il dominio nella firma di DKIM o l'indirizzo di **posta elettronica da** corrispondenze (o è un sottodominio di) il dominio nell'indirizzo mittente.
 
-  Per ulteriori informazioni, vedere [Identificazione dei messaggi sospetti in Outlook.com e Outlook sul Web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206)
+  Per ulteriori informazioni, vedere [Identificazione dei messaggi sospetti in Outlook.com e Outlook sul Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Impostazioni esclusive nei criteri di anti-phishing ATP
 

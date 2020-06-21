@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come visualizzare, creare, modificare ed eliminare i criteri di posta indesiderata in uscita in Exchange Online Protection (EOP).
-ms.openlocfilehash: 6a15e33033643f99fc8aeb51036ddac7beba7b71
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 12f2936530a300cf79556ebf02533c187caa23d5
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616579"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761719"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurare il filtro della posta indesiderata in uscita in EOP
 
@@ -73,13 +73,23 @@ Ogni organizzazione dispone di un criterio di posta indesiderata in uscita incor
 
 Per aumentare l'efficacia del filtro per la posta indesiderata in uscita, è possibile creare criteri di posta indesiderata in uscita personalizzati con impostazioni più rigorose applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare i criteri di posta indesiderata in uscita, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** . Per l'accesso in sola lettura ai criteri di posta indesiderata in uscita, è necessario essere membri del gruppo di ruoli **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Prima di poter eseguire le procedure descritte in questo argomento, è necessario assegnare le autorizzazioni seguenti:
+
+  - Per aggiungere, modificare ed eliminare i criteri di posta indesiderata in uscita, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+
+    - **Gestione organizzazione** o **amministratore della sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+    - Gestione dell' **organizzazione** o **gestione dell'igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Per l'accesso in sola lettura ai criteri di posta indesiderata in uscita, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+
+    - **Lettore di sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+    - **Gestione dell'organizzazione in sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Per le impostazioni consigliate per i criteri di protezione da posta indesiderata in uscita, vedere [EOP in uscita Spam Policy Filter Settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
@@ -154,7 +164,7 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
 
    - **Numero massimo di destinatari per utente**
 
-     Un valore valido è compreso tra 0 e 10000. Il valore predefinito è 0, il che significa che vengono utilizzati i valori predefiniti del servizio. Per ulteriori informazioni, vedere [invio di limiti tra le opzioni di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+     Un valore valido è compreso tra 0 e 10000. Il valore predefinito è 0, il che significa che vengono utilizzati i valori predefiniti del servizio. Per ulteriori informazioni, vedere [invio di limiti](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
      - **Limite orario esterno**: numero massimo di destinatari esterni all'ora.
 
@@ -178,7 +188,7 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
 
 6. Necessari Espandere la sezione **applicato a** per identificare i mittenti interni ai quali si applica il criterio.
 
-    È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o utilizzo o logica dell'eccezione (ad esempio, _\<sender1\>_ o _\<sender2\>_ ). Utilizzo e logica di diverse condizioni o eccezioni (ad esempio, _\<sender1\>_ e _\<member of group 1\>_ ).
+    È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<sender1\>_ o _\<sender2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<sender1\>_ e _\<member of group 1\>_).
 
     È più facile fare clic su **Aggiungi una condizione** tre volte per visualizzare tutte le condizioni disponibili. È possibile fare clic su ![Pulsante Rimuovi](../../media/scc-remove-icon.png) per rimuovere le condizioni che non si vogliono configurare.
 
@@ -452,7 +462,7 @@ Per impostare la priorità di una regola di filtro di protezione da posta indesi
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-Nell'esempio seguente la priorità della regola denominata Marketing Department viene impostata su 2. Tutte le regole esistenti che hanno una priorità minore o uguale a 2 vengono abbassate di 1 valore (i numeri di priorità vengono aumentati di 1).
+This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
 ```PowerShell
 Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2

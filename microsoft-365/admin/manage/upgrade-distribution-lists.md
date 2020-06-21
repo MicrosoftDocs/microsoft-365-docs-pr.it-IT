@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Informazioni su come eseguire l'aggiornamento di una o più liste di distribuzione ai gruppi di Microsoft 365 in Outlook e sull'utilizzo di PowerShell per l'aggiornamento simultaneo di più liste di distribuzione.
-ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f5748c293d18943c94c3610c0e3c5c33848eb521
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399495"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780026"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Aggiornare le liste di distribuzione ai gruppi di Microsoft 365 in Outlook
 
-È possibile aggiornare le liste di distribuzione ai gruppi di Microsoft 365 con Outlook. Questo è un ottimo modo per fornire alle liste di distribuzione dell'organizzazione tutte le caratteristiche e le funzionalità dei gruppi di Microsoft 365. [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+È possibile aggiornare le liste di distribuzione ai gruppi di Microsoft 365 con Outlook. Questo è un ottimo modo per fornire alle liste di distribuzione dell'organizzazione tutte le caratteristiche e le funzionalità dei gruppi di Microsoft 365. [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 È possibile aggiornare le liste di distribuzione una per volta oppure diverse contemporaneamente.
 
@@ -47,21 +47,21 @@ Per aggiornare una lista di distribuzione, è necessario essere un amministrator
 
 5. Nella finestra di dialogo informazioni selezionare **Sì** per confermare l'aggiornamento. Il processo inizia immediatamente. A seconda delle dimensioni e del numero di DLs che si sta aggiornando, il processo può richiedere minuti o ore.<br/>Se la lista di distribuzione non può essere aggiornata, viene visualizzata una finestra di dialogo che indica questo problema. Visualizzare le [liste di distribuzione che non possono essere aggiornate](#which-distribution-lists-cannot-be-upgraded).
 
-6. Se si esegue l'aggiornamento di più liste di distribuzione, utilizzare l'elenco a discesa per filtrare le liste di distribuzione che sono state aggiornate. Se l'elenco non è completo, attendere un po' di tempo e quindi selezionare **Aggiorna** per vedere cosa è stato aggiornato correttamente.<br/>Al termine del processo di aggiornamento per tutte le liste di distribuzione selezionate, non viene visualizzato alcun avviso. Per ottenere questa informazione, è possibile esaminare le liste di distribuzione elencate in **Disponibili per l'aggiornamento** o **Liste di distribuzione aggiornate**.
+6. Se si esegue l'aggiornamento di più liste di distribuzione, utilizzare l'elenco a discesa per filtrare le liste di distribuzione che sono state aggiornate. Se l'elenco non è completo, attendere un po' di tempo e quindi selezionare **Aggiorna** per vedere cosa è stato aggiornato correttamente.<br/>There's no notice that tells you when the upgrade process has completed for all DLs you selected. You can figure this out by looking to see what's listed under **Available for upgrade** or **Upgraded DLs**.
 
-7. Se è stata selezionata una lista di distribuzione per l'aggiornamento, ma questa viene ancora visualizzata nella pagina in Disponibili per l'aggiornamento, l'aggiornamento non è riuscito. Vedere [Che cosa fare se l'aggiornamento non riesce](#what-to-do-if-the-upgrade-doesnt-work).
+7. If you selected a DL for upgrade, but it's still appears on the page as Available to upgrade, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
-> Se si ricevono messaggi di posta elettronica di riepilogo dei gruppi, si potrebbe notare nella parte inferiore una notifica che offre di aggiornare tutte le liste di distribuzione idonee di cui si è proprietari. Per altre informazioni sui messaggi di posta elettronica di riepilogo, vedere [Avviare una conversazione di gruppo in Outlook](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22).
+> If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) for more information about digest emails.
 
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>Che cosa fare se l'aggiornamento non riesce
 
 Le liste di distribuzione il cui aggiornamento non riesce restano inalterate.
 
-Se l'aggiornamento di una o più liste di distribuzione **idonee** non riesce, aprire un [ticket di supporto](../contact-support-for-business-products.md). Il problema dovrà essere inoltrato al team dei tecnici dei gruppi, perché indaghi sul problema.
+If one or more **eligible** distribution lists fail to be upgraded, open a [Support ticket](../contact-support-for-business-products.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
 
-È possibile che la lista di distribuzione non sia stata aggiornata a causa di un'interruzione del servizio, ma questo è piuttosto improbabile. È possibile attendere ancora e quindi riprovare ad aggiornare la lista di distribuzione.
+It's possible that the distribution list didn't get upgraded because of a service outage, but pretty unlikely. If you want, wait a while and then try to upgrade the DL again.
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Come usare PowerShell per aggiornare diverse liste di distribuzione contemporaneamente
 
@@ -126,7 +126,7 @@ Get-DistributionGroup| Foreach-Object{
 |**Proprietà**|**Idonea?**|
 |:-----|:-----|
 |Lista di distribuzione gestita in locale  <br/> |No  <br/> |
-|Liste di distribuzione annidate. La lista di distribuzione ha gruppi figlio o è membro di un altro gruppo.  <br/> |No  <br/> |
+|Nested distribution lists. Distribution list either has child groups or is a member of another group.  <br/> |No  <br/> |
 |Liste di distribuzione con **RecipientTypeDetails** membri diverse da **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |No  <br/> |
 |Lista di distribuzione che ha più di 100 proprietari  <br/> |No  <br/> |
 |Lista di distribuzione che ha solo membri, ma nessun proprietario  <br/> |No  <br/> |
@@ -156,11 +156,11 @@ Utenti con diritti di amministratore globale o di amministrazione di Exchange.
 
 - Per Outlook: quando un utente tenta di inviare un messaggio di posta elettronica in Outlook digitando il nome del gruppo Microsoft 365 dopo la migrazione, il destinatario viene risolto come la lista di distribuzione invece del gruppo. La scheda contatto del destinatario sarà la scheda contatto degli elenchi di distribuzione. Questo dipende dalla cache dei destinatari o dalla cache dei nomi alternativi in Outlook. Il messaggio di posta elettronica verrà inviato correttamente al gruppo, ma potrebbe creare confusione per il mittente.<br/>È possibile eseguire i passaggi descritti in questo argomento, [Informazioni relative all'elenco di completamento automatico di Outlook](https://go.microsoft.com/fwlink/?LinkID=798736) per reimpostare la cache e risolvere il problema.
 
-- Per Outlook sul Web: in caso di Outlook sul Web, il destinatario della lista di distribuzione rimarrà ancora nella cache. È possibile seguire la procedura descritta in [rimuovere il nome o l'indirizzo di posta elettronica suggerito dall'elenco di completamento automatico](https://support.office.com/article/9E1419D9-E88F-445B-B07F-F558B8A37C58.aspx) per aggiornare la cache per visualizzare la scheda contatto di gruppo.
+- Per Outlook sul Web: in caso di Outlook sul Web, il destinatario della lista di distribuzione rimarrà ancora nella cache. È possibile seguire la procedura descritta in [rimuovere il nome o l'indirizzo di posta elettronica suggerito dall'elenco di completamento automatico](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) per aggiornare la cache per visualizzare la scheda contatto di gruppo.
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>I nuovi membri del gruppo ricevono un messaggio di posta elettronica di benvenuto nella propria posta in arrivo?
 
-No. L'impostazione per abilitare i messaggi di benvenuto è impostata su false per impostazione predefinita. Questa impostazione interessa i nuovi membri del gruppo e quelli esistenti che potrebbero aggiungersi al termine dell'aggiornamento. Se successivamente il proprietario del gruppo consente utenti guest, questi non riceveranno un messaggio di posta elettronica di benvenuto nella propria posta in arrivo. I membri guest possono continuare a lavorare con il gruppo.
+No. The setting to enable welcome messages is set to false by default. This setting affects both existing and new group members who may join after the migration is complete. If the group owner later allows guest users, guest users won't receive a welcome email in their inbox. Guest members can continue working with the group.
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>Cosa succede se uno o più dei DLs non vengono aggiornati?
 
@@ -172,6 +172,6 @@ Esistono alcuni casi in cui se DL è idoneo ma non è stato possibile aggiornarl
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Che cosa succede alla lista di distribuzione se l'aggiornamento dall'interfaccia di amministrazione di Exchange non riesce?
 
-L'aggiornamento viene completato solo quando la chiamata viene inviata al server. Se l'aggiornamento non riesce, le liste di distribuzione restano inalterate e funzionano come prima.
+The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your DLs will be intact. They will work like they used to.
 
 

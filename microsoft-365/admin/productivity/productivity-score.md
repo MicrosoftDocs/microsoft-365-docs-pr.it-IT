@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica del Punteggio di produttività Microsoft.
-ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399183"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754797"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Punteggio di produttività Microsoft (anteprima)
 
@@ -135,6 +135,22 @@ L'intuizione principale per la mobilità è il numero di persone che accedono ai
 
 Misuriamo la percentuale e il numero assoluto di persone che hanno utilizzato almeno un'app per la produttività di Microsoft 365 in due o più piattaforme, tra cui desktop, mobili e Web. Le app per la produttività che misuriamo sono Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer e Skype. Gli utenti devono disporre delle licenze Microsoft 365 Apps for Enterprise, Exchange, Yammer, Skype o teams. 
 
-## <a name="we-want-to-hear-from-you"></a>si vuole sapere da voi
+## <a name="business-continuity-special-report"></a>Rapporto speciale di continuità aziendale
+
+Il rapporto di continuità aziendale è un report di intelligence sul luogo di lavoro a tempo limitato disponibile per tutti i clienti di Microsoft 365 per aiutarli a guidare le loro organizzazioni durante questo momento impegnativo.  
+
+Questo rapporto aiuta i leader aziendali a comprendere quanto segue: 
+
+- Il modo in cui la collaborazione e la comunicazione sono intaccate dal passaggio al lavoro remoto. 
+
+- L'impatto sul saldo della vita lavorativa come la gente adatta a lavorare da casa. 
+
+- Se gli utenti utilizzano le riunioni in modo efficace e come sono 
+
+[Ulteriori informazioni sul rapporto di continuità aziendale](https://aka.ms/bcrps)
+
+[Altre informazioni su Microsoft Graph](https://docs.microsoft.com/graph/)
+
+## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 
 Si prega di condividere i propri pensieri sul punteggio di produttività e sulle idee su come migliorarlo. Utilizzare le sezioni di **feedback** all'interno del prodotto e/o raggiungere il team del Punteggio di produttività in ProductivityScorePreview@service.microsoft.com.

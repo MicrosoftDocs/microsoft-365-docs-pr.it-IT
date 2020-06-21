@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
-ms.openlocfilehash: d5eaadc6d177acf91ea4d9d149c92a4de6cc8dd3
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616635"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755261"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 
@@ -44,7 +44,7 @@ Gli amministratori possono utilizzare PowerShell di Exchange Online per disabili
 > [!NOTE]
 > I messaggi provenienti da mittenti che gli utenti hanno aggiunto ai propri elenchi di mittenti attendibili ignoreranno il filtro delle connessioni come parte di EOP (SCL è-1). Per impedire agli utenti di aggiungere voci all'elenco dei mittenti attendibili in Outlook, utilizzare criteri di gruppo come indicato nella sezione [informazioni sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) più avanti in questo argomento. Il filtro dei criteri, il filtro contenuto e i controlli di protezione avanzata dalle minacce (ATP, Advanced Threat Protection) verranno ancora applicati ai messaggi.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per eseguire queste procedure, è possibile utilizzare solo Exchange Online PowerShell. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -110,7 +110,7 @@ La raccolta degli elenchi indirizzi attendibili in una cassetta postale include 
 
 <sup>\*</sup>**Note**:
 
-- In Exchange Online, le **voci di dominio** nell'elenco Mittenti attendibili o nel parametro _TrustedSendersAndDomains_ non vengono riconosciute, quindi utilizzano solo gli indirizzi di posta elettronica. In EOP autonomo con sincronizzazione della directory, le voci di dominio non vengono sincronizzate per impostazione predefinita, ma è possibile abilitare la sincronizzazione per i domini. Per ulteriori informazioni, vedere [KB3019657](https://support.microsoft.com/help/3019657/domains-on-the-outlook-safe-senders-list-aren-t-recognized-by-exchange).
+- In Exchange Online, le **voci di dominio** nell'elenco Mittenti attendibili o nel parametro _TrustedSendersAndDomains_ non vengono riconosciute, quindi utilizzano solo gli indirizzi di posta elettronica. In EOP autonomo con sincronizzazione della directory, le voci di dominio non vengono sincronizzate per impostazione predefinita, ma è possibile abilitare la sincronizzazione per i domini. Per ulteriori informazioni, vedere [KB3019657](https://support.microsoft.com/help/3019657).
 
 - Non è possibile modificare direttamente l'elenco dei destinatari attendibili utilizzando il cmdlet **Set-MailboxJunkEmailConfiguration** (il parametro _TrustedRecipientsAndDomains_ non funziona). È possibile modificare l'elenco Mittenti attendibili e tali modifiche vengono sincronizzate nell'elenco destinatari attendibili.
 
@@ -168,11 +168,11 @@ Per verificare che la raccolta degli elenchi indirizzi attendibili sia stata con
 
 ## <a name="about-junk-email-settings-in-outlook"></a>Informazioni sulle impostazioni di posta indesiderata in Outlook
 
-Per abilitare, disabilitare e configurare le impostazioni del filtro per la posta indesiderata sul retro del client disponibili in Outlook, utilizzare criteri di gruppo. Per ulteriori informazioni, vedere [file dei modelli amministrativi (ADMX/ADML) e strumento di personalizzazione di Office per le app di Microsoft 365 per Enterprise, office 2019 e office 2016](https://www.microsoft.com/download/details.aspx?id=49030) e [come distribuire le impostazioni di posta indesiderata, ad esempio l'elenco Mittenti attendibili, utilizzando criteri di gruppo](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi).
+Per abilitare, disabilitare e configurare le impostazioni del filtro per la posta indesiderata sul retro del client disponibili in Outlook, utilizzare criteri di gruppo. Per ulteriori informazioni, vedere [file dei modelli amministrativi (ADMX/ADML) e strumento di personalizzazione di Office per le app di Microsoft 365 per Enterprise, office 2019 e office 2016](https://www.microsoft.com/download/details.aspx?id=49030) e [come distribuire le impostazioni di posta indesiderata, ad esempio l'elenco Mittenti attendibili, utilizzando criteri di gruppo](https://support.microsoft.com/help/2252421).
 
-Quando il filtro posta indesiderata di Outlook è impostato sul valore predefinito **nessun filtro automatico** nelle opzioni di opzioni di posta elettronica indesiderata in **casa** \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook non cerca di classificare i massaggi come posta indesiderata, ma utilizza comunque la raccolta degli elenchi indirizzi attendibili (elenco Mittenti attendibili, elenco destinatari attendibili e elenco Mittenti bloccati) per spostare i messaggi nella cartella posta indesiderata dopo Per ulteriori informazioni su queste impostazioni, vedere [Panoramica del filtro della posta indesiderata](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+Quando il filtro posta indesiderata di Outlook è impostato sul valore predefinito **nessun filtro automatico** nelle opzioni di opzioni di posta elettronica indesiderata in **casa** \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook non cerca di classificare i massaggi come posta indesiderata, ma utilizza comunque la raccolta degli elenchi indirizzi attendibili (elenco Mittenti attendibili, elenco destinatari attendibili e elenco Mittenti bloccati) per spostare i messaggi nella cartella posta indesiderata dopo Per ulteriori informazioni su queste impostazioni, vedere [Panoramica del filtro della posta indesiderata](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
-Quando il filtro posta indesiderata di Outlook è impostato su **basso** o **alto**, il filtro della posta indesiderata di Outlook utilizza la propria tecnologia di filtro SmartScreen per identificare e spostare la posta indesiderata nella cartella posta elettronica. Questa classificazione di posta indesiderata è separata dal livello di probabilità di posta indesiderata (SCL) determinato da EOP. In effetti, Outlook ignora il SCL da EOP (a meno che EOP non abbia contrassegnato il messaggio per ignorare il filtro posta indesiderata) e utilizzi i propri criteri per determinare se il messaggio è posta indesiderata. Naturalmente, è possibile che il verdetto di posta indesiderata da EOP e Outlook potrebbe essere lo stesso. Per ulteriori informazioni su queste impostazioni, vedere [modificare il livello di protezione del filtro della posta indesiderata](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
+Quando il filtro posta indesiderata di Outlook è impostato su **basso** o **alto**, il filtro della posta indesiderata di Outlook utilizza la propria tecnologia di filtro SmartScreen per identificare e spostare la posta indesiderata nella cartella posta elettronica. Questa classificazione di posta indesiderata è separata dal livello di probabilità di posta indesiderata (SCL) determinato da EOP. In effetti, Outlook ignora il SCL da EOP (a meno che EOP non abbia contrassegnato il messaggio per ignorare il filtro posta indesiderata) e utilizzi i propri criteri per determinare se il messaggio è posta indesiderata. Naturalmente, è possibile che il verdetto di posta indesiderata da EOP e Outlook potrebbe essere lo stesso. Per ulteriori informazioni su queste impostazioni, vedere [modificare il livello di protezione del filtro della posta indesiderata](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
 
 > [!NOTE]
 > Nel novembre 2016, Microsoft ha interrotto la produzione di aggiornamenti delle definizioni di posta indesiderata per i filtri SmartScreen in Exchange e Outlook. Le definizioni di posta indesiderata di SmartScreen esistenti sono state lasciate sul posto, ma la loro efficacia potrebbe peggiorare nel tempo. Per ulteriori informazioni, vedere [Eliminazione del supporto per SmartScreen in Outlook ed Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).
@@ -189,7 +189,7 @@ La raccolta degli elenchi indirizzi attendibili (elenco Mittenti attendibili, el
 
   > Impossibile/non è possibile aggiungere gli elenchi di posta indesiderata del server. Le dimensioni sono consentite sul server. Il filtro di posta indesiderata sul server verrà disabilitato fino a quando gli elenchi di posta indesiderata non sono stati ridotti alle dimensioni consentite dal server.
 
-  Per ulteriori informazioni su questo limite e su come modificarlo, vedere [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+  Per ulteriori informazioni su questo limite e su come modificarlo, vedere [KB2669081](https://support.microsoft.com/help/2669081).
 
 - La raccolta degli elenchi indirizzi attendibili sincronizzati in EOP presenta i seguenti limiti di sincronizzazione:
 

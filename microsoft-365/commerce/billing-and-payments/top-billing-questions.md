@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: "Trovare le risposte alle domande principali relative alla fatturazione per l'abbonamento a Microsoft 365 for business. "
-ms.openlocfilehash: 04e2a24ced149e67899608237bdde67eac3f8bad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a2c25c82587752493dea6e3110e69f7075ed7b09
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400762"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741683"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Domande principali relative alla fatturazione per Microsoft 365 for business
 
@@ -121,7 +121,7 @@ Sì, ma è necessario chiamare il [supporto](../../admin/contact-support-for-bus
 
 Sì. Per ottenere l'estratto conto come allegato di posta elettronica, eseguire la procedura seguente:
   
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notifiche di fatturazione</a> oppure selezionare notifiche **di fatturazione fatturazione** \> **Billing notifications**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notifiche</a> fatturazione fatturazione.
 
 2. In **Vuoi ricevere l'estratto conto come allegato di posta elettronica?** impostare l'interruttore su **Attivato**.
 
@@ -200,9 +200,10 @@ Vedere [quali imposte vengono addebitate?](tax-information.md#what-tax-will-i-be
 
 ::: moniker range="o365-worldwide"
 
-1. Nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">fatture</a> selezionare un intervallo di date delle fatture.
-  
-2. Per stampare o salvare una copia PDF della fattura, selezionare **Scarica fattura PDF**e quindi stampare il file PDF.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">fatture di fatturazione & pagamenti</a> .
+2. Nella scheda **fatture** , eleggere un intervallo di date delle fatture.
+3. Selezionare la fattura che si desidera visualizzare.
+4. Per stampare o salvare una copia PDF della fattura, fare clic su **Download PDF**e quindi stampare il file PDF.
 
 Per ulteriori informazioni, vedere [visualizzare la fattura o la fattura](view-your-bill-or-invoice.md).
 

@@ -19,33 +19,24 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere gli ospiti a un gruppo di Microsoft 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386782"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761663"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gestire l'accesso guest nei gruppi di Microsoft 365
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 Per impostazione predefinita, l'accesso guest per i gruppi di Microsoft 365 è attivato per l'organizzazione. Gli amministratori possono controllare se consentire l'accesso Guest ai gruppi per l'intera organizzazione o per i singoli gruppi.
 
 Quando è attivata, i membri del gruppo possono invitare gli utenti Guest a un gruppo di Microsoft 365 tramite Outlook sul Web. Gli inviti vengono inviati al proprietario del gruppo per l'approvazione.
 
+Una volta approvato, l'utente ospite viene aggiunto alla directory e al gruppo.
+
 > [!Note]
 > Le reti aziendali di Yammer che si trovano in modalità nativa o l' [eu Geo](https://go.microsoft.com/fwlink/?linkid=2107357) non supportano gli utenti della rete.
 > I gruppi di Yammer connessi a Microsoft 365 non supportano attualmente l'accesso guest, ma è possibile creare gruppi esterni non connessi nella rete Yammer. Per istruzioni, vedere [creare e gestire gruppi esterni in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) .
-
-### <a name="edit-guest-information"></a>Modificare le informazioni Guest
-
-Una volta approvato, l'utente ospite viene aggiunto alla directory e al gruppo.
 
 L'accesso guest nei gruppi è spesso utilizzato come parte di uno scenario più ampio che include SharePoint o teams. Tali servizi dispongono di impostazioni di condivisione Guest. Per istruzioni complete su come configurare la condivisione Guest tra gruppi, SharePoint e team, vedere:
 
@@ -56,7 +47,7 @@ L'accesso guest nei gruppi è spesso utilizzato come parte di uno scenario più 
 
 Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile farlo nell'interfaccia di amministrazione di Microsoft 365.
 
-1. Nell'interfaccia di amministrazione, passare alla pagina **Impostazioni** \> **Settings** e selezionare **Microsoft 365 gruppi**.
+1. Nell'interfaccia di amministrazione, passare alla sezione **Impostazioni** \> **organizzazione** e nella scheda **Servizi** , selezionare **gruppi Microsoft 365**.
   
 2. Nella pagina **Microsoft 365 groups** , scegliere se si desidera consentire agli utenti esterni all'organizzazione di accedere alle risorse del gruppo o consentire ai proprietari di gruppi di aggiungere persone esterne all'organizzazione.
 

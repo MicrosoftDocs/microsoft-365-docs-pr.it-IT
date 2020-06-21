@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: "Creare collegamenti rapidi per la posta elettronica, i documenti, le app, i siti di SharePoint, i siti esterni e altre risorse mediante l'aggiunta di sezioni personalizzate all'icona di avvio delle app. "
-ms.openlocfilehash: cad78207c5d4025d385a7452fbe86df79a694067
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399777"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780134"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Aggiungere riquadri personalizzati all'icona di avvio delle app
 
@@ -37,9 +37,9 @@ ms.locfileid: "44399777"
 
 ::: moniker-end
 
-In Microsoft 365 è possibile accedere rapidamente e facilmente alla posta elettronica, ai calendari, ai documenti e alle app utilizzando l'icona di avvio delle app ([altre informazioni](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)). Queste sono le app che si ottengono con Microsoft 365, nonché le app personalizzate che si aggiungono da [SharePoint Store](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx) o [Azure ad](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher).
+In Microsoft 365 è possibile accedere rapidamente e facilmente alla posta elettronica, ai calendari, ai documenti e alle app utilizzando l'icona di avvio delle app ([altre informazioni](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Queste sono le app che si ottengono con Microsoft 365, nonché le app personalizzate che si aggiungono da [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) o [Azure ad](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher).
   
-Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano a siti di SharePoint, siti esterni, app legacy e altro ancora. Il riquadro personalizzato appare dopo tutte le app in **Tutte** nell'icona di avvio delle app, ma puoi spostarlo in **Home** e indicare agli utenti di fare lo stesso. In questo modo è più facile trovare i siti, le app e le risorse rilevanti per svolgere il tuo lavoro. Nell'esempio seguente viene usato un riquadro personalizzato, "Portale Contoso", per accedere al sito Intranet di SharePoint dell'organizzazione. 
+You can add your own custom tiles to the app launcher that point to SharePoint sites, external sites, legacy apps, and more. The custom tile appears under the app launcher's **All** apps, but you can pin it to the **Home** apps and instruct your users to do the same. This makes it easy to find the relevant sites, apps, and resources to do your job. In the below example, a custom tile called "Contoso Portal" is used to access an organization's SharePoint intranet site. 
   
 ![Icona di avvio delle app](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
@@ -89,6 +89,6 @@ Per eliminare un riquadro personalizzato, selezionare il riquadro nella finestra
   
 ## <a name="whats-next"></a>Operazioni successive
 
-Oltre all'aggiunta di riquadri all'icona di avvio delle app, è possibile aggiungere riquadri di avvio delle app alla barra di spostamento (ulteriori[informazioni](https://support.office.com/article/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985)). Per personalizzare l'aspetto di Microsoft 365 in modo che corrisponda al marchio dell'organizzazione, vedere [Customize the Microsoft 365 Theme](../setup/customize-your-organization-theme.md).
+Oltre all'aggiunta di riquadri all'icona di avvio delle app, è possibile aggiungere riquadri di avvio delle app alla barra di spostamento (ulteriori[informazioni](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Per personalizzare l'aspetto di Microsoft 365 in modo che corrisponda al marchio dell'organizzazione, vedere [Customize the Microsoft 365 Theme](../setup/customize-your-organization-theme.md).
   
 

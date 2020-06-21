@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono sapere come funziona lo spoofing Intelligence Insight, compreso il modo in cui determinare rapidamente quali mittenti stanno inviando legalmente messaggi di posta elettronica non autenticati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566705"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726511"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procedura dettagliata: analisi di intelligence su spoofing di ATP in Microsoft 365
 
@@ -33,13 +33,18 @@ Se si è nuovi per [i report e le informazioni dettagliate nel centro sicurezza 
 
 Questa procedura dettagliata è una delle numerose per il Centro sicurezza & Compliance. Per informazioni sull'esplorazione di report e approfondimenti, vedere le procedure dettagliate nella sezione Argomenti correlati.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina del **dashboard di sicurezza** , utilizzare <https://protection.office.com/searchandinvestigation/dashboard> .
 
   È possibile visualizzare l'Insight di intelligence di spoofing da più di un dashboard nel centro sicurezza & Compliance. Indipendentemente dal dashboard che si sta esaminando, l'Insight fornisce gli stessi dettagli e consente di eseguire rapidamente le stesse attività.
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per utilizzare lo spoofing Intelligence Insight, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione**, **amministratore sicurezza**o **lettore di sicurezza** . Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- Prima di poter eseguire le procedure descritte in questo argomento, è necessario disporre delle autorizzazioni assegnate. Per utilizzare lo spoofing Intelligence Insight, è necessario essere membri di uno dei gruppi di ruoli seguenti:
+
+  - **Gestione organizzazione** o **amministratore della sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+  - Gestione dell' **organizzazione** o **gestione dell'igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Lettore di sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
+  - **Gestione dell'organizzazione in sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - È possibile abilitare e disabilitare l'intelligence spoof nei criteri di anti-phishing ATP. Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md).
 

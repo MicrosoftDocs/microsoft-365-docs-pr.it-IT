@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: "Informazioni su come abilitare o disabilitare la funzionalità di disordine per tutti gli utenti o specifici dell'organizzazione, tramite Exchange PowerShell. "
-ms.openlocfilehash: 069cf7569ebb3654e979100291f6754693b24def
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 67267b0865dfcfd6c0ba66d59ce1d0d111d59325
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400137"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780278"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurare Messaggi secondari per l'organizzazione
 
 > [!TIP]
 > [Posta in arrivo evidenziata](../setup/configure-focused-inbox.md) sostituirà Messaggi secondari. Per ulteriori informazioni, vedere [aggiornamento sulla posta in arrivo evidenziata e sui piani per il disordine](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-Come amministratore, potrebbe essere necessario gestire la funzionalità di disordine in Microsoft 365. Per attivare o disattivare questa funzionalità per gli utenti dell'organizzazione, è necessario usare Exchange PowerShell. I singoli utenti la possono attivare/disattivare seguendo queste istruzioni: [Disattivare o attivare la funzionalità Messaggi secondari in Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx). 
+Come amministratore, potrebbe essere necessario gestire la funzionalità di disordine in Microsoft 365. Per attivare o disattivare questa funzionalità per gli utenti dell'organizzazione, è necessario usare Exchange PowerShell. (Gli utenti possono attivarla/disattivarla usando queste istruzioni: [Disattiva il disordine in Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
   
 Per informazioni sull'uso di Exchange PowerShell, vedere [Uso di PowerShell con Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) e [Connettersi a PowerShell di Exchange Online](https://go.microsoft.com/fwlink/?LinkID=722415). È necessario disporre di un account che disponga almeno del ruolo di amministratore del servizio di Exchange e la possibilità di connettersi a Exchange Online con PowerShell. 
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>Attivare Messaggi secondari mediante Exchange PowerShell
 
-È possibile abilitare Messaggi secondari manualmente per una cassetta postale eseguendo il cmdlet [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446). Si possono anche visualizzare le impostazioni di Messaggi secondari per le cassette postali dell'organizzazione eseguendo il cmdlet [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759). 
+You can enable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view Clutter settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
   
 Attivare Messaggi secondari per un singolo utente di nome Allie Bellew:
     
@@ -47,7 +47,7 @@ Attivare Messaggi secondari per un singolo utente di nome Allie Bellew:
 
 ## <a name="turn-clutter-off-using-exchange-powershell"></a>Disattivare Messaggi secondari mediante Exchange PowerShell
 
-È possibile disabilitare Messaggi secondari manualmente per una cassetta postale eseguendo il cmdlet [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446). Si possono anche visualizzare le impostazioni di **Messaggi secondari** per le cassette postali dell'organizzazione eseguendo il cmdlet [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759). 
+You can disable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view **Clutter** settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
   
 Disattivare Messaggi secondari per un singolo utente di nome Allie Bellew:
     
@@ -99,10 +99,10 @@ Come amministratore, è possibile riattivare l'ingombro utilizzando Exchange Pow
 ## <a name="related-articles"></a>Articoli correlati
 <a name="bkmk_onoff"> </a>
 
-[Usare la caratteristica Messaggi secondari per ordinare i messaggi con priorità bassa in Outlook](https://support.office.com/article/use-clutter-to-sort-low-priority-messages-in-outlook-7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
+[Usare la caratteristica Messaggi secondari per ordinare i messaggi con priorità bassa in Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
-[Utilizzo dell'ingombro per ordinare i messaggi con priorità bassa in OWA](https://support.office.com/article/fe4d64ca-bf73-48f1-91b4-9a659e008bce.aspx)
+[Utilizzo dell'ingombro per ordinare i messaggi con priorità bassa in OWA](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
-[Disattivare la caratteristica Messaggi secondari in Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)
+[Disattivare la caratteristica Messaggi secondari in Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
     
 

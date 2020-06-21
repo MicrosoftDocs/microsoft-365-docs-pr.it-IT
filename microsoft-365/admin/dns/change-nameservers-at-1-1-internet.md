@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Informazioni su come è possibile configurare Office 365 gestito da 21Vianet per gestire i record DNS, quando 1&1 Internet è il provider di hosting DNS.
-ms.openlocfilehash: b63dc0664791eb4941513f701824b813d77e67bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 79870d534e7d825fd59dbbbec54c796227f5faf1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400702"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780374"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Modificare i server dei nomi per configurare Microsoft 365 con 1&1 IONOS
 
@@ -39,12 +39,12 @@ Seguire le istruzioni riportate di seguito se si desidera che Microsoft 365 gest
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 
 
-Prima di usare il proprio dominio con Microsoft 365, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft 365 che si è il proprietario del dominio.
+Before you use your domain with Microsoft 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft 365 that you own the domain.
   
 > [!NOTE]
-> Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:42)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:42)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   
 1. Per iniziare, passare alla propria pagina dei domini su 1&1 IONOS tramite [questo collegamento](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). You'll be prompted to log in. 
     
@@ -94,7 +94,7 @@ Per completare la configurazione del dominio con Microsoft 365, è necessario mo
 > [!CAUTION]
 > Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft 365, tutti i servizi attualmente associati al dominio sono intaccati. Ad esempio, tutta la posta elettronica inviata al dominio (come rob@ *your_domain* . com) inizierà a venire a Microsoft 365 dopo aver apportato questa modifica. 
   
-È possibile modificare i record NS per consentire a Microsoft 365 di configurare il dominio? Seguire le istruzioni riportate di seguito o [guardare il video (iniziare da 2:47)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+È possibile modificare i record NS per consentire a Microsoft 365 di configurare il dominio? Seguire le istruzioni riportate di seguito o [guardare il video (iniziare da 2:47)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   
 > [!IMPORTANT]
 >  Nella procedura seguente viene illustrato come eliminare tutti gli altri server dei nomi indesiderati dall'elenco e come aggiungere i server dei nomi corretti se non sono già elencati. > dopo aver completato la procedura descritta in questa sezione, gli unici server dei nomi da elencare sono i seguenti quattro: > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
@@ -155,7 +155,7 @@ Per completare la configurazione del dominio con Microsoft 365, è necessario mo
 ### <a name="if-there-are-nameservers-already-listed"></a>Se SONO già elencati server dei nomi
 
 > [!CAUTION]
-> Seguire questa procedura  *solo*  se sono presenti server dei nomi diversi dai quattro server dei nomi  *corretti*  . In altre parole, eliminare  *solo*  eventuali server dei nomi  *diversi*  da **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com** o **ns4.bdm.microsoftonline.com**. 
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers. (That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.) 
   
 1. Se sono già elencati altri server dei nomi nelle caselle **Name server**, eliminarli uno alla volta selezionandoli e premendo **CANC**. 
     

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Informazioni su come rimuovere le licenze dagli account utente.
-ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 2918d8263318e9b6ce14076fb121e898249b5c48
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432232"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780074"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 
@@ -145,7 +145,7 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 - È possibile [rimuovere licenze da account utente con PowerShell di Office 365](https://go.microsoft.com/fwlink/p/?linkid=848428).
 
-- Si può anche [eliminare un account utente](../add-users/delete-a-user.md) a cui è stata assegnata una licenza per renderla disponibile per un altro utente. Quando si elimina un account utente, la licenza corrispondente può essere immediatamente assegnata a un altro utente.
+- You can also [delete user accounts](../add-users/delete-a-user.md) that have been assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to be assigned to someone else.
 
 - Quando una licenza viene rimossa da un utente, i dati associati a quell'account vengono conservati per 30 giorni. Dopo il periodo di tolleranza di 30 giorni, i dati vengono eliminati e non possono essere ripristinati.
 
@@ -157,7 +157,7 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 - Per informazioni su come bloccare l'accesso di un utente ai dati di Microsoft 365 dopo che la licenza è stata rimossa e come ottenere l'accesso ai dati successivamente, vedere [Remove a Former Employee](../add-users/remove-former-employee.md).
 
-- Se si rimuove la licenza di un utente ed è ancora installato Office, vengono visualizzate le [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) quando utilizzano Office.
+- Se si rimuove la licenza di un utente ed è ancora installato Office, vengono visualizzate le [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) quando utilizzano Office.
 
 ## <a name="related-articles"></a>Articoli correlati
 
