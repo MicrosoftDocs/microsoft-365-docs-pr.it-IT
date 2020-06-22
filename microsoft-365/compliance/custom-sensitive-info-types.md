@@ -17,18 +17,16 @@ search.appverid:
 - MET150
 description: Panoramica sui tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati, ad esempio criterio principale, prossimità dei caratteri e livello di probabilità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6bd0d0d751a7ed03b645ae3d3fce83e3b7b04073
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 6934edba6eef03bc9d4bfc5c1c69f127a7d3a0e5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327768"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817965"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipi di informazioni sensibili personalizzati
 
-## <a name="overview"></a>Panoramica
-
-Microsoft 365 include molti tipi di informazioni sensibili predefinite pronte per l'uso nell'organizzazione, ad esempio per la [prevenzione della perdita dei dati](data-loss-prevention-policies.md) (DLP) o con [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security). I tipi di informazioni sensibili integrati consentono di identificare e proteggere i numeri di carata di credito, di conto corrente, di passaporto e altro, in base agli schemi che sono definiti da un'espressione regolare (regex) o da una funzione. Per altre informazioni, vedere [Definizioni delle entità tipo di informazioni riservate](sensitive-information-type-entity-definitions.md).
+Microsoft 365 include molti tipi di informazioni sensibili predefinite pronte per l'uso nell'organizzazione, ad esempio per la [prevenzione della perdita dei dati](data-loss-prevention-policies.md) (DLP) o con [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security). I tipi di informazioni sensibili integrati consentono di identificare e proteggere i numeri di carata di credito, di conto corrente, di passaporto e altro, in base agli schemi che sono definiti da un'espressione regolare (regex) o da una funzione. Per altre informazioni, vedere [Elementi cercati dai tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md).
 
 Tuttavia, cosa accade se è necessario identificare e proteggere un tipo diverso di informazioni sensibili, ad esempio gli ID dei dipendenti o i numeri di progetto che usano un formato specifico dell'organizzazione? Per farlo, è possibile creare un tipo di informazioni sensibili personalizzato.
 
@@ -36,15 +34,15 @@ Le parti fondamentali di un tipo di informazioni sensibili personalizzato sono:
 
 - **Criterio principale**: ID dipendente, numeri di progetto e così via. In genere è identificato da un'espressione regolare (RegEx), ma può anche essere un elenco di parole chiave.
 
-- **Evidenza aggiuntiva**: si supponga di cercare un numero ID dipendente di nove cifre. Non tutti i numeri di nove cifre sono numeri ID dipendente, quindi è possibile cercare testo aggiuntivo: parole chiave come "dipendente", "badge", "ID" o altri criteri di testo basati su ulteriori espressioni regolari. Questa evidenza di supporto (denominata anche evidenza__ _corroborativa_) consente di aumentare la probabilità che il numero di nove cifre individuato nel contenuto sia davvero un numero ID dipendente.
+- **Additional evidence**: Suppose you're looking for a nine-digit employee ID number. Not all nine-digit numbers are employee ID numbers, so you can look for additional text: keywords like "employee", "badge", "ID", or other text patterns based on additional regular expressions. This supporting evidence (also known as _supporting_ or _corroborative_ evidence) increases the likelihood that nine-digit number found in content is really an employee ID number.
 
-- **Prossimità dei caratteri**: è logico che più il criterio principale e l'evidenza di supporto sono vicini tra loro, più è probabile che il contenuto rilevato sia quello che si sta cercando. È possibile specificare la distanza dei caratteri tra il criterio principale e l'evidenza di supporto (nota anche come _finestra di prossimità_) come mostrato nel diagramma seguente:
+- **Character proximity**: It makes sense that the closer the primary pattern and the supporting evidence are to each other, the more likely the detected content is going to be what you're looking for. You can specify the character distance between the primary pattern and the supporting evidence (also known as the _proximity window_) as shown in the following diagram:
 
     ![Diagramma dell'evidenza corroborativa e della finestra di prossimità](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-- **Livello di probabilità**: più evidenze di supporto si hanno, più alta è la probabilità che una corrispondenza contenga le informazioni sensibili che si stanno cercando. È possibile assegnare livelli di probabilità più elevati per le corrispondenze rilevate con altre evidenze.
+- **Confidence level**: The more supporting evidence you have, the higher the likelihood that a match contains the sensitive information you're looking for. You can assign higher levels of confidence for matches that are detected by using more evidence.
 
-  Quando viene soddisfatto, un criterio restituisce un numero e un livello di probabilità che è possibile utilizzare nelle condizioni nei criteri DLP. Quando si aggiunge una condizione per il rilevamento di un tipo di informazione riservata a un criterio DLP, è possibile modificare il numero e il livello di probabilità, come illustrato nel diagramma seguente:
+  When satisfied, a pattern returns a count and confidence level, which you can use in the conditions in your DLP policies. When you add a condition for detecting a sensitive information type to a DLP policy, you can edit the count and confidence level as shown in the following diagram:
 
     ![Numero di istanze e opzioni di precisione di corrispondenza](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 

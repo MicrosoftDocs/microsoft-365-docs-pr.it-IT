@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a43011a1d81c014526b1dd9178d051162e96acd
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 16502ba54268e708d7c420a1329b1f2683726198
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065961"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773737"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Ufficio del sovrintendente delle istituzioni finanziarie (OSFI) del Canada
 
@@ -69,8 +69,7 @@ Sì, ma solo se la disposizione di esternalizzazione è relativa ai materiali o 
 
 ## <a name="resources"></a>Risorse
 
-- [Microsoft e la legge sulla privacy canadese](https://aka.ms/CanadianPrivacyLaws-Compliance)
-- [Financial Services Compliance Program di Microsoft](https://aka.ms/FSCP-Print)
+- [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Servizi cloud e servizi finanziari di Microsoft per le aziende](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Azure Financial Services Compliance Program](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Strumento di valutazione del rischio cloud di Azure per i servizi finanziari](https://aka.ms/FFIEC-CSDT)

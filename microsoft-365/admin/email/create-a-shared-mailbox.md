@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: 331f5f320f9b57ee503734f57ed8d804e9ad04e3
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 3ffe24cc263c6f58899b3c293793aa231132e411
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432290"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780266"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
@@ -138,15 +138,15 @@ L'opzione AutoMapping viene impostata sulla cassetta postale dell'utente, non su
 
 Per ulteriori informazioni sulle cassette postali condivise in Outlook, vedere:
 
-- <a href="https://support.office.com/article/d94a8e9e-21f1-4240-808b-de9c9c088afd.aspx" target="_blank">Aprire e usare cassette postali condivise in Outlook</a>
+- <a href="https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd" target="_blank">Aprire e usare cassette postali condivise in Outlook</a>
 
-- <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Aggiungere una cassetta postale condivisa in Outlook sul Web</a>
+- <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Aggiungere una cassetta postale condivisa in Outlook sul Web</a>
 
-- <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Aggiungere una cassetta postale condivisa in Outlook per dispositivi mobili</a>
+- <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Aggiungere una cassetta postale condivisa in Outlook per dispositivi mobili</a>
 
-- <a href="https://support.office.com/article/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2.aspx" target="_blank">Aprire una cartella o una cassetta postale condivisa in Outlook per Mac</a>
+- <a href="https://support.microsoft.com/office/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2" target="_blank">Aprire una cartella o una cassetta postale condivisa in Outlook per Mac</a>
 
-- <a href="https://support.office.com/article/b0963400-2a51-4c64-afc7-b816d737d164.aspx" target="_blank">Aggiungere regole a una cassetta postale condivisa</a>
+- <a href="https://support.microsoft.com/office/b0963400-2a51-4c64-afc7-b816d737d164" target="_blank">Aggiungere regole a una cassetta postale condivisa</a>
 
 
 ## <a name="use-a-shared-mailbox-on-a-mobile-device-phone-or-tablet"></a>Usare una cassetta postale condivisa in un dispositivo mobile (telefono o tablet)
@@ -154,11 +154,11 @@ Per ulteriori informazioni sulle cassette postali condivise in Outlook, vedere:
 È possibile accedere a una cassetta postale condivisa in un dispositivo mobile in due modi:
 - Aggiungere la cassetta postale condivisa nell'<a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">app Outlook per iOS</a> o nell'<a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">app Outlook per Android per dispositivi mobili</a>. 
     
-    Per le istruzioni, vedere <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Aggiungere una cassetta postale condivisa in Outlook per dispositivi mobili</a>.
+    Per le istruzioni, vedere <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Aggiungere una cassetta postale condivisa in Outlook per dispositivi mobili</a>.
 
 - Aprire il browser, effettuare l'accesso e quindi passare a Outlook sul web. Da Outlook sul web sarà possibile accedere alla cassetta postale condivisa.
 
-    Per le istruzioni, vedere <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Aggiungere una cassetta postale condivisa in Outlook sul web</a>.
+    Per le istruzioni, vedere <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Aggiungere una cassetta postale condivisa in Outlook sul web</a>.
 
 ## <a name="use-the-shared-calendar"></a>Usare il calendario condiviso
 

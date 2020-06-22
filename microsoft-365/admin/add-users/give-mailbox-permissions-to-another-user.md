@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Informazioni su come assegnare a un utente il diritto di accedere alla cassetta postale di un altro utente. In questo modo l'utente potrà leggere i messaggi di posta elettronica e inviare messaggi dalla cassetta postale dell'altro utente. "
-ms.openlocfilehash: 3fb920fb6f15a2ca48c5676e9b25afd1aa5263f1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: dafe0f8c8f7d65b2721b70f6c132d179c461a89b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431666"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780602"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Assegnare le autorizzazioni della cassetta postale a un altro utente - Guida per l'amministratore
 
@@ -37,11 +37,11 @@ Se si cercano informazioni su come creare e gestire cassette postali condivise, 
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>Configurare le autorizzazioni per le cassette postali
 
-Le autorizzazioni per le cassette postali consentono di concedere a un altro utente l'accesso in lettura/scrittura a una cassetta postale. Gli articoli elencati di seguito potrebbero fornire l'aiuto necessario per configurare e usare questa funzionalità:
+Mailbox permissions allow you to give read/write access to a mailbox to another user. The articles below might give you the help you need to set up and use this feature:
   
  **Configurazione delle autorizzazioni:**
   
-Il primo passaggio del processo di configurazione delle autorizzazioni consiste nel decidere quali azioni potranno essere eseguite dall'altro utente nella cassetta postale specifica. È possibile consentire a un utente di leggere i messaggi di posta elettronica contenuti nella cassetta postale, inviare messaggi per conto di un altro utente oppure inviarli con la cassetta postale come mittente. Per informazioni su come configurare ogni tipo di autorizzazione, vedere gli articoli seguenti:
+The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:
   
 - [Leggere messaggi di posta elettronica dalla cassetta postale di un altro utente](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
@@ -55,7 +55,7 @@ Dopo la configurazione delle autorizzazioni, la loro propagazione e applicazione
   
  **Come usare la funzionalità dopo la configurazione delle autorizzazioni:**
   
-Dopo la concessione dell'accesso, è possibile accedere a una cassetta postale in alcuni modi diversi. Per altre informazioni, vedere l'articolo [Accedere alla cassetta postale di un'altra persona](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081.aspx).
+There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
   
 ## <a name="send-email-from-another-users-mailbox"></a>Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente
 
@@ -200,8 +200,8 @@ Dopo la concessione dell'accesso, è possibile accedere a una cassetta postale i
 ## <a name="send-and-read-from-outlook-and-outlook-on-the-web-for-business"></a>Inviare e leggere messaggi da Outlook e Outlook sul Web per le aziende
 
 
-Per informazioni su come inviare messaggi di posta elettronica dalla cassetta postale di un altro utente, vedere gli argomenti seguenti:
+Want to know how to send email from another user's mailbox? Check out the following topics:
   
-- [Gestire gli elementi di posta e di calendario di un altro utente](https://support.office.com/article/afb79d6b-2967-43b9-a944-a6b953190af5.aspx)
+- [Gestire gli elementi di posta e di calendario di un altro utente](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
     
-- [Inviare un messaggio di posta elettronica da un altro utente o gruppo](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)
+- [Inviare un messaggio di posta elettronica da un altro utente o gruppo](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a66a5b6f6ad2480dfc3af212e7663ad3f869d10
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 9d678ca5ee9b8a8ebf4feadfb27826caa533967e
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254319"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773863"
 ---
 # <a name="european-union-model-clauses"></a>Clausole del modello dell'Unione europea
 
@@ -86,7 +86,7 @@ Un "responsabile secondario del trattamento dei dati" è chiunque elabori i dati
 - [Direttiva europea sulla protezione dei dati](https://aka.ms/EU-DPD)
 - [Comitato europeo per la protezione dei dati](https://edpb.europa.eu/)
 - [Domande frequenti sulle clausole del modello dell'UE per Dynamics 365 e Office 365](https://products.office.com/business/office-365-trust-center-eu-model-clauses-faq)
-- [Microsoft e il Privacy Shield UE-USA](https://go.microsoft.com/fwlink/p/?linkid=2099701)
+- [Microsoft e il Privacy Shield UE-USA](offering-eu-us-privacy-shield.md)
 - [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

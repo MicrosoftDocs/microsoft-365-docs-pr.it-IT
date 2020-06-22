@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Questo articolo fornisce informazioni sulla gestione delle impostazioni per gli utenti.
-ms.openlocfilehash: 65396339f099628911da1dbaaef83bc18181e680
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5fa8674b8e188605ba3f6339fd6384c37630c917
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400041"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780206"
 ---
 # <a name="user-email-settings"></a>Impostazioni posta elettronica utente
 
@@ -40,7 +40,7 @@ Questa tabella illustra le varie impostazioni di posta elettronica che è possib
 |Visualizza nell'elenco indirizzi globale| Visualizza nell'elenco indirizzi globale consente di abilitare o disabilitare la visibilità della cassetta postale dell'utente nell'elenco indirizzi dell'organizzazione. |
 |Inoltro della posta elettronica|Inoltro della posta elettronica consente di aggiungere un indirizzo di posta elettronica di inoltro a un utente. Questa operazione può risultare utile se l'utente ha più indirizzi di posta elettronica e vuole ricevere le e-mail a tutti i propri indirizzi di posta elettronica. Per maggiori dettagli, consultare [Configurare l'inoltro della posta elettronica in Microsoft 365](configure-email-forwarding.md).|
 |Risposte automatiche|Risposte automatiche consente di impostare una risposta automatica quando qualcuno invia un messaggio di posta elettronica all'indirizzo di posta elettronica dell'utente. Questa operazione può risultare utile se un dipendente lascia l'azienda e si desidera farlo sapere al mittente del messaggio di posta elettronica.|
-|Altre azioni| **Converti in una cassetta postale condivisa** consente di convertire la cassetta postale dell'utente in una cassetta postale condivisa. Questa operazione può essere effettuata se l'utente lascia l'organizzazione e si desidera mantenere i dati della sua cassetta postale per un po' di tempo. Consultare [Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md) e [Aprire e utilizzare cassette postali condivise](https://support.office.com/article/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>**Modificare le proprietà di Exchange** consente di gestire attività aggiuntive di Exchange Online tramite l'interfaccia di amministrazione di Exchange. Leggere l'articolo sulla [gestione delle cassette postali utente in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
+|Altre azioni| **Converti in una cassetta postale condivisa** consente di convertire la cassetta postale dell'utente in una cassetta postale condivisa. Questa operazione può essere effettuata se l'utente lascia l'organizzazione e si desidera mantenere i dati della sua cassetta postale per un po' di tempo. Consultare [Convertire una cassetta postale utente in una cassetta postale condivisa](convert-user-mailbox-to-shared-mailbox.md) e [Aprire e utilizzare cassette postali condivise](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>**Modificare le proprietà di Exchange** consente di gestire attività aggiuntive di Exchange Online tramite l'interfaccia di amministrazione di Exchange. Leggere l'articolo sulla [gestione delle cassette postali utente in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
 
 > [!NOTE]
 >
