@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come usare il caricamento in rete per importare più file PST in blocco nelle cassette postali degli utenti in Microsoft 365.'
-ms.openlocfilehash: 330195cd9362722fccd5a8f7445abaee8a725857
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0d35a6c77379c528d10510c1959df53c8d81a989
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678750"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819066"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usare il caricamento in rete per importare file PST dell'organizzazione in Microsoft 365
 
@@ -46,7 +47,7 @@ Di seguito sono riportate le istruzioni dettagliate necessarie per importare pi�
 
 Per importare i file PST nelle cassette postali di Microsoft 365 occorre eseguire il passaggio 1 soltanto una volta. Una volta completato questo passaggio, eseguire i passaggi da 2 a 6 ogni volta che si vuole caricare e importare un batch di file PST.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-import-pst-files"></a>Prima di importare i file PST
   
 - Per importare file PST nelle cassette postali di Microsoft 365, è necessario avere il ruolo di importazione/esportazione di cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo di importazione/esportazione di cassette postali al gruppo di ruoli Gestione organizzazione. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di importazione/esportazione di cassette postali e quindi aggiungere se stessi come membri. Per altre informazioni, vedere le sezioni "Aggiungere un ruolo a un gruppo di ruoli" o "Creare un gruppo di ruoli" in [Gestire gruppi di ruoli](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
@@ -149,7 +150,7 @@ A questo punto, è possibile usare lo strumento AzCopy.exe per caricare i file P
     |:-----|:-----|:-----|
     | `/Source:` <br/> |Specifica la directory di origine nell'organizzazione che contiene i file PST che verranno caricati su Office365.  <br/> Racchiudere il valore di questo parametro tra virgolette doppie (" ").  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
     | `/Dest:` <br/> |Specifica l'URL della firma di accesso condiviso ottenuto nel passaggio 1.  <br/> Racchiudere il valore di questo parametro tra virgolette doppie (" ").<br/><br/>**Nota:** se si usa l'URL della firma di accesso condiviso in un file batch o in un file di script, è necessario prestare particolare attenzione ad alcuni caratteri che devono essere preceduti da caratteri di escape. Ad esempio, è necessario cambiare `%` in `%%` e `&` in `^&`.<br/><br/>**Suggerimento:** (facoltativo) è possibile specificare una sottocartella del percorso di Archiviazione di Azure in cui caricare i file PST. A questo scopo, aggiungere un percorso di sottocartella (dopo "ingestiondata") nell'URL della firma di accesso condiviso. Nel primo esempio non viene specificata una sottocartella. I file PST vengono quindi caricati nella radice (*ingestiondata*) del percorso di Archiviazione di Azure. Nel secondo esempio i file PST vengono caricati in una sottocartella (*PSTFiles*) nella radice del percorso di Archiviazione di Azure.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Oppure  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `/V:` <br/> |Restituisce messaggi di stato dettagliati in un file di log. Per impostazione predefinita, il file di log dettagliato è denominato AzCopyVerbose.log e si trova in %LocalAppData%\Microsoft\Azure\AzCopy. Se si specifica un percorso di un file esistente per questa opzione, il log dettagliato verrà aggiunto a tale file.  <br/> Racchiudere il valore di questo parametro tra virgolette doppie (" ").  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
+    | `/V:` <br/> |Outputs verbose status messages into a log file. By default, the verbose log file is named AzCopyVerbose.log in %LocalAppData%\Microsoft\Azure\AzCopy. If you specify an existing file location for this option, the verbose log will be appended to that file.  <br/> Racchiudere il valore di questo parametro tra virgolette doppie (" ").  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
     | `/S` <br/> |Questa opzione facoltativa specifica la modalità ricorsiva, in modo che lo strumento AzCopy copi i file PST che si trovano nelle sottocartelle nella directory di origine specificata dal parametro `/Source:`.  <br/> **Nota:** se si include questa opzione, i file PST delle cartelle secondarie, una volta caricati, avranno un percorso dei file diverso nel percorso di Archiviazione di Azure. È necessario specificare il percorso esatto nel file CSV creato al passaggio 4.  <br/> | `/S` <br/> |
     | `/Y` <br/> |Questa opzione obbligatoria consente di usare i token SAS di sola scrittura quando si caricano i file PST nel percorso di Archiviazione di Azure. L'URL della firma di accesso condiviso ottenuto nel passaggio 1 (e specificato nel parametro `/Dest:`) è di sola scrittura, ecco perché è necessario includere questa opzione. Un URL della firma di accesso condiviso di sola scrittura non impedisce di usare Azure Storage Explorer per visualizzare un elenco dei file PST caricati nel percorso di Archiviazione di Azure.  <br/> | `/Y` <br/> |
 
@@ -159,7 +160,7 @@ Di seguito è riportato un esempio di sintassi dello strumento AzCopy.exe nella 
   AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
 ```
 
-Dopo aver eseguito il comando, vengono visualizzati messaggi di stato che indicano lo stato di avanzamento del caricamento dei file PST. Un messaggio di stato finale mostra il numero totale di file caricati correttamente. 
+After you run the command, status messages are displayed that show the progress of uploading the PST files. A final status message shows the total number of files that were successfully uploaded.
 
 > [!TIP]
 > Dopo aver eseguito il comando AzCopy.exe e aver verificato che tutti i parametri siano corretti, salvare una copia della sintassi della riga di comando nello stesso file (protetto) in cui sono state copiate le informazioni ottenute nel passaggio 1. A questo punto, copiare e incollare il comando in un prompt a ogni esecuzione dello strumento AzCopy.exe per caricare i file PST su Office365. Probabilmente, sarà necessario cambiare soltanto i valori del parametro `/Source:`. Ciò dipende dalla directory di origine nella quale si trovano i file PST.
@@ -205,7 +206,7 @@ Una volta caricati i file PST nella posizione di archiviazione di Azure per l'or
   
 1. [Scaricare una copia del file di mapping dell'importazione PST](https://go.microsoft.com/fwlink/p/?LinkId=544717).
 
-2. Aprire o salvare il file CSV nel computer locale. Nell'esempio seguente viene visualizzato un file di mapping di importazione PST completo (aperto nel Blocco note). È molto più facile usare Microsoft Excel per modificare il file CSV.
+2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
 
     ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036209"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800021"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Riepilogo del Regolamento generale sulla protezione dei dati
 
@@ -293,7 +293,6 @@ Per dati personali si intende qualsiasi informazione riguardante una persona ide
 - Codice fiscale
 - Indirizzo di lavoro
 - Numeri di carta di credito/debito
-- Post sui social media
 - Post sui social media
 - Indirizzo IP (area geografica Unione Europea)
 - Posizione/dati GPS

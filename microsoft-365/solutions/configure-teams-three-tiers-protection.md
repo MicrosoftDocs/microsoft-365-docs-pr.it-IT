@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Suggerimenti di configurazione per proteggere i file in Microsoft Teams.
-ms.openlocfilehash: 129baed3286e445b9e0e440d4ec7f7a3402d3305
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 643ca5d5c340dc72cb375c114c2c7edaecf3dd46
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159432"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702513"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurare Teams con tre livelli di protezione
 
@@ -50,7 +50,7 @@ Per altre informazioni su questi livelli e sulle funzionalità consigliate per o
 
 La tabella seguente riepiloga le configurazioni per ogni livello. Usare queste configurazioni come punto di partenza e modificarle in base alle esigenze della propria organizzazione. Potrebbe non essere necessario implementare tutti i livelli.
 
-||**Di base (pubblico)**|**Di base (privato)**|**Sensibili**|**Altamente sensibili**|
+||Di base (pubblico)|Di base (privato)|Dati sensibili|Altamente sensibili|
 |:-----|:-----|:-----|:-----|:-----|
 |Team privato o pubblico|Pubblico|Private|Private|Private|
 |Chi può accedere?|Tutti gli utenti dell'organizzazione, inclusi gli utenti B2B.|Solo i membri del team. Altri utenti possono richiedere l'accesso al sito associato.|Solo i membri del team.|Solo i membri del team.|
@@ -58,7 +58,7 @@ La tabella seguente riepiloga le configurazioni per ogni livello. Usare queste c
 |Accesso guest a livello di sito|**Utenti guest nuovi ed esistenti** (impostazione predefinita).|**Utenti guest nuovi ed esistenti** (impostazione predefinita).|**Utenti guest nuovi ed esistenti** o **Solo persone nell'organizzazione** in base alle esigenze del team.|**Utenti guest nuovi ed esistenti** o **Solo persone nell'organizzazione** in base alle esigenze del team.|
 |Impostazioni di condivisione del sito|**I proprietari e i membri del sito e gli utenti con autorizzazioni di modifica possono condividere file e cartelle, ma solo i proprietari del sito possono condividere il sito**.|**I proprietari e i membri del sito e gli utenti con autorizzazioni di modifica possono condividere file e cartelle, ma solo i proprietari del sito possono condividere il sito**.|**I proprietari e i membri del sito e gli utenti con autorizzazioni di modifica possono condividere file e cartelle, ma solo i proprietari del sito possono condividere il sito**.|**Solo i proprietari del sito possono condividere file, cartelle e il sito**.<br>Richieste di accesso **disattivate**.|
 |Accesso ai dispositivi non gestiti a livello di sito|**Consenti l'accesso completo dalle app desktop, dalle app per dispositivi mobili e dal Web** (impostazione predefinita).|**Consenti l'accesso completo dalle app desktop, dalle app per dispositivi mobili e dal Web** (impostazione predefinita).|**Consenti l'accesso limitato, solo sul Web**.|**Blocca accesso**.|
-|Tipo di collegamento di condivisione predefinito|**Solo persone nell'organizzazione**|**Solo persone nell'organizzazione**|**Persone specifiche**|**Persone con accesso esistente**|
+|Tipo di collegamento di condivisione predefinito|**Solo gli utenti dell’organizzazione**|**Solo gli utenti dell’organizzazione**|**Persone specifiche**|**Persone con accesso esistente**|
 |Etichette di riservatezza|Nessuno|Nessuno|Etichetta di riservatezza usata per classificare il team e controllare la condivisione guest e l'accesso ai dispositivi non gestiti.|Etichetta di riservatezza usata per classificare il team e controllare la condivisione guest e l'accesso ai dispositivi non gestiti. L'etichetta può essere usata anche sui file per crittografare i file.|
 
 Una variante dell'opzione Altamente sensibili, i [Team con isolamento di sicurezza](secure-teams-security-isolation.md), usa un'etichetta di riservatezza univoca per team, che fornisce ulteriore sicurezza. È possibile usare questa etichetta per crittografare i file e solo i membri del team potranno leggerli.

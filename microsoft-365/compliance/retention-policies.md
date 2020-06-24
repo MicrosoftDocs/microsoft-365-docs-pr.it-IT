@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Usare i criteri di conservazione per decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa specifiche condizioni.
-ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: Informazioni sull’uso dei criteri di conservazione per conservare o eliminare il contenuto, e su come applicare un singolo criterio all’intera organizzazione o a posizioni o utenti specifici.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ffd7b644f33e7f432c62c182e2d69e07c8bce730
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695139"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818926"
 ---
 # <a name="learn-about-retention-policies"></a>Informazioni sui criteri di conservazione
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Per la maggior parte delle organizzazioni, il volume e la complessità dei dati aumentano giorno dopo giorno, a causa di posta elettronica, documenti, messaggi istantanei e altro ancora. La gestione o il controllo efficace di queste informazioni è importante perché è necessario:
+For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **Conformarsi in modo proattivo alle normative del settore e ai criteri interni** che richiedono di conservare il contenuto per un periodo di tempo minimo, ad esempio la norma Sarbanes-Oxley Act richiede che alcuni tipi di contenuto vengano conservati per sette anni. 
     
@@ -36,7 +37,7 @@ Per la maggior parte delle organizzazioni, il volume e la complessità dei dati 
     
 - **Aiutare l'organizzazione a condividere le informazioni in modo efficace e a essere più flessibile** assicurando che gli utenti usino solo contenuti aggiornati e pertinenti. 
     
-Un criterio di conservazione consente di raggiungere tutti questi obiettivi. La gestione dei contenuti in genere richiede due azioni:
+A retention policy can help you achieve all of these goals. Managing content commonly requires two actions:
   
 - **Conservare** il contenuto in modo che non possa essere eliminato definitivamente prima del termine del periodo di conservazione. 
     
@@ -50,7 +51,7 @@ Con i criteri di conservazione è possibile:
     
 - Applicare i criteri a tutto il contenuto o al contenuto che soddisfa specifiche condizioni, ad esempio che contiene parole chiave o [tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md).
     
-Quando si impostano criteri di conservazione per il contenuto, gli utenti possono continuare a modificare e usare il contenuto come sempre. Il contenuto viene mantenuto sul posto, nella posizione originale. Se però qualcuno modifica o elimina contenuto soggetto ai criteri di conservazione, una copia dell'originale viene salvata in una posizione sicura e conservata finché restano in vigore i criteri. Per altre informazioni, vedere la sezione [Funzionamento dei criteri di conservazione con il contenuto presente](#how-a-retention-policy-works-with-content-in-place).
+When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect. For more information, see the [How a retention policy works with content in place](#how-a-retention-policy-works-with-content-in-place) section on this page
   
 Infine, alcune organizzazioni hanno la necessità di conformarsi a normative come la regola 17a-4 della SEC (Securities and Exchange Commission). In base a questa regola, i criteri di conservazione attivati non possono essere disattivati o resi meno restrittivi. Per soddisfare questo requisito, è possibile usare la funzionalità **Protezione dell'archiviazione**. Una volta bloccato un criterio di conservazione, nessuno può disattivarlo o renderlo meno restrittivo, nemmeno un amministratore. Per altre informazioni, vedere la sezione [Usare la protezione dell'archiviazione per la conformità ai requisiti normativi](#use-preservation-lock-to-comply-with-regulatory-requirements) in questa pagina.
 
