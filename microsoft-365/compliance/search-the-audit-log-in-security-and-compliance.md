@@ -18,16 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. "
-ms.openlocfilehash: 7602042c0bd8fb46b497bdf0fc16bb6b02809074
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726526"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818986"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
-
-## <a name="introduction"></a>Introduzione
 
 Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, è possibile usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. Perché usare un log di controllo unificato? Perché è possibile cercare i tipi seguenti di [attività di utenti e amministratori](#audited-activities) in Office 365:
 
@@ -65,7 +64,7 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 - Attività utente e amministratore per le etichette di riservatezza per siti che usano SharePoint Online o Microsoft Teams
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="requirements-to-search-the-audit-log"></a>Requisiti per la ricerca nel log di controllo
 
 Prima di iniziare la ricerca nel log di controllo, tenere presente quanto segue.
 
@@ -917,7 +916,7 @@ Per un elenco e una descrizione delle attività controllate, vedere la sezione [
 
 **Quanto tempo è necessario affinché un record di controllo sia disponibile dopo il verificarsi di un evento?**
 
-La maggior parte dei dati di controllo è disponibile nel giro di 30 minuti ma la visualizzazione della voce del registro di controllo corrispondente nei risultati della ricerca può richiedere fino a 24 ore. Vedere la tabella nella sezione [Prima di iniziare](#before-you-begin) di questo articolo, che mostra il tempo necessario affinché gli eventi dei diversi servizi divengano disponibili.
+La maggior parte dei dati di controllo è disponibile nel giro di 30 minuti ma la visualizzazione della voce del registro di controllo corrispondente nei risultati della ricerca può richiedere fino a 24 ore. Vedere la tabella nella sezione [Requisiti per la ricerca nel log di controllo](#requirements-to-search-the-audit-log) di questo articolo, che mostra il tempo necessario affinché gli eventi dei diversi servizi divengano disponibili.
 
 **Per quanto tempo vengono conservati i record di controllo?**
 
@@ -933,7 +932,7 @@ No. Questi sono gli unici due modi per ottenere dati dal servizio di controllo.
 
 **È necessario abilitare singolarmente il controllo in ogni servizio di cui si vogliono acquisire i log di controllo?**
 
-Nella maggior parte dei servizi, il controllo è abilitato per impostazione predefinita dopo l'attivazione del controllo per l'organizzazione (come descritto nella sezione [Prima di iniziare](#before-you-begin) in questo articolo).
+Nella maggior parte dei servizi, il controllo è abilitato per impostazione predefinita dopo l'attivazione del controllo per l'organizzazione (come descritto nella sezione [Requisiti per la ricerca nel log di controllo](#requirements-to-search-the-audit-log) di questo articolo).
 
 **Il servizio di controllo supporta la deduplicazione dei record?**
 

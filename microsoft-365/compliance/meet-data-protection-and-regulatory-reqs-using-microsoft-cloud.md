@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
-description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
+description: Informazioni su come usare Compliance Manager nel portale Microsoft Service Trust per soddisfare le esigenze di protezione dei dati e normative.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d90e733dad48dc0e979f6d307a9419afd05cf6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165967"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815597"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance Manager (classico)
 
@@ -48,16 +48,16 @@ Per una breve demo di Compliance Manager, guardare questo video su [Compliance M
 
     
 > [!IMPORTANT]
-> Compliance Manager è un dashboard che fornisce un riepilogo della protezione e della conformità dei dati, suggerendo come migliorarli. Le azioni dei clienti fornite nel Compliance Manager sono elementi consigliati; spetta a ciascuna organizzazione valutarne l'efficacia nel rispettivo contesto normativo prima dell'implementazione. Gli elementi consigliati disponibili nel Compliance Manager non devono essere interpretati come una garanzia di conformità.
+> Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
 
     
 ## <a name="what-is-compliance-manager"></a>Che cos'è il Compliance Manager?
 
-Compliance Manager è uno strumento di valutazione dei rischi in base al flusso di lavoro, concepito per gestire la conformità alle normative nel modello di responsabilità condivisa del cloud. Offre una visualizzazione su dashboard di standard, normative e valutazioni che contengono i risultati dei test e i dettagli sull'implementazione del controllo Microsoft e il monitoraggio e le linee guida all'implementazione del controllo del cliente che l'organizzazione può inserire. Compliance Manager garantisce definizioni sul controllo di valutazione delle certificazioni, indicazioni sull'implementazione e test dei controlli, con classificazione dei controlli in base al rischio, gestione di accesso in base al ruolo e flusso di lavoro di assegnazione delle azioni di controllo sul posto per monitorare l'implementazione del controllo e testare la gestione delle evidenze. Compliance Manager ottimizza il carico di lavoro di conformità consentendo ai clienti di raggruppare le valutazioni in modo logico e applicare test di controllo di valutazione a controlli identici o correlati, riducendo la moltiplicazione degli sforzi necessaria per eseguire controlli identici tra certificazioni diverse.
+Compliance Manager is a workflow-based risk assessment tool designed to help you manage regulatory compliance within the shared responsibility model of the cloud. Compliance Manager provides you with a dashboard view of standards and regulations and assessments that contain Microsoft's control implementation details and test results and customer control implementation guidance and tracking for your organization to enter. Compliance Manager provides certification assessment control definitions, guidance on implementation and testing of controls, risk-weighted scoring of controls, role-based access management, and an in-place control action assignment workflow to track control implementation, testing status and evidence management. Compliance Manager optimizes compliance workload by enabling customers to logically group assessments together and apply assessment control testing to identical or related controls, reducing the duplication of effort that might otherwise be required to satisfy identical control requirements across different certifications.
 
 ## <a name="assessments-in-compliance-manager"></a>Valutazioni in Compliance Manager
 
-Il componente di base di Compliance Manager è la *valutazione*. Una valutazione è la valutazione di un servizio Microsoft rispetto allo standard di certificazione o alle normative sulla protezione dei dati (ad esempio ISO 27001:2013 e GDPR). Le valutazioni consentono di individuare le condizioni di conformità e protezione dei dati dell'organizzazione rispetto agli standard del settore selezionato, per il servizio cloud Microsoft scelto. Le valutazioni vengono completate dall'implementazione dei controlli associati agli standard di certificazione valutati. 
+The core component of Compliance Manager is called an *Assessment*. An Assessment is an assessment of a Microsoft service against a certification standard or data protection regulation (such as ISO 27001:2013, and the GDPR). Assessments help you to discern your organization's data protection and compliance posture against the selected industry standard for the selected Microsoft cloud service. Assessments are completed by the implementation of the controls that map to the certification standard being assessed. 
   
 La struttura di una valutazione si basa sulla responsabilità condivisa tra Microsoft e l'organizzazione per valutare i rischi relativi alla sicurezza e alla conformità nel cloud e per implementare le misure di protezione dei dati specificate da uno standard di conformità, uno standard di protezione dei dati, una normativa o una legge.
   
@@ -65,13 +65,13 @@ Una valutazione è costituita da diversi componenti:
   
 - **Servizi in ambito**: ogni valutazione si applica a un set di servizi Microsoft, elencati nella sezione relativa ai servizi cloud in ambito. 
     
-- **Controlli gestiti da Microsoft**: per ogni servizio cloud Microsoft implementa e gestisce un set di *controlli* nell'ambito di conformità di Microsoft a vari standard e normative. Tali controlli sono organizzati in *famiglie di controlli* in linea con la struttura della certificazione o normativa corrispondente a sua volta in linea con la valutazione. Per ogni controllo gestito da Microsoft, Compliance Manager offre informazioni dettagliate su come è stato implementato il controllo, nonché su come e quando tale implementazione è stata testata e convalidata da un revisore di terze parti indipendente. 
+- **Microsoft-Managed Controls** - For each cloud service, Microsoft implements and manages a set of  *controls*  as part of Microsoft's compliance with various standards and regulations. These controls are organized into  *control families*  that align with the structure from the corresponding certification or regulation that the Assessment is aligned to. For each Microsoft-managed control, Compliance Manager provides details about how Microsoft implemented the control, along with how and when that implementation was tested and validated by an independent third-party auditor. 
     
     Di seguito viene riportato un esempio di tre controlli gestiti da Microsoft nella famiglia **Protezione** da una valutazione di Office 365 e del GDPR. 
 
     ![Informazioni dettagliate sui controlli gestiti da Microsoft nel Compliance Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
-  a. Specifica le informazioni seguenti dalla certificazione o dalle normative associate al controllo gestito da Microsoft.
+  a. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
 
   - **ID di controllo**: il numero della sezione o dell'articolo della certificazione o delle normative associati al controllo.
     
@@ -81,15 +81,15 @@ Una valutazione è costituita da diversi componenti:
     
   - **Descrizione**: il testo dello standard o della normativa associati al controllo gestito da Microsoft selezionato.
 
-  b. Il punteggio di conformità per il controllo, che indica il livello di rischio (a causa di problemi di conformità o di controllo) associato a ogni controllo gestito da Microsoft. Vedere [Informazioni sul punteggio di conformità](#understanding-the-compliance-score) per ulteriori informazioni. Si noti che i punteggi di conformità vengono valutati da 1 a 10 e sono contraddistinti dal colore. Giallo indica controlli a basso rischio, arancione indica i controlli di rischio medio e rosso indica i controlli ad alto rischio. 
+  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
     
-  c. Le informazioni relative allo stato di implementazione di un controllo, alla data in cui il controllo è stato sottoposto a test, alla persona che ha eseguito il test e al risultato del test.
+  c. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
     
-  d. Per ciascun controllo, è possibile selezionare **Altro** per visualizzare maggiori informazioni, tra cui i dettagli sull'implementazione del controllo di Microsoft e su come il controllo è stato testato e convalidato da un revisore di terze parti indipendente. 
+  d. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor. 
     
-- **Controlli gestiti dal cliente**: si tratta della raccolta di controlli che sono gestiti dall'organizzazione. L'organizzazione è responsabile dell'implementazione di questi controlli in ambito del processo di conformità, per determinati standard o normative. I controlli gestiti dal cliente sono inoltre organizzati in famiglie di controlli per la certificazione o la normativa corrispondenti. Utilizzare i controlli gestiti dal cliente per implementare le azioni raccomandate suggerite da Microsoft in ambito delle attività di conformità. L'organizzazione può utilizzare le guide prescrittive e le azioni cliente suggerite in ciascun controllo gestito dai clienti, per gestire il processo di implementazione per quel determinato controllo.
+- **Customer-Managed Controls** - This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer-managed controls are also organized into control families for the corresponding certification or regulation. Use the customer-managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer-managed control to manage the implementation and assessment process for that control.
     
-    I controlli gestiti dai clientie nelle valutazioni dispongono inoltre di funzionalità di gestione del flusso di lavoro incorporate che consentono di gestire e monitorare lo stato di avanzamento dell'organizzazione nel completamento della valutazione. Ad esempio, un responsabile della conformità dell'organizzazione può assegnare un'attività a un amministratore IT, che ha la responsabilità e le autorizzazioni necessarie per eseguire le operazioni consigliate per il controllo. Una volta completato il lavoro, l'amministratore IT può caricare evidenze delle proprie attività di implementazione (ad esempio schermate di configurazione o delle impostazioni dei criteri) e quindi riassegnare l'attività al responsabile della conformità per valutare le evidenze raccolte, testare l'implementazione del controllo e registrare la data di implementazione e i risultati del test in Compliance Manager. Per ulteriori informazioni, vedere la sezione [Gestione del processo di valutazione](#managing-the-assessment-process) dell'articolo. 
+    Customer-managed controls in Assessments also have built-in workflow management functionality that you can use to manage and track your organization's progress towards completing the Assessment. For example, a Compliance Officer in your organization can assign an Action Item to an IT admin who has the responsibility and necessary permissions to perform the actions that are recommended for the control. When that work is complete, the IT admin can upload evidence of their implementation tasks (for example, screenshots of configuration or policy settings) and then assign the Action Item back to the Compliance Officer to evaluate the collected evidence, test the implementation of the control, and record the implementation date and test results in Compliance Manager. For more information, see the [Managing the assessment process](#managing-the-assessment-process) section in the article. 
   
 ## <a name="permissions-and-role-based-access-control"></a>Autorizzazioni e controllo dell'accesso basato sui ruoli
 
@@ -97,7 +97,7 @@ Compliance Manager usa un modello di autorizzazione di controllo dell'accesso ba
   
 Si noti che non esiste più un ruolo predefinito **Accesso guest**. A ogni utente deve essere assegnato un ruolo per poter accedere e lavorare in Compliance Manager.
   
-La tabella seguente descrive ogni autorizzazione per Compliance Manager e le operazioni che consente di svolgere all'utente. La tabella indica anche le autorizzazioni assegnate a ciascun ruolo.
+The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned to.
   
 ||**Compliance Manager - Lettore**|**Compliance Manager - Collaboratore**|**Compliance Manager - Valutatore**|**Compliance Manager - Amministratore**|**Amministratore del portale**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -105,7 +105,7 @@ La tabella seguente descrive ogni autorizzazione per Compliance Manager e le ope
 |**Modifica dati**: gli utenti possono modificare tutti i campi, tranne i campi Risultato del test e Data del test.  <br/> ||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**Modifica risultati del test**: gli utenti possono modificare i campi Risultato del test e Data del test.  <br/> ||<br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**Gestione valutazioni**: gli utenti possono creare, archiviare ed eliminare le valutazioni.  <br/> |||<br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Gestione utenti**: gli utenti possono aggiungere altri utenti dell'organizzazione per i ruoli di lettore, collaboratore, valutatore e amministratore. Solo gli utenti con ruolo di amministratore globale dell'organizzazione possono aggiungere o rimuovere utenti dal ruolo di amministratore del portale.  <br/> ||||<br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Manage users** - Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br/> ||||<br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 ## <a name="understanding-the-compliance-score"></a>Comprendere il punteggio di conformità
 
@@ -125,17 +125,17 @@ Ad esempio, il controllo di valutazione per User Access Management mostrato in b
   
 ![Compliance Manager: livello di gravità basso del controllo di valutazione con punteggio 3](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
   
-Compliance Manager assegna un livello di gravità predefinito ad ogni controllo. La classificazione del rischio viene calcolata in base ai criteri seguenti:
+The Compliance Manager assigns a default severity ranking to each control. Risk rankings are calculated based on the following criteria:
   
 - Se un controllo impedisce il verificarsi di eventi imprevisti (classificazione più alta), rileva gli eventi imprevisti accaduti o corregge l'impatto di un evento imprevisto (classificazione più bassa). In termini di classificazione di gravità, a un controllo obbligatorio che impedisce una minaccia viene assegnato il numero massimo di punti, mentre ai controlli rilevatori o correttivi (indipendentemente dal fatto che siano obbligatori o discrezionali) viene assegnato il numero minimo di punti.
     
 - Se un controllo (dopo che è stato implementato) è obbligatorio e quindi non può essere bypassato dagli utenti (ad esempio, gli utenti devono reimpostare la propria password e soddisfare i requisiti di lunghezza e caratteri della password) o a discrezione dell'utente e può essere bypassato dagli utenti (ad esempio, in caso di regole aziendali che richiedono agli utenti di bloccare i propri schermi quando si allontanano dalla propria postazione).
     
-- Controlli relativi ai rischi per la riservatezza, l'integrità e la disponibilità dei dati, se questi rischi derivano da minacce interne o esterne e se la minaccia è dannosa o accidentale. Ad esempio, ai controlli che aiuterebbero a impedire a un utente malintenzionato esterno di violare quella rete e ottenere accesso a informazioni di identificazione personale sarebbero assegnati più punti rispetto a un controllo che impedisce a un dipendente di configurare erroneamente un'impostazione del router di rete con conseguente interruzione della rete.
+- Controls related to risks to data confidentiality, integrity, and availability, whether these risks come from internal or external threats, and whether the threat is malicious or accidental. For example, controls that would help prevent an external attacker from breaching that network and gaining access to personally identifiable information would be assigned more points than a control related to preventing an employee from accidentally mis-configuring a network router setting that results in a network outage).
     
 - Rischi connessi a driver legali e esterni, come contratti, regolamenti e impegni pubblici, per ciascun controllo.
     
-I valori del punteggio di conformità indicati per il controllo vengono applicati *completamente* al punteggio di conformità totale in base al risultato - il controllo è implementato e supera il test di valutazione successivo o meno; non vi è alcun credito parziale per un'implementazione parziale. Solo quando il controllo ha lo **stato di implementazione** impostato su **Implementato** o **Implementazione alternativa** e il **risultato del test** è impostato su **Superato** vengono aggiunti punti al punteggio di conformità totale. 
+The displayed Compliance Score values for the control are applied  *in their entirety*  to the Total Compliance Score on a pass/fail basis--either the control is implemented and passes the subsequent assessment test or it does not; there is no partial credit for a partial implementation. Only when the control has its **Implementation Status** set to **Implemented** or **Alternative Implementation** and the **Test Result** is set to **Passed** are the assigned points added to the Total Compliance Score. 
   
 E soprattutto, il punteggio di conformità consente di stabilire priorità in merito ai controlli su cui concentrarsi per l'implementazione indicando quali controlli hanno un rischio potenziale più alto in caso di insuccesso. Oltre alla definizione delle priorità basata sui rischi, quando i controlli della valutazione sono correlati ad altri controlli (all'interno della stessa valutazione o in un'altra valutazione nello stesso gruppo), il corretto completamento di un singolo controllo può snellire significativamente la procedura grazie alla sincronizzazione dei risultati dei test di controllo.
   
@@ -145,7 +145,7 @@ Nell'immagine seguente, ad esempio, si può notare che Office 365 - valutazione 
   
 Nella valutazione, il controllo GDPR 7.5.5 è correlato a 5 altri controlli (7.4.1, 7.4.3, 7.4.4, 7.4.8,.7.4.9), ognuno con un punteggio di 6 o 8 per la classificazione di gravità del rischio da moderata a molto elevata. Usando il filtro delle valutazioni sono stati selezionati e resi visibili tutti questi controlli nella visualizzazione di valutazione e, come si può vedere di seguito, nessuno di essi è stato valutato. 
   
-![Compliance Manager - Vista di valutazione - Controlli filtro, nessuno valutato](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Poiché questi 6 controlli sono correlati, il completamento di ognuno di essi comporterà una sincronizzazione dei risultati di questi test attraverso i relativi controlli all'interno di questa valutazione (proprio come per qualsiasi controllo correlato in una valutazione che si trova nello stesso gruppo di valutazione). Al completamento dell'implementazione e della verifica del controllo GDPR 7.5.5, l'area dei dettagli di controllo si aggiorna per mostrare che tutti e 6 i controlli sono stati valutati, con un corrispondente aumento del numero di controlli valutati a 57 e 51% e un cambiamento nel punteggio di conformità totale superiore a 40. 
+![Compliance Manager - Vista di valutazione - Controlli filtro, nessuno valutato](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57 and 51% assessed, and a change in total Compliance Score of +40. 
   
 ![Vista di valutazione di Compliance Manager: i risultati del controllo sono sincronizzati](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
   
@@ -154,16 +154,16 @@ Questa finestra di dialogo di aggiornamento di conferma verrà visualizzata se s
 ![Valutazione di Compliance Manager: finestra di dialogo di conferma dell'aggiornamento dei controlli relativi alla verifica](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
   
 > [!NOTE]
-> Attualmente, solo le valutazioni per i servizi cloud di Office 365 includono un punteggio di conformità. Le valutazioni per Azure e Dynamics mostrano uno stato di valutazione. 
+> Currently, only Assessments for Office 365 cloud services include a Compliance Score. Assessments for Azure and Dynamics show an assessment status. 
 
 ## <a name="compliance-score-methodology"></a>Metodologia del punteggio di conformità
 
 Il punteggio di conformità, come Microsoft Secure Score, è simile ad altri sistemi di punteggio basati sul comportamento; l'attività dell'organizzazione può aumentare il punteggio di conformità svolgendo attività correlate alla protezione dei dati, alla privacy e alla sicurezza.
   
 > [!NOTE]
-> Il punteggio di conformità non esprime una misura assoluta di conformità organizzativa a nessun particolare standard o regolamento. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Nessun servizio può garantire la conformità a uno standard o regolamento e il punteggio di conformità non deve essere interpretato come una garanzia in alcun modo. 
+> The Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way. 
   
-Le valutazioni in Compliance Manager si basano sul modello di responsabilità condivisa per il cloud computing. Nel modello di responsabilità condivisa, Microsoft e ciascun cliente condividono la responsabilità per la protezione dei dati del cliente quando tali dati sono archiviati nel cloud.
+Assessments in Compliance Manager are based on the shared responsibility model for cloud computing. In the shared responsibility model, Microsoft and each customer share responsibility for the protection of the customer's data when that data is stored in our cloud.
   
 Come illustrato nella valutazione GDPR di Office 365 seguente, Microsoft e i clienti sono responsabili dell'esecuzione di una serie di azioni ideate per soddisfare i requisiti dello standard o della normativa in fase di valutazione. Per razionalizzare e comprendere le esigenze. Le azioni in un'ampia gamma di standard e normative, Compliance Manager considera tutte le normative e gli standard come se fossero framework di controllo. Quindi, le azioni eseguite da Microsoft e dai clienti per ogni valutazione includono l'implementazione e la convalida di vari controlli.
   
@@ -171,7 +171,7 @@ Come illustrato nella valutazione GDPR di Office 365 seguente, Microsoft e i cli
   
 Di seguito viene indicato il flusso di lavoro di base per un'azione tipica:
   
-1. Il responsabile della conformità, del rischio, della privacy e/o della protezione dei dati di un'organizzazione assegna l'incarico a qualcuno nell'organizzazione per implementare un controllo. Può ricevere tale incarico:
+1. The Compliance, Risk, Privacy, and/or Data Protection Officer of an organization assigns the task to someone in the organization to implement a control. That person could be:
 
     - Il proprietario di un criterio di business
     
@@ -179,7 +179,7 @@ Di seguito viene indicato il flusso di lavoro di base per un'azione tipica:
     
     - Un'altra persona dell'organizzazione responsabile dell'esecuzione dell'attività
     
-2. L'individuo svolge le attività necessarie per implementare il controllo, carica le evidenze di implementazione in Compliance Manager e contrassegna i controlli legati all'azione come implementati. Una volta completate queste attività, assegna l'attività a un valutatore per la convalida. I valutatori possono essere:
+2. That individual performs the tasks necessary to implement the control, uploads evidence of implementation into Compliance Manager, and marks the control(s) tied to the Action as implemented. Once these tasks are completed, they assign the Action to an Assessor for validation. Assessors can be:
     
     - Valutatori interni che eseguono la convalida dei controlli all'interno di un'organizzazione
     
@@ -189,13 +189,13 @@ Di seguito viene indicato il flusso di lavoro di base per un'azione tipica:
     
 Quando tutti i controlli associati a una valutazione sono stati valutati, la valutazione è completata.
   
-Ogni valutazione in Compliance Manager viene pre-caricata con informazioni che forniscono dettagli sulle azioni intraprese da Microsoft per soddisfare i requisiti dei controlli per i quali Microsoft è responsabile. Queste informazioni includono dettagli su come Microsoft ha implementato ciascun controllo e su come e quando l'implementazione di Microsoft è stata valutata e verificata da un revisore esterno. Per questo motivo, i controlli gestiti da Microsoft per ciascuna valutazione sono contrassegnati come valutati e il punteggio di conformità per la valutazione riflette tale situazione.
+Every Assessment in Compliance Manager comes pre-loaded with information that provides details about the Actions taken by Microsoft to satisfy the requirements of the controls for which Microsoft is responsible. This information includes details about how Microsoft has implemented each control and how and when Microsoft's implementation was assessed and verified by a third-party auditor. For this reason, the Microsoft Managed Controls for each Assessment are marked as Assessed, and the Compliance Score for the Assessment reflects this.
   
-Ogni valutazione include un punteggio di conformità totale basato sul modello di responsabilità condivisa. L'implementazione e la verifica dei controlli di Microsoft per Office 365 contribuiscono a una parte dei punti totali possibili associati a una valutazione GDPR. Quando il cliente implementa e testa ciascuna delle azioni del cliente, il punteggio di conformità per la valutazione aumenterà del valore assegnato al controllo. 
+Each Assessment includes a total Compliance Score based on the shared responsibility model. Microsoft's implementation and testing of controls for Office 365 contributes a portion of the total possible points associated with a GDPR assessment. As the customer implements and tests each of the customer Actions, the Compliance Score for the Assessment will increase by the value assigned to the control. 
   
  ### <a name="risk-based-scoring-methodology"></a>Metodologia del punteggio basata sul rischio
   
-Compliance Manager utilizza una metodologia di valutazione basata sul rischio con una scala da 1 a 10 che assegna un valore superiore ai controlli che rappresentano un rischio più elevato nel caso in cui il controllo non venga superato o risultasse non conforme. Il sistema di punteggio utilizzato per il punteggio di conformità si basa su diversi fattori chiave, quali:
+Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 that assigns a higher value to controls that represent a higher risk in the event the control fails or is non-compliant. The scoring system used by Compliance Score is based on several key factors, such as:
   
 - Essenza del controllo
     
@@ -211,17 +211,17 @@ L'essenza del controllo dipende dalla natura del controllo: obbligatorio o a dis
   
  ### <a name="mandatory-or-discretionary"></a>Obbligatorio o a discrezione dell'utente
   
- *I controlli obbligatori* sono controlli che non possono essere aggirati intenzionalmente o accidentalmente. Un esempio di controllo obbligatorio comune è un criterio di password gestito centralmente che imposta i requisiti per la lunghezza, la complessità e la scadenza della password. Gli utenti devono rispettare questi requisiti per accedere al sistema. 
+ *Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system. 
   
- *I controlli a discrezione dell'utente* fanno affidamento sugli utenti per comprendere i criteri e agire di conseguenza. Ad esempio, un criterio che richiede agli utenti di bloccare il proprio computer quando si allontanano dalla postazione è un controllo a discrezione dell'utente perché dipende dall'utente. 
+ *Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user. 
   
  ### <a name="preventative-detective-or-corrective"></a>Preventivo, investigativo o correttivo
   
- *I controlli preventivi* sono quelli che prevengono rischi specifici. Ad esempio, proteggere le informazioni a riposo utilizzando la crittografia è un controllo preventivo contro attacchi, violazioni, ecc. La separazione delle funzioni è un controllo preventivo per gestire il conflitto di interessi e proteggersi dalle frodi. 
+ *Preventative controls*  are those that prevent specific risks. For example, protecting information at rest using encryption is a preventative control against attacks, breaches, etc. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud. 
   
- *I controlli investigativi* sono quelli che monitorano attivamente i sistemi per identificare condizioni o comportamenti irregolari che rappresentano un rischio o che possono essere utilizzati per rilevare intrusioni o determinare se si è verificata una violazione. Il controllo dell'accesso al sistema e il controllo delle azioni amministrative privilegiate sono tipi di controlli di monitoraggio investigativi. I controlli di conformità normativa sono un tipo di controllo investigativo utilizzato per individuare i problemi del processo. 
+ *Detective controls*  are those that actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach has occurred. System access auditing and privileged administrative actions auditing are types of detective monitoring controls; regulatory compliance audits are a type of detective control used to find process issues. 
   
- *I controlli correttivi* sono quelli che cercano di limitare al minimo gli effetti negativi di un incidente di sicurezza, intraprendono azioni correttive per ridurre l'effetto immediato e, se possibile, riparano il danno. La risposta agli incidenti sulla privacy è un controllo correttivo per limitare i danni e ripristinare i sistemi a uno stato operativo dopo una violazione. 
+ *Corrective controls*  are those that try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage, if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach. 
   
 Valutando ciascun controllo utilizzando questi fattori, viene determinata l'essenza del controllo e viene assegnato un valore relativo al rischio che rappresenta.
   
@@ -242,7 +242,7 @@ La minaccia si riferisce a tutto ciò che rappresenta un rischio per lo standard
     
 - Disponibilità significa che le informazioni sono facilmente accessibili con un elevato livello di qualità del servizio.
     
-Un errore di una qualsiasi di queste caratteristiche è considerato un compromesso del sistema nel suo complesso. Le minacce possono provenire da fonti interne ed esterne e l'intento di un attore può essere accidentale o dannoso. Questi fattori sono stimati in una matrice di minacce che assegna livelli di minaccia alti, moderati o bassi a ciascuna combinazione di scenari.
+A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
 ||**Interno**<br/>||**Esterno**<br/>||||
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -274,13 +274,13 @@ Assegnando delle priorità ai controlli di valutazione con i valori più elevati
   
 ### <a name="summary-of-scoring-methodology"></a>Riepilogo sulla metodologia di assegnazione del punteggio
   
-Il punteggio di conformità è un componente fondamentale del modo in cui Compliance Manager aiuta le organizzazioni a comprendere e gestire il proprio livello di conformità. Il punteggio di conformità per una valutazione è un'espressione sotto forma di numero della conformità della società a un dato standard o regolamento, dove più alto è il punteggio (fino al numero massimo di punti assegnati per la valutazione) migliore è il livello di conformità dell'azienda. Comprendere la metodologia del punteggio di conformità in cui i controlli di valutazione sono assegnati a valori di gravità del rischio compresi tra 1 e 10 (da basso ad alto) e il modo in cui le valutazioni di controllo completano il punteggio di conformità totale è fondamentale per le organizzazioni che danno priorità alle loro operazioni.
+The Compliance Score is a core component of the way that Compliance Manager helps organizations understand and manage their compliance. The Compliance Score for an assessment is an expression of the company's compliance with a given standard or regulation as a number, where the higher the score (up to the maximum number of points allocated for the Assessment), the better the company's compliance posture. Understanding the compliance scoring methodology in which assessment controls are assigned risk severity values between 1- 10 (low to high), and how completed control assessments add to the total compliance score is crucial to organizations for prioritizing their actions.
 
 ## <a name="grouping-assessments"></a>Raggruppamento delle valutazioni
 
 Quando si crea una nuova valutazione, viene chiesto di creare un gruppo a cui assegnare la valutazione oppure di assegnare la valutazione a un gruppo esistente. I gruppi consentono di organizzare le valutazioni in modo logico e condividere le informazioni e le attività del flusso di lavoro comuni tra le valutazioni che hanno controlli gestiti dal cliente uguali o correlati.
   
-Ad esempio, è possibile raggruppare le valutazioni per anno o gruppi, reparti o agenzie all'interno della propria organizzazione o raggrupparli per anno. Ecco alcuni esempi di gruppi e le valutazioni che potrebbero contenere.
+For example, you could group Assessments by year or teams, departments, or agencies within your organization or group them by year. Here are some examples of groups and the Assessments they might contain.
   
 - Valutazioni GDPR - 2018
     
@@ -315,7 +315,7 @@ Questi sono i requisiti per il raggruppamento delle valutazioni:
   
 - I nomi dei gruppi (noti anche come ID gruppo) devono essere univoci all'interno dell'organizzazione. 
     
-- I gruppi possono contenere valutazioni per la stessa certificazione/regolamento, ma ciascun gruppo può contenere solo una valutazione per una coppia di servizi/certificazioni cloud specifici. Ad esempio, un gruppo non può contenere due valutazioni per Office 365 e GDPR. Analogamente, un gruppo può contenere più valutazioni per lo stesso servizio cloud purché la certificazione/regolamento corrispondente sia diverso per ciascuno di essi.
+- Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and GDPR. Similarly, a group can contain multiple Assessments for the same cloud service as long as the corresponding certification/regulation for each one is different.
     
 Dopo l'aggiunta di una valutazione a un gruppo di valutazioni, il gruppo non può essere modificato. È possibile rinominare il gruppo di valutazioni, modificando così il nome del gruppo per tutte le valutazioni associate al gruppo. È possibile creare una valutazione e un nuovo gruppo di valutazioni, quindi copiare le informazioni da una valutazione esistente, creando così un duplicato della valutazione in un gruppo di valutazione diverso in modo facile e veloce. L'archiviazione di una valutazione interrompe la relazione tra la valutazione e il gruppo di valutazione. Qualsiasi ulteriore aggiornamento ad altre valutazioni correlate non viene più riflesso nella valutazione archiviata.
   
@@ -346,11 +346,11 @@ Tornando al dashboard, si noti che ogni valutazione ha una valutazione del contr
 Funzioni amministrative specifiche sono disponibili solo per l'account dell'amministratore del tenant e sono visibili solo quando si accede come amministratore globale.
   
 > [!NOTE]
-> L'autorizzazione di accesso ai documenti con restrizioni nell'elenco a discesa consentirà agli amministratori di fornire agli utenti l'accesso a documenti riservati condivisi da Microsoft sul Service Trust Porta. La funzione dei documenti con restrizioni sarà presto disponibile. 
+> The Access to Restricted Documents permission in the drop-down list will allow administrators to give users access to restricted documents that Microsoft shares on the Service Trust Portal. The Restricted Documents feature isn't available, but is coming soon. 
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Assegnazione di ruoli Compliance Manager agli utenti
 
-Per ogni ruolo Compliance Manager sono previste autorizzazioni leggermente diverse. È possibile visualizzare le autorizzazioni assegnate a ciascun ruolo, vedere quali utenti sono in quali ruoli e aggiungere o rimuovere utenti da tale ruolo dal Service Trust Portal selezionando la voce di menu **Amministratore** e scegliendo **Impostazioni**. 
+Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal by selecting the **Admin** menu item, and then choosing **Settings**. 
   
 ![Menu di amministrazione del STP: impostazioni selezionate](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
@@ -366,7 +366,7 @@ Per aggiungere o rimuovere utenti da ruoli Compliance Manager.
     
 5. Gli utenti aggiunti a ciascun ruolo sono aggiunti nella pagina **Seleziona ruolo**. 
     
-6. Per aggiungere utenti al ruolo, fare clic su **Aggiungi**. Nella finestra di dialogo **Aggiungi utenti**, fare clic sul campo utente. È possibile scorrere l'elenco degli utenti disponibili o iniziare a digitare il nome utente per filtrare l'elenco in base al termine di ricerca. Fare clic sull'utente per aggiungere l'account all'elenco **Aggiungi utenti** cui assegnare il ruolo. Per aggiungere più utenti contemporaneamente, iniziare a digitare un nome utente per filtrare l'elenco, quindi fare clic sull'utente da aggiungere all'elenco. Fare clic su **Salva** per assegnare il ruolo selezionato agli utenti. 
+6. To add users to this role, click **Add**. In the **Add Users** dialog, click the user field. You can scroll through the list of available users or begin typing the user name to filter the list based on your search term. Click the user to add that account to the **Add Users** list to be provisioned with that role. If you would like to add multiple users concurrently, begin typing a user name to filter the list, and then click the user to add to the list. Click **Save** to provision the selected role to these users. 
     
     ![Compliance Manager - Assegnare ruoli - Aggiungere utenti](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
@@ -376,7 +376,7 @@ Per aggiungere o rimuovere utenti da ruoli Compliance Manager.
  
 ## <a name="user-privacy-settings"></a>Impostazioni di privacy dell'utente
 
-Alcune normative richiedono che un'organizzazione debba essere in grado di eliminare i dati della cronologia utente. Per consentire ciò, Compliance Manager fornisce le funzioni delle **impostazioni di privacy dell'utente**, che consentono agli amministratori di: 
+Certain regulations require that an organization must be able to delete user history data. To enable this, Compliance Manager provides the **User Privacy Settings** functions, that allow administrators to: 
   
 - [Cercare un utente](#search-for-a-user)
 
@@ -396,7 +396,7 @@ Cercare un account utente:
     
 2. Dopo aver immesso correttamente il nome utente, fare clic su **Cerca**. 
     
-3. Se l'account utente non viene trovato, il messaggio di errore "utente non trovato" verrà visualizzato nella pagina. Controllare le informazioni sull'indirizzo e-mail dell'utente, apportare le correzioni necessarie e fare clic su **Cerca** per riprovare. 
+3. If the user account is not found, the error message 'User not found' will be displayed on the page. Check the user's email address information, make corrections as necessary and click **Search** to try again. 
     
 4. Se viene rilevato l'account utente, il testo del pulsante cambia da **Cerca** a **Cancella**, che indica che l'account utente restituito è il contesto operativo per le funzioni aggiuntive che verranno visualizzate di seguito e che l'esecuzione di tali funzioni si applicherà a questo account utente. 
     
@@ -415,11 +415,11 @@ Dopo aver individuato l'account utente, si può generare un report delle dipende
 3. Aprire il documento per visualizzare i dati del report.
     
 > [!NOTE]
-> Non si tratta di un report cronologico che conserva e indica le modifiche di stato alla cronologia delle assegnazioni delle attività. Il report generato è un'istantanea delle attività di controllo assegnate al momento dell'esecuzione del report (data e ora scritti nel report). Ad esempio, qualsiasi successiva riassegnazione delle attività genererà dati del report snapshot diversi se questo report viene generato di nuovo per lo stesso utente. 
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user. 
   
 ### <a name="reassign-action-items"></a>Riassegnare attività
 
-Questa funzione consente a un'organizzazione di rimuovere tutte le dipendenze attive o in sospeso sull'account utente riassegnando la proprietà di tutte le attività (che include attività sia attivi sia completati) dall'account utente restituito a un nuovo utente selezionato di seguito. Questa operazione non modifica la cronologia di caricamento dei documenti per l'account utente restituito. 
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account. 
   
  Per riassegnare attività a un altro utente:
   
@@ -432,9 +432,9 @@ Questa funzione consente a un'organizzazione di rimuovere tutte le dipendenze at
 4. Per continuare, fare clic su **OK**, in caso contrario, fare clic su **Annulla**. 
     
 > [!NOTE]
-> Tutte le attività (sia attive che completate) saranno assegnate all'utente appena selezionato. Tuttavia, questa operazione non influisce sulla cronologia di caricamento del documento; tutti i documenti caricati dall'utente precedentemente assegnato mostreranno ancora la data/l'ora e il nome dell'utente precedentemente assegnato. 
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
   
-La modifica della cronologia di caricamento dei documenti per rimuovere l'utente precedentemente assegnato dovrà essere eseguita come una procedura manuale. In tal caso, l'amministratore dovrà:
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
   
 1. Aprire il report esportazione scaricato in precedenza.
   
@@ -446,17 +446,17 @@ La modifica della cronologia di caricamento dei documenti per rimuovere l'utente
   
 5. Eliminare il documento nell'archivio delle evidenze.
   
-6. Ricaricare il documento. Il documento ora conterrà una nuova data, ora e nome utente di caricamento. 
+6. Re-upload the document. The document will now have a new upload date, time and Uploaded By username. 
   
 ### <a name="delete-user-data-history"></a>Eliminare la cronologia dei dati dell'utente
 
-Imposta gli elementi delle attività di controllo su "non assegnati" per tutte le attività assegnate all'utente restituito. Questo imposta anche il valore caricato su "utente rimosso" per tutti i documenti caricati dall'utente restituito
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
   
  Per eliminare l'attività dell'account utente e la cronologia di caricamento dei documenti:
   
 1. Fare clic su **Elimina**. 
 
-    Viene visualizzata una finestra di dialogo di conferma, che indica "Questa operazione rimuoverà tutte le assegnazioni delle attività e la cronologia di caricamento dei documenti per l'utente selezionato. L'operazione non può essere annullata. Continuare?"
+    A confirmation dialog will be displayed, stating "This will remove all control action item assignments and the document upload history for the selected user. This action cannot be undone. Are you sure you want to continue?"
     
 3. Per continuare, fare clic su **OK**, in caso contrario, fare clic su **Annulla**. 
   
@@ -468,7 +468,7 @@ Compliance Manager fornisce gli strumenti per assegnare, monitorare e registrare
 
 ## <a name="accessing-compliance-manager"></a>Accesso a Compliance Manager
 
-Chiunque abbia un account Microsoft o un account organizzativo di Azure Active Directory può accedere a Compliance Manger dal Service Trust Portal.
+You access Compliance Manager from the Service Trust Portal. Anyone with a Microsoft account or Azure Active Directory organizational account can access Compliance Manager.
   
 ![Compliance Manager - Accesso a Compliance Manager dal menu del STP](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
   
@@ -478,7 +478,7 @@ Chiunque abbia un account Microsoft o un account organizzativo di Azure Active D
     
 3. Selezionare **Compliance Manger** dal Service Trust Portal. 
     
-4. Quando viene visualizzato il contratto di riservatezza, leggere il messaggio e quindi fare clic su **Accetto** per continuare. È necessario eseguire questa operazione una sola volta per visualizzare il dashboard di Compliance Manager. 
+4. When the Non-Disclosure Agreement is displayed, read it, and then click **Agree** to continue. You'll only have to do this once, and then the Compliance Manager dashboard is displayed. 
 
     Per iniziare, sono stati aggiunti le valutazioni seguenti per impostazione predefinita:
     
@@ -498,7 +498,7 @@ Per visualizzare le attività:
     
 2. Facendo clic sul collegamento **Attività**, la pagina verrà aggiornata per mostrare le attività assegnate all'utente. 
     
-    Per impostazione predefinita, vengono mostrate tutte le attività. Se sono presenti attività tra più certificazioni, i nomi delle certificazioni saranno elencati in schede nella parte superiore del controllo di valutazione. Per visualizzare le attività per una certificazione specifica, fare clic sulla scheda.
+    By default, all action items are shown. If you have action items across multiple certifications, the names of the certifications will be listed in tabs across the top of the assessment control. To see the action items for a specific certification, click that tab.
 
 ## <a name="adding-an-assessment"></a>Aggiungere una valutazione
 
@@ -506,7 +506,7 @@ Per aggiungere una valutazione a Compliance Manager:
   
 1. Nel dashboard di Compliance Manager, fare clic sull'![icona Aggiungi](../media/ITPro-EAC-AddIcon.gif) **Aggiungi valutazione**. 
     
-2. Nella finestra **Aggiungere valutazione**, è possibile creare un nuovo gruppo per aggiungere la valutazione oppure aggiungerla a un gruppo esistente (il gruppo predefinito è denominato "Gruppo iniziale"). A seconda dell'opzione scelta, digitare il nome di un nuovo gruppo o selezionare un gruppo esistente dall'elenco a discesa. Per ulteriori informazioni, vedere [Raggruppamento delle valutazioni](#grouping-assessments).
+2. In the **Add an Assessment** window, you can create a new group to add the Assessment to or you can add it to an existing group (the built-in group is named "Initial Group".) Depending on the option you choose, either type the name of a new group or select an existing group from the drop-down list. For more information, see [Grouping Assessments](#grouping-assessments).
     
     Se si crea un gruppo, è anche possibile copiare informazioni da un gruppo esistente nella nuova valutazione. Ciò significa che le informazioni aggiunte ai campi Dettagli sull'implementazione e Piano di test e risposta del management dei controlli gestiti dal cliente dalle valutazioni nel gruppo da cui si copia vengono copiate negli stessi controlli (o nei controlli correlati) gestiti dal cliente nella nuova valutazione. Se si aggiunge una nuova valutazione a un gruppo esistente, le informazioni comuni dalle valutazioni in tale gruppo verranno copiate nella nuova valutazione. Per altre informazioni, vedere [Copia di informazioni da valutazioni esistenti](#copying-information-from-existing-assessments).
     
@@ -532,7 +532,7 @@ Come spiegato in precedenza, quando si crea un gruppo di valutazioni, è possibi
   
 È possibile copiare le informazioni seguenti dal cliente a una nuova valutazione:
   
-- Utenti della valutazione. L'utente di una valutazione è un utente assegnato al controllo.
+- Assessment Users. An Assessment user is a user who the control is assigned to.
     
 - Stato, data e risultati del test.
     
@@ -548,7 +548,7 @@ Analogamente vengono sincronizzate le informazioni dai controlli gestiti dal cli
   
 1. Questa sezione mostra le informazioni di riepilogo della valutazione, incluso il nome del gruppo di valutazione, del prodotto, della valutazione e il numero di controlli di valutazione
     
-2. Questa sezione mostra i controlli del filtro di valutazione. Per una spiegazione più dettagliata su come utilizzare i controlli del filtro di valutazione, vedere la sezione [Gestire il processo di valutazione](#managing-the-assessment-process). 
+2. This section shows the Assessment Filter controls. For a more detailed explanation of how to use the Assessment Filter controls see the [Managing the assessment process](#managing-the-assessment-process) section. 
     
 3. Questa sezione mostra i singoli servizi cloud che rientrano nell'ambito della valutazione.
     
@@ -584,19 +584,19 @@ Di seguito viene riportato un elenco delle attività che è possibile eseguire u
     
     - **Risultato del test**: restituisce l'elenco dei controlli con il risultato del test selezionato. 
     
-    Quando si applicano le condizioni del filtro, la vista dei controlli applicabili cambierà per corrispondere alle condizioni del filtro. Espandere le sezioni della famiglia di controllo per mostrare i dettagli del controllo di seguito. 
+    As you apply filter conditions, the view of applicable controls will change to correspond to your filter conditions. Expand the control family sections to show the control details below. 
     
     ![Vista di valutazione di Compliance Manager -Filtro i risultati degli articoli](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
   
-2. Se dopo aver selezionato i filtri desiderati non vengono visualizzati risultati, significa che non ci sono controlli che corrispondono alle condizioni di filtro specificate. Ad esempio, se si seleziona un particolare **Utente assegnato** e si sceglie un nome per il **controllo** che non corrisponde al controllo assegnato a quell'utente, non verrà mostrata nessuna valutazione nella pagina sottostante. 
+2. If after selecting the desired filters no results are shown, that means there are no controls that correspond to the specified filter conditions. For instance, if you select a particular **Assigned User** and then choose a **Control** name that does correspond to the control assigned to that user, no assessments will be shown in the page below. 
     
-3. **Assegnare un'azione a un utente**: è possibile assegnare un'attività a una persona per implementare i requisiti di una certificazione/regolamento o per testare, verificare e documentare i requisiti di implementazione dell'organizzazione. Quando si assegna un'attività, è possibile scegliere di inviare un messaggio di posta elettronica alla persona che contiene dettagli, tra cui le azioni cliente raccomandate e la priorità dell'attività. È inoltre possibile annullare l'assegnazione o riassegnare un'attività a un'altra persona. 
+3. **Assign an Action Item to a user** - You can assign an Action Item to a person to implement the requirements of a certification/regulation, or to test, verify, and document your organization's implementation requirements. When you assign an Action Item, you can choose to send an email to the person that contains details including the recommended Customer Actions and the Action Item priority. You can also unassign or reassign an Action Item to a different person. 
     
 4. **Gestire documenti**I controlli gestiti dal cliente includono anche un punto in cui gestire i documenti correlati all'esecuzione delle attività di implementazione e per l'esecuzione di attività di test e convalida. Chiunque abbia le autorizzazioni per modificare i dati in Compliance Manager può caricare documenti facendo clic su **Gestisci documenti**. Dopo avere caricato un documento, è possibile fare clic su **Gestisci documenti** per visualizzare e scaricare i file. 
     
 5. **Fornire dettagli di implementazione e test**: ogni controllo gestito dal cliente ha un campo modificabile in cui gli utenti possono aggiungere dettagli di implementazione che documentano le misure adottate dalla propria organizzazione per soddisfare i requisiti della certificazione/regolamento e per convalidare e documentare il modo in cui la propria organizzazione soddisfa tali requisiti.
     
-6. **Impostare lo stato**: impostare lo stato di ogni elemento nell'ambito del processo di valutazione. I valori di stato disponibili sono **implementato**, **implementazione alternativa**, **pianificato** e **non in ambito**. 
+6. **Set Status** - Set the Status for each item as part of the assessment process. Available status values are **Implemented**, **Alternative Implementation**, **Planned**, and **Not in Scope**. 
     
 7. **Immettere i dati del test e il risultato del test**La persona con il ruolo di Esperto di Compliance Manager può verificare che siano stati eseguiti test adeguati, rivedere i dettagli di implementazione, il piano di test, i risultati del test e tutte le prove caricate, quindi impostare Data del test e Risultato del test. I valori disponibili per il risultato del test sono **Superato**, **Non superato - Rischio basso**, **Non superato - Rischio medio**, e**Non superato - Rischio alto**. 
 
@@ -604,7 +604,7 @@ Di seguito viene riportato un elenco delle attività che è possibile eseguire u
 
 Le persone coinvolte nel processo di valutazione all'interno dell'organizzazione possono usare il Responsabile Conformità per esaminare i controlli gestiti dal cliente da tutte le valutazioni di cui sono utenti. Quando un utente accede a Responsabile Conformità e apre la dashboard **Azioni**, viene visualizzato un elenco delle attività assegnate all'utente stesso. In base al ruolo di Compliance Manager assegnatogli, l'utente può fornire dettagli relativi all'implementazione o al test, aggiornare lo stato o assegnare attività. 
   
-Poiché i controlli di certificazione sono generalmente implementati da una sola persona e testati da un'altra persona, l'attività di controllo può essere inizialmente assegnata a una persona per l'implementazione e, una volta completata, tale persona può riassegnare l'attività di controllo alla persona successiva per i test di controllo e il caricamento delle evidenze. Questa assegnazione/riassegnazione delle azioni di controllo può essere eseguita da qualsiasi utente che abbia un ruolo di Compliance Manager con autorizzazioni sufficienti e consente la gestione centralizzata delle assegnazioni di controllo o il routing decentralizzato delle attività di controllo, dalla persona che si occupa dell'implementazione a quella che si occupa del test, come appropriato.
+As certification controls are generally implemented by one person and tested by another, the control action item can be initially assigned to one person for implementation, and once that is complete, that person can reassign the control action item to the next person for control testing and uploading of evidence. This assignment/reassignment of control actions can be performed by any users who have a Compliance Manager role with sufficient permissions, allowing for central management of control assignments, or decentralized routing of control action items, from implementer to tester as appropriate.
   
 Per assegnare un'attività:
   
@@ -616,7 +616,7 @@ Per assegnare un'attività:
     
 4. Nella colonna **Utente assegnato**, fare clic su **Assegna**. 
     
-5. Nella finestra di dialogo Assegna attività, fare clic sul campo **Assegna a** per popolare l'elenco degli utenti cui assegnare l'attività. È possibile scorrere l'elenco per individuare l'utente di destinazione o iniziare a digitare nella casella per cercare il nome utente. 
+5. In the Assign Action Item dialog box, click the **Assign To** field to populate the list of users to whom the action can be assigned. You can scroll through the list to find the target user or start typing in the field to search for the username. 
     
 6. Selezionare l'utente per assegnare l'attività.
     
@@ -626,7 +626,7 @@ Per assegnare un'attività:
  
     L'utente riceverà una notifica dell'assegnazione dell'attività e le eventuali note fornite.
     
-Le note associate all'attività sono conservate nella sezione delle note e restano a disposizione per l'assegnazione della successiva attività. Queste note non sono di sola lettura, possono essere modificate, sostituite o rimosse da chi assegna l'attività.
+The notes that are associated with the action item are persisted in the notes section, available for the next time the action item is assigned. These notes are not read-only, can be edited, replaced or removed by the person assigning the action item.
 
 ## <a name="exporting-information-from-an-assessment"></a>Esportazione delle informazioni da una valutazione
 
@@ -640,14 +640,14 @@ Per esportare un report sulla valutazione:
     
 - Se si sta visualizzando la pagina dei dettagli, fare clic sul pulsante **Esporta in Excel** nell'angolo superiore destro della pagina sopra il punteggio di conformità della valutazione.
     
-Il report sulla valutazione verrà scaricato nella sessione del browser in uso. Se non si visualizza un popup con tali informazioni, verificare la cartella di download del browser.
+The assessment report will be downloaded in your browser session. If you don't see a popup informing you of this, you may wish to check your browser's downloads folder.
 
 ## <a name="archiving-an-assessment"></a>Archiviazione della valutazione
 
-Una volta completata una valutazione, se non più necessaria a i fini di conformità, è possibile archiviarla. Quando si archivia una valutazione, questa viene rimossa dal dashboard di valutazione.
+When you have completed an Assessment and no longer need it for compliance purposes, you can archive it. When an Assessment is archived, it is removed from Assessments dashboard.
   
 > [!NOTE]
-> Quando una valutazione viene archiviata, l'operazione non può essere annullata, quindi la valutazione non può essere ripristinata in stato di lettura-scrittura. Si noti che le valutazioni archiviate non mantengono i loro collegamenti alle evidenze caricate, quindi si consiglia vivamente di eseguire un'esportazione della valutazione prima di archiviarla, poiché dal report sulla valutazione esportato sarà possibile accedere ai collegamenti alle evidenze contenute. 
+> When an Assessment is Archived, it cannot be 'unarchived' or restored to a read-write in progress state. Please note that Archived Assessments do not retain their links to uploaded evidence documents, so it is highly recommended that you perform an Export of the Assessment before archiving it, as the exported assessment report will contain links to the evidence documents, enabling you to continue to access them. 
   
 Per archiviare una valutazione:
   
@@ -673,9 +673,9 @@ Durante la visualizzazione di una valutazione archiviata, nessuno dei controlli 
 
 ![Service Trust Portal - Campo di inserimento della ricerca](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina per espandere il campo di inserimento della ricerca, inserire i termini di ricerca e premere Invio. Apparirà il controllo di ricerca, con il termine di ricerca nel campo di inserimento del riquadro di ricerca, quindi i risultati della ricerca appariranno sotto.
+Click the magnifying glass in the upper right-hand corner of the page by to expand the Search input field, enter your search terms and press Enter. The Search control will appear, with the search term in the search pane input field, and search results will appear beneath.
   
-Per impostazione predefinita, la ricerca restituirà i documenti risultanti e tramite l'opzione di filtro degli elenchi a discesa sarà possibile restringere l'elenco dei documenti visualizzati, aggiungere o rimuovere i risultati visualizzati. Per restringere i documenti restituiti in base a servizi cloud specifici, categorie di conformità o procedure di sicurezza, zone del mondo o settori, utilizzare più attributi del filtro contemporaneamente. Fare clic sul collegamento al nome del documento per scaricare il documento.
+By default, Search returns Document results, and you can use the Filter By dropdown lists to refine the list of documents displayed, to add or remove search results from view. You can use multiple filter attributes at the same time to narrow the returned documents to specific cloud services, categories of compliance or security practices, regions of the world, or industries. Click the document name link to download the document.
   
 ![Service Trust Portal - Ricerca in documenti con filtro applicato](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
@@ -688,7 +688,7 @@ Fare clic sul collegamento di Compliance Manager per visualizzare i risultati de
  
 ## <a name="localization-support"></a>Supporto alla localizzazione
 
-Service Trust Portal consente di visualizzare il contenuto della pagina in diverse lingue. Per cambiare la lingua della pagina, basta fare clic sull'icona del globo nell'angolo inferiore sinistro della pagina e selezionare la lingua scelta. 
+Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice. 
   
 ![Service Trust Portal - Opzioni di contenuti localizzati](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
@@ -697,9 +697,9 @@ Service Trust Portal consente di visualizzare il contenuto della pagina in diver
 
 Compliance Manager è progettato per essere aggiornato regolarmente per stare al passo con le modifiche apportate ai requisiti normativi e ai servizi cloud. Tali aggiornamenti includono le modifiche ai controlli gestiti dal cliente. È disponibile un log delle modifiche che consente di comprendere l'impatto delle modifiche, inclusi i dettagli del contenuto aggiunto o modificato e indicazioni per stabilire gli effetti delle modifiche sulle valutazioni esistenti. Generalmente, esistono due tipi di modifiche:
   
-- Una modifica **principale** è una modifica significativa a un'azione del cliente, come l'aggiunta o la rimozione di un controllo o di passaggi numerati specifici oppure un cambiamento nella Guida relativa a responsabilità, elementi consigliati o evidenze. Per le modifiche principali, si consiglia di rivalutare l'implementazione e/o la valutazione del controllo interessato.
+- A **Major** change is a significant change to a Customer Action, such as the addition or removal of a control or specific numbered steps, or a change in the guidance around responsibilities, recommendations, or evidence. For Major changes, we recommend that you re-evaluate your implementation and/or assessment of the affected control.
     
-- Una modifica **secondaria** è una modifica irrilevante a un'azione del cliente, come la correzione di un errore di ortografia o di formattazione oppure l'aggiornamento o la correzione di collegamenti ipertestuali. Le modifiche secondarie in genere non richiedono la rivalutazione del controllo; tuttavia, si consiglia di rivedere l'azione del cliente aggiornata.
+- A **Minor** change is an insignificant change to a Customer Actions, such as fixing a typo or formatting issues, or updating or correcting hyperlinks. Minor changes generally do not require the control to be re-evaluated; however, we do recommend that you review the updated Customer Action.
   
 ### <a name="customer-managed-controls---change-log-for-july-2018"></a>Controlli gestiti dai clienti - Log delle modifiche di luglio 2018
 

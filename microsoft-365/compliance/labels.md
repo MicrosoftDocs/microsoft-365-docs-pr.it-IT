@@ -16,13 +16,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn how retention labels classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365.
-ms.openlocfilehash: 90039930d94de238a784cc4f8cea6463ff4e49b3
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+description: Ottieni informazioni sulle etichette di conservazione che governano i tuoi dati conservando ciò che vuoi tenere, cancellando ciò che non ti serve, e contrassegnando i contenuti come record.
+ms.openlocfilehash: b7797c55c95845b35fc3d67275bf64920fa59574
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761696"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817441"
 ---
 # <a name="learn-about-retention-labels"></a>Informazioni sulle etichette di conservazione
 
