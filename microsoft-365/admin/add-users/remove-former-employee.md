@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Seguire questo elenco di controllo per rimuovere un dipendente da Microsoft 365 e proteggere i dati. '
-ms.openlocfilehash: adf5c683828b30a978199145fa2c54f17d1b6b37
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780578"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844859"
 ---
 # <a name="remove-a-former-employee"></a>Rimuovere un ex dipendente
 
@@ -51,7 +51,7 @@ Guardare un breve video sulla rimozione di un dipendente. <br><br>
 
 Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Per rimuovere un dipendente:
+Per impedire a un dipendente di accedere:
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 

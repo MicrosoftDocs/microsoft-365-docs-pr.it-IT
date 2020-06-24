@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4fc56caa9be59d1a29032ee6e4f32e50918294fe
-ms.sourcegitcommit: 3119b2246001ba06af8264508785352dfb894166
+ms.openlocfilehash: f4e733cf7196668fb1c3d1830ead15c6262a635e
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44820549"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854295"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Novità di Microsoft Threat Protection
 
@@ -30,6 +30,9 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="june-2020"></a>Giugno 2020
+- Feed Twitter <br> Ottenere le ultime ricerche sulla sicurezza, la tecnologia di minacce, le novità del prodotto e altro ancora, direttamente all'interno del dashboard.
+
 ## <a name="february-2020"></a>Febbraio 2020
 - [Eventi imprevisti](incidents-overview.md) <br> Sapere esattamente dove è stato avviato un attacco e altri dettagli che consentono di visualizzare l'entità dell'attacco.
 - [Analisi e risposta alle minacce automatizzate](mtp-autoir.md) <br> L'AIR consente al team delle operazioni di sicurezza di aumentare notevolmente la capacità dell'organizzazione di gestire avvisi e incidenti di sicurezza.

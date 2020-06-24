@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui documenti attendibili in Microsoft 365 E5 o Microsoft 365 E5 Security.
-ms.openlocfilehash: 1861671df5cfa9dab4b57d5fb53af8712a2a64ce
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: c574e28a01dc961d898638184afe9ece90e31133
+ms.sourcegitcommit: aa7f7350d1342ff9713bb840b2cc96d1a4234ef4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811063"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44835352"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documenti attendibili in Microsoft 365 E5
 
@@ -28,9 +28,9 @@ Documenti attendibili è una funzionalità di sicurezza di Microsoft 365 E5 o Mi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Questa funzionalità è disponibile solo per gli utenti che dispongono della licenza di sicurezza Microsoft 365 E5 o Microsoft 365 E5.
+- I documenti attendibili sono ora generalmente disponibili per gli utenti con Office versione 2004 (12730. x) o versioni successive. Questa funzionalità è disattivata per impostazione predefinita e dovrà essere abilitata dall'amministratore della sicurezza.
 
-- I documenti attendibili sono attualmente disponibili per l'anteprima pubblica, disponibili per gli utenti che fanno parte del [programma Office Insider](https://insider.office.com/join) sul canale corrente (Preview) con office versione 2002 (12527,20092) o versioni successive. Questa funzionalità è disattivata per impostazione predefinita e dovrà essere abilitata dall'amministratore della sicurezza.
+- Questa funzionalità è disponibile solo per gli utenti che dispongono della licenza di sicurezza *microsoft 365 E5* o *Microsoft 365 E5* (non inclusa nei piani di Office 365 ATP).
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -40,7 +40,7 @@ Documenti attendibili è una funzionalità di sicurezza di Microsoft 365 E5 o Mi
 
 Per proteggersi, i documenti sicuri inviano i file al cloud di [protezione avanzata delle minacce di Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per l'analisi.
 
-- Informazioni dettagliate su come Microsoft Defender Advanced thread Protection gestisce i dati possono essere trovati [qui](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- Informazioni dettagliate su come Microsoft Defender Advanced Threat Protection gestisce i dati possono essere trovati [qui](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - Oltre alle linee guida sopra riportate, i file inviati dai documenti attendibili non vengono conservati in Defender oltre il tempo necessario per l'analisi, che in genere è inferiore a 24 ore.
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Utilizzare il Centro sicurezza & conformità per configurare i documenti attendibili
@@ -51,7 +51,7 @@ Per proteggersi, i documenti sicuri inviano i file al cloud di [protezione avanz
 
 3. Nella sezione **informazioni su come mantenere la sicurezza per la protezione di un file da aprire visualizzazione protetta esterna in applicazioni di Office** , configurare una delle seguenti impostazioni:
 
-   - **Attiva documenti attendibili per i client di Office (i file verranno anche inviati a Microsoft Cloud per analisi approfondite)**
+   - **Attivazione di documenti attendibili per i client di Office**
 
    - **Consenti agli utenti di fare clic su una visualizzazione protetta anche se i documenti sicuri identificano il file come dannoso**: si consiglia di non abilitare questa opzione.
 
@@ -64,7 +64,7 @@ Per proteggersi, i documenti sicuri inviano i file al cloud di [protezione avanz
 Utilizzare la sintassi seguente:
 
 ```powershell
-Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$false>
+Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
 - Il parametro _EnableSafeDocs_ consente di abilitare o disabilitare i documenti attendibili per l'intera organizzazione.

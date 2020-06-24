@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere gli ospiti a un gruppo di Microsoft 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761663"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854247"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gestire l'accesso guest nei gruppi di Microsoft 365
 
@@ -47,7 +47,7 @@ L'accesso guest nei gruppi è spesso utilizzato come parte di uno scenario più 
 
 Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile farlo nell'interfaccia di amministrazione di Microsoft 365.
 
-1. Nell'interfaccia di amministrazione, passare alla sezione **Impostazioni** \> **organizzazione** e nella scheda **Servizi** , selezionare **gruppi Microsoft 365**.
+1. Nell'interfaccia di amministrazione, andare a **Mostra tutte** le impostazioni \> **Settings** \> **org** impostazioni e nella scheda **Servizi** , selezionare **Microsoft 365 gruppi**.
   
 2. Nella pagina **Microsoft 365 groups** , scegliere se si desidera consentire agli utenti esterni all'organizzazione di accedere alle risorse del gruppo o consentire ai proprietari di gruppi di aggiungere persone esterne all'organizzazione.
 

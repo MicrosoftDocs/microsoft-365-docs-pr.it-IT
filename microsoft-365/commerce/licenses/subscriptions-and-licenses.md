@@ -24,18 +24,20 @@ description: 'Informazioni su abbonamenti e licenze in Microsoft 365 for busines
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f83b2069bd1b4c86e2198252a54ed2e8e5c55a04
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402403"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844681"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Informazioni su abbonamenti e licenze in Microsoft 365 for business
 
 In questo articolo viene illustrata la relazione tra abbonamenti e licenze e vengono fornite informazioni aggiuntive su [chi può assegnare licenze](#find-out-who-can-assign-licenses), [capire cosa succede quando si assegna una licenza a un utente](#understand-what-happens-when-you-assign-a-license-to-someone)e il [numero di dispositivi in cui gli utenti possono installare Office](#how-many-devices-can-people-install-office-on). Include anche collegamenti per [la comprensione delle licenze per le cassette postali non utente](#understand-licenses-for-non-user-mailboxes)e [gli articoli sulla gestione delle licenze](#articles-about-managing-licenses).
   
 Quando si acquista un abbonamento a Microsoft 365 for business, è necessario iscriversi a una serie di applicazioni e servizi pagati su base mensile o annuale. Le applicazioni e i servizi ricevuti come parte dell'abbonamento dipendono dal prodotto acquistato, ad esempio Microsoft 365 Apps for business o Microsoft 365 business standard. È possibile esaminare cosa viene fornito con ogni prodotto nella [pagina Acquista Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
+
+È possibile esaminare diverse opzioni di licenza disponibili in [Microsoft 365 per le aziende di piccole e medie dimensioni](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)
 
 Quando si acquista un abbonamento, occorre specificare il numero di licenze necessario, in base al numero di utenti presenti all'interno dell'organizzazione. Dopo aver completato l'acquisto, è possibile creare gli account per gli utenti e assegnare una licenza a ogni persona. Quando si modificano le esigenze dell'organizzazione, è possibile acquistare altre licenze per accogliere nuove persone o riassegnare le licenze ad altri utenti quando qualcuno lascia la propria azienda. 
 
@@ -44,7 +46,7 @@ Se si hanno più abbonamenti, è possibile assegnare le licenze a utenti diversi
   
 ## <a name="find-out-who-can-assign-licenses"></a>Individuare chi può assegnare licenze
 
-Tipi diversi di amministratori possono usare le licenze in modi diversi, in base al loro ruolo. La tabella seguente elenca le opzioni più comuni. Per un elenco completo dei ruoli e dei privilegi di amministratore, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
 |**Ruolo di amministratore**|**Assegnare una licenza**|**Rimuovere una licenza**|**Acquisto di ulteriori licenze**|**Eliminare un account**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -81,7 +83,7 @@ Se l'abbonamento include uno dei prodotti seguenti, ogni persona può installare
     
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Informazioni sulle licenze per cassette postali non di utenti
 
-Non è necessario assegnare licenze a cassette postali di risorse o sale e cassette postali condivise, tranne quando superano la quota di archiviazione di 50 GB. Per altre informazioni sulle cassette postali non di utenti, vedere gli articoli seguenti:
+You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [Creare una cassetta postale condivisa](../../admin/email/create-a-shared-mailbox.md)
     

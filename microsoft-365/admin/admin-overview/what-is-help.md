@@ -3,11 +3,10 @@ title: Informazioni su come ottenere assistenza nell'interfaccia di amministrazi
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-layout: LandingPage
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Informazioni su tutti i modi in cui è possibile ottenere assistenza tramite l'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: eea5e58ba571cebd7d73202fa8f6c01ba06b8e44
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b10eb75e1a7d02c384c915ad814dddc9f3c6954f
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386770"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844717"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -35,66 +34,11 @@ ms.locfileid: "44386770"
 
 Se sei un amministratore, [admin.Microsoft.com](https://admin.microsoft.com) è il tuo luogo di go-to per gestire e sfruttare al meglio la sottoscrizione Microsoft 365. A volte non è possibile trovare l'attività corretta, è necessario un contesto maggiore prima di avviare un flusso di attività o semplicemente potrebbe non essere sicuro dell'ambito e dell'impatto delle azioni come amministratore. Per coprire tali situazioni, è possibile fornire assistenza moderna e supporto intelligente all'interno dell'interfaccia di amministrazione di Microsoft 365 in questi modi:
 
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Guida integrata</h3>
-                            <p>Guida nell'interfaccia di amministrazione</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#modern-self-help-powered-by-ai">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Assistenza intelligente</h3>
-                            <p>Supporto self-service Powered by AI</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#guides-and-articles">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Guide e articoli</h3>
-                            <p>Contenuto globale sul Web</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
- 
+* **Guida integrata** -guida nell'interfaccia di amministrazione
+
+* **Intelligent Assistance** -self-help Powered by ai
+
+* **Guide e articoli** -contenuto completo sul Web
 
 ## <a name="integrated-help"></a>Guida integrata
 

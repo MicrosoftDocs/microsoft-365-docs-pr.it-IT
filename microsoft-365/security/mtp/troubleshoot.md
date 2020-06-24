@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bbc7d5d434765b94b0b2707605be2edfbbc8e423
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: e19e5758f4d42799c96ecec51fd6295e3da19f9b
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661982"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844919"
 ---
 # <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>Risoluzione dei problemi relativi al servizio Microsoft Threat Protection
 
@@ -44,12 +44,7 @@ Se si utilizza Azure ATP nell'ambiente distribuito ma non è possibile vedere gl
 
 Per altre informazioni, vedere [Integrazione di Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration).
 
-## <a name="is-microsoft-threat-protection-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Microsoft Threat Protection è disponibile per US Government Community Cloud (GCC) o GCC High?
-Al momento non è disponibile.
-
 ## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Dove si trova la pagina impostazioni per l'attivazione del servizio?
 Per abilitare Microsoft Threat Protection, accedere alle **Impostazioni** dal riquadro di spostamento nel centro sicurezza di Microsoft 365. Questo elemento di spostamento è visibile solo se si dispone delle [autorizzazioni e delle licenze prerequisite](mtp-enable.md#check-license-eligibility-and-required-permissions).
-
-## <a name="can-i-use-an-add-on-instead-of-the-required-e5-licenses"></a>È possibile utilizzare un componente aggiuntivo invece delle licenze E5 necessarie?
-Attualmente non sono disponibili componenti aggiuntivi per Microsoft Threat Protection. [Visualizzare i requisiti di licenza](prerequisites.md) 
+ 
 

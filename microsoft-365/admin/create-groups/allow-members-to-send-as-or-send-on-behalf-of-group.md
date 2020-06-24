@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Informazioni su come consentire ai membri di inviare messaggi di posta elettronica come gruppo di Microsoft 365 o di inviare messaggi di posta elettronica per conto di un gruppo di Microsoft 365.
-ms.openlocfilehash: 3a93dda83b10d7c38c8c6e7d8fd484b37df565d0
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 090a5e177ed843c035155cd735e0b7b9560e5631
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780470"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844669"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Consenti ai membri di inviare messaggi o Invia per conto di un gruppo
 
@@ -76,6 +76,9 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
 5. Digitare per cercare o selezionare un utente dall'elenco. Fare clic su **OK** e su **Salva**.
     
     ![Digitare per cercare o selezionare un utente dall'elenco](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    
+> [!NOTE]
+> Per rendere effettive le modifiche, potrebbero essere necessarie fino a due ore.
 
 ## <a name="related-articles"></a>Articoli correlati
 

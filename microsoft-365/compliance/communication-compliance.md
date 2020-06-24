@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 49b5491cb67f447bf8cca1d88aab807c1bf30624
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: d99a2f9a840c3410ad63cb2fb49b64e208e01bb8
+ms.sourcegitcommit: a4a01a0d7600972a41ee6bfac0df282f2ccc9bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208388"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44859036"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
 
@@ -127,11 +127,11 @@ In questo passaggio del flusso di lavoro vengono identificati i requisiti di con
 - **Conformità alle normative**: utilizzare questo modello per creare un criterio per l'analisi delle comunicazioni per i riferimenti ai termini finanziari standard associati agli standard normativi.
 - **Criteri personalizzati**: utilizzare questo modello per configurare i canali di comunicazione specifici, le condizioni di rilevamento individuali e la quantità di contenuto da monitorare e rivedere nell'organizzazione.
 
-### <a name="investigate"></a>Analizzare
+### <a name="investigate"></a>Investigare
 
 In questo passaggio, si esaminano i problemi rilevati come corrispondenti ai criteri di conformità della comunicazione. In questo passaggio sono incluse le azioni seguenti disponibili nel centro conformità di Microsoft 365:
 
-- **Avvisi**: quando un messaggio corrisponde a una condizione di criteri, viene generato automaticamente un avviso. Per ogni avviso, è possibile visualizzare lo stato, la gravità, il tempo rilevato e se viene assegnato un caso e il relativo stato. I nuovi avvisi vengono visualizzati nella Home page conformità comunicazione e nella pagina **avvisi** e sono elencati in ordine di gravità.
+- **Avvisi**: quando un messaggio corrisponde a una condizione di criteri, viene generato automaticamente un avviso. Per ogni avviso, è possibile visualizzare lo stato, la gravità, il tempo rilevato e se viene assegnato un caso avanzato di eDiscovery e il relativo stato. I nuovi avvisi vengono visualizzati nella Home page conformità comunicazione e nella pagina **avvisi** e sono elencati in ordine di gravità.
 - **Gestione dei problemi**: per ogni avviso, è possibile intraprendere azioni investigative per contribuire a correggere il problema rilevato nel messaggio.
 - **Revisione del documento**: durante l'analisi di un problema, è possibile utilizzare diverse visualizzazioni del messaggio per valutare adeguatamente il problema rilevato. Le visualizzazioni includono un riepilogo delle conversazioni, visualizzazioni di solo testo, annotazioni e dettagli della conversazione di comunicazione.
 - Revisione della **cronologia delle attività degli utenti**: visualizzare la cronologia delle attività dei messaggi degli utenti e le azioni di correzione, ad esempio le notifiche e le escalation precedenti, per le corrispondenze di criteri.
@@ -146,7 +146,7 @@ Il passaggio successivo consiste nel correggere i problemi di conformità della 
 - **Notifica all'utente**: spesso gli utenti violano accidentalmente o inavvertitamente un criterio di conformità della comunicazione. È possibile utilizzare la funzionalità Notify per fornire un avviso all'utente e per risolvere il problema.
 - **Escalation a un altro revisore**: a volte, il revisore iniziale di un problema deve essere inserito da altri revisori per contribuire alla risoluzione dell'evento. È possibile inoltrare facilmente i problemi dei messaggi ai revisori in altre aree dell'organizzazione nell'ambito del processo di risoluzione.
 - **Contrassegna come falso positivo**: i messaggi rilevati erroneamente come corrispondenze di criteri di conformità passano occasionalmente al processo di revisione. È possibile contrassegnare questi tipi di avvisi come falsi positivi e risolvere automaticamente il problema.
-- **Creare un caso**: nelle situazioni più gravi potrebbe essere necessario condividere le informazioni di conformità della comunicazione con altri revisori nell'organizzazione. La conformità alla comunicazione è strettamente integrata con altre funzionalità di conformità di Microsoft 365 che consentono di risolvere i rischi end-to-end. L'escalation di un caso di indagine consente di trasferire i dati e la gestione del caso in Advanced eDiscovery in Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rispondenti alle indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro di notifica della conservazione legale. Per ulteriori informazioni sui casi di eDiscovery avanzati, vedere [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+- **Escalation for investigation**: nelle situazioni più gravi, potrebbe essere necessario condividere le informazioni di conformità della comunicazione con altri revisori nell'organizzazione. La conformità alla comunicazione è strettamente integrata con altre funzionalità di conformità di Microsoft 365 che consentono di risolvere i rischi end-to-end. L'escalation di un caso di indagine consente di trasferire i dati e la gestione del caso in Advanced eDiscovery in Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rispondenti alle indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro di notifica della conservazione legale. Per ulteriori informazioni sui casi di eDiscovery avanzati, vedere [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Monitorare
 

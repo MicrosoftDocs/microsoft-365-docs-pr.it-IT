@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Determinare le normative sulla privacy dei dati, gli scenari rilevanti, la preparazione e i tipi di informazioni riservate presenti nell'ambiente Microsoft 365.
-ms.openlocfilehash: 532a6764cd1d21eb5eb0402c3451e320d306dc03
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695186"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854353"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Valutare i rischi per la privacy dei dati e identificare gli elementi sensibili con Microsoft 365
 
@@ -133,7 +133,7 @@ L'esposizione alla privacy dei dati in Microsoft 365 può essere più limitata r
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>Dati relativi ai dipendenti necessari per svolgere le funzioni aziendali quotidiane
 
-Le organizzazioni per natura devono raccogliere dati sui dipendenti per scopi di identità elettronica e HR, in base a ciò che accettano nei contratti con i dipendenti. A condizione che una persona funzioni per una società, in genere non è un problema. L'organizzazione può decidere di applicare meccanismi per impedire agli utenti malintenzionati di exfiltrating o di perdere i dati personali dei dipendenti. 
+Le organizzazioni per natura devono raccogliere dati sui dipendenti per scopi di identità elettronica e HR, in base a ciò che accettano nei contratti con i dipendenti. A condizione che una persona funzioni per una società, in genere non è un problema. L'organizzazione può decidere di applicare meccanismi per impedire agli utenti malintenzionati di exfiltration o di perdere i dati personali dei dipendenti. 
 
 Se una persona lascia una società, le organizzazioni presentano in genere processi, procedure e pianificazioni di conservazione ed eliminazione per la rimozione degli account utente, la disattivazione delle cassette postali e le unità personali e la modifica dello stato dei dipendenti in cose come i sistemi di risorse umane. Per le situazioni in cui è coinvolta una controversia legale, un dipendente o un'altra parte di un'indagine giudiziaria può avere validi motivi per ottenere informazioni sui dati personali archiviati nei sistemi dell'organizzazione. In alcuni casi, tale parte può richiedere che tali dati vengano rimossi o anonimi. 
 
@@ -151,7 +151,7 @@ In genere, i contratti con clienti esterni, partner e le altre entità con cui l
 
 ### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>Dati che l'organizzazione ha riguardo ai consumatori che forniscono informazioni ai servizi online gestiti dall'organizzazione nello scenario B2C
 
-Questa categoria è quella che la maggior parte delle persone pensa per la privacy dei dati, a causa di molte istanze pubbliche di perdita dei dati del cliente. Questo può essere intenzionale, ad esempio una terza parte sotto contratto per il provider o non intenzionale, ad esempio exfiltrated da un attore malintenzionato. La protezione dei dati dei consumatori è uno dei motivi principali per cui l'Unione europea e gli altri hanno emanato queste normative. Le normative sulla privacy dei dati, come GDPR e CCPA, richiedono la pianificazione per:
+Questa categoria è quella che la maggior parte delle persone pensa per la privacy dei dati, a causa di molte istanze pubbliche di perdita dei dati del cliente. Questo può essere intenzionale, ad esempio una terza parte sotto contratto per il provider o non intenzionale, ad esempio exfiltration da un attore malintenzionato. La protezione dei dati dei consumatori è uno dei motivi principali per cui l'Unione europea e gli altri hanno emanato queste normative. Le normative sulla privacy dei dati, come GDPR e CCPA, richiedono la pianificazione per:
 
 - [Elenchi di controllo di conformità](../compliance/gdpr-arc-office365.md) e piani di [azione](../compliance/gdpr-action-plan.md)
 - [Valutazioni dell'impatto sulla protezione dei dati](../compliance/gdpr-data-protection-impact-assessments.md)
@@ -181,7 +181,7 @@ La valutazione di GDPR è costituita da queste sezioni:
 | | |
 |:-------|:-----|
 | Governance | <ol><li>Il criterio di privacy indica in modo esplicito quali informazioni sui dati vengono elaborate? </li><li>Eseguire regolarmente le valutazioni dell'impatto sulla privacy (PIA)? </li><li> È possibile utilizzare uno strumento per gestire le informazioni personali (PI)? </li><li> Si dispone di un'autorità legale per condurre attività commerciali utilizzando dati PI su un determinato individuo? È possibile monitorare il consenso per i dati? </li><li> È possibile monitorare, implementare e gestire i controlli di controllo? È possibile monitorare le perdite di dati? </li></ol>|
-| Eliminazione & notifica | <ol><li>Vengono fornite istruzioni esplicite sulla modalità di accesso ai dati degli utenti? </li><li> Sono stati elaborati processi documentati per la gestione del consenso opt-out? </li><li>   Si dispone di un processo di eliminazione automatizzato per i dati? </li><li>   Si dispone di un processo per convalidare l'identità quando si utilizza un cliente? </li></ol>|
+| Eliminazione e notifica | <ol><li>Vengono fornite istruzioni esplicite sulla modalità di accesso ai dati degli utenti? </li><li> Sono stati elaborati processi documentati per la gestione del consenso opt-out? </li><li> Si dispone di un processo di eliminazione automatizzato per i dati? </li><li>   Si dispone di un processo per convalidare l'identità quando si utilizza un cliente? </li></ol>|
 | Attenuazione dei rischi e sicurezza delle informazioni | <ol><li>È possibile utilizzare gli strumenti per l'analisi dei dati non strutturati? </li><li>Tutti i server sono aggiornati e si sfruttano i firewall per proteggerli? </li><li>Si eseguono backup regolari dei server? </li><li>È possibile monitorare attivamente le perdite di dati? </li><li>I dati vengono crittografati a riposo e in trasmissione? </li></ol>|
 | Gestione dei criteri | <ol><li>In che modo è possibile gestire le regole di Binding Corporate (BCRs)? </li><li>È possibile monitorare il consenso per i dati? </li><li> In base a una scala da 1 a 5, il livello di copertura dei contratti di classificazione dei dati e i requisiti di gestione sono tutti di 5. </li><li>È necessario testare periodicamente un piano di risposta per gli incidenti? </li><li>Quali criteri è possibile utilizzare per gestire l'accesso? </li></ol>|
 |||
@@ -190,7 +190,7 @@ La valutazione di GDPR è costituita da queste sezioni:
 
 Questo passaggio implica l'identificazione di particolari tipi di informazioni riservate soggette a controlli normativi specifici, nonché la loro presenza nell'ambiente Microsoft 365. 
 
-La ricerca di contenuti nell'ambiente che contengono personale può essere un'attività formidabile, che in precedenza comporta una combinazione di utilizzo della ricerca di conformità, eDiscovery, Advanced eDiscovery DLP e auditing. 
+La ricerca di contenuti nell'ambiente che contengono personale può essere un'attività formidabile, che implica una combinazione di utilizzo di ricerca di conformità, eDiscovery, Advanced eDiscovery, DLP e auditing. 
 
 Con la nuova soluzione di **classificazione dei dati** nell'interfaccia di amministrazione di Microsoft Compliance, è molto più semplice con la funzionalità [Content Explorer](../compliance/data-classification-content-explorer.md) , che funziona con i tipi di informazioni riservate o personalizzati incorporati, inclusi quelli relativi ai dati personali.
  
@@ -212,7 +212,7 @@ Per ulteriori informazioni, vedere gli articoli seguenti:
 - [Tipi di informazioni sensibili personalizzati](../compliance/custom-sensitive-info-types.md)
 - [Creare un tipo di informazione sensibile personalizzato nel Centro sicurezza e conformità](../compliance/create-a-custom-sensitive-information-type.md)
 - [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Creare tipi di informazioni riservate personalizzate con classificazione esatta basata sulla corrispondenza dei dati](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Esplora contenuto
 

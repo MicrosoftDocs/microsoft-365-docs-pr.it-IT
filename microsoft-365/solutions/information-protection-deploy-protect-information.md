@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Distribuire le funzionalità di sicurezza e conformità di Microsoft 365 e proteggere le informazioni personali.
-ms.openlocfilehash: 5a6cc6645be6cad4d901922c0a257d2175c85341
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695150"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844693"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteggere le informazioni soggette alla normativa sulla privacy dei dati
 
@@ -283,11 +283,8 @@ Dopo aver determinato questi elementi, è possibile utilizzare i tipi di informa
 
 ![Esempio di etichette di riservatezza che utilizzano DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-<!--
+[Visualizzazione di una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
-
--->
 Ecco alcuni scenari di protezione dei dati che utilizzano le etichette DLP e sensitivity insieme come mostrato nella figura.
 
 | Scenario | Procedura |

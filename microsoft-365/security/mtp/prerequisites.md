@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: c64adf870d3669b983e11093196f59c82b1f59e0
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773852"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844907"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Prerequisiti di Microsoft Threat Protection
 
@@ -60,7 +60,7 @@ Accedere a Microsoft 365 Admin Center ([admin.Microsoft.com](https://admin.micro
 > Per poter visualizzare le informazioni sulla licenza, è necessario essere assegnati al ruolo di **amministratore di fatturazione** o **lettore globale** [in Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) . Se si verificano problemi di accesso, rivolgersi a un amministratore globale.
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
-Per l'elenco dei ruoli necessari e per la modalità di regolamentazione dell'accesso ai dati, leggere informazioni sulla [gestione dell'accesso a Microsoft Threat Protection](mtp-permissions.md).
+Per abilitare Microsoft Threat Protection, è necessario essere un amministratore **globale** o un **amministratore della sicurezza** in Azure Active Directory. Per l'elenco dei ruoli necessari per l'utilizzo di Microsoft Threat Protection e informazioni su come l'accesso ai dati è regolato, leggere informazioni sulla [gestione dell'accesso a Microsoft Threat Protection](mtp-permissions.md).
 
 ## <a name="browser-requirements"></a>Requisiti per il browser
 Accedere a Microsoft Threat Protection nel centro sicurezza Microsoft 365 utilizzando Microsoft Edge, Internet Explorer 11 o qualsiasi Web browser compatibile con HTML 5.

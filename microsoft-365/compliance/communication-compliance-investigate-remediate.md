@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5bda1556b5726c6e94a6860c7c57f3f7082f2f5e
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: ef4ec85e6e242cd825d3b789d15d77adfc378d19
+ms.sourcegitcommit: a4a01a0d7600972a41ee6bfac0df282f2ccc9bd8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717317"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44859046"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità delle comunicazioni
 
@@ -116,6 +116,6 @@ Indipendentemente dal punto in cui si inizia a esaminare gli avvisi o il filtro 
     - **Tag As**: contrassegnare il messaggio come *conforme*, *non conforme*o come *discutibile* in relazione ai criteri e agli standard per l'organizzazione. L'aggiunta di tag e commenti di tagging può aiutare a filtrare gli avvisi per i criteri per le escalation o come parte di altri processi di revisione interni. Dopo aver completato il tagging, è anche possibile scegliere di risolvere il messaggio per spostarlo fuori dalla coda di revisione in sospeso.
     - **Notify**: è possibile utilizzare il controllo **Notify** per assegnare un modello di avviso personalizzato all'avviso e per inviare un avviso all'utente. Scegliere il modello di avviso appropriato e quindi fare clic su **Invia** alla posta elettronica un promemoria per il dipendente che ha inviato il messaggio e per risolvere il problema.
     - **Escalation**: se si utilizza il controllo **escalation** , è possibile scegliere chi altro nell'organizzazione deve esaminare il messaggio. Scegliere da un elenco di revisori configurati nel criterio di conformità della comunicazione per inviare una notifica tramite posta elettronica che richiede ulteriori riesami dell'avviso del messaggio. Il revisore selezionato può utilizzare un collegamento nella notifica di posta elettronica per passare direttamente agli elementi che sono stati escalati per la revisione.
-    - **Creare un caso**: utilizzando il controllo **Create a case** , è possibile creare un nuovo [caso di eDiscovery avanzato](overview-ediscovery-20.md) per singoli o più messaggi. Verranno forniti un nome e note per il nuovo caso e l'utente che ha inviato il messaggio che corrisponde al criterio viene automaticamente assegnato come custode del caso. Non sono necessarie ulteriori autorizzazioni per gestire il caso. La creazione di un caso non risolve o crea un nuovo tag per il messaggio.
+    - **Escalation for investigation**: using the **escalation for investigation** Control, è possibile creare un nuovo [caso di Advanced eDiscovery](overview-ediscovery-20.md) per singoli o più messaggi. Verranno forniti un nome e note per il nuovo caso e l'utente che ha inviato il messaggio che corrisponde al criterio viene automaticamente assegnato come custode del caso. Non sono necessarie ulteriori autorizzazioni per gestire il caso. La creazione di un caso non risolve o crea un nuovo tag per il messaggio. È possibile selezionare un totale di 100 messaggi durante la creazione di un caso avanzato di eDiscovery durante il processo di correzione. Sono supportati i messaggi in tutti i canali di comunicazione controllati dalla conformità di comunicazione. Ad esempio, è possibile selezionare 50 chat di Microsoft teams, 25 messaggi di posta elettronica di Exchange Online e 25 messaggi di Yammer quando si apre un nuovo caso avanzato di eDiscovery per un utente.
 
 4. **Determinare se i dettagli dei messaggi devono essere archiviati all'esterno della conformità di comunicazione**: i dettagli del messaggio possono essere esportati o scaricati se è necessario archiviarli in una soluzione di archiviazione separata. Se si seleziona il controllo **download** , vengono aggiunti automaticamente i messaggi selezionati a un. File ZIP che può essere salvato nello spazio di archiviazione all'esterno di Microsoft 365.
