@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Informazioni sulle diverse risorse disponibili per distribuire Microsoft 365 per le aziende nell'organizzazione.
-ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: c076a3f96c7943d9e37c2d5bd7d6ce17d27ca3d6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268334"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819329"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuire Microsoft 365 per le aziende
 
@@ -59,7 +59,7 @@ Per distribuire autonomamente Microsoft 365 per le aziende, è possibile:
 
   **Organizzazioni di dimensioni inferiori o nuove** possono seguire le fasi per creare l’infrastruttura in modo metodico.
 
-  Tuttavia, è possibile distribuire le fasi o porzioni di fasi di questa infrastruttura nell'ordine preferito, [una dopo l'altra o in parallelo](deployment-strategies-microsoft-365-enterprise.md), per integrarle con l'infrastruttura corrente, adattarle alle risorse e ai piani IT, e soddisfare le esigenze aziendali. Per una distribuzione semplificata per le organizzazioni non, fare clic [qui](deploy-foundation-infrastructure-non-enterprises.md).
+  Tuttavia, è possibile distribuire le fasi o porzioni di fasi di questa infrastruttura nell'ordine preferito, [una dopo l'altra o in parallelo](deployment-strategies-microsoft-365-enterprise.md), per integrarle con l'infrastruttura corrente, adattarle alle risorse e ai piani IT, e soddisfare le esigenze aziendali. Per una distribuzione semplificata ideale per organizzazioni di portata non aziendale, visitare [infrastruttura di base per contesti non aziendali](deploy-foundation-infrastructure-non-enterprises.md).
 
   **Se si ha un'organizzazione aziendale**, visualizzare le fasi come livelli dell'infrastruttura IT invece di un percorso definito, e determinare la strategia migliore per ottenere una finale conformità ai requisiti per ogni livello all'interno dell'organizzazione.
 
@@ -71,7 +71,7 @@ Ecco la relazione tra l'infrastruttura di base e i carichi di lavoro.
 
 I carichi di lavoro operano al di sopra dell'infrastruttura di base. Tuttavia non occorre disporre di tutte le fasi dell'infrastruttura di base completate per iniziare a usare i carichi di lavoro per la produttività e la collaborazione.
 
-Iniziare in maniera autonoma il percorso di distribuzione end-to-end [qui](deploy-foundation-infrastructure.md).
+Inizia il tuo viaggio verso la distribuzione end-to-end su [Microsoft 365 per le infrastrutture di base per le aziende](deploy-foundation-infrastructure.md).
 
 ## <a name="take-a-test-drive"></a>Eseguire un test drive
 

@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Informazioni sui tipi di gruppi che è possibile usare.
-ms.openlocfilehash: b81bb09efedc503b49d2ed4aa10b1e7153116f14
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388030"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780458"
 ---
 # <a name="compare-groups"></a>Confrontare i gruppi
 
 Nella sezione **Gruppi** dell'interfaccia di amministrazione di Microsoft 365 è possibile gestire questi tipi di gruppi: 
 
-- **I gruppi di Microsoft 365** vengono usati per la collaborazione tra gli utenti, sia all'interno che all'esterno dell'azienda.
+- **I gruppi di Microsoft 365** (noti in precedenza come “gruppi di Office 365”) vengono usati per la collaborazione tra gli utenti, sia all’interno che all’esterno dell’azienda.
 - **I gruppi di distribuzione** vengono usati per inviare notifiche a un gruppo di persone.
 - **I gruppi di sicurezza** vengono usati per concedere l'accesso a risorse come i siti di SharePoint.
 - **I gruppi di sicurezza abilitati alla posta elettronica** vengono usati per concedere l'accesso a risorse come SharePoint e per inviare notifiche a tali utenti tramite posta elettronica.
@@ -81,4 +81,4 @@ Attualmente non è possibile eseguire la migrazione di una cassetta postale cond
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Informazioni sui gruppi di Microsoft 365](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Informazioni sui gruppi di Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

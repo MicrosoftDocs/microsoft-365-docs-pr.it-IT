@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono scoprire come rimuovere gli utenti dal portale Utenti con restrizioni in Office 365. Gli utenti vengono aggiunti al portale Utenti con restrizioni se hanno inviato posta indesiderata in uscita, in genere in seguito a una compromissione dell'account.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9e28550c67e20466b18b17d8b49fb1b68997cc4
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 43312ee6eff9b56ac4faf8173666a1ba79b9e067
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617363"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726735"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Rimuovere utenti bloccati dal portale Utenti con restrizioni in Office 365
 
@@ -42,7 +42,17 @@ Gli amministratori possono rimuovere gli utenti dal portale Utenti con restrizio
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per rimuovere utenti dal portale Utenti con restrizioni è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore della sicurezza**. Per l'accesso in sola lettura al portale Utenti con restrizioni, è necessario essere un membro del gruppo di ruoli **Ruolo con autorizzazioni di lettura per la sicurezza**. Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+- È necessario disporre delle autorizzazioni per eseguire le procedure di questo argomento:
+
+  - Per rimuovere utenti dal portale Utenti con restrizioni è necessario essere membri di uno dei seguenti gruppi di ruoli:
+
+    - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+    - **Gestione organizzazione** o **Gestione igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Per l’accesso in sola lettura al portale Utenti con restrizioni, è necessario essere membri di uno dei seguenti gruppi di ruoli:
+
+    - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+    - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Un mittente che supera i limiti di posta elettronica in uscita è un indicatore di account compromesso. Prima di rimuovere l'utente dal portale Utenti con restrizioni, assicurarsi di seguire i passaggi necessari per riprendere il controllo dell'account. Per altre informazioni, vedere [Rispondere a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md).
 
