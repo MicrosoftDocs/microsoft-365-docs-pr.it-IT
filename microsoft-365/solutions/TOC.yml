@@ -19,12 +19,12 @@
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: Passaggio 2. Fornire l'accesso remoto
           href: empower-people-to-work-remotely-remote-access.md
-        - name: Passaggio 3. Distribuire la gestione endpoint
+        - name: Passaggio 3. Distribuire sicurezza e conformità
+          href: empower-people-to-work-remotely-security-compliance.md
+        - name: Passaggio 4. Distribuire la gestione endpoint
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: Passaggio 4. Distribuire le app e i servizi per la produttività
+        - name: Passaggio 5. Distribuire le app e i servizi per la produttività
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: Passaggio 5. Creare spazi di comunicazione
-          href: empower-people-to-work-remotely-communication-venues.md
         - name: Passaggio 6. Formare i lavoratori remoti
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Proteggere la collaborazione con Microsoft 365
@@ -139,6 +139,8 @@
           href: contoso-case-study-solutions.md
         - name: Team isolato per un progetto interno
           href: contoso-team-for-top-secret-project.md
+        - name: Migrazione delle opzioni vocali di Teams
+          href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Guide all'ambiente di test
       items:
         - name: Guide all'ambiente di test per soluzioni e scenari

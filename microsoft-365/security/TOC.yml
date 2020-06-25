@@ -69,29 +69,20 @@
               href: mtp/setup-mtpeval.md
             - name: Configurare ed eseguire l'onboarding
               href: mtp/config-mtpeval.md
-            - name: Attivare Microsoft Threat Protection
-              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
+            - name: Avviare il servizio Microsoft Threat Protection
+              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: Generare un avviso di test
               href: mtp/generate-test-alert.md
         - name: Procedure
           items:
             - name: Creare un ambiente per i laboratori di valutazione
               href: mtp/mtp-evaluation.md
-              items:
-                - name: Preparazione
-                  href: mtp/prepare-mtpeval.md
-                - name: Configurazione
-                  href: mtp/setup-mtpeval.md
-                - name: Configurare ed eseguire l'onboarding
-                  href: mtp/config-mtpeval.md
-                - name: Attivare Microsoft Threat Protection
-                  href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
-                - name: Generare un avviso di test
-                  href: mtp/generate-test-alert.md
             - name: Distribuire i servizi supportati
               href: mtp/deploy-supported-services.md
             - name: Attivare Microsoft Threat Protection
               href: mtp/mtp-enable.md
+            - name: Attivare le domande frequenti
+              href: mtp/mtp-enable-faq.md
             - name: Eventi imprevisti
               items:
                 - name: Panoramica
@@ -196,14 +187,10 @@
                       href: mtp/custom-detections-overview.md
                     - name: Creare e gestire regole di rilevamento
                       href: mtp/custom-detection-rules.md
-            - name: Secure Score
+            - name: Microsoft Secure Score
               items:
-                - name: Secure Score (nuovo)
-                  href: mtp/microsoft-secure-score-new.md
-                - name: Secure Score (iterazione precedente)
+                - name: Panoramica su Secure Score
                   href: mtp/microsoft-secure-score.md
-                - name: Secure Score (anteprima)
-                  href: mtp/microsoft-secure-score-preview.md
                 - name: Novità in arrivo
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Report
@@ -324,6 +311,8 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco mittenti bloccati
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+                - name: Gestire URL e file nell'elenco di tenant consentiti/bloccati
+                  href: ./office-365-security/tenant-allow-block-list.md
             - name: Protezione anti-phishing
               href: ./office-365-security/anti-phishing-protection.md
               items:
