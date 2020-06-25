@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Questo articolo offre informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365.
-ms.openlocfilehash: b567be8df8d0b9dc96400627c6607560fefd9c39
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159480"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874895"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -40,7 +40,7 @@ Questo scenario include:
 
 Alcune delle opzioni descritte in questo articolo richiedono che i guest abbiano un account in Azure Active Directory. Per fare in modo che gli utenti guest siano inclusi nella directory quando si condividono con loro file e cartelle, usare l'[anteprima dell'integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
 
-Si noti che in questo articolo non verranno illustrate le impostazioni per l'abilitazione della condivisione guest. Per informazioni dettagliate su come abilitare la condivisione guest per scenari diversi, vedere [Collaborare con utenti esterni all'organizzazione](https://docs.microsoft.com/Office365/Enterprise/collaborate-with-people-outside-your-organization).
+Si noti che in questo articolo non verranno illustrate le impostazioni per l'abilitazione della condivisione guest. Per informazioni dettagliate su come abilitare la condivisione guest per scenari diversi, vedere [Collaborare con utenti esterni all'organizzazione](collaborate-with-people-outside-your-organization.md).
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>Configurare l'autenticazione a più fattori per gli utenti guest
 

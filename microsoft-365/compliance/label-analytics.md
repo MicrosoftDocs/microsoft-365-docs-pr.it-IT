@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dopo aver creato le etichette di conservazione e le etichette di riservatezza, è opportuno verificare l'utilizzo nel tenant. Con Analisi delle etichette, disponibile nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365, è possibile visualizzare rapidamente le etichette usate più di frequente e sapere dove vengono applicate.
-ms.openlocfilehash: 3905b868ec3815fd9bf63ca131a20ceb1034f2c7
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.custom:
+- seo-marvel-apr2020
+description: Informazioni su come visualizzare rapidamente le etichette di conservazione e di riservatezza usate più di frequente, e su dove vengono applicate.
+ms.openlocfilehash: 89ccdce54b0d7e6146260037b8dcb085631b408e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231989"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817505"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Visualizzare l'utilizzo delle etichette con Analisi delle etichette
 
