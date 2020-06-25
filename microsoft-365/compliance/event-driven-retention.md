@@ -15,37 +15,41 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Con le etichette di conservazione, si può basare un periodo di conservazione sul momento in cui si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e a tutto il contenuto in cui è applicata un'etichetta per quel tipo di evento vengono applicate le azioni di conservazione dell'etichetta. La conservazione basata su eventi viene usata generalmente nell'ambito di un processo di gestione dei record.
-ms.openlocfilehash: 00bc5b44a23dfd08eb56fd7b1f6577bf8411003d
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-may2020
+- seo-marvel-jun2020
+description: In genere, nell’ambito di una soluzione di gestione dei record, è possibile configurare un’etichetta di conservazione per avviare il periodo di conservazione in base a un evento identificato.
+ms.openlocfilehash: 1e716cc886e8378308054d4f2eedf961045f4486
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053884"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817805"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Quando si conserva il contenuto, il periodo di conservazione si basa spesso sull'età del contenuto: ad esempio, è possibile conservare i documenti per sette anni dopo la loro creazione e quindi eliminarli. Tuttavia, con le etichette di conservazione in Microsoft 365, è possibile basare un periodo di conservazione su quando si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e tutto il contenuto con un'etichetta di conservazione applicata per quel tipo di evento riceve le azioni di conservazione dell'etichetta applicate su di esso.
+When you retain content, the retention period is often based on the age of the content - for example, you might retain documents for seven years after they're created and then delete them. But with retention labels in Microsoft 365, you can also base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them.
   
 Ad esempio, è possibile usare etichette con conservazione basata su eventi per:
   
-- **Dipendenti che lasciano l'organizzazione.** Si supponga che i documenti dei dipendenti debbano essere conservati per 10 anni dal momento in cui un dipendente lascia l'organizzazione. Trascorsi 10 anni, tutti i documenti relativi all'assunzione, alle prestazioni e alla cessazione di tale dipendente devono essere smaltiti. L'evento che attiva il periodo di conservazione di 10 anni è il dipendente che lascia l'organizzazione. 
+- **Employees leaving the organization** Suppose that employee records must be retained for 10 years from the time an employee leaves the organization. After 10 years elapse, all documents related to the hiring, performance, and termination of that employee need to be disposed. The event that triggers the 10-year retention period is the employee leaving the organization. 
     
-- **Scadenza contratto** Si supponga che tutti i record relativi ai contratti debbano essere conservati per cinque anni dal momento in cui scade il contratto. L'evento che fa scattare il periodo di conservazione di cinque anni è la scadenza del contratto. 
+- **Contract expiration** Suppose that all records related to contracts need to be retained for five years from the time the contract expires. The event that triggers the five-year retention period is the expiration of the contract. 
     
-- **Durata del prodotto** L'organizzazione potrebbe avere requisiti di conservazione relativi all'ultima data di produzione dei prodotti per i contenuti, come le specifiche tecniche. In questo caso, l'ultima data di produzione è l'evento che attiva il periodo di conservazione. 
+- **Product lifetime** Your organization might have retention requirements related to the last manufacturing date of products for content such as technical specifications. In this case, the last manufacturing date is the event that triggers the retention period. 
     
-La conservazione basata su eventi viene generalmente utilizzata come parte di un processo di gestione dei record. Ciò significa che:
+Event-driven retention is typically used as part of a records-management process. This means that:
   
-- Anche le etichette basate sugli eventi solitamente classificano il contenuto come un record. Per ulteriori informazioni, vedere [Utilizzo di Ricerca contenuto per trovare tutto il contenuto con un'etichetta di conservazione specifica applicata](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
+- Labels based on events also usually classify content as a record. For more information, see [Using Content Search to find all content with a specific retention label applied to it](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
     
 - Un documento che è stato dichiarato come record ma il cui trigger di evento non è ancora stato eseguito viene conservato a tempo indeterminato (i record non possono essere eliminati in modo permanente) finché un evento non attiva il periodo di conservazione di quel documento.
     
-- Le etichette di conservazione basate su eventi di solito attivano una revisione per l'eliminazione alla fine del periodo di conservazione, in modo che un Record Manager possa esaminare e eliminare manualmente il contenuto. Per ulteriori informazioni, vedere [Eliminazione dei contenuti](disposition.md).
+- Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, see [Disposition of content](disposition.md).
     
-Un'etichetta di conservazione basata su un evento ha le stesse funzionalità di qualsiasi etichetta di conservazione in Microsoft 365. Per ulteriori informazioni, vedere [Panoramica delle etichette](labels.md).
+Un’etichetta basata su un evento ha le stesse funzionalità di qualsiasi etichetta in Microsoft 365. Per altre informazioni, vedere [Informazioni sulle etichette di conservazione](labels.md).
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Informazioni sulla relazione tra tipi di eventi, etichette, eventi e ID delle risorse
 
@@ -59,17 +63,17 @@ Per usare correttamente la conservazione basata su eventi, è importante compren
     
 2. Gli utenti (in genere i responsabili dei record) applicano queste etichette di conservazione al contenuto e (per i documenti di SharePoint e OneDrive) immettono un ID risorsa per ogni elemento. In questo esempio l'ID risorsa è un codice o nome del prodotto usato dall'organizzazione. In questo modo, ai record di ogni prodotto viene assegnata un'etichetta di conservazione e ogni record ha una proprietà che contiene un ID risorsa. Il diagramma rappresenta **tutto il contenuto** per tutti i record dei prodotti in un'organizzazione e ogni elemento contiene l'ID risorsa del prodotto a cui appartiene il record. 
     
-3. La durata del prodotto è il tipo di evento; un prodotto specifico che raggiunge la fine del ciclo di vita è un evento. Quando si verifica un evento di quel tipo (in questo caso, quando un prodotto raggiunge la fine del suo ciclo di vita), si crea un evento che specifica:
+3. Product Lifetime is the event type; a specific product reaching end of life is an event. When an event of that event type occurs - in this case, when a product reaches its end of life - you create an event that specifies:
     
   - Un ID risorsa (per i documenti di SharePoint e OneDrive)
     
-  - Parole chiave (per gli articoli di Exchange). In questo esempio, l'organizzazione utilizza un codice prodotto nei messaggi contenenti i record del prodotto, pertanto la parola chiave per gli elementi di Exchange è uguale all'ID risorsa per i documenti di SharePoint e OneDrive.
+  - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is the same as the asset ID for SharePoint and OneDrive documents.
     
-  - La data in cui si è verificato l'evento. Questa data viene utilizzata come inizio del periodo di conservazione. Questa data può essere la data attuale, una futura o una passata.
+  - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
     
 4. Dopo aver creato un evento, la data dell'evento viene sincronizzata con tutto il contenuto che ha un'etichetta di conservazione di quel tipo di evento e che contiene la parola chiave o l'ID risorsa specificato. Come qualsiasi etichetta di conservazione, la sincronizzazione può richiedere fino a 7 giorni. Come mostrato nel diagramma precedente, questo evento ha attivato il periodo di conservazione di tutti gli elementi cerchiati in rosso. In altre parole, quando il prodotto raggiunge la fine del ciclo di vita, questo evento attiva il periodo di conservazione per i record del prodotto.
     
-È importante tenere presente che se per un evento non si specificano le parole chiave o un ID risorsa, **l'evento attiverà il periodo di conservazione di ogni contenuto** con un'etichetta di conservazione corrispondente a quel tipo di evento. Nel diagramma precedente, ad esempio, verrebbe avviata la conservazione di tutto il contenuto. Questo potrebbe non essere il risultato previsto. 
+È importante tenere presente che se non si specificano parole chiave o un ID risorsa per un evento, l’evento attiverà il periodo di conservazione di **tutti i contenuti** con un'etichetta relativa a quel tipo di evento. Nel diagramma precedente, ad esempio, verrebbe avviata la conservazione di tutto il contenuto. Questo potrebbe non essere il risultato previsto. 
   
 Tenere infine presente che ogni etichetta di conservazione ha le proprie impostazioni di conservazione. In questo esempio, queste specificano tutte 10 anni ma un evento può attivare etichette con diversi periodi di conservazione.
   
@@ -80,13 +84,13 @@ Flusso di lavoro di alto livello per la conservazione basata su eventi:
 ![Diagramma del flusso di lavoro per la configurazione di conservazione basata su eventi](../media/event-based-retention-process.png)
   
 > [!TIP]
-> Vedere [Gestire il ciclo di vita dei documenti di SharePoint con etichette di conservazione](auto-apply-retention-labels-scenario.md) per uno scenario dettagliato sull'uso delle proprietà gestite in SharePont per applicare automaticamente etichette di conservazione e implementare la conservazione basata su eventi.
+> Vedere [Gestire il ciclo di vita dei documenti di SharePoint con le etichette di conservazione](auto-apply-retention-labels-scenario.md) per uno scenario dettagliato sull'uso delle proprietà gestite in SharePoint per applicare automaticamente etichette di conservazione e implementare la conservazione basata su eventi.
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Passaggio 1: creare un'etichetta il cui periodo di conservazione sia basato su un evento
 
-Nel riquadro di spostamento sinistro del Centro conformità Microsoft 365, del Centro sicurezza Microsoft 365 &amp; scegliere **Classificazione** > **Etichette di conservazione** >  scheda **Etichette** > **Crea un’etichetta**.
+Nel pannello di navigazione sinistro del Centro conformità di Microsoft 365, selezionare **Governance delle informazioni** > **Etichette** > **Crea un’etichetta**. Se **Governance delle informazioni** non compare nel pannello di navigazione, scorrere in basso e selezionare **Mostra tutto**.
   
-Quando si crea l'etichetta, attivare la conservazione, quindi scegliere l'opzione mostrata di seguito per conservare o eliminare il contenuto in base a un evento. Ciò significa che le impostazioni di conservazione non avranno effetto fino al Passaggio 5, quando verrà creato un evento nella pagina **Eventi**. 
+When you create the label, turn on retention, and then choose the option shown below to retain or delete the content based on an event. This means that the retention settings won't go into effect until Step 5, when you create an event on the **Events** page. 
   
 La conservazione basata su eventi viene generalmente usata per i contenuti classificati come record. Per questo motivo, quando si creano etichette di conservazione basate su un evento, in genere, si sceglie l'opzione **Usare l'etichetta per classificare il contenuto come "Record"**.
   
@@ -100,7 +104,7 @@ Inoltre, la conservazione basata su eventi richiede impostazioni di conservazion
   
 ### <a name="step-2-choose-an-event-type-for-that-label"></a>Passaggio 2: scegliere un tipo di evento per l'etichetta
 
-Nelle impostazioni dell'etichetta, dopo aver scelto l'opzione per basare l'etichetta su **un evento**, verrà visualizzata l'opzione **Scegli un tipo di evento**. Un tipo di evento è semplicemente una descrizione generale di un evento a cui si desidera associare un'etichetta.
+Nelle impostazioni dell’etichetta, dopo avere selezionato l’opzione per basare l’etichetta su **un evento**, sarà presente l’opzione **Scegliere un tipo di evento**. Un tipo di evento è semplicemente una descrizione generale di un evento a cui si vuole associare un’etichetta.
   
 Ad esempio, se si crea un tipo di evento denominato Durata del prodotto, verranno create le etichette di conservazione basate su eventi con i nomi che descrivono i tipi di contenuti a cui si desidera applicare le etichette, ad esempio "File di sviluppo prodotto" o "Record decisione prodotto aziendale".
   
@@ -108,17 +112,23 @@ Una volta scelto un tipo di evento e creata l'etichetta di conservazione, il tip
   
 ![Opzioni per creare o scegliere un tipo di evento](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
-### <a name="step-3-publish-the-event-based-retention-labels"></a>Passaggio 3: pubblicare le etichette di conservazione basate su eventi
+### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Passaggio 3: pubblicare o applicare automaticamente le etichette di conservazione basate su eventi
 
-Pubblicare le etichette di conservazione basate su eventi, in modo che possano essere applicate manualmente ai contenuti. Non è possibile selezionare un'etichetta di conservazione basata su eventi per un criterio di applicazione automatica. 
+Come per qualsiasi etichetta di conservazione, è necessario [pubblicare o applicare automaticamente](create-retention-labels.md) un'etichetta basata su eventi perché venga applicata manualmente o automaticamente al contenuto.
 
-Per pubblicare le etichette di conservazione basate su eventi, passare alla pagina **Classificazione** > **Etichette di conservazione**.
-  
-![Opzioni per pubblicare o applicare automaticamente un'etichetta di conservazione](../media/options-to-publish-auto-apply-retention-label.png)
+> [!NOTE]
+> Se si seleziona un'etichetta di conservazione basata su eventi dalla scheda **Gestione record** > **Piano file** o dalla scheda **Governance dei dati** > **Etichette**, il pulsante **Applica automaticamente un'etichetta** non sarà disponibile.
+> 
+> Anziché questo pulsante, usare l'opzione **Applica automaticamente un'etichetta** sopra l'elenco di etichette o criteri da una delle posizioni seguenti:
+> - Scheda **Gestione record** > **Criteri etichetta**
+> - Scheda **Governance dati** > **Etichette** o scheda **Criteri etichette**
+
+
+![Opzioni per pubblicare o applicare automaticamente un'etichetta di conservazione](..\media\compliance-information-governance-publish-labels.png)
 
 ### <a name="step-4-enter-an-asset-id"></a>Passaggio 4: immettere un ID risorsa
 
-Dopo aver applicato al contenuto un'etichetta basata sugli eventi, è possibile immettere un ID risorsa per ogni elemento. Ad esempio, la propria organizzazione potrebbe utilizzare:
+After an event-driven label is applied to content, you can enter an asset ID for each item. For example, your organization might use:
   
 - Codici prodotto da utilizzare per conservare i contenuti solo per un prodotto specifico.
     
@@ -126,13 +136,13 @@ Dopo aver applicato al contenuto un'etichetta basata sugli eventi, è possibile 
     
 - ID dipendente da utilizzare per conservare i contenuti solo per una persona specifica.
     
-Tenere presente che un ID risorsa è solo un'altra proprietà del documento in SharePoint e OneDrive for Business. L'organizzazione potrebbe usare già altre proprietà del documento e altri ID per classificare il contenuto. In questo caso, è possibile usare anche quelle proprietà e quei valori quando si crea l'evento (vedere il passaggio 6 di seguito). L'aspetto importante è che l'organizzazione deve usare una certa combinazione proprietà:valore nelle proprietà del documento per associare l'elemento a un tipo di evento.
+Tenere presente che un ID risorsa è solo un'altra proprietà del documento in SharePoint e OneDrive for Business. L’organizzazione potrebbe usare già altre proprietà del documento e altri ID per classificare il contenuto. In questo caso, è possibile usare anche quelle proprietà e quei valori quando si crea l'evento (vedere il Passaggio 6 di seguito). L'aspetto importante è che l'organizzazione deve usare una certa combinazione proprietà:valore nelle proprietà del documento per associare l'elemento a un tipo di evento.
   
 ![Casella di testo per immettere un ID risorsa](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>Passaggio 5: creare un evento
 
-Quando si verifica un'istanza particolare di quel tipo di evento, ad esempio quando un prodotto raggiunge la fine del ciclo di vita, accedere alla pagina **Gestione record** > **Eventi** nel Centro sicurezza e conformità e creare un evento. È necessario attivare manualmente un evento creandolo.
+Quando si verifica un’istanza particolare di quel tipo di evento, ad esempio quando un prodotto raggiunge la fine del ciclo di vita, accedere alla pagina **Gestione record** > **Eventi** nel Centro conformità di Microsoft 365, e creare un evento. È necessario attivare manualmente un evento creandolo.
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Passaggio 6: scegliere lo stesso tipo di evento utilizzato per l'etichetta nel Passaggio 2
 
@@ -142,13 +152,13 @@ Quando si crea l'evento, scegliere lo stesso tipo di evento usato per l'etichett
   
 ### <a name="step-7-enter-keywords-or-an-asset-id"></a>Passaggio 7: immettere parole chiave o un ID risorsa
 
-Restringere quindi l'ambito del contenuto specificando gli ID delle risorse per i contenuti di SharePoint e OneDrive o le parole chiave per il contenuto di Exchange. Per gli ID delle risorse, la conservazione verrà applicata solo al contenuto con la coppia di proprietà e valore specificata. Se non viene inserito un ID risorsa, a **tutto il contenuto** con le etichette di quel tipo di evento viene applicata la stessa data di conservazione. 
+A questo punto si limiterà l’ambito del contenuto, specificando gli ID risorsa per il contenuto di SharePoint e OneDrive o le parole chiave per il contenuto di Exchange. Per gli ID risorsa, la conservazione verrà applicata solo al contenuto con la coppia proprietà:valore specificata. Se non si immette un ID risorsa, a **tutti i contenuti** con etichette di quel tipo di evento verrà applicata la stessa data di conservazione. 
   
-L'ID risorsa è semplicemente un'altra proprietà del documento in SharePoint e OneDrive for Business. Se si utilizza la proprietà ID risorsa, è necessario inserire ComplianceAssetID:\<value\> nella casella per gli ID delle risorse mostrati di seguito.
+Tenere presente che un ID risorsa è solo un’altra proprietà del documento in SharePoint e OneDrive for Business. Se si usa la proprietà ID risorsa, immettere ComplianceAssetID: \<value\> nella casella relativa agli ID risorsa mostrati sotto.
   
-L'organizzazione potrebbe aver applicato altre proprietà e ID ai documenti relativi a questo tipo di evento. Ad esempio, se è necessario rilevare i record di un prodotto specifico, l'ID potrebbe essere una combinazione della proprietà personalizzata ProductID e del valore "XYZ". In questo caso, inserire ProductID:XYZ nella casella per gli ID delle risorse mostrati di seguito.
+Your organization might have applied other properties and IDs to the documents related to this event type. For example, if you need to detect a specific product's records, the ID might be a combination of your custom property ProductID and the value "XYZ". In this case, you'd enter ProductID:XYZ in the box for asset IDs shown below.
   
-Per gli elementi di Exchange, è possibile includere parole chiave. È possibile perfezionare la query utilizzando operatori di ricerca come AND, OR e NOT. Per ulteriori informazioni sugli operatori, vedere [Query con parole chiave e condizioni di ricerca per Ricerca contenuto](keyword-queries-and-search-conditions.md).
+For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 Infine, scegliere la data in cui si è verificato l'evento; questa data viene utilizzata come inizio del periodo di conservazione. Dopo aver creato un evento, la data dell'evento viene sincronizzata con tutto i contenuti che hanno un'etichetta di conservazione per il tipo di evento, l'ID risorsa e le parole chiave. Come qualsiasi etichetta di conservazione, la sincronizzazione può richiedere fino a 7 giorni.
   
@@ -168,13 +178,13 @@ Per ulteriori informazioni, vedere [Query delle parole chiave e condizioni di ri
   
 ## <a name="permissions"></a>Autorizzazioni
 
-Per accedere alla pagina **Eventi**, i revisori devono essere membri di un gruppo di ruoli con il ruolo **Gestione eliminazione** e **Solo visualizzazione log di controllo**. Si consiglia di creare un nuovo gruppo di ruoli denominato Revisori eliminazione, aggiungendo questi due ruoli, e quindi membri, a quel gruppo di ruoli. 
+To get access to the **Events** page, reviewers must be members of a role group with the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called Disposition Reviewers, adding these two roles to that role group, and then adding members to the role group. 
   
-Per altre informazioni, vedere l'articolo su come [consentire agli utenti di accedere&amp; al Centro sicurezza e conformità](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per ulteriori informazioni, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 ## <a name="automate-events-by-using-powershell"></a>Automatizzare gli eventi con PowerShell
 
-Nell'interfaccia di amministrazione è possibile creare eventi solo manualmente e non è possibile attivare automaticamente un evento quando si verifica. Tuttavia, è possibile usare un'API REST per attivare eventi automaticamente. Per altre informazioni, vedere [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md).
+In the admin center, you can only create events manually; it's not possible to automatically trigger an event when it occurs. However, you can use a Rest API to trigger events automatically; for more information, see [Automate event-based retention](automate-event-driven-retention.md).
 
 È anche possibile usare uno script di PowerShell per automatizzare la conservazione basata su eventi dalle applicazioni aziendali. Cmdlet di PowerShell disponibili per la conservazione basata su eventi:
   
