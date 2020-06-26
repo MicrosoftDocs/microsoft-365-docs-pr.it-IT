@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Ottieni informazioni sulle etichette di conservazione che governano i tuoi dati conservando ciò che vuoi tenere, cancellando ciò che non ti serve, e contrassegnando i contenuti come record.
-ms.openlocfilehash: b7797c55c95845b35fc3d67275bf64920fa59574
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: dc6048fed07f6312d192cde5260b180605e3d4f2
+ms.sourcegitcommit: 92a6595b482396f44675c22221500703a5649dab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817441"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44879305"
 ---
 # <a name="learn-about-retention-labels"></a>Informazioni sulle etichette di conservazione
 
@@ -347,9 +347,9 @@ Dopo aver pubblicato o applicato automaticamente le etichette di conservazione, 
 
 Dopo l'assegnazione automatica o manuale di etichette di conservazione al contenuto, è possibile usare Ricerca contenuto per trovare tutto il contenuto che ha una specifica etichetta di conservazione.
   
-Quando si crea una ricerca di contenuto, scegliere la condizione **Tag di conformità**, quindi immettere il nome completo dell'etichetta di conservazione o parte di esso e usare un carattere jolly. Per altre informazioni, vedere [Query con parola chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md).
+Quando si crea una ricerca di contenuto, scegliere la condizione **Etichetta di conformità**, quindi immettere il nome completo dell'etichetta di conservazione o parte di esso e usare un carattere jolly. Per altre informazioni, vedere [Query con parola chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md).
   
-![Condizione tag di conformità](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Condizione etichetta di conformità](../media/compliance-label-condition.png)
   
 ## <a name="use-retention-labels-instead-of-older-features"></a>Usare le etichette di conservazione anziché funzionalità precedenti
 
