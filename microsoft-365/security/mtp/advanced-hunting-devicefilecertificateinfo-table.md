@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fcbd487aeed633176c86fd22bfcd156be02fea22
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: cba27b5b43141c8c90f9a8bc7f70c55aabc1979d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900790"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899316"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -55,7 +55,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e timestamp. | 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Ricerca proattiva delle minacce](advanced-hunting-overview.md)
+- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)

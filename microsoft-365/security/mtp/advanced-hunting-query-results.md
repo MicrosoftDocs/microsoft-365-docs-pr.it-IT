@@ -1,7 +1,7 @@
 ---
 title: Utilizzare i risultati delle query di ricerca avanzata in Microsoft Threat Protection
 description: Ottenere la maggior parte dei risultati della query restituiti dalla ricerca avanzata in Microsoft Threat Protection
-keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, Microsoft Threat Protection, Visualization, Chart, filters, drill-down
+keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, Microsoft Threat Protection, visualizzazione, grafico, filtri, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f9838908ca0dbfb498601c3509b920b064a2eb22
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 14afd3c098c99a6e1e6ccfc7e9f6accbf8bf0e7d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929243"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899084"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utilizzare i risultati della query di ricerca avanzata
 
@@ -64,13 +64,13 @@ AlertInfo
 ```
 Quando si esegue il rendering dei risultati, in un istogramma viene visualizzato ogni valore di gravità come colonna separata:
 
-![Immagine dei risultati della query di ricerca avanzata visualizzati come risultati](../../media/advanced-hunting-column-chart.jpg)
-di query di un grafico a colonne*per gli avvisi in base alla gravità visualizzati come* istogramma
+![Immagine dei risultati della query di ricerca avanzata visualizzati come risultati di query di un grafico a colonne ](../../media/advanced-hunting-column-chart.jpg)
+ *per gli avvisi in base alla gravità visualizzati come* istogramma
 
 #### <a name="alert-severity-by-operating-system"></a>Severità degli avvisi in base al sistema operativo
 È inoltre possibile utilizzare l' `summarize` operatore per preparare i risultati per la creazione di grafici di valori da più campi. Ad esempio, si potrebbe voler capire in che modo gli avvisi vengono distribuiti tra i sistemi operativi (OS). 
 
-La query seguente utilizza un `join` operatore per inserire le informazioni sul sistema operativo `DeviceInfo` dalla tabella e quindi utilizza `summarize` per conteggiare i valori sia `OSPlatform` nelle `Severity` colonne che in quelle seguenti:
+La query seguente utilizza un `join` operatore per inserire le informazioni sul sistema operativo dalla `DeviceInfo` tabella e quindi utilizza `summarize` per conteggiare i valori sia nelle `OSPlatform` colonne che in quelle seguenti `Severity` :
 
 ```kusto
 AlertInfo
@@ -80,8 +80,8 @@ AlertInfo
 ```
 Questi risultati vengono visualizzati in modo ottimale utilizzando un istogramma in pila:
 
-![Immagine dei risultati della query di ricerca avanzata visualizzati come risultati di](../../media/advanced-hunting-stacked-chart.jpg)
-query di un grafico in pila*per gli avvisi del sistema operativo e la gravità visualizzati come un grafico in pila*
+![Immagine dei risultati della query di ricerca avanzata visualizzati come risultati di query di un grafico in pila ](../../media/advanced-hunting-stacked-chart.jpg)
+ *per gli avvisi del sistema operativo e la gravità visualizzati come un grafico in pila*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Messaggi di posta elettronica di phishing tra i primi dieci domini mittente
 Se si ha a che fare con un elenco di valori non finiti, è possibile utilizzare l' `Top` operatore per tracciare solo i valori con la maggior parte delle istanze. Ad esempio, per ottenere i primi dieci domini mittente con la maggior parte dei messaggi di posta elettronica di phishing, utilizzare la query seguente:
@@ -94,11 +94,11 @@ EmailEvents
 ```
 Utilizzare la visualizzazione grafico a torta per visualizzare in modo efficace la distribuzione nei domini principali:
 
-![Immagine dei risultati della query di ricerca avanzata visualizzati come grafico](../../media/advanced-hunting-pie-chart.jpg)
-a torta grafico a torta che*Mostra la distribuzione dei messaggi di posta elettronica di phishing nei domini principali del mittente*
+![Immagine dei risultati della query di ricerca avanzata visualizzati come grafico a torta grafico a torta che ](../../media/advanced-hunting-pie-chart.jpg)
+ *Mostra la distribuzione dei messaggi di posta elettronica di phishing nei domini principali del mittente*
 
 #### <a name="file-activities-over-time"></a>Attività del file nel tempo
-Se si `summarize` utilizza l'operatore `bin()` con la funzione, è possibile verificare la possibilità di controllare gli eventi che coinvolgono un determinato indicatore nel tempo. La query che segue conta gli eventi che coinvolgono `invoice.doc` il file a intervalli di 30 minuti per visualizzare i picchi nelle attività relative a tale file:
+`summarize`Se si utilizza l'operatore con la `bin()` funzione, è possibile verificare la possibilità di controllare gli eventi che coinvolgono un determinato indicatore nel tempo. La query che segue conta gli eventi che coinvolgono il file `invoice.doc` a intervalli di 30 minuti per visualizzare i picchi nelle attività relative a tale file:
 
 ```kusto
 AppFileEvents
@@ -106,10 +106,10 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-Il grafico a linee sotto evidenzia chiaramente i periodi di tempo con più `invoice.doc`attività che coinvolgono: 
+Il grafico a linee sotto evidenzia chiaramente i periodi di tempo con più attività che coinvolgono `invoice.doc` : 
 
-![Immagine dei risultati della query di ricerca avanzata visualizzati come un](../../media/advanced-hunting-line-chart.jpg)
-grafico a linee del grafico a linee*che mostra il numero di eventi che coinvolgono un file nel tempo*
+![Immagine dei risultati della query di ricerca avanzata visualizzati come un grafico a linee del grafico a linee ](../../media/advanced-hunting-line-chart.jpg)
+ *che mostra il numero di eventi che coinvolgono un file nel tempo*
 
 
 ## <a name="export-tables-and-charts"></a>Esportare tabelle e grafici
@@ -119,7 +119,15 @@ Dopo aver eseguito una query, selezionare **Esporta** per salvare i risultati ne
 - **Qualsiasi grafico** : i risultati della query vengono esportati come immagine JPEG del grafico di cui è stato eseguito il rendering
 
 ## <a name="drill-down-from-query-results"></a>Eseguire il drill-down dai risultati delle query
-Per visualizzare altre informazioni sulle entità, come computer, file, utenti, indirizzi IP e URL, fare clic sull'identificatore di entità nei risultati delle query. Quindi si aprirà una pagina profilo dettagliata per l’entità selezionata nel Microsoft Defender Security Center.
+Per esaminare rapidamente un record nei risultati della query, selezionare la riga corrispondente per aprire il riquadro **ispeziona record** . Nel riquadro sono disponibili le informazioni seguenti in base al record selezionato:
+
+- **Asset** : visualizzazione riepilogata delle risorse principali (cassette postali, dispositivi e utenti) rilevate nel record, arricchite con informazioni disponibili, ad esempio i livelli di rischio e di esposizione
+- **Albero dei processi** : generato per i record con informazioni sul processo e arricchito utilizzando informazioni contestuali disponibili; in generale, le query che restituiscono più colonne possono generare strutture di elaborazione più ricche.
+- **Tutti i dettagli** : tutti i valori delle colonne del record  
+
+![Immagine del record selezionato con pannello per l'ispezione del record](../../media/mtp-ah/inspect-record.png)
+
+Per visualizzare ulteriori informazioni su un'entità specifica nei risultati della query, ad esempio un computer, un file, un utente, un indirizzo IP o un URL, selezionare l'identificatore di entità per aprire una pagina del profilo dettagliata per tale entità.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Perfezionare le query dai risultati
 Fare clic con il pulsante destro del mouse su un valore nel set di risultati per migliorare rapidamente la query. È possibile usare le opzioni per:
@@ -133,7 +141,7 @@ Fare clic con il pulsante destro del mouse su un valore nel set di risultati per
 ## <a name="filter-the-query-results"></a>Filtrare i risultati della query
 I filtri visualizzati a destra forniscono un riepilogo del set di risultati. Ogni colonna ha una propria sezione in cui sono elencati i valori distinti individuati per quella colonna e il numero di istanze.
 
-Affinare la query selezionando i `+` pulsanti `-` o nei valori che si desidera includere o escludere e quindi selezionando **Esegui query**.
+Affinare la query selezionando i `+` `-` pulsanti o nei valori che si desidera includere o escludere e quindi selezionando **Esegui query**.
 
 ![Immagine del filtro di ricerca avanzata](../../media/advanced-hunting-filter.png)
 

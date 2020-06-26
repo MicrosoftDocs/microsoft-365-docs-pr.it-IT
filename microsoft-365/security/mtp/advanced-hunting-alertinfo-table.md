@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e4d7ec213a4b4d1108c06784fb5e6675c79429c1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: a1290ee415073a9cb3948bc4b0cc6bb3ae13285b
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929517"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899018"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -31,7 +31,7 @@ ms.locfileid: "42929517"
 
 
 
-La `AlertInfo` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sugli avvisi di Microsoft Defender ATP, Office 365 ATP, Microsoft cloud app Security e Azure ATP. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La `AlertInfo` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sugli avvisi di Microsoft Defender atp, Office 365 ATP, Microsoft cloud app Security e Azure ATP. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -47,7 +47,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AttackTechniques` | stringa | Le tecniche di MITRE ATT&CK associate all'attività che ha attivato l'avviso |
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Ricerca proattiva delle minacce](advanced-hunting-overview.md)
+- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)

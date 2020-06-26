@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f340a34b3c88f1caba83861c4d36ce140846d495
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 0f565e7584a961fcbc48e6a421419cd48a20a963
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617175"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899328"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -86,7 +86,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AppGuardContainerId` | stringa | Identificatore per il contenitore virtualizzato utilizzato dalla protezione dell'applicazione per isolare l'attività del browser |
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Ricerca proattiva delle minacce](advanced-hunting-overview.md)
+- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)

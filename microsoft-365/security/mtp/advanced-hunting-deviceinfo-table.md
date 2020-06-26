@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceInfo nello schema di caccia avanzato
 description: Informazioni sul sistema operativo, sul nome del computer e su altri computer nella tabella DeviceInfo dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, machineinfo, DeviceInfo, Device, Machine, OS, Platform , gli utenti
+keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, machineinfo, DeviceInfo, Device, Machine, OS, Platform, Users
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 71bd9e9ff1dfb17e4a9266d9ee351799e18888c9
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 526e210a472862593f2652e9b2b21957702c48f0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235025"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899280"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -53,7 +53,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `MachineGroup` | stringa | Gruppo di macchine del computer. Questo gruppo viene utilizzato dal controllo di accesso basato sui ruoli per determinare l'accesso al computer |
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Ricerca proattiva delle minacce](advanced-hunting-overview.md)
+- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)

@@ -29,12 +29,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Informazioni su come aggiungere e ridurre l'archiviazione dei file nell'abbonamento a Microsoft 365. Con un'ulteriore archiviazione dei file, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
-ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f3720580c44b68f5b34d5e11f5af1a919ec07dea
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402679"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899126"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
@@ -46,6 +46,9 @@ ms.locfileid: "44402679"
 ::: moniker-end
 
 Se lo spazio di archiviazione per le raccolte di siti di SharePoint Online sta per esaurirsi, è possibile aggiungere altro spazio all'abbonamento, se il piano è idoneo. Se l' **Archivio di file aggiuntivo di Office 365** non è presente nell'elenco dei componenti aggiuntivi disponibili, significa che il piano non è idoneo. Per ulteriori informazioni, vedere [è il mio piano idoneo?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+
+> [!NOTE]
+> Se l'abbonamento è stato acquistato tramite contratti multilicenza o CSP, non è possibile acquistare **Office 365 extra file storage** per la propria organizzazione. Contattare il rappresentante o il partner per assistenza.
 
 ## <a name="view-available-storage"></a>Visualizzazione dello spazio di archiviazione disponibile
 

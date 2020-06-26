@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceLogonEvents nello schema di caccia avanzato
 description: Informazioni sugli eventi di autenticazione o di accesso nella tabella DeviceLogonEvents dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento dello schema, kusto, tabella, colonna, tipo di dati, descrizione, logonevents, DeviceLogonEvents, autenticazione, accesso, accedere
+keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, logonevents, DeviceLogonEvents, autenticazione, accesso, accedi
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c7f1bba23379b25ccecc427b2aa866a1105396d
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 07b2c2301784f378075e3c9803cebc5bcabf9cb0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235015"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899268"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -72,7 +72,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `IsLocalAdmin` | boolean | Indicatore booleano che indica se l'utente è un amministratore locale del computer |
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Ricerca proattiva delle minacce](advanced-hunting-overview.md)
+- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)

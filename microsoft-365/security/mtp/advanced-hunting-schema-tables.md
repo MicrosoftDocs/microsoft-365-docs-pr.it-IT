@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2ed89a676525b91f6b0923cf39be5b014638e93e
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 032368e35cdfc991df4c01643e49cee538549f39
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515844"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899364"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendere schema di ricerca avanzato
 
@@ -63,9 +63,6 @@ Di seguito sono elencate tutte le tabelle dello schema. Ogni nome di tabella rim
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Informazioni sugli account provenienti da origini diverse, tra cui Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Eventi di autenticazione registrati da Active Directory e da altri Microsoft Online Services |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Attività di query eseguite su oggetti di Active Directory, ad esempio utenti, gruppi, dispositivi e domini |
-
-
-
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

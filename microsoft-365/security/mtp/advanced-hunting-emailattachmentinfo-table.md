@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5cfda9a581e03c91815bdcbd2508fcc6c52d2652
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c396689942a72a03120f0acd41d0d76abb720702
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633632"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899400"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -49,7 +49,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `MalwareDetectionMethod` | stringa | Metodo utilizzato per rilevare malware nei messaggi di posta elettronica: motore antimalware, reputazione dei file, allegati sicuri di ATP |
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Ricerca proattiva delle minacce](advanced-hunting-overview.md)
+- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)
