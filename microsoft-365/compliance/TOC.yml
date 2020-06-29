@@ -34,7 +34,7 @@
           href: insider-risk-management-cases.md
         - name: Esaminare i dati con l'explorer del contenuto di gestione dei rischi Insider
           href: insider-risk-management-content-explorer.md
-        - name: Aggiungere utenti a criteri dei rischi Insider
+        - name: Gestire il flusso di lavoro con il dashboard utenti
           href: insider-risk-management-users.md
         - name: Creare modelli di avviso relativi ai rischi Insider
           href: insider-risk-management-notices.md
