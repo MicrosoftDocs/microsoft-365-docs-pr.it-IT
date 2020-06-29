@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Informazioni su come assegnare ruoli di amministratore a un utente o a più utenti dell'azienda in modo che possano eseguire attività specifiche nell'interfaccia di amministrazione.
-ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
+ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780638"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900777"
 ---
 # <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore
 
@@ -110,9 +110,9 @@ Usare le istruzioni seguenti per assegnare i ruoli a decine di utenti.
 ::: moniker range="o365-worldwide"
 
 
-## <a name="didnt-work-for-you"></a>Problemi di funzionamento
+## <a name="check-your-permissions"></a>Controllare le autorizzazioni
 
-Potrebbe non essere necessario disporre delle autorizzazioni corrette e quindi non si ha accesso per assegnare ruoli di amministratore ad altri utenti. Chiedere a un altro amministratore di assegnare i ruoli.
+Potrebbe non essere necessario disporre delle autorizzazioni appropriate per assegnare ruoli di amministratore ad altri utenti. Controllare se si desidera che le autorizzazioni siano corrette o chiedere a un altro amministratore di assegnare i ruoli per l'utente.
 
 ::: moniker-end
 
@@ -120,8 +120,8 @@ Potrebbe non essere necessario disporre delle autorizzazioni corrette e quindi n
 
 [Informazioni sui ruoli di amministratore di Microsoft 365](about-admin-roles.md)
 
+[Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
 [Assegnare ruoli agli account utente con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Autorizzare o rimuovere relazioni con i partner](../misc/add-partner.md)
-
-[Aggiungere un indirizzo di posta elettronica alternativo utilizzando l'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)

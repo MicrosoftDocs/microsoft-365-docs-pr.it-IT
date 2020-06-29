@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 827cffde0ff719d133830e10e958f04fe70fc9d6
-ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
+ms.openlocfilehash: a69c90580db9b33196fd1eb3797a42b8db056fcd
+ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44534928"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900820"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -88,12 +88,19 @@ La protezione della privacy degli utenti che dispongono di corrispondenze di cri
 
 ### <a name="indicators"></a>Indicatori
 
-I modelli di criteri per i rischi Insider definiscono il tipo di attività di rischio che si desidera rilevare ed esaminare. Ogni modello di criteri si basa su indicatori specifici che corrispondono a particolari attività a rischio e gli avvisi vengono attivati dai criteri quando gli utenti eseguono attività relative a tali indicatori. In alcuni casi, è possibile limitare gli indicatori applicati ai criteri di rischio Insider nell'organizzazione. È possibile disattivare gli indicatori per aree specifiche disattivando da tutti i criteri di rischio Insider.
+I modelli di criteri per i rischi Insider definiscono il tipo di attività di rischio che si desidera rilevare ed esaminare. Ogni modello di criteri si basa su indicatori specifici che corrispondono a trigger specifici e attività a rischio. Tutti gli indicatori sono disattivati per impostazione predefinita ed è necessario selezionare uno o più indicatori di criteri prima di configurare un criterio di gestione dei rischi Insider. 
 
-Per definire gli indicatori abilitati in tutti i criteri, passare a **indicatori delle impostazioni dei rischi Insider**  >  **Indicators** e selezionare uno o più indicatori. Gli indicatori selezionati nella pagina impostazioni **indicatori** non possono essere configurati singolarmente quando si crea o si modifica un criterio di rischio Insider nella procedura guidata dei criteri.
+Gli avvisi vengono attivati dai criteri quando gli utenti eseguono attività relative a indicatori di criteri che soddisfano una soglia obbligatoria. Gestione dei rischi Insider utilizza due tipi di indicatori:
 
->[!IMPORTANT]
->Per ricevere gli avvisi per le attività a rischio definite nei criteri, è necessario selezionare uno o più indicatori prima di configurare un criterio di rischio Insider.
+- **Indicatori di attivazione**: indicatori che determinano se un utente è attivo per un criterio di gestione dei rischi Insider. Se un utente viene aggiunto a un criterio di gestione dei rischi Insider che utilizza indicatori di attivazione ma non dispone di un'attività di indicatore di attivazione, l'attività dell'utente non viene valutata dal criterio. Ad esempio, l'utente A viene aggiunto a un criterio creato dal modello di criteri per il *furto dei dati* e i criteri e il connettore HR sono configurati correttamente. Fino a quando l'utente A ha una data di terminazione segnalata dal connettore HR, l'utente A attività non viene valutato da questo criterio di gestione dei rischi Insider per rischi. Un altro esempio di indicatore di attivazione è il caso in cui un utente sia nell'ambito di un avviso di criteri DLP a gravità *elevata* .
+- **Indicatori di criteri di rischio Insider**: indicatori inclusi nei criteri di gestione dei rischi Insider utilizzati per determinare un punteggio di rischio per un utente nell'ambito. Questi indicatori di criteri vengono attivati solo dopo che si è verificato un indicatore di attivazione per un utente. Alcuni esempi di indicatori dei criteri di rischio Insider sono quando un utente copia i dati su servizi di archiviazione cloud personali o su dispositivi di archiviazione portatili oppure se un utente condivide file e cartelle interni con parti esterne non autorizzate.
+
+In alcuni casi, è possibile che si desideri limitare gli indicatori dei criteri di rischio Insider applicati ai criteri di insider Risk nell'organizzazione. È possibile disattivare gli indicatori dei criteri per aree specifiche disattivando tutti i criteri di rischio Insider. Non è possibile modificare gli indicatori di attivazione per i modelli di criteri di rischio Insider.
+
+Per definire gli indicatori dei criteri di rischio Insider abilitati in tutti i criteri di rischio Insider, passare a indicatori **delle impostazioni dei rischi Insider**  >  **Indicators** e selezionare uno o più indicatori di criteri. Gli indicatori selezionati nella pagina Impostazioni indicatori non possono essere configurati singolarmente quando si crea o si modifica un criterio di rischio Insider nella procedura guidata dei criteri.
+
+>[!NOTE]
+>Potrebbe essere necessario diverse ore prima che i nuovi utenti aggiunti manualmente vengano visualizzati nel **dashboard degli utenti**. Le attività per i 90 giorni precedenti per questi utenti possono richiedere fino a 24 ore per la visualizzazione. Per visualizzare le attività per gli utenti aggiunti manualmente, selezionare l'utente nel **Dashboard utenti** e aprire la scheda **attività utente** nel riquadro dei dettagli.
 
 ### <a name="policy-timeframes"></a>Intervalli di tempo per i criteri
 

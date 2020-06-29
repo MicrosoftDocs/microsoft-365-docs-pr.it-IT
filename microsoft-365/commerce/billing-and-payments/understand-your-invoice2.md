@@ -25,18 +25,18 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla bolletta o fattura di Microsoft 365 for business e su come modificare il numero dell'ordine di acquisto.
-ms.openlocfilehash: 13eea485a6d748ce8798ddb5075309bec727c6bb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a46f108766ccfec4f7f6abaa2d48d38137311707
+ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402631"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909265"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendere la fattura o la fattura per Microsoft 365 for business
 
-Ogni mese si riceverà un messaggio di posta elettronica che informa che la nuova dichiarazione di fatturazione è disponibile nell'interfaccia di amministrazione. [Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md).
+Mensilmente o annualmente (a seconda dell'opzione selezionata al momento dell'acquisto dell'abbonamento), si riceverà un messaggio di posta elettronica che informa che la nuova dichiarazione di fatturazione è disponibile nell'interfaccia di amministrazione. [Informazioni su come trovare e visualizzare la fattura](view-your-bill-or-invoice.md).
   
-La fattura è composta da due pagine. La pagina 1 contiene il riepilogo e informazioni generali su fattura, ordine, importo dovuto e modalità di pagamento, oltre a indicazioni su come contattare il supporto.
+Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.
   
 ![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
@@ -62,7 +62,7 @@ Se si hanno più ordini, si riceverà una fattura per ognuno.
   
 ## <a name="invoice-field-glossary"></a>Glossario dei campi della fattura
 
-La tabella seguente descrive i campi che potrebbero essere riportati nella fattura. Alcuni campi potrebbero non comparire, a seconda della modalità di pagamento scelta, ossia con fattura, carta di credito o conto corrente bancario.
+The following table describes the fields you might see on your invoice. Some fields listed here might not appear in your invoice, depending on whether you pay by invoice or by credit card or bank account.
   
 > [!NOTE]
 > Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
@@ -70,30 +70,30 @@ La tabella seguente descrive i campi che potrebbero essere riportati nella fattu
 |**Nome**|**Descrizione**|
 |:-----|:-----|
 |Prezzo annuale|Le fatture per gli abbonamenti vengono emesse mensilmente o annualmente. Se si sceglie la fatturazione annuale durante l'acquisto dell'abbonamento, il prezzo annuale della licenza viene riflesso sulla fattura. Se si vuole cambiare la frequenza di emissione della fattura, è necessario annullare l'abbonamento e acquistarne un altro con una nuova frequenza.|
-|Periodo di fatturazione|Il periodo di fatturazione è il periodo di tempo che inizia dalla data dell'ultima fattura. Il periodo di servizio è il periodo di tempo durante il quale viene addebitato l'uso del servizio.|
+|Periodo di fatturazione|Billing Period is the time period since the last invoice date. Service Period is the time period during which you are charged to use the service.|
 |Indirizzo di fatturazione|L'indirizzo del reparto fatturazione, che in genere corrisponde all'indirizzo indicato in Venduto a. Per aggiornare l'indirizzo di fatturazione, vedere [cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).|
-|Addebiti|Nella pagina 1 della fattura sono riepilogati tutti gli addebiti riferiti al periodo di fatturazione. La pagina 2 contiene gli addebiti dettagliati per ogni abbonamento.|
-|Assegno|Se si sceglie il pagamento tramite fattura ed è possibile saldarlo con assegno nel proprio paese, alla fine della pagina 1 sono incluse informazioni su dove inviare il pagamento. Includere nell'assegno il numero di fattura.|
-|Crediti|Nella pagina 1 della fattura sono riepilogati tutti i crediti riferiti al periodo di fatturazione. La pagina 2 contiene i crediti dettagliati per ogni abbonamento.|
-|Numero ordine d'acquisto cliente|Il numero dell'ordine d'acquisto. Se il numero dell'ordine d'acquisto viene aggiornato, verrà incluso nelle future fatture. [Cambiare il numero dell'ordine d'acquisto](#change-your-purchase-order-number).  <br/> **Note** Non è possibile aggiungere un numero di PO a una fattura esistente.           |
-|Giorni|Ogni transazione di fatturazione è associata a un periodo di servizio. La colonna Giorni indica il numero di giorni di tale periodo.|
-|Sconti|Nella pagina 1 della fattura sono riepilogati tutti gli sconti riferiti al periodo di fatturazione. La pagina 2 contiene gli sconti dettagliati per ogni abbonamento.|
-|Scadenza|La data in cui è dovuto il pagamento della fattura. Se l'abbonamento viene pagato con carta di credito o conto corrente bancario, l'importo verrà addebitato il giorno dopo la data della fattura.<br/> **Note** Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.           |
+|Addebiti|Page 1 of your invoice summarizes all charges for the invoice Billing Period. Page 2 shows the detailed charges for each subscription.|
+|Assegno|If you pay by invoice and check payment is offered in your country, the bottom of page 1 includes information about where to send your payment. Please reference the invoice number on your check.|
+|Crediti|Page 1 of your invoice summarizes all credits for the invoice Billing Period. Page 2 shows the detailed credits for each subscription.|
+|Numero ordine d'acquisto cliente|Your Purchase Order (PO) number. If you update the PO number, future invoices will include it. [Change your purchase order number](#change-your-purchase-order-number). <br/> **Note** Non è possibile aggiungere un numero di PO a una fattura esistente.           |
+|Giorni|Each billing transaction is associated with a Service Period. The Days column indicates the number of days in that service period.|
+|Sconti|Page 1 of your invoice summarizes all discounts for the invoice Billing Period. Page 2 shows the detailed discounts for each subscription.|
+|Scadenza|The date when payment is due for the invoice. If your subscription is paid with a credit card or bank account, we will charge your credit card or banking account the day after the Invoice Date. <br/> **Note** Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.           |
 |Bonifico bancario|Se si sceglie "fattura" come metodo di pagamento per l'abbonamento, la pagina 1 contiene le informazioni sul conto corrente bancario Microsoft per i pagamenti elettronici (Wire, ACH, SEPA e così via). In genere la banca avrà un campo di riferimento da completare quando si invia il pagamento. Inserire come riferimento il numero di fattura indicato in questo campo.|
 |Totale complessivo|Questa riga include i totali di tutte le colonne relative ad addebiti, sconti, subtotale, imposte e totale per tutti gli abbonamenti inclusi nella fattura.|
-|Data fattura|La data in cui è stata creata la fattura, ossia il giorno dopo il termine del periodo di fatturazione. Se ad esempio il periodo di fatturazione è compreso tra il 15 gennaio e il 14 febbraio, la data della fattura sarà 15 febbraio.|
-|N. fattura|Il numero univoco assegnato alla fattura. Fare riferimento a questo numero con il pagamento.|
+|Data fattura|The date the invoice was created. The invoice date is the day after the end of your Billing Period. For example, if your Billing Period is Jan 15 - Feb 14, your Invoice Date is Feb 15.|
+|N. fattura|The unique number assigned to your invoice. Please reference the Invoice Number with your payment.|
 |Prezzo mensile|Le fatture per gli abbonamenti vengono emesse mensilmente o annualmente. Se si sceglie la fatturazione mensile durante l'acquisto dell'abbonamento, il prezzo mensile della licenza viene riflesso sulla fattura. Se si vuole cambiare la frequenza di emissione della fattura, è necessario annullare l'abbonamento e acquistarne un altro con una nuova frequenza.|
-|Numero d'ordine|Ogni volta che si acquista un nuovo abbonamento viene creato un ordine. Ogni mese si riceverà una fattura per ogni ordine.|
-|Istruzioni per il pagamento|Se si sceglie il pagamento con carta di credito, verrà riportato il messaggio "NON PAGARE - addebito su carta di credito registrato". Se si sceglie il pagamento tramite fattura, verranno indicate le istruzioni per eseguire il bonifico e quelle per l'assegno (se applicabile).|
-|Condizioni di pagamento|Il numero di giorni a partire dalla data della fattura in cui è dovuto il pagamento. Lo standard è 30 giorni.|
-|Prodotto|Nella pagina 1 della fattura, "Servizi online" è il termine generico usato per descrivere gli abbonamenti. Nella pagina 2 si trovano i nomi dei singoli abbonamenti.|
+|Numero d'ordine|Every time you buy a new subscription, an order is created. Every month, you'll receive an invoice for each order.|
+|Istruzioni per il pagamento|If you pay by credit card, you'll see "Do not pay - charged to credit card on file." If you pay by invoice, you'll see instructions for paying by Electronic Funds Transfer (EFT) and check (if applicable).|
+|Condizioni di pagamento|The number of days from the Invoice Date when payment is due. The standard is 30 days.|
+|Prodotto|On page 1 of your invoice, "Online Services" is the generic term used to describe your subscriptions. On page 2 , you'll see the individual subscription names.|
 |Qtà|Il numero di licenze acquistate durante il periodo di servizio.|
-|Periodo servizio|Il periodo di servizio è il periodo di tempo durante il quale viene addebitato l'uso del servizio. Il periodo di fatturazione è il periodo di tempo che inizia dalla data dell'ultima fattura.|
+|Periodo servizio|Service Period is the time period during which you are charged to use the service. A Billing Period is the time period since the last invoice date.|
 |Indirizzo di utilizzo del servizio|L'indirizzo in cui viene usato il servizio, che in genere corrisponde all'indirizzo specificato in Venduto a. Per aggiornare l'indirizzo di utilizzo del servizio, vedere [cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).|
-|Venduto a|Il nome e l'indirizzo della propria società. Per aggiornare questa informazione, vedere [Cambiare l'indirizzo dell'organizzazione, l'indirizzo di posta elettronica del contatto tecnico e altre informazioni](../../admin/manage/change-address-contact-and-more.md).  |
+|Venduto a|Your company name and address. To update this information, see [Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md).|
 |Subtotale|Ogni abbonamento riportato nella fattura prevede una riga Subtotale separata per tutte le colonne di addebiti, sconti, crediti, subtotale, imposta e totale.|
-|Imposta|Nella pagina 1 della fattura è indicata l'imposta totale. La pagina 2 mostra l'aliquota di imposta applicata e l'importo totale dell'imposta per ogni riga. Se la fattura contiene imposte ma la società è esente, [contattare il supporto](../../admin/contact-support-for-business-products.md).  |
+|Imposta|Page 1 of your invoice shows the total tax. Page 2 shows the tax rate applied, and the total tax amount for each line item. If your invoice contains taxes and your company is tax exempt, please [contact support](../../admin/contact-support-for-business-products.md).|
 |Totale|L'importo dovuto per il periodo di fatturazione.|
 
 ## <a name="change-your-purchase-order-number"></a>Cambiare il numero dell'ordine d'acquisto
@@ -101,7 +101,7 @@ La tabella seguente descrive i campi che potrebbero essere riportati nella fattu
 Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare il numero dell'ordine d'acquisto per l'abbonamento.
   
 > [!NOTE]
-> Non è invece possibile aggiungere un numero di PO a una fattura esistente. Il numero di PO comparirà in tutte le fatture future.
+> You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
 
 ::: moniker range="o365-worldwide"
 
