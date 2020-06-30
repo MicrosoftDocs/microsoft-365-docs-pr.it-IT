@@ -3,7 +3,7 @@ title: Documentazione sulla conformità di Microsoft 365
 summary: Se l'organizzazione deve rispettare standard legali o normativi, qui sono disponibili informazioni sulla conformità in Microsoft 365.
 metadata:
   title: Documentazione sulla conformità di Microsoft 365
-  description: Questa pagina contiene collegamenti ad alcuni importanti argomenti relativi alle funzionalità di conformità di Microsoft 365. Iniziare da qui per ulteriori informazioni sulla conformità in Microsoft 365.
+  description: Questa pagina contiene i collegamenti ad argomenti importanti sulle funzionalità di conformità di Microsoft 365. Per informazioni sulla conformità in Microsoft 365, iniziare da qui.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 7346a0d1abf0f8b643716d138efaaa269f35a2c5
   ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 06/19/2020
   ms.locfileid: "44817555"
