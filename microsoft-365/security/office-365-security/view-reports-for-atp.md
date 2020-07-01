@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro sicurezza e &amp; conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e6f6e3f2fd5820f280ab47f3ffdde11bd9da72e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613361"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936996"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 
@@ -51,9 +51,9 @@ I filtri e i guasti delle informazioni consentono la categorizzazione più granu
 
 |||
 |---|---|
-|In base al tipo di rilevamento|Quali criteri hanno consentito di intercettare tali minacce?|
+|Per tipo di criterio|Quali criteri hanno consentito di intercettare tali minacce?|
 |Tramite la tecnologia di rilevamento|La tecnologia Microsoft sottostante ha rilevato la minaccia?|
-|In base allo stato di recapito|Che cosa è successo ai messaggi di posta elettronica rilevati come minacce?|
+|In base allo stato di recapito|Qual è stato lo stato di recapito finale dei messaggi di posta elettronica rilevati come minacce?|
 |
 
 > [!TIP]
@@ -65,7 +65,8 @@ Queste visualizzazioni offrono l'opzione per l'esportazione, tramite un clic sul
 
 ![In questo elemento grafico viene illustrato come scegliere Esporta come opzione dal menu della visualizzazione malware, a destra tra la pianificazione e il rapporto di richiesta.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
-**Nota**: il numero massimo di voci che possono essere esportate per **phishing** e **malware** è inferiore a 10000. Se si esporta una visualizzazione, vengono esportate solo le voci 10000 più recenti.
+> [!NOTE]
+> Il numero massimo di voci che possono essere esportate per **phishing** e **malware** è inferiore a 10000. Se si esporta una visualizzazione, vengono esportate solo le voci 10000 più recenti. Nei dati esportati, la colonna _conteggio messaggi_ rappresenta il numero di messaggi rilevati dalla tecnologia di rilevamento e dal tipo di criteri.    
 
 Le visualizzazioni panoramica e messaggi di posta elettronica visualizzano le informazioni entro le ore successive all'elaborazione anziché entro 24 ore (demand re. velocità maggiore qui è stato un segnale chiaro)!
 
@@ -80,7 +81,7 @@ Per ottenere lo stato dettagliato per un giorno, posizionare il puntatore del mo
 
 ![Dati sullo stato della protezione da ATP per un giorno](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
 
-Per impostazione predefinita, il rapporto sullo stato della protezione dalle minacce Visualizza i dati negli ultimi sette giorni. Tuttavia, è possibile scegliere **filtri** e modificare l'intervallo di date per visualizzare i dati fino a 90 giorni. Se si utilizza un abbonamento di valutazione, potrebbe essere limitato a 30 giorni di dati.
+Per impostazione predefinita, il rapporto sullo stato della protezione dalle minacce Visualizza i dati negli ultimi sette giorni. Tuttavia, è possibile scegliere **filtri** e modificare l'intervallo di date per visualizzare i dati fino a 90 giorni per la visualizzazione aggregata e 30 giorni per la visualizzazione dettagli. Se si utilizza un abbonamento di valutazione, potrebbe essere limitato a 30 giorni di dati.
 
 ![Filtri di stato di protezione da minacce ATP](../../media/4f703369-642b-402b-9758-b9c828283410.png)
 
@@ -111,7 +112,7 @@ Per visualizzare questo report, nel [Centro sicurezza e &amp; conformità](https
 
 ![Report dei tipi di file di ATP](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-Quando si posiziona il puntatore del mouse su un determinato giorno, è possibile visualizzare la ripartizione dei tipi di file dannosi rilevati dagli [allegati sicuri ATP](atp-safe-attachments.md) e dalla [ &amp; protezione anti-malware antispamming](anti-spam-and-anti-malware-protection.md).
+Quando si posiziona il puntatore del mouse su un determinato giorno, è possibile visualizzare la ripartizione dei tipi di file dannosi rilevati dagli [allegati sicuri ATP](atp-safe-attachments.md) e dalla [ &amp; protezione anti-malware antispamming](anti-spam-and-anti-malware-protection.md). La visualizzazione aggregazione del report consente 90 giorni di filtraggio, mentre la visualizzazione dettagli consente solo dieci giorni di filtraggio. 
   
 ![I tipi di file ATP riportano i dati per un giorno](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 

@@ -18,13 +18,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
-description: 'Comprendere il motivo per cui i risultati di ricerca stimati ed effettivi possono variare nelle ricerche eseguite con gli strumenti di eDiscovery in Office 365. '
-ms.openlocfilehash: 29e0a09046e3be756cc363243dede08d2aa5c310
-ms.sourcegitcommit: 5b7630b8692c692aef3eefc8857f46a7ee172dfd
+description: Comprendere il motivo per cui i risultati di ricerca stimati ed effettivi possono variare nelle ricerche eseguite con gli strumenti di eDiscovery in Office 365.
+ms.openlocfilehash: e3dcda1de920dc8266a93a890742f53f409357dc
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44174050"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936433"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Differenze tra i risultati di ricerca di eDiscovery stimati ed effettivi
 

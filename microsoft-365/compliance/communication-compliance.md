@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d99a2f9a840c3410ad63cb2fb49b64e208e01bb8
-ms.sourcegitcommit: a4a01a0d7600972a41ee6bfac0df282f2ccc9bd8
+ms.openlocfilehash: 0200ec0491104222545becb6c42d51b935fd2df1
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44859036"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936539"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
 
@@ -113,7 +113,7 @@ L'identificazione e la risoluzione dei problemi di conformità con la conformit�
 
 ![Flusso di lavoro conformità comunicazione](../media/communication-compliance-workflow.png)
 
-### <a name="configure"></a>Configura
+### <a name="configure"></a>Configurazione
 
 In questo passaggio del flusso di lavoro vengono identificati i requisiti di conformità e vengono configurati i criteri di conformità della comunicazione. I modelli di criteri rappresentano un ottimo modo per non solo configurare rapidamente un nuovo criterio di conformità, ma anche per modificare e aggiornare rapidamente i criteri in base alle modifiche apportate ai requisiti. Ad esempio, potrebbe essere necessario testare rapidamente un criterio per la lingua offensiva e l'antimolestia sulle comunicazioni per un piccolo gruppo di utenti prima di configurare un criterio per tutti gli utenti dell'organizzazione.
 

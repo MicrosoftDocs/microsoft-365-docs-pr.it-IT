@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Informazioni sui passaggi da contrassegnare e quindi utilizzare un campione di formazione di 40 file durante la fase di formazione per la pertinenza di Advanced eDiscovery.  '
-ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni sui passaggi da contrassegnare e quindi utilizzare un campione di formazione di 40 file durante la fase di formazione per la pertinenza di Advanced eDiscovery.
+ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636264"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936672"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Formazione di tagging e pertinenza in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In questo argomento viene descritta la procedura per l'utilizzo del modulo di formazione per la pertinenza avanzata di eDiscovery. 
   
@@ -34,7 +34,7 @@ Dopo aver completato la valutazione in Advanced eDiscovery e immettendo la fase 
   
 ## <a name="performing-relevance-training"></a>Esecuzione della formazione sulla pertinenza
 
-1. Nella scheda ** \> Tag pertinenza** , il riquadro di tagging viene visualizzato per impostazione predefinita nel riquadro sinistro e vengono visualizzati i file di esempio, uno alla volta per il tagging. 
+1. Nella scheda ** \> tag pertinenza** , il riquadro di tagging viene visualizzato per impostazione predefinita nel riquadro sinistro e vengono visualizzati i file di esempio, uno alla volta per il tagging. 
     
     ![Pannello Tag di pertinenza](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
@@ -54,7 +54,7 @@ Dopo aver completato la valutazione in Advanced eDiscovery e immettendo la fase 
    
   - Quando sono presenti più problemi per un file, dopo aver eseguito il tagging di un problema, la selezione viene spostata sul prossimo problema (se presente). 
     
-  - Le parole chiave definite dall'amministratore o dal responsabile del caso quando evidenziano le parole chiave ( \> impostazione di pertinenza evidenziata), verranno visualizzate (in colori specificati) per facilitare l'identificazione dei file rilevanti durante il tagging. Se una parola chiave ha una doppia sottolineatura, è possibile fare clic su di essa per visualizzare un suggerimento per gli strumenti con la descrizione della parola chiave. 
+  - Le parole chiave definite dall'amministratore o dal responsabile del caso quando evidenziano le parole chiave (impostazione di pertinenza \> evidenziata), verranno visualizzate (in colori specificati) per facilitare l'identificazione dei file rilevanti durante il tagging. Se una parola chiave ha una doppia sottolineatura, è possibile fare clic su di essa per visualizzare un suggerimento per gli strumenti con la descrizione della parola chiave. 
     
     Facoltativamente, nella scheda **tag** fare clic su **impostazioni Tag** per impostare le opzioni seguenti: 
     
@@ -76,9 +76,9 @@ Dopo aver completato la valutazione in Advanced eDiscovery e immettendo la fase 
     
 ## <a name="working-with-the-sample-files-list"></a>Utilizzo dell'elenco dei file di esempio
 
-L'elenco file di esempio consente di visualizzare un elenco dei file in un campione di formazione ed eseguire varie operazioni in uno o più file. Nella scheda **tag** **pertinenza** \> , nel riquadro a sinistra dei **file di esempio** viene visualizzato un elenco di file di esempio per l'elaborazione con processi di valutazione, formazione, catch-up e incoerenze. 
+L'elenco file di esempio consente di visualizzare un elenco dei file in un campione di formazione ed eseguire varie operazioni in uno o più file. Nella scheda **tag pertinenza** \> **Tag** , nel riquadro a sinistra dei **file di esempio** viene visualizzato un elenco di file di esempio per l'elaborazione con processi di valutazione, formazione, catch-up e incoerenze. 
   
-1. Nella scheda ** \> Tag pertinenza** Selezionare i file di esempio nell'elenco a discesa riquadro sinistro. I file di esempio sono elencati nel riquadro sinistro. 
+1. Nella scheda ** \> tag pertinenza** Selezionare i file di esempio nell'elenco a discesa riquadro sinistro. I file di esempio sono elencati nel riquadro sinistro. 
     
     ![Elenco di file campione per Tag di pertinenza](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   

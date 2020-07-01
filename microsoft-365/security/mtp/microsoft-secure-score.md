@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 44ba7a1c877580f31ca858f7fefcc502e0bb8beb
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844625"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936630"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -56,6 +56,19 @@ Ogni azione di miglioramento vale 10 punti o meno. La maggior parte sono segnati
 ### <a name="products-included-in-secure-score"></a>Prodotti inclusi nel punteggio sicuro
 
 Sono attualmente disponibili suggerimenti per Microsoft 365 (incluso Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate da terze parti o da una attenuazione alternativa.
+
+### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
+
+Microsoft Secure Score ha aggiornato le azioni di miglioramento per supportare le impostazioni predefinite per la [sicurezza in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), che facilitano la protezione dell'organizzazione con quelle preconfigurate per gli attacchi più comuni.
+
+Se si attivano le impostazioni predefinite per la sicurezza, verranno assegnati punti completi per le azioni di miglioramento seguenti:
+
+- Verificare che tutti gli utenti possano completare l'autenticazione a più fattori per l'accesso sicuro (9 punti)
+- Richiedere l'AMF per i ruoli amministrativi (10 punti)
+- Abilitare il criterio per bloccare l'autenticazione legacy (7 punti)
+
+>[!IMPORTANT]
+>Le impostazioni predefinite per la sicurezza includono funzionalità di sicurezza che forniscono una sicurezza analoga alle azioni di miglioramento "criterio di accesso a rischio" e "criterio di rischio utente". Invece di impostare questi criteri in base alle impostazioni predefinite per la sicurezza, è consigliabile aggiornare i relativi stati in "risolti tramite attenuazione alternativa".
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 

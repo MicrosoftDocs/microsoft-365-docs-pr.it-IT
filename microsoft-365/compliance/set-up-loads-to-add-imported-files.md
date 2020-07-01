@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: "Esaminare i passaggi per aggiungere i file importati all'ultimo carico definito, o batch, di file prima di eseguire la formazione di pertinenza in Advanced eDiscovery.  "
-ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Esaminare i passaggi per aggiungere i file importati all'ultimo carico definito, o batch, di file prima di eseguire la formazione di pertinenza in Advanced eDiscovery.
+ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636294"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936817"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Impostare i carichi per aggiungere i file importati in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery, un carico è un nuovo batch di file aggiunto a un caso. Per impostazione predefinita, viene definito un carico e vengono aggiunti tutti i file importati. Prima di eseguire la formazione di pertinenza, i file importati devono essere aggiunti al carico. 
   
@@ -40,7 +40,7 @@ Si considerino gli scenari seguenti:
 
 Tutti i file importati devono essere aggiunti a un carico da elaborare in Advanced eDiscovery. I file importati vengono aggiunti all'ultimo carico definito. Se si importano ulteriori file in un secondo momento, è necessario aggiungerli anche al carico.
   
-1. Nella scheda configurazione pertinenza pertinenza selezionare **carica**. ** \> **
+1. Nella scheda ** \> configurazione** pertinenza pertinenza selezionare **carica**.
     
     ![Scheda dei caricamenti per la configurazione di pertinenza](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
@@ -61,7 +61,7 @@ I file possono ora essere elaborati in una pertinenza eDiscovery avanzata per la
 
 Se si modifica il nome del carico, è consigliabile utilizzare un nome significativo per il caso.
   
-1. Nella scheda configurazione pertinenza pertinenza selezionare **carica**. ** \> **
+1. Nella scheda ** \> configurazione** pertinenza pertinenza selezionare **carica**.
     
 2. Nell'elenco **gestione carichi** selezionare un carico e fare clic sull'icona **modifica** . Viene visualizzata la finestra modifica caricamento. 
     
@@ -95,7 +95,7 @@ I carichi di rotolamento e la funzionalità di catch-up variano come indicato di
   
 ## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Aggiunta di un nuovo caricamento dei file con i carichi di catch-up e Rolling
 
-1. Nella scheda configurazione pertinenza pertinenza selezionare **carica**. ** \> **
+1. Nella scheda ** \> configurazione** pertinenza pertinenza selezionare **carica**.
     
 2. In **gestione carichi**fare clic sull' **+** icona per aggiungere un carico. Viene visualizzato un messaggio di conferma. 
     

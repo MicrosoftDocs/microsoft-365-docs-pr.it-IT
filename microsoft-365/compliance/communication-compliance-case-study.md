@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 39815140d223d95275e03b0e85b931699bd69f7e
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: d35179d38277ada22db9bc7ad879f1f7405a9aec
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919713"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936861"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Case Study-Contoso configura rapidamente un criterio di lingua offensivo per le comunicazioni di Microsoft teams, Exchange e Yammer
 
@@ -39,7 +39,7 @@ Questo caso di studio riguarderà le nozioni di base per la configurazione rapid
 - Passaggio 3: Configuring Prerequisites e Creating a Communication Compliance Policy
 - Passaggio 4: analisi e correzione degli avvisi
 
-## <a name="step-1---planning-for-communication-compliance"></a>Passaggio 1-pianificazione della conformità della comunicazione
+## <a name="step-1-planning-for-communication-compliance"></a>Passaggio 1: pianificazione della conformità alla comunicazione
 
 Gli amministratori IT di Contoso e gli specialisti della conformità hanno partecipato a webinar online sulle soluzioni di conformità in Microsoft 365 e hanno deciso che i criteri di conformità della comunicazione consentiranno di soddisfare i requisiti dei criteri aziendali aggiornati per la riduzione delle molestie sul posto Lavorando insieme, sono stati sviluppati un piano per la creazione e l'abilitazione di un criterio di conformità di comunicazione che monitorerà la lingua offensiva per le chat inviate in Microsoft teams, i messaggi privati e le conversazioni della community in Yammer e nei messaggi di posta elettronica inviati in Exchange Online. Il piano include l'identificazione:
 
@@ -71,7 +71,7 @@ Il primo passaggio consiste nel confermare che la licenza Microsoft 365 di Conto
 
 Gli amministratori IT di Contoso eseguono la procedura seguente per verificare il supporto delle licenze per contoso:
 
-1. Gli amministratori IT possono accedere all'interfaccia di **amministrazione di Microsoft 365** [(https://admin.microsoft.com) ](https://admin.microsoft.com) e passare a **Microsoft 365 Admin Center** > **Billing** > **licenses**.
+1. Gli amministratori IT possono accedere all'interfaccia di **amministrazione di Microsoft 365** [( https://admin.microsoft.com) ](https://admin.microsoft.com) e passare a **Microsoft 365 Admin Center**  >  **Billing**  >  **licenses**.
 
 2. Qui confermano di disporre di una delle [Opzioni di licenza](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#before-you-begin) che include il supporto per la conformità alla comunicazione.
 
@@ -81,7 +81,7 @@ Gli amministratori IT di Contoso eseguono la procedura seguente per verificare i
 
 Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. Le [autorizzazioni devono essere configurate](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance) in modo che gli amministratori IT di Contoso e gli specialisti della conformità abbiano accesso alla conformità della comunicazione.
 
-1. Gli amministratori IT di Contoso accede alla pagina **Office 365 Security and Compliance Center** Permissions [(https://protection.office.com/permissions) ](https://protection.office.com/permissions) utilizzando le credenziali per un account di amministratore globale e seleziona il collegamento per visualizzare e gestire i ruoli in Microsoft 365.
+1. Gli amministratori IT di Contoso accede alla pagina **Office 365 Security and Compliance Center** Permissions [( https://protection.office.com/permissions) ](https://protection.office.com/permissions) utilizzando le credenziali per un account di amministratore globale e seleziona il collegamento per visualizzare e gestire i ruoli in Microsoft 365.
 2. Dopo aver selezionato **Crea**, assegnare al nuovo gruppo di ruoli un nome descrittivo di "*conformità alla comunicazione*" e selezionare **Avanti**.
 3. Selezionano **Scegli ruoli** , quindi seleziona **Aggiungi**. Aggiungono i ruoli necessari selezionando la casella di controllo per l' *amministratore della revisione di supervisione*, la *gestione dei casi*, l' *amministratore della conformità*e la *Revisione*, quindi selezionare **Aggiungi**, **fatto** e **Avanti**.
 
@@ -92,7 +92,7 @@ Per impostazione predefinita, gli amministratori globali non possono accedere al
 
 ![Revisione della conformità di comunicazione](../media/communication-compliance-case-review.png)
 
-## <a name="step-2---accessing-communication-compliance-in-microsoft-365"></a>Passaggio 2: accesso alla conformità della comunicazione in Microsoft 365
+## <a name="step-2-accessing-communication-compliance-in-microsoft-365"></a>Passaggio 2: accesso alla conformità delle comunicazioni in Microsoft 365
 
 Dopo aver configurato le autorizzazioni per la conformità della comunicazione, gli amministratori IT di Contoso e gli specialisti di conformità definiti nel nuovo gruppo di ruoli possono accedere alla soluzione di conformità della comunicazione in Microsoft 365. Gli amministratori IT di Contoso e gli specialisti della conformità dispongono di diversi modi per accedere alla conformità della comunicazione e per iniziare a creare un nuovo criterio:
 
@@ -103,13 +103,13 @@ Dopo aver configurato le autorizzazioni per la conformità della comunicazione, 
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>Partendo direttamente dalla soluzione di conformità della comunicazione
 
-Il modo più rapido per accedere alla soluzione consiste nell'eseguire l'accesso direttamente alla soluzione **Communication Compliance** (<https://compliance.microsoft.com/supervisoryreview>). Se si utilizza questo collegamento, contoso IT Administrators and Compliance Specialists verrà indirizzato al Dashboard Overview di Communication Compliance, in cui è possibile esaminare rapidamente lo stato degli avvisi e creare nuovi criteri dai modelli predefiniti.
+Il modo più rapido per accedere alla soluzione consiste nell'eseguire l'accesso direttamente alla soluzione **Communication Compliance** ( <https://compliance.microsoft.com/supervisoryreview> ). Se si utilizza questo collegamento, contoso IT Administrators and Compliance Specialists verrà indirizzato al Dashboard Overview di Communication Compliance, in cui è possibile esaminare rapidamente lo stato degli avvisi e creare nuovi criteri dai modelli predefiniti.
 
 ![Panoramica della conformità alla comunicazione](../media/communication-compliance-case-overview.png)
 
 ### <a name="starting-from-the-microsoft-365-compliance-center"></a>Partendo dal centro conformità di Microsoft 365
 
-Un altro modo semplice per gli amministratori IT di Contoso e gli specialisti di conformità per accedere alla soluzione di conformità alla comunicazione consiste nell'eseguire l'accesso direttamente al **centro conformità di Microsoft 365** [(https://compliance.microsoft.com)](https://compliance.microsoft.com). Dopo aver eseguito l'accesso, gli utenti devono semplicemente selezionare il controllo **Mostra tutto** per visualizzare tutte le soluzioni di conformità e quindi selezionare la soluzione di conformità per la **comunicazione** per iniziare.
+Un altro modo semplice per gli amministratori IT di Contoso e gli specialisti di conformità per accedere alla soluzione di conformità alla comunicazione consiste nell'eseguire l'accesso direttamente al **centro conformità di Microsoft 365** [( https://compliance.microsoft.com) ](https://compliance.microsoft.com). Dopo aver eseguito l'accesso, gli utenti devono semplicemente selezionare il controllo **Mostra tutto** per visualizzare tutte le soluzioni di conformità e quindi selezionare la soluzione di conformità per la **comunicazione** per iniziare.
 
 ![Centro conformità](../media/communication-compliance-case-center.png)
 
@@ -121,7 +121,7 @@ Gli amministratori IT di Contoso e gli specialisti della conformità possono anc
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>A partire dall'interfaccia di amministrazione di Microsoft 365
 
-Per accedere alla conformità della comunicazione quando si parte dall'interfaccia di amministrazione di Microsoft 365, gli amministratori IT di Contoso e gli specialisti della conformità accedono all'interfaccia di amministrazione di Microsoft 365 [(https://admin.microsoft.com) ](https://admin.microsoft.com) e accedono a **Microsoft 365 Admin Center** > **Compliance**.
+Per accedere alla conformità della comunicazione quando si parte dall'interfaccia di amministrazione di Microsoft 365, gli amministratori IT di Contoso e gli specialisti della conformità accedono all'interfaccia di amministrazione di Microsoft 365 [( https://admin.microsoft.com) ](https://admin.microsoft.com) e accedono a **Microsoft 365 Admin Center**  >  **Compliance**.
 
 ![Collegamento di conformità di comunicazione](../media/communication-compliance-case-compliance-link.png)
 
@@ -137,7 +137,7 @@ Dopo aver selezionato **Mostra tutto**, gli amministratori IT di Contoso possono
 
 ![Panoramica della conformità alla comunicazione](../media/communication-compliance-case-overview.png)
 
-## <a name="step-3---configuring-prerequisites-and-creating-a-communication-compliance-policy"></a>Passaggio 3: Configuring Prerequisites e Creating a Communication Compliance Policy
+## <a name="step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy"></a>Passaggio 3: Configuring Prerequisites e Creating a Communication Compliance Policy
 
 Per iniziare a utilizzare un criterio di conformità della comunicazione, sono disponibili diversi prerequisiti che gli amministratori IT di Contoso devono configurare prima di impostare il nuovo criterio per il monitoraggio per la lingua offensiva. Una volta completati questi prerequisiti, contoso IT Administrators and Compliance Specialists è in grado di configurare il nuovo criterio e gli specialisti della conformità possono avviare indagini e correggere eventuali avvisi generati.
 
@@ -159,12 +159,12 @@ Gli specialisti della conformità di Contoso desiderano aggiungere tutti i dipen
 
 È necessario creare un nuovo gruppo per includere tutti i dipendenti di Contoso, in modo da eseguire le operazioni seguenti:
 
-1. Amministratori IT di Contoso è possibile accedere all'interfaccia di **amministrazione di Microsoft 365** [(https://admin.microsoft.com) ](https://admin.microsoft.com) e accedere ai**gruppi**di**gruppi** > di interfaccia di **Amministrazione** > di Microsoft 365.
+1. Amministratori IT di Contoso è possibile accedere all'interfaccia di **amministrazione di Microsoft 365** [( https://admin.microsoft.com) ](https://admin.microsoft.com) e accedere ai gruppi di gruppi di interfaccia di **amministrazione di Microsoft 365**  >  **Groups**  >  **Groups**.
 2. Selezionare **Aggiungi un gruppo** e completare la procedura guidata per creare un nuovo gruppo o gruppo di *distribuzione*di *Microsoft 365* .
 
 ![Gruppi](../media/communication-compliance-case-all-employees.png)
 
-3. Dopo aver creato il nuovo gruppo, è necessario aggiungere tutti gli utenti di Contoso al nuovo gruppo. Aprire l'interfaccia **di amministrazione** [https://outlook.office365.com/ecp) di Exchange e accedere](https://outlook.office365.com/ecp) ai**gruppi**di**destinatari** > dell'interfaccia di **Amministrazione** > di Exchange. Gli amministratori IT di Contoso selezionano l'area di appartenenza e il nuovo gruppo *tutti i dipendenti* che hanno creato e selezionano il controllo di **modifica** per aggiungere tutti i dipendenti di Contoso al nuovo gruppo nella procedura guidata.
+3. Dopo aver creato il nuovo gruppo, è necessario aggiungere tutti gli utenti di Contoso al nuovo gruppo. Aprire l'interfaccia di **Amministrazione** [ https://outlook.office365.com/ecp) di Exchange e accedere](https://outlook.office365.com/ecp) ai gruppi di destinatari dell'interfaccia di **amministrazione di Exchange**  >  **recipients**  >  **groups**. Gli amministratori IT di Contoso selezionano l'area di appartenenza e il nuovo gruppo *tutti i dipendenti* che hanno creato e selezionano il controllo di **modifica** per aggiungere tutti i dipendenti di Contoso al nuovo gruppo nella procedura guidata.
 
 ![Interfaccia di amministrazione di Exchange](../media/communication-compliance-case-eac.png)
 
@@ -181,7 +181,7 @@ Con tutti i prerequisiti completati, gli amministratori IT e gli specialisti di 
 
 ![Procedura guidata per la conformità alla comunicazione](../media/communication-compliance-case-wizard.png)
 
-## <a name="step-4--investigate-and-remediate-alerts"></a>Passaggio 4: indagare e correggere gli avvisi
+## <a name="step-4-investigate-and-remediate-alerts"></a>Passaggio 4: indagare e correggere gli avvisi
 
 Dopo aver configurato il criterio di conformità della comunicazione per il monitoraggio per la lingua offensiva, il passaggio successivo per gli specialisti della conformità di Contoso consiste nell'esaminare e correggere gli eventuali avvisi generati dal criterio. Il criterio richiederà fino a 24 ore per elaborare completamente le comunicazioni in tutti i canali di origine della comunicazione e per visualizzare gli avvisi nel **dashboard di avviso**.
 

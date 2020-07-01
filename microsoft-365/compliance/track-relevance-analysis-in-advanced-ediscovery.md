@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Informazioni su come visualizzare e interpretare lo stato e i risultati della formazione sulla pertinenza per i problemi di caso in Advanced eDiscovery.  '
-ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come visualizzare e interpretare lo stato e i risultati della formazione sulla pertinenza per i problemi di caso in Advanced eDiscovery.
+ms.openlocfilehash: bf1fe2fc6c0f3ff80fd7e53d55149a61009e2b32
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636619"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936219"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Monitorare l'analisi della pertinenza in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery, la scheda della pista di pertinenza Visualizza la validità calcolata dell'allenamento di pertinenza eseguito nella scheda Tag e indica il passaggio successivo da eseguire nel processo di formazione iterativo in rilevanza. 
   
@@ -53,7 +53,7 @@ In Advanced eDiscovery, la scheda della pista di pertinenza Visualizza la validi
   
     Quando la valutazione non viene completata con il primo set di file di esempio, la valutazione potrebbe essere il passaggio successivo per la codifica di altri file. 
     
-    In **pista** **pertinenza** \> , l'indicatore di avanzamento della formazione e il suggerimento per gli strumenti indicano il numero stimato di esempi aggiuntivi necessari per raggiungere la stabilità. Questa stima fornisce una guida di riferimento per l'addestramento supplementare necessario.
+    In **pista pertinenza** \> **Track**, l'indicatore di avanzamento della formazione e il suggerimento per gli strumenti indicano il numero stimato di esempi aggiuntivi necessari per raggiungere la stabilità. Questa stima fornisce una guida di riferimento per l'addestramento supplementare necessario.
     
     ![Corso di formazione sulla traccia di pertinenza](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
@@ -84,7 +84,7 @@ Se si desidera importare nuovi file dopo il calcolo del batch, l'amministratore 
 Se sono presenti incoerenze nel tagging dei file, può influire sull'analisi. Il processo di coerenza tagging avanzato di eDiscovery può essere utilizzato quando i risultati non sono ottimali o la coerenza è in dubbio. Viene restituito un elenco dei possibili file contrassegnati con incoerenza, che possono essere esaminati e contrassegnati nuovamente, se necessario.
   
 > [!NOTE]
-> Dopo sette o più turni di allenamento dopo la valutazione, la coerenza di tagging può essere visualizzata in caso di **rilevanza** \> **Track** \> **Issue** \> **dei risultati** \> dettagliati **avanzamento della formazione**. Questa revisione viene fatta per un problema alla volta. 
+> Dopo sette o più turni di allenamento dopo la valutazione, la coerenza di tagging può essere visualizzata in caso di **rilevanza** \> **Track** \> **Issue** \> **dei risultati dettagliati** \> **avanzamento della formazione**. Questa revisione viene fatta per un problema alla volta. 
   
 1. Nella ** \> colonna pertinenza**espandere la riga di un problema.
     
@@ -133,13 +133,13 @@ Nel riquadro **avanzamento formazione** è incluso un grafico dello stato di ava
  **Grafico Progress Training**: indica il grado di stabilità della formazione di pertinenza dopo un certo numero di cicli di formazione rilevanza rispetto al valore della misura F. Quando si passa da sinistra a destra all'interno del grafico, l'intervallo di confidenza si restringe e viene utilizzato, insieme alla misura F, dalla pertinenza avanzata di eDiscovery per determinare la stabilità quando i risultati della formazione sulla pertinenza sono ottimizzati.
   
 > [!NOTE]
-> La pertinenza utilizza F2, una metrica di misura F in cui il richiamo riceve il doppio del peso di precisione. Per i casi con elevata ricchezza (oltre il 25%), la pertinenza utilizza la F1 (rapporto 1:1). Il rapporto di misura F può essere configurato in \> **Impostazioni avanzate**per l' **installazione di pertinenza** . 
+> La pertinenza utilizza F2, una metrica di misura F in cui il richiamo riceve il doppio del peso di precisione. Per i casi con elevata ricchezza (oltre il 25%), la pertinenza utilizza la F1 (rapporto 1:1). Il rapporto di misura F può essere configurato in impostazioni avanzate per l' **installazione di pertinenza** \> **Advanced settings**. 
   
 ### <a name="batch-calculation-results"></a>Risultati del calcolo batch
 
 Nel riquadro dei **risultati del calcolo batch** è incluso il numero di file che sono stati segnati per pertinenza, come indicato di seguito: 
   
-- **Success**
+- **Esito positivo**
     
 - **Empty**: non contiene testo, ad esempio solo spazi/tabulazioni
     

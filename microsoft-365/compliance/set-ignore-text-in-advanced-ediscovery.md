@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: 'Informazioni su come definire la regola per ignorare testo specifico quando si utilizzano i moduli Analyze and process in Advanced eDiscovery.  '
-ms.openlocfilehash: cd425c71c06074b5d12851dd126692c914b95489
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come definire la regola per ignorare testo specifico quando si utilizzano i moduli Analyze and process in Advanced eDiscovery.
+ms.openlocfilehash: fd7b1f3236c88faf792a97146bbed35802f6c695
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631253"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936893"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Opzione set Ignora testo per ANALYZE in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 La funzionalità Ignora testo può essere applicata a tutti o a uno dei seguenti moduli avanzati di eDiscovery: Analyze (near-Duplicates, email Threads, Themes) e pertinenza. Il testo ignorato non verrà visualizzato nei file visualizzati in pertinenza e l'analisi/calcoli ignorerà il testo ignorato.
   
@@ -62,7 +62,7 @@ Le espressioni regolari sono supportate per l'utilizzo quando si definisce Ignor
     
     **Questa è la seconda frase e la seconda riga "**
     
-    prima espressione regolare (.\*) $ provocherà:
+    prima espressione regolare (. \* ) $ provocherà:
     
     **"Questo è**
     
@@ -76,7 +76,7 @@ Le espressioni regolari sono supportate per l'utilizzo quando si definisce Ignor
     
     Ad esempio, l'espressione regolare seguente eliminerà le dichiarazioni di non responsabilità e le istruzioni legali che si trovavano nel thread di posta elettronica tra le stringhe Begin e end:
     
-    **Questo messaggio contiene informazioni riservate (. | \s)\*se è richiesta la verifica, richiedere una versione cartacea**
+    **Questo messaggio contiene informazioni riservate (. | \s) \* se è richiesta la verifica, richiedere una versione cartacea**
     
 - Per rimuovere una dichiarazione di non responsabilità (compresi i caratteri speciali): 
     
@@ -90,11 +90,11 @@ Le espressioni regolari sono supportate per l'utilizzo quando si definisce Ignor
     
     l'espressione regolare per rimuovere la dichiarazione di non responsabilità di cui sopra dovrebbe essere la seguente: 
     
-    **\/\\*\\Questo messaggio contiene informazioni\.riservate (. | \s)\* se è richiesta la verifica, richiedere una versione\. cartacea\/\\*\\**
+    **\/\\*\\Questo messaggio contiene informazioni riservate \. (. | \s) \* se è richiesta la verifica, richiedere una versione \. cartacea\/\\*\\**
     
 - Regole di espressione regolare:
     
-  - Tutti i caratteri che non fanno parte dell'alfabeto eccetto per gli spazi, "_" e "-" devono essere preceduti da "\".
+  - Tutti i caratteri che non fanno parte dell'alfabeto eccetto per gli spazi, "_" e "-" devono essere preceduti da " \" .
     
   - Il campo eExpression regolare può essere di lunghezza illimitata.
     
@@ -103,7 +103,7 @@ Le espressioni regolari sono supportate per l'utilizzo quando si definisce Ignor
   
 ## <a name="define-ignore-text-rule"></a>Definire la regola ignora testo
 
-1. Nella sezione **Ignora testo** della scheda **Gestisci \> opzioni di \> analisi Analyze** fare clic sull' **+** icona per aggiungere una regola. 
+1. Nella sezione **Ignora testo** della scheda **Gestisci \> \> Opzioni di analisi Analyze** fare clic sull' **+** icona per aggiungere una regola. 
     
 2. Nella finestra di dialogo **Aggiungi testo Ignora** , nel campo **nome** , digitare un nome per la regola di testo Ignora. 
     

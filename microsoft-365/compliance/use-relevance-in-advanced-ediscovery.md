@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: 'Informazioni sul modulo pertinenza in Advanced eDiscovery, tra cui un flusso di lavoro e linee guida e passaggi per la formazione e la revisione dei file.  '
-ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni sul modulo pertinenza in Advanced eDiscovery, tra cui un flusso di lavoro e linee guida e passaggi per la formazione e la revisione dei file.
+ms.openlocfilehash: 8d5cbfff2b205ba785cda269bb09560b2a813f3c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626392"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936609"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Utilizzare il modulo pertinenza in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery, il modulo pertinenza include la formazione sulla pertinenza e la revisione dei file correlati a un caso. Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
   

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689244"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936785"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -70,10 +70,16 @@ L'aggiunta di gruppi e liste di distribuzione ai criteri di conformità della co
 
 Con i criteri di conformità della comunicazione, è possibile scegliere di analizzare i messaggi in una o più delle seguenti piattaforme di comunicazione come gruppo o come origini autonome. Le comunicazioni acquisite su queste piattaforme vengono conservate per sette anni per ogni criterio per impostazione predefinita, anche se gli utenti lasciano l'organizzazione e le relative cassette postali vengono eliminate.
 
-- **Microsoft teams**: è possibile analizzare le comunicazioni chat e gli allegati associati in entrambi i canali di Microsoft teams pubblici e privati e nelle chat individuali. Chat e allegati dei team corrispondenti le condizioni dei criteri di conformità della comunicazione possono richiedere fino a 24 ore. Utilizzare le seguenti configurazioni di gestione dei gruppi per controllare le chat utente e le comunicazioni dei canali nei team:
+- **Microsoft teams**: è possibile analizzare le comunicazioni di chat sia nei canali di Microsoft Team pubblici che in quelli privati e nelle chat individuali. Quando gli utenti vengono assegnati a un criterio di conformità della comunicazione con la copertura Microsoft teams selezionata, le comunicazioni chat per gli utenti vengono monitorate automaticamente in tutti i team di Microsoft in cui gli utenti sono membri. La copertura Microsoft teams viene automaticamente inclusa per i modelli di criteri predefiniti ed è selezionata per impostazione predefinita nel modello di criteri personalizzato. Chat teams la corrispondenza delle condizioni dei criteri di conformità della comunicazione può richiedere fino a 24 ore. Utilizzare le seguenti configurazioni di gestione dei gruppi per controllare le chat utente e le comunicazioni dei canali nei team:
 
     - **Per le comunicazioni di chat dei team:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di conformità della comunicazione. Questa impostazione è per le relazioni tra utenti/chat uno-a-uno o uno-a-molti.
     - **Per le comunicazioni di canale dei team:** Assegnare a ogni canale Microsoft teams o al gruppo Microsoft 365 che si desidera analizzare che contenga un utente specifico per i criteri di conformità della comunicazione. Se si aggiunge lo stesso utente ad altri canali Microsoft teams o gruppi Microsoft 365, accertarsi di aggiungere questi nuovi canali e gruppi ai criteri di conformità della comunicazione.
+    - **Per le comunicazioni chat di team con ambienti di posta elettronica ibridi**: la conformità alla comunicazione può monitorare i messaggi di chat per gli utenti per le organizzazioni che dispongono di una distribuzione locale di Exchange o di un provider di posta elettronica esterno che ha abilitato Microsoft teams. È necessario creare un gruppo di distribuzione per gli utenti che dispongono di cassette postali locali o esterne da monitorare. Quando si crea un criterio di conformità della comunicazione, questo gruppo di distribuzione viene assegnato come selezione di **utenti e gruppi sorvegliati** nella procedura guidata per i criteri.
+
+    >[!IMPORTANT]
+    >È necessario presentare una richiesta con il supporto tecnico Microsoft per consentire all'organizzazione di utilizzare l'interfaccia utente grafica nel centro sicurezza & conformità per cercare i dati di chat dei team per gli utenti locali. Per ulteriori informazioni, vedere [ricerca di cassette postali basate sul cloud per gli utenti locali](search-cloud-based-mailboxes-for-on-premises-users.md).
+
+Per cercare dati di chat di Teams nelle cassette postali basate sul cloud degli utenti locali, è necessario presentare al Supporto tecnico Microsoft la richiesta di abilitare l'organizzazione all'uso dell'interfaccia utente grafica nel Centro sicurezza e conformità.
 
 - **Posta elettronica di Exchange**: le cassette postali ospitate in Exchange Online come parte dell'abbonamento a Microsoft 365 o Office 365 sono tutte idonee per l'analisi dei messaggi. Messaggi di posta elettronica di Exchange e allegati che corrispondono alle condizioni dei criteri di conformità della comunicazione possono richiedere fino a 24 ore. I tipi di allegati supportati per la conformità alla comunicazione sono gli stessi dei [tipi di file supportati per le ispezioni del contenuto delle regole del flusso di posta di Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 

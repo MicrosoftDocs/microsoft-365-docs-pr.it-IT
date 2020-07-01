@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: "Informazioni sulle linee guida per l'esportazione dei dati del caso di eDiscovery e dei risultati per la revisione tramite il processo di esportazione in Advanced eDiscovery.  "
+description: Informazioni sulle linee guida per l'esportazione dei dati del caso di eDiscovery e dei risultati per la revisione tramite il processo di esportazione in Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88be4a96720aee2392b6e0972919997f8634054b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ef717ca82962417856c65cae605c445971b27256
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817765"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936413"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>Esportare i dati del caso in Advanced eDiscovery (Classic)
 

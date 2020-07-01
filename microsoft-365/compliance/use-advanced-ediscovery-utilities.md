@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: 'Informazioni sulle utilità in Advanced eDiscovery, tra cui log del caso, dati di cancellazione, errori di processo, modifica della pertinenza e analisi della trasparenza.  '
-ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni sulle utilità in Advanced eDiscovery, tra cui log del caso, dati di cancellazione, errori di processo, modifica della pertinenza e analisi della trasparenza.
+ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633391"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936619"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Usare le utilità di Advanced eDiscovery (classico)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Le utilità visualizzate e disponibili in Advanced eDiscovery dipendono dai ruoli contesto e utente.
   
@@ -38,7 +38,7 @@ Il file di registro può essere scaricato anche nel computer del client. L'opzio
   
 1. Sulla barra dei menu, fare clic sull'icona **cremagliera** . 
     
-2. Nella scheda **utilità di impostazioni \> e utilità** Selezionare ** \> installazione log dei casi**.
+2. Nella scheda ** \> utilità di impostazioni e utilità** Selezionare ** \> installazione log dei casi**.
     
 3. Selezionare il **livello di registrazione** come indicato di seguito: 
     
@@ -57,7 +57,7 @@ Se è necessario eliminare o reinizializzare i dati del caso, è necessario iniz
   
 1. Sulla barra dei menu, fare clic sull'icona **cremagliera** . 
     
-2. Nella scheda **utilità di impostazioni \> e utilità** Selezionare **Annulla installazione dati \> **.
+2. Nella scheda ** \> utilità di impostazioni e utilità** selezionare **Annulla \> installazione dati**.
     
 3. Selezionare un'opzione per l'inizializzazione delle informazioni:
     
@@ -77,7 +77,7 @@ In questa sezione viene descritto come ignorare o eseguire il rollback di un ese
   
 1. Sulla barra dei menu, fare clic sull'icona **cremagliera** . 
     
-2. Nella scheda **utilità di impostazioni \> e utilità** Selezionare **modifica pertinenza**.
+2. Nella scheda ** \> utilità di impostazioni e utilità** Selezionare **modifica pertinenza**.
     
 3. Selezionare una delle opzioni seguenti: 
     
@@ -99,7 +99,7 @@ In uno scenario con più problemi, è possibile generare un report di analisi de
   
 1. Sulla barra dei menu, fare clic sull'icona **cremagliera** . 
     
-2. Nella scheda **Utilità impostazioni e \> utilità** selezionare **installazione analisi \> trasparenza**.
+2. Nella scheda ** \> Utilità impostazioni e utilità** Selezionare ** \> installazione analisi trasparenza**.
     
 3. In * * file ID * *, immettere l'ID file del file da elaborare.
     

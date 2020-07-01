@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: "Informazioni su come utilizzare la scheda test dopo il calcolo batch in Advanced eDiscovery per testare, confrontare e convalidare la qualità complessiva dell'elaborazione.  "
-ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come utilizzare la scheda test dopo il calcolo batch in Advanced eDiscovery per testare, confrontare e convalidare la qualità complessiva dell'elaborazione.
+ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637200"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936209"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Analisi della pertinenza del test in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 La scheda test in Advanced eDiscovery consente di testare, confrontare e convalidare la qualità complessiva dell'elaborazione. Questi test vengono eseguiti dopo il calcolo in batch. Contrassegnando i file della raccolta, un esperto rende il giudizio finale sul fatto che ogni file contrassegnato è effettivamente pertinente per il caso. 
   
@@ -62,7 +62,7 @@ Questo test fornisce statistiche e un confronto tra il set di revisione e il tes
     
 9. Fare clic su **Avvia tagging**. Viene generato un esempio di test.
     
-10. Esaminare e contrassegnare ognuno dei file nella scheda ** \> Tag pertinenza** e, al termine, fare clic su **Calcola**.
+10. Esaminare e contrassegnare ognuno dei file nella scheda ** \> tag pertinenza** e, al termine, fare clic su **Calcola**.
     
 11. Nella scheda test è possibile fare clic su **Visualizza risultati** per visualizzare i risultati dei test. Un esempio è illustrato nella figura seguente. 
     
@@ -106,7 +106,7 @@ Il test "test Slice" esegue test analogo al test "test the rest", ma a un segmen
     
 9. Fare clic su **Avvia tagging**. Viene generato un esempio di test.
     
-10. Esaminare e contrassegnare ognuno dei file nella scheda ** \> Tag pertinenza** e, al termine, fare clic su **Calcola**. 
+10. Esaminare e contrassegnare ognuno dei file nella scheda ** \> tag pertinenza** e, al termine, fare clic su **Calcola**. 
     
 11. Nella scheda test è possibile fare clic su **Visualizza risultati** per visualizzare i risultati dei test. 
     

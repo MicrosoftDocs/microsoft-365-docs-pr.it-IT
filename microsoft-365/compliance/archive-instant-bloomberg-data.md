@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Informazioni su come gli amministratori possono eseguire l'installazione & utilizzare un connettore nativo per importare i dati dallo strumento Instant Bloomberg chat in Microsoft 365.
-ms.openlocfilehash: 02f197ba61f422852db6d4bc4c045ced0bf3d13e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Informazioni su come gli amministratori possono configurare e utilizzare un connettore di dati per importare e archiviare i dati dallo strumento Instant Bloomberg chat in Microsoft 365.
+ms.openlocfilehash: 9be2e431241e13e59c67c33ee3c7246896e97f1e
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818455"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936559"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurare un connettore per archiviare i dati di Instant Bloomberg
 
@@ -37,12 +37,12 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 1. L'organizzazione collabora con Bloomberg per configurare un sito Bloomberg SFTP. È inoltre possibile collaborare con Bloomberg per configurare Instant Bloomberg per copiare i messaggi di chat nel sito Bloomberg SFTP.
 
 2. Una volta ogni 24 ore, i messaggi di chat provenienti da Instant Bloomberg vengono copiati nel sito Bloomberg SFTP.
-    
+
 3. Il connettore Bloomberg istantaneo creato nel centro conformità di Microsoft 365 si connette al sito Bloomberg SFTP ogni giorno e trasferisce i messaggi di chat dalle 24 ore precedenti a un'area di archiviazione di Azure sicura nel cloud Microsoft. Il connettore converte anche il contenuto di un massaggio chat in un formato di messaggio di posta elettronica.
-    
+
 4. Il connettore importa gli elementi del messaggio di chat nella cassetta postale di un utente specifico. Verrà creata una nuova cartella denominata InstantBloomberg nella cassetta postale dell'utente specifico e gli elementi verranno importati. Il connettore esegue questa operazione utilizzando il valore della proprietà *CorporateEmailAddress* . Ogni messaggio di chat contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di chat. Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà *CorporateEmailAddress* , è anche possibile definire un mapping personalizzato caricando un file di mapping CSV. Questo file di mapping deve contenere un UUID di Bloomberg e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente. Se si Abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di chat il connettore osserverà per prima cosa il file di mapping personalizzato. Se non trova un utente valido di Microsoft 365 che corrisponde all'UUID di Bloomberg di un utente, il connettore utilizzerà la proprietà *CorporateEmailAddress* dell'elemento chat. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà *CorporateEmailAddress* dell'elemento chat, l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Molti dei passaggi di implementazione necessari per archiviare i dati di Bloomberg istantanei sono esterni a Microsoft 365 e devono essere completati prima di poter creare il connettore nel centro conformità.
 
@@ -52,21 +52,21 @@ Molti dei passaggi di implementazione necessari per archiviare i dati di Bloombe
 
 - Configurare un sito Bloomberg SFTP (Secure File Transfer Protocol). Dopo aver lavorato con Bloomberg per configurare il sito SFTP, i dati provenienti da Instant Bloomberg vengono caricati nel sito SFTP ogni giorno. Il connettore creato nel passaggio 2 si connette a questo sito SFTP e trasferisce i dati della chat alle cassette postali di Microsoft 365. SFTP crittografa anche i dati di chat istantanea di Bloomberg inviati alle cassette postali durante il processo di trasferimento.
 
-    Per informazioni su Bloomberg SFTP (denominato anche *BB-SFTP*):
+  Per informazioni su Bloomberg SFTP (denominato anche *BB-SFTP*):
 
-    - Vedere il documento "standard di connettività SFTP" sul [supporto di Bloomberg](https://www.bloomberg.com/professional/support/documentation/).
-    
-    - Contattare il servizio di [assistenza clienti Bloomberg](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc).
+  - Vedere il documento "standard di connettività SFTP" sul [supporto di Bloomberg](https://www.bloomberg.com/professional/support/documentation/).
 
-    Dopo aver collaborato con Bloomberg per configurare un sito SFTP, Bloomberg fornirà alcune informazioni all'utente dopo aver risposto al messaggio di posta elettronica di implementazione Bloomberg. Salvare una copia delle informazioni seguenti. È possibile utilizzarlo per configurare un connettore nel passaggio 3.
+  - Contattare il servizio di [assistenza clienti Bloomberg](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc).
 
-    - Codice fermo, che è un ID per l'organizzazione e che viene utilizzato per accedere al sito Bloomberg SFTP.
+  Dopo aver collaborato con Bloomberg per configurare un sito SFTP, Bloomberg fornirà alcune informazioni all'utente dopo aver risposto al messaggio di posta elettronica di implementazione Bloomberg. Salvare una copia delle informazioni seguenti. È possibile utilizzarlo per configurare un connettore nel passaggio 3.
 
-    - Password per il sito Bloomberg SFTP
+  - Codice fermo, che è un ID per l'organizzazione e che viene utilizzato per accedere al sito Bloomberg SFTP.
 
-    - URL per il sito di Bloomberg SFTP (ad esempio, sftp.bloomberg.com)
+  - Password per il sito Bloomberg SFTP
 
-    - Numero di porta per il sito Bloomberg SFTP
+  - URL per il sito di Bloomberg SFTP (ad esempio, sftp.bloomberg.com)
+
+  - Numero di porta per il sito Bloomberg SFTP
 
 - L'utente che crea un connettore Bloomberg istantaneo nel passaggio 3 (e che Scarica le chiavi pubbliche e l'indirizzo IP nel passaggio 1) deve essere assegnato al ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questa operazione è necessaria per aggiungere connettori nella pagina **connettori dati** del centro conformità di Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
@@ -99,7 +99,7 @@ Il passaggio successivo consiste nell'utilizzare le chiavi pubbliche SSH e PGP e
 
 ## <a name="step-3-create-an-instant-bloomberg-connector"></a>Passaggio 3: creare un connettore Bloomberg istantaneo
 
-L'ultimo passaggio consiste nel creare un connettore Bloomberg istantaneo nel centro conformità di Microsoft 365. Il connettore utilizza le informazioni fornite per la connessione al sito Bloomberg SFTP e trasferisce i messaggi di chat nelle caselle della cassetta postale dell'utente corrispondente in Microsoft 365. 
+L'ultimo passaggio consiste nel creare un connettore Bloomberg istantaneo nel centro conformità di Microsoft 365. Il connettore utilizza le informazioni fornite per la connessione al sito Bloomberg SFTP e trasferisce i messaggi di chat nelle caselle della cassetta postale dell'utente corrispondente in Microsoft 365.
 
 1. Andare a <https://compliance.microsoft.com> e quindi fare clic su **connettori dati**  >  **Instant Bloomberg**.
 

@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: "Informazioni sulle linee guida per la preparazione dei file di dati per l'analisi con Advanced eDiscovery.  "
-ms.openlocfilehash: c0c0b8c3477f8c3fdbe0437659a88f14fbcad1cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni sulle linee guida per la preparazione dei file di dati per l'analisi con Advanced eDiscovery.
+ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626462"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936199"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Eseguire il modulo di processo in Advanced eDiscovery (Classic)
 
-I file dei casi vengono caricati in Advanced eDiscovery durante la **preparazione** \> del **processo**. 
+I file dei casi vengono caricati in Advanced eDiscovery durante la **preparazione** del \> **processo**. 
   
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>Linee guida: preparazione dei dati per Advanced eDiscovery
 
@@ -42,7 +42,7 @@ I file dei casi vengono caricati in Advanced eDiscovery durante la **preparazion
     
 - **Tipo di file e nome**:
     
-  - Advanced eDiscovery è in grado di elaborare file di vari formati ed estrarre i file nativi caricati in un formato \*standard, ad esempio. TXT, HTML o. XML. L'elaborazione dei file di testo è più veloce rispetto ai file nativi. I file di testo estratti vengono archiviati nella cartella case.
+  - Advanced eDiscovery è in grado di elaborare file di vari formati ed estrarre i file nativi caricati in un formato standard, ad esempio \* . TXT, HTML o. XML. L'elaborazione dei file di testo è più veloce rispetto ai file nativi. I file di testo estratti vengono archiviati nella cartella case.
     
   - Non caricare file che non possono essere estratti, ad esempio file di sistema o immagini grafiche. Questi file potrebbero ritardare l'elaborazione.
     

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717274"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936444"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -40,16 +40,12 @@ La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti
 
 La distribuzione centralizzata non supporta quanto segue:
   
-- Componenti aggiuntivi per Word, Excel o PowerPoint in Office 2013
-    
+- Componenti aggiuntivi per Word, Excel o PowerPoint in Office 2013 
 - Servizio di directory locale
-    
+- Distribuzione di componenti aggiuntivi in una cassetta postale di Exchange on-Prem
 - Distribuzione di componenti aggiuntivi in SharePoint  
-
 - App Teams
-   
 - Distribuzione dei componenti aggiuntivi Component Object Model (COM) o Visual Studio Tools per Office (VSTO)
-    
 - Distribuzioni di Microsoft 365 che non includono Exchange, ad esempio Microsoft 365 Apps for business
 
 ### <a name="office-requirements"></a>Requisiti di Office

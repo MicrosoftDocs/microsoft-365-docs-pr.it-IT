@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Informazioni sul percorso in cui visualizzare i risultati del processo di analisi in Advanced eDiscovery, incluse le definizioni delle opzioni di attività visualizzate.  '
-ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni sul percorso in cui visualizzare i risultati del processo di analisi in Advanced eDiscovery, incluse le definizioni delle opzioni di attività visualizzate.
+ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626362"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936949"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Visualizzazione analisi dei risultati in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery, Progress and results for the Analyze Process può essere visualizzato in una vasta gamma di visualizzazioni come descritto di seguito.
   
 ## <a name="view-analyze-task-status"></a>Visualizzazione dello stato dell'attività Analyze
 
-In **prepara \> analisi \> stato \> attività risultati**, lo stato viene visualizzato durante e dopo l'analisi dell'esecuzione del processo. 
+In **prepara \> analisi \> \> stato attività risultati**, lo stato viene visualizzato durante e dopo l'analisi dell'esecuzione del processo. 
   
 ![Analizzare lo stato delle attività](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   

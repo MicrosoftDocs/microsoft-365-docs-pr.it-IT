@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: 'Esaminare in che modo il valore di somiglianza del documento, il livello minimo di somiglianza per due file da considerare quasi duplicati, è compatibile con Advanced eDiscovery. '
+description: Esaminare in che modo il valore di somiglianza del documento, il livello minimo di somiglianza per due file da considerare quasi duplicati, è compatibile con Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83c68eca8fba1ee8672f02f315585161c9abf2e3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 939e9ad6cb193e2019fe84f1e0d3482eebac721c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819126"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936641"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Comprendere la somiglianza del documento in Advanced eDiscovery (Classic)
 

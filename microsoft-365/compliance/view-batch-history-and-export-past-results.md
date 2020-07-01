@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
-description: "Scopri come visualizzare informazioni dettagliate per le sessioni batch di esportazione selezionate e come annullare l'ultima sessione di esportazione in Advanced eDiscovery.  "
+description: Scopri come visualizzare informazioni dettagliate per le sessioni batch di esportazione selezionate e come annullare l'ultima sessione di esportazione in Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 498cd5d0fbeea4902a0992e8210666884a308f72
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b142c5d582b9a7bb84dd518325369e4b1adccf69
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819056"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936189"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Advanced eDiscovery (Classic)
 

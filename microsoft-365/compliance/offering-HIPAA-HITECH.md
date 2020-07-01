@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773717"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936351"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Portabilità e responsabilità dell'assicurazione malattia (HIPAA) & atti HITECH
 
@@ -51,7 +51,7 @@ I servizi cloud di Microsoft Enterprise sono coperti anche da valutazioni FedRAM
 
 Per informazioni su come il cloud Microsoft aiuta i clienti a supportare HIPAA e i requisiti di HITECH, visitare le storie dei clienti [Microsoft](https://customers.microsoft.com).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
@@ -98,7 +98,7 @@ Il [Service Trust Portal](https://www.microsoft.com/trustcenter/STP/default.aspx
 
 Per assistere i clienti con questa attività, Microsoft ha pubblicato queste guide:
 
-- *Guida all'implementazione di Act HIPAA/HITECH* per [Azure](https://aka.ms/azurehipaaguidance) e per [Dynamics 365 e Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Sono stati scritti per la privacy, la sicurezza e i responsabili della conformità e gli altri responsabile dell'implementazione di HIPAA e HITECH Act, in cui vengono descritti i passaggi concreti che l'organizzazione può eseguire per mantenere la conformità.
+- *Guida all'implementazione di Act HIPAA/HITECH* per [Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/) e per [Dynamics 365 e Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Sono stati scritti per la privacy, la sicurezza e i responsabili della conformità e gli altri responsabile dell'implementazione di HIPAA e HITECH Act, in cui vengono descritti i passaggi concreti che l'organizzazione può eseguire per mantenere la conformità.
 - La [Guida pratica alla progettazione di soluzioni di integrità sicure tramite Microsoft Azure](https://aka.ms/azureindustrysecurity) consente di comprendere meglio le operazioni necessarie per adottare correttamente un servizio cloud in modo sicuro.
 - [L'indirizzamento dei requisiti di sicurezza e privacy HIPAA in Microsoft Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offre una breve panoramica sui requisiti di regolamentazione. Viene inoltre fornita un'analisi dettagliata del modo in cui sono stati creati i servizi cloud di Microsoft con le metodologie che corrispondono a tali requisiti e le linee guida su come creare soluzioni pronte per la conformità.
 
@@ -109,9 +109,9 @@ Per assistere i clienti con questa attività, Microsoft ha pubblicato queste gui
 ## <a name="resources"></a>Risorse
 
 - [Regola omnibus HIPAA](https://aka.ms/HIPAA-omnibus) (la normativa finale-modifica delle regole HIPAA)
-- [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 maggio 2016)
 - [Esempio di modello HIPAA HITRUST di Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

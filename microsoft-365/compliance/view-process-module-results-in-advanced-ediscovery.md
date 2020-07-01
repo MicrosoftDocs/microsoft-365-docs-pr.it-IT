@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'Informazioni su come trovare i risultati di un modulo di processo eseguito in Advanced eDiscovery, incluso lo stato delle attività e il riepilogo dei processi.  '
-ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Informazioni su come trovare i risultati di un modulo di processo eseguito in Advanced eDiscovery, incluso lo stato delle attività e il riepilogo dei processi.
+ms.openlocfilehash: 26ef87c762fc5c77f2374978bf4a425940dd5f37
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626312"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936169"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Visualizza i risultati del modulo di processo in Advanced eDiscovery (Classic)
 
-Dopo l'avvio del **processo** di **preparazione** \> , è possibile visualizzare lo stato e i risultati. 
+Dopo l'avvio del processo di **preparazione** \> **Process** , è possibile visualizzare lo stato e i risultati. 
   
 > [!NOTE]
-> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="process-task-status"></a>Stato attività processo
 
-Nei **risultati**del **processo** \> di **preparazione** \> la pagina mostra lo stato corrente (se il processo è in esecuzione) oppure lo stato dell'ultimo processo di elaborazione, come illustrato nell'esempio seguente.
+Nei risultati del processo di **preparazione** \> **Process** \> **Results**la pagina mostra lo stato corrente (se il processo è in esecuzione) oppure lo stato dell'ultimo processo di elaborazione, come illustrato nell'esempio seguente.
   
 ![Stato delle attività del modulo processo](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
@@ -64,7 +64,7 @@ Stato attività: visualizzato dopo il completamento dell'attività. Mentre le at
   
 ## <a name="process-summary"></a>Riepilogo del processo
 
-In preparare \> il \> riepilogo \> del processo dei risultati del processo, viene visualizzata una scomposizione dei risultati di file caricati in base ai risultati dell'elaborazione e dell'errore del file.
+In preparare \> \> \> il riepilogo del processo dei risultati del processo, viene visualizzata una scomposizione dei risultati di file caricati in base ai risultati dell'elaborazione e dell'errore del file.
   
 I riquadri presentano una visualizzazione grafica delle statistiche dei file importati, come indicato di seguito:
   
@@ -104,7 +104,7 @@ La barra destra, elaborata, include:
     
 ## <a name="last-process-errors"></a>Ultimi errori del processo
 
-Nei risultati \> \> del \> processo di preparazione, vengono visualizzati i dettagli relativi agli errori dell'ultima sessione o all'azione eseguita.
+Nei \> risultati del processo di preparazione \> \> , vengono visualizzati i dettagli relativi agli errori dell'ultima sessione o all'azione eseguita.
   
 ![Errori modulo processo](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   

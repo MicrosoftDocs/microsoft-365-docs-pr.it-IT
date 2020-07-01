@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Analogamente alle funzionalità del centro conformità di Microsoft 365, il contenuto della guida è sempre in evoluzione. Scopri cosa c'è di nuovo e aggiornato in questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3bba8d0bbd68c6d28d72bcf32abdc798d7125250
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818966"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936149"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aggiornamenti recenti a Microsoft 365 content Compliance
 
@@ -112,7 +112,7 @@ Informazioni [sulle etichette di riservatezza](sensitivity-labels.md) (aggiornat
 [Utilizzare le etichette di riservatezza per proteggere il contenuto in Microsoft teams, gruppi microsoft 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md) (aggiornato)<br>Le modifiche includono:
 
 - Sono state rimosse le istruzioni di Azure AD e sono invece collegate alle [informazioni autorevoli di Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
-- Sono state aggiornate le [impostazioni per la configurazione del sito e del gruppo quando si crea o si modifica la sezione etichette di riservatezza](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) con informazioni sulla **privacy dell'impostazione dei siti di Team connessi al gruppo di Office 365** , che include la nuova opzione **nessuno** .
+- È stata aggiornata la sezione [come configurare le impostazioni del sito e del gruppo](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) con le informazioni sulla **privacy dell'impostazione dei siti per i team connessi a un gruppo di Office 365** , che include la nuova opzione **nessuno** .
 - È stata aggiunta una nota in cui viene descritto come solo le etichette con le impostazioni del sito e del gruppo saranno disponibili per la selezione quando gli utenti creano team, gruppi e siti. Questa funzionalità viene gradualmente implementata per le organizzazioni.
 
 [Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md) (aggiornata)<br>[Nuova sezione](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) con impostazioni di crittografia di esempio per alcune delle configurazioni più comunemente utilizzate per la protezione di documenti e messaggi di posta elettronica.

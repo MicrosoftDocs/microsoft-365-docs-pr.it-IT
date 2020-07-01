@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: 'Informazioni su come configurare i ruoli utente, creare casi e assegnare gli utenti ai casi in Advanced eDiscovery.  '
+description: Informazioni su come configurare i ruoli utente, creare casi e assegnare gli utenti ai casi in Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6cfc8e313816c0c01512dd0d4b71f1dbbd6e6505
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8e24354960b517815bef3cf498822d6ce9fd9dbe
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819176"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936743"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>Configurare gli utenti e i casi in Advanced eDiscovery (Classic)
 
@@ -36,7 +36,7 @@ Prima di configurare i casi e gli utenti in Advanced eDiscovery, è necessario q
   
 - Per analizzare i dati di un utente tramite Advanced eDiscovery, all'utente (custode dei dati) deve essere assegnata una licenza di Office 365 E5. In alternativa, agli utenti con una licenza di Office 365 E1 o E3 può essere assegnata una licenza di eDiscovery autonoma avanzata. Gli amministratori e i responsabili della conformità assegnati ai casi e utilizzano Advanced eDiscovery per analizzare i dati non hanno bisogno di una licenza E5. 
     
-- È necessario essere membri del gruppo di ruoli eDiscovery Manager nel &amp; Centro sicurezza e conformità per creare un caso di eDiscovery e aggiungere membri. Per aggiungersi al gruppo di ruoli eDiscovery Manager nel &amp; Centro sicurezza e conformità, è necessario essere un amministratore globale dell'organizzazione. Se non si è un amministratore globale, è necessario chiedere a un amministratore globale di aggiungerlo al gruppo di ruoli eDiscovery Manager. Per altre informazioni, vedere:
+- È necessario essere membri del gruppo di ruoli eDiscovery Manager nel &amp; Centro sicurezza e conformità per creare un caso di eDiscovery e aggiungere membri. Per aggiungersi al gruppo di ruoli eDiscovery Manager nel &amp; Centro sicurezza e conformità, è necessario essere un amministratore globale dell'organizzazione. Se non si è un amministratore globale, è necessario chiedere a un amministratore globale di aggiungerlo al gruppo di ruoli eDiscovery Manager. Per ulteriori informazioni, vedere:
     
   - [Autorizzazioni nel centro sicurezza e conformità di Microsoft 365 &amp;](~/security/office-365-security/protect-against-threats.md)
     
