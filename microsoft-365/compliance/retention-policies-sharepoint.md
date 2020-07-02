@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a SharePoint e OneDrive.
-ms.openlocfilehash: f3c7d805309a86f05cdea8769693ec6de9c1bf51
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: e7a265d39b3cca2ffb9c403cf2c87f287a9325b2
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292496"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016247"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>Informazioni sui criteri di conservazione per SharePoint e OneDrive
 
@@ -53,7 +53,7 @@ Se il criterio di conservazione è Conserva ed elimina:
     > [!NOTE]
     > Per evitare perdite accidentali di dati, non eliminiamo più definitivamente il contenuto dalla raccolta di archiviazione. Eliminiamo invece definitivamente il contenuto solo dal Cestino in modo che tutto il contenuto della raccolta di archiviazione passi al Cestino di secondo livello.
     
-2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione, il processo timer lo sposta nel Cestino di primo livello alla fine del periodo di conservazione. Se un utente elimina il contenuto da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato e quindi non è disponibile per la ricerca. Di conseguenza, una ricerca eDiscovery non può trovare alcun contenuto nel Cestino a cui applicare un blocco.
+2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione, il processo timer lo sposta nel Cestino di primo livello alla fine del periodo di conservazione. Se un utente elimina il contenuto da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni. Al termine di questi 93 giorni, il documento viene eliminato definitivamente dal Cestino di primo o di secondo livello. Il Cestino non è indicizzato e quindi non è disponibile per la ricerca. Di conseguenza, una ricerca eDiscovery non può trovare alcun contenuto nel Cestino a cui applicare un blocco.
 
 Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed elimina:
 
@@ -75,14 +75,14 @@ Il controllo delle versioni è una caratteristica di tutte le raccolte documenti
   
 Un criterio di sola conservazione mantiene tutte le versioni di un documento in una raccolta siti di SharePoint o in un account OneDrive. Quando si modifica per la prima volta un documento soggetto a un criterio di blocco o di sola conservazione, una versione dell'originale viene copiata nella raccolta di archiviazione. Quando si elimina un documento soggetto a un criterio di blocco o di sola conservazione, vengono copiate tutte le versioni nella raccolta di archiviazione, se è attivato il controllo delle versioni. Ogni versione di un documento nella Raccolta blocchi per conservazione è un elemento separato con un periodo di conservazione specifico:
   
-- Se i criteri di conservazione si basano sulla data di creazione del contenuto, ciascuna versione ha la stessa data di scadenza del documento originale. Il documento originale e le sue versioni scadono tutti allo stesso tempo.
+- If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
     
-- Se i criteri di conservazione si basano sulla data dell'ultima modifica del contenuto, ciascuna versione ha la propria data di scadenza in base a quando il documento originale è stato modificato per creare quella versione. I documenti originali e le relative versioni scadono indipendentemente l'uno dall'altro.
+- If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
 
 > [!NOTE]
 > Le versioni conservate dei documenti di SharePoint e OneDrive non sono disponibili per la ricerca da parte degli strumenti di eDiscovery.
 
-### <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l'organizzazione 
+## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l'organizzazione 
 
 **SharePoint**:
 
@@ -94,19 +94,13 @@ Se un utente abbandona l'organizzazione, i file soggetti a un criterio di conser
 
 ## <a name="how-to-configure-a-retention-policy-for-sharepoint-and-onedrive"></a>Come configurare un criterio di conservazione per SharePoint e OneDrive
 
-Vedere [Creare e configurare criteri di conservazione](create-retention-policies.md).
-
-Per la pagina **Seleziona posizioni** della procedura guidata, selezionare una delle opzioni seguenti:
+Seguire le istruzioni per [Creare e configurare i criteri di conservazione](create-retention-policies.md) e nella pagina **Scegli percorsi** della procedura guidata selezionare una delle opzioni seguenti:
 
 - **Applica il criterio solo al contenuto dei messaggi di posta elettronica di Exchange, alle cartelle pubbliche, ai gruppi di Office 365 e ai documenti di OneDrive e di SharePoint**
 
-- **Consenti la scelta di posizioni specifiche** > **Siti di SharePoint** o **Account di OneDrive**
+- **Consenti la scelta di** > **siti di SharePoint** in posizioni specifiche, **account OneDrive** e **gruppi di Office 365**.
 
-### <a name="sharepoint-locations"></a>Posizioni di SharePoint 
-
-I criteri di conservazione possono conservare il contenuto di siti di comunicazione di SharePoint, siti del team non collegati a gruppi di Office 365 e siti classici. I siti del team collegati a gruppi di Office 365 non sono supportati con questa opzione. In alternativa, usare le posizioni dei **gruppi di Office 365**. 
-
-Se si specificano siti non supportati, i criteri di conservazione li ignoreranno. 
+Dopo la selezione della posizione dei **siti di SharePoint**, i criteri di conservazione possono conservare i contenuti all’interno di siti di comunicazione di SharePoint, siti del team non collegati a gruppi di Office 365, e siti classici. I siti del team collegati a gruppi di Office 365 non sono supportati con questa opzione. In alternativa, usa la posizione dei **gruppi di Office 365** che si applicano ai contenuti della casella di posta, del sito e dei file del gruppo. 
 
 Quando si specificano le posizioni dei siti di SharePoint, non è necessario disporre delle autorizzazioni per accedere al sito e non viene eseguita alcuna convalida quando si specifica l'URL nella pagina **Modifica delle posizioni**. Tuttavia, i siti devono essere indicizzati e viene verificata l'esistenza dei siti specificati al termine della procedura guidata. 
 
