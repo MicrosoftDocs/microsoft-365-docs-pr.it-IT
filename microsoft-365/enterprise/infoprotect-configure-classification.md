@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare i diversi modi per classificare i dati all'interno dell'organizzazione.
-ms.openlocfilehash: e8c40ca4c419edc2d59a060dfd4fe8918cf4e784
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 57d4c692630826f371ea825d86fc64b959b71df2
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633474"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005811"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Passaggio 2: configurare la classificazione dell'ambiente
 
@@ -92,7 +92,7 @@ Per ulteriori informazioni, vedere la [raccolta della documentazione di Azure In
 
 Le etichette esistenti di Azure Information Protection collaborano facilmente con le etichette di riservatezza. Ad esempio, è possibile mantenere le etichette di Azure Information Protection esistenti e le etichette applicate a documenti e posta elettronica.
 
-Se sono presenti sia riservatezza sia le etichette di Azure Information Protection, è necessario [esegue la migrazione delle etichette di Azure Information Protection a etichette di riservatezza](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels).
+Se sono presenti sia riservatezza sia le etichette di Azure Information Protection, è necessario [esegue la migrazione delle etichette di Azure Information Protection a etichette di riservatezza](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#sensitivity-labels-and-azure-information-protection).
 
 ## <a name="example-classification-for-gdpr"></a>Esempio: Classificazione del GDPR
 
