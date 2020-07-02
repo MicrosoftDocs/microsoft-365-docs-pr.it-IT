@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f5c226b6028c845acc674ec0a0536727386c2380
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 5a9bc0a28f8c9f360975325adbdd50ad22b0afc5
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899388"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005699"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
 **Si applica a:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La `EmailPostDeliveryEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sulle azioni successive al recapito eseguite nei messaggi di posta elettronica elaborati da Microsoft 365. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 

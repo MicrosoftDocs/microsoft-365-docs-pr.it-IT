@@ -11,23 +11,21 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+- commerce
+ms.custom:
+- AdminSurgePortfolio
+- manage_licenses
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
-description: Informazioni su come rimuovere le licenze dagli account utente.
-ms.openlocfilehash: 2918d8263318e9b6ce14076fb121e898249b5c48
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Informazioni su come annullare l'assegnazione delle licenze dagli account utente.
+ms.date: 07/01/2020
+ms.openlocfilehash: 29dbdb89550d5bd9bd13071b184ffe1ca340f2a6
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780074"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015936"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 
@@ -39,13 +37,24 @@ ms.locfileid: "44780074"
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
-È possibile rimuovere o annullare l'assegnazione delle licenze dagli utenti nella pagina **utenti attivi** o nella pagina **licenze** . Il metodo utilizzato varia a seconda che si desideri annullare l'assegnazione di licenze di prodotto da utenti specifici o annullare l'assegnazione di licenze agli utenti da prodotti specifici.
 
-## <a name="unassign-licenses-from-users-on-the-licenses-page"></a>Annullamento dell'assegnazione delle licenze da parte degli utenti nella pagina licenze
+È possibile annullare l'assegnazione delle licenze agli utenti nella pagina **utenti attivi** o nella pagina **licenze** . Il metodo utilizzato varia a seconda che si desideri annullare l'assegnazione delle licenze di prodotto da utenti specifici o annullare l'assegnazione di licenze agli utenti da un prodotto specifico.
 
-Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle licenze, è necessario annullare l'assegnazione delle licenze per un prodotto specifico per un massimo di 20 utenti. 
+::: moniker-end
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a>.
+## <a name="before-you-begin"></a>Informazioni preliminari
+
+- Per annullare l'assegnazione delle licenze, è necessario essere un amministratore globale, una licenza per l'utente. Per ulteriori informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../add-users/about-admin-roles.md).
+- È possibile [rimuovere licenze da account utente con PowerShell di Office 365](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell).
+- È inoltre possibile [eliminare gli account utente](../add-users/delete-a-user.md) a cui è stata assegnata una licenza per rendere disponibile la propria licenza ad altri utenti. Quando si elimina un account utente, la propria licenza è immediatamente disponibile per l'assegnazione a qualcun altro.
+
+::: moniker range="o365-worldwide"
+
+## <a name="use-the-licenses-page-to-unassign-licenses"></a>Utilizzare la pagina licenze per annullare l'assegnazione delle licenze
+
+Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle licenze, è necessario annullare l'assegnazione delle licenze per un prodotto specifico per un massimo di 20 utenti.
+
+1. Nell'interfaccia di amministrazione, andare alla **Billing** > pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
 2. Selezionare il prodotto per il quale si desidera annullare l'assegnazione delle licenze.
 3. Selezionare gli utenti per i quali si desidera annullare l'assegnazione delle licenze.
 4. Selezionare **Annulla assegnazione licenze**.
@@ -53,116 +62,95 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 ::: moniker-end
 
-## <a name="unassign-licenses-from-one-user-on-the-active-users-page"></a>Annullamento dell'assegnazione delle licenze da un utente nella pagina utenti attivi
-
 ::: moniker range="o365-worldwide"
+
+## <a name="use-the-active-users-page-to-unassign-licenses"></a>Utilizzo della pagina utenti attivi per annullare l'assegnazione delle licenze
+
+Quando si utilizza la pagina **utenti attivi** per annullare l'assegnazione delle licenze, è necessario annullare l'assegnazione delle licenze di prodotto dagli utenti.
+
+### <a name="unassign-licenses-from-one-user"></a>Annullamento dell'assegnazione delle licenze da un utente
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-
-2. Nella pagina **utenti attivi** selezionare la riga dell'utente per cui si desidera annullare l'assegnazione di una licenza.
-
+2. Selezionare la riga dell'utente per cui si desidera annullare l'assegnazione di una licenza.
 3. Nel riquadro destro selezionare **Licenze e app**.
-
 4. Espandere la sezione **licenze** , deselezionare le caselle per le licenze che si desidera annullare l'assegnazione, quindi selezionare **Salva modifiche**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
+## <a name="unassign-licenses-from-one-user"></a>Annullamento dell'assegnazione delle licenze da un utente
+
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
-
-2. Seleziona l'utente a cui vuoi annullare l'assegnazione della licenza.
-
+2. Selezionare l'utente per il quale si desidera annullare l'assegnazione della licenza.
 3. A destra, nella riga **licenze di prodotto** , selezionare **modifica**.
-
 4. Nel riquadro **licenze di prodotto** , impostare l'interruttore sulla posizione **disattivata** per la licenza che si desidera annullare l'assegnazione per l'utente. Ad esempio, se si disattiva la licenza di Office 365 Enterprise E3, la licenza verrà annienteta e tutti i servizi previsti dalla licenza per tale utente.
-
 5. Nella parte inferiore del riquadro **Licenze di prodotto** selezionare **Salva** \> **Chiudi** \> **Chiudi**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
+## <a name="unassign-licenses-from-one-user"></a>Annullamento dell'assegnazione delle licenze da un utente
+
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
-
-2. Seleziona l'utente a cui vuoi annullare l'assegnazione della licenza.
-
+2. Selezionare l'utente per il quale si desidera annullare l'assegnazione della licenza.
 3. A destra, nella riga **licenze di prodotto** , selezionare **modifica**.
-
 4. Nel riquadro **licenze di prodotto** , impostare l'interruttore sulla posizione **disattivata** per la licenza che si desidera annullare l'assegnazione per l'utente. Ad esempio, se si disattiva la licenza di Office 365 Enterprise E3, la licenza verrà annienteta e tutti i servizi previsti dalla licenza per tale utente.
-
 5. Nella parte inferiore del riquadro **Licenze di prodotto** selezionare **Salva** \> **Chiudi** \> **Chiudi**.
 
 ::: moniker-end
 
-## <a name="unassign-licenses-from-multiple-users-on-the-active-users-page"></a>Annullamento dell'assegnazione delle licenze da più utenti nella pagina utenti attivi
-
 ::: moniker range="o365-worldwide"
+###  <a name="unassign-licenses-from-multiple-users"></a>Annullamento dell'assegnazione delle licenze da più utenti
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-
 2. Selezionare i cerchi accanto ai nomi degli utenti per cui si desidera annullare l'assegnazione delle licenze.
-
 3. Nella parte superiore selezionare **Altre opzioni (...)**, quindi selezionare **Gestisci licenze prodotto**.
-
 4. Nel riquadro **Gestisci licenze prodotto** selezionare **Sostituisci assegnazioni licenze di prodotto esistenti** \> **Avanti**.
-
 5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** e quindi fare clic su **Sostituisci** \> **Chiudi**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-  
+
+##  <a name="unassign-licenses-from-multiple-users"></a>Annullamento dell'assegnazione delle licenze da più utenti
+
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
-
 2. Selezionare le caselle accanto ai nomi degli utenti per cui si desidera annullare l'assegnazione di tutte le licenze.
-
 3. Nel riquadro **Azioni in blocco** selezionare **Modifica licenze di prodotto**.
-
 4. Nel riquadro **Sostituisci prodotti esistenti** selezionare **Sostituisci assegnazioni licenze di prodotto esistenti** \> **Avanti**.
-
 5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **Chiudi** \> **Chiudi**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
+
+##  <a name="unassign-licenses-from-multiple-users"></a>Annullamento dell'assegnazione delle licenze da più utenti
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
-
 2. Selezionare le caselle accanto ai nomi degli utenti per cui si desidera annullare l'assegnazione di tutte le licenze.
-
 3. Nel riquadro **Azioni in blocco** selezionare **Modifica licenze di prodotto**.
-
 4. Nel riquadro **Sostituisci prodotti esistenti** selezionare **Sostituisci assegnazioni licenze di prodotto esistenti** \> **Avanti**.
-
 5. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare la casella di controllo **Rimuovi tutte le licenze di prodotto dagli utenti selezionati** , quindi selezionare **Sostituisci** \> **Chiudi** \> **Chiudi**.
 
 ::: moniker-end
 
-## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>Cosa è necessario sapere sull'annullamento dell'assegnazione delle licenze per gli utenti
-
-- È necessario essere un amministratore globale, un amministratore di fatturazione, un amministratore delle licenze o un amministratore di gestione degli utenti. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../add-users/about-admin-roles.md).
-
-- È possibile [rimuovere licenze da account utente con PowerShell di Office 365](https://go.microsoft.com/fwlink/p/?linkid=848428).
-
-- You can also [delete user accounts](../add-users/delete-a-user.md) that have been assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to be assigned to someone else.
+## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Cosa succede ai dati di un utente quando si rimuove la licenza?
 
 - Quando una licenza viene rimossa da un utente, i dati associati a quell'account vengono conservati per 30 giorni. Dopo il periodo di tolleranza di 30 giorni, i dati vengono eliminati e non possono essere ripristinati.
-
-- Si noti che i file salvati in OneDrive for business non vengono eliminati, a meno che l'utente non venga eliminato dall'interfaccia di amministrazione di Microsoft 365 o venga rimosso tramite la sincronizzazione di Active Directory. Per ulteriori informazioni, vedere [OneDrive retention and Deletion](https://docs.microsoft.com/onedrive/retention-and-deletion).
-
-- Inoltre, la cassetta postale dell'utente non è più disponibile per la ricerca tramite uno strumento di eDiscovery, ad esempio la ricerca di contenuto o la eDiscovery avanzata quando la licenza è stata rimossa. Per ulteriori informazioni, vedere la sezione relativa alla ricerca di cassette postali disconnesse o deautorizzate in [Ricerca contenuto in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
-
+- I file salvati in OneDrive for business non vengono eliminati, a meno che l'utente non venga eliminato dall'interfaccia di amministrazione di Microsoft 365 o venga rimosso tramite la sincronizzazione di Active Directory. Per ulteriori informazioni, vedere [OneDrive retention and Deletion](https://docs.microsoft.com/onedrive/retention-and-deletion).
+- Quando la licenza è stata rimossa, la cassetta postale dell'utente non è più disponibile per la ricerca tramite uno strumento di eDiscovery, ad esempio ricerca contenuto o Advanced eDiscovery. Per ulteriori informazioni, vedere la sezione relativa alla ricerca di cassette postali disconnesse o concessi in licenza in [Ricerca contenuto in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 - Se si dispone di un abbonamento Enterprise, ad esempio Office 365 Enterprise E3, Exchange Online consente di mantenere i dati della cassetta postale di un account utente eliminato utilizzando le [cassette postali inattive](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365). Per ulteriori informazioni, vedere [creare e gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
+- Per informazioni su come bloccare l'accesso di un utente ai dati di Microsoft 365 dopo che la licenza è stata rimossa e come ottenere l'accesso ai dati successivamente, vedere [Remove an ex Employee](../add-users/remove-former-employee.md).
+- Se si rimuove la licenza di un utente e le app di Office sono ancora installate, vedranno gli [errori di attivazione e di prodotto senza licenza in Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) quando utilizzano le app di Office.
 
-- Per informazioni su come bloccare l'accesso di un utente ai dati di Microsoft 365 dopo che la licenza è stata rimossa e come ottenere l'accesso ai dati successivamente, vedere [Remove a Former Employee](../add-users/remove-former-employee.md).
+## <a name="next-steps"></a>Passaggi successivi
 
-- Se si rimuove la licenza di un utente ed è ancora installato Office, vengono visualizzate le [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) quando utilizzano Office.
+Se non si intende [riassegnare le licenze inutilizzate ad altri utenti](../../managed-desktop/get-started/assign-licenses.md), prendere in considerazione la possibilità di [rimuovere le licenze dall'abbonamento](../../commerce/licenses/buy-licenses.md) in modo che non vengano pagate più licenze di quante ne siano necessarie.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Informazioni su abbonamenti e licenze in Microsoft 365 for business](../../commerce/licenses/subscriptions-and-licenses.md)
-
-[Rimuovere licenze dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md)
-
-[Assegnare licenze agli utenti](assign-licenses-to-users.md)
+[Rimuovere le licenze dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md) (articolo) \
+[Assegnare licenze agli utenti](assign-licenses-to-users.md) (articolo) \
+[Informazioni su abbonamenti e licenze in Microsoft 365 for business](../../commerce/licenses/subscriptions-and-licenses.md) (articolo)

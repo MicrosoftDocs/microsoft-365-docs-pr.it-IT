@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Informazioni su come gestire i messaggi del centro messaggi per facilitare la gestione delle modifiche.
-ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c415120a86b0c095df8ba9cbb4130abda1f6596b
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432266"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005823"
 ---
 # <a name="manage-messages-in-message-center"></a>Gestire i messaggi nel Centro messaggi
 
-I post del Centro messaggi sono annunci importanti sulle caratteristiche nuove e modificate. Questo articolo include altre informazioni sulle operazioni che è possibile eseguire con i messaggi per semplificare la gestione delle modifiche nell'organizzazione.
+Message center posts are important announcements about new and changed features. This article provides more information about the things you can do with messages to help with change management in your organization.
   
 ## <a name="read-a-message"></a>Leggere un messaggio
 
@@ -157,19 +157,19 @@ I messaggi non letti nel Centro messaggi verranno visualizzati in grassetto. Apr
 
 ::: moniker-end
 
-## <a name="dismiss-and-restore"></a>Ignorare e ripristinare
+## <a name="archive-and-restore"></a>Archiviazione e ripristino
 
-Se viene visualizzato un messaggio che non è di propria competenza o su cui si è già intervenuti, è possibile ignorarlo per escluderlo dalla visualizzazione del Centro messaggi. La visualizzazione mostrata nel Centro messaggi è specifica per l'account utente, dunque ignorare un messaggio non ha effetti sugli altri amministratori.
+Se viene visualizzato un messaggio che non appartiene all'utente o che si è già agito, è possibile archiviarlo per rimuoverlo dalla visualizzazione centro messaggi. La visualizzazione visualizzata nel centro messaggi è specifica per l'account utente, quindi l'archiviazione dalla visualizzazione non influisce sugli altri amministratori.
 
 ::: moniker range="o365-worldwide"
 
-- Nella pagina principale del centro messaggi selezionare un messaggio e quindi fare clic su **Ignora** sopra l'elenco dei messaggi.
+- Nella pagina principale del centro messaggi selezionare un messaggio e quindi fare clic su **Archivia** sopra l'elenco dei messaggi.
 
-- Aprire il messaggio e quindi fare clic su **Ignora** nella parte inferiore del messaggio.
+- Aprire il messaggio e quindi fare clic su **Archivia** nella parte inferiore del messaggio.
 
-È necessario recuperare un messaggio respinto? Nessun problema.
+È necessario recuperare un messaggio archiviato? Nessun problema.
   
-1. Selezionare la scheda **messaggi ignorati** nella parte superiore del centro messaggi. Viene visualizzato un elenco dei messaggi ignorati. 
+1. Selezionare la scheda **Archivia messaggi** nella parte superiore del centro messaggi. Viene visualizzato un elenco di messaggi archiviati. 
 
 2. Selezionare il messaggio, selezionare **Ripristina**e il messaggio viene ripristinato in messaggi attivi.
 
@@ -177,15 +177,15 @@ Se viene visualizzato un messaggio che non è di propria competenza o su cui si 
 
 ::: moniker range="o365-germany"
 
-È possibile ignorare un messaggio in due modi.
+È possibile archiviare un messaggio in due modi.
   
 - Selezionare la X che viene visualizzata a destra dell'ID del messaggio. Il messaggio viene rimosso dall'elenco. Oppure
 
-- Aprire il messaggio e quindi fare clic su **Ignora** nella parte superiore del messaggio.
+- Aprire il messaggio e quindi fare clic su **Archivia** nella parte superiore del messaggio.
 
-È anche possibile visualizzare nuovamente un messaggio ignorato.
+È necessario recuperare un messaggio respinto? Nessun problema.
   
-1. Selezionare il filtro **Messaggi ignorati** dal menu di scelta rapida **Visualizzazioni**. Viene visualizzato un elenco dei messaggi ignorati.
+1. Selezionare il filtro **Archivia messaggi** dal menu a discesa **visualizzazioni** . Viene visualizzato un elenco di messaggi archiviati.
 
 2. Selezionare **Ripristina** a destra dell'ID del messaggio e il messaggio viene ripristinato in messaggi attivi.
 
@@ -193,15 +193,15 @@ Se viene visualizzato un messaggio che non è di propria competenza o su cui si 
 
 ::: moniker range="o365-21vianet"
 
-È possibile ignorare un messaggio in due modi.
+È possibile archiviare un messaggio in due modi.
   
 - Selezionare la X che viene visualizzata a destra dell'ID del messaggio. Il messaggio viene rimosso dall'elenco. Oppure
 
-- Aprire il messaggio e quindi fare clic su **Ignora** nella parte superiore del messaggio.
+- Aprire il messaggio e quindi fare clic su **Archivia** nella parte superiore del messaggio.
 
-È anche possibile visualizzare nuovamente un messaggio ignorato.
+È necessario recuperare un messaggio archiviato? Nessun problema.
   
-1. Selezionare il filtro **Messaggi ignorati** dal menu di scelta rapida **Visualizzazioni**. Viene visualizzato un elenco dei messaggi ignorati.
+1. Selezionare il filtro **Archivia messaggi** dal menu a discesa **visualizzazioni** . Viene visualizzato un elenco di messaggi archiviati.
 
 2. Selezionare **Ripristina** a destra dell'ID del messaggio e il messaggio viene ripristinato in messaggi attivi.
 

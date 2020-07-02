@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Informazioni su come verificare la posta elettronica e la proprietà del dominio in modo da assumere un tenant non gestito in Microsoft 365
-ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399447"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022158"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Eseguire l'acquisizione di un amministratore interno
 
@@ -64,7 +64,7 @@ Se si è un amministratore e si vuole assumere un tenant non gestito creato da u
 4. Dopo aver aggiunto il record TXT al sito di registrazione, tornare alla procedura guidata e selezionare **OK, ho aggiunto il record**.
     
 > [!NOTE]
-> La presa in considerazione del tenant shadow non avrà alcun impatto sulle informazioni o sui servizi esistenti. Tuttavia, se gli utenti del dominio hanno effettuato l'iscrizione per i servizi che richiedono una licenza, ti verrà richiesto di acquistare licenze per il ruolo di amministratore. È possibile aggiungere o rimuovere licenze dopo il completamento del processo di configurazione dell'amministratore. 
+> La presa in considerazione del tenant shadow non avrà alcun impatto sulle informazioni o sui servizi esistenti. Tuttavia, se gli utenti del dominio hanno effettuato l'iscrizione per i servizi che richiedono una licenza, ti verrà richiesto di acquistare licenze per il ruolo di amministratore. Dopo aver completato il processo di configurazione dell'amministratore, è possibile acquistare o rimuovere licenze.
   
 ## <a name="related-articles"></a>Articoli correlati
 

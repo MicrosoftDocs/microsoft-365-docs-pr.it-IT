@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Usare l'interfaccia di amministrazione per configurare l'organizzazione nel cloud e gestire utenti e abbonamenti. Per iniziare, accedere all'account con autorizzazioni di amministratore.
-ms.openlocfilehash: 9295d16f19ebaabdd9960331f1d875f436156b79
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e4b1570afd8572df31af970fb168b6d22deee979
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780554"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022182"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informazioni sull'interfaccia di amministrazione di Microsoft 365
 
@@ -89,7 +89,7 @@ Ecco le funzionalità e le impostazioni disponibili nel riquadro di spostamento 
    
 ## <a name="common-tasks-in-the-admin-center"></a>Attività comuni nell'interfaccia di amministrazione
 
-- Gestire gli utenti: [Aggiungere utenti singolarmente](../add-users/add-users.md), [Eliminare o ripristinare un utente](../add-users/delete-a-user.md) o [Reimpostare la password di un utente](../add-users/reset-passwords.md).
+- Gestire gli utenti: [aggiungere utenti e assegnare licenze contemporaneamente](../add-users/add-users.md), [eliminare o ripristinare gli utenti](../add-users/delete-a-user.md)o [reimpostare la password di un utente](../add-users/reset-passwords.md).
 
 - Ottenere assistenza per la fatturazione: [Fatturazione](../../commerce/index.yml)
 

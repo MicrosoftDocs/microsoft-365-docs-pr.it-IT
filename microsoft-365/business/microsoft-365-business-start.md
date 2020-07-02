@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 for business, su come configurarlo e su come preparare i dispositivi e i PC degli utenti per assicurarsi che siano protetti da Microsoft 365 for business.
-ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786155"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022118"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introduzione a Microsoft 365 for business
 
@@ -84,7 +84,7 @@ Accedere all'interfaccia di [amministrazione di microsoft 365](https://portal.of
     
     - Utilizzare la procedura guidata di sincronizzazione della directory per sincronizzare gli utenti con il cloud. Seguire la procedura descritta in [set up Directory Synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) per completare il processo. Dopo aver sincronizzato gli utenti nel cloud, è necessario disattivare la [sincronizzazione della directory per Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
-    È inoltre necessario fornire a ciascun utente aggiunto in questo modo una licenza a Microsoft 365 for business. È possibile eseguire questa operazione nell' [installazione guidata](set-up.md) oppure è possibile [assegnare licenze agli utenti in Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+    È inoltre necessario fornire a ciascun utente aggiunto in questo modo una licenza a Microsoft 365 for business. È possibile eseguire questa operazione nell' [installazione guidata](set-up.md) oppure è possibile [assegnare licenze agli utenti](../admin/manage/assign-licenses-to-users.md).
     
 ### <a name="2-prepare-mobile-devices"></a>2: preparare i dispositivi mobili
 

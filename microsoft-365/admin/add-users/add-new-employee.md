@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Aggiungere nuovi dipendenti a Microsoft 365 for business per le app di posta elettronica, Skype e Office.
-ms.openlocfilehash: bd0ed77954c7b7baa60e50473818577ec9ae7f76
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: de647b926a3e1a82aaed4928b96101bd59df07ff
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780674"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022134"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Aggiungere un nuovo dipendente a Microsoft 365
 
@@ -50,7 +50,7 @@ Ecco una breve panoramica:
 ## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>Passaggio 1: creare un account Microsoft 365 per il dipendente
 
 
-Per istruzioni, vedere [aggiungere utenti singolarmente o in blocco a Microsoft 365-Guida per gli amministratori](add-users.md). Quando si configura il nuovo dipendente, è possibile scegliere di inviare informazioni di log-in all'account personale del dipendente. In questo modo, riceveranno un messaggio di posta elettronica dal team del servizio Microsoft online che gli dirà come accedere a Microsoft 365.
+Per istruzioni, vedere [aggiungere utenti e assegnare licenze contemporaneamente](add-users.md). Quando si configura il nuovo dipendente, è possibile scegliere di inviare informazioni di log-in all'account personale del dipendente. In questo modo, riceveranno un messaggio di posta elettronica dal team del servizio Microsoft online che gli dirà come accedere a Microsoft 365.
   
 ## <a name="step-2-give-the-employee-their-user-id-and-password"></a>Passaggio 2: assegnare al dipendente l'ID utente e la password
 
@@ -85,12 +85,8 @@ Di seguito è illustrato un riferimento rapido per iniziare a eseguire le operaz
 |Completare la formazione di OneDrive for business per informazioni su come archiviare e organizzare documenti, presentazioni e fogli di calcolo nel cloud.  <br/> |Mantenere i documenti correlati all'azienda nel cloud utilizzando OneDrive for business. È sempre possibile accedere al contenuto, anche se è stato eseguito l'accesso a Microsoft 365 in un computer diverso. [Guardare un video per informazioni su come utilizzare OneDrive for business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Formazione:** [formazione di OneDrive for business](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (selezionare OneDrive for business).  <br/> |
 |Completare la formazione di SharePoint Online per collaborare con i colleghi e condividere il contenuto.  <br/> |Il posto migliore per mantenere i documenti che i colleghi avranno accesso anche è in SharePoint Online.  <br/> <br/>**Formazione:** [video: collaborare con il contenuto del team tramite SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Scopri:** In che modo l'organizzazione utilizza SharePoint Online e quali tipi di documenti vengono archiviati. Inoltre, quali documenti sono archiviati in OneDrive for business.  <br/> |
 
-   
 ## <a name="related-articles"></a>Articoli correlati
-
 
 [Rimuovere un ex dipendente da Microsoft 365](remove-former-employee.md)
   
-[Aggiungere gli utenti singolarmente o in blocco a Microsoft 365](add-users.md)
-  
-
+[Aggiungere utenti e assegnare licenze nello stesso time65](add-users.md)

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 57e18d68f6f33482fec3880b56ccad52c719a6d9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936630"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023404"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -203,6 +203,31 @@ Nel tempo, il Punteggio di sicurezza dell'identità e l'API del grafico adottera
 * Filtrare, contrassegnare, ricercare e raggruppare le azioni di miglioramento
 * Gestire gli obiettivi futuri utilizzando le proiezioni dei punteggi e le azioni pianificate
 * E altro ancora!
+
+### <a name="june-2020"></a>Giugno 2020
+
+#### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Azione di miglioramento rimossa per Microsoft Defender Advanced Threat Protection
+
+* Attivazione delle regole di riduzione della superficie di attacco
+
+#### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Sono state aggiunte azioni di miglioramento per Microsoft Defender Advanced Threat Protection
+
+* Impedire a Adobe Reader di creare processi figlio
+* Utilizzare Advanced Protection against ransomware
+* Blocca tutte le applicazioni di Office dalla creazione dei processi figlio
+* Bloccare le applicazioni di Office dalla creazione di contenuto eseguibile
+* Blocca JavaScript o VBScript dall'avvio del contenuto eseguibile scaricato
+* Bloccare l'esecuzione di script potenzialmente offuscati
+* Bloccare i contenuti eseguibili dal client di posta elettronica e webmail
+* Bloccare l'applicazione di comunicazione di Office dalla creazione dei processi figlio
+* Blocca processi non attendibili e non firmati che vengono eseguiti da USB
+* Blocca la persistenza tramite la sottoscrizione di eventi WMI
+* Blocca le applicazioni di Office dall'inserimento di codice in altri processi
+* Bloccare l'esecuzione di file eseguibili a meno che non soddisfino un criterio di prevalenza, età o elenco attendibile
+* Bloccare le creazioni dei processi originati da comandi di PSExec e WMI
+* Bloccare la sottrazione di credenziali dal sottosistema di autorità di sicurezza locale di Windows (lsass.exe)
+* Bloccare le chiamate API Win32 dalle macro di Office
+
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 

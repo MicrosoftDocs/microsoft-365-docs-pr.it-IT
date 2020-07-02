@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come conservare il contenuto delle cassette postali eliminate utilizzando la funzionalità cassette postali inattive in Office 365.
-ms.openlocfilehash: d479f6661c4d6e87263488ac75682683b4779380
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818015"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023359"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Creare e gestire le cassette postali inattive
 
@@ -38,7 +38,7 @@ Microsoft 365 rende possibile conservare il contenuto delle cassette postali eli
 
 - Per rendere inattiva una cassetta postale, deve essere assegnata una licenza di Exchange Online piano 2 in modo che sia possibile applicare un blocco per controversia legale o un criterio di conservazione alla cassetta postale prima che venga eliminata. Le licenze di Exchange Online piano 2 fanno parte di un abbonamento a Office 365 Enterprise E3 ed E5. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1 o Exchange Online Kiosk (che fa parte rispettivamente di una sottoscrizione di Office 365 E1 e F1), è necessario assegnarle una licenza di archiviazione Exchange Online distinta in modo che sia possibile applicare un'esenzione alla cassetta postale prima che venga eliminata. Per ulteriori informazioni, vedere [Archiviazione Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
-- Le licenze associate alla cassetta postale di Exchange Online eliminata saranno disponibili dopo aver eliminato l'account utente corrispondente. È quindi possibile [assegnare tali licenze a un altro utente](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users). 
+- Le licenze associate alla cassetta postale di Exchange Online eliminata saranno disponibili dopo aver eliminato l'account utente corrispondente. È quindi possibile [assegnare tali licenze a un altro utente](../admin/manage/assign-licenses-to-users.md).
 
 - Se un blocco per controversia legale o un criterio di conservazione (configurato per mantenere o conservare e quindi eliminare il contenuto) non viene applicato a una cassetta postale prima che venga eliminato, il contenuto della cassetta postale non verrà mantenuto o individuabile. Tuttavia, è possibile recuperare la cassetta postale eliminata entro 30 giorni dall'eliminazione; se non viene recuperata entro 30 giorni, la cassetta postale e il suo contenuto vengono eliminati definitivamente.
 

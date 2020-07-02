@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 39fbc934dabcb3b0b24bd0b861be8db14b6e0c35
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844883"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023382"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Che cosa viene in Microsoft Secure Score?
 
@@ -30,26 +30,11 @@ Per rendere [Microsoft Secure Score](microsoft-secure-score.md) un migliore rapp
 
 Per informazioni sulle modifiche recenti, vedere [What ' s New in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
-## <a name="june-2020"></a>Giugno 2020
+## <a name="july-2020"></a>2020 luglio
 
-### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Rimuovi azione di miglioramento per Microsoft Defender Advanced Threat Protection
+### <a name="add-improvement-actions-for-azure-advanced-threat-protection"></a>Aggiungere azioni di miglioramento per la protezione avanzata dalle minacce di Azure
 
-* Attivazione delle regole di riduzione della superficie di attacco
-
-### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Aggiungere azioni di miglioramento per Microsoft Defender Advanced Threat Protection
-
-* Impedire a Adobe Reader di creare processi figlio
-* Utilizzare Advanced Protection against ransomware
-* Blocca tutte le applicazioni di Office dalla creazione dei processi figlio
-* Bloccare le applicazioni di Office dalla creazione di contenuto eseguibile
-* Blocca JavaScript o VBScript dall'avvio del contenuto eseguibile scaricato
-* Bloccare l'esecuzione di script potenzialmente offuscati
-* Bloccare i contenuti eseguibili dal client di posta elettronica e webmail
-* Bloccare l'applicazione di comunicazione di Office dalla creazione dei processi figlio
-* Blocca processi non attendibili e non firmati che vengono eseguiti da USB
-* Blocca la persistenza tramite la sottoscrizione di eventi WMI
-* Blocca le applicazioni di Office dall'inserimento di codice in altri processi
-* Bloccare l'esecuzione di file eseguibili a meno che non soddisfino un criterio di prevalenza, età o elenco attendibile
-* Bloccare le creazioni dei processi originati da comandi di PSExec e WMI
-* Bloccare la sottrazione di credenziali dal sottosistema di autorità di sicurezza locale di Windows (lsass.exe)
-* Bloccare le chiamate API Win32 dalle macro di Office
+- Percorsi di spostamento laterali rischiosi
+- Attributi dell'account non sicuri
+- Abilitare le funzionalità di sicurezza per le relazioni di trust di Active Directory
+- Rimuovere gli attributi di cronologia SID non sicuri dalle entità

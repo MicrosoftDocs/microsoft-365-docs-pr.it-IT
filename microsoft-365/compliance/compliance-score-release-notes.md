@@ -14,54 +14,34 @@ search.appverid:
 - MOE150
 - MET150
 description: Note sulla versione e i problemi noti di Microsoft Compliance Score (Preview), una funzionalità del centro conformità di M365 che consente di semplificare e automatizzare le valutazioni dei rischi.
-ms.openlocfilehash: 1567921b8bd07b0fe4deda0bab6601898eed75a9
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: 6678ec03d2cd87a97244acaa55a15483d78dd632
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330780"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022193"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Note sulla versione di Microsoft Compliance Score (Preview)
 
-L'anteprima pubblica del Punteggio di conformità di Microsoft fornisce l'accesso tempestivo alle funzionalità e agli aggiornamenti imminenti. Per informazioni sulle novità, vedere spesso questa pagina.
+**In questo articolo:** In questa pagina vengono illustrate le **novità** nell'anteprima pubblica del [Punteggio di conformità di Microsoft](compliance-score.md), che consente di accedere in anticipo alle nuove funzionalità.
 
-La conformità Score è una nuova funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che calcola un punteggio basato sui rischi, misurando i progressi compiuti verso il completamento delle azioni consigliate che consentono di ridurre i rischi di conformità.
+## <a name="assessment-creation-and-management-functionality"></a>Funzionalità di creazione e gestione della valutazione
+
+La versione di giugno 2020 aggiunge la funzionalità per gli utenti di creare, eliminare e gestire le loro valutazioni direttamente nel punteggio di conformità. In precedenza, tutta la gestione della valutazione risiedeva in Compliance Manager. Quando si crea o si modifica una valutazione nel punteggio di conformità, gli aggiornamenti verranno ripartiti in Compliance Manager. Analogamente, tutti i lavori di valutazione eseguiti in Compliance Manager avranno un punteggio di conformità. Informazioni su come [gestire le valutazioni nel punteggio di conformità](compliance-score-assessments.md). Si noti che la creazione e la modifica del modello sono ancora gestite in Compliance Manager.
 
 ## <a name="new-templates-for-assessments"></a>Nuovi modelli per le valutazioni
 
-I nuovi modelli preconfigurati per le valutazioni vengono rilasciati in produzione per il Punteggio di conformità (anteprima) Man mano che diventano disponibili. Controllare l' [elenco completo dei modelli qui](compliance-score.md#templates). I modelli aggiunti di recente includono:
+I nuovi modelli pronti per l'uso per le valutazioni vengono rilasciati nel punteggio di conformità man mano che diventano disponibili. Controllare l' [elenco completo dei modelli qui](compliance-score-templates.md). Aggiunta di recente:
 
-- Legge generale sulla protezione dei dati (LGPD) in Brasile
 - Risoluzione sulla sicurezza delle informazioni di Dubai (DGISR)
-- IRAP/governo australiano ISM (anteprima)
-- ISO 27701:2019
-- SOC 1
-- SOC 2
-
-## <a name="improvements-in-managing-assessments"></a>Miglioramenti nella gestione delle valutazioni
-
-La versione più recente di Compliance Manager nell'aprile 2020 include gli aggiornamenti che semplificano la creazione e la personalizzazione delle valutazioni e l'aggiornamento. Per informazioni dettagliate, vedere le [Note sulla versione di Compliance Manager](compliance-manager-release-notes.md) .
-
-## <a name="language-support"></a>Supporto lingue
-
-Il Punteggio di conformità è ora disponibile nelle seguenti lingue oltre all'inglese: cinese (semplificato), cinese (tradizionale), francese, tedesco, italiano, giapponese, coreano, portoghese (Brasile), russo e spagnolo.
-
-## <a name="common-actions-will-synch-status-across-groups"></a>Azioni comuni lo stato di sincronizzazione tra i gruppi
-
-Se l'organizzazione dispone di più gruppi di valutazioni, il comportamento delle azioni **tecniche** (ovvero azioni che interessano l'intera organizzazione) è stato modificato. Tutte le azioni duplicate tra i gruppi sono state combinate in un'unica azione. Questa singola azione contiene tutte le note e le evidenze caricate dalle versioni duplicate. Con questa modifica, le azioni tecniche si comportano in questo modo quando appartengono allo stesso gruppo. Tutte le modifiche apportate all'azione in un gruppo o in una valutazione verranno riflesse in tutte le istanze. Lo **stato**di implementazione, la **Data di implementazione**, **lo stato del test**e la data di **test**   rispecchiano gli aggiornamenti più recenti.
 
 ## <a name="compliance-score-relationship-to-compliance-manager"></a>Relazione tra Punteggio di conformità e Compliance Manager
 
 Molte delle funzioni gestite in Compliance Manager possono ora essere eseguite nel punteggio di conformità. Tuttavia, alcune funzioni sono ancora attive in Compliance Manager. Tenere presente questi punti quando si lavora con score compliance e Compliance Manager durante l'anteprima pubblica:
 
-- **Gestione delle valutazioni**: gli utenti possono visualizzare le valutazioni e i relativi dettagli sullo stato nel punteggio di conformità. Tuttavia, gli utenti possono eseguire solo attività di gestione della valutazione in Compliance Manager ([vedere le istruzioni](working-with-compliance-manager.md#assessments)). Di seguito sono riportati alcuni esempi di attività:
-    - Creazione e copia di valutazioni
-    - Valutazioni dell'esportazione
-    - Valutazioni dell'archivio
-    - Visualizzazione delle valutazioni archiviate
  - **Creazione di modelli per le valutazioni**: 
-   - Gli utenti devono accedere a Compliance Manager per creare nuovi modelli e modificare i [modelli](working-with-compliance-manager.md#templates)esistenti. 
-   - Quando si crea un modello, è necessario includere le dimensioni per il **prodotto** e la **certificazione** per garantire che il modello venga visualizzato nel punteggio di conformità.
+   - Gli utenti devono accedere a Compliance Manager per [creare nuovi modelli e modificare i modelli esistenti](working-with-compliance-manager.md#templates).
+   - I nuovi modelli devono includere le dimensioni per il **prodotto** e la **certificazione**.
  - **Impostazione delle autorizzazioni**: Punteggio di conformità gli utenti che non dispongono già delle autorizzazioni in Compliance Manager devono disporre delle autorizzazioni impostate nel centro conformità di Microsoft 365 (ulteriori[informazioni](compliance-score-setup.md#set-user-permissions-and-assign-roles)).
 - **Trasferimento di dati**: le organizzazioni che dispongono di dati in Compliance Manager vedranno che i dati vengono visualizzati come Punteggio di conformità e lo stesso vale anche per l'altro.
 - **Accesso a Compliance Manager dal punteggio di conformità**: se un utente ha eseguito l'accesso a Score compliance e seleziona un collegamento per accedere a Compliance Manager, l'utente non dovrà accedere di nuovo. Dopo aver fatto clic sul collegamento, una nuova scheda viene visualizzata nel browser con una finestra di dialogo. Nella sezione superiore con l'intestazione, "già un cliente dei servizi cloud Microsoft? Accedere al proprio account, "selezionare il pulsante di **accesso** per accedere automaticamente a Compliance Manager.
@@ -71,7 +51,7 @@ Molte delle funzioni gestite in Compliance Manager possono ora essere eseguite n
 Nelle sezioni seguenti vengono illustrati i problemi noti da risolvere nelle prossime versioni del Punteggio di conformità.
 
 ### <a name="long-load-times-for-non-admin-users"></a>Tempi di caricamento lunghi per utenti non amministratori
-Punteggio di conformità gli utenti che dispongono di ruoli diversi da un ruolo di amministratore possono riscontrare tempi di caricamento lunghi quando si tenta di accedere a un utente. Se si aggiorna il browser, questo problema verrà risolto. (Ulteriori informazioni sui [ruoli del Punteggio di conformità](compliance-score-setup.md#set-user-permissions-and-assign-roles))
+Punteggio di conformità gli utenti che dispongono di ruoli diversi da un ruolo di amministratore possono riscontrare tempi di caricamento lunghi quando si tenta di accedere a un utente. Se si aggiorna il browser, questo problema verrà risolto. Per ulteriori informazioni, vedere [Role Score Compliance](compliance-score-setup.md#set-user-permissions-and-assign-roles).
 
 ### <a name="supported-browsers"></a>Browser supportati
 

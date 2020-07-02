@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0badae0d81b52b89c47f950b889109d4b9d35dda
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844598"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016344"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Attivare Microsoft Threat Protection
 
@@ -61,10 +61,12 @@ Per abilitare Microsoft Threat Protection, è sufficiente selezionare **attiva M
 >Se non si visualizzano le **Impostazioni** nel riquadro di spostamento o non è stato possibile accedere alla pagina, controllare autorizzazioni e licenze.
 
 ### <a name="data-center-location"></a>Percorso Data Center
-Microsoft Threat Protection archivierà ed elaborerà i dati nello [stesso percorso utilizzato da Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Se non si dispone di Microsoft Defender ATP, viene selezionata automaticamente una nuova posizione del Data Center in base alla posizione dei servizi di sicurezza Microsoft 365 attivi. La posizione del Data Center selezionato viene visualizzata nella schermata.
+Microsoft Threat Protection archivierà ed elaborerà i dati nello [stesso percorso utilizzato da Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Se non si dispone di Microsoft Defender ATP, viene selezionata automaticamente una nuova posizione del Data Center in base alla posizione dei servizi di sicurezza Microsoft 365 attivi. La posizione del Data Center selezionato viene visualizzata nella schermata. 
+
+Selezionare **serve assistenza?** nel centro sicurezza Microsoft 365 contattare il supporto tecnico Microsoft per il provisioning di Microsoft Threat Protection in una posizione data center diversa. 
 
 >[!NOTE]
->Selezionare **serve assistenza?** nel centro sicurezza Microsoft 365 contattare il supporto tecnico Microsoft per il provisioning della protezione dalle minacce di Microsoft in una posizione data center diversa. 
+>Microsoft Defender ATP accantona automaticamente i data center dell'Unione europea (EU) quando viene attivato tramite il Centro sicurezza di Azure. Microsoft Threat Protection provisionerà automaticamente nello stesso data center dell'Unione europea per i clienti che hanno eseguito il provisioning di Microsoft Defender ATP in questo modo. 
 
 ### <a name="confirm-that-the-service-is-on"></a>Verificare che il servizio sia attivo
 Dopo aver eseguito il provisioning il servizio aggiunge:

@@ -1,5 +1,5 @@
 ---
-title: Configurazione del Punteggio di conformità Microsoft
+title: Configurazione del Punteggio di conformità Microsoft (anteprima)
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,16 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come configurare e iniziare a utilizzare Microsoft Compliance score, che semplifica e automatizza le valutazioni dei rischi.
-ms.openlocfilehash: 7a0030ed417e21484717b6edf12406d2f5e760e5
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f7a501d0ede0d7635e20581774ce51a599dde65b
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140861"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016191"
 ---
-# <a name="microsoft-compliance-score-preview-setup"></a>Configurazione del Punteggio di conformità Microsoft (anteprima)
+# <a name="compliance-score-preview-setup"></a>Configurazione del Punteggio di conformità (anteprima)
 
-## <a name="before-you-begin"></a>Prima di iniziare
+**In questo articolo:** Informazioni su come **accedere** a Punteggio di conformità, impostare i **ruoli e le autorizzazioni**e configurare **gli aggiornamenti automatici del Punteggio sicuro**. In questo articolo vengono inoltre illustrate le pagine principali del Punteggio di conformità: la pagina **Dashboard**, le azioni di miglioramento, la pagina soluzioni e la pagina valutazioni.
+
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 L'amministratore globale di Microsoft 365 per l'organizzazione sarà probabilmente il primo utente ad accedere al Punteggio di conformità. Si consiglia di accedere all'amministratore globale e di impostare le autorizzazioni utente come indicato di seguito quando si visita il Punteggio di conformità per la prima volta.
 
@@ -32,7 +34,7 @@ L'amministratore globale di Microsoft 365 per l'organizzazione sarà probabilmen
 1. Accedere al [centro conformità di microsoft 365](https://compliance.microsoft.com/) e **accedere** con l'account di amministratore globale di Microsoft 365.
 2. Seleziona **Punteggio di conformità** nel riquadro di spostamento a sinistra. Sarà quindi possibile visualizzare il [Dashboard Punteggio di conformità con il Punteggio](#understand-the-compliance-score-dashboard).
 
-Il collegamento diretto al Punteggio di conformità di Access [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore)è:.
+Il collegamento diretto per accedere al Punteggio di conformità è [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore) .
 
 ## <a name="set-user-permissions-and-assign-roles"></a>Impostazione delle autorizzazioni utente e assegnazione dei ruoli
 
@@ -40,7 +42,7 @@ Il Punteggio di conformità utilizza un modello di autorizzazione di controllo d
 
 ### <a name="where-to-set-permissions"></a>Dove impostare le autorizzazioni
 
-L'amministratore globale dell'organizzazione può impostare le autorizzazioni utente in [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) o in [Compliance Manager](compliance-manager-overview.md#permissions). Dopo aver impostato i ruoli in una di queste posizioni, gli utenti possono accedere al Punteggio di conformità e a Compliance Manager.
+La persona che detiene il ruolo di amministratore globale per l'organizzazione può impostare le autorizzazioni utente in [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) o in [Compliance Manager](compliance-manager-overview.md#permissions). Dopo aver impostato i ruoli in una di queste posizioni, gli utenti possono accedere al Punteggio di conformità e a Compliance Manager.
 
 ### <a name="role-types"></a>Tipi di ruolo
 
@@ -57,11 +59,11 @@ Nella tabella seguente viene illustrato il modo in cui ogni [ruolo di Azure ad](
 | **Assegnare gli utenti**| Amministratore globale | Amministratore portale | 
 
 > [!NOTE]
-> Quando si passa da Punteggio di conformità a Compliance Manager per completare un'attività (ad esempio, per gestire le valutazioni), il browser aprirà una nuova scheda e verrà visualizzata una finestra di dialogo. Nella sezione superiore con l'intestazione, "già un cliente dei servizi cloud Microsoft? Accedi al tuo account, **"seleziona Accedi** per accedere a Compliance Manager; non sarà necessario immettere di nuovo le credenziali.
+> Quando si passa da Punteggio di conformità a Compliance Manager per completare un'attività durante l'anteprima pubblica, il browser aprirà una nuova scheda e verrà visualizzata una finestra di dialogo. Nella sezione superiore con l'intestazione, "già un cliente dei servizi cloud Microsoft? Accedi al tuo account, **"seleziona Accedi** per accedere a Compliance Manager. Non è necessario immettere di nuovo le credenziali.
 
 ## <a name="configure-automatic-secure-score-updates"></a>Configurare gli aggiornamenti automatici del Punteggio sicuro
 
-Per impostazione predefinita, tutti i nuovi tenant dispongono degli aggiornamenti automatici di [Secure Score](../security/mtp/microsoft-secure-score.md) attivati. Tutte le azioni monitorate da Secure Score aggiorneranno automaticamente lo stato per la stessa azione nel punteggio di conformità.
+Per impostazione predefinita, tutti i nuovi tenant dispongono degli aggiornamenti automatici di [Secure Score](../security/mtp/microsoft-secure-score-new.md) attivati. Tutte le azioni monitorate da Secure Score aggiorneranno automaticamente lo stato per la stessa azione nel punteggio di conformità.
 
 L'amministratore globale può gestire questa impostazione per disattivare gli aggiornamenti automatici per tutte le azioni o impostare gli aggiornamenti per le azioni singolarmente.
 
@@ -77,7 +79,7 @@ Per gestire gli aggiornamenti automatici del Punteggio sicuro, attenersi alla se
 
 Se si sceglie **imposta per azione,** eseguire i passaggi aggiuntivi per abilitare gli aggiornamenti dei punti di sicurezza per le singole azioni:
 
-4. Selezionare **Compliance Manager** dal menu in alto (non selezionare "Compliance Manager (Classic)", che è un prodotto legacy).
+4. Selezionare **Compliance Manager** dal menu in alto (non selezionare "Compliance Manager (Classic)").
 
 5. Selezionare **gestione tenant** nell'angolo in alto a destra dello schermo.
 
@@ -89,7 +91,9 @@ Se si sceglie **imposta per azione,** eseguire i passaggi aggiuntivi per abilita
 
 **Nota:** Solo l'amministratore globale può abilitare o disattivare gli aggiornamenti automatici per tutte le azioni. L'amministratore di Compliance Manager può abilitare gli aggiornamenti automatici per singole azioni, ma non per tutte le azioni a livello globale.
 
-Per ulteriori informazioni, vedere [Managing Secure Score Updates](compliance-manager-release-notes.md#secure-score).
+#### <a name="learn-more"></a>Altre informazioni
+
+[Informazioni su come gestire gli aggiornamenti dei punti di sicurezza](compliance-manager-release-notes.md#secure-score).
 
 ## <a name="understand-the-compliance-score-dashboard"></a>Comprendere il dashboard del Punteggio di conformità
 
@@ -101,9 +105,10 @@ Il dashboard del Punteggio di conformità è stato creato per fornire una visual
 
 Il Punteggio di conformità è evidenziato in primo piano. Visualizza una percentuale in base ai punti ottenibili per il completamento delle azioni di miglioramento che si rivolgono agli standard e alle normative sulla protezione dei dati.
 
-Quando si giunge al Punteggio di conformità per la prima volta, il punteggio iniziale è basato sulla linea di base di protezione dei dati integrata di Microsoft 365, ovvero un insieme di controlli che include normative e standard di settore. Poiché il Punteggio di conformità analizza il sistema delle soluzioni Microsoft 365 esistenti, fornisce una valutazione iniziale della postura di conformità in base alle impostazioni di privacy e sicurezza attualmente abilitate dall'organizzazione.
+Quando si giunge al Punteggio di conformità per la prima volta, il punteggio iniziale è basato sulla [linea di base di protezione dei dati integrata di Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline), ovvero un insieme di controlli che include normative e standard di settore. Punteggio di conformità analizza le soluzioni Microsoft 365 esistenti e fornisce una valutazione iniziale in base alle impostazioni di protezione e privacy correnti. Quando si aggiungono valutazioni rilevanti per la propria organizzazione, il punteggio risulta più significativo per l'utente.
 
-Quando si aggiungono valutazioni rilevanti per la propria organizzazione, il punteggio diventa ancora più significativo. Per ulteriori informazioni [, vedere Calcolo del Punteggio](compliance-score-methodology.md).
+#### <a name="learn-more"></a>Altre informazioni
+[Capire in che modo viene calcolato il Punteggio di conformità](compliance-score-methodology.md).
 
 ### <a name="key-improvement-actions"></a>Azioni di miglioramento principali
 
@@ -122,7 +127,7 @@ In questa sezione viene fornita una visualizzazione più dettagliata del puntegg
 
 ### <a name="filtering-your-dashboard-view"></a>Filtrare la visualizzazione del dashboard
 
-È possibile filtrare la visualizzazione del dashboard per visualizzare solo gli elementi relativi a specifiche normative e standard, soluzioni, tipo di azione, [gruppi di valutazioni configurati](working-with-compliance-manager.md#groups)o categorie di protezione dei dati. Il filtraggio della visualizzazione in questo modo consente di filtrare anche il punteggio nel dashboard, mostrando quanti punti sono stati raggiunti fuori dai possibili punti totali in base ai criteri di filtro.
+È possibile filtrare la visualizzazione del dashboard per visualizzare solo gli elementi relativi a specifiche normative e standard, soluzioni, tipo di azione, gruppi di valutazione o categorie di protezione dei dati. Il filtraggio della visualizzazione in questo modo consente di filtrare anche il punteggio nel dashboard, mostrando quanti punti sono stati raggiunti fuori dai possibili punti totali in base ai criteri di filtro.
 
 Per applicare i filtri:
 
@@ -136,6 +141,102 @@ Per rimuovere i filtri:
 - Nella sezione **filtri applicati** sopra il Punteggio di conformità, selezionare la **X** accanto al singolo filtro che si desidera rimuovere. o
 - Seleziona **filtro** nella parte superiore destra del dashboard, quindi seleziona **Pulisci filtri**.
 
-## <a name="next-step"></a>Passaggio successivo
+## <a name="improvement-actions-page"></a>Pagina azioni di miglioramento
 
-Visitare l' [utilizzo del Punteggio di conformità](working-with-compliance-score.md) per comprendere il flusso di lavoro di come eseguire azioni per migliorare il punteggio.
+Le [azioni di miglioramento](compliance-score-improvement-actions.md) centralizzano le attività di conformità e consentono di allineare le normative e i criteri di protezione dei dati. Ogni azione di miglioramento fornisce indicazioni dettagliate sull'implementazione e un collegamento per avviare la soluzione appropriata. Le azioni possono essere assegnate agli utenti dell'organizzazione per eseguire il lavoro di implementazione e testing. È inoltre possibile archiviare la documentazione, le note e gli aggiornamenti dello stato del record all'interno dell'azione di miglioramento.
+
+### <a name="view-your-improvement-actions"></a>Visualizzare le azioni di miglioramento
+
+Il dashboard del Punteggio di conformità Visualizza le **azioni di miglioramento principali**, ovvero quelle con i punti più disponibili che affrontano i problemi più importanti.
+
+Per visualizzare tutte le azioni di miglioramento, selezionare la scheda **azioni di miglioramento** nel dashboard. In alternativa, seleziona **Visualizza tutte le azioni di miglioramento** sotto l'elenco delle azioni di miglioramento chiave nel dashboard.
+
+Se si dispone di un lungo elenco di azioni, potrebbe essere utile filtrare la visualizzazione. Selezionare **filtro** nell'angolo in alto a destra dell'elenco delle azioni. Quando viene visualizzato il riquadro dei **filtri** a comparsa, selezionare i criteri in base alle normative e agli standard, alla soluzione e al gruppo. È inoltre possibile personalizzare la visualizzazione selezionando **gruppo** nell'angolo in alto a destra. Dal menu a discesa, selezionare per visualizzare per gruppo, soluzione, categoria, tipo di azione o stato.
+
+La visualizzazione predefinita per questa pagina non Mostra azioni di miglioramento con uno stato di test **superato**. Per visualizzare le azioni che hanno superato il testing, selezionare la casella **passata** nel riquadro dei filtri a comparsa. Solo le azioni con uno stato di prova del conteggio **superato** verso il punteggio.
+
+Nella pagina azioni di miglioramento vengono visualizzate le seguenti coordinate per ogni azione di miglioramento:
+
+- **Impatto sul punteggio**: i punti in base ai quali il punteggio complessivo aumenterà al termine dell'azione
+- **Regolamenti**: il regolamento o la norma pertinente all'azione
+- **Gruppo**: gruppo a cui è stata assegnata l'azione
+- **Solutions**: la soluzione in cui è possibile accedere per eseguire l'azione
+- **Valutazioni**: la valutazione (che consente di organizzare i controlli per soddisfare un determinato obiettivo di conformità) in cui si trova l'azione
+- **Categorie**: la categoria relativa alla protezione dei dati (ad esempio, protezione delle informazioni, gestione di dispositivi e così via)
+- **Stato del test**:
+    - **None** : non è stato registrato alcun aggiornamento dello stato
+    - **Non valutato** : il testing non è stato avviato
+    - L'implementazione **passata** ha testato correttamente
+    - **Esito negativo** dei test a basso rischio non riuscito, rischio basso
+    - **Esito** negativo del test di rischio medio non riuscito, rischio medio
+    - **Errore di test ad alto rischio** non riuscito, ad alto rischio
+    - **Non nell'ambito** – l'azione non rientra nell'ambito della valutazione e non incide sul Punteggio
+    - **Per essere rilevato** -per il test manuale, indica che è stata implementata un'azione ma non è stata testata. per il test automatizzato, indica che un'azione è in attesa di risultati dell'automazione
+    - **Non è** stato possibile rilevare-non è possibile determinare lo stato automatico
+    - **Parzialmente testato** – Punteggio automatizzato che premia i punti parziali
+- **Punti conseguiti**: numero di punti ottenuti dal massimo possibile
+
+#### <a name="learn-more"></a>Altre informazioni
+[Vedere come assegnare ed eseguire](compliance-score-improvement-actions.md)operazioni di miglioramento.
+
+## <a name="solutions-page"></a>Pagina soluzioni
+
+La pagina soluzioni consente di visualizzare la quota dei punti guadagnati e potenziali organizzati dalla soluzione. La visualizzazione dei punti rimanenti e le azioni di miglioramento da questa visualizzazione consentono di comprendere quali soluzioni richiedono un'attenzione più immediata.
+
+Individuare la pagina soluzioni selezionando la scheda **soluzioni** nel dashboard Punteggio di conformità. È inoltre possibile selezionare **Visualizza tutte le soluzioni** al di sotto delle **soluzioni che influiscono sul punteggio** nella sezione in alto a destra del dashboard.
+
+### <a name="filtering-your-solutions-view"></a>Applicazione del filtro alla visualizzazione soluzioni
+
+Per filtrare la visualizzazione delle soluzioni:
+
+1. Selezionare **filtro** nell'angolo in alto a sinistra dell'elenco di valutazioni.
+2. Nel riquadro dei **filtri** a comparsa, inserire un controllo accanto ai criteri desiderati (standard e normative, soluzione, tipo di azione, gruppo di Compliance Manager, categoria).
+3. Selezionare il pulsante **applica** . Il riquadro del filtro si chiude e vedrai la visualizzazione filtrata.
+
+È inoltre possibile modificare la visualizzazione per visualizzare le valutazioni per gruppo, prodotto o regolamento selezionando il tipo di raggruppamento dal menu a discesa **gruppo** sopra l'elenco valutazioni.
+
+### <a name="taking-actions-from-the-solution-page"></a>Esecuzione di azioni dalla pagina della soluzione
+
+Nella pagina soluzioni vengono visualizzate le soluzioni dell'organizzazione connesse alle azioni di miglioramento. Nella tabella sono elencati i contributi di ogni soluzione per il Punteggio globale, i punti di miglioramento dei punteggi conseguiti e possibili all'interno di tale soluzione e il numero di azioni per migliorare che sono state raggruppate in tale soluzione in grado di aumentare il punteggio.
+
+È possibile eseguire un'azione da questa schermata in due modi:
+
+1. Nella riga della soluzione desiderata fare clic sul numero di collegamenti ipertestuali nella colonna **azioni rimanenti** . Verrà visualizzata una visualizzazione filtrata della schermata azioni di miglioramento che mostra le azioni di miglioramento non testate per tale soluzione.
+
+2. Nella riga della soluzione desiderata fare clic su **Apri**nella colonna **Apri soluzione** . Verrà visualizzata la soluzione o la posizione nei centri di sicurezza e conformità di Microsoft 365 e Office 365, in cui è possibile eseguire l'azione consigliata.
+
+## <a name="assessments-page"></a>Pagina valutazioni
+
+La pagina valutazioni elenca tutte le [valutazioni](compliance-score-assessments.md) configurate per l'organizzazione. Il denominatore del Punteggio di conformità è determinato da tutte le valutazioni registrate. Le altre valutazioni aggiunte, le azioni di miglioramento più visibili nella pagina azioni di miglioramento e più alto è il denominatore del punteggio.
+
+In questa pagina vengono riepilogate le informazioni principali su ogni valutazione:
+
+- **Valutazione**: nome della valutazione
+- **Stato**:
+    - **Complete** -tutti i controlli hanno lo stato "superato" o almeno uno viene superato e gli altri sono "fuori ambito"
+    - **Incompleto** : almeno un controllo ha lo stato "non riuscito"
+    - **None** -tutti i controlli non sono stati testati
+    - **In Progress** -le azioni di miglioramento hanno qualsiasi altro stato, tra cui "in corso", "credito parziale" o "non rilevato
+- **Progress Assessment**: la percentuale del lavoro eseguito verso il completamento, misurata in base al numero di controlli verificati con esito positivo
+- **Azioni di miglioramento**: il numero di azioni completate per soddisfare l'implementazione dei controlli
+- **Azioni Microsoft**: il numero di azioni completate per soddisfare l'implementazione dei controlli Microsoft
+- **Gruppo**: nome del gruppo a cui appartiene la valutazione
+- **Prodotto**: servizio Microsoft 365 associato
+- **Regolamentazione**: lo standard normativo, la politica o la legge che si applica alla valutazione
+
+### <a name="filtering-your-assessments-view"></a>Filtrare la visualizzazione delle valutazioni
+
+Per filtrare la visualizzazione delle valutazioni:
+
+1. Selezionare **filtro** nell'angolo in alto a sinistra dell'elenco di valutazioni.
+2. Nel riquadro dei **filtri** a comparsa, controllare i criteri desiderati.
+3. Selezionare il pulsante Applica. Il riquadro del filtro si chiude e si vedrà la visualizzazione filtrata.
+
+È inoltre possibile modificare la visualizzazione per visualizzare le valutazioni per gruppo, prodotto o regolamento selezionando il tipo di raggruppamento dal menu a discesa **gruppo** sopra l'elenco valutazioni.
+
+### <a name="default-assessment"></a>Valutazione predefinita
+
+Per impostazione predefinita, nella pagina valutazioni viene visualizzata la valutazione della linea di base per la [protezione dei dati di Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline) . Il Punteggio di conformità fornisce anche diversi [modelli](compliance-score-templates.md) pronti per l'uso da cui creare valutazioni.
+
+## <a name="next-step"></a>Passaggio successivo
+Personalizzare il Punteggio di conformità mediante l' [impostazione di valutazioni](compliance-score-assessments.md).

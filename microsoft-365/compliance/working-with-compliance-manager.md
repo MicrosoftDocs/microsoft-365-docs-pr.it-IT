@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come utilizzare Compliance Manager per monitorare, assegnare e verificare le attività di conformità alle normative relative ai prodotti Microsoft.
-ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e12250c6f78759b2298bfb5ebba6ae79918a0fd9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817083"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023393"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Utilizzo di Microsoft Compliance Manager (anteprima)
 
@@ -41,7 +41,10 @@ Compliance Manager è accessibile da Microsoft Service Trust Portal. Tutti gli u
 
 ## <a name="administration"></a>Amministrazione
 
-Esistono funzioni amministrative specifiche disponibili solo per l'amministratore globale e visibili solo quando si esegue l'accesso con un account di amministratore globale. L'amministratore globale può assegnare le autorizzazioni utente e abilitare gli aggiornamenti automatici del Punteggio sicuro.
+Esistono funzioni amministrative specifiche disponibili solo per l'amministratore globale e visibili solo quando si esegue l'accesso con un account di amministratore globale. L'amministratore globale può:
+- [Assegnare ruoli utente](#assigning-compliance-manager-roles-to-users)
+- [Attivazione e disattivazione degli aggiornamenti automatici del Punteggio sicuro](#controlling-automatic-secure-score-updates)
+- [Configurare le impostazioni per la privacy degli utenti](#configuring-user-privacy-settings)
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Assegnazione di ruoli Compliance Manager agli utenti
 
@@ -94,6 +97,92 @@ Se si sceglie **imposta per azione,** eseguire i passaggi aggiuntivi per abilita
 8. Selezionare **Salva.** Secure Score il monitoraggio continuo è ora attivato per tale azione.
 
 **Nota:** Solo l'amministratore globale può abilitare o disattivare gli aggiornamenti automatici per tutte le azioni. L'amministratore di Compliance Manager può abilitare gli aggiornamenti automatici per singole azioni, ma non per tutte le azioni a livello globale.
+
+### <a name="configuring-user-privacy-settings"></a>Configurazione delle impostazioni di privacy degli utenti
+
+Alcune normative richiedono che un'organizzazione sia in grado di eliminare i dati della cronologia degli utenti. Per abilitare questa impostazione, le funzioni **delle impostazioni di privacy degli utenti** consentono agli amministratori di:
+  
+- [Cercare un utente](#search-for-a-user)
+
+- [Esportare un report di cronologia dei dati dell'account](#export-a-report-of-account-data-history)
+
+- [Riassegnare attività](#reassign-action-items)
+
+- [Eliminare la cronologia dei dati dell'utente](#delete-user-data-history)
+    
+![Amministratore di Compliance Manager - Funzioni delle impostazioni di privacy dell'utente](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+  
+#### <a name="search-for-a-user"></a>Cercare un utente
+
+Cercare un account utente:
+  
+1. Immettere l'indirizzo di posta elettronica dell'utente digitando l'alias, ovvero le informazioni a sinistra del simbolo @, e scegliendo il nome di dominio dall'elenco dei suffissi di dominio sulla destra. Se l'organizzazione dispone di più domini registrati, è possibile controllare il suffisso del nome di dominio dell'indirizzo di posta elettronica per assicurarsi che sia corretto.
+    
+2. Se il nome utente è stato immesso correttamente, selezionare **Cerca**.
+    
+3. Se l'account utente non viene trovato, nella pagina verrà visualizzato il messaggio di errore "utente non trovato". Controllare le informazioni relative all'indirizzo di posta elettronica dell'utente, effettuare le correzioni se necessario e selezionare **Cerca** per riprovare.
+    
+4. Se viene rilevato l'account utente, il testo del pulsante cambia da **Cerca** a **Cancella**, che indica che l'account utente restituito è il contesto operativo per le funzioni aggiuntive che verranno visualizzate di seguito e che l'esecuzione di tali funzioni si applicherà a questo account utente.
+    
+5. Per cancellare i risultati della ricerca e cercare un altro utente, selezionare **Annulla**.
+    
+#### <a name="export-a-report-of-account-data-history"></a>Esportare un report di cronologia dei dati dell'account
+
+Dopo aver individuato l'account utente, si può generare un report delle dipendenze collegate all'account. Queste informazioni consentono di riassegnare le attività aperte o di garantire l'accesso a prove già caricate.
+  
+ Per generare ed esportare un report:
+  
+1. Selezionare **Esporta** per generare e scaricare un report degli elementi azione di controllo di Compliance Manager attualmente assegnati all'account utente restituito e l'elenco dei documenti caricati da tale utente. Se non sono state assegnate azioni o documenti caricati, viene visualizzato un messaggio di errore che indica che non è presente alcun dato per questo utente.
+
+2. Il report viene scaricato nello sfondo della finestra del browser attiva. Se non viene visualizzato un pop-up per il download, controllare la cronologia dei download del browser.
+
+3. Aprire il documento per visualizzare i dati del report.
+
+> [!NOTE]
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+  
+#### <a name="reassign-action-items"></a>Riassegnare attività
+
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+  
+ Per riassegnare attività a un altro utente:
+  
+1. Fare clic sulla casella di input per cercare e selezionare un altro utente all'interno dell'organizzazione a cui devono essere assegnate le attività dell'utente restituito.
+    
+2. Selezionare **Sostituisci** per riassegnare tutte le attività di controllo dall'utente restituito all'utente appena selezionato.
+    
+3. Verrà visualizzata una finestra di dialogo di conferma, "questo riassegna tutti gli elementi di azione di controllo dall'utente corrente all'utente selezionato. Questa azione non può essere annullata. Continuare?
+    
+4. Per continuare, seleziona **OK**, altrimenti seleziona **Annulla**.
+    
+> [!NOTE]
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+  
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+  
+1. Aprire il report esportazione scaricato in precedenza.
+  
+2. Individuare e selezionare l'attività di controllo desiderata.
+  
+3. Selezionare **Gestisci documenti** per passare all'archivio delle evidenze per il controllo.
+  
+4. Scaricare il documento.
+  
+5. Eliminare il documento nell'archivio delle evidenze.
+  
+6. Ricaricare il documento. Il documento avrà ora una nuova data di caricamento, l'ora e il nome utente "caricato da".
+  
+#### <a name="delete-user-data-history"></a>Eliminare la cronologia dei dati dell'utente
+
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+  
+ Per eliminare l'attività dell'account utente e la cronologia di caricamento dei documenti:
+  
+1. Selezionare **Elimina**.
+
+2. Viene visualizzata una finestra di dialogo di conferma: "verranno rimosse tutte le assegnazioni degli elementi di azione di controllo e la cronologia del caricamento del documento per l'utente selezionato. Questa azione non può essere annullata. Continuare?
+    
+3. Per continuare, seleziona **OK**, altrimenti seleziona **Annulla**.
 
 ## <a name="groups"></a>Gruppi
 
@@ -196,6 +285,9 @@ Tutte le azioni che non sono supportate dall'integrazione del Punteggio sicuro p
 ## <a name="assessments"></a>Valutazioni
 
 In questa sezione viene illustrato come visualizzare e utilizzare le proprie valutazioni, tra cui l'aggiunta di nuove, l'esportazione, la copia delle informazioni da valutazioni esistenti e l'aggiornamento tramite il controllo delle versioni.
+
+> [!NOTE]
+> È ora possibile creare valutazioni nel punteggio di conformità. [Visualizzare informazioni e istruzioni](compliance-score-assessments.md).
 
 ### <a name="view-an-assessment-and-action-details"></a>Visualizzazione di una valutazione e dettagli sull'azione
   
@@ -408,13 +500,16 @@ Nel dashboard vengono visualizzati tutti i modelli, insieme alla certificazione 
 
 Esistono tre modi per utilizzare i modelli per creare valutazioni:
 
-1. Utilizzare uno dei modelli preconfigurati forniti da Microsoft.
-2. Personalizzare un modello preconfigurato con le proprie azioni e i controlli tramite il processo di estensione.
+1. Utilizzare uno dei modelli pronti per l'uso forniti da Microsoft.
+2. Personalizzare un modello pronto per l'uso con le proprie azioni e i controlli tramite il processo di estensione.
 3. Creare il proprio modello e importarlo in Compliance Manager.
 
-#### <a name="use-a-microsoft-pre-configured-template"></a>Utilizzo di un modello preconfigurato Microsoft
+> [!NOTE]
+> Quando si carica un modello in Compliance Manager, è necessario che sia approvato da due utenti che contengono un ruolo di amministratore prima che vengano pubblicati e siano disponibili per l'uso.
 
-I modelli preconfigurati sono disponibili nel dashboard dei **modelli** . Consente di visualizzare l' [elenco corrente dei modelli](compliance-manager-overview.md#templates), che viene aggiornato ogni volta che un nuovo modello è disponibile.
+#### <a name="use-a-ready-to-use-template"></a>Utilizzo di un modello pronto per l'uso
+
+I modelli pronti per l'uso sono disponibili nel dashboard dei **modelli** . Consente di visualizzare l' [elenco corrente dei modelli](compliance-score-templates.md), che viene aggiornato ogni volta che un nuovo modello è disponibile.
 
 #### <a name="customize-a-template-through-the-extension-process"></a>Personalizzare un modello tramite il processo di estensione
 
@@ -423,21 +518,23 @@ I modelli preconfigurati sono disponibili nel dashboard dei **modelli** . Consen
 3. Selezionare il modello che si desidera estendere dal menu a discesa.
 4. Se i dati del modello non sono già stati formattati in Excel, selezionare il collegamento nel riquadro a comparsa per scaricare un file di Excel. Compilare il foglio di calcolo in base ai dati del modello di importazione con le istruzioni di [Excel riportate](#import-template-data-with-excel) di seguito e salvarlo nell'unità locale.
 5. Importare i dati dei modelli personalizzati selezionando **Sfoglia** per caricare il file di Excel.
-6. Selezionare **Aggiungi a Dashboard**. Verrà visualizzato il nuovo modello aggiunto al dashboard dei **modelli** .
+6. Selezionare **Aggiungi a Dashboard**.
+7. Le modifiche apportate al modello richiedono l'approvazione di due utenti che contengono un ruolo di amministratore. Gli utenti ricevono una notifica degli aggiornamenti del modello. Una le modifiche sono approvate da due amministratori, verrà visualizzato il modello aggiornato nel dashboard dei **modelli** .
 
 #### <a name="create-your-own-template-and-import-it-into-compliance-manager"></a>Creare il proprio modello e importarlo in Compliance Manager
 
 1. Aprire il dashboard **modelli** e selezionare **+ Aggiungi modello**.
 2. Nel riquadro a comparsa modello, selezionare **Crea un nuovo modello**.
 3. Importare i dati del modello selezionando **Sfoglia** per caricare il file di Excel contenente i dati (vedere [importare i dati dei modelli con Excel](#import-template-data-with-excel) seguente).
-4. Selezionare **Aggiungi a Dashboard**. Verrà visualizzato il nuovo modello aggiunto al dashboard dei **modelli** .
+4. Selezionare **Aggiungi a Dashboard**.
+5. Il nuovo modello richiede l'approvazione di due utenti che contengono un ruolo di amministratore. Gli utenti ricevono una notifica che un nuovo modello è pronto per l'approvazione. Uno il modello è approvato da due amministratori, verrà visualizzato il nuovo modello nel dashboard dei **modelli** .
 
 #### <a name="import-template-data-with-excel"></a>Importare i dati dei modelli con Excel
 
 Per modificare un modello o creare un modello personalizzato, è possibile utilizzare un [foglio di calcolo di Excel](https://go.microsoft.com/fwlink/?linkid=2124865) per acquisire i dati necessari e caricarli in Compliance Manager. Questo modello di foglio di calcolo ha un formato specifico e uno schema che deve essere utilizzato oppure non verrà importato in Compliance Manager.
 
 > [!IMPORTANT]
-> Se sono stati creati o personalizzati modelli in Compliance Manager, **questo processo è stato aggiornato** nell'ambito della versione di aprile 2020 di Compliance Manager (Preview). **Leggere attentamente questa sezione.**
+> Se sono stati creati o personalizzati modelli in Compliance Manager, **questo processo è stato aggiornato di recente. Leggere attentamente questa sezione.**
 
 Il foglio di calcolo contiene quattro schede, tre delle quali sono necessarie:
 
@@ -496,7 +593,7 @@ La scheda **azioni** è obbligatoria.  Designa le azioni dell'organizzazione e n
 
 - **actionDescription**: consente di specificare una descrizione dell'azione. È possibile applicare la formattazione come testo in grassetto e collegamenti ipertestuali. Questo è il campo obbligatorio.
 
-- **scopo della dimensione**: questo è un campo facoltativo. Se lo si include, l'intestazione deve includere il prefisso "Dimension-". Tutte le dimensioni incluse in questa sezione verranno utilizzate come [filtri per il Punteggio di conformità](compliance-score-setup.md#filtering-your-dashboard-view) e visualizzate nella pagina dei dettagli sulle [azioni di miglioramento nel punteggio di conformità](working-with-compliance-score.md#view-your-improvement-actions).
+- **scopo della dimensione**: questo è un campo facoltativo. Se lo si include, l'intestazione deve includere il prefisso "Dimension-". Tutte le dimensioni incluse in questa sezione verranno utilizzate come [filtri per il Punteggio di conformità](compliance-score-setup.md#filtering-your-dashboard-view) e visualizzate nella pagina dei dettagli sulle azioni di miglioramento nel punteggio di conformità.
 
 ##### <a name="dimensions-tab"></a>Scheda dimensioni
 

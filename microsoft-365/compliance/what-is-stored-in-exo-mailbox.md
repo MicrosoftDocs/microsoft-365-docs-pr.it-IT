@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: I dati prodotti dalle app basate su cloud in Microsoft 365 sono archiviati o associati a una cassetta postale di Exchange Online dell'utente.
-ms.openlocfilehash: 946ad069a57e411c20d9b0a723d28dc03a4b094f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626282"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016299"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Contenuto archiviato nelle cassette postali di Exchange Online
 
@@ -32,8 +32,8 @@ Nella tabella seguente sono elencate le app che archiviano o associa i dati a un
 
 |App Microsoft 365|Descrizione|
 |:---------|:---------|
-|Forms|I moduli (archiviati come file PDF) e le risposte a un modulo (archiviati in un file CSV) sono allegati ai messaggi di posta elettronica e archiviati in una cartella nascosta nella cassetta postale dell'utente che ha creato il modulo. Quando si esporta contenuto da moduli in un file PST, questi dati si trovano nella cartella **ApplicationDataRoot** in una sottocartella denominata con il GUID seguente: **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
-|Microsoft 365 gruppi|I messaggi di posta elettronica, gli elementi del calendario, i contatti (persone), le note e le attività vengono archiviati nella cassetta postale associata a un gruppo di Microsoft 365.|
+|Forms|I moduli e le risposte a un modulo vengono archiviati nei file allegati ai messaggi di posta elettronica e archiviati in una cartella nascosta nella cassetta postale dell'utente che ha creato il modulo. I moduli creati prima del 2020 aprile sono archiviati come file PDF. I moduli creati dopo 2020 sono archiviati come file JSON.  Le risposte a un modulo vengono memorizzate in un file CSV. Quando si esporta contenuto da moduli in un file PST, questi dati si trovano nella cartella **ApplicationDataRoot** in una sottocartella denominata con il GUID seguente: **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
+|Gruppi di Microsoft 365|I messaggi di posta elettronica, gli elementi del calendario, i contatti (persone), le note e le attività vengono archiviati nella cassetta postale associata a un gruppo di Microsoft 365.|
 |Outlook/Exchange Online|I messaggi di posta elettronica, gli elementi del calendario, i contatti (persone), le note e le attività vengono archiviati nella cassetta postale di un utente.|
 |Persone|I contatti nell'app utenti (che sono gli stessi contatti di quelli accessibili in Outlook) vengono archiviati nella cassetta postale di un utente.|
 |Pianificazione delle classi|I piani creati nella pianificazione delle classi vengono archiviati nella cassetta postale del gruppo di Microsoft 365 corrispondente di cui viene effettuato il provisioning quando viene creato un nuovo piano. L'alias della cassetta postale del gruppo è il nome del piano.|

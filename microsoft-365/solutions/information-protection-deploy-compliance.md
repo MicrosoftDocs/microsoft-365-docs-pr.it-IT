@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Informazioni su come utilizzare Complance score e Compliance Manager per migliorare il livello di protezione dei dati personali.
-ms.openlocfilehash: 0d95c663030cf63fb83dfd40c7f3605c1c0b6f8f
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695174"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016368"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>Utilizzare la conformità score e Compliance Manager per gestire le azioni di miglioramento
 
@@ -109,7 +109,7 @@ Per coloro che hanno familiarità con l'analisi regolamentare basata su foglio d
 
 ## <a name="compliance-score"></a>Punteggio di conformità
 
-Dopo aver eseguito le valutazioni e le specifiche di revisione in Compliance Manager, è ora possibile accedere allo strumento [Punteggio di conformità](../compliance/working-with-compliance-score.md) ed esaminare il punteggio e suddividere i dati in modo più approfondito, tra cui l'area di controllo.
+Dopo aver eseguito le valutazioni e le specifiche di revisione in Compliance Manager, è ora possibile accedere allo strumento [Punteggio di conformità](../compliance/compliance-score.md) ed esaminare il punteggio e suddividere i dati in modo più approfondito, tra cui l'area di controllo.
 
 Lo strumento di valutazione della conformità nell'interfaccia di amministrazione di Microsoft 365 Compliance fornisce diversi approcci per esaminare e filtrare i dati di conformità ottenuti da Compliance Manager e vari servizi di Microsoft 365. Questo strumento viene aggiornato automaticamente quando vengono implementate varie impostazioni di configurazione e condivide i segnali con il Punteggio sicuro di Microsoft in modo che vengano visualizzate molte azioni di miglioramento in entrambi i punteggi. 
  
@@ -141,7 +141,7 @@ Di seguito sono riportate alcune importanti suggerimenti per l'utilizzo di Score
 
 - Ogni normativa sulla privacy dei dati contiene una combinazione di controlli tecnici, specifiche della documentazione e requisiti operativi, di processo e di creazione di report. Tutte queste operazioni vengono visualizzate nelle azioni di miglioramento. 
 
-- Questo articolo si concentra su un sottoinsieme dei controlli tecnici specificati per la privacy dei dati in Compliance Manager and Compliance score. Per ulteriori informazioni sui controlli amministrativi non tecnici, vedere lo strumento e la [documentazione](../compliance/working-with-compliance-score.md) di Compliance Manager.
+- Questo articolo si concentra su un sottoinsieme dei controlli tecnici specificati per la privacy dei dati in Compliance Manager and Compliance score. Per ulteriori informazioni sui controlli amministrativi non tecnici, vedere lo strumento e la [documentazione](../compliance/compliance-score.md) di Compliance Manager.
 
 - Per concentrare la visualizzazione delle azioni di miglioramento nell'area di interesse, è possibile filtrare in base al tipo di azione nella scheda **soluzioni** dell'amministratore del Punteggio di conformità.
 

@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- Adm_NonTOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Informazioni su come risolvere i conflitti di licenza con l'abbonamento a Microsoft 365 for business.
-ms.openlocfilehash: 05efe9e75b051ece900ba9defe047f1244b713a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2270fd3ad831ec0ad92ac4eddec5f08a1d07f8be
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399669"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015972"
 ---
 # <a name="resolve-license-conflicts"></a>Risoluzione dei conflitti di licenze
 
@@ -59,7 +59,6 @@ ms.locfileid: "44399669"
 
 ::: moniker-end
 
-
 2. Osservare la colonna **Stato** per informazioni sul conflitto. Se si verifica un conflitto, verrà visualizzato un messaggio di avviso che indica che uno o più utenti hanno bisogno di una licenza valida.
 
     > [!NOTE]
@@ -69,7 +68,7 @@ ms.locfileid: "44399669"
 
 È possibile risolvere i conflitti di licenza [acquistando più licenze](../../commerce/licenses/buy-licenses.md) o [rimuovendo le licenze dagli utenti che non ne hanno più bisogno](remove-licenses-from-users.md). È possibile [eliminare un account utente per liberare una licenza](../add-users/delete-a-user.md).
   
-## <a name="related-articles"></a>Articoli correlati 
+## <a name="related-articles"></a>Articoli correlati
 
 [Assegnazione licenze agli utenti](assign-licenses-to-users.md).
   

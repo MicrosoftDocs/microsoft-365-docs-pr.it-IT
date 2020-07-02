@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
-ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545947"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005859"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
 
@@ -126,7 +126,7 @@ Si supponga, ad esempio, che la compagnia aerea Blu laggiù abbia assunto Margie
 
 - L' `5322.From` indirizzo è blueyonder@news.blueyonderairlines.com, che è quello che vedrai in Outlook.
 
-Elenchi di mittenti attendibili e elenchi di domini attendibili nei criteri di protezione da posta indesiderata in EOP ispezionare sia gli `5321.MailFrom` indirizzi che quelli `5322.From` . I mittenti attendibili di Outlook utilizzano solo l' `5322.From` indirizzo.
+Elenchi di mittenti attendibili e elenchi di domini attendibili nei criteri di protezione da posta indesiderata in EOP ispezionare solo gli `5322.From` indirizzi, analogamente ai mittenti attendibili di Outlook che utilizzano l' `5322.From` indirizzo.
 
 Per evitare che il messaggio venga filtrato, è possibile eseguire le operazioni seguenti:
 

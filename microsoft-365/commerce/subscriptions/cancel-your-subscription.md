@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818520"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023370"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -144,10 +144,12 @@ Quando l'annullamento diventa efficace, gli utenti perdono l'accesso ai dati. Pr
 
 ### <a name="uninstall-office-optional"></a>Disinstallare Office (facoltativo)
 
-Se l'abbonamento è stato annullato e gli utenti non sono stati spostati in un altro abbonamento che include Microsoft 365, Microsoft 365 viene eseguito in modalità di funzionalità ridotte. In questo caso, gli utenti possono leggere e stampare solo i documenti e le applicazioni di Microsoft 365 visualizzano le [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Per evitare confusione, chiedere agli utenti di [disinstallare Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) dai propri computer.
+Se l'abbonamento è stato annullato e gli utenti non sono stati [spostati in un altro abbonamento](move-users-different-subscription.md) che include Microsoft 365, Microsoft 365 viene eseguito in modalità di funzionalità ridotte. In questo caso, gli utenti possono leggere e stampare solo i documenti e le applicazioni di Microsoft 365 visualizzano le [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Per evitare confusione, chiedere agli utenti di [disinstallare Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) dai propri computer.
 
 ## <a name="related-articles"></a>Articoli correlati
 
 [Rinnovare l'abbonamento](renew-your-subscription.md)
 
 [Riattivare l'abbonamento](reactivate-your-subscription.md)
+
+[Trasferire gli utenti a un abbonamento diverso](move-users-different-subscription.md)
