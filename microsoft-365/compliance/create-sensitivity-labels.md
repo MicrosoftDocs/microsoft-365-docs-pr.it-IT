@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i messaggi di posta elettronica dell'organizzazione."
-ms.openlocfilehash: 96784edb6cf31d024d94e12a76c96b2f61340f04
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 465da9f5a3265de01b1108944cd8c6dcfae7912d
+ms.sourcegitcommit: 0b59339167bdc3a69b3d91ae6252dc96bdde7cfe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679080"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44907007"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
 
@@ -53,17 +53,29 @@ L'amministratore globale dell'organizzazione dispone delle autorizzazioni comple
     - Centro sicurezza e conformità:
         - **Classificazione** > **Etichette di riservatezza**
 
-2. Nella scheda **Etichette** selezionare **+ Crea un'etichetta** per avviare la procedura guidata **Nuova etichetta di riservatezza**.
-
-3. Seguire le indicazioni per le impostazioni dell'etichetta.
+2. Nella pagina **Etichette** selezionare **+ Crea un'etichetta** per avviare la procedura guidata Nuova etichetta di riservatezza. 
     
-    Per altre informazioni sulle impostazioni delle etichette, vedere [Operazioni eseguibili dalle etichette di riservatezza](sensitivity-labels.md#what-sensitivity-labels-can-do) nelle informazioni di panoramica.
+    Ad esempio, dal Centro conformità Microsoft 365:
+    
+    ![Creare un'etichetta di riservatezza](../media/create-sensitivity-label-full.png)
+    
+    Nota: per impostazione predefinita, i tenant non hanno etichette ed è necessario crearle. Le etichette nell'immagine di esempio sono quelle predefinite di cui è stata eseguita la [migrazione da Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+
+3. Seguire le istruzioni della procedura guidata per le impostazioni dell'etichetta.
+    
+    Per altre informazioni sulle impostazioni delle etichette, vedere [Operazioni eseguibili dalle etichette di riservatezza](sensitivity-labels.md#what-sensitivity-labels-can-do) nelle informazioni di panoramica e usare le indicazioni nella procedura guidata per le singole impostazioni.
 
 4. Ripetere questi passaggi per creare altre etichette. Se invece si vuole creare un'etichetta secondaria, selezionare prima di tutto l'etichetta padre, poi **...** per **Altre azioni**, quindi selezionare **Aggiungi etichetta secondaria**.
 
 5. Una volta create tutte le etichette desiderate, rivedere l'ordine e, se necessario, spostarle verso l'alto o verso il basso. Per modificare l'ordine di un'etichetta selezionare **...** per **Altre azioni**, quindi selezionare **Sposta su** o **Sposta giù**. Per altre informazioni, vedere [Priorità dell'etichetta (l'ordine è importante)](sensitivity-labels.md#label-priority-order-matters) nelle informazioni di panoramica.
 
-Per modificare un'etichetta esistente, selezionarla e quindi scegliere **Modifica etichetta**. Verrà avviata la procedura guidata **Modifica etichetta di riservatezza**, che consente di modificare tutte le impostazioni dell'etichetta descritte al passaggio 3. 
+Per modificare un'etichetta esistente, selezionarla e quindi selezionare il pulsante **Modifica etichetta**:
+
+![Modificare un'etichetta di riservatezza](../media/edit-sensitivity-label-full.png)
+
+Verrà avviata la procedura guidata **Modifica etichetta di riservatezza**, che consente di modificare tutte le impostazioni dell'etichetta descritte al passaggio 3.
+
+Non eliminare un'etichetta se non se ne comprende l'impatto sugli utenti. Per altre informazioni, vedere [Rimozione ed eliminazione di etichette](#removing-and-deleting-labels). 
 
 > [!NOTE]
 > Se si modifica un'etichetta che è stata già pubblicata usando un criterio di etichetta, non saranno necessari ulteriori passaggi al completamento della procedura guidata. Ad esempio, non è necessario aggiungerla a un nuovo criterio di etichetta in modo che le modifiche vengano rese disponibili agli stessi utenti. Tuttavia, saranno necessarie fino a 24 ore affinché le modifiche vengano replicate a utenti e servizi.
@@ -125,20 +137,24 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - Centro sicurezza e conformità:
         - **Classificazione** > **Etichette di riservatezza**
 
-2. Selezionare la scheda **Criteri delle etichette**.
-
-3. Selezionare **Pubblica etichette** per avviare la procedura guidata **Crea criterio**.
-
-4. Selezionare **Scegliere le etichette di riservatezza da pubblicare**. Selezionare le etichette che si vogliono rendere disponibili nelle app e per i servizi e quindi selezionare **Aggiungi**.
+2. Selezionare la scheda **Criteri etichetta** e quindi **Pubblica etichette** per avviare la creazione guidata criterio:
     
-    > [!NOTE]
+    Ad esempio, dal Centro conformità Microsoft 365:
+        
+    ![Pubblica etichette](../media/publish-sensitivity-labels-full.png)
+    
+    Nota: per impostazione predefinita, i tenant non hanno criteri di etichetta ed è necessario crearli. 
+
+3. Nella procedura guidata selezionare **Scegliere le etichette di riservatezza da pubblicare**. Selezionare le etichette che si vogliono rendere disponibili nelle app e per i servizi e quindi selezionare **Aggiungi**.
+    
+    > [!IMPORTANT]
     > Se si seleziona una etichetta secondaria, accertarsi di selezionare anche l'etichetta padre.
     
-5. Rivedere le etichette selezionate e selezionare **Modifica** se si vogliono apportare modifiche. Altrimenti selezionare **Avanti**.
+4. Rivedere le etichette selezionate e selezionare **Modifica** se si vogliono apportare modifiche. Altrimenti selezionare **Avanti**.
 
-6. Seguire le istruzioni visualizzate per configurare le impostazioni del criterio.
+5. Seguire le istruzioni visualizzate per configurare le impostazioni del criterio.
     
-    Per altre informazioni su queste impostazioni, vedere [Operazioni eseguibili dai criteri di etichetta](sensitivity-labels.md#what-label-policies-can-do) nelle informazioni generali.
+    Per altre informazioni su queste impostazioni, vedere [Operazioni eseguibili dai criteri di etichetta](sensitivity-labels.md#what-label-policies-can-do) nelle informazioni di panoramica e usare le indicazioni nella procedura guidata per le singole impostazioni.
 
 7. Ripetere questi passaggi se sono necessarie impostazioni del criterio diverse per utenti o percorsi diversi. Ad esempio, possono essere necessarie altre etichette per un gruppo di utenti oppure un'etichetta predefinita diversa per un sottoinsieme di utenti.
 
@@ -146,7 +162,11 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 Completando la procedura guidata, il criterio di etichetta viene pubblicato automaticamente. Per apportare modifiche a un criterio pubblicato, basta modificarlo. Non è necessario selezionare una specifica azione di pubblicazione o ripubblicazione.
 
-Per modificare un criterio di etichetta esistente, selezionarlo e quindi scegliere **Modifica criterio**. Verrà avviata la procedura guidata **Crea criterio**, che consente di modificare le etichette incluse e le impostazioni dell'etichetta. Una volta completata la procedura guidata, le modifiche vengono replicate automaticamente agli utenti e ai servizi selezionati.
+Per modificare un criterio di etichetta esistente, selezionarlo e quindi scegliere il pulsante **Modifica criterio**: 
+
+![Modificare un'etichetta di riservatezza](../media/edit-sensitivity-label-policy-full.png)
+
+Verrà avviata la procedura guidata **Crea criterio**, che consente di modificare le etichette incluse e le impostazioni dell'etichetta. Una volta completata la procedura guidata, le modifiche vengono replicate automaticamente agli utenti e ai servizi selezionati.
 
 Di solito, gli utenti visualizzano le etichette nelle proprie app di Office entro un paio di ore. Tuttavia, saranno necessarie fino a 24 ore affinché i criteri di etichetta e le relative modifiche vengano replicati a tutti gli utenti e servizi.
 
