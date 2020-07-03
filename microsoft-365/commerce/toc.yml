@@ -36,12 +36,14 @@
       href: subscriptions/manage-self-service-purchases-admins.md
 - name: Gestire licenze
   items:
-    - name: Gestire le licenze di sottoscrizione
+    - name: Acquistare o rimuovere licenze dell'abbonamento
       href: licenses/buy-licenses.md
     - name: Assegnare licenze agli utenti
       href: ../admin/manage/assign-licenses-to-users.md
     - name: Annullare l'assegnazione delle licenze agli utenti
       href: ../admin/manage/remove-licenses-from-users.md
+    - name: Trasferire gli utenti a un abbonamento diverso
+      href: subscriptions/move-users-different-subscription.md
     - name: Informazioni su abbonamenti e licenze
       href: licenses/subscriptions-and-licenses.md
 - name: Fatture e pagamenti

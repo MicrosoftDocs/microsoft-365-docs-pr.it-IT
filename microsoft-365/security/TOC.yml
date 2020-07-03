@@ -217,7 +217,7 @@
               href: mtp/feedback.md
             - name: Gestire i ticket tramite ServiceNow
               href: ./mtp/tickets.md
-    - name: Office 365 Advanced Threat Protection
+    - name: Sicurezza di Office 365
       items:
         - name: Per iniziare
           items:
@@ -366,7 +366,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: Visualizzare informazioni sui file dannosi
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Protezione avanzata dalle minacce
+        - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items:
             - name: Novità
