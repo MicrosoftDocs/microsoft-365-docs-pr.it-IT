@@ -1,5 +1,5 @@
 ---
-title: Definizioni di entità per il tipo di informazioni riservate
+title: Definizioni delle entità tipo di informazioni sensibili
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: acfec3d92f3f3f3207819a2fe0988e45ae56ae02
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: a91459652d785f6536cb50e381ab139057a3eae8
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327284"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024644"
 ---
-# <a name="sensitive-information-type-entity-definitions"></a>Definizioni di entità per il tipo di informazioni riservate
+# <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
 La prevenzione della perdita di dati (DLP) nel centro conformità include numerosi tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni. Una tipologia di informazioni riservate viene definita da un modello identificato da un'espressione regolare o da una funzione. Inoltre, è possibile utilizzare elementi probatori, ad esempio, parole chiave e checksum per identificare una tipologia di informazioni riservate. In questa procedura di valutazione vengono usati anche il livello di probabilità e la prossimità.
   
@@ -4287,7 +4287,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
 
 ## <a name="estonia-drivers-license-number"></a>Numero della patente di guida estone
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
@@ -4902,7 +4902,7 @@ Queste sono le entità nel tipo di informazioni riservate del conducente dell'Un
 - [Bulgaria](#bulgaria-drivers-license-number)
 - [Croazia](#croatia-drivers-license-number)
 - [Cipro](#cyprus-drivers-license-number)
-- [Ceco](#czech-drivers-license-number)
+- [Czech](#czech-drivers-license-number)
 - [Danimarca](#denmark-drivers-license-number)
 - [Estonia](#estonia-drivers-license-number)
 - [Finlandia](#finland-drivers-license-number)
@@ -4934,7 +4934,7 @@ Queste sono le entità del tipo di informazioni riservate del numero di identifi
 - [Bulgaria](#bulgaria-national-identification-number)
 - [Croazia](#croatia-identity-card-number)
 - [Cipro](#cyprus-national-identification-number)
-- [Ceco](#czech-personal-identity-number)
+- [Czech](#czech-personal-identity-number)
 - [Danimarca](#denmark-personal-identification-number)
 - [Estonia](#estonia-national-identification-number)
 - [Finlandia](#finland-national-identification-number)
@@ -4966,7 +4966,7 @@ Queste sono le entità del numero di passaporto typeThese informazioni riservate
 - [Bulgaria](#bulgaria-passport-number)
 - [Croazia](#croatia-passport-number)
 - [Cipro](#cyprus-passport-number)
-- [Ceco](#czech-passport-number)
+- [Czech](#czech-passport-number)
 - [Danimarca](#denmark-passport-number)
 - [Estonia](#estonia-passport-number)
 - [Finlandia](#finland-passport-number)
@@ -4997,7 +4997,7 @@ Queste sono le entità che si trovano nel codice di previdenza sociale dell'Unio
 - [Austria](#austria-social-security-number-or-equivalent-identification)
 - [Belgio](#belgium-social-security-number-or-equivalent-identification)
 - [Croazia](#croatia-social-security-number-or-equivalent-identification)
-- [Ceco](#czech-social-security-number-or-equivalent-identification)
+- [Czech](#czech-social-security-number-or-equivalent-identification)
 - [Danimarca](#denmark-social-security-number-or-equivalent-identification)
 - [Finlandia](#finland-social-security-number-or-equivalent-identification)
 - [Francia](#france-social-security-number-insee-or-equivalent-identification)
@@ -5017,7 +5017,7 @@ le entità hese sono incluse nel tipo di informazioni riservate del numero di id
 - [Bulgaria](#bulgaria-tax-identification-number)
 - [Croazia](#croatia-tax-identification-number)
 - [Cipro](#cyprus-tax-identification-number)
-- [Ceco](#czech-tax-identification-number)
+- [Czech](#czech-tax-identification-number)
 - [Danimarca](#denmark-tax-identification-number)
 - [Estonia](#estonia-tax-identification-number)
 - [Finlandia](#finland-tax-identification-number)
@@ -6300,6 +6300,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
+- hkid
 - carta di identità di Hong Kong
 - HKIDC
 - id card
@@ -6798,7 +6799,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
 
    
 
@@ -11218,7 +11219,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuna
+Nessuno
 
 ## <a name="spain-tax-identification-number"></a>Spagna-codice fiscale
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del numero di identificazione fiscale dell'Unione europea.

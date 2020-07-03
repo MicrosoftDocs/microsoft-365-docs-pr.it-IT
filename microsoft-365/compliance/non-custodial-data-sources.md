@@ -14,14 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile aggiungere origini dati non detentive a un caso di eDiscovery avanzato e inserire un'esenzione nell'origine dati. Le origini dati non detentive vengono reindicizzate, pertanto qualsiasi contenuto ritenuto come parzialmente indicizzato viene rielaborato per renderlo completamente e rapidamente ricercabile.
-ms.openlocfilehash: 618d39bfb7be6cd260c88cdf4c57501747f440f1
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: È possibile aggiungere origini dati non detentive a un caso di eDiscovery avanzato e inserire un'esenzione nell'origine dati. Le origini dati non detentive vengono reindicizzate, pertanto qualsiasi contenuto ritenuto parzialmente indicizzato viene rielaborato per renderlo completamente e rapidamente ricercabile.
+ms.openlocfilehash: 2009a8cc82dc9407e9871409e85cdcd321ea9bb0
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695501"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024746"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Aggiungere origini dati non detentive a un caso avanzato di eDiscovery
 
@@ -47,7 +46,7 @@ Eseguire la procedura seguente per aggiungere e gestire origini dati non detenti
 
    Ogni origine dati non priva di detenzione aggiunta è elencata nella pagina **origini dati** .
 
-   Inoltre, un processo denominato *reindicizzazione dei dati non affidatario* viene creato e visualizzato nella scheda **processi** del caso. Una volta creato, il processo di indicizzazione avanzato è stato avviato e le origini dati vengono reindicizzate.
+   Inoltre, un processo denominato *reindicizzazione dei dati non detentivi* viene creato e visualizzato nella scheda **processi** del caso. Una volta creato, il processo di indicizzazione avanzato è stato avviato e le origini dati vengono reindicizzate.
 
 ## <a name="managing-the-hold-on-non-custodial-data-sources"></a>Gestione del blocco su origini dati non detentive
 

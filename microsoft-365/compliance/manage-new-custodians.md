@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come visualizzare i dettagli, modificare e modificare in blocco l'elenco dei depositari in un caso di eDiscovery avanzato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 95b7a7dbec5656a1ac0692ed465eb5a99d7ca11a
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034178"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024806"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestire i depositari in un caso avanzato di eDiscovery
 
-La scheda depositari in Advanced eDiscovery contiene un elenco di tutti i depositari che sono stati aggiunti al caso. Dopo aver aggiunto i depositari a un caso, i dettagli relativi a ogni custode vengono raccolti automaticamente da Azure Active Directory e sono visualizzabili in Advanced eDiscovery.
+La pagina depositari nella scheda **origini** in un caso avanzato di eDiscovery contiene un elenco di tutti i depositari che sono stati aggiunti al caso. Dopo aver aggiunto i depositari a un caso, i dettagli relativi a ogni custode vengono raccolti automaticamente da Azure Active Directory e sono visualizzabili in Advanced eDiscovery.
 
 ![Gestire i depositari](../media/CustodianDetails.PNG)
 
@@ -79,9 +79,9 @@ Per aggiornare le origini dati associate a un custode:
 
 1. Accedere a **eDiscovery > Advanced eDiscovery** e aprire il caso.
   
-2. Fare clic sulla scheda **depositari** .
+2. Fare clic sulla scheda **origini** .
   
-3. Selezionare un custode dall'elenco e fare clic su **modifica** nella pagina a comparsa.
+3. Nella pagina **depositari** selezionare un custode dall'elenco e fare clic su **modifica** nella pagina a comparsa.
 
     ![Modificare origini dati](../media/EditCustodianDataSource.PNG)
   
@@ -103,9 +103,11 @@ Per attivare il processo di reindicizzazione per risolvere gli elementi parzialm
 
 1. Accedere a **eDiscovery > Advanced eDiscovery** e aprire il caso.
 
-2. Fare clic **sulla scheda depositari**e quindi selezionare un custode i cui dati devono essere reindicizzati. 
+2. Fare clic sulla scheda **origini** .
 
-3. Nella pagina riquadro a comparsa fare clic su **Aggiorna indice**.
+3. Nella pagina **depositari** selezionare un custode i cui dati devono essere reindicizzati.
+
+4. Nella pagina riquadro a comparsa fare clic su **Aggiorna indice**.
 
    Viene visualizzata una finestra di dialogo che indica che è stato creato il processo di indicizzazione.
 
@@ -127,9 +129,9 @@ Per rilasciare un custode:
 
 1. Accedere a **eDiscovery > Advanced eDiscovery** e aprire il caso.
 
-2.    Passare alla scheda **depositari** .
+2. Fare clic sulla scheda **origini** .
 
-3.    Fare clic sulla **scheda depositari**e quindi selezionare il custode che viene rilasciato dal caso.
+3. Nella pagina **depositari** , quindi selezionare il custode che è stato rilasciato dal caso.
 
 4. Nella pagina riquadro a comparsa fare clic su **rilascia custode**.
 

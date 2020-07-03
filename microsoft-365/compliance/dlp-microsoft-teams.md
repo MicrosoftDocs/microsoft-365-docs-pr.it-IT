@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 58a96cea3a45fb640b06e09debd35dd005b15a32
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347855"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024726"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
 
@@ -113,8 +113,8 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici**e quindi scegliere **Avanti**.<br/>Se sono stati scelti percorsi specifici, selezionarli per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
-    > Se si desidera verificare che i documenti che contengono informazioni riservate non siano condivisi in modo improprio, verificare che i **siti di SharePoint** e gli **account di OneDrive** siano attivati insieme ai **messaggi di chat e dei canali di Team**.
-    > I canali di Microsoft teams dipendono fortemente dalla funzionalità di Exchange Online. Verificare che l'indirizzo di **posta elettronica di Exchange** sia abilitato anche per i criteri da applicare per il contenuto dei canali.  
+    > Se si desidera verificare che i documenti che contengono informazioni riservate non siano condivisi in modo improprio nei team, verificare che i **siti di SharePoint** e gli **account di OneDrive** siano attivati, insieme ai **messaggi di chat e di canale dei team**.
+
 <br/>
 
 6. Nella scheda **impostazioni dei criteri** , in **Personalizza il tipo di contenuto che si desidera proteggere**, mantenere le impostazioni predefinite semplici oppure scegliere **Usa impostazioni avanzate**e quindi scegliere **Avanti**. Se si scelgono le impostazioni avanzate, è possibile creare o modificare regole per i criteri. Per ottenere assistenza, vedere [Simple Settings vs Advanced Settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).

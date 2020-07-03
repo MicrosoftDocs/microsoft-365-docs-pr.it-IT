@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Analogamente alle funzionalità del centro conformità di Microsoft 365, il contenuto della guida è sempre in evoluzione. Scopri cosa c'è di nuovo e aggiornato in questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936149"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035641"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aggiornamenti recenti a Microsoft 365 content Compliance
 
@@ -150,7 +150,7 @@ Informazioni [sulle etichette di riservatezza](sensitivity-labels.md) (aggiornat
 
 [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md#logon-types-and-mailbox-actions) (aggiornato)<br>Sono state aggiunte informazioni sulla nuova azione della cassetta postale di MailItemsAccessed, introdotta con Advanced audit.
 
-[Eseguire una ricerca nel registro di controllo](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (aggiornato)<br>Sono state aggiunte nuove descrizioni per le attività relative alle etichette di riservatezza e altre informazioni sulle [attività di collaborazione dei moduli](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-co-authors-and-anonymous-responders)di controllo.
+[Eseguire una ricerca nel registro di controllo](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (aggiornato)<br>Sono state aggiunte nuove descrizioni per le attività relative alle etichette di riservatezza e altre informazioni sulle [attività di collaborazione dei moduli](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-coauthors-and-anonymous-responders)di controllo.
 
 ### <a name="compliance-offerings"></a>Offerte per la conformità
 

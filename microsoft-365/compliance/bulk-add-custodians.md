@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare lo strumento di aggiunta di massa per aggiungere rapidamente più depositari e le origini dati associate a un caso in Advanced eDiscovery.
-ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: ab9626be01814fa95a959141433b431df9bf7724
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741638"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024666"
 ---
 # <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>Aggiungere in blocco i depositari a un caso avanzato di eDiscovery
 
@@ -37,7 +37,8 @@ Per i casi di eDiscovery avanzati che coinvolgono numerosi depositari, è possib
 
 4. Aggiungere le informazioni di custodia al file CSV e salvarlo nel computer locale. Per informazioni sulle proprietà del file CSV, vedere la sezione successiva.
 
-5. Nella scheda **origini** fare clic di nuovo su **Importa depositari** . 
+5. Nella scheda **origini** fare clic di nuovo su **Importa depositari** .
+
 6. Nella pagina riquadro a comparsa fare clic su **Sfoglia** e caricare il file CSV.
 
    Dopo il caricamento del file CSV, viene creato e visualizzato un processo di BulkAddCustodian nella scheda **processi** . Il processo consente di convalidare i depositari e le origini dati corrispondenti e quindi di aggiungerli alla scheda **depositari** nella pagina **origini** del caso.

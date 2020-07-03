@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene fornita una panoramica delle funzionalità avanzate di eDiscovery in Microsoft 365, uno strumento per le indagini interne ed esterne.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 5adf2a62aad5e7da476c2713fa18f9e8b6ab9329
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322041"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024788"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Panoramica della soluzione avanzata di eDiscovery in Microsoft 365
 
@@ -59,13 +59,13 @@ A livello elevato, ecco come Advanced eDiscovery supporta il flusso di lavoro di
 
 Nelle sezioni seguenti vengono descritti i singoli passaggi del flusso di lavoro incorporato in Advanced eDiscovery. Nella schermata seguente viene illustrata la scheda **Home** di un caso denominato *Product passivity 2019002*. Nota le schede del flusso di lavoro nella parte superiore della pagina vengono sequenziate per essere allineate al processo EDRM. 
 
-Per ulteriori informazioni sul flusso di lavoro end-to-end in Advanced eDiscovery, vedere this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133). 
+Per ulteriori informazioni sul flusso di lavoro end-to-end in Advanced eDiscovery, vedere this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133).
 
 ![Le schede in Advanced eDiscovery seguono il flusso di lavoro di EDRM](../media/aedisco-homepage-1.png)
 
-## <a name="managing-custodians"></a>Gestione dei depositari
+## <a name="managing-custodians-and-non-custodial-data-sources"></a>Gestione di depositari e origini dati non detentive
 
-Utilizzare la scheda **depositari** per aggiungere e gestire le persone che sono state identificate come persone di interesse nel caso. Quando si aggiungono depositari, è possibile eseguire rapidamente azioni relative a un custode come l'archiviazione di un blocco legale su origini dati depositarie, la comunicazione con i depositari e la ricerca di origini dati depositarie per raccogliere contenuti rilevanti per il caso. Quando il caso progredisce, è facile aggiungere nuovi depositari o rilasciarli dal caso. Per ulteriori informazioni, vedere [lavorare con i depositari in Advanced eDiscovery](managing-custodians.md).
+Utilizzare la scheda **origini** per aggiungere e gestire le persone che sono state identificate come persone di interesse nel caso e altre origini dati che potrebbero non essere associate a un custode. Quando si aggiungono conservanti o origini dati non detentive, è possibile eseguire rapidamente azioni come l'archiviazione legale su fonti di dati depositarie e non detentive, la comunicazione con i depositari e la ricerca di fonti di dati depositarie e non detentive per raccogliere contenuti rilevanti per il caso. Quando il caso progredisce, è facile aggiungere nuovi depositari o fonti di data non detentive o rilasciarli dal caso. Per ulteriori informazioni, vedere [lavorare con i depositari in Advanced eDiscovery](managing-custodians.md).
 
 ## <a name="managing-legal-hold-notifications"></a>Gestione delle notifiche di blocco legale
 
@@ -85,7 +85,7 @@ Utilizzare la scheda **ricerche** per creare ricerche per cercare le origini dat
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Revisione e analisi dei dati del caso
 
-Utilizzare la scheda **revisione dei set** per esaminare e analizzare il contenuto raccolto dal sistema Live e aggiungerlo a un set di revisione. Un *set di revisione* è una raccolta statica di tali dati (in altre parole, una copia offline di dati) dei dati di custodia (e, se applicabile, i dati non detentivi) raccolti nella fase precedente del flusso di lavoro di eDiscovery. Quando si aggiungono i risultati di ricerca a un set di revisione, viene attivato un processo che estrae i file dai contenitori, estrae i metadati ed estrae il testo. Al termine del processo, il sistema crea un nuovo indice di tutti i dati raccolti dai depositari e lo aggiunge al set di revisione. Dopo aver aggiunto i dati al set di revisione, è possibile eseguire altre query per limitare i dati del caso, visualizzare i dati come testo o nel formato di file nativo e annotare, redigere e contrassegnare i documenti nel set di revisione. È inoltre possibile eseguire analisi avanzate, ad esempio la duplicazione dei documenti, il threading di posta elettronica e i temi. Dopo aver abbattuto i dati solo su ciò che è pertinente per il caso, è possibile scaricare i documenti direttamente o esportarli insieme ai metadati, alle annotazioni e ai tag dei file. Per altre informazioni, vedere:
+Utilizzare la scheda **revisione dei set** per esaminare e analizzare il contenuto raccolto dal sistema Live e aggiungerlo a un set di revisione. Un *set di revisione* è una raccolta statica di tali dati (in altre parole, una copia offline di dati) dei dati di custodia (e, se applicabile, i dati non detentivi) raccolti nella fase precedente del flusso di lavoro di eDiscovery. Quando si aggiungono i risultati di ricerca a un set di revisione, viene attivato un processo che estrae i file dai contenitori, estrae i metadati ed estrae il testo. Al termine del processo, il sistema crea un nuovo indice di tutti i dati raccolti dai depositari e lo aggiunge al set di revisione. Dopo aver aggiunto i dati al set di revisione, è possibile eseguire altre query per limitare i dati del caso, visualizzare i dati come testo o nel formato di file nativo e annotare, redigere e contrassegnare i documenti nel set di revisione. È inoltre possibile eseguire analisi avanzate, ad esempio la duplicazione dei documenti, il threading di posta elettronica e i temi. Dopo aver abbattuto i dati solo su ciò che è pertinente per il caso, è possibile scaricare i documenti direttamente o esportarli insieme ai metadati, alle annotazioni e ai tag dei file. Per ulteriori informazioni, vedere:
 
 - [Visualizzare i documenti in un insieme da rivedere](view-documents-in-review-set.md)
 

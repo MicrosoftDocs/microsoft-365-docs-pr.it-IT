@@ -17,55 +17,54 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come utilizzare lo strumento di gestione del custode incorporato in Advanced eDiscovery per coordinare i flussi di lavoro e identificare le origini dati rilevanti in un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 5b64bb288e94c345cc373b0d800bc0349895f7d3
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818613"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024708"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Aggiungere i depositari a un caso avanzato di eDiscovery
 
 Utilizzare lo strumento di gestione del custode incorporato in Advanced eDiscovery per coordinare i flussi di lavoro in merito alla gestione dei depositari e identificare le origini dati rilevanti e detentive associate a un caso. Quando si aggiunge un custode, il sistema può identificare automaticamente e inserire un blocco sulla cassetta postale di Exchange e OneDrive for business. Durante il processo di individuazione, è possibile identificare anche altre origini dati (ad esempio, cassette postali, siti o Team) a cui un custode ha eseguito l'accesso o ha contribuito. In questa situazione, è possibile utilizzare lo strumento di gestione dei depositari per associare tali origini dati a un determinato custode. Dopo aver aggiunto i depositari a un caso e aver associato altre origini dati, è possibile conservare i dati in modo rapido e cercarli.
 
-Utilizzare il flusso di lavoro seguente per aggiungere e gestire i depositari nei casi avanzati di eDiscovery. 
+Utilizzare il flusso di lavoro seguente per aggiungere e gestire i depositari nei casi avanzati di eDiscovery.
 
-![Scheda Gestione depositaria](../media/CustodianMgtPage.png)
+![Scheda origini in Advanced eDiscovery case](../media/AeD-Sources-Tab.png)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Verificare di disporre delle autorizzazioni necessarie
 
 Per aggiungere depositari a un caso, è necessario essere membri del gruppo di ruoli eDiscovery Manager. In questo modo, vengono fornite le autorizzazioni necessarie per aggiungere i depositari a un caso e inserire un'esenzione nelle origini dati della custodia.
-
 
 ## <a name="step-1-add-potential-custodians"></a>Passaggio 1: aggiungere potenziali depositari
 
 Il primo passaggio consiste nell'identificare e aggiungere i depositari al caso.
 
 1. Nella Home page di **Advanced eDiscovery** fare clic sul caso in cui si desidera aggiungere i depositari. 
- 
-2. Fare clic sulla scheda **depositari** e quindi fare clic su **+ Aggiungi depositari**.
+
+2. Fare clic sulla scheda **origini** , quindi fare clic su **Aggiungi depositari**.
 
 3. Individuare i depositari da aggiungere al caso. Digitare la prima parte del nome di una persona per visualizzare gli utenti di Azure Active Directory dell'organizzazione. Quando si trova la persona corretta, fare clic sul relativo nome per aggiungerli all'elenco.
 
    ![Identificare i potenziali depositari](../media/AddCustodianStep1.png)
- 
+
 4. Dopo aver aggiunto tutti i depositari rilevanti, fare clic su **Avanti** per selezionare le origini dati primarie dei depositari.
   
 ## <a name="step-2-select-custodian-data-sources"></a>Passaggio 2: selezionare origini dati di un custode
 
 Dopo aver aggiunto gli strumenti di gestione, lo strumento di gestione delle risorse di gestione consente di identificare le origini dati primarie possedute da ogni custode. Tali posizioni di dati sono le cassette postali di Exchange e l'account OneDrive del custode. 
 
-Per identificare le origini dati del custode: 
+Per identificare le origini dati del custode:
 
 1. Per selezionare la cassetta postale di Exchange per tutti i depositari, selezionare la casella di controllo **Exchange** nella parte superiore della colonna. È quindi possibile deselezionare la casella di controllo per qualsiasi custode specifico per rimuovere una cassetta postale come posizione di custodia. In alternativa, è possibile lasciare la casella di controllo **Exchange** nella parte superiore della colonna deselezionata e quindi selezionare la casella di controllo per i singoli depositari. 
- 
+
    ![Selezionare origini dati di custodia](../media/AddCustodianStep2.png)
- 
+
 2. Ripetere la stessa operazione per gli account OneDrive dei depositari. 
 
     Dopo aver selezionato le origini dati del custode, il sistema tenta automaticamente di identificare e verificare queste origini dati e quindi le aggiunge al caso come origini dati associate ai depositari.
- 
-4. Fare clic su **Avanti** per iniziare a associare altre origini dati ai depositari nel caso.
+
+3. Fare clic su **Avanti** per iniziare a associare altre origini dati ai depositari nel caso.
 
 ## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>Passaggio 3: associare altre origini dati a un custode
 
@@ -101,8 +100,8 @@ Dopo aver completato i depositari e le origini dati da aggiungere al caso, è fa
 
 Per inserire i depositari e le origini dati in attesa:
 
-1. Selezionare la casella di controllo **blocca** nella parte superiore della colonna per inserire tutti i custodi in attesa nella pagina Archivia i **depositari selezionati** . È quindi possibile deselezionare la casella di controllo per qualsiasi custode specifico da rimuovere dall'esenzione. In alternativa, è possibile lasciare la casella di controllo **blocca** nella parte superiore della colonna deselezionata e quindi selezionare la casella di controllo per i singoli depositari. 
- 
+1. Selezionare la casella di controllo **blocca** nella parte superiore della colonna per inserire tutti i custodi in attesa nella pagina Archivia i **depositari selezionati** . È quindi possibile deselezionare la casella di controllo per qualsiasi custode specifico da rimuovere dall'esenzione. In alternativa, è possibile lasciare la casella di controllo **blocca** nella parte superiore della colonna deselezionata e quindi selezionare la casella di controllo per i singoli depositari.
+
    ![Esenzioni di posizione](../media/AddCustodianStep5.PNG)
 
 2. Verificare le selezioni di blocco del custode e quindi fare clic su **completa**.
@@ -114,4 +113,3 @@ Dopo che un custode è stato messo in attesa, verrà creato automaticamente un c
 1. Nella **Home** page del caso, fare clic sulla scheda **esenzioni** , quindi fare clic su **CustodianHold-GUID**,  
 
 2. Nella pagina riquadro a comparsa, fare clic su **Modifica blocco** per visualizzare tutte le origini dati del custode che vengono conservate.
-

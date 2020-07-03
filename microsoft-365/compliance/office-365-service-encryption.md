@@ -14,21 +14,21 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla resilienza dei dati in Microsoft Office 365.'
-ms.openlocfilehash: e69d35f08070e1fe092ca8a9b4aef6d179711121
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4759cfda13ab5044ddf5980d7e61004e9e7626fa
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717347"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024776"
 ---
 # <a name="service-encryption"></a>Crittografia del servizio
 
 Oltre a utilizzare la crittografia a livello di volume, Exchange Online, Skype for business, SharePoint Online e OneDrive for business utilizzano anche la crittografia del servizio per crittografare i dati dei clienti. La crittografia del servizio consente di eseguire due opzioni di gestione principali:
 
-## <a name="microsoft-managed-keys"></a>Chiavi gestite Microsoft: 
+## <a name="microsoft-managed-keys"></a>Chiavi gestite Microsoft
 Microsoft gestisce tutte le chiavi di crittografia, incluse le chiavi radice per la crittografia del servizio. Questa opzione è attualmente disponibile in SharePoint Online e OneDrive for business. Questa opzione è attualmente in fase di rollforward per Exchange Online. Le chiavi gestite Microsoft forniscono la crittografia del servizio predefinita, a meno che non si decida di onboard usando la chiave del cliente. Se, in un secondo momento, si decide di non utilizzare la chiave del cliente senza seguire il percorso di eliminazione dei dati, i dati rimarranno crittografati utilizzando le chiavi gestite Microsoft. I dati vengono sempre crittografati a questo livello predefinito almeno. 
 
-## <a name="customer-key"></a>Chiave cliente: 
+## <a name="customer-key"></a>Customer Key
 È possibile specificare le chiavi radice utilizzate con la crittografia del servizio e gestire queste chiavi utilizzando Azure Key Vault. Microsoft gestisce tutte le altre chiavi. Questa opzione è denominata Customer Key ed è attualmente disponibile per Exchange Online, SharePoint Online e OneDrive for business. (In precedenza denominato crittografia avanzata con BYOK. Vedere [miglioramento della trasparenza e del controllo per i clienti di Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) per l'annuncio originale.
 
 La crittografia dei servizi offre molteplici vantaggi. Ad esempio, Customer Key:

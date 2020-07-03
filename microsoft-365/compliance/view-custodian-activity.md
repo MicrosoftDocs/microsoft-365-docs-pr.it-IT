@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilizzare lo strumento di gestione dei depositari di Advanced eDiscovery per accedere e cercare facilmente l'attività dei depositari all'interno del caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29aee2498b21cc4535ffa82f91fdba05125c4d18
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f9e96d0b5dd3bf42dbba56a6e1be91014485ce98
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819046"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024766"
 ---
 # <a name="view-custodian-audit-activity"></a>Visualizzazione dell'attività di controllo del custode
 
@@ -39,9 +39,9 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 1. Accedere a **eDiscovery > Advanced eDiscovery** e aprire il caso.
   
-2. Fare clic sulla scheda **depositari** .
+2. Fare clic sulla scheda **origini** .
   
-3. Selezionare un custode dall'elenco, quindi fare clic su **Visualizza attività custode** sulla pagina a comparsa.
+3. Nella pagina **depositari** selezionare un custode dall'elenco e quindi fare clic su **Visualizza attività custode** nella pagina a comparsa.
 
     Viene visualizzata la pagina di ricerca attività del custode. Tenere presente che il custode selezionato nel passaggio precedente viene visualizzato nella casella di menu a discesa **custode** . È possibile selezionare diversi depositari nell'elenco a discesa, ma è possibile cercare solo le attività per un custode alla volta.
 
@@ -49,15 +49,15 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
    
 4. Configurare i criteri di ricerca seguenti: 
       
-   a. **Attività** -fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Se si seleziona **Mostra risultati per tutte le attività** , verranno visualizzati i risultati di tutte le attività eseguite dal custode che corrispondono agli altri criteri di ricerca.
+   1. **Attività** -fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Se si seleziona **Mostra risultati per tutte le attività** , verranno visualizzati i risultati di tutte le attività eseguite dal custode che corrispondono agli altri criteri di ricerca.
 
       ![Elenco delle attività](../media/CustodianActivityAudit.PNG)
       
-      b. Data di **inizio e data di fine** : selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è di un anno.
+   1. Data di **inizio e data di fine** : selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è di un anno.
       
-      c. **Depositari** -fare clic in questa casella e quindi selezionare un custode specifico per visualizzare i risultati della ricerca. I record di controllo per l'attività selezionata eseguita dagli utenti selezionati in questa casella vengono visualizzati nell'elenco dei risultati.
+   1. **Depositari** -fare clic in questa casella e quindi selezionare un custode specifico per visualizzare i risultati della ricerca. I record di controllo per l'attività selezionata eseguita dagli utenti selezionati in questa casella vengono visualizzati nell'elenco dei risultati.
       
-   5. Fare clic su   ![Pulsante Cerca](../media/SearchButton.PNG)  per eseguire la ricerca utilizzando i criteri di ricerca. I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in risultati nella pagina di ricerca attività del custode. 
+5. Fare clic su ![Pulsante Cerca](../media/SearchButton.PNG)  per eseguire la ricerca utilizzando i criteri di ricerca. I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in risultati nella pagina di ricerca attività del custode. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Passaggio 2: visualizzazione dei risultati di ricerca del registro di controllo
 

@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Esaminare tutti i modelli che sono pronti per l'uso per la configurazione delle valutazioni in Microsoft Compliance Score (Preview).
-ms.openlocfilehash: 4bb4bd95bb9df98f081b2e7a60ae21a86dfdc048
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 9e40527b44bc5b9a7a926a32f6e5d107c257b7b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016590"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035621"
 ---
 # <a name="compliance-score-preview-templates"></a>Modelli di valutazione della conformità (anteprima)
 
 ## <a name="templates-overview"></a>Panoramica sui modelli
 
-Punteggio di conformità fornisce una serie completa di **modelli per la creazione di valutazioni**. Questi modelli consentono all'organizzazione di soddisfare i requisiti nazionali, regionali e specifici del settore che regolano la raccolta e l'utilizzo dei dati. I nuovi modelli vengono aggiunti quando vengono apportate e aggiornate le normative.
+[Punteggio di conformità](compliance-score.md) fornisce una serie completa di **modelli per la creazione di valutazioni**. Questi modelli consentono all'organizzazione di soddisfare i requisiti nazionali, regionali e specifici del settore che regolano la raccolta e l'utilizzo dei dati. I nuovi modelli vengono aggiunti quando vengono apportate e aggiornate le normative.
 
 È possibile modificare uno qualsiasi dei modelli riportati di seguito in base alle esigenze dell'organizzazione. È inoltre possibile creare una valutazione personalizzata creando un modello personalizzato. 
 

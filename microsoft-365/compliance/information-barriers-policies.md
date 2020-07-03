@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: a9f8635f65867eb9d9543cc23b984f181030a7f9
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817545"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024696"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
@@ -161,7 +161,7 @@ Oltre alla definizione di segmenti che utilizzano "Equals" o "not equals", è po
 |---------|---------|
 |`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>In questo esempio, è stato definito un segmento denominato *LocalFTE* che include persone situate localmente e le cui posizioni non sono elencate come *temporanee*.    |
  |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>In questo esempio, è stato definito un segmento denominato *segment1* che include persone che sono membri di group1@contoso.com e non membri di Group3@contoso.com.
-|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | In questo esempio, è stato definito un segmento denominato *segment2* che include persone che sono membri di group2@contoso.com e non membri di Group3@contoso.com.
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | In questo esempio, è stato definito un segmento denominato *segment2* che include persone che sono membri di group2@contoso.com e non membri di Group3@contoso.com.
 |`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  In questo esempio, è stato definito un segmento denominato *Segment1and2* che include membri di group1@contoso.com e group2@contoso.com e non membri di Group3@contoso.com.
 
 

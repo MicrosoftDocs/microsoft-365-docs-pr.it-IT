@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Informazioni sul modo in cui il Punteggio di conformità di Microsoft calcola un punteggio personalizzato sulla base delle azioni intraprese per risolvere i rischi e migliorare la conformità alla postura.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552f2f85c4659ec24bc717d41c71733764d898ed
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 69b631dc355ff497d0f6042e0cce6aff3d70e557
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023247"
+ms.locfileid: "45024676"
 ---
 # <a name="compliance-score-preview-calculation"></a>Calcolo del Punteggio di conformità (anteprima)
 
@@ -74,7 +74,7 @@ Alle azioni viene assegnato un valore di punteggio a seconda che sia obbligatori
 
  - Le **azioni obbligatorie** non possono essere ignorate intenzionalmente o accidentalmente. Un esempio è un criterio di password gestito in modo centralizzato che consente di impostare i requisiti per la lunghezza, la complessità e la scadenza delle password. Gli utenti devono seguire questi requisiti per accedere al sistema.
   
- - Le **azioni discrezionali** fanno affidamento sugli utenti per comprendere i criteri e agire di conseguenza. Ad esempio, un criterio che richiede agli utenti di bloccare il proprio computer quando lo lasciano è un controllo discrezionale, perché si basa sull'utente.
+ - Le **azioni discrezionali** fanno affidamento sugli utenti per comprendere i criteri e agire di conseguenza. Ad esempio, un criterio che richiede agli utenti di bloccare il proprio computer quando lo lasciano è un'azione discrezionale, perché si basa sull'utente.
   
 ### <a name="preventative-detective-and-corrective-actions"></a>Azioni preventive, investigative e correttive
   

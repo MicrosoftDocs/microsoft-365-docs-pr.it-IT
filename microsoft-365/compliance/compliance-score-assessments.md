@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Progettare la personalizzazione del Punteggio di conformità di Microsoft creando valutazioni che consentano di gestire la conformità per l'organizzazione.
-ms.openlocfilehash: 45a5e76aa4f6581146ded510f75d772c202751ee
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 8b27267461e226a6db2173158d2d35238c0d5a5e
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023309"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035631"
 ---
 # <a name="customize-compliance-score-preview-with-assessments"></a>Personalizzare il Punteggio di conformità (Preview) con le valutazioni
 
@@ -35,7 +35,7 @@ Tutte le valutazioni sono elencate nella pagina valutazioni. [Ulteriori](complia
 
 ## <a name="data-protection-baseline-default-assessment"></a>Valutazione predefinita del criterio di protezione dei dati
 
-Per iniziare, Microsoft fornisce una valutazione **predefinita** del Punteggio di conformità per l'utente che contiene la linea di base per la protezione dei dati di Microsoft 365. Questa linea di base è un insieme di controlli che include le normative fondamentali e gli standard per la protezione dei dati e la governance dei dati generale. Questa linea di base estrae gli elementi principalmente dal NIST CSF (Istituto nazionale per gli standard e la tecnologia Cybersecurity Framework) e ISO (International Organization for Standardizzation), oltre che da FedRAMP (Federal Risk and Authorization Management Program) e GDPR (General Data Protection Regulation dell'Unione europea).
+Per iniziare, Microsoft fornisce una valutazione **predefinita** del Punteggio di conformità che contiene la linea di base per la protezione dei dati di Microsoft 365. Questa linea di base è un insieme di controlli che include le normative fondamentali e gli standard per la protezione dei dati e la governance dei dati generale. Questa linea di base estrae gli elementi principalmente dal NIST CSF (Istituto nazionale per gli standard e la tecnologia Cybersecurity Framework) e ISO (International Organization for Standardizzation), oltre che da FedRAMP (Federal Risk and Authorization Management Program) e GDPR (General Data Protection Regulation dell'Unione europea).
 
 Questa valutazione viene utilizzata per calcolare il punteggio iniziale al primo accesso al Punteggio di conformità, prima di configurare eventuali altre valutazioni. Il Punteggio di conformità raccoglie i segnali iniziali dalle soluzioni Microsoft 365. Verrà visualizzato a colpo d'occhio il modo in cui l'organizzazione è in esecuzione rispetto agli standard e alle normative sulla protezione dei dati e le azioni consigliate da intraprendere.
 
@@ -46,7 +46,7 @@ Poiché ogni organizzazione ha esigenze specifiche, il Punteggio di conformità 
 È possibile configurare le valutazioni in tre modi:
 
 1. Scegliere una valutazione pronta all'uso.
-2. Modificare il modello di una valutazione in base alle proprie esigenze.
+2. Modificare il [modello di una valutazione](compliance-score-templates.md) in base alle proprie esigenze.
 3. Creare la propria valutazione personalizzata.
 
 Gli utenti devono mantenere un ruolo di amministratore globale, amministratore della conformità, amministratore dei dati di conformità o amministratore della sicurezza per creare o modificare le valutazioni. Per ulteriori informazioni [, vedere ruoli e autorizzazioni](compliance-score-setup.md#set-user-permissions-and-assign-roles).
