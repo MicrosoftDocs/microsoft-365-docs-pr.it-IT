@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 consente ai servizi finanziari di passare a una moderna piattaforma di collaborazione, contribuendo a mantenere i dati e i sistemi sicuri e conformi alle normative
 f1.keywords: NOCSH
-ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 6c6b1c6bbd62e632b79629638aa78630974823df
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214697"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432428"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Considerazioni chiave su conformità e sicurezza per i mercati bancario e finanziario degli Stati Uniti
 
@@ -67,7 +67,7 @@ Teams può offrire uno spazio per la collaborazione che consente di archiviare i
 
 Un altro scenario comune consiste nell'usare Teams come "sala dati virtuale" per collaborare in modo sicuro, incluse l'archiviazione e la gestione dei documenti. I membri del team e le associazioni all'interno dei settori di banche d'affari, gestione patrimoniale o società di private equity possono collaborare in modo sicuro a una trattativa o a un investimento. I team interfunzionali sono spesso coinvolti nella pianificazione e nell'esecuzione di tali trattative e la possibilità di condividere in modo sicuro i dati e condurre conversazioni è un requisito fondamentale. Uno dei principali requisiti è anche la condivisione sicura dei documenti correlati con gli investitori esterni. Teams offre una posizione sicura e completamente verificabile dalla quale archiviare, proteggere e condividere i dati di investimento in modo centralizzato.
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="Un gruppo di impiegati in una riunione discute delle immagini su uno schermo di grandi dimensioni.":::
+:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="Un gruppo di impiegati in riunione discute delle immagini su uno schermo di grandi dimensioni.":::
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: migliorare la collaborazione e ridurre i rischi di conformità
 

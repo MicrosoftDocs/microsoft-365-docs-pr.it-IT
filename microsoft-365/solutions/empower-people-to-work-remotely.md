@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 06/08/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,51 +17,39 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configurare le funzionalità di sicurezza e l'infrastruttura di servizio necessarie per consentire ai lavoratori di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: 763c8e745eb54897c1df88ecb5a9064987ed5a13
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560463"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844871"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
-L'azienda potrebbe dover consentire ai lavoratori di avere accesso sicuro alle informazioni, agli strumenti e alle risorse locali e basate sul cloud dalle proprie case. Per molte organizzazioni, consentire al personale di lavorare facilmente e in sicurezza fuori dall'ufficio è importante per:
+L'azienda potrebbe dover consentire ai lavoratori di avere accesso sicuro alle informazioni, agli strumenti e alle risorse locali e basate sul cloud dalle proprie case. Per molte organizzazioni, consentire al personale di lavorare fuori dall’ufficio è importante per:
 
 - Risparmiare spazio fisico.
 - Assumere e trattenere dipendenti che non sono disposti al trasferimento.
 - Ridurre il pendolarismo, lasciando così ai lavoratori più tempo per essere produttivi e ridurre lo stress.
 
-Il lavoro remoto, o telelavoro, può includere uno spettro che include:
+Microsoft 365 offre funzionalità che consentono ai tuoi dipendenti di lavorare a distanza.
 
-- Lavoratori che sono lontani dall'ufficio solo occasionalmente, per convegni o riunioni con i clienti.
-- Alcuni lavoratori che lavorano da remoto a tempo pieno.
-- Un'organizzazione completamente remota in cui non ci sono uffici e tutti sono telelavoratori.
+![Aumentare la produttività dei lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-Da qualunque parte del mondo e in qualsiasi momento, i lavoratori remoti devono poter accedere a:
 
-- Risorse dell'organizzazione, ad esempio quelle offerte dai data center delle applicazioni locali.
-- Dati e servizi basati sul cloud nell'abbonamento a Microsoft 365, come Teams, Exchange Online, SharePoint e OneDrive.
+| | |
+|:-------|:-----|
+| Connesso | Da qualunque parte del mondo e in qualsiasi momento, i dipendenti che lavorano a distanza possono accedere a: <ul><li>Dati e servizi basati su cloud tramite la propria sottoscrizione a Microsoft 365. </li><li>Risorse dell'organizzazione, ad esempio quelle offerte dai data center delle applicazioni locali.</li></ul> |
+| Protezione | Gli accessi sono garantiti con l’autenticazione a più fattori (MFA), e le caratteristiche di sicurezza predefinite di Microsoft 365 e Windows 10 proteggono contro malware, attacchi dannosi e perdite dei dati. |
+| Gestione | I dispositivi dei lavoratori remoti possono essere gestiti dal cloud tramite le impostazioni di sicurezza, le app consentite e la richiesta della conformità con i sistemi sanitari. |
+| Collaborazione e produttività | I dipendenti che lavorano a distanza possono essere produttivi come quelli in ufficio in modi altamente collaborativi, tramite:  <ul><li>Riunioni online e sessioni di chat con Teams. </li><li>Aree di lavoro condivise per l’archiviazione di file basata su cloud, con l’accessibilità globale e la collaborazione in tempo reale di SharePoint e OneDrive. </li><li>Attività e flussi di lavoro condivisi per suddividere il lavoro e portare a termine le attività. </li></ul> |
+|||
 
-Per un'esperienza di accesso senza soluzione di continuità, è necessario sincronizzare gli account utente di Active Directory Domain Services (AD DS) con Azure Active Directory (Azure AD). Per proteggere i dispositivi Windows 10, è necessario registrarli in Intune. Ecco una panoramica generale dell'infrastruttura.
+Per un’esperienza di accesso senza soluzione di continuità, è necessario sincronizzare gli account utente locali di Active Directory Domain Services (AD DS) con Azure Active Directory (Azure AD). Per proteggere i dispositivi Windows 10, è necessario registrarli in Intune. Ecco una panoramica generale dell'infrastruttura.
 
 ![Infrastruttura di base per i lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-
-Per supportare i lavoratori remoti, ad esempio in risposta all'emergenza COVID-19, Microsoft 365 offre una serie di funzionalità che consentono di collaborare in modo estremamente semplice da remoto, ad esempio:
-
-- Riunioni online e sessioni di chat.
-- Aree di lavoro condivise per l'archiviazione di file basata sul cloud, con accessibilità globale e collaborazione in tempo reale.
-- Attività e flussi di lavoro condivisi per dividere il lavoro e portare a termine le attività.
-
-Per la massima sicurezza, Microsoft 365 include:
-
-- Applicazione di requisiti di autenticazione, con rilevamento e risposta agli accessi ad alto rischio e blocco di app selezionate e dispositivi non conformi.
-- Connessioni crittografate e risorse digitali nel cloud.
-- Autorizzazioni per definire le operazioni che possono essere eseguite da ciascun utente sui file.
-- Funzionalità di sicurezza complete per proteggere i dispositivi Windows 10.
-
-Per soddisfare questi criteri per i lavoratori remoti, usare queste capacità e funzionalità di Microsoft 365.
+Per soddisfare i criteri per i lavoratori remoti, usare queste capacità e funzionalità di Microsoft 365.
 
 | Capacità o funzionalità | Descrizione | Licenze |
 |:-------|:-----|:-------|
@@ -85,9 +73,9 @@ Utilizzare i seguenti passaggi per proteggere e ottimizzare l'accesso ai server,
 
 1. [Aumentare la sicurezza dell'accesso con la MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Fornire l'accesso remoto alle app e ai servizi locali](empower-people-to-work-remotely-remote-access.md)
-3. [Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint](empower-people-to-work-remotely-manage-endpoints.md)
-4. [Distribuire le app e i servizi per la produttività dei lavoratori remoti](empower-people-to-work-remotely-teams-productivity-apps.md)
-5. [Creare spazi di comunicazione](empower-people-to-work-remotely-communication-venues.md)
+3. [Distribuire servizi di sicurezza e conformità](empower-people-to-work-remotely-security-compliance.md)
+4. [Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint](empower-people-to-work-remotely-manage-endpoints.md)
+5. [Distribuire le app e i servizi per la produttività dei lavoratori remoti](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Formare i lavoratori remoti e rispondere al feedback sull'utilizzo](empower-people-to-work-remotely-train-monitor-usage.md)
 
 ![Passaggi per aumentare la produttività dei lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
