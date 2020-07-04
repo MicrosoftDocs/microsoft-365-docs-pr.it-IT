@@ -33,7 +33,7 @@ Consultare prima le informazioni su [Contoso Corporation](../enterprise/contoso-
 
 Vedere in che modo Contoso ha usato Microsoft 365 per le soluzioni e gli scenari seguenti:
 
-- [Team isolato per un progetto interno](contoso-team-for-top-secret-project.md)
+- [Un team isolato per un progetto di massima riservatezza](contoso-team-for-top-secret-project.md)
 
-- [Migrazione dei loro utenti locali ai team per una comunicazione, una collaborazione e una voce unificate](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [La migrazione degli utenti locali a Teams per servizi di comunicazioni, collaborazione e voce unificati](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 

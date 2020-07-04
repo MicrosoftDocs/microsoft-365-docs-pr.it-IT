@@ -67,7 +67,7 @@ Teams può offrire uno spazio per la collaborazione che consente di archiviare i
 
 Un altro scenario comune consiste nell'usare Teams come "sala dati virtuale" per collaborare in modo sicuro, incluse l'archiviazione e la gestione dei documenti. I membri del team e le associazioni all'interno dei settori di banche d'affari, gestione patrimoniale o società di private equity possono collaborare in modo sicuro a una trattativa o a un investimento. I team interfunzionali sono spesso coinvolti nella pianificazione e nell'esecuzione di tali trattative e la possibilità di condividere in modo sicuro i dati e condurre conversazioni è un requisito fondamentale. Uno dei principali requisiti è anche la condivisione sicura dei documenti correlati con gli investitori esterni. Teams offre una posizione sicura e completamente verificabile dalla quale archiviare, proteggere e condividere i dati di investimento in modo centralizzato.
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="Un gruppo di impiegati in riunione discute delle immagini su uno schermo di grandi dimensioni.":::
+:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="Un gruppo di impiegati in riunione discute le immagini su un grande schermo.":::
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: migliorare la collaborazione e ridurre i rischi di conformità
 
