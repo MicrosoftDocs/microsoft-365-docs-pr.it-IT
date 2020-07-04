@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Assicurarsi che i lavoratori remoti possano accedere alle risorse locali e ottimizzare l'accesso ai servizi cloud di Microsoft 365.
-ms.openlocfilehash: 363f2a5edb43d294be5a8ecfe0fd02964dd8b945
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 199dc6aa33134cfa0f9ac311d037a934c12ba3b9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160751"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844979"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Passaggio 2. Fornire l'accesso remoto alle app e ai servizi locali.
 
@@ -70,7 +70,11 @@ Di seguito sono elencati i componenti del proxy di applicazione di Azure AD.
 
 ![Componenti del proxy di applicazione di Azure AD](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-Per altre informazioni, vedere la [panoramica sul proxy di applicazione di Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+Per altre informazioni, vedere questa [Panoramica del proxy di applicazioni di Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) e il [Video della parte 3 del proxy di applicazioni di Azure AD](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security).
+
+>[!Note]
+>Il proxy di applicazione di Azure AD non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
+>
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>Distribuire l'accesso remoto quando le app non sono solo app Web
 
@@ -82,13 +86,32 @@ Una VPN da punto a sito stabilisce una connessione sicura dal dispositivo di un 
 
 Per altre informazioni, vedere la [panoramica su VPN da punto a sito](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about).
 
+>[!Note]
+>VPN de punto a sito di Azure non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
+>
+
 ## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Distribuire il Desktop virtuale Windows per fornire l'accesso remoto ai lavoratori remoti che usano dispositivi personali 
 
-Per assistere i lavoratori remoti che possono usare solo i propri dispositivi personali e non gestiti, usare il Desktop virtuale Windows in Azure con lo scopo di creare e assegnare i desktop virtuali che gli utenti possono usare da casa.
+Per assistere i lavoratori remoti che possono usare solo i propri dispositivi personali e non gestiti, usare il Desktop virtuale Windows in Azure con lo scopo di creare e assegnare i desktop virtuali che gli utenti possono usare da casa. I PC virtualizzati possono agire esattamente come i PC connessi alla rete dell’organizzazione.
 
-I PC virtualizzati possono agire esattamente come i PC connessi alla rete dell’organizzazione.
+![Componenti di Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Per altre informazioni, vedere la [panoramica sul Desktop virtuale Windows](https://docs.microsoft.com/azure/virtual-desktop/overview).
+Per altre informazioni, vedere: 
+
+- Per altre informazioni, vedere la [panoramica su Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
+- [Il video della parte 2 sull'uso di Windows Virtual Desktop per i lavoratori remoti](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity).
+
+>[!Note]
+>Windows Virtual Desktop non è incluso in un abbonamento a Microsoft 365. È necessario pagare per l'uso con un abbonamento di Azure diverso.
+>
+
+## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Proteggere le connessioni dei servizi del desktop remoto con il gateway Servizi del desktop remoto
+
+Se si usa Servizi del desktop remoto (SDR) per consentire ai dipendenti di entrare in un computer con Windows in una rete locale, è consigliabile usare un gateway di Servizi del desktop remoto di Microsoft nella rete perimetrale. Il gateway usa Secure Sockets Layer (SSL) per crittografare le comunicazioni ed evita che il sistema che ospita i SDR sia direttamente connesso a Internet.
+
+![Proteggere le connessioni dei Servizi del desktop remoto con il gateway Servizi del desktop remoto](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+
+Per altre informazioni, vedere [questo articolo](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/).
 
 ## <a name="admin-technical-resources-for-remote-access"></a>Risorse tecniche e amministrative per l’accesso remoto
 
@@ -105,8 +128,9 @@ Dopo la distribuzione di una soluzione di accesso remoto per i lavoratori remoti
 | La soluzione VPN di accesso remoto non è disponibile ed è necessario l'accesso remoto solo alle app locali basate sul Web | Il proxy di applicazione di Azure è stato configurato. |
 | La soluzione VPN di accesso remoto non è disponibile ed è necessario l’accesso alle app locali, alcune delle quali non basate sul Web | La rete VPN da punto a sito di Azure è stata configurata. |
 | I lavoratori remoti usano i propri dispositivi personali da casa | Il Desktop virtuale Windows è stato configurato. |
+| I lavoratori remoti usano connessioni di SDR per sistemi locali | Il gateway di Servizi del desktop remoto è stato distribuito nella rete perimetrale. |
 |||
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Proseguire con il [passaggio 3](empower-people-to-work-remotely-manage-endpoints.md) per gestire dispositivi, PC e altri endpoint.
+Proseguire con il [passaggio 3](empower-people-to-work-remotely-security-compliance.md) per distribuire i servizi di sicurezza e conformità di Microsoft 365 per proteggere le app, i dati e i dispositivi.
