@@ -17,20 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza e &amp; conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: cf932db30feb3210b8980b95e666972cd3436dd0
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613445"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039521"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
 Se l'organizzazione dispone di [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) ed è necessario disporre [delle autorizzazioni necessarie](#required-licenses-and-permissions), sono disponibili **esplorazioni** o **rilevamenti in tempo reale** (in precedenza i *report in tempo reale* , [vedere What ' s New](#new-features-in-threat-explorer-and-real-time-detections)!). Nel centro sicurezza & conformità, accedere a **gestione minacce**, quindi scegliere **Esplora risorse** _o_ **rilevamenti in tempo reale**.
 
-|||
+| Con ATP piano 2, è possibile vedere: | Con ATP piano 1, è possibile visualizzare le informazioni seguenti: |
 |---|---|
-|**Con ATP piano 2, è possibile vedere:**|**Con ATP piano 1, è possibile visualizzare le informazioni seguenti:**|
 |![Esplora minacce](../../media/threatmgmt-explorer.png)|![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)|
 |
 
@@ -44,6 +43,43 @@ Con questo rapporto, è possibile:
 - [Visualizzare i dati relativi agli URL di phishing e fare clic su verdetto](#view-data-about-phishing-urls-and-click-verdict)
 - [Avviare un processo di analisi e risposta automatizzato da una visualizzazione in Explorer](#start-automated-investigation-and-response) (solo ATP piano 2)
 - ... [Esaminare messaggi di posta elettronica dannosi e altro ancora](#more-ways-to-use-explorer-or-real-time-detections)!
+
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Miglioramenti dell'esperienza in Esplora minacce e rilevamenti in tempo reale
+
+Nell'ambito del miglioramento del processo di ricerca, sono stati apportati alcuni aggiornamenti a Threat Explorer e ai rilevamenti in tempo reale. Si tratta di miglioramenti ' Experience ', con l'obiettivo di rendere l'esperienza di caccia più coerente. Queste modifiche sono descritte di seguito: 
+
+- [Miglioramenti del fuso orario](#timezone-improvements)
+- [Aggiornamento nel processo di aggiornamento](#update-in-the-refresh-process)
+- [Drill-down del grafico da aggiungere ai filtri](#chart-drilldown-to-add-to-filters)
+- [Negli aggiornamenti delle informazioni sui prodotti](#in-product-information-updates)
+
+### <a name="timezone-improvements"></a>Miglioramenti del fuso orario 
+
+Verrà mostrato il fuso orario per i record di posta elettronica all'interno del portale, nonché per i dati esportati. Il fuso orario sarà visibile tra le esperienze come la griglia di posta elettronica, i dettagli a comparsa, la sequenza temporale e i messaggi di posta elettronica simili, in modo che il fuso orario del set di risultati sia chiaro per l'utente. 
+
+![Visualizzazione del fuso orario in Esplora risorse](../media/TimezoneImprovements.png)
+
+### <a name="update-in-the-refresh-process"></a>Aggiornamento nel processo di aggiornamento 
+
+Sono stati segnalati commenti e suggerimenti relativi alla confusione con l'aggiornamento automatico (ad esempio, per la data, non appena si modifica la data, la pagina viene aggiornata) e l'aggiornamento manuale (per altri filtri). Analogamente, la rimozione dei filtri porta all'aggiornamento automatico, in questo modo le situazioni in cui la modifica dei diversi filtri durante la modifica della query possono causare esperienze di ricerca incoerenti. Per risolvere questo passaggio, si passa a un meccanismo di filtraggio manuale.
+Da un punto di vista dell'esperienza, l'utente può applicare e rimuovere i diversi filtri (dall'insieme di filtri e la data) e premere il pulsante Aggiorna per filtrare i risultati dopo aver terminato la query. Il pulsante Aggiorna è stato anche aggiornato per definirlo chiaramente sullo schermo. Sono state aggiornate anche le descrizioni comandi e la documentazione del prodotto in questa modifica. 
+
+![Fare clic su Aggiorna per filtrare i risultati](../media/ManualRefresh.png)
+
+### <a name="chart-drilldown-to-add-to-filters"></a>Drill-down del grafico da aggiungere ai filtri
+
+Sarà ora possibile fare clic sui valori della legenda del grafico per aggiungere il valore come filtro. Tenere presente che sarà comunque necessario fare clic sul pulsante Aggiorna per filtrare i risultati come parte della modifica descritta in alto.
+
+![Drill-down tramite grafici da filtrare](../media/ChartDrilldown.png)
+
+### <a name="in-product-information-updates"></a>Negli aggiornamenti delle informazioni sui prodotti 
+
+È inoltre possibile visualizzare ulteriori dettagli all'interno del prodotto. Ad esempio, il numero totale di risultati della ricerca all'interno della griglia (vedere di seguito), nonché i miglioramenti relativi alle etichette, ai messaggi di errore e alle descrizioni comandi, per fornire ulteriori informazioni sui filtri, l'esperienza di ricerca e il set di risultati. 
+
+![Visualizzare le informazioni sul prodotto](../media/ProductInfo.png)
+
+
+## <a name="new-features-in-real-time-detections"></a>Nuove funzionalità nei rilevamenti in tempo reale
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nuove funzionalità in Esplora minacce e rilevamenti in tempo reale
 
@@ -68,20 +104,22 @@ Come è possibile eseguire questa operazione? Lo stato di recapito è ora suddiv
 
 Azione di recapito è l'azione intrapresa su un messaggio di posta elettronica a causa di criteri o rilevamenti esistenti. Ecco le possibili azioni che un messaggio di posta elettronica può eseguire:
 
-|||||
+|Consegnato  |Junked  |Bloccati  |Sostituito  |
+|---------|---------|---------|---------|
+|La posta elettronica è stata recapitata alla posta in arrivo o alla cartella di un utente e l'utente può accedervi direttamente.    | La posta elettronica è stata inviata alla cartella posta indesiderata o alla cartella eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica in tali cartelle.       | Tutti i messaggi di posta elettronica in quarantena, che non sono riusciti o sono stati eliminati. Questo è completamente inaccessibile dall'utente.     | Qualsiasi messaggio di posta elettronica in cui gli allegati dannosi vengono sostituiti dai file. txt che lo stato dell'allegato è dannoso.     |
+    
+
+| Consegnato | Junked | Bloccati | Sostituito |
 |---|---|---|---|
-|**Consegnato**|**Junked**|**Bloccati**|**Sostituito**|
 |La posta elettronica è stata recapitata alla posta in arrivo dell'utente o a un'altra cartella e l'utente può accedervi direttamente.| La posta elettronica è stata inviata alla cartella posta indesiderata o alla cartella eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica in tali cartelle.| Tutti i messaggi di posta elettronica in quarantena, che non sono riusciti o sono stati eliminati e non sono accessibili dall'utente.| Tutti i messaggi di posta elettronica in cui gli allegati dannosi sono stati sostituiti da file txt che affermano che gli allegati sono pericolosi.|
 |
 
 Ecco cosa può essere visualizzato dall'utente e cosa non è possibile:
 
-|||
+| Accessibile per gli utenti finali | Inaccessibile per gli utenti finali |
 |---|---|
-|**Accessibile per gli utenti finali**|**Inaccessibile per gli utenti finali**|
 |Consegnato|Bloccati|
 |Junked|Sostituito|
-|
 
 Il percorso di recapito consente di visualizzare i risultati dei criteri e i rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione intrapresa quando viene trovata una posta elettronica problematica. Di seguito sono riportati i possibili valori del percorso di recapito:
 
@@ -114,7 +152,7 @@ Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante E
 > [!TIP]
 > ID messaggio di rete mappare il clic di nuovo su mail specifiche quando si esegue una ricerca tramite Explorer o gli strumenti di terze parti associati tramite ID messaggio di rete. La ricerca nell'ID messaggio di rete fornirà agli amministratori la posta elettronica specifica associata a un risultato di clic. In caso di esportazione, l'identificazione correlata dell'ID messaggio di rete rende l'analisi più rapida e potente.
 
-![tp_ExportClickResultAndNetworkID. png](../../media/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Vedere malware rilevato in posta elettronica dalla tecnologia
 
@@ -205,6 +243,7 @@ Oltre agli scenari descritti in questo articolo, sono disponibili molte altre op
 - [Identificare e analizzare i messaggi di posta elettronica dannosi recapitati](investigate-malicious-email-that-was-delivered.md)
 - [Visualizzare i file dannosi rilevati in SharePoint Online, OneDrive e Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 - [Ottenere una panoramica delle visualizzazioni in Esplora minacce (e rilevamenti in tempo reale)](threat-explorer-views.md)
+- [Indagine e reazione automatizzate in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
@@ -242,3 +281,4 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 - Altre funzionalità di filtro e le azioni disponibili sono incluse in **Esplora minacce**.
 
 Per ulteriori informazioni, vedere [Descrizione del servizio ATP di Office 365: disponibilità delle funzionalità tra i piani di Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+

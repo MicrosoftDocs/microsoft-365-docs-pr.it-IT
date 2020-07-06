@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 917534670485327de73f62852af3d8010fd49e40
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034257"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039413"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Esaminare e correggere i messaggi di posta elettronica dannosi recapitati in Office 365
 
@@ -39,7 +39,7 @@ Verificare che vengano soddisfatti i seguenti requisiti:
     
 - L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, anti-malware, anti-phishing e così via. Vedere [protezione dalle minacce in Office 365](protect-against-threats.md).
     
-- Si è un amministratore globale oppure è stato assegnato il ruolo di amministratore della sicurezza o di ricerca ed eliminazione nel centro sicurezza &amp; e conformità. Vedere [Permissions in &amp; the Security Compliance Center](permissions-in-the-security-and-compliance-center.md). Per alcune azioni, è necessario disporre anche di un nuovo ruolo di anteprima assegnato. 
+- Si è un amministratore globale oppure è stato assegnato il ruolo di amministratore della sicurezza o di ricerca ed eliminazione nel centro sicurezza e &amp; conformità. Vedere [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). Per alcune azioni, è necessario disporre anche di un nuovo ruolo di anteprima assegnato. 
 
 #### <a name="preview-role-permissions"></a>Autorizzazioni per il ruolo di anteprima
 
@@ -52,7 +52,7 @@ Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazion
 |Utilizzare Esplora minacce per visualizzare le intestazioni e scaricare i messaggi di posta elettronica recapitati alle cassette postali     |Amministratore globale <br>Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza <br> Anteprima   |   Sì      |
 
 > [!NOTE]
-> L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Al ruolo di amministratore globale viene assegnato l'interfaccia di amministrazione di[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 () e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro sicurezza &[https://protection.office.com](https://protection.office.com)Compliance (). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Al ruolo di amministratore globale viene assegnato l'interfaccia di amministrazione di Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro sicurezza & Compliance ( [https://protection.office.com](https://protection.office.com) ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Individuare ed eliminare messaggi di posta elettronica sospetti recapitati
 
@@ -61,9 +61,9 @@ Threat Explorer è un potente report che può servire a molteplici scopi, ad ese
 > [!NOTE]
 > Le ricerche predefinite in Esplora risorse non includono attualmente gli elementi zapping.  Questo vale per tutte le visualizzazioni, ad esempio le visualizzazioni di malware o phishing. Per includere gli elementi zapped, è necessario aggiungere un'azione di recapito ' impostato su Includi ' rimosso da ZAP '. Se si includono tutte le opzioni, verranno visualizzati tutti i risultati dell'azione di recapito, compresi gli elementi zapped.
 
-1. **Passare a Esplora minacce**: accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. Questo porta al centro sicurezza &amp; e conformità.
+1. **Passare a Esplora minacce**: accedere a [https://protection.office.com](https://protection.office.com) e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. Questo porta al centro sicurezza e &amp; conformità.
 
-2. Nella barra di avvio veloce di spostamento a sinistra, scegliere **gestione** \> **Explorer**minacce.
+2. Nella barra di avvio veloce di spostamento a sinistra, scegliere **gestione minacce** \> **Explorer**.
 
     ![Explorer con campi azione di recapito e posizione di recapito.](../../media/ThreatExFields.PNG)
 
@@ -88,7 +88,7 @@ Threat Explorer è un potente report che può servire a molteplici scopi, ad ese
 
 5. **Filtri avanzati**: con questi filtri è possibile creare query complesse e filtrare il set di dati. Se si fa clic su *filtri avanzati* , verrà aperto un riquadro a comparsa con opzioni.
 
-   Il filtro avanzato è una grande aggiunta alle funzionalità di ricerca. **Non** è stato introdotto un filtro booleano nel dominio del *destinatario*, del *mittente* e del *mittente* per consentire agli amministratori di eseguire indagini escludendo i valori. Questa opzione viene visualizzata sotto il parametro Selection *contiene None of*. **Non** consente agli amministratori di escludere le cassette postali di avviso, le cassette postali di risposta predefinite dalle proprie indagini ed è utile per i casi in cui gli amministratori cercano un oggetto specifico (Subject = "attention") in cui il destinatario può essere impostato su *None di defaultMail@contoso.com*. Si tratta di una ricerca di valore esatta.
+   Il filtro avanzato è una grande aggiunta alle funzionalità di ricerca. **Non** è stato introdotto un filtro booleano nel dominio del *destinatario*, del *mittente* e del *mittente* per consentire agli amministratori di eseguire indagini escludendo i valori. Questa opzione viene visualizzata sotto il parametro Selection *contiene None of*. **Non** consente agli amministratori di escludere le cassette postali di avviso, le cassette postali di risposta predefinite dalle proprie indagini ed è utile per i casi in cui gli amministratori cercano un oggetto specifico (Subject = "attention") in cui il destinatario può essere impostato su *none de defaultMail \@ contoso.com*. Si tratta di una ricerca di valore esatta.
 
    ![I destinatari-' contiene nessuno ' del filtro avanzato.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
