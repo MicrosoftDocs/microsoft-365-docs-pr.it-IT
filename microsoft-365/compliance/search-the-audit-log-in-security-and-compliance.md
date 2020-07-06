@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. "
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818986"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035661"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -335,7 +335,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |Etichetta dei criteri di conformità dei record eliminata|ComplianceRecordDelete|Un documento classificato come record è stato eliminato. Un documento viene considerato record se al documento è applicata un'etichetta di conservazione che classifica il contenuto come record.|
 |È stata rilevata una mancata corrispondenza della riservatezza del documento|DocumentSensitivityMismatchDetected|Un utente carica un documento in un sito protetto con un'etichetta di riservatezza e il documento ha un'etichetta di riservatezza con priorità più elevata rispetto all'etichetta di riservatezza applicata al sito. Ad esempio, un documento con etichetta Riservato viene caricato in un sito con etichetta Generale. <br/><br/> Questo evento non viene attivato se il documento ha un'etichetta di riservatezza con priorità inferiore rispetto a quella applicata al sito. Ad esempio, un documento con etichetta Generale viene caricato in un sito con etichetta Riservato. Per altre informazioni sulla priorità dell'etichetta di riservatezza, vedere [Priorità dell'etichetta (l’ordine è importante)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware rilevato nel file|FileMalwareDetected|Il motore antivirus di SharePoint rileva malware in un file.|
-|Estrazione file rimossa|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
+|Estrazione file rimossa|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |File scaricato|FileDownloaded|Un utente scarica un documento da un sito.|
 |File modificato|FileModified|Un utente o un account di sistema modifica il contenuto o le proprietà di un documento in un sito.|
 |(nessuno)|FileModifiedExtended|Elemento correlato all'attività "File modificato" (FileModified). Un evento FileModifiedExtended viene registrato quando la stessa persona modifica in modo continuativo un file per un periodo prolungato (fino a 3 ore). <br/><br/> Lo scopo della registrazione di eventi FileModifiedExtended è di ridurre il numero di eventi FileModified registrati quando si modifica un file in modo continuativo. Ciò consente di ridurre il numero di record FileModified per un'attività utente sostanzialmente identica e consente di concentrarsi sull'evento FileModified iniziale (e più importante).|
@@ -368,7 +368,7 @@ Ecco alcuni altri scenari in cui è possibile identificare app@sharepoint in un 
 
 - Funzionalità di conformità. Quando un amministratore implementa funzionalità di conformità, come i criteri di conservazione, i blocchi di eDiscovery e l'applicazione automatica delle etichette di sensitività.
 
-In questi e altri scenari si noterà anche che sono stati creati più record di controllo con utente app@sharepoint in un intervallo di tempo molto breve, spesso a pochi secondi di distanza l'uno dall'altro. Questo indica anche che probabilmente sono stati attivati dalla stessa attività avviata dall'utente. Anche i campi ApplicationDisplayName e EventData nel record di controllo possono essere utili per identificare lo scenario o l'applicazione che ha generato l'evento.
+In questi e altri scenari si noterà anche che sono stati creati più record di controllo usando app@sharepoint come utente specificato in un intervallo di tempo breve, spesso a pochi secondi di distanza l'uno dall'altro. Questo indica anche che probabilmente sono stati attivati dalla stessa attività avviata dall'utente. Anche i campi ApplicationDisplayName e EventData nel record di controllo possono essere utili per identificare lo scenario o l'applicazione che ha generato l'evento.
 
 ### <a name="folder-activities"></a>Attività su cartelle
 
@@ -479,7 +479,7 @@ La tabella seguente elenca gli eventi correlati all'assegnazione di autorizzazio
 |Gruppo eliminato|GroupRemoved|Un utente elimina un gruppo da un sito.|
 |Impostazioni richieste di accesso modificate|WebRequestAccessModified|Le impostazioni richieste di accesso sono state modificate in un sito.|
 |Impostazione "I membri possono condividere" modificata|WebMembersCanShareModified|L'impostazione **I membri possono condividere** è stata modificata in un sito.|
-|È stato modificato un livello di autorizzazione nella raccolta siti|PermissionLevelModified|Un livello di autorizzazione è stato modificato in una raccolta siti.|
+|È stato modificato un livello di autorizzazione in una raccolta siti|PermissionLevelModified|Un livello di autorizzazione è stato modificato in una raccolta siti.|
 |Autorizzazioni sito modificate|SitePermissionsModified|Un proprietario o un amministratore del sito (o un account di sistema) modifica il livello di autorizzazioni assegnato a un gruppo in un sito. Questa attività viene registrata anche se vengono rimosse tutte le autorizzazioni da un gruppo. <br/><br/> **NOTA**: questa operazione è deprecata in SharePoint Online. Per trovare gli eventi correlati, è possibile cercare altre attività relative alle autorizzazioni, ad esempio **Amministratore raccolta siti aggiunto**, **Utente o gruppo aggiunto a gruppo di SharePoint**, **Utente autorizzato a creare gruppi**, **Gruppo creato** e **Gruppo eliminato**.|
 |È stato rimosso un livello di autorizzazione dalla raccolta siti|PermissionLevelRemoved|Un livello di autorizzazione è stato rimosso da una raccolta siti.|
 |Amministratore raccolta siti rimosso|SiteCollectionAdminRemoved|Un proprietario o un amministratore della raccolta siti rimuove una persona come amministratore della raccolta siti per un sito. Anche questa attività viene registrata quando un amministratore rimuove se stesso dall'elenco degli amministratori per l'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint).  Per riportare questa attività nei risultati della ricerca nel log di controllo, è necessario cercare tutte le attività.|
@@ -705,34 +705,7 @@ Workplace Analytics offre informazioni dettagliate sul modo in cui i gruppi coll
 
 ### <a name="microsoft-teams-activities"></a>Attività di Microsoft Teams
 
-La tabella seguente elenca le attività degli utenti e degli amministratori di Microsoft Teams registrate nel log di controllo. Microsoft Teams è un'area di lavoro basata su chat di Office 365. Raggruppa conversazioni, riunioni, file e note in un'unica posizione. Per altre informazioni e collegamenti ad argomenti della Guida, vedere:
-
-- [Domande frequenti su Microsoft Teams - Guida per gli amministratori](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
-
-- [Guida di Microsoft Teams](https://support.office.com/teams)
-
-|**Nome descrittivo**|**Operazione**|**Descrizione**|
-|:-----|:-----|:-----|
-|Aggiunta di un bot al team|BotAddedToTeam|Un utente aggiunge un bot al team.|
-|Aggiunta di un canale|ChannelAdded|Un utente aggiunge un canale al team.|
-|Aggiunta di un connettore|ConnectorAdded|Un utente aggiunge un connettore a un canale.|
-|Aggiunta di membri|MemberAdded|Il proprietario di un team aggiunge membri a un team, a un canale oppure a una chat di gruppo.|
-|Aggiunta di una scheda|TabAdded|Un utente aggiunge una scheda a un canale.|
-|Impostazione del canale cambiata|ChannelSettingChanged|L'operazione ChannelSettingChanged viene registrata quando vengono eseguite le attività seguenti dal membro di un team. Per ognuna di queste attività viene visualizzata una descrizione dell'impostazione modificata (tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo. <br/><br/>• Cambia il nome di un canale del team (**nome del canale**). <br/><br/>• Cambia la descrizione di un canale del team (**descrizione del canale**).|
-|Impostazione dell'organizzazione cambiata|TeamsTenantSettingChanged|L'operazione TeamsTenantSettingChanged viene registrata quando le attività seguenti vengono eseguite da un amministratore globale (mediante l'interfaccia di amministrazione di Microsoft 365). Tenere presente che queste attività hanno effetto sulle impostazioni di Microsoft Teams dell'intera organizzazione. Per altre informazioni, vedere [Impostazioni dell'amministratore per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> Per ognuna di queste attività viene visualizzata una descrizione dell'impostazione modificata (tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo. <br/><br/>• Abilita o disabilita Microsoft Teams per l'organizzazione (**Microsoft Teams**). <br/><br/>• Abilita o disabilita l'interoperabilità tra Microsoft Teams e Skype for Business per l'organizzazione (**interoperabilità di Skype for Business**). <br/><br/>• Abilita o disabilita la visualizzazione organigramma nei client di Microsoft Teams (visualizzazione organigramma **). <br/><br/>• Abilita o disabilita la capacità dei membri del team di pianificare riunioni private (** Pianificazione di riunioni private **). <br/><br/>• Abilita o disabilita la capacità dei membri del team di pianificare riunioni di canale (Pianificazione di riunioni di canale**). <br/><br/>• Abilita o disabilita le chiamate video nelle riunioni di Teams (video per le riunioni Skype **). <br/><br/>• Abilita o disabilita la condivisione dello schermo nelle riunioni di Microsoft Teams per l'organizzazione (** condivisione dello schermo per le riunioni Skype **). <br/><br/>• Abilita o disabilita l'aggiunta di immagini animate (denominate Giphy) alle conversazioni di Teams (immagini animate**). <br/><br/>• Modifica l'impostazione di classificazione del contenuto per l'organizzazione (**classificazione del contenuto**). La classificazione del contenuto limita il tipo di immagini animate che possono essere visualizzate nelle conversazioni. <br/><br/>• Consente o impedisce ai membri del team di aggiungere immagini personalizzabili (note come meme personalizzati) da Internet alle conversazioni del team (Immagini personalizzabili da Internet **).<br/><br/>• Consente o impedisce ai membri del team di aggiungere immagini modificabili (note come adesivi) alle conversazioni del team (** Immagini modificabili **).<br/><br/>• Consente o impedisce ai membri del team di usare i bot nelle chat e nei canali di Microsoft Teams (bot a livello di organizzazione). <br/><br/>• Abilita bot specifici per Microsoft Teams. Non è incluso il T-bot, che è il bot della Guida di Teams disponibile quando i bot sono abilitati per l'organizzazione (** Singoli bot **). <br/><br/>• Consente o impedisce ai membri del team di aggiungere estensioni o schede (** Estensioni o schede **). <br/><br/>• Abilita o disabilita il caricamento laterale dei Bot proprietari per Microsoft Teams (** Caricamento laterale di bot **). <br/><br/>• Consente o impedisce agli utenti di inviare messaggi di posta elettronica in un canale di Microsoft Teams (** Posta elettronica del canale**).|
-|Ruolo modificato dei membri del team|MemberRoleChanged|Un proprietario del team cambia il ruolo dei membri di un team. I valori seguenti indicano il tipo di ruolo assegnato all'utente. <br/><br/> **1** - Indica il ruolo Proprietario.<br/>**2** - Indica il ruolo Membro. <br/>**3** - Indica il ruolo Guest. <br/><br/> La proprietà Members include anche il nome dell'organizzazione e l'indirizzo di posta elettronica del membro.|
-|Impostazione del team cambiata|TeamSettingChanged|L'operazione TeamSettingChanged viene registrata quando vengono eseguite le attività seguenti dal proprietario di un team. Per ognuna di queste attività viene visualizzata una descrizione dell'impostazione modificata (tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo. <br/><br/>• Cambia il tipo di accesso per un team. I team possono essere impostati come pubblici o privati (**Tipo di accesso del team**). Quando un team è privato (impostazione predefinita), gli utenti possono accedervi solo su invito. Quando un team è pubblico, è individuabile da tutti gli utenti. <br/><br/>• Cambia la classificazione delle informazioni di un team (**classificazione del team**). <br/> Ad esempio, i dati del team possono essere classificati come a impatto aziendale elevato, medio o basso.<br/><br/>• Cambia il nome di un team (**nome del team**). <br/><br/>• Cambia la descrizione del team (descrizione del team**). <br/><br/>• Modifiche apportate alle impostazioni del team. I proprietari dei team possono accedere a queste impostazioni in un client di Teams facendo clic con il pulsante destro del mouse su un team, selezionando **Gestisci team** e quindi scegliendo la scheda **Impostazioni**. Per queste attività viene visualizzato il nome dell'impostazione modificata nella colonna **Elemento** nei risultati della ricerca nel log di controllo.|
-|Team creato|TeamCreated|Un utente crea un team.|
-|Canale eliminato|ChannelDeleted|Un utente elimina un canale da un team.|
-|Team eliminato|TeamDeleted|Un proprietario del team elimina un team.|
-|Rimozione del bot dal team|BotRemovedFromTeam|Un utente rimuove un bot dal team.|
-|Rimozione di un connettore|ConnectorRemoved|Un utente rimuove un connettore da un canale.|
-|Rimozione dei membri|MemberRemoved|Il proprietario di un team rimuove i membri da un team, da un canale o da una chat di gruppo.|
-|Rimozione di una scheda|TabRemoved|Un utente rimuove una scheda da un canale.|
-|Connettore aggiornato|ConnectorUpdated|Un utente ha modificato un connettore in un canale.|
-|Scheda aggiornata|TabUpdated|Un utente ha modificato una scheda in un canale.|
-|Utente connesso a Teams|TeamsSessionStarted|Un utente accede a un client di Microsoft Teams. Questo evento non acquisisce le attività di aggiornamento del token.|
-||||
+È possibile eseguire una ricerca nel log di controllo per le attività di utenti e amministratori in Microsoft Teams. Teams è un'area di lavoro basata su chat di Office 365. Raggruppa conversazioni, riunioni, file e note in un'unica posizione. Per la descrizione delle attività di Teams sottoposte a controllo, vedere [Eseguire ricerche nel log di controllo per gli eventi in Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities).
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Attività di Microsoft Teams per il settore sanitario
 
@@ -744,7 +717,7 @@ Per una descrizione delle attività dell'app Pazienti, vedere [Log di controllo 
 
 ### <a name="microsoft-teams-shifts-activities"></a>Attività di Turni di Microsoft Teams
 
-Se l'organizzazione usa l'app Turni in Microsoft Teams, è possibile cercare nel log di controllo le attività correlate all'utilizzo dell'app. Se l'ambiente è configurato per supportare l'app Turni, nell'elenco di selezione **Attività** è disponibile un altro gruppo di attività correlato.
+Se l'organizzazione usa l'app Turni in Microsoft Teams, è possibile cercare le attività correlate all'utilizzo dell'app nel log di controllo. Se l'ambiente è configurato per supportare le app Turni, nell'elenco di selezione **Attività** è disponibile un altro gruppo di attività correlato.
 
 Per una descrizione delle attività relative alle app Turni, vedere [Eseguire ricerche nel log di controllo per gli eventi in Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
@@ -814,7 +787,7 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di M
 Dove indicato di seguito nelle descrizioni, alcune operazioni contengono parametri di attività aggiuntivi.
 
 > [!NOTE]
-> Se un'attività di Forms viene eseguita da un coautore o da un partecipante anonimo, viene registrata in modo leggermente diverso. Per altre informazioni, vedere la sezione [Attività di Forms eseguite da coautori e partecipanti anonimi](#forms-activities-performed-by-co-authors-and-anonymous-responders).
+> Se un'attività di Forms viene eseguita da un coautore o da un partecipante anonimo, viene registrata in modo leggermente diverso. Per altre informazioni, vedere la sezione [Attività di Forms eseguite da coautori e partecipanti anonimi](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -847,9 +820,9 @@ Dove indicato di seguito nelle descrizioni, alcune operazioni contengono paramet
 |Risposta inviata|SubmitResponse|Un utente invia una risposta a un modulo. <br><br>La proprietà IsInternalForm:booleano indica se il partecipante si trova nella stessa organizzazione del proprietario del modulo.|
 ||||
 
-#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>Attività di Forms eseguite da coautori e partecipanti anonimi
+#### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Attività di Forms eseguite da coautori e partecipanti anonimi
 
-Forms supporta la collaborazione quando i moduli vengono progettati e durante l'analisi delle risposte. Un collaboratore di moduli è noto come *coautore*. I coautori possono eseguire tutte le operazioni che possono essere svolte da un proprietario del modulo, tranne l'eliminazione o lo spostamento di un modulo. Forms consente anche di creare un modulo a cui è possibile rispondere in modo anonimo. Questo significa che non è necessario che il partecipante sia connesso all'organizzazione per rispondere a un modulo. 
+Forms supporta la collaborazione durante la progettazione dei moduli vengono progettati e l'analisi delle risposte. Un collaboratore di moduli è noto come *coautore*. I coautori possono eseguire tutte le operazioni eseguibili da un proprietario del modulo, tranne l'eliminazione o lo spostamento di un modulo. Forms consente anche di creare un modulo a cui è possibile rispondere in modo anonimo. Questo significa che non è necessario che il partecipante sia connesso all'organizzazione per rispondere a un modulo. 
 
 La tabella seguente descrive le attività di controllo e le informazioni del record di controllo relative alle attività eseguite dai coautori e dai partecipanti anonimi.
 
