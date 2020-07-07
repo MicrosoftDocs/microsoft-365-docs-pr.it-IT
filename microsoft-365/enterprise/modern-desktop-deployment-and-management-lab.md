@@ -15,12 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
-ms.translationtype: HT
+ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869857"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049917"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -52,12 +51,13 @@ INOLTRE, il lab è progettato per essere collegato alle versioni di valutazione 
 
 ## <a name="step-by-step-labs"></a>Lab dettagliati
 
-Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione. I lab sono stati aggiornati per le versioni più recenti di Intune e Configuration Manager (versione 1910). 
+Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione. I lab sono stati aggiornati per le versioni più recenti di Intune e Configuration Manager. 
 
 ### <a name="device-and-app-readiness"></a>Preparazione di app e dispositivi
 
   - Desktop Analytics
   - NOVITÀ! Distribuire e aggiornare il nuovo Microsoft Edge 
+  - NOVITÀ! Installare e configurare Cloud Management Gateway (CMG) 
   - Modalità Internet Explorer 
   - Application Guard 
 
@@ -92,6 +92,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
   - Windows Defender Exploit Guard
   - Controllo di applicazioni di Windows Defender
   - Windows Defender Advanced Threat Protection
+  - NOVITÀ! Sicurezza endpoint 
 
 ### <a name="os-deployment-and-feature-updates"></a>Distribuzione del sistema operativo e aggiornamenti delle funzionalità
 
@@ -105,6 +106,8 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
   - Gestire gli aggiornamenti di Windows con Criteri di gruppo
   - Manutenzione di Windows 10 con Configuration Manager e Intune
   - Installazione di Microsoft 365 Apps for enterprise con Configuration Manager
+  - NOVITÀ! Aggiornamenti di Office con Configuration Manager e Intune
+  - NOVITÀ! Installare Microsoft Teams 
 
 ### <a name="new-windows-virtual-desktop"></a>NOVITÀ! Desktop virtuale Windows
   - Desktop virtuale Windows: preparazione, distribuzione, ottimizzazione 

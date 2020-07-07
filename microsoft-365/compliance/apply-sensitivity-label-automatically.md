@@ -16,12 +16,11 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 6521bd9c23d8596adb8c86b73a82c3e8aecb85fb
-ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
-ms.translationtype: HT
+ms.openlocfilehash: c9b7782c39582deec3d42eb0c9dd1083519c805e
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44658358"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874916"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -54,16 +53,19 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     Per istruzioni sulla configurazione, vedere [Come configurare i criteri di applicazione automatica di etichette per SharePoint, OneDrive e Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) in questa pagina.
     
     Caratteristiche specifiche dell'etichettatura automatica per SharePoint e OneDrive:
-    - Massimo 25.000 file etichettati automaticamente (Word, PowerPoint o Excel) nel tenant al giorno
-    - Massimo di 10 raccolte siti in tutti i criteri
-    - Massimo di 10 criteri nel tenant
-    - La data di modifica non viene cambiata dai criteri di etichettatura automatica, sia per la modalità di simulazione che per l'applicazione delle etichette
+    - Sono supportati i file di Office per Word, PowerPoint ed Excel.
+    - Massimo 25.000 file etichettati automaticamente nel tenant al giorno.
+    - Massimo di 10 raccolte siti in tutti i criteri.
+    - Massimo di 10 criteri nel tenant.
+    - I valori esistenti per "Modificato", "Modificato da" e la data non vengono cambiati dai criteri di etichettatura automatica, sia per la modalità di simulazione che per l'applicazione delle etichette.
+    - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è la persona che ha creato l'etichetta di riservatezza.
 
     Caratteristiche specifiche dell'etichettatura automatica per Exchange:
-    - A differenza dell'etichettatura manuale o dell'etichettatura automatica per le app di Office, negli allegati di Office vengono ricercate anche le condizioni specificate nei criteri di applicazione automatica di etichette. Quando viene rilevata una corrispondenza, viene applicata un'etichetta al messaggio ma non all'allegato.
+    - A differenza dell'etichettatura manuale o dell'etichettatura automatica per le app di Office, negli allegati di Office (file Word, Excel e PowerPoint) e PDF vengono ricercate anche le condizioni specificate nei criteri di etichettatura automatica. Quando viene rilevata una corrispondenza, viene applicata un'etichetta al messaggio ma non all'allegato.
     - Se sono presenti regole per il flusso di posta di Exchange o criteri di prevenzione della perdita dei dati che applicano la crittografia IRM: quando il contenuto viene identificato da queste regole o criteri e da un criterio di applicazione automatica di etichette, l'etichetta viene applicata. Se quell'etichetta applica la crittografia, le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati vengono ignorate. Se invece quella etichetta non applica la crittografia, in aggiunta all'etichetta vengono applicate le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati.
     - I messaggi di posta elettronica con crittografia IRM senza etichetta verranno sostituiti da un'etichetta con qualsiasi impostazione di crittografia se esiste una corrispondenza usando l'etichettatura automatica.
     - La posta in arrivo viene etichettata quando esiste una corrispondenza con le condizioni di etichettatura automatica. Tuttavia, se l'etichetta è configurata per la crittografia, la crittografia non viene applicata.
+    - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è la persona che invia il messaggio di posta elettronica.
     
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Confronto tra l'applicazione automatica di etichette per le app di Office e i criteri di applicazione automatica di etichette
@@ -88,7 +90,7 @@ Nella tabella seguente sono riportate le differenze di comportamento tra i due m
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Modalità di valutazione di più condizioni quando si applicano a più etichette
 
-Le etichette sono ordinate per la valutazione in base alla posizione specificata nei criteri: la prima etichetta ha la posizione più bassa (meno riservata) mentre l'ultima etichetta ha la posizione più alta (più riservata). Per altre informazioni sulla priorità, vedere [Priorità dell’etichetta (l’ordine è importante)](sensitivity-labels.md#label-priority-order-matters).
+The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>Non configurare un'etichetta padre in modo che venga applicata automaticamente o consigliata
 
@@ -100,7 +102,7 @@ Per ulteriori informazioni sulle etichette padre e sulle sottoetichette, vedere 
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Come configurare l'applicazione automatica di etichette per le app di Office
 
-L'assegnazione automatica di etichette nelle app Office per Windows è supportata dal client di etichettatura unificata di Azure Information Protection. Per l'etichettatura predefinita nelle app Office, questa funzionalità è disponibile [in versione di anteprima per alcune app](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+L'assegnazione automatica di etichette nelle app Office per Windows è supportata dal client di etichettatura unificata di Azure Information Protection. Per l’etichettatura predefinita delle app di Office, questa funzionalità [prevede fasi di disponibilità diverse per app differenti](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 Le impostazioni di applicazione automatica delle etichette per le app di Office sono disponibili quando si [crea o modifica un'etichetta di riservatezza](create-sensitivity-labels.md). È possibile scegliere di applicare automaticamente le etichette di riservatezza ai contenuti quando vengono rilevate informazioni sensibili. Scegliere da un elenco di tipi di informazioni sensibili o classificatori sottoponibili a training:
 
@@ -188,20 +190,20 @@ Assicurarsi di conoscere i prerequisiti prima di configurare i criteri di etiche
 
 - Modalità di simulazione:
     - È necessario abilitare il controllo per Microsoft 365. Per abilitare il controllo o verificare se è già attivato, vedere [Abilitare o disabilitare la ricerca nel log di audit](turn-audit-log-search-on-or-off.md).
-    - Per visualizzare il contenuto del file nella visualizzazione origine, non supportata per i messaggi di posta elettronica, è necessario avere il ruolo di **Visualizzatore contenuto di Esplora contenuto** se non si è un amministratore globale. Se non si dispone di questa autorizzazione, non viene visualizzato il riquadro anteprima quando si seleziona un elemento dalla scheda**Elementi corrispondenti**.
+    - Per visualizzare il contenuto del file nella visualizzazione origine, è necessario avere il ruolo di **Visualizzatore contenuto di Esplora contenuto** se non si è un amministratore globale. Se non si dispone di questa autorizzazione, non viene visualizzato il riquadro di anteprima quando si seleziona un elemento dalla scheda **Elementi corrispondenti**.
 
 - Per assegnare un'etichetta automatica ai file in SharePoint e OneDrive:
     - Sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-    - Nel momento in cui vengono eseguiti i criteri di applicazione automatica di etichette, il file non deve essere aperto da un altro processo o utente.
+    - Nel momento in cui vengono eseguiti i criteri di applicazione automatica di etichette, il file non deve essere aperto da un altro processo o utente. Un file estratto per la modifica rientra in questa categoria.
 
 - Se si prevede di usare [tipi di informazioni sensibili personalizzati](custom-sensitive-info-types.md) anziché quelli predefiniti: 
     - I tipi di informazioni sensibili personalizzati vengono valutati in base a contenuti creati dopo il salvataggio di tali tipi. 
     - Per testare nuovi tipi di informazioni sensibili personalizzati, crearli prima di creare i criteri di applicazione automatica di etichette e quindi creare nuovi documenti con i dati di esempio per il test.
 
 - Una o più etichette di riservatezza [create e pubblicate](create-sensitivity-labels.md) (per almeno un utente) che è possibile selezionare per i criteri di applicazione automatica di etichette. Per queste etichette:
-    - Non è rilevante se l'opzione di etichettatura automatica nelle app di Office sia attivata o disattivata perché, come spiegato nell'introduzione, quella impostazione delle etichette integra i criteri di applicazione automatica di etichette. 
+    - Non è rilevante se l'opzione di etichettatura automatica nelle app di Office sia attivata o disattivata perché, come spiegato nell'introduzione, quella impostazione delle etichette integra i criteri di applicazione automatica di etichette.
     - Se le etichette che si vogliono usare per l'applicazione automatica di etichette sono configurate per l'uso di contrassegni visivi (intestazioni, piè di pagina e filigrane), tenere presente che non questi non vengono applicati ai documenti.
-    - Se le etichette applicano la crittografia, devono essere configurate per l'impostazione **Assegnare le autorizzazioni ora**.
+    - Se si applica la [crittografia](encryption-sensitivity-labels.md) alle etichette, queste devono essere configurate per l'impostazione **Assegnare ora le autorizzazioni**.
 
 ### <a name="learn-about-simulation-mode"></a>Informazioni sulla modalità di simulazione
 
@@ -294,6 +296,8 @@ Andando alla pagina **Protezione delle informazioni**, nella scheda **Applicazio
     ![Modificare l'opzione del criterio di applicazione automatica di etichette](../media/auto-labeling-edit.png)
     
     Quando si è pronti per eseguire il criterio senza simulazione, selezionare l'opzione **Abilita criterio**.
+
+I criteri automatici vengono eseguiti continuativamente finché non vengono eliminati. Ad esempio, i documenti nuovi e modificati verranno inclusi nelle impostazioni dei criteri correnti.
 
 Per visualizzare i risultati del criterio di applicazione automatica di etichette è possibile anche usare [Esplora contenuto](data-classification-content-explorer.md) quando si hanno le [autorizzazioni](data-classification-content-explorer.md#permissions) appropriate:
 - **Visualizzatore elenco di Esplora contenuto** consente di vedere l'etichetta di un file ma non il contenuto del file.

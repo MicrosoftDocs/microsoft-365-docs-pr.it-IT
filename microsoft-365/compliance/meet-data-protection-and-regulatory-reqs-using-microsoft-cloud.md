@@ -16,17 +16,16 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Informazioni su come usare Compliance Manager nel portale Microsoft Service Trust per soddisfare le esigenze di protezione dei dati e normative.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815597"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016257"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance Manager (classico)
 
 > [!NOTE]
-> Questa documentazione descrive una versione precedente del prodotto. È sconsigliato usare questa versione di Compliance Manager, mentre invece è consigliato usare il nuovo [punteggio di conformità Microsoft](compliance-score.md).
+> Questa documentazione descrive una versione precedente del prodotto. È *vivamente sconsigliato l'uso di questa versione di Compliance Manager*. **Se si usa la versione di anteprima corrente di Compliance Manager, consultare la [documentazione di Compliance Manager (anteprima)](working-with-compliance-manager.md).**
 
  *Compliance Manager non è disponibile in Office 365 gestito da 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) o Office 365 Dipartimento della Difesa.*
   
@@ -127,7 +126,7 @@ Ad esempio, il controllo di valutazione per User Access Management mostrato in b
   
 The Compliance Manager assigns a default severity ranking to each control. Risk rankings are calculated based on the following criteria:
   
-- Se un controllo impedisce il verificarsi di eventi imprevisti (classificazione più alta), rileva gli eventi imprevisti accaduti o corregge l'impatto di un evento imprevisto (classificazione più bassa). In termini di classificazione di gravità, a un controllo obbligatorio che impedisce una minaccia viene assegnato il numero massimo di punti, mentre ai controlli rilevatori o correttivi (indipendentemente dal fatto che siano obbligatori o discrezionali) viene assegnato il numero minimo di punti.
+- Se un controllo impedisce il verificarsi di incidenti (classificazione più alta), rileva gli incidenti accaduti o corregge l'impatto di un incidente (classificazione più bassa). In termini di classificazione di gravità, a un controllo obbligatorio che impedisce una minaccia viene assegnato il numero massimo di punti, mentre ai controlli rilevatori o correttivi (indipendentemente dal fatto che siano obbligatori o discrezionali) viene assegnato il numero minimo di punti.
     
 - Se un controllo (dopo che è stato implementato) è obbligatorio e quindi non può essere bypassato dagli utenti (ad esempio, gli utenti devono reimpostare la propria password e soddisfare i requisiti di lunghezza e caratteri della password) o a discrezione dell'utente e può essere bypassato dagli utenti (ad esempio, in caso di regole aziendali che richiedono agli utenti di bloccare i propri schermi quando si allontanano dalla propria postazione).
     
@@ -227,7 +226,7 @@ Valutando ciascun controllo utilizzando questi fattori, viene determinata l'esse
   
  **Minaccia**
   
-||||
+|<br>|<br>|<br>|
 |:-----|:-----|:-----|
 ||**Obbligatorio** <br/> |**A discrezione dell'utente** <br/> |
 |**Preventivo** <br/> |Rischio elevato  <br/> |Rischio medio  <br/> |
@@ -244,7 +243,7 @@ La minaccia si riferisce a tutto ciò che rappresenta un rischio per lo standard
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
-||**Interno**<br/>||**Esterno**<br/>||||
+|<br>|**Interno**<br/>|<br>|**Esterno**<br/>|<br>|<br>|<br>|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||*Dannoso*<br/>|*Accidentale*<br/>|*Dannoso*<br/>|*Accidentale*<br/>|||
 |**Riservatezza**<br/>|(H, M o L)  <br/> |(H, M o L)  <br/> |(H, M o L)  <br/> |(H, M o L)|

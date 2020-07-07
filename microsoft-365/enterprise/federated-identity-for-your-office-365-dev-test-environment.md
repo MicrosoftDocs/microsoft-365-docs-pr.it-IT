@@ -22,7 +22,6 @@ ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: "Sintesi: configurare l'autenticazione federata per l'ambiente di testing di Microsoft 365."
 ms.openlocfilehash: efe2e196b95feff2aab1577f8e5d3ee29b5e39ba
 ms.sourcegitcommit: 330e9baf02b5bc220d61f777c2338814459626ec
-ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44385058"
@@ -278,7 +277,7 @@ Successivamente, configurare il servizio AD FS seguendo questi passaggi:
     
 Dal [portale Azure](https://portal.azure.com), connettersi a PROXY1 con le credenziali dell'account CORP\\User1.
   
-Successivamente, seguire questi passaggi per installare il certificato autofirmato sia in ** PROXY1 che in APP1**.
+Successivamente, seguire questi passaggi per installare il certificato autofirmato sia in **PROXY1 che in APP1**.
   
 1. Fare clic sul pulsante **Start**, digitare **mmc.exe**, quindi premere **INVIO**.
     

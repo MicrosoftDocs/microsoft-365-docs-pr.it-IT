@@ -19,18 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Informazioni su come rendere più sicura l'organizzazione da attacchi alle password e perché è necessario bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: b4437f2af409fa3040894a1b0f802140df169635
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: HT
+ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399315"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015924"
 ---
 # <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
  
-L'amministratore di un'organizzazione ha la responsabilità di impostare i criteri delle password per gli utenti. Questo articolo fornisce indicazioni su come eseguire questa procedura, che può essere complicata, e suggerimenti per rafforzare la protezione dell'organizzazione dagli attacchi contro le password.
+As the admin of an organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
 Per determinare la frequenza di scadenza delle password di Microsoft 365 nella propria organizzazione, vedere [Impostare i criteri di scadenza delle password per Microsoft 365](../manage/set-password-expiration-policy.md).
+
+Per altre informazioni sulle password per Microsoft 365, vedere gli [articoli correlati](#related-articles).
   
 ## <a name="understanding-password-recommendations"></a>Informazioni sui suggerimenti per la scelta della password
 
@@ -38,17 +39,17 @@ I criteri per l'impostazione di password efficaci rientrano in tre ampie categor
   
 - **Resistenza agli attacchi più comuni** Questo criterio implica la scelta della posizione in cui gli utenti immettono le password (dispositivi noti e attendibili con un buon sistema di rilevamento del malware e siti convalidati) e la scelta della password stessa (lunghezza e univocità).
 
-- **Contenimento degli attacchi riusciti** Con contenimento degli attacchi riusciti si intende la limitazione dell'esposizione a un servizio specifico o la prevenzione totale del danno, in caso di furto della password di un utente. Significa ad esempio impedire che una violazione delle credenziali di social networking renda vulnerabile il conto corrente bancario o che un account poco sicuro accetti collegamenti di reimpostazione per un account importante.
+- **Containing successful attacks** Containing successful hacker attacks is about limiting exposure to a specific service, or preventing that damage altogether, if a user's password gets stolen. For example, ensuring that a breach of your social networking credentials doesn't make your bank account vulnerable, or not letting a poorly guarded account accept reset links for an important account.
 
-- **Comprensione della natura umana** Molti criteri di scelta della password, per quanto validi, soccombono di fronte al comportamento delle persone. La comprensione della natura umana è fondamentale, in quanto la ricerca dimostra che quasi tutte le regole imposte agli utenti non fanno che impoverire la qualità delle password. I requisiti relativi a lunghezza, caratteri speciali e modifica della password causano tutti una normalizzazione delle password, che rende più semplice ai pirati informatici l'impresa di indovinare o violare le password.
+- **Understanding human nature** Many valid password practices fail in the face of natural human behaviors. Understanding human nature is critical because research shows that almost every rule you impose on your users will result in a weakening of password quality. Length requirements, special character requirements, and password change requirements all result in normalization of passwords, which makes it easier for attackers to guess or crack passwords.
 
 ## <a name="password-guidelines-for-administrators"></a>Linee guida per le password per gli amministratori
 
-L'obiettivo principale di un sistema di password più sicuro è la diversità delle password. I criteri per le password dovrebbero contenere moltissime password diverse e difficili da indovinare. Ecco alcuni suggerimenti per garantire la massima sicurezza possibile per la propria organizzazione.
+The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
   
 - Mantenere il requisito di lunghezza minima di 8 caratteri (una password più lunga non è necessariamente migliore)
 
-- Non impostare requisiti di composizione dei caratteri, ad esempio \*&amp;(^%$
+- Don't require character composition requirements. For example, \*&amp;(^%$
 
 - Non richiedere la reimpostazione periodica obbligatoria delle password degli account utente
 
@@ -62,7 +63,7 @@ L'obiettivo principale di un sistema di password più sicuro è la diversità de
 
 ### <a name="password-guidance-for-your-users"></a>Linee guida per le password per gli utenti
 
-Ecco alcune indicazioni per l'impostazione delle password per gli utenti dell'organizzazione. Assicurarsi che gli utenti conoscano questi suggerimenti e applichino i criteri di impostazione delle password consigliati nell'intera organizzazione.
+Here's some password guidance for users in your organization. Make sure to let your users know about these recommendations and enforce the recommended password policies at the organizational level.
   
 - Non usare una password uguale o simile a una password usata in un altro sito Web
 
@@ -76,15 +77,15 @@ Di seguito sono descritte alcune delle procedure di gestione delle password più
   
 ### <a name="password-expiration-requirements-for-users"></a>Requisiti per la scadenza delle password degli utenti
 
-I requisiti per la scadenza delle password fanno più male che bene, in quanto spingono gli utenti a selezionare password prevedibili, composte da parole e numeri in sequenza strettamente correlati fra loro. In questi casi è piuttosto facile indovinare la password successiva sulla base di quella precedente. I requisiti di scadenza delle password non offrono alcun vantaggio in termini di contenimento dei danni, perché i criminali informatici usano quasi sempre le credenziali subito dopo averle compromesse.
+Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers which are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cyber criminals almost always use credentials as soon as they compromise them.
   
 ### <a name="requiring-long-passwords"></a>Requisiti di lunghezza delle password
 
-I requisiti di lunghezza delle password (superiori a circa 10 caratteri) possono causare negli utenti un comportamento prevedibile e indesiderato. Ad esempio, gli utenti a cui viene richiesto di usare password di 16 caratteri potrebbero scegliere schemi ripetitivi come **ottoottoottootto** o **passwordpassword**, che soddisfano il requisito della lunghezza ma non sono difficili da indovinare. Inoltre, i requisiti di lunghezza aumentano le probabilità che gli utenti sviluppino abitudini non sicure, come annotare le password, riutilizzarle o memorizzarle nei propri documenti in formato non crittografato. Per incoraggiare gli utenti ad adottare una password univoca, è consigliabile impostare un requisito di lunghezza che non superi gli 8 caratteri. 
+Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing their passwords down, re-using them, or storing them unencrypted in their documents. To encourage users to think about a unique password, we recommend keeping a reasonable 8-character minimum length requirement. 
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Requisiti di complessità delle password (uso di più set di caratteri)
 
-I requisiti di complessità delle password inducono gli utenti a ridurre la varietà di lettere scelte e ad adottare comportamenti prevedibili, causando più danni che vantaggi. La maggior parte dei sistemi applica un certo livello di requisiti di complessità delle password. Ad esempio, le password devono contenere caratteri di tutte e tre le categorie seguenti:
+Password complexity requirements reduce key space and cause users to act in predictable ways, doing more harm than good. Most systems enforce some level of password complexity requirements. For example, passwords need characters from all three of the following categories:
   
 - caratteri maiuscoli
 
@@ -92,7 +93,7 @@ I requisiti di complessità delle password inducono gli utenti a ridurre la vari
 
 - caratteri non alfanumerici
 
-La maggior parte delle persone usa schemi simili, ad esempio una lettera maiuscola in prima posizione, un simbolo alla fine e un numero in penultima posizione. I criminali informatici conoscono questi schemi, quindi eseguono gli attacchi con dizionario usando le sostituzioni più comuni, "$" per "s", "@" per "a," "1" per "l". Obbligare gli utenti a scegliere una combinazione di lettere maiuscole e minuscole, cifre e caratteri speciali ha un effetto negativo. Alcuni requisiti di complessità impediscono addirittura agli utenti di usare password sicure e facili da ricordare, costringendoli a scegliere password meno sicure e più difficili da ricordare.
+Most people use similar patterns, for example, a capital letter in the first position, a symbol in the last, and a number in the last 2. Cyber criminals know this, so they run their dictionary attacks using the most common substitutions, "$" for "s", "@" for "a," "1" for "l". Forcing your users to choose a combination of upper, lower, digits, special characters has a negative effect. Some complexity requirements even prevent users from using secure and memorable passwords, and force them into coming up with less secure and less memorable passwords.
   
 ## <a name="successful-patterns"></a>Criteri efficaci
 
@@ -100,15 +101,15 @@ Ecco alcuni suggerimenti volti a incoraggiare la diversità delle password.
   
 ### <a name="ban-common-passwords"></a>Vietare le password comuni
 
-Il più importante requisito da impostare in relazione alla creazione di password da parte degli utenti consiste nel vietare l'uso di password comuni per ridurre l'esposizione dell'organizzazione ad attacchi di forza bruta volti a violare le password. Alcune delle password più usate dagli utenti sono **abdcefg**, **password**, **123456**.
+The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abdcefg**, **password**, **monkey**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Educare gli utenti a non riutilizzare le password aziendali in altre posizioni
 
-Uno dei messaggi più importanti da comunicare agli utenti dell'organizzazione è di non riutilizzare la password aziendale per altri scopi. L'uso di password aziendali in siti Web esterni aumenta notevolmente le probabilità che i criminali informatici compromettano queste password.
+One of the most important messages to get across to users in your organization is to not re-use their organization password anywhere else. The use of organization passwords in external websites greatly increases the likelihood that cyber criminals will compromise these passwords.
   
 ### <a name="enforce-multi-factor-authentication-registration"></a>Attivare la registrazione dell'autenticazione a più fattori
 
-Assicurarsi che gli utenti aggiornino le informazioni di contatto e di sicurezza, aggiungendo ad esempio un indirizzo di posta elettronica o un numero di telefono alternativo oppure un dispositivo registrato per le notifiche push, in modo che possano rispondere alle richieste di sicurezza e ricevere notifiche sugli eventi che riguardano la sicurezza. Se si mantengono aggiornate le informazioni di contatto e di sicurezza, è più facile verificare l'identità degli utenti in caso dimentichino la password o se qualcuno tenta di assumere il controllo del loro account. Si fornisce inoltre un canale di notifica fuori banda in caso di eventi di sicurezza come tentativi di accesso o password modificate. 
+Make sure your users update contact and security information, like an alternate email address, phone number, or a device registered for push notifications, so they can respond to security challenges and be notified of security events. Updated contact and security information helps users verify their identity if they ever forget their password, or if someone else tries to take over their account. It also provides an out of band notification channel in the case of security events such as login attempts or changed passwords. 
   
 Per altre informazioni, vedere [Configurare l'autenticazione a più fattori](../security-and-compliance/set-up-multi-factor-authentication.md).
   
@@ -131,3 +132,13 @@ Con l'autenticazione a più fattori basata sul rischio, quando il sistema rileva
 - [Le peggiori password del 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
 - [Scaricare file dal Web](https://go.microsoft.com/fwlink/p/?linkid=861029)
+
+## <a name="related-articles"></a>Articoli correlati
+
+[Reimpostare password](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+
+[Impostare la password di un singolo utente in modo che non scada mai](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+
+[Consentire agli utenti di reimpostare le loro password](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+
+[Inviare nuovamente la password utente - Guida per amministratori](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)

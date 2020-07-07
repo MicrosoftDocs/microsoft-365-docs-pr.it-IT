@@ -17,12 +17,11 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul comportamento di conservazione applicabile specificamente alle cartelle di posta elettronica di Exchange e alle cartelle pubbliche di Exchange.
-ms.openlocfilehash: e19e790c23c5e61748f38fb22f96d2347acb144e
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
-ms.translationtype: HT
+ms.openlocfilehash: aa4142db2114b2b58cc391429f1389c6b9fad52d
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874884"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049894"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Informazioni sui criteri di conservazione per Exchange
 
@@ -51,7 +50,7 @@ Se l'impostazione di conservazione è Conserva ed elimina:
 ![Diagramma del flusso di conservazione nella posta elettronica e nelle cartelle pubbliche](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Se l'elemento viene modificato o eliminato definitivamente** dall'utente, con MAIUSC+CANC o eliminandolo da Posta eliminata, durante il periodo di conservazione: l'elemento viene spostato o copiato, in caso di modifica, nella cartella Elementi ripristinabili. Lì, a intervalli regolari viene eseguito un processo timer che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni.
-    
+
 2. **Se l'elemento non viene modificato o eliminato** durante il periodo di conservazione: lo stesso processo viene eseguito periodicamente in tutte le cartelle della cassetta postale e identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni. 
 
 Quando l'impostazione di conservazione è Conserva solo o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed elimina:
@@ -70,13 +69,13 @@ Quando l'impostazione di conservazione è Conserva solo o Elimina solo, i percor
 
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Esclusione di specifici tipi di elementi di Exchange dai criteri di conservazione
 
-È possibile usare PowerShell per escludere specifici tipi di elementi di Exchange dai criteri di conservazione. Ad esempio, è possibile escludere i messaggi vocali, le conversazioni di messaggistica istantanea e altri contenuti di Skype for Business Online nelle cassette postali. Si possono anche escludere elementi del calendario, note e attività. Questa funzionalità è disponibile solo tramite PowerShell, non è disponibile quando si crea un criterio di conservazione usando la procedura guidata nel Centro conformità Microsoft 365.
+È possibile usare PowerShell per escludere specifici tipi di elementi di Exchange dai criteri di conservazione quando le impostazioni dei criteri sono Conserva solo. Ad esempio, è possibile escludere i messaggi vocali, le conversazioni di messaggistica istantanea e altri contenuti di Skype for Business Online nelle cassette postali. Si possono anche escludere elementi del calendario, note e attività. Questa funzionalità è disponibile solo tramite PowerShell, non è disponibile quando si crea un criterio di conservazione usando la procedura guidata nel Centro conformità Microsoft 365.
   
 Per escludere i tipi selezionati per gli elementi di Exchange in un criterio di conservazione, usare il parametro `ExcludedItemClasses` con i cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) e [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule).
 
 Per usare i cmdlet dei criteri di conservazione, è prima necessario [connettersi a PowerShell per Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l’organizzazione 
+## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l’organizzazione 
 
 Se un utente abbandona l’organizzazione e la relativa cassetta postale è inclusa nei criteri di conservazione, quest’ultima diventerà inattiva quando viene eliminato l'account di Microsoft 365 dell'utente. I contenuti di una cassetta postale inattiva sono comunque soggetti ai criteri di conservazione applicati alla cassetta postale prima della disattivazione e sono disponibili per la ricerca eDiscovery. Per altre informazioni, vedere [Cassette postali inattive in Exchange Online](inactive-mailboxes-in-office-365.md). 
 
