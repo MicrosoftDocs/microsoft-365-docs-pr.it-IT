@@ -161,6 +161,10 @@
       href: technical-reference-details-about-encryption.md
     - name: Deprecazione TLS 1.0 e 1.1 per Office 365
       href: tls-1.0-and-1.1-deprecation-for-office-365.md
+    - name: Deprecazione di TLS 1.0 e 1.1 in Office 365 GCC High e DoD
+      href: tls-1-2-in-office-365-gcc.md
+    - name: TLS 1.2 in Office 365
+      href: prepare-tls-1.2-in-office-365.md
     - name: Customer Key
       items:
         - name: Crittografia del servizio con Customer Key in Office 365
@@ -488,15 +492,19 @@
           href: overview-ediscovery-20.md
         - name: Introduzione ad Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Usare i responsabili
+        - name: Lavorare con i responsabili e con le origini dati non correlate ai responsabili
           href: managing-custodians.md
           items:
             - name: Aggiungere responsabili a un caso
               href: add-custodians-to-case.md
+            - name: Aggiungere in blocco responsabili a un caso
+              href: bulk-add-custodians.md
             - name: Gestire i responsabili
               href: manage-new-custodians.md
             - name: Visualizzare l'attività dei responsabili
               href: view-custodian-activity.md
+            - name: Aggiungere origini dati non correlate ai responsabili a un caso
+              href: non-custodial-data-sources.md
         - name: Uso delle comunicazioni
           href: managing-custodian-communications.md
           items:
@@ -809,19 +817,19 @@
   items:
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Punteggio di conformità e Compliance Manager
+    - name: Punteggio di conformità e Compliance Manager (anteprima)
       items:
         - name: Punteggio di conformità (anteprima)
           href: compliance-score.md
-        - name: Configurare il punteggio di conformità (anteprima)
+        - name: Configurare il punteggio di conformità
           href: compliance-score-setup.md
-        - name: Uso del punteggio di conformità (anteprima)
-          href: working-with-compliance-score.md
-        - name: Calcolo del punteggio di conformità (anteprima)
+        - name: Personalizzare il punteggio di conformità con valutazioni
+          href: compliance-score-assessments.md
+        - name: Assegnare ed eseguire il lavoro con azioni di miglioramento
+          href: compliance-score-improvement-actions.md
+        - name: Come viene calcolato il punteggio
           href: compliance-score-methodology.md
-        - name: Note sulla versione del punteggio di conformità (anteprima)
-          href: compliance-score-release-notes.md
-        - name: Domande frequenti sul punteggio di conformità (anteprima)
+        - name: Domande frequenti (FAQ)
           href: compliance-score-faq.md
         - name: Compliance Manager (anteprima)
           href: compliance-manager-overview.md
