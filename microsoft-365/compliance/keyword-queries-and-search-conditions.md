@@ -22,12 +22,11 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sui messaggi di posta elettronica e sulle proprietà dei file che è possibile cercare nel centro conformità & sicurezza di Office 365.
-ms.openlocfilehash: 9fa68257519860311ffe330eed23bd95468856c4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: MT
+ms.openlocfilehash: 89d3f0c25694f8f3c89fbc27ee857c58cc5937fd
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817515"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049804"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto
 
@@ -87,7 +86,7 @@ Per un elenco completo delle proprietà di SharePoint di cui è possibile esegui
 |:-----|:-----|:-----|:-----|
 |Author|Il campo dell'autore dei documenti di Office, che persiste se un documento viene copiato. Ad esempio, se un utente crea un documento e lo invia tramite posta elettronica a qualcun altro che lo carica in SharePoint, il documento conserva comunque l'autore originale. Assicurarsi di utilizzare il nome visualizzato dell'utente per questa proprietà.|`author:"Garth Fort"`|Tutti i documenti creati da Garth Fort.|
 |ContentType|Tipo di contenuto di SharePoint di un elemento, ad esempio un elemento, un documento o un video.|`contenttype:document`|Vengono restituiti tutti i documenti.|
-|Creato|La data di creazione di un elemento.|`created\>=06/01/2016`|Tutti gli elementi creati in o dopo il 1 ° giugno 2016.|
+|Creato|La data di creazione di un elemento.|`created>=06/01/2016`|Tutti gli elementi creati in o dopo il 1 ° giugno 2016.|
 |CreatedBy|L'utente che ha creato o caricato un elemento. Assicurarsi di utilizzare il nome visualizzato dell'utente per questa proprietà.|`createdby:"Garth Fort"`|Tutti gli elementi creati o caricati da Garth Fort.|
 |DetectedLanguage|La lingua di un elemento.|`detectedlanguage:english`|Tutti gli elementi in lingua inglese.|
 |DocumentLink|Il percorso (URL) di una cartella specifica in un sito di SharePoint o OneDrive for business. Se si utilizza questa proprietà, assicurarsi di eseguire una ricerca nel sito in cui si trova la cartella specificata.  <br/> Per restituire gli elementi che si trovano in sottocartelle della cartella specificata per la proprietà documentlink, è necessario aggiungere/ \* all'URL della cartella specifica, ad esempio`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Per ulteriori informazioni sulla ricerca della proprietà documentlink e sull'utilizzo di uno script per ottenere gli URL di documentlink per le cartelle di un sito specifico, vedere [use content search for Targeted Collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Nel primo esempio vengono restituiti tutti gli elementi della cartella OneDrive for business specificata. Nel secondo esempio vengono restituiti i documenti nella cartella del sito specificata (e in tutte le sottocartelle) che contengono la parola "confidenziale" nel nome del file.|

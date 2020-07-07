@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 250d19a09d79fc5fd8c69f2ebd24abadc642fafc
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: MT
+ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005847"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049697"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -151,7 +150,16 @@ I dati nelle tabelle di Ricerca avanzata sono generalmente classificati nei segu
 ## <a name="get-help-as-you-write-queries"></a>Ottenere assistenza nella scrittura delle query
 Trarre vantaggio dalle seguenti funzionalità per scrivere query più velocemente:
 - **AutoSuggest** : durante la scrittura di query, la ricerca avanzata fornisce suggerimenti da IntelliSense. 
-- **Riferimento di schema** — accanto all’area di lavoro è disponibile il riferimento a uno schema che include l'elenco di tabelle e le relative colonne. Per altre informazioni, passare il puntatore su un elemento. Fare doppio clic su un elemento per inserirlo nell'editor di query.
+- **Albero dello schema** : una rappresentazione dello schema che include l'elenco delle tabelle e delle relative colonne viene fornita accanto all'area di lavoro. Per altre informazioni, passare il puntatore su un elemento. Fare doppio clic su un elemento per inserirlo nell'editor di query.
+- **[Riferimenti dello schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : riferimenti in-Portal con descrizioni di tabelle e colonne, nonché tipi di evento supportati ( `ActionType` valori) e query di esempio
+
+## <a name="work-with-multiple-queries-in-the-editor"></a>Utilizzo di più query nell'editor
+L'editor di query può fungere da Scratch Pad per la sperimentazione con più query. Per utilizzare più query:
+
+- Separare ogni query con una linea vuota.
+- Posizionare il cursore su qualsiasi parte di una query per selezionare la query prima di eseguirla. Verrà eseguita solo la query selezionata. Per eseguire un'altra query, spostare il cursore di conseguenza e selezionare **Esegui query**.
+
+![Immagine dell'editor di query con più query](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>Usare query di esempio
 

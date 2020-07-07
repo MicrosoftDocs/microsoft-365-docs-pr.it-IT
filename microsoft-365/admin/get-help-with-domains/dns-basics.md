@@ -22,12 +22,11 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Informazioni sui domini e sui record DNS associati per gestire più facilmente i propri domini.
-ms.openlocfilehash: c9fee3488f7de3c0cc4b93be15ff49bd01469495
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
-ms.translationtype: HT
+ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035610"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049655"
 ---
 # <a name="dns-basics"></a>Informazioni di base sul DNS
 
@@ -143,10 +142,6 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 Il file di zona del dominio può infatti essere archiviato in una posizione diversa dal registrar. Ad esempio, si può registrare il proprio dominio presso un registrar come HiChina e affidare la gestione dei record DNS a un altro provider di hosting DNS o di hosting Web. I record NS del dominio archiviano tali informazioni in modo che tutti i server DNS sappiano dove cercare.
 
 ::: moniker-end
-
-> [!NOTE]
-> Se si configura il dominio in Microsoft 365 in modo che i [record DNS vengano configurati e gestiti automaticamente da Microsoft](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records), nell'ambito della configurazione è necessario [spostare la gestione del DNS su Microsoft 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
- 
 
 ::: moniker range="o365-worldwide"
 ## <a name="why-add-a-domain-in-office-365"></a>Perché aggiungere un dominio in Office 365?

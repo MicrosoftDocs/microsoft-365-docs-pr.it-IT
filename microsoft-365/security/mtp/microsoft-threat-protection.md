@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0e51e52db4e569716954aada1c5cea35ddc6dd0a
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
-ms.translationtype: MT
+ms.openlocfilehash: b11daf1cc6921e4be87b1bd3965adc2d76d0a0dd
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528370"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049929"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -45,6 +44,9 @@ Con la soluzione integrata Microsoft Threat Protection, i professionisti della s
 </table>
 <br>
 
+
+>[!TIP]
+>Consultare la [Guida interattiva di Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
 
 
 Microsoft Threat Protection Suite protegge: 

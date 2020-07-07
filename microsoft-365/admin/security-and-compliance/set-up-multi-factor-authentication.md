@@ -23,12 +23,11 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Informazioni su come configurare l'autenticazione a più fattori per l'organizzazione.
 monikerRange: o365-worldwide
-ms.openlocfilehash: a8e84746a577b95307d325047f0822e8eb3786f0
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-ms.translationtype: MT
+ms.openlocfilehash: b0fd16fc74319c88a6f91bf56ac96346915c35ac
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779942"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049761"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
   
@@ -40,10 +39,8 @@ Prima di iniziare, determinare se queste condizioni speciali si applicano all'ut
 
 - Se si dispone di servizi directory di terze parti con Active Directory Federation Services (AD FS), configurare il server Azure Mae. Per ulteriori informazioni, vedere [scenari avanzati con autenticazione a più fattori di Azure e soluzioni VPN di terze parti](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) .
 
-
 Tutti gli altri utenti dovranno eseguire l'autenticazione aggiuntiva quando necessario. Per ulteriori informazioni, visitare il [metodo e le impostazioni per la verifica a due fattori](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings#turn-on-two-factor-verification-prompts-on-a-trusted-device).
 
-=======
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Passaggio 1: decidere il metodo per richiedere agli utenti di utilizzare il Master
 
 > [!NOTE]

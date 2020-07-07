@@ -1,5 +1,5 @@
 ---
-title: Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)
+title: Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,44 +17,44 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: ead28675a24b0364b89948fe582277862eaab3b8
-ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
-ms.translationtype: HT
+ms.openlocfilehash: 7e4b12310d05ecbceb9df2eac5fe4d48e9275bb8
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44649405"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936927"
 ---
-# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)
+# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Quando si creano etichette di riservatezza nel [Centro conformità Microsoft 365](https://protection.office.com/), ora è possibile applicarle ai seguenti contenitori: siti di Microsoft Teams, gruppi di Microsoft 365 ([precedentemente, gruppi di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) e siti di SharePoint. Usare le impostazioni di etichetta seguenti per proteggere il contenuto in tali contenitori:
+Le [etichette di riservatezza](sensitivity-labels.md), oltre a essere usate per classificare e proteggere documenti e messaggi di posta elettronica, possono essere usate per proteggere il contenuto dei contenitori seguenti: siti di Microsoft Teams, gruppi di Microsoft 365 ([in precedenza gruppi di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) e siti di SharePoint. Per questa classificazione e protezione a livello di contenitore, usare le seguenti impostazioni di etichetta:
 
 - Privacy (pubblico o privato) dei siti dei team collegati ai gruppi di Microsoft 365
 - Accesso di utenti esterni
 - Accesso da dispositivi non gestiti 
 
-Quando si applica questa etichetta a uno dei contenitori supportati, questa applica automaticamente le opzioni configurate al sito o al gruppo connesso. 
+Quando si applica questa etichetta di riservatezza a uno dei contenitori supportati, l'etichetta applica automaticamente le impostazioni di classificazione e protezione al sito o al gruppo connesso.
 
-Il contenuto di tali contenitori, tuttavia, non eredita le etichette per impostazioni come il nome dell'etichetta, contrassegni visivi o la crittografia. Per fare in modo che gli utenti possano etichettare i propri documenti nei siti di SharePoint o del team, [abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Il contenuto di tali contenitori, tuttavia, non eredita le etichette per la classificazione e le impostazioni come i contrassegni visivi o la crittografia. Per fare in modo che gli utenti possano etichettare i propri documenti nei siti di SharePoint o del team, assicurarsi di [abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="about-the-public-preview-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Informazioni sull'anteprima pubblica per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
+> [!NOTE]
+> Le etichette di riservatezza per i contenitori non sono supportate con le reti per la distribuzione di contenuti (CDN) di Office 365.
 
-Le etichette di riservatezza per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint sono in anteprima e potrebbero essere modificate prima del rilascio finale. Questa anteprima pubblica non funziona con le reti per la distribuzione di contenuti (CDN) di Office 365.
+## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
-Prima di abilitare questa anteprima e configurare le etichette di riservatezza per le nuove impostazioni, gli utenti possono vedere e applicare tali etichette nelle loro app. Un esempio da Word:
+Prima di abilitare le etichette di riservatezza per contenitori e configurare le etichette di riservatezza per le nuove impostazioni, gli utenti possono vedere e applicare tali etichette nelle loro app. Un esempio da Word:
 
 ![Etichetta di riservatezza visualizzata nell'app Word per desktop](../media/sensitivity-label-word.png)
 
-Dopo l'abilitazione e la configurazione di questa anteprima, gli utenti possono anche vedere e applicare etichette di riservatezza a Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint. Un esempio quando si crea un nuovo sito del team di SharePoint:
+Dopo l'abilitazione e la configurazione delle etichette di riservatezza, gli utenti possono anche vedere e applicare etichette di riservatezza a Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint. Un esempio quando si crea un nuovo sito del team di SharePoint:
 
 ![Etichetta di riservatezza durante la creazione di un sito del team da SharePoint](../media/sensitivity-labels-new-team-site.png)
 
-## <a name="enable-this-preview-and-synchronize-labels"></a>Abilitare questa anteprima e sincronizzare le etichette
+## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Come abilitare le etichette di riservatezza per i contenitori e sincronizzare le etichette
 
-1. Dato che questa funzione usa le funzionalità di Azure AD, seguire le istruzioni riportate nella relativa documentazione per abilitare l'anteprima: [Assegnare etichette di riservatezza a gruppi di Microsoft 365 in Azure Active Directory (anteprima)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
+1. Dato che questa funzione usa le funzionalità di Azure AD, seguire le istruzioni riportate nella relativa documentazione per abilitare il supporto per le etichette di riservatezza: [Assegnare etichette di riservatezza a gruppi di Microsoft 365 in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. Ora [connettersi a PowerShell per Centro sicurezza e conformità di Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
+2. Ora è necessario sincronizzare le etichette di riservatezza in Azure AD. Prima di tutto, [connettersi a PowerShell in Centro sicurezza e conformità di Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
     
     Ad esempio, in una sessione di PowerShell eseguita come amministratore, accedere con un account di amministratore globale:
     
@@ -65,15 +65,15 @@ Dopo l'abilitazione e la configurazione di questa anteprima, gli utenti possono 
     Import-PSSession $Session -DisableNameChecking
     ```
 
-3. Eseguire il comando seguente per sincronizzare le etichette di riservatezza con Azure AD, in modo da poterle usare con i gruppi di Microsoft 365:
+3. Quindi eseguire il comando seguente per assicurarsi di poter usare le etichette di riservatezza con i gruppi di Microsoft 365:
     
     ```powershell
     Execute-AzureAdLabelSync
     ```
 
-## <a name="how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Come configurare le impostazioni a livello di sito e gruppo quando si creano o si modificano le etichette di riservatezza
+## <a name="how-to-configure-site-and-group-settings"></a>Come configurare le impostazioni di sito e gruppo
 
-Ora è possibile creare o modificare le etichette di riservatezza che si desidera rendere disponibili per siti e gruppi. L'abilitazione dell'anteprima rende visibile una nuova pagina nelle procedure guidate per l'etichetta di riservatezza: **Impostazioni sito e gruppo**
+Ora è possibile creare o modificare le etichette di riservatezza che si desidera rendere disponibili per siti e gruppi. L'abilitazione delle etichette di sicurezza per contenitori rende visibile una nuova pagina nelle procedure guidate per l'etichetta di riservatezza: **Impostazioni sito e gruppo**
 
 Se serve aiuto per creare o modificare un'etichetta di riservatezza, seguire le istruzioni [Creare e configurare etichette di riservatezza](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).
 
@@ -94,7 +94,7 @@ In questa nuova pagina **Impostazioni sito e gruppo**, configurare le impostazio
 ![Scheda Impostazioni sito e gruppo](../media/edit-sensitivity-label-site-group2.png)
 
 > [!IMPORTANT]
-> Quando si applica un'etichetta a un team, a un gruppo o a un sito, vengono applicate solo queste impostazioni a livello di sito e gruppo. Le altre impostazioni dell'etichetta, come la crittografia e il contrassegno di contenuti, non vengono applicate ai contenuto all'interno del team, del gruppo o del sito.
+> Quando si applica l'etichetta a un team, a un gruppo o a un sito, vengono applicate solo queste impostazioni a livello di sito e gruppo. Le altre impostazioni dell'etichetta, come la crittografia e il contrassegno di contenuti, non vengono applicate ai contenuto all'interno del team, del gruppo o del sito.
 > 
 > In fase di implementazione graduale nei tenant: quando gli utenti creano team, gruppi e siti, saranno disponibili per la selezione solo le etichette con impostazioni a livello di sito e gruppo. Se attualmente è possibile applicare un'etichetta a un contenitore quando l'etichetta non ha le impostazioni di sito e gruppo abilitate, al contenitore viene applicato solo il nome dell'etichetta.
 
@@ -104,36 +104,55 @@ Dal criterio di etichetta, solo l'impostazione dei criteri **Applica questa etic
 
 ## <a name="sensitivity-label-management"></a>Gestione delle etichetta di riservatezza
 
-> [!WARNING]
-> La creazione, la modifica e l'eliminazione delle etichette di riservatezza che si usano per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint richiedono un attento coordinamento con la pubblicazione di criteri delle etichette per gli utenti. 
+Seguire le istruzioni seguenti per creare, modificare o eliminare le etichette di riservatezza configurate per i siti e i gruppi.
 
-Evitare errori nella creazione per siti e gruppi che possono incidere su tutti gli utenti, usando le indicazioni seguenti.
+### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>Creare e pubblicare etichette configurate per i siti e i gruppi
 
-**Creazione e pubblicazione di etichette**
+Dopo la creazione e la pubblicazione di un'etichetta di riservatezza, possono essere necessarie fino a 24 ore prima che l'etichetta diventi visibile agli utenti di team, gruppi e siti. Seguire le istruzioni seguenti per pubblicare un'etichetta per gli utenti quando l'etichetta è configurata per le impostazioni di sito e gruppo:
 
-Dopo la creazione e la pubblicazione di un'etichetta di riservatezza, possono essere necessarie fino a 24 ore prima che l'etichetta diventi visibile agli utenti di team, gruppi e siti. Seguire questa procedura per pubblicare un'etichetta per tutti gli utenti nel tenant:
-
-1. Creare l'etichetta di riservatezza e pubblicarla solo per pochi account utente nel tenant.
+1. Dopo aver creato e configurato l'etichetta di riservatezza, aggiungerla a un criterio di etichetta applicabile solo a pochi utenti test.
 
 2. Attendere 24 ore.
 
-3. Dopo questa attesa di 24 ore, usare uno degli account utente specificati nel passaggio 1 per creare un team, un gruppo di Microsoft 365 o un sito di SharePoint con l'etichetta creata nel passaggio 1.
+3. Dopo questo periodo di attesa, usare uno degli account utente test per creare un team, un gruppo di Microsoft 365 o un sito di SharePoint con l'etichetta creata nel passaggio 1.
 
-4. Se non si verificano errori durante l'operazione di creazione del passaggio 3, pubblicare l'etichetta per tutti gli utenti del tenant. In caso di errori, contattare il [Supporto tecnico Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+4. Se non si verificano errori durante l'operazione di creazione, sarà possibile pubblicare l'etichetta per tutti gli utenti del tenant in sicurezza.
 
-**Modifica ed eliminazione di etichette pubblicate**
+### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>Modificare etichette pubblicate che sono configurate per i siti e i gruppi
 
-Se si modifica o si elimina un'etichetta di riservatezza con impostazioni a livello di sito e gruppo abilitate e questa etichetta è inclusa in uno o più criteri di etichetta, queste azioni possono causare errori di creazione per tutti i team, i gruppi e i siti. Per evitare questa situazione, seguire queste indicazioni:
+Come procedura consigliata, non modificare le impostazioni di sito e gruppo per un'etichetta di riservatezza dopo averla applicata a team, gruppi o siti. In caso di modifica, consentire fino a 3 giorni per la replica delle modifiche in tutti i contenitori a cui è applicata l'etichetta. 
+
+Inoltre, se le modifiche includono l'impostazione **Accesso di utenti esterni**:
+
+- La nuova impostazione si applica ai nuovi utenti, ma non agli utenti esistenti. Ad esempio, se questa impostazione è stata selezionata in precedenza e quindi gli utenti Guest hanno eseguito l'accesso al sito, tali utenti Guest possono continuare ad accedere al sito dopo aver deselezionato l'impostazione nella configurazione dell'etichetta.
+
+- Le impostazioni di privacy relative alle proprietà dei gruppi hiddenMembership e roleEnabled non vengono aggiornate.
+
+
+### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>Eliminare etichette pubblicate che sono configurate per i siti e i gruppi
+
+Se si elimina un'etichetta di riservatezza che ha impostazioni a livello di sito e gruppo abilitate e questa etichetta è inclusa in uno o più criteri di etichetta, questa azione può causare errori di creazione per i nuovi team, gruppi e siti. Per evitare questa situazione, seguire queste indicazioni:
 
 1. Rimuovere l'etichetta di riservatezza da tutti i criteri che includono l'etichetta.
 
 2. Attendere 48 ore.
 
-3. Dopo l'attesa di 48 ore, provare a creare un team, un gruppo o un sito e verificare che l'etichetta non sia più visibile.
+3. Dopo questo periodo di attesa, provare a creare un team, un gruppo o un sito e verificare che l'etichetta non sia più visibile.
 
-4. Se l'etichetta di riservatezza non è visibile, è possibile modificare o eliminare l'etichetta in sicurezza. Se l'etichetta è ancora visibile, contattare il [Supporto tecnico Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+4. Se l'etichetta di riservatezza non è visibile, è possibile eliminare l'etichetta in sicurezza.
 
-## <a name="assign-sensitivity-labels-to-microsoft-365-groups"></a>Assegnare etichette di riservatezza ai gruppi di Microsoft 365
+## <a name="how-to-apply-sensitivity-labels-to-containers"></a>Come applicare le etichette di riservatezza ai contenitori
+
+A questo punto è possibile applicare una o più etichette di riservatezza ai seguenti contenitori:
+
+- [Gruppo di Microsoft 365 in Azure AD](#apply-sensitivity-labels-to-microsoft-365-groups)
+- [Sito del team di Microsoft Teams](#apply-a-sensitivity-label-to-a-new-team)
+- [Gruppo di Microsoft 365 in Outlook sul Web](#apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web)
+- [Sito di SharePoint](#apply-a-sensitivity-label-to-a-new-site)
+
+È possibile usare PowerShell se è necessario per [applicare un'etichetta di riservatezza a più siti](#use-powershell-to-apply-a-sensitivity-label-to-multiple-sites).
+
+### <a name="apply-sensitivity-labels-to-microsoft-365-groups"></a>Applicare etichette di riservatezza ai gruppi di Microsoft 365
 
 Ora si è pronti per applicare una o più etichette di riservatezza ai gruppi di Microsoft 365. Per istruzioni, tornare alla documentazione di Azure AD:
 
@@ -143,7 +162,7 @@ Ora si è pronti per applicare una o più etichette di riservatezza ai gruppi di
 
 -  [Assegnare un'etichetta da un gruppo già esistente nel portale di Azure](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
 
-## <a name="apply-a-sensitivity-label-to-a-new-team"></a>Applicare un'etichetta di riservatezza a un nuovo team
+### <a name="apply-a-sensitivity-label-to-a-new-team"></a>Applicare un'etichetta di riservatezza a un nuovo team
 
 Gli utenti possono selezionare le etichette di riservatezza quando creano nuovi team in Microsoft Teams. Quando selezionano l'etichetta dall'elenco a discesa **Riservatezza**, l'impostazione della privacy può cambiare in modo da riflettere la configurazione dell'etichetta. In base alle impostazioni di accesso degli utenti esterni selezionate per l'etichetta, gli utenti possono o non possano aggiungere al team persone esterne all'organizzazione.
 
@@ -157,13 +176,13 @@ Dopo la creazione del team, l'etichetta di riservatezza compare nell'angolo in a
 
 Il servizio applica automaticamente la stessa etichetta di riservatezza al gruppo di Microsoft 365 e al sito del team di SharePoint connesso.
 
-## <a name="apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web"></a>Applicare un'etichetta di riservatezza a un nuovo gruppo in Outlook sul Web
+### <a name="apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web"></a>Applicare un'etichetta di riservatezza a un nuovo gruppo in Outlook sul Web
 
 In Outlook sul Web, quando si crea un nuovo gruppo è possibile selezionare o modificare l'opzione **Riservatezza** per le etichette pubblicate:
 
 ![Creazione di un gruppo e selezione di un'opzione in Riservatezza](../media/sensitivity-label-new-group.png)
 
-## <a name="apply-a-sensitivity-label-to-a-new-site"></a>Applicare un'etichetta di riservatezza a un nuovo sito
+### <a name="apply-a-sensitivity-label-to-a-new-site"></a>Applicare un'etichetta di riservatezza a un nuovo sito
 
 Gli amministratori e gli utenti finali possono selezionare le etichette di riservatezza quando [creano siti di comunicazione e siti del team moderni](/sharepoint/create-site-collection) ed espandere le **Impostazioni avanzate**:
 
@@ -175,90 +194,89 @@ Quando l'etichetta viene applicata e gli utenti visitano il sito, vedono il nome
 
 ![Sito a cui è applicata un'etichetta di riservatezza](../media/sensitivity-label-site.png)
 
-## <a name="view-sensitivity-labels-in-the-sharepoint-admin-center"></a>Visualizzare le etichette di riservatezza nell'interfaccia di amministrazione di SharePoint
+### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Usare PowerShell per applicare un'etichetta di riservatezza a più siti
 
-Per visualizzare le etichette di riservatezza applicate, usare la pagina **Siti attivi** nella nuova interfaccia di amministrazione di SharePoint. Potrebbe essere necessario aggiungere prima la colonna **Riservatezza**:
+È possibile usare il cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) e [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) con il parametro *SensitivityLabel* dall'attuale SharePoint Online Management Shell per applicare un'etichetta di riservatezza a molti siti. I siti possono essere una raccolta siti di SharePoint o un sito di OneDrive.
 
-![Colonna Riservatezza nella pagina Siti attivi](../media/manage-site-sensitivity-labels.png)
+Verificare di avere la versione 16.0.19418.12000 o successiva di SharePoint Online Management Shell.
 
-[Altre informazioni sulla gestione dei siti nella nuova interfaccia di amministrazione di SharePoint](/sharepoint/manage-sites-in-new-admin-center).
+1. Aprire una sessione di PowerShell con l'opzione **Esegui come amministratore**.
 
-## <a name="change-site-and-group-settings-for-a-label"></a>Modificare le impostazioni a livello di sito e gruppo
-
-Ogni volta che si apporta una modifica alle impostazioni di sito e gruppo per un'etichetta, è necessario eseguire i comandi di PowerShell seguenti in modo che i team, i siti e i gruppi possano usare le nuove impostazioni. Come procedura consigliata, non modificare le impostazioni di sito e gruppo per un'etichetta dopo aver applicato l'etichetta di riservatezza a più team, gruppi o siti.
-
-1. Prima di tutto, [connettersi a PowerShell in Centro sicurezza e conformità di Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
-    
-    Ad esempio, in una sessione di PowerShell eseguita come amministratore, accedere con un account di amministratore globale:
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
-
-2. Ottenere l'elenco delle etichette di riservatezza e dei GUID corrispondenti usando il cmdlet [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps):
+2. Se non si conosce il GUID dell'etichetta: [connettersi a PowerShell per Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) e ottenere l'elenco delle etichette di riservatezza e i relativi GUID.
     
     ```powershell
     Get-Label |ft Name, Guid
     ```
 
-3. Prendere nota del GUID dell'etichetta o delle etichette modificate.
-
-4. Ora [connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
-    
-    Ad esempio:
+3. Ora [connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) e archiviare il GUID di etichetta come una variabile. Ad esempio: 
     
     ```powershell
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session
+    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
     ```
-    
-5. Eseguire il cmdlet [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/get-unifiedgroup?view=exchange-ps), specificando il GUID dell'etichetta al posto del GUID di esempio "e48058ea-98e8-4940-8db0-ba1310fd955e": 
+
+4. Creare una nuova variabile che identifichi più siti con una stringa di identificazione in comune nell'URL. Ad esempio:
     
     ```powershell
-    $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents" 
     ```
 
-6. Per ogni gruppo, riapplicare l'etichetta di riservatezza specificando il GUID dell'etichetta al posto del GUID di esempio "e48058ea-98e8-4940-8db0-ba1310fd955e":
+5. Eseguire il comando seguente per applicare l'etichetta a questi siti. Usare gli esempi riportati:
     
     ```powershell
-    foreach ($g in $groups)
-    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    $sites | ForEach-Object {Set-SpoTenant $_.url -SensitivityLabel $Id}
     ```
 
-## <a name="support-for-the-sensitivity-labels"></a>Supporto per le etichette di riservatezza
+Per applicare etichette diverse a siti diversi, ripetere il comando seguente per ogni sito: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
-È possibile usare le etichette di riservatezza configurate per le impostazioni del sito e del gruppo con le app e i servizi seguenti:
+## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Visualizzare e gestire le etichette di riservatezza nell'interfaccia di amministrazione di SharePoint
 
-- SharePoint Online
-- Teams
-- Outlook sul Web
-- Interfaccia di amministrazione di SharePoint
-- Interfaccia di amministrazione di Azure AD
+Per visualizzare, ordinare e cercare le etichette di riservatezza applicate, usare la pagina **Siti attivi** nella nuova interfaccia di amministrazione di SharePoint. Potrebbe essere necessario aggiungere prima la colonna **Riservatezza**:
 
-Non risulta invece possibile utilizzare le etichette di riservatezza configurate per le impostazioni del sito e del gruppo con le app e i servizi seguenti:
+![Colonna Riservatezza nella pagina Siti attivi](../media/manage-site-sensitivity-labels.png)
 
-- Outlook per Mac
-- Outlook Mobile
-- Outlook desktop per Windows
-- Forms
-- Dynamics 365
-- Yammer
-- Stream
-- Planner
-- Project
-- PowerBI
-- Interfaccia di amministrazione di Teams
-- Interfaccia di amministrazione di Microsoft 365
-- Interfaccia di amministrazione di Exchange
+Per altre informazioni sulla gestione dei siti dalla pagina Siti attivi, compresa l'informazione su come aggiungere una colonna, vedere [Gestire i siti nella nuova interfaccia di amministrazione di SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 
+È anche possibile modificare e applicare un'etichetta da questa pagina:
+
+1. Selezionare il nome del sito per aprire il riquadro dei dettagli.
+
+2. Selezionare la scheda **Criteri**, quindi **Modifica** per l'impostazione **Riservatezza**.
+
+3. Nel riquadro **Modificare l'impostazione di riservatezza** selezionare l'etichetta di riservatezza da applicare al sito, quindi selezionare **Salva**.
+
+## <a name="support-for-sensitivity-labels"></a>Supporto per etichette di riservatezza
+
+Le app e i servizi seguenti supportano le etichette di riservatezza configurate per le impostazioni di sito e gruppo:
+
+- Interfacce di amministrazione:
+    - Interfaccia di amministrazione di SharePoint
+    - Portale di Azure Active Directory
+    - Centro conformità Microsoft 365, Centro sicurezza Microsoft 365, Centro sicurezza e conformità di Office 365
+
+- App e servizi utente:
+    - SharePoint
+    - Teams
+    - Outlook sul Web e per Windows, MacOS, iOS e Android
+    - Forms
+    - Stream
+
+Le app e i servizi seguenti attualmente non supportano le etichette di riservatezza configurate per le impostazioni di sito e gruppo:
+
+- Interfacce di amministrazione:
+    - Interfaccia di amministrazione di Microsoft 365
+    - Interfaccia di amministrazione di Teams
+    - Interfaccia di amministrazione di Exchange
+
+- App e servizi utente:
+    - Dynamics 365
+    - Yammer
+    - Planner
+    - Project
+    - PowerBI
 
 ## <a name="classic-azure-ad-group-classification"></a>Classificazione dei gruppi di Azure AD classica
 
-Quando si abilita questa anteprima, Microsoft 365 non supporta più le vecchie classificazioni per i nuovi gruppi di Microsoft 365 e siti di SharePoint. Tuttavia, i gruppi e i siti esistenti continuano a visualizzare i vecchi valori di classificazione, a meno che non vengano convertiti in modo da usa le etichette di riservatezza.
+Dopo aver abilitato le etichette di riservatezza per i contenitori, Microsoft 365 non supporta più le vecchie classificazioni per i nuovi gruppi di Microsoft 365 e siti di SharePoint. Tuttavia, i gruppi e i siti esistenti che supportano le etichette di riservatezza continuano a visualizzare i vecchi valori di classificazione, finché non vengono convertiti per usare le etichette di riservatezza.
 
 Come esempio della classificazione dei gruppi precedente per SharePoint, vedere [Classificazione dei siti "moderni" di SharePoint](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
@@ -281,6 +299,8 @@ In seguito:
 2. Rimuovere le vecchie classificazioni dai gruppi e siti esistenti.
 
 Nonostante non si possa impedire agli utenti di creare nuovi gruppi in app e servizi che non supportano ancora le etichette di riservatezza, è tuttavia possibile eseguire uno script di PowerShell ricorrente per cercare nuovi gruppi che gli utenti abbiano creato con le vecchie classificazioni, per poi convertirli all'uso delle etichette di riservatezza. 
+
+Per facilitare la gestione della coesistenza di etichette di riservatezza e classificazioni di Azure AD per siti e gruppi, vedere [Etichette di riservatezza e classificazione di Azure Active Directory per gruppi di Microsoft 365](migrate-aad-classification-sensitivity-labels.md).
 
 #### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>Usare PowerShell per convertire le classificazioni per i gruppi di Microsoft 365 in etichette di riservatezza
 
@@ -334,7 +354,7 @@ Se qualcuno carica un documento in un sito protetto con un'etichetta di riservat
 
 Anche se l'azione non è bloccata, viene controllata e genera automaticamente un messaggio di posta elettronica per la persona che ha caricato il documento e l'amministratore del sito. Di conseguenza, sia l'utente che l'amministratore possono identificare quali documenti abbiano questo disallineamento di priorità dell'etichetta e, se necessario, intervenire. Ad esempio, è possibile spostare o eliminare dal sito il documento caricato. 
 
-Non costituirebbe alcun problema di sicurezza se il documento recasse un'etichetta di riservatezza con priorità inferiore rispetto a quella applicata al sito. Ad esempio, un documento con etichetta **Generale** viene caricato in un sito con etichetta **Riservato**. In questo scenario non viene generato alcun evento di controllo o messaggio di posta elettronica.
+Non costituirebbe alcun problema di sicurezza se il documento recasse un'etichetta di riservatezza con priorità inferiore rispetto a quella applicata al sito. Ad esempio, un documento con etichetta **Generale** viene caricato in un sito con etichetta **Riservato**. In questo scenario non vengono generati eventi di controllo o messaggi di posta elettronica.
 
 Per eseguire una ricerca di tale evento nel log di controllo, cercare **È stata rilevata una mancata corrispondenza della riservatezza del documento** nella categoria **Attività su file e pagine**. 
 
@@ -344,19 +364,18 @@ Vengono controllate anche le attività di aggiunta o rimozione di un'etichetta d
 
 Tutti questi eventi di controllo sono disponibili nella categoria [Attività etichetta di riservatezza](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities). Per istruzioni sulla ricerca nel log di controllo, vedere [Eseguire ricerche nel log di controllo nel Centro sicurezza e conformità](search-the-audit-log-in-security-and-compliance.md).
 
-## <a name="troubleshoot-sensitivity-label-deployment"></a>Risolvere i problemi di distribuzione delle etichette di riservatezza
+## <a name="how-to-disable-sensitivity-labels-for-containers"></a>Come disabilitare le etichette di riservatezza per i contenitori
 
-Problemi con le etichette di riservatezza per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint? Verificare quanto segue:
+È possibile disabilitare le etichette di riservatezza per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint seguendo le stesse istruzioni per [abilitare il supporto per le etichette di riservatezza](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Tuttavia, per disabilitare la funzione, nel passaggio 5 specificare `$setting["EnableMIPLabels"] = "False"`.
 
-### <a name="labels-not-visible-after-publishing"></a>Etichette non visibili dopo la pubblicazione
-Se si verificano problemi durante la creazione di un sito o un gruppo di Microsoft 365 dopo aver abilitato queste impostazioni o aver modificato il nome o la descrizione comando di un'etichetta di riservatezza, attendere alcune ore e quindi provare di nuovo a creare il team o il gruppo. Per informazioni, vedere [Pianificare l'implementazione dopo aver creato o modificato un'etichetta di riservatezza](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label).
+Oltre a nascondere la pagina delle **impostazioni di siti e gruppo**, quando si creano o si modificano le etichette di riservatezza, questa azione ripristina la proprietà usata dai contenitori per la configurazione. L'abilitazione di etichette di riservatezza per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint cambia la proprietà usata da **Classificazione**, (usata per la [classificazione del gruppo di Azure AD](#classic-azure-ad-group-classification)) in **Riservatezza**. Quando si disabilitano le etichette di riservatezza per i contenitori, i contenitori ignorano la proprietà Riservatezza e usano nuovamente la proprietà Classificazione.
 
-Se non è ancora possibile vedere la nuova etichetta di riservatezza da SharePoint Online, contattare il [Supporto tecnico Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Ciò significa che tutte le impostazioni delle etichette dei siti e dei gruppi applicate in precedenza ai contenitori non verranno applicate e nei contenitori non verranno più visualizzate le etichette.
 
-### <a name="team-group-or-sharepoint-site-creation-errors"></a>Errori nella creazione di team, gruppi o siti di SharePoint
-Se si verificano errori di creazione durante l'anteprima pubblica, è possibile disattivare le etichette di riservatezza per Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint seguendo le stesse istruzioni per [Abilitare il supporto per le etichette di riservatezza](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Tuttavia, per disabilitare l'anteprima, disabilitare la funzionalità usando `$setting["EnableMIPLabels"] = "False"` al passaggio 5.
+Se a tali contenitori sono applicati valori di classificazione di Azure AD, i contenitori ripristinano nuovamente l'uso delle classificazioni. Tenere presente che in qualsiasi nuovo sito o gruppo creato dopo l'abilitazione della funzione non verrà visualizzata alcuna etichetta o classificazione. A questi contenitori e a tutti i nuovi contenitori sarà possibile, a questo punto, applicare valori di classificazione. Per altre informazioni, vedere [Classificazione dei siti "moderni" di SharePoint](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification) e [Creare classificazioni per i gruppi di Office nell'organizzazione](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
 Per informazioni su come [usare le etichette di riservatezza con Microsoft Teams, Gruppi di Office 365 e i siti di SharePoint Online](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380), consultare la registrazione del webinar e le risposte alle domande.
 
+Il webinar è stato registrato quando la funzione era ancora in anteprima, quindi si potrebbero notare alcune differenze nell'interfaccia utente. Tuttavia, le informazioni per questa funzione e tutte le nuove funzionalità documentate in questa pagina sono esatte.

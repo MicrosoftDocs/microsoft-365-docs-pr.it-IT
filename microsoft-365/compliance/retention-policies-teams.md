@@ -17,12 +17,11 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: 869f457ddb64e5d828dcb5f1244ba779f889e8c9
-ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
-ms.translationtype: HT
+ms.openlocfilehash: ead16cf4d89b5dbea2fee4a6669f537a0338984e
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861163"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049850"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>Informazioni sui criteri di conservazione per Microsoft Teams
 
@@ -54,7 +53,7 @@ Se il criterio di conservazione è Conserva ed elimina:
 > [!NOTE]
 > I messaggi nella cartella SubstrateHolds sono disponibili per la ricerca tramite gli strumenti di eDiscovery. Dopo che un messaggio è stato eliminato definitivamente, non verrà restituito in una ricerca di eDiscovery.
 
-Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed elimina:
+Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed Elimina.
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Conserva solo
 
@@ -62,7 +61,7 @@ Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi
 
 2. **Se l'elemento non viene modificato o eliminato** durante il periodo di conservazione: non succede niente prima o dopo il periodo di conservazione. L'elemento rimane nella posizione originale.
 
-#### <a name="content-paths-for-delete-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Elimina solo
+### <a name="content-paths-for-delete-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Elimina solo
 
 1. **Se il messaggio non viene eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il messaggio viene spostato nella cartella SubstrateHolds. 
 
@@ -98,7 +97,6 @@ Quando in una riunione ospitata dall'organizzazione vengono inclusi utenti ester
 
 - Se un utente esterno partecipa usando un account di un'altra organizzazione di Microsoft 365, i criteri di conservazione non possono eliminare i messaggi per l'utente, perché sono archiviati nella sua cassetta postale in un altro tenant. Per la stessa riunione, tuttavia, i criteri di conservazione configurati possono eliminare i messaggi per gli utenti interni dell'organizzazione.
 
-
 ## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l’organizzazione 
 
 Se un utente lascia l’organizzazione e il suo account di Office 365 viene eliminato, i suoi messaggi della chat soggetti alla conservazione vengono archiviati in una cassetta postale inattiva. I messaggi di chat restano sottoposti ai criteri di conservazione applicati all’utente prima della disattivazione della sua cassetta postale, e sono disponibili per la ricerca eDiscovery. Per altre informazioni, vedere [Cassette postali inattive in Exchange Online](inactive-mailboxes-in-office-365.md). 
@@ -109,11 +107,11 @@ Se l’utente ha archiviato dei file in Teams, vedere la sezione [corrispondente
 
 Lavoriamo costantemente all'ottimizzazione della funzionalità di conservazione in Teams. Nel frattempo, ecco alcune limitazioni da tenere presenti:
   
-- **Teams richiede criteri di conservazione specifici**. Quando si creano criteri di conservazione e si attivano i percorsi di Teams, tutti gli altri percorsi vengono disattivati. I criteri di conservazione che includono Teams possono includere solo Teams e non altri percorsi. 
-    
-- **Teams non è incluso in un criterio a livello di organizzazione**. Se si crea un criterio a livello di organizzazione, Teams non viene incluso perché richiede criteri di conservazione specifici. 
-    
-- **Teams non supporta la conservazione avanzata**. Quando si crea un criterio di conservazione, se si scelgono le [impostazioni avanzate per identificare il contenuto che soddisfa condizioni specifiche](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), i percorsi di Teams non sono disponibili. Attualmente, la conservazione in Teams si applica a tutto il contenuto di messaggi di chat e canali quando si selezionano tali posizioni. 
+- **Teams richiede criteri di conservazione specifici**. Quando si creano criteri di conservazione e si attivano i percorsi di Teams, tutti gli altri percorsi vengono disattivati. I criteri di conservazione che includono Teams possono includere solo Teams e non altri percorsi.
+
+- **Teams non è incluso in un criterio a livello di organizzazione**. Se si crea un criterio a livello di organizzazione, Teams non viene incluso perché richiede criteri di conservazione specifici.
+
+- **Teams non supporta la conservazione avanzata**. Quando si crea un criterio di conservazione, se si scelgono le [impostazioni avanzate per identificare il contenuto che soddisfa condizioni specifiche](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), i percorsi di Teams non sono disponibili. Attualmente, la conservazione in Teams si applica a tutto il contenuto di messaggi di chat e canali quando si selezionano tali posizioni.
 
 - **I messaggi di Teams nei canali privati non vengono inclusi quando si configurano criteri di conservazione per i messaggi dei canali di Teams**. I messaggi provenienti da canali privati sono invece inclusi per gli utenti come chat di gruppo scegliendo l'opzione **Chat di Teams**. 
     
@@ -124,7 +122,7 @@ Lavoriamo costantemente all'ottimizzazione della funzionalità di conservazione 
 
 - **Problema di visualizzazione non corretta in Outlook**. Se si creano criteri di conservazione per i percorsi di Skype o Teams, uno di questi criteri viene visualizzato come criterio cartella predefinito quando un utente visualizza le proprietà di una cartella della cassetta postale nel client desktop di Outlook. Si tratta di un problema di visualizzazione non corretta in Outlook e di un [problema noto](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Quello che dovrebbe essere visualizzato come criterio cartella predefinito è il criterio di conservazione della cassetta postale applicato alla cartella. Il criterio di conservazione di Skype o Teams non viene applicato alla cassetta postale dell'utente.
 
-- **Problemi di configurazione**: 
+- **Problemi di configurazione**:
     - Quando si seleziona **Scegli i team** per il percorso **Messaggi del canale di Teams**, potrebbero essere visualizzati gruppi di Office 365 che non corrispondono anche a team. Non selezionare questi gruppi.
     
     - Quando si seleziona **Scegli utenti** per la posizione **Chat di Teams**, potrebbero essere visualizzati utenti non della cassetta postale e guest. I criteri di conservazione non sono pensati per questi utenti, quindi non selezionarli.

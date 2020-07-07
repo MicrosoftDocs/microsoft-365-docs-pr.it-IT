@@ -19,12 +19,11 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6287e7c56f79b09a79c75d7e8b8273dbd5569057
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: MT
+ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005891"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048268"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Funzionalità di anteprima di Microsoft Threat Protection
 
@@ -50,12 +49,14 @@ Attiva l'impostazione Anteprima esperienza per essere tra i primi a provare le f
 
 3. Seleziona **funzionalità**  >  **di anteprima attiva le funzionalità di anteprima**. 
 
-3. Selezionare **Salva**.
+3. Seleziona **Salva**.
 
 Quando si vede che è selezionata la casella di controllo attiva le caratteristiche di **Anteprima** , si noterà che è attiva la funzionalità di anteprima. 
 
 ## <a name="preview-features"></a>Funzionalità di anteprima
 Le caratteristiche e i miglioramenti seguenti sono attualmente disponibili in anteprima:
+
+- **[Riferimenti allo schema in-Portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** -informazioni sulle tabelle dello schema disponibili direttamente nel centro sicurezza. Oltre alle descrizioni di tabelle e colonne, questo riferimento fornisce informazioni sui tipi di evento supportati ( `ActionType` valori) e sulle query di esempio.  
 
 - **[Tabelle di identità e app](advanced-hunting-schema-tables.md)** : consente di ottenere visibilità negli eventi di autenticazione, nelle query di Active Directory e nell'attività correlata all'applicazione con le tabelle [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)e [AppFileEvents](advanced-hunting-appfileevents-table.md) nello schema di caccia avanzato.
 

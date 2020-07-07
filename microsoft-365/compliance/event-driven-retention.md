@@ -20,12 +20,11 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: In genere, nell’ambito di una soluzione di gestione dei record, è possibile configurare un’etichetta di conservazione per avviare il periodo di conservazione in base a un evento identificato.
-ms.openlocfilehash: 29cf69930cdd99d3023a65e55e1186990a650e85
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
-ms.translationtype: HT
+ms.openlocfilehash: f2cf60eac1197ed7be3fd8cbbe69e41a37614f86
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900800"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048291"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 
@@ -165,7 +164,7 @@ Infine, scegliere la data in cui si è verificato l'evento; questa data viene ut
 > [!NOTE]
 > Dopo la creazione di un evento, le impostazioni di conservazione vengono applicate al contenuto già etichettato e indicizzato. Se l'etichetta di conservazione viene aggiunta al nuovo contenuto dopo la creazione dell'evento, è necessario creare un nuovo evento con gli stessi dettagli.
 
-L'eliminazione di un evento non annulla le impostazioni di conservazione ora in vigore per il contenuto con etichetta già etichettato. Per fare questo, creare un nuovo evento con gli stessi dettagli, ma lasciare vuota la data. 
+L'eliminazione di un evento non annulla le impostazioni di conservazione attualmente in vigore per il contenuto già etichettato. Per fare questo, creare un nuovo evento con gli stessi dettagli, ma lasciare vuota la data. 
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Usare Ricerca contenuto per trovare tutto il contenuto con un'etichetta o un ID risorsa specifico
 

@@ -15,12 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: MT
+ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854365"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049941"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurare i pilastri Microsoft Threat Protection per l'ambiente lab di valutazione
 
@@ -247,8 +246,9 @@ Accedere a [Microsoft 365 Security Center](https://security.microsoft.com/homepa
 
 Per ulteriori informazioni, vedere [abilitare Microsoft Threat Protection](mtp-enable.md). 
 
-Congratulazioni! L'ambiente di valutazione di Microsoft Threat Protection è appena stato creato. È ora possibile simulare un attacco e vedere in che modo le funzionalità del prodotto Cross rilevano, creano avvisi e rispondono automaticamente a un attacco non file su un endpoint.
+Congratulazioni! L'ambiente di valutazione di Microsoft Threat Protection è appena stato creato. A questo punto, è possibile acquisire familiarità con l'interfaccia utente di Microsoft Threat Protection. Vedere cosa si può imparare e sapere come usare ogni dashboard per le attività quotidiane di sicurezza: [Guida interattiva di Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
 
+Successivamente, è possibile simulare un attacco e vedere in che modo le funzionalità del prodotto incrociato rilevano, creano avvisi e rispondono automaticamente a un attacco non file su un endpoint.
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Generare un avviso di test](generate-test-alert.md).

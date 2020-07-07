@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07b2c2301784f378075e3c9803cebc5bcabf9cb0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 67fa551fd7c2add815d5698a22b5eb3ae607f716
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899268"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048280"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -31,7 +30,7 @@ ms.locfileid: "44899268"
 
 
 
-La `DeviceLogonEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sugli accessi degli utenti e altri eventi di autenticazione. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La `DeviceLogonEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sugli accessi degli utenti e altri eventi di autenticazione nei dispositivi. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 

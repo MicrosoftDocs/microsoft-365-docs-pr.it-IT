@@ -17,12 +17,11 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: d68ba3b4ee1c0de8fa5262c3b59e8f53ebc2d3d2
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
-ms.translationtype: HT
+ms.openlocfilehash: 1b22619b200cd0cdcccfdc9be0d52b0eaa25f303
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844658"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936373"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -85,7 +84,7 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 |Crittografare documenti e messaggi di posta elettronica con etichette di riservatezza e limitare gli utenti autorizzati ad accedervi e il relativo uso |[Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md)|
 |Abilitare le etichette di riservatezza per Office sul Web, con supporto per creazione condivisa, eDiscovery, prevenzione della perdita dei dati e ricerca, anche quando i documenti sono crittografati | [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Applicare automaticamente etichette di riservatezza ai documenti e ai messaggi di posta elettronica | [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)|
-|Usare le etichette di riservatezza per proteggere il contenuto in Teams e SharePoint |[Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md)|
+|Usare le etichette di riservatezza per proteggere il contenuto in Teams e SharePoint |[Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](sensitivity-labels-teams-groups-sites.md)|
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi Azure Information Protection per classificare e proteggere automaticamente i file](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati nel cloud|[Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Applicare e visualizzare le etichette di riservatezza in Power BI e proteggere i dati durante l'esportazione|[Protezione dei dati in Power BI ](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|

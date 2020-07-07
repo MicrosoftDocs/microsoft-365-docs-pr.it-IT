@@ -17,19 +17,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 17e12e9095219b7ad7923f7b5664946fff6ce724
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 2116d8f6f1006f5acf9d468006fa07a04e13087b
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899376"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046029"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-La `IdentityLogonEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sulle attività di autenticazione registrate da Azure Active Directory e altre app e servizi cloud di Microsoft. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La `IdentityLogonEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sulle attività di autenticazione effettuate tramite Active Directory locale acquisito da Azure ATP e le attività di autenticazione relative ai servizi Microsoft Online acquisiti da Microsoft cloud app Security. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 

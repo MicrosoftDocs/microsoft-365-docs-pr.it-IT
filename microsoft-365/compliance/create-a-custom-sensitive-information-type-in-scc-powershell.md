@@ -15,12 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come creare e importare un tipo di informazioni riservate personalizzato per DLP nel Centro sicurezza e conformità.
-ms.openlocfilehash: 4f07b89b2377eea4d8a17cea7a85dea3839ff249
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: HT
+ms.openlocfilehash: 25b2d972214410df96d3dedbe204b75b6cd0b1d9
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899137"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039390"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità
 
@@ -368,42 +367,42 @@ Per caricare il pacchetto di regole, eseguire i passaggi seguenti:
     
 3. Utilizzare la sintassi seguente:
 
-```powershell
-New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte) -ReadCount 0
-```
+   ```powershell
+   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte -ReadCount 0)
+   ```
 
-    This example uploads the Unicode XML file named MyNewRulePack.xml from C:\My Documents.
+   In questo esempio, viene caricato il file XML Unicode denominato MyNewRulePack.xml da C:\Documenti.
 
-```powershell
-New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte) -ReadCount 0
-```
+   ```powershell
+   New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte -ReadCount 0)
+   ```
 
-    For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
+   Per informazioni dettagliate su sintassi e parametri, vedere [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
 
-> [!NOTE]
-> Il limite per le raccolte di tipi di informazioni riservate personalizzate è pari a 10.
+   > [!NOTE]
+   > Il limite per le raccolte di tipi di informazioni riservate personalizzate è pari a 10.
 
 4. Per verificare che sia stato creato correttamente un nuovo tipo di informazioni riservate, eseguire uno dei passaggi seguenti:
 
-  - Eseguire il cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) per verificare che sia elencato il nuovo pacchetto di regole:
+   - Eseguire il cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) per verificare che sia elencato il nuovo pacchetto di regole:
 
-```powershell
-Get-DlpSensitiveInformationTypeRulePackage
-``` 
+     ```powershell
+     Get-DlpSensitiveInformationTypeRulePackage
+     ``` 
 
-  - Eseguire il cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) per verificare che sia elencato il tipo di informazioni riservate:
+   - Eseguire il cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) per verificare che sia elencato il tipo di informazioni riservate:
 
-```powershell
-Get-DlpSensitiveInformationType
-``` 
+     ```powershell
+     Get-DlpSensitiveInformationType
+     ``` 
 
-    For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
+     Per i tipi personalizzati di informazioni sensibili, il valore proprietà Publisher sarà diverso da Microsoft Corporation.
 
-  - Sostituire \<Name\> con il valore nome del tipo di informazioni riservate (ad esempio, l'ID del dipendente) ed eseguire il cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps):
+   - Sostituire \<Name\> con il valore nome del tipo di informazioni riservate (ad esempio, l'ID del dipendente) ed eseguire il cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps):
 
-```powershell
-Get-DlpSensitiveInformationType -Identity "<Name>"
-```
+     ```powershell
+     Get-DlpSensitiveInformationType -Identity "<Name>"
+     ```
     
 ## <a name="potential-validation-issues-to-be-aware-of"></a>Possibili problemi di convalida da tenere presenti
 
@@ -411,27 +410,27 @@ When you upload your rule package XML file, the system validates the XML and che
   
 - Non può iniziare o terminare con l'alternatore "|", che associa qualsiasi elemento in quanto viene considerato come una corrispondenza vuota.
     
-    Ad esempio, "|a" o "b |" non superano la convalida.
+  Ad esempio, "|a" o "b |" non superano la convalida.
     
 - Non può iniziare o terminare con un criterio ".{0, m}", che non ha alcuno scopo funzionale e influisce solo negativamente sulle prestazioni.
     
-    Ad esempio, ".{0,50}ASDF" o "ASDF.{0,50}" non supereranno la convalida.
+  Ad esempio, ".{0,50}ASDF" o "ASDF.{0,50}" non supereranno la convalida.
     
 - Non può contenere ".{0,m}" o ".{1,m}" nei gruppi e non può contenere ".\*" o ".+" nei gruppi.
     
-    Ad esempio, "(.{0,50000})" non supererà la convalida.
+  Ad esempio, "(.{0,50000})" non supererà la convalida.
     
 - Non può contenere alcun carattere con i ripetitori "{0, m}" o "{1, m}" nei gruppi.
     
-    Ad esempio, "(a\*)" non supererà la convalida.
+  Ad esempio, "(a\*)" non supererà la convalida.
     
 - Non può iniziare o terminare con ".{1,m}"; utilizzare solo "."
     
-    Ad esempio, ".{1,m}asdf" non supererà la convalida; utilizzare solo ".asdf".
+  Ad esempio, ".{1,m}asdf" non supererà la convalida; utilizzare solo ".asdf".
     
 - Non può contenere un ripetitore non delimitato (ad esempio "\*" o "+") in un gruppo.
     
-    Ad esempio, "(xx)\*" e "(xx)+" non supereranno la convalida.
+  Ad esempio, "(xx)\*" e "(xx)+" non supereranno la convalida.
     
 Se un tipo di informazioni riservate personalizzato contiene un problema che può influire sulle prestazioni, non verrà caricato e potrebbe essere visualizzato uno di questi messaggi di errore:
   
@@ -462,41 +461,41 @@ In PowerShell per Centro sicurezza e conformità, esistono due metodi per elimin
 
 2. Per rimuovere un pacchetto di regole personalizzato, usare il cmdlet [Remove -DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps):
 
-```powershell
-Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
-```
+   ```powershell
+   Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
+   ```
 
-    You can use the Name value (for any language) or the `RulePack id` (GUID) value to identify the rule package.
+   È possibile utilizzare il valore Nome (per qualsiasi lingua) o il valore `RulePack id` (GUID) per identificare il pacchetto di regole.
 
-    This example removes the rule package named "Employee ID Custom Rule Pack".
+   In questo esempio viene rimosso il pacchetto di regole denominato "Pacchetto di regole personalizzate ID dipendente".
 
-```powershell
-Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
-```
+   ```powershell
+   Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
+   ```
 
-    For detailed syntax and parameter information, see [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage).
+   Per informazioni dettagliate su sintassi e parametri, vedere [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage).
 
 3. Per verificare che sia stato rimosso correttamente un tipo di informazioni riservate personalizzato, eseguire uno dei passaggi seguenti:
 
-  - Eseguire il cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) per verificare che il nuovo pacchetto di regole non sia più elencato:
+   - Eseguire il cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) per verificare che il nuovo pacchetto di regole non sia più elencato:
 
-```powershell
-Get-DlpSensitiveInformationTypeRulePackage
-```
+     ```powershell
+     Get-DlpSensitiveInformationTypeRulePackage
+     ```
 
-- Eseguire il cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) per verificare che i tipi di informazioni riservate nel pacchetto di regole rimosse non siano più elencati:
+   - Eseguire il cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) per verificare che i tipi di informazioni riservate nel pacchetto di regole rimosse non siano più elencati:
 
-```powershell
-Get-DlpSensitiveInformationType
-```
+     ```powershell
+     Get-DlpSensitiveInformationType
+     ```
 
-Per i tipi di informazioni riservate personalizzati, il valore proprietà Publisher sarà diverso da Microsoft Corporation.
+     Per i tipi di informazioni riservate personalizzati, il valore proprietà Publisher sarà diverso da Microsoft Corporation.
 
-- Sostituire \<Name\> con il valore nome del tipo di informazioni riservate (ad esempio, l'ID del dipendente) ed eseguire il cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) per verificare che il tipo di informazioni riservate non sia più elencato:
+   - Sostituire \<Name\> con il valore nome del tipo di informazioni riservate (ad esempio, l'ID del dipendente) ed eseguire il cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) per verificare che il tipo di informazioni riservate non sia più elencato:
 
-```powershell
-Get-DlpSensitiveInformationType -Identity "<Name>"
-```
+     ```powershell
+     Get-DlpSensitiveInformationType -Identity "<Name>"
+     ```
 
 ## <a name="modify-a-custom-sensitive-information-type"></a>Modificare un tipo di informazioni riservate personalizzato
 
@@ -517,36 +516,36 @@ Per connettersi a PowerShell per Centro sicurezza e conformità, vedere [Connett
 
 1. Se non lo si conosce già, eseguire il cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) per trovare il nome del pacchetto di regole personalizzato:
 
-```powershell
-Get-DlpSensitiveInformationTypeRulePackage
-```
+   ```powershell
+   Get-DlpSensitiveInformationTypeRulePackage
+   ```
 
-> [!NOTE]
-> Il pacchetto di regole predefinite che contiene i tipi di informazioni riservate predefinito è denominato Pacchetto di regole di Microsoft. Il pacchetto di regole che contiene i tipi di informazioni riservate personalizzato creato nell'interfaccia utente del Centro sicurezza e conformità è denominato Microsoft.SCCManaged.CustomRulePack.
+   > [!NOTE]
+   > Il pacchetto di regole predefinite che contiene i tipi di informazioni riservate predefinito è denominato Pacchetto di regole di Microsoft. Il pacchetto di regole che contiene i tipi di informazioni riservate personalizzato creato nell'interfaccia utente del Centro sicurezza e conformità è denominato Microsoft.SCCManaged.CustomRulePack.
 
 2. Usare il cmdlet [Get- DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) per archiviare il pacchetto di regole personalizzato in una variabile:
 
-```powershell
-$rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
-```
+   ```powershell
+   $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
+   ```
 
    Ad esempio, se il nome del pacchetto di regole è "Pacchetto di regole personalizzate ID dipendente", eseguire il cmdlet seguente:
 
-```powershell
-$rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
-```
+   ```powershell
+   $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
+   ```
 
 3. Usare il cmdlet [Set-Content](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/set-content?view=powershell-6) per esportare il pacchetto di regole personalizzato in un file XML:
 
-```powershell
-Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
-```
+   ```powershell
+   Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
+   ```
 
-In questo esempio, il pacchetto di regole viene esportato in un file denominato ExportedRulePackage.xml nella cartella C:\Documenti.
+   In questo esempio, il pacchetto di regole viene esportato in un file denominato ExportedRulePackage.xml nella cartella C:\Documenti.
 
-```powershell
-Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
-```
+   ```powershell
+   Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
+   ```
 
 #### <a name="step-2-modify-the-sensitive-information-type-in-the-exported-xml-file"></a>Passaggio 2: modificare il tipo di informazioni riservate nel file XML esportato
 
@@ -907,7 +906,6 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Set-DlpSensitiveIn
     </xs:simpleContent>
   </xs:complexType>
 </xs:schema>
-
 ```
 
 ## <a name="more-information"></a>Ulteriori informazioni

@@ -115,6 +115,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Conoscere il linguaggio delle query
                   href: mtp/advanced-hunting-query-language.md
+                - name: Applicare le procedure consigliate per le query
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Usare i risultati delle query
                   href: mtp/advanced-hunting-query-results.md
                 - name: Utilizzare le query condivise
@@ -179,8 +181,6 @@
                   items:
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: Applicare le procedure consigliate per le query
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: Rilevamenti personalizzati
                   items:
                     - name: Panoramica dei rilevamenti personalizzati

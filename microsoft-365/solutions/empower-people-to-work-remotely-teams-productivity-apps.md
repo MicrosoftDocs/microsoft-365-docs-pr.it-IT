@@ -1,5 +1,5 @@
 ---
-title: Passaggio 4. Distribuire le app e i servizi per la produttività dei lavoratori remoti
+title: Passaggio 5. Distribuire le app e i servizi per la produttività dei lavoratori remoti
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,13 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Consentire agli utenti di essere produttivi con Teams, Exchange, SharePoint e altri servizi di Microsoft 365.
-ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
-ms.translationtype: HT
+ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560448"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005963"
 ---
-# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Passaggio 4. Distribuire le app e i servizi per la produttività dei lavoratori remoti
+# <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Passaggio 5. Distribuire le app e i servizi per la produttività dei lavoratori remoti
 
 Per essere produttivi, le persone devono comunicare e collaborare tra loro. Devono partecipare a riunioni, chattare tramite voce e testo, creare nuovi contenuti e condividere informazioni e file, scambiare messaggi di posta elettronica e gestire calendari e attività. Microsoft 365 include servizi basati sul cloud per tutte queste funzionalità principali:
 
@@ -90,9 +89,9 @@ Vedere [questo articolo](https://docs.microsoft.com/deployoffice/deployment-guid
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>Risorse per la formazione degli utenti su servizi e app di produttività
 
-- [Formare gli utenti su Office e Office 365](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
+- [Formare gli utenti su Office e Microsoft 365](https://support.microsoft.com/office/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [Usare Office per il Web](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Proseguire con il [passaggio 5](empower-people-to-work-remotely-communication-venues.md) per creare altri spazi di comunicazione per le esigenze dei lavoratori remoti.
+Proseguire con il [passaggio 6](empower-people-to-work-remotely-train-monitor-usage.md) per formare gli utenti e monitorare i loro risultati.

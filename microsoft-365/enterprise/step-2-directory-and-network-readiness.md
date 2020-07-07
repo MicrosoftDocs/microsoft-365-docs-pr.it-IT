@@ -15,16 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di directory e di rete nell'ambiente.
-ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
-ms.translationtype: HT
+ms.openlocfilehash: 78087b7e0c1cb7031954d3a9ac4188b59879db20
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011652"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679015"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Passaggio 2: conformità di directory e rete
 
-Assicurarsi che la directory e la rete siano configurate e conformi per supportare il passaggio a Windows 10 e Microsoft 365 Apps for enterprise. Gli utenti dovranno disporre dei servizi di Azure Active Directory sul posto e la rete dovrà avere la capacità di gestire il traffico normale e lo spostamento di quantità di dati potenzialmente grandi durante l'aggiornano del PC e il ripristino di file, impostazioni e applicazioni.
+Ensure your directory and the network are configured and ready to support to your shift to Windows 10 and Microsoft 365 Apps for enterprise. This will require Azure Active Directory Services to be in place for users, and your network must have the capacity to handle both its regular traffic and the movement of potentially vast amounts of data as PCs are upgraded, and users’ files, settings and applications are restored.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
@@ -32,7 +31,7 @@ Assicurarsi che la directory e la rete siano configurate e conformi per supporta
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>Passaggio 2: conformità directory e rete</strong></p>
-<p>I servizi connessi tramite cloud in Microsoft 365 Apps for enterprise e le nuove opzioni di distribuzione come Windows Autopilot richiedono Azure Active Directory. Anche la rete e la connettività sono aree importanti da pianificare quando si trasferiscono immagini, app, driver e file correlati nei PC. Ottenere informazioni su come i nuovi strumenti e opzioni di distribuzione riducono e ottimizzano il traffico di rete.</p></td>
+<p>Cloud connected services in Microsoft 365 Apps for enterprise and new deployment options like Windows Autopilot require Azure Active Directory. Your network and connectivity are also important areas to plan when moving Windows images, apps, drivers and related files to your PCs. Learn how new tools and deployment options reduce and streamline network traffic.</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -41,9 +40,9 @@ Assicurarsi che la directory e la rete siano configurate e conformi per supporta
 >La conformità di directory e rete rappresenta il secondo passaggio del processo di distribuzione consigliato, incentrato su Azure Active Directory e l'ottimizzazione della rete. Per vedere il processo di distribuzione desktop completo, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
 >
 
-La conformità di directory e rete è fondamentale per garantire una distribuzione desktop e del sistema operativo agevole. Analogamente a qualsiasi distribuzione automatizzata, è importante che i file condivisi possano essere raggiunti, inoltre, la rete dovrà essere in grado di supportare il trasferimento di file molto grandi, probabilmente per centinaia o migliaia di PC contemporaneamente.
+Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
 
-Con il passaggio a Windows 10 e Microsoft 365 Apps for enterprise, sarà, inoltre, necessario assicurarsi che l'identità basata su cloud sia impostata con Azure Active Directory. Ciò è fondamentale non solo per attivare Microsoft 365 Apps for enterprise, ma consente anche di utilizzare soluzioni moderne di provisioning come Windows Autopilot.
+With your shift to Windows 10 and Microsoft 365 Apps for enterprise you also now need to make sure that cloud-based identity is set up with Azure Active Directory. This is key not only to activating Microsoft 365 Apps for enterprise, it also allows you to take advantage of modern provisioning solutions like Windows Autopilot.
 
 In questo articolo è possibile esplorare gli strumenti e le opzioni per preparare i servizi directory, nonché le autorizzazioni per dispositivo e utente, per Windows 10 e Microsoft 365 Apps for enterprise.
 
@@ -69,21 +68,21 @@ Per le immagini di Windows senza alcuna personalizzazione è consigliabile in ge
 
 È necessario pianificare la larghezza di banda di rete per gli aggiornamenti software. Windows 10 e Microsoft 365 Apps for enterprise si avvalgono di un nuovo modello di servizio, che offre aggiornamenti mensili o semestrali. Se non si conosce il modello, altre informazioni su come funziona sono disponibili [qui](https://docs.microsoft.com/windows/deployment/update/waas-overview).
 
-Il nuovo modello di servizio include aggiornamenti delle funzionalità per Windows due volte l'anno, aggiornamenti canale di Office semestrali e aggiornamenti qualitativi mensili. Gli aggiornamenti delle funzionalità hanno in genere dimensioni da 2 a 4 GB e gli aggiornamenti canale di Office semestrali 300-400 MB per ogni aggiornamento. Infine ci sono gli aggiornamenti qualitativi mensili, che possono variare da poche centinaia di megabyte a più di un gigabyte. Ciò dipende dal fatto che gli aggiornamenti mensili sono cumulativi, pertanto la loro dimensione aumenta per la durata di servizio per ogni versione di Windows 10. Nonostante ciò, sono disponibili strumenti che aiutano a ridurre la quantità di dati di rete per implementare gli aggiornamenti. Questi verranno illustrati in dettaglio più avanti.
+The new servicing model includes Feature Updates for Windows twice a year, Office Semi-Annual Enterprise Channel Updates, and monthly Quality Updates. Feature Updates are typically 2 – 4GB in size, and Office Semi-Annual Enterprise Channel updates are 300 – 400 MB per update. Then there are the monthly Quality Updates. These may range from a few hundred megabytes to over a gigabyte. This is because monthly updates are cumulative, so these increase in size over the servicing lifetime for each Windows 10 version. That said, there are tools that can help reduce the amount of data that must pass over the network to implement updates. We will cover this in more detail below.
 
 ### <a name="user-personalization"></a>Personalizzazione utente
 
-Il terzo componente da considerare è la personalizzazione. In questo caso è necessario pianificare larghezza di banda di rete per consentire il ripristino di file utente, impostazioni e applicazioni nell'ambito del processo di aggiornamento o sostituzione del PC. Questi elementi, insieme, superano spesso i 20 GB per PC e per alcuni utenti si possono superare i 100 GB.
+The third component to consider is user personalization. Here you need to plan network bandwidth to accommodate the restoring of user files, their settings, and their applications as part of the PC refresh or replacement process. Together, these items often exceed 20 GB per PC; for some users these may exceed 100 GB.
 
 ## <a name="limiting-bandwidth"></a>Limitazione della larghezza di banda
 
-Un modo per limitare l'impatto sulla rete del traffico relativo alla distribuzione consiste nel limitare l'impostazione di BITS (Servizio trasferimento intelligente in background) sui client. BITS utilizza una velocità di Bit adattivo (ABR) per modificare la larghezza di banda disponibile per la distribuzione; può essere configurato nel client tramite criteri di gruppo.
+One way to limit the impact of deployment-related traffic on the network is to throttle it using the BITS (Background Intelligent Transfer Service) setting on clients. BITS uses an Adaptive Bit Rate (ABR) to adjust bandwidth available for deployment purposes; it can be configured on clients using Group Policy.
 
 [Informazioni sui BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
 Se si usa Microsoft Endpoint Configuration Manager (Current Branch), è possibile configurare i punti di distribuzione abilitati a BITS o attivare multicast con WDS.
 
-Limitazione del traffico specifico indica che il normale traffico di rete è meno interessato dal download di aggiornamenti e applicazioni per il PC. Tuttavia, ricavare una determinata percentuale della larghezza di banda per queste attività consente di evitare l'impatto della distribuzione di Windows o Office sulla produttività e di assicurare la continuità di esecuzione dei processi in base alle esigenze; può peggiorare i tempi di inattività legati alla distribuzione con inaccessibilità al PC da parte degli utenti durante la distribuzione.
+Throttling specific traffic means that normal network traffic is less impacted by PCs downloading updates and applications. But carving out a certain percentage of bandwidth for these tasks helps ensure productivity isn’t impacted by Windows or Office deployment and processes continue to run as needed, it can worsen deployment-related downtime, with users locked out of their PCs while a deployment runs.
 
 Fortunatamente, sono disponibili nuovi strumenti che facilitano la gestione dell'impatto sulla rete di una distribuzione desktop su vasta scala, tra cui LEDBAT per ottimizzare l'utilizzo della larghezza di banda disponibile e opzioni peer-to-peer (P2P) per spostare la distribuzione del traffico dal centro della rete e fuori dal perimetro
 
@@ -95,15 +94,15 @@ LEDBAT (Low Extra Delay Background Transport), supportato in Windows Server 2019
 
 [Le 10 principali funzionalità di rete in Windows Server 2019: \#9 - LEDBAT: Latency Optimized Background Transport](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
-A differenza della limitazione tradizionale, LEDBAT può utilizzare tutta la larghezza di banda di rete disponibile come attività in background, offrendo istantaneamente larghezza di banda quando il traffico lo richiede. A differenza di BITS non c'è ritardo; tutto è automatizzato, non è richiesta alcuna sintonizzazione manuale o programmazione e tutto è configurato dal lato server. Ciò offre guadagni potenzialmente massicci in termini di prestazioni.
+Unlike traditional throttling, LEDBAT can use all available network bandwidth as a background task, instantly yielding bandwidth when other traffic requests it. Unlike BITS there is no delay; everything is automated – no manual tuning or scheduling required, and everything is setup server side. This affords potentially massive performance gains.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
 ## <a name="peer-to-peer-options"></a>Opzioni peer-to-peer
 
-Le opzioni peer-to-peer vengono sempre più utilizzate nelle migrazioni di Windows 10, per l'imaging del PC, gli aggiornamenti software e la personalizzazione dell'utente. Sono anche utili per facilitare gli aggiornamenti build-to-build dopo la distribuzione iniziale di Windows 10. In questa sezione verranno trattati diversi esempi per aiutare a spostare Windows 10 e il traffico correlato a Office lontano dal centro della rete, riducendo la necessità di approcci classici di limitazione e consentendo ai PC di trovare i file di aggiornamento di cui hanno bisogno sui peer nella loro rete locale piuttosto che scaricandoli da un punto di distribuzione o da Internet.
+Peer-to-Peer options are increasingly being used in Windows 10 migrations, for PC imaging, software updates and user personalization. They are also valuable in facilitating build-to-build upgrades after your initial Windows 10 deployment. Here we will cover several examples to help move Windows 10 and Office-related traffic away from the center of the network, reducing the need for classic throttling approaches, and allowing PCs to find the update files they need on peers in their local network rather than downloading them from a distribution point or the internet.
 
-**BranchCache**: consente di scaricare contenuti in ambienti distribuiti senza saturare la rete. È disponibile in due opzioni: Modalità cache ospitata, che consente di utilizzare i server locali per memorizzare nella cache il contenuto e la modalità cache distribuita (una modalità supportata in Configuration Manager), che consente ai client di condividere i contenuti già scaricati.
+**BranchCache** can help you download content in distributed environments without saturating the network. It comes in two options: Hosted Cache Mode, which lets you use local servers to cache content, and Distributed Cache Mode (a mode supported in Configuration Manager), which lets clients share already downloaded content with each other.
 
 **Peer cache**: i client supportati da Configuration Manager possono anche usare peer cache. Ciò consente ai PC disponibili in modo affidabile sulla rete di ospitare la sorgente per la distribuzione del contenuto. Non sarà necessario abilitare tutti i PC, basterà individuare dispositivi di destinazione con connessioni di rete affidabili come host (ad esempio desktop, mini-tower o tower PC). Peer cache può persino funzionare per le attività di distribuzione in esecuzione nelle fasi di Windows PE durante l'installazione.
 
@@ -119,7 +118,7 @@ Nota: BranchCache e peer cache sono complementari e possono collaborare nello st
 
 Oltre a sfruttare Ottimizzazione recapito, ecco tre elementi che consentiranno di ridurre il carico di rete per le distribuzioni di Microsoft 365 Apps for enterprise.
 
-**Binary Delta Compression** Microsoft 365 Apps for enterprise utilizza Binary Delta Compression per ridurre la larghezza di banda consumata dagli aggiornamenti software durante l'aggiornamento dalla versione più recente di Microsoft 365 Apps for enterprise alla versione successiva. Modificando solo le modifiche al livello binario della versione precedente, l'impatto della crescita mensile degli aggiornamenti cumulativi è ridotto al minimo. Ciò ha il potenziale di salvare diverse centinaia di megabyte di dati per PC, ogni mese. Tuttavia, per utilizzare questa funzionalità, non è possibile saltare le versioni, nel qual caso, è necessario scaricare l'aggiornamento cumulativo completo.
+**Binary Delta Compression** Microsoft 365 Apps for enterprise uses Binary Delta Compression to reduce bandwidth consumed by software updates when updating from the most recent release of Microsoft 365 Apps for enterprise to the next release. By only pulling the binary level changes from the previous release, the impact from month-over-month growth of cumulative updates is minimized. This has the potential of saving several hundred megabytes of data, per PC, each month. In order to use this capability though, you cannot skip releases. If you do, then the full cumulative update must be downloaded.
 
 [Scaricare aggiornamenti di sicurezza per Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
@@ -147,8 +146,8 @@ Se OneDrive non è stato ancora implementato, il passaggio da Windows 7 a Window
 
 ## <a name="feedback"></a>Commenti e suggerimenti
 
-Gradiremmo conoscere l'opinione degli utenti. Scegliere il tipo di opinione che si vuole fornire:
+We'd love to hear your thoughts. Choose the type you'd like to provide:
 
 Commenti e suggerimenti sul prodotto - Accedere per inviare commenti e suggerimenti sulla documentazione
 
-Il nuovo sistema di commenti e suggerimenti è basato su GitHub Issues. Informazioni su questo cambiamento sono disponibili nel post del blog.
+Our new feedback system is built on GitHub Issues. Read about this change in our blog post.

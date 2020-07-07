@@ -22,12 +22,11 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
-ms.translationtype: MT
+ms.openlocfilehash: 746060596010fd80816e19dece093d91fe850c30
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023370"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049749"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -132,7 +131,7 @@ Se i record del server dei nomi (NS) sono stati scambiati su Microsoft 365 quand
 
 Se non sono stati modificati i record NS quando si configura il dominio, quando si modifica il record MX, la posta inizia a passare immediatamente al nuovo indirizzo.
 
-Per ulteriori informazioni, vedere in [che modo Microsoft 365 gestisce i record DNS?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). Per modificare i record NS, vedere [Remove a Domain](../../admin/get-help-with-domains/remove-a-domain.md).
+Per modificare i record NS, vedere [Remove a Domain](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### <a name="save-your-data"></a>Salvare i dati
 

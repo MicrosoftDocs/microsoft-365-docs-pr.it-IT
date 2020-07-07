@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/20/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,11 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: È necessario che l'utente remoto acceda con l'autenticazione a più fattori (MFA).
-ms.openlocfilehash: 142f4d42715ae53e411f045f4df09471b7ba63da
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
-ms.translationtype: HT
+ms.openlocfilehash: 57febcb68b09ffcbbb1694100b31d7d75158d872
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560412"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844961"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Passaggio 1. Aumentare la sicurezza di accesso per i lavoratori remoti con la MFA.
 
@@ -95,6 +94,10 @@ Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni p
 ## <a name="let-your-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
 La reimpostazione della password self-service consente agli utenti di reimpostare le proprie password senza bisogno dell'intervento del personale IT. Gli utenti possono reimpostare rapidamente le password in qualsiasi momento e da qualsiasi luogo. Guardare [questo video](https://go.microsoft.com/fwlink/?linkid=2128524) per configurare la reimpostazione della password self-service.
+
+## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Accedere alle app SaaS con Azure AD
+
+Oltre a fornire agli utenti l'autenticazione basata sul cloud, Azure AD può anche essere il modo più semplice per proteggere tutte le app, che si trovino in locale, nel cloud di Microsoft o in un altro cloud. [Integrando le app in Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), i lavoratori remoti possono individuare facilmente le applicazioni di cui hanno bisogno e accedere in tutta sicurezza.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Risorse tecniche per amministratori per MFA e identità
 
