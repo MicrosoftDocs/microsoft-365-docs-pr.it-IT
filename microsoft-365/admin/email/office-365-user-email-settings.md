@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Questo articolo fornisce informazioni sulla gestione delle impostazioni per gli utenti.
-ms.openlocfilehash: 5fa8674b8e188605ba3f6339fd6384c37630c917
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ca57d536794ffde4865ec86f34c8dc644ff3c1f1
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780206"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080004"
 ---
 # <a name="user-email-settings"></a>Impostazioni posta elettronica utente
 
@@ -44,4 +44,4 @@ Questa tabella illustra le varie impostazioni di posta elettronica che è possib
 
 > [!NOTE]
 >
-> <sup>1</sup> È possibile gestire solo le app di posta elettronica per le cassette postali ospitate completamente in Office 365. Non è possibile usare questa funzionalità per gestire le app per le cassette postali ospitate in locale.
+> <sup>1</sup> È possibile gestire solo le app di posta elettronica per le cassette postali ospitate completamente in Microsoft 365. Non è possibile usare questa funzionalità per gestire le app per le cassette postali ospitate in locale.

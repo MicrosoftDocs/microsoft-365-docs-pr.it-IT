@@ -15,17 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
+ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049917"
+ms.locfileid: "45052726"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
 Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for enterprise. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano Microsoft Endpoint Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 
-Questo corso di formazione è altamente consigliato per le organizzazioni che si stanno preparando per la fine del ciclo di vita di Windows 7 ed è utile anche se attualmente si utilizza Windows 10 e Office 365 Plus oppure Office 2019. In quanto ambiente isolato, inoltre, questo lab è ideale per esaminare gli aggiornamenti dello strumento di distribuzione e testare l'automazione correlata alla distribuzione.
+Questo corso di formazione è altamente consigliato per le organizzazioni che si stanno preparando per la fine del ciclo di vita di Windows 7 ed è utile anche se attualmente si utilizza Windows 10 e Microsoft 365 Apps for enterprise (in precedenza Office 365 ProPlus) oppure Office 2019. In quanto ambiente isolato, inoltre, questo lab è ideale per esaminare gli aggiornamenti dello strumento di distribuzione e testare l'automazione correlata alla distribuzione.
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -73,6 +74,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
   - Distribuzione gestita dall'organizzazione con Configuration Manager e Microsoft Intune
   - Distribuzione e gestione di applicazioni con Microsoft Intune
   - Distribuzione e installazione self-service di app con Microsoft Store per le aziende
+  - NOVITÀ! Installare Microsoft Teams 
 
 ### <a name="user-file-and-settings-migration"></a>Migrazione delle impostazioni e dei file utente
 
@@ -107,8 +109,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
   - Manutenzione di Windows 10 con Configuration Manager e Intune
   - Installazione di Microsoft 365 Apps for enterprise con Configuration Manager
   - NOVITÀ! Aggiornamenti di Office con Configuration Manager e Intune
-  - NOVITÀ! Installare Microsoft Teams 
-
+  
 ### <a name="new-windows-virtual-desktop"></a>NOVITÀ! Desktop virtuale Windows
   - Desktop virtuale Windows: preparazione, distribuzione, ottimizzazione 
 

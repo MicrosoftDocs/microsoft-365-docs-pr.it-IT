@@ -1,39 +1,39 @@
 ---
 title: Descrizione del servizio Microsoft Managed Desktop
-description: Delinea cosa è incluso in Microsoft Managed Desktop come servizio
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+description: Descrive cosa è incluso in Microsoft Managed Desktop come servizio
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
 ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "43637865"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Descrizione del servizio Microsoft Managed Desktop
 
-Microsoft Managed Desktop è un servizio che offre agli utenti un'esperienza moderna sicura e mantiene sempre aggiornati i dispositivi con le versioni più recenti di Windows 10 Enterprise Edition, Microsoft 365 Apps for Enterprise e Microsoft Security Services, tra cui:
+Microsoft Managed Desktop è un servizio che offre agli utenti un'esperienza moderna sicura e mantiene sempre aggiornati i dispositivi con le ultime versioni di Windows 10 Enterprise Edition, Microsoft 365 Apps for enterprise e servizi di sicurezza Microsoft, tra cui:
 
-- Registrazione semplificata dei nuovi dispositivi
+- Registrazione semplificata di nuovi dispositivi
 - Configurazione dei dispositivi
-- Funzionalità per garantire la sicurezza di utenti e dispositivi, tra cui la protezione basata su Windows Hello, BitLocker, SecureBoot e la virtualizzazione in base alle procedure consigliate di Microsoft
-- Servizi di monitoraggio e correzione della sicurezza dei dispositivi
-- Compatibilità delle app, tramite l' [app desktop assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
-- Gestione degli aggiornamenti per le app di Windows 10 e Microsoft 365 per le app Enterprise
+- Funzionalità per proteggere utenti e dispositivi, inclusi Windows Hello, BitLocker, SecureBoot e sicurezza basata sulla virtualizzazione secondo le migliori pratiche Microsoft
+- Monitoraggio della sicurezza dei dispositivi e servizi di correzione
+- Compatibilità delle app tramite [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
+- Gestione degli aggiornamenti per Windows 10 e delle app di Microsoft 365 Apps for enterprise
 - Dati analitici sull'utilizzo di dispositivi e app
-- Supporto IT per gli utenti finali
-- Supporto operativo per i professionisti IT
+- Supporto IT per utenti finali
+- Supporto operativo per professionisti IT
 
-Per informazioni dettagliate sui servizi specifici inclusi in Microsoft Managed Desktop, vedere gli altri argomenti in questa sezione. Se è già stato deciso che Microsoft Managed Desktop è per te, gli argomenti in prepararsi [per la registrazione in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) forniscono i passaggi per prepararsi ad aderire al servizio.
+Per dettagli sui servizi specifici inclusi con Microsoft Managed Desktop, vedere gli altri argomenti in questa sezione. Se è stato già deciso di usare Microsoft Managed Desktop, gli argomenti in [Prepararsi per la registrazione in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) forniscono la procedura per partecipare al servizio.
 
-- [Microsoft Managed Desktop Regions and languages supported](regions-languages.md) spiega quali aree e lingue sono supportate con il servizio.
-- Per garantire la migliore esperienza per gli utenti finali, solo alcuni dispositivi sono supportati da Microsoft Managed Desktop. I [dispositivi di programma](device-list.md) specificano i modelli e le configurazioni dei dispositivi esatti che è possibile utilizzare con il servizio, sia che vengano forniti o che lavorino con un partner.
-- [Servizi dispositivo](device-services.md) specifica i servizi correlati ai dispositivi che Microsoft fornirà ai sottoscrittori.
-- La [configurazione](device-policies.md) dei dispositivi consente di chiarire i criteri di gestione dei dispositivi mobili predefiniti e relativi alla sicurezza che il servizio si applicherà ai dispositivi registrati.
-- [Sicurezza](security.md) specifica i dati raccolti dai dispositivi registrati, nonché le caratteristiche e i criteri relativi alla sicurezza dei dispositivi, alla gestione delle identità e degli accessi, alla sicurezza della rete e alla sicurezza delle informazioni.
-- [Updates](updates.md) descrive i diversi gruppi di aggiornamento che Microsoft Managed Desktop utilizza per distribuire gli aggiornamenti ai dispositivi.
-- Il [supporto](support.md) consente di chiarire il supporto fornito da Microsoft per l'organizzazione e gli utenti finali.
-- [Operations and Monitoring](operations-and-monitoring.md) spiega come funziona la gestione delle modifiche con Microsoft Managed Desktop, incluse le procedure standard per la richiesta e la preparazione per le modifiche apportate alla distribuzione.
-- [Requisiti](mmd-app-requirements.md) per le applicazioni vengono descritti i tipi di app e comportamenti consentiti in Microsoft Managed Desktop e la divisione dei ruoli e delle responsabilità per la distribuzione e la gestione delle applicazioni.
+- [Le aree geografiche e le lingue supportate da Microsoft Managed Desktop ](regions-languages.md) spiega quali aree geografiche e lingue sono supportate con il servizio.
+- Per garantire la migliore esperienza agli utenti finali, solo alcuni dispositivi sono supportati da Microsoft Managed Desktop. [Programmare dispositivi](device-list.md) specifica i modelli e le configurazioni esatti del dispositivo che è possibile utilizzare con il servizio, indipendentemente dal fatto che vengano forniti o che si lavori con un partner.
+- [Servizi per dispositivi](device-services.md) specifica i servizi relativi al dispositivo che Microsoft fornirà agli abbonati.
+- [Configurazione dei dispositivi](device-policies.md) chiarisce i criteri di gestione dei dispositivi mobili predefiniti e relativi alla sicurezza che il servizio applicherà ai dispositivi registrati.
+- [Sicurezza](security.md) specifica i dati raccolti dai dispositivi registrati, nonché le funzionalità e i criteri relativi alla sicurezza dei dispositivi, alla gestione delle identità e degli accessi, alla sicurezza della rete e alla sicurezza delle informazioni.
+- [Aggiornamenti](updates.md) descrive i vari gruppi di aggiornamento che Microsoft Managed Desktop utilizza per distribuire gli aggiornamenti ai dispositivi.
+- [Supporto](support.md) chiarisce il supporto fornito da Microsoft per l'organizzazione e gli utenti finali.
+- [Operazioni e il monitoraggio](operations-and-monitoring.md) spiega come funziona la gestione delle modifiche con Microsoft Managed Desktop, comprese le procedure standard per la richiesta e la preparazione delle modifiche nella distribuzione.
+- [Requisiti di applicazione](mmd-app-requirements.md) descrive i tipi di app e comportamenti consentiti in Microsoft Managed Desktop e la divisione dei ruoli e delle responsabilità per la distribuzione e la gestione delle app.
