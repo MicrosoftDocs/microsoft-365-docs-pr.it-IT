@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418879"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080082"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati da Microsoft Managed Desktop
 
@@ -35,16 +35,18 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 
 | Modello  | Specifiche minime  | Requisiti aggiuntivi   | Data di pensionamento |
 |---------|---------|---------|---------|
+| Dell Precision 3530| 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | **22 maggio 2023** |
 | Dell Latitude 5490| 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | **Gen 9, 2023** |
 | Dell Latitude 7390 7390 2-in-1/7490 | 256 GB/Intel i5/8 GB di RAM   | Telecamera IR obbligatoria | **Gen 9, 2023** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario  | **Feb 15, 2023** |
 |HP Elite X2 1013 G3| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS03AV, videocamera IR necessaria |**14 maggio 2023** |
 |HP EliteBook X360 1030 G3| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria |**14 maggio 2023** |
 |HP EliteBook X360 1040 G5| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | **23 ottobre 2023** |
-|Surface Book 2| 256 GB/Intel i5/8 GB di RAM | Nessuna | **Nov 16, 2022** |
-|Superficie andare| 128 GB/Intel 4415Y/8GB di RAM | Nessuna | **Aug 2, 2023** |
-|Laptop Surface| 256 GB/Intel i5/8 GB di RAM | Nessuna | **20 maggio 2022** |
-|Surface Pro| 256 GB/Intel i5/8 GB di RAM | Nessuna | **15 giugno 2022** |
+|HP ProBook X360 440 G1| 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV, videocamera IR o lettore di impronte digitali necessario | **Giugno 6, 2023** |
+|Surface Book 2| 256 GB/Intel i5/8 GB di RAM | Nessuno | **Nov 16, 2022** |
+|Superficie andare| 128 GB/Intel 4415Y/8GB di RAM | Nessuno | **Aug 2, 2023** |
+|Laptop Surface| 256 GB/Intel i5/8 GB di RAM | Nessuno | **20 maggio 2022** |
+|Surface Pro| 256 GB/Intel i5/8 GB di RAM | Nessuno | **15 giugno 2022** |
 
 
 Inoltre, il dispositivo deve:

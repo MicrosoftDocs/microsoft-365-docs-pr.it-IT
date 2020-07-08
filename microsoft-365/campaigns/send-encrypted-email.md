@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come inviare messaggi di posta elettronica crittografati tramite Outlook.
-ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: b9d5d32b61c49dcffaab83fb13e46d32f2166552
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322148"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080028"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Crittografare o contrassegnare il messaggio di posta elettronica sensibile
 
@@ -52,7 +52,7 @@ Se si desidera crittografare un messaggio che non soddisfa una regola predefinit
 
 ## <a name="admin-settings"></a>Impostazioni di amministratore
 
-È possibile ottenere informazioni su come configurare la crittografia della posta elettronica alla [crittografia della posta elettronica in Office 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
+È possibile ottenere informazioni su come configurare la crittografia della posta elettronica tramite la [crittografia della posta elettronica in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>Crittografia automatica dei messaggi di posta elettronica
 
@@ -60,11 +60,11 @@ Gli amministratori possono creare regole del flusso di posta per proteggere auto
 
 È possibile creare regole del flusso di posta per crittografare i messaggi di posta elettronica con le nuove funzionalità di crittografia dei messaggi di Office 365. Definire le regole del flusso di posta per l'attivazione della crittografia dei messaggi con le nuove funzionalità OME utilizzando l'interfaccia di amministrazione di Exchange (EAC). 
 
-1. In un Web browser, utilizzando un account aziendale o dell'Istituto di istruzione a cui sono state concesse le autorizzazioni di amministratore globale, accedere a Office 365. 
+1. In un Web browser, utilizzando un account aziendale o dell'Istituto di istruzione a cui sono state concesse le autorizzazioni di amministratore globale, accedere. 
 2. Scegliere il riquadro amministratore. 
 3. Nell'interfaccia di amministrazione scegliere **admin centers > Exchange**. 
 
-Per ulteriori informazioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
+Per ulteriori informazioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Personalizzare i messaggi di crittografia
 

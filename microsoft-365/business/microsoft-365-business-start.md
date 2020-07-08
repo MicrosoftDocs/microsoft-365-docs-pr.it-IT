@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 for business, su come configurarlo e su come preparare i dispositivi e i PC degli utenti per assicurarsi che siano protetti da Microsoft 365 for business.
-ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: aedcf78f10707dbe6a1d1527effea7d56283dce0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022118"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080044"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introduzione a Microsoft 365 for business
 
@@ -80,9 +80,9 @@ Accedere all'interfaccia di [amministrazione di microsoft 365](https://portal.of
     
     Se si sta **spostando definitivamente da una Active Directory locale al cloud**, è possibile accedere all'interfaccia di amministrazione di Microsoft 365 e utilizzare l'installazione guidata per aggiungere manualmente gli utenti oppure è possibile eseguire una sincronizzazione una tantum con Azure ad Connect. Questa operazione può essere eseguita in due modi: 
     
-    - Se si dispone anche di un server Exchange 2010, Exchange 2013 o Exchange 2016, è possibile [utilizzare un ambiente ibrido minimo per eseguire rapidamente la migrazione delle cassette postali di Exchange a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). I passaggi ibridi minimi includono una sincronizzazione una tantum degli utenti in Azure AD e la migrazione della posta elettronica da locale al cloud. Una volta completata la migrazione della posta elettronica, la sincronizzazione della directory viene disattivata automaticamente quando si utilizza questo metodo.
+    - Se si dispone anche di un server Exchange 2010, Exchange 2013 o Exchange 2016, è possibile [utilizzare un ambiente ibrido minimo per eseguire rapidamente la migrazione delle cassette postali di Exchange a Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). I passaggi ibridi minimi includono una sincronizzazione una tantum degli utenti in Azure AD e la migrazione della posta elettronica da locale al cloud. Una volta completata la migrazione della posta elettronica, la sincronizzazione della directory viene disattivata automaticamente quando si utilizza questo metodo.
     
-    - Utilizzare la procedura guidata di sincronizzazione della directory per sincronizzare gli utenti con il cloud. Seguire la procedura descritta in [set up Directory Synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) per completare il processo. Dopo aver sincronizzato gli utenti nel cloud, è necessario disattivare la [sincronizzazione della directory per Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
+    - Utilizzare la procedura guidata di sincronizzazione della directory per sincronizzare gli utenti con il cloud. Seguire la procedura descritta in [set up Directory Synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) per completare il processo. Dopo aver sincronizzato gli utenti nel cloud, è necessario disattivare la [sincronizzazione della directory per Microsoft 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
     È inoltre necessario fornire a ciascun utente aggiunto in questo modo una licenza a Microsoft 365 for business. È possibile eseguire questa operazione nell' [installazione guidata](set-up.md) oppure è possibile [assegnare licenze agli utenti](../admin/manage/assign-licenses-to-users.md).
     

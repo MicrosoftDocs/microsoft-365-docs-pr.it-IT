@@ -1,5 +1,5 @@
 ---
-title: Aggiungere un dominio a Office 365
+title: Aggiungere un dominio a Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Aggiungere il dominio a Office 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: b5ad21174c0a2ebb3466072ef43fb1ba284d3b59
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Aggiungere il dominio a Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
+ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398991"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079726"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Aggiungere un dominio a Microsoft 365
 
@@ -94,7 +94,7 @@ ms.locfileid: "44398991"
     1. Scegliere **Add the DNS Records for me** se si desidera che Office configuri automaticamente il DNS. 
     
   
-    2. Scegliere **i ' ll add the DNS Records me stesso** se si desidera collegare solo i servizi specifici di Office 365 al dominio o se si desidera ignorare questo per ora e farlo in un secondo momento. **Scegliere questa opzione solo se si è effettivamente in grado di eseguire l'operazione.**
+    2. Scegliere **i ' ll add the DNS Records me stesso** se si desidera collegare solo specifici servizi Microsoft 365 al dominio o se si desidera ignorare questo per ora e farlo in un secondo momento. **Scegliere questa opzione solo se si è effettivamente in grado di eseguire l'operazione.**
     
 7. Se si è scelto di *aggiungere manualmente i record DNS* , selezionare **Avanti** e visualizzare una pagina contenente tutti i record che è necessario aggiungere al sito Web di registrazione per configurare il dominio. 
     
@@ -124,7 +124,7 @@ Attenersi alla procedura riportata di seguito per aggiungere un record personali
 
 5. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
     
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
 
 ## <a name="registrars-with-domain-connect"></a>Registrar con Domain Connect
 
@@ -149,7 +149,7 @@ Nella procedura guidata, è sufficiente confermare che si è proprietari del dom
 
 ### <a name="what-happens-to-my-email-and-website"></a>Cosa succede alla posta elettronica e al sito Web?
 
-Dopo aver completato l'installazione, il record MX per il dominio viene aggiornato in modo che punti a Microsoft 365 e tutti i messaggi di posta elettronica per il dominio inizieranno a essere inviati a Microsoft 365. Assicurarsi di aver aggiunto utenti e configurato le cassette postali in Office 365 per tutte le persone che ricevono posta nel dominio.
+Dopo aver completato l'installazione, il record MX per il dominio viene aggiornato in modo che punti a Microsoft 365 e tutti i messaggi di posta elettronica per il dominio inizieranno a essere inviati a Microsoft 365. Assicurarsi di aver aggiunto utenti e configurare le cassette postali in Microsoft 365 per tutti coloro che ricevono la posta elettronica nel dominio.
   
 Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare dove si trova. I passaggi di installazione di Domain Connect non influiscono sul sito Web.
 
@@ -159,7 +159,7 @@ Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare d
 
 [Che cosa è un dominio?](../get-help-with-domains/what-is-a-domain.md)
 
-[Acquistare un nome di dominio in Office 365](../get-help-with-domains/buy-a-domain-name.md)
+[Acquistare un nome di dominio in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Configurare il dominio (istruzioni specifiche per l’host)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 

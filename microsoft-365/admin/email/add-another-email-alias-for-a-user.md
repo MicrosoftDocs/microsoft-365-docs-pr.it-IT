@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: "Informazioni su come è possibile disporre di più indirizzi di posta elettronica, denominati alias di posta elettronica, associati all'account Microsoft 365 for business. "
-ms.openlocfilehash: c0e71ef150ccf592ea4f808a5e6609e1675767a4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 030d8022a8503f6b383d03b0dd97720f66d8f2f6
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780290"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080016"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Aggiungere un altro alias di posta elettronica per un utente
 
@@ -73,12 +73,12 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
   
     > [!TIP]
-    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [aggiungere un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
   
      
 5. Al termine, scegliere **Save Changes**.
     
-6. Attendere 24 ore per il popolamento dei nuovi alias in Office 365.
+6. Attendere 24 ore affinché i nuovi alias vengano inseriti in Microsoft 365.
     
     L'utente avrà ora un indirizzo primario e un alias. Ad esempio, tutti i messaggi inviati all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, andranno alla posta in arrivo di Eliza.
     
@@ -99,17 +99,17 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
     > [!Important] 
     > Se viene visualizzato il messaggio di errore "**non è possibile trovare un parametro che corrisponda al nome del parametro" EmailAddresses**", significa che richiede un po' di tempo per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto di recente uno. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
 
-4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se si è aggiunto il proprio dominio a Office 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa. Selezionare **Aggiungi**.
+4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se è stato aggiunto il proprio dominio a Microsoft 365, è possibile scegliere il dominio per il nuovo alias di posta elettronica utilizzando l'elenco a discesa. Selezionare **Aggiungi**.
 
     > [!IMPORTANT]
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
   
     > [!TIP]
-    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [aggiungere un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
 5. Al termine, seleziona **Salva**.
 
-6. Attendere 24 ore per il popolamento dei nuovi alias in Office 365. 
+6. Attendere 24 ore affinché i nuovi alias vengano inseriti in Microsoft 365. 
     
     L'utente avrà ora un indirizzo primario e un alias. Ad esempio, tutti i messaggi inviati all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, andranno alla posta in arrivo di Eliza.
     
@@ -130,17 +130,17 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
     > [!Important] 
     > Se viene visualizzato il messaggio di errore "**non è possibile trovare un parametro che corrisponda al nome del parametro" EmailAddresses**", significa che richiede un po' di tempo per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto di recente uno. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
 
-4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se si è aggiunto il proprio dominio a Office 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa. Selezionare **Aggiungi**.
+4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se è stato aggiunto il proprio dominio a Microsoft 365, è possibile scegliere il dominio per il nuovo alias di posta elettronica utilizzando l'elenco a discesa. Selezionare **Aggiungi**.
 
     > [!IMPORTANT]
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
   
     > [!TIP]
-    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [aggiungere un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
 5. Al termine, seleziona **Salva**.
 
-6. Attendere 24 ore per il popolamento dei nuovi alias in Office 365. 
+6. Attendere 24 ore affinché i nuovi alias vengano inseriti in Microsoft 365. 
     
     L'utente avrà ora un indirizzo primario e un alias. Ad esempio, tutti i messaggi inviati all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, andranno alla posta in arrivo di Eliza.
     
