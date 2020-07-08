@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Gestione dei dati e del servizio
-summary: Consultare queste risorse per aiutare gli amministratori a svolgere attività comuni oppure visualizzare il riquadro di spostamento a sinistra per un elenco completo.
+title: Gestire i dati e il servizio
+summary: Consultare queste risorse per aiutare gli amministratori a eseguire attività comuni o vedere il riquadro di spostamento a sinistra per un elenco completo.
 metadata:
-  title: Gestione dei dati e del servizio
-  description: Monitorare lo stato del servizio, eseguire il backup dei dati, installare i componenti aggiuntivi e aggiornare le app più recenti
+  title: Gestire i dati e il servizio
+  description: Monitorare lo stato del servizio, eseguire il backup dei dati, installare componenti aggiuntivi e aggiornare alle app più recenti
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 3aba9a081fadb85a3c052d0b11d6ff49dbffa0ca
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780098"
@@ -24,7 +24,7 @@ landingContent:
     links:
     - text: Monitorare l'attività utente utilizzando i report
       url: ../activity-reports/activity-reports.md
-    - text: Monitorare l'analisi di utilizzo
+    - text: Monitorare le analisi di utilizzo
       url: ../usage-analytics/usage-analytics.md
     - text: Abilitare le analisi di utilizzo
       url: ../usage-analytics/enable-usage-analytics.md
@@ -36,7 +36,7 @@ landingContent:
       url: release-options-in-office-365.md
     - text: Mostrare o nascondere le nuove funzionalità
       url: show-hide-new-features.md
-- title: Blocca l'accesso degli utenti e il backup dei dati
+- title: Bloccare l'accesso degli utenti ed eseguire il backup dei dati
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -46,7 +46,7 @@ landingContent:
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
     - text: Rimuovere i dati aziendali dai dispositivi (Microsoft 365 Business Premium)
       url: ../../business/remove-company-data.md
-- title: Gestire i componenti aggiuntivi e le app
+- title: Gestire i componenti aggiuntivi e app
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -62,9 +62,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Documentazione relativa all'amministratore di Microsoft Teams
+    - text: Documentazione per gli amministratori di Microsoft Teams
       url: https://docs.microsoft.com/en-us/microsoftteams/
-    - text: Utilizzare Outlook e i team insieme
+    - text: Usare Outlook e Teams insieme
       url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
   - linkListType: learn
     links:
@@ -74,9 +74,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Documentazione di SharePoint per i professionisti IT e gli amministratori
+    - text: Documentazione di SharePoint per professionisti IT e amministratori
       url: https://docs.microsoft.com/sharepoint/
-    - text: Documentazione di OneDrive per i professionisti IT e gli amministratori
+    - text: Documentazione di OneDrive per professionisti IT e amministratori
       url: https://docs.microsoft.com/onedrive/
   - linkListType: how-to-guide
     links:

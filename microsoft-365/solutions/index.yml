@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 Solution and Architecture Center
-summary: Informazioni su come progettare la soluzione e l'architettura più adatta alla propria organizzazione.
+summary: Informazioni su come progettare la soluzione e l'architettura appropriate per la tua organizzazione.
 brand: m365
 metadata:
   title: Microsoft 365 Solution and Architecture Center
-  description: Informazioni su come progettare la soluzione e l'architettura più adatta alla propria organizzazione
+  description: Informazioni su come progettare la soluzione e l'architettura appropriate per la tua organizzazione
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection:
@@ -18,7 +18,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 7f0da78b7d0c716532c2aca277059ff54478be5f
   ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 05/07/2020
   ms.locfileid: "44160148"
@@ -27,53 +27,53 @@ highlightedContent:
   - title: Aumentare la produttività dei lavoratori remoti con Microsoft 365
     itemType: whats-new
     url: empower-people-to-work-remotely.md
-  - title: Configurare la collaborazione sicura con Microsoft 365
+  - title: Proteggere la collaborazione con Microsoft 365
     itemType: get-started
     url: setup-secure-collaboration-with-teams.md
-  - title: Distribuire la protezione delle minacce in Microsoft 365
+  - title: Distribuire la protezione dalle minacce in Microsoft 365
     itemType: get-started
     url: deploy-threat-protection.md
 productDirectory:
   items:
   - title: Soluzioni di base di Microsoft 365
     imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
-    summary: Trovare una guida completa per uno specifico problema aziendale o necessità, dalla pianificazione all'implementazione, all'adozione.
+    summary: È possibile trovare una guida completa per un problema o una necessità aziendali specifici, dalla pianificazione all'implementazione, fino all'adozione.
     url: foundation-solutions-overview.md
-  - title: Soluzione dei carichi di lavoro e linee guida per lo scenario
+  - title: Soluzione del carico di lavoro e indicazioni sullo scenario
     imageSrc: https://docs.microsoft.com/office/media/icons/objects-blue.svg
-    summary: Aggiungere questi scenari alle soluzioni di base per aggiungere funzionalità all'ambiente.
+    summary: Aggiungere questi scenari nelle soluzioni di base per aggiungere funzionalità all'ambiente.
     url: workload-solutions-scenarios-overview.md
-  - title: Illustrazioni su soluzioni e architetture
+  - title: Illustrazioni della soluzione e dell'architettura
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
-    summary: Consente di visualizzare o scaricare queste illustrazioni per comprendere le funzionalità e l'architettura dei servizi di Microsoft 365.
+    summary: Visualizza o scarica queste illustrazioni per comprendere le funzionalità e l'architettura dei servizi di Microsoft 365.
     url: productivity-illustrations.md
   - title: Guida specifica del settore
     imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-blue.svg
-    summary: Trovare una guida specifica per il proprio settore.
+    summary: È possibile indicazioni specificamente create per il proprio settore.
     url: industry-specific-guidance-overview.md
-  - title: Principi di progettazione dell'organizzazione
+  - title: Principi di progettazione aziendale
     imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-blue.svg
-    summary: Comprendere i principi fondamentali necessari per comprendere le architetture di rete, identità, sicurezza e multi-nazionali.
+    summary: Comprendere i principi principali necessari per conoscere reti, identità, sicurezza e architetture multinazionali.
     url: design-principles.md
-  - title: Roadmap e risorse per la distribuzione
+  - title: Roadmap e risorse di distribuzione
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: Risorse per la configurazione della collaborazione con la sicurezza e la protezione delle informazioni.
+    summary: Risorse per la configurazione della collaborazione insieme alla sicurezza e alla protezione delle informazioni.
     url: https://docs.microsoft.com/microsoft-365/?view=o365-worldwide
 additionalContent:
   sections:
   - title: Altre risorse per Microsoft 365
     items:
-    - title: Microsoft 365 centro assistenza per amministratori e professionisti IT
-      summary: Trovare altre risorse per i professionisti IT nella pagina Microsoft 365
+    - title: Centro assistenza di Microsoft 365 per amministratori e professionisti IT
+      summary: È possibile trovare altre risorse per professionisti IT nella pagina di Microsoft 365
       url: https://docs.microsoft.com/microsoft-365
     - title: Formazione per amministratori e professionisti IT
-      summary: Trovare risorse di formazione per la gestione di Microsoft 365
+      summary: È possibile trovare risorse di formazione per la gestione di Microsoft 365
       url: https://docs.microsoft.com/learn/m365/
     - title: Formazione per gli utenti finali
-      summary: Guida per gli utenti finali informazioni su come utilizzare Microsoft 365
+      summary: Aiutare gli utenti finali a imparare a usare Microsoft 365
       url: https://support.office.com/modernworkplace
     - title: Tech Community di Microsoft 365
-      summary: Collaborare con la community di tecnologia
+      summary: Collaborare con la community tecnica
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
     - title: Risorse per sviluppatori
       summary: Informazioni su come sviluppare per Microsoft 365

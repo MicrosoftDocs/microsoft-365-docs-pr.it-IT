@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Risorse di Microsoft 365 Business Premium
-summary: Microsoft 365 Business Premium (in precedenza Microsoft 365 Business) è un servizio in abbonamento completo per le aziende con meno di 300 dipendenti. Integra le app e i servizi e la collaborazione per la produttività di Office preferiti, come Microsoft teams con funzionalità avanzate di sicurezza e gestione dei dispositivi.
+summary: Microsoft 365 Business Premium (in precedenza Microsoft 365 Business) è un servizio in abbonamento completo per le aziende con meno di 300 dipendenti. Integra le app e i servizi di produttività di Office più usati e strumenti di collaborazione come Microsoft Teams, con funzionalità avanzate per la sicurezza e la gestione dei dispositivi.
 brand: m365
 metadata:
   title: Risorse di Microsoft 365 Business Premium
@@ -14,24 +14,24 @@ metadata:
   ms.date: 10/01/2019
   ms.openlocfilehash: fe849499da31b3be4ab52144d1a39f8a1bc7a212
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44786191"
 productDirectory:
-  title: Sicurezza del lavoro remoto con Microsoft 365 Business Premium
+  title: Proteggere il lavoro remoto con Microsoft 365 Business Premium
   items:
   - title: Lettura
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Modalità consigliate per abilitare il lavoro remoto sicuro con Microsoft 365 Business Premium.
+    summary: Metodi migliori per consentire un lavoro remoto protetto con Microsoft 365 Business Premium.
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
-  - title: Ottenere il kit del partner gratuito
+  - title: Ottenere il kit partner gratuito
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Guida pratica e accedere alle risorse di mercato per i partner per la protezione del lavoro remoto.
+    summary: Guida pratica e risorse di mercato per i partner per la sicurezza del lavoro remoto.
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: Novità
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 è in arrivo a Microsoft 365 Business Premium!
+    summary: Azure AD Premium P1 è disponibile per Microsoft 365 Business Premium.
     url: https://aka.ms/aadp1smbblog
 conceptualContent:
   items:
@@ -42,7 +42,7 @@ conceptualContent:
       text: Panoramica
     - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
-      text: Microsoft 365 Business Premium Training
+      text: Formazione su Microsoft 365 Business Premium
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
       text: Confrontare i piani
@@ -189,7 +189,7 @@ conceptualContent:
     links:
     - url: sign-up.md
       itemType: get-started
-      text: Iscriversi a Microsoft 365 Business Premium
+      text: Iscrizione a Microsoft 365 Business Premium
     - url: migrate-to-microsoft-365-business.md
       itemType: how-to-guide
       text: Eseguire la migrazione da Microsoft 365 Business Standard
