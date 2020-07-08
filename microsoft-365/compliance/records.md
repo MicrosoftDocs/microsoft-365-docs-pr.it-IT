@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui record utili per implementare una soluzione di gestione dei record in Microsoft 365.
-ms.openlocfilehash: 6807f8b8f76b2bc85835edf0d4402b98ea217037
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470581"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080103"
 ---
 # <a name="learn-about-records"></a>Informazioni sui record
 
@@ -62,7 +62,7 @@ Tenere presente quanto segue in relazione ai record:
 
     Per altre informazioni sull'applicazione di etichette di conservazione alle cartelle di SharePoint e OneDrive, vedere [Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
-  - **Non è possibile eliminare i record**. Se un utente prova a eliminare un record in Exchange, l'elemento viene spostato nella cartella Elementi ripristinabili, come descritto in [Funzionamento dei criteri di conservazione con posizioni Exchange](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations).
+  - **Non è possibile eliminare i record**. Se un utente tenta di eliminare un record in Exchange, l'elemento viene spostato nella cartella Elementi ripristinabili, come descritto in [Funzionamento dei criteri di conservazione con Exchange](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange).
 
     Se un utente prova a eliminare un record in SharePoint, viene visualizzato un messaggio di errore che indica che l'elemento non è stato eliminato e che rimane nella raccolta.
 
