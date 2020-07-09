@@ -17,21 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul comportamento di conservazione applicabile specificamente alle cartelle di posta elettronica di Exchange e alle cartelle pubbliche di Exchange.
-ms.openlocfilehash: aa4142db2114b2b58cc391429f1389c6b9fad52d
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 57f0bf7737522b0435b076fee46edd1736efd856
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049894"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080093"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Informazioni sui criteri di conservazione per Exchange
 
 Questo articolo integra [Informazioni sui criteri di conservazione](retention-policies.md) con informazioni specifiche per Exchange.
 
-## <a name="how-a-retention-policy-works-with-exchange-locations"></a>Funzionamento dei criteri di conservazione con posizioni Exchange
+## <a name="how-a-retention-policy-works-with-exchange"></a>Funzionamento dei criteri di conservazione in Exchange
 
-Per quanto riguarda la posta, il calendario e altri elementi di un utente, i criteri di conservazione vengono applicati a livello di cassetta postale.
+Per quanto riguarda la posta dell’utente, il calendario e altri elementi della cassetta postale, i criteri di conservazione vengono applicati a livello di cassetta postale.
 
-Per quanto riguarda una cartella pubblica, i criteri di conservazione vengono applicati a livello di cartella, non a livello di cassetta postale. 
+Nel caso delle cartelle pubbliche, i criteri di conservazione vengono applicati a tutte le cartelle pubbliche e non a livello di cartella o cassetta postale.
+
+Quando si configurano i criteri di conservazione per tali posizioni, sono inclusi gli elementi di posta elettronica seguenti: i messaggi di posta elettronica con allegati, incluse le bozze, le attività, gli elementi del calendario quando hanno una data di fine e le note. I contatti, le attività e gli elementi del calendario che non hanno una data di fine sono esclusi. Altri elementi archiviati in una cassetta postale, ad esempio i messaggi salvati di Skype e di Teams, sono inclusi con i propri criteri di conservazione distinti.
 
 Le cassette postali e le cartella pubbliche utilizzano la cartella [Elementi ripristinabili](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) per conservare gli elementi. Solo gli utenti a cui sono state assegnate autorizzazioni di eDiscovery possono visualizzare il contenuto di una cartella Elementi ripristinabili di un altro utente.
   
@@ -73,7 +76,7 @@ Quando l'impostazione di conservazione è Conserva solo o Elimina solo, i percor
   
 Per escludere i tipi selezionati per gli elementi di Exchange in un criterio di conservazione, usare il parametro `ExcludedItemClasses` con i cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) e [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule).
 
-Per usare i cmdlet dei criteri di conservazione, è prima necessario [connettersi a PowerShell per Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+Per usare i cmdlet dei criteri di conservazione, è prima necessario [connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
 ## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l’organizzazione 
 

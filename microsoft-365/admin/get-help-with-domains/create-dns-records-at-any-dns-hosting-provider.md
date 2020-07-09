@@ -1,7 +1,7 @@
 ---
-title: Creare record DNS presso un provider di hosting DNS
+title: Aggiungere record DNS per connettere il dominio
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
@@ -15,423 +15,133 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Informazioni su come verificare il dominio e creare record DNS presso un provider di hosting DNS per Microsoft 365.
-ms.custom: okr_smb
-ms.openlocfilehash: 2cf28cdd3cc2f85e448d512e72f5b022177e8f1e
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.custom:
+- okr_smb
+- AdminSurgePortfolio
+ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053724"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049667"
 ---
-# <a name="create-dns-records-at-any-dns-hosting-provider"></a>Creare record DNS presso un provider di hosting DNS
+# <a name="add-dns-records-to-connect-your-domain"></a>Aggiungere record DNS per connettere il dominio
 
- Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**. 
-  
-Controllare l'elenco delle [istruzioni specifiche per l'host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) per trovare l'host e seguire la procedura per aggiungere tutti i record necessari. 
-  
-Per identificare il provider di hosting DNS o il registrar per il dominio, vedere [Trovare il registrar o il provider di hosting DNS](../get-help-with-domains/find-your-domain-registrar.md).
-  
-Ecco i record da aggiungere per la configurazione manuale. Si noti che il record di verifica e il record MX sono specifici del dominio. Per configurarli, è necessario ottenere e usare un valore "token" specifico per il dominio. I passaggi seguenti spiegano come fare.
-  
-> [!IMPORTANT]
-> Il nome esatto delle caselle o dei  *campi*  in cui si digitano o incollano le informazioni per creare i diversi tipi di record DNS varia a seconda dell'host DNS. Sul sito Web dell'host potrebbe essere disponibile una Guida per aiutare ad associare le istruzioni contenute qui ai campi del sito Web. È consigliabile controllare se sono disponibili istruzioni dettagliate per il proprio host DNS nell'articolo [Creare record DNS per Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). >  Alcuni host DNS non consentono di creare tutti i tipi di record necessari, con conseguenti [limitazioni del servizio](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. Se l'host del proprio dominio non supporta i record SRV, TXT o CNAME, ad esempio, è consigliabile [trasferire il dominio](../get-help-with-domains/buy-a-domain-name.md) in un host che supporta tutti i record necessari. Per una configurazione automatizzata delle procedure con Microsoft 365, è consigliabile trasferire il dominio in GoDaddy. 
-  
-> [!NOTE]
-> In genere l'applicazione delle modifiche al DNS richiede pochi minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  
-## <a name="add-a-txt-or-mx-record-for-verification"></a>Aggiungere un record TXT o MX a scopo di verifica
-<a name="BKMK_verify"> </a>
+Se è stato acquistato un dominio presso un provider di hosting di terze parti, è possibile connetterlo a Microsoft 365 aggiornando i record DNS nell'account del registrar.
 
-> [!NOTE]
-> È necessario creare solo uno di questi record. Il record TXT è solitamente il tipo preferito, ma non è supportato da alcuni provider di hosting DNS. In questi casi è possibile creare un record MX. 
-  
-Prima di usare il proprio dominio con Microsoft 365, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft 365 che si è il proprietario del dominio.
-  
-> [!NOTE]
-> Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
-  
- **Trovare l'area del sito Web del provider di hosting DNS in cui creare un nuovo record.**
-  
-1. Accedere al sito del provider del servizio di hosting DNS.
-    
-2. Scegliere il dominio.
-    
-3. Individuare la pagina in cui è possibile modificare i record DNS per il dominio.
-    
- **Creare il record.**
-  
-1. Eseguire una delle operazioni seguenti in base al record da creare, ossia TXT o MX:
-    
-   - **Se si crea un record TXT, usare questi valori:**
-    
-      |||||
-      |:-----|:-----|:-----|:-----|
-      |**Tipo di record**|**Alias** o **nome host**|**Valore**|**TTL**|
-      |TXT|Eseguire una delle operazioni seguenti: Digitare **@**, lasciare vuoto il campo o immettere il proprio nome di dominio.  <br/> **Nota:** i requisiti di questo campo variano a seconda dell'host DNS. |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365.  <br/>        [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Impostare questo valore su **1 ora** o sull'equivalente in minuti ( **60** ), secondi ( **3600** ) e così via.  |
-   
-   - **Se si crea un record MX, usare questi valori:**
-    
-      ||||||
-      |:-----|:-----|:-----|:-----|:-----|
-      |**Tipo di record**|**Alias** o **nome host**|**Valore**|**Priorità**|**TTL**|
-      |MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.    <br/>       [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
-   
-2. Salvare il record.
-    
-Una volta aggiunto il record al sito del registrar, è possibile tornare in Microsoft 365 e chiedere di cercarlo.
-  
-Quando Microsoft 365 trova il record TXT corretto, il dominio è verificato.
-  
-1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
-    
-2. Nella pagina **Domini** selezionare il dominio da verificare. 
-  
-3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
-       
-4. Nella pagina **Verifica dominio** selezionare **Verifica**.   
-  
-> [!NOTE]
->  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  
-## <a name="add-mx-record-to-route-email"></a>Aggiungere un record MX per instradare la posta elettronica
-<a name="BKMK_add_MX"> </a>
+Alla fine di questa procedura, il dominio rimarrà registrato con l'host da cui è stato acquistato, ma Microsoft 365 potrà usarlo per gli indirizzi di posta elettronica, ad esempio utente@dominio.com, e altri servizi.
 
-Aggiungere un record MX in modo che la posta elettronica del dominio venga recapitata in Microsoft 365.  *Quando si aggiorna il record MX del dominio, tutti i nuovi messaggi di posta elettronica indirizzati a chiunque usi il dominio verranno recapitati in Microsoft 365*. I messaggi già disponibili rimarranno nell'attuale host di posta elettronica, a meno che non si decida di [eseguire la migrazione di posta elettronica e contatti](../setup/migrate-email-and-contacts-admin.md) a Microsoft 365.
+Finché non verrà aggiunto un dominio, gli utenti dell'organizzazione useranno onmicrosoft.com per gli indirizzi di posta elettronica. È importante aggiungere il dominio prima di aggiungere utenti, per evitare una doppia configurazione.
 
- **Attività**
-  
-Trovare la pagina in cui è possibile creare i record del proprio dominio.
-  
-1. Accedere al sito Web dell'host DNS.
-    
-2. Scegliere il dominio.
-    
-3. Individuare la pagina in cui è possibile modificare i record DNS per il dominio.
-    
-::: moniker range="o365-worldwide"
+Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.md).
 
-  Il record MX aggiunto contiene il valore **Indirizzo di puntamento**, che ha un aspetto simile a \<MX token\>.mail.protection.outlook.com, dove \<MX token\> è un valore del tipo MSxxxxxxx. 
+## <a name="step-1-add-a-txt-record-to-verify-you-own-the-domain"></a>Passaggio 1: Aggiungere un record TXT per verificare la proprietà del dominio
 
-::: moniker-end
+Prima di tutto, è necessario dimostrare di essere proprietari del dominio che si vuole aggiungere a Microsoft 365.
 
-::: moniker range="o365-germany"
+1. Accedere all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) e selezionare **Mostra tutto** > **Impostazioni** > **Domini**.
+2. In una nuova scheda o finestra del browser accedere al proprio provider di hosting DNS, quindi individuare il percorso da cui gestire le impostazioni DNS (ad esempio, le impostazioni dei file di zona, Gestione domini, Gestione dominio, Gestore DNS).
+3. Passare alla pagina Gestore DNS del provider e aggiungere il record TXT indicato nell'interfaccia di amministrazione al dominio.
 
-  Il record MX aggiunto contiene il valore **Indirizzo di puntamento** che ha un aspetto simile a \<Token MX\>.mail.protection.outlook.de, dove \<Token MX\> è un valore di tipo MSxxxxxxx.   
+L'aggiunta di questo record non influirà sulla posta elettronica o su altri servizi esistenti, inoltre il record potrà essere rimosso una volta connesso il dominio a Microsoft 365.
 
-::: moniker-end
+Esempio:
+- Nome TXT: `@`
+- Valore TXT: MS=ms######## (ID univoco dall'interfaccia di amministrazione)
+- TTL: `3600‎` (o il provider predefinito)
 
-4. Nel sito Web dell'host DNS aggiungere un nuovo record MX.
-    
-    A questo punto si [otterranno le informazioni per il record MX](../get-help-with-domains/information-for-dns-records.md) da Microsoft 365. 
-    
-5. Per il record MX (del passaggio precedente) copiare il valore di **Indirizzo di puntamento**. 
-    
-    Questo valore verrà usato nel record da creare nel sito dell'host DNS, come descritto nel passaggio successivo.
-    
-6. Nel nuovo record MX nel sito dell'host DNS verificare che i campi siano impostati esattamente sui valori seguenti:
-    
-   - **Tipo di record**: **MX**
-    
-   - **Priorità**: impostare la priorità del record MX sul valore più alto disponibile, in genere **0**.
-    
-      Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
-    
-   - **Nome host**: **@**
-    
-   - **Indirizzo di puntamento**: incollare qui il valore di **Indirizzo di puntamento** copiato da Microsoft 365. 
-    
-   - **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. 
-    
-7. Salvare il record.
-    
-Rimuovere eventuali altri record MX.
-  
-Se per il dominio sono presenti record MX che inviano la posta elettronica a una destinazione diversa da Microsoft 365, eliminarli tutti.
-  
-## <a name="add-three-cname-records"></a>Aggiungere tre record CNAME
-<a name="BKMK_add_MX"> </a>
+4. Salvare il record, tornare nell'interfaccia di amministrazione, quindi selezionare **Verifica**. In genere occorrono circa 15 minuti prima che le modifiche apportate al record vengano registrate, ma a volte può essere necessario più tempo. Attendere il tempo richiesto ed effettuare i tentativi necessari per rilevare la modifica.
 
-::: moniker range="o365-worldwide"
-
-Procedere come segue per aggiungere i tre record CNAME necessari per Microsoft 365. Se in Microsoft 365 sono elencati altri record CNAME, aggiungerli eseguendo la stessa procedura illustrata qui.
-  
-Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in genere uno alla volta.
-  
-1. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti. Dopo aver aggiunto ognuno dei primi tre nuovi record, scegliere di creare un altro record CNAME.
-    
-      |||||
-      |:-----|:-----|:-----|:-----|
-      |**Tipo di record** <br/> |**Host** <br/> |**Punta a** <br/> |**TTL** <br/> |
-      |CNAME (alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 ora  <br/> |
-      |CNAME (alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 ora  <br/> |
-      |CNAME (alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 ora  <br/> |
-   
-   > [!NOTE]
-   > Per **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. > Questi record non si applicano alle distribuzioni ibride di Exchange, Lync o Skype for Business. 
-  
-2. Al termine, salvare i record.
-    
-::: moniker-end
-::: moniker range="o365-germany"
-
-Procedere come segue per aggiungere i tre record CNAME necessari per Microsoft 365. Se in Microsoft 365 sono elencati altri record CNAME, aggiungerli eseguendo la stessa procedura illustrata qui.
-  
-Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in genere uno alla volta.
-  
-1. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti. Dopo aver aggiunto ognuno dei primi tre nuovi record, scegliere di creare un altro record CNAME.
-    
-    |||||
-    |:-----|:-----|:-----|:-----|
-    |**Tipo di record** <br/> |**Host** <br/> |**Punta a** <br/> |**TTL** <br/> |
-    |CNAME (alias)  <br/> |autodiscover  <br/> |autodiscover-outlook.office.de  <br/> |1 ora  <br/> |
-    |CNAME (alias)  <br/> |lyncdiscover  <br/> |webdir.online.skype.de  <br/> |1 ora  <br/> |
-    |CNAME (alias)  <br/> |sip  <br/> |sipdir.online.lync.de  <br/> |1 ora  <br/> |
-   
-     > [!NOTE]
-     > Per **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. > Questi record non si applicano alle distribuzioni ibride di Exchange, Lync o Skype for Business. 
-  
-2. Al termine, salvare i record.
-    
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-Procedere come segue per aggiungere i tre record CNAME necessari per Microsoft 365. Se in Microsoft 365 sono elencati altri record CNAME, aggiungerli eseguendo la stessa procedura illustrata qui.
-  
-Nel sito Web dell'host DNS sarà necessario creare tre nuovi record CNAME, in genere uno alla volta.
-  
-1. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti. Dopo aver aggiunto ognuno dei primi tre nuovi record, scegliere di creare un altro record CNAME.
-    
-    |||||
-    |:-----|:-----|:-----|:-----|
-    |**Tipo di record** <br/> |**Host** <br/> |**Punta a** <br/> |**TTL** <br/> |
-    |CNAME (alias)  <br/> |individuazione automatica  <br/> |autodiscover.partner.outlook.cn  <br/> |1 ora  <br/> |
-    |CNAME (alias)  <br/> |lyncdiscover  <br/> |webdir.online.partner.lync.cn  <br/> |1 ora  <br/> |
-    |CNAME (alias)  <br/> |sip  <br/> |sipdir.online.partner.lync.cn  <br/> |1 ora  <br/> |
-   
-     > [!NOTE]
-     > Per **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. > Questi record non si applicano alle distribuzioni ibride di Exchange, Lync o Skype for Business. 
-  
-2. Al termine, salvare i record.
-    
-::: moniker-end
-
-## <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft-365"></a>Aggiungere due record CNAME per Gestione di dispositivi mobili (MDM) per Microsoft 365
-<a name="BKMK_add_MX"> </a>
-
-::: moniker range="o365-worldwide"
-
-> [!IMPORTANT]
-> Se si dispone di Gestione di dispositivi mobili per Microsoft 365, è necessario creare due record CNAME aggiuntivi. Seguire la procedura usata per gli altri quattro record CNAME, specificando però i valori della tabella seguente. > Se MDM non è installato, è possibile saltare questo passaggio. 
-  
-   |||||
-   |:-----|:-----|:-----|:-----|
-   |**Tipo di record** <br/> |**Host** <br/> |**Punta a** <br/> |**TTL** <br/> |
-   |CNAME (alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 ora  <br/> |
-   |CNAME (alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 ora  <br/> |
-   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!IMPORTANT]
-> Se si dispone di Gestione di dispositivi mobili per Microsoft 365, è necessario creare due record CNAME aggiuntivi. Seguire la procedura usata per gli altri quattro record CNAME, specificando però i valori della tabella seguente. > Se MDM non è installato, è possibile saltare questo passaggio. 
-  
-   |||||
-   |:-----|:-----|:-----|:-----|
-   |**Tipo di record** <br/> |**Host** <br/> |**Punta a** <br/> |**TTL** <br/> |
-   |CNAME (alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 ora  <br/> |
-   |CNAME (alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 ora  <br/> |
-   
-::: moniker-end
-
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
-<a name="BKMK_add_MX"> </a>
-
-::: moniker range="o365-worldwide"
-
-> [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft 365. Al contrario, aggiungere i valori di Microsoft 365 necessari al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori.
-  
-Nel sito Web dell'host DNS modificare il record SPF esistente o creare un nuovo record TXT per SPF.
-  
-> [!IMPORTANT]
-> SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Microsoft 365. Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
-  
-1. Nelle caselle del nuovo record digitare oppure copiare e incollare il set di valori seguenti applicabile al proprio caso.
-    
-    |||||
-    |:-----|:-----|:-----|:-----|
-    |**Tipo di record** <br/> |**Host** <br/> |**TXT Value** <br/> |**TTL** <br/> |
-    |TXT (testo)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |1 ora  <br/> |
-   
-    Per **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. 
-    
-2. Al termine, salvare il record.
-    
-3. Per convalidare il record SPF, usare uno di questi [strumenti di convalida SPF](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft 365. Al contrario, aggiungere i valori di Microsoft 365 necessari al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. 
-  
-Nel sito Web dell'host DNS modificare il record SPF esistente o creare un nuovo record TXT per SPF.
-  
-> [!IMPORTANT]
-> SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Microsoft 365. Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
-  
-1. Nelle caselle del nuovo record digitare oppure copiare e incollare il set di valori seguenti applicabile al proprio caso.
-    
-    |||||
-    |:-----|:-----|:-----|:-----|
-    |**Tipo di record**|**Host**|**TXT Value**|**TTL**|
-    |TXT (testo)|@|v=spf1 include:spf.protection.outlook.de -all <br/>  È consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |1 ora|
-   
-    Per **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. 
-    
-2. Al termine, salvare il record.
-    
-3. Per convalidare il record SPF, usare uno di questi [strumenti di convalida SPF](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain).
-    
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-> [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft 365. Al contrario, aggiungere i valori di Microsoft 365 necessari al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. 
-  
-Nel sito Web dell'host DNS modificare il record SPF esistente o creare un nuovo record TXT per SPF.
-  
-> [!IMPORTANT]
-> SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Microsoft 365. Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Successivamente, vedere [Utilizzare DMARC per convalidare la posta elettronica in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx). 
-  
-1. Nelle caselle del nuovo record digitare oppure copiare e incollare il set di valori seguenti applicabile al proprio caso.
-    
-    |||||
-    |:-----|:-----|:-----|:-----|
-    |**Tipo di record**|**Host**|**TXT Value**|**TTL**|
-    |TXT (testo)|@|v=spf1 include:spf.protection.partner.outlook.cn -all> [!NOTE]> È consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |1 ora|
-   
-    Per **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. 
-    
-2. Al termine, salvare il record.
-    
-3. Per convalidare il record SPF, usare uno di questi [strumenti di convalida SPF](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain).
-    
-::: moniker-end
-
-## <a name="add-two-srv-records"></a>Aggiungere due record SRV
-<a name="BKMK_add_MX"> </a>
-
-::: moniker range="o365-worldwide"
-
-Nel sito Web dell'host DNS sarà necessario creare due nuovi record SRV, in genere uno alla volta. Dopo aver aggiunto il primo record SRV sul sito Web, scegliere di crearne un altro.
-  
-1. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti. **Vedere le note seguenti per informazioni sulla creazione di record SRV quando presso l'host DNS non sono disponibili tutti questi campi distinti.**
-    
-    ||||||||||
-    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |**Tipo di record** <br/> |**Nome** <br/> |**Destinazione** <br/> |**Protocollo** <br/> |**Servizio** <br/> |**Priorità** <br/> |**Peso** <br/> |**Porta** <br/> |**TTL** <br/> |
-    |SRV (Service)  <br/> |@  <br/> (o lasciare vuoto se @ non è consentito)  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 ora  <br/> |
-    |SRV (Service)  <br/> |@  <br/> (o lasciare vuoto se @ non è consentito)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 ora  <br/> |
-   
-    > [!NOTE]
-    >  Per **Nome**: se l'host DNS non consente di impostare questo valore su **@**, lasciarlo vuoto. Usare questo approccio *solo* quando presso l'host DNS sono disponibili campi distinti per i valori Servizio e Protocollo. Altrimenti, vedere la nota sui valori Servizio e Protocollo di seguito. 
-    > 
-    >  Per **Servizio** e **Protocollo**: se presso l'host DNS non sono disponibili questi campi per i record SRV, è necessario specificare i valori **Servizio** e **Protocollo** come valore **Nome** del record. Nota: a seconda dell'host DNS, il campo **Nome** potrebbe avere una denominazione diversa, ad esempio **Host**, **Nome host** o **Sottodominio**. Per impostare il valore combinato, creare una singola stringa, separando i valori con un punto.  Ad esempio: **Nome**: _sip._tls 
-    > 
-    >  Per **Priorità**, **Peso** e **Porta**: se presso l'host DNS non sono disponibili questi campi per i record SRV, è necessario specificarli come valore **Destinazione** del record. Nota: a seconda dell'host DNS, il campo **Destinazine** potrebbe avere una denominazione diversa, ad esempio: **Contenuto**, **Indirizzo IP** o **Host destinazione**. Per impostare il valore combinato, occorre creare una singola stringa, separando i valori con uno spazio e terminando con un punto. I valori devono essere inclusi in questo ordine: Priorità, Peso, Porta, Destinazione. Ad esempio: **Destinazione**: 100 1 443 sipdir.online.lync.com. 
-    > 
-    >  Variante per **Priorità**, **Peso** e **Porta**: presso alcuni host DNS alcuni di questi campi, ma non tutti, sono disponibili singolarmente. Nei siti di questi host DNS è necessario specificare i valori che non sono visualizzati separatamente come una stringa combinata, nell'ordine corretto, per il valore **Destinazione** del record. Nota: a seconda dell'host DNS, il campo **Destinazine** potrebbe avere una denominazione diversa, ad esempio: **Contenuto**, **Indirizzo IP** o **Host destinazione**. Per impostare il valore combinato occorre creare una singola stringa per i campi che non sono visualizzati singolarmente, separando i valori con uno spazio. I valori devono essere inclusi *nell'ordine corretto*, escludendo i valori per cui sono disponibili campi separati: Priorità, Peso, Porta, Destinazione. Ad esempio, se Priorità ha un campo distinto, concatenare solo i valori Peso, Porta, Destinazione: **Destinazione**: 1 443 sipdir.online.lync.com 
-    > 
-    > Per **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. 
-  
-2. Al termine, salvare i record.
-    
-    > [!NOTE]
-    >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  
-::: moniker-end
+Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 
-::: moniker range="o365-germany"
+## <a name="step-2-add-dns-records-to-connect-microsoft-services"></a>Passaggio 2: Aggiungere record DNS per connettere servizi Microsoft
 
-Nel sito Web dell'host DNS sarà necessario creare due nuovi record SRV, in genere uno alla volta. Dopo aver aggiunto il primo record SRV sul sito Web, scegliere di crearne un altro.
-  
-1. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti. **Vedere le note seguenti per informazioni sulla creazione di record SRV quando presso l'host DNS non sono disponibili tutti questi campi distinti.**
-    
-    ||||||||||
-    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |**Tipo di record** <br/> |**Nome** <br/> |**Destinazione** <br/> |**Protocollo** <br/> |**Servizio** <br/> |**Priorità** <br/> |**Peso** <br/> |**Porta** <br/> |**TTL** <br/> |
-    |SRV (Service)  <br/> |@  <br/> (o lasciare vuoto se @ non è consentito)  <br/> |sipdir.online.lync.de  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 ora  <br/> |
-    |SRV (Service)  <br/> |@  <br/> (o lasciare vuoto se @ non è consentito)  <br/> |sipfed.online.lync.de  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 ora  <br/> |
-   
-    > [!NOTE]
-    >  Per **Nome**: se l'host DNS non consente di impostare questo valore su **@**, lasciarlo vuoto. Usare questo approccio *solo* quando presso l'host DNS sono disponibili campi distinti per i valori Servizio e Protocollo. Altrimenti, vedere la nota sui valori Servizio e Protocollo di seguito. 
-    > 
-    >  Per **Servizio** e **Protocollo**: se presso l'host DNS non sono disponibili questi campi per i record SRV, è necessario specificare i valori **Servizio** e **Protocollo** come valore **Nome** del record. Nota: a seconda dell'host DNS, il campo **Nome** potrebbe avere una denominazione diversa, ad esempio **Host**, **Nome host** o **Sottodominio**. Per impostare il valore combinato, creare una singola stringa, separando i valori con un punto. > Ad esempio: **Nome**: _sip._tls 
-    > 
-    >  Per **Priorità**, **Peso** e **Porta**: se presso l'host DNS non sono disponibili questi campi per i record SRV, è necessario specificarli come valore **Destinazione** del record. Nota: a seconda dell'host DNS, il campo **Destinazine** potrebbe avere una denominazione diversa, ad esempio: **Contenuto**, **Indirizzo IP** o **Host destinazione**. Per impostare il valore combinato, occorre creare una singola stringa, separando i valori con uno spazio e terminando con un punto. I valori devono essere inclusi in questo ordine: Priorità, Peso, Porta, Destinazione. > Ad esempio: **Destinazione**: 100 1 443 sipdir.online.lync.de. 
-    > 
-    >  Variante per **Priorità**, **Peso** e **Porta**: presso alcuni host DNS alcuni di questi campi, ma non tutti, sono disponibili singolarmente. Nei siti di questi host DNS è necessario specificare i valori che non sono visualizzati separatamente come una stringa combinata, nell'ordine corretto, per il valore **Destinazione** del record. Nota: a seconda dell'host DNS, il campo **Destinazine** potrebbe avere una denominazione diversa, ad esempio: **Contenuto**, **Indirizzo IP** o **Host destinazione**. Per impostare il valore combinato occorre creare una singola stringa per i campi che non sono visualizzati singolarmente, separando i valori con uno spazio. I valori devono essere inclusi *nell'ordine corretto*, escludendo i valori per cui sono disponibili campi separati: Priorità, Peso, Porta, Destinazione. > Ad esempio, se Priorità ha un campo distinto, concatenare solo i valori Peso, Porta e Destinazione: **Destinazione**: 1 443 sipdir.online.lync.de 
-    > 
-    >  Per **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. 
-  
-2. Al termine, salvare i record.
-    
-    > [!NOTE]
-    >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  
-::: moniker-end
+In una nuova scheda o finestra del browser accedere al proprio provider di hosting DNS, quindi individuare il percorso da cui gestire le impostazioni DNS (ad esempio, le impostazioni dei file di zona, Gestione domini, Gestione dominio, Gestore DNS).
+
+Verranno aggiunti diversi tipi di record DNS in base ai servizi da abilitare. 
+
+### <a name="add-an-mx-record-for-email-outlook-exchange-online"></a>Aggiungere un record MX per la posta elettronica (Outlook, Exchange Online)
+**Prima di iniziare:** se gli utenti hanno già un'e-mail con il proprio dominio (ad esempio utente@dominio.com), creare gli account nell'interfaccia di amministrazione prima di configurare i record MX. In questo modo potranno continuare a ricevere messaggi di posta elettronica. Quando si aggiorna il record MX del dominio, tutti i nuovi messaggi di posta elettronica indirizzati a chiunque usi il dominio verranno recapitati in Microsoft 365. I messaggi già disponibili rimarranno nell'attuale host di posta elettronica, a meno che non si decida di [eseguire la migrazione di posta elettronica e contatti](../setup/migrate-email-and-contacts-admin.md) a Microsoft 365.
+
+Le informazioni per il record MX saranno disponibili durante la configurazione dominio guidata dell'interfaccia di amministrazione.
+
+Nel sito Web del provider di hosting, aggiungere un nuovo record MX.
+Verificare che i campi siano impostati sui valori seguenti:
+
+- Tipo di record: `MX`
+- Priorità: impostare sul valore massimo disponibile, in genere `0`.
+- Nome host: `@`
+- Indirizzo di puntamento: copiare il valore dall'interfaccia di amministrazione e incollarlo qui.
+- TTL: `3600‎` (o il provider predefinito)
+
+Salvare il record, quindi rimuovere qualsiasi altro record MX.
+
+### <a name="add-cname-records-to-connect-other-services-teams-exchange-online-aad-mdm"></a>Aggiungere record CNAME per connettere altri servizi (Teams, Exchange Online, AAD, MDM)
+Le informazioni per i record CNAME saranno disponibili durante la configurazione dominio guidata dell'interfaccia di amministrazione.
+
+Nel sito Web del provider di hosting, aggiungere i record CNAME per ogni servizio che si vuole connettere.
+Verificare che i campi siano impostati sui valori seguenti per ciascun:
+
+- Tipo di record: `CNAME (Alias)`
+- Host: incollare qui i valori copiati dall'interfaccia di amministrazione.
+- Indirizzo di puntamento: copiare il valore dall'interfaccia di amministrazione e incollarlo qui.
+- TTL: `3600‎` (o il provider predefinito)
 
 
-::: moniker range="o365-21vianet"
+### <a name="add-or-edit-an-spf-txt-record-to-help-prevent-email-spam-outlook-exchange-online"></a>Aggiungere o modificare un record TXT SPF per evitare di ricevere posta indesiderata (Outlook, Exchange Online)
+**Prima di iniziare:** se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft 365. Aggiungere invece i valori di Microsoft 365 necessari al record corrente nel sito Web del provider di hosting, in modo da ottenere un *unico* record SPF che includa entrambi i set di valori.
 
-Nel sito Web dell'host DNS sarà necessario creare due nuovi record SRV, in genere uno alla volta. Dopo aver aggiunto il primo record SRV sul sito Web, scegliere di crearne un altro.
-  
-1. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti. **Vedere le note seguenti per informazioni sulla creazione di record SRV quando presso l'host DNS non sono disponibili tutti questi campi distinti.**
-    
-    ||||||||||
-    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |**Tipo di record** <br/> |**Nome** <br/> |**Destinazione** <br/> |**Protocollo** <br/> |**Servizio** <br/> |**Priorità** <br/> |**Peso** <br/> |**Porta** <br/> |**TTL** <br/> |
-    |SRV (Service)  <br/> |@  <br/> (o lasciare vuoto se @ non è consentito)  <br/> |sipdir.online.partner.lync.cn  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 ora  <br/> |
-    |SRV (Service)  <br/> |@  <br/> (o lasciare vuoto se @ non è consentito)  <br/> |sipfed.online.partner.lync.cn  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 ora  <br/> |
-   
-    > [!NOTE]
-    >  Per **Nome**: se l'host DNS non consente di impostare questo valore su **@**, lasciarlo vuoto. Usare questo approccio *solo* quando presso l'host DNS sono disponibili campi distinti per i valori Servizio e Protocollo. Altrimenti, vedere la nota sui valori Servizio e Protocollo di seguito. 
-    > 
-    >  Per **Servizio** e **Protocollo**: se presso l'host DNS non sono disponibili questi campi per i record SRV, è necessario specificare i valori **Servizio** e **Protocollo** come valore **Nome** del record. Nota: a seconda dell'host DNS, il campo **Nome** potrebbe avere una denominazione diversa, ad esempio **Host**, **Nome host** o **Sottodominio**. Per impostare il valore combinato, creare una singola stringa, separando i valori con un punto. > Ad esempio: **Nome**: _sip._tls 
-    > 
-    >  Per **Priorità**, **Peso** e **Porta**: se presso l'host DNS non sono disponibili questi campi per i record SRV, è necessario specificarli come valore **Destinazione** del record. Nota: a seconda dell'host DNS, il campo **Destinazine** potrebbe avere una denominazione diversa, ad esempio: **Contenuto**, **Indirizzo IP** o **Host destinazione**. Per impostare il valore combinato, occorre creare una singola stringa, separando i valori con uno spazio e terminando con un punto. I valori devono essere inclusi in questo ordine: Priorità, Peso, Porta, Destinazione. > Ad esempio: **Destinazione**: 100 1 443 sipdir.online.partner.lync.cn. 
-    > 
-    >  Variante per **Priorità**, **Peso** e **Porta**: presso alcuni host DNS alcuni di questi campi, ma non tutti, sono disponibili singolarmente. Nei siti di questi host DNS è necessario specificare i valori che non sono visualizzati separatamente come una stringa combinata, nell'ordine corretto, per il valore **Destinazione** del record. Nota: a seconda dell'host DNS, il campo **Destinazine** potrebbe avere una denominazione diversa, ad esempio: **Contenuto**, **Indirizzo IP** o **Host destinazione**. Per impostare il valore combinato occorre creare una singola stringa per i campi che non sono visualizzati singolarmente, separando i valori con uno spazio. I valori devono essere inclusi *nell'ordine corretto*, escludendo i valori per cui sono disponibili campi separati: Priorità, Peso, Porta, Destinazione. > Ad esempio, se Priorità ha un campo distinto, concatenare solo i valori Peso, Porta, Destinazione: **Destinazione**: 1 443 sipdir.online.partner.lync.cn 
-    > 
-    >  Per **TTL**: impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. 
-  
-2. Al termine, salvare i record.
-    
-    > [!NOTE]
-    >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  
-::: moniker-end
+Nel sito Web del provider di hosting, creare un record SPF o modificarne uno esistente.
+Verificare che i campi siano impostati sui valori seguenti:
 
-## <a name="more-about-updating-dns-records"></a>Altre informazioni sull'aggiornamento dei record DNS
-<a name="BKMK_MoreAbout"> </a>
+- Tipo di record: `TXT (Text)`
+- Host: `@`
+- Valore TXT: `v=spf1 include:spf.protection.outlook.com -all`
+- TTL: `3600‎` (o il provider predefinito)
 
- **Se si sa come aggiornare i record DNS nell'host DNS del proprio dominio**, usare i valori DNS di Microsoft 365 per modificare i record nell'host DNS del dominio, ad esempio per configurare un record MX o un record SPF. Per trovare i valori specifici da usare, [eseguire questa procedura](../get-help-with-domains/information-for-dns-records.md) oppure visualizzarli nei passaggi della configurazione guidata del dominio.
-  
- **Se è necessaria assistenza per aggiungere i record DNS necessari**, vedere [Configurare il dominio (istruzioni specifiche per l'host)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide) e [raccogliere innanzitutto le informazioni necessarie per creare record DNS di Microsoft 365](../get-help-with-domains/information-for-dns-records.md). Seguire quindi i passaggi generali descritti in questo argomento per configurare i record DNS del dominio in modo da poter usare il dominio con i servizi di Microsoft 365, come la posta elettronica.
-  
- **Se non si ha un sito Web da usare con il dominio personalizzato**, è possibile affidare a Microsoft 365 la configurazione e la gestione dei record DNS per il dominio invece di eseguire tutte le operazioni manualmente. Leggere informazioni sulle [due opzioni disponibili per configurare e gestire i record DNS per un dominio personalizzato](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. 
-  
+Salvare il record.
 
+Convalidare il record SPF usando uno di questi [strumenti di convalida SPF](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+
+SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile impostare anche DKIM e DMARC per Microsoft 365. 
+
+Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) e [Usare DKIM per convalidare la posta elettronica in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+
+### <a name="add-srv-records-for-communications-services-teams-skype-for-business"></a>Aggiungere record SRV per servizi di comunicazione (Teams, Skype for Business)
+
+Nel sito Web del provider di hosting, aggiungere i record SRV per ogni servizio che si vuole connettere.
+Verificare che i campi siano impostati sui valori seguenti per ciascun:
+
+- Tipo di record: `SRV (Service)`
+- Nome: `@`
+- Destinazione: copiare il valore dall'interfaccia di amministrazione e incollarlo qui.
+- Protocollo: copiare il valore dall'interfaccia di amministrazione e incollarlo qui.
+- Servizio: copiare il valore dall'interfaccia di amministrazione e incollarlo qui.
+- Priorità: `100`
+- Peso: `1`
+- Porta: copiare il valore dall'interfaccia di amministrazione e incollarlo qui.
+- TTL: `3600‎` (o il provider predefinito)
+
+Salvare il record.
+
+#### <a name="srv-record-field-restrictions-and-workarounds"></a>Restrizioni del campo SRV e soluzioni alternative
+Alcuni provider di hosting impongono restrizioni sui valori dei campi all'interno dei record SRV. Di seguito sono riportate alcune soluzioni alternative comuni per queste restrizioni.
+
+##### <a name="name"></a>Nome
+Se il provider di hosting non consente di configurare questo campo per **@**, lasciarlo vuoto. Usare questo approccio *solo* quando il provider di hosting ha campi distinti per i valori Servizio e Protocollo. Altrimenti, vedere la nota sui valori Servizio e Protocollo di seguito.
+
+##### <a name="service-and-protocol"></a>Servizio e Protocollo
+Se presso il provider di hosting non sono disponibili questi campi per i record SRV, è necessario specificare i valori **Servizio** e **Protocollo** nel campo **Nome** del record. Nota: a seconda del provider di hosting, il campo **Nome** potrebbe avere una denominazione diversa, ad esempio **Host**, **Nome host** o **Sottodominio**. Per aggiungere questi valori, creare una singola stringa, separando i valori con un punto. 
+
+Esempio: `_sip._tls`
+
+##### <a name="priority-weight-and-port-br"></a>Priorità, Peso e Porta <br>
+Se presso il provider di hosting non sono disponibili questi campi per i record SRV, è necessario specificarli nel campo **Destinazione** del record. Nota: a seconda del provider di hosting, il campo **Destinazione** potrebbe avere una denominazione diversa, ad esempio **Contenuto**, **Indirizzo IP** o **Host di destinazione**. 
+
+Per aggiungere questi valori, creare una singola stringa, separando i valori con spazi e *a volte terminando con un punto* (rivolgersi al provider in caso di dubbi). I valori devono essere inclusi in questo ordine: Priorità, Peso, Porta, Destinazione. 
+
+- Esempio 1: `100 1 443 sipdir.online.lync.com.`
+- Esempio 2: `100 1 443 sipdir.online.lync.com`

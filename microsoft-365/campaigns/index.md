@@ -26,38 +26,38 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 per le campagne
 ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
 ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "43632036"
 ---
-<a name="microsoft-365-for-campaigns"></a>Microsoft 365 per le campagne
+<a name="microsoft-365-for-campaigns"></a>Microsoft 365 per le Campagne
 ===========================
 
-Nel nostro mondo attuale, mantenere i dati e le comunicazioni sicure è una priorità, in particolare per le campagne politiche, le procedure mediche e legali e molte altre aziende. Microsoft 365 per le campagne include una serie di suggerimenti che consentono di proteggere l'utente e i dati. Questa raccolta include la guida per la configurazione e l'utilizzo di questo ambiente consigliato, anche se non si è una campagna.
+Nel mondo attuale, proteggere i dati e le comunicazioni è una priorità, soprattutto per le campagne politiche, gli studi medici e legali e molte altre aziende. Microsoft 365 per le campagne include una serie di suggerimenti il cui scopo è aiutare a proteggere se stessi e i propri dati. Questa raccolta include informazioni per configurare e usare questo ambiente consigliato, anche se non è in corso una campagna.
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
 
 
-**Che cos'è Microsoft 365 per le campagne?** Si tratta di una configurazione sicura consigliata che include Microsoft 365 Business Premium in modo che sia possibile:
-- Fare affidamento su strumenti di collaborazione e produttività aziendali attendibili, ad esempio Outlook, Word, Excel e altri prodotti Office 
-- Proteggere i file di lavoro su tutti i dispositivi iOS, Android e Windows 10 con sicurezza di livello aziendale semplice da gestire 
-- Applicare una protezione supplementare per gli account utente e l'identità 
+**Che cos'è Microsoft 365 per le Campagne?** Si tratta di una configurazione sicura consigliata che include Microsoft 365 Business Premium, che consente di:
+- Fare affidamento su strumenti di produttività e collaborazione aziendali attendibili, tra cui Outlook, Word, Excel e altri prodotti di Office. 
+- Proteggere i file di lavoro in tutti i dispositivi iOS, Android e Windows 10 con sicurezza di livello aziendale semplice da gestire 
+- Applicare una protezione aggiuntiva per account utente e identità 
 
-![Microsoft 365 Business Premium protegge gli strumenti di produttività, gli strumenti di collaborazione, l'archiviazione dei file, la posta elettronica, i dispositivi e l'identità](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium protegge strumenti di produttività, strumenti di collaborazione, archiviazione di file, posta elettronica, dispositivi e identità](../media/M365-WhatIsIt-SecurityFocus.png)
 
-Mentre le campagne elettorali federali negli Stati Uniti si qualificano per i prezzi speciali per Microsoft 365 Business Premium, qualsiasi organizzazione con questo piano può trarre vantaggio da queste linee guida per configurare una maggiore sicurezza e scoprire come collaborare in modo sicuro.
+Benché le campagne elettorali federali negli Stati Uniti siano idonee a ricevere prezzi speciali per Microsoft 365 Business Premium, qualsiasi organizzazione che acquisti il piano può trarre vantaggio da queste indicazioni per aumentare la sicurezza e imparare a collaborare in modo sicuro.
 
-Questa raccolta include gli elementi seguenti:
-- Indicazioni relative all'installazione prescrittiva per l'aggiunta di maggiore sicurezza.
-- Guida per gli utenti all'installazione di dispositivi per l'accesso sicuro.
-- Linee guida su come collaborare e condividere in modo sicuro.
+La raccolta include i seguenti elementi:
+- Linee guida per la configurazione per una maggiore sicurezza.
+- Guida per gli utenti per configurare dispositivi per l'accesso sicuro.
+- Guida alla collaborazione e condivisione sicura.
 
-Per ulteriori informazioni su ciò che è incluso, vedere [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business). 
+Per altre informazioni sul contenuto incluso, vedere [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business). 
 
 
-<a name="get-started"></a>Attività iniziali
+<a name="get-started"></a>Per iniziare
 --------------------------
 
 <ul class="panelContent cardsJ">
@@ -71,10 +71,10 @@ Per ulteriori informazioni su ciò che è incluso, vedere [Microsoft 365 Busines
                         </div>
                     </div>
                     <div class="cardText">
-                        <p><b>Per iniziare, attenersi alla procedura seguente:</b></p>
-                        <P><a href="get-microsoft-365-campaigns.md">Ottenere le campagne Microsoft 365</a></p>
-                        <P><a href="m365-campaigns-users.md">Informazioni su come gli utenti funzioneranno con Microsoft 365</a></p>
-                        <P><a href="microsoft-365-campaigns-setup-overview.md">Configurare le campagne di Microsoft 365</a></p>
+                        <p><b>Seguire questi passaggi per iniziare:</b></p>
+                        <P><a href="get-microsoft-365-campaigns.md">Ottenere Microsoft 365 per le campagne</a></p>
+                        <P><a href="m365-campaigns-users.md">Scoprire in che modo gli utenti useranno Microsoft 365</a></p>
+                        <P><a href="microsoft-365-campaigns-setup-overview.md">Configurare Microsoft 365 per le campagne</a></p>
                     </div>
                 </div>
             </div>
@@ -82,10 +82,10 @@ Per ulteriori informazioni su ciò che è incluso, vedere [Microsoft 365 Busines
     </li>
 </ul>
 
-<a name="solutions-for-your-campaign-or-small-business"></a>Soluzioni per la tua campagna o per le piccole imprese
+<a name="solutions-for-your-campaign-or-small-business"></a>Soluzioni per la campagna o per le piccole imprese
 --------------------------
 
-Dopo aver configurato l'ambiente Microsoft 365 sicuro, è possibile utilizzare le seguenti soluzioni per ottenere il funzionamento:
+Dopo aver configurato l'ambiente Microsoft 365, è possibile usare le soluzioni seguenti per iniziare a lavorare:
 
 <ul class="panelContent cardsW cols cols2">
     <li>
@@ -98,8 +98,8 @@ Dopo aver configurato l'ambiente Microsoft 365 sicuro, è possibile utilizzare l
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Creare team per la collaborazione</h3>
-                        <p>Creare uno spazio per la comunicazione e la collaborazione con team specifici per il personale chiave, tutto il personale e i partner o i fornitori con Microsoft teams.</p>
+                        <h3>Creare team per collaborare</h3>
+                        <p>Creare uno spazio per le comunicazioni e la collaborazione con team specifici per personale chiave, tutto il personale, partner o fornitori con Microsoft Teams.</p>
                         <p><a href="create-teams-for-collaboration.md">Creare il team</a></p>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ Dopo aver configurato l'ambiente Microsoft 365 sicuro, è possibile utilizzare l
                     </div>
                     <div class="cardText">
                         <h3>Configurare le riunioni online</h3>
-                        <p>Pianificare una riunione con audio, video e condivisione con Microsoft teams.</p>
+                        <p>Pianificare una riunione con audio, video e condivisione con Microsoft Teams.</p>
                         <p><a href="set-up-meetings.md">Configurare una riunione</a></p>
                     </div>
                 </div>
@@ -134,8 +134,8 @@ Dopo aver configurato l'ambiente Microsoft 365 sicuro, è possibile utilizzare l
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Crittografare o contrassegnare il messaggio di posta elettronica sensibile</h3>
-                        <p>Utilizzare le etichette di crittografia e sensibilità per proteggere la posta elettronica che contiene informazioni riservate o sensibili.</p>
+                        <h3>Crittografare o etichettare le comunicazioni di posta elettronica sensibili</h3>
+                        <p>Usare le etichette di crittografia e riservatezza per proteggere la posta elettronica che contiene informazioni riservate o sensibili.</p>
                         <p><a href="send-encrypted-email.md">Inviare messaggi di posta elettronica crittografati</a></p>
                     </div>
                 </div>
@@ -152,8 +152,8 @@ Dopo aver configurato l'ambiente Microsoft 365 sicuro, è possibile utilizzare l
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Creare un sito per le comunicazioni</h3>
-                        <p>Condividere eventi, messaggi, immagini e altro ancora con il team in un sito di comunicazione interno creato con SharePoint.</p>
+                        <h3>Creare un sito di comunicazione</h3>
+                        <p>Condividere eventi, messaggi, immagini e altro con il team in un sito di comunicazioni interno creato con SharePoint.</p>
                         <p><a href="create-communications-site.md">Creare il sito</a></p>
                     </div>
                 </div>
@@ -171,8 +171,8 @@ Dopo aver configurato l'ambiente Microsoft 365 sicuro, è possibile utilizzare l
                     </div>
                     <div class="cardText">
                         <h3>Condividere file e video</h3>
-                        <p>Salvare i file e i video nel cloud in modo che siano disponibili per tutte le persone appropriate.</p>
-                        <p><a href="share-files-and-videos.md">Avviare la condivisione</a></p>
+                        <p>È possibile salvare i file e i video nel cloud, in modo che siano disponibili per tutte le persone appropriate.</p>
+                        <p><a href="share-files-and-videos.md">Iniziare a condividere</a></p>
                     </div>
                 </div>
             </div>
