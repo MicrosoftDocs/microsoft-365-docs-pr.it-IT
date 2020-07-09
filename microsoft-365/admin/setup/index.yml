@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Introduzione
-summary: Consultare queste risorse per aiutare gli amministratori a svolgere attività comuni oppure visualizzare il riquadro di spostamento a sinistra per un elenco completo.
+summary: Consultare queste risorse per aiutare gli amministratori a eseguire attività comuni, o vedere il riquadro di spostamento a sinistra per l'elenco completo.
 metadata:
-  title: Per iniziare
-  description: Configurare l'abbonamento e la posta elettronica. aggiungere utenti e installare le app
+  title: Introduzione
+  description: Configurare la sottoscrizione e la posta elettronica. aggiungere utenti e installare app
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,42 +13,42 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 0af560ae2a7f8aa028e0cb493c9070f78f93e0a4
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44779846"
 landingContent:
-- title: Effettuare la registrazione
+- title: Registrarsi
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Scegliere un piano e iscriversi a Microsoft 365
+    - text: Scegliere un piano e registrarsi su Microsoft 365.
       url: ../admin-overview/sign-up-for-office-365.md
   - linkListType: video
     links:
-    - text: Registrazione e configurazione di Microsoft Business Basic
+    - text: Registrarsi e configurare Microsoft Business Basic
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-    - text: Iscriversi a Microsoft Business standard
+    - text: Registrarsi e configurare Microsoft Business Standard
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-    - text: Iscriversi a Microsoft Business Premium
+    - text: Registrarsi e configurare Microsoft Business Premium
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
 - title: Configurazione guidata
   linkLists:
   - linkListType: overview
     links:
-    - text: Pianificare la configurazione
+    - text: Pianificare la configurazione guidata
       url: plan-your-setup.md
   - linkListType: how-to-guide
     links:
     - text: Configurare Microsoft Business Basic
       url: setup-business-basic.md
-    - text: Configurare Microsoft Business standard
+    - text: Configurare Microsoft Business Standard
       url: setup-business-standard.md
     - text: Configurare Microsoft Business Premium
       url: ../../business/set-up.md
-    - text: Configurare le app di Microsoft per le aziende
+    - text: Configurare Microsoft Apps for Business
       url: setup-apps-for-business.md
-- title: Terminare la configurazione
+- title: Completare la configurazione
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -64,7 +64,7 @@ landingContent:
       url: https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236
     - text: Installare le app su iOS
       url: https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
-    - text: Formazione degli utenti
+    - text: Formare gli utenti
       url: https://support.microsoft.com/training
     - text: Connettere i PC a Microsoft 365 Business Premium
       url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07
