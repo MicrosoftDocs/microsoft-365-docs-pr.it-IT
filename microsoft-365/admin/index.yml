@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Guida all'interfaccia di amministrazione di Microsoft 365
-summary: Esplorare le risorse per l'utilizzo nell'interfaccia di amministrazione di Microsoft 365.
+summary: Esplora le risorse dell’interfaccia di amministrazione di Microsoft 365.
 brand: m365
 metadata:
   title: Guida all'interfaccia di amministrazione di Microsoft 365
@@ -15,26 +15,26 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 9d8104660c4686b2240c292509a499a25308d9f6
   ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44799960"
 highlightedContent:
   items:
-  - title: Office 365 è ora Microsoft 365!
+  - title: Office 365 ora è Microsoft 365!
     itemType: whats-new
     url: new-subscription-names.md
-  - title: Novità dell'interfaccia di amministrazione di Microsoft 365
+  - title: Novità dell’interfaccia di amministrazione di Microsoft 365!
     itemType: whats-new
     url: whats-new-in-preview.md
-  - title: Rimanere in cima alle modifiche di Microsoft 365
+  - title: Restare aggiornati sulle novità di Microsoft 365
     itemType: how-to-guide
     url: manage/stay-on-top-of-updates.md
 productDirectory:
-  title: Per iniziare
+  title: Introduzione
   summary: Configurare l'abbonamento e la posta elettronica, aggiungere utenti e installare le app.
   items:
-  - title: Per iniziare
+  - title: Introduzione
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
     summary: Iscriversi e configurare Microsoft 365.
     url: setup/index.yml
@@ -46,39 +46,39 @@ productDirectory:
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
     summary: Installare Office e altre app Microsoft.
     url: setup/install-applications.md
-  - title: Formazione degli utenti
+  - title: Formare gli utenti
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Aiutare gli utenti dell'organizzazione a scoprire come archiviare e condividere file e usare le app di Office.
+    summary: Aiuta gli utenti dell'organizzazione a imparare ad archiviare e condividere i file e usare le app di Office.
     url: https://support.microsoft.com/training
 additionalContent:
   sections:
   - title: Gestione
-    summary: Gestire gli abbonamenti, i servizi e gli utenti, proteggere la propria azienda e ottenere assistenza per la risoluzione dei problemi.
+    summary: Gestire l'abbonamento, i servizi e gli utenti, proteggere la propria azienda e ottenere assistenza per la risoluzione dei problemi.
     items:
     - title: Informazioni generali sull'interfaccia di amministrazione di Microsoft 365
-      summary: Informazioni sui ruoli di amministratore, su come rimanere al di sopra delle modifiche e su come personalizzare l'abbonamento.
+      summary: Informazioni sui ruoli di amministrazione, su come mantenersi aggiornati sulle modifiche e su come personalizzare l'abbonamento.
       url: admin-overview/about-the-admin-center.md
     - title: Utenti e gruppi
-      summary: Gestione delle password, aggiunta e rimozione degli utenti, configurazione e gestione dei gruppi, gestione dell'accesso guest e assegnazione delle licenze utente.
+      summary: È possibile gestire le password, aggiungere e rimuovere utenti, configurare e gestire i gruppi, gestire l'accesso per ospiti e assegnare le licenze utente.
       url: add-users/index.yml
-    - title: Messaggi di posta elettronica e calendari
-      summary: Gestire le impostazioni di posta elettronica, i gruppi di distribuzione e le impostazioni di sicurezza e configurare le cassette postali condivise.
+    - title: Email e calendari
+      summary: Gestire le impostazioni della posta elettronica, i gruppi di distribuzione e le impostazioni di sicurezza, e configurare le cassette postali condivise.
       url: email/index.yml
     - title: Domini
-      summary: Informazioni su domini, configurare e gestire i domini e aggiornare i record DNS.
+      summary: Informazioni sui domini, e su come configurare e gestire i domini e aggiornare i record DNS.
       url: setup/add-domain.md
     - title: Dati e servizi
-      summary: Monitorare lo stato del servizio, eseguire il backup dei dati, installare i componenti aggiuntivi e eseguire l'aggiornamento alle app più recenti.
+      summary: Monitorare lo stato del servizio, eseguire il backup dei dati, installare componenti aggiuntivi e aggiornare le app.
       url: manage/index.yml
     - title: Abbonamenti e fatturazione
-      summary: Gestire bollette, abbonamenti e licenze di prodotto, aggiornare i metodi di pagamento e acquistare servizi e archiviazione aggiuntivi.
+      summary: Gestire fatture, abbonamenti e licenze di prodotto, aggiornare il metodo di pagamento, e acquistare servizi e spazio di archiviazione aggiuntivi.
       url: ../commerce/index.yml
     - title: Proteggere l'organizzazione
-      summary: Informazioni sui migliori modi per proteggere l'organizzazione come la configurazione dell'autenticazione a più fattori (AMF), nonché informazioni su Microsoft Secure score and GDPR.
+      summary: Informazioni sui modi migliori per proteggere l'organizzazione, come l'autenticazione a più fattori (MFA), oltre a informazioni su Microsoft Secure Score e RGPD.
       url: security-and-compliance/secure-your-business-data.md
     - title: Lavorare con i clienti
-      summary: Condivisione di documenti e utilizzo di team per la collaborazione e la riunione.
+      summary: Condividere documenti e usare Teams per collaborare e incontrarsi.
       url: work-with-customers/index.yml
     - title: Risoluzione dei problemi
-      summary: Accedere alle risorse che consentono di risolvere i problemi relativi ai prodotti o ai servizi di Office.
+      summary: Accedere alle risorse per risolvere e correggere i problemi dei prodotti o servizi di Office.
       url: https://docs.microsoft.com/office/troubleshoot/
