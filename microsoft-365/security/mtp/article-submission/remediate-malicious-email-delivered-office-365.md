@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Correzione delle minacce
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 6c05eac80c6de546a30f9abe29360178bcbcfcf8
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: eb86c0b8e5368a42daa1002de5ac361613037090
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068183"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086692"
 ---
 # <a name="remediate-malicious-email-that-was-delivered-in-office-365"></a>Correzione di messaggi di posta elettronica dannosi recapitati in Office 365
 
@@ -77,8 +77,6 @@ Centro azioni Visualizza tutte le azioni di correzione negli ultimi 30 giorni. L
 Ogni elemento di correzione può essere aperto per visualizzarne i dettagli. Quando si apre un elemento di correzione, vengono visualizzati i dettagli di correzione di base, il nome della correzione, la data di creazione, la descrizione, la gravità delle minacce e lo stato. Vengono inoltre visualizzate due schede. 
 
 1. **Scheda invio posta**: questo è il numero di messaggi inviati tramite Esplora minacce o indagini automatizzate da correggere. Questi messaggi di posta elettronica possono essere:
-
-:::image type="content" source="../../../media/tp-RemediationArticle5.png" alt-text="Il centro azioni con minacce actionable e not actionable.":::
 
 **Azione**: i messaggi di posta elettronica nei seguenti percorsi delle cassette postali cloud possono essere comportati e spostati, ossia qualsiasi messaggio all'interno della categoria rimedio può essere spostato da una posizione a un'altra:
   - Posta in arrivo 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Esaminare le risposte alle domande frequenti sulla distribuzione centralizzata dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399825"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083563"
 ---
 # <a name="centralized-deployment-faq"></a>Domande frequenti sulla distribuzione centralizzata
 
@@ -36,7 +36,7 @@ La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti
  
 La distribuzione centralizzata è supportata solo per le cassette postali online. La distribuzione non è supportata per le cassette postali di Exchange locali.
  
-È possibile utilizzare la [Verifica compatibilità della distribuzione centralizzata di Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   per determinare se l'abbonamento è idoneo. 
+È possibile utilizzare la [Verifica compatibilità della distribuzione centralizzata](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   per determinare se la sottoscrizione è idonea. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Come si indirizzano le assegnazioni degli utenti ai componenti aggiuntivi con la distribuzione centralizzata?  
 

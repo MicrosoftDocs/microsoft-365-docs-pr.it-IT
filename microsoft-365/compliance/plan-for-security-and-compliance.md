@@ -1,5 +1,5 @@
 ---
-title: Pianificare la conformità &amp; alla sicurezza
+title: Pianificare la conformità alla sicurezza &amp;
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: La pagina di destinazione fornisce collegamenti e informazioni sulla pianificazione per la sicurezza e la conformità in Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0f3bb6499de2ddd6fb613834b98e46d453d739a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034896"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086657"
 ---
-# <a name="plan-for-security-amp-compliance"></a>Pianificare la conformità &amp; alla sicurezza
+# <a name="plan-for-security-amp-compliance"></a>Pianificare la conformità alla sicurezza &amp;
 
 La gestione della sicurezza e della conformità è una partnership. L'utente è responsabile della protezione di dati, identità e dispositivi, mentre Microsoft protegge vigorosamente i servizi di Microsoft 365. È possibile utilizzare Microsoft 365 ed Enterprise Mobility + Security (EMS) per ottenere il livello di protezione appropriato per la propria organizzazione.
   
@@ -32,7 +32,7 @@ La gestione della sicurezza e della conformità è una partnership. L'utente è 
 
 Orientarsi alle funzionalità di protezione delle informazioni nel poster sulla protezione delle informazioni per Office 365. 
   
-[PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
+[Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>Passaggio 2: controllare il Punteggio sicuro
 
@@ -56,13 +56,13 @@ Esaminare e pianificare le funzionalità di protezione dei file organizzate da t
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Passaggio 5: sfruttare il Centro sicurezza &amp; e conformità di Microsoft 365
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Passaggio 5: sfruttare il Centro sicurezza e conformità di Microsoft 365 &amp;
 
-Il centro &amp; sicurezza e conformità fornisce un'unica visualizzazione dei controlli da utilizzare per la gestione dello spettro della sicurezza di Microsoft 365, tra cui la gestione delle minacce, la governance dei dati e la ricerca e l'indagine. 
+Il Centro sicurezza e &amp; conformità fornisce un'unica visualizzazione dei controlli da utilizzare per la gestione dello spettro della sicurezza di Microsoft 365, tra cui la gestione delle minacce, la governance dei dati e la ricerca e l'indagine. 
   
-- [Accedere al centro sicurezza &amp; e conformità](go-to-the-securitycompliance-center.md)
+- [Accedere al centro sicurezza e &amp; conformità](go-to-the-securitycompliance-center.md)
     
-- [Autorizzazioni nel centro sicurezza &amp; e conformità](~/security/office-365-security/protect-against-threats.md)
+- [Autorizzazioni nel centro sicurezza e &amp; conformità](~/security/office-365-security/protect-against-threats.md)
     
 - [Fornire agli utenti l'accesso al &amp; Centro sicurezza e conformità](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     

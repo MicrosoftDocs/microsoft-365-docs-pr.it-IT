@@ -1,0 +1,78 @@
+---
+title: Creare e monitorare i ticket di ServiceNow nel centro sicurezza Microsoft 365
+description: Informazioni su come creare e monitorare i ticket in ServiceNow dal centro sicurezza Microsoft 365.
+keywords: sicurezza, Microsoft 365, M365, Secure score, Centro sicurezza, ServiceNow, ticket, attività
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
+ms.author: ellevin
+author: levinec
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+ms.topic: article
+search.appverid:
+- MOE150
+- MET150
+ms.custom:
+- seo-marvel-apr2020
+ms.openlocfilehash: 48512cf2fff802509ebaa14ca69d3ca02908902e
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087922"
+---
+# <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Creare e monitorare i ticket di ServiceNow nel centro sicurezza Microsoft 365
+
+Il [Centro sicurezza di Microsoft 365](overview-security-center.md) è stato migliorato grazie alla possibilità di creare e registrare in modo nativo i ticket in ServiceNow. [Altre informazioni su ServiceNow](https://www.servicenow.com/)
+
+Nel centro sicurezza, gli amministratori della sicurezza possono inviare un'azione di miglioramento di [Microsoft Secure Score](microsoft-secure-score.md) direttamente a ServiceNow e creare un ticket. È possibile creare sia la gestione degli incidenti che i ticket di gestione delle modifiche. Possono quindi essere registrate nella Home page del Centro sicurezza e ServiceNow.
+
+- [**Informazioni sui prerequisiti, lo scambio di dati e la risoluzione dei problemi**](tickets.md)
+- **Gestire i ticket di ServiceNow nel centro conformità** (prossimamente)
+
+## <a name="connect-microsoft-365-security-center-to-servicenow"></a>Connettere il Centro sicurezza di Microsoft 365 a ServiceNow
+
+Passare alla Home page del Centro sicurezza Microsoft 365 per visualizzare la scheda di connessione ServiceNow.
+
+![Si utilizza ServiceNow](../../media/do-you-use-servicenow-250.png)
+
+Selezionare "Connetti a ServiceNow" per accedere alla pagina di installazione di ServiceNow. Seguire le istruzioni per autorizzare l'app del connettore Microsoft 365.
+
+> [!NOTE]
+> Prima di autorizzare la connessione tra Microsoft 365 Security Center e ServiceNow, assicurarsi di utilizzare l'account di accesso e la password dell'utente di integrazione creati nei passaggi di installazione. Non utilizzare le credenziali personali.
+
+Dopo aver seguito le istruzioni e aver autorizzato la connessione, visualizzare lo stato della connessione sia nella pagina connessione al centro sicurezza Microsoft 365 che nell'app ServiceNow di ticketing Connector di Microsoft 365. Ora è tutto pronto per iniziare a creare attività.
+
+### <a name="troubleshooting"></a>Risoluzione dei problemi
+
+Informazioni sugli errori comuni che possono verificarsi nel processo di connessione e su come attenuarli nella [sezione risoluzione dei problemi](tickets.md#troubleshooting).
+
+## <a name="create-a-task-and-share-it-to-servicenow"></a>Creare un'attività e condividerla con ServiceNow
+
+Una volta configurata l'integrazione, creare attività di ServiceNow in base a specifiche azioni di miglioramento del Punteggio Microsoft sicuro. Andare a qualsiasi azione di miglioramento in Secure score nel portale Microsoft 365 Security Center e selezionare l'icona "Condividi". Una delle opzioni di menu a discesa è ServiceNow.
+
+![Condivisione di ServiceNow in un punteggio sicuro](../../media/servicenow-share.png)
+
+Viene generata un'attività in cui è possibile impostare la priorità e modificare il nome, la descrizione o la data di scadenza. Una volta che tutti i campi richiesti sono stati riempiti, inviare l'attività a ServiceNow.
+
+L'attività è visibile in ServiceNow come richiesta di modifica della sicurezza e della configurazione di Microsoft 365.
+
+## <a name="track-tickets"></a>Registrare i ticket
+
+Dopo aver creato i ticket di gestione dei cambiamenti di ServiceNow e gestione degli incidenti, vengono visualizzati nelle schede nella Home page del Centro sicurezza Microsoft 365. Da queste schede, è possibile creare un ticket, visualizzare tutti i ticket o gestire la configurazione di ServiceNow.
+
+![Ticket di gestione delle modifiche di ServiceNow](../../media/change-management-375.png)  ![Ticket per la gestione degli incidenti di ServiceNow](../../media/incident-management-375.png)
+
+Per eseguire il provisioning o la gestione dell'integrazione di ServiceNow nel centro sicurezza Microsoft 365, selezionare **Gestisci configurazione ServiceNow** su una delle schede. Da qui, rimuovere la connessione ServiceNow corrente e personalizzare i nomi degli Stati dei ticket.
+
+Con i ticket di ServiceNow visibili nel centro sicurezza Microsoft 365, le attività vengono riportate in un luogo in cui possono essere monitorate e applicate insieme agli altri elementi del dashboard di sicurezza.
+
+## <a name="resources"></a>Risorse
+
+- [Informazioni sui prerequisiti, lo scambio di dati e la risoluzione dei problemi](tickets.md)
+- [Microsoft Secure Score](microsoft-secure-score.md)

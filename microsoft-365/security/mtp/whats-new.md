@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f4e733cf7196668fb1c3d1830ead15c6262a635e
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: e19a5528a4ccc250c981ab21d7644783ad1b0b8b
+ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854295"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45084156"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Novità di Microsoft Threat Protection
 
@@ -32,6 +32,11 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ```
 ## <a name="june-2020"></a>Giugno 2020
 - Feed Twitter <br> Ottenere le ultime ricerche sulla sicurezza, la tecnologia di minacce, le novità del prodotto e altro ancora, direttamente all'interno del dashboard.
+- [Tabella dello schema di EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Includere informazioni sulle azioni di post-recapito eseguite nei messaggi di posta elettronica nelle query di caccia avanzate.
+- [Ispezionare i record nella ricerca avanzata](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Esaminare rapidamente i record nei risultati della query con il nuovo riquadro dei dettagli.
+
+## <a name="may-2020"></a>Maggio 2020
+- [Rilevamenti personalizzati](custom-detections-overview.md) <br> Utilizzare le query di ricerca avanzate per creare regole di rilevamento personalizzate che monitorano e rispondano automaticamente agli eventi di sicurezza e agli Stati del sistema.
 
 ## <a name="february-2020"></a>Febbraio 2020
 - [Eventi imprevisti](incidents-overview.md) <br> Sapere esattamente dove è stato avviato un attacco e altri dettagli che consentono di visualizzare l'entità dell'attacco.
@@ -39,7 +44,6 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Miglioramenti alla ricerca avanzata](advanced-hunting-overview.md) <br> Cercare in modo proattivo le minacce nell'area di lavoro moderna con il linguaggio di query di Kusto e uno schema ottimizzato per la sicurezza.
 
 ## <a name="march-2019"></a>Marzo 2019
-
 - Ricerca avanzata <br> Landing page to varie funzionalità di caccia che consentono di trovare in modo proattivo minacce che interessano la posta elettronica e i dati, i dispositivi e le identità.
 - [Microsoft Secure Score](microsoft-secure-score.md) <br> Misura della posizione di sicurezza di un'organizzazione, con un numero superiore che indica altre azioni di miglioramento eseguite. Dopo i consigli sui punteggi di sicurezza è possibile proteggere l'organizzazione dalle minacce. 
 - [Report](monitoring-and-reporting.md) <br>  Include una miriade di schede che coprono una serie di aree in cui gli analisti di sicurezza e gli amministratori rientrano nell'ambito delle operazioni quotidiane.

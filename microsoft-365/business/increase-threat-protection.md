@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili da tentativi di phishing, malware e altre minacce.
-ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 0e6cb7ed13a0851ef249e1f599d17e03c052414a
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786207"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083603"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
@@ -78,7 +78,7 @@ Per creare una regola di trasporto della posta:
     
 5. Applicare le impostazioni nella tabella seguente per la regola. Utilizzare i valori predefiniti per le altre impostazioni, a meno che non si desideri modificarli.
     
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**||
 |:-----|:-----|:-----|
@@ -110,7 +110,7 @@ Per creare una regola di trasporto della posta, guardare [questo breve video](ht
     
 5. Applicare le impostazioni nella tabella seguente. Utilizzare i valori predefiniti per le altre impostazioni, a meno che non si desideri modificarli.
     
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**|
 |:-----|:-----|
@@ -137,7 +137,7 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
     
 4. Nella pagina **anti-phishing** selezionare **+ Crea**. Viene avviata una procedura guidata che consente di definire i criteri di anti-phishing.
     
-5. Specificare il nome, la descrizione e le impostazioni del criterio come consigliato nella tabella seguente. Per ulteriori informazioni, vedere informazioni [sulle opzioni dei criteri di anti-phishing ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options). 
+5. Specificare il nome, la descrizione e le impostazioni del criterio come consigliato nella tabella seguente. Per ulteriori informazioni, vedere informazioni [sulle opzioni dei criteri di anti-phishing ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies). 
     
 6. Dopo aver esaminato le impostazioni, fare clic su **crea questo criterio** o su **Salva**, a seconda dei casi.
     
@@ -208,7 +208,7 @@ Per modificare il criterio predefinito:
     
 2. In **impostazioni che si applicano al contenuto tranne che alla posta elettronica**, selezionare **Microsoft 365 Apps for Enterprise, Office per iOS e Android**.
     
-3. Selezionare **Salva**. 
+3. Seleziona **Salva**. 
     
 Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
   
@@ -216,7 +216,7 @@ Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
     
 2. Applicare le impostazioni elencate nella tabella seguente.
     
-3. Selezionare **Salva**. 
+3. Seleziona **Salva**. 
 
 |**Impostazione o opzione**|**Impostazione consigliata** <br/>|
 |:-----|:-----|

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sull'autenticazione a più fattori in Microsoft 365.
-ms.openlocfilehash: e8ba304d145ca7227eea074556ff6efccd751ecf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399147"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083587"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
 
@@ -75,7 +75,7 @@ Le impostazioni di sicurezza predefinite garantiscono che tutte le organizzazion
 
 È possibile abilitare o disabilitare le impostazioni predefinite di sicurezza dal riquadro delle **Proprietà** di Azure ad nel portale di Azure.
 
-![](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+![Immagine della pagina delle proprietà della directory.](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 È possibile utilizzare le impostazioni predefinite di sicurezza con qualsiasi piano di Microsoft 365.
 
@@ -93,7 +93,7 @@ Questo criterio consente di richiedere l'autenticazione a più fattori in base a
 
 È possibile configurare i criteri di accesso condizionale dal riquadro di **sicurezza** di Azure ad nel portale di Azure.
 
-![](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Picure dell'opzione di menu per l'accesso condizionale](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 È possibile utilizzare i criteri di accesso condizionale con:
 
@@ -140,7 +140,7 @@ Per ulteriori informazioni, vedere questa [panoramica di Azure AD Identity Prote
 
 È possibile abilitare l'AMF per singoli account utente dal riquadro **utente attivo dell'interfaccia** di amministrazione di Microsoft 365.
 
-![](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![Immagine dell'opzione autenticazione a più fattori nella pagina utenti attivi](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 Dopo essere stato abilitato, la volta successiva che l'utente accede, verrà richiesto di registrarsi per l'AMF e di scegliere e testare il metodo di verifica aggiuntivo.
 
