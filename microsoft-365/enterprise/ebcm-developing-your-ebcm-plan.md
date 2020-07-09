@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspetti da considerare durante lo sviluppo di un piano di continuità aziendale compatibile con il cloud.
-ms.openlocfilehash: f8518a96461d33093b9d736f890f6166dc6b3c97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35aa5fb74b8281a089ef0b58998cd297507cc46f
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601093"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083517"
 ---
 # <a name="developing-your-continuity-plan"></a>Sviluppare il piano di continuità
 
@@ -80,6 +80,8 @@ Ecco un'analisi delle dipendenze di esempio da cui iniziare. Nell'analisi delle 
 
 Dopo aver inventariato i processi aziendali e aver mappato tutte le relazioni con altri processi e tecnologie, è necessario creare scenari di convalida per tutti i processi. Fondamentalmente, riflettere su come convalidare i piani di continuità dei processi aziendali. Probabilmente si scoprirà che alcuni sono più importanti di altri e si vorrà dare loro la priorità.
 È importante tenere presente che, una volta stabilito il piano, formare regolarmente i dipendenti in merito alle misure di continuità e risposta agli incidenti è molto importante. È opportuno usare revisioni post evento per migliorare le strategie di resilienza, incorporando quanto appreso da ogni convalida o test.
+
+![Visione di convalida delle funzionalità](../media/ebcm/capability-validation-visio.png)
 
 ## <a name="incident-coordination-and-communication"></a>Comunicazioni e coordinamento in caso di incidenti
 

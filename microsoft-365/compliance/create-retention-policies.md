@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: ab6a61e0cedfd91d642823f0c459a5a1699df000
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844752"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083618"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -52,7 +52,7 @@ Queste autorizzazioni sono necessarie solo per creare e applicare criteri di con
     
     Per Microsoft Teams: 
     - È necessario selezionare l'opzione per scegliere posizioni specifiche se si vogliono eliminare o conservare i messaggi dei canali di Teams o le chat di Teams. Selezionando una di queste opzioni, le altre posizioni vengono escluse automaticamente perché un criterio di conservazione che include questi dati di Teams non può includere altre posizioni. 
-    - Si noti che per **Messaggi del canale di Teams** sono inclusi i messaggi provenienti da canali standard ma non dai [canali privati](https://docs.microsoft.com/microsoftteams/private-channels). I messaggi dei canali privati vengono inclusi per gli utenti come chat di gruppo selezionando la posizione **Chat di Teams**.
+    - Si noti che per **Messaggi del canale di Teams** sono inclusi i messaggi provenienti da canali standard ma non dai [canali privati](https://docs.microsoft.com/microsoftteams/private-channels). Attualmente, i canali privati non sono supportati dai criteri di conservazione.
     
     Per altre informazioni sulla scelta tra criteri di conservazione per l'organizzazione o per posizioni specifiche, vedere [Applicazione di criteri di conservazione a un'intera organizzazione o a posizioni specifiche](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) in questa pagina.
     
@@ -238,9 +238,11 @@ Se è necessario usare la [protezione dell'archiviazione](retention-policies.md#
     ![Elenco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
 3. Per applicare la protezione dell'archiviazione su un criterio di conservazione, eseguire `Set-RetentionCompliancePolicy` con il parametro `RestrictiveRetention` impostato su true. Ad esempio:
-    
-        Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
-    
+
+   ```powershell
+   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
+   ```
+   
     ![Parametro RestrictiveRetention in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
     Dopo aver eseguito il cmdlet, scegliere **Sì a tutti**:
