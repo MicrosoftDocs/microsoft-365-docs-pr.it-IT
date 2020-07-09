@@ -20,6 +20,7 @@ description: Informazioni sull’uso dei criteri di conservazione per conservare
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: ffd7b644f33e7f432c62c182e2d69e07c8bce730
 ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/19/2020
 ms.locfileid: "44818926"
