@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: f97f9b3eed2ec9eed95b1f4ec57a3b055d8c4925
   ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 05/01/2020
   ms.locfileid: "43997527"
@@ -28,17 +28,17 @@ landingContent:
       url: mtp/microsoft-threat-protection.md
     - text: Centro sicurezza Microsoft 365
       url: mtp/overview-security-center.md
-- title: Inizia con prove gratuite
+- title: Inizia con le versioni di valutazione gratuite
   linkLists:
   - linkListType: overview
     links:
     - text: Valutare Microsoft Threat Protection
       url: mtp/mtp-evaluation.md
-- title: Proteggere la forza lavoro remota
+- title: Proteggere il personale remoto
   linkLists:
   - linkListType: get-started
     links:
-    - text: Proteggere la forza lavoro remota
+    - text: Proteggere il personale remoto
       url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
 - title: Azure ATP
   linkLists:
