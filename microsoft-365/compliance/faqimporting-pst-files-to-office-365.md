@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
 description: Questo articolo contiene le risposte ad alcune domande frequenti per gli amministratori sull'importazione di file PST in Microsoft 365 utilizzando il servizio di importazione di Office 365.
-ms.openlocfilehash: 0f490b7bae3f462bb07725bf14453a6b9a4d7b9e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 5ba6df2f2c6ed10edee22f58308a5e3ee5acd533
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817735"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091900"
 ---
 # <a name="faq-about-importing-pst-files"></a>Domande frequenti sull'importazione di file PST
 
-**Questo articolo è per gli amministratori. Si desidera importare i file PST nella propria cassetta postale? Vedere [importare messaggi di posta elettronica, contatti e calendario da un file PST di Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**|
+**Questo articolo è per gli amministratori. Si desidera importare i file PST nella propria cassetta postale? Vedere [importare messaggi di posta elettronica, contatti e calendario da un file PST di Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
 Di seguito sono riportate alcune domande frequenti sull'utilizzo del servizio di importazione di Office 365 per importare in blocco i file PST nelle cassette postali di Microsoft 365. Per ulteriori informazioni su come importare i file PST, vedere [Overview of import PST files to Office 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365).
   
@@ -51,10 +51,7 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
   
  **Dov'è disponibile il caricamento tramite rete?**
   
-Il caricamento di rete è attualmente disponibile in queste aree: Stati Uniti, Canada, Brasile, Regno Unito, Francia, Europa, India, Asia orientale, sud-est asiatico, Giappone, Repubblica di Corea, Australia e Emirati Arabi Uniti (UAE). Network upload will be available in more regions soon.
-
-> [!NOTE]
-> Al momento, il caricamento tramite rete dei file PST non è disponibile in Germania e Svizzera. Le domande frequenti verranno aggiornate quando il caricamento tramite rete sarà disponibile in questi paesi.
+Il caricamento di rete è attualmente disponibile in queste aree: Stati Uniti, Canada, Brasile, Regno Unito, Francia, Germania, Europa, India, Asia orientale, sud-est asiatico, Giappone, Repubblica di Corea, Australia e Emirati Arabi Uniti (UAE). Network upload will be available in more regions soon.
   
  **Quanto costa importare file PST con il caricamento tramite rete?**
   
@@ -70,7 +67,7 @@ Sono disponibili due versioni del formato di file PST: ANSI e Unicode. Si consig
   
  **Dopo il caricamento dei file PST nell'area di archiviazione di Azure, per quanto tempo vengono conservati in Azure prima dell'eliminazione?**
   
-Quando si usa il metodo di caricamento tramite rete per importare i file PST, i file vengono caricati in un contenitore BLOB di Azure denominato **ingestiondata**. Se non ci sono processi di importazione in corso nella pagina **Importa file PST** del Centro sicurezza e conformità, tutti i file PST nel contenitore **ingestiondata** in Azure vengono eliminati 30 giorni dopo la creazione del processo di importazione più recente nel Centro sicurezza e conformità. Significa anche che è necessario creare un nuovo processo di importazione nel Centro sicurezza e conformità, descritto nel passaggio 5 delle istruzioni di caricamento tramite rete, entro 30 giorni dal caricamento dei file PST in Azure. 
+Quando si utilizza il metodo di caricamento di rete per importare i file PST, è possibile caricarli in un contenitore BLOB di Azure denominato `ingestiondata` . Se non sono presenti processi di importazione in corso nella pagina **Importa file PST** nel centro sicurezza & conformità), tutti i file pst nel `ingestiondata` contenitore in Azure vengono eliminati 30 giorni dopo che è stato creato il processo di importazione più recente nel centro sicurezza & Compliance. Significa anche che è necessario creare un nuovo processo di importazione nel Centro sicurezza e conformità, descritto nel passaggio 5 delle istruzioni di caricamento tramite rete, entro 30 giorni dal caricamento dei file PST in Azure. 
   
 Significa anche che, dopo essere stati eliminati dall'area di archiviazione di Azure, i file PST non vengono più visualizzati nell'elenco dei file per un processo di importazione completato nel Centro sicurezza e conformità. Anche se un processo di importazione potrebbe essere ancora presente nella pagina **Importa file PST** del Centro sicurezza e conformità, l'elenco dei file PST potrebbe essere vuoto quando si visualizzano i dettagli dei processi di importazione precedenti. 
   
@@ -82,7 +79,7 @@ Se si importano file PST diversi in cassette postali di destinazione diverse, il
   
  **In che modo il processo di importazione PST gestisce gli elementi di posta elettronica duplicati?**
 
-Durante il processo di importazione PST viene controllata la presenza di elementi duplicati; gli elementi dei file PST non vengono copiati nella cassetta postale o nell'archivio di destinazione se è già presente un elemento corrispondente nella cartella di destinazione. Se si reimporta lo stesso file PST e si specifica una cartella di destinazione diversa rispetto a quella specificata in un processo di importazione precedente, usando la proprietà TargetRootFolder nel file di mapping dell'importazione PST, verranno reimportati tutti gli elementi nel file PST.
+Durante il processo di importazione PST viene controllata la presenza di elementi duplicati; gli elementi dei file PST non vengono copiati nella cassetta postale o nell'archivio di destinazione se è già presente un elemento corrispondente nella cartella di destinazione. Se si reimporta lo stesso file PST e si specifica una cartella di destinazione diversa (utilizzando la proprietà TargetRootFolder nel file di mapping di importazione PST) rispetto a quella specificata in un processo di importazione precedente, tutti gli elementi del file PST verranno reimportati.
 
  **È previsto un limite alle dimensioni del messaggio durante l'importazione dei file PST?**
   
@@ -144,7 +141,7 @@ Il costo della spedizione unità per importare i file PST in cassette postali di
   
  **Quali tipi di dischi rigidi sono supportati per la spedizione unità?**
   
-Solo le unità SSD da 2,5 pollici o le unità disco rigido interno SATA II/III da 2,5 o 3,5 pollici sono supportate per l'utilizzo con il servizio Importa di Office 365. È possibile utilizzare unità disco rigido fino a 10 TB. Per i processi di importazione, verrà elaborato solo il primo volume di dati del disco rigido. Il volume di dati deve essere in formato NTFS. Quando si copiano i dati su un disco rigido, è possibile collegarlo direttamente usando un connettore SSD da 2,5 pollici o SATA II/III da 2,5 o 3,5 pollici oppure collegarlo esternamente usando una scheda SSD da 2,5 pollici o SATA II/III da 2,5 o 3,5 pollici.
+Per l'utilizzo con il servizio di importazione di Office 365, sono supportate solo unità SSD da 2,5 pollici a stato solido o 2,5 pollice o 3,5 pollici SATA II/III. È possibile utilizzare unità disco rigido fino a 10 TB. Per i processi di importazione, verrà elaborato solo il primo volume di dati del disco rigido. Il volume di dati deve essere in formato NTFS. Quando si copiano i dati su un disco rigido, è possibile collegarlo direttamente usando un connettore SSD da 2,5 pollici o SATA II/III da 2,5 o 3,5 pollici oppure collegarlo esternamente usando una scheda SSD da 2,5 pollici o SATA II/III da 2,5 o 3,5 pollici.
   
 > [!IMPORTANT]
 > I dischi rigidi esterni che vengono installati con un adattatore USB incorporato non sono supportati dal servizio Importa di Office 365. Inoltre, il disco all'interno della scocca di un disco rigido esterno non può essere utilizzato. Non spedire unità disco rigido esterne. 
@@ -159,7 +156,7 @@ That depends on a few things, such as your proximity to the Microsoft data cente
   
  **Dopo la consegna dell'unità disco rigido al datacenter Microsoft, quanto tempo è necessario per caricare i file PST in Azure?**
   
-Dopo aver ricevuto il disco rigido in Microsoft Data Center, saranno necessari tra 7 e 10 giorni lavorativi per caricare i file PST nell'area di archiviazione di Azure per l'organizzazione. I file PST verranno caricati in un contenitore BLOB di Azure denominato **ingestiondata**. 
+Dopo aver ricevuto il disco rigido in Microsoft Data Center, saranno necessari tra 7 e 10 giorni lavorativi per caricare i file PST nell'area di archiviazione di Azure per l'organizzazione. I file PST verranno caricati in un contenitore BLOB di Azure denominato `ingestiondata`. 
   
  **Quanto tempo è necessario per importare un file PST in una cassetta postale?**
   
@@ -169,7 +166,7 @@ Se si importano file PST diversi in cassette postali di destinazione diverse, il
   
  **Dopo il caricamento dei file PST in Azure da parte di Microsoft, per quanto tempo vengono conservati in Azure prima dell'eliminazione?**
   
-Tutti i file PST nel percorso di archiviazione di Azure per l'organizzazione (nel contenitore BLOB denominato **ingestiondata**) vengono eliminati 30 giorni dopo la creazione del processo di importazione più recente nella pagina **importazione file PST** nel centro sicurezza & conformità. 
+Tutti i file PST nel percorso di archiviazione di Azure dell'organizzazione, ovvero il contenitore BLOB denominato `ingestiondata`, vengono eliminati 30 giorni dopo la creazione del processo di importazione più recente nella pagina **Importa file PST** del Centro sicurezza e conformità. 
   
 Significa anche che, dopo essere stati eliminati dall'area di archiviazione di Azure, i file PST non vengono più visualizzati nell'elenco dei file per un processo di importazione completato nel Centro sicurezza e conformità. Anche se un processo di importazione potrebbe essere ancora presente nella pagina **Importa file PST** del Centro sicurezza e conformità, l'elenco dei file PST potrebbe essere vuoto quando si visualizzano i dettagli dei processi di importazione precedenti. 
   
@@ -185,7 +182,7 @@ Sì. Se un file PST contiene un elemento della cassetta postale con dimensioni m
   
   **In che modo il processo di importazione PST gestisce gli elementi di posta elettronica duplicati?**
 
-Durante il processo di importazione PST viene controllata la presenza di elementi duplicati; gli elementi dei file PST non vengono copiati nella cassetta postale o nell'archivio di destinazione se è già presente un elemento corrispondente nella cartella di destinazione. Se si reimporta lo stesso file PST e si specifica una cartella di destinazione diversa rispetto a quella specificata in un processo di importazione precedente, usando la proprietà TargetRootFolder nel file di mapping dell'importazione PST, verranno reimportati tutti gli elementi nel file PST.
+Durante il processo di importazione PST viene controllata la presenza di elementi duplicati; gli elementi dei file PST non vengono copiati nella cassetta postale o nell'archivio di destinazione se è già presente un elemento corrispondente nella cartella di destinazione. Se si reimporta lo stesso file PST e si specifica una cartella di destinazione diversa (utilizzando la proprietà TargetRootFolder nel file di mapping di importazione PST) rispetto a quella specificata in un processo di importazione precedente, tutti gli elementi del file PST verranno reimportati.
  
  **Le proprietà del messaggio, ad esempio la data/ora di invio o ricezione del messaggio, l'elenco dei destinatari e altre proprietà, vengono conservate quando i file PST vengono importati in una cassetta postale di Microsoft 365?**
   

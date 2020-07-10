@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 48512cf2fff802509ebaa14ca69d3ca02908902e
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 16ee37b1c7bf33c902db35af2d29744f42830ea7
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087922"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094835"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Creare e monitorare i ticket di ServiceNow nel centro sicurezza Microsoft 365
 
@@ -54,9 +54,7 @@ Informazioni sugli errori comuni che possono verificarsi nel processo di conness
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>Creare un'attività e condividerla con ServiceNow
 
-Una volta configurata l'integrazione, creare attività di ServiceNow in base a specifiche azioni di miglioramento del Punteggio Microsoft sicuro. Andare a qualsiasi azione di miglioramento in Secure score nel portale Microsoft 365 Security Center e selezionare l'icona "Condividi". Una delle opzioni di menu a discesa è ServiceNow.
-
-![Condivisione di ServiceNow in un punteggio sicuro](../../media/servicenow-share.png)
+Una volta configurata l'integrazione, creare attività di ServiceNow in base a specifiche azioni di miglioramento del [Punteggio Microsoft sicuro](microsoft-secure-score.md) . Andare a qualsiasi azione di miglioramento in Secure score nel portale Microsoft 365 Security Center e selezionare **Condividi**. Una delle opzioni di menu a discesa è ServiceNow.
 
 Viene generata un'attività in cui è possibile impostare la priorità e modificare il nome, la descrizione o la data di scadenza. Una volta che tutti i campi richiesti sono stati riempiti, inviare l'attività a ServiceNow.
 

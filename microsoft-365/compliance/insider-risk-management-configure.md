@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 000f5ee96587aeb055db783e11833aefa6335a14
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515763"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091922"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -60,7 +60,7 @@ A seconda della struttura del team di gestione della conformità, sono disponibi
 
 Completare la procedura seguente per aggiungere gli utenti a un gruppo di ruoli di gestione dei rischi Insider:
 
-1. Accedere all' [https://protection.office.com/permissions](https://protection.office.com/permissions) utilizzo delle credenziali per un account di amministratore nell'organizzazione Microsoft 365. "" "" "" ""
+1. Accedere [https://protection.office.com/permissions](https://protection.office.com/permissions) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
 
 2. Nel centro sicurezza &amp; e conformità, accedere a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
 

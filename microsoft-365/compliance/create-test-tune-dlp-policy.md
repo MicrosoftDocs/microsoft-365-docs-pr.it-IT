@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In questo articolo vengono fornite informazioni su come creare, testare e ottimizzare un criterio DLP in base alle esigenze dell'organizzazione.
-ms.openlocfilehash: 9f5f1b1f84ba44dbf52366d30b0e26bbf310e9fe
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3405fc99f4d12715972b1fd18a9c20dd9334382b
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352223"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45092006"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
-La prevenzione della perdita di dati (DLP) è una funzionalità di conformità progettata per aiutare l'organizzazione a impedire l'esposizione intenzionale o accidentale di informazioni riservate a parti indesiderate. DLP ha le sue radici in Exchange Server ed Exchange Online ed è applicabile anche in SharePoint Online e OneDrive for business.
+La prevenzione della perdita di dati (DLP) è una funzionalità di conformità progettata per aiutare l'organizzazione a impedire l'esposizione accidentale o involontaria di informazioni riservate a parti indesiderate. DLP ha le sue radici in Exchange Server ed Exchange Online ed è applicabile anche in SharePoint Online e OneDrive for business.
 
 DLP utilizza un motore di analisi del contenuto per esaminare il contenuto dei messaggi di posta elettronica e i file, in cerca di informazioni riservate, come i numeri di carta di credito e le informazioni di identificazione personale (PII). Le informazioni riservate in genere non devono essere inviate tramite posta elettronica o incluse nei documenti, senza eseguire passaggi aggiuntivi quali la crittografia del messaggio di posta elettronica o dei file. Usando DLP è possibile rilevare informazioni riservate e intraprendere azioni quali:
 

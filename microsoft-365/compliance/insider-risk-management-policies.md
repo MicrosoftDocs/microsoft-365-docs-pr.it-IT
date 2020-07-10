@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a69c90580db9b33196fd1eb3797a42b8db056fcd
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: 79f6273f747d518dd9c44f4a57fa0a48daed81d2
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900820"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091932"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -42,14 +42,14 @@ I modelli di gestione dei rischi Insider sono condizioni di criteri predefinite 
 
 ### <a name="departing-employee-data-theft"></a>Furto dei dati del dipendente in partenza
 
-Quando i dipendenti lasciano la propria organizzazione, esistono indicatori di rischio specifici tipicamente associati al furto dei dati da parte dei dipendenti. Questo modello di criteri consente di assegnare una priorità a questi indicatori e di individuare gli avvisi e i punti di interesse per questa area di rischio Il furto dei dati per i dipendenti in partenza può includere il download di file da SharePoint Online, la copia di file su dispositivi portatili, come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali vicino alla data di scadenza e alle dimissioni di lavoro. Questo modello privilegia gli indicatori di rischio relativi a queste attività e la correlazione con lo stato occupazionale dei dipendenti.
+Quando i dipendenti lasciano la propria organizzazione, esistono indicatori di rischio specifici tipicamente associati al furto dei dati da parte dei dipendenti. Questo modello di criteri consente di assegnare una priorità a questi indicatori e di individuare gli avvisi e i punti di interesse per questa area di rischio Il furto dei dati per i dipendenti in partenza può includere il download di file da SharePoint Online, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali in prossimità delle relative dimissioni e date di fine. Questo modello privilegia gli indicatori di rischio relativi a queste attività e la correlazione con lo stato occupazionale dei dipendenti.
 
 >[!IMPORTANT]
 >Quando si utilizza questo modello, è necessario configurare un connettore Microsoft 365 HR per importare periodicamente le informazioni sulle dimissioni e la data di fine per i dipendenti dell'organizzazione. Per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per l'organizzazione, vedere l'argomento [Import Data with the HR Connector](import-hr-data.md) .
 
 ### <a name="data-leaks"></a>Perdite di dati
 
-La protezione dei dati e la prevenzione della perdita di dati è una sfida costante per la maggior parte delle organizzazioni, in particolare con la rapida crescita dei nuovi dati creati da dipendenti, dispositivi e servizi. I dipendenti sono autorizzati a creare, archiviare e condividere informazioni tra i servizi e i dispositivi che rendono la gestione delle perdite di dati sempre più complesse e difficili. Le perdite di dati possono includere la sovracondivisione accidentale di informazioni all'esterno dell'organizzazione o il furto di dati con intenti dolosi. In combinazione con un criterio di prevenzione della perdita di dati (DLP) assegnato, questo modello determina la priorità del rilevamento in tempo reale dei download di dati di SharePoint online sospetti, la condivisione di file e cartelle, la copia di file su dispositivi portatili come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali.
+La protezione dei dati e la prevenzione della perdita di dati è una sfida costante per la maggior parte delle organizzazioni, in particolare con la rapida crescita dei nuovi dati creati da dipendenti, dispositivi e servizi. I dipendenti sono autorizzati a creare, archiviare e condividere informazioni tra i servizi e i dispositivi che rendono la gestione delle perdite di dati sempre più complesse e difficili. Le perdite di dati possono includere la sovracondivisione accidentale di informazioni all'esterno dell'organizzazione o il furto di dati con intenti dolosi. In combinazione con un criterio di prevenzione della perdita di dati (DLP) assegnato, questo modello dà la priorità al rilevamento in tempo reale dei download di dati di SharePoint online sospetti, la condivisione di file e cartelle, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali.
 
 Quando si utilizza il modello per le **perdite di dati** , è necessario assegnare un criterio DLP per attivare gli indicatori nei criteri di rischio Insider per gli avvisi di gravità elevata nell'organizzazione. Ogni volta che viene generato un avviso di severità elevato da una regola di criteri DLP viene aggiunto al registro di controllo di Office 365, i criteri di rischio Insider creati con questo modello esaminano automaticamente l'avviso di gravità elevata. Se l'avviso contiene un utente in ambito definito nel criterio di rischio Insider, l'avviso verrà elaborato dal criterio di rischio insider come nuovo avviso e assegnato un livello di rischio Insider e un punteggio di rischio. Questo avviso può essere valutato come parte del flusso di lavoro di gestione dei rischi Insider e aggiunto a un caso di gestione dei rischi, se necessario.
 
