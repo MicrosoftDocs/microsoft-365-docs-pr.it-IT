@@ -31,28 +31,28 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "43632036"
 ---
-<a name="microsoft-365-for-campaigns"></a>Microsoft 365 per le Campagne
+<a name="microsoft-365-for-campaigns"></a>Microsoft 365 per le campagne
 ===========================
 
-Nel mondo attuale, proteggere i dati e le comunicazioni è una priorità, soprattutto per le campagne politiche, gli studi medici e legali e molte altre aziende. Microsoft 365 per le campagne include una serie di suggerimenti il cui scopo è aiutare a proteggere se stessi e i propri dati. Questa raccolta include informazioni per configurare e usare questo ambiente consigliato, anche se non è in corso una campagna.
+Oggigiorno proteggere i dati e le comunicazioni è una priorità, soprattutto per le campagne politiche, gli studi medici e legali e molte altre aziende. Microsoft 365 per le campagne include una serie di suggerimenti il cui scopo è aiutare a proteggere se stessi e i propri dati. Questa raccolta include informazioni per configurare e usare questo ambiente consigliato, anche se non è in corso una campagna.
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
 
 
-**Che cos'è Microsoft 365 per le Campagne?** Si tratta di una configurazione sicura consigliata che include Microsoft 365 Business Premium, che consente di:
-- Fare affidamento su strumenti di produttività e collaborazione aziendali attendibili, tra cui Outlook, Word, Excel e altri prodotti di Office. 
+**Cos'è Microsoft 365 per le campagne?** È una configurazione sicura consigliata che include Microsoft 365 Business Premium e che consente di:
+- Usare strumenti di produttività e collaborazione aziendali attendibili, tra cui Outlook, Word, Excel e altri prodotti di Office. 
 - Proteggere i file di lavoro in tutti i dispositivi iOS, Android e Windows 10 con sicurezza di livello aziendale semplice da gestire 
 - Applicare una protezione aggiuntiva per account utente e identità 
 
-![Microsoft 365 Business Premium protegge strumenti di produttività, strumenti di collaborazione, archiviazione di file, posta elettronica, dispositivi e identità](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium protegge gli strumenti di produttività e collaborazione, archiviazione di file, posta elettronica, dispositivi e identità](../media/M365-WhatIsIt-SecurityFocus.png)
 
 Benché le campagne elettorali federali negli Stati Uniti siano idonee a ricevere prezzi speciali per Microsoft 365 Business Premium, qualsiasi organizzazione che acquisti il piano può trarre vantaggio da queste indicazioni per aumentare la sicurezza e imparare a collaborare in modo sicuro.
 
 La raccolta include i seguenti elementi:
 - Linee guida per la configurazione per una maggiore sicurezza.
 - Guida per gli utenti per configurare dispositivi per l'accesso sicuro.
-- Guida alla collaborazione e condivisione sicura.
+- Consigli per collaborare e condividere i dati in modo sicuro.
 
 Per altre informazioni sul contenuto incluso, vedere [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business). 
 
@@ -99,7 +99,7 @@ Dopo aver configurato l'ambiente Microsoft 365, è possibile usare le soluzioni 
                     </div>
                     <div class="cardText">
                         <h3>Creare team per collaborare</h3>
-                        <p>Creare uno spazio per le comunicazioni e la collaborazione con team specifici per personale chiave, tutto il personale, partner o fornitori con Microsoft Teams.</p>
+                        <p>Creare uno spazio per le comunicazioni e la collaborazione con team specifici per alcuni dipendenti, tutto il personale, partner o fornitori con Microsoft Teams.</p>
                         <p><a href="create-teams-for-collaboration.md">Creare il team</a></p>
                     </div>
                 </div>
@@ -135,7 +135,7 @@ Dopo aver configurato l'ambiente Microsoft 365, è possibile usare le soluzioni 
                     </div>
                     <div class="cardText">
                         <h3>Crittografare o etichettare le comunicazioni di posta elettronica sensibili</h3>
-                        <p>Usare le etichette di crittografia e riservatezza per proteggere la posta elettronica che contiene informazioni riservate o sensibili.</p>
+                        <p>Usare le etichette di crittografia e riservatezza per proteggere i messaggi che contengono informazioni riservate o sensibili.</p>
                         <p><a href="send-encrypted-email.md">Inviare messaggi di posta elettronica crittografati</a></p>
                     </div>
                 </div>
@@ -171,7 +171,7 @@ Dopo aver configurato l'ambiente Microsoft 365, è possibile usare le soluzioni 
                     </div>
                     <div class="cardText">
                         <h3>Condividere file e video</h3>
-                        <p>È possibile salvare i file e i video nel cloud, in modo che siano disponibili per tutte le persone appropriate.</p>
+                        <p>È possibile salvare i file e i video nel cloud, in modo che siano disponibili a tutte le persone autorizzate.</p>
                         <p><a href="share-files-and-videos.md">Iniziare a condividere</a></p>
                     </div>
                 </div>
