@@ -1,6 +1,6 @@
 ---
 title: Guida introduttiva a Microsoft Managed Desktop
-description: Procedura per impostare dispositivi e configurare le funzionalità di Azure per lavorare con il servizio
+description: Procedura per impostare i dispositivi e configurare le funzionalità di Azure per lavorare con il servizio
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
