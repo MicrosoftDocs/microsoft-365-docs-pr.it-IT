@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono disponibili nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035795"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102916"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
 
@@ -38,6 +38,8 @@ Nel [Centro sicurezza & conformità](https://protection.office.com) è disponibi
 
 Nel rapporto **utenti compromessi** viene mostrato il numero di account utente contrassegnati come **sospetti** o **limitati** negli ultimi 7 giorni. Gli account in uno di questi Stati sono problematici o addirittura compromessi. Con uso frequente, è possibile utilizzare il report per individuare picchi e persino tendenze, in account sospetti o limitati. Per ulteriori informazioni sugli utenti compromessi, vedere [risposta a un account di posta elettronica compromesso](responding-to-a-compromised-email-account.md).
 
+![Widget utenti compromessi nel dashboard dei report](../../media/compromised-users-report-widget.png)
+
 La visualizzazione aggregazione Mostra i dati per gli ultimi 90 giorni e la visualizzazione dettagli Mostra i dati per gli ultimi 30 giorni.
 
 Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://protection.office.com), accedere al **Reports** \> **Dashboard** dei report e selezionare **utenti compromessi**. Per passare direttamente al report, aprire <https://protection.office.com/reportv2?id=CompromisedUsers> .
@@ -50,7 +52,7 @@ Per visualizzare il report, aprire il [Centro sicurezza & conformità](https://p
 
 - **Limitato**: l'account utente è stato limitato dall'invio di messaggi di posta elettronica a causa di modelli estremamente sospetti.
 
-![Il report utenti compromessi visualizzato in Microsoft 365](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![Visualizzazione report nel report utenti compromessi](../../media/compromised-users-report-activity-view.png)
 
 Se si fa clic su **Visualizza tabella dettagli**, è possibile visualizzare i dettagli seguenti:
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 017946c08bb1c44f31bbcb87b3ce46571ab8b480
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936785"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101607"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -92,10 +92,8 @@ Per cercare dati di chat di Teams nelle cassette postali basate sul cloud degli 
 - **Origini**di terze parti: è possibile eseguire l'analisi delle comunicazioni da origini di terze parti per i dati importati nelle cassette postali nell'organizzazione Microsoft 365. I connettori supportano le risorse di terze parti seguenti:
 
     - [Bloomberg istantaneo](archive-instant-bloomberg-data.md)
-    - [Facebook](archive-facebook-data-with-sample-connector.md)
-    - [LinkedIn](archive-linkedin-data.md)
-    - [Twitter](archive-twitter-data-with-sample-connector.md)
-    - [Connettore dati personalizzato](archiving-third-party-data.md)
+    - [Messaggio Bloomberg](archive-bloomberg-message-data.md)
+    - [Chat di ghiaccio](archive-icechat-data.md)
 
 Prima di poter assegnare il connettore a un criterio di conformità della comunicazione, è necessario configurare un connettore di terze parti per l'organizzazione Microsoft 365. La sezione **origini di terze parti** della procedura guidata per la conformità dei criteri di comunicazione Visualizza solo i connettori di terze parti attualmente configurati.
 
@@ -155,7 +153,7 @@ Per informazioni sui classificatori in Microsoft 365, vedere [classificatori](cl
 ### <a name="conditional-settings"></a>Impostazioni condizionali
 <a name="ConditionalSettings"> </a>
 
-Le condizioni che scegli per il criterio si applicano alle comunicazioni sia dalla posta elettronica sia dalle fonti di terze parti nell'organizzazione (come da Facebook o DropBox).
+Le condizioni che scegli per il criterio si applicano alle comunicazioni sia dalla posta elettronica sia dalle fonti di terze parti nell'organizzazione (come da Instant Bloomberg o DropBox).
 
 Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
   

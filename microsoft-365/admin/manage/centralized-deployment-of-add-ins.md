@@ -20,17 +20,27 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936444"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102873"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
-La distribuzione centralizzata è il metodo consigliato e più ricco di funzionalità per la maggior parte dei clienti per distribuire i componenti aggiuntivi di Office agli utenti e ai gruppi all'interno dell'organizzazione. Se si è un amministratore, utilizzare queste linee guida per determinare se il tenant e gli utenti soddisfano i requisiti affinché sia possibile utilizzare la distribuzione centralizzata.
+La distribuzione centralizzata è il metodo consigliato e più ricco di funzionalità per la maggior parte dei clienti per distribuire i componenti aggiuntivi di Office agli utenti e ai gruppi all'interno dell'organizzazione. Se si è un amministratore, utilizzare queste linee guida per determinare se l'organizzazione e gli utenti soddisfano i requisiti affinché sia possibile utilizzare la distribuzione centralizzata.
+
+La distribuzione centralizzata offre i vantaggi seguenti:
+  
+- Un amministratore globale può assegnare un componente aggiuntivo direttamente a un utente, a più utenti tramite un gruppo o a tutti i clienti nell'organizzazione.
+    
+- Quando viene avviata l'applicazione di Office pertinente, viene scaricato automaticamente il componente aggiuntivo. Se il componente aggiuntivo supporta i comandi del componente aggiuntivo, il componente aggiuntivo verrà visualizzato automaticamente nella barra multifunzione all'interno dell'applicazione di Office.
+    
+- I componenti aggiuntivi non vengono più visualizzati per gli utenti se l'amministratore disattiva o Elimina il componente aggiuntivo oppure se l'utente è stato rimosso da Azure Active Directory o da un gruppo a cui è assegnato il componente aggiuntivo.
+
 La distribuzione centralizzata supporta tre piattaforme desktop Windows, Mac e le app di Office Online. La distribuzione centralizzata supporta anche iOS e Android (solo componenti aggiuntivi di Outlook Mobile).
+
 È possibile richiedere fino a 24 ore affinché un componente aggiuntivo venga visualizzato per il client per tutti gli utenti.
   
 ## <a name="requirements"></a>Requisiti
@@ -96,19 +106,19 @@ Tramite Verifica compatibilità della distribuzione centralizzata, è possibile 
     
 2. Eseguire il comando riportato di seguito:
 
-```powershell
-Import-Module O365CompatibilityChecker
-```
+   ```powershell
+   Import-Module O365CompatibilityChecker
+   ```
     
 3. Eseguire il comando **Invoke-CompatabilityCheck** :
 
-```powershell
-Invoke-CompatibilityCheck
-```
-   in cui viene richiesto di *_TenantDomain_* (ad esempio, *TailspinToysIncorporated. onmicrosoft. </span> com*) e le credenziali di *_TenantAdmin_* (utilizzare le credenziali di amministratore globale) e quindi richiede il consenso.
+   ```powershell
+   Invoke-CompatibilityCheck
+   ```
+   Questo comando richiede di *_TenantDomain_* (ad esempio, *TailspinToysIncorporated. onmicrosoft. </span> com*) e le credenziali di *_TenantAdmin_* (utilizzare le credenziali di amministratore globale) e quindi richiede il consenso.
     
-> [!NOTE]
-> A seconda del numero di utenti nel tenant, la verifica potrebbe richiedere minuti o ore. 
+   > [!NOTE]
+   > A seconda del numero di utenti nel tenant, la verifica potrebbe richiedere minuti o ore. 
   
 Al termine dell'esecuzione dello strumento, viene generato un file di output in formato CSV (valori separati da virgola). Il file viene salvato in **C:\Windows\System32** per impostazione predefinita. Il file di output contiene le informazioni seguenti:
   

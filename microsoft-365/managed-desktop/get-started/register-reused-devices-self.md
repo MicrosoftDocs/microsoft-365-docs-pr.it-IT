@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a971d8dc413e7794aa48c0b39cc0f42e511739ed
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: abe9e63eb4fcd31993bd26822dc445ff0e48e369
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250446"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101486"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 
@@ -21,7 +21,7 @@ ms.locfileid: "42250446"
 
 Il processo per i partner è documentato nei [passaggi per i partner per la registrazione dei dispositivi](register-devices-partner.md).
 
-Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi tramite Microsoft Managed Desktop sul portale di Azure.
+Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi tramite il portale di amministrazione di Microsoft Managed Desktop.
 
 ## <a name="prepare-to-register-existing-devices"></a>Preparare la registrazione di dispositivi esistenti
 
@@ -60,7 +60,7 @@ Se sono stati soddisfatti tutti questi prerequisiti, è possibile raccogliere le
     - **Descrizione:** Specificare una descrizione per il report. 
     - **Server:** Visualizza il nome del server di report in cui si sta creando il report. 
     - **Percorso:** Selezionare **Sfoglia** per specificare una cartella nella quale si desidera archiviare il report. 
-5.  Select **Next**.  
+5. Selezionare **Avanti**. 
 6. Nella pagina **Riepilogo** , esaminare le impostazioni. Selezionare **Previous** per modificare le impostazioni oppure fare clic su **Avanti** per creare il report in Configuration Manager. 
 7. Nella pagina **completamento** , selezionare **Chiudi** per uscire dalla procedura guidata e aprire **Generatore report** per immettere le impostazioni del report. Immettere l'account utente e la password, se richiesto, quindi selezionare **OK.** Se il generatore di report non è installato nel dispositivo, viene richiesto di installarlo. Selezionare **Esegui per installare Generatore di report**, necessario per modificare e creare report. 
 
@@ -106,7 +106,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 2. In **Scegli un set di dati**, selezionare **Scegli un set di dati esistente nel rapporto o un set**di dati condiviso.  
 3. Selezionare **DataSet0** (impostazione predefinita) e quindi fare clic su **Avanti**.
 4. Trascinare il **produttore**, il **modello**e il **numero di serie** nella casella gruppi di **righe** . Trascinare **HardwareHash** nella casella **valori** e quindi fare clic su **Avanti**.
-5. Cancellare le caselle di controllo per **Mostra i subtotali e i totali** complessivi e i **gruppi Espandi/Comprimi**.  Select **Next**. 
+5. Cancellare le caselle di controllo per **Mostra i subtotali e i totali** complessivi e i **gruppi Espandi/Comprimi**. Selezionare **Avanti**.
 6. Select **Finish**.
 7. Selezionare **Esegui** per eseguire il report. Verificare che nel report siano disponibili le informazioni prevedibili. Se necessario, selezionare **progetta** per tornare alla visualizzazione struttura per modificare il report.
 8. Fare clic su **Salva** per salvare il report nel server di report. È possibile eseguire il nuovo rapporto nel nodo rapporti nell'area di lavoro di monitoraggio. 
@@ -124,7 +124,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 > [!IMPORTANT]
 > La query in Configuration Manager non consente l'esecuzione di spazi nei nomi di colonna esportati. Questo è il motivo per cui i passaggi sono stati immessi "Serial_Number" e "HardwareHash". Dopo aver esportato il file CSV, è necessario modificare le intestazioni dei rapporti per leggere il *numero di serie* e l' *hash hardware* come illustrato di seguito prima di procedere con la registrazione dei dispositivi.
 
-A questo punto è possibile procedere alla [registrazione dei dispositivi tramite il portale di Azure](#register-devices-by-using-the-azure-portal).
+A questo punto è possibile procedere alla [registrazione dei dispositivi tramite il portale di amministrazione](#register-devices-by-using-the-admin-portal).
 
 
 #### <a name="active-directory-powershell-script-method"></a>Metodo script di PowerShell di Active Directory
@@ -168,7 +168,7 @@ A questo punto è possibile procedere alla [registrazione di dispositivi](#regis
 3. Correre`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Attivare il dispositivo che si sta registrando, ma *non avviare l'esperienza di installazione*. Se si avvia accidentalmente l'esperienza di installazione, sarà necessario reimpostare o ricreare il dispositivo.
 5. Inserire l'unità USB e quindi premere MAIUSC + F10.
-6. Aprire un prompt di PowerShell con diritti amministrativi e quindi eseguirlo `cd <pathToUsb>`.
+6. Aprire un prompt di PowerShell con diritti amministrativi e quindi eseguirlo `cd <pathToUsb>` .
 7. Correre`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Correre`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 9. Rimuovere l'unità USB e quindi arrestare il dispositivo eseguendo`shutdown -s -t 0`
@@ -206,9 +206,9 @@ Il file deve includere le **intestazioni di colonna** identiche a quelle del cam
 >[!NOTE]
 >Se si dimentica di modificare i dati di esempio, la registrazione avrà esito negativo.
 
-#### <a name="register-devices-by-using-the-azure-portal"></a>Registrare i dispositivi tramite il portale di Azure
+#### <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
 
-Dal portale Microsoft Managed Desktop [Azure](https://aka.ms/mmdportal)selezionare **dispositivi** nel riquadro di spostamento a sinistra. Selezionare **+ registra dispositivi**; verrà aperto il volo:
+Dal [portale di amministrazione](https://aka.ms/mmdportal)di Microsoft Managed Desktop, selezionare **dispositivi** nel riquadro di spostamento a sinistra. Selezionare **+ registra dispositivi**; verrà aperto il volo:
 
 [![Fly-in dopo aver selezionato i dispositivi di registrazione, elencare i dispositivi con colonne per gli utenti assegnati, il numero di serie, lo stato, la data dell'ultima visualizzazione e l'età](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
@@ -232,7 +232,7 @@ Eseguire la procedura seguente:
 | Registrazione in sospeso | La registrazione non è ancora stata completata. Controllare in un secondo momento. |
 | Registrazione non riuscita | La registrazione non è stata completata. Per ulteriori informazioni, vedere [risoluzione dei problemi relativi alla registrazione del dispositivo](#troubleshooting-device-registration) . |
 | Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente finale. Microsoft Managed Desktop li guiderà per la prima volta, quindi non è necessario eseguire ulteriori preparativi. |
-| Attivo | Il dispositivo è stato recapitato all'utente finale ed è stato registrato con il tenant. Questo indica anche che stanno usando regolarmente il dispositivo. |
+| Attivazione | Il dispositivo è stato recapitato all'utente finale ed è stato registrato con il tenant. Questo indica anche che stanno usando regolarmente il dispositivo. |
 | Inattivo | Il dispositivo è stato recapitato all'utente finale ed è stato registrato con il tenant. Tuttavia, non hanno utilizzato il dispositivo di recente (negli ultimi 7 giorni).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Risoluzione dei problemi relativi alla registrazione del dispositivo

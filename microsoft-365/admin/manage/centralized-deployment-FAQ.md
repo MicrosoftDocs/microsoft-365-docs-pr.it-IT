@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Esaminare le risposte alle domande frequenti sulla distribuzione centralizzata dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083563"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102885"
 ---
 # <a name="centralized-deployment-faq"></a>Domande frequenti sulla distribuzione centralizzata
 
@@ -35,7 +35,7 @@ La distribuzione centralizzata è il modo consigliato per un amministratore di O
 La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Microsoft 365 Apps for Enterprise (e che siano firmati in Office con le credenziali di accesso dell'organizzazione) e dispongano di cassette postali di Exchange Online. La directory di sottoscrizione deve trovarsi o federata in Azure Active Directory.  
  
 La distribuzione centralizzata è supportata solo per le cassette postali online. La distribuzione non è supportata per le cassette postali di Exchange locali.
- 
+
 È possibile utilizzare la [Verifica compatibilità della distribuzione centralizzata](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   per determinare se la sottoscrizione è idonea. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Come si indirizzano le assegnazioni degli utenti ai componenti aggiuntivi con la distribuzione centralizzata?  
@@ -54,7 +54,9 @@ Per ulteriori informazioni, vedere [assegnazioni di utenti e gruppi](https://doc
 
 Per semplificare la distribuzione dei componenti aggiuntivi agli utenti, ai gruppi o all'intera organizzazione, è consigliabile che gli amministratori utilizzino la distribuzione centralizzata.
 
-Per ulteriori informazioni sulla gestione dell'accesso degli utenti, vedere </br>[Impedire il download del componente aggiuntivo disattivando l'archivio di Office in tutti i client (ad eccezione di Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) e </br>[Specificare gli amministratori e gli utenti in grado di installare e gestire i componenti aggiuntivi per Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN).
+Per ulteriori informazioni sulla gestione dell'accesso degli utenti, vedere:
+ - [Impedisci download del componente aggiuntivo disattivando l'archivio di Office in tutti i client (eccetto Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [Specifica degli amministratori e degli utenti in grado di installare e gestire componenti aggiuntivi per Outlook](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>La distribuzione centralizzata fornisce agli amministratori la possibilità di scegliere il metodo di distribuzione per i componenti aggiuntivi di Outlook?  
 
@@ -62,7 +64,7 @@ Sì. La distribuzione centralizzata fornisce agli amministratori la possibilità
 
 **Risolto (impostazione predefinita)**   Il componente aggiuntivo viene distribuito automaticamente agli utenti assegnati e non è possibile rimuoverlo.  
  
-**Disponibile** Gli utenti possono installare il componente aggiuntivo in Outlook scegliendo Home > ottenere altri componenti aggiuntivi > gestiti dall'amministratore.   
+**Disponibile** Gli utenti possono installare il componente aggiuntivo in Outlook scegliendo **Home > ottenere altri componenti aggiuntivi > gestiti dall'amministratore**.
  
 **Facoltativo** Il componente aggiuntivo viene distribuito automaticamente agli utenti assegnati, ma è possibile sceglierlo per rimuoverlo.  
     
@@ -70,19 +72,19 @@ Sì. La distribuzione centralizzata fornisce agli amministratori la possibilità
 
 Sì. Gli amministratori possono caricare un nuovo file manifesto per supportare le modifiche ai metadati per i componenti aggiuntivi LOB distribuiti dall'amministratore. Il componente aggiuntivo viene aggiornato la volta successiva che vengono avviate le applicazioni di Office. L'applicazione Web può essere modificata in qualsiasi momento.  
  
-Per ulteriori informazioni, vedere [componente aggiuntivo line-of-business](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins).  
+Per ulteriori informazioni, vedere [componente aggiuntivo line-of-business](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security).  
 
 ## <a name="can-admins-turn-off-add-ins"></a>Gli amministratori possono disattivare i componenti aggiuntivi?  
 
 Sì. Gli amministratori possono abilitare o disabilitare i componenti aggiuntivi che distribuiscono per tutti gli utenti dall'interfaccia di amministrazione di Microsoft.
 
-Per ulteriori informazioni, vedere [stati dei componenti](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states)aggiuntivi.  
+Per ulteriori informazioni, vedere [stati dei componenti](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)aggiuntivi.  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>Gli amministratori possono eliminare o rimuovere i componenti aggiuntivi?
 
 Sì. Gli amministratori possono eliminare i componenti aggiuntivi che sono stati distribuiti per tutti gli utenti dall'interfaccia di amministrazione di Microsoft.
 
-Per ulteriori informazioni, vedere [Delete the Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in). 
+Per ulteriori informazioni, vedere [eliminare un componente aggiuntivo](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in). 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Gli amministratori possono distribuire i componenti aggiuntivi a pagamento da Office Store utilizzando la distribuzione centralizzata? 
 
