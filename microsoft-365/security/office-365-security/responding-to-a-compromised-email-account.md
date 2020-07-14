@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso usando gli strumenti disponibili in Microsoft 365.
-ms.openlocfilehash: 8a7bb98432529bfca70764314d251810d3cdb2a4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f9d7b1dbcd9b54ca9b1bdca9e4a800be24286654
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819486"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094811"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Rispondere a un account di posta elettronica compromesso
 
@@ -98,7 +98,7 @@ Anche l’accesso all’account è stato riacquisito rapidamente, un utente mali
 - Se l'identità dell'utente locale è federata con Microsoft 365, è necessario cambiare la password locale e quindi informare l'amministratore della violazione.
 
 > [!TIP]
-> È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi.  Per maggiori dettagli sull’autenticazione MFA, visitare [Configurare l’autenticazione a più fattori]((https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi.  Per maggiori dettagli sull’autenticazione a più fattori, visitare [Configurare l’autenticazione a più fattori](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Passaggio 2: Rimuovere indirizzi di inoltro della posta elettronica
 

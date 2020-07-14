@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: ab6a61e0cedfd91d642823f0c459a5a1699df000
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b509c1581f3b4120e9cf70e7603e56da86126539
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083618"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091996"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -135,7 +135,7 @@ I criteri di conservazione basati su query usano l'indice di ricerca per identif
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>Identificare il contenuto che include informazioni riservate
 
-You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
+You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personal information, such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![Pagina riguardante i tipi di informazioni riservate](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
@@ -235,7 +235,7 @@ Se è necessario usare la [protezione dell'archiviazione](retention-policies.md#
 
 2. Visualizzare un elenco dei criteri di conservazione e trovare il nome del criterio da bloccare eseguendo `Get-RetentionCompliancePolicy`.
     
-    ![Elenco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+   ![Elenco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
 3. Per applicare la protezione dell'archiviazione su un criterio di conservazione, eseguire `Set-RetentionCompliancePolicy` con il parametro `RestrictiveRetention` impostato su true. Ad esempio:
 
@@ -243,15 +243,17 @@ Se è necessario usare la [protezione dell'archiviazione](retention-policies.md#
    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
    ```
    
-    ![Parametro RestrictiveRetention in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+   ![Parametro RestrictiveRetention in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-    Dopo aver eseguito il cmdlet, scegliere **Sì a tutti**:
+   Dopo aver eseguito il cmdlet, scegliere **Sì a tutti**:
     
-    ![Richiesta di conferma del blocco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+   ![Richiesta di conferma del blocco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 La protezione dell'archiviazione è ora inserita nei criteri di conservazione. Se si esegue `Get-RetentionCompliancePolicy`, il parametro `RestrictiveRetention` viene impostato su true. Ad esempio:
 
-`Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl`
+```powershell
+Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
+```
 
 ![Criteri bloccati con tutti i parametri visualizzati in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   

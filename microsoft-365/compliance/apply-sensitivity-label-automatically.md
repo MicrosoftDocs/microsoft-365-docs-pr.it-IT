@@ -16,11 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: c9b7782c39582deec3d42eb0c9dd1083519c805e
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874916"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094846"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -114,7 +115,7 @@ Quando questa etichetta di riservatezza viene applicata automaticamente, l'utent
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>Configurazione dei tipi di informazioni sensibili per un'etichetta
 
-Quando si seleziona l'opzione **Tipi di informazioni sensibili**, viene visualizzato lo stesso elenco di tipi di informazioni sensibili mostrato durante la creazione di un criterio di prevenzione della perdita dei dati (DLP). Ad esempio, è possibile applicare automaticamente un'etichetta Estremamente riservato a qualsiasi contenuto che include informazioni personali (PII) dei clienti, ad esempio numeri di carte di credito o codici fiscali:
+Quando si seleziona l'opzione **Tipi di informazioni sensibili**, viene visualizzato lo stesso elenco di tipi di informazioni sensibili mostrato durante la creazione di un criterio di prevenzione della perdita dei dati (DLP). Ad esempio, è possibile applicare automaticamente un'etichetta Estremamente riservato a qualsiasi contenuto che include informazioni personali dei clienti, ad esempio numeri di carte di credito, codici fiscali o numeri di passaporto:
 
 ![Tipi di informazioni sensibili per l'assegnazione automatica di etichette nelle app Office](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -190,7 +191,7 @@ Assicurarsi di conoscere i prerequisiti prima di configurare i criteri di etiche
 
 - Modalità di simulazione:
     - È necessario abilitare il controllo per Microsoft 365. Per abilitare il controllo o verificare se è già attivato, vedere [Abilitare o disabilitare la ricerca nel log di audit](turn-audit-log-search-on-or-off.md).
-    - Per visualizzare il contenuto del file nella visualizzazione origine, è necessario avere il ruolo di **Visualizzatore contenuto di Esplora contenuto** se non si è un amministratore globale. Se non si dispone di questa autorizzazione, non viene visualizzato il riquadro di anteprima quando si seleziona un elemento dalla scheda **Elementi corrispondenti**.
+    - Per visualizzare i contenuti del file nella visualizzazione origine, è necessario avere il ruolo di **Visualizzatore contenuto di Esplora contenuto**. Per impostazione predefinita, gli amministratori globali non hanno questo ruolo. Se non si dispone di questa autorizzazione, non viene visualizzato il riquadro anteprima quando si seleziona un elemento dalla scheda **Elementi corrispondenti**.
 
 - Per assegnare un'etichetta automatica ai file in SharePoint e OneDrive:
     - Sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -240,13 +241,17 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     ![Scheda Etichettatura automatica](../media/auto-labeling-tab.png)
     
 
-3. Selezionare **+ Crea criterio**.
+3. Selezionare **+ Crea criterio di applicazione automatica di etichette**. Verrà avviata la creazione guidata del nuovo criterio:
+    
+    ![Creazione guidata del nuovo criterio per l’applicazione automatica di etichette ](../media/auto-labeling-wizard.png)
 
 4. Per la pagina **Scegliere le informazioni a cui applicare questa etichetta**: selezionare uno dei modelli, ad esempio **Finanziari** o **Privacy**. È possibile perfezionare la ricerca usando l'elenco a discesa **Mostra le opzioni per**. In alternativa, selezionare **Criterio personalizzato** se i modelli non soddisfano i propri requisiti. Selezionare **Avanti**.
 
 5. Per la pagina **Assegnare un nome al criterio di applicazione automatica delle etichette**: specificare un nome univoco e, facoltativamente, una descrizione per l'etichetta applicata automaticamente, le posizioni e le condizioni che identificano il contenuto da etichettare.
 
-6. Per la pagina **Scegliere le posizioni in cui si desidera applicare l'etichetta**: selezionare e specificare le posizioni per Exchange, siti di SharePoint e OneDrive. Poi scegliere **Avanti**.
+6. Per la pagina **Scegliere le posizioni in cui si desidera applicare l'etichetta**: selezionare e specificare le posizioni per Exchange, siti di SharePoint e OneDrive. Quindi, scegliere **Avanti**.
+    
+    ![Scegliere la procedura guidata per l’applicazione automatica di etichette alla pagina delle posizioni  ](../media/locations-auto-labeling-wizard.png)
     
     Per OneDrive, è necessario specificare i singoli account. L'URL di OneDrive di un utente ha il formato seguente: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
@@ -254,13 +259,13 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     
     Per verificare la sintassi del tenant e identificare gli URL per gli utenti, vedere [Ottenere un elenco di tutti gli URL di OneDrive dell'utente nell'organizzazione](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
-7. Per la pagina **Definire le impostazioni dei criteri**: mantenere l'impostazione predefinita di **Trova contenuti che includono** per definire le regole che identificano il contenuto da etichettare in tutte le posizioni selezionate. Se sono necessarie regole diverse per ogni posizione, selezionare **Impostazioni avanzate**. Quindi, scegliere **Avanti**.
+7. Per la pagina **Configurare regole comuni o avanzate**: mantenere l'impostazione predefinita di **Regole comuni** per definire le regole che identificano il contenuto da etichettare in tutte le posizioni selezionate. Se sono necessarie regole diverse per ogni posizione, selezionare **Regole avanzate**. Quindi, scegliere **Avanti**.
     
     Le regole usano condizioni che includono i tipi di informazioni sensibili e le opzioni di condivisione:
     - Per i tipi di informazioni sensibili, è possibile selezionare tipi predefiniti e personalizzati.
     - Per le opzioni di condivisione, è possibile scegliere **Solo con persone interne all'organizzazione** o **Con persone esterne all'organizzazione**.
     
-    Se l'unica posizione è **Exchange** o se si seleziona **Impostazioni avanzate**, è possibile selezionare altre condizioni:
+    Se l'unica posizione è **Exchange** o se si seleziona **Regole avanzate**, è possibile selezionare altre condizioni:
     - L'indirizzo IP del mittente è
     - Il dominio del destinatario è
     - Il destinatario è
@@ -269,29 +274,29 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     - Non è stato possibile analizzare il contenuto degli allegati di posta elettronica
     - L'analisi del contenuto degli allegati di posta elettronica non è stata completata
 
-8. Per la pagina **Configurare le regole per definire quale contenuto etichettare**: selezionare **+ Crea regola** e quindi scegliere **Avanti**.
-
-9. Nella pagina **Crea regola** assegnare un nome e una definizione alla regola, usando i tipi di informazioni sensibili o l'opzione di condivisione, quindi selezionare **Salva**.
+8. A seconda delle scelte effettuate in precedenza, è possibile creare regole nuove usando condizioni ed eccezioni.
     
     Le opzioni di configurazione per i tipi di informazioni sensibili sono identiche a quelle selezionate per l'applicazione automatica di etichette per le app di Office. Per altre informazioni, vedere [Configurazione dei tipi di informazioni sensibili per un'etichetta](#configuring-sensitive-info-types-for-a-label).
-
-10. Tornare alla pagina **Configurare le regole per definire quale contenuto etichettare**: selezionare di nuovo **+ Crea regola** se è necessaria un'altra regola per identificare il contenuto da etichettare, quindi ripetere il passaggio precedente. Dopo avere definito tutte le regole necessarie e avere verificato che il relativo stato è attivato, scegliere **Avanti**.
+    
+    Dopo avere definito tutte le regole necessarie e avere verificato che il relativo stato è attivato, selezionare **Avanti** per scegliere l’etichetta da applicare automaticamente.
 
 11. Per la pagina **Scegliere un'etichetta da applicare automaticamente**: selezionare **+ Scegli un'etichetta**, selezionare un'etichetta nel riquadro **Choose a sensitivity label**, quindi scegliere **Avanti**.
 
-12. Per la pagina **Decidere se si vuole eseguire la simulazione dei criteri ora o in un secondo momento**: selezionare **Esegui criteri in modalità di simulazione** se si è pronti per eseguire il criterio di applicazione automatica di etichette in modalità di simulazione. In caso contrario, selezionare **Mantieni il criterio disabilitato**. Selezionare **Avanti**. 
+12. Per la pagina **Decidere se si vuole eseguire il test dei criteri ora o in un secondo momento**: selezionare **Esegui criteri in modalità di simulazione** se si è pronti per eseguire il criterio di applicazione automatica di etichette in modalità di simulazione. In caso contrario, selezionare **Mantieni il criterio disabilitato**. Selezionare **Avanti**: 
+    
+    ![Testare la procedura guidata per l’applicazione automatica delle etichette dei criteri](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. Per la pagina **Riepilogo**: esaminare la configurazione del criterio di applicazione automatica di etichette e apportare le modifiche necessarie, quindi completare la procedura guidata.
     
     Diversamente dall'applicazione automatica di etichette per le app di Office, non è disponibile un'opzione di pubblicazione separata. Come per le pubblicazione di etichette, tuttavia, la replica del criterio di applicazione automatica di etichette all'interno dell'organizzazione può richiedere fino a 24 ore.
 
-Andando alla pagina **Protezione delle informazioni**, nella scheda **Applicazione automatica di etichette**, ora è possibile visualizzare i criteri di applicazione automatica di etichette nella sezione **Simulazione** o **Disattivato**, a seconda che si sia scelto di eseguirlo in modalità di simulazione o meno. Selezionare il criterio per visualizzare i dettagli della configurazione e dello stato, ad esempio **Simulazione del criterio ancora in corso**. Per i criteri in modalità di simulazione, selezionare la scheda **Elementi corrispondenti** per vedere quali e-mail o documenti corrispondono alle regole specificate.
+Andando alla pagina **Protezione delle informazioni** > **Applicazione automatica di etichette**, ora è possibile visualizzare i criteri di applicazione automatica di etichette nella sezione **Simulazione** o **Disattivato**, a seconda che si sia scelto di eseguirlo in modalità di simulazione o meno. Selezionare il criterio per visualizzare i dettagli della configurazione e dello stato, ad esempio **Simulazione del criterio ancora in corso**. Per i criteri in modalità di simulazione, selezionare la scheda **Elementi corrispondenti** per vedere quali e-mail o documenti corrispondono alle regole specificate.
 
 È possibile modificare i criteri direttamente dall'interfaccia:
 
 - Per un criterio nella sezione **Disattivato**, selezionare il pulsante **Modifica criterio**.
 
-- Per i criteri nella sezione **Simulazione**, selezionare l'opzione **Modifica** nella parte superiore della pagina, da entrambe le schede:
+- Per i criteri nella sezione **Simulazione**, selezionare l'opzione **Modifica criteri** nella parte superiore della pagina, da entrambe le schede:
     
     ![Modificare l'opzione del criterio di applicazione automatica di etichette](../media/auto-labeling-edit.png)
     

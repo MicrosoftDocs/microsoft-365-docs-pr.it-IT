@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sull’uso del servizio di importazione nel Centro sicurezza e conformità per importare dati di posta elettronica (file PST) nelle cassette postali degli utenti.
-ms.openlocfilehash: 20d7b263a5a5d16d3818e6b0597435f5e7d38b07
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: e0d0c8c0a963e8660cac09abe68e6824dd7e1d3c
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083528"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091942"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Panoramica dell'importazione di file PST dell'organizzazione
 
@@ -56,7 +56,7 @@ Ecco un'illustrazione e una descrizione del processo di importazione PST complet
     
 2. **Caricare o copiare i file PST** - Il passaggio successivo è diverso a seconda che si usi il caricamento tramite rete o la spedizione unità per importare i file PST. In entrambi i casi si userà lo strumento e la chiave di archiviazione sicura ottenuti nel passaggio precedente.
     
-    - **Caricamento tramite rete:** Lo strumento AzCopy.exe, scaricato nel passaggio 1, viene usato per caricare e archiviare i file PST in un percorso di archiviazione di Azure nel cloud Microsoft. La posizione di Archiviazione di Azure in cui si caricano i file PST si trova nello stesso data center Microsoft regionale in cui si trova l'organizzazione.
+    - **Caricamento tramite rete:** Lo strumento AzCopy.exe, scaricato nel passaggio 1, viene usato per caricare e archiviare i file PST in un percorso di archiviazione di Azure nel cloud Microsoft. La posizione di archiviazione di Azure in cui sono caricati i file PST si trova nello stesso datacenter Microsoft locale in cui si trova l’organizzazione.
     
       Per caricarli, i file PST da importare devono trovarsi in una condivisione file o in un file server dell'organizzazione.
     
@@ -119,7 +119,6 @@ Ecco un'illustrazione e una descrizione del processo di importazione PST complet
 
 - [Eseguire la migrazione del contenuto condiviso dei file a SharePoint Online con Azure Data Box](https://docs.microsoft.com/sharepointmigration/how-to-migrate-file-share-content-to-spo-using-azuredatabox)
 
-
 ## <a name="frequently-asked-questions-about-importing-pst-files"></a>Domande frequenti sull'importazione di file PST
   
 Ecco alcune domande frequenti relative all'uso del servizio di importazione di Office 365 per importare in blocco i file PST nelle cassette postali di Microsoft 365. 
@@ -147,7 +146,7 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
   
  **Dov'è disponibile il caricamento tramite rete?**
   
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, Europe, Germany, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
+Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
   
  **Quanto costa importare file PST con il caricamento tramite rete?**
   
@@ -163,7 +162,7 @@ Sono disponibili due versioni del formato di file PST: ANSI e Unicode. Si consig
   
  **Dopo il caricamento dei file PST nell'area di archiviazione di Azure, per quanto tempo vengono conservati in Azure prima dell'eliminazione?**
   
-Quando si usa il metodo di caricamento tramite rete per importare i file PST, i file vengono caricati in un contenitore BLOB di Azure denominato **ingestiondata**. Se non ci sono processi di importazione in corso nella pagina **Importa file PST** del Centro sicurezza e conformità, tutti i file PST nel contenitore **ingestiondata** in Azure vengono eliminati 30 giorni dopo la creazione del processo di importazione più recente nel Centro sicurezza e conformità. Significa anche che è necessario creare un nuovo processo di importazione nel Centro sicurezza e conformità, descritto nel passaggio 5 delle istruzioni di caricamento tramite rete, entro 30 giorni dal caricamento dei file PST in Azure.
+Quando si usa il metodo di caricamento tramite rete per importare i file PST, i file vengono caricati in un contenitore BLOB di Azure denominato `ingestiondata`. Se non ci sono processi di importazione in corso nella pagina **Importa file PST** del Centro sicurezza e conformità, tutti i file PST nel contenitore `ingestiondata` in Azure vengono eliminati 30 giorni dopo la creazione del processo di importazione più recente nel Centro sicurezza e conformità. Significa anche che è necessario creare un nuovo processo di importazione nel Centro sicurezza e conformità, descritto nel passaggio 5 delle istruzioni di caricamento tramite rete, entro 30 giorni dal caricamento dei file PST in Azure.
   
 Significa anche che, dopo essere stati eliminati dall'area di archiviazione di Azure, i file PST non vengono più visualizzati nell'elenco dei file per un processo di importazione completato nel Centro sicurezza e conformità. Anche se un processo di importazione potrebbe essere ancora presente nella pagina **Importa file PST** del Centro sicurezza e conformità, l'elenco dei file PST potrebbe essere vuoto quando si visualizzano i dettagli dei processi di importazione precedenti.
   

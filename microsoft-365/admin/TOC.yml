@@ -222,8 +222,10 @@
           href: setup/upgrade-users-to-latest-office-client.md
         - name: Requisiti per la distribuzione centralizzata dei componenti aggiuntivi
           href: manage/centralized-deployment-of-add-ins.md
-        - name: Installare e gestire i componenti aggiuntivi usando la distribuzione centralizzata
+        - name: Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
           href: manage/manage-deployment-of-add-ins.md
+        - name: Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
+          href: manage/manage-addins-in-the-admin-center.md
         - name: Domande frequenti sulla distribuzione centralizzata
           href: manage/centralized-deployment-faq.md
         - name: Trovare un partner o un rivenditore
@@ -294,12 +296,12 @@
           href: ../business/device-states.md
         - name: Impostazioni di protezione delle app per PC Windows 10
           href: ../business/protection-settings-for-windows-10-devices.md
-        - name: Impostazioni di protezione delle app per Android e iOS
+        - name: Configurare le impostazioni di protezione delle app per Android e iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
             - name: Convalidare le impostazioni su Android o iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Impostazioni di protezione dei dispositivi per i PC Windows 10
+        - name: Configurare le impostazioni di protezione dei dispositivi per i PC Windows 10
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: Convalidare le impostazioni su PC Windows 10
