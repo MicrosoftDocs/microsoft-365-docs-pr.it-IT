@@ -191,6 +191,10 @@
               items:
                 - name: Panoramica su Secure Score
                   href: mtp/microsoft-secure-score.md
+                - name: Aumentare la visibilità nell’approccio alla sicurezza
+                  href: mtp/microsoft-secure-score-improvement-actions.md
+                - name: Tenere traccia della cronologia del punteggio e raggiungere gli obiettivi
+                  href: mtp/microsoft-secure-score-history-metrics-trends.md
                 - name: Novità in arrivo
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Report
@@ -411,8 +415,10 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: Individuare e trattare rapidamente gli account utente compromessi
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Indagare e correggere i messaggi di posta elettronica dannosi
+            - name: Indagare i messaggi di posta elettronica dannosi
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Correggere i messaggi di posta elettronica dannosi
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: Visualizzare e leggere i report ATP
               href: ./office-365-security/view-reports-for-atp.md
             - name: Informazioni sugli attacchi più recenti con l'analisi delle minacce
