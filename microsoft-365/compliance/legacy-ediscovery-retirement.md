@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Advanced eDiscovery v 1.0 vengono anche ritirati nello stesso periodo di tempo.
-ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 12de88fe3c9de7806b12bd610e0dbeeb404524ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761686"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126943"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Ritiro degli strumenti legacy di eDiscovery
 
@@ -124,7 +124,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <p>Applicazione dei criteri a posizioni di contenuto specifiche quali Exchange Online, SharePoint Online, OneDrive for business, Skype for business, Microsoft teams e Office 365 groups</p></li>
 <li>
 <p>Applicazione di criteri a utenti specifici</p></li></ul>
-<p>Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">Overview of Retention Policies</a>.</td>
+<p>Per ulteriori informazioni, vedere informazioni <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">sui criteri di conservazione e sulle etichette di conservazione</a>.</td>
 </tr>
 <tr class="odd">
 <td>Copiare i risultati della ricerca tramite posta elettronica in una cassetta postale di individuazione per la revisione</td><td>Esaminare i set in Advanced eDiscovery v 2.0</td>
@@ -182,7 +182,7 @@ Poiché queste funzionalità sono ora disponibili nel [<span class="underline">c
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Tempistica
+### <a name="timeline"></a>Sequenza temporale
 
 - 1 luglio 2020: non è possibile utilizzare **New-MailboxSearch** per creare nuove ricerche eDiscovery sul posto e archiviazioni sul posto, ma è comunque possibile utilizzare i cmdlet per l'esecuzione, la modifica e l'eliminazione di ricerche esistenti e conserva a proprio rischio. Il supporto tecnico Microsoft non fornirà più assistenza per questi tipi di ricerche e esenzioni.
 
@@ -263,7 +263,7 @@ Il cmdlet **Search-Mailbox** in Exchange Online PowerShell viene ritirato come a
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Tempistica
+### <a name="timeline"></a>Sequenza temporale
 
 -  1 luglio 2020: il cmdlet **Search-Mailbox** non sarà più disponibile e il supporto tecnico Microsoft non fornirà più assistenza.
 
@@ -335,7 +335,7 @@ Queste operazioni nell'API dei servizi Web di Exchange vengono utilizzate dalla 
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Tempistica
+### <a name="timeline"></a>Sequenza temporale
 
 - 1 luglio 2020: le operazioni GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes e GetHoldOnMailboxes non saranno più disponibili e il supporto tecnico Microsoft non fornirà più assistenza.
 
@@ -369,7 +369,7 @@ A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Tempistica
+### <a name="timeline"></a>Sequenza temporale
 
 - 1 ° luglio 2020: non è possibile creare nuovi casi avanzati di eDiscovery v 1.0.
 

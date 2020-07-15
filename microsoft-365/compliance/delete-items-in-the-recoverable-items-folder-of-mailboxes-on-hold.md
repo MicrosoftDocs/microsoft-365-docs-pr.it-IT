@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Informazioni su come eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9b4338784602826694b4683f3d000391592547a8
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817875"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127023"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
 
@@ -52,7 +52,7 @@ La cartella elementi ripristinabili per una cassetta postale di Exchange Online 
 
 - La procedura descritta in questo articolo non è supportata per le cassette postali inattive. Ciò è dovuto al fatto che non è possibile riapplicare un blocco o un criterio di conservazione a una cassetta postale inattiva dopo averlo rimosso. Quando si rimuove un'esenzione da una cassetta postale inattiva, viene modificata in una normale cassetta postale eliminata temporaneamente e viene eliminata definitivamente dall'organizzazione dopo che è stata elaborata dall'Assistente cartelle gestite.
 
-- Non è possibile eseguire questa procedura per una cassetta postale che è stata assegnata a un criterio di conservazione bloccato con un blocco di conservazione. Ciò è dovuto al fatto che un blocco di conservazione impedisce di rimuovere o escludere la cassetta postale dal criterio di conservazione e di disabilitare l'Assistente cartelle gestite nella cassetta postale. Per ulteriori informazioni sul blocco dei criteri di conservazione, vedere [use Preservation Lock to conforme ai requisiti normativi](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+- Non è possibile eseguire questa procedura per una cassetta postale che è stata assegnata a un criterio di conservazione bloccato con un blocco di conservazione. Ciò è dovuto al fatto che un blocco di conservazione impedisce di rimuovere o escludere la cassetta postale dal criterio di conservazione e di disabilitare l'Assistente cartelle gestite nella cassetta postale. Per ulteriori informazioni sul blocco dei criteri di conservazione, vedere [use Preservation Lock to conforme ai requisiti normativi](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
 - Se non si dispone di una cassetta postale in attesa (o se non è stato abilitato il ripristino di un singolo elemento), è possibile eliminare gli elementi dalla cartella elementi ripristinabili. Per ulteriori informazioni su come eseguire questa operazione, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
@@ -66,7 +66,7 @@ Questo primo passaggio consiste nel raccogliere le proprietà selezionate dalla 
 
 Inoltre, è necessario ottenere le impostazioni di accesso client delle cassette postali in modo da poterle disabilitare temporaneamente in modo che il proprietario (o altri utenti) non riesca ad accedere alla cassetta postale durante questa procedura. Infine, è possibile ottenere la dimensione corrente e il numero di elementi nella cartella elementi ripristinabili. Dopo aver eliminato gli elementi nella cartella elementi ripristinabili nel passaggio 5, è possibile utilizzare queste informazioni per verificare che gli elementi siano stati rimossi.
   
-1. [Connettersi a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Assicurarsi di utilizzare un nome utente e una password per un account amministratore a cui sono stati assegnati i ruoli di gestione idonei in Exchange Online. 
+1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Assicurarsi di utilizzare un nome utente e una password per un account amministratore a cui sono stati assegnati i ruoli di gestione idonei in Exchange Online. 
     
 2. Eseguire il seguente comando per ottenere informazioni sul ripristino di un singolo elemento e sul periodo di conservazione degli elementi eliminati.
 
@@ -224,7 +224,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 Dopo aver identificato che una cassetta postale è in attesa perché viene applicata un'etichetta di conservazione a una cartella o a un elemento, è possibile utilizzare lo strumento di ricerca contenuto nel centro sicurezza e conformità per cercare gli elementi contrassegnati utilizzando la condizione di ricerca di ComplianceTag. Per ulteriori informazioni, vedere la sezione "condizioni di ricerca" in [query di parole chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
 
-Per ulteriori informazioni sulle etichette, vedere [Panoramica delle etichette](labels.md).
+Per ulteriori informazioni sulle etichette, vedere informazioni [sui criteri di conservazione e sulle etichette di conservazione](retention.md).
 
  ### <a name="ediscovery-holds"></a>eDiscovery contiene
   
@@ -371,7 +371,7 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Di seguito viene riportata una tabella in cui viene descritto come identificare diversi tipi di esenzioni in base ai valori della proprietà *InPlaceHolds* quando si eseguono i cmdlet **Get-Mailbox** o **Get-OrganizationConfig** . Per informazioni più dettagliate, vedere [How to identificare il tipo di blocco posizionato su una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 

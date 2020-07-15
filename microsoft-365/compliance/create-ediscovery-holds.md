@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile creare un'esenzione associata a un caso di eDiscovery di base per conservare il contenuto che potrebbe essere pertinente per un'indagine.
-ms.openlocfilehash: 4ec9ff37a49f783afc25835ca91208608ab4733a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: b3a213e499a71356999367deff930ea9a04945df
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498329"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127523"
 ---
 # <a name="create-an-ediscovery-hold"></a>Creare un blocco di eDiscovery
 
@@ -67,7 +67,7 @@ Per creare un blocco di eDiscovery associato a un caso di eDiscovery di base:
 
 8. Dopo aver aggiunto i percorsi di contenuto all'esenzione, fare clic su **Avanti**.
 
-9. Per creare un blocco basato su query con condizioni, completare quanto segue. In caso contrario, per mantenere tutto il contenuto nelle posizioni di contenuto specificate, fare clic su **Avanti** .
+9. Per creare un blocco basato su query con condizioni, completare quanto segue. In caso contrario, per mantenere tutto il contenuto nelle posizioni di contenuto specificate, fare clic su **Avanti**.
 
     ![Creare un blocco basato su query con condizioni](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
@@ -80,6 +80,14 @@ Per creare un blocco di eDiscovery associato a un caso di eDiscovery di base:
 10. Dopo aver configurato un blocco basato su query, fare clic su **Avanti**.
 
 11. Esaminare le impostazioni (e modificarle se necessario), quindi fare clic su **Crea blocco**.
+
+## <a name="query-based-holds-placed-on-site-documents"></a>Esenzioni basate su query inserite nei documenti del sito
+
+Tenere presente quanto segue quando si attiva un blocco di eDiscovery basato su query sui documenti situati in siti di SharePoint:
+
+- Un blocco basato su query inizialmente conserva tutti i documenti in un sito per un breve periodo di tempo dopo l'eliminazione. Questo significa che quando un documento viene eliminato, verrà spostato nella raccolta conservazione, anche se non corrisponde ai criteri del blocco basato su query. Tuttavia, i documenti eliminati che non corrispondono a un blocco basato su query verranno rimossi da un processo timer che elabora la raccolta conservazione. Il processo timer viene eseguito periodicamente e confronta tutti i documenti nella raccolta conservazione per le esenzioni di eDiscovery basate su query (e altri tipi di esenzioni e criteri di conservazione). Il processo timer Elimina i documenti che non corrispondono a un blocco basato su query e conserva i documenti.
+
+- Le esenzioni basate su query non devono essere utilizzate per eseguire una conservazione mirata, ad esempio per conservare i documenti in una cartella o un sito specifico oppure utilizzando altri criteri di archiviazione basati sul percorso. In questo modo, potrebbero verificarsi risultati indesiderati. È consigliabile utilizzare criteri di conservazione non basati sul percorso, ad esempio parole chiave, intervalli di date o altre proprietà del documento per conservare i documenti del sito.
 
 ## <a name="ediscovery-hold-statistics"></a>Statistiche di eDiscovery Hold
 
@@ -114,7 +122,7 @@ Di seguito sono riportate alcune altre informazioni da tenere presenti quando si
 - Se una ricerca viene configurata per la ricerca di percorsi in attesa e quindi si modifica un blocco di eDiscovery nel caso (aggiungendo o rimuovendo una posizione o modificando una query di blocco), la configurazione di ricerca viene aggiornata con tali modifiche. Tuttavia, è necessario eseguire nuovamente la ricerca dopo che il blocco è stato modificato per aggiornare i risultati della ricerca.
 
 - Se più eDiscovery contiene sono posizionate in una singola posizione in un caso di eDiscovery e si seleziona per eseguire la ricerca di percorsi in attesa, il numero massimo di parole chiave per la query di ricerca è 500. Ciò è dovuto al fatto che la ricerca combina tutte le esenzioni basate su query utilizzando l'operatore **or** . Se sono presenti più di 500 parole chiave nelle query di archiviazione combinata e nella query di ricerca, viene cercato tutto il contenuto della cassetta postale, non solo il contenuto che corrisponde al caso basato su query.
-    
+
 - Se un blocco di eDiscovery ha lo stato di **attivazione**, è comunque possibile cercare le posizioni in attesa mentre il blocco è attivo.
 
 ## <a name="preserve-content-in-microsoft-teams"></a>Preservare il contenuto in Microsoft Teams
@@ -131,7 +139,7 @@ Per ulteriori informazioni sulla conservazione dei contenuti del team, vedere [c
 > In un'organizzazione basata sul cloud, gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat nei team devono disporre di una cassetta postale di Exchange Online per mantenere le conversazioni chat quando la cassetta postale viene inserita in un blocco eDiscovery. Questo perché le conversazioni che fanno parte dell'elenco chat sono memorizzate nelle cassette postali basate sul cloud dei partecipanti alla chat. Se un partecipante alla chat non dispone di una cassetta postale di Exchange Online, non sarà possibile preservare tali conversazioni. Ad esempio, in una distribuzione ibrida di Exchange, gli utenti che dispongono di una cassetta postale locale potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in teams. In questo caso, tuttavia, non è possibile preservare il contenuto di queste conversazioni perché questi utenti non dispongono di una cassetta postale basata sul cloud che può essere bloccata.
   
 Ogni canale team o team contiene anche un wiki per la collaborazione e l'adozione di note. Il contenuto Wiki viene salvato automaticamente in un file con formato MHT. Il file è archiviato nella raccolta documenti di dati Wiki di Teams nel sito di SharePoint del team. È possibile preservare il contenuto del wiki aggiungendo il sito di SharePoint del team a un'esenzione di eDiscovery.
-    
+
 > [!NOTE]
 > La possibilità di conservare il contenuto wiki per un team o un canale del team (quando si posiziona il sito di SharePoint del team in attesa) è stata rilasciata il 22 giugno 2017. Se un sito del team è in attesa, il contenuto del wiki verrà mantenuto a partire da tale data. Tuttavia, se un sito del team è in attesa e il contenuto del wiki è stato eliminato entro il 22 giugno 2017, il contenuto del wiki non è stato conservato.
 
@@ -159,8 +167,8 @@ Tenere presente quanto segue quando si inseriscono i gruppi di team e di Office 
   
 - Quando viene eseguita la ricerca della cassetta postale di un utente, qualsiasi team o gruppo di Office 365 di cui l'utente è membro non verrà cercato. Analogamente, quando si inserisce un team o un gruppo di Office 365 in eDiscovery Hold, solo la cassetta postale di gruppo e il sito del gruppo vengono inseriti in attesa. Le cassette postali e i siti di OneDrive for business dei membri del gruppo non vengono conservati a meno che non vengano aggiunti in modo esplicito all'esenzione di eDiscovery. Pertanto, se è necessario disporre di un team o di un gruppo di Office 365 in attesa per un motivo legale, è consigliabile aggiungere le cassette postali e gli account di OneDrive dei membri del team o del gruppo nello stesso blocco.
 
-- Per ottenere un elenco dei membri di un team o di un gruppo di Office 365, è possibile visualizzare le proprietà nella pagina **gruppi** nell'interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
-    
+- Per ottenere un elenco dei membri di un team o di un gruppo di Office 365, è possibile visualizzare le proprietà nella pagina **gruppi** nell'interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online:
+
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
     ```
@@ -179,7 +187,7 @@ Per raccogliere un elenco degli URL per i siti di OneDrive for business nell'org
 
 Dopo la rimozione di una cassetta postale, un sito di SharePoint o un account OneDrive da un'esenzione di eDiscovery, viene applicato un *blocco di ritardo* . Questo significa che la rimozione effettiva del blocco viene posticipata di 30 giorni per impedire che i dati vengano eliminati definitivamente (eliminati) da una posizione di contenuto. In questo modo gli amministratori avranno la possibilità di cercare o recuperare contenuti che verranno eliminati dopo la rimozione di un blocco di eDiscovery. I dettagli sulla modalità di funzionamento del blocco di ritardo per le cassette postali e i siti sono diversi.
 
-- **Cassette postali:** Un blocco di ritardo viene inserito in una cassetta postale alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite e viene rilevato che un blocco di eDiscovery è stato rimosso. In particolare, un blocco di ritardo viene applicato a una cassetta postale quando l'Assistente cartelle gestite imposta una delle seguenti proprietà della cassetta postale su **true**: 
+- **Cassette postali:** Un blocco di ritardo viene inserito in una cassetta postale alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite e viene rilevato che un blocco di eDiscovery è stato rimosso. In particolare, un blocco di ritardo viene applicato a una cassetta postale quando l'Assistente cartelle gestite imposta una delle seguenti proprietà della cassetta postale su **true**:
 
    - **DelayHoldApplied:** Questa proprietà si applica al contenuto relativo alla posta elettronica (generato da utenti che utilizzano Outlook e Outlook sul Web) archiviato nella cassetta postale di un utente.
 
@@ -191,14 +199,14 @@ Dopo la rimozione di una cassetta postale, un sito di SharePoint o un account On
 
 - **Siti di SharePoint e OneDrive:** Qualsiasi contenuto di SharePoint o OneDrive che viene conservato nella raccolta di conservazione non viene eliminato durante il periodo di attesa di 30 giorni dopo la rimozione di un sito da un blocco eDiscovery. Questo è simile a quello che succede quando un sito viene rilasciato da un criterio di conservazione. Inoltre, non è possibile eliminare manualmente il contenuto nella raccolta conservazione per il periodo di attesa di 30 giorni. 
 
-   Per ulteriori informazioni, vedere [rilasciando un criterio di conservazione](retention-policies.md#releasing-a-retention-policy).
+   Per ulteriori informazioni, vedere [rilasciando un criterio di conservazione](retention.md#releasing-a-retention-policy).
 
 Un blocco di ritardo viene applicato anche ai percorsi di contenuto in attesa quando si chiude un caso di eDiscovery di base perché le esenzioni sono disattivate quando si chiude un caso. Per ulteriori informazioni sulla chiusura di un caso, vedere [chiudere, riaprire ed eliminare un caso di eDiscovery di base](close-reopen-delete-core-ediscovery-cases.md).
 
 ## <a name="ediscovery-hold-limits"></a>limiti di blocco di eDiscovery
 
 Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.
-    
+
   |**Descrizione del limite**|**Tipo di limite**|
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione  <br/> |Nessun limite  <br/> |

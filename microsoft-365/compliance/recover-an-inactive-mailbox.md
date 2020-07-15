@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come ripristinare il contenuto di una cassetta postale inattiva in Office 365 mediante la conversione in una nuova cassetta postale contenente il contenuto della cassetta postale inattiva.
-ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 077355d31c3159b4970b00ee9c461d6a77cd3cf7
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818946"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127463"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Recuperare una cassetta postale inattiva
 
@@ -81,7 +81,7 @@ Dopo aver ripristinato una cassetta postale inattiva, viene creato anche un nuov
   
      - Archiviazione **sul posto** Le esenzioni sul posto vengono rimosse dalla cassetta postale recuperata. Questo significa che la cassetta postale recuperata viene rimossa come cassetta postale di origine da qualsiasi blocco sul posto o ricerca eDiscovery sul posto.
      
-     - **Criterio di conservazione Microsoft 365 con blocco conservazione.** Se la cassetta postale inattiva è stata assegnata a un criterio di conservazione con blocco conservazione (denominato *criterio di conservazione bloccato*), la cassetta postale recuperata viene assegnata allo stesso criterio di conservazione bloccato. Per ulteriori informazioni sui criteri di conservazione bloccati, vedere informazioni [sui criteri di conservazione](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+     - **Criterio di conservazione Microsoft 365 con blocco conservazione.** Se la cassetta postale inattiva è stata assegnata a un criterio di conservazione con blocco conservazione (denominato *criterio di conservazione bloccato*), la cassetta postale recuperata viene assegnata allo stesso criterio di conservazione bloccato. Per ulteriori informazioni sui criteri di conservazione bloccati, vedere [use Preservation Lock to conforme ai requisiti normativi](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
   
      - **Criterio di conservazione Microsoft 365 senza blocco conservazione.** La cassetta postale inattiva viene rimossa da qualsiasi criterio di conservazione Microsoft 365 sbloccato che è stato applicato. Tuttavia, il blocco per controversia legale è abilitato sulla cassetta postale recuperata per impedire l'eliminazione del contenuto delle cassette postali in base a criteri di conservazione a livello di organizzazione che eliminano il contenuto antecedente a una determinata età. È possibile mantenere il blocco per controversia legale o rimuoverlo. Per ulteriori informazioni, vedere [creazione di un blocco per controversia legale](create-a-litigation-hold.md).
 

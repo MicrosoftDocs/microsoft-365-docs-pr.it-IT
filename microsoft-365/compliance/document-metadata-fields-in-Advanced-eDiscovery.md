@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo vengono definiti i campi dei metadati per i documenti in un set di revisione in un caso in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726455"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126953"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati del documento in Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Author|Author|Doc_authors|Autore dei metadati del documento.|
 |Ccn|Ccn|Email_bcc|Campo Ccn per i tipi di messaggio. Format è **DisplayName \<SMTPAddress> **.|
 |CC|CC|Email_cc|Campo CC per i tipi di messaggio. Format è **DisplayName \<SMTPAddress> **.|
-|Etichette di conformità|ComplianceLabels|Compliance_labels|[Etichette di conservazione](labels.md) applicate ai contenuti di Office 365.|
+|Etichette di conformità|ComplianceLabels|Compliance_labels|[Etichette di conservazione](retention.md) applicate ai contenuti di Office 365.|
 |Percorso composto|CompoundPath|Compound_path|Percorso leggibile che descrive l'origine dell'elemento.|
 |Contenuto|Contenuto||Testo estratto dell'elemento.|
 |Corpo di conversazione|Corpo di conversazione||Corpo di conversazione dell'elemento.|

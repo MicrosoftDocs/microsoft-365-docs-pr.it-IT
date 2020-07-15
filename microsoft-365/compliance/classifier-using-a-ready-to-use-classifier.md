@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 viene fornito con un certo numero di classificatori incorporati che è possibile utilizzare per identificare ed etichettare il contenuto nell'organizzazione. In questo argomento viene illustrato come prepararsi per l'utilizzo di questi classificatori.
-ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371408"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126315"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Testing di classificatori incorporati tramite etichette di conservazione (anteprima)
 
@@ -71,9 +71,9 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 
 5. Scegliere `Choose a label to auto-apply` .
 
-6. Scegliere `Create new labels` e creare un'etichetta per l'utilizzo solo con questo test. Quando si esegue questa operazione, lasciare `Retention` impostato su `off` . Non si desidera abilitare alcuna conservazione o altre azioni. In questo caso, l'etichetta di conservazione verrà utilizzata semplicemente come etichetta di testo, senza applicare alcuna azione. Ad esempio, è possibile creare un'etichetta di conservazione denominata "test di classificazione del codice sorgente" senza azioni e quindi applicarla automaticamente a contenuto con classificazione del codice sorgente come condizione. Per ulteriori informazioni sulla creazione di etichette di conservazione, vedere [Overview of retention labels](labels.md).
+6. Scegliere `Create new labels` e creare un'etichetta per l'utilizzo solo con questo test. Quando si esegue questa operazione, lasciare `Retention` impostato su `off` . Non si desidera abilitare alcuna conservazione o altre azioni. In questo caso, l'etichetta di conservazione verrà utilizzata semplicemente come etichetta di testo, senza applicare alcuna azione. Ad esempio, è possibile creare un'etichetta di conservazione denominata "test di classificazione del codice sorgente" senza azioni e quindi applicarla automaticamente a contenuto con classificazione del codice sorgente come condizione. Per ulteriori informazioni sulle etichette di conservazione, vedere [informazioni sui criteri di conservazione e sulle etichette di conservazione](retention.md).
   
-7. Scegliere `Auto-apply a label` e quindi `Choose a label to auto-apply` . Per ulteriori informazioni sull'utilizzo di una condizione di applicazione automatica di un'etichetta, vedere [applicazione automatica dei criteri delle etichette di conservazione in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions).
+7. Scegliere `Auto-apply a label` e quindi `Choose a label to auto-apply` . Per ulteriori informazioni sull'utilizzo delle condizioni per l'applicazione automatica di un'etichetta, vedere [Configuring Conditions for auto-Apply Retention labels](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels).
 
 8. Scegliere l'etichetta di test dall'elenco e scegliere `Next` .
 
@@ -106,5 +106,5 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 Vedere anche:
 
 - [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md)
-- [Panoramica delle etichette di conservazione](labels.md)
-- [Applicazione automatica del criterio delle etichette di conservazione in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions)
+- [Informazioni sui criteri di conservazione e sulle etichette di conservazione](retention.md)
+- [Applicazione automatica di un'etichetta di conservazione per conservare o eliminare il contenuto](apply-retention-labels-automatically.md)

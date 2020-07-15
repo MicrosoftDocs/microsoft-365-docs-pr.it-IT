@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4615b20fbd90af6e2ee7acad31f87d0021edb485
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 4c327ff759f6a0515f5bb454897f01f831c60653
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773747"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127059"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>Regole di trading futures di commodity (CFTC) regola 1.31 (c-d) Stati Uniti
 
@@ -41,11 +41,11 @@ Per valutare la conformità di Azure alla regola di CFTC 1.31 (c-d), Microsoft h
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Per valutare la conformità di Office 365 alla regola di CFTC 1.31 (c-d), Microsoft ha ingaggiato uno studio legale leader indipendente specializzato in questioni normative, Covington & Burling, LLP. Nel report risultante, [Archiving in Microsoft Office 365, data retention e Rule 17a-4 Compliance](https://go.microsoft.com/fwlink/?linkid=830440), Covington ha convalidato che [Office 365 con conservazione Lock](retention-policies.md) include funzionalità di archiviazione che consentono ai clienti regolamentati di archiviare i dati in modo da aiutarli a conformarsi ai requisiti di CFTC per la conservazione dei record.
+Per valutare la conformità di Office 365 alla regola di CFTC 1.31 (c-d), Microsoft ha ingaggiato uno studio legale leader indipendente specializzato in questioni normative, Covington & Burling, LLP. Nel report risultante, [Archiving in Microsoft Office 365, data retention e Rule 17a-4 Compliance](https://go.microsoft.com/fwlink/?linkid=830440), Covington ha convalidato che [Office 365 con conservazione Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) include funzionalità di archiviazione che consentono ai clienti regolamentati di archiviare i dati in modo da aiutarli a conformarsi ai requisiti di CFTC per la conservazione dei record.
 
 L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra cui la posta elettronica, la segreteria telefonica, i documenti condivisi, i messaggi istantanei e i dati di terze parti. In particolare, l'archiviazione in Office 365 consente ai clienti di impostare i criteri di conservazione dei messaggi globali o granulari per archiviare i dati per un periodo definito e oltre in un formato non riscrivibile e non cancellabile.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
@@ -56,10 +56,10 @@ L'archiviazione in Office 365 consente di mantenere una vasta gamma di dati, tra
 
 [Office 365 & CFTC Rule 1,31 — Archiving in Office 365, data retention e SEC Rule 17a-4 Compliance
 
-## <a name="how-to-implement"></a>Come eseguire l'implementazione
+## <a name="how-to-implement"></a>Come implementare
 
 - [Regolamento sui servizi finanziari](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): mappa di conformità dei principali principi di regolamentazione degli Stati Uniti per il cloud computing e i Microsoft Online Services.
-- [Guida alla valutazione dei rischi e alla conformità](https://aka.ms/RiskGovernanceGuide): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
+- [Valutazione dei rischi e guida alla conformità](https://aka.ms/RiskGovernanceGuide): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
 - [Casi di utilizzo del settore finanziario](https://docs.microsoft.com/azure/industry/financial/): i casi di utilizzo, le guide e le altre risorse aiutano a sviluppare le soluzioni Azure per i servizi finanziari.
 
 ## <a name="resources"></a>Risorse

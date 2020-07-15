@@ -22,11 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sui messaggi di posta elettronica e sulle proprietà dei file che è possibile cercare nel centro conformità & sicurezza di Office 365.
-ms.openlocfilehash: 89d3f0c25694f8f3c89fbc27ee857c58cc5937fd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 90365889ed60a5250514fa50b8034d5cfcb904bd
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049804"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127181"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto
 
@@ -55,7 +56,7 @@ Nella tabella seguente sono elencate le proprietà dei messaggi di posta elettro
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|I nomi dei file allegati a un messaggio di posta elettronica.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|Messaggi che contengono un file allegato denominato annualreport.ppt. Nel secondo esempio, utilizzando il carattere jolly si ottengono dei messaggi contenenti la parola "annual" nel nome file di un allegato. Nel terzo esempio vengono restituiti tutti gli allegati con estensione di file PPTX.|
 |Ccn|Il campo Ccn di un messaggio di posta elettronica. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|Tutti gli esempi restituiscono messaggi contenenti Pilar Pinilla nel campo Bcc (Ccn).|
-|Categoria| Le categorie da cercare. Le categorie possono essere definite dagli utenti tramite Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). I valori possibili sono i seguenti:  <br/><br/>  blu  <br/>  verde  <br/>  arancione  <br/>  viola  <br/>  rosso  <br/>  giallo|`category:"Red Category"`|I messaggi ai quali è stata assegnata la categoria di colore rosso nelle cassette postali di origine. |
+|Category| Le categorie da cercare. Le categorie possono essere definite dagli utenti tramite Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). I valori possibili sono i seguenti:  <br/><br/>  blu  <br/>  verde  <br/>  arancione  <br/>  viola  <br/>  rosso  <br/>  giallo|`category:"Red Category"`|I messaggi ai quali è stata assegnata la categoria di colore rosso nelle cassette postali di origine. |
 |CC|Campo CC di un messaggio di posta elettronica. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In entrambi gli esempi, i messaggi con Pilar Pinilla specificati nel campo CC.|
 |FolderId|ID della cartella (GUID) di una cartella della cassetta postale specifica. Se si utilizza questa proprietà, assicurarsi di eseguire una ricerca nella cassetta postale in cui si trova la cartella specificata. Verrà eseguita la ricerca solo nella cartella specificata. Tutte le sottocartelle della cartella non verranno cercate. Per eseguire la ricerca nelle sottocartelle, è necessario utilizzare la proprietà FolderId per la sottocartella che si desidera ricercare.  <br/> Per ulteriori informazioni sulla ricerca della proprietà folderid e sull'utilizzo di uno script per ottenere gli ID della cartella per una cassetta postale specifica, vedere [use content search for Targeted Collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Nel primo esempio vengono restituiti tutti gli elementi nella cartella della cassetta postale specificata. Nel secondo esempio vengono restituiti tutti gli elementi della cartella delle cassette postali specificata inviati o ricevuti da garthf@contoso.com.|
 |From|Il mittente di un messaggio di posta elettronica. <sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|I messaggi inviati dall'utente specificato o da un dominio specificato.|
@@ -194,7 +195,7 @@ Creare una condizione utilizzando le proprietà comuni quando si cercano cassett
 |Mittente/autore|Per la posta elettronica, l'utente che ha inviato un messaggio. Per i documenti, l'utente menzionato nel campo dell'autore dei documenti di Office. È possibile digitare più nomi, separati da virgole. Due o più valori sono collegati logicamente dall'operatore **OR**.|
 |Dimensione (in byte)|Per la posta elettronica e i documenti, la dimensione dell'elemento (in byte).|
 |Subject/title|Per la posta elettronica, il testo nella riga dell'oggetto di un messaggio. Per i documenti, il titolo del documento. Come spiegato in precedenza, la proprietà title è costituita da metadati specificati nei documenti di Microsoft Office. È possibile digitare il nome di più di un oggetto/titolo, separati da virgole. Due o più valori sono collegati logicamente dall'operatore **OR**.|
-|Etichetta di conformità|Per la posta elettronica e i documenti, le etichette di conservazione che sono state assegnate ai messaggi e ai documenti automaticamente dai criteri di etichetta o dalle etichette di conservazione che sono state assegnate manualmente dagli utenti. Le etichette di conservazione vengono utilizzate per classificare la posta elettronica e i documenti per la governance delle informazioni e applicare le regole di conservazione in base alle impostazioni definite dall'etichetta. È possibile digitare parte del nome dell'etichetta di conservazione e utilizzare un carattere jolly oppure digitare il nome dell'etichetta completo. Per ulteriori informazioni, vedere [Overview of retention labels](labels.md).|
+|Etichetta di conformità|Per la posta elettronica e i documenti, le etichette di conservazione che sono state assegnate automaticamente ai messaggi e ai documenti dai criteri di etichettatura automatica o dalle etichette di conservazione che sono state assegnate manualmente dagli utenti. Le etichette di conservazione vengono utilizzate per classificare la posta elettronica e i documenti per la governance delle informazioni e applicare le regole di conservazione in base alle impostazioni definite dall'etichetta. È possibile digitare parte del nome dell'etichetta di conservazione e utilizzare un carattere jolly oppure digitare il nome dell'etichetta completo. Per ulteriori informazioni sulle etichette di conservazione, vedere informazioni [sui criteri di conservazione e sulle etichette di conservazione](retention.md).|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Condizioni per le proprietà della posta

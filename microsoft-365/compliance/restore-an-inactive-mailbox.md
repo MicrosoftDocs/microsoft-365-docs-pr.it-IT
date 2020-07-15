@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Informazioni su come ripristinare (o unire) il contenuto di una cassetta postale inattiva a una cassetta postale esistente in Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ae3927aaaba64711cdcc3362399b109f228cb12
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 34965832c32bfd4139f4b9a54d3999313aace476
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818936"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127453"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Ripristinare una cassetta postale inattiva
 
@@ -104,7 +104,7 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **Utilizzare un blocco per controversia legale o un criterio di conservazione Microsoft 365 per mantenere il contenuto delle cassette postali inattive.** Se si desidera mantenere lo stato di una cassetta postale inattiva dopo il ripristino, è possibile inserire la cassetta postale di destinazione in [blocco per controversia legale](https://go.microsoft.com/fwlink/?linkid=856286) o applicare un [criterio di conservazione Microsoft 365](retention-policies.md) prima di ripristinare la cassetta postale inattiva. Ciò impedirà l'eliminazione definitiva degli elementi della cassetta postale inattiva dopo averli ripristinati nella cassetta postale di destinazione.
+- **Utilizzare un blocco per controversia legale o un criterio di conservazione Microsoft 365 per mantenere il contenuto delle cassette postali inattive.** Se si desidera mantenere lo stato di una cassetta postale inattiva dopo il ripristino, è possibile inserire la cassetta postale di destinazione in [blocco per controversia legale](https://go.microsoft.com/fwlink/?linkid=856286) o applicare un [criterio di conservazione Microsoft 365](retention.md) prima di ripristinare la cassetta postale inattiva. Ciò impedirà l'eliminazione definitiva degli elementi della cassetta postale inattiva dopo averli ripristinati nella cassetta postale di destinazione.
 
 - **Abilitare il blocco della conservazione sulla cassetta postale di destinazione prima di ripristinare una cassetta postale inattiva.** Poiché gli elementi di una cassetta postale inattiva potrebbero non essere recenti, prendere in considerazione di abilitare un blocco della conservazione alla cassetta postale di destinazione prima di ripristinare una cassetta postale inattiva. Quando si applica un blocco della conservazione a una cassetta postale, il criterio di conservazione assegnato non verrà elaborato finché il blocco della conservazione non viene rimosso o scade. In questo modo il proprietario della cassetta postale di destinazione ha tutto il tempo per gestire i messaggi meno recenti della cassetta postale inattiva. In caso contrario, i criteri di conservazione potrebbero eliminare gli elementi meno recenti (o spostarli nella cassetta postale di archiviazione, se abilitata) che sono scaduti in base alle impostazioni di conservazione configurate per la cassetta postale di destinazione. Per ulteriori informazioni, vedere [posizionare una cassetta postale sulla conservazione Conservare in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856300).
 

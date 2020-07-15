@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Informazioni sulle attività che consentiranno di iniziare rapidamente a eseguire la conformità in Microsoft 365.
-ms.openlocfilehash: 87dfa73c52473b0695c496826572ab9b5180dfca
-ms.sourcegitcommit: 92bd1631a2bb6df8683aa6da45a116090b338bb1
+ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44732490"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126615"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Attività rapide per iniziare a eseguire la conformità a Microsoft 365
 
@@ -83,7 +83,7 @@ Per istruzioni dettagliate su come configurare e utilizzare le etichette di rise
 
 ## <a name="task-7-configure-a-retention-policy"></a>Attività 7: configurare un criterio di conservazione
 
-Un [criterio di conservazione](retention-policies.md) consente di decidere in modo proattivo se conservare il contenuto, eliminare il contenuto o entrambi: mantenere e quindi eliminare il contenuto al termine di un periodo di conservazione specificato. Tali azioni potrebbero essere necessarie per conformarsi alle normative industriali e ai criteri interni, oltre a ridurre i rischi in caso di controversia legale o violazione della sicurezza.
+Un [criterio di conservazione](retention.md) consente di decidere in modo proattivo se conservare il contenuto, eliminare il contenuto o entrambi: mantenere e quindi eliminare il contenuto al termine di un periodo di conservazione specificato. Tali azioni potrebbero essere necessarie per conformarsi alle normative industriali e ai criteri interni, oltre a ridurre i rischi in caso di controversia legale o violazione della sicurezza.
 
 Quando il contenuto è soggetto a un criterio di conservazione, gli utenti possono continuare a modificare e utilizzare il contenuto come se nulla fosse cambiato. Il contenuto viene conservato sul posto, nella posizione originale. Tuttavia, se qualcuno modifica o Elimina il contenuto soggetto al criterio di conservazione, una copia del contenuto originale viene salvata in una posizione sicura in cui viene conservata mentre il criterio di conservazione per il contenuto è attivo.
 
@@ -107,11 +107,15 @@ Dopo aver configurato le nozioni di base per la gestione della conformità per l
 
 ### <a name="configure-retention-labels"></a>Configurare le etichette di conservazione
 
-Anche se i criteri di conservazione vengono applicati a livello di contenitore a posizioni quali i siti di SharePoint e le cassette postali di Exchange, le [etichette di conservazione](labels.md) consentono di assegnare una destinazione più specifica per i criteri di conservazione e eliminazione. Ad esempio, al livello del messaggio di posta elettronica o di documento che gli utenti finali possono applicare manualmente oltre all'applicazione automatica da parte degli amministratori. È inoltre possibile applicare un'etichetta di conservazione a una raccolta documenti, una cartella o un set di documenti in SharePoint, in modo che tutti i documenti archiviati in tale percorso ereditino l'etichetta di conservazione predefinita.
+Anche se i criteri di conservazione vengono applicati a livello di contenitore a posizioni quali i siti di SharePoint e le cassette postali di Exchange, le [etichette di conservazione](retention.md#retention-labels) consentono di assegnare una destinazione più specifica per i criteri di conservazione e eliminazione. Ad esempio, al livello del messaggio di posta elettronica o di documento che gli utenti finali possono applicare manualmente oltre all'applicazione automatica da parte degli amministratori. È inoltre possibile applicare un'etichetta di conservazione a una raccolta documenti, una cartella o un set di documenti in SharePoint, in modo che tutti i documenti archiviati in tale percorso ereditino l'etichetta di conservazione predefinita.
 
 Le etichette di conservazione supportano inoltre la [gestione dei record](records-management.md) per contrassegnare il contenuto come record. In questo caso, non è possibile modificare o rimuovere l'etichetta e il contenuto non può essere modificato o eliminato. Queste restrizioni potrebbero essere necessarie per aiutare l'organizzazione a rispettare i requisiti normativi.
 
-Per istruzioni dettagliate per la creazione e la pubblicazione di etichette di conservazione, vedere [creare, pubblicare e applicare automaticamente etichette di conservazione](create-retention-labels.md). Per informazioni sulle licenze di gestione dei record, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+Per istruzioni dettagliate per la creazione e la pubblicazione di etichette di conservazione, vedere le indicazioni seguenti:
+- [Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)
+- [Applicazione automatica di un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)
+
+Per informazioni sulle licenze di gestione dei record, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
 ### <a name="identify-and-define-sensitive-information-types"></a>Identificare e definire i tipi di informazioni riservate
 

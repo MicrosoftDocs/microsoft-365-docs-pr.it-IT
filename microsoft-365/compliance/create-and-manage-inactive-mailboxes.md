@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come conservare il contenuto delle cassette postali eliminate utilizzando la funzionalità cassette postali inattive in Office 365.
-ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 286c1b363f7ceae42d7eaef13635ccf037bb4b21
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023359"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127543"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Creare e gestire le cassette postali inattive
 
@@ -42,7 +42,7 @@ Microsoft 365 rende possibile conservare il contenuto delle cassette postali eli
 
 - Se un blocco per controversia legale o un criterio di conservazione (configurato per mantenere o conservare e quindi eliminare il contenuto) non viene applicato a una cassetta postale prima che venga eliminato, il contenuto della cassetta postale non verrà mantenuto o individuabile. Tuttavia, è possibile recuperare la cassetta postale eliminata entro 30 giorni dall'eliminazione; se non viene recuperata entro 30 giorni, la cassetta postale e il suo contenuto vengono eliminati definitivamente.
 
-- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Per ulteriori informazioni sui criteri di conservazione, vedere [Overview of retention policies in Microsoft 365](retention-policies.md).
+- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Per ulteriori informazioni sui criteri di conservazione, vedere informazioni [sui criteri](retention.md)di conservazione e sulle etichette di conservazione.
   
 ## <a name="create-an-inactive-mailbox"></a>Creare una cassetta postale inattiva
 
@@ -56,9 +56,9 @@ Se un blocco è già posizionato su una cassetta postale o se un criterio di con
   
 Per le procedure dettagliate relative all'inserimento di una cassetta postale in un blocco per controversia legale o all'applicazione di un criterio di conservazione, vedere:
   
-- [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
+- [Applicare un blocco per controversia legale a una cassetta postale](https://go.microsoft.com/fwlink/?linkid=856286)
     
-- [Panoramica dei criteri di conservazione in Office 365](retention-policies.md)
+- [Informazioni sui criteri di conservazione e sulle etichette di conservazione in Office 365](retention.md)
     
 > [!NOTE]
 > Per le esenzioni per controversia legale e i criteri di conservazione, è possibile creare un blocco indefinito o un blocco basato sul tempo. In caso di un blocco indefinito, il contenuto della cassetta postale inattiva viene conservato per sempre, finché il blocco non viene rimosso o finché la durata del blocco non viene modificata. Una volta rimosso il blocco o il criterio di conservazione (presumendo che la cassetta postale sia stata eliminata più di 30 giorni prima), la cassetta postale inattiva verrà contrassegnata per l'eliminazione definitiva e il suo contenuto non sarà conservato e non potrà essere trovato. In un criterio di conservazione o mantenimento basato sul tempo, è necessario specificare la durata del blocco. La durata si applica ai singoli elementi e viene calcolata a partire dalla data in cui ciascun elemento è stato ricevuto o creato. Dopo che il blocco per un elemento della cassetta postale scade e che tale elemento viene spostato o si trova nella cartella Elementi ripristinabili nella cassetta postale inattiva, l'elemento viene definitivamente eliminato (cancellato) dalla cassetta postale inattiva dopo la scadenza del periodo di conservazione dell'elemento eliminato. 

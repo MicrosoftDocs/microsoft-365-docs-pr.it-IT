@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 10475420c729efc6a1ff59b6620fed08a1bdefca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371464"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126335"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -38,16 +38,16 @@ Questa categoria di meccanismi di classificazione include la ricerca di contenut
 - Riconoscere un elemento perché è una variante su un modello [(stampa su un dito del documento)](document-fingerprinting.md).
 - Utilizzo della presenza di stringhe esatte [(corrispondenza esatta dei dati)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-È quindi possibile applicare automaticamente le etichette di riservatezza e conservazione per rendere il contenuto disponibile per l'utilizzo in [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md) e nei [criteri di conservazione](retention-policies.md).
+Le etichette di conservazione e di sensibilità possono quindi essere applicate automaticamente per rendere il contenuto disponibile per l'utilizzo in [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md) e [per l'applicazione automatica delle politiche per le etichette di conservazione](apply-retention-labels-automatically.md).
 
 ## <a name="trainable-classifiers"></a>Classificatori addestrabili
 
 Questo metodo di classificazione è particolarmente adatto ai contenuti che non sono facilmente identificabili tramite i metodi di corrispondenza dei modelli manuale o automatico. Questo metodo di classificazione è più relativo all'addestramento di un classificatore per identificare un elemento in base a ciò che l'elemento è, non per elementi che si trovano nell'elemento (pattern matching). Un classificatore apprende come identificare un tipo di contenuto esaminando centinaia di esempi del contenuto che si desidera classificare. Si inizia con l'alimentazione di esempi che sono definitivamente nella categoria. Dopo averli elaborati, è possibile testarli conferendogli una combinazione di esempi di corrispondenza e non corrispondenti. Il classificatore effettua quindi stime per determinare se un determinato elemento rientra nella categoria che si sta creando. Sono quindi convalidati i risultati, vengono ordinati gli aspetti positivi, negativi, falsi positivi e falsi negativi per aumentare l'accuratezza delle stime. Quando si pubblica il classificatore addestrato, l'ordinamento viene ordinato tramite gli elementi in posizioni come SharePoint Online, Exchange e OneDrive e classifica il contenuto.
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>Dove è possibile utilizzare i classificatori addestrabili
-Sia i classificatori incorporati che i classificatori addestrati sono disponibili come condizione per [l'applicazione automatica dei criteri delle etichette di conservazione in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions) e alla [conformità della comunicazione](communication-compliance-configure.md). 
+Sia i classificatori incorporati che i classificatori addestrati sono disponibili come condizione per [l'applicazione automatica dei criteri delle etichette di conservazione in base a una condizione](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) e alla [conformità della comunicazione](communication-compliance-configure.md). 
 
-Le etichette di riservatezza possono utilizzare classificatori incorporati e Build-your-own come condizioni, vedere [applicare un'etichetta di riservatezza al contenuto automaticamente e l'](apply-sensitivity-label-automatically.md) [etichetta automatica per le app di Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
+Le etichette di riservatezza possono utilizzare i classificatori incorporati e Build-your-own come condizioni, vedere [applicazione automatica di un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
 > I classificatori addestrabili funzionano solo con elementi che non sono crittografati e sono in lingua inglese.
@@ -129,8 +129,7 @@ La creazione e la pubblicazione di un classificatore addestrabile per l'utilizzo
 ## <a name="see-also"></a>Vedere anche
 
 
-- [Etichette di conservazione](labels.md)
-- [Criteri di conservazione](retention-policies.md)
+- [Etichette di conservazione](retention.md)
 - [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 - [Etichette di riservatezza](sensitivity-labels.md)
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)

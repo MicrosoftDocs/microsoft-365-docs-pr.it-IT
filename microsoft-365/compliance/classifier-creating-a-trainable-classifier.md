@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzare classificatori addestrabili quando uno dei classificatori incorporati non soddisfa le proprie esigenze. Un classificatore Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. In questo argomento viene illustrato come creare un classificatore personalizzato.
-ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 05ec9992fb4ec072403e193df3d7dbbbb8b1a96b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173508"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126357"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creazione di un classificatore addestrabile (anteprima)
 
@@ -63,19 +63,19 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 > [!TIP]
 > Se si crea un nuovo sito e una nuova cartella per i dati di seeding, è possibile eseguire l'indicizzazione di almeno un'ora affinché tale percorso venga indicizzato prima di creare il classificatore addestrabile che utilizzerà tali dati.
 
-3. Accedere a Microsoft 365 Compliance Center with Compliance admin or Security admin Role Access e Open **Microsoft 365 Compliance Center** or **Microsoft 365 Security Center** > **Data Classification**
+3. Accedere a Microsoft 365 Compliance Center with Compliance admin or Security admin Role Access e Open **Microsoft 365 Compliance Center** or **Microsoft 365 Security Center**  >  **Data Classification**
 
 4. Scegliere la scheda **classificatori addestrabili** .
 
 5. Scegliere **Crea classificatore addestrabile**.
 
-6. Inserire i valori adeguati per `Name`i campi `Description` e la categoria di elementi che si desidera vengano identificati dal classificatore addestrabile.
+6. Inserire i valori adeguati per i `Name` `Description` campi e la categoria di elementi che si desidera vengano identificati dal classificatore addestrabile.
 
-7. Immettere il sito, la raccolta e l'URL della cartella di SharePoint Online esatti per il sito di contenuto Seed del passaggio 2. Scegliere `Add`.
+7. Immettere il sito, la raccolta e l'URL della cartella di SharePoint Online esatti per il sito di contenuto Seed del passaggio 2. Scegliere `Add` .
 
-8. Rivedere le impostazioni e scegliere `Create trainable classifier`.
+8. Rivedere le impostazioni e scegliere `Create trainable classifier` .
 
-9. Entro 24 ore, il classificatore addestrativo elaborerà i dati di seeding e realizzerà un modello di stima. Lo stato del classificatore `In progress` è durante l'elaborazione dei dati di seeding. Quando il classificatore ha terminato di elaborare i dati di seeding, lo `Need test items`stato cambia in.
+9. Entro 24 ore, il classificatore addestrativo elaborerà i dati di seeding e realizzerà un modello di stima. Lo stato del classificatore è `In progress` durante l'elaborazione dei dati di seeding. Quando il classificatore ha terminato di elaborare i dati di seeding, lo stato cambia in `Need test items` .
 
 10. È ora possibile visualizzare la pagina dei dettagli scegliendo il classificatore.
 
@@ -92,19 +92,19 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 > [!TIP]
 > Se si crea un nuovo sito e una nuova cartella per i dati di test, è possibile che la posizione venga indicizzata per almeno un'ora prima di creare il classificatore addestrabile che utilizzerà tali dati.
 
-13. Scegliere `Add items to test`.
+13. Scegliere `Add items to test` .
 
-14. Immettere il sito, la raccolta e l'URL della cartella di SharePoint Online esatti per il sito di contenuto di test del passaggio 12. Scegliere `Add`.
+14. Immettere il sito, la raccolta e l'URL della cartella di SharePoint Online esatti per il sito di contenuto di test del passaggio 12. Scegliere `Add` .
 
-15. Completare la procedura guidata scegliendo `Done`. Il classificatore addestrabile richiederà fino a un'ora per l'elaborazione dei file di test.
+15. Completare la procedura guidata scegliendo `Done` . Il classificatore addestrabile richiederà fino a un'ora per l'elaborazione dei file di test.
 
-16. Quando si esegue l'elaborazione dei file di test da `Ready to review`parte del classificatore addestrabile, lo stato nella pagina dei dettagli cambia. Se è necessario aumentare le dimensioni del campione di test, `Add items to test` scegliere e consentire al classificatore addestrabile di elaborare gli elementi aggiuntivi.
+16. Quando si esegue l'elaborazione dei file di test da parte del classificatore addestrabile, lo stato nella pagina dei dettagli cambia `Ready to review` . Se è necessario aumentare le dimensioni del campione di test, scegliere `Add items to test` e consentire al classificatore addestrabile di elaborare gli elementi aggiuntivi.
 
 ![pronto per la revisione dello screenshot](../media/classifier-trainable-ready-to-review-detail.png)
 
-17. Scegliere `Tested items to review` la scheda per esaminare gli elementi.
+17. Scegliere la `Tested items to review` scheda per esaminare gli elementi.
 
-18. Microsoft 365 presenterà 30 elementi alla volta. Verificarli e nella casella `We predict this item is "Relevant". Do you agree?` scegliere uno `Yes` o `No` più o `Not sure, skip to next item`. L'accuratezza del modello viene aggiornata automaticamente dopo ogni 30 elementi.
+18. Microsoft 365 presenterà 30 elementi alla volta. Verificarli e nella `We predict this item is "Relevant". Do you agree?` casella scegliere uno `Yes` o più `No` o `Not sure, skip to next item` . L'accuratezza del modello viene aggiornata automaticamente dopo ogni 30 elementi.
 
 ![casella di controllo elementi](../media/classifier-trainable-review-detail.png)
 
@@ -112,13 +112,13 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 
 <!-- insert Analyze steps here-->
 
-20. Continuare a esaminare fino a quando l'accuratezza raggiunge almeno il 70 `Publish the classifier` % e `Ready to use`lo stato è.
+20. Continuare a esaminare fino a quando l'accuratezza raggiunge almeno il 70% e lo `Publish the classifier` stato è `Ready to use` .
 
 ![accuratezza e pronto per la pubblicazione](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Pubblicare il classificatore.
 
-22. Dopo aver pubblicato il classificatore sarà disponibile come condizione in [Office autolabeling con etichette di riservatezza](apply-sensitivity-label-automatically.md), [applicare automaticamente i criteri delle etichette di conservazione in base a una condizione](labels.md#applying-a-retention-label-automatically-based-on-conditions) e in [conformità alla comunicazione](communication-compliance.md).
+22. Dopo aver pubblicato il classificatore sarà disponibile come condizione in [Office autolabeling con etichette di riservatezza](apply-sensitivity-label-automatically.md), [applicare automaticamente i criteri delle etichette di conservazione in base a una condizione](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) e in [conformità alla comunicazione](communication-compliance.md).
 
 > [!CAUTION]
 > Dopo la pubblicazione di un classificatore, non è possibile eseguire ulteriori corsi di formazione, quindi accertarsi di aver testato e Recensito il maggior numero possibile di elementi per garantire la massima accuratezza possibile.

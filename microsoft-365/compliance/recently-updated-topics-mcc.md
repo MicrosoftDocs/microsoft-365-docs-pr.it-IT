@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Analogamente alle funzionalità del centro conformità di Microsoft 365, il contenuto della guida è sempre in evoluzione. Scopri cosa c'è di nuovo e aggiornato in questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 3060cadb5752d8420667105113e23e235ab6f306
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035641"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127513"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aggiornamenti recenti a Microsoft 365 content Compliance
 
@@ -202,7 +202,7 @@ Sono stati aggiornati gli articoli seguenti per supportare la versione ufficiale
 
 ### <a name="records-management"></a>Gestione dei record
 
-[Panoramica delle etichette di conservazione](labels.md) (aggiornate)<br>La sezione per l'applicazione di un'etichetta di conservazione in base alle condizioni ora include l'opzione per l'utilizzo dei classificatori addestrabili.
+[Panoramica delle etichette di conservazione](retention.md) (aggiornate)<br>La sezione per l'applicazione di un'etichetta di conservazione in base alle condizioni ora include l'opzione per l'utilizzo dei classificatori addestrabili.
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 

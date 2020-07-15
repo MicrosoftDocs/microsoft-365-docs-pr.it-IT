@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702560"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127013"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -86,11 +86,11 @@ Quando si seleziona la **visualizzazione tutte le disposizioni in sospeso**, vie
 
 ### <a name="workflow-for-a-disposition-review"></a>Flusso di lavoro per una revisione della disposizione
 
-Si tratta del flusso di lavoro di base per una revisione di disposizione quando viene pubblicata un'etichetta di conservazione e quindi applicata manualmente da un utente. In alternativa, un'etichetta di conservazione configurata per una revisione di disposizione può essere applicata automaticamente al contenuto.
+Nel diagramma seguente viene illustrato il flusso di lavoro di base per una revisione della disposizione quando viene pubblicata un'etichetta di conservazione e quindi applicata manualmente da un utente. In alternativa, un'etichetta di conservazione configurata per una revisione di disposizione può essere applicata automaticamente al contenuto.
   
 ![Grafico che mostra il flusso di come funziona la disposizione](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-L'attivazione di una revisione della disposizione alla fine del periodo di conservazione è un'opzione di configurazione disponibile solo con un' [etichetta di conservazione](labels.md). Questa opzione non è disponibile in un criterio di conservazione.
+L'attivazione di una revisione della disposizione alla fine del periodo di conservazione è un'opzione di configurazione disponibile solo con un'etichetta di conservazione. Questa opzione non è disponibile per un criterio di conservazione. Per ulteriori informazioni su queste due soluzioni di conservazione, vedere informazioni [sui criteri di conservazione e sulle etichette di conservazione](retention.md).
   
 ![Impostazioni di conservazione per un'etichetta](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
@@ -119,7 +119,7 @@ Le notifiche di posta elettronica vengono inviate automaticamente ai revisori su
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Durata dell'eliminazione definitiva del contenuto eliminato
 
-Il contenuto in attesa di una revisione della disposizione viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto. Quando il revisore sceglie questa opzione, il contenuto del sito di SharePoint o dell'account OneDrive diventa idoneo per il processo di pulizia standard descritto in [modalità di funzionamento di un criterio di conservazione con il contenuto sul posto](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+Il contenuto in attesa di una revisione della disposizione viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto. Quando il revisore sceglie questa opzione, il contenuto del sito di SharePoint o dell'account OneDrive diventa idoneo per il processo di pulizia standard descritto in [modalità di funzionamento delle impostazioni di conservazione con il contenuto sul posto](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## <a name="disposition-of-records"></a>Disposizione dei record
 

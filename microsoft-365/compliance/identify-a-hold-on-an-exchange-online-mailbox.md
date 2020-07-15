@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Exchange online in Microsoft 365.
-ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ea7beb34107fb5eaf61c56ece7bde8070e6467a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817605"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126807"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -36,7 +36,7 @@ Microsoft 365 offre diversi modi in cui l'organizzazione può impedire che il co
 
 - ** [Blocco sul posto](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Esenzioni applicate alle cassette postali degli utenti utilizzando lo strumento di archiviazione eDiscovery sul posto & nell'interfaccia di amministrazione di Exchange in Exchange Online.
 
-- ** [Criteri di conservazione Microsoft 365](retention-policies.md):** Può essere configurato per mantenere (o conservare e quindi eliminare) il contenuto nelle cassette postali degli utenti in Exchange Online e nella cassetta postale corrispondente per i gruppi Microsoft 365 e Microsoft teams. È inoltre possibile creare un criterio di conservazione per conservare le conversazioni di Skype for business, archiviate nelle cassette postali degli utenti.
+- ** [Criteri di conservazione Microsoft 365](retention.md):** Può essere configurato per mantenere (o conservare e quindi eliminare) il contenuto nelle cassette postali degli utenti in Exchange Online e nella cassetta postale corrispondente per i gruppi Microsoft 365 e Microsoft teams. È inoltre possibile creare un criterio di conservazione per conservare le conversazioni di Skype for business, archiviate nelle cassette postali degli utenti.
 
   Esistono due tipi di criteri di conservazione Microsoft 365 che possono essere assegnati alle cassette postali.
 
@@ -46,7 +46,7 @@ Microsoft 365 offre diversi modi in cui l'organizzazione può impedire che il co
     
   Per ulteriori informazioni, vedere [applicazione di un criterio di conservazione a un'intera organizzazione o a una sezione di percorsi specifici](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) .
 
-- **[Etichette di conservazione microsoft 365](labels.md):** se un utente applica un'etichetta di conservazione di Microsoft 365 (una configurata per conservare il contenuto o conservarlo e quindi eliminarlo) in *qualsiasi* cartella o elemento della propria cassetta postale, l'esenzione viene posizionata sulla cassetta postale come se la cassetta postale è stata inserita in una conservazione per controversia legale o assegnata a un criterio di ritenzione Microsoft 365 Per ulteriori informazioni, vedere l' [argomento relativo all'identificazione delle cassette postali in attesa perché è stata applicata un'etichetta di conservazione a una cartella o a una](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) sezione di elementi in questo articolo.
+- **[Etichette di conservazione microsoft 365](retention.md):** se un utente applica un'etichetta di conservazione di Microsoft 365 (una configurata per conservare il contenuto o conservarlo e quindi eliminarlo) in *qualsiasi* cartella o elemento della propria cassetta postale, l'esenzione viene posizionata sulla cassetta postale come se la cassetta postale è stata inserita in una conservazione per controversia legale o assegnata a un criterio di ritenzione Microsoft 365 Per ulteriori informazioni, vedere l' [argomento relativo all'identificazione delle cassette postali in attesa perché è stata applicata un'etichetta di conservazione a una cartella o a una](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) sezione di elementi in questo articolo.
 
 Per gestire le cassette postali in blocco, potrebbe essere necessario identificare il tipo di blocco applicato a una cassetta postale, in modo da poter eseguire attività quali la modifica della durata del blocco, la rimozione temporanea o permanente del blocco o l'esclusione di una cassetta postale da un criterio di conservazione Microsoft 365. In questi casi, il primo passaggio consiste nell'identificare il tipo di blocco applicato alla cassetta postale. Poiché in una singola cassetta postale è possibile applicare più blocchi (e tipi di esenzioni diversi), è necessario identificare tutti gli appigli inseriti in una cassetta postale se si desidera rimuovere o modificare un'esenzione.
 
@@ -100,7 +100,7 @@ Nella tabella seguente vengono descritti i diversi tipi di esenzioni a livello d
 |Criteri di conservazione Microsoft 365 applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di Teams    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   I criteri di conservazione a livello di organizzazione applicati alle cassette postali di Exchange, alle cartelle pubbliche di Exchange e alle chat di 1xN in Microsoft teams sono identificati da GUID che iniziano con il `mbx` prefisso. Note le chat di 1xN vengono archiviate nella cassetta postale dei singoli partecipanti alla chat.      |
 |Criterio di conservazione Microsoft 365 applicato a gruppi di Microsoft 365 e ai messaggi di canale Teams     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    I criteri di conservazione a livello di organizzazione applicati ai gruppi di Microsoft 365 e ai messaggi di canale in Microsoft teams sono identificati da GUID che iniziano con il `grp` prefisso. Note i messaggi del canale vengono archiviati nella cassetta postale di gruppo associata a un team di Microsoft.     |
 
-Per ulteriori informazioni sui criteri di conservazione applicati a Microsoft teams, vedere la sezione "percorso team" [Panoramica dei criteri di conservazione](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+Per ulteriori informazioni sui criteri di conservazione applicati a Microsoft teams, vedere informazioni [sui criteri di conservazione per Microsoft teams](retention-policies-teams.md).
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>Informazioni sul formato del valore InPlaceHolds per i criteri di conservazione
 
@@ -120,7 +120,7 @@ Nella tabella seguente vengono definite le tre possibili azioni di conservazione
 |**2**    |    Indica che il criterio di conservazione è configurato per contenere gli elementi. Il criterio non elimina gli elementi dopo la scadenza del periodo di conservazione.     |
 |**3**     |   Indica che il criterio di conservazione è configurato per contenere gli elementi e quindi eliminarli dopo la scadenza del periodo di conservazione.      |
 
-Per ulteriori informazioni sulle azioni di conservazione, vedere la sezione "conservazione del contenuto per un periodo di tempo specifico" in [Overview of Retention Policies](create-retention-policies.md#retaining-content-for-a-specific-period-of-time).
+Per ulteriori informazioni sulle azioni di conservazione, vedere la sezione relativa al [contenuto per un periodo di tempo specifico](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) .
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Passaggio 2: utilizzare il GUID per identificare il blocco
 
@@ -179,7 +179,7 @@ Per visualizzare il valore della proprietà *ComplianceTagHoldApplied* , eseguir
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Per ulteriori informazioni sulle etichette di conservazione, vedere [Overview of Microsoft 365 retention labels](labels.md).
+Per ulteriori informazioni sulle etichette di conservazione, vedere [etichette di conservazione](retention.md#retention-labels).
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Gestione delle cassette postali in attesa del ritardo
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Informazioni su come gestire le richieste del soggetto dei dati di GDPR (EU General Data Protection Regulation) con lo strumento di gestione dei casi DSR.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3327618a1a297bb6d4afbbe45baa709f0638ee39
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815453"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126777"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
 
@@ -247,7 +247,7 @@ Di seguito sono riportati alcuni esempi delle condizioni che è possibile aggiun
     
 - **Tipo di messaggio ( `kind` )** – specifica il tipo di elemento di posta elettronica da cercare. Ad esempio, è possibile utilizzare la sintassi `kind:email OR kind:im` per restituire solo messaggi di posta elettronica e conversazioni di Skype for business o chat uno-a-uno in Microsoft teams. 
     
-- **Tag Compliance ( `compliancetag` )** : specifica un'etichetta assegnata a un messaggio di posta elettronica o a un documento. Questa condizione restituisce gli elementi classificati con una specifica etichetta. Le etichette vengono utilizzate per classificare la posta elettronica e i documenti per la governance dei dati e applicare le regole di conservazione in base alla classificazione definita dall'etichetta. Si tratta di una condizione utile per le indagini DSR perché l'organizzazione può utilizzare etichette per classificare il contenuto relativo alla privacy dei dati o che contiene dati personali o informazioni riservate. Per il valore di questa condizione, utilizzare il nome completo dell'etichetta o la prima parte del nome dell'etichetta con un carattere jolly. Per ulteriori informazioni, vedere [Overview of labels in Office 365](labels.md).
+- **Tag Compliance ( `compliancetag` )** : specifica un'etichetta assegnata a un messaggio di posta elettronica o a un documento. Questa condizione restituisce gli elementi classificati con una specifica etichetta. Le etichette vengono utilizzate per classificare la posta elettronica e i documenti per la governance dei dati e applicare le regole di conservazione in base alla classificazione definita dall'etichetta. Si tratta di una condizione utile per le indagini DSR perché l'organizzazione può utilizzare etichette per classificare il contenuto relativo alla privacy dei dati o che contiene dati personali o informazioni riservate. Per il valore di questa condizione, utilizzare il nome completo dell'etichetta o la prima parte del nome dell'etichetta con un carattere jolly. Per ulteriori informazioni, vedere informazioni [sui criteri di conservazione e sulle etichette di conservazione in Office 365](retention.md).
     
 Per un elenco e una descrizione di tutte le condizioni disponibili nello strumento dei casi DSR, [vedere l'](keyword-queries-and-search-conditions.md#search-conditions) articolo relativo alle condizioni di ricerca nella sezione "query con parole chiave e condizioni di ricerca per la ricerca di contenuto". 
   

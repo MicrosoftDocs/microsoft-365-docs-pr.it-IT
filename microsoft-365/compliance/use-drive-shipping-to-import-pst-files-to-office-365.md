@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: L'amministratore può imparare a importare in blocco i file PST nelle cassette postali di Microsoft 365 copiando i file PST su un disco rigido e quindi inviarlo a Microsoft.
-ms.openlocfilehash: dd97b4734fafbd6126d58997f4fd70eff43d082a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e94a59b19271af275f74a08355a017533f8ef45d
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819086"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127343"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utilizzare la distribuzione delle unità per importare i file PST dell'organizzazione
 
@@ -53,7 +53,7 @@ Per le domande frequenti sull'utilizzo della spedizione delle unità per importa
   
 ## <a name="before-you-import-pst-files"></a>Prima di importare i file PST
 
-- Per importare i file PST nelle cassette postali di Microsoft 365, è necessario avere il ruolo di importazione/esportazione di cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo di importazione/esportazione di cassette postali al gruppo di ruoli Gestione organizzazione. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di importazione/esportazione di cassette postali e quindi aggiungere se stessi come membri. Per altre informazioni, vedere le sezioni "Aggiungere un ruolo a un gruppo di ruoli" o "Creare un gruppo di ruoli" in [Gestire gruppi di ruoli](https://go.microsoft.com/fwlink/p/?LinkId=730688).
+- Per importare file PST nelle cassette postali di Microsoft 365, è necessario avere il ruolo di importazione/esportazione di cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo di importazione/esportazione di cassette postali al gruppo di ruoli Gestione organizzazione. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di importazione/esportazione di cassette postali e quindi aggiungere se stessi come membri. Per altre informazioni, vedere le sezioni "Aggiungere un ruolo a un gruppo di ruoli" o "Creare un gruppo di ruoli" in [Gestire gruppi di ruoli](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
     Inoltre, per creare processi di importazione nel Centro sicurezza e conformità, una delle seguenti condizioni deve essere vera:
     
@@ -450,7 +450,7 @@ Per installare Azure Storage Explorer e connettersi all'area di Archiviazione di
     > [!NOTE]
     > Per risolvere i problemi relativi al file di mapping CSV di importazione PST, utilizzare lo strumento [Esplora risorse di Azure](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365) per visualizzare la struttura delle cartelle nel contenitore **ingestiondata** per i file PST dall'unità disco rigido che sono stati caricati nell'area di archiviazione di Azure. Gli errori dei file di mapping in genere sono causati da un valore non corretto nel parametro FilePath. Questo parametro consente di specificare il percorso di un file PST nell'area di archiviazione di Azure. Per ulteriori informazioni, vedere la descrizione del parametro FilePath nella tabella del [passaggio 3](#step-3-create-the-pst-import-mapping-file). Come spiegato in precedenza, il percorso dei file PST nell'area di archiviazione di Azure è stato specificato dal `/dstdir:` parametro quando è stato eseguito lo strumento di WAImportExport.exe nel [passaggio 2](#step-2-copy-the-pst-files-to-the-hard-drive). 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - La distribuzione di unità è un modo efficace per importare grandi quantità di dati di messaggistica di archiviazione in Microsoft 365 per sfruttare le caratteristiche di conformità disponibili per l'organizzazione. Dopo aver importato i dati di archiviazione nelle cassette postali degli utenti, è possibile:
     
@@ -460,7 +460,7 @@ Per installare Azure Storage Explorer e connettersi all'area di Archiviazione di
     
   - Utilizzare [gli strumenti](search-for-content.md) di Microsoft eDiscovery per cercare i dati. 
     
-  - Applicare i [criteri di conservazione Microsoft 365](retention-policies.md) per controllare la durata di conservazione dei dati e l'azione da intraprendere dopo la scadenza del periodo di mantenimento. 
+  - Applicare i [criteri di conservazione Microsoft 365](retention.md) per controllare la durata di conservazione dei dati e l'azione da intraprendere dopo la scadenza del periodo di mantenimento. 
     
   - Eseguire una ricerca nel [Registro di controllo](search-the-audit-log-in-security-and-compliance.md) per gli eventi relativi a questi dati. 
     

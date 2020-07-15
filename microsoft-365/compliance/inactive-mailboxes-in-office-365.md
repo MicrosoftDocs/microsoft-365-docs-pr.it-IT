@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come conservare il contenuto delle cassette postali per gli ex dipendenti trasformando la cassetta postale in una cassetta postale inattiva.
-ms.openlocfilehash: d7805ad24adcad61841866e11cd25942aef6e70b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: baa2daebe65142743df95762a3dcd780d5069c7f
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817575"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126747"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Panoramica delle cassette postali inattive
 
@@ -50,7 +50,7 @@ Oltre alla conservazione per controversia legale, l'utilizzo della nuova caratte
   
 - Può essere basato su query affinché conservi quindi solo elementi corrispondenti a una query di ricerca.
 
-Per ulteriori informazioni sulla configurazione dei criteri di conservazione, vedere [Overview of Retention Policies](retention-policies.md).
+Per ulteriori informazioni sui criteri di conservazione, vedere informazioni [sui criteri](retention.md)di conservazione e sulle etichette di conservazione.
   
 Se si utilizza un criterio di conservazione per creare una cassetta postale inattiva, Microsoft 365 continua a elaborare il criterio di conservazione nella cassetta postale inattiva. Questo significa che se i criteri di conservazione sono configurato per mantenere ed eliminare contenuto, gli elementi verranno spostati nella cartella Elementi ripristinabili alla scadenza del periodo di conservazione e verranno alla fine eliminati dalla cassetta postale inattiva. Se i criteri di conservazione non sono configurati per gli elementi eliminati, gli elementi che non sono stati eliminati definitivamente dall'utente (prima che la cassetta postale è stata resa inattiva) non verranno spostati nella cartella elementi ripristinabili e verranno mantenuti indefinitamente dopo che la cassetta postale diventa inattiva. 
   
@@ -75,9 +75,9 @@ Per ulteriori informazioni sui casi di eDiscovery e sulle esenzioni, vedere [eDi
 
 ## <a name="inactive-mailboxes-and-labels"></a>Cassette postali inattive ed etichette
 
-Le etichette consentono di classificare i dati della posta elettronica nell'organizzazione per la governance e di applicare le regole di conservazione in base alla classificazione. Un'etichetta può essere applicata a un elemento di posta elettronica manualmente dagli utenti o automaticamente dagli amministratori e a un elemento di posta elettronica può essere assegnata una sola etichetta. Se a un singolo elemento di posta elettronica della cassetta postale di un utente è assegnata un'etichetta (ed è configurata per conservare o conservare e quindi eliminare l'elemento) e la cassetta postale o l'account dell'utente viene eliminato, la cassetta postale diventa una cassetta postale inattiva. Come per i blocchi dei casi di eDiscovery, non è consigliabile utilizzare le etichette per rendere inattiva una cassetta postale. Al contrario, si consiglia di utilizzare un blocco per controversia legale o un criterio di conservazione. Nel caso di etichette, è possibile che non si renda conto che è stata applicata un'etichetta a un elemento di posta elettronica e quindi si rende involontariamente una cassetta postale inattiva quando si elimina l'account dell'utente. 
+Le etichette di conservazione consentono di classificare i dati della posta elettronica nell'organizzazione per la governance e di applicare le regole di conservazione in base alla classificazione. È possibile applicare un'etichetta di conservazione a un elemento di posta elettronica manualmente dagli utenti o automaticamente dagli amministratori e un elemento di posta elettronica può avere solo un'etichetta singola assegnata. Se a un singolo elemento di posta elettronica della cassetta postale di un utente è assegnata un'etichetta (ed è configurata per conservare o conservare e quindi eliminare l'elemento) e la cassetta postale o l'account dell'utente viene eliminato, la cassetta postale diventa una cassetta postale inattiva. Analogamente al caso di eDiscovery, non è consigliabile utilizzare le etichette di conservazione per rendere inattiva una cassetta postale. Al contrario, si consiglia di utilizzare un blocco per controversia legale o un criterio di conservazione. In caso di etichette di conservazione, è possibile che non si renda conto che un'etichetta di conservazione è stata applicata a un elemento di posta elettronica e quindi inavvertitamente rende una cassetta postale inattiva quando si elimina l'account dell'utente. 
   
-Per ulteriori informazioni, vedere [Panoramica delle etichette in Office 365](labels.md).
+Per ulteriori informazioni sui criteri di conservazione e sulle etichette di conservazione, vedere informazioni [sui criteri di conservazione e sulle etichette di conservazione in Office 365](retention.md).
   
 ## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Cassette postali inattive e archivi in espansione automatica
 

@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come importare i dati di terze parti dalle piattaforme per i social media, dalle piattaforme di messaggistica istantanea e dalle piattaforme di collaborazione documenti alle cassette postali di Microsoft 365.
-ms.openlocfilehash: a8dc69e7e4c7061e048fe49d1e51fd8867654454
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: da6b412796bbfc4d5c0d5ed177335e6f3fba9f87
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101637"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126635"
 ---
 # <a name="archive-third-party-data"></a>Archiviare i dati di terze parti
 
@@ -73,7 +73,7 @@ I tre strumenti principali di eDiscovery in Microsoft 365 sono content search, C
 
 ### <a name="retention-policies"></a>Criteri di conservazione
 
-È possibile applicare un [criterio di conservazione](retention-policies.md) alle cassette postali degli utenti per conservare e quindi eliminare i dati di terze parti (e altri contenuti delle cassette postali) dopo la scadenza del periodo di conservazione. È inoltre possibile utilizzare i criteri di conservazione per eliminare i dati di terze parti di una determinata età o per attivare una revisione della disposizione al termine della scadenza del periodo di conservazione.
+È possibile applicare un [criterio di conservazione](retention.md) alle cassette postali degli utenti per conservare e quindi eliminare i dati di terze parti (e altri contenuti delle cassette postali) dopo la scadenza del periodo di conservazione. È inoltre possibile utilizzare i criteri di conservazione per eliminare i dati di terze parti di una determinata età o per attivare una revisione della disposizione al termine della scadenza del periodo di conservazione.
 
 ### <a name="records-management"></a>Gestione dei record
 
