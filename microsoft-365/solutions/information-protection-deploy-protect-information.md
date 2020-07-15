@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Distribuire le funzionalità di sicurezza e conformità di Microsoft 365 e proteggere le informazioni personali.
-ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 99ac0f9e29c161ffa26362976f83584c9b168026
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844693"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126457"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteggere le informazioni soggette alla normativa sulla privacy dei dati
 
@@ -33,6 +33,8 @@ Questi controlli si trovano all'interno delle aree della soluzione seguenti:
 - Prevenzione della perdita di dati (DLP)
 - Crittografia dei messaggi di Office (OME)
 - Controlli di accesso a team e siti
+
+![Servizi chiave per proteggere le informazioni personali soggette alla normativa sulla privacy dei dati](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
 >Questa soluzione descrive le funzionalità di sicurezza e conformità per proteggere le informazioni soggette alle normative sulla privacy dei dati. Per un elenco completo delle funzionalità di sicurezza in Microsoft 365, vedere [documentazione sulla sicurezza di microsoft 365](https://docs.microsoft.com/microsoft-365/security/). Per un elenco completo delle funzionalità di conformità in Microsoft 365, vedere [microsoft 365 Compliance Documentation](https://docs.microsoft.com/microsoft-365/compliance/).
@@ -102,7 +104,7 @@ Completare queste attività prima di implementare una qualsiasi delle funzionali
         - Viene redatto e inviato un messaggio di posta elettronica.
       - Sono disponibili etichette di riservatezza per l'applicazione automatica ai file di Rest in SharePoint e OneDrive oltre ai messaggi di posta elettronica in transito tramite Exchange. Questi sono indirizzati a tutti i siti o a quelli specifici e si applicano automaticamente ai file a riposo in questi ambienti.
 
-2. Razionalizzazione dell'etichettatura della sensibilità corrente con metodi precedenti o alternativi
+2. Razionalizzazione dell'etichetta di sensibilità corrente con metodi precedenti o alternativi
 
    - Azure Information Protection
 

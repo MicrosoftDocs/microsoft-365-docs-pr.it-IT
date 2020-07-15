@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cffc922aec3ca46543b5b1608fa37e6fa0acfa23
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005631"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138291"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Top 10 modi per proteggere i piani Microsoft 365 for business
 
@@ -155,7 +155,7 @@ Per creare una regola di trasporto della posta, visualizzare un [video di formaz
     
 5. Applicare le impostazioni nella tabella seguente per ogni regola. Lasciare l'impostazione predefinita per le altre impostazioni, a meno che non si desideri modificarle.
     
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**|**Bloccare i tipi di file che potrebbero contenere ransomware o altro codice dannoso**|
 |:-----|:-----|:-----|
@@ -168,7 +168,7 @@ Per creare una regola di trasporto della posta, visualizzare un [video di formaz
 > [!TIP]
 > È inoltre possibile aggiungere i file che si desidera bloccare nell'elenco antimalware nel [passaggio 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Per ulteriori informazioni, vedere:
+Per altre informazioni, vedere:
   
 - [Come gestire ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -191,7 +191,7 @@ Per creare una regola di trasporto della posta:
     
 5. Applicare le impostazioni nella tabella seguente. Lasciare l'impostazione predefinita per le altre impostazioni, a meno che non si desideri modificarle.
     
-6. Selezionare **Salva**.
+6. Seleziona **Salva**.
     
 |**Impostazione**|**Rifiutare i messaggi di posta elettronica di inoltro automatico ai domini esterni**|
 |:-----|:-----|
@@ -252,7 +252,7 @@ Per creare un criterio di anti-phishing ATP, visualizzare un [video di formazion
     
 4. Nella pagina anti-phishing selezionare **+ Crea**. Viene avviata una procedura guidata che consente di definire i criteri di anti-phishing.
     
-5. Specificare il nome, la descrizione e le impostazioni del criterio come consigliato nel grafico riportato di seguito. Per ulteriori informazioni, vedere informazioni [sulle opzioni relative ai criteri di anti-phishing ATP](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) . 
+5. Specificare il nome, la descrizione e le impostazioni del criterio come consigliato nel grafico riportato di seguito. Per ulteriori informazioni, vedere informazioni [sulle opzioni relative ai criteri di anti-phishing ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) . 
     
 6. Dopo aver esaminato le impostazioni, selezionare **crea questo criterio** o **Salva**, a seconda dei casi.
 
@@ -269,7 +269,7 @@ Per creare un criterio di anti-phishing ATP, visualizzare un [video di formazion
 |Applicato a  <br/> |Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio contoso.com, nell'elenco e quindi fare clic su **Aggiungi**. Scegliere **Fine**.  <br/> |
 |
    
-Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## <a name="9-protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>9: protezione da allegati e file dannosi con gli allegati sicuri di ATP
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Per creare un criterio degli allegati sicuri di ATP, visualizzare un [video di f
 |Applicato a  <br/> |Il dominio del destinatario è. . . Selezionare il dominio.  <br/> |
 |
    
-Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## <a name="10-protect-against-phishing-attacks-with-atp-safe-links"></a>10: Proteggi da attacchi di phishing con collegamenti sicuri di ATP
 <a name="phishingatp"> </a>
@@ -331,7 +331,7 @@ Per modificare il criterio predefinito:
 
 3. In **impostazioni che si applicano al contenuto tranne che alla posta elettronica**, selezionare **applicazioni di Office 365**, non **monitorare quando gli utenti fanno clic su collegamenti sicuri**e **non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale**.
     
-4. Selezionare **Salva**. 
+4. Seleziona **Salva**. 
     
 Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
   
@@ -339,7 +339,7 @@ Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
     
 2. Applicare le impostazioni elencate nella tabella seguente.
     
-3. Selezionare **Salva**. 
+3. Seleziona **Salva**. 
     
 |**Impostazione o opzione**|**Impostazione consigliata** <br/>|
 |:-----|:-----|

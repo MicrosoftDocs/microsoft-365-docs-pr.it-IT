@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: ''
-description: Informazioni su come utilizzare Complance score e Compliance Manager per migliorare il livello di protezione dei dati personali.
-ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+description: Informazioni su come utilizzare Score compliance e Compliance Manager per migliorare il livello di protezione dei dati personali.
+ms.openlocfilehash: d3730f7a91876befc05f749497540fbe9abe9641
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016368"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126552"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>Utilizzare la conformità score e Compliance Manager per gestire le azioni di miglioramento
 
 Microsoft Compliance score and Compliance Manager può essere utilizzato insieme per gestire i miglioramenti relativi alle normative sulla privacy dei dati, come il [regolamento generale sulla protezione dei dati (GDPR)](../compliance/gdpr.md), la [California Consumer Protection Act CCPA)](../compliance/ccpa-faq.md), HIPAA-HITECH (US Health Care Privacy Act) e il Brazil Data Protection Act (LGPD). 
 
 In questo articolo vengono fornite indicazioni sull'utilizzo di questi strumenti per la privacy dei dati.
+
+![Score compliance e Compliance Manager per gestire le azioni di miglioramento](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-grid.png)
 
 >[!Note]
 >Le azioni dei clienti fornite in Compliance Manager sono raccomandazioni. È necessario valutare l'efficacia di tali raccomandazioni negli ambienti normativi precedenti all'implementazione. I suggerimenti di Compliance Manager non devono essere interpretati come garanzia di conformità.

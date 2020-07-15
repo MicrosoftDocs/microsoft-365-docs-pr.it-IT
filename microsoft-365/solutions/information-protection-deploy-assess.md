@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Determinare le normative sulla privacy dei dati, gli scenari rilevanti, la preparazione e i tipi di informazioni riservate presenti nell'ambiente Microsoft 365.
-ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 0cfa9f8a22810027e1a31ce2ace8b42f26ef9eb2
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854353"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126605"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Valutare i rischi per la privacy dei dati e identificare gli elementi sensibili con Microsoft 365
 
@@ -98,6 +98,8 @@ I dati si muovono anche nel tempo mentre vengono elaborati, affinati e altre ver
 Per soddisfare le normative sulla privacy dei dati, non è possibile fare affidamento su nozioni generali su dove si ritiene che i dati personali possano esistere, sia ora che in futuro. Le normative sulla privacy dei dati richiedono che le organizzazioni dimostrino di sapere dove si trovano i dati personali su base continuativa. In questo modo è importante prendere uno snapshot iniziale di tutte le origini dati per l'eventuale archiviazione di informazioni personali, incluso l'ambiente Microsoft 365, e stabilire meccanismi per il monitoraggio e il rilevamento in continuazione.
 
 Se non è stato ancora valutato il livello di preparazione e rischio associati alle normative sulla privacy dei dati, utilizzare il seguente Framework in tre passaggi per iniziare. 
+
+![Procedura per valutare la preparazione generale e i rischi associati alle normative sulla privacy dei dati](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 >[!Note]
 >Questo articolo e il relativo contenuto non sono destinati a prendere il posto dei servizi di consulenza legale. Sono disponibili solo alcune informazioni di base e collegamenti a strumenti che possono essere di aiuto nelle fasi iniziali della valutazione.
@@ -178,7 +180,7 @@ Le organizzazioni soggette ad altre normative sulla privacy dei dati, ad esempio
 
 La valutazione di GDPR è costituita da queste sezioni:
 
-| | |
+| Sezione | Descrizione |
 |:-------|:-----|
 | Governance | <ol><li>Il criterio di privacy indica in modo esplicito quali informazioni sui dati vengono elaborate? </li><li>Eseguire regolarmente le valutazioni dell'impatto sulla privacy (PIA)? </li><li> È possibile utilizzare uno strumento per gestire le informazioni personali (PI)? </li><li> Si dispone di un'autorità legale per condurre attività commerciali utilizzando dati PI su un determinato individuo? È possibile monitorare il consenso per i dati? </li><li> È possibile monitorare, implementare e gestire i controlli di controllo? È possibile monitorare le perdite di dati? </li></ol>|
 | Eliminazione e notifica | <ol><li>Vengono fornite istruzioni esplicite sulla modalità di accesso ai dati degli utenti? </li><li> Sono stati elaborati processi documentati per la gestione del consenso opt-out? </li><li> Si dispone di un processo di eliminazione automatizzato per i dati? </li><li>   Si dispone di un processo per convalidare l'identità quando si utilizza un cliente? </li></ol>|
@@ -212,7 +214,7 @@ Per ulteriori informazioni, vedere gli articoli seguenti:
 - [Tipi di informazioni sensibili personalizzati](../compliance/custom-sensitive-info-types.md)
 - [Creare un tipo di informazione sensibile personalizzato nel Centro sicurezza e conformità](../compliance/create-a-custom-sensitive-information-type.md)
 - [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Creare tipi di informazioni riservate personalizzate con classificazione esatta basata sulla corrispondenza dei dati](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Esplora contenuto
 

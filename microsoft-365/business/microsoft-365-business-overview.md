@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 Business Premium, un servizio in abbonamento che include le app di produttività di Office e funzionalità di protezione avanzata dalle minacce informatiche.
-ms.openlocfilehash: 6cff2fe62111e0d3ee99f406d0be83db0a119b09
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 50b1fec21593bd22577e07e000cedb89dfd90f66
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786175"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138229"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Panoramica di Microsoft 365 Business Premium
 
@@ -110,11 +110,6 @@ Per l'elenco completo delle funzionalità di sicurezza, vedere [Funzionalità di
 - I partner riceveranno Microsoft 365 Business Premium: [Ottenere Microsoft 365 Business Premium dal Centro per i partner Microsoft](get-microsoft-365-business.md).
 
 - Per ottenere Microsoft 365 Business Premium senza rivolgersi a un partner, è possibile [acquistarlo qui](https://www.microsoft.com/microsoft-365/business) e seguire le istruzioni per l'[iscrizione.](sign-up.md)
-
-- È anche possibile rivolgersi a un [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) per acquistare Microsoft 365 Business Premium e ricevere assistenza nella configurazione.
-
-    > [!NOTE]
-    > Questo collegamento è disponibile solo per gli Store negli Stati Uniti
 
 ## <a name="see-also"></a>Vedere anche
 

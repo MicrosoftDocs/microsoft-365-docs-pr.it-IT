@@ -18,11 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48850c76176d79e4f90581bfbab804f4649998cc
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049633"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138279"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Cercare in modo proattivo minacce con la ricerca avanzata di Microsoft Threat Protection
 
@@ -33,7 +34,7 @@ ms.locfileid: "45049633"
 
 La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query che permette di esplorare dati non elaborati fino a 30 giorni. È possibile controllare in modo proattivo eventi nella rete per localizzare indicatori ed entità interessanti. L'accesso flessibile ai dati facilita la ricerca non vincolata delle minacce conosciute e potenziali.
 
-È possibile utilizzare le stesse query di ricerca di minacce per creare regole di rilevamento personalizzate. Queste regole vengono eseguite automaticamente per controllare e rispondere a vari eventi e Stati del sistema, tra cui l'attività di violazione sospetta e i computer non configurati correttamente.
+È possibile usare le stesse query di ricerca delle minacce per creare regole di rilevamento personalizzate. Queste regole vengono eseguite automaticamente per il controllo di diversi eventi e dello stato di salute del sistema e per le relative risposte, tra cui attività di violazione sospette e computer non configurati correttamente.
 
 Nel centro sicurezza Microsoft 365, Advanced Hunting supporta le query che esaminano i dati provenienti da diverse aree di lavoro, inclusi i dati relativi a dispositivi, messaggi di posta elettronica, app e identità di Microsoft Defender ATP, Office 365 ATP, Microsoft cloud app Security e Azure ATP. Per utilizzare la ricerca avanzata, [attivare Microsoft Threat Protection](mtp-enable.md).
 
@@ -43,7 +44,7 @@ Nel centro sicurezza Microsoft 365, Advanced Hunting supporta le query che esami
 
 | Obiettivo di formazione | Descrizione | Risorsa |
 |--|--|--|
-| **Avere un'idea della lingua** | La ricerca avanzata si basa sul [linguaggio di query Kusto](https://docs.microsoft.com/azure/kusto/query/), supportandone la sintassi e gli operatori. Iniziare ad apprendere il linguaggio di query eseguendone la prima. | [Informazioni generali sul linguaggio di query](advanced-hunting-query-language.md) |
+| **Avere un'idea della lingua** | La ricerca avanzata si basa sul [linguaggio di query di Kusto](https://docs.microsoft.com/azure/kusto/query/), che supporta la stessa sintassi e gli stessi operatori. Iniziare ad apprendere il linguaggio di query eseguendone la prima. | [Informazioni generali sul linguaggio di query](advanced-hunting-query-language.md) |
 | **Informazioni su come utilizzare i risultati della query** | Informazioni sui grafici e sui vari modi in cui è possibile visualizzare o esportare i risultati. Scoprire come è possibile ottimizzare rapidamente le query e eseguire il drill-down per ottenere informazioni più complete. | [Usare i risultati delle query](advanced-hunting-query-results.md) |
 | **Comprensione dello schema** | È possibile ottenere una conoscenza buona e approfondita delle tabelle nello schema e delle relative colonne. Questo consente di determinare dove cercare i dati e come creare le query. | [Informazioni di riferimento sullo schema](advanced-hunting-schema-tables.md) |
 | **Sfruttare le query predefinite** | Esplorare le raccolte di query predefinite che coprono diversi scenari di ricerca delle minacce. | - [Utilizzo di query condivise](advanced-hunting-shared-queries.md)<br>- [Andare a caccia](advanced-hunting-go-hunt.md) |
@@ -53,6 +54,11 @@ Nel centro sicurezza Microsoft 365, Advanced Hunting supporta le query che esami
 ## <a name="get-access"></a>Ottenere l'accesso
 Per utilizzare la ricerca avanzata o altre funzionalità di [protezione dalle minacce di Microsoft](microsoft-threat-protection.md) , è necessario essere assegnati a un ruolo appropriato in Azure ad. Si noti che l'accesso ai dati dell'endpoint è influenzato dalle impostazioni del controllo di accesso basato sui ruoli in Microsoft Defender ATP. [Informazioni sulla gestione dell'accesso a Microsoft Threat Protection](mtp-permissions.md)
 
+## <a name="data-freshness-and-update-frequency"></a>Aggiornamento dei dati e frequenza degli aggiornamenti
+I dati di caccia avanzati possono essere categorizzati in due tipi distinti, ognuno consolidati in modo diverso.
+
+- **Dati relativi a eventi o attività** : popola le tabelle relative agli avvisi, agli eventi di sicurezza, agli eventi di sistema e alle valutazioni di routine. La ricerca avanzata riceve questi dati quasi subito dopo che i sensori che li raccolgono li trasmettono correttamente ai servizi cloud corrispondenti. Ad esempio, è possibile iniziare a eseguire query sui dati degli eventi da sensori integri su workstation o controller di dominio quasi subito dopo essere disponibili su Microsoft Defender ATP e Azure ATP.
+- **Dati entità** : popola le tabelle con informazioni consolidate su utenti e dispositivi. Questi dati provengono da origini dati relativamente statiche, ad esempio le voci di Active Directory e le origini dinamiche, ad esempio i registri eventi. Per fornire dati aggiornati, le tabelle vengono aggiornate ogni 15 minuti con tutte le nuove informazioni, aggiungendo righe che potrebbero non essere completamente popolate. Ogni 24 ore, i dati vengono consolidati per inserire un record che contiene il set di dati più recente e completo su ogni entità.
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Apprendere il linguaggio delle query](advanced-hunting-query-language.md)

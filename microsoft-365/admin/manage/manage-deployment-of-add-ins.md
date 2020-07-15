@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire i componenti aggiuntivi per gli utenti e i gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: 51db2bf7b618bddf2c6de417b7f5e53c91a64a1b
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 4e9a3a4b7182bfd452c63abd03836623dc77260c
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102861"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138245"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -116,9 +116,9 @@ Office add-ins combine an XML manifest file that contains some metadata about th
     
 - Leggere e scrivere dati da e verso il documento di un utente per fornire valore all'utente.
     
-Per altre informazioni sui tipi e le funzionalità dei componenti aggiuntivi per Office, vedere [Panoramica della piattaforma Componenti aggiuntivi per Office](https://go.microsoft.com/fwlink/p/?linkid=846362), in particolare la sezione "Anatomia di un componente aggiuntivo per Office".
+Per altre informazioni sui tipi e le funzionalità dei componenti aggiuntivi per Office, vedere [Panoramica della piattaforma Componenti aggiuntivi per Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins), in particolare la sezione "Anatomia di un componente aggiuntivo per Office".
   
-To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
   
 When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
@@ -133,9 +133,9 @@ Gli aggiornamenti per i componenti aggiuntivi vengono eseguiti come segue:
   
 ## <a name="learn-more"></a>Altre informazioni
 
-Creazione e compilazione di componenti aggiuntivi di [Office](https://go.microsoft.com/fwlink/p/?linkid=846362)
-
 [Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](manage-addins-in-the-admin-center.md)
+
+[Creazione di componenti aggiuntivi di Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins-fundamentals).
 
 [Minorenni e acquisizione di componenti aggiuntivi dallo Store](minors-and-acquiring-addins-from-the-store.md)
   
