@@ -18,205 +18,203 @@ search.appverid:
 - MET150
 description: Informazioni su come usare le etichette di Office nell'ambito del piano di protezione GDPR.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a7bea2abeaec7a858b3cfc693603c46c0f2a416a
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165259"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126817"
 ---
-# <a name="apply-labels-to-personal-data"></a><span data-ttu-id="d04d0-103">Applicare le etichette ai dati personali</span><span class="sxs-lookup"><span data-stu-id="d04d0-103">Apply labels to personal data</span></span>
+# <a name="apply-labels-to-personal-data"></a><span data-ttu-id="ee19d-103">Applicare le etichette ai dati personali</span><span class="sxs-lookup"><span data-stu-id="ee19d-103">Apply labels to personal data</span></span>
 
- <span data-ttu-id="d04d0-104">Consultare questo argomento se si usano etichette di classificazione per il piano di protezione GDPR.</span><span class="sxs-lookup"><span data-stu-id="d04d0-104">Use this topic if you're using classification labels as part of your GDPR protection plan.</span></span> 
+ <span data-ttu-id="ee19d-104">Consultare questo argomento se si usano etichette di classificazione per il piano di protezione GDPR.</span><span class="sxs-lookup"><span data-stu-id="ee19d-104">Use this topic if you're using classification labels as part of your GDPR protection plan.</span></span> 
 
-<span data-ttu-id="d04d0-105">Se si usano etichette per la protezione dei dati personali in Microsoft 365, Microsoft consiglia di iniziare con le [etichette di conservazione](labels.md).</span><span class="sxs-lookup"><span data-stu-id="d04d0-105">If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](labels.md).</span></span> <span data-ttu-id="d04d0-106">Con le etichette di conservazione è possibile:</span><span class="sxs-lookup"><span data-stu-id="d04d0-106">With retention labels, you can:</span></span>
-- <span data-ttu-id="d04d0-107">Usare Advanced Data Governance per applicare automaticamente le etichette in base ai tipi di informazioni sensibili o ad altri criteri.</span><span class="sxs-lookup"><span data-stu-id="d04d0-107">Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.</span></span>
-- <span data-ttu-id="d04d0-108">Usare le etichette di conservazione con la prevenzione della perdita dei dati per applicare la protezione.</span><span class="sxs-lookup"><span data-stu-id="d04d0-108">Use retention labels with data loss prevention to apply protection.</span></span> 
-- <span data-ttu-id="d04d0-109">Usare le etichette con eDiscovery e Ricerca contenuto.</span><span class="sxs-lookup"><span data-stu-id="d04d0-109">Use labels with eDiscovery and Content Search.</span></span> 
+<span data-ttu-id="ee19d-105">Se si usano etichette per la protezione dei dati personali in Microsoft 365, Microsoft consiglia di iniziare con le [etichette di conservazione](retention.md#retention-labels).</span><span class="sxs-lookup"><span data-stu-id="ee19d-105">If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](retention.md#retention-labels).</span></span> <span data-ttu-id="ee19d-106">Con le etichette di conservazione è possibile:</span><span class="sxs-lookup"><span data-stu-id="ee19d-106">With retention labels, you can:</span></span>
+- <span data-ttu-id="ee19d-107">Usare Advanced Data Governance per applicare automaticamente le etichette in base ai tipi di informazioni sensibili o ad altri criteri.</span><span class="sxs-lookup"><span data-stu-id="ee19d-107">Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.</span></span>
+- <span data-ttu-id="ee19d-108">Usare le etichette di conservazione con la prevenzione della perdita dei dati per applicare la protezione.</span><span class="sxs-lookup"><span data-stu-id="ee19d-108">Use retention labels with data loss prevention to apply protection.</span></span> 
+- <span data-ttu-id="ee19d-109">Usare le etichette con eDiscovery e Ricerca contenuto.</span><span class="sxs-lookup"><span data-stu-id="ee19d-109">Use labels with eDiscovery and Content Search.</span></span> 
 
-<span data-ttu-id="d04d0-110">Cloud App Security attualmente non supporta le etichette di conservazione, ma è possibile usare i tipi di informazioni sensibili di Microsoft 365 con Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.</span><span class="sxs-lookup"><span data-stu-id="d04d0-110">Cloud App Security doesn't currently support retention labels, but you can use Microsoft 365 sensitive information types with Cloud App Security to monitor personal data that resides in other SaaS apps.</span></span>
+<span data-ttu-id="ee19d-110">Cloud App Security attualmente non supporta le etichette di conservazione, ma è possibile usare i tipi di informazioni sensibili di Microsoft 365 con Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.</span><span class="sxs-lookup"><span data-stu-id="ee19d-110">Cloud App Security doesn't currently support retention labels, but you can use Microsoft 365 sensitive information types with Cloud App Security to monitor personal data that resides in other SaaS apps.</span></span>
 
-<span data-ttu-id="d04d0-111">Le [etichette di riservatezza](sensitivity-labels.md) sono attualmente consigliate per l'applicazione di etichette a file locali e in altri provider e servizi cloud.</span><span class="sxs-lookup"><span data-stu-id="d04d0-111">[Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers.</span></span> <span data-ttu-id="d04d0-112">Sono consigliate anche per file in Microsoft 365 che richiedono la crittografia di Azure Information Protection per la protezione dei dati, ad esempio file contenenti segreti commerciali.</span><span class="sxs-lookup"><span data-stu-id="d04d0-112">These are also recommended for files in Microsoft 365 that require Azure Information Protection encryption for data protection, such as trade secret files.</span></span>
+<span data-ttu-id="ee19d-111">Le [etichette di riservatezza](sensitivity-labels.md) sono attualmente consigliate per l'applicazione di etichette a file locali e in altri provider e servizi cloud.</span><span class="sxs-lookup"><span data-stu-id="ee19d-111">[Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers.</span></span> <span data-ttu-id="ee19d-112">Sono consigliate anche per file in Microsoft 365 che richiedono la crittografia di Azure Information Protection per la protezione dei dati, ad esempio file contenenti segreti commerciali.</span><span class="sxs-lookup"><span data-stu-id="ee19d-112">These are also recommended for files in Microsoft 365 that require Azure Information Protection encryption for data protection, such as trade secret files.</span></span>
 
-<span data-ttu-id="d04d0-113">Al momento, l'uso di Azure Information Protection per applicare la crittografia non è consigliabile per i file in Microsoft 365 contenenti dati soggetti al GDPR.</span><span class="sxs-lookup"><span data-stu-id="d04d0-113">At this time, using Azure Information Protection to apply encryption is not recommended for files in Microsoft 365 with data that is subject to the GDPR.</span></span> <span data-ttu-id="d04d0-114">I servizi di Microsoft 365 attualmente non possono leggere nei file con crittografia AIP.</span><span class="sxs-lookup"><span data-stu-id="d04d0-114">Microsoft 365 services currently cannot read into AIP-encrypted files.</span></span> <span data-ttu-id="d04d0-115">Di conseguenza, il servizio non trova i dati sensibili in questi file.</span><span class="sxs-lookup"><span data-stu-id="d04d0-115">Therefore, the service can't find sensitive data in these files.</span></span>
+<span data-ttu-id="ee19d-113">Al momento, l'uso di Azure Information Protection per applicare la crittografia non è consigliabile per i file in Microsoft 365 contenenti dati soggetti al GDPR.</span><span class="sxs-lookup"><span data-stu-id="ee19d-113">At this time, using Azure Information Protection to apply encryption is not recommended for files in Microsoft 365 with data that is subject to the GDPR.</span></span> <span data-ttu-id="ee19d-114">I servizi di Microsoft 365 attualmente non possono leggere nei file con crittografia AIP.</span><span class="sxs-lookup"><span data-stu-id="ee19d-114">Microsoft 365 services currently cannot read into AIP-encrypted files.</span></span> <span data-ttu-id="ee19d-115">Di conseguenza, il servizio non trova i dati sensibili in questi file.</span><span class="sxs-lookup"><span data-stu-id="ee19d-115">Therefore, the service can't find sensitive data in these files.</span></span>
 
-<span data-ttu-id="d04d0-116">Le etichette di conservazione possono essere applicate ai messaggi di posta elettronica in Exchange Online e queste etichette funzionano con la prevenzione della perdita dei dati di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="d04d0-116">Retention labels can be applied to mail in Exchange Online and these labels work with Microsoft 365 data loss prevention.</span></span> 
+<span data-ttu-id="ee19d-116">Le etichette di conservazione possono essere applicate ai messaggi di posta elettronica in Exchange Online e queste etichette funzionano con la prevenzione della perdita dei dati di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="ee19d-116">Retention labels can be applied to mail in Exchange Online and these labels work with Microsoft 365 data loss prevention.</span></span> 
 
 ![Le etichette di Microsoft 365 e di Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
-<span data-ttu-id="d04d0-118">Nella figura:</span><span class="sxs-lookup"><span data-stu-id="d04d0-118">In the illustration:</span></span>
+<span data-ttu-id="ee19d-118">Nella figura:</span><span class="sxs-lookup"><span data-stu-id="ee19d-118">In the illustration:</span></span>
 
--   <span data-ttu-id="d04d0-119">Usare le etichette di conservazione per i dati personali per i file con segreti commerciali e soggetti a normative in SharePoint Online e OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="d04d0-119">Use retention labels for personal data and for highly regulated and trade secret files in SharePoint Online and OneDrive for Business.</span></span>
--   <span data-ttu-id="d04d0-120">È possibile usare i tipi di informazioni sensibili di Microsoft 365 all'interno di Microsoft 365 e Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.</span><span class="sxs-lookup"><span data-stu-id="d04d0-120">Microsoft 365 sensitive information types can be used within Microsoft 365 and with Cloud App Security to monitor personal data that resides in other SaaS apps.</span></span>
--   <span data-ttu-id="d04d0-121">Usare le etichette di riservatezza per i file con segreti commerciali e soggetti a normative, la posta elettronica di Exchange Online, file in altri servizi SaaS, file in datacenter locali e file in altri provider cloud.</span><span class="sxs-lookup"><span data-stu-id="d04d0-121">Use sensitivity labels for highly regulated and trade secret files, Exchange Online email, files in other SaaS services, files in on-premises datacenters, and files in other cloud providers.</span></span>
+-   <span data-ttu-id="ee19d-119">Usare le etichette di conservazione per i dati personali per i file con segreti commerciali e soggetti a normative in SharePoint Online e OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="ee19d-119">Use retention labels for personal data and for highly regulated and trade secret files in SharePoint Online and OneDrive for Business.</span></span>
+-   <span data-ttu-id="ee19d-120">È possibile usare i tipi di informazioni sensibili di Microsoft 365 all'interno di Microsoft 365 e Cloud App Security per monitorare i dati personali che si trovano in altre app SaaS.</span><span class="sxs-lookup"><span data-stu-id="ee19d-120">Microsoft 365 sensitive information types can be used within Microsoft 365 and with Cloud App Security to monitor personal data that resides in other SaaS apps.</span></span>
+-   <span data-ttu-id="ee19d-121">Usare le etichette di riservatezza per i file con segreti commerciali e soggetti a normative, la posta elettronica di Exchange Online, file in altri servizi SaaS, file in datacenter locali e file in altri provider cloud.</span><span class="sxs-lookup"><span data-stu-id="ee19d-121">Use sensitivity labels for highly regulated and trade secret files, Exchange Online email, files in other SaaS services, files in on-premises datacenters, and files in other cloud providers.</span></span>
 
 
-## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a><span data-ttu-id="d04d0-122">Usare le etichette di conservazione e i tipi di informazioni sensibili in Microsoft 365 per la protezione delle informazioni</span><span class="sxs-lookup"><span data-stu-id="d04d0-122">Use retention labels and sensitive information types across Microsoft 365 for information protection</span></span>
+## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a><span data-ttu-id="ee19d-122">Usare le etichette di conservazione e i tipi di informazioni sensibili in Microsoft 365 per la protezione delle informazioni</span><span class="sxs-lookup"><span data-stu-id="ee19d-122">Use retention labels and sensitive information types across Microsoft 365 for information protection</span></span>
 
-<span data-ttu-id="d04d0-123">La figura seguente mostra come usare le etichette di conservazione e i tipi di informazioni sensibili in criteri di etichetta, criteri di prevenzione della perdita dei dati e i criteri di Cloud App Security.</span><span class="sxs-lookup"><span data-stu-id="d04d0-123">The following illustration shows how retention labels and sensitive information types can be used in label policies, data loss prevention policies, and with Cloud App Security policies.</span></span>
+<span data-ttu-id="ee19d-123">La figura seguente mostra come usare le etichette di conservazione e i tipi di informazioni sensibili in criteri di etichetta, criteri di prevenzione della perdita dei dati e i criteri di Cloud App Security.</span><span class="sxs-lookup"><span data-stu-id="ee19d-123">The following illustration shows how retention labels and sensitive information types can be used in label policies, data loss prevention policies, and with Cloud App Security policies.</span></span>
 
 ![Etichette di Office e tipi di informazioni riservate](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
-<span data-ttu-id="d04d0-125">Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni dell'illustrazione.</span><span class="sxs-lookup"><span data-stu-id="d04d0-125">For accessibility, the following table provides the same examples in the illustration.</span></span>
+<span data-ttu-id="ee19d-125">Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni dell'illustrazione.</span><span class="sxs-lookup"><span data-stu-id="ee19d-125">For accessibility, the following table provides the same examples in the illustration.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="d04d0-126"><strong>Elementi di classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="d04d0-126"><strong>Classification elements</strong></span></span></th>
-<th align="left"><span data-ttu-id="d04d0-127"><strong>Criteri delle etichette - 2 esempi</strong></span><span class="sxs-lookup"><span data-stu-id="d04d0-127"><strong>Label policies — 2 examples</strong></span></span></th>
-<th align="left"><span data-ttu-id="d04d0-128"><strong>Criteri di prevenzione della perdita dei dati - 2 esempi</strong></span><span class="sxs-lookup"><span data-stu-id="d04d0-128"><strong>Data loss prevention policies — 2 examples</strong></span></span></th>
-<th align="left"><span data-ttu-id="d04d0-129"><strong>I criteri di Cloud App Security per tutte le app SaaS - 1 esempio</strong></span><span class="sxs-lookup"><span data-stu-id="d04d0-129"><strong>Cloud App Security policies for all SaaS apps — 1 example</strong></span></span></th>
+<th align="left"><span data-ttu-id="ee19d-126"><strong>Elementi di classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="ee19d-126"><strong>Classification elements</strong></span></span></th>
+<th align="left"><span data-ttu-id="ee19d-127"><strong>Criteri delle etichette - 2 esempi</strong></span><span class="sxs-lookup"><span data-stu-id="ee19d-127"><strong>Label policies — 2 examples</strong></span></span></th>
+<th align="left"><span data-ttu-id="ee19d-128"><strong>Criteri di prevenzione della perdita dei dati - 2 esempi</strong></span><span class="sxs-lookup"><span data-stu-id="ee19d-128"><strong>Data loss prevention policies — 2 examples</strong></span></span></th>
+<th align="left"><span data-ttu-id="ee19d-129"><strong>I criteri di Cloud App Security per tutte le app SaaS - 1 esempio</strong></span><span class="sxs-lookup"><span data-stu-id="ee19d-129"><strong>Cloud App Security policies for all SaaS apps — 1 example</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="d04d0-130">Etichette di conservazione.</span><span class="sxs-lookup"><span data-stu-id="d04d0-130">Retention labels.</span></span> <span data-ttu-id="d04d0-131">Esempi: Personale, Pubblico, Dati cliente, Dati risorse umane, Riservato, Estremamente riservato</span><span class="sxs-lookup"><span data-stu-id="d04d0-131">Examples: Personal, Public, Customer data, HR data, Confidential, Highly confidential</span></span></td>
-<td align="left"><p><span data-ttu-id="d04d0-p105">Applicare automaticamente questa etichetta...</span><span class="sxs-lookup"><span data-stu-id="d04d0-p105">Auto apply this label . . .</span></span></p>
-<p><span data-ttu-id="d04d0-135">Dati cliente
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-135">Customer data</span></span></p>
-<p><span data-ttu-id="d04d0-p106">... ai documenti che corrispondono a questi tipi di informazioni riservate...</span><span class="sxs-lookup"><span data-stu-id="d04d0-p106">. . . to documents that match these sensitive information types . . .</span></span></p>
-<p><span data-ttu-id="d04d0-142">&lt;elenco dei tipi di informazioni riservate&gt;</span><span class="sxs-lookup"><span data-stu-id="d04d0-142">&lt;list of example sensitive information types&gt;</span></span></p></td>
-<td align="left"><p><span data-ttu-id="d04d0-p107">Applicare la protezione...</span><span class="sxs-lookup"><span data-stu-id="d04d0-p107">Apply this protection . . .</span></span></p>
-<p><span data-ttu-id="d04d0-146">&lt;definire la protezione&gt;</span><span class="sxs-lookup"><span data-stu-id="d04d0-146">&lt;define protection&gt;</span></span></p>
-<p><span data-ttu-id="d04d0-p108">... ai documenti con questa etichetta...</span><span class="sxs-lookup"><span data-stu-id="d04d0-p108">. . . to documents with this label . . .</span></span></p>
-<p><span data-ttu-id="d04d0-153">Dati cliente
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-153">Customer data</span></span></p></td>
-<td align="left"><p><span data-ttu-id="d04d0-p109">Avvisa quando i file con questi attributi...</span><span class="sxs-lookup"><span data-stu-id="d04d0-p109">Alert when files with these attributes . . .</span></span></p>
-<p><span data-ttu-id="d04d0-157">Scegliere uno o più attributi: attributo PII predefinito, tipologia di informazioni riservate di Microsoft 365, etichetta di riservatezza (AIP), espressione personalizzata</span><span class="sxs-lookup"><span data-stu-id="d04d0-157">Choose one or more attributes: predefined PII attribute, Microsoft 365 sensitive information type, sensitivity label (AIP), custom expression</span></span></p>
-<p><span data-ttu-id="d04d0-158">.</span><span class="sxs-lookup"><span data-stu-id="d04d0-158">.</span></span> <span data-ttu-id="d04d0-159">.</span><span class="sxs-lookup"><span data-stu-id="d04d0-159">.</span></span> <span data-ttu-id="d04d0-160">.</span><span class="sxs-lookup"><span data-stu-id="d04d0-160">.</span></span> <span data-ttu-id="d04d0-161">in qualsiasi app SaaS approvata vengono condivisi all'esterno dell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="d04d0-161">in any sanctioned SaaS app are shared outside the organization</span></span></p><p><span data-ttu-id="d04d0-162">Nota: le etichette di conservazione non sono attualmente supportate in Cloud App Security.</span><span class="sxs-lookup"><span data-stu-id="d04d0-162">Note: Retention labels are currently not supported in Cloud App Security.</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-130">Etichette di conservazione.</span><span class="sxs-lookup"><span data-stu-id="ee19d-130">Retention labels.</span></span> <span data-ttu-id="ee19d-131">Esempi: Personale, Pubblico, Dati cliente, Dati risorse umane, Riservato, Estremamente riservato</span><span class="sxs-lookup"><span data-stu-id="ee19d-131">Examples: Personal, Public, Customer data, HR data, Confidential, Highly confidential</span></span></td>
+<td align="left"><p><span data-ttu-id="ee19d-132">Auto apply this label .</span><span class="sxs-lookup"><span data-stu-id="ee19d-132">Auto apply this label .</span></span> <span data-ttu-id="ee19d-133">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-133">.</span></span> <span data-ttu-id="ee19d-134">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-134">.</span></span></p>
+<p><span data-ttu-id="ee19d-135">Dati cliente
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-135">Customer data</span></span></p>
+<p><span data-ttu-id="ee19d-136">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-136">.</span></span> <span data-ttu-id="ee19d-137">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-137">.</span></span> <span data-ttu-id="ee19d-138">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-138">.</span></span> <span data-ttu-id="ee19d-139">to documents that match these sensitive information types .</span><span class="sxs-lookup"><span data-stu-id="ee19d-139">to documents that match these sensitive information types .</span></span> <span data-ttu-id="ee19d-140">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-140">.</span></span> <span data-ttu-id="ee19d-141">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-141">.</span></span></p>
+<p><span data-ttu-id="ee19d-142">&lt;elenco dei tipi di informazioni riservate&gt;</span><span class="sxs-lookup"><span data-stu-id="ee19d-142">&lt;list of example sensitive information types&gt;</span></span></p></td>
+<td align="left"><p><span data-ttu-id="ee19d-143">Apply this protection .</span><span class="sxs-lookup"><span data-stu-id="ee19d-143">Apply this protection .</span></span> <span data-ttu-id="ee19d-144">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-144">.</span></span> <span data-ttu-id="ee19d-145">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-145">.</span></span></p>
+<p><span data-ttu-id="ee19d-146">&lt;definire la protezione&gt;</span><span class="sxs-lookup"><span data-stu-id="ee19d-146">&lt;define protection&gt;</span></span></p>
+<p><span data-ttu-id="ee19d-147">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-147">.</span></span> <span data-ttu-id="ee19d-148">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-148">.</span></span> <span data-ttu-id="ee19d-149">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-149">.</span></span> <span data-ttu-id="ee19d-150">to documents with this label .</span><span class="sxs-lookup"><span data-stu-id="ee19d-150">to documents with this label .</span></span> <span data-ttu-id="ee19d-151">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-151">.</span></span> <span data-ttu-id="ee19d-152">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-152">.</span></span></p>
+<p><span data-ttu-id="ee19d-153">Dati cliente
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-153">Customer data</span></span></p></td>
+<td align="left"><p><span data-ttu-id="ee19d-154">Alert when files with these attributes .</span><span class="sxs-lookup"><span data-stu-id="ee19d-154">Alert when files with these attributes .</span></span> <span data-ttu-id="ee19d-155">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-155">.</span></span> <span data-ttu-id="ee19d-156">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-156">.</span></span></p>
+<p><span data-ttu-id="ee19d-157">Scegliere uno o più attributi: attributo PII predefinito, tipologia di informazioni riservate di Microsoft 365, etichetta di riservatezza (AIP), espressione personalizzata</span><span class="sxs-lookup"><span data-stu-id="ee19d-157">Choose one or more attributes: predefined PII attribute, Microsoft 365 sensitive information type, sensitivity label (AIP), custom expression</span></span></p>
+<p><span data-ttu-id="ee19d-158">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-158">.</span></span> <span data-ttu-id="ee19d-159">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-159">.</span></span> <span data-ttu-id="ee19d-160">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-160">.</span></span> <span data-ttu-id="ee19d-161">in qualsiasi app SaaS approvata vengono condivisi all'esterno dell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="ee19d-161">in any sanctioned SaaS app are shared outside the organization</span></span></p><p><span data-ttu-id="ee19d-162">Nota: le etichette di conservazione non sono attualmente supportate in Cloud App Security.</span><span class="sxs-lookup"><span data-stu-id="ee19d-162">Note: Retention labels are currently not supported in Cloud App Security.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="d04d0-p111">Tipi di informazioni riservate. Esempi: Codice fiscale belga, numero di carta di credito, numero identità Croazia, codice fiscale Finlandese</span><span class="sxs-lookup"><span data-stu-id="d04d0-p111">Sensitive information types. Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</span></span></td>
-<td align="left"><p><span data-ttu-id="d04d0-p112">Pubblicare le etichette per gli utenti da applicare manualmente...</span><span class="sxs-lookup"><span data-stu-id="d04d0-p112">Publish these labels for users to manually apply . . .</span></span></p>
-<p><span data-ttu-id="d04d0-168">&lt;selezionare etichette&gt;</span><span class="sxs-lookup"><span data-stu-id="d04d0-168">&lt;select labels&gt;</span></span></p>
-<p><span data-ttu-id="d04d0-p113">... a questi percorsi...</span><span class="sxs-lookup"><span data-stu-id="d04d0-p113">. . . to these locations . . .</span></span></p>
-<p><span data-ttu-id="d04d0-175">&lt;tutte i percorsi oppure percorsi specifici&gt;</span><span class="sxs-lookup"><span data-stu-id="d04d0-175">&lt;all locations or choose specific locations&gt;</span></span></p></td>
-<td align="left"><p><span data-ttu-id="d04d0-p114">Applicare la protezione...</span><span class="sxs-lookup"><span data-stu-id="d04d0-p114">Apply this protection . . .</span></span></p>
-<p><span data-ttu-id="d04d0-179">&lt;definire la protezione&gt;</span><span class="sxs-lookup"><span data-stu-id="d04d0-179">&lt;define protection&gt;</span></span></p>
-<p><span data-ttu-id="d04d0-p115">... ai documenti che corrispondono a questi tipi di informazioni riservate&gt;</span><span class="sxs-lookup"><span data-stu-id="d04d0-p115">. . . to documents that match these sensitive information types&gt;</span></span></p></td>
+<td align="left"><span data-ttu-id="ee19d-163">Sensitive information types.</span><span class="sxs-lookup"><span data-stu-id="ee19d-163">Sensitive information types.</span></span> <span data-ttu-id="ee19d-164">Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</span><span class="sxs-lookup"><span data-stu-id="ee19d-164">Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</span></span></td>
+<td align="left"><p><span data-ttu-id="ee19d-165">Publish these labels for users to manually apply .</span><span class="sxs-lookup"><span data-stu-id="ee19d-165">Publish these labels for users to manually apply .</span></span> <span data-ttu-id="ee19d-166">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-166">.</span></span> <span data-ttu-id="ee19d-167">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-167">.</span></span></p>
+<p><span data-ttu-id="ee19d-168">&lt;selezionare etichette&gt;</span><span class="sxs-lookup"><span data-stu-id="ee19d-168">&lt;select labels&gt;</span></span></p>
+<p><span data-ttu-id="ee19d-169">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-169">.</span></span> <span data-ttu-id="ee19d-170">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-170">.</span></span> <span data-ttu-id="ee19d-171">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-171">.</span></span> <span data-ttu-id="ee19d-172">to these locations .</span><span class="sxs-lookup"><span data-stu-id="ee19d-172">to these locations .</span></span> <span data-ttu-id="ee19d-173">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-173">.</span></span> <span data-ttu-id="ee19d-174">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-174">.</span></span></p>
+<p><span data-ttu-id="ee19d-175">&lt;tutte i percorsi oppure percorsi specifici&gt;</span><span class="sxs-lookup"><span data-stu-id="ee19d-175">&lt;all locations or choose specific locations&gt;</span></span></p></td>
+<td align="left"><p><span data-ttu-id="ee19d-176">Apply this protection .</span><span class="sxs-lookup"><span data-stu-id="ee19d-176">Apply this protection .</span></span> <span data-ttu-id="ee19d-177">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-177">.</span></span> <span data-ttu-id="ee19d-178">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-178">.</span></span></p>
+<p><span data-ttu-id="ee19d-179">&lt;definire la protezione&gt;</span><span class="sxs-lookup"><span data-stu-id="ee19d-179">&lt;define protection&gt;</span></span></p>
+<p><span data-ttu-id="ee19d-180">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-180">.</span></span> <span data-ttu-id="ee19d-181">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-181">.</span></span> <span data-ttu-id="ee19d-182">.</span><span class="sxs-lookup"><span data-stu-id="ee19d-182">.</span></span> <span data-ttu-id="ee19d-183">to documents that match these sensitive information types&gt;</span><span class="sxs-lookup"><span data-stu-id="ee19d-183">to documents that match these sensitive information types&gt;</span></span></p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="prioritize-auto-apply-label-policies"></a><span data-ttu-id="d04d0-184">Definire la priorità dei criteri per applicare automaticamente le etichette
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-184">Prioritize auto-apply label policies</span></span>
+## <a name="prioritize-auto-apply-label-policies"></a><span data-ttu-id="ee19d-184">Definire la priorità dei criteri per applicare automaticamente le etichette
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-184">Prioritize auto-apply label policies</span></span>
 
-<span data-ttu-id="d04d0-p116">Per i dati personali soggetti all'RGPD, Microsoft consiglia di applicare automaticamente le etichette utilizzando le tipologie di informazioni sensibili create per il proprio ambiente. I criteri che applicano automaticamente le etichette devono essere configurati correttamente e occorre testarli per verificare che producano i risultati previsti.
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-p116">For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.</span></span>
+<span data-ttu-id="ee19d-185">For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment.</span><span class="sxs-lookup"><span data-stu-id="ee19d-185">For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment.</span></span> <span data-ttu-id="ee19d-186">It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.</span><span class="sxs-lookup"><span data-stu-id="ee19d-186">It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.</span></span>
 
-<span data-ttu-id="d04d0-p117">L'ordine con cui vengono creati i criteri da applicare automaticamente e il fatto che gli utenti applichino o meno queste etichette influisce sul risultato. È quindi importante pianificare attentamente l'implementazione. Ecco cosa serve sapere.</span><span class="sxs-lookup"><span data-stu-id="d04d0-p117">The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.</span></span>
+<span data-ttu-id="ee19d-187">The order that auto-apply policies are created and whether users are also applying these labels affect the result.</span><span class="sxs-lookup"><span data-stu-id="ee19d-187">The order that auto-apply policies are created and whether users are also applying these labels affect the result.</span></span> <span data-ttu-id="ee19d-188">So, it's important to carefully plan the roll-out. Here's what you need to know.</span><span class="sxs-lookup"><span data-stu-id="ee19d-188">So, it's important to carefully plan the roll-out. Here's what you need to know.</span></span>
 
-### <a name="one-label-at-a-time"></a><span data-ttu-id="d04d0-189">Un'etichetta alla volta</span><span class="sxs-lookup"><span data-stu-id="d04d0-189">One label at a time</span></span>
+### <a name="one-label-at-a-time"></a><span data-ttu-id="ee19d-189">Un'etichetta alla volta</span><span class="sxs-lookup"><span data-stu-id="ee19d-189">One label at a time</span></span>
 
-<span data-ttu-id="d04d0-190">È possibile assegnare solo un'etichetta a un documento.</span><span class="sxs-lookup"><span data-stu-id="d04d0-190">You can only assign one label to a document.</span></span>
+<span data-ttu-id="ee19d-190">È possibile assegnare solo un'etichetta a un documento.</span><span class="sxs-lookup"><span data-stu-id="ee19d-190">You can only assign one label to a document.</span></span>
 
-### <a name="older-auto-apply-policies-win"></a><span data-ttu-id="d04d0-191">I criteri più vecchi hanno la precedenza
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-191">Older auto-apply policies win</span></span>
+### <a name="older-auto-apply-policies-win"></a><span data-ttu-id="ee19d-191">I criteri più vecchi hanno la precedenza
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-191">Older auto-apply policies win</span></span>
 
-<span data-ttu-id="d04d0-p118">Se sono presenti più regole che assegnano un'etichetta da applicare automaticamente e il contenuto soddisfa le condizioni di più regole, viene assegnata l'etichetta della regola meno recente. Per questo motivo, è importante pianificare con attenzione i criteri delle etichette prima di configurarli. Se un'organizzazione ha l'esigenza di modificare la priorità dei criteri delle etichette, è necessario eliminarli e crearli di nuovo.</span><span class="sxs-lookup"><span data-stu-id="d04d0-p118">If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.</span></span>
+<span data-ttu-id="ee19d-192">If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned.</span><span class="sxs-lookup"><span data-stu-id="ee19d-192">If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned.</span></span> <span data-ttu-id="ee19d-193">For this reason, it's important to plan the label policies carefully before configuring them.</span><span class="sxs-lookup"><span data-stu-id="ee19d-193">For this reason, it's important to plan the label policies carefully before configuring them.</span></span> <span data-ttu-id="ee19d-194">If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.</span><span class="sxs-lookup"><span data-stu-id="ee19d-194">If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.</span></span>
 
-### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a><span data-ttu-id="d04d0-195">Le etichette applicate manualmente dall'utente hanno la precedenza su quelle applicate automaticamente
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-195">Manual user-applied labels trump auto-applied labels</span></span>
+### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a><span data-ttu-id="ee19d-195">Le etichette applicate manualmente dall'utente hanno la precedenza su quelle applicate automaticamente
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-195">Manual user-applied labels trump auto-applied labels</span></span>
 
-<span data-ttu-id="d04d0-p119">Le etichette applicate manualmente dall'utente battono quelle applicate automaticamente. I criteri di applicazione automatica non possono sostituire un'etichetta già applicata da un utente. Gli utenti possono sostituire le etichette applicate automaticamente.</span><span class="sxs-lookup"><span data-stu-id="d04d0-p119">Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.</span></span>
+<span data-ttu-id="ee19d-196">Manual user applied labels trump auto-applied labels.</span><span class="sxs-lookup"><span data-stu-id="ee19d-196">Manual user applied labels trump auto-applied labels.</span></span> <span data-ttu-id="ee19d-197">Auto-apply policies can't replace a label that is already applied by a user.</span><span class="sxs-lookup"><span data-stu-id="ee19d-197">Auto-apply policies can't replace a label that is already applied by a user.</span></span> <span data-ttu-id="ee19d-198">Users can replace labels that are auto-applied.</span><span class="sxs-lookup"><span data-stu-id="ee19d-198">Users can replace labels that are auto-applied.</span></span>
 
-### <a name="auto-assigned-labels-can-be-updated"></a><span data-ttu-id="d04d0-199">Le etichette assegnate automaticamente possono essere aggiornate</span><span class="sxs-lookup"><span data-stu-id="d04d0-199">Auto-assigned labels can be updated</span></span>
+### <a name="auto-assigned-labels-can-be-updated"></a><span data-ttu-id="ee19d-199">Le etichette assegnate automaticamente possono essere aggiornate</span><span class="sxs-lookup"><span data-stu-id="ee19d-199">Auto-assigned labels can be updated</span></span>
 
-<span data-ttu-id="d04d0-200">Le etichette assegnate automaticamente possono essere aggiornate creando nuovi criteri o aggiornando quelli esistenti.
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-200">Auto-assigned labels can be updated by either newer label policies or by updates to existing policies.</span></span>
+<span data-ttu-id="ee19d-200">Le etichette assegnate automaticamente possono essere aggiornate creando nuovi criteri o aggiornando quelli esistenti.
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-200">Auto-assigned labels can be updated by either newer label policies or by updates to existing policies.</span></span>
 
-<span data-ttu-id="d04d0-201">Assicurarsi che il piano di implementazione delle etichette includa:</span><span class="sxs-lookup"><span data-stu-id="d04d0-201">Be sure your plan for implementing labels includes:</span></span>
+<span data-ttu-id="ee19d-201">Assicurarsi che il piano di implementazione delle etichette includa:</span><span class="sxs-lookup"><span data-stu-id="ee19d-201">Be sure your plan for implementing labels includes:</span></span>
 
-- <span data-ttu-id="d04d0-202">Creare i criteri di applicazione automatica secondo l'ordine di priorità.
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-202">Prioritizing the order that auto-apply policies are created.</span></span>
+- <span data-ttu-id="ee19d-202">Creare i criteri di applicazione automatica secondo l'ordine di priorità.
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-202">Prioritizing the order that auto-apply policies are created.</span></span>
 
-- <span data-ttu-id="d04d0-p120">Allocare il tempo necessario all'applicazione automatica delle etichette prima di consentire agli utenti di applicarle manualmente. Potrebbe essere necessaria anche una settimana per applicare le etichette a tutti i contenuti che corrispondono alle condizioni.
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-p120">Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.</span></span>
+- <span data-ttu-id="ee19d-203">Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply.</span><span class="sxs-lookup"><span data-stu-id="ee19d-203">Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply.</span></span> <span data-ttu-id="ee19d-204">It can take up to seven days for the labels to be applied to all content that matches the conditions.</span><span class="sxs-lookup"><span data-stu-id="ee19d-204">It can take up to seven days for the labels to be applied to all content that matches the conditions.</span></span>
 
-### <a name="example-priority-for-creating-the-auto-apply-policies"></a><span data-ttu-id="d04d0-205">Esempio di priorità per creare i criteri di applicazione automatica
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-205">Example priority for creating the auto-apply policies</span></span>
+### <a name="example-priority-for-creating-the-auto-apply-policies"></a><span data-ttu-id="ee19d-205">Esempio di priorità per creare i criteri di applicazione automatica
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-205">Example priority for creating the auto-apply policies</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="d04d0-206"><strong>Etichette</strong></span><span class="sxs-lookup"><span data-stu-id="d04d0-206"><strong>Labels</strong></span></span></th>
-<th align="left"><span data-ttu-id="d04d0-207"><strong>Ordine di priorità per creare criteri da applicare automaticamente</strong></span><span class="sxs-lookup"><span data-stu-id="d04d0-207"><strong>Priority order to create auto-apply policies</strong></span></span></th>
+<th align="left"><span data-ttu-id="ee19d-206"><strong>Etichette</strong></span><span class="sxs-lookup"><span data-stu-id="ee19d-206"><strong>Labels</strong></span></span></th>
+<th align="left"><span data-ttu-id="ee19d-207"><strong>Ordine di priorità per creare criteri da applicare automaticamente</strong></span><span class="sxs-lookup"><span data-stu-id="ee19d-207"><strong>Priority order to create auto-apply policies</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="d04d0-208">Risorse umane - Dati dipendenti</span><span class="sxs-lookup"><span data-stu-id="d04d0-208">Human Resources — Employee Data</span></span></td>
-<td align="left"><span data-ttu-id="d04d0-209">1</span><span class="sxs-lookup"><span data-stu-id="d04d0-209">1</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-208">Risorse umane - Dati dipendenti</span><span class="sxs-lookup"><span data-stu-id="ee19d-208">Human Resources — Employee Data</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-209">1</span><span class="sxs-lookup"><span data-stu-id="ee19d-209">1</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="d04d0-210">Dati cliente
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-210">Customer Data</span></span></td>
-<td align="left"><span data-ttu-id="d04d0-211">2</span><span class="sxs-lookup"><span data-stu-id="d04d0-211">2</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-210">Dati cliente
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-210">Customer Data</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-211">2</span><span class="sxs-lookup"><span data-stu-id="ee19d-211">2</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="d04d0-212">Estremamente riservato
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-212">Highly Confidential</span></span></td>
-<td align="left"><span data-ttu-id="d04d0-213">3</span><span class="sxs-lookup"><span data-stu-id="d04d0-213">3</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-212">Estremamente riservato
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-212">Highly Confidential</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-213">3</span><span class="sxs-lookup"><span data-stu-id="ee19d-213">3</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="d04d0-214">Risorse umane - Dati sugli stipendi</span><span class="sxs-lookup"><span data-stu-id="d04d0-214">Human Resources — Salary Data</span></span></td>
-<td align="left"><span data-ttu-id="d04d0-215">4</span><span class="sxs-lookup"><span data-stu-id="d04d0-215">4</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-214">Risorse umane - Dati sugli stipendi</span><span class="sxs-lookup"><span data-stu-id="ee19d-214">Human Resources — Salary Data</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-215">4</span><span class="sxs-lookup"><span data-stu-id="ee19d-215">4</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="d04d0-216">Riservato</span><span class="sxs-lookup"><span data-stu-id="d04d0-216">Confidential</span></span></td>
-<td align="left"><span data-ttu-id="d04d0-217">5</span><span class="sxs-lookup"><span data-stu-id="d04d0-217">5</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-216">Riservato</span><span class="sxs-lookup"><span data-stu-id="ee19d-216">Confidential</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-217">5</span><span class="sxs-lookup"><span data-stu-id="ee19d-217">5</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="d04d0-218">Pubblico</span><span class="sxs-lookup"><span data-stu-id="d04d0-218">Public</span></span></td>
-<td align="left"><span data-ttu-id="d04d0-219">6</span><span class="sxs-lookup"><span data-stu-id="d04d0-219">6</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-218">Pubblico</span><span class="sxs-lookup"><span data-stu-id="ee19d-218">Public</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-219">6</span><span class="sxs-lookup"><span data-stu-id="ee19d-219">6</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="d04d0-220">Personale</span><span class="sxs-lookup"><span data-stu-id="d04d0-220">Personal</span></span></td>
-<td align="left"><span data-ttu-id="d04d0-221">Nessun criterio di applicazione automatica</span><span class="sxs-lookup"><span data-stu-id="d04d0-221">No auto-apply policy</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-220">Personale</span><span class="sxs-lookup"><span data-stu-id="ee19d-220">Personal</span></span></td>
+<td align="left"><span data-ttu-id="ee19d-221">Nessun criterio di applicazione automatica</span><span class="sxs-lookup"><span data-stu-id="ee19d-221">No auto-apply policy</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="create-labels-and-auto-apply-label-policies"></a><span data-ttu-id="d04d0-222">Creare le etichette e i criteri per applicare le etichette automaticamente
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-222">Create labels and auto-apply label policies</span></span>
+## <a name="create-labels-and-auto-apply-label-policies"></a><span data-ttu-id="ee19d-222">Creare le etichette e i criteri per applicare le etichette automaticamente
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-222">Create labels and auto-apply label policies</span></span>
 
-<span data-ttu-id="d04d0-223">Creare le etichette e i criteri nel centro sicurezza o nel centro conformità.</span><span class="sxs-lookup"><span data-stu-id="d04d0-223">Create labels and policies in the security center or the compliance center.</span></span>
+<span data-ttu-id="ee19d-223">Creare le etichette e i criteri nel centro sicurezza o nel centro conformità.</span><span class="sxs-lookup"><span data-stu-id="ee19d-223">Create labels and policies in the security center or the compliance center.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="d04d0-224"><strong>Passaggio</strong></span><span class="sxs-lookup"><span data-stu-id="d04d0-224"><strong>Step</strong></span></span></th>
-<th align="left"><span data-ttu-id="d04d0-225"><strong>Descrizione</strong></span><span class="sxs-lookup"><span data-stu-id="d04d0-225"><strong>Description</strong></span></span></th>
+<th align="left"><span data-ttu-id="ee19d-224"><strong>Passaggio</strong></span><span class="sxs-lookup"><span data-stu-id="ee19d-224"><strong>Step</strong></span></span></th>
+<th align="left"><span data-ttu-id="ee19d-225"><strong>Descrizione</strong></span><span class="sxs-lookup"><span data-stu-id="ee19d-225"><strong>Description</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="d04d0-226">Assegnare autorizzazioni ai membri del team di conformità.</span><span class="sxs-lookup"><span data-stu-id="d04d0-226">Give permissions to members of your compliance team.</span></span></p></td>
-<td align="left"><p><span data-ttu-id="d04d0-p121">I membri del team di conformità che creeranno le etichette necessitano di autorizzazioni per utilizzare il centro sicurezza e/o il centro conformità. Andare a Autorizzazioni nel centro sicurezza o nel centro conformità e modificare i membri del gruppo Amministratori di conformità.</span><span class="sxs-lookup"><span data-stu-id="d04d0-p121">Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</span></span></p>
-<p><span data-ttu-id="d04d0-229">Vedere <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Concedere agli utenti l'accesso al centro sicurezza e/o al centro conformità</a>.</span><span class="sxs-lookup"><span data-stu-id="d04d0-229">See <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Give users access to the security center and/or the compliance center</a>.</span></span></p></td>
+<td align="left"><p><span data-ttu-id="ee19d-226">Assegnare autorizzazioni ai membri del team di conformità.</span><span class="sxs-lookup"><span data-stu-id="ee19d-226">Give permissions to members of your compliance team.</span></span></p></td>
+<td align="left"><p><span data-ttu-id="ee19d-227">Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center.</span><span class="sxs-lookup"><span data-stu-id="ee19d-227">Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center.</span></span> <span data-ttu-id="ee19d-228">Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</span><span class="sxs-lookup"><span data-stu-id="ee19d-228">Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</span></span></p>
+<p><span data-ttu-id="ee19d-229">Vedere <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Concedere agli utenti l'accesso al centro sicurezza e/o al centro conformità</a>.</span><span class="sxs-lookup"><span data-stu-id="ee19d-229">See <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Give users access to the security center and/or the compliance center</a>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="d04d0-230">Creare etichette di conservazione.</span><span class="sxs-lookup"><span data-stu-id="d04d0-230">Create retention labels.</span></span></p></td>
-<td align="left"><span data-ttu-id="d04d0-231">Passare a Classificazioni nel Centro sicurezza o nel Centro conformità, scegliere Etichette di conservazione e creare le etichette per il proprio ambiente.</span><span class="sxs-lookup"><span data-stu-id="d04d0-231">Go to Classifications in the Security center or the Compliance center, choose Retention labels, and create the labels for your environment.</span></span></td>
+<td align="left"><p><span data-ttu-id="ee19d-230">Creare etichette di conservazione.</span><span class="sxs-lookup"><span data-stu-id="ee19d-230">Create retention labels.</span></span></p></td>
+<td align="left"><span data-ttu-id="ee19d-231">Passare a Classificazioni nel Centro sicurezza o nel Centro conformità, scegliere Etichette di conservazione e creare le etichette per il proprio ambiente.</span><span class="sxs-lookup"><span data-stu-id="ee19d-231">Go to Classifications in the Security center or the Compliance center, choose Retention labels, and create the labels for your environment.</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="d04d0-232">Creare criteri di applicazione automatica per le etichette.</span><span class="sxs-lookup"><span data-stu-id="d04d0-232">Create auto-apply policies for labels.</span></span></p></td>
-<td align="left"><span data-ttu-id="d04d0-p122">Andare a Classificazione nel centro sicurezza o nel centro conformità, scegliere Criteri etichette e creare i criteri di applicazione automatica delle etichette. Assicurarsi di creare questi criteri nell'ordine di priorità.</span><span class="sxs-lookup"><span data-stu-id="d04d0-p122">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels. Be sure to create these policies in the prioritized order.</span></span></td>
+<td align="left"><p><span data-ttu-id="ee19d-232">Creare criteri di applicazione automatica per le etichette.</span><span class="sxs-lookup"><span data-stu-id="ee19d-232">Create auto-apply policies for labels.</span></span></p></td>
+<td align="left"><span data-ttu-id="ee19d-233">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels.</span><span class="sxs-lookup"><span data-stu-id="ee19d-233">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels.</span></span> <span data-ttu-id="ee19d-234">Be sure to create these policies in the prioritized order.</span><span class="sxs-lookup"><span data-stu-id="ee19d-234">Be sure to create these policies in the prioritized order.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="d04d0-235">La figura seguente mostra come creare un'etichetta Dati cliente da applicare automaticamente.
-</span><span class="sxs-lookup"><span data-stu-id="d04d0-235">The following illustration shows how to create an auto-apply label for the Customer data label.</span></span>
+<span data-ttu-id="ee19d-235">La figura seguente mostra come creare un'etichetta Dati cliente da applicare automaticamente.
+</span><span class="sxs-lookup"><span data-stu-id="ee19d-235">The following illustration shows how to create an auto-apply label for the Customer data label.</span></span>
 
 ![Creare e applicare un'etichetta per i dati del cliente](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
-<span data-ttu-id="d04d0-237">Nella figura:</span><span class="sxs-lookup"><span data-stu-id="d04d0-237">In the illustration:</span></span>
+<span data-ttu-id="ee19d-237">Nella figura:</span><span class="sxs-lookup"><span data-stu-id="ee19d-237">In the illustration:</span></span>
 
-- <span data-ttu-id="d04d0-238">Viene creata l'etichetta "Dati del cliente".</span><span class="sxs-lookup"><span data-stu-id="d04d0-238">The "Customer data" label is created.</span></span>
+- <span data-ttu-id="ee19d-238">Viene creata l'etichetta "Dati del cliente".</span><span class="sxs-lookup"><span data-stu-id="ee19d-238">The "Customer data" label is created.</span></span>
 
-- <span data-ttu-id="d04d0-239">I tipi di informazioni riservate desiderate per l'RGPD sono: codice fiscale belga, numero di carta di credito, numero identità Croazia, codice fiscale Finlandese.</span><span class="sxs-lookup"><span data-stu-id="d04d0-239">The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.</span></span>
+- <span data-ttu-id="ee19d-239">I tipi di informazioni riservate desiderate per l'RGPD sono: codice fiscale belga, numero di carta di credito, numero identità Croazia, codice fiscale Finlandese.</span><span class="sxs-lookup"><span data-stu-id="ee19d-239">The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.</span></span>
 
-- <span data-ttu-id="d04d0-240">La creazione di un criterio di applicazione automatica assegna l'etichetta "Dati del cliente" a qualsiasi file che include uno dei tipi di informazioni sensibili aggiunto al criterio.</span><span class="sxs-lookup"><span data-stu-id="d04d0-240">Create an auto-apply policy assigns the label "Customer data" to any file that includes one of the sensitive information types that you add to the policy.</span></span>
+- <span data-ttu-id="ee19d-240">La creazione di un criterio di applicazione automatica assegna l'etichetta "Dati del cliente" a qualsiasi file che include uno dei tipi di informazioni sensibili aggiunto al criterio.</span><span class="sxs-lookup"><span data-stu-id="ee19d-240">Create an auto-apply policy assigns the label "Customer data" to any file that includes one of the sensitive information types that you add to the policy.</span></span>
