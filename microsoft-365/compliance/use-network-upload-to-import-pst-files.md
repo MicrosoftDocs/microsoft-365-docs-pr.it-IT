@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come usare il caricamento in rete per importare più file PST in blocco nelle cassette postali degli utenti in Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d35a6c77379c528d10510c1959df53c8d81a989
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819066"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127333"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usare il caricamento in rete per importare file PST dell'organizzazione in Microsoft 365
 
@@ -336,7 +336,7 @@ Dopo avere creato il processo di importazione nel passaggio 5, Microsoft 365 ana
     
   - L'uso degli [strumenti di Microsoft eDiscovery](search-for-content.md) per cercare i dati importati. 
     
-  - L'uso dei [criteri di conservazione di Microsoft 365](retention-policies.md) per controllare il periodo di conservazione dei dati importati e l'azione da eseguire dopo la sua scadenza. 
+  - L'uso dei [criteri di conservazione di Microsoft 365](retention.md) per controllare il periodo di conservazione dei dati importati e l'azione da eseguire dopo la sua scadenza. 
     
   - La ricerca del nel [log di controllo](search-the-audit-log-in-security-and-compliance.md) degli eventi correlati alle cassette postali che hanno effetto sui dati importati. 
     

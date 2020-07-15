@@ -283,34 +283,40 @@
           href: enable-unlimited-archiving.md
         - name: Configurare i criteri di archiviazione ed eliminazione per le cassette postali
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Conservare i dati
+    - name: Conserva ed elimina i dati
       items:
-        - name: Informazioni sui criteri di conservazione
-          href: retention-policies.md
-        - name: Creazione dei criteri di conservazione
+        - name: Informazioni sulla conservazione
+          items:
+            - name: Criteri di conservazione ed etichette
+              href: retention.md
+            - name: Conservazione per SharePoint e OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Conservazione per Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Conservazione per Exchange
+              href: retention-policies-exchange.md
+        - name: Introduzione alla conservazione
+          href: get-started-with-retention.md
+        - name: Creare criteri di conservazione
           href: create-retention-policies.md
-        - name: Conservazione per SharePoint e OneDrive
-          href: retention-policies-sharepoint.md
-        - name: Conservazione per Microsoft Teams
-          href: retention-policies-teams.md
-        - name: Conservazione per Exchange
-          href: retention-policies-exchange.md
-        - name: Piano di archiviazione
+        - name: Usare il piano file
           href: file-plan-manager.md
-        - name: Informazioni sulle etichette di conservazione
-          href: labels.md
-        - name: 'Creare, pubblicare e applicare automaticamente etichette di conservazione'
-          href: create-retention-labels.md
+        - name: Creare etichette di conservazione e applicarle nelle app
+          href: create-apply-retention-labels.md
+        - name: Applicare automaticamente un'etichetta di conservazione al contenuto
+          href: apply-retention-labels-automatically.md
         - name: Rispettare la SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Usare PowerShell per creare e pubblicare le etichette di conservazione
+        - name: Creare etichette di conservazione con PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Conservazione basata su eventi
-          href: event-driven-retention.md
-        - name: Automatizzare la conservazione basata su eventi
-          href: automate-event-driven-retention.md
-        - name: Gestire il ciclo di vita dei documenti di SharePoint
-          href: auto-apply-retention-labels-scenario.md
+        - name: Usare la conservazione basata su eventi
+          items:
+            - name: Avviare la conservazione al verificarsi di un evento
+              href: event-driven-retention.md
+            - name: Automatizzare la conservazione basata su eventi
+              href: automate-event-driven-retention.md
+            - name: Gestire il ciclo di vita dei documenti di SharePoint
+              href: auto-apply-retention-labels-scenario.md
     - name: Eliminare i dati
       href: disposition.md
     - name: Gestire le cassette postali inattive
@@ -345,34 +351,6 @@
           href: records-management.md
         - name: Record
           href: records.md
-        - name: Piano di archiviazione
-          items:
-            - name: Gestire le etichette di conservazione
-              href: file-plan-manager.md
-            - name: Informazioni sulle etichette di conservazione
-              href: labels.md
-            - name: Creare e pubblicare le etichette di conservazione
-              href: create-retention-labels.md
-            - name: Usare PowerShell per creare e pubblicare etichette di conservazione su larga scala
-              href: bulk-create-publish-labels-using-powershell.md
-            - name: Visualizzare l'utilizzo delle etichette con Analisi delle etichette
-              href: label-analytics.md
-            - name: Visualizzare le attività delle etichette per i documenti
-              href: view-label-activity-for-documents.md
-            - name: Visualizzare i report sulla governance dei dati
-              href: view-the-data-governance-reports.md
-        - name: Eventi
-          items:
-            - name: Conservazione basata su eventi
-              href: event-driven-retention.md
-            - name: Automatizzare la conservazione basata su eventi
-              href: automate-event-driven-retention.md
-        - name: Eliminazione
-          href: disposition.md
-        - name: Altre informazioni sulla gestione dei record
-          items:
-            - name: Video sulla gestione dei record
-              href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: Gestione di eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
