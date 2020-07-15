@@ -20,12 +20,12 @@ description: Usare le etichette di riservatezza del framework Microsoft Informat
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d5b8e3c540c133ce4e04a434d03ef4bdb16b6f32
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936795"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127363"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -72,7 +72,7 @@ Un'etichetta di riservatezza assegnata a un documento o a un messaggio di posta 
 
 Nelle applicazioni di Office, un'etichetta di riservatezza viene visualizzata dagli utenti come tag in un messaggio di posta elettronica o in un documento.
 
-Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
+Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](retention.md#retention-labels) applied to it.
 
 > [!div class="mx-imgBorder"]
 > ![Etichetta di riservatezza applicata a un messaggio di posta elettronica](../media/Sensitivity-label-on-email.png)
@@ -181,7 +181,7 @@ Se l'etichetta o l'impostazione dei criteri di etichetta prevista per un utente 
 
 ![Opzione Sposta nella pagina dei criteri di etichetta di riservatezza](../media/sensitivity-label-policy-priority.png)
 
-Se si usano etichette di conservazione oltre alle etichette di riservatezza, è importante tenere presente che la priorità è importante per i criteri per le etichette di riservatezza, ma non per i [criteri per le etichette di conservazione](labels.md#the-principles-of-retention-or-what-takes-precedence).
+Se si usano etichette di conservazione oltre alle etichette di riservatezza, è importante tenere presente che la priorità è importante per i criteri delle etichette di riservatezza, ma non per le [etichette di conservazione](retention.md#the-principles-of-retention-or-what-takes-precedence).
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Etichette di riservatezza e Azure Information Protection
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora attività estende la funzionalità di classificazione dei dati consentendo di visualizzare e filtrare le azioni intraprese dagli utenti sul contenuto etichettato.
-ms.openlocfilehash: 5cb6a8dbfa570b3b0e0d1ce39648d12050d2af81
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 63ecb84c0ae658b0fd3463dba10d56059352910b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327842"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126645"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introduzione a Esplora attività
 
@@ -75,7 +75,7 @@ Conoscere le azioni intraprese sul contenuto etichettato sensibile consente di v
 > Esplora risorse non esegue il monitoraggio delle attività di conservazione per Exchange Online.
 
 ## <a name="see-also"></a>Vedere anche
-- [Etichette di riservatezza](sensitivity-labels.md)
-- [Etichette di conservazione](labels.md)
+- [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
+- [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
-- [Panoramica dei criteri di conservazione](retention-policies.md)
+

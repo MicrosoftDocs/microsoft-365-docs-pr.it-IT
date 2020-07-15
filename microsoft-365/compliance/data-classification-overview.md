@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: a9c7a275a0f3f2db7d931be5af77b00291cdad83
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327872"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127221"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Conoscere i dati - Panoramica della classificazione dei dati
 
-Gli amministratori di Microsoft 365 o gli amministratori di conformità possono valutare e poi contrassegnare i contenuti all'interno dell'organizzazione per controllarne gli spostamenti, per proteggerli indipendentemente dalla posizione e per garantire che vengano conservati ed eliminati in base alle esigenze dell'organizzazione. Queste operazioni possono essere eseguite mediante l'applicazione di [etichette di riservatezza](sensitivity-labels.md), di [etichette di conservazione](labels.md) e tramite la classificazione della tipologia delle informazioni riservate. Esistono vari modi per eseguire l'individuazione, la valutazione e l'aggiunta di tag, ma il risultato finale è che potrebbe essere presente un numero molto elevato di documenti e messaggi di posta elettronica contrassegnati e classificati con una o entrambe le etichette. Dopo aver applicato le etichette di conservazione e le etichette di riservatezza, è opportuno verificarne l'utilizzo nel tenant e controllare le operazioni che vengono svolte con tali elementi. La pagina di classificazione dei dati consente di avere visibilità sui contenuti, in particolare:
+Gli amministratori di Microsoft 365 o gli amministratori di conformità possono valutare e poi contrassegnare i contenuti all'interno dell'organizzazione per controllarne gli spostamenti, per proteggerli indipendentemente dalla posizione e per garantire che vengano conservati ed eliminati in base alle esigenze dell'organizzazione. Queste operazioni possono essere eseguite mediante l'applicazione di [etichette di riservatezza](sensitivity-labels.md), di [etichette di conservazione](retention.md#retention-labels) e tramite la classificazione della tipologia delle informazioni riservate. Esistono vari modi per eseguire l'individuazione, la valutazione e l'aggiunta di tag, ma il risultato finale è che potrebbe essere presente un numero molto elevato di documenti e messaggi di posta elettronica contrassegnati e classificati con una o entrambe le etichette. Dopo aver applicato le etichette di conservazione e le etichette di riservatezza, è opportuno verificarne l'utilizzo nel tenant e controllare le operazioni che vengono svolte con tali elementi. La pagina di classificazione dei dati consente di avere visibilità sui contenuti, in particolare:
 
 - il numero degli elementi classificati come tipologie di informazioni riservate e quali sono le tipologie di classificazione
 - le principali etichette di riservatezza applicate sia in Microsoft 365 che in Azure Information Protection
@@ -79,8 +79,8 @@ Per determinare il numero di elementi in una determinata categoria di classifica
 
 > [!NOTE]
 > Se la scheda mostra il messaggio "Nessun dato trovato per le informazioni riservate". Questo significa che non sono presenti elementi nell'organizzazione classificati come tipologia di informazioni riservate o sottoposti a ricerca per indicizzazione. Per iniziare a usare le etichette, vedere:
->- [Etichette di riservatezza](sensitivity-labels.md)
->- [Etichette di conservazione](labels.md)
+>- [Iniziare a usare le etichette di riservatezza](get-started-with-sensitivity-labels.md)
+>- [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md)
 >- [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>Principali etichette di riservatezza applicate ai contenuti
@@ -104,7 +104,7 @@ La scheda etichetta di riservatezza mostra il numero di elementi (e-mail o docum
 
 ## <a name="top-retention-labels-applied-to-content"></a>Principali etichette di conservazione applicate ai contenuti
 
-Le etichette di conservazione vengono usate per gestire l'eliminazione dei contenuti all'interno dell'organizzazione. Se applicate, possono essere usate per controllare il periodo di conservazione di un documento prima dell'eliminazione, se deve essere esaminato prima dell'eliminazione, quando scade il periodo di conservazione oppure se deve essere contrassegnato come record che non deve essere eliminato. Per ulteriori informazioni, vedere [Panoramica delle etichette di conservazione](labels.md).
+Le etichette di conservazione vengono usate per gestire l'eliminazione dei contenuti all'interno dell'organizzazione. Se applicate, possono essere usate per controllare il periodo di conservazione di un documento prima dell'eliminazione, se deve essere esaminato prima dell'eliminazione, quando scade il periodo di conservazione oppure se deve essere contrassegnato come record che non deve essere eliminato. Per altre informazioni, vedere [Informazioni sui criteri e sulle etichette di conservazione](retention.md).
 
 Le scheda delle principali etichette di conservazione applicate mostra il numero di elementi con una determinata etichetta di conservazione.
 
@@ -112,7 +112,7 @@ Le scheda delle principali etichette di conservazione applicate mostra il numero
 
 > [!NOTE]
 > Se la scheda mostra il messaggio "Non sono state rilevate etichette di conservazione" significa che non sono state create o pubblicate etichette di conservazione o non è stata applicata alcuna etichetta di conservazione ai contenuti. Per iniziare a usare le etichette di conservazione, vedere:
->- [Panoramica delle etichette di conservazione](labels.md)
+>- [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>Attività principali rilevate
 
@@ -134,8 +134,7 @@ Il motivo della classificazione dei dati consiste nel fornire visibilità sul nu
 
 - [Visualizzazione delle attività con etichette (anteprima)](data-classification-activity-explorer.md)
 - [Visualizzare il contenuto con etichetta (anteprima)](data-classification-content-explorer.md)
-- [Etichette di riservatezza](sensitivity-labels.md)
-- [Etichette di conservazione](labels.md)
+- [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
+- [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
-- [Panoramica dei criteri di conservazione](retention-policies.md)
 - [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md)

@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Usare i servizi di sicurezza e conformità di Microsoft 365 per proteggere le app, i dati e i dispositivi dei lavoratori remoti.
-ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 5ba60a04cf6717f8f9261ed72336445c8d7876bc
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049867"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127078"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Passaggio 3: distribuire sicurezza e conformità per i lavoratori remoti
 
@@ -54,6 +54,8 @@ Proteggere applicazioni e dati con queste funzionalità di sicurezza di Microsof
 | Azure AD Identity Protection  | Automatizzare il rilevamento e la correzione dei rischi basati sull'identità. <br><br>Creare criteri di accesso condizionale basati sul rischio per richiedere l'autenticazione a più fattori (MFA) per gli accessi rischiosi. | Microsoft 365 E5 o E3 con licenze di Azure AD Premium P2 |
 ||||
 
+Per altre informazioni, vedere [Attività rapide per iniziare a usare Conformità Microsoft 365](../compliance/compliance-quick-tasks.md).
+
 ## <a name="compliance"></a>Conformità
 
 Garantire la conformità ai criteri interni o ai requisiti normativi con queste funzionalità di conformità di Microsoft 365.
@@ -63,11 +65,13 @@ Garantire la conformità ai criteri interni o ai requisiti normativi con queste 
 | Etichette di riservatezza | Classificare e proteggere i dati dell'organizzazione senza compromettere la produttività degli utenti e la loro capacità di collaborare aggiungendo etichette con vari livelli di protezione a messaggi di posta elettronica, file o siti. | Microsoft 365 E3 ed E5 |
 | Prevenzione della perdita dei dati (DLP) | Rilevare, comunicare e bloccare la condivisione rischiosa, involontaria o inappropriata, come la condivisione di dati che contengono informazioni personali, sia all'interno che all'esterno. | Microsoft 365 E3 ed E5 | 
 | Controllo delle app tramite l'accesso condizionale | Evitare che i dati riservati vengano scaricati nei dispositivi personali degli utenti. | Microsoft 365 E3 ed E5 |
-| Etichette e criteri di conservazione dei dati | Implementare controlli di governance delle informazioni, come la durata di conservazione dei dati e i requisiti per l'archiviazione dei dati personali dei clienti, per garantire la conformità con i criteri o le normative sui dati dell'organizzazione. | Microsoft 365 E3 ed E5 |
-| Crittografia della posta elettronica | Inviare e ricevere messaggi di posta elettronica tra persone all'interno e all'esterno dell'organizzazione che contengono dati regolamentati, come i dati personali dei clienti. | Microsoft 365 E3 ed E5 |
+| Etichette e criteri di conservazione dei dati | Implementare controlli di governance delle informazioni, come la durata di conservazione dei dati e i requisiti per l'archiviazione dei dati personali dei clienti, per garantire la conformità con i criteri o le normative sui dati dell'organizzazione. | Microsoft 365 E3 e E5 |
+| Crittografia messaggi di Office (OME) | Inviare e ricevere messaggi di posta elettronica tra persone all'interno e all'esterno dell'organizzazione che contengono dati regolamentati, come i dati personali dei clienti. | Microsoft 365 E3 ed E5 |
 | Compliance Manager | Gestire le attività di conformità normative relative ai servizi cloud Microsoft con lo strumento di valutazione dei rischi basato su flussi di lavoro in Microsoft Service Trust Portal. | Microsoft 365 E3 ed E5 |
-| Punteggio di conformità (anteprima) | Visualizzare il punteggio complessivo della configurazione di conformità attuale e consigli per migliorarla nel Centro conformità Microsoft 365. | Microsoft 365 E3 ed E5 |
+| Punteggio di conformità (anteprima) | Visualizzare il punteggio complessivo della configurazione di conformità attuale e consigli per migliorarla nel Centro conformità Microsoft 365. | Microsoft 365 E3 e E5 |
 ||||
+
+Per altre informazioni, vedere [12 principali attività per i team di sicurezza per supportare il lavoro da casa](../security/top-security-tasks-for-remote-work.md).
 
 ## <a name="results-of-step-3"></a>Risultati del Passaggio 3
 
