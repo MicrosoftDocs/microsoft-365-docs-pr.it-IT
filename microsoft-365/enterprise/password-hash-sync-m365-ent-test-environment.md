@@ -16,15 +16,14 @@ ms.collection:
 ms.custom:
 - TLG
 - Ent_TLGs
-- seo-marvel-apr2020
 ms.assetid: ''
 description: "Riepilogo: configurare e illustrare la sincronizzazione hash delle password e l'accesso per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 2d5fbd3ed2a2afb994fc36f5ba3a15a8c55a274e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7b1ba549a9ac9d3faec8b717a0f76cca1200352b
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819389"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371441"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
@@ -40,51 +39,51 @@ Le fasi principali della configurazione dell'ambiente di testing sono tre:
 2. Installare e configurare Azure AD Connect su APP1.
     
 > [!TIP]
-> Aprire la [Guida al lab di test di Microsoft 365 Enterprise](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli della guida al lab di test di Microsoft 365 Enterprise.
+> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing per l'organizzazione simulata di Microsoft 365.
 
-Follow the instructions in [simulated enterprise base configuration for Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Here is your resulting configuration.
+Seguire le istruzioni riportate in [configurazione di base per l'organizzazione simulata per Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Questa è la configurazione risultante.
   
 ![La configurazione di base per l'organizzazione simulata](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 Questa configurazione è costituita da: 
   
 - Abbonamenti di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5.
-- Una rete Intranet dell'organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1, APP1 e CLIENT1 in una rete virtuale di Azure. DC1 è un controller di dominio per il dominio AD DS\<your public domain name> testlab.
+- Una rete Intranet dell'organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1, APP1 e CLIENT1 in una rete virtuale di Azure. DC1 è un controller di dominio del dominio testlab.\<nome di dominio pubblico> di AD DS. Fase 2: creare e registrare il dominio per il test lab
 
-## <a name="phase-2-create-and-register-the-testlab-domain"></a>Fase 2: creare e registrare il dominio per il test lab
+## <a name="phase-2-create-and-register-the-testlab-domain"></a>In questa fase si aggiunge un dominio pubblico DNS che viene aggiunto all'abbonamento.
 
-In questa fase si aggiunge un dominio pubblico DNS che viene aggiunto all'abbonamento.
+First, work with your public DNS registration provider to create a new public DNS domain name based on your current domain name and add it to your subscription.
 
-Per prima cosa, rivolgersi al proprio provider di registrazione del DNS pubblico per creare un nuovo nome di dominio DNS pubblico basato sul proprio nome di dominio corrente, e aggiungerlo alla sottoscrizione. Raccomandiamo di usare il nome **testlab.**\<your public domain>. Ad esempio, se il nome di dominio è **<span>contoso</span>.com**, aggiungere il nome di dominio pubblico **<span>testlab</span>.contoso.com**.
+Innanzitutto, usare il provider di registrazione DNS pubblico per creare un nuovo nome di dominio DNS pubblico basato sul proprio nome di dominio corrente e aggiungerlo all'abbonamento. È consigliabile usare il nome **testlab.**\<dominio pubblico>. Ad esempio, se il nome di dominio pubblico è **<span>contoso</span>.com**, aggiungere il nome di dominio pubblico **<span>testlab</span>.contoso.com**.
   
-In seguito, aggiungere il dominio **testlab.**\<your public domain> alla propria sottoscrizione a pagamento o di valutazione a Office 365 o Microsoft 365, eseguendo la procedura di registrazione del dominio. Tale procedura consiste nell’aggiungere altri record DNS al dominio **testlab.**\<your public domain> . Per altre informazioni, vedere [Aggiungere un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain). 
+Tale procedura consiste nell'aggiungere altri record DNS al dominio **testlab.**\<dominio pubblico>. Per altre informazioni, vedere [Aggiungere un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain). Questa è la configurazione risultante. La registrazione del nome di dominio testlab Questa configurazione è costituita da: 
 
-Questa è la configurazione risultante.
+Abbonamenti di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5 con il dominio DNS testlab.\<nome dominio pubblico> registrato.
   
-![La registrazione del nome di dominio testlab](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure.](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
-Questa configurazione è costituita da:
+Si noti come il testlab.\<nome di dominio pubblico> a questo punto è:
 
-- Sottoscrizioni di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5 con il dominio DNS testlab.\<your public domain name> registrato.
-- Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure.
-
-Notare come il dominio testlab.\<your public domain name> è ora:
-
-- Ospitato da record DNS pubblici.
-- Registrato negli abbonamenti a Microsoft 365.
+- Ospitato da record DNS pubblici. Registrato negli abbonamenti a Microsoft 365.
 - Il dominio di AD DS nella rete Intranet simulata.
+
+Quando vengono richiesti nome utente e password, specificare <strong>user1@testlab.</strong>\<nome dominio> e la password per User1. Dovrebbe essere possibile accedere come User1.
+
+- In primo luogo, installare e configurare Azure AD Connect su APP1.
+- Dal [portale di Azure](https://portal.azure.com), accedere con l'account di amministratore globale e connettersi ad APP1 con l'account TESTLAB\\User1.
+- Dal desktop di APP1, aprire un prompt dei comandi di Windows PowerShell a livello di amministratore ed eseguire questi comandi per disabilitare Sicurezza avanzata di Internet Explorer:
      
-## <a name="phase-3-install-azure-ad-connect-on-app1"></a>Fase 3: installare Azure AD Connect su APP1
+## <a name="phase-3-install-azure-ad-connect-on-app1"></a>Dalla barra delle applicazioni, fare clic su **Internet Explorer** e accedere a [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
 
-In questa fase, installare e configurare lo strumento Azure AD Connect su APP1 e verificarne il funzionamento.
+Nella pagina Microsoft Azure Active Directory Connect, fare clic su **Download** e quindi su **Esegui**.
   
-In primo luogo, installare e configurare Azure AD Connect su APP1.
+Nella pagina di **Benvenuto in Azure Active Directory Connect**, fare clic su **Accetto** e quindi su **Continua**.
 
-1. Dal [portale di Azure](https://portal.azure.com), accedere con l'account di amministratore globale e connettersi ad APP1 con l'account TESTLAB\\User1.
+1. Nella pagina **Impostazioni rapide**, fare clic su **Usa impostazioni rapide**.
     
-2. Dal desktop di APP1, aprire un prompt dei comandi di Windows PowerShell a livello di amministratore ed eseguire questi comandi per disabilitare Sicurezza avanzata di Internet Explorer:
+2. Nella pagina **Connessione ad Azure AD**, digitare il nome dell'account amministratore globale in **Nome utente**, digitare la password in **Password** e fare clic su **Avanti**.
     
    ```powershell
    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
@@ -92,62 +91,62 @@ In primo luogo, installare e configurare Azure AD Connect su APP1.
    Stop-Process -Name Explorer -Force
    ```
 
-3. Dalla barra delle applicazioni, fare clic su **Internet Explorer** e accedere a [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+3. Nella pagina **Connessione ad AD DS**, digitare **TESTLAB\\User1** in **Nome utente**, digitare la relativa password in **Password** e fare clic su **Avanti**.
     
-4. Nella pagina Microsoft Azure Active Directory Connect, fare clic su **Download** e quindi su **Esegui**.
+4. Nella pagina **Pronto per la configurazione** fare clic su **Installa**.
     
-5. Nella pagina di **Benvenuto in Azure Active Directory Connect**, fare clic su **Accetto** e quindi su **Continua**.
+5. Nella pagina **Configurazione completata**, fare clic su **Esci**.
     
-6. Nella pagina **Impostazioni rapide**, fare clic su **Usa impostazioni rapide**.
+6. In Internet Explorer, passare all'interfaccia di amministrazione di Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)).
     
-7. Nella pagina **Connessione ad Azure AD**, digitare il nome dell'account amministratore globale in **Nome utente**, digitare la password in **Password** e fare clic su **Avanti**.
+7. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
-8. Nella pagina **Connessione ad AD DS**, digitare **TESTLAB\\User1** in **Nome utente**, digitare la relativa password in **Password** e fare clic su **Avanti**.
+8. Si noti l'account denominato **User1**.
     
-9. Nella pagina **Pronto per la configurazione** fare clic su **Installa**.
+9. Questo account deriva dal dominio TESTLAB AD DS ed è la prova che la sincronizzazione della directory ha funzionato.
     
-10. Nella pagina **Configurazione completata**, fare clic su **Esci**.
+10. Fare clic sull'account **User1** e quindi fare clic su **Licenze e app**.
     
-11. In Internet Explorer, passare all'interfaccia di amministrazione di Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)).
+11. In **Licenze di prodotto** selezionare la posizione, se necessario, disabilitare la licenza di **Office 365 E5** e abilitare la licenza di **Microsoft 365 E5**.
     
-12. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
+12. Fare clic su **Salva** nella parte inferiore della pagina e selezionare **Chiudi**.
     
-    Si noti l'account denominato **User1**. Questo account deriva dal dominio TESTLAB AD DS ed è la prova che la sincronizzazione della directory ha funzionato.
+    Successivamente, verificare la possibilità di accedere all'abbonamento con il nome utente <strong>user1@testlab.</strong>\<nome dominio> nome utente dell'account User1. Da APP1, disconnettersi e quindi accedere nuovamente specificando un account diverso.
     
-13. Fare clic sull'account **User1** e quindi fare clic su **Licenze e app**.
+13. When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your domain name> and the User1 password.
     
-14. In **Licenze di prodotto** selezionare la posizione, se necessario, disabilitare la licenza di **Office 365 E5** e abilitare la licenza di **Microsoft 365 E5**. 
+14. You should successfully sign in as User1. 
 
-15. Fare clic su **Salva** nella parte inferiore della pagina e selezionare **Chiudi**.
+15. Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB AD DS, non è un amministratore globale.
     
-In seguito, verificare la possibilità di accedere alla sottoscrizione con il nome utente <strong>user1@testlab.</strong>\<your domain name> per l’account User1.
+Di conseguenza, l'icona **Amministratore** non sarà visibile. Questa è la configurazione risultante.
 
-1. Da APP1, disconnettersi e quindi accedere nuovamente specificando un account diverso.
+1. L'organizzazione simulata con ambiente di testing per la sincronizzazione hash delle password
 
-2. Quando vengono richiesti nome utente e password, specificare <strong>user1@testlab.</strong>\<your domain name> e la password User1. Dovrebbe essere possibile accedere come User1. 
+2. Questa configurazione è costituita da: Abbonamenti di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5 con il dominio DNS TESTLAB.\<nome dominio> registrato. Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
  
-Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB AD DS, non è un amministratore globale. Di conseguenza, l'icona **Amministratore** non sarà visibile. 
+Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365. L'account User1 nel dominio TESTLAB AD DS è stato sincronizzato con il tenant Azure AD. 
 
-Questa è la configurazione risultante.
+Passaggio successivo
 
-![L'organizzazione simulata con ambiente di testing per la sincronizzazione hash delle password](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test-lab-guides.md#identity) nell'ambiente di test.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
-Questa configurazione è costituita da: 
+Vedere anche 
   
-- Sottoscrizioni di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5 con il dominio DNS TESTLAB.\<your domain name> registrato.
-- Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365.
-- L'account User1 nel dominio TESTLAB AD DS è stato sincronizzato con il tenant Azure AD.
+- [Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md) [Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+- [Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscription periodically.
+- The User1 account in the TESTLAB  AD DS domain has been synchronized with the Azure AD tenant.
 
-## <a name="next-step"></a>Passaggio successivo
+## <a name="next-step"></a>Next step
 
-Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test-lab-guides.md#identity) nell'ambiente di test.
+Explore additional <bpt id="p1">[</bpt>identity<ept id="p1">](m365-enterprise-test-lab-guides.md#identity)</ept> features and capabilities in your test environment.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>See also
 
-[Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+<bpt id="p1">[</bpt>Microsoft 365 Enterprise Test Lab Guides<ept id="p1">](m365-enterprise-test-lab-guides.md)</ept>
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+<bpt id="p1">[</bpt>Deploy Microsoft 365 Enterprise<ept id="p1">](deploy-microsoft-365-enterprise.md)</ept>
 
-[Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+<bpt id="p1">[</bpt>Microsoft 365 Enterprise documentation<ept id="p1">](https://docs.microsoft.com/microsoft-365-enterprise/)</ept>
 
 

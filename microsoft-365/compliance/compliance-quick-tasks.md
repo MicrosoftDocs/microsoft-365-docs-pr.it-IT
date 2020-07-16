@@ -75,7 +75,7 @@ Per informazioni dettagliate sulla configurazione della gestione degli accessi c
 
 ## <a name="task-6-classify-and-protect-sensitive-data"></a>Attività 6: classificare e proteggere i dati sensibili
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+Per svolgere il proprio lavoro, i membri dell'organizzazione collaborano con altri utenti, sia interni che esterni all'organizzazione stessa. Questo significa che i contenuti non sono più protetti da un firewall, ma possono spostarsi tra dispositivi, applicazioni e servizi. E quando si spostano, è preferibile che lo facciano in modo sicuro e protetto, nel rispetto dei criteri aziendali e di conformità dell'organizzazione.
 
 Le [etichette di riservatezza](sensitivity-labels.md) consentono di classificare e proteggere i dati dell'organizzazione, assicurando che la produttività degli utenti e la loro capacità di collaborare non vengano ostacolate. Utilizzare le etichette di riservatezza per applicare la crittografia e le restrizioni di utilizzo applicano le indicazioni visive e proteggono le informazioni tra piattaforme e dispositivi, in locale e nel cloud.
 

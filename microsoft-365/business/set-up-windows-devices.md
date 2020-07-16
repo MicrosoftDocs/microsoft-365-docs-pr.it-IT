@@ -67,7 +67,7 @@ Per un nuovo dispositivo che esegue Windows 10 Pro Creators Update oppure appena
     
 3. Completare la configurazione del dispositivo con Windows 10.
     
-   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
+   Al termine, l'utente verrà connesso a Azure Active Directory dell'organizzazione. Per accertarsene, vedere [Verificare che il dispositivo sia connesso a Azure AD](#verify-the-device-is-connected-to-azure-ad). 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>Per un dispositivo già configurato e che esegue Windows 10 Pro
 
@@ -97,7 +97,7 @@ Per un nuovo dispositivo che esegue Windows 10 Pro Creators Update oppure appena
   
 6. Nella pagina controlla che **sia la tua organizzazione** , verifica che le informazioni siano corrette e fai clic su **Unisci**.
   
-   On the **You're all set!** page, click **Done**.
+   Nella pagina **È tutto pronto** fare clic su **Fatto**.
   
    ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   

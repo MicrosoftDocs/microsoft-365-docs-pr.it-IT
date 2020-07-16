@@ -92,7 +92,7 @@ Quando si crea un criterio DLP, è possibile abilitare le **notifiche degli uten
 
 Per ogni regola in un criterio DLP, è possibile:
   
-- Send the notification to the people you choose. These people can include the owner of the content, the person who last modified the content, the owner of the site where the content is stored, or a specific user.
+- Inviare la notifica agli utenti selezionati. Questi utenti possono essere il proprietario del contenuto, l'autore dell'ultima modifica apportata al contenuto, il proprietario del sito in cui è archiviato il contenuto o un utente specifico.
     
 - Personalizzare il testo incluso nella notifica tramite HTML o token. Per altre informazioni, vedere la sezione seguente.
     
@@ -107,13 +107,13 @@ Le notifiche dispongono di una riga dell'oggetto che inizia con l'azione intrapr
   
 ![Messaggio di notifica](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
-By default, notifications display text similar to the following for an item on a site. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
+Per impostazione predefinita, le notifiche consentono di visualizzare testo simile a quanto segue per un elemento in un sito. Il testo di notifica è configurato separatamente per ogni regola affinché venga visualizzato in modo diverso a seconda della regola che viene soddisfatta.
 
 |**Se la regola del criterio DLP…**|**La notifica predefinita per i documenti di SharePoint o OneDrive for business dice che questo è...**|**La notifica predefinita per i messaggi di Outlook dice che questo è...**|
 |:-----|:-----|:-----|
 |Invia una notifica ma non consente la sostituzione  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione.  <br/> |Il messaggio di posta elettronica è in conflitto con un criterio nell'organizzazione.  <br/> |
 |Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file.  <br/> |Il messaggio di posta elettronica è in conflitto con un criterio nell'organizzazione. Il messaggio non è stato recapitato a tutti i destinatari.  <br/> |
-|Blocca l'accesso e invia una notifica  <br/> |This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.  <br/> |Il messaggio di posta elettronica è in conflitto con un criterio nell'organizzazione. Il messaggio non è stato recapitato a tutti i destinatari.  <br/> |
+|Blocca l'accesso e invia una notifica  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione. L'accesso a questo elemento è limitato al proprietario, all'autore dell'ultima modifica e all'amministratore della raccolta siti principale.  <br/> |Il messaggio di posta elettronica è in conflitto con un criterio nell'organizzazione. Il messaggio non è stato recapitato a tutti i destinatari.  <br/> |
    
 ### <a name="custom-email-notification"></a>Notifica di posta elettronica personalizzata
 
@@ -139,17 +139,17 @@ Per ogni regola in un criterio DLP, è possibile configurare suggerimenti per i 
     
   - Richiedere all'utente di immettere una motivazione aziendale per ignorare il criterio. Queste informazioni sono registrate ed è possibile visualizzarle nei report DLP nella sezione **report** del Centro sicurezza e &amp; conformità. 
     
-  - Allow the person to report a false positive and override the DLP policy. This information is also logged for reporting, so that you can use false positives to fine tune your rules.
+  - Consentire all'utente di segnalare un falso positivo e di ignorare il criterio DLP. Anche questa informazione viene registrata per il report affinché sia possibile utilizzare falsi positivi per ottimizzare le regole.
     
 ![Opzioni del suggerimento per i criteri](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
 Ad esempio, si può avere un criterio DLP applicato ai siti di OneDrive for business che individuano informazioni di identificazione personale (PII) e questo criterio ha tre regole:
   
-1. First rule: If fewer than five instances of this sensitive information are detected in a document, and the document is shared with people inside the organization, the **Send a notification** action displays a policy tip. For policy tips, no override options are necessary because this rule is simply notifying people and not blocking access. 
+1. Prima regola: Se vengono rilevate meno di cinque istanze di queste informazioni riservate in un documento e il documento è condiviso con utenti interni all'organizzazione, l'azione **Invia una notifica** mostra un suggerimento per i criteri. Non sono necessarie opzioni per ignorare i suggerimenti per i criteri perché la regola sta semplicemente informando l'utente senza bloccargli l'accesso. 
     
 2. Seconda regola: Se vengono rilevate più di cinque istanze di queste informazioni riservate in un documento e il documento è condiviso con utenti interni all'organizzazione, l'azione **Blocca accesso al contenuto** limita le autorizzazioni per il file e l'azione **Invia una notifica** consente agli utenti di ignorare le azioni in questa regola fornendo una motivazione aziendale. L'attività dell'organizzazione a volte richiede agli utenti interni la condivisione dei dati delle informazioni personali e non si desidera che il criterio DLP blocchi questo lavoro. 
     
-3. Third rule: If greater than five instances of this sensitive information are detected in a document, and the document is shared with people outside the organization, the **Block access to content** action restricts the permissions for the file, and the **Send a notification** action does not allow people to override the actions in this rule because the information is shared externally. Under no circumstances should people in your organization be allowed to share PII data outside the organization. 
+3. Terza regola: Se vengono rilevate più di cinque istanze di queste informazioni riservate in un documento e il documento è condiviso con utenti esterni all'organizzazione, l'azione **Blocca accesso al contenuto** limita le autorizzazioni per il file e l'azione **Invia una notifica** non consente agli utenti di ignorare le azioni in questa regola perché l'informazione è condivisa esternamente. In nessun caso gli utenti dell'organizzazione possono condividere dati PII all'esterno dell'organizzazione. 
     
 Di seguito sono riportati alcuni punti per comprendere l'utilizzo di un suggerimento per i criteri per ignorare una regola:
   
@@ -177,17 +177,17 @@ Il suggerimento per i criteri elenca i problemi con il contenuto e, se i suggeri
   
 ![Suggerimento per i criteri con l'opzione per eseguire l'override](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
   
-DLP policies are synced to sites and contented is evaluated against them periodically and asynchronously, so there may be a short delay between the time you create the DLP policy and the time you begin to see policy tips. There may be a similar delay from when you resolve or override a policy tip to when the icon on the document on the site goes away.
+I criteri DLP sono sincronizzati con i siti e il contenuto viene valutato periodicamente e in modo asincrono, quindi potrebbe esserci un breve ritardo tra il momento in cui viene creato il criterio DLP e il momento in cui si iniziano a visualizzare i suggerimenti per i criteri. Potrebbe verificarsi un ritardo simile da quando si risolve o si ignora un suggerimento per i criteri a quando scompare l'icona sul documento nel sito.
   
 ### <a name="default-text-for-policy-tips-on-sites"></a>Testo predefinito per i suggerimenti dei criteri nei siti
 
-By default, policy tips display text similar to the following for an item on a site. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
+Per impostazione predefinita, i suggerimenti per i criteri consentono di visualizzare testo simile a quanto segue per un elemento in un sito. Il testo di notifica è configurato separatamente per ogni regola affinché venga visualizzato in modo diverso a seconda della regola che viene soddisfatta.
 
 |**Se la regola del criterio DLP…**|**Nel suggerimento per i criteri predefinito viene visualizzato…**|
 |:-----|:-----|
 |Invia una notifica ma non consente la sostituzione  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione.  <br/> |
 |Blocca l'accesso, invia una notifica e consente di ignorarla  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione. Se non si risolve questo conflitto, potrebbe essere bloccato l'accesso a questo file.  <br/> |
-|Blocca l'accesso e invia una notifica  <br/> |This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.  <br/> |
+|Blocca l'accesso e invia una notifica  <br/> |Questo elemento è in conflitto con un criterio dell'organizzazione. L'accesso a questo elemento è limitato al proprietario, all'autore dell'ultima modifica e all'amministratore della raccolta siti principale.  <br/> |
    
 ### <a name="custom-text-for-policy-tips-on-sites"></a>Testo personalizzato per i suggerimenti sui criteri nei siti
 
@@ -266,7 +266,7 @@ In ognuno di questi programmi desktop di Office, gli utenti possono scegliere di
   
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Testo predefinito per i suggerimenti per i criteri in Excel 2016, PowerPoint 2016 e Word 2016
 
-By default, policy tips display text similar to the following on the Message Bar and Backstage view of an open document. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
+Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo simile a quanto segue nella barra dei messaggi e nella visualizzazione Backstage di un documento aperto. Il testo di notifica è configurato separatamente per ogni regola affinché venga visualizzato in modo diverso a seconda della regola che viene soddisfatta.
 
 |**Se la regola del criterio DLP…**|**Nel suggerimento per i criteri predefinito viene visualizzato…**|
 |:-----|:-----|

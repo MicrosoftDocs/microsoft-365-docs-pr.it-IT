@@ -51,7 +51,7 @@ Nella figura e nella descrizione seguenti viene illustrato il funzionamento del 
     
 3. Il connettore partner si connette al servizio di Azure in Microsoft 365 utilizzando il servizio Web Exchange (EWS) tramite un punto finale noto.
     
-4. Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox. Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:
+4. Gli elementi vengono importati nella cassetta postale di un utente specifico oppure in una cassetta postale generale di dati di terze parti. Il fatto che un elemento sia importato nella cassetta postale di un utente specifico o nella cassetta postale di dati di terze parti dipende dai seguenti criteri:
     
    1. **Elementi che dispongono di un ID utente corrispondente a un account utente:** Se il connettore partner è in grado di eseguire il mapping dell'ID utente dell'elemento nell'origine dati di terze parti a un ID utente specifico in Office 365, l'elemento viene copiato nella cartella **Purges** nella cartella elementi ripristinabili dell'utente. Gli utenti non possono accedere agli elementi nella cartella Ripuliture. Tuttavia, è possibile utilizzare gli strumenti di eDiscovery per cercare gli elementi nella cartella Purges.
     
