@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Note sulla versione per la classificazione dei dati.
-ms.openlocfilehash: bbef6729680db2c9a6aec4caa9036ec23fad6949
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 71d8e8e4fffddc4c9373a2bdd37d4509337ec231
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327609"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127141"
 ---
 # <a name="data-classification-release-notes"></a>Note sulla versione della classificazione dei dati
 
@@ -48,6 +48,6 @@ Durante il programma di anteprima, abbiamo ascoltato i preziosi feedback degli u
 - [Introduzione alla classificazione dei dati (anteprima)](data-classification-overview.md)
 - [Visualizzazione delle attività con etichette (anteprima)](data-classification-activity-explorer.md)
 - [Visualizzare il contenuto con etichetta (anteprima)](data-classification-content-explorer.md)
-- [Etichette di riservatezza](sensitivity-labels.md)
-- [Etichette di conservazione](labels.md)
+- [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
+- [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
