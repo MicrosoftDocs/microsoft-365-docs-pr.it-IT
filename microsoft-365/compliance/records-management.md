@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: 48705ac6d0c271ca2646de7c058a340ee3f736ae
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0179f208f10921293c164516b26440f5bd043517
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818956"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127483"
 ---
 # <a name="records-management-in-microsoft-365"></a>Gestione dei record in Microsoft 365
 
@@ -33,11 +33,11 @@ Le organizzazioni di tutti i tipi richiedono una soluzione di gestione dei recor
 
 La gestione dei record in Microsoft 365 include le funzionalità seguenti:
 
-- **Etichettare il contenuto come record**. Creare e pubblicare etichette di conservazione che contrassegnano il contenuto come [record](records.md) che può essere applicato dagli utenti finali o [applicato automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) identificando informazioni, parole chiave o tipi di contenuto sensibili.
+- **Etichettare il contenuto come record**. Creare e pubblicare etichette di conservazione che contrassegnano il contenuto come [record](records.md) che può essere applicato dagli utenti finali o [applicato automaticamente](apply-retention-labels-automatically.md) identificando informazioni, parole chiave o tipi di contenuto sensibili.
 
 - **Eseguire la migrazione e gestire i requisiti di conservazione con il piano di archiviazione**. Con un [piano di archiviazione](file-plan-manager.md) è possibile inserire un piano di conservazione esistente in Microsoft 365 oppure crearne uno nuovo per funzionalità di gestione avanzate.
 
-- **Stabilire criteri di conservazione e di eliminazione nell'etichetta di record**. Definire i periodi di [conservazione](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) ed [eliminazione](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age) in base a vari fattori, tra cui la data dell'ultima modifica o di creazione.
+- **Configurare le impostazioni di conservazione ed eliminazione con le etichette di conservazione**. Definire i periodi e le azioni di conservazione in base a vari fattori, tra cui la data dell'ultima modifica o di creazione.
 
 - **Attivare la conservazione basata su eventi** con la [conservazione basata su eventi](event-driven-retention.md).
 
@@ -48,6 +48,10 @@ La gestione dei record in Microsoft 365 include le funzionalità seguenti:
 - **Impostare autorizzazioni specifiche** per le funzioni di gestione dei record nell'organizzazione per [avere l’accesso corretto](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Con la soluzione di gestione dei record in Microsoft 365, è possibile incorporare le pianificazioni di conservazione dell'organizzazione nel piano di archiviazione per gestire la conservazione, la dichiarazione dei record e l'eliminazione a supporto dell'intero ciclo di vita del contenuto.
+
+## <a name="additional-resources"></a>Risorse aggiuntive
+
+Per la gestione dei record, vedere la [registrazione del webinar](https://aka.ms/MIPC/Video-RecordsManagementWebinar) e la [presentazione con le domande frequenti](https://aka.ms/MIPC/Blog-RecordsManagementWebinar).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
