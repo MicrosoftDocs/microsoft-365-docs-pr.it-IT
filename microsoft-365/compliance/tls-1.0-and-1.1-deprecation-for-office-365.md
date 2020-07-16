@@ -1,31 +1,34 @@
 ---
-title: Deprecation TLS 1,0 e 1,1 per Office 365
+title: Deprecazione TLS 1.0 e 1.1 per Office 365
 description: Descrive le funzionalità TLS 1,0 e 1,1 Deprecation per Office 365.
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: v-six
+ms.author: shmehta
+ms.reviewer: krowley
 appliesto:
 - Microsoft 365 Apps for enterprise
 - Office 365 Business
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 611b6970c3ecb95f4cdf046b96a5e3aa9155391d
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 270d04974cec9c36fa31a77bda401375fdac0471
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937344"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148148"
 ---
-# <a name="tls-10-and-11-deprecation-for-office-365"></a>Deprecation TLS 1,0 e 1,1 per Office 365
+# <a name="tls-10-and-11-deprecation-for-office-365"></a>Deprecazione TLS 1.0 e 1.1 per Office 365
+> [!IMPORTANT]
+> Si è momentaneamente interrotto l'applicazione del protocollo di disapprovazione di TLS 1,0 e 1,1 per i clienti commerciali a causa di covid-19, ma poiché le catene di approvvigionamento sono state modificate e alcuni paesi si aprono, viene reimpostato l'applicazione TLS per iniziare il 15 ottobre 2020. 
 
-Al 31 ottobre 2018, i protocolli Transport Layer Security (TLS) 1,0 e 1,1 sono deprecati per il servizio Office 365. L'effetto per gli utenti finali dovrebbe essere minimo. Questa modifica è stata pubblicizzata per quasi due anni, con il primo annuncio pubblico effettuato nel dicembre 2017. Questo articolo è destinato solo a coprire il client locale di Office 365 in relazione al servizio Office 365, ma può anche essere applicato ai problemi di TLS locali con Office e Office Online Server/Office Web Apps.
+Al 31 ottobre 2018, i protocolli Transport Layer Security (TLS) 1,0 e 1,1 sono deprecati per il servizio Office 365. L'effetto per gli utenti finali dovrebbe essere minimo. Questa modifica è stata pubblicizzata da più di due anni, con il primo annuncio pubblico eseguito nel dicembre 2017. Questo articolo è destinato solo a coprire il client locale di Office 365 in relazione al servizio Office 365, ma può anche essere applicato ai problemi di TLS locali con Office e Office Online Server/Office Web Apps.
 
 ## <a name="office-and-tls-overview"></a>Panoramica di Office e TLS
 

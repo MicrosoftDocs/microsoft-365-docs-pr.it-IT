@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b8f7e3bbb6d2348c3f19e8df251d700d8adf8e33
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235085"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148115"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Gestire gli eventi imprevisti in Microsoft Threat Protection
 
@@ -44,7 +44,16 @@ Se durante l'analisi si vogliono spostare gli avvisi da un evento all'altro è p
 
 ## <a name="edit-incident-name"></a>Modificare il nome di un evento imprevisto
 Per impostazione predefinita, a un evento viene assegnato un numero. È possibile modificare il nome dell'evento per allinearlo alla convenzione di denominazione preferita.
- 
+
+> [!TIP]
+> Per una maggiore visibilità a colpo d'occhio, la denominazione degli incidenti automatici, attualmente in anteprima pubblica, genera nomi di incidenti basati su attributi di avviso, ad esempio il numero di endpoint coinvolti, gli utenti coinvolti, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento Incident.
+>
+> Ad esempio: *eventi a più fasi su più endpoint segnalati da più origini.*
+>
+> Gli incidenti che sono stati precedenti all'implementazione della denominazione degli incidenti automatici non avranno il nome modificato.
+>
+> Ulteriori informazioni su come [attivare le funzionalità di anteprima](preview.md#turn-on-preview-features).
+
 ## <a name="assign-incidents"></a>Assegnare gli eventi imprevisti
 Se un evento non è stato ancora assegnato, è possibile selezionare **Assegna a me** per assegnare l'evento a se stessi. In questo modo si assume la proprietà non solo dell'evento, ma anche di tutti gli avvisi associati.
 
@@ -68,4 +77,3 @@ I commenti aggiunti vengono visualizzati istantaneamente nel pannello.
 
 ## <a name="add-incident-tags"></a>Aggiungere tag agli eventi
 È possibile aggiungere tag personalizzati a un evento, ad esempio per contrassegnare un insieme di eventi imprevisti con caratteristiche comuni. In seguito è possibile filtrare la coda di tutti gli eventi imprevisti che contengono un tag specifico.
-

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 viene fornito con un certo numero di classificatori incorporati che è possibile utilizzare per identificare ed etichettare il contenuto nell'organizzazione. In questo argomento viene illustrato come prepararsi per l'utilizzo di questi classificatori.
-ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 1d645cc79075c41ce94b0f9b4fc347450a8df8c6
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126315"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146220"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Testing di classificatori incorporati tramite etichette di conservazione (anteprima)
 
@@ -38,7 +38,7 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 - **Resumes**: rileva gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale
 - **Codice sorgente**: consente di rilevare gli elementi che contengono una serie di istruzioni e istruzioni scritte nella Top 25 linguaggi di programmazione utilizzati su GitHub
 
-  |nome della lingua|||||
+  |**Nome della lingua**|||||
   |---------|---------|---------|---------|---------|
   |ActionScript|C        |C #       |C++     |Clojure  |
   |CoffeeScript|CSS     |Andare       |Haskell |HTML     |
@@ -106,5 +106,5 @@ Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
 Vedere anche:
 
 - [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md)
-- [Informazioni sui criteri di conservazione e sulle etichette di conservazione](retention.md)
+- [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
 - [Applicazione automatica di un'etichetta di conservazione per conservare o eliminare il contenuto](apply-retention-labels-automatically.md)
