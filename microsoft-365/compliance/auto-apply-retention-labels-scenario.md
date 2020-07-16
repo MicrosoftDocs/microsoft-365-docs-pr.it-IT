@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo scenario di soluzione mostra come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione. Questa operazione viene eseguita usando i metadati del documento per classificarne il contenuto, nello specifico applicando automaticamente le etichette di conservazione e configurando la conservazione basata su eventi.
-ms.openlocfilehash: 9c8a7044dccdb60f8e579d6dcad64310d1dda0d5
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419102"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126477"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gestire il ciclo di vita dei documenti di SharePoint con le etichette di conservazione
 
@@ -108,11 +108,11 @@ Ecco il [piano di archiviazione](file-plan-manager.md) per l'etichetta di conser
 
 - **Durata di conservazione:** cinque anni (1825 giorni).
 
-- **Etichetta di record**: configurare l'etichetta di conservazione per classificare il contenuto come un [record](labels.md#using-retention-labels-for-records-management), i documenti classificati come record non possono essere modificati o eliminati dagli utenti.
+- **Etichetta di record**: configurare l'etichetta di conservazione per classificare il contenuto come un [record](records.md), i documenti classificati come record non possono essere modificati o eliminati dagli utenti.
 
 - **Descrittori del piano di archiviazione:** (per semplificare lo scenario, non viene inserito alcun descrittore di archiviazione).
 
-La seguente schermata mostra le impostazioni quando si crea l'[etichetta di conservazione](labels.md) Specifica di prodotto nel Centro sicurezza e conformità. È possibile creare la tipologia di evento **Cessazione del prodotto** al momento della creazione dell'etichetta di conservazione. Seguire i passaggi descritti di seguito.
+La seguente schermata mostra le impostazioni quando si crea l'[etichetta di conservazione](retention.md#retention-labels) Specifica di prodotto nel Centro sicurezza e conformità. È possibile creare la tipologia di evento **Cessazione del prodotto** al momento della creazione dell'etichetta di conservazione. Seguire i passaggi descritti di seguito.
 
 ![Impostazioni di conservazione per l'etichetta Specifica di prodotto](../media/SPRetention5.png)
 
@@ -144,7 +144,7 @@ Ora che l'etichetta di conservazione è stata creata, si passerà all'analisi de
 
 ## <a name="classifying-content-by-auto-applying-retention-labels"></a>Classificare il contenuto per l'applicazione automatica delle etichette di conservazione
 
-Ora si procederà con l'[applicazione automatica](labels.md#applying-a-retention-label-automatically-based-on-conditions) delle etichette di conservazione create per questo scenario, usando Keyword Query Language (KQL). KQL è il linguaggio utilizzato per la creazione di query di ricerca. Con KQL è possibile compiere ricerche in base a parole chiave o proprietà gestite. Per ulteriori informazioni su KQL, consultare <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
+Ora si procederà con l'[applicazione automatica](apply-retention-labels-automatically.md) delle etichette di conservazione create per questo scenario, usando Keyword Query Language (KQL). KQL è il linguaggio utilizzato per la creazione di query di ricerca. Con KQL è possibile compiere ricerche in base a parole chiave o proprietà gestite. Per ulteriori informazioni su KQL, consultare <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
 A livello generale, si vuole dire a Microsoft 365 che applichi l'etichetta di conservazione **Specifica di prodotto** a tutti i documenti che hanno **Finale** come **Stato** e **Specifica di prodotto** come **Tipo di documento**. Si ricordi che **Stato** e **Tipo di documento** sono le colonne del sito precedentemente definite per il tipo di contenuto Documentazione di prodotto nella sezione [Architettura delle informazioni](#information-architecture). Per compiere questa operazione, è necessario configurare lo schema di ricerca.
 
@@ -268,7 +268,7 @@ Siccome le etichette di conservazione sono state applicate automaticamente ai do
 
 Ora che le etichette di conservazione sono state applicate automaticamente con successo, il focus passa all'evento che indicherà la fine della produzione di un particolare prodotto. Al verificarsi di tale evento, verrà avviato il periodo di conservazione definito nelle etichette di conservazione applicate automaticamente ai documenti. Ad esempio, per i documenti delle specifiche di prodotto, il periodo di conservazione quinquennale inizia quando viene attivato l'evento "Fine della produzione".
 
-È possibile creare manualmente l'evento all'interno del Centro sicurezza e conformità andando su **Gestione record** > **Eventi** e scegliendo il tipo di evento e impostando gli ID risorsa corretti e una data per l'evento. Per altre informazioni, vedere [Panoramica della conservazione basata su eventi](event-driven-retention.md).
+È possibile creare manualmente l'evento all'interno del Centro sicurezza e conformità andando su **Gestione record** > **Eventi** e scegliendo il tipo di evento e impostando gli ID risorsa corretti e una data per l'evento. Per ulteriori informazioni, vedere [Avviare la conservazione al verificarsi di un evento](event-driven-retention.md).
 
 Per questo scenario, l'evento verrà creato automaticamente, generandolo da un sistema di produzione esterno. In questo caso, il sistema che genera l'evento si compone di un semplice elenco di SharePoint che indica se un prodotto è in produzione e di un [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) associato a tale elenco, che attiverà l'evento. In uno scenario reale, un qualsiasi sistema potrebbe generare l'evento, ad esempio un sistema HR o CRM. Microsoft Flow include numerose interazioni pronte all'uso e blocchi predefiniti per i carichi di lavoro di Microsoft 365, ad esempio Exchange, SharePoint, Teams e Dynamics 365, e app di terze parti, come Twitter, Box, Salesforce e Workdays. Questo facilita l'integrazione di Flow con tali sistemi. Per ulteriori informazioni, vedere [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md).
 
@@ -333,7 +333,7 @@ Questo significa che è stato avviato il periodo di conservazione per l'etichett
 
 ### <a name="more-about-asset-ids"></a>Altre informazioni sugli ID risorsa
 
-Come descritto nella [Panoramica della conservazione basata su eventi](event-driven-retention.md), è importante comprendere la relazione tra le tipologie di evento, le etichette, gli eventi e gli ID risorsa. L'ID risorsa è semplicemente un'ulteriore proprietà di un documento in SharePoint e OneDrive. Consente di identificare con maggiore dettaglio quei documenti per cui l'evento darà avvio al periodo di conservazione. Come impostazione predefinita, SharePoint dispone di una proprietà ID risorsa utilizzabile per la conservazione basata su eventi:
+Come descritto in [Avviare la conservazione al verificarsi di un evento](event-driven-retention.md), è importante comprendere la relazione tra le tipologie di evento, le etichette di conservazione, gli eventi e gli ID risorsa. L'ID risorsa è semplicemente un'ulteriore proprietà di un documento in SharePoint e OneDrive. Consente di identificare con maggiore dettaglio quei documenti per cui l'evento darà avvio al periodo di conservazione. Come impostazione predefinita, SharePoint dispone di una proprietà ID risorsa utilizzabile per la conservazione basata su eventi:
 
 ![Proprietà ID risorsa visualizzata nella pagina dei dettagli delle proprietà del documento](../media/SPRetention26.png)
 

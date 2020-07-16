@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui criteri di conservazione per Teams
+title: Informazioni sulla conservazione per Teams
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,24 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: 8e163aa9f5072e0b2685521fcae37f130d132473
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 11e374dac4e1e0a13d3bdbc642922dca1b8954f4
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083494"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127383"
 ---
-# <a name="learn-about-retention-policies-for-microsoft-teams"></a>Informazioni sui criteri di conservazione per Microsoft Teams
+# <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Questo articolo integra [Informazioni sui criteri di conservazione](retention-policies.md) con informazioni specifiche per Microsoft Teams.
+Questo articolo integra [Informazioni sulla conservazione](retention.md) con informazioni specifiche per Microsoft Teams.
 
-## <a name="how-a-retention-policy-works-with-microsoft-teams"></a>Funzionamento dei criteri di conservazione con Microsoft Teams
+## <a name="how-retention-works-with-microsoft-teams"></a>Funzionamento della conservazione con Microsoft Teams
 
 È possibile usare i criteri di conservazione per conservare i messaggi di chat e canali in Teams. Le chat di Teams vengono archiviate in una cartella nascosta della cassetta postale di ogni utente incluso nella chat e i messaggi dei canali di Teams vengono archiviati in un'analoga cartella nascosta della cassetta postale del gruppo per il team. 
 
-È importante sapere che Teams usa un servizio di chat con tecnologia Azure che archivia anche questi dati e che, per impostazione predefinita, questo servizio archivia i dati a tempo indeterminato. Per questo motivo, è consigliabile usare i percorsi di Teams per mantenere ed eliminare questi dati di Teams. Con i percorsi di Teams, i dati verranno eliminati definitivamente dalle cassette postali di Exchange e dal servizio di chat con tecnologia Azure sottostante. Per altre informazioni, vedere [Sicurezza e conformità in Microsoft teams](https://go.microsoft.com/fwlink/?linkid=871258) e in particolare la sezione [Architettura di protezione delle informazioni](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+È importante sapere che Teams usa un servizio di chat con tecnologia Azure che archivia anche questi dati e che, per impostazione predefinita, questo servizio archivia i dati a tempo indeterminato. Per questo motivo, è consigliabile creare criteri di conservazione che usino i percorsi di Teams per mantenere ed eliminare questi dati di Teams. Questi criteri di conservazione consentono di eliminare definitivamente i dati dalle cassette postali di Exchange e dal servizio di chat con tecnologia Azure sottostante. Per altre informazioni, vedere [Sicurezza e conformità in Microsoft teams](https://go.microsoft.com/fwlink/?linkid=871258) e in particolare la sezione [Architettura di protezione delle informazioni](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
 I messaggi di chat e canali di Teams non sono interessati dai criteri di conservazione configurati per le cassette postali di utenti o gruppi. Anche se i messaggi di chat e canali di Teams vengono archiviati in Exchange, questi dati vengono inclusi solo da un criterio di conservazione configurato per le posizioni **Messaggi del canale di Teams** e **Chat di Teams**.
 
@@ -71,27 +71,9 @@ Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Chat di interoperabilità di Skype for Business e Teams.
 
-La stessa procedura viene applicata alle chat di interoperabilità di Skype for Business e Teams. Quando una chat di Skype for Business viene spostata in Teams, diventa un messaggio in un thread di chat di Teams e viene inserita nella cassetta postale appropriata. I criteri di conservazione di Teams verranno applicati a questi messaggi dal thread di Teams. 
+Quando una chat di Skype for Business viene spostata in Teams, diventa un messaggio in un thread di chat di Teams e viene inserita nella cassetta postale appropriata. I criteri di conservazione di Teams verranno applicati a questi messaggi dal thread di Teams. 
 
 Tuttavia, se la cronologia delle conversazioni è abilitata per Skype for Business e dal lato client di Skype for Business questa cronologia viene salvata in una cassetta postale, i dati della chat non vengono gestiti dai criteri di conservazione di Teams. Per questo contenuto, usare un criterio di conservazione configurato per Skype for Business.
-
-## <a name="additional-retention-policies-needed-to-support-teams"></a>Altri criteri di conservazione necessari per supportare Teams
-
-Teams non offre solo chat e messaggi del canale. Se sono presenti team creati da un gruppo di Microsoft 365 (in precedenza gruppo di Office 365), è consigliabile configurare anche i criteri di conservazione che includono tale gruppo di Microsoft 365 usando il percorso **Gruppi di Office 365**. Questo criterio di conservazione si applica al contenuto della cassetta postale, dei siti e dei file del gruppo.
-
-Se il sito del team non è connesso a un gruppo di Microsoft 365, è necessario un criterio di conservazione che includa i percorsi dei **siti di SharePoint** o degli **account di OneDrive** per conservare ed eliminare file in Teams:
-
-- i file condivisi in chat vengono archiviati nell'account di OneDrive dell'utente che ha condiviso il file. 
-
-- I file caricati nei canali vengono archiviati nel sito di SharePoint del team.
-
-> [!TIP]
-> È possibile applicare un criterio di conservazione ai file di un solo team che non è connesso a un gruppo di Microsoft 365 selezionando il sito di SharePoint per il team e gli account di OneDrive per gli utenti del team.
-
-È possibile che i criteri di conservazione applicati ai gruppi di Microsoft 365, ai siti di SharePoint o agli account OneDrive eliminino un file a cui viene fatto riferimento nel messaggio di una chat o di un canale di Teams prima che tali messaggi vengano eliminati. In questo scenario, il file viene comunque visualizzato nel messaggio di Teams, ma se gli utenti selezionano il file visualizzeranno l'errore "File non trovato". Questo comportamento non è specifico dei criteri di conservazione e può verificarsi anche se un utente elimina manualmente un file da SharePoint o da OneDrive.
-
-> [!NOTE]
-> Un criterio di conservazione che include i messaggi dei canali di Teams o le chat di Teams può includere percorsi di Teams. Di conseguenza, per conservare o eliminare altri contenuti supportati da Teams è necessario creare un criterio di conservazione separato.
 
 ## <a name="meetings-and-external-users"></a>Riunioni e utenti esterni
 
@@ -113,11 +95,11 @@ Se l’utente ha archiviato dei file in Teams, vedere la sezione [corrispondente
 
 ## <a name="limitations"></a>Limitazioni
 
-Lavoriamo costantemente all'ottimizzazione della funzionalità di conservazione in Teams. Nel frattempo, ecco alcune limitazioni da tenere presenti:
+Lavoriamo costantemente all'ottimizzazione della funzionalità di conservazione in Teams. Nel frattempo, di seguito sono riportate alcune limitazioni da tenere presenti quando si usa la conservazione per le chat e i messaggi dei canali di Teams:
   
 - **Teams richiede criteri di conservazione specifici**. Quando si creano criteri di conservazione e si attivano i percorsi di Teams, tutti gli altri percorsi vengono disattivati. I criteri di conservazione che includono Teams possono includere solo Teams e non altri percorsi.
 
-- **Teams non è incluso in un criterio a livello di organizzazione**. Se si crea un criterio a livello di organizzazione, Teams non viene incluso perché richiede criteri di conservazione specifici.
+- **Teams non è incluso in un criterio a livello di organizzazione**. Se si crea un criterio a livello di organizzazione, i messaggi dei canali di Teams e le chat di Teams non vengono inclusi perché richiedono criteri di conservazione specifici.
 
 - **Teams non supporta la conservazione avanzata**. Quando si crea un criterio di conservazione, se si scelgono le [impostazioni avanzate per identificare il contenuto che soddisfa condizioni specifiche](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), i percorsi di Teams non sono disponibili. Attualmente, la conservazione in Teams si applica a tutto il contenuto di messaggi di chat e canali quando si selezionano tali posizioni.
 
@@ -135,14 +117,6 @@ Lavoriamo costantemente all'ottimizzazione della funzionalità di conservazione 
     
     - Quando si seleziona **Scegli utenti** per la posizione **Chat di Teams**, potrebbero essere visualizzati utenti non della cassetta postale e guest. I criteri di conservazione non sono pensati per questi utenti, quindi non selezionarli.
 
-## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>Come configurare un criterio di conservazione per Microsoft Teams
+## <a name="configuration-guidance"></a>Linee guida per la configurazione
 
-Seguire le istruzioni per [Creare e configurare i criteri di conservazione](create-retention-policies.md) e nella pagina **Scegli percorsi** della procedura guidata selezionare le opzioni seguenti:
-
-- **Voglio scegliere posizioni specifiche** > **Messaggi del canale di Teams** e **Chat di Teams**
-
-Un criterio di conservazione che si applica a Teams può usare la [protezione dell'archiviazione](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements), che potrebbe essere necessaria per motivi legali.
-
-## <a name="related-information"></a>Informazioni correlate
-
-[Criteri di conservazione in Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies)
+Se è tutto pronto per configurare la conservazione in Microsoft 365, vedere [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md).

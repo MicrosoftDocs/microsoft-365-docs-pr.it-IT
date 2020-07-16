@@ -17,11 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Il piano di archiviazione offre funzionalità di gestione avanzate per le etichette di conservazione.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 85160a859469a5c2dcb1aec8100eed6e25bd7597
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874906"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126879"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Usare il piano di archiviazione per gestire le etichette di conservazione
 
@@ -41,7 +42,7 @@ Il piano di archiviazione può essere usato per tutte le etichette di conservazi
 
 ![Pagina del piano di archiviazione](../media/compliance-file-plan.png)
 
-Per informazioni sulle etichette di conservazione e sul loro utilizzo, vedere [Informazioni sulle etichette di conservazione](labels.md).
+Per informazioni sulle etichette di conservazione e sul loro utilizzo, vedere [Informazioni sui criteri di conservazione e sulle etichette di conservazione](retention.md).
 
 ## <a name="accessing-file-plan"></a>Accesso al piano di archiviazione
 
@@ -181,4 +182,6 @@ Una volta completata l'importazione, è possibile aggiungere le etichette di con
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per ulteriori informazioni sulla creazione e la modifica di etichette di conservazione e sui relativi criteri, vedere [Creare, pubblicare e applicare automaticamente etichette di conservazione](create-retention-labels.md).
+Per ulteriori informazioni sulla creazione e la modifica di etichette di conservazione e sui relativi criteri, vedere le seguenti linee guida:
+- [Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)
+- [Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)

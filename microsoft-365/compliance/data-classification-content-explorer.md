@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora contenuto consente di visualizzare in modo nativo gli elementi con etichetta.
-ms.openlocfilehash: 731ae51a02e4a6fbd35b5be7c0bf083c814ddfd3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: e5041f82d22b62e8b343c62136251e2c69ca9e47
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327852"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127043"
 ---
 # <a name="get-started-with-content-explorer"></a>Introduzione a Esplora contenuto
 
@@ -92,7 +92,7 @@ Le etichetta di riservatezza devono essere abilitate per i file che si trovano i
 
 ### <a name="retention-labels"></a>Etichette di conservazione
 
-Un'[etichetta di conservazione](labels.md) consente di definire per quanto tempo viene conservato un elemento etichettato prima di essere eliminato. Vengono applicate manualmente o automaticamente tramite criteri. Possono essere utili per favorire la conformità dell'organizzazione ai requisiti di legge e normativi.
+Un'[etichetta di conservazione](retention.md) consente di definire per quanto tempo viene conservato un elemento etichettato prima di essere eliminato. Vengono applicate manualmente o automaticamente tramite criteri. Possono essere utili per favorire la conformità dell'organizzazione ai requisiti di legge e normativi.
 
 ### <a name="how-to-use-content-explorer"></a>Come usare Esplora contenuto
 
@@ -139,8 +139,7 @@ Ecco cosa è possibile cercare:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Etichette di riservatezza](sensitivity-labels.md)
-- [Etichette di conservazione](labels.md)
+- [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
+- [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
 - [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
-- [Panoramica dei criteri di conservazione](retention-policies.md)
 - [Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md)

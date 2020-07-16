@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come identificare, monitorare e proteggere automaticamente le informazioni riservate della tua organizzazione in tutta la suite Office 365.
-ms.openlocfilehash: 93d0eaf882569b6645c98699f83ad19a25af4864
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8d507a32a6f36555eabfa0216febdb167ad4241c
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817945"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127533"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -337,11 +337,11 @@ Per questi motivi, le indicazioni per la creazione di regole con diverse accurat
     
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta di conservazione come condizione nei criteri di prevenzione della perdita dei dati
 
-Quando si usa un'[etichetta di conservazione](labels.md) creata e pubblicata in precedenza come condizione nei criteri di prevenzione della perdita dei dati (DLP), è necessario tenere presente che:
+Quando si usa un'[etichetta di conservazione](retention.md#retention-labels) creata e pubblicata in precedenza come condizione nei criteri di prevenzione della perdita dei dati (DLP), è necessario tenere presente che:
 
-- È necessario aver precedentemente creato, pubblicato e applicato l'etichetta di conservazione prima di usarla come condizione nei criteri DLP.
-- Le etichette di conservazione possono richiedere fino a un giorno per la sincronizzazione e fino a sette giorni per l'applicazione automatica dopo essere state create e pubblicate. Per informazioni dettagliate, vedere [Tempo necessario per l'applicazione delle etichette di conservazione](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
-- L'uso di un'etichetta di conservazione in un criterio ***è supportato solo per gli elementi di SharePoint Online e OneDrive for Business***.
+- È necessario aver precedentemente creato e pubblicato l'etichetta di conservazione prima di usarla come condizione nei criteri DLP.
+- La sincronizzazione delle etichette di conservazione pubblicate può richiedere da uno a sette giorni. Per altre informazioni, vedere [Quando le etichette di conservazione diventano disponibili per l'applicazione](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) per le etichette di conservazione pubblicate in un criterio di conservazione e [Tempo necessario per l'applicazione delle etichette di conservazione](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) per le etichette di conservazione pubblicate automaticamente.
+- L'uso di un'etichetta di conservazione in un criterio **è supportato solo per gli elementi di SharePoint e OneDrive***.
 
   ![Etichette come condizione](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
@@ -360,7 +360,7 @@ Attualmente è possibile usare solo un'etichetta di conservazione come condizion
 
 Al contenuto che include informazioni riservate possono essere applicate diverse funzionalità:
   
-- Sia un'[etichetta di conservazione](labels.md#applying-a-retention-label-automatically-based-on-conditions) che un [criterio di conservazione](retention-policies.md) possono applicare azioni di **conservazione** a questo contenuto. 
+- Sia un'[etichetta di conservazione che un criterio di conservazione](retention.md) possono applicare azioni di **conservazione** a questo contenuto. 
     
 - I criteri di prevenzione della perdita dei dati possono applicare azioni di **protezione** al contenuto. Inoltre, prima di applicare queste azioni, i criteri di prevenzione della perdita dei dati possono richiedere che siano soddisfatte altre condizioni oltre alla presenza di una specifica etichetta nel contenuto. 
     
