@@ -1,7 +1,7 @@
 ---
-title: Punteggio principale nei test del settore (AV-TEST, comparative AV, SE Labs, MITRE ATT&CK)
+title: Punteggio principale nei test del settore-Microsoft Threat Protection
 ms.reviewer: ''
-description: Microsoft Defender ATP raggiunge costantemente i punteggi più alti nei test indipendenti. Visualizzare gli ultimi punteggi e analisi.
+description: Visualizzare gli ultimi punteggi e l'analisi di Microsoft Threat Protection, che raggiunge costantemente i punteggi più alti in test indipendenti (AV-TEST, comparative AV, SE Labs, MITRE ATT&CK). Visualizzare gli ultimi punteggi e analisi.
 keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, recensioni AV, test antivirus, test AV, punteggi AV più recenti, punteggi di rilevamento, test del prodotto per la sicurezza, test del settore della sicurezza, test antivirus del settore, miglior antivirus, AV-test, AV-Comparatives, Labs SE, MITRE ATT&CK, Endpoint Protection Platform, EPP, endpoint Detection and Response, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, sicurezza, malware, AV, antivirus, score, punteggio, Next Generation Protection, ranking, Success
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 6a3263154794ef8638c5c3c96709b61e67b9ec5a
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909277"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158870"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Punteggio principale nei test del settore
 
@@ -39,7 +39,7 @@ Il metodo core to MITRE ' s testing sta emulando gli attacchi del mondo reale pe
 
     Microsoft Threat Protection ha fornito una copertura di quasi il 100% nelle fasi della catena di attacco. Ha fornito una visibilità iniziale all'interno delle attività di attacco, riducendo drasticamente il lavoro manuale per il centro operazioni di sicurezza e le soluzioni fornitore che si basano su specifiche modifiche alla configurazione. È anche il minor numero di spazi di visibilità, diminuendo la capacità degli aggressori di funzionare non rilevati.
 
-## <a name="next-generation-protection"></a>Protezione di prossima generazione
+## <a name="next-generation-protection"></a>Protezione di nuova generazione
 
 [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) esegue costantemente test indipendenti, mostrando come è una scelta principale nel mercato antivirus. Tenere presente che questi test forniscono solo i risultati per gli antivirus e non verificano altre protezioni di sicurezza.
 
