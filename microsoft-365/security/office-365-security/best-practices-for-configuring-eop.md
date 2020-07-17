@@ -71,7 +71,7 @@ Per migliorare il filtraggio della posta indesiderata nel servizio per tutti, è
 
 Creare regole del flusso di posta (note anche come regole di trasporto) oppure filtri personalizzati per soddisfare le proprie esigenze aziendali.
 
-When you deploy a new rule to production, select one of the test modes first to see the effect of the rule. Once you are satisfied that the rule is working in the manner intended, change the rule mode to **Enforce**.
+Quando si distribuisce una nuova regola alla produzione, selezionare prima una delle modalità di prova per verificare l'effetto della regola. Quando si è soddisfatti del funzionamento della regola, cambiare la modalità della regola in **Applica**.
 
 Quando si distribuiscono nuove regole, prendere in considerazione l'aggiunta dell'azione aggiuntiva **Genera rapporto operazioni non consentite** per monitorare la regola in azione.
 

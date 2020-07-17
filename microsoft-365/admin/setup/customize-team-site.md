@@ -110,7 +110,7 @@ Informazioni su come gestire le richieste di accesso con la [configurazione e la
   
 ## <a name="here-are-more-topics-you-might-be-interested-in"></a>Altri argomenti che potrebbero interessare
 
-- **Set up Office apps on your tablets and phones**. You need to do this so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
+- **Configurare le app di Office su tablet e telefoni**. Questa operazione è necessaria per poter modificare i file archiviati nel sito del team dal tablet o dal telefono. Se non si installano le app di Office per tablet o telefono, sarà possibile visualizzare i file sul sito del team ma non modificarli. 
     
   - [Installare e configurare Office in un dispositivo Android con Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

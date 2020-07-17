@@ -93,7 +93,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 3. Selezionare **Imposta come principale** per l'indirizzo di posta elettronica da impostare come indirizzo principale per la persona specificata. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANTE**: l'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
     
     Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
   
@@ -103,7 +103,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
  
   - Che il cambiamento potrebbe richiedere del tempo.
   
-  - Their new username. They'll need it to sign in to Microsoft 365.
+  - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
     
   - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni di Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le proprie informazioni di contatto.
 
@@ -121,7 +121,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 3. Selezionare **Imposta come principale** per l'indirizzo di posta elettronica da impostare come indirizzo principale per la persona specificata. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANTE**: l'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
     
     Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
   
@@ -131,7 +131,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
  
   - L'applicazione di questa modifica può richiedere un po' di tempo.
   
-  - What their new username is. They'll need it to sign in to Microsoft 365.
+  - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
     
   - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le vecchie informazioni di contatto.
 
@@ -149,7 +149,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 3. Selezionare **Imposta come principale** per l'indirizzo di posta elettronica da impostare come indirizzo principale per la persona specificata. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANTE**: l'opzione Imposta come principale non è visualizzata se Microsoft 365 è stato acquistato presso GoDaddy o un altro partner che fornisce una console di gestione. In questo caso, per impostare l'alias principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
     
     Inoltre, questa opzione viene visualizzata solo se si è amministratori globali. Se l'opzione non è visualizzata, non si hanno le autorizzazioni per modificare il nome e l'indirizzo e-mail principale di un utente.
   
@@ -159,7 +159,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
  
   - L'applicazione di questa modifica può richiedere un po' di tempo.
   
-  - What their new username is. They'll need it to sign in to Microsoft 365.
+  - Il nuovo nome utente, che sarà necessario per accedere a Microsoft 365.
     
   - Se l'utente usa Skype for Business online, informarlo che dovrà ripianificare le eventuali riunioni Skype for Business online organizzate e avvisare i contatti esterni di aggiornare le vecchie informazioni di contatto.
 
@@ -181,7 +181,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
     Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
 
-It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username.
+Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effettiva per tutti i servizi. Dopo l'applicazione della modifica, l'utente dovrà accedere a Outlook, Skype for Business e SharePoint con il nome utente aggiornato.
 
 ::: moniker-end
 
@@ -195,7 +195,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
     Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
 
-It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
+Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effettiva per tutti i servizi. Dopo l'applicazione della modifica, l'utente dovrà accedere a Outlook, Skype for Business e SharePoint con il nome utente aggiornato. Assicurarsi quindi di comunicare la modifica all'utente.
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
     Se viene visualizzato il messaggio di errore "**Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare**, consultare [Risolvere messaggi di errore](#resolve-error-messages).
 
-It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
+Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effettiva per tutti i servizi. Dopo l'applicazione della modifica, l'utente dovrà accedere a Outlook, Skype for Business e SharePoint con il nome utente aggiornato. Assicurarsi quindi di comunicare la modifica all'utente.
 
 ::: moniker-end
 
@@ -217,7 +217,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Non è possibile trovare un parametro corrispondente al nome 'EmailAddresses'"
 
-If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) and ask them to do a full sync for you.
+Se viene visualizzato il messaggio di errore **Non è possibile trovare un parametro corrispondente al nome "EmailAddresses"**, significa che l'operazione sta impiegando più tempo del previsto per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il [supporto](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products), che provvederà a eseguire una sincronizzazione completa.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare"
 
@@ -226,15 +226,15 @@ Se viene visualizzato il messaggio di errore "**Non è stato possibile modificar
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Cosa fare con gli indirizzi di posta elettronica precedenti
 
-A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
+L'indirizzo di posta elettronica principale precedente dell'utente viene mantenuto come indirizzo di posta elettronica aggiuntivo. **È consigliabile non rimuovere l'indirizzo di posta elettronica precedente.**
   
-Some people might continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft automatically routes it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
+Alcune persone potrebbero continuare a inviare e-mail al vecchio indirizzo e, se viene eliminato, potrebbero verificarsi errori di mancato recapito. Microsoft instrada automaticamente i messaggi al nuovo indirizzo. Inoltre, non riutilizzare i vecchi indirizzi di posta elettronica SMTP per applicarli a nuovi account. Anche questo può causare errori di mancato recapito o la consegna a una cassetta postale sbagliata.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>Che succede se la rubrica offline dell'utente non si sincronizza con l'elenco indirizzi globale?
 
-If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
+Se l'utente usa Exchange Online oppure se il suo account è collegato all'ambiente di Exchange locale dell'organizzazione, potrebbe essere visualizzato questo messaggio di errore se si prova a cambiare un nome utente e un indirizzo di posta elettronica: "Questo utente è sincronizzato con Active Directory locale. Alcuni dettagli possono essere modificati solo tramite Active Directory locale".
   
-This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Microsoft 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
+La causa è da attribuire al MOERA (Microsoft Online Email Routing Address). Il MOERA viene creato dall'attributo _userPrincipalName_ dell'utente in Active Directory e viene automaticamente assegnato all'account del cloud durante la sincronizzazione iniziale. Una volta creato, non può essere modificato o rimosso in Microsoft 365. È possibile in seguito cambiare il nome utente in Active Directory, ma la modifica non verrà applicata al MOERA e si potrebbero verificare errori durante la visualizzazione del nome appena cambiato nell'elenco indirizzi globale. 
   
 Per risolvere il problema, accedere al [Modulo di Azure Active Directory per PowerShell]( https://go.microsoft.com/fwlink/?LinkId=823193) con le credenziali di amministratore di Microsoft 365. Utilizzare la sintassi seguente: 
   

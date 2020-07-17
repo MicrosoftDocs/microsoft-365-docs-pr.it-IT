@@ -115,9 +115,9 @@ Non è necessario annullare la versione di valutazione. Se non si acquista la so
 
 - **Indirizzo e informazioni di contatto dell'abbonamento:**
 
-  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
+  - **Paese** in cui verranno usati i servizi. **Non** sarà possibile modificare queste informazioni in un secondo momento, nemmeno durante il processo di iscrizione; sarà necessario riavviare la procedura guidata di iscrizione.
 
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - **Indirizzo di posta elettronica** e **numero di telefono** per poter essere contattati in merito all'abbonamento, se necessario. Se ad esempio si dimentica la password, Microsoft può usare queste informazioni per inviarne una temporanea. Inoltre, le informazioni sulla fatturazione vengono inviate all'indirizzo specificato.
 
     > [!NOTE]
     > L'indirizzo di posta elettronica immesso qui è diverso dall'indirizzo di posta elettronica Microsoft 365 (il nome di accesso, in basso). Poiché a questo indirizzo vengono inviate anche le informazioni sulla fatturazione, è consigliabile usare un indirizzo appropriato per la ricezione di posta elettronica aziendale.

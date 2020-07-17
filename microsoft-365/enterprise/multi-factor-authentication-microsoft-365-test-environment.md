@@ -99,7 +99,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
 7. Nella pagina **passaggio 3: mantenere le applicazioni esistenti** , fare clic su **fine**.
     
-8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
+8. Se è la prima volta che si accede con l'account User 2, viene richiesto di modificare la password. Digitare la password originale e una nuova password due volte, quindi fare clic su **Aggiornare la password ed eseguire l'accesso**. Annotare nome e password in una posizione sicura.
     
     Verrà visualizzato il portale di Office per l'utente 2 nella scheda **Microsoft Office Home** del browser.
 

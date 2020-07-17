@@ -36,7 +36,7 @@ Spesso capita di dover pianificare riunioni con utenti esterni alla propria orga
 La condivisione del calendario è un'impostazione globale, ovvero l'amministratore può abilitarla per tutti gli utenti del tenant. Una volta abilitata la condivisione, gli utenti possono utilizzare Outlook Web App per condividere i propri calendari con chiunque sia all'interno che all'esterno dell'organizzazione. Gli utenti all'interno dell'organizzazione possono visualizzare il calendario condiviso affiancato con il proprio. Agli utenti esterni all'organizzazione verrà inviato un URL che può essere utilizzato per visualizzare il calendario. Gli utenti decidono quando condividere, quanto condividere e quando mantenere privati i propri calendari.
   
 > [!NOTE]
-> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as "federation" and must meet minimum software requirements. See [Sharing](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) for more information. 
+> Se si vogliono condividere i calendari con un'organizzazione che usa Exchange Server 2013 (una soluzione locale), l'amministratore di Exchange dovrà configurare una relazione di autenticazione con il cloud, ovvero una "federazione", che prevede una serie di requisiti minimi da soddisfare per il software. Per altre informazioni, vedere [Condivisione](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx). 
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Abilitare la condivisione del calendario con l'interfaccia di amministrazione di Microsoft 365
 
@@ -53,5 +53,5 @@ La condivisione del calendario è un'impostazione globale, ovvero l'amministrato
     
 ## <a name="invite-people-to-access-calendars"></a>Invitare utenti ad accedere ai calendari
 
-Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions. 
+Dopo l'abilitazione della condivisione per il tenant, i proprietari dei calendari possono estendere gli inviti a utenti specifici. Per istruzioni, vedere [Condivisione del calendario in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5). 
   

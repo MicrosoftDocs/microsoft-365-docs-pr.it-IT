@@ -19,6 +19,7 @@ search.appverid:
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
 ms.openlocfilehash: 1b22619b200cd0cdcccfdc9be0d52b0eaa25f303
 ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/30/2020
 ms.locfileid: "44936373"

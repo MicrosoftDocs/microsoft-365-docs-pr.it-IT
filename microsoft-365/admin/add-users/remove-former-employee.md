@@ -104,18 +104,18 @@ Una domanda che spesso si ottiene è: "cosa devo fare per proteggere i dati quan
 > [!NOTE]
 > Se si è un amministratore globale, è possibile eliminare il dipendente, inoltrare il proprio indirizzo di posta elettronica, scegliere cosa fare con il proprio contenuto di OneDrive utilizzando la nuova esperienza guidata. Per ulteriori informazioni, vedere [Global Admin: Delete a user](remove-former-employee.md). Tuttavia, è consigliabile completare tutti i passaggi aggiuntivi riportati di seguito per verificare che il dipendente non abbia accesso ai dati della società. 
   
-Here's a quick overview. Each step is explained in detail in this article.
+Ecco una rapida panoramica. Ogni passaggio è spiegato in dettaglio in questo articolo.
   
 |||
 |:-----|:-----|
 |**Passaggio** <br/> |**Perché eseguire questa operazione** <br/> |
 |1. [Salvare il contenuto della cassetta postale di un ex dipendente](#save-the-contents-of-a-former-employees-mailbox) <br/> |È un'operazione utile per la persona che prenderà il posto del dipendente o in caso di controversie.  <br/> |
-|2. [Inoltrare la posta elettronica di un ex dipendente a un altro dipendente o convertirla in una cassetta postale condivisa](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.  <br/> |
+|2. [Inoltrare la posta elettronica di un ex dipendente a un altro dipendente o convertirla in una cassetta postale condivisa](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Consente di mantenere attivo l'indirizzo di posta elettronica dell'ex dipendente. Se i clienti o i partner continuano a inviare la posta elettronica all'indirizzo dell'ex dipendente, questa operazione consente di inoltrare i messaggi alla persona che ne prende il posto.  <br/> |
 |3. [Cancellare i dati e bloccare il dispositivo mobile di un ex dipendente](#wipe-and-block-a-former-employees-mobile-device) <br/> |Rimuove i dati aziendali dal telefono o dal tablet.  <br/> |
 |4. [bloccare l'accesso di un ex dipendente ai dati di Microsoft 365](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Impedisce all'utente di accedere alla vecchia cassetta postale e ai dati di Microsoft 365.  <br/><br/> **Suggerimento**: quando si blocca l'accesso di un utente, si sta ancora pagando la propria licenza. Per interromperlo, è necessario eliminare la licenza dall'abbonamento (passaggio 5).           |
-|5. [Spostare il contenuto di OneDrive del dipendente](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Se si rimuove solo la licenza di un utente, senza eliminare l'account, il contenuto del suo OneDrive rimarrà accessibile anche dopo i 30 giorni.  <br/><br/> Before you delete the account, you should move the content of their OneDrive to another location that's easy for you to access. After you delete an employee's account, the content in their OneDrive is retained for **30** days. During that 30 days, however, you can restore the user's account, and gain access to their OneDrive content. If you restore the user's account, the OneDrive content will remain accessible to you even after 30 days.  <br/> |
-|5a. What if the person used their personal computer to access OneDrive and SharePoint?  <br/> |Se ha usato un computer personale anziché un computer fornito dalla società per scaricare file da OneDrive e SharePoint, non esiste alcun modo per cancellare i file che vi ha archiviato.  <br/><br/> Continuerà ad accedere a tutti i file che sono stati sincronizzati con il suo computer.  <br/> |
-|6. [rimuovere ed eliminare la licenza Microsoft 365 da un ex dipendente](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person.  <br/><br/> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.  <br/> |
+|5. [Spostare il contenuto di OneDrive del dipendente](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Se si rimuove solo la licenza di un utente, senza eliminare l'account, il contenuto del suo OneDrive rimarrà accessibile anche dopo i 30 giorni.  <br/><br/> Prima di eliminare l'account, occorre spostare il contenuto del suo OneDrive in un'altra posizione facilmente accessibile. Dopo aver eliminato l'account di un dipendente, il contenuto del suo OneDrive viene conservato per **30** giorni. Durante questo periodo di tempo, tuttavia, è possibile ripristinare l'account dell'utente e ottenere l'accesso al contenuto del suo OneDrive. Se l'account viene ripristinato, il contenuto di OneDrive resterà accessibile anche dopo i 30 giorni.  <br/> |
+|5a. Cosa accade se la persona ha usato il suo computer personale per accedere a OneDrive e SharePoint?  <br/> |Se ha usato un computer personale anziché un computer fornito dalla società per scaricare file da OneDrive e SharePoint, non esiste alcun modo per cancellare i file che vi ha archiviato.  <br/><br/> Continuerà ad accedere a tutti i file che sono stati sincronizzati con il suo computer.  <br/> |
+|6. [rimuovere ed eliminare la licenza Microsoft 365 da un ex dipendente](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |Quando si rimuove una licenza, è possibile assegnarla a un'altra persona. In alternativa, è possibile eliminare la licenza in modo da interromperne il pagamento finché non si assume un'altra persona.  <br/><br/> Quando si rimuove o si elimina una licenza, la posta elettronica, i contatti e il calendario dell'utente vengono conservati per **30 giorni**, quindi eliminati definitivamente. Se si rimuove o si elimina la licenza di un utente, senza eliminare l'account, il contenuto del suo OneDrive rimarrà accessibile anche dopo i 30 giorni.  <br/> |
 |7. [Eliminare l'account utente di un ex dipendente.](#delete-a-former-employees-user-account)<br/> |Questo rimuove l'account dall'interfaccia di amministrazione. Consente di tenere tutto in ordine.  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>Salvare il contenuto della cassetta postale di un ex dipendente
@@ -123,11 +123,11 @@ Here's a quick overview. Each step is explained in detail in this article.
 
 Il contenuto della cassetta postale dell'ex dipendente può essere salvato in due modi:
   
-1. Add the former employee's email address to your version of Outlook 2013 or 2016, and then export the data to a .pst file. You can import the data to another email account as needed. To learn how to do this, see [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
+1. Aggiungere l'indirizzo di posta elettronica dell'ex dipendente alla versione di Outlook 2013 o 2016 e quindi esportare i dati in un file PST. I dati possono essere importati in un altro account di posta elettronica, se necessario. Per informazioni sulla procedura, vedere [Accedere ai dati di un ex utente ed eseguirne il backup](get-access-to-and-back-up-a-former-user-s-data.md).
     
     O
     
-2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
+2. Inserire un blocco per controversia legale o un blocco sul posto nella cassetta postale prima di eliminare l'account utente. È una procedura molto più complessa rispetto alla prima opzione, ma fondamentale se: il piano aziendale include l'archiviazione e il blocco a fini giudiziari, è possibile che si apra una controversia e si ha un reparto IT tecnicamente solido.
     
     Dopo aver convertito la cassetta postale in "cassetta postale inattiva", gli amministratori, i responsabili della conformità o i responsabili della gestione dei record possono usare gli strumenti eDiscovery sul posto in Exchange Online per accedere al contenuto ed eseguire ricerche.
     
@@ -140,9 +140,9 @@ Il contenuto della cassetta postale dell'ex dipendente può essere salvato in du
 
 In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene assegnato a un altro dipendente o si [converte la cassetta postale dell'utente in una cassetta postale condivisa](../email/convert-user-mailbox-to-shared-mailbox.md) creata. 
   
-- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it. 
+- La creazione di una cassetta postale condivisa è la soluzione meno dispendiosa perché non è necessario acquistare una licenza **a condizione che la cassetta postale sia minore di 50 GB**. Se si superano i 50 GB è necessario assegnare una licenza. 
     
-- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
+- Se si converte la cassetta postale in una cassetta postale condivisa, saranno disponibili anche tutti i vecchi messaggi di posta elettronica. Questa operazione può richiedere molto spazio.
     
 - Se si configura l'inoltro della posta elettronica, ora solo i  *nuovi*  messaggi di posta elettronica inviati all'ex dipendente vengono inviati al dipendente corrente. 
     
@@ -159,7 +159,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 3. In **inoltro della posta elettronica**, selezionare **Gestisci inoltro della posta elettronica**.
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente o della cassetta postale condivisa a cui verranno inviati i messaggi. 
   
 5. Selezionare **Salva**. 
     
@@ -175,7 +175,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 3. Accanto a **inoltro della posta elettronica**, selezionare **modifica**.
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente o della cassetta postale condivisa a cui verranno inviati i messaggi. 
   
 5. Selezionare **Salva**. 
     
@@ -191,7 +191,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 3. Accanto a **inoltro della posta elettronica**, selezionare **modifica**.
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente o della cassetta postale condivisa a cui verranno inviati i messaggi. 
   
 5. Selezionare **Salva**. 
     
@@ -217,7 +217,7 @@ Se l'ex dipendente aveva un telefono aziendale, è possibile usare Office 365 pe
     
 6. Selezionare **Salva**. 
     
-    **Tip**: Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
+    **Suggerimento**: assicurarsi di rimuovere o disabilitare l'utente dal servizio Blackberry Enterprise locale. Occorre anche disabilitare gli eventuali dispositivi Blackberry per l'utente. Per informazioni sui passaggi specifici da eseguire per disabilitare l'utente, vedere la guida all'amministrazione di Blackberry Business Cloud Services. 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Bloccare l'accesso di un ex dipendente ai dati di Microsoft 365
 <a name="bkmk_block"> </a>
@@ -340,16 +340,16 @@ Per ulteriori informazioni sulla gestione delle licenze utente per Microsoft 365
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Quali effetti hanno gli account dei dipendenti eliminati su Skype for Business?
 <a name="bkmk_remove"> </a>
 
-When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
+Quando si rimuove una licenza utente da Office 365, il numero chiamata PSTN associato all'utente viene rilasciato e può essere assegnato a un altro utente.
   
-If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
+Se l'utente appartiene a un gruppo di coda, non sarà più contattato dagli agenti della coda di chiamata. Per questo motivo, si consiglia la rimozione dell'utente anche dai gruppi associati alla coda di chiamata. 
   
 ## <a name="delete-a-former-employees-user-account"></a>Eliminare l'account utente di un ex dipendente.
 <a name="bkmk_delete"> </a>
 
 Dopo il salvataggio e l'accesso ai dati utente dell'ex dipendente, è possibile eliminare l'account corrispondente.
   
-Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
+Non eliminare l'account se è stato configurato l'inoltro della posta elettronica o se l'account è stato convertito in una cassetta postale condivisa. In entrambi i casi è necessario l'account per ancorare l'inoltro o la cassetta postale condivisa.
 
 ::: moniker range="o365-worldwide"
 
@@ -381,7 +381,7 @@ Don't delete the account if you've set up email forwarding or converted it to a 
 
 ::: moniker-end
 
-When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
+Quando si elimina un utente, il suo account diventa inattivo per circa 30 giorni. Si ha quindi a disposizione questo periodo di tempo per ripristinare l'account prima che venga eliminato definitivamente.
   
 ### <a name="does-your-organization-use-active-directory"></a>L'organizzazione usa Active Directory?
 
@@ -400,8 +400,8 @@ Informazioni su come rimuovere un dipendente dalla posta elettronica (Exchange).
 |:-----|:-----|
 |**Cosa è possibile fare** <br/> |**Come farlo** <br/> |
 |Terminare una sessione (ad esempio Outlook sul Web, Outlook, Exchange ActiveSync e così via) e forzare l'apertura di una nuova sessione  <br/> |Reimpostare la password  <br/> |
-|Terminare una sessione e bloccare l'accesso a sessioni future (per tutti i protocolli)  <br/> |Disable the account. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|Terminare la sessione per un particolare protocollo, ad esempio ActiveSync  <br/> |Disable the protocol. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|Terminare una sessione e bloccare l'accesso a sessioni future (per tutti i protocolli)  <br/> |Disabilitare l'account. Ad esempio, nell'interfaccia di amministrazione di Exchange o con PowerShell:  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
+|Terminare la sessione per un particolare protocollo, ad esempio ActiveSync  <br/> |Disabilitare il protocollo. Ad esempio, nell'interfaccia di amministrazione di Exchange o con PowerShell:  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
    
 Le operazioni precedenti possono essere eseguite in 3 posizioni:
   
@@ -414,9 +414,9 @@ Le operazioni precedenti possono essere eseguite in 3 posizioni:
    
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>Come ottenere la risposta più rapida per la chiusura di un account
 
- **Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through DirSync. 
+ **Metodo più rapido**: usare l'interfaccia di amministrazione di Exchange (usare PowerShell) oppure l'interfaccia di amministrazione di Azure Active Directory. In un ambiente locale, la sincronizzazione delle modifiche con DirSync può richiedere diverse ore. 
   
- **Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync. 
+ **Metodo più rapido per utenti con presenza locale e nel data center di Exchange**: terminare la sessione con l'interfaccia di amministrazione di Exchange o di Azure Active Directory E apportare le modifiche anche nell'ambiente locale. In caso contrario, le modifiche nell'interfaccia di amministrazione di Exchange o di Azure Active Directory verranno sovrascritte da DirSync. 
   
 ## <a name="related-articles"></a>Articoli correlati
 

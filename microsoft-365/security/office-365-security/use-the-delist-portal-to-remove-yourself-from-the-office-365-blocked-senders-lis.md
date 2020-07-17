@@ -43,7 +43,7 @@ _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di
 
 1. In un browser Web, andare a [https://sender.office.com](https://sender.office.com).
 
-2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
+2. Seguire le istruzioni visualizzate sulla pagina. Accertarsi di utilizzare l'indirizzo di posta elettronica al quale è stato recapitato il messaggio di errore e l'indirizzo IP specificato nel messaggio di errore. È possibile immettere solo un indirizzo di posta elettronica e un indirizzo IP per accesso.
 
 3. Fare clic su **Invia**.
 

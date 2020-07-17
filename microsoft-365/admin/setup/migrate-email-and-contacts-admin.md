@@ -82,7 +82,7 @@ Aggiungere un account, ad esempio l'account privato di Gmail, a Outlook.
   
 - Aprire Outlook, quindi passare a **File** \> **Aggiungi account**.
     
-Need more detailed steps? See [Add an account](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
+Serve una procedura più dettagliata? Vedere [Aggiungere un account](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
 [![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   

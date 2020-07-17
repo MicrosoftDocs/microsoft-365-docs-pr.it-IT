@@ -17,6 +17,7 @@ ms.custom: ''
 description: Informazioni su come prepararsi per la manutenzione di Windows e Office nel proprio ambiente.
 ms.openlocfilehash: e9de339c6bc66e5cd3c02af5f6a53c32b7573b1f
 ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/10/2020
 ms.locfileid: "44679003"
@@ -29,7 +30,7 @@ ms.locfileid: "44679003"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>Passaggio 7: manutenzione di Windows e Office</strong></p>
-<p>Both Windows 10 and Microsoft 365 Apps for enterprise continually add new capabilities to keep bringing user experiences and security forward with the latest innovations. Learn how to stay current with semi-annual and monthly updates, how the new servicing model works and the tools and options you have.</p></td>
+<p>Windows 10 e Microsoft 365 Apps for enterprise aggiungono costantemente nuove funzionalità per continuare a offrire esperienze utente e protezione con le ultime novità. Sono disponibili informazioni su come restare al passo con gli aggiornamenti mensili e semestrali, su come funziona il nuovo modello di manutenzione e sugli strumenti e opzioni disponibili.</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -58,7 +59,7 @@ Per rispondere a queste domande e spiegare il motivo dell'offerta più frequente
 
 ### <a name="feature-update-benefits"></a>Vantaggi dell'aggiornamento delle funzionalità
 
-First, we’ve moved away from the model of the past that would introduce huge waves of change around every three years to now incremental smaller changes with feature updates twice per year. Why? With technology trends moving so fast in addition to rapidly evolving security threats, this keeps experiences and protections current. Some of the security related updates for example can’t just be delivered by monthly security updates or antivirus signature files; they may be low-level changes platform, like virtualization-based security.
+In primo luogo, Microsoft si è allontanata dal modello del passato che introduceva enormi ondate di cambiamento ogni tre anni, fino alle odierne modifiche incrementali più piccole con aggiornamenti delle funzionalità due volte all'anno. Perché? La rapida evoluzione della tecnologia ma anche delle minacce alla sicurezza, conferma la protezione dell'esperienza utente come argomento di grande attualità. Alcuni degli aggiornamenti relativi alla sicurezza, ad esempio, non possono essere forniti solo dagli aggiornamenti di sicurezza mensili o dai file di firma antivirus; possono essere piattaforme a basso livello, come la sicurezza basata sulla virtualizzazione.
 
 [Guida rapida di Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
@@ -66,9 +67,9 @@ First, we’ve moved away from the model of the past that would introduce huge w
 
 ### <a name="cumulative-update-model-benefits"></a>Vantaggi del modello di aggiornamento cumulativo
 
-Second delivering quality and security updates as a cumulative update package corrects many of the issues of the past. It used to be that you might pick and choose sometimes from a dozen updates or more each month for both Windows and Office. As you can imagine, this creates a nearly impossible set of test matrices for support. Also, if you install a version of Windows or Office that is a year or more old, it might take hours or sometimes days to apply all updates delivered since that version was released.
+Gli aggiornamenti qualitativi e di sicurezza offerti come pacchetto di aggiornamento cumulativo risolvono molti dei problemi del passato. Un tempo era possibile scegliere anche tra una dozzina di aggiornamenti o più ogni mese sia per Windows che per Office. Ovviamente, questa situazione determinava set di matrici quasi impossibili da supportare. Inoltre, se si installa una versione di Windows o Office rilasciata già da un anno o più, potrebbero essere necessarie ore o talvolta giorni per applicare tutti gli aggiornamenti offerti dal rilascio di questa versione.
 
-With the cumulative model, you’re always one update away from being current and in doing so the number of monthly updates that you need to deploy is reduced. Each update builds upon updates from previous months and contains all of the fixes that you need to get current. Cumulative updates are especially helpful when PCs has been turned off for several months because they are in storage waiting to be reassigned to a different user.
+Con il modello cumulativo, l'utente rimane aggiornato all'ultimo aggiornamento, riducendo così il numero di aggiornamenti mensili che è necessario distribuire. Ogni aggiornamento si basa sugli aggiornamenti dei mesi precedenti e contiene tutte le correzioni necessarie per rimanere aggiornati. Gli aggiornamenti cumulativi sono particolarmente utili quando i PC non vengono utilizzati per diversi mesi, poiché restano in memoria in attesa di essere riassegnati a un altro utente.
 
 ### <a name="expanded-validation-of-updates"></a>Convalida estesa degli aggiornamenti
 
@@ -78,7 +79,7 @@ Inoltre, poiché le build di Insider di Microsoft 365 Apps for enterprise riflet
 
 ### <a name="supporting-management-tools"></a>Strumenti di gestione di supporto
 
-We've also thought through how to make the deployment of updates seamless to you. Configuration Manager (Current Branch) is updated frequently to support the roll-out of these updates to Windows and Office and any new capabilities.
+Al fine di rendere la distribuzione degli aggiornamenti ideale per l'utente, Configuration Manager (Current Branch) viene aggiornato frequentemente per supportare l'implementazione degli aggiornamenti su Windows e Office e qualsiasi nuova funzionalità.
 
 [Distribuire gli aggiornamenti di Windows 10 con Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
@@ -106,15 +107,15 @@ Per informazioni dettagliate sui canali di manutenzione di Windows e Office, ved
 
 ## <a name="phased-deployment-of-updates"></a>Distribuzione a fasi degli aggiornamenti
 
-Now let’s shift gears to how you will roll out these updates. For any release, we recommend at least three deployment phases for IT – validation, piloting and broad production deployment. Once you’re up and running on Windows 10 and Microsoft 365 Apps for enterprise, you'll use monthly servicing to stay current with critical security and quality updates, then you’ll move to semi-annual servicing for new features.
+A questo punto è possibile procedere con l'implementazione degli aggiornamenti. Per qualsiasi versione, si consigliano almeno tre fasi di distribuzione per IT: convalida, distribuzione pilota e distribuzione generale della produzione. Una volta installati Windows 10 e Microsoft 365 Apps for enterprise, l'utente potrà sfruttare la manutenzione mensile per rimanere al passo con gli aggiornamenti critici di sicurezza e qualitativi, per poi passare alla manutenzione semestrale per le nuove funzionalità.
 
 ### <a name="monthly-updating"></a>Aggiornamento mensile
 
-The service model is designed so you can choose to limit the roll-out of new features to twice per year, and if needed you can even skip a semi-annual update and continue receiving quality and security updates. As mentioned, the cumulative nature of monthly updates means each will increase in size per month.
+Il modello di servizio è progettato in modo da poter scegliere di limitare l'implementazione delle nuove funzionalità a due volte l'anno e, se necessario, è possibile anche saltare un aggiornamento semestrale e continuare a ricevere aggiornamenti qualitativi e sicurezza. Come accennato, la natura cumulativa degli aggiornamenti mensili comporta che ciascuno aumenterà di dimensioni ogni mese.
 
 #### <a name="express-updates"></a>Express Updates
 
-Using a technology called "Express Updates" in Windows and Binary Delta Compression in Office, we can reduce the download size significantly. In both approaches, the update engines compare what’s on the PC and finds only the differentials needed to update what’s there.
+Usando una tecnologia chiamata "Express Updates" in Windows e Binary Delta Compression in Office, p possibile ridurre significativamente le dimensioni del download. In entrambi gli approcci, i motori di aggiornamento confrontano ciò che è sul PC e trovano solo i differenziali necessari per aggiornare ciò che è presente.
 
 [Aggiornamenti qualitativi di Windows 10 illustrati e fine degli aggiornamenti delta](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
@@ -126,7 +127,7 @@ Windows Update per le aziende e Windows Server Update Services hanno supportato 
 
 Binary Delta Compression (compressione delle differenze binarie) in Office viene utilizzato solo se si esegue l'aggiornamento dalla versione più recente di Microsoft 365 Apps for enterprise. Di conseguenza, per utilizzare questo approccio è necessario aggiornare la build precedente e non è possibile ignorare gli aggiornamenti.
 
-Windows and Office update channels can be managed via Configuration Manager using the standard approval and targeting process. Additionally, you can use policy settings in Office and Windows to enforce update channels used, as well as related settings.
+I canali di aggiornamento di Windows e Office possono essere gestiti tramite Configuration Manager utilizzando il processo di approvazione e individuazione standard. Inoltre, è possibile utilizzare le impostazioni dei criteri in Office e Windows per applicare i canali di aggiornamento utilizzati e le relative impostazioni.
 
 ### <a name="semi-annual-updates"></a>Aggiornamenti semestrali
 
@@ -134,7 +135,7 @@ Quindi queste sono le considerazioni sugli aggiornamenti mensili. Ora si può pa
 
 Come descritto nella sezione relativa alla preparazione di dispositivi e applicazioni, sarà necessario prepararsi per questi aggiornamenti più grandi utilizzando gli stessi strumenti di preparazione configurati nel Passaggio 1 del grafico circolare del processo di distribuzione.
 
-As for tooling, you can use policy settings with Windows Update for Business, software update management via Microsoft Endpoint Configuration Manager (Current Branch), Windows Server Update Services (WSUS), or update policies set by Microsoft Intune. If you are concerned about network bandwidth, see Step 2: Directory and Network Readiness, to learn about your options to reduce network traffic via Delivery Optimization and other peer to peer caching technologies.
+Per quanto riguarda gli strumenti, è possibile utilizzare le impostazioni dei criteri con Windows Update per le aziende, la gestione degli aggiornamenti software tramite Microsoft Endpoint Configuration Manager (Current Branch), Windows Server Update Services (WSUS) o i criteri di aggiornamento impostati da Microsoft Intune. Se si è preoccupati per la larghezza di banda della rete, vedere il Passaggio 2: conformità di directory e rete per informazioni sulle opzioni per ridurre il traffico di rete tramite Ottimizzazione recapito e altre tecnologie di memorizzazione nella cache peer-to-peer.
 
 ![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -150,7 +151,7 @@ Una sequenza di attività consente di creare controlli personalizzati o attivit�
 
 ![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-5.png)
 
-If you’re already using task sequences to migrate your Windows 7 machines to Windows 10 and are well-versed with those tools, this is a great place to start and provides ultimate control. While you can use a single task sequence for the entire upgrade, it is quite common that organizations use two task sequences. One task sequence for making sure the machines are ready for the upgrade, that silently pre-stages all the required setup files on target computers, and one to do the actual upgrade. This approach ensures that your user productivity is less impacted.
+Se l'utente usa già le sequenze di attività per migrare i computer Windows 7 su Windows 10 e conosce bene questi strumenti, ne avrà il massimo controllo. Anche se è possibile utilizzare una singola sequenza di attività per l'intero aggiornamento, è abbastanza comune che le organizzazioni utilizzino due sequenze di attività. Una sequenza di attività per accertarsi che i PC siano pronti per l'aggiornamento, che precede in modo silenzioso tutti i file di installazione richiesti sui computer di destinazione e uno per eseguire l'aggiornamento effettivo. Questo approccio garantisce un impatto minimo sulla produttività dell'utente.
 
 [Creare una sequenza di attività per aggiornare un sistema operativo in Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 

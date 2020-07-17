@@ -37,7 +37,7 @@ ms.locfileid: "44816998"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visualizzare l'estratto conto o la fattura
 
-This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
+Questo articolo è destinato agli abbonati a Microsoft 365 per le aziende. È necessario essere un amministratore globale o un amministratore fatturazione per eseguire le procedure descritte in questo articolo.
   
 Se serve aiuto per interpretare gli addebiti riportati nella fattura, vedere [Informazioni sull'estratto conto o la fattura](understand-your-invoice2.md) per una descrizione dettagliata.
   

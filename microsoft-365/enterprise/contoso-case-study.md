@@ -17,6 +17,7 @@ ms.custom: ''
 description: Modalità di adozione di Microsoft 365 Enterprise da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
 ms.openlocfilehash: dd9bf2dcb7a8bff453746a0084faaf69650bf6fd
 ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44854259"
@@ -25,7 +26,7 @@ ms.locfileid: "44854259"
 
 Microsoft 365 Enterprise è la principale offerta cloud di Microsoft che combina le app e i servizi per la produttività basati sul clous e le funzionalità di Windows 10 Enterprise e Advanced Security in una soluzione completa e intelligente che consente a tutti essere creativi e di collaborare in modo sicuro. 
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
+Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale con sede a Parigi, in Francia. Contoso ha distribuito Microsoft 365 Enterprise e ha affrontato importanti decisioni di progettazione e dettagli di implementazione riguardanti rete, identità, Windows 10 Enterprise, App Microsoft 365 per grandi imprese, gestione dei dispositivi mobili, protezione delle informazioni e sicurezza. 
 
 L'obiettivo generale di Contoso per Microsoft 365 Enterprise è accelerare la sua trasformazione digitale usando i servizi cloud per raggruppare dipendenti, partner, dati e processi per creare valore per il consumatore e mantenere il vantaggio competitivo in un mondo industrializzato-digitale.
 

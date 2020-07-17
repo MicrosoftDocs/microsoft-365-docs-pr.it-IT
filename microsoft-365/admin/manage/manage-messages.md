@@ -29,7 +29,7 @@ ms.locfileid: "45005823"
 ---
 # <a name="manage-messages-in-message-center"></a>Gestire i messaggi nel Centro messaggi
 
-Message center posts are important announcements about new and changed features. This article provides more information about the things you can do with messages to help with change management in your organization.
+I post del Centro messaggi sono annunci importanti sulle caratteristiche nuove e modificate. Questo articolo include altre informazioni sulle operazioni che è possibile eseguire con i messaggi per semplificare la gestione delle modifiche nell'organizzazione.
   
 ## <a name="read-a-message"></a>Leggere un messaggio
 

@@ -69,7 +69,7 @@ I prefissi e i suffissi possono essere stringhe fisse o attributi utente.
 
 Gli attributi di Azure Active Directory (Azure AD) supportati sono [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] e [title].
 
-- Unsupported user attributes are considered as fixed strings. E.g. "[postalCode]"
+- Gli attributi utente non supportati sono considerati stringhe fisse. Ad esempio, [Codicepostale]"
 
 - Gli attributi di estensione e gli attributi personalizzati non sono supportati.
 
@@ -104,7 +104,7 @@ Non vengono eseguite ricerche in una stringa secondaria. in particolare, è nece
 
 ## <a name="admin-override"></a>Override per gli amministratori
 
-Selective administrators are exempted from these policies, across all group workloads and endpoints, so that they can create groups with these blocked words and with their desired naming conventions. The following are the list of administrator roles exempted from the group naming policy.
+Alcuni amministratori non sono soggetti a questi criteri in tutti gli endpoint e i carichi di lavoro di gruppo, possono quindi creare gruppi con le parole bloccate e con le convenzioni di denominazione che preferiscono. L'elenco seguente contiene i ruoli di amministratore non soggetti ai criteri di denominazione del gruppo.
 
 - Amministratore globale
 

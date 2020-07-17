@@ -78,7 +78,7 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
     - **Informazioni di contatto** Espandere per inserire il numero di telefono cellulare, l'indirizzo e così via.
     - **Password** Utilizzare la password generata automaticamente o espanderla per specificare una password complessa per l'utente. Devono cambiare la propria password dopo 90 giorni. Oppure si può selezionare **Chiedi all'utente di cambiare la password al primo accesso**.
     - **Ruoli** Espandere se si vuole impostare l'utente come amministratore.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Licenze di prodotto** Espandere questa sezione e selezionare la licenza appropriata. Se non ci sono licenze disponibili, è sempre possibile aggiungere un utente e acquistare licenze aggiuntive.
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
     - **Informazioni di contatto** Espandere per inserire il numero di telefono cellulare, l'indirizzo e così via.
     - **Password** Utilizzare la password generata automaticamente o espanderla per specificare una password complessa per l'utente. Devono cambiare la propria password dopo 90 giorni. Oppure si può selezionare **Chiedi all'utente di cambiare la password al primo accesso**.
     - **Ruoli** Espandere se si vuole impostare l'utente come amministratore.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Licenze di prodotto** Espandere questa sezione e selezionare la licenza appropriata. Se non ci sono licenze disponibili, è sempre possibile aggiungere un utente e acquistare licenze aggiuntive.
 
 ::: moniker-end
 

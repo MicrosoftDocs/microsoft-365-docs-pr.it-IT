@@ -19,6 +19,7 @@ search.appverid:
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
 ms.openlocfilehash: 7e4b12310d05ecbceb9df2eac5fe4d48e9275bb8
 ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/30/2020
 ms.locfileid: "44936927"

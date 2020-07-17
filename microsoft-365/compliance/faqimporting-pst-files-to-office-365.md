@@ -91,7 +91,7 @@ Sì. I metadati del messaggio originale non vengono modificati durante il proces
   
  **È previsto un limite al numero di livelli in una gerarchia di cartelle per un file PST da importare in una cassetta postale?**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+Sì. Non è possibile importare un file PST che contiene più di 300 livelli di cartelle annidate.
   
  **È possibile usare il caricamento tramite rete per importare file PST in una cassetta postale inattiva in Office 365?**
   
@@ -152,7 +152,7 @@ Per ogni processo di importazione è possibile spedire un massimo di 10 unità d
   
  **Quanto tempo occorre affinché l'unità disco rigido spedita arrivi al data center Microsoft?**
   
-That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
+Dipende da vari fattori, tra cui la vicinanza al data center Microsoft e il tipo di opzione di spedizione scelta per spedire l'unità, come la consegna entro il giorno successivo, la consegna entro due giorni o quella standard. La maggior parte degli spedizionieri fornisce un apposito codice per tenere traccia dello stato della consegna.
   
  **Dopo la consegna dell'unità disco rigido al datacenter Microsoft, quanto tempo è necessario per caricare i file PST in Azure?**
   
@@ -190,7 +190,7 @@ Sì. I metadati del messaggio originale non vengono modificati durante il proces
   
  **È previsto un limite al numero di livelli in una gerarchia di cartelle per un file PST da importare in una cassetta postale?**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+Sì. Non è possibile importare un file PST che contiene più di 300 livelli di cartelle annidate.
   
  **È possibile usare la spedizione unità per importare i file PST in una cassetta postale inattiva di Microsoft 365?**
   
@@ -206,19 +206,19 @@ No. Non è possibile importare file PST nelle cartelle pubbliche.
   
  **Microsoft può cancellare i dati presenti nell'unità disco rigido prima di rispedirla al cliente?**
   
-No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+No. Microsoft non può cancellare i dati presenti nelle unità disco rigido prima di rispedirle ai clienti. Le unità disco rigido vengono restituite nello stato in cui si trovavano quando sono state ricevute da Microsoft.
   
  **Microsoft può distruggere l'unità disco rigido invece di rispedirla al cliente?**
   
-No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+No. Microsoft non può distruggere le unità disco rigido. Le unità disco rigido vengono restituite nello stato in cui si trovavano quando sono state ricevute da Microsoft.
   
  **Quali sono gli spedizionieri supportati per la restituzione delle unità?**
   
-If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
+Per restituire le unità disco rigido ai clienti negli Stati Uniti, Microsoft si affida a FedEx. In tutte le altre aree geografiche Microsoft si rivolge a DHL.
   
  **Quali sono i costi di spedizione per la restituzione?**
   
-Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
+I costi di spedizione per la restituzione variano in funzione della vicinanza al data center Microsoft a cui è stata spedita l'unità disco rigido. Microsoft fatturerà i costi di spedizione dell'unità disco rigido all'account FedEx o DHL del cliente. I costi di spedizione per la restituzione dell'unità disco rigido sono a carico del cliente.
   
  **È possibile scegliere un altro servizio di spedizione, come FedEx Custom Shipping, per spedire l'unità disco rigido a Microsoft?**
   
@@ -226,4 +226,4 @@ Sì.
   
  **Per spedire l'unità disco rigido in un altro paese sono previste particolari incombenze?**
   
-The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+È possibile che l'unità disco rigido spedita a Microsoft debba varcare i confini internazionali. In tal caso il cliente deve assicurarsi che l'unità disco rigido e i dati in essa contenuti vengano importati e/o esportati in conformità alle leggi vigenti. Prima di spedire un'unità disco rigido, verificare con i propri consulenti che l'unità e i dati possano essere spediti al data center Microsoft specificato senza incorrere in problemi legali. Queste precauzioni consentiranno di evitare ritardi nella spedizione a Microsoft.

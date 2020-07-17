@@ -24,6 +24,7 @@ ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la sottoscrizione a pagamento o di valutazione di Microsoft 365 per le aziende.
 ms.openlocfilehash: 746060596010fd80816e19dece093d91fe850c30
 ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45049749"

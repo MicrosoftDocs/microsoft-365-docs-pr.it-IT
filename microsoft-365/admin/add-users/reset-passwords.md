@@ -44,7 +44,7 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
   
 ## <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+È consigliabile configurare la reimpostazione self-service delle password, in modo da evitare di dover reimpostare manualmente le password degli utenti. Per altre informazioni, vedere [Consentire agli utenti di reimpostare le loro password in Office 365](let-users-reset-passwords.md).
   
 ## <a name="reset-a-business-password-for-someone-else"></a>Reimpostare una password aziendale per qualcun altro
 
@@ -118,7 +118,7 @@ Questi passaggi sono validi per un'azienda con decine di utenti. Se si dispone d
 ## <a name="reset-business-passwords-in-bulk"></a>Reimpostare le password aziendali in blocco
 <a name="bkmk_forgot"> </a>
 
-Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+Usare PowerShell. Vedere questo post di Eyal Doron: [Gestire le password con PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 Ecco un articolo correlato: [Impostare le password per più account utente](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   

@@ -53,7 +53,7 @@ Come amministratore, è possibile controllare quale versione di Office people ne
 
 ## <a name="upgrade-steps"></a>Passaggi di aggiornamento
 
-The steps below will guide you through the process of upgrading your users to the latest Office desktop client. We recommend you read through these steps before beginning the upgrade process.
+I passaggi riportati di seguito illustrano il processo per aggiornare gli utenti al client desktop di Office più recente. È consigliabile leggere questi passaggi prima di avviare il processo di aggiornamento.
   
 ## <a name="step-1---check-system-requirements"></a>Passaggio 1: Verificare i requisiti di sistema
 
@@ -114,7 +114,7 @@ Se si dispone di componenti aggiuntivi di terze parti, contattare il produttore 
 
  **Sottoscrizioni non supportate** Se la copia di Office è stata ottenuta tramite sottoscrizioni sospese, ad esempio Office 365 Small Business Premium o Office 365 Mid-Size business, non è possibile installare una versione precedente di Office a meno che non si disponga del codice Product Key fornito con l'abbonamento.
 
-If you'd prefer to install your older version of Office side-by-side with the latest version, you can see a list of versions where this is supported in, [Install and use different versions of Office on the same PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). A side-by-side installation might be the right choice for you, if for example, you've installed third-party add-ins you're using with your older version of Office and you're not yet sure they're compatible with the latest version.
+Se si preferisce installare la versione precedente di Office affiancato alla versione più recente, in [Installare e usare più versioni di Office nello stesso PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf) è riportato un elenco delle versioni che lo consentono. Un'installazione affiancata potrebbe essere la scelta giusta se, ad esempio, sono stati installati componenti aggiuntivi di terze parti che vengono usati con la versione precedente di Office e non si è ancora sicuri che siano compatibili con la versione più recente.
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>Passaggio 4: Assegnare licenze di Office agli utenti
 

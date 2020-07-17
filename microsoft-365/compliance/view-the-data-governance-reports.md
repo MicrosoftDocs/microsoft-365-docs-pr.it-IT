@@ -25,9 +25,9 @@ ms.locfileid: "44819006"
 ---
 # <a name="view-the-data-governance-reports"></a>Visualizzare i report sulla governance dei dati
 
-After you create your labels, you'll want to verify that they're being applied to content as you intended. With the data governance reports in the Security &amp; Compliance Center, you can quickly view:
+Dopo aver creato le etichette, è consigliabile verificare che queste vengano applicate al contenuto nel modo previsto. I report sulla governance dei dati nel Centro sicurezza e conformità consentono di visualizzare rapidamente:
   
-- **Top 5 labels** This report shows the count of the top 5 labels that have been applied to content. Click this report to view a list of all labels that have been recently applied to content. You can see each label's count, location, how it was applied, its retention actions, whether it's a record, and its disposition type. 
+- **Prime 5 etichette** Questo report mostra le principali 5 etichette applicate al contenuto. Fare clic sul report per visualizzare un elenco di tutte le etichette recentemente applicate al contenuto. È possibile visualizzare il numero di ogni etichetta, la posizione, la modalità di applicazione, le azioni di conservazione relative, se si tratta di un record e il tipo di disposizione. 
     
 - **Applicazione manuale e automatica** Questo report mostra il numero di tutti i contenuti etichettati manualmente o automaticamente e la percentuale di contenuto etichettata manualmente e quella etichettata automaticamente. 
     
@@ -41,7 +41,7 @@ Tutti questi report mostrano il contenuto etichettato di Exchange, SharePoint e 
   
 ![Grafico che mostra le tendenze delle etichette negli ultimi 90 giorni](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
-You can filter the data governance reports by date (up to 90 days) and location (Exchange, SharePoint, and OneDrive for Business). The most recent data can take up to 24 hours to appear in the reports.
+È possibile filtrare i report sulla governance dei dati per data (fino a 90 giorni) e posizione (Exchange, SharePoint e OneDrive for Business). I dati più recenti possono richiedere fino a 24 ore prima di essere visualizzati nei report.
   
 ![Filtri nei report sulla governance dei dati](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   

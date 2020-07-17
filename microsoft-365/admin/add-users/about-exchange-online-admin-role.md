@@ -52,9 +52,9 @@ Ecco alcune delle principali attività che possono eseguire gli utenti a cui è 
 
 ## <a name="exchange-online-role-groups"></a>Gruppi di ruoli di Exchange Online
 
-If you have a large organization, the Exchange admin might want to assign users to Exchange role groups. When an admin adds a user to a role group, the user gets permissions to perform certain business functions only members of that group can do.
+Se si ha un'organizzazione di grandi dimensioni, l'amministratore di Exchange può scegliere di assegnare gli utenti a gruppi di ruoli di Exchange. Quando un amministratore aggiunge un utente a un gruppo di ruoli, l'utente riceve le autorizzazioni per eseguire alcune funzioni aziendali consentite solo ai membri del gruppo.
   
- For example, the Exchange admin might assign someone to the Discovery Management role group so they can perform searches of mailboxes for data that meets certain criteria. To learn more, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) and [Manage Role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
+ Ad esempio, l'amministratore di Exchange può assegnare un utente al gruppo di ruoli Gestione individuazione in modo che possa eseguire ricerche nelle cassette postali per i dati che soddisfano determinati criteri. Per altre informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) e [Gestire gruppi di ruoli](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
 ## <a name="learn-about-other-admin-role"></a>Informazioni sull'altro ruolo di amministratore
 

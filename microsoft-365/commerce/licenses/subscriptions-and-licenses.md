@@ -62,7 +62,7 @@ La tabella seguente descrive cosa accade automaticamente quando si assegna una l
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Informazioni sulle licenze per cassette postali non di utenti
 
-You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
+Non è necessario assegnare licenze a cassette postali di risorse o sale e cassette postali condivise, tranne quando superano la quota di archiviazione di 50 GB. Per altre informazioni sulle cassette postali non di utenti, vedere gli articoli seguenti:
   
 - [Creare una cassetta postale condivisa](../../admin/email/create-a-shared-mailbox.md)
 - [Rimuovere una licenza da una cassetta postale condivisa](../../admin/email/remove-license-from-shared-mailbox.md)
@@ -72,7 +72,7 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 
 ## <a name="who-can-assign-licenses"></a>Chi può assegnare licenze?
 
-Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+Tipi diversi di amministratori possono usare le licenze in modi diversi, in base al loro ruolo. La tabella seguente elenca le opzioni più comuni. Per un elenco completo dei ruoli e dei privilegi di amministratore, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   
 |**Ruolo di amministratore**|**Assegnare una licenza**|**Annullamento dell'assegnazione di una licenza**|**Acquistare altre licenze**|**Eliminare un account**|
 |:-----|:-----|:-----|:-----|:-----|

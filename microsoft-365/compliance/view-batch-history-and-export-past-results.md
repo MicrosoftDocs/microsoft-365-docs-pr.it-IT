@@ -27,7 +27,7 @@ ms.locfileid: "44936189"
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Advanced eDiscovery (Classic)
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Nella sezione seguente vengono descritte le opzioni aggiuntive per la visualizzazione in batch e l'esportazione dei dati in Advanced eDiscovery. 
   

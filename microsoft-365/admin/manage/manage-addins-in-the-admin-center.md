@@ -128,7 +128,7 @@ Per impedire a un utente di accedere con un account Microsoft, è possibile limi
 
 Dopo aver distribuito un componente aggiuntivo, gli utenti finali possono iniziare a utilizzarlo nelle proprie applicazioni di Office (vedere [iniziare a usare il componente aggiuntivo di Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Il componente aggiuntivo viene visualizzato in tutte le piattaforme supportate dal componente aggiuntivo.
   
-If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
+Se il componente aggiuntivo supporta i comandi dell'interfaccia, questi vengono visualizzati sulla barra multifunzione di Office. Nell'esempio seguente il comando **Cerca citazione** viene visualizzato per il componente aggiuntivo **Citazioni**. 
 
 ![Barra multifunzione di Office con citazioni di ricerca](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   

@@ -51,7 +51,7 @@ Gli amministratori possono esportare tutti i messaggi, le note, i file, gli argo
 
 Se un utente viene spostato da un abbonamento con SharePoint Online a uno che non lo contiene, il riquadro di **SharePoint** non verrà più visualizzato nel menu Microsoft 365.
   
-However, as long as the new subscription is within the same organization as the one they are switched from, users will still be able to access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
+Tuttavia, se il nuovo abbonamento è nella stessa organizzazione di quello precedente, l'utente potrà continuare ad accedere al sito del team di SharePoint e potrà visualizzare e aggiornare blocchi appunti, documenti, attività e calendari usando l'URL diretto del sito del team.
   
 > [!TIP]
 > è consigliabile che gli utenti accedano al sito del team prima del cambio di abbonamento e salvino l'URL come preferito o come segnalibro nel browser.

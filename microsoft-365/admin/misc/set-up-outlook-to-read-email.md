@@ -33,7 +33,7 @@ La sottoscrizione Microsoft 365 viene fornita con Outlook basato sul Web, ma se 
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Configurare un account di posta elettronica in Outlook
 
-The first time you open Outlook, an Auto Account Wizard opens. If not, choose **File** then **Add Account**.
+Al primo avvio di Outlook si apre la Configurazione automatica account. In caso contrario, scegliere **File** e **Aggiungi account**.
   
 1. Nella pagina **Account** scegliere **Avanti** \> **Aggiungi account**.
     

@@ -108,12 +108,12 @@ Se si desidera informazioni su come iniziare a utilizzare i servizi generali di 
  Sono ora supportate nuove distribuzioni ibride complete con Exchange 2013 Cumulative Update 5 (CU5), tra organizzazioni di Exchange 2013 locali e i servizi di Office 365. Se si utilizza un nuovo miglioramento nella procedura guidata di configurazione ibrida, Exchange 2013 CU5 supporta le seguenti funzionalità ibride tra le organizzazioni locali e di Exchange Online:  
 
 - Instradamento sicuro della posta tra organizzazioni locali e organizzazioni di Exchange Online. 
-- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
+- Routing della posta con uno spazio dei nomi di dominio condiviso. Ad esempio, lo stesso dominio SMTP @contoso.com viene utilizzato sia dalle organizzazioni di Exchange Online che da quella locale. 
 - Un elenco indirizzi globale unificato, denominato anche "rubrica condivisa".  
 - Condivisione delle informazioni sulla disponibilità e sul calendario tra organizzazioni locali e organizzazioni di Exchange Online.  
-- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
+- Controllo centralizzato del flusso di posta in ingresso e in uscita. È possibile configurare tutti i messaggi di Exchange in ingresso e in uscita in modo che siano instradati attraverso l'organizzazione locale di Exchange. 
 - Un singolo URL di Office Outlook Web App per le organizzazioni locali e di Exchange Online.  
-- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
+- Possibilità di spostare le cassette postali esistenti dall'organizzazione locale all'organizzazione di Exchange Online. Se necessario, anche le cassette postali di Exchange Online possono essere nuovamente spostate nell'organizzazione locale.  
 - Gestione centralizzata delle cassette postali tramite l'interfaccia locale di amministrazione di Exchange.  
 - Suggerimenti messaggio, supporto per le foto HD per i contatti di Outlook e ricerca in più cassette postali tra organizzazioni locali e di Exchange Online. 
 - Archiviazione dei messaggi basata su cloud per le cassette postali di Exchange locali. 

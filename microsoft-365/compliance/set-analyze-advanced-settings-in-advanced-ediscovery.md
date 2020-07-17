@@ -27,7 +27,7 @@ ms.locfileid: "44936753"
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Impostare Analyze Advanced Settings in Advanced eDiscovery
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery fornisce parametri avanzati predefiniti per l'analisi delle impostazioni dei moduli. Nella procedura seguente vengono descritte le impostazioni che è possibile specificare.
   

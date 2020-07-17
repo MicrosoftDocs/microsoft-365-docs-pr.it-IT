@@ -19,6 +19,7 @@ ms.custom: ''
 description: È necessario che l'utente remoto acceda con l'autenticazione a più fattori (MFA).
 ms.openlocfilehash: 57febcb68b09ffcbbb1694100b31d7d75158d872
 ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44844961"

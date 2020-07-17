@@ -47,9 +47,9 @@ La fattura o la fattura contiene tre indirizzi:
 
 - **Indirizzo di fatturazione** L'indirizzo del reparto fatturazione, che in genere corrisponde all'indirizzo indicato in **Venduto a**.
 
-- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
+- **Indirizzo di utilizzo del servizio** L'indirizzo in cui viene usato li servizio. In genere corrisponde all'indirizzo indicato in **Venduto a**. Se l'organizzazione ha utenti remoti o più uffici, usare l'indirizzo in cui si trova la maggioranza degli utenti.
 
-In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
+Nella maggior parte dei casi questi indirizzi coincidono. Se occorre cambiare uno o più indirizzi, è possibile farlo. Si può anche specificare un indirizzo di posta elettronica alternativo a cui ricevere le notifiche sulla fatturazione e cambiare l'indirizzo di posta elettronica alternativo per altri amministratori.
   
 ::: moniker range="o365-worldwide"
 

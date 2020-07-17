@@ -56,7 +56,7 @@ Un partner Microsoft autorizzato che opera come consulente dell'abbonamento mett
 
 ::: moniker range="o365-germany"
 
-The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
+Il partner scelto dipende dai servizi di Office 365 usati e dal paese o dall'area geografica in cui questi saranno usati. Se si sta aggiungendo un partner o cambiando il partner dell'abbonamento, per prima cosa è necessario ottenere il suo ID partner Microsoft, chiedendo al partner stesso.
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Seguire i passaggi della pagina providers per la ricerca o per ottenere la corri
     
 4. Se si dispone già di un partner, nel riquadro destro del secondo passaggio della procedura guidata di verifica fare clic su **Aggiungi**.
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. Immettere l'ID del partner Microsoft da aggiungere, che è possibile ottenere richiedendolo al partner stesso.
 
 6. Completare la procedura guidata per terminare l'acquisto degli abbonamenti. 
     
@@ -98,7 +98,7 @@ Seguire i passaggi della pagina providers per la ricerca o per ottenere la corri
     
 4. Se si dispone già di un partner, nel riquadro destro del secondo passaggio della procedura guidata di verifica fare clic su **Aggiungi**.
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. Immettere l'ID del partner Microsoft da aggiungere, che è possibile ottenere richiedendolo al partner stesso.
 
 6. Completare la procedura guidata per terminare l'acquisto degli abbonamenti. 
     
@@ -127,7 +127,7 @@ Seguire i passaggi della pagina providers per la ricerca o per ottenere la corri
   
 3. A destra, sotto il costo della sottoscrizione, scegliere **altre azioni** > **Aggiungi partner di record**.
 
-4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. Immettere l'ID del partner Microsoft da aggiungere, selezionare **Controlla ID** e quindi **Invia**. L'ID del partner Microsoft può essere richiesto al partner stesso.
 
 5. L'ID del partner è visualizzato nella pagina **Abbonamenti**.
     
@@ -159,7 +159,7 @@ Per accettare questa offerta
     
 3. In **ID partner** selezionare **Modifica Partner of Record**.
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. Immettere l'ID del nuovo partner Microsoft da aggiungere, selezionare **Controlla ID** e quindi **Invia**. L'ID del partner Microsoft può essere richiesto al partner stesso.
   
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Per accettare questa offerta
     
 3. In **ID partner** selezionare **Modifica Partner of Record**.
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. Immettere l'ID del nuovo partner Microsoft da aggiungere, selezionare **Controlla ID** e quindi **Invia**. L'ID del partner Microsoft può essere richiesto al partner stesso.   
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ Per accettare questa offerta
     
 3. In **ID partner** selezionare **Modifica Partner of Record**.
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. Immettere l'ID del nuovo partner Microsoft da aggiungere, selezionare **Controlla ID** e quindi **Invia**. L'ID del partner Microsoft può essere richiesto al partner stesso.   
 
 ::: moniker-end
 

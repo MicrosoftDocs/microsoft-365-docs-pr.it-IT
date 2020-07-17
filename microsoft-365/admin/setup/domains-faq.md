@@ -82,7 +82,7 @@ La posta viene recapitata al server Mail Exchange con il numero di preferenza pi
 
 ## <a name="what-is-a-domain-name"></a>Cos'è un nome di dominio?
 
-A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.* 
+Un dominio è un nome univoco che segue il segno **@** negli indirizzi di posta elettronica e **www.** negli indirizzi Web. In genere è composto dal nome dell'organizzazione e da un suffisso Internet standard, come  *nomeazienda.com*  o  *nomeuniversità.edu*  . 
   
 L'utilizzo di un dominio personalizzato come "**rob \@ contoso.com**" con Microsoft 365 può contribuire a creare credibilità e riconoscimento per il proprio marchio. 
   
@@ -207,7 +207,7 @@ Microsoft 365 crea un dominio per l'utente, come *contoso.onmicrosoft.com*, quan
     
 - **Non è possibile rimuovere il dominio onmicrosoft.** Microsoft 365 deve conservarlo perché viene utilizzato dietro le quinte per l'abbonamento. Non è tuttavia necessario usare personalmente il dominio dopo averne aggiunto uno personalizzato. 
     
-You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
+Si può continuare a usare il dominio iniziale onmicrosoft.com anche dopo l'aggiunta di quello personalizzato. È infatti sempre valido per la posta elettronica e altri servizi. La scelta spetta all'utente.
   
 ::: moniker-end
 

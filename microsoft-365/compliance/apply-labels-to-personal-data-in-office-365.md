@@ -72,29 +72,29 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 <tbody>
 <tr class="odd">
 <td align="left">Etichette di conservazione. Esempi: Personale, Pubblico, Dati cliente, Dati risorse umane, Riservato, Estremamente riservato</td>
-<td align="left"><p>Auto apply this label . . .</p>
+<td align="left"><p>Applicare automaticamente questa etichetta...</p>
 <p>Dati cliente
 </p>
-<p>. . . to documents that match these sensitive information types . . .</p>
+<p>... ai documenti che corrispondono a questi tipi di informazioni riservate...</p>
 <p>&lt;elenco dei tipi di informazioni riservate&gt;</p></td>
-<td align="left"><p>Apply this protection . . .</p>
+<td align="left"><p>Applicare la protezione...</p>
 <p>&lt;definire la protezione&gt;</p>
-<p>. . . to documents with this label . . .</p>
+<p>... ai documenti con questa etichetta...</p>
 <p>Dati cliente
 </p></td>
-<td align="left"><p>Alert when files with these attributes . . .</p>
+<td align="left"><p>Avvisa quando i file con questi attributi...</p>
 <p>Scegliere uno o più attributi: attributo PII predefinito, tipologia di informazioni riservate di Microsoft 365, etichetta di riservatezza (AIP), espressione personalizzata</p>
 <p>. . . in qualsiasi app SaaS approvata vengono condivisi all'esterno dell'organizzazione</p><p>Nota: le etichette di conservazione non sono attualmente supportate in Cloud App Security.</td>
 </tr>
 <tr class="even">
-<td align="left">Sensitive information types. Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</td>
-<td align="left"><p>Publish these labels for users to manually apply . . .</p>
+<td align="left">Tipi di informazioni riservate. Esempi: Codice fiscale belga, numero di carta di credito, numero identità Croazia, codice fiscale Finlandese</td>
+<td align="left"><p>Pubblicare le etichette per gli utenti da applicare manualmente...</p>
 <p>&lt;selezionare etichette&gt;</p>
-<p>. . . to these locations . . .</p>
+<p>... a questi percorsi...</p>
 <p>&lt;tutte i percorsi oppure percorsi specifici&gt;</p></td>
-<td align="left"><p>Apply this protection . . .</p>
+<td align="left"><p>Applicare la protezione...</p>
 <p>&lt;definire la protezione&gt;</p>
-<p>. . . to documents that match these sensitive information types&gt;</p></td>
+<p>... ai documenti che corrispondono a questi tipi di informazioni riservate&gt;</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -103,9 +103,10 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 ## <a name="prioritize-auto-apply-label-policies"></a>Definire la priorità dei criteri per applicare automaticamente le etichette
 
 
-For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
+Per i dati personali soggetti all'RGPD, Microsoft consiglia di applicare automaticamente le etichette utilizzando le tipologie di informazioni sensibili create per il proprio ambiente. I criteri che applicano automaticamente le etichette devono essere configurati correttamente e occorre testarli per verificare che producano i risultati previsti.
 
-The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.
+
+L'ordine con cui vengono creati i criteri da applicare automaticamente e il fatto che gli utenti applichino o meno queste etichette influisce sul risultato. È quindi importante pianificare attentamente l'implementazione. Ecco cosa serve sapere.
 
 ### <a name="one-label-at-a-time"></a>Un'etichetta alla volta
 
@@ -114,12 +115,12 @@ The order that auto-apply policies are created and whether users are also applyi
 ### <a name="older-auto-apply-policies-win"></a>I criteri più vecchi hanno la precedenza
 
 
-If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.
+Se sono presenti più regole che assegnano un'etichetta da applicare automaticamente e il contenuto soddisfa le condizioni di più regole, viene assegnata l'etichetta della regola meno recente. Per questo motivo, è importante pianificare con attenzione i criteri delle etichette prima di configurarli. Se un'organizzazione ha l'esigenza di modificare la priorità dei criteri delle etichette, è necessario eliminarli e crearli di nuovo.
 
 ### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>Le etichette applicate manualmente dall'utente hanno la precedenza su quelle applicate automaticamente
 
 
-Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.
+Le etichette applicate manualmente dall'utente battono quelle applicate automaticamente. I criteri di applicazione automatica non possono sostituire un'etichetta già applicata da un utente. Gli utenti possono sostituire le etichette applicate automaticamente.
 
 ### <a name="auto-assigned-labels-can-be-updated"></a>Le etichette assegnate automaticamente possono essere aggiornate
 
@@ -131,7 +132,8 @@ Assicurarsi che il piano di implementazione delle etichette includa:
 - Creare i criteri di applicazione automatica secondo l'ordine di priorità.
 
 
-- Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
+- Allocare il tempo necessario all'applicazione automatica delle etichette prima di consentire agli utenti di applicarle manualmente. Potrebbe essere necessaria anche una settimana per applicare le etichette a tutti i contenuti che corrispondono alle condizioni.
+
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>Esempio di priorità per creare i criteri di applicazione automatica
 
@@ -192,7 +194,7 @@ Creare le etichette e i criteri nel centro sicurezza o nel centro conformità.
 <tbody>
 <tr class="odd">
 <td align="left"><p>Assegnare autorizzazioni ai membri del team di conformità.</p></td>
-<td align="left"><p>Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</p>
+<td align="left"><p>I membri del team di conformità che creeranno le etichette necessitano di autorizzazioni per utilizzare il centro sicurezza e/o il centro conformità. Andare a Autorizzazioni nel centro sicurezza o nel centro conformità e modificare i membri del gruppo Amministratori di conformità.</p>
 <p>Vedere <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Concedere agli utenti l'accesso al centro sicurezza e/o al centro conformità</a>.</p></td>
 </tr>
 <tr class="even">
@@ -201,7 +203,7 @@ Creare le etichette e i criteri nel centro sicurezza o nel centro conformità.
 </tr>
 <tr class="odd">
 <td align="left"><p>Creare criteri di applicazione automatica per le etichette.</p></td>
-<td align="left">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels. Be sure to create these policies in the prioritized order.</td>
+<td align="left">Andare a Classificazione nel centro sicurezza o nel centro conformità, scegliere Criteri etichette e creare i criteri di applicazione automatica delle etichette. Assicurarsi di creare questi criteri nell'ordine di priorità.</td>
 </tr>
 </tbody>
 </table>
