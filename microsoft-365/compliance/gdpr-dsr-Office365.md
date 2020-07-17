@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 00ad2290a252ad014e9b364d9aa5ce59f94c6516
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f3f2f5525337ded683145a6d570562784910f236
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817645"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126737"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Office 365 nell'ambito del GDPR e del CCPA
 
@@ -163,12 +163,11 @@ La tabella seguente elenca alcune condizioni che è possibile usare per restring
 
 ***Tabella 2. Restringere l'ambito della ricerca tramite l'uso di condizioni***
 
-||||
+| Condizione | Descrizione | Esempio di valori della condizione |
 | :--- | :--- |:--- |
-|**Condizione**|**Descrizione** |**Esempio di valori della condizione**|
 | Tipo di file | Estensione di un documento o di un file. Usare questa condizione per cercare documenti di Office e file creati con applicazioni di Office 365. Usare questa condizione per la ricerca di documenti in siti di SharePoint Online e account di OneDrive for Business.<br/>La proprietà del documento corrispondente è filetype. <br/>Per un elenco completo delle estensioni di file che è possibile cercare, vedere Estensioni di nomi di file e tipi di file analizzati sottoposti a ricerca per indicizzazione predefiniti in SharePoint](https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&bull;&nbsp;&nbsp;csv — Cerca file con valori delimitati da  virgole (CSV). I file di Excel possono essere salvati in formato CSV e i file CSV possono essere facilmente importati in Excel<br><br>&bull;&nbsp;&nbsp;docx — Cerca file di Word <br><br>&bull;&nbsp;&nbsp;mpp — Cerca file di Project<br/><br>&bull;&nbsp;&nbsp;one — Cerca file di OneNote <br><br>&bull;&nbsp;&nbsp;pdf — Cerca file salvati in formato PDF <br><br>&bull;&nbsp;&nbsp;pptx — Cerca file di PowerPoint <br><br>&bull;&nbsp;&nbsp;xlxs — Cerca file di Excel <br><br>&bull;&nbsp;&nbsp;vsd — Cerca file di Visio <br><br>&bull;&nbsp;&nbsp;wmv — Cerca file video di Windows Media <br>|
 | Tipo di messaggio | Il tipo di messaggio di posta elettronica da cercare. Usare questa condizione per eseguire ricerche nelle cassette postali di contatti (persone), riunioni (Calendario di Outlook) o Conversazioni Skype for Business. La proprietà di posta elettronica corrispondente è*kind*.|&bull;&nbsp;&nbsp;*contacts — Cerca l’elenco Contatti (Persone) di una cassetta postale <br><br>&bull;&nbsp;&nbsp;* email — Cerca messaggi di posta elettronica. <br><br>&bull;&nbsp;&nbsp;*messaggi istantanei — consente di eseguire ricerche nelle conversazioni di Skype for Business<br><br>&bull;&nbsp;&nbsp;* riunioni — esegue ricerche di appuntamenti e convocazioni di riunione (Calendario di Outlook) <br><br>&bull;&nbsp;&nbsp;*tasks — Cerca l'elenco Attività (Attività); con questo valore vengono restituite anche le attività create in Microsoft To-Do.<br>|
-| Tag di conformità |L'etichetta assegnata a un messaggio e-mail o un documento. Le etichette servono a classificare le e-mail e i documenti per la governance dei dati e ad applicare regole di conservazione in base alla classificazione definita dall'etichetta. Usare questa condizione per cercare elementi a cui è stata assegnata automaticamente o manualmente un'etichetta.<br/>Questa condizione è utile per le analisi delle richieste DSR poiché l'organizzazione può usare le etichette per classificare il contenuto relativo alla privacy dei dati o a dati personali o informazioni riservate. Vedere la sezione "Uso di Ricerca contenuto per trovare tutto il contenuto a cui è applicata una specifica etichetta" in [Panoramica delle etichette di Office 365](https://docs.microsoft.com/microsoft-365/compliance/labels).|compliancetag="personal data"|
+| Tag di conformità |L'etichetta assegnata a un messaggio e-mail o un documento. Le etichette servono a classificare le e-mail e i documenti per la governance dei dati e ad applicare regole di conservazione in base alla classificazione definita dall'etichetta. Usare questa condizione per cercare elementi a cui è stata assegnata automaticamente o manualmente un'etichetta.<br/>Questa condizione è utile per le analisi delle richieste DSR poiché l'organizzazione può usare le etichette per classificare il contenuto relativo alla privacy dei dati o a dati personali o informazioni riservate. Vedere la sezione "Uso di Ricerca contenuto per trovare tutto il contenuto a cui è applicata una specifica etichetta" in [Informazioni sui criteri e le etichette di conservazione](https://docs.microsoft.com/microsoft-365/compliance/labels)|compliancetag="personal data"|
 ||||
 
 Esistono molte altre proprietà di e-mail e di documento e condizioni di ricerca che è possibile usare per creare query di ricerca più complesse. Per altre informazioni, vedere le sezioni seguenti nell'argomento della Guida [Query con parole chiave e condizioni di ricerca per la ricerca di contenuto](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).
@@ -366,7 +365,7 @@ Ecco le indicazioni specifiche per eseguire la ricerca di un blocco appunti dell
 4. Modificare la ricerca creata nel passaggio 1 e sostituire il nome della classe nella query con parole chiave con il percorso della cartella del blocco appunti della classe, anteporre al percorso della cartella la proprietà del sito **path**, ad esempio **path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**. Ricordarsi di includere la barra finale e di racchiudere il tutto tra virgolette.
 5. Aggiungere una condizione di ricerca e selezionare la condizione Tipo di file e usarne una per il valore del tipo di file. I file di OneNote vengono restituiti nei risultati della ricerca. La sintassi della parola chiave risultante avrà un aspetto simile al seguente:[](#building-search-queries-to-find-personal-data)
 
-    ```Query
+   ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
 

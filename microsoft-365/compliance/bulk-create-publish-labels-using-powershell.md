@@ -1,5 +1,5 @@
 ---
-title: Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
+title: Creare e pubblicare etichette di conservazione con PowerShell
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,43 +17,52 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come usare le etichette di conservazione di Office 365 per implementare una pianificazione di conservazione per l'organizzazione con PowerShell.
-ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Informazioni sull'uso di PowerShell per la creazione e la pubblicazione di etichette di conservazione dalla riga di comando, indipendentemente dal centro conformità di Microsoft 365.
+ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035534"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126367"
 ---
-# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare etichette di conservazione con PowerShell
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-In Office 365, è possibile usare le etichette di conservazione per implementare una pianificazione di conservazione dell'organizzazione. I responsabili dei record o della conformità potrebbero dover creare e pubblicare centinaia di etichette di conservazione. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette di conservazione una alla volta richiede molto tempo e non è pratico.
+Se hai deciso di usare le [etichette di conservazione](retention.md) per tenere o eliminare documenti e messaggi di posta elettronica in Microsoft 365, ti renderai conto che ne esistono centinaia per creare e pubblicare. Il metodo consigliato per creare etichette di conservazione in larga scala consiste nell'usare il [piano di archiviazione](file-plan-manager.md) dal centro conformità di Microsoft 365. Tuttavia, è anche possibile usare [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
-Con lo script e i file CSV forniti di seguito, è possibile creare in blocco etichette di conservazione e criteri di etichetta di conservazione. Prima di tutto, creare un elenco di etichette di conservazione e un elenco dei criteri di etichetta di conservazione in Excel e quindi usare PowerShell per creare in blocco le etichette di conservazione e i criteri di etichetta di conservazione contenuti in tali elenchi. In questo modo si possono creare e pubblicare facilmente e contemporaneamente tutte le etichette di conservazione richieste dalla pianificazione di conservazione.
-  
-Per ulteriori informazioni sulle etichette di conservazione, vedere [Panoramica delle etichette](labels.md).
+Utilizzare le informazioni, i file modello, gli esempi e lo script in questo articolo per creare le etichette di conservazione in blocco e pubblicarle nei criteri delle etichette di conservazione. Quindi, le etichette di conservazione possono essere [applicate da amministratori e utenti](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
+
+Le istruzioni fornite non supportano le etichette di conservazione applicate automaticamente al contenuto.
+
+Panoramica: 
+
+1. Creare un elenco delle etichette di conservazione e dei criteri relativi alle etichette di conservazione in Excel.
+
+2. Usare PowerShell per creare le etichette di conservazione e i criteri delle etichette di conservazione in tali elenchi.
   
 ## <a name="disclaimer"></a>Dichiarazione di non responsabilità
 
-Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
+Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Microsoft esclude inoltre qualsiasi garanzia implicita, tra cui, senza limitazioni, tutte le garanzie implicite di commerciabilità o idoneità per uno scopo specifico. L'utente assume tutti i rischi associati all'uso o alle prestazioni degli script di esempio e della documentazione. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
   
-## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a>Passaggio 1: creare un file .csv per la creazione delle etichette di conservazione
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Passaggio 1: creare un file .csv per le etichette di conservazione
 
-Innanzitutto, è necessario creare un file .csv contenente un elenco delle etichette di conservazione con le relative impostazioni. È possibile usare l'esempio in basso come modello copiandolo in Excel, convertendo il testo in colonne (nella scheda \> **Dati** di Excel \> **Testo in colonne** \> **Delimitato** \> **Virgola** \> **Generale**), quindi salvando il foglio di lavoro come file .csv in un percorso facile da trovare.
-  
-Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+1. Copiare il file .csv di esempio per un modello e le voci di esempio per quattro etichette di conservazione diverse e incollarle in Excel. 
+
+2. Convertire il testo in colonne: **dati** tab \> **testo in colonne** \> **delimitato** \> **virgola** \> **generale**
+
+2. Sostituire gli esempi con le voci per le proprie etichette di conservazione e impostazioni. Per ulteriori informazioni sui valori dei parametri, vedere [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+
+3. Salvare il foglio di lavoro come file .csv in un percorso facile da trovare per un passaggio successivo. Ad esempio: C:\>Scripts\Labels.csv
+
   
 Note:
-  
-- Se non si fornisce un file di origine per la creazione delle etichette di conservazione, lo script va avanti e chiede il file di origine per la pubblicazione delle etichette di conservazione (vedere la sezione successiva), quindi lo script pubblica solo le etichette di conservazione esistenti.
-    
+
 - Se il file .csv contiene un'etichetta di conservazione con lo stesso nome di un'altra già esistente, lo script ignora la creazione di quell’etichetta. Non vengono create etichette di conservazione duplicate.
     
-- Se si modificano o rinominano le intestazioni delle colonne, lo script avrà esito negativo. Lo script richiede un file .csv nel formato fornito qui.
+- Non modificare o rinominare le intestazioni di colonna del file .csv di esempio oppure lo script avrà esito negativo.
     
-### <a name="sample-csv-file"></a>File .csv di esempio
+### <a name="sample-csv-file-for-retention-labels"></a>File .csv di esempio per le etichette di conservazione
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -63,23 +72,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a>Passaggio 2: creare un file .csv per la pubblicazione delle etichette
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>Passaggio 2: creare un file .csv per i criteri delle etichette di conservazione
 
-È quindi il momento di creare un file .csv contenente un elenco dei criteri delle etichette di conservazione con i relativi percorsi e altre impostazioni. È possibile usare l'esempio in basso come modello copiandolo in Excel, convertendo il testo in colonne (nella scheda \> **Dati** di Excel \> **Testo in colonne** \> **Delimitato** \> **Virgola** \> **Generale**), quindi salvando il foglio di lavoro come file .csv in un percorso facile da trovare.
-  
-Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).
-  
+1. Copiare il file .csv di esempio per un modello e voci di esempio per tre diversi criteri di etichetta di conservazione e incollarli in Excel. 
+
+2. Convertire il testo in colonne: **dati** tab \> **testo in colonne** \> **delimitato** \> **virgola** \> **generale**
+
+2. Sostituire gli esempi con le voci relative ai criteri dell'etichetta di conservazione e alle relative impostazioni. Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).
+
+3. Salvare il foglio di lavoro come file .csv in un percorso facile da trovare per un passaggio successivo. Ad esempio: `<path>Policies.csv`
+
+
 Note:
   
-- Se non si fornisce un file di origine per la pubblicazione delle etichette di conservazione, lo script crea le etichette (vedere la sezione precedente), ma non le pubblica.
-    
 - Se il file .csv contiene un criterio per le etichette di con conservazione con lo stesso nome di un altro già esistente, lo script ignora la creazione di quel criterio. Non vengono creati criteri per le etichette di conservazione duplicati.
     
-- Lo script pubblica solo le etichette di conservazione applicate manualmente al contenuto. Questo script non supporta le etichette di conservazione applicate automaticamente al contenuto.
+- Non modificare o rinominare le intestazioni di colonna del file .csv di esempio oppure lo script avrà esito negativo.
     
-- Se si modificano o rinominano le intestazioni delle colonne, lo script avrà esito negativo. Lo script richiede un file .csv nel formato fornito qui.
-    
-### <a name="sample-csv-file"></a>File .csv di esempio
+### <a name="sample-csv-file-for-retention-policies"></a>File .csv di esempio per i criteri di conservazione
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -90,20 +100,30 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 ## <a name="step-3-create-the-powershell-script"></a>Passaggio 3: creare lo script di PowerShell
 
-Copiare e incollare il seguente script di PowerShell nel Blocco note. Salvare il file con il suffisso del filename di .ps1 in un percorso facile da trovare, ad esempio, \<percorso\>CreateRetentionSchedule.ps1.
-  
+1. Copiare e incollare lo script di PowerShell nel Blocco note.
+
+2. Salvare il file con un'estensione di file **. ps1** in un percorso facile da trovare. Ad esempio: `<path>CreateRetentionSchedule.ps1`
+
+Note:
+
+- Lo script chiede di specificare i due file di origine creati nei due passaggi precedenti:
+    - Se non si specifica il file di origine per creare le etichette di conservazione, lo script andrà avanti e creerà i criteri per le etichette di conservazione. 
+    - Se non si specifica il file di origine per creare i criteri per l'etichetta di conservazione, lo script creerà solo le etichette di conservazione.
+
+- Lo script genera un file di log che registra tutte le azioni eseguite e il loro esito. Vedere il passaggio finale con le istruzioni su come trovare il file di log.
+
 ### <a name="powershell-script"></a>Script di PowerShell
 
-```
+```Powershell
 <#
-. Steps: Import and Publish Compliance Tag
-    ○ Load compliance tag csv file 
+. Steps: Import and publish retention labels
+    ○ Load retention labels csv file 
     ○ Validate csv file input
-    ○ Create compliance tag
-    ○ Create compliance policy
-    ○ Publish compliance tag for the policy
-    ○ Generate the log for tags creation
-    ○ Generate the csv result for the tags created and published
+    ○ Create retention labels
+    ○ Create retention policies
+    ○ Publish retention labels for the policies
+    ○ Generate the log for retention labels and policies creation
+    ○ Generate the csv result for the labels and policies created
 . Syntax
     .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
@@ -714,33 +734,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a>Passaggio 4: connettersi a PowerShell in Centro sicurezza e conformità
+## <a name="step-4-run-the-powershell-script"></a>Passaggio 4: eseguire lo script di PowerShell
 
-Seguire i passaggi seguenti:
+Prima di tutto,[connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+
+Quindi, eseguire lo script che crea e pubblica le etichette di conservazione:
   
-- [Connettersi a &amp;PowerShell in Centro sicurezza e conformità](https://go.microsoft.com/fwlink/?linkid=799771).
+1. Nella sessione di PowerShell nel Centro sicurezza e conformità, inserire il percorso, seguito dai caratteri `.\` e il nome file dello script, quindi premere INVIO per eseguire lo script. Ad esempio:
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>Passaggio 5: eseguire lo script di PowerShell per creare e pubblicare le etichette di conservazione
+    ```powershell
+    <path>.\CreateRetentionSchedule.ps1
+    ```
 
-Dopo essersi connessi a PowerShell nel Centro sicurezza e conformità, eseguire lo script che consente di creare e pubblicare le etichette di conservazione.
-  
-1. Nella sessione di PowerShell nel Centro sicurezza e conformità, inserire il percorso, seguito dai caratteri .\ e il nome file dello script, quindi premere INVIO per eseguire lo script, ad esempio:
+2. Lo script chiederà i percorsi dei file .csv creati in precedenza. Inserire il percorso, seguito dai caratteri `.\` e il nome file del file .csv, quindi premere INVIO. Ad esempio, per la prima richiesta:
     
-  ```
-  <path>.\CreateRetentionSchedule.ps1
-  ```
+    ```powershell
+    <path>.\Labels.csv
+    ```
 
-    Lo script chiederà i percorsi dei file .csv creati in precedenza.
-    
-2. Inserire il percorso, seguito dai caratteri .\ e il nome file del file .csv, quindi premere INVIO, ad esempio:
-    
-  ```
-  <path>.\LabelsToCreate.csv
-  ```
+## <a name="step-5-view-the-log-file-with-the-results"></a>Passaggio 5: visualizzare il file di log con i risultati
 
-## <a name="step-6-view-the-log-file-with-the-results"></a>Passaggio 6: visualizzare il file di log con i risultati
+Usare il file di log creato dallo script per controllare i risultati e identificare gli errori che devono essere risolti.
 
-Quando si esegue lo script, viene generato un file di log che registra ogni azione e il relativo risultato. Il file di log include tutti i metadati relativi alle etichette di conservazione create e a quelle pubblicate. È possibile trovare il file di log in questo percorso (tenere presente che le cifre nel nome file possono variare).
+È possibile trovare il file di log nel percorso seguente, anche se le cifre del nome del file di esempio variano.
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
