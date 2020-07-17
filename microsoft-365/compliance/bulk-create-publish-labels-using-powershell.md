@@ -1,5 +1,5 @@
 ---
-title: Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
+title: Creare e pubblicare etichette di conservazione con PowerShell
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,43 +17,52 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni su come usare le etichette di conservazione di Office 365 per implementare una pianificazione di conservazione per l'organizzazione con PowerShell.
-ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Informazioni sull'uso di PowerShell per la creazione e la pubblicazione di etichette di conservazione dalla riga di comando, indipendentemente dal centro conformità di Microsoft 365.
+ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035534"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126367"
 ---
-# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="af426-103">Creare e pubblicare in blocco etichette di conservazione tramite PowerShell</span><span class="sxs-lookup"><span data-stu-id="af426-103">Bulk create and publish retention labels by using PowerShell</span></span>
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="7841d-103">Creare e pubblicare etichette di conservazione con PowerShell</span><span class="sxs-lookup"><span data-stu-id="7841d-103">Create and publish retention labels by using PowerShell</span></span>
 
-><span data-ttu-id="af426-104">*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*</span><span class="sxs-lookup"><span data-stu-id="af426-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
+><span data-ttu-id="7841d-104">*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*</span><span class="sxs-lookup"><span data-stu-id="7841d-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
 
-<span data-ttu-id="af426-p101">In Office 365, è possibile usare le etichette di conservazione per implementare una pianificazione di conservazione dell'organizzazione. I responsabili dei record o della conformità potrebbero dover creare e pubblicare centinaia di etichette di conservazione. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette di conservazione una alla volta richiede molto tempo e non è pratico.</span><span class="sxs-lookup"><span data-stu-id="af426-p101">In Office 365, you can use retention labels to implement a retention schedule for your organization. As a record manager or compliance officer, you might have hundreds of retention labels to create and publish. You can do this through the UI in the Security &amp; Compliance Center, but creating retention labels one at a time is time-consuming and inefficient.</span></span>
+<span data-ttu-id="7841d-105">Se hai deciso di usare le [etichette di conservazione](retention.md) per tenere o eliminare documenti e messaggi di posta elettronica in Microsoft 365, ti renderai conto che ne esistono centinaia per creare e pubblicare.</span><span class="sxs-lookup"><span data-stu-id="7841d-105">After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish.</span></span> <span data-ttu-id="7841d-106">Il metodo consigliato per creare etichette di conservazione in larga scala consiste nell'usare il [piano di archiviazione](file-plan-manager.md) dal centro conformità di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="7841d-106">The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft 365 compliance center.</span></span> <span data-ttu-id="7841d-107">Tuttavia, è anche possibile usare [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).</span><span class="sxs-lookup"><span data-stu-id="7841d-107">However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).</span></span>
   
-<span data-ttu-id="af426-108">Con lo script e i file CSV forniti di seguito, è possibile creare in blocco etichette di conservazione e criteri di etichetta di conservazione.</span><span class="sxs-lookup"><span data-stu-id="af426-108">By using the script and .csv files provided below, you can bulk create retention labels and publish retention label policies.</span></span> <span data-ttu-id="af426-109">Prima di tutto, creare un elenco di etichette di conservazione e un elenco dei criteri di etichetta di conservazione in Excel e quindi usare PowerShell per creare in blocco le etichette di conservazione e i criteri di etichetta di conservazione contenuti in tali elenchi.</span><span class="sxs-lookup"><span data-stu-id="af426-109">First you create a list of the retention labels and a list of the retention label policies in Excel, and then you use PowerShell to bulk create the retention labels and retention label policies in those lists.</span></span> <span data-ttu-id="af426-110">In questo modo si possono creare e pubblicare facilmente e contemporaneamente tutte le etichette di conservazione richieste dalla pianificazione di conservazione.</span><span class="sxs-lookup"><span data-stu-id="af426-110">This makes it easier to create and publish all of the retention labels that your retention schedule requires at one time.</span></span>
-  
-<span data-ttu-id="af426-111">Per ulteriori informazioni sulle etichette di conservazione, vedere [Panoramica delle etichette](labels.md).</span><span class="sxs-lookup"><span data-stu-id="af426-111">For more information about retention labels, see [Overview of labels](labels.md).</span></span>
-  
-## <a name="disclaimer"></a><span data-ttu-id="af426-112">Dichiarazione di non responsabilità</span><span class="sxs-lookup"><span data-stu-id="af426-112">Disclaimer</span></span>
+<span data-ttu-id="7841d-108">Utilizzare le informazioni, i file modello, gli esempi e lo script in questo articolo per creare le etichette di conservazione in blocco e pubblicarle nei criteri delle etichette di conservazione.</span><span class="sxs-lookup"><span data-stu-id="7841d-108">Use the information, template files and examples, and script in this article to help you bulk-create retention labels and publish them in retention label policies.</span></span> <span data-ttu-id="7841d-109">Quindi, le etichette di conservazione possono essere [applicate da amministratori e utenti](create-apply-retention-labels.md#how-to-apply-published-retention-labels).</span><span class="sxs-lookup"><span data-stu-id="7841d-109">Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).</span></span>
 
-<span data-ttu-id="af426-p103">Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.</span><span class="sxs-lookup"><span data-stu-id="af426-p103">The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
-  
-## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a><span data-ttu-id="af426-118">Passaggio 1: creare un file .csv per la creazione delle etichette di conservazione</span><span class="sxs-lookup"><span data-stu-id="af426-118">Step 1: Create a .csv file for creating the retention labels</span></span>
+<span data-ttu-id="7841d-110">Le istruzioni fornite non supportano le etichette di conservazione applicate automaticamente al contenuto.</span><span class="sxs-lookup"><span data-stu-id="7841d-110">The supplied instructions don't support retention labels that are auto-applied.</span></span>
 
-<span data-ttu-id="af426-p104">Innanzitutto, è necessario creare un file .csv contenente un elenco delle etichette di conservazione con le relative impostazioni. È possibile usare l'esempio in basso come modello copiandolo in Excel, convertendo il testo in colonne (nella scheda \> **Dati** di Excel \> **Testo in colonne** \> **Delimitato** \> **Virgola** \> **Generale**), quindi salvando il foglio di lavoro come file .csv in un percorso facile da trovare.</span><span class="sxs-lookup"><span data-stu-id="af426-p104">First you create a .csv file that contains a list of your retention labels with their settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.</span></span>
+<span data-ttu-id="7841d-111">Panoramica:</span><span class="sxs-lookup"><span data-stu-id="7841d-111">Overview:</span></span> 
+
+1. <span data-ttu-id="7841d-112">Creare un elenco delle etichette di conservazione e dei criteri relativi alle etichette di conservazione in Excel.</span><span class="sxs-lookup"><span data-stu-id="7841d-112">In Excel, create a list of your retention labels and a list of their retention label policies.</span></span>
+
+2. <span data-ttu-id="7841d-113">Usare PowerShell per creare le etichette di conservazione e i criteri delle etichette di conservazione in tali elenchi.</span><span class="sxs-lookup"><span data-stu-id="7841d-113">Use PowerShell to create the retention labels and retention label policies in those lists.</span></span>
   
-<span data-ttu-id="af426-121">Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span><span class="sxs-lookup"><span data-stu-id="af426-121">For more information about the parameter values for this cmdlet, see [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span></span>
+## <a name="disclaimer"></a><span data-ttu-id="7841d-114">Dichiarazione di non responsabilità</span><span class="sxs-lookup"><span data-stu-id="7841d-114">Disclaimer</span></span>
+
+<span data-ttu-id="7841d-115">Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft.</span><span class="sxs-lookup"><span data-stu-id="7841d-115">The sample scripts provided in this article aren't supported under any Microsoft standard support program or service.</span></span> <span data-ttu-id="7841d-116">Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia.</span><span class="sxs-lookup"><span data-stu-id="7841d-116">The sample scripts are provided AS IS without warranty of any kind.</span></span> <span data-ttu-id="7841d-117">Microsoft esclude inoltre qualsiasi garanzia implicita, tra cui, senza limitazioni, tutte le garanzie implicite di commerciabilità o idoneità per uno scopo specifico.</span><span class="sxs-lookup"><span data-stu-id="7841d-117">Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose.</span></span> <span data-ttu-id="7841d-118">L'utente assume tutti i rischi associati all'uso o alle prestazioni degli script di esempio e della documentazione.</span><span class="sxs-lookup"><span data-stu-id="7841d-118">The entire risk arising out of the use or performance of the sample scripts and documentation remains with you.</span></span> <span data-ttu-id="7841d-119">In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.</span><span class="sxs-lookup"><span data-stu-id="7841d-119">In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
   
-<span data-ttu-id="af426-122">Note:</span><span class="sxs-lookup"><span data-stu-id="af426-122">Notes:</span></span>
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a><span data-ttu-id="7841d-120">Passaggio 1: creare un file .csv per le etichette di conservazione</span><span class="sxs-lookup"><span data-stu-id="7841d-120">Step 1: Create a .csv file for the retention labels</span></span>
+
+1. <span data-ttu-id="7841d-121">Copiare il file .csv di esempio per un modello e le voci di esempio per quattro etichette di conservazione diverse e incollarle in Excel.</span><span class="sxs-lookup"><span data-stu-id="7841d-121">Copy the following sample .csv file for a template and example entries for four different retention labels, and paste them into Excel.</span></span> 
+
+2. <span data-ttu-id="7841d-122">Convertire il testo in colonne: **dati** tab \> **testo in colonne** \> **delimitato** \> **virgola** \> **generale**</span><span class="sxs-lookup"><span data-stu-id="7841d-122">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
+
+2. <span data-ttu-id="7841d-123">Sostituire gli esempi con le voci per le proprie etichette di conservazione e impostazioni.</span><span class="sxs-lookup"><span data-stu-id="7841d-123">Replace the examples with entries for your own retention labels and settings.</span></span> <span data-ttu-id="7841d-124">Per ulteriori informazioni sui valori dei parametri, vedere [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span><span class="sxs-lookup"><span data-stu-id="7841d-124">For more information about the parameter values, see [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span></span>
+
+3. <span data-ttu-id="7841d-125">Salvare il foglio di lavoro come file .csv in un percorso facile da trovare per un passaggio successivo.</span><span class="sxs-lookup"><span data-stu-id="7841d-125">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="7841d-126">Ad esempio: C:\>Scripts\Labels.csv</span><span class="sxs-lookup"><span data-stu-id="7841d-126">For example: C:\>Scripts\Labels.csv</span></span>
+
   
-- <span data-ttu-id="af426-123">Se non si fornisce un file di origine per la creazione delle etichette di conservazione, lo script va avanti e chiede il file di origine per la pubblicazione delle etichette di conservazione (vedere la sezione successiva), quindi lo script pubblica solo le etichette di conservazione esistenti.</span><span class="sxs-lookup"><span data-stu-id="af426-123">If you don't provide a source file for creating retention labels, the script moves on and prompts you for the source file for publishing retention labels (see the next section), and the script will publish only existing retention labels.</span></span>
+<span data-ttu-id="7841d-127">Note:</span><span class="sxs-lookup"><span data-stu-id="7841d-127">Notes:</span></span>
+
+- <span data-ttu-id="7841d-p106">Se il file .csv contiene un'etichetta di conservazione con lo stesso nome di un'altra già esistente, lo script ignora la creazione di quell’etichetta. Non vengono create etichette di conservazione duplicate.</span><span class="sxs-lookup"><span data-stu-id="7841d-p106">If the .csv file contains a retention label with the same name as one that already exists, the script skips creating that retention label. No duplicate retention labels are created.</span></span>
     
-- <span data-ttu-id="af426-p105">Se il file .csv contiene un'etichetta di conservazione con lo stesso nome di un'altra già esistente, lo script ignora la creazione di quell’etichetta. Non vengono create etichette di conservazione duplicate.</span><span class="sxs-lookup"><span data-stu-id="af426-p105">If the .csv file contains a retention label with the same name as one that already exists, the script skips creating that retention label. No duplicate retention labels are created.</span></span>
+- <span data-ttu-id="7841d-130">Non modificare o rinominare le intestazioni di colonna del file .csv di esempio oppure lo script avrà esito negativo.</span><span class="sxs-lookup"><span data-stu-id="7841d-130">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
     
-- <span data-ttu-id="af426-p106">Se si modificano o rinominano le intestazioni delle colonne, lo script avrà esito negativo. Lo script richiede un file .csv nel formato fornito qui.</span><span class="sxs-lookup"><span data-stu-id="af426-p106">If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.</span></span>
-    
-### <a name="sample-csv-file"></a><span data-ttu-id="af426-128">File .csv di esempio</span><span class="sxs-lookup"><span data-stu-id="af426-128">Sample .csv file</span></span>
+### <a name="sample-csv-file-for-retention-labels"></a><span data-ttu-id="7841d-131">File .csv di esempio per le etichette di conservazione</span><span class="sxs-lookup"><span data-stu-id="7841d-131">Sample .csv file for retention labels</span></span>
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -63,23 +72,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a><span data-ttu-id="af426-129">Passaggio 2: creare un file .csv per la pubblicazione delle etichette</span><span class="sxs-lookup"><span data-stu-id="af426-129">Step 2: Create a .csv file for publishing the labels</span></span>
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a><span data-ttu-id="7841d-132">Passaggio 2: creare un file .csv per i criteri delle etichette di conservazione</span><span class="sxs-lookup"><span data-stu-id="7841d-132">Step 2: Create a .csv file for the retention label policies</span></span>
 
-<span data-ttu-id="af426-p107">È quindi il momento di creare un file .csv contenente un elenco dei criteri delle etichette di conservazione con i relativi percorsi e altre impostazioni. È possibile usare l'esempio in basso come modello copiandolo in Excel, convertendo il testo in colonne (nella scheda \> **Dati** di Excel \> **Testo in colonne** \> **Delimitato** \> **Virgola** \> **Generale**), quindi salvando il foglio di lavoro come file .csv in un percorso facile da trovare.</span><span class="sxs-lookup"><span data-stu-id="af426-p107">Next you create a .csv file that contains a list of retention label policies with their locations and other settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.</span></span>
+1. <span data-ttu-id="7841d-133">Copiare il file .csv di esempio per un modello e voci di esempio per tre diversi criteri di etichetta di conservazione e incollarli in Excel.</span><span class="sxs-lookup"><span data-stu-id="7841d-133">Copy the following sample .csv file for a template and example entries for three different retention label policies, and paste them into Excel.</span></span> 
+
+2. <span data-ttu-id="7841d-134">Convertire il testo in colonne: **dati** tab \> **testo in colonne** \> **delimitato** \> **virgola** \> **generale**</span><span class="sxs-lookup"><span data-stu-id="7841d-134">Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**</span></span>
+
+2. <span data-ttu-id="7841d-135">Sostituire gli esempi con le voci relative ai criteri dell'etichetta di conservazione e alle relative impostazioni.</span><span class="sxs-lookup"><span data-stu-id="7841d-135">Replace the examples with entries for your own retention label policies and their settings.</span></span> <span data-ttu-id="7841d-136">Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).</span><span class="sxs-lookup"><span data-stu-id="7841d-136">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).</span></span>
+
+3. <span data-ttu-id="7841d-137">Salvare il foglio di lavoro come file .csv in un percorso facile da trovare per un passaggio successivo.</span><span class="sxs-lookup"><span data-stu-id="7841d-137">Save the worksheet as a .csv file in a location that's easy to find for a later step.</span></span> <span data-ttu-id="7841d-138">Ad esempio: `<path>Policies.csv`</span><span class="sxs-lookup"><span data-stu-id="7841d-138">For example: `<path>Policies.csv`</span></span>
+
+
+<span data-ttu-id="7841d-139">Note:</span><span class="sxs-lookup"><span data-stu-id="7841d-139">Notes:</span></span>
   
-<span data-ttu-id="af426-132">Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).</span><span class="sxs-lookup"><span data-stu-id="af426-132">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).</span></span>
-  
-<span data-ttu-id="af426-133">Note:</span><span class="sxs-lookup"><span data-stu-id="af426-133">Notes:</span></span>
-  
-- <span data-ttu-id="af426-134">Se non si fornisce un file di origine per la pubblicazione delle etichette di conservazione, lo script crea le etichette (vedere la sezione precedente), ma non le pubblica.</span><span class="sxs-lookup"><span data-stu-id="af426-134">If you don't provide a source file for publishing retention labels, the script creates retention labels (see the previous section) but doesn't publish them.</span></span>
+- <span data-ttu-id="7841d-p109">Se il file .csv contiene un criterio per le etichette di con conservazione con lo stesso nome di un altro già esistente, lo script ignora la creazione di quel criterio. Non vengono creati criteri per le etichette di conservazione duplicati.</span><span class="sxs-lookup"><span data-stu-id="7841d-p109">If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate retention label policies are created.</span></span>
     
-- <span data-ttu-id="af426-p108">Se il file .csv contiene un criterio per le etichette di con conservazione con lo stesso nome di un altro già esistente, lo script ignora la creazione di quel criterio. Non vengono creati criteri per le etichette di conservazione duplicati.</span><span class="sxs-lookup"><span data-stu-id="af426-p108">If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate retention label policies are created.</span></span>
+- <span data-ttu-id="7841d-142">Non modificare o rinominare le intestazioni di colonna del file .csv di esempio oppure lo script avrà esito negativo.</span><span class="sxs-lookup"><span data-stu-id="7841d-142">Don't change or rename the column headers from the sample .csv file provided, or the script will fail.</span></span>
     
-- <span data-ttu-id="af426-137">Lo script pubblica solo le etichette di conservazione applicate manualmente al contenuto.</span><span class="sxs-lookup"><span data-stu-id="af426-137">The script publishes only retention labels that are applied manually to content.</span></span> <span data-ttu-id="af426-138">Questo script non supporta le etichette di conservazione applicate automaticamente al contenuto.</span><span class="sxs-lookup"><span data-stu-id="af426-138">This script doesn't support retention labels that are auto-applied to content.</span></span>
-    
-- <span data-ttu-id="af426-p110">Se si modificano o rinominano le intestazioni delle colonne, lo script avrà esito negativo. Lo script richiede un file .csv nel formato fornito qui.</span><span class="sxs-lookup"><span data-stu-id="af426-p110">If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.</span></span>
-    
-### <a name="sample-csv-file"></a><span data-ttu-id="af426-141">File .csv di esempio</span><span class="sxs-lookup"><span data-stu-id="af426-141">Sample .csv file</span></span>
+### <a name="sample-csv-file-for-retention-policies"></a><span data-ttu-id="7841d-143">File .csv di esempio per i criteri di conservazione</span><span class="sxs-lookup"><span data-stu-id="7841d-143">Sample .csv file for retention policies</span></span>
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -88,22 +98,32 @@ Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
 Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
-## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="af426-142">Passaggio 3: creare lo script di PowerShell</span><span class="sxs-lookup"><span data-stu-id="af426-142">Step 3: Create the PowerShell script</span></span>
+## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="7841d-144">Passaggio 3: creare lo script di PowerShell</span><span class="sxs-lookup"><span data-stu-id="7841d-144">Step 3: Create the PowerShell script</span></span>
 
-<span data-ttu-id="af426-p111">Copiare e incollare il seguente script di PowerShell nel Blocco note. Salvare il file con il suffisso del filename di .ps1 in un percorso facile da trovare, ad esempio, \<percorso\>CreateRetentionSchedule.ps1.</span><span class="sxs-lookup"><span data-stu-id="af426-p111">Copy and paste the below PowerShell script into Notepad. Save the file by using a filename suffix of .ps1 in a location that's easy to find -- for example, \<path\>CreateRetentionSchedule.ps1.</span></span>
-  
-### <a name="powershell-script"></a><span data-ttu-id="af426-145">Script di PowerShell</span><span class="sxs-lookup"><span data-stu-id="af426-145">PowerShell script</span></span>
+1. <span data-ttu-id="7841d-145">Copiare e incollare lo script di PowerShell nel Blocco note.</span><span class="sxs-lookup"><span data-stu-id="7841d-145">Copy and paste the following PowerShell script into Notepad.</span></span>
 
-```
+2. <span data-ttu-id="7841d-146">Salvare il file con un'estensione di file **. ps1** in un percorso facile da trovare.</span><span class="sxs-lookup"><span data-stu-id="7841d-146">Save the file by using a file name extension of **.ps1** in a location that's easy to find.</span></span> <span data-ttu-id="7841d-147">Ad esempio: `<path>CreateRetentionSchedule.ps1`</span><span class="sxs-lookup"><span data-stu-id="7841d-147">For example: `<path>CreateRetentionSchedule.ps1`</span></span>
+
+<span data-ttu-id="7841d-148">Note:</span><span class="sxs-lookup"><span data-stu-id="7841d-148">Notes:</span></span>
+
+- <span data-ttu-id="7841d-149">Lo script chiede di specificare i due file di origine creati nei due passaggi precedenti:</span><span class="sxs-lookup"><span data-stu-id="7841d-149">The script prompts you to provide the two source files that you created in the previous two steps:</span></span>
+    - <span data-ttu-id="7841d-150">Se non si specifica il file di origine per creare le etichette di conservazione, lo script andrà avanti e creerà i criteri per le etichette di conservazione.</span><span class="sxs-lookup"><span data-stu-id="7841d-150">If you don't specify the source file to create the retention labels, the script moves on to create the retention label policies.</span></span> 
+    - <span data-ttu-id="7841d-151">Se non si specifica il file di origine per creare i criteri per l'etichetta di conservazione, lo script creerà solo le etichette di conservazione.</span><span class="sxs-lookup"><span data-stu-id="7841d-151">If you don't specify the source file to create the retention label policies, the script creates the retention labels only.</span></span>
+
+- <span data-ttu-id="7841d-152">Lo script genera un file di log che registra tutte le azioni eseguite e il loro esito.</span><span class="sxs-lookup"><span data-stu-id="7841d-152">The script generates a log file that records each action it took and whether the action succeeded or failed.</span></span> <span data-ttu-id="7841d-153">Vedere il passaggio finale con le istruzioni su come trovare il file di log.</span><span class="sxs-lookup"><span data-stu-id="7841d-153">See the final step for instructions how to locate this log file.</span></span>
+
+### <a name="powershell-script"></a><span data-ttu-id="7841d-154">Script di PowerShell</span><span class="sxs-lookup"><span data-stu-id="7841d-154">PowerShell script</span></span>
+
+```Powershell
 <#
-. Steps: Import and Publish Compliance Tag
-    ○ Load compliance tag csv file 
+. Steps: Import and publish retention labels
+    ○ Load retention labels csv file 
     ○ Validate csv file input
-    ○ Create compliance tag
-    ○ Create compliance policy
-    ○ Publish compliance tag for the policy
-    ○ Generate the log for tags creation
-    ○ Generate the csv result for the tags created and published
+    ○ Create retention labels
+    ○ Create retention policies
+    ○ Publish retention labels for the policies
+    ○ Generate the log for retention labels and policies creation
+    ○ Generate the csv result for the labels and policies created
 . Syntax
     .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
@@ -714,33 +734,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a><span data-ttu-id="af426-146">Passaggio 4: connettersi a PowerShell in Centro sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="af426-146">Step 4: Connect to Security &amp; Compliance Center PowerShell</span></span>
+## <a name="step-4-run-the-powershell-script"></a><span data-ttu-id="7841d-155">Passaggio 4: eseguire lo script di PowerShell</span><span class="sxs-lookup"><span data-stu-id="7841d-155">Step 4: Run the PowerShell script</span></span>
 
-<span data-ttu-id="af426-147">Seguire i passaggi seguenti:</span><span class="sxs-lookup"><span data-stu-id="af426-147">Follow the steps here:</span></span>
+<span data-ttu-id="7841d-156">Prima di tutto,[connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).</span><span class="sxs-lookup"><span data-stu-id="7841d-156">First, [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).</span></span>
+
+<span data-ttu-id="7841d-157">Quindi, eseguire lo script che crea e pubblica le etichette di conservazione:</span><span class="sxs-lookup"><span data-stu-id="7841d-157">Then, run the script that creates and publishes the retention labels:</span></span>
   
-- <span data-ttu-id="af426-148">[Connettersi a &amp;PowerShell in Centro sicurezza e conformità](https://go.microsoft.com/fwlink/?linkid=799771).</span><span class="sxs-lookup"><span data-stu-id="af426-148">[Connect to Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)</span></span>
+1. <span data-ttu-id="7841d-158">Nella sessione di PowerShell nel Centro sicurezza e conformità, inserire il percorso, seguito dai caratteri `.\` e il nome file dello script, quindi premere INVIO per eseguire lo script.</span><span class="sxs-lookup"><span data-stu-id="7841d-158">In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script.</span></span> <span data-ttu-id="7841d-159">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="7841d-159">For example:</span></span>
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a><span data-ttu-id="af426-149">Passaggio 5: eseguire lo script di PowerShell per creare e pubblicare le etichette di conservazione</span><span class="sxs-lookup"><span data-stu-id="af426-149">Step 5: Run the PowerShell script to create and publish the retention labels</span></span>
+    ```powershell
+    <path>.\CreateRetentionSchedule.ps1
+    ```
 
-<span data-ttu-id="af426-150">Dopo essersi connessi a PowerShell nel Centro sicurezza e conformità, eseguire lo script che consente di creare e pubblicare le etichette di conservazione.</span><span class="sxs-lookup"><span data-stu-id="af426-150">After you've connected to Security &amp; Compliance Center PowerShell, next you run the script that creates and publishes the retention labels.</span></span>
-  
-1. <span data-ttu-id="af426-151">Nella sessione di PowerShell nel Centro sicurezza e conformità, inserire il percorso, seguito dai caratteri .\ e il nome file dello script, quindi premere INVIO per eseguire lo script, ad esempio:</span><span class="sxs-lookup"><span data-stu-id="af426-151">In the Security &amp; Compliance PowerShell session, enter the path, followed by the characters .\ and file name of the script, and then press ENTER to run the script - for example:</span></span>
+2. <span data-ttu-id="7841d-160">Lo script chiederà i percorsi dei file .csv creati in precedenza.</span><span class="sxs-lookup"><span data-stu-id="7841d-160">The script prompts you for the locations of the .csv files that you created in the previous steps.</span></span> <span data-ttu-id="7841d-161">Inserire il percorso, seguito dai caratteri `.\` e il nome file del file .csv, quindi premere INVIO.</span><span class="sxs-lookup"><span data-stu-id="7841d-161">Enter the path, followed by the characters `.\` and file name of the .csv file, and then press ENTER.</span></span> <span data-ttu-id="7841d-162">Ad esempio, per la prima richiesta:</span><span class="sxs-lookup"><span data-stu-id="7841d-162">For example, for the first prompt:</span></span>
     
-  ```
-  <path>.\CreateRetentionSchedule.ps1
-  ```
+    ```powershell
+    <path>.\Labels.csv
+    ```
 
-    <span data-ttu-id="af426-152">Lo script chiederà i percorsi dei file .csv creati in precedenza.</span><span class="sxs-lookup"><span data-stu-id="af426-152">The script will prompt you for the locations of the .csv files that you created above.</span></span>
-    
-2. <span data-ttu-id="af426-153">Inserire il percorso, seguito dai caratteri .\ e il nome file del file .csv, quindi premere INVIO, ad esempio:</span><span class="sxs-lookup"><span data-stu-id="af426-153">Enter the path, followed by the characters .\ and file name of the .csv file, and then press ENTER - for example:</span></span>
-    
-  ```
-  <path>.\LabelsToCreate.csv
-  ```
+## <a name="step-5-view-the-log-file-with-the-results"></a><span data-ttu-id="7841d-163">Passaggio 5: visualizzare il file di log con i risultati</span><span class="sxs-lookup"><span data-stu-id="7841d-163">Step 5: View the log file with the results</span></span>
 
-## <a name="step-6-view-the-log-file-with-the-results"></a><span data-ttu-id="af426-154">Passaggio 6: visualizzare il file di log con i risultati</span><span class="sxs-lookup"><span data-stu-id="af426-154">Step 6: View the log file with the results</span></span>
+<span data-ttu-id="7841d-164">Usare il file di log creato dallo script per controllare i risultati e identificare gli errori che devono essere risolti.</span><span class="sxs-lookup"><span data-stu-id="7841d-164">Use the log file that the script created to check the results and identify any failures that need resolving.</span></span>
 
-<span data-ttu-id="af426-p112">Quando si esegue lo script, viene generato un file di log che registra ogni azione e il relativo risultato. Il file di log include tutti i metadati relativi alle etichette di conservazione create e a quelle pubblicate. È possibile trovare il file di log in questo percorso (tenere presente che le cifre nel nome file possono variare).</span><span class="sxs-lookup"><span data-stu-id="af426-p112">When you run the script, it generates a log file that records each action it took and whether the action succeeded or failed. The log file includes all metadata about the retention labels created and the retention labels published. You can find the log file at this location -- note that the digits in the file name vary.</span></span>
+<span data-ttu-id="7841d-165">È possibile trovare il file di log nel percorso seguente, anche se le cifre del nome del file di esempio variano.</span><span class="sxs-lookup"><span data-stu-id="7841d-165">You can find the log file at the following location, although the digits in the example file name vary.</span></span>
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
