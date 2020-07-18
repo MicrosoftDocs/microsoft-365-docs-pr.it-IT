@@ -4,14 +4,18 @@ description: ''
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
+ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094787"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "45170672"
 ---
 # <a name="new-microsoft-edge-app"></a>Nuova app Microsoft Edge
 
@@ -38,7 +42,7 @@ La baseline di sicurezza per Microsoft Edge nei dispositivi Microsoft Managed De
 #### <a name="extension-installation-blocklist"></a>Blocco per l'installazione dell'estensione
 **Valore predefinito:** Tutti
 
-Microsoft Managed Desktop imposta questo criterio per impedire l'installazione delle estensioni Chrome negli endpoint gestiti. Sono noti risksassociated con il modello di estensione Chromium, tra cui la protezione dalla perdita di dati, la privacy e altri rischi che possono compromettere i dispositivi. 
+Microsoft Managed Desktop imposta questo criterio per impedire l'installazione delle estensioni Chrome negli endpoint gestiti. Sono noti i rischi sassociated con il modello di estensione Chromium, tra cui la protezione dalla perdita di dati, la privacy e altri rischi che possono compromettere i dispositivi. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Consenti host di messaggistica nativa a livello di utente (installati senza autorizzazioni di amministratore)
 
@@ -119,7 +123,7 @@ Con questo criterio applicato, la prima operazione di esecuzione ignorerà la se
 
 ## <a name="settings-you-manage"></a>Impostazioni gestite
 
-È possibile distribuire le impostazioni del server perimetrale di Microsoft non descritte in precedenza utilizzando il profilo dei modelli amministrativi in Microsoft Intune. Per ulteriori informazioni, vedere [configurare le impostazioni dei criteri Microsoft Edge con Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Se si desidera valutare un criterio che non è attualmente incluso nei modelli amministrativi Microsoft Edge in Intune, è possibile utilizzare le impostazioni personalizzate per i dispositivi Windows 10 in Intune.
+È possibile distribuire le impostazioni di Microsoft Edge non descritte in precedenza utilizzando il profilo dei modelli amministrativi in Microsoft Intune. Per ulteriori informazioni, vedere [configurare le impostazioni dei criteri Microsoft Edge con Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Se si desidera valutare un criterio che non è attualmente incluso nei modelli amministrativi Microsoft Edge in Intune, è possibile utilizzare le impostazioni personalizzate per i dispositivi Windows 10 in Intune.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Abilitazione di estensioni Chrome specifiche
 

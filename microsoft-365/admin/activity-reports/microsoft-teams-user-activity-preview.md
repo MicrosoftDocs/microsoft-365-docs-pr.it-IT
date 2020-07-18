@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come ottenere il report attività degli utenti di Microsoft teams e acquisire maggiori informazioni sull'attività dei team nell'organizzazione.
-ms.openlocfilehash: 6c4f8a2ae9e6e88a17b65e61547e03583d116fbd
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158846"
+ms.locfileid: "45167342"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft teams-anteprima
 
@@ -51,9 +51,9 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 |Totale riunioni   <br/> |Il numero di riunioni online a cui l'utente ha partecipato durante il periodo di tempo specificato.  <br/> |
 |1:1 chiamate   <br/> | Il numero di chiamate 1:1 che l'utente ha partecipato durante il periodo di tempo specificato.  <br/> |
 |Data ultima attività (UTC)  <br/> |Ultima data in cui l'utente ha partecipato a un'attività di Microsoft teams.<br/> |
-|Gli incontri hanno partecipato ad Adhoc   <br/> | Il numero di riunioni ad hoc a cui l'utente ha partecipato durante il periodo di tempo specificato.  <br/> |
-|Riunioni organizzate ad hoc <br/> |Il numero di riunioni ad hoc che l'utente ha organizzato durante il periodo di tempo specificato. <br/>|
+|Gli incontri hanno partecipato ad Adhoc   <br/> | Il numero di riunioni non pianificate nel calendario in cui l'utente ha partecipato durante il periodo di tempo specificato.  <br/> |
+|Riunioni organizzate ad hoc <br/> |Il numero di riunioni non pianificate nel calendario che l'utente ha organizzato durante il periodo di tempo specificato. <br/>|
 |Riunioni organizzate pianificate  <br/> |Il numero di riunioni pianificate che un utente ha organizzato durante il periodo di tempo specificato.  <br/> |
 |È concesso in licenza |Selezionato se l'utente è autorizzato a usare i team.|
-|Altre attività|Il numero di altre attività del team da parte dell'utente. |
+|Altre attività|L'utente è considerato attivo ma ha un valore pari a zero per i messaggi di chat, 1:1 chiamate, messaggi di canale, riunioni totali e riunioni organizzate. Esempi di azioni si verificano quando il client Microsoft teams viene attivato in primo piano, le azioni sono state eseguite nell'area di composizione dei messaggi, i toast sono stati visualizzati nel client Microsoft teams, i banner sono stati mostrati nel client Microsoft teams e così via. |
 |||
