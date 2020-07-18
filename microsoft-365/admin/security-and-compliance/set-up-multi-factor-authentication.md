@@ -23,82 +23,43 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Scopri come configurare l'autenticazione a più fattori per l'organizzazione.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 56ca51e77b2ba4fa370a2814a7be9df1393c29dc
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 597d8383166e0ddae0984573d77ba75cf54dafdd
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083539"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146231"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
   
 Basandosi sulla conoscenza dell'[autenticazione a più fattori (MFA) e del relativo supporto in Microsoft 365](multi-factor-authentication-microsoft-365.md), è ora di configurarla e implementarla nell'organizzazione.
 
-Prima di iniziare, determinare se queste condizioni speciali sono valide per la propria situazione ed eseguire l'azione appropriata:
+> [!IMPORTANT]
+> Se è stato acquistato un abbonamento o una versione di valutazione dopo il 21 ottobre 2019 e viene richiesto di eseguire l'autenticazione MFA quando si accede, le [impostazioni di sicurezza predefinite](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) sono state abilitate automaticamente per l'abbonamento.
 
-- Se si hanno client di Office 2013 su dispositivi Windows, [abilitare Autenticazione moderna](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
 
-- Se si hanno servizi directory di terze parti con Active Directory Federation Services (ADFS), configurare il server Azure MFA. Per altre informazioni, vedere [Scenari avanzati con server di autenticazione a più fattori di Azure e soluzioni VPN di terze parti](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-Tutti gli altri utenti dovranno eseguire l'autenticazione aggiuntiva quando necessario. Per altre informazioni, vedere [Metodo e impostazioni di verifica a due fattori](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings#turn-on-two-factor-verification-prompts-on-a-trusted-device).
+- È necessario essere un ammistratore globale per gestire l-autenticazione MFA. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../add-users/about-admin-roles.md).
+- Se l'autenticazione MFA per persona è abilitata, è necessario [Disabilitare l'autenticazione MFA per persona ereditata](#turn-off-legacy-per-person-mfa).
+- Se si hanno client di Office 2013 su dispositivi Windows, [attivare Autenticazione moderna per i client Office 2013](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
+- Avanzato: se si hanno servizi directory di terze parti con Active Directory Federation Services (ADFS), configurare il server Azure MFA. Per altre informazioni, vedere [Scenari avanzati con server di autenticazione a più fattori di Azure e soluzioni VPN di terze parti](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
 
-## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Passaggio 1: scegliere il metodo per richiedere agli utenti di usare la MFA
+## <a name="turn-security-defaults-on-or-off"></a>Attivare o disattivare le impostazioni di sicurezza predefinite
 
-> [!NOTE]
-> Per eseguire questi passaggi, è necessario essere un amministratore globale o modificare MFA. Sono disponibili tre modi per richiedere agli utenti di usare la MFA per gli accessi. Per informazioni dettagliate, vedere [Supporto all’autenticazione a più fattori in Microsoft 365](multi-factor-authentication-microsoft-365.md).
+Per gran parte delle organizzazioni, le impostazioni di sicurezza predefinite offrono un buon livello di sicurezza aggiuntiva. Per altre informazioni, vedere [Che cosa sono le impostazioni predefinite per la sicurezza?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-- Impostazioni predefinite di sicurezza (consigliate per le piccole imprese)
-
-  Se è stato acquistato un abbonamento o una versione di valutazione dopo il 21 ottobre 2019 e in modo imprevisto viene richiesta la MFA, le [impostazioni predefinite di sicurezza](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) sono state abilitate automaticamente per l'abbonamento.
-  
-  Nei nuovi abbonamenti a Microsoft 365 le impostazioni predefinite per la sicurezza sono attivate automaticamente. Ciò significa che ogni utente dovrà configurare l'autenticazione a più fattori e installare l'app Microsoft Authenticator nel proprio dispositivo mobile.
-
-  Tutti gli utenti devono usare l'app Microsoft Authenticator come metodo di verifica aggiuntivo e l'autenticazione legacy è bloccata. 
-
-- Criteri di accesso condizionale (consigliati per le aziende)
-
-  Gli utenti scelgono il metodo di verifica aggiuntivo durante la registrazione della MFA.
-
-- Account per utente (scelta non consigliata)
-
-  Gli utenti scelgono il metodo di verifica aggiuntivo durante la registrazione della MFA.
-
-## <a name="step-2-test-mfa-on-your-pilot-users"></a>Passaggio 2. Testare la MFA con gli utenti del programma pilota
-
-Se si usano criteri di Accesso condizionale o MFA per utente (scelta non consigliata), selezionare gli utenti del programma pilota nell'azienda o nell'organizzazione per testare la registrazione e gli accessi della MFA. Per esempio:
-
-- Per i criteri di Accesso condizionale, creare un gruppo di utenti del programma pilota e un criterio che richieda la MFA per i membri del gruppo e per tutte le app. Quindi, aggiungere gli account degli utenti del programma pilota al gruppo.
-
-- Per la MFA per utente, abilitare la MFA per gli account degli utenti del programma pilota, uno alla volta.
-
-Collaborare con gli utenti del programma pilota per risolvere le domande e i problemi e predisporre una distribuzione fluida nell'organizzazione.
-
-## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>Passaggio 3. Informare l'organizzazione della futura implementazione della MFA
-
-Usare le notifiche tramite posta elettronica, manifesti nei corridoi, riunioni del team o corsi di formazione per garantire che i dipendenti comprendano:
-
-- Perché è necessaria la MFA per gli accessi
-- [Come registrarsi per il metodo di verifica aggiuntivo](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
-- [Come eseguire l'accesso dopo la registrazione](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
-- [Come cambiare il metodo di verifica aggiuntivo](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [Come gestire situazioni come un nuovo smartphone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
-
-Soprattutto, accertarsi che i dipendenti comprendano ***quando verrà imposto il requisito della MFA*** in modo da non coglierli di sorpresa.
-
-## <a name="step-4-roll-out-the-mfa-requirement-to-your-organization-or-users"></a>Passaggio 4. Implementare il requisito della MFA nell'organizzazione o agli utenti
-
-In base al metodo del requisito della MFA scelto, distribuire l'autenticazione MFA ai dipendenti oltre che agli utenti del programma pilota.
-
-### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
+Se l'abbonamento è nuovo, l'impostazione predefinita della sicurezza potrebbe essere già attivata automaticamente.
 
 È possibile abilitare o disabilitare le impostazioni predefinite di sicurezza dal riquadro **Proprietà** di Azure Active Directory (Azure AD) nel portale di Azure.
 
 1.  Accedere al [portale di amministrazione di Microsoft 365](https://admin.microsoft.com) con le credenziali di amministratore globale.
-2.  Passare alla [pagina Proprietà di Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-3.  Nella parte inferiore della pagina scegliere **Gestire le impostazioni predefinite per la sicurezza**.
-4.  Scegliere **Sì** per abilitare le impostazioni predefinite di sicurezza e **No** per disabilitare le impostazioni predefinite per la sicurezza, quindi scegliere **Salva**.
+2.  Nel riquadro di spostamento sinistro scegliere **Mostra tutto**, e in **Interfacce di amministrazione**scegliere **Azure Active Directory**.
+3. In **Interfaccia di amministrazione di Azure Active Directory** scegliere **Azure Active Directory** > **Proprietà**.
+3.  Nella parte inferiore della pagina scegliere **Gestire le impostazioni di sicurezza predefinite**.
+4.  Scegliere **Sì** per abilitare le impostazioni di sicurezza predefinite o **No** per disabilitare le impostazioni predefinite per la sicurezza, quindi scegliere **Salva**.
 
-Se sono stati usati [criteri di accesso condizionale di base](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection), ecco come passare all'uso delle impostazioni predefinite di sicurezza.
+Se i [criteri di accesso condizionale di base](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection) sono stati usati, sarà richiesto di disattivarli prima di iniziare a usare le impostazioni di sicurezza predefinite.
 
 1.  Passare alla pagina [Accesso condizionale - Criteri](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
 2.  Scegliere ciascun criterio di base che è **Attivato** e impostare **Abilitare il criterio** su **Disattivato**.
@@ -106,18 +67,40 @@ Se sono stati usati [criteri di accesso condizionale di base](https://docs.micro
 4.  Nella parte inferiore della pagina scegliere **Gestire le impostazioni predefinite per la sicurezza**.
 5.  Scegliere **Sì** per abilitare le impostazioni predefinite di sicurezza e **No** per disabilitare le impostazioni predefinite per la sicurezza, quindi scegliere **Salva**.
 
-### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
+## <a name="use-conditional-access-policies"></a>È possibile utilizzare i criteri di accesso condizionale
 
-Creare, configurare e abilitare i criteri appropriati che includono il gruppo di utenti che richiedono la MFA per l'accesso.
+Se l'organizzazione ha esigenze di sicurezza di accesso più granulare, i criteri di accesso condizionale possono offrire un maggiore controllo. L'accesso condizionale consente di creare e definire criteri che reagiscono agli eventi di autenticazione e richiedono altre azioni prima che un utente sia autorizzato ad accedere a un'applicazione o un servizio.
 
-### <a name="per-user-mfa-not-recommended"></a>MFA per utente (scelta non consigliata)
+> [!IMPORTANT]
+> Disabilitare sia la MFA per persona che le impostazioni di sicurezza prima di abilitare i criteri di accesso condizionale. 
 
-Abilitare gli account utente per la MFA in base all'implementazione.
+L'accesso condizionale è disponibile per i clienti che hanno acquistato Azure AD Premium P1 o licenze che lo includono, come Microsoft 365 Business Premium e Microsoft 365 E3. Per altre informazioni, vedere [Creare un criterio di accesso condizionale](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-### <a name="supporting-your-employees"></a>Supporto dei dipendenti
+L'accesso condizionale basato sul rischio è disponibile con la licenza P2 di Azure AD Premium o con licenze che lo includono, come Microsoft 365 E5. Per altre informazioni, vedere [Accesso condizionale basato sul rischio](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
-Quando i dipendenti si registrano e iniziano a eseguire l'accesso con la MFA, assicurarsi che gli specialisti IT, il reparto IT o il supporto tecnico possano rispondere rapidamente alle domande e risolvere i problemi.
+### <a name="turn-on-modern-authentication-for-your-organization"></a>Attivare l'autenticazione moderna per la propria organizzazione
 
-Vedere questo articolo per [informazioni sulla risoluzione dei problemi di accesso con la MFA](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2). 
+Per la maggior parte degli abbonamenti l'autenticazione moderna è attivata automaticamente, ma se l'abbonamento è stato acquistato molto tempo fa, potrebbe non essere disponibile. Deve essere attivato prima che la MFA funzioni correttamente con le app di Office.
+
+1. Nell'interfaccia di amministrazione di Microsoft 365, ne riquadro di spostamento sinistro, scegliere **Impostazioni** > **Impostazioni organizzazione**.
+1. Nella scheda **Servizi** tab, scegliere **Autenticazione moderna**, e nel riquadro **Autenticazione moderna**, verificare che **Abilita autenticazione moderna** sia selezionato. Selezionare **Salva modifiche**.
+
+### <a name="turn-off-legacy-per-person-mfa"></a>Disabilitare l'autenticazione MFA per persona ereditata
+
+Se l'autenticazione MFA per persona è stata attivata in precedenza, è necessario disattivarla prima di abilitare le impostazioni di sicurezza.
+
+1. Nell'interfaccia di amministrazione di Microsoft 365, ne riquadro di spostamento sinistro, scegliere **Utenti** > **Utenti attivi**. 
+1. Nella pagina **Utenti attivi**, scegliere **Autenticazione a più fattori**.
+1. Nella pagina Autenticazione a più fattori, selezionare ogni utente e impostare il loro stato Autenticazione a più fattori su **Disabilitato**.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Come registrarsi per il metodo di verifica aggiuntivo](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [Come eseguire l'accesso dopo la registrazione](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+- [Come cambiare il metodo di verifica aggiuntivo](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+- [Come gestire situazioni come un nuovo smartphone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+- [Risolvere i problemi di autenticazione MFA](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+
+
 
 
