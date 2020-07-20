@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Questo articolo offre informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365.
-ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874895"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45167366"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -53,10 +53,12 @@ Per configurare l'autenticazione a più fattori per i guest
 2. Nel pannello **Accesso condizionale - Criteri** selezionare **Nuovi criteri**.
 3. Nel campo **Nome** digitare *MFA guest*.
 4. In **Assegnazioni** fare clic su **Utenti e gruppi**.
-5. Nel pannello **Utenti e gruppi** scegliere **Seleziona utenti e gruppi**, selezionare la casella di controllo **Tutti gli utenti guest ed esterni** e quindi fare clic su **Fatto**.
-4. In **Controlli di accesso** fare clic su **Concedi**.
-5. Nel pannello **Concedi** selezionare la casella di controllo **Richiedi autenticazione a più fattori** e quindi fare clic su **Seleziona**.
-6. Nel pannello **Nuovo**, in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
+5. Nel pannello **Utenti e gruppi**, scegliere **Seleziona utenti e gruppi**, quindi la casella di controllo **Tutti gli utenti guest ed esterni**.
+6. In **Assegnazioni** fare clic su **Applicazioni cloud o azioni**.
+7. Nel pannello **App cloud o azioni**, selezionare **Tutte le app cloud** nella scheda **Includi**.
+8. In **Controlli di accesso** fare clic su **Concedi**.
+9. Nel pannello **Concedi** selezionare la casella di controllo **Richiedi autenticazione a più fattori** e quindi fare clic su **Seleziona**.
+10. Nel pannello **Nuovo**, in **Abilita criterio** fare clic su **Sì** e quindi su **Crea**.
 
 Ora gli utenti guest dovranno effettuare la registrazione all'autenticazione a più fattori per poter accedere a team, siti o contenuti condivisi.
 

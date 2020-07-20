@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 5bf859cd5abe0dcb36c02c8355cbfa58418b3138
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678982"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153699"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -166,7 +166,7 @@ Quando si assegnano le autorizzazioni, è possibile scegliere:
     > [!NOTE]
     > Se si specifica un dominio di un'organizzazione che usa Azure AD, non è possibile limitare l'accesso a quello specifico dominio. Ciò che accade è che vengono automaticamente inclusi tutti i domini verificati in Azure AD per il tenant che possiede il nome di dominio specificato.
 
-Quando si scelgono tutti i membri del tenant o si sfoglia la directory, gli utenti o i gruppi devono avere un indirizzo di posta elettronica.
+Quando si scelgono tutti gli utenti e i gruppi nell'organizzazione o si sfoglia la directory, gli utenti e i gruppi devono avere lo stesso indirizzo di posta elettronica.
 
 È consigliabile utilizzare i gruppi anziché gli utenti, così da mantenere la configurazione più semplice.
 
@@ -216,9 +216,9 @@ Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietari
 
 - In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare le autorizzazioni personalizzate per utenti, gruppi o organizzazioni specifici. 
     > [!NOTE]
-    > Questa opzione per Word, PowerPoint ed Excel è supportata dal client di etichettatura unificata di Azure Information Protection. Per le app che usano l'etichettatura predefinita, il supporto è attualmente in [anteprima per Windows e Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). 
+    > Questa opzione per Word, PowerPoint ed Excel è supportata dal client di etichettatura unificata di Azure Information Protection. Per le app che usano l'etichettatura integrata, [controllare quali app la supportano](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
     > 
-    > Se questa opzione è selezionata ma non è supportata per l'app di un utente, l'etichetta non viene visualizzata oppure (attualmente in distribuzione in anteprima per iOS e Android) viene visualizzata per coerenza, ma non può essere applicata e viene visualizzato un messaggio di spiegazione per gli utenti.
+    > Se questa opzione è selezionata ma non è supportata per l'app di un utente, l'etichetta non viene visualizzata oppure viene visualizzata per coerenza, ma non può essere applicata e viene visualizzato un messaggio di spiegazione per gli utenti.
 
 Se le opzioni sono supportate, usare la tabella seguente per accertarsi se gli utenti visualizzano l'etichetta di riservatezza:
 
@@ -297,13 +297,13 @@ Questa etichetta non è adatta ai messaggi di posta elettronica.
 
 4. Selezionare **Assegna autorizzazioni**.
 
-3. Nel riquadro **Assegna autorizzazioni** selezionare **Aggiungi questi indirizzi di posta elettronica o domini**.
+3. Nel riquadro **Assegna autorizzazioni** selezionare **Aggiungi indirizzi di posta elettronica o domini specifici**.
 
 4. Nella casella di testo immettere il nome di un dominio dell'altra organizzazione, ad esempio **fabrikam.com**. Selezionare **Aggiungi**.
 
-5. Selezionare **Scegliere le autorizzazioni dal contesto corrente o personalizzato**.
+5. Fare clic su **Scegli autorizzazioni**.
 
-6. Nel riquadro **Scegliere le autorizzazioni dal contesto corrente o personalizzato** selezionare la casella a discesa, selezionare **Visualizzatore** e quindi scegliere **Salva**.
+6. Nel riquadro **Scegli autorizzazioni**, selezionare la casella a discesa, selezionare **Visualizzatore** e quindi scegliere **Salva**.
 
 6. Tornare al riquadro **Assegna autorizzazioni** e selezionare **Salva**.
 
@@ -318,13 +318,13 @@ I nuovi utenti aggiunti potranno aprire i documenti e i messaggi di posta elettr
 
 2. Selezionare **Assegna autorizzazioni**.
 
-3. Nel riquadro **Assegna autorizzazioni** selezionare **Aggiungi questi indirizzi di posta elettronica o domini**.
+3. Nel riquadro **Assegna autorizzazioni** selezionare **Aggiungi indirizzi di posta elettronica o domini specifici**.
 
 4. Nella casella di testo immettere l'indirizzo di posta elettronica del primo utente o gruppo da aggiungere e quindi selezionare **Aggiungi**.
 
-5. Selezionare **Scegliere le autorizzazioni dal contesto corrente o personalizzato**.
+5. Fare clic su **Scegli autorizzazioni**.
 
-6. Nel riquadro **Scegliere le autorizzazioni dal contesto corrente o personalizzato** selezionare le autorizzazioni per questo utente o gruppo e quindi scegliere **Salva**.
+6. Nel riquadro **Scegli autorizzazioni**, selezionare le autorizzazioni per questo utente o gruppo e quindi scegliere **Salva**.
 
 7. Tornare al riquadro **Assegna autorizzazioni** e ripetere i passaggi da 3 a 6 per ogni utente o gruppo che si vuole aggiungere all'etichetta. Fare quindi clic su **Salva**.
 
@@ -345,11 +345,11 @@ Usare questa configurazione solo se non è necessario limitare l'accesso al docu
 
 4. Nel riquadro **Assegna autorizzazioni** selezionare **Aggiungi qualsiasi utente autenticato**. 
     
-    Per **Utenti e gruppi** viene aggiunto automaticamente **AuthenticatedUsers**. Non è possibile modificare questo valore, ma solo eliminarlo, annullando di conseguenza la selezione **Aggiungi qualsiasi utente autenticato**.
+    Per **Utenti e gruppi**, vengono visualizzati gli **Utenti autenticati** aggiunti automaticamente. Non è possibile modificare questo valore, ma solo eliminarlo, annullando di conseguenza la selezione **Aggiungi qualsiasi utente autenticato**.
 
-5. Selezionare **Scegliere le autorizzazioni dal contesto corrente o personalizzato**.
+5. Fare clic su **Scegli autorizzazioni**.
 
-6. Nel riquadro **Scegliere le autorizzazioni dal contesto corrente o personalizzato** selezionare la casella a discesa, selezionare le autorizzazioni e quindi selezionare **Salva**.
+6. Nel riquadro **Scegli autorizzazioni**, selezionare la casella a discesa, selezionare le autorizzazioni e quindi selezionare **Salva**.
 
 7. Tornare al riquadro **Assegna autorizzazioni** e selezionare **Salva**.
 
