@@ -1,5 +1,5 @@
 ---
-title: Ottenere visibilità nella propria posizione di sicurezza tramite Microsoft Secure Score
+title: Valutare la propria posizione di sicurezza tramite Microsoft Secure Score
 description: In questo articolo viene descritto come eseguire un'azione per migliorare il Punteggio Microsoft Secure nel centro sicurezza Microsoft 365.
 keywords: sicurezza, malware, Microsoft 365, M365, Punteggio sicuro, Centro sicurezza, azioni di miglioramento
 ms.prod: microsoft-365-enterprise
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ae1a196f11f383c1d3f9fd2056d5d19e7cdd6da
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 469056bbae4627e0b013bfc0f2e965586fd15175
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45095043"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200063"
 ---
-# <a name="gain-visibility-into-your-security-posture-through-microsoft-secure-score"></a>Ottenere visibilità nella propria posizione di sicurezza tramite Microsoft Secure Score
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Valutare la propria posizione di sicurezza con Microsoft Secure Score
 
 Microsoft Secure Score è una misura della posizione di sicurezza di un'organizzazione, con un numero superiore che indica altre azioni di miglioramento eseguite. Può essere trovato https://security.microsoft.com/securescore nel [Centro sicurezza Microsoft 365](overview-security-center.md).
 
@@ -40,7 +40,7 @@ Per facilitare le informazioni necessarie più rapidamente, le azioni di miglior
 * Infrastructure (nessuna azione di miglioramento per il momento)
 
 >[!NOTE]
->Nella versione recente di Microsoft Secure Score è stato rilasciato un modello di Punteggio migliorato che rendeva Microsoft Secure Score incompatibile temporaneamente con identità Secure score e l'API del grafico. [Visualizza dettagli](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+>Nella versione recente di Microsoft Secure Score è stato rilasciato un modello di Punteggio migliorato che rendeva Microsoft Secure Score incompatibile temporaneamente con identità Secure score e l'API del grafico. [Visualizza dettagli](microsoft-secure-score-whats-new.md)
 
 Nella pagina Panoramica di Microsoft Secure score, è possibile vedere come vengono divisi i punti tra questi gruppi e quali sono i punti disponibili. La pagina di panoramica è anche il luogo in cui ottenere una visualizzazione completa del punteggio totale, l'andamento storico del Punteggio sicuro con i confronti di benchmark e le azioni di miglioramento prioritarie che possono essere intraprese per migliorare il punteggio.
 
@@ -121,3 +121,4 @@ In caso di problemi, fatecelo sapere inviando la [sicurezza, la Privacy & Compli
 - [Panoramica del Punteggio Microsoft Secure](microsoft-secure-score.md)
 - [Monitorare la cronologia dei punteggi di Microsoft Secure e raggiungere gli obiettivi](microsoft-secure-score-history-metrics-trends.md)
 - [Novità in arrivo](microsoft-secure-score-whats-coming.md)
+- [Novità](microsoft-secure-score-whats-new.md)

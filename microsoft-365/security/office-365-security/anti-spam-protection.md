@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle impostazioni di protezione da posta indesiderata e sui filtri che consentono di prevenire la posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 74ffe22ffea07350245f6fed18d09b52f96c8351
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800108"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189562"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protezione dalla posta indesiderata in EOP
 
@@ -36,6 +36,9 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standa
 La Guida di orientamento alla sicurezza della posta elettronica di Microsoft comporta un approccio cross-product senza eguali. La tecnologia di protezione da posta indesiderata e anti-phishing di EOP viene applicata nelle piattaforme di posta elettronica per offrire agli utenti gli strumenti e le innovazioni più recenti di protezione dalla posta indesiderata e anti-phishing nella rete L'obiettivo di EOP è offrire un servizio di posta elettronica completo e utilizzabile che aiuti a rilevare e proteggere gli utenti dalla posta indesiderata, dalle minacce alla posta elettronica fraudolente (phishing) e da malware.
 
 L'utilizzo della posta elettronica è cresciuto, quindi ha un abuso di posta elettronica. La posta indesiderata non monitorata può intasare le cassette postali e le reti, influire sulla soddisfazione degli utenti e ostacolare l'efficacia delle comunicazioni di posta elettronica. Ecco perché Microsoft continua a investire nelle tecnologie di protezione dalla posta indesiderata. In poche parole, viene avviato contenendo e filtrando la posta indesiderata.
+
+> [!TIP]
+> Le tecnologie di protezione da posta indesiderata seguenti sono utili quando si desidera consentire o bloccare i messaggi in base alla busta del messaggio (ad esempio, il dominio del mittente o l'indirizzo IP di origine del messaggio). Per consentire o bloccare i messaggi in base al payload (ad esempio, gli URL nel messaggio o nei file allegati), è necessario utilizzare il [portale tenant Allow/Block List](tenant-allow-block-list.md).
 
 ## <a name="anti-spam-technologies-in-eop"></a>Tecnologie di protezione da posta indesiderata in EOP
 

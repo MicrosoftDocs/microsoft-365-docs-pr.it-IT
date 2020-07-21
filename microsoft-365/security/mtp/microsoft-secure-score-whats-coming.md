@@ -1,5 +1,5 @@
 ---
-title: Che cosa viene a Microsoft Secure Score?
+title: Cosa viene a Microsoft Secure Score
 description: In questo articolo vengono descritte le nuove modifiche apportate a Microsoft Secure score nel centro sicurezza Microsoft 365.
 keywords: sicurezza, malware, Microsoft 365, M365, Punteggio sicuro, Centro sicurezza, azioni di miglioramento
 ms.prod: microsoft-365-enterprise
@@ -17,22 +17,22 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b8e071aa4f2a9b6cfa8187a588b4f75e499f6328
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 634f4194e450a7f3835ae0003c5632220a63108e
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094775"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200051"
 ---
-# <a name="whats-coming-to-microsoft-secure-score"></a>Che cosa viene a Microsoft Secure Score?
+# <a name="whats-coming-to-microsoft-secure-score"></a>Cosa viene a Microsoft Secure Score
 
-Per rendere [Microsoft Secure Score](microsoft-secure-score.md) un migliore rappresentante della posizione di sicurezza e migliorare l'usabilità, vengono apportate alcune modifiche nel prossimo futuro. Il Punteggio e il punteggio massimo possono variare. Tuttavia, ciò non implica una modifica della posizione di sicurezza.
+Per rendere [Microsoft Secure Score](microsoft-secure-score.md) un migliore rappresentante della posizione di sicurezza e migliorare l'usabilità, vengono apportate alcune modifiche nel prossimo futuro. Il Punteggio e il punteggio massimo possibile possono variare.
 
-Per informazioni sulle modifiche recenti, vedere [What ' s New in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
+## <a name="proposed-changes"></a>Modifiche proposte
 
-## <a name="august-2020"></a>2020 agosto
+Queste modifiche potrebbero venire al tuo punteggio sicuro Microsoft a breve, a seconda della licenza. Per informazioni sulle modifiche recenti, vedere [What ' s New in Microsoft Secure Score?](microsoft-secure-score-whats-new.md)
 
-### <a name="add-improvement-actions-for-azure-advanced-threat-protection"></a>Aggiungere azioni di miglioramento per la protezione avanzata dalle minacce di Azure
+### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Aggiunta di azioni di miglioramento per la protezione avanzata dalle minacce di Azure
 
 - Percorsi di spostamento laterali rischiosi
 - Attributi dell'account non sicuri
@@ -42,5 +42,6 @@ Per informazioni sulle modifiche recenti, vedere [What ' s New in Microsoft Secu
 ## <a name="related-resources"></a>Risorse correlate
 
 - [Panoramica del Punteggio Microsoft Secure](microsoft-secure-score.md)
-- [Ottenere visibilità nella posizione di sicurezza](microsoft-secure-score-improvement-actions.md)
+- [Valutare la posizione di sicurezza](microsoft-secure-score-improvement-actions.md)
 - [Monitorare la cronologia dei punteggi di Microsoft Secure e raggiungere gli obiettivi](microsoft-secure-score-history-metrics-trends.md)
+- [Novità](microsoft-secure-score-whats-new.md)

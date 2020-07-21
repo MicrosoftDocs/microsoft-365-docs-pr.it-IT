@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c2b1a229bad5bc82f61227bd5a273af1aefb3481
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: 0997ecc83ad7f97d1fb7273bcac8b026f6432091
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900810"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199509"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Dashboard degli utenti di gestione dei rischi Insider
 
 Il **dashboard degli utenti** è uno strumento importante nel flusso di lavoro di gestione dei rischi Insider e aiuta gli investigatori e gli analisti a comprendere meglio le attività relative ai rischi. Questo dashboard offre visualizzazioni e funzionalità di gestione che soddisfano le esigenze amministrative tra i criteri di gestione dei rischi e la gestione dei rischi di insider
 
-Dopo aver aggiunto gli utenti ai criteri di gestione dei rischi Insider, i processi in background valutano automaticamente le attività utente per l' [attivazione degli indicatori](insider-risk-management-policies.md#indicators). Dopo che sono presenti indicatori di attivazione, le attività degli utenti vengono assegnate ai punteggi dei rischi. Alcune di queste attività possono causare un avviso di rischio Insider, ma alcune attività potrebbero non essere in grado di raggiungere un livello di rischio minimo e non verrà creato un avviso di rischio Insider. Il **Dashboard utenti** consente di visualizzare gli utenti con questi tipi di indicatori e punteggi di rischio, nonché gli utenti che hanno avvisi di rischio attivi Insider.
+Dopo aver aggiunto gli utenti ai criteri di gestione dei rischi Insider, i processi in background valutano automaticamente le attività utente per l' [attivazione degli indicatori](insider-risk-management-settings.md#indicators). Dopo che sono presenti indicatori di attivazione, le attività degli utenti vengono assegnate ai punteggi dei rischi. Alcune di queste attività possono causare un avviso di rischio Insider, ma alcune attività potrebbero non essere in grado di raggiungere un livello di rischio minimo e non verrà creato un avviso di rischio Insider. Il **Dashboard utenti** consente di visualizzare gli utenti con questi tipi di indicatori e punteggi di rischio, nonché gli utenti che hanno avvisi di rischio attivi Insider.
 
 È inoltre possibile che vi siano scenari in cui è necessario aggiungere temporaneamente gli utenti ai criteri di rischio Insider dopo che un evento insolito è stato segnalato all'esterno del flusso di lavoro di gestione dei rischi Insider. Il **dashboard degli utenti** consente di aggiungere manualmente un utente a un criterio di rischio Insider per un determinato intervallo di tempo e di ignorare il requisito per un utente di avere un indicatore di attivazione. Questi utenti vengono sempre visualizzati nel dashboard degli utenti quando vengono assegnati attivamente a un criterio.
 
@@ -39,7 +39,7 @@ Il **Dashboard utenti** Visualizza automaticamente tutti gli utenti con avvisi s
 
 ## <a name="dashboard-users-with-triggering-indicators"></a>Utenti del dashboard con indicatori di attivazione
 
-Il **dashboard degli utenti** Visualizza automaticamente tutti gli utenti con indicatori di attivazione, ma che non hanno un punteggio di rischio di attività che potrebbe creare un'attività di rischio Insider. Ad esempio, un utente con una data di dimissioni segnalata viene visualizzato perché questo evento è un indicatore di attivazione, ma non è un'attività che ha un punteggio di rischio. Le attività per questi utenti vengono visualizzate selezionando l'utente nel **Dashboard utenti** e passando alla scheda **attività utente** .
+Il **dashboard degli utenti** Visualizza automaticamente tutti gli utenti con indicatori di attivazione, ma che non hanno un punteggio di rischio di attività che potrebbe creare un avviso di rischio Insider. Ad esempio, un utente con una data di dimissioni segnalata viene visualizzato perché questo evento è un indicatore di attivazione ma non è un'attività che ha un punteggio di rischio. Le attività per questi utenti vengono visualizzate selezionando l'utente nel **Dashboard utenti** e passando alla scheda **attività utente** .
 
 ## <a name="dashboard-users-added-temporarily-to-policies"></a>Gli utenti del dashboard sono stati aggiunti temporaneamente ai criteri
 

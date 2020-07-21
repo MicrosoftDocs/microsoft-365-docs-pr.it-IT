@@ -12,23 +12,23 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 000f5ee96587aeb055db783e11833aefa6335a14
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: c53bfa58e36b2723d5227c38805482dcb629d864
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091922"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199690"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
-Usare i criteri di gestione dei rischi Insider per identificare attività rischiose e strumenti di gestione per intervenire sugli avvisi di rischio nell'organizzazione. Completare la procedura seguente per impostare i prerequisiti e configurare un criterio di gestione dei rischi Insider.
+Utilizzare i criteri di gestione dei rischi Insider per identificare le attività rischiose e gli strumenti di gestione per agire sugli avvisi di rischio nell'organizzazione. Completare la procedura seguente per impostare i prerequisiti e configurare un criterio di gestione dei rischi Insider.
 
 >[!IMPORTANT]
 >La soluzione Microsoft 365 Insider Risk Management fornisce un'opzione tenant level per consentire ai clienti di facilitare la governance interna a livello di utente. Gli amministratori dei livelli tenant possono configurare le autorizzazioni per consentire l'accesso a questa soluzione per i membri dell'organizzazione e configurare i connettori dei dati nel centro conformità di Microsoft 365 per importare i dati rilevanti per supportare l'identificazione a livello di utente di attività potenzialmente rischiose. I clienti possono essere calcolati dall'amministratore e resi disponibili ad altri utenti dell'organizzazione, in base al comportamento, al carattere o alle prestazioni del singolo utente.
 
 Per ulteriori informazioni su come i criteri di rischio Insider consentono di gestire i rischi nell'organizzazione, vedere [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Prima di iniziare a utilizzare la gestione dei rischi Insider, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e utilizzare Gestione dei rischi Insider, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
@@ -43,7 +43,7 @@ Gli utenti inclusi nei criteri di gestione dei rischi Insider devono essere asse
 
 Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera tentare la gestione dei rischi Insider, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) alla sottoscrizione esistente oppure [iscriversi per una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 Enterprise E5.
 
-## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Passaggio 1 (obbligatorio): abilitare le autorizzazioni per la gestione dei rischi Insider
+## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Passaggio 1: abilitare le autorizzazioni per la gestione dei rischi Insider
 
 Sono disponibili quattro gruppi di ruoli che consentono di configurare le autorizzazioni per gestire le funzionalità di gestione dei rischi Insider. Per continuare con questi passaggi di configurazione, è necessario che gli amministratori del tenant debbano prima assegnare il gruppo di ruoli amministratore di gestione dei rischi **Insider** Management o **Insider Management** . Per accedere e gestire le funzionalità di gestione dei rischi Insider dopo la configurazione iniziale, è necessario che gli utenti siano membri di almeno un gruppo di ruoli Gestione dei rischi Insider.
 
@@ -74,42 +74,63 @@ Completare la procedura seguente per aggiungere gli utenti a un gruppo di ruoli 
 
 7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli. Selezionare **Chiudi** per completare la procedura.
 
-## <a name="step-2-required-enable-the-audit-log"></a>Passaggio 2 (obbligatorio): abilitare il log di controllo
+## <a name="step-2-enable-the-audit-log"></a>Passaggio 2: abilitare il log di controllo
 
-Insider Risk Management utilizza i registri di controllo per le informazioni e le attività dell'utente configurate nei criteri. I registri di controllo sono un riepilogo di tutte le attività associate a un criterio di gestione dei rischi insider o in qualsiasi momento modifiche di un criterio.
+Insider Risk Management utilizza i registri di controllo per le informazioni e le attività dell'utente configurate nei criteri. I registri di controllo sono un riepilogo di tutte le attività associate a un criterio di gestione dei rischi insider o in qualsiasi momento della modifica di un criterio.
 
 Per istruzioni dettagliate su come abilitare il controllo, vedere [attivazione o disattivazione della ricerca del registro di controllo](turn-audit-log-search-on-or-off.md). Dopo aver attivato il controllo, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È sufficiente eseguire questa operazione una sola volta. Per ulteriori informazioni sull'utilizzo del log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
-## <a name="step-3-optional-configure-prerequisites-for-templates"></a>Passaggio 3 (facoltativo): configurare i prerequisiti per i modelli
+## <a name="step-3-configure-prerequisites-for-templates"></a>Passaggio 3: configurare i prerequisiti per i modelli
 
-Alcuni modelli di gestione dei rischi Insider sono prerequisiti che devono essere configurati per gli indicatori dei criteri per generare avvisi attività rilevanti. Configurare i prerequisiti adeguati a seconda dei criteri che si intende configurare per l'organizzazione.
+La maggior parte dei modelli di gestione del rischio Insider sono prerequisiti che devono essere configurati per gli indicatori dei criteri per generare avvisi attività rilevanti. Configurare i prerequisiti adeguati a seconda dei criteri che si intende configurare per l'organizzazione.
+
+Se si sta configurando un criterio utilizzando la *lingua offensiva nel modello di criteri di posta elettronica* , è possibile ignorare questo passaggio e passare direttamente al **passaggio 4**.
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Configurare il connettore Microsoft 365 HR
 
-Gestione dei rischi Insider supporta l'importazione di dati di utenti e log importati da piattaforme di gestione dei rischi di terze parti. Il connettore dati risorse umane (HR) di Microsoft 365 consente di inserire i dati delle risorse umane da file CSV, tra cui la terminazione degli utenti e le date dell'ultima occupazione. Questi dati consentono di indirizzare gli indicatori di avviso nei criteri di gestione dei rischi Insider ed è una parte importante della configurazione della copertura di gestione a rischio completo nell'organizzazione.
+Gestione dei rischi Insider supporta l'importazione di dati di utenti e log importati da piattaforme di gestione dei rischi di terze parti. Il connettore di dati HR (Human Resources) Microsoft 365 consente di inserire i dati delle risorse umane da file CSV, incluse le date di terminazione degli utenti, le date dell'ultimo impiego, le notifiche relative al piano di miglioramento delle prestazioni, le azioni di revisione delle prestazioni e lo stato delle modifiche a livello di Questi dati consentono di indirizzare gli indicatori di avviso nei criteri di gestione dei rischi Insider ed è una parte importante della configurazione della copertura di gestione a rischio completo nell'organizzazione. Se si configurano più connettori HR per la propria organizzazione, la gestione dei rischi Insider tirerà automaticamente gli indicatori da tutti i connettori HR.
+Il connettore Microsoft 365 HR è necessario quando si utilizzano i modelli di criteri seguenti:
 
-Vedere l'argomento [set up a Connector to Import HR data](import-hr-data.md) for Step-by-Step Guide to configure the Microsoft 365 HR Connector for Your Organization. Dopo aver configurato il connettore HR, tornare a questi passaggi di configurazione.
+- Furto dei dati degli utenti da parte dell'utente
+- Violazioni dei criteri di sicurezza da parte degli utenti
+- Violazioni dei criteri di sicurezza da parte di utenti scontenti
+- Perdite di dati da parte di utenti scontenti
 
->[!IMPORTANT]
->Se si configura un criterio utilizzando il modello di *furto dei dati* per i dipendenti in partenza, è necessario configurare il connettore HR per utilizzare le funzionalità di rilevamento completo del segnale del modello di criteri. Se si configurano più connettori HR per la propria organizzazione, la gestione dei rischi Insider tirerà automaticamente gli indicatori da tutti i connettori HR.
+Vedere l'articolo [set up a Connector to Import HR data](import-hr-data.md) per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per la propria organizzazione. Dopo aver configurato il connettore HR, tornare a questi passaggi di configurazione.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurare i criteri di prevenzione della perdita di dati (DLP)
 
-Gestione dei rischi Insider supporta l'utilizzo di criteri DLP per identificare l'esposizione intenzionale o accidentale di informazioni riservate a parti indesiderate per avvisi DLP a livello di gravità elevato. Quando si configura un criterio di gestione dei rischi Insider con il modello di **perdita di dati** , è necessario assegnare un criterio DLP specifico al criterio.
+Gestione dei rischi Insider supporta l'utilizzo di criteri DLP per identificare l'esposizione intenzionale o accidentale di informazioni riservate a parti indesiderate per avvisi DLP a livello di gravità elevato. Quando si configura un criterio di gestione dei rischi Insider con qualsiasi modello di **perdita di dati** , è necessario assegnare un criterio DLP specifico al criterio.
 
-Questo criterio consente di instradare gli indicatori di gestione dei rischi Insider per gli avvisi High Severity DLP per informazioni riservate ed è una parte importante della configurazione della copertura di gestione dei rischi nell'organizzazione. Per ulteriori informazioni sulla gestione dei rischi Insider e sull'integrazione e sulla pianificazione di criteri DLP, vedere [Insider Risk Management Policies](insider-risk-management-policies.md#data-leaks).
+I criteri DLP consentono di identificare gli utenti per attivare la valutazione dei rischi nella gestione dei rischi Insider per gli avvisi DLP di elevata gravità per informazioni riservate e sono una parte importante della configurazione della copertura di gestione a rischio completo nell'organizzazione. Per ulteriori informazioni sulla gestione dei rischi Insider e sull'integrazione e sulla pianificazione di criteri DLP, vedere [Insider Risk Management Policies](insider-risk-management-policies.md#general-data-leaks).
 
 >[!IMPORTANT]
 >Assicurarsi di aver completato le operazioni seguenti:
 >
 >- È possibile comprendere e configurare correttamente gli utenti in ambito sia nei criteri di gestione del rischio DLP che insider per produrre la copertura dei criteri prevista.
->- Verificare che l'impostazione dei **rapporti sugli incidenti** nei criteri DLP per la gestione dei rischi Insider utilizzati con questo modello sia configurata per gli avvisi a livello di gravità *elevato* . Gli avvisi di gestione dei rischi insider non verranno generati da criteri DLP con il campo **rapporto eventi** non consentiti impostato su *basso* o *medio*.
+>- Verificare che l'impostazione dei **rapporti sugli incidenti** nei criteri DLP per la gestione dei rischi Insider utilizzati con questi modelli sia configurata per gli avvisi a livello di gravità *elevato* . Gli avvisi di gestione dei rischi insider non verranno generati da criteri DLP con il campo **rapporto eventi** non consentiti impostato su *basso* o *medio*.
 
-Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) . Dopo aver configurato un criterio DLP, tornare a questi passaggi di configurazione.
+Quando si utilizzano i seguenti modelli di criteri, è necessario un criterio DLP:
 
-## <a name="step-4-required-configure-insider-risk-settings"></a>Passaggio 4 (obbligatorio): configurare le impostazioni dei rischi Insider
+- Perdite di dati generali
+- Perdite di dati da parte di utenti prioritari
 
-[Le impostazioni dei rischi Insider](insider-risk-management-policies.md#policy-settings) si applicano a tutti i criteri di gestione dei rischi Insider, indipendentemente dal modello scelto quando si crea un criterio. Le impostazioni vengono configurate utilizzando il controllo **impostazioni di rischio Insider** nella parte superiore di tutte le schede gestione rischi Insider. Queste impostazioni controllano la privacy, gli indicatori, le finestre di monitoraggio e i rilevamenti intelligenti.
+Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'articolo [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) . Dopo aver configurato un criterio DLP, tornare a questi passaggi di configurazione.
+
+### <a name="configure-priority-user-groups"></a>Configurare i gruppi di utenti prioritari
+
+Gestione dei rischi Insider include il supporto per l'assegnazione di gruppi di utenti prioritari ai criteri che consentono di identificare le attività a rischio univoco per gli utenti con posizioni critiche, livelli elevati di dati e accesso alla rete o una cronologia del comportamento dei rischi. Creazione di un gruppo di utenti prioritari e assegnazione degli utenti ai criteri di ambito della Guida per i gruppi in base alle circostanze esclusive presentate da tali utenti.
+
+Un gruppo di utenti prioritari è necessario quando si utilizzano i modelli di criteri seguenti:
+
+- Violazioni dei criteri di sicurezza per gli utenti con priorità 
+- Perdite di dati da parte di utenti prioritari
+
+Per informazioni dettagliate su come creare un gruppo di utenti prioritari, vedere l'articolo [Introduzione alle impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md#priority-user-groups-preview) . Dopo aver configurato un gruppo di utenti prioritari, tornare a questi passaggi di configurazione.
+
+## <a name="step-4-configure-insider-risk-settings"></a>Passaggio 4: configurare le impostazioni dei rischi Insider
+
+[Le impostazioni dei rischi Insider](insider-risk-management-settings.md) si applicano a tutti i criteri di gestione dei rischi Insider, indipendentemente dal modello scelto quando si crea un criterio. Le impostazioni vengono configurate utilizzando il controllo **impostazioni di rischio Insider** nella parte superiore di tutte le schede gestione rischi Insider. Queste impostazioni controllano la privacy, gli indicatori, le finestre di monitoraggio e i rilevamenti intelligenti.
 
 Prima di configurare un criterio, definire le seguenti impostazioni di rischio Insider:
 
@@ -120,11 +141,18 @@ Prima di configurare un criterio, definire le seguenti impostazioni di rischio I
     >[!IMPORTANT]
     >Per ricevere gli avvisi per le attività a rischio definite nei criteri, è necessario selezionare uno o più indicatori.
 
-4. Nella pagina **scadenze dei criteri** selezionare i [tempi](insider-risk-management-policies.md#policy-timeframes) di applicazione per l'esecuzione di un utente quando si attiva una corrispondenza per un criterio di rischio Insider.
-5. Nella pagina **rilevamento intelligente** , configurare il rilevamento di [anomalie, il rilevamento di lingua offensiva e il livello di volume degli avvisi](insider-risk-management-policies.md#intelligent-detections) per i criteri di rischio Insider.
-6. Selezionare **Salva** per abilitare queste impostazioni per i criteri di rischio Insider.
+4. Nella pagina **scadenze dei criteri** selezionare i [tempi](insider-risk-management-settings.md#policy-timeframes) di applicazione per l'esecuzione di un utente quando si attiva una corrispondenza per un criterio di rischio Insider.
+5. Nella pagina **rilevamento intelligente** , configurare le seguenti impostazioni per i criteri di rischio Insider:
+    - [Rilevamenti di anomalia](insider-risk-management-settings.md#anomaly-detections)
+    - [Rilevamenti di lingua offensiva](insider-risk-management-settings.md#offensive-language-detections)
+    - [Livello volume avvisi](insider-risk-management-settings.md#alert-volume)
+    - [Stato avviso Microsoft 365 Defender Advanced Threat Protection](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [Impostazioni del dominio](insider-risk-management-settings.md#domains-preview)
+6. Nella pagina **Esporta avvisi** , abilitare l'esportazione delle informazioni di avviso sui rischi Insider mediante le API di gestione di Office 365, se necessario.
+7. Nella pagina **gruppi di utenti con priorità** creare un gruppo di utenti prioritari e aggiungere gli utenti se non sono stati creati nel **passaggio 3**.
+8. Selezionare **Salva** per abilitare queste impostazioni per i criteri di rischio Insider.
 
-## <a name="step-5-required-create-an-insider-risk-management-policy"></a>Passaggio 5 (obbligatorio): creare un criterio di gestione dei rischi Insider
+## <a name="step-5-create-an-insider-risk-management-policy"></a>Passaggio 5: creare un criterio di gestione dei rischi Insider
 
 I criteri di gestione dei rischi Insider includono gli utenti assegnati e definiscono i tipi di indicatori di rischio configurati per gli avvisi. Prima che le attività possano attivare gli avvisi, è necessario configurare un criterio.
 
@@ -136,18 +164,27 @@ I criteri di gestione dei rischi Insider includono gli utenti assegnati e defini
     - **Scegliere il modello di criteri (obbligatorio)**: selezionare uno dei [modelli di criteri](insider-risk-management-policies.md#policy-templates) per definire i tipi di indicatori di rischio sono monitorati dal criterio.
 
     >[!IMPORTANT]
-    >Se si seleziona il modello per le *perdite di dati* , sarà necessario configurare almeno un criterio DLP che verrà assegnato in un secondo momento nella procedura guidata. Se si seleziona il modello di *furto dei dati* per i dipendenti in partenza, è necessario configurare il connettore HR per utilizzare le funzionalità di rilevamento completo del segnale del modello di criteri.
+    >La maggior parte dei modelli di criteri ha prerequisiti che devono essere configurati per il criterio per generare avvisi rilevanti. Se non sono stati configurati i prerequisiti per i criteri applicabili, vedere il **passaggio 3** sopra riportato.
 
 4. Fare clic su **Avanti** per continuare.
-5. Nella pagina **utenti** selezionare **Aggiungi utente o gruppo** per definire quali utenti sono inclusi nel criterio oppure selezionare **tutti gli utenti e i gruppi abilitati alla posta elettronica** . Fare clic su **Avanti** per continuare.
-6. Nella pagina **specificare il contenuto di cui definire la priorità (facoltativa)** , è possibile assegnare le origini a priorità per le attività degli utenti a rischio:
+5. Nella pagina **utenti** selezionare **Aggiungi utente o gruppo** oppure **scegliere gruppi** di utenti prioritari per definire quali utenti o gruppi di priorità sono inclusi nel criterio, a seconda del modello di criteri selezionato. Selezionare **tutti gli utenti e i gruppi abilitati alla posta elettronica** , se applicabile (se non è stato selezionato un modello di priorità basato sull'utente). Fare clic su **Avanti** per continuare.
+6. Nella pagina **specificare il contenuto di cui definire la priorità (facoltativa)** , è possibile assegnare le origini alla priorità per i punteggi di rischio aumentati. Tuttavia, alcune attività non genereranno alcun avviso, a meno che il contenuto correlato contenga tipi di informazioni riservate incorporate o personalizzati o sia stato specificato come priorità in questa pagina:
     - **Siti di SharePoint**: selezionare **Aggiungi sito di SharePoint** e selezionare le organizzazioni di SharePoint a cui si desidera assegnare la priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo di informazioni riservate**: selezionare **Aggiungi tipo di informazioni riservate** e selezionare i tipi di sensibilità che si desidera impostare come priorità. Ad esempio, *"numero di conto corrente bancario statunitense"* e *"numero di carta di credito"*.
     - **Etichette di riservatezza**: selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette che si desidera impostare come priorità. Ad esempio, *"confidenziale"* e *"segreto"*.
 7. Fare clic su **Avanti** per continuare.
-8. Nella pagina **indicatori di avviso** , verranno visualizzati gli indicatori definiti nella pagina indicatori **impostazioni di rischio Insider**  >  **Indicators** . Se all'inizio della procedura guidata è stato selezionato il modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** .
-9. Nella pagina **selezione finestra di monitoraggio** , verranno visualizzate le [condizioni della finestra di monitoraggio](insider-risk-management-policies.md#policy-timeframes) per il criterio che si trova nella pagina scadenze dei criteri di **rischio Insider**  >  **Policy timeframes** . Se è stato selezionato il modello dei criteri per il *furto dei dati* per i dipendenti in uscita, è possibile selezionare la casella di *controllo Controlla la terminazione del post attività* per rilevare l'attività dopo la data di fine importata dal connettore Microsoft 365 HR.
-10. Fare clic su **Avanti** per continuare.
-11. Nella pagina **Revisione** rivedere le impostazioni selezionate per il criterio. Selezionare **modifica** per modificare i valori dei criteri o selezionare **Invia** per creare e attivare il criterio.
+8. Nella pagina **Selezione indicatori di criteri** verranno visualizzati gli [indicatori](insider-risk-management-settings.md#indicators) definiti come disponibili nella pagina indicatori **impostazioni di rischio Insider**  >  **Indicators** . Se all'inizio della procedura guidata è stato selezionato un modello per le *perdite di dati* , è necessario selezionare un criterio DLP dall'elenco a discesa dei **criteri DLP** per abilitare gli indicatori di attivazione per il criterio. Selezionare gli indicatori che si desidera applicare al criterio. Se si preferisce non utilizzare le impostazioni predefinite della soglia dei criteri per questi indicatori, disabilitare le **soglie di utilizzo predefinite consigliate da Microsoft** e immettere i valori di soglia per ogni indicatore selezionato. Se è stato selezionato almeno un indicatore di *Office* o *dispositivo* , selezionare i **Booster del Punteggio di rischio** in base alle esigenze. I booster del Punteggio di rischio sono applicabili solo per gli indicatori selezionati.
 
-Dopo aver completato questa procedura per creare il primo criterio di gestione dei rischi Insider, si inizierà a ricevere avvisi da indicatori di attività dopo circa 24 ore. Configurare ulteriori criteri in base alle istruzioni fornite nel passaggio 4 di questo argomento o la procedura descritta in [creare un nuovo criterio di rischio Insider](insider-risk-management-policies.md#create-a-new-policy).
+    >[!IMPORTANT]
+    >Se non è possibile selezionare gli indicatori in questa pagina, è necessario scegliere gli indicatori che si desidera abilitare per tutti i criteri nella pagina indicatori dei criteri di **gestione dei rischi Insider Management**  >  **Settings**  >  **Policy indicators** .
+
+9. Fare clic su **Avanti** per continuare.
+10. Nella pagina **scadenze** dei criteri verranno visualizzate le condizioni per la [finestra di attivazione](insider-risk-management-settings.md#policy-timeframes) per il criterio che si trova nella pagina scadenze dei criteri di **rischio Insider**  >  **Policy timeframes** .
+11. Fare clic su **Avanti** per continuare.
+12. Nella pagina **Revisione** rivedere le impostazioni selezionate per il criterio. Selezionare **modifica** per modificare i valori dei criteri o selezionare **Invia** per creare e attivare il criterio.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Dopo aver completato questa procedura per creare il primo criterio di gestione dei rischi Insider, si inizierà a ricevere avvisi da indicatori di attività dopo circa 24 ore. Configurare ulteriori criteri in base alle esigenze utilizzando le indicazioni contenute nel passaggio 4 di questo articolo o la procedura descritta in [creare un nuovo criterio di rischio Insider](insider-risk-management-policies.md#create-a-new-policy).
+
+Per ulteriori informazioni sull'analisi degli avvisi sui rischi Insider e sul **Dashboard avvisi**, vedere [Insider Risk Management Alerts](insider-risk-management-alerts.md).

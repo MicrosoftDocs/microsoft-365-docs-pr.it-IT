@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8cd84539d667f94f877607063dd1c0e1c3ae1593
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: b9ed6e163915bd8cdf63e7f37bf92065943d71fb
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146254"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189467"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -63,7 +63,7 @@ Per iOS e Android: se si dispone di una versione minima elencata, la funzionalit
 |[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Canale corrente](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +) | 16.35 +   | In Revisione   | In Revisione         | In Revisione                                                        |
 |[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | In Revisione            | In Revisione        | In Revisione   | In Revisione         | In Revisione                                                        |
 |[Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti](sensitivity-labels.md#what-label-policies-can-do)   | In Revisione            | In Revisione        | In Revisione   | In Revisione         | In Revisione                                                        |
-|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | Anteprima: [canale beta e canale corrente (anteprima)](https://office.com/insider)                                  | In Revisione | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | Implementazione del [canale corrente](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006 +)                                  | In Revisione | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Supporto per il [salvataggio automatico](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) e la [CoAuthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sui documenti etichettati e protetti | In Revisione | In Revisione | In Revisione | In Revisione | [Sì-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -185,7 +185,7 @@ Questo significa che se si condividono documenti con un'altra organizzazione che
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>Condivisione di documenti crittografati con utenti esterni
 
-Oltre a limitare l'accesso agli utenti nella propria organizzazione, è possibile estendere l'accesso a qualsiasi altro utente che dispone di un account in Azure Active Directory. Tutte le app di Office e altre [applicazioni con RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) sono in grado di aprire i documenti crittografati dopo che l'utente ha eseguito l'autenticazione. 
+Oltre a limitare l'accesso agli utenti nella propria organizzazione, è possibile estendere l'accesso a qualsiasi altro utente che dispone di un account in Azure Active Directory. Tutte le app di Office e altre [applicazioni con RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) sono in grado di aprire i documenti crittografati dopo che l'utente ha eseguito l'autenticazione.
 
 Se gli utenti esterni non dispongono di un account in Azure Active Directory, è possibile creare un account Guest per il proprio tenant. Per l'indirizzo di posta elettronica, è possibile specificare qualsiasi indirizzo di posta elettronica che già utilizza. Ad esempio, l'indirizzo Gmail. Questo account Guest può anche essere utilizzato per accedere a un documento condiviso in SharePoint o OneDrive quando sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 8530e3d82fd670eedde9a874b0a87a0bad523fe5
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780719"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199526"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -164,17 +164,18 @@ Per abilitare le nuove funzionalità, utilizzare il cmdlet [set-SPOTenant](https
     ```
 3. Per Microsoft 365 multi-geo: ripetere i passaggi 1 e 2 per ogni posizione geografica rimanente.
 
-## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Pianificare l'implementazione dopo la creazione o la modifica di un'etichetta di riservatezza
+## <a name="publishing-and-changing-sensitivity-labels"></a>Pubblicazione e modifica delle etichette di riservatezza
 
-Dopo aver creato o modificato un'etichetta di riservatezza nel centro conformità di Microsoft 365, pubblicarla in fasi. Se si pubblicano etichette che non sono state completamente sincronizzate, quando gli utenti applicano le etichette ai file e le caricano in SharePoint, i file non possono essere aperti nelle versioni Web delle app di Office. Anche le funzioni di ricerca e eDiscovery non funzionano per i file.
+Quando si utilizzano le etichette di riservatezza con SharePoint e OneDrive, tenere presente che è necessario consentire il tempo di replica quando si pubblicano nuove etichette di riservatezza o si aggiornano le etichette di riservatezza esistenti. Questo è particolarmente importante per le nuove etichette che applicano la crittografia.
 
-È consigliabile attenersi alla seguente procedura:
+Ad esempio, si crea e si pubblica una nuova etichetta di riservatezza che applica la crittografia e viene visualizzata rapidamente nell'app desktop di un utente. L'utente applica questa etichetta a un documento e quindi lo carica in SharePoint o OneDrive. Se la replica delle etichette non è stata completata per il servizio, le nuove funzionalità non verranno applicate al documento al caricamento. Di conseguenza, il documento non verrà restituito nella ricerca o per eDiscovery e il documento non può essere aperto in Office per il Web.
 
-1. Pubblicare l'etichetta di riservatezza nuova o modificata solo su una o due persone.
+- Le modifiche seguenti vengono replicate entro un'ora: etichette di riservatezza nuove ed eliminate e impostazioni dei criteri delle etichette di riservatezza che includono le etichette presenti nel criterio.
 
-2. Attendere almeno 24 ore dopo la pubblicazione iniziale. Verificare che l'etichetta sia stata completamente sincronizzata.
+- Le modifiche riportate di seguito vengono replicate entro 24 ore: modifiche alle impostazioni delle etichette di riservatezza per quelle esistenti.
 
-3. Pubblicare l'etichetta in senso più generale.
+Poiché il ritardo di replica è ora solo un'ora per le nuove etichette di riservatezza, è improbabile che venga eseguito nello scenario nell'esempio. Tuttavia, come salvaguardia, è consigliabile pubblicare nuove etichette solo per alcuni utenti di test prima, attendere un'ora e quindi verificare il comportamento delle etichette in SharePoint e OneDrive. Come passaggio finale, rendere l'etichetta disponibile per un numero maggiore di utenti aggiungendo più utenti ai criteri di etichetta esistenti oppure aggiungere l'etichetta a un criterio di etichetta esistente per gli utenti standard. Al momento in cui gli utenti standard visualizzano l'etichetta, è già stata sincronizzata con SharePoint e OneDrive.
+
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) e etichette di riservatezza
 

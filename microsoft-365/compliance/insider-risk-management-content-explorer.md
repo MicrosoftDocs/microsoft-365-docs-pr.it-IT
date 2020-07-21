@@ -12,22 +12,24 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e48b18ee905bc8589ad3fd6145630b436603ae15
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: dee4ed05f4210530dddeff8ac62ee3f39903abca
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327050"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199819"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Esploratore contenuto gestione dei rischi Insider
 
-L'esploratore contenuto di gestione dei rischi insider consente agli utenti assegnati al ruolo **investigatori di gestione dei rischi Insider** di esaminare il contesto e i dettagli delle comunicazioni acquisite negli avvisi. Per tutti gli avvisi, le copie dei dati e i file dei messaggi vengono archiviati come snapshot nel tempo degli elementi, mantenendo i file e i messaggi originali nelle origini di archiviazione. La copia di dati e messaggi è trasparente per il dipendente associato all'avviso e per il proprietario del contenuto. Le impostazioni di autorizzazione e i diritti di accesso per i dati vengono mantenuti per il contenuto copiato e i messaggi e gli analisti dei rischi e gli investigatori devono disporre di tali autorizzazioni e diritti, se necessario, per aprire e visualizzare i file. A ciascun file e al messaggio viene assegnato automaticamente un ID file univoco nel caso di gestione dei rischi Insider per la gestione.
+L'esploratore contenuto di gestione dei rischi insider consente agli utenti assegnati al ruolo **investigatori di gestione dei rischi Insider** di esaminare il contesto e i dettagli delle comunicazioni acquisite negli avvisi. Per tutti gli avvisi, le copie dei dati e i file dei messaggi vengono archiviati come snapshot nel tempo degli elementi, mantenendo i file e i messaggi originali nelle origini di archiviazione. La copia di dati e messaggi è trasparente per l'utente associato all'avviso e per il proprietario del contenuto. Le impostazioni di autorizzazione e i diritti di accesso per i dati vengono mantenuti per il contenuto copiato e i messaggi e gli analisti dei rischi e gli investigatori devono disporre di tali autorizzazioni e diritti, se necessario, per aprire e visualizzare i file. A ciascun file e al messaggio viene assegnato automaticamente un ID file univoco nel caso di gestione dei rischi Insider per la gestione. I documenti associati alle attività degli indicatori di dispositivo non sono inclusi in Esplora contenuto.
+
+![Esploratore contenuto gestione dei rischi Insider](../media/insider-risk-content-explorer.png)
 
 ## <a name="column-options"></a>Opzioni di colonna
 
 Per semplificare l'analisi dei dati e dei messaggi acquisiti e esaminare il contesto, è possibile includere più strumenti di filtro e ordinamento per gli analisti e gli investigatori del rischio. Per l'ordinamento di base, le colonne **Data** e **classe file** supportano l'ordinamento utilizzando i titoli di colonna nel riquadro coda di contenuto. Altre colonne della coda sono disponibili per l'aggiunta alla visualizzazione per fornire pivot diversi nei file e nei messaggi.
 
-Per aggiungere o rimuovere intestazioni di colonna per la coda di contenuto, utilizzare il controllo **modifica colonne** e selezionare una delle opzioni seguenti della colonna. Queste colonne vengono mappate alle condizioni comuni, di posta elettronica e delle proprietà del documento supportate in Esplora contenuto e elencate più avanti in questo argomento.
+Per aggiungere o rimuovere intestazioni di colonna per la coda di contenuto, utilizzare il controllo **modifica colonne** e selezionare una delle opzioni seguenti della colonna. Queste colonne vengono mappate alle condizioni comuni, di posta elettronica e delle proprietà del documento supportate in Esplora contenuto e elencate più avanti in questo articolo.
 
 | **Opzione colonna** | **Descrizione** |
 |:------------------|:----------------|
@@ -41,10 +43,10 @@ Per aggiungere o rimuovere intestazioni di colonna per la coda di contenuto, uti
 | **Data** | Per la posta elettronica, la data di un messaggio ricevuto da un destinatario o inviato da un mittente. Per i documenti, la data dell'Ultima modifica di un documento. |
 | **Tema dominante** | Tema dominante calcolato per l'analisi. |
 | **ID set di posta elettronica** | ID gruppo per tutti i messaggi nello stesso set di posta elettronica. |
-| **ID famiglia** | Gruppi di ID famiglia insieme tutti gli elementi; per la posta elettronica, sono inclusi il messaggio e tutti gli allegati. per i documenti, sono inclusi il documento e tutti gli elementi incorporati. |
+| **ID famiglia** | Gruppi di ID famiglia insieme tutti gli elementi; per la posta elettronica, questa colonna include il messaggio e tutti gli allegati. per i documenti, questa colonna include il documento e tutti gli elementi incorporati. |
 | **Classe file** | Per il contenuto di SharePoint e OneDrive: **Document**; per il contenuto da Exchange: * * E-mail o **allegato**. |
 | **ID file** | Identificatore di documento univoco all'interno del caso. |
-| **Icona tipo di file** | L'estensione di un file; ad esempio, docx, 1, pptx o xlsx. Corrisponde alla proprietà dei siti FileExtension. |
+| **Icona tipo di file** | L'estensione di un file; ad esempio, docx, 1, pptx o xlsx. Questo campo è la stessa proprietà della proprietà del sito FileExtension. |
 | **ID** | Identificatore GUID per il file. |
 | **ID non modificabile** | ID non modificabile memorizzato in Office 365. |
 | **Tipo inclusivo** | Tipo incluso calcolato per analisi: **0** -non incluso; **1** -Inclusive; **2** -incluso meno; copia **3** -inclusive. |
@@ -53,12 +55,12 @@ Per aggiungere o rimuovere intestazioni di colonna per la coda di contenuto, uti
 | **Tipo di messaggio** | Il tipo di messaggio di posta elettronica da cercare. Valori possibili: contatti, documenti, messaggi di posta elettronica, dati esterni, fax, messaggistica istantanea, registrazioni, riunioni, Microsoft Teams (restituisce elementi da chat, riunioni e chiamate in Microsoft Teams), note, post, rssfeeds, attività, segreteria telefonica |
 | **Partecipanti** | Elenco di tutti i partecipanti a un messaggio; ad esempio, sender, to, CC, BCC. |
 | **ID pivot** | ID di un pivot. |
-| **Received** | La data in cui un messaggio di posta elettronica viene ricevuto da un destinatario. Corrisponde alla proprietà della posta elettronica Received (Ricevuto). |
+| **Received** | La data in cui un messaggio di posta elettronica viene ricevuto da un destinatario. Questo campo è la stessa proprietà della proprietà di posta elettronica ricevuta. |
 | **Destinatari** | Tutti i campi dei destinatari in un messaggio di posta elettronica. Questi campi sono a, CC e Ccn. |
 | **ID rappresentativo** | Identificatore numerico di ogni set di duplicati esatti. |
 | **Mittente** | Il mittente di un messaggio di posta elettronica. |
 | **Mittente/autore** | Per la posta elettronica, l'utente che ha inviato un messaggio. Per i documenti, l'utente menzionato nel campo dell'autore dei documenti di Office. È possibile digitare più nomi, separati da virgole. Due o più valori sono collegati logicamente dall'operatore OR. |
-| **Inviati** | La data in cui un messaggio di posta elettronica viene inviato dal mittente. Corrisponde alla proprietà della posta elettronica Sent (Inviato). |
+| **Inviati** | La data in cui un messaggio di posta elettronica viene inviato dal mittente. Questo campo è la stessa proprietà della proprietà di posta elettronica inviata. |
 | **Dimensioni** | Per la posta elettronica e i documenti, la dimensione dell'elemento (in byte). |
 | **Oggetto** | Il testo nella riga dell'oggetto di un messaggio di posta elettronica. |
 | **Subject/title** | Per la posta elettronica, il testo nella riga dell'oggetto di un messaggio. Per i documenti, il titolo del documento. Come spiegato in precedenza, la proprietà title è costituita da metadati specificati nei documenti di Microsoft Office. È possibile digitare il nome di più di un oggetto/titolo, separati da virgole. Due o più valori sono collegati logicamente dall'operatore OR. |
@@ -68,7 +70,7 @@ Per aggiungere o rimuovere intestazioni di colonna per la coda di contenuto, uti
 
 ## <a name="advanced-search-conditions"></a>Condizioni di ricerca avanzate
 
-È possibile aggiungere condizioni di ricerca per limitare l'ambito di una ricerca e restituire un insieme di risultati più raffinato. Ogni condizione aggiunge una clausola alla query di ricerca creata ed eseguita all'avvio della ricerca. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, da un operatore logico (rappresentato come c:c) simile alla funzionalità all'operatore AND. Questo significa che gli elementi devono soddisfare sia la query con parole chiave sia una o più condizioni da includere nei risultati della ricerca. Ecco in che modo le condizioni aiutano a limitare i risultati.
+È possibile aggiungere condizioni di ricerca per limitare l'ambito di una ricerca e restituire un insieme di risultati più raffinato. Ogni condizione aggiunge una clausola alla query di ricerca creata ed eseguita all'avvio della ricerca. Una condizione è connessa logicamente alla query con parole chiave, specificata nella casella parola chiave, da un operatore logico (rappresentato come c:c) simile alla funzionalità all'operatore AND. Questo significa che gli elementi devono soddisfare sia la query con parole chiave sia una o più condizioni da includere nei risultati della ricerca. Questa funzionalità consente di limitare i risultati.
 
 Per gli strumenti avanzati per il filtro e la ricerca, espandere il riquadro dei **filtri** sul lato sinistro della coda di contenuto. Selezionare il pulsante **Aggiungi condizione** per aprire l'elenco delle condizioni:
 
@@ -125,8 +127,8 @@ Nella tabella seguente sono elencate le condizioni delle proprietà dei messaggi
 | **Partecipanti** | Tutti i campi persone in un messaggio di posta elettronica. Questi campi sono da, a, CC e Ccn. |
 | **Received** | La data in cui un messaggio di posta elettronica viene ricevuto da un destinatario. |
 | **Domini destinatario** | Elenco di tutti i domini dei destinatari di un messaggio. |
-| **Mittente** | Campo mittente (da) per i tipi di messaggio.  Format è **DisplayName \< SmtpAddress>**. |
-| **Dominio del mittente** | Dominio del mittente. |
+| **Mittente** | Campo mittente (da) per i tipi di messaggio.  Format è **DisplayName \<SmtpAddress> **. |
+| **Dominio mittente** | Dominio del mittente. |
 | **Oggetto** | Il testo nella riga dell'oggetto di un messaggio di posta elettronica.  <br/> **Nota:** Quando si utilizza la proprietà Subject in una query, la ricerca restituisce tutti i messaggi in cui la riga dell'oggetto contiene il testo che si sta cercando. In altre parole, la query non restituisce solo i messaggi che hanno una corrispondenza esatta. Ad esempio, se si cerca `subject:"Quarterly Financials"` , i risultati includono i messaggi con l'oggetto "Financials trimestrali 2018". |
 | **To** | Il campo To (A) di un messaggio di posta elettronica. |
 | **Univoco nel set di posta elettronica** | False se è presente un duplicato dell'allegato nel relativo set di posta elettronica. |
@@ -145,7 +147,7 @@ Nella tabella seguente sono elencate le condizioni delle proprietà dei document
 | **Ora di creazione** | L'ora in cui è stato creato il file o il messaggio di posta elettronica. |
 | **Custode** | Nome del custode a cui è stato associato l'elemento. |
 | **Tema dominante** | Tema dominante calcolato per l'analisi. |
-| **ID famiglia** | Gruppi di ID famiglia insieme tutti gli elementi; per la posta elettronica, sono inclusi il messaggio e tutti gli allegati. per i documenti, sono inclusi il documento e tutti gli elementi incorporati. |
+| **ID famiglia** | Gruppi di ID famiglia insieme tutti gli elementi; per la posta elettronica, questo campo include il messaggio e tutti gli allegati. per i documenti, questo campo include il documento e tutti gli elementi incorporati. |
 | **Classe file** | Per il contenuto di SharePoint e OneDrive: **Document**; per il contenuto da Exchange: * * E-mail o **allegato**. |
 | **Tipi di file** | L'estensione di un file; ad esempio, docx, 1, pptx o xlsx. |
 | **Ha un partecipante all'avvocato** | Ha valore true se almeno uno dei partecipanti è presente nell'elenco degli avvocati. in caso contrario, il valore è false. |
@@ -154,7 +156,7 @@ Nella tabella seguente sono elencate le condizioni delle proprietà dei document
 | **Classe Item** | Classe Item fornita da Exchange Server; ad esempio, **IPM. Note** |
 | **Data ultima modifica** | La data dell'ultima modifica di un documento. |
 | **ID di carico** | ID carico, in cui l'elemento è stato caricato in un set di revisione. |
-| **Nome percorso** | Stringa che identifica l'origine dell'elemento.  Per Exchange, questo sarà l'indirizzo SMTP della cassetta postale. Per SharePoint e OneDrive, l'URL della raccolta siti. |
+| **Nome percorso** | Stringa che identifica l'origine dell'elemento.  Per Exchange, questo campo sarà l'indirizzo SMTP della cassetta postale. Per SharePoint e OneDrive, l'URL della raccolta siti. |
 | **Contrassegnata come rappresentante** | Un documento di ogni gruppo di duplicati esatti è contrassegnato come rappresentanti. |
 | **Estensione di file nativa** | Interno nativo dell'elemento. |
 | **Nome file nativo** | Nome file nativo dell'elemento. |

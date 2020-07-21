@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 212cefebfa3b4954f30d114419f82a5862e98a4f
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 862a25eddda6048349df937641914377cb25874f
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094799"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200039"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -47,7 +47,7 @@ Le organizzazioni accedono alla visualizzazione robusta delle metriche e delle t
 
 Si ricevono punti per la configurazione delle funzionalità di sicurezza consigliate, per l'esecuzione di attività relative alla sicurezza o per l'azione di miglioramento con un'applicazione o un software di terze parti o con una attenuazione alternativa. Alcune azioni di miglioramento offrono solo punti quando sono state completate e alcune forniscono punti parziali se sono state completate per alcuni dispositivi o utenti. Se non è possibile o non si desidera applicare una delle azioni di miglioramento, è possibile scegliere di accettare il rischio o il rischio rimanente.
 
-Viene mostrato il set completo di possibili miglioramenti, indipendentemente dalla licenza, in modo da poter comprendere le procedure consigliate per la sicurezza e migliorare il punteggio. La posizione di sicurezza assoluta è rappresentata da un punteggio sicuro, che rimane invariato indipendentemente dalle licenze di prodotto possedute dall'organizzazione. Tenere presente che la sicurezza deve essere bilanciata con l'usabilità e non tutte le raccomandazioni possono funzionare per l'ambiente in uso.
+Se si dispone di una licenza per uno dei prodotti Microsoft supportati, verranno visualizzati i suggerimenti per tali prodotti. Viene mostrato il set completo di possibili miglioramenti per un prodotto, indipendentemente dall'edizione di licenza, dall'abbonamento o dal piano, in modo da poter comprendere le procedure consigliate per la sicurezza e migliorare il punteggio. La posizione di sicurezza assoluta è rappresentata da un punteggio sicuro, che rimane invariato indipendentemente dalle licenze possedute dall'organizzazione per un prodotto specifico. Tenere presente che la sicurezza deve essere bilanciata con l'usabilità e non tutte le raccomandazioni possono funzionare per l'ambiente in uso.
 
 Il Punteggio viene aggiornato in tempo reale per riflettere le informazioni presentate nelle pagine di azione per la visualizzazione e il miglioramento. Secure Score sincronizza anche tutti i giorni per ricevere i dati di sistema relativi ai punti ottenuti per ogni azione.
 
@@ -109,62 +109,13 @@ Con l'accesso in sola lettura, non è possibile modificare lo stato o le note pe
 
 Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in base alle configurazioni di sistema, al comportamento degli utenti e ad altre misure relative alla sicurezza. non si tratta di una misura assoluta del modo in cui il sistema o i dati verranno violati. Piuttosto, rappresenta la misura in cui sono stati adottati controlli di sicurezza nell'ambiente Microsoft, che possono contribuire a compensare il rischio di essere violati. Nessun servizio online è completamente immune dalle violazioni della sicurezza e il Punteggio sicuro non deve essere interpretato come garanzia contro la violazione della sicurezza in alcun modo.
 
-## <a name="whats-new"></a>Novità 
-
-Per rendere Microsoft Secure Score un migliore rappresentante della posizione di sicurezza, sono state apportate alcune modifiche. Per informazioni sulle modifiche pianificate, vedere [What ' s Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
-
-### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Incompatibilità con il Punteggio identità sicuro e l'API del grafico
-
-Nella versione recente di Microsoft Secure Score è stato rilasciato un modello di Punteggio migliorato. Tali modifiche consentono una visualizzazione più flessibile e accurata della posizione di sicurezza. Tuttavia, questi aggiornamenti sono stati resi temporaneamente incompatibili con il Punteggio di Microsoft Secure e l'API del grafico.
-
-Nel tempo, il Punteggio di sicurezza dell'identità e l'API del grafico adotteranno il nuovo modello di punteggio. Fino a quel momento, i clienti vedranno le differenze nei punteggi riportati da Microsoft Secure score, Identity Secure score e l'API del grafico. Vi chiediamo scusa per qualsiasi inconveniente che questo comporta, e stiamo lavorando per garantire che queste esperienze siano più compatibili in futuro.
-
-### <a name="updated-improvement-actions"></a>Azioni di miglioramento aggiornate
-
-- Aggiunta delle azioni di miglioramento di Azure Active Directory
-- Aggiunta delle azioni di miglioramento di Azure Advanced Threat Protection
-- Supporto per le indicazioni sulla sicurezza del trifosfato di adenosina di Microsoft Defender [& vulnerabilità](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
-    - Tutti i consigli di sicurezza rilasciati forniti da TVM sono ora disponibili
-
-### <a name="updated-interface-and-functionality"></a>Interfaccia e funzionalità aggiornate
-
-* Tutte le nuove visualizzazioni metriche e tendenze per le discussioni su OICOL e Lead Level
-* Nuove modalità di monitoraggio e benchmark del Punteggio
-* Migliorare il monitoraggio e la comprensione delle regressioni dei punteggi
-* Filtrare, contrassegnare, ricercare e raggruppare le azioni di miglioramento
-* Gestire gli obiettivi futuri utilizzando le proiezioni dei punteggi e le azioni pianificate
-* E altro ancora!
-
-### <a name="june-2020"></a>Giugno 2020
-
-#### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Azione di miglioramento rimossa per Microsoft Defender Advanced Threat Protection
-
-* Attivazione delle regole di riduzione della superficie di attacco
-
-#### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Sono state aggiunte azioni di miglioramento per Microsoft Defender Advanced Threat Protection
-
-* Impedire a Adobe Reader di creare processi figlio
-* Utilizzare Advanced Protection against ransomware
-* Blocca tutte le applicazioni di Office dalla creazione dei processi figlio
-* Bloccare le applicazioni di Office dalla creazione di contenuto eseguibile
-* Blocca JavaScript o VBScript dall'avvio del contenuto eseguibile scaricato
-* Bloccare l'esecuzione di script potenzialmente offuscati
-* Bloccare i contenuti eseguibili dal client di posta elettronica e webmail
-* Bloccare l'applicazione di comunicazione di Office dalla creazione dei processi figlio
-* Blocca processi non attendibili e non firmati che vengono eseguiti da USB
-* Blocca la persistenza tramite la sottoscrizione di eventi WMI
-* Blocca le applicazioni di Office dall'inserimento di codice in altri processi
-* Bloccare l'esecuzione di file eseguibili a meno che non soddisfino un criterio di prevalenza, età o elenco attendibile
-* Bloccare le creazioni dei processi originati da comandi di PSExec e WMI
-* Bloccare la sottrazione di credenziali dal sottosistema di autorità di sicurezza locale di Windows (lsass.exe)
-* Bloccare le chiamate API Win32 dalle macro di Office
-
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 
 In caso di problemi, fatecelo sapere inviando la [sicurezza, la Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Si sta monitorando la community e viene fornita assistenza.
 
 ## <a name="related-resources"></a>Risorse correlate
 
-- [Ottenere visibilità nella posizione di sicurezza](microsoft-secure-score-improvement-actions.md)
+- [Valutare la posizione di sicurezza](microsoft-secure-score-improvement-actions.md)
 - [Monitorare la cronologia dei punteggi di Microsoft Secure e raggiungere gli obiettivi](microsoft-secure-score-history-metrics-trends.md)
 - [Novità in arrivo](microsoft-secure-score-whats-coming.md)
+- [Novità](microsoft-secure-score-whats-new.md)
