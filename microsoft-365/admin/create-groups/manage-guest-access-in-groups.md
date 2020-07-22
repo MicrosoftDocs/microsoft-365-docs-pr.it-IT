@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere gli ospiti a un gruppo di Microsoft 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: a56d9599824ac1436c6f875661bcd573c1f6b1ca
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854247"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204744"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gestire l'accesso guest nei gruppi di Microsoft 365
 
@@ -61,7 +61,7 @@ Se l'ospite è già presente nella directory, è possibile aggiungerli ai gruppi
   
 4. Selezionare **Aggiungi membri**e scegliere il nome del Guest che si desidera aggiungere.
     
-5. Selezionare **Salva**.
+5. Seleziona **Salva**.
 
 Se si desidera aggiungere direttamente un guest alla directory, è possibile [aggiungere gli utenti di collaborazione B2B di Azure Active Directory nel portale di Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
@@ -114,7 +114,7 @@ Per ulteriori informazioni, vedere [Consenti o blocca gli inviti agli utenti B2B
 
 ## <a name="add-guests-to-the-global-address-list"></a>Aggiungere gli ospiti all'elenco indirizzi globale
 
-Per impostazione predefinita, gli utenti non sono visibili nell'elenco indirizzi globale di Exchange. Utilizzare la procedura riportata di seguito per rendere visibile un ospite nell'elenco indirizzi globale.
+Per impostazione predefinita, gli utenti non sono visibili nell'elenco indirizzi globale di Exchange. Utilizzare la procedura riportata di seguito per rendere visibile un ospite nell'elenco indirizzi globale. Verificare che l'ospite sia visibile nell'interfaccia di amministrazione di Exchange Online. Dopo che sono stati aggiunti nuovi clienti, è possibile che venga visualizzato un breve periodo di tempo.
 
 Individuare l'ObjectID dell'utente Guest eseguendo:
 

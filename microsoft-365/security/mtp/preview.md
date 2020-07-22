@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048268"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204828"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Funzionalità di anteprima di Microsoft Threat Protection
 
@@ -59,8 +59,4 @@ Le caratteristiche e i miglioramenti seguenti sono attualmente disponibili in an
 
 - **[Riferimenti allo schema in-Portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** -informazioni sulle tabelle dello schema disponibili direttamente nel centro sicurezza. Oltre alle descrizioni di tabelle e colonne, questo riferimento fornisce informazioni sui tipi di evento supportati ( `ActionType` valori) e sulle query di esempio.  
 
-- **[Tabelle di identità e app](advanced-hunting-schema-tables.md)** : consente di ottenere visibilità negli eventi di autenticazione, nelle query di Active Directory e nell'attività correlata all'applicazione con le tabelle [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)e [AppFileEvents](advanced-hunting-appfileevents-table.md) nello schema di caccia avanzato.
-
 - **[Vai a cercare](advanced-hunting-go-hunt.md)** : rapidamente pivot dall'indagine di un incidente per esaminare un evento specifico, un utente, un dispositivo o altri tipi di entità che utilizzano funzionalità di [ricerca avanzata](advanced-hunting-overview.md) basate su query.
-
-- **[Funzione fileprofile ()](advanced-hunting-fileprofile-function.md)** : utilizzare nelle query di [caccia avanzate](advanced-hunting-overview.md) per incorporare informazioni complete sui file.

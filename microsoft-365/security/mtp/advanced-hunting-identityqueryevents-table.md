@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bec7f13d49e2ccf4e3a9121d5e5a2fecd1b10aa2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 436c4d7306f9f5febd614489090a0a10929ba3c9
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899114"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204876"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -38,8 +38,9 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `ActionType` | stringa | Tipo di attività che ha attivato l'evento |
 | `Application` | stringa | Applicazione in cui è stata eseguita l'azione registrata |
-| `Query` | stringa | Tipo di query: QueryGroup, QueryUser o EnumerateUsers |
-| `QueryObject` | stringa | Nome dell'utente, del gruppo, del dispositivo, del dominio o di qualsiasi altro tipo di entità su cui viene eseguita la query |
+| `QueryType` | stringa | Tipo di query, ad esempio QueryGroup, QueryUser o EnumerateUsers |
+| `QueryTarget` | stringa | Nome dell'utente, del gruppo, del dispositivo, del dominio o di qualsiasi altro tipo di entità su cui viene eseguita la query |
+| `Query` | stringa | Stringa utilizzata per eseguire la query |
 | `Protocol` | stringa | Protocollo utilizzato durante la comunicazione |
 | `AccountName` | stringa | Nome utente dell'account |
 | `AccountDomain` | stringa | Dominio dell'account |
@@ -49,7 +50,14 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AccountDisplayName` | stringa | Nome dell'account utente visualizzato nella rubrica. In genere una combinazione di un nome o di un cognome, di un'iniziazione centrale e di un ultimo nome. |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) dell'endpoint |
 | `IPAddress` | stringa | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate |
+| `DestinationDeviceName` | stringa | Nome del dispositivo che esegue l'applicazione server che ha elaborato l'azione registrata |
+| `DestinationIPAddress` | stringa | Indirizzo IP del dispositivo che esegue l'applicazione server che ha elaborato l'azione registrata |
+| `TargetDeviceName` | stringa | Nome di dominio completo (FQDN) del dispositivo a cui è stata applicata l'azione registrata |
+| `TargetAccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account a cui è stata applicata l'azione registrata |
+| `TargetAccountDisplayName` | stringa | Nome visualizzato dell'account a cui è stata applicata l'azione registrata |
 | `Location` | stringa | Città, paese o altra località geografica associata all'evento |
+| `ReportId` | long | Identificatore univoco per l'evento |
+| `AdditionalFields` | stringa | Ulteriori informazioni sull'entità o sull'evento |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

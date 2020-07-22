@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 0ee31ef55c78457ee2b9d3db7b702ada2f55a639
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185993"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204960"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Punteggio principale nei test del settore
 
@@ -100,6 +100,8 @@ SE Labs verifica una serie di soluzioni utilizzate da prodotti e servizi per ril
 ## <a name="endpoint-detection--response"></a>Risposta & rilevamento endpoint
 
 Le funzionalità di [rilevamento e risposta di endpoint ATP di](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) Microsoft Defender offrono rilevamenti di attacchi avanzati che sono quasi in tempo reale e utilizzabili. I responsabili della sicurezza possono assegnare priorità agli avvisi in modo efficace, ottenere una visibilità completa su una violazione e adottare azioni di risposta per correggere le minacce.
+
+Le funzionalità EDR e Endpoint Protection di Microsoft Defender ATP hanno ricevuto risultati positivi da test e pubblicazioni del settore. [SC Labs ha valutato gli strumenti di sicurezza di endpoint](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) nel 2020 giugno e ha dato a Microsoft Defender ATP [5/5 stelle](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). Hanno anche definito la capacità di Microsoft Defender ATP di proteggere le organizzazioni dal panorama delle minacce moderne utilizzando un set completo di funzionalità di sicurezza e hanno identificato la soluzione di sicurezza dell'endpoint come olistica e unificata. Sono state inoltre riconosciute la convergenza di Endpoint Protection con funzionalità di rilevamento e risposta di endpoint, poiché la catena di attacchi viene ora completamente coperta dalle soluzioni.
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE: funzionalità di rilevamento e ottica leader del settore
 

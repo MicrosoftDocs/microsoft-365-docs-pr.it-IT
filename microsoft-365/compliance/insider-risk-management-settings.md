@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7ab2b0ddaa7bc1c8ed4109affb2ef5ff11a7420b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a31ee6de305cf9226a8b605f75bb71406f78fd70
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200229"
+ms.locfileid: "45201422"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Informazioni introduttive sulle impostazioni di gestione dei rischi Insider
 
@@ -74,7 +74,7 @@ Ad esempio, si decide di abilitare gli indicatori di SharePoint nelle impostazio
 
 ![Impostazioni degli indicatori personalizzati per la gestione dei rischi Insider](../media/insider-risk-custom-indicators.png)
 
-- Per il primo livello di evento giornaliero, impostare la soglia a *10 o più eventi al giorno* per un impatto minore sul punteggio di rischio per gli eventi, *20 o più eventi al giorno* per un impatto medio sul punteggio di rischio*per gli eventi e* *30 o più eventi al giorno* un impatto maggiore sul punteggio di rischio per gli eventi. Queste impostazioni indicano in modo efficace:
+Per il primo livello di evento giornaliero, impostare la soglia a *10 o più eventi al giorno* per un impatto minore sul punteggio di rischio per gli eventi, *20 o più eventi al giorno* per un impatto medio sul punteggio di rischio per gli eventi e *30 o più eventi al giorno* un impatto maggiore sul punteggio di rischio per gli eventi. Queste impostazioni indicano in modo efficace:
 
 - Se sono presenti 1-9 eventi di SharePoint che si verificano dopo l'evento triggering, i punteggi del rischio hanno un impatto minimo e tendono a non generare un avviso.
 - Se sono presenti 10-19 eventi di SharePoint che si verificano dopo un evento di attivazione, il Punteggio di rischio è intrinsecamente inferiore e i livelli di gravità degli avvisi tendono a essere a un livello basso.

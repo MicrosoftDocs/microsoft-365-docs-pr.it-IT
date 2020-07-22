@@ -1,5 +1,7 @@
 ---
 title: Personalizzare la pagina di accesso con una notifica sulla privacy e il consenso
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,13 +20,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Personalizzare la propria pagina sig-in con una privacy e un avviso di consenso per Microsoft 365 per le campagne.
-ms.openlocfilehash: 94a18a4f1763a93d3ff1be5976df66b6fb112165
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+description: Personalizzare la pagina di accesso con una notifica sulla privacy e il consenso per Microsoft 365 per le campagne.
+ms.openlocfilehash: 7ace4f1fe28bece1859cecb968a4352f015b8ca2
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995311"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204792"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personalizzare la pagina di accesso con una notifica sulla privacy e il consenso
 
@@ -34,16 +36,15 @@ La campagna politica può rendere più facile per le forze dell'ordine di presen
 
 ## <a name="customize-the-text-on-your-sign-in-page"></a>Personalizzare il testo nella pagina di accesso
 
-Per aggiornare gli elementi personalizzabili nell'accesso, è necessario essere un amministratore globale. Per istruzioni specifiche, vedere [Add Company branding](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) article.
+Per aggiornare gli elementi personalizzabili nella pagina di accesso, è necessario essere un amministratore globale. Per istruzioni specifiche, vedere [Add Company branding](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) article.
 
 Gli elementi che è possibile aggiornare sono i seguenti:
 
 - **Testo della pagina di accesso**
 
-    Questo è un luogo semplice per aggiungere l'istruzione privacy and consenso.
-- Immagine di sfondo della pagina di sing-in
+     Un luogo semplice per aggiungere l'istruzione privacy e consenso.
+- Immagine di sfondo della pagina di accesso
 - Logo banner
 - Suggerimento per il nome utente
 
 Per esempi di avvisi sulla privacy e sul consenso, vedere [ricerca e grippaggio dei computer e ottenimento di prove elettroniche nelle indagini penali](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf) file PDF, in particolare **Appendice A: Language banner di esempio**.
-

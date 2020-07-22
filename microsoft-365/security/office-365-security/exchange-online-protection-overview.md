@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come Exchange Online Protection (EOP) può aiutare a proteggere l'organizzazione di posta elettronica locale in ambienti autonomi e ibridi.
-ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 37b38df9e94bee93202be02c01a220afa9470b8a
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616987"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204804"
 ---
 # <a name="exchange-online-protection-overview"></a>Panoramica su Exchange Online Protection
 
@@ -61,7 +61,13 @@ EOP esegue il bilanciamento del carico tra i datacenter ma solo all'intero di un
 
 - In Asia-Pacifico (APAC), tutte le cassette postali di Exchange Online si trovano in datacenter APAC e i messaggi sono attualmente instradati attraverso i datacenter di APAC per il filtro EOP.
 
-- Nelle Americhe, tutte le cassette postali di Exchange Online si trovano nei data center degli Stati Uniti, ad eccezione del Sud America, in cui vengono utilizzati i datacenter in Brasile e Cile e in Canada, in cui vengono utilizzati i datacenter in Canada. Tutti i messaggi di posta elettronica, inclusi i messaggi per i clienti del Sud America e del Canada, vengono instradati tramite datacenter locali per il filtro EOP; la posta in quarantena viene archiviata nel centro dati in cui si trova il tenant.
+- Nelle Americhe i servizi sono distribuiti nei seguenti percorsi:
+
+  - Sud America: le cassette postali di Exchange Online si trovano in datacenter in Brasile e Cile. Tutti i messaggi vengono instradati attraverso i centri dati locali per il filtro EOP. I messaggi in quarantena vengono archiviati nel centro dati in cui si trova il tenant.
+
+  - Canada: le cassette postali di Exchange Online si trovano in datacenter in Canada. Tutti i messaggi vengono instradati attraverso i centri dati locali per il filtro EOP. I messaggi in quarantena vengono archiviati nel centro dati in cui si trova il tenant.
+
+  - Stati Uniti: le cassette postali di Exchange Online si trovano nei data center degli Stati Uniti. Tutti i messaggi vengono instradati attraverso i centri dati locali per il filtro EOP. I messaggi in quarantena vengono archiviati nel centro dati in cui si trova il tenant.
 
 - Per GCC (Government Community Cloud) tutte le cassette postali di Exchange Online si trovano in datacenter degli Stati Uniti e tutti i messaggi vengono instradati tramite datacenter statunitensi per il filtraggio EOP.
 

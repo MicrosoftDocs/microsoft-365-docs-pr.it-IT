@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come visualizzare, creare, modificare ed eliminare i criteri di posta indesiderata in uscita in Exchange Online Protection (EOP).
-ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 9f70deeb371278fa397e5186b4c770f776abff32
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024583"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204852"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurare il filtro della posta indesiderata in uscita in EOP
 
@@ -136,26 +136,10 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
 
    - **Notifica a determinate persone se un mittente è bloccato a causa dell'invio di posta indesiderata in uscita**:
 
-     > [!NOTE]
-     > Il [criterio di avviso](../../compliance/alert-policies.md) predefinito denominato utente con **restrizioni dall'invio di messaggi di posta** elettronica Invia già notifiche tramite posta elettronica ai membri del gruppo **TenantAdmins** (**Global Admins**) quando gli utenti vengono bloccati a causa del superamento dei limiti nella sezione **limiti dei destinatari** . È consigliabile utilizzare il criterio di avviso anziché questa impostazione nel criterio di posta indesiderata in uscita per inviare una notifica agli amministratori e ad altri utenti. Per istruzioni, vedere [verificare le impostazioni degli avvisi per gli utenti con restrizioni](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). <br/><br/> Questa impostazione è compatibile solo con il criterio di posta indesiderata in uscita predefinito. Non è possibile utilizzare i criteri di posta indesiderata in uscita personalizzati creati.
-
-     Per abilitare questa impostazione:
-
-     a. Selezionare la casella di controllo per abilitare l'impostazione.
-
-     b. Fare clic su **Aggiungi utenti**. Nel riquadro a comparsa **Aggiungi o Rimuovi destinatari** visualizzato:
-
-     c. Immettere l'indirizzo di posta elettronica del mittente. È possibile specificare più indirizzi di posta elettronica separati da punti e virgola (;) o un destinatario per riga.
-
-     d. Scegliere ![Icona Aggiungi](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) per aggiungere i destinatari.
-
-        Ripetere questi passaggi tutte le volte necessarie.
-
-        I destinatari aggiunti vengono visualizzati nella sezione **elenco dei destinatari** sul riquadro a comparsa. Per eliminare un destinatario, fare clic su ![ Rimuovi ](../../media/scc-remove-icon.png) .
-
-     e. Al termine, scegliere **Salva**.
-
-     Per disabilitare questa impostazione, deselezionare la casella di controllo.
+     > [!IMPORTANT]
+     > Questa impostazione è in fase di divenire obsoleta dai criteri di posta indesiderata in uscita.
+     > 
+     > Il [criterio di avviso](../../compliance/alert-policies.md) predefinito denominato utente con **restrizioni dall'invio di messaggi di posta** elettronica Invia già notifiche tramite posta elettronica ai membri del gruppo **TenantAdmins** (**Global Admins**) quando gli utenti vengono bloccati a causa del superamento dei limiti nella sezione **limiti dei destinatari** . **È consigliabile utilizzare il criterio di avviso anziché questa impostazione nel criterio di posta indesiderata in uscita per inviare una notifica agli amministratori e ad altri utenti**. Per istruzioni, vedere [verificare le impostazioni degli avvisi per gli utenti con restrizioni](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
 5. Optional Espandere la sezione **limiti dei destinatari** per configurare i limiti e le azioni per i messaggi di posta elettronica in uscita sospetti:
 
@@ -188,12 +172,12 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel c
 6. Optional Espandere la sezione **inoltro automatico** per configurare i controlli sulla modalità di controllo dell'inoltro automatico da parte degli utenti.
 
    > [!NOTE]
-   > Queste impostazioni sono valide solo per le cassette postali basate sul cloud.
-   
+   > Queste impostazioni si applicano solo alle cassette postali basate sul cloud.
+
    - **Inoltro automatico**
   
       Selezionare una delle opzioni per controllare il modo in cui viene gestita l'inoltro automatico.
-    
+
       - **Automatico**: impostazione predefinita che consente al sistema di controllare l'inoltro automatico con l'inoltro automatico disabilitato per impostazione predefinita.
       - **On**: l'inoltro esterno è abilitato all'interno del criterio senza restrizioni.
       - **Disattivato**: l'inoltro esterno è disabilitato e verrà bloccato

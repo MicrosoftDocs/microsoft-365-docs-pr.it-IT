@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da3b331d4f607aa0961e275db9444aadbec4fcf2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899340"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204756"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -41,13 +41,23 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FolderPath` | stringa | Cartella contenente il file a cui è stata applicata l'azione registrata |
 | `PreviousFileName` | stringa | Nome originale del file che è stato rinominato come risultato dell'azione |
+| `PreviousFolderPath` | stringa | Cartella originale contenente il file prima dell'applicazione dell'azione registrata |
+| `Protocol` | stringa | Protocollo di rete utilizzato |
 | `AccountName` | stringa | Nome utente dell'account |
 | `AccountDomain` | stringa | Dominio dell'account |
 | `AccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account |
 | `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure AD |
 | `AccountDisplayName` | stringa | Nome dell'account utente visualizzato nella rubrica. In genere una combinazione di un nome o di un cognome, di un'iniziazione centrale e di un ultimo nome. |
+| `DeviceName` | stringa | Nome di dominio completo (FQDN) del dispositivo |
+| `DeviceType` | stringa | Tipo di dispositivo | 
+| `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione nel dispositivo. Ciò indica specifici sistemi operativi, incluse variazioni all'interno della stessa famiglia di prodotti, come Windows 10 e Windows 7. |
 | `IPAddress` | stringa | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate |
+| `DestinationDeviceName` | stringa | Nome del dispositivo che esegue l'applicazione server che ha elaborato l'azione registrata |
+| `DestinationIPAddress` | stringa | Indirizzo IP del dispositivo che esegue l'applicazione server che ha elaborato l'azione registrata |
 | `Location` | stringa | Città, paese o altra località geografica associata all'evento |
+| `Isp` | stringa | Provider di servizi Internet (ISP) associato all'indirizzo IP dell'endpoint |
+| `ReportId` | long | Identificatore univoco per l'evento |
+| `AdditionalFields` | stringa | Ulteriori informazioni sull'entità o sull'evento |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
