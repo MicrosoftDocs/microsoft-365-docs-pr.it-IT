@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 191f0492293738a9bce486226ca7d87d947a3f65
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726829"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204864"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -352,12 +352,12 @@ Quando un verdetto filtro posta indesiderata mette in quarantena un messaggio, �
 
    - **Invia notifiche di posta indesiderata per l'utente finale ogni (giorni):**: selezionare la frequenza di invio delle notifiche. Il valore predefinito è 3 giorni. È possibile immettere da 1 a 15 giorni.
 
-     Sono presenti 3 cicli di notifica della posta indesiderata dell'utente finale entro un periodo di 24 ore, che iniziano agli orari seguenti: 01:00 UTC, 08:00 UTC e 16:00 UTC. 
+     Sono presenti 3 cicli di notifica della posta indesiderata dell'utente finale entro un periodo di 24 ore, che iniziano agli orari seguenti: 01:00 UTC, 08:00 UTC e 16:00 UTC.
 
      > [!NOTE]
      > Se una notifica durante risulta mancante durante un ciclo precedente, ne verrà eseguito il push in un ciclo successivo. Ciò può dare l'impressione di ricevere più notifiche nello stesso giorno.
 
-   - **Lingua delle notifiche**: fare clic sul menu a discesa e selezionare una lingua disponibile dall'elenco. Il valore predefinito è **Default**, il che indica che le notifiche di quarantena per gli utenti finali usano la lingua predefinita dell'organizzazione di EOP.
+   - **Lingua delle notifiche**: fare clic sul menu a discesa e selezionare una lingua disponibile dall'elenco. Il valore predefinito è **Predefinito**, ovvero la lingua predefinita dell'organizzazione basata sul cloud.
 
    Al termine, scegliere **Salva**.
 
@@ -643,7 +643,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="allowblock-lists"></a>Elenchi di elementi consentiti/bloccati
 
-A volte i filtri non riescono a bloccare i messaggi o impiegano molto tempo a farlo. In questi casi, i criteri di protezione da posta indesiderata presentano Elenchi di elementi consentiti/bloccati per ignorare il verdetto corrente. Questa opzione deve essere usata solo in modo parsimonioso, perché gli elenchi possono diventare ingestibili e temporaneamente perché il nostro stack di filtri deve svolgere il proprio lavoro.
+A volte i filtri non riescono a bloccare i messaggi o impiegano molto tempo a farlo. In questi casi, i criteri di protezione dalla posta indesiderata presentano Elenchi di elementi consentiti/bloccati per ignorare il verdetto corrente. Questa opzione deve essere usata solo in modo parsimonioso, perché gli elenchi possono diventare ingestibili e temporaneamente perché il nostro stack di filtri deve svolgere il proprio lavoro.
 
 > [!TIP]
 > Ci potrebbero essere situazioni in cui l'organizzazione potrebbe non concordare con il verdetto fornito dal servizio. In questo caso, è consigliabile mantenere permanenti gli elenchi di elementi consentiti o bloccati. Tuttavia, se si vuole inserire un dominio nell'elenco di quelli consentiti per un periodo di tempo prolungato, è consigliabile indicare al mittente di verificare che il proprio dominio sia autenticato e impostato su DMARC, rifiutare se non lo è.

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo scenario di soluzione mostra come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione. Questa operazione viene eseguita usando i metadati del documento per classificarne il contenuto, nello specifico applicando automaticamente le etichette di conservazione e configurando la conservazione basata su eventi.
-ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126477"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199863"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gestire il ciclo di vita dei documenti di SharePoint con le etichette di conservazione
 
@@ -112,7 +112,7 @@ Ecco il [piano di archiviazione](file-plan-manager.md) per l'etichetta di conser
 
 - **Descrittori del piano di archiviazione:** (per semplificare lo scenario, non viene inserito alcun descrittore di archiviazione).
 
-La seguente schermata mostra le impostazioni quando si crea l'[etichetta di conservazione](retention.md#retention-labels) Specifica di prodotto nel Centro sicurezza e conformità. È possibile creare la tipologia di evento **Cessazione del prodotto** al momento della creazione dell'etichetta di conservazione. Seguire i passaggi descritti di seguito.
+Lo screenshot seguente mostra le impostazioni quando si crea l'[etichetta di conservazione](retention.md#retention-labels) Specifica di prodotto nel Centro conformità Microsoft 365. È possibile creare la tipologia di evento **Cessazione del prodotto** al momento della creazione dell'etichetta di conservazione. Seguire i passaggi descritti di seguito.
 
 ![Impostazioni di conservazione per l'etichetta Specifica di prodotto](../media/SPRetention5.png)
 
@@ -217,7 +217,7 @@ A questo punto, digitare **RefinableString00:"Specifica di prodotto" AND Refinab
 
 Dopo aver verificato il corretto funzionamento della query KQL, si potranno creare i criteri di etichetta che fanno uso di una query KQL per l'applicazione automatica dell'etichetta di conservazione della Specifica di prodotto ai documenti appropriati.
 
-1. Nel [Centro sicurezza e conformità](https://protection.office.com), passare a **Classificazione** > **Etichette di conservazione** e poi selezionare **Applica automaticamente un'etichetta**. 
+1. Nel [centro conformità](https://compliance.microsoft.com/homepage) passare a **Gestione dei record** > **Criteri etichetta** e quindi selezionare **Applica automaticamente un'etichetta**. 
 
    ![Selezionare Applica automaticamente un'etichetta nella pagina Etichette](../media/SPRetention16.png)
 
@@ -252,9 +252,7 @@ Dopo aver verificato il corretto funzionamento della query KQL, si potranno crea
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>Verificare l'applicazione automatica dell'etichetta di conservazione
 
-Dopo sette giorni, usare la funzione [Esplora attività con etichette](view-label-activity-for-documents.md) nel Centro sicurezza e conformità per verificare che il criterio di etichetta creato in questo scenario sia stato applicato automaticamente alle etichette di conservazione per i documenti di prodotto. Nella schermata seguente, le etichette di conservazione sono state applicate anche a contratti di prodotto e manuali utente, nonostante in questo articolo non sia stata descritta la creazione di tali etichette di conservazione e dei criteri di etichetta.
-
-![Usare Explorer attività etichette per verificare che l'etichetta sia stata applicata automaticamente](../media/SPRetention20.png)
+Dopo sette giorni, usare la funzione [Explorer attività etichette](view-label-activity-for-documents.md) nel Centro sicurezza e conformità per verificare che il criterio di etichetta creato abbia applicato automaticamente le etichette di conservazione in questo scenario ai documenti di prodotto. 
 
 Un ulteriore controllo prevede la verifica delle proprietà del documento all'interno della Raccolta documenti. Nel riquadro delle informazioni, si può notare che l'etichetta di conservazione è applicata a un documento selezionato.
 

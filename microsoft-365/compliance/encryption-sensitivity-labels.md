@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bf859cd5abe0dcb36c02c8355cbfa58418b3138
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 4f67ca4f9c57730d2e9b95f6060d6c302728f7dc
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153699"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201438"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -121,9 +121,9 @@ Scegliere di assegnare le autorizzazioni adesso o consentire agli utenti di asse
 
 Usare le opzioni seguenti per controllare chi può accedere ai documenti e ai messaggi di posta elettronica a cui verrà applicata tale etichetta. È possibile:
 
-1. **Consentire l'accesso al contenuto etichettato solo entro una determinata scadenza**, che può essere una data specifica o un determinato numero di giorni dopo che è stata applicata l'etichetta. Al termine di questo periodo, gli utenti non potranno aprire l'elemento etichettato. Se si specifica una data, sarà rispettato il proprio fuso orario corrente. Si noti che alcuni client di posta elettronica potrebbero non applicare la scadenza e mostrare messaggi di posta elettronica che hanno superato la data di scadenza a causa dei meccanismi di memorizzazione nella cache.
+- **Consentire l'accesso al contenuto etichettato solo entro una determinata scadenza**, che può essere una data specifica o un determinato numero di giorni dopo che è stata applicata l'etichetta. Al termine di questo periodo, gli utenti non potranno aprire l'elemento etichettato. Se si specifica una data, sarà rispettato il proprio fuso orario corrente. Si noti che alcuni client di posta elettronica potrebbero non applicare la scadenza e mostrare messaggi di posta elettronica che hanno superato la data di scadenza a causa dei meccanismi di memorizzazione nella cache.
 
-2. **Consentire l'accesso offline** sempre, mai o per un determinato numero di giorni in seguito all'applicazione dell'etichetta. Se si limita l'accesso offline su mai o per un determinato numero di giorni, al termine di tale intervallo di tempo, ogni utente dovrà ripetere l'autenticazione e registrare il proprio accesso. Per ulteriori informazioni, vedere la sezione successiva riguardo la licenza d'uso di Rights Management.
+- **Consentire l'accesso offline** sempre, mai o per un determinato numero di giorni in seguito all'applicazione dell'etichetta. Se si limita l'accesso offline su mai o per un determinato numero di giorni, al termine di tale intervallo di tempo, ogni utente dovrà ripetere l'autenticazione e registrare il proprio accesso. Per ulteriori informazioni, vedere la sezione successiva riguardo la licenza d'uso di Rights Management.
 
 Impostazioni per il controllo di accesso del contenuto crittografato:
 
@@ -207,6 +207,14 @@ All'emittente di Rights Management sono sempre concesse le autorizzazioni di con
 - L'emittente di Rights Management può aprire un documento anche se è stato revocato.
 
 Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+
+### <a name="double-key-encryption"></a>Crittografia a chiave doppia
+
+Al momento questa funzionalità è disponibile in anteprima pubblica.
+
+Selezionare questa opzione solo dopo aver configurato il servizio di crittografia a chiave doppia e sarà necessario usare questa crittografia a chiave doppia per i documenti e i messaggi di posta elettronica a cui è applicata l'etichetta.
+
+Per altre informazioni, prerequisiti e istruzioni di configurazione, vedere [Crittografia a chiave doppia](double-key-encryption.md).
 
 ## <a name="let-users-assign-permissions"></a>Consentire agli utenti di assegnare le autorizzazioni
 
