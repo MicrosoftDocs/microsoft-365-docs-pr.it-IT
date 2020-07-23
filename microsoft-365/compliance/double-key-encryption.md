@@ -12,44 +12,40 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 47fc4bc47831970ef7a7f2087cf6c86b6fefb8c2
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: d9ed155576d69889e53e4e4d1ce03e4233fd08ff
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201728"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387443"
 ---
 # <a name="double-key-encryption-dke"></a>Crittografia a chiave doppia (DKE)
 
-> *Si applica a: [conformità di Microsoft 365](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *Si applica a: crittografia a chiave doppia per Microsoft 365 Public Preview, [microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Istruzioni per: [client di etichettatura unificata di Azure Information Protection per Windows](https://docs.microsoft.com/azure/information-protection/faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *Descrizione del servizio per: [conformità di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Questa versione di anteprima pubblica di Double Key Encryption (DKE) consente di utilizzare il client di etichettatura unificata di Azure Information Protection per proteggere i contenuti estremamente riservati mantenendo il controllo completo della chiave.
-
-La crittografia a chiave doppia richiede due tasti, utilizzati insieme, per accedere al contenuto protetto. Si archivia una chiave in Microsoft Azure e si tiene premuto l'altro tasto.
+La crittografia a chiave doppia (DKE) utilizza due tasti insieme per accedere al contenuto protetto. Si archivia una chiave in Microsoft Azure e si tiene premuto l'altro tasto. Il client Azure Information Protection Unified Labeling protegge i contenuti estremamente riservati quando si mantiene il controllo completo di una delle chiavi.
 
 La crittografia a chiave doppia supporta sia le distribuzioni cloud che quelle locali. Queste distribuzioni contribuiscono a garantire che i dati crittografati rimangano opachi ovunque vengano archiviati i dati protetti.
 
 Per ulteriori informazioni sulle chiavi radice tenant basate su cloud predefinite, vedere [Planning and implementing your Azure Information Protection tenant Key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
-La crittografia a doppio tasto è simile a quella di una cassetta di sicurezza che richiede l'accesso sia a un tasto Bank che a una chiave del cliente. Per decrittografare il contenuto protetto, è necessario utilizzare sia la chiave gestita Microsoft sia la chiave relativa al cliente.
-
 Nel video seguente viene illustrato il funzionamento della crittografia a chiave doppia per proteggere il contenuto.
+
+> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
 
 Se le organizzazioni hanno uno dei requisiti seguenti, è possibile utilizzare DKE per proteggere il contenuto:
 
 - Si desidera garantire che sia possibile decrittografare il contenuto protetto *solo* in tutte le circostanze.
 - Non si desidera che Microsoft abbia accesso ai dati protetti da solo.
-- Sono necessari requisiti normativi per mantenere le chiavi all'interno di un limite geografico. Tutti i tasti gestiti dal cliente per la crittografia e la decrittografia dei dati vengono mantenuti nel Data Center.
-
-> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
+- Sono necessari requisiti normativi per mantenere le chiavi all'interno di un limite geografico. Tutte le chiavi conservate per la crittografia e la decrittografia dei dati vengono mantenute nel Data Center.
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Requisiti di sistema e licenze per DKE
 
-Questa versione di anteprima pubblica di crittografia a chiave doppia per Microsoft 365 è disponibile come parte di Microsoft 365 E5 e Office 365 E5. Se non si dispone di una licenza Microsoft 365 E5, è possibile iscriversi per una [versione di valutazione](https://aka.ms/M365E5ComplianceTrial). Per ulteriori informazioni su queste licenze, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Crittografia a chiave doppia per Microsoft 365 parte di Microsoft 365 E5 e Office 365 E5. Se non si dispone di una licenza Microsoft 365 E5, è possibile iscriversi per una [versione di valutazione](https://aka.ms/M365E5ComplianceTrial). Per ulteriori informazioni su queste licenze, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Office Insider** Per utilizzare l'anteprima pubblica, è necessario essere membri del programma Office Insider. Per partecipare a Office Insider, accedere a [https://insider.office.com](https://insider.office.com) . Una volta che si è membri, preparare l'ambiente per la distribuzione di Office Insider Builds scegliendo il metodo di distribuzione appropriato per la propria organizzazione. Per istruzioni, vedere [Guida introduttiva alla distribuzione di Office Insider Builds](https://insider.office.com/business/deploy).
 
@@ -63,15 +59,19 @@ Questa versione di anteprima pubblica di crittografia a chiave doppia per Micros
 
 ## <a name="about-this-public-preview-article"></a>Informazioni sull'articolo relativo all'anteprima pubblica
 
-Sono disponibili diversi modi per completare alcuni passaggi per la distribuzione della crittografia a chiave doppia. In questo articolo vengono fornite istruzioni dettagliate per consentire agli amministratori meno esperti di distribuire correttamente il servizio. Se si ha esperienza con le tecnologie comuni, ad esempio git, condivise con i metodi di distribuzione descritti in questo articolo, è possibile scegliere di utilizzare i propri metodi.
+Sono disponibili diversi modi per completare alcuni passaggi per la distribuzione della crittografia a chiave doppia. In questo articolo vengono fornite istruzioni dettagliate per consentire agli amministratori meno esperti di distribuire correttamente il servizio. Se si ha familiarità con questo metodo, è possibile scegliere di utilizzare i propri metodi.
 
-Per l'anteprima pubblica, sono state incluse istruzioni dettagliate su come distribuire il servizio di crittografia a chiave doppia in Azure. Questo scenario non è qualcosa che si potrebbe fare in produzione. Per l'anteprima pubblica utilizzando Azure è un modo rapido per la distribuzione che consente di iniziare a usare la crittografia a chiave doppia subito.
+In questo articolo sono incluse istruzioni dettagliate su come distribuire il servizio di crittografia a chiave doppia in Azure. Questo scenario non è qualcosa che si potrebbe fare in produzione. Per l'anteprima pubblica, l'utilizzo di Azure rappresenta una soluzione rapida per la distribuzione di DKE. La distribuzione in Azure consente di iniziare a usare la crittografia a chiave doppia immediatamente.
 
-È possibile scegliere di distribuire il servizio dovunque si desideri, che si tratti di una rete locale o di un altro provider. Sarà necessario pubblicare l'archivio chiavi utilizzando metodi adatti per tale percorso.
+È possibile distribuire il servizio localmente sulla rete o con un altro provider. Sarà necessario pubblicare l'archivio chiavi utilizzando metodi adatti per tale percorso.
 
 ## <a name="deploy-double-key-encryption"></a>Distribuire la crittografia a chiave doppia
 
-Seguire questi passaggi generali per configurare la crittografia a chiave doppia per l'organizzazione. Nell'esempio riportato in questo articolo viene utilizzato Azure come destinazione di distribuzione per il servizio DKE. Se si esegue la distribuzione in un'altra posizione, è necessario fornire i propri valori.
+Questo articolo e il video sulla distribuzione utilizzano Azure come destinazione di distribuzione per il servizio DKE. Se si esegue la distribuzione in un'altra posizione, è necessario fornire i propri valori.
+
+Guardare il [video sulla distribuzione di crittografia a chiave doppia](https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e) per visualizzare la panoramica dettagliata dei concetti nell'articolo. Il video richiede circa 18 minuti per il completamento.
+
+Seguire questi passaggi generali per configurare la crittografia a chiave doppia per l'organizzazione.
 
 1. [Installare i prerequisiti software](#install-software-prerequisites)
 1. [Clonare il repository di crittografia GitHub a doppio tasto](#clone-the-dke-github-repository)
@@ -146,13 +146,13 @@ Le istruzioni riportate di seguito sono destinate agli utenti di codice git o Vi
 
 5. Nella finestra di dialogo **Seleziona cartella** visualizzata passare a e selezionare un percorso in cui archiviare il repository. Al prompt dei comandi, selezionare **Apri**.
 
-    L'archivio viene aperto in Visual Studio Code e visualizza il ramo git corrente in basso a sinistra. La succursale corrente deve essere **Master**.
+    L'archivio viene aperto in Visual Studio Code e visualizza il ramo git corrente in basso a sinistra. La succursale deve essere **Master**.
 
     Ad esempio:
 
     :::image type="content" source="../media/dke-vscode-master.png" alt-text="Branch Master di Visual Studio Code":::
 
-6. Selezionare il **Master** di Word e quindi selezionare **public_preview** nell'elenco dei rami. 
+6. Selezionare il **Master** di Word e quindi selezionare **public_preview** nell'elenco dei rami.
 
    > [!IMPORTANT]
    > Selezionando il ramo public_preview si garantisce che siano presenti i file corretti per la creazione del progetto. Se non si sceglie la succursale corretta, la distribuzione avrà esito negativo.
@@ -178,41 +178,79 @@ Scegliere se utilizzare la posta elettronica o l'autorizzazione di ruolo. DKE su
 
 - **Autorizzazione ruolo**. Consente all'organizzazione di autorizzare l'accesso ai tasti basati su gruppi di Active Directory e richiede che il servizio Web possa eseguire query su LDAP.
 
-Per impostare le impostazioni di accesso alle chiavi per DKE:
+**Per impostare le impostazioni di accesso alle chiavi per DKE utilizzando l'autorizzazione per la posta elettronica**
 
-1. Nel **appsettings.jssu** file, definire solo una delle seguenti impostazioni:
+1. Aprire il **appsettings.jssu** file e individuare l' `AuthorizedEmailAddress` impostazione.
 
-   - Per l'autorizzazione alla posta elettronica, individuare l'impostazione **AuthorizedEmailAddresses** . Aggiungere l'indirizzo di posta elettronica che si desidera autorizzare. Separare più indirizzi di posta elettronica con virgolette doppie e virgole. Ad esempio: **"' AuthorizedEmailAddresses '": ["email1@company.com", "email2@company.com", email3@company.com]**
+2. Aggiungere l'indirizzo o gli indirizzi di posta elettronica che si desidera autorizzare. Separare più indirizzi di posta elettronica con virgolette doppie e virgole. Ad esempio:
 
-   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="appsettings.jsnel file che mostra il metodo di autorizzazione della posta elettronica":::
+   ```json
+   "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
+   ```
 
-   - Per l'autorizzazione ruolo, individuare l'impostazione **AuthorizedRoles** . Definire con i nomi dei gruppi di ActiveDirectory che si desidera autorizzare. Ad esempio: **"AuthorizedRoles": ["group1", "group2", "Group3"]**
+3. Individuare l' `LDAPPath` impostazione e rimuovere il testo `If role authorization is used then this is the LDAP path` tra virgolette doppie. Lasciare le virgolette doppie sul posto. Al termine, l'impostazione dovrebbe essere simile alla seguente.
+
+   ```json
+   "LDAPPath": ""
+   ```
+
+4. Individuare l' `AuthorizedRoles` impostazione ed eliminare l'intera riga.
+
+Questa immagine Visualizza il **appsettings.jssu** file formattato correttamente per l'autorizzazione della posta elettronica.
+
+   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="Il appsettings.jsnel file che mostra il metodo di autorizzazione della posta elettronica":::
+
+**Per impostare le impostazioni di accesso alle chiavi per DKE utilizzando l'autorizzazione ruolo**
+
+1. Aprire il **appsettings.jssu** file e individuare l' `AuthorizedRoles` impostazione.
+
+2. Aggiungere i nomi dei gruppi di Active Directory che si desidera autorizzare. Separare più nomi di gruppi con virgolette doppie e virgole. Ad esempio:
+
+   ```json
+   "AuthorizedRoles": ["group1", "group2", "group3"]
+   ```
+
+3. Individuare l' `LDAPPath` impostazione e aggiungere il dominio di Active Directory. Ad esempio:
+
+   ```json
+   "LDAPPath": "contoso.com"
+   ```
+
+4. Individuare l' `AuthorizedEmailAddress` impostazione ed eliminare l'intera riga.
+
+Questa immagine Visualizza il **appsettings.jssu** file formattato correttamente per l'autorizzazione di ruolo.
 
    :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="appsettings.jsnel file che mostra il metodo di autorizzazione ruolo":::
 
-2. Rimuovere l'impostazione che non è pertinente per il metodo di autorizzazione scelto.
-
 #### <a name="tenant-and-key-settings"></a>Impostazioni del tenant e delle chiavi
 
-Le impostazioni del tenant e della chiave di DKE si trovano nel **appsettings.jssu** file e nel file **Startup.cs** .
+Le impostazioni del tenant e delle chiavi di DKE si trovano nel **appsettings.jssu** file.
 
-Nel file **appsettings.jssu** , modificare i valori seguenti:
+**Per configurare le impostazioni relative a tenant e chiavi per DKE**
 
-- **ValidIssuers**. Sostituisci `<tenantid>` con il GUID del tenant.
-- **JwtAudience**. Sostituire `<yourhostname>` con il nome host del computer in cui verrà eseguito il servizio DKE.
+1. Aprire la **appsettings.jssu** file.
+
+2. Individuare l' `ValidIssuers` impostazione e sostituirla `<tenantid>` con l'ID tenant. È possibile individuare l'ID tenant accedendo al portale di Azure e visualizzando le [proprietà del tenant](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Ad esempio:
+
+   ```json
+   "ValidIssuers": [
+     "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
+   ]
+   ```
+
+Individuare il `JwtAudience` . Sostituire `<yourhostname>` con il nome host del computer in cui verrà eseguito il servizio DKE. Ad esempio:
+
+
 
   > [!IMPORTANT]
-  > Il valore di JwtAudience deve corrispondere *esattamente*al nome dell'host. È possibile utilizzare **localhost: 5000** durante il debug. Tuttavia, al termine del debug, aggiornare questo valore al nome host del server.
+  > Il valore per `JwtAudience` deve corrispondere *esattamente*al nome dell'host. È possibile utilizzare **localhost: 5001** durante il debug. Tuttavia, al termine del debug, aggiornare questo valore al nome host del server.
 
-- **LDAPPath**. Impostare il valore come indicato di seguito:
+- `TestKeys:Name`. Immettere un nome per la chiave. Ad esempio: `TestKey1`
+- `TestKeys:Id`. Creare un GUID e immetterlo come `TestKeys:ID` valore. Ad esempio, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. È possibile utilizzare un sito come [Generatore di GUID online](https://guidgenerator.com/) per generare casualmente un GUID.
 
-  - Se si sta utilizzando l'autorizzazione di ruolo, immettere il dominio LDAP.
-  - Se si utilizza l'autorizzazione per la posta elettronica, lasciare vuoto questo valore.
+Questa immagine Visualizza il formato corretto per le impostazioni dei tenant e delle chiavi in **appsettings.jsattiva**. `LDAPPath`è configurata per l'autorizzazione di ruolo.
 
-   Per ulteriori informazioni, vedere [Key Access Settings](#key-access-settings).
-
-- **TestKeys: nome**. Immettere un nome per la chiave. Esempio: **testKey1**
-- **TestKeys: ID**. Creare un GUID e immetterlo come valore **TestKeys: ID** . Ad esempio, **DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE**. È possibile utilizzare un sito come [Generatore di GUID online](https://guidgenerator.com/) per generare casualmente un GUID.
+:::image type="content" source="../media/dke-appsettingsjson-tenantkeysettings.png" alt-text="Visualizza le impostazioni relative ai tenant e ai tasti corretti per DKE nel appsettings.jssu file.":::
 
 ### <a name="generate-test-keys"></a>Generare i tasti di testing
 
@@ -242,16 +280,18 @@ Per generare chiavi:
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
-1. In un editor di testo aprire **pubkeyonly. pem**. Copiare tutto il contenuto del file **pubkeyonly. pem** , tranne la prima e l'ultima riga, nella sezione **PublicPem** del **appsettings.jssu** file.
+1. In un editor di testo aprire **pubkeyonly. pem**. Copiare tutto il contenuto del file **pubkeyonly. pem** , tranne la prima e l'ultima riga, nella `PublicPem` sezione del **appsettings.jssu** file.
 
-1. In un editor di testo aprire **privkeynopass. pem**. Copiare tutto il contenuto del file **privkeynopass. pem** , tranne la prima e l'ultima riga, nella sezione **PrivatePem** del **appsettings.jssu** file.
+1. In un editor di testo aprire **privkeynopass. pem**. Copiare tutto il contenuto del file **privkeynopass. pem** , tranne la prima e l'ultima riga, nella `PrivatePem` sezione del **appsettings.jssu** file.
 
-1. Rimuovere tutti gli spazi vuoti e le nuove righe nelle sezioni **PublicPem** e **PrivatePem** .
+1. Rimuovere tutti gli spazi vuoti e le nuove righe in entrambe le `PublicPem` `PrivatePem` sezioni e.
 
     > [!IMPORTANT]
     > Quando si copia questo contenuto, non eliminare i dati PEM.
 
-1. Aprire il file **Startup.cs** e individuare le righe seguenti:
+1. In Visual Studio Code passare al file **Startup.cs** . Questo file si trova nel repo di DoubleKeyEncryptionService clonato localmente in DoubleKeyEncryptionService\src\customer-key-store\.
+
+2. Individuare le righe seguenti:
 
    ```c#
         #if USE_TEST_KEYS
@@ -261,13 +301,13 @@ Per generare chiavi:
         #endif
    ```
 
-1. Sostituire queste righe con il testo seguente:
+3. Sostituire queste righe con il testo seguente:
 
    ```csharp
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
    ```
 
-   I risultati finali devono essere simili all'immagine seguente.
+   I risultati finali devono essere simili al seguente.
 
    :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="file di startup.cs per l'anteprima pubblica":::
 
@@ -305,11 +345,13 @@ Utilizzare le istruzioni seguenti per creare localmente il progetto DKE:
 
    Se sono presenti errori rossi, controllare l'output della console. Verificare che siano stati completati correttamente tutti i passaggi precedenti e che siano presenti le versioni di compilazione corrette.
 
-1. **Eseguire** \> **Avviare il debug** per eseguire il debug del processo. Se viene richiesto di selezionare un ambiente, selezionare **.NET Core**.
+2. Selezionare **Esegui** \> **debug avvio** per eseguire il debug del processo. Se viene richiesto di selezionare un ambiente, selezionare **.NET Core**.
 
-Il debugger di base di .NET in genere viene avviato in **https://localhost:5001** . Per visualizzare la chiave di test, passare a **https://localhost:5001** e aggiungere una barra (/) e il nome della chiave.
+Il debugger di base di .NET in genere viene avviato in '' https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 ' e aggiunge una barra (/) e il nome della chiave. Ad esempio:
 
-Per esempio:**https://localhost:5001/TestKey1**
+```https
+https://localhost:5001/TestKey1
+```
 
 Il tasto dovrebbe essere visualizzato in formato JSON.
 
@@ -317,9 +359,9 @@ La configurazione è stata completata. Prima di pubblicare il keystore, in appse
 
 ### <a name="publish-the-key-store"></a>Pubblicare l'archivio delle chiavi
 
-Nella procedura seguente viene descritto come creare un'istanza del servizio app di Azure per ospitare la distribuzione di DKE e come pubblicare le chiavi generate in Azure.
+Per pubblicare l'archivio delle chiavi, è possibile creare un'istanza del servizio app di Azure per ospitare la distribuzione di DKE. Successivamente, verranno pubblicate le chiavi generate in Azure.
 
-Per creare un'istanza di Azure Web App per ospitare la distribuzione di DKE:
+**Per creare un'istanza di Azure Web App per ospitare la distribuzione di DKE**
 
 1. Nel browser, accedere al [portale di Microsoft Azure](https://ms.portal.azure.com)e passare a **app Services**  >  **Add**.
 
@@ -434,9 +476,9 @@ Per registrare l'archivio delle chiavi:
 
 6. Selezionare **Aggiungi una piattaforma**.
  
-7. Nel menu Configura **popup SELECT** **Platforms** .
+7. Nel menu a comparsa **Configura piattaforme** selezionare **Web**.
  
-8. In **URI di reindirizzamento** immettere l'URI del servizio di crittografia a chiave doppia. Immettere l'URL del servizio app, inclusi il nome host e il dominio.
+8. In **URI di reindirizzamento**, immettere l'URI del servizio di crittografia a chiave doppia. Immettere l'URL del servizio app, inclusi il nome host e il dominio.
 
     Ad esempio: https://mycustomerkeystoretest.com
 
@@ -444,7 +486,7 @@ Per registrare l'archivio delle chiavi:
     - Se si sta verificando localmente con Visual Studio, utilizzare **https://localhost:5001** .
     - In tutti i casi, lo schema deve essere **https**.
 
-    Verificare che il nome dell'host corrisponda esattamente al cognome del servizio app. Potrebbe essere stata modificata in localhost per risolvere i problemi relativi alla generazione. In appsettings.js, si tratta del nome host identificato come valore per l'impostazione JwtAudience.
+    Verificare che il nome dell'host corrisponda esattamente al cognome del servizio app. Potrebbe essere stato modificato per `localhost` risolvere i problemi relativi alla generazione. In **appsettings.js**, questo valore è il nome host impostato per `JwtAudience` .
 
 6. In **concessione implicita**selezionare la casella di controllo **token ID** .
 
@@ -480,9 +522,7 @@ L'archivio delle chiavi di DKE è ora registrato. Continuare con la [creazione d
 
 ## <a name="create-labels-using-dke"></a>Creare etichette utilizzando DKE
 
-Dopo aver registrato l'archivio delle chiavi, configurare le etichette di sensibilità nel centro conformità di Microsoft 365 e applicare la crittografia a chiave doppia a tali etichette.
-
-Nell'interfaccia utente per la creazione dell'etichetta selezionare l'opzione **Usa crittografia doppia chiave** e immettere l'URL dell'endpoint per la chiave.
+Nel centro conformità di Microsoft 365, creare una nuova etichetta di riservatezza e applicare la crittografia come si farebbe altrimenti. Selezionare **Use Double Key Encryption** e immettere l'URL dell'endpoint per la chiave.
 
 Ad esempio:
 

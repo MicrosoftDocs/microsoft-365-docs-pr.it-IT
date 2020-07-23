@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo scenario di soluzione mostra come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione. Questa operazione viene eseguita usando i metadati del documento per classificarne il contenuto, nello specifico applicando automaticamente le etichette di conservazione e configurando la conservazione basata su eventi.
-ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 98e8b7fbe7a62af25797f813e2cefe1be2c39840
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199863"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387453"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gestire il ciclo di vita dei documenti di SharePoint con le etichette di conservazione
 
@@ -124,10 +124,10 @@ Lo screenshot seguente mostra le impostazioni quando si crea l'[etichetta di con
 1. Nell'elenco a discesa **Conserva o elimina il contenuto in base a**, selezionare **un evento**.
 
 2. Selezionare **Scegli un tipo di evento**.
+    
+    ![Creare un nuovo tipo di evento per l'etichetta Specifica di prodotto](../media/SPRetention6.png)
 
-   ![Creare un nuovo tipo di evento per l'etichetta Specifica di prodotto](../media/SPRetention6.png)
-
-3. Nella pagina **Scegli un tipo di evento**, selezionare **È possibile creare nuovi tipi di evento qui**.
+3. Selezionare **Scegli un tipo di evento** e quindi nella pagina **Scegli un tipo di evento**, selezionare **Crea nuovi tipi di evento**.
 
 4. Creare un tipo di evento denominato **Cessazione del prodotto**, inserire una descrizione e selezionare **Fine** per procedere. 
 
@@ -252,7 +252,7 @@ Dopo aver verificato il corretto funzionamento della query KQL, si potranno crea
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>Verificare l'applicazione automatica dell'etichetta di conservazione
 
-Dopo sette giorni, usare la funzione [Explorer attività etichette](view-label-activity-for-documents.md) nel Centro sicurezza e conformità per verificare che il criterio di etichetta creato abbia applicato automaticamente le etichette di conservazione in questo scenario ai documenti di prodotto. 
+Dopo sette giorni, usare [Esplora attività](data-classification-activity-explorer.md) nel Centro sicurezza e conformità per verificare che il criterio di etichetta creato abbia applicato automaticamente le etichette di conservazione in questo scenario ai documenti di prodotto. 
 
 Un ulteriore controllo prevede la verifica delle proprietà del documento all'interno della Raccolta documenti. Nel riquadro delle informazioni, si può notare che l'etichetta di conservazione è applicata a un documento selezionato.
 
