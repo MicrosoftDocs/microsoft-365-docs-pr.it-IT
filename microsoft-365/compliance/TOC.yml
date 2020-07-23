@@ -24,6 +24,8 @@
           href: insider-risk-management.md
         - name: Piano per la gestione dei rischi Insider
           href: insider-risk-management-plan.md
+        - name: Introduzione alle impostazioni dei rischi Insider
+          href: insider-risk-management-settings.md
         - name: Introduzione alla gestione dei rischi Insider
           href: insider-risk-management-configure.md
         - name: Creare e gestire i criteri dei rischi Insider
@@ -105,30 +107,32 @@
       items:
         - name: DLP e Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: Video della panoramica completa sulla prevenzione della perdita dei dati
-          href: 'https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111'
-        - name: Configurare Prevenzione della perdita dei dati
-          items:
-            - name: Introduzione alle raccomandazioni per i criteri di prevenzione della perdita dei dati
-              href: get-started-with-dlp-policy-recommendations.md
-            - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
-              href: get-started-with-the-default-dlp-policy.md
-            - name: Creare criteri di prevenzione della perdita dei dati da un modello
-              href: create-a-dlp-policy-from-a-template.md
-            - name: 'Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati'
-              href: create-test-tune-dlp-policy.md
-            - name: Usare notifiche e suggerimenti per i criteri nei criteri di prevenzione della perdita dei dati
-              href: use-notifications-and-policy-tips.md
-            - name: Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
-              href: what-the-dlp-policy-templates-include.md
-            - name: Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
-              href: protect-documents-that-have-fci-or-other-properties.md
-            - name: Visualizzare i report di prevenzione della perdita dei dati
-              href: view-the-dlp-reports.md
-            - name: Creare una query per trovare i dati sensibili archiviati nei siti
-              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
-              href: how-dlp-works-between-admin-centers.md
+        - name: Informazioni sulla prevenzione della perdita di dati degli endpoint (anteprima)
+          href: endpoint-dlp-learn-about.md
+        - name: Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)
+          href: endpoint-dlp-getting-started.md
+        - name: Uso della prevenzione della perdita di dati degli endpoint (anteprima)
+          href: endpoint-dlp-using.md
+        - name: Introduzione alle raccomandazioni per i criteri di prevenzione della perdita dei dati
+          href: get-started-with-dlp-policy-recommendations.md
+        - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
+          href: get-started-with-the-default-dlp-policy.md
+        - name: Creare criteri di prevenzione della perdita dei dati da un modello
+          href: create-a-dlp-policy-from-a-template.md
+        - name: 'Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati'
+          href: create-test-tune-dlp-policy.md
+        - name: Usare notifiche e suggerimenti per i criteri nei criteri di prevenzione della perdita dei dati
+          href: use-notifications-and-policy-tips.md
+        - name: Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
+          href: what-the-dlp-policy-templates-include.md
+        - name: Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
+          href: protect-documents-that-have-fci-or-other-properties.md
+        - name: Visualizzare i report di prevenzione della perdita dei dati
+          href: view-the-dlp-reports.md
+        - name: Creare una query per trovare i dati sensibili archiviati nei siti
+          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+        - name: Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
+          href: how-dlp-works-between-admin-centers.md
     - name: Tipi di informazioni sensibili
       items:
         - name: Definizioni delle entità tipo di informazioni sensibili

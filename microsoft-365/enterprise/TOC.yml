@@ -88,6 +88,11 @@
           href: deployment-strategies-microsoft-365-enterprise.md
         - name: Distribuire un'infrastruttura esistente
           href: deploy-with-existing-infrastructure.md
+        - name: Configurazioni di esempio per la distribuzione e il canale di aggiornamento
+          href: deploy-update-channels-examples.md
+          items:
+            - name: Distribuzione generale delle versioni più recenti
+              href: deploy-update-channels-examples-rapid-deploy.md
         - name: Distribuzione per gli scenari non aziendali
           href: deploy-foundation-infrastructure-non-enterprises.md
     - name: Distribuire carichi di lavoro

@@ -12,12 +12,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: fe849499da31b3be4ab52144d1a39f8a1bc7a212
-  ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+  ms.openlocfilehash: 36f6160d4bd4b8d4b7574bb43a4c37025fcbc136
+  ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 06/18/2020
-  ms.locfileid: "44786191"
+  ms.lasthandoff: 07/21/2020
+  ms.locfileid: "45189478"
 productDirectory:
   title: Proteggere il lavoro remoto con Microsoft 365 Business Premium
   items:
@@ -28,10 +28,10 @@ productDirectory:
   - title: Ottenere il kit partner gratuito
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: Guida pratica e risorse di mercato per i partner per la sicurezza del lavoro remoto.
-    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+    url: https://aka.ms/SMBSecurityKit
   - title: Novità
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 è disponibile per Microsoft 365 Business Premium.
+    summary: Azure AD Premium P1 è ora incluso in Microsoft 365 Business Premium.
     url: https://aka.ms/aadp1smbblog
 conceptualContent:
   items:
