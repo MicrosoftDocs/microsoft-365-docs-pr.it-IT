@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: 7e4b12310d05ecbceb9df2eac5fe4d48e9275bb8
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: b9168320b5764a3d7ed4e1570c32f0f35ccbc44d
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936927"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199626"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -109,11 +109,13 @@ Seguire le istruzioni seguenti per creare, modificare o eliminare le etichette d
 
 ### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>Creare e pubblicare etichette configurate per i siti e i gruppi
 
-Dopo la creazione e la pubblicazione di un'etichetta di riservatezza, possono essere necessarie fino a 24 ore prima che l'etichetta diventi visibile agli utenti di team, gruppi e siti. Seguire le istruzioni seguenti per pubblicare un'etichetta per gli utenti quando l'etichetta è configurata per le impostazioni di sito e gruppo:
+Quando si crea e si pubblica una nuova etichetta di riservatezza, diventerà visibile agli utenti di team, gruppi e siti entro un'ora. Tuttavia, se si modifica un'etichetta esistente, la modifica può richiedere fino 24 ore. Seguire le istruzioni seguenti per pubblicare un'etichetta per gli utenti quando l'etichetta è configurata per le impostazioni di sito e gruppo:
 
 1. Dopo aver creato e configurato l'etichetta di riservatezza, aggiungerla a un criterio di etichetta applicabile solo a pochi utenti test.
 
-2. Attendere 24 ore.
+2. Attendere la replica della modifica:
+    - Nuova etichetta: attendere un'ora.
+    - Etichetta esistente: attendere 24 ore.
 
 3. Dopo questo periodo di attesa, usare uno degli account utente test per creare un team, un gruppo di Microsoft 365 o un sito di SharePoint con l'etichetta creata nel passaggio 1.
 
@@ -121,7 +123,7 @@ Dopo la creazione e la pubblicazione di un'etichetta di riservatezza, possono es
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>Modificare etichette pubblicate che sono configurate per i siti e i gruppi
 
-Come procedura consigliata, non modificare le impostazioni di sito e gruppo per un'etichetta di riservatezza dopo averla applicata a team, gruppi o siti. In caso di modifica, consentire fino a 3 giorni per la replica delle modifiche in tutti i contenitori a cui è applicata l'etichetta. 
+Come procedura consigliata, non modificare le impostazioni di sito e gruppo per un'etichetta di riservatezza dopo averla applicata a team, gruppi o siti. In caso di modifica, ricordare di attendere 24 ore per la replica delle modifiche in tutti i contenitori a cui è applicata l'etichetta. 
 
 Inoltre, se le modifiche includono l'impostazione **Accesso di utenti esterni**:
 
@@ -136,7 +138,7 @@ Se si elimina un'etichetta di riservatezza che ha impostazioni a livello di sito
 
 1. Rimuovere l'etichetta di riservatezza da tutti i criteri che includono l'etichetta.
 
-2. Attendere 48 ore.
+2. Attendere un'ora.
 
 3. Dopo questo periodo di attesa, provare a creare un team, un gruppo o un sito e verificare che l'etichetta non sia più visibile.
 

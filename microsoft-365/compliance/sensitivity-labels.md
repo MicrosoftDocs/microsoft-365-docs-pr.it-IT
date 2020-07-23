@@ -20,12 +20,12 @@ description: Usare le etichette di riservatezza del framework Microsoft Informat
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: d5b8e3c540c133ce4e04a434d03ef4bdb16b6f32
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bd8aaab95afd66881b842d902988276b9fde54ff
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127363"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199556"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -161,7 +161,7 @@ Con un criterio di etichetta, è possibile:
 
     ![Collegamento a ulteriori informazioni sul pulsante Riservatezza della barra multifunzione](../media/Sensitivity-label-learn-more.png)
 
-Dopo aver creato un criterio etichetta che assegna etichette di riservatezza a utenti e gruppi, la visualizzazione delle etichette nelle app di Office degli utenti potrebbe richiedere fino a 24 ore.
+Quando si crea un criterio etichetta che assegna nuove etichette di riservatezza a utenti e gruppi, gli utenti vedranno le etichette nelle app di Office entro 30 minuti. Tuttavia, le modifiche alle etichette possono richiedere fino a 24 ore.
 
 Non esiste un numero limite di etichette di riservatezza che è possibile creare e pubblicare, con un'eccezione: se l'etichetta applica la crittografia, è possibile creare un massimo di 500 etichette. Tuttavia, come procedura consigliata per ridurre al minimo i sovraccarichi per gli amministratori e le difficoltà per gli utenti, cercare di creare un numero limitato di etichette. Le distribuzioni nel mondo reale hanno evidenziato un'efficacia notevolmente ridotta nei casi in cui gli utenti hanno più di cinque etichette principali, oppure più di cinque sottoetichette per ogni etichetta principale.
 
@@ -177,7 +177,7 @@ Un criterio di etichetta è costituito da:
 
 È possibile includere un utente in più criteri di etichetta. L'utente visualizzerà tutte le etichette di riservatezza di tali criteri. Vedrà però le impostazioni dei criteri solo del criterio di etichetta con la priorità più alta.
 
-Se l'etichetta o l'impostazione dei criteri di etichetta prevista per un utente o un gruppo non viene visualizzata e sono trascorse 24 ore, controllare l'ordine dei criteri per le etichette di riservatezza. Per riordinare i criteri di etichetta, selezionare un criterio di etichetta di riservatezza > scegliere i puntini di sospensione a destra > **Sposta su** o **Sposta giù**.
+Se l'etichetta o l'impostazione dei criteri di etichetta prevista per un utente o un gruppo non viene visualizzata e sono trascorsi 30 minuti, controllare l'ordine dei criteri per le etichette di riservatezza. Per riordinare i criteri di etichetta, selezionare un criterio di etichetta di riservatezza > scegliere i puntini di sospensione a destra > **Sposta su** o **Sposta giù**.
 
 ![Opzione Sposta nella pagina dei criteri di etichetta di riservatezza](../media/sensitivity-label-policy-priority.png)
 

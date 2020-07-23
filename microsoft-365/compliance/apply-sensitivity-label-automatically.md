@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 92811aff70e48992088abf221536684dcff794b8
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094846"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189511"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -47,7 +47,7 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
 
 - **Etichettatura lato servizio quando il contenuto è già salvato (in SharePoint o OneDrive) o inviato tramite posta elettronica (elaborato da Exchange Online)**: usare un criterio di applicazione automatica di etichette. 
     
-    Questo metodo è denominato classificazione automatica con etichette di riservatezza. Potrebbe essere indicato anche come applicazione automatica di etichette per i dati inattivi (documenti in SharePoint e OneDrive) e per i dati in transito (messaggi di posta elettronica inviati o ricevuti da Exchange). Per Exchange, non include i messaggi di posta elettronica inattivi (cassette postali). 
+    Questo metodo potrebbe essere indicato anche come applicazione automatica di etichette per i dati inattivi (documenti in SharePoint e OneDrive) e per i dati in transito (messaggi di posta elettronica inviati o ricevuti da Exchange). Per Exchange, non include i messaggi di posta elettronica inattivi (cassette postali). 
     
     Dato che questa etichettatura viene applicata dai servizi e non dalle applicazioni, non è necessario preoccuparsi delle app e delle versioni usate dagli utenti. Di conseguenza, questa funzionalità è immediatamente disponibile nell'intera organizzazione ed è adatta per l'applicazione di etichette su vasta scala. I criteri di applicazione automatica di etichette non supportano l'applicazione di etichette consigliate perché l'utente non interagisce con il processo di etichettatura. L'amministratore esegue invece i criteri in modalità di simulazione per garantire la corretta etichettatura del contenuto prima dell'applicazione effettiva dell'etichetta.
     
@@ -127,6 +127,8 @@ Inoltre, è possibile scegliere se una condizione deve rilevare tutti i tipi di 
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurazione di classificatori sottoponibili a training per un'etichetta
 
+Al momento questa opzione è disponibile in anteprima.
+
 Quando si seleziona l'opzione **Classificatori sottoponibili a training**, scegliere uno o più dei classificatori sottoponibili a training predefiniti di Microsoft. Se sono stati creati classificatori sottoponibili a training personalizzati, saranno anch'essi disponibili per la selezione:
 
 ![Opzioni per i classificatori sottoponibili a training e le etichette di riservatezza](../media/sensitivity-labels-classifers.png)
@@ -136,9 +138,9 @@ Quando si seleziona l'opzione **Classificatori sottoponibili a training**, scegl
 
 Per ulteriori informazioni su questi classificatori, vedere [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md).
 
-Durante il periodo di anteprima, le app seguenti supportano i classificatori sottoponibili a training per le etichette di riservatezza:
+Durante il periodo di anteprima dell'opzione, le app seguenti supportano i classificatori sottoponibili a training per le etichette di riservatezza:
 
-- Microsoft 365 Apps for enterprise (in precedenza Office 365 ProPlus) per Windows, da [Office Insider](https://docs.microsoft.com/deployoffice/name-change), dal [Canale beta](https://office.com/insider) ([in precedenza Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)):
+- Microsoft 365 Apps for enterprise ([in precedenza Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) per Windows, ora in distribuzione nel [Canale corrente](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) nella versione 2006 e successive:
     - Word
     - Excel
     - PowerPoint
