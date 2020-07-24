@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Informazioni su come leggere e comprendere la fattura o la fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0575683cdcaf0ac76de80c93e0d7573e8c63bae
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402643"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391519"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Come leggere la fattura
 
@@ -79,11 +79,11 @@ Le pagine di addebiti mostrano i costi ripartiti per prodotto. Per i clienti di 
 
 I dettagli degli elementi pubblicitari variano in base al tipo di prodotto per il quale si è addebitato. Ad esempio, per i prodotti di Azure, viene visualizzata la quantità di crediti di Azure applicati. I prodotti basati su Seat mostrano un prezzo unitario e una quantità. I dettagli fattura mostrano i prodotti acquistati, sconti o crediti applicati, il tasso di imposta e l'importo e i totali degli elementi pubblicitari.
 
-    `Total = Charges - Azure Credit + Tax`
+> Totale = cariche-Azure Credit + Tax
 
 L'importo totale dovuto per ogni famiglia di servizi viene calcolato sottraendo crediti di Azure da crediti/addebiti e aggiungendo tasse:
 
-    `Total = Charges/Credits - Azure Credit + Tax`
+> Totale = addebiti/crediti-Azure Credit + Tax
 
 Se sulla fattura sono presenti costi di Azure che si desiderano ulteriori informazioni, vedere [rivedere la fattura del contratto di servizio Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 

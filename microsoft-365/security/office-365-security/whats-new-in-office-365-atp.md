@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 92ad1b644dd0b3cac04657d01f70cfb274b7e517
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126410"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391555"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novità di Office 365 ATP
 
@@ -37,7 +37,8 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 
 ## <a name="julyaugust-2020"></a>Luglio/agosto 2020 
 
-- [Migliorare l'esperienza di caccia](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [Miglioramenti dell'esperienza di caccia](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [Applicare facilmente le impostazioni consigliate utilizzando i criteri di sicurezza predefiniti](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Marzo/aprile 2020
 
@@ -63,11 +64,6 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 - [Esportare i dati di clic su URL per l'analisi offline](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP piano 1 o piano 2)
 
 - [Utilizzare le visualizzazioni della campagna in Office 365 ATP (**Anteprima**)](campaigns.md)
-
-## <a name="july-2020"></a>2020 luglio 
- 
-- [Migliorare l'esperienza di caccia](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-
 
 ## <a name="november-2019"></a>Novembre 2019
 

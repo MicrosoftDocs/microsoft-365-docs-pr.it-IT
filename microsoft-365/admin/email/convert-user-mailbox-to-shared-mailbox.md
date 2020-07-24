@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Informazioni su come convertire una cassetta postale privata in una cassetta postale condivisa a cui è possibile accedere da più utenti. '
-ms.openlocfilehash: c4f71f12b430e239f5ea5791ba5b98a3109452b0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7ae00c1d9c901378798f063554a44a3e5b741442
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400113"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391531"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertire una cassetta postale utente in una cassetta postale condivisa
 
@@ -95,6 +95,9 @@ Se la cassetta postale è più piccola di 50 GB, è possibile [rimuovere la lice
     
 Per tutti gli altri elementi necessari per conoscere le cassette postali condivise, vedere [informazioni sulle cassette postali condivise](about-shared-mailboxes.md) e [creare una cassetta postale condivisa](create-a-shared-mailbox.md).
 
+> [!NOTE]
+> Le cassette postali condivise non richiedono una licenza separata. Tuttavia, se si desidera attivare un'archiviazione sul posto oppure sottoporre una cassetta postale a blocco sul posto o blocco per controversia legale, è necessario assegnare alla cassetta postale una licenza di Exchange Online, piano 1 con Archiviazione Exchange Online o Exchange Online, piano 2.
+
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Convertire la cassetta postale di un utente eliminato
 
@@ -113,6 +116,7 @@ Si supponga di aver eliminato un account utente e di volerne convertire la vecch
 6. Al termine, è possibile rimuovere la licenza dalla cassetta postale dell'utente. Non eliminare la vecchia cassetta postale dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa.
     
 7. Aggiungere membri alla cassetta postale condivisa.
+
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>Convertire di nuovo una cassetta postale condivisa in una cassetta postale (privata) dell'utente
 
