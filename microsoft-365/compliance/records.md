@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui record utili per implementare una soluzione di gestione dei record in Microsoft 365.
-ms.openlocfilehash: aa5952b26549f9ba9b1c584eb55e203fd53c50e5
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 6cdf29493a3fd95b060c52d9f9587ee34748edde
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127503"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372521"
 ---
 # <a name="learn-about-records"></a>Informazioni sui record
 
@@ -32,45 +32,49 @@ La gestione dei record in Microsoft 365 consente alle organizzazioni di conforma
 
 Quando un contenuto viene contrassegnato come record:
 
-- L’elemento diventa non modificabile, dunque non può essere modificato o eliminato.
+- Vengono applicate restrizioni agli elementi in base alle [azioni consentite o bloccate](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 - Vengono registrate altre attività relative all'elemento.
 
-- Si ha una prova dell’eliminazione quando l'elemento viene eliminato al termine del periodo di conservazione.
+- Si ha una prova dell'eliminazione quando l'elemento viene eliminato al termine del periodo di conservazione.
 
-Usare [etichette di conservazione ](retention.md#retention-labels) per contrassegnare un contenuto come record. Dopo aver creato le etichette di conservazione che dichiarano i record, è possibile pubblicare tali etichette in modo che utenti e amministratori possano applicarle manualmente al contenuto oppure applicarle automaticamente al contenuto che si vuole classificare come record.
+Usare [etichette di conservazione ](retention.md#retention-labels) per contrassegnare un contenuto come record. È possibile pubblicare tali etichette in modo che utenti e amministratori possano applicarle manualmente al contenuto oppure applicarle automaticamente al contenuto che si desidera contrassegnare come record.
 
-Usando le etichette di conservazione per dichiarare i record, si può implementare un'unica strategia coerente di gestione dei record nell'ambiente Microsoft 365.
+Usando le etichette di conservazione per contrassegnare il contenuto come record, è possibile implementare una strategia unica e coerente per la gestione dei record nell'ambiente Microsoft 365.
 
-Tenere presente quanto segue in relazione ai record:
+## <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Confronto tra le restrizioni relative alle azioni consentite o bloccate
 
-  - **I record non sono modificabili.** Un'etichetta di conservazione che contrassegna un contenuto come record può essere applicata al contenuto di Exchange, oltre a SharePoint e OneDrive. Tuttavia, il [controllo delle versioni del record](#record-versioning) è disponibile solo in SharePoint e OneDrive e non in Exchange.
+Usare la tabella seguente per identificare quali restrizioni vengono applicate al contenuto in seguito all'applicazione di un'etichetta di conservazione standard e di etichette di conservazione che contrassegnano il contenuto come record. 
 
-    In Exchange il contenuto etichettato come record non è modificabile fino all'eliminazione finale. Quando un elemento di Exchange viene classificato come record, si verificano i seguenti eventi:
+Un'etichetta di conservazione standard include la configurazione per mantenere i dati senza contrassegnare il contenuto come record.
 
-    - L'elemento non può essere eliminato definitivamente.
+>[!NOTE] 
+> Per completezza di informazioni, la tabella include colonne per un record bloccato e sbloccato, applicabile a SharePoint e OneDrive, ma non a Exchange. Per bloccare e sbloccare un record viene usato il [controllo delle versioni dei record](#record-versioning), che non è supportato per gli elementi di Exchange. Quindi, per tutti gli elementi di Exchange contrassegnati come record, il comportamento mappato alla colonna **Record: bloccato** e alla colonna **Record: non bloccato** non è pertinente.
 
-    - L'elemento non può essere modificato.
 
-    - L'etichetta non può essere modificata.
+|Azione| Etichetta di conservazione |Record: bloccato| Record: sbloccato|
+|:-----|:-----|:-----|:-----|:-----|
+|Modifica contenuti|Consentito | **Bloccato** | Consentito|
+|Modifica le proprietà, tra cui Rinomina|Consentito |Consentito | Consentito|
+|Elimina|Consentito <sup>1</sup> |**Bloccato** | **Bloccato**|
+|Copia|Consentito |Consentito | Consentito|
+|Sposta all'interno del container <sup>2</sup>|Consentito |Consentito | Consentito|
+|Sposta tra container <sup>2</sup>|Consentito |Consentito se mai sbloccato | Consentito|
+|Apri/leggi|Consentito |Consentito | Consentito|
+|Cambia etichetta|Consentito |Consentito: solo amministratori container | Consentito: solo amministratori container|
+|Rimuovi etichetta|Consentito |Consentito: solo amministratori container | Consentito: solo amministratori container|
 
-    - L'etichetta non può essere rimossa.
+Note a piè di pagina:
 
-  - **Record e cartelle.** È possibile applicare un'etichetta di conservazione a una cartella di Exchange, SharePoint o OneDrive. Se una cartella viene etichettata come record e si sposta un elemento al suo interno, l'elemento viene identificato come record. Quando si sposta l'elemento dalla cartella, l'elemento rimarrà etichettato come record.
+<sup>1</sup> Supportato da OneDrive ed Exchange conservando una copia in una posizione protetta, ma bloccato da SharePoint.
 
-    Inoltre, se l'etichetta del record applicata a una cartella (in SharePoint e OneDrive) viene trasformata in etichetta di conservazione che non dichiara il contenuto come record, gli elementi nella cartella mantengono l'etichetta del record esistente.
+Messaggio che un utente vede se tenta di eliminare un documento con etichetta in SharePoint:
 
-    Per altre informazioni sull'applicazione di etichette di conservazione alle cartelle di SharePoint e OneDrive, vedere [Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+![Messaggio che segnala che un elemento non è stato eliminato da SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-  - **Non è possibile eliminare i record**. Se un utente tenta di eliminare un record in Exchange, l'elemento viene spostato nella cartella Elementi ripristinabili, come descritto in [Funzionamento della conservazione per Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
 
-    Se un utente prova a eliminare un record in SharePoint, viene visualizzato un messaggio di errore che indica che l'elemento non è stato eliminato e che rimane nella raccolta.
+<sup>2</sup> I container includono le raccolte documenti in SharePoint e le cassette postali in Exchange.
 
-    ![Messaggio che segnala che un elemento non è stato eliminato da SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
-
-    Se un utente prova a eliminare un record in OneDrive, l'elemento viene spostato nella raccolta di archiviazione, come descritto in [Funzionamento della conservazione per SharePoint e OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
-
-  - **Non è possibile rimuovere le etichette dei record.** Dopo aver applicato un'etichetta record a un elemento, solo l'amministratore di tale posizione, ad esempio l'amministratore di una raccolta siti di un sito di SharePoint, può rimuovere l'etichetta.
 
 ## <a name="using-retention-labels-to-declare-records"></a>Usare le etichette di conservazione per dichiarare i record
 
@@ -78,48 +82,53 @@ Quando si crea un'etichetta di conservazione, si può scegliere di usarla per co
 
 1. Nel Centro conformità Microsoft 365 passare a **Gestione record** \> **Piano di archiviazione**. Nella pagina **Piano di archiviazione**, selezionare **Crea un'etichetta**.
 
-2. Nella pagina **Impostazioni etichetta** della procedura guidata scegliere l'opzione di impostazione dell'etichetta di conservazione per dichiarare il contenuto come record.
+2. Nella pagina **Impostazioni etichetta** della procedura guidata scegliere l'opzione di impostazione dell'etichetta di conservazione per contrassegnare il contenuto come record.
     
-   ![Fare clic sulla casella di controllo Utilizza l'etichetta per classificare il contenuto come Record](../media/recordversioning6.png)
+   ![Fare clic sulla casella di controllo Utilizza l'etichetta per contrassegnare il contenuto come Record](../media/recordversioning6.png)
 
-3. Applicare l'etichetta di conservazione ai siti di SharePoint e agli account di OneDrive:
+3. Applicare l'etichetta di conservazione ai documenti di SharePoint o OneDrive e ai messaggi di posta elettronica di Exchange, se necessario. Per istruzioni:
     
     - [Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)
     
     - [Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)
 
+### <a name="applying-the-configured-retention-label-to-content"></a>Applicare l'etichetta di conservazione configurata al contenuto
 
-### <a name="applying-a-retention-label-to-content"></a>Applicare un'etichetta di conservazione al contenuto
+Quando le etichette di conservazione che classificano il contenuto come record vengono rese disponibili agli utenti per applicarle nelle app:
 
-Per Exchange, qualsiasi utente con accesso in scrittura alla cassetta postale può applicare un'etichetta di conservazione a un messaggio di posta elettronica. Per il contenuto di SharePoint e OneDrive, qualsiasi utente del gruppo Membri predefinito (con livello di autorizzazione Collaborazione) può applicare un'etichetta record al contenuto. Solo un amministratore della raccolta siti può rimuovere o modificare l’etichetta record dopo che è stata applicata. Come descritto in precedenza, un'etichetta di conservazione che classifica il contenuto come record può essere applicata automaticamente al contenuto.
+- Per Exchange, qualsiasi utente con accesso in scrittura alla cassetta postale può applicare queste etichette. 
+- Per SharePoint e OneDrive, qualsiasi utente del gruppo Membri predefinito (con livello di autorizzazione Collaborazione) può applicare queste etichette.
 
-Ecco l'aspetto di una etichetta record applicata a un documento in un sito di SharePoint o un account di OneDrive.
-<br/><br/>
+Esempio di documento contrassegnato come record da un'etichetta di conservazione:
 
 ![Riquadro dei dettagli per un documento taggato come record](../media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>Controllo delle versioni del record
 
-Una parte essenziale della gestione record è la possibilità di dichiarare un documento come record e che tale record non sia modificabile. Allo stesso tempo, l’impossibilità di modificare i record impedisce la collaborazione al documento se si presenta la necessità di creare versioni successive. Ad esempio, può capitare di dichiarare come record un contratto di vendita, e che successivamente sia necessario aggiornare il contratto con nuovi termini e dichiarare l'ultima versione come nuovo record conservando comunque la versione precedente. Per scenari di questo tipo, SharePoint e OneDrive supportano il *controllo delle versioni dei record*. Le cartelle del blocco appunti di OneNote non supportano il controllo delle versioni dei record.
+La possibilità di contrassegnare un documento come record e limitare le azioni che è possibile eseguire sul record rappresenta un obiettivo essenziale per qualsiasi soluzione di gestione dei record. Tuttavia, la collaborazione potrebbe essere necessaria anche per le persone che creano versioni successive.
 
-Per usare il controllo delle versioni dei record, prima di tutto occorre usare il Centro conformità Microsoft 365 per creare etichette di conservazione che dichiarino i record e pubblicarle in tutti i siti di SharePoint e gli account di OneDrive oppure pubblicarle in siti specifici di SharePoint o account di OneDrive. Il passaggio successivo consiste nell'applicare a un documento un'etichetta record di conservazione pubblicata. Fatto questo, accanto all'etichetta di conservazione viene visualizzata una proprietà del documento denominata *Stato del record*, con lo stato del record iniziale impostato su **Bloccato**. A questo punto, è possibile effettuare le operazioni seguenti:
+Ad esempio, può capitare di contrassegnare come record un contratto di vendita, e che successivamente sia necessario aggiornare il contratto con nuovi termini e contrassegnare l'ultima versione come nuovo record conservando comunque la versione precedente. Per scenari di questo tipo, SharePoint e OneDrive supportano il *controllo delle versioni dei record*. Le cartelle del blocco appunti di OneNote non supportano il controllo delle versioni dei record.
 
-  - **Modificare e dichiarare continuamente come record singole versioni del documento, sbloccando e bloccando la proprietà Stato del record.** Solo le versioni dichiarate come record vengono mantenute quando la proprietà **Stato del record** è impostata su **Bloccato**. Questo consente di ridurre il rischio di mantenere le versioni e le copie inutili del documento.
+Per usare il controllo delle versioni dei record, è necessario prima di tutto etichettare un documento e contrassegnarlo come record. Una volta fatto ciò, accanto all'etichetta di conservazione viene visualizzata una proprietà del documento denominata *Stato del record*, con lo stato del record iniziale impostato su **Bloccato**. 
+
+È possibile eseguire le operazioni seguenti:
+
+  - **Modificare e conservare continuamente come record singole versioni del documento, sbloccando e bloccando la proprietà Stato del record.** Solo quando la proprietà **Stato del record** è impostata su **Bloccato** è una nuova versione del record conservata. Questo consente di ridurre il rischio di mantenere le versioni e le copie inutili del documento.
 
   - **Archiviare automaticamente i record in un archivio dei record sul posto all'interno della raccolta siti.** Ogni raccolta siti di SharePoint e OneDrive mantiene il contenuto nella propria raccolta di archiviazione. Le versioni dei record vengono archiviate nella cartella Record della raccolta.
 
   - **Conservare un documento sempre valido che contiene tutte le versioni.** Per impostazione predefinita, ogni documento di SharePoint e OneDrive ha una cronologia delle versioni disponibile nel menu dell’elemento. In questa cronologia delle versioni è possibile individuare facilmente le versioni record e visualizzare tali documenti.
 
-Il controllo delle versioni del record è automaticamente disponibile per qualsiasi documento con un'etichetta di conservazione che dichiara l'elemento come record. Quando un utente visualizza le proprietà del documento tramite il riquadro dei dettagli, cambia lo **Stato del record** da **Bloccato** a **Sbloccato**. Questo singolo clic crea un record nella cartella Record della raccolta di archiviazione, dove rimane fino alla fine del periodo di conservazione. 
+Il controllo delle versioni del record è automaticamente disponibile per qualsiasi documento con un'etichetta di conservazione che contrassegna l'elemento come record. Quando un utente visualizza le proprietà del documento tramite il riquadro dei dettagli, può cambiare lo **Stato del record** da **Bloccato** a **Sbloccato**. Questa azione crea un record nella cartella Record della raccolta di archiviazione, dove rimane fino alla fine del periodo di conservazione. 
 
-Quando il documento è sbloccato, qualsiasi utente con autorizzazioni può modificare il file. Tuttavia, gli utenti non possono eliminare il file, perché è considerato un record. Dopo aver apportato le modifiche necessarie, l'utente può quindi impostare lo **Stato del record** da **Sbloccato** a **Bloccato**, in modo che il documento venga di nuovo dichiarato come record e non possa essere modificato.
+Quando il documento è sbloccato, qualsiasi utente con autorizzazioni di modifica standard può modificare il file. Tuttavia, gli utenti non possono eliminare il file, perché è ancora considerato un record. Una volta completato il processo di modifica, l'utente può quindi impostare lo **Stato del record** da **Sbloccato** a **Bloccato**, che impedisce ulteriori modifiche in questo stato.
 <br/><br/>
 
 ![Proprietà Stato del record nel documento taggato come record](../media/recordversioning8.png)
 
 ### <a name="locking-and-unlocking-a-record"></a>Bloccare e sbloccare un record
 
-Una volta assegnata un'etichetta record di conservazione a un documento, qualsiasi utente con il livello di autorizzazione Collaborazione o inferiore può sbloccare un record o bloccare un record sbloccato.
+Dopo aver applicato a un documento un'etichetta di conservazione che contrassegna un contenuto come record, qualsiasi utente con il livello di autorizzazione Collaborazione o inferiore può sbloccare un record o bloccare un record sbloccato.
 <br/><br/>
 
 ![Lo stato del record mostra se il documento record è sbloccato](../media/recordversioning9.png)
@@ -134,7 +143,7 @@ Quando un utente sblocca un record, si verificano le operazioni seguenti:
 
 4. La copia creata nella cartella Record viene aggiunta alla cronologia delle versioni del documento originale e questa versione riporta la parola **Record** nel campo Commenti.
 
-5. Il documento originale è una nuova versione che può essere modificata (ma non eliminata). La colonna della raccolta del documento **L’elemento è un record** mostra ancora il valore **Sì** perché il documento è ancora considerato come un record, anche se ora può essere modificato.
+5. Il documento originale è una nuova versione che può essere modificata ma non eliminata. La colonna della raccolta del documento **L’elemento è un record** mostra ancora il valore **Sì** perché il documento è ancora un record, anche se ora può essere modificato.
 
 Quando un utente blocca un record, il documento originale torna a non essere modificabile. Ma è l'azione di sbloccare un record che ne copia una versione nella cartella Record della raccolta di archiviazione.
 
@@ -173,4 +182,4 @@ Per altre informazioni su come cercare questi eventi, vedere la sezione "Attivit
 
 Se non si hanno ancora etichette di conservazione da usare per la gestione dei record, vedere [Introduzione ai criteri e alle etichette di conservazione](get-started-with-retention.md).
 
-Per vedere i video correlati alla configurazione e all'uso della gestione dei record, vedere [Selezioni di governance dei dati su YouTube](https://go.microsoft.com/fwlink/?linkid=867039).
+Per ulteriori informazioni sull'eliminazone dei record, vedere [Eliminazione dei record](disposition.md).
