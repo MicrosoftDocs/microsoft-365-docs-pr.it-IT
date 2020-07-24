@@ -315,14 +315,10 @@
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: Creare etichette di conservazione con PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Usare la conservazione basata su eventi
-          items:
-            - name: Avviare la conservazione al verificarsi di un evento
-              href: event-driven-retention.md
-            - name: Automatizzare la conservazione basata su eventi
-              href: automate-event-driven-retention.md
-            - name: Gestire il ciclo di vita dei documenti di SharePoint
-              href: auto-apply-retention-labels-scenario.md
+        - name: Avviare la conservazione al verificarsi di un evento
+          href: event-driven-retention.md
+        - name: Gestire il ciclo di vita dei documenti di SharePoint
+          href: auto-apply-retention-labels-scenario.md
     - name: Eliminare i dati
       href: disposition.md
     - name: Gestire le cassette postali inattive
