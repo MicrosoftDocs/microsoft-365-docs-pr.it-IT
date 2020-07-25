@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: In genere, nell’ambito di una soluzione di gestione dei record, è possibile configurare un’etichetta di conservazione per avviare il periodo di conservazione in base a un evento identificato.
-ms.openlocfilehash: 5a04e97b341c66a78010e7255554be72aa073593
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a3760feafa5307c8c71e83dcc72b988258b94a2a
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199730"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391508"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Avviare la conservazione al verificarsi di un evento
 
@@ -64,18 +64,18 @@ Per usare correttamente la conservazione basata su eventi, è importante compren
     
 2. Gli utenti (in genere i responsabili dei record) applicano queste etichette di conservazione al contenuto e (per i documenti di SharePoint e OneDrive) immettono un ID risorsa per ogni elemento. In questo esempio l'ID risorsa è un codice o nome del prodotto usato dall'organizzazione. In questo modo, ai record di ogni prodotto viene assegnata un'etichetta di conservazione e ogni record ha una proprietà che contiene un ID risorsa. Il diagramma rappresenta **tutto il contenuto** per tutti i record dei prodotti in un'organizzazione e ogni elemento contiene l'ID risorsa del prodotto a cui appartiene il record. 
     
-3. La durata del prodotto è il tipo di evento; un prodotto specifico che raggiunge la fine del ciclo di vita è un evento. Quando si verifica un evento di quel tipo (in questo caso, quando un prodotto raggiunge la fine del suo ciclo di vita), si crea un evento che specifica:
+3. Durata prodotto è il tipo di evento. Un prodotto specifico che raggiunge la fine del ciclo di vita è un evento. Quando si verifica un evento di questo tipo, in questo caso quando un prodotto raggiunge la fine del ciclo di vita, si crea un evento che specifica:
     
-  - Un ID risorsa (per i documenti di SharePoint e OneDrive)
+   - Un ID risorsa (per i documenti di SharePoint e OneDrive)
     
-  - Parole chiave (per gli articoli di Exchange). In questo esempio, l'organizzazione utilizza un codice prodotto nei messaggi contenenti i record del prodotto, pertanto la parola chiave per gli elementi di Exchange è uguale all'ID risorsa per i documenti di SharePoint e OneDrive.
+   - Parole chiave (per gli articoli di Exchange). In questo esempio, l'organizzazione utilizza un codice prodotto nei messaggi contenenti i record del prodotto, pertanto la parola chiave per gli elementi di Exchange è uguale all'ID risorsa per i documenti di SharePoint e OneDrive.
     
-  - La data in cui si è verificato l'evento. Questa data viene utilizzata come inizio del periodo di conservazione. Questa data può essere la data attuale, una futura o una passata.
-    
-4. Dopo aver creato un evento, la data dell'evento viene sincronizzata con tutto il contenuto che ha un'etichetta di conservazione di quel tipo di evento e che contiene la parola chiave o l'ID risorsa specificato. Come qualsiasi etichetta di conservazione, la sincronizzazione può richiedere fino a 7 giorni. Come mostrato nel diagramma precedente, questo evento ha attivato il periodo di conservazione di tutti gli elementi cerchiati in rosso. In altre parole, quando il prodotto raggiunge la fine del ciclo di vita, questo evento attiva il periodo di conservazione per i record del prodotto.
-    
+   - La data in cui si è verificato l'evento. Questa data viene utilizzata come inizio del periodo di conservazione. Questa data può essere la data attuale, una futura o una passata.
+
+4. Dopo aver creato un evento, la data dell'evento viene sincronizzata con tutto il contenuto che ha un'etichetta di conservazione di quel tipo di evento e che contiene la parola chiave o l'ID risorsa specificato. Come per qualsiasi etichetta di conservazione, la sincronizzazione può richiedere fino a sette giorni. Come mostrato nel diagramma precedente, questo evento ha attivato il periodo di conservazione di tutti gli elementi cerchiati in rosso. In altre parole, quando il prodotto raggiunge la fine del ciclo di vita, questo evento attiva il periodo di conservazione per i record del prodotto.
+
 È importante tenere presente che se non si specificano parole chiave o un ID risorsa per un evento, l’evento attiverà il periodo di conservazione di **tutti i contenuti** con un'etichetta relativa a quel tipo di evento. Nel diagramma precedente, ad esempio, verrebbe avviata la conservazione di tutto il contenuto. Questo potrebbe non essere il risultato previsto. 
-  
+
 Tenere infine presente che ogni etichetta di conservazione ha le proprie impostazioni di conservazione. In questo esempio, queste specificano tutte 10 anni ma un evento può attivare etichette con diversi periodi di conservazione.
   
 ## <a name="how-to-set-up-event-driven-retention"></a>Come configurare la conservazione basata su eventi
@@ -190,9 +190,7 @@ Per ulteriori informazioni, vedere [Concedere agli utenti l'accesso al Centro si
   
 ## <a name="automate-events-by-using-powershell"></a>Automatizzare gli eventi con PowerShell
 
-Il Centro conformità Microsoft 365 consente di creare eventi manualmente e non supporta l'attivazione automatica di un evento quando questo avviene. Tuttavia, è possibile usare un'API REST per attivare automaticamente gli eventi. Per altre informazioni, vedere [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md).
-
-È anche possibile usare uno script di PowerShell per automatizzare la conservazione basata su eventi dalle applicazioni aziendali. Cmdlet di PowerShell disponibili per la conservazione basata su eventi:
+È possibile usare uno script di PowerShell per automatizzare la conservazione basata su eventi dalle applicazioni aziendali. Cmdlet di PowerShell disponibili per la conservazione basata su eventi:
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
@@ -206,4 +204,257 @@ Il Centro conformità Microsoft 365 consente di creare eventi manualmente e non 
     
 - [New-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873003)
     
+
+## <a name="automate-events-by-using-a-rest-api"></a>Automatizzare gli eventi con un'API REST
+
+È possibile usare un'API REST per creare automaticamente gli eventi che attivano l'inizio del periodo di conservazione.
+
+Un'API REST è un endpoint di servizio che supporta set di operazioni HTTP (metodi), che forniscono l'accesso alle risorse del servizio per la creazione, il recupero, l'aggiornamento e l'eliminazione. Per altre informazioni, vedere [Componenti di una richiesta/risposta dell'API REST](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). Con l'API REST di Microsoft 365 è possibile creare e recuperare gli eventi usando i metodi POST e GET.
+
+Sono disponibili due opzioni per usare l'API REST:
+
+- **Microsoft Power Automate o delle applicazioni simili** per attivare automaticamente l'occorrenza di un evento. Microsoft Power Automate è un agente di orchestrazione per la connessione ad altri sistemi, quindi non è necessario scrivere una soluzione personalizzata. Per altre informazioni, vedere il [sito Web di Power Automate](https://flow.microsoft.com/it-IT/).
+
+- **PowerShell o un client HTTP per richiamare l'API REST** per creare eventi con PowerShell (versione 6 o successiva) nell'ambito di una soluzione personalizzata.
+
+Prima di usare l'API REST, come amministratore globale, confermare l'URL da usare per chiamare l'evento di conservazione. A questo scopo, eseguire una chiamata all'evento di conservazione GET usando l'URL dell'API REST:
+
+```console
+https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+```
+
+Controllare il codice di risposta. Se è 302, ottenere l'URL reindirizzato dalla proprietà Location dell'intestazione della risposta e usare tale URL anziché `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` nelle istruzioni che seguono.
+
+Gli eventi che vengono creati automaticamente possono essere confermati visualizzandoli in Centro conformità Microsoft 365 > **Gestione record** >  **eventi**.
+
+### <a name="use-microsoft-power-automate-to-create-the-event"></a>Usare Microsoft Power Automate per creare l'evento
+
+Creare un flusso che crea un evento usando l'API REST di Microsoft 365:
+
+![Usare Flow per creare un evento](../media/automate-event-driven-retention-flow-1.png)
+
+![Usare Flow per chiamare l'API REST](../media/automate-event-driven-retention-flow-2.png)
+
+#### <a name="create-an-event"></a>Creare un evento
+
+Codice di esempio per chiamare l'API REST:
+
+- **Metodo**: POST
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+- **Intestazioni**: Chiave = Content-Type, Valore = application/atom+xml
+- **Corpo**:
+    
+    ```xml
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+    
+    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+    
+    xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+    
+    xmlns='http://www.w3.org/2005/Atom'>
+    
+    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+    
+    <updated>9/9/2017 10:50:00 PM</updated>
+    
+    <content type='application/xml'>
+    
+    <m:properties>
+    
+    <d:Name>Employee Termination </d:Name>
+    
+    <d:EventType>99e0ae64-a4b8-40bb-82ed-645895610f56</d:EventType>
+    
+    <d:SharePointAssetIdQuery>1234</d:SharePointAssetIdQuery>
+    
+    <d:EventDateTime>2018-12-01T00:00:00Z </d:EventDateTime>
+    
+    </m:properties>
+    
+    </content>
+    
+    </entry>
+    ```
+    
+- **Autenticazione**: di base
+- **Nome utente**: "Complianceuser"
+- **Password**: "Compliancepassword"
+
+
+##### <a name="available-parameters"></a>Parametri disponibili
+
+
+|Parametri|Descrizione|Note|
+|--- |--- |--- |
+|<d:Name></d:Name>|Immettere un nome univoco per l'evento,|Non può contenere spazi iniziali o finali o i caratteri seguenti: % * \ & < \> \| # ? , : ;|
+|<d:EventType></d:EventType>|Immettere il nome del tipo di evento (o Guid)|Esempio: "Licenziamento dipendente". Il tipo di evento deve essere associato a un'etichetta di conservazione.|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Immettere "ComplianceAssetId:" + ID dipendente|Esempio: "ComplianceAssetId:12345"|
+|<d:EventDateTime></d:EventDateTime>|Data e ora evento|Formato: aaaa-MM-ggTHH:mm:ssZ, esempio: 2018-12-01T00:00:00Z
+|
+
+###### <a name="response-codes"></a>Codici di risposta
+
+| Codice di risposta | Descrizione       |
+| ----------------- | --------------------- |
+| 302               | Reindirizzare              |
+| 201               | Creato               |
+| 403               | Autorizzazione non riuscita  |
+| 401               | Autenticazione non riuscita |
+
+##### <a name="get-events-based-on-a-time-range"></a>Ricevere gli eventi in base a un intervallo di tempo
+
+- **Metodo**: ottieni
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
+
+- **Intestazioni**: Chiave = Content-Type, Valore = application/atom+xml
+
+- **Autenticazione**: di base
+
+- **Nome utente**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+
+###### <a name="response-codes"></a>Codici di risposta
+
+| Codice di risposta | Descrizione                   |
+| ----------------- | --------------------------------- |
+| 200               | OK, un elenco di eventi in atom+ xml |
+| 404               | Non trovato                         |
+| 302               | Reindirizzare                          |
+| 401               | Autorizzazione non riuscita              |
+| 403               | Autenticazione non riuscita             |
+
+##### <a name="get-an-event-by-id"></a>Ottenere un evento in base all'ID
+
+- **Metodo**: ottieni
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
+
+- **Intestazioni**: Chiave = Content-Type, Valore = application/atom+xml
+
+- **Autenticazione**: di base
+
+- **Nome utente**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+###### <a name="response-codes"></a>Codici di risposta
+
+| Codice di risposta | Descrizione                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | OK, il corpo della risposta contiene l'evento in atom+xml |
+| 404               | Non trovato                                            |
+| 302               | Reindirizzare                                             |
+| 401               | Autorizzazione non riuscita                                 |
+| 403               | Autenticazione non riuscita                                |
+
+##### <a name="get-an-event-by-name"></a>Ottenere un evento in base al nome
+
+- **Metodo**: ottieni
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+
+- **Intestazioni**: Chiave = Content-Type, Valore = application/atom+xml
+
+- **Autenticazione**: di base
+
+- **Nome utente**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+
+###### <a name="response-codes"></a>Codici di risposta
+
+| Codice di risposta | Descrizione                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | OK, il corpo della risposta contiene l'evento in atom+xml |
+| 404               | Non trovato                                            |
+| 302               | Reindirizzare                                             |
+| 401               | Autorizzazione non riuscita                                 |
+| 403               | Autenticazione non riuscita                                |
+
+### <a name="use-powershell-or-any-http-client-to-create-the-event"></a>Usare PowerShell o qualsiasi client HTTP per creare l'evento
+
+PowerShell deve essere in versione 6 o successiva.
+
+In una sessione di PowerShell eseguire il comando riportato di seguito:
+
+```powershell
+param([string]$baseUri)
+
+$userName = "UserName"
+
+$password = "Password"
+
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
+
+$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)
+
+$EventName="EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))"
+
+Write-Host "Start to create an event with name: $EventName"
+
+$body = "<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+
+<entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+
+xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+
+xmlns='http://www.w3.org/2005/Atom'>
+
+<category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+
+<updated>7/14/2017 2:03:36 PM</updated>
+
+<content type='application/xml'>
+
+<m:properties>
+
+<d:Name>$EventName</d:Name>
+
+<d:EventType>e823b782-9a07-4e30-8091-034fc01f9347</d:EventType>
+
+<d:SharePointAssetIdQuery>'ComplianceAssetId:123'</d:SharePointAssetIdQuery>
+
+</m:properties>
+
+</content>
+
+</entry>"
+
+$event = $null
+
+try
+
+{
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri "$baseUri/ComplianceRetentionEvent" -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+catch
+
+{
+
+$response = $_.Exception.Response
+
+if($response.StatusCode -eq "Redirect")
+
+{
+
+$url = $response.Headers.Location
+
+Write-Host "redirected to $url"
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+}
+
+$event | fl *
+
+```
 

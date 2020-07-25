@@ -1,5 +1,5 @@
 ---
-title: Servizio di elaborazione dei dati per le richieste degli interessati nell'ambito del GDPR e del CCPA in Windows
+title: Servizio di trattamento dei dati per Windows Enterprise Richieste dell’interessato relative al GDPR e alla legge californiana sulla privacy (CCPA)
 description: Informazioni su come usare i prodotti, i servizi e gli strumenti di amministrazione Microsoft per trovare i dati personali e agire su di essi in risposta alle richieste degli interessati.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
@@ -15,17 +15,17 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 525b8b0783886a7449be72c89a2aa624afda9929
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: bc88f8911f44c9c7b8aad8fbecbbeb073fdcb9ba
+ms.sourcegitcommit: 209a9963719f1ca85ca2075c02721e1a318a7a13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023612"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45374802"
 ---
-# <a name="data-processor-service-for-windows-data-subject-requests-for-the-gdpr-and-ccpa"></a>Servizio di elaborazione dei dati per le richieste degli interessati nell'ambito del GDPR e del CCPA in Windows 
+# <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>Servizio di trattamento dei dati per Windows Enterprise Richieste dell’interessato relative al GDPR e alla legge californiana sulla privacy (CCPA) 
 
 >[!NOTE]
->Questo argomento è rivolto ai partecipanti al servizio di elaborazione dei dati per il programma di anteprima di Windows e richiede l'accettazione di specifiche condizioni d'uso. Per maggiori informazioni sul programma e l'accettazione delle condizioni d'uso, vedere [https://aka.ms/dpswpublicpreview](https://aka.ms/dpswpublicpreview).
+>Questo argomento è rivolto ai partecipanti al servizio di trattamento dei dati per il programma di anteprima di Windows Enterprise e richiede l'accettazione di specifiche condizioni d'uso. Per maggiori informazioni sul programma e per l'accettazione delle condizioni d'uso, vedere [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>Introduzione alle richieste degli interessati (DSR) 
 Il Regolamento generale europeo sulla protezione dei dati (GDPR) attribuisce alle persone (definite nel regolamento _soggetti interessati_) il diritto di gestire i dati personali raccolti da un datore di lavoro o da un altro tipo di ente o organizzazione (definito _titolare del trattamento dei dati_ o semplicemente _titolare del trattamento_). Nell'ambito del regolamento GDPR i dati personali hanno una definizione molto ampia, ovvero sono tutti i dati riferiti a una persona fisica identificata o identificabile. In base al regolamento GDPR, ai soggetti dei dati vengono assegnati diritti specifici relativamente ai dati personali, tra i quali il diritto di ottenerne copie, richiedere correzioni, limitarne l'elaborazione, eliminarli o riceverli in formato elettronico in modo che possano essere trasferiti a un altro titolare. Una richiesta formale da un soggetto interessato a un titolare del trattamento di agire sui dati personali viene definita una _Richiesta dell’interessato _ o DSR. 
@@ -57,11 +57,11 @@ Di seguito vengono fornite le definizioni dei termini importanti nella presente 
 
 ## <a name="how-to-use-this-guide"></a>Come usare questa guida 
 
-Se si usa il servizio di elaborazione dati per i dispositivi registrati Windows, vengono generate alcune informazioni, ossia i dati di diagnostica di Windows, per fornire il servizio.
+Se si usa il servizio di trattamento dei dati per i dispositivi registrati a Windows Enterprise, vengono generate alcune informazioni, ossia i dati di diagnostica di Windows, per fornire il servizio.
 
 ## <a name="windows-diagnostic-data"></a>Dati di diagnostica di Windows 
 
-Microsoft consente di accedere, eliminare ed esportare i dati di diagnostica di Windows associati all'uso da parte dell’utente del servizio di elaborazione dati per Windows.
+Microsoft consente di accedere, eliminare ed esportare i dati di diagnostica di Windows associati all'uso da parte dell’utente del servizio di trattamento dei dati per Windows Enterprise.
 
 >[!IMPORTANT]
 >La possibilità di rettificare i dati di diagnostica non è supportata. I dati diagnostica di Windows costituiscono le azioni effettive eseguite all’interno di Windows e le modifiche a tali dati potrebbero compromettere il record cronologico delle azioni, aumentare i rischi per la sicurezza e compromettere l’affidabilità. Tutti i dati trattati in questo documento sono da considerarsi dati di diagnostica di Windows. 
@@ -72,7 +72,7 @@ Microsoft consente di accedere, eliminare ed esportare alcuni dati di diagnostic
 
 ### <a name="step-1-access"></a>Passaggio 1: accesso 
 
-L'amministratore del tenant è l'unica persona all’interno dell'organizzazione che può accedere ai dati di diagnostica di Windows associati all'uso da parte di un utente specifico di un servizio di elaborazione dati per dispositivi registrati Windows. I dati recuperati per una richiesta di accesso saranno disponibili, tramite esportazione, in formato leggibile dal computer e verranno forniti nei file che consentiranno all'utente di comprendere a quali servizi e dispositivi sono associati i dati. Come indicato in precedenza, i dati recuperati non includeranno dati che potrebbero compromettere la sicurezza o la stabilità del servizio Windows. 
+L'amministratore tenant è l'unica persona all’interno dell'organizzazione che può accedere ai dati di diagnostica di Windows associati all'uso da parte di un utente specifico di un servizio di trattamento dei dati per dispositivi registrati a Windows Enterprise. I dati recuperati per una richiesta di accesso saranno disponibili, tramite esportazione, in formato leggibile dal computer e verranno forniti nei file che consentiranno all'utente di comprendere a quali servizi e dispositivi sono associati i dati. Come indicato in precedenza, i dati recuperati non includeranno dati che potrebbero compromettere la sicurezza o la stabilità del servizio Windows. 
 
 Microsoft fornisce un’esperienza portale che consente all'amministratore del tenant del cliente aziendale di gestire le richieste di accesso DSR. [DSR per Azure, parte 2, passaggio 3: esportazione](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export) descrive come eseguire una richiesta di accesso DSR, tramite esportazione, attraverso il portale di Azure.
 
@@ -91,7 +91,7 @@ Microsoft consente di eliminare gli utenti, che a loro volta elimineranno i dati
 
 ### <a name="step-3-export"></a>Passaggio 3: esportazione 
 
-L'amministratore del tenant è l'unica persona all’interno dell'organizzazione che può accedere ai dati di diagnostica di Windows associati all'uso da parte di un utente specifico di un servizio di elaborazione dati per dispositivi registrati Windows. I dati recuperati per una richiesta di esportazione saranno disponibili in un formato leggibile dal computer e verranno forniti nei file che consentiranno all'utente di comprendere a quali servizi e dispositivi sono associati i dati. Come indicato in precedenza, i dati recuperati non includeranno dati che potrebbero compromettere la sicurezza o la stabilità del servizio Windows. [DSR per Azure, parte 2, passaggio 3: esportazione](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export) descrive come eseguire una richiesta di esportazione DSR, tramite il portale di Azure. 
+L'amministratore tenant è l'unica persona all’interno dell'organizzazione che può accedere ai dati di diagnostica di Windows associati all'uso da parte di un utente specifico di un servizio di trattamento dei dati per dispositivi registrati a Windows Enterprise. I dati recuperati per una richiesta di esportazione saranno disponibili in un formato leggibile dal computer e verranno forniti nei file che consentiranno all'utente di comprendere a quali servizi e dispositivi sono associati i dati. Come indicato in precedenza, i dati recuperati non includeranno dati che potrebbero compromettere la sicurezza o la stabilità del servizio Windows. [DSR per Azure, parte 2, passaggio 3: esportazione](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export) descrive come eseguire una richiesta di esportazione DSR, tramite il portale di Azure. 
 
 Microsoft consente di esportare i dati dei clienti direttamente tramite l’interfaccia di programmazione dell'applicazione preesistente (API). Informazioni dettagliate sono disponibili nella [ documentazione di riferimento dell’interfaccia di programmazione dell'applicazione (API)](https://docs.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0).
 
