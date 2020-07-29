@@ -5,9 +5,8 @@ f1.keywords:
 ms.author: samanro
 author: samanro
 manager: scotv
-layout: LandingPage
 ms.audience: Admin
-ms.topic: landing-page
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -24,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 per le campagne
-ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: d936b05c7668b2fcdeb976e547cde8694b304c27
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "43632036"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429979"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 per le campagne
 ===========================
@@ -60,122 +59,25 @@ Per altre informazioni sul contenuto incluso, vedere [Microsoft 365 Business Pre
 <a name="get-started"></a>Per iniziare
 --------------------------
 
-<ul class="panelContent cardsJ">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <p><b>Seguire questi passaggi per iniziare:</b></p>
-                        <P><a href="get-microsoft-365-campaigns.md">Ottenere Microsoft 365 per le campagne</a></p>
-                        <P><a href="m365-campaigns-users.md">Scoprire in che modo gli utenti useranno Microsoft 365</a></p>
-                        <P><a href="microsoft-365-campaigns-setup-overview.md">Configurare Microsoft 365 per le campagne</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+![Roadmap](https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.png) **Seguire questi passaggi per iniziare: **  
+
+- [Ottenere Microsoft 365 per le campagne](get-microsoft-365-campaigns.md)
+- [Scoprire in che modo gli utenti useranno Microsoft 365](m365-campaigns-users.md)
+- [Configurare Microsoft 365 per le campagne](microsoft-365-campaigns-setup-overview.md)
+
+
 
 <a name="solutions-for-your-campaign-or-small-business"></a>Soluzioni per la campagna o per le piccole imprese
 --------------------------
 
 Dopo aver configurato l'ambiente Microsoft 365, è possibile usare le soluzioni seguenti per iniziare a lavorare:
 
-<ul class="panelContent cardsW cols cols2">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Creare team per collaborare</h3>
-                        <p>Creare uno spazio per le comunicazioni e la collaborazione con team specifici per alcuni dipendenti, tutto il personale, partner o fornitori con Microsoft Teams.</p>
-                        <p><a href="create-teams-for-collaboration.md">Creare il team</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-meetings.png" alt="an online meeting" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Configurare le riunioni online</h3>
-                        <p>Pianificare una riunione con audio, video e condivisione con Microsoft Teams.</p>
-                        <p><a href="set-up-meetings.md">Configurare una riunione</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Crittografare o etichettare le comunicazioni di posta elettronica sensibili</h3>
-                        <p>Usare le etichette di crittografia e riservatezza per proteggere i messaggi che contengono informazioni riservate o sensibili.</p>
-                        <p><a href="send-encrypted-email.md">Inviare messaggi di posta elettronica crittografati</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Creare un sito di comunicazione</h3>
-                        <p>Condividere eventi, messaggi, immagini e altro con il team in un sito di comunicazioni interno creato con SharePoint.</p>
-                        <p><a href="create-communications-site.md">Creare il sito</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Condividere file e video</h3>
-                        <p>È possibile salvare i file e i video nel cloud, in modo che siano disponibili a tutte le persone autorizzate.</p>
-                        <p><a href="share-files-and-videos.md">Iniziare a condividere</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+|               |               |
+| ------------- | ------------- |
+| ![un sito di comunicazione di SharePoint](../media/sm-m365-democracy-teams-collab.png) | ![una riunione online](../media/m365-democracy-teams-meetings.png) |
+| **Creare team per la collaborazione** creare uno spazio per le comunicazioni e la collaborazione con team specifici, per personale chiave, tutto il personale, partner o fornitori con Microsoft Teams. [Creare il team](create-teams-for-collaboration.md) | **Configurare riunioni online** pianificare una riunione con audio, video e condivisione con Microsoft Teams. [Configurare una riunione](set-up-meetings.md) |
+| ![Messaggi crittografati e con etichetta](../media/sm-m365-campaign-email-encrypt.png) | ![un sito di comunicazione di SharePoint](../media/sm-m365-democracy-comms-site.png) |
+| **Crittografare o contrassegnare il messaggio di posta elettronica sensibile** usare etichette di crittografia e sensibilità per proteggere la posta elettronica che contiene informazioni riservate o sensibili. [Inviare messaggi di posta elettronica crittografati](send-encrypted-email.md) | **Creare un sito di comunicazioni** condividere eventi, messaggi, immagini e altro con il team in un sito di comunicazioni interno creato con SharePoint. [Creare il sito](create-communications-site.md) |
+| ![condivisione di un file in Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) | |
+| **Condividere file e video** È possibile salvare i file e i video nel cloud, in modo che siano disponibili a tutte le persone autorizzate. [Iniziare a condividere](share-files-and-videos.md) | |
+

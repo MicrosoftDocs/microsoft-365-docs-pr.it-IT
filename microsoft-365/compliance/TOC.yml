@@ -319,8 +319,8 @@
           href: event-driven-retention.md
         - name: Gestire il ciclo di vita dei documenti di SharePoint
           href: auto-apply-retention-labels-scenario.md
-    - name: Eliminare i dati
-      href: disposition.md
+        - name: Gestire l’eliminazione dei dati
+          href: disposition.md
     - name: Gestire le cassette postali inattive
       items:
         - name: Panoramica delle cassette postali inattive

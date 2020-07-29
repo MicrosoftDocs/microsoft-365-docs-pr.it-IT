@@ -423,7 +423,7 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Correggere i messaggi di posta elettronica dannosi
               href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
-            - name: Visualizzare e leggere i report ATP
+            - name: Visualizzare report ATP nel Centro sicurezza e conformità
               href: ./office-365-security/view-reports-for-atp.md
             - name: Informazioni sugli attacchi più recenti con l'analisi delle minacce
               href: ./mtp/latest-attack-campaigns.md

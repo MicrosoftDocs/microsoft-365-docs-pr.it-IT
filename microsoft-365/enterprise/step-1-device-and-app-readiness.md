@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di dispositivi e app nell'ambiente.
-ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 2389dcfe70108e261208191bd3674eced702b4c6
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011664"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434158"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Passaggio 1: preparazione di dispositivi e app
 
@@ -35,9 +35,8 @@ ms.locfileid: "44011664"
 </thead>
 </table>
 
->[!NOTE]
->La preparazione di dispositivi e app rappresenta il primo passaggio del processo di distribuzione consigliato e copre gli aspetti olistici della compatibilità di applicazioni e componenti hardware. Per vedere l’intero processo di distribuzione, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
->
+> [!NOTE]
+> La preparazione di dispositivi e app rappresenta il primo passaggio del processo di distribuzione consigliato e copre gli aspetti olistici della compatibilità di applicazioni e componenti hardware. Per vedere l’intero processo di distribuzione, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
 
 In passato, l'ostacolo principale per l'aggiornamento dei computer desktop degli utenti era la compatibilità di hardware e applicazioni. Finalmente, passando a Windows 10 e Microsoft 365 Apps for enterprise, praticamente ogni applicazione creata negli ultimi 10 anni sarà compatibile con Windows 10 e qualsiasi componente aggiuntivo COM e macro VBA utilizzato dall'organizzazione nelle versioni precedenti di Office (fino a Office 2010) continuerà a essere compatibile nelle versioni più recenti di Office, senza nessuna modifica.
 
@@ -47,11 +46,13 @@ In questo articolo viene illustrata la prima fase, Conformità dei dispositivi e
 
 ## <a name="windows-10-compatibility-scan"></a>Analisi della compatibilità di Windows 10
 
-Prima di distribuire Windows 10, Microsoft consiglia di controllare l'idoneità dei dispositivi esistenti che eseguono Windows 7 o 8/8.1. Il supporto di installazione di Windows 10 supporta un'opzione della riga di comando per setup.exe, che consente di controllare solo la compatibilità senza eseguire l'aggiornamento. ScanOnly può essere eseguito come file batch con script o integrati in una sequenza di attività di Microsoft Endpoint Configuration Manager. È possibile eseguire ScanOnly direttamente dalla rete, in modo che il supporto di installazione di Windows 10 non venga scaricato nel dispositivo locale. Al termine dell'operazione ScanOnly, i risultati vengono restituiti tramite codici di uscita nei file di log generati da Setup.exe.   
+Prima di distribuire Windows 10, Microsoft consiglia di controllare l'idoneità dei dispositivi esistenti che eseguono Windows 7 o 8/8.1. Il supporto di installazione di Windows 10 supporta un'opzione della riga di comando per setup.exe, che consente di controllare solo la compatibilità senza eseguire l'aggiornamento. ScanOnly può essere eseguito come file batch con script o integrati in una sequenza di attività di Microsoft Endpoint Configuration Manager. È possibile eseguire ScanOnly direttamente dalla rete, in modo che il supporto di installazione di Windows 10 non venga scaricato nel dispositivo locale. Al termine dell'operazione ScanOnly, i risultati vengono restituiti tramite codici di uscita nei file di log generati da Setup.exe.
 
 Una riga di comando ScanOnly di esempio che completa l'analisi di compatibilità in modo invisibile all'utente avrà un aspetto simile al seguente:
 
-    Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+```dos
+Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+```
 
 Per altre informazioni su ScanOnly e altre opzioni della riga di comando di Windows, vedere [Opzioni della riga di comando per l'installazione di Windows](https://aka.ms/setupswitches).
 
@@ -61,7 +62,7 @@ Desktop Analytics offre numerosi vantaggi rispetto ai sistemi di gestione deskto
 
 Per configurare Desktop Analytics, prima di tutto è necessario configurare una sottoscrizione di Azure e includervi un'area di lavoro di Azure Log Analytics. Una volta che il servizio Desktop Analytics è in esecuzione, è possibile registrare qualsiasi dispositivo Windows 7 SP1 o versioni successive connesso a Internet tramite le impostazioni di Criteri di gruppo. È semplicissimo. Non ci sono agenti da distribuire e il flusso di lavoro visivo di Desktop Analytics guida l'utente dalla distribuzione pilota alla distribuzione di produzione. Volendo, è possibile esportare i dati da Desktop Analytics a strumenti per la distribuzione del software come Microsoft Endpoint Configuration Manager (Current Branch), per raggiungere direttamente i PC e creare raccolte non appena sono pronti per la distribuzione.
 
-Se al momento Desktop Analytics non è configurato per l'ambiente o se si desidera iscriversi per una prova, accedere alla pagina di Desktop Analytics (https://www.aka.ms/desktopanalytics)) e iniziare.
+Se al momento Desktop Analytics non è configurato per l'ambiente o si desidera iscriversi per una prova, accedere alla pagina di [Desktop Analytics](https://www.aka.ms/desktopanalytics) e iniziare.
 
 ## <a name="device-and-app-readiness-process"></a>Processo di preparazione di dispositivi e app
 
@@ -103,10 +104,9 @@ Man mano che vengono esaminati problemi, un numero sempre maggiore di PC diventa
 
 ### <a name="configuration-manager-software-inventory-for-application-prioritization"></a>Inventario software di Configuration Manager per la definizione della priorità delle applicazioni
 
-L'inventario software di Configuration Manager è un'alternativa all'uso di soluzioni di analisi basate sul cloud per valutare lo stato di preparazione di dispositivi e app. È possibile tenere traccia del numero di installazioni ed eseguire il drill-down in computer specifici per definire più facilmente le priorità per il test e la convalida della compatibilità, oltre che impostare pacchetti di applicazioni come compatibili con Windows 10 tramite le impostazioni del pacchetto. Anche se questa opzione non offre la possibilità di confrontare le informazioni di compatibilità note con i servizi di analisi di Microsoft, può rappresentare una soluzione efficace per un set ridotto di applicazioni con priorità per il testing manuale. 
+L'inventario software di Configuration Manager è un'alternativa all'uso di soluzioni di analisi basate sul cloud per valutare lo stato di preparazione di dispositivi e app. È possibile tenere traccia del numero di installazioni ed eseguire il drill-down in computer specifici per definire più facilmente le priorità per il test e la convalida della compatibilità, oltre che impostare pacchetti di applicazioni come compatibili con Windows 10 tramite le impostazioni del pacchetto. Anche se questa opzione non offre la possibilità di confrontare le informazioni di compatibilità note con i servizi di analisi di Microsoft, può rappresentare una soluzione efficace per un set ridotto di applicazioni con priorità per il testing manuale.
 
 Per altre informazioni, vedere [Introduzione all'inventario software in Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) e come configurare i requisiti della piattaforma nei pacchetti applicazioni in [Pacchetti e programmi di Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs).
-
 
 ## <a name="app-assure"></a>App Assure
 
@@ -116,6 +116,6 @@ Un altro strumento utile per valutare la compatibilità delle app di Windows 10 
 
 Desktop Analytics non è solo uno strumento che consente di passare a Windows 10 e Microsoft 365 Apps for enterprise. Dopo aver installato Windows 10 e Office 365 nel computer desktop, è possibile usarlo per gestire la distribuzione e gli aggiornamenti semestrali delle funzionalità per avere sempre le ultime versioni a disposizione.
 
-## <a name="next-step"></a>Passaggio successivo 
+## <a name="next-step"></a>Passaggio successivo
 
 ## <a name="step-2-directory-and-network-readiness"></a>[Passaggio 2: conformità directory e rete](https://aka.ms/mdd2)
