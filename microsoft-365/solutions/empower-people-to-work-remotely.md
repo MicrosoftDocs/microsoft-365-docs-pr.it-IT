@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/14/2020
+ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configurare le funzionalità di sicurezza e l'infrastruttura di servizio necessarie per consentire ai lavoratori di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: 58915d80d9eb81009632971bbfc84a7b681e125e
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 37306a4e4e820d1a21d83eeabf3712a7f6abc99e
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158898"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429885"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
@@ -36,8 +36,7 @@ Microsoft 365 offre funzionalità che consentono ai tuoi dipendenti di lavorare 
 
 ![Aumentare la produttività dei lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-
-| | |
+| Funzionalità chiave | Descrizione |
 |:-------|:-----|
 | Connesso | Da qualunque parte del mondo e in qualsiasi momento, i dipendenti che lavorano a distanza possono accedere a: <ul><li>Dati e servizi basati su cloud tramite la propria sottoscrizione a Microsoft 365. </li><li>Risorse dell'organizzazione, ad esempio quelle offerte dai data center delle applicazioni locali.</li></ul> |
 | Protezione | Gli accessi sono garantiti con l’autenticazione a più fattori (MFA), e le caratteristiche di sicurezza predefinite di Microsoft 365 e Windows 10 proteggono contro malware, attacchi dannosi e perdite dei dati. |
@@ -53,21 +52,23 @@ Per soddisfare i criteri per i lavoratori remoti, usare queste capacità e funzi
 
 | Capacità o funzionalità | Descrizione | Licenze |
 |:-------|:-----|:-------|
-| MFA applicata con le impostazioni predefinite per la sicurezza   | Proteggere le identità e i dispositivi dalla compromissione richiedendo una seconda forma di autenticazione per gli accessi. Le impostazioni predefinite per la sicurezza richiedono l'autenticazione a più fattori per tutti gli account utente.   | Microsoft 365 E3 ed E5 |
-| MFA applicata con l'accesso condizionale| Richiedere l'autenticazione a più fattori in base alle proprietà dell'accesso con i criteri di accesso condizionale.    | Microsoft 365 E3 ed E5 | 
+| MFA applicata con le impostazioni predefinite per la sicurezza   | Proteggere le identità e i dispositivi dalla compromissione richiedendo una seconda forma di autenticazione per gli accessi. Le impostazioni predefinite per la sicurezza richiedono l'autenticazione a più fattori per tutti gli account utente.   | Microsoft 365 E3 o E5 |
+| MFA applicata con l'accesso condizionale| Richiedere l'autenticazione a più fattori in base alle proprietà dell'accesso con i criteri di accesso condizionale.    | Microsoft 365 E3 o E5 | 
 | MFA applicata con l'accesso condizionale basato sul rischio   | Richiedere l'autenticazione a più fattori in base al rischio di accesso dell'utente con Azure Advanced Threat Protection. | Microsoft 365 E5 o E3 con licenze di Azure AD Premium P2 | 
-| Reimpostazione della password self-service    | Consentire agli utenti di reimpostare o sbloccare le password o gli account personali.  | Microsoft 365 E3 ed E5 |
+| Reimpostazione della password self-service    | Consentire agli utenti di reimpostare o sbloccare le password o gli account personali.  | Microsoft 365 E3 o E5 |
 | Azure AD Application Proxy    | Offrire un accesso remoto sicuro per le applicazioni basate sul Web ospitate nei server Intranet.   | Richiede una sottoscrizione di Azure a pagamento separata |
 | VPN da punto a sito di Azure   | Stabilire una connessione sicura dal dispositivo di un lavoratore remoto alla Intranet aziendale tramite una rete virtuale di Azure.   | Richiede una sottoscrizione di Azure a pagamento separata |
 | Desktop virtuale Windows   | Supportare i lavoratori remoti che possono usare solo i propri dispositivi personali e non gestiti con desktop virtuali in esecuzione in Azure. | Richiede una sottoscrizione di Azure a pagamento separata |
-| Servizi Desktop remoto | Consentire ai dipendenti di connettersi a computer basati su Windows nella Intranet aziendale. | Microsoft 365 E3 ed E5 | 
+| Servizi Desktop remoto | Consentire ai dipendenti di connettersi a computer basati su Windows nella Intranet aziendale. | Microsoft 365 E3 o E5 | 
 | Gateway di Servizi Desktop remoto   | Crittografare le comunicazioni e impedire che gli host RDS siano esposti direttamente a Internet. | Richiede licenze di Windows Server separate |
-| Microsoft Intune | Gestire dispositivi e applicazioni.   | Microsoft 365 E3 ed E5 | 
+| Microsoft Intune | Gestire dispositivi e applicazioni.   | Microsoft 365 E3 o E5 | 
 | Configuration Manager | Gestire installazioni, aggiornamenti e impostazioni del software nei dispositivi | Richiede licenze di Configuration Manager separate |
 | Desktop Analytics | Determinare l'adozione degli aggiornamenti dei client Windows.   | Richiede licenze di Configuration Manager separate |
-| Windows Autopilot | Impostare e preconfigurare nuovi dispositivi Windows 10 in modo da predisporli per l'uso.   | Microsoft 365 E3 ed E5 |
-| Microsoft Teams, Exchange Online, SharePoint Online e OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Creare, comunicare e collaborare. | Microsoft 365 E3 e E5 |
+| Windows Autopilot | Impostare e preconfigurare nuovi dispositivi Windows 10 in modo da predisporli per l'uso.   | Microsoft 365 E3 o E5 |
+| Microsoft Teams, Exchange Online, SharePoint Online e OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Creare, comunicare e collaborare. | Microsoft 365 E3 o E5 |
 ||||
+
+Per i criteri di sicurezza e conformità dei lavoratori remoti, vedere [Distribuire sicurezza e conformità per i lavoratori remoti](empower-people-to-work-remotely-security-compliance.md)
 
 <a name="poster"></a> Per un riepilogo di 2 pagine di questo scenario vedere il [poster Supportare i lavoratori remoti](../downloads/empower-remote-workers.pdf).
 
