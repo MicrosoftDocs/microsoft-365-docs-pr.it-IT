@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7edfcfefc379aa30b7028097b21522d63cd26268
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819449"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434268"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -54,7 +54,7 @@ Le informazioni visualizzate nel Riepilogo di gestione delle minacce dipendono d
 |---|---|
 |Messaggi di malware bloccati<br/>Messaggi di phishing bloccati<br>Messaggi segnalati dagli utenti<br><br><br><br>|Messaggi di malware bloccati<br>Messaggi di phishing bloccati<br>Messaggi segnalati dagli utenti<br>Malware zero-day bloccato<br>Messaggi di phishing avanzati rilevati<br>URL dannosi bloccati|
 
-Per visualizzare o accedere al widget di riepilogo di gestione delle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
+Per visualizzare o accedere al widget di riepilogo di gestione delle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 
 ## <a name="threat-protection-status"></a>Stato di protezione dalle minacce
 

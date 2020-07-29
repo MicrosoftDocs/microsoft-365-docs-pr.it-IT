@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 description: "Scoprire quante tasse verranno addebitate per l'abbonamento a Microsoft 365 for business in diverse aree geografiche. "
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401751"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434062"
 ---
 # <a name="tax-information"></a>Informazioni fiscali
 
@@ -122,7 +119,7 @@ Si potrebbe essere idonei per un'esenzione dell'IVA nei casi seguenti:
 
 3. Nella sezione **impostazioni & azioni** selezionare **modifica indirizzo di utilizzo del servizio**.
 
-4. Nella pagina **modifica l'indirizzo di utilizzo del servizio** immettere l'ID IVA nella casella **numero di partita IVA** e quindi fare clic su **Salva**.
+4. Nella casella **numero di partita IVA** della pagina **modifica l'indirizzo di utilizzo del servizio** immettere l'ID IVA, incluso il prefisso e senza spazi. Seleziona **Salva**.
 
 ::: moniker-end
 
@@ -134,7 +131,7 @@ Si potrebbe essere idonei per un'esenzione dell'IVA nei casi seguenti:
 
 2. Selezionare il nome della sottoscrizione e quindi fare clic su **altre azioni** \> **modifica numero partita IVA**.
   
-3. Nella pagina **modifica l'indirizzo di utilizzo del servizio** immettere l'ID IVA nella casella **numero di partita IVA** e quindi fare clic su **Invia**.
+3. Nella casella **numero di partita IVA** della pagina **modifica l'indirizzo di utilizzo del servizio** immettere l'ID IVA, incluso il prefisso e senza spazi. Seleziona **Salva**.
 
 ::: moniker-end
 
@@ -184,8 +181,7 @@ Preparare la documentazione seguente:
 | Organizzazioni internazionali che detengono esenzione fiscale | Certificazione/conferma lettera da parte delle autorità tributarie locali |
 | Portorico | Certificado de compras Exentas |
   
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
   
-[Visualizzare la fattura](view-your-bill-or-invoice.md)
-  
-[Come leggere la fattura](understand-your-invoice.md)
+[Visualizzare la fattura o la fattura](view-your-bill-or-invoice.md) (articolo) \
+[Comprendere la fattura o la fattura](understand-your-invoice.md) (articolo)

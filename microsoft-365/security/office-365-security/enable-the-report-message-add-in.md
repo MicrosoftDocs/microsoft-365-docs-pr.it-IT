@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare il componente aggiuntivo per i messaggi di report per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
-ms.openlocfilehash: 0b900fe00dc590b69755b54f8103688042026df0
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 2b074d1bd260f5c95d138577e259aee14ec9e8d7
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588229"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430508"
 ---
 # <a name="enable-the-report-message-add-in"></a>Abilitare il componente aggiuntivo Segnala messaggio
 
@@ -49,10 +49,7 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
   - Outlook 2016 per Mac
   - Outlook incluso con Microsoft 365 Apps for Enterprise
 
-- Il componente aggiuntivo per i messaggi di report non è attualmente disponibile per:
-
-  - Cassette postali in organizzazioni di Exchange locali
-  - Abbonamenti a GCC, GCC HIGH o DoD
+- Il componente aggiuntivo per i messaggi di report non è disponibile per le cassette postali nelle organizzazioni Exchange locali.
 
 - È possibile configurare i messaggi segnalati in modo che vengano copiati o reindirizzati a una cassetta postale specificata. Per ulteriori informazioni, vedere [specificare una cassetta postale per l'invio di messaggi di posta indesiderata e di phishing in Exchange Online](user-submission.md).
 

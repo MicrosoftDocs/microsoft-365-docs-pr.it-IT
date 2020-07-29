@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41b9eb1378a585a22bbd747edb395b79cfe761ca
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: f723885a366e6f92f29faccfb632677c6e0028c8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084145"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430224"
 ---
 # <a name="information-barriers"></a>Barriere informative
 
@@ -64,10 +64,11 @@ Per ulteriori informazioni sull'esperienza utente con barriere informative, vede
 
 Gli ostacoli alle informazioni stanno per essere implementati e sono inclusi negli abbonamenti, ad esempio:
 
-- Microsoft 365 E5
-- Office 365 E5
+- Microsoft 365 E5/A5
+- Office 365 E5/A5
 - Office 365 Advanced Compliance
-- Conformità E5 di Microsoft 365
+- Conformità E5/A5 di Microsoft 365
+- Microsoft 365 gestione dei rischi Insider
 
 Per ulteriori informazioni, vedere [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
 

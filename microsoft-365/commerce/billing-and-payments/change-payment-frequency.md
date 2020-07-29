@@ -1,5 +1,5 @@
 ---
-title: Modificare la frequenza di pagamento
+title: Modificare la frequenza di fatturazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come modificare la frequenza di fatturazione per l'abbonamento aziendale.
-ms.openlocfilehash: 321bf660caf53a39a85ad45b20bd7ed2267c8748
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 439e5b9c7e3c628b2b0834b624696e6c2ae19bb6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402655"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430003"
 ---
-# <a name="change-your-payment-frequency"></a>Modificare la frequenza di pagamento
+# <a name="change-your-billing-frequency"></a>Modificare la frequenza di fatturazione
 
 ::: moniker range="o365-21vianet"
 

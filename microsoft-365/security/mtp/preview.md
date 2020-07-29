@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204828"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430364"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Funzionalità di anteprima di Microsoft Threat Protection
 
@@ -57,6 +57,5 @@ Quando si vede che è selezionata la casella di controllo attiva le caratteristi
 ## <a name="preview-features"></a>Funzionalità di anteprima
 Le caratteristiche e i miglioramenti seguenti sono attualmente disponibili in anteprima:
 
-- **[Riferimenti allo schema in-Portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** -informazioni sulle tabelle dello schema disponibili direttamente nel centro sicurezza. Oltre alle descrizioni di tabelle e colonne, questo riferimento fornisce informazioni sui tipi di evento supportati ( `ActionType` valori) e sulle query di esempio.  
+- **[Riferimenti allo schema in-Portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** -informazioni sulle tabelle dello schema disponibili direttamente nel centro sicurezza. Oltre alle descrizioni di tabelle e colonne, questo riferimento fornisce informazioni sui tipi di evento supportati ( `ActionType` valori) e sulle query di esempio.
 
-- **[Vai a cercare](advanced-hunting-go-hunt.md)** : rapidamente pivot dall'indagine di un incidente per esaminare un evento specifico, un utente, un dispositivo o altri tipi di entità che utilizzano funzionalità di [ricerca avanzata](advanced-hunting-overview.md) basate su query.

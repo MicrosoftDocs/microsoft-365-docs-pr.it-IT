@@ -15,16 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore nativo per l'importazione e l'archiviazione di pagine business di Facebook su Microsoft 365. Dopo aver importato i dati in Microsoft 365, è possibile utilizzare le funzionalità di conformità, ad esempio il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire la governance dei dati di Facebook dell'organizzazione.
-ms.openlocfilehash: 9ef7a2f3a24201ff4a32839671df7430a492bb44
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 240ce3a90cf46a05ab5d6030b9318d42d23904d8
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943039"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434239"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Distribuire un connettore per archiviare i dati di pagine business di Facebook
 
-Questo articolo contiene il processo dettagliato per la distribuzione di un connettore che utilizza il servizio di importazione di Office 365 per importare i dati dalle pagine business di Facebook a Microsoft 365. Per una panoramica generale di questo processo e un elenco dei prerequisiti necessari per distribuire un connettore Facebook, vedere [configurare un connettore per archiviare i dati di Facebook](archive-facebook-data-with-sample-connector.md). 
+Questo articolo contiene il processo dettagliato per la distribuzione di un connettore che utilizza il servizio di importazione di Office 365 per importare i dati dalle pagine business di Facebook a Microsoft 365. Per una panoramica generale di questo processo e un elenco dei prerequisiti necessari per distribuire un connettore Facebook, vedere [configurare un connettore per archiviare i dati di Facebook](archive-facebook-data-with-sample-connector.md).
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Passaggio 1: creare un'app in Azure Active Directory
 
@@ -40,7 +40,7 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
     ![Fare clic su * * registrazioni app (anteprima) * * e quindi fare clic su * * nuova registrazione * *](../media/FBCimage3.png)
 
-4. Registrare l'applicazione. In URI di reindirizzamento, selezionare Web nell'elenco a discesa tipo di applicazione e <https://portal.azure.com> quindi digitare nella casella per l'URI.
+4. Registrare l'applicazione. In URI di reindirizzamento, selezionare Web nell'elenco a discesa tipo di applicazione e quindi digitare <https://portal.azure.com> nella casella per l'URI.
 
    ![Registrare l'applicazione](../media/FBCimage4.png)
 
@@ -56,14 +56,13 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
    ![Fare clic su nuovo client segreto](../media/FBCimage7.png)
 
-8. Creare un nuovo segreto. Nella casella Descrizione digitare il segreto e quindi scegliere un periodo di scadenza. 
+8. Creare un nuovo segreto. Nella casella Descrizione digitare il segreto e quindi scegliere un periodo di scadenza.
 
     ![Digita il segreto e quindi scegli un periodo di scadenza](../media/FBCimage8.png)
 
 9. Copiare il valore del segreto e salvarlo in un file di testo o in un altro percorso di archiviazione. Si tratta del segreto dell'applicazione AAD utilizzato nei passaggi successivi.
 
    ![Copiare il valore del segreto e salvarlo](../media/FBCimage9.png)
-
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Passaggio 2: distribuire il servizio Web del connettore da GitHub all'account di Azure
 
@@ -73,27 +72,27 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
 2. Dopo aver fatto clic su **Distribuisci in Azure**, verrà reindirizzato a un portale di Azure con una pagina modello personalizzato. Compilare i dettagli delle **Impostazioni e delle** informazioni di **base** e quindi fare clic su **acquisto**.
 
-    - **Sottoscrizione:** Selezionare l'abbonamento di Azure in cui si desidera distribuire il servizio Web del connettore di pagine business di Facebook.
-    
-    - **Gruppo di risorse:** Scegliere o creare un nuovo gruppo di risorse. Un gruppo di risorse è un contenitore che contiene risorse correlate per una soluzione di Azure.
+   - **Sottoscrizione:** Selezionare l'abbonamento di Azure in cui si desidera distribuire il servizio Web del connettore di pagine business di Facebook.
 
-    - **Posizione:** Scegliere un percorso.
+   - **Gruppo di risorse:** Scegliere o creare un nuovo gruppo di risorse. Un gruppo di risorse è un contenitore che contiene risorse correlate per una soluzione di Azure.
 
-    - **Nome applicazione Web:** Specificare un nome univoco per il connettore Web App. Il nome del Th deve essere compreso tra 3 e 18 caratteri. Questo nome viene utilizzato per creare l'URL del servizio app di Azure. ad esempio, se si specifica il nome dell'applicazione Web di **fbconnector** , l'URL del servizio app di Azure sarà **fbconnector.azurewebsites.NET**.
-    
-    - **tenantId:** L'ID tenant dell'organizzazione Microsoft 365 copiato dopo aver creato l'app connettore Facebook in Azure Active Directory nel passaggio 1.
-    
+   - **Posizione:** Scegliere un percorso.
+
+   - **Nome applicazione Web:** Specificare un nome univoco per il connettore Web App. Il nome del Th deve essere compreso tra 3 e 18 caratteri. Questo nome viene utilizzato per creare l'URL del servizio app di Azure. ad esempio, se si specifica il nome dell'applicazione Web di **fbconnector** , l'URL del servizio app di Azure sarà **fbconnector.azurewebsites.NET**.
+
+   - **tenantId:** L'ID tenant dell'organizzazione Microsoft 365 copiato dopo aver creato l'app connettore Facebook in Azure Active Directory nel passaggio 1.
+
    - **APISecretKey:** È possibile digitare qualsiasi valore come segreto. Viene utilizzato per accedere all'applicazione Web del connettore nel passaggio 5.
-   
+
      ![Fare clic su Crea un account di archiviazione di risorse e tipi](../media/FBCimage12.png)
 
 3. Dopo che la distribuzione ha avuto esito positivo, la pagina avrà un aspetto simile alla schermata seguente:
 
-     ![Fare clic su archiviazione e quindi su account di archiviazione](../media/FBCimage13.png)
+   ![Fare clic su archiviazione e quindi su account di archiviazione](../media/FBCimage13.png)
 
 ## <a name="step-3-register-the-facebook-app"></a>Passaggio 3: registrare l'app Facebook
 
-1. Accedere a <https://developers.facebook.com>, eseguire l'accesso usando le credenziali per l'account per le pagine business di Facebook dell'organizzazione e quindi fare clic su **Aggiungi nuova app**.
+1. Accedere a <https://developers.facebook.com> , eseguire l'accesso usando le credenziali per l'account per le pagine business di Facebook dell'organizzazione e quindi fare clic su **Aggiungi nuova app**.
 
    ![Aggiungere una nuova app per la pagina business di Facebook](../media/FBCimage25.png)
 
@@ -109,7 +108,7 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
    ![Fare clic su Web nella pagina integrazione login Facebook](../media/FBCimage28.png)
 
-5. Aggiungere l'URL del servizio app di Azure; ad esempio `https://fbconnector.azurewebsites.net`.
+5. Aggiungere l'URL del servizio app di Azure; ad esempio `https://fbconnector.azurewebsites.net` .
 
    ![Aggiungere l'URL del servizio app di Azure](../media/FBCimage29.png)
 
@@ -117,19 +116,19 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
    ![Completare la sezione Guida introduttiva](../media/FBCimage30.png)
 
-7. Nel riquadro di spostamento a sinistra in **login Facebook**, fare clic su **Impostazioni**e aggiungere l'URI di reindirizzamento OAuth nella casella **Valid URI di reindirizzamento OAuth** . Utilizzare il formato ** \<connectorserviceuri>/views/facebookoauth**, in cui il valore di connectorserviceuri è l'URL del servizio app di Azure per l'organizzazione. ad esempio, `https://fbconnector.azurewebsites.net`.
+7. Nel riquadro di spostamento a sinistra in **login Facebook**, fare clic su **Impostazioni**e aggiungere l'URI di reindirizzamento OAuth nella casella **Valid URI di reindirizzamento OAuth** . Utilizzare il formato ** \<connectorserviceuri> /views/FacebookOAuth**, in cui il valore di CONNECTORSERVICEURI è l'URL del servizio app di Azure per l'organizzazione, ad esempio `https://fbconnector.azurewebsites.net` .
 
    ![Aggiungere l'URI di reindirizzamento OAuth alla casella degli URI di reindirizzamento OAuth validi](../media/FBCimage31.png)
 
-8. Nel riquadro di spostamento a sinistra, fare clic su **Aggiungi prodotti** e quindi fare clic su **webhook.** Nel menu a discesa della **pagina** , fare clic su **pagina**. 
+8. Nel riquadro di spostamento a sinistra, fare clic su **Aggiungi prodotti** e quindi fare clic su **webhook.** Nel menu a discesa della **pagina** , fare clic su **pagina**.
 
    ![Fare clic su Aggiungi prodotti e quindi su * * webhooks](../media/FBCimage32.png)
 
-9. Aggiungere l'URL di callback di Webhook e aggiungere un token di verifica. Il formato dell'URL di callback, utilizzare il formato ** <connectorserviceuri>/API/FbPageWebhook**, in cui il valore di connectorserviceuri è l'URL del servizio app di Azure per l'organizzazione. ad esempio `https://fbconnector.azurewebsites.net`. 
+9. Aggiungere l'URL di callback di Webhook e aggiungere un token di verifica. Il formato dell'URL di callback, utilizzare il formato ** <connectorserviceuri> /API/FbPageWebhook**, in cui il valore di CONNECTORSERVICEURI è l'URL del servizio app di Azure per l'organizzazione, ad esempio `https://fbconnector.azurewebsites.net` .
 
-    Il token di verifica dovrebbe essere simile a una password complessa. Copiare il token di verifica in un file di testo o in un altro percorso di archiviazione.
+   Il token di verifica dovrebbe essere simile a una password complessa. Copiare il token di verifica in un file di testo o in un altro percorso di archiviazione.
 
-        ![Add the verify token](../media/FBCimage33.png)
+   ![Aggiungere il token di verifica](../media/FBCimage33.png)
 
 10. Testare e sottoscrivere l'endpoint per il feed.
 
@@ -161,28 +160,28 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
 ## <a name="step-4-configure-the-connector-web-app"></a>Passaggio 4: configurare l'applicazione Web del connettore
 
-1. Passare a https://\<AzureAppResourceName>. azurewebsites.NET (dove AzureAppResourceName è il nome della risorsa di Azure App denominata nel passaggio 4), ad esempio, se il nome è **fbconnector**, andare a `https://fbconnector.azurewebsites.net`. La Home page dell'app avrà lo stesso aspetto della schermata seguente:
+1. Andare a `https://<AzureAppResourceName>.azurewebsites.net` (dove AzureAppResourceName è il nome della risorsa di Azure App denominata nel passaggio 4). Ad esempio, se il nome è **fbconnector**, andare a `https://fbconnector.azurewebsites.net` . La Home page dell'app avrà lo stesso aspetto della schermata seguente:
 
    ![Accedere all'applicazione Web del connettore](../media/FBCimage41.png)
 
 2. Fare clic su **Configura** per visualizzare una pagina di accesso.
- 
+
    ![Fare clic su Configura per visualizzare una pagina di accesso](../media/FBCimage42.png)
 
 3. Nella casella ID tenant digitare o incollare l'ID tenant (ottenuto nel passaggio 2). Nella casella password digitare o incollare il APISecretKey (ottenuto nel passaggio 2), quindi fare clic su **imposta impostazioni di configurazione** per visualizzare la pagina dettagli di configurazione.
 
     ![Accedere con l'ID e la password del tenant e passare alla pagina dei dettagli di configurazione](../media/FBCimage43.png)
 
-4. Immettere le impostazioni di configurazione seguenti 
+4. Immettere le impostazioni di configurazione seguenti
 
    - **ID applicazione Facebook:** ID app per l'applicazione Facebook ottenuta al passaggio 3.
-   
+
    - **Segreto dell'applicazione Facebook:** Il segreto dell'app per l'applicazione Facebook ottenuta al passaggio 3.
-   
+
    - I **webhook di Facebook verificano il token:** Il token di verifica creato nel passaggio 3.
-   
+
    - **ID applicazione AAD:** ID applicazione per l'app Azure Active Directory creata al passaggio 1.
-   
+
    - **Segreto dell'applicazione AAD:** Il valore del segreto di APISecretKey creato nel passaggio 1.
 
 5. Fare clic su **Salva** per salvare le impostazioni del connettore.
@@ -197,18 +196,18 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
 4. Nella pagina **condizioni del servizio** fare clic su **Accetto**.
 
-5.  Nella pagina **Aggiungi credenziali per l'app del connettore** , immettere le informazioni seguenti e quindi fare clic su **convalida connessione**.
+5. Nella pagina **Aggiungi credenziali per l'app del connettore** , immettere le informazioni seguenti e quindi fare clic su **convalida connessione**.
 
-    ![Immettere le credenziali delle app del connettore](../media/TCimage38.png)
+   ![Immettere le credenziali delle app del connettore](../media/TCimage38.png)
 
-    - Nella casella **nome** Digitare un nome per il connettore, ad esempio pagina di **notizie di Facebook**.
-    
-    - Nella casella **URL di connessione** Digitare o incollare l'URL del servizio app di Azure; ad esempio `https://fbconnector.azurewebsites.net`.
-    
-    - Nella casella **password** Digitare o incollare il valore dell'APISecretKey aggiunto nel passaggio 2.
-    
-    - Nella casella **ID app di Azure** Digitare o incollare il valore dell'ID applicazione (client) denominato anche ID dell'applicazione AAD creato nel passaggio 1.
- 
+   - Nella casella **nome** Digitare un nome per il connettore, ad esempio pagina di **notizie di Facebook**.
+
+   - Nella casella **URL di connessione** Digitare o incollare l'URL del servizio app di Azure; ad esempio `https://fbconnector.azurewebsites.net` .
+
+   - Nella casella **password** Digitare o incollare il valore dell'APISecretKey aggiunto nel passaggio 2.
+
+   - Nella casella **ID app di Azure** Digitare o incollare il valore dell'ID applicazione (client) denominato anche ID dell'applicazione AAD creato nel passaggio 1.
+
 6. Dopo aver convalidato correttamente la connessione, fare clic su **Avanti**.
 
 7. Nella pagina **autorizza Microsoft 365 per importare i dati** , digitare o incollare di nuovo APISecretKey e quindi fare clic su **login Web App**.
@@ -219,7 +218,7 @@ Questo articolo contiene il processo dettagliato per la distribuzione di un conn
 
 9. Viene visualizzato un elenco delle pagine business gestite dall'account di Facebook in cui è stato effettuato l'accesso. Selezionare la pagina da archiviare e quindi fare clic su **Avanti**.
 
-    ![Selezionare la pagina aziendale dell'organizzazione che si desidera archiviare](../media/FBCimage52.png)
+   ![Selezionare la pagina aziendale dell'organizzazione che si desidera archiviare](../media/FBCimage52.png)
 
 10. Fare clic su **continua** per uscire dal programma di installazione dell'app del servizio connettore.
 

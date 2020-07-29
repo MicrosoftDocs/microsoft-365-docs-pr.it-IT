@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 542dce4d2abe9a40fcc5eef57502be5c37a34d57
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: f34c4e0aad2413fdeb082c37f980e6e4548db6b3
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389846"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430376"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
@@ -194,7 +194,8 @@ Per configurare queste impostazioni, vedere [configurare i criteri per i collega
 
 |Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---|---|---|---|
-|**Utilizzare collegamenti sicuri in: applicazioni di Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Usare i collegamenti sicuri di ATP nelle app di Office 365, Office per iOS e Android.|
+|**Utilizzare collegamenti sicuri in: applicazioni di Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Usare i collegamenti sicuri di ATP nei client desktop e mobili (iOS e Android) di Office 365.|
+|**Utilizzare collegamenti sicuri in: Office Web Access Companions** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Usare i collegamenti sicuri di ATP in Office Web Apps.|
 |**Non monitorare quando gli utenti fanno clic su collegamenti sicuri** <br/><br/> _TrackClicks_|Off <br/><br/> `$true`|Off <br/><br/> `$true`||
 |**Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale** <br/><br/> _AllowClickThrough_|Attivato <br/><br/> `$false`|Attivato <br/><br/> `$false`||
 |

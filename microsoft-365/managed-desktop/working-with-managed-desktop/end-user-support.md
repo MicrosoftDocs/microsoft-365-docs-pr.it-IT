@@ -1,17 +1,17 @@
 ---
 title: Ottenere supporto per Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327893"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430436"
 ---
 # <a name="getting-help-for-end-users"></a>Ottenere assistenza per gli utenti finali
 
@@ -37,7 +37,7 @@ Affinché gli utenti finali siano in grado di ottenere assistenza tramite l'app,
 - Il dispositivo deve essere registrato con Microsoft Managed Desktop utilizzando uno dei metodi disponibili in [set up Microsoft Managed Desktop Devices](../get-started/set-up-devices.md), ad esempio, [registrare i nuovi dispositivi manualmente](../get-started/register-devices-self.md).
 - La lingua di visualizzazione per il dispositivo deve essere impostata su una qualsiasi delle impostazioni locali in lingua inglese: en-US, en-GB, en-au, en-NZ o en-ca.
 - L'app Get Help dovrebbe essere aggiornata. Per confermare questa operazione, verificare la disponibilità di aggiornamenti delle app in Microsoft Store.
-- Alcuni [endpoint](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) devono essere accessibili dal dispositivo.
+- Alcuni [endpoint](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) devono essere accessibili dal dispositivo.
 
 > [!NOTE]
 > L'app Get Help può richiedere fino a un'ora dopo che un dispositivo è stato distribuito per funzionare completamente.

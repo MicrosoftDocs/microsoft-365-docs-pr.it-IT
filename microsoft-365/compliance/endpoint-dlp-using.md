@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: c65b1f7ed97fc0400d88eecadfa2081a940bac41
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 38300769a4d6d3a4093fe403e79f5b13e71f2c1c
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199962"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430244"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Uso della prevenzione della perdita di dati degli endpoint (anteprima)
 
@@ -108,15 +108,14 @@ Per questi scenari è necessario aver già eseguito l'onboarding di dispositivi,
 3. Per questo scenario, scegliere **Privacy** e poi **Informazioni personali (USA)**, quindi sceg **Avanti**.
 4. Impostare il campo **Stato** in posizione di disattivato per tutte le posizioni tranne **Dispositivi**. Scegliere **Avanti**.
 5. Accettare la selezione **Rivedere e personalizzare le impostazioni predefinite dal modello** e scegliere **Avanti**.
-6. Accettare le selezioni predefinite **Rileva quando questo contenuto viene condiviso** e **Con persone esterne all'organizzazione** e scegliere **Avanti**.
-7. Accettare i valori predefiniti per le **Azioni di protezione** e scegliere **Avanti**.
-8. Selezionare **Controlla o limita le attività nei dispositivi Windows** e uscire dalle azioni impostate su **Solo controllo**. Scegliere **Avanti**.
-9. Accettare il valore predefinito **Vorrei prima testarli** e scegliere **Mostra i suggerimenti per i criteri in modalità di test**. Scegliere **Avanti**.
-10. Rivedere le impostazioni e scegliere **Invia**.
-11. Il nuovo criterio DLP verrà visualizzato nell'elenco dei criteri.
-12. Controllare i dati degli endpoint monitorati in Esplora attività. Impostare il filtro della posizione per i dispositivi e aggiungere il criterio, quindi filtrare in base al nome del criterio per vederne l'impatto. Se necessario, vedere [Introduzione a Esplora attività](data-classification-activity-explorer.md).
-13. Provare a condividere con un utente esterno all'organizzazione un test con contenuto che attiverà la condizione Informazioni personali (USA). Questo dovrebbe attivare il criterio.
-14. Controllare l'evento in Esplora attività.
+6. Accettare i valori predefiniti per le **Azioni di protezione** e scegliere **Avanti**.
+7. Selezionare **Controlla o limita le attività nei dispositivi Windows** e uscire dalle azioni impostate su **Solo controllo**. Scegliere **Avanti**.
+8. Accettare il valore predefinito **Vorrei prima testarli** e scegliere **Mostra i suggerimenti per i criteri in modalità di test**. Scegliere **Avanti**.
+9. Rivedere le impostazioni e scegliere **Invia**.
+10. Il nuovo criterio DLP verrà visualizzato nell'elenco dei criteri.
+11. Controllare i dati degli endpoint monitorati in Esplora attività. Impostare il filtro della posizione per i dispositivi e aggiungere il criterio, quindi filtrare in base al nome del criterio per vederne l'impatto. Se necessario, vedere [Introduzione a Esplora attività](data-classification-activity-explorer.md).
+12. Provare a condividere con un utente esterno all'organizzazione un test con contenuto che attiverà la condizione Informazioni personali (USA). Questo dovrebbe attivare il criterio.
+13. Controllare l'evento in Esplora attività.
 
 ### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Scenario 2: Modificare il criterio esistente, impostare un avviso
 

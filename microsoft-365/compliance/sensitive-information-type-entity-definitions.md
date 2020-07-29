@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 5bccbd73806a261cdbd795f200b6b459b536a97e
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: 9e1b1261bbb58b1ca65818a5ad304ee186561ae6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084135"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430519"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -370,30 +370,19 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
 - La funzione Func_australian_medical_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_Australia_Medical_Account_Number.
 - Il checksum ha esito positivo.
 
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_australian_medical_account_number restituisce contenuti che corrispondono al modello.
-- Il checksum ha esito positivo.
 
 ```xml
   <!-- Australia Medical Account Number -->
 <Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
-    <Pattern confidenceLevel="95">
+    <Pattern confidenceLevel="85">
      <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="1">
      <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
-<Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="0" maxMatches="0">
-  <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
+    </Pattern>
 </Entity>
 ```
 
@@ -11796,6 +11785,10 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - Viene trovata una parola chiave da Keyword_taiwanese_national_id.
 - Il checksum ha esito positivo.
 
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione Func_taiwanese_national_id restituisce contenuti che corrispondono al modello.
+- Il checksum ha esito positivo.
+
 ```xml
 <!-- Taiwanese National ID -->
 <Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
@@ -11803,6 +11796,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
           <IdMatch idRef="Func_taiwanese_national_id" />
           <Match idRef="Keyword_taiwanese_national_id" />
       </Pattern>
+       <Pattern confidenceLevel="75">
+         <IdMatch idRef="Func_taiwanese_national_id" />
+       </Pattern>
 </Entity>
 ```
 

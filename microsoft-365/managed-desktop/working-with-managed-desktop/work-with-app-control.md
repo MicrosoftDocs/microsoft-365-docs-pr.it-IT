@@ -1,5 +1,5 @@
 ---
-title: Utilizzo del controllo app
+title: Usare il controllo delle applicazioni
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 74cd1ec93058ed733e7d79da2d6932f04acfa5da
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170719"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430448"
 ---
-# <a name="work-with-app-control"></a>Utilizzo del controllo app
+# <a name="work-with-app-control"></a>Usare il controllo delle applicazioni
 
 Una volta che il controllo app è stato distribuito nell'ambiente in uso, sia le operazioni di Microsoft Managed Desktop che quelle gestite hanno responsabilità continuative. Ad esempio, è possibile aggiungere una nuova app nell'ambiente o aggiungere (o rimuovere) un firmatario attendibile. Per migliorare la sicurezza, tutte le app devono essere firmate con codice prima di rilasciarle agli utenti finali. I dettagli dell'editore di un'app includono informazioni sul firmatario.
 
@@ -50,12 +50,12 @@ Quando si apre una richiesta del firmatario, è necessario prima fornire alcuni 
 Le operazioni distribuiranno progressivamente i criteri ai gruppi di distribuzione seguendo la seguente pianificazione:
 
 
-|Gruppo di distribuzione  |Tipo di criterio  |Tempistiche  |
+|Guida alla distribuzione  |Tipo di criterio  |Tempistiche  |
 |---------|---------|---------|
 |Test     |  Audit       |  Giorno 0       |
 |Prima     | Enforced        | Giorno 1        |
-|Veloce     | Enforced        |  Giorno 3       |
-|Ampio     | Enforced        |  Giorno 7       |
+|Veloce     | Enforced        |  Giorno 2       |
+|Ampio     | Enforced        |  Giorno 3       |
 
 
 È possibile sospendere o eseguire il rollback della distribuzione in qualsiasi momento durante l'implementazione. A tale scopo, aprire un'altra richiesta di servizio con le operazioni.

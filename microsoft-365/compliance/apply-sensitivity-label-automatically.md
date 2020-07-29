@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 92811aff70e48992088abf221536684dcff794b8
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189511"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503027"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -74,7 +74,7 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
 Nella tabella seguente sono riportate le differenze di comportamento tra i due metodi complementari di etichettatura automatica:
 
 |Funzionalità o comportamento|Impostazione di etichettatura: Applicazione di etichette automatica per le app di Office |Criterio: Etichettatura automatica|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|
 |Dipendenza dall'app|[Sì](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
 |Limitazione in base alla posizione|No |Sì |
 |Condizioni: Classificatori sottoponibili a training|Sì |No |

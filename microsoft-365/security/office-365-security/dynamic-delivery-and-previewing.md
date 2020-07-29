@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile scegliere recapito dinamico per evitare ritardi nei messaggi e consentire agli utenti di visualizzare in anteprima gli allegati analizzati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819353"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430352"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Recapito dinamico e visualizzazione in anteprima con gli allegati sicuri di ATP
 
@@ -68,20 +68,20 @@ Si supponga che un'organizzazione stia utilizzando il recapito dinamico per il [
 
 ## <a name="additional-considerations"></a>Considerazioni aggiuntive
 
-Esistono alcuni scenari in cui il recapito dinamico non è supportato. Tra le caratteristiche vi sono le seguenti:
+Esistono alcuni scenari in cui gli allegati sicuri (tra cui il recapito dinamico non è supportato). Ad esempio:
 
-- Messaggi di posta elettronica presenti nelle cartelle pubbliche
+- Messaggi di posta elettronica presenti nelle cartelle pubbliche.
 
-- Messaggi di posta elettronica instradati fuori e quindi di nuovo nella cassetta postale dell'utente utilizzando regole personalizzate
+- Messaggi di posta elettronica che vengono instradati fuori e quindi di nuovo nella cassetta postale dell'utente utilizzando regole personalizzate.
 
-- Messaggi di posta elettronica spostati (automaticamente o manualmente) dalla cassetta postale ospitata e in altre posizioni, incluse le cartelle di archiviazione
+- Messaggi di posta elettronica spostati (automaticamente o manualmente) dalla cassetta postale ospitata e in altre posizioni, incluse le cartelle di archiviazione.
 
-- Messaggi di posta elettronica eliminati
+- Messaggi di posta elettronica eliminati.
 
-- Cartella di ricerca della cassetta postale di un utente che si trova in uno stato di errore
+- Cartella di ricerca della cassetta postale di un utente che si trova in uno stato di errore.
 
-- Ambienti in cui un amministratore di Exchange Online ha abilitato l'utente esclamativo. Per risolvere il caso, vedere [i messaggi con allegati non vengono recapitati quando viene utilizzato il recapito dinamico e l'esclamatore ATP](https://support.microsoft.com/help/4014438)
+- Ambienti in cui un amministratore di Exchange Online ha abilitato l'utente esclamativo. Per risolvere il caso, vedere [i messaggi con allegati non vengono recapitati quando viene utilizzato il recapito dinamico ATP e l'esclamo](https://support.microsoft.com/help/4014438).
 
-- Messaggi crittografati con [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
+- Messaggi crittografati con [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md)).
 
-- Nei casi in cui il recapito dinamico non è supportato, gli allegati sicuri di ATP non analizzeranno i messaggi di posta elettronica. Tuttavia, la distribuzione dei messaggi di posta elettronica con allegati che contengono URL verrà controllata, a seconda del modo in cui sono configurati i [criteri collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) . In questi casi, vengono controllati gli URL nei messaggi di posta elettronica e nei file di Office.
+- Nei casi in cui il recapito dinamico non è supportato, gli allegati sicuri non analizzeranno i messaggi di posta elettronica. Tuttavia, la distribuzione dei messaggi di posta elettronica con allegati che contengono URL verrà controllata, a seconda del modo in cui sono configurati i [criteri collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md) . In questi casi, vengono controllati gli URL nei messaggi di posta elettronica e nei file di Office.

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 5ba6f86ca44fbddf5fb603c5312c9fedebfad225
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127313"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502927"
 ---
 # <a name="supervision-policies"></a>Criteri di supervisione
 
@@ -286,14 +286,6 @@ Di seguito viene indicata una scomposizione dei valori visualizzati nella colonn
 ## <a name="audit"></a>Audit
 
 In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Tali informazioni possono essere un riepilogo di tutte le attività di supervisione associate a un criterio definito o in qualsiasi momento in cui vengono modificati i criteri di supervisione. I criteri di supervisione sono basati su percorsi di controllo integrati per una completa preparazione per i controlli interni o esterni. La cronologia di controllo dettagliata di tutte le azioni monitorate dai criteri di supervisione fornisce la prova delle procedure di supervisione.
-
-Le attività dei criteri di supervisione seguenti sono controllate e disponibili nei registri di controllo unificato:
-
-|**Attività**|**Comandi associati**|
-|:-----|:-----|
-| **Creare un criterio** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
-| **Modificare un criterio** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
-| **Eliminare un criterio** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
 Visualizzare le attività di controllo nel log di controllo unificato o con il cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 

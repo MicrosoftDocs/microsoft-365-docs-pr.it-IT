@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i report sul flusso di posta elettronica nel centro sicurezza & Compliance
+title: Visualizzare i report sul flusso di posta nel Centro sicurezza e conformità
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i rapporti sulla sicurezza del flusso di posta per l'organizzazione. I report del flusso di posta sono disponibili nel centro sicurezza & conformità.
 ms.custom: ''
-ms.openlocfilehash: 70c96bb4f43edb80f98fdc98aa173fed9e54e7d7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937179"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434180"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Visualizzare i report sul flusso di posta elettronica nel centro sicurezza & Compliance
+# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Visualizzare i report sul flusso di posta nel Centro sicurezza e conformità
 
 Oltre alle informazioni sul [flusso di posta](mail-flow-insights-v2.md) disponibili nel centro sicurezza & conformità, sono disponibili una serie di rapporti sul flusso di posta per facilitare il monitoraggio dell'organizzazione Microsoft 365. Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare i report nel centro sicurezza & Compliance <https://office.protection.com> accedendo al dashboard **report** \> **Dashboard**. Per accedere direttamente al dashboard dei report, aprire <https://office.protection.office.com/insightdashboard> .
 
@@ -237,7 +237,7 @@ Il grafico è organizzato in base ai valori del **tipo** .
 La tabella dati contiene le informazioni seguenti:
 
 - **Direzione**
-- **Tipo**
+- **Type**
 - **24 ore**
 - **3 giorni**
 - **7 giorni**
@@ -310,7 +310,7 @@ Nella visualizzazione report sono disponibili i grafici seguenti:
 
   ![Visualizzazione direzione nel rapporto posta elettronica inviata e ricevuta](../../media/sent-and-received-email-report-direction-view.png)
 
-- **Drill-down** \> **Malware (anti-malware)**: questa opzione consente di eseguire il [rilevamento di malware nel rapporto di posta elettronica](view-email-security-reports.md#malware-detection-in-email-report).
+- **Drill-down** \> **Malware (anti-malware)**: questa selezione consente di rilevare i [rilevamenti di malware nel rapporto di posta elettronica](view-email-security-reports.md#malware-detections-in-email-report).
 
 - **Drill-down** \> **Rilevamenti di posta indesiderata)**: questa selezione porta al [rapporto rilevamento posta indesiderata](view-email-security-reports.md#spam-detections-report).
 
@@ -327,7 +327,7 @@ Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 Se si fa clic su **Visualizza tabella dettagli** nella visualizzazione **scomposizione per: direzione** o **scomposizione per: direzione** , vengono visualizzate le informazioni seguenti:
 
 - **Data (UTC)**
-- **Tipo**
+- **Type**
 - **Direzione**
 - **Numero di messaggi**
 

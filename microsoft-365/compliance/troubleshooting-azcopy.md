@@ -19,12 +19,12 @@ description: Risoluzione dei problemi relativi agli errori di AzCopy di Azure du
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 0185c179039b7aec72bc400709225ef42489f620
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: caec3011c89e027f1b78991a3dad842ff4b8c8aa
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819146"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434279"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Risoluzione dei problemi relativi a AzCopy in Advanced eDiscovery
 
@@ -42,7 +42,7 @@ A questo punto, è necessario utilizzare AzCopy v 8.1 per caricare i dati non Mi
 
 Se AzCopy non è installato oppure è installato in un percorso diverso da quello predefinito (ovvero `%ProgramFiles(x86)%` ), quando si esegue il comando AzCopy è possibile che venga visualizzato il messaggio di errore seguente:
 
-    The system cannot find the path specified.
+> Il sistema non è in grado di trovare il percorso specificato.
 
 Se AzCopy non è installato nel computer locale, è possibile trovare informazioni sull'installazione in [trasferimento dati con AzCopy v 8.1 in Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Assicurarsi di installarlo nel percorso predefinito.
 

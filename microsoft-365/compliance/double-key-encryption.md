@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: d9ed155576d69889e53e4e4d1ce03e4233fd08ff
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.openlocfilehash: 7f54832001f80418ffb09bc45da8f32c79f3df53
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387443"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503037"
 ---
 # <a name="double-key-encryption-dke"></a>Crittografia a chiave doppia (DKE)
 
@@ -33,9 +33,11 @@ La crittografia a chiave doppia supporta sia le distribuzioni cloud che quelle l
 
 Per ulteriori informazioni sulle chiavi radice tenant basate su cloud predefinite, vedere [Planning and implementing your Azure Information Protection tenant Key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
-Nel video seguente viene illustrato il funzionamento della crittografia a chiave doppia per proteggere il contenuto.
+<!--
+The following video shows how Double Key Encryption works to secure your content.
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
+-->
 
 Se le organizzazioni hanno uno dei requisiti seguenti, è possibile utilizzare DKE per proteggere il contenuto:
 
@@ -45,7 +47,7 @@ Se le organizzazioni hanno uno dei requisiti seguenti, è possibile utilizzare D
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Requisiti di sistema e licenze per DKE
 
-Crittografia a chiave doppia per Microsoft 365 parte di Microsoft 365 E5 e Office 365 E5. Se non si dispone di una licenza Microsoft 365 E5, è possibile iscriversi per una [versione di valutazione](https://aka.ms/M365E5ComplianceTrial). Per ulteriori informazioni su queste licenze, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+La crittografia a chiave doppia per Microsoft 365 è disponibile con Microsoft 365 E5 e Office 365 E5. Se non si dispone di una licenza Microsoft 365 E5, è possibile iscriversi per una [versione di valutazione](https://aka.ms/M365E5ComplianceTrial). Per ulteriori informazioni su queste licenze, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Office Insider** Per utilizzare l'anteprima pubblica, è necessario essere membri del programma Office Insider. Per partecipare a Office Insider, accedere a [https://insider.office.com](https://insider.office.com) . Una volta che si è membri, preparare l'ambiente per la distribuzione di Office Insider Builds scegliendo il metodo di distribuzione appropriato per la propria organizzazione. Per istruzioni, vedere [Guida introduttiva alla distribuzione di Office Insider Builds](https://insider.office.com/business/deploy).
 
@@ -69,7 +71,7 @@ In questo articolo sono incluse istruzioni dettagliate su come distribuire il se
 
 Questo articolo e il video sulla distribuzione utilizzano Azure come destinazione di distribuzione per il servizio DKE. Se si esegue la distribuzione in un'altra posizione, è necessario fornire i propri valori.
 
-Guardare il [video sulla distribuzione di crittografia a chiave doppia](https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e) per visualizzare la panoramica dettagliata dei concetti nell'articolo. Il video richiede circa 18 minuti per il completamento.
+Guardare il [video sulla distribuzione di crittografia a chiave doppia](https://youtu.be/vDWfHN_kygg) per visualizzare la panoramica dettagliata dei concetti nell'articolo. Il video richiede circa 18 minuti per il completamento.
 
 Seguire questi passaggi generali per configurare la crittografia a chiave doppia per l'organizzazione.
 
@@ -535,11 +537,9 @@ Tutte le etichette di DKE aggiunte verranno visualizzate per gli utenti nelle ve
 
 ### <a name="enable-dke-in-your-client"></a>Abilitare DKE nel client
 
-Se le etichette di DKE non vengono visualizzate sotto la barra multifunzione di sensitivity in Microsoft Office, il client potrebbe non essere abilitato a DKE.
-
 Abilitare DKE per il client aggiungendo le seguenti chiavi del registro di sistema:
 
-```ini
+```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
     "DoubleKeyProtection"=dword:00000001
 

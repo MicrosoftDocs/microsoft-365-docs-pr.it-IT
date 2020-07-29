@@ -2,7 +2,7 @@
 title: Collaborare con gli utenti guest in un team
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione con gli utenti in teams.
-ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 2a412502af16ff95bf0f1f912ac57d00eb1d382a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371499"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430388"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
@@ -82,7 +82,7 @@ Teams utilizza i gruppi di Microsoft 365 per l'appartenenza al team. È necessar
 Per impostare Microsoft 365 groups Guest Settings
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento a sinistra, espandere **Impostazioni**.
-2. Fare clic su **servizi & componenti**aggiuntivi.
+2. Fare clic su **Impostazioni organizzazione**.
 3. Nell'elenco, fare clic su **gruppi Microsoft 365**.
 4. Verificare che i membri del gruppo Consenti al di **fuori dell'organizzazione accedano al contenuto del gruppo** e che i proprietari del **gruppo aggiungano persone all'esterno dell'organizzazione ai gruppi di caselle di** controllo siano entrambe controllate.
 5. Se sono state apportate modifiche, fare clic su **Salva modifiche**.

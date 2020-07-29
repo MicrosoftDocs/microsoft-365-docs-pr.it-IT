@@ -19,16 +19,16 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni sul modo in cui SharePoint Online rileva i virus nei file che gli utenti caricano e impediscono agli utenti di scaricare o sincronizzare i file.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60d696769ea402e6e2d0e52a1f6633e7962b8329
-ms.sourcegitcommit: f2275d2fbc17a8b5b5da723c7353d3f36c6fb2a7
+ms.openlocfilehash: f6bfc23ca4120122ecfa44ad4d39795fed22af84
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45029609"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429921"
 ---
-# <a name="virus-detection-in-sharepoint-online"></a>Rilevamento dei virus in SharePoint Online
+# <a name="virus-detection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Rilevamento di virus in SharePoint Online, OneDrive e Microsoft Teams
 
-Microsoft 365 può aiutare a proteggere l'ambiente da malware, individuando i virus nei file caricati dagli utenti in SharePoint Online. I file possono essere analizzati per i virus dopo che sono stati caricati. Se si trova un file infetto, viene impostata una proprietà in modo che gli utenti non possano scaricare o sincronizzare il file.
+Microsoft 365 può aiutare a proteggere l'ambiente da malware, individuando i virus nei file caricati dagli utenti in SharePoint Online, OneDrive e Microsoft teams. I file possono essere analizzati per i virus dopo che sono stati caricati. Se si trova un file infetto, viene impostata una proprietà in modo che gli utenti non possano scaricare o sincronizzare il file.
 
 > [!IMPORTANT]
 > Queste funzionalità antivirus in SharePoint Online sono un modo per contenere virus. Non sono intese come un singolo punto di difesa contro il malware per l'ambiente. Si consiglia a tutti i clienti di valutare e implementare la protezione antimalware in vari livelli e applicare le procedure consigliate per la protezione dell'infrastruttura aziendale. Per ulteriori informazioni sulle strategie e sulle procedure consigliate, vedere [Security roadmap](security-roadmap.md).
@@ -58,13 +58,20 @@ Ecco cosa succede:
 2. All'utente viene fornito un avviso che è stato rilevato un virus. All'utente viene data la possibilità di scaricare il file e tentare di pulirlo usando il proprio software antivirus.
 
 > [!NOTE]
+> 
 > È possibile utilizzare il parametro *DisallowInfectedFileDownload* nel cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) in SharePoint Online PowerShell per impedire agli utenti di scaricare un file infetto, anche nella finestra di avviso antivirus.
+> 
+> Tenere presente, inoltre, che non appena si Abilita il parametro *DisallowInfectedFileDownload* , l'accesso ai file rilevati/bloccati è completamente bloccato per gli utenti e gli amministratori.
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>Cosa succede quando il client di sincronizzazione di OneDrive tenta di sincronizzare un file infetto?
 
 Se gli utenti sincronizzano i file con il nuovo client di sincronizzazione di OneDrive (OneDrive.exe) o con il client di sincronizzazione di OneDrive for business precedente (Groove.exe), se un file contiene un virus, il client di sincronizzazione non lo scaricherà. Il client di sincronizzazione visualizzerà una notifica che non è possibile sincronizzare il file.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="extended-capabilities-with-office-365-atp"></a>Funzionalità estese con Office 365 ATP
+
+I clienti che hanno abilitato Office 365 ATP per SharePoint, OneDrive e Microsoft teams [attivano ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md) sono in grado di utilizzare il centro sicurezza & Compliance per gestire i file in quarantena per i rilevamenti AV e ATP. [Solo ATP: utilizzare il Centro sicurezza & Compliance per gestire i file in quarantena](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files).
+
+## <a name="more-information"></a>Ulteriori informazioni
 
 Vedere [protezione dalle minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide#requirements) e [attivazione di ATP per SharePoint, OneDrive e Microsoft teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-worldwide) per ulteriori informazioni su come configurare il programma antivirus di SharePoint Online.
 

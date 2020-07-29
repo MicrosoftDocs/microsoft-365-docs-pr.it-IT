@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione.
-ms.openlocfilehash: 527d7519ff9f20b4d7cf5a02cec6b0704802f8dc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 542b540bb06998c1b90ef74485a4096ebc9ee0dc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818731"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429932"
 ---
 # <a name="message-encryption"></a>Crittografia dei messaggi
 
@@ -60,7 +60,7 @@ Per ulteriori informazioni sui limiti di dimensione per i messaggi e gli allegat
 
 La crittografia avanzata dei messaggi di Office 365 consente di creare modelli di branding multipli, in modo da poter ottimizzare il controllo della posta dei destinatari e creare esperienze personalizzate di branding per supportare una struttura organizzativa diversificata.
 
-La crittografia avanzata dei messaggi in Microsoft 365 consente di soddisfare gli obblighi di conformità che richiedono un controllo più flessibile sull'accesso dei destinatari esterni ai messaggi di posta elettronica crittografati. Con la crittografia avanzata dei messaggi in Office 365, in qualità di amministratore, è possibile controllare i messaggi di posta elettronica riservati condivisi all'esterno dell'organizzazione con criteri automatici che consentono di rilevare tipi di informazioni riservate (ad esempio, ID di integrità, finanziario o sanitario) o parole chiave per migliorare la protezione, in scadenza l'accesso tramite un portale web sicuro ai messaggi di posta Inoltre, come amministratore è possibile controllare ulteriormente i messaggi di posta elettronica crittografati accessibili esternamente tramite un portale Web di Microsoft 365, revocando l'accesso a un messaggio di posta elettronica in qualsiasi momento.
+La crittografia avanzata dei messaggi in Microsoft 365 consente di soddisfare gli obblighi di conformità che richiedono un controllo più flessibile sull'accesso dei destinatari esterni ai messaggi di posta elettronica crittografati. Con la crittografia avanzata dei messaggi in Office 365, in qualità di amministratore, è possibile controllare i messaggi di posta elettronica riservati condivisi all'esterno dell'organizzazione con criteri automatici che individuano tipi di informazioni riservate (ad esempio, PII, finanziari o ID di integrità) o parole chiave per migliorare la protezione mediante l'accesso tramite un portale web sicuro ai messaggi di posta elettronica crittografati. Come amministratore è possibile controllare ulteriormente i messaggi di posta elettronica crittografati accessibili tramite un portale Web di Microsoft 365, revocando l'accesso a un messaggio di posta elettronica in qualsiasi momento.
 
 La revoca dei messaggi e la scadenza funzionano solo per i messaggi di posta elettronica inviati dagli utenti ai destinatari esterni all'organizzazione. Inoltre, i destinatari devono accedere al messaggio di posta elettronica tramite il portale Web. Per assicurarsi che il destinatario utilizzi il portale per la ricezione della posta elettronica, è necessario configurare un modello di personalizzazione personalizzato che applica il wrapper. Viene quindi applicato il modello di personalizzazione in una regola del flusso di posta. Per ulteriori informazioni sulla crittografia avanzata dei messaggi, vedere [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
 

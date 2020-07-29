@@ -14,14 +14,16 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Informazioni su come attivare e gestire app di terze parti nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402583"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429991"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni delle app di terze parti per l'organizzazione
+
+È possibile gestire le licenze e la fatturazione per le app di terze parti nel nuovo interfaccia di amministrazione di Microsoft 365. Le funzionalità aggiornate includono la gestione avanzata degli abbonamenti, l'accesso migliorato alle informazioni sulla fatturazione e una maggiore flessibilità per la gestione delle fatture. La gestione della sottoscrizione si basa sulla piattaforma di commercio aggiornata di Microsoft. Questo si applica alle app software-as-a-Service che i clienti acquistano direttamente o da un provider di terze parti.
 
 ::: moniker range="o365-21vianet"
 
@@ -31,6 +33,7 @@ ms.locfileid: "44402583"
 ::: moniker-end
 
 È possibile gestire le licenze e la fatturazione per le app di terze parti nell'interfaccia di amministrazione di Microsoft 365 con la modalità Anteprima attivata. Le funzionalità aggiornate includono la gestione avanzata degli abbonamenti, l'accesso migliorato alle informazioni sulla fatturazione e una maggiore flessibilità per la gestione delle fatture. La gestione della sottoscrizione si basa sulla piattaforma di commercio aggiornata di Microsoft. Questo si applica alle app software-as-a-Service che i clienti acquistano direttamente o da un provider di terze parti.
+
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Come ottenere le app software-come-a-Service
 
@@ -102,7 +105,7 @@ Gli amministratori possono modificare il numero di licenze possedute dalla propr
 2. Individuare e selezionare l'app che si desidera gestire.
 3. Selezionare **Cambia quantità di licenza**.
 
-## <a name="manage-payment-methods"></a>Gestire metodi di pagamento
+## <a name="manage-payment-methods"></a>Gestire i metodi di pagamento
 
 Le app software-come-a-Service dispongono ognuna di un profilo di fatturazione assegnato. I profili di fatturazione consentono di personalizzare i prodotti inclusi nella fattura e la modalità di pagamento delle fatture. Sono inclusi i seguenti:
 

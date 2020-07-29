@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi tramite posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 581c45c9c5b606b3b4b0ba91bd96740bc838629d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617231"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430424"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri per gli allegati sicuri ATP di Office 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "44617231"
 
 Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio documenti, presentazioni, fogli di calcolo e altro ancora. Non è sempre facile stabilire se un allegato è sicuro o dannoso solo guardando un messaggio di posta elettronica. E l'ultima cosa che si desidera è un allegato dannoso da superare, scatenando il caos per la propria organizzazione. Fortunatamente, [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) può essere di aiuto. È possibile configurare i criteri per gli [allegati sicuri di ATP](atp-safe-attachments.md) per garantire che l'organizzazione sia protetta dagli attacchi degli allegati di posta elettronica non sicuri.
 
-## <a name="what-to-do"></a>Operazione
+## <a name="what-to-do"></a>Procedura
 
 1. Esaminare i prerequisiti
 
@@ -81,7 +81,7 @@ Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio
 
    - Nella sezione **applicato a** scegliere **il dominio del destinatario**e quindi selezionare il dominio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
 
-6. Fare clic su **Salva**.
+6. Scegliere **Salva**.
 
 Valutare la possibilità di configurare più criteri per gli allegati sicuri ATP per l'organizzazione. Questi criteri verranno applicati nell'ordine in cui sono elencati nella pagina **allegati sicuri di ATP** . Dopo la definizione o la modifica di un criterio, consentire almeno 30 minuti affinché le polizie abbiano effetto nei datacenter Microsoft.
 
@@ -92,7 +92,7 @@ Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile sce
 ||||
 |---|---|---|
 |**Opzione**|**Effetto**|**Utilizzare se si desidera eseguire le operazioni seguenti:**|
-|**Off**|Non esegue l'analisi degli allegati per il malware  <br/> Non ritarda il recapito del messaggio|Disattivare l'analisi per scanner, fax o smart host che invieranno solo allegati noti e validi  <br/> Impedire inutili ritardi nella distribuzione della posta interna.  <br/> **Non è consigliabile utilizzare questa opzione per la maggior parte degli utenti. È consigliabile utilizzare questa opzione solo per disattivare l'analisi degli allegati sicuri di ATP per un piccolo gruppo di mittenti attendibili.**|
+|**Off**|Non esegue l'analisi degli allegati per il malware  <br/> Non ritarda il recapito del messaggio|Disattiva l'analisi per i destinatari selezionati.  <br/> Impedire inutili ritardi nella distribuzione della posta interna.  <br/> **Questa opzione non è consigliata per la maggior parte degli utenti. È consigliabile utilizzare questa opzione per disattivare l'analisi degli allegati sicuri di ATP per i destinatari che ricevono solo messaggi di posta elettronica provenienti da mittenti attendibili.**|
 |**Monitor**|Recapita messaggi con allegati e quindi tiene traccia di cosa accade con malware rilevato|Vedere dove il malware rilevato entra nell'organizzazione|
 |**Blocco**|Impedisce la proseguimento dei messaggi con allegati malware rilevati  <br/> Invia messaggi con malware rilevato per la [quarantena in Office 365 in](manage-quarantined-messages-and-files.md) cui un amministratore o un analista di sicurezza può rivedere e rilasciare (o eliminare) tali messaggi  <br/> Blocca automaticamente i messaggi e gli allegati futuri|Salvaguardare l'organizzazione da attacchi ripetuti con gli stessi allegati di malware|
 |**Sostituisce**|Rimuove gli allegati di malware rilevati  <br/> Notifica ai destinatari che gli allegati sono stati rimossi  <br/> Invia messaggi con malware rilevato per la [quarantena in Office 365 in](manage-quarantined-messages-and-files.md) cui un amministratore o un analista di sicurezza può rivedere e rilasciare (o eliminare) tali messaggi|Aumentare la visibilità ai destinatari che gli allegati sono stati rimossi a causa del malware rilevato|

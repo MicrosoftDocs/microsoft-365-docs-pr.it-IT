@@ -1,5 +1,5 @@
 ---
-title: Criteri di sicurezza preimpostati
+title: Preimpostare i criteri di sicurezza.
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come applicare le impostazioni dei criteri standard e rigorosi nelle caratteristiche di protezione di Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: 34445c617d2dda59a65b197db2f42324d0085ab3
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389873"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430400"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Criteri di sicurezza preimpostati in EOP e Office 365 ATP
 
@@ -88,9 +88,10 @@ Quando più criteri vengono applicati a un utente, l'ordine seguente viene appli
 
 1. Criteri di sicurezza preimpostati per la **protezione severi**
 2. Criteri di sicurezza predefiniti per la **protezione standard**
-3. Tutti gli altri criteri correlati.
+3. Criteri di sicurezza personalizzati
+4. Criteri di sicurezza predefiniti
 
-In altre parole, le impostazioni dei criteri di **protezione rigorosi** sovrascrivono le impostazioni dei criteri di **protezione standard** , che eseguono l'override delle impostazioni di tutti gli altri criteri correlati.
+In altre parole, le impostazioni dei criteri di **protezione rigorosi** sovrascrivono le impostazioni dei criteri di **protezione standard** , che eseguono l'override delle impostazioni di un criterio personalizzato, che sostituisce le impostazioni del criterio predefinito.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Assegnare criteri di sicurezza preimpostati agli utenti
 

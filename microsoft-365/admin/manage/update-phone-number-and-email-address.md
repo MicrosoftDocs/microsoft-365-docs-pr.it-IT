@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione. Se si desidera reimpostare la propria password di amministratore, sono necessarie queste informazioni.
-ms.openlocfilehash: bd8ee28cbc7982ea5b057fecb34d362557a5d5a9
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: ed7e8152ffdf05d94068e6bdb81697dee737ea01
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407921"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429955"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 
@@ -41,13 +41,13 @@ Per sapere come cambiare le informazioni del profilo dell'organizzazione, ad ese
   
 ## <a name="to-update-your-name-phone-number-and-email-address"></a>Per aggiornare il proprio nome, numero di telefono e indirizzo di posta elettronica
 
-Usare la pagina **Informazioni personali** per cambiare il proprio nome, numero di cellulare e indirizzo di posta elettronica alternativo. L'indirizzo di posta elettronica alternativo viene utilizzato per le notifiche importanti, come la reimpostazione della password di amministratore (non la password di amministratore del computer). 
+Utilizzare la pagina **Impostazioni e privacy** per modificare il nome, il numero di telefono cellulare e l'indirizzo di posta elettronica alternativo. L'indirizzo di posta elettronica alternativo viene utilizzato per le notifiche importanti, come la reimpostazione della password di amministratore (non la password di amministratore del computer). 
   
 1. Passare all'interfaccia di amministrazione di Microsoft 365.
 
-2. Nell'intestazione, seleziona l'icona del profilo \> **My account** \> **personale informazioni personali**dell'account.
+2. Nell'intestazione, selezionare l'icona del profilo \> **My account** \> **Settings and privacy**.
 
-3. Nella sezione **Dettagli contatto** selezionare modifica. Aggiornare il cellulare, il telefono e l'indirizzo di posta elettronica alternativo. Assicurarsi di usare qualcosa di diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.
+3. Nella sezione **Preferenze contatto** selezionare **Gestisci ed Espandi le preferenze di contatto**. Aggiornare il cellulare, il telefono e l'indirizzo di posta elettronica alternativo. Assicurarsi di usare qualcosa di diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.
 
     > [!IMPORTANT]
     > L'indirizzo di posta elettronica alternativo e il numero di cellulare sono necessari per reimpostare la password di amministratore (non la password di amministratore del computer).
