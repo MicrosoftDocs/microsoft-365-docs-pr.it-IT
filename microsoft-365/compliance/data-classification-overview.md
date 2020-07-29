@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: a9c7a275a0f3f2db7d931be5af77b00291cdad83
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: ca08f292bae70d121a3ef157a482a09590bd7ba1
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127221"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430329"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Conoscere i dati - Panoramica della classificazione dei dati
 
@@ -132,8 +132,8 @@ Il motivo della classificazione dei dati consiste nel fornire visibilità sul nu
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visualizzazione delle attività con etichette (anteprima)](data-classification-activity-explorer.md)
-- [Visualizzare il contenuto con etichetta (anteprima)](data-classification-content-explorer.md)
+- [Visualizzare le attività con etichette](data-classification-activity-explorer.md)
+- [Visualizzare il contenuto con etichetta](data-classification-content-explorer.md)
 - [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
 - [Informazioni sui criteri e sulle etichette di conservazione](retention.md)
 - [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md)
