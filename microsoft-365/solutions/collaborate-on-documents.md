@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: In questo articolo vengono fornite informazioni su come collaborare con gli utenti di un documento in SharePoint e OneDrive.
-ms.openlocfilehash: 82b9d6356144d6d465c7c94f58ec60fe96a1397a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: cb3c527304f0d286b4a1a0147d07537b0fae4eda
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159992"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527919"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborare con gli utenti guest a un documento
 
@@ -42,7 +43,7 @@ Controllare le impostazioni delle relazioni organizzative per garantire che la c
 
 Per impostare le impostazioni delle relazioni organizzative
 
-1. Accedere a Microsoft Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com).
+1. Accedere a Microsoft Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
 2. Nel riquadro di spostamento a sinistra, fare clic su **Azure Active Directory**.
 3. Nel riquadro **Panoramica** fare clic su **relazioni organizzative**.
 4. Nel riquadro **relazioni organizzative** fare clic su **Impostazioni**.

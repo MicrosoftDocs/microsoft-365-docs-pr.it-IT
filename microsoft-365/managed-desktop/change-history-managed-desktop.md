@@ -5,21 +5,40 @@ keywords: cronologia modifiche
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+ms.topic: article
+audience: ITPro
+manager: laurawi
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
-ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
+ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45107600"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528037"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
 In questo articolo vengono elencati gli articoli nuovi e aggiornati della [documentazione di Microsoft Managed Desktop](index.yml). Gli articoli "aggiornati" sono quelli che hanno avuto aggiunte o correzioni materiali: correzioni secondarie come la correzione di errori di battitura, stile o formattazione non sono presenti nell'elenco. È sempre possibile visualizzare la cronologia dei commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repo su GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## <a name="july-2020"></a>Luglio 2020
+Articolo nuovo o modificato | Descrizione
+--- | ---
+[Requisiti per le app di Microsoft Managed Desktop](service-description/mmd-app-requirements.md) | Articolo aggiornato
+[Conformità](intro/compliance.md) | Articolo aggiornato
+[Introduzione al controllo delle applicazioni](get-started/get-started-app-control.md) | Articolo aggiornato
+[Usare il controllo delle applicazioni](working-with-managed-desktop/work-with-app-control.md) | Articolo aggiornato
+[Prerequisiti per Microsoft Managed Desktop](get-ready/prerequisites.md) | Articolo aggiornato
+[Controllo app](service-description/app-control.md) | Articolo aggiornato
+[Configurazione rete in Microsoft Managed Desktop](get-ready/network.md) | Articolo aggiornato
+[Nuova app Microsoft Edge](get-started/edge-browser-app.md) | Articolo aggiornato
+[Accedere al portale di amministrazione](get-started/access-admin-portal.md) | Nuovo articolo
+[Controllo app](service-description/app-control.md) | Nuovo articolo
+[Installare Microsoft Project o Microsoft Visio nei dispositivi Microsoft Managed Desktop](get-started/project-visio.md) | Articolo aggiornato
 
 ## <a name="june-2020"></a>Giugno 2020
 Articolo nuovo o modificato | Descrizione

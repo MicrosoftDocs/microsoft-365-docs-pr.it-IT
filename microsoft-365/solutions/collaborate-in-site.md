@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un sito di SharePoint per la collaborazione con gli utenti.
-ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 320fb21f19c9616e78f56e519cb804e3e03b2b45
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160004"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527907"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborare con gli utenti guest a un sito
 
@@ -44,7 +45,7 @@ Controllare le impostazioni delle relazioni organizzative per garantire che la c
 
 Per impostare le impostazioni delle relazioni organizzative
 
-1. Accedere a Microsoft Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com).
+1. Accedere a Microsoft Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
 2. Nel riquadro di spostamento a sinistra, fare clic su **Azure Active Directory**.
 3. Nel riquadro **Panoramica** fare clic su **relazioni organizzative**.
 4. Nel riquadro **relazioni organizzative** fare clic su **Impostazioni**.

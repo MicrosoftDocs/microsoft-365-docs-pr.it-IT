@@ -1,18 +1,18 @@
 ---
 title: Requisiti per le app di Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5889a4e80f44349b4f149ee4f2a631f12b32251e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94d51d7b28922a05c892eb4ffc14aee813a9069c
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637853"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522026"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisiti per le app di Microsoft Managed Desktop
 
@@ -20,44 +20,25 @@ ms.locfileid: "43637853"
 
 <!--Application addendum -->
  
-Per garantire le prestazioni, l'affidabilità e la funzionalità dei dispositivi Microsoft Managed Desktop, le app di una linea del cliente non devono influire sul serio sull'esperienza dell'utente finale o modificare la posizione di sicurezza. Di conseguenza, le applicazioni line-of-business che si desidera distribuire ai dispositivi Microsoft Managed Desktop devono soddisfare i requisiti di questo argomento.
-
-## <a name="application-condition"></a>Condizione dell'applicazione
-
-È importante che le applicazioni non influiscano negativamente sull'ambiente Microsoft Managed Desktop. Di seguito sono indicati i requisiti che un'applicazione deve soddisfare per la distribuzione di un'applicazione. Per qualsiasi applicazione o driver specificata, Microsoft può rinunciare a qualsiasi requisito fornito nel presente documento. Microsoft può decidere di rimuovere qualsiasi applicazione o driver che influisce negativamente sulle prestazioni e l'affidabilità dei dispositivi Microsoft Managed Desktop.
-
-## <a name="centrally-managed-apps"></a>App gestite centralmente
-
-Tutte le applicazioni e i driver installati nei dispositivi gestiti Microsoft devono essere distribuiti tramite Microsoft Intune, Microsoft Store o Microsoft Store for business. Se disponibile, i driver verranno distribuiti anche tramite il servizio Windows Update. 
-
-## <a name="prohibited-app-classes"></a>Classi app non consentite
-
-Alcuni tipi di applicazioni non sono consentiti sui dispositivi Microsoft Managed Desktop:
-- software di terze parti antivirus, di sicurezza o di controllo
-- Versioni di Microsoft Office precedenti a Microsoft 365 Apps for Enterprise
-- Applicazioni che installino o bundle altri software di terze parti
-
-## <a name="restricted-app-behaviors"></a>Comportamenti delle app con limitazioni
-
-Alcuni comportamenti delle app possono influire negativamente sull'esperienza dell'utente o possono presentare un rischio per la sicurezza per i dispositivi desktop Microsoft gestiti. Le app con i comportamenti seguenti non sono autorizzate a essere eseguite nell'ambiente Microsoft Managed Desktop senza una specifica di Microsoft.
-
-Esperienza utente:
-- Installare servizi in background
-- Aggiungersi al percorso di avvio di Windows
-- Le applicazioni dipendono dai driver
-- Web browser di terze parti
-
-Sicurezza:
-- Elevare i privilegi dell'utente finale
-- Agire come App Store o avere un gestore di estensioni incorporato
-- Sono note vulnerabilità relative alla sicurezza
-- Crittografare o limitare l'accesso ai dati degli utenti finali
-- È senza segno o viene firmato utilizzando un certificato che non viene eseguito fino a una radice attendibile
+Microsoft Managed Desktop richiede che i dispositivi vengano gestiti utilizzando un approccio specifico per garantire le prestazioni, l'affidabilità e la facilità di utilizzo dei dispositivi. Se si è certi che l'approccio adottato da Microsoft Managed Desktop per le aree di seguito non funzionerà per l'utente, è possibile richiedere un' [eccezione al piano di servizio](customizing.md).
 
 
-## <a name="driver-deployment"></a>Distribuzione del driver
+|Area di gestione  |Approccio Microsoft Managed Desktop  |
+|---------|---------|
+|Configurazione del dispositivo o gestione dei criteri     |  Microsoft Intune       |
+|Gestione delle applicazioni     | Microsoft Intune e portale aziendale        |
+|Distribuzione del driver     |  Driver inclusi nel dispositivo, Windows Update o Intune       |
+|Sicurezza del dispositivo     | Vedere [sicurezza del dispositivo](security.md#device-security)      |
+|Gestione delle identità e degli accessi     | Vedere [gestione delle identità e degli accessi](security.md#identity-and-access-management)        |
+|Protezione di rete     | Vedere [Network Security](security.md#network-security)        |
+|Sicurezza delle informazioni     |  Visualizzare la [sicurezza delle informazioni](security.md#information-security)       |
+|Ripristino dei dati     | OneDrive for Business        |
+|Produttività di base     | Microsoft 365 Apps for enterprise    |
+|Browser     | Microsoft Edge        |
 
-Microsoft Managed Desktop supporta solo i driver di dispositivo disponibili tramite Windows Update o la posta in arrivo installata con il dispositivo gestito Microsoft. 
 
-Se un'applicazione richiede un driver specifico per l'esecuzione, è considerata un'applicazione limitata e richiede un'eccezione prima di essere distribuita in Microsoft Managed Desktop. 
+
+
+Microsoft Managed Desktop potrebbe monitorare il software in esecuzione su dispositivi gestiti. Se incide negativamente sulla sicurezza, le prestazioni o l'affidabilità del sistema, potrebbe essere necessario richiedere un'eccezione al piano del servizio.
+
 
