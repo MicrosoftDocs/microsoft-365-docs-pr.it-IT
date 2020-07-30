@@ -1,19 +1,19 @@
 ---
 title: Dispositivi archiviati da Microsoft Managed Desktop
 description: Dispositivi che si avvicinano alla pensione che è ancora possibile registrare, ma che avranno una durata di supporto ridotta
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 4c7ce4e8fd9c41f9ae9417f546e14e7bf8beda5c
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080082"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503068"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati da Microsoft Managed Desktop
 
@@ -43,6 +43,9 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 |HP EliteBook X360 1030 G3| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria |**14 maggio 2023** |
 |HP EliteBook X360 1040 G5| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | **23 ottobre 2023** |
 |HP ProBook X360 440 G1| 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV, videocamera IR o lettore di impronte digitali necessario | **Giugno 6, 2023** |
+|HP EliteDesk 800 G4 DM | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV | **18 luglio 2023** |
+|HP EliteDesk 800 G4 SFF | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV | **18 luglio 2023** |
+|HP EliteOne 800 G4 23,8 in AIO |128 GB/Intel i3/8 GB di RAM |SKU con 5VS04AV| **18 luglio 2023** |
 |Surface Book 2| 256 GB/Intel i5/8 GB di RAM | Nessuno | **Nov 16, 2022** |
 |Superficie andare| 128 GB/Intel 4415Y/8GB di RAM | Nessuno | **Aug 2, 2023** |
 |Laptop Surface| 256 GB/Intel i5/8 GB di RAM | Nessuno | **20 maggio 2022** |

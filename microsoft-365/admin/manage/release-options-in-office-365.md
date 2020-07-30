@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 4b26a3e95b11feb5c6a5894702b86e74f82bde03
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3baec050f33893357b25c832552643cf3a6d10d0
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399693"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502880"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurare le opzioni di rilascio standard o di destinazione
 
@@ -42,6 +42,9 @@ Con Microsoft 365, vengono visualizzati nuovi aggiornamenti e funzionalità del 
   
 > [!IMPORTANT]
 > Gli aggiornamenti di Microsoft 365 descritti in questo articolo si applicano a Microsoft 365, SharePoint Online ed Exchange Online. Non si applicano a Skype for business e ai servizi correlati. Queste opzioni di rilascio sono mirate, le migliori modalità per rilasciare le modifiche a Microsoft 365 ma non possono essere garantite in qualsiasi momento o per tutti gli aggiornamenti. 
+
+> [!NOTE]
+> Per informazioni sui canali di aggiornamento per le applicazioni, vedere [Overview of Update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels). 
   
 ## <a name="how-it-works---release-validation"></a>Funzionamento - Convalida dei rilasci
 
@@ -114,6 +117,6 @@ La versione mirata consente agli amministratori, ai responsabili delle modifiche
 
 
   
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
 Informazioni su come [gestire i messaggi](https://docs.microsoft.com/office365/admin/manage/message-center) nel [centro messaggi di Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) per ottenere notifiche relative agli aggiornamenti e rilasci imminenti di Microsoft 365.

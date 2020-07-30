@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e0f76f6a232edeac350d08eeeb47188535ffe688
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955592"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502938"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Azioni di correzione che seguono indagini automatizzate in Microsoft Threat Protection
 
@@ -39,7 +39,7 @@ Nella tabella seguente sono riepilogate le azioni di correzione attualmente supp
 
 |Azioni di correzione del dispositivo (endpoint)  |Azioni correttive della posta elettronica  |
 |---------|---------|
-|Quarantena del file<br/>Rimozione della chiave del Registro di sistema<br/>Termine del processo <br/>Interruzione del servizio <br/>Disabilitazione del driver <br/>Rimozione di attività pianificate      |Eliminazione temporanea di messaggi di posta elettronica o cluster<br/>Blocco di URL (al momento del clic)<br/>Disattivazione dell'inoltro della posta elettronica esterna          |
+|-Raccogliere il pacchetto di indagine <br/>-Isolate Device (questa azione può essere annullata)<br/>-Trasferisce Machine <br/>-Esecuzione del codice di rilascio <br/>-Rilascio dalla quarantena <br/>-Esempio di richiesta <br/>-Limitare l'esecuzione del codice (questa azione può essere annullata) <br/>-Eseguire l'analisi antivirus <br/>-Arrestare e mettere in quarantena      |-Blocca URL (tempo di clic)<br/>-Eliminare i messaggi di posta elettronica o i cluster<br/>-Posta in quarantena<br/>-Mettere in quarantena un allegato di posta elettronica<br/>-Disattivare l'inoltro della posta esterna          |
 
 Le azioni di correzione, sia che siano in attesa di approvazione o che sono già complete, possono essere visualizzate nel [Centro azioni](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 

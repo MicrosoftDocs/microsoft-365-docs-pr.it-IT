@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127013"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506321"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -121,16 +121,16 @@ Le notifiche di posta elettronica vengono inviate automaticamente ai revisori su
 
 Il contenuto in attesa di una revisione della disposizione viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto. Quando il revisore sceglie questa opzione, il contenuto del sito di SharePoint o dell'account OneDrive diventa idoneo per il processo di pulizia standard descritto in [modalità di funzionamento delle impostazioni di conservazione con il contenuto sul posto](retention.md#how-retention-settings-work-with-content-in-place).
 
-## <a name="disposition-of-records"></a>Disposizione dei record
+## <a name="disposition-of-records"></a>Eliminazione dei record
 
 > [!NOTE]
-> La possibilità di visualizzare i record che sono stati eliminati automaticamente senza una revisione della disposizione è gradualmente distribuita ai tenant nel corso di aprile e maggio 2020, quindi potrebbe non essere possibile visualizzare immediatamente questa esperienza.
+> La possibilità di visualizzare i record che sono stati eliminati automaticamente senza una revisione della disposizione continua a essere distribuita ai tenant, in modo che non vengano visualizzati tutti gli elementi rimossi durante questo periodo di implementazione.
 
 Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record eliminati automaticamente. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . Ad esempio:
 
 ![Elementi eliminati senza una revisione di disposizione](../media/records-disposed2.png)
 
-Gli elementi visualizzati nella scheda **elementi eliminati** per le etichette dei record vengono conservati per un massimo di 7 anni dopo l'eliminazione dell'elemento, con un limite di 1 milione elementi per ogni record per quel periodo. Se si Visualizza il numero di **conteggio** vicino a questo limite di 1 milione e si ha bisogno di una prova di disposizione per i record, contattare il [supporto tecnico Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Gli elementi visualizzati nella scheda **elementi eliminati** per le etichette dei record vengono conservati per un massimo di sette anni dopo che l'elemento è stato eliminato, con un limite di 1 milione elementi per ogni record per quel periodo. Se si Visualizza il numero di **conteggio** vicino a questo limite di 1 milione e si ha bisogno di una prova di disposizione per i record, contattare il [supporto tecnico Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
 > Questa funzionalità si basa su informazioni provenienti dal [Registro di controllo unificato](search-the-audit-log-in-security-and-compliance.md) e pertanto richiede l' [Abilitazione e la ricerca](turn-audit-log-search-on-or-off.md) in modo che gli eventi corrispondenti vengano acquisiti.
