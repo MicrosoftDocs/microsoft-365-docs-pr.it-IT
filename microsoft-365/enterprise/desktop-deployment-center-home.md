@@ -5,10 +5,9 @@ f1.keywords:
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 08/14/19
+ms.date: 08/14/2019
 ms.audience: ITPro
-layout: LandingPage
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
@@ -16,80 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Panoramica del centro di distribuzione desktop.
-ms.openlocfilehash: 36506864d932665a2da8fd2dfc94ab276e4fa2ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3559a32db71d2cceaf3ab4dc67701d5f5f00e7fe
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638141"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528109"
 ---
 # <a name="desktop-deployment-center"></a>Centro di distribuzione desktop
 
 <strong>Aggiornamento da Windows 7 a Windows 10</strong>
 <p>Il supporto esteso di Windows 7 è terminato il 14 gennaio 2020. L'aggiornamento sul posto da Windows 7 a Windows 10 rappresenta il metodo di distribuzione più rapido. È possibile <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">aggiornare un singolo PC</a> o <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">aggiornare migliaia di PC con Microsoft Endpoint Configuration Manager</a>. Non è necessario concentrarsi sulla consegna dell'app, sulla migrazione dei file, sulla creazione dell'immagine personalizzata o sull'abilitazione di servizi basati sul cloud con aggiornamenti sul posto. È possibile usare gli strumenti già a disposizione per aggiornare PC esistenti e concentrarsi sui passaggi di distribuzione seguenti per gli aggiornamenti: </p>
 
-<p>
-</p>
-
-<ul class="panelContent cardsM">
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Aggiornare ConfigMgr a Current Branch</h3>
-            <p>Parte del passaggio di conformità della directory e della rete per le organizzazioni che usano Configuration Manager</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Convalidare la conformità di dispositivi e app</h3>
-            <p>Parte del passaggio di conformità di dispositivi e app; è possibile richiedere assistenza tramite Desktop App Assure</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Aggiornare PC con Windows 7 a Windows 10</h3>
-            <p>Parte del passaggio di distribuzione del sistema operativo e degli aggiornamenti delle funzionalità per i PC gestiti dall'utente</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+|               |               |               |               |               |               |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" width="36" height="36" alt="Upgrade ConfigMgr" /> | **[Aggiornare ConfigMgr a Current Branch](https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness)** <p>Parte del passaggio di conformità della directory e della rete per le organizzazioni che usano Configuration Manager</p> | <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" width="36" height="36" alt="Device and App Readiness" /> | **[Convalidare la conformità di dispositivi e app](/microsoft-365/enterprise/step-1-device-and-app-readiness)** <p>Parte del passaggio di conformità di dispositivi e app; è possibile richiedere assistenza tramite Desktop App Assure</p> | <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" width="36" height="36" alt="Upgrade Windows 7 PCs" /> | **[Aggiornare PC con Windows 7 a Windows 10](/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated)** <p>Parte del passaggio di conformità di dispositivi e app; è possibile richiedere assistenza tramite Desktop App Assure</p> |
 
 <img align="middle" src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 

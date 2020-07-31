@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Questo articolo offre informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365.
-ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: b720b701ca25dd6b341d4ac5ac696b51af890de5
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167366"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502916"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -102,7 +102,10 @@ Per creare i criteri di accesso condizionale
 
 Ora, la prima volta che un utente guest tenterà di accedere al contenuto, a un team o a un sito dell'organizzazione, dovrà accettare le condizioni per l'utilizzo.
 
-### <a name="more-information"></a>Altre informazioni
+> [!NOTE]
+> L'uso dell’accesso condizionale richiede una licenza di Azure AD Premium P1. Per altre informazioni, vedere [Cos’è l’accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+
+### <a name="more-information"></a>Ulteriori informazioni
 [Condizioni per l'utilizzo di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
 
 ## <a name="set-up-guest-access-reviews"></a>Configurare le verifiche di accesso per gli utenti guest

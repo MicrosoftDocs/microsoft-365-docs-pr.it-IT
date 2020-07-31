@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
+- m365solution-overview
 ms.custom: ''
 description: Formare gli utenti e garantire che i problemi vengano gestiti in modo rapido.
-ms.openlocfilehash: bb8c6614ed383136ef5724d45637891ee978c9cd
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1954a3768d2a35c3193aa523d6383b7b8257a6a0
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160727"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521434"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Passaggio 6: formare i lavoratori remoti e rispondere al feedback sull'utilizzo
 
@@ -30,7 +31,7 @@ Formare i lavoratori remoti su:
 
 - Corrette procedure di accesso tramite MFA, inclusa la registrazione di un metodo di verifica aggiuntivo.
 - Uso dei dispositivi e modo in cui è possibile usare i criteri di gestione degli endpoint per bloccare l'accesso per dispositivi non conformi.
-- Uso delle app consentite e modo in cui è possibile usare i criteri per le app di gestione degli endpoint per bloccare le app.
+- Uso delle app consentite e modo in cui è possibile usare i criteri per le applicazioni di gestione degli endpoint per bloccare le app.
 - Funzionalità di sicurezza di Windows 10 Enterprise.
 - Come usare [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) per chat, videoconferenze, condivisione di documenti e conversazioni in thread.
 - Come usare [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) per la posta elettronica e la pianificazione.
@@ -43,7 +44,7 @@ Nelle settimane successive alla formazione:
 - Rispondere rapidamente al feedback dei lavoratori remoti e ottimizzare i criteri e le configurazioni.
 - Analizzare l'utilizzo di Teams, posta elettronica, siti di SharePoint e cartelle di OneDrive e confrontarlo con le aspettative di utilizzo.
 
-Ripetere la formazione degli utenti se necessario.
+Ripetere quindi la formazione degli utenti se necessario.
 
 ## <a name="results-of-step-6"></a>Risultati del Passaggio 6
 

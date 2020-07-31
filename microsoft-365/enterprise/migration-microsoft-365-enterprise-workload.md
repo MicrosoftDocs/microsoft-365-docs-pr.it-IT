@@ -2,7 +2,7 @@
 title: Migrazione a Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 07/29/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Procedura per la migrazione delle versioni di Microsoft Office, Office Server e Windows a Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: 6830b4627eea799e18d32d3f9150617df339d7d4
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 05654e4714d2328f2f5853ed49df83a907e580f6
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011796"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528061"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrazione a Microsoft 365 Enterprise
+
+
+>[!Note]
+>Si cercano strumenti per agevolare la migrazione del *contenuto* in Microsoft 365?  Che si voglia eseguire la migrazione del contenuto da condivisioni file di rete, SharePoint Server o altri provider cloud, è disponibile uno strumento di migrazione gratuito adatto allo scopo. Altre informazioni sugli strumenti di migrazione GRATUITI sono disponibili in:
+>
+>[Eseguire la migrazione del contenuto a Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online).
 
 La maggior parte delle organizzazioni aziendali presenta un ambiente eterogeneo con più versioni di sistemi operativi, software client e prodotti server. Microsoft 365 Enterprise include le versioni più sicure dei componenti chiave dell'infrastruttura IT, con funzionalità di produttività progettate per sfruttare le tecnologie cloud.
 

@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365 che possono influire sulla condivisione con persone esterne all'organizzazione.
-ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 05cd46be7b7dd81d04fa65d89b47f19e6dbb2493
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679145"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514790"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
@@ -37,7 +37,7 @@ Azure Active Directory è il servizio directory utilizzato da Microsoft 365. Le 
 
 ### <a name="organizational-relationships-settings"></a>Impostazioni delle relazioni aziendali
 
-**Navigazione:** [Interfaccia di amministrazione di Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Relazioni aziendali > Impostazioni
+**Navigazione:** [Interfaccia di amministrazione di Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Identità esterne > Impostazioni collaborazione esterna
 
 ![Screenshot della pagina delle impostazioni delle relazioni aziendali di Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -60,7 +60,7 @@ L'interfaccia di amministrazione di Microsoft 365 presenta delle impostazioni a 
 
 ### <a name="sharing"></a>Condivisione
 
-**Navigazione:** [Interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) > Impostazioni > Impostazioni > scheda Sicurezza e privacy > Condivisione
+**Navigazione:** [Interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) > Impostazioni > Impostazioni > Impostazioni organizzazione > Scheda sicurezza e privacy > Condivisione
 
 ![Screenshot dell'impostazione di condivisione guest in sicurezza e privacy nell'interfaccia di amministrazione di Microsoft 365](../media/sharepoint-security-privacy-sharing-setting.png)
 
