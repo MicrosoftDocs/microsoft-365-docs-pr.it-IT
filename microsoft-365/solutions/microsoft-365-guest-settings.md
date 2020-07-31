@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365 che possono influire sulla condivisione con persone esterne all'organizzazione.
-ms.openlocfilehash: 05cd46be7b7dd81d04fa65d89b47f19e6dbb2493
-ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
+ms.openlocfilehash: 204f13cb9546d4604f8789d54ce3164788b64a95
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46514790"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528207"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
