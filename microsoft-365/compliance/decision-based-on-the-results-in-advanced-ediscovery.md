@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 'Informazioni su come la scheda decidere in Microsoft 365 Advanced eDiscovery fornisce dati che consentono di determinare le dimensioni corrette del set di riesame dei file di caso. '
+description: Informazioni su come la scheda decidere in Advanced eDiscovery fornisce dati che consentono di determinare le dimensioni corrette del set di revisione dei file di caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0139bc0505150a4d27aaca97b9b253f2043d649f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 04c6f0c8fede315f175e0ed6ae265c7463405a62
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817905"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528006"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Decisione basata sui risultati in Advanced eDiscovery (Classic)
 
@@ -34,7 +34,7 @@ ms.locfileid: "44817905"
 
 ![Decisione di pertinenza](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
-Questa scheda include gli elementi seguenti:
+In questa scheda sono inclusi i componenti seguenti:
   
 - **Problema**: da qui, è possibile selezionare il problema di interesse dall'elenco. 
     

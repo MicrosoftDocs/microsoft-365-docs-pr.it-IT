@@ -17,21 +17,21 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come gestire gli utenti interessati all'ambito della ricerca o alla visualizzazione di dati quali i registri dei contatti, delle posizioni e delle attività.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7cab1904731f325f1ec45685ddf122e5ee375a2b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 85f6bdbe7a0602f8ce0038a4aca912896d5c2079
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036069"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528172"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Gestire gli utenti che interessano le indagini sui dati (anteprima)
 
-Le indagini sui dati coinvolgono spesso persone di interesse. In genere, si tratta di persone proprietarie dei dati non posizionati, sensibili o dannosi che si sta indagando o che si desidera correggere. In **indagini sui dati (Preview)**, è possibile aggiungerli per individuare le origini dati da utilizzare nell'ambito della ricerca o per visualizzare informazioni aggiuntive, ad esempio i registri contatti, percorso e attività. 
+Le indagini sui dati coinvolgono spesso persone di interesse. In genere, si tratta di persone proprietarie dei dati non posizionati, sensibili o dannosi che si sta studiando o che si desidera correggere. In **indagini sui dati (Preview)**, è possibile aggiungerli per individuare le origini dati da utilizzare nell'ambito della ricerca o per visualizzare informazioni aggiuntive quali i registri di contatti, località e attività. 
 
 
 ## <a name="add-people-of-interest"></a>Aggiungere persone di interesse
 
-Nella scheda **utenti di interesse** è possibile aggiungere persone di interesse e individuare le origini dati, ad esempio le cassette postali di Exchange o il sito di OneDrive for business, che è possibile utilizzare per l'ambito della ricerca. Quando gli utenti sono interessati, le ricerche sono più performanti e accurate perché lo strumento rielabora tutti i dati non indicizzati, ad esempio immagini o tipi di file non supportati. È inoltre possibile visualizzare le informazioni di contatto, le informazioni sulla posizione e i registri delle attività che è possibile utilizzare per avviare le comunicazioni o approfondire le proprie attività. 
+Nella scheda **utenti di interesse** è possibile aggiungere persone di interesse e individuare le origini dati, ad esempio le cassette postali di Exchange o il sito di OneDrive for business, che è possibile utilizzare per l'ambito della ricerca. Quando gli utenti hanno un ambito di interesse, le ricerche sono più performanti e accurate perché lo strumento rielabora tutti i dati non indicizzati, ad esempio immagini o tipi di file non supportati. È inoltre possibile visualizzare le informazioni di contatto, le informazioni sulla posizione e i registri delle attività che è possibile utilizzare per avviare le comunicazioni o approfondire le proprie attività. 
 
 Per aggiungere persone di interesse a un'indagine:
 
@@ -56,7 +56,7 @@ Per aggiungere persone di interesse a un'indagine:
         > [!NOTE]
         > Quando si fa clic su Scegli utenti, gruppi o team per specificare le cassette postali, lo strumento di selezione delle cassette postali visualizzato è vuoto. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca.
      
-     - **Siti di SharePoint** -fare clic su **Choose sites** , quindi fare clic su **Choose sites** again per specificare altri siti di SharePoint e OneDrive for business che è possibile aggiungere a una persona. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Microsoft 365 o un team di Microsoft. Digitare l'URL per ogni sito che si desidera assegnare. Fare clic su **Scegli**e quindi su **fine**.
+     - **Siti di SharePoint** -fare clic su **Choose sites** , quindi fare clic su **Choose sites** again per specificare altri siti di SharePoint e OneDrive for business che si desidera aggiungere a un utente. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Microsoft 365 o un team di Microsoft. Digitare l'URL per ogni sito che si desidera assegnare. Fare clic su **Scegli**e quindi su **fine**.
      - **Microsoft teams** -fare clic su **Scegli team** e quindi fare di nuovo clic su **Scegli squadre** per visualizzare un elenco di gruppi di team Microsoft che la persona è un membro di oggi. Selezionare i team che si desidera aggiungere alla persona. Una volta selezionata, il sistema identificherà automaticamente & selezionare il sito di SharePoint associato e la cassetta postale del gruppo associata a quel team Microsoft. Fare clic su **Scegli**e quindi su **fine**.
         
       > [!NOTE]
@@ -66,11 +66,11 @@ Dopo aver completato la mappatura delle origini dati alle persone di interesse, 
 
 ## <a name="view-additional-people-of-interest-information"></a>Visualizzazione di altre persone di informazioni sugli interessi
 
-Nella scheda **persone di interesse** , fare clic su una persona che si Adeed. In un riquadro a comparsa, vedrai:
+Nella scheda **persone di interesse** fare clic su una persona aggiunta. In un riquadro a comparsa, vedrai:
 
 - Informazioni di contatto
 
-  - **Nome**visualizzato: il nome del Peron visualizzato nella rubrica. Questo è in genere la combinazione del nome, dell'iniziale e del cognome.
+  - **Nome visualizzato**: il nome della persona visualizzato nella rubrica. Questo è in genere la combinazione del nome, dell'iniziale e del cognome.
   - **Posta/SMTP**: indirizzo SMTP della persona, ad esempio Jeff@contoso.onmicrosoft.com.  
   - **Titolo**: titolo del processo.
   - **Reparto**: il nome del reparto in cui lavora la persona.

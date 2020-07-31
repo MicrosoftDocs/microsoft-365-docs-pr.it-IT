@@ -13,15 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
+- m365solution-overview
 ms.custom: ''
 description: Configurare l'infrastruttura di sicurezza e di servizio per proteggere le informazioni e attenersi alle normative sulla privacy dei dati.
-ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854332"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522290"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Distribuire la protezione delle informazioni per le normative sulla privacy dei dati con Microsoft 365
 
@@ -37,13 +38,13 @@ Per soddisfare i criteri di protezione delle informazioni per la conformità con
 
 | Capacità o funzionalità | Descrizione | Licenze |
 |:-------|:-----|:-------|
-| Compliance Manager | Gestire le attività di conformità alle normative relative ai servizi cloud Microsoft con questo strumento di valutazione dei rischi basato sul flusso di lavoro in Microsoft Service Trust Portal. | Microsoft 365 E3 ed E5 |
-| Punteggio di conformità (anteprima) | Vedere un punteggio complessivo della configurazione di conformità corrente e suggerimenti per migliorarlo nel centro conformità di Microsoft 365. | Microsoft 365 E3 ed E5 |
-| Office Advanced Threat Protection (ATP) | Proteggi le app e i dati di Microsoft 365, ad esempio i messaggi di posta elettronica, i documenti di Office e gli strumenti di collaborazione, dall'attacco. | Microsoft 365 E3 ed E5 | 
-| Etichette di riservatezza | Classificare e proteggere i dati dell'organizzazione senza ostacolare la produttività degli utenti e la loro capacità di collaborare inserendo etichette con vari livelli di protezione su messaggi di posta elettronica, file o siti. | Microsoft 365 E3 ed E5 |
-| Protezione dalla perdita di dati (DLP) | Rilevare, avvisare e bloccare la condivisione rischiosa, involontaria o inappropriata, ad esempio la condivisione di dati che contengono informazioni personali, sia internamente che esternamente. | Microsoft 365 E3 ed E5 | 
-| Etichette e criteri di conservazione dei dati | Implementare i controlli di governance delle informazioni, ad esempio il tempo necessario per mantenere i dati e i requisiti per l'archiviazione dei dati personali nei clienti, per conformarsi ai criteri dell'organizzazione o ai regolamenti dei dati. | Microsoft 365 E3 ed E5 |
-| Crittografia della posta elettronica | Inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione che contengono dati regolamentati, ad esempio i dati personali sui clienti. | Microsoft 365 E3 ed E5 |
+| Compliance Manager | Gestire le attività di conformità normative relative ai servizi cloud Microsoft con lo strumento di valutazione dei rischi basato su flussi di lavoro in Microsoft Service Trust Portal. | Microsoft 365 E3 ed E5 |
+| Punteggio di conformità (anteprima) | Visualizzare il punteggio complessivo della configurazione di conformità attuale e consigli per migliorarla nel Centro conformità Microsoft 365. | Microsoft 365 E3 e E5 |
+| Office Advanced Threat Protection (ATP) | Proteggere le app e i dati di Microsoft 365, ad esempio i messaggi di posta elettronica, i documenti di Office e gli strumenti di collaborazione, da eventuali attacchi. | Microsoft 365 E3 e E5 | 
+| Etichette di riservatezza | Classificare e proteggere i dati dell'organizzazione senza compromettere la produttività degli utenti e la loro capacità di collaborare aggiungendo etichette con vari livelli di protezione a messaggi di posta elettronica, file o siti. | Microsoft 365 E3 e E5 |
+| Prevenzione della perdita dei dati (DLP) | Rilevare, comunicare e bloccare la condivisione rischiosa, involontaria o inappropriata, come la condivisione di dati che contengono informazioni personali, sia all'interno che all'esterno. | Microsoft 365 E3 e E5 | 
+| Etichette e criteri di conservazione dei dati | Implementare controlli di governance delle informazioni, come la durata di conservazione dei dati e i requisiti per l'archiviazione dei dati personali dei clienti, per garantire la conformità con i criteri o le normative sui dati dell'organizzazione. | Microsoft 365 E3 e E5 |
+| Crittografia della posta elettronica | Inviare e ricevere messaggi di posta elettronica tra persone all'interno e all'esterno dell'organizzazione che contengono dati regolamentati, come i dati personali dei clienti. | Microsoft 365 E3 e E5 |
 ||||
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organizzazione delle linee guida in questa soluzione

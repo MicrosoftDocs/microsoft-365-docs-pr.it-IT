@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come configurare e proteggere gli account di amministratore.
-ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc5f72cda0255641d7d2407d266a6ae584560733
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633654"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527187"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteggere gli account di amministratore
 
@@ -67,7 +68,7 @@ Per creare account di amministratore aggiuntivi:
 
 ## <a name="create-a-user-account-for-yourself"></a>Creare un account utente autonomo
 
-Utilizzare l'account utente per partecipare alla collaborazione con l'organizzazione, inclusa la verifica della posta. Questo significa che le credenziali di amministratore potrebbero essere simili a *Alice<span></span>. Chavez @Contoso. org* e l'account utente normale potrebbe essere simile a *Alice<span></span>@Contoso. com*.
+Utilizzare l'account utente per partecipare alla collaborazione con l'organizzazione, inclusa la verifica della posta. Questo significa che le credenziali di amministratore potrebbero essere simili a *Alice. Chavez <span></span> @Contoso. org* e l'account utente normale potrebbe essere simile a *Alice <span></span> @Contoso. com*.
 
 Per creare un nuovo account utente:
 1. Passare all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Amministrazione</a> e quindi scegliere **utenti** \> **attivi utenti** nel NAV sinistro.

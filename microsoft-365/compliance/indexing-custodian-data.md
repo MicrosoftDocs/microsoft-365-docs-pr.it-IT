@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Quando un custode viene aggiunto a un caso di eDiscovery avanzato, tutti i contenuti considerati come parzialmente indicizzati vengono rielaborati in modo da renderli completamente ricercabili.
-ms.openlocfilehash: 0618af5bcc18622ee8091782f55648f455230b6b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Quando un custode viene aggiunto a un caso di eDiscovery avanzato, tutti i contenuti considerati come indicizzati parzialmente vengono rielaborati in modo da renderli completamente disponibili per la ricerca.
+ms.openlocfilehash: 95e087884b65628565e596dc8ae9f33aadc4cd9f
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637898"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527556"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indicizzazione avanzata dei dati dei responsabili
 
-Quando un custode viene aggiunto a un caso di eDiscovery avanzato, tutti i contenuti considerati come parzialmente indicizzati vengono rielaborati in modo da renderli completamente ricercabili.  Questo processo è denominato *Advanced indicizzazione*. Il contenuto può essere parzialmente indicizzato per una serie di motivi, tra cui l'esistenza di immagini, i tipi di file non supportati o l'indicizzazione dei limiti delle dimensioni dei file.
+Quando un custode viene aggiunto a un caso di eDiscovery avanzato, tutti i contenuti considerati come indicizzati parzialmente vengono rielaborati in modo da renderli completamente disponibili per la ricerca.  Questo processo è denominato *Advanced indicizzazione*. Il contenuto può essere parzialmente indicizzato per una serie di motivi, tra cui l'esistenza di immagini, i tipi di file non supportati o l'indicizzazione dei limiti delle dimensioni dei file.
 
 Per ulteriori informazioni sul supporto di elaborazione e sugli elementi parzialmente indicizzati, vedere:
 
@@ -39,7 +39,7 @@ Per ulteriori informazioni sul supporto di elaborazione e sugli elementi parzial
 
 ## <a name="viewing-advanced-indexing-results"></a>Visualizzazione dei risultati di indicizzazione avanzati
 
-Una volta completato il processo di indicizzazione avanzato, è possibile ottenere informazioni sull'efficacia del rielaborazione.  Nella visualizzazione dei risultati di indicizzazione avanzata nella scheda **elaborazione** di un caso, il grafico elenca il numero di elementi aggiunti all' *Indice ibrido*.  L'indice ibrido è la posizione in cui Advanced eDiscovery archivia il contenuto rielaborato.
+Una volta completato il processo di indicizzazione avanzato, è possibile ottenere informazioni sull'efficacia del ritrattamento.  Nella visualizzazione dei risultati di indicizzazione avanzata nella scheda **elaborazione** di un caso, il grafico elenca il numero di elementi aggiunti all' *Indice ibrido*.  L'indice ibrido è la posizione in cui Advanced eDiscovery archivia il contenuto rielaborato.
 
 Questa visualizzazione include anche il numero di elementi che richiedono la correzione e un altro grafico degli errori in base al tipo di file. Per altre informazioni, vedere:
 

@@ -9,16 +9,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
+- m365solution-overview
 ms.custom: ''
 f1.keywords: NOCSH
 description: Informazioni su come configurare i team per la protezione dei dati in base alla relativa sensibilità
-ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724799"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527709"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Proteggere la collaborazione con Microsoft 365
 
@@ -64,7 +65,7 @@ Per configurare Secure collabration, è possibile utilizzare le funzionalità e 
 | Office 365 Advanced Threat Protection | Allegati sicuri di ATP per SPO, OneDrive e teams; Documenti sicuri ATP; Collegamenti sicuri ATP per i team    | Microsoft 365 E1, E3 ed E5 |
 | SharePoint    | Criteri di condivisione siti e file, autorizzazioni di condivisione siti, collegamenti di condivisione, richieste di accesso, impostazioni di condivisione Guest site | Microsoft 365 E1, E3 ed E5 |
 | Microsoft Teams   | Accesso guest, team privati, canali privati | Microsoft 365 E1, E3 ed E5 |
-| Conformità di Microsoft 365  | Etichette di riservatezza    | Microsoft 365 E3 ed E5 |
+| Conformità di Microsoft 365  | Etichette di riservatezza    | Microsoft 365 E3 e E5 |
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>Utilizzo di team per tutti i tipi di dati
 
@@ -78,12 +79,12 @@ Questi livelli- *linee di base*, *sensibili*e *altamente sensibili* -aumentano g
 ||**Livello di base**|**Livello di riservatezza**|**Livello estremamente riservato**|
 |:--|:-----------|:------------|:-------------------|
 |Team pubblico o privato|Sia|Private|Private|
-|Condivisione non autenticata|Bloccati|Bloccati|Bloccati|
-|Condivisione di file|Consentiti|Consentiti|Solo i proprietari del team possono condividerli.|
+|Condivisione non autenticata|Bloccato|Bloccato|Bloccato|
+|Condivisione di file|Consentito|Consentito|Solo i proprietari del team possono condividerli.|
 |Appartenenza al team|Tutti gli utenti possono partecipare a squadre pubbliche.<br>Approvazione del proprietario del team per l'aggiunta di team privati.|Approvazione del proprietario del team necessaria per partecipare.|Approvazione del proprietario del team necessaria per partecipare.|
 |Crittografia dei documenti|||Disponibile con etichetta di riservatezza|
-|Condivisione con gli utenti guest|Consentiti|Può essere consentito o bloccato|Può essere consentito o bloccato|
-|Dispositivi non gestiti|Nessuna restrizione|Accesso solo Web|Bloccati|
+|Condivisione con gli utenti guest|Consentito|Può essere consentito o bloccato|Può essere consentito o bloccato|
+|Dispositivi non gestiti|Nessuna restrizione|Accesso solo Web|Bloccato|
 
 La configurazione di questi livelli comporta quanto segue:
 

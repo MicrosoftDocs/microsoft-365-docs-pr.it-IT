@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni sul modo in cui il modulo pertinenza analizza i dati in evidenza con una descrizione del flusso di lavoro di pertinenza e dei passaggi di formazione in indagini sui dati (Preview).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 64bd0101fd2a0804da9e513241a97bc9f133880e
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034488"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528162"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Utilizzare il modulo pertinenza per analizzare i dati in evidenza
 
@@ -31,14 +31,14 @@ In indagini sui dati (Preview), il modulo pertinenza include la formazione sulla
 ![Flusso di lavoro di pertinenza](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Cicli di valutazione e tracciabilità**:
-    
+
   - **Valutazione**: consente la valutazione precoce basata su un campione casuale di file e utilizza questa valutazione per applicare le decisioni per determinare le prestazioni del processo di codifica predittiva. 
-    
+
   - **Track**: calcolare e visualizzare i risultati intermedi della valutazione monitorando la validità statistica del processo. 
-    
+
 - **Cicli di training e Tracking**
-    
-  - **Tag**: indagini sui dati (Preview) vengono fornite informazioni sui criteri di pertinenza specifici per ogni problema in base alla revisione iterativa dell'esperto e al tagging di singoli file.
+
+  - **Tag**: indagini sui dati (Preview) vengono illustrati i criteri di pertinenza specifici di ogni problema in base alla revisione iterativa dell'esperto e al tagging di singoli file.
     
   - **Track**: calcola e Visualizza i risultati intermedi della formazione relativa alla pertinenza monitorando la validità statistica del processo. 
     
@@ -66,9 +66,9 @@ Di seguito è riportata una panoramica delle linee guida per la formazione e la 
      
   - Ignorare il testo applicato alla pertinenza verrà rimosso nel contenuto del file visualizzato nella visualizzazione di testo in pertinenza. Se i valori per il testo Ignora sono stati definiti dopo la formazione di pertinenza già avviata, il nuovo testo ignorato verrà applicato ai file di esempio creati dal punto in cui è stata definita. La funzionalità Ignora testo deve essere utilizzata con cautela, in quanto il relativo utilizzo può ridurre le prestazioni dell'analisi dei file
     
-  - Utilizzare l'opzione **Ignora Tag** solo se necessario. Le indagini sui dati (Preview) non si basano sui file ignorati. In valutazione, se è difficile stabilire se un file è pertinente, è consigliabile contrassegnarlo come pertinente (R) o non pertinente (NR) quando possibile anziché selezionando **Ignora**. Quando le indagini sui dati (Preview) valutano la formazione, è possibile vedere in che modo sono stati elaborati questi tipi di file.
+  - Utilizzare l'opzione **Ignora Tag** solo se necessario. Le indagini sui dati (Preview) non vengono addestrate in base ai file ignorati. In valutazione, se è difficile stabilire se un file è pertinente, è consigliabile contrassegnarlo come pertinente (R) o non pertinente (NR) quando possibile anziché selezionando **Ignora**. Quando le indagini sui dati (Preview) valutano la formazione, è possibile vedere in che modo sono stati elaborati questi tipi di file.
     
-  - Anche i file con una quantità minima di testo estratto devono essere contrassegnati in formazione come R/NR, anziché come "Skip", quando possibile. 
+  - Anche i file con una piccola quantità di testo estratto devono essere contrassegnati in formazione come R/NR, anziché come "Skip", quando possibile. 
     
   - Il tagging può influire sul classificatore fino a quando il file è leggibile e può essere contrassegnato come R/NR.
     
@@ -84,7 +84,7 @@ Di seguito è riportata una panoramica delle linee guida per la formazione e la 
     
 - **Calcolo batch**: i file contrassegnati come R/Nr dall'esperto riceveranno un punteggio pari a 0 o 100. Questo si applica al tagging eseguito prima del calcolo del batch. Se l'esperto ha passato il problema a inattività dopo il calcolo del batch e ha continuato a contrassegnare questo problema, i punteggi appena contrassegnati non saranno 100/0 ma piuttosto la partitura originale.
     
-- **Problemi e modalità di campionamento**: i problemi vengono in genere disattivati durante il completamento del lavoro (la formazione di pertinenza è stabilizzata e il calcolo in batch è stato eseguito), quando i problemi vengono annullati o quando un altro utente sta lavorando sui problemi.
+- **Problemi e modalità di campionamento**: i problemi vengono disattivati durante il completamento del lavoro (la formazione di pertinenza viene stabilizzata e il calcolo in batch è stato eseguito), quando i problemi vengono annullati o quando un altro utente sta lavorando sui problemi.
     
 ## <a name="steps-in-relevance-training"></a>Passaggi per la formazione sulla pertinenza
 
@@ -102,7 +102,7 @@ Nella scheda ** \> Tracking pertinenza** , le indagini sui dati forniscono sugge
     
   - Implicazione: il problema richiede una formazione maggiore; è necessario creare e contrassegnare l'esempio successivo. 
     
-- Calcolo batch: processo di pertinenza in cui le indagini sui dati prendono le conoscenze acquisite durante la fase di formazione e lo applicano all'intera popolazione dei file. Tutti i file del gruppo di file pertinente sono valutati per pertinenza e assegnato un punteggio di pertinenza.
+- Calcolo batch: processo di pertinenza in cui le indagini sui dati assumono le conoscenze acquisite durante la fase di formazione e lo applicano all'intera popolazione dei file. Tutti i file del gruppo di file pertinente sono valutati per pertinenza e assegnato un punteggio di pertinenza.
     
   - Implicazione: il problema si è stabilizzato e il calcolo in batch può essere eseguito.
     
@@ -110,7 +110,7 @@ Nella scheda ** \> Tracking pertinenza** , le indagini sui dati forniscono sugge
     
   - Implicazione: è stato aggiunto un nuovo carico e il recupero è necessario per continuare a funzionare.
     
-- Inconsistenze Tag: Process identifica, tramite un algoritmo di analisi dei dati, incoerenze nel processo di tagging del file che potrebbe influire negativamente sull'analisi.
+- Inconsistenze Tag: Process identifica, tramite un algoritmo di indagini sui dati, incoerenze nel processo di tagging dei file che potrebbe influire negativamente sull'analisi.
     
   - Implicazioni: nell'esempio seguente vengono inclusi i file contrassegnati in esempi precedenti e il loro tagging deve essere rifatto.
     
@@ -122,7 +122,7 @@ Nella scheda ** \> Tracking pertinenza** , le indagini sui dati forniscono sugge
     
   - Implicazione: non è necessaria alcuna formazione di pertinenza a questo punto.
     
-Anche se le indagini sui dati guidano il processo, con i passaggi successivi consigliati nelle diverse fasi, consente anche di spostarsi tra le schede e le pagine e di fare scelte per risolvere le situazioni che potrebbero essere rilevanti per il processo individuale, di problema o di revisione dei documenti. 
+Anche se le indagini sui dati consentono di eseguire il processo, con i passaggi successivi consigliati nelle diverse fasi, consente inoltre di spostarsi tra le schede e le pagine e di scegliere se gestire le situazioni che potrebbero essere rilevanti per il processo individuale, di problema o di revisione dei documenti. 
   
 È possibile accettare o sostituire le indagini sui dati nelle scelte successive all'elaborazione dei passaggi. Se si desidera eseguire una procedura diversa da quella consigliata, fare clic sul **passaggio successivo** elencato nella visualizzazione del problema espanso nella finestra di dialogo, fare clic sul pulsante **modifica** accanto al passaggio successivo e selezionare un'altra opzione per il passaggio successivo. 
   

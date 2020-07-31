@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Utilizzare i criteri di controllo e di avviso e le richieste del soggetto dei dati per monitorare e rispondere agli incidenti dei dati personali.
-ms.openlocfilehash: 5760bb40eb26e2ff0636ea9604cc7c45b7d0ca63
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 8fdba5799ca9ee97a013c1322e5e79f6bf38764a
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695068"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522074"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Monitorare e rispondere agli incidenti sulla privacy dei dati nell'organizzazione
 

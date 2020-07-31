@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Informazioni su come convertire una cassetta postale privata in una cassetta postale condivisa a cui è possibile accedere da più utenti. '
-ms.openlocfilehash: 7ae00c1d9c901378798f063554a44a3e5b741442
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: a4b2e9ce53051feb07ea035adc0c959bbb1a0948
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391531"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521030"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertire una cassetta postale utente in una cassetta postale condivisa
 
@@ -35,7 +35,7 @@ Quando si converte la cassetta postale di un utente in cassetta condivisa, vengo
 
 - La cassetta postale utente che si sta convertendo richiede una licenza assegnata prima di convertirla in una cassetta postale condivisa. In caso contrario, l'opzione per convertire la cassetta postale non sarà visualizzata. Se la licenza è stata rimossa, aggiungerla di nuovo in modo da poter convertire la cassetta postale. Dopo aver convertito la cassetta postale in una condivisa, è possibile rimuovere la licenza dall'account dell'utente.
 
-- Le cassette postali condivise possono contenere fino a 50 GB di dati senza alcuna licenza assegnata. Perché possano contenere ancora più dati, è necessario assegnarvi una licenza. Potrebbe essere necessario eliminare diversi messaggi di posta elettronica di grandi dimensioni, ad esempio quelli con allegati, dalla cassetta postale condivisa per ridurne le dimensioni e rimuovere la licenza.
+- Le cassette postali condivise possono avere fino a 50 GB di dati senza una licenza assegnata. Perché possano contenere ancora più dati, è necessario assegnarvi una licenza. Potrebbe essere necessario eliminare diversi messaggi di posta elettronica di grandi dimensioni, ad esempio quelli con allegati, dalla cassetta postale condivisa per ridurne le dimensioni e rimuovere la licenza.
 
 - Non eliminare il vecchio account utente. Sarà necessario per l'ancoraggio della cassetta postale condivisa. Se l'account utente è già stato eliminato, vedere [Convertire la cassetta postale di un utente eliminato](#convert-the-mailbox-of-a-deleted-user).
 
@@ -49,7 +49,7 @@ Quando si converte la cassetta postale di un utente in cassetta condivisa, vengo
 
 3. Selezionare la cassetta postale utente. In **Converti in cassetta postale condivisa**, selezionare **Converti**.
 
-4. Se la cassetta postale è più piccola di 50 GB, è possibile rimuovere la [licenza dall'utente](../manage/remove-licenses-from-users.md) e smettere di pagarne i costi associati. Non eliminare l'account dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Per ulteriori informazioni, vedere [rimuovere un ex dipendente da Microsoft 365](../add-users/remove-former-employee.md).
+4. Se la cassetta postale è inferiore a 50 GB, è possibile rimuovere la [licenza dall'utente](../manage/remove-licenses-from-users.md)e smettere di pagarla. Non eliminare l'account dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Per ulteriori informazioni, vedere [rimuovere un ex dipendente da Microsoft 365](../add-users/remove-former-employee.md).
     
 5. Per tutti gli altri elementi necessari per conoscere le cassette postali condivise, vedere [informazioni sulle cassette postali condivise](about-shared-mailboxes.md) e [creare una cassetta postale condivisa](create-a-shared-mailbox.md).
 
@@ -63,8 +63,8 @@ Quando si converte la cassetta postale di un utente in cassetta condivisa, vengo
 
 3. Reimpostare la password dell'utente.
 
-> [!NOTE]
-> Non è necessario reimpostare la password dell'utente durante la conversione delle cassette postali. Tuttavia, se la password non viene reimpostata, **il nome utente e la password originali continuano a funzionare** dopo che la conversione della cassetta postale è terminata.
+   > [!NOTE]
+   > Non è necessario reimpostare la password dell'utente durante la conversione delle cassette postali. Tuttavia, se la password non viene reimpostata, **il nome utente e la password originali continuano a funzionare** dopo che la conversione della cassetta postale è terminata.
 
 4. Nella scheda **posta** , in **altre azioni**, selezionare **Converti in cassetta postale condivisa**. 
 
@@ -91,7 +91,7 @@ Quando si converte la cassetta postale di un utente in cassetta condivisa, vengo
 ::: moniker-end
 
 
-Se la cassetta postale è più piccola di 50 GB, è possibile [rimuovere la licenza dall'utente](../manage/remove-licenses-from-users.md)e smettere di pagarla. Non eliminare la vecchia cassetta postale dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Vedere [rimuovere un ex dipendente da Microsoft 365](../add-users/remove-former-employee.md).
+Se la cassetta postale è inferiore a 50 GB, è possibile [rimuovere la licenza dall'utente](../manage/remove-licenses-from-users.md)e smettere di pagarla. Non eliminare la vecchia cassetta postale dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Vedere [rimuovere un ex dipendente da Microsoft 365](../add-users/remove-former-employee.md).
     
 Per tutti gli altri elementi necessari per conoscere le cassette postali condivise, vedere [informazioni sulle cassette postali condivise](about-shared-mailboxes.md) e [creare una cassetta postale condivisa](create-a-shared-mailbox.md).
 
@@ -132,19 +132,19 @@ Si supponga di aver eliminato un account utente e di volerne convertire la vecch
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Convertire la cassetta postale di un utente in un ambiente ibrido
 
-Se questa cassetta postale condivisa si trova in un ambiente ibrido, è **consigliabile** (è quasi necessario) riportare la cassetta postale dell'utente in locale, convertire la cassetta postale utente in una cassetta postale condivisa e quindi riportare la cassetta postale condivisa nel cloud.
+Se questa cassetta postale condivisa si trova in un ambiente ibrido, è **consigliabile** (è quasi necessario) riportare la cassetta postale dell'utente in locale, convertire la cassetta postale utente in una cassetta postale condivisa e quindi riportare la cassetta postale condivisa nel cloud. 
 
 Ecco perché: se si converte la cassetta postale nel cloud, è possibile convertirla, ma la cassetta postale è ancora in uso, in quanto la nuova realtà non viene sincronizzata di nuovo in locale.
 
 In genere, non si tratta di un problema, ma ci sono alcuni scenari in cui gli attributi locali (che pensano che la cassetta postale è la cassetta postale dell'utente) possono sovrascrivere le nuove versioni cloud di tali attributi e, di conseguenza, la cassetta postale potrebbe riconvertirsi. Questo è un problema perché le cassette postali degli utenti richiedono licenze **o sono eliminate temporaneamente dopo 30 giorni**.
 
-Sono state affrontate la maggior parte dei motivi per cui questo accade ma può comunque verificarsi, anche se raramente. È consigliabile essere sicuri e riportare la cassetta postale in locale.
+Sono state affrontate la maggior parte dei motivi per cui questo accade ma può comunque verificarsi, anche se raramente. È consigliabile essere sicuri e riportare la cassetta postale in locale, convertirla e quindi spostare di nuovo la cassetta postale condivisa nel cloud. La soluzione consigliata non è in violazione del contratto di licenza per gli ambienti ibridi perché l'esistenza della cassetta postale dell'utente locale è solo temporanea. Si potrebbe essere in violazione della licenza se si è mantenuto la cassetta postale dell'utente o la cassetta postale condivisa nell'organizzazione locale e non è stata spostata di nuovo nel cloud.
 
 > [!NOTE]
-> Se si è parte di gestione organizzazione o Gestione destinatari, è possibile utilizzare Exchange Management Shell per modificare una cassetta postale utente in una cassetta postale condivisa locale. Ad esempio, `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.
+> Se si è membri del gruppo di ruoli Gestione organizzazione o Gestione destinatari, è possibile utilizzare Exchange Management Shell per modificare una cassetta postale utente in una cassetta postale condivisa locale. Ad esempio, `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.
 
 > [!TIP]
-> Per le istanze in cui le [cassette postali condivise sono inaspettatamente convertite nelle cassette postali degli utenti](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di) , vedere la soluzione alternativa
+> Per le istanze in cui le [cassette postali condivise sono inaspettatamente convertite nelle cassette postali degli utenti](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di), vedere la soluzione di supporto
   
 ## <a name="related-articles"></a>Articoli correlati
 

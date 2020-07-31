@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori del cloud governativo degli Stati Uniti possono configurare un connettore dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 8023ffda8a9d367736ec8f7fc781bde5d6f1e1f5
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: e14f1a23097cddf3b187d4394d5fa5e3afe06d01
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205026"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527644"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurare un connettore per l'importazione dei dati HR nel governo degli Stati Uniti (anteprima)
 
@@ -87,7 +87,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
    b. Digitare un nome per il connettore HR.
 
-5. Nella pagina **mapping dei file** Digitare i tre nomi delle intestazioni di colonna (denominati anche *parametri* dal file CSV creato nel passaggio 2 in ognuna delle caselle appropriate. I nomi non sono distinzione tra maiuscole e minuscole. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi dei parametri nel file CSV. Ad esempio, nella schermata seguente vengono mostrati i nomi dei parametri dell'esempio in un file CSV di esempio illustrato nel passaggio 2.
+5. Nella pagina **mapping file** Digitare i nomi delle tre intestazioni di colonna (denominate anche *parametri*) dal file CSV creato nel passaggio 2 in ognuna delle caselle appropriate. I nomi non sono distinzione tra maiuscole e minuscole. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi dei parametri nel file CSV. Ad esempio, nella schermata seguente vengono mostrati i nomi dei parametri dell'esempio in un file CSV di esempio illustrato nel passaggio 2.
 
    ![I nomi delle intestazioni di colonna corrispondono a quelli nel file CSV](../media/HRConnectorWizard3.png)
 

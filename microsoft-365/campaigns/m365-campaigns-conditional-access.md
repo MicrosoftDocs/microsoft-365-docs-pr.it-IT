@@ -1,5 +1,5 @@
 ---
-title: Impostare i criteri di accesso condizionale
+title: Configurare i criteri di accesso condizionale
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come richiedere il master e configurare i criteri di accesso condizionale per Microsoft 365 for business.
-ms.openlocfilehash: 3caca685d9a96434a0daa2736c322ac1a68b7feb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 917fb52eb5034c3dda28c277b9e86e04db6cac62
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635613"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527199"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Richiedere l'autenticazione a più fattori e configurare i criteri di accesso condizionale
 
@@ -70,7 +71,7 @@ Per richiedere che tutti gli utenti eseguano l'accesso con una seconda forma di 
 
 ## <a name="set-up-baseline-policies"></a>Impostare i criteri di base
 
-1. Accedere a [portale di Azure](https://portal.azure.com)e quindi passare a **accesso condizionale**di **Azure Active Directory** \> .
+1. Accedere a [portale di Azure](https://portal.azure.com)e quindi passare a **Azure Active Directory** \> **accesso condizionale**di Azure Active Directory.
     
     I criteri di base sono elencati nella pagina ed è possibile vedere che richiedono l' **AMF per gli amministratori** e la **protezione degli utenti finali** sono già abilitati dopo aver completato la procedura in [Require AMF](#require-mfa).
 

@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Procedura dettagliata per la registrazione di Microsoft 365 per le campagne. Proteggi la tua campagna dalle minacce di Cybersecurity alla posta elettronica, ai dati e alla comunicazione.
-ms.openlocfilehash: 34d5b3103666b9cead1c2dfc09400a9eca5e3e40
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0628ac1a2e8bf6d12bd4a196df11775ebcc2d583
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632780"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527115"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Iscriversi a Microsoft 365 per le campagne 
 
@@ -80,7 +81,7 @@ Se si dispone già di un abbonamento a Microsoft 365 for business, ad esempio Mi
 2. Nella pagina di **benvenuto, è possibile conoscere** la pagina, fare clic o toccare si **desidera aggiungere questo a un abbonamento esistente? Accedi**.
     
     ![Scegliere Accedi nell'angolo in alto a destra.](../media/addtoexisting.png)
-3. Nella pagina di accesso, immettere l'alias di amministratore per la sottoscrizione esistente, ad esempio *Alice@VoteContoso<span></span>. org*, scegliere **Avanti**, immettere la password e quindi fare clic su **Accedi**.
+3. Nella pagina di accesso, immettere l'alias di amministratore per la sottoscrizione esistente, ad esempio *Alice@VoteContoso <span></span> . org*, scegliere **Avanti**, immettere la password e quindi fare clic su **Accedi**.
 4. In **questo aspetto,** immettere il numero di utenti di cui si dispone e scegliere **Avanti**. Non è necessario immettere un codice promozionale qui perché è già incluso nell'URL dell'invito.
 5. Nella pagina **come si desidera pagare?** , immettere il metodo di pagamento e scegliere **Ordina ordine**.
 

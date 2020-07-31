@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come creare, configurare e salvare una nuova indagine in indagini sui dati (Preview) nel centro conformità di Microsoft 365.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 62166f1fb820c33e1e8981b31c5fc9a48e54390a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1dae733a2e6dacfc2cc871cc9b589927d306599a
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035778"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526912"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Creare una nuova indagine in indagini sui dati (anteprima)
 
@@ -34,7 +34,7 @@ ms.locfileid: "44035778"
  
 4. Nella pagina **indagini dati (anteprima)** fare clic su **Crea nuova indagine**.
     
-5. Nella pagina nuovo riquadro a comparsa **dei dati** , assegnare un nome all'indagine (obbligatorio) e quindi digitare un numero di ricerca facoltativo e una descrizione. Si noti che il nome dell'indagine deve essere univoco nell'organizzazione.
+5. Nella pagina nuovo riquadro a comparsa **dei dati** , assegnare un nome all'indagine (obbligatorio) e quindi digitare un numero di ricerca facoltativo e una descrizione. Il nome dell'indagine deve essere univoco nell'organizzazione.
 
 6. In **se si desidera configurare altre impostazioni dopo aver creato l'indagine**, eseguire una delle operazioni seguenti:
 

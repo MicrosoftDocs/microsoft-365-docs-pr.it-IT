@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come creare ed eseguire una query in un set di revisione per organizzare i dati per una revisione più efficiente in un caso avanzato di eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1bf4d86ea4aecb33cbb2e7ad7b617cd58a5c086d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034600"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527436"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
 

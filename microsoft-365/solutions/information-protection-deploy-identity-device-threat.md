@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Impedire violazioni dei dati personali con i servizi Identity, Device e Threat Protection di Microsoft 365.
-ms.openlocfilehash: 74894037ef2fe56aeb5bc44340cd8a946863baff
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: a309b5d0ba5f939cf89a31d7ac91ca3aac25ce0d
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695080"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46520982"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utilizzo dell'identità, del dispositivo e della protezione dalle minacce per la normativa sulla privacy dei dati
 
@@ -48,7 +48,7 @@ Se questi sono selezionati nell'insieme del campione di quattro importanti norma
 Utilizzare [Azure Active Directory (Azure ad)](https://azure.microsoft.com/services/active-directory/) per l'identità e la categoria di **accesso ai controlli** , con cui è possibile:
 
 - Implementazione dell'autenticazione resistente ai rigiocamenti (per impedire attacchi di tipo "Man in the Middle")
-- Blocca l'autenticazione legacy.
+- Bloccare l'autenticazione legacy.
 - Configurare i rischi per gli utenti e i criteri di accesso dell'utente.
 - Abilitare l'accesso condizionale e l'autenticazione a più fattori (AMF) per gli amministratori e gli utenti non amministratori.
 - Configurare e applicare i criteri per le password.

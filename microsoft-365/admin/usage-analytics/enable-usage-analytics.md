@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Informazioni su come avviare la raccolta dei dati per il tenant utilizzando l'app modello di analisi di utilizzo di Microsoft 365 in Power BI.
-ms.openlocfilehash: 20228b0e2070065834ce203e22af619480311367
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: b5cb8df7fbe8ce1844d2af3ecaf62c7903d4e98b
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502950"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527379"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
 
@@ -86,9 +86,9 @@ Per avviare l'app modello, è necessario essere un **amministratore globale**, u
 
 6.  Dopo aver fatto clic su **Connetti**, nella schermata **connetti a Microsoft 365 Usage Analytics** digitare l'ID tenant (senza trattini) copiato nel passaggio (1) e quindi selezionare **Avanti**.
     
-7. Nella schermata successiva, selezionare **OAuth2** come accesso al **Metodo** \> **di**autenticazione. Se si sceglie qualsiasi altro metodo di autenticazione, la connessione all'app modello avrà esito negativo.
+7. Nella schermata successiva, selezionare **account Microsoft** come accesso al **metodo di autenticazione** \> **Sign in**. Se si sceglie qualsiasi altro metodo di autenticazione, la connessione all'app modello avrà esito negativo.
     
-    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![Scegliere l'account Microsoft come metodo di autenticazione](../../media/ab6f0463-c3f7-4088-a605-67c699fa86ad.png)
   
 8. Dopo aver creato un'istanza dell'app modello, il Dashboard Microsoft 365 Usage Analytics sarà disponibile in Power BI sul Web. Il caricamento iniziale del dashboard richiederà da 2 a 30 minuti.
   

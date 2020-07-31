@@ -16,19 +16,20 @@ search.appverid:
 ms.assetid: ''
 description: Durante un'analisi, è possibile utilizzare il pulsante Riprova per risolvere le ricerche di contenuto che presentano errori di posizione del contenuto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b2d26cd51c30f2c273abb59199cf4a89f5b7a37
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034630"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527634"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Riprovare una ricerca contenuto per risolvere un errore del percorso del contenuto
 
-Quando si utilizza la ricerca contenuto nel centro sicurezza e conformità per eseguire ricerche in un numero elevato di cassette postali, è possibile che si verifichino errori di ricerca analoghi a quelli riportati di seguito:
+Quando si utilizza la ricerca contenuto nel centro sicurezza e conformità per eseguire ricerche in un numero elevato di cassette postali, è possibile che si verifichino errori di ricerca simili all'errore:
 
 ```text
 Error
+
 
 The search on the following locations failed:
 
@@ -41,7 +42,7 @@ Tali errori (con i codici di errore di CS001-002, CS003-002, CS008-009, CS012-00
 
 ## <a name="cause-of-content-location-errors"></a>Causa degli errori del percorso del contenuto
 
-Quando si esegue la ricerca di un numero elevato di cassette postali, la ricerca viene distribuita in migliaia di server in un datacenter Microsoft. In una sola volta, i server specifici potrebbero essere nello stato di riavvio o nel processo di failover di copie ridondanti. In entrambi i casi, la richiesta di ricerca del contenuto per il recupero dei dati verrà impostata su timeout. Nell'esempio precedente gli errori relativi alle cassette postali non riuscite sono stati causati dal timeout della ricerca.
+Quando si esegue la ricerca di un numero elevato di cassette postali, la ricerca viene distribuita in migliaia di server in un datacenter Microsoft. In una sola volta, i server specifici potrebbero essere nello stato di riavvio o nel processo di failover di copie ridondanti. In entrambi i casi, la richiesta di ricerca del contenuto per il recupero dei dati scadrà. Nell'esempio precedente gli errori relativi alle cassette postali non riuscite sono stati causati dal timeout della ricerca.
 
 ## <a name="resolving-content-location-errors"></a>Risoluzione degli errori relativi alla posizione del contenuto
 
@@ -53,7 +54,7 @@ In questo modo, la ricerca verrà ritentata solo per le cassette postali che han
 
 ## <a name="tips-to-avoid-content-location-errors"></a>Suggerimenti per evitare errori di posizione del contenuto
 
-Di seguito sono riportate alcune cause di aggiunta degli errori relativi alla posizione del contenuto e alcuni suggerimenti utili per evitarli quando si cerca un numero elevato di cassette postali.
+Di seguito sono riportate alcune altre cause degli errori relativi alla posizione del contenuto e alcuni suggerimenti utili per evitarli durante la ricerca di un numero elevato di cassette postali.
 
 - La cassetta postale che si sta cercando potrebbe essere occupata a causa dell'attività dell'utente. In questo caso, il servizio di ricerca potrebbe limitarsi a impedire che la cassetta postale diventi non disponibile. Per evitare questo, provare a eseguire le ricerche durante gli orari non di ufficio.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: 938d530447d1a798e5a2d6d4c2f622a04827bf1c
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506321"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529601"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -124,7 +124,9 @@ Il contenuto in attesa di una revisione della disposizione viene eliminato solo 
 ## <a name="disposition-of-records"></a>Eliminazione dei record
 
 > [!NOTE]
-> La possibilità di visualizzare i record che sono stati eliminati automaticamente senza una revisione della disposizione continua a essere distribuita ai tenant, in modo che non vengano visualizzati tutti gli elementi rimossi durante questo periodo di implementazione.
+>L'implementazione per la prova dello smaltimento per i record in SharePoint e OneDrive è stata completata. Verrà visualizzato l'elenco delle etichette di conservazione contrassegnate come contenuto come record per SharePoint e OneDrive nella sezione disposizione della pagina Gestione record del centro conformità di Microsoft 365. In queste etichette, è possibile visualizzare l'elenco di elementi in SharePoint e OneDrive che sono stati eliminati automaticamente o dopo una revisione della disposizione.
+
+La prova dello smaltimento dei record in Exchange non è ancora attiva. Quando l'implementazione viene avviata e al termine dell'operazione, verrà aggiornata questa nota.
 
 Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record eliminati automaticamente. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . Ad esempio:
 

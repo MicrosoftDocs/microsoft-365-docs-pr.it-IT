@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 0cb06bb25e3ba6d4e745094a51fb49663bc7b7b7
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 0febd13003cdcb80867bd7f5b91ac482a463895a
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189501"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527588"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurare un connettore per l'importazione dei dati HR (anteprima)
 
@@ -29,9 +29,9 @@ La configurazione di un connettore per i dati HR che i criteri di gestione dei r
 
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- È necessario determinare quali scenari e dati HR importare in Microsoft 365. In questo modo è possibile determinare il numero di file CSV e i connettori HR necessari per la creazione e la modalità di generazione e struttura dei file CSV. I dati HR che vengono importati sono determinati dai criteri di gestione dei rischi Insider che si desidera implementare. Per ulteriori informazioni, vedere passaggio 1.
+- Determinare gli scenari e i dati HR da importare in Microsoft 365. In questo modo è possibile determinare il numero di file CSV e i connettori HR necessari per la creazione e la modalità di generazione e struttura dei file CSV. I dati HR che vengono importati sono determinati dai criteri di gestione dei rischi Insider che si desidera implementare. Per ulteriori informazioni, vedere passaggio 1.
 
-- È necessario determinare come recuperare o esportare i dati dal sistema HR dell'organizzazione (e su base regolare) e aggiungerli ai file CSV creati nel passaggio 1. Lo script eseguito nel passaggio 4 caricherà i dati HR nei file CSV nel cloud Microsoft.
+- Determinare il modo in cui recuperare o esportare i dati dal sistema HR dell'organizzazione (e su base regolare) e aggiungerli ai file CSV creati nel passaggio 1. Lo script eseguito nel passaggio 4 caricherà i dati HR nei file CSV nel cloud Microsoft.
 
 - L'organizzazione deve acconsentire a consentire al servizio di importazione di Office 365 di accedere ai dati nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore HR nel passaggio 3.
 
@@ -69,7 +69,7 @@ Per ulteriori informazioni sui modelli di criteri per la gestione dei rischi Ins
 
 Per ogni scenario HR, è necessario fornire i dati HR corrispondenti in uno o più file CSV. Il numero di file CSV da utilizzare per l'implementazione della gestione dei rischi Insider è descritto più avanti in questa sezione.
 
-Dopo aver creato il file CSV con i dati HR necessari, archiviarlo nel computer locale in cui viene eseguito lo script nel passaggio 4. È inoltre necessario implementare una strategia di aggiornamento per assicurarsi che il file CSV contenga sempre le informazioni più aggiornate in modo che qualsiasi operazione esegua lo script, i dati di dati HR più recenti vengano caricati nel cloud Microsoft e siano accessibili alla soluzione di gestione dei rischi Insider.
+Dopo aver creato il file CSV con i dati HR necessari, archiviarlo nel computer locale in cui viene eseguito lo script nel passaggio 4. È inoltre consigliabile implementare una strategia di aggiornamento per verificare che il file CSV contenga sempre le informazioni più aggiornate in modo che qualsiasi operazione esegua lo script, i dati HR più recenti vengano caricati nel cloud Microsoft e siano accessibili alla soluzione di gestione dei rischi Insider.
 
 > [!IMPORTANT]
 > I nomi delle colonne descritti nelle sezioni seguenti non sono parametri obbligatori, ma solo esempi. È possibile utilizzare qualsiasi nome di colonna nei file CSV. Tuttavia, i nomi di colonna utilizzati in un file CSV *devono* essere mappati al tipo di dati quando si crea il connettore HR nel passaggio 3. Si noti inoltre che i file CSV di esempio nelle sezioni seguenti sono visualizzati nella visualizzazione blocco note. È molto più semplice visualizzare e modificare i file CSV in Microsoft Excel.
@@ -153,7 +153,7 @@ Nella tabella seguente vengono descritte tutte le colonne del file CSV per i dat
 | **EmailAddress**  | Specifica l'indirizzo di posta elettronica (UPN) dell'utente.|
 | **EffectiveDate** | Specifica la data in cui l'utente è stato informato ufficialmente del piano per il miglioramento delle prestazioni. È necessario utilizzare il formato di data seguente: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Osservazioni**| Specifica eventuali osservazioni fornite dal valutatore in merito al piano di miglioramento delle prestazioni. Si tratta di un parametro di testo con un limite di 200 caratteri. Si tratta di un parametro facoltativo. Non è necessario includerlo nel file CSV. |
-| **Valutazione**| Specifica qualsiasi classificazione o altre informazioni relative alla verifica delle prestazioni. piano per il miglioramento delle prestazioni. Si tratta di un parametro di testo che può contenere qualsiasi testo del modulo libero utilizzato dall'organizzazione per riconoscere la valutazione. Ad esempio, "3 attese soddisfatte" o "2 al di sotto della media". Si tratta di un parametro di testo con un limite di 25 caratteri. Si tratta di un parametro facoltativo. Non è necessario includerlo nel file CSV.|
+| **Valutazione**| Specifica qualsiasi classificazione o altre informazioni relative alla verifica delle prestazioni. piano per il miglioramento delle prestazioni. Si tratta di un parametro di testo che può contenere il testo di un modulo libero utilizzato dall'organizzazione per riconoscere la valutazione. Ad esempio, "3 attese soddisfatte" o "2 al di sotto della media". Si tratta di un parametro di testo con un limite di 25 caratteri. Si tratta di un parametro facoltativo. Non è necessario includerlo nel file CSV.|
 |||
 
 ### <a name="determining-how-many-csv-files-to-use-for-hr-data"></a>Determinare il numero di file CSV da utilizzare per i dati HR
@@ -164,7 +164,7 @@ Nel passaggio 3, è possibile scegliere di creare connettori separati per ogni t
 
 - Il metodo per la generazione o la raccolta dei dati HR può determinare il numero di file CSV. Ad esempio, se i diversi tipi di dati HR utilizzati per configurare un connettore HR sono situati in un singolo sistema HR nell'organizzazione, è possibile esportare i dati in un singolo file CSV. Tuttavia, se i dati vengono distribuiti su sistemi HR diversi, potrebbe essere più facile esportare i dati in file CSV diversi. Ad esempio, i dati di dimissioni dei dipendenti possono trovarsi in un sistema HR diverso rispetto ai dati di valutazione del livello di lavoro o delle prestazioni. In questo caso, potrebbe essere più facile avere file CSV separati anziché dover combinare manualmente i dati in un singolo file CSV. In questo modo, la modalità di recupero o esportazione dei dati dai sistemi HR può determinare il numero di file CSV necessari.
 
-- Come regola generale, il numero di connettori HR che è necessario creare è determinato dai tipi di dati in un file CSV. Ad esempio, se un file CSV contiene tutti i tipi di dati necessari per supportare l'implementazione di gestione dei rischi Insider, è necessario un solo connettore HR. Tuttavia, se si dispone di due file CSV separati che contengono un singolo tipo di dati, è necessario creare due connettori HR. Un'eccezione a questo è che se si aggiunge una colonna di HRScenario * * a un file CSV (vedere la sezione successiva), è possibile configurare un singolo connettore HR in grado di elaborare diversi file CSV.
+- Come regola generale, il numero di connettori HR che è necessario creare è determinato dai tipi di dati in un file CSV. Ad esempio, se un file CSV contiene tutti i tipi di dati necessari per supportare l'implementazione di gestione dei rischi Insider, è necessario un solo connettore HR. Tuttavia, se si dispone di due file CSV separati che contengono un singolo tipo di dati, è necessario creare due connettori HR. Un'eccezione a questo è che se si aggiunge una colonna di **HRScenario** a un file CSV (vedere la sezione successiva), è possibile configurare un singolo connettore HR in grado di elaborare diversi file CSV.
 
 ### <a name="configuring-a-single-csv-file-for-multiple-hr-data-types"></a>Configurazione di un singolo file CSV per più tipi di dati HR
 
@@ -176,7 +176,7 @@ Di seguito sono elencati i requisiti per la configurazione di un file CSV con pi
 
 - Per utilizzare un file CSV con più tipi di dati HR, il connettore HR deve sapere quali righe del file CSV contengono i dati di tipo HR. Questa operazione viene eseguita aggiungendo una colonna **HRScenario** aggiuntiva al file CSV. I valori di questa colonna identificano il tipo di dati HR in ogni riga. Ad esempio, i valori che corrispondono ai quattro scenari HR potrebbero essere le \` dimissioni \` , la modifica del livello di \` lavoro, la \` \` revisione delle prestazioni \` e il piano di \` miglioramento delle prestazioni \` .
 
-- Se si dispone di più file CSV che contengono una colonna **HRScenario** , assicurarsi che ogni file utilizzi lo stesso nome di colonna e gli stessi valori che identificano gli scenari HR specifici.
+- Se si dispone di più file CSV che contengono una colonna HRScenario * *, assicurarsi che ogni file utilizzi lo stesso nome di colonna e gli stessi valori che identificano gli scenari HR specifici.
 
 Nell'esempio seguente viene illustrato un file CSV che contiene la colonna **HRScenario** . I valori nella colonna HRScenario identificano il tipo di dati nella riga corrispondente.
 
@@ -380,6 +380,6 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
 ## <a name="existing-hr-connectors"></a>Connettori HR esistenti
 
-Il 20 luglio 2020, sono stati rilasciati ulteriori scenari che sono supportati dai connettori HR. Si tratta degli scenari HR descritti in precedenza in questo articolo. I connettori HR creati prima di questa data supportano solo lo scenario di dimissioni dei dipendenti. Se è stato creato un connettore HR prima del 20 luglio 2020, è stata eseguita la migrazione in modo che continui a eseguire la migrazione dei dati HR nel cloud Microsoft. Non è necessario eseguire alcuna operazione per mantenere questa funzionalità. È possibile continuare a utilizzare il connettore senza interruzioni.
+Il 20 luglio 2020, sono stati rilasciati ulteriori scenari che sono supportati dai connettori HR. Si tratta degli scenari HR descritti in precedenza in questo articolo. Qualsiasi connettore HR creato prima di questa data supporta solo lo scenario di dimissioni dei dipendenti. Se è stato creato un connettore HR prima del 20 luglio 2020, è stata eseguita la migrazione in modo che continui a eseguire la migrazione dei dati HR nel cloud Microsoft. Non è necessario eseguire alcuna operazione per mantenere questa funzionalità. È possibile continuare a utilizzare il connettore senza interruzioni.
 
 Se si desidera implementare ulteriori scenari HR, creare un nuovo connettore HR e configurarlo per gli scenari HR aggiuntivi che sono stati rilasciati. È inoltre necessario creare uno o più nuovi file CSV che contengono i dati per supportare gli scenari HR aggiuntivi. Dopo aver creato un nuovo connettore HR, eseguire lo script utilizzando l'ID processo del nuovo connettore e dei file CSV con i dati per gli scenari HR aggiuntivi.

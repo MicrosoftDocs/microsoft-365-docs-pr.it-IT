@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come configurare le impostazioni di ricerca e analisi, come quasi duplicati, Threading di posta elettronica e temi durante la gestione delle indagini sui dati.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 06f39a3dd52ecb872c671035460bab9a34956e49
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3100c83fc027e793f7937a4d27e059ce7e3038a0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033666"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527352"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analisi
 
@@ -37,6 +37,7 @@ In questa sezione, è possibile impostare parametri per il rilevamento duplicati
 - Nascondi i duplicati per impostazione predefinita: se questa impostazione è attivata, per impostazione predefinita verrà applicato un filtro per nascondere i documenti duplicati nel working set. Il filtro può essere rimosso manualmente nel working set, se necessario.
 
 - Numero minimo/massimo di parole: quasi duplicati e il threading della posta elettronica verrà eseguito solo sui documenti che hanno almeno il numero minimo di parole e il numero massimo di parole.
+
 Per ulteriori informazioni, vedere [near duplicate detection](near-duplicates.md) and [email Threading](email-threading.md).
 
 ## <a name="themes"></a>Temi
@@ -44,8 +45,11 @@ Per ulteriori informazioni, vedere [near duplicate detection](near-duplicates.md
 In questa sezione, è possibile impostare parametri per i temi.
 
 - Abilita/Disabilita: Includi temi il clustering come parte del flusso di analisi se abilitato.
-- Regolare il numero massimo di temi dinamicamente dinamicamente: in alcuni casi, non sono disponibili documenti sufficienti per produrre il numero di temi desiderato. Se questa impostazione è attivata, anziché tentare di forzare il numero massimo di temi desiderato, il sistema regola in modo dinamico il numero massimo di temi.
-- Numero massimo di temi: numero desiderato di temi
+
+- Regola dinamicamente il numero massimo di temi: in alcuni casi, non sono disponibili documenti sufficienti per produrre il numero di temi desiderato. Se questa impostazione è attivata, anziché tentare di forzare il numero massimo di temi desiderato, il sistema regola in modo dinamico il numero massimo di temi.
+
+- Numero massimo di temi: numero desiderato di temi.
+
 - Includere numeri nei temi: quando è abilitata, includerà i numeri durante la generazione di temi.  
 
 ## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico caratteri (OCR)
