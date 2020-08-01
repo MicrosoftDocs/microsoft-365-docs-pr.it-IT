@@ -9,12 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: fb5a73782650cee36ffdfb95a9bf6efd9464435f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430496"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529482"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configurazione rete in Microsoft Managed Desktop
 
@@ -25,7 +27,7 @@ ms.locfileid: "45430496"
 
 Microsoft Managed Desktop è un servizio gestito dal cloud. Esistono un insieme di endpoint che i servizi Microsoft Managed Desktop devono essere in grado di raggiungere. In questa sezione vengono elencati gli endpoint che devono essere consentiti per i vari aspetti del servizio Microsoft Managed Desktop. 
 
-I clienti possono ottimizzare la propria rete inviando tutte le richieste di rete di Microsoft 365 attendibili direttamente tramite il proprio firewall o proxy, ignorando l'autenticazione e tutti gli ulteriori controlli o elaborazioni a livello di pacchetto. Questo riduce la latenza e i requisiti di capacità del perimetro. 
+I clienti possono ottimizzare la propria rete inviando tutte le richieste di rete di Microsoft 365 attendibili direttamente tramite il proprio firewall o proxy, ignorando l'autenticazione e tutti gli ulteriori controlli o elaborazioni a livello di pacchetto. In questo modo si riducono la latenza e i requisiti di capacità perimetrale. 
 
 Inoltre, per ottimizzare le prestazioni dei servizi basati sul cloud di Microsoft Managed Desktop, questi endpoint richiedono una gestione speciale da parte dei browser client e dei dispositivi nella propria rete perimetrale. Tra questi dispositivi sono inclusi i firewall, la rottura e l'ispezione SSL, i dispositivi di ispezione dei pacchetti e i sistemi di prevenzione della perdita di dati.
 

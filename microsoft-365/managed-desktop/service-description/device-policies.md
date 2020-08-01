@@ -1,17 +1,20 @@
 ---
 title: Configurazione delle periferiche
 description: Informazioni sui criteri predefiniti applicati ai dispositivi Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e0e5c003ed78b78c5f259eae7e08478d523b5b12
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d16f63490de8060eea7ef06a4ad6960d846f16eb
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773788"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529386"
 ---
 # <a name="device-configuration"></a>Configurazione delle periferiche
 

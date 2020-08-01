@@ -1,17 +1,20 @@
 ---
 title: Usare i dati analitici
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bcb47a7d5e5dc0880ade6a7e5900d1019e13a8d7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250426"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529768"
 ---
 # <a name="work-with-insights"></a>Usare i dati analitici
 
@@ -46,12 +49,12 @@ Questa visualizzazione fornisce un riepilogo di integrità dei dispositivi gesti
 
 Per ulteriori informazioni, [vedere affidabilità Insights](reliability-insights.md).
 
-## <a name="battery-insights"></a>Intuizioni della batteria
+## <a name="battery-insights"></a>Dati analitici sulle batterie
 In questa visualizzazione vengono fornite informazioni sul consumo di energia delle app e sulla durata della batteria proiettata per i dispositivi nell'ambiente. Per visualizzare queste informazioni, selezionare la scheda **batteria** .
 
 Per ulteriori informazioni, [vedere Battery Insights](battery-insights.md).
 
-## <a name="windows-security-update-insights"></a>Insights per l'aggiornamento della sicurezza di Windows
+## <a name="windows-security-update-insights"></a>Dati analitici sugli aggiornamenti della sicurezza di Windows
 
 In questa visualizzazione vengono fornite informazioni sullo stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop. Per visualizzare queste informazioni, selezionare la scheda **udates di protezione di Windows** .
 

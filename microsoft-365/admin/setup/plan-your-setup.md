@@ -19,19 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
-description: Informazioni sulle operazioni necessarie per configurare Microsoft 365 for business.
-ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Informazioni sui requisiti e le considerazioni per l'esecuzione del passaggio a Microsoft 365 for business.
+ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778950"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529661"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Pianificare la configurazione di Microsoft 365 per le aziende
 
 Questo articolo è destinato agli utenti che hanno effettuato la sottoscrizione a un piano Microsoft 365 for business.
   
-Prima di spostare l'organizzazione in Microsoft 365, è necessario decidere quali sono le informazioni necessarie per l'utente.
+Prima di spostare l'organizzazione in Microsoft 365, è necessario soddisfare i requisiti, informazioni che è necessario avere a disposizione e decisioni da prendere.
+
+
   
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>Informazioni per avere a disposizione prima di eseguire l'installazione guidata
 

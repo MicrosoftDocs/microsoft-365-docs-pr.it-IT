@@ -1,19 +1,22 @@
 ---
-title: Intuizioni della batteria
+title: Dati analitici sulle batterie
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: f339fc98ea94c291c533045e9906f626f4b74e2a
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170596"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529840"
 ---
-# <a name="battery-insights"></a>Intuizioni della batteria
+# <a name="battery-insights"></a>Dati analitici sulle batterie
 Questa visualizzazione fornisce metriche per l'utilizzo di energia, batteria e app per i dispositivi Microsoft Managed Desktop. A tal fine, un'app viene considerata "in uso" se è in esecuzione e in stato di inattività.
 
 Per visualizzare i dati di utilizzo, selezionare la scheda **batteria** .
@@ -38,7 +41,7 @@ Nell'area **Top Energy consumer** sono disponibili le app nel proprio ambiente c
  Per ogni app, i segmenti colorati mostrano la distribuzione dell'utilizzo di energia dell'app tra queste categorie:
 
 - CPU
-- Schermo
+- Visualizza
 - Rete
 - Altro
 

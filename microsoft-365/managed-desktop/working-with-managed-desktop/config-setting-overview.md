@@ -5,16 +5,18 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, Documentation, Sett
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d8ebe4519d169db5500c55a3337836ca2d0986c0
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1af320ee6151036000e4e8c6fedc4d9152411283
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390723"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530236"
 ---
-# <a name="configurable-settings---microsoft-managed-desktop"></a>Impostazioni configurabili-Microsoft Managed Desktop
+# <a name="configurable-settings---microsoft-managed-desktop"></a>Impostazioni configurabili - Microsoft Managed Desktop
 
 Microsoft Managed Desktop distribuisce le impostazioni e i criteri applicati a tutti i dispositivi gestiti da Microsoft Managed Desktop. Per ulteriori informazioni, vedere [configurazione dei dispositivi](../service-description/device-policies.md).
 
@@ -26,7 +28,7 @@ Le modifiche alle impostazioni configurabili vengono apportate nel cloud e appli
 
 Per utilizzare le impostazioni configurabili è necessario un numero limitato di volte. 
 
-**Processo** di onboarding: Microsoft Managed Desktop consiglia di personalizzare le impostazioni configurabili quando si esegue l'onboarding di Microsoft Managed Desktop Service o quando si esegue l'onboarding di un numero elevato di dispositivi (20 o più). Le categorie di impostazioni sono configurate nel portale di amministrazione di Microsoft Managed Desktop. Dopo aver eseguito l'onboarding e aver accesso al portale di amministrazione, è possibile decidere quali categorie di impostazioni si desidera personalizzare per l'organizzazione, apportare le modifiche, eseguire la fase di distribuzione e quindi distribuire le modifiche.
+**Processo di onboarding** : Microsoft Managed Desktop consiglia di personalizzare le impostazioni configurabili quando si esegue l'onboarding di Microsoft Managed Desktop Service o quando si esegue l'onboarding di un numero elevato di dispositivi (20 o più). Le categorie di impostazioni sono configurate nel portale di amministrazione di Microsoft Managed Desktop. Dopo aver eseguito l'onboarding e aver accesso al portale di amministrazione, è possibile decidere quali categorie di impostazioni si desidera personalizzare per l'organizzazione, apportare le modifiche, eseguire la fase di distribuzione e quindi distribuire le modifiche.
 
 **Gestione delle impostazioni** -rivedere le impostazioni regolarmente e rendere necessari gli aggiornamenti. Potrebbe essere necessario apportare modifiche per supportare una modifica all'interno dell'azienda.   
 
@@ -53,7 +55,7 @@ Microsoft Managed Desktop consiglia di seguire un processo analogo al seguente q
 
 **Passaggio 2-Configure and Stage Deployment** -apportare modifiche alle impostazioni configurabili nel portale di amministrazione di Microsoft Managed Desktop. Eseguire il passaggio delle modifiche in modo che siano pronte per la distribuzione. Tenere presente che gli utenti devono conoscere le modifiche e in che modo le modifiche cambiano la propria esperienza del dispositivo.   
 
-Le modifiche vengono configurate e inscenate nel portale di amministrazione di Microsoft Managed Desktop. Per ulteriori informazioni, vedere [personalizzare le impostazioni](config-setting-ref.md)configurabili. 
+Le modifiche vengono configurate e inscenate nel portale di amministrazione di Microsoft Managed Desktop. Per ulteriori informazioni, vedere [personalizzare le impostazioni configurabili](config-setting-ref.md). 
 
 **Passaggio 3: comunicare le modifiche** Comunicare informazioni sulle modifiche imminenti agli utenti. Per ogni distribuzione, completare la comunicazione che fa parte dei processi di gestione delle modifiche. È necessario comunicare chiaramente eventuali modifiche che influiscono sul funzionamento di un utente o su ciò che vedranno nei propri dispositivi.
 
@@ -65,12 +67,12 @@ Tutte le impostazioni configurabili vengono gestite tramite il portale di ammini
 - **Track Progress** – stato del rilevamento dopo la distribuzione della modifica. Lo stato verrà modificato **in in corso**e quindi **completo**o **non riuscito**. Se una distribuzione ha esito negativo, viene aperta automaticamente una richiesta di supporto per le operazioni di Microsoft Managed Desktop per esaminare il problema.  
 - **Vedere la versione distribuita** : ogni modifica distribuita ha un numero di versione.
 - **Ripristina modifiche** – il ripristino di una modifica interrompe la distribuzione corrente e ripristina tutti i gruppi alle ultime modifiche che sono state distribuite a tutti i gruppi. Si sta ripristinando il valore dell'impostazione dell'ultima nota.
-- Convalidare le **modifiche** -dopo aver completato la distribuzione, convalidare le modifiche sono state applicate come previsto.  
+- **Convalidare le modifiche** -dopo aver completato la distribuzione, convalidare le modifiche sono state applicate come previsto.  
 
 Se una distribuzione ha avuto esito negativo oppure non è possibile ripristinare una modifica, [aprire una richiesta di supporto](admin-support.md) con le operazioni di Microsoft Managed Desktop. 
 
 Per ulteriori informazioni, vedere [deploy and Track configurable settings](config-setting-deploy.md).
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
-- [Informazioni di riferimento sulle impostazioni configurabili](config-setting-ref.md) 
-- [Distribuire le impostazioni configurabili](config-setting-deploy.md) 
+- [Riferimento alle impostazioni configurabili](config-setting-ref.md) 
+- [Distribuire impostazioni configurabili](config-setting-deploy.md) 

@@ -1,22 +1,24 @@
 ---
 title: Preparare unità mappate per Microsoft Managed Desktop
 description: Passaggi importanti per assicurarsi che
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8bdbbefb1fc3bfff324787eedb497afe781184f0
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280174"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530176"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparare unità mappate per Microsoft Managed Desktop
 
-Molti ambienti aziendali presentano requisiti legacy per le unità mappate per consentire agli utenti o ai team di condividere e archiviare file oppure per le applicazioni locali. Microsoft non consiglia l'utilizzo di unità mappate con Microsoft Managed Desktop. È consigliabile invece modernizzare le soluzioni di accesso ai file di Yor nel modo seguente:
+Molti ambienti aziendali presentano requisiti legacy per le unità mappate per consentire agli utenti o ai team di condividere e archiviare file oppure per le applicazioni locali. Microsoft non consiglia l'utilizzo di unità mappate con Microsoft Managed Desktop. È consigliabile invece modernizzare le soluzioni di accesso ai file come indicato di seguito:
   
 - Eseguire la migrazione delle unità mappate utilizzate dai singoli utenti a OneDrive for business. 
 - Eseguire la migrazione delle unità mappate utilizzate dai team per condividere i file in SharePoint Online. 

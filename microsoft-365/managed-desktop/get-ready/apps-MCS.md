@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0cb4da85b5548ced757197a3af818e212b065b47
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d2a6c09e1bcb84885e607d133c14e26e08e3c621
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085941"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530164"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Lavorare con Microsoft Consulting Services
 
@@ -21,7 +24,7 @@ ms.locfileid: "42085941"
 
 Per utilizzare la confezione dell'app MCS, **è necessario fornire questi elementi**:
 
-- File del programma di installazione di origine (ad esempio, Setup. exe o. msi).
+- File del programma di installazione di origine (ad esempio, setup.exe o. msi).
 - Istruzioni di installazione, specificando i dettagli sul modo in cui deve essere consentita l'installazione finale. Ad esempio, se è presente un collegamento sul desktop per l'app? Che cosa dovrebbe essere la visibilità dell'app? Se l'app si connette a un server e, in caso affermativo, quale? Per informazioni dettagliate, vedere il [modello di richiesta di pacchettizzazione dell'applicazione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
 - È necessario eseguire un test di accettazione personalizzato per verificare che l'app funzioni come necessario nell'ambiente in uso.
 

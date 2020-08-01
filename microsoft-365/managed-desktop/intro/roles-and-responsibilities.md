@@ -1,20 +1,22 @@
 ---
-title: Ruoli e responsabilità di Microsoft Managed Desktop
+title: Ruoli e responsabilità Microsoft Managed Desktop
 description: In questo argomento vengono descritti i ruoli e le responsabilità forniti da Microsoft per Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 02a0b11a1a210367d76e73c75ac5c1fc7a66f94f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 85e352ec657da435e435311b2ad48beb6a0487ee
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636209"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529996"
 ---
-# <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Ruoli e responsabilità di Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Ruoli e responsabilità Microsoft Managed Desktop
 
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/admin-access); do not delete.-->
@@ -37,7 +39,7 @@ Raggruppamento di utenti e dispositivi | Il team di Microsoft Managed Desktop Op
 
 ## <a name="your-roles-and-responsibilities"></a>Ruoli e responsabilità
 
-Di seguito è riportato un ulteriore gruppo di ruoli e responsabilità comuni che non sono forniti da Microsoft, ma che sono necessari per una distribuzione corretta. Non è esaustivo, ma è applicabile per la maggior parte delle organizzazioni. Di seguito sono riportati alcuni elementi che sia Microsoft che il cliente condividono responsibilties. 
+Di seguito è riportato un ulteriore gruppo di ruoli e responsabilità comuni che non sono forniti da Microsoft, ma che sono necessari per una distribuzione corretta. Non è esaustivo, ma è applicabile per la maggior parte delle organizzazioni. Di seguito sono riportati alcuni elementi che sia Microsoft che il cliente condividono le responsabilità. 
 
 Ruolo o responsabilità | Descrizione
 --- | ---
@@ -46,7 +48,7 @@ Gestione delle identità | Il cliente è responsabile della creazione degli acco
 Microsoft 365 Apps per la configurazione e la gestione dell'organizzazione | Microsoft è responsabile della distribuzione di applicazioni di Office per gli utenti finali e tali applicazioni vengono mantenute aggiornate. <br><br> Il cliente ha la responsabilità di gestire i criteri e i servizi di Microsoft 365, incluse le responsabilità di amministrazione di Exchange Online:<br>-Amministrazione della posta elettronica<br>-Configurazione della cassetta postale e della regola<br>-Gestione in locale di Exchange<br><br>Il cliente è responsabile anche degli strumenti di collaborazione, dell'amministrazione di SharePoint Server, della gestione del dominio, dei criteri di sicurezza e delle informazioni impostati nell'interfaccia di amministrazione di Microsoft 365. 
 Supporto per gli utenti finali | Il cliente è responsabile della fornitura del supporto per gli utenti finali per: <br>-Sull'infrastruttura del sito: tutte le connessioni di rete e Internet, l'infrastruttura VPN e la configurazione dei client, le apparecchiature locali per conferenze, stampanti, server proxy e configurazione, firewall.<br><br>-Risorse cloud a livello di azienda: posta elettronica, SharePoint, servizi di collaborazione e altre infrastrutture cloud che si riferiscono all'impronta tecnologica a livello aziendale.<br><br>-Line of business e qualsiasi altra applicazione specifica della società.
 App | I ruoli e le responsabilità variano un po' per le app fornite come parte di Microsoft Managed Desktop rispetto a quelle da te fornite. <br><br>Per le app fornite da Microsoft (Microsoft 365 Apps for Enterprise composto da Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for business, teams e OneNote), **Microsoft** fornirà servizi completi per la distribuzione, l'aggiornamento e il supporto. **È** necessario ottenere e assegnare licenze per queste app, aggiungere utenti ai gruppi di sicurezza e gestire la fine della vita e distribuire i componenti aggiuntivi necessari.<br><br>Per le app che fornisci (ad esempio le app line-of-business), sia che si tratti di un pacchetto da soli o che coinvolga un fornitore non Microsoft, **è** responsabile di queste azioni: <br><br>-Identificare le applicazioni necessarie per i gruppi di utenti di destinazione<br>-Creazione e gestione dei gruppi di Azure AD per la distribuzione di app<br>-Pacchetti di app per rispondere agli standard di distribuzione di Microsoft Intune<br>-Caricamento delle app in Microsoft Intune<br>-Testare le app nell'ambiente desktop Microsoft gestito<br>-Testare le app con gli utenti finali<br>-Gestione e assegnazione degli utenti alle applicazioni<br>-Identificare e distribuire gli aggiornamenti delle applicazioni tramite Microsoft Intune<br>-Disinstallazione e rimozione di applicazioni quando sono stati ritirati<br>-Procurare e assegnare licenze<br>-Fornitura del supporto per gli utenti finali per le app line-of-business<br>-Gestione delle impostazioni delle app in remoto<br><br>**Microsoft** fornirà gli strumenti di distribuzione di Microsoft Intune per distribuire le applicazioni ai client remoti.<br><br>Per ulteriori informazioni, vedere [app](../get-ready/apps.md)
-Monitoraggio e risposta alla sicurezza | Il cliente è responsabile per l'analisi e la risoluzione degli incidenti per i dispositivi desktop non Microsoft gestiti e per garantire che il team Microsoft Managed Desktop Operations sia informato di eventuali problemi che potrebbero influire sul servizio.
+Monitoraggio sicurezza e risposta | Il cliente è responsabile per l'analisi e la risoluzione degli incidenti per i dispositivi desktop non Microsoft gestiti e per garantire che il team Microsoft Managed Desktop Operations sia informato di eventuali problemi che potrebbero influire sul servizio.
 Supporto per le operazioni | Il cliente è responsabile della fornitura di un elenco di contatti dei clienti preferiti e di esperti in materia. Microsoft ha bisogno di questi casi, in caso di un incidente operativo desktop non gestito da Microsoft. <br><br>Il cliente è anche responsabile dell'analisi e della risoluzione degli incidenti per dispositivi e servizi desktop non gestiti da Microsoft e per garantire che il team delle operazioni di Microsoft Managed Desktop sia sempre informato.
 Infrastruttura di rete, inclusa la VPN | Il cliente è responsabile dell'installazione, della configurazione e della gestione (inclusi la risoluzione dei problemi e il debug) di tutti i servizi e infrastruttura connessi alla rete, tra cui la connettività Internet, i controlli di rete, la configurazione del proxy e l'infrastruttura di connettività remota.<br><br>Se un proxy è configurato (in hardware o software), è presente un insieme di URL che devono essere consentiti dal proxy. Il cliente è responsabile della risoluzione di eventuali conflitti o incompatibilità dovuti a più proxy. È possibile aggiungere proxy di rete specifici per l'organizzazione utilizzando impostazioni configurabili. Per ulteriori informazioni, vedere [impostazioni configurabili](../working-with-managed-desktop/config-setting-ref.md#proxy).<br><br>Per ulteriori informazioni, vedere [configurazione del proxy](../get-ready/network.md).
 Stampa | Il cliente è responsabile per l'installazione, la manutenzione e l'amministrazione di stampanti e code di stampa. La stampa cloud è una soluzione consigliata, ma non è necessaria. 

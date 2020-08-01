@@ -1,7 +1,7 @@
 ---
 title: Preparare certificati e profili di rete per Microsoft Managed Desktop
 description: certs/WiFi/LAN
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,18 +9,20 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0c3edda92e28b45b7f7b48c1d5002014f71116f6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c7c57861986d275165484ae726140720a75da88e
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596573"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530032"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparare certificati e profili di rete per Microsoft Managed Desktop  
  
 L'autenticazione basata su certificato è un requisito comune per i clienti che utilizzano Microsoft Managed Desktop. Potrebbe essere necessario disporre di certificati per accedere a Wi-Fi o LAN, per connettersi a soluzioni VPN o per accedere alle risorse interne nell'organizzazione.   
  
-Poiché i dispositivi Microsoft Managed Desktop vengono aggiunti a Azure Active Directory (Azure AD) e sono gestiti da Microsoft Intune, è necessario distribuire tali certificati utilizzando un protocollo SCEP (Simple Certificate requestment Protocol) o PKCS (Public Key Cryptography Standard). infrastruttura dei certificati integrata con Intune.    
+Poiché i dispositivi Microsoft Managed Desktop vengono aggiunti a Azure Active Directory (Azure AD) e sono gestiti da Microsoft Intune, è necessario distribuire tali certificati utilizzando un protocollo SCEP (Simple Certificate confirmation Protocol) o un'infrastruttura di certificati PKCS (Public Key Cryptography Standard) integrata con Intune.    
  
 ## <a name="certificate-requirements"></a>Requisiti per i certificati 
  
@@ -37,7 +39,7 @@ Prima di distribuire i certificati di SCEP o PKCS in Microsoft Managed Desktop, 
   
 ## <a name="wi-fi-connectivity-requirements"></a>Requisiti di connettività Wi-Fi
 
-Per consentire a un dispositivo di essere fornito automaticamente con la configurazione Wi-Fi necessaria per la rete aziendale, potrebbe essere necessario un profilo di configurazione Wi-Fi. È possibile configurare Microsoft Managed Desktop per distribuire questi profili nei propri dispositivi. Se la sicurezza della rete richiede che i dispositivi facciano parte del dominio locale, potrebbe essere necessario valutare l'infrastruttura di rete Wi-Fi per assicurarsi che sia compatibile con i dispositivi Microsoft Managed Desktop (i dispositivi Microsoft Managed Desktop sono collegati a Azure AD-join solo). 
+Per consentire a un dispositivo di essere fornito automaticamente con la configurazione Wi-Fi necessaria per la rete aziendale, potrebbe essere necessario un profilo di configurazione Wi-Fi. È possibile configurare Microsoft Managed Desktop per distribuire questi profili nei propri dispositivi. Se la sicurezza della rete richiede che i dispositivi facciano parte del dominio locale, potrebbe essere necessario valutare l'infrastruttura di rete Wi-Fi per assicurarsi che sia compatibile con i dispositivi Microsoft Managed Desktop (i dispositivi Microsoft Managed Desktop sono solo di Azure AD-join). 
  
 Prima di distribuire una configurazione Wi-Fi ai dispositivi Microsoft Managed Desktop, sarà necessario raccogliere i requisiti dell'organizzazione per ogni rete Wi-Fi. Per semplificare questa operazione, è possibile utilizzare questo [modello di profilo Wi-Fi](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx).
  
@@ -53,7 +55,7 @@ Prima di distribuire un profilo di configurazione di rete cablata ai dispositivi
 2. Aprire un prompt dei comandi con credenziali amministrative. 
 3. Individuare il nome dell'interfaccia LAN eseguendo l' **interfaccia netsh interface show**. 
 4. Esportare il codice XML del profilo LAN eseguendo **netsh lan export profile folder =.  Interface = "interface_name"**. 
-5. Se è necessario testare il profilo esportato sul dispositivo Microsoft Managed Desktop, eseguire **Netsh LAN Add profile filename = "PATH_AND_FILENAME. xml" Interface = "INTERFACE_NAME"**. 
+5. Se è necessario testare il profilo esportato sul dispositivo Microsoft Managed Desktop, eseguire **Netsh LAN Add profile filename = "PATH_AND_FILENAME.xml" Interface = "INTERFACE_NAME"**. 
  
  
 ## <a name="deploy-certificate-infrastructure"></a>Distribuire l'infrastruttura di certificati  
@@ -85,6 +87,6 @@ Per distribuire certificati e profili, eseguire la procedura seguente:
 2. Creare un profilo per ogni SCEP o PKCS (vedere [Create a SCEP certificate profile](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) or [Create a PKCS certificate profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) ognuno di questi profili deve avere una descrizione che includa una data di scadenza nel formato gg/mm/aaaa. **I profili dei certificati senza una data di scadenza non verranno distribuiti.**
 3. Creare un profilo per ogni rete WiFi aziendale (vedere [Impostazioni Wi-Fi per i dispositivi Windows 10 e versioni successive](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
 4. Creare un profilo per ogni VPN aziendale (vedere [Windows 10 e le impostazioni dei dispositivi olografici di Windows per aggiungere connessioni VPN tramite Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
-5. Inviare una richiesta di supporto intitolata "distribuzione di certificati" o "distribuzione del profilo Wi-Fi" per le operazioni IT di Microsoft Managed Desktop tramite il portale di amministrazione di Microsoft Managed Desktop per esaminare e distribuire il profilo di configurazione in "dispositivi di lavoro moderni – test ". Microsoft Managed Desktop IT Operations consente di sapere quando la richiesta è stata completata tramite la richiesta di supporto nel portale di amministrazione. 
+5. Inviare una richiesta di supporto intitolata "distribuzione di certificati" o "distribuzione del profilo Wi-Fi" per le operazioni IT di Microsoft Managed Desktop tramite il portale di amministrazione di Microsoft Managed Desktop per esaminare e distribuire il profilo di configurazione in "dispositivi di lavoro moderni – test". Microsoft Managed Desktop IT Operations consente di sapere quando la richiesta è stata completata tramite la richiesta di supporto nel portale di amministrazione. 
  
  

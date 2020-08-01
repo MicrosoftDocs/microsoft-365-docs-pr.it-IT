@@ -1,19 +1,22 @@
 ---
-title: Distribuire le app ai dispositivi
+title: Distribuire le app sui dispositivi
 description: Informazioni per l'aggiunta e la distribuzione di app nei dispositivi Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, Documentation, app, app line-of-business, app LOB
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 6d35ee7a4a7755a043136f33600abad424956032
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046329"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529398"
 ---
-# <a name="deploy-apps-to-devices"></a>Distribuire le app ai dispositivi
+# <a name="deploy-apps-to-devices"></a>Distribuire le app sui dispositivi
 Parte dell'onboarding di Microsoft Managed Desktop include l'aggiunta e la distribuzione di app ai dispositivi dell'utente. Dopo aver utilizzato il portale Microsoft Managed Desktop, è possibile aggiungere e distribuire le app. 
 
 Il processo globale è simile al seguente:
@@ -85,7 +88,7 @@ Disponibili |  L'app sarà disponibile nell'app o nel sito Web del portale azien
 Obbligatorio |  L'app è installata nei dispositivi nei gruppi selezionati. | MMD – *nome dell'app* – obbligatorio
 Uninstall |  L'app viene disinstallata dai dispositivi nei gruppi selezionati. | MMD – *nome applicazione* – disinstallazione
 
-Aggiungere gli utenti a questi gruppi per rendere l'app disponibili, installare l'app o rimuovere l'app dal proprio dispositivo Microsoft Managed Desktop. 
+Aggiungere gli utenti a questi gruppi per rendere l'app disponibile, installare l'app o rimuovere l'app dal proprio dispositivo Microsoft Managed Desktop. 
 
 <span id="3" />
 

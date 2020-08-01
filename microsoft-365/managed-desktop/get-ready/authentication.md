@@ -1,24 +1,27 @@
 ---
 title: Preparare l'accesso alle risorse locali per Microsoft Managed Desktop
 description: Passaggi importanti per assicurarsi che un annuncio di Azure sia in grado di comunicare con Active Directory locale per fornire l'autenticazione
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c4ebe0c7ad3d1e197cf90cc975366df61d3b0cb5
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 7caeee6f476fea7881884cea20bd2a59db2c13d9
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276917"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530044"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Preparare l'accesso alle risorse locali per Microsoft Managed Desktop
 
 In Microsoft Managed Desktop, i dispositivi vengono automaticamente aggiunti a Azure Active Directory (Azure AD). Questo significa che se si utilizza Active Directory locale, è necessario verificare alcuni elementi per garantire che i dispositivi aggiunti a Azure AD possano comunicare con Active Directory locale. 
 
 > [!NOTE]  
-> ** Ambiente ibrido Azure AD join non è supportato da Microsoft Managed Desktop.
+> Ambiente *ibrido* Azure AD join non è supportato da Microsoft Managed Desktop.
 
 Azure Active Directory consente agli utenti di usufruire del servizio Single Sign-on (SSO), il che significa che in genere non dovranno fornire le credenziali ogni volta che utilizzano le risorse.
 
@@ -45,7 +48,7 @@ Nella maggior parte delle organizzazioni, gli utenti saranno in grado di utilizz
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Accesso Single Sign-on tramite Windows Hello for business
 
-I dispositivi Microsoft Managed Desktop offrono agli utenti un'esperienza veloce e con password utilizzando Windows Hello for business. Per garantire che Windows Hello for Business funzioni senza che gli utenti debbano fornire la propria UPN e la relativa password, visitare [Configure Azure ad joined devices for on-premises Single-Sign on using Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) per controllare i requisiti e quindi seguire i passaggi disponibili.
+I dispositivi Microsoft Managed Desktop offrono agli utenti un'esperienza veloce e con password utilizzando Windows Hello for business. Per garantire che Windows Hello for Business funzioni senza che gli utenti debbano fornire la rispettiva UPN e la password, visitare [Configure Azure ad joined devices for on-premises Single-Sign on using Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) per controllare i requisiti e quindi seguire i passaggi disponibili.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>App e risorse che utilizzano l'autenticazione
@@ -55,7 +58,7 @@ Fare riferimento a comprendere le considerazioni relative alle [applicazioni e a
 
 - Se si utilizzano **app basate su cloud**, ad esempio quelle aggiunte alla raccolta delle app di Azure ad, la maggior parte non richiede alcuna ulteriore preparazione per l'utilizzo con Microsoft Managed Desktop. Tuttavia, qualsiasi applicazione Win32 che non utilizza Web Account Manager (WAM) potrebbe comunque richiedere agli utenti di eseguire l'autenticazione.
 
-- Per le app ospitate in **locale**, accertarsi di aggiungere tali app all'elenco dei siti attendibili nei browser. Ciò consentirà l'autenticazione di Windows in modo che funzioni correttamente, senza che vengano richiesti gli utenti per le credenziali. A tale scopo, fare riferimento a [siti attendibili](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) nella Guida di [riferimento alle impostazioni](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref)configurabili.
+- Per le app **ospitate in locale**, accertarsi di aggiungere tali app all'elenco dei siti attendibili nei browser. Ciò consentirà l'autenticazione di Windows in modo che funzioni correttamente, senza che vengano richiesti gli utenti per le credenziali. A tale scopo, fare riferimento a [siti attendibili](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref#trusted-sites) nella Guida di [riferimento alle impostazioni configurabili](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/config-setting-ref).
 
 - Se si utilizzano i servizi federati di Active Directory, verificare che SSO sia abilitato utilizzando la procedura descritta in [Verify and Manage Single Sign-on with ad FS](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)). 
 

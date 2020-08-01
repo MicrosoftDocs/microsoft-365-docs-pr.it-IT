@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430436"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529756"
 ---
 # <a name="getting-help-for-end-users"></a>Ottenere assistenza per gli utenti finali
 
@@ -44,7 +47,7 @@ Affinché gli utenti finali siano in grado di ottenere assistenza tramite l'app,
 
 Se i prerequisiti sono stati verificati e l'app Ottieni aiuto continua a non funzionare, l'amministratore IT dovrà presentare una richiesta di [supporto](admin-support.md).
 
-## <a name="phone-support"></a>Assistenza telefonica 
+## <a name="phone-support"></a>Supporto telefonico
 
 Gli utenti finali con i dispositivi Microsoft Managed Desktop hanno anche accesso ai numeri di telefono gratuiti che possono chiamare. Questa operazione è destinata a essere utilizzata quando la guida non è disponibile. Ad esempio, se non sono in grado di accedere al dispositivo o se il dispositivo è stato interrotto. Di seguito sono richiamati i numeri di telefono per il supporto telefonico:
 

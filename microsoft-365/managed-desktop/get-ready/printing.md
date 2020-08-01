@@ -1,20 +1,22 @@
 ---
-title: Preparare le risorse di stampa per Microsoft Managed Desktop
+title: Preparare risorse di stampa per Microsoft Managed Desktop
 description: Passaggi importanti per assicurarsi che la stampa funzioni senza problemi
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a90d104915ecdd31d9ac35a6393fba74a3816ea8
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826438"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530248"
 ---
-# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Preparare le risorse di stampa per Microsoft Managed Desktop
+# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Preparare risorse di stampa per Microsoft Managed Desktop
 
 Quando si è pronti per eseguire la registrazione in Microsoft Managed Desktop, è consigliabile valutare i requisiti di stampa e determinare l'approccio appropriato per l'ambiente in uso. Sono disponibili tre opzioni:
  

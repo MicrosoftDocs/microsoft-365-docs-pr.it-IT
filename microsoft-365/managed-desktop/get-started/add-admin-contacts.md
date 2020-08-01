@@ -1,17 +1,20 @@
 ---
 title: Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
 description: Indicare gli utenti che devono contattare per ogni area di interesse.
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085900"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529804"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
 
@@ -54,7 +57,7 @@ I contatti amministrativi sono necessari quando si [Invia una richiesta di suppo
 
     ![Menu di supporto, contatti amministrativi vicino alla parte superiore selezionata](../../media/admincontacts.png)
 
-3. Seleziona **Aggiungi**.
+3. Selezionare **Aggiungi**.
 
     ![Portale di amministrazione, pulsante Aggiungi, a sinistra di esportazione e aggiornamento](../../media/adminadd.png)
 
@@ -69,8 +72,8 @@ I contatti amministrativi sono necessari quando si [Invia una richiesta di suppo
 1. Aggiungere e verificare i contatti di amministratore nel portale di amministrazione (questo argomento)
 2. [Modificare l'accesso condizionale](conditional-access.md)
 3. [Assegnare licenze](assign-licenses.md)
-4. [Installare il portale aziendale di Intune nei dispositivi](company-portal.md)
+4. [Installare il portale aziendale di Intune sui dispositivi](company-portal.md)
 5. [Abilitare Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Configurare i dispositivi Microsoft Managed Desktop](set-up-devices.md)
+6. [Configurare dispositivi Microsoft Managed Desktop](set-up-devices.md)
 7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)
-8. [Distribuire le app ai dispositivi](deploy-apps.md)
+8. [Distribuire le app sui dispositivi](deploy-apps.md)

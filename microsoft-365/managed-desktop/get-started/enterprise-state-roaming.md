@@ -1,19 +1,22 @@
 ---
-title: Abilitazione del roaming dello stato dell'organizzazione
+title: Abilitare Enterprise State Roaming
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a817e96d899564c3f46ea68088455210480989e3
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 8b9c4a96c3697ed7cfc13872de01ff31c0ec3894
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012482"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530200"
 ---
-# <a name="enable-enterprise-state-roaming"></a>Abilitazione del roaming dello stato dell'organizzazione
+# <a name="enable-enterprise-state-roaming"></a>Abilitare Enterprise State Roaming
 
 Per un'esperienza ottimale con Microsoft Managed Desktop, abilitare il [roaming dello stato dell'organizzazione](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), che consente agli utenti di sincronizzare in modo sicuro i dati delle impostazioni dell'applicazione e dell'utente nel cloud. Questo significa che avranno la stessa esperienza indipendentemente dal dispositivo Windows in cui accedono. Ad esempio, se si sostituisce uno dei propri dispositivi Microsoft Managed Desktop con uno nuovo, l'aspetto e il comportamento saranno identici a quelli dell'ultimo.
 
@@ -23,10 +26,10 @@ In caso di problemi con il roaming dello stato dell'organizzazione, contattare i
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a utilizzare Microsoft Managed Desktop
 
-1. [Aggiungere e verificare i contatti di amministratore nel portale di amministrazione](add-admin-contacts.md)
-2. [Regolare l'accesso condizionale](conditional-access.md)
+1. [Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione](add-admin-contacts.md)
+2. [Modificare l'accesso condizionale](conditional-access.md)
 3. [Assegnare licenze](assign-licenses.md)
-4. [Distribuire il portale aziendale di Intune](company-portal.md)
+4. [Distribuire il Portale aziendale Intune](company-portal.md)
 5. Abilitare il roaming dello stato dell'organizzazione (questo argomento)
 6. [Configurare i dispositivi](set-up-devices.md)
 7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)

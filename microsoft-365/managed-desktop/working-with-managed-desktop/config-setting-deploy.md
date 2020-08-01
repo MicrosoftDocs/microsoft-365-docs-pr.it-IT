@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e6946c138cb6fde15e35374b447038d5c302187e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: b731422e6d981b12ea576ed26b841e7c679266ae
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085761"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530260"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop
 
@@ -23,7 +26,7 @@ Si tratta degli Stati che verranno visualizzati per ogni distribuzione.
 
 Stato  | Spiegazione 
 --- | --- 
-Distribuzione | La modifica è in attesa di essere distribuita in questo gruppo.
+Distribuisci | La modifica è in attesa di essere distribuita in questo gruppo.
 In corso | La modifica viene applicata ai dispositivi attivi di questo gruppo. 
 Completa | La modifica completata su tutti i dispositivi attivi di questo gruppo. 
 Failed | La modifica ha avuto esito negativo su un 10% dei dispositivi attivi nel gruppo, quindi la distribuzione è stata interrotta.<br><br> Una richiesta di supporto verrà aperta automaticamente con le operazioni di Microsoft Managed Desktop per la risoluzione dei problemi relativi alla distribuzione. 
@@ -64,6 +67,6 @@ Vengono illustrati i passaggi da eseguire per ripristinare una modifica utilizza
 
 ![Area di lavoro stato distribuzione. Le pagine iniziali del browser sono selezionate, aprendo un riquadro a destra con i dati relativi alla modifica inviata e al relativo stato. In basso è la sezione "necessità di ripristinare questa modifica", in cui è possibile selezionare "Ripristina distribuzione".](../../media/3revert.png) 
 
-## <a name="additional-resources"></a>Altre risorse
+## <a name="additional-resources"></a>Risorse aggiuntive
 - [Panoramica delle impostazioni configurabili](config-setting-overview.md)
 - [Riferimento alle impostazioni configurabili](config-setting-ref.md) 

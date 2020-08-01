@@ -1,19 +1,22 @@
 ---
-title: Supporto di amministrazione per Microsoft Managed Desktop
+title: Supporto amministratori per Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: a29fa11e43e9be5c8175118ad5b54817c463e929
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266092"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529900"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto di amministrazione per Microsoft Managed Desktop
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto amministratori per Microsoft Managed Desktop
 
 È possibile inviare ticket di supporto o richieste di feedback a Microsoft tramite il portale di amministrazione di Microsoft Managed Desktop. Le richieste di supporto vengono sempre classificate in merito agli invii dei commenti e suggerimenti. Le richieste di supporto vengono valutate e gestite in base alla gravità delineata nella [tabella delle definizioni di gravità](#sev). I commenti e suggerimenti vengono esaminati e una risposta fornita se richiesto. 
 
@@ -51,7 +54,7 @@ Dettagli aggiuntivi:
 - **Compatibilità delle applicazioni** -per un problema di compatibilità delle applicazioni da considerare, deve essere presente un errore riproducente, della stessa versione dell'applicazione, tra la versione precedente e quella corrente di Windows o Office. Per risolvere i problemi di compatibilità delle applicazioni, Microsoft richiede l'utilizzo di un punto di contatto del cliente. L'individuo deve collaborare direttamente con il team di Fast Track per analizzare e risolvere il problema.
 - **Tempo di risposta del cliente** Se un cliente non è in grado di soddisfare i requisiti di risposta previsti, Microsoft retrocederà la richiesta di un livello di gravità, a un minimo di gravità C. Se un cliente non risponde alle richieste di azione, Microsoft consentirà di attenuare e chiudere la richiesta di supporto entro 48 ore dall'ultima richiesta.
 
-## <a name="provide-feedback"></a>Commenti e suggerimenti
+## <a name="provide-feedback"></a>Inviare feedback
 
 È possibile apprezzare i propri commenti e utilizzarli per migliorare l'esperienza di supporto dell'amministratore.
 
@@ -61,7 +64,7 @@ Una volta che il ticket è nello stato **attenuato** o **risolto** , è possibil
 
 
 
-## <a name="additional-resources"></a>Altre risorse
+## <a name="additional-resources"></a>Risorse aggiuntive
 - [Supporto per gli utenti finali per Microsoft Managed Desktop](end-user-support.md). 
 - [Supporto per Microsoft Managed Desktop](../service-description/support.md). 
 - Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** del [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal).
