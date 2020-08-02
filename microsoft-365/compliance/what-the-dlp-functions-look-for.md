@@ -1,5 +1,5 @@
 ---
-title: Cosa individuano le funzioni DLP
+title: Cosa cercano le funzioni di prevenzione della perdita di dati (DLP)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Informazioni sul funzionamento delle funzioni di prevenzione della perdita di dati (DLP), per comprendere come funzionano i tipi di informazioni riservate predefinite.
-ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Informazioni sulle funzioni di prevenzione della perdita di dati (DLP, Data Loss Prevention).
+ms.openlocfilehash: ef87be7dde83b1e5ba12456e7801e0554bceb6ea
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819276"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536311"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati
 
-Prevenzione della perdita di dati (DLP) include tipi di informazioni riservate, come il numero di carta di credito e il numero di carta di debito EU, pronti per essere utilizzati nei criteri DLP. Questi tipi di informazioni riservate cercano uno schema specifico e lo confermano assicurando la corretta formattazione, applicando checksum e individuando parole chiave specifiche o altre informazioni. Alcune di queste funzionalità vengono eseguite da funzioni interne. Ad esempio, il tipo di informazioni riservate relative al numero di carta di credito utilizza una funzione per cercare le date formattate come una data di scadenza, in modo da confermare che si tratta di un numero di carta di credito.
+La prevenzione della perdita di dati (DLP) include tipi di informazioni riservate, ad esempio il numero di carta di credito e il numero di carta di debito dell'Unione europea, che sono pronti per l'utilizzo nei criteri DLP. Questi tipi di informazioni riservate cercano uno schema specifico e lo confermano assicurando la corretta formattazione, applicando checksum e individuando parole chiave specifiche o altre informazioni. Alcune di queste funzionalità vengono eseguite da funzioni interne. Ad esempio, il tipo di informazioni riservate relative al numero di carta di credito utilizza una funzione per cercare le date formattate come una data di scadenza, in modo da confermare che si tratta di un numero di carta di credito.
   
-In questo argomento viene descritto cosa viene cercato da queste funzioni per comprendere come funzionano i tipi di informazioni riservate predefiniti. Per ulteriori informazioni, vedere [definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
+In questo articolo vengono illustrate le funzionalità che devono essere cercate per comprendere il funzionamento dei tipi di informazioni riservate predefinite. Per ulteriori informazioni, vedere [definizioni di entità per il tipo di informazioni riservate](sensitive-information-type-entity-definitions.md)
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -61,7 +61,7 @@ Nomi dei mesi accettati:
     
 ## <a name="func_eu_date"></a>Func_eu_date
 
-Questa funzione consente di cercare una data nel formato comunemente usato nell'UE e nella maggior parte delle aree geografiche al di fuori degli Stati Uniti. Sono inclusi i formati "giorno/mese/anno", "giorno-mese-anno" e "giorno mese anno". I nomi o le iniziali dei mesi non fanno distinzione tra maiuscole e minuscole.
+Questa funzione Cerca una data nel formato comunemente utilizzato nell'Unione (e la maggior parte delle posizioni al di fuori degli Stati Uniti), ad esempio "Day/Month/Year", "Day-Month-Year" e "Day Month Year". I nomi o le iniziali dei mesi non fanno distinzione tra maiuscole e minuscole.
   
 Esempi:
   
@@ -183,7 +183,7 @@ Nomi dei mesi accettati:
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
-  - Jan Feb maart apr Mei giu lug Aug Sep set ott Okt Nov Dec
+  - Jan Feb maart apr Mei giu lug Aug Sep set out Okt Nov Dec
     
 ## <a name="func_expiration_date"></a>Func_expiration_date
 
@@ -201,7 +201,7 @@ Esempi:
     
 I formati seguenti supportano AA o AAAA:
   
-- Mese-AAAA -- ad esempio, .Gen-2010 o gennaio-2010 o Gen-10 o gennaio-10
+- Mese-AAAA--ad esempio gen-2010 o gennaio-2010 o gen-10 o gennaio-10
     
 - Mese AAAA -- ad esempio, "gennaio 2010" o "Gen 2010" o" gennaio 10" o "Gen 10"
     
@@ -219,7 +219,7 @@ Nomi dei mesi accettati:
     
 ## <a name="func_us_address"></a>Func_us_address
 
-Questa funzione cerca il nome di uno stato membro degli Stati Uniti o un'abbreviazione postale seguita da un CAP valido, esattamente come per gli indirizzi postali. Il CAP deve essere uno dei codici di avviamento postale corretti associati al nome o all'abbreviazione dello stato membro degli Stati Uniti. Il nome dello stato membro degli Stati Uniti e il CAP non possono essere separati da segni di punteggiatura o lettere.
+Questa funzione consente di cercare un nome di stato americano o una sigla postale seguita da un CAP valido, così come viene utilizzato negli indirizzi postali. Il CAP deve essere uno dei codici di avviamento postale corretti associati al nome o all'abbreviazione dello stato membro degli Stati Uniti. Il nome dello stato membro degli Stati Uniti e il CAP non possono essere separati da segni di punteggiatura o lettere.
   
 Esempi:
   

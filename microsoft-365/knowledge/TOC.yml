@@ -1,0 +1,16 @@
+- name: Informazioni introduttive sulla gestione della conoscenza
+  items:
+    - name: Panoramica della gestione delle informazioni
+      href: knowledge-management-overview.md
+    - name: Panoramica del centro argomenti
+      href: topic-center-overview.md
+    - name: Utilizzo degli argomenti nell'argomento centro
+      href: work-with-topics.md
+    - name: Assegnare agli utenti le autorizzazioni per il centro argomenti
+      href: give-user-permissions-to-the-topic-center.md
+- name: Introduzione all'installazione
+  items:
+    - name: Configurare la gestione delle informazioni
+      href: set-up-knowledge-network.md
+    - name: Gestire la rete di gestione delle informazioni
+      href: manage-knowledge-network.md

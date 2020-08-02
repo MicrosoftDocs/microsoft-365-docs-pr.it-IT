@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 571d1b3c9f12594c039a874eb5163e1191fd8fe9
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503027"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527826"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -56,8 +56,8 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     Caratteristiche specifiche dell'etichettatura automatica per SharePoint e OneDrive:
     - Sono supportati i file di Office per Word, PowerPoint ed Excel.
     - Massimo 25.000 file etichettati automaticamente nel tenant al giorno.
-    - Massimo di 10 raccolte siti in tutti i criteri.
-    - Massimo di 10 criteri nel tenant.
+    - Massimo di 10 raccolte di siti per ogni criterio di etichettatura automatica.
+    - Massimo di 10 criteri di etichetta automatica nel tenant.
     - I valori esistenti per "Modificato", "Modificato da" e la data non vengono cambiati dai criteri di etichettatura automatica, sia per la modalità di simulazione che per l'applicazione delle etichette.
     - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è la persona che ha creato l'etichetta di riservatezza.
 

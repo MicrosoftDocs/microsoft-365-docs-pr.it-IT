@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Alcuni consigli per configurare il training della rilevanza in Advanced eDiscovery per classificare i file in base alla rilevanza e generare risultati analitici.
-ms.openlocfilehash: fa7a8a4bd87f91d3417183a5713f5c3c06f01ebe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 40e73dae3317cba5226180f8c57c71c792875ee0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632971"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528142"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestire la configurazione della pertinenza in Advanced eDiscovery (classico)
 
@@ -33,42 +33,42 @@ ms.locfileid: "43632971"
   
 ## <a name="guidelines-for-setting-up-relevance-training"></a>Linee guida per configurare il training della rilevanza
 
- In Advance eDiscovery, nella finestra di dialogo **Casi**, selezionare un caso e fare clic su **Passa al caso**. Fare clic su **Rilevanza** \> **Configurazione della rilevanza**. Seguire le linee guida consigliate per configurare la rilevanza. 
+ In Advance eDiscovery, nella finestra **Casi**, selezionare un caso e fare clic su **Passa al caso**. Fare clic su **Rilevanza** \> **Configurazione della rilevanza**. Seguire le linee guida consigliate per configurare la rilevanza. 
   
 - **Aggiunta di tag**: l'efficacia del training della rilevanza dipende dall'abilità dello specialista di contrassegnare i campioni di file con precisione e coerenza.
-    
-- **Casi**: 
-    
+
+- **Casi**:
+  
   - Per ogni caso, è opportuno avvalersi dello stesso specialista per l'intero processo di training della rilevanza. Non è consentito a specialisti diversi di aggiungere contemporaneamente i tag per lo stesso caso.
-    
-  - Determinare se ogni gruppo di file è pertinente solo per un caso specifico. 
-    
+  
+  - Determinare se ogni gruppo di file è pertinente solo per un caso specifico.
+
   - Se un caso è definito in modo troppo generico, Advanced eDiscovery potrebbe generare troppi file non rilevanti. Se invece un caso è definito in modo troppo specifico, il processo di training della rilevanza potrebbe richiedere più tempo. 
-    
+
   - Durante ciascun ciclo di training della rilevanza, Advanced eDiscovery si occupa di un solo caso attivo e i risultati dei campioni intermedi vengono visualizzati di conseguenza.
-    
+
   - In uno scenario con più casi, la modalità di campionamento consente di selezionare i casi da considerare nell'elaborazione. I casi "inattivi" non vengono elaborati fino a quando la loro modalità di campionamento non viene modificata. Un caso può essere "inattivo" o "attivo" per un solo specialista.
-    
-  -  Advanced eDiscovery può essere usato per generare i file candidati a cui potrebbero applicarsi privilegi o esenzioni particolari. Innanzitutto è necessario configurare un caso separato in base al privilegio. Se possibile, è meglio eseguire prima il training ed eliminare in base alla rilevanza, poi eseguire il training in base al privilegio solo sul set di file eliminato (ricaricare il set eliminato come caso separato). 
-    
+
+  - Advanced eDiscovery può essere usato per generare i file candidati a cui potrebbero applicarsi privilegi o esenzioni particolari. Innanzitutto è necessario configurare un caso separato in base al privilegio. Se possibile, è meglio eseguire prima il training ed eliminare in base alla rilevanza, poi eseguire il training in base al privilegio solo sul set di file eliminato (ricaricare il set eliminato come caso separato). 
+
   - Il calcolo del batch può essere eseguito solo quando non sono presenti campioni aperti (quando si fa clic su Calcolo batch, verrà visualizzato un elenco di utenti con campioni aperti). Per "chiudere" i campioni di altri utenti (questo dovrebbe essere eseguito solo se questi utenti non contrassegnano questi esempi), un amministratore può utilizzare l'utilità "Modifica rilevanza" con l'opzione "Tutti i campioni di utenti".
-    
-- **Metadati**: Advanced eDiscovery analizza il contenuto. Non considera i metadati nell'ambito dei criteri di rilevanza. 
-    
+
+- **Metadati**: Advanced eDiscovery analizza il contenuto. Non considera i metadati nell'ambito dei criteri di rilevanza.
+
 - **Rilevanza**: se la rilevanza di un problema ha un valore inferiore al 3% dopo la valutazione, si consiglia di effettuare il seeding del training della rilevanza con file rilevanti e non rilevanti.
-    
+
 - **Dimensione del file**: i file di grandi dimensioni (oltre 5.242.880 caratteri di testo estratto) vengono ignorati nella rilevanza. I file non partecipano al training della rilevanza e non vengono classificati per rilevanza dopo il calcolo del batch. I file oltre i 5 MB possono essere inclusi nel set di valutazione.
-    
+
 ## <a name="setting-up-case-issues"></a>Configurazione dei casi
 
-I parametri descritti in questa sezione sono disponibili nella tecnologia di rilevanza di Advanced eDiscovery **** \> **Configurazione della rilevanza**. 
+I parametri descritti in questa sezione sono disponibili nella tecnologia di rilevanza di Advanced eDiscovery **** \> **Configurazione della rilevanza**.
   
 - I problemi devono essere assegnati a un utente che dovrà occuparsi del training dei file.
-    
+
 - I file importati devono quindi essere aggiunti al carico di elaborazione.
-    
+
 - Definire e organizzare con attenzione i problemi, poiché i risultati del training della rilevanza possono esserne influenzati.
-    
+
 Dopo aver impostato i parametri, il revisore/lo specialista può avviare il training dei file nella scheda **Rilevanza**. 
   
 ## <a name="see-also"></a>Vedere anche

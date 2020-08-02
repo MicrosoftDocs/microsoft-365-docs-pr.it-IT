@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: 3ffe24cc263c6f58899b3c293793aa231132e411
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 47690e1295b67c01f86429d97e0fc8d82ad58d6f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780266"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529636"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
@@ -159,6 +159,9 @@ Per ulteriori informazioni sulle cassette postali condivise in Outlook, vedere:
 - Aprire il browser, effettuare l'accesso e quindi passare a Outlook sul web. Da Outlook sul web sarà possibile accedere alla cassetta postale condivisa.
 
     Per le istruzioni, vedere <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Aggiungere una cassetta postale condivisa in Outlook sul web</a>.
+    
+> [!NOTE]
+> La cassetta postale condivisa può essere aggiunta solo all'Outlook per iOS o all'app mobile Outlook per Android
 
 ## <a name="use-the-shared-calendar"></a>Usare il calendario condiviso
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 938d530447d1a798e5a2d6d4c2f622a04827bf1c
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55b57891732f50eba09425fce4d2be34c94740f3
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529601"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533823"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -124,9 +124,9 @@ Il contenuto in attesa di una revisione della disposizione viene eliminato solo 
 ## <a name="disposition-of-records"></a>Eliminazione dei record
 
 > [!NOTE]
->L'implementazione per la prova dello smaltimento per i record in SharePoint e OneDrive è stata completata. Verrà visualizzato l'elenco delle etichette di conservazione contrassegnate come contenuto come record per SharePoint e OneDrive nella sezione disposizione della pagina Gestione record del centro conformità di Microsoft 365. In queste etichette, è possibile visualizzare l'elenco di elementi in SharePoint e OneDrive che sono stati eliminati automaticamente o dopo una revisione della disposizione.
-
-La prova dello smaltimento dei record in Exchange non è ancora attiva. Quando l'implementazione viene avviata e al termine dell'operazione, verrà aggiornata questa nota.
+> L'implementazione per la prova dello smaltimento per i record in SharePoint e OneDrive è stata completata. Verrà visualizzato l'elenco delle etichette di conservazione contrassegnate come contenuto come record per SharePoint e OneDrive nella sezione disposizione della pagina Gestione record del centro conformità di Microsoft 365. In queste etichette, è possibile visualizzare l'elenco di elementi in SharePoint e OneDrive che sono stati eliminati automaticamente o dopo una revisione della disposizione.
+>
+> La prova dello smaltimento dei record in Exchange non è ancora attiva. Quando l'implementazione viene avviata e al termine dell'operazione, verrà aggiornata questa nota.
 
 Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record eliminati automaticamente. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . Ad esempio:
 

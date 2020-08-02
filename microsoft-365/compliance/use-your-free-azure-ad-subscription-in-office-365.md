@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Informazioni su come accedere ad Azure Active Directory, incluso nell'abbonamento a pagamento dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43c9c03af74d4edc1fb6c762c9ca89594a907920
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819286"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528152"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Usare la sottoscrizione gratuita di Azure Active Directory
 
@@ -30,7 +30,7 @@ Se l'organizzazione ha un abbonamento a pagamento a Microsoft 365, Microsoft Dyn
 
 ## <a name="open-a-private-browsing-session"></a>Aprire una sessione di navigazione privata
 
-Usare una sessione di esplorazione privata, invece di una normale, per accedere al portale di Azure (nel passaggio 1 seguente) in modo da impedire che le credenziali con cui si è attualmente connessi vengano passate ad Azure. Per aprire una sessione di esplorazione privata:
+Usare una sessione di esplorazione privata, invece di una normale, per accedere al portale di Azure (nel passaggio 1 seguente). Ciò impedisce che le credenziali con cui si è attualmente connessi vengano passate ad Azure. Per aprire una sessione di esplorazione privata:
 
 - In Microsoft Edge (versione legacy), Internet Explorer o Mozilla FireFox premere `CTRL+SHIFT+P`.
 
