@@ -1,0 +1,22 @@
+- name: Informazioni introduttive sul contenuto
+  items:
+    - name: Panoramica della comprensione del documento
+      href: document-understanding-overview.md
+    - name: Panoramica dell'elaborazione dei moduli
+      href: form-processing-overview.md
+    - name: Differenze tra i modelli di elaborazione dei documenti e la comprensione dei moduli
+      href: difference-between-document-understanding-and-form-processing-model.md
+    - name: Creare un centro contenuto
+      href: create-a-content-center.md
+    - name: Creare un classificatore
+      href: create-a-classifier.md
+    - name: Creare un estrattore
+      href: create-an-extractor.md
+    - name: Applicazione di un modello
+      href: apply-a-model.md
+    - name: Creare un modello di elaborazione dei moduli
+      href: create-a-form-processing-model.md
+- name: Introduzione all'installazione
+  items:
+    - name: Configurare la comprensione del contenuto
+      href: set-up-content-understanding.md

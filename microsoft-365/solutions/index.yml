@@ -4,7 +4,7 @@ summary: Informazioni su come progettare la soluzione e l'architettura appropria
 brand: m365
 metadata:
   title: Microsoft 365 Solution and Architecture Center
-  description: Informazioni su come progettare la soluzione e l'architettura appropriate per la tua organizzazione
+  description: Questo centro assistenza consente di acquisire familiarità con le risorse di formazione e di progettare la soluzione e l'architettura appropriate per l'organizzazione.
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection:
@@ -15,12 +15,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 0d5268adb566b415b9dfd1ed999f96b58a7991a0
-  ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+  ms.openlocfilehash: 38232c5ef3b64ac114dd8296398ade32bcf12d97
+  ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/29/2020
-  ms.locfileid: "46521112"
+  ms.lasthandoff: 07/30/2020
+  ms.locfileid: "46530212"
 highlightedContent:
   items:
   - title: Aumentare la produttività dei lavoratori remoti con Microsoft 365

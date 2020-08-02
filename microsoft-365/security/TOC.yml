@@ -315,6 +315,8 @@
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Preimpostare i criteri di sicurezza.
                   href: ./office-365-security/preset-security-policies.md
+                - name: Analizzatore della configurazione per criteri di sicurezza predefiniti
+                  href: ./office-365-security/configuration-analyzer-for-security-policies.md
                 - name: Intestazioni messaggi della protezione da posta indesiderata
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: Come vengono combinati i criteri e le protezioni
