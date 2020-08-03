@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,69 +26,57 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
-ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 81c3a03207fd8f35c975026ebd2a9a0334fc9407
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44816998"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533614"
 ---
-# <a name="view-your-bill-or-invoice"></a>Visualizzare l'estratto conto o la fattura
+# <a name="view-your-bill-or-invoice"></a>Visualizzare la fattura
 
-Questo articolo è destinato agli abbonati a Microsoft 365 per le aziende. È necessario essere un amministratore globale o un amministratore fatturazione per eseguire le procedure descritte in questo articolo.
+Questo articolo è destinato agli abbonati a Microsoft 365 per le aziende.
   
 Se serve aiuto per interpretare gli addebiti riportati nella fattura, vedere [Informazioni sull'estratto conto o la fattura](understand-your-invoice2.md) per una descrizione dettagliata.
   
- **Se non si è un amministratore** Contattare l'amministratore per assistenza. 
-  
- **Se si ha un problema con la fattura** [Contattare il supporto tecnico per i prodotti per le aziende](../../admin/contact-support-for-business-products.md).
+**Se si ha un problema con la fattura** [Contattare il supporto tecnico per i prodotti per le aziende](../../admin/contact-support-for-business-products.md).
 
- Guardare un breve video sulla visualizzazione della fattura. Si noti che la fattura potrebbe essere diversa da quella del video. <br><br>
+## <a name="before-you-begin"></a>Prima di iniziare
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
-
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+È necessario essere un amministratore globale o un amministratore di fatturazione per eseguire le procedure descritte in questo articolo.
   
 ## <a name="view-a-bill-or-invoice"></a>Visualizzare un estratto conto o una fattura
 
-::: moniker range="o365-worldwide"
-
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** ><a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fatture e pagamenti</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fatture e pagamenti</a>.
-
-::: moniker-end
-
-2. Nella scheda **Fatture**, selezionare un intervallo di date nell’elenco a discesa e scegliere poi l’ordine da visualizzare.
-
-3. Nella pagina del riepilogo è possibile vedere:
-
-    - Il saldo totale, l'importo dovuto corrente, la scadenza del pagamento, l'importo dell'ultimo pagamento e la relativa data di ricezione.
-
-    - Le istruzioni per il pagamento.
-
-    - Le date dei pagamenti effettuati con gli importi pagati.
-
-    - La data di creazione dell'ordine e il numero d'ordine.
-
+    - Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fatture e pagamenti</a>.
+    - Se si usa Office 365 gestito da 21Vianet, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fatture e pagamenti</a>.
+2. Nella scheda **Fatture**, selezionare un intervallo di date nell’elenco a discesa e scegliere l’ordine da visualizzare.
+3. Nella pagina di riepilogo è possibile visualizzare gli elementi, la quantità, il prezzo, lo sconto e il totale di tutti gli elementi della fattura.
 4. Per stampare o salvare una copia PDF della fattura, selezionare **Scarica PDF**.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Ricevere una copia dell'estratto conto tramite posta elettronica
 
-[Pagare con fattura, carta di credito o conto corrente bancario](pay-for-your-subscription.md)
-  
-[Gestire metodi di pagamento](manage-payment-methods.md)
+È possibile scegliere di ricevere una copia dell'estratto conto come allegato di posta elettronica. In questo caso, tenere presente che:
 
-[Minecraft: Opzioni di pagamento di Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761)
+- Viene inviato un messaggio all'indirizzo di posta elettronica principale e alternativo di tutti gli utenti indicati come destinatari della notifica.
+- Si ricevono due messaggi di posta elettronica separati: uno che segnala che la fattura è pronta, con le istruzioni per accedere all'interfaccia di amministrazione per visualizzarla, e un secondo messaggio che contiene l'estratto conto in allegato.
+
+### <a name="to-receive-your-billing-statement-in-email"></a>Per ricevere l'estratto conto tramite posta elettronica
+
+1. Nell'interfaccia di amministrazione, andare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifiche sulla fatturazione</a>.
+    - Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notifiche sulla fatturazione</a>.
+    - Se si usa Office 365 gestito da 21Vianet, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notifiche sulla fatturazione</a>.
+1. In **Vuoi ricevere l'estratto conto come allegato di posta elettronica?** impostare l'interruttore su **Attivato**.
+
+    È possibile interrompere la ricezione di messaggi di posta elettronica con l'estratto conto in qualsiasi momento impostando l'interruttore su **Disattivato**.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Se è presente un saldo e si preferisce pagarlo, è possibile farlo online. Per sapere come, si veda [Pagare l'abbonamento](pay-for-your-subscription.md).
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Pagare con fattura, carta di credito o conto corrente bancario](pay-for-your-subscription.md) (articolo) \
+[Gestire i metodi di pagamento](manage-payment-methods.md) (articolo) \
+[Minecraft: opzioni di pagamento di Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761) (articolo)
