@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come gli amministratori possono configurare e utilizzare un connettore di dati per importare e archiviare i dati dallo strumento Instant Bloomberg chat in Microsoft 365.
-ms.openlocfilehash: 9be2e431241e13e59c67c33ee3c7246896e97f1e
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: dbfb0c167d57b4a541c60eda253e93328c156dfc
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936559"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552506"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurare un connettore per archiviare i dati di Instant Bloomberg
 
@@ -42,7 +42,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi del messaggio di chat nella cassetta postale di un utente specifico. Verrà creata una nuova cartella denominata InstantBloomberg nella cassetta postale dell'utente specifico e gli elementi verranno importati. Il connettore esegue questa operazione utilizzando il valore della proprietà *CorporateEmailAddress* . Ogni messaggio di chat contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di chat. Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà *CorporateEmailAddress* , è anche possibile definire un mapping personalizzato caricando un file di mapping CSV. Questo file di mapping deve contenere un UUID di Bloomberg e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente. Se si Abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di chat il connettore osserverà per prima cosa il file di mapping personalizzato. Se non trova un utente valido di Microsoft 365 che corrisponde all'UUID di Bloomberg di un utente, il connettore utilizzerà la proprietà *CorporateEmailAddress* dell'elemento chat. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà *CorporateEmailAddress* dell'elemento chat, l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Molti dei passaggi di implementazione necessari per archiviare i dati di Bloomberg istantanei sono esterni a Microsoft 365 e devono essere completati prima di poter creare il connettore nel centro conformità.
 
@@ -120,7 +120,7 @@ L'ultimo passaggio consiste nel creare un connettore Bloomberg istantaneo nel ce
 5. Nella pagina **mapping utenti** abilitare il mapping automatico degli utenti e fornire il mapping degli utenti personalizzato come richiesto
 
    > [!NOTE]
-   > Il connettore importa gli elementi del messaggio di chat nella cassetta postale di un utente specifico. Verrà creata una nuova cartella denominata **InstantBloomberg** nella cassetta postale dell'utente specifico e gli elementi verranno importati. Il connettore viene utilizzato utilizzando il valore della proprietà *CorporateEmailAddress* . Ogni messaggio di chat contiene questa proprietà e la proprietà viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di chat. Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà *CorporateEmailAddress* , è anche possibile definire il mapping personalizzato caricando un file di mapping CSV. Il file di mapping deve contenere l'UUID di Bloomberg e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente. Se si Abilita il mapping automatico degli utenti e si fornisce un mapping di mapping personalizzato, per ogni elemento di chat il connettore osserverà innanzitutto il file di mapping personalizzato. Se non trova un utente valido di Microsoft 365 che corrisponde all'UUID di Bloomberg di un utente, il connettore utilizzerà la proprietà *CorporateEmailAddress* dell'elemento chat. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà *CorporateEmailAddress* dell'elemento chat, l'elemento non verrà importato.
+   > Il connettore importa gli elementi del messaggio di chat nella cassetta postale di un utente specifico. Verrà creata una nuova cartella denominata **InstantBloomberg** nella cassetta postale dell'utente specifico e gli elementi verranno importati. Il connettore viene utilizzato utilizzando il valore della proprietà *CorporateEmailAddress* . Ogni messaggio di chat contiene questa proprietà e la proprietà viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di chat. Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà *CorporateEmailAddress* , è anche possibile definire il mapping personalizzato caricando un file di mapping CSV. Il file di mapping deve contenere l'UUID di Bloomberg e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente. Se si Abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di chat il connettore osserverà per prima cosa il file di mapping personalizzato. Se non trova un utente valido di Microsoft 365 che corrisponde all'UUID di Bloomberg di un utente, il connettore utilizzerà la proprietà *CorporateEmailAddress* dell'elemento chat. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà *CorporateEmailAddress* dell'elemento chat, l'elemento non verrà importato.
 
 6. Fare clic su **Avanti**, rivedere le impostazioni e quindi fare clic su **prepara** per creare il connettore.
 

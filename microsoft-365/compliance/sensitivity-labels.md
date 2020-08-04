@@ -20,12 +20,12 @@ description: Usare le etichette di riservatezza del framework Microsoft Informat
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bd8aaab95afd66881b842d902988276b9fde54ff
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199556"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552698"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -40,9 +40,6 @@ Esempio che mostra le etichette di riservatezza disponibili in Excel dalla sched
 ![Etichetta di riservatezza nella barra multifunzione e nella barra di stato di Excel](../media/Sensitivity-label-in-Excel.png)
 
 Le etichette di riservatezza sono supportate solo per i tenant del cloud globale (pubblico). Per il momento, non sono supportate per i tenant in altri cloud, ad esempio i [cloud nazionali](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
-
-> [!NOTE]
-> Le etichette di riservatezza non sono ancora disponibili nelle organizzazioni US Government Community (GCC).
 
 Per applicare le etichette di riservatezza, gli utenti devono accedere a Office con l'account aziendale o dell'istituto di istruzione.
 
