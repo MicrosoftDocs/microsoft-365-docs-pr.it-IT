@@ -131,6 +131,8 @@
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Usare i risultati delle query
                   href: mtp/advanced-hunting-query-results.md
+                - name: Intraprendere azioni sui risultati della query
+                  href: mtp/advanced-hunting-take-action.md
                 - name: Utilizzare le query condivise
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Cercare su dispositivi e messaggi di posta elettronica
