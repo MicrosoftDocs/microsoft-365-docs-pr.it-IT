@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Informazioni su come assegnare a un utente il diritto di accedere alla cassetta postale di un altro utente. In questo modo l'utente potrà leggere i messaggi di posta elettronica e inviare messaggi dalla cassetta postale dell'altro utente. "
-ms.openlocfilehash: dafe0f8c8f7d65b2721b70f6c132d179c461a89b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780602"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560376"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Assegnare le autorizzazioni della cassetta postale a un altro utente - Guida per l'amministratore
 
@@ -56,6 +56,9 @@ Dopo la configurazione delle autorizzazioni, la loro propagazione e applicazione
  **Come usare la funzionalità dopo la configurazione delle autorizzazioni:**
   
 Dopo la concessione dell'accesso, è possibile accedere a una cassetta postale in alcuni modi diversi. Per altre informazioni, vedere l'articolo [Accedere alla cassetta postale di un'altra persona](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081).
+
+> [!NOTE]
+> Le autorizzazioni possono essere configurate solo all'interno del tenant corrente dell'organizzazione. Non è possibile configurare le autorizzazioni delle cassette postali con utenti non autorizzati.
   
 ## <a name="send-email-from-another-users-mailbox"></a>Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente
 

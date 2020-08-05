@@ -20,12 +20,12 @@ description: Usare le etichette di riservatezza del framework Microsoft Informat
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 55f3f9a37d8ce51c263c3b83cf31d838204c285a
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552698"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564047"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -39,9 +39,12 @@ Esempio che mostra le etichette di riservatezza disponibili in Excel dalla sched
 
 ![Etichetta di riservatezza nella barra multifunzione e nella barra di stato di Excel](../media/Sensitivity-label-in-Excel.png)
 
-Le etichette di riservatezza sono supportate solo per i tenant del cloud globale (pubblico). Per il momento, non sono supportate per i tenant in altri cloud, ad esempio i [cloud nazionali](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+Per applicare le etichette di riservatezza, gli utenti devono aver eseguito l'accesso con l'account aziendale o dell'istituto di istruzione di Microsoft 365.
 
-Per applicare le etichette di riservatezza, gli utenti devono accedere a Office con l'account aziendale o dell'istituto di istruzione.
+> [!NOTE]
+> Per i tenant US Government Community (GCC e GCC-HC), le etichette di riservatezza sono attualmente supportate solo per lo scanner e il client di etichettatura unificata di Azure Information Protection. 
+> 
+> Per altre informazioni, vedere il post di blog [Annuncio della disponibilità generale dell'etichettatura unificata negli ambienti GCC e GCC-H](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215).
 
 È possibile usare le etichette di riservatezza per:
   

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 4bf8499cc8f29438da407c6dfcdaa53533fea467
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430234"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560763"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -66,7 +66,7 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 |Consentire agli utenti di applicare automaticamente un'etichetta di conservazione ai messaggi di posta elettronica con le regole di Outlook|[Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)|
 |Applicare automaticamente un set di azioni conserva ed elimina ai documenti e ai messaggi di posta elettronica |[Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)|
 |Avviare il periodo di conservazione quando si verifica un evento, ad esempio:  <br />- Dipendenti che lasciano l'organizzazione <br />- Scadenza contratti <br />- Fine del ciclo di vita del prodotto| [Avviare la conservazione al verificarsi di un evento](event-driven-retention.md)|
-|Gestire il ciclo di vita di tipi di documenti diversi in SharePoint| [Gestire il ciclo di vita dei documenti di SharePoint con le etichette di conservazione](auto-apply-retention-labels-scenario.md)|
+|Gestire il ciclo di vita di tipi di documenti diversi in SharePoint| [Usare etichette di riservatezza per gestire il ciclo di vita dei documenti archiviati in SharePoint](auto-apply-retention-labels-scenario.md)|
 |Usare una soluzione di gestione dei record singola per documenti e messaggi di posta elettronica |[Gestione dei record in Microsoft 365](records-management.md) |
 |Rispettare la SEC Rule 17a-4|[Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Assicurarsi il tutto sia revisionato e approvato prima di eliminare il contenuto al termine del periodo di conservazione|[Revisioni per l'eliminazione](disposition.md#disposition-reviews) |

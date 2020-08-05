@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare e pubblicare automaticamente etichette di conservazione in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: eb29a846f6a7352eec02683c70dad1b0a423bdfa
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127603"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560617"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -189,6 +189,4 @@ Alcune impostazioni non possono essere modificate dopo aver creato e salvato l'e
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Considerare l'uso delle etichette di conservazione insieme a un'altra forma di automazione, la [conservazione basata su eventi](event-driven-retention.md). Quando si usa questa configurazione, l'inizio della conservazione viene attivato da un evento identificato dall'utente. È possibile usare la conservazione basata su eventi con un criterio di applicazione automatica o un criterio di etichetta.
-
-Vedere [Gestire il ciclo di vita dei documenti di SharePoint con le etichette di conservazione](auto-apply-retention-labels-scenario.md) per uno scenario dettagliato sull'uso delle proprietà gestite in SharePoint per applicare automaticamente etichette di conservazione e implementare la conservazione basata su eventi.
+Vedere [Usare etichette di riservatezza per gestire il ciclo di vita dei documenti archiviati in SharePoint](auto-apply-retention-labels-scenario.md) per uno scenario di esempio in cui vengono usati un criterio di applicazione automatica con proprietà gestite in SharePoint conservazione e la conservazione basata su eventi per avviare il periodo di conservazione.

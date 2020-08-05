@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Istruzioni sulla creazione e la pubblicazione di etichette di conservazione per applicarle nelle app al fine di conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: ba83243caf2873b2983837b8ab8d4861e1187e2f
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 562264585c4dd4fd3ba6d0f6e8faf046dda95662
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127595"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560587"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Creare etichette di conservazione e applicarle nelle app
 
@@ -262,4 +262,4 @@ Event-based retention is another supported scenario for retention labels. For mo
 
 - [Start retention when an event occurs](event-driven-retention.md)
 - [Automate event-based retention](automate-event-driven-retention.md)
-- [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md)
+- [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)

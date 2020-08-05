@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: Usare i servizi di sicurezza e conformità di Microsoft 365 per proteggere le app, i dati e i dispositivi dei lavoratori remoti.
-ms.openlocfilehash: 7483075767b7ffaf269899d83a0ab6e5f5759e99
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521506"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560464"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Passaggio 3: distribuire sicurezza e conformità per i lavoratori remoti
 
@@ -70,7 +70,7 @@ Garantire la conformità ai criteri interni o ai requisiti normativi con queste 
 | Compliance Manager | Gestire le attività di conformità normative relative ai servizi cloud Microsoft con lo strumento di valutazione dei rischi basato su flussi di lavoro in Microsoft Service Trust Portal. | Microsoft 365 E3 o E5 |
 | Punteggio di conformità (anteprima) | Visualizzare il punteggio complessivo della configurazione di conformità attuale e consigli per migliorarla nel Centro conformità Microsoft 365. | Microsoft 365 E3 o E5 |
 | Conformità delle comunicazioni  | Rilevare, acquisire ed eseguire azioni correttive per i messaggi non appropriati nell'organizzazione. | Microsoft 365 E5 o Microsoft 365 E3 con i componenti aggiuntivi Conformità o Gestione dei rischi Insider |
-| Gestione dei rischi Insider |  Rilevare, analizzare e agire su attività dannose e involontarie nell'organizzazione. Microsoft 365 può individuare questo tipo di attività anche quando un lavoratore usa un dispositivo non gestito. | Microsoft 365 E5 o Microsoft 365 E3 con i componenti aggiuntivi Conformità o Gestione dei rischi Insider |
+| Gestione dei rischi Insider |  Rilevare e analizzare e rischi dannosi e involontari nell'organizzazione e intraprendere azioni. Microsoft 365 può individuare questo tipo di rischi anche quando un lavoratore usa un dispositivo non gestito. | Microsoft 365 E5 o Microsoft 365 E3 con i componenti aggiuntivi Conformità o Gestione dei rischi Insider |
 ||||
 
 Per altre informazioni, vedere [12 principali attività per i team di sicurezza per supportare il lavoro da casa](../security/top-security-tasks-for-remote-work.md).
