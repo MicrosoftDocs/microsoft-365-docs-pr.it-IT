@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Skype for business online utilizzino il proprio nome di dominio.
-ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399993"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560342"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 
@@ -162,15 +162,14 @@ Ecco, ad esempio, alcune altre operazioni aggiuntive che potrebbero essere neces
 
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
-3. Nella pagina Domini selezionare un dominio.
+2. Nella pagina **Domains** selezionare il dominio e quindi scegliere **DNS Records**.
 
-4. In **impostazioni DNS**selezionare **record personalizzati**e quindi fare clic **su nuovo record personalizzato**.
+3. In **impostazioni DNS**selezionare **record personalizzati**e quindi fare clic **su nuovo record personalizzato**.
 
-5. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
+4. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
 
-6. Selezionare **Salva**.
+5. Seleziona **Salva**.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. L'indirizzo di posta elettronica e gli altri servizi di Microsoft saranno tutti impostati per l'utilizzo con il dominio. 
   
-

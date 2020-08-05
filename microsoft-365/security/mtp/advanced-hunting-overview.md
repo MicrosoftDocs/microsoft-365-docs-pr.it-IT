@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138279"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552435"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Cercare in modo proattivo minacce con la ricerca avanzata di Microsoft Threat Protection
 
@@ -33,6 +33,9 @@ ms.locfileid: "45138279"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query che permette di esplorare dati non elaborati fino a 30 giorni. È possibile controllare in modo proattivo eventi nella rete per localizzare indicatori ed entità interessanti. L'accesso flessibile ai dati facilita la ricerca non vincolata delle minacce conosciute e potenziali.
+<p></p>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 È possibile usare le stesse query di ricerca delle minacce per creare regole di rilevamento personalizzate. Queste regole vengono eseguite automaticamente per il controllo di diversi eventi e dello stato di salute del sistema e per le relative risposte, tra cui attività di violazione sospette e computer non configurati correttamente.
 
@@ -45,7 +48,7 @@ Nel centro sicurezza Microsoft 365, Advanced Hunting supporta le query che esami
 | Obiettivo di formazione | Descrizione | Risorsa |
 |--|--|--|
 | **Avere un'idea della lingua** | La ricerca avanzata si basa sul [linguaggio di query di Kusto](https://docs.microsoft.com/azure/kusto/query/), che supporta la stessa sintassi e gli stessi operatori. Iniziare ad apprendere il linguaggio di query eseguendone la prima. | [Informazioni generali sul linguaggio di query](advanced-hunting-query-language.md) |
-| **Informazioni su come utilizzare i risultati della query** | Informazioni sui grafici e sui vari modi in cui è possibile visualizzare o esportare i risultati. Scoprire come è possibile ottimizzare rapidamente le query e eseguire il drill-down per ottenere informazioni più complete. | [Usare i risultati delle query](advanced-hunting-query-results.md) |
+| **Informazioni su come utilizzare i risultati della query** | Informazioni sui grafici e sui vari modi in cui è possibile visualizzare o esportare i risultati. Scoprire come è possibile ottimizzare rapidamente le query, eseguire il drill-down per ottenere informazioni più ricche e intraprendere azioni di risposta. | - [Utilizzo dei risultati delle query](advanced-hunting-query-results.md)<br>- [Eseguire un'azione sui risultati delle query](advanced-hunting-take-action.md) |
 | **Comprensione dello schema** | È possibile ottenere una conoscenza buona e approfondita delle tabelle nello schema e delle relative colonne. Questo consente di determinare dove cercare i dati e come creare le query. | [Informazioni di riferimento sullo schema](advanced-hunting-schema-tables.md) |
 | **Sfruttare le query predefinite** | Esplorare le raccolte di query predefinite che coprono diversi scenari di ricerca delle minacce. | - [Utilizzo di query condivise](advanced-hunting-shared-queries.md)<br>- [Andare a caccia](advanced-hunting-go-hunt.md) |
 | **Ottimizzare le query** | Informazioni su come creare query efficienti e query che combinino dati da email e dispositivi. | - [Procedure consigliate per le query](advanced-hunting-shared-queries.md) <br>- [Cercare tra i dispositivi e i messaggi di posta elettronica](advanced-hunting-best-practices.md) |
@@ -63,6 +66,7 @@ I dati di caccia avanzati possono essere categorizzati in due tipi distinti, ogn
 ## <a name="related-topics"></a>Argomenti correlati
 - [Apprendere il linguaggio delle query](advanced-hunting-query-language.md)
 - [Usare i risultati delle query](advanced-hunting-query-results.md)
+- [Eseguire un'azione sui risultati delle query](advanced-hunting-take-action.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)

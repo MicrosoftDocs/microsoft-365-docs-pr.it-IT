@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sul dashboard del flusso di posta elettronica nel centro sicurezza & Compliance, inclusi Insight, report e widget.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: e3139fa6a139c7fa159c2e5e5daa3879322f4bf0
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588017"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552675"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 
@@ -57,7 +57,7 @@ Il dashboard del flusso di posta è disponibile per:
 
 - Membri del **ruolo di amministratore del flusso di posta** nel centro sicurezza & Compliance. Se questo ruolo viene assegnato in modo esplicito a un utente che non è un membro dell'amministratore globale o dei ruoli di amministratore di Exchange:
 
-  - L'utente deve accedere al centro sicurezza & conformità direttamente a [https://protection.office.com](https://protection.office.com) .
+  - L'utente deve accedere al centro sicurezza & conformità direttamente a <https://protection.office.com> .
 
   - L'utente avrà solo l'autorizzazione di sola lettura per il dashboard del flusso di posta.
 

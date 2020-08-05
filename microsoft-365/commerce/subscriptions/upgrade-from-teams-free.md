@@ -20,12 +20,13 @@ ms.custom: ''
 search.appverid: ''
 description: Informazioni su come eseguire l'aggiornamento da Microsoft teams gratuitamente a un nuovo abbonamento a Microsoft 365 for business.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6bd36987fcad4cebb217bdc89388dfae44ca30b9
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.date: 07/08/2020
+ms.openlocfilehash: fcd06db64f78c80e5b4a015380e672f529feb0ae
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087925"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552459"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Eseguire l'aggiornamento da Microsoft teams gratuitamente a Microsoft 365 for business
 

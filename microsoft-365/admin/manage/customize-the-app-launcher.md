@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: "Creare collegamenti rapidi per la posta elettronica, i documenti, le app, i siti di SharePoint, i siti esterni e altre risorse mediante l'aggiunta di sezioni personalizzate all'icona di avvio delle app. "
-ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cebb4385e40f2cef68d3ee26dca1cb905c8d91c5
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780134"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552495"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Aggiungere riquadri personalizzati all'icona di avvio delle app
 
@@ -45,7 +45,7 @@ Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Aggiungere un riquadro personalizzato all'icona di avvio delle app
 
-1. Nell'interfaccia di amministrazione, passare alla scheda **Impostazioni**  >  **Org Settings** organizzazione e scegliere **Organigramma profilo** .
+1. Accedere all'interfaccia di amministrazione come amministratore globale, passare a impostazioni org delle **Impostazioni**  >  **Org Settings**e scegliere la scheda **profilo organizzazione** .
     
 2. Nella scheda **profilo organizzazione** , scegliere **tessere di avvio delle app personalizzate**.
   
@@ -91,4 +91,3 @@ Per eliminare un riquadro personalizzato, selezionare il riquadro nella finestra
 
 Oltre all'aggiunta di riquadri all'icona di avvio delle app, è possibile aggiungere riquadri di avvio delle app alla barra di spostamento (ulteriori[informazioni](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Per personalizzare l'aspetto di Microsoft 365 in modo che corrisponda al marchio dell'organizzazione, vedere [Customize the Microsoft 365 Theme](../setup/customize-your-organization-theme.md).
   
-

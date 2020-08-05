@@ -20,12 +20,13 @@ search.appverid:
 - MET150
 description: Ottenere supporto tecnico e per la fatturazione usando i numeri di telefono indicati per il proprio paese o area geografica o inviando una richiesta di assistenza online.
 feedback_system: None
-ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.date: 7/28/2020
+ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46536861"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552447"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Modi di contattare il supporto tecnico per i prodotti per le aziende - Guida per l'amministratore
 
@@ -64,12 +65,9 @@ Gli amministratori possono chiamare il supporto, assicurandosi di avere a portat
 
 - **Nel Regno Unito, chiamare il numero 0800 032 6417.**
 
-### <a name="phone-numbers-for-other-countries"></a>Numeri di telefono per altri paesi
-
 Se il numero di telefono per il supporto non è elencato qui sopra, usare il menu a discesa di seguito per individuare il numero del proprio paese o area geografica.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
-
 
 ::: moniker-end
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro sicurezza e &amp; conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: a2225cbbd9233199e0ce1fc0baf0be5fe59bd258
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434096"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560298"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 
@@ -31,7 +31,7 @@ Le organizzazioni di Office 365 Advanced Threat Protection (ATP) (ad esempio, gl
 
 ![Dashboard dei report nel centro sicurezza & Compliance](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="advanced-threat-protection-file-types-report"></a>Report sui tipi di file con protezione avanzata dalle minacce
+## <a name="advanced-threat-protection-file-types-report"></a>Report sui tipi di file di protezione avanzata delle minacce
 
 Il rapporto sui **tipi di file Advanced Threat Protection** report Visualizza il tipo di file rilevati come dannosi per gli [allegati sicuri di ATP](atp-safe-attachments.md).
 
@@ -115,7 +115,7 @@ Se si fa clic su **Visualizza tabella dettagli**, il rapporto fornisce una visua
 
 Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
-## <a name="advanced-threat-protection-message-disposition-report"></a>Rapporto di disposizione del messaggio per la protezione avanzata dalle minacce
+## <a name="advanced-threat-protection-message-disposition-report"></a>Report eliminazione messaggi di protezione avanzata delle minacce
 
 Il rapporto di **disposizione dei messaggi ATP** indica le azioni eseguite per i messaggi di posta elettronica rilevati come contenuti dannosi.
 
@@ -197,7 +197,7 @@ Se si fa clic su **Visualizza tabella dettagli**, il rapporto fornisce una visua
 
 Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
-## <a name="threat-protection-status-report"></a>Rapporto sullo stato della protezione dalle minacce
+## <a name="threat-protection-status-report"></a>Report dello stato di protezione dalle minacce
 
 Il rapporto **sullo stato della protezione dalle minacce** è una singola visualizzazione che raggruppa informazioni su contenuto dannoso e messaggi di posta elettronica dannosi rilevati e bloccati da [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) e Office 365 ATP. Per ulteriori informazioni, vedere [rapporto sullo stato della protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report).
 
@@ -218,7 +218,7 @@ Il report di **protezione dalle minacce URL** contiene due visualizzazioni aggre
 
 - **Azione di protezione clic su URL**: Visualizza il numero di clic URL degli utenti nell'organizzazione e i risultati del clic:
 
-  - **Bloccato**
+  - **Bloccato** (l'utente è stato bloccato dall'esplorazione all'URL)
   - **Bloccato e selezionato tramite**
   - **Fare clic su di esso durante l'analisi**
 
@@ -227,7 +227,7 @@ Il report di **protezione dalle minacce URL** contiene due visualizzazioni aggre
   Se si fa clic su **filtri**, è possibile modificare il report con i filtri seguenti:
 
   - Data di **inizio** e **Data di fine**
-  - Le azioni di protezione clic disponibili, oltre al valore **consentito** per visualizzare le informazioni relative a tutti gli URL clic (non solo blocchi bloccati).
+  - Le azioni di protezione clic disponibili, oltre al valore **consentito** (è stato consentito all'utente di passare all'URL).
 
   ![URL fare clic su Protection Action View nel rapporto di protezione delle minacce URL](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: "Informazioni su come l'analisi dell'utilizzo si connette a un'API e fornisce un andamento mensile dell'utilizzo di vari servizi di Microsoft 365.  "
-ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 1fa1cb842b603a920665ec1b59ca18f586b5d181
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695092"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560860"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modello di dati nell'analisi dell'utilizzo di Microsoft 365
 
@@ -140,6 +140,9 @@ Questa tabella contiene i dati relativi a ogni utente che ha eseguito un'attivit
 |SFB_P2PSummary  <br/> |Numero di sessioni peer-to-peer a cui l'utente ha partecipato.  <br/> |
 |SFB_ConfOrgSummary  <br/> |Numero di sessioni di conferenza organizzate dall'utente.  <br/> |
 |SFB_ConfPartSummary  <br/> |Numero di sessioni di conferenza a cui l'utente ha partecipato.  <br/> |
+
+> [!NOTE]
+> Teams_HasOtherAction significa che l'utente è considerato attivo ma ha un valore pari a zero per i messaggi di chat, 1:1 chiamate, messaggi di canale, riunioni totali e riunioni organizzate.
    
 ### <a name="data-table---tenant-product-usage"></a>Tabella di dati - Tenant Product Usage
 

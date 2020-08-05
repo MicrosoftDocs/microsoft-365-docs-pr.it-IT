@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: f7357c204105772ef1780ef94f211e9d711ec735
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516912"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560884"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Panoramica del Centro sicurezza Microsoft 365
 
@@ -29,7 +29,9 @@ Immettere Microsoft 365 Security Center: la nuova Home page per il monitoraggio 
 
 I nuovi Microsoft 365 Security Center e [microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) sono aree di lavoro specializzate progettate per soddisfare le esigenze dei team di sicurezza e del team di conformità. Queste soluzioni sono integrate tra i servizi di Microsoft 365 e offrono informazioni utili per ridurre i rischi e salvaguardare la propria azienda digitale.
 
-Visitare il Centro sicurezza Microsoft 365 all' [https://security.microsoft.com](https://security.microsoft.com)indirizzo. 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BmvV]
+
+Visitare il Centro sicurezza Microsoft 365 all'indirizzo [https://security.microsoft.com](https://security.microsoft.com) . 
 
 > [!NOTE]
 > È necessario essere assegnati a un ruolo appropriato, ad esempio amministratore globale, amministratore della sicurezza, operatore di sicurezza o lettore di sicurezza in Azure Active Directory per accedere al centro sicurezza Microsoft 365.
@@ -54,7 +56,7 @@ Il Centro sicurezza Microsoft 365 include:
 * **Criteri**: consente di criteri per gestire i dispositivi, proteggere dalle minacce e ricevere avvisi su varie attività dell'organizzazione.
 * **Autorizzazioni**: consente di gestire chi nell'organizzazione ha accesso al Centro sicurezza Microsoft 365 per visualizzarne il contenuto ed eseguire attività. È inoltre possibile assegnare autorizzazioni di Microsoft 365 nel portale di Azure AD.
 
-## <a name="learn-more"></a>Ulteriori informazioni 
+## <a name="learn-more"></a>Altre informazioni 
 
 Esaminare questi argomenti sul monitoraggio, la revisione e la risposta alle esigenze di sicurezza:
 - Connettere i punti su avvisi tramite [eventi](incident-queue.md) non consentiti

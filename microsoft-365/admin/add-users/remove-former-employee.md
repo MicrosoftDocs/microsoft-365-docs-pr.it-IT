@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Seguire questo elenco di controllo per rimuovere un dipendente da Microsoft 365 e proteggere i dati. '
-ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b63866615c19ecf1d9096f0d63cbcb2008350f51
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844859"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560388"
 ---
-# <a name="remove-a-former-employee"></a>Rimuovere un ex dipendente
+# <a name="remove-or-delete-a-former-employee"></a>Rimuovere o eliminare un ex dipendente
 
 ::: moniker range="o365-21vianet"
 
@@ -59,7 +59,7 @@ Per impedire a un dipendente di accedere:
 
 3. Immettere una nuova password e quindi fare clic su **Reimposta**. (Non inviarlo a tali messaggi).
     
-4. Selezionare il nome dell'utente da passare al riquadro delle proprietà e nella scheda **OneDrive** selezionare **Avvia disconnessione**.
+4. Selezionare il nome dell'utente da passare al riquadro delle proprietà e nella scheda **account** selezionare **Avvia disconnessione**.
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ Per impedire a un dipendente di accedere:
 
 3. Immettere una nuova password e quindi fare clic su **Reimposta**. (Non inviarlo a tali messaggi).
 
-4. Selezionare di nuovo l'utente, espandere **impostazioni di OneDrive**e quindi fare clic su **Avvia** accanto a **disconnessione**.
+4. Selezionare il nome dell'utente da passare al riquadro delle proprietà e nella scheda **account** selezionare **Avvia disconnessione**.
 
 ::: moniker-end
 
@@ -83,9 +83,12 @@ Per impedire a un dipendente di accedere:
 
 3. Immettere una nuova password e quindi fare clic su **Reimposta**. (Non inviarlo a tali messaggi).
 
-4. Selezionare di nuovo l'utente, espandere **impostazioni di OneDrive**e quindi fare clic su **Avvia** accanto a **disconnessione**.
+4. Selezionare il nome dell'utente da passare al riquadro delle proprietà e nella scheda **account** selezionare **Avvia disconnessione**.
 
 ::: moniker-end
+
+> [!NOTE]
+> Per avviare l'accesso, è necessario essere un amministratore globale.
 
     
 Entro un'ora o dopo che hanno lasciato la pagina Microsoft 365 corrente in cui si trovano, verrà richiesto di eseguire nuovamente l'accesso. (Un token di accesso è valido per un'ora, quindi la sequenza temporale dipende da quanto tempo è rimasto su quel token e se si spostano fuori dalla pagina Web corrente).
@@ -161,7 +164,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente o della cassetta postale condivisa a cui verranno inviati i messaggi. 
   
-5. Selezionare **Salva**. 
+5. Seleziona **Salva**. 
     
 6. Ricordare di non eliminare l'account dell'ex dipendente.
  
@@ -177,7 +180,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente o della cassetta postale condivisa a cui verranno inviati i messaggi. 
   
-5. Selezionare **Salva**. 
+5. Seleziona **Salva**. 
     
 6. Ricordare di non eliminare l'account dell'ex dipendente.
 
@@ -193,7 +196,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente o della cassetta postale condivisa a cui verranno inviati i messaggi. 
   
-5. Selezionare **Salva**. 
+5. Seleziona **Salva**. 
     
 6. Ricordare di non eliminare l'account dell'ex dipendente.
 
@@ -215,9 +218,10 @@ Se l'ex dipendente aveva un telefono aziendale, è possibile usare Office 365 pe
     
 5. Nella pagina **Dettagli dispositivo mobile** , in **dispositivi mobili**, selezionare il dispositivo mobile, selezionare **wipe data** ![ Wipe Device ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , quindi selezionare **blocca**. 
     
-6. Selezionare **Salva**. 
+6. Seleziona **Salva**. 
     
-    **Suggerimento**: assicurarsi di rimuovere o disabilitare l'utente dal servizio Blackberry Enterprise locale. Occorre anche disabilitare gli eventuali dispositivi Blackberry per l'utente. Per informazioni sui passaggi specifici da eseguire per disabilitare l'utente, vedere la guida all'amministrazione di Blackberry Business Cloud Services. 
+   > [!TIP]
+   > Assicurarsi di rimuovere o disabilitare l'utente dal servizio BlackBerry Enterprise locale. Occorre anche disabilitare gli eventuali dispositivi Blackberry per l'utente. Per informazioni sui passaggi specifici da eseguire per disabilitare l'utente, vedere la guida all'amministrazione di Blackberry Business Cloud Services. 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Bloccare l'accesso di un ex dipendente ai dati di Microsoft 365
 <a name="bkmk_block"> </a>
@@ -343,6 +347,10 @@ Per ulteriori informazioni sulla gestione delle licenze utente per Microsoft 365
 Quando si rimuove una licenza utente da Office 365, il numero chiamata PSTN associato all'utente viene rilasciato e può essere assegnato a un altro utente.
   
 Se l'utente appartiene a un gruppo di coda, non sarà più contattato dagli agenti della coda di chiamata. Per questo motivo, si consiglia la rimozione dell'utente anche dai gruppi associati alla coda di chiamata. 
+
+## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configurare l'inoltro di chiamata per gli utenti dell'organizzazione
+
+Se è necessario configurare l'inoltro di chiamata per il numero di telefono del dipendente terminato, l'impostazione di inoltro di chiamata in criteri di chiamata può impostare l'inoltro in cui le chiamate in arrivo possono essere inoltrate ad altri utenti o possono chiamare un'altra persona contemporaneamente. Per ulteriori informazioni, vedere [Calling Policy in Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-calling-policy).
   
 ## <a name="delete-a-former-employees-user-account"></a>Eliminare l'account utente di un ex dipendente.
 <a name="bkmk_delete"> </a>

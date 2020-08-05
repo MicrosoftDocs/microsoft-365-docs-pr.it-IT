@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773767"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560773"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Governo del Regno Unito-cloud (G-Cloud)
 
@@ -37,9 +37,9 @@ Ogni anno Microsoft prepara la documentazione e Invia elementi di prova per atte
 
 L'appuntamento dei servizi Microsoft al mercato digitale significa che i partner e gli enti governativi BRITANNIci possono utilizzare i servizi nell'ambito per archiviare ed elaborare i dati governativi ufficiali del Regno Unito, la maggior parte dei dati governativi. Inoltre, vi sono più di 450 partner Microsoft inclusi in G-cloud che sono rivenditori di servizi cloud Microsoft. Possono affermare direttamente la conformità dei servizi nell'ambito con i 14 principi nelle proprie applicazioni. I clienti e i partner, tuttavia, dovranno raggiungere la propria conformità per tutti i componenti che non sono inclusi nell'attestazione e la determinazione della conformità per i servizi cloud Microsoft.
 
-Informazioni su come accelerare la distribuzione di G-Cloud V6 per il Regno Unito con il modello di sicurezza e conformità di Azure: [scaricare il modello di Azure Blueprint UK g-cloud Principle Guida all'implementazione](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
+ [14 Cloud Security Controls for UK cloud using Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) offre strategie per i clienti per spostare i propri servizi in Azure e contribuire a soddisfare gli obblighi del Regno Unito imposti da CESG/CSN. Il white paper fornisce informazioni su come Azure può essere utilizzato per facilitare l'indirizzamento dei 14 controlli descritti nelle entità di sicurezza cloud e delinea come i clienti possono muoversi più velocemente e ottenere un numero maggiore di risparmi quando adottano i servizi di Microsoft Azure.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
@@ -47,7 +47,7 @@ Informazioni su come accelerare la distribuzione di G-Cloud V6 per il Regno Unit
 - Intune
 - Servizio cloud Power Automate (in precedenza Microsoft Flow), autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Office 365: Exchange Online, SharePoint Online e Skype for business online
-- Servizio cloud PowerApps come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
@@ -112,4 +112,4 @@ Il [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/ge
 - [Principi di sicurezza di G-Cloud](https://aka.ms/UK-G-Cloud)
 - [Mercato digitale](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

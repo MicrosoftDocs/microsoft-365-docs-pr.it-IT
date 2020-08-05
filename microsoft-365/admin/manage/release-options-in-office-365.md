@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 3baec050f33893357b25c832552643cf3a6d10d0
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 648be8ca5d3c7aae93ed868972bc59b32ba87987
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502880"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560716"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurare le opzioni di rilascio standard o di destinazione
 
@@ -38,10 +38,10 @@ ms.locfileid: "46502880"
 
 ::: moniker-end
 
-Con Microsoft 365, vengono visualizzati nuovi aggiornamenti e funzionalità del prodotto quando diventano disponibili invece di effettuare aggiornamenti costosi ogni pochi anni. È possibile gestire la modalità di ricezione degli aggiornamenti da parte dell'organizzazione. Ad esempio, è possibile iscriversi per una versione anticipata in modo che l'organizzazione riceva prima gli aggiornamenti. È possibile indicare che solo alcuni utenti ricevono gli aggiornamenti. In alternativa, è possibile rimanere nella pianificazione di rilascio predefinita e ricevere gli aggiornamenti in un secondo momento. In questo articolo vengono illustrate le diverse opzioni di rilascio e come è possibile utilizzarle per l'organizzazione.
-  
 > [!IMPORTANT]
-> Gli aggiornamenti di Microsoft 365 descritti in questo articolo si applicano a Microsoft 365, SharePoint Online ed Exchange Online. Non si applicano a Skype for business e ai servizi correlati. Queste opzioni di rilascio sono mirate, le migliori modalità per rilasciare le modifiche a Microsoft 365 ma non possono essere garantite in qualsiasi momento o per tutti gli aggiornamenti. 
+> Gli aggiornamenti di Microsoft 365 descritti in questo articolo si applicano a Microsoft 365, SharePoint Online ed Exchange Online. Queste opzioni di rilascio sono mirate, le migliori modalità per rilasciare le modifiche a Microsoft 365 ma non possono essere garantite in qualsiasi momento o per tutti gli aggiornamenti. Non si applicano a Skype for business, a Microsoft teams e ai servizi correlati.
+
+Con Microsoft 365, vengono visualizzati nuovi aggiornamenti e funzionalità del prodotto quando diventano disponibili invece di effettuare aggiornamenti costosi ogni pochi anni. È possibile gestire la modalità di ricezione degli aggiornamenti da parte dell'organizzazione. Ad esempio, è possibile iscriversi per una versione anticipata in modo che l'organizzazione riceva prima gli aggiornamenti. È possibile indicare che solo alcuni utenti ricevono gli aggiornamenti. In alternativa, è possibile rimanere nella pianificazione di rilascio predefinita e ricevere gli aggiornamenti in un secondo momento. In questo articolo vengono illustrate le diverse opzioni di rilascio e come è possibile utilizzarle per l'organizzazione.
 
 > [!NOTE]
 > Per informazioni sui canali di aggiornamento per le applicazioni, vedere [Overview of Update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels). 

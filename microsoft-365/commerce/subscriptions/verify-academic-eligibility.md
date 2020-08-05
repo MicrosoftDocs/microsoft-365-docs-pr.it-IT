@@ -18,12 +18,13 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Informazioni su come verificare l'idoneità della scuola a Microsoft 365 Education Academic pricing.
-ms.openlocfilehash: 70bc4e986a5072b7f05ae983b2e932aa804caaeb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.date: 07/21/2020
+ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205003"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560704"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Verificare l'idoneità accademica per gli abbonamenti a Microsoft 365 Education
 
@@ -31,7 +32,7 @@ Se si è parte di un'istituzione accademica, è possibile iscriversi per una ver
 
 In questo articolo viene descritto come verificare la propria idoneità accademica scolastica, controllare lo stato di idoneità e acquistare abbonamenti a prezzi accademici dopo l'approvazione della scuola.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 È necessario disporre già di una sottoscrizione di valutazione di Microsoft 365 Education. Se non si dispone di una sottoscrizione di valutazione, [visitare la pagina Web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) e selezionare **inizia gratuitamente**.
 
@@ -44,7 +45,7 @@ Se non si è sicuri di avere una sottoscrizione di valutazione di Microsoft 365 
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Verificare la propria idoneità accademica scolastica
 
-Nella maggior parte dei casi, quando ti iscrivi per una versione di valutazione gratuita e completi la procedura guidata di verifica idoneità per fornire il dominio della tua scuola, ricevi un'approvazione immediata o un diniego dell'idoneità della tua scuola. In alcuni casi, è necessario disporre di ulteriori informazioni per completare una revisione manuale di idoneità. Questa revisione può richiedere fino a 10 giorni lavorativi. Dopo aver esaminato le informazioni sull'idoneità della scuola, è possibile inviare un messaggio di posta elettronica che informa lo stato della scuola.
+Nella maggior parte dei casi, quando ti iscrivi per una versione di valutazione gratuita e completi la procedura guidata di verifica idoneità per fornire il dominio della tua scuola, ricevi un'approvazione immediata o un diniego dell'idoneità della tua scuola. In alcuni casi, è necessario un numero maggiore di informazioni per completare una revisione manuale di idoneità e per completare il questionario. Questa revisione può richiedere fino a 10 giorni lavorativi. Dopo aver esaminato le informazioni sull'idoneità della scuola, è possibile inviare un messaggio di posta elettronica che informa lo stato della scuola.
 
 È possibile chiudere la procedura guidata di verifica accademica prima di accedere a un dominio e iniziare a usare subito la sottoscrizione di valutazione. Tuttavia, non è possibile ottenere prezzi accademici fino al completamento del processo di verifica. È necessario completare il processo prima della fine della versione di valutazione gratuita per convertirlo in un abbonamento a pagamento e continuare a utilizzarlo. Questo si applica anche quando si esegue la conversione all'abbonamento gratuito a1.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di scadenza dei gruppi di Microsoft 365.
-ms.openlocfilehash: 8def757241dec28f5a54c76dc81614fd52fe85e5
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780422"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560364"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Criteri di scadenza del gruppo Microsoft 365
 
@@ -54,7 +54,7 @@ I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una dell
 |Ruolo|Cosa possono fare|
 |---------|---------|
 |Amministratore globale (in Azure, amministratore della società), amministratore utente|Creare, leggere, aggiornare o eliminare le impostazioni dei criteri di scadenza per i gruppi di Microsoft 365.|
-|User|Rinnovare o [ripristinare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Microsoft 365 che possiede|
+|Utente|Rinnovare o [ripristinare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Microsoft 365 che possiede|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Informazioni su come impostare i criteri di scadenza
 
@@ -78,7 +78,7 @@ I proprietari del gruppo saranno informati solo tramite posta elettronica. Se il
 
 30 giorni prima della scadenza del gruppo, i proprietari del gruppo (o gli indirizzi di posta elettronica specificati per i gruppi che non dispongono di un proprietario) riceveranno un messaggio di posta elettronica che consente di rinnovare facilmente il gruppo. Se non lo rinnovano, riceveranno un'altra e-mail di rinnovo 15 giorni prima della scadenza. Se non sono ancora state rinnovate, riceveranno una notifica di posta elettronica di più il giorno prima della scadenza.
 
-Se per qualche motivo nessuno dei proprietari o degli amministratori rinnova il gruppo prima della scadenza, l'amministratore può comunque ripristinare il gruppo fino a 30 giorni dopo la data di scadenza. Per informazioni dettagliate, vedere: [ripristinare un gruppo di Microsoft 365 eliminato](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
+Se per qualche motivo nessuno dei proprietari o degli amministratori rinnova il gruppo prima della scadenza e il rinnovo automatico non avviene a causa del fatto che il gruppo non soddisfa i requisiti da rinnovare automaticamente, l'amministratore può comunque ripristinare il gruppo fino a 30 giorni dopo la data di scadenza. Per informazioni dettagliate, vedere: [ripristinare un gruppo di Microsoft 365 eliminato](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ## <a name="related-articles"></a>Articoli correlati
 
@@ -86,4 +86,6 @@ Se per qualche motivo nessuno dei proprietari o degli amministratori rinnova il 
 
 [Assegnare un nuovo proprietario a un gruppo orfano](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-Configurare la data di scadenza per i [gruppi Microsoft 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '
+[Configurare la data di scadenza per i gruppi Microsoft 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+
+[Rinnovo automatico basato sulle attività](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)

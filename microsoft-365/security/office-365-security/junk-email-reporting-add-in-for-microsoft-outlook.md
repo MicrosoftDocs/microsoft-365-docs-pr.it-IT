@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per segnalare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft.
-ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 54b0fb634333ccb180870ab1fcc6160fd133f81e
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208828"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560522"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook
 
@@ -63,7 +63,12 @@ In questo argomento viene descritto come installare e utilizzare il componente a
 
    ![Segnala come finestra di dialogo di phishing](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. I messaggi selezionati saranno inviati a Microsoft per l'analisi e spostati nella cartella Posta indesiderata. Per verificare che i messaggi siano stati inviati, aprire la cartella **Posta inviata** per visualizzare i messaggi inviati.
+3. I messaggi selezionati verranno inviati a Microsoft per l'analisi e:
+
+   - Spostata nella cartella posta indesiderata se è stata segnalata come posta indesiderata.
+   - Eliminato se è stato segnalato come phishing.
+   
+   Per verificare che i messaggi siano stati inviati, aprire la cartella **Posta inviata** per visualizzare i messaggi inviati.
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata per segnalare messaggi non di posta indesiderata e di phishing dalla cartella posta indesiderata
 
@@ -87,7 +92,12 @@ In questo argomento viene descritto come installare e utilizzare il componente a
 
    ![Segnala come finestra di dialogo di phishing](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. I messaggi selezionati saranno inviati a Microsoft per l'analisi e spostati nella cartella Posta indesiderata. Per verificare che i messaggi siano stati inviati, aprire la cartella **Posta inviata** per visualizzare i messaggi inviati.
+3. I messaggi selezionati verranno inviati a Microsoft per l'analisi e:
+
+   - Spostata nella cartella posta indesiderata se è stata segnalata come posta indesiderata.
+   - Eliminato se è stato segnalato come phishing.
+
+   Per verificare che i messaggi siano stati inviati, aprire la cartella **Posta inviata** per visualizzare i messaggi inviati.
 
 ## <a name="install-the-junk-email-reporting-add-in"></a>Installare il componente aggiuntivo per la segnalazione della posta indesiderata
 
@@ -96,7 +106,6 @@ In questo argomento viene descritto come installare e utilizzare il componente a
 - Andare a <https://www.microsoft.com/download/details.aspx?id=18275> e scaricare il file. msi appropriato per la versione di Office in un percorso facile da trovare:
 
   - **32 bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-
   - **64 bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - Per Outlook 2013 o versione successiva, l'unico prerequisito è Microsoft .NET Framework 2,0. In Windows 10 non è possibile installare .NET Framework 2,0 da un download.
@@ -209,7 +218,7 @@ Dopo aver chiuso Outlook, utilizzare una delle procedure seguenti per disinstall
 
   Nella finestra di dialogo visualizzata, selezionare **Rimuovi componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per Outlook** e quindi fare clic su **Avanti**.
 
-- **Modalità invisibile all'utente**: trovare o scaricare il file. msi appropriato. In una finestra del prompt dei comandi, sostituire \< parametro PathToFile \> con il percorso del file con estensione msi ed eseguire uno dei seguenti comandi:
+- **Modalità invisibile all'utente**: trovare o scaricare il file. msi appropriato. In una finestra del prompt dei comandi, sostituire \<PathToFile\> con il percorso del file con estensione msi ed eseguire uno dei seguenti comandi:
 
   - **32 bit**:
 
@@ -288,7 +297,7 @@ Per gli altri metodi che è possibile utilizzare per inviare messaggi a Microsof
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problema: gli utenti hanno scelto di non ricevere una richiesta di conferma quando segnalano i messaggi e ora richiedano il prompt.
 
-1. Creare la `ConfirmReportJunk` chiave del registro di sistema wih il valore "true":
+1. Creare la `ConfirmReportJunk` chiave del registro di sistema con il valore "true":
 
    ```text
    Windows Registry Editor Version 5.00

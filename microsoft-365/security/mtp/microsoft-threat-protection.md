@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b11daf1cc6921e4be87b1bd3965adc2d76d0a0dd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: afeef8de09e0ee7a727372041791871712ca4e0d
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049929"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560896"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -50,11 +50,13 @@ Con la soluzione integrata Microsoft Threat Protection, i professionisti della s
 >Consultare la [Guida interattiva di Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
 
 
-Microsoft Threat Protection Suite protegge: 
+La famiglia di prodotti Microsoft Threat Protection protegge: 
 - **Endpoint con Microsoft Defender ATP** -Microsoft Defender ATP è una piattaforma endpoint unificata per la protezione preventiva, il rilevamento post-violazione, l'analisi automatizzata e la risposta. 
 - La **posta elettronica e la collaborazione con office 365 ATP** -Office 365 ATP salvaguarda la propria organizzazione dalle minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. 
 - **Identità con Azure ATP e Azure ad Identity Protection** -Azure ATP utilizza segnali di Active Directory per identificare, rilevare ed esaminare le minacce avanzate, le identità compromesse e le azioni Insider dannose indirizzate alla propria organizzazione. 
 - **Applicazioni con Microsoft cloud app Security** -Microsoft cloud app Security è una soluzione cross-SaaS completa che introduce una visibilità profonda, forti controlli dati e una protezione avanzata dalle minacce per le app cloud. 
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
 Microsoft Threat Protection ' s Unique cross-product layer aumenta i singoli componenti della famiglia per:
 - Contribuire alla protezione contro gli attacchi e coordinare le risposte difensive attraverso la famiglia attraverso la condivisione dei segnali e le azioni automatiche
@@ -80,7 +82,7 @@ Caratteristiche di Microsoft Threat Protection Cross-Product include:
 - **Cross-product Threat Hunting** -i team di sicurezza possono sfruttare le proprie conoscenze organizzative esclusive per cercare segni di compromesso creando query personalizzate sui dati non elaborati raccolti dai vari prodotti di protezione. Microsoft Threat Protection fornisce l'accesso basato su query a 30 giorni di segnali RAW cronologici e dati di avviso tra endpoint e dati ATP di Office 365. 
 
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Per iniziare
 I requisiti di licenza di Microsoft Threat Protection devono essere soddisfatti prima di poter abilitare il servizio nel centro sicurezza Microsoft 365 all' [Security.Microsoft.com](https://security.microsoft.com). Per ulteriori informazioni, vedere:
 - [Requisiti relativi alle licenze](prerequisites.md#licensing-requirements)
 - [Attivare Microsoft Threat Protection](mtp-enable.md)

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9c1b9c1853d80d818d97084e2668d3b12b6da0e6
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 07c010a78d297a4a3c932c0d9a0e32cce0c43bfa
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503217"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560908"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Estendere la copertura di ricerca avanzata con le impostazioni corrette
 
@@ -34,7 +34,7 @@ La [ricerca avanzata](advanced-hunting-overview.md) si basa su dati provenienti 
 ## <a name="advanced-security-auditing-on-windows-devices"></a>Controllo di sicurezza avanzato nei dispositivi Windows
 Abilitare le impostazioni di controllo avanzate per ottenere i dati relativi alle attività nei dispositivi, tra cui la gestione degli account locali, la gestione dei gruppi di sicurezza locali e la creazione di servizi.
 
-| Dati | Descrizione | Tabella schema | Configurazione |
+| Dati | Description | Tabella schema | Configurazione |
 | --- | --- | --- | --- |
 | Gestione account | Eventi acquisiti come vari `ActionType` valori che indicano la creazione, l'eliminazione e altre attività relative agli account locali | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -Distribuire un criterio di controllo di sicurezza avanzato: [Audit User Account Management](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [Informazioni sui criteri di controllo di sicurezza avanzati](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
 | Gestione dei gruppi di sicurezza | Eventi acquisiti come vari `ActionType` valori che indicano la creazione di gruppi di sicurezza locali e altre attività di gestione di gruppi locali | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -Distribuire un criterio di controllo di sicurezza avanzato: [gestione del gruppo di sicurezza di controllo](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [Informazioni sui criteri di controllo di sicurezza avanzati](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
@@ -43,9 +43,9 @@ Abilitare le impostazioni di controllo avanzate per ottenere i dati relativi all
 ## <a name="azure-atp-sensor-on-the-domain-controller"></a>Sensore ATP di Azure nel controller di dominio
 Se si sta eseguendo Active Directory in locale, è necessario installare il sensore ATP di Azure nel controller di dominio per ottenere i dati per Azure ATP. Dopo aver installato e configurato correttamente, questi dati vengono alimentati anche in una ricerca avanzata tramite Azure ATP e offrono un'immagine più olistica delle informazioni sull'identità e degli eventi nella rete. Questi dati migliorano anche la capacità di Azure ATP di generare avvisi rilevanti che sono coperti anche dalla ricerca avanzata. 
 
-| Dati | Descrizione | Tabella schema | Configurazione |
+| Dati | Description | Tabella schema | Configurazione |
 | --- | --- | --- | --- |
-| Controller di dominio | Dati provenienti da Active Directory locale inviati a Azure ATP, arricchendo le informazioni relative all'identità, ad esempio dettagli account, attività di accesso e query di Active Directory | Più tabelle, tra cui [IdentityInfo](advanced-hunting-identityinfo-table.md), [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)e [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | [Installare il sensore ATP di Azure](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)|
+| Controller di dominio | Dati provenienti da Active Directory locale inviati a Azure ATP, arricchendo le informazioni relative all'identità, ad esempio dettagli account, attività di accesso e query di Active Directory | Più tabelle, tra cui [IdentityInfo](advanced-hunting-identityinfo-table.md), [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)e [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installare il sensore ATP di Azure](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [Attiva gli eventi di Windows rilevanti](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
