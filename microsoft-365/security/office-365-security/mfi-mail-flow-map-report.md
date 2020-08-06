@@ -1,5 +1,5 @@
 ---
-title: Report Mappa flusso di posta
+title: Mappa del flusso di posta
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,62 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni sul rapporto della mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Gli amministratori possono imparare a usare la mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità per visualizzare e monitorare la modalità di flusso di posta da e verso la propria organizzazione su connettori e senza l'utilizzo di connettori.
+ms.openlocfilehash: 2996227de3e0141635522ada4e41f2e8e65e9040
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818844"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577694"
 ---
-# <a name="mail-flow-map-report"></a>Report Mappa flusso di posta
+# <a name="mail-flow-map-in-the-security--compliance-center"></a>Mappa del flusso di posta elettronica nel centro sicurezza & Compliance
 
-Questo rapporto fornisce informazioni dettagliate sul modo in cui la posta scorre nell'organizzazione. È possibile utilizzare queste informazioni per apprendere modelli, identificare anomalie e correggere i problemi man mano che si verificano.
+La **mappa del flusso** di posta nel [Dashboard del flusso di posta](mail-flow-insights-v2.md) elettronica nel centro sicurezza & conformità fornisce informazioni su come scorre la posta attraverso la propria organizzazione. È possibile utilizzare queste informazioni per apprendere modelli, identificare anomalie e correggere i problemi che si verificano.
 
-![Il rapporto Mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/mail-flow-map-selected.png)
+![Widget mappa del flusso di posta elettronica nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/mfi-mail-flow-map-widget.png)
 
-## <a name="mail-flow-map-widget"></a>Widget mappa del flusso di posta
+Per impostazione predefinita, il widget Visualizza il modello del flusso di posta del giorno precedente in un grafico conosciuto come diagramma di *Sankey* . È possibile utilizzare il freccia sinistra freccia sinistra e freccia destra ![ ](../../media/scc-left-arrow.png) ![ ](../../media/scc-right-arrow.png) per visualizzare le informazioni di giorni diversi. Ogni colore diverso rappresenta il flusso di posta su un connettore in ingresso o in uscita diverso (o senza l'utilizzo di connettori). Se si posiziona il puntatore del mouse su un colore specifico, il numero di messaggi viene visualizzato per il tipo di connettore.
 
-Per impostazione predefinita, la mappa del flusso di posta Visualizza il modello di flusso di posta di alto livello del giorno precedente. È possibile utilizzare le frecce sinistra e destra per giorni diversi. Se si passa il puntatore del mouse su ogni area del report, viene visualizzato il volume di posta da e verso l'organizzazione, come illustrato nel diagramma seguente:
+## <a name="report-view-for-the-mail-flow-map"></a>Visualizzazione report per la mappa del flusso di posta
 
-![Frecce a destra e a sinistra nel widget mappa del flusso di posta](../../media/mail-flow-map-widget.png)
+Se si fa clic sul widget **mappa del flusso di posta elettronica** , verrà eseguito il rapporto **mappa del flusso di posta** .
 
-## <a name="mail-flow-map-basics"></a>Nozioni di base sul flusso di posta
+Nella visualizzazione report sono disponibili i grafici seguenti:
 
-Se si fa clic sul widget **mappa del flusso di posta elettronica** , verrà eseguito il rapporto **mappa del flusso di posta** . In questa sezione è possibile visualizzare un livello di report più granulare, è possibile fare clic su Visualizza dettagli per visualizzare i dati dettagliati. È inoltre possibile scaricare il report dettagliato facendo clic su Richiedi report.
+- Mostra **dati per: Panoramica**: è fondamentalmente una visualizzazione ingrandita del widget. Se si posiziona il puntatore del mouse su un colore specifico, il numero di messaggi viene visualizzato per il tipo di connettore.
 
-![Visualizzazione panoramica nel rapporto Mappa del flusso di posta](../../media/mail-flow-map-overview.png)
+  ![Visualizzazione panoramica nel rapporto Mappa del flusso di posta](../../media/mfi-mail-flow-map-report-overview.png)
 
-## <a name="details"></a>Dettagli
+- Mostra **dati per: dettaglio**: questa visualizzazione contiene informazioni dettagliate sui connettori e sui domini di destinazione. I domini principale del mittente e del destinatario sono elencati e gli altri vengono inseriti in **altri**. Se si posiziona il puntatore del mouse su un colore e una sezione specifici, viene visualizzato il numero di messaggi.
 
-Per impostazione predefinita, la **visualizzazione dei dati per** è impostata sul valore **Overview**. Quando si fa clic sul menu a discesa e si seleziona **Dettagli**, la visualizzazione passa al dettaglio del livello di dominio.
+  ![Visualizzazione dettagli nel rapporto Mappa flusso di posta](../../media/mfi-mail-flow-map-report-detail.png)
 
-![Selezionare dettaglio in Mostra dati per in visualizzazione panoramica nel rapporto Mappa flusso di posta](../../media/mail-flow-map-select-detail.png)
+Se si fa clic su **filtri** in una visualizzazione report, è possibile specificare un intervallo di date con data di **inizio** e **Data di fine**.
 
-I domini principale del mittente e del destinatario sono elencati e gli altri verranno inseriti in **altri** , come illustrato nei diagrammi seguenti:
+Per inviare tramite posta elettronica il report per un intervallo di date specifico a uno o più destinatari, fare clic su **Richiedi download**.
 
-![Visualizzazione dettagli nel rapporto Mappa flusso di posta](../../media/mail-flow-map-detail.png)
+Le informazioni correlate vengono visualizzate sotto la mappa del flusso di posta, se disponibili, ad esempio l' [Insight del ciclo di posta possibile](mfi-mail-loop-insight.md).
 
-## <a name="related-insights"></a>Approfondimenti correlati
+## <a name="details-table-view-for-the-mail-flow-map"></a>Visualizzazione della tabella dei dettagli per la mappa del flusso di posta
 
-Le informazioni correlate vengono visualizzate sotto la mappa del flusso di posta, se disponibili, ad esempio l'Insight del dominio del mittente o l'Insight del loop di posta elettronica.
+Se si fa clic su **Visualizza tabella dettagli** in una visualizzazione report, vengono visualizzate le informazioni seguenti:
+
+- **Data**
+- **Categoria**
+- **Connettore/provider di servizi di terze parti**
+- **Dominio mittente/destinatario**
+- **Numero di messaggi**
+
+Se si fa clic su **filtri** in una visualizzazione tabella dettagli, è possibile specificare un intervallo di date con data di **inizio** e **Data di fine**.
+
+Se si seleziona una riga, i dettagli simili vengono visualizzati in un riquadro a comparsa:
+
+![Riquadro a comparsa dettagli dalla tabella Details della mappa del flusso di posta](../../media/mfi-mail-flow-map-view-details-table-details.png)
+
+Per inviare tramite posta elettronica il report per un intervallo di date specifico a uno o più destinatari, fare clic su **Richiedi download**.
+
+Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
 ## <a name="see-also"></a>Vedere anche
 
-Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

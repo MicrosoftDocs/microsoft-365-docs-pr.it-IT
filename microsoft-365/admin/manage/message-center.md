@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Ottenere una panoramica del centro messaggi di Microsoft 365 e del relativo ruolo nella gestione delle modifiche.
-ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cec60a7ae5df1af01625f8feef84ff258d798659
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780086"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564026"
 ---
 # <a name="message-center"></a>Centro messaggi
 
@@ -83,7 +83,7 @@ Di seguito viene illustrata una breve panoramica delle informazioni visualizzate
 |Altre opzioni <br/> |Altre opzioni consentono di ignorare un messaggio, contrassegnarlo come letto o da leggere oppure condividerlo con un altro amministratore. Per ripristinare un messaggio respinto, selezionare la scheda **messaggi ignorati** , selezionare il segno di spunta accanto al messaggio e selezionare **Ripristina**. <br/> |
 |Aggiornamento principale <br/> |Un punto esclamativo in questa colonna indica un aggiornamento importante. <br/> |
 |Intervento entro  <br/> |Qui verranno specificate solo le date se Microsoft intende apportare una modifica che richiede l'intervento dell'utente entro una certa data di scadenza. Poiché raramente si utilizza la colonna **Act by** , se viene visualizzato qualcosa, è necessario prestare particolare attenzione.  <br/> |
-|Categoria  <br/> | I messaggi vengono identificati da una delle tre categorie seguenti: <br/><br/> **Prevenire o risolvere i problemi**: informa l'utente dei problemi noti che interessano l'organizzazione e potrebbe richiedere di intervenire per evitare interruzioni del servizio. I messaggi di tipo Prevenire o risolvere problemi sono diversi da quelli di tipo Integrità dei servizi, in quanto richiedono che l'utente sia proattivo per evitare problemi. <br/> <br/> **Pianificare la modifica**: informa le modifiche apportate a Microsoft 365 che possono richiedere l'intervento per evitare interruzioni del servizio. Ad esempio, verranno comunicate le modifiche apportate ai requisiti di sistema o le caratteristiche in fase di rimozione. Per assicurare la normale operatività del servizio, Microsoft fornisce almeno 30 giorni di preavviso per ogni modifica che richiede l'intervento di un amministratore. <br/> <br/> **Rimanere informati**: informazioni sulle funzionalità nuove o aggiornate che si stanno attivando nell'organizzazione. Le funzionalità vengono in genere annunciate per prime nella [Roadmap di Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2070821). <br/><br/>Può anche informare sulla manutenzione pianificata in conformità con il contratto di servizio. La manutenzione pianificata può causare un tempo di inattività, in cui l'utente o gli utenti non possono accedere a Microsoft 365, a una funzionalità specifica o a un servizio, ad esempio la posta elettronica o OneDrive for business.  <br/> |
+|Category  <br/> | I messaggi vengono identificati da una delle tre categorie seguenti: <br/><br/> **Prevenire o risolvere i problemi**: informa l'utente dei problemi noti che interessano l'organizzazione e potrebbe richiedere di intervenire per evitare interruzioni del servizio. I messaggi di tipo Prevenire o risolvere problemi sono diversi da quelli di tipo Integrità dei servizi, in quanto richiedono che l'utente sia proattivo per evitare problemi. <br/> <br/> **Pianificare la modifica**: informa le modifiche apportate a Microsoft 365 che possono richiedere l'intervento per evitare interruzioni del servizio. Ad esempio, verranno comunicate le modifiche apportate ai requisiti di sistema o le caratteristiche in fase di rimozione. Per assicurare la normale operatività del servizio, Microsoft fornisce almeno 30 giorni di preavviso per ogni modifica che richiede l'intervento di un amministratore. <br/> <br/> **Rimanere informati**: informazioni sulle funzionalità nuove o aggiornate che si stanno attivando nell'organizzazione. Le funzionalità vengono in genere annunciate per prime nella [Roadmap di Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2070821). <br/><br/>Può anche informare sulla manutenzione pianificata in conformità con il contratto di servizio. La manutenzione pianificata può causare un tempo di inattività, in cui l'utente o gli utenti non possono accedere a Microsoft 365, a una funzionalità specifica o a un servizio, ad esempio la posta elettronica o OneDrive for business.  <br/> |
 |Ultimo aggiornamento  <br/> |Data in cui il messaggio è stato pubblicato o ultimo aggiornamento.  <br/> |
 |ID messaggio  <br/> |Microsoft tiene traccia dei post del Centro messaggi in base agli ID messaggio. È possibile fare riferimento a questo ID se si desidera inviare commenti e suggerimenti oppure se si chiama il supporto per un messaggio specifico.  <br/> |
 
@@ -178,3 +178,9 @@ Viene utilizzata la traduzione automatica per visualizzare automaticamente i mes
 - Amministratore del servizio Intune
 - Amministratore dei ruoli con privilegi
 - Ruolo con autorizzazioni di lettura per i report
+
+## <a name="unsubscribe-from-message-center-emails"></a>Annullamento della sottoscrizione ai messaggi di posta elettronica del centro messaggistica
+
+1. I messaggi di posta elettronica del digest sono attivati per impostazione predefinita e vengono inviati all'indirizzo di posta elettronica principale. Per interrompere la ricezione del digest settimanale, modificare l'impostazione **Invia un digest settimanale di messaggi personali** su **disattivata**. <br/><br/>La notifica tramite posta elettronica per gli aggiornamenti principali è un controllo separato. Se non si desidera ricevere notifiche di posta elettronica sugli aggiornamenti importanti, verificare che l'opzione **Invia messaggi di posta elettronica per gli aggiornamenti importanti** sia **disattivata**.  <br/><br/>Per interrompere la ricezione di notifiche di posta elettronica sui messaggi relativi alla privacy dei dati, verificare che i messaggi **di posta elettronica inviati per la privacy dei dati** siano **spenti**.  I messaggi sulla privacy dei dati non sono inclusi nel digest settimanale.<br/><br/>
+
+2. Selezionare **Salva** per mantenere le modifiche.<br/>

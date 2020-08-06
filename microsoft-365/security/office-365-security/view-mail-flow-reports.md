@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i report sul flusso di posta nel Centro sicurezza e conformità
+title: Visualizzare i report del flusso di posta nel dashboard dei report
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come trovare e utilizzare i rapporti sulla sicurezza del flusso di posta per l'organizzazione. I report del flusso di posta sono disponibili nel centro sicurezza & conformità.
+description: Gli amministratori possono ottenere informazioni sui rapporti sul flusso di posta disponibili nel dashboard report nel centro sicurezza & Compliance.
 ms.custom: ''
-ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 69b2c3383862860b4616d95c2a6a1bb3a525d842
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434180"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578019"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Visualizzare i report sul flusso di posta nel Centro sicurezza e conformità
+# <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visualizzare i report sul flusso di posta nel dashboard report nel centro sicurezza & Compliance
 
-Oltre alle informazioni sul [flusso di posta](mail-flow-insights-v2.md) disponibili nel centro sicurezza & conformità, sono disponibili una serie di rapporti sul flusso di posta per facilitare il monitoraggio dell'organizzazione Microsoft 365. Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare i report nel centro sicurezza & Compliance <https://office.protection.com> accedendo al dashboard **report** \> **Dashboard**. Per accedere direttamente al dashboard dei report, aprire <https://office.protection.office.com/insightdashboard> .
+Oltre ai rapporti sul flusso di posta disponibili nel [Dashboard del flusso](mail-flow-insights-v2.md) di posta elettronica nel centro sicurezza & Compliance, nel dashboard report sono disponibili numerosi rapporti di flusso di posta aggiuntivi che consentono di monitorare l'organizzazione Microsoft 365.
+
+Se si dispone delle [autorizzazioni necessarie](#what-permissions-are-needed-to-view-these-reports), è possibile visualizzare i report nel [Centro sicurezza & Compliance](https://office.protection.com) accedendo al **Reports** \> **Dashboard**report. Per accedere direttamente al dashboard dei report, aprire <https://office.protection.office.com/insightdashboard> .
 
 ![Dashboard dei report nel centro sicurezza & Compliance](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -404,21 +406,13 @@ Per visualizzare e utilizzare i report, è necessario essere membri del gruppo d
 
 - Nel centro sicurezza & conformità è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
-  -Gestione dell'organizzazione
-
-  -Security Administrator (è possibile eseguire questa operazione anche nell'interfaccia di [amministrazione di Azure Active Directory](https://aad.portal.azure.com) -Security Reader
+  -Organization Management-Security Administrator (è possibile farlo anche nell'interfaccia di [amministrazione di Azure Active Directory](https://aad.portal.azure.com) -Security Reader
 
   Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
 - In Exchange Online, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
-  -Gestione dell'organizzazione
-
-  Gestione dell'organizzazione in sola visualizzazione
-
-  -Destinatari di sola visualizzazione
-
-  -Compliance Management
+  -Gestione organizzazione-solo visualizzazione organizzazione-destinatari di sola visualizzazione-gestione della conformità
 
 Per ulteriori informazioni, vedere [autorizzazioni in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) e [gestire i gruppi di ruoli in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
@@ -426,4 +420,8 @@ Per ulteriori informazioni, vedere [autorizzazioni in Exchange Online](https://d
 
 [Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità](reports-and-insights-in-security-and-compliance.md)
 
+[Approfondimenti sul flusso di posta nel Centro sicurezza e conformità](mail-flow-insights-v2.md)
+
 [Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità](view-email-security-reports.md)
+
+[Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md)

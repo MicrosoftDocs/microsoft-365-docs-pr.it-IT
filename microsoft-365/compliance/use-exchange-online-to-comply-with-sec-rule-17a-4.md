@@ -18,12 +18,12 @@ description: Configurare Exchange Online e il Centro conformità per soddisfare 
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 769e13951ce15fb698131860fa78f25fa133e327
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bba51bed4409bfb933b577419f48ab6963d4f7d6
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127303"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577116"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4
 
@@ -70,12 +70,3 @@ La protezione dell'archiviazione consente di soddisfare i requisiti normativi de
 
 È possibile bloccare i criteri di conservazione con PowerShell. Per altre informazioni, vedere [Usare la protezione dell'archiviazione per la conformità ai requisiti normativi](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
-## <a name="known-limitations"></a>Limitazioni note
-
-Sono attualmente previste alcune limitazioni per Exchange Online:
-
-- Le comunicazioni in thread non sono disponibili per i messaggi di chat e canali di Teams.
-- Gli apprezzamenti per i messaggi di chat e canali di Teams non vengono conservati.
-
-> [!NOTE]
-> Il controllo a livello di elemento è ora disponibile per le cassette postali di gruppo di Microsoft 365. Per altre informazioni, vedere [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md).

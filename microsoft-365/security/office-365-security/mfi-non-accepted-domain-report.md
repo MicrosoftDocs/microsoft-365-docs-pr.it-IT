@@ -1,5 +1,5 @@
 ---
-title: Report di dominio non accettato
+title: Rapporto di dominio non accettato nel dashboard del flusso di posta
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,30 +12,58 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni sul rapporto di dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: a630d5b9674dbb136ecc54b23acd4408534d6fbc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Gli amministratori possono imparare a usare il rapporto di dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità per monitorare i messaggi provenienti dall'organizzazione locale in cui il dominio del mittente non è configurato in Microsoft 365.
+ms.openlocfilehash: 649163729bbb73140f9cfb7e75c9fd06f3908cce
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819522"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577464"
 ---
-# <a name="non-accepted-domain-report"></a>Report di dominio non accettato
+# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Rapporto di dominio non accettato nel centro sicurezza & Compliance
 
-Analogamente all'Insight del **dominio del mittente** , l'Insight del **dominio non accettato** identifica i messaggi provenienti dall'organizzazione di posta elettronica locale, ma il dominio del mittente non è configurato come dominio accettato nell'organizzazione.
+Il rapporto di **dominio non accettato** nel [Dashboard del flusso di posta](mail-flow-insights-v2.md) nel centro sicurezza & conformità Visualizza informazioni sui messaggi provenienti dall'organizzazione di posta elettronica locale, in cui il dominio del mittente non è configurato come dominio accettato nell'organizzazione Microsoft 365.
 
 Microsoft 365 potrebbe limitare tali messaggi se si dispone di dati per dimostrare che l'intento di questi messaggi è dannoso. Pertanto, è importante capire cosa succede e risolvere il problema.
 
-![Il rapporto di dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/non-accepted-domain-report-selected.png)
+![Widget del dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/mfi-non-accepted-domain-report-widget.png)
 
-Quando si fa clic sul widget, viene portato al rapporto completo. Nel report completo, in cui è possibile fare clic su **Visualizza dettagli** per visualizzare le informazioni in una tabella, come illustrato nel diagramma seguente:
+## <a name="report-view-for-the-non-accepted-domain-report"></a>Visualizzazione report per il rapporto di dominio non accettato
 
-![Visualizzare la tabella dei dettagli nel rapporto di dominio non accettato](../../media/non-accepted-domain-report-view-details.png)
+Se si fa clic sul grafico sul widget di **dominio non accettato** , verrà eseguito il rapporto di **dominio non accettato** .
 
-Quando si seleziona una riga nella tabella, viene visualizzato un riquadro a comparsa per visualizzare ulteriori dettagli. È possibile fare clic su **Visualizza messaggi di esempio** per visualizzare alcuni dei messaggi identificati.
+Per impostazione predefinita, viene visualizzata l'attività per tutti i connettori coinvolti. Se si fa clic su **Mostra dati per**, è possibile selezionare un connettore specifico dall'elenco a discesa.
 
-![Selezionare una riga nella tabella Details del rapporto di dominio non accettato](../../media/non-accepted-domain-report-select-row-in-table.png)
+Se si posiziona il puntatore del mouse su un punto dati (giorno) nel grafico, verrà visualizzato il numero totale di messaggi per il connettore.
+
+![Visualizzazione report nel rapporto dominio non accettato](../../media/mfi-non-accepted-domain-report-overview-view.png)
+
+## <a name="details-table-view-for-the-non-accepted-domain-report"></a>Visualizzazione della tabella dei dettagli per il rapporto di dominio non accettato
+
+Se si fa clic su **Visualizza tabella dettagli** in una visualizzazione report, vengono visualizzate le informazioni seguenti:
+
+- **Data**
+- **Nome del connettore in ingresso**
+- **Dominio mittente**
+- **Numero di messaggi**
+- **Messaggi di esempio**: ID del messaggio di un esempio di messaggi coinvolti.
+
+Se si fa clic su **filtri** in una visualizzazione tabella dettagli, è possibile specificare un intervallo di date con data di **inizio** e **Data di fine**.
+
+Per inviare tramite posta elettronica il report per un intervallo di date specifico a uno o più destinatari, fare clic su **Richiedi download**.
+
+Quando si seleziona una riga nella tabella, viene visualizzato un riquadro a comparsa con le seguenti informazioni:
+
+- **Data**
+- **Nome del connettore in ingresso**
+- **Dominio mittente**
+- **Numero di messaggi**
+- **Messaggi di esempio**: è possibile fare clic su **Visualizza messaggi di esempio** per visualizzare i risultati della [traccia](message-trace-scc.md) dei messaggi per un esempio di messaggi coinvolti.
+
+![Riquadro a comparsa dettagli dopo aver selezionato una riga nella visualizzazione tabella dettagli del rapporto di dominio non accettato](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+
+Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

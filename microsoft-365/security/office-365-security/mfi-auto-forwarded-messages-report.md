@@ -1,5 +1,5 @@
 ---
-title: Report dei messaggi inoltrati automaticamente
+title: Insight dei messaggi con inoltro automatico
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,31 +11,47 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Gli amministratori possono ottenere informazioni sul rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05e3f62610c32bc95caf579ef4dd46bf1ed90275
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635305"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577820"
 ---
-# <a name="auto-forwarded-messages-report"></a>Report dei messaggi inoltrati automaticamente
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Insight dei messaggi auto-inoltrati nel centro sicurezza & Compliance
 
-Il rapporto **messaggi auto-inoltrati** nel dashboard del flusso di posta elettronica Visualizza informazioni sui messaggi che vengono inoltrati automaticamente dall'organizzazione ai destinatari nei domini esterni.
+L'Insight dei **messaggi auto-inoltrati** nel [Dashboard del flusso di posta elettronica](mail-flow-insights-v2.md) nel centro sicurezza & conformità Visualizza informazioni sui messaggi che vengono inoltrati automaticamente dall'organizzazione ai destinatari nei domini esterni.
 
-![Insight dei messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
-
-![Il rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Widget messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Dettagli dei messaggi inoltrati automaticamente
 
-Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro a comparsa che visualizza lo stato del messaggio auto-inoltrato. È possibile visualizzare i dettagli facendo clic sul collegamento del **rapporto di inoltro** .
+Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro a comparsa che consente di visualizzare ulteriori informazioni sui messaggi auto-inoltrati:
 
-![Il riquadro a comparsa dettagli per il rapporto messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+- Inoltro **automatico dei messaggi tramite i metodi di inoltro**:
+
+  - **Regole del flusso di posta**
+  - **Dalle regole di posta in arrivo**
+  - **Per inoltro SMTP**
+  - Un collegamento al [rapporto di inoltro](view-mail-flow-reports.md#forwarding-report) per ulteriori dettagli.
+
+- **Messaggi auto-inoltrati da domini e utenti**:
+
+  - **Top 5 domini inoltrati a**
+  - **Nuovi domini (la settimana scorsa)**
+  - **Top 5 utenti di inoltro**
+  - **Nuovi utenti (la settimana scorsa)**
+  - Un collegamento al [rapporto di modifica di inoltro](mfi-new-users-forwarding-email.md#forwarding-modifications-report) per ulteriori dettagli.
+
+![Riquadro a comparsa dettagli per il rapporto messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>Approfondimenti
 
-Vengono generate due informazioni in base ai dati del rapporto: **nuovi utenti di inoltro** e **nuovi domini di inoltro**. Ogni Insight fornisce un riepilogo del numero di nuovi Forwarder o domini con un collegamento al **nuovo rapporto di inoltro** che fornisce maggiori dettagli per i due tipi di dati. Il **nuovo rapporto di inoltro** Mostra anche una visualizzazione della sequenza temporale di nuove attività e la tabella dei dettagli identifica gli utenti che hanno avviato l'inoltro e a quali domini.
+Vengono generate due intuizioni in base ai dati del rapporto:
+
+- [Nuovi utenti che inoltrano messaggi di posta elettronica](mfi-new-users-forwarding-email.md)
+- [Nuovi domini che vengono inoltrati tramite posta elettronica](mfi-new-domains-being-forwarded-email.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su Smart report e Insight disponibili nel centro sicurezza & compliance e su come utilizzarli per visualizzare ed esplorare i dati e intraprendere azioni rapide.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 407fee494b0fbb93b76e669c150e20136064454b
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 1f38ed081ce73af737b58a38692ac2fa0519972d
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434312"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577187"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
 
@@ -41,7 +41,7 @@ Oltre a evidenziare aree problematiche, Smart report e Insight includono suggeri
 
 Nel centro sicurezza & conformità è disponibile un'ampia gamma di report. (Andare a **report** \> **Dashboard** per ottenere una visualizzazione all-up. Nella tabella seguente sono elencati i report disponibili con collegamenti per ulteriori informazioni:
   
-|**Tipo di informazioni**|**Percorso da seguire**|**Dove andare per ulteriori informazioni**|
+|Tipo di informazioni|Percorso da seguire|Dove andare per ulteriori informazioni|
 |---|---|---|
 |**Rapporti Centro sicurezza & conformità** (all up)  <br/> Informazioni dettagliate e suggerimenti e collegamenti ai report di sicurezza & conformità, inclusi i report di prevenzione della perdita di dati, le etichette, i report di protezione della posta elettronica, i report di protezione avanzata delle minacce e altro ancora|Nel centro sicurezza & conformità, accedere a **Reports** \> **Dashboard** dei report|[Monitorare e visualizzare i report nel centro sicurezza di Microsoft 365](../mtp/monitoring-and-reporting.md)|
 |**Prevenzione della perdita dei dati** <br/> Corrispondenza dei criteri di prevenzione della perdita dei dati, falsi positivi e override e collegamenti per creare o modificare criteri|Nel centro sicurezza & conformità, accedere a criteri di **prevenzione della perdita di dati** \> **Policy**|[Visualizzare i report per la prevenzione della perdita dei dati](../../compliance/view-the-dlp-reports.md)|

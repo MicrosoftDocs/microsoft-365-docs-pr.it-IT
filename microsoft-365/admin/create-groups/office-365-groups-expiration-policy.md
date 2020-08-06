@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di scadenza dei gruppi di Microsoft 365.
-ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: bda4bfbbef4e0d145c55b2a49b4d1203c6a7b1f0
+ms.sourcegitcommit: 4f82fa7270e7ec6c6dd80329f28612e1f3289b22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560364"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572140"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Criteri di scadenza del gruppo Microsoft 365
 
@@ -68,17 +68,25 @@ Se il gruppo non dispone di un proprietario, i messaggi di posta elettronica di 
 
 ![Schermata delle impostazioni di scadenza dei gruppi in Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
-## <a name="how-expiry-works-with-the-retention-policy"></a>Come funziona la scadenza con il criterio di conservazione
+## <a name="how-expiration-and-renewal-work"></a>Come funziona la scadenza e il rinnovo
 
-Se si dispone di criteri di conservazione dell'installazione in centro sicurezza e conformità per i gruppi, i criteri di scadenza funzionano perfettamente con i criteri di conservazione. Quando un gruppo scade, le conversazioni del gruppo nella casella di posta e nei file nel sito del gruppo vengono mantenute nel contenitore di conservazione per il numero di giorni specificato nel criterio di conservazione. Gli utenti non vedranno il gruppo o il relativo contenuto, dopo la scadenza.
+Il criterio di scadenza è il seguente: 
 
-## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>Come e quando un proprietario del gruppo apprende se i propri gruppi scadono
+- Circa un mese prima della scadenza, il sistema verificherà se è stata creata un'attività di gruppo dopo la creazione del gruppo o dall'inizio del ciclo di rinnovo corrente.
 
-I proprietari del gruppo saranno informati solo tramite posta elettronica. Se il gruppo è stato creato tramite Planner, SharePoint o qualsiasi altra applicazione, le notifiche di scadenza vengono sempre inviate tramite posta elettronica. Se il gruppo è stato creato tramite Team, il proprietario del gruppo riceverà una notifica per il rinnovo tramite la sezione attività. Non è consigliabile abilitare la scadenza di un gruppo se il proprietario del gruppo non dispone di un indirizzo di posta elettronica valido.
+- Se vengono rilevate attività precedenti, la data di scadenza viene avanzata in quel momento per il numero di giorni specificato nel criterio di scadenza.
 
-30 giorni prima della scadenza del gruppo, i proprietari del gruppo (o gli indirizzi di posta elettronica specificati per i gruppi che non dispongono di un proprietario) riceveranno un messaggio di posta elettronica che consente di rinnovare facilmente il gruppo. Se non lo rinnovano, riceveranno un'altra e-mail di rinnovo 15 giorni prima della scadenza. Se non sono ancora state rinnovate, riceveranno una notifica di posta elettronica di più il giorno prima della scadenza.
+- Se l'attività precedente non viene rilevata, il sistema continuerà a controllare l'attività fino alla data di scadenza. Se viene rilevata l'attività, il sistema avanzerà la data di scadenza in base alla quantità specificata in quel momento.
+
+30 giorni prima della scadenza del gruppo, i proprietari del gruppo (o gli indirizzi di posta elettronica specificati per i gruppi che non dispongono di un proprietario) riceveranno un messaggio di posta elettronica che consente di rinnovare facilmente il gruppo. Se non lo rinnovano, riceveranno un'altra e-mail di rinnovo 15 giorni prima della scadenza. Se non sono ancora state rinnovate, riceveranno una notifica di posta elettronica di più il giorno prima della scadenza. (Dopo che il gruppo è stato rinnovato, nessun altro promemoria per la posta elettronica viene inviato fino a 30 giorni prima della nuova data di scadenza).
+
+I proprietari del gruppo riceveranno una notifica tramite posta elettronica. Se il gruppo è stato creato tramite Planner, SharePoint o qualsiasi altra applicazione, le notifiche di scadenza vengono sempre inviate tramite posta elettronica. Se il gruppo è stato creato tramite Team, il proprietario del gruppo riceverà una notifica per il rinnovo tramite la sezione attività. Non è consigliabile abilitare la scadenza di un gruppo se il proprietario del gruppo non dispone di un indirizzo di posta elettronica valido.
 
 Se per qualche motivo nessuno dei proprietari o degli amministratori rinnova il gruppo prima della scadenza e il rinnovo automatico non avviene a causa del fatto che il gruppo non soddisfa i requisiti da rinnovare automaticamente, l'amministratore può comunque ripristinare il gruppo fino a 30 giorni dopo la data di scadenza. Per informazioni dettagliate, vedere: [ripristinare un gruppo di Microsoft 365 eliminato](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
+
+## <a name="how-expiry-works-with-retention-policies"></a>Funzionamento con scadenza dei criteri di conservazione
+
+Se si dispone di criteri di conservazione dell'installazione in centro sicurezza e conformità per i gruppi, i criteri di scadenza funzionano perfettamente con i criteri di conservazione. Quando un gruppo scade, le conversazioni del gruppo nella casella di posta e nei file nel sito del gruppo vengono mantenute nel contenitore di conservazione per il numero di giorni specificato nel criterio di conservazione. Gli utenti non vedranno il gruppo o il relativo contenuto, dopo la scadenza.
 
 ## <a name="related-articles"></a>Articoli correlati
 
