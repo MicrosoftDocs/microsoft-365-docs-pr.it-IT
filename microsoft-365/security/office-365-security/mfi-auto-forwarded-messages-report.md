@@ -1,5 +1,5 @@
 ---
-title: Report dei messaggi inoltrati automaticamente
+title: Insight dei messaggi con inoltro automatico
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,31 +11,47 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Gli amministratori possono ottenere informazioni sul rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05e3f62610c32bc95caf579ef4dd46bf1ed90275
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635305"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577820"
 ---
-# <a name="auto-forwarded-messages-report"></a><span data-ttu-id="c2703-103">Report dei messaggi inoltrati automaticamente</span><span class="sxs-lookup"><span data-stu-id="c2703-103">Auto-forwarded messages report</span></span>
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a><span data-ttu-id="fb4d6-103">Insight dei messaggi auto-inoltrati nel centro sicurezza & Compliance</span><span class="sxs-lookup"><span data-stu-id="fb4d6-103">Auto-forwarded messages insight in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="c2703-104">Il rapporto **messaggi auto-inoltrati** nel dashboard del flusso di posta elettronica Visualizza informazioni sui messaggi che vengono inoltrati automaticamente dall'organizzazione ai destinatari nei domini esterni.</span><span class="sxs-lookup"><span data-stu-id="c2703-104">The **Auto-forwarded messages** report in the mail flow dashboard displays information on messages that are automatically forwarded from your organization to recipients in external domains.</span></span>
+<span data-ttu-id="fb4d6-104">L'Insight dei **messaggi auto-inoltrati** nel [Dashboard del flusso di posta elettronica](mail-flow-insights-v2.md) nel centro sicurezza & conformità Visualizza informazioni sui messaggi che vengono inoltrati automaticamente dall'organizzazione ai destinatari nei domini esterni.</span><span class="sxs-lookup"><span data-stu-id="fb4d6-104">The **Auto-forwarded messages** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center displays information about messages that are automatically forwarded from your organization to recipients in external domains.</span></span>
 
-![Insight dei messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Widget messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/mfi-auto-forwarded-messages.png)
 
-![Il rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+## <a name="auto-forwarded-messages-details"></a><span data-ttu-id="fb4d6-106">Dettagli dei messaggi inoltrati automaticamente</span><span class="sxs-lookup"><span data-stu-id="fb4d6-106">Auto-forwarded messages details</span></span>
 
-## <a name="auto-forwarded-messages-details"></a><span data-ttu-id="c2703-107">Dettagli dei messaggi inoltrati automaticamente</span><span class="sxs-lookup"><span data-stu-id="c2703-107">Auto-forwarded messages details</span></span>
+<span data-ttu-id="fb4d6-107">Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro a comparsa che consente di visualizzare ulteriori informazioni sui messaggi auto-inoltrati:</span><span class="sxs-lookup"><span data-stu-id="fb4d6-107">When you click the number of messages in the widget, a flyout pane appears that shows more information about the auto-forwarded messages:</span></span>
 
-<span data-ttu-id="c2703-108">Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro a comparsa che visualizza lo stato del messaggio auto-inoltrato.</span><span class="sxs-lookup"><span data-stu-id="c2703-108">When you click the number of messages in the widget, a flyout pane appears that shows the auto-forwarded message status.</span></span> <span data-ttu-id="c2703-109">È possibile visualizzare i dettagli facendo clic sul collegamento del **rapporto di inoltro** .</span><span class="sxs-lookup"><span data-stu-id="c2703-109">You can see the details by clicking the **Forwarding Report** link.</span></span>
+- <span data-ttu-id="fb4d6-108">Inoltro **automatico dei messaggi tramite i metodi di inoltro**:</span><span class="sxs-lookup"><span data-stu-id="fb4d6-108">**Auto-forwarded messages by forwarding methods**:</span></span>
 
-![Il riquadro a comparsa dettagli per il rapporto messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+  - <span data-ttu-id="fb4d6-109">**Regole del flusso di posta**</span><span class="sxs-lookup"><span data-stu-id="fb4d6-109">**By mail flow rules**</span></span>
+  - <span data-ttu-id="fb4d6-110">**Dalle regole di posta in arrivo**</span><span class="sxs-lookup"><span data-stu-id="fb4d6-110">**By Inbox rules**</span></span>
+  - <span data-ttu-id="fb4d6-111">**Per inoltro SMTP**</span><span class="sxs-lookup"><span data-stu-id="fb4d6-111">**By SMTP forwarding**</span></span>
+  - <span data-ttu-id="fb4d6-112">Un collegamento al [rapporto di inoltro](view-mail-flow-reports.md#forwarding-report) per ulteriori dettagli.</span><span class="sxs-lookup"><span data-stu-id="fb4d6-112">A link to the [Forwarding report](view-mail-flow-reports.md#forwarding-report) for more details.</span></span>
 
-## <a name="insights"></a><span data-ttu-id="c2703-111">Approfondimenti</span><span class="sxs-lookup"><span data-stu-id="c2703-111">Insights</span></span>
+- <span data-ttu-id="fb4d6-113">**Messaggi auto-inoltrati da domini e utenti**:</span><span class="sxs-lookup"><span data-stu-id="fb4d6-113">**Auto-forwarded messages by domains and users**:</span></span>
 
-<span data-ttu-id="c2703-112">Vengono generate due informazioni in base ai dati del rapporto: **nuovi utenti di inoltro** e **nuovi domini di inoltro**.</span><span class="sxs-lookup"><span data-stu-id="c2703-112">Two insights are generated based on the report data: **New forwarding users** and **New forwarding domains**.</span></span> <span data-ttu-id="c2703-113">Ogni Insight fornisce un riepilogo del numero di nuovi Forwarder o domini con un collegamento al **nuovo rapporto di inoltro** che fornisce maggiori dettagli per i due tipi di dati.</span><span class="sxs-lookup"><span data-stu-id="c2703-113">Each insight provides a summary of the number of new forwarders or domains with a link to the **New Forwarding Report** that provides more detail for the two types of data.</span></span> <span data-ttu-id="c2703-114">Il **nuovo rapporto di inoltro** Mostra anche una visualizzazione della sequenza temporale di nuove attività e la tabella dei dettagli identifica gli utenti che hanno avviato l'inoltro e a quali domini.</span><span class="sxs-lookup"><span data-stu-id="c2703-114">The **New Forwarding Report** also shows a timeline view of new activity and the details table identifies who started forwarding and to which domains.</span></span>
+  - <span data-ttu-id="fb4d6-114">**Top 5 domini inoltrati a**</span><span class="sxs-lookup"><span data-stu-id="fb4d6-114">**Top 5 domains forwarded to**</span></span>
+  - <span data-ttu-id="fb4d6-115">**Nuovi domini (la settimana scorsa)**</span><span class="sxs-lookup"><span data-stu-id="fb4d6-115">**New domains (last week)**</span></span>
+  - <span data-ttu-id="fb4d6-116">**Top 5 utenti di inoltro**</span><span class="sxs-lookup"><span data-stu-id="fb4d6-116">**Top 5 forwarding users**</span></span>
+  - <span data-ttu-id="fb4d6-117">**Nuovi utenti (la settimana scorsa)**</span><span class="sxs-lookup"><span data-stu-id="fb4d6-117">**New users (last week)**</span></span>
+  - <span data-ttu-id="fb4d6-118">Un collegamento al [rapporto di modifica di inoltro](mfi-new-users-forwarding-email.md#forwarding-modifications-report) per ulteriori dettagli.</span><span class="sxs-lookup"><span data-stu-id="fb4d6-118">A link to the [Forwarding modifications report](mfi-new-users-forwarding-email.md#forwarding-modifications-report) for more details.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c2703-115">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="c2703-115">See also</span></span>
+![Riquadro a comparsa dettagli per il rapporto messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/mfi-auto-forwarded-messages-details.png)
 
-<span data-ttu-id="c2703-116">Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="c2703-116">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="insights"></a><span data-ttu-id="fb4d6-120">Approfondimenti</span><span class="sxs-lookup"><span data-stu-id="fb4d6-120">Insights</span></span>
+
+<span data-ttu-id="fb4d6-121">Vengono generate due intuizioni in base ai dati del rapporto:</span><span class="sxs-lookup"><span data-stu-id="fb4d6-121">Two insights are generated based on the report data:</span></span>
+
+- [<span data-ttu-id="fb4d6-122">Nuovi utenti che inoltrano messaggi di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="fb4d6-122">New users forwarding email</span></span>](mfi-new-users-forwarding-email.md)
+- [<span data-ttu-id="fb4d6-123">Nuovi domini che vengono inoltrati tramite posta elettronica</span><span class="sxs-lookup"><span data-stu-id="fb4d6-123">New domains being forwarded email</span></span>](mfi-new-domains-being-forwarded-email.md)
+
+## <a name="see-also"></a><span data-ttu-id="fb4d6-124">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="fb4d6-124">See also</span></span>
+
+<span data-ttu-id="fb4d6-125">Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="fb4d6-125">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

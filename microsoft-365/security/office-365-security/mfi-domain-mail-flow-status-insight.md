@@ -1,5 +1,5 @@
 ---
-title: Informazioni dettagliate sullo stato del flusso di posta del dominio principale
+title: Informazioni sullo stato del flusso di posta del dominio principale nel dashboard del flusso di posta
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,28 +12,34 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni sulla panoramica dello stato del flusso di posta del dominio principale nel dashboard del flusso di posta nel centro sicurezza & conformità.
-ms.openlocfilehash: 22b0f8cefe8baacac682550126de55dcbf880d73
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Gli amministratori possono ottenere informazioni su come utilizzare la panoramica dello stato del flusso di posta del dominio principale nel dashboard del flusso di posta nel centro sicurezza & Compliance per risolvere i problemi relativi al flusso di posta relativi ai record MX nei domini di posta elettronica.
+ms.openlocfilehash: 6366e3aee0ab50096f1396776397c80fabc8aaf2
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818592"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577755"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a><span data-ttu-id="65563-103">Informazioni dettagliate sullo stato del flusso di posta del dominio principale</span><span class="sxs-lookup"><span data-stu-id="65563-103">Top domain mail flow status insight</span></span>
+# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a><span data-ttu-id="8d0c3-103">Informazioni sullo stato del flusso di posta del dominio principale nel centro sicurezza & Compliance</span><span class="sxs-lookup"><span data-stu-id="8d0c3-103">Top domain mail flow status insight in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="65563-104">L'Insight **sullo stato del flusso di posta di dominio principale** offre lo stato corrente dei domini dell'organizzazione in termini di flusso di posta.</span><span class="sxs-lookup"><span data-stu-id="65563-104">The **Top domain mail flow status** insight gives you the current status for your organization's domains in terms of mail flow.</span></span> <span data-ttu-id="65563-105">Questo Insight consente di identificare e risolvere i problemi relativi ai domini che si verificano problemi di ***flusso di posta*** (ad esempio, non è possibile ricevere messaggi di posta elettronica esterni), in particolare le scadenze o i domini di dominio con record MX non corretti.</span><span class="sxs-lookup"><span data-stu-id="65563-105">This insight helps you identify and troubleshoot domains that are experiencing ***mail flow impacting*** issues (for example, unable to receive external email), especially domain expirations or domains with incorrect MX records.</span></span>
+<span data-ttu-id="8d0c3-104">La panoramica dello **stato del flusso di posta del dominio principale** nel [Dashboard del flusso di posta elettronica](mail-flow-insights-v2.md) nel centro sicurezza & conformità fornisce lo stato corrente dei domini dell'organizzazione in termini di flusso di posta.</span><span class="sxs-lookup"><span data-stu-id="8d0c3-104">The **Top domain mail flow status** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives you the current status for your organization's domains in terms of mail flow.</span></span> <span data-ttu-id="8d0c3-105">Questo Insight consente di identificare e risolvere i problemi relativi ai domini che si verificano problemi di ***flusso di posta*** (ad esempio, non è possibile ricevere messaggi di posta elettronica esterni), in particolare le scadenze o i domini di dominio con record MX non corretti.</span><span class="sxs-lookup"><span data-stu-id="8d0c3-105">This insight helps you identify and troubleshoot domains that are experiencing ***mail flow impacting*** issues (for example, unable to receive external email), especially domain expirations or domains with incorrect MX records.</span></span>
 
-![Informazioni sullo stato del flusso di dominio principale nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/domain-mail-flow-status-selected.png)
+![Widget dello stato del flusso di dominio principale nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-<span data-ttu-id="65563-107">Quando si fa clic su **Visualizza dettagli** nell'Insight, viene visualizzato un riquadro a comparsa per visualizzare ulteriori dettagli sullo stato di ciascun dominio.</span><span class="sxs-lookup"><span data-stu-id="65563-107">When you click **View details** in the insight, a flyout appears that shows you more details for the status of each domain.</span></span>
+<span data-ttu-id="8d0c3-107">Quando si fa clic su **Visualizza dettagli** nel widget, viene visualizzato un riquadro a comparsa di **stato del dominio** che Mostra più dettagli per lo stato di ogni dominio:</span><span class="sxs-lookup"><span data-stu-id="8d0c3-107">When you click **View details** in the widget, a **Domain status** flyout appears that shows you more details for the status of each domain:</span></span>
 
-<span data-ttu-id="65563-108">Un segno di spunta verde per un dominio indica che il record MX corrente (quando si è visualizzato il dashboard per la visualizzazione del flusso di posta) corrisponde al valore che abbiamo registrato e che il dominio ha ricevuto la posta elettronica nelle ultime due ore.</span><span class="sxs-lookup"><span data-stu-id="65563-108">A green check mark for a domain indicates the current MX record (when you browsed to the mail flow insights dashboard) matches the value we have on record, and that the domain has received email during the past two hours.</span></span>
+- <span data-ttu-id="8d0c3-108">**Dominio**</span><span class="sxs-lookup"><span data-stu-id="8d0c3-108">**Domain**</span></span>
+- <span data-ttu-id="8d0c3-109">**Record MX precedente**</span><span class="sxs-lookup"><span data-stu-id="8d0c3-109">**Previous MX record**</span></span>
+- <span data-ttu-id="8d0c3-110">**Record MX corrente**</span><span class="sxs-lookup"><span data-stu-id="8d0c3-110">**Current MX record**</span></span>
+- <span data-ttu-id="8d0c3-111">**Stato di ricezione della posta elettronica**</span><span class="sxs-lookup"><span data-stu-id="8d0c3-111">**Email receiving status**</span></span>
+- <span data-ttu-id="8d0c3-112">**Stato del dominio**: un segno di spunta verde indica che il record MX corrente (quando si è fatto clic sul widget) corrisponde al valore che abbiamo registrato e che il dominio ha ricevuto la posta elettronica nelle ultime due ore.</span><span class="sxs-lookup"><span data-stu-id="8d0c3-112">**Domain status**: A green check mark indicates the current MX record (at the time you clicked on the widget) matches the value we have on record, and that the domain has received email during the past two hours.</span></span>
 
-<span data-ttu-id="65563-109">Una x rossa per un dominio indica che il record MX è stato modificato e che il dominio non ha ricevuto messaggi di posta elettronica nelle ultime 6 ore.</span><span class="sxs-lookup"><span data-stu-id="65563-109">A red x for a domain indicates the MX record has been changed, and that the domain has received no email during the past 6 hours.</span></span> <span data-ttu-id="65563-110">Questo indica probabilmente che il dominio è scaduto o che il record MX è stato aggiornato in modo errato.</span><span class="sxs-lookup"><span data-stu-id="65563-110">This likely indicates that your domain has expired, or that the MX record has been incorrectly updated.</span></span> <span data-ttu-id="65563-111">Verificare con il registrar o con il servizio di hosting DNS se il dominio è scaduto o se il record MX del dominio non è corretto.</span><span class="sxs-lookup"><span data-stu-id="65563-111">Check with your domain registrar or DNS hosting service to see if the domain has expired, or if the domain's MX record is incorrect.</span></span>
+  <span data-ttu-id="8d0c3-113">Una X rossa indica che il record MX è stato modificato e che il dominio non ha ricevuto alcun messaggio di posta elettronica nelle ultime 6 ore.</span><span class="sxs-lookup"><span data-stu-id="8d0c3-113">A red X indicates the MX record has been changed, and that the domain has received no email during the past 6 hours.</span></span> <span data-ttu-id="8d0c3-114">Questo indica probabilmente che il dominio è scaduto o che il record MX è stato aggiornato in modo errato.</span><span class="sxs-lookup"><span data-stu-id="8d0c3-114">This likely indicates that your domain has expired, or that the MX record has been incorrectly updated.</span></span> <span data-ttu-id="8d0c3-115">Verificare con il registrar o con il servizio di hosting DNS se il dominio è scaduto o se il record MX del dominio non è corretto.</span><span class="sxs-lookup"><span data-stu-id="8d0c3-115">Check with your domain registrar or DNS hosting service to see if the domain has expired, or if the domain's MX record is incorrect.</span></span>
 
-![Il riquadro a comparsa dettagli nell'Insight sullo stato del flusso di dominio superiore](../../media/domain-mail-flow-status-flyout.png)
+<span data-ttu-id="8d0c3-116">È possibile fare clic su **Visualizza altro** per visualizzare le stesse informazioni relative a più domini.</span><span class="sxs-lookup"><span data-stu-id="8d0c3-116">You can click **View more** to see the same information for more domains.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="65563-113">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="65563-113">Related topics</span></span>
+![Riquadro a comparsa dettagli nell'Insight sullo stato del flusso di posta di dominio superiore](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-<span data-ttu-id="65563-114">Per ulteriori informazioni su altre comprensioni del flusso di posta nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="65563-114">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="related-topics"></a><span data-ttu-id="8d0c3-118">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="8d0c3-118">Related topics</span></span>
+
+<span data-ttu-id="8d0c3-119">Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="8d0c3-119">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
