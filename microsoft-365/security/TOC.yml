@@ -489,28 +489,30 @@
             - name: Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
-                - name: Report Mappa flusso di posta
+                - name: Informazioni dettagliate sui messaggi inoltrati automaticamente
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: Correggere possibili informazioni dettagliate sul ciclo di posta
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: Correggere informazioni dettagliate sulle regole del flusso di posta lento
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: Mappa del flusso di posta
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: Informazioni dettagliate sullo stato del flusso di posta del dominio principale
-                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-                - name: Report sui client di autenticazione SMTP
-                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: Risolvere le informazioni dettagliate del dominio del mittente
-                  href: ./office-365-security/mfi-sender-domain-insight.md
-                - name: Rapporto di mancato recapito
-                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Informazioni dettagliate sui messaggi di posta elettronica dei nuovi domini inoltrati
+                  href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+                - name: Informazioni dettagliate sui messaggi di posta elettronica dei nuovi utenti inoltrati
+                  href: ./office-365-security/mfi-new-users-forwarding-email.md
                 - name: Report di dominio non accettato
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: Flusso di posta in ingresso e in uscita
+                - name: Rapporto di mancato recapito
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Informazioni dettagliate sul flusso di posta in ingresso e in uscita
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: Avvisi di coda e code
+                - name: Informazioni dettagliate sulle code
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: Report dei messaggi inoltrati automaticamente
-                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                - name: Informazioni dettagliate sul ciclo di posta
-                  href: ./office-365-security/mfi-mail-loop-insight.md
-                - name: Informazioni dettagliate sulle regole del flusso di posta lento
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: Informazioni dettagliate e report sui client di autenticazione SMTP
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: Informazioni dettagliate sullo stato del flusso di posta del dominio principale
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: Soluzioni di sicurezza
           items:
             - name: 'Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazioni Agile'
