@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
-ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209032"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577849"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -119,7 +119,7 @@ Per altre informazioni su DMARC, vedere [Usare DMARC per convalidare la posta el
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Report relativi al numero di messaggi contrassegnati come spoofing
 
-Le organizzazioni di EOP possono usare il report **Rilevamenti spoof** nel dashboard dei report del Centro sicurezza e conformità. Per altre informazioni, vedere [Report Rilevamenti spoof](view-email-security-reports.md#spoof-detections-report).
+Le organizzazioni EOP possono usare il report dei **rilevamenti Spoof** nella dashboard dei Report del Centro di Sicurezza e Conformità. Per altre informazioni, vedere [Report Rilevamenti spoof](view-email-security-reports.md#spoof-detections-report).
 
 Un 'organizzazione di Office 365 ATP può usare Esplora minacce nel Centro sicurezza e conformità per visualizzare informazioni sui tentativi di phishing. Per altre informazioni, vedere [Analisi e risposta alle minacce di Microsoft 365](office-365-ti.md).
 
@@ -129,12 +129,12 @@ Un 'organizzazione di Office 365 ATP può usare Esplora minacce nel Centro sicur
 
 Ad esempio, Gabriela Laureano (glaureano@contoso.com) è interessata al birdwatching, aderisce alla lista di distribuzione birdwatchers@fabrikam.com e invia il messaggio seguente alla lista:
 
-> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenco di discussione Birdwatchers \<birdwatchers@fabrikam.com\> <br/> 
+> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> 
 **Oggetto:** ottimo avvistamento dei Jays blu sula cima del Monte. Rainier questa settimana <br/><br/>Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier?
 
 Il server della lista di distribuzione riceve il messaggio, ne modifica il contenuto e lo riproduce ai membri della lista. Il messaggio riprodotto ha lo stesso indirizzo del mittente (glaureano@contoso.com), ma è stato modificato aggiungendo un tag alla riga dell'oggetto e un piè di pagina in fondo. Questo tipo di modifica è comune nelle liste di distribuzione e può generare falsi positivi.
 
-> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenco di discussione Birdwatchers \<birdwatchers@fabrikam.com\> <br/> **Oggetto:** [BIRDWATCHING] ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <br/><br/> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier? <br/><br/> Questo messaggio è stato inviato all'elenco di discussione degli amanti del birdwatching. È possibile annullare l’iscrizione in qualsiasi momento.
+> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> **Oggetto:** [BIRDWATCHING] ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <br/><br/> Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier? <br/><br/> Questo messaggio è stato inviato all'elenco di discussione degli amanti del birdwatching. È possibile annullare l’iscrizione in qualsiasi momento.
 
 Per consentire ai messaggi delle liste di distribuzione di superare i controlli anti-spoofing, eseguire le operazioni seguenti in base al fatto che si controlli o meno la lista di distribuzione:
 
