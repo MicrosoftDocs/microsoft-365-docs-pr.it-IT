@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560763"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588174"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -71,6 +71,7 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 |Rispettare la SEC Rule 17a-4|[Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Assicurarsi il tutto sia revisionato e approvato prima di eliminare il contenuto al termine del periodo di conservazione|[Revisioni per l'eliminazione](disposition.md#disposition-reviews) |
 |Disporre di una prova di eliminazione quando il contenuto viene eliminato al termine del periodo di conservazione|[Eliminazione dei record](disposition.md#disposition-of-records) |
+| Controlla come e dove vengono applicate le etichette di conservazione | [Monitoraggio delle etichette di conservazione](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-retention-labels"></a>Documentazione per gli utenti finali sulle etichette di conservazione
 
