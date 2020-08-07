@@ -1,8 +1,8 @@
 ---
 title: Procedura per configurare le funzionalità di protezione dalle minacce in Microsoft 365
 description: Informazioni su come distribuire i servizi e le funzionalità di protezione dalle minacce in Microsoft 365 E5.
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 30ecb25ca68b23278aa8b2905c5f3aa8703cb7f1
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2bbbe1d1af36333ced4209d889c19e7bad7195d6
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522086"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588229"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurare le funzionalità di protezione dalle minacce in Microsoft 365
 
@@ -95,9 +95,8 @@ Microsoft Threat Protection unifica gli avvisi, gli incidenti, l'analisi automat
 
 [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) salvaguarda la propria organizzazione dalle minacce dannose nei messaggi di posta elettronica (allegati e URL), nei documenti di Office e negli strumenti di collaborazione. Nella tabella seguente sono elencate le funzionalità e le funzionalità ATP di Office 365 incluse in Microsoft 365 E5:
 
-|||
-|---|---|
 |Funzionalità di configurazione, protezione e rilevamento|Funzionalità di automazione, analisi, correzione e formazione|
+|---|---|
 |[Allegati sicuri](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Collegamenti sicuri](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Documenti attendibili](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP per SharePoint, OneDrive e Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[Protezione anti-phishing ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Indicatori delle minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Analisi e risposta alle minacce automatizzate](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Simulatore di attacchi](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
@@ -185,7 +184,7 @@ Microsoft 365 fornisce le risorse seguenti per informare gli utenti nell'organiz
 |Concetti  |Risorse  |
 |---------|---------|
 |Microsoft 365     |[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/) <p>Tali risorse consentono di creare una formazione per gli utenti finali nell'organizzazione        |
-|Centro sicurezza Microsoft 365 |[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza. |
+|Sicurezza di Microsoft 365 |[Modulo di apprendimento: proteggere l'organizzazione con sicurezza integrata e intelligente da Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere in che modo le funzionalità di sicurezza di Microsoft 365 interagiscono e di articolare i vantaggi di queste funzionalità di sicurezza. |
 |Autenticazione a più fattori     | [Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Questo articolo aiuta gli utenti finali a capire cosa sia l'autenticazione a più fattori e il motivo per cui viene utilizzato all'interno dell'organizzazione.    |
 
 Oltre a queste linee guida, Microsoft consiglia agli utenti di eseguire le azioni descritte in questo articolo: [proteggere l'account e i dispositivi da hacker e malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Queste azioni includono:

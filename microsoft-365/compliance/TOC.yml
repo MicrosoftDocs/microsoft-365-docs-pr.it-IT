@@ -335,14 +335,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Eliminare una cassetta postale inattiva
           href: delete-an-inactive-mailbox.md
-    - name: Monitorare la governance dei dati
-      items:
-        - name: Visualizzare le attività con etichette per i documenti
-          href: view-label-activity-for-documents.md
-        - name: Visualizzare l'utilizzo delle etichette con Analisi delle etichette
-          href: label-analytics.md
-        - name: Visualizzare i report di Governance dei dati
-          href: view-the-data-governance-reports.md
     - name: Altre informazioni sulla governance dei dati
       items:
         - name: Video del team Microsoft Data Governance
