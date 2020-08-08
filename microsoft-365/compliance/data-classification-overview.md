@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: ca08f292bae70d121a3ef157a482a09590bd7ba1
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3198a1981ed7d4d5428452b55aeb22b234712354
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430329"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588218"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Conoscere i dati - Panoramica della classificazione dei dati
 
-Gli amministratori di Microsoft 365 o gli amministratori di conformità possono valutare e poi contrassegnare i contenuti all'interno dell'organizzazione per controllarne gli spostamenti, per proteggerli indipendentemente dalla posizione e per garantire che vengano conservati ed eliminati in base alle esigenze dell'organizzazione. Queste operazioni possono essere eseguite mediante l'applicazione di [etichette di riservatezza](sensitivity-labels.md), di [etichette di conservazione](retention.md#retention-labels) e tramite la classificazione della tipologia delle informazioni riservate. Esistono vari modi per eseguire l'individuazione, la valutazione e l'aggiunta di tag, ma il risultato finale è che potrebbe essere presente un numero molto elevato di documenti e messaggi di posta elettronica contrassegnati e classificati con una o entrambe le etichette. Dopo aver applicato le etichette di conservazione e le etichette di riservatezza, è opportuno verificarne l'utilizzo nel tenant e controllare le operazioni che vengono svolte con tali elementi. La pagina di classificazione dei dati consente di avere visibilità sui contenuti, in particolare:
+In qualità di amministratore Microsoft 365 o di amministratore della conformità, è possibile valutare e quindi contrassegnare i contenuti dell’organizzazione al fine di controllarne gli spostamenti, proteggerli indipendentemente dalla loro posizione e garantirne la conservazione e cancellazione in base alle esigenze dell’organizzazione stessa. Queste operazioni possono essere eseguite mediante l'applicazione di [etichette di riservatezza](sensitivity-labels.md), di [etichette di conservazione](retention.md#retention-labels) e tramite la classificazione della tipologia delle informazioni riservate. Esistono vari modi per eseguire l'individuazione, la valutazione e l'aggiunta di tag, ma il risultato finale è che potrebbe essere presente un numero molto elevato di documenti e messaggi di posta elettronica contrassegnati e classificati con una o entrambe le etichette. Dopo aver applicato le etichette di conservazione e le etichette di riservatezza, è opportuno verificarne l'utilizzo nel tenant e controllare le operazioni che vengono svolte con tali elementi. La pagina di classificazione dei dati consente di avere visibilità sui contenuti, in particolare:
 
 - il numero degli elementi classificati come tipologie di informazioni riservate e quali sono le tipologie di classificazione
 - le principali etichette di riservatezza applicate sia in Microsoft 365 che in Azure Information Protection
@@ -99,12 +99,12 @@ La scheda etichetta di riservatezza mostra il numero di elementi (e-mail o docum
 ![schermata della scomposizione dei contenuti in base al segnaposto di classificazione delle etichette di riservatezza](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> Se non sono state create o pubblicate etichette di riservatezza o non è stata applicata alcuna etichetta di riservatezza ai contenuti, la scheda visualizzerà il messaggio "Non sono state rilevate etichette di riservatezza". Per iniziare a usare le etichette, vedere:
->- [etichette di riservatezza](sensitivity-labels.md) oppure per AIP [Configurare i criteri di protezione delle informazioni in Azure](https://docs.microsoft.com/azure/information-protection/configure-policy)
+> Se non sono state create o pubblicate etichette di riservatezza o non è stata applicata alcuna etichetta di riservatezza ai contenuti, la scheda visualizzerà il messaggio "Non sono state rilevate etichette di riservatezza". Per iniziare a usare le etichette di riservatezza vedere:
+>- [Iniziare ad usare le etichette di riservatezza](get-started-with-sensitivity-labels.md) oppure per AIP [Configurare i criteri di protezione delle informazioni in Azure](https://docs.microsoft.com/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Principali etichette di conservazione applicate ai contenuti
 
-Le etichette di conservazione vengono usate per gestire l'eliminazione dei contenuti all'interno dell'organizzazione. Se applicate, possono essere usate per controllare il periodo di conservazione di un documento prima dell'eliminazione, se deve essere esaminato prima dell'eliminazione, quando scade il periodo di conservazione oppure se deve essere contrassegnato come record che non deve essere eliminato. Per altre informazioni, vedere [Informazioni sui criteri e sulle etichette di conservazione](retention.md).
+Le etichette di conservazione vengono usate per gestire la conservazione dei contenuti all'interno dell'organizzazione. Se applicate, possono essere usate per controllare il periodo di conservazione di un documento prima dell'eliminazione, se deve essere esaminato prima dell'eliminazione, quando scade il periodo di conservazione oppure se deve essere contrassegnato come record che non deve essere eliminato. Per altre informazioni, vedere [Informazioni sui criteri e sulle etichette di conservazione](retention.md).
 
 Le scheda delle principali etichette di conservazione applicate mostra il numero di elementi con una determinata etichetta di conservazione.
 
@@ -112,7 +112,7 @@ Le scheda delle principali etichette di conservazione applicate mostra il numero
 
 > [!NOTE]
 > Se la scheda mostra il messaggio "Non sono state rilevate etichette di conservazione" significa che non sono state create o pubblicate etichette di conservazione o non è stata applicata alcuna etichetta di conservazione ai contenuti. Per iniziare a usare le etichette di conservazione, vedere:
->- [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md)
+>- [Familiarizza con i criteri e le etichette di conservazione](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>Attività principali rilevate
 
