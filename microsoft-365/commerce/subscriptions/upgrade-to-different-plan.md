@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,14 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-description: Informazioni su come eseguire l'aggiornamento a un nuovo abbonamento.
-ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Informazioni su come eseguire l'aggiornamento a un piano diverso.
+ms.openlocfilehash: 55667646637cfd2ad6dd56e2361b0c41b136a79e
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403175"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597620"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
 
@@ -78,6 +74,10 @@ Quando si utilizza la scheda **aggiornamento** , i piani di cui è possibile ese
 
 Se si desidera passare a un piano con meno servizi, è possibile [modificare i piani manualmente](change-plans-manually.md)o [chiamare il supporto tecnico](../../admin/contact-support-for-business-products.md) .
 
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Si desidera aggiornare solo alcuni utenti. Come si esegue questa operazione?
+
+Se si desidera aggiornare solo alcuni utenti a un piano diverso, ma è necessario acquistare prima il nuovo abbonamento, vedere [modificare i piani manualmente](change-plans-manually.md). Se si dispone già dell'abbonamento a cui si desidera aggiornare gli utenti, vedere [Move users to a different Subscription](move-users-different-subscription.md).
+
 ## <a name="why-some-changes-take-longer"></a>Perché alcune modifiche richiedono più tempo
 
 **Numero di utenti assegnati:** Se si dispone di un numero elevato di utenti assegnati, sarà necessario più tempo per eseguire l'aggiornamento per spostarli nel nuovo piano.
@@ -88,7 +88,7 @@ Se si desidera passare a un piano con meno servizi, è possibile [modificare i p
 
 Se non vengono visualizzati piani nella scheda **aggiornamento** , significa che il piano non può essere aggiornato automaticamente. In alcuni casi, potrebbe essere possibile risolvere il problema in modo che sia possibile visualizzare i piani disponibili per l'aggiornamento oppure che sia possibile aggiornare o modificare manualmente i piani.
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Perché non sono presenti piani per l'aggiornamento?
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Perché non sono presenti piani per l'aggiornamento?
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Non è possibile aggiornare gli abbonamenti ora perché si dispone di più utenti rispetto alle licenze.
 

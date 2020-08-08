@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 'Informazioni su come scegliere il dominio da utilizzare per la creazione di gruppi di Microsoft 365 configurando i criteri degli indirizzi di posta elettronica tramite PowerShell. '
-ms.openlocfilehash: 5569f42f15835be02a20166e64ce09a08b146dd7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 19caa4f4dfdef4895fa58f8bf5c198269844044f
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388210"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597378"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Scegliere il dominio da utilizzare per la creazione dei gruppi di Microsoft 365
 
@@ -103,7 +103,7 @@ La modifica di un criterio EAP non influisce sui gruppi di cui è già stato ese
   
 ## <a name="hybrid-requirements"></a>Requisiti ibridi
 
-Se l'organizzazione è configurata in uno scenario ibrido, vedere [Configure microsoft 365 groups with on-premises Exchange Hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) per assicurarsi che l'organizzazione soddisfi i requisiti per la creazione di gruppi di Microsoft 365. 
+Se l'organizzazione è configurata in uno scenario ibrido, vedere [Configure microsoft 365 groups with on-premises Exchange Hybrid](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) per assicurarsi che l'organizzazione soddisfi i requisiti per la creazione di gruppi di Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Ulteriori informazioni sull'utilizzo dei gruppi di criteri degli indirizzi di posta elettronica:
 
