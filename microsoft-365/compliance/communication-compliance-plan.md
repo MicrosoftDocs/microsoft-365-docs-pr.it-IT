@@ -1,5 +1,5 @@
 ---
-title: Pianificare la conformità alla comunicazione
+title: Piano per la conformità delle comunicazioni
 description: Informazioni sulla pianificazione dell'utilizzo della conformità di comunicazione nell'organizzazione.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 214c5376d4c074525253707e181eee69cefff85e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 4c44610f4d74fe9ebf3c8e549692d9cc7cc6cb34
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045851"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597423"
 ---
-# <a name="plan-for-communication-compliance"></a>Pianificare la conformità alla comunicazione
+# <a name="plan-for-communication-compliance"></a>Piano per la conformità delle comunicazioni
 
 Prima di iniziare a utilizzare la [conformità alla comunicazione](communication-compliance.md) nell'organizzazione, sono disponibili importanti attività di pianificazione e considerazioni che devono essere esaminate dai team di gestione della conformità e della tecnologia delle informazioni. La comprensione e la pianificazione approfondite per la distribuzione nelle aree seguenti consentiranno di garantire che l'implementazione e l'utilizzo delle funzionalità di conformità alla comunicazione siano uniformi e siano allineate alle procedure consigliate per la soluzione.
 
@@ -42,7 +42,19 @@ Identificare le parti interessate appropriate nell'organizzazione per collaborar
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>Pianificare il flusso di lavoro per l'analisi e la correzione
 
-Selezionare revisori dedicati per monitorare e leggere gli avvisi su una cadenza regolare nel [centro conformità di Microsoft 365](https://compliance.microsoft.com/). Tenere presente che è necessario [creare un nuovo gruppo di ruoli](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) per abilitare le autorizzazioni per i revisori con l' **amministratore revisione di supervisione**, la **gestione dei casi**, l' **amministratore della conformità**e i ruoli di **Revisione** per esaminare e correggere i messaggi con le corrispondenze di criteri.
+Selezionare le parti interessate dedicate per monitorare ed esaminare gli avvisi e i casi su una cadenza regolare nel [centro conformità di Microsoft 365](https://compliance.microsoft.com/). Assicurarsi di comprendere come verranno assegnati diversi ruoli di conformità della comunicazione alle parti interessate nell'organizzazione.
+
+A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario creare uno o più nuovi gruppi di ruoli per gli amministratori, i revisori e gli investigatori. È possibile assegnare gli utenti a specifici gruppi di ruoli per gestire diversi insiemi di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di creare un gruppo di ruoli e assegnare tutti i ruoli di conformità alla comunicazione al gruppo. Creare un singolo gruppo di ruoli o più gruppi per soddisfare al meglio i requisiti di gestione della conformità.
+
+Pianificare la scelta tra queste opzioni di ruolo quando si configurano i gruppi di ruoli di conformità della comunicazione:
+
+|**Ruolo**|**Autorizzazioni di ruolo**|
+|:-----|:-----|
+| **Amministratore della conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo ruolo non possono visualizzare gli avvisi dei messaggi. |
+| **Analisi di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
+| **Indagine di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
+| **Visualizzatore conformità comunicazione** | Gli utenti assegnati a questo ruolo possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
+| **Gestione dei casi di conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono gestire i casi e agire sugli avvisi. Questo ruolo è necessario per la creazione di gruppi di ruoli personalizzati per amministratori, analisti e ricercatori. Non è necessario che questo ruolo sia assegnato ai gruppi personalizzati per i visualizzatori. |
 
 ## <a name="plan-for-policies"></a>Pianificare i criteri
 

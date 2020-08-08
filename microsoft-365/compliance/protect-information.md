@@ -1,11 +1,11 @@
 ---
-title: Proteggere le informazioni
+title: Proteggere le informazioni tramite Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: bcarter
-author: brendacarter
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 4/26/2019
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,27 +14,53 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: In questa pagina di destinazione sono disponibili collegamenti e informazioni sulla protezione delle informazioni in Microsoft 365 e Office 365.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3657fc674547013c8517b6121d6b2bbb636b7481
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+description: Identificare le funzionalità e la documentazione di supporto di Microsoft 365 che consentono di proteggere i dati importanti dell'organizzazione.
+ms.openlocfilehash: eb83655fddf5b59a7a95d2a8b9999ab683305a89
+ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127493"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592310"
 ---
-# <a name="protect-information"></a>Proteggere le informazioni
+# <a name="protect-information-using-microsoft-365"></a>Proteggere le informazioni tramite Microsoft 365
 
-Microsoft 365 e Office 365 includono funzionalità che possono essere applicate a tipi specifici di dati per proteggere le informazioni.
+>*[Licensing for Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+
+Utilizzare le funzionalità di protezione delle informazioni di Microsoft per facilitare l'individuazione, la classificazione e la protezione delle informazioni riservate ovunque si trovino o viaggiano.
+
+## <a name="know-your-data"></a>Conoscere i dati
+
+Per comprendere il paesaggio dei dati e identificare i dati importanti nell'ambiente ibrido, utilizzare le funzionalità seguenti:
+ 
+|Funzionalità|Quali sono i problemi risolti?|Per iniziare|
+|:------|:------------|:--------------------|:-----------------------------|
+|[Tipi di informazioni riservate](sensitive-information-type-entity-definitions.md)| Identifica i dati sensibili mediante l'utilizzo di espressioni regolari predefinite o personalizzate o di una funzione, insieme a elementi probatori che includono parole chiave, livelli di sicurezza e prossimità.| [Personalizzare una tipologia integrata di informazioni sensibili](customize-a-built-in-sensitive-information-type.md)|
+|[Classificatori addestrabili (anteprima)](classifier-getting-started-with.md)| Consente di classificare i dati per l'utente utilizzando uno dei classificatori incorporati o di formare un classier con il proprio contenuto. | [Creare un classificatore addestrabile (anteprima)](classifier-creating-a-trainable-classifier.md) |
+|[Classificazione dei dati](data-classification-overview.md) | Identifica gli elementi che dispongono di un'etichetta di riservatezza, di un'etichetta di conservazione o che sono stati classificati come un tipo di informazioni riservate nell'organizzazione e le azioni che gli utenti stanno assumendo.  | [Introduzione a Esplora contenuto](data-classification-content-explorer.md)<br /><br /> [Introduzione a Esplora attività](data-classification-activity-explorer.md) |
+
+## <a name="protect-your-data"></a>Protezione dei dati
+
+Per applicare operazioni di protezione flessibili che includono crittografia, restrizioni di accesso e segni visivi, utilizzare le seguenti funzionalità:
+
+|Funzionalità|Quali sono i problemi risolti?|Per iniziare|
+|:------|:------------|---------------------|:----------------------------|
+|[Etichette di riservatezza](sensitivity-labels.md)| Una singola soluzione tra le app, i servizi e i dispositivi per etichettare e proteggere i dati in viaggio all'interno e all'esterno dell'organizzazione <br /><br />Scenario di esempio: [applicare e visualizzare le etichette di riservatezza in Power bi e proteggere i dati quando vengono esportati](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[Introduzione alle etichette di riservatezza](get-started-with-sensitivity-labels.md) |
+|[Client di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Per i computer Windows, estende le etichette di riservatezza per caratteristiche e funzionalità aggiuntive che includono l'etichettatura e la protezione di tutti i tipi di file da Esplora file e PowerShell<br /><br /> Esempi di funzionalità aggiuntive: [configurazioni personalizzate per il client di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guida dell'amministratore di Azure Information Protection Unified Labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[Crittografia a chiave doppia](double-key-encryption.md)| In tutti i casi, solo è possibile decrittografare il contenuto protetto o per i requisiti normativi è necessario mantenere le chiavi di crittografia all'interno di un limite geografico | [Distribuire la crittografia a chiave doppia](double-key-encryption.md#deploy-double-key-encryption)|
+|[Crittografia messaggi di Office 365](ome.md) (OME)| Consente di crittografare i messaggi di posta elettronica e i documenti allegati inviati a qualsiasi utente su qualsiasi dispositivo, in modo che solo i destinatari autorizzati possano leggere le informazioni inviate tramite posta elettronica  <br /><br />Scenario di esempio: [revocare la posta elettronica crittografata dalla crittografia avanzata dei messaggi](revoke-ome-encrypted-mail.md) | [Introduzione alla crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md)|
+|[Crittografia del servizio con la chiave del cliente](customer-key-overview.md) | Protegge dalla visualizzazione dei dati da parte di sistemi o personale non autorizzato e complementa la crittografia del disco di BitLocker nei Data Center Microsoft | [Configurare Customer Key per Office 365](customer-key-set-up.md)|
+|[Information Rights Management (IRM) di SharePoint](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protegge gli elenchi e le raccolte di SharePoint in modo che quando un utente estrae un documento, il file scaricato sia protetto in modo che solo le persone autorizzate possano visualizzare e utilizzare il file in base ai criteri specificati | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
+[Connettore Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Protezione: solo per le distribuzioni locali esistenti che utilizzano Exchange o SharePoint Server o file server che eseguono Windows Server e l'infrastruttura di classificazione dei file (FCI) | [Passaggi per la distribuzione del connettore RMS](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
+|[Scanner di etichette unificato di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Consente di individuare, contrassegnare e proteggere le informazioni riservate che si trovano negli archivi dati presenti in locale. | [Configurazione e installazione di Azure Information Protection Unified Labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
+|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Consente di individuare, contrassegnare e proteggere le informazioni riservate che si trovano negli archivi dati presenti nel cloud. | [Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[SDK di Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Estende le etichette di riservatezza a applicazioni e servizi di terze parti  <br /><br /> Scenario di esempio: [impostare e ottenere un'etichetta di riservatezza (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Installazione e configurazione SDK di Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+
+## <a name="prevent-data-loss"></a>Evitare la perdita di dati
+
+Per evitare la condivisione accidentale di informazioni riservate, utilizzare le funzionalità seguenti:
 
 
-|**Funzionalità**|**Altre informazioni**|
-|:-----|:-----|
-|[Etichette di riservatezza](sensitivity-labels.md) <br/> |Con le etichette di riservatezza è possibile classificare e proteggere i contenuti sensibili. Le opzioni di protezione includono etichette, filigrane e crittografia. Le etichette di riservatezza utilizzano Azure Information Protection. Se si utilizzano le etichette di Azure Information Protection, è consigliabile evitare di creare nuove etichette in altri centri di amministrazione finché non si è completata la migrazione. Vedere [Azure Information Protection Migration](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels). <br/> Si noti che le [etichette di conservazione](retention.md#retention-labels) sono diverse dalle etichette di riservatezza. Le etichette di conservazione consentono di conservare o eliminare il contenuto in base ai criteri definiti. Queste organizzazioni di assistenza sono conformi alle normative industriali e ai criteri interni.|
-|[Prevenzione della perdita di dati](data-loss-prevention-policies.md) (DLP)  <br/> |Con i criteri DLP, è possibile identificare, monitorare e proteggere automaticamente le informazioni riservate in Office 365. I criteri di prevenzione della perdita di dati possono utilizzare etichette di riservatezza e tipi di informazioni riservate per identificare informazioni riservate. <br/> |
-|[Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md) <br/> |Microsoft 365 include numerosi tipi di informazioni riservate pronte per l'uso nei criteri DLP e per la classificazione automatica con etichette di riservatezza e conservazione. I tipi di informazioni riservate possono essere utilizzati anche con lo [scanner di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) per classificare e proteggere i file in locale. I tipi di informazioni riservate definiscono in che modo il processo automatico riconosce tipi di informazioni specifiche quali numeri di servizi di integrità e numeri di carta di credito.   <br/> |
-|[Crittografia messaggi di Office 365](ome.md) (OME)  <br/> |Con la crittografia dei messaggi di Office 365, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione. La crittografia dei messaggi di Office 365 è compatibile con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica. La crittografia dei messaggi di posta elettronica consente di verificare che solo i destinatari previsti possano visualizzare il contenuto del messaggio. <br/> |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/)<br/> |Azure Information Protection (a volte indicato come AIP) consente a un'organizzazione di classificare, etichettare e facoltativamente proteggere documenti e messaggi di posta elettronica. Gli amministratori possono applicare automaticamente le etichette definendo regole e condizioni. Gli utenti possono applicare manualmente le etichette ai file e alla posta. È inoltre possibile fornire agli utenti suggerimenti su quando applicare le etichette.<br/> Se si utilizzano le etichette di riservatezza o la crittografia dei messaggi di Office, si stanno già utilizzando le funzionalità di classificazione e protezione. Se non è ancora stata eseguita la migrazione delle etichette di Azure Information Protection a Office 365, continuare a gestire queste informazioni in Azure Information Protection.  <br/>È possibile eseguire lo [scanner di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) in locale per classificare e proteggere i file su Windows Server, le condivisioni di rete e i siti e le raccolte di SharePoint Server. Questo può essere un primo passo verso l'identificazione dei dati per la migrazione a Office 365.
-|Protezione delle informazioni di Azure con la chiave di crittografia gestita dal cliente <br/> |Alcune organizzazioni dispongono di un requisito aziendale o di conformità per mantenere il controllo di una chiave di crittografia. Non si tratta di una cosa comune. Azure Information Protection consente alle organizzazioni di portare la propria chiave (BYOK) al servizio. Per ulteriori informazioni, vedere [Bring your own key (BYOK) for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/byok-price-restrictions). È disponibile un'altra opzione più complessa per i clienti che hanno il requisito di mantenere una chiave di crittografia in locale, denominata Hold Your Own Key (HYOK).  Per ulteriori informazioni, vedere [tenere la propria chiave (HYOK) per Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions). <br/> |
-    
-
+|Funzionalità|Quali sono i problemi risolti?|Per iniziare|
+|:------|:------------|:---------------------|:-----------------------------|
+|[Prevenzione della perdita di dati](data-loss-prevention-policies.md) (DLP)| Consente di evitare la condivisione involontaria degli elementi sensibili <br /><br />Scenario di esempio: [proteggere le informazioni riservate in Microsoft teams chat and Channel messages](dlp-microsoft-teams.md) | [Cominciare con il criterio di prevenzione della perdita dei dati predefinito](get-started-with-the-default-dlp-policy.md)|
+|[Prevenzione della perdita di dati di endpoint (anteprima)](endpoint-dlp-learn-about.md)| Estende le funzionalità DLP agli elementi utilizzati e condivisi nei computer Windows 10 | [Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-getting-started.md)|

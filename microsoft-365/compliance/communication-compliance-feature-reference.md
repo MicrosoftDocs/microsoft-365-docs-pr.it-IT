@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1331722b5ee3149a93ab3158a48d7d1e8e2472c4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127251"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597555"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -32,7 +32,7 @@ ms.locfileid: "45127251"
 >[!Important]
 >L'utilizzo di PowerShell per la creazione e la gestione di criteri di conformità della comunicazione non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella [soluzione Microsoft 365 Communication Compliance](https://compliance.microsoft.com/supervisoryreview).
 
-È possibile creare criteri di conformità della comunicazione per le organizzazioni Microsoft 365 nel centro conformità di Microsoft 365. I criteri di conformità della comunicazione definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specificano chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli **amministratore revisione di supervisione** possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche apportate a un criterio a un file con estensione CSV che include anche lo stato degli avvisi in sospeso, degli elementi escalation e degli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
+È possibile creare criteri di conformità della comunicazione per le organizzazioni Microsoft 365 nel centro conformità di Microsoft 365. I criteri di conformità della comunicazione definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specificano chi deve eseguire le revisioni. Gli utenti assegnati al ruolo di *amministratore conformità comunicazione* possono impostare i criteri e chiunque abbia questo ruolo può accedere alla pagina **conformità di comunicazione** e alle impostazioni globali nel centro conformità di Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche apportate a un criterio a un file con estensione CSV che include anche lo stato degli avvisi in sospeso, degli elementi escalation e degli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
 
 >[!NOTE]
 >I criteri di supervisione creati nel centro sicurezza & Compliance per le sottoscrizioni di Office 365 non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da un abbonamento a Office 365 a un abbonamento a Microsoft 365, sarà necessario creare nuovi criteri di conformità per la comunicazione per sostituire il criterio di supervisione esistente.
@@ -47,6 +47,22 @@ I modelli di criteri sono impostazioni predefinite che è possibile utilizzare p
 | **Informazioni sensibili** | Monitorare le comunicazioni per informazioni riservate | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 10% <br> -Conditions: informazioni riservate, modelli di contenuto esterno alla casella e tipi, opzione dizionario personalizzato, allegati superiori a 1 MB |
 | **Conformità alle normative** | Monitorare le comunicazioni per informazioni relative alla conformità alle normative finanziarie | -Locations: Exchange Online, Microsoft teams, Yammer, Skype for business <br> -Direction: in ingresso, in uscita <br> -Percentuale di verifica: 10% <br> -Conditions: opzione dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
 
+## <a name="permissions-preview"></a>Autorizzazioni (anteprima)
+
+Sono disponibili cinque ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu in Microsoft 365 Compliance Center, è necessario essere assegnati al ruolo di *amministratore conformità comunicazione* .
+
+A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario creare uno o più nuovi gruppi di ruoli per gli amministratori, i revisori e gli investigatori. È possibile assegnare gli utenti a specifici gruppi di ruoli per gestire diversi insiemi di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di creare un gruppo di ruoli e assegnare tutti i ruoli di conformità alla comunicazione al gruppo. Creare un singolo gruppo di ruoli o più gruppi per soddisfare al meglio i requisiti di gestione della conformità.
+
+Scegliere tra queste opzioni di ruolo quando si configurano i gruppi di ruoli di conformità della comunicazione:
+
+|**Ruolo**|**Autorizzazioni di ruolo**|
+|:-----|:-----|
+| **Amministratore della conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo ruolo non possono visualizzare gli avvisi dei messaggi. |
+| **Analisi di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
+| **Indagine di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
+| **Visualizzatore conformità comunicazione** | Gli utenti assegnati a questo ruolo possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
+| **Gestione dei casi di conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono gestire i casi e agire sugli avvisi. Questo ruolo è necessario per la creazione di gruppi di ruoli personalizzati per amministratori, analisti e ricercatori. Non è necessario che questo ruolo sia assegnato ai gruppi personalizzati per i visualizzatori. |
+
 ## <a name="supervised-users"></a>Utenti controllati
 
 Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario determinare chi ha bisogno delle proprie comunicazioni. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da sorvegliare. Alcuni esempi di questi gruppi sono i gruppi di Microsoft 365, le liste di distribuzione basate su Exchange, le community di Yammer e i canali Microsoft teams. È inoltre possibile escludere utenti o gruppi specifici dall'analisi con un gruppo di esclusione specifico o un elenco di gruppi.
@@ -56,7 +72,7 @@ Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario 
 
 ## <a name="reviewers"></a>Revisori
 
-Quando si crea un criterio di conformità della comunicazione, è necessario determinare chi esamina i messaggi degli utenti controllati. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone per esaminare le comunicazioni sorvegliate. Tutti i revisori devono disporre di cassette postali ospitate in Exchange Online e devono essere assegnati ai ruoli Gestione e **Revisione** dei **casi** . Quando i revisori vengono aggiunti a un criterio, ricevono automaticamente un messaggio di posta elettronica che informa gli utenti dell'assegnazione ai criteri e fornisce collegamenti alle informazioni sul processo di revisione.
+Quando si crea un criterio di conformità della comunicazione, è necessario determinare chi esamina i messaggi degli utenti controllati. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone per esaminare le comunicazioni sorvegliate. I revisori di atutti devono disporre di cassette postali ospitate in Exchange Online e devono essere assegnate ai ruoli *analisi conformità comunicazione* o verifica *conformità comunicazione* . I revisori (analisti o ricercatori) devono avere anche il ruolo di *gestione dei casi di conformità di comunicazione* assegnato. Quando i revisori vengono aggiunti a un criterio, ricevono automaticamente un messaggio di posta elettronica che informa gli utenti dell'assegnazione ai criteri e fornisce collegamenti alle informazioni sul processo di revisione.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Gruppi per gli utenti e i revisori controllati
 
@@ -138,17 +154,22 @@ Configure custom keyword Dictionary (o lessici) per fornire una gestione semplic
 
 ### <a name="classifiers"></a>Classificatori
 
-I classificatori incorporati analizzano i messaggi inviati o ricevuti su tutti i canali di comunicazione nell'organizzazione per diversi tipi di problemi di conformità. I classificatori utilizzano una combinazione di intelligenza artificiale e parole chiave per identificare la lingua nei messaggi suscettibili di violare i criteri di anti-molestia. I classificatori incorporati supportano attualmente solo le parole chiave in inglese nei messaggi.
+I classificatori incorporati e informabili globali analizzano i messaggi inviati o ricevuti su tutti i canali di comunicazione nell'organizzazione per diversi tipi di problemi di conformità. I classificatori utilizzano una combinazione di intelligenza artificiale e parole chiave per identificare la lingua nei messaggi suscettibili di violare i criteri di anti-molestia. I classificatori incorporati supportano attualmente solo le parole chiave in inglese nei messaggi.
 
-Conformità della comunicazione i classificatori incorporati analizzano le comunicazioni per i termini e i sentimenti per i seguenti tipi di lingua:
+Conformità di comunicazione le comunicazioni per i termini, le immagini e il sentimento per i seguenti tipi di lingua e contenuto vengono analizzate in base ai classificati addestrabili e globali:
 
 - **Pericolo**: consente di analizzare le minacce per commettere violenze o danni fisici a una persona o a una proprietà.
-- **Molestie**: analisi per comportamenti offensivi che mirano alle persone in relazione a razza, colore, religione, origine nazionale.
+- **Molestie mirate**: analisi per comportamenti offensivi indirizzati verso persone relative a razza, colore, religione, origine nazionale.
 - **Parolacce**: esegue la ricerca di espressioni profane che imbarazzano la maggior parte delle persone.
+- **Immagini adulte**: analisi di immagini sessualmente esplicite in natura.
+- **Immagini piccanti**: consente di analizzare le immagini che sono sessualmente suggestive, ma contengono contenuto meno esplicito rispetto alle immagini ritenute adulte.
+- **Immagini cruente**: analisi di immagini che descrivono la violenza e il Gore.
 
-I classificatori incorporati non forniscono un elenco esaustivo di termini in queste aree. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare i classificatori a propria discrezione. Mentre i classificatori possono assistere l'organizzazione nel monitoraggio di queste aree, i classificatori non sono destinati a fornire il solo mezzo di monitoraggio o di indirizzamento di tale lingua da parte dell'organizzazione. La propria organizzazione, non Microsoft, resta responsabile di tutte le decisioni relative all'analisi e al blocco della lingua in queste aree.
+I classificatori di immagini *per adulti*, *audace*e *cruenti* analizzano i file. JPEG,. PNG,. GIF e. Formati BMP. Le dimensioni dei file di immagine devono essere inferiori a 4 megabyte (MB) e le dimensioni delle immagini devono essere superiori a 50x50 pixel e superiori a 50 kilobyte (KB) affinché l'immagine sia qualificata per la valutazione. L'identificazione dell'immagine è supportata per i messaggi di posta elettronica di Exchange Online e i canali e le chat di Microsoft teams.
 
-Per informazioni sui classificatori in Microsoft 365, vedere [classificatori](classifier-getting-started-with.md).
+I classificatori incorporati e addestrati a livello globale non forniscono un elenco esaustivo dei termini o delle immagini in queste aree. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare i classificatori a propria discrezione. Mentre i classificatori possono assistere l'organizzazione nel monitoraggio di queste aree, i classificatori non sono destinati a fornire il solo mezzo di monitoraggio o di risoluzione di tale lingua o immagine. La propria organizzazione, non Microsoft, resta responsabile di tutte le decisioni relative all'analisi e al blocco della lingua e delle immagini in queste aree.
+
+Per informazioni sui classificatori addestrabili in Microsoft 365, vedere [Guida introduttiva ai classificatori addestrabili](classifier-getting-started-with.md).
 
 ### <a name="conditional-settings"></a>Impostazioni condizionali
 <a name="ConditionalSettings"> </a>
@@ -195,16 +216,25 @@ Se si immettono più condizioni, Microsoft 365 utilizza tutte le condizioni insi
 
 Se si desidera ridurre la quantità di contenuto da rivedere, è possibile specificare una percentuale di tutte le comunicazioni regolate da un criterio di conformità della comunicazione. Viene selezionato un campione casuale di contenuto in tempo reale rispetto alla percentuale totale di contenuto che corrisponde alle condizioni dei criteri scelte. Se si desidera che i revisori rivedano tutti gli elementi, è possibile configurare il **100%** in un criterio di conformità della comunicazione.
 
-## <a name="notices"></a>Avvisi
+## <a name="privacy-preview"></a>Privacy (anteprima)
 
-È possibile creare modelli di avviso se si desidera inviare agli utenti una notifica di promemoria tramite posta elettronica per le corrispondenze di criteri nell'ambito del processo di risoluzione dei problemi. Gli avvisi possono essere inviati solo all'indirizzo di posta elettronica dipendente associato alla corrispondenza dei criteri che ha generato l'avviso specifico per la correzione. Quando si seleziona un modello di avviso da applicare a una violazione dei criteri nell'ambito del flusso di lavoro di correzione, è possibile scegliere di accettare i valori del campo definiti nel modello o sovrascrivere i campi in base alle esigenze.
+La protezione della privacy degli utenti che dispongono di corrispondenze di criteri è importante e può contribuire a promuovere l'oggettività nelle analisi dei dati e nelle recensioni degli avvisi per la conformità alla comunicazione. Questa impostazione si applica solo ai nomi utente visualizzati nella soluzione di conformità della comunicazione. Non influisce sulla modalità di visualizzazione dei nomi in altre soluzioni di conformità o nell'interfaccia di amministrazione.
 
-I modelli di avviso sono modelli di posta elettronica personalizzati in cui è possibile definire i campi del messaggio seguenti:
+Per gli utenti con una corrispondenza di conformità di comunicazione, è possibile scegliere una delle impostazioni seguenti nelle **impostazioni di conformità della comunicazione**:
+
+- **Mostrare le versioni di anonimi dei**nomi utente: i denominati degli utenti sono anonimi per impedire agli amministratori, agli analisti, ai ricercatori e ai revisori di vedere gli utenti associati agli avvisi dei criteri. Ad esempio, un utente ' Grace Taylor ' verrebbe visualizzato con uno pseudonimo randomizzato come ' AnonIS8-988' in tutte le aree dell'esperienza di conformità alla comunicazione. Se si sceglie questa impostazione, anonimizza tutti gli utenti con le corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni sui profili utente nei dettagli avviso di conformità della comunicazione non saranno disponibili quando si seleziona questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano gli utenti ai nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente vengono visualizzati per tutti gli utenti che hanno corrispondenze di criteri correnti o passate.
+- Non vengono visualizzate le **versioni di nomi utente di anonimi: sono visualizzabili**per tutte le corrispondenze di criteri correnti e precedenti per gli avvisi di conformità alla comunicazione. Le informazioni sui profili utente, ovvero il nome, il titolo, l'alias e l'organizzazione o il reparto, vengono visualizzate per tutti gli avvisi e i casi di gestione dei rischi Insider.
+
+## <a name="notice-templates"></a>Modelli di avviso
+
+È possibile creare modelli di avviso se si desidera inviare agli utenti una notifica di promemoria tramite posta elettronica per le corrispondenze di criteri nell'ambito del processo di risoluzione dei problemi. Gli avvisi possono essere inviati solo all'indirizzo di posta elettronica dell'utente associato alla corrispondenza dei criteri che ha generato l'avviso specifico per la correzione. Quando si seleziona un modello di avviso da applicare a una violazione dei criteri nell'ambito del flusso di lavoro di correzione, è possibile scegliere di accettare i valori del campo definiti nel modello o sovrascrivere i campi in base alle esigenze.
+
+I modelli di avviso sono modelli di posta elettronica personalizzati in cui è possibile definire i seguenti campi dei messaggi nell'area delle **impostazioni di conformità della comunicazione** :
 
 |**Campo**|**Obbligatorio**| **Dettagli** |
 |:-----|:-----|:-----|
 |**Nome del modello** | Sì | Nome descrittivo per il modello di avviso che è possibile selezionare nel flusso di lavoro Notify durante la correzione, supporta i caratteri di testo. |
-| **Indirizzo del mittente** | Sì | L'indirizzo di uno o più utenti o gruppi che invia il messaggio al dipendente con una corrispondenza di criteri, selezionata da Active Directory per l'abbonamento. |
+| **Indirizzo del mittente** | Sì | L'indirizzo di uno o più utenti o gruppi che inviano il messaggio all'utente con una corrispondenza di criteri, selezionata da Active Directory per l'abbonamento. |
 | **Indirizzi CC e Ccn** | No | Gli utenti o i gruppi facoltativi da notificare la corrispondenza dei criteri, selezionati da Active Directory per l'abbonamento. |
 | **Oggetto** | Sì | Le informazioni visualizzate nella riga dell'oggetto del messaggio supportano caratteri di testo. |
 | **Corpo del messaggio** | Sì | Informazioni visualizzate nel corpo del messaggio, supporta i valori di testo o HTML. |
@@ -284,21 +314,41 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 7. Selezionare **Chiudi** per uscire dalla pagina dei dettagli del criterio di avviso.
 
+## <a name="reports-preview"></a>Rapporti (anteprima)
+
+Il nuovo dashboard **Reports** è la posizione centrale per la visualizzazione di tutti i report di conformità della comunicazione. I widget dei report offrono una rapida visualizzazione delle informazioni più necessarie per una valutazione complessiva dello stato delle attività di conformità alla comunicazione. Le informazioni contenute nei widget del report non sono esportabili.
+
+Il dashboard **report** contiene i widget di report seguenti:
+
+- **Corrispondenze di criteri recenti**: Visualizza il numero di corrispondenze in base al criterio attivo nel tempo.
+- **Elementi risolti in base ai criteri**: Visualizza il numero di avvisi di corrispondenza dei criteri risolti in base al criterio nel tempo.
+- **Gli utenti con la maggior parte delle corrispondenze di criteri**: Visualizza gli utenti (o i nomi utente di anonimi) e il numero di corrispondenze di criteri per un determinato periodo.
+- **Criteri con la maggior parte delle corrispondenze**: Visualizza i criteri e il numero di corrispondenze per un determinato periodo, classificate al livello più basso per le corrispondenze.
+
 ## <a name="audit"></a>Audit
 
-In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Tali informazioni possono essere un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui si modifica un criterio di conformità della comunicazione. I criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una preparazione completa per i controlli interni o esterni. Le cronologie di controllo dettagliate di ogni azione di creazione, modifica ed eliminazione vengono acquisite dai criteri di comunicazione per fornire la prova delle procedure di supervisione.
+In alcuni casi, è necessario fornire informazioni ai revisori dei servizi di conformità o normativi per dimostrare la supervisione delle attività e delle comunicazioni degli utenti. Tali informazioni possono essere un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui si modifica un criterio di conformità della comunicazione. I criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una preparazione completa per i controlli interni o esterni. Le cronologie di controllo dettagliate di ogni azione di creazione, modifica ed eliminazione vengono acquisite dai criteri di comunicazione per fornire la prova delle procedure di supervisione.
 
 >[!Important]
 >È necessario che il controllo sia abilitato per l'organizzazione prima che vengano registrati gli eventi di conformità della comunicazione. Per abilitare il controllo, vedere [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
 
-Per visualizzare le attività relative ai criteri di conformità della comunicazione, selezionare il controllo **Esporta attività di revisione** nella pagina principale per tutti i criteri. Questa azione genera un file di controllo nel formato. csv che contiene le informazioni seguenti:
+Per visualizzare le attività di aggiornamento dei criteri di conformità della comunicazione, selezionare il controllo **Export Policy updates** nella pagina principale per tutti i criteri. Per esportare le attività di aggiornamento, è necessario essere assegnati ai ruoli *amministratore globale* o *conformità alla comunicazione* . Questa azione genera un file di controllo nel formato. csv che contiene le informazioni seguenti:
 
 |**Campo**|**Dettagli**|
 |:-----|:-----|
-| **CreationDate** | Data in cui l'attività è stata eseguita in un criterio. |
-| **UserIds** | L'utente che ha eseguito l'attività in un criterio. |
-| **Operazioni** | Le operazioni eseguite sul criterio. |
-| **AuditData** | Questo campo è l'origine dati principale per tutte le attività dei criteri. Tutte le attività vengono registrate e separate da delimitatori di virgole. |
+| **CreationDate** | La data in cui è stata eseguita l'attività di aggiornamento in un criterio. |
+| **UserIds** | L'utente che ha eseguito l'attività di aggiornamento in un criterio. |
+| **Operazioni** | Le operazioni di aggiornamento eseguite sul criterio. |
+| **AuditData** | Questo campo è l'origine dati principale per tutte le attività di aggiornamento dei criteri. Tutte le attività di aggiornamento vengono registrate e separate da delimitatori di virgole. |
+
+Per visualizzare le attività di revisione della conformità di comunicazione per un criterio, selezionare il controllo **Esporta attività di revisione** nella pagina **Panoramica** per un criterio specifico. Per esportare le attività di revisione, è necessario essere assegnati ai ruoli *amministratore globale* o *conformità alla comunicazione* . Questa azione genera un file di controllo nel formato. csv che contiene le informazioni seguenti:
+
+|**Campo**|**Dettagli**|
+|:-----|:-----|
+| **CreationDate** | La data in cui è stata eseguita l'attività di revisione in un criterio. |
+| **UserIds** | L'utente che ha eseguito l'attività di revisione in un criterio. |
+| **Operazioni** | Le operazioni di revisione eseguite sul criterio. |
+| **AuditData** | Questo campo è l'origine dati principale per tutte le attività di revisione dei criteri. Tutte le attività di revisione sono registrate e separate da delimitatori di virgole. |
 
 È inoltre possibile visualizzare le attività di controllo nel log di controllo unificato o con il cmdlet di PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) .
 

@@ -4,14 +4,10 @@
   href: ../admin/index.yml
 - name: Provare o acquistare
   items:
-    - name: Iscriversi alla versione di valutazione di Microsoft 365
-      href: sign-up-for-office-365-trial.md
     - name: Provare o acquistare Microsoft 365
       href: try-or-buy-microsoft-365.md
     - name: Prolunga il periodo di valutazione
       href: extend-your-trial.md
-    - name: Acquistare un altro abbonamento
-      href: buy-another-subscription.md
     - name: Acquistare o modificare un componente aggiuntivo
       href: buy-or-edit-an-add-on.md
     - name: Aggiungere spazio di archiviazione
