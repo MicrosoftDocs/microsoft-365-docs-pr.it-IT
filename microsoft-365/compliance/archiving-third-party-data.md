@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come importare i dati di terze parti dalle piattaforme per i social media, dalle piattaforme di messaggistica istantanea e dalle piattaforme di collaborazione documenti alle cassette postali di Microsoft 365.
-ms.openlocfilehash: da6b412796bbfc4d5c0d5ed177335e6f3fba9f87
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: e192ea19345da0c168b2bb09fd8ec51959ea47fb
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126635"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608323"
 ---
 # <a name="archive-third-party-data"></a>Archiviare i dati di terze parti
 
@@ -40,14 +40,26 @@ Nella tabella seguente sono elencati i connettori di dati di terze parti disponi
 
 |Dati di terze parti  |Blocco per controversia legale|eDiscovery  |Criteri di conservazione  |Gestione dei record  |Conformità delle comunicazioni  |Gestione dei rischi Insider  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Dati Android <sup>1</sup>](archive-android-archiver-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Nei dati di rete di&T <sup>1</sup>](archive-att-network-archiver-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Dati della rete Bell <sup>1</sup>](archive-bell-network-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Messaggio Bloomberg](archive-bloomberg-message-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[Dati numerici organizzazione <sup>1</sup>](archive-enterprise-number-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Dati sulle risorse umane](import-hr-data.md) ||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |[Chat di ghiaccio](archive-icechat-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Bloomberg istantaneo](archive-instant-bloomberg-data.md)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Dati di rete O2 <sup>1</sup>](archive-o2-network-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Dati di rete TELUS <sup>1</sup>](archive-telus-network-data.md)    |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Dati di rete Verizon <sup>1</sup>](archive-verizon-network-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 ||||||||
+
+> [!NOTE]
+> <sup>1</sup> connettore fornito da TeleMessage. Prima di poter archiviare i dati in Microsoft 365, è necessario collaborare con TeleMessage per configurare il servizio di archiviazione per l'organizzazione. Per ulteriori informazioni, vedere la sezione prerequisito nelle istruzioni dettagliate per questo tipo di dati.
+>
 
 I dati di terze parti elencati nella tabella precedente (ad eccezione dei dati HR) vengono importati nelle cassette postali degli utenti. Le corrispondenti soluzioni di conformità che supportano i dati di terze parti vengono applicate alla cassetta postale dell'utente in cui sono archiviati i dati.
 
