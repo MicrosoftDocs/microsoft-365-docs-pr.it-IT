@@ -103,6 +103,13 @@
     - name: Utilizzo di Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items:
+        - name: Usare i report
+          href: working-with-managed-desktop/reports.md
+          items:
+            - name: Rapporto di conformità del dispositivo
+              href: working-with-managed-desktop/device-compliance-report.md
+            - name: Report inventario dei dispositivi
+              href: working-with-managed-desktop/device-inventory-report.md
         - name: Usare i dati analitici
           href: working-with-managed-desktop/insights.md
           items:
