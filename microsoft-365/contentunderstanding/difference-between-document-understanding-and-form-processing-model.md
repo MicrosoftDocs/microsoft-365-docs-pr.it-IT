@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Descrive la differenza fondamentale tra la comprensione dei documenti e i modelli di elaborazione dei moduli.
-ms.openlocfilehash: bceeb4b2f52ecf95aa0a23bf8970d1427088d877
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 7c480b91c1ddd75016b4bd35faa3d5692cacd103
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537436"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612739"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>Differenza tra la comprensione dei documenti e i modelli di elaborazione dei moduli (anteprima)
 

@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Consente agli utenti di installare le app di Office nei dispositivi Windows 10 e di installare facilmente Office nei PC Windows 10 dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 680c1c4e43a037c6afd109220090f387b207f8b1
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786235"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601984"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aiutare gli utenti a installare Office nei dispositivi Windows 10
 
@@ -60,8 +60,7 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
     
 4. Nel pannello **degli utenti di posta elettronica un collegamento per scaricare Office** , selezionare gli utenti che si desidera inviare tramite posta elettronica e quindi **inviare tramite e-mail gli utenti selezionati**.
 
-    
-      :::image type="content" source="../media/sendemailtousers.png" alt-text="Selezionare gli utenti per inviare messaggi di posta elettronica con il collegamento di download di Office.":::
+   ![Selezionare gli utenti per inviare messaggi di posta elettronica con il collegamento di download di Office.](../media/sendemailtousers.png)
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 Business Premium
 

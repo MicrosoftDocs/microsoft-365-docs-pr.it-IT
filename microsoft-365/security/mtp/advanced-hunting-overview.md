@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 8dca8cac2c66147975f71c86b91aee7b36c92cf9
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552435"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608334"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Cercare in modo proattivo minacce con la ricerca avanzata di Microsoft Threat Protection
 
@@ -39,7 +39,7 @@ La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query
 
 È possibile usare le stesse query di ricerca delle minacce per creare regole di rilevamento personalizzate. Queste regole vengono eseguite automaticamente per il controllo di diversi eventi e dello stato di salute del sistema e per le relative risposte, tra cui attività di violazione sospette e computer non configurati correttamente.
 
-Nel centro sicurezza Microsoft 365, Advanced Hunting supporta le query che esaminano i dati provenienti da diverse aree di lavoro, inclusi i dati relativi a dispositivi, messaggi di posta elettronica, app e identità di Microsoft Defender ATP, Office 365 ATP, Microsoft cloud app Security e Azure ATP. Per utilizzare la ricerca avanzata, [attivare Microsoft Threat Protection](mtp-enable.md).
+La caratteristica è simile alla [ricerca avanzata in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), tranne per il fatto che nel centro sicurezza Microsoft 365, Advanced Hunting supporta le query che esaminano i dati provenienti da diverse aree di lavoro, inclusi i dati relativi a dispositivi, messaggi di posta elettronica, app e identità di Microsoft Defender ATP, Office 365 ATP, Microsoft cloud app Security e Azure ATP. Per utilizzare la ricerca avanzata, [attivare Microsoft Threat Protection](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Introduzione alla ricerca avanzata
 
@@ -66,7 +66,7 @@ I dati di caccia avanzati possono essere categorizzati in due tipi distinti, ogn
 ## <a name="related-topics"></a>Argomenti correlati
 - [Apprendere il linguaggio delle query](advanced-hunting-query-language.md)
 - [Usare i risultati delle query](advanced-hunting-query-results.md)
-- [Eseguire un'azione sui risultati delle query](advanced-hunting-take-action.md)
+- [Intraprendere azioni sui risultati della query](advanced-hunting-take-action.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)

@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio apre ticket di supporto presso Microsoft.
-ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 1f662221a2bcd8bc75c8226b2da726966a096be6
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432112"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602094"
 ---
 # <a name="get-started-with-the-roles-page"></a>Iniziare a utilizzare la pagina ruoli
 
 Nella pagina ruoli, è possibile concedere agli utenti le autorizzazioni per eseguire attività nei centri di amministrazione. Questo aiuta l'organizzazione a distribuire le attività alle persone appropriate e a mantenere i dati protetti.
 
-:::image type="content" source="../../media/roles-main-page.png" alt-text="Figura che illustra i ruoli di amministratore":::
+![Figura che illustra i ruoli di amministratore](../../media/roles-main-page.png)
 
 > [!TIP]
 > Per le descrizioni dettagliate dei ruoli, Estrarre le [autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) e [sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
@@ -39,7 +39,7 @@ Nella pagina ruoli, è possibile concedere agli utenti le autorizzazioni per ese
 
 È possibile esportare l'elenco di amministratori e la ricerca e filtrare in base al ruolo.
 
-:::image type="content" source="../../media/admin-role-page-options.png" alt-text="Filtrare o importare i ruoli di amministratore":::
+![Filtrare o importare i ruoli di amministratore](../../media/admin-role-page-options.png)
 
 |||
 |:-----|:-----|
@@ -96,7 +96,7 @@ Nell'interfaccia di amministrazione:
 
 - Selezionare fino a 3 ruoli e scegliere **Confronta ruoli** per visualizzare le autorizzazioni assegnate a ogni ruolo.
 
-:::image type="content" source="../../media/compare-roles-list.png" alt-text="Figura che illustra un confronto tra i ruoli di amministratore":::
+![Figura che illustra un confronto tra i ruoli di amministratore](../../media/compare-roles-list.png)
 
 ::: moniker-end
 

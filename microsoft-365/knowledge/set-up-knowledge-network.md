@@ -10,13 +10,13 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: d4bc45bd1c88d4043df661972399dc6740dbed84
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+localization_priority: None
+ms.openlocfilehash: ba8cb8ceb3c98019099bfe5438d274c9d2b32280
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540131"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612549"
 ---
 # <a name="set-up-knowledge-management-preview"></a>Configurare la gestione delle informazioni (anteprima)
 
@@ -60,7 +60,7 @@ Per configurare la rete delle informazioni:
 
 3. Nella pagina **Connect people to Knowledge** fare clic su Guida **introduttiva** per eseguire il processo di installazione.<br/>
 
-    ![Informazioni di base](../media/content-understanding/k-get-started.png) </br>
+    ![Per iniziare](../media/content-understanding/k-get-started.png) </br>
 
 4. Nella pagina **scegliere il modo in cui la rete di informazioni può trovare gli argomenti** , verrà configurata l'individuazione dell'argomento. Nella sezione **selezione origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Questo include:</br>
     a. **Tutti i siti**: tutti i siti di SharePoint nel tenant. Questo acquisisce i siti correnti e futuri.</br>
