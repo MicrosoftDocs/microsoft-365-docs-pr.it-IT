@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: d8025f6abe9f1b68dea0856b2a53139a711198c6
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597555"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632129"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -72,7 +72,7 @@ Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario 
 
 ## <a name="reviewers"></a>Revisori
 
-Quando si crea un criterio di conformità della comunicazione, è necessario determinare chi esamina i messaggi degli utenti controllati. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone per esaminare le comunicazioni sorvegliate. I revisori di atutti devono disporre di cassette postali ospitate in Exchange Online e devono essere assegnate ai ruoli *analisi conformità comunicazione* o verifica *conformità comunicazione* . I revisori (analisti o ricercatori) devono avere anche il ruolo di *gestione dei casi di conformità di comunicazione* assegnato. Quando i revisori vengono aggiunti a un criterio, ricevono automaticamente un messaggio di posta elettronica che informa gli utenti dell'assegnazione ai criteri e fornisce collegamenti alle informazioni sul processo di revisione.
+Quando si crea un criterio di conformità della comunicazione, è necessario determinare chi esamina i messaggi degli utenti controllati. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone per esaminare le comunicazioni sorvegliate. Tutti i revisori devono disporre di cassette postali ospitate su Exchange Online e devono essere assegnate ai ruoli *analisi conformità comunicazione* o verifica *conformità comunicazione* . I revisori (analisti o ricercatori) devono avere anche il ruolo di *gestione dei casi di conformità di comunicazione* assegnato. Quando i revisori vengono aggiunti a un criterio, ricevono automaticamente un messaggio di posta elettronica che informa gli utenti dell'assegnazione ai criteri e fornisce collegamenti alle informazioni sul processo di revisione.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Gruppi per gli utenti e i revisori controllati
 
@@ -107,9 +107,9 @@ Per cercare dati di chat di Teams nelle cassette postali basate sul cloud degli 
 
 - **Origini**di terze parti: è possibile eseguire l'analisi delle comunicazioni da origini di terze parti per i dati importati nelle cassette postali nell'organizzazione Microsoft 365. I connettori supportano le risorse di terze parti seguenti:
 
-    - [Bloomberg istantaneo](archive-instant-bloomberg-data.md)
-    - [Messaggio Bloomberg](archive-bloomberg-message-data.md)
-    - [Chat di ghiaccio](archive-icechat-data.md)
+    - [Instant Bloomberg](archive-instant-bloomberg-data.md)
+    - [Bloomberg Message](archive-bloomberg-message-data.md)
+    - [ICE Chat](archive-icechat-data.md)
 
 Prima di poter assegnare il connettore a un criterio di conformità della comunicazione, è necessario configurare un connettore di terze parti per l'organizzazione Microsoft 365. La sezione **origini di terze parti** della procedura guidata per la conformità dei criteri di comunicazione Visualizza solo i connettori di terze parti attualmente configurati.
 
@@ -208,7 +208,7 @@ Per analizzare i messaggi di posta elettronica e gli allegati per le stesse paro
 
 Se si immettono più condizioni, Microsoft 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio di conformità della comunicazione agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che vengano soddisfatte tutte le condizioni per applicare il criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario un criterio che si applica se un messaggio contiene la parola "Trade" ed è maggiore di 2 MB. Tuttavia, se il messaggio contiene anche le parole "approvate da Contoso Financial", il criterio non deve essere applicato. In questo esempio, le tre condizioni verrebbero definite nel modo seguente:
   
-- Il **messaggio contiene una di queste parole**, con le parole chiave "Trade"
+- Il **messaggio contiene una o più delle seguenti parole**, con la parola chiave "Trade"
 - La **dimensione del messaggio è maggiore di**, con il valore 2 MB
 - Il **messaggio contiene nessuna di queste parole**, con le parole chiave "approvate dal team finanziario contoso"
 
@@ -246,13 +246,13 @@ Se si desidera creare più di un semplice messaggio di posta elettronica basato 
 ```HTML
 <!DOCTYPE html>
 <html>
-<body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
-<p>Thank you,</p>
-<p><em>Human Resources</em></p>
-</body>
+    <body>
+        <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
+        <p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+        <p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+        <p>Thank you,</p>
+        <p><em>Human Resources</em></p>
+    </body>
 </html>
 ```
 
@@ -268,7 +268,7 @@ I filtri di conformità di comunicazione consentono di filtrare e ordinare i mes
 | **Data** | La data in cui il messaggio è stato inviato o ricevuto da un utente dell'organizzazione. |
 | **Classe file** | La classe del messaggio in base al tipo di messaggio, ovvero *messaggio* o *allegato*. |
 | **Ha allegato** | La presenza degli allegati nel messaggio. |
-| **Classe Item** | L'origine del messaggio in base al tipo di messaggio, alla posta elettronica, a Microsoft Team Chat, Bloonmberg e così via. Per ulteriori informazioni sui tipi di elementi comuni e sulle classi dei messaggi, vedere [tipi di elementi e classi di messaggi](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
+| **Classe Item** | L'origine del messaggio in base al tipo di messaggio, alla posta elettronica, a Microsoft Team Chat, a Bloomberg e così via. Per ulteriori informazioni sui tipi di elementi comuni e sulle classi dei messaggi, vedere [tipi di elementi e classi di messaggi](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Domini destinatario** | Il dominio in cui è stato inviato il messaggio. Questo dominio è in genere il dominio di sottoscrizione Microsoft 365 per impostazione predefinita. |
 | **Destinatario** | L'utente a cui è stato inviato il messaggio. |
 | **Mittente** | La persona che ha inviato il messaggio. |

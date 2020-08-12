@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9f8635f65867eb9d9543cc23b984f181030a7f9
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: be86816c559d0ac1873618cd51baa2ac24fb2db8
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024696"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632097"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
@@ -79,7 +79,7 @@ Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#requ
    1. Eseguire i cmdlet di PowerShell seguenti:
 
       ```powershell
-      Login-AzAccount 
+      Connect-AzureAD 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
@@ -254,7 +254,7 @@ Con PowerShell, è possibile visualizzare lo stato degli account utente, i segme
 
 |Per visualizzare questo  |Eseguire l'operazione seguente  |
 |---------|---------|
-|Account utente     |Utilizzare il cmdlet **Get-InformationBarrierRecipientStatus** con i parametri Identity. <p>Sintassi`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>Esempio:  `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*. <p>È inoltre possibile utilizzare questo cmdlet per un singolo `Get-InformationBarrierRecipientStatus -Identity <value>` utente: <p>Questo cmdlet restituisce informazioni sugli utenti, ad esempio i valori degli attributi e tutti i criteri di barriera delle informazioni applicati.|
+|Account utente     |Utilizzare il cmdlet **Get-InformationBarrierRecipientStatus** con i parametri Identity. <p>Sintassi`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>Esempio: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*. <p>È inoltre possibile utilizzare questo cmdlet per un singolo `Get-InformationBarrierRecipientStatus -Identity <value>` utente: <p>Questo cmdlet restituisce informazioni sugli utenti, ad esempio i valori degli attributi e tutti i criteri di barriera delle informazioni applicati.|
 |Segmenti     |Utilizzare il cmdlet **Get-OrganizationSegment** .<p>Sintassi`Get-OrganizationSegment` <p>In questo modo verrà visualizzato un elenco di tutti i segmenti definiti per l'organizzazione.         |
 |Criteri barriera di informazioni     |Utilizzare il cmdlet **Get-InformationBarrierPolicy** . <p> Sintassi`Get-InformationBarrierPolicy` <p>In questo modo verrà visualizzato un elenco di criteri barriera informativi definiti e il relativo stato.       |
 |Applicazione dei criteri barriera informativa più recente     | Utilizzare il cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Sintassi`Get-InformationBarrierPoliciesApplicationStatus`<p>    Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.       |

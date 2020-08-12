@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a08d07f574c1cd5463772c803be0d4b3850144f4
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 7701932cdd41b673dcc665c71983df9f4d244a8b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199539"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632175"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -75,7 +75,7 @@ Per informazioni dettagliate su come configurare i criteri DLP per la propria or
 
 ### <a name="data-leaks-by-priority-users-preview"></a>Perdite di dati da parte di utenti prioritari (anteprima)
 
-La protezione dei dati e la prevenzione della perdita di dati per gli utenti dell'organizzazione possono dipendere dalla posizione, dal livello di accesso alle informazioni riservate o dalla cronologia dei rischi. Le perdite di dati possono includere la sovracondivisione accidentale di informazioni estremamente riservate all'esterno dell'organizzazione o il furto di dati con intenti dolosi. In combinazione con un criterio di prevenzione della perdita di dati (DLP, Data Loss Prevention) assegnato, questo modello inizia a segnare i rilevamenti in tempo reale dell'attività sospetta e comporta una maggiore probabilità di avvisi e avvisi con livelli di gravità superiori. Gli utenti prioritari sono definiti in gruppi di utenti prioritari configurati nell'area impostazioni di gestione dei rischi Insider. AGGIUNGI COLLEGAMENTO
+La protezione dei dati e la prevenzione della perdita di dati per gli utenti dell'organizzazione possono dipendere dalla posizione, dal livello di accesso alle informazioni riservate o dalla cronologia dei rischi. Le perdite di dati possono includere la sovracondivisione accidentale di informazioni estremamente riservate all'esterno dell'organizzazione o il furto di dati con intenti dolosi. In combinazione con un criterio di prevenzione della perdita di dati (DLP, Data Loss Prevention) assegnato, questo modello inizia a segnare i rilevamenti in tempo reale dell'attività sospetta e comporta una maggiore probabilità di avvisi e avvisi con livelli di gravità superiori. Gli utenti prioritari sono definiti in [gruppi di utenti prioritari](insider-risk-management-settings.md#priority-user-groups-preview) configurati nell'area impostazioni di gestione dei rischi Insider.
 
 Come per il **modello di perdita di dati generale**, è necessario assegnare un criterio DLP per attivare gli indicatori nei criteri di rischio Insider per gli avvisi di gravità elevata nell'organizzazione. Seguire le linee guida relative ai criteri per le perdite di dati precedenti quando si crea un criterio utilizzando questo modello. È inoltre necessario assegnare ai criteri i gruppi di utenti prioritari creati **Insider risk management**in  >  **Settings**  >  **gruppi di priorità** delle impostazioni di gestione dei rischi Insider.
 

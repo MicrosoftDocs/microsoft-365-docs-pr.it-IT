@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare DMARC (Domain-based Message Authentication, Reporting, and Conformance) per convalidare i messaggi inviati dall'organizzazione.
-ms.openlocfilehash: 56e557a3ca970540288c00d5fb8a30549c252776
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601874"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632118"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usare DMARC per convalidare la posta elettronica
 
@@ -39,7 +39,7 @@ Autenticazione dei messaggi, la creazione di report e la conformità di un domin
 
 SPF Usa un record TXT DNS per fornire un elenco di indirizzi IP di invio autorizzati per un determinato dominio. Normalmente, i controlli SPF vengono eseguiti solo in base all'indirizzo 5321.MailFrom. Ciò significa che l'indirizzo 5322.From non è autenticato quando si usa SPF. Ciò consente uno scenario in cui un utente può ricevere un messaggio che supera un controllo SPF, ma presenta un indirizzo mittente 5322.From falsificato. Si consideri, ad esempio, la seguente trascrizione SMTP:
 
-```text
+```console
 S: Helo woodgrovebank.com
 S: Mail from: phish@phishing.contoso.com
 S: Rcpt to: astobes@tailspintoys.com
@@ -76,7 +76,7 @@ Come i record DNS per SPF, il record per DMARC è un record di testo DNS che con
 
 Il record TXT DMARC di Microsoft è simile al seguente:
 
-```text
+```console
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
 ```
 
@@ -114,7 +114,7 @@ Ora che si ha un elenco di mittenti validi, è possibile seguire la procedura pe
 
 Ad esempio, presupponendo che contoso.com invia un messaggio da Exchange Online, un server Exchange locale il cui indirizzo IP è 192.168.0.1 e un'applicazione Web il cui indirizzo IP è 192.168.100.100, il record TXT SPFsarà simile alla seguente:
 
-```text
+```console
 contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.protection.outlook.com -all"
 ```
 
@@ -132,7 +132,7 @@ Per istruzioni sulla configurazione di DKIM per il dominio e su come configurare
 
 Anche se sono disponibili altre opzioni di sintassi non menzionate qui, queste sono le opzioni più comunemente usate per Microsoft 365. Creare il record TXT DMARC per il dominio nel formato:
 
-```text
+```console
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 ```
 
@@ -152,19 +152,19 @@ Esempi:
 
 - Criterio impostato su none
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
     ```
 
 - Criterio impostato su quarantine
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
     ```
 
 - Criterio impostato su reject
 
-    ```text
+    ```console
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
@@ -187,6 +187,16 @@ Dopo aver creato il record, è necessario aggiornare il record nel registrar del
 3. Richiedere che i sistemi di posta esterni non accettino messaggi che non superano DMARC
 
     Il passaggio finale consiste nell'implementare un criterio reject. Un criterio reject è un record TXT DMARC il cui criterio è impostato su reject (p=reject). Quando si esegue questa operazione, si chiede ai destinatari DMARC di non accettare messaggi che non superano i controlli DMARC.
+    
+4. Come si configura DMARC per il sottodominio?
+
+DMARC viene implementato pubblicando un criterio come record TXT nel DNS ed è gerarchico (ad esempio, i criteri pubblicati per contoso.com verranno applicati a sub.domain.contonos.com, a meno che non vengano definiti in modo esplicito criteri diversi per il sottodominio). Questa operazione è utile perché le organizzazioni possono specificare un numero ridotto di record DMARC di livello elevato per una copertura più ampia. È consigliabile prestare attenzione nel configurare i record di sottodomini DMARC espliciti in cui non si vuole che i sottodomini ereditino il record DMARC del dominio di primo livello.
+
+È anche possibile aggiungere un criterio di tipo jolly per DMARC quando i sottodomini non devono inviare posta elettronica, aggiungendo il valore `sp=reject`. Ad esempio:
+
+```console
+_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Come viene gestita la posta elettronica in uscita che non supera il controllo DMARC in Microsoft 365
 
@@ -220,7 +230,7 @@ Se sono stati configurati i record MX del dominio in cui EOP non è la prima voc
 
 Se si è clienti e il record MX principale del proprio dominio non punta a Exchange Online Protection, non si usufruirà dei vantaggi di DMARC. Ad esempio, DMARC non funzionerà se si punta il record MX al server di posta locale e si indirizza quindi la posta elettronica a EOP utilizzando un connettore. In questo scenario, il dominio di destinazione è uno dei domini accettati ma EOP non è il principale MX. Ad esempio, si supponga che contoso.com punti il relativo MX a se stesso e utilizzi EOP come un record MX secondario, il record MX di contoso.com avrà il seguente aspetto:
 
-```text
+```console
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```

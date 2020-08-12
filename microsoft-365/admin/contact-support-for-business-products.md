@@ -21,12 +21,12 @@ search.appverid:
 description: Ottenere supporto tecnico e per la fatturazione usando i numeri di telefono indicati per il proprio paese o area geografica o inviando una richiesta di assistenza online.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552447"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641586"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Modi di contattare il supporto tecnico per i prodotti per le aziende - Guida per l'amministratore
 
@@ -56,6 +56,9 @@ Per risparmiare tempo, avviare la richiesta di assistenza online. Ti aiuteremo a
 Il supporto per la fatturazione è disponibile solo in inglese dal lunedì al venerdì dalle 9:00 alle 17:00 (dalle 9:00 alle 18:00 in Australia).
 Il supporto tecnico viene fornito in inglese 24 ore al giorno, 7 giorni alla settimana.
 Gli amministratori possono chiamare il supporto, assicurandosi di avere a portata di mano i dettagli del loro account.
+
+> [!NOTE]
+> Per proteggere meglio la tua organizzazione, è stato aggiunto un passaggio di verifica basato su PIN al processo di verifica esistente basato su telefono. Se ci contatti da un numero che non è registrato con il profilo della tua organizzazione, il rappresentante del supporto Microsoft invia un codice di verifica all'indirizzo email o al numero di telefono registrato nel profilo dell'interfaccia di amministrazione di Microsoft 365. Il codice deve essere fornito al rappresentante del supporto per consentire loro l'accesso all'account dell'organizzazione.
 
 - **Negli Stati Uniti, chiamare il numero 1 800 865 9408.**
 

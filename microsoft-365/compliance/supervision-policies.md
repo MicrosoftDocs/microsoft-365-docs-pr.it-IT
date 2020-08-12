@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: eb57a60643eb6168ad9fbbca178a3baf1b26392b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502927"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632107"
 ---
 # <a name="supervision-policies"></a>Criteri di supervisione
 
@@ -193,7 +193,7 @@ Per analizzare i messaggi di posta elettronica e gli allegati per le stesse paro
 
 Se si immettono più condizioni, Microsoft 365 utilizza tutte le condizioni insieme per determinare quando applicare il criterio agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che vengano soddisfatte tutte le condizioni per applicare il criterio, a meno che non si immetta un'eccezione. Ad esempio, è necessario un criterio che si applica se un messaggio contiene la parola "Trade" ed è maggiore di 2 MB. Tuttavia, se il messaggio contiene anche le parole "approvate da Contoso Financial", il criterio non dovrebbe essere applicato. Pertanto, in questo caso, le tre condizioni sarebbero le seguenti:
   
-- Il **messaggio contiene una di queste parole**, con le parole chiave "Trade"
+- Il **messaggio contiene una o più delle seguenti parole**, con la parola chiave "Trade"
 
 - La **dimensione del messaggio è maggiore di**, con il valore 2 MB
 

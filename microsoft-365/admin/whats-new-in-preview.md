@@ -21,12 +21,12 @@ description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle 
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a48ecf78c09c8e597d94821f747bf6ebd7e444
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 84932e13a336d225894683f9e328cb44df8c0e78
+ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46602010"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46635023"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -52,6 +52,17 @@ Se si desidera sapere cosa c'è di nuovo con altri servizi cloud Microsoft:
 - [Novità di Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 - [Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="june-2020"></a>Giugno 2020
+
+### <a name="keeping-up-with-office-whats-new-management"></a>Gestione delle nuove funzionalità di Office
+
+Alcuni mesi fa, è stata aggiunta un'impostazione che consente di gestire i [nuovi messaggi visualizzati nelle app di Office di un utente](#office-whats-new-management). Questo mese, è stata rilasciata una nuova scheda Home page che ti aiuterà a agire rapidamente e a tenere conto dei messaggi che si desidera visualizzare per gli **utenti dell'organizzazione** .
+
+### <a name="docs-training-and-videos-june"></a>Documenti, formazione e video (giugno)
+
+- [Guida introduttiva ai team](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+
 
 ## <a name="may-2020"></a>Maggio 2020
 
@@ -403,7 +414,7 @@ Si è verificato un aggiornamento a un'altra delle procedure guidate per l'insta
 Sono stati apportati alcuni aggiornamenti per la fatturazione e gli abbonamenti di questo mese:
 
 - Abbonamenti basati su dispositivo: è possibile assegnare o annullare **l'assegnazione delle licenze di microsoft 365 Apps for Education (Device)** ai dispositivi nell'interfaccia di amministrazione di Microsoft 365. **Microsoft 365 Apps for Education (Device)** è una licenza per i componenti aggiuntivi che consente di assegnare una licenza a un dispositivo. Andare a **fatturazione**  >  dei**prodotti** per trovare e acquistare la licenza.
-- Gestione delle licenze basata sull'utente: è stato aggiornato il modo in cui si assegnano le licenze **agli utenti**  >  **attivi** per il nuovo stile. Per altre informazioni, vedere:
+- Gestione delle licenze basata sull'utente: è stato aggiornato il modo in cui si assegnano le licenze **agli utenti**  >  **attivi** per il nuovo stile. Per ulteriori informazioni, vedere:
   - [Assegnare licenze agli utenti](manage/assign-licenses-to-users.md)
   - [Annullare l'assegnazione delle licenze agli utenti](manage/remove-licenses-from-users.md)
 

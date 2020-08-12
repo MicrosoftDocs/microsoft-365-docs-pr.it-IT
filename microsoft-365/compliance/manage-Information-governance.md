@@ -14,20 +14,33 @@ search.appverid:
 - MOE150
 - MET150
 description: Per ulteriori informazioni, vedere Information Governance in Microsoft 365.
-ms.openlocfilehash: d2c2977a4eeaebb28f37c69683a929cb9f64b085
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d8e0c252bfe0b5b5c3361e67b8327d04951eb9c5
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521243"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641609"
 ---
 # <a name="manage-information-governance"></a>Gestire la governance delle informazioni
 
- Gestire il ciclo di vita del contenuto utilizzando le funzionalità di Microsoft 365 per importare, archiviare e classificare i dati critici per le aziende in modo da poter mantenere ciò che è necessario ed eliminare ciò che non è possibile.
+Utilizzare le funzionalità di governance delle informazioni di Microsoft per gestire i dati per conformità o requisiti normativi.
 
-|**Funzionalità**|**Altre informazioni**|
-|:-----|:-----|
-| **Gestire i dati** | Utilizzare i criteri di [conservazione e le etichette di conservazione](retention.md) per mantenere i dati necessari per conservare ed eliminare gli elementi non necessari per mantenere o eliminare i motivi di conformità o di regolamentazione.<br /><br /> Utilizzare il [servizio di importazione](importing-pst-files-to-office-365.md) per importare rapidamente i file PST nelle cassette postali di Exchange Online nell'organizzazione e configurare l' [archiviazione illimitata](unlimited-archiving.md) per fornire agli utenti un ulteriore spazio di archiviazione delle cassette postali.|
-| **Monitorare i dati** | [Verificare](view-label-activity-for-documents.md) che le etichette di conservazione vengano applicate correttamente al contenuto dell'organizzazione e utilizzare l' [analisi](label-analytics.md) delle etichette per visualizzare rapidamente la posizione in cui vengono utilizzate queste etichetta e la posizione in cui vengono applicate.|
-| **Gestire le cassette postali inattive** | L'organizzazione potrebbe dover conservare l'indirizzo di posta elettronica di dipendenti precedenti dopo che lasciano l'organizzazione. In base ai requisiti di conservazione dell'organizzazione, potrebbe essere necessario conservare il contenuto della cassetta postale per pochi mesi o anni dopo il termine dell'impiego oppure potrebbe essere necessario conservare il contenuto della cassetta postale all'infinito. Indipendentemente dal tempo necessario per mantenere la posta elettronica, è possibile creare [cassette postali inattive](inactive-mailboxes-in-office-365.md) per mantenere la cassetta postale di ex dipendenti.|
-| **Gestione record** | Verificare che i [record aziendali di base](records-management.md) siano stati dichiarati e archiviati correttamente con visibilità del controllo completo per soddisfare i requisiti normativi.|
+## <a name="information-governance"></a>Governance delle informazioni
+
+Per mantenere ciò che si desidera ed eliminare ciò che non è necessario:
+ 
+|Funzionalità|Quali sono i problemi risolti?|Per iniziare|
+|:------|:------------|:--------------------|:-----------------------------|
+|[Gestione dei criteri e flusso di lavoro di eliminazione](retention.md)| Conservare o eliminare contenuto che include posta elettronica, documenti, messaggi istantanei e altro ancora <br /><br />Scenario di esempio: [applicazione automatica di un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md) | [Familiarizza con i criteri e le etichette di conservazione](get-started-with-retention.md)|
+|[Servizio di importazione](importing-pst-files-to-office-365.md)| Importare in blocco i file PST nelle cassette postali di Exchange Online per conservare e ricercare i messaggi di posta elettronica per conformità o requisiti normativi | [Usare il caricamento in rete per importare file PST dell'organizzazione in Microsoft 365](use-network-upload-to-import-pst-files.md)|
+|[Archiviare i dati di terze parti](archiving-third-party-data.md)| Importare, archiviare e applicare soluzioni di conformità a dati di terze parti da piattaforme social media, piattaforme di messaggistica istantanea e piattaforme di collaborazione con documenti| [Connettori di terze parti](archiving-third-party-data.md#third-party-data-connectors)|
+|[Cassette postali inattive](inactive-mailboxes-in-office-365.md)| Mantenere il contenuto della cassetta postale dopo che i dipendenti lasciano l'organizzazione | [Creare e gestire le cassette postali inattive](create-and-manage-inactive-mailboxes.md)|
+
+## <a name="records-management"></a>Gestione dei record
+
+Per gestire il contenuto di alto valore per gli obblighi legali, aziendali o normativi, utilizzare la gestione dei record:
+
+|Funzionalità|Quali sono i problemi risolti?|Per iniziare|
+|:------|:------------|---------------------|:----------------------------|
+|[Gestione record](records-management.md)| Una singola soluzione per la posta elettronica e i documenti che incorporano le pianificazioni e i requisiti di conservazione in un piano di file che gestisce la conservazione, la dichiarazione dei record e la disposizione per supportare il ciclo di vita completo del contenuto. <br /><br />Scenario di esempio: [disposizione dei record](disposition.md#disposition-of-records)|[Informazioni sui record](records.md) |
+

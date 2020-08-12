@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cea4dbcb42833a14980d092bd0ff168ca97e5934
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005711"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632152"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creare e gestire le regole per i rilevamenti personalizzati
 
@@ -51,6 +51,10 @@ Per gestire le autorizzazioni necessarie, un **amministratore globale** può ese
 ### <a name="1-prepare-the-query"></a>1. preparare la query.
 
 In Microsoft 365 Security Center, andare a **ricerca avanzata** e selezionare una query esistente o creare una nuova query. Quando si utilizza una nuova query, eseguire la query per identificare gli errori e comprendere i possibili risultati.
+
+>[!IMPORTANT]
+>Per evitare che il servizio restituisca troppi avvisi, ogni regola è limitata alla generazione di soli 100 avvisi ogni volta che viene eseguita. Prima di creare una regola, modificare la query per evitare di ricevere avvisi per attività quotidiane normali.
+
 
 #### <a name="required-columns-in-the-query-results"></a>Colonne obbligatorie nei risultati della query
 Per creare una regola di rilevamento personalizzata, è necessario che la query restituisca le colonne seguenti:
@@ -85,6 +89,7 @@ DeviceEvents
 | summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
+
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. creare una nuova regola e fornire informazioni dettagliate sugli avvisi.
 
 Con la query nell'editor di query, selezionare **Crea regola di rilevamento** e specificare gli avvisi seguenti:

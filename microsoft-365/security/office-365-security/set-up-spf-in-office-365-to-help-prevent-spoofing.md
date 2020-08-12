@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come aggiornare un record DNS (Domain Name Service) per usare un Sender Policy Framework (SPF) con il dominio personalizzato in Office 365.
-ms.openlocfilehash: 93356799967932813252e7db27e7ac796e46cbc6
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936938"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632140"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurazione di SPF per evitare lo spoofing
 
@@ -61,8 +61,8 @@ Raccogliere le seguenti informazioni:
 
 1. Assicurarsi di avere familiarità con la sintassi SFP nella tabella seguente.
 
-   ||**Se si sta utilizzando...**|**Comune per i clienti?**|**Aggiungere...**|
-   |:-----|:-----|:-----|:-----|
+   ||Se si sta utilizzando...|Comune per i clienti?|Aggiungere...|
+   |---|---|---|---|
    |1|Qualsiasi sistema di posta elettronica (obbligatorio)|Comune. Tutti i record TXT SPF devono iniziare con questo valore|v=spf1|
    |2|Exchange Online|Comune|include:spf.protection.outlook.com|
    |3|Solo per Exchange Online|Non comune|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
@@ -88,6 +88,16 @@ Raccogliere le seguenti informazioni:
 3. Dopo aver creato il record TXT SPF, è necessario aggiornare il record in DNS. È possibile avere un solo record TXT SPF per un dominio. Se esiste un record TXT SPF, anziché aggiungere un nuovo record, è necessario aggiornare quello esistente. Passare a [Creare record DNS per Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) e fare clic sul collegamento relativo al proprio host DNS.
 
 4. Verificare il record TXT SPF.
+
+## <a name="how-to-handle-subdomains"></a>Come gestire i sottodomini
+
+È importante tenere presente che è necessario creare un record distinto per ogni sottodominio in quanto i sottodomini non ereditano il record SPF del dominio di primo livello.
+
+Per tutti i domini e sottodomini è necessario un altro record SPF jolly (`*.`) per impedire agli utenti malintenzionati di inviare messaggi di posta elettronica che provengano da sottodomini inesistenti. Ad esempio:
+
+```console
+*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+```
 
 ## <a name="more-information-about-spf"></a>Per ulteriori informazioni su SPF
 
