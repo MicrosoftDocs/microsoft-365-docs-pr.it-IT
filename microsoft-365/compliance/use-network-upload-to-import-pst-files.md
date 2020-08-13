@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come usare il caricamento in rete per importare più file PST in blocco nelle cassette postali degli utenti in Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 14b70c0ab219f1d6153ceef601e3b4b5b4c76d8a
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127333"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641631"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usare il caricamento in rete per importare file PST dell'organizzazione in Microsoft 365
 
@@ -117,12 +117,12 @@ Il primo passaggio consiste nello scaricare e installare AzCopy, lo strumento ch
     
     ![Copiare l'URL della firma di accesso condiviso e scaricare lo strumento AzCopy nella pagina Importa dati](../media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
-    a. Nel passaggio 2 fare clic su **Mostra l'URL della firma di accesso condiviso per il caricamento in rete**. Dopo aver visualizzato l'URL della firma di accesso condiviso, fare clic su **Copia negli Appunti** e incollarlo e salvarlo in un file in modo da potervi accedere in un secondo momento.
+    1. Nel passaggio 2 fare clic su **Mostra l'URL della firma di accesso condiviso per il caricamento in rete**. Dopo aver visualizzato l'URL della firma di accesso condiviso, fare clic su **Copia negli Appunti** e incollarlo e salvarlo in un file in modo da potervi accedere in un secondo momento.
     
-    b. Nel passaggio 3 fare clic su **Scarica Azure AzCopy** per scaricare e installare lo strumento AzCopy. Nella finestra popup fare clic su **Esegui** per installare AzCopy. 
+    1. Nel passaggio 3 fare clic su **Scarica Azure AzCopy** per scaricare e installare lo strumento AzCopy. Nella finestra popup fare clic su **Esegui** per installare AzCopy. 
     
-> [!NOTE]
-> È possibile uscire dalla pagina **Importa dati** aperta (nel caso in cui sia necessario copiare di nuovo l'URL della firma di accesso condiviso) oppure fare clic su **Annulla** per chiuderla. 
+   > [!NOTE]
+   > È possibile uscire dalla pagina **Importa dati** aperta (nel caso in cui sia necessario copiare di nuovo l'URL della firma di accesso condiviso) oppure fare clic su **Annulla** per chiuderla. 
  
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>Passaggio 2: Caricare i file PST in Office 365
 
@@ -146,7 +146,7 @@ A questo punto, è possibile usare lo strumento AzCopy.exe per caricare i file P
  
     Nella tabella seguente vengono descritti i parametri AzCopy.exe e i relativi valori. Nei valori per questi parametri si usano le informazioni ottenute nel passaggio precedente.
     
-    |**Parametro**|**Descrizione**|**Esempio**|
+    | Parametro | Descrizione | Esempio |
     |:-----|:-----|:-----|
     | `/Source:` <br/> |Specifica la directory di origine nell'organizzazione che contiene i file PST che verranno caricati su Office365.  <br/> Racchiudere il valore di questo parametro tra virgolette doppie (" ").  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
     | `/Dest:` <br/> |Specifica l'URL della firma di accesso condiviso ottenuto nel passaggio 1.  <br/> Racchiudere il valore di questo parametro tra virgolette doppie (" ").<br/><br/>**Nota:** se si usa l'URL della firma di accesso condiviso in un file batch o in un file di script, è necessario prestare particolare attenzione ad alcuni caratteri che devono essere preceduti da caratteri di escape. Ad esempio, è necessario cambiare `%` in `%%` e `&` in `^&`.<br/><br/>**Suggerimento:** (facoltativo) è possibile specificare una sottocartella del percorso di Archiviazione di Azure in cui caricare i file PST. A questo scopo, aggiungere un percorso di sottocartella (dopo "ingestiondata") nell'URL della firma di accesso condiviso. Nel primo esempio non viene specificata una sottocartella. I file PST vengono quindi caricati nella radice (*ingestiondata*) del percorso di Archiviazione di Azure. Nel secondo esempio i file PST vengono caricati in una sottocartella (*PSTFiles*) nella radice del percorso di Archiviazione di Azure.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Oppure  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
@@ -208,7 +208,7 @@ Una volta caricati i file PST nella posizione di archiviazione di Azure per l'or
 
 2. Aprire o salvare il file CSV nel computer locale. Nell'esempio seguente viene visualizzato un file di mapping di importazione PST completo (aperto nel Blocco note). È molto più facile usare Microsoft Excel per modificare il file CSV.
 
-    ```text
+    ```console
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -229,7 +229,7 @@ Una volta caricati i file PST nella posizione di archiviazione di Azure per l'or
 
  3. Utilizzare le informazioni della tabella per popolare il file CSV con i dati necessari.
 
-    |**Parametro**|**Descrizione**|**Esempio**|
+    | Parametro | Descrizione | Esempio |
     |:-----|:-----|:-----|
     | `Workload` <br/> |Specifica il servizio in cui verranno importati i dati. Per importare file PST nelle cassette postali degli utenti, usare `Exchange`.  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> |Specifica la posizione della cartella nel percorso di Archiviazione di Azure in cui sono stati caricati i file PST durante il passaggio 2.  <br/> Se nel parametro `/Dest:` non è stato incluso un nome di sottocartella facoltativo nell'URL della firma di accesso condiviso nel passaggio 2, lasciare vuoto questo parametro nel file CSV. Se invece è stato incluso un nome di sottocartella, specificarlo in questo parametro (vedere il secondo esempio). Per il valore di questo parametro è rilevante la distinzione tra maiuscole e minuscole.  <br/> In entrambi i casi, *non* includere "ingestiondata" nel valore per il parametro `FilePath`.  <br/><br/> **Importante:** la combinazione di maiuscole e minuscole nel percorso file deve corrispondere a quella usata se è stato incluso un nome di sottocartella facoltativo nell'URL della firma di accesso condiviso nel parametro `/Dest:` nel passaggio 2. Ad esempio, se il nome usato per la sottocartella nel passaggio 2 è `PSTFiles` e quindi si usa `pstfiles` nel parametro `FilePath` nel file CSV, l'importazione per il file PST avrà esito negativo. Assicurarsi di usare la stessa combinazione di maiuscole e minuscole in entrambi i casi.  <br/> |(lasciare vuoto)  <br/> Oppure  <br/>  `PSTFiles` <br/> |
@@ -306,17 +306,17 @@ Dopo avere creato il processo di importazione nel passaggio 5, Microsoft 365 ana
   
 3. Eseguire una delle operazioni seguenti:
     
-    a. Per filtrare i dati da importare, fare clic su **Sì, voglio filtrarli prima dell'importazione**.
+   1. Per filtrare i dati da importare, fare clic su **Sì, voglio filtrarli prima dell'importazione**.
     
-    Per informazioni dettagliate su come filtrare i dati nei file PST e quindi avviare il processo di importazione, vedere [Filtrare i dati durante l'importazione di file PST in Office 365](filter-data-when-importing-pst-files.md).
+      Per informazioni dettagliate su come filtrare i dati nei file PST e quindi avviare il processo di importazione, vedere [Filtrare i dati durante l'importazione di file PST in Office 365](filter-data-when-importing-pst-files.md).
     
-    Oppure
+      Oppure
     
-    b. Per importare tutti i dati nei file PST, fare clic su **No, voglio importare tutto** e quindi fare clic su **Avanti**.
+   1. Per importare tutti i dati nei file PST, fare clic su **No, voglio importare tutto** e quindi fare clic su **Avanti**.
     
 4. Se si sceglie di importare tutti i dati, fare clic su **Importa dati** per avviare il processo di importazione. 
     
-    Lo stato del processo di importazione verrà visualizzato nella pagina **Importa file PST**. Fare clic su ![icona Aggiorna](../media/O365-MDM-Policy-RefreshIcon.gif) **Aggiorna** per aggiornare le informazioni visualizzate nella colonna **Stato**. Fare clic sul processo di importazione per visualizzare la pagina di stato a comparsa, che mostra le informazioni sullo stato per ogni file PST importato. 
+   Lo stato del processo di importazione verrà visualizzato nella pagina **Importa file PST**. Fare clic su ![icona Aggiorna](../media/O365-MDM-Policy-RefreshIcon.gif) **Aggiorna** per aggiornare le informazioni visualizzate nella colonna **Stato**. Fare clic sul processo di importazione per visualizzare la pagina di stato a comparsa, che mostra le informazioni sullo stato per ogni file PST importato. 
 
 
   
@@ -346,7 +346,7 @@ Dopo avere creato il processo di importazione nel passaggio 5, Microsoft 365 ana
   
 - Ecco un esempio di URL della firma di accesso condiviso ottenuto nel passaggio 1. L'esempio include anche la sintassi del comando che si esegue nello strumentoAzCopy.exe per caricare i file PST. Assicurarsi di adottare alcune precauzioni per proteggere l'URL della firma di accesso condiviso, come si farebbe con le password o altre informazioni correlate alla sicurezza.
 
-    ```text
+    ```console
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
