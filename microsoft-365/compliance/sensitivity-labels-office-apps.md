@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9ed6e163915bd8cdf63e7f37bf92065943d71fb
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 7c47b97c573822cb44f895296613b70af7f85c93
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189467"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656781"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -112,6 +112,14 @@ In alternativa, disabilitare o rimuovere il componente aggiuntivo di Office, **A
 Quando si disattiva o si rimuove il componente aggiuntivo di Office, il client Azure Information Protection resta installato in modo da poter continuare a contrassegnare i file all'esterno delle app di Office. Ad esempio, utilizzando Esplora file o PowerShell.
 
 Per informazioni sulle caratteristiche supportate dai client di Azure Information Protection e dal client di etichettatura incorporato di Office, vedere [Choose the Labeling client to use for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection Documentation.
+
+## <a name="office-file-types-supported"></a>Tipi di file di Office supportati
+
+Le app di Office che dispongono di etichette predefinite per i file Word, Excel e PowerPoint supportano il formato Open XML, ad esempio docx e XLSX, ma non il formato di Microsoft Office 97-2003, ad esempio doc e xls. Quando un tipo di file non è supportato per l'etichettatura incorporata, il pulsante **sensitivity** non è disponibile nell'app di Office.
+
+Il client Azure Information Protection Unified Labeling supporta sia il formato Open XML che il formato Microsoft Office 97-2003. Per ulteriori informazioni, vedere [tipi di file supportati dal client di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) dalla Guida di amministrazione del client.
+
+Per altre soluzioni di etichettatura, consultare la documentazione relativa ai tipi di file supportati.
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>Modelli di protezione e etichette di riservatezza
 

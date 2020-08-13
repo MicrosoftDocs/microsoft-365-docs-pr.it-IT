@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In questo articolo vengono fornite informazioni su come creare, testare e ottimizzare un criterio DLP in base alle esigenze dell'organizzazione.
-ms.openlocfilehash: 3405fc99f4d12715972b1fd18a9c20dd9334382b
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092006"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648783"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
@@ -37,6 +37,24 @@ DLP utilizza un motore di analisi del contenuto per esaminare il contenuto dei m
 - Blocca attivamente il messaggio di posta elettronica o la condivisione di file in corso
 
 A volte i clienti respingono DLP perché non si considerano di avere il tipo di dati che devono essere protetti. Si presuppone che i dati sensibili, ad esempio i record medici o le informazioni finanziarie, esistano solo per le industrie come l'assistenza sanitaria o per le aziende che eseguono negozi online. Tuttavia, qualsiasi azienda può gestire periodicamente le informazioni riservate, anche se non lo sanno. Un foglio di calcolo per i nomi dei dipendenti e le date di nascita è altrettanto sensibile come un foglio di calcolo dei nomi di clienti e i dettagli delle carte di credito. E questo tipo di informazioni tende a fluttuare più di quanto si potrebbe immaginare, in quanto i dipendenti passano tranquillamente le loro attività quotidiane, non pensando di esportare un file CSV da un sistema e di inviarlo tramite posta elettronica a un utente. Si potrebbe anche essere sorpresi di quanto spesso i dipendenti inviano messaggi di posta elettronica contenenti informazioni sulla carta di credito o bancarie senza considerare le conseguenze.
+
+## <a name="permissions"></a>Autorizzazioni
+
+I membri del team conformità addetti alla creazione dei criteri di prevenzione della perdita dei dati necessitano delle autorizzazioni per accedere al Centro sicurezza e conformità. Per impostazione predefinita, l'amministratore del tenant avrà accesso a questa posizione e potrà fornire ai responsabili della conformità e ad altre persone l'accesso al Centro sicurezza e conformità, senza concedere tutte le autorizzazioni di un amministratore del tenant. Per farlo, è consigliabile:
+  
+1. Creare un gruppo in Microsoft 365 e aggiungervi i responsabili della conformità.
+    
+2. Creare un gruppo di ruoli nella pagina **Autorizzazioni** del Centro sicurezza e conformità. 
+
+3. Durante la creazione del gruppo di ruoli, utilizzare la sezione **Scegli ruoli** per aggiungere il ruolo seguente al gruppo di ruoli: **gestione della conformità DLP**.
+    
+4. Usare la sezione **Scegli membri** per aggiungere il gruppo di Microsoft 365 creato in precedenza al gruppo di ruoli.
+
+È anche possibile creare un gruppo di ruoli con privilegi di sola visualizzazione per i report e i criteri DLP concedendo il ruolo di **solo visualizzazione per la gestione della conformità DLP**.
+
+Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+  
+Queste autorizzazioni sono necessarie solo per creare e applicare criteri di prevenzione della perdita dei dati. L'applicazione dei criteri non richiede l'accesso al contenuto.
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Come vengono rilevate informazioni riservate da DLP
 

@@ -14,14 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Per ulteriori informazioni, vedere Information Governance in Microsoft 365.
-ms.openlocfilehash: d8e0c252bfe0b5b5c3361e67b8327d04951eb9c5
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: 526f91eb70ec2e249d2f8b83c4238f0f43584db1
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641609"
+ms.locfileid: "46649143"
 ---
 # <a name="manage-information-governance"></a>Gestire la governance delle informazioni
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Utilizzare le funzionalità di governance delle informazioni di Microsoft per gestire i dati per conformità o requisiti normativi.
 
@@ -42,5 +44,5 @@ Per gestire il contenuto di alto valore per gli obblighi legali, aziendali o nor
 
 |Funzionalità|Quali sono i problemi risolti?|Per iniziare|
 |:------|:------------|---------------------|:----------------------------|
-|[Gestione record](records-management.md)| Una singola soluzione per la posta elettronica e i documenti che incorporano le pianificazioni e i requisiti di conservazione in un piano di file che gestisce la conservazione, la dichiarazione dei record e la disposizione per supportare il ciclo di vita completo del contenuto. <br /><br />Scenario di esempio: [disposizione dei record](disposition.md#disposition-of-records)|[Informazioni sui record](records.md) |
+|[Gestione record](records-management.md)| Una singola soluzione per la posta elettronica e i documenti che incorporano le pianificazioni e i requisiti di conservazione in un piano di file che gestisce la conservazione, la dichiarazione dei record e la disposizione per supportare il ciclo di vita completo del contenuto. <br /><br />Scenario di esempio: [disposizione dei record](disposition.md#disposition-of-records)|[ Informazioni sui record](records.md) |
 

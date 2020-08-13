@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
-ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 25e1c73a58ffc89ecf4723fbb7cb872ff7d16071
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577849"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653414"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -129,8 +129,7 @@ Un 'organizzazione di Office 365 ATP può usare Esplora minacce nel Centro sicur
 
 Ad esempio, Gabriela Laureano (glaureano@contoso.com) è interessata al birdwatching, aderisce alla lista di distribuzione birdwatchers@fabrikam.com e invia il messaggio seguente alla lista:
 
-> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> 
-**Oggetto:** ottimo avvistamento dei Jays blu sula cima del Monte. Rainier questa settimana <br/><br/>Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier?
+> **Da:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **A:** Elenchi di Discussione dei Birdwatcher \<birdwatchers@fabrikam.com\> <br/> **Oggetto:** ottimo avvistamento dei Jays blu sula cima del Monte Rainier questa settimana <br/><br/>Qualche utente desidera vedere la visualizzazione di questa settimana dal monte Rainier?
 
 Il server della lista di distribuzione riceve il messaggio, ne modifica il contenuto e lo riproduce ai membri della lista. Il messaggio riprodotto ha lo stesso indirizzo del mittente (glaureano@contoso.com), ma è stato modificato aggiungendo un tag alla riga dell'oggetto e un piè di pagina in fondo. Questo tipo di modifica è comune nelle liste di distribuzione e può generare falsi positivi.
 

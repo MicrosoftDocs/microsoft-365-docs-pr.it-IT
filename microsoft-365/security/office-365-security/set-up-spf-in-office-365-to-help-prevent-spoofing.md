@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come aggiornare un record DNS (Domain Name Service) per usare un Sender Policy Framework (SPF) con il dominio personalizzato in Office 365.
-ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: dfbd5f7091420d079f91b93f7c581ed69572b7bd
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632140"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656612"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurazione di SPF per evitare lo spoofing
 
@@ -61,7 +61,9 @@ Raccogliere le seguenti informazioni:
 
 1. Assicurarsi di avere familiarità con la sintassi SFP nella tabella seguente.
 
-   ||Se si sta utilizzando...|Comune per i clienti?|Aggiungere...|
+   ****
+
+   |<!-- -->|Se si sta utilizzando...|Comune per i clienti?|Aggiungere...|
    |---|---|---|---|
    |1|Qualsiasi sistema di posta elettronica (obbligatorio)|Comune. Tutti i record TXT SPF devono iniziare con questo valore|v=spf1|
    |2|Exchange Online|Comune|include:spf.protection.outlook.com|
@@ -70,6 +72,7 @@ Raccogliere le seguenti informazioni:
    |5|Un sistema di posta elettronica di terze parti|Non comune|Includere:\<domain name\>  <br/> Dove il nome di dominio è il nome di dominio del sistema di posta elettronica di terze parti.|
    |6|Sistema di posta locale. Ad esempio, di Exchange Online Protection insieme a un altro sistema di posta elettronica|Non comune| Utilizzarne uno per ogni sistema di posta elettronica aggiuntivo: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  Includere:\<_domain name_\>  <br/>  Dove il valore per \<_IP address_\> è l'indirizzo IP del sistema di posta elettronica e \<_domain name_\> è il nome di dominio dell'altro sistema di posta elettronica che invia un messaggio per conto del dominio.|
    |7|Qualsiasi sistema di posta elettronica (obbligatorio)|Comune. Tutti i record TXT SPF finiscono con questo valore|\<_enforcement rule_\>  <br/> Può trattarsi di uno dei vari valori. Si consiglia di utilizzare **-tutti**.|
+   |
 
 2. Se non è già stato fatto, costituire il record TXT SPF utilizzando la sintassi della tabella:
 
