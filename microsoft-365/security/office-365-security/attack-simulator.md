@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come utilizzare Attack Simulator per eseguire attacchi di phishing e di password simulati nell'organizzazione Microsoft 365 E5 o ATP Plan 2.
-ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 6aa1d2027915caeffe2c20ba8f75f3658c336dbe
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587569"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653222"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulatore di attacco in ATP
 
@@ -114,7 +114,10 @@ Se si intende utilizzare uno dei modelli incorporati o creare il messaggio di po
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Tutti gli URL sono intenzionalmente http, non HTTPS.</li><li>Un servizio di reputazione URL potrebbe identificare uno o più di questi URL come non sicuri. Controllare la disponibilità dell'URL nei Web browser supportati prima di utilizzare l'URL in una campagna di phishing.</li></ul>
+     >
+     > - Tutti gli URL sono intenzionalmente http, non HTTPS.
+     >
+     > - Un servizio di reputazione URL potrebbe identificare uno o più di questi URL come non sicuri. Controllare la disponibilità dell'URL nei Web browser supportati prima di utilizzare l'URL in una campagna di phishing.
 
    - **URL della pagina di destinazione personalizzata**: immettere una pagina di destinazione facoltativa in cui gli utenti vengono eseguiti se fanno clic sul collegamento di phishing e immettono le proprie credenziali. Questo collegamento sostituisce la pagina di destinazione predefinita. Ad esempio, se si dispone di un training di sensibilizzazione interno, è possibile specificare l'URL qui.
 
@@ -188,7 +191,12 @@ Se si intende utilizzare uno dei modelli incorporati o creare il messaggio di po
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Tutti gli URL sono intenzionalmente http, non HTTPS.</li><li>Un servizio di reputazione URL potrebbe identificare uno o più di questi URL come non sicuri. Controllare la disponibilità dell'URL nei Web browser supportati prima di utilizzare l'URL in una campagna di phishing.</li><li>È necessario selezionare un URL. Per le campagne di <b>phishing (Attachment)</b> , è possibile rimuovere il collegamento dal corpo del messaggio nel passaggio successivo (in caso contrario, il messaggio conterrà sia un collegamento <b>che</b> un allegato).</li></ul>
+     >
+     > - Tutti gli URL sono intenzionalmente http, non HTTPS.
+     >
+     > - Un servizio di reputazione URL potrebbe identificare uno o più di questi URL come non sicuri. Controllare la disponibilità dell'URL nei Web browser supportati prima di utilizzare l'URL in una campagna di phishing.
+     >
+     > - È necessario selezionare un URL. Per le campagne di **phishing (Attachment)** , è possibile rimuovere il collegamento dal corpo del messaggio nel passaggio successivo (in caso contrario, il messaggio conterrà sia un collegamento **che** un allegato).
 
    - **Tipo di allegato**: questa impostazione è disponibile solo nelle campagne di **phishing (allegato) di Spear** . Fare clic sull'elenco a discesa e selezionare **. DOCX** o **. File PDF** dall'elenco.
 

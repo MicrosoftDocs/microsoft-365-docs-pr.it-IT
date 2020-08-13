@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle impostazioni del filtro di posta indesiderata (Advanced Spam Filter) disponibili nei criteri di protezione da posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352477"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653342"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Impostazioni avanzate per il filtro della posta indesiderata in EOP
 
@@ -33,7 +33,12 @@ ms.locfileid: "44352477"
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online o in organizzazioni di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, le impostazioni del filtro di posta indesiderata avanzate nei criteri di protezione da posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri di filtro contenuto) consentono agli amministratori di contrassegnare i messaggi come posta indesiderata ASF specifica specificamente queste proprietà perché sono comunemente presenti in posta indesiderata. A seconda della proprietà, i rilevamenti ASF contrassegnano il messaggio come **posta indesiderata** o **posta indesiderata con elevata attendibilità**.
 
 > [!NOTE]
-> L'abilitazione di una o più impostazioni ASF è un approccio aggressivo al filtro di posta indesiderata. Non è possibile segnalare i messaggi filtrati da ASF come falsi positivi. È possibile identificare i messaggi che sono stati filtrati tramite ASF: <ul><li>Notifiche di quarantena della posta indesiderata degli utenti finali periodiche.</li><li>La presenza di messaggi filtrati in quarantena.</li><li>I `X-CustomSpam:` campi X-header specifici che vengono aggiunti ai messaggi come descritto in questo argomento.</li></ul>
+> L'abilitazione di una o più impostazioni ASF è un approccio aggressivo al filtro di posta indesiderata. Non è possibile segnalare i messaggi filtrati da ASF come falsi positivi. È possibile identificare i messaggi che sono stati filtrati tramite ASF:
+> - Notifiche di quarantena della posta indesiderata degli utenti finali periodiche.
+>
+> - La presenza di messaggi filtrati in quarantena.
+>
+> - I `X-CustomSpam:` campi X-header specifici che vengono aggiunti ai messaggi come descritto in questo argomento.
 
 Nelle sezioni seguenti vengono descritte le impostazioni e le opzioni ASF disponibili nei criteri di protezione da posta indesiderata nel centro sicurezza & conformità e in Exchange Online PowerShell o standalone EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) e [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
@@ -58,9 +63,7 @@ Per ogni impostazione ASF, sono disponibili le seguenti opzioni nei criteri di p
   - La modalità di test non è disponibile per le seguenti impostazioni ASF:
 
     - **Filtro ID mittente condizionale: errore** irreversibile (*MarkAsSpamFromAddressAuthFail*)
-
     - Backscatter del rapporto di **mancato recapito**(*MarkAsSpamNdrBackscatter*)
-
     - **Record SPF: errore** irreversibile (*MarkAsSpamSpfRecordHardFail*)
 
   - La stessa azione in modalità test viene applicata a *tutte* le impostazioni ASF che sono impostate su **test**. Non è possibile configurare diverse azioni in modalità test per diverse impostazioni ASF.
@@ -69,9 +72,10 @@ Per ogni impostazione ASF, sono disponibili le seguenti opzioni nei criteri di p
 
 Le seguenti impostazioni ASF consentono di impostare il livello di probabilità di posta indesiderata dei messaggi rilevati su 5 o 6, che corrisponde al verdetto del filtro **posta indesiderata** e all'azione corrispondente nei criteri di protezione da posta indesiderata.
 
-||||
+****
+
+|Impostazione dei criteri di protezione da posta indesiderata|Descrizione|X-header aggiunto|
 |---|---|---|
-|**Impostazione dei criteri di protezione da posta indesiderata**|**Descrizione**|**X-header aggiunto**|
 |**Collegamenti immagini a siti remoti** <br/><br/> *IncreaseScoreWithImageLinks*|I messaggi che contengono `<Img>` collegamenti ai tag HTML per i siti remoti (ad esempio, tramite http) sono contrassegnati come posta indesiderata.|`X-CustomSpam: Image links to remote sites`|
 |**Reindirizzamento URL ad altra porta** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Il messaggio che contiene collegamenti ipertestuali che reindirizzano alle porte TCP diverse da 80 (HTTP), 8080 (HTTP alternativo) o 443 (HTTPS) sono contrassegnati come posta indesiderata.|`X-CustomSpam: URL redirect to other port`|
 |**Indirizzo IP numerico in URL** <br/><br/> *IncreaseScoreWithNumericIps*|I messaggi che contengono URL basati su numeri (in genere, gli indirizzi IP) sono contrassegnati come posta indesiderata.|`X-CustomSpam: Numeric IP in URL`|
@@ -82,9 +86,10 @@ Le seguenti impostazioni ASF consentono di impostare il livello di probabilità 
 
 Le seguenti impostazioni ASF consentono di impostare su 9 il livello SCL dei messaggi rilevati, che corrisponde al verdetto del filtro per la **posta indesiderata** e all'azione corrispondente nei criteri di protezione da posta indesiderata.
 
-||||
+****
+
+|Impostazione dei criteri di protezione da posta indesiderata|Descrizione|X-header aggiunto|
 |---|---|---|
-|**Impostazione dei criteri di protezione da posta indesiderata**|**Descrizione**|**X-header aggiunto**|
 |**Messaggi vuoti** <br/><br/> *MarkAsSpamEmptyMessages*|Messaggi senza oggetto, nessun contenuto nel corpo del messaggio e nessun allegato sono contrassegnati come posta indesiderata con elevata sicurezza.|`X-CustomSpam: Empty Message`|
 |**JavaScript o VBScript in HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|I messaggi che utilizzano JavaScript o Visual Basic Script Edition in HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Questi linguaggi di script vengono utilizzati nei messaggi di posta elettronica per determinare l'esecuzione automatica di azioni specifiche.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Tag Frame o IFrame in HTML** <br><br/> *MarkAsSpamFramesInHtml*|I messaggi che contengono `<frame>` o i `<iframe>` tag HTML sono contrassegnati come posta indesiderata con elevata sicurezza. <br/><br/> Questi tag vengono utilizzati nei messaggi di posta elettronica per formattare la pagina per la visualizzazione di testo o grafica.|`X-CustomSpam: IFRAME or FRAME in HTML`|

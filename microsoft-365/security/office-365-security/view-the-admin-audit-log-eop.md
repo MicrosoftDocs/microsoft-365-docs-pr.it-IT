@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Gli amministratori possono ottenere informazioni su come visualizzare e cercare il log di controllo dell'amministratore in standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613325"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653498"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Visualizzare un log di controllo dell'amministratore in Exchange Online Protection autonomo
 
@@ -26,7 +26,12 @@ Nelle organizzazioni standalone di Exchange Online Protection (EOP) prive di cas
 Il registro di controllo dell'amministratore registra azioni specifiche, basate sui cmdlet di PowerShell di EOP autonomo, eseguite dagli amministratori e dagli utenti a cui sono stati assegnati privilegi amministrativi. Le voci nel registro di controllo dell'amministratore forniscono informazioni su quali cmdlet sono stati eseguiti, quali parametri sono stati utilizzati, chi ha eseguito il cmdlet e quali oggetti sono stati interessati.
 
 > [!NOTE]
-> <ul><li>La registrazione di controllo dell'amministratore è abilitata per impostazione predefinita e non è possibile disabilitarla.</li><li>Il registro di controllo dell'amministratore non registra le azioni in base ai cmdlet che iniziano con i verbi **Get**, **Search**o **test**.</li><li>Le voci del registro di controllo vengono conservate per 90 giorni. Quando una voce è più vecchia di 90 giorni, viene eliminata</li></ul>
+>
+> - La registrazione di controllo dell'amministratore è abilitata per impostazione predefinita e non è possibile disabilitarla.
+>
+> - Il registro di controllo dell'amministratore non registra le azioni in base ai cmdlet che iniziano con i verbi **Get**, **Search**o **test**.
+>
+> - Le voci del registro di controllo vengono conservate per 90 giorni. Quando una voce è più vecchia di 90 giorni, viene eliminata
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -133,9 +138,10 @@ Per visualizzare il contenuto dei campi **CmdletParameters** e **ModifiedPropert
 
 Ciascuna voce del registro di controllo contiene le informazioni descritte nella tabella seguente. Il registro di controllo contiene una o più voci.
 
-|||
+****
+
+|Campo|Descrizione|
 |---|---|
-|**Campo**|**Descrizione**|
 |`RunspaceId`|Questo campo viene utilizzato internamente da EOP.|
 |`ObjectModified`|Questo campo contiene l'oggetto modificato dal cmdlet specificato nel `CmdletName` campo.|
 |`CmdletName`|Questo campo contiene il nome del cmdlet eseguito dall'utente nel `Caller` campo.|

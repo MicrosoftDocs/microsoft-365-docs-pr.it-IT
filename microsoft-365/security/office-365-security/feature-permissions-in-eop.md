@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Informazioni sulle autorizzazioni necessarie per le attività in standalone Exchange Online Protection
-ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 2f653fbae49087b8fc1ebc3a97586512965df970
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588253"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652898"
 ---
 # <a name="permissions-in-standalone-eop"></a>Autorizzazioni in Exchange Online Protection autonomo
 
@@ -43,9 +43,10 @@ Nella figura che segue viene mostrata la relazione tra utenti, gruppi di ruoli e
 
 Nella tabella seguente sono descritti i gruppi di ruoli disponibili in EOP autonomo.
 
-||||
+****
+
+|Gruppo di ruoli|Descrizione|Ruoli predefiniti assegnati|
 |---|---|---|
-|**Gruppo di ruolo**|**Descrizione**|**Ruoli predefiniti assegnati**|
 |ComplianceManagement|Configurare e gestire le impostazioni di conformità all'interno dell'organizzazione, inclusa la prevenzione della perdita di dati (DLP) se l'abbonamento ha funzionalità DLP. <br/><br/> I membri del ruolo [amministratore conformità](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) in Azure ad ottengono automaticamente le autorizzazioni di questo gruppo di ruoli.|Registri di controllo <br/><br/> Amministrazione della conformità <br/><br/> Information Rights Management <br/><br/> Gestione della conservazione <br/><br/> Registri di controllo di sola visualizzazione <br/><br/> Configurazione solo visualizzazione <br/><br/> Destinatari solo visualizzazione|
 |ContentExplorerContentViewer|Non utilizzata.|Visualizzatore contenuto di classificazione dei dati|
 |ContentExplorerListViewer|Non utilizzata.|Visualizzatore elenco di classificazione dei dati|
@@ -70,9 +71,10 @@ Se i gruppi di ruoli incorporati in Exchange Online non corrispondono alla mansi
 
 I ruoli incorporati disponibili in EOP autonomo sono descritti nella tabella seguente.
 
-||||
+****
+
+|Ruolo * *|Descrizione|Assegnazioni predefinite del gruppo di ruoli|
 |---|---|---|
-|**Ruolo**|**Descrizione**|**Assegnazioni predefinite del gruppo di ruoli**|
 |AntiMalware|Visualizzare e modificare la configurazione e i report per le funzionalità anti-malware.|OrganizationManagement <br/><br/> SecurityAdministrator|
 |AntiSpam|Visualizzare e modificare la configurazione e i report per le funzionalità di protezione da posta indesiderata.|OrganizationManagement <br/><br/> SecurityAdministrator|
 |Registri di controllo|Eseguire una ricerca nel registro di controllo dell'amministratore e visualizzare i risultati.|ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> SecurityAdministrator|
@@ -123,9 +125,10 @@ Quando si crea un utente nell'interfaccia di amministrazione di Microsoft 365, �
 
 Nella tabella seguente sono elencati i ruoli di Microsoft 365 e i gruppi di ruoli standalone di EOP a cui corrispondono. Per ulteriori informazioni su questi ruoli, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
-|||
+****
+
+|Ruolo Microsoft 365|Gruppo di ruoli di EOP|
 |---|---|
-|**Ruolo Microsoft 365**|**Gruppo di ruoli di EOP**|
 |Amministratore di Exchange|OrganizationManagement|
 |Amministratore globale|OrganizationManagement <br/><br/> **Nota**: il ruolo di amministratore globale e il gruppo di ruoli OrganizationManagement sono legati insieme utilizzando uno speciale gruppo di ruoli amministratore dell'azienda. Il gruppo di ruoli amministratore della società è gestito internamente e non può essere modificato direttamente.|
 |Amministratore password|HelpDesk|

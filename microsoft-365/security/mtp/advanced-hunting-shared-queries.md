@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fd497ce1733dd4770b9bbc8f699bbccf3237fbd
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: d9dcd07a4fc63130d015bf31270d1de9212f9a53
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781518"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649188"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Usare le query condivise nella ricerca avanzata
 
@@ -59,6 +59,9 @@ ms.locfileid: "43781518"
 
 2. Selezionare **Elimina** per confermare l'eliminazione. In alternativa, selezionare **Rinomina** e immettere un nuovo nome per la query.
 
+## <a name="create-a-direct-link-to-a-query"></a>Creare un collegamento diretto a una query
+Per generare un collegamento che apra la query direttamente nell'editor di query di ricerca avanzata, finalizzare la query e selezionare **Condividi collegamento**.
+
 ## <a name="access-queries-in-the-github-repository"></a>Accedere alle query nel repository GitHub  
 I ricercatori della sicurezza Microsoft condividono regolarmente query di ricerca avanzata in un [repository pubblico designato in GitHub](https://aka.ms/hunting-queries). È possibile collaborare a questo repository. Per collaborare, [iscriversi a GitHub gratuitamente](https://github.com/).
 
@@ -69,6 +72,6 @@ I ricercatori della sicurezza Microsoft condividono regolarmente query di ricerc
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Usare i risultati delle query](advanced-hunting-query-results.md)
-- [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)
+- [Cercare tra i dispositivi, i messaggi di posta elettronica, le app e le identità](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
 - [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)

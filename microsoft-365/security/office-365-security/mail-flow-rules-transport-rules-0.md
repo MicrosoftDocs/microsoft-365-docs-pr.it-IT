@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: È possibile utilizzare le regole del flusso di posta (regole di trasporto) per identificare ed eseguire azioni sui messaggi che transitano nell'organizzazione.
-ms.openlocfilehash: 8eb4b805065ef1e279c5bbdab17a86b29aacc17b
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6a70d5a23e3d65788143ea067a4702268e32f6ea
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209692"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653689"
 ---
-# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regole del flusso di posta (regole di trasporto) in EOP autonomo
+# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regole del flusso di posta (regole di trasporto) in Exchange Online Protection autonomo
 
 Nelle organizzazioni autonome di Exchange Online Protection (EOP) prive di cassette postali di Exchange Online, è possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per identificare ed eseguire azioni sui messaggi che transitano nell'organizzazione.
 
@@ -71,19 +71,24 @@ Per ulteriori informazioni sulle azioni delle regole del flusso di posta disponi
 
 Nella tabella seguente è illustrato come in una regola vengono gestite più condizioni, valori della condizione, eccezioni e azioni.
 
-|**Componente**|**Logica**|**Comments**|
-|:-----|:-----|:-----|
+****
+
+|Componente|Logica|Comments|
+|---|---|---|
 |Più condizioni|E|Un messaggio deve corrispondere a tutte le condizioni della regola. Se occorre una condizione di corrispondenza o un'altra, è possibile utilizzare regole distinte per ogni condizione. Ad esempio, per aggiungere la stessa dichiarazione di non responsabilità nei messaggi con allegati e nei messaggi con testo specifico, è possibile creare una regola per ogni condizione. Nell'interfaccia di amministrazione di Exchange, è possibile copiare facilmente una regola.|
 |Una condizione con più valori|OPPURE|Le stesse condizioni consentono di specificare più valori. Il messaggio deve corrispondere a uno qualsiasi (non tutti) dei valori specificati. Ad esempio, se in un messaggio di posta elettronica l'oggetto è Informazioni sul prezzo delle azioni e la condizione **L'oggetto include una o più parole seguenti** è configurata per la corrispondenza alle parole Contoso o azioni, la condizione è soddisfatta perché l'oggetto contiene almeno uno dei valori specificati.  |
 |Più eccezioni|OPPURE|Se un messaggio corrisponde a una qualsiasi delle eccezioni, le azioni non vengono applicate al messaggio. Quest'ultimo non deve necessariamente corrispondere a tutte le eccezioni.|
 |Più azioni|E|I messaggi che corrispondono alle condizioni di una regola prendono tutte le azioni che sono specificate dalla regola. Ad esempio, se vengono selezionate le azioni **Anteponi all'oggetto del messaggio** e **Aggiungi destinatari alla casella Ccn**, verranno applicate entrambe al messaggio.<br/><br/> Tenere presente che alcune azioni come **Elimina il messaggio senza inviare alcuna notifica** impediscono l'applicazione a un messaggio delle regole successive. Altre azioni quali **Inoltra il messaggio** non consentono azioni aggiuntive.<br/><br/> È inoltre possibile impostare un'azione su una regola in modo che quando quella regola viene applicata, le regole successive non vengono applicate al messaggio.|
+|
 
 ### <a name="mail-flow-rule-properties"></a>Proprietà regola flusso di posta
 
 Nella tabella seguente vengono descritte le proprietà della regola che sono disponibili nelle regole di flusso della posta.
 
-|**Nome proprietà nell'interfaccia di amministrazione di Exchange**|**Nome del parametro in PowerShell**|**Descrizione**|
-|:-----|:-----|:-----|
+****
+
+|Nome proprietà nell'interfaccia di amministrazione di Exchange|Nome del parametro in PowerShell|Descrizione|
+|---|---|---|
 |**Priorità**|_Priority_|Indica in che ordine le regole vengono applicate ai messaggi. La priorità predefinita si basa sul momento di creazione della regola; le regole meno recenti hanno una priorità superiore rispetto a quelle più nuove, mentre le regole con priorità superiore vengono elaborate prima delle regole con priorità inferiore. <br/><br/> La priorità della regola vengono modificate nell'interfaccia di amministrazione di Exchange spostando la regola verso l'alto o verso il basso nell'elenco delle regole. In PowerShell, impostare il numero di priorità (0 è la priorità più alta). <br/><br/> Ad esempio, in caso di una regola per rifiutare i messaggi che includono un numero di carta di credito e un'altra che richiede l'approvazione, è possibile far applicare per prima la regola per il rifiuto e interrompere l'applicazione delle altre regole.  |
 |**Modalità**|_Mode_|È possibile specificare se la regola deve elaborare i messaggi immediatamente oppure se le regole devono essere testate senza coinvolgere il recapito del messaggio (con o senza suggerimenti sui criteri DLP). <br/><br/> I suggerimenti per i criteri presentano una breve nota in Outlook o Outlook sul Web che fornisce informazioni sulle possibili violazioni dei criteri alla persona che sta creando il messaggio. Per ulteriori informazioni, vedere **Suggerimenti per i criteri**. <br/><br/> Per ulteriori informazioni sulle modalità, vedere **Testare una regola del flusso di posta elettronica**.|
 |**Attiva la regola in data** <br/><br/> **Disattiva la regola in data**|_ActivationDate_ <br/> _ExpiryDate_| Specifica l'intervallo di date in cui la data è attiva.|
@@ -92,6 +97,7 @@ Nella tabella seguente vengono descritte le proprietà della regola che sono dis
 |**Trova l'indirizzo del mittente nella parte seguente del messaggio**|_SenderAddressLocation_|Se la regola usa condizioni o eccezioni che esaminano l'indirizzo e-mail del mittente, è possibile cercare il valore nell'intestazione del messaggio, nella busta del messaggio o in entrambi i punti.|
 |**Arrestare l'elaborazione di più regole**|_SenderAddressLocation_|Si tratta di un'azione per la regola, ma ha l'aspetto di una proprietà nell'interfaccia di amministrazione di Exchange. È possibile scegliere di interrompere l'applicazione di ulteriori regole a un messaggio dopo che una regola elabora un messaggio.|
 |**Commenti**|_Comments_|È possibile immettere commenti descrittivi sulla regola.|
+|
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Modalità di applicazione delle regole del flusso di posta ai messaggi
 
@@ -103,8 +109,10 @@ Ogni regola offre inoltre l'opzione di arrestare l'elaborazione di più regole i
 
 Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nella seguente tabella sono riportati i tipi di messaggio che possono essere elaborati dalle regole del flusso di posta.
 
-|**Tipo di messaggio**|**È possibile applicare una regola?**|
-|:-----|:-----|
+****
+
+|Tipo di messaggio|È possibile applicare una regola?|
+|---|---|
 |**Messaggi regolari**: messaggi che contengono un solo corpo RTF (Rich Text Format), HTML o testo normale o un set di corpi dei messaggi costituito da più parti o alternativa.|Sì|
 |**Crittografia messaggi di office 365**: messaggi crittografati tramite crittografia dei messaggi di Office 365 in Office 365. Per ulteriori informazioni, vedere [Crittografia in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <br/><br/> Affinché una regola possa esaminare o modificare i contenuti di un messaggio crittografato, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**Messaggi crittografati (S/MIME)**|Le regole possono accedere solo alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <br/><br/> Le regole con le condizioni che richiedono l'analisi del contenuto del messaggio oppure le azioni che modificano i contenuti del messaggio non possono essere elaborate.|
@@ -113,6 +121,7 @@ Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nell
 |**Messaggi di messaggistica unificata**: messaggi creati o elaborati dal servizio di messaggistica unificata, ad esempio segreteria telefonica, fax, notifiche di chiamata senza risposta e messaggi creati o inoltrati tramite Microsoft Outlook Voice Access.|Sì|
 |**Messaggi anonimi**: messaggi inviati da mittenti anonimi.|Sì|
 |**Rapporti di lettura**: rapporti generati in risposta alle richieste di conferma di lettura da parte dei mittenti. I report di lettura dispongono di una classe messaggio `IPM.Note*.MdnRead` o `IPM.Note*.MdnNotRead` .|Sì|
+|
 
 ## <a name="what-else-should-i-know"></a>Informazioni aggiuntive
 

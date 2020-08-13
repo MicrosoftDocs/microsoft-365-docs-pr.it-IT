@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049697"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649392"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -179,6 +179,6 @@ Per altre informazioni sul linguaggio delle query di Esplora dati e sugli operat
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Usare i risultati delle query](advanced-hunting-query-results.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
-- [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)
+- [Cercare tra i dispositivi, i messaggi di posta elettronica, le app e le identità](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
 - [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)

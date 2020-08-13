@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c958101e1f3268c706c27df6fc9e21e9914b3f46
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 041e7dc89ddd42326ce0a5040364306e26fd2413
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530284"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653390"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Prerequisiti per Microsoft Managed Desktop
 
@@ -48,7 +48,7 @@ Microsoft Managed Desktop richiede determinate opzioni di licenza per funzionare
 
 |Opzione di licenza |Disponibile in *uno qualsiasi* di questi prodotti di licenza |Utilizzo di Microsoft Managed Desktop|
 |-------------|-------------|-------------|
-|Azure Active Directory Premium P1     |-Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Azure Active Directory Premium P1|  Fornisce l'accesso ai servizi cloud Microsoft; consente di registrare i dispositivi in Autopilot      |
+|Azure Active Directory Premium P2     |-Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Azure Active Directory Premium P2|  Fornisce l'accesso ai servizi cloud Microsoft; consente di registrare i dispositivi in Autopilot      |
 |Microsoft Intune | -Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Microsoft Intune  |  Necessario per registrare i dispositivi, distribuire gli aggiornamenti e gestire i dispositivi       |
 |Windows 10 Enterprise  |-Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E3<br>-Windows 10 Enterprise E5 | Fornisce le caratteristiche dell'organizzazione di Windows 10       |
 |Microsoft Defender Advanced Threat Protection | -Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E5<br>-Protezione avanzata dalle minacce di Microsoft Defender   |  Fornisce il rilevamento, il monitoraggio, l'avviso e la risposta alle minacce  |

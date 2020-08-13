@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo viene illustrato come utilizzare collegamenti sicuri per proteggere l'organizzazione da tentativi di phishing e altri attacchi.
-ms.openlocfilehash: 07ec9611a2dca7dff7daf3726b94b0aec638b17c
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5baf18c249d67551c7ae1eeb643a401ea16d2b6c
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754749"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656982"
 ---
 # <a name="atp-safe-links"></a>Collegamenti sicuri di ATP
 
@@ -65,11 +65,14 @@ Quando [si aggiungono nuove funzionalità a ATP](office-365-atp.md#new-features-
 
 Verificare **inoltre di disporre delle autorizzazioni necessarie**. Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un ruolo appropriato. Alcuni esempi sono descritti nella tabella seguente:
 
+****
+
 |Ruolo|Dove/come assegnato|
-|---------|---------|
+|---|---|
 |amministratore globale|La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .|
 |Amministratore della sicurezza|Interfaccia di amministrazione di Azure Active Directory ( <https://aad.portal.azure.com> )|
 |Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di Exchange ( <https://outlook.office365.com/ecp> ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Come assicurarsi che la protezione di collegamenti sicuri di ATP sia sul posto
 
@@ -81,10 +84,13 @@ Dopo che i criteri per i collegamenti sicuri di ATP sono sul posto, il team di s
 
 Nella tabella seguente vengono descritti alcuni scenari di esempio in cui la protezione dei collegamenti sicuri di ATP potrebbe o meno essere sul posto. In tutti questi casi, si presuppone che l'organizzazione disponga di Office 365 Enterprise E5.
 
+****
+
 |Scenario di esempio|La protezione di collegamenti sicuri ATP è applicabile in questo caso?|
-|:-----|:-----|
+|---|---|
 |Jean è un membro di un gruppo che dispone di criteri dei collegamenti sicuri di ATP che coprono gli URL nella posta elettronica e nei documenti di Office. Jean apre una presentazione di PowerPoint inviata da un utente e quindi fa clic su un URL nella presentazione.|Sì. I criteri per i collegamenti sicuri di ATP definiti si applicano al gruppo di Jean, alla posta elettronica di Jean e ai documenti Word, Excel, PowerPoint o Visio che Jean apre, purché Jean sia connesso e utilizzi Microsoft 365 Apps for Enterprise su dispositivi Windows, iOS o Android.|
 |Nell'organizzazione di Chris, nessun amministratore globale o di sicurezza ha ancora definito criteri di collegamenti sicuri ATP. Chris riceve un messaggio di posta elettronica contenente un URL di un sito Web malintenzionato. Chris non è a conoscenza che l'URL è dannoso e fa clic sul collegamento.|No. Il criterio predefinito che include gli URL per tutti gli utenti dell'organizzazione deve essere definito in modo che la protezione sia sul posto.|
 |Nell'organizzazione di Pat, nessun amministratore globale o di sicurezza ha ancora definito o modificato i criteri per i collegamenti sicuri ATP. Pat apre un documento di Word e fa clic su un URL nel file.|No. È necessario definire un criterio che includa i documenti di Office in modo che la protezione sia sul posto. Vedere [configurare i criteri dei collegamenti sicuri di ATP in Office 365](set-up-atp-safe-links-policies.md).|
 |L'organizzazione di Lee ha un criterio per i collegamenti sicuri di ATP che è `https://tailspintoys.com` elencato come sito Web bloccato. Lee riceve un messaggio di posta elettronica che contiene un URL `https://tailspintoys.com/aboutus/trythispage` . Lee fa clic sull'URL.|Dipende dal fatto che l'intero sito e tutte le relative pagine secondarie siano inclusi nell'elenco degli URL bloccati. Vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-atp.md).|
 |Jamie, collega di Jean, invia un messaggio di posta elettronica a Jean, non sapendo che l'indirizzo di posta elettronica contiene un URL dannoso.|Dipende dal fatto che i criteri per i collegamenti sicuri di ATP sono definiti per la posta elettronica inviata all'interno dell'organizzazione. Vedere [configurare i criteri dei collegamenti sicuri di ATP in Office 365](set-up-atp-safe-links-policies.md).|
+|

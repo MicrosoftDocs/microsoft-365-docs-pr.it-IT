@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Informazioni sull'interfaccia di gestione Web in standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: d5753f687461a5495c2431db687263d7211bcbf5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616999"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652910"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Interfaccia di amministrazione di Exchange Online Protection autonomo
 
@@ -80,9 +80,10 @@ Le schede rappresentano il secondo livello di esplorazione. Ciascuna area funzio
 
 La selezione della maggior parte delle schede consente di visualizzare una barra degli strumenti. che include icone che eseguono un'azione specifica. Nella tabella seguente sono descritte le icone e le loro azioni.
 
-||||
+****
+
+|Icona|Nome|Azione|
 |---|---|---|
-|**Icona**|**Nome**|**Azione**|
 |![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif)|Aggiungi, Nuovo|Utilizzare questa icona per creare un nuovo oggetto. Ad alcune icone è associata una freccia in giù sulla quale si può fare clic per mostrare ulteriori oggetti da creare.|
 |![Icona Modifica](../../media/ITPro-EAC-EditIcon.gif)|Modifica|Utilizzare questa icona per modificare un oggetto.|
 |![Icona Elimina](../../media/ITPro-EAC-DeleteIcon.gif)|Elimina|Utilizzare questa icona per eliminare un oggetto. Ad alcune icone Elimina è associata una freccia in giù su cui si può fare clic per mostrare altre opzioni.|
@@ -124,125 +125,63 @@ Per la migliore esperienza nell'utilizzo di EAC, si consiglia di utilizzare semp
 Le lingue seguenti sono supportate e disponibili per l'interfaccia di amministrazione di Exchange in EOP autonomo.
 
 - Amharico
-
 - Arabo
-
 - Basco (Province basche)
-
 - Bengali (India)
-
 - Bulgaro
-
 - Catalano
-
 - Cinese (semplificato)
-
 - Cinese (tradizionale)
-
 - Croato
-
 - Ceco
-
 - Danese
-
 - Olandese
-
-- Olandese
-
 - Inglese
-
 - Estone
-
 - Filippino (Filippine)
-
 - Finlandese
-
 - Francese
-
 - Gallego
-
 - Tedesco
-
 - Greco
-
 - Gujarati
-
 - Ebraico
-
 - Hindi
-
 - Ungherese
-
 - Islandese
-
 - Indonesiano
-
 - Italiano
-
 - Giapponese
-
 - Kannada
-
 - Kazaco
-
 - Kiswahili
-
 - Coreano
-
 - Lettone
-
 - Lituano
-
 - Malese (Brunei Darussalam)
-
 - Malese (Malesia)
-
 - Malayalam
-
 - Marathi
-
 - Norvegese (Bokmål)
-
 - Norvegese (Nynorsk)
-
 - Oriya
-
 - Persiano
-
 - Polacco
-
 - Portoghese (Brasile)
-
 - Portoghese (Portogallo)
-
 - Rumeno
-
 - Russo
-
 - Serbo (alfabeto cirillico)
-
 - Serbo (alfabeto latino)
-
 - Slovacco
-
 - Sloveno
-
 - Spagnolo
-
 - Svedese
-
 - Tamil
-
 - Telugu
-
 - Tailandese
-
 - Turco
-
 - Ucraino
-
 - Urdu
-
 - Vietnamita
-
 - Gallese

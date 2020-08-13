@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare un elenco di URL bloccati per l'organizzazione utilizzando Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533812"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656648"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di ATP
 
@@ -45,11 +45,14 @@ I [collegamenti sicuri di ATP in Office 365](atp-safe-links.md) utilizzano diver
 
 Per modificare (o definire) i criteri ATP, è necessario essere assegnati a uno dei ruoli descritti nella tabella seguente:
 
+****
+
 |Ruolo|Dove/come assegnato|
-|---------|---------|
+|---|---|
 |amministratore globale|La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .|
 |Amministratore della sicurezza|Interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
 |Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -78,13 +81,15 @@ Quando si aggiungono URL all'elenco, tenere presente quanto segue:
 
 - È possibile includere fino a tre asterischi jolly ( \* ) per URL. Nella tabella seguente sono elencati alcuni esempi di elementi che è possibile immettere e quali sono gli effetti di tali voci.
 
-|Voce di esempio|Cosa fa|
-|:-----|:-----|
-|`contoso.com` o `*contoso.com*`|Blocca il dominio, i sottodomini e i percorsi, ad esempio `https://www.contoso.com` , `https://sub.contoso.com` e`https://contoso.com/abc`|
-|`https://contoso.com/a`|Blocca un sito, `https://contoso.com/a` ma non altri percorsi secondari come`https://contoso.com/a/b`|
-|`https://contoso.com/a*`|Blocca un sito `https://contoso.com/a` e altri percorsi secondari come`https://contoso.com/a/b`|
-|`https://toys.contoso.com*`|Blocca un sottodominio ("giocattoli" in questo caso), ma consente di fare clic su altri URL di dominio (come `https://contoso.com` or `https://home.contoso.com` ).|
+****
 
+|Voce di esempio|Cosa fa|
+|---|---|
+|`contoso.com` o `*contoso.com*`|Blocca il dominio, i sottodomini e i percorsi, ad esempio `https://www.contoso.com` , `https://sub.contoso.com` e `https://contoso.com/abc`|
+|`https://contoso.com/a`|Blocca un sito, `https://contoso.com/a` ma non altri percorsi secondari come `https://contoso.com/a/b`|
+|`https://contoso.com/a*`|Blocca un sito `https://contoso.com/a` e altri percorsi secondari come `https://contoso.com/a/b`|
+|`https://toys.contoso.com*`|Blocca un sottodominio ("giocattoli" in questo caso), ma consente di fare clic su altri URL di dominio (come `https://contoso.com` or `https://home.contoso.com` ).|
+|
 
 > [!NOTE]
 > Per impostazione predefinita, è possibile aggiungere 500 URL all'elenco degli URL bloccati nel criterio predefinito dei collegamenti sicuri ATP di Office 365.

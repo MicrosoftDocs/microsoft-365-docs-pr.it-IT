@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sull'ordine di protezione delle applicazioni in Exchange Online Protection (EOP) e sul modo in cui il valore di priorità nei criteri di protezione determina il criterio applicato.
-ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209440"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653679"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
@@ -33,15 +33,16 @@ Esistono due fattori principali che determinano il criterio applicato a un messa
 
 - **La priorità del tipo di protezione della posta elettronica**: questo ordine non è configurabile ed è descritto nella tabella seguente:
 
-  |||||
+  ****
+
+  |Priority|Protezione della posta elettronica|Category|Dove gestire|
   |---|---|---|---|
-  |**Priorità**|**Protezione della posta elettronica**|**Categoria**|**Dove gestire**|
   |1|Malware|CAT: MALW|[Configurazione dei criteri anti-malware in EOP](configure-anti-malware-policies.md)|
-  |2|Phishing|CAT: PHSH|[Configurazione dei criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
-  |3|Alta probabilità di posta indesiderata|CAT: HSPM|[Configurazione dei criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |2|Phishing|CAT: PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |3|Alta probabilità di posta indesiderata|CAT: HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|CAT: SPOOFING|[Configurare l'intelligence spoof in EOP](learn-about-spoof-intelligence.md)|
-  |5 |Posta indesiderata|CAT: SPM|[Configurazione dei criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
-  |6 |Invio in blocco|CAT: IN BLOCCO|[Configurazione dei criteri di protezione da posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |5 |Posta indesiderata|CAT: SPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |6 |Invio in blocco|CAT: IN BLOCCO|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |7<sup>\*</sup>|Rappresentazione del dominio (utenti protetti)|DIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
   |8<sup>\*</sup>|Rappresentazione utente (domini protetti)|UIMP|[Configurare i criteri anti-phishing ATP](configure-atp-anti-phishing-policies.md)|
   |
@@ -54,10 +55,11 @@ Esistono due fattori principali che determinano il criterio applicato a un messa
 
 Si consideri, ad esempio, i seguenti criteri di anti-phishing ATP **che si applicano agli stessi utenti**e un messaggio identificato come rappresentazione e spoofing degli utenti:
 
-  |||||
+  ****
+
+  |Criteri di anti-phishing ATP|Priority|Rappresentazione utente|Anti-spoofing|
   |---|---|---|---|
-  |**Criteri di anti-phishing ATP**|**Priorità**|**Rappresentazione utente**|**Anti-spoofing**|
-  |Criteri A|1|Attivato|Off|
+  |Criteri A|1|Attivato|Disattivato|
   |Criterio B|2|Disattivato|Attivato|
   |
 

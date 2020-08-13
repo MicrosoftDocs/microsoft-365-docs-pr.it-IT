@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
-ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5da4aad41f5c5f00f65fa1ceb4fc4c0fad773779
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755261"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653042"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 
@@ -44,7 +44,7 @@ Gli amministratori possono utilizzare PowerShell di Exchange Online per disabili
 > [!NOTE]
 > I messaggi provenienti da mittenti che gli utenti hanno aggiunto ai propri elenchi di mittenti attendibili ignoreranno il filtro delle connessioni come parte di EOP (SCL è-1). Per impedire agli utenti di aggiungere voci all'elenco dei mittenti attendibili in Outlook, utilizzare criteri di gruppo come indicato nella sezione [informazioni sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) più avanti in questo argomento. Il filtro dei criteri, il filtro contenuto e i controlli di protezione avanzata dalle minacce (ATP, Advanced Threat Protection) verranno ancora applicati ai messaggi.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Per eseguire queste procedure, è possibile utilizzare solo Exchange Online PowerShell. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -80,9 +80,9 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
+>
 > - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si esegue il comando precedente. Per eliminare questo errore per le operazioni in blocco, aggiungere `-ErrorAction SlientlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
-> 
+>
 > - Anche se si disattiva la regola di posta indesiderata, il filtro posta indesiderata di Outlook (a seconda del modo in cui è configurata) può anche determinare se un messaggio è spam e spostare i messaggi nella cartella posta in arrivo o posta indesiderata in base al verdetto di posta indesiderata e alla raccolta degli elenchi indirizzi attendibili sulla cassetta postale. Per ulteriori informazioni, vedere la sezione informazioni [sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) in questo argomento.
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
@@ -99,9 +99,10 @@ Per verificare la corretta abilitazione o disabilitazione della regola di posta 
 
 La raccolta degli elenchi indirizzi attendibili in una cassetta postale include l'elenco dei mittenti attendibili, l'elenco dei destinatari attendibili e l'elenco dei mittenti bloccati. Per impostazione predefinita, gli utenti possono configurare la raccolta degli elenchi indirizzi attendibili nella propria cassetta postale in Outlook o Outlook sul Web. Gli amministratori possono utilizzare i parametri corrispondenti del cmdlet **Set-MailboxJunkEmailConfiguration** per configurare la raccolta degli elenchi indirizzi attendibili sulla cassetta postale di un utente. Questi parametri sono descritti nella tabella seguente.
 
-|||
+****
+
+|Parametro in Set-MailboxJunkEmailConfiguration|Impostazione di Outlook sul Web|
 |---|---|
-|**Parametro in Set-MailboxJunkEmailConfiguration**|**Impostazione di Outlook sul Web**|
 |_BlockedSendersAndDomains_|**Spostare la posta elettronica da questi mittenti o domini alla cartella posta indesiderata**|
 |_ContactsTrusted_|**Attendibilità della posta elettronica dai contatti personali**|
 |_TrustedListsOnly_|**Solo attendibilità della posta elettronica da indirizzi nei mittenti attendibili e nell'elenco dei domini e nelle liste di distribuzione sicure**|
@@ -143,11 +144,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
+>
 > - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si eseguono i comandi precedenti. Per eliminare questo errore per le operazioni in blocco, aggiungere `-ErrorAction SlientlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
-> 
+>
 > - Anche se la regola di posta indesiderata è disabilitata per la cassetta postale, è comunque possibile configurare la raccolta degli elenchi indirizzi attendibili e il filtro posta indesiderata di Outlook è in grado di spostare i messaggi nella cartella posta in arrivo o posta indesiderata. Per ulteriori informazioni, vedere la sezione informazioni [sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) in questo argomento.
-> 
+>
 > - Il filtro posta indesiderata di Outlook contiene altre impostazioni della raccolta degli elenchi indirizzi attendibili (ad esempio, **aggiunge automaticamente gli utenti che inviano la posta elettronica all'elenco Mittenti attendibili**). Per ulteriori informazioni, vedere [utilizzo dei filtri di posta indesiderata per controllare quali messaggi vengono visualizzati](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo

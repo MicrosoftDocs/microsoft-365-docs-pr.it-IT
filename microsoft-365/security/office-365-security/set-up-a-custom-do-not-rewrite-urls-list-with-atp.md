@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare gli URL bloccati personalizzati per gli utenti e l'elenco di URL non riscritti per un gruppo di utenti nei criteri dei collegamenti sicuri ATP di Office 365.
-ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517474"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656970"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurare un elenco di URL non di riscrittura personalizzato utilizzando collegamenti sicuri di ATP
 
@@ -41,11 +41,12 @@ La protezione dei collegamenti sicuri di ATP utilizza diversi elenchi, tra cui l
 
 Per modificare (o definire) i criteri ATP, è necessario essere assegnati a un ruolo appropriato. Nella tabella seguente sono inclusi alcuni esempi. Per ulteriori informazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-|Ruolo  |Dove/come assegnato  |
-|---------|---------|
-|amministratore globale |La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .         |
-|Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Gestione organizzazione di Exchange Online |Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
+|Ruolo|Dove/come assegnato|
+|---|---|
+|amministratore globale|La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .|
+|Amministratore della sicurezza|Interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -83,9 +84,12 @@ Per modificare (o definire) i criteri ATP, è necessario essere assegnati a un r
 
 Nella tabella seguente sono elencati esempi di elementi che è possibile immettere e quali effetti hanno tali voci.
 
+****
+
 |Voce di esempio|Cosa fa|
-|:-----|:-----|
+|---|---|
 |`contoso.com`|Consente ai destinatari di visitare un sito `https://contoso.com` , ad esempio, ma non sottodomini o percorsi.|
 |`*.contoso.com/*`|Consente ai destinatari di visitare un dominio, sottodomini e percorsi, ad esempio `https://www.contoso.com` ,, `https://www.contoso.com` `https://maps.contoso.com` o `https://www.contoso.com/a` . <br/><br/> Questa voce è intrinsecamente migliore rispetto `*contoso.com*` a quella, perché non include siti potenzialmente fraudolenti, come `https://www.falsecontoso.com` o`https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Consente ai destinatari specifici di visitare un sito `https://contoso.com/a` , ad esempio, ma non i sottopercorsi come`https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Consente ai destinatari specifici di visitare un sito come `https://contoso.com/a` e i sottopercorsi come`https://contoso.com/a/b`|
+|

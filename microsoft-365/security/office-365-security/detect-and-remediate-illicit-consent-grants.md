@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726797"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652958"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecite
 
@@ -54,11 +54,11 @@ Questi attacchi sfruttano un modello di interazione che presuppone che l'entità
 5. Fare clic sul risultato per visualizzare i dettagli dell'attività. Fare clic su **altre informazioni** per ottenere informazioni dettagliate sull'attività. Controllare se IsAdminContent è impostato su true.
 
 > [!NOTE]
-> 
+>
 > La voce del registro di controllo corrispondente viene visualizzata nei risultati della ricerca dopo un evento di 30 minuti fino a 24 ore.
-> 
+>
 > Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Microsoft 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-> 
+>
 > Se questo valore è impostato su true, indica che un utente con accesso amministratore globale può aver concesso l'accesso esteso ai dati. Se questa operazione non è prevista, eseguire le operazioni necessarie per [confermare un attacco](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Come confermare un attacco

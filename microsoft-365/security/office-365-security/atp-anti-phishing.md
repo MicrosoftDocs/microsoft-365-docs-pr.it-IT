@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sulle funzionalità di anti-phishing che fanno parte di Office 365 Advanced Threat Protection per garantire la protezione delle merci & attacchi di phishing Spear.
-ms.openlocfilehash: dda94145dfbef7466ebd8e1fb9f01d592515f598
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 238c841ec7ba45fe2675598a29979b550c1c4fa3
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44875418"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653365"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Funzionalità di anti-phishing ATP in Office 365
 
@@ -54,12 +54,15 @@ Inoltre, i report sono disponibili per illustrare il funzionamento del servizio 
 Per essere attivi per un utente specifico, è necessario che l'utente faccia parte di un [allegato sicuro ATP](atp-safe-attachments.md)definito, [collegamenti sicuri ATP](atp-safe-links.md)o criteri di anti-phishing ATP. 
 
 Nella tabella seguente vengono descritti alcuni scenari di esempio. In ognuno di questi esempi l'organizzazione utilizza Office 365 Enterprise E5, che include la protezione avanzata dalle minacce.
-  
-|**Scenario di esempio**|**In questo caso, è applicabile l'anti-phishing ATP?**|
-|:-----|:-----|
+
+****
+
+|Scenario di esempio|In questo caso, è applicabile l'anti-phishing ATP?|
+|---|---|
 |L'organizzazione di Pat ha Office 365 Enterprise E5, ma nessuno ha definito i criteri per gli allegati sicuri di ATP, i collegamenti sicuri di ATP o il phishing avanzato del trifosfato di adenosina ancora.|No. Anche se la funzionalità è disponibile, è necessario che sia definito almeno un criterio ATP affinché i modelli di apprendimento automatico del sistema ATP funzionino. Per la rappresentazione è necessario che sia presente anche un criterio di anti-phishing ATP.|
 |Lee è un dipendente del reparto vendite di contoso. L'organizzazione di Lee ha un criterio anti-phishing ATP sul posto che si applica solo ai dipendenti finanziari.|No. In questo caso, l'anti-phishing ATP (modelli di computer e protezione da Impersonation) verrebbe applicato ai dipendenti, ma altri dipendenti, tra cui il reparto vendite, non lo sarebbero.|
 |Ieri, un amministratore di Office 365 dell'organizzazione Jean ha configurato un criterio di anti-phishing ATP che si applica a tutti i dipendenti. Prima di oggi, Jean ha ricevuto un messaggio di posta elettronica che include una rappresentazione descritta dal criterio.|Sì. In questo esempio, Jean dispone di una licenza per Advanced Threat Protection e viene definito un criterio anti-phishing ATP che include Jean. In genere, sono necessari circa 30 minuti affinché un nuovo criterio abbia effetto su tutti i datacenter. Poiché un giorno è passato in questo caso, il criterio dovrebbe essere attivo.|
+|
 
 ## <a name="related-topics"></a>Argomenti correlati
 

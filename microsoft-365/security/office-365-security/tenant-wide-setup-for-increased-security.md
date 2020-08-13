@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: In questo argomento viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Microsoft 365.
-ms.openlocfilehash: 5e02a871385deb2bae9e788eacd772c08af1d972
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588053"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653558"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurare il tenant Microsoft 365 per una maggiore sicurezza
 
@@ -38,9 +38,10 @@ Office 365 Secure Score analizza la sicurezza dell'organizzazione in base alle n
 
 Il Centro sicurezza Microsoft 365 include funzionalità che proteggono l'ambiente. Sono inoltre inclusi i report e i dashboard che è possibile utilizzare per monitorare e intervenire. Alcune aree sono dotate di configurazioni dei criteri predefinite. Alcune aree non includono criteri o regole predefinite. Visitare questi criteri in gestione delle minacce per ottimizzare le impostazioni di gestione delle minacce per un ambiente più sicuro.
 
-||||
+****
+
+|Area|Include un criterio predefinito|Consiglio|
 |---|---|---|
-|**Area**|**Include un criterio predefinito**|**Consiglio**|
 |**Anti-phishing**|Sì|Se si dispone di un dominio personalizzato, configurare il criterio anti-phishing predefinito per proteggere gli account di posta elettronica degli utenti più importanti, ad esempio il CEO, e per proteggere il dominio. Esaminare i [criteri anti-phishing in office 365](set-up-anti-phishing-policies.md) e vedere [Configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md) o [Configure ATP anti-phishing policys in Office 365](configure-atp-anti-phishing-policies.md).|
 |**Motore antimalware**|Sì| Modificare il criterio predefinito: <br/> &ensp;&ensp;* Filtro tipi di allegati comuni: selezionare attivato <br/><br/> È inoltre possibile creare criteri di filtro antimalware personalizzati e applicarli a utenti, gruppi o domini specificati nell'organizzazione. <br/><br/> Ulteriori informazioni: <br/> &ensp;&ensp;* [Protezione antimalware](anti-malware-protection.md) <br/> &ensp;&ensp;* [Configurazione dei criteri anti-malware](configure-anti-malware-policies.md)|
 |**Allegati sicuri di ATP**|No| Nella pagina principale per gli allegati sicuri, proteggere i file in SharePoint, OneDrive e Microsoft teams selezionando questa casella: <br/> &ensp;&ensp;* Attiva ATP per SharePoint, OneDrive e Microsoft Teams <br/><br/> Aggiungere un nuovo criterio degli allegati sicuri con queste impostazioni: <br/> &ensp;&ensp;* Block-blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato (scegliere questa opzione) <br/> &ensp;&ensp;* Consenti reindirizzamento: (selezionare questa casella e immettere un indirizzo di posta elettronica, ad esempio un account di amministratore o di quarantena) <br/> &ensp;&ensp;* Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore (seleziona questa casella) <br/> &ensp;&ensp;* Applicato a: il dominio del destinatario è (Seleziona il dominio) <br/><br/>Ulteriori informazioni: [configurare i criteri per gli allegati sicuri ATP di Office 365](set-up-atp-safe-attachments-policies.md)|
@@ -56,9 +57,10 @@ Il Centro sicurezza Microsoft 365 include funzionalità che proteggono l'ambient
 
 Visitare questi rapporti e dashboard per ulteriori informazioni sull'integrità dell'ambiente. I dati contenuti in questi rapporti diventeranno più ricchi man mano che l'organizzazione utilizzerà i servizi di Office 365. Per il momento, acquisire familiarità con ciò che è possibile monitorare e intraprendere un'azione. Per ulteriori informazioni, vedere: [Reports in Microsoft 365 Security and Compliance Centers](../../compliance/reports-in-security-and-compliance.md).
 
-|||
+****
+
+|Dashboard|Descrizione|
 |---|---|
-|**Dashboard**|**Descrizione**|
 |[Dashboard di gestione delle minacce](security-dashboard.md)|Nella sezione **gestione minacce** del Centro sicurezza utilizzare questo dashboard per visualizzare le minacce che sono già state gestite e come strumento pratico per la creazione di report ai decisori aziendali su quali funzionalità di ricerca e risposta delle minacce sono già state eseguite per garantire la sicurezza dell'azienda.|
 |[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md)|Questo è anche nella sezione **gestione minacce** del Centro sicurezza. Se si sta indagando o si verifica un attacco al tenant, utilizzare Esplora risorse (o rilevamenti in tempo reale) per analizzare le minacce. Explorer (e il rapporto rilevamenti in tempo reale) mostrano il volume degli attacchi nel tempo ed è possibile analizzare questi dati in base alle famiglie di minacce, all'infrastruttura di attacco e altro ancora. È inoltre possibile contrassegnare eventuali messaggi di posta elettronica sospetti per l'elenco eventi non consentiti.|
 |Report: Dashboard|Nella sezione **report** del Centro sicurezza, visualizzare i rapporti di controllo per le organizzazioni di SharePoint Online e di Exchange Online. È inoltre possibile accedere ai report di accesso dell'utente di Azure Active Directory (Azure AD), ai report sulle attività degli utenti e al log di controllo di Azure AD dalla pagina **Visualizza report** .|
@@ -70,9 +72,10 @@ Visitare questi rapporti e dashboard per ulteriori informazioni sull'integrità 
 
 Molti dei controlli per la sicurezza e la protezione nell'interfaccia di amministrazione di Exchange sono anch ' essi inclusi nel centro sicurezza. Non è necessario configurarli in entrambe le posizioni. Di seguito sono riportate alcune impostazioni aggiuntive consigliate.
 
-||||
+****
+
+|Area|Include un criterio predefinito|Consiglio|
 |---|---|---|
-|**Area**|**Include un criterio predefinito**|**Consiglio**|
 |**Flusso di posta** (regole del flusso di posta, note anche come regole di trasporto)|No|Aggiungere una regola del flusso di posta per garantire la protezione da ransomware bloccando i tipi di file eseguibili e i tipi di file di Office che contengono macro. Per ulteriori informazioni, vedere [Use Mail Flow Rules to inspect Message Attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Per ulteriori informazioni, vedere gli argomenti seguenti: <br/>* [Protezione da ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Protezione da malware e ransomware in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Eseguire il ripristino da un attacco ransomware in Office 365](recover-from-ransomware.md) <br/><br/> Creare una regola del flusso di posta per impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni. Per ulteriori informazioni, vedere [attenuazione delle regole di inoltro esterno client con Secure Score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> Ulteriori informazioni: [regole del flusso di posta (regole di trasporto) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**Abilitare l'autenticazione moderna**|No|L'autenticazione moderna è un prerequisito per l'utilizzo dell'autenticazione a più fattori (AMF). L'AMF è consigliata per garantire l'accesso alle risorse cloud, incluso il messaggio di posta elettronica. <br/><br/> Vedere gli argomenti seguenti: <br/>* [Abilitare o disabilitare l'autenticazione moderna in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype for business online: abilitare il tenant per l'autenticazione moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint Online e OneDrive for business. <br/><br/> Ulteriori informazioni: funzionamento dell' [autenticazione moderna per le app client di office 2013 e office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
@@ -85,9 +88,10 @@ I siti del team di SharePoint configurati a livello di base consentono la condiv
 
 Per supportare gli obiettivi per la protezione di base, configurare i criteri di condivisione a livello di tenant come consigliato. Le impostazioni di condivisione per i singoli siti possono essere più restrittive rispetto a quelle dei criteri a livello di tenant, ma non più permissive.
 
-||||
+****
+
+|Area|Include un criterio predefinito|Consiglio|
 |---|---|---|
-|**Area**|**Include un criterio predefinito**|**Consiglio**|
 |**Condivisione** (SharePoint Online e OneDrive for business)|Sì|La condivisione esterna è abilitata per impostazione predefinita. Queste impostazioni sono consigliate: <br/>* Consenti la condivisione per gli utenti esterni autenticati e l'utilizzo di collegamenti di accesso anonimo (impostazione predefinita). <br/> * I collegamenti di accesso anonimo scadono in questo numero di giorni. Immettere un numero, se lo si desidera, ad esempio 30 giorni. <br/>* Tipo di collegamento predefinito: selezionare interno (solo persone nell'organizzazione). Gli utenti che desiderano condividere l'utilizzo dei collegamenti anonimi devono scegliere questa opzione dal menu condivisione. <br/><br/> Ulteriori informazioni: [Panoramica della condivisione esterna](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
 |
 

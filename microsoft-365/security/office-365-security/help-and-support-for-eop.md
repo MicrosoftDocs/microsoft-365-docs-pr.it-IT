@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
-ms.openlocfilehash: 7d1c62bd6ddef44e86e47b894e2d386dd8c0bd55
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 959f842e05939e4a6cfc54d1b860de96bd8546e6
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755189"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656934"
 ---
 # <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per Exchange Online Protection
 
@@ -69,8 +69,10 @@ Per ulteriori informazioni su come il supporto Premier può aiutare l'organizzaz
 
 Microsoft fornisce numeri di telefono locali o un numero verde per il supporto del prodotto in tutto il mondo. Molti di questi centri di supporto forniscono un'assistenza in lingua locale durante l'orario di lavoro o in inglese 24 ore al giorno, tutti i giorni. Se non si visualizza la posizione indicata di seguito, utilizzare l'agente virtuale come descritto in alto per trovare il numero di telefono del supporto locale.
 
-|**Paese**|**Domande per l'acquisto e la fatturazione**|**Domande per il supporto tecnico**|
-|:-----|:-----|:-----|
+****
+
+|Paese|Domande per l'acquisto e la fatturazione|Domande per il supporto tecnico|
+|---|---|---|
 |Brasile|Numero verde: 08007621146 <br/> Locale: 1147001999|Stesso|
 |Francia|Numero verde: 0805 540 594 <br/> Locale: 01 57 32 42 97|Stesso|
 |Germania|Numero verde: 0800 589 2332 <br/>  Locale: 069 380 789 508|Stesso|
@@ -79,6 +81,7 @@ Microsoft fornisce numeri di telefono locali o un numero verde per il supporto d
 |Spagna|Numero verde: 900 814 197 <br/> Locale: 912 718 160|Stesso|
 |Regno Unito|Numero verde: 0800 032 6417 <br/> Locale: 0203 450 6455|Stesso|
 |Stati Uniti|Numero verde: 1-877-913-2707|Numero verde: 1-800-865-9408|
+|
 
 ## <a name="for-more-information-about-eop-documentation"></a>Per ulteriori informazioni sulla documentazione di EOP
 

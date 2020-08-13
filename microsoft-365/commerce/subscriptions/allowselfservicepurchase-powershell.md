@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come utilizzare il cmdlet di AllowSelfServicePurchase PowerShell per abilitare o disabilitare l'acquisto in modalità self-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391543"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653714"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utilizzo di AllowSelfServicePurchase per il modulo di PowerShell di MSCommerce
 
@@ -92,6 +92,10 @@ Nella tabella seguente sono elencati i prodotti disponibili e il relativo **Prod
 | Power Apps per utente | CFQ7TTC0KP0P |
 | Automatizzare l'alimentazione per utente | CFQ7TTC0KP0N |
 | Power BI Pro | CFQ7TTC0L3PB |
+| Piano del progetto 1 | CFQ7TTC0KXND |
+| Piano di progetto 3 | CFQ7TTC0KXNC |
+| Visio piano 1 | CFQ7TTC0KXN9 |
+| Visio piano 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Visualizzare o impostare lo stato di AllowSelfServicePurchase
 
@@ -128,7 +132,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-**Problema**
+### <a name="problem"></a>Problema
 
 Viene visualizzato il messaggio di errore seguente:
 
@@ -136,7 +140,7 @@ Viene visualizzato il messaggio di errore seguente:
 
 Questo può essere dovuto a una versione precedente di TLS (Transport Layer Security). Per connettere questo servizio è necessario utilizzare TLS 1,2 o versione successiva
 
-**Soluzione**
+### <a name="solution"></a>Soluzione
 
 Eseguire l'aggiornamento a TLS 1,2:[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 

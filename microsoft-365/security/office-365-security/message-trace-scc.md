@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819341"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653642"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -29,7 +29,10 @@ La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di p
 La traccia dei messaggi nel centro sicurezza & conformità migliora la traccia del messaggio originale disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni contenute nella traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti sull'accaduto ai messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
 
 > [!NOTE]
-> • Per eseguire una traccia dei messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione, gestione conformità o supporto tecnico. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Il numero massimo di messaggi visualizzati nei risultati dipende dal tipo di rapporto selezionato (vedere la sezione scegliere il tipo di [report](#choose-report-type) per informazioni dettagliate). Il cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) in PowerShell di Exchange Online o standalone EOP PowerShell restituisce tutti i messaggi nei risultati.
+>
+> - Per eseguire una traccia dei messaggi, è necessario essere membri del gruppo di ruoli Gestione organizzazione, gestione conformità o supporto tecnico. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+>
+> - Il numero massimo di messaggi visualizzati nei risultati dipende dal tipo di rapporto selezionato (vedere la sezione scegliere il tipo di [report](#choose-report-type) per informazioni dettagliate). Il cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) in PowerShell di Exchange Online o standalone EOP PowerShell restituisce tutti i messaggi nei risultati.
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 
@@ -332,8 +335,10 @@ Il campo **custom_data** di un `AGENTINFO` evento viene utilizzato da una vasta 
 
 Un valore **custom_data** che inizia con `S:SFA` è dall'agente filtro posta indesiderata. I dettagli della chiave sono descritti nella tabella seguente:
 
-|**Valore**|**Descrizione**|
-|:-----|:-----|
+****
+
+|Valore|Descrizione|
+|---|---|
 |`SFV=NSPM`|Il messaggio è stato contrassegnato come non indesiderato ed è stato inviato al destinatario.|
 |`SFV=SPM`|Il messaggio è stato contrassegnato come posta indesiderata dal filtro protezione da posta indesiderata (noto anche come filtro contenuto).|
 |`SFV=BLK`|Le regole del filtro sono state ignorate e il messaggio è stato bloccato perché è stato originato da un mittente bloccato.|
@@ -345,11 +350,12 @@ Un valore **custom_data** che inizia con `S:SFA` è dall'agente filtro posta ind
 |`DI=SD`|Il messaggio è stato eliminato.|
 |`DI=SJ`|Il messaggio è stato inviato alla cartella posta indesiderata del destinatario.|
 |`DI=SN`|Il messaggio è stato instradato tramite un pool di recapito ad alto rischio.|
-|`DI=SO`|Il messaggio è instradato attraverso un pool di recapito ad alto rischio. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md).|
+|`DI=SO`|Il messaggio è instradato attraverso un pool di recapito ad alto rischio. Per altre informazioni, vedere [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Indica una corrispondenza tra le regole relative alla posta indesiderata.|
 |`IPV=CAL`|Il messaggio è stato consentito tramite il filtro da posta indesiderata poiché l'indirizzo IP è stato specificato in un elenco di indirizzi IP bloccati nel filtro di connessione.|
 |`H=<EHLOstring>`|Stringa HELO o EHLO del server della posta connesso.|
 |`PTR=<ReverseDNS>`|Il record PTR dell'indirizzo IP di invio, anche noto come indirizzo DNS inverso.|
+|
 
 Un esempio **custom_data** valore per un messaggio filtrato per la posta indesiderata in questo modo:
 
@@ -359,9 +365,11 @@ Un esempio **custom_data** valore per un messaggio filtrato per la posta indesid
 
 Un valore **custom_data** che inizia con `S:AMA` l'agente di filtro antimalware. I dettagli della chiave sono descritti nella tabella seguente:
 
-|**Valore**|**Descrizione**|
-|:-----|:-----|
-|`AMA=SUM|v=1|` o `AMA=EV|v=1`|È stato determinato che il messaggio contiene malware. `SUM`indica che il malware potrebbe essere stato rilevato da un numero qualsiasi di motori. `EV`indica che il malware è stato rilevato da un motore specifico. Quando viene rilevato malware da un motore, questo attiva le seguenti azioni.|
+****
+
+|Valore|Descrizione|
+|---|---|
+|`AMA=SUM|v=1|` o `AMA=EV|v=1`|È stato determinato che il messaggio contiene malware. `SUM` indica che il malware potrebbe essere stato rilevato da un numero qualsiasi di motori. `EV` indica che il malware è stato rilevato da un motore specifico. Quando viene rilevato malware da un motore, questo attiva le seguenti azioni.|
 |`Action=r`|Il messaggio è stato sostituito.|
 |`Action=p`|Il messaggio è stato ignorato.|
 |`Action=d`|Il messaggio è stato rinviato.|
@@ -373,6 +381,7 @@ Un valore **custom_data** che inizia con `S:AMA` l'agente di filtro antimalware.
 |`Action=b`|Il messaggio è stato bloccato.|
 |`Name=<malware>`|Il nome del malware rilevato.|
 |`File=<filename>`|Il nome del file che contiene malware.|
+|
 
 Un esempio di **custom_data** valore per un messaggio che contiene malware è simile al seguente:
 
@@ -382,12 +391,15 @@ Un esempio di **custom_data** valore per un messaggio che contiene malware è si
 
 Un valore **custom_data** che inizia con `S:TRA` è l'agente della regola di trasporto per le regole del flusso di posta (note anche come regole di trasporto). I dettagli della chiave sono descritti nella tabella seguente:
 
-|**Valore**|**Descrizione**|
-|:-----|:-----|
+****
+
+|Valore|Descrizione|
+|---|---|
 |`ETR|ruleId=<guid>`|L'ID regola corrispondente.|
 |`St=<datetime>`|Data e ora in formato UTC quando si è verificata la corrispondenza della regola.|
 |`Action=<ActionDefinition>`|L'azione che è stata applicata. Per un elenco delle azioni disponibili, vedere [Mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|La modalità della regola. I valori validi sono: <br/>* **Enforce**: tutte le azioni della regola verranno applicate. <br/>* **Test con suggerimenti per i criteri:**: tutte le azioni di suggerimento per i criteri verranno inviate, ma non verranno applicate altre azioni di applicazione. <br/>* **Test senza suggerimenti**per i criteri: le azioni verranno elencate in un file di registro, tuttavia i mittenti non riceveranno alcuna notifica e le azioni di applicazione non verranno applicate.|
+|
 
 Un esempio di **custom_data** valore per i messaggi che soddisfano le condizioni di una regola del flusso di posta è simile al seguente:
 

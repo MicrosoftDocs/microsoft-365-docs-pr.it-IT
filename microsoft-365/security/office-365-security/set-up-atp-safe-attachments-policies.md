@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni su come definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi tramite posta elettronica.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430424"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656630"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri per gli allegati sicuri ATP di Office 365
 
@@ -46,8 +46,10 @@ Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio
 
 - Verificare di disporre delle autorizzazioni necessarie. Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un ruolo di gestione dell'organizzazione di Exchange Online (l'amministratore globale è assegnato a questo ruolo per impostazione predefinita) o entrambi i ruoli di Exchange Online igiene e amministratore della sicurezza. Per ulteriori informazioni, vedere la tabella seguente:
 
+  ****
+
   |Ruolo|Dove/come assegnato|
-  |---------|---------|
+  |---|---|
   |amministratore globale |La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .|
   |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
   |Gestione dell'organizzazione di Exchange Online, gestione dell'igiene di Exchange Online |Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
@@ -89,9 +91,10 @@ Valutare la possibilità di configurare più criteri per gli allegati sicuri ATP
 
 Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile scegliere tra molte opzioni, tra cui monitor, blocca, Sostituisci, il recapito dinamico e così via. Nel caso in cui si stia chiedendo cosa fanno queste opzioni, nella tabella seguente vengono riepilogati tutti gli effetti.
 
-||||
+****
+
+|Opzione|Effetto|Utilizzare se si desidera eseguire le operazioni seguenti:|
 |---|---|---|
-|**Opzione**|**Effetto**|**Utilizzare se si desidera eseguire le operazioni seguenti:**|
 |**Off**|Non esegue l'analisi degli allegati per il malware  <br/> Non ritarda il recapito del messaggio|Disattiva l'analisi per i destinatari selezionati.  <br/> Impedire inutili ritardi nella distribuzione della posta interna.  <br/> **Questa opzione non è consigliata per la maggior parte degli utenti. È consigliabile utilizzare questa opzione per disattivare l'analisi degli allegati sicuri di ATP per i destinatari che ricevono solo messaggi di posta elettronica provenienti da mittenti attendibili.**|
 |**Monitor**|Recapita messaggi con allegati e quindi tiene traccia di cosa accade con malware rilevato|Vedere dove il malware rilevato entra nell'organizzazione|
 |**Blocco**|Impedisce la proseguimento dei messaggi con allegati malware rilevati  <br/> Invia messaggi con malware rilevato per la [quarantena in Office 365 in](manage-quarantined-messages-and-files.md) cui un amministratore o un analista di sicurezza può rivedere e rilasciare (o eliminare) tali messaggi  <br/> Blocca automaticamente i messaggi e gli allegati futuri|Salvaguardare l'organizzazione da attacchi ripetuti con gli stessi allegati di malware|

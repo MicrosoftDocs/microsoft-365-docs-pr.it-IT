@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori nelle organizzazioni autonome di Exchange Online Protection (EOP) possono imparare a creare, modificare e rimuovere gruppi di distribuzione e gruppi di sicurezza abilitati alla posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) e in PowerShell di Exchange Online Protection (EOP) autonomo.
-ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 813735d4024c3b8424a6bbac51ebef7b4c53e590
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616503"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653654"
 ---
 # <a name="manage-groups-in-eop"></a>Gestire gruppi in Exchange Online Protection
 
@@ -30,7 +30,10 @@ Nelle organizzazioni standalone di Exchange Online Protection (EOP) senza casset
 - **Gruppi di sicurezza abilitati alla posta elettronica**: un insieme di utenti di posta elettronica e altri gruppi di sicurezza che hanno bisogno delle autorizzazioni di accesso per i ruoli di amministratore Ad esempio, è possibile assegnare autorizzazioni di amministratore a un gruppo specifico di utenti in modo che possano configurare le impostazioni di protezione da posta indesiderata e antimalware.
 
     > [!NOTE]
-    > <ul><li>Per impostazione predefinita, i nuovi gruppi di sicurezza abilitati alla posta elettronica rifiutano i messaggi provenienti da mittenti esterni (non autenticati).</li><li>Non aggiungere gruppi di distribuzione ai gruppi di sicurezza abilitati alla posta elettronica.</li></ul>.
+    >
+    > - Per impostazione predefinita, i nuovi gruppi di sicurezza abilitati alla posta elettronica rifiutano i messaggi provenienti da mittenti esterni (non autenticati).
+    >
+    > - Non aggiungere gruppi di distribuzione ai gruppi di sicurezza abilitati alla posta elettronica.
 
 È possibile gestire i gruppi nell'interfaccia di amministrazione di Exchange (EAC) e in EOP PowerShell autonomo.
 

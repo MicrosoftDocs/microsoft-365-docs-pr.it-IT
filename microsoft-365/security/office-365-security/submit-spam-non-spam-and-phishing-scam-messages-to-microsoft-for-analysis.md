@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori e gli utenti finali possono imparare a inviare messaggi di posta elettronica (buona posta contrassegnata come cattiva o cattiva posta elettronica consentita) a Microsoft per l'analisi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6973330c4504bd6478265205f60798b3b7c1875
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: e90382b39b0cebb70568a53ac5aaeb40ac935f92
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811039"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653594"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Inviare manualmente messaggi a Microsoft per l'analisi
 
@@ -52,7 +52,12 @@ Se si riceve un messaggio che passa attraverso il filtro di posta indesiderata c
 2. Trascinare e rilasciare il messaggio di posta indesiderata o di phishing nel nuovo messaggio. In questo modo verrà salvato il messaggio di posta indesiderata o di phishing come allegato nel nuovo messaggio. Non copiare e incollare il contenuto del messaggio o inoltrare il messaggio (è necessario il messaggio originale, in modo da poter ispezionare le intestazioni del messaggio).
 
    > [!NOTE]
-   > <ul><li>È possibile allegare più messaggi nel nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo: messaggi di truffa di phishing o messaggi di posta indesiderata.</li><li>Lasciare vuoto il corpo del nuovo messaggio.</li><li>Utilizzare i formati. msg (formato Outlook predefinito) o. eml (predefinito di Outlook sul Web Format) per i messaggi allegati.</li></ul>
+   >
+   > - È possibile allegare più messaggi nel nuovo messaggio. Verificare che tutti i messaggi siano dello stesso tipo, ovvero messaggi di phishing o messaggi di posta indesiderata.
+   >
+   > - Lasciare vuoto il corpo del nuovo messaggio.
+   >
+   > - Utilizzare i formati. msg (formato Outlook predefinito) o. eml (predefinito di Outlook sul Web Format) per i messaggi allegati.
 
 3. Al termine, fare clic su **Invia**.
 
@@ -71,7 +76,12 @@ Se un messaggio è stato erroneamente identificato come posta indesiderata, è p
 2. Trascinare e rilasciare il messaggio erroneamente identificato nel nuovo messaggio. In questo modo verrà salvato il messaggio erroneamente identificato come allegato nel nuovo messaggio. Non copiare e incollare il contenuto del messaggio o inoltrare il messaggio (è necessario il messaggio originale, in modo da poter ispezionare le intestazioni del messaggio).
 
    > [!NOTE]
-   > <ul><li>È possibile allegare più messaggi nel nuovo messaggio. Verificare che tutti i messaggi siano dello stesso tipo, ovvero messaggi di phishing o messaggi di posta indesiderata.</li><li>Lasciare vuoto il corpo del nuovo messaggio.</li><li>Utilizzare i formati. msg (formato Outlook predefinito) o. eml (predefinito di Outlook sul Web Format) per i messaggi allegati.</li></ul>
+   >
+   > - È possibile allegare più messaggi nel nuovo messaggio. Verificare che tutti i messaggi siano dello stesso tipo, ovvero messaggi di phishing o messaggi di posta indesiderata.
+   >
+   > - Lasciare vuoto il corpo del nuovo messaggio.
+   >
+   > - Utilizzare i formati. msg (formato Outlook predefinito) o. eml (predefinito di Outlook sul Web Format) per i messaggi allegati.
 
 3. Al termine, fare clic su **Invia**.
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
-ms.openlocfilehash: 820f635e679be9d579ba94fc3288830dc6996a0e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 5a882edd91e8502d7340bf86f74e8114be9cd07b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617043"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652874"
 ---
 # <a name="eop-features"></a>Funzionalità di Exchange Online Protection
 
@@ -26,9 +26,10 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 > [!TIP]
 > La [Roadmap di Microsoft 365 for business](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) è una buona risorsa per trovare informazioni sulle nuove funzionalità imminenti. Per una visualizzazione più ampia sulle funzionalità disponibili con i diversi piani di abbonamento a EOP, vedere [Descrizione del servizio Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-|||
+****
+
+|Funzionalità|Descrizione|
 |---|---|
-|**Caratteristica**|**Descrizione**|
 |**Protezione dalla posta indesiderata**||
 |Rilevamento posta indesiderata in ingresso|Per ulteriori informazioni, vedere [protezione da posta indesiderata in Microsoft 365](anti-spam-protection.md). <br/><br/> Negli ambienti di EOP autonomi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare le regole del flusso di posta (anche note come regole di trasporto) in Exchange locale per tradurre il verdetto filtro posta indesiderata in modo che la regola della posta indesiderata possa spostare il messaggio nella cartella Posta indesiderata. Per informazioni dettagliate, vedere [Configure standalone EOP per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |Rilevamento posta indesiderata in uscita|La protezione dalla posta indesiderata in uscita è sempre abilitata se si utilizza il servizio per l'invio della posta in uscita. Per ulteriori informazioni, vedere [protezione dalla posta indesiderata in uscita](outbound-spam-controls.md).|
@@ -62,7 +63,7 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |Routing per aree (limitazione del flusso di posta a un'area specifica)|Per ulteriori informazioni, vedere la sezione relativa ai datacenter di EOP in [Panoramica su Exchange Online Protection](exchange-online-protection-overview.md).|
 |Strumento di controllo della connettività SMTP|Per ulteriori informazioni sull'utilizzo di questo strumento per testare il flusso di posta, vedere [test Mail Flow convalidando i connettori Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).|
 |Corrispondenza sottodomini|Per ulteriori informazioni sull'abilitazione del flusso di posta da e verso i sottodomini dei domini accettati, vedere [flusso di posta in EOP](mail-flow-in-eop.md).|
-|**Regole dei flussi di posta**||
+|**Regole del flusso di posta**||
 |Filtro e azioni basati sui criteri|I criteri personalizzati si basano sulle regole del flusso di posta di Exchange (note anche come regole di trasporto). È possibile filtrare per dominio, parola chiave, nome file, tipo di file, riga dell'oggetto, corpo del messaggio, mittente, destinatario, intestazione e indirizzo IP. Per ulteriori informazioni, vedere [regole del flusso di posta (regole di trasporto) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md).|
 |Filtro per modelli di testo|Le regole del flusso di posta possono utilizzare una matrice o espressioni regolari per la corrispondenza del testo. È inoltre possibile utilizzare un'unica stringa o una matrice di stringhe per soddisfare molte proprietà del messaggio, ad esempio indirizzo, oggetto, corpo o nomi degli allegati. Per ulteriori informazioni, vedere [regole del flusso di posta (regole di trasporto) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md)|
 |Dizionari personalizzati|Le regole del flusso di posta possono includere lunghi elenchi di testo e parole chiave, fornendo le stesse funzionalità di un dizionario personalizzato.|
@@ -93,3 +94,4 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |Rete di server globale con ridondanza geografica|EOP viene eseguito in una rete globale di datacenter progettati per offrire la massima disponibilità. Per ulteriori informazioni, vedere la sezione relativa ai datacenter di EOP in [Panoramica su Exchange Online Protection](exchange-online-protection-overview.md).  |
 |L'accodamento dei messaggi sul server locale non consente di accettare la posta|I messaggi in differimento rimangono nelle code per un giorno. I tentativi di invio dei messaggi variano in base all'errore ricevuto dal sistema di posta elettronica del destinatario. In media, l'intervallo tra i tentativi di invio è di 5 minuti. Per ulteriori informazioni, vedere [Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
 |Crittografia dei messaggi di Office 365 disponibile come servizio aggiuntivo|Per ulteriori informazioni, vedere [Crittografia in Office 365](../../compliance/encryption.md).|
+|

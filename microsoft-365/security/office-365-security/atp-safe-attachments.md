@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni sulla funzionalità degli allegati sicuri di ATP per Office 365 e su come ottenere la funzionalità per l'abbonamento.
-ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 16b9ae47ead318e200cdf1e5e5beb58c2bc396bc
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754761"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656994"
 ---
 # <a name="atp-safe-attachments"></a>Allegati sicuri di ATP
 
@@ -46,10 +46,11 @@ Successivamente, verificare che i criteri per gli allegati sicuri di ATP siano d
 Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un ruolo appropriato. Alcuni esempi sono descritti nella tabella seguente:
 
 |Ruolo|Dove/come assegnato|
-|---------|---------|
+|---|---|
 |amministratore globale|La persona che si iscrive all'acquisto di Microsoft 365 è un amministratore globale per impostazione predefinita. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .|
 |Amministratore della sicurezza|Interfaccia di amministrazione di Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
 |Gestione organizzazione di Exchange Online|Interfaccia di amministrazione di Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Come sapere se è attiva la protezione per gli allegati sicuri di ATP
 
@@ -57,13 +58,16 @@ Dopo aver [definito (o esaminato) i criteri per gli allegati sicuri di ATP](set-
 
 Nella tabella seguente vengono descritti alcuni scenari di esempio. In tutti questi casi, si presuppone che l'organizzazione disponga di un abbonamento a Microsoft 365 che includa la protezione avanzata dalle minacce.
 
-|**Scenario di esempio**|**In questo caso, si applica la protezione per gli allegati sicuri ATP?**|
-|:-----|:-----|
+****
+
+|Scenario di esempio|In questo caso, si applica la protezione per gli allegati sicuri ATP?|
+|---|---|
 |L'organizzazione di Pat ha Office 365 E5, ma nessuno ha ancora definito i criteri per gli allegati sicuri di ATP.|No. Anche se la funzionalità è disponibile, è necessario definire almeno un criterio per gli allegati sicuri ATP per garantire che la protezione degli allegati sicuri di ATP sia sul posto.|
 |Lee è un dipendente del reparto vendite di contoso. L'organizzazione di Lee ha un criterio di allegati sicuri ATP sul posto che si applica solo ai dipendenti finanziari.|No. In questo caso, i dipendenti finanziari avrebbero una protezione per gli allegati sicuri di ATP, ma altri dipendenti, incluso il reparto vendite, non consentiranno di definire i criteri che includono tali gruppi.|
 |Ieri un amministratore dell'organizzazione Jean ha configurato un criterio per gli allegati sicuri ATP che si applica a tutti i dipendenti. Prima di oggi, Jean ha ricevuto un messaggio di posta elettronica che include un allegato.|Sì. In questo esempio, Jean ha una licenza per Advanced Threat Protection e un criterio per gli allegati sicuri ATP che include Jean è stato definito. In genere, sono necessari circa 30 minuti affinché un nuovo criterio abbia effetto su tutti i datacenter. Poiché un giorno è passato in questo caso, il criterio dovrebbe essere attivo.|
 |L'organizzazione di Chris ha Office 365 E5 con i criteri degli allegati sicuri ATP sul posto per tutti gli utenti dell'organizzazione. Chris riceve un messaggio di posta elettronica con un allegato e lo inoltra ad altri utenti esterni all'organizzazione.|La protezione per gli allegati sicuri ATP è attiva per i messaggi ricevuti da Chris. Se le organizzazioni dei destinatari dispongono anche di criteri per gli allegati sicuri di ATP sul posto, il messaggio che Chris inoltra è soggetto a tali criteri quando arriva il messaggio inoltrato.|
 |L'organizzazione di Jamie dispone di criteri per gli allegati sicuri ATP sul posto e [ATP per SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md) è stato attivato. Jamie presuppone che ogni file in SharePoint Online sia stato analizzato ed è sicuro per l'apertura o il download.|La protezione per gli allegati sicuri ATP è in vigore secondo i criteri definiti. Tuttavia, ciò non significa che ogni singolo file in SharePoint Online, OneDrive for business o Microsoft teams venga analizzato. Per ulteriori informazioni, vedere [ATP for SharePoint, OneDrive e Microsoft teams](atp-for-spo-odb-and-teams.md).|
+|
 
 ## <a name="submitting-files-for-malware-analysis"></a>Invio di file per l'analisi antimalware
 

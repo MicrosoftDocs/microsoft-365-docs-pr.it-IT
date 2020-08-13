@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
-ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: bbb25e1c499e84a1af34d0f0a52a81f1470aadfd
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005859"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652982"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
 
@@ -37,7 +37,14 @@ Gli elenchi di mittenti attendibili disponibili sono descritti nell'elenco segue
 Le regole del flusso di posta consentono la massima flessibilità per garantire che vengano consentiti solo i messaggi giusti. Il mittente consentito e gli elenchi di domini consentiti nei criteri di protezione da posta indesiderata non sono sicuri come l'elenco indirizzi IP consentiti, perché il dominio di posta elettronica del mittente è facilmente falsificato Tuttavia, l'elenco indirizzi IP consentiti presenta anche un rischio, perché la posta elettronica proveniente da _qualsiasi_ dominio inviato da tale indirizzo IP ignorerà il filtro di posta indesiderata.
 
 > [!IMPORTANT]
-> • Fare attenzione a monitorare attentamente *le* eccezioni che è possibile filtrare tramite posta indesiderata utilizzando elenchi di mittenti attendibili. <br/><br/> • Anche se è possibile utilizzare elenchi di mittenti attendibili per ottenere falsi positivi (un buon messaggio di posta elettronica contrassegnato come posta indesiderata), è consigliabile considerare l'utilizzo di elenchi di mittenti attendibili come soluzione temporanea che dovrebbe essere evitata se possibile. Non è consigliabile gestire falsi positivi utilizzando elenchi di mittenti attendibili, perché le eccezioni ai filtri per la posta indesiderata possono aprire l'organizzazione allo spoofing e ad altri attacchi. Se si insiste sull'utilizzo degli elenchi di mittenti attendibili per la gestione dei falsi positivi, è necessario essere vigili e mantenere l'argomento [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md) in pronto. <br/><br/> • Per consentire a un dominio di inviare messaggi di posta elettronica non autenticati (bypass anti-spoofing) ma non di ignorare i controlli di protezione dalla posta indesiderata e antimalware, è possibile aggiungerlo all' [elenco dei mittenti attendibili di AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP e Outlook ispezionano le diverse proprietà dei messaggi per determinare il mittente del messaggio. Per ulteriori informazioni, vedere la sezione [considerazioni sulla posta elettronica in blocco](#considerations-for-bulk-email) più avanti in questo argomento.
+>
+> - Fare attenzione a monitorare attentamente *tutte le* eccezioni che è necessario filtrare per la posta indesiderata utilizzando elenchi di mittenti attendibili.
+>
+> - Anche se è possibile utilizzare gli elenchi di mittenti attendibili per ottenere falsi positivi (un buon messaggio di posta elettronica contrassegnato come posta indesiderata), è consigliabile considerare l'utilizzo di elenchi di mittenti attendibili come soluzione temporanea che dovrebbe essere evitata se possibile. Non è consigliabile gestire falsi positivi utilizzando elenchi di mittenti attendibili, perché le eccezioni ai filtri per la posta indesiderata possono aprire l'organizzazione allo spoofing e ad altri attacchi. Se si insiste sull'utilizzo degli elenchi di mittenti attendibili per la gestione dei falsi positivi, è necessario essere vigili e mantenere l'argomento [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md) in pronto.
+>
+> - Per consentire a un dominio di inviare messaggi di posta elettronica non autenticati (bypass anti-spoofing) ma non di ignorare i controlli di protezione dalla posta indesiderata e antimalware, è possibile aggiungerlo all' [elenco dei mittenti attendibili di AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)
+>
+> - EOP e Outlook ispezionano diverse proprietà dei messaggi per determinare il mittente del messaggio. Per ulteriori informazioni, vedere la sezione [considerazioni sulla posta elettronica in blocco](#considerations-for-bulk-email) più avanti in questo argomento.
 
 Al contrario, sono inoltre disponibili diverse opzioni per bloccare la posta elettronica da origini specifiche tramite _elenchi di mittenti bloccati_. Per altre informazioni, vedere [Creare elenchi di mittenti bloccati in EOP](create-block-sender-lists-in-office-365.md).
 
@@ -60,7 +67,12 @@ Nell'esempio seguente si presuppone che sia necessario inviare posta elettronica
      Utilizzare questa impostazione se il dominio di invio non dispone dell'autenticazione. Essere il più restrittivo possibile quando si tratta di indirizzi IP di origine nell'elenco IP consentiti. È consigliabile un intervallo di indirizzi IP pari o inferiore a 24 (meno è migliore). Non utilizzare intervalli di indirizzi IP che appartengono a servizi di consumo (ad esempio, outlook.com) o a infrastrutture condivise.
 
    > [!IMPORTANT]
-   > <ul><li>Non configurare mai la configurazione delle regole del flusso di posta con *solo* il dominio del mittente come condizione per ignorare il filtro posta indesiderata. In questo modo, si aumenterà *significativamente* la probabilità che i pirati informatici possano falsificare il dominio di invio (o rappresentare l'indirizzo di posta elettronica completo), ignorare tutti i filtri di posta indesiderata e ignorare i controlli di autenticazione del mittente in modo che il messaggio arrivi nella posta in arrivo del destinatario</li><li>Non utilizzare domini proprietari (noti anche come domini accettati) o domini più diffusi (ad esempio, microsoft.com) come condizioni nelle regole del flusso di posta. In questo modo viene considerato un rischio elevato perché crea opportunità per gli aggressori di inviare messaggi di posta elettronica che altrimenti verrebbero filtrati.</li><li>Se si consente a un indirizzo IP che si trova dietro un gateway NAT (Network Address Translation), è necessario conoscere i server coinvolti nel pool NAT per conoscere l'ambito dell'elenco indirizzi IP consentiti. Gli indirizzi IP e i partecipanti NAT possono cambiare. È necessario controllare periodicamente le voci dell'elenco indirizzi IP consentiti nell'ambito delle procedure di manutenzione standard.</li></ul>
+   >
+   > - Non configurare mai la configurazione delle regole del flusso di posta con *solo* il dominio del mittente come condizione per ignorare il filtro posta indesiderata. In questo modo, si aumenterà *significativamente* la probabilità che i pirati informatici possano falsificare il dominio di invio (o rappresentare l'indirizzo di posta elettronica completo), ignorare tutti i filtri di posta indesiderata e ignorare i controlli di autenticazione del mittente in modo che il messaggio arrivi nella posta in arrivo del destinatario
+   >
+   > - Non utilizzare domini proprietari (noti anche come domini accettati) o domini più diffusi (ad esempio, microsoft.com) come condizioni nelle regole del flusso di posta. In questo modo viene considerato un rischio elevato perché crea opportunità per gli aggressori di inviare messaggi di posta elettronica che altrimenti verrebbero filtrati.
+   >
+   > - Se si consente a un indirizzo IP che si trova dietro un gateway NAT (Network Address Translation), è necessario conoscere i server coinvolti nel pool NAT per conoscere l'ambito dell'elenco indirizzi IP consentiti. Gli indirizzi IP e i partecipanti NAT possono cambiare. È necessario controllare periodicamente le voci dell'elenco indirizzi IP consentiti nell'ambito delle procedure di manutenzione standard.
 
 3. **Condizioni facoltative**:
 
@@ -108,7 +120,10 @@ L'opzione meno desiderata consiste nell'utilizzare l'elenco dei mittenti consent
 Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci; anche se, sarà possibile immettere 30 voci nel portale. Per aggiungere più di 30 voci, è necessario utilizzare PowerShell.
 
 > [!CAUTION]
-> <ul><li>Questo metodo crea un rischio elevato che gli aggressori recapitano correttamente la posta elettronica alla posta in arrivo che altrimenti verrebbe filtrata.</li><li>Non utilizzare domini proprietari (noti anche come domini accettati) o domini più diffusi (ad esempio, microsoft.com) negli elenchi di domini consentiti.</li></ul>
+>
+> - Questo metodo crea un rischio elevato che gli aggressori recapitano correttamente la posta elettronica alla posta in arrivo che altrimenti verrebbe filtrata.
+>
+> - Non utilizzare domini proprietari (noti anche come domini accettati) o domini più diffusi (ad esempio, microsoft.com) negli elenchi di domini consentiti.
 
 ## <a name="considerations-for-bulk-email"></a>Considerazioni per i messaggi di posta elettronica in blocco
 

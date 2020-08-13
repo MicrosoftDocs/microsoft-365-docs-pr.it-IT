@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754665"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652718"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -38,9 +38,10 @@ Tutte le altre organizzazioni dispongono di criteri di anti-phishing.
 
 Nella tabella seguente sono descritte le differenze di alto livello tra i criteri di anti-phishing e i criteri di anti-phishing ATP:
 
-||||
+****
+
+|Funzionalità|Criteri anti-phishing|Criteri di anti-phishing ATP|
 |---|:---:|:---:|
-|**Caratteristica**|**Criteri anti-phishing**|**Criteri di anti-phishing ATP**|
 |Criterio predefinito creato automaticamente|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Creare criteri personalizzati|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Impostazioni di criteri<sup>\*</sup>|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

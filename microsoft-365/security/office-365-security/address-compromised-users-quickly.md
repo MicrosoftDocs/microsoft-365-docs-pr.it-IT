@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Informazioni su come velocizzare il processo di rilevamento e indirizzamento degli account utente compromessi con le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5a1dd64a0b30bb230af0d96432ae9542ce0370d8
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635773"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656910"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Indirizzare gli account utente compromessi con indagini e risposte automatiche
 
@@ -31,7 +31,7 @@ Il PlayBook di sicurezza utente compromesso consente al team di sicurezza dell'o
 
 - Velocizzare il rilevamento degli account utente compromessi;
 
-- Limitare l'ambito di una violazione quando un account è compromesso; e 
+- Limitare l'ambito di una violazione quando un account è compromesso; e
 
 - Rispondere agli utenti compromessi in modo più efficace ed efficiente.
 
@@ -60,27 +60,29 @@ Quando un account utente viene compromesso, vengono attivati gli avvisi. In alcu
 
 ### <a name="view-and-investigate-restricted-users"></a>Visualizzazione e analisi degli utenti con restrizioni
 
-Sono disponibili alcune opzioni per l'esplorazione di un elenco di utenti con restrizioni. Ad esempio, nel centro sicurezza & conformità, è possibile accedere a**utenti con restrizioni**di**Verifica** > di **gestione** > delle minacce. Nella procedura seguente viene descritta la struttura di spostamento tramite il dashboard **avvisi** , che consente di visualizzare diversi tipi di avvisi che potrebbero essere stati attivati.
+Sono disponibili alcune opzioni per l'esplorazione di un elenco di utenti con restrizioni. Ad esempio, nel centro sicurezza & conformità, è possibile accedere a utenti con restrizioni di verifica di **gestione delle minacce**  >  **Review**  >  **Restricted Users**. Nella procedura seguente viene descritta la struttura di spostamento tramite il dashboard **avvisi** , che consente di visualizzare diversi tipi di avvisi che potrebbero essere stati attivati.
 
 1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso.
 
-2. Nel riquadro di spostamento, scegliere **Alerts** > **Dashboard**avvisi.
+2. Nel riquadro di spostamento, scegliere **Alerts**  >  **Dashboard**avvisi.
 
-3. Nell' **altro widget avvisi** scegliere utenti con **restrizioni**.<br/>
-   ![Altri widget avvisi](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
-   Verrà aperto l'elenco degli utenti con restrizioni.<br/>![Utenti con restrizioni in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg) 
+3. Nell' **altro widget avvisi** scegliere utenti con **restrizioni**.
 
-4. Selezionare un account utente nell'elenco per visualizzare i dettagli e intraprendere un'azione, ad esempio [il rilascio dell'utente con restrizioni](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam). 
+   ![Altri widget avvisi](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+
+   Verrà aperto l'elenco degli utenti con restrizioni.<br/>![Utenti con restrizioni in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
+
+4. Selezionare un account utente nell'elenco per visualizzare i dettagli e intraprendere un'azione, ad esempio [il rilascio dell'utente con restrizioni](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 ### <a name="view-details-about-automated-investigations"></a>Visualizzare i dettagli sulle indagini automatizzate
 
-Dopo aver avviato un'indagine automatizzata, è possibile visualizzare i dettagli e i risultati nel centro sicurezza & conformità. Andare a > **indagini**sulla **gestione delle minacce**e quindi selezionare un'analisi per visualizzarne i dettagli.
+Dopo aver avviato un'indagine automatizzata, è possibile visualizzare i dettagli e i risultati nel centro sicurezza & conformità. Andare a indagini sulla **gestione delle minacce**  >  **Investigations**e quindi selezionare un'analisi per visualizzarne i dettagli.
 
 Per ulteriori informazioni, vedere [visualizzare i dettagli di un'indagine](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 
 ## <a name="keep-the-following-points-in-mind"></a>Tenere in considerazione i seguenti punti
 
-- **Rimanere al di sopra degli avvisi**. Come si sa, più a lungo non viene rilevato un compromesso, maggiore è il potenziale di impatto e costo diffuso per l'organizzazione, i clienti e i partner. Il rilevamento precoce e la risposta tempestiva sono fondamentali per attenuare le minacce e, soprattutto, quando l'account di un utente viene compromesso. 
+- **Rimanere al di sopra degli avvisi**. Come si sa, più a lungo non viene rilevato un compromesso, maggiore è il potenziale di impatto e costo diffuso per l'organizzazione, i clienti e i partner. Il rilevamento precoce e la risposta tempestiva sono fondamentali per attenuare le minacce e, soprattutto, quando l'account di un utente viene compromesso.
 
 - **L'automazione fornisce assistenza, ma non sostituisce il team delle operazioni di sicurezza**. L'analisi automatizzata e le funzionalità di risposta possono rilevare un utente compromesso all'inizio, ma il team delle operazioni di sicurezza avrà probabilmente bisogno di intraprendere indagini e correzioni. Serve aiuto? Vedere [operazioni di revisione e approvazione](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions).
 

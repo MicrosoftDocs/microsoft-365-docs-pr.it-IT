@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Per mantenere la fiducia degli utenti nell'utilizzo della posta elettronica, Microsoft ha messo a punto vari criteri e tecnologie che consentono di proteggere gli utenti.
-ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208235"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652658"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servizi per i non clienti che inviano la posta a Microsoft 365
 
@@ -31,12 +31,15 @@ In questa panoramica vengono fornite informazioni sui vantaggi forniti all'organ
 
 ## <a name="sender-solutions"></a>Soluzioni del mittente
 
-|**Servizio**|**Vantaggi**|
-|:-----|:-----|
+****
+
+|Servizio|Vantaggi|
+|---|---|
 |Contenuto della Guida in linea|Fornisce <br/> Punto di partenza per qualsiasi problema relativo alla distribuzione di comunicazioni agli utenti di EOP. <br/><br/> Include una semplice guida online con i criteri e i requisiti. <br/><br/> Una panoramica dei filtri per la posta indesiderata e delle tecnologie di autenticazione impiegate da Microsoft.|
 |[Supporto tecnico Microsoft](#microsoft-support)|Fornisce supporto per l'escalation e la self-service per i problemi di recapito.|
 |[Portale di delist IP di protezione da posta indesiderata](#anti-spam-ip-delist-portal)|Strumento per inviare la richiesta di esclusione di indirizzi IP. Prima di inoltrare la richiesta, è responsabilità del mittente garantire che qualsiasi ulteriore messaggio di posta proveniente dall'IP in questione non sia abusivo o dannoso.|
 |[Segnalazione di abusi e posta indesiderata per posta indesiderata proveniente da Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Consente di mantenere la posta indesiderata e gli altri messaggi non voluti inviati da Exchange Online e ingombrare Internet e il sistema di posta elettronica.|
+|
 
 ## <a name="microsoft-support"></a>Supporto tecnico Microsoft
 
@@ -56,7 +59,7 @@ Microsoft offre diverse opzioni di supporto per gli utenti che hanno problemi a 
 
 ## <a name="anti-spam-ip-delist-portal"></a>Portale di delist IP di protezione da posta indesiderata
 
-Si tratta di un portale self-service che è possibile utilizzare per rimuovere se stessi dall'elenco dei mittenti bloccati di Microsoft 365. Utilizzare questo portale se si riceve un messaggio di errore quando si tenta di inviare una posta elettronica a un destinatario il cui indirizzo di posta elettronica è in Microsoft 365 e non si ritiene di dover essere. Per ulteriori informazioni, vedere [use the delist Portal to Remove yourself from the Blocked Senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Si tratta di un portale self-service che è possibile utilizzare per rimuovere se stessi dall'elenco dei mittenti bloccati di Microsoft 365. Utilizzare questo portale se si riceve un messaggio di errore quando si tenta di inviare una posta elettronica a un destinatario il cui indirizzo di posta elettronica è in Microsoft 365 e non si ritiene di dover essere. Per altre informazioni, vedere [Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco di mittenti bloccati](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Segnalazione di abusi e posta indesiderata per posta indesiderata proveniente da Exchange Online
 

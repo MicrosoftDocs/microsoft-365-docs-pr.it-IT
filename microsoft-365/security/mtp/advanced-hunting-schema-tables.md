@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 308337f806d54f1beb7ae6112b2ed883707d4513
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046047"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649296"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendere schema di ricerca avanzato
 
@@ -81,5 +81,5 @@ Di seguito sono elencate tutte le tabelle dello schema. Ogni nome di tabella rim
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Usare i risultati delle query](advanced-hunting-query-results.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
-- [Ricerca delle minacce su dispositivi ed e-mail](advanced-hunting-query-emails-devices.md)
-- [Applicazione delle procedure consigliate per le query](advanced-hunting-best-practices.md)
+- [Cercare tra i dispositivi, i messaggi di posta elettronica, le app e le identità](advanced-hunting-query-emails-devices.md)
+- [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)
