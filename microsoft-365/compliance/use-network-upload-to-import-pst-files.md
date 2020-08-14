@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come usare il caricamento in rete per importare più file PST in blocco nelle cassette postali degli utenti in Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14b70c0ab219f1d6153ceef601e3b4b5b4c76d8a
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: c126a8e00ae5182d42122fb98f95ffd585360412
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641631"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662290"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usare il caricamento in rete per importare file PST dell'organizzazione in Microsoft 365
 
@@ -390,4 +390,4 @@ Di seguito viene riportata un'illustrazione e una descrizione del processo di ca
     
 5. **Filtrare i dati PST che verranno importati nelle cassette postali:** dopo la creazione e l'avvio del processo di importazione, Microsoft 365 analizza i dati nei file PST (in modo sicuro) identificando l'età degli elementi e i diversi tipi di messaggio inclusi nei file PST. Quando l'analisi è completa e i dati sono pronti per l'importazione, si può scegliere di importare tutti i dati nei file PST così come sono oppure filtrare i dati da importare impostando dei filtri.
     
-6. **Avviare il processo di importazione PST** - Dopo l'avvio del processo di importazione, Microsoft 365 usa le informazioni nel file di mapping dell'importazione PST per importare i file PST dal percorso di Archiviazione di Azure alle cassette postali degli utenti. Le informazioni sullo stato del processo di importazione, incluse quelle relative a ogni file PST da importare, vengono visualizzate nella pagina **Importa file PST** nel Centro sicurezza e conformità. Al termine del processo di importazione, lo stato del processo è impostato su **Completato**.
+6. **Avviare il processo di importazione PST**: dopo l'avvio del processo di importazione, Microsoft 365 usa le informazioni nel file di mapping dell'importazione PST per importare i file PST dal percorso di Archiviazione di Azure alle cassette postali degli utenti. Le informazioni sullo stato del processo di importazione, incluse quelle relative a ogni file PST da importare, vengono visualizzate nella pagina **Importa file PST** nel Centro sicurezza e conformità. Al termine del processo di importazione, lo stato del processo è impostato su **Completato**.

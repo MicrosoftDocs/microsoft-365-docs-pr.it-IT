@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso usando gli strumenti disponibili in Microsoft 365.
-ms.openlocfilehash: cd9e5b4f9951bd332950cdc22ba3f3740d084dfb
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d412f40a6c3e1e2f1182437419ce9e0d28ed10eb
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527781"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674615"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Rispondere a un account di posta elettronica compromesso
 
@@ -68,11 +68,8 @@ Se un utente segnala qualsiasi dei sintomi precedenti, è necessario eseguire ul
 - **Log di accesso di Azure AD e altri report sui rischi disponibili nel portale di Azure AD**: esaminare i valori nelle colonne seguenti:
 
   - Esaminare l'indirizzo IP
-
   - Posizioni di accesso
-
   - Orari di accesso
-
   - Esito dell’accesso
 
 ## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>Come proteggere e ripristinare la funzione di posta elettronica in un potenziale account e cassetta postale di Microsoft 365 compromessi.
@@ -85,31 +82,31 @@ Anche l’accesso all’account è stato riacquisito rapidamente, un utente mali
 
 ### <a name="step-1-reset-the-users-password"></a>Passaggio 1: Reimpostare la password dell’utente.
 
-> [!WARNING]
-> Non inviare la nuova password per l'utente desiderato tramite posta elettronica, poiché l’utente malintenzionato potrebbe ancora avere accesso alla cassetta postale.
+Seguire le procedure in [reimpostare la password per un utente ](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
 
-1. Seguire i passaggi descritti in Reimpostare la password di App Microsoft 365 for business per altri utenti in[Reimpostare le password per App Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
-
-**Note**:
-
-- Assicurarsi che la password sia complessa e che contenga lettere maiuscole e minuscole, almeno un numero e almeno un carattere speciale.
-
-- Non riutilizzare le cinque password più recenti. Anche se il requisito di cronologia delle password consente di riutilizzare una password più recente, è necessario sceglierla in modo che un utente malintenzionato non possa indovinarla.
-
-- Se l'identità dell'utente locale è federata con Microsoft 365, è necessario cambiare la password locale e quindi informare l'amministratore della violazione.
-
-> [!TIP]
-> È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi.  Per maggiori dettagli sull’autenticazione a più fattori, visitare [Configurare l’autenticazione a più fattori](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> [!IMPORTANT]
+>
+> - Non inviare la nuova password per l'utente desiderato tramite posta elettronica, poiché l’utente malintenzionato potrebbe ancora avere accesso alla cassetta postale.
+>
+> - Assicurarsi che la password sia complessa e che contenga lettere maiuscole e minuscole, almeno un numero e almeno un carattere speciale.
+>
+> - Non riutilizzare le cinque password più recenti. Anche se il requisito di cronologia delle password consente di riutilizzare una password più recente, è necessario sceglierla in modo che un utente malintenzionato non possa indovinarla.
+>
+> - Se l'identità dell'utente locale è federata con Microsoft 365, è necessario cambiare la password locale e quindi informare l'amministratore della violazione.
+>
+> - Assicurati di aggiornare le password dell'app. Le password dell'app non vengono automaticamente revocate quando si reimposta la password di un account utente. L'utente deve eliminare le password dell'app esistenti e crearne nuove. Per istruzioni, vedere [creare ed eliminare password per le app dalla pagina Verifica di sicurezza aggiuntiva](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+>
+> - È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi. Per maggiori dettagli sull’autenticazione a più fattori, visitare [Configurare l’autenticazione a più fattori](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Passaggio 2: Rimuovere indirizzi di inoltro della posta elettronica
 
-1. Aprire l’**interfaccia di amministrazione di Microsoft 365 > Utenti attivi**.
+1. Apri l’interfaccia di amministrazione di Microsoft 365 in <https://admin.microsoft.com>
 
-2. Trovare l'account utente in questione ed espandere le ** impostazioni della posta**.
+2. Passa a **Utenti** \> **Utenti attivi**. Trova l'account utente in questione e seleziona l'utente (riga) senza selezionare la casella di controllo.
 
-3. Su **Inoltro della posta elettronica**, fare clic su **Modifica**.
+3. Nel riquadro a comparsa dei dettagli visualizzato, seleziona la scheda **Posta**.
 
-4. Rimuovere qualsiasi indirizzo di inoltro sospetto.
+4. Se il valore nella sezione **Inoltro e-mail** è **Applicato**, fai clic su **Gestisci inoltro e-mail**. Nel riquadro a comparsa **Gestisci inoltro e-mail** visualizzato, deseleziona **Inoltra tutte le e-mail inviate a questa cassetta postale**, e fai clic su **Salva modifiche**.
 
 ### <a name="step-3-disable-any-suspicious-inbox-rules"></a>Passaggio 3 disabilitare tutte le regole di posta in arrivo sospette
 
@@ -132,50 +129,50 @@ Per sbloccare l’invio di posta elettronica da una cassetta postale, seguire le
 > [!IMPORTANT]
 > È possibile bloccare l’accesso all’account compromesso fino a quando non si ritiene che sia sicuro abilitare di nuovo l'accesso.
 
-1. Passare all'interfaccia di amministrazione di Microsoft 365.
+1. Apri l'interfaccia di amministrazione di Microsoft 365 e vai a **utenti** \> **utenti attivi**.
 
-2. Nell'Interfaccia di amministrazione di Microsoft 365, selezionare **Utenti**.
+2. Trova e seleziona l'account utente, fai clic sull'![icona Altro](../../media/ITPro-EAC-MoreOptionsIcon.png) e seleziona **Modifica stato di accesso**.
 
-3. Selezionare il dipendente da bloccare e scegliere **Modifica** accanto a **Stato accesso** nel riquadro degli utenti.
+3. Nel riquadro **Blocca accesso** visualizzato, seleziona **Impedisci a questo utente di accedere**, e fai clic su **Salva modifiche**.
 
-4. Nel riquadro **Stato accesso** scegliere **Accesso bloccato** e quindi **Salva**.
+4. Apri l'interfaccia di amministrazione di Exchange (EAC) su <admin.protection.outlook.com/ecp/> e vai a **Destinatari> Cassette postali**.
 
-5. Nell'interfaccia di amministrazione nel riquadro di spostamento in basso a sinistra, espandere **Interfacce di amministrazione** e selezionare **Exchange**.
+5. Individua e seleziona l'utente. Nel riquadro dei dettagli eseguire le operazioni seguenti:
 
-6. Nell'interfaccia di amministrazione di Exchange passare a **Destinatari > Cassette postali**.
+   - Nella sezione**Funzionalità telefoniche e vocali**, effettua le seguenti operazioni:
 
-7. Selezionare l'utente e nella relativa pagina delle proprietà, in **Dispositivi mobili**, selezionare **Disabilita Exchange ActiveSync**, **Disabilita OWA per i dispositivi** e rispondere **sì** per entrambi.
+     - Seleziona **Disabilita Exchange ActiveSync**, fai clic su **Sì** nell'avviso visualizzato.
+     - Seleziona **OWA per dispositivi**, fai clic su **Sì** nell'avviso visualizzato.
 
-8. In **Connettività posta elettronica** fare clic su **Disabilita** e rispondere **sì**.
+   - Nella sezione **Connettività e-mail** per Outlook sul web, fai clic su **Disabilita** e poi su **Sì** nell'avviso visualizzato.
 
 ### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>Passaggio 6 Facoltativo: Rimuovere l'account potenzialmente compromesso da tutti i gruppi di ruoli amministrativi
 
 > [!NOTE]
 > Dopo aver protetto l'account, è possibile ripristinare l'appartenenza ai gruppi di ruoli amministrativi.
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 con l'account di amministratore globale e aprire **Utenti attivi**.
+1. Accedere con il proprio account di amministratore globale:
 
-2. Individuare i possibili account compromessi e controllare manualmente se sono presenti dei ruoli amministrativi assegnati all'account.
+2. Nell'interfaccia di amministrazione di Microsoft 365 esegui le seguenti operazioni:
 
-3. Aprire il **Centro sicurezza e conformità**.
+   1. Passa a **Utenti** \> **Utenti attivi**.
+   2. Trova e seleziona l'account utente, fai clic sull'![icona Altro](../../media/ITPro-EAC-MoreOptionsIcon.png) e seleziona **Gestisci ruoli**.
+   3. Rimuovi gli eventuali ruoli da amministratore assegnati all'account. Al termine, fai clic su **salvare le modifiche**.
 
-4. Fare clic su **Autorizzazioni**.
+3. Nel centro sicurezza e conformità in <https://protection.office.com>esegui le seguenti operazioni:
 
-5. Controllare manualmente i gruppi di ruoli per verificare se l’account potenzialmente compromesso sia un membro di uno di questi account.  Se è:
+   Seleziona **autorizzazioni**, seleziona ogni gruppo di ruoli nell'elenco e cerca l'account utente nella sezione **membri** nel riquadro a comparsa dettagli visualizzato. Se il gruppo di ruoli contiene l'account utente, esegui le operazioni seguenti:
 
-   a. Fare clic sul gruppo di ruoli e selezionare **Modifica gruppo di ruoli**.
+   a. Fai clic su **modifica** accanto a **membri**.
+   b. Nel riquadro a comparsa **modifica selezionare membri** visualizzato e fai clic su **modifica**.
+   c. Nel riquadro a comparsa visualizzato **Scegli membri**, seleziona l'account utente, e fai clic su **Rimuovi**. Al termine, faI clic su **Completato**, **Salva**e **Chiudi**.
 
-   b. Fare clic su **Scegli membri** e **Modifica** per rimuovere l'utente dal gruppo di ruoli.
+4. Nell’interfaccia di amministrazione di Exchange in <admin.protection.outlook.com/ecp/>, esegui i passaggi seguenti:
 
-6. Aprire **l'interfaccia di amministrazione di Exchange**.
+   Seleziona **Autorizzazioni**, seleziona manualmente ogni gruppo di ruoli e nel riquadro dei dettagli verifica gli account utente nella sezione **Membri**.  Se il gruppo di ruoli contiene l'account utente, esegui le operazioni seguenti:
 
-7. Fare clic su **Autorizzazioni**.
-
-8. Controllare manualmente i gruppi di ruoli per verificare se l’account potenzialmente compromesso sia un membro di uno di questi account. Se è:
-
-   a. Fare clic sul gruppo di ruoli e selezionare **Modifica**.
-
-   b. Fare clic sulla sezione**Membri** per rimuovere l'utente dal gruppo di ruoli.
+   a. Seleziona il gruppo di ruoli, fai clic su **Modifica** ![Modifica icona](../../media/ITPro-EAC-EditIcon.png).
+   b. Nella sezione **membri** seleziona l'account utente e fai clic su **Rimuovi** ![Rimuovi icona](../../media/ITPro-EAC-RemoveIcon.gif). Al termine, fai clic su **Salva**.
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>Passaggio 7 facoltativo: Precauzioni di prevenzione aggiuntive
 

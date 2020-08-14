@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: a6826be5cccf89d3b2e48e0e37df9a9263e4a8a7
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: acf440d7bc46c51a6c00b10d06619868a09e155d
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201510"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662244"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -42,12 +42,12 @@ Quando si abilitano le etichette di riservatezza per i file di Office in SharePo
 
 - Gli utenti esterni possono accedere ai documenti contrassegnati con la crittografia tramite gli account Guest. Per ulteriori informazioni, vedere [supporto per utenti esterni e contenuto con etichetta](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
-- Office 365 eDiscovery supporta la ricerca full-text per questi file. I criteri di prevenzione della perdita di dati (DLP) supportano i contenuti di questi file.
+- Office 365 eDiscovery supporta la ricerca full-text per questi file e i criteri di prevenzione della perdita di dati (DLP) supportano il contenuto di questi file.
 
 > [!NOTE]
-> Se è stata applicata la crittografia con una chiave locale, una topologia di gestione delle chiavi spesso definita "tenere la propria chiave" (HYOK) oppure utilizzando la [crittografia a chiave doppia](double-key-encryption.md), il comportamento di SharePoint per l'elaborazione del contenuto del file non cambia.
+> Se la crittografia è stata applicata con una chiave locale (una topologia di gestione delle chiavi spesso definita "tenere la propria chiave" o HYOK) oppure utilizzando la [crittografia a chiave doppia](double-key-encryption.md), il comportamento di SharePoint per l'elaborazione del contenuto del file non cambia.
 >
-> Il comportamento di SharePoint non cambia anche per i file etichettati e crittografati esistenti in SharePoint. Affinché questi file possano trarre vantaggio dalle nuove funzionalità, devono essere scaricati e caricati o modificati dopo aver eseguito il comando per abilitare le etichette di riservatezza per SharePoint e OneDrive. SharePoint può quindi elaborare questi file. Ad esempio, verranno restituiti nei risultati di ricerca e eDiscovery.
+> Il comportamento di SharePoint non cambia anche per i file esistenti in SharePoint che sono etichettati con la crittografia tramite una singola chiave basata su Azure. Affinché questi file traggano vantaggio dalle nuove funzionalità dopo aver abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive, è necessario che i file vengano scaricati e caricati di nuovo oppure modificati. Ad esempio, verranno restituiti nei risultati di ricerca e eDiscovery.
 
 Dopo aver abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive, sono disponibili tre nuovi [eventi di controllo](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) per il monitoraggio delle etichette di riservatezza applicate ai documenti in SharePoint e OneDrive:
 - **Etichetta di riservatezza applicata al file**
@@ -201,7 +201,7 @@ Con questo comportamento, è possibile garantire che tutti i file di Office e PD
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>Ricerca di documenti in base all'etichetta di riservatezza
 
-Utilizzare la proprietà gestita **InformationProtectionLabelId** per trovare tutti i documenti di SharePoint o OneDrive che dispongono di un'etichetta di riservatezza specifica. Utilizzare la sintassi seguente:`InformationProtectionLabelId:<GUID>`
+Utilizzare la proprietà gestita **InformationProtectionLabelId** per trovare tutti i documenti di SharePoint o OneDrive che dispongono di un'etichetta di riservatezza specifica. Utilizzare la sintassi seguente: `InformationProtectionLabelId:<GUID>`
 
 Ad esempio, per cercare tutti i documenti che sono stati etichettati come "riservati" e tale etichetta ha un GUID di "8faca7b8-8d20-48A3-8ea2-0f96310a848e", nella casella di ricerca digitare quanto segue:
 
