@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 4aa6947af114856d73c3e048b829daf8f47f0f48
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652646"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662255"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -82,13 +82,13 @@ Quando si dispone di [Office 365 Advanced Threat Protection](office-365-atp.md),
 5. Nelle **impostazioni che si applicano al contenuto, ad eccezione della sezione posta elettronica** , selezionare (o deselezionare) le opzioni che si desidera utilizzare. (Si consiglia di selezionare tutte le opzioni).
 
 6. Scegliere **Salva**.
+    
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients"></a>Passaggio 3: aggiungere (o modificare) criteri dei collegamenti sicuri di ATP che si applicano a tutti i destinatari di posta elettronica specifici
 
-## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Passaggio 3: aggiungere o modificare i criteri per i collegamenti sicuri di ATP che si applicano ai destinatari di messaggi di posta elettronica specifici
-
-Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefinito che si applica a tutti gli utenti, il passaggio successivo consiste nel definire criteri aggiuntivi che si applicano a destinatari specifici. Ad esempio, è possibile specificare eccezioni per il criterio predefinito definendo un criterio aggiuntivo.
-
-1. Accedere a <https://protection.office.com> e accedere con l'account aziendale o dell'Istituto di istruzione.
-
+Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefinito che si applica a tutti gli utenti, il passaggio successivo consiste nel definire criteri aggiuntivi che si applicano a tutti i destinatari di posta elettronica specifici. Ad esempio, è possibile specificare eccezioni per il criterio predefinito definendo un criterio aggiuntivo o creando restrizioni più granulari per tutti i dipendenti.
+  
+1. Accedere a <https://protection.office.com> e accedere con l'account aziendale o dell'Istituto di istruzione. 
+    
 2. Nella barra di spostamento sinistra fare clic su **criteri**in **gestione minacce**.
 
 3. Scegliere **collegamenti attendibili**.
@@ -120,7 +120,7 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
 6. Scegliere **Salva**.
 
 > [!NOTE]
-> I criteri per i collegamenti sicuri ATP con priorità maggiore avranno la precedenza. Se un utente è soggetto a due o più poliziotti, solo il criterio di priorità più alta avrà effetto.
+> I criteri per i collegamenti sicuri ATP con priorità maggiore avranno la precedenza. Se un utente è soggetto a due o più criteri, solo il criterio di priorità più alta avrà effetto. Se si desidera che il criterio del cliente abbia la precedenza, è necessario aumentare la priorità del criterio.
 
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Passaggio 4: informazioni sulle opzioni dei criteri collegamenti sicuri di ATP
 

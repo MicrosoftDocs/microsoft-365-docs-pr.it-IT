@@ -1,7 +1,7 @@
 ---
 title: Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Skype for business online utilizzino il proprio nome di dominio.
-ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560342"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662233"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar
 
@@ -38,7 +38,7 @@ ms.locfileid: "46560342"
   
 Controllare [la configurazione del dominio (istruzioni specifiche per l'host)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) per vedere se sono disponibili istruzioni per il registrar. 
   
-Seguire queste istruzioni per aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Skype for business online utilizzino il proprio nome di dominio. A tale scopo, è necessario verificare il dominio e quindi modificare i server dei nomi del dominio in Microsoft 365 in modo che i record DNS corretti possano essere configurati per l'utente. Attenersi alla seguente procedura se le istruzioni seguenti descrivono la propria situazione:
+Seguire le istruzioni riportate di seguito per aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e i team utilizzeranno il proprio nome di dominio. A tale scopo, è necessario verificare il dominio e quindi modificare i server dei nomi del dominio in Microsoft 365 in modo che i record DNS corretti possano essere configurati per l'utente. Attenersi alla seguente procedura se le istruzioni seguenti descrivono la propria situazione:
   
 - Si dispone di un dominio personalizzato e si desidera configurarlo per l'utilizzo con Microsoft 365.
     
@@ -114,17 +114,19 @@ Quando si arriva all'ultimo passaggio della procedura guidata di configurazione 
   
 Per modificare i server dei nomi del dominio presso il sito Web del registrar, seguire questa procedura:
   
-1. Trovare l'area del sito Web del registrar in cui è possibile modificare i server dei nomi per il dominio.
+1. Individuare l'area del sito Web del registrar in cui è possibile modificare i server dei nomi per il dominio o un'area in cui è possibile utilizzare i server dei nomi personalizzati.
     
-2. Creare due record dei server dei nomi o modificare quelli esistenti, in modo che corrispondano ai valori seguenti:
+2. Creare i record del server dei nomi o modificare i record del nameserver esistenti in modo che corrispondano ai valori seguenti:
     
 |||
 |:-----|:-----|
 |Primo server dei nomi  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Secondo server dei nomi  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Terzo server dei nomi  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Quarto server dei nomi  <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > È consigliabile utilizzare almeno due record dei server dei nomi. Se sono elencati altri server dei nomi, è possibile eliminarli o modificarli in **NS3.BDM.microsoftonline.com** e **NS4.BDM.microsoftonline.com**. 
+   > È consigliabile aggiungere tutti e quattro i record, ma se il servizio di registrazione supporta solo due, aggiungere **NS1.BDM.microsoftonline.com** e **NS2.BDM.microsoftonline.com**. 
   
 3. Salvare le modifiche.
     
