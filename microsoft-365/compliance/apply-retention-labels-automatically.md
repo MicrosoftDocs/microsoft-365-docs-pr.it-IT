@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare e pubblicare automaticamente etichette di conservazione in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560617"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648805"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -136,6 +136,8 @@ Per altre informazioni su queste opzioni, vedere [Tuning rules to make them easi
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Applicare automaticamente etichette al contenuto con parole chiave o con proprietà disponibili per le ricerche
 
 È possibile applicare automaticamente etichette al contenuto che soddisfa determinate condizioni. Le condizioni disponibili ora supportano l'applicazione di un'etichetta al contenuto che include parole, frasi, valori o proprietà disponibili per le ricerche specifiche. È possibile perfezionare la query usando operatori di ricerca come AND, OR e NOT.
+
+Durante l'applicazione automatica delle etichette per le proprietà ricercabili, nella query non è possibile usare un alias per una proprietà gestita. Deve essere il nome effettivo della proprietà gestita, ad esempio RefinableString01.
 
 Per altre informazioni sulla sintassi della query, vedere:
 

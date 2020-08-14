@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588208"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649153"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -124,6 +124,8 @@ In sintesi, un criterio bloccato può essere aumentato o esteso, ma non ridotto,
   
 > [!IMPORTANT]
 > Prima di bloccare un criterio di conservazione, è essenziale comprendere l'impatto dell'operazione e verificare se sia necessario all'organizzazione per soddisfare i requisiti normativi. Dopo l'applicazione del blocco di conservazione, gli amministratori non potranno disabilitare o eliminare il criterio.
+
+La Protezione dell'archiviazione viene applicata dopo la creazione del criterio di conservazione utilizzando PowerShell. Le istruzioni sono incluse in[Creare e configurare criteri di conservazione. ](create-retention-policies.md).
 
 #### <a name="releasing-a-retention-policy"></a>Rilascio dei criteri di conservazione
 

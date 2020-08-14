@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 9974bebef9809647e7fb87f98f9d2f505baca4f3
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3a08bd67ff705b0b11b815843041b146fbef388f
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126507"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656742"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -288,31 +288,37 @@ In genere l'aggiornamento è piuttosto rapido, ma può richiedere alcuni giorni.
 
 ## <a name="lock-a-retention-policy-by-using-powershell"></a>Bloccare i criteri di conservazione con PowerShell
 
-Se è necessario usare la [protezione dell'archiviazione](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) per soddisfare i requisiti normativi, occorre usare PowerShell.
+Se è necessario usare la [protezione dell'archiviazione](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) per soddisfare i requisiti normativi, occorre usare PowerShell. Poiché gli amministratori non possono disabilitare o eliminare i criteri di conservazione dopo l'applicazione della protezione dell’archiviazione, l'abilitazione di questa caratteristica non è disponibile nell'UI per proteggerla dalla configurazione accidentale.
+
+Tutti i criteri di conservazione con qualsiasi protezione dell’archiviazione del supporto di configurazione. Tuttavia, quando si usano i comandi di PowerShell seguenti, si noterà che il parametro **Carico di lavoro** visualizza sempre **Exchange, SharePoint, OneDriveForBusines, Skype, ModernGroup** invece di riflettere i carichi di lavoro effettivi configurati nel criterio. Si tratta solo di un problema di visualizzazione.
 
 1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-2. Visualizzare un elenco dei criteri di conservazione e trovare il nome del criterio da bloccare eseguendo `Get-RetentionCompliancePolicy`.
+2. Visualizzare un elenco dei criteri di conservazione e trovare il nome del criterio da bloccare eseguendo [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy). Ad esempio:
     
    ![Elenco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
-3. Per applicare la protezione dell'archiviazione su un criterio di conservazione, eseguire `Set-RetentionCompliancePolicy` con il parametro `RestrictiveRetention` impostato su true. Ad esempio:
-
-   ```powershell
-   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
-   ```
-   
-   ![Parametro RestrictiveRetention in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+3. Per applicare la protezione dell’archiviazione per il criterio di conservazione, eseguire il cmdlet [Set-RetentionCompliancePolicy]( ) con il nome del criterio di conservazione e il parametro *RestrictiveRetention* impostato su true:
     
-   Dopo aver eseguito il cmdlet, scegliere **Sì a tutti**:
+    ```powershell
+    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
+    ```
+    
+    Ad esempio:
+    
+    ![Parametro RestrictiveRetention in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+    
+     Quando viene richiesto, leggere e accettare le restrizioni disponibili in questa configurazione e scegliere **Sì a tutte**:
     
    ![Richiesta di conferma del blocco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
-La protezione dell'archiviazione è ora inserita nei criteri di conservazione. Se si esegue `Get-RetentionCompliancePolicy`, il parametro `RestrictiveRetention` viene impostato su true. Ad esempio:
+La protezione dell'archiviazione è ora inserita nei criteri di conservazione. Per confermare, eseguire di nuovo `Get-RetentionCompliancePolicy`, ma specificare il nome del criterio di conservazione e visualizzare i parametri dei criteri:
 
 ```powershell
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
+
+Dovrebbe essere visualizzato **RestrictiveRetention** è impostato su **True**. Ad esempio:
 
 ![Criteri bloccati con tutti i parametri visualizzati in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 8704930b6d1de9e329d892e62fb14b2c59111830
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560627"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656827"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -54,16 +54,15 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     Per istruzioni sulla configurazione, vedere [Come configurare i criteri di applicazione automatica di etichette per SharePoint, OneDrive e Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) in questa pagina.
     
     Caratteristiche specifiche dell'etichettatura automatica per SharePoint e OneDrive:
-    - Sono supportati i file di Office per Word, PowerPoint ed Excel.
+    - Sono supportati i file di Office per Word, PowerPoint ed Excel. È supportato il formato Open XML, ad esempio le estensioni .docx e .xlsx, ma non il formato di Microsoft Office 97-2003, ad esempio le estensioni .doc e .xls.
     - Massimo 25.000 file etichettati automaticamente nel tenant al giorno.
-    - Massimo di 10 raccolte di siti per ogni criterio di etichettatura automatica.
-    - Massimo di 10 criteri di etichetta automatica nel tenant.
+    - Massimo di 10 criteri di etichettatura automatica per tenant, ognuno dei quali ha un massimo di 10 siti (SharePoint o OneDrive).
     - I valori esistenti per "Modificato", "Modificato da" e la data non vengono cambiati dai criteri di etichettatura automatica, sia per la modalità di simulazione che per l'applicazione delle etichette.
     - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è la persona che ha creato l'etichetta di riservatezza.
 
     Caratteristiche specifiche dell'etichettatura automatica per Exchange:
     - A differenza dell'etichettatura manuale o dell'etichettatura automatica per le app di Office, negli allegati di Office (file Word, Excel e PowerPoint) e PDF vengono ricercate anche le condizioni specificate nei criteri di etichettatura automatica. Quando viene rilevata una corrispondenza, viene applicata un'etichetta al messaggio ma non all'allegato.
-        - Per i file di Office, è supportato il formato Open XML, ad esempio le estensioni .docx e .xlsx, ma non il formato di Microsoft Office 97-2003, ad esempio le estensioni .doc e .xls.
+        - Per questi file di Office, è supportato il formato Open XML, ad esempio le estensioni .docx e .xlsx, ma non il formato di Microsoft Office 97-2003, ad esempio le estensioni .doc e .xls.
     - Se sono presenti regole per il flusso di posta di Exchange o criteri di prevenzione della perdita dei dati che applicano la crittografia IRM: quando il contenuto viene identificato da queste regole o criteri e da un criterio di applicazione automatica di etichette, l'etichetta viene applicata. Se quell'etichetta applica la crittografia, le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati vengono ignorate. Se invece quella etichetta non applica la crittografia, in aggiunta all'etichetta vengono applicate le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati.
     - I messaggi di posta elettronica con crittografia IRM senza etichetta verranno sostituiti da un'etichetta con qualsiasi impostazione di crittografia se esiste una corrispondenza usando l'etichettatura automatica.
     - La posta in arrivo viene etichettata quando esiste una corrispondenza con le condizioni di etichettatura automatica. Tuttavia, se l'etichetta è configurata per la crittografia, la crittografia non viene applicata.
@@ -215,15 +214,15 @@ La modalità di simulazione è specifica dei criteri di applicazione automatica 
 
 Flusso di lavoro per un criterio di applicazione automatica di etichette:
 
-1. Creare e configurare un criterio di applicazione automatica di etichette
+1. Creare e configurare un criterio di applicazione automatica di etichette.
 
-2. Eseguire il criterio in modalità di simulazione e attendere almeno 24 ore
+2. Eseguire il criterio in modalità di simulazione e aspettare 24 ore o fino al completamento della simulazione.
 
-3. Rivedere i risultati e, se necessario, perfezionare il criterio, eseguirlo nuovamente in modalità di simulazione e attendere almeno 24 ore.
+3. Rivedere i risultati e, se necessario, perfezionare il criterio. Eseguire nuovamente la modalità di simulazione e attendere altre 24 ore o fino al completamento della simulazione.
 
 4. Ripetere il passaggio 3 in base alle esigenze.
 
-5. Distribuire in produzione
+5. Distribuire in produzione.
 
 La distribuzione simulata viene eseguita come il parametro WhatIf per PowerShell. Vengono riportati i risultati come se il criterio di applicazione automatica di etichette avesse applicato l'etichetta selezionata, usando le regole definite. È possibile perfezionare le regole, se necessario, ed eseguire di nuovo la simulazione. Tuttavia, dato che l'etichettatura automatica per Exchange si applica ai messaggi di posta elettronica inviati e ricevuti e non ai messaggi archiviati nelle cassette postali, i risultati relativi alla posta in una simulazione non saranno coerenti, a meno che non si riesca a inviare e ricevere gli stessi identici messaggi.
 
