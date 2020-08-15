@@ -1,5 +1,5 @@
 ---
-title: Riepilogo della sicurezza di Microsoft 365 Enterprise per Contoso Corporation
+title: Riepilogo di Microsoft 365 per la sicurezza aziendale per Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,22 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informazioni sul modo in cui Contoso usa le funzionalità di sicurezza in Microsoft 365 Enterprise.
-ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-ms.translationtype: HT
+description: Come Contoso utilizza le funzionalità di sicurezza in Microsoft 365 per Enterprise.
+ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268399"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686441"
 ---
-# <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Riepilogo della sicurezza di Microsoft 365 Enterprise per Contoso Corporation
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Riepilogo di Microsoft 365 per la sicurezza aziendale per Contoso Corporation
 
-Per ottenere l'approvazione della distribuzione di Microsoft 365 Enterprise dal reparto di sicurezza IT, è stata effettuata un'analisi approfondita della sicurezza. Ecco i requisiti di sicurezza di Contoso per il cloud:
+Per ottenere l'accesso alla distribuzione di Microsoft 365 per Enterprise da parte del reparto di sicurezza IT, è stata effettuata una revisione completa della sicurezza. Di seguito sono riportati i requisiti di sicurezza di Contoso per il cloud:
 
 - Utilizzare i metodi più rigorosi di autenticazione per l'accesso dei dipendenti alle risorse nel cloud
 - Verificare che i computer e i dispositivi mobili si connettano e accedano alle applicazioni in modo sicuro
@@ -36,7 +36,7 @@ Per ottenere l'approvazione della distribuzione di Microsoft 365 Enterprise dal 
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Percorso di Contoso per la predisposizione della sicurezza di Microsoft 365
 
-Contoso ha usato la seguente procedura per predisporre il proprio sistema di sicurezza per la distribuzione di Microsoft 365 Enterprise:
+Contoso ha utilizzato i passaggi seguenti per preparare la propria sicurezza per la distribuzione di Microsoft 365 per Enterprise:
 
 1. Account amministratore limitati per il cloud
 
@@ -44,13 +44,13 @@ Contoso ha usato la seguente procedura per predisporre il proprio sistema di sic
 
 2. Analisi di classificazione dei dati eseguita in tre livelli
 
-   Contoso ha eseguito un'attenta revisione e ha stabilito i tre livelli, che sono stati utilizzati per determinare le funzionalità di Microsoft 365 Enterprise atte a proteggere i dati più importanti di Contoso.
+   Contoso ha eseguito un'attenta revisione e ha determinato i tre livelli, che sono stati utilizzati per determinare le caratteristiche di Microsoft 365 per l'organizzazione, in modo da proteggere i dati più importanti di contoso.
 
 3. Criteri di accesso, conservazione e protezione dei dati determinati per i livelli di dati
 
    In base ai livelli di dati, Contoso ha stabilito requisiti dettagliati, che verranno utilizzati per qualificare carichi di lavoro IT futuri spostati nel cloud.
 
-Conformemente alle procedure consigliate sulla sicurezza e ai requisiti di distribuzione di Microsoft 365 Enterprise, il reparto IT e gli amministratori della sicurezza di Contoso hanno distribuito numerose caratteristiche e funzionalità di sicurezza, come descritto nelle sezioni seguenti.
+In conformità con le procedure consigliate per la sicurezza e Microsoft 365 per i requisiti di distribuzione dell'organizzazione, gli amministratori della sicurezza e il reparto IT di Contoso hanno distribuito molte caratteristiche e funzionalità di sicurezza, come descritto nelle sezioni seguenti.
 
 ## <a name="identity--access-management"></a>Gestione di identità e accesso 
 

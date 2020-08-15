@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulle attività di Microsoft nel corso di un incidente di servizio in modo da poter preparare meglio i piani di continuità aziendale.
-ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 5486ad2ae8c2e5d97b466a8cbd2a4dbab416b29b
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067673"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686119"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Responsabilità del partner di cloud e dei clienti nella gestione della continuità aziendale
 
@@ -65,7 +65,7 @@ Considerare gli eventi che possono avere un impatto sulla forza lavoro come una 
 
 ### <a name="location"></a>Posizione
 Molte organizzazioni richiedono che i dipendenti si trovino in posizioni fisiche o di rete specifiche per connettersi ai sistemi aziendali e ai servizi cloud.  
-Microsoft pubblica i [principi di connettività di rete](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) che guidano le imprese attraverso le procedure consigliate per configurare la connettività di rete alle risorse cloud. Esempi di ottimizzazione includono l'implementazione di VPN tunnel split per consentire le connessioni direttamente dalla rete di un utente invece che su un tunnel VPN.  Anche se questi principi di connettività sono importanti per mantenere connessioni con una latenza bassa, la resilienza dei servizi richiede metodi alternativi per la connessione a risorse aziendali per la collaborazione generale.
+Microsoft pubblica i [principi di connettività di rete](microsoft-365-network-connectivity-principles.md) che guidano le imprese attraverso le procedure consigliate per configurare la connettività di rete alle risorse cloud. Esempi di ottimizzazione includono l'implementazione di VPN tunnel split per consentire le connessioni direttamente dalla rete di un utente invece che su un tunnel VPN.  Anche se questi principi di connettività sono importanti per mantenere connessioni con una latenza bassa, la resilienza dei servizi richiede metodi alternativi per la connessione a risorse aziendali per la collaborazione generale.
 
 ### <a name="systems"></a>Sistemi
 Molte soluzioni per la collaborazione dipendono dai sistemi, come la rete WAN (Wide Area Network) aziendale. Se questi sistemi non fossero disponibili, quali sarebbero le ripercussioni per l’organizzazione?

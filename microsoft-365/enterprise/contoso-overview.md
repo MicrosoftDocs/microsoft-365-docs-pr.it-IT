@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulla società Contoso Corporation e sulla struttura a livelli dei suoi uffici nel mondo.
-ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 206017744a004ba4e51b6e0d157b172cbe145c66
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068298"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686453"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Panoramica di Contoso Corporation
 
@@ -58,9 +58,9 @@ Gli uffici di Contoso di tutto il mondo seguono una struttura a tre livelli.
 
 Il 25% dei dipendenti di Contoso è esclusivamente mobile, con una percentuale maggiore di dipendenti solo mobile negli hub regionali e negli uffici secondari. Fornire un supporto migliore ai dipendenti che operano solo da dispositivi mobili è un obiettivo aziendale importante per Contoso.
 
-## <a name="design-considerations-for-microsoft-365-enterprise"></a>Considerazioni sulla progettazione di Microsoft 365 Enterprise
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considerazioni sulla progettazione per Microsoft 365 per Enterprise
 
-Gli architetti IT di Contoso hanno identificato i requisiti e le considerazioni di progettazione seguenti per la distribuzione di Microsoft 365 Enterprise: 
+Gli architetti IT di Contoso hanno identificato i requisiti e le considerazioni di progettazione seguenti quando si distribuisce Microsoft 365 per Enterprise: 
 
 - Più aree geografiche con requisiti di conformità alle normative locali
 - Un datacenter intranet centrale nella sede centrale e server di applicazioni locali che ospitano applicazioni line of business interne
@@ -74,11 +74,11 @@ Gli architetti IT di Contoso hanno identificato i requisiti e le considerazioni 
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Informazioni](contoso-infra-needs.md) sull'infrastruttura IT locale di Contoso Corporation e su come sono state gestite le sue esigenze aziendali con Microsoft 365 Enterprise.
+[Informazioni sull'infrastruttura](contoso-infra-needs.md) it locale di Contoso Corporation e sul modo in cui le proprie esigenze aziendali sono state affrontate con Microsoft 365 per Enterprise.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida all'implementazione](deploy-microsoft-365-enterprise.md)
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
 [Guide dei laboratori di testing](m365-enterprise-test-lab-guides.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Autenticazione a più fattori dell'ambiente di testing di Microsoft 365 Enterprise
+title: Microsoft 365 per l'autenticazione a più fattori dell'ambiente di testing dell'organizzazione
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,17 +15,17 @@ ms.custom:
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
-description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno Smart Phone nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: e26fb7470e01397266f5f424ee45941a79a2940c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno Smart Phone nell'ambiente di testing di Microsoft 365 per l'organizzazione.
+ms.openlocfilehash: 4ed50d37e0f4e73d5d1fc62e295df374c61b9786
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819377"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686275"
 ---
-# <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 Enterprise
+# <a name="multi-factor-authentication-for-your-microsoft-365-for-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 per l'organizzazione
 
-*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
+*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 per Enterprise e Office 365 Enterprise.*
 
 Per un ulteriore livello di sicurezza per l'accesso a Microsoft 365 o qualsiasi servizio o applicazione che utilizza il tenant di Azure AD per l'abbonamento, è possibile abilitare l'autenticazione a più fattori di Azure, che richiede più di un semplice nome utente e una password per verificare un account. 
 
@@ -33,9 +33,9 @@ Con l'autenticazione a più fattori, agli utenti viene richiesto di riconoscere 
   
 In questo articolo viene descritto come abilitare e testare l'autenticazione basata su messaggi di testo per un account utente specifico.
   
-Sono disponibili due fasi per configurare l'autenticazione a più fattori per un account nell'ambiente di testing di Microsoft 365 Enterprise:
+Sono disponibili due fasi per configurare l'autenticazione a più fattori per un account nell'ambiente di testing di Microsoft 365 per l'organizzazione:
   
-1. Creare l'ambiente di testing di Microsoft 365 Enterprise.
+1. Creare l'ambiente di testing di Microsoft 365 per l'organizzazione.
     
 2. Abilitare e testare l'autenticazione a più fattori per l'account User 2.
 
@@ -44,9 +44,9 @@ Sono disponibili due fasi per configurare l'autenticazione a più fattori per un
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Accedere a [stack di guida del laboratorio di testing](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per una mappa visiva in tutti gli articoli della guida del laboratorio di testing di Microsoft 365 Enterprise.
+> Accedere a [stack di guida del laboratorio di testing](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per visualizzare una mappa visiva in tutti gli articoli della guida del laboratorio di testing di Microsoft 365 per l'organizzazione.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 per l'organizzazione
 
 Se si desidera testare l'autenticazione a più fattori in modo semplice con i requisiti minimi, seguire le istruzioni contenute in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -81,7 +81,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 1. Aprire una nuova istanza privata del browser.
     
-2. Accedere al portale di Office 365 ( [https://portal.office.com](https://portal.office.com) ) ed eseguire l'accesso con il nome e la password dell'account utente 2.
+2. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) e accedere con il nome e la password dell'account utente 2.
     
 3. Dopo aver eseguito l'accesso, viene richiesto di configurare l'account per ulteriori informazioni. Fare clic su **Avanti**.
     
@@ -105,7 +105,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
 
 ## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>Fase 3: abilitare e testare l'autenticazione a più fattori con un criterio di accesso condizionale
 
-*Questa fase può essere utilizzata solo per un ambiente di testing di Microsoft 365 Enterprise.*
+*Questa fase può essere utilizzata solo per un ambiente di testing di Microsoft 365 per l'organizzazione.*
 
 In questa fase è possibile abilitare l'autenticazione a più fattori per l'account User 3 utilizzando un gruppo e un criterio di accesso condizionale.
 
@@ -136,18 +136,16 @@ Successivamente, creare un criterio di accesso condizionale per richiedere l'aut
 
 Per testare questo criterio, disconnettersi e accedere con l'account User 3. È necessario che venga richiesto di configurare l'autenticazione master. Questo dimostra che è in corso l'applicazione del criterio MFAUsers.
 
-Per informazioni e collegamenti per la distribuzione dell'autenticazione a più fattori in produzione, vedere la procedura di [configurazione dell'autenticazione](identity-secure-user-sign-ins.md#identity-mfa) a più fattori nella fase Identity.
-    
 ## <a name="next-step"></a>Passaggio successivo
 
 Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test-lab-guides.md#identity) nell'ambiente di test.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Fase 2: identità](identity-infrastructure.md)
+[Roadmap dell'identità](identity-roadmap-microsoft-365.md)
 
-[Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guide ai lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)

@@ -1,5 +1,5 @@
 ---
-title: Mitigazioni per la gestione della continuità aziendale della società in Microsoft 365
+title: Microsoft 365 per la prevenzione della gestione della continuità aziendale
 author: chrfox
 f1.keywords:
 - NOCSH
@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Alcuni esempi di mitigazioni per scenari di eventi imprevisti relativi ai servizi di Microsoft 365.
-ms.openlocfilehash: e5313464a45be679eaee6c4d06ca000e63c1010c
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
-ms.translationtype: HT
+ms.openlocfilehash: 71f2aade674d1d3f2ba95701f9d8113a8b57afeb
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086634"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686047"
 ---
 # <a name="service-incident-mitigation-strategies"></a>Strategie di mitigazione degli eventi imprevisti relativi ai servizi
 

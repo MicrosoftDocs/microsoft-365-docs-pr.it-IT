@@ -1,5 +1,5 @@
 ---
-title: Classificazione dei dati per l'ambiente di testing Microsoft 365 Enterprise
+title: Classificazione dei dati per l'ambiente di testing di Microsoft 365 per l'organizzazione
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,26 +13,26 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Utilizzare questa guida del laboratorio di testing per creare e utilizzare etichette di conservazione nei documenti dell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 41873eba8f2d6168d68d771c6feb17a44c775f6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Utilizzare questa guida del laboratorio di testing per creare e utilizzare etichette di conservazione nei documenti dell'ambiente di testing di Microsoft 365 per l'organizzazione.
+ms.openlocfilehash: 171fcb74b09a1f2e5c80f23e010640dce55660bc
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636093"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686407"
 ---
-# <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Classificazione dei dati per l'ambiente di testing Microsoft 365 Enterprise
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Classificazione dei dati per l'ambiente di testing di Microsoft 365 per l'organizzazione
 
-*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
+*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 per Enterprise e Office 365 Enterprise.*
 
-Con le istruzioni riportate in questo articolo, è possibile configurare la classificazione dei dati utilizzando le etichette di conservazione nell'ambiente di testing Microsoft 365 Enterprise.
+Con le istruzioni riportate in questo articolo, è possibile configurare la classificazione dei dati utilizzando le etichette di conservazione nell'ambiente di testing Microsoft 365 for Enterprise.
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli disponibili nella serie di guide al lab di test di Microsoft 365 per le aziende.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 per l'organizzazione
 
 Se si desidera solo configurare le etichette di conservazione in modo semplice con i requisiti minimi, seguire le istruzioni in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -73,7 +73,7 @@ In questa fase, vengono create le etichette di conservazione per i diversi livel
     
 11. Nel riquadro **Scegli etichette** , fare clic su **Aggiungi** e selezionare le quattro etichette.
     
-12. Fare clic su **Aggiungi**e quindi su **fine**.
+12. Fare clic su **Aggiungi**, quindi su **Fine**.
     
 13. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Avanti**.
     
@@ -91,7 +91,7 @@ In questa fase, viene individuato il comportamento predefinito dell'etichetta di
 
 Per prima cosa, creare un sito del team di SharePoint Online a livello di riserva:
   
-1. Se si utilizza un'istanza privata del browser, accedere al [portale di Office 365](https://portal.office.com) utilizzando l'account di amministratore globale.
+1. Se si utilizza un'istanza privata del browser, accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando l'account di amministratore globale.
     
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
@@ -125,15 +125,13 @@ Successivamente, creare un nuovo documento nel sito di SensitiveFiles e modifica
     
 3. Nella barra dei menu fare clic su **documenti condivisi**.
     
-4. Fare clic sul pulsante con i puntini di sospensione verticali accanto al nome del file **Document. docx** e quindi fare clic su **Dettagli**.
+4. Fare clic sul pulsante con i puntini di sospensione verticali accanto al nome del file **Document.docx** e quindi fare clic su **Dettagli**.
     
 5. Nel riquadro di destra, nella sezione **Proprietà** , in **Apply Retention label**, tenere presente che il documento ha l'etichetta di conservazione **riservata** applicata automaticamente.
     
 6. Fare clic su **modifica tutto**.
     
-7. Nel riquadro **Document. docx** , in **Apply Retention label**, selezionare l'etichetta **estremamente riservata** , quindi fare clic su **Salva**.
-
-Per informazioni e collegamenti su come distribuire le etichette di conservazione in produzione, vedere la pagina [Configura classificazione per il](infoprotect-configure-classification.md) passaggio dell'ambiente nella fase di **protezione delle informazioni** .
+7. Nel riquadro **Document.docx** , sotto **Applica etichetta di conservazione**, selezionare l'etichetta **estremamente riservata** , quindi fare clic su **Salva**.
 
 ## <a name="next-step"></a>Passaggio successivo
 
@@ -141,10 +139,10 @@ Esplorare le funzionalità e le funzionalità di [protezione delle informazioni]
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guide ai lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)
 
  

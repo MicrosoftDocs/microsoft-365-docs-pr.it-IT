@@ -1,5 +1,5 @@
 ---
-title: Criteri consigliati per i team-Microsoft 365 Enterprise | Documenti Microsoft
+title: Criteri dei team consigliati-Microsoft 365 per Enterprise | Documenti Microsoft
 description: Vengono descritti i criteri per i suggerimenti Microsoft su come proteggere le comunicazioni dei team e l'accesso ai file.
 author: MicrosoftHeidi
 manager: serdars
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 41ead64a7a94dcd5afb22a311d7637326949fc7c
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636724"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685655"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Suggerimenti sui criteri per la protezione di chat, gruppi e file di Team
 
@@ -35,7 +35,7 @@ Ulteriori suggerimenti specifici per la distribuzione dei team sono inclusi in q
 
 Non è necessario abilitare i servizi dipendenti per iniziare a utilizzare Microsoft teams. Questi saranno tutti "solo lavoro". Tuttavia, è necessario essere pronti a gestire quanto segue:
 
-- Microsoft 365 gruppi
+- Gruppi di Microsoft 365
 - Siti del team di SharePoint
 - OneDrive for Business
 - Cassette postali
@@ -52,29 +52,29 @@ Questi sono i servizi dipendenti da includere nell'assegnazione delle app cloud 
 - Microsoft Teams
 - SharePoint Online e OneDrive for Business
 - Exchange Online
-- Skype for Business Online
+- Skype for Business online
 - Microsoft Stream (registrazioni di riunioni)
 - Microsoft Planner (attività di pianificazione e pianificazione dei dati)
 
 In questa tabella sono elencati i criteri da rivisitare e i collegamenti a ogni criterio nei [criteri comuni di identità e accesso ai dispositivi](identity-access-policies.md), che dispongono del set di regole più ampio per tutte le applicazioni di Office.
 
-|Livello di protezione|Generali|Ulteriori informazioni per l'implementazione di Teams|
+|Livello di protezione|Criteri|Ulteriori informazioni per l'implementazione di Teams|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app. I team dispongono di regole di accesso guest e di accesso esterno da prendere in considerazione, per ulteriori informazioni, vedere più avanti in questo articolo.|
 |        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere team e servizi dipendenti nell'assegnazione delle app cloud.|
-|        |[Gli utenti ad alto rischio devono modificare la password](identity-access-policies.md#high-risk-users-must-change-password)|Costringe gli utenti dei team a modificare la propria password quando si effettua l'accesso se viene rilevata un'attività ad alto rischio per il proprio account. Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app.|
+|        |[Gli utenti a rischio elevato devono modificare la password](identity-access-policies.md#high-risk-users-must-change-password)|Costringe gli utenti dei team a modificare la propria password quando si effettua l'accesso se viene rilevata un'attività ad alto rischio per il proprio account. Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app.|
 |        |[Applicare i criteri di protezione dei dati dell'APP](identity-access-policies.md#apply-app-data-protection-policies)|Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app. Aggiornare i criteri per ogni piattaforma (iOS, Android, Windows).|
 |        |[Richiedere applicazioni approvate e protezione delle APP](identity-access-policies.md#require-approved-apps-and-app-protection)|Includere team e servizi dipendenti in questo criterio.|
 |        |[Definire i criteri di conformità del dispositivo](identity-access-policies.md#define-device-compliance-policies)|Includere team e servizi dipendenti in questo criterio.|
 |        |[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere team e servizi dipendenti in questo criterio.|
-|**Dati sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|I team dispongono di regole di accesso guest e di accesso esterno da prendere in considerazione, per ulteriori informazioni, vedere più avanti in questo articolo. Includere team e servizi dipendenti in questo criterio.|
+|**Sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|I team dispongono di regole di accesso guest e di accesso esterno da prendere in considerazione, per ulteriori informazioni, vedere più avanti in questo articolo. Includere team e servizi dipendenti in questo criterio.|
 |         |[Richiedere PC conformi *e* dispositivi mobili](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere team e servizi dipendenti in questo criterio.|
-|**Dati altamente regolamentati**|[Richiede *sempre* l'autenticazione Master](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Indipendentemente dall'identità dell'utente, l'AMF verrà utilizzata dall'organizzazione. Includere team e servizi dipendenti in questo criterio.
+|**Riservatezza elevata**|[Richiede *sempre* l'autenticazione Master](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Indipendentemente dall'identità dell'utente, l'AMF verrà utilizzata dall'organizzazione. Includere team e servizi dipendenti in questo criterio.
 | | |
 
 ## <a name="teams-dependent-services-architecture"></a>Architettura dei servizi dipendenti dai team
 
-Per informazioni di riferimento, nel diagramma seguente vengono illustrati i team di servizi su cui si basa. Per ulteriori informazioni e altre illustrazioni, vedere [Microsoft Teams and related Productivity Services in microsoft 365 for it Architects](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
+Per informazioni di riferimento, nel diagramma seguente vengono illustrati i team di servizi su cui si basa. Per ulteriori informazioni e altre illustrazioni, vedere [Microsoft Teams and related Productivity Services in microsoft 365 for it Architects](../solutions/productivity-illustrations.md).
 
 ![Diagramma che mostra le dipendenze dei team in SharePoint Online, OneDrive for business ed Exchange.](../media/identity-access-logical-architecture-teams.png)
 

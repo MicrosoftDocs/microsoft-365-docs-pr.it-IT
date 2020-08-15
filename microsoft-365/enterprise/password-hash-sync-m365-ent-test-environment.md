@@ -9,7 +9,7 @@ ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: "Riepilogo: configurare e illustrare la sincronizzazione hash delle password e l'accesso per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 2d5fbd3ed2a2afb994fc36f5ba3a15a8c55a274e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 2930d147e2ae3277b0af4d2aa81a602c73128439
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819389"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686549"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
-*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
+*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 per Enterprise e Office 365 Enterprise.*
 
 Molte organizzazioni usano Azure AD Connect e la sincronizzazione hash delle password per sincronizzare il set di account della foresta Active Directory Domain Services (AD DS) locale con il set di account nel tenant di Azure AD dell'abbonamento a Microsoft 365. In questo articolo viene illustrato come aggiungere la sincronizzazione hash delle password nell'ambiente di testing di Microsoft 365, determinando la configurazione seguente:
   
@@ -40,7 +40,7 @@ Le fasi principali della configurazione dell'ambiente di testing sono tre:
 2. Installare e configurare Azure AD Connect su APP1.
     
 > [!TIP]
-> Aprire la [Guida al lab di test di Microsoft 365 Enterprise](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli della guida al lab di test di Microsoft 365 Enterprise.
+> Passare a [microsoft 365 for Enterprise Test Lab guide stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per una mappa visiva su tutti gli articoli della guida del laboratorio di testing di Microsoft 365 per Enterprise.
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing per l'organizzazione simulata di Microsoft 365.
 
@@ -50,7 +50,7 @@ Seguire le istruzioni riportate in [configurazione di base per l'organizzazione 
   
 Questa configurazione è costituita da: 
   
-- Abbonamenti di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5.
+- Un abbonamento di valutazione o a pagamento a Microsoft 365 E5.
 - Una rete Intranet dell'organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1, APP1 e CLIENT1 in una rete virtuale di Azure. DC1 è un controller di dominio per il dominio AD DS\<your public domain name> testlab.
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>Fase 2: creare e registrare il dominio per il test lab
@@ -59,7 +59,7 @@ In questa fase si aggiunge un dominio pubblico DNS che viene aggiunto all'abbona
 
 Per prima cosa, rivolgersi al proprio provider di registrazione del DNS pubblico per creare un nuovo nome di dominio DNS pubblico basato sul proprio nome di dominio corrente, e aggiungerlo alla sottoscrizione. Raccomandiamo di usare il nome **testlab.**\<your public domain>. Ad esempio, se il nome di dominio è **<span>contoso</span>.com**, aggiungere il nome di dominio pubblico **<span>testlab</span>.contoso.com**.
   
-In seguito, aggiungere il dominio **testlab.**\<your public domain> alla propria sottoscrizione a pagamento o di valutazione a Office 365 o Microsoft 365, eseguendo la procedura di registrazione del dominio. Tale procedura consiste nell’aggiungere altri record DNS al dominio **testlab.**\<your public domain> . Per altre informazioni, vedere [Aggiungere un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain). 
+In seguito, aggiungere il dominio **testlab.**\<your public domain> dominio alla sottoscrizione di valutazione di Microsoft 365 o a pagamento tramite il processo di registrazione del dominio. Tale procedura consiste nell’aggiungere altri record DNS al dominio **testlab.**\<your public domain> . Per ulteriori informazioni, vedere [aggiungere un dominio a Microsoft 365](../admin/setup/add-domain.md). 
 
 Questa è la configurazione risultante.
   
@@ -67,7 +67,7 @@ Questa è la configurazione risultante.
   
 Questa configurazione è costituita da:
 
-- Sottoscrizioni di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5 con il dominio DNS testlab.\<your public domain name> registrato.
+- Un abbonamento a pagamento o di valutazione di Microsoft 365 E5 con il dominio DNS testlab.\<your public domain name> registrato.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure.
 
 Notare come il dominio testlab.\<your public domain name> è ora:
@@ -144,10 +144,10 @@ Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guide ai lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

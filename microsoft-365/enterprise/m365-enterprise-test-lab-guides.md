@@ -9,7 +9,7 @@ ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilizzare queste guide al lab di test per configurare dimostrazioni, modelli di verifica o ambienti di sviluppo e test per Microsoft 365 per le aziende.
-ms.openlocfilehash: 5907edd1bc42b9d679ed020331f225ef2d2b2594
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818742"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686767"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guide al lab di test di Microsoft 365 per le aziende
 
@@ -43,7 +43,7 @@ Aprire la [Guida al lab di test](../media/m365-enterprise-test-lab-guides/Micros
 
 ## <a name="base-configuration"></a>Configurazione di base
 
-Per prima cosa è necessario creare un ambiente di test per [Microsoft 365 per le aziende](https://docs.microsoft.com/microsoft-365-enterprise/) che includa Office 365 E5, Enterprise Mobility + Security (EMS) E5 e Windows 10 Enterprise. È possibile creare due tipi di configurazione di base diversi:
+Per prima cosa, è necessario creare un ambiente di testing per [Microsoft 365 per Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/). È possibile creare due tipi diversi di configurazioni di base:
 
 - Usare la [configurazione di base semplificata](lightweight-base-configuration-microsoft-365-enterprise.md) quando si desidera configurare e dimostrare le caratteristiche e le funzionalità di Microsoft 365 per le aziende in un ambiente solo cloud, che non include componenti locali.
 
@@ -63,7 +63,7 @@ Per verificare le funzionalità e le capacità relative alla gestione delle iden
   
    Abilitare e testare l'autenticazione pass-through per un controller di dominio di Active Directory Domain Services.
 
-- [Autenticazione federata](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Autenticazione federata](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
    Abilitare e testare l'autenticazione federata per un controller di dominio di Active Directory Domain Services.
 

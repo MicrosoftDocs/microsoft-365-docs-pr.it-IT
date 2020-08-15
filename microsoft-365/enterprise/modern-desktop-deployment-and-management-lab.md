@@ -2,31 +2,31 @@
 title: Lab Kit di distribuzione di Windows e Office
 f1.keywords:
 - NOCSH
-ms.author: jogruszc
-author: JGruszczyk
-manager: jemed
-ms.date: 06/10/2019
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/10/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
-ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
-ms.translationtype: HT
+ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052726"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685499"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
-Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for enterprise. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano Microsoft Endpoint Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
+Questi laboratori sono stati studiati per semplificare la pianificazione, la verifica e la convalida della distribuzione e della gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for Enterprise. Il cover Labs utilizza Microsoft endpoint Configuration Manager, analisi desktop, strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 
-Questo corso di formazione è altamente consigliato per le organizzazioni che si stanno preparando per la fine del ciclo di vita di Windows 7 ed è utile anche se attualmente si utilizza Windows 10 e Microsoft 365 Apps for enterprise (in precedenza Office 365 ProPlus) oppure Office 2019. In quanto ambiente isolato, inoltre, questo lab è ideale per esaminare gli aggiornamenti dello strumento di distribuzione e testare l'automazione correlata alla distribuzione.
+Questo kit è altamente consigliato per le organizzazioni che si preparano per gli aggiornamenti di Windows 8 e si applica anche se si sta attualmente utilizzando Windows 10, Microsoft 365 Apps for Enterprise (in precedenza Office 365 ProPlus) o Office 2019. In quanto ambiente isolato, inoltre, questo lab è ideale per esaminare gli aggiornamenti dello strumento di distribuzione e testare l'automazione correlata alla distribuzione.
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -46,9 +46,8 @@ Il lab fornisce un ambiente lab virtuale con provisioning automatico, che compre
 
 INOLTRE, il lab è progettato per essere collegato alle versioni di valutazione per: 
 
-  - Microsoft 365 E5 o
-  - Office 365 Enterprise E5
-  - Enterprise Mobility + Security
+  - Microsoft 365 E5
+  - Office 365 Enterprise E5 con Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Lab dettagliati
 
@@ -57,14 +56,14 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 ### <a name="device-and-app-readiness"></a>Preparazione di app e dispositivi
 
   - Desktop Analytics
-  - NOVITÀ! Distribuire e aggiornare il nuovo Microsoft Edge 
-  - NOVITÀ! Installare e configurare Cloud Management Gateway (CMG) 
+  - Distribuire e aggiornare il nuovo Microsoft Edge 
+  - Installare e configurare Cloud Management Gateway (CMG) 
   - Modalità Internet Explorer 
   - Application Guard 
 
 ### <a name="directory-and-network-readiness"></a>Conformità di rete e directory
 
-  - NOVITÀ! Ottimizzare la distribuzione degli aggiornamenti di Windows 10 
+  - Ottimizzare la distribuzione degli aggiornamenti di Windows 10 
   - Gestione congiunta di Configuration Manager e Microsoft Intune
   - Accesso remoto (VPN)
 
@@ -110,7 +109,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
   - Installazione di Microsoft 365 Apps for enterprise con Configuration Manager
   - NOVITÀ! Aggiornamenti di Office con Configuration Manager e Intune
   
-### <a name="new-windows-virtual-desktop"></a>NOVITÀ! Desktop virtuale Windows
+### <a name="windows-virtual-desktop"></a>Desktop virtuale Windows
   - Desktop virtuale Windows: preparazione, distribuzione, ottimizzazione 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Scaricare il Lab Kit di distribuzione di Windows e Office
@@ -120,8 +119,6 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 *Per scaricare questi contenuti usufruendo di un'esperienza di download ottimale, usare una larghezza di banda ampia e attendere 30-45 minuti per il completamento del provisioning automatico. Per l'ambiente lab sono richiesti almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 12 settembre 2020; prima di tale data, ne verrà pubblicata una nuova versione.*
 
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
-
-  - [Centro di distribuzione desktop](https://www.aka.ms/howtoshift)
 
   - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 

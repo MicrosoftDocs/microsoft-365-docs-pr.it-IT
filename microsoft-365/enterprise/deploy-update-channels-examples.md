@@ -9,18 +9,18 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Come le organizzazioni di esempio distribuiscono e aggiornano i canali.
-ms.openlocfilehash: eaf962d7481027b49f26c79163aaae3753fdbb9b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
-ms.translationtype: HT
+ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200124"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686155"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Configurazioni di esempio per la distribuzione e il canale di aggiornamento
 
@@ -49,6 +49,6 @@ Fare clic sul collegamento nella colonna di **esempio** per completare le fasi d
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida all'implementazione](deploy-microsoft-365-enterprise.md)
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
 [Guide dei laboratori di testing](m365-enterprise-test-lab-guides.md)

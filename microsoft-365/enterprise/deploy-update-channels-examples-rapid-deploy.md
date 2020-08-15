@@ -9,18 +9,18 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Modalità con cui un'organizzazione che distribuisce la versione più recente utilizza i canali per le app di Windows 10 e Microsoft 365.
-ms.openlocfilehash: 46f36a7bd26ef190aca2a63fdaa993e420988b30
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
-ms.translationtype: HT
+ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200129"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686167"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Esempi di distribuzione generale delle versioni più recenti
 
@@ -109,6 +109,6 @@ Di seguito sono elencati i prodotti, i canali e i gruppi di distribuzione usati 
 
 [Esempi di configurazione dei canali di distribuzione e di aggiornamento](deploy-update-channels-examples.md)
 
-[Guida alla distribuzione](deploy-microsoft-365-enterprise.md)
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
 [Guide dei laboratori di testing](m365-enterprise-test-lab-guides.md)

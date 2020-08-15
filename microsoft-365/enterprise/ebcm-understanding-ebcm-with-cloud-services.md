@@ -9,19 +9,19 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - remotework
 ms.custom: ''
 description: Informazioni sul diverso impatto dei servizi cloud inclusi nell'offerta IT sulla pianificazione e l'implementazione della continuità aziendale.
-ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: f57079da4de7cafe071f5bf2a146290f3034fb60
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633034"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686059"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Gestione della continuità aziendale della società con i servizi cloud
 

@@ -1,5 +1,5 @@
 ---
-title: Criteri di identità e di accesso ai dispositivi comuni-Microsoft 365 Enterprise | Documenti Microsoft
+title: Criteri di identità e accesso ai dispositivi comuni-Microsoft 365 per Enterprise | Documenti Microsoft
 description: Descrive i criteri per i consigli di Microsoft su come applicare i criteri e le configurazioni relativi all'identità e all'accesso ai dispositivi.
 author: BrendaCarter
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: a91488b9bfa126b1419af7697c0ae8510ddbc149
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625267"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685975"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -32,8 +32,8 @@ In questa guida viene descritto come distribuire i criteri consigliati in un amb
 
 Nel diagramma seguente viene illustrato il set di criteri consigliato. Indica il livello di protezione a cui si applica ogni criterio e se i criteri si applicano ai PC o ai telefoni e ai tablet oppure a entrambe le categorie di dispositivi. Indica anche dove sono configurati questi criteri.
 
-[![Criteri comuni per la configurazione dell'identità e dell'accesso ai](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-dispositivi[vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
+ [vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 Nella parte restante di questo articolo viene descritto come configurare questi criteri. 
 
@@ -42,18 +42,18 @@ L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine indicato in questa tabella. Tuttavia, i criteri dell'AMF per la protezione sensibile e altamente regolamentata possono essere implementati in qualsiasi momento.
 
 
-|Livello di protezione|Generali|Ulteriori informazioni|
+|Livello di protezione|Criteri|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication)|I client che non utilizzano l'autenticazione moderna possono ignorare le regole di accesso condizionale, quindi è importante bloccarle|
-|        |[Gli utenti ad alto rischio devono modificare la password](#high-risk-users-must-change-password)|Impone agli utenti di modificare la propria password al momento dell'accesso se viene rilevata un'attività ad alto rischio per il proprio account|
+|        |[Gli utenti a rischio elevato devono modificare la password](#high-risk-users-must-change-password)|Impone agli utenti di modificare la propria password al momento dell'accesso se viene rilevata un'attività ad alto rischio per il proprio account|
 |        |[Applicare i criteri di protezione dei dati dell'APP](#apply-app-data-protection-policies)|Un criterio per ogni piattaforma (iOS, Android, Windows). I criteri di protezione delle app di Intune (APP) sono insiemi predefiniti di protezione, dal livello 1 al livello 3.|
 |        |[Richiedere applicazioni approvate e protezione delle APP](#require-approved-apps-and-app-protection)|Applicazione della protezione delle app per dispositivi mobili per telefoni e Tablet|
 |        |[Definire i criteri di conformità del dispositivo](#define-device-compliance-policies)|Un criterio per ogni piattaforma|
 |        |[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Impone la gestione di Intune dei PC|
-|**Dati sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
+|**Sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Richiedere PC conformi *e* dispositivi mobili](#require-compliant-pcs-and-mobile-devices)|Impone la gestione di Intune per PC e telefono/tablet|
-|**Dati altamente regolamentati**|[Richiede *sempre* l'autenticazione Master](#require-mfa-based-on-sign-in-risk)|
+|**Riservatezza elevata**|[Richiede *sempre* l'autenticazione Master](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## <a name="assigning-policies-to-users"></a>Assegnazione di criteri agli utenti
@@ -107,13 +107,13 @@ Applicare le impostazioni in base al livello di protezione che si desidera asseg
 |:---|:---------|:-----|:----|
 |Livello di rischio|Protezione di base|Alto, medio|Controllare entrambi|
 | |Dati sensibili|Alto, medio e basso|Controllare tutti e tre|
-| |Dati altamente regolamentati| |Lasciare deselezionata tutte le opzioni per applicare sempre il Master|
+| |Riservatezza elevata| |Lasciare deselezionata tutte le opzioni per applicare sempre il Master|
 
 **Controlli di accesso**
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Concessione|Concedi accesso|Vero|Opzione selezionata|
+|Concessione|Concedi accesso|True|Opzione selezionata|
 ||Richiedi MFA|True|Check|
 ||Richiede che il dispositivo venga contrassegnato come conforme|Falso||
 ||Richiedere un dispositivo ibrido di Azure AD-join|Falso||
@@ -150,7 +150,7 @@ Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso 
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Concessione|Blocca accesso|Vero|Opzione selezionata|
+|Concessione|Blocca accesso|True|Opzione selezionata|
 ||Richiedi MFA|Falso||
 ||Richiede che il dispositivo venga contrassegnato come conforme|Falso||
 ||Richiedere un dispositivo ibrido di Azure AD-join|Falso||
@@ -162,7 +162,7 @@ Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso 
 
 
 
-## <a name="high-risk-users-must-change-password"></a>Gli utenti ad alto rischio devono modificare la password
+## <a name="high-risk-users-must-change-password"></a>Gli utenti a rischio elevato devono modificare la password
 Per assicurarsi che tutti gli account compromessi degli utenti a rischio elevato siano costretti a modificare la password durante l'accesso, è necessario applicare i criteri seguenti.
 
 Accedere al [portale di Microsoft Azure (https://portal.azure.com)](https://portal.azure.com/) con le credenziali di amministratore e selezionare **Azure AD Identity Protection > Criteri di rischio utente**.
@@ -179,7 +179,7 @@ Accedere al [portale di Microsoft Azure (https://portal.azure.com)](https://port
 
 | Tipo | Proprietà | Valori                  | Note |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | Consenti l'accesso            | Vero  |
+|      | Accesso     | Consenti l'accesso            | True  |
 |      | Accesso     | Richiedi modifica password | True  |
 
 **Revisione:** non applicabile
@@ -254,7 +254,7 @@ Creare un criterio per ogni piattaforma:
 - Windows 8,1 e versioni successive
 - Windows 10 e versioni successive
 
-Per creare criteri di conformità dei dispositivi, accedere all'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con le proprie credenziali di amministrazione e quindi passare ai**criteri criteri di****conformità** > per i **dispositivi** > . Selezionare **Crea criterio**.
+Per creare criteri di conformità dei dispositivi, accedere all'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con le proprie credenziali di amministrazione e quindi passare ai criteri criteri di conformità per i **dispositivi**  >  **Compliance policies**  >  **Policies**. Selezionare **Crea criterio**.
 
 Per distribuire i criteri di conformità dei dispositivi, è necessario assegnarli ai gruppi di utenti. Si assegna un criterio dopo aver creato e salvato. Nell'interfaccia di amministrazione, selezionare il criterio e quindi selezionare **assegnazioni**. Dopo aver selezionato i gruppi che si desidera ricevere, fare clic su **Salva** per salvare l'assegnazione del gruppo e distribuire il criterio.
 

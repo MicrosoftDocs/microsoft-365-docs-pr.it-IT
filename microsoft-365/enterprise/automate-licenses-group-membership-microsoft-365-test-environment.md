@@ -1,5 +1,5 @@
 ---
-title: Automatizzare la gestione delle licenze e dell'appartenenza ai gruppi per l'ambiente di testing Microsoft 365 Enterprise
+title: Automatizzare le licenze e l'appartenenza ai gruppi per l'ambiente di testing di Microsoft 365 per l'organizzazione
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,31 +14,31 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Configurare la gestione delle licenze basate su gruppo e l'appartenenza a gruppi dinamici nell'ambiente di testing Microsoft 365 Enterprise.
-ms.openlocfilehash: 266ae8cb133eccf74ea75382b400ca8241782ec5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Configurare la gestione delle licenze basate su gruppo e l'appartenenza a gruppi dinamici nell'ambiente di testing di Microsoft 365 per l'organizzazione.
+ms.openlocfilehash: a25a47b81ce8c119e7aeb44660af32bb9cafb08a
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068503"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685559"
 ---
-# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatizzare la gestione delle licenze e dell'appartenenza ai gruppi per l'ambiente di testing Microsoft 365 Enterprise
+# <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatizzare le licenze e l'appartenenza ai gruppi per l'ambiente di testing di Microsoft 365 per l'organizzazione
 
-*Questa guida al lab di test può essere usata solo per ambienti di testing di Microsoft 365 Enterprise.*
+*Questa guida del laboratorio di testing può essere utilizzata solo per Microsoft 365 per gli ambienti di testing dell'organizzazione.*
 
-La gestione delle licenze basate su gruppo assegna o rimuove automaticamente le licenze per un account utente basato sull'appartenenza a un gruppo. L'appartenenza a un gruppo dinamico aggiunge o rimuove membri a un gruppo in base alle proprietà degli account utente, ad esempio reparto o paese. In questo articolo viene illustrata una dimostrazione di entrambi nell'ambiente di testing di Microsoft 365 Enterprise.
+La gestione delle licenze basate su gruppo assegna o rimuove automaticamente le licenze per un account utente basato sull'appartenenza a un gruppo. L'appartenenza a un gruppo dinamico aggiunge o rimuove membri a un gruppo in base alle proprietà degli account utente, ad esempio reparto o paese. In questo articolo viene illustrata una dimostrazione di entrambi nell'ambiente di testing di Microsoft 365 per l'organizzazione.
 
-Sono disponibili due fasi per la configurazione della licenza automatica e l'appartenenza a gruppi dinamici nell'ambiente di testing di Microsoft 365 Enterprise:
+Sono disponibili due fasi per la configurazione della licenza automatica e l'appartenenza a gruppi dinamici nell'ambiente di testing di Microsoft 365 per l'organizzazione:
 
-1. Creare l'ambiente di testing di Microsoft 365 Enterprise.
+1. Creare l'ambiente di testing di Microsoft 365 per l'organizzazione.
 2. Configurare e testare l'appartenenza a gruppi dinamici e la gestione automatica delle licenze.
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli disponibili nella serie di guide al lab di test di Microsoft 365 per le aziende.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 per l'organizzazione
 
 Se si desidera solo testare la licenza automatizzata e l'appartenenza ai gruppi con i requisiti minimi, seguire le istruzioni contenute in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -51,11 +51,11 @@ Se si desidera testare la licenza automatizzata e l'appartenenza a un gruppo in 
 
 Per prima cosa, è necessario creare un nuovo gruppo di vendita e aggiungere una regola di appartenenza a un gruppo dinamico in modo che gli account utente con il reparto impostato su Sales vengano automaticamente aggiunti al gruppo Sales.
 
-1. Se si utilizza un'istanza privata del browser Internet, accedere al portale di Office 365 [https://portal.office.com](https://portal.office.com) con l'account di amministratore globale dell'abbonamento al laboratorio di testing di Microsoft 365 E5.
-2. In una scheda separata del browser, accedere al portale di Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com).
+1. Se si utilizza un'istanza privata del browser Internet, accedere all'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com) con l'account di amministratore globale dell'abbonamento al laboratorio di testing di Microsoft 365 E5.
+2. In una scheda separata del browser, accedere al portale di Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com) .
 3. Nel portale di Azure, digitare **gruppi** nella casella di ricerca e quindi fare clic su **gruppi**.
 4. nel riquadro **tutti i gruppi** fare clic su **nuovo gruppo**.
-5. In **tipo di gruppo**, selezionare **Office 365**.
+5. In **tipo di gruppo**selezionare **Microsoft 365**.
 6. In **nome gruppo**digitare **Sales**.
 7. In **tipo di appartenenza**, selezionare **utente dinamico**.
 8. Fare clic su **membri utente dinamici**.
@@ -90,10 +90,10 @@ Nel tempo dovrebbe essere visualizzato il seguente:
 - Proprietà **appartenenze a gruppi** aggiornata con il gruppo **Sales** .
 - Proprietà delle **licenze di prodotto** aggiornate con la licenza **Microsoft 365 E5** .
 
-Per informazioni e collegamenti per la distribuzione di appartenenza a gruppi dinamici e licenze automatiche in produzione, vedere questi passaggi nella fase di identità:
+Vedere questi articoli per distribuire l'appartenenza a gruppi dinamici e la gestione automatica delle licenze in produzione:
 
-- [Configurare l'assegnazione automatica delle licenze](identity-use-group-management.md#identity-group-license)
-- [Configurare l'appartenenza a gruppi dinamica](identity-use-group-management.md#identity-dyn-groups)
+- COLLEGAMENTO TBD
+- COLLEGAMENTO TBD
 
 ## <a name="next-step"></a>Passaggio successivo
 
@@ -101,10 +101,10 @@ Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test
 
 ## <a name="see-also"></a>Vedere anche
 
-[Fase 2: identità](identity-infrastructure.md)
+[Roadmap dell'identità](identity-roadmap-microsoft-365.md)
 
-[Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guide ai lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)

@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo Microsoft 365 Enterprise ha soddisfatto le sue esigenze di business.
-ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
-ms.translationtype: HT
+description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo le esigenze aziendali sono state soddisfatte da Microsoft 365 per Enterprise.
+ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011198"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685831"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastruttura IT ed esigenze di business di Contoso
 
@@ -112,20 +112,20 @@ Gestione:
 
   Automatizzare l'installazione degli aggiornamenti del sistema operativo Windows e Microsoft 365 Apps for enterprise nell'organizzazione.
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Tabella delle esigenze di business di Contoso rispetto alle funzionalità di Microsoft 365 Enterprise
+## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>Mapping delle esigenze aziendali di Contoso a Microsoft 365 per Enterprise
 
 Il reparto IT di Contoso ha associato le esigenze di business alle funzionalità di Microsoft 365 E5 prima dell'implementazione in questa tabella:
 
-||||
+
+| Category | Esigenze aziendali | Microsoft 365 per prodotti o funzionalità aziendali |
 |:-------|:-----|:-----|
-| **Categoria** | **Esigenza di business** | **Prodotti o funzionalità di Microsoft 365 Enterprise** |
 | Produttività |  |  |
 |  | Semplificare la collaborazione | Microsoft Teams, SharePoint, OneDrive |
 |  | Migliorare la produttività per lavoratori remoti e mobili | Carichi di lavoro e dati basati sul cloud di Microsoft 365 |
 |  | Favorire la creatività e l'innovazione | Windows Ink, Cortana at Work, PowerPoint |
 | Sicurezza |  |  |
 |  | Gestione di identità e accesso | Account di amministratore globali dedicati con Azure Multi-Factor Authentication (MFA) e Azure AD Privileged Identity Management (PIM) <BR> MFA per tutti gli account utente <BR> Accesso condizionale <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Protezione dalle minacce | Advanced Threat Analytics <BR> Windows Defender <BR> Protezione avanzata dalle minacce <BR> Office 365 Advanced Threat Protection <BR> Analisi delle minacce e risposta alle minacce in Office 365 <BR> |
+|  | Protezione dalle minacce | Advanced Threat Analytics <BR> Windows Defender <BR> Protezione avanzata dalle minacce <BR> Office 365 Advanced Threat Protection <BR> Analisi e risposta alle minacce di Microsoft 365 <BR> |
 |  | Protezione delle informazioni | Azure Information Protection <BR> Prevenzione della perdita dei dati (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Gestione della sicurezza | Centro sicurezza di Azure  <BR> Windows Defender Security Center |
 | Accesso remoto e mobile e partner commerciali |  |  |
@@ -133,7 +133,7 @@ Il reparto IT di Contoso ha associato le esigenze di business alle funzionalità
 |  | Ridurre l'infrastruttura di accesso remoto per i dipendenti | Carichi di lavoro e dati basati sul cloud di Microsoft 365 |
 |  | Fornire migliore connettività e ridurre le spese per le transazioni B2B | Autenticazione federata e risorse basate su cloud |
 | Conformità |  |  |
-|  | Rispettare i requisiti normativi applicabili | Funzionalità per il GDPR in Office 365 |
+|  | Rispettare i requisiti normativi applicabili | Funzionalità di GDPR in Microsoft 365 |
 | Gestione |  |  |
 |  | Ridurre la spesa IT per installare gli aggiornamenti del client | Anelli di distribuzione <BR> Aggiornamenti di Windows 10 Enterprise <BR> Aggiornamenti di App Microsoft 365 per grandi imprese |
 ||||
@@ -144,6 +144,6 @@ Il reparto IT di Contoso ha associato le esigenze di business alle funzionalità
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida all'implementazione](deploy-microsoft-365-enterprise.md)
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
 [Guide dei laboratori di testing](m365-enterprise-test-lab-guides.md)
