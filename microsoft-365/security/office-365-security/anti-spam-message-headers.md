@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui campi e sui valori di intestazione aggiunti ai messaggi da Exchange Online Protection (EOP). Questi campi di intestazione forniscono informazioni sul messaggio e su come è stato elaborato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5073e0721e82e969dbeaa850cc38cb13100a7947
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755357"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653426"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Intestazioni dei messaggi della protezione da posta indesiderata in Microsoft 365
 
@@ -43,9 +43,10 @@ I campi e i valori sono descritti nel dettaglio nella tabella seguente.
 > [!NOTE]
 > L’intestazione **X-Forefront-Antispam-Report** contiene molti campi di intestazione e valori differenti. L'utilizzo dei campi dell’intestazione non descritti nella tabella è riservato al team di protezione dalla posta indesiderata di Microsoft per finalità diagnostiche.
 
-|||
+****
+
+|Campo di intestazione|Descrizione|
 |---|---|
-|**Campo di intestazione**|**Descrizione**|
 |ARC|Le intestazioni del protocollo ARC sono le seguenti: <ul><li>AAR: registra il contenuto dell'intestazione Authentication results da DMARC.</li><li>AMS: questa intestazione contiene le firme crittografiche del messaggio.</li><li>AS: contiene le firme crittografiche delle intestazioni dei messaggi. Questa intestazione contiene il tag di convalida della catena denominata "cv=" e include il risultato della convalida della catena, ad esempio **nessuna**, **superata** oppure **non riuscita**.</li></ul>|
 |CAT:|categoria dei criteri di protezione applicati al messaggio: <ul><li>BULK: posta inviata in blocco</li><li>DIMP: imitazione del dominio</li><li>GIMP: imitazione dell’utente basata sull’intercettazione della cassetta di posta</li><li>HPHSH o HPHISH : alta probabilità di phishing</li><li>HSPM: alta probabilità di posta indesiderata</li><li>MALW: malware</li><li>PHSH: phishing</li><li>SPM: posta indesiderata</li><li>SPOOF: spoofing</li><li>UIMP: imitazione dell'utente</li><li>AMP: antimalware</li><li>SAP: allegati sicuri</li><li>OSPM: posta indesiderata in uscita</li></ul><br/>Un messaggio in ingresso potrebbe essere contrassegnato in base a più forme di protezione e a più analisi di rilevamento. Ai criteri sono assegnate diverse priorità e il criterio con la priorità più alta viene applicato per primo. Per altre informazioni, vedere [Criteri applicabili ai messaggi di posta elettronica quando vengono usati più metodi di protezione e analisi di rilevamento](how-policies-and-protections-are-combined.md).|
 |CIP: \[indirizzo IP\]|L'indirizzo IP che si connette. È possibile usare questo indirizzo IP nell'elenco Consenti indirizzi IP o nell'elenco Blocca indirizzi IP. Per ulteriori informazioni, vedere [Configurare il filtraggio delle connessioni](configure-the-connection-filter-policy.md).|
@@ -75,9 +76,10 @@ I campi e i valori sono descritti nel dettaglio nella tabella seguente.
 
 Nella tabella seguente vengono descritti i campi utili nell'intestazione del messaggio **X-Microsoft-Antispam**. L'utilizzo degli altri campi dell'intestazione è riservato al team di protezione dalla posta indesiderata di Microsoft per scopi di diagnostica.
 
-|||
+****
+
+|Campo di intestazione|Descrizione|
 |---|---|
-|**Campo di intestazione**|**Descrizione**|
 |BCL|Il Livello di reclamo in blocco (BCL) del messaggio. Più il BCL è elevato, maggiore è la probabilità che un messaggio di posta elettronica in blocco, anche nota come _posta grigia_, generi reclami, ed è quindi più probabile che si tratti di posta indesiderata. Per ulteriori informazioni, vedere [Livello di reclamo in blocco (BCL)](bulk-complaint-level-values.md).|
 |
 
@@ -140,9 +142,10 @@ dmarc=fail action=oreject header.from=contoso.com
 
 Nella tabella seguente vengono descritti i campi e i valori possibili per il controllo di autenticazione di ogni messaggio di posta elettronica.
 
-|||
+****
+
+|Campo di intestazione|Descrizione|
 |---|---|
-|**Campo di intestazione**|**Descrizione**|
 |action|Indica l'azione eseguita dal filtro posta indesiderata in base ai risultati del controllo DMARC. Ad esempio:<ul><li>**oreject** o **o.reject**: abbreviazione di override reject (rifiuto override). In questo caso, Microsoft 365 usa questa azione quando riceve un messaggio che non supera il controllo DMARC da un dominio il cui record TXT DMARC ha un criterio di p=reject. Anziché eliminare o rifiutare il messaggio, Microsoft 365 lo contrassegna come posta indesiderata. Per ulteriori informazioni sul motivo per cui Microsoft 365 è configurato in questo modo, vedere [Come viene gestita la posta elettronica in ingresso che non supera il controllo DMARC in Microsoft 365](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine**: indica che una percentuale inferiore al 100% di messaggi che non superano il controllo DMARC verrà recapitata comunque. Ciò significa che il messaggio non ha superato il controllo DMARC e il criterio è stato impostato su quarantine, ma il campo pct non è stato impostato su 100% e il sistema ha determinato in modo casuale di non applicare l'azione DMARC, in base al criterio del dominio specificato.</li><li>**pct.reject**: indica che una percentuale inferiore al 100% di messaggi che non superano il controllo DMARC verrà recapitata comunque. Ciò significa che il messaggio non ha superato il controllo DMARC e il criterio è stato impostato su reject, ma il campo pct non è stato impostato su 100% e il sistema ha determinato in modo casuale di non applicare l'azione DMARC, in base al criterio del dominio specificato.</li><li>**permerror**: si è verificato un errore permanente durante la valutazione DMARC, ad esempio è stato trovato un record TXT DMARC con formato non valido in DNS. Tentando di inviare di nuovo questo messaggio, probabilmente si otterrebbe un risultato diverso. Al contrario, potrebbe essere necessario contattare il proprietario del dominio per risolvere il problema.</li><li>**temperror**: si è verificato un errore temporaneo durante la valutazione DMARC. Potrebbe essere possibile richiedere che il mittente invii il messaggio in un secondo momento per elaborare il messaggio correttamente.</li></ul>|
 |compauth|Risultato autenticazione composita. Viene usato da Microsoft 365 per combinare più tipi di autenticazione, come SPF, DKIM, DMARC o qualsiasi altra parte del messaggio, per determinare se il messaggio è stato autenticato o meno. Usa il dominio Da: come base per la valutazione.|
 |dkim|Descrive i risultati del controllo DKIM per il messaggio. Tra i possibili valori sono inclusi:<ul><li>**pass**: indica che il controllo DKIM per il messaggio è stato superato.</li><li>**fail (motivo)**: indica che il controllo DKIM per il messaggio non è stato superato e include il motivo, ad esempio se il messaggio non è stato firmato o se la firma non è stata verificata.</li><li>**none**: indica che il messaggio non è stato firmato. Ciò potrebbe indicare o meno che il dominio dispone di un record DKIM o che il record DKIM non restituisce un risultato, solo che il messaggio non è stato firmato.</li></ul>|
