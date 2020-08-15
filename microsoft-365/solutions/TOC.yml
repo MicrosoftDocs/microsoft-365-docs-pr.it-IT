@@ -105,6 +105,42 @@
               href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: Case study per società multinazionale
               href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+        - name: Collaborazione di governance
+          items:
+            - name: Panoramica
+              href: collaboration-governance-overview.md
+            - name: 'Governance per prima '
+              href: collaboration-governance-first.md
+            - name: Gruppi con SharePoint
+              href: groups-sharepoint-governance.md
+            - name: 'Gruppi, SharePoint e Teams'
+              href: groups-sharepoint-teams-governance.md
+            - name: Riferimenti alle interazioni dei servizi
+              href: groups-services-interactions.md
+            - name: Accesso
+              href: groups-teams-access-governance.md
+            - name: Conformità
+              href: groups-teams-compliance-governance.md
+            - name: Comunicazioni
+              href: groups-teams-communication-governance.md
+            - name: Organizzazione e ciclo di vita
+              items:
+                - name: Organizzazione e governance del ciclo di vita
+                  href: plan-organization-lifecycle-governance.md
+                - name: Gestire la creazione di gruppi
+                  href: manage-creation-of-groups.md
+                - name: Criteri di denominazione
+                  href: groups-naming-policy.md
+                - name: Criteri di scadenza
+                  href: microsoft-365-groups-expiration-policy.md
+                - name: Accesso guest per gruppo
+                  href: per-group-guest-access.md
+                - name: Criteri di invio-come
+                  href: allow-members-to-send-as-or-send-on-behalf-of-group.md
+                - name: Dominio della creazione di gruppi
+                  href: choose-domain-to-create-groups.md
+                - name: Opzioni di fine del ciclo di vita
+                  href: end-life-cycle-groups-teams-sites-yammer.md
         - name: Collaborazione ai file in SharePoint con Microsoft 365
           href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Pianificare una Intranet intelligente di SharePoint

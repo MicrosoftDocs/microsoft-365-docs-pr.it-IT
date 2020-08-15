@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649153"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662310"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -115,7 +115,7 @@ La protezione dell'archiviazione garantisce che l'organizzazione possa rispettar
   
 Quando un criterio di conservazione è bloccato:
 
-- Nessuno può disattivarlo
+- Nessuno può disattivarlo.
 - È possibile aggiungere percorsi, ma non rimuoverli
 - Il contenuto soggetto al criterio non può essere modificato o eliminato durante il periodo di conservazione
 - È possibile estendere un periodo di conservazione, ma non ridurlo
