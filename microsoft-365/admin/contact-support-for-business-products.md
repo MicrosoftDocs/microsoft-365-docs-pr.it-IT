@@ -58,7 +58,7 @@ Il supporto tecnico viene fornito in inglese 24 ore al giorno, 7 giorni alla set
 Gli amministratori possono chiamare il supporto, assicurandosi di avere a portata di mano i dettagli del loro account.
 
 > [!NOTE]
-> Per proteggere meglio la tua organizzazione, è stato aggiunto un passaggio di verifica basato su PIN al processo di verifica esistente basato su telefono. Se ci contatti da un numero che non è registrato con il profilo della tua organizzazione, il rappresentante del supporto Microsoft invia un codice di verifica all'indirizzo email o al numero di telefono registrato nel profilo dell'interfaccia di amministrazione di Microsoft 365. Il codice deve essere fornito al rappresentante del supporto per consentire loro l'accesso all'account dell'organizzazione.
+> Per proteggere meglio l’organizzazione, è stato aggiunto un passaggio di verifica con PIN al processo di verifica esistente con telefono. Sei gli utenti chiamano da un numero che non è registrato con il profilo dell’organizzazione, il rappresentante del supporto Microsoft invia un codice di verifica all'indirizzo di posta elettronica o al numero di telefono registrato nel profilo dell'interfaccia di amministrazione di Microsoft 365. È necessario fornire il codice ricevuto al rappresentante del supporto per consentirgli di accedere all'account dell'organizzazione.
 
 - **Negli Stati Uniti, chiamare il numero 1 800 865 9408.**
 

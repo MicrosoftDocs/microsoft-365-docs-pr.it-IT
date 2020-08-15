@@ -190,9 +190,9 @@ Dopo aver creato il record, è necessario aggiornare il record nel registrar del
     
 4. Come si configura DMARC per il sottodominio?
 
-DMARC viene implementato pubblicando un criterio come record TXT nel DNS ed è gerarchico (ad esempio, i criteri pubblicati per contoso.com verranno applicati a sub.domain.contonos.com, a meno che non vengano definiti in modo esplicito criteri diversi per il sottodominio). Questa operazione è utile perché le organizzazioni possono specificare un numero ridotto di record DMARC di livello elevato per una copertura più ampia. È consigliabile prestare attenzione nel configurare i record di sottodomini DMARC espliciti in cui non si vuole che i sottodomini ereditino il record DMARC del dominio di primo livello.
+DMARC viene implementato pubblicando un criterio come record TXT nel DNS ed è gerarchico (ad esempio, i criteri pubblicati per contoso.com verranno applicati a sub.domain.contonos.com, a meno che non vengano definiti in modo esplicito criteri diversi per il sottodominio). Questa operazione è utile perché le organizzazioni possono specificare un numero ridotto di record DMARC di livello elevato per una copertura più ampia. È consigliabile prestare attenzione a configurare i record di sottodomini DMARC espliciti quando non si vuole che i sottodomini ereditino il record DMARC del dominio di primo livello.
 
-È anche possibile aggiungere un criterio di tipo jolly per DMARC quando i sottodomini non devono inviare posta elettronica, aggiungendo il valore `sp=reject`. Ad esempio:
+È anche possibile aggiungere un criterio di tipo jolly per DMARC quando i sottodomini non devono inviare messaggi di posta elettronica, aggiungendo il valore `sp=reject`. Ad esempio:
 
 ```console
 _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"

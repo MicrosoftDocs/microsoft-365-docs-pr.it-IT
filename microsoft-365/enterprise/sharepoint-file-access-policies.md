@@ -1,5 +1,5 @@
 ---
-title: Criteri consigliati per la protezione dei documenti - Microsoft 365 Enterprise | Microsoft Docs
+title: Criteri di sicurezza dei documenti consigliati-Microsoft 365 per Enterprise | Documenti Microsoft
 description: Descrive i criteri consigliati da Microsoft riguardo alla protezione dell'accesso ai file di SharePoint.
 author: BrendaCarter
 manager: laurawi
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
-ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
+ms.openlocfilehash: 25f58582ae912211f72aaf17c2dab338ebb21c7e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46617187"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695039"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Suggerimenti sui criteri per la protezione di siti e file di SharePoint
 
@@ -43,7 +43,7 @@ I nuovi criteri implementano la protezione del dispositivo per soddisfare sensib
 
 Nella tabella seguente sono elencati i criteri che è necessario rivedere e aggiornare o creare nuovi per SharePoint Online. I criteri comuni collegano le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Livello di protezione|Criteri|Altre informazioni|
+|Livello di protezione|Criteri|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint Online nell'assegnazione delle app Cloud|
 |        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere SharePoint Online nell'assegnazione delle app Cloud|
@@ -85,5 +85,4 @@ Nella figura:
 - Se James accede a un sito sensibile o altamente regolamentato, è membro dell'utilizzo del PC, il suo accesso è concesso purché il PC sia conforme.
 - Se James accede a un sito sensibile che è membro dell'utilizzo del telefono non gestito, consentito per gli utenti di base, riceverà l'accesso solo ai browser al sito riservato a causa dei criteri di accesso al dispositivo configurati per il sito.
 - Se James accede a un sito fortemente regolamentato, è membro dell'utilizzo del telefono non gestito, verrà bloccato a causa dei criteri di accesso configurati per il sito. Può accedere a questo sito solo utilizzando il suo PC gestito e conforme.
-
 
