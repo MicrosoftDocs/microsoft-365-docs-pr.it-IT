@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sui vantaggi associati all'addestramento continuo e alla prova del piano di continuità aziendale.
-ms.openlocfilehash: d7d3aa3309f4a79d3a759008fe97710ee31507a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
-ms.translationtype: HT
+ms.openlocfilehash: eeb5f39050be99d44a4932ac5545ceb28f92fdb2
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597013"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695171"
 ---
 # <a name="train-your-organization"></a>Addestrare l'organizzazione
 

@@ -1,5 +1,5 @@
 ---
-title: Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 Enterprise
+title: Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 per l'organizzazione
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,26 +14,26 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: Ent_TLGs
-description: Utilizzare questa guida del laboratorio di testing per abilitare la gestione degli accessi con privilegi nell'ambiente di testing Microsoft 365 Enterprise.
-ms.openlocfilehash: 1a81c62124177a328209f175262ac13455ca0899
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+description: Utilizzare questa guida del laboratorio di testing per abilitare la gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365.
+ms.openlocfilehash: 28fd27c3059fe25da5da8aaf8700b84c5989b408
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352523"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695147"
 ---
-# <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 Enterprise
+# <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 per l'organizzazione
 
-*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
+*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 per Enterprise e Office 365 Enterprise.*
 
-Con le istruzioni riportate in questo articolo, è possibile configurare la gestione degli accessi con privilegi per aumentare la sicurezza nell'ambiente di testing Microsoft 365 Enterprise.
+Con le istruzioni riportate in questo articolo, è possibile configurare la gestione degli accessi con privilegi per aumentare la sicurezza nell'ambiente di testing Microsoft 365 for Enterprise.
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 >[!TIP]
->Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+>Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli disponibili nella serie di guide al lab di test di Microsoft 365 per le aziende.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 per l'organizzazione
 
 Se si desidera configurare la gestione degli accessi con privilegi in modo semplice con i requisiti minimi, seguire le istruzioni contenute in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -44,17 +44,17 @@ Se si desidera configurare la gestione degli accessi con privilegi in un'azienda
 
 ## <a name="phase-2-configure-privileged-access-management"></a>Fase 2: configurare la gestione degli accessi con privilegi
 
-In questa fase, è possibile configurare un gruppo responsabili approvazione e abilitare la gestione degli accessi con privilegi per l'ambiente di testing Microsoft 365 Enterprise. Per ulteriori informazioni e una panoramica della gestione degli accessi con privilegi, vedere [gestione degli accessi con privilegi in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+In questa fase, è possibile configurare un gruppo responsabili approvazione e abilitare la gestione degli accessi con privilegi per l'ambiente di testing Microsoft 365 for Enterprise. Per ulteriori informazioni e una panoramica della gestione degli accessi con privilegi, vedere [Privileged Access Management](../compliance/privileged-access-management-overview.md).
 
 Eseguire la procedura seguente per configurare e usare l'accesso privilegiato nell'organizzazione:
 
-- [Passaggio 1: creare un gruppo del responsabile approvazione](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
+- [Passaggio 1: creare un gruppo del responsabile approvazione](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
-    Prima di iniziare a utilizzare l'accesso ai privilegi, determinare chi avrà l'autorità di approvazione per le richieste in arrivo per l'accesso a attività con privilegi elevati. Qualsiasi utente che fa parte del gruppo responsabili approvazione sarà in grado di approvare le richieste di accesso. Questa impostazione viene abilitata creando un gruppo di sicurezza abilitato alla posta elettronica in Office 365. Creare un nuovo gruppo di sicurezza denominato "revisori accesso privilegiato" nell'ambiente di testing e aggiungere "User 3" precedentemente creato nei passaggi precedenti della guida del laboratorio di testing.
+    Prima di iniziare a utilizzare l'accesso ai privilegi, determinare chi avrà l'autorità di approvazione per le richieste in arrivo per l'accesso a attività con privilegi elevati. Qualsiasi utente che fa parte del gruppo responsabili approvazione sarà in grado di approvare le richieste di accesso. Questa impostazione viene abilitata creando un gruppo di sicurezza abilitato alla posta elettronica in Microsoft 365. Creare un nuovo gruppo di sicurezza denominato "revisori accesso privilegiato" nell'ambiente di testing e aggiungere "User 3" precedentemente creato nei passaggi precedenti della guida del laboratorio di testing.
 
-- [Passaggio 2: abilitare l'accesso con privilegi](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
+- [Passaggio 2: abilitare l'accesso con privilegi](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-    L'accesso privilegiato deve essere attivato in modo esplicito in Office 365 con il gruppo di approvazione predefinito e includendo un set di account di sistema che si desidera escludere dal controllo di accesso a gestione accesso privilegiato. Assicurarsi di abilitare l'accesso privilegiato nell'organizzazione prima di iniziare la fase 3 di questa guida.
+    L'accesso privilegiato deve essere attivato in modo esplicito in Microsoft 365 con il gruppo di approvazione predefinito e includendo un set di account di sistema che si desidera escludere dal controllo di accesso a gestione accesso privilegiato. Assicurarsi di abilitare l'accesso privilegiato nell'organizzazione prima di iniziare la fase 3 di questa guida.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fase 3: verificare che l'approvazione sia necessaria per le attività con privilegi elevati e
 
@@ -171,8 +171,8 @@ Esplorare le funzionalità e le funzionalità di [protezione delle informazioni]
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guide ai lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)

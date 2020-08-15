@@ -1,5 +1,5 @@
 ---
-title: Proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise
+title: Proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 per l'organizzazione
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,31 +14,31 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Attenersi alla procedura seguente per proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: e6b93e3888873b6d78fec1802d179ed9624ffa63
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+description: Attenersi alla procedura seguente per proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 per l'organizzazione.
+ms.openlocfilehash: fff09ca41ff0b648d46b5c33f753affc01242264
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153869"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695183"
 ---
-# <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise
+# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 per l'organizzazione
 
-*Questa guida al lab di test può essere usata solo per ambienti di testing di Microsoft 365 Enterprise.*
+*Questa guida del laboratorio di testing può essere utilizzata solo per Microsoft 365 per gli ambienti di testing dell'organizzazione.*
 
 È possibile impedire attacchi digitali all'organizzazione assicurando che gli account di amministratore siano il più sicuro possibile. In questo articolo viene descritto come utilizzare i criteri di accesso condizionale di Azure Active Directory (Azure AD) per proteggere gli account di amministratore globale.
 
-Sono disponibili due fasi per la protezione degli account amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise:
+Sono disponibili due fasi per la protezione degli account amministratore globale nell'ambiente di testing di Microsoft 365 per l'organizzazione:
 
-1.  Creare l'ambiente di testing di Microsoft 365 Enterprise.
+1.  Creare l'ambiente di testing di Microsoft 365 per l'organizzazione.
 2.  Proteggere l'account di amministratore globale dedicato.
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli disponibili nella serie di guide al lab di test di Microsoft 365 per le aziende.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 per l'organizzazione
 
 Se si desidera semplicemente testare la protezione degli account amministratore globale con i requisiti minimi, seguire le istruzioni riportate in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -56,7 +56,7 @@ Per prima cosa, creare un nuovo account utente come amministratore globale dedic
 3. Nel riquadro **Aggiungi utente** , digitare **DedicatedAdmin** in **nome**, **nome visualizzato**e **nomeutente**.
 4. Fare clic su **password**, fare clic su **fammi creare la password**e quindi digitare una password complessa. Registrare la password per il nuovo account in una posizione sicura.
 5. Fare clic su **Avanti**.
-6. Nel riquadro **assegna licenze di prodotto** selezionare **Microsoft 365 e5** o **Office 365 E5**e quindi fare clic su **Avanti**.
+6. Nel riquadro **assegna licenze di prodotto** selezionare **Microsoft 365 E5**e quindi fare clic su **Avanti**.
 7. Nel riquadro **impostazioni facoltative** fare clic su **ruoli**, quindi selezionare interfaccia di **Amministrazione** e **amministratore globale**. Fare clic su **Avanti**.
 8. Nel riquadro **quasi finito** , fare clic su **fine aggiungendo**, quindi fare clic su **Chiudi**.
 
@@ -75,7 +75,7 @@ Successivamente, creare criteri di accesso condizionale per richiedere l'autenti
 
 Questo primo criterio richiede che tutti gli account di amministratore globale utilizzino AMF.
 
-1. In una nuova scheda del browser, passare a [https://portal.azure.com](https://portal.azure.com).
+1. In una nuova scheda del browser, passare a [https://portal.azure.com](https://portal.azure.com) .
 2. Fare clic su **Azure Active Directory > sicurezza > accesso condizionale**.
 3. Nel riquadro **criteri di accesso condizionale** fare clic su **criteri di base: richiedere l'autenticazione master per gli amministratori (anteprima)**.
 4. Nel riquadro **criteri di base** , fare clic su **usa criteri immediatamente > Salva**.
@@ -96,18 +96,16 @@ Questo secondo criterio blocca l'accesso all'autenticazione dell'account amminis
 
 Per testare il primo criterio, disconnettersi e accedere con l'account DedicatedAdmin. È necessario che venga richiesto di configurare l'autenticazione master. Questo dimostra che il primo criterio viene applicato.
 
-Vedere il passaggio [Proteggi account amministratore globale](identity-create-protect-global-admins.md#identity-global-admin) nella fase di identità per informazioni e collegamenti per proteggere gli account di amministratore globale in produzione.
-
 ## <a name="next-step"></a>Passaggio successivo
 
 Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test-lab-guides.md#identity) nell'ambiente di test.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Fase 2: identità](identity-infrastructure.md)
+[Roadmap dell'identità](identity-roadmap-microsoft-365.md)
 
-[Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guide ai lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)

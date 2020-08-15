@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul modo in cui Contoso usa Microsoft Endpoint Configuration Manager per distribuire Microsoft 365 Apps for enterprise.
-ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
-ms.translationtype: HT
+ms.openlocfilehash: de6a5348a49a490afa3c3ac632e66026966e2ef3
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679039"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695159"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Distribuzione di Microsoft 365 Apps for enterprise per Contoso
 
@@ -79,12 +79,12 @@ Ecco l'architettura di distribuzione degli aggiornamenti continui e di installaz
  
 ## <a name="next-step"></a>Passaggio successivo
 
-[Informazioni su](contoso-mdm.md) come Contoso usa Microsoft Intune in Microsoft 365 Enterprise per gestire i dispositivi e le app in esecuzione su di essi nell'organizzazione.
+[Informazioni](contoso-mdm.md) su come Contoso utilizza Microsoft Intune in Microsoft 365 for Enterprise per gestire i dispositivi e le app in esecuzione su di essi nell'organizzazione.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Microsoft 365 Apps for enterprise per Microsoft 365 Enterprise](office365proplus-infrastructure.md)
+[App Microsoft 365 per grandi imprese](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Guida alla distribuzione](deploy-microsoft-365-enterprise.md)
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
 [Guide dei laboratori di testing](m365-enterprise-test-lab-guides.md)

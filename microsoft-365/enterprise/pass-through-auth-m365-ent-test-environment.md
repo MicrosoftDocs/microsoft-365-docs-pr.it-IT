@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare l'autenticazione pass-through per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 8a9a8847d79e1d114f0ddfb4843cbb7b9f9f0d4c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 1b5540f2e16ac0267bf33faf42defe6bca6d25cd
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631418"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695195"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticazione pass-through per l'ambiente di testing di Microsoft 365
 
-*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
+*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 per Enterprise e Office 365 Enterprise.*
 
 Le organizzazioni che vogliono usare direttamente l'infrastruttura di Active Directory Domain Services locale per l'autenticazione per le applicazioni e servizi basati sul cloud di Microsoft, possono usare l'autenticazione pass-through. In questo articolo viene descritto come configurare l'ambiente di testing di Microsoft 365 per l'autenticazione pass-through, con la seguente configurazione come risultato:
   
@@ -41,7 +41,7 @@ Le fasi principali della configurazione dell'ambiente di testing sono tre:
 ![Guide del laboratorio di testing per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli disponibili nella serie di guide al lab di test di Microsoft 365 per le aziende.
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
@@ -51,7 +51,7 @@ Seguire le istruzioni riportate in [sincronizzazione hash delle password per Mic
   
 Questa configurazione è costituita da: 
   
-- Abbonamenti di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5.
+- Microsoft 365 E5 o sottoscrizione a pagamento.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Fase 2: configurare Azure AD Connect su APP1 per l'autenticazione pass-through
@@ -80,11 +80,11 @@ Questa fase riguarda la configurazione di Azure AD Connect su APP1 per l'uso del
 
 10.    Fare clic su **Autenticazione pass-through**. Nel riquadro **Autenticazione pass-through** sono elencati i server in cui sono installati gli Agenti di autenticazione. APP1 sarà presente nell'elenco. Chiudere il riquadro **Autenticazione pass-through**.
 
-Successivamente, verificare la possibilità di accedere all'abbonamento con il nome utente <strong>user1@testlab.</strong>\<dominio pubblico> dell'account User1.
+Successivamente, verificare la possibilità di accedere all'abbonamento con il <strong>User1@testlab.</strong>\<your public domain> per l’account User1.
 
 1. Da APP1, disconnettersi e quindi accedere nuovamente specificando un account diverso.
 
-2. Quando vengono richiesti nome utente e password, specificare <strong>user1@testlab.</strong>\<dominio pubblico> e la password per User1. Dovrebbe essere possibile accedere come User1.
+2. Quando vengono richiesti nome utente e password, specificare <strong>user1@testlab.</strong>\<your public domain> e la password User1. Dovrebbe essere possibile accedere come User1.
 
 Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB AD DS, non è un amministratore globale. Di conseguenza, l'icona **Amministratore** non sarà visibile.
 
@@ -94,7 +94,7 @@ Di seguito è riportata la configurazione risultante:
  
 Questa configurazione è costituita da:
 
-- Abbonamenti di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5 con il dominio DNS testlab.\<nome dominio> registrato.
+- Una versione di valutazione di Microsoft 365 E5 o abbonamenti a pagamento con dominio DNS testlab.\<your domain name> registrato.
 - Una intranet dell'organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1, APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Un Agente di autenticazione viene eseguito su APP1 per gestire le richieste di autenticazione pass-through dal tenant di Azure AD dell'abbonamento a Microsoft 365.
 
 ## <a name="next-step"></a>Passaggio successivo
@@ -103,8 +103,8 @@ Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guide ai lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)
