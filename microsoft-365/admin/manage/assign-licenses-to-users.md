@@ -22,13 +22,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come assegnare licenze agli utenti.
-ms.date: 07/01/2020
-ms.openlocfilehash: 648a3433bf5c2bd9bb96abb90335f56ee4fb6bee
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.date: 08/14/2020
+ms.openlocfilehash: e1f28107f7774fa4eccbecb3882cbd002a6eea1a
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015948"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757558"
 ---
 # <a name="assign-licenses-to-users"></a>Assegnare licenze agli utenti
 
@@ -160,6 +160,25 @@ Nella pagina **Utenti attivi** si assegnano licenze utente ai prodotti.
 5. Nella parte inferiore del riquadro **Licenze di prodotto** selezionare **Salva** \> **Chiudi** \> **Chiudi**.
 
 ::: moniker-end
+
+## <a name="assign-a-license-to-a-guest-user"></a>Assegnare una licenza a un utente guest
+
+È possibile invitare gli utenti guest a collaborare con l'organizzazione nell'interfaccia di amministrazione di Azure Active Directory. Per informazioni sui guest user, vedere [Cos'è l'accesso degli utenti guest in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Se vi sono utenti guest, vedere [Guida introduttiva: aggiungere utenti guest alla directory nel portale di Azure](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+
+> [!IMPORTANT]
+> Per eseguire questi passaggi, è necessario essere un amministratore globale.
+
+1. Andare sull’<a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">interfaccia di amministrazione di Azure Active Directory</a>
+2. Nel riquadro di spostamento selezionare **Utenti**.
+3. Nella pagina **Utenti | Tutti gli utenti (anteprima)**, selezionare **Aggiungi filtri**.
+4. Nel menu **Selezionare un campo**, scegliere **Tipo di utente**, quindi selezionare **Applica**.
+5. Nel menu successivo, selezionare **Guest**.
+6. Nell'elenco dei risultati, selezionare l'utente che necessita di una licenza.
+7. In **Gestisci**, selezionare **Licenze**.
+8. Selezionare **Attività**.
+9. Nella pagina **Aggiornare le assegnazioni di licenze**, selezionare il prodotto per cui si vuole assegnare una licenza.
+10. Nella parte destra, deselezionare le caselle di controllo per tutti i servizi a cui non si vuole consentire l'accesso all'utente guest.
+11. Selezionare **Salva**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
