@@ -20,19 +20,19 @@ metadata:
   ms.lasthandoff: 08/12/2020
   ms.locfileid: "46641620"
 landingContent:
-- title: Gestisci protezione delle informazioni & governance
+- title: Gestire la protezione delle informazioni e la governance
   linkLists:
   - linkListType: overview
     links:
-    - text: Conosci i tuoi dati
+    - text: Riconoscere i propri dati
       url: protect-information.md#know-your-data
-    - text: Proteggi i tuoi dati
+    - text: Proteggere i propri dati
       url: protect-information.md#protect-your-data
-    - text: Evita la perdita di dati
+    - text: Prevenire la perdita di dati
       url: protect-information.md#prevent-data-loss
-    - text: Gestisci i tuoi dati
+    - text: Gestire i propri dati
       url: manage-information-governance.md
-    - text: 'Percorso formativo: Gestisci protezione delle informazioni e governance'
+    - text: 'Percorso formativo: Gestire la protezione delle informazioni e la governance'
       url: /learn/paths/m365-compliance-information
 - title: Gestire i rischi Insider
   linkLists:
