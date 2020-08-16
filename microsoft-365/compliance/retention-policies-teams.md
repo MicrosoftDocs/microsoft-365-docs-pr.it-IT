@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 8599774994ccabce716c1366c0ffc6e1773626e9
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577974"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685808"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -66,7 +66,7 @@ Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi
 
 1. **Se il messaggio non viene eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il messaggio viene spostato nella cartella SubstrateHolds. 
 
-2. **Se l'elemento viene eliminato dall'utente** durante il periodo, verrà immediatamente spostato nella cartella SubstrateHolds. Se un utente elimina il messaggio da questa posizione o svuota la cartella SubstrateHolds, l'elemento viene eliminato definitivamente. In caso contrario, il messaggio viene eliminato definitivamente un giorno dopo essere stato spostato nella cartella SubstrateHolds.
+2. **Se l'elemento viene eliminato dall'utente** durante il periodo, verrà immediatamente spostato nella cartella SubstrateHolds. Il messaggio viene eliminato definitivamente un giorno dopo essere stato spostato nella cartella SubstrateHolds.
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Chat di interoperabilità di Skype for Business e Teams.

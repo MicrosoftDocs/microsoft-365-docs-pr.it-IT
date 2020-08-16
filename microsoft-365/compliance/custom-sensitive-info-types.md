@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Panoramica sui tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati, ad esempio criterio principale, prossimità dei caratteri e livello di probabilità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6934edba6eef03bc9d4bfc5c1c69f127a7d3a0e5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3b3e30c75641dde16726e1d98c8f12c4437b0df6
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817965"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685476"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipi di informazioni sensibili personalizzati
 
@@ -50,11 +50,26 @@ Le parti fondamentali di un tipo di informazioni sensibili personalizzato sono:
 
 Per creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità, è possibile scegliere tra diverse opzioni:
 
-- **Usare EDM** (novità!) È possibile configurare tipi di informazioni sensibili personalizzati tramite la classificazione basata su Exact Data Match (EDM). Questo metodo consente di creare un tipo di informazioni sensibili dinamico usando un database protetto che è possibile aggiornare periodicamente. Vedere [Creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- **Usare EDM** È possibile configurare tipi di informazioni sensibili personalizzati tramite la classificazione basata su Exact Data Match (EDM). Questo metodo consente di creare un tipo di informazioni sensibili dinamico usando un database protetto che è possibile aggiornare periodicamente. Vedere [Creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 - **Usare PowerShell** È possibile configurare tipi di informazioni riservate personalizzati con PowerShell. Anche se questo metodo è più complesso rispetto all'utilizzo dell'interfaccia utente, offre più opzioni di configurazione. Vedere [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 - **Usare l'interfaccia utente** È possibile configurare un tipo di informazioni sensibili personalizzato mediante l'interfaccia utente del Centro sicurezza e conformità. Con questo metodo, è possibile usare espressioni regolari, parole chiave e dizionari di parole chiave. Per saperne di più, vedere [Creare un tipo di informazioni sensibili personalizzato](create-a-custom-sensitive-information-type.md).
 
-
+> [!NOTE]
+> Microsoft 365 Information Protection supporta in anteprima set di caratteri a due byte nelle lingue seguenti:
+> - Cinese (semplificato)
+> - Cinese (tradizionale)
+> - Coreano
+> - Giapponese
+> 
+>La versione di anteprima è disponibile solo nel cloud commerciale e l'implementazione è limitata ai paesi o aree geografiche seguenti:
+> - Giappone
+> - Corea del Sud
+> - Cina
+> - RAS di Hong Kong
+> - RAS di Macao
+> - Taiwan
+>
+>Il supporto è disponibile per i tipi di informazioni sensibili. Per altre informazioni, vedere [Note sulla versione del supporto della protezione delle informazioni per i set di caratteri a due byte (anteprima)](mip-dbcs-relnotes.md).
 

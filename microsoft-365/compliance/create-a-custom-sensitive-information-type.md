@@ -17,21 +17,38 @@ search.appverid:
 - MET150
 description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f702582a0e2c53b0846cd0586295d9bbea657e3c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818065"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686660"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Creare un tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità
 
-Leggere questo articolo per creare un [tipo di informazioni sensibili personalizzato](custom-sensitive-info-types.md) nel Centro sicurezza e conformità ([https://protection.office.com](https://protection.office.com)). I tipi di informazioni sensibili personalizzati creati con questo metodo vengono aggiunti al pacchetto di regole denominato `Microsoft.SCCManaged.CustomRulePack`.
+Leggere questo articolo per creare un tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità ([https://protection.office.com](https://protection.office.com)). I tipi di informazioni sensibili personalizzati creati con questo metodo vengono aggiunti al pacchetto di regole denominato `Microsoft.SCCManaged.CustomRulePack`.
 
 È anche possibile creare tipi di informazioni sensibili personalizzati usando PowerShell e le funzionalità del classificatore Exact Data Match. Per altre informazioni su questi metodi, vedere:
 - [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Creare un tipo di informazioni sensibili personalizzato per DLP con Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+> [!NOTE]
+> Microsoft 365 Information Protection supporta in anteprima i set di caratteri a due byte per le lingue seguenti:
+> - Cinese (semplificato)
+> - Cinese (tradizionale)
+> - Coreano
+> - Giapponese
+> 
+>Questa versione di anteprima è disponibile solo nel cloud commerciale e l'implementazione è limitata ai paesi o alle aree geografiche seguenti:
+> - Giappone
+> - Corea del Sud
+> - Cina
+> - RAS di Hong Kong
+> - RAS di Macao
+> - Taiwan
+>
+>Il supporto è disponibile per i tipi di informazioni sensibili. Per altre informazioni, vedere [Note sulla versione del supporto della protezione delle informazioni per i set di caratteri a due byte (anteprima)](mip-dbcs-relnotes.md).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
