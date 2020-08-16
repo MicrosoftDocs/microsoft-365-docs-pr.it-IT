@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 3bec74c1043e2ecfd632144647945f441433dcb2
-ms.sourcegitcommit: 12e19f9cc319f25ab9dd3b0f77ad17e227d7f0be
+ms.openlocfilehash: 4eb08eed668efb598068a7229b9312ccb6654274
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46672911"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757579"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -150,7 +150,7 @@ Per verificare la sintassi del tenant e identificare gli URL per gli utenti, ved
 
 Per conservare o eliminare il contenuto di un gruppo di Microsoft 365 (in precedenza gruppo di Office365), è necessario usare la posizione **Gruppi di Office 365**. Anche se un gruppo di Microsoft 365 ha una cassetta postale di Exchange, un criterio di conservazione che include l'intero percorso **Posta elettronica di Exchange** non includerà il contenuto nelle cassette postali del gruppo di Microsoft 365. Inoltre, anche se il percorso **Posta elettronica di Exchange** consente inizialmente di selezionare una cassetta postale del gruppo da includere o escludere, provando a salvare il criterio di conservazione si riceverà un messaggio di errore che segnala che "RemoteGroupMailbox" non è una selezione valida per il percorso di Exchange.
 
-I criteri di conservazione applicati a un gruppo di Microsoft 365 includono sia la cassetta postale del gruppo che il sito. Un criterio di conservazione applicato a un gruppo di Microsoft 365 protegge le risorse create da un gruppo di Microsoft 365, che include Microsoft Teams.
+I criteri di conservazione applicati a un gruppo di Microsoft 365 includono la cassetta postale del gruppo e il sito di Teams, se è stato selezionato un sito di Teams al momento della creazione del gruppo o aggiunto un secondo momento. I file archiviati nel sito di Teams sono coperti con questa posizione, ma non le chat di Teams oppure i messaggi del canale di Teams che hanno i propri percorsi dei criteri di conservazione.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informazioni di configurazione per Skype for Business
 
