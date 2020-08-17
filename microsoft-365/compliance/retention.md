@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b0ce412609ac9c7084c1c598a327cde7c055c101
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662310"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757569"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -58,7 +58,7 @@ Quando al contenuto è assegnata un'impostazione di conservazione, rimane nella 
 
 - Per le cassette postali di Exchange, la copia viene conservata nella cartella **Elementi ripristinabili**. 
 
-- Per i messaggi di canale e chat di Teams, la copia viene conservata in una cartella nascosta all'interno della cartella **Elementi ripristinabili** di Exchange.
+- Per i messaggi di canale e chat di Teams, la copia viene conservata in una cartella nascosta dal nome **SubstrateHolds** all'interno della cartella **Elementi ripristinabili** di Exchange.
 
 > [!NOTE]
 > La raccolta di archiviazione consuma spazio di archiviazione non esente dalla quota di archiviazione di un sito. Potrebbe essere necessario aumentare lo spazio di archiviazione quando si usano impostazioni di conservazione per i gruppi di SharePoint e Microsoft 365.
