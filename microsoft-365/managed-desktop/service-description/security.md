@@ -1,31 +1,34 @@
 ---
-title: Sicurezza in Microsoft Managed Desktop
+title: Tecnologie di sicurezza in Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: debd21a975ce209677bdd054952e31f34260e405
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470490"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778257"
 ---
-# <a name="security-in-microsoft-managed-desktop"></a>Sicurezza in Microsoft Managed Desktop
+# <a name="security-technologies-in-microsoft-managed-desktop"></a>Tecnologie di sicurezza in Microsoft Managed Desktop
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop utilizza diverse tecnologie Microsoft per proteggere i dati e i dispositivi gestiti. In particolare: 
+Microsoft Managed Desktop utilizza diverse tecnologie Microsoft per proteggere i dati e i dispositivi gestiti. Inoltre, Microsoft Managed Desktop Security Operations Center utilizza una serie di [processi](security-operations.md) in combinazione con queste tecnologie.
 
+In particolare: 
 
 - [Sicurezza](#device-security) dei dispositivi – sicurezza e protezione sui dispositivi Microsoft Managed Desktop
 - [Gestione delle identità e degli accessi](#identity-and-access-management) : gestione di un utilizzo sicuro dei dispositivi tramite Azure Active Directory Identity Services
 - [Sicurezza di rete](#network-security) – informazioni VPN e soluzioni e impostazioni consigliate per Microsoft Managed Desktop
 - [Sicurezza delle informazioni](#information-security) : Servizi facoltativi disponibili per proteggere ulteriormente le informazioni riservate 
 
-Per informazioni sull'archiviazione dei dati, l'utilizzo e le procedure di sicurezza utilizzate da Microsoft Managed Desktop, scaricare il white paper all'indirizzo [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
+Per informazioni sull'archiviazione dei dati, l'utilizzo e le procedure di sicurezza utilizzate da Microsoft Managed Desktop, vedere il white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 
 ## <a name="device-security"></a>Sicurezza del dispositivo
@@ -42,7 +45,7 @@ Configurazione sicura del dispositivo |   Microsoft Managed Desktop implementa l
 
 
 
-## <a name="identity-and-access-management"></a>Gestione di identità e accesso
+## <a name="identity-and-access-management"></a>Gestione delle identità e degli accessi
 
 La gestione delle identità e degli accessi protegge le risorse aziendali e i dati aziendali. Microsoft Managed Desktop configura i dispositivi per garantire l'utilizzo sicuro delle identità gestite di Azure Active Directory (Azure AD). È responsabilità del cliente mantenere informazioni accurate nel tenant di Azure AD. 
 

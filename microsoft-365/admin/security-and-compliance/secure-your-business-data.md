@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: cffc922aec3ca46543b5b1608fa37e6fa0acfa23
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: c5ae75bea68f56cb1ba028500a1f206603332717
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138291"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778303"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Top 10 modi per proteggere i piani Microsoft 365 for business
 
@@ -43,9 +43,9 @@ Microsoft consiglia di completare le attività elencate nella tabella seguente c
   
 ||**Attività**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
-|1   <br/> |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2   <br/> |[Formazione degli utenti](secure-your-business-data.md#train) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3   <br/> |[Utilizzo degli account amministratore dedicati](secure-your-business-data.md#admin) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1  <br/> |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2  <br/> |[Formazione degli utenti](secure-your-business-data.md#train) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3  <br/> |[Utilizzo degli account amministratore dedicati](secure-your-business-data.md#admin) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[Aumentare il livello di protezione da malware nella posta elettronica](secure-your-business-data.md#malware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5   <br/> |[Proteggere l'ambiente da ransomware](secure-your-business-data.md#ransomware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |6   <br/> |[Interrompere l'inoltro automatico per la posta elettronica](secure-your-business-data.md#forwarding) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -66,17 +66,19 @@ L'utilizzo dell'autenticazione a più fattori è uno dei modi più semplici e pi
 Per le aziende che utilizzano Microsoft 365, aggiungere un'impostazione che richiede agli utenti di eseguire l'accesso utilizzando l'autenticazione a più fattori. Quando si apportano queste modifiche, agli utenti verrà richiesto di configurare il telefono per l'autenticazione a due fattori dopo l'accesso.
 Per visualizzare un video per la formazione su come configurare l'AMF e su come gli utenti completano il set up, vedere [set up Mae](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) and [User set up](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225).
   
-Per configurare l'autenticazione a più fattori:
+Per impostare l'autenticazione a più fattori, è necessario abilitare le impostazioni predefinite per la sicurezza:
 
-1. Nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=834822) **selezionare utenti**  >  **attivi**.
+Per gran parte delle organizzazioni, le impostazioni di sicurezza predefinite offrono un buon livello di sicurezza aggiuntiva. Per altre informazioni, vedere [Che cosa sono le impostazioni predefinite per la sicurezza?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-2. Nella sezione **utenti attivi** selezionare autenticazione a più **fattori**.
+Se l'abbonamento è nuovo, l'impostazione predefinita della sicurezza potrebbe essere già attivata automaticamente.
 
-3. Nella pagina **autenticazione** a più fattori selezionare **utente** se si sta abilitando questa operazione per un utente oppure è possibile eseguire un **aggiornamento in blocco**.
+È possibile abilitare o disabilitare le impostazioni predefinite di sicurezza dal riquadro **Proprietà** di Azure Active Directory (Azure AD) nel portale di Azure.
 
-4. Selezionare **Abilita** in **passaggi rapidi**.
-
-5. Nella finestra popup scegliere **Abilita autenticazione a più fattori**.
+1.  Accedere al [portale di amministrazione di Microsoft 365](https://admin.microsoft.com) con le credenziali di amministratore globale.
+2.  Nel riquadro di spostamento sinistro scegliere **Mostra tutto**, e in **Interfacce di amministrazione**scegliere **Azure Active Directory**.
+3. In **Interfaccia di amministrazione di Azure Active Directory** scegliere **Azure Active Directory** > **Proprietà**.
+3.  Nella parte inferiore della pagina scegliere **Gestire le impostazioni di sicurezza predefinite**.
+4.  Scegliere **Sì** per abilitare le impostazioni di sicurezza predefinite o **No** per disabilitare le impostazioni predefinite per la sicurezza, quindi scegliere **Salva**.
 
 
 Dopo aver configurato l'autenticazione a più fattori per l’organizzazione, agli utenti verrà richiesto di impostare la verifica in due passaggi sui loro dispositivi. Per ulteriori informazioni, vedere [configurare la verifica in due passaggi per Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
@@ -155,7 +157,7 @@ Per creare una regola di trasporto della posta, visualizzare un [video di formaz
     
 5. Applicare le impostazioni nella tabella seguente per ogni regola. Lasciare l'impostazione predefinita per le altre impostazioni, a meno che non si desideri modificarle.
     
-6. Seleziona **Salva**.
+6. Selezionare **Salva**.
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**|**Bloccare i tipi di file che potrebbero contenere ransomware o altro codice dannoso**|
 |:-----|:-----|:-----|
@@ -168,7 +170,7 @@ Per creare una regola di trasporto della posta, visualizzare un [video di formaz
 > [!TIP]
 > È inoltre possibile aggiungere i file che si desidera bloccare nell'elenco antimalware nel [passaggio 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Per altre informazioni, vedere:
+Per ulteriori informazioni, vedere:
   
 - [Come gestire ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -191,7 +193,7 @@ Per creare una regola di trasporto della posta:
     
 5. Applicare le impostazioni nella tabella seguente. Lasciare l'impostazione predefinita per le altre impostazioni, a meno che non si desideri modificarle.
     
-6. Seleziona **Salva**.
+6. Selezionare **Salva**.
     
 |**Impostazione**|**Rifiutare i messaggi di posta elettronica di inoltro automatico ai domini esterni**|
 |:-----|:-----|
@@ -331,7 +333,7 @@ Per modificare il criterio predefinito:
 
 3. In **impostazioni che si applicano al contenuto tranne che alla posta elettronica**, selezionare **applicazioni di Office 365**, non **monitorare quando gli utenti fanno clic su collegamenti sicuri**e **non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale**.
     
-4. Seleziona **Salva**. 
+4. Selezionare **Salva**. 
     
 Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
   
@@ -339,7 +341,7 @@ Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
     
 2. Applicare le impostazioni elencate nella tabella seguente.
     
-3. Seleziona **Salva**. 
+3. Selezionare **Salva**. 
     
 |**Impostazione o opzione**|**Impostazione consigliata** <br/>|
 |:-----|:-----|
