@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: b0ce412609ac9c7084c1c598a327cde7c055c101
-ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
+ms.openlocfilehash: ed8390b9c773e04723c0f409eb9649e20af0dac3
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757569"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778400"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -89,7 +89,7 @@ Diversamente dai criteri di conservazione, le impostazioni di conservazione dell
 
 - Supportare la [revisione per l'eliminazione](disposition-reviews.md) per rivedere il contenuto prima che sia eliminato definitivamente.
 
-- Contrassegnare il contenuto come [record](records.md) come parte delle impostazioni dell'etichetta e avere sempre una [prova dell'eliminazione](disposition.md#disposition-of-records) quando il contenuto viene eliminato al termine del periodo di conservazione.
+- Contrassegnare il contenuto come [record](records-management.md#records) come parte delle impostazioni dell'etichetta e avere sempre una [prova dell'eliminazione](disposition.md#disposition-of-records) quando il contenuto viene eliminato al termine del periodo di conservazione.
 
 ### <a name="retention-policies"></a>Criteri di conservazione
 
@@ -166,7 +166,7 @@ Con le etichette di conservazione è possibile:
 
 - **Applicare un'etichetta di conservazione predefinita a una raccolta documenti, una cartella o un set di documenti** in SharePoint, in modo che i documenti archiviati in quella posizione ereditino l'etichetta di conservazione predefinita.
 
-Inoltre, le etichette di conservazione supportano la [gestione dei record](records-management.md) per messaggi di posta elettronica e documenti tra app e servizi Microsoft 365. È possibile usare un'etichetta di conservazione per classificare un contenuto come record. Quando questo avviene e il contenuto rimane in Microsoft 365, l'etichetta pone altre restrizioni sul contenuto che potrebbero essere necessarie per motivi legali. Per altre informazioni, incluso un confronto delle azioni consentite o bloccate, vedere [Informazioni sui record](records.md).
+Inoltre, le etichette di conservazione supportano la [gestione dei record](records-management.md) per messaggi di posta elettronica e documenti tra app e servizi Microsoft 365. È possibile usare un'etichetta di conservazione per classificare un contenuto come record. Quando questo avviene e il contenuto rimane in Microsoft 365, l'etichetta pone altre restrizioni sul contenuto che potrebbero essere necessarie per motivi legali. Per altre informazioni, vedere [confrontare le restrizioni relative alle azioni consentite o bloccate](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 Se il contenuto viene spostato al di fuori di Microsoft 365, le [etichette di conservazione](sensitivity-labels.md), a differenza delle etichette di riservatezza, non vengono mantenute.
 

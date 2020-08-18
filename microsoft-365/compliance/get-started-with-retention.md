@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588174"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778292"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -52,7 +52,7 @@ Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vanta
 
 Ai membri del team di conformità che creeranno e gestiranno i criteri e le etichette di conservazione è necessario assegnare autorizzazioni per il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). Per impostazione predefinita, l'amministratore del tenant (amministratore globale) ha accesso a questa posizione e può fornire l'accesso ai responsabili della conformità e ad altre persone senza concedere loro tutte le autorizzazioni di un amministratore del tenant. Per concedere le autorizzazioni per questa amministrazione limitata, è consigliabile aggiungere gli utenti al gruppo di ruoli di amministratore **Amministratore di conformità**. Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
-Queste autorizzazioni sono necessarie solo per creare e applicare criteri di conservazione. La persona che configura i criteri di conservazione non ha bisogno di accedere al contenuto.
+Queste autorizzazioni sono necessarie solo per creare, configurare e applicare criteri di conservazione ed etichette di conservazione. La persona che configura tali criteri ed etichette non ha bisogno di accedere al contenuto.
 
 ## <a name="common-scenarios-for-retention-policies-and-retention-labels"></a>Scenari comuni sui criteri e le etichette di conservazione
 
@@ -67,11 +67,12 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 |Applicare automaticamente un set di azioni conserva ed elimina ai documenti e ai messaggi di posta elettronica |[Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)|
 |Avviare il periodo di conservazione quando si verifica un evento, ad esempio:  <br />- Dipendenti che lasciano l'organizzazione <br />- Scadenza contratti <br />- Fine del ciclo di vita del prodotto| [Avviare la conservazione al verificarsi di un evento](event-driven-retention.md)|
 |Gestire il ciclo di vita di tipi di documenti diversi in SharePoint| [Usare etichette di riservatezza per gestire il ciclo di vita dei documenti archiviati in SharePoint](auto-apply-retention-labels-scenario.md)|
-|Usare una soluzione di gestione dei record singola per documenti e messaggi di posta elettronica |[Gestione dei record in Microsoft 365](records-management.md) |
 |Rispettare la SEC Rule 17a-4|[Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Assicurarsi il tutto sia revisionato e approvato prima di eliminare il contenuto al termine del periodo di conservazione|[Revisioni per l'eliminazione](disposition.md#disposition-reviews) |
-|Disporre di una prova di eliminazione quando il contenuto viene eliminato al termine del periodo di conservazione|[Eliminazione dei record](disposition.md#disposition-of-records) |
 | Controlla come e dove vengono applicate le etichette di conservazione | [Monitoraggio delle etichette di conservazione](retention.md#monitoring-retention-labels) |
+|Usare una soluzione di gestione dei record singola per documenti e messaggi di posta elettronica |[Informazioni sulla gestione dei record](records-management.md) |
+
+Se si usano etichette di conservazione per la gestione dei record, esistono ulteriori scenari, univoci per le etichette di conservazione, che consentono di contrassegnare il contenuto come record. Vedere [Scenari comuni per la gestione dei record](get-started-with-records-management.md#common-scenarios-for-records-management).
 
 ## <a name="end-user-documentation-for-retention-labels"></a>Documentazione per gli utenti finali sulle etichette di conservazione
 

@@ -15,13 +15,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+hideEdit: true
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 9e1b1261bbb58b1ca65818a5ad304ee186561ae6
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: b302879b50c06007656aba93b38f8387557d301b
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430519"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778556"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -577,9 +578,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_austria_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- L'espressione regolare  `Regex_austria_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
     
-- Viene trovata una parola chiave from `Keywords_austria_eu_driver's_license_number` . 
+- Viene trovata una parola chiave from  `Keywords_austria_eu_driver's_license_number` . 
     
 ```xml
 <!-- EU Driver's License Number -->
@@ -632,9 +633,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_austria_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- L'espressione regolare  `Regex_austria_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
-- Viene trovata una parola chiave from `Keywords_austria_eu_national_id_card` . 
+- Viene trovata una parola chiave from  `Keywords_austria_eu_national_id_card` . 
    
 ```xml
 <!-- EU austria_eu_national_id -->
@@ -680,9 +681,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_austria_eu_passport_number` trova contenuto che corrisponde al modello. 
+- L'espressione regolare  `Regex_austria_eu_passport_number` trova contenuto che corrisponde al modello. 
     
-- Viene trovata una parola chiave from `Keywords_austria_eu_passport_number` . 
+- Viene trovata una parola chiave from  `Keywords_austria_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -726,13 +727,13 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
-- Viene trovata una parola chiave from `Keywords_austria_eu_ssn_or_equivalent` . 
+- Viene trovata una parola chiave from  `Keywords_austria_eu_ssn_or_equivalent` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -790,12 +791,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_austria_eu_tax_file_number` . 
+- La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_austria_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -1323,8 +1324,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_belgium_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_belgium_eu_driver's_license_number` .
+- L'espressione regolare  `Regex_belgium_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_belgium_eu_driver's_license_number` .
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -1480,8 +1481,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_belgium_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_belgium_eu_passport_number` .
+- L'espressione regolare  `Regex_belgium_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_belgium_eu_passport_number` .
 
 ```xml
  <!-- EU Passport Number -->
@@ -1523,12 +1524,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_belgium_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_belgium_eu_ssn_or_equivalent` . 
+- La funzione  `Func_belgium_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_belgium_eu_ssn_or_equivalent` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_belgium_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_belgium_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -1590,8 +1591,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_belgium_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_belgium_eu_tax_file_number` . 
+- L'espressione regolare  `Regex_belgium_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_belgium_eu_tax_file_number` . 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -1885,8 +1886,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_bulgaria_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_bulgaria_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_bulgaria_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_bulgaria_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -1942,12 +1943,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_bulgaria_national_number` . 
+- La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_bulgaria_national_number` . 
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -2030,8 +2031,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_bulgaria_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_bulgaria_eu_passport_number` . 
+- L'espressione regolare  `Regex_bulgaria_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_bulgaria_eu_passport_number` . 
 
 ```xml
  <!-- EU Passport Number -->
@@ -2069,12 +2070,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_bulgaria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_bulgaria_eu_tax_file_number` . 
+- La funzione  `Func_bulgaria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_bulgaria_eu_tax_file_number` . 
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_bulgaria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_bulgaria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
 
 ```xml
  <!-- EU Tax File Number -->
@@ -3076,8 +3077,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_croatia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_croatia_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_croatia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_croatia_eu_driver's_license_number` . 
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3192,8 +3193,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_croatia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_croatia_eu_passport_number` . 
+- L'espressione regolare  `Regex_croatia_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_croatia_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3284,12 +3285,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_croatia_eu_ssn_or_equivalent` . 
+- La funzione  `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_croatia_eu_ssn_or_equivalent` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -3345,12 +3346,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_croatia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_croatia_eu_tax_file_number` . 
+- La funzione  `Func_croatia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_croatia_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_croatia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_croatia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3418,8 +3419,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_cyprus_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_cyprus_eu_driver's_license_number` .
+- L'espressione regolare  `Regex_cyprus_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_cyprus_eu_driver's_license_number` .
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3467,8 +3468,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_cyprus_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_cyprus_eu_national_id_card` . 
+- L'espressione regolare  `Regex_cyprus_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_cyprus_eu_national_id_card` . 
     
 ```xml 
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -3509,8 +3510,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_cyprus_eu_passport_number` trova contenuto che corrisponde al modello.
-- Viene trovata una parola chiave from `Keywords_cyprus_eu_passport_number` . 
+- L'espressione regolare  `Regex_cyprus_eu_passport_number` trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave from  `Keywords_cyprus_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3554,12 +3555,12 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_cyprus_eu_tax_file_number` . 
+- La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_cyprus_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3629,8 +3630,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_czech_republic_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_czech_republic_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_czech_republic_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_czech_republic_eu_driver's_license_number` . 
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3681,8 +3682,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_czech_republic_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_czech_republic_eu_passport_number` . 
+- L'espressione regolare  `Regex_czech_republic_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_czech_republic_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3784,12 +3785,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_czech_republic_eu_ssn_or_equivalent` . 
+- La funzione  `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_czech_republic_eu_ssn_or_equivalent` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
 
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -3845,8 +3846,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_czech_republic_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_czech_republic_eu_tax_file_number` . 
+- L'espressione regolare  `Regex_czech_republic_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_czech_republic_eu_tax_file_number` . 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3919,8 +3920,8 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_denmark_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_denmark_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_denmark_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_denmark_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -3971,8 +3972,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_denmark_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_denmark_eu_passport_number` . 
+- L'espressione regolare  `Regex_denmark_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_denmark_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4107,12 +4108,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_denmark_eu_ssn_or_equivalent` . 
+- La funzione  `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_denmark_eu_ssn_or_equivalent` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -4166,12 +4167,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_denmark_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_denmark_eu_tax_file_number` . 
+- La funzione  `Func_denmark_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_denmark_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_denmark_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_denmark_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -4301,8 +4302,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_estonia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_estonia_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_estonia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_estonia_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -4357,12 +4358,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_estonia_eu_national_id_card` . 
+- La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_estonia_eu_national_id_card` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
  
@@ -4432,8 +4433,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_estonia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_estonia_eu_passport_number` . 
+- L'espressione regolare  `Regex_estonia_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_estonia_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4479,12 +4480,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_estonia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_estonia_eu_tax_file_number` . 
+- La funzione  `Func_estonia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_estonia_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_estonia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_estonia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5055,9 +5056,9 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_finland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- L'espressione regolare  `Regex_finland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
     
-- Viene trovata una parola chiave from `Keywords_finland_eu_driver's_license_number` . 
+- Viene trovata una parola chiave from  `Keywords_finland_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -5234,12 +5235,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_finland_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_finland_eu_ssn_or_equivalent` . 
+- La funzione  `Func_finland_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_finland_eu_ssn_or_equivalent` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_finland_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_finland_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -5304,12 +5305,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_finland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_finland_eu_tax_file_number` . 
+- La funzione  `Func_finland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_finland_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_finland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_finland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5634,12 +5635,12 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_france_eu_tax_file_number` . 
+- La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_france_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5985,12 +5986,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_germany_eu_tax_file_number` . 
+- La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_germany_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -6053,8 +6054,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_greece_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_greece_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_greece_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_greece_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -6157,8 +6158,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_greece_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_greece_eu_passport_number` . 
+- L'espressione regolare  `Regex_greece_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_greece_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -6198,9 +6199,9 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_greece_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- L'espressione regolare  `Regex_greece_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Viene trovata una parola chiave from `Keywords_greece_eu_tax_file_number` . 
+- Viene trovata una parola chiave from  `Keywords_greece_eu_tax_file_number` . 
     
 ```
  <!-- EU Tax File Number -->
@@ -6350,8 +6351,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_hungary_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_hungary_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_hungary_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_hungary_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -6404,12 +6405,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_hungary_eu_national_id_card` . 
+- La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_hungary_eu_national_id_card` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -6455,8 +6456,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_hungary_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_hungary_eu_passport_number` . 
+- L'espressione regolare  `Regex_hungary_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_hungary_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -6495,12 +6496,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_hungary_eu_ssn_or_equivalent` . 
+- La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_hungary_eu_ssn_or_equivalent` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -6562,12 +6563,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_hungary_eu_tax_file_number` . 
+- La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_hungary_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -6963,8 +6964,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_ireland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_ireland_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_ireland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_ireland_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -7098,8 +7099,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_ireland_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_ireland_eu_passport_number` . 
+- L'espressione regolare  `Regex_ireland_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_ireland_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -7217,12 +7218,12 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_ireland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_ireland_eu_tax_file_number` . 
+- La funzione  `Func_ireland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_ireland_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_ireland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_ireland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -7429,12 +7430,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_italy_eu_national_id_card` . 
+- La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_italy_eu_national_id_card` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
 <!-- Italy national identification number -->
@@ -7509,8 +7510,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_italy_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_italy_eu_passport_number` . 
+- L'espressione regolare  `Regex_italy_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_italy_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -7563,12 +7564,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_italy_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_italy_eu_tax_file_number` . 
+- La funzione  `Func_italy_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_italy_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_italy_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_italy_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -7999,8 +8000,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_latvia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_latvia_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_latvia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_latvia_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8054,12 +8055,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_latvia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_latvia_eu_national_id_card` . 
+- La funzione  `Func_latvia_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_latvia_eu_national_id_card` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_latvia_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_latvia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
 <!-- Latvia national identification number -->
@@ -8167,8 +8168,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_latvia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_latvia_eu_passport_number` . 
+- L'espressione regolare  `Regex_latvia_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_latvia_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8212,12 +8213,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_latvia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_latvia_eu_tax_file_number` . 
+- La funzione  `Func_latvia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_latvia_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_latvia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_latvia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8322,8 +8323,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_lithuania_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_lithuania_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_lithuania_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_lithuania_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8377,12 +8378,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_lithuania_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_lithuania_eu_national_id_card` . 
+- La funzione  `Func_lithuania_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_lithuania_eu_national_id_card` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_lithuania_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_lithuania_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
 <!-- Lithuania national identification number -->
@@ -8454,8 +8455,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_lithuania_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_lithuania_eu_passport_number` . 
+- L'espressione regolare  `Regex_lithuania_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_lithuania_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8492,12 +8493,12 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_lithuania_eu_tax_file_number` . 
+- La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_lithuania_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8568,8 +8569,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_luxemburg_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_luxemburg_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_luxemburg_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_luxemburg_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8623,8 +8624,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_luxemburg_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_luxemburg_eu_national_id_card` . 
+- L'espressione regolare  `Regex_luxemburg_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_luxemburg_eu_national_id_card` . 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -8679,8 +8680,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_nation_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_nation_eu_passport_number` . 
+- L'espressione regolare  `Regex_nation_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_nation_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8720,12 +8721,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_luxemburg_eu_tax_file_number` . 
+- La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_luxemburg_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8875,8 +8876,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_malta_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_malta_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_malta_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_malta_eu_driver's_license_number` . 
     
 ```xml
 <!-- EU Driver's License Number -->
@@ -8928,12 +8929,12 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_malta_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_malta_eu_national_id_card` . 
+- L'espressione regolare  `Regex_malta_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_malta_eu_national_id_card` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_malta_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- L'espressione regolare  `Regex_malta_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!--Malta national identification number  -->
@@ -8987,8 +8988,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_malta_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_malta_eu_passport_number` . 
+- L'espressione regolare  `Regex_malta_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_malta_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9037,12 +9038,12 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_malta_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_malta_eu_tax_file_number` . 
+- La funzione  `Func_malta_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_malta_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
   
-- La funzione `Func_malta_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_malta_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9176,8 +9177,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_netherlands_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_netherlands_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_netherlands_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_netherlands_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9228,12 +9229,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_netherlands_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_netherlands_eu_national_id_card` trova contenuto che corrisponde al modello. 
 - Viene trovata una parola chiave from.
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_netherlands_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_netherlands_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!--Netherland national identification number  -->
@@ -9293,8 +9294,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_netherlands_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_netherlands_eu_passport_number` . 
+- L'espressione regolare  `Regex_netherlands_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_netherlands_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9337,12 +9338,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_netherlands_eu_tax_file_number` . 
+- La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_netherlands_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9562,8 +9563,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_poland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_poland_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_poland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_poland_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9743,12 +9744,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_poland_eu_tax_file_number` . 
+- La funzione  `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_poland_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9879,8 +9880,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_portugal_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_portugal_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_portugal_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_portugal_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9932,8 +9933,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_portugal_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_portugal_eu_passport_number` . 
+- L'espressione regolare  `Regex_portugal_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_portugal_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9970,12 +9971,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_portugal_eu_tax_file_number` . 
+- La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_portugal_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10041,8 +10042,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_romania_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_romania_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_romania_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_romania_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10091,12 +10092,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_romania_eu_national_id_card` . 
+- La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_romania_eu_national_id_card` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!--Romania national identification number  -->
@@ -10185,8 +10186,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_romania_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_romania_eu_passport_number` . 
+- L'espressione regolare  `Regex_romania_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_romania_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10226,8 +10227,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_romania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_romania_eu_tax_file_number` . 
+- L'espressione regolare  `Regex_romania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_romania_eu_tax_file_number` . 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10414,8 +10415,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_slovakia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_slovakia_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_slovakia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_slovakia_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10453,12 +10454,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_slovakia_eu_national_id_card` . 
+- La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_slovakia_eu_national_id_card` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- Slovakia national identification number -->
@@ -10544,8 +10545,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_slovakia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_slovakia_eu_passport_number` . 
+- L'espressione regolare  `Regex_slovakia_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_slovakia_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10585,8 +10586,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_slovakia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_slovakia_eu_tax_file_number` . 
+- L'espressione regolare  `Regex_slovakia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_slovakia_eu_tax_file_number` . 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10670,8 +10671,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_slovenia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_slovenia_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_slovenia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_slovenia_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10725,12 +10726,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_slovenia_eu_national_id_card` . 
+- La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_slovenia_eu_national_id_card` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- Slovenia national identification number -->
@@ -10800,8 +10801,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_slovenia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_slovenia_eu_passport_number` . 
+- L'espressione regolare  `Regex_slovenia_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_slovenia_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10838,12 +10839,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_slovenia_eu_tax_file_number` . 
+- La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_slovenia_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11007,8 +11008,8 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_spain_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_spain_eu_driver's_license_number` . 
+- La funzione  `Func_spain_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_spain_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -11081,8 +11082,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_spain_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_spain_eu_national_id_card"` . 
+- L'espressione regolare  `Regex_spain_eu_national_id_card` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_spain_eu_national_id_card"` . 
     
 ```xml
 <!-- Spain national identification number -->
@@ -11144,8 +11145,8 @@ Non applicabile
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_spain_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_spain_eu_passport_number` . 
+- L'espressione regolare  `Regex_spain_eu_passport_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_spain_eu_passport_number` . 
     
 ```xml
  <!-- EU Passport Number -->
@@ -11257,12 +11258,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_spain_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_spain_eu_tax_file_number` . 
+- La funzione  `Func_spain_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_spain_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_spain_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_spain_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11411,8 +11412,8 @@ No
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- L'espressione regolare `Regex_sweden_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_sweden_eu_driver's_license_number` . 
+- L'espressione regolare  `Regex_sweden_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_sweden_eu_driver's_license_number` . 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -11576,12 +11577,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_sweden_eu_ssn_or_equivalent` . 
+- La funzione  `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_sweden_eu_ssn_or_equivalent` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -11640,12 +11641,12 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from `Keywords_sweden_eu_tax_file_number` . 
+- La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola chiave from  `Keywords_sweden_eu_tax_file_number` . 
     
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11741,7 +11742,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - swift routing number 
 - bic number 
 - bic code 
-- BIC\# 
+- BIC \# 
 - BIC\# 
 - bank identifier code 
 - 標準化 9362 
@@ -11753,12 +11754,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - BICコード 
 - 銀行識別コードのための国際組織 
 - Organisation internationale de normalisation 9362 
-- rapide\# 
+- rapide \# 
 - code SWIFT 
 - le numéro de swift 
 - swift numéro d'acheminement 
 - le numéro BIC 
-- \#BIC 
+- \# BIC 
 - code identificateur de banque 
    
 ## <a name="taiwan-national-identification-number"></a>Numero di identificazione nazionale di Taiwan
@@ -12286,9 +12287,9 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
   
-- La funzione `Func_uk_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- La funzione  `Func_uk_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
-- Viene trovata una parola chiave from `Keywords_uk_eu_tax_file_number` . 
+- Viene trovata una parola chiave from  `Keywords_uk_eu_tax_file_number` . 
     
 ```
  <!-- EU Tax File Number -->

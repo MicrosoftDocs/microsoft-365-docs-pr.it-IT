@@ -12,18 +12,18 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 0c66afa22c8712455a875bc8ca4ddcad1678e2e7
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: f36eeeb1f228bff48088cbbf3241d6866d0b3a21
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601999"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794165"
 ---
 # <a name="double-key-encryption-dke"></a>Crittografia a chiave doppia (DKE)
 
 > *Si applica a: crittografia a chiave doppia per Microsoft 365 Public Preview, [microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *Istruzioni per: [client di etichettatura unificata di Azure Information Protection per Windows](https://docs.microsoft.com/azure/information-protection/faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *Istruzioni per: [client di etichettatura unificata di Azure Information Protection per Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *Descrizione del servizio per: [conformità di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
@@ -132,7 +132,7 @@ Microsoft fornisce i file di origine di DKE in un repository GitHub. È possibil
 
 Le istruzioni riportate di seguito sono destinate agli utenti di codice git o Visual Studio inesperti:
 
-1. Nel browser, vai a:[https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)
+1. Nel browser, vai a: [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)
 
 1. Verso il lato destro dello schermo, selezionare **codice**. La versione dell'interfaccia utente potrebbe mostrare un pulsante **Clone o download** . Quindi, nell'elenco a discesa che viene visualizzato, selezionare l'icona copia per copiare l'URL negli Appunti.
 
@@ -250,7 +250,7 @@ Individuare il `JwtAudience` . Sostituire `<yourhostname>` con il nome host del 
 - `TestKeys:Name`. Immettere un nome per la chiave. Ad esempio: `TestKey1`
 - `TestKeys:Id`. Creare un GUID e immetterlo come `TestKeys:ID` valore. Ad esempio, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. È possibile utilizzare un sito come [Generatore di GUID online](https://guidgenerator.com/) per generare casualmente un GUID.
 
-Questa immagine Visualizza il formato corretto per le impostazioni dei tenant e delle chiavi in **appsettings.jsattiva**. `LDAPPath`è configurata per l'autorizzazione di ruolo.
+Questa immagine Visualizza il formato corretto per le impostazioni dei tenant e delle chiavi in **appsettings.jsattiva**. `LDAPPath` è configurata per l'autorizzazione di ruolo.
 
 ![Visualizza le impostazioni relative ai tenant e ai tasti corretti per DKE nel appsettings.jssu file.](../media/dke-appsettingsjson-tenantkeysettings.png)
 
@@ -394,7 +394,7 @@ Per pubblicare l'archivio delle chiavi, è possibile creare un'istanza del servi
 
 #### <a name="publish-via-zipdeployui"></a>Pubblicare tramite ZipDeployUI
 
-1. Vai a `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
+1. Passare a `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
 
     Ad esempio: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
 
@@ -450,7 +450,7 @@ src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/MyKey
 
 Ad esempio:
 
-key_store_tester.ps1https://mycustomerkeystore.com/mykey
+key_store_tester.ps1 https://mycustomerkeystore.com/mykey
 
 Assicurarsi che non vengano visualizzati errori nell'output. Quando si è pronti, [registrare il proprio archivio delle chiavi](#register-your-key-store).
 
