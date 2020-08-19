@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: In genere, nell’ambito di una soluzione di gestione dei record, è possibile configurare un’etichetta di conservazione per avviare il periodo di conservazione in base a un evento identificato.
-ms.openlocfilehash: 03f8446d54d905665f5bf33c2f581a869dfc478e
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 7286e65be2313f5716bfc59399c1755cadb9f6d6
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560533"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778526"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Avviare la conservazione al verificarsi di un evento
 
@@ -43,7 +43,7 @@ Esempi per l'uso della conservazione basata su eventi:
     
 La conservazione basata su eventi viene generalmente utilizzata come parte di un processo di gestione dei record. Ciò significa che:
   
-- Anche le etichette basate su eventi classificano il contenuto come record. Per altre informazioni, vedere [Informazioni sui record](records.md).
+- Anche le etichette basate su eventi classificano il contenuto come record, come parte di una soluzione di gestione dei record. Per altre informazioni, vedere [Informazioni sulla gestione dei record](records-management.md).
 
 - Un documento che è stato dichiarato come record, ma il cui trigger di evento non si è ancora verificato, viene conservato a tempo indeterminato (i record non possono essere eliminati definitivamente) finché un evento non attiva il periodo di conservazione di quel documento.
     

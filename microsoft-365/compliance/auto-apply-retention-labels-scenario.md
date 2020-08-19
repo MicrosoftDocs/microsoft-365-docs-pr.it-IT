@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Come usare le etichette di conservazione per gestire il ciclo di vita dei documenti in SharePoint tramite l’uso dei metadati, per classificare il contenuto, applicare automaticamente le etichette e usare la conservazione basata su eventi per avviare il periodo di conservazione.
-ms.openlocfilehash: 250bf182c26616a3a2f9253471469d2cecbd8d2b
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 8aed846c8c95aad737a9dfd56e4df7533e57a329
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560669"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778546"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usare le etichette di conservazione per gestire il ciclo di vita dei documenti archiviati in SharePoint
 
@@ -107,7 +107,7 @@ Ecco il [piano di archiviazione](file-plan-manager.md) per l'etichetta di conser
 
 - **Durata di conservazione:** 5 anni (1.825 giorni).
 
-- **Etichetta record**: configurare l’etichetta di conservazione per classificare un contenuto come [*record*](records.md). (I documenti classificati come *record* non possono essere modificati o eliminati dagli utenti.)
+- **Etichetta record**: configurare l’etichetta di conservazione per classificare un contenuto come [record](records-management.md#records). (I documenti classificati come *record* non possono essere modificati o eliminati dagli utenti.)
 
 - **Descrittori del piano di archiviazione:** (per semplificare lo scenario, non viene inserito alcun descrittore di archiviazione).
 
