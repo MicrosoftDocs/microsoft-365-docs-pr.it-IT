@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Informazioni per amministratori su come visualizzare, creare, modificare ed eliminare criteri di protezione dalla posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: fea1ae4a43ee3002c49bd6511a55a3d490723fc2
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 21e2142eb62c25a7301e2ea5f9160ef6d6ef7947
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656816"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804221"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configurare criteri di protezione dalla posta indesiderata in EOP
 
@@ -31,39 +31,24 @@ Gli amministratori possono visualizzare, modificare e configurare, ma non elimin
 
 È possibile configurare criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità o in PowerShell (PowerShell di Exchange Online per organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell di EOP autonomo per organizzazioni prive di cassette postali di Exchange Online).
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Criteri di protezione da posta indesiderata nel Centro sicurezza e conformità o in PowerShell
-
-Gli elementi di base del criterio di protezione dalla posta indesiderata in EOP sono:
+Gli elementi di base del criterio di protezione dalla posta indesiderata sono:
 
 - **Criterio di filtro della posta indesiderata**: specifica le azioni per i verdetti filtro posta indesiderata e le opzioni di notifica.
-
 - **Regola di filtro della posta indesiderata**: specifica la priorità e i filtri destinatario (a chi si applica il criterio) per un criterio di filtro della posta indesiderata.
 
 La differenza tra questi due elementi non è ovvia quando si gestiscono criteri di protezione dalla posta indesiderata nel Centro sicurezza e conformità:
 
-- Quando si crea un criterio di protezione dalla posta indesiderata nel Centro sicurezza e conformità, vengono creati contemporaneamente una regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata associato, utilizzando lo stesso nome per entrambi.
+- Quando si crea un criterio di protezione dalla posta indesiderata, in contemporanea viene creata una regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata associato, utilizzando lo stesso nome per entrambi.
+- Quando si modifica un criterio di protezione dalla posta indesiderata, le impostazioni relative a nome, priorità, attivazione o disattivazione e filtri destinatari modificano la regola di filtro della posta indesiderata. Tutte le altre impostazioni modificano il criterio di filtro della posta indesiderata associato.
+- Quando si rimuovono il criterio di protezione dalla posta indesiderata, la regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata vengono rimossi.
 
-- Quando si modifica un criterio di protezione dalla posta indesiderata nel Centro sicurezza e conformità, le impostazioni relative a nome, priorità, attivazione o disattivazione e filtri destinatari modificano la regola di filtro della posta indesiderata. Tutte le altre impostazioni modificano il criterio di filtro della posta indesiderata associato.
+In PowerShell di Exchange Online o in EOP PowerShell autonomo i criteri e la regola vengono gestiti separatamente. Per maggiori informazioni, vedere [Usare PowerShell di Exchange Online o EOP di PowerShell autonomo per configurare i criteri di posta indesiderata](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) nella sezione successiva in questo argomento.
 
-- Quando si rimuovono il criterio di protezione dalla posta indesiderata dal Centro sicurezza e conformità, la regola di filtro della posta indesiderata e il criterio di filtro della posta indesiderata vengono rimossi.
+Ogni organizzazione ha un criterio incorporato per la posta indesiderata, denominato Predefinito, aventi le seguenti proprietà:
 
-In PowerShell per Exchange Online o PowerShell di EOP autonomo è evidente la differenza tra i criteri di filtro della posta indesiderata e le regole di filtro della posta indesiderata. Gestire i criteri di filtro della posta indesiderata usando i cmdlet **\*-HostedContentFilterPolicy** e le regole di filtro della posta indesiderata usando i cmdlet **\*-HostedContentFilterRule**.
-
-- In PowerShell, creare innanzitutto il criterio di filtro della posta indesiderata, quindi creare la regola di filtro della posta indesiderata che identifica il criterio cui viene applicata la regola.
-
-- In PowerShell, modificare le impostazioni nel criterio di filtro della posta indesiderata e la regola di filtro della posta indesiderata separatamente.
-
-- Quando si rimuove un criterio di filtro della posta indesiderata da PowerShell, la regola di filtro della posta indesiderata corrispondente non viene rimossa automaticamente, e viceversa.
-
-### <a name="default-anti-spam-policy"></a>Criterio di protezione dalla posta indesiderata predefinito
-
-Ogni organizzazione ha un criterio di protezione dalla posta indesiderata predefinito denominato Predefinito che contiene queste proprietà:
-
-- Il criterio di filtro della posta indesiderata denominato Predefinito viene applicato a tutti i destinatari dell'organizzazione, anche se non esiste alcuna regola di filtro della posta indesiderata (filtri destinatari) associata al criterio.
-
-- Il valore personalizzato della priorità del criterio denominato Predefinito è **Lowest** e non può essere modificato (il criterio viene sempre applicato per ultimo). Qualsiasi criterio personalizzato creato avrà sempre una priorità più alta rispetto al criterio denominato Predefinito.
-
-- Il criterio denominato Predefinito è il criterio predefinito (la proprietà **IsDefault** contiene il valore `True`), e non è possibile eliminare il criterio predefinito.
+- Il criterio viene applicato a tutti i destinatari dell'organizzazione, anche se non esiste alcuna regola di filtro della posta indesiderata (filtri destinatari) associata al criterio.
+- Il valore personalizzato della priorità del criterio è **Minore** e non può essere modificato (il criterio viene sempre applicato per ultimo). Qualsiasi criterio personalizzato creato avrà sempre una priorità più alta.
+- Il criterio è quello predefinito (la proprietà **IsDefault** contiene il valore `True`), e non è possibile eliminarlo.
 
 Per aumentare l'efficacia del filtro della posta indesiderata, è possibile creare criteri di protezione dalla posta indesiderata con impostazioni più restrittive da applicare a utenti o gruppi di utenti specifici.
 
@@ -320,7 +305,9 @@ Non è possibile disabilitare il criterio di protezione dalla posta indesiderata
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>Impostare la priorità dei criteri di protezione dalla posta indesiderata personalizzati
 
-Per impostazione predefinita, ai criteri di protezione dalla posta indesiderata viene assegnata una priorità che si basa sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto a quelli precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Due criteri non possono avere priorità uguale.
+Per impostazione predefinita, ai criteri di protezione dalla posta indesiderata viene assegnata una priorità che si basa sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto a quelli precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Nessun criterio può avere la stessa priorità e l'elaborazione dei criteri termina dopo l'applicazione del primo criterio.
+
+Per altre informazioni sull'ordine di precedenza e su come vengono valutati e applicati multipli criteri, vedere [Ordine e precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
 
 I criteri di protezione dalla posta indesiderata personalizzati vengono visualizzati nell'ordine in cui sono elaborati (il primo criterio contiene il valore **Priority** 0). Il criterio di protezione dalla posta indesiderata predefinito denominato **Criteri predefiniti di filtro della posta indesiderata** contiene il valore di priorità **Lowest** che non è possibile modificare.
 
@@ -383,6 +370,14 @@ Non è possibile rimuovere il criterio predefinito.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Utilizzare PowerShell per Exchange Online o PowerShell di EOP autonomo per configurare criteri di protezione dalla posta indesiderata
 
+Come descritto in precedenza, una criterio di posta indesiderata consiste in un criterio di filtro di posta indesiderata e una regola di filtro di posta indesiderata.
+
+In PowerShell per Exchange Online o PowerShell di EOP autonomo è evidente la differenza tra i criteri di filtro della posta indesiderata e le regole di filtro della posta indesiderata. Gestire i criteri di filtro della posta indesiderata usando i cmdlet **\*-HostedContentFilterPolicy** e le regole di filtro della posta indesiderata usando i cmdlet **\*-HostedContentFilterRule**.
+
+- In PowerShell, creare innanzitutto il criterio di filtro della posta indesiderata, quindi creare la regola di filtro della posta indesiderata che identifica il criterio cui viene applicata la regola.
+- In PowerShell, modificare le impostazioni nel criterio di filtro della posta indesiderata e la regola di filtro della posta indesiderata separatamente.
+- Quando si rimuove un criterio di filtro della posta indesiderata da PowerShell, la regola di filtro della posta indesiderata corrispondente non viene rimossa automaticamente, e viceversa.
+
 Le impostazioni dei criteri contro la posta indesiderata seguenti sono disponibili solo in PowerShell:
 
 - Il parametro _ MarkAsSpamBulkMail_ è `On` per impostazione predefinita. Gli effetti di questa impostazione sono illustrati nella sezione precedente [Utilizzare il Centro sicurezza e conformità per creare criteri di protezione dalla posta indesiderata](#use-the-security--compliance-center-to-create-anti-spam-policies) in questo argomento.
@@ -398,7 +393,6 @@ Le impostazioni dei criteri contro la posta indesiderata seguenti sono disponibi
 La creazione di un criterio di protezione dalla posta indesiderata in PowerShell è un processo che prevede due passaggi:
 
 1. Creare il criterio di filtro della posta indesiderata.
-
 2. Creare la regola di filtro della posta indesiderata che specifica il criterio di filtro della posta indesiderata cui viene applicata la regola.
 
  **Note**:
@@ -408,7 +402,6 @@ La creazione di un criterio di protezione dalla posta indesiderata in PowerShell
 - È possibile configurare le impostazioni seguenti nei nuovi criteri di filtro della posta indesiderata in PowerShell che non sono disponibili nel Centro sicurezza e conformità finché non si crea il criterio:
 
   - Creare il nuovo criterio come disabilitato (_Abilitato_ `$false` nel cmdlet **New-HostedContentFilterRule**).
-
   - Impostare la priorità del criterio durante la creazione (_Priorità_ _\<Number\>_) nel cmdlet **New-HostedContentFilterRule**).
 
 - Il nuovo criterio di filtro della posta indesiderata creato in PowerShell non sarà visibile nel Centro sicurezza e conformità finché non vi verrà assegnata una regola di filtro della posta indesiderata.

@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Configurare le funzionalità sicurezza e l'infrastruttura necessarie per consentire ai dipendenti di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: c8d56d3dd6e2c46db6ef1938dee8383b56e8966c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 62361126ad0b843fd909b98807eeb186f13e75bb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522254"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778341"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurare un team con l'isolamento di sicurezza in ambiente di sviluppo/test
 
@@ -33,15 +33,15 @@ Usare questo ambiente di sviluppo/test per sperimentare e perfezionare le impost
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
 
-Se si desidera semplicemente testare i team sensibili ed estremamente riservati con i requisiti minimi, seguire le istruzioni in [Configurazione di base](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+Se si desidera semplicemente testare i team sensibili ed estremamente riservati con i requisiti minimi, seguire le istruzioni in [Configurazione di base](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
-Se si desidera testare i team sensibili ed estremamente riservati in un'organizzazione simulata, seguire le istruzioni in [Sincronizzazione dell'hash delle password](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
+Se si desidera testare i team sensibili ed estremamente riservati in un'organizzazione simulata, seguire le istruzioni in [Sincronizzazione dell'hash delle password](../enterprise/password-hash-sync-m365-ent-test-environment.md).
 
 >[!Note]
 >Il test di un team con isolamento di sicurezza non richiede l'ambiente di testing aziendale simulato, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di Active Directory Domain Services (AD DS) attiva. Qui viene fornito come un'opzione in modo da poter testare un team con isolamento di sicurezza e sperimentarlo in un ambiente che rappresenta un'organizzazione tipica.
 >
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-group-and-users"></a>Fase 2: Creare e configurare i gruppi e gli utenti di Azure Active Directory (AD)
+## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>Fase 2: Creare e configurare i gruppi e gli utenti di Azure Active Directory (Azure AD)
 
 In questa fase vengono creati e configurati i gruppi e gli utenti di Azure AD per l'organizzazione fittizia.
   
@@ -77,7 +77,7 @@ Quindi, configurare la licenza automatica in modo che i membri del nuovo gruppo 
     
 6. Chiudere la scheda del portale di Azure nel browser.
     
-Quindi, [connettersi con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Quindi, [connettersi con il modulo di Azure Active Directory PowerShell per Graph](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Inserire il nome dell'organizzazione, la posizione e una password comune; eseguire quindi questi comandi dal prompt dei comandi di PowerShell o Integrated Script Environment (ISE) per creare nuovi account utente e aggiungerli ai rispettivi gruppi C-Suite:
   
@@ -115,7 +115,7 @@ Seguire questi passaggi per verificare che le licenze basate su gruppo funzionin
 
 In questa fase, è possibile creare e si configurare un team con isolamento di sicurezza affinché i membri del team di dirigenti senior possano collaborare alla strategia aziendale.
 
-Innanzitutto, abilitare i criteri di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint prima di procedere con i passaggi descritti in [questo articolo](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Innanzitutto, abilitare i criteri di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint prima di procedere con i passaggi descritti in [questo articolo](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Quindi, creare il team:
 
@@ -126,9 +126,15 @@ Quindi, creare il team:
 5. In **Privacy** fare clic su **Privato**.
 6. Digitare **Strategia aziendale**, quindi fare clic su **Crea** > **Chiudi**.
 
+Quindi, limitare la creazione di canali privati ai proprietari del gruppo di strategia aziendale.
+
+1. Nel team fare clic su **Altre opzioni** e quindi su **Gestisci team**.
+2. Nella scheda **Impostazioni** espandere **Autorizzazioni dei membri**.
+3. Deselezionare la casella di controllo **Consenti ai membri di creare canali privati**.
+
 Quindi è necessario configurare un'etichetta di riservatezza con le impostazioni seguenti:
 
-- Il nome dell'etichetta è Strategia aziendale
+- Il nome è Strategia aziendale
 - La crittografia è abilitata
 - Il gruppo Strategia aziendale ha autorizzazioni di creazione condivisa
 
@@ -199,10 +205,6 @@ Ecco la configurazione ottenuta per il team Strategia aziendale.
 
 ![Configurazione per il team isolato Strategia aziendale.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
-Ai file del team può essere assegnata l'etichetta di riservatezza Strategia aziendale dai membri del gruppo Strategia aziendale. Ecco un esempio.
-
-![Esempio di un file con etichetta di riservatezza Strategia aziendale applicata](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config-example.png)
- 
 ## <a name="next-step"></a>Passaggio successivo
 
-Quando si è pronti per la distribuzione della produzione, vedere [Configurare un team con l'isolamento di sicurezza ](secure-teams-security-isolation.md) per informazioni dettagliate sulla configurazione.
+Quando si è pronti per la distribuzione di produzione, vedere le [istruzioni di configurazione](secure-teams-security-isolation.md).
