@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: 8880655ec24f20efd139b8334ab754f51146b496
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148115"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798211"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Gestire gli eventi imprevisti in Microsoft Threat Protection
 
@@ -43,16 +43,16 @@ La gestione degli eventi è fondamentale per garantire il controllo e la soluzio
 Se durante l'analisi si vogliono spostare gli avvisi da un evento all'altro è possibile eseguire l'operazione anche dalla scheda Avvisi, creando così un evento più grande oppure più piccolo che includa tutti gli avvisi pertinenti.
 
 ## <a name="edit-incident-name"></a>Modificare il nome di un evento imprevisto
-Per impostazione predefinita, a un evento viene assegnato un numero. È possibile modificare il nome dell'evento per allinearlo alla convenzione di denominazione preferita.
+Agli eventi non consentiti viene assegnato automaticamente un nome basato su attributi di avviso, ad esempio il numero di endpoint coinvolti, gli utenti coinvolti, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento Incident.
 
-> [!TIP]
-> Per una maggiore visibilità a colpo d'occhio, la denominazione degli incidenti automatici, attualmente in anteprima pubblica, genera nomi di incidenti basati su attributi di avviso, ad esempio il numero di endpoint coinvolti, gli utenti coinvolti, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento Incident.
->
-> Ad esempio: *eventi a più fasi su più endpoint segnalati da più origini.*
->
-> Gli incidenti che sono stati precedenti all'implementazione della denominazione degli incidenti automatici non avranno il nome modificato.
->
-> Ulteriori informazioni su come [attivare le funzionalità di anteprima](preview.md#turn-on-preview-features).
+Ad esempio: *eventi a più fasi su più endpoint segnalati da più origini.*
+
+È possibile modificare il nome dell'evento per allinearlo alla convenzione di denominazione preferita.
+
+> [!NOTE]
+> Gli eventi non consentiti precedentemente all'implementazione della funzionalità di denominazione degli incidenti automatici manterranno il nome.
+
+
 
 ## <a name="assign-incidents"></a>Assegnare gli eventi imprevisti
 Se un evento non è stato ancora assegnato, è possibile selezionare **Assegna a me** per assegnare l'evento a se stessi. In questo modo si assume la proprietà non solo dell'evento, ma anche di tutti gli avvisi associati.

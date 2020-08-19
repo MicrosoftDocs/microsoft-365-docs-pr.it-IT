@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare gli URL bloccati personalizzati per gli utenti e l'elenco di URL non riscritti per un gruppo di utenti nei criteri dei collegamenti sicuri ATP di Office 365.
-ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 17828566769f438439eebcb4e460ecac1147a648
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656970"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798331"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurare un elenco di URL non di riscrittura personalizzato utilizzando collegamenti sicuri di ATP
 
@@ -34,6 +34,9 @@ ms.locfileid: "46656970"
 Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), l'organizzazione può disporre di un [URL bloccato personalizzato](set-up-a-custom-blocked-urls-list-atp.md), in modo che quando gli utenti fanno clic su indirizzi Web (URL) nei messaggi di posta elettronica o in determinati documenti di Office, vengono impediti di passare a tali URL. L'organizzazione può anche disporre di elenchi personalizzati di "non riscrivere" per gruppi specifici dell'organizzazione. Un elenco "non riscrivere" consente ad alcuni utenti di visitare gli URL che sono altrimenti bloccati da [collegamenti sicuri di ATP in Office 365](atp-safe-links.md).
 
 In questo articolo viene descritto come specificare un elenco di URL esclusi dall'analisi dei collegamenti sicuri ATP e alcuni punti importanti da tenere presenti.
+
+> [!NOTE]
+> Se nell'organizzazione vengono utilizzati i criteri collegamenti sicuri, l'elenco "non riscrivere" è l'unico metodo supportato per i test di phishing di terze parti.
 
 ## <a name="set-up-a-do-not-rewrite-list"></a>Configurare un elenco di "non riscrivere"
 
@@ -89,7 +92,7 @@ Nella tabella seguente sono elencati esempi di elementi che è possibile immette
 |Voce di esempio|Cosa fa|
 |---|---|
 |`contoso.com`|Consente ai destinatari di visitare un sito `https://contoso.com` , ad esempio, ma non sottodomini o percorsi.|
-|`*.contoso.com/*`|Consente ai destinatari di visitare un dominio, sottodomini e percorsi, ad esempio `https://www.contoso.com` ,, `https://www.contoso.com` `https://maps.contoso.com` o `https://www.contoso.com/a` . <br/><br/> Questa voce è intrinsecamente migliore rispetto `*contoso.com*` a quella, perché non include siti potenzialmente fraudolenti, come `https://www.falsecontoso.com` o`https://www.false.contoso.completelyfalse.com`|
-|`https://contoso.com/a`|Consente ai destinatari specifici di visitare un sito `https://contoso.com/a` , ad esempio, ma non i sottopercorsi come`https://contoso.com/a/b`|
-|`https://contoso.com/a/*`|Consente ai destinatari specifici di visitare un sito come `https://contoso.com/a` e i sottopercorsi come`https://contoso.com/a/b`|
+|`*.contoso.com/*`|Consente ai destinatari di visitare un dominio, sottodomini e percorsi, ad esempio `https://www.contoso.com` ,, `https://www.contoso.com` `https://maps.contoso.com` o `https://www.contoso.com/a` . <br/><br/> Questa voce è intrinsecamente migliore rispetto `*contoso.com*` a quella, perché non include siti potenzialmente fraudolenti, come `https://www.falsecontoso.com` o `https://www.false.contoso.completelyfalse.com`|
+|`https://contoso.com/a`|Consente ai destinatari specifici di visitare un sito `https://contoso.com/a` , ad esempio, ma non i sottopercorsi come `https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|Consente ai destinatari specifici di visitare un sito come `https://contoso.com/a` e i sottopercorsi come `https://contoso.com/a/b`|
 |

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6465821ff1b8e8ea23cc5cf6b205f65a483bbe82
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204948"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797783"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -86,4 +86,5 @@ DeviceFileEvents
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
-- [Comprensione dello schema](advanced-hunting-schema-tables.md)
+- [Comprendere lo schema](advanced-hunting-schema-tables.md)
+- [Ottenere altri esempi di query](advanced-hunting-shared-queries.md)

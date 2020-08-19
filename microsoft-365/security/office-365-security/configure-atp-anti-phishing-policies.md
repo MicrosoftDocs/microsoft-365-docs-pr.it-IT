@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing avanzati disponibili nelle organizzazioni con Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 458a4eac348598d1b752267ed7d79b97bc594580
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: b55bfb8b75506837e968b5845bc7a8239ad9b015
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726761"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804233"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurare i criteri anti-phishing ATP
 
@@ -36,54 +36,41 @@ Per informazioni sulla configurazione dei criteri di anti-phishing più limitati
 Gli elementi di base di un criterio anti-phishing ATP sono:
 
 - **Il criterio anti-phishing**: specifica le protezioni di phishing da abilitare o disabilitare e le azioni da applicare.
-
 - **La regola phishing**: specifica la priorità e i filtri destinatario (a chi si applica il criterio) per un criterio anti-phishing.
 
 La differenza tra questi due elementi non è ovvia quando si gestiscono i criteri di anti-phishing ATP nel centro sicurezza & Compliance:
 
-- Quando si crea un criterio anti-phishing ATP nel centro sicurezza & Compliance, si sta effettivamente creando una regola anti-phishing e i criteri anti-phishing associati contemporaneamente utilizzando lo stesso nome per entrambi.
+- Quando si crea un criterio, si sta effettivamente creando una regola anti-phishing e il criterio anti-phishing associato contemporaneamente utilizzando lo stesso nome per entrambi.
+- Quando si modifica un criterio, le impostazioni relative al nome, alla priorità, abilitate o disabilitate e ai filtri destinatario modificano la regola phishing. Tutte le altre impostazioni modificano i criteri anti-phishing associati.
+- Quando si rimuove un criterio, la regola anti-phishing e i criteri anti-phishing associati vengono rimossi.
 
-- Quando si modifica un criterio anti-phishing ATP nel centro sicurezza & Compliance, le impostazioni relative ai filtri nome, priorità, abilitato o disabilitato e destinatario modificano la regola phishing. Tutte le altre impostazioni modificano i criteri anti-phishing associati.
+In Exchange Online PowerShell, è possibile gestire il criterio e la regola separatamente. Per ulteriori informazioni, vedere la sezione [utilizzare Exchange Online PowerShell per configurare i criteri di anti-phishing ATP](#use-exchange-online-powershell-to-configure-atp-anti-phishing-policies) più avanti in questo argomento.
 
-- Quando si rimuove un criterio anti-phishing ATP dal centro sicurezza & conformità, la regola anti-phishing e i criteri anti-phishing associati vengono rimossi.
+Ogni organizzazione ATP di Office 365 ha un criterio anti-phishing incorporato denominato Office365 antiphishing default con queste proprietà:
 
-In Exchange Online PowerShell, la differenza tra i criteri anti-phishing e le regole anti-phishing è evidente. Per gestire i criteri anti-phishing è possibile utilizzare i cmdlet ** \* -AntiPhishPolicy** e gestire le regole di anti-phishing utilizzando i cmdlet ** \* -AntiPhishRule** .
-
-- In PowerShell, è necessario creare innanzitutto il criterio phishing, quindi creare la regola anti-phishing che identifica il criterio a cui si applica la regola.
-
-- In PowerShell, è possibile modificare le impostazioni nel criterio di phishing e la regola anti-phishing separatamente.
-
-- Quando si rimuove un criterio di phishing da PowerShell, la regola anti-phishing corrispondente non viene rimossa automaticamente e viceversa.
-
-### <a name="default-atp-anti-phishing-policy"></a>Criteri di anti-phishing predefiniti del trifosfato di adenosina
-
-Ogni organizzazione ATP ha un criterio anti-phishing incorporato denominato Office365 antiphishing default con queste proprietà:
-
-- Il criterio di phishing denominato Office365 antiphishing default viene applicato a tutti i destinatari dell'organizzazione, anche se non è presente alcuna regola anti-phishing (filtri destinatario) associata al criterio.
-
-- Il criterio denominato Office365 antiphishing default ha il valore di priorità personalizzato **più basso** che non è possibile modificare (il criterio viene sempre applicato per ultimo). Tutti i criteri personalizzati creati hanno sempre una priorità più alta rispetto al criterio denominato Office365 antiphishing default.
-
-- Il criterio denominato Office365 antiphishing default è il criterio predefinito (la **proprietà IsDefault** ha il valore `True` ) e non è possibile eliminare il criterio predefinito.
+- Il criterio viene applicato a tutti i destinatari dell'organizzazione, anche se non è presente alcuna regola anti-phishing (filtri destinatario) associata al criterio.
+- Il criterio ha il valore di priorità personalizzato **più basso** che non è possibile modificare (il criterio viene sempre applicato per ultimo). Tutti i criteri personalizzati creati hanno sempre una priorità più alta.
+- Il criterio è il criterio predefinito (la proprietà **IsDefault** ha il valore `True` ) e non è possibile eliminare il criterio predefinito.
 
 Per aumentare l'efficacia della protezione anti-phishing, è possibile creare criteri di anti-phishing ATP personalizzati con impostazioni più rigorose applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina **anti-phishing ATP** , utilizzare <https://protection.office.com/antiphishing> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Prima di poter eseguire le procedure descritte in questo argomento, è necessario assegnare le autorizzazioni seguenti:
+- È necessario disporre delle autorizzazioni per eseguire le procedure di questo argomento:
 
   - Per aggiungere, modificare ed eliminare i criteri di anti-phishing ATP, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
-    - **Gestione organizzazione** o **amministratore della sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
-    - Gestione dell' **organizzazione** o **gestione dell'igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+    - **Gestione organizzazione** o **Gestione igiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
   - Per l'accesso in sola lettura ai criteri di anti-phishing ATP, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
-    - **Lettore di sicurezza** nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md).
-    - **Gestione dell'organizzazione in sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+    - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Per le impostazioni consigliate per i criteri di anti-phishing ATP, vedere [Office ATP anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
 
@@ -331,7 +318,9 @@ Non è possibile disabilitare il criterio anti-phishing predefinito.
 
 ### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a>Impostare la priorità dei criteri personalizzati di anti-phishing ATP
 
-Per impostazione predefinita, ai criteri di anti-phishing ATP viene assegnata una priorità che si basa sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Due criteri non possono avere priorità uguale.
+Per impostazione predefinita, ai criteri di anti-phishing ATP viene assegnata una priorità che si basa sull'ordine in cui sono stati creati (i criteri più recenti hanno una priorità più bassa rispetto ai criteri precedenti). Un valore di priorità inferiore indica una priorità più alta per il criterio (0 è il massimo) e i criteri vengono elaborati nell'ordine di priorità (i criteri con priorità più elevata vengono elaborati prima di quelli con priorità più bassa). Due criteri non possono avere la stessa priorità e l'elaborazione dei criteri si interrompe dopo l'applicazione del primo criterio.
+
+Per ulteriori informazioni sull'ordine di precedenza e sul modo in cui vengono valutati e applicati più criteri, vedere l' [ordine e la precedenza della protezione della posta elettronica](how-policies-and-protections-are-combined.md).
 
 I criteri di anti-phishing ATP personalizzati vengono visualizzati nell'ordine in cui sono stati elaborati (il primo criterio ha il valore di **priorità** 0). Il criterio anti-phishing predefinito denominato Office365 antiphishing default ha il valore di priorità personalizzato **più basso**e non è possibile modificarlo.
 
@@ -379,12 +368,19 @@ Non è possibile rimuovere il criterio predefinito.
 
 ## <a name="use-exchange-online-powershell-to-configure-atp-anti-phishing-policies"></a>Utilizzare PowerShell di Exchange Online per configurare i criteri di anti-phishing ATP
 
+Come descritto in precedenza, un criterio di protezione da posta indesiderata ATP è costituito da un criterio anti-phishing e da una regola anti-phishing.
+
+In Exchange Online PowerShell, la differenza tra i criteri anti-phishing e le regole anti-phishing è evidente. Per gestire i criteri anti-phishing è possibile utilizzare i cmdlet ** \* -AntiPhishPolicy** e gestire le regole di anti-phishing utilizzando i cmdlet ** \* -AntiPhishRule** .
+
+- In PowerShell, è necessario creare innanzitutto il criterio phishing, quindi creare la regola anti-phishing che identifica il criterio a cui si applica la regola.
+- In PowerShell, è possibile modificare le impostazioni nel criterio di phishing e la regola anti-phishing separatamente.
+- Quando si rimuove un criterio di phishing da PowerShell, la regola anti-phishing corrispondente non viene rimossa automaticamente e viceversa.
+
 ### <a name="use-powershell-to-create-anti-phishing-policies"></a>Utilizzo di PowerShell per creare criteri di anti-phishing
 
 La creazione di un criterio anti-phishing in PowerShell è un processo in due passaggi:
 
 1. Creare il criterio anti-phishing.
-
 2. Creare la regola anti-phishing che specifica i criteri anti-phishing a cui si applica la regola.
 
  **Note**:
@@ -394,7 +390,6 @@ La creazione di un criterio anti-phishing in PowerShell è un processo in due pa
 - È possibile configurare le impostazioni seguenti sui nuovi criteri di phishing in PowerShell che non sono disponibili nel centro sicurezza & conformità fino a dopo la creazione del criterio:
 
   - Creare il nuovo criterio come disabilitato (_attivato_ `$false` nel cmdlet **New-AntiPhishRule** ).
-
   - Impostare la priorità del criterio durante la creazione (_priorità_ _\<Number\>_ ) del cmdlet **New-AntiPhishRule** .
 
 - Un nuovo criterio di phishing creato in PowerShell non è visibile nel centro sicurezza & conformità fino a quando non si assegna il criterio a una regola anti-phishing.

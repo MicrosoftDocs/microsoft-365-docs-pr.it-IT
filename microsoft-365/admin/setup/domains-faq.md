@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Per ulteriori informazioni sui domini, è possibile trovare le risposte alle domande più frequenti.
-ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068104"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804197"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
@@ -52,6 +52,7 @@ In questo articolo
 - [Cosa succede se il provider DNS non supporta alcuni tipi di record?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [Come impostare o modificare il dominio predefinito in Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [È possibile aggiungere sottodomini personalizzati o più domini a Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [Come si trasferisce un dominio da Microsoft 365 a un altro host?]
 - [Perché è presente un dominio "onmicrosoft.com"?](#why-do-i-have-an-onmicrosoftcom-domain)
 - [Perché è presente un dominio "onmicrosoft.de"?](#why-do-i-have-an-onmicrosoftde-domain)
 - [Come verificare lo stato dell'istruzione o dell'organizzazione no profit](#how-do-i-verify-my-nonprofit-or-education-status)
@@ -72,7 +73,7 @@ La posta viene recapitata al server Mail Exchange con il numero di preferenza pi
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>Come si fa a convalidare i record SPF per un dominio?
 
-È importante disporre o creare **un solo record TXT per SPF**. Se si dispone già di un record SPF, è necessario aggiungere i nuovi valori di Microsoft 365, anziché crearne uno nuovo. Dopo aver aggiunto o aggiornato il record SPF per il messaggio di posta elettronica Microsoft, è necessario verificare che la sintassi sia corretta con uno di questi strumenti: 
+È importante disporre o creare  **un solo record TXT per SPF**. Se si dispone già di un record SPF, è necessario aggiungere i nuovi valori di Microsoft 365, anziché crearne uno nuovo. Dopo aver aggiunto o aggiornato il record SPF per il messaggio di posta elettronica Microsoft, è necessario verificare che la sintassi sia corretta con uno di questi strumenti: 
   
 - [Strumenti di test del record SPF](http://www.kitterman.com/spf/validate.html)
     
@@ -152,13 +153,13 @@ Non è possibile modificare il nome del dominio  *.onmicrosoft.com*  iniziale.
 
 ::: moniker range="o365-germany"
 
-Non è possibile modificare il nome del dominio iniziale *. onmicrosoft.de* . 
+Non è possibile modificare il nome del dominio iniziale  *. onmicrosoft.de*  . 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Non è possibile modificare il nome del dominio iniziale *. partner.onmschina.cn* . 
+Non è possibile modificare il nome del dominio iniziale  *. partner.onmschina.cn*  . 
 
 ::: moniker-end
 
@@ -194,6 +195,14 @@ Quando si aggiungono più domini a Microsoft 365, è possibile ospitare uno qual
 
 > [!NOTE]
 > Se è stato aggiunto un dominio di contoso.com a un abbonamento a Microsoft 365, è possibile aggiungere anche il sottodominio xyz.contoso.com a un'altra organizzazione Microsoft 365. Quando si aggiunge il sottodominio, viene richiesto di aggiungere un record TXT nel provider di hosting DNS.
+
+## <a name="how-do-i-transfer-a-domain-from-microsoft-365-to-another-host"></a>Come si trasferisce un dominio da Microsoft 365 a un altro host?
+
+Per la procedura per il trasferimento di un dominio, vedere [trasferire un dominio da Microsoft a un altro host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
+
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Eseguire il pilota Microsoft 365 dal dominio personalizzato
+
+Per la procedura per pilotare la funzionalità di posta elettronica Microsoft 365 da un dominio personalizzato a una cassetta postale di Microsoft 365, vedere [Pilot microsoft 365 from My Custom Domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Perché è presente un dominio "onmicrosoft.com"?
 
@@ -232,7 +241,7 @@ Microsoft 365 crea un dominio per l'utente, come *contoso.onmicrosoft.de*, quand
 
 1. Selezionare **installazione** nell'interfaccia di [Amministrazione](https://docs.microsoft.com/microsoft-365/admin/admin-home) per avviare la procedura guidata. (Assicurarsi di accedere a Microsoft 365 per primo). 
     
-2. Per diventare l'amministratore dell'Istituto di istruzione, selezionare l'opzione **diventa amministratore** in Microsoft 365. 
+2. Per diventare l'amministratore dell'Istituto di istruzione, selezionare l'opzione  **diventa amministratore** in Microsoft 365. 
     
 3. Verrà richiesto di aggiungere un record DNS TXT nel sito Web host DNS per il dominio. Perché? Poiché accedendo all'host DNS e aggiungendo un record per il dominio, si dimostra a Microsoft 365 che si è proprietari del nome di dominio.
     

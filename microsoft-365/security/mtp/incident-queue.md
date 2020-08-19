@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d827484a440b291bccd45b58e977fbcb280680f2
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: a08ff27d6d33317df9bd4bf61c0c2ee4cf0ee14e
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148137"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797759"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Assegnare priorità agli eventi imprevisti in Microsoft Threat Protection
 
@@ -45,14 +45,12 @@ Per impostazione predefinita, la coda disponibile nel Centro sicurezza Microsoft
 
 La coda degli eventi imprevisti dispone di colonne personalizzabili che rendono visibili le diverse caratteristiche dell'evento o delle entità che questo contiene e ti aiuta a scegliere in modo mirato gli eventi imprevisti a cui dare la priorità.
 
-Per una maggiore visibilità a colpo d'occhio, la denominazione degli incidenti automatici, attualmente in anteprima pubblica, genera nomi di incidenti basati su attributi di avviso, ad esempio il numero di endpoint coinvolti, gli utenti coinvolti, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento Incident.
+Per una maggiore visibilità a colpo d'occhio, la denominazione degli incidenti automatici genera nomi degli incidenti in base agli attributi di avviso, ad esempio il numero di endpoint coinvolti, gli utenti coinvolti, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento Incident.
 
 Ad esempio: *eventi a più fasi su più endpoint segnalati da più origini.*
 
 > [!NOTE]
 > Gli incidenti che sono stati precedenti all'implementazione della denominazione degli incidenti automatici non avranno il nome modificato.
-
-Ulteriori informazioni su come [attivare le funzionalità di anteprima](preview.md#turn-on-preview-features).
 
 La coda dispone anche di più opzioni di filtro, che, se applicate, consentono di avere un’idea globale di tutti gli eventi esistenti nell'ambiente o di concentrarsi su uno scenario o una minaccia specifici. Applicando i filtri a una coda di eventi imprevisti puoi determinare quale evento richiede un’attenzione immediata. 
 

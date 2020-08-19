@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Informazioni su come impostare le singole password utente in modo che non scadano mai, utilizzando Windows PowerShell.
-ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f85eb2d3aaf5b19779ea8f293e2cbdc28c1535aa
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387006"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804209"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Impostare la password di un singolo utente in modo che non scada mai
 
@@ -53,7 +53,7 @@ Per ulteriori informazioni su Azure AD PowerShell per Graph, vedere [Azure Activ
 
 Per ulteriori informazioni sul comando Get-AzureADUser nel modulo AzureAD, vedere l'articolo di riferimento [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
 
-Eseguire uno dei comandi seguenti:
+Eseguire uno dei comandi riportati di seguito:
 
 - Per verificare se la password di un singolo utente è impostata su Never expire, eseguire il cmdlet seguente utilizzando l'UPN (ad esempio, *user@contoso.onmicrosoft.com*) o l'ID utente dell'utente che si desidera controllare:
 
@@ -79,7 +79,7 @@ Eseguire uno dei comandi seguenti:
      }
     ```
 
-- Per ottenere un report di tutti gli utenti con PasswordNeverExpires in formato HTML sul desktop dell'utente corrente con nome **ReportPasswordNeverExpires. html**
+- Per ottenere un report di tutti gli utenti con PasswordNeverExpires in formato HTML sul desktop dell'utente corrente con nome  **ReportPasswordNeverExpires.html**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -87,7 +87,7 @@ Eseguire uno dei comandi seguenti:
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- Per ottenere un report di tutti gli utenti con PasswordNeverExpires in formato CSV sul desktop dell'utente corrente con nome **ReportPasswordNeverExpires. csv**
+- Per ottenere un report di tutti gli utenti con PasswordNeverExpires in formato CSV sul desktop dell'utente corrente con nome **ReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -97,7 +97,7 @@ Eseguire uno dei comandi seguenti:
 
 ### <a name="set-a-password-to-expire"></a>Impostare una password per la scadenza
 
-Eseguire uno dei comandi seguenti:
+Eseguire uno dei comandi riportati di seguito:
 
 - Per impostare la password di un utente in modo che la password scada, eseguire il cmdlet seguente utilizzando l'UPN o l'ID utente dell'utente:
 
@@ -113,7 +113,7 @@ Eseguire uno dei comandi seguenti:
 
 ### <a name="set-a-password-to-never-expire"></a>Impostare una password in modo che non scada mai
 
-Eseguire uno dei comandi seguenti:
+Eseguire uno dei comandi riportati di seguito:
 
 - Per impostare la password di un utente in modo che non scada mai, eseguire il cmdlet seguente utilizzando l'UPN o l'ID utente dell'utente:
 
@@ -128,4 +128,4 @@ Eseguire uno dei comandi seguenti:
     ```
 
 > [!WARNING]
-> Password impostate `-PasswordPolicies DisablePasswordExpiration` su Still Age in base all' `pwdLastSet` attributo. Se si impostano le password utente in modo che non scadano mai e quindi passano 90 giorni, le password scadono. In base all' `pwdLastSet` attributo, se si modifica la scadenza `-PasswordPolicies None` , tutte le password con un `pwdLastSet` tempo precedente a 90 giorni richiedono all'utente di modificarle al successivo accesso. Questa modifica può influire su un numero elevato di utenti.
+> Account utente configurati con il `-PasswordPolicies DisablePasswordExpiration` parametro still Age in base all' `pwdLastSet` attributo dell'account utente. Ad esempio, se si impostano le password degli utenti a non scadere mai e quindi 90 o più giorni passano, le password scadono ancora. In base all' `pwdLastSet` attributo dell'account utente, per gli account utente configurati con il `-PasswordPolicies None` parametro, tutte le password con un `pwdLastSet` tempo precedente a 90 giorni richiedono all'utente di modificarle al successivo accesso. Questa modifica può influire su un numero elevato di utenti.

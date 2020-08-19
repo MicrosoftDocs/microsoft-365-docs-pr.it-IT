@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c4f7f578aef3612696a8d5ab2a76111ff16d27b7
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 63f95b281dd2284168817a8edd9777c470f01d34
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648888"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797923"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -33,16 +33,19 @@ ms.locfileid: "46648888"
 
 La tabella `EmailEvents` nello schema per [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni riguardanti gli eventi che interessano l'elaborazione dei messaggi di posta elettronica in Office 365 ATP. Utilizzare questo riferimento per creare query che forniscano informazioni da questa tabella.
 
-Per informazioni su altre tabelle nello schema per ricerca avanzata, [vedere il riferimento sulla ricerca avanzata](advanced-hunting-schema-tables.md).
+>[!TIP]
+> Per informazioni dettagliate sui tipi di eventi ( `ActionType` valori) supportati da una tabella, utilizzare la Guida di [riferimento allo schema incorporata](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponibile nel centro sicurezza.
+
+Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Data e ora in cui è stato registrato l'evento |
+| `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `EmailId` | stringa | Indirizzo di posta elettronica e identificatore del destinatario univoci |
 | `NetworkMessageId` | stringa | Identificatore univoco per il messaggio di posta elettronica, generato da Microsoft 365 |
 | `InternetMessageId` | stringa | Identificatore pubblico per il messaggio di posta elettronica impostato dal sistema di invio |
 | `SenderMailFromAddress` | stringa | Indirizzo di posta elettronica del mittente nell'intestazione MITTENTE, noto anche come mittente della busta o indirizzo di ritorno |
-| `SenderFromAddress` | stringa | Indirizzo di posta elettronica del mittente nell'intestazione DA, visibile ai destinatari nel proprio client di posta elettronica |
+| `SenderFromAddress` | stringa | Indirizzo di posta elettronica del mittente nell'intestazione DA, visibile ai destinatari del messaggio sui propri client di posta elettronica |
 | `SenderMailFromDomain` | stringa | Dominio del mittente nell'intestazione MITTENTE, noto anche come mittente della busta o indirizzo di ritorno |
 | `SenderFromDomain` | stringa | Dominio del mittente nell'intestazione DA, visibile ai destinatari sul proprio client di posta elettronica |
 | `SenderIPv4` | stringa | Indirizzo IPV4 dell'ultimo server di posta rilevato che ha inoltrato il messaggio |
@@ -66,8 +69,8 @@ Per informazioni su altre tabelle nello schema per ricerca avanzata, [vedere il 
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
-- [Conoscere il linguaggio di query](advanced-hunting-query-language.md)
+- [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
-- [Cercare tra i dispositivi, i messaggi di posta elettronica, le app e le identità](advanced-hunting-query-emails-devices.md)
+- [Cercare tra dispositivi, posta elettronica, app e identità](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
 - [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)

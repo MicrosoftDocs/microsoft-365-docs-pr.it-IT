@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c47b97c573822cb44f895296613b70af7f85c93
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: c3e3bf903905ca241053ef110fb92bd220f3233f
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656781"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797630"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -95,7 +95,7 @@ Per utilizzare il client di etichettatura incorporato di Office, è necessario c
 
 Se entrambe queste condizioni sono soddisfatte, ma è necessario disattivare il client di etichettatura incorporato di Office, utilizzare le seguenti impostazioni di criteri di gruppo:
 
-1. Accedere a **Configurazione utente/modelli amministrativi/Microsoft Office 2016/impostazioni di protezione**
+1. Passare a **Configurazione utente/modelli amministrativi/Microsoft Office 2016/impostazioni di sicurezza**.
 
 2. Impostare **utilizza la caratteristica di sensibilità in Office per applicare e visualizzare le etichette di riservatezza** su **0**. 
  
@@ -197,7 +197,7 @@ Oltre a limitare l'accesso agli utenti nella propria organizzazione, è possibil
 
 Se gli utenti esterni non dispongono di un account in Azure Active Directory, è possibile creare un account Guest per il proprio tenant. Per l'indirizzo di posta elettronica, è possibile specificare qualsiasi indirizzo di posta elettronica che già utilizza. Ad esempio, l'indirizzo Gmail. Questo account Guest può anche essere utilizzato per accedere a un documento condiviso in SharePoint o OneDrive quando sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-Gli utenti esterni possono anche utilizzare e creare un account Microsoft per i documenti crittografati quando utilizzano le app Microsoft 365 (in[precedenza Office 365 Apps](https://docs.microsoft.com/deployoffice/name-change)) in Windows. Questa funzionalità non è ancora supportata per macOS, Android o iOS. Ad esempio, qualcuno condivide un documento crittografato con loro e le impostazioni di crittografia specificano l'indirizzo di posta elettronica di Gmail. Questo utente può creare un proprio account Microsoft che usa il proprio indirizzo di posta elettronica di Gmail. Successivamente, dopo aver eseguito l'accesso con questo account, è possibile aprire il documento e modificarlo in base alle restrizioni di utilizzo specificate per tale utente. Per un esempio di procedura dettagliata di questo scenario, vedere [Opening and editing the protected Document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+Gli utenti esterni possono anche utilizzare un account Microsoft per i documenti crittografati quando utilizzano Microsoft 365 Apps (in[precedenza Office 365 Apps](https://docs.microsoft.com/deployoffice/name-change)) su Windows e ora su Android (versione 13029 +). Questa funzionalità non è ancora supportata per macOS o iOS. Ad esempio, qualcuno condivide un documento crittografato con loro e le impostazioni di crittografia specificano l'indirizzo di posta elettronica di Gmail. Questo utente può creare un proprio account Microsoft che usa il proprio indirizzo di posta elettronica di Gmail. Successivamente, dopo aver eseguito l'accesso con questo account, è possibile aprire il documento e modificarlo in base alle restrizioni di utilizzo specificate per tale utente. Per un esempio di procedura dettagliata di questo scenario, vedere [Opening and editing the protected Document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > L'indirizzo di posta elettronica dell'account Microsoft deve corrispondere all'indirizzo di posta elettronica specificato per limitare l'accesso alle impostazioni di crittografia.

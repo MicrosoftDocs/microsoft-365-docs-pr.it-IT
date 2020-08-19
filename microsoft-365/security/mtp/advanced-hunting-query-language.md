@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 15e298edfad2d04079322a070615a36bb5df64ad
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649392"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797853"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -66,7 +66,7 @@ All'inizio della query è stato aggiunto un breve commento per descrivere il rel
 // Finds PowerShell execution events that could involve a download
 ```
 
-La query viene in genere avviata con un nome di tabella seguito da una serie di elementi avviati da una pipe (`|`). In questo esempio viene avviata la creazione di un'Unione di due tabelle `DeviceProcessEvents` e `DeviceNetworkEvents` , quindi, vengono aggiunti gli elementi reindirizzati in base alle esigenze.
+La query viene in genere avviata con un nome di tabella seguito da una serie di elementi avviati da una pipe (`|`). In questo esempio viene avviata la creazione di un'Unione di due tabelle  `DeviceProcessEvents` e `DeviceNetworkEvents` , quindi, vengono aggiunti gli elementi reindirizzati in base alle esigenze.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -102,7 +102,7 @@ Successivamente, la query Cerca stringhe nelle righe di comando che vengono in g
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Personalizzare le colonne dei risultati e la lunghezza 
-Ora che la query identifica chiaramente i dati da individuare, è possibile aggiungere elementi che definiscono come appaiono i risultati. `project`restituisce colonne specifiche e `top` limita il numero di risultati. Questi operatori contribuiscono a garantire che i risultati siano ben formattati e ragionevolmente grandi e facili da elaborare.
+Ora che la query identifica chiaramente i dati da individuare, è possibile aggiungere elementi che definiscono come appaiono i risultati. `project` restituisce colonne specifiche e `top` limita il numero di risultati. Questi operatori contribuiscono a garantire che i risultati siano ben formattati e ragionevolmente grandi e facili da elaborare.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -117,7 +117,7 @@ Fare clic su **Esegui query** per visualizzare i risultati. Selezionare l'icona 
 >[!TIP]
 >È possibile visualizzare i risultati delle query come grafici e regolare rapidamente i filtri. Per ulteriori informazioni, [vedere Utilizzo dei risultati delle query](advanced-hunting-query-results.md)
 
-## <a name="learn-common-query-operators-for-advanced-hunting"></a>Informazioni sugli operatori di query più comuni per la Ricerca avanzata
+## <a name="learn-common-query-operators"></a>Informazioni sugli operatori di query comuni
 
 Ora che è stata eseguita la prima query e si ha un'idea generale dei relativi componenti, è il momento di tornare indietro e imparare alcune nozioni di base. Il linguaggio delle query di Esplora dati usato in Ricerca avanzata supporta una serie di operatori, di seguito sono elencati i più comuni.
 
@@ -136,7 +136,7 @@ Ora che è stata eseguita la prima query e si ha un'idea generale dei relativi c
 
 Per vedere un esempio pratico di questi operatori, eseguirli nella sezione **Introduzione** in Ricerca avanzata.
 
-## <a name="understand-data-types-and-their-query-syntax-implications"></a>Informazioni sui tipi di dati e sulle implicazioni della sintassi delle query
+## <a name="understand-data-types"></a>Informazioni sui tipi di dati
 
 I dati nelle tabelle di Ricerca avanzata sono generalmente classificati nei seguenti tipi di dati.
 
@@ -147,6 +147,8 @@ I dati nelle tabelle di Ricerca avanzata sono generalmente classificati nei segu
 | `bool` | True o False |
 | `int` | Valore numerico 32 bit  |
 | `long` | Valore numerico 64 bit |
+
+Per ulteriori informazioni su questi tipi di dati e sulle relative implicazioni, [leggere informazioni sui tipi di dati scalari di Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Ottenere assistenza nella scrittura delle query
 Trarre vantaggio dalle seguenti funzionalità per scrivere query più velocemente:
@@ -179,6 +181,6 @@ Per altre informazioni sul linguaggio delle query di Esplora dati e sugli operat
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Usare i risultati delle query](advanced-hunting-query-results.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
-- [Cercare tra i dispositivi, i messaggi di posta elettronica, le app e le identità](advanced-hunting-query-emails-devices.md)
+- [Cercare tra dispositivi, posta elettronica, app e identità](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
 - [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)

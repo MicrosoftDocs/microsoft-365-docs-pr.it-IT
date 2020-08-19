@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b492d37bea6135bccb770571f9984f9866c7cfd3
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652718"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804279"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -50,15 +50,37 @@ Nella tabella seguente sono descritte le differenze di alto livello tra i criter
 |Soglie di phishing avanzate||![Segno di spunta](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |
 
-<sup>\*</sup>Nel criterio predefinito, il nome e la descrizione del criterio sono di sola lettura (la descrizione è vuota) e non è possibile specificare gli utenti a cui si applica il criterio (il criterio predefinito è applicabile a tutti i destinatari).
+<sup>\*</sup> Nel criterio predefinito, il nome e la descrizione del criterio sono di sola lettura (la descrizione è vuota) e non è possibile specificare gli utenti a cui si applica il criterio (il criterio predefinito è applicabile a tutti i destinatari).
 
-Per configurare i criteri di anti-phishing, vedere i seguenti argomenti:
+Per configurare i criteri di anti-phishing, vedere gli articoli seguenti:
 
 - [Configurazione dei criteri di anti-phishing in EOP](configure-anti-phishing-policies-eop.md)
 
 - [Configurazione dei criteri di anti-phishing ATP in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-Nella parte restante di questo argomento vengono descritte le impostazioni disponibili nei criteri anti-phishing e nei criteri di anti-phishing ATP.
+Nella parte restante di questo articolo vengono descritte le impostazioni disponibili nei criteri anti-phishing e nei criteri di anti-phishing ATP.
+
+## <a name="policy-settings"></a>Impostazioni dei criteri
+
+Le impostazioni dei criteri seguenti sono disponibili nei criteri anti-phishing e nei criteri di anti-phishing ATP:
+
+- **Nome**: non è possibile rinominare i criteri di anti-phishing predefiniti, ma possono essere denominati e rinominati criteri personalizzati creati.
+
+- **Descrizione/Controlli** Non è possibile aggiungere una descrizione ai criteri anti-phishing predefiniti, ma è possibile aggiungere e modificare la descrizione per i criteri personalizzati creati.
+
+- **Applicato a**: identifica i destinatari interni ai quali si applica il criterio di anti-phishing. Questo valore è obbligatorio nei criteri personalizzati e non è disponibile nel criterio predefinito (il criterio predefinito si applica a tutti i destinatari).
+
+  È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
+
+  - Il **destinatario è**: una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
+  - Il **destinatario è un membro di**: uno o più gruppi nell'organizzazione.
+  - **Il dominio del destinatario è**: uno o più domini accettati configurati in Microsoft 365.
+
+  - **Eccetto quando**: eccezioni per la regola. Le impostazioni e il comportamento sono esattamente come le condizioni seguenti:
+
+    - **Il destinatario è**
+    - **Il destinatario è un membro di**
+    - **Il dominio del destinatario è**
 
 ## <a name="spoof-settings"></a>Impostazioni di spoofing
 
@@ -75,28 +97,34 @@ Le seguenti impostazioni di spoofing sono disponibili nei criteri anti-phishing 
 
   - **Sposta messaggio nella cartella posta indesiderata**: questo è il valore predefinito. Il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - Mettere in **quarantena il messaggio**: Invia il messaggio in quarantena invece dei destinatari previsti. Per ulteriori informazioni sulla quarantena, vedere i seguenti argomenti:
+  - Mettere in **quarantena il messaggio**: Invia il messaggio in quarantena invece dei destinatari previsti. Per informazioni sulla quarantena, vedere gli articoli seguenti:
 
     - [Quarantena in Microsoft 365](quarantine-email-messages.md)
     - [Gestire i messaggi e i file in quarantena come amministratore in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Mittente non autenticato**: consente di abilitare o disabilitare l'identificazione non identificata del mittente in Outlook. In particolare:
+- **Mittente non autenticato**: vedere la descrizione nella sezione successiva.
 
-  - Un punto interrogativo (?) viene aggiunto alla foto del mittente se il messaggio non supera i controlli SPF o DKIM **e** il messaggio non supera l'autenticazione DMARC o [composita](email-validation-and-authentication.md#composite-authentication).
+### <a name="unauthenticated-sender"></a>Mittente non autenticato
 
-  - Il tag via (chris@contoso.com <u>tramite</u> Michelle@fabrikam.com) viene aggiunto se il dominio nell'indirizzo from (il mittente del messaggio visualizzato nei client di posta elettronica) è diverso dal dominio nella firma di DKIM o nell'indirizzo **di posta elettronica** . Per ulteriori informazioni su questi indirizzi, vedere [una panoramica degli standard dei messaggi di posta elettronica](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+L'identificazione dei mittenti non autenticati fa parte delle [impostazioni di spoofing](#spoof-settings) disponibili nei criteri anti-phishing e nei criteri di anti-phishing ATP, come descritto nella sezione precedente.
 
-  Per evitare che gli identificatori vengano aggiunti ai messaggi provenienti da mittenti specifici, sono disponibili le opzioni seguenti:
+L'impostazione del **mittente non autenticato** consente di abilitare o disabilitare l'identificazione non identificata del mittente in Outlook. In particolare:
 
-  - Consentire al mittente di eseguire la falsificazione dei criteri di intelligence spoof. Per istruzioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- Un punto interrogativo (?) viene aggiunto alla foto del mittente se il messaggio non supera i controlli SPF o DKIM **e** il messaggio non supera l'autenticazione DMARC o [composita](email-validation-and-authentication.md#composite-authentication).
 
-  - [Configurare l'autenticazione della posta elettronica](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) per il dominio del mittente.
+- Il tag via (chris@contoso.com <u>tramite</u> Michelle@fabrikam.com) viene aggiunto se il dominio nell'indirizzo from (il mittente del messaggio visualizzato nei client di posta elettronica) è diverso dal dominio nella firma di DKIM o nell'indirizzo **di posta elettronica** . Per ulteriori informazioni su questi indirizzi, vedere [una panoramica degli standard dei messaggi di posta elettronica](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+
+Per evitare che gli identificatori vengano aggiunti ai messaggi provenienti da mittenti specifici, sono disponibili le opzioni seguenti:
+
+- Consentire al mittente di eseguire la falsificazione dei criteri di intelligence spoof. Per istruzioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+
+- [Configurare l'autenticazione della posta elettronica](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) per il dominio del mittente.
   
-    - Per il punto interrogativo nella foto del mittente, SPF o DKIM sono i più importanti.
-    - Per il tag via, confermare il dominio nella firma di DKIM o l'indirizzo di **posta elettronica da** corrispondenze (o è un sottodominio di) il dominio nell'indirizzo mittente.
+  - Per il punto interrogativo nella foto del mittente, SPF o DKIM sono i più importanti.
+  - Per il tag via, confermare il dominio nella firma di DKIM o l'indirizzo di **posta elettronica da** corrispondenze (o è un sottodominio di) il dominio nell'indirizzo mittente.
 
-  Per ulteriori informazioni, vedere [Identificazione dei messaggi sospetti in Outlook.com e Outlook sul Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+Per ulteriori informazioni, vedere [Identificazione dei messaggi sospetti in Outlook.com e Outlook sul Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Impostazioni esclusive nei criteri di anti-phishing ATP
 
@@ -105,34 +133,11 @@ In questa sezione vengono descritte le impostazioni dei criteri che sono disponi
 > [!NOTE]
 > Per impostazione predefinita, le impostazioni di ATP esclusive non sono configurate o attivate anche nel criterio predefinito. Per sfruttare queste funzionalità, è necessario abilitarle e configurarle nei criteri anti-phishing predefiniti, oppure creare e configurare criteri di anti-phishing ATP personalizzati.
 
-### <a name="policy-settings-in-atp-anti-phishing-policies"></a>Impostazioni dei criteri nei criteri di anti-phishing ATP
-
-Le impostazioni dei criteri seguenti sono disponibili solo nei criteri di anti-phishing ATP:
-
-- **Nome**: non è possibile rinominare i criteri di anti-phishing predefiniti, ma possono essere denominati e rinominati criteri personalizzati creati.
-
-- **Descrizione/Controlli** Non è possibile aggiungere una descrizione ai criteri anti-phishing predefiniti, ma è possibile aggiungere e modificare la descrizione per i criteri personalizzati creati.
-
-- **Applicato a**: identifica i destinatari interni a cui si applica il criterio antiphishing ATP. Questo valore è obbligatorio nei criteri personalizzati e non è disponibile nel criterio predefinito (il criterio predefinito si applica a tutti i destinatari).
-
-    È possibile utilizzare una condizione o un'eccezione solo una volta, ma è possibile specificare più valori per la condizione o l'eccezione. Più valori della stessa condizione o eccezione utilizzano la logica OR (ad esempio, _\<recipient1\>_ o _\<recipient2\>_). Condizioni o eccezioni diverse utilizzano la logica AND (ad esempio, _\<recipient1\>_ e _\<member of group 1\>_).
-
-  - Il **destinatario è**: una o più cassette postali, utenti di posta elettronica o contatti di posta nell'organizzazione.
-  - Il **destinatario è un membro di**: uno o più gruppi nell'organizzazione.
-  - **Il dominio del destinatario è**: uno o più domini accettati configurati in Microsoft 365.
-
-  - **Eccetto quando**: eccezioni per la regola. Le impostazioni e il comportamento sono esattamente come le condizioni seguenti:
-
-    - **Il destinatario è**
-    - **Il destinatario è un membro di**
-    - **Il dominio del destinatario è**
-
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Impostazioni di rappresentazione nei criteri di anti-phishing ATP
 
 La rappresentazione è la posizione in cui il mittente o il dominio di posta elettronica del mittente in un messaggio ha un aspetto simile a un mittente o dominio reale:
 
 - Un esempio di rappresentazione del dominio contoso.com è ćóntoso.com.
-
 - Un esempio di rappresentazione dell'utente michelle@contoso.com è michele@contoso.com.
 
 Un dominio rappresentato potrebbe altrimenti essere considerato attendibile (dominio registrato, record di autenticazione della posta elettronica configurati e così via), tranne per il fatto che il suo scopo è di ingannare i destinatari.
@@ -155,7 +160,7 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri d
 
   - **Sposta messaggio nella cartella posta indesiderata**: il messaggio viene recapitato alla cassetta postale e spostato nella cartella posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella posta indesiderata se la regola di posta indesiderata è abilitata per la cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - Mettere in **quarantena il messaggio**: Invia il messaggio in quarantena invece dei destinatari previsti. Per ulteriori informazioni sulla quarantena, vedere i seguenti argomenti:
+    - Mettere in **quarantena il messaggio**: Invia il messaggio in quarantena invece dei destinatari previsti. Per informazioni sulla quarantena, vedere gli articoli seguenti:
 
     - [Quarantena in Microsoft 365](quarantine-email-messages.md)
     - [Gestire i messaggi e i file in quarantena come amministratore in Microsoft 365](manage-quarantined-messages-and-files.md)

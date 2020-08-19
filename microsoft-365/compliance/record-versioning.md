@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui record che semplificano l’implementazione di una soluzione di gestione dei record in Microsoft 365.
-ms.openlocfilehash: 943bf3949ab57eb4603695495d7a8ca0c4b90db7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 47a6aee128dbc8375d5860e1e8b1e4e0acc355cb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695255"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778452"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usare il controllo delle versioni per aggiornare i record archiviati in SharePoint o OneDrive
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-La possibilità di contrassegnare un documento come [record](records.md) e limitare le azioni che è possibile eseguire su di esso rappresenta un obiettivo essenziale per qualsiasi soluzione di gestione dei record. Tuttavia, la collaborazione potrebbe essere necessaria anche per le persone che creano versioni successive.
+La possibilità di contrassegnare un documento come [record](records-management.md#records) e limitare le azioni che è possibile eseguire su di esso rappresenta un obiettivo essenziale per qualsiasi soluzione di gestione dei record. Tuttavia, la collaborazione potrebbe essere necessaria anche per le persone che creano versioni successive.
 
 Ad esempio, può capitare di contrassegnare come record un contratto di vendita, e che successivamente sia necessario aggiornare il contratto con nuovi termini e contrassegnare l'ultima versione come nuovo record conservando comunque la versione precedente. Per scenari di questo tipo, SharePoint e OneDrive supportano il *controllo delle versioni dei record*. Le cartelle del blocco appunti di OneNote non supportano il controllo delle versioni dei record.
 
@@ -103,6 +103,4 @@ Per altre informazioni su come cercare questi eventi, vedere la sezione "Attivit
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per contrassegnare i contenuti come record, vedere [Dichiarare un elemento come record tramite le etichette di conservazione](declare-records.md).
-
-Per ulteriori informazioni sull'eliminazone dei record, vedere [Eliminazione dei record](disposition.md).
+Per altri scenari supportati dalla gestione dei record, vedere [Scenari comuni per la gestione dei record](get-started-with-records-management.md#common-scenarios-for-records-management).

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aec5bf5dfe29dd55bf5e5df471126db46fdfcb4c
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 86212bdecb58b2e79a94d0129a0a531ef22bd6e4
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648828"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797841"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -30,6 +30,9 @@ ms.locfileid: "46648828"
 - Microsoft Threat Protection
 
 La `IdentityLogonEvents` tabella nello schema di [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sulle attività di autenticazione effettuate tramite Active Directory locale acquisito da Azure ATP e le attività di autenticazione relative ai servizi Microsoft Online acquisiti da Microsoft cloud app Security. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+
+>[!TIP]
+> Per informazioni dettagliate sui tipi di eventi ( `ActionType` valori) supportati da una tabella, utilizzare la Guida di [riferimento allo schema incorporata](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponibile nel centro sicurezza.
 
 >[!NOTE]
 >In questa tabella vengono illustrate le attività di accesso di Azure Active Directory (AD) registrate dalla protezione delle app Cloud, in particolare gli accessi interattivi e le attività di autenticazione che utilizzano ActiveSync e altri protocolli legacy. Gli accessi non interattivi non disponibili in questa tabella possono essere visualizzati nel log di controllo di Azure AD. [Per ulteriori informazioni, vedere Connecting cloud app Security to Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
@@ -39,7 +42,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
-| `ActionType` | stringa | Tipo di attività che ha attivato l'evento |
+| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni dettagliate, vedere la Guida [di riferimento allo schema in-Portal.](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `LogonType` | stringa | Tipo di sessione di accesso, in particolare:<br><br> - **Interattivo** -utente interagisce fisicamente con il computer utilizzando la tastiera e lo schermo locali<br><br> - **Accessi Remote interattivi (RDP)** -l'utente interagisce con il computer in remoto tramite Desktop remoto, Servizi terminal, assistenza remota o altri client RDP<br><br> - La sessione di **rete** è stata avviata quando si accede al computer tramite PsExec o quando si accede a risorse condivise nel computer, ad esempio stampanti e cartelle condivise.<br><br> - Sessione **batch** iniziata dalle attività pianificate<br><br> - Sessione di **servizio** avviata dai servizi all'avvio |
 | `Application` | stringa | Applicazione in cui è stata eseguita l'azione registrata |
 | `Protocol` | stringa | Protocollo di rete utilizzato |
@@ -67,6 +70,6 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
-- [Cercare tra i dispositivi, i messaggi di posta elettronica, le app e le identità](advanced-hunting-query-emails-devices.md)
+- [Cercare tra dispositivi, posta elettronica, app e identità](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
 - [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)

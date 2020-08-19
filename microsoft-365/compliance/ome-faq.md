@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Si ha una domanda su come funzionano le nuove funzionalità di protezione dei messaggi? Controllare la risposta qui.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818679"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798188"
 ---
 # <a name="message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi
 
@@ -102,11 +102,15 @@ Gli utenti locali possono inviare messaggi crittografati tramite le regole del f
 
 Gli utenti di Microsoft 365 possono leggere e rispondere da Outlook per Windows e Mac (2013 e 2016), Outlook sul Web e Outlook Mobile (Android e iOS). È inoltre possibile utilizzare il client di posta elettronica nativo iOS se l'organizzazione lo consente. Se non si è un utente di Microsoft 365, è possibile leggere e rispondere a messaggi crittografati sul Web tramite il Web browser.
   
+## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>Esiste un limite di dimensione per i messaggi che è possibile inviare con OME?
+
+Sì. La dimensione massima dei messaggi che è possibile inviare con OME, inclusi gli allegati, è 30 MB.
+
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quali tipi di file sono supportati come allegati nei messaggi di posta elettronica protetti? Gli allegati ereditano i criteri di protezione associati ai messaggi di posta elettronica protetti?
 
-È possibile collegare qualsiasi tipo di file a un messaggio protetto, tuttavia i criteri di protezione vengono applicati solo nei formati di file menzionati in [tipi di file supportati dal client di Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
-  
-Se è supportato un formato di file, ad esempio un file di Word, Excel o PowerPoint, il file è sempre protetto, anche dopo che l'allegato è stato scaricato dal destinatario. Ad esempio, se un allegato è protetto da non inoltrare e il destinatario originale Scarica e inoltra l'allegato a un nuovo destinatario, il nuovo destinatario non sarà in grado di aprire il file protetto.
+È possibile allegare qualsiasi tipo di file a un messaggio protetto. Con un'eccezione, i criteri di protezione vengono applicati solo nei formati di file menzionati nei [tipi di file supportati dal client di Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types). OME non supporta le versioni 97-2003 delle seguenti applicazioni di Office: Word (con estensione doc), Excel (. xls) e PowerPoint (. ppt).
+
+Se è supportato un formato di file, ad esempio un file di Word, Excel o PowerPoint, il file è sempre protetto, anche dopo che l'allegato è stato scaricato dal destinatario. Ad esempio, si supponga che un allegato sia protetto da non inoltrare. Il destinatario originale Scarica il file, crea un messaggio a un nuovo destinatario e collega il file. Quando il nuovo destinatario riceve il file, il destinatario non sarà in grado di aprire il file protetto.
   
 ## <a name="are-pdf-file-attachments-supported"></a>Gli allegati di file PDF sono supportati?
 
@@ -188,9 +192,19 @@ Nella tabella seguente sono elencati i client supportati per le cassette postali
 
 Sono attualmente presenti due limitazioni note:
 
-- È supportato solo l'accesso fornito dall'assegnazione diretta degli utenti alla cassetta postale condivisa. Non è supportato l'assegnazione tramite un gruppo di sicurezza abilitato alla posta elettronica.
-
 - Non è possibile aprire gli allegati ai messaggi di posta elettronica ricevuti nei dispositivi mobili tramite Outlook Mobile.
+
+- Non è supportato l'assegnazione tramite un gruppo di sicurezza abilitato alla posta elettronica. È possibile supportare solo l'accesso fornito dall'assegnazione diretta degli utenti alla cassetta postale condivisa e che la mappatura automapping sia abilitata per Exchange Online. Il mapping di automaticamente è abilitato per impostazione predefinita per Exchange Online.
+
+**Per assegnare un utente alla cassetta postale condivisa**
+
+1. [Connettersi a Exchange Online tramite Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
+
+2. Eseguire il cmdlet Add-MailboxPermission con il parametro Automapping. In questo esempio le autorizzazioni di accesso completo di Ayla vengono fornite a una cassetta postale di supporto.
+
+   ```powershell
+   Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
+   ```
 
 ## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>Cosa si può fare se non si riceve il codice Pass una tantum dopo averlo richiesto?
 

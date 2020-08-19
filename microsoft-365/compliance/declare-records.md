@@ -17,25 +17,27 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per dichiarare i record.
-ms.openlocfilehash: c8024cf08be2259ffa8b6747bebf4943e11e4d60
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d637817e8d1bcc8c72bfe011dfd288ac4e2d0298
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695258"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778516"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usare le etichette di conservazione per dichiarare i record
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Usare [etichette di conservazione ](retention.md#retention-labels) per contrassegnare un contenuto come record. È possibile pubblicare tali etichette in modo che utenti e amministratori possano applicarle manualmente al contenuto oppure applicarle automaticamente al contenuto che si desidera contrassegnare come record.
+Per dichiarare gli elementi come record, usare [etichette di conservazione](retention.md#retention-labels) per contrassegnare il contenuto come record. È possibile pubblicare tali etichette in modo che utenti e amministratori possano applicarle manualmente al contenuto oppure applicarle automaticamente al contenuto che si desidera contrassegnare come record.
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurare le etichette di conservazione per dichiarare i record
 
-Quando si crea un'[etichetta di conservazione](retention.md#retention-labels), si può scegliere di usarla per contrassegnare il contenuto come record.
+Quando si crea un'etichetta di conservazione, si può scegliere di usarla per contrassegnare il contenuto come record.
 
 >[!NOTE] 
 > L'opzione per contrassegnare il contenuto come record non è disponibile quando si creano o si configurano le etichette dalla **Governance delle informazioni** nel Centro conformità Microsoft 365. È invece necessario usare **Gestione record**.
+
+Per creare una nuova etichetta di conservazione che contrassegni il contenuto come record:
 
 1. Nel [Centro conformità Microsoft 365](https://compliance.microsoft.com) passare a **Gestione record** \> **Piano di archiviazione**. Nella pagina **Piano di archiviazione**, selezionare **Crea un'etichetta**.
 
@@ -62,6 +64,4 @@ Esempio di documento contrassegnato come record da un'etichetta di conservazione
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Se è necessario aggiornare i record, vedere [Usare il controllo delle versioni dei record per aggiornare i record archiviati in SharePoint o OneDrive](record-versioning.md).
-
-Per ulteriori informazioni sull'eliminazione dei record, vedere [Eliminazione dei record](disposition.md).
+Per la lista degli scenari supportati dalla gestione dei record, vedere [Scenari comuni per la gestione dei record](get-started-with-records-management.md#common-scenarios-for-records-management).
