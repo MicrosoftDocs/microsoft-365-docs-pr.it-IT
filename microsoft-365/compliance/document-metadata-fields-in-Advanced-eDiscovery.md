@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo vengono definiti i campi dei metadati per i documenti in un set di revisione in un caso in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 69b22155f209f155aa0b311f67f3e69841093003
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126953"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814388"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati del documento in Advanced eDiscovery
 
@@ -93,12 +93,17 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Data di creazione del file System||File_system_date_created|Data creazione dal file System (si applica solo ai dati non di Office 365).|
 |Data del file System modificato||File_system_date_modified|Data di modifica del file System (si applica solo ai dati non di Office 365).|
 |Tipo di file|FileType||Tipo di file dell'elemento in base all'estensione di file.|
+|ID gruppo| GroupID|  |ID gruppo per il contenuto raggruppato.|
 |Ha allegato|HasAttachment|Email_has_attachment|Indica se il messaggio contiene allegati o meno.|
 |Ha un avvocato|HasAttorney||Ha valore **true** se almeno uno dei partecipanti è presente nell'elenco degli avvocati. in caso contrario, il valore è **false**.|
 |HasText||Has_text|Indica se il testo dell'elemento è o meno; i valori possibili sono **true** e **false**.|
 |ID non modificabile||Immutable_ID|Questo ID viene utilizzato per identificare in modo univoco un documento all'interno di un set di revisione. Questo campo non può essere utilizzato in una ricerca set di revisione e l'ID non può essere utilizzato per accedere a un documento nel relativo percorso nativo.|
 |Tipo inclusivo|InclusiveType|Inclusive_type|Tipo incluso calcolato per analisi: **0** -non incluso; **1** -Inclusive; **2** -incluso meno; copia **3** -inclusive.|
 |In Rispondi a ID||In_reply_to_ID|In Rispondi a ID del messaggio.|
+|È un allegato moderno| IsModernAttachment|  |Questo file è un file allegato o collegato moderno.|
+|Viene dalla versione del documento | IsFromDocumentVersion |  |Il documento corrente è costituito da una versione diversa di un altro documento.|
+|È un allegato di posta elettronica | IsEmailAttachment|  |Questo elemento si trova in un allegato di posta elettronica visualizzato come elemento allegato al messaggio.|
+|È un allegato in linea| IsInlineAttachment|  |Questo è stato allegato in linea e viene visualizzato nel corpo del messaggio.|
 |È rappresentativo|Rappresentante|Is_representative|Un documento in ogni set di duplicati esatti è contrassegnato come rappresentante.|
 |Classe Item|ItemClass|Item_class|Classe Item fornita da Exchange Server; ad esempio, **IPM. Note**|
 |Last modified date|LastModifiedDate|Doc_date_modified|Data dell'Ultima modifica da metadati del documento.|
@@ -153,7 +158,7 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Oggetto|Oggetto|Email_subject|Oggetto del messaggio.|
 |Subject/title|SubjectTitle||Campo calcolato che include l'oggetto o il titolo dell'elemento.|
 |Tag per caso problema 1||Tagged_by_Case_issue_1|Utente che ha contrassegnato questo documento per il caso problema 1 in rilevanza.|
-|Categorie|Categorie|Categorie|Tag applicati in un set di revisione.|
+|Tag|Tag|Tag|Tag applicati in un set di revisione.|
 |Elenco temi|Tema|Themes_list|Elenco temi come calcolato per l'analisi.|
 |Titolo|Titolo|Doc_title|Titolo dei metadati del documento.|
 |A|A|Email_to|To Field per i tipi di messaggio. Il formato **è \<SmtpAddress> DisplayName**|

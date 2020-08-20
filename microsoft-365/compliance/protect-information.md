@@ -14,19 +14,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Implementare le funzionalità di Microsoft Information Protection (MIP) in Microsoft 365 per facilitare l'individuazione, la classificazione e la protezione delle informazioni riservate in qualsiasi luogo.
-ms.openlocfilehash: 058a1b46f879b2cc4b8ada8f2a5de88717958e94
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+description: Implementare le funzionalità di Microsoft Information Protection (MIP) utilizzando la conformità di Microsoft 365 per individuare, classificare e proteggere le informazioni riservate ovunque si trovino o si trovino in viaggio.
+ms.openlocfilehash: 96082bc70b093e763be00c847bb6a68ce302c8a9
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804186"
+ms.locfileid: "46815204"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
 >*[Licensing for Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Utilizzare le funzionalità di Microsoft Information Protection (spesso abbreviato in MIP) per facilitare la individuazione, la classificazione e la protezione delle informazioni riservate in qualsiasi luogo o viaggio.
+Utilizzare Microsoft Information Protection (MIP) per individuare, classificare e proteggere le informazioni riservate ovunque si trovino o si trovino in viaggio.
+
+Le funzionalità MIP sono incluse in Microsoft 365 compliance e offrono gli strumenti necessari per [conoscere i dati](#know-your-data), [proteggere i dati](#protect-your-data)e [prevenire la perdita di dati](#prevent-data-loss).
+
+![Conoscere i dati, proteggere i dati, prevenire la perdita di dati, governare i dati](../media/powered-by-intelligent-platform.png)
+
+Per informazioni sulla governance dei dati, vedere [Microsoft Information Governance in microsoft 365](manage-Information-governance.md).
 
 ## <a name="know-your-data"></a>Riconoscere i propri dati
 

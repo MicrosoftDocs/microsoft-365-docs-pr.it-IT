@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Utilizzare la ricerca contenuto nel centro sicurezza & conformità per eseguire raccolte mirate, che garantiscono che gli elementi si trovino in una cassetta postale o in una cartella specifica del sito.
-ms.openlocfilehash: fb7f900e8deaef6946d1ed8ea109d42207a882b3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: aa311d0f9226330d9f2d881af6dabbdc6d0a15b5
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819106"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814538"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usare Ricerca contenuto per le raccolte di destinazione
 
@@ -49,7 +49,7 @@ La funzionalità di ricerca contenuto nel &amp; Centro sicurezza e conformità n
     
 - Lo script include la gestione degli errori minima. Lo scopo principale dello script è la visualizzazione rapida di un elenco di ID cartella delle cassette postali o percorsi del sito che è possibile utilizzare nella sintassi delle query di ricerca di una ricerca contenuto per l'esecuzione di una raccolta di destinazione.
     
-- Lo script di esempio fornito in questo argomento non è supportato in alcun servizio o programma di supporto Microsoft standard. Lo script di esempio viene fornito come senza garanzie di alcun tipo. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. L'intero rischio derivante dall'utilizzo o dalle prestazioni dello script di esempio e della documentazione resta all'interno dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
+- Lo script di esempio fornito in questo argomento non è supportato in alcun servizio o programma di supporto Microsoft standard. Lo script di esempio viene fornito come senza garanzie di alcun tipo. Microsoft esclude inoltre qualsiasi garanzia implicita, tra cui, senza limitazioni, tutte le garanzie implicite di commerciabilità o idoneità per uno scopo specifico. L'intero rischio derivante dall'utilizzo o dalle prestazioni dello script di esempio e della documentazione resta all'interno dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
   
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Passaggio 1: eseguire lo script per ottenere un elenco di cartelle per una cassetta postale o un sito
 
@@ -69,34 +69,34 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `GetFolderSearchParameters.ps1` .
     
-  ```powershell
-  #########################################################################################################
-  # This PowerShell script will prompt you for:                                #
-  #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
-  # The script will then:                                            #
-  #    * If an email address is supplied: list the folders for the target mailbox.            #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
-  #    * for the site.                                                                                    #
-  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
-  #      appended to the folder ID or documentlink to use in a Content Search.                #
-  # Notes:                                                #
-  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
-  #      the current folder and all sub-folders are searched.                        #
-  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
-  #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
-  #      each sub-folder that you want to search.                                #
-  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
-  #########################################################################################################
-  # Collect the target email address or SharePoint Url
-  $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-  # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
-  if (!$credentials)
-  {
+   ```powershell
+   #########################################################################################################
+   # This PowerShell script will prompt you for:                                #
+   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
+   #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+   # The script will then:                                            #
+   #    * If an email address is supplied: list the folders for the target mailbox.            #
+   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+   #    * for the site.                                                                                    #
+   #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
+   #      appended to the folder ID or documentlink to use in a Content Search.                #
+   # Notes:                                                #
+   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
+   #      the current folder and all sub-folders are searched.                        #
+   #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
+   #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
+   #      each sub-folder that you want to search.                                #
+   #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
+   #########################################################################################################
+   # Collect the target email address or SharePoint Url
+   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
+   # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
+   if (!$credentials)
+   {
       $credentials = Get-Credential
-  }
-  if ($addressOrSite.IndexOf("@") -ige 0)
-  {
+   }
+   if ($addressOrSite.IndexOf("@") -ige 0)
+   {
       # List the folder Ids for the target mailbox
       $emailAddress = $addressOrSite
       # Authenticate with Exchange Online
@@ -125,9 +125,9 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
       }
       Write-Host "-----Exchange Folders-----"
       $folderQueries |ft
-  }
-  elseif ($addressOrSite.IndexOf("http") -ige 0)
-  {
+   }
+   elseif ($addressOrSite.IndexOf("http") -ige 0)
+   {
       $searchName = "SPFoldersSearch"
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
@@ -173,31 +173,31 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
           Write-Host "No folders were found for $siteUrl"
       }
       Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
-  }
-  else
-  {
+   }
+   else
+   {
       Write-Error "Couldn't recognize $addressOrSite as an email address or a site URL"
-  }
-  ```
+   }
+   ```
 
 2. Nel computer locale, aprire Windows PowerShell e passare alla cartella in cui è stato salvato lo script.
     
 3. Eseguire lo script; Per esempio:
     
-      ```powershell
-      .\GetFolderSearchParameters.ps1
-      ```
+   ```powershell
+   .\GetFolderSearchParameters.ps1
+   ```
 
 4. Immettere le informazioni richieste dallo script.
     
     Nello script viene visualizzato un elenco di cartelle di cassette postali o di cartelle del sito per l'utente specificato. Lasciare aperta la finestra in modo che sia possibile copiare un ID cartella o un nome di documentlink e incollarlo in una query di ricerca nel passaggio 2.
     
     > [!TIP]
-    > Invece di visualizzare un elenco di cartelle sullo schermo del computer, è possibile reindirizzare l'output dello script in un file di testo. Questo file verrà salvato nella cartella in cui si trova lo script. Ad esempio, per reindirizzare l'output dello script in un file di testo, eseguire il comando riportato di seguito nel passaggio 3: `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` è possibile copiare un ID cartella o documentlink dal file da utilizzare in una query di ricerca.
+    > Invece di visualizzare un elenco di cartelle sullo schermo del computer, è possibile reindirizzare l'output dello script in un file di testo. Questo file verrà salvato nella cartella in cui si trova lo script. Ad esempio, per reindirizzare l'output dello script in un file di testo, eseguire il comando riportato di seguito nel passaggio 3:  `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` è possibile copiare un ID cartella o documentlink dal file da utilizzare in una query di ricerca.
   
 ### <a name="script-output-for-mailbox-folders"></a>Output dello script per le cartelle delle cassette postali
 
-Se si ricevono gli ID della cartella delle cassette postali, lo script si connette a Exchange Online tramite Remote PowerShell, esegue il cmdlet **Get-MailboxFolderStatisics** e quindi Visualizza l'elenco delle cartelle dalla cassetta postale specificata. Per ogni cartella della cassetta postale, nello script viene visualizzato il nome della cartella nella colonna **percorsocartella** e l'ID della cartella nella colonna **FolderQuery** . Inoltre, lo script aggiunge il prefisso di **FolderId** (che è il nome della proprietà della cassetta postale) all'ID della cartella. Poiché la proprietà **FolderId** è una proprietà ricercabile, è possibile utilizzare `folderid:<folderid>` in una query di ricerca nel passaggio 2 per eseguire una ricerca in tale cartella. Lo script Visualizza un massimo di 100 cartelle di cassette postali.
+Se si ricevono gli ID della cartella delle cassette postali, lo script si connette a Exchange Online tramite Remote PowerShell, esegue il cmdlet **Get-MailboxFolderStatisics** e quindi Visualizza l'elenco delle cartelle dalla cassetta postale specificata. Per ogni cartella della cassetta postale, nello script viene visualizzato il nome della cartella nella colonna **percorsocartella** e l'ID della cartella nella colonna **FolderQuery** . Inoltre, lo script aggiunge il prefisso di **FolderId** (che è il nome della proprietà della cassetta postale) all'ID della cartella. Poiché la proprietà **FolderId** è una proprietà ricercabile, è possibile utilizzare  `folderid:<folderid>` in una query di ricerca nel passaggio 2 per eseguire una ricerca in tale cartella. Lo script Visualizza un massimo di 100 cartelle di cassette postali.
 
 > [!IMPORTANT]
 > Lo script in questo articolo include la logica di codifica che converte i valori ID della cartella di 64 caratteri restituiti da **Get-MailboxFolderStatistics** allo stesso formato 48-character indicizzato per la ricerca. Se si esegue il cmdlet **Get-MailboxFolderStatistics** in PowerShell per ottenere un ID cartella (invece di eseguire lo script in questo articolo), una query di ricerca che utilizza tale valore ID cartella avrà esito negativo. È necessario eseguire lo script per ottenere gli ID di cartella formattati correttamente che possono essere utilizzati in una ricerca di contenuto.
@@ -218,7 +218,7 @@ Di seguito è riportato un esempio dell'output restituito dallo script per le ca
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Passaggio 2: utilizzare un ID cartella o documentlink per eseguire una raccolta di destinazione
 
-Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o documentlinks per un utente specifico, il passaggio successivo per accedere al centro sicurezza & compliance e creare una nuova ricerca contenuto per eseguire la ricerca in una cartella specifica. Si utilizzerà la `folderid:<folderid>` `documentlink:<path>` coppia o proprietà: valore nella query di ricerca configurata nella casella parola chiave ricerca contenuto (o come valore per il parametro *ContentMatchQuery* se si utilizza il cmdlet **New-ComplianceSearch** ). È possibile combinare la `folderid` `documentlink` Proprietà or con altri parametri di ricerca o condizioni di ricerca. Se nella query è inclusa solo la `folderid` `documentlink` Proprietà or, la ricerca restituirà tutti gli elementi presenti nella cartella specificata. 
+Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o documentlinks per un utente specifico, il passaggio successivo per accedere al centro sicurezza & compliance e creare una nuova ricerca contenuto per eseguire la ricerca in una cartella specifica. Si utilizzerà la  `folderid:<folderid>`  `documentlink:<path>` coppia o proprietà: valore nella query di ricerca configurata nella casella parola chiave ricerca contenuto (o come valore per il parametro  *ContentMatchQuery*  se si utilizza il cmdlet **New-ComplianceSearch** ). È possibile combinare la  `folderid`  `documentlink` Proprietà or con altri parametri di ricerca o condizioni di ricerca. Se nella query è inclusa solo la  `folderid`  `documentlink` Proprietà or, la ricerca restituirà tutti gli elementi presenti nella cartella specificata. 
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
@@ -238,7 +238,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o document
     
 6. Fare clic su **Avanti**.
     
-7. Nella casella parola chiave della pagina **che cosa si desidera cercare per** la pagina, incollare il `folderid:<folderid>` valore o `documentlink:<path>` restituito dallo script nel passaggio 1. 
+7. Nella casella parola chiave della pagina **che cosa si desidera cercare per** la pagina, incollare il  `folderid:<folderid>` valore o  `documentlink:<path>` restituito dallo script nel passaggio 1. 
     
     Ad esempio, la query nello screenshot seguente cercherà tutti gli elementi nella sottocartella Purges nella cartella elementi ripristinabili dell'utente (il valore della `folderid` proprietà per la sottocartella Purges viene visualizzato nello screenshot del passaggio 1):
     
@@ -248,7 +248,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o document
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Esempi di query di ricerca per gli insiemi di destinazione
 
-Di seguito sono riportati alcuni esempi di utilizzo delle `folderid` `documentlink` proprietà e in una query di ricerca per l'esecuzione di una raccolta di destinazione. Si noti che i segnaposto vengono utilizzati per `folderid:<folderid>` e `documentlink:<path>` per risparmiare spazio. 
+Di seguito sono riportati alcuni esempi di utilizzo delle  `folderid`  `documentlink` proprietà e in una query di ricerca per l'esecuzione di una raccolta di destinazione. Si noti che i segnaposto vengono utilizzati per  `folderid:<folderid>` e  `documentlink:<path>` per risparmiare spazio. 
   
 - In questo esempio vengono cercate tre cartelle di cassette postali diverse. È possibile utilizzare una sintassi di query simile per cercare le cartelle nascoste nella cartella elementi ripristinabili di un utente.
     
@@ -282,8 +282,8 @@ Quando si utilizza lo script in questo articolo, è necessario tenere presente q
     
 - Questo script restituisce solo informazioni sulla cartella per la cassetta postale principale dell'utente. Non restituisce informazioni sulle cartelle nella cassetta postale di archiviazione dell'utente.
     
-- Quando si eseguono ricerche nelle cartelle delle cassette postali, verrà eseguita la ricerca solo nella cartella specificata (identificata dalla relativa `folderid` proprietà); le sottocartelle non verranno cercate. Per eseguire la ricerca in cartelle secondarie, è necessario utilizzare l'ID cartella per la sottocartella che si desidera ricercare. 
+- Quando si eseguono ricerche nelle cartelle delle cassette postali, verrà eseguita la ricerca solo nella cartella specificata (identificata dalla relativa  `folderid` proprietà); le sottocartelle non verranno cercate. Per eseguire la ricerca in cartelle secondarie, è necessario utilizzare l'ID cartella per la sottocartella che si desidera ricercare. 
     
-- Quando si esegue la ricerca nelle cartelle del sito, la cartella (identificata dalla relativa `documentlink` proprietà) e tutte le sottocartelle verranno ricercate. 
+- Quando si esegue la ricerca nelle cartelle del sito, la cartella (identificata dalla relativa  `documentlink` proprietà) e tutte le sottocartelle verranno ricercate. 
     
 - Quando si esportano i risultati di una ricerca in cui è stata specificata solo la `folderid` proprietà nella query di ricerca, è possibile scegliere la prima opzione di esportazione, "tutti gli elementi, esclusi quelli con formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi". Tutti gli elementi della cartella verranno sempre esportati indipendentemente dallo stato di indicizzazione, poiché l'ID della cartella è sempre indicizzato.

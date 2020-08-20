@@ -871,10 +871,8 @@
           items:
             - name: Elenchi di controllo di preparazione della conformità
               href: gdpr-arc.md
-            - name: Azure
-              href: gdpr-arc-azure.md
-            - name: Dynamics 365
-              href: gdpr-arc-dynamics365.md
+            - name: Azure e Dynamics 365
+              href: gdpr-arc-azure-dynamics.md
             - name: Professional Services e Supporto tecnico Microsoft
               href: gdpr-arc-prof-services.md
             - name: Office 365

@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come aggiungere i risultati di ricerca o gli esempi di tali risultati di ricerca a un set di analisi del caso di eDiscovery avanzato.
-ms.openlocfilehash: 5e0cdb12a34b3b69c41546e6fcb356ed905189dd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 687cc33c0e7e6a09fb352e9c13058a6fcac30053
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034670"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814528"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un insieme da rivedere
 
@@ -44,6 +44,16 @@ Per aggiungere dati a un set di revisione, fare clic su una ricerca nella scheda
 È possibile aggiungere a un set di revisione esistente o creare un nuovo set di revisione.  Se si aggiunge un nuovo set di revisione, specificare il nome e quindi fare clic su **Aggiungi**.
 
 ![Selezionare un set di Revisione](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+
+## <a name="define-options-to-scope-your-collection-for-review"></a>Definire le opzioni per l'ambito della raccolta per la revisione
+
+Quando si aggiunge il contenuto di una ricerca a un set di revisione esistente o ne si crea uno nuovo, si dispone di opzioni per la raccolta del contenuto per la Revisione:
+
+- **Set di riesame colloquiale** -gli elementi aggiunti al set di revisione verranno abilitati per le conversazioni filettate che consentono di controllare il contenuto nel contesto della conversazione avanti e indietro, vedere altre informazioni in questo articolo [set di riesami di conversazione]
+
+- **Abilitazione del recupero per** gli allegati moderni-utilizzare questo controllo per includere gli allegati moderni o i file collegati nell'insieme per ulteriori riesami; Per ulteriori informazioni sui nuovi nomi di campi disponibili per raggruppare il contenuto, vedere [Document Metadata Fields in Advanced eDiscovery]
+
+- **Includi versioni di SharePoint (beta)** -questo controllo consente la raccolta di tutte le versioni di un file di SharePoint per i limiti di versione e i parametri di ricerca dell'insieme. Nota: questo controllo aumenterà significativamente le dimensioni dell'insieme
 
 L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi provenienti dalle origini dati originali in Microsoft 365 (ad esempio, da cassette postali e siti), copiarli nel percorso di archiviazione di Azure (questo processo di copia viene chiamato anche *ingestione*) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di riesame per avviare il processo di filtro, revisione, tagging ed esportazione dei dati nel set di revisione.
 
