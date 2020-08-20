@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: Informazioni su come instradare il traffico a un sito Web pubblico esistente ospitato all'esterno di Microsoft, se è stato impostato Microsoft per la gestione dei record DNS per il dominio personalizzato.
-ms.openlocfilehash: c33dd9253da2e8833ec6ae4693be34739b31ea63
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9a7090eef3ce7d1c67839e7320f31d7bd32aa6a7
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400221"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814399"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Aggiornare i record DNS per mantenere il proprio sito Web con l'attuale provider di hosting
 
@@ -37,29 +37,31 @@ ms.locfileid: "44400221"
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Aggiornare i record DNS nell'interfaccia di amministrazione di Microsoft 365
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
-2. Nell'elenco dei domini della pagina **Domini** selezionare il dominio usato per il sito Web, quindi selezionare **Impostazioni DNS** nel riquadro di gestione. 
+2. Nella pagina **Domains** selezionare il dominio e quindi scegliere **DNS Records**.
+
+3. In **impostazioni DNS**selezionare **record personalizzati**.
+
+4. Selezionare **+ Nuovo record personalizzato** e immettere quanto segue: 
     
-3. Selezionare **+ Nuovo record personalizzato** e immettere quanto segue: 
+   - Per **Tipo di DNS** immettere: **A (Indirizzo)**
     
-  - Per **Tipo di DNS** immettere: **A (Indirizzo)**
+   - Per **Nome host o alias** digitare **@**
     
-  - Per **Nome host o alias** digitare **@**
+   - Per **Indirizzo IP** digitare l'indirizzo IP presso cui il sito Web è attualmente ospitato, ad esempio 172.16.140.1. 
     
-  - Per **Indirizzo IP** digitare l'indirizzo IP presso cui il sito Web è attualmente ospitato, ad esempio 172.16.140.1. 
+   Deve essere un indirizzo IP  *statico*  , non  *dinamico*  , per il sito Web. Contattare il provider in cui è ospitato il sito Web per verificare che sia possibile ottenere un indirizzo IP statico per il sito Web pubblico. 
     
-    Deve essere un indirizzo IP  *statico*  , non  *dinamico*  , per il sito Web. Contattare il provider in cui è ospitato il sito Web per verificare che sia possibile ottenere un indirizzo IP statico per il sito Web pubblico. 
-    
-3. Selezionare **Salva**. 
+5. Selezionare **Salva**. 
     
 È anche possibile creare un record CNAME per aiutare i clienti a trovare il sito Web.
   
 1. Selezionare **+ Nuovo record personalizzato** e immettere quanto segue: 
     
-  - Per **Tipo di DNS** immettere: **CNAME (Alias)**
+   - Per **Tipo di DNS** immettere: **CNAME (Alias)**
     
-  - Per **Nome host o alias** digitare **www**
+   - Per **Nome host o alias** digitare **www**
     
-  - Per **Indirizzo di puntamento** digitare il nome di dominio completo (FQDN) del sito Web, ad esempio contoso.com). 
+   - Per **Indirizzo di puntamento** digitare il nome di dominio completo (FQDN) del sito Web, ad esempio contoso.com). 
     
 2. Selezionare **Salva**. 
     

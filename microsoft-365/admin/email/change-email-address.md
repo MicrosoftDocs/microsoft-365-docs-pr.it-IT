@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: "Modificare l'indirizzo di posta elettronica iniziale in un indirizzo di posta elettronica semplice come tom@fourthcoffee.com. A tale scopo, è necessario acquistare un nome di dominio e aggiungerlo a Microsoft 365. "
-ms.openlocfilehash: e1ac40fb38a207cc0f19f48ac4ab7c6f34ffbb35
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dc6d418961fe29a363aa6a787d8c0bb2d11d7e97
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400161"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814481"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Cambiare l'indirizzo di posta elettronica per usare il dominio personalizzato
 
@@ -61,7 +61,7 @@ L'indirizzo di posta elettronica iniziale in Office 365 gestito da 21Vianet incl
 
 ::: moniker-end
 
-Quando si modifica il messaggio di posta elettronica del dominio in modo che venga a Microsoft 365, aggiornando il record MX del dominio durante l'installazione, tutti i messaggi di posta elettronica inviati a tale dominio inizieranno a essere Microsoft 365. Assicurarsi di aver aggiunto utenti e le cassette postali create in Microsoft 365 per tutti coloro che hanno un messaggio di posta elettronica nel dominio prima di modificare il record MX. Non si desidera spostare la posta elettronica per tutti gli utenti del dominio in Microsoft 365? È possibile eseguire la procedura per [pilotare Microsoft 365 con solo alcuni indirizzi di posta elettronica](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
+Quando si modifica il messaggio di posta elettronica del dominio in modo che venga a Microsoft 365, aggiornando il record MX del dominio durante l'installazione, tutti i messaggi di posta elettronica inviati a tale dominio inizieranno a essere Microsoft 365. Assicurarsi di aver aggiunto utenti e le cassette postali create in Microsoft 365 per tutti coloro che hanno un messaggio di posta elettronica nel dominio prima di modificare il record MX. Non si desidera spostare la posta elettronica per tutti gli utenti del dominio in Microsoft 365? È possibile eseguire la procedura per [pilotare Microsoft 365 con solo alcuni indirizzi di posta elettronica](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide).
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Modificare l'indirizzo di posta elettronica per usare il dominio personalizzato utilizzando l'interfaccia di amministrazione di Microsoft 365
 
@@ -87,7 +87,7 @@ Per eseguire questa procedura è necessario disporre di un account di amministra
 
 2. Passare alla pagina **configurazione**  >  **domini** . 
 
-3. Nella pagina **Domains** selezionare **Aggiungi dominio**.
+3. Nella pagina **Domini**, selezionare **Aggiungere un dominio**.
     
 4. Seguire i vari passaggi per confermare di essere proprietari del dominio e modificare l'indirizzo di posta elettronica.
     

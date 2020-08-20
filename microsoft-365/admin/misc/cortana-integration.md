@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Quando si esegue l'accesso con account di lavoro o di Istituto di istruzione validi, gli utenti possono ottenere servizi di assistenza basati su cloud con Cortana in Microsoft 365 esperienze che soddisfano le promesse di privacy, sicurezza e conformità di Office 365 a livello aziendale.
-ms.openlocfilehash: 29e04726b04fafb0b79e5ba4625dce2ae74bfc67
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: e7464525774e15d5b54f1b2321948aef5d998558
+ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788849"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818302"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -101,6 +101,8 @@ I singoli utenti possono provare Cortana Voice Assistance nell'app teams mobile 
 
 4. Spostare l'interruttore su attivato o disattivato, a seconda che si desideri Cortana Voice Assistance su questo dispositivo.
 
+[Altre informazioni su Cortana Voice Assistance in teams](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
+
 ### <a name="play-my-emails"></a>Riprodurre i messaggi di posta elettronica
 
 Ascolta i miei messaggi di posta elettronica (come connesso tramite Outlook Mobile) è un'esperienza basata su voce e a mani libere per consentire agli utenti di ascoltare i nuovi messaggio nei loro inbox concentrati e le modifiche apportate alla loro giornata tramite gli altoparlanti sul telefono, cuffie o dispositivo audio collegato. Gli utenti possono chiedere a Cortana di leggere ad alta voce i messaggi di posta elettronica recenti e chiedere a Cortana di eseguire azioni quali flag, Archive, DELETE e Skip messages. Questa funzionalità è particolarmente utile per recuperare i messaggi di posta elettronica durante il pendolarismo, il multitasking o in viaggio. Quando l'utente parla a Cortana in play my emails, la richiesta audio vocale passa direttamente a Cortana Enterprise Services. Un testo per la lettura vocale del messaggio di posta elettronica dell'utente viene elaborato all'interno del cloud di Office 365. Durante questo processo, non vengono elaborati dati di Office 365 sul dispositivo mobile dell'utente e non vengono salvati i dati di posta elettronica. La trascrizione dei comandi vocali (ovvero "segna come lettura", "Avanti", "contrassegno" e così via) può essere mantenuta in conformità con le condizioni di protezione dei dati nelle condizioni dei Microsoft [Online Services](https://www.microsoft.com/licensing/product-licensing/products).
@@ -133,7 +135,7 @@ Gli amministratori possono configurare informazioni per la propria organizzazion
 
 Continueremo a introdurre altre esperienze come quelle precedenti per aumentare la produttività dell'organizzazione.
 
-Per ulteriori informazioni, vedere [offerte di conformità Microsoft](https://docs.microsoft.com/microsoft-365/compliance/offering-home).
+[Altre informazioni sulle offerte di conformità di Microsoft](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
 
 ## <a name="how-is-the-delivery-of-cortana-enterprise-services-different-from-the-delivery-of-other-cortana-features-i-may-have-previously-experienced"></a>In che modo la distribuzione di Cortana Enterprise Services è diversa da quella di altre caratteristiche di Cortana che potrebbero essere state sperimentate in precedenza?
 

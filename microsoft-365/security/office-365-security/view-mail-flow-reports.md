@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui rapporti sul flusso di posta disponibili nel dashboard report nel centro sicurezza & Compliance.
 ms.custom: ''
-ms.openlocfilehash: acf74136fc61d38ea9aac47f36d96aa51a7b9905
-ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
+ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46635035"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814507"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visualizzare i report sul flusso di posta nel dashboard report nel centro sicurezza & Compliance
 
@@ -279,6 +279,123 @@ Per la visualizzazione dettagli, è possibile esportare i dati solo per un giorn
 Ogni file CSV esportato è limitato a 150.000 righe. Se i dati di quel giorno contengono più di 150.000 righe, verranno creati più file CSV.
 
 ![Visualizzazione della direzione nel rapporto sullo stato del flusso di posta ](../../media/mail-flow-status-report-direction-view.png)
+
+### <a name="funnel-view-for-the-mailflow-status-report"></a>Visualizzazione imbuto per il report sullo stato del flusso di posta
+
+La visualizzazione **imbuto** Mostra il modo in cui le funzionalità di protezione della posta elettronica di Microsoft filtrano i messaggi di posta elettronica in arrivo e in uscita nell'organizzazione. Fornisce informazioni dettagliate sul numero totale di messaggi di posta elettronica e su come le funzionalità di protezione delle minacce configurate, tra cui protezione Edge, antimalware, anti-phishing, antispam e anti-spoofing, influiscono su questo conteggio.
+
+Se si fa clic sulla scheda **imbuto** , per impostazione predefinita, questa visualizzazione contiene un grafico e una tabella dati configurata con i filtri seguenti:
+
+- **Data**: gli ultimi 7 giorni.
+
+- **Direzione**:
+
+  - **Inbound**
+  - **In uscita**
+  - **Intra-org**: questo conteggio è per i messaggi inviati all'interno di un tenant. vale a dire che il mittente abc@domain.com invia al destinatario xyz@domain.com (conteggiato separatamente da in ingresso e in uscita).
+
+La visualizzazione aggregazione e la vista tabella dati consentono 90 giorni di filtraggio.
+
+Se si fa clic su **filtro**, è possibile filtrare sia il grafico che la tabella dati.
+
+Questo grafico Visualizza il numero di messaggi di posta elettronica organizzati da:
+
+  - **Numero totale di messaggi di posta elettronica**
+  - **Posta elettronica dopo la protezione Edge**
+  - **Posta elettronica dopo antimalware, reputazione file, blocco di tipi di file**
+  - **Messaggi di posta elettronica dopo l'anti-phishing, la reputazione URL, la rappresentazione del marchio, l'anti-spoofing**
+  - **Messaggi di posta elettronica dopo la protezione dalla posta indesiderata**
+  - **Messaggi di posta elettronica dopo la rappresentazione del dominio e dell'utente**<sup>1</sup>
+  - **Messaggio di posta elettronica dopo la detonazione di file e URL**<sup>1</sup>
+  - **Messaggi di posta elettronica rilevati come benigni dopo la protezione dopo il recapito (URL click Time Protection)**
+
+<sup>1</sup> Office 365 solo ATP
+
+Per visualizzare l'indirizzo di posta elettronica filtrato da EOP o ATP separatamente, fare clic sul valore nella legenda del grafico.
+
+La tabella dati contiene le informazioni seguenti, visualizzate in ordine di data decrescente:
+
+ - **Data**
+ - **Numero totale di messaggi di posta elettronica**
+ - **Protezione Edge**
+ - **Anti-malware, reputazione dei file, blocco di tipi di file**
+ - **Anti-phishing, reputazione URL, rappresentazione di marca, anti-spoofing**
+ - **Filtro posta indesiderata, messaggi in blocco**
+ - **Rappresentazione di utenti e domini (ATP)**
+ - **Detonazione di file e URL (ATP)**
+ - **Protezione dopo il recapito e ZAP (ATP) o ZAP (EOP)**
+
+Se si seleziona una riga nella tabella dati, nel riquadro a comparsa viene visualizzata un'ulteriore scomposizione dei conteggi della posta elettronica.
+
+**Esporta**:
+
+Dopo aver fatto clic su **Esporta** in **Opzioni**, è possibile selezionare uno dei seguenti valori:
+
+- **Riepilogo (con i dati per gli ultimi 90 giorni al massimo)**
+- **Dettagli (con i dati per gli ultimi 30 giorni al massimo)**
+
+In **Data**scegliere un intervallo e quindi fare clic su **applica**. I dati relativi ai filtri correnti verranno esportati in un file CSV.
+
+Ogni file CSV esportato è limitato a 150.000 righe. Se i dati contengono più di 150.000 righe, verranno creati più file CSV.
+
+ ![Visualizzazione imbuto nel rapporto sullo stato del flusso di posta ](../../media/mail-flow-status-report-funnel-view.png)
+
+ ### <a name="tech-view-for-the-mailflow-status-report"></a>Visualizzazione tecnologia per il report sullo stato del flusso di posta
+
+La **visualizzazione Tech** è simile alla visualizzazione **imbuto** , fornendo dettagli più granulari per le funzionalità di protezione delle minacce configurate. Dal grafico, è possibile vedere in che modo i messaggi vengono categorizzati nelle diverse fasi della protezione dalle minacce.
+
+Se si fa clic sulla scheda **Tech View** , per impostazione predefinita, questa visualizzazione contiene un grafico e una tabella dati configurata con i filtri seguenti:
+
+- **Data**: gli ultimi 7 giorni.
+
+- **Direzione**:
+
+  - **Inbound**
+  - **In uscita**
+  - **Intra-org**: questo conteggio è per i messaggi all'interno di un tenant, ad esempio sender abc@domain.com invia al destinatario xyz@domain.com (conteggiato separatamente da in ingresso e in uscita)
+
+La visualizzazione aggregazione e la vista tabella dati consentono 90 giorni di filtraggio.
+
+Se si fa clic su **filtro**, è possibile filtrare sia il grafico che la tabella dati.
+
+In questo grafico vengono visualizzati i messaggi organizzati nelle categorie seguenti:
+
+  - **Numero totale di messaggi di posta elettronica**
+  - **Consenti Edge, filtro perimetrale**
+  - **Non malware, rilevamento degli allegati sicuri (ATP), rilevamento del motore antimalware, blocco di regole**
+  - **Not phishing, DMARC failure, rappresentazione Detection, spoofing Detection, phishing detection**
+  - **Nessun rilevamento con detonazione URL, rilevamento di detonazione URL (ATP)**
+  - **Non spam, posta indesiderata**
+  - **Posta elettronica non dannosa, rilevamento collegamenti sicuri (ATP), ZAP**
+
+Quando si posiziona il puntatore del mouse su una categoria del grafico, è possibile visualizzare il numero di messaggi in quella categoria.
+
+La tabella dati contiene le informazioni seguenti, visualizzate in ordine di data decrescente:
+
+  - **Data**  
+  - **Numero totale di messaggi di posta elettronica**
+  - **Filtro perimetrale**
+  - **Motore antimalware, allegati sicuri, regola filtrata**
+  - **DMARC, rappresentazione, spoofing, phishing filtrato**
+  - **Rilevamento di detonazione degli URL**
+  - **Filtro di protezione da posta indesiderata**
+  - **Rimozione di ZAP**
+  - **Rilevamento tramite collegamenti sicuri**
+
+Se si seleziona una riga nella tabella dati, nel riquadro a comparsa viene visualizzata un'ulteriore scomposizione dei conteggi della posta elettronica.
+
+**Esporta**:
+
+Quando si fa clic su **Esporta**, in **Opzioni** è possibile selezionare uno dei seguenti valori:
+
+- **Riepilogo (con i dati per gli ultimi 90 giorni al massimo)**
+- **Dettagli (con i dati per gli ultimi 30 giorni al massimo)**
+
+In **Data**scegliere un intervallo e quindi fare clic su **applica**. I dati relativi ai filtri correnti verranno esportati in un file CSV.
+
+Ogni file CSV esportato è limitato a 150.000 righe. Se i dati contengono più di 150.000 righe, verranno creati più file CSV.
+
+ ![Visualizzazione tecnologia nel rapporto sullo stato del flusso di posta ](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>Report di posta elettronica inviati e ricevuti
 

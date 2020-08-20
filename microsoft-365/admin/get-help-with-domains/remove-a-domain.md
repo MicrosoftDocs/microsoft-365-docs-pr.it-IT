@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare gli utenti e i gruppi in un altro dominio.
-ms.openlocfilehash: 6f5e36a897316c8cdc057a725957c54e7eb53edc
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 57e52cc4f44e41d31200b8b5469aed6c36b63d24
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079762"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814421"
 ---
 # <a name="remove-a-domain"></a>Rimuovere un dominio
 
@@ -48,7 +48,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-worldwide"
 
-1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>.
+1. Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">interfaccia di amministrazione</a>.
 
 2. Selezionare **utenti** > **attivi**.
 
@@ -64,7 +64,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>.  
+1. Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">interfaccia di amministrazione</a>.  
 
 2. Selezionare **utenti** > **attivi**.
 
@@ -80,7 +80,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-21vianet"
 
-1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>.  
+1. Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a>.  
 
 2. Selezionare **utenti** > **attivi**.
 
@@ -98,7 +98,7 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-worldwide"
 
-1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>.
+1. Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a>.
 
 2. Passare a **utenti** \> **attivi**e selezionare l'account dall'elenco.
 
@@ -214,7 +214,7 @@ La rimozione di un dominio in molti luoghi come gruppi di sicurezza, liste di di
   
 Se ci sono centinaia o migliaia di utenti, usare PowerShell per eseguire query per tutti gli utenti e spostarli in un altro dominio. In caso contrario, alcuni utenti potrebbero risultare mancanti nell'interfaccia utente e quindi, quando si rimuove il dominio, non sarà possibile spostarli e non si riuscirà a individuare la causa del problema. Per altre informazioni, vedere [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
-## <a name="still-need-help"></a>Ulteriore assistenza
+## <a name="still-need-help"></a>Serve ulteriore assistenza?
 
 ::: moniker range="o365-worldwide"
 
@@ -228,8 +228,6 @@ Il problema persiste? Potrebbe essere necessario rimuovere manualmente il domini
 ## <a name="related-articles"></a>Articoli correlati
 
 [Domande frequenti sui domini](../setup/domains-faq.md)
-
-[Ottenere assistenza per i domini di Microsoft 365](get-help-with-domains.md)
 
 [Passare a un piano di Microsoft 365 per le aziende diverso](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

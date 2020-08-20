@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: 8b70466e5cf82d9cf5be67162263f28ab5bd0d5d
-ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
+ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592299"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814433"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Aggiungere un dominio a Microsoft 365
 
@@ -96,7 +96,7 @@ ms.locfileid: "46592299"
   
     2. Scegliere **i ' ll add the DNS Records me stesso** se si desidera collegare solo specifici servizi Microsoft 365 al dominio o se si desidera ignorare questo per ora e farlo in un secondo momento. **Scegliere questa opzione solo se si è effettivamente in grado di eseguire l'operazione.**
     
-7. Se si è scelto di *aggiungere manualmente i record DNS* , selezionare **Avanti** e visualizzare una pagina contenente tutti i record che è necessario aggiungere al sito Web di registrazione per configurare il dominio. 
+7. Se si è scelto di  *aggiungere manualmente i record DNS*  , selezionare **Avanti** e visualizzare una pagina contenente tutti i record che è necessario aggiungere al sito Web di registrazione per configurare il dominio. 
     
   
   
@@ -124,7 +124,7 @@ Attenersi alla procedura riportata di seguito per aggiungere un record personali
 
 5. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
     
-6. Seleziona **Salva**.
+6. Selezionare **Salva**.
 
 ## <a name="registrars-with-domain-connect"></a>Registrar con Domain Connect
 
@@ -163,5 +163,3 @@ Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare d
 [Acquistare un nome di dominio in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Configurare il dominio (istruzioni specifiche per l’host)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
-
-[Ottenere assistenza per i domini](../get-help-with-domains/get-help-with-domains.md)
