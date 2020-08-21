@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Visualizzazione campagne in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: b7078188d8e01f27e6941c3f61f4ef20a004606c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f0f5d2305b4f17c7018d32eebd155b4ad2d459e7
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653234"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825798"
 ---
 # <a name="campaign-views-in-atp"></a>Visualizzazioni della campagna in ATP
 
@@ -136,7 +136,7 @@ Le proprietà della campagna disponibili sono descritte nell'elenco seguente:
   - **Famiglia di malware**
   - **Azione per il recapito**
   - **Tecnologia di rilevamento**
-  - **Categorie**
+  - **Tag**
   - **Sostituzioni del sistema**
 
 - Impostazioni avanzate
@@ -237,9 +237,9 @@ Il diagramma include le seguenti informazioni:
   |**ZAP**|n/d|[Zero-hour auto Purge (ZAP)](zero-hour-auto-purge.md) ha eseguito un'azione sul messaggio recapitato in base alle impostazioni dei criteri di protezione da posta indesiderata (spostati nella cartella posta indesiderata o in quarantena).|
   |
 
-  <sup>\*</sup>Esaminare i criteri di protezione da posta indesiderata, poiché il servizio potrebbe essere stato bloccato.
+  <sup>\*</sup> Esaminare i criteri di protezione da posta indesiderata, poiché il servizio potrebbe essere stato bloccato.
 
-  <sup>\*\*</sup>Esaminare i criteri di protezione da posta indesiderata, poiché tali messaggi devono essere messi in quarantena, non recapitati.
+  <sup>\*\*</sup> Esaminare i criteri di protezione da posta indesiderata, poiché tali messaggi devono essere messi in quarantena, non recapitati.
 
 - **Posizioni di recapito**: è consigliabile esaminare i messaggi che sono stati effettivamente recapitati ai destinatari (nella cartella posta in arrivo o posta indesiderata), anche se gli utenti non hanno fatto clic sull'URL del payload nel messaggio. È inoltre possibile rimuovere i messaggi in quarantena dalla quarantena. Per ulteriori informazioni, vedere [messaggi di posta elettronica in quarantena in EOP](quarantine-email-messages.md).
 

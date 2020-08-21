@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare il rapporto Dettagli di mancato recapito nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità per monitorare i codici di errore più frequentemente riscontrati nei rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo) dai mittenti dell'organizzazione.
-ms.openlocfilehash: d45382ab5c7e0d0a73487740544f20b9c25a3ad1
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: bdc2a2a16f76f4e6ada629c82b86423422ab56c9
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577421"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826918"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapporto di mancato recapito nel centro sicurezza & Compliance
 

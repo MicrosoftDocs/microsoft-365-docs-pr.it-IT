@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Informazioni per amministratori sul modo in cui Exchange Online Protection (EOP) usa l'autenticazione e-mail (SPF, DKIM e DMARC) per evitare lo spoofing, il phishing e la posta indesiderata.
-ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209500"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826650"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticazione e-mail in EOP
 
@@ -41,7 +41,7 @@ Il resto di questo argomento spiega come funzionano queste tecnologie e il modo 
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>Usare l'autenticazione della posta elettronica per evitare lo spoofing
 
-DMARC impedisce lo spoofing esaminando l'indirizzo **Da** nei messaggi, ossia l'indirizzo di posta elettronica del mittente che gli utenti vedono nel proprio client di posta elettronica. Inoltre, le organizzazioni di posta elettronica di destinazione possono verificare che il dominio abbia superato i controlli SPF o DKIM, il che significa che è stato autenticato e pertanto non è contraffatto. 
+DMARC impedisce lo spoofing esaminando l'indirizzo **Da** nei messaggi, ossia l'indirizzo di posta elettronica del mittente che gli utenti vedono nel proprio client di posta elettronica. Inoltre, le organizzazioni di posta elettronica di destinazione possono verificare che il dominio abbia superato i controlli SPF o DKIM, il che significa che è stato autenticato e pertanto non è contraffatto.
 
 Il problema è tuttavia che i record SPF, DKIM e DMARC nel DNS per l'autenticazione della posta elettronica, collettivamente noti come criteri di autenticazione e-mail, sono completamente facoltativi. Di conseguenza, mentre i domini con criteri di autenticazione e-mail avanzati come microsoft.com e skype.com sono protetti dallo spoofing, i domini che pubblicano criteri di autenticazione più deboli o non ne pubblicano sono obiettivi che possono essere contraffatti.
 

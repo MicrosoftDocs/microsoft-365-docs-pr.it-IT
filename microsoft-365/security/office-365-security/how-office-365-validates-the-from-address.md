@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni sui tipi di indirizzi di posta elettronica accettati o rifiutati da Exchange Online Protection (EOP) e Outlook.com per evitare il phishing.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c67cf5855f2b0a99cf8d03bb6d7ba8557329b300
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209452"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827422"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Come EOP convalida l'indirizzo del mittente per impedire il phishing
 
@@ -72,13 +72,13 @@ Gli indirizzi di posta elettronica seguenti sono validi:
 
 - `From: <sender@contoso.com>`
 
-- `From: < sender@contoso.com >`(Non consigliato perché esistono spazi tra le parentesi angolari e l'indirizzo di posta elettronica).
+- `From: < sender@contoso.com >` (Non consigliato perché esistono spazi tra le parentesi angolari e l'indirizzo di posta elettronica).
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
 - `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Microsoft 365 <sender@contoso.com>`(Non consigliato perché il nome visualizzato non è racchiuso tra virgolette doppie).
+- `From: Microsoft 365 <sender@contoso.com>` (Non consigliato perché il nome visualizzato non è racchiuso tra virgolette doppie).
 
 Gli indirizzi di posta elettronica seguenti non sono validi:
 
@@ -88,19 +88,19 @@ Gli indirizzi di posta elettronica seguenti non sono validi:
 
   A questo punto, i messaggi con un indirizzo vuoto non vengono più accettati.
 
-- `From: Microsoft 365 sender@contoso.com`(Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari).
+- `From: Microsoft 365 sender@contoso.com` (Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari).
 
-- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`(Testo dopo l'indirizzo di posta elettronica).
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Testo dopo l'indirizzo di posta elettronica).
 
-- `From: Sender, Example <sender.example@contoso.com>`Il nome visualizzato contiene una virgola, ma non è racchiuso tra virgolette doppie.
+- `From: Sender, Example <sender.example@contoso.com>` Il nome visualizzato contiene una virgola, ma non è racchiuso tra virgolette doppie.
 
-- `From: "Microsoft 365 <sender@contoso.com>"`(L'intero valore viene racchiuso in modo errato tra virgolette doppie).
+- `From: "Microsoft 365 <sender@contoso.com>"` (L'intero valore viene racchiuso in modo errato tra virgolette doppie).
 
-- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`(Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari).
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari).
 
-- `From: Microsoft 365<sender@contoso.com>`(Nessuna spaziatura tra il nome visualizzato e la parentesi uncinata sinistra).
+- `From: Microsoft 365<sender@contoso.com>` (Nessuna spaziatura tra il nome visualizzato e la parentesi uncinata sinistra).
 
-- `From: "Microsoft 365"<sender@contoso.com>`(Nessuna spaziatura tra le virgolette doppie di chiusura e la parentesi angolare sinistra).
+- `From: "Microsoft 365"<sender@contoso.com>` (Nessuna spaziatura tra le virgolette doppie di chiusura e la parentesi angolare sinistra).
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Sopprimere le risposte automatiche al dominio personalizzato
 

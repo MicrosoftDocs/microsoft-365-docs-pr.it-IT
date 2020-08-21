@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sulle impostazioni del filtro di posta indesiderata (Advanced Spam Filter) disponibili nei criteri di protezione da posta indesiderata in Exchange Online Protection (EOP).
-ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2a79a6721a587e3033e71e6e46856a21cffe7bcc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653342"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827338"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Impostazioni avanzate per il filtro della posta indesiderata in EOP
 
@@ -34,6 +34,7 @@ In Microsoft 365 organizzazioni con cassette postali in Exchange Online o in org
 
 > [!NOTE]
 > L'abilitazione di una o più impostazioni ASF è un approccio aggressivo al filtro di posta indesiderata. Non è possibile segnalare i messaggi filtrati da ASF come falsi positivi. È possibile identificare i messaggi che sono stati filtrati tramite ASF:
+>
 > - Notifiche di quarantena della posta indesiderata degli utenti finali periodiche.
 >
 > - La presenza di messaggi filtrati in quarantena.

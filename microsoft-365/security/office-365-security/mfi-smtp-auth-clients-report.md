@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare l'Insight e il report SMTP AUTH nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità per monitorare i mittenti di posta elettronica nell'organizzazione che utilizzano SMTP autenticato (AUTH) per inviare messaggi di posta elettronica.
-ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 65e5569bcd79caef071ee2103d18a4e985c19dbb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577236"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826870"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Insight e report dei client auth SMTP nel centro sicurezza & Compliance
 
@@ -73,7 +73,7 @@ Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate d
   - **TLS 1.2%**<sup>\*</sup>
   - **Numero di messaggi**
 
-  <sup>\*</sup>In questa colonna sono riportati sia la percentuale che il numero di messaggi provenienti dal mittente.
+  <sup>\*</sup> In questa colonna sono riportati sia la percentuale che il numero di messaggi provenienti dal mittente.
 
 Se si fa clic su **filtri** in una visualizzazione tabella dettagli, è possibile specificare un intervallo di date con data di **inizio** e **Data di fine**.
 

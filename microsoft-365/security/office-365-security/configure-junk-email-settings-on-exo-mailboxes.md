@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
-ms.openlocfilehash: 5da4aad41f5c5f00f65fa1ceb4fc4c0fad773779
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 171eca8535958f01a7f749ad678e6ea9dd83d80c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653042"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825714"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 
@@ -42,9 +42,9 @@ Quando la regola di posta indesiderata è abilitata per la cassetta postale, EOP
 Gli amministratori possono utilizzare PowerShell di Exchange Online per disabilitare, abilitare e visualizzare lo stato della regola di posta indesiderata nelle cassette postali. Gli amministratori possono anche utilizzare PowerShell di Exchange Online per configurare le voci nella raccolta degli elenchi indirizzi attendibili nelle cassette postali (l'elenco Mittenti attendibili, l'elenco destinatari attendibili e l'elenco Mittenti bloccati).
 
 > [!NOTE]
-> I messaggi provenienti da mittenti che gli utenti hanno aggiunto ai propri elenchi di mittenti attendibili ignoreranno il filtro delle connessioni come parte di EOP (SCL è-1). Per impedire agli utenti di aggiungere voci all'elenco dei mittenti attendibili in Outlook, utilizzare criteri di gruppo come indicato nella sezione [informazioni sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) più avanti in questo argomento. Il filtro dei criteri, il filtro contenuto e i controlli di protezione avanzata dalle minacce (ATP, Advanced Threat Protection) verranno ancora applicati ai messaggi.
+> I messaggi provenienti da mittenti che gli utenti hanno aggiunto ai propri elenchi di mittenti attendibili ignoreranno il filtro delle connessioni come parte di EOP (SCL è-1). Per impedire agli utenti di aggiungere voci all'elenco dei mittenti attendibili in Outlook, utilizzare criteri di gruppo come indicato nella sezione  [informazioni sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) più avanti in questo argomento. Il filtro dei criteri, il filtro contenuto e i controlli di protezione avanzata dalle minacce (ATP, Advanced Threat Protection) verranno ancora applicati ai messaggi.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per eseguire queste procedure, è possibile utilizzare solo Exchange Online PowerShell. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -57,7 +57,7 @@ Gli amministratori possono utilizzare PowerShell di Exchange Online per disabili
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Utilizzo di PowerShell di Exchange Online per abilitare o disabilitare la regola di posta indesiderata in una cassetta postale
 
 > [!NOTE]
-> È possibile utilizzare solo il cmdlet **Set-MailboxJunkEmailConfiguration** per disabilitare la regola di posta indesiderata in una cassetta postale che è stata aperta in Outlook (in modalità cache) o Outlook sul Web. Se la cassetta postale non è stata aperta, verrà visualizzato l'errore: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` se si desidera sopprimere questo errore per le operazioni in blocco, è possibile aggiungere `-ErrorAction SlientlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
+> È possibile utilizzare solo il cmdlet **Set-MailboxJunkEmailConfiguration** per disabilitare la regola di posta indesiderata in una cassetta postale che è stata aperta in Outlook (in modalità cache) o Outlook sul Web. Se la cassetta postale non è stata aperta, verrà visualizzato l'errore: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` se si desidera sopprimere questo errore per le operazioni in blocco, è possibile aggiungere `-ErrorAction SilentlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
 
 Per abilitare o disabilitare la regola di posta indesiderata in una cassetta postale, utilizzare la sintassi seguente:
 
@@ -81,7 +81,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-Mailbox
 
 > [!NOTE]
 >
-> - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si esegue il comando precedente. Per eliminare questo errore per le operazioni in blocco, aggiungere `-ErrorAction SlientlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
+> - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si esegue il comando precedente. Per eliminare questo errore per le operazioni in blocco, aggiungere `-ErrorAction SilentlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
 >
 > - Anche se si disattiva la regola di posta indesiderata, il filtro posta indesiderata di Outlook (a seconda del modo in cui è configurata) può anche determinare se un messaggio è spam e spostare i messaggi nella cartella posta in arrivo o posta indesiderata in base al verdetto di posta indesiderata e alla raccolta degli elenchi indirizzi attendibili sulla cassetta postale. Per ulteriori informazioni, vedere la sezione informazioni [sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) in questo argomento.
 
@@ -121,7 +121,7 @@ Per configurare la raccolta degli elenchi indirizzi attendibili in una cassetta 
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-Per immettere più valori e sovrascrivere le voci esistenti per i parametri _BlockedSendersAndDomains_ e _TrustedSendersAndDomains_ , utilizzare la sintassi seguente: `"<Value1>","<Value2>"...` . Per aggiungere o rimuovere uno o più valori senza alterare altre voci esistenti, utilizzare la sintassi seguente:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+Per immettere più valori e sovrascrivere le voci esistenti per i parametri _BlockedSendersAndDomains_ e _TrustedSendersAndDomains_ , utilizzare la sintassi seguente: `"<Value1>","<Value2>"...` . Per aggiungere o rimuovere uno o più valori senza alterare altre voci esistenti, utilizzare la sintassi seguente: `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 In questo esempio vengono configurate le impostazioni seguenti per la raccolta degli elenchi indirizzi attendibili sulla cassetta postale di Epstein:
 
@@ -145,7 +145,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-Mailbox
 
 > [!NOTE]
 >
-> - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si eseguono i comandi precedenti. Per eliminare questo errore per le operazioni in blocco, aggiungere `-ErrorAction SlientlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
+> - Se l'utente non ha mai aperto la propria cassetta postale, è possibile che venga visualizzato un messaggio di errore quando si eseguono i comandi precedenti. Per eliminare questo errore per le operazioni in blocco, aggiungere `-ErrorAction SilentlyContinue` il comando **Set-MailboxJunkEmailConfiguration** .
 >
 > - Anche se la regola di posta indesiderata è disabilitata per la cassetta postale, è comunque possibile configurare la raccolta degli elenchi indirizzi attendibili e il filtro posta indesiderata di Outlook è in grado di spostare i messaggi nella cartella posta in arrivo o posta indesiderata. Per ulteriori informazioni, vedere la sezione informazioni [sulle impostazioni di posta indesiderata in Outlook](#about-junk-email-settings-in-outlook) in questo argomento.
 >

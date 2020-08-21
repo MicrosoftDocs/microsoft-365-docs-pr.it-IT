@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Gli amministratori possono imparare a assegnare o rimuovere le autorizzazioni nell'interfaccia di amministrazione di Exchange (EAC) in Exchange Online Protection.
-ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 8d452eb85d59bbe82cc6685d652617bc857c1ddf
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616515"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825690"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Gestire i gruppi di ruoli in Exchange Online Protection autonomo
 
@@ -25,7 +25,7 @@ Nelle organizzazioni standalone di Exchange Online Protection (EOP) senza casset
 
 Per ulteriori informazioni sui ruoli e sui gruppi di ruolo, vedere [Permissions in standalone EOP](feature-permissions-in-eop.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per aprire l'interfaccia di amministrazione di Exchange (EAC), vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -36,7 +36,7 @@ Per ulteriori informazioni sui ruoli e sui gruppi di ruolo, vedere [Permissions 
 - Per informazioni sui tasti di scelta rapida che possono essere applicati alle procedure descritte in questo argomento, vedere tasti [di scelta rapida per l'interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Problemi? Chiedere assistenza nel forum di [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## <a name="use-the-eac-to-manage-role-groups"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per gestire gruppi di ruoli
 
@@ -62,9 +62,9 @@ Quando si crea un nuovo gruppo di ruoli, è possibile configurare tutte le impos
 
     - **Descrizione**: immettere una descrizione facoltativa per il gruppo di ruoli.
 
-    - **Ruoli**: fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) o **rimuovere** ![ ITPro-EAC-RemoveIcon. gif ](../../media/ITPro-EAC-RemoveIcon.gif) per selezionare o modificare i ruoli assegnati al gruppo di ruoli.
+    - **Ruoli**: fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) o **rimuovere** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) per selezionare o modificare i ruoli assegnati al gruppo di ruoli.
 
-    - **Membri**: fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) o **rimuovere** ![ ITPro-EAC-RemoveIcon. gif ](../../media/ITPro-EAC-RemoveIcon.gif) per modificare l'appartenenza a un gruppo di ruoli.
+    - **Membri**: fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) o **rimuovere** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) per modificare l'appartenenza a un gruppo di ruoli.
 
 3. Al termine, fare clic su **Salva** per creare il gruppo di ruoli.
 
@@ -86,7 +86,7 @@ Le stesse opzioni sono disponibili quando si modificano i gruppi di ruoli come q
 
 1. Nell'interfaccia di amministrazione di Exchange, andare a ruoli di amministratore **delle autorizzazioni** \> **Admin roles**, selezionare il gruppo di ruoli che si desidera modificare, quindi fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) .
 
-2. Nella pagina delle proprietà del gruppo di ruoli che si apre, nella sezione **memebers** , eseguire una delle operazioni seguenti:
+2. Nella pagina delle proprietà del gruppo di ruoli che si apre, nella sezione **membri** , eseguire una delle operazioni seguenti:
 
    - Fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) . Nella pagina che viene visualizzata, individuare l'utente che Wou desidera aggiungere, quindi fare clic su **Add->**. Selezionare utenti e fare clic su **Add->** molte volte, se necessario. Al termine, fare clic su **OK**.
 

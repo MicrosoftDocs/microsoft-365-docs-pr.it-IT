@@ -6,21 +6,21 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori (noti anche come Intelligence del flusso di posta).
-ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206617"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827714"
 ---
-# <a name="mail-flow-intelligence-in-eop"></a>Intelligence del flusso di posta in EOP
+# <a name="mail-flow-intelligence-in-eop"></a>Intelligence del flusso di posta in Exchange Online Protection
 
 In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, si utilizza in genere un connettore per instradare i messaggi di posta elettronica da EOP all'ambiente di posta elettronica locale. È inoltre possibile utilizzare un connettore per instradare i messaggi da Microsoft 365 a un'organizzazione partner. Quando Microsoft 365 non è in grado di recapitare questi messaggi tramite il connettore, vengono accodati in Microsoft 365. Microsoft 365 continuerà a riprovare il recapito per ogni messaggio per 24 ore. Dopo 24 ore, il messaggio in coda scadrà e il messaggio verrà restituito al mittente originale in un rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo).
 
@@ -74,7 +74,7 @@ In genere, questo errore indica che Microsoft 365 ha riscontrato un errore di co
 
        - Eliminare il connettore facendo clic su **Elimina** ![ icona Rimuovi](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Disabilitare il connettore facendo clic su **modifica** ![ icona modifica ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) e deselezionando **attiva**.
+       - Disabilitare il connettore facendo clic su **modifica** ![ icona modifica ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) e deselezionando **attivarlo**.
 
   - Modificare il dominio accettato in Microsoft 365 associato all'ambiente di posta elettronica locale dall' **inoltro interno** a **autorevole**. Per istruzioni, vedere [Manage Accepted Domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 

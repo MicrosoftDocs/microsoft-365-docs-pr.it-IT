@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono sapere in che modo lo ZAP (zero-hour auto Purge) può spostare con effetto retroattivo i messaggi recapitati in una cassetta postale di Exchange Online nella cartella posta indesiderata o in quarantena che sono stati rilevati con effetto retroattivo come spam o phishing.
-ms.openlocfilehash: 612ef45194fbf70ef89eee0f455b2d4d8781247f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9096486ed98657fede7927089592c92fffdad70e
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819425"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826698"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Zero-hour auto Purge (ZAP) in Exchange Online
 
@@ -80,7 +80,7 @@ Per ulteriori informazioni sulla configurazione dei verdetti del filtro della po
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Considerazioni su ZAP per Office 365 Advanced Threat Protection (Office 365 ATP)
 
-ZAP non consentirà di mettere in quarantena alcun messaggio che sia nel processo di analisi del [recapito dinamico](dynamic-delivery-and-previewing.md) o in cui il filtro antimalware abbia già sostituito l'allegato con il file **Text.txtdi avviso antimalware** . Se si riceve un segnale di phishing o di posta indesiderata per questi tipi di messaggi e il verdetto del filtro nei criteri di protezione da posta indesiderata è impostato per eseguire alcune operazioni sul messaggio (spostamento in posta indesiderata, reindirizzamento, eliminazione, quarantena), per impostazione predefinita, il comando ZAP passerà all'azione "sposta in spazzatura".
+ZAP non consentirà di mettere in quarantena alcun messaggio che sia nel processo di analisi del [recapito dinamico](dynamic-delivery-and-previewing.md) o in cui il filtro antimalware abbia già sostituito l'allegato con il file **Text.txtdi avviso antimalware ** . Se si riceve un segnale di phishing o di posta indesiderata per questi tipi di messaggi e il verdetto del filtro nei criteri di protezione da posta indesiderata è impostato per eseguire alcune operazioni sul messaggio (spostamento in posta indesiderata, reindirizzamento, eliminazione, quarantena), per impostazione predefinita, il comando ZAP passerà all'azione "sposta in spazzatura".
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Come vedere se ZAP ha spostato il messaggio
 

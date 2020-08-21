@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Per ulteriori informazioni sui domini, è possibile trovare le risposte alle domande più frequenti.
-ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: fe602c45059be1b273b7ebe3a11cd91adf89a479
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804197"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845845"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
@@ -52,7 +52,7 @@ In questo articolo
 - [Cosa succede se il provider DNS non supporta alcuni tipi di record?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [Come impostare o modificare il dominio predefinito in Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [È possibile aggiungere sottodomini personalizzati o più domini a Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
-- [Come si trasferisce un dominio da Microsoft 365 a un altro host?]
+- [Come si trasferisce un dominio da Microsoft 365 a un altro host?](#how-do-i-transfer-a-domain-from-microsoft-365-to-another-host)
 - [Perché è presente un dominio "onmicrosoft.com"?](#why-do-i-have-an-onmicrosoftcom-domain)
 - [Perché è presente un dominio "onmicrosoft.de"?](#why-do-i-have-an-onmicrosoftde-domain)
 - [Come verificare lo stato dell'istruzione o dell'organizzazione no profit](#how-do-i-verify-my-nonprofit-or-education-status)
@@ -200,7 +200,7 @@ Quando si aggiungono più domini a Microsoft 365, è possibile ospitare uno qual
 
 Per la procedura per il trasferimento di un dominio, vedere [trasferire un dominio da Microsoft a un altro host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
 
-## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Eseguire il pilota Microsoft 365 dal dominio personalizzato
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Pilotare Microsoft 365 dal dominio personalizzato
 
 Per la procedura per pilotare la funzionalità di posta elettronica Microsoft 365 da un dominio personalizzato a una cassetta postale di Microsoft 365, vedere [Pilot microsoft 365 from My Custom Domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 

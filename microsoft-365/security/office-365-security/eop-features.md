@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
-ms.openlocfilehash: 5a882edd91e8502d7340bf86f74e8114be9cd07b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 0df2f9afa8be6feba6734d2b07e7b7de5c13c994
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652874"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827774"
 ---
 # <a name="eop-features"></a>Funzionalità di Exchange Online Protection
 
@@ -85,8 +85,8 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |Rapporti basati su Web|I rapporti di protezione della posta elettronica nel centro sicurezza & Compliance forniscono i dati di messaggistica. Ad esempio, è possibile monitorare la quantità di posta indesiderata e malware rilevati o la frequenza con cui vengono confrontate le regole del flusso di posta. Grazie a questi rapporti interattivi, è possibile ottenere rapidamente un rapporto visivo dei dati di riepilogo e visualizzare i dettagli dei singoli messaggi, risalendo fino a 90 giorni addietro. Per ulteriori informazioni, vedere [Use Mail Protection reports to view data about malware, spam, and Rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|
 |Registrazione di controllo|Il report di un gruppo di ruoli amministratore e il log di controllo di amministratore sono disponibili per gli amministratori di EOP. Per ulteriori informazioni, vedere [Report di controllo in EOP](auditing-reports-in-eop.md).  |
 |**Contratti di servizio e supporto**||
-|SLA di efficienza spam|\>99%|
-|SLA rapporto falsi positivi|\<1:250000|
+|SLA di efficienza spam|\> 99%|
+|SLA rapporto falsi positivi|\< 1:250000|
 |SLA rilevamento e blocco dei virus|100% dei virus noti|
 |SLA uptime mensili|99.999%|
 |Assistenza tecnica telefonica e Web 7 giorni su 7, 24 ore su 24|Per ulteriori informazioni sulle opzioni di supporto e la guida di EOP, vedere [Guida e supporto tecnico per EOP](help-and-support-for-eop.md).|

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come mittente esterno, come è possibile aumentare la possibilità di inviare messaggi di posta elettronica agli utenti in Microsoft 365. Vengono inoltre fornite informazioni su come segnalare la posta indesiderata & tentativi di phishing come utenti esterni.
-ms.openlocfilehash: 76fc376d32904b5cb61080e88a38a1dda815836f
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f20d5d64bccb69db47c159a8166fa3532b51e3db
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652766"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825186"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Invio di posta elettronica a Microsoft 365
 

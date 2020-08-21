@@ -1,5 +1,5 @@
 ---
-title: FIX Insight delle regole del flusso di posta lenta
+title: Correggere informazioni dettagliate sulle regole del flusso di posta lento
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni su come utilizzare le & regole del flusso di posta indesiderata per identificare e correggere le regole del flusso di posta inefficienti o interrotte (note anche come regole di trasporto) nell'organizzazione.
-ms.openlocfilehash: bb1c09c2809260be8086059259a1aeec3f1fb3eb
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 6319633c47e34d7b62c4f68bfbda7fe298c0deb3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577167"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826882"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Fix Slow Mail Flow Rules Insight nel centro sicurezza & Compliance
 

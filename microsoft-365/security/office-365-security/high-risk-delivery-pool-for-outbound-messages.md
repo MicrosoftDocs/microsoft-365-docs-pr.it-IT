@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come vengono utilizzati i pool di recapito per proteggere la reputazione dei server di posta elettronica nei data center di Microsoft 365.
-ms.openlocfilehash: 213149eda3dd121b65b64e3bddbb4bd73d66f57c
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 83ea21a9230240f1339513efc75587f3d84733cb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419161"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827738"
 ---
 # <a name="outbound-delivery-pools"></a>Pool di recapito in uscita
 
@@ -56,6 +56,6 @@ Tutti questi problemi possono portare a un improvviso aumento del numero di rapp
 
 ## <a name="relay-pool"></a>Pool di inoltro
 
-I messaggi inoltrati o inoltrati da Microsoft 365 vengono inviati utilizzando un pool di inoltro speciale, poiché la destinazione finale non deve considerare Microsoft 365 come il mittente effettivo. È inoltre importante isolare questo traffico, perché esistono scenari legittimi e illegitmate per l'inoltro o la trasmissione di messaggi di posta elettronica da Microsoft 365. Analogamente al pool di recapito ad alto rischio, viene utilizzato un pool di indirizzi IP separato per la posta inoltrata. Questo pool di indirizzi non viene pubblicato poiché può essere modificato spesso. 
+I messaggi inoltrati o inoltrati da Microsoft 365 vengono inviati utilizzando un pool di inoltro speciale, poiché la destinazione finale non deve considerare Microsoft 365 come il mittente effettivo. È inoltre importante isolare questo traffico, perché esistono scenari legittimi e non validi per l'inoltro o l'inoltro di messaggi di posta elettronica da Microsoft 365. Analogamente al pool di recapito ad alto rischio, viene utilizzato un pool di indirizzi IP separato per la posta inoltrata. Questo pool di indirizzi non viene pubblicato poiché può essere modificato spesso.
 
 Microsoft 365 deve verificare che il mittente originale sia legittimo in modo che sia possibile recapitare con sicurezza il messaggio inoltrato. Per farlo, l'autenticazione della posta elettronica (SPF, DKIM e DMARC) deve passare quando il messaggio viene a noi. Nei casi in cui è possibile eseguire l'autenticazione del mittente, viene utilizzata la riscrittura del mittente per consentire al destinatario di sapere che il messaggio inoltrato è proveniente da un'origine attendibile. Per ulteriori informazioni su come funziona e sulle operazioni che è possibile eseguire per assicurarsi che il dominio di invio passi l'autenticazione nello [schema di riscrittura del mittente (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme).
