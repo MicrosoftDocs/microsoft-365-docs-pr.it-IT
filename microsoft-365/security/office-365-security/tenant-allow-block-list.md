@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come configurare le voci URL nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance.
-ms.openlocfilehash: 5ff34cca922f18a015bd9da847facc8177cf8790
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552551"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845943"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gestire gli URL nell'elenco Consenti/blocca tenant
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gestire URL e file nell'elenco di tenant consentiti/bloccati
 
 > [!NOTE]
 > Le funzionalità descritte in questo argomento sono in anteprima, sono soggette a modifiche e non sono disponibili in tutte le organizzazioni.
@@ -33,7 +33,7 @@ L'elenco Consenti/blocca tenant nel centro sicurezza & conformità consente di i
 
 In questo argomento viene descritto come configurare le voci nell'elenco Consenti/blocca tenant nel centro sicurezza & Compliance o in PowerShell (Exchange Online PowerShell per le organizzazioni Microsoft 365 con le cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per accedere direttamente alla pagina dell' **elenco Consenti/blocca tenant** , utilizzare <https://protection.office.com/tenantAllowBlockList> .
 
@@ -257,7 +257,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Remove-Tena
 
     Ad esempio, `contoso.com/*` non include `contoso.com/a` .
 
-  - `*.com*`non è valido (non è un dominio risolvibile e il carattere jolly destro non segue una barra).
+  - `*.com*` non è valido (non è un dominio risolvibile e il carattere jolly destro non segue una barra).
 
   - I caratteri jolly non sono consentiti negli indirizzi IP.
 
@@ -281,7 +281,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
 
 #### <a name="scenario-no-wildcards"></a>Scenario: nessun carattere jolly
 
-**Voce**:`contoso.com`
+**Voce**: `contoso.com`
 
 - **Consenti corrispondenza**: contoso.com
 
@@ -309,7 +309,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Scenario: carattere jolly sinistro (sottodominio)
 
-**Voce**:`*.contoso.com`
+**Voce**: `*.contoso.com`
 
 - **Consenti** corrispondenza e **blocca corrispondenza**:
 
@@ -325,7 +325,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
   
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>Scenario: carattere jolly destro nella parte superiore del percorso
 
-**Voce**:`contoso.com/a/*`
+**Voce**: `contoso.com/a/*`
 
 - **Consenti** corrispondenza e **blocca corrispondenza**:
 
@@ -342,7 +342,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
   
 #### <a name="scenario-left-tilde"></a>Scenario: tilde sinistra
 
-**Voce**:`~contoso.com`
+**Voce**: `~contoso.com`
 
 - **Consenti** corrispondenza e **blocca corrispondenza**:
 
@@ -358,7 +358,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
 
 #### <a name="scenario-right-wildcard-suffix"></a>Scenario: suffisso con caratteri jolly giusti
 
-**Voce**:`contoso.com/*`
+**Voce**: `contoso.com/*`
 
 - **Consenti** corrispondenza e **blocca corrispondenza**:
 
@@ -374,7 +374,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Scenario: sottodominio con caratteri jolly sinistro e suffisso con caratteri jolly destro
 
-**Voce**:`*.contoso.com/*`
+**Voce**: `*.contoso.com/*`
 
 - **Consenti** corrispondenza e **blocca corrispondenza**:
 
@@ -388,7 +388,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
 
 #### <a name="scenario-left-and-right-tilde"></a>Scenario: tilde sinistro e destro
 
-**Voce**:`~contoso.com~`
+**Voce**: `~contoso.com~`
 
 - **Consenti** corrispondenza e **blocca corrispondenza**:
 
@@ -405,7 +405,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
 
 #### <a name="scenario-ip-address"></a>Scenario: indirizzo IP
 
-**Voce**:`1.2.3.4`
+**Voce**: `1.2.3.4`
 
 - **Consenti** corrispondenza e **blocca corrispondenza**: 1.2.3.4
 
@@ -416,7 +416,7 @@ Le voci URL valide e i relativi risultati sono descritte nelle sezioni seguenti.
 
 #### <a name="ip-address-with-right-wildcard"></a>Indirizzo IP con carattere jolly destro
 
-**Voce**:`1.2.3.4/*`
+**Voce**: `1.2.3.4/*`
 
 - **Consenti** corrispondenza e **blocca corrispondenza**:
 
