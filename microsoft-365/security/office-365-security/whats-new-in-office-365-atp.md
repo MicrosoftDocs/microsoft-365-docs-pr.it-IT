@@ -15,88 +15,93 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/23/2020
+ms.date: 08/20/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92ad1b644dd0b3cac04657d01f70cfb274b7e517
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 39ef79f685c216732aa1e3e0ccb28a4ab6e2b07a
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391555"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845857"
 ---
-# <a name="whats-new-in-office-365-atp"></a><span data-ttu-id="37e63-104">Novità di Office 365 ATP</span><span class="sxs-lookup"><span data-stu-id="37e63-104">What's new in Office 365 ATP</span></span>
+# <a name="whats-new-in-office-365-atp"></a><span data-ttu-id="4c6fa-104">Novità di Office 365 ATP</span><span class="sxs-lookup"><span data-stu-id="4c6fa-104">What's new in Office 365 ATP</span></span>
 
-<span data-ttu-id="37e63-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="37e63-105">**Applies to:**</span></span>
+<span data-ttu-id="4c6fa-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="4c6fa-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="37e63-106">Office 365 Advanced Threat Protection (Office 365 ATP)</span><span class="sxs-lookup"><span data-stu-id="37e63-106">Office 365 Advanced Threat Protection (Office 365 ATP)</span></span>](office-365-atp.md)
+- [<span data-ttu-id="4c6fa-106">Office 365 Advanced Threat Protection (Office 365 ATP)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-106">Office 365 Advanced Threat Protection (Office 365 ATP)</span></span>](office-365-atp.md)
 
-<span data-ttu-id="37e63-107">In questo articolo vengono elencate le nuove funzionalità nell'ultima versione di Office 365 ATP.</span><span class="sxs-lookup"><span data-stu-id="37e63-107">This article lists new features in the latest release of Office 365 ATP.</span></span> <span data-ttu-id="37e63-108">Le caratteristiche attualmente in anteprima sono denotate con **(Preview)**.</span><span class="sxs-lookup"><span data-stu-id="37e63-108">Features that are currently in preview are denoted with **(preview)**.</span></span>
+<span data-ttu-id="4c6fa-107">In questo articolo vengono elencate le nuove funzionalità nell'ultima versione di Office 365 ATP.</span><span class="sxs-lookup"><span data-stu-id="4c6fa-107">This article lists new features in the latest release of Office 365 ATP.</span></span> <span data-ttu-id="4c6fa-108">Le caratteristiche attualmente in anteprima sono denotate con **(Preview)**.</span><span class="sxs-lookup"><span data-stu-id="4c6fa-108">Features that are currently in preview are denoted with **(preview)**.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="37e63-109">Non si dispone ancora di Office 365 ATP?</span><span class="sxs-lookup"><span data-stu-id="37e63-109">Don't have Office 365 ATP yet?</span></span> <span data-ttu-id="37e63-110">[Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644).</span><span class="sxs-lookup"><span data-stu-id="37e63-110">[Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).</span></span>
+> <span data-ttu-id="4c6fa-109">Non si dispone ancora di Office 365 ATP?</span><span class="sxs-lookup"><span data-stu-id="4c6fa-109">Don't have Office 365 ATP yet?</span></span> <span data-ttu-id="4c6fa-110">[Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644).</span><span class="sxs-lookup"><span data-stu-id="4c6fa-110">[Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).</span></span>
 
-## <a name="julyaugust-2020"></a><span data-ttu-id="37e63-111">Luglio/agosto 2020</span><span class="sxs-lookup"><span data-stu-id="37e63-111">July/August 2020</span></span> 
+## <a name="septemberoctober-2020"></a><span data-ttu-id="4c6fa-111">Settembre/ottobre 2020</span><span class="sxs-lookup"><span data-stu-id="4c6fa-111">September/October 2020</span></span> 
 
-- [<span data-ttu-id="37e63-112">Miglioramenti dell'esperienza di caccia</span><span class="sxs-lookup"><span data-stu-id="37e63-112">Experience improvements to the hunting experience</span></span>](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-- [<span data-ttu-id="37e63-113">Applicare facilmente le impostazioni consigliate utilizzando i criteri di sicurezza predefiniti</span><span class="sxs-lookup"><span data-stu-id="37e63-113">Easily apply recommended settings using preset security policies</span></span>](preset-security-policies.md)
+- [<span data-ttu-id="4c6fa-112">Controllare i criteri utilizzando l'analizzatore di configurazione</span><span class="sxs-lookup"><span data-stu-id="4c6fa-112">Check your policies using Configuration Analyzer</span></span>](configuration-analyzer-for-security-policies.md)
+- [<span data-ttu-id="4c6fa-113">Sostituisci manualmente i verdetti del filtro utilizzando l'elenco Consenti/blocca tenant</span><span class="sxs-lookup"><span data-stu-id="4c6fa-113">Manually override filter verdicts using the tenant allow/block list</span></span>](tenant-allow-block-list.md)
 
-## <a name="marchapril-2020"></a><span data-ttu-id="37e63-114">Marzo/aprile 2020</span><span class="sxs-lookup"><span data-stu-id="37e63-114">March/April 2020</span></span>
+## <a name="julyaugust-2020"></a><span data-ttu-id="4c6fa-114">Luglio/agosto 2020</span><span class="sxs-lookup"><span data-stu-id="4c6fa-114">July/August 2020</span></span> 
 
-- <span data-ttu-id="37e63-115">La possibilità di [gestire gli account utente compromessi con l'analisi e la risposta automatizzata](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) è ora generalmente disponibile.</span><span class="sxs-lookup"><span data-stu-id="37e63-115">The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.</span></span>
+- [<span data-ttu-id="4c6fa-115">Miglioramenti dell'esperienza di caccia</span><span class="sxs-lookup"><span data-stu-id="4c6fa-115">Experience improvements to the hunting experience</span></span>](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [<span data-ttu-id="4c6fa-116">Applicare facilmente le impostazioni consigliate utilizzando i criteri di sicurezza predefiniti</span><span class="sxs-lookup"><span data-stu-id="4c6fa-116">Easily apply recommended settings using preset security policies</span></span>](preset-security-policies.md)
 
-## <a name="januaryfebruary-2020"></a><span data-ttu-id="37e63-116">Gennaio/febbraio 2020</span><span class="sxs-lookup"><span data-stu-id="37e63-116">January/February 2020</span></span>
+## <a name="marchapril-2020"></a><span data-ttu-id="4c6fa-117">Marzo/aprile 2020</span><span class="sxs-lookup"><span data-stu-id="4c6fa-117">March/April 2020</span></span>
 
-- [<span data-ttu-id="37e63-117">Disponibilità generale delle visualizzazioni della campagna in Office 365 ATP</span><span class="sxs-lookup"><span data-stu-id="37e63-117">General availability of Campaign Views in Office 365 ATP</span></span>](campaigns.md)
-- <span data-ttu-id="37e63-118">Miglioramenti apportati a [Threat Explorer](threat-explorer.md) per consentire ai team di operazioni di sicurezza di eseguire ricerche e filtrare su più campi durante l' [analisi della posta elettronica](investigate-malicious-email-that-was-delivered.md):</span><span class="sxs-lookup"><span data-stu-id="37e63-118">Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):</span></span>
-    - <span data-ttu-id="37e63-119">Percorso di recapito e azioni speciali</span><span class="sxs-lookup"><span data-stu-id="37e63-119">Delivery location and special actions</span></span>
-    - <span data-ttu-id="37e63-120">Direzionalità (in ingresso, in uscita o intra-org)</span><span class="sxs-lookup"><span data-stu-id="37e63-120">Directionality (inbound, outbound, or intra-org)</span></span>
-    - <span data-ttu-id="37e63-121">Sostituzioni (blocco o autorizzazione dell'utente)</span><span class="sxs-lookup"><span data-stu-id="37e63-121">Overrides (user blocking or allowing)</span></span>
-    - <span data-ttu-id="37e63-122">Minaccia per gli URL (malware, phishing, spam o None)</span><span class="sxs-lookup"><span data-stu-id="37e63-122">URL threat (malware, phish, spam, or none)</span></span>
-    - <span data-ttu-id="37e63-123">Advanced NOT Filters (queste sono le opzioni di filtro avanzate che includono non contiene, non include, ecc.)</span><span class="sxs-lookup"><span data-stu-id="37e63-123">Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)</span></span>
-    - <span data-ttu-id="37e63-124">Filtri temporali granulari (giorno, ora, mezz'ora)</span><span class="sxs-lookup"><span data-stu-id="37e63-124">Granular time filters (day, hour, half-hour)</span></span> 
+- <span data-ttu-id="4c6fa-118">La possibilità di [gestire gli account utente compromessi con l'analisi e la risposta automatizzata](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) è ora generalmente disponibile.</span><span class="sxs-lookup"><span data-stu-id="4c6fa-118">The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.</span></span>
 
-- <span data-ttu-id="37e63-125">Il widget **eventi** non consentiti è ora il widget **Centro azioni** .</span><span class="sxs-lookup"><span data-stu-id="37e63-125">The **Incidents** widget is now the **Action Center** widget.</span></span> <span data-ttu-id="37e63-126">Per visualizzare i widget di sicurezza, nel centro sicurezza & conformità, accedere a **gestione minacce**  >  **Revisione**.)</span><span class="sxs-lookup"><span data-stu-id="37e63-126">(To view your security widgets, in the Security & Compliance Center, go to **Threat management** > **Review**.)</span></span>
+## <a name="januaryfebruary-2020"></a><span data-ttu-id="4c6fa-119">Gennaio/febbraio 2020</span><span class="sxs-lookup"><span data-stu-id="4c6fa-119">January/February 2020</span></span>
 
-- <span data-ttu-id="37e63-127">[Documenti attendibili in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(anteprima)**</span><span class="sxs-lookup"><span data-stu-id="37e63-127">[Safe Documents in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**</span></span>
+- [<span data-ttu-id="4c6fa-120">Disponibilità generale delle visualizzazioni della campagna in Office 365 ATP</span><span class="sxs-lookup"><span data-stu-id="4c6fa-120">General availability of Campaign Views in Office 365 ATP</span></span>](campaigns.md)
+- <span data-ttu-id="4c6fa-121">Miglioramenti apportati a [Threat Explorer](threat-explorer.md) per consentire ai team di operazioni di sicurezza di eseguire ricerche e filtrare su più campi durante l' [analisi della posta elettronica](investigate-malicious-email-that-was-delivered.md):</span><span class="sxs-lookup"><span data-stu-id="4c6fa-121">Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):</span></span>
+    - <span data-ttu-id="4c6fa-122">Percorso di recapito e azioni speciali</span><span class="sxs-lookup"><span data-stu-id="4c6fa-122">Delivery location and special actions</span></span>
+    - <span data-ttu-id="4c6fa-123">Direzionalità (in ingresso, in uscita o intra-org)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-123">Directionality (inbound, outbound, or intra-org)</span></span>
+    - <span data-ttu-id="4c6fa-124">Sostituzioni (blocco o autorizzazione dell'utente)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-124">Overrides (user blocking or allowing)</span></span>
+    - <span data-ttu-id="4c6fa-125">Minaccia per gli URL (malware, phishing, spam o None)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-125">URL threat (malware, phish, spam, or none)</span></span>
+    - <span data-ttu-id="4c6fa-126">Advanced NOT Filters (queste sono le opzioni di filtro avanzate che includono non contiene, non include, ecc.)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-126">Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)</span></span>
+    - <span data-ttu-id="4c6fa-127">Filtri temporali granulari (giorno, ora, mezz'ora)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-127">Granular time filters (day, hour, half-hour)</span></span> 
 
-## <a name="december-2019"></a><span data-ttu-id="37e63-128">Dicembre 2019</span><span class="sxs-lookup"><span data-stu-id="37e63-128">December 2019</span></span>
+- <span data-ttu-id="4c6fa-128">Il widget **eventi** non consentiti è ora il widget **Centro azioni** .</span><span class="sxs-lookup"><span data-stu-id="4c6fa-128">The **Incidents** widget is now the **Action Center** widget.</span></span> <span data-ttu-id="4c6fa-129">Per visualizzare i widget di sicurezza, nel centro sicurezza & conformità, accedere a **gestione minacce**  >  **Revisione**.)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-129">(To view your security widgets, in the Security & Compliance Center, go to **Threat management** > **Review**.)</span></span>
 
-- <span data-ttu-id="37e63-129">[Esportare i dati di clic su URL per l'analisi offline](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP piano 1 o piano 2)</span><span class="sxs-lookup"><span data-stu-id="37e63-129">[Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)</span></span>
+- <span data-ttu-id="4c6fa-130">[Documenti attendibili in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(anteprima)**</span><span class="sxs-lookup"><span data-stu-id="4c6fa-130">[Safe Documents in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**</span></span>
 
-- [<span data-ttu-id="37e63-130">Utilizzare le visualizzazioni della campagna in Office 365 ATP (**Anteprima**)</span><span class="sxs-lookup"><span data-stu-id="37e63-130">Use Campaign Views in Office 365 ATP (**preview**)</span></span>](campaigns.md)
+## <a name="december-2019"></a><span data-ttu-id="4c6fa-131">Dicembre 2019</span><span class="sxs-lookup"><span data-stu-id="4c6fa-131">December 2019</span></span>
 
-## <a name="november-2019"></a><span data-ttu-id="37e63-131">Novembre 2019</span><span class="sxs-lookup"><span data-stu-id="37e63-131">November 2019</span></span>
+- <span data-ttu-id="4c6fa-132">[Esportare i dati di clic su URL per l'analisi offline](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP piano 1 o piano 2)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-132">[Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)</span></span>
 
-- <span data-ttu-id="37e63-132">[Consultare le nuove funzionalità di rilevamento e risposta degli utenti compromesse](address-compromised-users-quickly.md) (**Preview**) (Office 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="37e63-132">[Check out new compromised user detection and response capabilities](address-compromised-users-quickly.md) (**preview**) (Office 365 ATP Plan 2)</span></span>
+- [<span data-ttu-id="4c6fa-133">Utilizzare le visualizzazioni della campagna in Office 365 ATP (**Anteprima**)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-133">Use Campaign Views in Office 365 ATP (**preview**)</span></span>](campaigns.md)
 
-## <a name="september-2019"></a><span data-ttu-id="37e63-133">Settembre 2019</span><span class="sxs-lookup"><span data-stu-id="37e63-133">September 2019</span></span>
+## <a name="november-2019"></a><span data-ttu-id="4c6fa-134">Novembre 2019</span><span class="sxs-lookup"><span data-stu-id="4c6fa-134">November 2019</span></span>
 
-- <span data-ttu-id="37e63-134">[Utilizzare le funzionalità di analisi e risposta automatizzate](automated-investigation-response-office.md) (Office 365 ATP piano 2)</span><span class="sxs-lookup"><span data-stu-id="37e63-134">[Employ automated investigation and response capabilities](automated-investigation-response-office.md) (Office 365 ATP Plan 2)</span></span>
+- <span data-ttu-id="4c6fa-135">[Consultare le nuove funzionalità di rilevamento e risposta degli utenti compromesse](address-compromised-users-quickly.md) (**Preview**) (Office 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-135">[Check out new compromised user detection and response capabilities](address-compromised-users-quickly.md) (**preview**) (Office 365 ATP Plan 2)</span></span>
 
-- <span data-ttu-id="37e63-135">[Integrazione con gli eventi di risposta e analisi automatizzati di office 365 ATP tramite l'API di attività di gestione](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) di Office 365 (Office 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="37e63-135">[Integrate with Office 365 ATP automated investigation and response events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)</span></span>
+## <a name="september-2019"></a><span data-ttu-id="4c6fa-136">Settembre 2019</span><span class="sxs-lookup"><span data-stu-id="4c6fa-136">September 2019</span></span>
 
-- <span data-ttu-id="37e63-136">[Visualizzare le intestazioni di posta elettronica e scaricare il corpo del messaggio di posta elettronica](investigate-malicious-email-that-was-delivered.md) (Office 365 ATP piano 1 o piano 2)</span><span class="sxs-lookup"><span data-stu-id="37e63-136">[View the email headers and download the email body](investigate-malicious-email-that-was-delivered.md) (Office 365 ATP Plan 1 or Plan 2)</span></span>
+- <span data-ttu-id="4c6fa-137">[Utilizzare le funzionalità di analisi e risposta automatizzate](automated-investigation-response-office.md) (Office 365 ATP piano 2)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-137">[Employ automated investigation and response capabilities](automated-investigation-response-office.md) (Office 365 ATP Plan 2)</span></span>
 
-## <a name="august-2019"></a><span data-ttu-id="37e63-137">Agosto 2019</span><span class="sxs-lookup"><span data-stu-id="37e63-137">August 2019</span></span>
+- <span data-ttu-id="4c6fa-138">[Integrazione con gli eventi di risposta e analisi automatizzati di office 365 ATP tramite l'API di attività di gestione](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) di Office 365 (Office 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-138">[Integrate with Office 365 ATP automated investigation and response events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)</span></span>
 
-- <span data-ttu-id="37e63-138">[Visualizzare la cronologia della posta elettronica](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP piano 1 o piano 2)</span><span class="sxs-lookup"><span data-stu-id="37e63-138">[View the timeline of email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP Plan 1 or Plan 2)</span></span>
+- <span data-ttu-id="4c6fa-139">[Visualizzare le intestazioni di posta elettronica e scaricare il corpo del messaggio di posta elettronica](investigate-malicious-email-that-was-delivered.md) (Office 365 ATP piano 1 o piano 2)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-139">[View the email headers and download the email body](investigate-malicious-email-that-was-delivered.md) (Office 365 ATP Plan 1 or Plan 2)</span></span>
 
-## <a name="july-2019"></a><span data-ttu-id="37e63-139">Luglio 2019</span><span class="sxs-lookup"><span data-stu-id="37e63-139">July 2019</span></span>
+## <a name="august-2019"></a><span data-ttu-id="4c6fa-140">Agosto 2019</span><span class="sxs-lookup"><span data-stu-id="4c6fa-140">August 2019</span></span>
 
-- <span data-ttu-id="37e63-140">[Controllare l'azione di recapito e la posizione dei messaggi di posta elettronica](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Office 365 ATP piano 1 o 2)</span><span class="sxs-lookup"><span data-stu-id="37e63-140">[Check the delivery action and location of email messages](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Office 365 ATP Plan 1 or 2)</span></span>
+- <span data-ttu-id="4c6fa-141">[Visualizzare la cronologia della posta elettronica](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP piano 1 o piano 2)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-141">[View the timeline of email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP Plan 1 or Plan 2)</span></span>
 
-## <a name="june-2019"></a><span data-ttu-id="37e63-141">Giugno 2019</span><span class="sxs-lookup"><span data-stu-id="37e63-141">June 2019</span></span>
+## <a name="july-2019"></a><span data-ttu-id="4c6fa-142">Luglio 2019</span><span class="sxs-lookup"><span data-stu-id="4c6fa-142">July 2019</span></span>
 
-- <span data-ttu-id="37e63-142">[Visualizzare i dati relativi agli URL di phishing e fare clic su Verdet](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP piano 1 o piano 2)</span><span class="sxs-lookup"><span data-stu-id="37e63-142">[View data about phishing URLs and click verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP Plan 1 or Plan 2)</span></span>
+- <span data-ttu-id="4c6fa-143">[Controllare l'azione di recapito e la posizione dei messaggi di posta elettronica](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Office 365 ATP piano 1 o 2)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-143">[Check the delivery action and location of email messages](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Office 365 ATP Plan 1 or 2)</span></span>
 
-## <a name="office-365-atp-plan-1-and-plan-2"></a><span data-ttu-id="37e63-143">Office 365 ATP - Piano 1 e Piano 2</span><span class="sxs-lookup"><span data-stu-id="37e63-143">Office 365 ATP Plan 1 and Plan 2</span></span>
+## <a name="june-2019"></a><span data-ttu-id="4c6fa-144">Giugno 2019</span><span class="sxs-lookup"><span data-stu-id="4c6fa-144">June 2019</span></span>
 
-<span data-ttu-id="37e63-144">Lo sapevate che Office 365 ATP è disponibile in due piani?</span><span class="sxs-lookup"><span data-stu-id="37e63-144">Did you know that Office 365 ATP is available in two plans?</span></span> <span data-ttu-id="37e63-145">Ulteriori [informazioni su ciò che include ogni piano](office-365-atp.md#office-365-atp-plan-1-and-plan-2).</span><span class="sxs-lookup"><span data-stu-id="37e63-145">[Learn more about what each plan includes](office-365-atp.md#office-365-atp-plan-1-and-plan-2).</span></span>
+- <span data-ttu-id="4c6fa-145">[Visualizzare i dati relativi agli URL di phishing e fare clic su Verdet](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP piano 1 o piano 2)</span><span class="sxs-lookup"><span data-stu-id="4c6fa-145">[View data about phishing URLs and click verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP Plan 1 or Plan 2)</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="37e63-146">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="37e63-146">See also</span></span>
+## <a name="office-365-atp-plan-1-and-plan-2"></a><span data-ttu-id="4c6fa-146">Office 365 ATP - Piano 1 e Piano 2</span><span class="sxs-lookup"><span data-stu-id="4c6fa-146">Office 365 ATP Plan 1 and Plan 2</span></span>
 
-[<span data-ttu-id="37e63-147">Roadmap di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="37e63-147">Microsoft 365 roadmap</span></span>](https://www.microsoft.com/microsoft-365/roadmap)
+<span data-ttu-id="4c6fa-147">Lo sapevate che Office 365 ATP è disponibile in due piani?</span><span class="sxs-lookup"><span data-stu-id="4c6fa-147">Did you know that Office 365 ATP is available in two plans?</span></span> <span data-ttu-id="4c6fa-148">Ulteriori [informazioni su ciò che include ogni piano](office-365-atp.md#office-365-atp-plan-1-and-plan-2).</span><span class="sxs-lookup"><span data-stu-id="4c6fa-148">[Learn more about what each plan includes](office-365-atp.md#office-365-atp-plan-1-and-plan-2).</span></span>
 
-[<span data-ttu-id="37e63-148">Descrizione del servizio ATP di Office 365</span><span class="sxs-lookup"><span data-stu-id="37e63-148">Office 365 ATP Service Description</span></span>](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+## <a name="see-also"></a><span data-ttu-id="4c6fa-149">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="4c6fa-149">See also</span></span>
+
+[<span data-ttu-id="4c6fa-150">Roadmap di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="4c6fa-150">Microsoft 365 roadmap</span></span>](https://www.microsoft.com/microsoft-365/roadmap)
+
+[<span data-ttu-id="4c6fa-151">Descrizione del servizio ATP di Office 365</span><span class="sxs-lookup"><span data-stu-id="4c6fa-151">Office 365 ATP Service Description</span></span>](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 
