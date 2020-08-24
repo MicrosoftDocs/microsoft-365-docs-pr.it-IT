@@ -162,7 +162,7 @@ Un'entità è un tipo di informazione riservata, ad esempio un numero di carta d
 ### <a name="name-the-entity-and-generate-its-guid"></a>Assegnare un nome all'entità e creare il relativo GUID
 <!-- why isn't the following in procedure format? --> Aggiungere gli elementi Rules ed Entity. Quindi aggiungere un commento contenente il nome dell'entità personalizzata, in questo esempio, Employee ID. In un secondo momento, verrà aggiunto il nome dell'entità alla sezione delle stringhe localizzate e tale nome verrà visualizzato nell'interfaccia utente quando si crea un criterio DLP.
   
-A questo punto, generare un GUID per l'entità. Esistono diversi modi per generare i GUID, ma è possibile farlo facilmente in PowerShell digitando **[guid]::NewGuid()**. In un secondo momento, dovrà inoltre essere aggiunto il GUID dell'entità alla sezione delle stringhe localizzate.
+A questo punto, generare un GUID per l'entità. Esistono diversi modi per generare i GUID, ma è possibile farlo facilmente in PowerShell digitando **[guid]::NewGuid()**. Poi bisogna anche aggiungere il GUID dell'entità alla sezione delle stringhe localizzate.
   
 ![Markup XML che mostra gli elementi Rules ed Entity](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
