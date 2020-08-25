@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 7548ab12b72aa75047caa373efe3e7c3eb7c5d31
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778536"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867211"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -35,18 +35,14 @@ Per gestire le recensioni sulla disposizione e verificare che i record siano sta
 
 ### <a name="permissions-for-disposition"></a>Autorizzazioni per la disposizione
 
-Per accedere correttamente alla scheda **disposizione** nel centro conformità di Microsoft 365, è necessario che gli utenti dispongano del ruolo **gestione disposizione** e del ruolo di **controllo di sola visualizzazione** . Anche se il Consiglio standard consiste nell'aggiungere utenti ai gruppi di ruoli predefiniti, in questo caso, è consigliabile creare un nuovo gruppo di ruoli denominato **reviewers Disposition** con questi due ruoli e aggiungere gli utenti a questo gruppo in base alle esigenze. Un singolo gruppo di ruoli per la disposizione consente di ridurre le spese generali di amministrazione e rende più semplice per gli utenti le autorizzazioni combinate di cui hanno bisogno.
+Per accedere correttamente alla scheda **disposizione** nel centro conformità di Microsoft 365, è necessario che gli utenti dispongano del ruolo amministratore **gestione disposizione** . Questo ruolo è incluso nei gruppi di ruoli di amministratore predefiniti, nell'amministratore della **conformità** e nell' **amministratore dei dati di conformità**.
+
+Per concedere agli utenti il ruolo di gestione della disposizione necessario, aggiungerli a uno di questi gruppi di ruoli predefiniti oppure creare un gruppo di ruoli personalizzato, ad esempio denominato "revisori disposizione", e concedere a tale gruppo il ruolo di gestione della disposizione.  
 
 > [!NOTE]
-> Anche a un amministratore globale deve essere concesso il ruolo di **gestione della disposizione** . Pertanto, se gli amministratori globali devono accedere alla scheda disposizione, come membri del gruppo di ruolo **revisori disposizione** . 
+> Anche a un amministratore globale deve essere concesso il ruolo di **gestione della disposizione** . 
 
-Specifica del ruolo di **controllo di sola visualizzazione** :
-
-- Poiché il cmdlet sottostante utilizzato per eseguire la ricerca nel log di controllo è un cmdlet di Exchange Online, è necessario assegnare agli utenti questo ruolo utilizzando l'interfaccia di [amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), anziché utilizzando la pagina **autorizzazioni** nel centro sicurezza & conformità. Per istruzioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
-
-- I gruppi Microsoft 365 (in[precedenza gruppi di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) non sono supportati per questo ruolo. Assegnare invece le cassette postali utente, gli utenti di posta elettronica o i gruppi di sicurezza abilitati alla posta elettronica.
-
-Per istruzioni su come concedere agli utenti il ruolo di **gestione della disposizione** e creare il nuovo ruolo **revisori disposizione** , vedere [fornire agli utenti l'accesso al centro sicurezza e &amp; conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Abilitazione del controllo
 

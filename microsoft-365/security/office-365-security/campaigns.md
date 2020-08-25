@@ -1,5 +1,5 @@
 ---
-title: Visualizzazioni della campagna in ATP
+title: Visualizzazioni della campagna nel piano ATP di Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,37 +17,32 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Visualizzazione campagne in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: f0f5d2305b4f17c7018d32eebd155b4ad2d459e7
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825798"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867200"
 ---
-# <a name="campaign-views-in-atp"></a>Visualizzazioni della campagna in ATP
+# <a name="campaign-views-in-office-365-atp"></a>Visualizzazione campagne in Office 365 ATP
 
-La visualizzazione della campagna è una funzionalità di Advanced Threat Protection (ATP) nel centro sicurezza & Compliance che identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
+La visualizzazione della campagna è una funzionalità di Advanced Threat Protection (ATP) piano 2 (ad esempio Microsoft 365 E5 o organizzazioni con un componente aggiuntivo di piano 2 ATP). Le visualizzazioni di campaing nel centro sicurezza & conformità identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
 
 - Analizzare e rispondere in modo efficiente agli attacchi di phishing.
-
 - Comprendere meglio la portata dell'attacco.
-
 - Visualizzare i dettagli dell'attacco.
 
 Visualizzazione campagne fornisce una visione d'insieme di un attacco in maniera più rapida e completa rispetto a un processo manuale.
 
 ## <a name="what-is-a-campaign"></a>Cos'è una campagna?
 
-Una campagna è un attacco coordinato perpetrato tramite posta elettronica contro una o più organizzazioni. Gli attacchi tramite posta elettronica che rubano le credenziali e i dati aziendali rappresentano un settore importante e redditizio. Man mano che le tecnologie aumentano nel tentativo di arrestare gli attacchi, gli aggressori modificano i propri metodi nel tentativo di garantire il successo continuativo.
+Una campagna è un attacco coordinato perpetrato tramite posta elettronica contro una o più organizzazioni. Gli attacchi tramite posta elettronica che rubano le credenziali e i dati aziendali sono un'industria grande e redditizia. Man mano che le tecnologie aumentano nel tentativo di arrestare gli attacchi, gli aggressori modificano i propri metodi nel tentativo di garantire il successo continuativo.
 
 Microsoft sfrutta la vasta quantità di dati antiphishing, di protezione dalla posta indesiderata e antimalware in tutto il servizio per facilitare l'identificazione delle campagne. Vengono analizzate e classificate le informazioni sull'attacco in base a diversi fattori. Ad esempio:
 
 - **Origine attacco**: gli indirizzi IP di origine e i domini di posta elettronica del mittente.
-
-- **Proprietà del messaggio di attacco**: contenuto, stile e tono dei messaggi.
-
-- **Destinatari dell'attacco**: domini dei destinatari, funzione aziendale dei destinatari (amministratori, dirigenti e così via), tipi di azienda (grandi, piccole, pubbliche, private e così via) e settori.
-
+- **Proprietà del messaggio**: contenuto, stile e tono dei messaggi.
+- **Destinatari del messaggio**: modalità di correlazione dei destinatari. Ad esempio, i domini destinatario, le funzioni del processo dei destinatari (amministratori, dirigenti e così via), i tipi di società (grandi, piccoli, pubblici, privati, ecc.) e le industrie.
 - **Payload di attacco**: collegamenti dannosi, allegati o altri payload nei messaggi.
 
 Una campagna potrebbe essere di breve durata, o potrebbe interferire tra diversi giorni, settimane o mesi con periodi attivi e inattivi. Una campagna potrebbe essere avviata con l'organizzazione specifica oppure l'organizzazione potrebbe far parte di una campagna più estesa tra più società.
@@ -85,7 +80,7 @@ La parte restante della pagina Panoramica Visualizza le informazioni seguenti ne
 
 - **Esempio di oggetto**: oggetto di uno dei messaggi della campagna. Tenere presente che tutti i messaggi nella campagna non avranno necessariamente lo stesso oggetto.
 
-- **Targeted**: la percentuale calcolata da: (il numero di destinatari della campagna nell'organizzazione)/(il numero totale di destinatari nella campagna tra tutte le organizzazioni del servizio). Questo valore indica la misura in cui la campagna viene specificatamente indirizzata all'organizzazione (un valore superiore) e indirizzata ad altre organizzazioni del servizio (un valore più basso).
+- **Targeted**: la percentuale calcolata da: (il numero di destinatari della campagna nell'organizzazione)/(il numero totale di destinatari nella campagna tra tutte le organizzazioni del servizio). Questo valore indica la misura in cui la campagna viene indirizzata solo alla propria organizzazione (un valore superiore) e indirizzata anche ad altre organizzazioni del servizio (valore inferiore).
 
 - **Type**: questo valore è **phishing** o **malware**.
 
@@ -103,9 +98,9 @@ Se disponibile, il marchio che viene phishing da questa campagna. Quando il rile
 
 - **Fare clic**su: numero di utenti che hanno fatto clic sull'URL o che hanno aperto l'allegato nel messaggio di phishing.
 
-- **Fare clic su rate**: la percentuale calcolata da "**fare clic su**  /  **posta in arrivo**". Questo valore è un indicatore dell'efficacia della campagna e indica se i destinatari sono stati in grado di identificare il messaggio come phishing ed evitare di fare clic sull'URL del payload.
+- **Fare clic su rate**: la percentuale calcolata da "**fare clic su**  /  **posta in arrivo**". Questo valore è un indicatore dell'efficacia della campagna. In altre parole, se i destinatari sono stati in grado di identificare il messaggio come phishing e se non sono stati fare clic sull'URL payload.
 
-  Si noti che questo valore non viene utilizzato nelle campagne antimalware.
+  Si noti che la **frequenza di clic** non viene utilizzata nelle campagne antimalware.
 
 - **Visitato**: numero di utenti effettivamente apportati al sito Web payload. Se sono presenti valori **cliccati** , ma i collegamenti sicuri impediscono l'accesso al sito Web, questo valore sarà zero.
 
@@ -123,7 +118,7 @@ Per filtrare ulteriormente la visualizzazione, è possibile eseguire una singola
 
 Le proprietà della campagna disponibili sono descritte nell'elenco seguente:
 
-- Base
+- Basic
 
   - **Tipo di campagna**: selezionare **malware** o **phishing**. La cancellazione delle selezioni ha lo stesso risultato della selezione di entrambi.
   - **Nome della campagna**
@@ -194,11 +189,11 @@ Nella parte superiore della visualizzazione dettagli campagna sono disponibili l
   - Il numero di utenti che hanno fatto clic sul payload URL nel messaggio di phishing.
   - Howe molti utenti hanno visitato l'URL.
 
-- **Targeted**: la percentuale calcolata da: (il numero di destinatari della campagna nell'organizzazione)/(il numero totale di destinatari nella campagna tra tutte le organizzazioni del servizio). Si noti che questo valore viene calcolato per tutta la durata della campagna e non modifica le date del filtro.
+- **Targeted**: la percentuale calcolata da: (il numero di destinatari della campagna nell'organizzazione)/(il numero totale di destinatari nella campagna tra tutte le organizzazioni del servizio). Si noti che questo valore viene calcolato per tutta la durata della campagna e non viene modificato in base ai filtri data.
 
 - Una cronologia interattiva delle attività della campagna: la sequenza temporale Visualizza le attività per l'intera durata della campagna. Per impostazione predefinita, l'area ombreggiata include il filtro dell'intervallo di date selezionato nella panoramica. È possibile fare clic e trascinare per selezionare un punto iniziale e un punto finale specifici, <u>che modificheranno i dati visualizzati nell'area di **impatto** e nel resto della pagina come descritto nelle sezioni successive</u>.
 
-Nella barra del titolo, è possibile fare clic sull'icona **download campagna** write-up per scaricare la campagna ![ per scaricare ](../../media/download-campaign-write-up-button.png) i dettagli della campagna in un documento di Word (per impostazione predefinita, denominato CampaignReport.docx). Tenere presente che questo documento contiene informazioni dettagliate sull'intero ciclo di vita della campagna (non solo le date di filtro selezionate).
+Nella barra del titolo, è possibile fare clic sull'icona **download campagna** write-up per scaricare la campagna ![ per scaricare ](../../media/download-campaign-write-up-button.png) i dettagli della campagna in un documento di Word (per impostazione predefinita, denominato CampaignReport.docx). Si noti che il download contiene informazioni dettagliate sull'intero ciclo di vita della campagna (non solo le date di filtro selezionate).
 
 ![Informazioni sulla campagna](../../media/campaign-details-campaign-info.png)
 
@@ -219,29 +214,29 @@ Il diagramma include le seguenti informazioni:
 
 - **Domini mittenti**
 
-- **Verdetti del filtro**: questi valori sono correlati ai verdetti di filtraggio della posta indesiderata e phishing disponibili come descritto nelle intestazioni dei messaggi di protezione dalla [posta indesiderata](anti-spam-message-headers.md). I valori disponibili sono descritti nella tabella seguente:
+- **Verdetti del filtro**: i valori del verdetto sono correlati ai verdetti del filtro antispamming e di phishing disponibili come descritto nelle intestazioni dei messaggi di protezione dalla [posta indesiderata](anti-spam-message-headers.md). I valori disponibili sono descritti nella tabella seguente:
 
   ****
 
   |Valore|Verdetto del filtro posta indesiderata|Descrizione|
   |---|---|---|
-  |**Consentito**|`SFV:SKN` <br/><br/> `SFV:SKI`|Il messaggio è stato contrassegnato come non indesiderato e/o il filtro saltato prima di essere valutato tramite il filtro posta indesiderata, ad esempio tramite una regola del flusso di posta, nota anche come regola di trasporto.<br/><br/>Il messaggio ha ignorato il filtro per la posta indesiderata per altri motivi (ad esempio, il mittente e il destinatario sono presenti nella stessa organizzazione).|
-  |**Bloccato**|`SFV:SKS`|Il messaggio è stato contrassegnato come posta indesiderata prima di essere valutato tramite il filtro posta indesiderata, ad esempio tramite una regola del flusso di posta.|
+  |**Consentito**|`SFV:SKN` <br/><br/> `SFV:SKI`|Il messaggio è stato contrassegnato come non indesiderato e/o il filtro saltato prima di essere valutato tramite filtro posta indesiderata. Ad esempio, il messaggio è stato contrassegnato come non indesiderato da una regola del flusso di posta (nota anche come regola di trasporto).<br/><br/>Il messaggio ha ignorato il filtro della posta indesiderata per altri motivi. Ad esempio, il mittente e il destinatario sono presenti nella stessa organizzazione.|
+  |**Bloccato**|`SFV:SKS`|Il messaggio è stato contrassegnato come posta indesiderata prima di essere valutato tramite filtro posta indesiderata. Ad esempio, da una regola del flusso di posta.|
   |**Rilevato**|`SFV:SPM`|Il messaggio è stato contrassegnato come posta indesiderata dal filtro posta indesiderata.|
   |**Non rilevato**|`SFV:NSPM`|Il messaggio è stato contrassegnato come non indesiderato dal filtro posta indesiderata.|
   |**Rilasciato**|`SFV:SKQ`|Il messaggio ha ignorato il filtro della posta indesiderata perché è stato rilasciato dalla quarantena.|
-  |**Consenti tenant**<sup>\*</sup>|`SFV:SKA`|Il messaggio ha ignorato il filtro della posta indesiderata a causa delle impostazioni dei criteri di protezione dalla posta indesiderata (ad esempio, il mittente è nell'elenco dei mittenti consentito o nel dominio consentito).|
-  |**Blocco tenant**<sup>\*\*</sup>|`SFV:SKA`|Il messaggio è stato bloccato dal filtro posta indesiderata a causa delle impostazioni dei criteri di protezione da posta indesiderata (ad esempio, il mittente è nell'elenco dei mittenti consentiti o nel dominio consentito).|
-  |**Consenti utente**<sup>\*</sup>|`SFV:SFE`|Il messaggio ha ignorato il filtro della posta indesiderata perché il mittente si trovava nell'elenco Mittenti attendibili di un utente in Outlook.|
-  |**Blocco utenti**<sup>\*\*</sup>|`SFV:BLK`|Il messaggio è stato bloccato dal filtro posta indesiderata perché il mittente si trovava nell'elenco Mittenti bloccati di un utente in Outlook.|
-  |**ZAP**|n/d|[Zero-hour auto Purge (ZAP)](zero-hour-auto-purge.md) ha eseguito un'azione sul messaggio recapitato in base alle impostazioni dei criteri di protezione da posta indesiderata (spostati nella cartella posta indesiderata o in quarantena).|
+  |**Consenti tenant**<sup>\*</sup>|`SFV:SKA`|Il messaggio ha ignorato il filtro della posta indesiderata a causa delle impostazioni di un criterio di protezione da posta indesiderata. Ad esempio, il mittente si trovava nell'elenco dei mittenti consentiti o nell'elenco dei domini consentiti.|
+  |**Blocco tenant**<sup>\*\*</sup>|`SFV:SKA`|Il messaggio è stato bloccato dal filtro posta indesiderata a causa delle impostazioni di un criterio di protezione da posta indesiderata. Ad esempio, il mittente si trovava nell'elenco dei mittenti consentiti o nell'elenco dei domini consentiti.|
+  |**Consenti utente**<sup>\*</sup>|`SFV:SFE`|Il messaggio ha ignorato il filtro della posta indesiderata perché il mittente si trovava nell'elenco Mittenti attendibili di un utente.|
+  |**Blocco utenti**<sup>\*\*</sup>|`SFV:BLK`|Il messaggio è stato bloccato dal filtro posta indesiderata perché il mittente si trovava nell'elenco dei mittenti bloccati di un utente.|
+  |**ZAP**|n/d|[Zero-hour auto Purge (ZAP)](zero-hour-auto-purge.md) ha spostato il messaggio recapitato nella cartella posta indesiderata o in quarantena. È possibile configurare l'azione nel criterio di protezione da posta indesiderata.|
   |
 
   <sup>\*</sup> Esaminare i criteri di protezione da posta indesiderata, poiché il servizio potrebbe essere stato bloccato.
 
   <sup>\*\*</sup> Esaminare i criteri di protezione da posta indesiderata, poiché tali messaggi devono essere messi in quarantena, non recapitati.
 
-- **Posizioni di recapito**: è consigliabile esaminare i messaggi che sono stati effettivamente recapitati ai destinatari (nella cartella posta in arrivo o posta indesiderata), anche se gli utenti non hanno fatto clic sull'URL del payload nel messaggio. È inoltre possibile rimuovere i messaggi in quarantena dalla quarantena. Per ulteriori informazioni, vedere [messaggi di posta elettronica in quarantena in EOP](quarantine-email-messages.md).
+- **Posizioni di recapito**: è probabile che si desideri esaminare i messaggi che sono stati recapitati ai destinatari (nella cartella posta in arrivo o posta indesiderata), anche se gli utenti non hanno fatto clic sull'URL payload del messaggio. È inoltre possibile rimuovere i messaggi in quarantena dalla quarantena. Per ulteriori informazioni, vedere [messaggi di posta elettronica in quarantena in EOP](quarantine-email-messages.md).
 
   - **Cartella eliminata**
   - **Interrotte**
@@ -253,14 +248,14 @@ Il diagramma include le seguenti informazioni:
   - **Quarantena**
   - **Unknown**
 
-- **Clic URL**: sono descritti nella sezione successiva.
+- **Clic URL**: questi valori sono descritti nella sezione successiva.
 
 > [!NOTE]
 > In tutti i layer che contengono più di 10 elementi vengono visualizzati i primi 10 elementi, mentre quelli restanti sono raggruppati in **altri**.
 
 #### <a name="url-clicks"></a>Clic URL
 
-Quando un messaggio di phishing viene recapitato a un destinatario (nella cartella posta in arrivo o posta indesiderata), è sempre possibile che l'utente clicchi sull'URL del payload. Non fare clic sull'URL in un messaggio recapitato è una piccola misura di esito positivo, ma è necessario determinare il motivo per cui il messaggio di phishing è stato recapitato alla propria cassetta postale in primo luogo.
+Quando un messaggio di phishing viene recapitato nella cartella posta in arrivo o posta indesiderata del destinatario, è sempre possibile che l'utente clicchi sull'URL del payload. Non fare clic sull'URL è una piccola misura di esito positivo, ma è necessario determinare il motivo per cui il messaggio di phishing è stato persino recapitato alla cassetta postale.
 
 Se un utente ha fatto clic sull'URL payload nel messaggio di phishing, le azioni vengono visualizzate nell'area **clic URL** del diagramma nella visualizzazione dettagli campagna.
 
@@ -268,9 +263,9 @@ Se un utente ha fatto clic sull'URL payload nel messaggio di phishing, le azioni
 
 - **BlockPage**: il destinatario ha fatto clic sull'URL payload, ma l'accesso al sito Web dannoso è stato bloccato dai criteri dei [collegamenti sicuri ATP](atp-safe-links.md) nell'organizzazione.
 
-- **BlockPageOverride**: il destinatario ha fatto clic sull'URL del payload nel messaggio, i collegamenti sicuri di ATP hanno provato a arrestarli, ma sono stati autorizzati a eseguire l'override del blocco. È necessario esaminare i criteri per i [collegamenti sicuri](set-up-atp-safe-links-policies.md) per capire perché gli utenti possono ignorare il verdetto dei collegamenti sicuri e continuare con il sito Web dannoso.
+- **BlockPageOverride**: il destinatario ha fatto clic sull'URL del payload nel messaggio, i collegamenti sicuri di ATP hanno provato a arrestarli, ma sono stati autorizzati a eseguire l'override del blocco. Esaminare i [criteri dei collegamenti sicuri](set-up-atp-safe-links-policies.md) per individuare il motivo per cui gli utenti possono ignorare il verdetto relativo ai collegamenti sicuri e continuare con il sito Web dannoso.
 
-- **PendingDetonationPage**: gli allegati sicuri di ATP è in fase di apertura dell'URL di payload in un ambiente computer virtuale e di vedere cosa accade.
+- **PendingDetonationPage**: allegati sicuri in Office 365 ATP è in fase di apertura e analisi dell'URL di payload in un ambiente computer virtuale.
 
 - **PendingDetonationPageOverride**: al destinatario è stato consentito di ignorare il processo di detonazione del payload e di aprire l'URL senza attendere i risultati.
 
@@ -281,7 +276,7 @@ Le schede nella visualizzazione dettagli campagna consentono di analizzare ulter
 > [!TIP]
 > Le informazioni visualizzate nelle schede sono controllate dall'intervallo di date ombreggiato nella sequenza temporale, come descritto nella sezione [informazioni sulla campagna](#campaign-information) .
 
-- **Clic URL**: se gli utenti non hanno fatto clic sull'URL payload nel messaggio di phishing, questa sezione sarà vuota. Se un utente è stato in grado di fare clic sull'URL, verranno inseriti i valori seguenti:
+- **Clic URL**: se gli utenti non hanno fatto clic sull'URL payload nel messaggio, questa sezione sarà vuota. Se un utente è stato in grado di fare clic sull'URL, verranno inseriti i valori seguenti:
 
   - **Utente:**<sup>\*</sup>
   - **URL**<sup>\*</sup>
@@ -294,7 +289,7 @@ Le schede nella visualizzazione dettagli campagna consentono di analizzare ulter
   - **Conteggio totale**
   - **Posta in arrivo**
   - **Non ricevuti**
-  - **SPF superato**: il mittente è stato autenticato da [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). Un mittente che non supera la convalida SPF indica che il mittente non è autenticato o che il messaggio è spoofing di un mittente legittimo.
+  - **SPF superato**: il mittente è stato autenticato da [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). Un mittente che non supera la convalida SPF indica un mittente non autenticato oppure il messaggio spoofing è un mittente legittimo.
 
 - **Mittenti**
 
@@ -302,8 +297,8 @@ Le schede nella visualizzazione dettagli campagna consentono di analizzare ulter
   - **Conteggio totale**
   - **Posta in arrivo**
   - **Non ricevuti**
-  - **DKIM superato**: il mittente è stato autenticato da [Key Domain identificated mail (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un mittente che non supera la convalida di DKIM indica che il mittente non è autenticato o che il messaggio è spoofing di un mittente legittimo.
-  - **DMARC superato**: il mittente è stato autenticato da [autenticazione dei messaggi basata sul dominio, Reporting e conformità (DMARC)](use-dmarc-to-validate-email.md). Un mittente che non supera la convalida di DMARC indica che il mittente non è autenticato o che il messaggio è spoofing di un mittente legittimo.
+  - **DKIM superato**: il mittente è stato autenticato da [Key Domain identificated mail (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un mittente che non supera la convalida di DKIM indica un mittente non autenticato o il messaggio è spoofing di un mittente legittimo.
+  - **DMARC superato**: il mittente è stato autenticato da [autenticazione dei messaggi basata sul dominio, Reporting e conformità (DMARC)](use-dmarc-to-validate-email.md). Un mittente che non supera la convalida di DMARC indica un mittente non autenticato o il messaggio è spoofing di un mittente legittimo.
 
 - **Allegati**
 

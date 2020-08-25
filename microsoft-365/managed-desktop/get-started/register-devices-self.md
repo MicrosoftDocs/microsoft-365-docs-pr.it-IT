@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 3c43c42ba2cb1feb339ad61b76d28fde4ed94298
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: 470047da0a1902a6076add27a6e7ac516edd3150
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101660"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46869008"
 ---
 # <a name="register-new-devices-yourself"></a>Registrare manualmente i nuovi dispositivi
 
@@ -28,7 +28,7 @@ Una volta che i nuovi dispositivi sono disponibili, è necessario eseguire la pr
 
 1. [Ottenere l'hash hardware per ogni dispositivo.](#obtain-the-hardware-hash)
 2. [Unire i dati hash](#merge-hash-data)
-3. [Registrare i dispositivi in Microsoft Managed Desktop](#register-devices).
+3. [Registrare i dispositivi in Microsoft Managed Desktop](#register-devices-by-using-the-admin-portal).
 4. [Verificare che l'immagine sia corretta.](#check-the-image)
 5. [Recapito del dispositivo](#deliver-the-device)
 
@@ -42,21 +42,23 @@ Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo ri
 
 #### <a name="powershell-script-method"></a>Metodo script di PowerShell
 
+È possibile utilizzare lo script di PowerShell [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) nel sito Web della raccolta di PowerShell. Per ulteriori informazioni sull'identificazione dei dispositivi e sull'hash hardware, vedere [aggiunta di dispositivi a Windows Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices#device-identification).
+
 1.  Aprire un prompt di PowerShell con diritti amministrativi.
-2.  Correre`Install-Script -Name Get-MMDRegistrationInfo`
-3.  Correre`powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
+2.  Correre `Install-Script -Name Get-WindowsAutoPilotInfo`
+3.  Correre `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 
 #### <a name="flash-drive-method"></a>Metodo dell'unità flash
 
 1. In un dispositivo diverso da quello che si sta registrando, inserire un'unità USB.
 2. Aprire un prompt di PowerShell con diritti amministrativi.
-3. Correre`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
+3. Correre `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
 4. Attivare il dispositivo che si sta registrando, ma *non avviare l'esperienza di installazione*. Se si avvia accidentalmente l'esperienza di installazione, sarà necessario reimpostare o ricreare il dispositivo.
 5. Inserire l'unità USB e quindi premere MAIUSC + F10.
 6. Aprire un prompt di PowerShell con diritti amministrativi e quindi eseguirlo `cd <pathToUsb>` .
-7. Correre`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. Correre`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
-9. Rimuovere l'unità USB e quindi arrestare il dispositivo eseguendo`shutdown -s -t 0`
+7. Correre `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
+8. Correre `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+9. Rimuovere l'unità USB e quindi arrestare il dispositivo eseguendo `shutdown -s -t 0`
 
 >[!IMPORTANT]
 >Non accendere il dispositivo che si sta registrando di nuovo fino a quando non si è completata la registrazione. 
@@ -67,33 +69,14 @@ Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo ri
 Per completare la registrazione, è necessario che i dati dei file CSV siano combinati in un unico file. Di seguito è indicato uno script di PowerShell di esempio per semplificare le operazioni seguenti:
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
-### <a name="register-devices"></a>Registrare i dispositivi
 
-Il file CSV deve trovarsi in un formato specifico per la registrazione. Se i dati sono stati raccolti nei passaggi precedenti, il file deve essere già nel formato corretto. Se si ottiene il file da un fornitore, potrebbe essere necessario modificare il formato.
-
->[!NOTE]
->Per la vostra convenienza, è possibile scaricare un [file CSV di esempio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv).
-
-Il file deve includere le **intestazioni di colonna** identiche a quelle del campione (produttore, modello e così via), ma i propri dati per le altre righe. Se si utilizza il modello, aprirlo in uno strumento di modifica del testo, ad esempio Blocco note, e considerare di lasciare tutti i dati solo nella riga 1, immettendo solo i dati nelle righe 2 e seguenti. 
-    
-  ```
- Manufacturer,Model,Serial Number,Hardware Hash
-  SpiralOrbit,ContosoABC,000000000000,dGhpc2RldmljZWlzYW5tbWRkZXZpY2U
-  
-  
-  ```
-
->[!NOTE]
->Se si dimentica di modificare i dati di esempio, la registrazione avrà esito negativo.
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
 
 Dal [portale di amministrazione](https://aka.ms/mmdportal)di Microsoft Managed Desktop, selezionare **dispositivi** nel riquadro di spostamento a sinistra. Selezionare **+ registra dispositivi**; verrà aperto il volo:
 
-[![Fly-in dopo aver selezionato i dispositivi di registrazione, elencare i dispositivi con colonne per gli utenti assegnati, il numero di serie, lo stato, la data dell'ultima visualizzazione e l'età](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
+[![Fly-in dopo aver selezionato i dispositivi di registrazione, elencare i dispositivi con colonne per gli utenti assegnati, il numero di serie, lo stato, la data dell'ultima visualizzazione e l'età](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
 
-
-[//]: # (Purtroppo questo non è vero. È possibile rimuovere questa nota, lasciandola adesso fino a quando non avremo la possibilità di chattare.)
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
@@ -101,15 +84,14 @@ Dal [portale di amministrazione](https://aka.ms/mmdportal)di Microsoft Managed D
 Eseguire la procedura seguente:
 
 1. In **caricamento file**, specificare un percorso per il file CSV creato in precedenza.
-2. Facoltativamente, è possibile aggiungere un **ID ordine** o un **ID acquisto** per i propri scopi di verifica. Non sono presenti requisiti di formato per questi valori.
-3. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi**, contrassegnati come **registrazione in sospeso**. La registrazione richiede in genere meno di 10 minuti e, quando il dispositivo verrà visualizzato come **pronto per il significato dell'utente** , è pronto e in attesa che l'utente finale inizi a utilizzare.
+3. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi**, contrassegnati come **AutopilotRegistrationRequested**. La registrazione richiede in genere meno di 10 minuti e, in caso di esito positivo, il dispositivo verrà visualizzato come **pronto per il significato dell'utente** è pronto e in attesa che un utente inizi a utilizzare.
 
 
 È possibile monitorare lo stato di registrazione dei dispositivi nella pagina principale di **Microsoft Managed Desktop-Devices** . Gli stati possibili segnalati includono:
 
 | Stato | Descrizione |
 |---------------|-------------|
-| Registrazione in sospeso | La registrazione non è ancora stata completata. Controllare in un secondo momento. |
+| AutopilotRegistrationRequested | La registrazione non è ancora stata completata. Controllare in un secondo momento. |
 | Registrazione non riuscita | La registrazione non è stata completata. Per ulteriori informazioni, vedere [risoluzione dei problemi relativi alla registrazione del dispositivo](#troubleshooting-device-registration) . |
 | Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente finale. Microsoft Managed Desktop li guiderà per la prima volta, quindi non è necessario eseguire ulteriori preparativi. |
 | Attivazione | Il dispositivo è stato recapitato all'utente finale ed è stato registrato con il tenant. Questo indica anche che stanno usando regolarmente il dispositivo. |
@@ -123,7 +105,7 @@ Eseguire la procedura seguente:
 | Hash hardware non valido | L'hash hardware fornito per il dispositivo non è stato formattato correttamente. Fare doppio check sull'hash hardware e quindi inviare di nuovo. |
 | Dispositivo già registrato | Questo dispositivo è già registrato nell'organizzazione. Non sono necessarie ulteriori azioni. |
 | Dispositivo rivendicato da un'altra organizzazione | Questo dispositivo è già stato rivendicato da un'altra organizzazione. Controllare con il fornitore del dispositivo. |
-| Errore imprevisto | La richiesta non è stata elaborata automaticamente. Contattare il supporto tecnico e fornire l'ID richiesta:<requestId> |
+| Errore imprevisto | La richiesta non è stata elaborata automaticamente. Contattare il supporto tecnico e fornire l'ID richiesta: <requestId> |
 
 ### <a name="check-the-image"></a>Controllare l'immagine
 

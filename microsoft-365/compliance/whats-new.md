@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: L'aggiunta di nuove nuove soluzioni al centro conformità, l'aggiornamento delle funzionalità esistenti in base ai commenti o la documentazione aggiornata e rinnovata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità in continua evoluzione. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bccaab4c1dd1ac8b4676939d848c0f1a599d86b
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798174"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868973"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità della conformità a Microsoft 365
 
@@ -97,8 +97,6 @@ April include un paio di aggiornamenti chiave per la soluzione di gestione dei r
 
 - La sezione ' Records Management ' è ora completamente disponibile nel centro conformità. Utilizzare le interfacce utente e le funzionalità aggiornate per il piano di file, le etichette di conservazione e i criteri di etichetta, gli eventi e la disposizione.
 - A proposito di disposizione, è stato anche implementato il [certificato di disponibilità](disposition.md#disposition-of-records) dei record in SharePoint e OneDrive. È ora possibile visualizzare un elenco di elementi in quelle posizioni che sono state eliminate automaticamente o dopo una revisione della disposizione.
-
-:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Sezione Gestione record in Microsoft 365 Compliance Center":::
 
 ### <a name="sensitivity-labels-preview-auto-labeling-policies"></a>Etichette di riservatezza: anteprima di criteri di etichettatura automatica
 

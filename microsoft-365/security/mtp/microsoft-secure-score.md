@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 862a25eddda6048349df937641914377cb25874f
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 304967a06c1fec2df6968f12be30ef3001fdb762
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200039"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866872"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -45,9 +45,15 @@ Le organizzazioni accedono alla visualizzazione robusta delle metriche e delle t
 
 ## <a name="how-it-works"></a>Funzionamento
 
-Si ricevono punti per la configurazione delle funzionalità di sicurezza consigliate, per l'esecuzione di attività relative alla sicurezza o per l'azione di miglioramento con un'applicazione o un software di terze parti o con una attenuazione alternativa. Alcune azioni di miglioramento offrono solo punti quando sono state completate e alcune forniscono punti parziali se sono state completate per alcuni dispositivi o utenti. Se non è possibile o non si desidera applicare una delle azioni di miglioramento, è possibile scegliere di accettare il rischio o il rischio rimanente.
+Sono stati assegnati punti per le azioni seguenti:
 
-Se si dispone di una licenza per uno dei prodotti Microsoft supportati, verranno visualizzati i suggerimenti per tali prodotti. Viene mostrato il set completo di possibili miglioramenti per un prodotto, indipendentemente dall'edizione di licenza, dall'abbonamento o dal piano, in modo da poter comprendere le procedure consigliate per la sicurezza e migliorare il punteggio. La posizione di sicurezza assoluta è rappresentata da un punteggio sicuro, che rimane invariato indipendentemente dalle licenze possedute dall'organizzazione per un prodotto specifico. Tenere presente che la sicurezza deve essere bilanciata con l'usabilità e non tutte le raccomandazioni possono funzionare per l'ambiente in uso.
+- Configurazione delle funzionalità di sicurezza consigliate
+- Esecuzione di attività correlate alla sicurezza
+- Risoluzione delle operazioni di miglioramento con un'applicazione o un software di terze parti o una attenuazione alternativa
+
+Alcune azioni di miglioramento offrono solo punti quando sono state completate. Alcuni forniscono punti parziali se sono stati completati per alcuni dispositivi o utenti. Se non è possibile o non si desidera applicare una delle azioni di miglioramento, è possibile scegliere di accettare il rischio o il rischio rimanente.
+
+Se si dispone di una licenza per uno dei prodotti Microsoft supportati, verranno visualizzati i suggerimenti per tali prodotti. Viene mostrato il set completo di possibili miglioramenti per un prodotto, indipendentemente dall'edizione della licenza, dall'abbonamento o dal piano. In questo modo, è possibile comprendere le procedure consigliate per la sicurezza e migliorare il punteggio. La posizione di sicurezza assoluta, rappresentata da un punteggio sicuro, rimane invariata indipendentemente dalle licenze possedute dall'organizzazione per un prodotto specifico. Tenere presente che la sicurezza deve essere bilanciata con l'usabilità e non tutte le raccomandazioni possono funzionare per l'ambiente in uso.
 
 Il Punteggio viene aggiornato in tempo reale per riflettere le informazioni presentate nelle pagine di azione per la visualizzazione e il miglioramento. Secure Score sincronizza anche tutti i giorni per ricevere i dati di sistema relativi ai punti ottenuti per ogni azione.
 
@@ -61,11 +67,13 @@ Il Punteggio viene aggiornato in tempo reale per riflettere le informazioni pres
 
 ### <a name="how-improvement-actions-are-scored"></a>Come vengono segnate le azioni di miglioramento
 
-Ogni azione di miglioramento vale 10 punti o meno. La maggior parte sono segnati in modo binario, se si implementa l'azione di miglioramento, come creare un nuovo criterio o attivare un'impostazione specifica, si ottiene il 100% dei punti. Per altre azioni di miglioramento, i punti vengono assegnati come percentuale della configurazione totale. Ad esempio, se l'azione di miglioramento dichiara di ottenere 10 punti, proteggendo tutti gli utenti con l'autenticazione a più fattori e si dispone solo di 50 di 100 totale degli utenti protetti, si riceverebbe un punteggio parziale di 5 punti (50 protected/100 Total * 10 Max PTS = 5 pts partial Punteggio).
+Ogni azione di miglioramento vale 10 punti o meno e la maggior parte è classificata in modo binario. Se si implementa l'azione di miglioramento, ad esempio crea un nuovo criterio o si attiva un'impostazione specifica, si ottiene il 100% dei punti. Per altre azioni di miglioramento, i punti vengono assegnati come percentuale della configurazione totale.
+
+Ad esempio, un'azione di miglioramento dichiara di ottenere 10 punti proteggendo tutti gli utenti con l'autenticazione a più fattori. Si hanno solo 50 di 100 utenti totali protetti, quindi si otterrebbe un punteggio parziale di 5 punti (50 protected/100 Total * 10 Max PTS = 5 pts).
 
 ### <a name="products-included-in-secure-score"></a>Prodotti inclusi nel punteggio sicuro
 
-Sono attualmente disponibili suggerimenti per Microsoft 365 (incluso Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate da terze parti o da una attenuazione alternativa.
+Sono attualmente disponibili suggerimenti per Microsoft 365 (incluso Exchange Online), Azure Active Directory, Microsoft Defender ATP, Azure ATP e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. I suggerimenti non riguarderanno tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate da terze parti o da una attenuazione alternativa.
 
 ### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
 
@@ -107,15 +115,15 @@ Con l'accesso in sola lettura, non è possibile modificare lo stato o le note pe
 
 ## <a name="risk-awareness"></a>Sensibilizzazione ai rischi
 
-Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in base alle configurazioni di sistema, al comportamento degli utenti e ad altre misure relative alla sicurezza. non si tratta di una misura assoluta del modo in cui il sistema o i dati verranno violati. Piuttosto, rappresenta la misura in cui sono stati adottati controlli di sicurezza nell'ambiente Microsoft, che possono contribuire a compensare il rischio di essere violati. Nessun servizio online è completamente immune dalle violazioni della sicurezza e il Punteggio sicuro non deve essere interpretato come garanzia contro la violazione della sicurezza in alcun modo.
+Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in base alle configurazioni di sistema, al comportamento degli utenti e ad altre misure relative alla sicurezza. Non si tratta di una misura assoluta del modo in cui il sistema o i dati verranno violati. Piuttosto, rappresenta la misura in cui sono stati adottati controlli di sicurezza nell'ambiente Microsoft che possono contribuire a compensare il rischio di essere violati. Nessun servizio online è completamente immune dalle violazioni della sicurezza e il Punteggio sicuro non deve essere interpretato come garanzia contro la violazione della sicurezza in alcun modo.
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 
-In caso di problemi, fatecelo sapere inviando la [sicurezza, la Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Si sta monitorando la community e viene fornita assistenza.
+In caso di problemi, inviaci informazioni scrivendo nella community [sicurezza, Privacy & conformità](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Si sta monitorando la community e viene fornita assistenza.
 
 ## <a name="related-resources"></a>Risorse correlate
 
-- [Valutare la posizione di sicurezza](microsoft-secure-score-improvement-actions.md)
+- [Valutazione del profilo di sicurezza](microsoft-secure-score-improvement-actions.md)
 - [Monitorare la cronologia dei punteggi di Microsoft Secure e raggiungere gli obiettivi](microsoft-secure-score-history-metrics-trends.md)
 - [Novità in arrivo](microsoft-secure-score-whats-coming.md)
 - [Novità](microsoft-secure-score-whats-new.md)

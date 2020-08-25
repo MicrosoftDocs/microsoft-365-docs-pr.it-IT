@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: d258bf3ec4c04eafd22e850329ca925b4c974e94
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 12ac7d0a3d07749e16443e645f50de8fda185658
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086668"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866780"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrazione dei ticket di ServiceNow nel centro sicurezza e conformità di Microsoft 365
 
@@ -76,7 +76,7 @@ Per informazioni su come connettersi a ServiceNow, vedere [creare e monitorare i
 
 **Messaggio di errore**: l'operazione di lettura su' oauth_entity ' dall'ambito ' x_mioms_m365ticket ' è stata rifiutata a causa del criterio di accesso cross-scope della tabella
 
-L'app presuppone che qualsiasi amministratore nell'istanza di ServiceNow possa creare e leggere le entità OAuth. Questo errore potrebbe essere causato da una personalizzazione dell'istanza di ServiceNow, che limita gli utenti autorizzati a creare/leggere le entità OAuth.
+L'app presuppone che qualsiasi amministratore nell'istanza di ServiceNow possa creare e leggere le entità OAuth. Questo errore potrebbe essere causato da una personalizzazione nell'istanza di ServiceNow che limita gli utenti autorizzati a creare o leggere le entità OAuth.
 
 **ServiceNow consiglia agli utenti di mantenere la funzionalità predefinita.**
 
@@ -89,17 +89,17 @@ Impostare le configurazioni di tabella "registri applicazioni" su predefinita:
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Come convalidare l'entità OAuth creata per Microsoft 365 Security & Compliance Connector
 
-Andare alla tabella registri applicazioni (**Menu > System OAuth > Application Registry**) in ServiceNow e individuare l'entità OAuth creata dall'utente, con il nome assegnato.
+Andare alla tabella registri applicazioni (**Menu > System OAuth > Application Registry**) in ServiceNow. Individuare l'entità OAuth creata dall'utente, con il nome assegnato.
 
-### <a name="logging-in-as-the-integration-user"></a>Accesso come utente di integrazione
+### <a name="signing-in-as-the-integration-user"></a>Accesso come utente di integrazione
 
-Prima di autorizzare la connessione tra Microsoft 365 Security Center e ServiceNow, assicurarsi di utilizzare l'account di accesso e la password dell'utente di integrazione creati nei passaggi di installazione. Non utilizzare le credenziali personali.
+Prima di autorizzare la connessione tra Microsoft 365 Security Center e ServiceNow, assicurarsi di utilizzare l'accesso dell'utente di integrazione e la password creata nei passaggi di installazione. Non utilizzare le credenziali personali.
 
 1. Andare alla pagina autorizzazione in ServiceNow.
 2. Se l'utente ha eseguito l'accesso con le proprie credenziali personali, selezionare il collegamento **che non si trova** nell'angolo in alto a destra.
 3. Accedere a ServiceNow come utente di integrazione creato in precedenza nell'elenco di controllo di installazione.  
 4. Selezionare **Consenti** nella pagina ServiceNow in cui viene chiesto se il connettore di sicurezza + conformità è in grado di connettersi all'account di ServiceNow.
-5. Procedere con la procedura di installazione.
+5. Continuare con la procedura di installazione.
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Come convalidare l'utente di integrazione creato con l'elenco di controllo di installazione per Microsoft 365 Security & Compliance Connector
 
@@ -107,19 +107,19 @@ Andare alla tabella Users **(Menu > User Administration >** Users) in ServiceNow
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>L'azienda dispone di accesso Single Sign-on che impedisce la connessione a ServiceNow tramite il Centro sicurezza di Microsoft 365
 
-Se l'azienda ha abilitato il servizio Single Sign-on e viene visualizzato un errore o un account di accesso non riuscito, seguire una delle due soluzioni.
+Se l'azienda ha abilitato l'accesso Single Sign-on e si riceve un errore o l'accesso non è riuscito, seguire una delle due soluzioni.
 
-#### <a name="log-into-servicenow-as-the-integration-user"></a>Accedere a ServiceNow come utente di integrazione
+#### <a name="sign-in-to-servicenow-as-the-integration-user"></a>Accedere a ServiceNow come utente di integrazione
 
 1. Tornare alla pagina autorizzazione in ServiceNow.
 2. Selezionare il collegamento **not you** nell'angolo in alto a destra.
 3. Accedere a ServiceNow come utente di integrazione creato in precedenza nell'elenco di controllo di installazione.  
 4. Selezionare **Consenti** nella pagina ServiceNow in cui viene chiesto se il connettore di sicurezza + conformità è in grado di connettersi all'account di ServiceNow.
-5. Procedere con la procedura di installazione.
+5. Continuare con la procedura di installazione.
 
 #### <a name="create-a-security-admin-user"></a>Creare un utente di amministrazione della sicurezza
 
-1. Creare un utente con privilegi di amministratore della sicurezza in Azure Active Directory. L'utente deve avere lo stesso nome e l'indirizzo di posta elettronica dell'utente di integrazione creato dall'elenco di controllo dell'installazione. È possibile rimuovere il ruolo di amministratore della sicurezza dopo aver completato il login e la connessione.
+1. Creare un utente con privilegi di amministratore della sicurezza in Azure Active Directory. L'utente deve avere lo stesso nome e l'indirizzo di posta elettronica dell'utente di integrazione creato dall'elenco di controllo dell'installazione. È possibile rimuovere il ruolo di amministratore della protezione una volta che l'accesso e la connessione sono state completate.
 2. Accedere al centro sicurezza Microsoft 365 come utente e seguire la procedura di installazione.
 
 ### <a name="ip-filtering"></a>Filtro IP

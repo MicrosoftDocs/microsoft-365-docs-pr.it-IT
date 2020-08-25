@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Gli utenti devono disporre delle autorizzazioni nel centro conformità di sicurezza & Microsoft 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d21fef9458c02bd09d6d5ce2129b95571e0f8371
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b51007221257b9adac46c31295e13b20b12342ab
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826602"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868922"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Concedere agli utenti l'accesso al Centro sicurezza e conformità
 
@@ -42,54 +42,48 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegna
 
 - I partner di autorizzazione accesso delegato (DAP) con amministra per conto di (AOBO) le autorizzazioni non possono accedere al centro sicurezza & conformità.
 
-## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utilizzare l'interfaccia di amministrazione per concedere a un altro utente l'accesso al centro sicurezza & conformità
+## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utilizzare il Centro sicurezza & conformità per consentire a un altro utente di accedere al centro sicurezza & conformità
 
-1. [Accedere e passare all'interfaccia di amministrazione](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).
+1. Aprire il Centro sicurezza & conformità <https://protection.office.com> e quindi andare a **autorizzazioni**. Per passare direttamente alla scheda **autorizzazioni** , Apri <https://protection.office.com/permissions> .
 
-2. Nell'interfaccia di amministrazione di Microsoft 365 aprire interfaccia di **Amministrazione** e quindi fare clic su **sicurezza & conformità**.
+2. Nell'elenco dei gruppi di ruoli, scegliere il gruppo di ruoli, quindi fare clic su **modifica** ![ icona modifica ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
 
-3. Nel centro sicurezza & conformità, accedere a **autorizzazioni**.
+3. Nella pagina delle proprietà del gruppo di ruoli in **membri**fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.gif) e selezionare il nome dell'utente (o degli utenti) che si desidera aggiungere.
 
-4. Nell'elenco scegliere il gruppo di ruoli a cui si desidera aggiungere l'utente e fare clic su **modifica** ![ icona modifica ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
+4. Dopo aver selezionato tutti gli utenti che si desidera aggiungere al gruppo di ruoli, fare clic su **Aggiungi \> ** e quindi su **OK**.
 
-5. Nella pagina delle proprietà del gruppo di ruoli in **membri**fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.gif) e selezionare il nome dell'utente (o degli utenti) che si desidera aggiungere.
+5. Al termine, fai clic su **Salva**.
 
-6. Dopo aver selezionato tutti gli utenti che si desidera aggiungere al gruppo di ruoli, fare clic su **Aggiungi \> ** e quindi su **OK**.
-
-7. Fare clic su **Salva** per salvare le modifiche al gruppo di ruoli.
-
-### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo?
-
-1. Nel centro sicurezza & conformità, accedere a **autorizzazioni**.
-
-2. Nell'elenco, selezionare il gruppo di ruoli per visualizzare i membri.
-
-3. A destra, nei dettagli del gruppo di ruoli, è possibile visualizzare i membri del gruppo di ruoli.
-
-## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Utilizzo di PowerShell per consentire a un altro utente di accedere al centro sicurezza & Compliance
+## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Utilizzare la sicurezza & Compliance Center PowerShell per concedere a un altro utente l'accesso al centro sicurezza & conformità
 
 1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
-2. Usa il comando **Add-RoleGroupMember** per aggiungere un utente al ruolo Gestione organizzazione, come mostrato nell'esempio seguente.
+2. Utilizzare la sintassi seguente:
+
+   ```powershell
+   Add-RoleGroupMember -Identity <RoleGroup> -Member <UserIdentity>
+
+   - _Identity_ is the role group.
+   - _Member_ is the user or universal security group (USG). You can specify only one member at a time.
+
+   This example adds MatildaS to the Organization Management role group.
 
    ```PowerShell
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-   **Parametri**:
-
-   - _Identity_ è il gruppo di ruoli a cui aggiungere un membro.
-
-   - _Member_ è la cassetta postale, il gruppo di protezione universale (USG) o il computer da aggiungere al gruppo di ruoli. Puoi specificare solo un membro per volta.
-
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
-Per verificare di aver concesso agli utenti l'accesso al centro sicurezza & conformità, utilizzare il cmdlet **Get-RoleGroupMember** per visualizzare i membri nel gruppo di ruoli Gestione organizzazione, come illustrato nell'esempio seguente.
+Per verificare di aver correttamente concesso l'accesso al centro sicurezza & Compliance, eseguire una delle operazioni seguenti:
 
-```PowerShell
-Get-RoleGroupMember -Identity "Organization Management"
-```
+- Nel centro sicurezza & conformità, accedere a **autorizzazioni** e selezionare il gruppo di ruoli. Nel riquadro a comparsa dettagli che si apre, verificare i membri del gruppo di ruoli. 
 
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).
+- In PowerShell Centro sicurezza & conformità, sostituire \<RoleGroupName\> con il nome del gruppo di ruolo ed eseguire il comando seguente:
+
+  ```powershell
+  Get-RoleGroupMember -Identity "<RoleGroupName>"
+  ```
+
+  Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).

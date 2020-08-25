@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 85d1a7d5a5507e674c4c9bb5c579322a1ca1c4b6
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 46a45eac2fe5d1a19b0d2c40c6c1405f31b7f7f7
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200087"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866708"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Monitorare la cronologia dei punteggi di Microsoft Secure e raggiungere gli obiettivi
 
@@ -49,17 +49,17 @@ Per visualizzare tutta la cronologia per l'azione di miglioramento specifica, se
 
 Nella scheda **tendenze & metriche** sono disponibili diversi grafici e grafici che consentono di ottenere maggiori visibilità nelle tendenze e impostare gli obiettivi. È possibile impostare l'intervallo di date per l'intera pagina di visualizzazioni. Le visualizzazioni includono:
 
-* **Area di valutazione sicura** , personalizzata in base agli obiettivi dell'organizzazione e alle definizioni di intervalli di risultati buoni, OK e non validi.
-* **Tendenza di regressione** : una sequenza temporale di punti che sono stati regressione a causa di modifiche apportate alla configurazione, all'utente o al dispositivo.  
-* **Trend di confronto** : la modalità di confronto tra il Punteggio sicuro dell'organizzazione e gli altri nel corso del tempo. Questa visualizzazione può includere linee che rappresentano la media del Punteggio di organizzazioni con conteggio dei sedili analogo e una visualizzazione di confronto personalizzata che è possibile impostare.
-* **Tendenza all'accettazione del rischio** : cronologia delle azioni di miglioramento contrassegnate come "rischi accettati".
+* **Area di Punteggio sicuro** -personalizzata in base agli obiettivi dell'organizzazione e alle definizioni degli intervalli di buoni, OK e Bad score.
+* **Tendenza di regressione** : una sequenza temporale di punti che sono stati regressi a causa di modifiche alla configurazione, all'utente o al dispositivo.  
+* **Trend di confronto** : in che modo il Punteggio sicuro dell'organizzazione viene confrontato con gli altri nel corso del tempo. Questa visualizzazione può includere linee che rappresentano la media del Punteggio di organizzazioni con conteggio dei sedili analogo e una visualizzazione di confronto personalizzata che è possibile impostare.
+* **Trend di accettazione dei rischi** -cronologia delle azioni di miglioramento contrassegnate come "rischio accettato".
 * **Modifiche al Punteggio** : il numero di punti ottenuti, i punti di regressione, insieme alla variazione del punteggio successivo, nell'intervallo di date specificato.
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Confronta il tuo punteggio con organizzazioni come le tue
 
-Sono disponibili due punti per vedere in che modo il punteggio viene confrontato con le organizzazioni simili all'utente.
+Sono disponibili due posizioni per vedere come il punteggio viene confrontato con le organizzazioni che sono simili all'utente.
 
-La prima posizione si trova nella scheda **Panoramica** , in cui sarà possibile visualizzare un grafico a barre di confronto. Posizionare il puntatore del mouse sul grafico per visualizzare la possibilità di punteggio e punteggio.
+La prima posizione si trova nella scheda **Panoramica** , in cui è possibile visualizzare un grafico a barre di confronto. Posizionare il puntatore del mouse sul grafico per visualizzare la possibilità di punteggio e punteggio.
 
 ![Grafico a barre dei punteggi dell'organizzazione simili](../../media/secure-score/secure-score-comparison-bar.png)
 
@@ -67,15 +67,15 @@ La seconda posizione si trova nella scheda **metriche & tendenze** , in cui è p
 
 ![Grafico a linee dei punteggi dell'organizzazione simili nel corso del tempo](../../media/secure-score/secure-score-comparison-trend.png)
 
-In entrambi i grafici, è possibile selezionare **Gestisci confronti** per visualizzare e modificare le informazioni dell'organizzazione. È inoltre possibile creare un confronto personalizzato basato sull'industria, la dimensione dell'organizzazione, le licenze e le aree geografiche. 
+In entrambi i grafici, è possibile selezionare **Gestisci confronti** per visualizzare e modificare le informazioni dell'organizzazione. È inoltre possibile creare un confronto personalizzato basato sull'industria, la dimensione dell'organizzazione, le licenze e le aree geografiche.
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 
-In caso di problemi, fatecelo sapere inviando la [sicurezza, la Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. Si sta monitorando la community e viene fornita assistenza.
+In caso di problemi, inviaci informazioni scrivendo nella community [sicurezza, Privacy & conformità](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Si sta monitorando la community e viene fornita assistenza.
 
 ## <a name="related-resources"></a>Risorse correlate
 
 - [Panoramica del Punteggio Microsoft Secure](microsoft-secure-score.md)
-- [Valutare la posizione di sicurezza](microsoft-secure-score-improvement-actions.md)
+- [Valutazione del profilo di sicurezza](microsoft-secure-score-improvement-actions.md)
 - [Novità in arrivo](microsoft-secure-score-whats-coming.md)
 - [Novità](microsoft-secure-score-whats-new.md)

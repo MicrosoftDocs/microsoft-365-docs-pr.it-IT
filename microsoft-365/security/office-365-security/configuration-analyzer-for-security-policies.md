@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono ottenere informazioni su come utilizzare l'analizzatore di configurazione per individuare e correggere i criteri di sicurezza che contengono le impostazioni che si trovano al di sotto dei criteri di protezione standard e di protezione preimpostati.
-ms.openlocfilehash: 4515efcd73d40eae93523c6ef139553420e48677
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: Gli amministratori possono ottenere informazioni su come utilizzare l'analizzatore di configurazione per individuare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di protezione standard e di protezione preimpostati.
+ms.openlocfilehash: 39bec980ac95681ec2c2300914582d5e8786c884
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825774"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867164"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Analizzatore di configurazione per i criteri di protezione in EOP e Office 365 ATP
 
 > [!NOTE]
 > Le funzionalità descritte in questo argomento sono in anteprima, non sono disponibili in tutte le organizzazioni e sono soggette a modifiche.
 
-Analizzatore di configurazione nel centro sicurezza & conformità fornisce una posizione centrale per individuare e correggere i criteri di sicurezza che contengono impostazioni che si trovano al di sotto delle impostazioni di protezione standard e del profilo di protezione rigido nei [criteri di sicurezza preimpostati](preset-security-policies.md).
+Analizzatore di configurazione nel centro sicurezza & conformità fornisce una posizione centrale per individuare e correggere i criteri di sicurezza in cui le impostazioni sono al di sotto delle impostazioni di protezione standard e del profilo di protezione rigido nei [criteri di sicurezza preimpostati](preset-security-policies.md).
 
 I seguenti tipi di criteri vengono analizzati dall'analizzatore della configurazione:
 
@@ -59,7 +59,7 @@ I valori di impostazione dei criteri **standard** e **rigorosi** utilizzati come
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- È necessario disporre delle autorizzazioni per eseguire le procedure di questo argomento:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
 
   - Per utilizzare l'analizzatore di configurazione **e** aggiornare i criteri di sicurezza, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
@@ -81,7 +81,7 @@ L'analizzatore di configurazione dispone di due schede principali:
 
 - **Impostazioni e suggerimenti**: si seleziona standard o Strict e si confrontano tali impostazioni con i criteri di sicurezza esistenti. Nei risultati, è possibile modificare i valori delle impostazioni per riportarli allo stesso livello di standard o Strict.
 
-- **Analisi della deriva di configurazione e cronologia**: questa visualizzazione consente di monitorare le modifiche apportate ai criteri in base ai risultati dell'analizzatore di configurazione nel tempo.
+- **Analisi della deriva di configurazione e cronologia**: questa visualizzazione consente di monitorare le modifiche dei criteri nel tempo.
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Scheda Impostazioni e suggerimenti nell'analizzatore di configurazione
 
@@ -89,7 +89,7 @@ Per impostazione predefinita, la scheda viene visualizzata nel confronto con il 
 
 ![Visualizzazione delle impostazioni e dei suggerimenti nell'analizzatore di configurazione](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-Per impostazione predefinita, la colonna **gruppo di criteri/Nome impostazione** contiene una visualizzazione compressa dei diversi tipi di criteri di sicurezza e il numero di impostazioni disponibili in quelle condizioni che devono essere migliorate (se presenti). I tipi di criteri sono:
+Per impostazione predefinita, la colonna **gruppo di criteri/Nome impostazione** contiene una visualizzazione compressa dei diversi tipi di criteri di sicurezza e il numero di impostazioni che devono essere migliorate (se presenti). I tipi di criteri sono:
 
 - **Protezione da posta indesiderata**
 - **Anti-phishing**
@@ -97,11 +97,11 @@ Per impostazione predefinita, la colonna **gruppo di criteri/Nome impostazione**
 - **Allegati sicuri ATP** (se la sottoscrizione include ATP)
 - **Collegamenti sicuri ATP** (se la sottoscrizione include ATP)
 
-Nella visualizzazione predefinita, tutto è compresso. Accanto a ogni criterio, viene visualizzato un riepilogo dei risultati del confronto tra i criteri (che è possibile modificare) e le impostazioni nei criteri corrispondenti per i profili di protezione standard o rigorosi (che non è possibile modificare). Verranno visualizzate le informazioni seguenti:
+Nella visualizzazione predefinita, tutto è compresso. Accanto a ogni criterio, è disponibile un riepilogo dei risultati del confronto tra i criteri (che è possibile modificare) e le impostazioni nei criteri corrispondenti per i profili di protezione standard o rigorosi (che non è possibile modificare). Verranno visualizzate le informazioni seguenti per il profilo di protezione a cui si sta eseguendo il confronto:
 
-- **Verde**: tutte le impostazioni di tutti i criteri esistenti sono almeno altrettanto sicure del profilo di protezione a cui si sta effettuando il confronto.
-- **Ambra**: un numero limitato di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione a cui si sta effettuando il confronto.
-- **Rosso**: un numero significativo di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione a cui si sta effettuando il confronto. Questo potrebbe essere un paio di impostazioni in molti criteri o in molte impostazioni di un criterio.
+- **Verde**: tutte le impostazioni di tutti i criteri esistenti sono almeno altrettanto sicure del profilo di protezione.
+- **Ambra**: un numero limitato di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione.
+- **Rosso**: un numero significativo di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione. Questo potrebbe essere un paio di impostazioni in molti criteri o in molte impostazioni di un criterio.
 
 Per i confronti favorevoli, viene visualizzato il testo: **tutte le impostazioni seguono** i \<**Standard** or **Strict**\> **suggerimenti**. In caso contrario, verrà visualizzato il numero di impostazioni consigliate da modificare.
 
@@ -123,7 +123,7 @@ Se il confronto non ha suggerimenti per il miglioramento (verde), l'espansione d
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Scheda cronologia e analisi della deriva di configurazione nell'analizzatore di configurazione
 
-Questa scheda consente di monitorare le modifiche apportate ai criteri di sicurezza personalizzati in base alle informazioni nell'analizzatore della sicurezza. Per impostazione predefinita, vengono visualizzate le seguenti informazioni:
+Questa scheda consente di monitorare le modifiche apportate ai criteri di sicurezza personalizzati. Per impostazione predefinita, vengono visualizzate le seguenti informazioni:
 
 - **Data ultima modifica**
 - **Modificato da**

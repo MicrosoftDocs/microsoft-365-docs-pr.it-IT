@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica del Punteggio di produttività Microsoft.
-ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101648"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868856"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Punteggio di produttività Microsoft (anteprima)
 
@@ -42,9 +42,9 @@ Vengono forniti dati, informazioni dettagliate e suggerimenti in due aree:
 
     Queste informazioni vengono fornite perché quando le persone collaborano online, risparmiano tempo. Quando hanno la libertà di lavorare su qualsiasi dispositivo, sono più produttivi e soddisfatti. Quando sono in grado di comunicare in modo flessibile, sono più efficienti, formano relazioni migliori e l'organizzazione è più unita. Per ulteriori informazioni, vedere [rapporto Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Tecnologia Experience:** La produttività dipende da una tecnologia affidabile e performante, oltre che da un utilizzo efficiente di Microsoft 365. 365 Microsoft fornisce analisi degli endpoint, in cui vengono fornite informazioni dettagliate e consigli sull'installazione e i tempi di avvio del dispositivo e vengono forniti suggerimenti per la connettività di rete per la propria organizzazione.
+- **Tecnologia Experience:** La produttività dipende da una tecnologia affidabile e performante, oltre che da un utilizzo efficiente di Microsoft 365. Viene fornita l' [analisi dell'endpoint](https://aka.ms/endpointanalytics), che consente di comprendere in che modo la produttività degli utenti può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software dell'endpoint, garantendo le azioni consigliate per rimediare; Microsoft 365 fornisce informazioni sulla connettività di rete per la propria organizzazione.
 
-Per ulteriori informazioni sull'analisi dei punti finali, vedere [Panoramica della connettività di rete](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+Vedere [che cos'è l'analisi di endpoint](https://docs.microsoft.com/mem/analytics/overview) per una panoramica e Dettagli prerequisito. Per ulteriori informazioni sulle considerazioni relative alla connettività di rete di Microsoft 365, leggere [la panoramica della connettività di rete](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Modalità di calcolo del Punteggio

@@ -15,16 +15,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e884e6fc67670f25e48747324c15b158cc5c284
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7b29e91527f4c9cf6fd466ef730c9c4e9552b10e
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034035"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866884"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio dell'identità e creazione di report nel centro sicurezza Microsoft 365
 
-È possibile monitorare le identità nell'organizzazione e tenere conto dei comportamenti sospetti o rischiosi. Nella categoria **identità** dei **report**è possibile monitorare le operazioni seguenti:
+Monitorare le identità nell'organizzazione e tenere conto dei comportamenti sospetti o rischiosi. Nella categoria **identità** dei **report**è possibile monitorare le operazioni seguenti:
 
 * Utenti con il maggior numero di anomalie rilevate
 * Quanti utenti sono segnalati a rischio dai criteri di accesso condizionale
