@@ -313,6 +313,8 @@
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
                     - name: Segnalare posta indesiderata e phishing in Outlook sul web
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+                    - name: Segnalare posta indesiderata e phishing in Outlook per iOS e Android
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md
                     - name: Invio manuale di messaggi a Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: Usare le regole del flusso di posta per vedere quali segnalazioni gli utenti inviano a Microsoft
@@ -382,6 +384,8 @@
                   href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
                 - name: Usare DMARC per convalidare la posta elettronica
                   href: ./office-365-security/use-dmarc-to-validate-email.md
+            - name: Installare Application Guard per Office
+              href: ./office-365-security/install-app-guard.md
             - name: Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: Panoramica del Dashboard sulla sicurezza
