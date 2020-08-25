@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cbf118d918dd5c3bc922fbea157fb56a709fad66
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 99e7d28bea37ec282bd6358b5af81a3078dfdd38
+ms.sourcegitcommit: b7f4f1e04b27519b818d4255022b28f99fbe54af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065801"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46852502"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Considerazioni sulla sicurezza e sulla privacy di cloud computing del governo neozelandese
 
@@ -44,7 +44,7 @@ Informazioni su come accelerare la distribuzione del Framework NZ CC con il mode
 - Intune
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Exchange Online, SharePoint Online e Skype for business online. Microsoft NZ ha collaborato con il team di GCIO per sviluppare un'architettura di riferimento per l'integrazione di Exchange Online e della posta elettronica descritta nel white paper [Office 365: integrazione e architettura di riferimento per la posta elettronica](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)
+- Exchange Online, SharePoint Online e Microsoft teams. Microsoft NZ ha collaborato con il team di GCIO per sviluppare un'architettura di riferimento per l'integrazione di Exchange Online e della posta elettronica.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -65,7 +65,7 @@ Se l'Agenzia è tenuta a effettuare la certificazione e l'accreditamento del sis
 - [Cloud Computing: considerazioni sulla sicurezza delle informazioni e sulla privacy (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Office 365: integrazione e architettura di riferimento per la posta elettronica](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (altre linee guida di Microsoft NZ sull'adozione del servizio cloud)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Microsoft Responses to ' cloud computing IPSC '
 

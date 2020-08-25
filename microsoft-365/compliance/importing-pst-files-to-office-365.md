@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sull’uso del servizio di importazione nel Centro sicurezza e conformità per importare dati di posta elettronica (file PST) nelle cassette postali degli utenti.
-ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 36cf04722b13f3d1033ddae54e32307497d9194b
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127161"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860733"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Panoramica dell'importazione di file PST dell'organizzazione
 
@@ -146,7 +146,7 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
   
  **Dov'è disponibile il caricamento tramite rete?**
   
-Il caricamento tramite rete è attualmente disponibile nelle seguenti aree geografiche: Stati Uniti, Canada, Brasile, Regno Unito, Francia, Germania, Europa, India, Asia orientale, Sud-est asiatico, Giappone, Repubblica di Corea, Australia ed Emirati Arabi Uniti (UAE). Il caricamento tramite rete sarà presto disponibile anche in altre aree geografiche.
+Il caricamento tramite rete è attualmente disponibile nelle seguenti aree geografiche: Stati Uniti, Canada, Brasile, Regno Unito, Francia, Germania, Svizzera, Norvegia, Europa, India, Asia orientale, Sud-est asiatico, Giappone, Repubblica di Corea, Australia ed Emirati Arabi Uniti (EAU). Il caricamento tramite rete sarà presto disponibile anche in altre aree geografiche.
   
  **Quanto costa importare file PST con il caricamento tramite rete?**
   
