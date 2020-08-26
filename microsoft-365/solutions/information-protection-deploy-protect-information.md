@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Distribuire le funzionalità di sicurezza e conformità di Microsoft 365 e proteggere le informazioni personali.
-ms.openlocfilehash: 8e7d037218b4d67e9ba7f450bd1a5235b1ae164f
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 87057d7c823fc9808169efd254300f2b2f5e0487
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520994"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903896"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteggere le informazioni soggette alla normativa sulla privacy dei dati
 
@@ -73,6 +73,7 @@ Per iniziare a utilizzare uno schema di protezione delle informazioni in Microso
   - Client-Side/Content-Level
   - Automatizzato per data-at-rest in SharePoint e OneDrive
 - Prevenzione della perdita dei dati (DLP)
+- [Prevenzione della perdita di dati di Microsoft 365 endpoint (anteprima)](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
 - [Office 365 Message Encryption new capabilities (OME)](../compliance/ome.md) e [crittografia avanzata dei messaggi](../compliance/ome-advanced-message-encryption.md) ome
 
 Inoltre, la protezione a livello di sito e libreria sono meccanismi importanti da includere in qualsiasi schema di protezione.

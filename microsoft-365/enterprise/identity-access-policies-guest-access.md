@@ -1,13 +1,13 @@
 ---
 title: Criteri di identità e accesso ai dispositivi per consentire l'accesso ai clienti ed esterni B2B-Microsoft 365 per Enterprise | Documenti Microsoft
 description: Descrive l'accesso condizionale consigliato e i criteri correlati per proteggere l'accesso di utenti esterni e Guest.
-author: BrendaCarter
-manager: johmar
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0ab4a2d48a1ac90f48bbfee82239fc0c4c1d55d5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ad1203543db1c2bd0ea9e9bdd3433aad58db320b
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686827"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898105"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Criteri per consentire l'accesso all'ospite e all'esterno B2B
 In questo articolo viene descritto come modificare i criteri di identità e accesso ai dispositivi comuni consigliati per consentire l'accesso agli account B2B (Guest e utenti esterni). Queste linee guida si basano sui [criteri comuni di identità e accesso ai dispositivi](identity-access-policies.md).

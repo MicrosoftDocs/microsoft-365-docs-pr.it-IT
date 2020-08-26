@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: "Informazioni su come impostare i criteri di scadenza delle password per l'organizzazione nell'interfaccia di amministrazione di Microsoft 365. "
-ms.openlocfilehash: 053b3214862d477cbd122ff6336a6b53a98e5421
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: e95184bda631a5efaad0376c766ce5408c0a95e7
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597366"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868868"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Impostare i criteri di scadenza delle password per l'organizzazione
 
@@ -50,7 +50,7 @@ Seguire la procedura seguente se si vogliono impostare le password degli utenti 
 > [!IMPORTANT]
 > Solo gli [amministratori globali](../add-users/about-admin-roles.md) possono eseguire questa procedura.
   
-1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> **Impostazioni**.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> **Impostazioni organizzazione**.
 
 2. Passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sicurezza e privacy</a>.
  Gli utenti che non sono amministratori globali non visualizzeranno l'opzione Sicurezza e privacy.

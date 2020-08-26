@@ -1,13 +1,13 @@
 ---
 title: Criteri di identità e accesso ai dispositivi comuni-Microsoft 365 per Enterprise | Documenti Microsoft
 description: Descrive i criteri per i consigli di Microsoft su come applicare i criteri e le configurazioni relativi all'identità e all'accesso ai dispositivi.
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685975"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898117"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -282,7 +282,7 @@ Le impostazioni seguenti sono consigliate per Windows 10.
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
 |Password|Richiedere una password per sbloccare i dispositivi mobili|Richiedono||
-||Password semplici|Blocco||
+||Password semplici|Blocca||
 ||Tipo di password|Impostazione predefinita del dispositivo||
 ||Lunghezza minima password|6 ||
 ||Numero massimo di minuti di inattività prima che sia necessaria la password|15 |Questa impostazione è supportata per le versioni Android 4,0 e successive o per KNOX 4,0 o versione precedente. Per i dispositivi iOS, è supportato per iOS 8,0 e superiori|
@@ -302,7 +302,7 @@ Le impostazioni seguenti sono consigliate per Windows 10.
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Regole di protezione avanzata dalle minacce di Microsoft Defender|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Medio||
+|Regole di protezione avanzata dalle minacce di Microsoft Defender|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Media||
 
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Richiedere PC conformi (ma non conformi a telefoni e Tablet)

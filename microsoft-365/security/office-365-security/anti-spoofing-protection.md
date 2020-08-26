@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
-ms.openlocfilehash: 490d0d137f654e06512622e3fd5825822286ba41
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826662"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868880"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -162,3 +162,7 @@ Se il problema persiste, è possibile segnalare il messaggio come falso positivo
 ## <a name="considerations-for-anti-spoofing-protection"></a>Considerazioni per la protezione anti-spoofing
 
 Gli amministratori che attualmente inviano messaggi a Microsoft 365 devono assicurarsi che la posta elettronica venga autenticata correttamente. In caso contrario, potrebbero essere contrassegnati come posta indesiderata o phishing. Per altre informazioni, vedere [Soluzioni per i mittenti legittimi che inviano messaggi di posta elettronica non autenticati](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+
+I mittenti di un elenco di mittenti di un utente (o amministratore) specifico ignoreranno delle parti dello stack di filtraggio, inclusa la protezione contro lo spoofing. Per altre informazioni, vedere [Mittenti attendibili di Outlook](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
+
+Gli amministratori devono evitare, se possibile, di usare gli elenchi di mittenti consentiti o di domini consentiti. Questi mittenti ignorano tutte le protezioni da posta indesiderata, spoofing e phishing, e anche l'autenticazione del mittente (SPF, DKIM, DMARC). Per altre informazioni, vedere [Usare gli elenchi di mittenti o domini consentiti](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists).

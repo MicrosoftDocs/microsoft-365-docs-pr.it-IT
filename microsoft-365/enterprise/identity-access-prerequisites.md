@@ -1,13 +1,13 @@
 ---
 title: Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi-Microsoft 365 per Enterprise | Documenti Microsoft
 description: Descrive i criteri per i consigli di Microsoft su come applicare i criteri e le configurazioni relativi all'identità e all'accesso ai dispositivi.
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 295e1c713b97740fcf40e9607e650c242a68c035
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a81e17cad1722c58f5bf13b2a36c16fc2ff5cba4
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685879"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898041"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi
 

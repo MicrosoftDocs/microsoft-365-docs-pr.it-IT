@@ -1,13 +1,13 @@
 ---
 title: Criteri di protezione della posta elettronica consigliati-Microsoft 365 for Enterprise | Documenti Microsoft
 description: Descrive i criteri consigliati da Microsoft sull'applicazione di criteri e configurazioni che riguardano la posta elettronica.
-author: brendacarter
-manager: laurawi
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 39e7be86c06a471a4eefc0cacd3657c363eddae6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9c289006fc1501865b0cf5529c308a0986895504
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685607"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898141"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
 
@@ -39,7 +39,7 @@ Nel diagramma seguente vengono illustrati i criteri comuni di identità e access
 
 [Visualizzazione di una versione più grande di questa immagine](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
 
-Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando vengono configurati, è necessario creare solo il nuovo criterio per bloccare i client ActiveSync. Esaminare i criteri elencati nella tabella seguente e apportare le aggiunte consigliate o confermare che sono già inclusi. Ogni regola collega le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
+Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando vengono configurati, è necessario creare solo il nuovo criterio per bloccare i client ActiveSync. Esaminare i criteri elencati nella tabella seguente e apportare le aggiunte consigliate o confermare che sono già inclusi. Ogni regola collega le istruzioni di configurazione associate ai [criteri comuni di identità e accesso ai dispositivi](identity-access-policies.md).
 
 |Livello di protezione|Criteri|Ulteriori informazioni|
 |:---------------|:-------|:----------------|

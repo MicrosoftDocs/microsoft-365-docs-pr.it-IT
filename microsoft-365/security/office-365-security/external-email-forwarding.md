@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 88c3dae4f5a6786fe4eddea0d5e1c61dda837a87
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080114"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898053"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Configurazione dell'inoltro della posta elettronica esterno in Office 365
 
@@ -43,6 +43,11 @@ Office 365 non consente l'inoltro automatico esterno tramite le regole di posta 
 > La disattivazione dell'inoltro automatico agli indirizzi esterni in Office 365 viene distribuita in fasi con i dettagli comunicati tramite i post del [centro messaggi](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) . Per aiutare gli amministratori a prepararsi per queste modifiche, è necessario che modifichino i criteri in anticipo per garantire che non vi siano interruzioni per gli utenti.
 
 Ulteriori informazioni sugli utenti che utilizzano l'inoltro automatico (regole di posta in arrivo o inoltro SMTP) nell'organizzazione possono essere trovate nel [rapporto messaggi auto-inoltrati](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide).
+
+## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>Modalità di funzionamento di questo criterio con altri controlli di inoltro automatico
+
+Come amministratore, è possibile che siano già presenti altri tipi di controlli, ad esempio il blocco dell'inoltro automatico nei [domini remoti](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) e l'utilizzo di una regola di trasporto di Exchange (ETR). Entrambi i controlli sono indipendenti da questa caratteristica specifica, ad esempio se si consente l'inoltro automatico per un dominio remoto, ma si blocca l'inoltro automatico tramite il criterio di posta indesiderata in uscita, il risultato sarà che il messaggio inoltrato automaticamente è bloccato. Analogamente, se si consente l'inoltro automatico nel criterio di posta indesiderata in uscita ma lo si blocca in un dominio ETR o remoto, il messaggio verrà bloccato da uno di questi controlli. In questo modo è possibile, ad esempio, consentire l'inoltro automatico nei criteri di posta indesiderata in uscita e utilizzare i domini remoti per controllare i domini ai quali gli utenti possono inoltrare automaticamente i messaggi.
+
 
 ## <a name="the-blocked-email-forwarding-message"></a>Il messaggio di inoltro della posta elettronica bloccato
 

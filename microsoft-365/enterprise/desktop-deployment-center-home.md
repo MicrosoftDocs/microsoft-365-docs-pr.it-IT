@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Come ottenere le risorse equivalenti al centro distribuzione desktop obsoleto.
-ms.openlocfilehash: 6db35ba51f06c7cca025112ebd1bb8d718b7842c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686131"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898017"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Centro distribuzione desktop (obsoleto)
 
@@ -33,7 +33,7 @@ Utilizzare queste risorse per la distribuzione di desktop moderni:
 
 È inoltre possibile visualizzare i [video della serie di distribuzione desktop da Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).
 
-Per la distribuzione desktop è anche possibile [richiedere assistenza](https://aka.ms/mddhelp) a partner Microsoft e servizi FastTrack.
+È inoltre possibile trovare assistenza per la distribuzione desktop da Microsoft Partners e [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
