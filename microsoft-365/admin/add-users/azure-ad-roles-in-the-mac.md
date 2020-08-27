@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Gestisci questi ruoli di amministratore di Azure nell’interfaccia di amministrazione di Microsoft 365
-ms.openlocfilehash: d35daab57446fd2a6a052f7e0fca29af7910c5f9
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432468"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898029"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Ruoli di Azure Active Directory nell'interfaccia di amministrazione di Microsoft 365
 
@@ -68,6 +68,7 @@ Ecco un elenco dei ruoli di amministratore disponibili nell'interfaccia di ammin
 |Ruolo con autorizzazioni di lettura della privacy per il Centro messaggi     |    Accede ai messaggi sulla privacy dei dati nel Centro messaggi, riceve notifiche tramite posta elettronica.     |
 |Ruolo con autorizzazioni di lettura per il Centro messaggi     | Legge e condivide i messaggi regolari nel Centro messaggi, riceve riepiloghi settimanali tramite posta elettronica, ha accesso in sola lettura a utenti, gruppi, domini e abbonamenti.     |
 |Amministratore delle app di Office    |   Gestisce i criteri basati sul cloud per Office e i contenuti Novità che gli utenti vedono nelle app di Office.   |
+|Amministratore password    |   Reimpostare le password di utenti non amministratori o membri dei ruoli seguenti: ruolo con autorizzazioni di lettura nella directory, mittente dell'invito guest, amministratore password. Questo ruolo non può concedere la capacità di gestire le richieste di servizio o monitorare l'integrità dei servizi.   |
 |Amministratore di Power BI    |   Ha accesso completo alle attività di gestione di Power BI, gestisce le richieste di servizio e monitora l'integrità dei servizi.   |
 |Amministratore di Power Platform     |    Ha accesso completo a Microsoft Dynamics 365, PowerApps, criteri di prevenzione della perdita dei dati e Microsoft Flow.     |
 |Amministratore ruolo con privilegi     |    Gestisce le assegnazioni dei ruoli e tutte le funzionalità di controllo dell'accesso di Privileged Identity Management.     |
