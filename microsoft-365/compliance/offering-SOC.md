@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 2428109743b408061ead8ad87d5e59ac30417c06
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254299"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898084"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -107,7 +107,7 @@ Con i report, il revisore può confrontare i risultati dei servizi cloud Microso
 
 **Con quale frequenza vengono emessi report SOC di Azure?**
 
-I report SOC per Azure, Microsoft Cloud app Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi ogni sei mesi (i fine periodo sono il 31 marzo e il 30 settembre). Le lettere ponte vengono emesse a gennaio per coprire il periodo 01/10 - 31/12 e a luglio per coprire il periodo 01/04 - 30/06. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
+I report SOC per Azure, Microsoft Cloud app Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi ogni sei mesi (i fine periodo sono il 31 marzo e il 30 settembre). Le lettere ponte vengono emesse ogni trimestre per coprire il periodo di tre mesi precedente. Ad esempio, la lettera di gennaio copre 1/10-31/12, la lettera di aprile copre 1/1-31/3, la lettera di luglio copre 1/4-30/6, e la lettera di ottobre copre 1/7-30/9. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
 
 **Devo sottoporre a controlli i data center di Microsoft?**
 
