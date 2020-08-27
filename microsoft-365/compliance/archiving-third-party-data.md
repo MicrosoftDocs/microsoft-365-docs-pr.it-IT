@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come importare i dati di terze parti dalle piattaforme per i social media, dalle piattaforme di messaggistica istantanea e dalle piattaforme di collaborazione documenti alle cassette postali di Microsoft 365.
-ms.openlocfilehash: 6b75d2857fd95d24a90f9245cb299b7558aa3cec
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: ebb5c78dc043afb0e1e35aa8b5c70cd2219a6349
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860711"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282614"
 ---
 # <a name="archive-third-party-data"></a>Archiviare i dati di terze parti
 
@@ -38,7 +38,7 @@ Nella tabella seguente sono elencati i connettori di dati di terze parti disponi
 > [!TIP]
 > Fare clic sul collegamento nella colonna di **dati di terze parti** per passare alle istruzioni dettagliate per la creazione di un connettore per il tipo di dati.
 
-|Dati di terze parti  |Blocco per controversia legale|eDiscovery  |Criteri di conservazione  |Gestione dei record  |Conformità delle comunicazioni  |Gestione dei rischi Insider  |
+|Dati di terze parti  |Blocco per controversia legale|eDiscovery  |Impostazioni di conservazione  |Gestione dei record  |Conformità delle comunicazioni  |Gestione dei rischi Insider  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
@@ -71,9 +71,9 @@ I tre strumenti principali di eDiscovery in Microsoft 365 sono content search, C
 
    Sia eDiscovery core che Advanced eDiscovery consentono di gestire i dati di terze parti che possono essere rilevanti per le indagini legali o interne dell'organizzazione.
 
-### <a name="retention-policies"></a>Criteri di conservazione
+### <a name="retention-settings"></a>Impostazioni di conservazione
 
-È possibile applicare un [criterio di conservazione](retention.md) alle cassette postali degli utenti per conservare e quindi eliminare i dati di terze parti (e altri contenuti delle cassette postali) dopo la scadenza del periodo di conservazione. È inoltre possibile utilizzare i criteri di conservazione per eliminare i dati di terze parti di una determinata età o per attivare una revisione della disposizione al termine della scadenza del periodo di conservazione.
+È possibile applicare un [criterio di conservazione](retention.md) alle cassette postali degli utenti per conservare e quindi eliminare i dati di terze parti (e altri contenuti delle cassette postali) dopo la scadenza del periodo di conservazione. È inoltre possibile utilizzare i criteri di conservazione per eliminare i dati di terze parti di una determinata età o [utilizzare le etichette di conservazione per attivare una revisione della disposizione](disposition.md) quando il periodo di conservazione per i dati di terze parti scade.
 
 ### <a name="records-management"></a>Gestione dei record
 

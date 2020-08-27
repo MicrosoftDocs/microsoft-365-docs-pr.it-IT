@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: eb57a60643eb6168ad9fbbca178a3baf1b26392b
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 7ebb2673d1d275075cf32cd18996837ec4024622
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632107"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282604"
 ---
 # <a name="supervision-policies"></a>Criteri di supervisione
 
@@ -143,7 +143,7 @@ Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi
 
 #### <a name="custom-keyword-dictionaries"></a>Dizionari per parole chiave personalizzate
 
-Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100.000 termini per dizionario. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di supervisione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che può essere [importato nel centro conformità](create-a-keyword-dictionary.md).
+Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100KB di termini (post Compression) nel dizionario e supportano qualsiasi lingua. Il limite del tenant è inoltre 100KB dopo la compressione. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di supervisione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che può essere [importato nel centro conformità](create-a-keyword-dictionary.md).
 
 #### <a name="offensive-language"></a>Lingua offensiva
 

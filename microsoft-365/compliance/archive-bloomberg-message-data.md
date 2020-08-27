@@ -7,17 +7,17 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare e archiviare i dati dallo strumento di posta elettronica del messaggio Bloomberg in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 700a0619d2299fc7254628059787478cc0e168fa
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: f9793db545b5298663da7bbfa39a0878854e070d
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937362"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255863"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data-preview"></a>Configurare un connettore per archiviare i dati dei messaggi Bloomberg (anteprima)
 
@@ -41,7 +41,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
    Il connettore esegue questa operazione utilizzando il valore della proprietà CorporateEmailAddress. Ogni messaggio di posta elettronica contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di posta elettronica. Oltre a eseguire il mapping automatico degli utenti utilizzando il valore della proprietà *CorporateEmailAddress* , è anche possibile definire un mapping personalizzato caricando un file di mapping CSV. Questo file di mapping contiene un UUID di Bloomberg e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente dell'organizzazione. Se si Abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di posta elettronica il connettore osserverà per la prima volta il file di mapping personalizzato. Se non trova un utente valido di Microsoft 365 che corrisponde all'UUID di Bloomberg di un utente, il connettore utilizza la proprietà *CorporateEmailAddress* dell'elemento di posta elettronica. Se il connettore non trova un utente valido di Microsoft 365 nel file di mapping personalizzato o nella proprietà *CorporateEmailAddress* dell'elemento di posta elettronica, l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Molti dei passaggi di implementazione necessari per archiviare i dati dei messaggi di Bloomberg sono esterni a Microsoft 365 e devono essere completati prima di poter creare il connettore nel centro conformità.
 

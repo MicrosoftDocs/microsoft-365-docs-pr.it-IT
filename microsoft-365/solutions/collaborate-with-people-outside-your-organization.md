@@ -15,13 +15,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Informazioni su come configurare Microsoft 365 per la collaborazione con utenti esterni all'organizzazione.
-ms.openlocfilehash: 8bde8a3ffe4ab4ec8d0a0ada8e7c6030d00a549b
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Configurare Microsoft 365 per abilitare la condivisione e la sicurezza aggiuntiva quando si invitano gli utenti esterni a collaborare in teams e a condividere i siti di SharePoint.
+ms.openlocfilehash: f8dc81ae32bed7a12daf21955ada60ab852d4617
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527849"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255792"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborare con utenti esterni all'organizzazione
 

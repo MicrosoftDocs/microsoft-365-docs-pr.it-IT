@@ -7,19 +7,19 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 0febd13003cdcb80867bd7f5b91ac482a463895a
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 49589d2e5a6a716a2e224aa28b73bd14f9048d0b
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527588"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255769"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurare un connettore per l'importazione dei dati HR (anteprima)
 
@@ -27,7 +27,7 @@ ms.locfileid: "46527588"
 
 La configurazione di un connettore per i dati HR che i criteri di gestione dei rischi Insider possono utilizzare per generare indicatori di rischio consiste nella creazione di un file CSV che contiene i dati HR, la creazione di un'app in Azure Active Directory utilizzata per l'autenticazione, la creazione di un connettore di dati HR nel centro conformità di Microsoft 365 e l'esecuzione di uno script (su base pianificata) che consente di ingerire i dati HR nei file CSV nel cloud Microsoft in modo che sia disponibile per l'insider soluzione di gestione dei rischi.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Determinare gli scenari e i dati HR da importare in Microsoft 365. In questo modo è possibile determinare il numero di file CSV e i connettori HR necessari per la creazione e la modalità di generazione e struttura dei file CSV. I dati HR che vengono importati sono determinati dai criteri di gestione dei rischi Insider che si desidera implementare. Per ulteriori informazioni, vedere passaggio 1.
 
@@ -307,6 +307,9 @@ L'ultimo passaggio per la configurazione di un connettore HR è l'esecuzione di 
     ```
 
    Se il caricamento ha esito positivo, lo script Visualizza il messaggio di **caricamento con esito positivo** .
+   
+   > [!NOTE]
+   > Se si verificano problemi durante l'esecuzione del comando precedente a causa dei criteri di excution, vedere [About Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) e [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) per informazioni su come impostare i criteri di esecuzione. 
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Passaggio 5: monitorare il connettore HR
 
@@ -362,7 +365,7 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
    b. Nella casella **programma/script** fare clic su **Sfoglia**e passare al percorso seguente e selezionarlo in modo che il percorso venga visualizzato nella casella: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
-   c. Nella casella **Add arguments (optional)** incollare lo stesso comando script eseguito nel passaggio 4. Per esempio`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   c. Nella casella **Add arguments (optional)** incollare lo stesso comando script eseguito nel passaggio 4. Per esempio `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
    d. Nella casella **inizia in (facoltativo)** incollare il percorso della cartella dello script eseguito nel passaggio 4. Ad esempio, `C:\Users\contosoadmin\Desktop\Scripts`.
 

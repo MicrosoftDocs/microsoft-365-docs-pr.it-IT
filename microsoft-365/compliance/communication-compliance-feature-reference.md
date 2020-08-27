@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d8025f6abe9f1b68dea0856b2a53139a711198c6
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 5fe8e01e24f38ddd62649349575bd38ec37ccae4
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632129"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282674"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -150,7 +150,7 @@ Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi
 
 ### <a name="custom-keyword-dictionaries"></a>Dizionari per parole chiave personalizzate
 
-Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100.000 termini per dizionario e supportano qualsiasi lingua. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di conformità della comunicazione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che è possibile [importare nel centro conformità](create-a-keyword-dictionary.md). Utilizzare i dizionari personalizzati quando è necessario supportare termini o lingue specifiche per l'organizzazione e i criteri.
+Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100KB di termini (post Compression) nel dizionario e supportano qualsiasi lingua. Il limite del tenant è inoltre 100KB dopo la compressione. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di conformità della comunicazione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che è possibile [importare nel centro conformità](create-a-keyword-dictionary.md). Utilizzare i dizionari personalizzati quando è necessario supportare termini o lingue specifiche per l'organizzazione e i criteri.
 
 ### <a name="classifiers"></a>Classificatori
 
@@ -275,7 +275,7 @@ I filtri di conformità di comunicazione consentono di filtrare e ordinare i mes
 | **Dominio mittente** | Il dominio che ha inviato il messaggio. |
 | **Dimensioni** | Le dimensioni del messaggio in KB. |
 | **Subject/title** | L'oggetto del messaggio o il titolo della chat. |
-| **Categorie** | Tag assegnati a un messaggio, che può essere *discutibile*, *conforme*o *non conforme*. |
+| **Tag** | Tag assegnati a un messaggio, che può essere *discutibile*, *conforme*o *non conforme*. |
 | **Escalation a** | Il nome utente della persona inclusa come parte di un'azione di escalation dei messaggi. |
 | **Classificatori** | Nome dei classificatori incorporati e personalizzati che si applicano al messaggio. Alcuni esempi includono il *linguaggio offensivo*, la *molestia mirata*, la *profanità*, la *minaccia*e altro ancora.
 

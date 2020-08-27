@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1fa80d79c1802d96fc755def3b8ec15af13b0c9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 75d709cc1f98a12bb6f5a5b6539583a33be500b6
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649404"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255746"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Cercare in modo proattivo minacce con la ricerca avanzata di Microsoft Threat Protection
 
@@ -51,7 +51,7 @@ La caratteristica è simile alla [ricerca avanzata in Microsoft Defender ATP](ht
 | **Informazioni su come utilizzare i risultati della query** | Informazioni sui grafici e sui vari modi in cui è possibile visualizzare o esportare i risultati. Scoprire come è possibile ottimizzare rapidamente le query, eseguire il drill-down per ottenere informazioni più ricche e intraprendere azioni di risposta. | - [Utilizzo dei risultati delle query](advanced-hunting-query-results.md)<br>- [Eseguire un'azione sui risultati delle query](advanced-hunting-take-action.md) |
 | **Comprensione dello schema** | È possibile ottenere una conoscenza buona e approfondita delle tabelle nello schema e delle relative colonne. Questo consente di determinare dove cercare i dati e come creare le query. | [Informazioni di riferimento sullo schema](advanced-hunting-schema-tables.md) |
 | **Sfruttare le query predefinite** | Esplorare le raccolte di query predefinite che coprono diversi scenari di ricerca delle minacce. | - [Utilizzo di query condivise](advanced-hunting-shared-queries.md)<br>- [Andare a caccia](advanced-hunting-go-hunt.md) |
-| **Ottimizzare le query** | Informazioni su come creare query efficienti e query che combinino dati da email e dispositivi. | - [Procedure consigliate per le query](advanced-hunting-shared-queries.md) <br>- [Cercare tra i dispositivi e i messaggi di posta elettronica](advanced-hunting-best-practices.md) |
+| **Ottimizzare le query** | Informazioni su come creare query efficienti e query che combinino dati da email e dispositivi. | - [Procedure consigliate per le query](advanced-hunting-best-practices.md) <br>- [Cercare tra i dispositivi e i messaggi di posta elettronica](advanced-hunting-query-emails-devices.md) |
 | **Creare regole di rilevamento personalizzate** | Informazioni su come è possibile utilizzare le query di ricerca avanzate per attivare gli avvisi e applicare automaticamente le azioni di risposta. | - [Panoramica sui rilevamenti personalizzati](custom-detections-overview.md)<br>- [Regole di rilevamento personalizzate](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Ottenere l'accesso
@@ -63,12 +63,15 @@ I dati di caccia avanzati possono essere categorizzati in due tipi distinti, ogn
 - **Dati relativi a eventi o attività** : popola le tabelle relative agli avvisi, agli eventi di sicurezza, agli eventi di sistema e alle valutazioni di routine. La ricerca avanzata riceve questi dati quasi subito dopo che i sensori che li raccolgono li trasmettono correttamente ai servizi cloud corrispondenti. Ad esempio, è possibile iniziare a eseguire query sui dati degli eventi da sensori integri su workstation o controller di dominio quasi subito dopo essere disponibili su Microsoft Defender ATP e Azure ATP.
 - **Dati entità** : popola le tabelle con informazioni consolidate su utenti e dispositivi. Questi dati provengono da origini dati relativamente statiche, ad esempio le voci di Active Directory e le origini dinamiche, ad esempio i registri eventi. Per fornire dati aggiornati, le tabelle vengono aggiornate ogni 15 minuti con tutte le nuove informazioni, aggiungendo righe che potrebbero non essere completamente popolate. Ogni 24 ore, i dati vengono consolidati per inserire un record che contiene il set di dati più recente e completo su ogni entità.
 
+## <a name="time-zone"></a>Fuso orario
+Tutte le informazioni sul tempo nella ricerca avanzata sono nel fuso orario UTC.
+
 ## <a name="related-topics"></a>Argomenti correlati
 - [Apprendere il linguaggio delle query](advanced-hunting-query-language.md)
 - [Usare i risultati delle query](advanced-hunting-query-results.md)
 - [Intraprendere azioni sui risultati della query](advanced-hunting-take-action.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
-- [Cercare tra i dispositivi, i messaggi di posta elettronica, le app e le identità](advanced-hunting-query-emails-devices.md)
+- [Cercare tra dispositivi, posta elettronica, app e identità](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
 - [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)
 - [Panoramica dei rilevamenti personalizzati](custom-detections-overview.md)

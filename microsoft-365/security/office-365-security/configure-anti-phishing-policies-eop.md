@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono ottenere informazioni su come creare, modificare ed eliminare i criteri di anti-phishing disponibili nelle organizzazioni di Exchange Online Protection (EOP) con o senza cassette postali di Exchange Online.
-ms.openlocfilehash: af6577d32d43300867d29a365baaa4e1e7e1b5e3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3b83bcd3c60dbd779d727a79f6689fdf0004d340
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825750"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255758"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurazione dei criteri di anti-phishing in EOP
 
@@ -42,7 +42,7 @@ La differenza tra questi due elementi non è ovvia quando si gestiscono i criter
 - Quando si modifica un criterio di anti-phishing, le impostazioni relative ai filtri nome, priorità, abilitato o disabilitato e destinatario modificano la regola phishing. Tutte le altre impostazioni modificano i criteri anti-phishing associati.
 - Quando si rimuove un criterio di anti-phishing, vengono rimosse la regola anti-phishing e i criteri anti-phishing associati.
 
-In Exchange Online PowerShell, è possibile gestire il criterio e la regola separatamente. Per ulteriori informazioni, vedere la sezione [utilizzare PowerShell di Exchange Online per configurare i criteri di anti-phishing](#use-exchange-online-powershell-to-configure-anti-phishing-policies) più avanti in questo argomento.
+In Exchange Online PowerShell, è possibile gestire il criterio e la regola separatamente. Per ulteriori informazioni, vedere la sezione [utilizzare PowerShell di Exchange Online per configurare i criteri di anti-phishing](#use-exchange-online-powershell-to-configure-anti-phishing-policies) più avanti in questo articolo.
 
 Ogni organizzazione dispone di un criterio di anti-phishing incorporato denominato Office365 antiphishing default con queste proprietà:
 
@@ -60,7 +60,7 @@ Per aumentare l'efficacia della protezione anti-phishing, è possibile creare cr
 
   Non è possibile gestire i criteri di anti-phishing in standalone EOP PowerShell.
 
-- È necessario disporre delle autorizzazioni per eseguire le procedure di questo argomento:
+- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni seguenti:
 
   - Per aggiungere, modificare ed eliminare i criteri di anti-phishing, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
@@ -72,7 +72,7 @@ Per aumentare l'efficacia della protezione anti-phishing, è possibile creare cr
     - **Lettore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
     - **Gestione organizzazione in sola lettura** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Per poter creare e modificare i criteri di protezione dalla posta indesiderata in EOP autonomo, è necessario eseguire un'operazione che richiede l' _idratazione_ per il tenant. Ad esempio, nell'interfaccia di amministrazione di Exchange (EAC), è possibile accedere alla scheda **autorizzazioni** , selezionare un gruppo di ruoli esistente, fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) e rimuovere un ruolo (che verrà infine aggiunto di nuovo). Se il tenant non è mai stato idratato, viene visualizzata una finestra di dialogo denominata **Impostazioni organizzazione di aggiornamento** con una barra di avanzamento che deve essere completata correttamente. Per ulteriori informazioni sull'idratazione, vedere il cmdlet [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (che non è disponibile in standalone EOP PowerShell o nel Security & Compliance Center).
+- Per creare e modificare criteri di anti-phishing in EOP autonomo, è necessario eseguire un'operazione che richiede l' _idratazione_ per il tenant. Ad esempio, nell'interfaccia di amministrazione di Exchange (EAC), è possibile accedere alla scheda **autorizzazioni** , selezionare un gruppo di ruoli esistente, fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) e rimuovere un ruolo (che verrà infine aggiunto di nuovo). Se il tenant non è mai stato idratato, viene visualizzata una finestra di dialogo denominata **Impostazioni organizzazione di aggiornamento** con una barra di avanzamento che deve essere completata correttamente. Per ulteriori informazioni sull'idratazione, vedere il cmdlet [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (che non è disponibile in standalone EOP PowerShell o nel Security & Compliance Center).
 
 - Per le impostazioni consigliate per i criteri di anti-phishing, vedere [EOP default anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
@@ -269,7 +269,7 @@ Non è possibile rimuovere il criterio predefinito.
 
 ## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Utilizzare PowerShell di Exchange Online per configurare i criteri di anti-phishing
 
-Come descritto in precedenza, un criterio di protezione da posta indesiderata è costituito da un criterio phishing e da una regola anti-phishing.
+Come descritto in precedenza, un criterio anti-phishing è costituito da un criterio phishing e da una regola anti-phishing.
 
 In Exchange Online PowerShell, la differenza tra i criteri anti-phishing e le regole anti-phishing è evidente. Per gestire i criteri anti-phishing è possibile utilizzare i cmdlet ** \* -AntiPhishPolicy** e gestire le regole di anti-phishing utilizzando i cmdlet ** \* -AntiPhishRule** .
 
@@ -306,9 +306,8 @@ Per creare un criterio di phishing, utilizzare la sintassi seguente:
 New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableAntiSpoofEnforcement <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
-In questo esempio viene creato il criterio phishing denominato Research Quarantine con le seguenti impostazioni:
+In questo esempio viene creato un criterio anti-phishing denominato Research Quarantine con le seguenti impostazioni:
 
-- Il criterio è abilitato (non viene utilizzato il parametro _Enabled_ e il valore predefinito è `$true` ).
 - La descrizione è: criteri del reparto ricerche.
 - Consente di modificare l'azione predefinita per lo spoofing in quarantena.
 
@@ -394,7 +393,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-AntiPhi
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>Utilizzo di PowerShell per la modifica dei criteri anti-phishing
 
-A parte gli elementi seguenti, le stesse impostazioni sono disponibili quando si modifica un criterio di phishing in PowerShell come quando si crea il criterio come descritto nel [passaggio 1: utilizzare PowerShell per creare una sezione dei criteri anti-phishing](#step-1-use-powershell-to-create-an-anti-phish-policy) più indietro in questo argomento.
+A parte gli elementi seguenti, le stesse impostazioni sono disponibili quando si modifica un criterio di phishing in PowerShell come quando si crea un criterio come descritto nel [passaggio 1: utilizzare PowerShell per creare un criterio di phishing](#step-1-use-powershell-to-create-an-anti-phish-policy) più indietro in questo articolo.
 
 - L'opzione _MakeDefault_ che consente di trasformare il criterio specificato nel criterio predefinito (applicato a tutti, priorità sempre **più bassa** e non è possibile eliminarla) è disponibile solo quando si modifica un criterio di protezione da phishing in PowerShell.
 
@@ -412,7 +411,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [set-AntiPhi
 
 L'unica impostazione che non è disponibile quando si modifica una regola anti-phishing in PowerShell è il parametro _Enabled_ che consente di creare una regola disattivata. Per abilitare o disabilitare le regole anti-phishing esistenti, vedere la sezione successiva.
 
-In caso contrario, non sono disponibili ulteriori impostazioni quando si modifica una regola anti-phishing in PowerShell. Le stesse impostazioni sono disponibili quando si crea una regola come descritto nel [passaggio 2: utilizzo di PowerShell per creare una sezione di regola anti-phishing](#step-2-use-powershell-to-create-an-anti-phish-rule) più indietro in questo argomento.
+In caso contrario, le stesse impostazioni sono disponibili quando si crea una regola come descritto nel [passaggio 2: utilizzare PowerShell per creare una sezione di regola phishing](#step-2-use-powershell-to-create-an-anti-phish-rule) più indietro in questo articolo.
 
 Per modificare una regola anti-phishing, utilizzare la sintassi seguente:
 
@@ -444,7 +443,7 @@ In questo esempio viene abilitata la stessa regola.
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-AntiPhishrule) e [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-AntiPhishrule).
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) e [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>Utilizzo di PowerShell per impostare la priorità delle regole anti-phishing
 
@@ -513,7 +512,7 @@ Per verificare la corretta configurazione dei criteri di anti-phishing ATP, eseg
   - Selezionare il criterio dall'elenco e visualizzare i dettagli nel riquadro a comparsa.
   - Fare clic su **criteri predefiniti** e visualizzare i dettagli nel riquadro a comparsa.
 
-- In Exchange Online PowerShell, sostituire \<Name\> con il nome del criterio o della regola ed eseguire il comando riportato di seguito e verificare le impostazioni:
+- In Exchange Online PowerShell, sostituire \<Name\> con il nome del criterio o della regola, eseguire il comando riportato di seguito e verificare le impostazioni:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"
