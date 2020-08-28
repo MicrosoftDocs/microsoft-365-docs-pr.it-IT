@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una recensione di disposizione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 20f44244005f5a34a0d82f32f625fb067f02df20
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867211"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294765"
 ---
 # <a name="disposition-of-content"></a>Disposizione del contenuto
 
@@ -97,7 +97,7 @@ L'attivazione di una revisione della disposizione alla fine del periodo di conse
 
 Quando un revisore riceve una notifica tramite posta elettronica che il contenuto è pronto per la revisione, accede alla scheda **disposizione** dalla **gestione dei record** nel centro conformità di Microsoft 365. I revisori possono vedere quanti elementi per ogni etichetta di conservazione sono in attesa di disposizione, quindi selezionare un'etichetta di conservazione per visualizzare tutto il contenuto con quell'etichetta.
 
-Dopo aver selezionato un'etichetta di conservazione, vengono visualizzate tutte le disposizioni in sospeso per tale etichetta dalla scheda **disposizione in sospeso** . Selezionare uno o più elementi in cui è possibile scegliere un'azione e immettere un commento di giustificazione:
+Dopo aver selezionato un'etichetta di conservazione, è possibile visualizzare tutte le disposizioni in sospeso per tale etichetta dalla scheda **disposizione in sospeso** . Selezionare uno o più elementi in cui è possibile scegliere un'azione e immettere un commento di giustificazione:
 
 ![Opzioni di disposizione](../media/retention-disposition-options.png)
 
@@ -120,11 +120,11 @@ Il contenuto in attesa di una revisione della disposizione viene eliminato solo 
 ## <a name="disposition-of-records"></a>Eliminazione dei record
 
 > [!NOTE]
-> L'implementazione per la prova dello smaltimento per i record in SharePoint e OneDrive è stata completata. Verrà visualizzato l'elenco delle etichette di conservazione contrassegnate come contenuto come record per SharePoint e OneDrive nella sezione disposizione della pagina Gestione record del centro conformità di Microsoft 365. In queste etichette, è possibile visualizzare l'elenco di elementi in SharePoint e OneDrive che sono stati eliminati automaticamente o dopo una revisione della disposizione.
+> L'implementazione per la prova dello smaltimento per i record in SharePoint e OneDrive è stata completata.
 >
-> La prova dello smaltimento dei record in Exchange non è ancora attiva. Quando l'implementazione viene avviata e al termine dell'operazione, verrà aggiornata questa nota.
+> La prova dello smaltimento dei record in Exchange è stata appena avviata. Al termine di questa implementazione, verrà aggiornata la nota.
 
-Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record eliminati automaticamente. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . Ad esempio:
+Utilizzare la scheda **disposizione** della pagina **Gestione record** per identificare i record che sono stati eliminati, automaticamente o dopo una revisione della disposizione. Questi elementi visualizzano i **record eliminati** nella colonna **tipo** . Ad esempio:
 
 ![Elementi eliminati senza una revisione di disposizione](../media/records-disposed2.png)
 

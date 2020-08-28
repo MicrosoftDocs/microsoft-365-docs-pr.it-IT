@@ -1,17 +1,17 @@
 ---
 title: Supporto per Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c68d12ccd339c863c2dd96b2a56cfaf19e604f79
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: de113fd61fbb8fabaea64d58525a2f8aca052e90
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632002"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289782"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Supporto per Microsoft Managed Desktop
 
@@ -27,7 +27,7 @@ I clienti possono contattare le operazioni di Microsoft Managed Desktop per:
 Il supporto di Microsoft Managed Desktop include:
 
 - Un team di ingegneri dedicati ai dispositivi Microsoft Managed Desktop
-- Opzioni di supporto per gli utenti finali con i dispositivi Microsoft Managed Desktop
+- Opzioni di supporto per gli utenti con dispositivi desktop Microsoft gestiti
 - Concede un accesso amministrativo limitato ai dispositivi Microsoft Managed Desktop per gli ingegneri che gestiscono i dispositivi Microsoft Managed Desktop 
 
 Prodotti supportati:
@@ -48,4 +48,4 @@ Dettagli del supporto:
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Informazioni su come gli amministratori IT possono ottenere supporto](../working-with-managed-desktop/admin-support.md)
-- [Informazioni su come gli utenti finali possono ottenere supporto](../working-with-managed-desktop/end-user-support.md)
+- [Informazioni su come gli utenti possono ottenere supporto](../working-with-managed-desktop/end-user-support.md)

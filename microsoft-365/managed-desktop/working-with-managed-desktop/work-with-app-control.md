@@ -10,16 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0b76a14a30caeb75cfdcb8acc5715fe6710e0625
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430448"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289460"
 ---
 # <a name="work-with-app-control"></a>Usare il controllo delle applicazioni
 
-Una volta che il controllo app è stato distribuito nell'ambiente in uso, sia le operazioni di Microsoft Managed Desktop che quelle gestite hanno responsabilità continuative. Ad esempio, è possibile aggiungere una nuova app nell'ambiente o aggiungere (o rimuovere) un firmatario attendibile. Per migliorare la sicurezza, tutte le app devono essere firmate con codice prima di rilasciarle agli utenti finali. I dettagli dell'editore di un'app includono informazioni sul firmatario.
+Una volta che il controllo app è stato distribuito nell'ambiente in uso, sia le operazioni di Microsoft Managed Desktop che quelle gestite hanno responsabilità continuative. Ad esempio, è possibile aggiungere una nuova app nell'ambiente o aggiungere (o rimuovere) un firmatario attendibile. Per migliorare la sicurezza, tutte le app devono essere firmate con codice prima di rilasciarle agli utenti. I dettagli dell'editore di un'app includono informazioni sul firmatario.
 
 
 ## <a name="add-a-new-app"></a>Aggiungere una nuova app

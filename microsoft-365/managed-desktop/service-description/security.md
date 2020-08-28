@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: debd21a975ce209677bdd054952e31f34260e405
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778257"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289484"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Tecnologie di sicurezza in Microsoft Managed Desktop
 
@@ -62,7 +62,7 @@ I clienti sono responsabili della sicurezza della rete.
 
 Servizio | Descrizione
 --- | ---
-VPN | I clienti possiedono l'infrastruttura VPN per garantire che le risorse aziendali limitate possano essere esposte all'esterno della rete Intranet.<br><br>Requisiti minimi: Microsoft Managed Desktop richiede una soluzione VPN compatibile con Windows 10 e supportata. Se l'organizzazione ha bisogno di una soluzione VPN, deve supportare Windows 10 e essere imballata e distribuita tramite Intune. Per ulteriori informazioni, contattare l'editore del software.<br><br>Elemento consigliato<br>-Microsoft consiglia una soluzione VPN moderna che potrebbe essere distribuita facilmente tramite Intune per spingere i profili VPN. In questo modo è possibile accedere a una rete aziendale sempre attiva, senza problemi, affidabile e sicura. Per ulteriori informazioni, vedere [[VPN settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-I client VPN spessi o i client VPN legacy non sono consigliati da Microsoft durante l'utilizzo di Microsoft Managed Desktop poiché possono influire sull'ambiente dell'utente finale.<br>-Microsoft consiglia che il traffico Web in uscita vada direttamente a Internet senza passare attraverso la VPN per evitare problemi di prestazioni.<br>-Idealmente, Microsoft consiglia di utilizzare il proxy dell'applicazione di Azure Active Directory invece di una VPN.
+VPN | I clienti possiedono l'infrastruttura VPN per garantire che le risorse aziendali limitate possano essere esposte all'esterno della rete Intranet.<br><br>Requisiti minimi: Microsoft Managed Desktop richiede una soluzione VPN compatibile con Windows 10 e supportata. Se l'organizzazione ha bisogno di una soluzione VPN, deve supportare Windows 10 e essere imballata e distribuita tramite Intune. Per ulteriori informazioni, contattare l'editore del software.<br><br>Elemento consigliato<br>-Microsoft consiglia una soluzione VPN moderna che potrebbe essere distribuita facilmente tramite Intune per spingere i profili VPN. In questo modo è possibile accedere a una rete aziendale sempre attiva, senza problemi, affidabile e sicura. Per ulteriori informazioni, vedere [[VPN settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-I client VPN spessi o i client VPN legacy non sono consigliati da Microsoft durante l'utilizzo di Microsoft Managed Desktop poiché possono influire sull'ambiente utente.<br>-Microsoft consiglia che il traffico Web in uscita vada direttamente a Internet senza passare attraverso la VPN per evitare problemi di prestazioni.<br>-Idealmente, Microsoft consiglia di utilizzare il proxy dell'applicazione di Azure Active Directory invece di una VPN.
 
 
 ## <a name="information-security"></a>Sicurezza delle informazioni

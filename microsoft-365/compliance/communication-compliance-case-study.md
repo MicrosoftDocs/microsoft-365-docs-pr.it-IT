@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9e16e96989fd3e2312129f9633bd298181839cf0
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 9c20b322d4da0339d7c8711abcee38f19f556423
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632087"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289389"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Case Study-Contoso configura rapidamente un criterio di lingua offensivo per le comunicazioni di Microsoft teams, Exchange e Yammer
 
@@ -79,34 +79,29 @@ Gli amministratori IT di Contoso eseguono la procedura seguente per verificare i
 
 ### <a name="permissions-for-communication-compliance"></a>Autorizzazioni per la conformità alla comunicazione
 
-Sono disponibili cinque ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la conformità di comunicazione disponibile come opzione di menu nel centro conformità di Microsoft 365 e continuare con questi passaggi di configurazione, agli amministratori di Contoso viene assegnato il ruolo di *amministratore della conformità di comunicazione* .
+Sono disponibili cinque gruppi di ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu nel centro conformità di Microsoft 365 e continuare con questi passaggi di configurazione, agli amministratori di Contoso viene assegnato il ruolo di amministratore della conformità di *comunicazione* .
 
-Contoso decide di creare un gruppo di ruoli personalizzato e di assegnare tutti i ruoli di conformità di comunicazione al gruppo. In questo modo è più facile per contoso iniziare rapidamente e meglio si adatta ai propri requisiti di gestione della conformità.
-
-Contoso creerà un gruppo di ruoli che contiene tutti i ruoli di conformità di comunicazione seguenti:
+Contoso decide di utilizzare il gruppo di ruolo *comunicazione Compliance* assegnare tutti gli amministratori di conformità di comunicazione, analisti, investigatori e visualizzatori al gruppo. In questo modo è più facile per contoso iniziare rapidamente e meglio si adatta ai propri requisiti di gestione della conformità.
 
 |**Ruolo**|**Autorizzazioni di ruolo**|
 |:-----|:-----|
-| **Amministratore della conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo ruolo non possono visualizzare gli avvisi dei messaggi. |
-| **Analisi di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
-| **Indagine di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
-| **Visualizzatore conformità comunicazione** | Gli utenti assegnati a questo ruolo possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
-| **Gestione dei casi di conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono gestire i casi e agire sugli avvisi. Questo ruolo è necessario per la creazione di gruppi di ruoli personalizzati per amministratori, analisti e ricercatori. Non è necessario che questo ruolo sia assegnato ai gruppi personalizzati per i visualizzatori. |
+| **Conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
+| **Amministratore della conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità della comunicazione e successivamente per separare gli amministratori della conformità di comunicazione in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
+| **Analista conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
+| **Ricercatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che agiranno come ricercatori per la conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
+| **Visualizzatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che gestiscono i rapporti di comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
 
-1. Gli amministratori IT di Contoso accede alla pagina **Office 365 Security and Compliance Center** Permissions [( https://protection.office.com/permissions) ](https://protection.office.com/permissions) utilizzando le credenziali per un account di amministratore globale e seleziona il collegamento per visualizzare e gestire i ruoli in Microsoft 365.
-2. Dopo aver selezionato **Crea**, assegnare al nuovo gruppo di ruoli un nome descrittivo di "*conformità alla comunicazione*" e selezionare **Avanti**.
-3. Selezionano **Scegli ruoli** , quindi seleziona **Aggiungi**. Aggiungono i ruoli necessari selezionando la casella di controllo per l' *amministratore conformità*comunicazione, l' *analisi di conformità*della comunicazione, la verifica della *conformità*della comunicazione, il *Visualizzatore conformità comunicazione*e la *gestione dei casi di conformità della comunicazione*, quindi selezionare **Aggiungi**, **fatto** e **Avanti**.
-
-    ![Ruoli di conformità della comunicazione](../media/communication-compliance-case-roles.png)
-
-4. Successivamente, gli amministratori IT selezionano **Scegli membri** , quindi seleziona **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che desiderano creare criteri e gestire i messaggi con le corrispondenze di criteri. Aggiungono gli amministratori IT, gli specialisti della conformità e altri colleghi nelle risorse umane e nei reparti giuridici individuati nella pianificazione iniziale, quindi selezionare **Aggiungi**, **fatto**e **successivo**.
-5. Per completare le autorizzazioni, gli amministratori IT selezionano **Crea gruppo di ruoli** da terminare. Il servizio Microsoft 365 di Contoso richiede circa 30 minuti affinché i ruoli siano efficaci.
-
-    ![Revisione della conformità di comunicazione](../media/communication-compliance-case-review.png)
+1. Gli amministratori IT di Contoso possono accedere alla pagina **Office 365 Security & Compliance Center** Permissions [( https://protection.office.com/permissions) ](https://protection.office.com/permissions) utilizzando le credenziali per un account di amministratore globale e selezionare il collegamento per visualizzare e gestire i ruoli in Microsoft 365.
+2. Nel **Centro sicurezza & conformità**, accedere a **autorizzazioni** e selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
+3. Gli amministratori selezionano il gruppo di ruoli *conformità comunicazione* , quindi seleziona **modifica gruppo di ruoli**.
+4. Gli amministratori selezionano **Scegli membri** nel riquadro di spostamento a sinistra, quindi seleziona **modifica**.
+5. Seleziona **Aggiungi** e quindi seleziona la casella di controllo per tutti gli utenti di Contoso che gestiranno la conformità delle comunicazioni, analizzeranno e rivedranno gli avvisi.
+6. Gli amministratori selezionano **Aggiungi**e quindi **fare**clic su fine.
+7. Selezionare **Salva** per aggiungere gli utenti di Contoso al gruppo di ruoli. Seleziona **Chiudi** per completare la procedura.
 
 ## <a name="step-2-accessing-communication-compliance-in-microsoft-365"></a>Passaggio 2: accesso alla conformità delle comunicazioni in Microsoft 365
 
-Dopo aver configurato le autorizzazioni per la conformità della comunicazione, gli amministratori IT di Contoso e gli specialisti di conformità definiti nel nuovo gruppo di ruoli possono accedere alla soluzione di conformità della comunicazione in Microsoft 365. Gli amministratori IT di Contoso e gli specialisti della conformità dispongono di diversi modi per accedere alla conformità della comunicazione e per iniziare a creare un nuovo criterio:
+Dopo aver configurato le autorizzazioni per la conformità della comunicazione, gli amministratori IT di Contoso e gli specialisti di conformità assegnati al gruppo di ruolo conformità comunicazione possono accedere alla soluzione di conformità della comunicazione in Microsoft 365. Gli amministratori IT di Contoso e gli specialisti della conformità dispongono di diversi modi per accedere alla conformità della comunicazione e per iniziare a creare un nuovo criterio:
 
 - Partendo direttamente dalla soluzione di conformità della comunicazione
 - Partendo dal centro conformità di Microsoft 365
@@ -163,7 +158,7 @@ Gli amministratori IT di Contoso esaminano e completano le [istruzioni dettaglia
 
 La conformità alla comunicazione richiede che il tenant di Yammer per un'organizzazione sia in modalità nativa per monitorare la lingua offensiva nei messaggi privati e nelle conversazioni di community pubbliche.
 
-Gli amministratori IT di Contoso assicurano che vengano esaminate le informazioni contenute in [Overview of Yammer native mode in microsoft 365 articolo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) e seguire i passaggi per l'esecuzione dello strumento di migrazione nell'argomento [Configure your Yammer Network for native mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
+Gli amministratori IT di Contoso assicurano che vengano esaminate le informazioni contenute in [Overview of Yammer native mode in microsoft 365 articolo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) e seguire i passaggi per l'esecuzione dello strumento di migrazione nell'articolo [Configure your Yammer Network for native mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configurazione di un gruppo per gli utenti in ambito
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bc7192cf82c825a13780567663695d96a760b3ef
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: da5798b3412cb69580e5d9adc582f0ca4add1e3e
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530104"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289592"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>App in Microsoft Managed Desktop
 
@@ -26,7 +26,7 @@ ms.locfileid: "46530104"
 
 Microsoft include alcune app principali insieme alla licenza Microsoft 365 E3 o E5 necessaria per partecipare a Microsoft Managed Desktop. Tuttavia, anche se vengono fornite queste app, sono ancora presenti determinate responsabilità e azioni da completare.
 
-È inoltre possibile distribuire altre app non Microsoft agli utenti finali per il servizio self-service tramite il portale aziendale o un'installazione in background necessaria, tutti utilizzando la pipeline di distribuzione di Microsoft Intune. In caso di esperienza, è possibile eseguire la migrazione delle applicazioni necessarie. in alternativa, i Microsoft Consulting Services (MCS) o i fornitori non Microsoft saranno lieti di aiutarvi con un progetto di migrazione e di creazione di pacchetti. Per ulteriori informazioni sull'utilizzo di MCS, vedere [Working with Microsoft Consulting Services](apps-MCS.md).
+È inoltre possibile distribuire altre app non Microsoft agli utenti per il servizio self-service tramite il portale aziendale o un'installazione in background necessaria, tutti utilizzando la pipeline di distribuzione di Microsoft Intune. In caso di esperienza, è possibile eseguire la migrazione delle applicazioni necessarie. in alternativa, i Microsoft Consulting Services (MCS) o i fornitori non Microsoft saranno lieti di aiutarvi con un progetto di migrazione e di creazione di pacchetti. Per ulteriori informazioni sull'utilizzo di MCS, vedere [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## <a name="apps-provided-by-microsoft"></a>App fornite da Microsoft
@@ -35,13 +35,13 @@ In dotazione con la licenza Microsoft Managed Desktop sono disponibili versioni 
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Cosa fa Microsoft per supportare le app che forniamo
 
-Microsoft fornirà il servizio completo per la distribuzione, l'aggiornamento e il supporto per le app di Microsoft 365 incluse per Enterprise Apps. Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma Microsoft Managed Desktop fornirà ai gruppi di distribuzione che consentono all'amministratore IT di gestire le licenze e distribuirle in modo appropriato per la propria organizzazione. Microsoft sosterrà gli utenti finali di queste applicazioni tramite i canali di supporto di Microsoft Managed Desktop.
+Microsoft fornirà il servizio completo per la distribuzione, l'aggiornamento e il supporto per le app di Microsoft 365 incluse per Enterprise Apps. Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma Microsoft Managed Desktop fornirà ai gruppi di distribuzione che consentono all'amministratore IT di gestire le licenze e distribuirle in modo appropriato per la propria organizzazione. Microsoft sosterrà gli utenti di queste applicazioni tramite i canali di supporto di Microsoft Managed Desktop.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Cosa devi fare per supportare le app che fornisci
 
 Sono ancora necessarie alcune operazioni da eseguire con queste app:
 
-- **Assegnare le licenze** : si è responsabili dell'ottenimento e dell'assegnazione delle licenze appropriate agli utenti finali per le app Microsoft 365 per Enterprise.
+- **Assegnare le licenze** : si è responsabili dell'ottenimento e dell'assegnazione delle licenze appropriate agli utenti per le app Microsoft 365 per Enterprise.
 - **Aggiungere utenti ai gruppi di sicurezza** : se si utilizza Microsoft Project o Visio, l'amministratore IT deve aggiungere tali utenti ai gruppi di distribuzione corretti. Gli amministratori IT sono anche responsabili del recupero delle licenze da tali utenti se lasciano la società.
 - **Distribuire i componenti aggiuntivi di microsoft 365** -se sono necessari componenti aggiuntivi per qualsiasi app di Microsoft 365 per le applicazioni Enterprise, distribuire le app in modo centralizzato come qualsiasi altra applicazione Windows 32. 
 

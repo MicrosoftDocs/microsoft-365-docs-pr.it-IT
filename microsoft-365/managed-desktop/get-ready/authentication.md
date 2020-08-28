@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7caeee6f476fea7881884cea20bd2a59db2c13d9
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 7181e81a2db94ce26fb8601f8b9156c65084c439
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530044"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289580"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Preparare l'accesso alle risorse locali per Microsoft Managed Desktop
 
@@ -41,8 +41,8 @@ Nella maggior parte delle organizzazioni, gli utenti saranno in grado di utilizz
 
 - Verificare che Azure AD Connect sia configurato e utilizzi un server Active Directory locale che esegue Windows Server 2008 R2 o versione successiva.
 - Verificare che Azure AD Connect esegua una versione supportata ed è impostato per sincronizzare questi tre attributi con Azure AD: 
-    - Nome di dominio DNS dell'Active Directory locale (in cui si trovano gli utenti finali)
-    - NetBIOS del sito Active Directory locale (in cui si trovano gli utenti finali)
+    - Nome di dominio DNS dell'Active Directory locale (in cui si trovano gli utenti)
+    - NetBIOS dell'Active Directory locale (in cui si trovano gli utenti)
     - Nome account SAM dell'utente
 
 

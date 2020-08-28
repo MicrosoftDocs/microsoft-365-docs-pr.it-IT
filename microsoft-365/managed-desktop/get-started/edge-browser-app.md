@@ -1,6 +1,6 @@
 ---
 title: Nuovo Microsoft Edge
-description: ''
+description: Viene illustrato il modo in cui viene distribuito e aggiornato il nuovo browser perimetrale
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903872"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294675"
 ---
 # <a name="new-microsoft-edge-app"></a>Nuova app Microsoft Edge
 
@@ -35,7 +35,6 @@ Il [canale Beta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#b
 
 Per assicurarsi che Microsoft Edge venga aggiornato correttamente, non modificare i criteri Microsoft Edge [Update](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
-### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge beta Channel
 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Impostazioni gestite da Microsoft Managed Desktop
@@ -44,7 +43,7 @@ Microsoft Managed Desktop ha creato un set predefinito di criteri per Microsoft 
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge Extensions
 
-La baseline di sicurezza per Microsoft Edge nei dispositivi Microsoft Managed Desktop imposta due criteri per disabilitare tutte le estensioni Chrome e gli utenti finali sicuri. Per abilitare e distribuire le estensioni nell'ambiente, vedere settings you manage. 
+La previsione di sicurezza per Microsoft Edge nei dispositivi Microsoft Managed Desktop imposta due criteri per disabilitare tutte le estensioni di Chrome e proteggere gli utenti. Per abilitare e distribuire le estensioni nell'ambiente, vedere settings you manage. 
 
 #### <a name="extension-installation-blocklist"></a>Blocco per l'installazione dell'estensione
 **Valore predefinito:** Tutti
@@ -77,7 +76,7 @@ Non è consigliabile abilitare questa impostazione poiché consente agli utenti 
 
 **Valore predefinito:** Abilitato
 
-Abilitata per impostazione predefinita per garantire la protezione degli utenti finali.
+Abilitata per impostazione predefinita per garantire la protezione degli utenti.
 
 #### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender SmartScreen richiede i siti
 
@@ -105,7 +104,7 @@ Non è consigliabile utilizzare Flash a causa di rischi per la sicurezza associa
 
 **Valore predefinito:** Disabili
 
-È consigliabile non consentire agli utenti finali di salvare le password sul proprio dispositivo.
+È consigliabile non consentire agli utenti di salvare le password sul proprio dispositivo.
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Modalità Internet Explorer in Microsoft Edge
 La modalità IE su Microsoft Edge semplifica l'utilizzo di tutti i siti che l'organizzazione ha bisogno in un singolo browser. Utilizza il motore cromo integrato per i siti compatibili con il motore di rendering di cromo e utilizza il motore MSHTML Trident da Internet Explorer 11 (IE11) per i siti che non sono o che hanno dipendenze sulla funzionalità IE. [Ulteriori informazioni] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 

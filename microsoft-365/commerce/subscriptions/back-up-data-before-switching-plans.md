@@ -22,16 +22,18 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Backup di Outlook, OneDrive, Yammer e contenuto di SharePoint prima di modificare i piani di Microsoft 365.
-ms.openlocfilehash: 9acc97f65bb5b471cb992d7f01cd299192b74a52
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 1158a98fc35c586ae900ef64579b52b9d64a85e6
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818532"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294718"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Eseguire il backup dei dati prima di cambiare i piani di Microsoft 365 per le aziende
 
 Se un utente viene spostato in un altro abbonamento con meno servizi correlati ai dati o se un utente lascia l'organizzazione, è possibile scaricare una copia dei dati archiviati in Microsoft 365 prima di passare alla nuova sottoscrizione.
+
+Se si sta spostando un utente in un abbonamento che ha lo stesso o più servizi, non è necessario eseguire il backup dei dati degli utenti. Vedere [Move users to a different Subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription).
   
 ## <a name="save-a-copy-of-outlook-information"></a>Salvataggio di una copia delle informazioni di Outlook
 
@@ -62,7 +64,7 @@ Per impostazione predefinita, il formato dell'URL del sito Web del team è:
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-dove _\<orgDomain\>_ è l'URL dell'organizzazione.
+dove  _\<orgDomain\>_ è l'URL dell'organizzazione.
   
 Ad esempio, se il dominio dell'organizzazione è contoso.onmicrosoft.com, l'URL diretto del sito del team sarà https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
   

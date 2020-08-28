@@ -20,16 +20,22 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e31389705ddd8de4854a3477012d7fa90b78c7ee
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 8b0fda2d8a0b7d9cb6b2c6a4cca2e8e34a876fec
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866896"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289424"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novità di Microsoft Secure Score
 
 Per rendere Microsoft Secure Score un migliore rappresentante della posizione di sicurezza, sono state apportate alcune modifiche. Per informazioni sulle modifiche pianificate, vedere [What ' s Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
+
+## <a name="august-2020"></a>Agosto 2020
+
+### <a name="update-improvement-action-for-azure-active-directory"></a>Azione di miglioramento dell'aggiornamento per Azure Active Directory
+
+- Abilitazione del criterio per bloccare l'autenticazione legacy
 
 ## <a name="july-2020"></a>Luglio 2020
 

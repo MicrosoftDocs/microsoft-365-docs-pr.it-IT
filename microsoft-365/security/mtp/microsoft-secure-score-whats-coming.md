@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866920"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289664"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Cosa viene a Microsoft Secure Score
 
@@ -30,9 +30,8 @@ Sono state apportate alcune modifiche nel prossimo futuro per rendere [Microsoft
 
 ## <a name="proposed-changes"></a>Modifiche proposte
 
-Queste modifiche potrebbero essere imminenti al tuo Punteggio Microsoft Secure, a seconda della licenza. Per informazioni sulle modifiche recenti, vedere [What ' s New in Microsoft Secure Score?](microsoft-secure-score-whats-new.md)
-
-- Modifica del punteggio massimo compreso tra 7 e 8 per l'azione di miglioramento di Azure Active Directory denominata "Enable Policy to Block legacy Authentication"
+### <a name="september-2020"></a>2020 settembre
+- Nessuna modifica pianificata
 
 ## <a name="related-resources"></a>Risorse correlate
 

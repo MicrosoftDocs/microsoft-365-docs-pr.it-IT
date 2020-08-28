@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fe8e01e24f38ddd62649349575bd38ec37ccae4
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 1aaa73fdc56662335904cbaa152429ea90d6bb08
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282674"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289355"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -49,19 +49,39 @@ I modelli di criteri sono impostazioni predefinite che è possibile utilizzare p
 
 ## <a name="permissions-preview"></a>Autorizzazioni (anteprima)
 
-Sono disponibili cinque ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu in Microsoft 365 Compliance Center, è necessario essere assegnati al ruolo di *amministratore conformità comunicazione* .
+>[!Important]
+>Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. I ruoli assegnati a questo passaggio sono necessari prima che vengano accessibili tutte le funzionalità di conformità della comunicazione.
 
-A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario creare uno o più nuovi gruppi di ruoli per gli amministratori, i revisori e gli investigatori. È possibile assegnare gli utenti a specifici gruppi di ruoli per gestire diversi insiemi di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di creare un gruppo di ruoli e assegnare tutti i ruoli di conformità alla comunicazione al gruppo. Creare un singolo gruppo di ruoli o più gruppi per soddisfare al meglio i requisiti di gestione della conformità.
+Sono disponibili cinque gruppi di ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu nel centro conformità di Microsoft 365 e continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli amministratore conformità comunicazione o *conformità comunicazione* . *Communication Compliance* Per accedere e gestire le funzionalità di conformità della comunicazione dopo la configurazione iniziale, è necessario che gli utenti siano membri di almeno un gruppo di ruolo conformità comunicazione.
 
-Scegliere tra queste opzioni di ruolo quando si configurano i gruppi di ruoli di conformità della comunicazione:
+A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario assegnare gli utenti a specifici gruppi di ruoli. È possibile assegnare agli utenti le responsabilità di conformità diverse ai gruppi di ruoli specifici per gestire diverse aree di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di assegnare tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati al gruppo di ruolo *conformità comunicazione* . Utilizzare un singolo gruppo di ruoli o più gruppi di ruoli per soddisfare al meglio i requisiti di gestione della conformità.
+
+Scegliere tra queste opzioni del gruppo di ruoli quando si configura la conformità delle comunicazioni:
 
 |**Ruolo**|**Autorizzazioni di ruolo**|
 |:-----|:-----|
-| **Amministratore della conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo ruolo non possono visualizzare gli avvisi dei messaggi. |
-| **Analisi di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
-| **Indagine di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
-| **Visualizzatore conformità comunicazione** | Gli utenti assegnati a questo ruolo possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
-| **Gestione dei casi di conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono gestire i casi e agire sugli avvisi. Questo ruolo è necessario per la creazione di gruppi di ruoli personalizzati per amministratori, analisti e ricercatori. Non è necessario che questo ruolo sia assegnato ai gruppi personalizzati per i visualizzatori. |
+| **Conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
+| **Amministratore della conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità della comunicazione e successivamente per separare gli amministratori della conformità di comunicazione in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
+| **Analista conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
+| **Ricercatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che agiranno come ricercatori per la conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
+| **Visualizzatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che gestiscono i rapporti di comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
+
+### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>Per le organizzazioni che utilizzano le autorizzazioni e i gruppi di ruoli originali
+
+La nuova struttura del gruppo di ruoli sostituisce la struttura iniziale del gruppo di ruoli per la conformità della comunicazione. Per le organizzazioni che utilizzano già la conformità alla comunicazione, è necessario assegnare il ruolo di amministratore revisione di supervisione per iniziare a utilizzare la conformità della comunicazione nel centro conformità di Microsoft 365. Inoltre, è necessario creare un nuovo gruppo di ruoli per i revisori con l'amministratore revisione di supervisione, la gestione dei casi, l'amministratore della conformità e i ruoli di revisione per esaminare e correggere i messaggi con le corrispondenze di criteri. In sostanza, tutti gli amministratori e i revisori si trovavano in un singolo gruppo di ruoli e tutti avevano le stesse autorizzazioni di accesso e gestione. Con gli aggiornamenti più recenti per la conformità alla comunicazione, è consigliabile pianificare la migrazione dalla struttura del gruppo di ruoli precedente alla nuova struttura del gruppo di ruoli. Il supporto per la struttura precedente del gruppo di ruoli verrà eliminato.
+
+Per facilitare la pianificazione della migrazione, prendere in considerazione l'esempio seguente. Al momento sono disponibili tre tipi di utenti nell'organizzazione, gli amministratori IT, la valutazione e i revisori. Questi tre tipi di utenti si trovano nella struttura del gruppo di ruoli precedente e sono tutti membri di un singolo gruppo di ruoli con i ruoli seguenti assegnati:
+
+- Amministratore revisione di supervisione
+- Gestione dei casi
+- Amministratore di conformità
+- Revisione
+
+Per aggiornare i ruoli per gli utenti per la nuova struttura del gruppo di ruoli e per separare le autorizzazioni di accesso e gestione per gli utenti, è possibile prendere in considerazione tre nuovi gruppi e le assegnazioni del nuovo gruppo di ruolo associate:
+
+- **Amministratori IT**: assegnati al nuovo gruppo di ruoli *amministratore conformità comunicazione* .
+- **Triage**: assegnato al gruppo di ruoli *Analyst Compliance Communication* .
+- **Revisori**: assegnati al gruppo di ruolo nuovo *investigatore conformità comunicazione* .
 
 ## <a name="supervised-users"></a>Utenti controllati
 
@@ -150,7 +170,7 @@ Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi
 
 ### <a name="custom-keyword-dictionaries"></a>Dizionari per parole chiave personalizzate
 
-Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100KB di termini (post Compression) nel dizionario e supportano qualsiasi lingua. Il limite del tenant è inoltre 100KB dopo la compressione. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di conformità della comunicazione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che è possibile [importare nel centro conformità](create-a-keyword-dictionary.md). Utilizzare i dizionari personalizzati quando è necessario supportare termini o lingue specifiche per l'organizzazione e i criteri.
+Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100 KB di termini (post-compressione) nel dizionario e supportano qualsiasi lingua. Il limite del tenant è anche 100 KB dopo la compressione. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di conformità della comunicazione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che è possibile [importare nel centro conformità](create-a-keyword-dictionary.md). Utilizzare i dizionari personalizzati quando è necessario supportare termini o lingue specifiche per l'organizzazione e i criteri.
 
 ### <a name="classifiers"></a>Classificatori
 
@@ -162,7 +182,7 @@ Conformità di comunicazione le comunicazioni per i termini, le immagini e il se
 - **Molestie mirate**: analisi per comportamenti offensivi indirizzati verso persone relative a razza, colore, religione, origine nazionale.
 - **Parolacce**: esegue la ricerca di espressioni profane che imbarazzano la maggior parte delle persone.
 - **Immagini adulte**: analisi di immagini sessualmente esplicite in natura.
-- **Immagini piccanti**: consente di analizzare le immagini che sono sessualmente suggestive, ma contengono contenuto meno esplicito rispetto alle immagini ritenute adulte.
+- **Immagini**di tipo audace: analisi per immagini sessualmente suggestive, ma che contengono contenuto meno esplicito rispetto alle immagini ritenute adulte.
 - **Immagini cruente**: analisi di immagini che descrivono la violenza e il Gore.
 
 I classificatori di immagini *per adulti*, *audace*e *cruenti* analizzano i file. JPEG,. PNG,. GIF e. Formati BMP. Le dimensioni dei file di immagine devono essere inferiori a 4 megabyte (MB) e le dimensioni delle immagini devono essere superiori a 50x50 pixel e superiori a 50 kilobyte (KB) affinché l'immagine sia qualificata per la valutazione. L'identificazione dell'immagine è supportata per i messaggi di posta elettronica di Exchange Online e i canali e le chat di Microsoft teams.

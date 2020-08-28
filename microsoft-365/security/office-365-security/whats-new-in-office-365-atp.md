@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39ef79f685c216732aa1e3e0ccb28a4ab6e2b07a
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845857"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294776"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novità di Office 365 ATP
 
@@ -39,6 +39,9 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 
 - [Controllare i criteri utilizzando l'analizzatore di configurazione](configuration-analyzer-for-security-policies.md)
 - [Sostituisci manualmente i verdetti del filtro utilizzando l'elenco Consenti/blocca tenant](tenant-allow-block-list.md)
+- [Funzionalità estese in Esplora minacce, tra cui utenti di destinazione principali, regole di trasporto e connettori](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- Le informazioni sulle superfici vengono ignorate in [Esplora minacce](threat-explorer.md) (la posta elettronica è stata consentita/bloccata dai criteri tenant/utente)
+- Minacce all'URL di emersione in [Esplora minacce](threat-explorer.md) (malware, phishing, posta indesiderata o nessuno)
 
 ## <a name="julyaugust-2020"></a>Luglio/agosto 2020 
 
@@ -55,8 +58,6 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 - Miglioramenti apportati a [Threat Explorer](threat-explorer.md) per consentire ai team di operazioni di sicurezza di eseguire ricerche e filtrare su più campi durante l' [analisi della posta elettronica](investigate-malicious-email-that-was-delivered.md):
     - Percorso di recapito e azioni speciali
     - Direzionalità (in ingresso, in uscita o intra-org)
-    - Sostituzioni (blocco o autorizzazione dell'utente)
-    - Minaccia per gli URL (malware, phishing, spam o None)
     - Advanced NOT Filters (queste sono le opzioni di filtro avanzate che includono non contiene, non include, ecc.)
     - Filtri temporali granulari (giorno, ora, mezz'ora) 
 
@@ -103,5 +104,4 @@ Lo sapevate che Office 365 ATP è disponibile in due piani? Ulteriori [informazi
 [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Descrizione del servizio ATP di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-
 

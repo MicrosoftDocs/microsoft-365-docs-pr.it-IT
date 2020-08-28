@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529756"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289688"
 ---
-# <a name="getting-help-for-end-users"></a>Ottenere assistenza per gli utenti finali
+# <a name="getting-help-for-users"></a>Ottenere assistenza per gli utenti
 
 Esistono due modi in cui gli utenti dell'organizzazione possono ottenere assistenza con i propri dispositivi Microsoft Managed Desktop: **informazioni** sull'app o sul supporto telefonico. Entrambe le opzioni di supporto sono disponibili per gli utenti 24 ore al giorno, 7 giorni alla settimana.
  
@@ -25,17 +25,17 @@ Esistono due modi in cui gli utenti dell'organizzazione possono ottenere assiste
 
 ## <a name="get-help-app"></a>Ottenere l'app della Guida
 
-Il metodo preferito per fornire supporto agli utenti è **ottenere assistenza**, un'interfaccia di facile utilizzo integrata nel dispositivo utente finale.  
+Il metodo preferito per fornire supporto agli utenti è **ottenere assistenza**, un'interfaccia di facile utilizzo integrata nel dispositivo utente.  
 
 ![Icona della Guida per l'app](../../media/get-help.png)
 
 Si tratta di un'applicazione installata su tutti i dispositivi Microsoft Managed Desktop ed è bloccata alla barra delle applicazioni. 
 
-- Gli utenti finali possono richiedere una chiamata a un numero di telefono fornito o chattare online con una rappresentante del servizio.
+- Gli utenti possono richiedere di nuovo una chiamata a un numero di telefono fornito o chattare online con una rappresentante del servizio.
 - Le richieste che non rientrano nell'ambito di supporto di Microsoft Managed Desktop vengono reindirizzate all'helpdesk IT locale tramite telefonata.
 
 ### <a name="prerequisites"></a>Prerequisiti
-Affinché gli utenti finali siano in grado di ottenere assistenza tramite l'app, verificare che siano soddisfatti i prerequisiti seguenti:
+Affinché gli utenti siano in grado di ottenere assistenza tramite l'app, verificare che siano soddisfatti i prerequisiti seguenti:
 
 - Il dispositivo deve essere registrato con Microsoft Managed Desktop utilizzando uno dei metodi disponibili in [set up Microsoft Managed Desktop Devices](../get-started/set-up-devices.md), ad esempio, [registrare i nuovi dispositivi manualmente](../get-started/register-devices-self.md).
 - La lingua di visualizzazione per il dispositivo deve essere impostata su una qualsiasi delle impostazioni locali in lingua inglese: en-US, en-GB, en-au, en-NZ o en-ca.
@@ -49,7 +49,7 @@ Se i prerequisiti sono stati verificati e l'app Ottieni aiuto continua a non fun
 
 ## <a name="phone-support"></a>Supporto telefonico
 
-Gli utenti finali con i dispositivi Microsoft Managed Desktop hanno anche accesso ai numeri di telefono gratuiti che possono chiamare. Questa operazione è destinata a essere utilizzata quando la guida non è disponibile. Ad esempio, se non sono in grado di accedere al dispositivo o se il dispositivo è stato interrotto. Di seguito sono richiamati i numeri di telefono per il supporto telefonico:
+Gli utenti con dispositivi desktop Microsoft gestiti hanno anche accesso ai numeri di telefono gratuiti che possono chiamare. Questa operazione è destinata a essere utilizzata quando la guida non è disponibile. Ad esempio, se non sono in grado di accedere al dispositivo o se il dispositivo è stato interrotto. Di seguito sono richiamati i numeri di telefono per il supporto telefonico:
 
 - Stati Uniti: + 1 855 425 0216
 - Canada (escluso Québec): + 1 855 425 0216

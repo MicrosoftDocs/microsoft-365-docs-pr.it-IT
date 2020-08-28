@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 72155563a3249aa61075bc9f246b2a553e7b5191
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528037"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289604"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
@@ -51,7 +51,7 @@ Articolo nuovo o modificato | Descrizione
 ## <a name="may-2020"></a>Maggio 2020
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Ottenere assistenza per gli utenti finali](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
+[Ottenere assistenza per gli utenti](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
 [Procedura per i partner per la registrazione dei dispositivi](get-started/register-devices-partner.md) | Articolo aggiornato
 [Dispositivi Microsoft Managed Desktop](service-description/device-list.md) | Articolo aggiornato
 [Registrare manualmente i nuovi dispositivi](get-started/register-devices-self.md) | Articolo aggiornato
@@ -121,7 +121,7 @@ Articolo nuovo o modificato | Descrizione
 Articolo nuovo o modificato | Descrizione
 --- | ---
 [Eccezioni al piano di servizio](service-description/customizing.md) | Nuovo articolo
-[Ottenere assistenza per gli utenti finali](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
+[Ottenere assistenza per gli utenti](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
 [Supporto amministratori per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Articolo aggiornato
 [Modifiche al servizio e comunicazione](service-description/servicechanges.md) | Nuovo articolo
 [Registrare manualmente i nuovi dispositivi](get-started/register-devices-self.md) | Articolo aggiornato
@@ -135,7 +135,7 @@ Articolo nuovo o modificato | Descrizione
 Articolo nuovo o modificato | Descrizione
 --- | ---
 [Tecnologie Microsoft Managed Desktop](intro/technologies.md) | Articolo aggiornato
-[Ottenere assistenza per gli utenti finali](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
+[Ottenere assistenza per gli utenti](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
 [Dispositivi Microsoft Managed Desktop](service-description/device-list.md) | Articolo aggiornato
 [Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Articolo aggiornato
 [Supporto amministratori per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Articolo aggiornato
@@ -150,7 +150,7 @@ Articolo nuovo o modificato | Descrizione
 --- | ---
 [Lavorare con Microsoft Consulting Services](get-ready/apps-mcs.md) | Articolo aggiornato
 [Supporto amministratori per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Articolo aggiornato
-[Ottenere assistenza per gli utenti finali](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
+[Ottenere assistenza per gli utenti](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
 [Prerequisiti per Microsoft Managed Desktop](get-ready/prerequisites.md) | Articolo aggiornato
 [Tecnologie Microsoft Managed Desktop](intro/technologies.md) | Articolo aggiornato
 
@@ -183,7 +183,7 @@ Articolo nuovo o modificato | Descrizione
 [Preparare unità mappate per Microsoft Managed Desktop](get-ready/mapped-drives.md) | Nuovo articolo
 [Preparare certificati e profili di rete per Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Nuovo articolo
 [Ordinare i dispositivi Microsoft Managed Desktop](get-started/devices.md) | Articolo aggiornato
-[Ottenere assistenza per gli utenti finali](working-with-managed-desktop/end-user-support.md) | Nuovo articolo
+[Ottenere assistenza per gli utenti](working-with-managed-desktop/end-user-support.md) | Nuovo articolo
 
 ## <a name="april-2019"></a>Aprile 2019
 Articolo nuovo o modificato | Descrizione
@@ -226,7 +226,7 @@ Articolo nuovo o modificato | Descrizione
 
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Supporto per Microsoft Managed Desktop](service-description/support.md)<br />e il [supporto per gli utenti finali per Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Aggiornato per includere l'Australia.
+[Supporto per Microsoft Managed Desktop](service-description/support.md)<br />e [supporto utente per Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Aggiornato per includere l'Australia.
 
 ## <a name="october-30-2018"></a>30 ottobre 2018
 Contenuto riorganizzato: sezione aggiunta per la [Descrizione del servizio Microsoft Managed Desktop](service-description/index.md). 

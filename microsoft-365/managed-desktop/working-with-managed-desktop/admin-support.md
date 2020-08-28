@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a29fa11e43e9be5c8175118ad5b54817c463e929
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529900"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289722"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto amministratori per Microsoft Managed Desktop
 
@@ -65,6 +65,6 @@ Una volta che il ticket è nello stato **attenuato** o **risolto** , è possibil
 
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
-- [Supporto per gli utenti finali per Microsoft Managed Desktop](end-user-support.md). 
+- [Supporto utente per Microsoft Managed Desktop](end-user-support.md). 
 - [Supporto per Microsoft Managed Desktop](../service-description/support.md). 
 - Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** del [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal).
