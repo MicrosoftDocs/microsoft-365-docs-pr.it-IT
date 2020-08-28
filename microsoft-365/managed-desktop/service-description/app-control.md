@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f11c7a4aa69c96232a33c565e7bf20d04b96d1f7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 32ed3f95ebb4299796c5ad3eb71802c949701b65
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529972"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289128"
 ---
 # <a name="app-control"></a>Controllo app
 
@@ -24,7 +24,7 @@ App Control è una procedura di sicurezza facoltativa in Microsoft Managed Deskt
 Microsoft Managed Desktop semplifica la gestione dei criteri di controllo delle app creando un criterio di base che consente di creare scenari di produttività core. È possibile estendere la relazione di trust ai firmatari aggiuntivi specifici per le app e gli script nell'ambiente in uso. 
 
 
-Qualsiasi tecnologia di sicurezza richiede un equilibrio tra esperienza utente, sicurezza e costo. Il controllo app riduce la minaccia del software dannoso nell'ambiente, ma ci sono conseguenze per l'utente finale e per le azioni aggiuntive per l'amministratore IT.
+Qualsiasi tecnologia di sicurezza richiede un equilibrio tra esperienza utente, sicurezza e costo. Il controllo app riduce la minaccia del software dannoso nell'ambiente, ma ci sono conseguenze per l'utente e altre azioni per l'amministratore IT.
 
 **Sicurezza aggiuntiva:**
 
@@ -73,7 +73,7 @@ Questo criterio consente di creare registri per registrare se un'app o uno scrip
 ### <a name="enforced-policy"></a>Criteri applicati
 Questo criterio blocca le app e gli script non attendibili dall'esecuzione e crea registri ogni volta che un'app o uno script è bloccato. I criteri applicati impediscono agli utenti standard di eseguire le app o gli script archiviati nelle directory scrivibili dall'utente.
 
-I dispositivi del gruppo di test dispongono di un criterio di controllo applicato in modo che sia possibile utilizzarli per convalidare se qualsiasi applicazione provocherà problemi. Tutti gli altri gruppi (First, Fast e Broad) utilizzano un criterio applicato, in modo che gli utenti finali di tali gruppi non siano in grado di eseguire le app o gli script non attendibili.
+I dispositivi del gruppo di test dispongono di un criterio di controllo applicato in modo che sia possibile utilizzarli per convalidare se qualsiasi applicazione provocherà problemi. Tutti gli altri gruppi (First, Fast e Broad) utilizzano un criterio applicato, in modo che gli utenti di tali gruppi non siano in grado di eseguire le app o gli script non attendibili.
 
 
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 8b287200b1c94ff350f7ba00cf0c4e6bc1b4a71f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529804"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289262"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
 
@@ -42,7 +42,7 @@ Area di interesse | Per domande su
 Pacchetti app | Risoluzione dei problemi relativi agli imballaggi delle app
 Dispositivi | Integrità del dispositivo, risoluzione dei problemi con i dispositivi Microsoft Managed Desktop
 Sicurezza | Risoluzione dei problemi di sicurezza con i dispositivi Microsoft Managed Desktop
-Supporto tecnico IT | nei casi in cui il personale di supporto passa oltre i ticket degli utenti finali al di fuori delle aree di supporto di Microsoft Managed Desktop 
+Supporto tecnico IT | nei casi in cui il personale di supporto passa sopra i ticket degli utenti al di fuori delle aree di supporto di Microsoft Managed Desktop 
 Altro | Per i problemi non coperti da altre aree
 
 **Chiunque sia scelto per questi contatti deve avere le conoscenze e l'autorità necessarie per prendere decisioni per l'ambiente desktop Microsoft gestito.** Quando si esegue l'onboarding dell'ambiente Microsoft Managed Desktop, viene richiesto di aggiungere contatti per il supporto tecnico e la sicurezza locali. 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c61529b612079c93e3c175a67fccd32a7c561400
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 361e20129e67832c21631ebf1dbf0031319489ed
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597575"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289117"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -57,69 +57,57 @@ Se non si dispone di un piano di Office 365 Enterprise E5 esistente e si desider
 >[!Important]
 >Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. I ruoli assegnati a questo passaggio sono necessari prima che vengano accessibili tutte le funzionalità di conformità della comunicazione.
 
-Sono disponibili cinque ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu nel centro conformità di Microsoft 365 e continuare con questi passaggi di configurazione, è necessario essere assegnati al ruolo di *amministratore conformità comunicazione* .
+Sono disponibili cinque gruppi di ruoli che consentono di configurare le autorizzazioni per la gestione delle funzionalità di conformità della comunicazione. Per rendere la **conformità di comunicazione** disponibile come opzione di menu nel centro conformità di Microsoft 365 e continuare con questi passaggi di configurazione, è necessario essere assegnati ai gruppi di ruoli amministratore conformità comunicazione o *conformità comunicazione* . *Communication Compliance* Per accedere e gestire le funzionalità di conformità della comunicazione dopo la configurazione iniziale, è necessario che gli utenti siano membri di almeno un gruppo di ruolo conformità comunicazione.
 
-A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario creare uno o più nuovi gruppi di ruoli per gli amministratori, i revisori e gli investigatori. È possibile assegnare gli utenti a specifici gruppi di ruoli per gestire diverse aree di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di creare un gruppo di ruoli e assegnare tutti i ruoli di conformità alla comunicazione al gruppo. Creare un singolo gruppo di ruoli o più gruppi di ruoli per soddisfare al meglio i requisiti di gestione della conformità.
+A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario assegnare gli utenti a specifici gruppi di ruoli. È possibile assegnare agli utenti le responsabilità di conformità diverse ai gruppi di ruoli specifici per gestire diverse aree di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di assegnare tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati al gruppo di ruolo *conformità comunicazione* . Utilizzare un singolo gruppo di ruoli o più gruppi di ruoli per soddisfare al meglio i requisiti di gestione della conformità.
 
-Scegliere tra queste opzioni di ruolo quando si configurano i gruppi di ruoli di conformità della comunicazione:
+Scegliere tra queste opzioni del gruppo di ruoli quando si configura la conformità delle comunicazioni:
 
 |**Ruolo**|**Autorizzazioni di ruolo**|
 |:-----|:-----|
-| **Amministratore della conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo ruolo non possono visualizzare gli avvisi dei messaggi. |
-| **Analisi di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
-| **Indagine di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
-| **Visualizzatore conformità comunicazione** | Gli utenti assegnati a questo ruolo possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
-| **Gestione dei casi di conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono gestire i casi e agire sugli avvisi. Questo ruolo è necessario per la creazione di gruppi di ruoli personalizzati per amministratori, analisti e ricercatori. Non è necessario che questo ruolo sia assegnato ai gruppi personalizzati per i visualizzatori. |
+| **Conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
+| **Amministratore della conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità della comunicazione e successivamente per separare gli amministratori della conformità di comunicazione in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
+| **Analista conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
+| **Ricercatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che agiranno come ricercatori per la conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
+| **Visualizzatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che gestiscono i rapporti di comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
 
-### <a name="option-1-create-a-new-role-group-with-all-communication-compliance-roles"></a>Opzione 1: creare un nuovo gruppo di ruoli con tutti i ruoli di conformità di comunicazione
-
-1. Accedere [https://protection.office.com/permissions](https://protection.office.com/permissions) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
-
-2. Nel centro sicurezza &amp; e conformità, accedere a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
-
-3. Selezionare **Crea**.
-
-4. Nel campo **nome** assegnare un nome descrittivo al nuovo gruppo di ruoli. Selezionare **Avanti**.
-
-5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare le caselle di controllo per i ruoli seguenti:
-
-    - Amministratore della conformità alla comunicazione
-    - Analisi di conformità della comunicazione
-    - Indagine di conformità della comunicazione
-    - Visualizzatore conformità comunicazione
-    - Gestione dei casi di conformità alla comunicazione
-
-    ![Ruoli di conformità della comunicazione](../media/communication-compliance-case-roles.png)
-
-6. Selezionare **Aggiungi** e **Chiudi**, quindi fare clic su **Avanti** per continuare.
-
-7. Selezionare **Scegli membri** e quindi **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera creare criteri e gestire i messaggi con le corrispondenze di criteri, quindi fare clic su **Aggiungi** e **Chiudi**. Selezionare **Avanti**.
-
-8. Selezionare **Crea gruppo di ruoli** per terminare.
-
-### <a name="option-2-create-new-role-groups-with-different-communication-compliance-roles"></a>Opzione 2: creare nuovi gruppi di ruoli con ruoli di conformità di comunicazione diversi
-
-Creare più gruppi di ruoli per segmentare l'accesso e le responsabilità per la conformità delle comunicazioni tra diversi utenti dell'organizzazione. Per ogni nuovo gruppo di ruoli, verranno assegnati diversi ruoli di conformità della comunicazione.
+### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Opzione 1: assegnare tutti gli utenti di conformità al gruppo di ruolo conformità comunicazione
 
 1. Accedere [https://protection.office.com/permissions](https://protection.office.com/permissions) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
 
 2. Nel centro sicurezza &amp; e conformità, accedere a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
 
-3. Selezionare **Crea**.
+3. Selezionare il gruppo di ruoli *conformità comunicazione* , quindi selezionare **modifica gruppo di ruoli**.
 
-4. Nel campo **nome** assegnare un nome descrittivo al nuovo gruppo di ruoli. Selezionare **Avanti**.
+4. Selezionare **Scegli membri** nel riquadro di spostamento a sinistra, quindi selezionare **modifica**.
 
-5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare la casella di controllo per i ruoli di conformità di comunicazione che si desidera assegnare al gruppo. Ad esempio, se questo gruppo di ruoli è per gli analisti di conformità nell'organizzazione, è necessario selezionare i ruoli di *gestione* delle *comunicazioni* di conformità di comunicazione e di conformità di comunicazione. Se questo gruppo di ruoli è per gli investigatori di conformità, è necessario selezionare i ruoli di *gestione dei casi* di verifica della conformità di *comunicazione* e della comunicazione.
+5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruolo *conformità comunicazione* .
 
-    ![Ruoli di conformità della comunicazione](../media/communication-compliance-analysts-role-group.png)
+6. Selezionare **Aggiungi**, quindi fare clic su **fine**.
 
-6. Selezionare **Aggiungi** e **Chiudi**, quindi fare clic su **Avanti** per continuare.
+7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli. Selezionare **Chiudi** per completare la procedura
 
-7. Selezionare **Scegli membri** e quindi **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera creare criteri e gestire i messaggi con le corrispondenze di criteri, quindi fare clic su **Aggiungi** e **Chiudi**. Selezionare **Avanti**.
+### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>Opzione 2: assegnare gli utenti a specifici gruppi di ruoli di conformità della comunicazione
 
-8. Selezionare **Crea gruppo di ruoli** per terminare.
+Utilizzare questa opzione per assegnare gli utenti a specifici gruppi di ruoli per segmentare l'accesso e le responsabilità per la conformità delle comunicazioni tra diversi utenti dell'organizzazione.
 
-9. Creare gruppi di ruoli di conformità di comunicazione aggiuntivi in base alle esigenze.
+1. Accedere [https://protection.office.com/permissions](https://protection.office.com/permissions) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
+
+2. Nel centro sicurezza &amp; e conformità, accedere a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
+
+3. Selezionare uno dei gruppi di ruolo conformità comunicazione, quindi selezionare **modifica gruppo di ruoli**.
+
+4. Selezionare **Scegli membri** nel riquadro di spostamento a sinistra, quindi selezionare **modifica**.
+
+5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruoli.
+
+6. Selezionare **Aggiungi**, quindi fare clic su **fine**.
+
+7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli.
+
+8. Selezionare il gruppo di ruoli conformità di comunicazione successivo, quindi ripetere i passaggi 4-7 per ogni gruppo di ruoli necessario.
+
+9. Selezionare **Chiudi** per completare la procedura.
 
 Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
@@ -216,7 +204,7 @@ Se si desidera avere la possibilità di rispondere a un avviso di criteri invian
 
 4. Per abilitare Anonymization, selezionare **Mostra le versioni di anonimi dei nomi utente**.
 
-5. Seleziona **Salva**.
+5. Selezionare **Salva**.
 
 6. Passare alla scheda **modelli di avviso** e quindi selezionare **Crea modello di avviso**.
 

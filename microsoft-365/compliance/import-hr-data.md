@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 49589d2e5a6a716a2e224aa28b73bd14f9048d0b
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255769"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289251"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurare un connettore per l'importazione dei dati HR (anteprima)
 
@@ -201,15 +201,15 @@ In base ai sistemi HR dell'organizzazione e alla modalità di esportazione dei d
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Passaggio 2: creare un'app in Azure Active Directory
 
-Il passaggio successivo consiste nel creare e registrare una nuova app in Azure Active Directory (AAD). L'app corrisponderà al connettore HR creato nel passaggio 3. La creazione di questa app consentirà a AAD di autenticare il connettore HR quando viene eseguito e tenta di accedere all'organizzazione. Questa app verrà utilizzata anche per autenticare lo script eseguito nel passaggio 4 per caricare i dati HR nel cloud Microsoft. Durante la creazione di questa app AAD, assicurarsi di salvare le informazioni seguenti. Questi valori verranno utilizzati nel passaggio 3 e nel passaggio 4.
+Il passaggio successivo consiste nel creare e registrare una nuova app in Azure Active Directory (Azure AD). L'app corrisponderà al connettore HR creato nel passaggio 3. La creazione di questa app consentirà ad Azure AD di autenticare il connettore HR quando viene eseguito e tenta di accedere all'organizzazione. Questa app verrà utilizzata anche per autenticare lo script eseguito nel passaggio 4 per caricare i dati HR nel cloud Microsoft. Durante la creazione di questa applicazione Azure AD, assicurarsi di salvare le informazioni seguenti. Questi valori verranno utilizzati nel passaggio 3 e nel passaggio 4.
 
-- ID applicazione AAD (denominato anche ID *app* o ID *client*)
+- ID applicazione Azure AD (denominato anche ID *app* o *ID client*)
 
-- Segreto dell'applicazione AAD (denominato anche *segreto client*)
+- Segreto dell'applicazione Azure AD (denominato anche *segreto client*)
 
 - ID tenant (denominato anche *ID directory*)
 
-Per istruzioni dettagliate per la creazione di un'app in AAD, vedere registrazione di [un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Per istruzioni dettagliate per la creazione di un'app in Azure AD, vedere registrazione di [un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3-create-the-hr-connector"></a>Passaggio 3: creare il connettore HR
 
@@ -225,7 +225,7 @@ Dopo aver completato questo passaggio, assicurarsi di copiare l'ID processo gene
 
 4. Nella pagina **installazione della connessione** eseguire le operazioni seguenti e quindi fare clic su **Avanti**:
 
-   a. Digitare o incollare l'ID dell'applicazione AAD per l'app di Azure creata al passaggio 2.
+   a. Digitare o incollare l'ID dell'applicazione Azure AD per l'app di Azure creata al passaggio 2.
 
    b. Digitare un nome per il connettore HR.
 
@@ -294,8 +294,8 @@ L'ultimo passaggio per la configurazione di un connettore HR è l'esecuzione di 
    |**Parametro**|**Descrizione**
    |:-----|:-----|:-----|
    |`tenantId`|Questo è l'ID dell'organizzazione Microsoft 365 ottenuta al passaggio 2. È anche possibile ottenere l'ID tenant per l'organizzazione nel pannello **Panoramica** nell'interfaccia di amministrazione di Azure ad. Viene utilizzato per identificare l'organizzazione.|
-   |`appId` |Questo è l'ID dell'applicazione AAD per l'app creata in Azure AD nel passaggio 2. Questo metodo viene utilizzato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione Microsoft 365. | 
-   |`appSecret`|Si tratta del segreto dell'applicazione AAD per l'app creata in Azure AD nel passaggio 2. Questo utilizzato anche per l'autenticazione.|
+   |`appId` |Questo è l'ID dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 2. Questo metodo viene utilizzato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione Microsoft 365. | 
+   |`appSecret`|Questo è il segreto dell'applicazione Azure AD per l'app creata in Azure AD nel passaggio 2. Questo utilizzato anche per l'autenticazione.|
    |`jobId`|Questo è l'ID processo per il connettore HR creato nel passaggio 3. Viene utilizzato per associare i dati HR caricati nel cloud Microsoft con il connettore HR.|
    |`csvFilePath`|Si tratta del percorso del file CSV, memorizzato nello stesso sistema dello script, creato nel passaggio 1. Provare ad evitare gli spazi nel percorso del file; in caso contrario, utilizzare virgolette singole.|
    |||
@@ -307,9 +307,9 @@ L'ultimo passaggio per la configurazione di un connettore HR è l'esecuzione di 
     ```
 
    Se il caricamento ha esito positivo, lo script Visualizza il messaggio di **caricamento con esito positivo** .
-   
+
    > [!NOTE]
-   > Se si verificano problemi durante l'esecuzione del comando precedente a causa dei criteri di excution, vedere [About Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) e [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) per informazioni su come impostare i criteri di esecuzione. 
+   > In caso di problemi durante l'esecuzione del comando precedente a causa dei criteri di esecuzione, vedere [informazioni sui criteri di esecuzione](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) e [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) per indicazioni sull'impostazione dei criteri di esecuzione.
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Passaggio 5: monitorare il connettore HR
 

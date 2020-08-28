@@ -1,5 +1,5 @@
 ---
-title: Configurare le impostazioni di protezione dei dispositivi per i PC Windows 10
+title: Modificare o creare impostazioni di protezione dei dispositivi per PC Windows 10
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,32 +22,30 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Informazioni sull'impostazione predefinita e altre impostazioni disponibili in Microsoft 365 for business per proteggere i dispositivi Windows 10.
-ms.openlocfilehash: af3f58ba13a1011e65be45337c63ff714bfdaf0c
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: Per informazioni sulle impostazioni disponibili in Microsoft 365 for business, è possibile proteggere i dispositivi Windows 10.
+ms.openlocfilehash: bd992113403c7134fb32bc6cced5bf216843241b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470848"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289156"
 ---
-# <a name="set-device-protection-settings-for-windows-10-pcs"></a>Configurare le impostazioni di protezione dei dispositivi per i PC Windows 10
+# <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modificare o creare impostazioni di protezione dei dispositivi per PC Windows 10
 
 Questo articolo si applica a Microsoft 365 Business Premium.
 
-## <a name="secure-windows-10-devices"></a>Proteggere i dispositivi Windows 10
+Dopo aver impostato le impostazioni predefinite di protezione di Windows nella pagina di installazione, è possibile aggiungerne di nuove che si applicano a tutti gli utenti o a un gruppo di utenti. È inoltre possibile modificare qualsiasi dei quelli creati.
 
-Visualizzare un video su come proteggere i dispositivi Windows 10 con Microsoft 365 for business:
+## <a name="create-protection-settings-for-windows-10-devices"></a>Creare le impostazioni di protezione per i dispositivi Windows 10
+
+Visualizzare un video su come proteggere i dispositivi Windows 10 con Microsoft 365 Business Premium:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-    
 2. Nella barra di spostamento sinistra fare clic su criteri **dispositivi** \> **Policies** \> **Aggiungi**.
-  
 3. Nel riquadro **Aggiungi criterio** immettere un nome univoco per il criterio. 
-    
 4. In **Tipo di criterio** scegliere **Configurazione dei dispositivi di Windows 10**.
-    
 5. Expand **Secure Windows 10 Devices** \> configure the settings how you would like. Per ulteriori informazioni, vedere [available Settings](#available-settings). 
     
     È sempre possibile usare il collegamento **Ripristina impostazioni predefinite** per ripristinare l'impostazione predefinita. 
@@ -55,9 +53,15 @@ Visualizzare un video su come proteggere i dispositivi Windows 10 con Microsoft 
     ![Add policy pane with Windows 10 Device configuration selected](../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. In **Chi otterrà queste impostazioni?** specificare i destinatari. Se non si vuole usare il gruppo di sicurezza predefinito **Tutti gli utenti**, scegliere **Modifica**, cercare il gruppo di sicurezza che riceverà queste impostazioni \> **Seleziona**.
-    
 7. Infine, scegliere **Fatto** per salvare il criterio e assegnarlo ai dispositivi. 
-    
+
+## <a name="edit-windows-10-protection-settings"></a>Modificare le impostazioni di protezione di Windows 10
+ 
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
+2. Sul NAV sinistro, scegliere criteri **dispositivi** \> **Policies** .
+1. Scegliere un criterio di dispositivo Windows esistente e quindi **modificarlo**.
+1. Scegliere **modifica** accanto a un'impostazione che si desidera modificare e quindi **salvare**.
+
 ## <a name="available-settings"></a>Impostazioni disponibili
 
 Per impostazione predefinita, tutte le impostazioni sono **attivate**. Sono disponibili le impostazioni seguenti.

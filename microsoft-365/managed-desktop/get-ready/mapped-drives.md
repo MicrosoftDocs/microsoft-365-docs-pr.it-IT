@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530176"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289274"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparare unità mappate per Microsoft Managed Desktop
 
@@ -24,7 +24,7 @@ Molti ambienti aziendali presentano requisiti legacy per le unità mappate per c
 - Eseguire la migrazione delle unità mappate utilizzate dai team per condividere i file in SharePoint Online. 
 - Modernizzare o sostituire le applicazioni che utilizzano condivisioni di file locali per rimuovere tale requisito.
   
-Modernizzare questi servizi consentirà la migliore esperienza degli utenti finali con Microsoft Managed Desktop. I servizi di Microsoft FastTrack consentono di modernizzare l'ambiente utilizzando i servizi cloud Microsoft. È possibile verificare se si è idonei per i servizi di FastTrack a [Servizi e piani idonei](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) e quindi contattarli direttamente per prepararsi per Microsoft Managed Desktop. Per informazioni generali su FastTrack OneDrive for business o sulla migrazione di SharePoint Online, vedere [Data Migration](https://docs.microsoft.com/fasttrack/o365-data-migration).
+Modernizzare questi servizi consentirà la migliore esperienza utente con Microsoft Managed Desktop. I servizi di Microsoft FastTrack consentono di modernizzare l'ambiente utilizzando i servizi cloud Microsoft. È possibile verificare se si è idonei per i servizi di FastTrack a [Servizi e piani idonei](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) e quindi contattarli direttamente per prepararsi per Microsoft Managed Desktop. Per informazioni generali su FastTrack OneDrive for business o sulla migrazione di SharePoint Online, vedere [Data Migration](https://docs.microsoft.com/fasttrack/o365-data-migration).
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Unità mappate su Microsoft Managed Desktop
  

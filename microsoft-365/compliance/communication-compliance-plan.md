@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4c44610f4d74fe9ebf3c8e549692d9cc7cc6cb34
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 5fde3c6d5fd14bd0e4d108030ffaa8e5aeb5ed5c
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597423"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289321"
 ---
 # <a name="plan-for-communication-compliance"></a>Piano per la conformità delle comunicazioni
 
@@ -42,25 +42,25 @@ Identificare le parti interessate appropriate nell'organizzazione per collaborar
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>Pianificare il flusso di lavoro per l'analisi e la correzione
 
-Selezionare le parti interessate dedicate per monitorare ed esaminare gli avvisi e i casi su una cadenza regolare nel [centro conformità di Microsoft 365](https://compliance.microsoft.com/). Assicurarsi di comprendere come verranno assegnati diversi ruoli di conformità della comunicazione alle parti interessate nell'organizzazione.
+Selezionare le parti interessate dedicate per monitorare ed esaminare gli avvisi e i casi su una cadenza regolare nel [centro conformità di Microsoft 365](https://compliance.microsoft.com/). Assicurarsi di comprendere come assegnare gli utenti e le parti interessate ai diversi gruppi di ruoli di conformità della comunicazione nell'organizzazione.
 
-A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario creare uno o più nuovi gruppi di ruoli per gli amministratori, i revisori e gli investigatori. È possibile assegnare gli utenti a specifici gruppi di ruoli per gestire diversi insiemi di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di creare un gruppo di ruoli e assegnare tutti i ruoli di conformità alla comunicazione al gruppo. Creare un singolo gruppo di ruoli o più gruppi per soddisfare al meglio i requisiti di gestione della conformità.
+A seconda del modo in cui si desidera gestire i criteri di comunicazione e gli avvisi, è necessario assegnare gli utenti a uno o più gruppi di ruoli per gli amministratori, i revisori e gli investigatori. È possibile assegnare gli utenti a specifici gruppi di ruoli per gestire diversi insiemi di funzionalità di conformità della comunicazione. In alternativa, è possibile decidere di assegnare tutti gli utenti di conformità alla comunicazione al gruppo di ruolo conformità comunicazione. Utilizzare un singolo gruppo di ruoli o più gruppi per soddisfare al meglio i requisiti di gestione della conformità.
 
-Pianificare la scelta tra queste opzioni di ruolo quando si configurano i gruppi di ruoli di conformità della comunicazione:
+Pianificare la scelta tra queste opzioni del gruppo di ruolo durante la configurazione della conformità della comunicazione:
 
 |**Ruolo**|**Autorizzazioni di ruolo**|
 |:-----|:-----|
-| **Amministratore della conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo ruolo non possono visualizzare gli avvisi dei messaggi. |
-| **Analisi di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
-| **Indagine di conformità della comunicazione** | Gli utenti assegnati a questo ruolo possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
-| **Visualizzatore conformità comunicazione** | Gli utenti assegnati a questo ruolo possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
-| **Gestione dei casi di conformità alla comunicazione** | Gli utenti assegnati a questo ruolo possono gestire i casi e agire sugli avvisi. Questo ruolo è necessario per la creazione di gruppi di ruoli personalizzati per amministratori, analisti e ricercatori. Non è necessario che questo ruolo sia assegnato ai gruppi personalizzati per i visualizzatori. |
+| **Conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per gestire la conformità di comunicazione per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti, gli investigatori e i visualizzatori designati, è possibile configurare le autorizzazioni di conformità per le comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità di comunicazione. Questa configurazione è il modo più semplice per iniziare rapidamente con la conformità alla comunicazione ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
+| **Amministratore della conformità alla comunicazione** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità della comunicazione e successivamente per separare gli amministratori della conformità di comunicazione in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di conformità della comunicazione, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
+| **Analista conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti di conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i criteri in cui vengono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto del messaggio), inoltrare a revisori aggiuntivi o inviare notifiche agli utenti. Gli analisti non sono in grado di risolvere gli avvisi in sospeso. |
+| **Ricercatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che agiranno come ricercatori per la conformità della comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto del messaggio, inoltrare ai revisori aggiuntivi, inoltrare a un caso avanzato di eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
+| **Visualizzatore conformità comunicazione** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che gestiscono i rapporti di comunicazione. Gli utenti assegnati a questo gruppo di ruoli possono accedere a tutti i widget per la creazione di report nella Home page conformità di comunicazione e visualizzare tutti i report di conformità della comunicazione. |
 
 ## <a name="plan-for-policies"></a>Pianificare i criteri
 
 La creazione di criteri di conformità della comunicazione è semplice e veloce con i [modelli](communication-compliance-feature-reference.md#policy-templates) predefiniti per il linguaggio offensivo, le informazioni riservate e la conformità alle normative. I criteri di conformità della comunicazione personalizzati consentono la flessibilità per individuare e indagare i problemi specifici dell'organizzazione e dei requisiti.
 
-Quando si pianificano i criteri di conformità della comunicazione, tenere presente quanto segue:
+Quando si pianificano i criteri di conformità della comunicazione, prendere in considerazione le aree seguenti:
 
 - Valutare l'opportunità di aggiungere tutti gli utenti dell'organizzazione come ambito per i criteri di conformità della comunicazione. L'identificazione di utenti specifici come nell'ambito per i singoli criteri è utile in alcuni casi, tuttavia la maggior parte delle organizzazioni deve includere tutti gli utenti nei criteri di conformità della comunicazione ottimizzati per il rilevamento di molestie o discriminazione.
 - Per semplificare l'installazione, valutare la possibilità di creare gruppi per gli utenti che hanno necessità di effettuare la revisione delle comunicazioni. Se si utilizzano i gruppi; potrebbe essere necessario più di un utente. Ad esempio, se si desidera eseguire l'analisi delle comunicazioni tra due gruppi distinti di persone oppure se si desidera specificare un gruppo non supervisionato.
