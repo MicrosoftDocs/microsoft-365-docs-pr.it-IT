@@ -78,8 +78,51 @@
     - name: Customer Lockbox
       href: customer-lockbox-requests.md
 - name: Gestire la protezione delle informazioni
-  href: protect-information.md
   items:
+    - name: 'Conoscere i dati, proteggere i dati, prevenire le perdite di dati'
+      href: protect-information.md
+    - name: Tipi di informazioni sensibili
+      items:
+        - name: Definizioni delle entità tipo di informazioni sensibili
+          href: sensitive-information-type-entity-definitions.md
+        - name: Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati
+          href: what-the-dlp-functions-look-for.md
+        - name: Video della panoramica completa sulla personalizzazione della prevenzione della perdita dei dati
+          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
+        - name: Personalizzare una tipologia integrata di informazioni sensibili
+          href: customize-a-built-in-sensitive-information-type.md
+        - name: Tipi di informazioni sensibili personalizzati
+          href: custom-sensitive-info-types.md
+        - name: Creare un tipo di informazione sensibile personalizzato con corrispondenza dei dati esatta
+          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: Creare un tipo di informazione sensibile personalizzato - Centro sicurezza e conformità
+          href: create-a-custom-sensitive-information-type.md
+        - name: Creare tipi di informazioni sensibili personalizzati - PowerShell
+          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Creare un dizionario di parole chiave
+          href: create-a-keyword-dictionary.md
+        - name: Creazione impronta digitale documenti
+          href: document-fingerprinting.md
+        - name: Funzioni DLP per le informazioni sensibili
+          href: what-the-dlp-functions-look-for.md
+    - name: Classificatori sottoponibili a training
+      items:
+        - name: Introduzione ai classificatori sottoponibili a training (anteprima)
+          href: classifier-getting-started-with.md
+        - name: Utilizzo di un classificatore incorporato (anteprima)
+          href: classifier-using-a-ready-to-use-classifier.md
+        - name: Creazione e training di un classificatore (anteprima)
+          href: classifier-creating-a-trainable-classifier.md
+    - name: Classificazione dei dati
+      items:
+        - name: Informazioni sulla classificazione dei dati
+          href: data-classification-overview.md
+        - name: Introduzione a Esplora contenuto
+          href: data-classification-content-explorer.md
+        - name: Introduzione a Esplora attività
+          href: data-classification-activity-explorer.md
+        - name: Note sulla versione della classificazione dei dati
+          href: data-classification-pub-preview-relnotes.md
     - name: Etichette di riservatezza
       items:
         - name: Informazioni sulle etichette di riservatezza
@@ -100,9 +143,77 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Usare le etichette di riservatezza nelle app di Office
           href: sensitivity-labels-office-apps.md
-    - name: Prevenzione della perdita di dati (DLP)
-      href: data-loss-prevention-policies.md
+    - name: Crittografia
       items:
+        - name: Comprendere la crittografia
+          href: encryption.md
+        - name: Crittografia a chiave doppia (anteprima)
+          href: double-key-encryption.md
+        - name: Servizio di crittografia di Office 365
+          href: office-365-service-encryption.md
+        - name: Customer Key
+          items:
+            - name: Crittografia del servizio con Customer Key in Office 365
+              href: customer-key-overview.md
+            - name: Configurare Customer Key per Office 365
+              href: customer-key-set-up.md
+            - name: Gestire Customer Key per Office 365
+              href: customer-key-manage.md
+            - name: Implementare o distribuire una Customer Key o una chiave di disponibilità
+              href: customer-key-availability-key-roll.md
+            - name: Informazioni sulle chiavi di disponibilità per Customer Key
+              href: customer-key-availability-key-understand.md
+        - name: Crittografia della posta elettronica
+          href: email-encryption.md
+          items:
+            - name: Office 365 Message Encryption (OME)
+              href: ome.md
+            - name: Configurare le nuove funzionalità di Office 365 Message Encryption
+              href: set-up-new-message-encryption-capabilities.md
+            - name: Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365
+              href: define-mail-flow-rules-to-encrypt-email.md
+            - name: Aggiungere il logo della propria organizzazione ai messaggi crittografati
+              href: add-your-organization-brand-to-encrypted-messages.md
+            - name: Creare criteri del tipo di informazioni sensibili per l'organizzazione con Office 365 Message Encryption
+              href: ome-sensitive-info-types.md
+            - name: Gestire Office 365 Message Encryption
+              href: manage-office-365-message-encryption.md
+            - name: Office 365 Advanced Message Encryption
+              href: ome-advanced-message-encryption.md
+            - name: Impostare una data di scadenza per un'e-mail crittografata da Office 365 Advanced Message Encryption
+              href: ome-advanced-expiration.md
+            - name: Revocare un'e-mail crittografata da Office 365 Advanced Message Encryption
+              href: revoke-ome-encrypted-mail.md
+            - name: Confrontare le versioni di OME
+              href: ome-version-comparison.md
+            - name: Domande frequenti su Office 365 Message Encryption
+              href: ome-faq.md
+            - name: Modalità di protezione dei segreti di posta elettronica in Exchange Online
+              href: exchange-online-secures-email-secrets.md
+            - name: Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica in Office 365
+              href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: BitLocker e Distributed Key Manager (DKM) per la crittografia
+              href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
+            - name: OME legacy
+              items:
+                - name: Informazioni legacy per Office 365 Message Encryption
+                  href: legacy-information-for-message-encryption.md
+                - name: Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365
+                  href: set-up-azure-rms-for-previous-version-message-encryption.md
+        - name: SharePoint IRM
+          href: set-up-irm-in-sp-admin-center.md
+        - name: Informazioni di riferimento tecniche
+          href: technical-reference-details-about-encryption.md
+        - name: Deprecazione TLS 1.0 e 1.1 per Office 365
+          href: tls-1.0-and-1.1-deprecation-for-office-365.md
+        - name: Deprecazione di TLS 1.0 e 1.1 in Office 365 GCC High e DoD
+          href: tls-1-2-in-office-365-gcc.md
+        - name: TLS 1.2 in Office 365
+          href: prepare-tls-1.2-in-office-365.md
+    - name: Prevenzione della perdita di dati (DLP)
+      items:
+        - name: Informazioni sulla prevenzione della perdita di dati
+          href: data-loss-prevention-policies.md
         - name: DLP e Microsoft Teams
           href: dlp-microsoft-teams.md
         - name: Informazioni sulla prevenzione della perdita di dati degli endpoint (anteprima)
@@ -131,116 +242,42 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
           href: how-dlp-works-between-admin-centers.md
-    - name: Tipi di informazioni sensibili
-      items:
-        - name: Definizioni delle entità tipo di informazioni sensibili
-          href: sensitive-information-type-entity-definitions.md
-        - name: Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati
-          href: what-the-dlp-functions-look-for.md
-        - name: Video della panoramica completa sulla personalizzazione della prevenzione della perdita dei dati
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
-        - name: Personalizzare una tipologia integrata di informazioni sensibili
-          href: customize-a-built-in-sensitive-information-type.md
-        - name: Tipi di informazioni sensibili personalizzati
-          href: custom-sensitive-info-types.md
-        - name: Creare tipi di informazioni riservate personalizzati con classificazione esatta basata su exact data match
-          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Creare un tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità
-          href: create-a-custom-sensitive-information-type.md
-        - name: Creare tipi di informazioni sensibili personalizzati usando PowerShell
-          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
-        - name: Creare un dizionario di parole chiave
-          href: create-a-keyword-dictionary.md
-        - name: Creazione impronta digitale documenti
-          href: document-fingerprinting.md
-        - name: Funzioni DLP per le informazioni sensibili
-          href: what-the-dlp-functions-look-for.md
-    - name: Crittografia in Microsoft 365
-      href: encryption.md
-    - name: Servizio di crittografia di Office 365
-      href: office-365-service-encryption.md
-    - name: Dettagli tecnici di riferimento sulla crittografia in Office 365
-      href: technical-reference-details-about-encryption.md
-    - name: Deprecazione TLS 1.0 e 1.1 per Office 365
-      href: tls-1.0-and-1.1-deprecation-for-office-365.md
-    - name: Deprecazione di TLS 1.0 e 1.1 in Office 365 GCC High e DoD
-      href: tls-1-2-in-office-365-gcc.md
-    - name: TLS 1.2 in Office 365
-      href: prepare-tls-1.2-in-office-365.md
-    - name: Crittografia a chiave doppia per l’anteprima pubblica di Microsoft 365
-      href: double-key-encryption.md
-    - name: Customer Key
-      items:
-        - name: Crittografia del servizio con Customer Key in Office 365
-          href: customer-key-overview.md
-        - name: Configurare Customer Key per Office 365
-          href: customer-key-set-up.md
-        - name: Gestire Customer Key per Office 365
-          href: customer-key-manage.md
-        - name: Implementare o distribuire una Customer Key o una chiave di disponibilità
-          href: customer-key-availability-key-roll.md
-        - name: Informazioni sulle chiavi di disponibilità per Customer Key
-          href: customer-key-availability-key-understand.md
-    - name: Crittografia per i dati in transito
-      href: office-365-encryption-for-data-in-transit.md
-    - name: Crittografia della posta elettronica
-      href: email-encryption.md
-      items:
-        - name: Office 365 Message Encryption (OME)
-          href: ome.md
-        - name: Configurare le nuove funzionalità di Office 365 Message Encryption
-          href: set-up-new-message-encryption-capabilities.md
-        - name: Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365
-          href: define-mail-flow-rules-to-encrypt-email.md
-        - name: Aggiungere il logo della propria organizzazione ai messaggi crittografati
-          href: add-your-organization-brand-to-encrypted-messages.md
-        - name: Creare criteri del tipo di informazioni sensibili per l'organizzazione con Office 365 Message Encryption
-          href: ome-sensitive-info-types.md
-        - name: Gestire Office 365 Message Encryption
-          href: manage-office-365-message-encryption.md
-        - name: Office 365 Advanced Message Encryption
-          href: ome-advanced-message-encryption.md
-        - name: Impostare una data di scadenza per un'e-mail crittografata da Office 365 Advanced Message Encryption
-          href: ome-advanced-expiration.md
-        - name: Revocare un'e-mail crittografata da Office 365 Advanced Message Encryption
-          href: revoke-ome-encrypted-mail.md
-        - name: Confrontare le versioni di OME
-          href: ome-version-comparison.md
-        - name: Domande frequenti su Office 365 Message Encryption
-          href: ome-faq.md
-        - name: Modalità di protezione dei segreti di posta elettronica in Exchange Online
-          href: exchange-online-secures-email-secrets.md
-        - name: Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica in Office 365
-          href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: BitLocker e Distributed Key Manager (DKM) per la crittografia
-          href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
-        - name: OME legacy
-          items:
-            - name: Informazioni legacy per Office 365 Message Encryption
-              href: legacy-information-for-message-encryption.md
-            - name: Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365
-              href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: Configurare IRM nell'interfaccia di amministrazione di SharePoint
-      href: set-up-irm-in-sp-admin-center.md
-    - name: Informazioni sulla classificazione dei dati
-      href: data-classification-overview.md
-      items:
-        - name: Introduzione a Esplora contenuto
-          href: data-classification-content-explorer.md
-        - name: Introduzione a Esplora attività
-          href: data-classification-activity-explorer.md
-        - name: Note sulla versione della classificazione dei dati
-          href: data-classification-pub-preview-relnotes.md
-        - name: Introduzione ai classificatori sottoponibili a training (anteprima)
-          href: classifier-getting-started-with.md
-        - name: Utilizzo di un classificatore incorporato (anteprima)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: Creazione e training di un classificatore (anteprima)
-          href: classifier-creating-a-trainable-classifier.md
 - name: Gestire la governance delle informazioni
   items:
-    - name: Gestire la governance delle informazioni
+    - name: Gestire i propri dati
       href: manage-information-governance.md
+    - name: Conserva ed elimina i dati
+      items:
+        - name: Informazioni sulla conservazione
+          items:
+            - name: Criteri di conservazione ed etichette
+              href: retention.md
+            - name: Conservazione per SharePoint e OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Conservazione per Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Conservazione per Exchange
+              href: retention-policies-exchange.md
+        - name: Introduzione alla conservazione
+          href: get-started-with-retention.md
+        - name: Creare criteri di conservazione
+          href: create-retention-policies.md
+        - name: Usare il piano file
+          href: file-plan-manager.md
+        - name: Creare etichette di conservazione e applicarle nelle app
+          href: create-apply-retention-labels.md
+        - name: Applicare automaticamente un'etichetta di conservazione al contenuto
+          href: apply-retention-labels-automatically.md
+        - name: Rispettare la SEC Rule 17a-4
+          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: Creare etichette di conservazione con PowerShell
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: Avviare la conservazione al verificarsi di un evento
+          href: event-driven-retention.md
+        - name: Usare le etichette di conservazione per gestire il ciclo di vita dei documenti
+          href: auto-apply-retention-labels-scenario.md
+        - name: Gestire l’eliminazione dei dati
+          href: disposition.md
     - name: Importazione dei dati della cassetta postale
       items:
         - name: Panoramica dell'importazione di file PST
@@ -287,38 +324,6 @@
           href: enable-unlimited-archiving.md
         - name: Configurare i criteri di archiviazione ed eliminazione per le cassette postali
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Conserva ed elimina i dati
-      items:
-        - name: Informazioni sulla conservazione
-          items:
-            - name: Criteri di conservazione ed etichette
-              href: retention.md
-            - name: Conservazione per SharePoint e OneDrive
-              href: retention-policies-sharepoint.md
-            - name: Conservazione per Microsoft Teams
-              href: retention-policies-teams.md
-            - name: Conservazione per Exchange
-              href: retention-policies-exchange.md
-        - name: Introduzione alla conservazione
-          href: get-started-with-retention.md
-        - name: Creare criteri di conservazione
-          href: create-retention-policies.md
-        - name: Usare il piano file
-          href: file-plan-manager.md
-        - name: Creare etichette di conservazione e applicarle nelle app
-          href: create-apply-retention-labels.md
-        - name: Applicare automaticamente un'etichetta di conservazione al contenuto
-          href: apply-retention-labels-automatically.md
-        - name: Rispettare la SEC Rule 17a-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Creare etichette di conservazione con PowerShell
-          href: bulk-create-publish-labels-using-powershell.md
-        - name: Avviare la conservazione al verificarsi di un evento
-          href: event-driven-retention.md
-        - name: Usare le etichette di conservazione per gestire il ciclo di vita dei documenti
-          href: auto-apply-retention-labels-scenario.md
-        - name: Gestire l’eliminazione dei dati
-          href: disposition.md
     - name: Gestire le cassette postali inattive
       items:
         - name: Panoramica delle cassette postali inattive
@@ -333,10 +338,8 @@
           href: restore-an-inactive-mailbox.md
         - name: Eliminare una cassetta postale inattiva
           href: delete-an-inactive-mailbox.md
-    - name: Altre informazioni sulla governance dei dati
-      items:
-        - name: Video del team Microsoft Data Governance
-          href: 'https://go.microsoft.com/fwlink/?linkid=867039'
+    - name: Video del team Data Governance
+      href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: Gestione dei record
       items:
         - name: Informazioni sulla gestione dei record
