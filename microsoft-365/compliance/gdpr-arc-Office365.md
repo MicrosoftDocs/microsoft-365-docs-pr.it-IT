@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 8a988cb053a5869c9cb57306fc0c78cdd7ba5ccc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 07f63fd590c5ce9f5fabee942056a1f9c261bf55
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208817"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307837"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-365"></a>Elenco di controllo per l'applicazione del GDPR all'uso di Microsoft 365
 
@@ -137,7 +137,7 @@ Questa struttura viene usata anche per organizzare la presentazione dei controll
 | 2 <a name="2"> </a> | [Documentazione sulla sicurezza di Office 365](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services) |
 | 3 <a name="3"> </a> | [FedRAMP medio, Piano di sicurezza del sistema FedRAMP (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a> | [Criteri di sicurezza di Microsoft Cloud](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
-| 5 <a name="5"> </a> | [Information Protection di Office 365 per il GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
+| 5 <a name="5"> </a> | [Information Protection di Office 365 per il GDPR](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr) |
 | 6 <a name="6"> </a> | [Chi può accedere ai dati e secondo quali condizioni?](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
 | 7 <a name="7"> </a> | [Contratti per rappresentanti responsabili del trattamento per conto del cliente: sottoscrivere un contratto con Microsoft](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 8 <a name="8"> </a> | [Richieste degli interessati per Office 365 nell'ambito del GDPR](https://aka.ms/DSROffice365) |

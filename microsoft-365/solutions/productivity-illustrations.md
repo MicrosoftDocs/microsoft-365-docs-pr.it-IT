@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: d10b4a7d47f849769d0a534941bddc1c3678f3a4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 043f5882dcaa15576317958523d6e57d4667ef45
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695219"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308086"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
@@ -113,6 +113,6 @@ Per altre informazioni, vedere l'articolo correlato a questo poster: [Soluzioni 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](https://docs.microsoft.com/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)
+[Modelli architetturali per SharePoint, Exchange, Skype for Business e Lync](https://docs.microsoft.com/microsoft-365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)
   
-[Guida al lab test (TLG) per adozione del cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guida al lab test (TLG) per adozione del cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)

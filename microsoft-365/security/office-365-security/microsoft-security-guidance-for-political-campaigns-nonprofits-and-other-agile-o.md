@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "Riepilogo: indicazioni relative alla pianificazione e all'implementazione per organizzazioni dinamiche con un profilo maggiormente a rischio."
-ms.openlocfilehash: 98ede8a7dade750413dbdf2f35394cb8b15513e5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 79384277ec470d5545e9fe8127a95532e892fb45
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652886"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307884"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile
 
@@ -62,6 +62,6 @@ Per ulteriori informazioni sulle funzionalità di protezione per una dimostrazio
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida al lab test (TLG) per adozione del cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guida al lab test (TLG) per adozione del cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Risorse sull'architettura IT di Microsoft Cloud](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources)
+[Risorse sull'architettura IT di Microsoft Cloud](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)

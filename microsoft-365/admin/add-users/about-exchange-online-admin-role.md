@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: "Gli amministratori di Exchange Online gestiscono la posta elettronica e le cassette postali dell'organizzazione. Ad esempio, recuperano gli elementi eliminati nella cassetta postale di un utente. "
-ms.openlocfilehash: d69ec803c8321c6417f587feafb2730de1d1e7b3
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 0b63679883e8329782700085fa0c11a0ac6585ca
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909253"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307434"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informazioni sul ruolo di amministratore di Exchange Online
 
@@ -36,7 +36,7 @@ Per facilitare l'amministrazione di Microsoft 365, è possibile [assegnare](assi
   
 Ecco alcune delle principali attività che possono eseguire gli utenti a cui è stato assegnato il ruolo di amministratore di Exchange:
   
-- [Recuperare gli elementi eliminati nella cassetta postale di un utente](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
+- [Recuperare gli elementi eliminati nella cassetta postale di un utente](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
     
 - [Configurare un criterio di archiviazione ed eliminazione per le cassette postali dell'organizzazione](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     

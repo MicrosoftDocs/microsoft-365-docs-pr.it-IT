@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori (noti anche come Intelligence del flusso di posta).
-ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827714"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307918"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Intelligence del flusso di posta in Exchange Online Protection
 
@@ -62,7 +62,7 @@ In genere, questo errore indica che Microsoft 365 ha riscontrato un errore di co
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Come risolvere il codice di errore 450 4.4.316?
 
-- Se si dispone di cassette postali nell'ambiente locale, è necessario modificare le impostazioni del firewall per consentire le connessioni dagli indirizzi IP di Microsoft 365 sulla porta TCP 25 ai server di posta elettronica locali. Per un elenco degli indirizzi IP di Microsoft 365, vedere [URL e intervalli di indirizzi IP di microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- Se si dispone di cassette postali nell'ambiente locale, è necessario modificare le impostazioni del firewall per consentire le connessioni dagli indirizzi IP di Microsoft 365 sulla porta TCP 25 ai server di posta elettronica locali. Per un elenco degli indirizzi IP di Microsoft 365, vedere [URL e intervalli di indirizzi IP di microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 - Se non è necessario recapitare altri messaggi all'ambiente locale, fare clic su **Correggi ora** nell'avviso in modo che Microsoft 365 possa rifiutare immediatamente i messaggi con destinatari non validi. Questo consente di ridurre il rischio di superare la quota dell'organizzazione per i destinatari non validi, che possono compromettere il recapito dei messaggi normali. In alternativa, è possibile utilizzare le istruzioni seguenti per risolvere manualmente il problema:
 

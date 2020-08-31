@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Questo è un articolo di riferimento sugli attributi degli account utente di Azure Active Directory utilizzati per definire i segmenti di barriera delle informazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6b6fb9cbbe5840888114ba99a604d16117ec795d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035052"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307995"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attributi per i criteri delle barriere informative
 
@@ -38,7 +38,7 @@ Gli attributi elencati in questo articolo possono essere utilizzati per definire
 
 2. Verificare che per gli account utente siano stati inseriti i valori per gli attributi selezionati nel passaggio 1. Visualizzare i dettagli dell'account utente e, se necessario, modificare gli account utente per includere i valori degli attributi. 
 
-    - Per modificare più account o utilizzare PowerShell per modificare un singolo account, vedere [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - Per modificare più account o utilizzare PowerShell per modificare un singolo account, vedere [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
 
     - Per modificare un singolo account, vedere [aggiungere o aggiornare le informazioni sul profilo di un utente utilizzando Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: 47690e1295b67c01f86429d97e0fc8d82ad58d6f
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55bfb4a907436a2c3500e2c178990dca8fa9bfba
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529636"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306936"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
@@ -128,7 +128,7 @@ Ma cosa succede se un amministratore reimposta semplicemente la password dell'ac
 4. Nel riquadro a comparsa **Modifica stato di accesso**, verificare che l'opzione Blocca l'accesso dell'utente sia selezionata, selezionare **Salva** e quindi **Chiudi**.
 ::: moniker-end
 
-Per istruzioni su come bloccare l'accesso per gli account con Azure AD PowerShell (anche per molti account contemporaneamente), vedere [Bloccare gli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/block-user-accounts-with-office-365-powershell).
+Per istruzioni su come bloccare l'accesso per gli account con Azure AD PowerShell (anche per molti account contemporaneamente), vedere [Bloccare gli account utente con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell).
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>Aggiungere la cassetta postale condivisa in Outlook
 

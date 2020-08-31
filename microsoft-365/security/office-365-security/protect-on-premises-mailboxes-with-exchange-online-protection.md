@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori in Cina che utilizzano Office 365 gestito da 21Vianet possono imparare a usare standalone Exchange Online Protection (EOP) per proteggere le cassette postali locali.
-ms.openlocfilehash: 57b9e7519edf92438662ecbf27c93b662d9e8f71
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ca3f7f1ffc91b404ac59e92b40ae1f95709ec3ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826814"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307750"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Proteggere caselle di posta elettronica locali in Cina con Exchange Online Protection autonomo
 
@@ -58,7 +58,7 @@ Creare i connettori nell'Interfaccia di amministrazione di Exchange (EAC) per ab
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Passaggio 4: Consentire alla porta in ingresso 25 accesso SMTP
 
-Dopo aver configurato i connettori, attendere 72 ore per consentire la propagazione degli aggiornamenti dei record DNS. In questo modo, limitare il traffico SMTP in ingresso 25 nel firewall o nei server di posta elettronica per accettare la posta solo dai datacenter di EOP, in particolare dagli indirizzi IP elencati in [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints). In tal modo si protegge l'ambiente locale limitando l'ambito dei messaggi in arrivo che è possibile ricevere. Inoltre, se sul server di posta sono state definite impostazioni per il controllo degli indirizzi IP a cui è consentita la connessione per l'inoltro della posta, è necessario aggiornare anche tali impostazioni.
+Dopo aver configurato i connettori, attendere 72 ore per consentire la propagazione degli aggiornamenti dei record DNS. In questo modo, limitare il traffico SMTP in ingresso 25 nel firewall o nei server di posta elettronica per accettare la posta solo dai datacenter di EOP, in particolare dagli indirizzi IP elencati in [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints). In tal modo si protegge l'ambiente locale limitando l'ambito dei messaggi in arrivo che è possibile ricevere. Inoltre, se sul server di posta sono state definite impostazioni per il controllo degli indirizzi IP a cui è consentita la connessione per l'inoltro della posta, è necessario aggiornare anche tali impostazioni.
 
 > [!TIP]
 > Configurare le impostazioni sul server SMTP con una tempo di timeout di connessione pari a 60 secondi. Questa impostazione è accettabile nella maggior parte delle situazioni perché consente un certo ritardo, ad esempio in caso di messaggi inviati con allegati di grandi dimensioni.

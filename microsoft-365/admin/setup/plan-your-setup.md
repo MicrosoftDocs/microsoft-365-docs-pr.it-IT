@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Informazioni sui requisiti e le considerazioni per l'esecuzione del passaggio a Microsoft 365 for business.
-ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 14543e3859f06e7f89cf74e2159a70483c7ec228
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529661"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307544"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Pianificare la configurazione di Microsoft 365 per le aziende
 
@@ -60,7 +60,7 @@ Per qualsiasi difficoltà, siamo disponibili telefonicamente. [Opzioni di assist
 
 Esistono due scenari che includono la migrazione di dati o utenti da ambienti locali o la configurazione di un sistema ibrido che include la sincronizzazione della directory. Se si è in una o più categorie, seguire le istruzioni riportate in questi articoli:
   
-- Per configurare la sincronizzazione della directory con Active Directory locale, vedere Configurare la [sincronizzazione della directory per microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)e per comprendere i diversi modelli di identità in Microsoft 365, leggere [understanding Microsoft 365 Identity e Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity).
+- Per configurare la sincronizzazione della directory con Active Directory locale, vedere Configurare la [sincronizzazione della directory per microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)e per comprendere i diversi modelli di identità in Microsoft 365, leggere [understanding Microsoft 365 Identity e Azure Active Directory](https://docs.microsoft.com/microsoft-365/enterprise/about-microsoft-365-identity).
 
 - Per configurare una distribuzione ibrida di Exchange, vedere il set completo di istruzioni per le diverse modalità di configurazione di una distribuzione ibrida di Exchange, inclusa la configurazione dei record DNS, disponibile qui: [Assistente per la distribuzione di Exchange Server](https://aka.ms/exdeploy)
 
@@ -127,7 +127,7 @@ Per le organizzazioni di grandi dimensioni o per le distribuzioni ibride di Skyp
   
 ## <a name="plan-for-integration-with-active-directory-or-other-software"></a>Pianificare l'integrazione con Active Directory o altro software
 
-- **Si vuole eseguire l'integrazione con Active Directory locale?** È possibile integrare Active Directory locale con Microsoft 365 utilizzando Azure Active Directory Connect. Per istruzioni, vedere [configurare la sincronizzazione della directory per Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization).
+- **Si vuole eseguire l'integrazione con Active Directory locale?** È possibile integrare Active Directory locale con Microsoft 365 utilizzando Azure Active Directory Connect. Per istruzioni, vedere [configurare la sincronizzazione della directory per Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization).
   
 - **Si desidera integrare Microsoft 365 con software creato da altre aziende?** Se è necessario integrare Microsoft 365 con altri software nell'organizzazione, è consigliabile prendere in considerazione l' [assunzione di un partner](https://go.microsoft.com/fwlink/?linkid=391089) per aiutarvi nella distribuzione.
   

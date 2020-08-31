@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: f671588ff4232c6ca1c1342475f48802bf1a0076
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825102"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308196"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -81,6 +81,9 @@ Le impostazioni dei criteri seguenti sono disponibili nei criteri anti-phishing 
     - **Il destinatario è**
     - **Il destinatario è un membro di**
     - **Il dominio del destinatario è**
+
+  > [!NOTE]
+  > L'impostazione **applicato a** è obbligatoria nei criteri di anti-phishing personalizzati per identificare i **destinatari** <u>dei messaggi a cui si applica il criterio</u>. I criteri di anti-phishing ATP dispongono anche di [impostazioni di rappresentazione](#impersonation-settings-in-atp-anti-phishing-policies) in cui è possibile specificare i singoli indirizzi di posta elettronica del mittente o i domini mittente <u>che riceveranno la protezione della rappresentazione</u> come descritto più avanti in questo argomento.
 
 ## <a name="spoof-settings"></a>Impostazioni di spoofing
 
@@ -144,13 +147,21 @@ Un dominio rappresentato potrebbe altrimenti essere considerato attendibile (dom
 
 Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri di anti-phishing ATP:
 
-- **Utenti da proteggere**: impedisce la rappresentazione degli utenti interni o esterni specificati. Ad esempio, dirigenti (interni) e membri di bordo (esterni). È possibile aggiungere fino a 60 indirizzi interni ed esterni. Questo elenco di utenti protetti è diverso dall'elenco dei destinatari a cui si applica il criterio nell'impostazione **applicato a** .
+- **Utenti da proteggere**: impedisce che gli indirizzi di posta elettronica interni o esterni specificati vengano rappresentati **come mittenti dei messaggi**. Ad esempio, dirigenti (mittenti interni) e membri della scheda (mittenti esterni). È possibile aggiungere fino a 60 indirizzi di posta elettronica del mittente interno ed esterno per proteggersi dalla rappresentazione. Questo elenco di **mittenti** protetti dalla rappresentazione è diverso dall'elenco dei **destinatari** a cui si applica il criterio.
 
-  Ad esempio, è possibile specificare Felipe Apodaca (felipea@contoso.com) come utente protetto in un criterio che si applica al gruppo denominato Executives. I messaggi in ingresso inviati ai membri del gruppo dirigenti in cui è rappresentato Felipe Apodaca verranno attivati dal criterio (l'azione configurata per gli utenti rappresentati).
+  Il criterio predefinito si applica ai messaggi inviati a tutti i destinatari, mentre i criteri personalizzati si applicano solo ai messaggi inviati ai destinatari definiti nell'impostazione **applicata a** come descritto nella sezione [impostazioni di criteri](#policy-settings) .
 
-- **Domini da proteggere**: impedire la rappresentazione dei domini specificati. Ad esempio, tutti i domini che possiedi ([domini accettati](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o domini specifici (domini che possiedi o domini partner). Questo elenco di domini protetti è diverso dall'elenco dei domini a cui si applica il criterio nell'impostazione **applicato a** .
+  Per impostazione predefinita, non sono configurati indirizzi di posta elettronica del mittente per la protezione della rappresentazione **degli utenti da proteggere**. Pertanto, per impostazione predefinita, nessun indirizzo di posta elettronica del mittente è coperto dalla protezione della rappresentazione, sia nel criterio predefinito che nei criteri personalizzati.
 
-  Ad esempio, è possibile specificare tailspintoys.com come dominio protetto in un criterio che si applica ai membri del gruppo denominati dirigenti. I messaggi in ingresso inviati ai membri del gruppo Executives in cui tailspintoys.com è rappresentato verranno attivati dal criterio (l'azione configurata per i domini rappresentati).
+  Quando si aggiungono indirizzi di posta elettronica interni o esterni all'elenco **degli utenti da proteggere** , i messaggi provenienti da tali **mittenti** sono soggetti ai controlli di protezione della rappresentazione. Il messaggio viene controllato per la rappresentazione **se** il messaggio viene inviato a un **destinatario** a cui si applica il criterio (tutti i destinatari per il criterio predefinito; **Applicato ai** destinatari nei criteri personalizzati). Se la rappresentazione viene rilevata nell'indirizzo di posta elettronica del mittente, le azioni di protezione della rappresentazione per gli utenti vengono applicate al messaggio (azione sul messaggio, suggerimento per la sicurezza degli utenti rappresentati e così via).
+
+- **Domini da proteggere**: impedisce la rappresentazione dei domini specificati **nel dominio del mittente del messaggio**. Ad esempio, tutti i domini che possiedi ([domini accettati](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o domini specifici (domini che possiedi o domini partner). Questo elenco di **domini mittente** che sono protetti dalla rappresentazione è diverso dall'elenco dei **destinatari** a cui si applica il criterio.
+
+  Il criterio predefinito si applica ai messaggi inviati a tutti i destinatari, mentre i criteri personalizzati si applicano solo ai messaggi inviati ai destinatari definiti nell'impostazione **applicata a** come descritto nella sezione [impostazioni di criteri](#policy-settings) .
+
+  Per impostazione predefinita, nessun dominio mittente è configurato per la protezione della rappresentazione nei **domini da proteggere**. Pertanto, per impostazione predefinita, nessun dominio del mittente è coperto dalla protezione della rappresentazione, sia nel criterio predefinito che nei criteri personalizzati.
+
+  Quando si aggiungono domini ai **domini per proteggere** l'elenco, i messaggi provenienti da **mittenti in tali domini** sono soggetti ai controlli di protezione della rappresentazione. Il messaggio viene controllato per la rappresentazione **se** il messaggio viene inviato a un **destinatario** a cui si applica il criterio (tutti i destinatari per il criterio predefinito; **Applicato ai** destinatari nei criteri personalizzati). Se la rappresentazione viene rilevata nel dominio del mittente, le azioni di protezione della rappresentazione per i domini vengono applicate al messaggio (azione sul messaggio, suggerimento per la sicurezza dei domini rappresentati e così via).
 
 - **Azioni per gli utenti o i domini protetti**: scegliere l'azione da intraprendere nei messaggi in ingresso che contengono tentativi di rappresentazione per gli utenti protetti e i domini protetti nel criterio. È possibile specificare diverse azioni per la rappresentazione degli utenti protetti e la rappresentazione dei domini protetti:
 

@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Informazioni su come aggiungere un membro a un gruppo, rimuovere un membro da un gruppo e gestire lo stato del proprietario di un gruppo nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1d11e527f4f8759511a64036a71e837689bcbcd3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780482"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307326"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Aggiungere o rimuovere membri dai gruppi di Microsoft 365 utilizzando l'interfaccia di amministrazione
 
@@ -291,6 +291,6 @@ Per impostazione predefinita, la persona che crea il gruppo ne è il proprietari
 
 - [Gestire l'accesso guest nei gruppi di Microsoft 365](manage-guest-access-in-groups.md)
 
-- [Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): questo articolo introduce i cmdlet chiave e fornisce esempi
+- [Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell): questo articolo introduce i cmdlet chiave e fornisce esempi
 
 - [Criteri di denominazione dei gruppi Microsoft 365](groups-naming-policy.md)

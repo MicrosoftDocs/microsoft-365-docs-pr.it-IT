@@ -21,12 +21,12 @@ description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle 
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 84932e13a336d225894683f9e328cb44df8c0e78
-ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
+ms.openlocfilehash: 7504fa085c6dd5413a1dcddbb71f3d015ded72c1
+ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46635023"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47300458"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -39,10 +39,6 @@ ms.locfileid: "46635023"
 
 Si aggiungono continuamente nuove funzionalità all'interfaccia di [amministrazione di Microsoft 365](microsoft-365-admin-center-preview.md), risolvendo i problemi che vengono apportati e modificando in base ai commenti e suggerimenti. Per sapere cosa è disponibile per l'utente, vedere di seguito. Alcune funzionalità vengono distribuite a velocità diverse per i clienti. Se non si vede ancora una funzionalità, [provare ad aggiungersi alla versione mirata](manage/release-options-in-office-365.md).
 
-> [!IMPORTANT]
-> **"Classic" prepensionamento del centro di amministrazione a partire da marzo**<br><br>
-Quando si accede all'interfaccia di amministrazione di Microsoft 365, è possibile accedere al nuovo interfaccia di amministrazione ogni volta. E in marzo, è stata avviata la disabilitazione della possibilità di tornare all'interfaccia di amministrazione classica. Per il momento, è ancora possibile tornare indietro, ma siccome il nuovo interfaccia di amministrazione arriva alla parità (e lo supera), si disattiverà l'opzione per tutte le organizzazioni. <br><br> *Ultimo aggiornamento: 11 maggio 2020*
-
 Se si desidera sapere cosa c'è di nuovo con altri servizi cloud Microsoft:
 
 - [Novità di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
@@ -53,6 +49,34 @@ Se si desidera sapere cosa c'è di nuovo con altri servizi cloud Microsoft:
 - [Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](https://docs.microsoft.com/OfficeUpdates/)
 
+## <a name="july-2020"></a>Luglio 2020
+
+### <a name="getting-ready-for-ignite-2020"></a>Prepararsi per Ignite 2020
+
+Quando ci si sposta in Ignite Season in Microsoft, non viene rilasciato il numero di funzionalità in modo che sia necessario parlare durante le sessioni. 
+
+Il prossimo aggiornamento di questo articolo sarà il giorno di apertura del primo online solo Ignite. E quest'anno è possibile partecipare gratuitamente. Check it out, Get signed up: [Microsoft ignite 2020](https://www.microsoft.com/ignite).
+
+### <a name="your-products"></a>Prodotti
+
+La gestione delle sottoscrizioni è stata molto elaborata in modo da rendere più veloce la pagina da caricare, più velocemente per trovare ciò che si sta cercando e per incontrare gli standard di facilitato Web ([linee guida WCAG 2,1](http://www.w3.org/TR/WCAG21/)).
+
+- **Riprogettazione della tabella**: la tabella è stata riprogettata in modo che sia possibile raggruppare abbonamenti simili. Andare a **fatturazione**dei  >  **prodotti**.
+- **Dettagli prodotto**: per ulteriori informazioni sugli abbonamenti, selezionare il prodotto nell'elenco.
+- **Fare tutto da qui**: e non è necessario andare a saltare diverse pagine per gestire un prodotto. Ad esempio, se è necessario annullare un abbonamento, il riquadro si aprirà per eseguire l'azione qui.
+
+![Pagina prodotti con il riquadro Annulla sottoscrizione aperto.](../media/MAC-WN-SubscrDetails.png)
+
+### <a name="domains"></a>Domini
+
+La gestione dei domini può essere complicata e è stata rilasciata una nuova funzionalità per semplificarla. Andare a Settings > Domains e quindi selezionare un dominio per ottenere ulteriori informazioni sul dominio e sull'integrità del dominio.
+
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Pagina dei dettagli sui domini per contoso.com":::
+
+### <a name="docs-training-and-videos"></a>Documenti, formazione e video
+
+[What ' s New with microsoft 365](https://youtu.be/m1Nu8WJgCDY) video Series: this month, We cover the New Yammer experience for Web and mobile, How to integre The Yammer Communitys app for Microsoft teams, New Policy Packages to support FIRSTLINE workers and managers, and more.
+
 ## <a name="june-2020"></a>Giugno 2020
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>Gestione delle nuove funzionalità di Office
@@ -62,7 +86,6 @@ Alcuni mesi fa, è stata aggiunta un'impostazione che consente di gestire i [nuo
 ### <a name="docs-training-and-videos-june"></a>Documenti, formazione e video (giugno)
 
 - [Guida introduttiva ai team](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
-
 
 ## <a name="may-2020"></a>Maggio 2020
 
@@ -100,9 +123,9 @@ Proprio questo mese, è stato rilasciato un nuovo sito su [https://docs.microsof
 - Istruzioni specifiche per l'industria
 - Entità di progettazione dell'architettura Enterprise
 
-### <a name="docs-training-and-videos"></a>Documenti, formazione e video
+### <a name="docs-training-and-videos-may"></a>Documenti, formazione e video (maggio)
 
-- **What ' s New in microsoft 365 video Series**: questo mese, viene illustrata la nuova esperienza di supporto nei centri di amministrazione e sicurezza e conformità dei team, l'integrazione del pianificatore con il centro messaggi e il nuovo layout video 3x3 in Microsoft teams. [Novità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- **What ' s New in microsoft 365 video Series**: questo mese, viene illustrata la nuova esperienza di supporto nei centri di amministrazione e sicurezza e conformità dei team, l'integrazione del pianificatore con il centro messaggi e il nuovo layout video 3x3 in Microsoft teams. 
 - La pagina hub della Guida dell'interfaccia di [amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/) è stata aggiornata per trovare le informazioni necessarie più rapidamente. E se si va a vedere la pagina in questo momento, è stata aggiunta una scheda per informare gli aggiornamenti e le modifiche importanti.
 
 ## <a name="april-2020"></a>Aprile 2020
@@ -215,7 +238,7 @@ I nuovi nomi dei prodotti entrano in vigore il 21 aprile 2020. Si tratta di una 
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    App Microsoft 365 per le aziende       |
+|Office 365 Business     |    Microsoft 365 Apps for business       |
 |Office 365 ProPlus    |   Microsoft 365 Apps for Enterprise      |
 
 ### <a name="videos-training-and-docs"></a>Video, formazione e documenti
@@ -334,7 +357,7 @@ A novembre sono stati rilasciati alcuni percorsi di apprendimento per il sito We
 - [Microsoft 365-modernizzare la distribuzione dell'organizzazione con Windows 10 e Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Gestire la distribuzione aziendale con Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Aggiornare Microsoft Office per l'IT su larga scala](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
-- [Fornire desktop e app Remote da Azure con desktop virtuale di Windows](https://docs.microsoft.com/learn/paths/m365-wvd/)
+- [Fornire desktop e app Remote da Azure con desktop virtuale di Windows ](https://docs.microsoft.com/learn/paths/m365-wvd/)
 - [Modernizzare l'area di lavoro con Microsoft 365 e Surface for Business](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
 - [Proteggere le identità e l'accesso con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Proteggere le informazioni aziendali con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
@@ -382,7 +405,7 @@ Quando una funzionalità di Office importante viene rilasciata a un'app di Offic
 
 Tecnicamente, non si tratta delle notizie del centro di amministrazione di Microsoft 365 da raccontare, ma siamo così entusiasti che volevamo assicurarci di vedere queste notizie:
 > [!IMPORTANT]
-> È ora possibile accedere all'interfaccia di amministrazione di SharePoint con un URL normale:[https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
+> È ora possibile accedere all'interfaccia di amministrazione di SharePoint con un URL normale: [https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
 Per altre informazioni, vedere [What ' s New in the SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center).
 

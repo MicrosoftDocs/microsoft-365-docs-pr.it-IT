@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica del Punteggio di produttività Microsoft.
-ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868856"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307478"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Punteggio di produttività Microsoft (anteprima)
 
@@ -44,7 +44,7 @@ Vengono forniti dati, informazioni dettagliate e suggerimenti in due aree:
 
 - **Tecnologia Experience:** La produttività dipende da una tecnologia affidabile e performante, oltre che da un utilizzo efficiente di Microsoft 365. Viene fornita l' [analisi dell'endpoint](https://aka.ms/endpointanalytics), che consente di comprendere in che modo la produttività degli utenti può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software dell'endpoint, garantendo le azioni consigliate per rimediare; Microsoft 365 fornisce informazioni sulla connettività di rete per la propria organizzazione.
 
-Vedere [che cos'è l'analisi di endpoint](https://docs.microsoft.com/mem/analytics/overview) per una panoramica e Dettagli prerequisito. Per ulteriori informazioni sulle considerazioni relative alla connettività di rete di Microsoft 365, leggere [la panoramica della connettività di rete](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+Vedere [che cos'è l'analisi di endpoint](https://docs.microsoft.com/mem/analytics/overview) per una panoramica e Dettagli prerequisito. Per ulteriori informazioni sulle considerazioni relative alla connettività di rete di Microsoft 365, leggere [la panoramica della connettività di rete](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Modalità di calcolo del Punteggio

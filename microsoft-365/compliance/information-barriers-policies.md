@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be86816c559d0ac1873618cd51baa2ac24fb2db8
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 024b10f86cb38532dc441ebd9c88c050fe2839b7
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632097"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308075"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
@@ -62,7 +62,7 @@ Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#requ
 - Dati della directory: verificare che la struttura dell'organizzazione sia riflessa nei dati della directory. Per eseguire questa operazione, verificare che gli attributi degli account utente, ad esempio appartenenza a gruppo, nome reparto e così via, siano inseriti correttamente in Azure Active Directory (o Exchange Online). Per altre informazioni, vedere le risorse seguenti:
   - [Attributi per i criteri delle barriere informative](information-barriers-attributes.md)
   - [Aggiungere o aggiornare le informazioni del profilo di un utente tramite Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-  - [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
+  - [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
 - Ricerca nell'ambito della directory-prima di definire il primo criterio barriera informativo dell'organizzazione, è necessario [abilitare la ricerca nell'ambito della directory in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Attendere almeno 24 ore dopo aver abilitato la ricerca nell'ambito della directory prima di impostare o definire i criteri di barriera delle informazioni.
 
@@ -117,7 +117,7 @@ Oltre all'elenco iniziale dei criteri, creare un elenco di segmenti per l'organi
 Determinare gli attributi dei dati di directory dell'organizzazione che verranno utilizzati per definire i segmenti. È possibile utilizzare *Department*, *member*o uno qualsiasi degli attributi supportati. Assicurarsi di avere valori nell'attributo selezionato per gli utenti. [Vedere l'elenco degli attributi supportati per le barriere informative](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Prima di procedere alla sezione successiva, verificare che i dati della directory dispongano di valori per gli attributi che è possibile utilizzare per definire i segmenti**. Se i dati della directory non contengono valori per gli attributi che si desidera utilizzare, gli account utente devono essere aggiornati per includere tali informazioni prima di procedere con le barriere informative. Per ottenere assistenza, vedere le risorse seguenti:<br/>- [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Aggiungere o aggiornare le informazioni del profilo di un utente tramite Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Prima di procedere alla sezione successiva, verificare che i dati della directory dispongano di valori per gli attributi che è possibile utilizzare per definire i segmenti**. Se i dati della directory non contengono valori per gli attributi che si desidera utilizzare, gli account utente devono essere aggiornati per includere tali informazioni prima di procedere con le barriere informative. Per ottenere assistenza, vedere le risorse seguenti:<br/>- [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Aggiungere o aggiornare le informazioni del profilo di un utente tramite Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Definire segmenti tramite PowerShell
 
@@ -232,7 +232,7 @@ I criteri di barriera delle informazioni non sono attivi finché non vengono imp
 
 1. Utilizzare il cmdlet **Get-InformationBarrierPolicy** per visualizzare un elenco di criteri definiti. Tenere presente lo stato e l'identità (GUID) di ogni criterio.
 
-    Sintassi`Get-InformationBarrierPolicy`
+    Sintassi `Get-InformationBarrierPolicy`
 
 2. Per impostare un criterio su stato attivo, utilizzare il cmdlet **set-InformationBarrierPolicy** con un parametro **Identity** e il parametro **state** impostato su **attivo**. 
 
@@ -244,7 +244,7 @@ I criteri di barriera delle informazioni non sono attivi finché non vengono imp
 
 3. Al termine dell'impostazione dei criteri di barriera delle informazioni sullo stato attivo, utilizzare il cmdlet **Start-InformationBarrierPoliciesApplication** nel centro sicurezza & Compliance.
 
-    Sintassi`Start-InformationBarrierPoliciesApplication`
+    Sintassi `Start-InformationBarrierPoliciesApplication`
 
     Dopo aver eseguito `Start-InformationBarrierPoliciesApplication` Consenti 30 minuti affinché il sistema inizi a applicare i criteri. Il sistema applica i criteri utente all'utente. In generale, il sistema elabora circa 5.000 account utente all'ora.
 
@@ -254,11 +254,11 @@ Con PowerShell, è possibile visualizzare lo stato degli account utente, i segme
 
 |Per visualizzare questo  |Eseguire l'operazione seguente  |
 |---------|---------|
-|Account utente     |Utilizzare il cmdlet **Get-InformationBarrierRecipientStatus** con i parametri Identity. <p>Sintassi`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>Esempio: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*. <p>È inoltre possibile utilizzare questo cmdlet per un singolo `Get-InformationBarrierRecipientStatus -Identity <value>` utente: <p>Questo cmdlet restituisce informazioni sugli utenti, ad esempio i valori degli attributi e tutti i criteri di barriera delle informazioni applicati.|
-|Segmenti     |Utilizzare il cmdlet **Get-OrganizationSegment** .<p>Sintassi`Get-OrganizationSegment` <p>In questo modo verrà visualizzato un elenco di tutti i segmenti definiti per l'organizzazione.         |
-|Criteri barriera di informazioni     |Utilizzare il cmdlet **Get-InformationBarrierPolicy** . <p> Sintassi`Get-InformationBarrierPolicy` <p>In questo modo verrà visualizzato un elenco di criteri barriera informativi definiti e il relativo stato.       |
-|Applicazione dei criteri barriera informativa più recente     | Utilizzare il cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Sintassi`Get-InformationBarrierPoliciesApplicationStatus`<p>    Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.       |
-|Tutte le applicazioni dei criteri barriera di informazioni|Utilizzare`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.|
+|Account utente     |Utilizzare il cmdlet **Get-InformationBarrierRecipientStatus** con i parametri Identity. <p>Sintassi `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>Esempio: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*. <p>È inoltre possibile utilizzare questo cmdlet per un singolo `Get-InformationBarrierRecipientStatus -Identity <value>` utente: <p>Questo cmdlet restituisce informazioni sugli utenti, ad esempio i valori degli attributi e tutti i criteri di barriera delle informazioni applicati.|
+|Segmenti     |Utilizzare il cmdlet **Get-OrganizationSegment** .<p>Sintassi `Get-OrganizationSegment` <p>In questo modo verrà visualizzato un elenco di tutti i segmenti definiti per l'organizzazione.         |
+|Criteri barriera di informazioni     |Utilizzare il cmdlet **Get-InformationBarrierPolicy** . <p> Sintassi `Get-InformationBarrierPolicy` <p>In questo modo verrà visualizzato un elenco di criteri barriera informativi definiti e il relativo stato.       |
+|Applicazione dei criteri barriera informativa più recente     | Utilizzare il cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Sintassi `Get-InformationBarrierPoliciesApplicationStatus`<p>    Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.       |
+|Tutte le applicazioni dei criteri barriera di informazioni|Utilizzare `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Verranno visualizzate informazioni sul modo in cui l'applicazione del criterio è stata completata, non è riuscita o è in corso.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

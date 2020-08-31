@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo viene illustrato come utilizzare collegamenti sicuri per proteggere l'organizzazione da tentativi di phishing e altri attacchi.
-ms.openlocfilehash: 5baf18c249d67551c7ae1eeb643a401ea16d2b6c
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: d9b3c981cb282c286a5b6edcea367c8c57ffd4d3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656982"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307638"
 ---
 # <a name="atp-safe-links"></a>Collegamenti sicuri di ATP
 
@@ -57,7 +57,7 @@ Quando [si aggiungono nuove funzionalità a ATP](office-365-atp.md#new-features-
 
 - I criteri dei collegamenti sicuri di ATP sono configurati per la posta elettronica e per i documenti di Office. (Vedere [configurare i criteri dei collegamenti sicuri di ATP](set-up-atp-safe-links-policies.md)).
 
-- Le app client Microsoft 365 sono configurate per l'utilizzo dell'autenticazione moderna (per la protezione dei collegamenti sicuri di ATP nei documenti di Office). (Vedere [autenticazione moderna per Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)).
+- Le app client Microsoft 365 sono configurate per l'utilizzo dell'autenticazione moderna (per la protezione dei collegamenti sicuri di ATP nei documenti di Office). (Vedere [autenticazione moderna per Office 2016](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)).
 
 - Gli utenti hanno eseguito l'accesso utilizzando l'account aziendale o dell'Istituto di istruzione. (Vedere [accedere a Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)).
 

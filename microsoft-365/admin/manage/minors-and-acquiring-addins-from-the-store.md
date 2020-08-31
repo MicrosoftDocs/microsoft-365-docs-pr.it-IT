@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni sui regolamenti generali sulla protezione dei dati (GDPR) che regolano i dati personali dei minorenni.
-ms.openlocfilehash: dcf2c98906830e0007747e2dd90e67b9dc85a5bb
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: a738e22a0ac0b995c8e44fcf4cc5a2eb47375be5
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45103103"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306552"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>Minorenni e acquisizione di componenti aggiuntivi dallo Store
 
@@ -65,7 +65,7 @@ Per essere conformi a GDPR per i minorenni, è necessario assicurarsi che una de
   
 Word, Excel e PowerPoint 2013 per Windows supportano gli stessi controlli secondari se è abilitata la libreria di autenticazione di Active Directory (ADAL). Sono disponibili due opzioni per la conformità, come illustrato di seguito.
   
-- **Abilitare adal**. In questo articolo viene illustrato come abilitare ADAL per Office 2013: [utilizzo dell'autenticazione moderna di Microsoft 365 con i client di Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).<br/>È inoltre necessario impostare le chiavi del registro di sistema per abilitare ADAL come spiegato in [Enable Modern Authentication for Office 2013 on Windows Devices](../security-and-compliance/enable-modern-authentication.md).<br/>Inoltre, è necessario installare gli aggiornamenti di aprile seguenti per Office 2013:
+- **Abilitare adal**. In questo articolo viene illustrato come abilitare ADAL per Office 2013: [utilizzo dell'autenticazione moderna di Microsoft 365 con i client di Office](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).<br/>È inoltre necessario impostare le chiavi del registro di sistema per abilitare ADAL come spiegato in [Enable Modern Authentication for Office 2013 on Windows Devices](../security-and-compliance/enable-modern-authentication.md).<br/>Inoltre, è necessario installare gli aggiornamenti di aprile seguenti per Office 2013:
     
   - [Descrizione dell'aggiornamento della sicurezza per Office 2013:10 aprile 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     

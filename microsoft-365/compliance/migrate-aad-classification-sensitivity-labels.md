@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: In questo articolo vengono illustrate le etichette classiche di classificazione e sensibilità di Azure Active Directory.
-ms.openlocfilehash: f11473653884392048d5f9a84f8e284dba5f6f27
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755390"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308173"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Etichette di classificazione e sensitivity di Azure Active Directory per i gruppi di Microsoft 365
 
@@ -52,7 +52,7 @@ Tabella 1. Comportamento dei carichi di lavoro compatibili e non compatibili –
 > - Tuttavia, quando l'utente modifica un gruppo e salva il gruppo con un'etichetta di riservatezza, l'impostazione di privacy selezionata viene ignorata dall'impostazione di privacy dell'etichetta di riservatezza applicata.
 > È consigliabile che gli utenti in una versione precedente di Outlook client vengano aggiornate alla versione più recente.
 
-## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Scenario 2: tenant utilizza già [classificazioni](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization) AAD classiche
+## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>Scenario 2: tenant utilizza già [classificazioni](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell) AAD classiche
 
 ### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>Caso A: tenant non ha mai utilizzato etichette di riservatezza per documenti e messaggi di posta elettronica
 

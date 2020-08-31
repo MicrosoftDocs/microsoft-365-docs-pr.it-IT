@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come Microsoft 365 utilizza il record TXT del Sender Policy Framework (SPF) in DNS per garantire che i sistemi di posta elettronica di destinazione consideri attendibili i messaggi inviati dal dominio personalizzato.
-ms.openlocfilehash: a86087f510dca328bb5b56af6fd4802f1f42a454
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 702c5de90c53388a3d55ad752010fbaa04b5556b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587485"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307650"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Uso di Sender Policy Framework (SPF) in Microsoft 365 per impedire lo spoofing
 
@@ -131,7 +131,7 @@ Se si dispone di una distribuzione ibrida, ovvero si dispone di alcune cassette 
 
 Utilizzare le informazioni relative alla sintassi fornite in questo articolo per formare il record TXT SPF per il dominio personalizzato. Anche se sono disponibili altre opzioni di sintassi non menzionate qui, queste sono le opzioni più comunemente utilizzate. Dopo aver creato il record, è necessario aggiornare il record nel registrar del dominio.
 
-Per informazioni sui domini che sarà necessario includere per Microsoft 365, vedere [External DNS Records required for SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Utilizzare le [istruzioni dettagliate ](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) per aggiornare i record (TXT) SPF per il registrar.
+Per informazioni sui domini che sarà necessario includere per Microsoft 365, vedere [External DNS Records required for SPF](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Utilizzare le [istruzioni dettagliate ](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam) per aggiornare i record (TXT) SPF per il registrar.
 
 ### <a name="spf-txt-record-syntax-for-microsoft-365"></a>Sintassi del record TXT SPF per Microsoft 365
 <a name="SPFSyntaxO365"> </a>
@@ -156,7 +156,7 @@ dove:
 
 - _IP address_ è l'indirizzo IP da aggiungere al record TXT SPF. In genere, questo è l'indirizzo IP del server di posta in uscita per l'organizzazione. È possibile elencare più server di posta in uscita. Per ulteriori informazioni, vedere [esempio: record TXT SPF per più server di posta in uscita locali e Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
 
-- _domain name_ è il dominio da aggiungere come mittente legittimo. Per un elenco di nomi di dominio da includere per Microsoft 365, vedere [record DNS esterni necessari per SPF](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
+- _domain name_ è il dominio da aggiungere come mittente legittimo. Per un elenco di nomi di dominio da includere per Microsoft 365, vedere [record DNS esterni necessari per SPF](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records).
 
 - La regola di imposizione in genere è una delle seguenti:
 

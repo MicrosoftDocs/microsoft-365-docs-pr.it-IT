@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come usare DomainKeys Identified Mail (DKIM) insieme a Microsoft 365 per garantire che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.
-ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: d2035ed0805215f1bd8e343f9edf1c557035b5c1
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632164"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307848"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato
 
@@ -83,7 +83,7 @@ Dal momento che sono supportate le chiavi di crittografia DKIM sia a 1024 che a 
 
 1. Quando **DKIM è già configurato**, per modificare (ruotare) il numero di bit procedere come indicato di seguito:
 
-   1. [Connettersi ai carichi di lavoro di Office 365 tramite PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Il cmdlet proviene da Exchange Online.)
+   1. [Connettersi ai carichi di lavoro di Office 365 tramite PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Il cmdlet proviene da Exchange Online.)
    1. Eseguire il comando seguente:
 
       ```powershell 
@@ -92,7 +92,7 @@ Dal momento che sono supportate le chiavi di crittografia DKIM sia a 1024 che a 
 
 1. In alternativa, per una **nuova implementazione di DKIM**:
 
-   1. [Connettersi ai carichi di lavoro di Office 365 tramite PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Questo è un cmdlet di Exchange Online.)
+   1. [Connettersi ai carichi di lavoro di Office 365 tramite PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window). (Questo è un cmdlet di Exchange Online.)
    1. Eseguire il comando seguente:
 
       ```powershell

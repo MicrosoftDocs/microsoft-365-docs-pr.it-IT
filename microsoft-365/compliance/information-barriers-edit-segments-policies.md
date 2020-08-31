@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come modificare o rimuovere i criteri per le barriere informative.
-ms.openlocfilehash: 5690a1d7a131c006bbff3b087b1ee2983198c068
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6ac739ecff3921b4061d5d22410b2e2b1ada7af2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637888"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307939"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>Modificare (o rimuovere) i criteri di barriera delle informazioni
 
@@ -52,7 +52,7 @@ Gli attributi degli account utente vengono utilizzati per definire i segmenti in
 
     |Sintassi  |Esempio  |
     |---------|---------|
-    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>   È inoltre possibile utilizzare questo cmdlet per un singolo utente: `Get-InformationBarrierRecipientStatus -Identity <value>`      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*.         |
+    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>   È inoltre possibile utilizzare questo cmdlet per un singolo `Get-InformationBarrierRecipientStatus -Identity <value>` utente:      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*.         |
 
 2. Determinare l'attributo che si desidera modificare per i profili dell'account utente. Per ulteriori informazioni, fare riferimento agli [attributi per i criteri di barriera delle informazioni](information-barriers-attributes.md) . 
 
@@ -60,7 +60,7 @@ Gli attributi degli account utente vengono utilizzati per definire i segmenti in
 
     - Per modificare un singolo account, vedere [aggiungere o aggiornare le informazioni sul profilo di un utente utilizzando Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-    - Per modificare più account o utilizzare PowerShell per modificare un singolo account, vedere [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - Per modificare più account o utilizzare PowerShell per modificare un singolo account, vedere [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
 
 ## <a name="edit-a-segment"></a>Modifica di un segmento
 
@@ -68,7 +68,7 @@ Utilizzare questa procedura per modificare la definizione di un segmento di uten
 
 1. Per visualizzare tutti i segmenti esistenti, utilizzare il cmdlet **Get-OrganizationSegment** .
     
-    Sintassi`Get-OrganizationSegment`
+    Sintassi `Get-OrganizationSegment`
 
     Verrà visualizzato un elenco di segmenti e dettagli per ognuno, ad esempio il tipo di segmento, il valore di UserGroupFilter, che ha creato o modificato l'oggetto, il GUID e così via.
 
@@ -87,15 +87,15 @@ Dopo aver completato la modifica dei segmenti per l'organizzazione, è possibile
 
 1. Per visualizzare un elenco dei criteri di barriera delle informazioni correnti, utilizzare il cmdlet **Get-InformationBarrierPolicy** .
 
-    Sintassi`Get-InformationBarrierPolicy`
+    Sintassi `Get-InformationBarrierPolicy`
 
     Nell'elenco dei risultati, identificare il criterio che si desidera modificare. Prendere nota del GUID e del nome del criterio.
 
 2. Utilizzare il cmdlet **set-InformationBarrierPolicy** con un parametro **Identity** e specificare le modifiche che si desidera eseguire.
 
-    Ad esempio, si supponga che sia stato definito un criterio per bloccare il segmento di *ricerca* dalla comunicazione con i segmenti *Sales* and *Marketing* . Il criterio è stato definito utilizzando il cmdlet seguente:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
+    Ad esempio, si supponga che sia stato definito un criterio per bloccare il segmento di *ricerca* dalla comunicazione con i segmenti *Sales* and *Marketing* . Il criterio è stato definito utilizzando il cmdlet seguente: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
     
-    Si supponga di voler cambiare la comunicazione in modo che gli utenti del segmento di *ricerca* possano comunicare solo con gli utenti del segmento *HR* . Per apportare questa modifica, è possibile utilizzare questo cmdlet:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
+    Si supponga di voler cambiare la comunicazione in modo che gli utenti del segmento di *ricerca* possano comunicare solo con gli utenti del segmento *HR* . Per apportare questa modifica, è possibile utilizzare questo cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
     In questo esempio, "SegmentsBlocked" viene modificato in "SegmentsAllowed" e viene specificato il segmento *HR* .
 
@@ -105,7 +105,7 @@ Dopo aver completato la modifica dei segmenti per l'organizzazione, è possibile
 
 1. Per visualizzare un elenco dei criteri di barriera delle informazioni correnti, utilizzare il cmdlet **Get-InformationBarrierPolicy** .
 
-    Sintassi`Get-InformationBarrierPolicy`
+    Sintassi `Get-InformationBarrierPolicy`
 
     Nell'elenco dei risultati, identificare il criterio che si desidera modificare (o rimuovere). Prendere nota del GUID e del nome del criterio.
 
@@ -117,7 +117,7 @@ Dopo aver completato la modifica dei segmenti per l'organizzazione, è possibile
 
 3. Per applicare le modifiche, utilizzare il cmdlet **Start-InformationBarrierPoliciesApplication** .
 
-    Sintassi`Start-InformationBarrierPoliciesApplication`
+    Sintassi `Start-InformationBarrierPoliciesApplication`
 
     Le modifiche vengono applicate dall'utente per l'organizzazione. Se l'organizzazione è di grandi dimensioni, il completamento di questo processo può richiedere 24 ore (o più). (Come linee guida generali, è necessario circa un'ora per elaborare gli account utente di 5.000).
 
@@ -130,7 +130,7 @@ A questo punto, uno o più criteri barriera informazioni sono impostati sullo st
 
 1. Per visualizzare un elenco dei criteri di barriera delle informazioni correnti, utilizzare il cmdlet **Get-InformationBarrierPolicy** .
 
-    Sintassi`Get-InformationBarrierPolicy`
+    Sintassi `Get-InformationBarrierPolicy`
 
     Nell'elenco dei risultati, identificare il criterio che si desidera rimuovere. Prendere nota del GUID e del nome del criterio. Verificare che il criterio sia impostato su stato inattivo.
 
@@ -146,7 +146,7 @@ A questo punto, uno o più criteri barriera informazioni sono impostati sullo st
 
 4. Una volta terminata la rimozione dei criteri, applicare le modifiche. A tale scopo, utilizzare il cmdlet **Start-InformationBarrierPoliciesApplication** .
 
-    Sintassi`Start-InformationBarrierPoliciesApplication`
+    Sintassi `Start-InformationBarrierPoliciesApplication`
 
     Le modifiche vengono applicate dall'utente per l'organizzazione. Se l'organizzazione è di grandi dimensioni, il completamento di questo processo può richiedere 24 ore (o più).
 
@@ -156,7 +156,7 @@ Se dopo aver avviato l'applicazione di criteri di barriera delle informazioni si
 
 1. Per visualizzare lo stato dell'applicazione del criterio barriera alle informazioni più recente, utilizzare il cmdlet **Get-InformationBarrierPoliciesApplicationStatus** .
 
-    Sintassi`Get-InformationBarrierPoliciesApplicationStatus`
+    Sintassi `Get-InformationBarrierPoliciesApplicationStatus`
 
     Tenere presente il GUID dell'applicazione.
 

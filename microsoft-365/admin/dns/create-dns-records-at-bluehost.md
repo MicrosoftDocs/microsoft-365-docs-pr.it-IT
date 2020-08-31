@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi di Bluehost per Microsoft.
-ms.openlocfilehash: 7b241c4635ecc4a8092702f95d19df7ed94ce1cd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400558"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307044"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Creare record DNS su Bluehost per Microsoft
 
@@ -57,11 +57,11 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**Host Record** <br/> |**TTL** <br/> |**Tipo** <br/> |**TXT Value** <br/> |
+    |**Host Record** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Value** <br/> |
     |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
 5. Selezionare **Aggiungi record**.
@@ -97,11 +97,11 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     |**Host Record**|**TTL**|**Type**|**Points To**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/>**Nota:** Ottenere il vostro \<*domain-key*\> dal vostro account Microsoft. [Come trovarla](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Scegliere tipo dall'elenco a discesa](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
@@ -135,9 +135,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 4. Nella sezione **a (host)** Records individuare la riga del record di **individuazione automatica** e quindi fare clic su **Elimina** per tale riga. 
     
     > [!IMPORTANT]
-    > È necessario eliminare il record di **individuazione automatica** esistente *prima* di aggiungere il record di **individuazione automatica** richiesto da Microsoft. Bluehost non consente di mantenere due record **autodiscover** contemporaneamente. 
+    > È necessario eliminare il record di **individuazione automatica** esistente  *prima*  di aggiungere il record di **individuazione automatica** richiesto da Microsoft. Bluehost non consente di mantenere due record **autodiscover** contemporaneamente. 
   
-    ![Seleziona Elimina](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
+    ![Selezionare Elimina](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
 5. Selezionare **OK**.
     
@@ -147,7 +147,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Nella pagina **DNS Zone Editor** digitare oppure copiare e incollare i valori della prima riga della tabella seguente nelle caselle del nuovo record nell'area **Add DNS Record**. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     |**Host Record**|**TTL**|**Type**|**Points To**|
     |:-----|:-----|:-----|:-----|
@@ -173,7 +173,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
   
 1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). Verrà richiesto di eseguire l'accesso.
     
@@ -185,9 +185,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
         
-    |**Host Record**|**TTL**|**Tipo**|**TXT Value**|
+    |**Host Record**|**TTL**|**Type**|**TXT Value**|
     |:-----|:-----|:-----|:-----|
     |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
@@ -212,7 +212,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Nella pagina **DNS Zone Editor** digitare oppure copiare e incollare i valori della prima riga della tabella seguente nelle caselle del nuovo record nell'area **Add DNS Record**. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    Selezionare il valore **Type** nell'elenco a discesa. 
     
     |**Servizio**|**Protocol**|**Host**|**TTL**|**Type**|**Priorità**|**Peso**|**Porta**|**Points To**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

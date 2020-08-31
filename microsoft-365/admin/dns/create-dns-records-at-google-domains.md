@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Lync e altri servizi su Google Domains per Microsoft.
-ms.openlocfilehash: e6b1dd1eb90957a4e7fe22bd4b66ac87b2a51d09
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: HT
+ms.openlocfilehash: 23f3a332b46e53946139869754d610733c89e4a9
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400450"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307116"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>Creare record DNS su Google Domains per Microsoft
 
@@ -44,12 +44,12 @@ Dopo aver aggiunto questi record in Google Domains, il domino sarà configurato 
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 <a name="BKMK_verify"> </a>
 
-Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
+Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft che si è il proprietario del dominio.
   
 > [!NOTE]
-> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
+> Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
   
-1. To get started, go to your domains page at Google Domains by using [this link](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
+1. Per iniziare, passare alla propria pagina dei domini su Google Domains usando [questo collegamento](https://domains.google.com/registrar). Verrà richiesto di eseguire l'accesso. A questo scopo:
     
 1. Scegliere **Accedi**.
     
@@ -86,13 +86,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+> In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Aggiungere un record MX in modo che la posta elettronica del dominio venga recapitata in Microsoft
 <a name="BKMK_add_MX"> </a>
 
-1. To get started, go to your domains page at Google Domains by using [this link](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
+1. Per iniziare, passare alla propria pagina dei domini su Google Domains usando [questo collegamento](https://domains.google.com/registrar). Verrà richiesto di eseguire l'accesso. A questo scopo:
     
 2. Scegliere **Accedi**.
     
@@ -120,7 +120,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Type**|**TTL**|**Dati**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> The **0** is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space.  <br/> **Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **0** è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
     ![Digitare o copiare e incollare i valori nella sezione Custom resource records](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
@@ -181,9 +181,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori di Microsoft necessari al record corrente in modo da ottenere un unico record SPF che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori di Microsoft necessari al record corrente in modo da ottenere un unico record SPF che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
-1. To get started, go to your domains page at Google Domains by using [this link](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
+1. Per iniziare, passare alla propria pagina dei domini su Google Domains usando [questo collegamento](https://domains.google.com/registrar). Verrà richiesto di eseguire l'accesso. A questo scopo:
     
 1. Scegliere **Accedi**.
     
@@ -194,7 +194,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 4. Nella riga del record TXT nella sezione **Custom resource records** selezionare **Modifica**. 
     
     > [!IMPORTANT]
-    > Google Domains stores TXT records as a set that may contain multiple records. When you have at least one other TXT record, such as the TXT record you used to verify your domain, you must add TXT new records to that record set. Any attempt to enter additional TXT records as separate entries will result in a **Duplicate record** error message. 
+    > Google Domains archivia i record TXT come un set che potrebbe contenere più record. Quando si ha almeno un altro record TXT, ad esempio il record TXT usato per verificare il dominio, è necessario aggiungere nuovi record TXT a tale set di record. Quando si tenta immettere altri record TXT come voci separate, viene generato il messaggio di errore **Duplicate record**. 
   
     ![Selezionare Modifica nella riga del record TXT](../../media/eae14850-8d0c-4f29-8587-df8b36129d5f.png)
   
@@ -222,7 +222,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Aggiungere i due record SRV necessari per Microsoft
 <a name="BKMK_add_SRV"> </a>
 
-1. To get started, go to your domains page at Google Domains by using [this link](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
+1. Per iniziare, passare alla propria pagina dei domini su Google Domains usando [questo collegamento](https://domains.google.com/registrar). Verrà richiesto di eseguire l'accesso. A questo scopo:
     
 2. Scegliere **Accedi**.
     
@@ -256,5 +256,5 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     Nella sezione **Custom resource records** creare un record usando i valori della seconda riga della tabella e quindi scegliere di nuovo **Aggiungi** per completare il record. 
     
     > [!NOTE]
-    > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+    > In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   

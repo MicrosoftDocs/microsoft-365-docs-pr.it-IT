@@ -293,7 +293,7 @@
           items:
             - name: Convalidare le impostazioni su Android o iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Configurare le impostazioni di protezione dei dispositivi per i PC Windows 10
+        - name: Modificare o creare le impostazioni di protezione dei dispositivi per i PC Windows 10
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: Convalidare le impostazioni su PC Windows 10

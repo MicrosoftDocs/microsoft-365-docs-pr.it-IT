@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Informazioni sui domini e sui record DNS associati per gestire più facilmente i propri domini.
-ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 9819ec858eecb659f8576d9fa3c1ef426d500e80
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079992"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306564"
 ---
 # <a name="dns-basics"></a>Informazioni di base sul DNS
 
@@ -188,7 +188,7 @@ I record DNS necessari per far funzionare Microsoft 365 con il proprio dominio s
   
 È possibile [trovare un elenco dei valori](information-for-dns-records.md) per configurare il dominio. Sono disponibili nell'interfaccia di amministrazione di Microsoft 365. 
   
-In alternativa, se si prevede una distribuzione, è consigliabile rivedere un elenco di tutti i record DNS necessari per Microsoft 365, con la relativa funzione ed esempi di valori. Vedere [Record DNS (Domain Name System) esterni per Microsoft 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
+In alternativa, se si prevede una distribuzione, è consigliabile rivedere un elenco di tutti i record DNS necessari per Microsoft 365, con la relativa funzione ed esempi di valori. Vedere [Record DNS (Domain Name System) esterni per Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records).
   
 ## <a name="how-can-i-learn-more"></a>Altre informazioni
 

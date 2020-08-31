@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nel DNS basato su Windows per Microsoft.
-ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0c2b8c4aaaa1012e0f11e3778c7ca6b092c053f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400245"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306948"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Creare record DNS per Microsoft tramite DNS basato su Windows
 
@@ -111,7 +111,7 @@ Aggiungere il record CNAME Enterpriseenrollment di MDM.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. 
   
 Aggiungere il record TXT SPF per il dominio per proteggerlo dalla posta indesiderata.
   
@@ -201,7 +201,7 @@ Verificare il dominio in Microsoft.
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Indirizzo di posta elettronica non instradabile usato come UPN in Active Directory locale
 <a name="BKMK_ADNote"> </a>
 
-Se si prevede di sincronizzare Active Directory locale con Microsoft, è necessario assicurarsi che il suffisso nome dell'entità utente (UPN) di Active Directory sia un suffisso di dominio valido e non un suffisso di dominio non supportato, ad esempio @contoso. local. Se è necessario modificare il suffisso UPN, vedere [come preparare un dominio non instradabile per la sincronizzazione della directory](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
+Se si prevede di sincronizzare Active Directory locale con Microsoft, è necessario assicurarsi che il suffisso nome dell'entità utente (UPN) di Active Directory sia un suffisso di dominio valido e non un suffisso di dominio non supportato, ad esempio @contoso. local. Se è necessario modificare il suffisso UPN, vedere [come preparare un dominio non instradabile per la sincronizzazione della directory](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
   
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 

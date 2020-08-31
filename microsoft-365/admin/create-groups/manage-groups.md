@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Informazioni su come gestire i gruppi di Microsoft 365, inclusa l'aggiunta di Rimuovi membri del gruppo, la modifica dell'indirizzo di posta elettronica, il nome del gruppo o la descrizione e la personalizzazione del funzionamento del gruppo.
-ms.openlocfilehash: ba88e35713e889ca85a264b1da1d34d9e1e30671
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780650"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307302"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gestire un gruppo nell'interfaccia di amministrazione di Microsoft 365
 
@@ -74,7 +74,7 @@ Dopo aver [creato un gruppo di Microsoft 365](create-groups.md) e aver aggiunto 
 
 4. Scegliere **Aggiungi** per aggiungere un utente o fare clic su **X** per rimuovere un utente.
 
-5. Fare clic su **Chiudi**.
+5. Scegliere **Chiudi**.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Dopo aver [creato un gruppo di Microsoft 365](create-groups.md) e aver aggiunto 
 
 4. Scegliere **Aggiungi** per aggiungere un utente o fare clic su **X** per rimuovere un utente.
 
-5. Fare clic su **Chiudi**.
+5. Scegliere **Chiudi**.
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Dopo aver [creato un gruppo di Microsoft 365](create-groups.md) e aver aggiunto 
 
 4. Scegliere **Aggiungi** per aggiungere un utente o fare clic su **X** per rimuovere un utente.
 
-5. Fare clic su **Chiudi**.
+5. Scegliere **Chiudi**.
 
 ::: moniker-end
 
@@ -202,4 +202,4 @@ Questa opzione è ideale se si desidera disporre di un indirizzo di posta elettr
 
 [Aggiornare le liste di distribuzione ai gruppi di Microsoft 365](../manage/upgrade-distribution-lists.md)
 
-[Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)

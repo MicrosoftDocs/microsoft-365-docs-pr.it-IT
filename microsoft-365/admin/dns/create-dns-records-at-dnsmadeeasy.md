@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in DNSMadeEasy per Microsoft.
-ms.openlocfilehash: db28ac0cb95bd86bc13a1a1ce47f273989aa4436
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 07cf79b86e02fa79d59882fa51402cccc922c2b6
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400522"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307104"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Creare record DNS in DNSMadeEasy per Microsoft
 
@@ -58,13 +58,13 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
 3. Nell'area **txt Records** della pagina **Managed DNS** selezionare il **+** controllo () ( **Aggiungi nuovo**).
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
 4. In the **Add TXT Records** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     ||||
     |:-----|:-----|:-----|
-    |**Nome** <br/> |**Valore** <br/> |**TTL** <br/> |
+    |**Name** <br/> |**Valore** <br/> |**TTL** <br/> |
     |Lasciare vuoto questo campo.  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |1800  <br/> |
    
 5. Selezionare **Invia**.
@@ -100,7 +100,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 3. Nell'area **MX Records** della pagina **Managed DNS** selezionare il controllo **(+)** ( **Aggiungi nuovo**).
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![DNSMadeEasy-BP-Configure-2-1](../../media/404c73bf-1db4-4d68-82d8-68303f418ed4.png)
   
@@ -108,9 +108,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Può essere necessario scorrere la pagina.
     
-    |**Nome**|**Server**|**MX Level**|**TTL**|
+    |**Name**|**Server**|**MX Level**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere il vostro \<*domain-key*\> dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1800  <br/> |
+    |Lasciare vuoto questo campo.  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1800  <br/> |
    
     ![DNSMadeEasy-BP-Configure-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -139,7 +139,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 3. Nell'area **CNAME Records** della pagina **Managed DNS** selezionare il controllo **(+)** ( **Aggiungi nuovo**).
     
-    (You may have to scroll down.)
+    Può essere necessario scorrere la pagina.
     
     ![DNSMadeEasy-BP-configure-3-1](../../media/a5feb238-690d-4b64-a625-91a82b3f4068.png)
   
@@ -171,7 +171,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
   
 1. Per iniziare, passare alla propria pagina dei domini su DNSMadeEasy usando [questo collegamento](https://cp.dnsmadeeasy.com/). Verrà richiesto di eseguire l'accesso.
     
@@ -185,7 +185,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 4. In the **Add TXT Records** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    |**Nome**|**Valore**|**TTL**|
+    |**Name**|**Valore**|**TTL**|
     |:-----|:-----|:-----|
     |Lasciare vuoto questo campo.  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |1800  <br/> |
    
@@ -214,8 +214,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Name**|**Priorità**|**Peso**|**Porta**|**Host**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
-    |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
    
     ![DNSMadeEasy-BP-Configure-5-2](../../media/e1155f94-575f-441a-9a61-d948391d42ca.png)
   

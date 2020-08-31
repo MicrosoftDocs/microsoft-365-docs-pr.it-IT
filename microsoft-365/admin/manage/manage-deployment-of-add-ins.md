@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire i componenti aggiuntivi per gli utenti e i gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: a99847cd24853a8d3d411eed97983b66001287ff
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: aec2adab7735a2be5670210abf05f88f081fe4ed
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560728"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306527"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -139,6 +139,6 @@ Gli aggiornamenti per i componenti aggiuntivi vengono eseguiti come segue:
 
 [Minorenni e acquisizione di componenti aggiuntivi dallo Store](minors-and-acquiring-addins-from-the-store.md)
   
-[Utilizzare i cmdlet di PowerShell per la distribuzione centralizzata per gestire i componenti aggiuntivi](https://docs.microsoft.com/office365/enterprise/powershell/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[Utilizzare i cmdlet di PowerShell per la distribuzione centralizzata per gestire i componenti aggiuntivi](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
 [Risoluzione dei problemi: utenti che non vedono componenti aggiuntivi](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Informazioni su come aggiungere utenti e assegnare licenze a Microsoft 365 nello stesso momento.
 ms.date: 07/01/2020
-ms.openlocfilehash: 016c98fc93bfa1a92274a5b991cf8adbd1131bc9
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015888"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307374"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aggiungere utenti e assegnare licenze contemporaneamente
 
@@ -39,9 +39,9 @@ ms.locfileid: "45015888"
 
 Gli utenti del team hanno a disposizione un account utente prima di poter accedere e accede a [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). Il modo più semplice per aggiungere account utente consiste nell'aggiungerli uno alla volta nell'interfaccia di amministrazione di Microsoft 365. Dopo aver eseguito questo passaggio, gli utenti dispongono di licenze Microsoft 365, credenziali di accesso e cassette postali di Microsoft 365.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-Per aggiungere utenti e assegnare licenze, è necessario essere un amministratore globale, una licenza o un utente. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+Per aggiungere utenti e assegnare licenze, è necessario essere un amministratore globale, una licenza o un utente. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="watch-add-users-in-the-admin-center"></a>Watch: aggiungere utenti nell'interfaccia di amministrazione
 
@@ -100,9 +100,9 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
 
 Per aggiungere più utenti contemporaneamente, è possibile utilizzare uno dei metodi seguenti:
   
-- **Usare un foglio di calcolo per aggiungere persone in blocco.** Per ulteriori informazioni, vedere [aggiungere più utenti contemporaneamente](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time).
-- **Automatizzare il processo di aggiunta di account e assegnazione delle licenze.** Vedere [creare account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell). Questo metodo è adeguato se si ha già familiarità con i cmdlet di Windows PowerShell.
-- **Utilizzo di ActiveDirectory** [Configurare la sincronizzazione della directory per Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization). Utilizzare lo strumento Azure AD Connect per replicare gli account utente di Active Directory (e altri oggetti di Active Directory) in Microsoft 365. Con la sincronizzazione vengono aggiunti solo gli account utente. Prima di poter utilizzare la posta elettronica e altre app di Office, è necessario assegnare le licenze agli utenti sincronizzati.
+- **Usare un foglio di calcolo per aggiungere persone in blocco.** Per ulteriori informazioni, vedere [aggiungere più utenti contemporaneamente](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
+- **Automatizzare il processo di aggiunta di account e assegnazione delle licenze.** Vedere [creare account utente con Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Questo metodo è adeguato se si ha già familiarità con i cmdlet di Windows PowerShell.
+- **Utilizzo di ActiveDirectory** [Configurare la sincronizzazione della directory per Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Utilizzare lo strumento Azure AD Connect per replicare gli account utente di Active Directory (e altri oggetti di Active Directory) in Microsoft 365. Con la sincronizzazione vengono aggiunti solo gli account utente. Prima di poter utilizzare la posta elettronica e altre app di Office, è necessario assegnare le licenze agli utenti sincronizzati.
 - **Migrazione da Exchange** Vedere [modi per eseguire la migrazione di più account di posta elettronica a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Quando si esegue la migrazione di più cassette postali a Microsoft 365 utilizzando completa, a fasi o un metodo di Exchange ibrido, si aggiungono automaticamente gli utenti come parte della migrazione. Con la migrazione vengono aggiunti solo gli account utente. Prima di poter utilizzare la posta elettronica e altre app di Office, è necessario assegnare le licenze agli utenti. Se non si assegna una licenza a un utente, la cassetta postale viene disabilitata dopo un periodo di tolleranza di 30 giorni. Informazioni su come [assegnare le licenze agli utenti](../manage/assign-licenses-to-users.md) nell'interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="next-steps"></a>Passaggi successivi
@@ -112,7 +112,7 @@ Dopo aver aggiunto un utente, riceverai una notifica tramite posta elettronica d
 ## <a name="related-content"></a>Contenuto correlato
 
 [Aggiungere un nuovo dipendente a Microsoft 365](add-new-employee.md) (articolo) \
-[Aggiungere più utenti contemporaneamente a Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time) (articolo) \
+[Aggiungere più utenti contemporaneamente a Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (articolo) \
 [Ripristinare un utente in Microsoft 365](restore-user.md) (articolo) \
 [Assegnare licenze agli utenti](../manage/assign-licenses-to-users.md) (articolo) \
 [Eliminare un utente dall'organizzazione](delete-a-user.md) (articolo)

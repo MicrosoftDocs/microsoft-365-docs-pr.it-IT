@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: "Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 for business. "
-ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 6159b62cb6c1e09cb86732cc27cc4c4c87328a42
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780566"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307290"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
@@ -120,7 +120,7 @@ Questi passaggi sono validi per un'azienda con decine di utenti. Se si dispone d
 
 Usare PowerShell. Vedere questo post di Eyal Doron: [Gestire le password con PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
-Ecco un articolo correlato: [Impostare le password per più account utente](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
+Ecco un articolo correlato: [Impostare le password per più account utente](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
   
 Per informazioni generali, vedere [PowerShell for Microsoft 365 Administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
@@ -137,7 +137,7 @@ Leggere questo articolo: [Si è dimenticato l'account o la password per l'accoun
 ## <a name="related-articles"></a>Articoli correlati
 <a name="bkmk_forgot"> </a>
   
-[Consenti agli utenti di reimpostare le proprie password](let-users-reset-passwords.md)
+[Consentire agli utenti di reimpostare le loro password](let-users-reset-passwords.md)
 
 [Impostare la password di un singolo utente in modo che non scada mai](set-password-to-never-expire.md)
 

@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: In questo argomento viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Microsoft 365.
-ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 3a69a27aa544880e428562892832b6d33a2508e4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653558"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308220"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurare il tenant Microsoft 365 per una maggiore sicurezza
 
@@ -77,7 +77,7 @@ Molti dei controlli per la sicurezza e la protezione nell'interfaccia di amminis
 |Area|Include un criterio predefinito|Consiglio|
 |---|---|---|
 |**Flusso di posta** (regole del flusso di posta, note anche come regole di trasporto)|No|Aggiungere una regola del flusso di posta per garantire la protezione da ransomware bloccando i tipi di file eseguibili e i tipi di file di Office che contengono macro. Per ulteriori informazioni, vedere [Use Mail Flow Rules to inspect Message Attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Per ulteriori informazioni, vedere gli argomenti seguenti: <br/>* [Protezione da ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Protezione da malware e ransomware in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Eseguire il ripristino da un attacco ransomware in Office 365](recover-from-ransomware.md) <br/><br/> Creare una regola del flusso di posta per impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni. Per ulteriori informazioni, vedere [attenuazione delle regole di inoltro esterno client con Secure Score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> Ulteriori informazioni: [regole del flusso di posta (regole di trasporto) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**Abilitare l'autenticazione moderna**|No|L'autenticazione moderna è un prerequisito per l'utilizzo dell'autenticazione a più fattori (AMF). L'AMF è consigliata per garantire l'accesso alle risorse cloud, incluso il messaggio di posta elettronica. <br/><br/> Vedere gli argomenti seguenti: <br/>* [Abilitare o disabilitare l'autenticazione moderna in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype for business online: abilitare il tenant per l'autenticazione moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint Online e OneDrive for business. <br/><br/> Ulteriori informazioni: funzionamento dell' [autenticazione moderna per le app client di office 2013 e office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
+|**Abilitare l'autenticazione moderna**|No|L'autenticazione moderna è un prerequisito per l'utilizzo dell'autenticazione a più fattori (AMF). L'AMF è consigliata per garantire l'accesso alle risorse cloud, incluso il messaggio di posta elettronica. <br/><br/> Vedere gli argomenti seguenti: <br/>* [Abilitare o disabilitare l'autenticazione moderna in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype for business online: abilitare il tenant per l'autenticazione moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016, SharePoint Online e OneDrive for business. <br/><br/> Ulteriori informazioni: funzionamento dell' [autenticazione moderna per le app client di office 2013 e office 2016](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Configurare i criteri di condivisione a livello di tenant nell'interfaccia di amministrazione di SharePoint

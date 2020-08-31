@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usare il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nell'organizzazione. "
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39c58a86b3f8e3bec2225c4a3df53120fac79eea
-ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
+ms.openlocfilehash: 75f807f2d09792838cab2ee5154578b5cbbbfde8
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674626"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294743"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -186,9 +186,9 @@ Ecco il processo per la ricerca nel log di controllo in Office 365.
 
       > [!TIP]
       >
-      > - Se si stanno cercando tutte le attività correlate a un **sito**, aggiungere il simbolo jolly (\*) dopo l'URL per restituire tutte le voci per quel sito; ad esempio, **"https://contoso-my.sharepoint.com/personal/*"**.
+      > - Se si stanno cercando tutte le attività correlate a un **sito**, aggiungere il simbolo jolly (\*) dopo l'URL per restituire tutte le voci per quel sito; ad esempio, `"https://contoso-my.sharepoint.com/personal*"`.
       >
-      > - Se si stanno cercando tutte le attività correlate a un **file**, aggiungere il simbolo jolly (\*) prima del nome file per restituire tutte le voci per quel file; ad esempio, **"*Customer_Profitability_Sample.csv"**.
+      > - Se si stanno cercando tutte le attività correlate a un **file**, aggiungere il simbolo jolly (\*) prima del nome file per restituire tutte le voci per quel file; ad esempio, `"*Customer_Profitability_Sample.csv"`.
 
 5. Fare clic su **Cerca** per eseguire la ricerca usando i criteri di ricerca.
 

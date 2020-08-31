@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: Gestire un sito del team di SharePoint Online isolato, aggiungere nuovi utenti e gruppi, rimuovere utenti e gruppi e creare una sottocartella di documenti con autorizzazioni personalizzate.
-ms.openlocfilehash: 43329aa72b3729200007441ce73838a7d6a60f55
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: d66f9a349bd5834d07fbc13146127bde522923e4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755379"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308268"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Gestire un sito del team di SharePoint Online isolato
 
@@ -45,7 +45,7 @@ Se si gestiscono gli account utente e i gruppi tramite Microsoft 365, è possibi
   
 - Per l'interfaccia di amministrazione di Microsoft 365, accedere con un account utente a cui è stato assegnato l'amministratore dell'account utente o il ruolo di amministratore dell'azienda e utilizzare i gruppi per aggiungere gli utenti adatti ai gruppi di accesso appropriato.
     
-- Per PowerShell, [connettersi prima con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Per aggiungere un account utente a un gruppo di accesso con il relativo nome dell'entità utente (UPN), utilizzare il seguente blocco di comandi di PowerShell:
+- Per PowerShell, [connettersi prima con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Per aggiungere un account utente a un gruppo di accesso con il relativo nome dell'entità utente (UPN), utilizzare il seguente blocco di comandi di PowerShell:
     
 ```powershell
 $userUPN="<UPN of the user account>"
@@ -77,7 +77,7 @@ Se si gestiscono gli account utente e i gruppi tramite Office 365, è possibile 
   
 - Per l'interfaccia di amministrazione di Microsoft 365, accedere con un account utente a cui è stato assegnato l'amministratore dell'account utente o il ruolo di amministratore dell'azienda e utilizzare i gruppi per aggiungere i gruppi adatti ai gruppi di accesso appropriato.
     
-- Per PowerShell, [connettersi prima con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+- Per PowerShell, [connettersi prima con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
  Successivamente, utilizzare i comandi di PowerShell seguenti:
  
 ```powershell
@@ -102,7 +102,7 @@ Se si gestiscono gli account utente e i gruppi tramite Office 365, è possibile 
   
 - Per l'interfaccia di amministrazione di Microsoft 365, accedere con un account utente a cui è stato assegnato l'amministratore dell'account utente o il ruolo di amministratore dell'azienda e utilizzare i gruppi per rimuovere gli utenti idonei dai gruppi di accesso appropriato.
     
-- Per PowerShell, [connettersi prima con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+- Per PowerShell, [connettersi prima con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
 Per rimuovere un account utente da un gruppo di accesso con il relativo UPN, utilizzare il seguente blocco di comandi di PowerShell:
     
 ```powershell
@@ -135,7 +135,7 @@ Se si gestiscono gli account utente e i gruppi tramite Office 365, è possibile 
   
 - Per l'interfaccia di amministrazione di Microsoft 365, accedere con un account utente a cui è stato assegnato l'amministratore dell'account utente o il ruolo di amministratore dell'azienda e utilizzare i gruppi per rimuovere i gruppi corretti dai gruppi di accesso appropriato.
     
-- Per PowerShell, [connettersi prima con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).    
+- Per PowerShell, [connettersi prima con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).    
 Per rimuovere un gruppo da un gruppo di accesso con il relativo nome visualizzato, utilizzare il seguente blocco di comandi di PowerShell:
     
 ```powershell

@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi di posta elettronica inviata a Microsoft 365
+title: Risoluzione dei problemi della posta elettronica inviati a Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: In questo articolo vengono fornite informazioni per la risoluzione dei problemi relativi all'invio di posta elettronica alle cassette postali in Microsoft 365 & procedure consigliate per la posta in blocco ai clienti di Microsoft 365.
-ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208598"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307580"
 ---
-# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Risoluzione dei problemi di posta elettronica inviata a Microsoft 365
+# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Risoluzione dei problemi della posta elettronica inviati a Microsoft 365
 
 In questo articolo vengono fornite informazioni per la risoluzione dei problemi per i mittenti che riscontrano problemi durante il tentativo di inviare messaggi di posta elettronica alle cassette postali in Microsoft 365 e le procedure consigliate per la posta in blocco ai clienti
 
@@ -79,7 +79,7 @@ Se si riceve un rapporto di mancato recapito da EOP che indica che l'indirizzo I
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Non è possibile ricevere messaggi di posta elettronica da mittenti in Microsoft 365
 
- Per ricevere i messaggi dagli utenti, verificare che la rete consenta le connessioni dagli indirizzi IP utilizzati da EOP nei data center. Per ulteriori informazioni, vedere [indirizzi IP di Exchange Online Protection](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+ Per ricevere i messaggi dagli utenti, verificare che la rete consenta le connessioni dagli indirizzi IP utilizzati da EOP nei data center. Per ulteriori informazioni, vedere [indirizzi IP di Exchange Online Protection](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedure consigliate per l'invio di messaggi di posta elettronica agli utenti di Microsoft 365
 

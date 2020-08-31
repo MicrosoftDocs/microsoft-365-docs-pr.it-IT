@@ -21,12 +21,12 @@ search.appverid:
 description: Ottenere supporto tecnico e per la fatturazione usando i numeri di telefono indicati per il proprio paese o area geografica o inviando una richiesta di assistenza online.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641586"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307362"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Modi di contattare il supporto tecnico per i prodotti per le aziende - Guida per l'amministratore
 
@@ -35,7 +35,7 @@ ms.locfileid: "46641586"
 > [!IMPORTANT]
 > Per usare questi metodi di assistenza, è necessario essere amministratori di un abbonamento aziendale. Se non si è un amministratore aziendale, usare [questa pagina di assistenza](https://support.microsoft.com/help/contactus).
 
-Per iniziare, [verificare lo stato di integrità corrente dei servizi](https://docs.microsoft.com/office365/enterprise/view-service-health). È possibile visualizzare informazioni dettagliate sulle problematiche presenti e passate nel dashboard <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Integrità dei servizi</a>. Se si verifica un problema che non è elencato, è possibile ottenere supporto in uno dei modi seguenti:
+Per iniziare, [verificare lo stato di integrità corrente dei servizi](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). È possibile visualizzare informazioni dettagliate sulle problematiche presenti e passate nel dashboard <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Integrità dei servizi</a>. Se si verifica un problema che non è elencato, è possibile ottenere supporto in uno dei modi seguenti:
 
 ## <a name="online-support"></a>Supporto online
 

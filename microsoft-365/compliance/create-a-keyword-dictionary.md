@@ -18,25 +18,25 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sulla procedura di base per la creazione di un dizionario di parole chiave nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: d3308de0138b13391a5bd8a4493cda87c4023bd8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bad95e9a5605631de3e8652e7243909f28b2abde
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686638"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282736"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
-La prevenzione della perdita dei dati consente di identificare, monitorare e proteggere gli elementi sensibili. Per identificare gli elementi sensibili talvolta è necessario cercare le parole chiave, in particolare quando si identifica un contenuto generico, ad esempio comunicazioni relative al settore sanitario, o contenuti con linguaggio inappropriato o esplicito. Anche se è possibile creare elenchi di parole chiave nei tipi di informazioni sensibili, tali elenchi hanno dimensioni limitate e richiedono la modifica di file XML per la loro creazione o modifica. I dizionari di parole chiave offrono una gestione semplificata delle parole chiave e, su scala più ampia, supportano fino a 100.000 termini per dizionario.
+La prevenzione della perdita dei dati consente di identificare, monitorare e proteggere gli elementi sensibili. Per identificare gli elementi sensibili talvolta è necessario cercare le parole chiave, in particolare quando si identifica un contenuto generico, ad esempio comunicazioni relative al settore sanitario, o contenuti con linguaggio inappropriato o esplicito. Anche se è possibile creare elenchi di parole chiave nei tipi di informazioni sensibili, tali elenchi hanno dimensioni limitate e richiedono la modifica di file XML per la loro creazione o modifica. I dizionari di parole chiave offrono una gestione semplificata delle parole chiave e, su scala più ampia, supportano fino a 100 KB di termini (dopo la compressione) per dizionario, e supportano qualsiasi lingua. Anche il limite del tenant è di 100 KB dopo la compressione.
   
 > [!NOTE]
-> Microsoft 365 Information Protection supporta in anteprima set di caratteri a due byte nelle lingue seguenti:
+> Microsoft 365 Information Protection supporta in anteprima i set di caratteri a due byte per le lingue seguenti:
 > - Cinese (semplificato)
 > - Cinese (tradizionale)
 > - Coreano
 > - Giapponese
 > 
->La versione di anteprima è disponibile solo nel cloud commerciale e l'implementazione è limitata ai paesi o aree geografiche seguenti:
+>Questa versione di anteprima è disponibile solo nel cloud commerciale e l'implementazione è limitata ai paesi o alle aree geografiche seguenti:
 > - Giappone
 > - Corea del Sud
 > - Cina

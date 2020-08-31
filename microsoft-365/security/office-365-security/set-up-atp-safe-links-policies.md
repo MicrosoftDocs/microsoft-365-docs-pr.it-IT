@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 121de6137e392ae0c66d9961fd2138f003a9d9fa
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662255"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307762"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -35,7 +35,7 @@ Con i collegamenti sicuri di ATP abilitati, se un utente fa clic su un collegame
 
 Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosina](office-365-atp.md#new-features-in-office-365-atp). Man mano che si aggiungono nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri dei collegamenti sicuri ATP esistenti.
 
-## <a name="what-to-do"></a>Procedura
+## <a name="what-to-do"></a>Soluzione
 
 1. Esaminare i prerequisiti.
 
@@ -59,7 +59,7 @@ Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosin
 
     Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Verificare che i client di Office siano configurati per l'utilizzo dell' [autenticazione moderna](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (per la protezione dei collegamenti sicuri di ATP nei documenti di Office).
+- Verificare che i client di Office siano configurati per l'utilizzo dell' [autenticazione moderna](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (per la protezione dei collegamenti sicuri di ATP nei documenti di Office).
 
 - Informazioni [sulle opzioni dei criteri collegamenti sicuri di ATP](#step-4-learn-about-atp-safe-links-policy-options) (in questo articolo).
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in 123-reg.co.uk per Microsoft.
-ms.openlocfilehash: 3c188c7e9f2f9390aa45196d798e04441d33bcb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 51542e1f00153a87ca06ec540d391de6ca621bab
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400582"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307032"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>Creare record DNS in 123-reg.co.uk per Microsoft
 
@@ -102,13 +102,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere il vostro \<domain-key\> dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** ottenere il valore \<domain-key\> dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copiare e incollare i valori dalla tabella](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
 6. Selezionare **Aggiungi**.
     
-    ![Selezionare Aggiungi](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
+    ![Selezionare Aggiungi.](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
 7. If there are any other MX records, remove each one by choosing the **Delete (trash can)** icon for that record. 
     
@@ -133,9 +133,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Hostname**|**Type**|**Destination CNAME**|
     |:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |individuazione automatica  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
+    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
    
@@ -143,7 +143,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 6. Selezionare **Aggiungi**.
     
-    ![Selezionare Aggiungi](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
+    ![Selezionare Aggiungi.](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
 7. Aggiungere gli altri cinque record CNAME.
     
@@ -155,7 +155,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsfot. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsfot. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 1. Per iniziare, passare alla propria pagina dei domini su 123-reg.co.uk usando [questo collegamento](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Verrà richiesto di eseguire l'accesso.
     
@@ -177,7 +177,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 6. Selezionare **Aggiungi**.
     
-    ![Selezionare Aggiungi](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
+    ![Selezionare Aggiungi.](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Aggiungere i due record SRV necessari per Microsoft
 <a name="BKMK_add_SRV"> </a>
@@ -199,14 +199,14 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     ||||||
     |:-----|:-----|:-----|:-----|:-----|
     |Hostname|Type|Priority|TTL|Destination SRV|
-    |_sip. _tls|SRV|100|3600|1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**<br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
-    |_sipfederationtls. _tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)** <br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
+    |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **Questo valore DEVE terminare con un punto (.)**<br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
+    |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **Questo valore DEVE terminare con un punto (.)** <br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
     ![Copiare e incollare i valori della tabella](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
 6. Selezionare **Aggiungi**.
     
-    ![Selezionare Aggiungi](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
+    ![Selezionare Aggiungi.](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   
 7. Per aggiungere l'altro record SRV:
     

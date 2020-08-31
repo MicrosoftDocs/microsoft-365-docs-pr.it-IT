@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su Amazon Web Services (AWS) per Microsoft.
-ms.openlocfilehash: fcc4da3a5841e9df2f6edabd540363fe70bb73ad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dbbf82c9c776108c4d5e34e2eb639f9c36e9f28b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400570"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307068"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Creare record DNS su Amazon Web Services (AWS) per Microsoft
 
@@ -66,7 +66,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |**Nome** <br/> |**Tipo** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
+    |**Nome** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
     |(Leave this field empty.)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Microsoft 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Semplice  <br/> |
    
 6. Selezionare **Crea**.
@@ -104,9 +104,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**Nome**|**Tipo**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**Nome**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0 *\<domain-key\>* . mail.Protection.Outlook.com.  <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il proprio \<*domain-key*\> account Microsoft 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Semplice  <br/> |
+    |Lasciare vuoto questo campo.  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il proprio \<*domain-key*\> account Microsoft 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Semplice  <br/> |
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -148,7 +148,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Selezionare i valori **Type** e **Routing Policy** negli elenchi a discesa. 
     
-    |**Nome**|**Tipo**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**Nome**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME - Canonical Name  <br/> |No  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Semplice  <br/> |
     |sip  <br/> |CNAME - Canonical Name  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Semplice  <br/> |
@@ -172,7 +172,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un *singolo* record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
   
 1. Per iniziare, passare alla propria pagina dei domini su AWS usando [questo collegamento](https://console.aws.amazon.com/route53/home). Verrà richiesto di eseguire l'accesso.
     
@@ -213,10 +213,10 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Selezionare i valori **Type** e **Routing Policy** negli elenchi a discesa. 
     
-    |**Nome**|**Tipo**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**Nome**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls|SRV - Service locator|No|300|100 1 443 sipdir.online.lync.com. **Questo valore deve terminare con un punto (.).**><br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |Semplice|
-    |_sipfederationtls. _tcp|SRV - Service locator|No|300|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**<br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |Semplice|
+    |_sip._tls|SRV - Service locator|No|300|100 1 443 sipdir.online.lync.com. **Questo valore deve terminare con un punto (.).**><br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |Semplice|
+    |_sipfederationtls._tcp|SRV - Service locator|No|300|100 1 5061 sipfed.online.lync.com. **Questo valore DEVE terminare con un punto (.)**<br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |Semplice|
    
     ![AWS-BP-Configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Informazioni su come ripristinare un gruppo di Microsoft 365 eliminato.
-ms.openlocfilehash: d7cf548816af1661298458f27c704d654845075d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8fb2cb3afdf390efae7854a040bb56df731cceaf
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818508"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307188"
 ---
 # <a name="restore-a-deleted-group"></a>Ripristinare un gruppo eliminato
 
@@ -70,7 +70,7 @@ Se il gruppo eliminato non viene visualizzato, contattare un amministratore.
 
 Se si è amministratori globali o amministratori di gruppi, è possibile ripristinare un gruppo eliminato nell'interfaccia di amministrazione di Microsoft 365:
 
-1. Accedere all'interfaccia di [Amministrazione](https://admin.microsoft.com).
+1. Passare all'[interfaccia di amministrazione](https://admin.microsoft.com).
 2. Espandere **gruppi**e quindi fare clic su **gruppi eliminati**.
 3. Selezionare il gruppo che si desidera ripristinare e quindi fare clic su **Ripristina gruppo**.
 
@@ -104,7 +104,7 @@ Visitare la [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Of
   
 ## <a name="related-articles"></a>Articoli correlati
 
-[Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
   
 [Eliminare gruppi usando il cmdlet Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   

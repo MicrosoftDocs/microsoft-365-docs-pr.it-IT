@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Hostgator per Microsoft.
-ms.openlocfilehash: 8adfc4b6154dad0da7dd2fe037c73fcfc4f84d58
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 103da87956beae868cda84b727a3401dfd9991d9
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400438"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306972"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>Creare record DNS in Hostgator per Microsoft
 
@@ -91,8 +91,8 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**Name** <br/> |**TTL** <br/> |**Tipo** <br/> |**TXT Data** <br/> |
-    |Utilizzare il *Domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |**Nome** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
+    |Utilizzare il  *Domain_name*. (for example, fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Selezionare **Aggiungi record**.
     
@@ -119,9 +119,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 > [!IMPORTANT]
 > Prima di eseguire questa procedura è necessario eseguire la procedura illustrata nella prima sezione di questo articolo, [Associare il dominio all'account di hosting](#point-your-domain-to-your-hosting-account). 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina cPanel su Hostgator. Verrà richiesto di eseguire l'accesso.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
+    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
@@ -137,7 +137,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Priority**|**Destination**|
     |:-----|:-----|
-    |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro \< *domain-key*  \> dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** ottenere il valore \< *domain-key*  \> dal proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. Selezionare **Aggiungi nuovo record**.
    
@@ -151,9 +151,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 > [!IMPORTANT]
 > Prima di eseguire questa procedura è necessario eseguire la procedura illustrata nella prima sezione di questo articolo, [Associare il dominio all'account di hosting](#point-your-domain-to-your-hosting-account). 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina cPanel su Hostgator. Verrà richiesto di eseguire l'accesso.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
+    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
@@ -166,7 +166,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Selezionare il valore **Type** nell'elenco a discesa. 
     
-    |**Name**|**TTL**|**Type**|**CNAME**|
+    |**Nome**|**TTL**|**Type**|**CNAME**|
     |:-----|:-----|:-----|:-----|
     |autodiscover. *Domain_name*. (ad esempio, autodiscover.fourthcoffee.com).  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip. *Domain_name*. (ad esempio, sip.fourthcoffee.com).  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
@@ -187,14 +187,14 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori di Microsoft necessari al record corrente in modo da ottenere un unico record SPF che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori di Microsoft necessari al record corrente in modo da ottenere un unico record SPF che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 > [!IMPORTANT]
 > Prima di eseguire questa procedura è necessario eseguire la procedura illustrata nella prima sezione di questo articolo, [Associare il dominio all'account di hosting](#point-your-domain-to-your-hosting-account). 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina cPanel su Hostgator. Verrà richiesto di eseguire l'accesso.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
+    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
@@ -205,9 +205,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Selezionare il valore **Type** nell'elenco a discesa. 
     
-    |**Name**|**TTL**|**Type**|**TXT Data**|
+    |**Nome**|**TTL**|**Type**|**TXT Data**|
     |:-----|:-----|:-----|:-----|
-    |Utilizzare il *Domain_name*. (for example, fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
+    |Utilizzare il  *Domain_name*. (for example, fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
   
 4. Selezionare **Aggiungi record**.
     
@@ -217,9 +217,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 > [!IMPORTANT]
 > Prima di eseguire questa procedura è necessario eseguire la procedura illustrata nella prima sezione di questo articolo, [Associare il dominio all'account di hosting](#point-your-domain-to-your-hosting-account). 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina cPanel su Hostgator. Verrà richiesto di eseguire l'accesso.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
+    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
@@ -233,7 +233,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Selezionare il valore **Type** nell'elenco a discesa. 
     
-    |**Name**|**TTL**|**Tipo**|**Priorità**|**Peso**|**Porta**|**Target**|
+    |**Nome**|**TTL**|**Type**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip. _tls. *Domain_name*. ad esempio, _sip. _tls. fourthcoffee. com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls. _tcp. *Domain_name*. ad esempio, _sipfederationtls. _tcp. fourthcoffee. com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |

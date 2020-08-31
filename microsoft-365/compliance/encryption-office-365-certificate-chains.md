@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Visualizzare un elenco completo dei certificati radice e delle autorità di certificazione (CAs) in Office 365.
-ms.openlocfilehash: 4fa98f417968229a0ba5382b7b1e8b4067db2e36
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c0f63f6e4ebc288f8b06d608af81a485e5f71e8a
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631701"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307445"
 ---
 # <a name="encryption-chains"></a>Catene di crittografia
 
-Office 365 utilizza una serie di provider di certificati diversi. Di seguito viene descritto l'elenco completo dei certificati radice noti di Office 365 che i clienti possono incontrare quando si accede a Office 365. Per informazioni sui certificati che potrebbe essere necessario installare nella propria infrastruttura, vedere [Plan for Third-Party SSL Certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). Le informazioni sul certificato seguenti si applicano a tutte le istanze del cloud globale e di Office 365.
+Office 365 utilizza una serie di provider di certificati diversi. Di seguito viene descritto l'elenco completo dei certificati radice noti di Office 365 che i clienti possono incontrare quando si accede a Office 365. Per informazioni sui certificati che potrebbe essere necessario installare nella propria infrastruttura, vedere [Plan for Third-Party SSL Certificates for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates). Le informazioni sul certificato seguenti si applicano a tutte le istanze del cloud globale e di Office 365.
 
 >[!NOTE]
 >Per informazioni sui certificati che si applicano ai clienti di **DOD e GCC High** , vedere [catene di crittografia di Office 365-DOD e GCC High](encryption-office-365-certificate-chains-itar.md).
@@ -145,7 +145,7 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Autorità di certificazione radice di Entrust-G2**
 
-| **Oggetto** | CN = autorità di certificazione radice di Entrust-G2<br>OU =&quot;(c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = autorità di certificazione radice di Entrust-G2<br>OU = &quot; (c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
 | **Numero di serie** | 4A: 53:8C: 28 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
@@ -159,7 +159,7 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **Oggetto** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS\_2048 incorp. per Rif (Limit s Liab)<br>O = Entrust. NET |
+| **Oggetto** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS \_ 2048 incorp. per Rif (Limit s Liab)<br>O = Entrust. NET |
 | --- | --- |
 | **Numero di serie** | 38:63: DE: F8 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
@@ -203,7 +203,7 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="thawte-primary-root-ca---g3"></a>**Thawte Primary root CA-G3**
 
-| **Oggetto** | CN = Thawte radice primaria CA-G3<br>OU =&quot;(c) 2008 Thawte, Inc.-solo per uso autorizzato&quot;<br>OU = divisione servizi di certificazione<br>O =&quot;Thawte, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = Thawte radice primaria CA-G3<br>OU = &quot; (c) 2008 Thawte, Inc.-solo per uso autorizzato&quot;<br>OU = divisione servizi di certificazione<br>O = &quot; Thawte, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
 | **Numero di serie** | 60:01:97: B7:46: A7: EA: B4: B4:9A: D6:4B: 2F: F7:90: FB |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
@@ -217,7 +217,7 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**Autorità di certificazione primaria pubblica di VeriSign Class 3-G5**
 
-| **Oggetto** | CN = VeriSign Class 3 Public Primary Certification Authority-G5<br>OU =&quot;(c) 2006 VeriSign, Inc.-solo per uso autorizzato&quot;<br>OU = rete di fiducia VeriSign<br>O =&quot;VeriSign, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = VeriSign Class 3 Public Primary Certification Authority-G5<br>OU = &quot; (c) 2006 VeriSign, Inc.-solo per uso autorizzato&quot;<br>OU = rete di fiducia VeriSign<br>O = &quot; VeriSign, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
 | **Numero di serie** | 18: DA: D1:9E: 26:7D: E8: BB: 4A: 21:58: CD: CC: 6B: 3B: 4A |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
@@ -344,9 +344,9 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrust-certification-authority---l1c"></a>**Autorità di certificazione Entrust-L1C**
 
-| **Oggetto** | CN = autorità di certificazione Entrust-L1C<br>OU =&quot;(c) 2009 Entrust, Inc.&quot;<br>OU = www. Entrust. NET/RPA è incorporato per riferimento<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = autorità di certificazione Entrust-L1C<br>OU = &quot; (c) 2009 Entrust, Inc.&quot;<br>OU = www. Entrust. NET/RPA è incorporato per riferimento<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
-| **Autorità di certificazione** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS\_2048 incorp. per Rif (Limits Liab).<br>O = Entrust. NET |
+| **Autorità di certificazione** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS \_ 2048 incorp. per Rif (Limits Liab).<br>O = Entrust. NET |
 | **Numero di serie** | 4C: 0E: 8C: 39 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
@@ -362,9 +362,9 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrust-certification-authority---l1k"></a>**Autorità di certificazione Entrust-L1K**
 
-| **Oggetto** | CN = autorità di certificazione Entrust-L1K<br>OU =&quot;(c) 2012 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = autorità di certificazione Entrust-L1K<br>OU = &quot; (c) 2012 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
-| **Autorità di certificazione** | CN = autorità di certificazione radice di Entrust-G2<br>OU =&quot;(c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Autorità di certificazione** | CN = autorità di certificazione radice di Entrust-G2<br>OU = &quot; (c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | **Numero di serie** | 0E: E9:4C: C3:00:00:00:00:51: D3:77:85 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
@@ -616,7 +616,7 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 | **Oggetto** | CN = Symantec classe 3 EV SSL CA-G3<br>OU = Symantec Trust Network<br>O = Symantec Corporation<br>C = Stati Uniti |
 | --- | --- |
-| **Autorità di certificazione** | CN = VeriSign Class 3 Public Primary Certification Authority-G5<br>OU =&quot;(c) 2006 VeriSign, Inc.-solo per uso autorizzato&quot;<br>OU = rete di fiducia VeriSign<br>O =&quot;VeriSign, Inc.&quot;<br>C = Stati Uniti |
+| **Autorità di certificazione** | CN = VeriSign Class 3 Public Primary Certification Authority-G5<br>OU = &quot; (c) 2006 VeriSign, Inc.-solo per uso autorizzato&quot;<br>OU = rete di fiducia VeriSign<br>O = &quot; VeriSign, Inc.&quot;<br>C = Stati Uniti |
 | **Nome alternativo soggetto** | Indirizzo Directory: CN = SymantecPKI-1-533 |
 | **Numero di serie** | 7E: E1:4A: 6F: 6F: EF: F2: D3:7F: 3F: AD: 65:4D: 3A: DA: B4 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
@@ -635,7 +635,7 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 | **Oggetto** | CN = Symantec Class 3 Secure server CA-G4<br>OU = Symantec Trust Network<br>O = Symantec Corporation<br>C = Stati Uniti |
 | --- | --- |
-| **Autorità di certificazione** | CN = VeriSign Class 3 Public Primary Certification Authority-G5<br>OU =&quot;(c) 2006 VeriSign, Inc.-solo per uso autorizzato&quot;<br>OU = rete di fiducia VeriSign<br>O =&quot;VeriSign, Inc.&quot;<br>C = Stati Uniti |
+| **Autorità di certificazione** | CN = VeriSign Class 3 Public Primary Certification Authority-G5<br>OU = &quot; (c) 2006 VeriSign, Inc.-solo per uso autorizzato&quot;<br>OU = rete di fiducia VeriSign<br>O = &quot; VeriSign, Inc.&quot;<br>C = Stati Uniti |
 | **Nome alternativo soggetto** | Indirizzo Directory: CN = SymantecPKI-1-534 |
 | **Numero di serie** | 51:3F: B9:74:38:70: B7:34:40:41:8D: 30:93:06:99: FF |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
@@ -652,9 +652,9 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="thawte-sha256-ssl-ca"></a>**Thawte SHA256 SSL CA**
 
-| **Oggetto** | CN = Thawte SHA256 SSL CA<br>O =&quot;Thawte, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = Thawte SHA256 SSL CA<br>O = &quot; Thawte, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
-| **Autorità di certificazione** | CN = Thawte radice primaria CA-G3<br>OU =&quot;(c) 2008 Thawte, Inc.-solo per uso autorizzato&quot;<br>OU = divisione servizi di certificazione<br>O =&quot;Thawte, Inc.&quot;<br>C = Stati Uniti |
+| **Autorità di certificazione** | CN = Thawte radice primaria CA-G3<br>OU = &quot; (c) 2008 Thawte, Inc.-solo per uso autorizzato&quot;<br>OU = divisione servizi di certificazione<br>O = &quot; Thawte, Inc.&quot;<br>C = Stati Uniti |
 | **Nome alternativo soggetto** | Indirizzo Directory: CN = VeriSignMPKI-2-415 |
 | **Numero di serie** | 36:34:9E: 18: C9:9C: 26:69: B6:56:2E: 6C: E5: AD: 71:32 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
