@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 6a22c1020c7e6d6c1fce4f80ce40da353b095e64
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 5b0b81d18afad9f0f9cba6ec24e157ad8f96e4ef
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903861"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315849"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -210,9 +210,7 @@ I criteri di conservazione possono essere applicati a tutto il contenuto nelle p
 ### <a name="identify-content-that-contains-specific-keywords"></a>Identificare il contenuto che include parole chiave specifiche
 
 È possibile applicare i criteri di conservazione solo al contenuto che soddisfa specifiche condizioni e quindi eseguire azioni di conservazione solo su tale contenuto. Le condizioni disponibili supportano l'applicazione di criteri di conservazione al contenuto che include parole o frasi specifiche. È possibile perfezionare la query usando operatori di ricerca come AND, OR e NOT. Per altre informazioni sugli operatori, vedere [Query con parola chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md).
-  
-Il supporto delle proprietà disponibili per le ricerche (ad esempio, **subject:**) sarà disponibile a breve.
-  
+
 I criteri di conservazione basati su query usano l'indice di ricerca per identificare il contenuto.
   
 ![Editor di query](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
