@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La Guida di orientamento per la configurazione dei tenant per Microsoft 365.
-ms.openlocfilehash: db7054d1f6afc7e4835507dc6415e0b240918c1f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691507"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315754"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Guida di orientamento tenant per Microsoft 365
 
@@ -30,7 +30,7 @@ Una configurazione del tenant ben pianificata e eseguita è fondamentale per pre
 
 ## <a name="plan"></a>Piano
 
-Nella fase di pianificazione dell'implementazione tenant:
+Per pianificare l'implementazione del tenant:
 
 - [Comprendere gli abbonamenti, le licenze e i tenant di Azure Active Directory (Azure AD)](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Informazioni su come utilizzare i certificati SSL di terze parti](plan-for-third-party-ssl-certificates.md)
@@ -42,9 +42,9 @@ Nella fase di pianificazione dell'implementazione tenant:
 - [Comprendere l'isolamento del tenant](microsoft-365-tenant-isolation-overview.md)
 - [Ottenere i dettagli su Microsoft 365 Service Assurance](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
 
-## <a name="deploy"></a>Distribuisci
+## <a name="deploy"></a>Distribuire
 
-Nella fase di distribuzione dell'implementazione tenant, [aggiungere i domini DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) per la propria organizzazione.
+Per distribuire il tenant, [aggiungere i domini DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) per la propria organizzazione.
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>Tenant con più posizioni geografiche
 
@@ -52,7 +52,7 @@ Con Microsoft 365 Multi-Geo l'organizzazione può espandere la presenza di Micro
 
 [Introduzione](microsoft-365-multi-geo.md) a Understanding, Planning, Configuring e then Administering with Microsoft 365 multi-Geo.
 
-## <a name="moving-a-tenants-geographic-locations"></a>Spostamento delle posizioni geografiche di un tenant
+## <a name="move-a-tenants-geographic-locations"></a>Spostare le posizioni geografiche di un tenant
 
 Microsoft continua ad aprire nuove aree geografiche di datacenter (GEOS) per i servizi di Microsoft 365. Questi nuovi datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescita della domanda e dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti.
 

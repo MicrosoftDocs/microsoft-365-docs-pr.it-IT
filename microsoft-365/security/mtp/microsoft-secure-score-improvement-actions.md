@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ab75e7ddbf3ada01c3f1247e58d8dc9472ecae77
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 3b913b3d53abf8c46fbcc9e053f91f512864c9d8
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866976"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315832"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Valutare la propria posizione di sicurezza con Microsoft Secure Score
 
@@ -35,7 +35,7 @@ Per facilitare le informazioni necessarie più rapidamente, le azioni di miglior
 
 * Identity (Azure Active Directory accounts & Roles)
 * Data (protezione delle informazioni di Microsoft)
-* Dispositivo (Microsoft Defender ATP, noto come [score di configurazione](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score))
+* Dispositivo (Microsoft Defender ATP, noto come [Microsoft Secure Score for Devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 * App (applicazioni di posta elettronica e cloud, tra cui Office 365 e Microsoft cloud app Security)
 * Infrastructure (nessuna azione di miglioramento per il momento)
 

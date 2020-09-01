@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Aggiungere il dominio a Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365 aggiungendo un record DNS all'host DNS. La procedura guidata di installazione illustra i passaggi del processo.
-ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814433"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315718"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Aggiungere un dominio a Microsoft 365
 
@@ -83,11 +83,13 @@ ms.locfileid: "46814433"
     
 5. Scegliere in che modo si desidera verificare che si è proprietari del dominio.
     
-    1. Se il dominio è registrato su GoDaddy o 1 &amp; 1, selezionare **Accedi**  >  **successivamente** e Microsoft [consentirà la configurazione automatica dei record](../get-help-with-domains/domain-connect.md).
+    1. Se il registrar utilizza [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), selezionare **Accedi**  >  **successivamente** e Microsoft [consentirà la configurazione automatica dei record](../get-help-with-domains/domain-connect.md).
     
     2. È possibile specificare l'invio di un messaggio di posta elettronica contenente un codice di verifica al contatto registrato per il dominio. Se non si riconosce o si ha accesso al messaggio di posta elettronica su record, è possibile utilizzare la terza opzione.
     
     3. È possibile usare un record TXT per verificare il dominio. Selezionarlo e quindi fare clic su **Avanti** per visualizzare le istruzioni su come aggiungere il record DNS al sito Web del registrar. Dopo aver aggiunto il record, possono essere necessari fino a 30 minuti. 
+
+    4. È possibile aggiungere un file di testo al sito Web del dominio. Selezionare e scaricare il file. txt dall'installazione guidata, quindi caricare il file nella cartella principale del sito Web. Il percorso del file deve essere simile al seguente: `http://mydomain.com/ms39978200.txt` . È necessario confermare che il dominio è stato trovato nel sito Web.
     
 6. Scegliere in che modo si desidera rendere necessarie le modifiche del DNS per l'utilizzo del dominio da parte di Office.
     

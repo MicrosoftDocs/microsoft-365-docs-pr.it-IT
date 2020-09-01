@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La roadmap per configurare la gestione dei dispositivi per Microsoft 365.
-ms.openlocfilehash: 1c5a06c75ede11697e2ecf17c47eb035e78dcd27
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1a1bdb449aa1d1ba12cf1de422b3e279df6c1376
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691184"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315742"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap per la gestione dei dispositivi per Microsoft 365
 
@@ -47,17 +47,11 @@ Iniziare da [qui](https://support.microsoft.com/office/set-up-basic-mobility-and
  
 ## <a name="identity-and-device-access-recommendations"></a>Consigli sull’identità e sull’accesso dei dispositivi
 
-Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. Per l'accesso ai dispositivi, utilizzare i suggerimenti e le impostazioni negli articoli seguenti insieme ai passaggi in questa fase:
+Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. Per l'accesso ai dispositivi, utilizzare i suggerimenti e le impostazioni disponibili in questi articoli:
 
 - [Prerequisiti](identity-access-prerequisites.md)
 - [Criteri comuni di identità e accesso dei dispositivi](identity-access-policies.md)
 
-## <a name="how-microsoft-does-device-management-for-microsoft-365"></a>In che modo Microsoft esegue la gestione dei dispositivi per Microsoft 365
-
-Informazioni su come gli esperti IT di Microsoft [gestiscono i dispositivi con EMS](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
-
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Informazioni su come Contoso ha eseguito la gestione dei dispositivi per Microsoft 365
 
 Vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, ha [distribuito l'infrastruttura di gestione dei dispositivi mobili](contoso-mdm.md) con i servizi cloud di Microsoft 365.
-
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)

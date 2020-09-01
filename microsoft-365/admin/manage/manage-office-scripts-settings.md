@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni degli script di Office
+title: Gestire le impostazioni di Office Scripts
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Informazioni su come gestire le impostazioni degli script di Office per gli utenti dell'organizzazione.
-ms.openlocfilehash: 12a80f277f6d17a8e7f5228f6948e70b7a93be11
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 44e2a5c0e0577db344fdbb00a110674df3e71bdc
+ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300835"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47317494"
 ---
-# <a name="manage-office-scripts-settings"></a>Gestire le impostazioni degli script di Office
+# <a name="manage-office-scripts-settings"></a>Gestire le impostazioni di Office Scripts
 
 Gli script di Office consentono agli utenti di automatizzare le attività tramite la registrazione, la modifica e l'esecuzione di script in Excel sul Web. Office Scripts è compatibile con Power automatizzate e gli utenti eseguono script nelle cartelle di lavoro utilizzando il connettore Excel online (business). Microsoft 365 admins è in grado di gestire le impostazioni degli script di Office dall'interfaccia di amministrazione di Microsoft 365.
 
@@ -80,7 +80,7 @@ Gli script di Office consentono agli utenti di automatizzare le attività tramit
 
 7. Selezionare **Salva**.
 
-    Per rendere effettive le modifiche apportate alle impostazioni di Office script, possono essere necessarie fino a 48 ore.
+    Per rendere effettive le modifiche apportate alle impostazioni degli script di Office, possono essere necessarie fino a 48 ore.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

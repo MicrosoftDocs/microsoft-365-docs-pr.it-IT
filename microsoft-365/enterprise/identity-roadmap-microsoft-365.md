@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: La Guida di orientamento per l'identità per Microsoft 365.
-ms.openlocfilehash: 206d8598bab294e6ecb9502599e5530dd4942a59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691565"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315800"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Roadmap dell'identità per Microsoft 365
 
@@ -38,18 +38,18 @@ Per le caratteristiche di identità di ogni piano Microsoft 365 per l'organizzaz
 
 Questo poster a due pagine rappresenta un modo rapido per aumentare i concetti e le configurazioni di identità per Microsoft 365 per Enterprise.
 
-È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) e stamparlo in formato lettera, legale o tabloid (11 x 17).
 
 ## <a name="plan"></a>Piano
 
-Nella fase di pianificazione dell'implementazione dell'identità:
+Per pianificare l'implementazione dell'identità:
 
 - [Comprendere i diversi modelli di identità](about-microsoft-365-identity.md)
 - [Pianificare la sincronizzazione delle identità e delle directory ibride](plan-for-directory-synchronization.md)
 
-## <a name="deploy"></a>Distribuisci
+## <a name="deploy"></a>Distribuire
 
-Nella fase di distribuzione dell'implementazione dell'identità:
+Per distribuire l'implementazione dell'identità:
 
 - [Proteggere gli account di amministrazione globale](protect-your-global-administrator-accounts.md)
 - [Configurare e utilizzare le identità solo cloud](cloud-only-identities.md)
@@ -59,14 +59,14 @@ Nella fase di distribuzione dell'implementazione dell'identità:
 
 ### <a name="identity-and-device-access-recommendations"></a>Consigli sull’identità e sull’accesso dei dispositivi
 
-Microsoft offre un set di consigli per [l’identità e accesso ai dispositivi](microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. Per l’identità, usare i suggerimenti e le impostazioni degli articoli seguenti insieme alla procedura descritta in questa fase:
+Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. Per l'identità, utilizzare i suggerimenti e le impostazioni disponibili in questi articoli:
 
 - [Prerequisiti](identity-access-prerequisites.md)
 - [Criteri comuni di identità e accesso dei dispositivi](identity-access-policies.md)
 
 ## <a name="manage"></a>Gestione
 
-Nella fase di gestione dell'implementazione dell'identità:
+Per gestire l'implementazione dell'identità:
 
 - [Assegnare licenze e gestire gli account utente](assign-licenses-to-user-accounts.md)
 - [Monitorare la sincronizzazione della directory](view-directory-synchronization-status.md)
@@ -83,9 +83,6 @@ Informazioni su come gli esperti IT di Microsoft [gestiscono le identità e l'ac
 
 Vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, [ha distribuito un’infrastruttura di identità ibrida](contoso-identity.md) per i servizi cloud Microsoft 365.
 
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
-
 ## <a name="next-step"></a>Passaggio successivo
 
 Avviare la pianificazione dell'identità con i [modelli Identity](about-microsoft-365-identity.md).
-

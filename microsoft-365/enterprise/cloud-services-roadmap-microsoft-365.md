@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La Guida di orientamento per la configurazione dei servizi cloud per Microsoft 365.
-ms.openlocfilehash: 2b6b69f25888305232ba93d9d738319fe5137019
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691371"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315766"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Roadmap dei servizi cloud per Microsoft 365
 
@@ -26,13 +26,13 @@ Per ottenere i vantaggi della creatività, del lavoro di squadra e della produtt
 
 Se si dispone di distribuzioni basate su server esistenti per Exchange, SharePoint o Skype for business, vedere la Guida di [orientamento software client e server](client-server-software-roadmap-microsoft-365.md) per eseguire la migrazione dell'intera organizzazione a Microsoft 365 per Enterprise. In questa guida di orientamento sono inclusi i prodotti client di Microsoft Office, i prodotti di Office Server locali e i dispositivi basati su Microsoft Windows.
 
-## <a name="deploy"></a>Distribuisci
+## <a name="deploy"></a>Distribuire
 
-Nella fase di distribuzione dei servizi cloud:
+Per distribuire i servizi cloud:
 
 - [Preparare i servizi](configure-services-and-applications.md)
 - [Eseguire la migrazione dei dati locali a Microsoft 365](migrate-data-to-office-365.md)
-- Distribuire i servizi cloud
+- Ottenere i servizi cloud configurati per gli utenti
   - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
   - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
   - [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -42,7 +42,7 @@ Nella fase di distribuzione dei servizi cloud:
 
 ## <a name="manage"></a>Gestione
 
-Nella fase di gestione dei servizi cloud: 
+Per gestire i servizi cloud: 
 
 - [Controllare l'integrità del servizio](view-service-health.md)
 - [Informazioni sulle opzioni di supporto](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
