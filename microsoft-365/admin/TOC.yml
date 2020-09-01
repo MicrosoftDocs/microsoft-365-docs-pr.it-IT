@@ -212,6 +212,8 @@
           href: manage/set-password-expiration-policy.md
         - name: Personalizzare l'icona di avvio delle app
           href: manage/customize-the-app-launcher.md
+        - name: Aggiungere le app all'icona di avvio delle app
+          href: manage/pin-apps-to-app-launcher.md
         - name: Aggiornare gli utenti alle app più recenti
           href: setup/upgrade-users-to-latest-office-client.md
         - name: Requisiti per la distribuzione centralizzata dei componenti aggiuntivi
@@ -220,6 +222,8 @@
           href: manage/manage-deployment-of-add-ins.md
         - name: Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
           href: manage/manage-addins-in-the-admin-center.md
+        - name: Gestire le impostazioni di Office Scripts
+          href: manage/manage-office-scripts-settings.md
         - name: Domande frequenti sulla distribuzione centralizzata
           href: manage/centralized-deployment-faq.md
         - name: Trovare un partner o un rivenditore
