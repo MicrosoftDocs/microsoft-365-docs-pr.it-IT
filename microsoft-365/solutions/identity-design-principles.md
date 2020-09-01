@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 427d266ea46c184a87b8b0b4fbe242adfb8deff1
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 7c83d3f202851008e93c3f3e9d0c7bc89c49bf20
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597544"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308368"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>To Identity and Beyond-punto di vista di un architetto
 
@@ -113,7 +113,7 @@ Questo tipo di disegno della lavagna illustra i casi in cui vengono applicati i 
 
 È stato inseguendo il sogno di [Single Sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) (SSO) per tutto il tempo che ricordo. Alcuni clienti ritengono di poter ottenere questo risultato scegliendo il provider di Federazione "Right" (STS). Azure AD può essere di aiuto in modo significativo per abilitare le funzionalità [SSO](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-sso-deployment) , ma nessun servizio token di accesso è magico. Sono presenti troppi metodi di autenticazione "Legacy" che vengono ancora utilizzati per le applicazioni critiche. L'estensione di Azure AD con [soluzioni partner](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) è in grado di risolvere molti di questi scenari. SSO è una strategia e un viaggio. Non è possibile arrivarci senza andare verso [gli standard per le applicazioni](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types). Relativo a questo argomento è un viaggio per l'autenticazione senza [password](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless) che non ha anche una risposta magica. 
 
-[L'autenticazione](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) a più fattori (AMF) è oggi essenziale[(per ulteriori](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) informazioni). Aggiungere all' [analisi del comportamento degli utenti](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) it e si dispone di una soluzione che impedisce la maggior parte dei comuni attacchi cibernetici. Anche i servizi consumer si stanno spostando per richiedere l'AMF. Tuttavia, è ancora possibile incontrarsi con molti clienti che non desiderano passare ai metodi di [autenticazione moderni](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview) . L'argomento più importante che si sente è che avrà un impatto sugli utenti e sulle applicazioni legacy. A volte un buon calcio potrebbe aiutare i clienti a spostarsi lungo-Exchange Online [ha annunciato modifiche](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282). Sono ora disponibili numerosi [report](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication) di Azure ad per consentire ai clienti di eseguire questa transizione.
+[L'autenticazione](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) a più fattori (AMF) è oggi essenziale[(per ulteriori](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) informazioni). Aggiungere all' [analisi del comportamento degli utenti](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) it e si dispone di una soluzione che impedisce la maggior parte dei comuni attacchi cibernetici. Anche i servizi consumer si stanno spostando per richiedere l'AMF. Tuttavia, è ancora possibile incontrarsi con molti clienti che non desiderano passare ai metodi di [autenticazione moderni](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview) . L'argomento più importante che si sente è che avrà un impatto sugli utenti e sulle applicazioni legacy. A volte un buon calcio potrebbe aiutare i clienti a spostarsi lungo-Exchange Online [ha annunciato modifiche](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282). Sono ora disponibili numerosi [report](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication) di Azure ad per consentire ai clienti di eseguire questa transizione.
 
 
 
@@ -187,12 +187,12 @@ In questi scenari multi-tenant, i clienti spesso desiderano mantenere la stessa 
 
 ### <a name="multi-geo"></a>Multi-Geo 
 
-A [multi-Geo](https://docs.microsoft.com/office365/enterprise/office-365-multi-geo) o no a multi-Geo, questa è la domanda. Con Office 365 multi-Geo, è possibile eseguire il provisioning e l'archiviazione dei dati a riposo nelle posizioni geografiche scelte per soddisfare i requisiti di [residenza dei dati](https://docs.microsoft.com/office365/enterprise/o365-data-locations) . Sono presenti molte idee sbagliate su questa funzionalità. Tenere presente quanto segue: 
+A [multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) o no a multi-Geo, questa è la domanda. Con Office 365 multi-Geo, è possibile eseguire il provisioning e l'archiviazione dei dati a riposo nelle posizioni geografiche scelte per soddisfare i requisiti di [residenza dei dati](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations) . Sono presenti molte idee sbagliate su questa funzionalità. Tenere presente quanto segue: 
 - Non fornisce vantaggi per le prestazioni. Potrebbe peggiorare le prestazioni se la [struttura di rete](https://aka.ms/office365networking) non è corretta. Ottenere i dispositivi "close" alla rete Microsoft, non necessariamente ai dati.
 - Non si tratta di una soluzione per la [conformità GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-overview). GDPR non si concentra sulla sovranità dei dati o sulle posizioni di archiviazione. Sono disponibili altri Framework di conformità.
 - Non risolve la delega di amministrazione (vedere di seguito) o [barriere informative](https://docs.microsoft.com/microsoft-365/compliance/information-barriers).
 - Non è uguale a multi-tenant e richiede ulteriori flussi di lavoro per il [provisioning degli utenti](https:/docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) .
-- Non consente di [spostare il tenant](https://docs.microsoft.com/office365/enterprise/moving-data-to-new-datacenter-geos) (Azure ad) in un'altra area geografica. 
+- Non consente di [spostare il tenant](https://docs.microsoft.com/microsoft-365/enterprise/moving-data-to-new-datacenter-geos) (Azure ad) in un'altra area geografica. 
 
 ## <a name="delegation-of-administration"></a>Delega dell'amministrazione
 
@@ -202,7 +202,7 @@ Nella maggior parte delle organizzazioni di grandi dimensioni, la separazione de
 
 È presente un elenco di [ruoli incorporati](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)lungo e crescente. Ogni ruolo è costituito da un elenco di autorizzazioni di ruolo raggruppate per consentire l'esecuzione di azioni specifiche. È possibile visualizzare queste autorizzazioni nella scheda "Descrizione" all'interno di ogni ruolo. In alternativa, è possibile visualizzare una versione più leggibile di tali risorse nell'interfaccia di amministrazione di Microsoft 365. Non è possibile modificare le definizioni dei ruoli incorporati. In generale, raggrupparli in tre categorie:
 
-- **Amministratore globale** -questo ruolo "tutto potente" deve essere [fortemente protetto](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) come si farebbe in altri sistemi. Tra le raccomandazioni tipiche: nessuna assegnazione permanente e utilizzo di Azure AD Privileged Identity Management (PIM); autenticazione complessa. ecc. È interessante notare che questo ruolo non consente di accedere a tutto per impostazione predefinita. In genere, viene visualizzato un equivoco sull'accesso alla conformità e l'accesso di Azure, descritti in seguito. Tuttavia, questo ruolo può sempre assegnare l'accesso ad altri servizi del tenant. 
+- **Amministratore globale** -questo ruolo "tutto potente" deve essere [fortemente protetto](https://docs.microsoft.com/microsoft-365/enterprise/protect-your-global-administrator-accounts) come si farebbe in altri sistemi. Tra le raccomandazioni tipiche: nessuna assegnazione permanente e utilizzo di Azure AD Privileged Identity Management (PIM); autenticazione complessa. ecc. È interessante notare che questo ruolo non consente di accedere a tutto per impostazione predefinita. In genere, viene visualizzato un equivoco sull'accesso alla conformità e l'accesso di Azure, descritti in seguito. Tuttavia, questo ruolo può sempre assegnare l'accesso ad altri servizi del tenant. 
 - **Amministratori** di servizi specifici: alcuni servizi (Exchange, SharePoint, Power bi e così via) consumano ruoli di amministrazione di alto livello da Azure ad. Questo non è coerente tra tutti i servizi e i ruoli specifici del servizio sono descritti in un secondo momento.
 - **Functional** : è presente un elenco di ruoli lungo (e in crescita) incentrato su operazioni specifiche (invitati, ecc.). Periodicamente, sono state aggiunte altre informazioni in base alle esigenze dei clienti.
 
@@ -248,8 +248,8 @@ Come indicato in precedenza, molti clienti stanno cercando di ottenere un modell
   + **Limiti**  -  di conformità [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
   + **Advanced eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
-- **Multi-Geo** - [https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin) 
-- **Dynamics 365** –[https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
+- **Multi-Geo** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin) 
+- **Dynamics 365** – [https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   Nota: questo collegamento si trova nella radice della documentazione. Sono disponibili più tipi di servizi con varianti del modello di amministrazione/delega.
 - **Piattaforma**  -  di alimentazione [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
   + **Applicazioni**  -  di alimentazione [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>

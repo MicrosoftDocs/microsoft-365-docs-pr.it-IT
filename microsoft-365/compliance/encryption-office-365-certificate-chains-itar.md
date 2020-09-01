@@ -1,5 +1,5 @@
 ---
-title: Catene di crittografia di Office 365-alto DOD e GCC
+title: Catene di crittografia di Office 365 - DOD e GCC High
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Visualizzare un elenco completo dei certificati e delle autorità di certificazione (CAs) di DOD e GCC High root in Office 365.
-ms.openlocfilehash: 615a62b2ae2a954580ebf82f4c1b70748c991a71
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 19f164669392372c99c562f55cfb05487d9f7ed2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951904"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308279"
 ---
-# <a name="office-365-encryption-chains---dod-and-gcc-high"></a>Catene di crittografia di Office 365-alto DOD e GCC
+# <a name="office-365-encryption-chains---dod-and-gcc-high"></a>Catene di crittografia di Office 365 - DOD e GCC High
 
-Office 365 utilizza una serie di provider di certificati diversi. Di seguito viene descritto l'elenco completo dei certificati radice noti di Office 365 che potrebbero verificarsi quando si accede **a** Office 365. Per informazioni sui certificati che potrebbe essere necessario installare nella propria infrastruttura, vedere [Plan for Third-Party SSL Certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates).
+Office 365 utilizza una serie di provider di certificati diversi. Di seguito viene descritto l'elenco completo dei certificati radice noti di Office 365 che potrebbero verificarsi quando si accede **a** Office 365. Per informazioni sui certificati che potrebbe essere necessario installare nella propria infrastruttura, vedere [Plan for Third-Party SSL Certificates for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates).
 
 Le informazioni relative al certificato seguenti si applicano a **tutti i clienti DOD e High GCC**.
 
@@ -119,7 +119,7 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrust-root-certification-authority"></a>**Autorità di certificazione radice di Entrust**
 
-| **Oggetto** | CN = autorità di certificazione radice di Entrust<br>OU = "(c) 2006 Entrust, Inc."<br>OU = www. Entrust. NET/CPS è incorporato per riferimento<br>OU = vedere www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = autorità di certificazione radice di Entrust<br>OU = "(c) 2006 Entrust, Inc."<br>OU = www. Entrust. NET/CPS è incorporato per riferimento<br>OU = vedere www.entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
 | **Numero di serie** | 45:6B: 50:54 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
@@ -133,7 +133,7 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Autorità di certificazione radice di Entrust-G2**
 
-| **Oggetto** | CN = autorità di certificazione radice di Entrust-G2<br>OU =&quot;(c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = autorità di certificazione radice di Entrust-G2<br>OU = &quot; (c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
 | **Numero di serie** | 4A: 53:8C: 28 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
@@ -147,7 +147,7 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **Oggetto** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS\_2048 incorp. per Rif (Limit s Liab)<br>O = Entrust. NET |
+| **Oggetto** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS \_ 2048 incorp. per Rif (Limit s Liab)<br>O = Entrust. NET |
 | --- | --- |
 | **Numero di serie** | 38:63: DE: F8 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
@@ -161,9 +161,9 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrust-certification-authority---l1c"></a>**Autorità di certificazione Entrust-L1C**
 
-| **Oggetto** | CN = autorità di certificazione Entrust-L1C<br>OU =&quot;(c) 2009 Entrust, Inc.&quot;<br>OU = www. Entrust. NET/RPA è incorporato per riferimento<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = autorità di certificazione Entrust-L1C<br>OU = &quot; (c) 2009 Entrust, Inc.&quot;<br>OU = www. Entrust. NET/RPA è incorporato per riferimento<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
-| **Autorità di certificazione** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS\_2048 incorp. per Rif (Limits Liab).<br>O = Entrust. NET |
+| **Autorità di certificazione** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS \_ 2048 incorp. per Rif (Limits Liab).<br>O = Entrust. NET |
 | **Numero di serie** | 4C: 0E: 8C: 39 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
@@ -179,9 +179,9 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrust-certification-authority---l1e"></a>**Autorità di certificazione Entrust-L1E**
 
-| **Oggetto** | CN = autorità di certificazione Entrust-L1E<br>OU =&quot;(c) 2009 Entrust, Inc.&quot;<br>OU = www. Entrust. NET/RPA è incorporato per riferimento<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = autorità di certificazione Entrust-L1E<br>OU = &quot; (c) 2009 Entrust, Inc.&quot;<br>OU = www. Entrust. NET/RPA è incorporato per riferimento<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
-| **Autorità di certificazione** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS\_2048 incorp. per Rif (Limits Liab).<br>O = Entrust. NET |
+| **Autorità di certificazione** | CN = autorità di certificazione Entrust. NET (2048)<br>OU = (c) 1999 Entrust.net Limited<br>OU = www. Entrust. NET/CPS \_ 2048 incorp. per Rif (Limits Liab).<br>O = Entrust. NET |
 | **Numero di serie** | 4C: 0E: C9:18 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
@@ -196,9 +196,9 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrust-certification-authority---l1k"></a>**Autorità di certificazione Entrust-L1K**
 
-| **Oggetto** | CN = autorità di certificazione Entrust-L1K<br>OU =&quot;(c) 2012 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = autorità di certificazione Entrust-L1K<br>OU = &quot; (c) 2012 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
-| **Autorità di certificazione** | CN = autorità di certificazione radice di Entrust-G2<br>OU =&quot;(c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Autorità di certificazione** | CN = autorità di certificazione radice di Entrust-G2<br>OU = &quot; (c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | **Numero di serie** | 0E: E9:4C: C3:00:00:00:00:51: D3:77:85 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
@@ -214,9 +214,9 @@ Espandere la radice e le sezioni intermedie per visualizzare ulteriori dettagli 
 
 ### <a name="entrust-certification-authority---l1m"></a>**Autorità di certificazione Entrust-L1M**
 
-| **Oggetto** | CN = Entrust Certification Authority-L1M, OU&quot;= (c) 2014 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Oggetto** | CN = Entrust Certification Authority-L1M, OU = &quot; (c) 2014 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | --- | --- |
-| **Autorità di certificazione** | CN = autorità di certificazione radice di Entrust-G2<br>OU =&quot;(c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O =&quot;Entrust, Inc.&quot;<br>C = Stati Uniti |
+| **Autorità di certificazione** | CN = autorità di certificazione radice di Entrust-G2<br>OU = &quot; (c) 2009 Entrust, Inc.-solo per uso autorizzato&quot;<br>OU = vedere www.entrust.net/legal-terms<br>O = &quot; Entrust, Inc.&quot;<br>C = Stati Uniti |
 | **Numero di serie** | 61: A1: E7: D2:00:00:00. H: 51: D3:66: A6 |
 | **Lunghezza della chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |

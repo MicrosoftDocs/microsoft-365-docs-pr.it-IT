@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5b466084701d2424aeaf9e7ee644d33861fdd5f3
+ms.sourcegitcommit: 87449335d9a1124ee82fa2e95e4745155a95a62f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656827"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47310887"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -255,7 +255,7 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     
     ![Scegliere la procedura guidata per l’applicazione automatica di etichette alla pagina delle posizioni  ](../media/locations-auto-labeling-wizard.png)
     
-    Per OneDrive, è necessario specificare i singoli account. L'URL di OneDrive di un utente ha il formato seguente: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    È necessario specificare singoli siti di SharePoint e account di OneDrive. Per OneDrive, l'URL dell'account di OneDrive di un utente ha il seguente formato: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
     Ad esempio, per un utente nel tenant Contoso con il nome utente "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
@@ -312,4 +312,44 @@ Per visualizzare i risultati del criterio di applicazione automatica di etichett
 
 > [!TIP]
 > È anche possibile usare Esplora contenuto per identificare le posizioni in cui sono presenti documenti con informazioni sensibili, ma senza etichetta. Usando queste informazioni, è possibile aggiungere queste posizioni ai criteri di applicazione automatica di etichette e includere come regole i tipi di informazioni sensibili identificati.
+
+### <a name="use-powershell-for-auto-labeling-policies"></a>Usare PowerShell per i criteri di applicazione automatica di etichette.
+
+Ora è possibile usare il [ Centro conformità e conformità di PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) per creare e configurare criteri di applicazione automatica di etichette. Questo significa che è ora possibile creare script per la creazione e la manutenzione dei criteri di applicazione automatica di etichette, che forniscono anche un metodo più efficiente per specificare multipli URL per OneDrive e percorsi di SharePoint.
+
+Per poter eseguire i comandi di PowerShell, è prima necessario [connettersi al Centro sicurezza e conformità di PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
+Per creare un nuovo criterio di applicazione automatica di etichette: 
+
+```powershell
+New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+Questo comando crea un criterio di applicazione automatica di etichette per un sito di SharePoint che viene specificato. Per una posizione di OneDrive, usare invece il parametro *OneDriveLocation*. 
+
+Per aggiungere altri siti a criteri di applicazione automatica di etichette esistenti:
+
+```powershell
+$spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
+Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+
+Questo comando specifica gli URL di SharePoint aggiuntivi in una variabile che viene quindi aggiunta a un criterio di applicazione automatica di etichette esistente. Per aggiungere percorsi di OneDrive, usare il parametro *AddOneDriveLocation* con una variabile diversa, ad esempio *$OneDriveLocations*.
+
+Per creare una nuova regola per i criteri di applicazione automatica di etichette:
+
+```powershell
+New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelingRuleName> -ContentContainsSensitiveInformation @{"name"= "a44669fe-0d48-453d-a9b1-2cc83f2cba77"; "mincount" = "2"} -Workload SharePoint
+```
+
+Per i criteri di applicazione automatica di etichette esistenti, questo comando crea una nuova regola per i criteri per rilevare informazioni riservate, del tipo **Numero di previdenza sociale (SSN, Stati Uniti)**, che ha un ID entità di a44669fe-0d48-453d-a9b1-2cc83f2cba77. Per trovare gli ID entità per altri tipi di informazioni sensibili, vedere [Definizioni delle entità tipo di informazioni sensibili](sensitive-information-type-entity-definitions.md).
+
+Per altre informazioni sui cmdlet di PowerShell che supportano i criteri di applicazione automatica di etichette, sui parametri disponibili e su alcuni esempi, vedere la guida ai cmdlet seguente:
+
+- [Get-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/get-autosensitivitylabelpolicy)
+- [New-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelpolicy?view=exchange-ps)
+- [New-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelrule?view=exchange-ps)
+- [Remove-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelpolicy?view=exchange-ps)
+- [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule?view=exchange-ps)
+- [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy?view=exchange-ps)
+- [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule?view=exchange-ps)
 

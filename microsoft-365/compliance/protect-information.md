@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implementare le funzionalità di Microsoft Information Protection (MIP) utilizzando la conformità di Microsoft 365 per individuare, classificare e proteggere le informazioni riservate ovunque si trovino o si trovino in viaggio.
-ms.openlocfilehash: 96082bc70b093e763be00c847bb6a68ce302c8a9
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: ac4499fceae1e4f754753cf91beaf106d855c517
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815204"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308347"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -41,7 +41,7 @@ Per comprendere il paesaggio dei dati e identificare i dati importanti nell'ambi
 |Funzionalità|Quali sono i problemi risolti?|Per iniziare|
 |:------|:------------|:--------------------|:-----------------------------|
 |[Tipi di informazioni riservate](sensitive-information-type-entity-definitions.md)| Identifica i dati sensibili mediante l'utilizzo di espressioni regolari predefinite o personalizzate o di una funzione, insieme a elementi probatori che includono parole chiave, livelli di sicurezza e prossimità.| [Personalizzare una tipologia integrata di informazioni sensibili](customize-a-built-in-sensitive-information-type.md)|
-|[Classificatori addestrabili (anteprima)](classifier-getting-started-with.md)| Consente di classificare i dati per l'utente utilizzando uno dei classificatori incorporati o di formare un classier con il proprio contenuto. | [Creare un classificatore addestrabile (anteprima)](classifier-creating-a-trainable-classifier.md) |
+|[Classificatori addestrabili (anteprima)](classifier-getting-started-with.md)| Consente di classificare i dati per l'utente utilizzando uno dei classificatori incorporati o di formare un classificatore con il proprio contenuto. | [Creare un classificatore addestrabile (anteprima)](classifier-creating-a-trainable-classifier.md) |
 |[Classificazione dei dati](data-classification-overview.md) | Identifica gli elementi che dispongono di un'etichetta di riservatezza, di un'etichetta di conservazione o che sono stati classificati come un tipo di informazioni riservate nell'organizzazione e le azioni che gli utenti stanno assumendo.  | [Introduzione a Esplora contenuto](data-classification-content-explorer.md)<br /><br /> [Introduzione a Esplora attività](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>Proteggere i propri dati

@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Gestisci questi ruoli di amministratore di Azure nell’interfaccia di amministrazione di Microsoft 365
-ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898029"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289094"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Ruoli di Azure Active Directory nell'interfaccia di amministrazione di Microsoft 365
 
@@ -62,6 +62,8 @@ Ecco un elenco dei ruoli di amministratore disponibili nell'interfaccia di ammin
 |Amministratore gruppi   |Crea gruppi e gestisce tutte le impostazioni dei gruppi nelle interfacce di amministrazione.|
 |Mittente dell'invito guest     |    Gestisce gli inviti degli utenti guest di Azure Active Directory B2B.     |
 |Amministratore di supporto tecnico     | Reimposta le password e le riautenticazioni per tutti gli utenti non amministratori e alcuni ruoli di amministratore, gestisce le richieste di servizio e monitora l'integrità dei servizi.      |
+|Amministratore Insights     | Gestisce tutti gli aspetti di Microsoft 365 Insights, ossia legge le informazioni di Azure Active Directory, può monitorare l'integrità dei servizi e creare e gestire le richieste di servizio.      |
+|Amministratore business Insights     | Leggere report e approfondimenti nell'applicazione Microsoft 365 Insights.      |
 |Amministratore di Intune     | Ha accesso completo a Intune, gestisce utenti e dispositivi per l'associazione di criteri, crea e gestisce gruppi.      |
 |Amministratore di Kaizala     |    Ha accesso completo a tutte le funzionalità e ai dati di gestione di Kaizala, gestisce le richieste di servizio.     |
 |Amministratore licenze     |     Assegna e rimuove le licenze degli utenti e modifica la relativa posizione di utilizzo.    |

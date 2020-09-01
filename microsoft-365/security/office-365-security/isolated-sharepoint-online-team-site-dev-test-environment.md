@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "Riepilogo: configurare un sito del team di SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo e di testing di Microsoft 365."
-ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 095b0e5098d86f69c21576e72439dde48a092db3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588029"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308404"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test
 
@@ -65,7 +65,7 @@ Se si desidera creare un sito del team di SharePoint Online isolato in una confi
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Fase 2: creare account utente e gruppi di accesso
 
-Utilizzare le istruzioni riportate in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) per connettersi alla sottoscrizione di valutazione con l'account di amministratore globale da:
+Utilizzare le istruzioni riportate in [Connect to Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell) per connettersi alla sottoscrizione di valutazione con l'account di amministratore globale da:
 
 - Il computer (per l'ambiente di sviluppo/test di Microsoft 365 Lightweight).
 
@@ -234,11 +234,11 @@ Ora dimostreremo l'accesso utilizzando l'account utente lead designer:
 
 11. Nella nuova scheda **ProjectX-Documents** del browser fare clic su **nuovo > documento di Word**.
 
-12. Digitare del testo nella pagina, attendere che lo stato indichi **salvato**, fare clic sul pulsante indietro nel browser e quindi aggiornare la pagina. Verrà visualizzato un nuovo **documento. docx** nella cartella **documenti** .
+12. Digitare del testo nella pagina, attendere che lo stato indichi **salvato**, fare clic sul pulsante indietro nel browser e quindi aggiornare la pagina. Nella cartella **documenti** dovrebbe essere visualizzato un nuovo **Document.docx** .
 
-13. Fare clic sui puntini di sospensione per il documento **Document. docx** e quindi fare clic su **Ottieni un collegamento**.
+13. Fare clic sui puntini di sospensione per il documento **Document.docx** e quindi fare clic su **Ottieni un collegamento**.
 
-14. Copiare l'URL nella finestra di dialogo **Condividi ' Document. docx '** e incollarlo su una nuova riga nel blocco note o nell'editor di testo, quindi chiudere la finestra di dialogo **Condividi documento. docx** .
+14. Copiare l'URL nella finestra di dialogo **Condividi ' Document.docx'** e incollarlo su una nuova riga nel blocco note o nell'editor di testo, quindi chiudere la finestra di dialogo **Condividi ' Document.docx'** .
 
 15. Chiudere le schede **ProjectX-Documents** e **SharePoint** nel browser, quindi fare clic sulla scheda **Microsoft Office Home** .
 
@@ -252,11 +252,11 @@ Ora dimostreremo l'accesso utilizzando l'account utente Development VP:
 
 3. Nella nuova scheda **SharePoint** del browser, digitare **ProjectX** nella casella di ricerca, attivare la ricerca e quindi fare clic sul sito del team di **ProjectX** . Verrà visualizzata una nuova scheda del browser per il sito del team di ProjectX.
 
-4. Fare clic su **documenti**e quindi su file **. docx documento** .
+4. Fare clic su **documenti**e quindi fare clic sul file **Document.docx** .
 
-5. Nella scheda **Document. docx** del browser, provare a modificare il testo. Verrà visualizzato un messaggio che indica che **il documento è di sola lettura.** Questo è previsto perché l'account utente Development VP dispone solo delle autorizzazioni di visualizzazione per il sito.
+5. Nella scheda **Document.docx** del browser, provare a modificare il testo. Verrà visualizzato un messaggio che indica che **il documento è di sola lettura.** Questo è previsto perché l'account utente Development VP dispone solo delle autorizzazioni di visualizzazione per il sito.
 
-6. Chiudere le schede **Document. docx**, **ProjectX-Documents**e **SharePoint** nel browser.
+6. Chiudere le schede **Document.docx**, **ProjectX-Documents**e **SharePoint** nel browser.
 
 7. Fare clic sulla scheda **Microsoft Office Home** , **fare clic sul**nome **dello sviluppo VP** e quindi fare clic su Esci.
 
@@ -272,7 +272,7 @@ Ora dimostreremo l'accesso con un account utente che non dispone di autorizzazio
 
 5. Dal blocco note o dall'editor di testo, copiare l'URL della cartella documenti di ProjectX nella barra degli indirizzi del browser e premere **invio**. Verrà visualizzata una pagina di **accesso negato** .
 
-6. Dal blocco note o dall'editor di testo, copiare l'URL del file Documents. docx nella barra degli indirizzi del browser e premere **invio**. Verrà visualizzata una pagina di **accesso negato** .
+6. Dal blocco note o dall'editor di testo, copiare l'URL del file Documents.docx nella barra degli indirizzi del browser e premere **invio**. Verrà visualizzata una pagina di **accesso negato** .
 
 7. Chiudere la scheda **SharePoint** nel browser, fare clic sulla scheda **Microsoft Office Home** , fare clic sul nome dell' **utente 3** e quindi fare **clic su Esci.**
 
@@ -286,7 +286,7 @@ Quando si è pronti a distribuire un sito del team di SharePoint Online isolato 
 
 [Siti del team di SharePoint Online isolati](isolated-sharepoint-online-team-sites.md)
 
-[Guida al lab test (TLG) per adozione del cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Test Lab Guide (TLG) per l’adozione del cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [La configurazione di base per l'organizzazione simulata](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
