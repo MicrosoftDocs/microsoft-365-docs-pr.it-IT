@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare e pubblicare automaticamente etichette di conservazione in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 7528fed52ae3df1a60303c40df35a42de6bc1f31
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648805"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315817"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -38,8 +38,8 @@ Le etichette di conservazione applicate automaticamente sono potenti perché:
     
 - Gli utenti non hanno più bisogno di conoscere i criteri di governance dai dati e possono concentrarsi sul loro lavoro.
     
-È possibile applicare automaticamente etichette di conservazione al contenuto quando questo include informazioni sensibili, parole chiave o una corrispondenza per [classificatori sottoponibili a training](classifier-getting-started-with.md).
-    
+È possibile applicare automaticamente etichette di conservazione al contenuto quando questo include informazioni sensibili, parole chiave, proprietà disponibili per la ricerca o una corrispondenza per [classificatori sottoponibili a training](classifier-getting-started-with.md).
+
 I processi per l'applicazione automatica di un'etichetta di conservazione si basano sulle condizioni seguenti:
 
 ![Diagramma di ruoli e attività per le etichette applicate automaticamente](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
@@ -113,7 +113,7 @@ Per modificare un criterio di etichetta applicata automaticamente, selezionarlo 
 
 - [Tipi specifici di informazioni riservate.](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 
-- [Parole chiave specifiche che corrispondono a una query creata.](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [Parole chiave specifiche o proprietà disponibili per la ricerca che corrispondono a una query creata.](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 - [Una corrispondenza per classificatori sottoponibili a training](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
@@ -135,30 +135,28 @@ Per altre informazioni su queste opzioni, vedere [Tuning rules to make them easi
   
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Applicare automaticamente etichette al contenuto con parole chiave o con proprietà disponibili per le ricerche
 
-È possibile applicare automaticamente etichette al contenuto che soddisfa determinate condizioni. Le condizioni disponibili ora supportano l'applicazione di un'etichetta al contenuto che include parole, frasi, valori o proprietà disponibili per le ricerche specifiche. È possibile perfezionare la query usando operatori di ricerca come AND, OR e NOT.
+È possibile applicare automaticamente etichette al contenuto usando una query che include parole, frasi, valori o proprietà disponibili per le ricerche specifiche. È possibile perfezionare la query usando operatori di ricerca come AND, OR e NOT.
 
-Durante l'applicazione automatica delle etichette per le proprietà ricercabili, nella query non è possibile usare un alias per una proprietà gestita. Deve essere il nome effettivo della proprietà gestita, ad esempio RefinableString01.
+![Editor di query](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
-Per altre informazioni sulla sintassi della query, vedere:
+Per altre informazioni sulla sintassi della query che usa Keyword Query Language (KQL), vedere [Riferimenti alla sintassi KQL (Keyword Query Language)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-- [Riferimenti per la sintassi di Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
-
-Le etichette basate su query usano l’indice di ricerca per identificare il contenuto. Per altre informazioni sulle proprietà disponibili per la ricerca valide, vedere:
+Le etichette basate su query usano l'indice di ricerca per identificare il contenuto. Per ulteriori informazioni sulle proprietà disponibili per la ricerca, vedere:
 
 - [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
 - [Panoramica delle proprietà gestite e sottoposte a ricerca per indicizzazione in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
+> [!NOTE]
+> Sebbene le proprietà gestite da SharePoint supportino gli alias, non devono essere usate quando si configurano le etichette di conservazione. Specificare sempre il nome effettivo della proprietà gestita, ad esempio RefinableString01.
+
 Esempi di query:
 
-- Exchange
-    - subject:"Quarterly Financials"
-    - recipients:garthf<!--nolink-->@contoso.com
-- SharePoint e OneDrive
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
-
-![Editor di query](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-
+| Carico di lavoro | Esempio |
+|:-----|:-----|
+|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `recipients:garthf@contoso.com` |
+|SharePoint | `contenttype:contract` |
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Etichette applicate automaticamente al contenuto con classificatori sottoponibili a training
 

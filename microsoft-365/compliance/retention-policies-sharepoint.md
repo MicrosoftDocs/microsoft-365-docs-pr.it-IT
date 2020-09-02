@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: f19f452a01c093d08dbeed38a34756dcaf7a4e95
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127403"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315789"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -71,7 +71,7 @@ Quando l'impostazione di conservazione è Conserva solo o Elimina solo, i percor
 
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Funzionamento della conservazione con le versioni del documento in una raccolta siti
 
-Il controllo delle versioni è una caratteristica di tutte le raccolte documenti di SharePoint e OneDrive. Per impostazione predefinita, il controllo delle versioni conserva almeno 500 versioni principali, limite che è possibile aumentare. Per altre informazioni, vedere [Abilitare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
+Il controllo delle versioni è una caratteristica di tutte le raccolte documenti di SharePoint e OneDrive. Per impostazione predefinita, il controllo delle versioni conserva almeno 500 versioni principali, limite che è possibile aumentare. Per ulteriori informazioni, vedere [Abilitare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) e [Come funziona il controllo delle versioni negli elenchi e nelle raccolte](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
 Le impostazioni di sola conservazione mantengono tutte le versioni di un documento in una raccolta siti di SharePoint o in un account OneDrive. Quando si modifica per la prima volta un documento soggetto a impostazioni di blocco o di sola conservazione, una versione dell'originale viene copiata nella raccolta di archiviazione. Quando si elimina un documento soggetto a impostazioni di blocco o di sola conservazione, vengono copiate tutte le versioni nella raccolta di archiviazione, se è attivato il controllo delle versioni. Ogni versione di un documento nella raccolta di conservazione è un elemento separato con un periodo di conservazione specifico:
   
@@ -82,7 +82,11 @@ Le impostazioni di sola conservazione mantengono tutte le versioni di un documen
 > [!NOTE]
 > Le versioni conservate dei documenti di SharePoint e OneDrive non sono disponibili per la ricerca da parte degli strumenti di eDiscovery.
 
-## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l'organizzazione
+Se gli elementi sono soggetti a criteri di conservazione (o a un fermo legale), i limiti di controllo delle versioni per la raccolta documenti vengono ignorati finché non viene raggiunto il periodo di conservazione del documento. In questo scenario, le versioni precedenti non vengono eliminate automaticamente e non è possibile eliminarle.
+
+Questo non è il caso delle etichette di conservazione quando un criterio di conservazione non è applicato al sito. I limiti di controllo delle versioni sono rispettati in modo che le versioni più vecchie vengano automaticamente cancellate per accogliere le nuove versioni, ma agli utenti viene ancora impedito di cancellare le versioni.
+
+## <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l’organizzazione
 
 **SharePoint**:
 
