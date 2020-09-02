@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 648be8ca5d3c7aae93ed868972bc59b32ba87987
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 110cefa646f7c42c6979a97ca617b015a100866e
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560716"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324537"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurare le opzioni di rilascio standard o di destinazione
 
@@ -39,13 +39,10 @@ ms.locfileid: "46560716"
 ::: moniker-end
 
 > [!IMPORTANT]
-> Gli aggiornamenti di Microsoft 365 descritti in questo articolo si applicano a Microsoft 365, SharePoint Online ed Exchange Online. Queste opzioni di rilascio sono mirate, le migliori modalità per rilasciare le modifiche a Microsoft 365 ma non possono essere garantite in qualsiasi momento o per tutti gli aggiornamenti. Non si applicano a Skype for business, a Microsoft teams e ai servizi correlati.
+> Gli aggiornamenti di Microsoft 365 descritti in questo articolo si applicano a Microsoft 365, SharePoint Online ed Exchange Online. Queste opzioni di rilascio sono mirate, le migliori modalità per rilasciare le modifiche a Microsoft 365 ma non possono essere garantite in qualsiasi momento o per tutti gli aggiornamenti. Non si applicano a Microsoft 365 Apps, Skype for business, Microsoft teams e servizi correlati. Per informazioni sulle opzioni di rilascio per le app di Microsoft 365, vedere [Overview of Update channels for microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 Con Microsoft 365, vengono visualizzati nuovi aggiornamenti e funzionalità del prodotto quando diventano disponibili invece di effettuare aggiornamenti costosi ogni pochi anni. È possibile gestire la modalità di ricezione degli aggiornamenti da parte dell'organizzazione. Ad esempio, è possibile iscriversi per una versione anticipata in modo che l'organizzazione riceva prima gli aggiornamenti. È possibile indicare che solo alcuni utenti ricevono gli aggiornamenti. In alternativa, è possibile rimanere nella pianificazione di rilascio predefinita e ricevere gli aggiornamenti in un secondo momento. In questo articolo vengono illustrate le diverse opzioni di rilascio e come è possibile utilizzarle per l'organizzazione.
 
-> [!NOTE]
-> Per informazioni sui canali di aggiornamento per le applicazioni, vedere [Overview of Update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels). 
-  
 ## <a name="how-it-works---release-validation"></a>Funzionamento - Convalida dei rilasci
 
 Tutte le nuove versioni sono state testate e convalidate dal team di funzionalità, quindi da tutto il team Microsoft 365 feature, seguito da tutti Microsoft. Dopo il test e la convalida interni, il passaggio successivo è il rilascio **Targeted Release** (precedentemente noto come First Release) per i clienti che hanno acconsentito esplicitamente. A ogni anello di rilascio, Microsoft raccoglie feedback dagli utenti e convalida ulteriormente la qualità monitorando le metriche di utilizzo principali. Questa serie di convalide progressive viene applicata per garantire che la versione risulti quanto più stabile possibile in tutto il mondo. I rilasci sono illustrati nella figura seguente. 

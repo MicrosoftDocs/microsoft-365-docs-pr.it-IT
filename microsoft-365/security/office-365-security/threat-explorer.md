@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Informazioni sull'utilizzo di Esplora risorse e sui rilevamenti in tempo reale nel centro sicurezza e &amp; conformità per esaminare e rispondere alle minacce in modo efficace ed efficiente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: 4220c850e5ef7f830f7fc6ec57bb220cca29eaf4
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641642"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47322026"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -78,8 +78,39 @@ Sarà ora possibile fare clic sui valori della legenda del grafico per aggiunger
 
 ![Visualizzare le informazioni sul prodotto](../../media/ProductInfo.png)
 
+## <a name="extended-capabilities-in-threat-explorer"></a>Funzionalità estese in Esplora minacce
 
-## <a name="new-features-in-real-time-detections"></a>Nuove funzionalità nei rilevamenti in tempo reale
+### <a name="top-targeted-users"></a>Utenti di destinazione principali
+
+Oggi viene esposto l'elenco degli utenti di destinazione principali nella visualizzazione malware per i messaggi di posta elettronica (all'interno della sezione principali famiglie di malware). Si estenderà questa visualizzazione all'interno di phishing e tutte le visualizzazioni di posta elettronica, in cui sarà possibile visualizzare i primi cinque utenti mirati insieme al numero di tentativi per ogni utente per la visualizzazione corrispondente (ad esempio, per la visualizzazione di phishing, sarà possibile visualizzare il numero di tentativi di phishing).
+È inoltre possibile esportare l'elenco di utenti di destinazione fino a un massimo di 3000, oltre al numero di tentativi di analisi offline per ogni visualizzazione di posta elettronica. Oltre a questo, selezionando No. di tentativi (ad esempio, 13 tentativi di seguito) aprirebbe una visualizzazione filtrata in Esplora minacce, in modo da poter guardare maggiori dettagli tra i messaggi di posta elettronica e le minacce per tale utente. 
+
+![Utenti di destinazione principali](../../media/Top_Targeted_Users.png)
+
+
+### <a name="exchange-transport-rules"></a>Regole di trasporto di Exchange
+Nell'ambito dell'arricchimento dei dati, è inoltre necessario essere in grado di visualizzare tutte le diverse regole di trasporto applicate a un messaggio. Queste informazioni saranno presenti all'interno della visualizzazione griglia di posta elettronica (per visualizzare questa opzione, selezionare le opzioni di colonna nella griglia e aggiungere la regola di trasporto di Exchange dalle opzioni di colonna nella griglia), nonché il riquadro a comparsa dettagli nel messaggio di posta elettronica.
+È possibile visualizzare sia il GUID che il nome delle regole di trasporto che sono state applicate al messaggio. Inoltre, è possibile cercare i messaggi utilizzando il nome della regola di trasporto. Si tratta di una ricerca "contiene" che indica che è possibile effettuare ricerche anche utilizzando ricerche parziali. 
+
+#### <a name="important-note"></a>Nota importante: 
+La disponibilità del nome e della ricerca di ETR dipenderà dal ruolo specifico che è stato assegnato all'utente. Per visualizzare i nomi e la ricerca di ETR, è necessario disporre di uno dei ruoli e delle autorizzazioni seguenti.  Se non si dispone di uno dei ruoli seguenti assegnati all'utente, non sarà possibile visualizzare i nomi delle regole di trasporto e cercare i messaggi utilizzando i nomi di ETR. Tuttavia, sarà possibile visualizzare l'etichetta di ETR e le informazioni sui GUID all'interno dei dettagli di posta elettronica. Le altre esperienze che riguardano la visualizzazione dei record nelle griglie di posta elettronica, l'comparsa della posta elettronica, i filtri e l'esportazione non sono interessati. 
+ 
+- EXO only-prevenzione della perdita di dati: All
+- Solo EXO-O365SupportViewConfig: All
+- AAD o EXO-Security admin: All
+- AAD o EXO-Security Reader: tutti i
+- Solo EXO-regole di trasporto: tutte
+- Solo EXO-configurazione solo visualizzazione: tutti
+
+All'interno della griglia di posta elettronica, del riquadro a comparsa dei dettagli e del CSV esportato, il ETRs viene presentato con un nome/GUID come illustrato di seguito. 
+
+![Regole di trasporto di Exchange](../../media/ETR_Details.png)
+
+### <a name="inbound-connectors"></a>Connettori in ingresso 
+
+I connettori sono una raccolta di istruzioni che personalizzano la modalità di flusso della posta elettronica da e verso l'organizzazione Microsoft 365 o Office 365, con la possibilità di applicare eventuali restrizioni o controlli di sicurezza. In Esplora minacce è ora possibile visualizzare i connettori correlati a un messaggio di posta elettronica e cercare i messaggi di posta elettronica utilizzando i nomi dei connettori. La ricerca dei connettori è "contiene" in natura, il che significa che le ricerche di parole chiave parziali dovrebbero funzionare anche. All'interno della visualizzazione griglia principale, del riquadro a comparsa dei dettagli e del CSV esportato, i connettori vengono visualizzati nel formato nome/GUID, come illustrato di seguito: 
+
+![Dettagli del connettore](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nuove funzionalità in Esplora minacce e rilevamenti in tempo reale
 
@@ -294,4 +325,3 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 - Altre funzionalità di filtro e le azioni disponibili sono incluse in **Esplora minacce**.
 
 Per ulteriori informazioni, vedere [Descrizione del servizio ATP di Office 365: disponibilità delle funzionalità tra i piani di Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-

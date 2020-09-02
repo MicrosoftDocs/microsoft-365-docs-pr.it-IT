@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Informazioni su come aggiornare gli indirizzi di fatturazione per Microsoft 365 for business. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
-ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 5e6fc2bad63c445f516ba3cd473bd40c7bfcb2e3
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817030"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324353"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiare gli indirizzi di fatturazione
 
@@ -49,7 +49,7 @@ La fattura o la fattura contiene tre indirizzi:
 
 - **Indirizzo di utilizzo del servizio** L'indirizzo in cui viene usato li servizio. In genere corrisponde all'indirizzo indicato in **Venduto a**. Se l'organizzazione ha utenti remoti o più uffici, usare l'indirizzo in cui si trova la maggioranza degli utenti.
 
-Nella maggior parte dei casi questi indirizzi coincidono. Se occorre cambiare uno o più indirizzi, è possibile farlo. Si può anche specificare un indirizzo di posta elettronica alternativo a cui ricevere le notifiche sulla fatturazione e cambiare l'indirizzo di posta elettronica alternativo per altri amministratori.
+Nella maggior parte dei casi questi indirizzi coincidono. Se occorre cambiare uno o più indirizzi, è possibile farlo. È inoltre possibile fornire un indirizzo di posta elettronica alternativo per ricevere le notifiche di fatturazione e cambiare l'indirizzo di posta elettronica alternativo per altri amministratori.
   
 ::: moniker range="o365-worldwide"
 
@@ -68,7 +68,6 @@ Per ulteriori informazioni sulla bolletta o sulla fattura, vedere [View your Bil
 Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get Fapiaos for Office 365 gestito da 21ViaNet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
-
 
 ## <a name="change-your-sold-to-address"></a>Cambiare l'indirizzo Venduto a
 
@@ -131,10 +130,9 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-
-2. Individuare l'abbonamento che si desidera modificare. Nella sezione **impostazioni & azioni** selezionare **modifica indirizzo di utilizzo del servizio**.
-
-3. Nel riquadro **modifica indirizzo di utilizzo del servizio** , aggiornare l'indirizzo e quindi fare clic su **Salva**.
+2. Nella scheda **prodotti** selezionare l'abbonamento che si desidera modificare.
+3. Nella sezione **indirizzo di utilizzo del servizio** della pagina Dettagli sottoscrizione selezionare **modifica indirizzo di utilizzo del servizio**.
+4. Nel riquadro **modifica indirizzo di utilizzo del servizio** aggiornare l'indirizzo e quindi fare clic su **Salva**.
 
 ::: moniker-end
 
@@ -166,7 +164,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 Per impostazione predefinita, le notifiche di fatturazione dell'organizzazione vengono inviate all'indirizzo di posta elettronica Microsoft e all'indirizzo di posta elettronica alternativo di ogni amministratore globale e di fatturazione dell'organizzazione. Ogni amministratore può cambiare l'indirizzo alternativo aggiornando le informazioni del suo profilo.
   
-1. Accedere a Microsoft 365 con l'account aziendale o dell'Istituto di istruzione come amministratore globale. [Informazioni su come effettuare l'accesso](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere a Microsoft 365 con l'account aziendale o dell'Istituto di istruzione come amministratore globale. [informazioni su come effettuare l'accesso](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Selezionare l' **icona dell'utente**e quindi selezionare l' **account personale**.
   

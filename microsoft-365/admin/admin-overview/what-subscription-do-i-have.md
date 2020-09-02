@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
-description: Informazioni su come verificare gli abbonamenti che l'organizzazione deve passare alla pagina abbonamenti.
-ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Informazioni su come verificare gli abbonamenti che l'organizzazione deve passare alla pagina dei prodotti.
+ms.openlocfilehash: bd7b7726c93ee6c5022df7ca72342d8d3b7a1c09
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780506"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324549"
 ---
 # <a name="what-subscription-do-i-have"></a>Qual è l'abbonamento corrente?
 
@@ -40,8 +37,9 @@ Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organ
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-
-2. Gli abbonamenti vengono visualizzati nella pagina dei **prodotti** , insieme al nome della sottoscrizione, alle informazioni sull'abbonamento e al relativo stato. Per visualizzare una visualizzazione ridotta, selezionare **visualizzazione tabella**.
+2. Nella scheda **prodotti** vengono visualizzate tutte le sottoscrizioni. Ogni riga di sottoscrizione include informazioni sulle licenze, lo stato della sottoscrizione e la fatturazione.
+3. Se si desidera modificare le colonne visualizzate nell'elenco, selezionare **Choose columns**. Modificare la selezione delle colonne e quindi fare clic su **Salva**.
+4. Per visualizzare ulteriori dettagli per una singola sottoscrizione, selezionare tale sottoscrizione.
 
 ::: moniker-end
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,21 +20,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEU150
-- GEA150
-- GSP150
-ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Informazioni su come aggiungere e ridurre l'archiviazione dei file nell'abbonamento a Microsoft 365. Con un'ulteriore archiviazione dei file, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
-ms.openlocfilehash: d0580113449ae91e7be02a13993562d6b91a7d19
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.date: ''
+ms.openlocfilehash: 7f9973054bfe97beae36e28b73a3eb2025a13e73
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387422"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324469"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
@@ -50,19 +44,28 @@ Se lo spazio di archiviazione per le raccolte di siti di SharePoint Online sta p
 > [!NOTE]
 > Se l'abbonamento è stato acquistato tramite contratti multilicenza o CSP, non è possibile acquistare **Office 365 extra file storage** for Your Organization direttamente da Microsoft. Contattare il rappresentante o il partner per assistenza.
 
+## <a name="before-you-begin"></a>Prima di iniziare
+
+Per eseguire le attività descritte in questo articolo, è necessario essere un amministratore globale o di SharePoint. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../admin/add-users/about-admin-roles.md).
+
 ## <a name="view-available-storage"></a>Visualizzazione dello spazio di archiviazione disponibile
 
 ::: moniker range="o365-worldwide"
 
-1. Passare alla [pagina Siti attivi della nuova interfaccia di amministrazione di SharePoint](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true) e accedere con un account dotato di [autorizzazioni di amministratore](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) per l'organizzazione.
+1. Nell'interfaccia di amministrazione di SharePoint, andare alla pagina <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">siti attivi</a> e accedere con un account che disponga [delle autorizzazioni di amministratore](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) per l'organizzazione.
 
-2. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione utilizzata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento. Se nell'organizzazione è stata configurata la multi-Geo in Office 365, la barra Visualizza anche la quantità di spazio di archiviazione utilizzata in tutte le posizioni geografiche. 
+2. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione utilizzata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento. Se nell'organizzazione è stata configurata la multi-Geo in Office 365, la barra Visualizza anche la quantità di spazio di archiviazione utilizzata in tutte le posizioni geografiche.
+
+   ![Barra di archiviazione nella pagina siti attivi](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+
+   > [!NOTE]
+   > Lo spazio di archiviazione utilizzato non include le modifiche apportate nelle ultime 24-48 ore.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Accedere https://portal.office.de come amministratore globale o di SharePoint e quindi selezionare il riquadro amministratore per aprire l'interfaccia di amministrazione. Se viene visualizzato un messaggio in cui non si dispone dell'autorizzazione per accedere alla pagina, non si dispone delle autorizzazioni di amministratore Microsoft 365 nell'organizzazione.
+1. Accedere https://portal.office.de come amministratore globale o di SharePoint e quindi selezionare il riquadro amministratore per aprire l'interfaccia di amministrazione. Se viene visualizzato un messaggio che non dispone dell'autorizzazione per accedere alla pagina, significa che non si dispone delle autorizzazioni di amministratore Microsoft 365 nell'organizzazione.
 
 2. Nel riquadro sinistro, in interfaccia di **Amministrazione**, selezionare **SharePoint**. Se viene visualizzata l'interfaccia di amministrazione di SharePoint classica, selezionare **Apri ora** nella parte superiore della pagina per aprire la nuova interfaccia di amministrazione di SharePoint.
 
@@ -70,11 +73,16 @@ Se lo spazio di archiviazione per le raccolte di siti di SharePoint Online sta p
 
 4. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione utilizzata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento.
 
+   ![Barra di archiviazione nella pagina siti attivi](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+
+   > [!NOTE]
+   > Lo spazio di archiviazione utilizzato non include le modifiche apportate nelle ultime 24-48 ore.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Accedere https://login.partner.microsoftonline.cn/ come amministratore globale o di SharePoint e quindi selezionare il riquadro amministratore per aprire l'interfaccia di amministrazione. Se viene visualizzato un messaggio in cui non si dispone dell'autorizzazione per accedere alla pagina, non si dispone delle autorizzazioni di amministratore Microsoft 365 nell'organizzazione.
+1. Accedere https://login.partner.microsoftonline.cn/ come amministratore globale o di SharePoint e quindi selezionare il riquadro amministratore per aprire l'interfaccia di amministrazione. Se viene visualizzato un messaggio che non dispone dell'autorizzazione per accedere alla pagina, significa che non si dispone delle autorizzazioni di amministratore Microsoft 365 nell'organizzazione.
 
 2. Nel riquadro sinistro, in interfaccia di **Amministrazione**, selezionare **SharePoint**. Se viene visualizzata l'interfaccia di amministrazione di SharePoint classica, selezionare **Apri ora** nella parte superiore della pagina per aprire la nuova interfaccia di amministrazione di SharePoint.
 
@@ -82,12 +90,12 @@ Se lo spazio di archiviazione per le raccolte di siti di SharePoint Online sta p
 
 4. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione utilizzata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento.  
 
+   ![Barra di archiviazione nella pagina siti attivi](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+
+   > [!NOTE]
+   > Lo spazio di archiviazione utilizzato non include le modifiche apportate nelle ultime 24-48 ore.
+
 ::: moniker-end
-
-![Barra di archiviazione nella pagina siti attivi](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
-
-> [!NOTE]
-> Lo spazio di archiviazione utilizzato non include le modifiche apportate nelle ultime 24-48 ore.
 
 Dopo aver identificato la quantità di spazio di archiviazione in uso, è possibile aggiungerne altro o rimuoverlo dall'abbonamento. Per sapere quanto costerà aggiungere spazio di archiviazione, seguire i passaggi descritti in questo articolo ed esaminare le informazioni sui prezzi prima di acquistare.
   
@@ -100,17 +108,11 @@ Se non è stato ancora acquistato un ulteriore spazio di archiviazione per l'abb
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione, andare alla **Billing** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
-
 2. Nella parte inferiore della pagina **acquisto servizi** selezionare **componenti**aggiuntivi.
-
 3. Selezionare **Office 365 extra file storage**.
-
 4. Nella pagina **Office 365 extra file storage** , se visualizzata, scegliere la sottoscrizione di base e quindi immettere il numero di gigabyte di spazio di archiviazione che si desidera aggiungere.
-
 5. Selezionare **Estrai ora**.
-
 6. In **questa** pagina, verificare il numero di gigabyte di spazio di archiviazione selezionato, esaminare le informazioni sui prezzi e quindi fare clic su **Avanti**.
-
 7. Nella pagina **ordine completo** verificare il totale. Se è necessario apportare modifiche, selezionare **modifica ordine**. Se l'ordine richiede una verifica del credito, selezionare la casella di controllo. Al termine, selezionare **Ordina per** \> **accedere a Home page di amministrazione**.
 
 ::: moniker-end
@@ -167,17 +169,16 @@ Se non è stato ancora acquistato un ulteriore spazio di archiviazione per l'abb
 
 ## <a name="increase-or-decrease-storage"></a>Aumentare o diminuire lo spazio di archiviazione
 
-Se si è già acquistato un file di archiviazione supplementare tramite il componente aggiuntivo di **archiviazione file aggiuntivo di Office 365** , è possibile utilizzare questi passaggi per aumentare o diminuire lo spazio di archiviazione aggiuntivo per l'abbonamento. È possibile ridurre lo spazio di archiviazione a un minimo di 1 gigabyte. Per rimuovere tutto lo spazio di archiviazione aggiuntivo, è necessario [contattare il supporto tecnico](../admin/contact-support-for-business-products.md).
+Se si è già acquistato un file di archiviazione supplementare tramite il componente aggiuntivo di **archiviazione file aggiuntivo di Office 365** , è possibile utilizzare questi passaggi per aumentare o diminuire lo spazio di archiviazione aggiuntivo per l'abbonamento. È possibile ridurre lo spazio di archiviazione a un minimo di 1 gigabyte. Per rimuovere tutto lo spazio di archiviazione aggiuntivo, [contattare il supporto](../admin/contact-support-for-business-products.md).
 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-
-2. Scegliere l'abbonamento che contiene il componente aggiuntivo di **archiviazione file aggiuntivo di Office 365** .
-
-3. Selezionare **componenti**aggiuntivi, quindi scegliere **Cambia quantità**.
-
-4. Nel riquadro **Aggiungi/Rimuovi Gigabyte** , immettere i gigabyte totali desiderati per l'abbonamento, quindi selezionare **Invia modifica**.
+2. Nella scheda **prodotti** selezionare la sottoscrizione contenente il componente aggiuntivo di **archiviazione file aggiuntivo di Office 365** .
+3. Nella sezione **componenti** aggiuntivi della pagina Dettagli prodotto selezionare **Gestisci componenti**aggiuntivi.
+4. Nel riquadro **Gestisci componenti** aggiuntivi, nell'elenco **componente aggiuntivo** , scegliere **Office 365 extra file storage**.
+5. Nella casella di testo **quantità** immettere il numero di GB di spazio di archiviazione desiderato per la sottoscrizione.
+6. Selezionare **Salva**.
 
 ::: moniker-end
 
@@ -263,3 +264,8 @@ Office 365 Extra File Storage è disponibile per gli abbonamenti seguenti:
 
 > [!NOTE]
 > Office 365 è disponibile anche per i piani GCC, GCC High e DOD.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Gestire i limiti di spazio di archiviazione del sito](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (articolo) \
+[Impostare lo spazio di archiviazione predefinito per gli utenti di OneDrive](https://docs.microsoft.com/onedrive/set-default-storage-space)(articolo)

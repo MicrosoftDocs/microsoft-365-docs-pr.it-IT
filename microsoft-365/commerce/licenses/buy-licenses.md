@@ -1,10 +1,10 @@
 ---
-title: Acquistare o rimuovere licenze di sottoscrizione
+title: Acquistare o rimuovere licenze dell'abbonamento
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 description: Informazioni su come acquistare altre licenze o ridurre il numero di licenze per l'abbonamento a Microsoft 365 for business.
 ms.date: 07/01/2020
-ms.openlocfilehash: 85861379bbce30c3c071a47529d516d7d5170e39
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: df9570649e1ba5d674f1f152afa9d4dcaee8fc5e
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015900"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324247"
 ---
-# <a name="buy-or-remove-subscription-licenses"></a>Acquistare o rimuovere licenze di sottoscrizione
+# <a name="buy-or-remove-subscription-licenses"></a>Acquistare o rimuovere licenze dell'abbonamento
 
 ::: moniker range="o365-21vianet"
 
@@ -40,9 +40,9 @@ ms.locfileid: "45015900"
 
 È possibile acquistare altre licenze o ridurre il numero di licenze per le sottoscrizioni utilizzando questi passaggi.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per acquistare licenze, è necessario essere un amministratore globale o un amministratore di fatturazione. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+- Per eseguire le attività descritte in questo articolo, è necessario essere un amministratore globale o un amministratore di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 - È possibile [aggiungere utenti e assegnare licenze contemporaneamente](../../admin/add-users/add-users.md).
 
 ## <a name="buy-or-remove-licenses-for-your-business-subscription"></a>Acquistare o rimuovere licenze per l'abbonamento aziendale
@@ -50,15 +50,17 @@ ms.locfileid: "45015900"
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Individuare la sottoscrizione per la quale si desidera acquistare o rimuovere licenze, quindi selezionare **Aggiungi/Rimuovi licenze**. [Che cosa fare se il collegamento Aggiungi/Rimuovi licenze non è visualizzato?](#what-if-you-dont-see-the-addremove-licenses-link)
-3. Nella casella **Totale licenze** immettere il numero totale di licenze desiderate per la sottoscrizione, quindi selezionare **Invia modifica**. Ad esempio, se si dispone di 100 licenze e si desidera aggiungerne altre 5, immettere 105. Se si desidera rimuoverne cinque, immettere 95.
+2. Nella scheda **prodotti** individuare la sottoscrizione per la quale si desidera acquistare o rimuovere licenze. Selezionare **altre azioni** (tre punti), quindi selezionare **Acquista licenze**. [Cosa fare se il collegamento Aggiungi/rimuovi licenze non è presente?](#what-if-i-dont-see-the-addremove-licenses-link)
+3. Se si desidera ridurre il numero di licenze, nella parte superiore del riquadro **Acquista licenze** selezionare **Rimuovi licenze**.
+4. Per acquistare o rimuovere licenze, in **nuova quantità** nella casella **Totale licenze** immettere il numero totale di licenze desiderate per la sottoscrizione. Ad esempio, se si dispone di 100 licenze e si desidera aggiungerne altre 5, immettere 105. Se si desidera rimuoverne cinque, immettere 95.
+5. Selezionare **Salva**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera acquistare o rimuovere licenze, quindi selezionare **Aggiungi/Rimuovi licenze**. [Che cosa fare se il collegamento Aggiungi/Rimuovi licenze non è visualizzato?](#what-if-you-dont-see-the-addremove-licenses-link)
+2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera acquistare o rimuovere licenze, quindi selezionare **Aggiungi/Rimuovi licenze**. [Cosa fare se il collegamento Aggiungi/rimuovi licenze non è presente?](#what-if-i-dont-see-the-addremove-licenses-link)
 3. Nella casella **Totale licenze** immettere il numero totale di licenze desiderate per la sottoscrizione e quindi fare clic su **Invia** \> **Chiudi**. Ad esempio, se si dispone di 100 licenze e si desidera aggiungerne altre 5, immettere 105. Se si desidera rimuovere cinque licenze, immettere 95.
 
 ::: moniker-end
@@ -66,7 +68,7 @@ ms.locfileid: "45015900"
 ::: moniker range="o365-21vianet"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
-2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera acquistare o rimuovere licenze, quindi selezionare **Aggiungi/Rimuovi licenze**. [Che cosa fare se il collegamento Aggiungi/Rimuovi licenze non è visualizzato?](#what-if-you-dont-see-the-addremove-licenses-link)
+2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera acquistare o rimuovere licenze, quindi selezionare **Aggiungi/Rimuovi licenze**. [Cosa fare se il collegamento Aggiungi/rimuovi licenze non è presente?](#what-if-i-dont-see-the-addremove-licenses-link)
 3. Nella casella **Totale licenze** immettere il numero totale di licenze desiderate per la sottoscrizione e quindi fare clic su **Invia** \> **Chiudi**. Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 105. Se si desidera rimuoverne 5, immettere 95.
 
 ::: moniker-end
@@ -74,7 +76,7 @@ ms.locfileid: "45015900"
 > [!NOTE]
 > Non è possibile ridurre il numero di licenze per l'abbonamento se tutte le licenze sono attualmente assegnate a un utente. Per ridurre il numero di licenze, prima [annullare l'assegnazione di una o più licenze agli utenti](../../admin/manage/remove-licenses-from-users.md), quindi rimuovere le licenze dall'abbonamento.
 
-## <a name="what-if-you-dont-see-the-addremove-licenses-link"></a>Che cosa fare se il collegamento Aggiungi/Rimuovi licenze non è visualizzato?
+## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>Cosa fare se il collegamento Aggiungi/rimuovi licenze non è presente?
 
 In questa tabella vengono illustrati i motivi per cui il collegamento **Aggiungi/Rimuovi licenze** potrebbe non essere disponibile e cosa è possibile fare.
 
@@ -115,5 +117,5 @@ Se il numero di licenze per l'abbonamento è stato ridotto perché qualcuno ha l
 ## <a name="related-content"></a>Contenuto correlato
 
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo) \
-[Informazioni su abbonamenti e licenze](subscriptions-and-licenses.md) (articolo) \
+[Informazioni su abbonamenti e licenze](subscriptions-and-licenses.md) (articolo)\
 [Provare o acquistare un abbonamento a Microsoft 365](../try-or-buy-microsoft-365.md) (articolo)

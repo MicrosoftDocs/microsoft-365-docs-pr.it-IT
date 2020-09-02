@@ -20,28 +20,25 @@ search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Informazioni sull'iscrizione a Microsoft 365 self-service e sui programmi self-service disponibili, ad esempio Microsoft Power Apps, Microsoft Flow e Dynamics 365 for Finance.
-ms.openlocfilehash: 4a95c4b98821100d0a5164b87c1afe02b854608b
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: 8e8ed80cc24e3c6ec0a4a9d408d202495de52adb
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506298"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324481"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso dell'iscrizione self-service nell'organizzazione
 
-È possibile ascoltare i propri commenti e rendere più facile per gli utenti dell'organizzazione iscriversi ai servizi online di Microsoft. Questo nuovo processo viene definito "iscrizione self-service" in quanto gli utenti possono effettuare l'iscrizione per usare i servizi pagati tramite l'abbonamento oppure usare i servizi gratuiti senza che sia necessario eseguire operazioni a loro nome.
+La registrazione in modalità self-service rende più semplice per gli utenti dell'organizzazione iscriversi ai servizi online da Microsoft. Questo processo di iscrizione viene chiamato "self-service sign up" perché gli utenti possono iscriversi per utilizzare i servizi pagati dall'abbonamento o utilizzare servizi gratuiti, senza chiedere di intervenire per loro conto.
   
 ## <a name="how-self-service-sign-up-works"></a>Funzionamento dell'iscrizione self-service
 
 L'esempio seguente descrive come funziona l'iscrizione self-service per un istituto di istruzione. Lo stesso processo funziona per qualsiasi organizzazione con programmi self-service abilitati nel proprio tenant.
   
-1. Gli studenti e i membri della facoltà hanno indirizzi di posta elettronica dell'istituto di istruzione, che indicano che sono associati all'istituto. L'indirizzo di posta elettronica jakob@uw.edu può ad esempio indicare uno studente dell'Università di Washington.
-
+1. Gli studenti e i membri della facoltà hanno indirizzi di posta elettronica dell'istituto di istruzione, che indicano che sono associati all'istituto. Ad esempio, l'indirizzo di posta elettronica jakob@uw.edu può indicare un allievo all'Università di Washington.
 2. Studenti e docenti accedere al [sito Web](https://go.microsoft.com/fwlink/p/?LinkId=536628)e utilizzare il proprio indirizzo di posta elettronica per iscriversi ai servizi offerti dall'organizzazione, ad esempio Microsoft 365 Apps for Enterprise. Possono anche iscriversi ad altri servizi gratuiti offerti.
-
 3. Convalidare il proprio indirizzo di posta elettronica e quindi iniziare a utilizzare Microsoft 365, Power BI o altri servizi subito.
-
-4. Come amministratore dell'azienda, è possibile visualizzare gli utenti che hanno effettuato l'iscrizione a un abbonamento visualizzando la pagina dei **prodotti** nell'interfaccia di amministrazione. In questo modo è possibile vedere quando ci sono licenze nuove o non riconosciute per i servizi nel tenant. Per controllare se gli utenti possono iscriversi per le sottoscrizioni in modalità self-service, utilizzare il cmdlet [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) di PowerShell con il parametro **AllowAdHocSubscriptions** . Per ulteriori informazioni, vedere [come si controllano le impostazioni self-service?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. Come amministratore dell'azienda, è possibile visualizzare gli utenti che hanno effettuato l'iscrizione a un abbonamento selezionando la sottoscrizione nella pagina **Licensing** nell'interfaccia di amministrazione di Microsoft 365. In questo modo è possibile vedere quando ci sono licenze nuove o non riconosciute per i servizi nel tenant. Per controllare se gli utenti possono iscriversi per le sottoscrizioni in modalità self-service, utilizzare il cmdlet [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) di PowerShell con il parametro **AllowAdHocSubscriptions** . Per ulteriori informazioni, vedere [come si controllano le impostazioni self-service?](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## <a name="available-self-service-programs"></a>Programmi self-service disponibili
 
@@ -50,7 +47,7 @@ Di seguito sono elencati i programmi self-service attualmente disponibili. Quest
 |||||
 |:-----|:-----|:-----|:-----|
 |**Programma** <br/> |**Descrizione** <br/> |**Altre informazioni** <br/> |****Sito Web per l'iscrizione self-service**** <br/> |
-|Office 365 a1 * * * * <br/> |Qualsiasi studente o insegnante può usare un indirizzo di posta elettronica scolastico per iscriversi gratuitamente a Office 365 e ottenere le app di Office per il Web, 1 TB di spazio di archiviazione cloud di OneDrive e SharePoint Online per i siti di classe, team e di progetto.  <br/> |[Domande frequenti tecniche su Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|Office 365 a1 * * * * <br/> |Gli studenti o gli insegnanti possono utilizzare un indirizzo di posta elettronica scolastico per iscriversi gratuitamente a Office 365 e ottenere le app di Office per il Web, 1 TB di spazio di archiviazione cloud di OneDrive e SharePoint Online per i siti di classe, team e di progetto.  <br/> |[Domande frequenti tecniche su Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 a1 Plus** <br/> |Gli studenti e gli insegnanti idonei possono iscriversi a Office 365 a1 Plus, che include tutto quello menzionato sopra oltre a Microsoft 365 Apps for Enterprise. Microsoft 365 Apps for Enterprise è un software per la produttività, tra cui Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access e Skype for business, installato nel computer desktop o laptop.  <br/> |[Domande frequenti tecniche su Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI consente agli utenti di visualizzare i dati, condividere le individuazioni e collaborare in modi nuovi e intuitivi. <br/> Se l'organizzazione sottoscrive già la sottoscrizione, è possibile visualizzare le licenze per "Power BI Pro single user trial", che offre agli utenti un accesso gratuito limitato alle funzionalità avanzate.  <br/> |[Power BI nell'organizzazione](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**Rights Management Services (RMS)** <br/> |RMS per singoli utenti è un abbonamento gratuito self-service per gli utenti di un'organizzazione a cui sono stati inviati file dal contenuto riservato protetti da Azure Rights Management (Azure RMS), ma il cui reparto IT non ha implementato Azure Rights Management (Azure RMS) o Active Directory Rights Management Services (AD RMS).  <br/> |[RMS per utenti singoli e Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Portale di Microsoft Rights Management](https://portal.azure.com/) per verificare se è possibile aprire un determinato documento protetto da diritti.  <br/> |

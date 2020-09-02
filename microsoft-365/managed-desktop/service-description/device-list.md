@@ -1,6 +1,6 @@
 ---
 title: Dispositivi Microsoft Managed Desktop
-description: In questo argomento sono elencate le specifiche del dispositivo utilizzate in Microsoft Managed Desktop.
+description: In questo argomento sono elencate le specifiche per i dispositivi approvati per Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 44db48dc520b0e7a19aae56268cbe03314889979
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: e7d0b88542f9329d10d241e68864333ed1ec1730
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529422"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321974"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
-Microsoft Managed Desktop valuta regolarmente i dispositivi da includere nel servizio. In questo argomento vengono illustrati i requisiti per un dispositivo che deve essere registrato in Microsoft Managed Desktop ed elenca i dispositivi specifici attualmente supportati.
+Microsoft Managed Desktop valuta regolarmente i dispositivi da includere nel servizio. In questo articolo vengono illustrati i requisiti per un dispositivo che deve essere registrato in Microsoft Managed Desktop ed elenca i dispositivi specifici attualmente supportati.
 
 Per ulteriori informazioni su Microsoft Managed Desktop, vedere [documentazione e risorse di Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
 
@@ -31,8 +31,9 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 >I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma verranno forniti 90 giorni di preavviso per eventuali modifiche che interessano l'archiviazione o la data di pensionamento. I dispositivi aggiunti più di recente sono contrassegnati con **\*** .
 
 
-**Dispositivi Microsoft Managed Desktop**
+## <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop
 
+### <a name="dell"></a>Dell
 
 | Modello    | Specifiche minime  | Requisiti aggiuntivi    | Data archivio   | Data di pensionamento   |
 |----------|----------------|---------------------------|----------------|--------------------|
@@ -50,6 +51,11 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 | **\*[Dell Latitude 7410 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop)** | 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | 19 maggio 2022 | 19 maggio 2025
 | **\*[Dell Latitude 9410 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop)** | 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | 19 maggio 2022  | 19 maggio 2025  |
 | [Dell OptiPlex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop) | 128 GB/Intel i3/8 GB di RAM | Nessuno | 1 maggio 2022  | 1 maggio 2025  |
+
+### <a name="hp"></a>HP
+
+| Modello    | Specifiche minime  | Requisiti aggiuntivi    | Data archivio   | Data di pensionamento   |
+|----------|----------------|---------------------------|----------------|--------------------|
 | [PC notebook HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
 | [PC notebook HP EliteBook X360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
 | [Tablet HP Elite X2 G4](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS03AV | 31 luglio 2021 | 31 luglio 2024 |
@@ -58,6 +64,11 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 | [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB/Intel i5/8 GB di RAM | SKU con 9MZ21AV | 31 dicembre 2020 | 31 dicembre 2023 |
 | [Workstation HP Z2 Mini G4](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB di RAM | SKU con 8QR48AV| 31 gennaio 2021 | 31 gennaio 2024 |
 | [Workstation mobile HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS02AV, videocamera IR necessaria | Nov 30, 2020 | Nov 30, 2023 |
+
+### <a name="microsoft"></a>Microsoft
+
+| Modello    | Specifiche minime  | Requisiti aggiuntivi    | Data archivio   | Data di pensionamento   |
+|----------|----------------|---------------------------|----------------|--------------------|
 | **\*[Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab)** | 256 GB/RAM Intel i5/8GB | Nessuno | 21 maggio 2022 | 21 maggio 2027 |
 | **\*[Superficie Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab)** | 128 GB/RAM Intel Core M3/8GB | Nessuno | 21 maggio 2022 | 21 maggio 2027 |
 | [Laptop Surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB di RAM | Nessuno | Ott 16, 2020 | Ott 16, 2023 |

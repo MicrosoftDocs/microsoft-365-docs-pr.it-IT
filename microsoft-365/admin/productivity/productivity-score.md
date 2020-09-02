@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica del Punteggio di produttività Microsoft.
-ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a7f6fc5fef9189f7478bcc67e1d24bdf037f561d
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307478"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324435"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Punteggio di produttività Microsoft (anteprima)
 
@@ -40,9 +40,9 @@ Vengono forniti dati, informazioni dettagliate e suggerimenti in due aree:
 
 - **Esperienza dipendente:** Misuriamo il modo in cui le persone collaborano al contenuto, il modo in cui utilizzano i prodotti Microsoft 365 per comunicare e se utilizzano Microsoft 365 su più piattaforme. 
 
-    Queste informazioni vengono fornite perché quando le persone collaborano online, risparmiano tempo. Quando hanno la libertà di lavorare su qualsiasi dispositivo, sono più produttivi e soddisfatti. Quando sono in grado di comunicare in modo flessibile, sono più efficienti, formano relazioni migliori e l'organizzazione è più unita. Per ulteriori informazioni, vedere [rapporto Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    Queste informazioni vengono fornite perché quando le persone collaborano online, risparmiano tempo. Con la libertà di lavorare su qualsiasi dispositivo, sono più produttivi e soddisfatti. La comunicazione in modo flessibile rende le persone più efficienti, formano relazioni migliori e l'organizzazione è più unita. Per ulteriori informazioni, vedere [rapporto Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Tecnologia Experience:** La produttività dipende da una tecnologia affidabile e performante, oltre che da un utilizzo efficiente di Microsoft 365. Viene fornita l' [analisi dell'endpoint](https://aka.ms/endpointanalytics), che consente di comprendere in che modo la produttività degli utenti può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software dell'endpoint, garantendo le azioni consigliate per rimediare; Microsoft 365 fornisce informazioni sulla connettività di rete per la propria organizzazione.
+- **Tecnologia Experience:** La produttività dipende da una tecnologia affidabile e performante, oltre che da un utilizzo efficiente di Microsoft 365. Viene fornita l' [analisi dell'endpoint](https://aka.ms/endpointanalytics), che consente di comprendere in che modo la produttività degli utenti può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software dell'endpoint. Sono inoltre disponibili azioni consigliate per la risoluzione dei dati e le informazioni sulla connettività di rete di Microsoft 365 per l'organizzazione.
 
 Vedere [che cos'è l'analisi di endpoint](https://docs.microsoft.com/mem/analytics/overview) per una panoramica e Dettagli prerequisito. Per ulteriori informazioni sulle considerazioni relative alla connettività di rete di Microsoft 365, leggere [la panoramica della connettività di rete](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -66,7 +66,7 @@ Il Punteggio di produttività è basato sui punteggi combinati delle categorie d
 
 Il Punteggio di produttività include i dati di Exchange, SharePoint, OneDrive, teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer e Skype.
 
-Il Punteggio viene aggiornato giornalmente e riflette le azioni degli utenti completate negli ultimi 28-180 giorni (compreso il giorno corrente).
+Il Punteggio viene aggiornato giornalmente e riflette le azioni dell'utente completate negli ultimi 28 (compreso il giorno corrente).
 
 
 ## <a name="pre-requisites"></a>Prerequisiti 
@@ -111,15 +111,15 @@ In ogni pagina dei dettagli della categoria vengono illustrate le metriche princ
 
 ### <a name="content-collaboration-details"></a>Dettagli sulla collaborazione del contenuto
 
-L'intuizione principale per la collaborazione tra i contenuti è il numero di persone che creano, leggono e collaborano (modifica e Condividi) online. Queste misure sono importanti perché la ricerca dimostra che quando la gente collabora con i file online, ogni persona salva una media di 100 minuti o quasi 2 ore alla settimana.
+L'intuizione principale per la collaborazione tra i contenuti è il numero di persone che creano, leggono e collaborano (modifica e Condividi) online. Queste misure sono importanti perché la ricerca dimostra che quando la gente collabora con i file online, ogni persona salva una media di quasi 2 ore alla settimana.
 
-Viene definita la collaborazione del contenuto come una persona che crea e condivide un file di Office e quindi almeno un'altra persona la modifica. 
+Viene definita la collaborazione del contenuto come una persona che crea e condivide un file di Office e quindi almeno un'altra persona la legge. 
 
-Lettori: utenti che accedono o scaricano file online in OneDrive o SharePoint.
+**Lettori**: utenti che accedono o scaricano file online in OneDrive o SharePoint.
 
 **Creatori:** Utenti che creano, modificano, caricano, sincronizzano, eseguono l'archiviazione, la copia o lo spostamento di file di OneDrive o SharePoint Online.
 
-Collaboratori: utenti che collaborano con i file online tramite OneDrive o SharePoint. Due persone sono collaboratori se uno di essi legge o modifica un documento cloud online di Word, Excel, PowerPoint, OneNote o PDF dopo che l'altra persona lo ha creato o modificato, all'interno di una finestra di 28 giorni.
+**Collaboratori**: utenti che collaborano con i file online tramite OneDrive o SharePoint. Due persone sono collaboratori se uno di essi legge o modifica le app di Office Online o il documento cloud PDF dopo che l'altra persona lo ha creato o modificato, all'interno di una finestra di 28 giorni.
 
 I tipi di file considerati per la collaborazione sono file Word, Excel, PowerPoint, OneNote e PDF.
 
@@ -127,7 +127,7 @@ Vengono fornite informazioni dettagliate sui tempi di avvio e sulla configurazio
 
 ### <a name="communication-details"></a>Dettagli della comunicazione
 
-L'intuizione principale per la comunicazione è la frequenza con cui gli utenti dell'organizzazione utilizzano messaggi di posta elettronica, chat e community per comunicare. Questa intuizione è importante perché quando gli utenti utilizzano una vasta gamma di strumenti di comunicazione in tempo reale, sono in grado di scegliere la modalità di comunicazione che li aiuta ad essere più efficienti e dispongono di strumenti come chat e community che consentono loro di sviluppare relazioni tra le diverse posizioni di Office.
+L'intuizione principale per la comunicazione è la frequenza con cui gli utenti dell'organizzazione utilizzano messaggi di posta elettronica, chat e community per comunicare. Quando gli utenti utilizzano una vasta gamma di strumenti di comunicazione in tempo reale, sono in grado di scegliere la modalità di comunicazione che li aiuta ad essere più efficienti, come chat e community che consentono loro di sviluppare relazioni tra le posizioni degli uffici.
 
 ### <a name="mobility-details"></a>Dettagli sulla mobilità
 
@@ -153,4 +153,4 @@ Questo rapporto aiuta i leader aziendali a comprendere quanto segue:
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi
 
-Si prega di condividere i propri pensieri sul punteggio di produttività e sulle idee su come migliorarlo. Utilizzare le sezioni di **feedback** all'interno del prodotto e/o raggiungere il team del Punteggio di produttività in ProductivityScorePreview@service.microsoft.com.
+Condividi i tuoi pensieri sul punteggio di produttività e sulle tue idee su come migliorarlo. Utilizzare le sezioni di **feedback** all'interno del prodotto e/o raggiungere il team del Punteggio di produttività in ProductivityScorePreview@service.microsoft.com.

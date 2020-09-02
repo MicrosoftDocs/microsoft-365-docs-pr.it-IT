@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,15 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Informazioni su come estendere la sottoscrizione di valutazione per un altro periodo di 30 giorni.
-ms.openlocfilehash: 50f0548ddcd2eeef36a853cfb08b279cee8095a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c1c4134f944b07b177a92e03fc3e5ba2d9b362ef
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402155"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324317"
 ---
 # <a name="extend-your-trial"></a>Prolunga il periodo di valutazione
 
@@ -43,19 +40,16 @@ ms.locfileid: "44402155"
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-
-2. Nella pagina i **prodotti** individuare la sottoscrizione di valutazione che si desidera estendere. Nella sezione **impostazioni & azioni** selezionare **Estendi versione di valutazione**.
-
-3. Rivedere le informazioni sull'interno e, se necessario, cambiare il metodo di pagamento. Al termine, selezionare **Estendi versione di valutazione**.
+2. Nella scheda **prodotti** selezionare la sottoscrizione di valutazione che si desidera estendere. 
+3. Nella sezione **Impostazioni abbonamenti e pagamenti** della pagina Dettagli sottoscrizione selezionare **Estendi data di fine**.
+4. Nel riquadro **Estendi data fine** , esaminare le informazioni sull'interno e, se necessario, selezionare un metodo di pagamento. Al termine, selezionare **Estendi versione di valutazione**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-
 2. Nella pagina **abbonamenti** selezionare la sottoscrizione di valutazione che si desidera estendere e quindi, sotto la data di scadenza, selezionare **Estendi versione di valutazione**.
-
 3. Completare i passaggi della procedura guidata.
 
 ::: moniker-end
@@ -63,9 +57,7 @@ ms.locfileid: "44402155"
 ::: moniker range="o365-21vianet"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
-
 2. Nella pagina **abbonamenti** selezionare la sottoscrizione di valutazione che si desidera estendere e quindi, sotto la data di scadenza, selezionare **Estendi versione di valutazione**.
-
 3. Completare i passaggi della procedura guidata.
 
 ::: moniker-end

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,83 +15,64 @@ ms.collection:
 - Adm_TOC
 - SPO_Content
 ms.custom:
-- MSStore_Link
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: Informazioni su come eliminare un account utente. Decidere cosa fare con l'indirizzo di posta elettronica dell'utente, il contenuto di OneDrive e se mantenere la licenza del prodotto o smettere di pagarla.
-ms.openlocfilehash: 81243286b70985082f8b671d7e021735a76cffc4
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: Informazioni su come eliminare un account utente. Decidere cosa fare con l'indirizzo di posta elettronica e il contenuto di OneDrive dell'utente. E decidere se mantenere la licenza del prodotto o smettere di pagarla.
+ms.openlocfilehash: bcccaa13614114c9588c43d857336bce44a84147
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431678"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324561"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Eliminare un utente dall'organizzazione
   
-||
-|:-----|
-|**Per informazioni su come *eliminare l'account* utente Microsoft 365 utilizzato al lavoro o all'Istituto di istruzione? Rivolgersi al supporto tecnico del proprio lavoro o dell'Università per eseguire queste operazioni.**|
-   
+**Per informazioni su come *eliminare l'account* utente Microsoft 365 utilizzato al lavoro o all'Istituto di istruzione? Rivolgersi al supporto tecnico del proprio lavoro o dell'Università per eseguire queste operazioni.**
+
 ## <a name="what-you-need-to-know-about-deleting-users"></a>Informazioni necessarie relative all'eliminazione degli utenti
 
-- Solo gli utenti che dispongono di autorizzazioni di gestione globale o di [amministratore di Microsoft 365](about-admin-roles.md) per l'azienda o la scuola possono eliminare gli account utente. 
-    
-- Si hanno a disposizione 30 giorni per [ripristinare](restore-user.md) l'account prima che i dati dell'utente vengano eliminati definitivamente. 
-    
-- Se si vogliono mantenere i dati di OneDrive dell'utente, spostarli in una posizione diversa. È possibile eseguire questa operazione fino a 30 giorni dopo l'eliminazione dell'account. Vedere [Accedere ai dati di un ex utente ed eseguirne il backup](get-access-to-and-back-up-a-former-user-s-data.md). Non è necessario spostare i file di SharePoint dell'utente, perché saranno ancora accessibili.
-    
+- Solo gli utenti che dispongono di autorizzazioni di gestione globale o di [amministratore di Microsoft 365](about-admin-roles.md) per l'azienda o la scuola possono eliminare gli account utente.
+- Si hanno a disposizione 30 giorni per [ripristinare](restore-user.md) l'account prima che i dati dell'utente vengano eliminati definitivamente.
+- Se si vogliono mantenere i dati di OneDrive dell'utente, spostarli in una posizione diversa. È anche possibile spostare i dati fino a 30 giorni dopo l'eliminazione dell'account. Vedere [Accedere ai dati di un ex utente ed eseguirne il backup](get-access-to-and-back-up-a-former-user-s-data.md). Non è necessario spostare i file di SharePoint dell'utente, perché saranno ancora accessibili.
 - Se si vuole mantenere la posta elettronica dell'utente, **PRIMA** di eliminare l'account spostarla in una posizione diversa. Se l'account è già stato eliminato, è possibile ripristinarlo entro 30 giorni, spostare i dati della posta elettronica e quindi eliminare l'account. Vedere [Accedere ai dati di un ex utente ed eseguirne il backup](get-access-to-and-back-up-a-former-user-s-data.md).
-    
 - Se si dispone di un abbonamento Enterprise come Office 365 Enterprise E3, è possibile conservare i dati delle cassette postali di un account utente eliminato trasformandola in una *cassetta postale inattiva*. Per saperne di più, vedere [Gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
-
 
 ## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>Amministratore globale: eliminare un utente, smettere di pagare la propria licenza e scegliere cosa fare con i propri messaggi di posta elettronica e contenuti di OneDrive
 
-Se si è un amministratore globale, quando si elimina un utente, è anche possibile concedere a un altro utente l'accesso al proprio indirizzo di posta elettronica e scegliere cosa fare con il contenuto di OneDrive. 
+Se si è un amministratore globale, quando si elimina un utente, è anche possibile concedere a un altro utente l'accesso al proprio indirizzo di posta elettronica e scegliere cosa fare con il contenuto di OneDrive.
 
-  
 ### <a name="things-to-consider"></a>Aspetti da considerare
 
 Prima di iniziare, considerare cosa si vuole fare con la posta elettronica e il contenuto di OneDrive dell'utente e se si desidera mantenere la licenza o smettere di pagarla.
   
-|||
+|Elemento | Descrizione |
 |:-----|:-----|
-|Licenze per i prodotti  <br/> |È possibile rimuovere la licenza dall'utente e rimuoverla dagli abbonamenti per interrompere il pagamento per la licenza. Se si seleziona questa opzione, la licenza verrà rimossa automaticamente dagli abbonamenti.  <br/><br/> **Non è possibile rimuovere la licenza** se è stata acquistata tramite un partner o un contratto multilicenza. Se si paga un piano annuale o si è nel mezzo di un ciclo di fatturazione, non sarà possibile rimuovere la licenza dall'abbonamento fino a quando non viene completato l'impegno.  <br/> |
+|Licenze per i prodotti  <br/> |È possibile rimuovere la licenza dall'utente e rimuoverla dagli abbonamenti per interrompere il pagamento per la licenza. Se si seleziona questa opzione, la licenza verrà rimossa automaticamente dagli abbonamenti.  <br/><br/> **Non è possibile rimuovere la licenza** se è stata acquistata tramite un partner o un contratto multilicenza. Se si paga un piano annuale o si sta facendo un ciclo di fatturazione, non sarà possibile rimuovere la licenza dall'abbonamento fino a quando non viene completato l'impegno.  <br/> |
 |Contenuto di OneDrive  <br/> |Se l'utente ha salvato i propri file in OneDrive, è possibile concedere a un altro utente l'accesso a questi file.  <br/><br/> Sarà necessario spostare i file che si desidera conservare entro il periodo di conservazione impostato per i file di OneDrive. **Per impostazione predefinita, il periodo di conservazione è di 30 giorni.** Se non si spostano i file entro il periodo di conservazione dopo l'eliminazione dell'utente, il contenuto di OneDrive verrà eliminato definitivamente. Per aumentare il numero di giorni di conservazione dei file di OneDrive per gli account eliminati, vedere [set the OneDrive retention for deleted Users](https://docs.microsoft.com/onedrive/set-retention).  <br/><br/> **Importante!** Se l'utente eliminato ha utilizzato un computer personale per scaricare i file da SharePoint e OneDrive, non è possibile cancellare i file archiviati nel computer in uso. Continueranno ad avere accesso a tutti i file che sono stati sincronizzati da OneDrive.           |
-|Posta elettronica  <br/> | Se si concede a un altro utente l'accesso alla posta elettronica dell'utente eliminato, la cassetta postale dell'utente eliminato verrà convertita in una cassetta postale condivisa. Il nuovo proprietario della cassetta postale può quindi accedere alla cassetta postale e monitorare il nuovo messaggio di posta elettronica. Sono inoltre disponibili le opzioni seguenti:  <br/>  <br/>Modificare il nome visualizzato: si consiglia di modificare il nome visualizzato in modo che sia possibile identificare facilmente la cassetta postale condivisa nell'elenco utenti attivi.  <br/>  Attiva risposte automatiche-abbiamo già scritto una cortese risposta automatica per te. È possibile inviare una risposta automatica diversa alle persone all'interno dell'organizzazione e persone esterne all'organizzazione.  <br/> <br/> Pulizia degli alias-gli alias sono indirizzi di posta elettronica aggiuntivi per gli utenti. Alcune organizzazioni non le utilizzano, quindi se non si dispone di alcuna operazione non è necessario eseguire altre operazione. Se l'utente dispone di alias, è consigliabile rimuoverli in modo che sia possibile riutilizzare tali indirizzi di posta elettronica. In caso contrario, non è possibile riutilizzare tali indirizzi di posta elettronica fino al termine del periodo di conservazione per le cassette postali eliminate. Per impostazione predefinita, una cassetta postale eliminata è ripristinabile per 30 giorni. Per ulteriori informazioni, vedere [eliminare o ripristinare le cassette postali degli utenti in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
+|Posta elettronica  <br/> | Se si concede a un altro utente l'accesso alla posta elettronica dell'utente eliminato, la cassetta postale dell'utente eliminato verrà convertita in una cassetta postale condivisa. Il nuovo proprietario della cassetta postale può quindi accedere alla cassetta postale e monitorare il nuovo messaggio di posta elettronica. Sono inoltre disponibili le opzioni seguenti:  <br/>  <br/>Modificare il nome visualizzato: si consiglia di modificare il nome visualizzato in modo che sia possibile identificare facilmente la cassetta postale condivisa nell'elenco **utenti attivi** .  <br/>  Attiva risposte automatiche-abbiamo già scritto una cortese risposta automatica per te. È possibile inviare risposte automatiche diverse alle persone all'interno dell'organizzazione e persone esterne all'organizzazione.  <br/> <br/> Pulizia degli alias-gli alias sono indirizzi di posta elettronica aggiuntivi per gli utenti. Alcune organizzazioni non le utilizzano, quindi se non si dispone di alcuna operazione non è necessario eseguire altre operazione. Se l'utente dispone di alias, è consigliabile rimuoverli in modo che sia possibile riutilizzare tali indirizzi di posta elettronica. In caso contrario, non è possibile riutilizzare gli indirizzi di posta elettronica fino al termine del periodo di conservazione delle cassette postali eliminate Per impostazione predefinita, una cassetta postale eliminata è ripristinabile per 30 giorni. Per ulteriori informazioni, vedere  [eliminare o ripristinare le cassette postali degli utenti in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
 |Active Directory  <br/> |Se l'organizzazione usa **Active Directory** che si sincronizza con Azure AD, è necessario eliminare l'account utente da Active Directory. Non è possibile farlo da Office 365. Per istruzioni, vedere [eliminare un account utente](https://go.microsoft.com/fwlink/p/?linkid=841808).  <br/> |
-   
+
 ### <a name="get-started"></a>Per iniziare
 
 Poiché l'esperienza guidata illustra i passaggi necessari per eliminare un utente, ecco come iniziare.
 
 ::: moniker range="o365-worldwide"
-
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
-
 ::: moniker-end
 
 2. Selezionare l'utente che si desidera eliminare, quindi selezionare **Elimina utente**.
 
 ## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>Amministratore Gestione utenti: eliminare uno o più utenti da Office 365
-
 
 > [!IMPORTANT]
 > Non eliminare l'account di un utente se è stato [convertito in una cassetta postale condivisa](../email/convert-user-mailbox-to-shared-mailbox.md) o se è stata configurata l'inoltro della posta elettronica nell'account. Tali funzioni richiedono ancora l'account. Una cassetta postale condivisa non richiede una licenza. Se l'account è stato convertito in una cassetta postale condivisa, è possibile [interrompere il pagamento per la licenza](#stop-paying-for-the-license). Se è stata configurata l'inoltro della posta elettronica nell'account, non è possibile rimuovere la licenza. In questo modo si interrompe l'inoltro della posta elettronica e si disattiva la cassetta postale.
@@ -100,7 +81,7 @@ Poiché l'esperienza guidata illustra i passaggi necessari per eliminare un uten
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.  
 
-2. Selezionare i nomi degli utenti che si desidera eliminare, selezionare **altre opzioni** (..**.**) e quindi scegliere **Elimina utente**.
+2. Selezionare i nomi degli utenti che si desidera eliminare, selezionare **altre opzioni** (..**.**) e quindi scegliere  **Elimina utente**.
 
    Anche se è stato eliminato l'account dell'utente, **si sta ancora pagando la licenza**. Vedere la procedura successiva per interrompere il pagamento per la licenza.  In alternativa, è possibile assegnare la licenza a un altro utente. Non verrà assegnato automaticamente a un utente.
 
@@ -128,15 +109,21 @@ Poiché l'esperienza guidata illustra i passaggi necessari per eliminare un uten
 
 ### <a name="stop-paying-for-the-license"></a>Interrompere il pagamento per la licenza
 
-La riduzione del numero di licenze è un passaggio separato che può essere eseguito solo dall'amministratore globale o dall'amministratore della fatturazione. 
+La riduzione del numero di licenze è un passaggio separato che può essere eseguito solo dall'amministratore globale o dall'amministratore della fatturazione.
   
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>. Se non si vede questa opzione, non si è un amministratore globale o un amministratore di fatturazione e non è possibile eseguire questo passaggio.
 
-2. Selezionare l'abbonamento (se si dispone di più di un utente) e quindi selezionare **Aggiungi/Rimuovi licenze** per eliminare la licenza in modo da non pagarla fino a quando non si assume un'altra persona.  
+2. Nella scheda **prodotti** selezionare l'abbonamento per cui si desidera rimuovere le licenze.
 
-   Successivamente, quando si esegue la procedura per aggiungere un'altra persona all'azienda, viene richiesto di acquistare una licenza nello stesso momento, con un solo passaggio.
+3. Nella pagina Dettagli sottoscrizione selezionare **Rimuovi licenze**.
+
+4. Nel riquadro **Rimuovi licenze** , in **nuova quantità**, nella casella **Totale licenze** immettere il numero totale di licenze desiderate per la sottoscrizione. Ad esempio, se si dispone di 100 licenze e si desidera rimuoverne cinque, immettere 95.
+
+5. Selezionare **Salva**.
+
+Successivamente, quando si esegue la procedura per aggiungere un'altra persona all'azienda, viene richiesto di acquistare una licenza nello stesso momento, con un solo passaggio.
 
 ::: moniker-end
 
@@ -158,7 +145,7 @@ La riduzione del numero di licenze è un passaggio separato che può essere eseg
 
    Successivamente, quando si esegue la procedura per aggiungere un'altra persona all'azienda, viene richiesto di acquistare una licenza nello stesso momento, con un solo passaggio.
 
-::: moniker-end 
+::: moniker-end
 
 ## <a name="delete-many-users-at-the-same-time"></a>Eliminare contemporaneamente numerosi utenti
 
@@ -168,16 +155,14 @@ Vedere il cmdlet [Remove-MsolUser di](https://go.microsoft.com/fwlink/p/?linkid=
 
 Di seguito sono rilevati i problemi più comuni che si verificano durante l'eliminazione di un utente:
   
-- **Viene visualizzato un messaggio di errore lungo le righe di "l'utente non può essere eliminato. Provare di nuovo in un secondo momento.** Controllare se l'account è configurato per l'inoltro della posta elettronica o se è stato convertito in una cassetta postale condivisa. Entrambe queste cause causano tale errore. Non eliminare l'account se ha l'inoltro della posta elettronica o se è stato convertito in una cassetta postale condivisa.
+- **Viene visualizzato un messaggio di errore lungo le righe di "l'utente non può essere eliminato. Provare di nuovo in un secondo momento.** Controllare se l'account ha l'inoltro della posta elettronica configurato o se è stato convertito in una cassetta postale condivisa. Entrambe queste cause causano tale errore. Non eliminare l'account se ha l'inoltro della posta elettronica o se è stato convertito in una cassetta postale condivisa.
 
 - **Non si hanno le autorizzazioni appropriate per eliminare un utente**. Solo le persone che sono [amministratori globali di Microsoft 365 o gli amministratori di gestione utenti](about-admin-roles.md) possono eliminare gli utenti. Si tratta in genere del supporto tecnico dell'istituto di istruzione o dell'azienda.
 
-- **L'utente viene eliminato, ma il nome continua a comparire nella Rubrica globale**. Questo accade quando un'azienda usa Active Directory. È necessario eliminare l'account utente da Active Directory. Per istruzioni, vedere l'articolo di TechNet: [Eliminare un account utente.](https://go.microsoft.com/fwlink/p/?linkid=841808)
+- **L'utente viene eliminato, ma il nome continua a comparire nella Rubrica globale**. Questo accade quando un'azienda usa Active Directory. È necessario eliminare l'account utente da Active Directory. Per istruzioni, vedere [eliminare un account utente.](https://go.microsoft.com/fwlink/p/?linkid=841808)
 
-||
-|:-----|
-|**Si desidera eliminare Microsoft 365 dal computer in uso? Andare a [annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).**|
-   
+**Si desidera eliminare Microsoft 365 dal computer in uso? Andare a [annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).**
+
 ## <a name="related-articles"></a>Articoli correlati
 
 [Ripristinare un utente](restore-user.md)
