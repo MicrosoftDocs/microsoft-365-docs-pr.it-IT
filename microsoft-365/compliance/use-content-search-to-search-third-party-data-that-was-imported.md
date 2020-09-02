@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utilizzare lo strumento eDiscovery ricerca contenuto per cercare gli elementi importati nelle cassette postali in Microsoft 365 da un'origine dati di terze parti creando query.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 823d95d6b32a15662004bfc5d92662b130fe4a65
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 24ca63cf78b85f7b8b5181d5babd16058b641128
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527416"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324572"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Utilizzare la ricerca contenuto per eseguire la ricerca di dati di terze parti importati da un connettore partner personalizzato
 
@@ -35,7 +35,7 @@ Per ulteriori informazioni sull'utilizzo di un partner per l'importazione di dat
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Creazione di una query per la ricerca di tutti i dati di terze parti
 
-Per cercare (o inserire un blocco) qualsiasi tipo di dati di terze parti importati in Office 365, è possibile utilizzare la `kind:externaldata` coppia proprietà-valore del messaggio nella casella parola chiave per una ricerca contenuto o durante la creazione di un blocco basato su query. Ad esempio, per cercare gli elementi importati da un'origine dati di terze parti e contenere la parola "contoso" nella proprietà Subject dell'elemento importato, è necessario utilizzare la query seguente: 
+Per cercare (o inserire un blocco) qualsiasi tipo di dati di terze parti importati in Office 365, è possibile utilizzare la  `kind:externaldata` coppia proprietà-valore del messaggio nella casella parola chiave per una ricerca contenuto o durante la creazione di un blocco basato su query. Ad esempio, per cercare gli elementi importati da un'origine dati di terze parti e contenere la parola "contoso" nella proprietà Subject dell'elemento importato, è necessario utilizzare la query seguente: 
   
 ```powershell
 kind:externaldata AND subject:contoso
@@ -59,9 +59,9 @@ Ad esempio, per cercare i dati di Facebook che contengono la parola "contoso" ne
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-Nella tabella seguente sono elencati i tipi di dati di terze parti di cui è possibile eseguire la ricerca e il valore da utilizzare per la `itemclass:` Proprietà Message per cercare in modo specifico il tipo di dati di terze parti. La sintassi della query non è distinzione tra maiuscole e minuscole. 
+Nella tabella seguente sono elencati i tipi di dati di terze parti di cui è possibile eseguire la ricerca e il valore da utilizzare per la  `itemclass:` Proprietà Message per cercare in modo specifico il tipo di dati di terze parti. La sintassi della query non è distinzione tra maiuscole e minuscole. 
   
-|**Tipo di dati di terze parti**|**Valore della `itemclass:` Proprietà**|
+|**Tipo di dati di terze parti**|**Valore della  `itemclass:` Proprietà**|
 |:-----|:-----|
 |OBIETTIVO  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -82,7 +82,7 @@ Nella tabella seguente sono elencati i tipi di dati di terze parti di cui è pos
 |PIN BlackBerry  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |SMS BlackBerry  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|Posta Bloomberg  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
+|Bloomberg Message  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |Messaggistica Bloomberg  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Server di presenza di messaggistica istantanea Cisco &amp;  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
@@ -102,7 +102,7 @@ Nella tabella seguente sono elencati i tipi di dati di terze parti di cui è pos
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
 |Connessioni IBM  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
-|Chat di ghiaccio  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
+|ICE Chat  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |

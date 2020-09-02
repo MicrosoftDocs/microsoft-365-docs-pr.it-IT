@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: I dati prodotti dalle app basate su cloud in Microsoft 365 sono archiviati o associati a una cassetta postale di Exchange Online dell'utente.
-ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 121380cdaaf5d0397d082159ddf6461c0c12cbe1
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016299"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321985"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Contenuto archiviato nelle cassette postali di Exchange Online
 
@@ -42,6 +42,7 @@ Nella tabella seguente sono elencate le app che archiviano o associa i dati a un
 |Attività|Le attività nell'app attività (che sono le stesse attività di quelle accessibili in Outlook) vengono memorizzate nella cassetta postale di un utente.|
 |Teams|Le conversazioni che fanno parte di un canale teams sono associate alla cassetta postale teams. Le conversazioni che fanno parte dell'elenco chat in teams (chiamate anche *1 x N chat*) sono associate alla cassetta postale degli utenti che partecipano alla chat. Inoltre, le informazioni di riepilogo per le riunioni e le chiamate in un canale team sono associate alle cassette postali degli utenti che hanno effettuato l'accesso alla riunione o alla chiamata. In questo modo, quando si cerca il contenuto del team, è necessario cercare nella cassetta postale teams per il contenuto nelle conversazioni di canale e nelle cassette postali degli utenti di ricerca per il contenuto in chat di 1 x| 
 |To-Do|Le attività (chiamate *da DOS*, che vengono salvate negli elenchi di cose da fare) nell'app da fare sono archiviate nella cassetta postale di un utente.|
+|Yammer|Le conversazioni e i commenti all'interno di una community di Yammer sono associati alla cassetta postale del gruppo Microsoft 365, nonché alla cassetta postale dell'utente dell'autore e a qualsiasi destinatario denominato (@mentioned o cc'ed). I messaggi privati inviati all'esterno di una community di Yammer vengono archiviati nella cassetta postale degli utenti che partecipano al messaggio privato.|  
 ||||
 
 > [!NOTE]

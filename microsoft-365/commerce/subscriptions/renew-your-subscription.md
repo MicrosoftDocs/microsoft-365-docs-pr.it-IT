@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,19 +18,15 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: "Informazioni su come rinnovare l'abbonamento a Microsoft 365 per le aziende usando un codice Product Key e attivare o disattivare la fatturazione ricorrente. "
-ms.openlocfilehash: 8dd9697f95e238ff759b90b1fef7544be9196c85
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Scopri come rinnovare Microsoft 365 attivando o disattivando la fatturazione ricorrente.
+ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403223"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324305"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Rinnovare Microsoft 365 per le aziende
 
@@ -57,18 +53,15 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-
-2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
-
-3. In **Fatturazione**, accanto a **Data rinnovo** o **Data scadenza** selezionare **modifica**.
-
-4. Nel riquadro **Impostazioni della fatturazione** ricorrente selezionare **Disattiva** per disattivarla. Se la fatturazione ricorrente è già disattivata, selezionare **Mensile** o **Una volta** per attivarla.
-
-5. Selezionare **Invia modifica**.
+2. Selezionare l'abbonamento per cui si desidera gestire la fatturazione ricorrente.
+3. Nella pagina Dettagli abbonamento, in **Impostazioni abbonamento e pagamento**, selezionare **Modifica fatturazione ricorrente**.
+4. Nel riquadro **Modifica impostazioni fatturazione ricorrente**, selezionare **Attiva**, **Attiva, ma rinnova una volta**, oppure **Disattiva**.
+5. Selezionare **Salva**.
 
     > [!NOTE]
     > - L'impostazione della **fatturazione ricorrente** può essere modificata solo per gli abbonamenti attivi. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di attivare o disattivare la **fatturazione ricorrente**.
-    > - Quando si disattiva la **fatturazione ricorrente**, l'abbonamento non viene immediatamente annullato, ma rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella sezione **Fatturazione** dei dettagli dell'abbonamento nella pagina **I tuoi prodotti**.
+    > - Disattivando la **Fatturazione ricorrente**, l'abbonamento non verrà annullato. Se si desidera mantenere attivo l'abbonamento, è necessario pagare la fattura manualmente.
+    > - Se si disattiva la **Fatturazione ricorrente**, l'abbonamento rimarrà attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella pagina dei dettagli dell'abbonamento nella sezione **Impostazioni abbonamento e pagamento**.
     > - Per informazioni su come annullare immediatamente l'abbonamento, vedere [Annullare l'abbonamento](cancel-your-subscription.md).
 
 ::: moniker-end

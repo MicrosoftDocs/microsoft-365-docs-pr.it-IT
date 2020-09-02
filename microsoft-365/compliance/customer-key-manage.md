@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Una volta configurata la chiave del cliente, informazioni su come gestirla ripristinando le chiavi di AKV e gestendo le autorizzazioni e i criteri di crittografia dei dati.
-ms.openlocfilehash: 21c1fedce1ebc09e6c33b74a1b2c035c90988e12
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 8f5f23fa1b8ce8baa8fafd3f29ca5fb8905887a1
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717307"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324258"
 ---
 # <a name="manage-customer-key"></a>Gestione della chiave del cliente
 
@@ -84,11 +84,11 @@ Per visualizzare un elenco di tutti i DEPs creati per Exchange Online e Skype fo
 
 2. Per restituire tutti i DEPs nell'organizzazione, eseguire il cmdlet Get-DataEncryptionPolicy senza parametri.
 
-  ```powershell
-  Get-DataEncryptionPolicy
-  ```
+   ```powershell
+   Get-DataEncryptionPolicy
+   ```
 
-  Per ulteriori informazioni sul cmdlet Get-DataEncryptionPolicy, vedere [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
+   Per ulteriori informazioni sul cmdlet Get-DataEncryptionPolicy, vedere [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Assegnare una DEP prima di eseguire la migrazione di una cassetta postale nel cloud
 
@@ -100,11 +100,11 @@ Per assegnare una DEP a una cassetta postale prima di eseguirne la migrazione a 
 
 2. Eseguire il cmdlet Set-MailUser.
 
-  ```powershell
-  Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
-  ```
+   ```powershell
+   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
+   ```
 
-  Dove *GeneralMailboxOrMailUserIdParameter* specifica una cassetta postale e *DATAENCRYPTIONPOLICYIDPARAMETER* è l'ID della funzionalità di protezione esecuzione programmi. Per ulteriori informazioni sul cmdlet Set-MailUser, vedere [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
+   Dove *GeneralMailboxOrMailUserIdParameter* specifica una cassetta postale e *DATAENCRYPTIONPOLICYIDPARAMETER* è l'ID della funzionalità di protezione esecuzione programmi. Per ulteriori informazioni sul cmdlet Set-MailUser, vedere [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Determinare la funzionalità DEP assegnata a una cassetta postale
 
@@ -167,6 +167,20 @@ L'output di questo cmdlet include:
   - **Registrato:** È stata applicata la crittografia a chiave del cliente e tutti i file in tutti i siti sono stati crittografati.
 
   - **Rolling:** È in corso un roll Key. Se la chiave per il servizio Geo è in corso, verranno visualizzate anche informazioni su quale percentuale di siti è stata completata l'operazione di roll Key in modo da poter monitorare lo stato di avanzamento.
+
+## <a name="unassign-a-dep-from-a-mailbox"></a>Annullamento dell'assegnazione di una funzionalità di protezione da una cassetta postale
+
+Per annullare l'assegnazione di una funzionalità di protezione esecuzione programmi da una cassetta postale, utilizzare il cmdlet Set-Mailbox PowerShell e impostare `DataEncryptionPolicy` su `$NULL` . L'esecuzione di questo cmdlet Annulla l'assegnazione della funzionalità DEP correntemente assegnata e la riesegue la crittografia della cassetta postale utilizzando la funzionalità DEP associata alle chiavi gestite Microsoft predefinite. Non è possibile annullare l'assegnazione della funzionalità DEP utilizzata dalle chiavi gestite Microsoft. Se non si desidera utilizzare le chiavi gestite Microsoft, è possibile assegnare un altro DEP alla cassetta postale.
+
+Per annullare l'assegnazione di DEP da una cassetta postale utilizzando il cmdlet Set-Mailbox PowerShell, eseguire la procedura seguente.
+
+1. Se si utilizza un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, [connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+
+2. Eseguire il cmdlet Set-Mailbox.
+
+   ```powershell
+   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+   ```
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Revocare le chiavi e avviare il processo del percorso di eliminazione dei dati
 
