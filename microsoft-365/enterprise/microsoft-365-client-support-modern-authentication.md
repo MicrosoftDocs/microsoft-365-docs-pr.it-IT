@@ -1,7 +1,7 @@
 ---
 title: Supporto delle app client Microsoft 365-autenticazione moderna
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano l'autenticazione moderna per Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f0357c357de2b8db355c539acda851fca7802d17
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3e771ce5630053ffec2bf325e88b75f9a0d6baaa
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691157"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332065"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Supporto delle app client Microsoft 365-autenticazione moderna
 

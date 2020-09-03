@@ -1,7 +1,7 @@
 ---
 title: Supporto delle app client Microsoft 365-accesso condizionale
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo vengono fornite informazioni sulle piattaforme, i client e i moduli di PowerShell che supportano l'accesso condizionale per Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60e1c7e9d8208682b715007d527d39b6f9613992
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2245b8fe9b235013bccc9ea2b80d6b6c86448a89
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691550"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332017"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Supporto delle app client Microsoft 365-accesso condizionale
 

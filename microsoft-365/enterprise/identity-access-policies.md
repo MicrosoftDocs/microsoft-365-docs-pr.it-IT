@@ -1,6 +1,6 @@
 ---
 title: Criteri di identità e accesso ai dispositivi comuni-Microsoft 365 per Enterprise | Documenti Microsoft
-description: Descrive i criteri per i consigli di Microsoft su come applicare i criteri e le configurazioni relativi all'identità e all'accesso ai dispositivi.
+description: Descrive i criteri e le configurazioni di identità e accesso ai dispositivi comuni consigliati.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898117"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332107"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -32,8 +32,8 @@ In questa guida viene descritto come distribuire i criteri consigliati in un amb
 
 Nel diagramma seguente viene illustrato il set di criteri consigliato. Indica il livello di protezione a cui si applica ogni criterio e se i criteri si applicano ai PC o ai telefoni e ai tablet oppure a entrambe le categorie di dispositivi. Indica anche dove sono configurati questi criteri.
 
-[ ![ Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 Nella parte restante di questo articolo viene descritto come configurare questi criteri. 
 
@@ -63,13 +63,13 @@ Una procedura consigliata consiste nel creare un gruppo di Azure AD per l'esclus
 
 Nel diagramma seguente viene fornito un esempio di assegnazione degli utenti ed esclusioni.
 
-![Esempio di assegnazione e esclusioni degli utenti per le regole dell'AMF](../media/identity-access-policies-assignment.png)
+![Esempio di assegnazione e esclusioni degli utenti per le regole dell'AMF](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 Nella figura "il team del progetto Top Secret X" viene assegnato un criterio di accesso condizionale che richiede *sempre*l'autenticazione master. Essere giudiziosi quando si applicano livelli di protezione superiori agli utenti. I membri del team di progetto saranno tenuti a fornire due forme di autenticazione ogni volta che accedono, anche se non visualizzano contenuto fortemente regolamentato.  
 
-Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati come gruppi di Microsoft 365. Questa impostazione è particolarmente importante per la distribuzione di Azure Information Protection (AIP) quando si proteggono i documenti in SharePoint Online.
+Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati come gruppi di Microsoft 365. Questo è particolarmente importante per la distribuzione di etichette di riservatezza durante la protezione dei documenti in SharePoint Online.
 
-![Acquisizione dello schermo per la creazione di gruppi di Microsoft 365](../media/identity-device-AAD-groups.png)
+![Acquisizione dello schermo per la creazione di gruppi di Microsoft 365](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Richiedere l'autenticazione a più fattori basata sul rischio di accesso

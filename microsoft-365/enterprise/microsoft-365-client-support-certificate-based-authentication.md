@@ -1,7 +1,7 @@
 ---
 title: Supporto delle app client Microsoft 365-autenticazione basata su certificato
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo sono disponibili informazioni dettagliate sul supporto delle app client Microsoft 365 per l'autenticazione basata su certificati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 870e6f39c054752a2a07848c34eecd0996e1816c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 89ae78b4cf5c5bb3cfb1575a5db76047f4299239
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691551"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332629"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Supporto delle app client Microsoft 365-autenticazione basata su certificato
 

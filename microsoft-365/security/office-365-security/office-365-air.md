@@ -16,18 +16,22 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Iniziare a utilizzare le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: c2020c3d46fcf17194e2560af53d9a26fca30629
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 14742df5d9dbd2f65a032250696dbc7c61210562
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327831"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336680"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Iniziare a usare l'analisi e la risposta automatizzate (AIR) in Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) piano 2 include potenti funzionalità di analisi e risposta automatizzate in grado di salvare il tempo e lo sforzo del team per le operazioni di sicurezza. Quando vengono attivati gli avvisi, spetta al team delle operazioni di sicurezza esaminare, assegnare priorità e rispondere a tali avvisi. Tenere il passo con il volume degli avvisi in ingresso può essere travolgente. Automatizzare alcune di queste informazioni può essere di aiuto. Con AIR, il team delle operazioni di sicurezza può concentrarsi sulle attività con priorità più alta senza perdere di vista gli avvisi attivati.
 
-In questo articolo viene descritto il [flusso globale](#the-overall-flow-of-air) dell'aria, [come ottenere l'aria](#how-to-get-air)e le [autorizzazioni necessarie](#required-permissions-to-use-air-capabilities) per configurare o utilizzare le funzionalità aeree. 
+In questo articolo sono contenute informazioni su:
+
+- [Flusso globale](#the-overall-flow-of-air) dell'aria
+- [Come ottenere aria](#how-to-get-air)
+- Le [autorizzazioni necessarie](#required-permissions-to-use-air-capabilities) per configurare o utilizzare le funzionalità aeree
 
 ## <a name="the-overall-flow-of-air"></a>Flusso globale dell'aria
 

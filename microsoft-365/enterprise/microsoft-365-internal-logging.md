@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 registrazione interna per Microsoft 365 Engineering
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: In questo articolo, trovare una spiegazione di come funziona la registrazione interna per i team di ingegneri di Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4c4b1db876a6b68ec852adbbd51afe7386a1855
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f87ba682a88a7efd93735b160af49bf5468ca2
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696113"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332509"
 ---
-# <a name="internal-logging-for-microsoft-365-engineering"></a>Registrazione interna per Microsoft 365 Engineering
+# <a name="internal-logging-for-microsoft-365-engineering"></a>Log interni per Microsoft 365 Engineering
 
 Oltre agli eventi e ai dati dei registri disponibili per i clienti, è presente anche un sistema di raccolta dati interno disponibile per gli ingegneri Microsoft 365 di Microsoft. Molti tipi diversi di dati di log vengono caricati da server Microsoft 365 a un servizio di elaborazione dati di grandi dimensioni interno denominato Cosmos. Ogni team di servizio carica i registri di controllo dai rispettivi server nel database Cosmos per l'aggregazione e l'analisi. Questo trasferimento dei dati si verifica su una connessione TLS convalidata FIPS 140-2 su porte e protocolli approvati utilizzando uno strumento di automazione proprietaria denominato Office Data Loader (FAD). Gli strumenti utilizzati in Microsoft 365 per la raccolta e l'elaborazione dei record di controllo non consentono modifiche permanenti o irreversibili al contenuto del record di controllo originale o all'ordine di tempo.
 

@@ -1,7 +1,7 @@
 ---
 title: Isolamento e controllo di accesso in Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: "Sintesi: una spiegazione dell'isolamento e del controllo di accesso all'interno delle diverse applicazioni di Microsoft 365."
-ms.openlocfilehash: 40a1f1d93fe34333366e456cc006ab2d1c700a83
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 53f60c09b94bdcc2515bcc5ff70dfbcd47f42bb4
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691282"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332329"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Isolamento e controllo di accesso in Microsoft 365
 

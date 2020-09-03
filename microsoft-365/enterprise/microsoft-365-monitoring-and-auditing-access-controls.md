@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 monitoraggio e controllo dell'accesso ai controlli
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Sintesi: un riepilogo dei diversi controlli di accesso al monitoraggio e di controllo disponibili in Microsoft 365.'
-ms.openlocfilehash: f1302c4056bfd605e35aae08d8f5355f8d204db2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ba79ba2263940e5677ada412f467a429e584b8ff
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691279"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332293"
 ---
 # <a name="monitoring-and-auditing-access-controls-in-microsoft-365"></a>Monitoraggio e controllo dei controlli di accesso in Microsoft 365
 

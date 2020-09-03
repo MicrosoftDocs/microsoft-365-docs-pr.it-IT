@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 distruzione dei dati
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Una panoramica dei criteri Microsoft relativi al riciclo, allo smaltimento o alla distruzione di unità disco e server del centro dati di Microsoft 365.
-ms.openlocfilehash: bd5afd427f55952066bac06d2bd4e61f45a4562f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 981903db68a79632285d7c5170aeb22014940a4a
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691160"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331850"
 ---
 # <a name="microsoft-365-data-destruction"></a>Microsoft 365 distruzione dei dati
 

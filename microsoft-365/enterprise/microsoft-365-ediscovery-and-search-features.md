@@ -1,7 +1,7 @@
 ---
 title: Panoramica delle funzionalità di ricerca e di Microsoft 365 eDiscovery
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Una panoramica della funzionalità di eDiscovery e di altre funzionalità di ricerca in Microsoft 365 per l'utilizzo e la trasparenza di controllo.
-ms.openlocfilehash: 6a30e1aa687807d61b788bd75fcc63129ff0aa0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691397"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331860"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Panoramica delle funzionalità di ricerca e di Microsoft 365 eDiscovery 
 
@@ -50,7 +50,7 @@ Nella tabella seguente vengono illustrate alcune delle informazioni visualizzate
 | EventSource | Indica che si è verificato un evento. I valori possibili sono SharePoint e ObjectModel. |
 | ID | ID della voce del report. L'ID identifica in modo univoco la voce del report. |
 | Operazione | Nome dell'utente o dell'attività, che corrisponde al valore selezionato nei risultati di visualizzazione per l'attività dell'utente. |
-| IDOrganizzazione | GUID per il servizio Microsoft 365 dell'organizzazione in cui si è verificato l'evento. |
+| OrganizationId | GUID per il servizio Microsoft 365 dell'organizzazione in cui si è verificato l'evento. |
 | UserAgent | Informazioni sul browser dell'utente, fornite dal browser. |
 | UserId | Utente che ha eseguito l'azione, specificata nella proprietà Operation, che ha provocato la registrazione del record. |
 | UserType | Tipo di utente che ha eseguito l'operazione. I valori riportati di seguito indicano il tipo di utente. |

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Riepilogo: configurare l'infrastruttura Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Microsoft 365."
-ms.openlocfilehash: a99259e8c60346665f76aeba3a8a440e0f9061f0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691466"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332341"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure
 
@@ -57,7 +57,7 @@ Per le prime tre subnet, specificare un nome e un singolo spazio di indirizzi IP
     
 2. Convertire i bit risultanti in formato decimale ed esprimerli come spazio di indirizzi con la lunghezza del prefisso impostata sulle dimensioni della subnet del gateway.
     
-Per un blocco di comandi di PowerShell e un'applicazione console C# o Python che esegua questo calcolo per l'utente, vedere [Address Space Calculator for Azure gateway Subnets](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) .
+Per un blocco di comandi di PowerShell e un'applicazione console C# o Python che esegua questo calcolo per l'utente, vedere [Address Space Calculator for Azure gateway Subnets](address-space-calculator-for-azure-gateway-subnets.md) .
   
 Consultare il reparto IT per determinare tali spazi di indirizzi in base allo spazio di indirizzi della rete virtuale.
   
