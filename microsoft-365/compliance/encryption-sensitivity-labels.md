@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229436"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334859"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -211,9 +211,9 @@ Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietari
 ### <a name="double-key-encryption"></a>Crittografia a chiave doppia
 
 > [!NOTE]
-> Al momento questa funzionalità è distribuita in anteprima pubblica. Per altre informazioni, vedere [Annuncio dell'anteprima pubblica della crittografia a chiave doppia per Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
+> Al momento questa funzionalità è disponibile in anteprima pubblica. Per altre informazioni, vedere [Annuncio dell'anteprima pubblica della crittografia a chiave doppia per Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
-Selezionare questa opzione solo dopo aver configurato il servizio di crittografia a chiave doppia e sarà necessario usare questa crittografia a chiave doppia per i documenti e i messaggi di posta elettronica a cui è applicata l'etichetta.
+Selezionare questa opzione solo dopo aver configurato il servizio di crittografia a chiave doppia e sarà necessario usare questa crittografia a chiave doppia per i file e i messaggi di posta elettronica a cui è applicata questa l'etichetta.
 
 Per altre informazioni, prerequisiti e istruzioni di configurazione, vedere [Crittografia a chiave doppia](double-key-encryption.md).
 
