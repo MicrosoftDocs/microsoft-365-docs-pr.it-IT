@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 71969a58acd64c3e830da398288249cbb8610b5f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 17c32ea53d860e54a7c9a8fcf70778151c28c539
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797794"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334849"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
@@ -506,9 +506,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
         <Match idRef="Keyword_Australia_Tax_File_Number" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_number_exclusions" />
-        </Any>
       </Pattern>
     </Entity>
 ```
@@ -526,39 +523,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - individual tax return
 - tax file number
 - TFN
-
-#### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
-
-- 00000000
-- 11111111
-- 22222222
-- 33333333
-- 44444444
-- 55555555
-- 66666666
-- 77777777
-- 88888888
-- 99999999
-- 000000000
-- 111111111
-- 222222222
-- 333333333
-- 444444444
-- 555555555
-- 666666666
-- 777777777
-- 888888888
-- 999999999
-- 0000000000
-- 1111111111
-- 2222222222
-- 3333333333
-- 4444444444
-- 5555555555
-- 6666666666
-- 7777777777
-- 8888888888
-- 9999999999
 
 ## <a name="austria-drivers-license-number"></a>Austria-numero della patente di guida
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
@@ -628,7 +592,7 @@ Combinazione a 24 caratteri di lettere, cifre e caratteri speciali
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -676,7 +640,7 @@ Combinazione di una lettera, sette cifre e uno spazio:
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -728,7 +692,9 @@ Sì
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
   
-- La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- La funzione ' Func_austria_eu_
+
+_or_equivalent ' trova contenuto che corrisponde al modello. 
     
 - Viene trovata una parola chiave from  `Keywords_austria_eu_ssn_or_equivalent` . 
     
@@ -1476,7 +1442,7 @@ Due lettere e seguite da sei cifre
   
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -1586,7 +1552,7 @@ Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -2864,20 +2830,28 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- card verification
+- 
+card verification
+
 - card identification number
 - CVN
 - ID
 - CVC2
 - CVV2
-- pin block
+- 
+pin block
 - security code
+
 - security number
+
 - security no
+
 - issue number
+
 - issue no
 - cryptogramme
-- numéro de sécurité
+- 
+numéro de sécurité
 - numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -2888,24 +2862,32 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- Cod. sicurezza
-- cod sicurezza
+- Cod.sicurezza
+- 
+cod sicurezza
 - n autorizzazione
 - Código
 - Codigo
-- Cod. SEG
-- cod seg
+- Cod.SEG
+- 
+cod seg
 - código de segurança
+
 - codigo de seguranca
+
 - codigo de segurança
+
 - código de seguranca
-- cód. Segurança
-- Cod. SEGURANCA Cod. Segurança
-- cód. seguranca
-- cód segurança
-- Cod SEGURANCA Cod Segurança
-- cód seguranca
+- cód.Segurança
+- Cod.seguranca
+- Cod.Segurança
+- cód.seguranca
+- cód Segurança
+- Cod seguranca
+- Cod Segurança
+- cód seguranca
 - número de verificação
+
 - numero de verificacao
 - ablauf
 - gültig bis
@@ -2913,54 +2895,80 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - gultig bis
 - gultigkeitsdatum
 - scadenza
-- data scad
+- 
+data scad
 - fecha de expiracion
+
 - fecha de venc
 - vencimiento
-- válido hasta
+- 
+válido hasta
 - valido hasta
 - VTO
-- data de expiração
+- 
+data de expiração
 - data de expiracao
+
 - data em que expira
 - validade
 - Valor
 - vencimento
-- Venc 
+- delle transazioni
+- numero transazione
+- numero di riferimento
+- セキュリティコード
+- セキュリティ コード
+- セキュリティナンバー
+- セキュリティ ナンバー
+- セキュリティ番号
+
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
 - Amex
 - american express
 - AmericanExpress
+- americano espresso
+
 - Esempio
 - Mastercard
 - master card
-- MC 
+- MC
 - Mastercard
-- master cards
-- diner's Club
+- 
+master cards
+- Diner ' s Club
 - diners club
 - DinersClub
+- individuare
 - discover card
 - discovercard
 - discover cards
 - JCB
+- BrandSmart
 - japanese card bureau
+
 - carte blanche
 - carteblanche
 - credit card
 - CC #
 - CC #:
-- expiration date
+- 
+expiration date
 - exp date
-- expiry date
-- Data d'expiration
-- date d'exp
-- date expiration
+
+- 
+expiry date
+- 
+date d’expiration
+- 
+date d'exp
+- 
+date expiration
 - bank card
 - Bankcard
-- card number
+- 
+card number
 - card num
 - cardnumber
 - cardnumbers
@@ -2986,14 +2994,36 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - atm cards
 - atmcards
 - Enroute
-- en route
+- 
+en route
 - card type
+
+- Cardmember Acct
+- account cardmember
+- Cardno
+- Scheda aziendale
+- Schede Corporate
+- Tipo di scheda
+- numero account scheda
+- account del membro della scheda
+- Cardmember Acct.
+- card no.
+
+- scheda No
+- card number
+
 - carte bancaire
+
 - carte de crédit
+
 - carte de credit
+
 - numéro de carte
+
 - numero de carte
+
 - nº de la carte
+
 - nº de carte
 - kreditkarte
 - Karte
@@ -3003,61 +3033,124 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
-- kartennr 
+- kartennr
 - kartennummer
 - kreditkartennummer
 - Kreditkarten-Nummer
-- carta di credito
+- 
+carta di credito
 - carta credito
-- carta
+- n.carta
 - n carta
-- Nr. carta
-- nr carta
+- Nr.carta
+- 
+nr carta
 - numero carta
+
 - numero della carta
+
 - numero di carta
+
 - tarjeta credito
+
 - tarjeta de credito
-- tarjeta crédito
-- tarjeta de crédito
+
+- 
+tarjeta crédito
+- 
+tarjeta de crédito
 - tarjeta de atm
+
 - tarjeta atm
+
 - tarjeta debito
+
 - tarjeta de debito
-- tarjeta débito
-- tarjeta de débito
+
+- 
+tarjeta débito
+- 
+tarjeta de débito
 - nº de tarjeta
-- No. de tarjeta
-- no de tarjeta
+- No.de tarjeta
+- No de Tarjeta
 - numero de tarjeta
+
 - número de tarjeta
+
 - tarjeta no
 - tarjetahabiente
-- cartão de crédito
+- 
+cartão de crédito
 - cartão de credito
+
 - cartao de crédito
+
 - cartao de credito
+
 - cartão de débito
-- cartao de débito
+
+- ○cartao de débito
+
 - cartão de debito
+
 - cartao de debito
+
 - débito automático
 - debito automatico
-- número do cartão
-- numero do cartão 
+
+- 
+número do cartão
+- numero do cartão
+
 - número do cartao
+
 - numero do cartao
+
 - número de cartão
+
 - numero de cartão
+
 - número de cartao
+
 - numero de cartao
-- nº do cartão
+
+- n º do una cartão
 - nº do cartao
-- n º. do cartão
-- no do cartão
-- no do cartao
-- No. do cartão
-- No. do cartao 
+- n º.do cartão
+- No do una cartão
+- No Do cartao
+- No.do cartão
+- No.do cartao
+- クレジットカード番号
+- クレジットカードナンバー
+- クレジットカード＃
+- クレジットカード
+- クレジット
+- クレカ
+- カード番号
+- カードナンバー
+- カード＃
+- アメックス
+- アメリカンエクスプレス
+- アメリカン エクスプレス
+- Visaカード
+- Visa カード
+- マスターカード
+- マスター カード
+- マスター
+- ダイナースクラブ
+- ダイナース クラブ
+- ダイナース
+- 有効期限
+- 期限
+- キャッシュカード
+- キャッシュ カード
+- カード名義人
+- カードの名義人
+- カードの名義
+- デビット カード
+- デビットカード
 
 ## <a name="croatia-drivers-license-number"></a>Numero della patente di guida croata
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del conducente dell'Unione europea.
@@ -3463,7 +3556,7 @@ Dieci cifre senza spazi e delimitatori
   
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -3550,7 +3643,7 @@ Otto cifre e una lettera:
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -3841,7 +3934,7 @@ Nove o dieci cifre con un backslash facoltativo:
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -4894,7 +4987,7 @@ Queste sono le entità nel tipo di informazioni riservate del conducente dell'Un
 - [Bulgaria](#bulgaria-drivers-license-number)
 - [Croazia](#croatia-drivers-license-number)
 - [Cipro](#cyprus-drivers-license-number)
-- [Czech](#czech-drivers-license-number)
+- [Ceco](#czech-drivers-license-number)
 - [Danimarca](#denmark-drivers-license-number)
 - [Estonia](#estonia-drivers-license-number)
 - [Finlandia](#finland-drivers-license-number)
@@ -4926,7 +5019,7 @@ Queste sono le entità del tipo di informazioni riservate del numero di identifi
 - [Bulgaria](#bulgaria-national-identification-number)
 - [Croazia](#croatia-identity-card-number)
 - [Cipro](#cyprus-national-identification-number)
-- [Czech](#czech-personal-identity-number)
+- [Ceco](#czech-personal-identity-number)
 - [Danimarca](#denmark-personal-identification-number)
 - [Estonia](#estonia-national-identification-number)
 - [Finlandia](#finland-national-identification-number)
@@ -4958,7 +5051,7 @@ Queste sono le entità del numero di passaporto typeThese informazioni riservate
 - [Bulgaria](#bulgaria-passport-number)
 - [Croazia](#croatia-passport-number)
 - [Cipro](#cyprus-passport-number)
-- [Czech](#czech-passport-number)
+- [Ceco](#czech-passport-number)
 - [Danimarca](#denmark-passport-number)
 - [Estonia](#estonia-passport-number)
 - [Finlandia](#finland-passport-number)
@@ -4989,7 +5082,7 @@ Queste sono le entità che si trovano nel codice di previdenza sociale dell'Unio
 - [Austria](#austria-social-security-number-or-equivalent-identification)
 - [Belgio](#belgium-social-security-number-or-equivalent-identification)
 - [Croazia](#croatia-social-security-number-or-equivalent-identification)
-- [Czech](#czech-social-security-number-or-equivalent-identification)
+- [Ceco](#czech-social-security-number-or-equivalent-identification)
 - [Danimarca](#denmark-social-security-number-or-equivalent-identification)
 - [Finlandia](#finland-social-security-number-or-equivalent-identification)
 - [Francia](#france-social-security-number-insee-or-equivalent-identification)
@@ -5009,7 +5102,7 @@ le entità hese sono incluse nel tipo di informazioni riservate del numero di id
 - [Bulgaria](#bulgaria-tax-identification-number)
 - [Croazia](#croatia-tax-identification-number)
 - [Cipro](#cyprus-tax-identification-number)
-- [Czech](#czech-tax-identification-number)
+- [Ceco](#czech-tax-identification-number)
 - [Danimarca](#denmark-tax-identification-number)
 - [Estonia](#estonia-tax-identification-number)
 - [Finlandia](#finland-tax-identification-number)
@@ -5630,7 +5723,7 @@ Nove cifre per le entità
   
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -6194,7 +6287,7 @@ Nove cifre senza spazi e delimitatori
   
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -6724,12 +6817,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
 - L'espressione regolare Regex_indonesia_id_card trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_indonesia_id_card.
-
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_indonesia_id_card trova contenuti che corrispondono al modello.
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -6737,10 +6827,6 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
   <Pattern confidenceLevel="85">
      <IdMatch idRef="Regex_indonesia_id_card"/>
      <Match idRef="Keyword_indonesia_id_card"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-  </Pattern>
 </Entity>
 ```
 
@@ -7213,7 +7299,7 @@ Sette cifre seguite da una lettera:
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -7505,7 +7591,7 @@ Due lettere o cifre seguite da sette cifre:
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -8450,7 +8536,7 @@ Otto cifre o lettere (senza distinzione tra maiuscole e minuscole)
   
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -8488,7 +8574,7 @@ Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di
   
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -8619,7 +8705,7 @@ Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -8924,7 +9010,7 @@ Sette cifre seguite da una lettera:
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -9033,7 +9119,7 @@ Nazionali non maltesi e soggetti maltesi: 9 cifre
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -9289,7 +9375,7 @@ Nove lettere o cifre
   
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -10222,7 +10308,7 @@ Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di
   
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -10581,7 +10667,7 @@ Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di
   
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -11077,7 +11163,7 @@ Sette cifre seguite da un carattere
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -11140,7 +11226,7 @@ Combinazione di lettere e numeri di otto o nove caratteri:
     
 ### <a name="checksum"></a>Checksum
 
-Non applicabile
+Non supportato
   
 ### <a name="definition"></a>Definizione
 
@@ -12264,7 +12350,16 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 - previdenza sociale
 - great britain
-- Insurance
+
+- Numero NI
+- NI No.
+- NI #
+- NI #
+- Insurance #
+- insurancenumber
+- nationalinsurance #
+- nationalinsurancenumber
+
     
 ## <a name="uk-tax-identification-number"></a>U.K. codice di identificazione fiscale
 Questa entità di tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate del numero di identificazione fiscale dell'Unione europea.
@@ -12699,14 +12794,18 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 55%,
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- Social Security 
-- Social Security# 
-- Soc Sec 
-- SSN 
-- SNSS 
-- SSN # 
-- SS # 
-- SSID 
+- Numero SSA
+- social security number
+- previdenza sociale #
+- previdenza sociale #
+- previdenza sociale No
+- Social Security#
+- Soc Sec
+- SSN
+- SNSS
+- SSN #
+- SS #
+- SSID
    
 ## <a name="us--uk-passport-number"></a>STATI UNITI/REGNO UNITO passport number
 Regno Unito numero di passaporto le informazioni riservate entità sono disponibili nel tipo di informazioni riservate del numero di passaporto dell'Unione europea e sono disponibili come entità di tipo di informazioni riservate stand-alone.

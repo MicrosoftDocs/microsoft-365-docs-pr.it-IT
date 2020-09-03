@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: L'aggiunta di nuove nuove soluzioni al centro conformità, l'aggiornamento delle funzionalità esistenti in base ai commenti o la documentazione aggiornata e rinnovata, Microsoft 365 consente di rimanere al di sopra del panorama di conformità in continua evoluzione. Scoprire cosa è stato fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868973"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336669"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità della conformità a Microsoft 365
 
@@ -36,6 +36,32 @@ L'aggiunta di nuove nuove soluzioni al [centro conformità di Microsoft 365](mic
 > [!TIP]
 > Interessato a cosa succede in altri centri di amministrazione? Consultare questi articoli:<br>[Novità dell'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novità dell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novità di Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Per informazioni sulle funzionalità di Microsoft 365 che sono state avviate, sono in sviluppo, sono state annullate o sono state rilasciate in precedenza. [365](https://www.microsoft.com/en-us/microsoft-365/roadmap)
+
+## <a name="july-2020"></a>Luglio 2020
+
+### <a name="spotlight-on-help-docs"></a>Spotlight sui documenti della Guida
+
+Per facilitare la comprensione delle soluzioni di conformità che consentono di proteggere e gestire i dati sensibili dell'organizzazione, sono state create due nuove pagine di destinazione con una panoramica del modo in cui le soluzioni interagiscono per raggiungere tali obiettivi, inclusi i collegamenti ai documenti correlati, in modo da poterli immergere ulteriormente.
+
+[Microsoft Information Protection in Microsoft 365](protect-information.md)<br>
+[Microsoft Information Governance in Microsoft 365](manage-Information-governance.md)
+
+### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Advanced eDiscovery: aggiungere origini dati non detentive ai casi
+
+Aggiungere dati a un caso senza che sia necessario associarlo a un custode (noto come [origini dati non detentive](non-custodial-data-sources.md)). Se è necessario inserire un blocco di dati non detentivi, è possibile farlo utilizzando la nuova funzionalità di indicizzazione avanzata.
+
+### <a name="data-connectors-hr-connector-enhancements"></a>Connettori dati: miglioramenti del connettore HR
+
+(In anteprima) Una nuova versione del [connettore HR](import-hr-data.md) consente di importare i dati relativi alle modifiche a livello di processo, alle revisioni delle prestazioni e ai piani di miglioramento delle prestazioni. Questi dati possono quindi essere utilizzati in diverse [politiche di rischio Insider](insider-risk-management-policies.md) per rilevare attività correlate.
+
+### <a name="retention-labels-new-support-for-email"></a>Etichette di conservazione: nuovo supporto per la posta elettronica
+
+È ora possibile creare un' [etichetta di conservazione](retention.md#retention-labels) per iniziare a mantenere la posta elettronica in base al momento in cui i messaggi sono stati etichettati. Questo non si applica agli elementi del calendario, che verranno mantenuti in base alla data di invio dell'elemento.
+
+### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>Etichette di riservatezza: nuova funzionalità e miglioramento
+
+- (In anteprima) Quando si configurano le impostazioni di crittografia per un'etichetta, cercare la nuova opzione per usare la [crittografia a chiave doppia](encryption-sensitivity-labels.md#double-key-encryption) per proteggere ulteriormente i file etichettati e i messaggi di posta elettronica.
+- Quando si creano o si eliminano etichette di riservatezza o si creano, modificano o eliminano i criteri di etichetta, le modifiche vengono sincronizzate entro 1 ora per tutti gli utenti, le app e i servizi.
 
 ## <a name="june-2020"></a>Giugno 2020
 
@@ -263,7 +289,7 @@ Se è stato utilizzato il Centro sicurezza & conformità di Office 365 per soddi
 |Ricerca contenuto|Ricerca di contenuti > di ricerca <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Ricerca contenuto <br/> https://compliance.microsoft.com/contentsearch |[Ricerca di contenuto in Office 365](search-for-content.md) |
 |Connettori dati|Information Governance > archiviazione dei dati di terze parti <br/> https://protection.office.com/nativeconnector | Connettori dati <br/> https://compliance.microsoft.com/connectorlanding |[Archiviare i dati di terze parti](archiving-third-party-data.md)|
 |Prevenzione della perdita di dati|Prevenzione della perdita di dati <br/> https://protection.office.com/datalossprevention |Prevenzione della perdita di dati <br/> https://compliance.microsoft.com/datalossprevention |[Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)|
-|Richieste del soggetto dei dati |Privacy dei dati > richieste del soggetto dei dati <br/> https://protection.office.com/dsrcases |Richieste del soggetto dei dati <br/> https://compliance.microsoft.com/datasubjectrequest |[Gestire le richieste del soggetto dei dati di GDPR con lo strumento di gestione dei casi DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
+|Richieste degli interessati |Privacy dei dati > richieste del soggetto dei dati <br/> https://protection.office.com/dsrcases |Richieste del soggetto dei dati <br/> https://compliance.microsoft.com/datasubjectrequest |[Gestire le richieste del soggetto dei dati di GDPR con lo strumento di gestione dei casi DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > Core <br/> https://compliance.microsoft.com/classicediscovery |[Gestire casi di eDiscovery](ediscovery-cases.md) |
 |Events|Eventi > di gestione dei record <br/> https://protection.office.com/events |Scheda eventi > di gestione dei record <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Avviare la conservazione al verificarsi di un evento](event-driven-retention.md)|
 |Piano di archiviazione|Gestione dei record > piano file <br/> https://protection.office.com/fileplan |Scheda Gestione record > piano file <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Usare il piano di archiviazione per gestire le etichette di conservazione](file-plan-manager.md)|
@@ -293,20 +319,3 @@ Andare a [limitare l'accesso al contenuto utilizzando le etichette di riservatez
 ### <a name="update-to-data-investigations"></a>Aggiornamento alle indagini sui dati
 
 Quando si esegue un'analisi dei dati, è ora possibile eliminare gli elementi dai percorsi originali. Questo significa che è possibile eliminare gli elementi da cassette postali di Exchange, siti di SharePoint e account di OneDrive nell'organizzazione. Dal momento che gli elementi sono stati raccolti come prova, è possibile che vengano conservate copie del gruppo di prove, in modo da poter indagare ulteriormente o conservare come riferimento. [Altre informazioni](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) Quando si esegue un'analisi dei dati, è ora possibile eliminare gli elementi dai percorsi originali. Questo significa che è possibile eliminare gli elementi da cassette postali di Exchange, siti di SharePoint e account di OneDrive nell'organizzazione. Dal momento che gli elementi sono stati raccolti come prova, è possibile che vengano conservate copie del gruppo di prove, in modo da poter indagare ulteriormente o conservare come riferimento. Per ulteriori informazioni, vedere [gestire un problema di fuoriuscita dei dati in Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) . 
-
-## <a name="july-2019"></a>Luglio 2019
-
-### <a name="new-admin-roles"></a>Nuovi ruoli di amministratore
-
-Sono stati rilasciati due nuovi ruoli di amministratore che consentono di gestire la sicurezza e la conformità nell'org. Dillo a tutti i tuoi amici.
-
-- **Amministratore dei dati di conformità**. Gli utenti che dispongono di questo ruolo dispongono delle autorizzazioni per proteggere e monitorare i dati nel centro conformità di Microsoft 365, nell'interfaccia di amministrazione di Microsoft 365 e in Azure. Possono anche gestire tutto l'interfaccia di amministrazione di Exchange, Compliance Manager, teams & interfaccia di amministrazione di Skype for business e creare ticket di supporto per Azure e Microsoft 365.
-- **Operatore di sicurezza**. Gli utenti che dispongono di questo ruolo possono gestire gli avvisi e disporre dell'accesso globale in sola lettura alle funzionalità correlate alla sicurezza, inclusi tutti gli elementi presenti in Microsoft 365 Security Center, Azure Active Directory, Identity Protection, Privileged Identity Management e Office 365 Security & Compliance Center.
-
-[Ulteriori informazioni su questi ruoli](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
-
-### <a name="search-and-filtering-for-reports"></a>Ricerca e filtro per i report
-
-Non è più possibile scorrere un mare di report per trovare quelli desiderati. È ora possibile cercare i report (basati sui rispettivi titoli) e filtrare su categorie quali "label" e "Compliance" e fonti quali "Office 365" e "Microsoft cloud app Security".
-
-![Acquisizione dello schermo dei pulsanti di ricerca e del filtro per i report con un filtro applicato](../media/mcc_report_filtering.png)

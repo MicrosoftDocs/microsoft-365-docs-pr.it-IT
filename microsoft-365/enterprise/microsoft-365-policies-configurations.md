@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 9eaea7579faedace50ca76a69997fbfd83e452bb
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321922"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332750"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -161,7 +161,7 @@ La tabella di cui sopra riflette l'andamento di molte organizzazioni a supportar
 ![Procedura per configurare l'accesso a identità e dispositivi.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Configurare le funzionalità di identità dei prerequisiti e le relative impostazioni.
-2. Configurare i criteri di accesso condizionale per l'identità e l'accesso più comuni.
+2. Configurare i criteri di accesso condizionale e di identità comuni.
 3. Configurare i criteri di accesso condizionale per gli utenti guest ed esterni.
 4. Configurare i criteri di accesso condizionale per le app cloud di Microsoft 365, ad esempio Microsoft teams, Exchange Online e SharePoint.
 

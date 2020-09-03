@@ -18,16 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come aggiungere i risultati di ricerca o gli esempi di tali risultati di ricerca a un set di analisi del caso di eDiscovery avanzato.
-ms.openlocfilehash: 687cc33c0e7e6a09fb352e9c13058a6fcac30053
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 6eed13c2096ad3cd33fbc7af93399824866b17c2
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814528"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336654"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un insieme da rivedere
 
-Quando si è soddisfatti dei risultati di una ricerca e si è pronti per esaminare e analizzare i risultati della ricerca, è possibile aggiungerli a un set di revisione nel caso. La copia dei dati originali nel set di revisione facilita anche la revisione e il processo di analisi fornendovi strumenti di analisi avanzati, come il rilevamento di temi, il rilevamento quasi duplicati e l'identificazione dei thread di posta elettronica. È inoltre possibile aggiungere dati provenienti da origini dati non Microsoft 365 a un set di revisione in modo da poter esaminare tali dati oltre ai dati raccolti da Microsoft 365. 
+Quando si è soddisfatti dei risultati di una ricerca e si è pronti per esaminare e analizzare i risultati della ricerca, è possibile aggiungerli a un set di revisione nel caso. La copia dei dati originali nel set di revisione facilita anche la revisione e il processo di analisi fornendovi strumenti di analisi avanzati, come il rilevamento di temi, il rilevamento quasi duplicati e l'identificazione dei thread di posta elettronica. È inoltre possibile aggiungere dati provenienti da origini dati non Microsoft 365 a un set di revisione in modo da poter esaminare tali dati oltre ai dati raccolti da Microsoft 365.
 
 Quando si aggiungono i risultati di una ricerca a un set di revisione (i set di revisione in un caso sono elencati nella scheda dei **set di revisione** ), si verificano le operazioni seguenti:
 
@@ -35,27 +35,25 @@ Quando si aggiungono i risultati di una ricerca a un set di revisione (i set di 
 
 - Tutti gli elementi nei risultati della ricerca vengono copiati dall'origine dati originale nei servizi Live e copiati in una posizione di archiviazione sicura di Azure nel cloud Microsoft.
 
-- Tutti gli elementi (inclusi il contenuto e i metadati) vengono reindicizzati in modo che tutti i dati del set di revisione siano completamente ricercabili durante la revisione dei dati del caso. Reindicizzare i risultati dei dati in ricerche accurate e veloci quando si esegue una ricerca nei dati del set di verifica durante l'analisi del caso.
+- Tutti gli elementi (inclusi il contenuto e i metadati) vengono reindicizzati in modo che tutti i dati del set di revisione siano completamente ricercabili durante la revisione dei dati del caso. La reindicizzazione dei risultati dei dati viene eseguita in ricerche accurate e veloci quando si esegue una ricerca nei dati del set di verifica durante l'analisi del caso.
 
 Per aggiungere dati a un set di revisione, fare clic su una ricerca nella scheda **ricerche** e quindi fare clic su **Aggiungi risultati al set di revisione** nella pagina a comparsa.
 
-![Aggiunta di dati a un set di Revisione](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+È possibile aggiungere a un set di revisione esistente o creare un nuovo set di revisione.  Se si aggiunge un nuovo set di revisione, specificare il nome e quindi fare clic su **Aggiungi** per visualizzare la pagina del riquadro a comparsa.
 
-È possibile aggiungere a un set di revisione esistente o creare un nuovo set di revisione.  Se si aggiunge un nuovo set di revisione, specificare il nome e quindi fare clic su **Aggiungi**.
+![Selezionare un set di revisione e configurare le opzioni di raccolta](../media/AeD_AddToReviewSet.png)
 
-![Selezionare un set di Revisione](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi provenienti dalle origini dati originali in Microsoft 365 (ad esempio, da cassette postali e siti), copiarli nel percorso di archiviazione di Azure (questo processo di copia viene chiamato anche *ingestione*) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di riesame per avviare il processo di filtro, revisione, tagging ed esportazione dei dati nel set di revisione.
 
 ## <a name="define-options-to-scope-your-collection-for-review"></a>Definire le opzioni per l'ambito della raccolta per la revisione
 
-Quando si aggiunge il contenuto di una ricerca a un set di revisione esistente o ne si crea uno nuovo, si dispone di opzioni per la raccolta del contenuto per la Revisione:
+Quando si aggiunge il contenuto di una ricerca a un set di revisione esistente o nuovo, sono disponibili le opzioni seguenti per la raccolta del contenuto per la Revisione:
 
-- **Set di riesame colloquiale** -gli elementi aggiunti al set di revisione verranno abilitati per le conversazioni filettate che consentono di controllare il contenuto nel contesto della conversazione avanti e indietro, vedere altre informazioni in questo articolo [set di riesami di conversazione]
+- **Includi versioni di SharePoint (beta)**: utilizzare questa opzione per abilitare l'insieme di tutte le versioni di un documento di SharePoint per i limiti di versione e i parametri di ricerca dell'insieme. Se si seleziona questa opzione, si aumenterà significativamente le dimensioni degli elementi che verranno aggiunti al set di revisione.
 
-- **Abilitazione del recupero per** gli allegati moderni-utilizzare questo controllo per includere gli allegati moderni o i file collegati nell'insieme per ulteriori riesami; Per ulteriori informazioni sui nuovi nomi di campi disponibili per raggruppare il contenuto, vedere [Document Metadata Fields in Advanced eDiscovery]
+- **Opzioni di recupero**delle conversazioni: gli elementi aggiunti al set di riesame sono abilitati per le conversazioni filettate che consentono di controllare il contenuto nel contesto della conversazione avanti e indietro. Per ulteriori informazioni, vedere [rivedere le conversazioni in Advanced eDiscovery](conversation-review-sets.md).
 
-- **Includi versioni di SharePoint (beta)** -questo controllo consente la raccolta di tutte le versioni di un file di SharePoint per i limiti di versione e i parametri di ricerca dell'insieme. Nota: questo controllo aumenterà significativamente le dimensioni dell'insieme
-
-L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi provenienti dalle origini dati originali in Microsoft 365 (ad esempio, da cassette postali e siti), copiarli nel percorso di archiviazione di Azure (questo processo di copia viene chiamato anche *ingestione*) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di riesame per avviare il processo di filtro, revisione, tagging ed esportazione dei dati nel set di revisione.
+- **Abilitare il recupero per gli allegati moderni**: utilizzare questa opzione per includere gli allegati moderni o i file collegati nell'insieme per ulteriori riesami. Per ulteriori informazioni sulle proprietà disponibili per la ricerca relative agli allegati moderni, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## <a name="add-a-sample-to-a-review-set"></a>Aggiungere un esempio a un set di Revisione
 

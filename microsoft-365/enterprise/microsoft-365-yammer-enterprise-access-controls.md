@@ -1,7 +1,7 @@
 ---
 title: Controlli di accesso di Microsoft 365 Yammer Enterprise
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo è incluso un breve riepilogo sui controlli di accesso di Yammer Enterprise nell'ambiente di produzione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8bdf357ddd7f5c0b549d291fd4732924608085b9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: b7e1ceae1b7ddda4c2eac96cd581a612768f1461
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696131"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332665"
 ---
 # <a name="yammer-enterprise-access-controls"></a>Controlli di accesso di Yammer Enterprise 
 
