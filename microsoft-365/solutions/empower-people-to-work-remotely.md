@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
+ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configurare le funzionalità di sicurezza e l'infrastruttura di servizio necessarie per consentire ai lavoratori di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: b0f6816ad758f374f2512076939cfa6392b748de
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898129"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357303"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Aumentare la produttività dei lavoratori remoti con Microsoft 365
 
@@ -37,13 +37,33 @@ Microsoft 365 offre funzionalità che consentono ai tuoi dipendenti di lavorare 
 
 ![Aumentare la produttività dei lavoratori remoti con Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| Funzionalità chiave | Descrizione |
-|:-------|:-----|
-| Connesso | Da qualunque parte del mondo e in qualsiasi momento, i dipendenti che lavorano a distanza possono accedere a: <ul><li>Dati e servizi basati su cloud tramite la propria sottoscrizione a Microsoft 365. </li><li>Risorse dell'organizzazione, ad esempio quelle offerte dai data center delle applicazioni locali.</li></ul> |
-| Protezione | Gli accessi sono garantiti con l’autenticazione a più fattori (MFA), e le caratteristiche di sicurezza predefinite di Microsoft 365 e Windows 10 proteggono contro malware, attacchi dannosi e perdite dei dati. |
-| Gestione | I dispositivi dei lavoratori remoti possono essere gestiti dal cloud tramite le impostazioni di sicurezza, le app consentite e la richiesta della conformità con i sistemi sanitari. |
-| Collaborazione e produttività | I dipendenti che lavorano a distanza possono essere produttivi come quelli in ufficio in modi altamente collaborativi, tramite:  <ul><li>Riunioni online e sessioni di chat con Teams. </li><li>Aree di lavoro condivise per l’archiviazione di file basata su cloud, con l’accessibilità globale e la collaborazione in tempo reale di SharePoint e OneDrive. </li><li>Attività e flussi di lavoro condivisi per suddividere il lavoro e portare a termine le attività. </li></ul> |
-|||
+Guardare questo video per una panoramica del processo di distribuzione.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
+Questa soluzione include queste funzionalità chiave.
+
+- Connesso
+
+  Da qualunque parte del mondo e in qualsiasi momento, i dipendenti che lavorano a distanza possono accedere a: 
+
+  - Dati e servizi basati su cloud tramite la propria sottoscrizione a Microsoft 365. 
+  - Risorse dell'organizzazione, ad esempio quelle offerte dai data center delle applicazioni locali.
+
+- Protezione
+
+  Gli accessi sono garantiti con l’autenticazione a più fattori (MFA), e le caratteristiche di sicurezza predefinite di Microsoft 365 e Windows 10 proteggono contro malware, attacchi dannosi e perdite dei dati.
+
+- Gestione
+
+  I dispositivi dei lavoratori remoti possono essere gestiti dal cloud tramite le impostazioni di sicurezza, le app consentite e la richiesta della conformità con i sistemi sanitari.
+
+- Collaborazione e produttività
+
+  I dipendenti che lavorano a distanza possono essere produttivi come quelli in ufficio in modi altamente collaborativi, tramite: 
+  - Riunioni online e sessioni di chat con Teams. 
+  - Aree di lavoro condivise per l’archiviazione di file basata su cloud, con l’accessibilità globale e la collaborazione in tempo reale di SharePoint e OneDrive.
+  - Attività e flussi di lavoro condivisi per suddividere il lavoro e portare a termine le attività. 
 
 Per un’esperienza di accesso senza soluzione di continuità, è necessario sincronizzare gli account utente locali di Active Directory Domain Services (AD DS) con Azure Active Directory (Azure AD). Per proteggere i dispositivi Windows 10, è necessario registrarli in Intune. Ecco una panoramica generale dell'infrastruttura.
 
