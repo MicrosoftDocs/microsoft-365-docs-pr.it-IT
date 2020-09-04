@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Informazioni su come è possibile reimpostare le password utilizzando lo strumento di reimpostazione della password self-service.
-ms.openlocfilehash: 288613023ee61626bf12f7090ad0ff73139ef06d
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1684afd1baf32acc6c4245938b2ac7ee024d7374
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780590"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361808"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
-Cosa fare per non ricevere più richieste di modifica delle password degli utenti? Come amministratore di Microsoft 365, è possibile consentire agli utenti di utilizzare lo [strumento di reimpostazione della password in modalità self-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) in modo che non sia necessario reimpostare le password. Un gran risparmio di tempo! 
+Come amministratore di Microsoft 365, è possibile consentire agli utenti di utilizzare lo [strumento di reimpostazione della password in modalità self-service](https://go.microsoft.com/fwlink/p/?LinkId=522677) in modo che non sia necessario reimpostare le password. Un gran risparmio di tempo!
   
-Ecco alcune informazioni utili:
+## <a name="before-you-begin"></a>Prima di iniziare
   
 - Si ottiene la reimpostazione della password in modalità self-service per gli utenti Cloud **gratis** con qualsiasi piano di Microsoft 365 business, Education o no profit paid. Non funziona con Microsoft 365 Trial.
 
@@ -43,13 +43,17 @@ Ecco alcune informazioni utili:
 
 - **Se si utilizza Active Directory locale**, non si applicano i due punti sopra riportati. Piuttosto, è possibile configurare questa impostazione, ma **richiede un abbonamento a pagamento ad Azure ad Premium**.
 
-Guardare un breve video su come consentire agli utenti di reimpostare le proprie password. <br><br>
+Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per eseguire questa procedura, è necessario eseguire l'accesso con l'account di amministratore di Microsoft 365. [Che cos'è un account di amministratore?](../admin-overview/admin-overview.md)
+
+Per eseguire questa procedura è necessario essere un [amministratore globale o una password](about-admin-roles.md) .
+
+## <a name="watch-let-users-reset-their-own-passwords"></a>Watch: Consenti agli utenti di reimpostare le proprie password
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="let-people-reset-their-own-passwords"></a>Consentire alle persone di reimpostare le proprie password
+## <a name="steps-let-people-reset-their-own-passwords"></a>Passaggi: consentire alle persone di reimpostare le proprie password
 
 Con questi passaggi si attiva la reimpostazione della password in modalità self-service per tutti gli utenti dell'azienda.
   
@@ -83,10 +87,10 @@ Con questi passaggi si attiva la reimpostazione della password in modalità self
   
 7. Quando gli utenti accedono, verrà richiesto di immettere ulteriori informazioni di contatto che consentiranno di reimpostare la password in futuro.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Impostare i criteri di scadenza delle password per l'organizzazione](../manage/set-password-expiration-policy.md)
-  
+
 [Impostare la password di un singolo utente in modo che non scada mai](set-password-to-never-expire.md)
 
 [Video per la formazione di Microsoft 365 Business](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

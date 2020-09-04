@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare il rapporto di dominio non accettato nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità per monitorare i messaggi provenienti dall'organizzazione locale in cui il dominio del mittente non è configurato in Microsoft 365.
-ms.openlocfilehash: ef5f1c26168347b6696e90292d9c957e63615c0f
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 02692fbded20aa5062ce8add83925fb65c116630
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826942"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358579"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Rapporto di dominio non accettato nel centro sicurezza & Compliance
 
-Il rapporto di **dominio non accettato** nel [Dashboard del flusso di posta](mail-flow-insights-v2.md) nel centro sicurezza & conformità Visualizza informazioni sui messaggi provenienti dall'organizzazione di posta elettronica locale, in cui il dominio del mittente non è configurato come dominio accettato nell'organizzazione Microsoft 365.
+Il rapporto di **dominio non accettato** nel [Dashboard del flusso di posta](mail-flow-insights-v2.md) nel [Centro sicurezza & conformità](https://protection.office.com) Visualizza informazioni sui messaggi provenienti dall'organizzazione di posta elettronica locale, in cui il dominio del mittente non è configurato come dominio accettato nell'organizzazione Microsoft 365.
 
 Microsoft 365 potrebbe limitare tali messaggi se si dispone di dati per dimostrare che l'intento di questi messaggi è dannoso. Pertanto, è importante capire cosa succede e risolvere il problema.
 

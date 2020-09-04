@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Gli amministratori possono ottenere informazioni sull'Insight del flusso di posta in uscita e in ingresso nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 920c1212f4d6dee508704c93272e48140e199710
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 87ea7faed2e2387c31fdb06abaf242a2a3aea76e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826894"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357423"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Insight sul flusso di posta in uscita e in ingresso nel centro sicurezza & Compliance
 
-L'Insight sul **flusso di posta in uscita e in ingresso** nel dashboard del flusso di [posta](mail-flow-insights-v2.md) nel centro sicurezza & conformità unisce le informazioni del [rapporto connettore](view-mail-flow-reports.md#connector-report) e il precedente **rapporto di panoramica TLS** in un'unica posizione.
+L'Insight sul **flusso di posta in uscita e in ingresso** nel dashboard del flusso di [posta](mail-flow-insights-v2.md) nel [Centro sicurezza & conformità](https://protection.office.com) unisce le informazioni del [rapporto connettore](view-mail-flow-reports.md#connector-report) e il precedente **rapporto di panoramica TLS** in un'unica posizione.
 
 Il widget Visualizza la crittografia TLS utilizzata per la connessione quando i messaggi vengono recapitati da e verso l'organizzazione. Le connessioni stabilite con altri servizi di posta elettronica vengono crittografate tramite TLS quando TLS viene offerto da entrambi i lati. Il widget offre un'istantanea dell'ultima settimana di flusso di posta.
 

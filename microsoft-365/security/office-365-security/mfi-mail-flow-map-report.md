@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono imparare a usare la mappa del flusso di posta nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità per visualizzare e monitorare la modalità di flusso di posta da e verso la propria organizzazione su connettori e senza l'utilizzo di connettori.
-ms.openlocfilehash: d27513b905a2b6c1a7ae366040e9e29b2d67b258
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e144d1d42603fbf2a8f031b1cf7584b6e6ed5c7b
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827002"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358591"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mappa del flusso di posta elettronica nel centro sicurezza & Compliance
 
-La **mappa del flusso** di posta nel [Dashboard del flusso di posta](mail-flow-insights-v2.md) elettronica nel centro sicurezza & conformità fornisce informazioni su come scorre la posta attraverso la propria organizzazione. È possibile utilizzare queste informazioni per apprendere modelli, identificare anomalie e correggere i problemi che si verificano.
+La **mappa del flusso** di posta nel [Dashboard del flusso di posta](mail-flow-insights-v2.md) elettronica nel [Centro sicurezza & conformità](https://protection.office.com) fornisce informazioni su come scorre la posta attraverso la propria organizzazione. È possibile utilizzare queste informazioni per apprendere modelli, identificare anomalie e correggere i problemi che si verificano.
 
 ![Widget mappa del flusso di posta elettronica nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/mfi-mail-flow-map-widget.png)
 

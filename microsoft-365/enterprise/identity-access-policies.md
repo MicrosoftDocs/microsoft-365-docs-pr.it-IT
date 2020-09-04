@@ -16,127 +16,136 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 4cbc4ceec734587137a284dd800f77b712c0168d
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332107"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358021"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
-In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
+In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure Active Directory (Azure AD). 
 
 In questa guida viene descritto come distribuire i criteri consigliati in un ambiente di cui è stato eseguito un nuovo provisioning. La configurazione di questi criteri in un ambiente lab separato consente di comprendere e valutare i criteri consigliati prima di eseguire l'implementazione della distribuzione negli ambienti di preproduzione e di fabbricazione. Il nuovo ambiente di cui è stato effettuato il provisioning può essere solo cloud o ibrido.  
 
 ## <a name="policy-set"></a>Set di criteri 
 
-Nel diagramma seguente viene illustrato il set di criteri consigliato. Indica il livello di protezione a cui si applica ogni criterio e se i criteri si applicano ai PC o ai telefoni e ai tablet oppure a entrambe le categorie di dispositivi. Indica anche dove sono configurati questi criteri.
+Nel diagramma seguente viene illustrato il set di criteri consigliato. Indica il livello di protezione a cui si applica ogni criterio e se i criteri si applicano ai PC o ai telefoni e ai tablet oppure a entrambe le categorie di dispositivi. Indica inoltre la posizione in cui vengono configurati i criteri.
 
 [ ![ Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 Nella parte restante di questo articolo viene descritto come configurare questi criteri. 
 
-L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare i dispositivi in Intune per garantire che il dispositivo sia in possesso dell'utente desiderato. È inoltre necessario registrare i dispositivi in Intune prima di applicare i criteri di conformità del dispositivo.
+>[!Note]
+>È consigliabile utilizzare l'autenticazione a più fattori (AMF) prima di eseguire la registrazione dei dispositivi in Intune per garantire che il dispositivo sia in possesso dell'utente desiderato. Prima di poter applicare i criteri di conformità del dispositivo, è necessario registrare i dispositivi in Intune.
+>
 
-Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine indicato in questa tabella. Tuttavia, i criteri dell'AMF per la protezione sensibile e altamente regolamentata possono essere implementati in qualsiasi momento.
-
+Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine indicato in questa tabella. Tuttavia, i criteri dell'AMF per i livelli di protezione sensibili e altamente regolamentati possono essere implementati in qualsiasi momento.
 
 |Livello di protezione|Criteri|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](#require-mfa-based-on-sign-in-risk)| |
-|        |[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication)|I client che non utilizzano l'autenticazione moderna possono ignorare le regole di accesso condizionale, quindi è importante bloccarle|
-|        |[Gli utenti a rischio elevato devono modificare la password](#high-risk-users-must-change-password)|Impone agli utenti di modificare la propria password al momento dell'accesso se viene rilevata un'attività ad alto rischio per il proprio account|
-|        |[Applicare i criteri di protezione dei dati dell'APP](#apply-app-data-protection-policies)|Un criterio per ogni piattaforma (iOS, Android, Windows). I criteri di protezione delle app di Intune (APP) sono insiemi predefiniti di protezione, dal livello 1 al livello 3.|
-|        |[Richiedere applicazioni approvate e protezione delle APP](#require-approved-apps-and-app-protection)|Applicazione della protezione delle app per dispositivi mobili per telefoni e Tablet|
-|        |[Definire i criteri di conformità del dispositivo](#define-device-compliance-policies)|Un criterio per ogni piattaforma|
-|        |[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Impone la gestione di Intune dei PC|
-|**Sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
-|         |[Richiedere PC conformi *e* dispositivi mobili](#require-compliant-pcs-and-mobile-devices)|Impone la gestione di Intune per PC e telefono/tablet|
+|        |[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication)|I client che non utilizzano l'autenticazione moderna possono ignorare i criteri di accesso condizionale, pertanto è importante bloccarli.|
+|        |[Gli utenti a rischio elevato devono modificare la password](#high-risk-users-must-change-password)|Impone agli utenti di modificare la propria password al momento dell'accesso se viene rilevata un'attività ad alto rischio per il proprio account.|
+|        |[Applicare i criteri di protezione dei dati dell'app](#apply-app-data-protection-policies)|Un criterio di protezione delle app di Intune per ogni piattaforma (Windows, iOS/iPados, Android).|
+|        |[Richiedere applicazioni approvate e protezione delle app](#require-approved-apps-and-app-protection)|Impone la protezione delle app per dispositivi mobili per telefoni e tablet usando iOS, iPados o Android.|
+|        |[Definire i criteri di conformità del dispositivo](#define-device-compliance-policies)|Un criterio per ogni piattaforma.|
+|        |[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Impone la gestione di Intune dei PC con Windows o MacOS.|
+|**Sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio*o *alto*](#require-mfa-based-on-sign-in-risk)| |
+|         |[Richiedere PC conformi *e* dispositivi mobili](#require-compliant-pcs-and-mobile-devices)|Impone la gestione di Intune per i PC (Windows o MacOS) e telefoni o tablet (iOS, iPados o Android).|
 |**Riservatezza elevata**|[Richiede *sempre* l'autenticazione Master](#require-mfa-based-on-sign-in-risk)|
 | | |
 
-## <a name="assigning-policies-to-users"></a>Assegnazione di criteri agli utenti
+## <a name="assigning-policies-to-groups-and-users"></a>Assegnazione di criteri a gruppi e utenti
+
 Prima di configurare i criteri, identificare i gruppi di Azure AD che si sta utilizzando per ogni livello di protezione. In genere, la protezione di base si applica a tutti gli altri nell'organizzazione. Un utente incluso sia per la linea di base che per la protezione riservata avrà tutti i criteri di base applicati oltre ai criteri sensibili. La protezione è cumulativa e viene applicato il criterio più restrittivo. 
 
 Una procedura consigliata consiste nel creare un gruppo di Azure AD per l'esclusione dell'accesso condizionale. Aggiungere questo gruppo a tutte le regole di accesso condizionale in "Escludi". In questo modo si ottiene un metodo per fornire l'accesso a un utente durante la risoluzione dei problemi di accesso. Questa procedura è consigliata solo come soluzione temporanea. Monitorare questo gruppo per le modifiche e verificare che il gruppo di esclusione venga utilizzato solo come previsto. 
 
-Nel diagramma seguente viene fornito un esempio di assegnazione degli utenti ed esclusioni.
+Di seguito è riportato un esempio di assegnazione di gruppo ed esclusioni per la richiesta di AMF.
 
-![Esempio di assegnazione e esclusioni degli utenti per le regole dell'AMF](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![Assegnazione ed esclusione di gruppi di esempio per le regole dell'AMF](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
-Nella figura "il team del progetto Top Secret X" viene assegnato un criterio di accesso condizionale che richiede *sempre*l'autenticazione master. Essere giudiziosi quando si applicano livelli di protezione superiori agli utenti. I membri del team di progetto saranno tenuti a fornire due forme di autenticazione ogni volta che accedono, anche se non visualizzano contenuto fortemente regolamentato.  
+Di seguito sono riportati i risultati:
 
-Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati come gruppi di Microsoft 365. Questo è particolarmente importante per la distribuzione di etichette di riservatezza durante la protezione dei documenti in SharePoint Online.
+- Tutti gli utenti sono tenuti a utilizzare l'AMF quando il rischio di accesso è medio o elevato.
+
+- I membri del gruppo Executive staff sono tenuti a utilizzare l'AMF quando il rischio di accesso è basso, medio o alto.
+
+  In questo caso, i membri del gruppo Executive staff corrispondono ai criteri di accesso condizionale di base e riservati. I controlli di accesso per entrambi i criteri sono combinati, che in questo caso sono equivalenti ai criteri di accesso condizionale riservati.
+
+- I membri del gruppo Top Secret Project X sono sempre necessari per l'utilizzo di Mae
+
+  In questo caso, i membri del gruppo Top Secret Project X corrispondono ai criteri di accesso condizionale di base e altamente regolamentati. I controlli di accesso per entrambi i criteri vengono combinati. Poiché il controllo di accesso per i criteri di accesso condizionale altamente regolamentati è più restrittivo, viene utilizzato.
+
+Prestare particolare attenzione quando si applicano livelli di protezione superiori a gruppi e utenti. Ad esempio, i membri del gruppo Top Secret Project X saranno tenuti a utilizzare Mae ogni volta che accedono, anche se non lavorano sul contenuto fortemente regolamentato per Project X.  
+
+Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati come gruppi di Microsoft 365. Questo è importante per la distribuzione di etichette di riservatezza per la protezione dei documenti in Microsoft teams e SharePoint Online.
 
 ![Acquisizione dello schermo per la creazione di gruppi di Microsoft 365](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
-
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Richiedere l'autenticazione a più fattori basata sul rischio di accesso
-Prima di richiedere l'utilizzo dell'AMF, utilizzare prima un criterio di registrazione di Identity Protection AMF per registrare gli utenti per l'AMF. Dopo la registrazione degli utenti, è possibile imporre l'autenticazione dell'utente per l'accesso. Il [lavoro prerequisito](identity-access-prerequisites.md) include la registrazione di tutti gli utenti con AMF.
 
-Per creare nuovi criteri di accesso condizionale: 
+Prima di richiederne l'utilizzo, è necessario che gli utenti si registrino per l'AMF. Se si dispone di Microsoft 365 E5, Microsoft 365 E3 con il componente aggiuntivo Identity & Threat Protection, Office 365 con EMS E5 o singole licenze di Azure AD Premium P2, è possibile utilizzare il criterio di registrazione AMF con Azure AD Identity Protection per richiedere agli utenti di registrarsi per l'AMF. Il [lavoro prerequisito](identity-access-prerequisites.md) include la registrazione di tutti gli utenti con AMF.
 
-1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le proprie credenziali. Dopo aver eseguito l'accesso, è possibile visualizzare il dashboard di Azure.
+Dopo aver registrato gli utenti, è possibile richiedere l'autenticazione per l'accesso.
 
-2. Scegliere **Azure Active Directory** dal menu a sinistra.
+Per creare un nuovo criterio di accesso condizionale: 
 
-3. Nella sezione **Sicurezza** scegliere **Accesso condizionale**.
+1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le proprie credenziali.
 
-4. Scegliere **Nuovo criterio**.
+2. Nell'elenco dei servizi di Azure, scegliere **Azure Active Directory**.
 
-![Criterio di accesso condizionale di base](../media/secure-email/CA-EXO-policy-1.png)
+3. Nell'elenco **Gestisci** scegliere **sicurezza**e quindi **accesso condizionale**.
 
- Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso condizionale da implementare per questo criterio.
+4. Scegliere **nuovo criterio** e digitare il nome del nuovo criterio.
 
-**Assegnazioni**
+Nelle tabelle riportate di seguito vengono descritte le impostazioni dei criteri di accesso condizionale per richiedere l'autenticazione basata sul rischio di ingresso.
 
-|Tipo|Proprietà|Valori|Note|
+Nella sezione **assegnazioni** :
+
+|Impostazione|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Utenti e gruppi|Includi|Seleziona utenti e gruppi - Selezionare il gruppo di sicurezza specifico in cui sono contenuti gli utenti di destinazione|Iniziare con il gruppo di sicurezza che include utenti pilota|
-||Exclude|Exception security group; service accounts (app identities) (Gruppo di sicurezza eccezione account del servizio (identità applicazione)|Appartenenza modificata su base temporanea necessaria|
-|App cloud|Includi|Selezionare le app a cui si desidera applicare la regola. Ad esempio, selezionare Exchange Online||
-|Condizioni|Configurata|Sì|Configurare in base all'ambiente e alle necessità specifici|
-|Rischio di accesso|Livello di rischio||Vedere le istruzioni riportate nella tabella seguente|
+|Utenti e gruppi|Includi| **Selezionare utenti e gruppi > utenti e gruppi**: selezionare gruppi specifici che contengono account utente di destinazione. |Iniziare con il gruppo che include gli account utente pilota.|
+||Exclude| **Utenti e gruppi**: selezionare il gruppo di eccezioni di accesso condizionale; account di servizio (identità delle app).|L'appartenenza deve essere modificata su base temporanea, come necessario.|
+|App o azioni cloud|Includi| **Selezionare app**: selezionare le app a cui si desidera applicare la regola. Ad esempio, selezionare Exchange Online.||
+|Condizioni| | |Configurare le condizioni specifiche per l'ambiente e le esigenze.|
+||Rischio di accesso||Vedere le indicazioni riportate nella tabella seguente.|
+|||||
 
-**Rischio di accesso**
+**Impostazioni delle condizioni di rischio di accesso**
 
-Applicare le impostazioni in base al livello di protezione che si desidera assegnare.
+Applicare le impostazioni a livello di rischio in base al livello di protezione che si desidera assegnare.
 
-|Proprietà|Livello di protezione|Valori|Note|
+|Livello di protezione|Valori dei livelli di rischio necessari|Azione|
+|:---------|:-----|:----|
+|Protezione di base|Alto, medio|Controllare entrambi.|
+|Dati sensibili|Alto, medio e basso|Controllare tutti e tre.|
+|Riservatezza elevata| |Lasciare deselezionata tutte le opzioni per applicare sempre l'AMF.|
+||||
+
+Nella sezione **Access Controls** :
+
+|Impostazione|Proprietà|Valori|Azione|
 |:---|:---------|:-----|:----|
-|Livello di rischio|Protezione di base|Alto, medio|Controllare entrambi|
-| |Dati sensibili|Alto, medio e basso|Controllare tutti e tre|
-| |Riservatezza elevata| |Lasciare deselezionata tutte le opzioni per applicare sempre il Master|
+|Concessione|**Grant access**| | Selezionare |
+|||**Richiedere l'autenticazione a più fattori**| Assegno |
+||**Richiedi tutti i controlli selezionati** ||Selezionare|
+|||||
 
-**Controlli di accesso**
+Scegliere **Seleziona** per salvare le impostazioni di **concessione** .
 
-|Tipo|Proprietà|Valori|Note|
-|:---|:---------|:-----|:----|
-|Concessione|Concedi accesso|True|Opzione selezionata|
-||Richiedi MFA|True|Check|
-||Richiede che il dispositivo venga contrassegnato come conforme|Falso||
-||Richiedere un dispositivo ibrido di Azure AD-join|Falso||
-||Richiedi app client approvata|False||
-||Richiedi tutti i controlli selezionati|True|Opzione selezionata|
+Infine, selezionare Attiva per **attivare** **il** criterio.
 
-> [!NOTE]
-> Assicurarsi di abilitare questo criterio, scegliendo **attivato.** È inoltre consigliabile utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio.
-
+È inoltre consigliabile utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio.
 
 
 ## <a name="block-clients-that-dont-support-modern-authentication"></a>Bloccare i client che non supportano l'autenticazione moderna
-1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le proprie credenziali. Dopo aver eseguito l'accesso, è possibile visualizzare il dashboard di Azure.
 
-2. Scegliere **Azure Active Directory** dal menu a sinistra.
+Utilizzare le impostazioni di queste tabelle per un criterio di accesso condizionale per bloccare i client che non supportano l'autenticazione moderna.
 
-3. Nella sezione **Sicurezza** scegliere **Accesso condizionale**.
-
-4. Scegliere **Nuovo criterio**.
-
-Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso condizionale da implementare per questo criterio.
-
-**Assegnazioni**
+Nella sezione **assegnazioni** :
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
@@ -146,7 +155,7 @@ Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso 
 |Condizioni|Configurata|Sì|Configurare le app client|
 |App client|Configurata|Sì|App per dispositivi mobili e client desktop, altri client (seleziona entrambi)|
 
-**Controlli di accesso**
+Nella sezione **Access Controls** :
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
@@ -227,7 +236,7 @@ Se si sta abilitando l'accesso mobile a Exchange Online, implementare [i client 
 Infine, il blocco dell'autenticazione legacy per altre app client su dispositivi iOS e Android garantisce che questi client non possano ignorare le regole di accesso condizionale. Se si seguono le indicazioni riportate in questo articolo, sono già stati configurati i [client di blocco che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication).
 
 <!---
-With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
@@ -250,7 +259,6 @@ Creare un criterio per ogni piattaforma:
 - Android Enterprise
 - iOS/iPados
 - macOS
-- Windows Phone 8.1
 - Windows 8,1 e versioni successive
 - Windows 10 e versioni successive
 
@@ -314,7 +322,7 @@ Per richiedere PC conformi:
 
 2. Scegliere **Azure Active Directory** dal menu a sinistra.
 
-3. Nella sezione **Sicurezza** scegliere **Accesso condizionale**.
+3. Nella sezione **sicurezza** scegliere **accesso condizionale**.
 
 4. Scegliere **Nuovo criterio**.
 
@@ -342,7 +350,7 @@ Per richiedere la conformità per tutti i dispositivi:
 
 2. Scegliere **Azure Active Directory** dal menu a sinistra.
 
-3. Nella sezione **Sicurezza** scegliere **Accesso condizionale**.
+3. Nella sezione **sicurezza** scegliere **accesso condizionale**.
 
 4. Scegliere **Nuovo criterio**.
 
@@ -363,4 +371,7 @@ Quando si crea questo criterio, non selezionare piattaforme. Questo impone i dis
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Learn about policy recommendations for securing email](secure-email-recommended-policies.md) (Informazioni sui criteri consigliati per la protezione della posta elettronica)
+![Passaggio 3: criteri per gli utenti guest ed esterni](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
+
+
+[Informazioni sui consigli sui criteri per gli utenti guest ed esterni](identity-access-policies-guest-access.md)
