@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Visualizzazione di una tabella in cui sono elencati i campi dei metadati per i documenti in un set di evidenze in indagini sui dati (Preview).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3e13d62446cff3efdacaa5f8e1ade8a37006d922
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4462b2031bc50f3d167b9340b6df5dba5a412d78
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035698"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357626"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Campi dei metadati del documento in indagini sui dati (anteprima)
 
@@ -129,4 +129,4 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Tag pertinenza (problema)      | Sì (relevanceTag_issueNum)                     |                         |             |
 |||||
 
-  \*Per questi campi, se all'interno di un documento sono presenti valori incorporati, la ricerca darà la priorità a tali valori. in caso contrario, tenterà di visualizzare il valore di Office 365.
+  \* Per questi campi, se all'interno di un documento sono presenti valori incorporati, la ricerca darà la priorità a tali valori. in caso contrario, tenterà di visualizzare il valore di Office 365.

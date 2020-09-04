@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come eseguire uno script per aggiungere cassette postali & siti di OneDrive for business a un nuovo blocco associato a un caso di eDiscovery nel centro sicurezza & Compliance.
-ms.openlocfilehash: 55ad3c8c8a4a6b77df4c2d3409fee6e5b43cc5f6
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391486"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357676"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utilizzo di uno script per aggiungere gli utenti a un'esenzione in un caso di eDiscovery di base
 
@@ -81,7 +81,7 @@ Di seguito è riportato un comando di PowerShell (eseguito utilizzando Remote Po
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-Dopo aver eseguito il comando, aprire il file di testo e rimuovere l'intestazione che contiene il nome della proprietà `PrimarySmtpAddress` . Quindi rimuovere tutti gli indirizzi di posta elettronica ad eccezione di quelli per gli utenti che si desidera aggiungere al blocco che verrà creato nel passaggio 3. Verificare che non vi siano righe vuote prima o dopo l'elenco di indirizzi di posta elettronica.
+Dopo aver eseguito il comando, aprire il file di testo e rimuovere l'intestazione che contiene il nome della proprietà  `PrimarySmtpAddress` . Quindi rimuovere tutti gli indirizzi di posta elettronica ad eccezione di quelli per gli utenti che si desidera aggiungere al blocco che verrà creato nel passaggio 3. Verificare che non vi siano righe vuote prima o dopo l'elenco di indirizzi di posta elettronica.
   
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Passaggio 3: eseguire lo script per creare un blocco e aggiungere utenti
 
@@ -89,7 +89,7 @@ Quando si esegue lo script in questo passaggio, vengono richieste le informazion
   
 - **Credenziali utente:** Lo script utilizzerà le credenziali per connettersi al centro sicurezza & conformità con Remote PowerShell. Utilizzerà anche queste credenziali per accedere a SharePoint Online per ottenere gli URL di OneDrive for business per l'elenco di utenti.
 
-- **Nome del dominio del sito personale:** Il dominio del sito personale è il dominio che contiene tutti i siti di OneDrive for business nell'organizzazione. Ad esempio, se l'URL del dominio del sito personale è **https://contoso-my.sharepoint.com** , è necessario immettere `contoso` quando lo script richiede il nome del dominio del sito personale.
+- **Nome del dominio del sito personale:** Il dominio del sito personale è il dominio che contiene tutti i siti di OneDrive for business nell'organizzazione. Ad esempio, se l'URL del dominio del sito personale è **https://contoso-my.sharepoint.com** , è necessario immettere  `contoso` quando lo script richiede il nome del dominio del sito personale.
 
 - **Nome del caso:** Nome di un caso esistente. Lo script creerà un nuovo blocco associato a questo caso.
 

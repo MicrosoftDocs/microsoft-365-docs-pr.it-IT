@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Tabella che elenca i tipi di file supportati e quali visualizzatori possono essere visualizzati in per le indagini sui dati (Preview).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b4aef30c3f2bc15c306a7561bab261bdb0bdcace
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 95af625ece261061d6f797b50a382b1905254326
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034540"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357738"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Tipi di file supportati in indagini sui dati (anteprima)
 
@@ -40,7 +40,7 @@ Le indagini sui dati (Preview) supportano numerosi tipi di file in diversi modi,
 | Application/vnd. MS-Outlook | Produttività | No | No | No | No | . msg |
 | Application/vnd. MS-Outlook-PST | Produttività/collaborazione | No | No | No | Sì | file con estensione pst |
 | Application/vnd. MS-PowerPoint | Documento | Sì | Sì | Sì | No | . ppt,. PPS;. POT |
-| Application/vnd. MS-Word. Document. macroenabled. 12 | Documento | Sì | Sì | Sì | No | .docm |
+| applicazione/vnd.ms-word.document. macroenabled. 12 | Documento | Sì | Sì | Sì | No | .docm |
 | Application/vnd. MS-Word. template. macroenabled. 12 | Documento | Sì | Sì | Sì | No | . dotm |
 | Application/vnd. Oasis. OpenDocument. Text | Documento | Sì | Sì | Sì | No | ODT  |
 | Application/vnd. openxmlformats-officedocument. PresentationML. Presentation | Documento | Sì | Sì | Sì | No | .pptx |
@@ -48,7 +48,7 @@ Le indagini sui dati (Preview) supportano numerosi tipi di file in diversi modi,
 | Application/vnd. openxmlformats-officedocument. PresentationML. template | Documento | Sì | Sì | Sì | No | . potx |
 | Application/vnd. openxmlformats-officedocument. SpreadsheetML. Sheet | Documento | Sì | Sì | Sì | No | XLSX |
 | Application/vnd. openxmlformats-officedocument. SpreadsheetML. template | Documento | Sì | Sì | Sì | No | . xltx |
-| Application/vnd. openxmlformats-officedocument. WordprocessingML. Document | Documento | Sì | Sì | Sì | No | . docx |
+| applicazione/vnd.openxmlformats-officedocument.wordprocessingml.document | Documento | Sì | Sì | Sì | No | . docx |
 | Application/vnd. openxmlformats-officedocument. WordprocessingML. template | Documento | Sì | Sì | Sì | No | . dotx |
 | applicazione/VND. Visio | Documento | Sì | Sì | Sì | No | . vsd |
 | applicazione/x-7z-compresso | Archivio/contenitore | No | No | No | Sì | .7z |

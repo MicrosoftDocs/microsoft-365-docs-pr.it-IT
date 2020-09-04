@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,18 +19,18 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni.
-ms.openlocfilehash: 48c187d7456f4b0a8e1da7558b7813fc2a8dc9f7
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.openlocfilehash: 460c29c542ccf9be659628b3a2c992760acdb309
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520170"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357944"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel Centro sicurezza e conformità
 
-È possibile utilizzare i criteri di avviso e gli strumenti del dashboard di avviso nei centri di sicurezza e conformità di Microsoft 365 per creare criteri di avviso e quindi visualizzare gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
+È possibile utilizzare i criteri di avviso e gli strumenti del dashboard di avviso nei centri di sicurezza e conformità di Microsoft 365 per creare criteri di avviso e quindi visualizzare gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso. Sono disponibili diversi criteri di avviso predefiniti che consentono di monitorare le attività, ad esempio l'assegnazione dei privilegi di amministratore in Exchange Online, gli attacchi di malware, le campagne di phishing e i livelli inusuali di eliminazione dei file e la condivisione esterna.
 
-I criteri di avviso consentono di creare ed espandere la funzionalità degli avvisi di attività consentendo di categorizzare i criteri di avviso, applicare il criterio a tutti gli utenti dell'organizzazione, impostare un livello di soglia per il momento in cui viene attivato un avviso e decidere se ricevere notifiche tramite posta elettronica. È inoltre disponibile una pagina **Visualizza avvisi** nel centro sicurezza e conformità in cui è possibile visualizzare e filtrare gli avvisi, impostare lo stato di avviso per la gestione degli avvisi e quindi ignorare gli avvisi dopo aver affrontato o risolto l'evento sottostante. È stato inoltre esteso il tipo di eventi per cui è possibile creare avvisi. Ad esempio, è possibile creare criteri di avviso per monitorare l'attività di malware e gli incidenti di perdita di dati. Sono stati inclusi anche diversi criteri di avviso predefiniti che consentono di monitorare le attività, ad esempio l'assegnazione dei privilegi di amministratore in Exchange Online, gli attacchi di malware, le campagne di phishing e i livelli inusuali di eliminazione dei file e la condivisione esterna.
+I criteri di avviso consentono di suddividere in categorie gli avvisi attivati da un criterio, applicare il criterio a tutti gli utenti dell'organizzazione, impostare un livello di soglia per il momento in cui viene attivato un avviso e decidere se ricevere notifiche tramite posta elettronica quando vengono attivati gli avvisi. È inoltre disponibile una pagina **Visualizza avvisi** nel centro sicurezza e conformità in cui è possibile visualizzare e filtrare gli avvisi, impostare lo stato di avviso per la gestione degli avvisi e quindi ignorare gli avvisi dopo aver affrontato o risolto l'evento sottostante.
 
 > [!NOTE]
 > I criteri di avviso sono disponibili per le organizzazioni che dispongono di un abbonamento a Microsoft 365 Enterprise, Office 365 Enterprise o Office 365 US Government E1/F1/G1, E3/G3 o E5/G5. La funzionalità avanzata è disponibile solo per le organizzazioni con un abbonamento E5/G5 o per le organizzazioni che dispongono di un abbonamento E1/F1/G1 o E3/G3 e di una sottoscrizione di Office 365 Advanced Threat Protection (ATP) P2 o Microsoft 365 E5 o Microsoft 365 E5 eDiscovery e l'abbonamento di controllo del componente aggiuntivo. In questo argomento è evidenziata la funzionalità che richiede un abbonamento E5/G5 o un componente aggiuntivo. Si noti inoltre che i criteri di avviso sono disponibili in Office 365 GCC, GCC High e DoD US Government environments.
@@ -136,7 +136,7 @@ La tabella indica anche il piano Office 365 Enterprise and Office 365 US Governm
 |||||
 
 > [!NOTE]
-> <sup>1</sup> è stato temporaneamente rimosso questo criterio di avviso predefinito in base al feedback dei clienti. Stiamo lavorando per migliorarlo e lo rimpiazzerà con una nuova versione nel prossimo futuro. Fino a quel momento, è possibile creare un criterio di avviso personalizzato per sostituire questa funzionalità utilizzando le impostazioni seguenti:<br/>&nbsp;* L'attività è phishing posta elettronica rilevato al momento del parto<br/>&nbsp;* Mail non è ZAP ' d<br/>&nbsp;* La direzione della posta è in ingresso<br/>&nbsp;* Lo stato di recapito della posta viene recapitato<br/>&nbsp;* La tecnologia di rilevamento è la conservazione di URL dannosi, la detonazione degli URL, il filtro phishing avanzato, il filtro phishing generale, la rappresentazione del dominio, la rappresentazione dell'utente e la rappresentazione del marchio<br/><br/>&nbsp;&nbsp;&nbsp;Per ulteriori informazioni su anti-phishing in Office 365, vedere [set up anti-phishing and anti-phishing Policies](../security/office-365-security/set-up-anti-phishing-policies.md).<br/><br/><sup>2</sup> per ricreare questo criterio di avviso, seguire le indicazioni riportate nella nota a piè di pagina precedente, ma scegliere rappresentazione utente come unica tecnologia di rilevamento.
+> <sup>1</sup> è stato temporaneamente rimosso questo criterio di avviso predefinito in base al feedback dei clienti. Stiamo lavorando per migliorarlo e lo rimpiazzerà con una nuova versione nel prossimo futuro. Fino a quel momento, è possibile creare un criterio di avviso personalizzato per sostituire questa funzionalità utilizzando le impostazioni seguenti:<br/>&nbsp; * L'attività è phishing posta elettronica rilevato al momento del parto<br/>&nbsp; * Mail non è ZAP ' d<br/>&nbsp; * La direzione della posta è in ingresso<br/>&nbsp; * Lo stato di recapito della posta viene recapitato<br/>&nbsp; * La tecnologia di rilevamento è la conservazione di URL dannosi, la detonazione degli URL, il filtro phishing avanzato, il filtro phishing generale, la rappresentazione del dominio, la rappresentazione dell'utente e la rappresentazione del marchio<br/><br/>&nbsp;&nbsp;&nbsp;Per ulteriori informazioni su anti-phishing in Office 365, vedere [set up anti-phishing and anti-phishing Policies](../security/office-365-security/set-up-anti-phishing-policies.md).<br/><br/><sup>2</sup> per ricreare questo criterio di avviso, seguire le indicazioni riportate nella nota a piè di pagina precedente, ma scegliere rappresentazione utente come unica tecnologia di rilevamento.
 
 Le attività insolite monitorate da alcuni dei criteri incorporati si basano sullo stesso processo dell'impostazione della soglia di avviso descritta in precedenza. Microsoft stabilisce un valore di base che definisce la frequenza normale per l'attività "usuale". Gli avvisi vengono quindi attivati quando la frequenza delle attività monitorate dal criterio di avviso incorporato supera notevolmente il valore previsto.
 
@@ -214,7 +214,7 @@ Per visualizzare la categoria a cui è assegnato un criterio di avviso predefini
 |Gestione dei dispositivi|||||||
 |Gestione della disposizione|||||||
 |Gestione della conformità DLP||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Esportazione|||||||
+|Esporta|||||||
 |Hold|||||||
 |Gestione avvisi||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configurazione dell'organizzazione||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

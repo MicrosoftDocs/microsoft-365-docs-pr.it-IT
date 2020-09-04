@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Informazioni sugli eventi che vengono registrati quando gli utenti assegnati a eDiscovery Permissions eseguono la ricerca del contenuto e le attività di base di eDiscovery nel centro sicurezza & Compliance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 671fdebd75dfdaaf09deebf320b9fe4cfab0ca1c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 529e1a0ac3dc66ac15bd1b3fbcde466fb36d5f4e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818875"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357546"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Cercare le attività di eDiscovery nel log di controllo
 
@@ -215,7 +215,7 @@ Nella tabella seguente vengono descritte le proprietà incluse quando si fa clic
 |ObjectId  <br/> |Il GUID o il nome dell'oggetto, ad esempio una ricerca di contenuto o un caso di eDiscovery, che è stato creato, modificato o eliminato dall'attività elencata nella proprietà Operation. Questo oggetto viene identificato anche nella colonna elemento dei risultati di ricerca del registro di controllo.  <br/> |
 |ObjectType  <br/> |Il tipo di oggetto eDiscovery che l'utente ha creato, eliminato o modificato. ad esempio, un'azione di ricerca del contenuto (Preview, Export o Purge), un caso di eDiscovery o una ricerca di contenuto.  <br/> |
 |Operazione  <br/> |Nome dell'operazione che corrisponde all'attività eDiscovery che è stata eseguita.  <br/> |
-|IDOrganizzazione  <br/> |GUID per l'organizzazione di Microsoft 365.  <br/> |
+|OrganizationId  <br/> |GUID per l'organizzazione di Microsoft 365.  <br/> |
 |Parametri  <br/> |Il nome e il valore dei parametri utilizzati con il cmdlet corrispondente.  <br/> |
 |PublicFolderLocations  <br/> |Posizioni delle cartelle pubbliche in Exchange Online incluse in una ricerca di contenuto o in attesa in un caso di eDiscovery.  <br/> |
 |Query  <br/> |Query di ricerca associata all'attività, ad esempio una ricerca di contenuto o un blocco basato su query.  <br/> |

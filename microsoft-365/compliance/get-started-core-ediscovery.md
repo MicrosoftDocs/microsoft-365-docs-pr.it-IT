@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come iniziare a utilizzare Core eDiscovery in Microsoft 365. Dopo aver assegnato le autorizzazioni di eDiscovery e aver creato un caso, è possibile aggiungere membri, creare eDiscovery e quindi cercare ed esportare i dati rilevanti per l'indagine.
-ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 94c85987be4cbc5da7a378abb7ea74294f6fe740
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280546"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357914"
 ---
 # <a name="get-started-with-core-ediscovery"></a>Introduzione a Core eDiscovery
 

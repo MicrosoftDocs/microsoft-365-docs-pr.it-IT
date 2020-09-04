@@ -6,18 +6,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: È necessario abilitare il supporto ClickOnce per utilizzare la versione più recente di Microsoft Edge per scaricare i risultati della ricerca dalla ricerca di contenuto e eDiscovery nel centro sicurezza e conformità.
-ms.openlocfilehash: c48e3fb04747306693364a2cdbc6f18047a0fd9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 317e19c81a606565fcb18f3256fd5bac007747e1
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632381"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357576"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Utilizzare lo strumento di esportazione di eDiscovery in Microsoft Edge
 
@@ -29,15 +29,15 @@ A seguito delle recenti modifiche apportate alla versione più recente di Micros
 
 2. Se il valore esistente è impostato su **predefinito** o **disabilitato** nell'elenco a discesa, impostarlo su **abilitato**.
 
-   ![](../media/ClickOnceimage1.png)
+   ![Seleziona attivato dall'elenco a discesa](../media/ClickOnceimage1.png)
 
 3. Scorrere verso il basso fino alla parte inferiore della finestra del browser e fare clic su **Riavvia** per riavviare Edge.
 
-   ![](../media/ClickOnceimage2.png)
+   ![Fare clic su Riavvia](../media/ClickOnceimage2.png)
 
 **Nota:** Le organizzazioni possono utilizzare criteri di gruppo per disabilitare il supporto ClickOnce. Per verificare se è presente un criterio di organizzazione per il supporto di ClickOnce, accedere a **Edge://Policy**. Nella schermata seguente viene mostrato che ClickOnce è abilitata all'interno dell'intera organizzazione. Se il valore di questo criterio è impostato su **false**, sarà necessario contattare un amministratore dell'organizzazione.
 
-![](../media/ClickOnceimage3.png)
+![Elenco dei criteri dell'organizzazione perimetrale](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-ediscovery-export-tool"></a>Installare ed eseguire lo strumento di esportazione di eDiscovery
 

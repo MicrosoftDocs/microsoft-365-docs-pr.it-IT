@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Informazioni su come preparare i risultati di una ricerca di contenuto nel centro sicurezza & Compliance per un'ulteriore analisi con lo strumento eDiscovery avanzato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0f1540e9745351269e019ea95399ce5c636d8b3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b403987c39d1ddcc1f22fd0abbeba85e60591414
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818765"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358568"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Preparare i risultati di ricerca per Advanced eDiscovery (classico)
 
@@ -50,7 +50,7 @@ Dopo aver eseguito correttamente una ricerca associata a un caso di eDiscovery n
     
 - **Codifica predittiva** : consente di formare il sistema su quello che si sta cercando, consentendo di prendere decisioni (se qualcosa è pertinente o meno) su un set di documenti di piccole dimensioni. Advanced eDiscovery applica quindi l'apprendimento (in base alle linee guida) quando si analizzano tutti i documenti del set di dati. In base a tale apprendimento, Advanced eDiscovery fornisce una classificazione di pertinenza in modo da poter decidere quali documenti esaminare in base a quale documento sono più probabili rilevanti per il caso. 
     
-- **Esportazione dei dati per le applicazioni di revisione** : è possibile esportare i dati da Advanced eDiscovery e Microsoft 365 dopo aver completato l'analisi e aver ridotto il set di dati. Il pacchetto di esportazione include un file CSV che contiene le proprietà del contenuto esportato e dei metadati di analisi. Questo pacchetto di esportazione può quindi essere importato in un'applicazione di revisione di eDiscovery. 
+- **Esportazione dei dati per le applicazioni di revisione**  : è possibile esportare i dati da Advanced eDiscovery e Microsoft 365 dopo aver completato l'analisi e aver ridotto il set di dati. Il pacchetto di esportazione include un file CSV che contiene le proprietà del contenuto esportato e dei metadati di analisi. Questo pacchetto di esportazione può quindi essere importato in un'applicazione di revisione di eDiscovery. 
     
 ## <a name="get-licenses-and-permissions"></a>Ottenere licenze e autorizzazioni
 

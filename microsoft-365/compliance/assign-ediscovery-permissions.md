@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Assegnare le autorizzazioni necessarie per eseguire le attività relative a eDiscovery utilizzando il Centro sicurezza & Compliance.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5c2cf20d3f417429c6e3793c23c299b860b28fa
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 47d47e008fdd0d252f4da9077f66ee352380d311
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818435"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357986"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance
 
@@ -64,7 +64,7 @@ Il gruppo di ruoli principale di eDiscovery nel centro sicurezza & conformità �
   
     **Per rendere un utente un responsabile di eDiscovery:** Accanto a **eDiscovery Manager**, selezionare **modifica**. Nella sezione **Choose eDiscovery Manager** selezionare il collegamento ipertestuale **eDiscovery Manager** e quindi fare clic su Aggiungi ![ icona ](../media/ITPro-EAC-AddIcon.gif) **Aggiungi**. Selezionare l'utente (o gli utenti) che si desidera aggiungere come Manager di eDiscovery e quindi fare clic su **Aggiungi**. Dopo aver aggiunto gli utenti, fare clic su **fine**. Quindi, nella pagina **modifica scegliere** il riquadro a comparsa di eDiscovery Manager selezionare **Salva** per salvare le modifiche apportate all'appartenenza di eDiscovery Manager.
   
-    **Per rendere un utente un amministratore di eDiscovery:** Accanto a **eDiscovery Manager**, selezionare **modifica**. Nella sezione **selezione amministratore di eDiscovery** , in **eDiscovery Administrators**, selezionare **Choose eDiscovery Administrator**, Select **Edit**e quindi ![ Add Icon ](../media/ITPro-EAC-AddIcon.gif) **Add**. Selezionare l'utente (o gli utenti) che si desidera aggiungere come **amministratore di eDiscovery**e quindi **aggiungere**. Dopo aver aggiunto gli utenti, fare clic su **fine**. Quindi, nella pagina **modifica scegliere** il riquadro a comparsa di amministratore di eDiscovery, selezionare **Salva** per salvare le modifiche apportate all'appartenenza all'amministratore di eDiscovery.
+    **Per rendere un utente un amministratore di eDiscovery:** Accanto a **eDiscovery Manager**, selezionare **modifica**. Nella sezione **selezione amministratore di eDiscovery** , in **eDiscovery Administrators**, selezionare **Choose eDiscovery Administrator**, Select **Edit**e quindi ![ Add Icon ](../media/ITPro-EAC-AddIcon.gif) **Add**. Selezionare l'utente (o gli utenti) che si desidera aggiungere come **amministratore di eDiscovery**e quindi  **aggiungere**. Dopo aver aggiunto gli utenti, fare clic su **fine**. Quindi, nella pagina **modifica scegliere** il riquadro a comparsa di amministratore di eDiscovery, selezionare **Salva** per salvare le modifiche apportate all'appartenenza all'amministratore di eDiscovery.
       
 > [!NOTE]
 > È inoltre possibile utilizzare il cmdlet **Add-eDiscoveryCaseAdmin** per rendere un utente un amministratore di eDiscovery. Tuttavia, all'utente deve essere assegnato il ruolo di gestione dei casi prima che sia possibile utilizzare questo cmdlet per renderli un amministratore di eDiscovery. Per ulteriori informazioni, vedere [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -19,12 +19,12 @@ description: Risoluzione dei problemi relativi agli errori di AzCopy di Azure du
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: caec3011c89e027f1b78991a3dad842ff4b8c8aa
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 4bf8461cb02ca3601707f248a64d8a8a9741efab
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434279"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357706"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Risoluzione dei problemi relativi a AzCopy in Advanced eDiscovery
 

@@ -7,17 +7,17 @@ author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: Archiviazione sul posto, blocco per controversia legale e criteri di conservazione Microsoft 365 consentono di conservare il contenuto delle cassette postali per soddisfare i requisiti di conformità alle normative e eDiscovery.
-ms.openlocfilehash: 07959edc89aa9d3335b9af501743eae4a11a6aa1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 62029ff742f9fe4aec1fed23d74b01b145da6cfe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634864"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358484"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservazione dei destinatari Ccn e del gruppo di destinazione esteso per eDiscovery
   
@@ -82,7 +82,7 @@ R. L'appartenenza al gruppo viene espansa al momento dell'invio del messaggio. L
   
 R. No. Queste informazioni non sono incluse nelle intestazioni dei messaggi e non sono visibili per i destinatari A/Cc. Il mittente può visualizzare il campo Ccn memorizzato nel messaggio originale archiviato nella cassetta postale. I responsabili della conformità possono visualizzare queste informazioni quando eseguono una ricerca nella cassetta postale del mittente.
   
- **D. come è possibile garantire che I destinatari del gruppo di distribuzione espanso vengano sempre conservati?**
+ **D. Come è possibile garantire che I destinatari del gruppo di distribuzione espanso vengano sempre conservati?**
   
 R. Per garantire che i membri del gruppo di distribuzione espanso vengano sempre conservati con un messaggio, [inserire tutte le cassette postali in attesa](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) o creare un criterio di conservazione Microsoft 365 a livello di organizzazione. 
   

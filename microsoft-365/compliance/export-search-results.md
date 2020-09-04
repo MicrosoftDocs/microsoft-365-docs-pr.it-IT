@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExport
 ms.service: O365-seccomp
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & conformità a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fda7c103b90664fc6c31c3f0436b6d360468537
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 97073c95af986afcbe932dfc2b5bc840d5e2dc5c
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817755"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357934"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -63,13 +63,13 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
 - Quando si esportano i risultati della ricerca, i dati vengono temporaneamente archiviati in una posizione di archiviazione di Azure fornita da Microsoft nel cloud Microsoft prima che vengano scaricati nel computer locale. Assicurarsi che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \* . blob.Core.Windows.NET** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dal percorso di archiviazione di Azure due settimane dopo la sua creazione. 
     
-- Se l'organizzazione utilizza un server proxy per comunicare con Internet, è necessario definire le impostazioni del server proxy nel computer utilizzato per esportare i risultati della ricerca, in modo che lo strumento di esportazione possa essere autenticato dal server proxy. A tale scopo, aprire il file *machine.config* nel percorso corrispondente alla versione di Windows in uso. 
+- Se l'organizzazione utilizza un server proxy per comunicare con Internet, è necessario definire le impostazioni del server proxy nel computer utilizzato per esportare i risultati della ricerca, in modo che lo strumento di esportazione possa essere autenticato dal server proxy. A tale scopo, aprire il file  *machine.config*  nel percorso corrispondente alla versione di Windows in uso. 
     
   - **32 bit:**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
     
   - **64 bit:**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
     
-    Aggiungere le righe seguenti al file *machine.config* da qualche parte tra `<configuration>` i `</configuration>` tag e. Assicurarsi di sostituire `ProxyServer` e `Port` con i valori corretti per l'organizzazione, ad esempio, `proxy01.contoso.com:80` . 
+    Aggiungere le righe seguenti al file  *machine.config*  da qualche parte tra  `<configuration>` i  `</configuration>` tag e. Assicurarsi di sostituire  `ProxyServer` e  `Port` con i valori corretti per l'organizzazione, ad esempio,  `proxy01.contoso.com:80` . 
     
     ```text
     <system.net>
@@ -289,7 +289,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
   
 - Se il nome del percorso del file del messaggio supera il limite massimo di caratteri per Windows, il nome del percorso del file viene troncato. Tuttavia, il nome del percorso del file originale verrà elencato nel manifesto e ResultsLog.
     
-- Come spiegato in precedenza, i risultati della ricerca di posta elettronica vengono esportati in una cartella del file System. Il percorso della cartella per i singoli messaggi potrebbe replicare il percorso della cartella nella cassetta postale dell'utente. Ad esempio, per una ricerca denominata "ContosoCase101" i messaggi nella posta in arrivo di un utente si troverebbero nel percorso della cartella `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` . 
+- Come spiegato in precedenza, i risultati della ricerca di posta elettronica vengono esportati in una cartella del file System. Il percorso della cartella per i singoli messaggi potrebbe replicare il percorso della cartella nella cassetta postale dell'utente. Ad esempio, per una ricerca denominata "ContosoCase101" i messaggi nella posta in arrivo di un utente si troverebbero nel percorso della cartella  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` . 
     
 - Se si sceglie di esportare i messaggi di posta elettronica in un unico file PST contenente tutti i messaggi in una singola cartella, una cartella **posta eliminata** e una cartella **cartelle di ricerca** sono incluse nel livello principale della cartella PST. Queste cartelle sono vuote. 
   
@@ -311,7 +311,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
   
  ### <a name="filenames-of-exported-items"></a>Nomi di file degli elementi esportati
   
-- Vi è un limite di 260 caratteri (imposto dal sistema operativo) per il nome del percorso completo per i messaggi di posta elettronica e i documenti del sito esportati nel computer locale. Il nome del percorso completo per gli elementi esportati include il percorso originale dell'elemento e il percorso della cartella nel computer locale in cui vengono scaricati i risultati della ricerca. Ad esempio, se si specifica di scaricare i risultati della ricerca `C:\Users\Admin\Desktop\SearchResults` nello strumento di esportazione di eDiscovery, il percorso completo di un elemento di posta elettronica scaricato potrebbe essere `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
+- Vi è un limite di 260 caratteri (imposto dal sistema operativo) per il nome del percorso completo per i messaggi di posta elettronica e i documenti del sito esportati nel computer locale. Il nome del percorso completo per gli elementi esportati include il percorso originale dell'elemento e il percorso della cartella nel computer locale in cui vengono scaricati i risultati della ricerca. Ad esempio, se si specifica di scaricare i risultati della ricerca  `C:\Users\Admin\Desktop\SearchResults` nello strumento di esportazione di eDiscovery, il percorso completo di un elemento di posta elettronica scaricato potrebbe essere  `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
     
     Se si supera il limite di 260 caratteri, il nome del percorso completo di un elemento verrà troncato.
     
@@ -319,11 +319,11 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
   - Se il nome del percorso completo è ancora troppo lungo dopo la riduzione del nome del file, l'elemento viene spostato dal percorso corrente alla cartella padre. Se il percorso è ancora troppo lungo, il processo viene ripetuto: accorciare il nome del file e, se necessario, spostarlo di nuovo nella cartella padre. Questo processo viene ripetuto fino a quando il percorso completo è inferiore al limite di 260 caratteri.
     
-  - Se esiste già un nome di percorso completo troncato, viene aggiunto un numero di versione alla fine del nome del file. ad esempio, `statusmessage(2).msg` .
+  - Se esiste già un nome di percorso completo troncato, viene aggiunto un numero di versione alla fine del nome del file. ad esempio,  `statusmessage(2).msg` .
     
-    Per ovviare a questo problema, prendere in considerazione la possibilità di scaricare i risultati della ricerca in una posizione con un nome di percorso breve. ad esempio, se si desidera scaricare i risultati della ricerca in una cartella denominata `C:\Results` , è necessario aggiungere meno caratteri ai nomi di percorso degli elementi esportati anziché scaricarli in una cartella denominata `C:\Users\Admin\Desktop\Results` .
+    Per ovviare a questo problema, prendere in considerazione la possibilità di scaricare i risultati della ricerca in una posizione con un nome di percorso breve. ad esempio, se si desidera scaricare i risultati della ricerca in una cartella denominata  `C:\Results` , è necessario aggiungere meno caratteri ai nomi di percorso degli elementi esportati anziché scaricarli in una cartella denominata  `C:\Users\Admin\Desktop\Results` .
     
-- Quando si esportano i documenti del sito, è anche possibile che il nome di file originale di un documento venga modificato. Questo accade in particolare per i documenti che sono stati eliminati da un sito di SharePoint o OneDrive for business che è stato messo in attesa. Dopo l'eliminazione di un documento in un sito che è in attesa, il documento eliminato viene automaticamente spostato nella raccolta conservazione per il sito (creato quando il sito è stato messo in attesa). Quando il documento eliminato viene spostato nella raccolta di conservazione, un ID univoco generato casualmente viene aggiunto al nome di file originale del documento. Ad esempio, se il nome del file di un documento è `FY2017Budget.xlsx` e tale documento viene successivamente eliminato e spostato nella raccolta conservazione, il nome del file del documento che viene spostato nella raccolta di conservazione viene modificato in qualcosa di simile a `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Se un documento nella raccolta conservazione contiene la query di una ricerca di contenuto e si esportano i risultati della ricerca, il nome del file esportato è stato modificato. in questo esempio, il nome di file del documento esportato è `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
+- Quando si esportano i documenti del sito, è anche possibile che il nome di file originale di un documento venga modificato. Questo accade in particolare per i documenti che sono stati eliminati da un sito di SharePoint o OneDrive for business che è stato messo in attesa. Dopo l'eliminazione di un documento in un sito che è in attesa, il documento eliminato viene automaticamente spostato nella raccolta conservazione per il sito (creato quando il sito è stato messo in attesa). Quando il documento eliminato viene spostato nella raccolta di conservazione, un ID univoco generato casualmente viene aggiunto al nome di file originale del documento. Ad esempio, se il nome del file di un documento è  `FY2017Budget.xlsx` e tale documento viene successivamente eliminato e spostato nella raccolta conservazione, il nome del file del documento che viene spostato nella raccolta di conservazione viene modificato in qualcosa di simile a  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Se un documento nella raccolta conservazione contiene la query di una ricerca di contenuto e si esportano i risultati della ricerca, il nome del file esportato è stato modificato. in questo esempio, il nome di file del documento esportato è  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
     
     Quando viene modificato un documento in un sito che è in attesa (e il controllo delle versioni per la raccolta documenti nel sito è stato abilitato), viene creata automaticamente una copia del file nella raccolta conservazione. In questo caso, viene aggiunto un ID univoco generato casualmente al nome del documento copiato nella raccolta di archiviazione.
     

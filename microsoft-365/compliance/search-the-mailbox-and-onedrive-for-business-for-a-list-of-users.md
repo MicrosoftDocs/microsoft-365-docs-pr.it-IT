@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilizzare la ricerca contenuto e lo script in questo articolo per eseguire ricerche nelle cassette postali e nei siti di OneDrive for business per un gruppo di utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90aab661992ae2f0c19d18939191230dc0469eaa
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: e3a10913cc4d8618e3d25bdf34e30c9d55a43324
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527362"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357798"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usare Ricerca contenuto per cercare un elenco di utenti nella cassetta postale e nel sito di OneDrive for Business
 
@@ -56,7 +56,7 @@ Di seguito è riportato un comando di [PowerShell di Exchange Online](https://go
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
-Dopo aver eseguito il comando, accertarsi di aprire il file e rimuovere l'intestazione che contiene il nome della proprietà `PrimarySmtpAddress` . Il file di testo deve contenere solo un elenco di indirizzi di posta elettronica e nient'altro. Verificare che non vi siano righe vuote prima o dopo l'elenco di indirizzi di posta elettronica.
+Dopo aver eseguito il comando, accertarsi di aprire il file e rimuovere l'intestazione che contiene il nome della proprietà  `PrimarySmtpAddress` . Il file di testo deve contenere solo un elenco di indirizzi di posta elettronica e nient'altro. Verificare che non vi siano righe vuote prima o dopo l'elenco di indirizzi di posta elettronica.
   
 ## <a name="step-3-run-the-script-to-create-and-start-the-search"></a>Passaggio 3: eseguire lo script per creare e avviare la ricerca
 
@@ -64,7 +64,7 @@ Quando si esegue lo script in questo passaggio, vengono richieste le informazion
   
 - **Credenziali utente** : lo script utilizzerà le credenziali per accedere a SharePoint Online per ottenere gli URL di OneDrive for business e connettersi al centro sicurezza & conformità con Remote PowerShell. 
     
-- **Nome del dominio del sito Web** : il dominio del sito Web è il dominio che contiene tutti i siti di OneDrive for business nell'organizzazione. Ad esempio, se l'URL del dominio del sito Web è **https://contoso-my.sharepoint.com** , è necessario immetterlo `contoso` quando lo script richiede il nome del dominio di siti personali. 
+- **Nome del dominio del sito Web** : il dominio del sito Web è il dominio che contiene tutti i siti di OneDrive for business nell'organizzazione. Ad esempio, se l'URL del dominio del sito Web è **https://contoso-my.sharepoint.com** , è necessario immetterlo  `contoso` quando lo script richiede il nome del dominio di siti personali. 
     
 - **Percorso del file di testo del passaggio 2** : il percorso del file di testo creato nel passaggio 2. Se il file di testo e lo script si trovano nella stessa cartella, immettere il nome del file di testo. In caso contrario, immettere il percorso completo per il file di testo. 
     

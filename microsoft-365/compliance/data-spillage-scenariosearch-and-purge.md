@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
-ms.openlocfilehash: 4246460f2f7d7fdc41754fc2acd3125601bb5f79
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: bb342eef057fefafe98de274851ad14e9c588dbe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292452"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357566"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -110,7 +110,7 @@ Dopo aver verificato i risultati della ricerca, è possibile che si desideri con
  
     ![Nella pagina Esporta, fare clic sull'esportazione e quindi su "download report"](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
-Il rapporto **riepilogativo di esportazione** contiene il numero di posizioni trovate con i risultati e le dimensioni dei risultati della ricerca. È possibile utilizzare questo parametro per confrontare il report generato dopo l'eliminazione e fornire la prova dell'eliminazione. Il rapporto sui **risultati** contiene un riepilogo più dettagliato dei risultati di ricerca, inclusi l'oggetto, il mittente, i destinatari, se la posta elettronica è stata letta, le date e le dimensioni di ogni messaggio. Se uno dei dettagli in questo report contiene i dati di versamento effettivi, assicurarsi di eliminare definitivamente il file results. csv al termine dell'indagine.
+Il rapporto **riepilogativo di esportazione** contiene il numero di posizioni trovate con i risultati e le dimensioni dei risultati della ricerca. È possibile utilizzare questo parametro per confrontare il report generato dopo l'eliminazione e fornire la prova dell'eliminazione. Il rapporto sui **risultati** contiene un riepilogo più dettagliato dei risultati di ricerca, inclusi l'oggetto, il mittente, i destinatari, se la posta elettronica è stata letta, le date e le dimensioni di ogni messaggio. Se uno dei dettagli in questo report contiene i dati di versamento effettivi, assicurarsi che il file Results.csv venga eliminato definitivamente al termine dell'indagine.
 
 Per ulteriori informazioni sull'esportazione di report, vedere [Export a content search report](export-a-content-search-report.md).
     
@@ -176,7 +176,7 @@ Utilizzando i percorsi delle cassette postali raccolte e preparate nel passaggio
 Per eliminare i messaggi versati, vedere i passaggi 2 & 3 per [cercare ed eliminare i messaggi di posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
 
 > [!IMPORTANT]
-> Gli elementi di posta elettronica in un set di revisione in un caso avanzato di eDiscovery non possono essere eliminati utilizzando le procedure illustrate in questo articolo. Ciò è dovuto al fatto che gli elementi in un set di revisione sono copie degli elementi del servizio Live che vengono copiate e archiviate in una posizione di archiviazione di Azure. Questo significa che non verranno restituiti da una ricerca di contenuto creata nel passaggio 3. Per eliminare gli elementi in un set di revisione, è necessario eliminare il caso Advanced eDiscovery che contiene il set di revisione. Per ulteriori informazioni, vedere [Close or Delete an Advanced eDiscovery case](close-or-delete-case.md).
+> Gli elementi di posta elettronica in un caso di Advanced eDiscovery non possono essere eliminati usando le procedure descritte in questo articolo. Ciò è dovuto al fatto che gli elementi in un set di revisione sono copie degli elementi del servizio Live che vengono copiate e archiviate in una posizione di archiviazione di Azure. Questo significa che non verranno restituiti da una ricerca di contenuto creata nel passaggio 3. Per eliminare elementi in un insieme da rivedere, è necessario eliminare il caso di Advanced eDiscovery che contiene l'insieme da rivedere. Per altre informazioni, vedere [Chiudere o eliminare un caso di Advanced eDiscovery](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Passaggio 8: verificare, fornire una prova di eliminazione e controllo
 

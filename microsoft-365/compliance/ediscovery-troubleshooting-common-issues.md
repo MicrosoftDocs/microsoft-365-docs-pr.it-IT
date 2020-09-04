@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Informazioni sui passaggi di base per la risoluzione dei problemi che è possibile eseguire per risolvere i problemi comuni in Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f643f4c3709b811a10618343a4b37ac4114dd8c0
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 2b96ed80ba9f347616fd364b3b97ac960cdaeb8e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434169"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357996"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Esaminare, risolvere i problemi e risolvere i problemi comuni relativi a eDiscovery
 
@@ -123,7 +123,7 @@ Quando si esportano i risultati della ricerca da eDiscovery o ricerca contenuto 
 
 3. Individuare la quantità di dati da scaricare nei parametri SearchResults e SearchStatistics.
 
-4. Eseguire il comando riportato di seguito:
+4. Eseguire il comando seguente:
 
    ```powershell
    Get-ComplianceSearchAction | FL

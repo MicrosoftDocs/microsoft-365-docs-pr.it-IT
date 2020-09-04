@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come utilizzare la funzionalità di ricostruzione della conversazione in Advanced eDiscovery per ricostruire, rivedere ed esportare conversazioni filettate.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 45cf4bdbf0956ee28e75878b7db5ec84b81c7230
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: bf5c39f567240b58546dbeb353e3e461e9b69e48
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035494"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358344"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Esaminare le conversazioni in Advanced eDiscovery 
 
@@ -132,7 +132,7 @@ In un set di recensioni di conversazione è possibile utilizzare le opzioni segu
 
 In un set di recensioni di conversazione è possibile impostare le opzioni seguenti per esportare le conversazioni:
 
-![Esporta](../media/export.png)
+![Opzioni di esportazione per le conversazioni](../media/export.png)
 
 a. Opzioni dei metadati
 

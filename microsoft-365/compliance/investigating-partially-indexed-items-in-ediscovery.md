@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/26/2018
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come gestire gli elementi parzialmente indicizzati (o non indicizzati) da Exchange, SharePoint e OneDrive all'interno dell'organizzazione.
-ms.openlocfilehash: ed85a9351aad340c5840b6b9b9ea6e55833ed527
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4c2da954316450e22f481f1a5093077be79cc67e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817525"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357378"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Analisi degli elementi parzialmente indicizzati in eDiscovery
 
@@ -43,13 +43,13 @@ Anche se varia, la maggior parte delle organizzazioni clienti ha meno dell'1% de
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Perché il conteggio degli elementi parzialmente indicizzato cambia per una ricerca?
 
-Dopo aver eseguito una ricerca contenuto nel centro sicurezza & conformità, il numero totale e le dimensioni degli elementi parzialmente indicizzati nei percorsi ricercati sono elencati nelle statistiche dei risultati di ricerca visualizzati nelle statistiche dettagliate per la ricerca. Nota Queste sono denominate *voci non indicizzate* nelle statistiche di ricerca. Di seguito sono riportati alcuni aspetti che influiscono sul numero di elementi parzialmente indicizzati restituiti nei risultati della ricerca: 
+Dopo aver eseguito una ricerca contenuto nel centro sicurezza & conformità, il numero totale e le dimensioni degli elementi parzialmente indicizzati nei percorsi ricercati sono elencati nelle statistiche dei risultati di ricerca visualizzati nelle statistiche dettagliate per la ricerca. Nota Queste sono denominate  *voci non indicizzate*  nelle statistiche di ricerca. Di seguito sono riportati alcuni aspetti che influiscono sul numero di elementi parzialmente indicizzati restituiti nei risultati della ricerca: 
   
 - Se un elemento è parzialmente indicizzato e corrisponde alla query di ricerca, è incluso sia nel conteggio (sia nelle dimensioni) degli elementi dei risultati di ricerca e degli elementi parzialmente indicizzati. Tuttavia, quando vengono esportati i risultati della stessa ricerca, l'elemento viene incluso solo con un set di risultati di ricerca. non è incluso come elemento parzialmente indicizzato.
     
 - Se si specifica un intervallo di date per una query di ricerca, inclusa nella query di parole chiave o tramite una condizione, qualsiasi elemento parzialmente indicizzato che non corrisponde all'intervallo di date non è incluso nel numero di elementi parzialmente indicizzati. Solo gli elementi parzialmente indicizzati che rientrano nell'intervallo di date sono inclusi nel numero di elementi parzialmente indicizzati.
     
- **Nota:** Gli elementi parzialmente indicizzati che si trovano in siti di SharePoint e OneDrive *non sono* inclusi nella stima degli elementi parzialmente indicizzati visualizzati nelle statistiche dettagliate per la ricerca. Tuttavia, gli elementi parzialmente indicizzati possono essere esportati quando si esportano i risultati di una ricerca di contenuto. Ad esempio, se si cercano solo i siti in una ricerca di contenuto, gli elementi parzialmente indicizzati per il numero stimato saranno pari a zero. 
+ **Nota:** Gli elementi parzialmente indicizzati che si trovano in siti di SharePoint e OneDrive  *non sono*  inclusi nella stima degli elementi parzialmente indicizzati visualizzati nelle statistiche dettagliate per la ricerca. Tuttavia, gli elementi parzialmente indicizzati possono essere esportati quando si esportano i risultati di una ricerca di contenuto. Ad esempio, se si cercano solo i siti in una ricerca di contenuto, gli elementi parzialmente indicizzati per il numero stimato saranno pari a zero. 
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Calcolo del rapporto tra gli elementi parzialmente indicizzati nell'organizzazione
 
@@ -95,7 +95,7 @@ I tag di errore sono costituiti da due parti di informazioni, l'errore e il tipo
 ```
 
    
- `parseroutputsize`è l'errore ed `xls` è il tipo di file del file su cui si è verificato l'errore. Nei casi in cui il tipo di file non è stato riconosciuto o il tipo di file non è stato applicato all'errore, verrà visualizzato il valore `noformat` al posto del tipo di file. 
+ `parseroutputsize` è l'errore ed  `xls` è il tipo di file del file su cui si è verificato l'errore. Nei casi in cui il tipo di file non è stato riconosciuto o il tipo di file non è stato applicato all'errore, verrà visualizzato il valore  `noformat` al posto del tipo di file. 
   
 Di seguito è riportato un elenco di errori di indicizzazione e una descrizione della possibile causa dell'errore.
   
@@ -118,7 +118,7 @@ Di seguito è riportato un elenco di errori di indicizzazione e una descrizione 
 | `retrieverrms` <br/> |La funzione di recupero contenuto non è riuscita a decodificare un messaggio protetto da RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Nel documento sono state identificate troppe parole durante l'indicizzazione. L'elaborazione della proprietà si è interrotta al raggiungimento del limite e la proprietà è troncata.  <br/> |
    
-Nei campi di errore vengono descritti i campi che sono stati modificati dall'errore di elaborazione elencato nel campo tag error. Se si esegue la ricerca di una proprietà `subject` , ad esempio `participants` , gli errori nel corpo del messaggio non influiscono sui risultati della ricerca. Questo può essere utile quando si determinano esattamente gli elementi parzialmente indicizzati che potrebbe essere necessario approfondire.
+Nei campi di errore vengono descritti i campi che sono stati modificati dall'errore di elaborazione elencato nel campo tag error. Se si esegue la ricerca di una proprietà  `subject` , ad esempio  `participants` , gli errori nel corpo del messaggio non influiscono sui risultati della ricerca. Questo può essere utile quando si determinano esattamente gli elementi parzialmente indicizzati che potrebbe essere necessario approfondire.
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Utilizzo di uno script di PowerShell per determinare l'esposizione dell'organizzazione a elementi di posta elettronica parzialmente indicizzati
 

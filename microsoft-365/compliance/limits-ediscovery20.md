@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sui limiti del caso, sui limiti di indicizzazione e sui limiti di ricerca in vigore per la soluzione avanzata di eDiscovery in Microsoft 365.
-ms.openlocfilehash: 5666bae5315586ed421ad8d6c748505cda8ae3e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778462"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358474"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limiti di Advanced eDiscovery
 
@@ -60,13 +60,13 @@ I limiti descritti in questa sezione sono correlati all'utilizzo dello strumento
 |:-----|:-----|
 |Numero massimo di cassette postali o siti che possono essere ricercati in una singola ricerca.  <br/> |Nessun limite  <br/> |
 |Numero massimo di ricerche che possono essere eseguite contemporaneamente.  <br/> |Nessun limite  <br/> | 
-|Numero massimo di ricerche che un singolo utente può avviare contemporaneamente.  <br/> |10   <br/> | 
+|Numero massimo di ricerche che un singolo utente può avviare contemporaneamente.  <br/> |10    <br/> | 
 |Numero massimo di caratteri per una query di ricerca (inclusi operatori e condizioni).  <br/> |**Cassette postali**: 10.000<br/>**Siti**: 4.000 quando si effettua la ricerca in tutti i siti o 2.000 quando si effettua la ricerca fino a 20 siti <sup>2</sup> <br/> |
-|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso; ad esempio **1 \* ** o **set \* **. <br/> |3  <br/> |  
+|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso; ad esempio **1 \* ** o **set \* **. <br/> |3   <br/> |  
 |Numero massimo di varianti restituite quando si utilizza il carattere jolly del prefisso per cercare una frase esatta o quando si utilizza un carattere jolly di prefisso e l'operatore booleano **vicino** .  <br/> |10.000 <sup>3</sup> <br/> |
 |Numero massimo di elementi per ogni cassetta postale utente che vengono visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti.   <br/> |100  <br/> |
-|Numero massimo di elementi di tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.  <br/> |1.000  <br/> |
-|Numero massimo di cassette postali che è possibile visualizzare in anteprima per i risultati della ricerca.  Se sono presenti più di 1000 cassette postali che contengono elementi che corrispondono alla query di ricerca, sono disponibili per l'anteprima solo le cassette postali di 1.000 con la maggior parte dei risultati.<br/> |1.000  <br/> |
+|Numero massimo di elementi di tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.  <br/> |1,000  <br/> |
+|Numero massimo di cassette postali che è possibile visualizzare in anteprima per i risultati della ricerca.  Se sono presenti più di 1000 cassette postali che contengono elementi che corrispondono alla query di ricerca, sono disponibili per l'anteprima solo le cassette postali di 1.000 con la maggior parte dei risultati.<br/> |1,000  <br/> |
 |Numero massimo di elementi di siti di SharePoint e OneDrive for business visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti.  <br/> |200  <br/> |
 |Numero massimo di siti di SharePoint e OneDrive for business che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 200 siti che contengono elementi che corrispondono alla query di ricerca, solo i primi 200 siti con la maggior parte dei risultati sono disponibili per l'anteprima.  <br/> |200  <br/> |
 |Numero massimo di elementi per ogni cassetta postale di cartelle pubbliche visualizzata nella pagina di anteprima per le ricerche.  <br/> |100  <br/> |

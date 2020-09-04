@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
 ms.service: O365-seccomp
@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Invece di esportare i risultati effettivi di una ricerca contenuto nel centro sicurezza & conformità in Office 365, è possibile esportare un rapporto sui risultati di ricerca. Il report contiene un riepilogo dei risultati della ricerca e un documento con informazioni dettagliate su ogni elemento che verrebbe esportato.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25525a0670f31a7e962fb72f6d1559381e8b33cd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: de27e25945f14f6a6119b4c1776eebca5e84d8ce
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817775"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358302"
 ---
 # <a name="export-a-content-search-report"></a>Esportare un report di Ricerca contenuto
 
 Invece di esportare il set completo di risultati della ricerca da una ricerca di contenuto nel centro sicurezza & Compliance (e da una ricerca di contenuto associata a un caso di eDiscovery), è possibile esportare gli stessi rapporti generati quando si esportano i risultati della ricerca.
   
-Quando si esporta un report, viene scaricato in una cartella con lo stesso nome della ricerca di contenuto, ma accodato con *_ReportsOnly*. Ad esempio, se la ricerca di contenuto è denominata *ContosoCase0815*, il report viene scaricato in una cartella denominata *ContosoCase0815_ReportsOnly*. Per un elenco dei documenti inclusi nel report, vedere [What ' s incluso nel report](#whats-included-in-the-report).
+Quando si esporta un report, viene scaricato in una cartella con lo stesso nome della ricerca di contenuto, ma accodato con *_ReportsOnly*. Ad esempio, se la ricerca di contenuto è denominata  *ContosoCase0815*, il report viene scaricato in una cartella denominata *ContosoCase0815_ReportsOnly*. Per un elenco dei documenti inclusi nel report, vedere [What ' s incluso nel report](#whats-included-in-the-report).
 
 ## <a name="assign-roles-and-check-system-requirements"></a>Assegnazione dei ruoli e verifica dei requisiti di sistema
 

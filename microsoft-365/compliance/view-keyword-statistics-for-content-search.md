@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/30/2017
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Informazioni su come utilizzare la funzionalità di statistiche di ricerca per visualizzare e confrontare le statistiche per più ricerche di contenuto nel centro sicurezza & conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 30cc893d041819ac1fa2e24c6ecf6178677686b2
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 6f9f6b77a7a557ca363b2a7d56b96ea3d6ccc287
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819036"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358464"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Visualizzare le statistiche delle parole chiave per i risultati di Ricerca contenuto
 
@@ -74,7 +74,7 @@ Per visualizzare le statistiche per le ricerche di contenuto:
     
     d. Questa colonna contiene la query di ricerca effettiva eseguita dallo strumento di ricerca del contenuto. Si noti che lo strumento aggiunge automaticamente alcuni componenti aggiuntivi alla query creata. 
 
-    - Quando si esegue la ricerca di tutto il contenuto nelle cassette postali (non specificando parole chiave), la query parola chiave effettiva è in `size>=0` modo che tutti gli elementi vengano restituiti. 
+    - Quando si esegue la ricerca di tutto il contenuto nelle cassette postali (non specificando parole chiave), la query parola chiave effettiva è in  `size>=0` modo che tutti gli elementi vengano restituiti. 
     
      - Quando si eseguono ricerche in siti di SharePoint Online e OneDrive for business, vengono aggiunti i due componenti seguenti:
     

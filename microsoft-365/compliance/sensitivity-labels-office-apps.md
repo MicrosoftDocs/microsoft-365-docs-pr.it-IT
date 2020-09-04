@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come gli utenti lavorano con etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web e quali app supportano le etichette di riservatezza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c3e3bf903905ca241053ef110fb92bd220f3233f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 513a544239890f2299a7208d2ba2c20c4507a7ef
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797630"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357778"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -39,9 +39,9 @@ Per utilizzare le etichette di riservatezza con queste edizioni autonome di Offi
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Supporto per le funzionalità delle etichette di riservatezza nelle app
 
-Per ogni funzionalità, nelle tabelle seguenti sono elencate le versioni minime necessarie per l'app per supportare le etichette di riservatezza utilizzando l'etichettatura incorporata. In alternativa, se la funzionalità etichetta è in anteprima pubblica o in revisione per una versione futura.
+Per ogni funzionalità, nelle tabelle seguenti sono elencate le versioni di Office minime necessarie per l'app per il supporto delle etichette di riservatezza tramite l'etichettatura incorporata. In alternativa, se la funzionalità etichetta è in anteprima pubblica o in revisione per una versione futura. Per informazioni dettagliate sulle versioni future, utilizzare la Guida di [orientamento di Microsoft 365](https://aka.ms/MIPC/Roadmap) .
 
-Le nuove versioni delle app vengono rese disponibili in tempi diversi per i diversi canali di aggiornamento. Per ulteriori informazioni, tra cui la configurazione del canale di aggiornamento in modo che sia possibile testare una nuova funzionalità di etichettatura interessata, vedere [Overview of Update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). Le nuove funzionalità che si trovano nell'anteprima privata non sono incluse nella tabella, ma è possibile partecipare a queste anteprime nominando l'organizzazione per il [programma Microsoft Information Protection private preview](https://aka.ms/mip-preview).
+Le nuove versioni delle app di Office vengono rese disponibili in tempi diversi per i diversi canali di aggiornamento. Per ulteriori informazioni, tra cui la configurazione del canale di aggiornamento in modo che sia possibile testare una nuova funzionalità di etichettatura interessata, vedere [Overview of Update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). Le nuove funzionalità che si trovano nell'anteprima privata non sono incluse nella tabella, ma è possibile partecipare a queste anteprime nominando l'organizzazione per il [programma Microsoft Information Protection private preview](https://aka.ms/mip-preview).
 
 > [!NOTE]
 > Sono stati modificati di recente i nomi dei canali di aggiornamento per le app di Office. Ad esempio, il canale mensile è ora canale corrente e Office Insider è ora il canale beta. Per ulteriori informazioni, vedere [changes to Update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/update-channels-changes).
