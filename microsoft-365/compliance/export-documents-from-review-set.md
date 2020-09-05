@@ -15,71 +15,94 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Informazioni su come selezionare ed esportare o scaricare contenuto da un set di revisione per presentazioni o recensioni esterne.
+description: Informazioni su come selezionare ed esportare il contenuto da un set di revisione per presentazioni o recensioni esterne.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29c2224a1ce0a92bca3b2057352f6f82fdc7afde
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 855f1b8fef7a1df6ed86f058b71e5027851b5f0d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034094"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399178"
 ---
 # <a name="export-documents-from-a-review-set"></a>Esportare i documenti da un insieme da rivedere
 
-È possibile esportare il contenuto per la presentazione o la revisione esterna da un set di revisione tramite uno dei metodi seguenti:
+Export consente agli utenti di personalizzare il contenuto incluso nel pacchetto di download. Lo strumento di esportazione fornisce una pagina di configurazione con le seguenti impostazioni:
 
-- [Scaricare documenti](#download-documents-from-a-review-set)
- 
-- [Esportare documenti](#export-documents-from-a-review-set)
+![Opzioni per l'esportazione di elementi da un set di Revisione](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-## <a name="download-documents-from-a-review-set"></a>Scaricare i documenti da un set di Revisione
+## <a name="export-options"></a>Opzioni di esportazione
 
-Download offre un modo semplice per scaricare contenuto da un set di recensioni in formato nativo. Sfrutta le caratteristiche di trasferimento dei dati del browser in modo che una richiesta del browser venga visualizzata una volta che il download è pronto. I file scaricati con questo metodo verranno zippati in un file contenitore e saranno file a livello di elemento. Questo significa che se si seleziona un allegato, verrà visualizzato automaticamente il messaggio di posta elettronica con l'allegato incluso. Analogamente, se si seleziona un foglio di calcolo di Excel incorporato in un documento di Word, verrà visualizzato il documento di Word con il foglio di calcolo di Excel incorporato. Gli elementi scaricati conserveranno la data dell'Ultima modifica che può essere visualizzata come proprietà di un file.
+- Nome esportazione: nome del processo di esportazione.
 
-Per scaricare contenuto da un set di recensioni, iniziare selezionando i file che si desidera scaricare, quindi selezionare "Scarica" dal menu azioni.
+- Descrizione: campo di testo libero che consente di aggiungere una descrizione.
 
-![Schermata di una descrizione del computer generata automaticamente](../media/eDiscoDownload.png)
+- Esportare questi documenti:
 
-## <a name="export-documents-from-a-review-set"></a>Esportare i documenti da un insieme da rivedere
+  - Solo documenti selezionati: consente di esportare solo i documenti attualmente selezionati.
+  
+  - Tutti i documenti nel set di revisione-Esporta tutti i documenti nel set di Revisione
 
-Export consente agli utenti di personalizzare il contenuto incluso nel pacchetto di download. Fornisce una pagina di configurazione con le seguenti impostazioni:
+- Metadati
+  
+  - Load file: questo file contiene i metadati per ogni file. Per ulteriori informazioni sui campi inclusi, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md) . Questo file può in genere essere ingerito da strumenti di eDiscovery di terze parti.
+  
+  - Tag: quando vengono selezionati, le informazioni di tagging verranno incluse nel file di caricamento.
 
-### <a name="metadata-file"></a>File di metadati
-
-Questo può essere considerato come il "Load file" che contiene i metadati associati ai file che vengono esportati. Per un elenco dei campi esportati disponibili nel file di metadati, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). Questo file può in genere essere ingerito da strumenti di terze parti.
-
-### <a name="tag-data"></a>Dati tag
-
-Questo contenuto verrebbe aggiunto come campi nel file di metadati. Contiene tutte le informazioni sui tag applicate nei set di revisione.
-
-### <a name="text-files"></a>File di testo
-
-È possibile generare file di testo per ogni file esportato da un set di revisione. Spesso questi file sono necessari per i partner del servizio come parte dell'ingestione dei dati in strumenti di terze parti.
-
-### <a name="redacted-files"></a>File redatti
-
-Se durante la revisione vengono generati file PDF redatti, tali file sono disponibili durante l'esportazione. È possibile decidere se esportare solo i file nativi o sostituire i file nativi che richiedono la redazione con i file PDF che contengono le redazioni effettive.
-
-### <a name="export-location"></a>Percorso di esportazione
-
-Il contenuto esportato viene recapitato a un BLOB di Azure fornito da Microsoft o è possibile utilizzare il BLOB di un cliente se i dettagli vengono forniti all'esportazione.
-
-### <a name="export-structure"></a>Struttura di esportazione
-
-Quando il contenuto viene esportato da un set di revisione, il contenuto è organizzato nella struttura seguente.
-
-  - Cartella radice-ID download
+- Contenuto
+  
+  - File nativi: selezionare questa casella di controllo per includere i file nativi.
+  
+  - Opzioni di conversazione
     
-      - Esporta\_caricamento\_file. csv = file di metadati
+    - File di conversazione: esportare i messaggi di chat ricostruiti. Questo formato presenta conversazioni in un modulo simile a quello che gli utenti vedono nell'applicazione nativa.
     
-      - Summary. txt = un file di riepilogo con statistiche di esportazione
+    - Messaggi di chat individuali: esportare i file di conversazione originali come archiviati in Microsoft 365.
+
+- Opzioni
+
+  - File di testo-includere le versioni di testo estratte dei file nativi.
+  
+  - Sostituisci nativi ritirati con i file PDF convertiti-se durante la revisione sono stati generati i documenti di modifica, questi file sono disponibili per l'esportazione. È possibile scegliere di esportare solo i file nativi che sono stati redatti (non selezionando questa opzione) oppure è possibile selezionare questa opzione per esportare i file PDF che contengono le redazioni effettive.
+
+- Opzioni di output (il contenuto esportato è disponibile per il download direttamente tramite un Web browser o può essere inviato a un account di archiviazione di Azure. Le prime due opzioni consentono il download diretto.
+  
+  - File allentati e PST (la posta elettronica viene aggiunta a PST quando possibile): i file vengono esportati in un formato simile alla struttura di directory originale visualizzata dagli utenti nelle applicazioni native.  Per ulteriori informazioni, vedere la sezione [file Loose and PST Export Structure](#loose-files-and-pst-export-structure) .
+  
+  - Struttura di directory condensata-i file vengono esportati e inclusi nel download.
+  
+  - Struttura di directory ridotta esportata nell'account di archiviazione di Azure-i file vengono esportati nell'accouunt di archiviazione di Azure dell'organizzazione.
+
+## <a name="loose-files-and-pst-export-structure"></a>File Loose e struttura di esportazione PST
+
+Se si seleziona questa opzione di esportazione, il contenuto esportato è organizzato nella struttura seguente:
+
+- Cartella radice – questa cartella denominata ExportName.zip
+  
+  - Export_load_file.csv-file di metadati.
+  
+  - Summary.csv-un file di riepilogo contenente anche le statistiche di esportazione.
+  
+  - Exchange: questa cartella contiene tutto il contenuto di Exchange nel formato di file nativo. Se è stata selezionata l'opzione **Sostituisci nativi con file PDF convertiti** , i file nativi vengono sostituiti con documenti PDF ritirati.
+  
+  - SharePoint = questa cartella contiene tutto il contenuto nativo di SharePoint in un formato di file nativo. Se è stata selezionata l'opzione **Sostituisci nativi con file PDF convertiti** , i file nativi vengono sostituiti con documenti PDF ritirati.
+
+## <a name="condensed-directory-structure"></a>Struttura di directory ridotta
+
+- Cartella radice-questa cartella è denominata ExportName.zip
+  
+  - Export_load_file.csv-file di metadati.
+  
+  - Summary.txt-un file di riepilogo contenente anche le statistiche di esportazione.
+  
+  - Input_or_native_files: questa cartella contiene tutti i file nativi che sono stati esportati. Se si esportano file PDF redatti, non vengono inseriti nei file PST. Al contrario, vengono aggiunti a una cartella separata.
+  
+  - Error_files-questa cartella contiene i file di errore seguenti, se sono inclusi nell'esportazione:
     
-      - Input\_o file\_nativi = contiene tutti i file nativi
+    - ExtractionError. File CSV che contiene i metadati disponibili dei file che non sono stati estratti correttamente dai file padre.
     
-      - File\_Error = contiene eventuali file di errore inclusi nell'esportazione
-        
-          - ExtractionError – un CSV che contiene i metadati disponibili di file che non sono stati estratti correttamente dai file padre
-        
-          - ProcessingError – contenuto con errori di elaborazione. Questo contenuto è a livello di elemento significato se un allegato ha subito un errore di elaborazione, il messaggio di posta elettronica che contiene l'allegato verrà incluso in questa cartella.
-    
-      - File\_di\_testo estratti = contiene tutti i file di testo estratti generati durante l'elaborazione.
+    - ProcessingError – questo file contiene un elenco di documenti con errori di elaborazione. Questo contenuto è a livello di elemento, ovvero se un allegato ha generato un errore di elaborazione, il messaggio di posta elettronica che contiene l'allegato è incluso in questa cartella.
+  
+  - Extracted_text_files: questa cartella contiene tutti i file di testo estratti che sono stati generati durante l'elaborazione.
+
+> [!NOTE]
+> I processi di esportazione vengono mantenuti per tutta la durata del caso e possono essere scaricati purché il caso non venga eliminato.

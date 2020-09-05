@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati di Eikon Reuters da Globanet in Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: ee28cd33e6c4531bf769a1e178d733eff453cb75
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a5cd6e6266c9e5d8b74f50a5712e436e6225c9df
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362015"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399339"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-eikon-data-preview"></a>Configurare un connettore per l'archiviazione dei dati di Eikon Reuters (anteprima)
 
@@ -28,7 +28,7 @@ Dopo che i dati di Eikon di Reuters sono archiviati nelle cassette postali degli
 
 ## <a name="overview-of-archiving-reuters-eikon-data"></a>Panoramica dell'archiviazione dei dati di Eikon Reuters
 
-Nella panoramica seguente viene illustrato il processo di utilizzo di un connettore per archiviare le informazioni di Eikon Reuters in Microsoft 365.
+Nella panoramica seguente viene illustrato il processo di utilizzo di un connettore per l'archiviazione dei dati di Eikon Reuters in Microsoft 365.
 
 ![Flusso di lavoro di archiviazione per i dati di Eikon Reuters](../media/ReutersEikonConnectorWorkflow.png)
 
@@ -68,7 +68,7 @@ Dopo aver fatto clic su **salva & fine**, è possibile tornare al centro conform
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Passaggio 3: mappare gli utenti e completare la configurazione del connettore
 
-Per eseguire il mapping degli utenti e completare il connettore configurato nel centro conformità Microsoft 365, attenersi alla seguente procedura:
+Per eseguire il mapping degli utenti e completare la configurazione del connettore nel centro conformità di Microsoft 365, eseguire la procedura seguente:
 
 1. Nella pagina mapping **utenti esterni a Microsoft 365** , abilitare il mapping automatico degli utenti. Gli elementi di Eikon Reuters includono una proprietà denominata *posta elettronica*, che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente.
 
