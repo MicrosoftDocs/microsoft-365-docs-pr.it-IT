@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b26250c54c30b2da4dbda50a5909a168f09bbe73
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 40d0ffa779b0ab13a0bdd887b12d69c20892662d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866684"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399350"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Punteggio principale nei test del settore
 
@@ -37,7 +37,7 @@ Il metodo core to MITRE ' s testing emula gli attacchi del mondo reale per capir
 
 - Valutazione ATT&basata su CK di Microsoft Threat Protection-maggio 2020: [Leading in Real-World Detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft Threat Protection ha fornito una copertura di quasi il 100% nelle fasi della catena di attacco. Ha fornito una visibilità iniziale all'interno delle attività di un utente malintenzionato. La visibilità riduce drasticamente il lavoro manuale per il centro operazioni di sicurezza e le soluzioni fornitore che si basano su specifiche modifiche alla configurazione. Aveva anche il minor numero di spazi di visibilità, diminuendo la capacità degli aggressori di funzionare non rilevati.
+    Microsoft Threat Protection ha fornito una copertura di quasi il 100% nelle fasi della catena di attacco. Ha fornito una visibilità iniziale all'interno delle attività di un utente malintenzionato. La visibilità riduce drasticamente il lavoro manuale per il centro operazioni di sicurezza e le soluzioni fornitore che si basano su specifiche modifiche alla configurazione. Microsoft Threat Protection ha avuto anche il minor numero di spazi di visibilità, diminuendo la capacità degli aggressori di funzionare non rilevati.
 
 ## <a name="next-generation-protection"></a>Protezione di nuova generazione
 
@@ -45,15 +45,17 @@ Il metodo core to MITRE ' s testing emula gli attacchi del mondo reale per capir
 
 Microsoft Defender Antivirus è la funzionalità di [protezione di prossima generazione](https://www.youtube.com/watch?v=Xy3MOxkX_o4) nello [stack di sicurezza ATP Microsoft Defender di Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) che affronta le minacce più recenti e sofisticate di oggi. In alcuni casi, i clienti potrebbero anche non sapere di essere protetti perché un cyberattack viene interrotto [millisecondi dopo l'avvio di una campagna](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). Ciò è dovuto al fatto che Microsoft Defender Antivirus e altre funzionalità di [Endpoint Protection Platform (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) in Microsoft Defender trifosfato di adenosina rilevare e arrestare il malware a prima vista. Utilizzano l' [apprendimento automatico](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), l' [intelligenza artificiale](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), l'analisi comportamentale e altre tecnologie avanzate.
 
-### <a name="av-test-protection-score-of-5560-in-the-latest-test"></a>AV-TEST: Punteggio di protezione di 5.5/6.0 nell'ultimo test
+### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-TEST: Punteggio di protezione di 6.0/6.0 nell'ultimo test
 
 Il report di valutazione del prodotto AV-TEST e la certificazione test su tre categorie: protezione, prestazioni e usabilità. I punteggi seguenti sono relativi alla categoria di protezione con due punteggi: testing del mondo reale e set di riferimento per il TEST AV (noto come "malware prevalente").
 
 **Scaricare l'ultima relazione sulla trasparenza: [esaminare i risultati dei test AV, gennaio-febbraio 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- Marzo-aprile 2020 AV-TEST business test utente: [Punteggio di protezione 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**più recente**</sup>
+- Maggio-giugno 2020 AV-TEST business user test: [Punteggio di protezione 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/) <sup>**più recente**</sup>
 
-    Microsoft Defender Antivirus ha ottenuto un punteggio di protezione complessivo di 5.5/6.0, con 20.540 esempi di malware usati.
+    Microsoft Defender Antivirus ha ottenuto un perfetto Punteggio di protezione di 6.0/6.0, con 100% in maggio e giugno. 22.190 sono stati utilizzati esempi di malware.
+
+- Marzo-aprile 2020 AV-TEST business test utente: [Punteggio di protezione 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
 
 - Gennaio-febbraio 2020 AV-test Business Test utente: valutazione di [protezione 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [analisi](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
@@ -65,13 +67,13 @@ Il report di valutazione del prodotto AV-TEST e la certificazione test su tre ca
 
 - Maggio — giugno 2019 AV-test Business Test utente: analisi del [Punteggio di protezione 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
-### <a name="av-comparatives-protection-rating-of-995-in-the-latest-test"></a>AV-Comparatives: valutazione di protezione del 99,5% nell'ultimo test
+### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-Comparatives: valutazione di protezione del 99,7% nell'ultimo test
 
 Il test di sicurezza aziendale è costituito da tre parti principali: il test di protezione del mondo reale che simula gli attacchi di malware online, il test di protezione antimalware in cui il malware entra nel sistema dall'esterno di Internet (ad esempio tramite USB) e il test delle prestazioni che analizza l'impatto sulle prestazioni del sistema.
 
-- Scheda Business Security Test 2020 Factsheet (marzo-aprile): [velocità di protezione del mondo reale 99,5%](https://www.av-comparatives.org/tests/business-security-test-march-april-2020-factsheet/) <sup>**più recente**</sup>
+- Test di sicurezza aziendale 2020 (marzo-giugno): [tasso di protezione del mondo reale 99,7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**più recente**</sup>
 
-    Microsoft Defender Antivirus ha ottenuto un punteggio sempre elevato nelle tariffe di protezione del mondo reale nell'ultimo anno, con un 99,5% nel test più recente.
+    Microsoft Defender Antivirus ha ottenuto un punteggio sempre elevato nelle tariffe di protezione del mondo reale nell'ultimo anno, con un 99,7% nel test più recente.
 
 - Test di sicurezza aziendale 2019 (agosto-novembre): [tasso di protezione del mondo reale 99,6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
@@ -85,9 +87,11 @@ SE Labs verifica una serie di soluzioni utilizzate da prodotti e servizi per ril
 
 **Scaricare l'ultima relazione sulla trasparenza: [esaminare i risultati dei test di se Labs, gennaio-marzo 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
 
-- Enterprise Endpoint Protection gennaio-marzo 2020: analisi del <sup>**formato PDF**</sup>del [premio AAA](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- Enterprise Endpoint Protection aprile-giugno 2020: [premio AAA](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
 
-    La protezione di Microsoft Next-gen è stata denominata uno dei prodotti principali, interrompendo tutti gli attacchi mirati e tutti tranne una minaccia pubblica.
+    La protezione di Microsoft Next-gen è stata denominata uno dei prodotti principali, proteggendo da tutti gli attacchi pubblici e mirati. Microsoft Defender Antivirus ha ottenuto buoni risultati grazie alla capacità di bloccare gli URL dannosi, gestire gli exploit e classificare correttamente le applicazioni e i siti Web legittimi.
+
+- Enterprise Endpoint Protection gennaio-marzo 2020: analisi del <sup>**formato PDF**</sup>del [premio AAA](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
 - Enterprise Endpoint Protection ottobre-dicembre 2019: [premio AAA](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**PDF**</sup>
 
@@ -101,7 +105,7 @@ SE Labs verifica una serie di soluzioni utilizzate da prodotti e servizi per ril
 
 Le funzionalità di [rilevamento e risposta di endpoint ATP di](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) Microsoft Defender offrono rilevamenti di attacchi avanzati che sono quasi in tempo reale e utilizzabili. I responsabili della sicurezza possono assegnare priorità agli avvisi in modo efficace, ottenere una visibilità completa su una violazione e adottare azioni di risposta per correggere le minacce.
 
-Le funzionalità EDR e Endpoint Protection di Microsoft Defender ATP hanno ricevuto risultati positivi da test e pubblicazioni del settore. [SC Labs ha valutato gli strumenti di sicurezza di endpoint](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) nel 2020 giugno e ha dato a Microsoft Defender ATP [5/5 stelle](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). Hanno chiamato la capacità di Microsoft Defender ATP di proteggere le organizzazioni dal panorama delle minacce moderno utilizzando una serie completa di funzionalità di sicurezza. Sono inoltre state identificate la soluzione di sicurezza dell'endpoint come olistica e unificata. Sono state inoltre riconosciute la convergenza di Endpoint Protection con funzionalità di rilevamento e risposta di endpoint, poiché la catena di attacchi viene ora completamente coperta dalle soluzioni.
+Le funzionalità EDR e Endpoint Protection di Microsoft Defender ATP hanno ricevuto risultati positivi da test e pubblicazioni del settore. [SC Labs ha valutato gli strumenti di sicurezza di endpoint](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) nel 2020 giugno e ha dato a Microsoft Defender ATP [5/5 stelle](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). Hanno chiamato la capacità di Microsoft Defender ATP di proteggere le organizzazioni dal panorama delle minacce moderno utilizzando una serie completa di funzionalità di sicurezza. SC Labs ha inoltre identificato la soluzione di sicurezza dell'endpoint come olistica e unificata. Sono state inoltre riconosciute la convergenza di Endpoint Protection con funzionalità di rilevamento e risposta di endpoint, poiché la catena di attacchi viene ora completamente coperta dalle soluzioni.
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE: funzionalità di rilevamento e ottica leader del settore
 
