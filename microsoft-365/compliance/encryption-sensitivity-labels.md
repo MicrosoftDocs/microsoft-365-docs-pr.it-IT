@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
-ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
+ms.openlocfilehash: e3604518be47e35590792689c46bb036cbeb8965
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47334859"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399265"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -170,11 +170,11 @@ Quando si scelgono tutti gli utenti e i gruppi nell'organizzazione o si sfoglia 
 
 È consigliabile utilizzare i gruppi anziché gli utenti, così da mantenere la configurazione più semplice.
 
-##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Requisiti e limitazioni per **aggiungere tutti gli utenti autenticati**
+##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Requisiti e limitazioni per "Aggiungere tutti gli utenti autenticati"
 
 Questa opzione non limita gli utenti che possono accedere al contenuto crittografato dall'etichetta, anche se crittografa il contenuto e specifica le opzioni per limitare il modo in cui è possibile usarlo (autorizzazioni) e accedervi (scadenza e accesso offline). Tuttavia, l'applicazione che apre il contenuto crittografato deve essere in grado di supportare l'autenticazione in uso. Per questo motivo, i provider di servizi di social networking federati, come Google, e l'autenticazione tramite passcode monouso funzionano solo per la posta elettronica e solo quando si usa Exchange Online. È possibile usare gli account Microsoft con le app di Office 365 e il [visualizzatore Azure Information Protection](https://portal.azurerms.com/#/download).
 
-Alcuni scenari tipici per l'impostazione Tutti gli utenti autenticati:
+Alcuni scenari tipici per l'impostazione di qualsiasi utente autenticate:
 - Non interessa chi visualizza il contenuto, ma si desidera limitare il modo in cui questo viene usato. Ad esempio, non si vuole che il contenuto venga modificato, copiato o stampato.
 - Non è necessario limitare gli utenti che possono accedere al contenuto, ma si desidera confermare chi può aprirlo.
 - Esiste il requisito che il contenuto deve essere crittografato quando inattivo e in transito, ma non sono richiesti controlli di accesso.
@@ -213,7 +213,7 @@ Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietari
 > [!NOTE]
 > Al momento questa funzionalità è disponibile in anteprima pubblica. Per altre informazioni, vedere [Annuncio dell'anteprima pubblica della crittografia a chiave doppia per Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
-Selezionare questa opzione solo dopo aver configurato il servizio di crittografia a chiave doppia e sarà necessario usare questa crittografia a chiave doppia per i file e i messaggi di posta elettronica a cui è applicata questa l'etichetta.
+Selezionare questa opzione solo dopo aver configurato il servizio di crittografia a chiave doppia e sarà necessario usare questa crittografia a chiave doppia per i file a cui è applicata questa l'etichetta.
 
 Per altre informazioni, prerequisiti e istruzioni di configurazione, vedere [Crittografia a chiave doppia](double-key-encryption.md).
 

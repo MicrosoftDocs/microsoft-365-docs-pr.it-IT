@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare la prevenzione della perdita di dati degli endpoint di Microsoft 365 per monitorare le attività dei file e implementare azioni di protezione per questi file negli endpoint.
-ms.openlocfilehash: 67bd00a83314590d1ca1ab71c32d5a325686dc46
-ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
+ms.openlocfilehash: f24dff993a125de9ecd126b232abfcfa503deb83
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46514779"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399223"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introduzione alla prevenzione della perdita di dati degli endpoint (anteprima)
 
@@ -99,17 +99,17 @@ In questo scenario di distribuzione si esegue l'onboarding di dispositivi non an
 1. Aprire il [Centro conformità Microsoft](https://compliance.microsoft.com).
 2. Aprire la pagina delle impostazioni del Centro conformità e scegliere **Onboarding di dispositivi**. 
 
-![abilitare la gestione dei dispositivi](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   ![abilitare la gestione dei dispositivi](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-> [!NOTE]
-> Anche se in genere sono necessari circa 60 secondi perché l'onboarding dei dispositivi sia abilitato, attendere fino a 30 minuti prima di contattare il supporto tecnico Microsoft.
+   > [!NOTE]
+   > Anche se in genere sono necessari circa 60 secondi perché l'onboarding dei dispositivi sia abilitato, attendere fino a 30 minuti prima di contattare il supporto tecnico Microsoft.
 
 3. Scegliere **Gestione dispositivi** per aprire l'elenco **Dispositivi**. L'elenco sarà vuoto finché non si caricano dispositivi.
 4. Scegliere **Onboarding** per avviare il processo di onboarding.
 5. Scegliere il modo in cui si vogliono distribuire questi altri dispositivi dall'elenco **Metodo di distribuzione** e quindi **scaricare il pacchetto**.
 
-![metodo di distribuzione](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-1. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere alle procedure di MDATP che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
+   ![metodo di distribuzione](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+6. Seguire le procedure appropriate in [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Questo collegamento porta a una pagina di destinazione in cui è possibile accedere alle procedure di MDATP che corrispondono al pacchetto di distribuzione selezionato nel passaggio 5:
     - Onboarding di dispositivi Windows 10 con Criteri di gruppo
     - Onboarding di dispositivi Windows 10 con Microsoft Endpoint Configuration Manager
     - Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili
@@ -152,7 +152,7 @@ Una volta completata l'operazione di onboarding, l'endpoint sarà visibile nell'
 ## <a name="next-steps"></a>Passaggi successivi
 Ora che si è eseguito l'onboarding dei dispositivi e che è possibile visualizzare i dati sulle attività in Esplora attività, è possibile procedere con il passaggio successivo, in cui si creano criteri di prevenzione della perdita dei dati per proteggere gli elementi sensibili.
 
-1) [Uso della prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-using.md)
+- [Uso della prevenzione della perdita di dati degli endpoint (anteprima)](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Vedere anche
 

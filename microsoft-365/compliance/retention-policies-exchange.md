@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per Exchange.
-ms.openlocfilehash: e1860b9ff9c521a5a6a61c58d822a2a893570e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: e12f46b68feb4b64ade14cfb046061d89e1a607c
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127443"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394713"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Informazioni sulla conservazione per Exchange
 
@@ -70,4 +70,9 @@ Se un utente abbandona l’organizzazione e la relativa cassetta postale è incl
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione
 
-Se è tutto pronto per configurare la conservazione in Microsoft 365, vedere [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md).
+Se si configura per la prima volta la conservazione in Microsoft 365, vedere [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md).
+
+Se si è pronti per configurare un criterio di conservazione o un'etichetta di conservazione per Exchange, vedere le istruzioni seguenti:
+- [Creare e configurare criteri di conservazione](create-retention-policies.md)
+- [Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)
+- [Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)

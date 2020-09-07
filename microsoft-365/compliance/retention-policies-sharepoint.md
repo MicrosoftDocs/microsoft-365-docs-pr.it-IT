@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: da700c72a03bad85310be8807bf94e54ec6a4048
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315789"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394703"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -98,4 +98,9 @@ Se un utente abbandona l'organizzazione, i file soggetti a un criterio di conser
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione
 
-Se è tutto pronto per configurare la conservazione in Microsoft 365, vedere [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md).
+Se si configura per la prima volta la conservazione in Microsoft 365, vedere [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md).
+
+Se si è pronti per configurare un criterio di conservazione o un'etichetta di conservazione per Exchange, vedere le istruzioni seguenti:
+- [Creare e configurare criteri di conservazione](create-retention-policies.md)
+- [Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)
+- [Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)

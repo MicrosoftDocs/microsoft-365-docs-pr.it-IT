@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Il piano di archiviazione offre funzionalità di gestione avanzate per le etichette di conservazione.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126879"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399213"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Usare il piano di archiviazione per gestire le etichette di conservazione
 
@@ -108,11 +108,11 @@ Per iniziare, esistono alcuni valori preesistenti per i seguenti descrittori del
 
 Esempio di descrittori del piano di archiviazione quando si crea o si modifica un'etichetta di conservazione:
 
-![Descrittori del piano di archiviazione](../media/file-plan-descriptors.png)
+![Descrittori del piano di archiviazione quando si crea o si modifica un'etichetta di conservazione](../media/file-plan-descriptors.png)
 
 Esempio di come vengono visualizzate le colonne dei descrittori del piano di archiviazione:
 
-![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
+![Colonne dei descrittori del piano di archiviazione](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Esportare tutte le etichette di conservazione per analizzare o abilitare le revisioni offline
 
