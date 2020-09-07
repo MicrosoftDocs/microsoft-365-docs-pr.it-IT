@@ -548,10 +548,10 @@
         - name: Esportare i dati del caso
           href: exporting-data-ediscover20.md
           items:
+            - name: Scaricare i documenti da un insieme da rivedere
+              href: download-documents-from-review-set.md
             - name: Esportare i documenti da un insieme da rivedere
               href: export-documents-from-review-set.md
-            - name: Scaricare processi di esportazione
-              href: download-export-jobs.md
         - name: Gestire processi
           href: managing-jobs-ediscovery20.md
         - name: Configurare le impostazioni del caso
