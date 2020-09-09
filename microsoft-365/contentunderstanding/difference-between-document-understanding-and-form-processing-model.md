@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Descrive la differenza fondamentale tra la comprensione dei documenti e i modelli di elaborazione dei moduli.
-ms.openlocfilehash: 7c480b91c1ddd75016b4bd35faa3d5692cacd103
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 972fa9e8446a44f6220baa7cde3f484172c50da6
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612739"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405619"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>Differenza tra la comprensione dei documenti e i modelli di elaborazione dei moduli (anteprima)
 
@@ -31,7 +31,7 @@ Content Understanding consente di creare *modelli* per identificare ed estrarre 
 - [Informazioni sui modelli di documento](document-understanding-overview.md)
 - [Modelli di elaborazione dei moduli](form-processing-overview.md)
 
-Sebbene entrambi i modelli vengano utilizzati in genere per lo stesso scopo, sono presenti differenze chiave che interessano quelle che è possibile scegliere di utilizzare.
+Sebbene entrambi i modelli vengano utilizzati in genere per lo stesso scopo, sono presenti differenze chiave che interessano la scelta che è possibile utilizzare.
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenuto strutturato e non strutturato e semistrutturato

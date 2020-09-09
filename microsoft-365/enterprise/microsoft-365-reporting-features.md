@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su varie funzionalità di Reporting all'interno di Microsoft 365, tra cui Azure Active Directory ed Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3beb327bd5cb995c378a414e19cc54dea8ad1304
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 59a7569518ad3e4704b3528d175c092b0a19b819
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332737"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407917"
 ---
 # <a name="microsoft-365-reporting-features"></a>Funzionalità di creazione di report di Microsoft 365
 
@@ -71,9 +71,9 @@ I report di controllo di Exchange Online includono informazioni dettagliate sull
 
 ## <a name="device-compliance-reports"></a>Rapporti di conformità del dispositivo
 
-È possibile gestire e proteggere i dispositivi mobili connessi alla sottoscrizione tramite Microsoft 365 Mobile Device Management (MDM). I dispositivi mobili utilizzati per accedere ai messaggi di posta elettronica, al calendario, ai contatti e ai documenti di lavoro giocano una parte significativa per garantire che i dipendenti siano in grado di funzionare in qualsiasi momento e da qualsiasi luogo. È fondamentale proteggere le informazioni dell'organizzazione. È possibile utilizzare Microsoft 365 MDM per impostare i criteri di sicurezza del dispositivo e le regole di accesso. Se persi o rubati, è possibile utilizzare anche Microsoft 365 MDM per cancellare i dispositivi mobili.
+È possibile gestire e proteggere i dispositivi mobili connessi all'abbonamento utilizzando la sicurezza e la mobilità di base per Microsoft 365. I dispositivi mobili utilizzati per accedere ai messaggi di posta elettronica, al calendario, ai contatti e ai documenti di lavoro giocano una parte significativa per garantire che i dipendenti siano in grado di funzionare in qualsiasi momento e da qualsiasi luogo. È fondamentale proteggere le informazioni dell'organizzazione. È possibile utilizzare la sicurezza e la mobilità di base per Microsoft 365 per impostare i criteri di sicurezza e le regole di accesso dei dispositivi. Se sono stati persi o rubati, è possibile utilizzare anche la sicurezza e la mobilità di base per Microsoft 365 per cancellare i dispositivi mobili.
 
-I report di conformità MDM offrono una panoramica dei criteri configurati da un'organizzazione per proteggere i dispositivi mobili che accedono ai dati di Microsoft 365. Il report consente di filtrare i dispositivi in base allo stato di conformità, alle violazioni segnalate, ai dispositivi bloccati e al numero di dispositivi cancellati come risultato dei criteri di sicurezza. Per ulteriori informazioni, vedere [Overview of Mobile Device Management for Microsoft 365](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
+I report di base per la conformità alla sicurezza e alla mobilità offrono una panoramica dei criteri impostati da un'organizzazione per proteggere i dispositivi mobili che accedono ai dati di Microsoft 365. Il report consente di filtrare i dispositivi in base allo stato di conformità, alle violazioni segnalate, ai dispositivi bloccati e al numero di dispositivi cancellati come risultato dei criteri di sicurezza. Per ulteriori informazioni, vedere [Overview of Basic Mobility and Security for Microsoft 365](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 ## <a name="data-loss-prevention"></a>Prevenzione della perdita di dati
 

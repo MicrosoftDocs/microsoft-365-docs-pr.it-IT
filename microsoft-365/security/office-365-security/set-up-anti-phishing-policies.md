@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Gli amministratori possono ottenere informazioni sui criteri di anti-phishing disponibili in Exchange Online Protection (EOP) e Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308196"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407929"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri di anti-phishing in Microsoft 365
 
@@ -106,21 +106,23 @@ Le seguenti impostazioni di spoofing sono disponibili nei criteri anti-phishing 
     - [Gestire i messaggi e i file in quarantena come amministratore in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Mittente non autenticato**: vedere la descrizione nella sezione successiva.
+- **Mittente non autenticato**: vedere le informazioni nella sezione successiva.
 
 ### <a name="unauthenticated-sender"></a>Mittente non autenticato
 
 L'identificazione dei mittenti non autenticati fa parte delle [impostazioni di spoofing](#spoof-settings) disponibili nei criteri anti-phishing e nei criteri di anti-phishing ATP, come descritto nella sezione precedente.
 
-L'impostazione del **mittente non autenticato** consente di abilitare o disabilitare l'identificazione non identificata del mittente in Outlook. In particolare:
+L'impostazione del **mittente non autenticato** consente di abilitare o disabilitare l'identificazione dei mittenti non autenticati in Outlook. In particolare:
 
-- Un punto interrogativo (?) viene aggiunto alla foto del mittente se il messaggio non supera i controlli SPF o DKIM **e** il messaggio non supera l'autenticazione DMARC o [composita](email-validation-and-authentication.md#composite-authentication).
+- Un punto interrogativo (?) viene aggiunto alla foto del mittente se il messaggio non supera i controlli SPF o DKIM **e** il messaggio non supera l'autenticazione DMARC o [composita](email-validation-and-authentication.md#composite-authentication). La disattivazione dell'identificazione dei mittenti non autenticati impedisce l'aggiunta del punto interrogativo alla foto del mittente.
 
-- Il tag via (chris@contoso.com <u>tramite</u> Michelle@fabrikam.com) viene aggiunto se il dominio nell'indirizzo from (il mittente del messaggio visualizzato nei client di posta elettronica) è diverso dal dominio nella firma di DKIM o nell'indirizzo **di posta elettronica** . Per ulteriori informazioni su questi indirizzi, vedere [una panoramica degli standard dei messaggi di posta elettronica](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+- Il tag via (chris@contoso.com <u>tramite</u> Michelle@fabrikam.com) viene aggiunto se il dominio nell'indirizzo from (il mittente del messaggio visualizzato nei client di posta elettronica) è diverso dal dominio nella firma di DKIM o nell'indirizzo **di posta elettronica** . Per ulteriori informazioni su questi indirizzi, vedere [una panoramica degli standard dei messaggi di posta elettronica](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-Per evitare che gli identificatori vengano aggiunti ai messaggi provenienti da mittenti specifici, sono disponibili le opzioni seguenti:
+  La disattivazione dell'identificazione dei mittenti non autenticati non impedisce l'aggiunta del tag via se il dominio nell'indirizzo from è diverso dal dominio nella firma di DKIM o nell'indirizzo di posta elettronica.
 
-- Consentire al mittente di eseguire la falsificazione dei criteri di intelligence spoof. Per istruzioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+Per impedire l'aggiunta del punto interrogativo o tramite tag ai messaggi provenienti da mittenti specifici, sono disponibili le opzioni seguenti:
+
+- Consentire al mittente di eseguire la falsificazione dei criteri di intelligence spoof. Questa azione impedirà che il tag via venga visualizzato nei messaggi provenienti dal mittente quando l'identificazione dei mittenti non autenticati è disabilitata. Per istruzioni, vedere [Configure Spoofing Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Configurare l'autenticazione della posta elettronica](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) per il dominio del mittente.
   

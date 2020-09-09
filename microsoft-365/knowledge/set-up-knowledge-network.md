@@ -11,12 +11,12 @@ ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: ba8cb8ceb3c98019099bfe5438d274c9d2b32280
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: d6495f297f09ddc167d7c36835ac82a15abc91ac
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612549"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405654"
 ---
 # <a name="set-up-knowledge-management-preview"></a>Configurare la gestione delle informazioni (anteprima)
 
@@ -62,7 +62,7 @@ Per configurare la rete delle informazioni:
 
     ![Per iniziare](../media/content-understanding/k-get-started.png) </br>
 
-4. Nella pagina **scegliere il modo in cui la rete di informazioni può trovare gli argomenti** , verrà configurata l'individuazione dell'argomento. Nella sezione **selezione origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Questo include:</br>
+4. Nella pagina **scegliere il modo in cui la rete di informazioni può trovare gli argomenti** , verrà configurata l'individuazione dell'argomento. Nella sezione **selezione origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Ciò include:</br>
     a. **Tutti i siti**: tutti i siti di SharePoint nel tenant. Questo acquisisce i siti correnti e futuri.</br>
     b. **All, eccetto siti selezionati**: digitare i nomi dei siti che si desidera escludere.  È inoltre possibile caricare un elenco di siti che si desidera escludere dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. </br>
     c. **Solo siti selezionati**: digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti. </br>
@@ -71,11 +71,27 @@ Per configurare la rete delle informazioni:
    
 5. Nella sezione **Escludi argomenti per nome** è possibile scegliere di includere i nomi degli argomenti che non si desidera siano inclusi nei risultati individuati. Utilizzare questa impostazione per impedire l'inclusione di argomenti sensibili nell'ambito della rete della Knowledge base. Le opzioni includono:</br>
     a. **Non escludere argomenti** </br>
-    b. **Escludere l'argomento contenente i termini seguenti**: se sono presenti argomenti che non si desidera visualizzare agli utenti nell'ambito della rete della Knowledge base.
-   -Scaricare il modello specificato.
-   -Immettere i nomi degli argomenti che si desidera escludere. È necessario indicare il tipo di corrispondenza come esatto o parziale. Corrispondenza esatta significa che gli argomenti che corrispondono al termine esatto verranno esclusi. La corrispondenza parziale è più rigorosa e significa che verranno esclusi gli argomenti che contengono il termine. Ad esempio, se si immette *doc* come nome dell'argomento, l' *assembly doc* verrà escluso mentre il *Docker* non lo farà. I nomi degli argomenti sono case insensitive.  
-        -Selezionare questa impostazione  **+**   per importare il file CSV completato. Selezionare **carica**. Se il file è stato elaborato correttamente, verrà visualizzato un segno di spunta verde. Selezionare **Avanti**.</br>
+    b. **Escludi argomenti per nome**: se sono presenti argomenti che non si desidera vengano visualizzati dagli utenti nell'ambito della rete della Knowledge base.</br>
 
+    ![Escludi argomenti](../media/content-understanding/topics-excluded-by-name.png) </br>
+
+    #### <a name="how-to-exclude-topics-by-name"></a>Come escludere gli argomenti per nome    
+
+    Se è necessario escludere gli argomenti, fare clic su **Scarica il modello. csv**dopo aver selezionato **Escludi argomenti per nome**. Utilizzare Excel. Modello CSV che include un elenco di argomenti che si desidera escludere dai risultati dell'individuazione.
+
+    ![Escludi argomenti nel modello CSV](../media/content-understanding/csv1.png) </br>
+
+    Nel modello CSV, immettere le informazioni seguenti sugli argomenti che si desidera escludere:
+
+    - **Nome**: digitare il nome dell'argomento che si desidera escludere. Questa operazione può essere eseguita in due modi:</br>
+        - Corrispondenza esatta: è possibile includere il nome o l'acronimo esatto (ad esempio, *Contoso* o *ATL*).</br>
+        - Corrispondenza parziale: è possibile escludere tutti gli argomenti in cui è presente una parola specifica.  Ad esempio, *Arc* escluderà tutti gli argomenti con l' *arco* di parola in esso, ad esempio *cerchio arco*, *saldatura ad arco al plasma*o *arco di training*. Tenere presente che non verranno esclusi gli argomenti in cui il testo viene incluso come parte di una parola, ad esempio l' *architettura*.</br>
+    - **Espansione (facoltativo)**: se si desidera escludere un acronimo, digitare le parole in cui si trova l'acronimo.</br>
+    - **MatchType-exact/partial**: digitare se il nome immesso è un tipo di corrispondenza *esatta* o *parziale* .</br>
+
+    Dopo aver completato e salvato il file del modello CSV, selezionare **Sfoglia** per individuarlo e selezionarlo.
+    
+    Selezionare **Avanti**.</br>
 
 6. Negli **utenti che possono visualizzare gli argomenti e dove possono visualizzarli** , verrà configurata la visibilità dell'argomento. Negli **utenti che possono visualizzare gli argomenti nell'impostazione della rete di conoscenze** , scegliere chi avrà accesso ai dettagli sull'argomento, ad esempio argomenti evidenziati, schede argomento, risposte agli argomenti nelle pagine di ricerca e argomento. È possibile selezionare:</br>
     a. **Tutti gli utenti dell'organizzazione**</br>

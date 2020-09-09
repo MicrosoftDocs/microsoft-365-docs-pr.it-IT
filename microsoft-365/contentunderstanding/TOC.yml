@@ -4,7 +4,7 @@
       href: document-understanding-overview.md
     - name: Panoramica dell'elaborazione dei moduli
       href: form-processing-overview.md
-    - name: Differenze tra i modelli di elaborazione dei documenti e la comprensione dei moduli
+    - name: Differenza tra la comprensione dei documenti e i modelli di elaborazione dei moduli
       href: difference-between-document-understanding-and-form-processing-model.md
     - name: Creare un centro contenuto
       href: create-a-content-center.md
