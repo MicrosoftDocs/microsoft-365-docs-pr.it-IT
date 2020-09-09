@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati dal luogo di lavoro da Facebook, archiviati nel sito Merge1 di Globanet, in Microsoft 365. La configurazione di un connettore richiede l'utilizzo di Globanet questo connettore consente di archiviare i dati da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: e7cdb81b2b676424c289c42490fe23e7b5441239
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399133"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405487"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Configurare un connettore per l'archiviazione sul posto di lavoro da Facebook Data (anteprima)
 
@@ -40,9 +40,9 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* del mapping automatico degli utenti, come descritto nel passaggio 3. Viene creata una sottocartella nella cartella posta in arrivo denominata **luogo di lavoro da Facebook** e gli elementi di lavoro vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della proprietà di *posta elettronica* . Tutti gli elementi di lavoro contengono questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni chat o post partecipante.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Creare un account Merge1 accettando i termini e le condizioni per il luogo di lavoro dal connettore Facebook. In questa sezione è necessario contattare il [supporto clienti di Globanet](https://globanet.com/contact-us/). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
+- Creare un account Merge1 di Globanet per i connettori Microsoft. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
 - Creare un'integrazione personalizzata per https://my.workplace.com/work/admin/apps/ recuperare i dati dal luogo di lavoro tramite API per la conformità e gli scopi di eDiscovery.
 

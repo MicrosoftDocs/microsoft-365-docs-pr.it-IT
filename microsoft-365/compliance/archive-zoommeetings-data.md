@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati dalle riunioni dello zoom di Globanet in Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 6b2f5f0b61eb2d569ad49d8f58c7e03d11cdbca0
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399143"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405497"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>Configurare un connettore per archiviare i dati delle riunioni dello zoom (anteprima)
 
@@ -40,9 +40,9 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore importa gli elementi riunione convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* e il mapping automatico degli utenti, come descritto nel passaggio 3. Una nuova sottocartella nella cartella posta in arrivo denominata **riunioni zoom** viene creata nelle cassette postali degli utenti e gli elementi della riunione vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della proprietà di *posta elettronica* . Ogni elemento della riunione contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di tutti i partecipanti alla riunione.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Creare un account Merge1 di Globanet accettando i termini e le condizioni per un connettore eDiscovery Slack. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/contact-us). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
+- Creare un account Merge1 di Globanet per i connettori Microsoft. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
 - Ottenere il nome utente e la password per l'account aziendale dello zoom o dello zoom dell'organizzazione. È necessario accedere a questo account nel passaggio 2 quando si configura il connettore di riunioni zoom.
 

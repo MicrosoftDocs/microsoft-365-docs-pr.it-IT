@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come iniziare a utilizzare Advanced eDiscovery in Microsoft 365. Dopo aver completato alcuni passaggi rapidi, lo strumento Advanced eDiscovery è pronto per l'uso. Il primo passaggio consiste nel creare un caso e quindi iniziare a utilizzare le funzionalità e le caratteristiche avanzate di eDiscovery.
-ms.openlocfilehash: cc593009337a9b78285fbcf98ad78dbf1899bce1
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 47647c2f4f944812fa066be272a39ded77099c75
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357506"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405421"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introduzione ad Advanced eDiscovery
 
@@ -145,7 +145,7 @@ Per iniziare a utilizzare Advanced eDiscovery, ecco un semplice flusso di lavoro
   
    - È possibile applicare un'esenzione ai dati del custode. Questo consente di conservare i dati che potrebbero essere rilevanti per il caso durante l'inchiesta.
   
-   - È possibile associare altre origini dati a un custode (ad esempio, è possibile associare un sito di SharePoint o un gruppo di Microsoft 365 a un custode) in modo che i dati possano essere reindicizzati, rilasciati e ricercati, come i dati della cassetta postale o dell'account di OneDrive della banca depositaria.
+   - È possibile associare altre origini dati a un custode (ad esempio, è possibile associare un sito di SharePoint o un gruppo di Microsoft 365 a un custode), in modo che i dati possano essere reindicizzati, conservati e ricercati, come i dati della cassetta postale o dell'account di OneDrive della banca depositaria.
 
    - È possibile utilizzare il [flusso di lavoro comunicazioni](managing-custodian-communications.md) in Advanced eDiscovery per inviare una notifica di conservazione legale ai depositari.
 
@@ -155,7 +155,7 @@ Per iniziare a utilizzare Advanced eDiscovery, ecco un semplice flusso di lavoro
 
    - Visualizzare in anteprima i risultati della ricerca per verificare rapidamente se i dati rilevanti sono stati trovati.
 
-   - Rivedere una query ed eseguire di nuovo la ricerca.
+   - Rivedere una query ed eseguire nuovamente la ricerca.
 
 3. **[Aggiungere dati a un set di revisione](add-data-to-review-set.md)**. Dopo aver configurato e verificato che una ricerca restituisce i dati desiderati, il passaggio successivo consiste nell'aggiungere i risultati della ricerca a un set di revisione. Quando si aggiungono dati a un set di revisione, gli elementi vengono copiati dal percorso originale a un percorso di archiviazione di Azure sicuro. I dati vengono riindicizzati di nuovo per ottimizzare le ricerche accurate e veloci quando si esaminano e analizzano gli elementi nel set di revisione. Inoltre, è anche possibile [aggiungere dati non di Office 365 in un set di revisione](load-non-office-365-data-into-a-review-set.md).
 

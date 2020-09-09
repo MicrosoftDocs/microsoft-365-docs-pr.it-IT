@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati dal connettore WebEx teams di Globanet in Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare le funzionalità di conformità, come la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 65a0f6eb6e3b7d3e7147cc3eaf96212d75d687c0
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: c345edd3a560fff3818cdc7a52ad04e03279f339
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399428"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405445"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data-preview"></a>Configurare un connettore per l'archiviazione dei dati di WebEx Teams (Preview)
 
@@ -26,7 +26,7 @@ Utilizzare un connettore di Globanet nel centro conformità di Microsoft 365 per
 
 Dopo che i dati dei team di WebEx sono archiviati nelle cassette postali degli utenti, è possibile applicare funzionalità di conformità di Microsoft 365, ad esempio conservazione per controversia legale, eDiscovery, criteri di conservazione e etichette e conformità della comunicazione. L'utilizzo di un connettore WebEx teams per l'importazione e l'archiviazione dei dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
-## <a name="overview-of-archiving-webex-teams"></a>Panoramica dell'archiviazione dei team WebEx
+## <a name="overview-of-archiving-webex-teams-data"></a>Panoramica dell'archiviazione dei dati di WebEx Teams
 
 Nella panoramica seguente viene illustrato il processo di utilizzo di un connettore per l'archiviazione dei dati di Team WebEx in Microsoft 365.
 
@@ -40,9 +40,9 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 4. Il connettore consente di importare gli elementi nelle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* del mapping automatico degli utenti, come descritto nel [passaggio 3](#step-3-map-users-and-complete-the-connector-setup). Una sottocartella della cartella posta in arrivo denominata **Team WebEx** viene creata nelle cassette postali degli utenti e gli elementi vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della proprietà di *posta elettronica* . Ogni elemento di WebEx teams contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante all'elemento.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Creare un account di Merge1 di Globanet accettando i termini e le condizioni per un connettore di WebEx teams. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/contact-us). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
+- Creare un account Merge1 di Globanet per i connettori Microsoft. A tale scopo, contattare il [supporto clienti di Globanet](https://globanet.com/ms-connectors-contact). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
 - Creare un'applicazione in [https://developer.webex.com/](https://developer.webex.com) per recuperare i dati dall'account di Team WebEx. Per istruzioni dettagliate sulla creazione dell'applicazione, vedere [Merge1 Third-Party Connectors user guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)
 

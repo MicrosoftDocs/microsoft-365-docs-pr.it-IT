@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Informazioni su come gli amministratori possono eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 52cfe237bb05bc151058a41914af5725bdacee18
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321963"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405467"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminare gli elementi nella cartella Elementi recuperabili delle cassette postali basate su cloud con blocchi
 
@@ -292,7 +292,7 @@ Di seguito è disponibile una panoramica del processo di ricerca ed eliminazione
 
 3. Utilizzare il cmdlet **New-ComplianceSearch** (nel centro sicurezza & Compliance Center PowerShell) oppure utilizzare lo strumento di ricerca contenuto nel centro conformità per creare una ricerca di contenuto che restituisca gli elementi dalla cartella elementi ripristinabili dell'utente di destinazione. È possibile eseguire questa operazione includendo il FolderId nella query di ricerca per tutte le sottocartelle che si desidera ricercare. Ad esempio, la query seguente restituisce tutti i messaggi nelle sottocartelle Purges e eDiscoveryHolds:
 
-   ```powershell
+   ```text
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
@@ -307,8 +307,15 @@ Di seguito è disponibile una panoramica del processo di ricerca ed eliminazione
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-   > [!NOTE]
-   > Quando si esegue il comando precedente, vengono eliminati un massimo di 10 elementi (per cassetta postale). Questo significa che potrebbe essere necessario eseguire il `New-ComplianceSearchAction -Purge` comando più volte per eliminare gli elementi che si desidera eliminare nella cartella elementi ripristinabili.
+5. Quando si esegue il comando precedente, vengono eliminati un massimo di 10 elementi per ogni cassetta postale. Questo significa che potrebbe essere necessario eseguire il `New-ComplianceSearchAction -Purge` comando più volte per eliminare tutti gli elementi che si desidera eliminare nella cartella elementi ripristinabili. Per eliminare elementi aggiuntivi, è necessario innanzitutto rimuovere l'azione di eliminazione della ricerca di conformità precedente. A tale scopo, è possibile eseguire il `Remove-ComplianceSearchAction` cmdlet. Ad esempio, per eliminare l'azione Purge eseguita nel passaggio precedente, eseguire il comando riportato di seguito:
+
+   ```powershell
+   Remove-ComplianceSearchAction "RecoverableItems_Purge"
+   ```
+
+   Dopo aver eseguito questa operazione, è possibile creare una nuova azione di eliminazione della ricerca di conformità per eliminare altri elementi. Prima di crearne una nuova, è necessario eliminare ogni azione di eliminazione.
+
+   Per ottenere un elenco delle azioni di ricerca di conformità, è possibile eseguire il `Get-ComplianceSearchAction` cmdlet. Le azioni Purge sono identificate da `_Purge` accodati al nome della ricerca.
 
 ### <a name="verify-that-items-were-deleted"></a>Verificare che gli elementi siano stati eliminati
 
