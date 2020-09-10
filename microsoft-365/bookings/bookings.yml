@@ -1,0 +1,52 @@
+### YamlMime:Landing
+title: Prenotazioni Microsoft
+summary: Pianificare e gestire appuntamenti con Microsoft bookings. Include l'integrazione con Outlook e le notifiche automatizzate.
+metadata:
+  title: Prenotazioni Microsoft
+  description: Pianificare e gestire appuntamenti con Microsoft bookings. Include l'integrazione con Outlook e le notifiche automatizzate.
+  ms.service: bookings
+  ms.topic: landing-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 07/21/2020
+  ms.openlocfilehash: 7fb9456dfeb6481aebe1f81307a30c4cfad0ec02
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47419797"
+landingContent:
+- title: Informazioni su Microsoft bookings
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Che cos'è Microsoft bookings?
+      url: bookings-overview.md
+  - linkListType: download
+    links:
+    - text: Ottenere l'app prenotazioni
+      url: get-bookings-app.md
+- title: Configurare Microsoft Bookings
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Immettere le informazioni aziendali
+      url: enter-business-information.md
+    - text: Impostare i criteri di pianificazione
+      url: set-scheduling-policies.md
+    - text: Definire le offerte di servizi
+      url: define-service-offerings.md
+    - text: Impostare l'orario di lavoro dei dipendenti
+      url: employee-hours.md
+    - text: Personalizzare e pubblicare la pagina di prenotazione
+      url: customize-booking-page.md
+    - text: Creare prenotazioni e assegnarle al personale
+      url: create-a-manual-booking.md
+- title: Invitare gli utenti a prenotare gli appuntamenti
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Personalizzare la pagina di prenotazione
+      url: customize-booking-page.md
