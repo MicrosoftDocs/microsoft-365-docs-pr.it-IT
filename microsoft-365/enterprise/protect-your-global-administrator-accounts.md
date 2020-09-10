@@ -3,7 +3,7 @@ title: Proteggere gli account di amministratore globale di Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/08/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: In questo articolo vengono fornite informazioni sulla protezione dell'accesso di amministratore globale all'abbonamento a Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08e0960e7150395b2997dbd9ff0a1818822e17e2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb8f85b3ee5c0f72c2dd93517e68784459c32e7e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696083"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416387"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Microsoft 365
 
@@ -43,13 +43,14 @@ Microsoft fornisce funzionalità che consentono di proteggere l'organizzazione, 
     
 2. Configurare l'autenticazione a più fattori per gli account di amministratore globale di Microsoft 365 dedicati e utilizzare la forma più complessa di autenticazione secondaria.
     
-> [! NOTE] Sebbene questo articolo sia incentrato sugli account di amministratore globale, è opportuno considerare se gli account aggiuntivi con autorizzazioni di vasta portata per accedere ai dati dell'abbonamento, ad esempio l'amministratore di eDiscovery o gli account di amministratore di sicurezza o conformità, devono essere protetti nello stesso modo. <br > Un account di amministratore globale può essere creato senza aggiungere alcuna licenza.
+> [!Note]
+> Anche se questo articolo è concentrato sugli account di amministratore globale, è opportuno considerare se gli account aggiuntivi con autorizzazioni di vasta portata per accedere ai dati dell'abbonamento, ad esempio l'amministratore di eDiscovery o gli account di amministratore di sicurezza o conformità, devono essere protetti nello stesso modo. <br > Un account di amministratore globale può essere creato senza aggiungere alcuna licenza.
   
 ## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Passaggio 1. Creare account di amministratore globale di Microsoft 365 dedicati e utilizzarli solo se necessario
 
 Vi sono relativamente poche attività amministrative, ad esempio l'assegnazione di ruoli agli account utente, che richiedono privilegi di amministratore globale. Pertanto, anziché utilizzare gli account utente giornalieri a cui è stato assegnato il ruolo di amministratore globale, procedere come segue:
   
-1. Determinare il set di account utente a cui è stato assegnato il ruolo di amministratore globale. È possibile eseguire questa operazione con il comando di PowerShell Active Azure (Azure AD) per l'elenco dei grafici:
+1. Determinare il set di account utente a cui è stato assegnato il ruolo di amministratore globale. È possibile eseguire questa operazione con il seguente comando di Azure Active (Azure AD) Directory PowerShell per Graph:
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
@@ -120,15 +121,15 @@ Se si è un'organizzazione più grande che utilizza un modello di identità ibri
     
 Se l'infrastruttura di sicurezza per il metodo di verifica più avanzato desiderato non è in esecuzione e funziona per Microsoft 365 Mae, è consigliabile configurare gli account di amministratore globale dedicati con AMF utilizzando l'app Microsoft Authenticator, una telefonata o un codice di verifica del messaggio di testo inviato a uno Smart Phone per gli account di amministratore globale come misura di sicurezza provvisoria. Non lasciare gli account di amministratore globale dedicati senza l'ulteriore protezione fornita dall'AMF.
   
-Per ulteriori informazioni, vedere [pianificare l'autenticazione a più fattori per le distribuzioni di Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
+Per ulteriori informazioni, vedere [AMF per Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365).
   
 Per connettersi ai servizi di Microsoft 365 con AMF e PowerShell, vedere gli articoli seguenti:
 
 - [PowerShell per Microsoft 365 per gli account utente, i gruppi e le licenze](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
-- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [Skype for business online] Manage-Skype-for-business-online-con-Microsoft-365-PowerShell # Connect-using-a-Skype-for-business-online-Administrator-account-with-multi-factor-authentication
+- [Skype for Business online](manage-skype-for-business-online-with-microsoft-365-powershell.md#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>Protezioni aggiuntive per le organizzazioni aziendali
 

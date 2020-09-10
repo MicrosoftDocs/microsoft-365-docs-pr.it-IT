@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ccb7b049ee3bc2aa25847886b57341ae936d20b9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: c24f5891573b8541a97a35d228c57642766fe4a0
+ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649344"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47419145"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Cercare minacce tra dispositivi, messaggi di posta elettronica, app e identità
 
@@ -62,9 +62,6 @@ EmailEvents
 
 È possibile ottenere i nomi degli account e altre informazioni sull'account unendo o unendosi alla [tabella IdentityInfo](advanced-hunting-identityinfo-table.md). La query seguente ottiene l'elenco dei rilevamenti di phishing e malware dalla [tabella EmailEvents](advanced-hunting-emailevents-table.md) e quindi aggiunge tali informazioni alla `IdentityInfo` tabella per ottenere informazioni dettagliate su ogni destinatario. 
 
->[!Tip]
-> Questa query utilizza `kind=inner` per specificare un [inner join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), che impedisce la deduplicazione dei valori lato sinistro o gli indirizzi di posta elettronica del destinatario.
-
 ```kusto
 EmailEvents
 | where Timestamp > ago(7d)
@@ -81,6 +78,9 @@ Department, City, Country
 
 ### <a name="get-device-information"></a>Ottenere informazioni sul dispositivo
 Lo [schema di ricerca avanzata](advanced-hunting-schema-tables.md) fornisce informazioni estese sul dispositivo in varie tabelle. La [tabella DeviceInfo](advanced-hunting-deviceinfo-table.md) , ad esempio, fornisce informazioni complete sui dispositivi in base ai dati di evento aggregati regolarmente. Questa query utilizza la `DeviceInfo` tabella per controllare se un utente potenzialmente compromesso ( `<account-name>` ) ha eseguito l'accesso a tutti i dispositivi e quindi elenca gli avvisi attivati in tali dispositivi.
+
+>[!Tip]
+> Questa query utilizza `kind=inner` per specificare un [inner-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), che impedisce la deduplicazione dei valori lato sinistro per `DeviceId` .
 
 ```kusto
 DeviceInfo
